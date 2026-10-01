@@ -1,0 +1,61 @@
+name: Delete merged feature branch
+
+on:
+  pull_request_target:
+    types: [closed]
+    branches: [develop]
+
+permissions:
+  contents: read
+
+jobs:
+  cleanup:
+    if: >-
+      github.event.pull_request.merged == true &&
+      github.event.pull_request.base.ref == 'develop' &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      startsWith(github.event.pull_request.head.ref, 'feature/')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      pull-requests: read
+    steps:
+      # No checkout, no head-branch scripts, and no interpolation of PR text.
+      - name: Delete only an unchanged, merged feature branch
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const repo = context.repo;
+            if (!pr?.merged || pr.base.ref !== 'develop' ||
+                pr.head.repo?.full_name !== `${repo.owner}/${repo.repo}` ||
+                !pr.head.ref.startsWith('feature/') ||
+                ['master', 'develop'].includes(pr.head.ref)) {
+              core.info('Not eligible for branch cleanup.');
+              return;
+            }
+            const ref = `heads/${pr.head.ref}`;
+            let current;
+            try {
+              current = await github.rest.git.getRef({...repo, ref});
+            } catch (error) {
+              if (error.status === 404) {
+                core.info('Branch already deleted.');
+                return;
+              }
+              throw error;
+            }
+            if (current.data.object.sha !== pr.head.sha) {
+              core.warning('Branch has newer commits; keeping it.');
+              return;
+            }
+            const open = await github.paginate(github.rest.pulls.list, {
+              ...repo, state: 'open', head: `${repo.owner}:${pr.head.ref}`, per_page: 100
+            });
+            if (open.length) {
+              core.warning('Another open PR uses this branch; keeping it.');
+              return;
+            }
+            await github.rest.git.deleteRef({...repo, ref});
+            core.info(`Deleted ${pr.head.ref} after merge into develop.`);
