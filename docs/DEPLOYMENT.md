@@ -40,13 +40,13 @@ All Actions are pinned to full upstream commit SHAs. The implementation audit re
 
 | Action | Verified tag | Commit |
 |---|---|---|
-| actions/checkout | v4.2.2 | `11bd71901bbe5b1630ceea73d27597364c9af683` |
-| ruby/setup-ruby | v1.207.0 | `4a9ddd6f338a97768b8006bf671dfbad383215f4` |
-| actions/setup-node | v4.4.0 | `49933ea5288caeca8642d1e84afbd3f7d6820020` |
-| actions/upload-artifact | v4.6.2 | `ea165f8d65b6e75b540449e92b4886f43607fa02` |
-| actions/configure-pages | v5.0.0 | `983d7736d9b0ae728b81ab479565c72886d7745b` |
-| actions/upload-pages-artifact | v3.0.1 | `56afc609e74202658d3ffba0e8f6dda462b719fa` |
-| actions/deploy-pages | v4.0.5 | `d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e` |
-| actions/github-script | v8.0.0 | `ed597411d8f924073f98dfc5c65a23a2325f34cd` |
+| actions/checkout | v7.0.1 | `3d3c42e5aac5ba805825da76410c181273ba90b1` |
+| ruby/setup-ruby | v1.327.0 | `14594264cd68ce8a2345dd349bc3d138a4ef85c8` |
+| actions/setup-node | v7.0.0 | `820762786026740c76f36085b0efc47a31fe5020` |
+| actions/upload-artifact | v7.0.1 | `043fb46d1a93c77aae656e7c1c64a875d1fc6a0a` |
+| actions/configure-pages | v6.0.0 | `45bfe0192ca1faeb007ade9deae92b16b8254a0d` |
+| actions/upload-pages-artifact | v5.0.0 | `fc324d3547104276b827a68afc52ff2a11cc49c9` |
+| actions/deploy-pages | v5.0.1 | `368f82528645a54fb793d4d04e342629a3f51346` |
+| actions/github-script | v9.0.0 | `d746ffe35508b1917358783b479e04febd2b8f71` |
 
 Inspect the exact latest commit's CI run and downloadable artifacts before merge. A workflow file existing in Git does not prove a successful execution. No release/tag is required for publication.

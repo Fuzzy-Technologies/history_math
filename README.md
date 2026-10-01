@@ -6,7 +6,7 @@ The first prototype is a warm, responsive reading room built with Jekyll. Englis
 
 ## Run locally
 
-Requires Ruby 3.2, Bundler 2.4.20, Node.js 22 and Python 3. Install dependencies and build:
+Requires Ruby 3.3, Bundler 2.4.20, Node.js 22 and Python 3. Install dependencies and build:
 
 ```sh
 bundle install

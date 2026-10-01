@@ -15,7 +15,7 @@ const server = createServer(async (request, response) => {
       response.writeHead(404); response.end(); return;
     }
     let path = resolve(root, '.' + decodeURIComponent(url.pathname.slice('/history_math'.length)));
-    if (!path.startsWith(root + '/')) { response.writeHead(403); response.end(); return; }
+    if (path !== root && !path.startsWith(root + '/')) { response.writeHead(403); response.end(); return; }
     try { if ((await stat(path)).isDirectory()) path = resolve(path, 'index.html'); }
     catch { path = resolve(root, '404.html'); response.statusCode = 404; }
     response.setHeader('Content-Type', mime[extname(path)] ?? 'application/octet-stream');
