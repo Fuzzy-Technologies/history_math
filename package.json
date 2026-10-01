@@ -1,0 +1,13 @@
+{
+  "name": "history-math-checks",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/core.test.js tests/workflows.test.js",
+    "test:browser": "node tests/browser.mjs"
+  },
+  "devDependencies": {
+    "axe-core": "4.10.3",
+    "playwright": "1.58.2"
+  }
+}

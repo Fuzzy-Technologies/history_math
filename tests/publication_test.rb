@@ -1,0 +1,60 @@
+# frozen_string_literal: true
+
+require "minitest/autorun"
+require "jekyll"
+require "tmpdir"
+require "fileutils"
+require "json"
+
+class PublicationTest < Minitest::Test
+  def with_site
+    Dir.mktmpdir("history-math-test") do |root|
+      source = File.join(root, "site")
+      FileUtils.cp_r(File.expand_path("../site", __dir__), source)
+      config = Jekyll.configuration("config" => File.expand_path("../_config.yml", __dir__),
+        "source" => source, "destination" => File.join(root, "output"), "quiet" => true)
+      yield source, config
+    end
+  end
+
+  def test_drafts_and_unknown_statuses_have_no_direct_url_or_index_entry
+    with_site do |source, config|
+      %w[draft internal].each do |status|
+        text = File.read(File.join(source, "_articles/demo-abacus.md"))
+          .sub("status: demo", "status: #{status}")
+          .sub("translation_key: demo-abacus", "translation_key: #{status}-probe")
+          .sub("permalink: /ru/articles/demo-abacus/", "permalink: /ru/articles/#{status}-probe/")
+          .sub("title: Счёт, который можно потрогать", "title: #{status}-probe-marker")
+        File.write(File.join(source, "_articles/#{status}-probe.md"), text)
+      end
+      File.write(File.join(source, "private.md"), "---\nlayout: page\nstatus: draft\npermalink: /private/\n---\nDRAFT_MARKER")
+      File.write(File.join(source, "internal.txt"), "INTERNAL_MARKER")
+      site = Jekyll::Site.new(config)
+      site.process
+      refute File.exist?(File.join(site.dest, "ru/articles/draft-probe/index.html"))
+      refute File.exist?(File.join(site.dest, "ru/articles/internal-probe/index.html"))
+      refute File.exist?(File.join(site.dest, "private/index.html"))
+      refute File.exist?(File.join(site.dest, "internal.txt"))
+      output = Dir.glob(File.join(site.dest, "**/*")).select { |path| File.file?(path) && path.match?(/\.(html|json|xml)\z/) }.map { |path| File.read(path) }.join
+      refute_includes output, "draft-probe-marker"
+      refute_includes output, "internal-probe-marker"
+      refute_includes output, "DRAFT_MARKER"
+      assert_empty JSON.parse(File.read(File.join(site.dest, "assets/search-en.json")))
+    end
+  end
+
+  def test_invalid_published_metadata_fails_closed
+    with_site do |source, config|
+      path = File.join(source, "_articles/demo-abacus.md")
+      File.write(path, File.read(path).sub("math: false", "math: maybe"))
+      assert_raises(Jekyll::Errors::FatalException) { Jekyll::Site.new(config).process }
+    end
+  end
+
+  def test_duplicate_public_urls_fail_closed
+    with_site do |source, config|
+      FileUtils.cp(File.join(source, "_articles/demo-abacus.md"), File.join(source, "_articles/duplicate.md"))
+      assert_raises(Jekyll::Errors::FatalException) { Jekyll::Site.new(config).process }
+    end
+  end
+end

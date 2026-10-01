@@ -57,5 +57,17 @@ jobs:
               core.warning('Another open PR uses this branch; keeping it.');
               return;
             }
-            await github.rest.git.deleteRef({...repo, ref});
+            const latest = await github.rest.git.getRef({...repo, ref});
+            if (latest.data.object.sha !== pr.head.sha) {
+              core.warning('Branch changed during cleanup; keeping it.');
+              return;
+            }
+            try {
+              await github.rest.git.deleteRef({...repo, ref});
+            } catch (error) {
+              if (error.status !== 404) throw error;
+              core.info('Branch was already deleted.');
+              return;
+            }
             core.info(`Deleted ${pr.head.ref} after merge into develop.`);
+
