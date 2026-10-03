@@ -1,0 +1,1 @@
+{%- if page.lang == 'ru' -%}{%- case include.type -%}{%- when 'essay' -%}Очерк{%- when 'problem' -%}Задача{%- when 'instrument' -%}Инструмент{%- else -%}Заметка{%- endcase -%}{%- else -%}{{ include.type | capitalize }}{%- endif -%}

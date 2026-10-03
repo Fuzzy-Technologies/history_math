@@ -1,0 +1,22 @@
+title: Mathematics with Mansur-abyi
+description: A journal of the history of mathematics — people, ideas, problems, and instruments.
+url: https://fuzzy-technologies.github.io
+baseurl: /history_math
+lang: en
+source: site
+destination: _site
+timezone: Europe/Moscow
+encoding: utf-8
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge
+collections:
+  articles:
+    output: true
+strict_front_matter: true
+exclude: [README.md, node_modules, vendor, .jekyll-cache]
+liquid:
+  error_mode: strict
+  strict_filters: true

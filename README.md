@@ -1,16 +1,7 @@
-# History of Mathematics
+# Mathematics with Mansur
 
-A multilingual, independent journal of mathematical history, ideas, people, and problems by the Mathematics with Mansur-abyi project. Part of Fuzzy Technologies.
+<img src="site/assets/images/Math-with-Mansur.png" alt="Math with Mansur" width="100%">
 
-## Repository status
+Mansur Gilmullin’s blog on the history of mathematics: the people, ideas, discoveries and problems that shaped the discipline.
 
-Initial repository bootstrap. The website prototype is developed in a feature branch off `develop` and reviewed through pull requests. No issue backlog is used at this stage.
-
-- `master`: approved publication source.
-- `develop`: integration and editorial preparation.
-- `feature/*`: focused changes reviewed into `develop`.
-- English is the default site language; its first edition is a placeholder.
-- Russian content lives at `/ru/` (under the GitHub Pages project base path).
-- NAS/FELab remains the editorial source of truth. This repository contains public website material, not the private research archive.
-
-Merging a feature into `develop` must not publish the production site. Production publication requires a separately approved `develop` to `master` pull request.
+[Read the blog →](https://fuzzy-technologies.github.io/history_math/ru/)

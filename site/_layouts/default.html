@@ -1,0 +1,49 @@
+{% assign ru = false %}{% if page.lang == 'ru' %}{% assign ru = true %}{% endif %}
+{% assign home = '/' %}{% if ru %}{% assign home = '/ru/' %}{% endif %}
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} · {% if ru %}Математика с Мансур-абый{% else %}Mathematics with Mansur-abyi{% endif %}</title>
+  <meta name="description" content="{{ page.description | escape }}">
+  <meta name="theme-color" content="#f6f3eb">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {% for translation in page.translations %}<link rel="alternate" hreflang="{{ translation.lang }}" href="{{ translation.url | absolute_url }}">{% endfor %}
+  <meta property="og:title" content="{{ page.title | escape }}">
+  <meta property="og:description" content="{{ page.description | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="{% if page.layout == 'article' %}article{% else %}website{% endif %}">
+  <meta property="og:locale" content="{% if ru %}ru_RU{% else %}en_US{% endif %}">
+  {% if page.cover_image %}<meta property="og:image" content="{{ page.cover_image | absolute_url }}">{% endif %}
+  <link rel="icon" href="{{ '/assets/images/mark.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <script type="module" src="{{ '/assets/app.js' | relative_url }}"></script>
+  {% if page.math %}
+  <link rel="stylesheet" href="{{ '/assets/vendor/katex/katex.min.css' | relative_url }}">
+  <script defer src="{{ '/assets/vendor/katex/katex.min.js' | relative_url }}"></script>
+  <script defer src="{{ '/assets/math.js' | relative_url }}"></script>
+  {% endif %}
+</head>
+<body data-lang="{{ page.lang }}" data-index="{{ '/assets/search-' | append: page.lang | append: '.json' | relative_url }}">
+  <a class="skip-link" href="#main">{% if ru %}К содержимому{% else %}Skip to content{% endif %}</a>
+  <div class="masthead-note">{% if ru %}Люди, идеи и история математики{% else %}People, ideas & the history of mathematics{% endif %}<span>EST. 2026</span></div>
+  <header class="site-header">
+    <a class="brand" href="{{ home | relative_url }}"><img src="{{ '/assets/images/mark.svg' | relative_url }}" alt="" width="42" height="42"><span>{% if ru %}Математика<span class="brand-sub">с Мансур-абый</span>{% else %}Mathematics<span class="brand-sub">with Mansur-abyi</span>{% endif %}</span></a>
+    <nav aria-label="{% if ru %}Основная навигация{% else %}Main navigation{% endif %}">
+      {% if ru %}
+      <a href="{{ '/ru/materials/' | relative_url }}" {% if page.translation_key == 'catalog' %}aria-current="page"{% endif %}>Материалы</a>
+      <a href="{{ '/ru/about/' | relative_url }}" {% if page.translation_key == 'about' %}aria-current="page"{% endif %}>О проекте</a>
+      <a href="{{ '/ru/search/' | relative_url }}" {% if page.translation_key == 'search' %}aria-current="page"{% endif %}>Поиск <span aria-hidden="true">⌕</span></a>
+      {% else %}<a href="{{ '/ru/' | relative_url }}" lang="ru">Русская версия ↗</a>{% endif %}
+    </nav>
+    <nav class="language-nav" aria-label="{% if ru %}Язык{% else %}Language{% endif %}">
+      <span aria-current="page">{{ page.lang | upcase }}</span>
+      {% assign has_other = false %}{% for translation in page.translations %}{% if translation.lang != page.lang %}{% assign has_other = true %}<a href="{{ translation.url | relative_url }}" lang="{{ translation.lang }}">{{ translation.lang | upcase }}</a>{% endif %}{% endfor %}
+      {% unless has_other %}{% if ru %}<a href="{{ '/' | relative_url }}" lang="en" aria-label="English edition home">EN ↗</a>{% else %}<a href="{{ '/ru/' | relative_url }}" lang="ru">RU ↗</a>{% endif %}{% endunless %}
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">{{ content }}</main>
+  <footer class="site-footer"><div><strong>{% if ru %}Математика с Мансур-абый{% else %}Mathematics with Mansur-abyi{% endif %}</strong><p>{% if ru %}История идей. Радость открытий.{% else %}A history of ideas. The joy of discovery.{% endif %}</p></div><div><a href="https://fuzzy-technologies.github.io/">Fuzzy Technologies ↗</a><p>{% if ru %}Технологии · Знания · Наука{% else %}Technologies · Knowledge · Science{% endif %}</p></div></footer>
+</body>
+</html>
