@@ -110,6 +110,8 @@ try {
       checked(`${viewport.name}: ${path} language, canonical, assets, responsive width and axe WCAG AA`);
     }
     await page.goto(origin + '/history_math/ru/');
+    // Finish asset requests before the keyboard test navigates to another page.
+    await page.waitForLoadState('networkidle');
     await page.keyboard.press('Tab');
     assert.equal(await page.locator(':focus').textContent(), 'К содержимому');
     await page.keyboard.press('Enter');
@@ -120,6 +122,8 @@ try {
     // Probe a non-public URL directly. A missing URL must return the 404 document.
     page.removeAllListeners('console');
     const missing = await page.goto(origin + '/history_math/ru/articles/draft-probe/');
+    // Closing a context with pending requests creates false requestfailed events.
+    await page.waitForLoadState('networkidle');
     assert.equal(missing.status(), 404);
     assert.match(await page.locator('main').innerText(), /This page is missing/);
     await context.close();
