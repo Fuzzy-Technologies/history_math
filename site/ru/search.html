@@ -1,0 +1,11 @@
+---
+layout: default
+title: Найти свой вопрос
+description: Поиск по названиям, темам и текстам читального зала.
+lang: ru
+translation_key: search
+status: published
+permalink: /ru/search/
+---
+<section class="page-heading"><p class="eyebrow">Поиск по журналу</p><h1>{{ page.title }}</h1><p class="lead">{{ page.description }}</p></section>
+<section class="search-panel"><form id="search-form" role="search"><label for="query">Что вам интересно?</label><div class="search-row"><input id="query" type="search" placeholder="Например, геометрия или счёт" autocomplete="off"><button class="button" type="submit">Найти →</button></div></form><p id="search-status" role="status">Введите слово или фразу, чтобы начать поиск.</p><div id="search-results" class="search-results"></div><noscript>Для поиска нужен JavaScript. Все материалы доступны в <a href="{{ '/ru/materials/' | relative_url }}">читальном зале</a>.</noscript></section>

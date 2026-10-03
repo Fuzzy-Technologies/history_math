@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<article class="reading-layout">
+  <header class="article-heading">
+    <a class="back-link" href="{% if page.lang == 'ru' %}{{ '/ru/materials/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">← {% if page.lang == 'ru' %}К материалам{% else %}Back to journal{% endif %}</a>
+    <p class="eyebrow">{% include type.html type=page.type %} · {% if page.status == 'demo' %}{% if page.lang == 'ru' %}Демоматериал{% else %}Demo material{% endif %}{% endif %}</p>
+    <h1>{{ page.title }}</h1><p class="lead">{{ page.description }}</p>
+    <p class="article-meta">{{ page.author }} <span>·</span> <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d.%m.%Y' }}</time> <span>·</span> {{ page.lang | upcase }}</p>
+    {% if page.status == 'demo' %}<p class="demo-notice">{% if page.lang == 'ru' %}Пример для проверки прототипа. Не авторская публикация Мансура или Тимура.{% else %}A prototype example, not an authored publication by Mansur or Timur.{% endif %}</p>{% endif %}
+  </header>
+  <div class="prose article-body">
+    {% if page.hero_image %}<figure><img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_alt | escape }}" width="960" height="600"><figcaption>{{ page.hero_caption | escape }}</figcaption></figure>{% endif %}
+    {{ content }}
+  </div>
+  <footer class="article-end"><p>{% if page.lang == 'ru' %}Темы{% else %}Topics{% endif %}: {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</p><a href="{% if page.lang == 'ru' %}{{ '/ru/materials/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Продолжить чтение →{% else %}Keep reading →{% endif %}</a></footer>
+</article>

@@ -1,0 +1,35 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {normalize, search, selection, anniversaries} from '../site/assets/core.js';
+
+const records = [
+  {title: 'Счёт и геометрия', description: '', text: 'Чертёж', tags: ['идеи'], type: 'essay', language: 'ru', date: '2025-10-01', url: '/a/'},
+  {title: 'English', description: '', text: 'geometry', tags: [], type: 'note', language: 'en', date: '2024-10-01', url: '/b/'}
+];
+test('Cyrillic search folds case, ё/е, whitespace and separates languages', () => {
+  assert.equal(normalize('  СЧЁТ  '), 'счет');
+  assert.equal(search(records, 'СЧЕТ', 'ru').length, 1);
+  assert.equal(search(records, 'чертеж идеи', 'ru').length, 1);
+  assert.equal(search(records, '', 'ru').length, 0);
+  assert.equal(search(records, 'несуществующее', 'ru').length, 0);
+  assert.equal(search(records, 'geometry', 'ru').length, 0);
+});
+test('archive selection has no duplicate URLs and changes a repeated subset', () => {
+  const pool = Array.from({length: 6}, (_, index) => ({url: `/${index}/`}));
+  let previous = [];
+  for (let index = 0; index < 100; index += 1) {
+    const picked = selection([...pool, pool[0]], 3, previous);
+    const urls = picked.map(record => record.url);
+    assert.equal(new Set(urls).size, 3);
+    assert.ok(!urls.every(url => previous.includes(url)));
+    previous = urls;
+  }
+  assert.deepEqual(selection([], 3), []);
+  assert.equal(selection(pool.slice(0, 1), 3).length, 1);
+});
+test('anniversaries use publication month/day, prior years and current locale', () => {
+  assert.equal(anniversaries(records, new Date(2026, 9, 1), 'ru').length, 1);
+  assert.equal(anniversaries(records, new Date(2025, 9, 1), 'ru').length, 0);
+  assert.equal(anniversaries(records, new Date(2026, 9, 2), 'ru').length, 0);
+  assert.equal(anniversaries([{...records[0], date: '2024-02-29'}], new Date(2026, 1, 28), 'ru').length, 0);
+});

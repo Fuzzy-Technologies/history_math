@@ -1,0 +1,19 @@
+---
+layout: default
+title: История начинается с вопроса
+description: Истории людей и идей, красивые задачи и инструменты математического мышления.
+lang: ru
+translation_key: home
+status: published
+permalink: /ru/
+---
+<section class="journal-hero">
+  <div class="hero-copy"><p class="eyebrow">Независимый историко-математический журнал</p><h1>У каждой идеи<br>есть <em>история.</em></h1><p class="lead">Кто научил нас считать бесконечность?<br>Как задача становится открытием?<br>Читаем математику через людей, вопросы и время.</p><a class="button" href="{{ '/ru/materials/' | relative_url }}">Открыть читальный зал <span>↗</span></a><p class="hero-credit">Проект Мансура и Тимура Гильмуллиных</p></div>
+  <figure class="hero-figure"><img src="{{ '/assets/images/geometry.svg' | relative_url }}" alt="Круг, треугольник и линии геометрического построения" width="960" height="600"><figcaption><span>ФОРМА / МЫСЛЬ / ВРЕМЯ</span><span>01 — Геометрия идей</span></figcaption></figure>
+</section>
+<div class="demo-strip"><span class="status-dot" aria-hidden="true"></span>Первый прототип · Все материалы ниже — демонстрационные примеры.</div>
+{% assign articles = site.articles | where: 'lang', 'ru' | sort: 'date' | reverse %}
+<section class="journal-section"><div class="section-heading"><div><p class="eyebrow">Новые страницы</p><h2>Начать с любопытства</h2></div><a href="{{ '/ru/materials/' | relative_url }}">Все материалы ↗</a></div><div class="card-grid">{% for article in articles limit:3 %}{% include card.html article=article %}{% endfor %}</div></section>
+<section class="archive-section journal-section"><div class="section-heading"><div><p class="eyebrow">У хороших вопросов нет срока давности</p><h2>Из архива</h2></div><button class="text-button" id="reshuffle" type="button" hidden>Другая подборка <span aria-hidden="true">↻</span></button></div><div id="archive-cards" class="archive-grid">{% for article in articles offset:2 limit:3 %}<article class="archive-card"><p class="eyebrow">{% include type.html type=article.type %} · Демо</p><h3><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h3><p>{{ article.description }}</p></article>{% endfor %}</div><p id="archive-status" class="visually-hidden" role="status"></p></section>
+<section class="anniversary-panel"><div><p class="eyebrow">Возвращаясь к прочитанному</p><h2 id="anniversary-heading">На страницах архива</h2><p id="anniversary-note">Здесь появятся годовщины наших публикаций. Пока можно вернуться к одному из демоматериалов.</p></div><div id="anniversary-result">{% for article in articles limit:1 %}<a href="{{ article.url | relative_url }}">{{ article.title }} →</a>{% endfor %}</div></section>
+<section class="about-teaser"><p class="eyebrow">Математика — это разговор</p><h2>От семейной библиотеки<br>к общему читальному залу.</h2><p>Мансур — математик и историк математики. Тимур — инженер, который помогает историям находить своих читателей.</p><a href="{{ '/ru/about/' | relative_url }}">Познакомиться с проектом ↗</a></section>

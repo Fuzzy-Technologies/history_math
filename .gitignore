@@ -1,0 +1,14 @@
+_site/
+_site-domain/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/bundle/
+node_modules/
+test-results/
+playwright-report/
+*.sqlite*
+*.log
+.felab.json
+.DS_Store
+Thumbs.db
