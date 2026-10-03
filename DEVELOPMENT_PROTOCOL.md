@@ -19,7 +19,7 @@ Never merge a PR, publish a release/tag, or change visibility without explicit a
 
 ## Languages and editorial claims
 
-Internal language is English. Public Russian prose is Russian; future translations may have other locales. Default locale and original article language are independent. Do not require English-first drafting or fabricate translations. Every public page has its own canonical URL. Only existing published counterparts share `translation_key` and hreflang.
+The README, source code, comments and technical documentation must be written in English. Other languages belong only in localized site content, UI text and locale-specific test fixtures. Default locale and original article language are independent. Do not require English-first drafting or fabricate translations. Every public page has its own canonical URL. Only existing published counterparts share `translation_key` and hreflang.
 
 Demo content must remain visibly marked and must not be attributed as authored scholarship by Mansur or Timur. Do not invent historical sources or license the authors' work. Keep factual claims grounded in actual supplied materials when real articles replace demos.
 
@@ -29,6 +29,6 @@ Use the warm light reading-room design, graphite text, restrained green/brass ac
 
 ## Validation and evidence
 
-Changes affecting source/publication contracts need mutation tests for rejected inputs. Validate built URLs, assets, languages, canonical/hreflang and indexes. Verify literal `$...$` and `$$...$$` through Markdown into the browser. Check search case/ё/е/empty/no-result behavior and safe archive rotation. Capture desktop/mobile evidence, check console/request failures and run automated accessibility rules.
+Changes affecting source/publication contracts need mutation tests for rejected inputs. Validate built URLs, assets, languages, canonical/hreflang and indexes. Verify literal `$...$` and `$$...$$` through Markdown into the browser. Check search case, Cyrillic Yo/Ye equivalence, empty queries and no-result behavior, plus safe archive rotation. Capture desktop/mobile evidence, check console/request failures and run automated accessibility rules.
 
 CI must succeed for the current PR SHA. The mere presence of a workflow is not evidence it ran. Cleanup mocks prove decision logic only; a real merged event remains unverified until an owner-approved merge. Production workflow guards must reject non-master refs even on manual dispatch. Do not claim the site was published when only a PR or artifact exists.

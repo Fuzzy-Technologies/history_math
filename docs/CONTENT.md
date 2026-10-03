@@ -72,14 +72,14 @@ Small public video files can use native controls without a backend. Keep heavy o
 ```html
 <video controls preload="none" poster="{{ '/assets/images/work-key/poster.jpg' | relative_url }}">
   <source src="{{ '/assets/media/work-key/video.mp4' | relative_url }}" type="video/mp4">
-  <track kind="captions" srclang="ru" label="Русский" src="{{ '/assets/media/work-key/captions.vtt' | relative_url }}" default>
+  <track kind="captions" srclang="ru" label="Russian" src="{{ '/assets/media/work-key/captions.vtt' | relative_url }}" default>
   A localized fallback link to the video.
 </video>
 ```
 
 ## Discovery and archive behavior
 
-The build generates compact `assets/search-ru.json` and `assets/search-en.json` indexes: title, description, tags, type, language, publication date, URL, plain search text, public status and optional preview image. Queries use a single local file and no keys/GitHub API. The current EN index is empty. Russian normalization handles case and ё/е.
+The build generates compact `assets/search-ru.json` and `assets/search-en.json` indexes: title, description, tags, type, language, publication date, URL, plain search text, public status and optional preview image. Queries use a single local file and no keys/GitHub API. The current EN index is empty. Russian normalization handles case and Cyrillic Yo/Ye equivalence.
 
 Fresh materials are sorted by publication date and remain stable. The archive rotates a three-item subset without duplicate URLs or repeated subsets when alternatives exist. Its reserved desktop grid and mobile row heights prevent rotation shifts. Publication anniversaries match month/day in previous years; historical birth/event dates are not used. If no date matches, a plain archive alternative is shown. Demos remain labeled, including when their illustrative dates match.
 
