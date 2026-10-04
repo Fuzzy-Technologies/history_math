@@ -1,0 +1,14 @@
+<dialog class="image-viewer" id="image-viewer" aria-labelledby="viewer-title" aria-describedby="viewer-caption" data-open-label="{% if ru %}Рассмотреть изображение{% else %}View image{% endif %}" data-error-label="{% if ru %}Не удалось загрузить изображение.{% else %}The image could not be loaded.{% endif %}">
+  <div class="viewer-toolbar">
+    <h2 id="viewer-title">{% if ru %}Иллюстрация{% else %}Illustration{% endif %}</h2>
+    <div class="viewer-controls" role="group" aria-label="{% if ru %}Масштаб изображения{% else %}Image zoom{% endif %}">
+      <button type="button" data-viewer-action="out" aria-label="{% if ru %}Уменьшить{% else %}Zoom out{% endif %}">−</button>
+      <output class="viewer-scale" aria-live="off" aria-label="{% if ru %}Масштаб{% else %}Zoom level{% endif %}">100%</output>
+      <button type="button" data-viewer-action="in" aria-label="{% if ru %}Увеличить{% else %}Zoom in{% endif %}">+</button>
+      <button class="viewer-fit" type="button" data-viewer-action="fit">{% if ru %}Целиком{% else %}Fit{% endif %}</button>
+    </div>
+    <button class="viewer-close" type="button" data-viewer-action="close" aria-label="{% if ru %}Закрыть изображение{% else %}Close image{% endif %}" autofocus>×</button>
+  </div>
+  <div class="viewer-stage" role="region" tabindex="0" aria-label="{% if ru %}Область просмотра изображения{% else %}Image viewing area{% endif %}"><div class="viewer-canvas"></div></div>
+  <div class="viewer-footer"><p id="viewer-caption"></p><p class="viewer-hint">{% if ru %}Потяните изображение, чтобы рассмотреть детали. Масштаб — кнопками, жестом двух пальцев или Ctrl + колёсико. Закрыть — Esc.{% else %}Drag to see the details. Zoom with the buttons, a two-finger pinch, or Ctrl + wheel. Press Esc to close.{% endif %}</p></div>
+</dialog>

@@ -2,6 +2,188 @@ import {search, selection, anniversaries} from './core.js';
 
 const language = document.body.dataset.lang;
 const labels = {essay: 'Очерк', problem: 'Задача', instrument: 'Инструмент', note: 'Заметка'};
+
+const themeButton = document.querySelector('.theme-toggle');
+const systemTheme = matchMedia('(prefers-color-scheme: dark)');
+let explicitTheme = false;
+try { explicitTheme = ['light', 'dark'].includes(localStorage.getItem('history-math:theme')); } catch {}
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#1e1a17' : '#f4eddf';
+  themeButton.querySelector('.theme-label').textContent = themeButton.dataset[theme === 'dark' ? 'lightLabel' : 'darkLabel'];
+  themeButton.querySelector('.theme-icon').textContent = theme === 'dark' ? '☀' : '☾';
+}
+applyTheme(document.documentElement.dataset.theme || (systemTheme.matches ? 'dark' : 'light'));
+themeButton.hidden = false;
+themeButton.addEventListener('click', () => {
+  const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+  explicitTheme = true;
+  applyTheme(theme);
+  try { localStorage.setItem('history-math:theme', theme); } catch {}
+});
+systemTheme.addEventListener('change', () => {
+  if (!explicitTheme) applyTheme(systemTheme.matches ? 'dark' : 'light');
+});
+window.addEventListener('storage', event => {
+  if (event.key !== 'history-math:theme') return;
+  explicitTheme = ['light', 'dark'].includes(event.newValue);
+  applyTheme(explicitTheme ? event.newValue : (systemTheme.matches ? 'dark' : 'light'));
+});
+
+const viewer = document.querySelector('#image-viewer');
+if (viewer && typeof viewer.showModal === 'function') {
+  const stage = viewer.querySelector('.viewer-stage');
+  const canvas = viewer.querySelector('.viewer-canvas');
+  const scaleLabel = viewer.querySelector('.viewer-scale');
+  const caption = viewer.querySelector('#viewer-caption');
+  const expanded = document.createElement('img');
+  const pointers = new Map();
+  let activeTrigger;
+  let baseWidth = 1;
+  let ratio = 1;
+  let zoom = 1;
+  let request = 0;
+
+  function resizeImage() {
+    const width = baseWidth * zoom;
+    const height = width / ratio;
+    canvas.style.width = Math.max(stage.clientWidth, width) + 'px';
+    canvas.style.height = Math.max(stage.clientHeight, height) + 'px';
+    expanded.style.width = width + 'px';
+    scaleLabel.value = Math.round(zoom * 100) + '%';
+    viewer.querySelector('[data-viewer-action="out"]').disabled = zoom <= 0.1;
+    viewer.querySelector('[data-viewer-action="in"]').disabled = zoom >= 4;
+  }
+  function changeZoom(value, anchor = {x: stage.clientWidth / 2, y: stage.clientHeight / 2}) {
+    const previousWidth = baseWidth * zoom;
+    const previousHeight = previousWidth / ratio;
+    const x = (stage.scrollLeft + anchor.x - Math.max(0, (stage.clientWidth - previousWidth) / 2)) / previousWidth;
+    const y = (stage.scrollTop + anchor.y - Math.max(0, (stage.clientHeight - previousHeight) / 2)) / previousHeight;
+    zoom = Math.min(4, Math.max(0.1, value));
+    resizeImage();
+    const width = baseWidth * zoom;
+    const height = width / ratio;
+    stage.scrollLeft = x * width + Math.max(0, (stage.clientWidth - width) / 2) - anchor.x;
+    stage.scrollTop = y * height + Math.max(0, (stage.clientHeight - height) / 2) - anchor.y;
+  }
+  function fitImage() {
+    changeZoom(Math.min(1, stage.clientHeight * ratio / baseWidth));
+    stage.scrollTo(0, 0);
+  }
+  async function openImage(image, trigger) {
+    const current = ++request;
+    activeTrigger = trigger;
+    expanded.src = image.currentSrc || image.src;
+    expanded.alt = image.alt;
+    const description = image.closest('figure')?.querySelector('figcaption');
+    caption.textContent = (description?.innerText || image.alt).replace(/\s*\n\s*/g, ' · ');
+    canvas.replaceChildren(expanded);
+    viewer.showModal();
+    document.documentElement.classList.add('viewer-open');
+    viewer.querySelector('[data-viewer-action="close"]').focus();
+    try {
+      await expanded.decode();
+      if (!viewer.open || current !== request) return;
+      baseWidth = stage.clientWidth;
+      ratio = expanded.naturalWidth / expanded.naturalHeight;
+      zoom = 1;
+      resizeImage();
+      stage.scrollTo(0, 0);
+    } catch {
+      if (viewer.open && current === request) caption.textContent = viewer.dataset.errorLabel;
+    }
+  }
+  document.querySelectorAll('.hero-figure img, .english-hero > img, .prose img, .about-teaser > img').forEach(image => {
+    if (image.closest('a, button')) return;
+    const trigger = element('button', 'image-trigger');
+    trigger.type = 'button';
+    trigger.setAttribute('aria-haspopup', 'dialog');
+    trigger.setAttribute('aria-label', viewer.dataset.openLabel + (image.alt ? ': ' + image.alt : ''));
+    image.before(trigger);
+    trigger.append(image);
+    trigger.addEventListener('click', () => openImage(image, trigger));
+  });
+  viewer.addEventListener('close', () => {
+    request += 1;
+    pointers.clear();
+    canvas.replaceChildren();
+    stage.classList.remove('is-dragging');
+    document.documentElement.classList.remove('viewer-open');
+    activeTrigger?.focus({preventScroll: true});
+  });
+  viewer.querySelectorAll('[data-viewer-action]').forEach(button => button.addEventListener('click', () => {
+    switch (button.dataset.viewerAction) {
+      case 'in': changeZoom(zoom * 1.25); break;
+      case 'out': changeZoom(zoom / 1.25); break;
+      case 'fit': fitImage(); break;
+      case 'close': viewer.close(); break;
+    }
+  }));
+  viewer.addEventListener('click', event => { if (event.target === viewer) viewer.close(); });
+  viewer.addEventListener('keydown', event => {
+    if (event.key === 'Tab') {
+      const focusable = [...viewer.querySelectorAll('button:not(:disabled), [tabindex="0"]')];
+      const first = focusable[0];
+      const last = focusable.at(-1);
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+      return;
+    }
+    if (!['+', '=', '-', '0'].includes(event.key)) return;
+    event.preventDefault();
+    if (event.key === '0') fitImage(); else changeZoom(zoom * (event.key === '-' ? 0.8 : 1.25));
+  });
+  function anchorAt(x, y) {
+    const bounds = stage.getBoundingClientRect();
+    return {x: x - bounds.left, y: y - bounds.top};
+  }
+  stage.addEventListener('wheel', event => {
+    if (!event.ctrlKey) return;
+    event.preventDefault();
+    changeZoom(zoom * Math.exp(-event.deltaY * 0.005), anchorAt(event.clientX, event.clientY));
+  }, {passive: false});
+  stage.addEventListener('dblclick', event => {
+    changeZoom(zoom > 1.5 ? 1 : 2, anchorAt(event.clientX, event.clientY));
+  });
+  stage.addEventListener('pointerdown', event => {
+    if (event.button !== 0) return;
+    pointers.set(event.pointerId, {x: event.clientX, y: event.clientY});
+    stage.setPointerCapture(event.pointerId);
+    stage.classList.add('is-dragging');
+    event.preventDefault();
+  });
+  stage.addEventListener('pointermove', event => {
+    const previous = pointers.get(event.pointerId);
+    if (!previous) return;
+    const pair = [...pointers.entries()].find(([id]) => id !== event.pointerId)?.[1];
+    if (pair) {
+      const distance = Math.hypot(event.clientX - pair.x, event.clientY - pair.y);
+      const previousDistance = Math.hypot(previous.x - pair.x, previous.y - pair.y);
+      if (previousDistance > 0) changeZoom(zoom * distance / previousDistance, anchorAt((event.clientX + pair.x) / 2, (event.clientY + pair.y) / 2));
+    } else {
+      stage.scrollLeft += previous.x - event.clientX;
+      stage.scrollTop += previous.y - event.clientY;
+    }
+    pointers.set(event.pointerId, {x: event.clientX, y: event.clientY});
+  });
+  for (const name of ['pointerup', 'pointercancel', 'lostpointercapture']) {
+    stage.addEventListener(name, event => {
+      pointers.delete(event.pointerId);
+      if (!pointers.size) stage.classList.remove('is-dragging');
+    });
+  }
+  window.addEventListener('resize', () => {
+    if (!viewer.open || !expanded.naturalWidth) return;
+    baseWidth = stage.clientWidth;
+    resizeImage();
+  });
+}
+
 let indexPromise;
 function loadIndex() {
   indexPromise ??= fetch(document.body.dataset.index).then(response => {
@@ -92,10 +274,16 @@ const archive = document.querySelector('#archive-cards');
 if (archive) {
   loadIndex().then(records => {
     const pool = records.filter(record => record.language === language);
-    let previous = [];
+    const storageKey = `history-math:archive:${language}`;
+    let previous = [...archive.querySelectorAll('a')].map(link => link.getAttribute('href'));
+    try {
+      const saved = JSON.parse(localStorage.getItem(storageKey));
+      if (Array.isArray(saved) && saved.every(url => typeof url === 'string')) previous = saved.slice(0, 3);
+    } catch {}
     function rotate() {
       const picked = selection(pool, 3, previous);
       previous = picked.map(record => record.url);
+      try { localStorage.setItem(storageKey, JSON.stringify(previous)); } catch {}
       archive.replaceChildren(...picked.map(record => card(record, 'archive-card')));
       document.querySelector('#archive-status').textContent = 'Подборка обновлена: ' + picked.map(record => record.title).join(', ');
     }
@@ -103,10 +291,12 @@ if (archive) {
     const button = document.querySelector('#reshuffle');
     button.hidden = pool.length <= 3;
     button.addEventListener('click', rotate);
-    const matches = anniversaries(records, new Date(), language);
+    window.addEventListener('pageshow', event => { if (event.persisted) rotate(); });
+    const matches = anniversaries(records.filter(record => record.status === 'published'), new Date(), language);
     if (matches.length) {
+      document.querySelector('.anniversary-panel').hidden = false;
       document.querySelector('#anniversary-heading').textContent = 'В этот день мы писали';
-      document.querySelector('#anniversary-note').textContent = 'Годовщины публикаций в журнале. Даты демоматериалов условны.';
+      document.querySelector('#anniversary-note').textContent = 'Вспоминаем статьи, опубликованные в этот день.';
       const result = document.querySelector('#anniversary-result');
       result.replaceChildren(...matches.map(record => {
         const link = element('a', '', `${record.title} (${record.date.slice(0, 4)}) →`);
@@ -134,7 +324,7 @@ if (form) {
       status.textContent = 'Введите слово или фразу, чтобы начать поиск.';
       return;
     }
-    status.textContent = 'Ищем в читальном зале…';
+    status.textContent = 'Ищем…';
     try {
       const records = await loadIndex();
       if (request !== requestNumber) return;
@@ -142,7 +332,7 @@ if (form) {
       results.replaceChildren(...matches.map(record => card(record, 'search-result')));
       status.textContent = matches.length ? `Найдено материалов: ${matches.length}` : 'Ничего не найдено. Попробуйте другое слово или тему.';
     } catch {
-      status.textContent = 'Поиск временно недоступен. Материалы можно найти в читальном зале.';
+      status.textContent = 'Поиск временно недоступен. Откройте раздел «Материалы».';
     }
   }
   let timer;
