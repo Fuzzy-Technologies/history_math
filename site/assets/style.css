@@ -228,6 +228,7 @@ main,
 .navigation-bar {
   grid-column: 1/-1;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 24px;
   border-top: 3px double var(--ink);
@@ -1093,6 +1094,7 @@ input::placeholder {
   align-items: center;
   gap: 18px;
   flex-shrink: 0;
+  margin-left: auto;
 }
 .theme-toggle {
   display: inline-flex;

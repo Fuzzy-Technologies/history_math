@@ -208,7 +208,7 @@ try {
     assert.notDeepEqual(await reopened.locator('#archive-cards a').evaluateAll(links => links.map(link => link.href).sort()), previous);
     await reopened.close();
     assert.ok(await page.locator('.card-copy > p:not(.eyebrow)').first().evaluate(node => parseFloat(getComputedStyle(node).fontSize)) >= 17);
-    for (const width of viewport.name === 'mobile' ? [320, 390, 620] : [768, 1024, 1440]) {
+    for (const width of viewport.name === 'mobile' ? [320, 390, 620, 621] : [768, 1024, 1440]) {
       await page.setViewportSize({width, height: viewport.height});
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `Reading layout overflows at ${width}px`);
     }
