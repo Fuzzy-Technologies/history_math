@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title | escape }} · {% if ru %}Математика с Мансур-абый{% else %}Mathematics with Mansur-abyi{% endif %}</title>
   <meta name="description" content="{{ page.description | escape }}">
-  <meta name="theme-color" content="#f6f3eb">
+  <meta name="theme-color" content="#f4eddf">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   {% for translation in page.translations %}<link rel="alternate" hreflang="{{ translation.lang }}" href="{{ translation.url | absolute_url }}">{% endfor %}
   <meta property="og:title" content="{{ page.title | escape }}">
@@ -17,6 +17,7 @@
   <meta property="og:locale" content="{% if ru %}ru_RU{% else %}en_US{% endif %}">
   {% if page.cover_image %}<meta property="og:image" content="{{ page.cover_image | absolute_url }}">{% endif %}
   <link rel="icon" href="{{ '/assets/images/mark.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="preload" href="{{ '/assets/fonts/pt-serif-regular.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
   <script type="module" src="{{ '/assets/app.js' | relative_url }}"></script>
   {% if page.math %}
@@ -27,11 +28,14 @@
 </head>
 <body data-lang="{{ page.lang }}" data-index="{{ '/assets/search-' | append: page.lang | append: '.json' | relative_url }}">
   <a class="skip-link" href="#main">{% if ru %}К содержимому{% else %}Skip to content{% endif %}</a>
-  <div class="masthead-note">{% if ru %}Люди, идеи и история математики{% else %}People, ideas & the history of mathematics{% endif %}<span>EST. 2026</span></div>
+  <div class="masthead-note"><span>{% if ru %}История математики{% else %}The history of mathematics{% endif %}</span><span>{% if ru %}Люди · Идеи · Открытия{% else %}People · Ideas · Discovery{% endif %}</span></div>
   <header class="site-header">
-    <a class="brand" href="{{ home | relative_url }}"><img src="{{ '/assets/images/mark.svg' | relative_url }}" alt="" width="42" height="42"><span>{% if ru %}Математика<span class="brand-sub">с Мансур-абый</span>{% else %}Mathematics<span class="brand-sub">with Mansur-abyi</span>{% endif %}</span></a>
+    <a class="brand" href="{{ home | relative_url }}"><img src="{% if ru %}{{ '/assets/images/Math-with-Mansur-logo-ru.png' | relative_url }}{% else %}{{ '/assets/images/Math-with-Mansur-logo.png' | relative_url }}{% endif %}" alt="" width="112" height="112" fetchpriority="high"><span><span class="brand-title">{% if ru %}Математика{% else %}Mathematics{% endif %}</span><span class="brand-sub">{% if ru %}с Мансур-абый{% else %}with Mansur-abyi{% endif %}</span></span></a>
+    <p class="masthead-motto">{% if ru %}История идей.<br>Радость открытий.{% else %}A history of ideas.<br>The joy of discovery.{% endif %}</p>
+    <div class="navigation-bar">
     <nav aria-label="{% if ru %}Основная навигация{% else %}Main navigation{% endif %}">
       {% if ru %}
+      <a href="{{ '/ru/' | relative_url }}" {% if page.translation_key == 'home' %}aria-current="page"{% endif %}>Обложка</a>
       <a href="{{ '/ru/materials/' | relative_url }}" {% if page.translation_key == 'catalog' %}aria-current="page"{% endif %}>Материалы</a>
       <a href="{{ '/ru/about/' | relative_url }}" {% if page.translation_key == 'about' %}aria-current="page"{% endif %}>О проекте</a>
       <a href="{{ '/ru/search/' | relative_url }}" {% if page.translation_key == 'search' %}aria-current="page"{% endif %}>Поиск <span aria-hidden="true">⌕</span></a>
@@ -42,8 +46,9 @@
       {% assign has_other = false %}{% for translation in page.translations %}{% if translation.lang != page.lang %}{% assign has_other = true %}<a href="{{ translation.url | relative_url }}" lang="{{ translation.lang }}">{{ translation.lang | upcase }}</a>{% endif %}{% endfor %}
       {% unless has_other %}{% if ru %}<a href="{{ '/' | relative_url }}" lang="en" aria-label="English edition home">EN ↗</a>{% else %}<a href="{{ '/ru/' | relative_url }}" lang="ru">RU ↗</a>{% endif %}{% endunless %}
     </nav>
+    </div>
   </header>
   <main id="main" tabindex="-1">{{ content }}</main>
-  <footer class="site-footer"><div><strong>{% if ru %}Математика с Мансур-абый{% else %}Mathematics with Mansur-abyi{% endif %}</strong><p>{% if ru %}История идей. Радость открытий.{% else %}A history of ideas. The joy of discovery.{% endif %}</p></div><div><a href="https://fuzzy-technologies.github.io/">Fuzzy Technologies ↗</a><p>{% if ru %}Технологии · Знания · Наука{% else %}Technologies · Knowledge · Science{% endif %}</p></div></footer>
+  <footer class="site-footer"><div class="footer-brand"><img src="{% if ru %}{{ '/assets/images/Math-with-Mansur-logo-ru.png' | relative_url }}{% else %}{{ '/assets/images/Math-with-Mansur-logo.png' | relative_url }}{% endif %}" alt="" width="64" height="64" loading="lazy"><div><strong>{% if ru %}Математика с Мансур-абый{% else %}Mathematics with Mansur-abyi{% endif %}</strong><p>{% if ru %}История идей. Радость открытий.{% else %}A history of ideas. The joy of discovery.{% endif %}</p></div></div><div><a href="https://fuzzy-technologies.github.io/">Fuzzy Technologies ↗</a><p>{% if ru %}Технологии · Знания · Наука{% else %}Technologies · Knowledge · Science{% endif %}</p></div></footer>
 </body>
 </html>

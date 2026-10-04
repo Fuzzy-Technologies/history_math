@@ -25,7 +25,7 @@ Demo content must remain visibly marked and must not be attributed as authored s
 
 ## UI and asset rules
 
-Use the warm light reading-room design, graphite text, restrained green/brass accents and readable Cyrillic typography. Avoid company-site neon effects, counters or analytics. All local paths must use the project base path. Keep shared layouts separate from Markdown article bodies. Respect reduced motion, keyboard focus, semantic navigation and responsive reading.
+Use the owner-requested sepia science-magazine design: ivory paper, dark brown ink, restrained copper accents, engraved illustrations and readable Cyrillic typography. Draw on mid-century editorial composition while keeping mobile reading vertical and comfortable. Avoid company-site neon effects, counters or analytics. All local paths must use the project base path. Keep shared layouts separate from Markdown article bodies. Respect reduced motion, keyboard focus, semantic navigation and responsive reading.
 
 ## Validation and evidence
 
