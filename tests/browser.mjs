@@ -36,7 +36,7 @@ try {
     page.on('pageerror', error => report.consoleErrors.push(error.message));
     page.on('console', message => { if (message.type() === 'error') report.consoleErrors.push(message.text()); });
     page.on('requestfailed', request => report.requestFailures.push(request.url()));
-    const paths = ['/ru/', '/', '/ru/materials/', '/ru/search/', '/ru/about/', '/ru/articles/demo-geometry/', '/ru/articles/demo-abacus/', '/404.html'];
+    const paths = ['/ru/', '/', '/ru/materials/', '/ru/search/', '/ru/about/', '/ru/articles/demo-geometry/', '/ru/articles/demo-area/', '/ru/articles/demo-abacus/', '/ru/articles/demo-reading/', '/ru/articles/demo-notation/', '/404.html'];
     for (const path of paths) {
       const response = await page.goto(origin + '/history_math' + path);
       assert.equal(response.status(), 200);
@@ -44,13 +44,36 @@ try {
       assert.equal(await page.locator('html').getAttribute('lang'), path.startsWith('/ru/') ? 'ru' : 'en');
       assert.equal(await page.locator('link[rel=canonical]').getAttribute('href'), 'https://fuzzy-technologies.github.io/history_math' + path);
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), `Horizontal overflow on ${viewport.name} ${path}`);
-      assert.ok(await page.locator('img').evaluateAll(images => images.every(image => image.complete && image.naturalWidth > 0)), `Broken image on ${path}`);
-      if (!['/ru/articles/demo-geometry/'].includes(path)) assert.equal(await page.locator('script[src*=katex]').count(), 0);
+      await page.locator('img').evaluateAll(images => images.forEach(image => { image.loading = 'eager'; }));
+      await page.waitForFunction(() => [...document.images].every(image => image.complete && image.naturalWidth > 0));
+      assert.equal(await page.locator('script[src*=katex]').count(), ['/ru/articles/demo-geometry/', '/ru/articles/demo-area/', '/ru/articles/demo-notation/'].includes(path) ? 1 : 0);
       await page.addScriptTag({content: axe});
       const audit = await page.evaluate(async () => window.axe.run(document, {runOnly: {type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa']}}));
       report.accessibility.push({viewport: viewport.name, path, violations: audit.violations});
       assert.deepEqual(audit.violations.map(item => ({id: item.id, targets: item.nodes.map(node => node.target)})), [], `Accessibility violations on ${path}`);
       if (path === '/ru/') {
+        const carousel = page.locator('#latest-cards');
+        if (viewport.name === 'desktop') {
+          assert.ok(await page.locator('.carousel-controls').isVisible());
+          assert.ok(await page.locator('[data-carousel-direction="-1"]').isDisabled());
+          const initial = await carousel.evaluate(node => node.scrollLeft);
+          await page.locator('[data-carousel-direction="1"]').click();
+          await page.waitForFunction(initial => document.querySelector('#latest-cards').scrollLeft > initial + 10, initial);
+          await carousel.focus();
+          const afterClick = await carousel.evaluate(node => node.scrollLeft);
+          await page.keyboard.press('ArrowRight');
+          await page.waitForFunction(afterClick => document.querySelector('#latest-cards').scrollLeft > afterClick + 10, afterClick);
+          await page.keyboard.press('ArrowLeft');
+          await page.waitForFunction(afterClick => document.querySelector('#latest-cards').scrollLeft <= afterClick + 2, afterClick);
+          await carousel.evaluate(node => { node.scrollLeft = 0; });
+          checked('Desktop: magazine carousel supports buttons, keyboard, limits and reduced motion');
+        } else {
+          assert.equal(await page.locator('.carousel-controls').isVisible(), false);
+          const cards = await carousel.locator('.material-card').evaluateAll(nodes => nodes.map(node => ({top: node.getBoundingClientRect().top, left: node.getBoundingClientRect().left})));
+          assert.ok(cards.every((card, index) => index === 0 || card.top > cards[index - 1].top));
+          assert.ok(cards.every(card => Math.abs(card.left - cards[0].left) < 1));
+          checked('Mobile: all magazine cards form a vertical reading sequence');
+        }
         const titles = await page.locator('.journal-section .material-card h3').allTextContents();
         const originalHeight = await page.locator('#archive-cards').evaluate(node => node.getBoundingClientRect().height);
         let previous = await page.locator('#archive-cards a').evaluateAll(links => links.map(link => link.href).sort());
@@ -71,6 +94,13 @@ try {
         assert.equal(await page.locator('.material-card').count(), 0);
       }
       if (path === '/ru/articles/demo-geometry/') {
+        const toc = page.locator('.article-toc a');
+        assert.equal(await toc.count(), await page.locator('.article-body h2').count());
+        await toc.nth(1).click();
+        assert.ok(await page.evaluate(() => Boolean(document.getElementById(decodeURIComponent(location.hash.slice(1))))));
+        assert.equal(await page.locator('.reading-navigation a').count(), 1);
+        assert.equal(await page.locator('.reading-navigation a').getAttribute('href'), '/history_math/ru/articles/demo-area/');
+        await page.locator('h1').scrollIntoViewIfNeeded();
         assert.ok(await page.locator('.math-source[data-rendered=true]').count() >= 6);
         assert.equal(await page.locator('.math-source:not([data-rendered=true])').count(), 0);
         assert.ok(await page.locator('.math-source[data-display=true] .katex').count() >= 1);
@@ -80,6 +110,10 @@ try {
         assert.equal(await page.locator('link[hreflang=en]').count(), 0);
         await page.screenshot({path: `${evidence}/article-${viewport.name}.png`, fullPage: true});
         checked(`${viewport.name}: literal dollar inline/display math rendered through Markdown to KaTeX; table, footnote and images present`);
+      }
+      if (path === '/ru/articles/demo-area/') {
+        assert.deepEqual(await page.locator('.reading-navigation a').evaluateAll(links => links.map(link => link.getAttribute('href'))), ['/history_math/ru/articles/demo-geometry/', '/history_math/ru/articles/demo-abacus/']);
+        checked(`${viewport.name}: article navigation respects publication order and end-of-sequence limits`);
       }
       if (path === '/ru/search/') {
         for (const query of ['СЧЕТ', 'счёт', 'ЧЕРТЕЖ']) {
@@ -128,10 +162,22 @@ try {
     assert.match(await page.locator('main').innerText(), /This page is missing/);
     await context.close();
   }
+  const responsiveContext = await browser.newContext({reducedMotion: 'reduce'});
+  const responsivePage = await responsiveContext.newPage();
+  await responsivePage.goto(origin + '/history_math/ru/');
+  await responsivePage.waitForLoadState('networkidle');
+  for (const width of [320, 620, 621, 768, 1024]) {
+    await responsivePage.setViewportSize({width, height: 1000});
+    await responsivePage.waitForFunction(width => document.querySelector('#latest-cards').tabIndex === (width > 620 ? 0 : -1), width);
+    assert.ok(await responsivePage.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), `Horizontal overflow at breakpoint ${width}px`);
+    assert.equal(await responsivePage.locator('.carousel-controls').isVisible(), width > 620);
+  }
+  checked('Responsive breakpoints: 320, 620, 621, 768 and 1024px keep the page in bounds and update carousel controls');
+  await responsiveContext.close();
   const context = await browser.newContext({javaScriptEnabled: false, viewport: {width: 390, height: 844}});
   const page = await context.newPage();
   await page.goto(origin + '/history_math/ru/');
-  assert.equal(await page.locator('.material-card').count(), 3);
+  assert.equal(await page.locator('.material-card').count(), 5);
   assert.equal(await page.locator('#archive-cards a').count(), 3);
   await page.goto(origin + '/history_math/ru/materials/');
   assert.equal(await page.locator('.material-card:visible').count(), 5);

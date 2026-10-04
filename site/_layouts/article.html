@@ -9,9 +9,18 @@ layout: default
     <p class="article-meta">{{ page.author }} <span>·</span> <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d.%m.%Y' }}</time> <span>·</span> {{ page.lang | upcase }}</p>
     {% if page.status == 'demo' %}<p class="demo-notice">{% if page.lang == 'ru' %}Пример для проверки прототипа. Не авторская публикация Мансура или Тимура.{% else %}A prototype example, not an authored publication by Mansur or Timur.{% endif %}</p>{% endif %}
   </header>
+  <div class="article-spread">
+  <aside class="article-sidebar" hidden><nav class="article-toc" aria-label="{% if page.lang == 'ru' %}В этой статье{% else %}In this article{% endif %}"><p class="eyebrow">{% if page.lang == 'ru' %}На этой странице{% else %}On this page{% endif %}</p><ol></ol></nav><p class="sidebar-note">{% if page.lang == 'ru' %}Читайте неспешно.<br>Возвращайтесь к вопросам.{% else %}Read slowly.<br>Return to the questions.{% endif %}</p></aside>
   <div class="prose article-body">
     {% if page.hero_image %}<figure><img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_alt | escape }}" width="960" height="600"><figcaption>{{ page.hero_caption | escape }}</figcaption></figure>{% endif %}
     {{ content }}
   </div>
+  </div>
   <footer class="article-end"><p>{% if page.lang == 'ru' %}Темы{% else %}Topics{% endif %}: {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</p><a href="{% if page.lang == 'ru' %}{{ '/ru/materials/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Продолжить чтение →{% else %}Keep reading →{% endif %}</a></footer>
+  {% assign reading = site.articles | where: 'lang', page.lang | sort: 'date' | reverse %}
+  {% for item in reading %}{% if item.url == page.url %}{% assign current_index = forloop.index0 %}{% assign following_index = current_index | plus: 1 %}{% assign preceding_index = current_index | minus: 1 %}{% endif %}{% endfor %}
+  <nav class="reading-navigation" aria-label="{% if page.lang == 'ru' %}Листать статьи{% else %}Browse articles{% endif %}">
+    {% if preceding_index >= 0 %}{% assign preceding = reading[preceding_index] %}<a href="{{ preceding.url | relative_url }}"><span class="eyebrow">← {% if page.lang == 'ru' %}Предыдущая статья{% else %}Previous article{% endif %}</span><span>{{ preceding.title }}</span></a>{% endif %}
+    {% if following_index < reading.size %}{% assign following = reading[following_index] %}<a href="{{ following.url | relative_url }}"><span class="eyebrow">{% if page.lang == 'ru' %}Следующая статья{% else %}Next article{% endif %} →</span><span>{{ following.title }}</span></a>{% endif %}
+  </nav>
 </article>
