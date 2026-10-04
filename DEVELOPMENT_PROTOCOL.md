@@ -1,6 +1,6 @@
 # Development protocol
 
-Version: 1.0. Project: Mathematics with Mansur-abyi (`history_math`). This owner-controlled contract applies to human contributors and automation. Its initial creation is authorized by the prototype task; future changes require owner instruction.
+Version: 1.0. Project: Mathematics with Mansur (`history_math`). This owner-controlled contract applies to human contributors and automation. Its initial creation is authorized by the prototype task; future changes require owner instruction.
 
 ## Architecture and authority
 

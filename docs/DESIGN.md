@@ -17,6 +17,16 @@ Ivory paper, dark brown ink and copper emphasis come from the supplied brand art
 
 Self-hosted PT Serif provides consistent Latin and Cyrillic headings and reading text. Desktop browsing uses an explicitly controlled, keyboard-accessible carousel without autoplay. At 620px and below it becomes a vertical sequence. Articles keep a single text column, a generated section index, and previous/next article links. The initial catalog and archive also work without JavaScript.
 
+## Reader controls and editorial voice
+
+The English name is **Mathematics with Mansur**. Keep PT Serif while using 20–22px article text, 17–18px card descriptions and readable captions. Controls use soft pill shapes; cover and image frames have restrained rounded corners. Dark mode uses warm brown paper and cream ink. Follow the system preference initially, then preserve an explicit reader choice. Blocked browser storage must not disable reading controls.
+
+Unlinked illustrations open in a native modal dialog at the available width. Provide zoom buttons, fit-to-window, keyboard controls, pointer dragging and touch pinch. Preserve the original artwork; restore focus and page scrolling on close. Linked card covers continue to open their articles.
+
+Remember the previous archive subset between visits, replace a repeated subset even with the same random sequence, and rotate restored back/forward pages. Show publication anniversaries only when real published articles match; do not fill the page with placeholder panels.
+
+Use short, concrete, friendly wording rather than abstract promotional headings. Editorial references: [Mansur's account of his mathematical work](https://history-math.blogspot.com/2018/03/blog-post.html), [the mathematics blog](https://teletype.in/@history_math), and the owner's established preference for simple, direct personal-blog language. Demo texts retain their explicit status and attribution.
+
 ## Asset provenance
 
 - `Math-with-Mansur.png` and `Math-with-Mansur-logo.png`: original artwork supplied by the owner, already committed to the repository. Kept intact.
