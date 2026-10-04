@@ -28,6 +28,66 @@ function card(record, className) {
   return node;
 }
 
+const carousel = document.querySelector('#latest-cards');
+if (carousel) {
+  const controls = document.querySelector('.carousel-controls');
+  const status = document.querySelector('.carousel-status');
+  const buttons = [...controls.querySelectorAll('button')];
+  const wide = window.matchMedia('(min-width: 621px)');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const cards = [...carousel.children];
+  function updateCarousel() {
+    const overflow = carousel.scrollWidth > carousel.clientWidth + 2;
+    controls.hidden = !wide.matches || !overflow;
+    status.hidden = !wide.matches || !overflow;
+    carousel.tabIndex = wide.matches && overflow ? 0 : -1;
+    carousel.setAttribute('aria-label', wide.matches ? 'Новые материалы, перелистывайте стрелками' : 'Новые материалы');
+    buttons[0].disabled = carousel.scrollLeft <= 2;
+    buttons[1].disabled = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 2;
+    const visible = cards.map((node, index) => ({index, left: node.offsetLeft - carousel.offsetLeft - carousel.scrollLeft, width: node.offsetWidth})).filter(item => item.left + item.width > 2 && item.left < carousel.clientWidth - 2);
+    if (visible.length) status.textContent = `Страницы ${visible[0].index + 1}–${visible.at(-1).index + 1} из ${cards.length}`;
+  }
+  function turn(direction) {
+    const step = cards.length > 1 ? cards[1].offsetLeft - cards[0].offsetLeft : carousel.clientWidth;
+    carousel.scrollBy({left: direction * step, behavior: reduced.matches ? 'auto' : 'smooth'});
+  }
+  buttons.forEach(button => button.addEventListener('click', () => turn(Number(button.dataset.carouselDirection))));
+  carousel.addEventListener('keydown', event => {
+    if (!wide.matches || event.target !== carousel || !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+    event.preventDefault();
+    turn(event.key === 'ArrowRight' ? 1 : -1);
+  });
+  let frame;
+  carousel.addEventListener('scroll', () => {
+    cancelAnimationFrame(frame);
+    frame = requestAnimationFrame(updateCarousel);
+  }, {passive: true});
+  new ResizeObserver(updateCarousel).observe(carousel);
+  wide.addEventListener('change', updateCarousel);
+  updateCarousel();
+}
+
+const sidebar = document.querySelector('.article-sidebar');
+if (sidebar) {
+  const headings = [...document.querySelectorAll('.article-body h2')];
+  if (headings.length > 1) {
+    const list = sidebar.querySelector('ol');
+    headings.forEach((heading, index) => {
+      if (!heading.id) {
+        let id = `section-${index + 1}`;
+        while (document.getElementById(id)) id += '-section';
+        heading.id = id;
+      }
+      const item = document.createElement('li');
+      const link = element('a', '', heading.textContent);
+      link.href = '#' + encodeURIComponent(heading.id);
+      item.append(link);
+      list.append(item);
+    });
+    sidebar.hidden = false;
+  }
+}
+
 const archive = document.querySelector('#archive-cards');
 if (archive) {
   loadIndex().then(records => {

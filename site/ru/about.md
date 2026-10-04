@@ -7,6 +7,8 @@ translation_key: about
 status: published
 permalink: /ru/about/
 ---
+<figure class="about-banner"><img src="{{ '/assets/images/Math-with-Mansur.png' | relative_url }}" alt="Math with Mansur — портрет Мансура и математические символы в сепии" width="2048" height="682"></figure>
+
 ## Мансур и Тимур
 
 **Мансур Гильмуллин** — математик, алгебраист и историк математики. В его библиотеке и исследованиях — статьи, задачи и истории, которыми хочется делиться.
