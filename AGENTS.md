@@ -1,6 +1,6 @@
 # Repository instructions
 
-Read `DEVELOPMENT_PROTOCOL.md` before making changes. This repository is the public publication target for the Mathematics with Mansur-abyi project.
+Read `DEVELOPMENT_PROTOCOL.md` before making changes. This repository is the public publication target for the Mathematics with Mansur project.
 
 - Continue the current feature branch; preserve user changes and never reset or force-push.
 - Normal PRs target `develop`. Publication is a separate `develop` → `master` PR with a human merge.

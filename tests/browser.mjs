@@ -30,6 +30,7 @@ const axe = await readFile('node_modules/axe-core/axe.min.js', 'utf8');
 function checked(message) { report.checks.push(message); console.log('PASS:', message); }
 
 try {
+  if (!process.argv.includes('--reading-only')) {
   for (const viewport of [{name: 'desktop', width: 1440, height: 1050}, {name: 'mobile', width: 390, height: 844}]) {
     const context = await browser.newContext({viewport, reducedMotion: 'reduce', timezoneId: 'Europe/Moscow'});
     const page = await context.newPage();
@@ -183,6 +184,129 @@ try {
   assert.equal(await page.locator('.material-card:visible').count(), 5);
   checked('Without JavaScript: reading, catalog and initial archive remain available');
   await context.close();
+  }
+
+  for (const viewport of [{name: 'desktop', width: 1440, height: 1050}, {name: 'mobile', width: 390, height: 844}]) {
+    const context = await browser.newContext({viewport, reducedMotion: 'reduce', colorScheme: 'light', hasTouch: viewport.name === 'mobile'});
+    // A repeated random sequence reproduces the stale-selection failure reliably.
+    await context.addInitScript(() => { Math.random = () => 0.4; });
+    const page = await context.newPage();
+    page.on('pageerror', error => report.consoleErrors.push(error.message));
+    page.on('requestfailed', request => report.requestFailures.push(request.url()));
+    const home = origin + '/history_math/ru/';
+    await page.goto(home, {waitUntil: 'networkidle'});
+    let previous = await page.locator('#archive-cards a').evaluateAll(links => links.map(link => link.href).sort());
+    for (let visit = 0; visit < 3; visit += 1) {
+      await page.reload({waitUntil: 'networkidle'});
+      const current = await page.locator('#archive-cards a').evaluateAll(links => links.map(link => link.href).sort());
+      assert.equal(new Set(current).size, 3);
+      assert.notDeepEqual(current, previous);
+      previous = current;
+    }
+    const reopened = await context.newPage();
+    await reopened.goto(home, {waitUntil: 'networkidle'});
+    assert.notDeepEqual(await reopened.locator('#archive-cards a').evaluateAll(links => links.map(link => link.href).sort()), previous);
+    await reopened.close();
+    assert.ok(await page.locator('.card-copy > p:not(.eyebrow)').first().evaluate(node => parseFloat(getComputedStyle(node).fontSize)) >= 17);
+    for (const width of viewport.name === 'mobile' ? [320, 390, 620, 621] : [768, 1024, 1440]) {
+      await page.setViewportSize({width, height: viewport.height});
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `Reading layout overflows at ${width}px`);
+    }
+    await page.setViewportSize(viewport);
+    await page.screenshot({path: `${evidence}/reading-light-${viewport.name}.png`, fullPage: true});
+    await page.locator('.theme-toggle').click();
+    assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
+    await page.reload({waitUntil: 'networkidle'});
+    assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
+    assert.equal(await page.locator('meta[name="theme-color"]').getAttribute('content'), '#1e1a17');
+    await page.addScriptTag({content: axe});
+    const homeAudit = await page.evaluate(async () => window.axe.run(document, {runOnly: {type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa']}}));
+    report.accessibility.push({viewport: viewport.name, path: '/ru/', theme: 'dark', violations: homeAudit.violations});
+    assert.deepEqual(homeAudit.violations.map(item => item.id), [], 'Dark home accessibility');
+    await page.screenshot({path: `${evidence}/reading-dark-${viewport.name}.png`, fullPage: true});
+    checked(`${viewport.name}: archive changes across reloads/new tabs; readable text and saved dark theme stay in bounds`);
+
+    const trigger = page.locator('.hero-figure .image-trigger');
+    await trigger.focus();
+    await page.keyboard.press('Enter');
+    const dialog = page.locator('#image-viewer');
+    await dialog.waitFor({state: 'visible'});
+    await page.waitForFunction(() => document.querySelector('.viewer-canvas img')?.naturalWidth > 0);
+    const fittedWidth = await page.locator('.viewer-canvas img').evaluate(node => node.getBoundingClientRect().width);
+    assert.ok(fittedWidth >= await page.locator('.viewer-stage').evaluate(node => node.clientWidth) - 2);
+    await page.locator('[data-viewer-action="in"]').click();
+    assert.ok(await page.locator('.viewer-canvas img').evaluate(node => node.getBoundingClientRect().width) > fittedWidth * 1.2);
+    const stage = page.locator('.viewer-stage');
+    const box = await stage.boundingBox();
+    if (viewport.name === 'desktop') {
+      const before = await stage.evaluate(node => node.scrollLeft);
+      await page.mouse.move(box.x + box.width * 0.6, box.y + box.height * 0.5);
+      await page.mouse.down();
+      await page.mouse.move(box.x + box.width * 0.6 - 100, box.y + box.height * 0.5, {steps: 6});
+      await page.mouse.up();
+      assert.ok(await stage.evaluate(node => node.scrollLeft) > before + 20);
+    } else {
+      const before = await page.locator('.viewer-canvas img').evaluate(node => node.getBoundingClientRect().width);
+      const touch = await context.newCDPSession(page);
+      const x = box.x + box.width / 2;
+      const y = box.y + box.height / 2;
+      await touch.send('Input.dispatchTouchEvent', {type: 'touchStart', touchPoints: [{x: x - 40, y, id: 1}, {x: x + 40, y, id: 2}]});
+      await touch.send('Input.dispatchTouchEvent', {type: 'touchMove', touchPoints: [{x: x - 80, y, id: 1}, {x: x + 80, y, id: 2}]});
+      await touch.send('Input.dispatchTouchEvent', {type: 'touchEnd', touchPoints: []});
+      assert.ok(await page.locator('.viewer-canvas img').evaluate(node => node.getBoundingClientRect().width) > before * 1.5);
+      await touch.detach();
+    }
+    await page.locator('[data-viewer-action="fit"]').click();
+    assert.ok(await page.locator('.viewer-canvas img').evaluate(node => node.getBoundingClientRect().height) <= await stage.evaluate(node => node.clientHeight) + 1);
+    for (let tab = 0; tab < 8; tab += 1) {
+      await page.keyboard.press('Tab');
+      assert.ok(await page.evaluate(() => document.querySelector('#image-viewer').contains(document.activeElement)));
+    }
+    await page.addScriptTag({content: axe});
+    const viewerAudit = await page.evaluate(async () => window.axe.run(document, {runOnly: {type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa']}}));
+    report.accessibility.push({viewport: viewport.name, path: '/ru/', theme: 'dark', viewer: true, violations: viewerAudit.violations});
+    assert.deepEqual(viewerAudit.violations.map(item => item.id), [], 'Image viewer accessibility');
+    await page.screenshot({path: `${evidence}/image-viewer-${viewport.name}.png`});
+    await page.keyboard.press('Escape');
+    await page.waitForFunction(() => !document.documentElement.classList.contains('viewer-open'));
+    assert.equal(await dialog.isVisible(), false);
+    assert.ok(await trigger.evaluate(node => node === document.activeElement));
+    assert.equal(await page.locator('html.viewer-open').count(), 0);
+    checked(`${viewport.name}: full-width image dialog supports zoom, pan/pinch, fit, focus containment and Escape return`);
+
+    await page.goto(origin + '/history_math/ru/articles/demo-geometry/', {waitUntil: 'networkidle'});
+    assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
+    assert.ok(await page.locator('.article-body').evaluate(node => parseFloat(getComputedStyle(node).fontSize)) >= 20);
+    assert.ok(await page.locator('.article-body figcaption').evaluate(node => parseFloat(getComputedStyle(node).fontSize)) >= 16);
+    assert.equal(await page.locator('.math-source:not([data-rendered=true])').count(), 0);
+    await page.addScriptTag({content: axe});
+    const articleAudit = await page.evaluate(async () => window.axe.run(document, {runOnly: {type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa']}}));
+    report.accessibility.push({viewport: viewport.name, path: '/ru/articles/demo-geometry/', theme: 'dark', violations: articleAudit.violations});
+    assert.deepEqual(articleAudit.violations.map(item => item.id), [], 'Dark article accessibility');
+    await page.locator('.article-body .image-trigger').click();
+    await page.locator('#image-viewer').waitFor({state: 'visible'});
+    await page.locator('[data-viewer-action="close"]').click();
+    await page.goto(origin + '/history_math/', {waitUntil: 'networkidle'});
+    assert.match(await page.title(), /Mathematics with Mansur$/);
+    assert.doesNotMatch(await page.locator('.brand').innerText(), /abyi/);
+    assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
+    await page.locator('.theme-toggle').click();
+    assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
+    checked(`${viewport.name}: article figures and larger captions work; English branding and cross-page theme persist`);
+    await page.waitForLoadState('networkidle');
+    await context.close();
+  }
+  const restricted = await browser.newContext({viewport: {width: 390, height: 844}, colorScheme: 'dark'});
+  await restricted.addInitScript(() => { Object.defineProperty(window, 'localStorage', {get() { throw new DOMException('Storage disabled', 'SecurityError'); }}); });
+  const restrictedPage = await restricted.newPage();
+  restrictedPage.on('pageerror', error => report.consoleErrors.push(error.message));
+  await restrictedPage.goto(origin + '/history_math/ru/', {waitUntil: 'networkidle'});
+  assert.equal(await restrictedPage.locator('html').getAttribute('data-theme'), 'dark');
+  await restrictedPage.locator('.theme-toggle').click();
+  assert.equal(await restrictedPage.locator('html').getAttribute('data-theme'), 'light');
+  assert.ok(await restrictedPage.locator('#reshuffle').isVisible());
+  await restricted.close();
+  checked('System dark preference and blocked storage preserve working reading controls');
   assert.deepEqual(report.consoleErrors, []);
   assert.deepEqual(report.requestFailures, []);
   checked('No browser console errors or failed requests');

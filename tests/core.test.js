@@ -33,3 +33,10 @@ test('anniversaries use publication month/day, prior years and current locale', 
   assert.equal(anniversaries(records, new Date(2026, 9, 2), 'ru').length, 0);
   assert.equal(anniversaries([{...records[0], date: '2024-02-29'}], new Date(2026, 1, 28), 'ru').length, 0);
 });
+test('a saved archive subset is replaced even when the random sequence repeats', () => {
+  const pool = Array.from({length: 5}, (_, index) => ({url: `/${index}/`}));
+  const first = selection(pool, 3, [], () => 0.4);
+  const next = selection(pool, 3, first.map(record => record.url), () => 0.4);
+  assert.notDeepEqual(next.map(record => record.url).sort(), first.map(record => record.url).sort());
+  assert.equal(new Set(next.map(record => record.url)).size, 3);
+});

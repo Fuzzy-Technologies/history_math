@@ -1,7 +1,7 @@
 ---
 layout: default
-title: История начинается с вопроса
-description: Истории людей и идей, красивые задачи и инструменты математического мышления.
+title: Математика с Мансур-абый
+description: Рассказываем об учёных и открытиях, разбираем задачи и знакомимся с историей математики.
 lang: ru
 translation_key: home
 status: published
@@ -11,17 +11,29 @@ permalink: /ru/
 {% assign featured = articles | where: 'translation_key', 'demo-geometry' | first %}
 {% unless featured %}{% assign featured = articles | first %}{% endunless %}
 <section class="journal-hero">
-  <div class="cover-line"><span>Математическая библиотека</span><span>Пробный выпуск / 2026</span></div>
-  <div class="hero-copy"><p class="eyebrow"><span class="section-number" aria-hidden="true">01</span> Наука начинается с любопытства</p><h1>У каждой<br>идеи есть<br><em>история.</em></h1><p class="lead">Люди, вопросы и открытия,<br>из которых складывается математика.</p><a class="button" href="{{ '/ru/materials/' | relative_url }}">Листать журнал <span aria-hidden="true">→</span></a><p class="hero-credit">Проект Мансура и Тимура Гильмуллиных</p></div>
-  <figure class="hero-figure"><img src="{{ '/assets/images/frontispiece.svg' | relative_url }}" alt="Гравюрная композиция: окружности, вписанный треугольник и линии геометрического построения" width="900" height="900" fetchpriority="high"><figcaption><span>ГЕОМЕТРИЯ ЛЮБОПЫТСТВА</span><span>Таблица I</span></figcaption></figure>
-  <div class="cover-bottom"><span>Форма · Мысль · Время</span>{% if featured %}<a href="{{ featured.url | relative_url }}">На полях: {{ featured.title }} <span aria-hidden="true">↗</span></a>{% endif %}</div>
+  <div class="cover-line"><span>История математики</span><span>Пробные страницы</span></div>
+  <div class="hero-copy">
+    <p class="eyebrow">Добро пожаловать в наш блог</p>
+    <h1>Поговорим<br><em>о математике.</em></h1>
+    <p class="lead">Об учёных и открытиях, задачах и старинных книгах. О том, как развивалась математика и кто её создавал.</p>
+    <a class="button" href="{{ '/ru/materials/' | relative_url }}">Читать материалы <span aria-hidden="true">→</span></a>
+    <p class="hero-credit">Мансур и Тимур Гильмуллины</p>
+  </div>
+  <figure class="hero-figure"><img src="{{ '/assets/images/frontispiece.svg' | relative_url }}" alt="Гравюрная композиция: окружности, вписанный треугольник и линии геометрического построения" width="900" height="900" fetchpriority="high"><figcaption><span>Геометрия</span><span>Таблица I</span></figcaption></figure>
+  <div class="cover-bottom"><span>Очерки · Задачи · История</span>{% if featured %}<a href="{{ featured.url | relative_url }}">Начать с чертежа <span aria-hidden="true">↗</span></a>{% endif %}</div>
 </section>
-<div class="demo-strip"><span class="status-dot" aria-hidden="true"></span>Пробный выпуск · Все материалы — демонстрационные примеры, не авторские публикации.</div>
+<div class="demo-strip"><span class="status-dot" aria-hidden="true"></span>Пока здесь пробные материалы для проверки сайта. Авторские статьи добавим позже.</div>
 <section class="journal-section latest-section" aria-labelledby="latest-heading">
-  <div class="section-heading"><div><p class="eyebrow"><span class="section-number" aria-hidden="true">02</span> Новые страницы</p><h2 id="latest-heading">Начать с любопытства</h2></div><div class="section-actions"><a href="{{ '/ru/materials/' | relative_url }}">Все материалы ↗</a><div class="carousel-controls" hidden><button type="button" data-carousel-direction="-1" aria-label="Предыдущие материалы" aria-controls="latest-cards">←</button><button type="button" data-carousel-direction="1" aria-label="Следующие материалы" aria-controls="latest-cards">→</button></div></div></div>
-  <div class="card-grid magazine-carousel" id="latest-cards" tabindex="0" role="region" aria-label="Новые материалы, горизонтальная подборка на широком экране">{% for article in articles limit:5 %}{% include card.html article=article number=forloop.index %}{% endfor %}</div>
+  <div class="section-heading"><div><p class="eyebrow">Статьи и задачи</p><h2 id="latest-heading">Новые материалы</h2></div><div class="section-actions"><a href="{{ '/ru/materials/' | relative_url }}">Все материалы ↗</a><div class="carousel-controls" hidden><button type="button" data-carousel-direction="-1" aria-label="Предыдущие материалы" aria-controls="latest-cards">←</button><button type="button" data-carousel-direction="1" aria-label="Следующие материалы" aria-controls="latest-cards">→</button></div></div></div>
+  <div class="card-grid magazine-carousel" id="latest-cards" tabindex="0" role="region" aria-label="Новые материалы">{% for article in articles limit:5 %}{% include card.html article=article number=forloop.index %}{% endfor %}</div>
   <p class="carousel-status quiet" role="status" hidden></p>
 </section>
-<section class="archive-section journal-section" aria-labelledby="archive-heading"><div class="section-heading"><div><p class="eyebrow"><span class="section-number" aria-hidden="true">03</span> У хороших вопросов нет срока давности</p><h2 id="archive-heading">Перечитать и заметить новое</h2></div><button class="text-button" id="reshuffle" type="button" hidden>Другая подборка <span aria-hidden="true">↻</span></button></div><div id="archive-cards" class="archive-grid">{% for article in articles offset:2 limit:3 %}<article class="archive-card"><p class="eyebrow">{% include type.html type=article.type %}{% if article.status == 'demo' %} · Демо{% endif %}</p><h3><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h3><p>{{ article.description }}</p></article>{% endfor %}</div><p id="archive-status" class="visually-hidden" role="status"></p></section>
-<section class="anniversary-panel"><span class="anniversary-ornament" aria-hidden="true">∞</span><div><p class="eyebrow">Возвращаясь к прочитанному</p><h2 id="anniversary-heading">На страницах архива</h2><p id="anniversary-note">Здесь появятся годовщины наших публикаций. Пока можно вернуться к одному из демоматериалов.</p></div><div id="anniversary-result">{% for article in articles limit:1 %}<a href="{{ article.url | relative_url }}">{{ article.title }} →</a>{% endfor %}</div></section>
-<section class="about-teaser"><img src="{{ '/assets/images/Math-with-Mansur-logo-ru.png' | relative_url }}" alt="Мансур Гильмуллин в круглом логотипе проекта" width="240" height="240" loading="lazy"><div><p class="eyebrow">Математика — это разговор</p><h2>От семейной библиотеки<br>к общему читальному залу.</h2><p>Мансур — математик и историк математики. Тимур — инженер, который помогает историям находить своих читателей.</p><a href="{{ '/ru/about/' | relative_url }}">Познакомиться с проектом ↗</a></div></section>
+<section class="archive-section journal-section" aria-labelledby="archive-heading">
+  <div class="section-heading"><div><p class="eyebrow">Что ещё почитать</p><h2 id="archive-heading">Из архива</h2></div><button class="text-button" id="reshuffle" type="button" hidden>Другая подборка <span aria-hidden="true">↻</span></button></div>
+  <div id="archive-cards" class="archive-grid">{% for article in articles offset:2 limit:3 %}<article class="archive-card"><p class="eyebrow">{% include type.html type=article.type %}{% if article.status == 'demo' %} · Демо{% endif %}</p><h3><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h3><p>{{ article.description }}</p></article>{% endfor %}</div><p id="archive-status" class="visually-hidden" role="status"></p>
+</section>
+<section class="anniversary-panel" hidden><span class="anniversary-ornament" aria-hidden="true">∞</span><div><p class="eyebrow">Из истории блога</p><h2 id="anniversary-heading">В этот день мы писали</h2><p id="anniversary-note"></p></div><div id="anniversary-result"></div></section>
+<section class="about-teaser">
+  <img src="{{ '/assets/images/Math-with-Mansur-logo-ru.png' | relative_url }}" alt="Мансур Гильмуллин в круглом логотипе проекта" width="240" height="240" loading="lazy">
+  <div><p class="eyebrow">Об авторах</p><h2>Мансур и Тимур</h2><p>Мансур — математик, преподаватель и историк математики. Пишет статьи и собирает материалы для блога. Тимур — инженер; помогает их оформлять и публиковать.</p><a href="{{ '/ru/about/' | relative_url }}">Подробнее о блоге ↗</a></div>
+</section>

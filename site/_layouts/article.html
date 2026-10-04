@@ -7,10 +7,10 @@ layout: default
     <p class="eyebrow">{% include type.html type=page.type %} · {% if page.status == 'demo' %}{% if page.lang == 'ru' %}Демоматериал{% else %}Demo material{% endif %}{% endif %}</p>
     <h1>{{ page.title }}</h1><p class="lead">{{ page.description }}</p>
     <p class="article-meta">{{ page.author }} <span>·</span> <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d.%m.%Y' }}</time> <span>·</span> {{ page.lang | upcase }}</p>
-    {% if page.status == 'demo' %}<p class="demo-notice">{% if page.lang == 'ru' %}Пример для проверки прототипа. Не авторская публикация Мансура или Тимура.{% else %}A prototype example, not an authored publication by Mansur or Timur.{% endif %}</p>{% endif %}
+    {% if page.status == 'demo' %}<p class="demo-notice">{% if page.lang == 'ru' %}Пробный материал. Не авторская статья Мансура или Тимура.{% else %}A demo article, not authored by Mansur or Timur.{% endif %}</p>{% endif %}
   </header>
   <div class="article-spread">
-  <aside class="article-sidebar" hidden><nav class="article-toc" aria-label="{% if page.lang == 'ru' %}В этой статье{% else %}In this article{% endif %}"><p class="eyebrow">{% if page.lang == 'ru' %}На этой странице{% else %}On this page{% endif %}</p><ol></ol></nav><p class="sidebar-note">{% if page.lang == 'ru' %}Читайте неспешно.<br>Возвращайтесь к вопросам.{% else %}Read slowly.<br>Return to the questions.{% endif %}</p></aside>
+  <aside class="article-sidebar" hidden><nav class="article-toc" aria-label="{% if page.lang == 'ru' %}В этой статье{% else %}In this article{% endif %}"><p class="eyebrow">{% if page.lang == 'ru' %}Содержание{% else %}Contents{% endif %}</p><ol></ol></nav></aside>
   <div class="prose article-body">
     {% if page.hero_image %}<figure><img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_alt | escape }}" width="960" height="600"><figcaption>{{ page.hero_caption | escape }}</figcaption></figure>{% endif %}
     {{ content }}
