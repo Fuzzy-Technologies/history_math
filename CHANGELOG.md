@@ -2,7 +2,7 @@
 
 ## Unreleased — first prototype
 
-- Resume articles at the saved paragraph, with a restart control and safe handling of responsive reflow, section links and unavailable storage.
+- Resume articles at the saved paragraph, with a restart control, preservation through header navigation and safe handling of responsive reflow, section links and unavailable storage.
 - Add the book showcase, move About beside the masthead motto, introduce Reading Room labels and slightly reduce prose and cover-description sizes.
 
 - Tighten article spacing, slightly reduce heading sizes and remove repeated cover copy and the search ornament.
