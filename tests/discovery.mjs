@@ -3,6 +3,29 @@ import assert from 'node:assert/strict';
 export async function runDiscoveryChecks({browser, origin, evidence, axe, report, checked}) {
   const base = origin + '/history_math';
   const records = await (await fetch(base + '/assets/search-ru.json')).json();
+  const upgrade = await browser.newContext();
+  const upgradePage = await upgrade.newPage();
+  const dependencyURLs = [];
+  const upgradeErrors = [];
+  upgradePage.on('pageerror', error => upgradeErrors.push(error.message));
+  upgradePage.on('request', request => {
+    if (/\/(core|select|reading-position)\.js$/.test(new URL(request.url()).pathname)) dependencyURLs.push(request.url());
+  });
+  // Simulate a still-fresh cached core module from the previous deployment.
+  await upgrade.route(url => url.pathname.endsWith('/core.js') && !url.search, route => route.fulfill({
+    contentType: 'text/javascript',
+    body: 'export const normalize = value => value; export const search = () => []; export const selection = () => []; export const anniversaries = () => [];'
+  }));
+  await upgradePage.goto(base + '/ru/materials/', {waitUntil: 'networkidle'});
+  assert.equal(await upgradePage.getByRole('combobox').count(), 2, 'A cached dependency disabled the new interface');
+  assert.equal(await upgradePage.locator('.theme-toggle').isVisible(), true);
+  const version = new URL(await upgradePage.locator('script[src*="/app.js"]').getAttribute('src'), base).search;
+  assert.ok(version.startsWith('?v='));
+  assert.equal(dependencyURLs.length, 3);
+  assert.ok(dependencyURLs.every(url => new URL(url).search === version));
+  assert.deepEqual(upgradeErrors, []);
+  await upgrade.close();
+  checked('Cached pre-upgrade modules cannot disable a new deployment; the complete dependency graph shares the app version');
   async function audit(page, name) {
     await page.addScriptTag({content: axe});
     const result = await page.evaluate(async () => window.axe.run(document, {runOnly: {type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa']}}));

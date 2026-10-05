@@ -1,4 +1,4 @@
-import {normalize} from './core.js';
+const {normalize} = await import('./core.js' + new URL(import.meta.url).search);
 
 let closeCurrent;
 
