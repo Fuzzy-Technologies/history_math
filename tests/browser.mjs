@@ -30,7 +30,7 @@ const axe = await readFile('node_modules/axe-core/axe.min.js', 'utf8');
 function checked(message) { report.checks.push(message); console.log('PASS:', message); }
 
 try {
-  if (!process.argv.includes('--reading-only')) {
+  if (!process.argv.includes('--reading-only') && !process.argv.includes('--polish-only')) {
   for (const viewport of [{name: 'desktop', width: 1440, height: 1050}, {name: 'mobile', width: 390, height: 844}]) {
     const context = await browser.newContext({viewport, reducedMotion: 'reduce', timezoneId: 'Europe/Moscow'});
     const page = await context.newPage();
@@ -186,6 +186,7 @@ try {
   await context.close();
   }
 
+  if (!process.argv.includes('--polish-only')) {
   for (const viewport of [{name: 'desktop', width: 1440, height: 1050}, {name: 'mobile', width: 390, height: 844}]) {
     const context = await browser.newContext({viewport, reducedMotion: 'reduce', colorScheme: 'light', hasTouch: viewport.name === 'mobile'});
     // A repeated random sequence reproduces the stale-selection failure reliably.
@@ -307,6 +308,104 @@ try {
   assert.ok(await restrictedPage.locator('#reshuffle').isVisible());
   await restricted.close();
   checked('System dark preference and blocked storage preserve working reading controls');
+  }
+  for (const theme of ['light', 'dark']) {
+    for (const viewport of [{name: 'desktop', width: 1440, height: 1050}, {name: 'mobile', width: 390, height: 844}]) {
+      const context = await browser.newContext({viewport, colorScheme: theme, reducedMotion: 'reduce', hasTouch: viewport.name === 'mobile'});
+      const page = await context.newPage();
+      page.on('pageerror', error => report.consoleErrors.push(error.message));
+      page.on('requestfailed', request => report.requestFailures.push(request.url()));
+      await page.goto(origin + '/history_math/ru/', {waitUntil: 'networkidle'});
+      assert.equal(await page.locator('.hero-copy .eyebrow, .hero-credit').count(), 0);
+      assert.equal(await page.locator('nav a[href$="/search/"]').innerText(), 'Поиск');
+      const carousel = page.locator('#latest-cards');
+      await carousel.scrollIntoViewIfNeeded();
+      await carousel.hover({position: {x: 100, y: 100}});
+      const pageTop = await page.evaluate(() => scrollY);
+      await page.mouse.wheel(0, 120);
+      if (viewport.name === 'desktop') {
+        await page.waitForFunction(() => document.querySelector('#latest-cards').scrollLeft > 100);
+        await page.waitForFunction(() => !document.querySelector('#latest-cards').classList.contains('is-wheeling'));
+        assert.ok(Math.abs(await page.evaluate(() => scrollY) - pageTop) < 2, 'Wheel moved the page inside the strip');
+        await carousel.evaluate(node => { node.scrollLeft = node.scrollWidth - node.clientWidth; });
+        await carousel.hover({position: {x: 100, y: 100}});
+        const atEnd = await page.evaluate(() => scrollY);
+        await page.mouse.wheel(0, 120);
+        await page.waitForFunction(top => scrollY > top + 10, atEnd);
+        await carousel.scrollIntoViewIfNeeded();
+        await carousel.evaluate(node => { node.scrollLeft = 0; });
+        await carousel.hover({position: {x: 100, y: 100}});
+        const atStart = await page.evaluate(() => scrollY);
+        await page.mouse.wheel(0, -120);
+        await page.waitForFunction(top => scrollY < top - 10, atStart);
+        await carousel.scrollIntoViewIfNeeded();
+        const image = page.locator('.card-image').first();
+        const bounds = await image.boundingBox();
+        const before = page.url();
+        await page.mouse.move(bounds.x + bounds.width - 20, bounds.y + 35);
+        await page.mouse.down();
+        await page.mouse.move(bounds.x + 12, bounds.y + 35, {steps: 12});
+        await page.mouse.up();
+        await page.waitForFunction(() => document.querySelector('#latest-cards').scrollLeft > 100);
+        assert.equal(page.url(), before, 'Dragging followed an article link');
+        assert.equal(await carousel.evaluate(node => node.classList.contains('is-dragging')), false);
+        await image.click();
+        await page.waitForURL('**/demo-geometry/');
+        checked(`${theme}: mouse drag preserves link clicks; wheel browses cards and releases page scrolling at both ends`);
+      } else {
+        await page.waitForFunction(top => scrollY > top + 10, pageTop);
+        assert.equal(await carousel.evaluate(node => node.scrollLeft), 0);
+        assert.equal(await page.locator('.carousel-controls').isVisible(), false);
+        await page.goto(origin + '/history_math/ru/articles/demo-geometry/', {waitUntil: 'networkidle'});
+        checked(`${theme}: mobile material cards retain ordinary vertical scrolling`);
+      }
+      await page.waitForLoadState('networkidle');
+      const prose = page.locator('.prose');
+      const measurements = await prose.evaluate(node => {
+        const style = getComputedStyle(node);
+        const paragraph = getComputedStyle(node.querySelector('p'));
+        return {size: parseFloat(style.fontSize), leading: parseFloat(style.lineHeight) / parseFloat(style.fontSize), gap: parseFloat(paragraph.marginBottom) / parseFloat(paragraph.fontSize)};
+      });
+      assert.ok(measurements.size >= 20 && measurements.size <= 22);
+      assert.ok(measurements.leading <= 1.6 && measurements.leading >= 1.5);
+      assert.ok(measurements.gap <= 0.8);
+      assert.equal(await page.locator('.math-source[data-rendered=true]').count(), 7);
+      const formula = await page.locator('.math-source[data-display=true]').evaluate(node => ({height: node.getBoundingClientRect().height, content: node.querySelector('.katex').getBoundingClientRect().height, size: parseFloat(getComputedStyle(node).fontSize)}));
+      assert.ok(formula.height - formula.content <= formula.size * 2, 'Display formula has doubled vertical padding');
+      const content = await prose.innerHTML();
+      await page.locator('.theme-toggle').click();
+      assert.equal(await prose.innerHTML(), content, 'Theme changed article markup');
+      await page.locator('.theme-toggle').click();
+      await page.addScriptTag({content: axe});
+      const audit = await page.evaluate(async () => window.axe.run(document, {runOnly: {type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa']}}));
+      report.accessibility.push({viewport: viewport.name, path: '/ru/articles/demo-geometry/', theme, violations: audit.violations});
+      assert.deepEqual(audit.violations.map(item => item.id), []);
+      await page.screenshot({path: `${evidence}/compact-article-${theme}-${viewport.name}.png`, fullPage: true});
+      checked(`${theme} ${viewport.name}: compact readable prose, rendered formulas, one article markup for both themes and WCAG AA`);
+      await context.close();
+    }
+  }
+  const motionContext = await browser.newContext({viewport: {width: 1440, height: 1050}, reducedMotion: 'no-preference'});
+  const motionPage = await motionContext.newPage();
+  await motionPage.goto(origin + '/history_math/ru/', {waitUntil: 'networkidle'});
+  await motionPage.locator('.material-card').first().hover();
+  await motionPage.waitForFunction(() => new DOMMatrixReadOnly(getComputedStyle(document.querySelector('.material-card')).transform).m42 < -1.5);
+  await motionPage.emulateMedia({reducedMotion: 'reduce'});
+  assert.equal(await motionPage.locator('.material-card').first().evaluate(node => getComputedStyle(node).transform), 'none');
+  await motionPage.emulateMedia({reducedMotion: 'no-preference'});
+  await motionPage.locator('#latest-cards').hover({position: {x: 100, y: 100}});
+  await motionPage.mouse.wheel(0, 120);
+  await motionPage.waitForFunction(() => document.querySelector('#latest-cards').scrollLeft > 100 && !document.querySelector('#latest-cards').classList.contains('is-wheeling'));
+  const clickImage = motionPage.locator('.card-image').first();
+  await clickImage.scrollIntoViewIfNeeded();
+  const clickBounds = await clickImage.boundingBox();
+  await motionPage.mouse.move(clickBounds.x + 35, clickBounds.y + 35);
+  await motionPage.mouse.down();
+  await motionPage.mouse.move(clickBounds.x + 38, clickBounds.y + 35);
+  await motionPage.mouse.up();
+  await motionPage.waitForURL('**/demo-geometry/');
+  await motionContext.close();
+  checked('Normal motion: small card lift, smooth wheel browsing and small pointer movement keep ordinary links usable; reduced motion keeps cards stationary');
   assert.deepEqual(report.consoleErrors, []);
   assert.deepEqual(report.requestFailures, []);
   checked('No browser console errors or failed requests');

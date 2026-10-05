@@ -218,18 +218,39 @@ if (carousel) {
   const wide = window.matchMedia('(min-width: 621px)');
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
   const cards = [...carousel.children];
+  let drag;
+  let suppressClick = false;
+  let wheelTimer;
+  let wheelDirection = 0;
+  const canScroll = () => wide.matches && carousel.scrollWidth > carousel.clientWidth + 2;
+  function stopWheel() {
+    clearTimeout(wheelTimer);
+    carousel.classList.remove('is-wheeling');
+  }
+  function finishDrag(event) {
+    if (!drag || (event && event.pointerId !== drag.id)) return;
+    const finished = drag;
+    drag = undefined;
+    carousel.classList.remove('is-dragging');
+    if (carousel.hasPointerCapture(finished.id)) carousel.releasePointerCapture(finished.id);
+    if (finished.moved) {
+      suppressClick = true;
+      setTimeout(() => { suppressClick = false; }, 0);
+    }
+  }
   function updateCarousel() {
     const overflow = carousel.scrollWidth > carousel.clientWidth + 2;
     controls.hidden = !wide.matches || !overflow;
     status.hidden = !wide.matches || !overflow;
     carousel.tabIndex = wide.matches && overflow ? 0 : -1;
-    carousel.setAttribute('aria-label', wide.matches ? 'Новые материалы, перелистывайте стрелками' : 'Новые материалы');
+    carousel.setAttribute('aria-label', wide.matches ? 'Новые материалы: стрелки, перетаскивание или колёсико' : 'Новые материалы');
     buttons[0].disabled = carousel.scrollLeft <= 2;
     buttons[1].disabled = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 2;
     const visible = cards.map((node, index) => ({index, left: node.offsetLeft - carousel.offsetLeft - carousel.scrollLeft, width: node.offsetWidth})).filter(item => item.left + item.width > 2 && item.left < carousel.clientWidth - 2);
     if (visible.length) status.textContent = `Страницы ${visible[0].index + 1}–${visible.at(-1).index + 1} из ${cards.length}`;
   }
   function turn(direction) {
+    stopWheel();
     const step = cards.length > 1 ? cards[1].offsetLeft - cards[0].offsetLeft : carousel.clientWidth;
     carousel.scrollBy({left: direction * step, behavior: reduced.matches ? 'auto' : 'smooth'});
   }
@@ -239,13 +260,60 @@ if (carousel) {
     event.preventDefault();
     turn(event.key === 'ArrowRight' ? 1 : -1);
   });
+  carousel.addEventListener('pointerdown', event => {
+    if (event.pointerType !== 'mouse' || event.button !== 0 || !canScroll()) return;
+    stopWheel();
+    drag = {id: event.pointerId, x: event.clientX, left: carousel.scrollLeft, moved: false};
+  });
+  window.addEventListener('pointermove', event => {
+    if (!drag || event.pointerId !== drag.id) return;
+    const distance = event.clientX - drag.x;
+    if (!drag.moved && Math.abs(distance) < 6) return;
+    if (!drag.moved) {
+      drag.moved = true;
+      carousel.classList.add('is-dragging');
+      carousel.setPointerCapture(event.pointerId);
+    }
+    event.preventDefault();
+    carousel.scrollLeft = drag.left - distance;
+  });
+  for (const name of ['pointerup', 'pointercancel', 'lostpointercapture']) {
+    window.addEventListener(name, finishDrag);
+  }
+  window.addEventListener('blur', () => finishDrag());
+  carousel.addEventListener('dragstart', event => { if (canScroll()) event.preventDefault(); });
+  carousel.addEventListener('click', event => {
+    if (!suppressClick || event.detail === 0) return;
+    event.preventDefault();
+    event.stopPropagation();
+    suppressClick = false;
+  }, true);
+  carousel.addEventListener('wheel', event => {
+    if (!canScroll() || drag || event.ctrlKey || event.metaKey || !event.cancelable || Math.abs(event.deltaX) > Math.abs(event.deltaY) || !event.deltaY) return;
+    const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? carousel.clientWidth : 1;
+    const delta = event.deltaY * unit;
+    const maximum = carousel.scrollWidth - carousel.clientWidth;
+    if ((delta < 0 && carousel.scrollLeft <= 2) || (delta > 0 && carousel.scrollLeft >= maximum - 2)) return;
+    event.preventDefault();
+    carousel.classList.add('is-wheeling');
+    carousel.scrollLeft += delta;
+    wheelDirection = Math.sign(delta);
+    clearTimeout(wheelTimer);
+    wheelTimer = setTimeout(() => {
+      const left = carousel.scrollLeft;
+      const stops = [...cards.map(card => Math.min(maximum, card.offsetLeft - carousel.offsetLeft)), maximum];
+      const target = wheelDirection > 0 ? stops.find(stop => stop >= left - 2) : stops.findLast(stop => stop <= left + 2);
+      stopWheel();
+      carousel.scrollTo({left: target ?? left, behavior: reduced.matches ? 'auto' : 'smooth'});
+    }, 180);
+  }, {passive: false});
   let frame;
   carousel.addEventListener('scroll', () => {
     cancelAnimationFrame(frame);
     frame = requestAnimationFrame(updateCarousel);
   }, {passive: true});
   new ResizeObserver(updateCarousel).observe(carousel);
-  wide.addEventListener('change', updateCarousel);
+  wide.addEventListener('change', () => { finishDrag(); stopWheel(); updateCarousel(); });
   updateCarousel();
 }
 

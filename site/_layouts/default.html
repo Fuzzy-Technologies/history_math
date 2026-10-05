@@ -47,7 +47,7 @@
       <a href="{{ '/ru/' | relative_url }}" {% if page.translation_key == 'home' %}aria-current="page"{% endif %}>Главная</a>
       <a href="{{ '/ru/materials/' | relative_url }}" {% if page.translation_key == 'catalog' %}aria-current="page"{% endif %}>Материалы</a>
       <a href="{{ '/ru/about/' | relative_url }}" {% if page.translation_key == 'about' %}aria-current="page"{% endif %}>О блоге</a>
-      <a href="{{ '/ru/search/' | relative_url }}" {% if page.translation_key == 'search' %}aria-current="page"{% endif %}>Поиск <span aria-hidden="true">⌕</span></a>
+      <a href="{{ '/ru/search/' | relative_url }}" {% if page.translation_key == 'search' %}aria-current="page"{% endif %}>Поиск</a>
       {% else %}<a href="{{ '/ru/' | relative_url }}" lang="ru">Русская версия ↗</a>{% endif %}
     </nav>
     <div class="header-tools"><button class="theme-toggle" type="button" hidden data-light-label="{% if ru %}Светлая тема{% else %}Light theme{% endif %}" data-dark-label="{% if ru %}Тёмная тема{% else %}Dark theme{% endif %}"><span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">{% if ru %}Тёмная тема{% else %}Dark theme{% endif %}</span></button>
