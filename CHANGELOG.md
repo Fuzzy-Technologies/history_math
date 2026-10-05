@@ -2,6 +2,8 @@
 
 ## Unreleased — first prototype
 
+- Keep mouse dragging and wheel browsing at the exact pixel position, without card snapping; clarify the reading-room navigation and showcase heading.
+
 - Assign all PRs to Tim55667757 and add the documentation label automatically on opening or reopening, preserving existing metadata.
 
 - Version the complete JavaScript module graph so cached dependencies cannot disable controls after a deployment.

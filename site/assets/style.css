@@ -583,16 +583,12 @@ main,
   grid-auto-columns: calc((100% - 65px) / 3);
   grid-template-columns: none;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: none;
+  scroll-behavior: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--brass) var(--tint);
   padding: 5px 0 18px;
   scroll-padding-inline: 1px;
-}
-.magazine-carousel.is-dragging,
-.magazine-carousel.is-wheeling {
-  scroll-snap-type: none;
-  scroll-behavior: auto;
 }
 @media (min-width: 621px) and (pointer: fine) {
   .magazine-carousel {
@@ -603,10 +599,6 @@ main,
     cursor: grabbing;
     user-select: none;
   }
-}
-.magazine-carousel > .material-card {
-  scroll-snap-align: start;
-  scroll-margin: 0 1px;
 }
 .carousel-controls {
   display: flex;

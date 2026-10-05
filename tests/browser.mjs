@@ -5,8 +5,10 @@ import {resolve, extname} from 'node:path';
 import {chromium} from 'playwright';
 import {runReaderChecks} from './reader.mjs';
 import {runDiscoveryChecks} from './discovery.mjs';
+import {runCarouselChecks} from './carousel.mjs';
 
 const discoveryOnly = process.argv.includes('--discovery-only');
+const carouselOnly = process.argv.includes('--carousel-only');
 
 const root = resolve('_site');
 const evidence = resolve('test-results');
@@ -34,6 +36,8 @@ const axe = await readFile('node_modules/axe-core/axe.min.js', 'utf8');
 function checked(message) { report.checks.push(message); console.log('PASS:', message); }
 
 try {
+  if (carouselOnly || !process.argv.some(flag => ['--discovery-only', '--reading-only', '--polish-only', '--resume-only'].includes(flag))) await runCarouselChecks({browser, origin, evidence, axe, report, checked});
+  if (!carouselOnly) {
   if (!discoveryOnly && !process.argv.includes('--reading-only') && !process.argv.includes('--polish-only') && !process.argv.includes('--resume-only')) {
   for (const viewport of [{name: 'desktop', width: 1440, height: 1050}, {name: 'mobile', width: 390, height: 844}]) {
     const context = await browser.newContext({viewport, reducedMotion: 'reduce', timezoneId: 'Europe/Moscow'});
@@ -334,7 +338,6 @@ try {
       await page.mouse.wheel(0, 120);
       if (viewport.name === 'desktop') {
         await page.waitForFunction(() => document.querySelector('#latest-cards').scrollLeft > 100);
-        await page.waitForFunction(() => !document.querySelector('#latest-cards').classList.contains('is-wheeling'));
         assert.ok(Math.abs(await page.evaluate(() => scrollY) - pageTop) < 2, 'Wheel moved the page inside the strip');
         await carousel.evaluate(node => { node.scrollLeft = node.scrollWidth - node.clientWidth; });
         await carousel.hover({position: {x: 100, y: 100}});
@@ -404,7 +407,7 @@ try {
   await motionPage.emulateMedia({reducedMotion: 'no-preference'});
   await motionPage.locator('#latest-cards').hover({position: {x: 100, y: 100}});
   await motionPage.mouse.wheel(0, 120);
-  await motionPage.waitForFunction(() => document.querySelector('#latest-cards').scrollLeft > 100 && !document.querySelector('#latest-cards').classList.contains('is-wheeling'));
+  await motionPage.waitForFunction(() => document.querySelector('#latest-cards').scrollLeft >= 119);
   const clickImage = motionPage.locator('.card-image').first();
   await clickImage.scrollIntoViewIfNeeded();
   const clickBounds = await clickImage.boundingBox();
@@ -414,10 +417,11 @@ try {
   await motionPage.mouse.up();
   await motionPage.waitForURL('**/demo-geometry/');
   await motionContext.close();
-  checked('Normal motion: small card lift, smooth wheel browsing and small pointer movement keep ordinary links usable; reduced motion keeps cards stationary');
+  checked('Normal motion: small card lift, continuous wheel browsing and small pointer movement keep ordinary links usable; reduced motion keeps cards stationary');
   }
   if (!discoveryOnly && !process.argv.includes('--polish-only') && !process.argv.includes('--reading-only')) await runReaderChecks({browser, origin, evidence, axe, report, checked});
   if (discoveryOnly || !process.argv.some(flag => ['--polish-only', '--reading-only', '--resume-only'].includes(flag))) await runDiscoveryChecks({browser, origin, evidence, axe, report, checked});
+  }
   assert.deepEqual(report.consoleErrors, []);
   assert.deepEqual(report.requestFailures, []);
   checked('No browser console errors or failed requests');
