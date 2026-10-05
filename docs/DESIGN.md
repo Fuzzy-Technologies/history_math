@@ -39,6 +39,8 @@ Primary Russian navigation contains Home, Materials, Showcase and Search. The Ab
 
 ## Catalog filters and topics
 
+Pass the build version from the app entry point to every imported module, including nested imports. A reader may still have an older unversioned dependency cached when a new deployment arrives; mixing module versions must not disable theme controls, filters or search. The upgrade regression serves the legacy core for bare requests and verifies that the new graph bypasses it using one shared version.
+
 Enhance the native catalog selects with themed select-only comboboxes following the [WAI-ARIA keyboard pattern](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/examples/combobox-select-only/). Keep focus on the trigger, expose the active option, support arrow keys, Home/End, type-ahead, Enter/Space, Tab and Escape, and keep the popup inside the viewport. Use a restrained 160ms appearance transition; reduced motion disables it. Both filters retain their combined type/topic behavior.
 
 Tags on static cards, generated cards and article footers link to the current Russian search page using an encoded `tag` parameter. Match the complete normalized tag, including Cyrillic case and Yo/Ye equivalence, within the current language index. Tag mode never falls back to matches in titles or body text. Show the active topic and a clear-filter control; typing a normal query leaves tag mode. The existing static text index and ordinary text search remain in use; no new search service or editorial digest is introduced.

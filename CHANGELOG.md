@@ -2,6 +2,8 @@
 
 ## Unreleased — first prototype
 
+- Version the complete JavaScript module graph so cached dependencies cannot disable controls after a deployment.
+
 - Style catalog dropdowns in both journal themes, with smooth opening, keyboard navigation and reduced-motion support.
 - Make card and article tags open exact-topic search; show the selected topic and provide a clear-filter control.
 - Slightly reduce article prose and inherited link/formula sizes while retaining the approved cover typography.

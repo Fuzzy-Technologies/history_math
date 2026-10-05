@@ -1,6 +1,9 @@
-import {search, searchByTag, selection, anniversaries} from './core.js';
-import {enhanceSelect} from './select.js';
-import {rememberReadingPosition} from './reading-position.js';
+const assetVersion = new URL(import.meta.url).search;
+const [{search, searchByTag, selection, anniversaries}, {enhanceSelect}, {rememberReadingPosition}] = await Promise.all([
+  import('./core.js' + assetVersion),
+  import('./select.js' + assetVersion),
+  import('./reading-position.js' + assetVersion)
+]);
 
 const language = document.body.dataset.lang;
 const labels = {essay: 'Очерк', problem: 'Задача', instrument: 'Инструмент', note: 'Заметка'};
