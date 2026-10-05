@@ -21,6 +21,12 @@ Self-hosted PT Serif provides consistent Latin and Cyrillic headings and reading
 
 The English name is **Mathematics with Mansur**. Keep PT Serif while using 20–22px article text, 17–18px card descriptions and readable captions. Controls use soft pill shapes; cover and image frames have restrained rounded corners. Dark mode uses warm brown paper and cream ink. Follow the system preference initially, then preserve an explicit reader choice. Blocked browser storage must not disable reading controls.
 
+Both themes share the same Markdown and article markup; CSS color tokens provide the two appearances. Use a compact 1.55 line height for prose, 0.75em paragraph gaps and restrained heading margins. Keep the cover free of welcome copy and repeated author credits. Search navigation uses the word alone.
+
+On wide screens, the latest-material strip supports mouse dragging and vertical-wheel browsing in addition to arrows, keyboard controls and native horizontal scrolling. A short drag threshold preserves ordinary article-link clicks; reaching either end returns wheel scrolling to the page. Mobile cards remain a vertical sequence. Cards use a small copper border and shadow change, plus a 2px hover lift for fine pointers. Disable movement for reduced-motion readers.
+
+Current interaction references: [Figma's 2026 web-design overview](https://www.figma.com/resource-library/web-design-trends/), [Webflow's 2026 trends](https://webflow.com/blog/web-design-trends-2026), and [W3C's dragging alternatives](https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html). Apply selected ideas within the established journal palette.
+
 Unlinked illustrations open in a native modal dialog at the available width. Provide zoom buttons, fit-to-window, keyboard controls, pointer dragging and touch pinch. Preserve the original artwork; restore focus and page scrolling on close. Linked card covers continue to open their articles.
 
 Remember the previous archive subset between visits, replace a repeated subset even with the same random sequence, and rotate restored back/forward pages. Show publication anniversaries only when real published articles match; do not fill the page with placeholder panels.

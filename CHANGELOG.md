@@ -2,6 +2,9 @@
 
 ## Unreleased — first prototype
 
+- Tighten article spacing, slightly reduce heading sizes and remove repeated cover copy and the search ornament.
+- Add mouse dragging and wheel browsing to the desktop material strip, with subtle card emphasis and reduced-motion support.
+
 - Improve reading size and contrast, soften controls and card corners, and use Mathematics with Mansur consistently in English.
 - Add a saved light/dark theme and a full-width illustration viewer with zoom, dragging, touch pinch and keyboard support.
 - Rotate archive selections across repeat visits and simplify the blog's Russian headings and descriptions.
