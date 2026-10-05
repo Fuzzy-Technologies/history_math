@@ -22,7 +22,7 @@ permalink: /ru/
 </section>
 <div class="demo-strip"><span class="status-dot" aria-hidden="true"></span>Пока здесь пробные материалы для проверки сайта. Авторские статьи добавим позже.</div>
 <section class="journal-section latest-section" aria-labelledby="latest-heading">
-  <div class="section-heading"><div><p class="eyebrow">Статьи и задачи</p><h2 id="latest-heading">Новые материалы</h2></div><div class="section-actions"><a href="{{ '/ru/materials/' | relative_url }}">Все материалы ↗</a><div class="carousel-controls" hidden><button type="button" data-carousel-direction="-1" aria-label="Предыдущие материалы" aria-controls="latest-cards">←</button><button type="button" data-carousel-direction="1" aria-label="Следующие материалы" aria-controls="latest-cards">→</button></div></div></div>
+  <div class="section-heading"><div><p class="eyebrow">Читальный зал</p><h2 id="latest-heading">Новые материалы</h2></div><div class="section-actions"><a href="{{ '/ru/materials/' | relative_url }}">Все материалы ↗</a><div class="carousel-controls" hidden><button type="button" data-carousel-direction="-1" aria-label="Предыдущие материалы" aria-controls="latest-cards">←</button><button type="button" data-carousel-direction="1" aria-label="Следующие материалы" aria-controls="latest-cards">→</button></div></div></div>
   <div class="card-grid magazine-carousel" id="latest-cards" tabindex="0" role="region" aria-label="Новые материалы">{% for article in articles limit:5 %}{% include card.html article=article number=forloop.index %}{% endfor %}</div>
   <p class="carousel-status quiet" role="status" hidden></p>
 </section>
