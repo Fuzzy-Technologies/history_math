@@ -45,7 +45,7 @@ export async function runReaderChecks({browser, origin, evidence, axe, report, c
     assert.equal(await page.evaluate(() => scrollY), 0);
     assert.equal(await page.locator('.math-source[data-rendered=true]').count(), 7);
     const typography = await page.locator('.article-body').evaluate(node => ({size: parseFloat(getComputedStyle(node).fontSize), leading: parseFloat(getComputedStyle(node).lineHeight) / parseFloat(getComputedStyle(node).fontSize)}));
-    assert.ok(typography.size >= 18.5 && typography.size <= 21);
+    assert.ok(typography.size >= 17.2 && typography.size <= 19.5);
     assert.ok(Math.abs(typography.leading - 1.55) < 0.01);
     const paragraph = page.locator('.article-body > p').first();
     await paragraph.evaluate(node => window.scrollTo({top: scrollY + node.getBoundingClientRect().top + node.getBoundingClientRect().height * 0.25 - 24, behavior: 'instant'}));

@@ -4,6 +4,9 @@ import {readFile, mkdir, writeFile, stat} from 'node:fs/promises';
 import {resolve, extname} from 'node:path';
 import {chromium} from 'playwright';
 import {runReaderChecks} from './reader.mjs';
+import {runDiscoveryChecks} from './discovery.mjs';
+
+const discoveryOnly = process.argv.includes('--discovery-only');
 
 const root = resolve('_site');
 const evidence = resolve('test-results');
@@ -31,7 +34,7 @@ const axe = await readFile('node_modules/axe-core/axe.min.js', 'utf8');
 function checked(message) { report.checks.push(message); console.log('PASS:', message); }
 
 try {
-  if (!process.argv.includes('--reading-only') && !process.argv.includes('--polish-only') && !process.argv.includes('--resume-only')) {
+  if (!discoveryOnly && !process.argv.includes('--reading-only') && !process.argv.includes('--polish-only') && !process.argv.includes('--resume-only')) {
   for (const viewport of [{name: 'desktop', width: 1440, height: 1050}, {name: 'mobile', width: 390, height: 844}]) {
     const context = await browser.newContext({viewport, reducedMotion: 'reduce', timezoneId: 'Europe/Moscow'});
     const page = await context.newPage();
@@ -78,10 +81,10 @@ try {
         }
         const titles = await page.locator('.journal-section .material-card h3').allTextContents();
         const originalHeight = await page.locator('#archive-cards').evaluate(node => node.getBoundingClientRect().height);
-        let previous = await page.locator('#archive-cards a').evaluateAll(links => links.map(link => link.href).sort());
+        let previous = await page.locator('#archive-cards h3 a').evaluateAll(links => links.map(link => link.href).sort());
         for (let index = 0; index < 10; index += 1) {
           await page.locator('#reshuffle').click();
-          const current = await page.locator('#archive-cards a').evaluateAll(links => links.map(link => link.href).sort());
+          const current = await page.locator('#archive-cards h3 a').evaluateAll(links => links.map(link => link.href).sort());
           assert.equal(new Set(current).size, 3);
           assert.notDeepEqual(current, previous);
           previous = current;
@@ -135,12 +138,16 @@ try {
         checked(`${viewport.name}: Cyrillic case and ё/е search, empty query and no-result state`);
       }
       if (path === '/ru/materials/') {
-        await page.locator('#type-filter').selectOption('problem');
+        await page.getByRole('combobox', {name: /^Тип материала/}).click();
+        await page.getByRole('option', {name: 'Задачи', exact: true}).click();
         assert.equal(await page.locator('.catalog-list .material-card:visible').count(), 1);
-        await page.locator('#tag-filter').selectOption({label: 'счёт'});
+        await page.getByRole('combobox', {name: /^Тема/}).click();
+        await page.getByRole('option', {name: 'счёт', exact: true}).click();
         assert.ok(await page.locator('#catalog-empty').isVisible());
-        await page.locator('#type-filter').selectOption('');
-        await page.locator('#tag-filter').selectOption('');
+        await page.getByRole('combobox', {name: /^Тип материала/}).click();
+        await page.getByRole('option', {name: 'Все типы', exact: true}).click();
+        await page.getByRole('combobox', {name: /^Тема/}).click();
+        await page.getByRole('option', {name: 'Все темы', exact: true}).click();
         await page.screenshot({path: `${evidence}/catalog-${viewport.name}.png`, fullPage: true});
       }
       checked(`${viewport.name}: ${path} language, canonical, assets, responsive width and axe WCAG AA`);
@@ -180,14 +187,14 @@ try {
   const page = await context.newPage();
   await page.goto(origin + '/history_math/ru/');
   assert.equal(await page.locator('.material-card').count(), 5);
-  assert.equal(await page.locator('#archive-cards a').count(), 3);
+  assert.equal(await page.locator('#archive-cards h3 a').count(), 3);
   await page.goto(origin + '/history_math/ru/materials/');
   assert.equal(await page.locator('.material-card:visible').count(), 5);
   checked('Without JavaScript: reading, catalog and initial archive remain available');
   await context.close();
   }
 
-  if (!process.argv.includes('--polish-only') && !process.argv.includes('--resume-only')) {
+  if (!discoveryOnly && !process.argv.includes('--polish-only') && !process.argv.includes('--resume-only')) {
   for (const viewport of [{name: 'desktop', width: 1440, height: 1050}, {name: 'mobile', width: 390, height: 844}]) {
     const context = await browser.newContext({viewport, reducedMotion: 'reduce', colorScheme: 'light', hasTouch: viewport.name === 'mobile'});
     // A repeated random sequence reproduces the stale-selection failure reliably.
@@ -197,17 +204,17 @@ try {
     page.on('requestfailed', request => report.requestFailures.push(request.url()));
     const home = origin + '/history_math/ru/';
     await page.goto(home, {waitUntil: 'networkidle'});
-    let previous = await page.locator('#archive-cards a').evaluateAll(links => links.map(link => link.href).sort());
+    let previous = await page.locator('#archive-cards h3 a').evaluateAll(links => links.map(link => link.href).sort());
     for (let visit = 0; visit < 3; visit += 1) {
       await page.reload({waitUntil: 'networkidle'});
-      const current = await page.locator('#archive-cards a').evaluateAll(links => links.map(link => link.href).sort());
+      const current = await page.locator('#archive-cards h3 a').evaluateAll(links => links.map(link => link.href).sort());
       assert.equal(new Set(current).size, 3);
       assert.notDeepEqual(current, previous);
       previous = current;
     }
     const reopened = await context.newPage();
     await reopened.goto(home, {waitUntil: 'networkidle'});
-    assert.notDeepEqual(await reopened.locator('#archive-cards a').evaluateAll(links => links.map(link => link.href).sort()), previous);
+    assert.notDeepEqual(await reopened.locator('#archive-cards h3 a').evaluateAll(links => links.map(link => link.href).sort()), previous);
     await reopened.close();
     assert.ok(await page.locator('.card-copy > p:not(.eyebrow)').first().evaluate(node => parseFloat(getComputedStyle(node).fontSize)) >= 17);
     for (const width of viewport.name === 'mobile' ? [320, 390, 620, 621] : [768, 1024, 1440]) {
@@ -278,7 +285,7 @@ try {
 
     await page.goto(origin + '/history_math/ru/articles/demo-geometry/', {waitUntil: 'networkidle'});
     assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
-    assert.ok(await page.locator('.article-body').evaluate(node => parseFloat(getComputedStyle(node).fontSize)) >= 18.5);
+    assert.ok(await page.locator('.article-body').evaluate(node => parseFloat(getComputedStyle(node).fontSize)) >= 17.2);
     assert.ok(await page.locator('.article-body figcaption').evaluate(node => parseFloat(getComputedStyle(node).fontSize)) >= 16);
     assert.equal(await page.locator('.math-source:not([data-rendered=true])').count(), 0);
     await page.addScriptTag({content: axe});
@@ -310,7 +317,7 @@ try {
   await restricted.close();
   checked('System dark preference and blocked storage preserve working reading controls');
   }
-  if (!process.argv.includes('--resume-only')) {
+  if (!discoveryOnly && !process.argv.includes('--resume-only')) {
   for (const theme of ['light', 'dark']) {
     for (const viewport of [{name: 'desktop', width: 1440, height: 1050}, {name: 'mobile', width: 390, height: 844}]) {
       const context = await browser.newContext({viewport, colorScheme: theme, reducedMotion: 'reduce', hasTouch: viewport.name === 'mobile'});
@@ -368,7 +375,7 @@ try {
         const paragraph = getComputedStyle(node.querySelector('p'));
         return {size: parseFloat(style.fontSize), leading: parseFloat(style.lineHeight) / parseFloat(style.fontSize), gap: parseFloat(paragraph.marginBottom) / parseFloat(paragraph.fontSize)};
       });
-      assert.ok(measurements.size >= 18.5 && measurements.size <= 21);
+      assert.ok(measurements.size >= 17.2 && measurements.size <= 19.5);
       assert.ok(measurements.leading <= 1.6 && measurements.leading >= 1.5);
       assert.ok(measurements.gap <= 0.8);
       assert.equal(await page.locator('.math-source[data-rendered=true]').count(), 7);
@@ -409,7 +416,8 @@ try {
   await motionContext.close();
   checked('Normal motion: small card lift, smooth wheel browsing and small pointer movement keep ordinary links usable; reduced motion keeps cards stationary');
   }
-  if (!process.argv.includes('--polish-only') && !process.argv.includes('--reading-only')) await runReaderChecks({browser, origin, evidence, axe, report, checked});
+  if (!discoveryOnly && !process.argv.includes('--polish-only') && !process.argv.includes('--reading-only')) await runReaderChecks({browser, origin, evidence, axe, report, checked});
+  if (discoveryOnly || !process.argv.some(flag => ['--polish-only', '--reading-only', '--resume-only'].includes(flag))) await runDiscoveryChecks({browser, origin, evidence, axe, report, checked});
   assert.deepEqual(report.consoleErrors, []);
   assert.deepEqual(report.requestFailures, []);
   checked('No browser console errors or failed requests');
