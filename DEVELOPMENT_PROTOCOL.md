@@ -12,10 +12,12 @@ The pipeline is editorial preparation in NAS/FELab → approved public Markdown/
 2. Define the affected content, layout or infrastructure contract.
 3. Make a focused change on `feature/*` branched from `develop`.
 4. Run relevant checks, inspect the diff, and capture browser evidence for layout changes.
-5. Push without history rewriting and open a PR to `develop`.
+5. Push without history rewriting and open a PR to `develop`. Assign it to `Tim55667757`, add the `documentation` label, and verify both fields.
 6. Let Timur decide whether to merge. A separate `develop` → `master` PR approves publication.
 
 Never merge a PR, publish a release/tag, or change visibility without explicit authorization. Do not enable auto-merge or repository-wide automatic branch deletion. The guarded existing cleanup workflow deletes only eligible merged feature branches into `develop`.
+
+Every PR, including publication PRs and drafts, must have `Tim55667757` as an assignee and the `documentation` label. Add these fields without replacing other assignees or labels. The PR metadata workflow applies this rule on opening and reopening; contributors must still verify it. Historical PRs were reconciled at the owner's request.
 
 ## Languages and editorial claims
 

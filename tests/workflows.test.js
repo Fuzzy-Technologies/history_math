@@ -34,6 +34,27 @@ test('cleanup permits only a merged same-repository unchanged feature into devel
   assert.ok(!/\$\{\{\s*github\.event\.pull_request\.(title|body)/.test(cleanup));
 });
 
+test('PR metadata uses additive APIs without executing contributor code', async () => {
+  const workflow = readFileSync('.github/workflows/pr-metadata.yml', 'utf8');
+  assert.match(workflow, /pull_request_target:\s+types: \[opened, reopened\]/);
+  assert.match(workflow, /permissions:\s+issues: write\s+jobs:/);
+  assert.ok(!workflow.includes('actions/checkout'));
+  assert.ok(!workflow.includes('run:'));
+  assert.ok(!workflow.includes('${{'));
+  assert.ok(!workflow.includes('branches:'));
+  const metadataScript = workflow.split('script: |\n')[1].split('\n').map(line => line.replace(/^            /, '')).join('\n');
+  const calls = [];
+  const github = {rest: {issues: {
+    addAssignees: async args => calls.push(['assignees', args]),
+    addLabels: async args => calls.push(['labels', args])
+  }}};
+  await new AsyncFunction('context', 'github', metadataScript)({repo: {owner: 'Fuzzy-Technologies', repo: 'history_math'}, payload: {pull_request: {number: 21, title: '${{ secrets.EXAMPLE }}', head: {ref: 'untrusted'}}}}, github);
+  assert.deepEqual(calls, [
+    ['assignees', {owner: 'Fuzzy-Technologies', repo: 'history_math', issue_number: 21, assignees: ['Tim55667757']}],
+    ['labels', {owner: 'Fuzzy-Technologies', repo: 'history_math', issue_number: 21, labels: ['documentation']}]
+  ]);
+});
+
 test('production build and deployment both require master for push and manual dispatch', () => {
   const deploy = readFileSync('.github/workflows/deploy.yml', 'utf8');
   const guard = "github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')";
@@ -46,7 +67,7 @@ test('production build and deployment both require master for push and manual di
       assert.equal(allowed, branch === 'master' && event !== 'pull_request');
     }
   }
-  const files = ['ci.yml', 'deploy.yml', 'cleanup-merged-branch.yml'];
+  const files = ['ci.yml', 'deploy.yml', 'cleanup-merged-branch.yml', 'pr-metadata.yml'];
   for (const file of files) {
     const content = readFileSync(`.github/workflows/${file}`, 'utf8');
     for (const match of content.matchAll(/uses: ([^\s]+)/g)) assert.match(match[1], /@[a-f0-9]{40}$/);
