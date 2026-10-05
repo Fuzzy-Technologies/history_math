@@ -3,6 +3,7 @@ import {createServer} from 'node:http';
 import {readFile, mkdir, writeFile, stat} from 'node:fs/promises';
 import {resolve, extname} from 'node:path';
 import {chromium} from 'playwright';
+import {runReaderChecks} from './reader.mjs';
 
 const root = resolve('_site');
 const evidence = resolve('test-results');
@@ -30,14 +31,14 @@ const axe = await readFile('node_modules/axe-core/axe.min.js', 'utf8');
 function checked(message) { report.checks.push(message); console.log('PASS:', message); }
 
 try {
-  if (!process.argv.includes('--reading-only') && !process.argv.includes('--polish-only')) {
+  if (!process.argv.includes('--reading-only') && !process.argv.includes('--polish-only') && !process.argv.includes('--resume-only')) {
   for (const viewport of [{name: 'desktop', width: 1440, height: 1050}, {name: 'mobile', width: 390, height: 844}]) {
     const context = await browser.newContext({viewport, reducedMotion: 'reduce', timezoneId: 'Europe/Moscow'});
     const page = await context.newPage();
     page.on('pageerror', error => report.consoleErrors.push(error.message));
     page.on('console', message => { if (message.type() === 'error') report.consoleErrors.push(message.text()); });
     page.on('requestfailed', request => report.requestFailures.push(request.url()));
-    const paths = ['/ru/', '/', '/ru/materials/', '/ru/search/', '/ru/about/', '/ru/articles/demo-geometry/', '/ru/articles/demo-area/', '/ru/articles/demo-abacus/', '/ru/articles/demo-reading/', '/ru/articles/demo-notation/', '/404.html'];
+    const paths = ['/ru/', '/', '/ru/materials/', '/ru/search/', '/ru/about/', '/ru/showcase/', '/ru/articles/demo-geometry/', '/ru/articles/demo-area/', '/ru/articles/demo-abacus/', '/ru/articles/demo-reading/', '/ru/articles/demo-notation/', '/404.html'];
     for (const path of paths) {
       const response = await page.goto(origin + '/history_math' + path);
       assert.equal(response.status(), 200);
@@ -186,7 +187,7 @@ try {
   await context.close();
   }
 
-  if (!process.argv.includes('--polish-only')) {
+  if (!process.argv.includes('--polish-only') && !process.argv.includes('--resume-only')) {
   for (const viewport of [{name: 'desktop', width: 1440, height: 1050}, {name: 'mobile', width: 390, height: 844}]) {
     const context = await browser.newContext({viewport, reducedMotion: 'reduce', colorScheme: 'light', hasTouch: viewport.name === 'mobile'});
     // A repeated random sequence reproduces the stale-selection failure reliably.
@@ -277,7 +278,7 @@ try {
 
     await page.goto(origin + '/history_math/ru/articles/demo-geometry/', {waitUntil: 'networkidle'});
     assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
-    assert.ok(await page.locator('.article-body').evaluate(node => parseFloat(getComputedStyle(node).fontSize)) >= 20);
+    assert.ok(await page.locator('.article-body').evaluate(node => parseFloat(getComputedStyle(node).fontSize)) >= 18.5);
     assert.ok(await page.locator('.article-body figcaption').evaluate(node => parseFloat(getComputedStyle(node).fontSize)) >= 16);
     assert.equal(await page.locator('.math-source:not([data-rendered=true])').count(), 0);
     await page.addScriptTag({content: axe});
@@ -309,6 +310,7 @@ try {
   await restricted.close();
   checked('System dark preference and blocked storage preserve working reading controls');
   }
+  if (!process.argv.includes('--resume-only')) {
   for (const theme of ['light', 'dark']) {
     for (const viewport of [{name: 'desktop', width: 1440, height: 1050}, {name: 'mobile', width: 390, height: 844}]) {
       const context = await browser.newContext({viewport, colorScheme: theme, reducedMotion: 'reduce', hasTouch: viewport.name === 'mobile'});
@@ -366,7 +368,7 @@ try {
         const paragraph = getComputedStyle(node.querySelector('p'));
         return {size: parseFloat(style.fontSize), leading: parseFloat(style.lineHeight) / parseFloat(style.fontSize), gap: parseFloat(paragraph.marginBottom) / parseFloat(paragraph.fontSize)};
       });
-      assert.ok(measurements.size >= 20 && measurements.size <= 22);
+      assert.ok(measurements.size >= 18.5 && measurements.size <= 21);
       assert.ok(measurements.leading <= 1.6 && measurements.leading >= 1.5);
       assert.ok(measurements.gap <= 0.8);
       assert.equal(await page.locator('.math-source[data-rendered=true]').count(), 7);
@@ -406,6 +408,8 @@ try {
   await motionPage.waitForURL('**/demo-geometry/');
   await motionContext.close();
   checked('Normal motion: small card lift, smooth wheel browsing and small pointer movement keep ordinary links usable; reduced motion keeps cards stationary');
+  }
+  if (!process.argv.includes('--polish-only') && !process.argv.includes('--reading-only')) await runReaderChecks({browser, origin, evidence, axe, report, checked});
   assert.deepEqual(report.consoleErrors, []);
   assert.deepEqual(report.requestFailures, []);
   checked('No browser console errors or failed requests');

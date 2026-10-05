@@ -1,4 +1,5 @@
 import {search, selection, anniversaries} from './core.js';
+import {rememberReadingPosition} from './reading-position.js';
 
 const language = document.body.dataset.lang;
 const labels = {essay: 'Очерк', problem: 'Задача', instrument: 'Инструмент', note: 'Заметка'};
@@ -337,6 +338,8 @@ if (sidebar) {
     sidebar.hidden = false;
   }
 }
+
+rememberReadingPosition();
 
 const archive = document.querySelector('#archive-cards');
 if (archive) {

@@ -5,10 +5,15 @@ layout: default
   <header class="article-heading">
     <a class="back-link" href="{% if page.lang == 'ru' %}{{ '/ru/materials/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">← {% if page.lang == 'ru' %}К материалам{% else %}Back to journal{% endif %}</a>
     <p class="eyebrow">{% include type.html type=page.type %} · {% if page.status == 'demo' %}{% if page.lang == 'ru' %}Демоматериал{% else %}Demo material{% endif %}{% endif %}</p>
-    <h1>{{ page.title }}</h1><p class="lead">{{ page.description }}</p>
+    <h1 tabindex="-1">{{ page.title }}</h1><p class="lead">{{ page.description }}</p>
     <p class="article-meta">{{ page.author }} <span>·</span> <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d.%m.%Y' }}</time> <span>·</span> {{ page.lang | upcase }}</p>
     {% if page.status == 'demo' %}<p class="demo-notice">{% if page.lang == 'ru' %}Пробный материал. Не авторская статья Мансура или Тимура.{% else %}A demo article, not authored by Mansur or Timur.{% endif %}</p>{% endif %}
   </header>
+  <div class="reading-resume" hidden>
+    <span role="status">{% if page.lang == 'ru' %}Продолжили с места остановки.{% else %}Resumed where you left off.{% endif %}</span>
+    <button type="button" data-reading-start>{% if page.lang == 'ru' %}С начала{% else %}From the beginning{% endif %}</button>
+    <button type="button" data-reading-dismiss aria-label="{% if page.lang == 'ru' %}Закрыть подсказку{% else %}Dismiss reading notice{% endif %}">×</button>
+  </div>
   <div class="article-spread">
   <aside class="article-sidebar" hidden><nav class="article-toc" aria-label="{% if page.lang == 'ru' %}В этой статье{% else %}In this article{% endif %}"><p class="eyebrow">{% if page.lang == 'ru' %}Содержание{% else %}Contents{% endif %}</p><ol></ol></nav></aside>
   <div class="prose article-body">

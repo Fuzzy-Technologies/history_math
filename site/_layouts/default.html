@@ -40,13 +40,13 @@
   <div class="masthead-note"><span>{% if ru %}История математики{% else %}The history of mathematics{% endif %}</span><span>{% if ru %}Люди · Идеи · Открытия{% else %}People · Ideas · Discovery{% endif %}</span></div>
   <header class="site-header">
     <a class="brand" href="{{ home | relative_url }}"><img src="{% if ru %}{{ '/assets/images/Math-with-Mansur-logo-ru.png' | relative_url }}{% else %}{{ '/assets/images/Math-with-Mansur-logo.png' | relative_url }}{% endif %}" alt="" width="112" height="112" fetchpriority="high"><span><span class="brand-title">{% if ru %}Математика{% else %}Mathematics{% endif %}</span><span class="brand-sub">{% if ru %}с Мансур-абый{% else %}with Mansur{% endif %}</span></span></a>
-    <p class="masthead-motto">{% if ru %}О математике,<br>её истории и людях.{% else %}Mathematics,<br>its history and people.{% endif %}</p>
+    <div class="masthead-meta"><p class="masthead-motto">{% if ru %}О математике,<br>её истории и людях.{% else %}Mathematics,<br>its history and people.{% endif %}</p><a class="masthead-about" href="{{ '/ru/about/' | relative_url }}" {% if page.translation_key == 'about' %}aria-current="page"{% endif %}>{% if ru %}О блоге{% else %}About the blog (RU){% endif %}</a></div>
     <div class="navigation-bar">
     <nav aria-label="{% if ru %}Основная навигация{% else %}Main navigation{% endif %}">
       {% if ru %}
       <a href="{{ '/ru/' | relative_url }}" {% if page.translation_key == 'home' %}aria-current="page"{% endif %}>Главная</a>
       <a href="{{ '/ru/materials/' | relative_url }}" {% if page.translation_key == 'catalog' %}aria-current="page"{% endif %}>Материалы</a>
-      <a href="{{ '/ru/about/' | relative_url }}" {% if page.translation_key == 'about' %}aria-current="page"{% endif %}>О блоге</a>
+      <a href="{{ '/ru/showcase/' | relative_url }}" {% if page.translation_key == 'showcase' %}aria-current="page"{% endif %}>Витрина</a>
       <a href="{{ '/ru/search/' | relative_url }}" {% if page.translation_key == 'search' %}aria-current="page"{% endif %}>Поиск</a>
       {% else %}<a href="{{ '/ru/' | relative_url }}" lang="ru">Русская версия ↗</a>{% endif %}
     </nav>
