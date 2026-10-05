@@ -44,7 +44,8 @@ export function rememberReadingPosition() {
     dirty = false;
     const first = anchors[0].node.getBoundingClientRect();
     const end = document.querySelector('.article-end')?.getBoundingClientRect();
-    if (first.top > 24 || (end && end.top < innerHeight * 0.6)) {
+    if (first.top > 24) return;
+    if (end && end.top < innerHeight * 0.6) {
       clearPosition();
       return;
     }

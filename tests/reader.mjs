@@ -62,6 +62,11 @@ export async function runReaderChecks({browser, origin, evidence, axe, report, c
     assert.ok(Math.abs(alignment - 24) < 3, `Paragraph position changed after responsive reflow: ${alignment}`);
     await audit(page, start.theme + ' ' + start.name + ': resumed article');
     await page.screenshot({path: `${evidence}/resumed-${start.name}.jpg`, fullPage: false});
+    await page.getByRole('link', {name: 'Главная', exact: true}).click();
+    await page.getByRole('link', {name: 'Начать с чертежа', exact: true}).click();
+    await page.locator('.reading-resume').waitFor({state: 'visible'});
+    const menuAlignment = await paragraph.evaluate((node, offset) => node.getBoundingClientRect().top + node.getBoundingClientRect().height * offset, saved.offset);
+    assert.ok(Math.abs(menuAlignment - 24) < 3, 'Header navigation cleared the reading position');
     const restoredTop = await page.evaluate(() => scrollY);
     await page.goto(other, {waitUntil: 'networkidle'});
     await page.goBack({waitUntil: 'networkidle'});
