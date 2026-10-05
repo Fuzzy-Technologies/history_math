@@ -21,7 +21,7 @@ export async function runReaderChecks({browser, origin, evidence, axe, report, c
     const page = await context.newPage();
     track(page);
     await page.goto(home, {waitUntil: 'networkidle'});
-    assert.deepEqual(await page.getByRole('navigation', {name: 'Основная навигация', exact: true}).locator('a').allTextContents(), ['Главная', 'Материалы', 'Витрина', 'Поиск']);
+    assert.deepEqual(await page.getByRole('navigation', {name: 'Основная навигация', exact: true}).locator('a').allTextContents(), ['Главная', 'Читальный зал', 'Витрина', 'Поиск']);
     assert.ok(await page.locator('.masthead-about').isVisible());
     assert.equal((await page.locator('.latest-section .eyebrow').first().textContent()).trim(), 'Читальный зал');
     const summarySize = await page.locator('.hero-copy .lead').evaluate(node => getComputedStyle(node).fontSize);

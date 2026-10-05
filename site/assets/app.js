@@ -235,13 +235,7 @@ if (carousel) {
   const cards = [...carousel.children];
   let drag;
   let suppressClick = false;
-  let wheelTimer;
-  let wheelDirection = 0;
   const canScroll = () => wide.matches && carousel.scrollWidth > carousel.clientWidth + 2;
-  function stopWheel() {
-    clearTimeout(wheelTimer);
-    carousel.classList.remove('is-wheeling');
-  }
   function finishDrag(event) {
     if (!drag || (event && event.pointerId !== drag.id)) return;
     const finished = drag;
@@ -265,7 +259,6 @@ if (carousel) {
     if (visible.length) status.textContent = `Страницы ${visible[0].index + 1}–${visible.at(-1).index + 1} из ${cards.length}`;
   }
   function turn(direction) {
-    stopWheel();
     const step = cards.length > 1 ? cards[1].offsetLeft - cards[0].offsetLeft : carousel.clientWidth;
     carousel.scrollBy({left: direction * step, behavior: reduced.matches ? 'auto' : 'smooth'});
   }
@@ -277,7 +270,6 @@ if (carousel) {
   });
   carousel.addEventListener('pointerdown', event => {
     if (event.pointerType !== 'mouse' || event.button !== 0 || !canScroll()) return;
-    stopWheel();
     drag = {id: event.pointerId, x: event.clientX, left: carousel.scrollLeft, moved: false};
   });
   window.addEventListener('pointermove', event => {
@@ -310,17 +302,7 @@ if (carousel) {
     const maximum = carousel.scrollWidth - carousel.clientWidth;
     if ((delta < 0 && carousel.scrollLeft <= 2) || (delta > 0 && carousel.scrollLeft >= maximum - 2)) return;
     event.preventDefault();
-    carousel.classList.add('is-wheeling');
     carousel.scrollLeft += delta;
-    wheelDirection = Math.sign(delta);
-    clearTimeout(wheelTimer);
-    wheelTimer = setTimeout(() => {
-      const left = carousel.scrollLeft;
-      const stops = [...cards.map(card => Math.min(maximum, card.offsetLeft - carousel.offsetLeft)), maximum];
-      const target = wheelDirection > 0 ? stops.find(stop => stop >= left - 2) : stops.findLast(stop => stop <= left + 2);
-      stopWheel();
-      carousel.scrollTo({left: target ?? left, behavior: reduced.matches ? 'auto' : 'smooth'});
-    }, 180);
   }, {passive: false});
   let frame;
   carousel.addEventListener('scroll', () => {
@@ -328,7 +310,7 @@ if (carousel) {
     frame = requestAnimationFrame(updateCarousel);
   }, {passive: true});
   new ResizeObserver(updateCarousel).observe(carousel);
-  wide.addEventListener('change', () => { finishDrag(); stopWheel(); updateCarousel(); });
+  wide.addEventListener('change', () => { finishDrag(); updateCarousel(); });
   updateCarousel();
 }
 
