@@ -19,7 +19,7 @@ Self-hosted PT Serif provides consistent Latin and Cyrillic headings and reading
 
 ## Reader controls and editorial voice
 
-The English name is **Mathematics with Mansur**. Keep PT Serif while using approximately 19–21px article text, 17px card and cover descriptions and readable captions. Controls use soft pill shapes; cover and image frames have restrained rounded corners. Dark mode uses warm brown paper and cream ink. Follow the system preference initially, then preserve an explicit reader choice. Blocked browser storage must not disable reading controls.
+The English name is **Mathematics with Mansur**. Keep PT Serif while using approximately 17–19px article text, 17px card and cover descriptions and readable captions. Controls use soft pill shapes; cover and image frames have restrained rounded corners. Dark mode uses warm brown paper and cream ink. Follow the system preference initially, then preserve an explicit reader choice. Blocked browser storage must not disable reading controls.
 
 Both themes share the same Markdown and article markup; CSS color tokens provide the two appearances. Use a compact 1.55 line height for prose, 0.75em paragraph gaps and restrained heading margins. Keep the cover free of welcome copy and repeated author credits. Search navigation uses the word alone.
 
@@ -36,6 +36,14 @@ Use short, concrete, friendly wording rather than abstract promotional headings.
 Remember reading positions per article in local browser storage and honor them for 90 days. Match a fingerprint of the paragraph and an offset within it, rather than a page pixel coordinate, so responsive reflow preserves the reading point. Normalize math to its source before fingerprinting. Restore after images, formulas and fonts settle. Explicit section URLs and native back/forward restoration take precedence; early reader interaction cancels automatic restoration. Ignore invalid, expired or missing anchors and storage failures. A short-lived, keyboard-accessible notice offers a restart. An explicit restart or finishing an article clears its position. Scrolling above the article to use the header navigation preserves the last reading point.
 
 Primary Russian navigation contains Home, Materials, Showcase and Search. The About link belongs beside the masthead motto and remains visible on mobile. Use Reading Room above the latest strip and catalog. The showcase currently links the owner's History of Mathematics to its [Ridero page](https://ridero.ru/books/istoriya_matematiki/); do not invent prices, formats or course availability. The typographic book plate is decorative website artwork, not a reproduction of the published cover.
+
+## Catalog filters and topics
+
+Enhance the native catalog selects with themed select-only comboboxes following the [WAI-ARIA keyboard pattern](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/examples/combobox-select-only/). Keep focus on the trigger, expose the active option, support arrow keys, Home/End, type-ahead, Enter/Space, Tab and Escape, and keep the popup inside the viewport. Use a restrained 160ms appearance transition; reduced motion disables it. Both filters retain their combined type/topic behavior.
+
+Tags on static cards, generated cards and article footers link to the current Russian search page using an encoded `tag` parameter. Match the complete normalized tag, including Cyrillic case and Yo/Ye equivalence, within the current language index. Tag mode never falls back to matches in titles or body text. Show the active topic and a clear-filter control; typing a normal query leaves tag mode. The existing static text index and ordinary text search remain in use; no new search service or editorial digest is introduced.
+
+Reduce article prose by a further point (1.3333 CSS pixels), with prose links and math inheriting the change. Keep cover descriptions, headings and captions at their approved sizes.
 
 ## Asset provenance
 

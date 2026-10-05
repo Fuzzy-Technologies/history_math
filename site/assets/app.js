@@ -1,4 +1,5 @@
-import {search, selection, anniversaries} from './core.js';
+import {search, searchByTag, selection, anniversaries} from './core.js';
+import {enhanceSelect} from './select.js';
 import {rememberReadingPosition} from './reading-position.js';
 
 const language = document.body.dataset.lang;
@@ -208,6 +209,16 @@ function card(record, className) {
   link.href = record.url;
   heading.append(link);
   node.append(heading, element('p', '', record.description));
+  const topics = element('div', 'tag-list');
+  for (const tag of record.tags) {
+    const link = element('a', 'tag', tag);
+    link.dataset.tag = tag;
+    const url = new URL(document.body.dataset.search, location.origin);
+    url.searchParams.set('tag', tag);
+    link.href = url.pathname + url.search;
+    topics.append(link);
+  }
+  node.append(topics);
   return node;
 }
 
@@ -346,7 +357,7 @@ if (archive) {
   loadIndex().then(records => {
     const pool = records.filter(record => record.language === language);
     const storageKey = `history-math:archive:${language}`;
-    let previous = [...archive.querySelectorAll('a')].map(link => link.getAttribute('href'));
+    let previous = [...archive.querySelectorAll('h3 a')].map(link => link.getAttribute('href'));
     try {
       const saved = JSON.parse(localStorage.getItem(storageKey));
       if (Array.isArray(saved) && saved.every(url => typeof url === 'string')) previous = saved.slice(0, 3);
@@ -383,14 +394,20 @@ if (form) {
   const input = document.querySelector('#query');
   const status = document.querySelector('#search-status');
   const results = document.querySelector('#search-results');
+  const topic = document.querySelector('#search-topic');
+  const params = new URL(location.href).searchParams;
+  let activeTag = params.get('tag')?.trim() || '';
   let requestNumber = 0;
   async function update() {
     const request = ++requestNumber;
-    const query = input.value.trim();
+    const query = activeTag ? '' : input.value.trim();
     const url = new URL(window.location.href);
     if (query) url.searchParams.set('q', query); else url.searchParams.delete('q');
+    if (activeTag) url.searchParams.set('tag', activeTag); else url.searchParams.delete('tag');
     window.history.replaceState(null, '', url);
-    if (!query) {
+    topic.hidden = !activeTag;
+    topic.querySelector('strong').textContent = activeTag;
+    if (!query && !activeTag) {
       results.replaceChildren();
       status.textContent = 'Введите слово или фразу, чтобы начать поиск.';
       return;
@@ -399,18 +416,26 @@ if (form) {
     try {
       const records = await loadIndex();
       if (request !== requestNumber) return;
-      const matches = search(records, query, language);
+      const matches = activeTag ? searchByTag(records, activeTag, language) : search(records, query, language);
       results.replaceChildren(...matches.map(record => card(record, 'search-result')));
       status.textContent = matches.length ? `Найдено материалов: ${matches.length}` : 'Ничего не найдено. Попробуйте другое слово или тему.';
     } catch {
+      if (request !== requestNumber) return;
       status.textContent = 'Поиск временно недоступен. Откройте раздел «Материалы».';
     }
   }
   let timer;
-  input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(update, 150); });
-  form.addEventListener('submit', event => { event.preventDefault(); clearTimeout(timer); update(); });
-  input.value = new URL(window.location.href).searchParams.get('q') ?? '';
-  if (input.value) update();
+  input.addEventListener('input', () => { activeTag = ''; clearTimeout(timer); timer = setTimeout(update, 150); });
+  form.addEventListener('submit', event => { event.preventDefault(); activeTag = ''; clearTimeout(timer); update(); });
+  topic.querySelector('button').addEventListener('click', () => {
+    activeTag = '';
+    input.value = '';
+    clearTimeout(timer);
+    update();
+    input.focus();
+  });
+  input.value = activeTag ? '' : params.get('q') ?? '';
+  if (input.value || activeTag) update();
 }
 
 const controls = document.querySelector('.catalog-controls');
@@ -431,5 +456,7 @@ if (controls) {
   }
   type.addEventListener('change', filter);
   tag.addEventListener('change', filter);
+  enhanceSelect(type);
+  enhanceSelect(tag);
   filter();
 }

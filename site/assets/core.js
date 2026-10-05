@@ -9,6 +9,13 @@ export function search(records, query, language) {
     normalize([record.title, record.description, record.type, ...record.tags, record.text].join(' ')).includes(term)));
 }
 
+export function searchByTag(records, tag, language) {
+  const topic = normalize(tag);
+  if (!topic) return [];
+  return records.filter(record => record.language === language &&
+    record.tags.some(value => normalize(value) === topic));
+}
+
 export function selection(records, count, previous = [], random = Math.random) {
   const unique = Array.from(new Map(records.map(record => [record.url, record])).values());
   const shuffled = [...unique];

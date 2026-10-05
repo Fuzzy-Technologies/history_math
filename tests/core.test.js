@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {normalize, search, selection, anniversaries} from '../site/assets/core.js';
+import {normalize, search, searchByTag, selection, anniversaries} from '../site/assets/core.js';
 
 const records = [
   {title: 'Счёт и геометрия', description: '', text: 'Чертёж', tags: ['идеи'], type: 'essay', language: 'ru', date: '2025-10-01', url: '/a/'},
@@ -13,6 +13,19 @@ test('Cyrillic search folds case, ё/е, whitespace and separates languages', ()
   assert.equal(search(records, '', 'ru').length, 0);
   assert.equal(search(records, 'несуществующее', 'ru').length, 0);
   assert.equal(search(records, 'geometry', 'ru').length, 0);
+});
+test('Exact tag search folds Cyrillic case and ё/е without matching article text or tag fragments', () => {
+  const tagged = [
+    {...records[0], tags: ['счёт', 'идеи']},
+    {...records[0], url: '/text-only/', title: 'Счёт', text: 'счёт', tags: ['источники']},
+    {...records[0], url: '/partial/', tags: ['устный счёт']},
+    {...records[1], tags: ['счёт']}
+  ];
+  assert.deepEqual(searchByTag(tagged, ' СЧЕТ ', 'ru').map(record => record.url), ['/a/']);
+  assert.deepEqual(searchByTag(tagged, 'сч', 'ru'), []);
+  assert.deepEqual(searchByTag(tagged, '', 'ru'), []);
+  assert.deepEqual(searchByTag(tagged, 'нет темы', 'ru'), []);
+  assert.equal(search(tagged, 'чертеж', 'ru').length, 2);
 });
 test('archive selection has no duplicate URLs and changes a repeated subset', () => {
   const pool = Array.from({length: 6}, (_, index) => ({url: `/${index}/`}));

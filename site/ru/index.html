@@ -28,7 +28,7 @@ permalink: /ru/
 </section>
 <section class="archive-section journal-section" aria-labelledby="archive-heading">
   <div class="section-heading"><div><p class="eyebrow">Что ещё почитать</p><h2 id="archive-heading">Из архива</h2></div><button class="text-button" id="reshuffle" type="button" hidden>Другая подборка <span aria-hidden="true">↻</span></button></div>
-  <div id="archive-cards" class="archive-grid">{% for article in articles offset:2 limit:3 %}<article class="archive-card"><p class="eyebrow">{% include type.html type=article.type %}{% if article.status == 'demo' %} · Демо{% endif %}</p><h3><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h3><p>{{ article.description }}</p></article>{% endfor %}</div><p id="archive-status" class="visually-hidden" role="status"></p>
+  <div id="archive-cards" class="archive-grid">{% for article in articles offset:2 limit:3 %}<article class="archive-card"><p class="eyebrow">{% include type.html type=article.type %}{% if article.status == 'demo' %} · Демо{% endif %}</p><h3><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h3><p>{{ article.description }}</p><div class="tag-list">{% for tag in article.tags %}{% include tag.html tag=tag %}{% endfor %}</div></article>{% endfor %}</div><p id="archive-status" class="visually-hidden" role="status"></p>
 </section>
 <section class="anniversary-panel" hidden><span class="anniversary-ornament" aria-hidden="true">∞</span><div><p class="eyebrow">Из истории блога</p><h2 id="anniversary-heading">В этот день мы писали</h2><p id="anniversary-note"></p></div><div id="anniversary-result"></div></section>
 <section class="about-teaser">
