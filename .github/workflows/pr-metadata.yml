@@ -1,0 +1,22 @@
+name: Assign and label pull requests
+
+on:
+  pull_request_target:
+    types: [opened, reopened]
+
+permissions:
+  issues: write
+
+jobs:
+  metadata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # Use only trusted workflow code; never check out or execute PR content.
+      - name: Add the required assignee and label
+        uses: actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71 # v9.0.0
+        with:
+          script: |
+            const issue = {...context.repo, issue_number: context.payload.pull_request.number};
+            await github.rest.issues.addAssignees({...issue, assignees: ['Tim55667757']});
+            await github.rest.issues.addLabels({...issue, labels: ['documentation']});
