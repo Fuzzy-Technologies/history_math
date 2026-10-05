@@ -2,6 +2,10 @@
 
 ## Unreleased — first prototype
 
+- Style catalog dropdowns in both journal themes, with smooth opening, keyboard navigation and reduced-motion support.
+- Make card and article tags open exact-topic search; show the selected topic and provide a clear-filter control.
+- Slightly reduce article prose and inherited link/formula sizes while retaining the approved cover typography.
+
 - Resume articles at the saved paragraph, with a restart control, preservation through header navigation and safe handling of responsive reflow, section links and unavailable storage.
 - Add the book showcase, move About beside the masthead motto, introduce Reading Room labels and slightly reduce prose and cover-description sizes.
 

@@ -570,11 +570,13 @@ main,
   border-top: 1px solid var(--line);
   margin-top: 22px;
 }
-.card-meta > span > span {
-  margin-left: 10px;
-  color: var(--copper);
-  font-size: 16px;
-  line-height: 1;
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.card-meta .tag-list {
+  justify-content: flex-end;
 }
 .magazine-carousel {
   grid-auto-flow: column;
@@ -796,6 +798,7 @@ main,
   border-top: 3px double var(--line);
 }
 .catalog-controls label {
+  display: block;
   font-size: 14px;
   letter-spacing: 0.04em;
   color: var(--muted);
@@ -814,6 +817,109 @@ select {
   margin: 0 0 12px;
   font-size: 14px;
   color: var(--muted);
+}
+.choice {
+  position: relative;
+  min-width: 170px;
+  margin-top: 9px;
+  font-size: 14px;
+}
+.choice-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 15px;
+  text-align: left;
+  color: var(--ink);
+  background: var(--white);
+  border: 1px solid var(--brass);
+  border-radius: 14px;
+}
+.choice-trigger::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border: solid var(--copper);
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+  transition: transform 160ms;
+}
+.choice.is-open .choice-trigger::after {
+  transform: rotate(225deg);
+}
+.choice-list {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 100%;
+  padding: 6px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--brass) var(--white);
+  color: var(--ink);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px -16px var(--shadow);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5px);
+  transition: opacity 160ms ease, transform 160ms ease, visibility 160ms;
+}
+.choice.is-open .choice-list {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.choice.opens-up .choice-list {
+  top: auto;
+  bottom: calc(100% + 8px);
+}
+.choice-option {
+  position: relative;
+  padding: 10px 28px 10px 12px;
+  min-height: 42px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.choice-option:hover,
+.choice-option.is-active {
+  background: var(--tint);
+  color: var(--copper);
+}
+.choice-option.is-chosen::after {
+  content: "✓";
+  position: absolute;
+  right: 10px;
+  color: var(--copper);
+}
+.filter-field {
+  min-width: 0;
+}
+.search-topic {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.search-topic strong {
+  font-weight: 500;
+  color: var(--ink);
+}
+.search-topic button {
+  padding: 5px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--tint);
+  color: var(--copper);
 }
 .catalog-list {
   padding-bottom: 70px;
@@ -882,6 +988,9 @@ input::placeholder {
 .page-prose {
   max-width: 780px;
   margin: 0 auto 80px;
+}
+.prose.article-body {
+  font-size: calc(var(--reading-text) - 1.3333px);
 }
 .prose h2 {
   font-size: calc(2rem - 2px);
@@ -1134,9 +1243,23 @@ input::placeholder {
 }
 .tag {
   display: inline-block;
-  padding: 4px 9px;
+  padding: 3px 9px;
   border: 1px solid var(--line);
-  margin: 4px;
+  border-radius: 999px;
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: var(--muted);
+  transition: color 150ms, background 150ms, border-color 150ms;
+}
+.tag:hover {
+  background: var(--tint);
+  border-color: var(--brass);
+  color: var(--copper);
+}
+.article-end .tag {
+  margin: 4px 3px;
 }
 .reading-navigation {
   display: grid;
@@ -1910,7 +2033,7 @@ input::placeholder {
     flex-wrap: wrap;
     gap: 17px;
   }
-  .catalog-controls label {
+  .catalog-controls .filter-field {
     flex: 1;
     min-width: 130px;
   }
@@ -1918,6 +2041,10 @@ input::placeholder {
     width: 100%;
     padding-right: 12px;
     font-size: 14px;
+  }
+  .choice {
+    min-width: 0;
+    width: 100%;
   }
   .catalog-controls p {
     width: 100%;
