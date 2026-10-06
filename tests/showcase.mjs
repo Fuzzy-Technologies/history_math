@@ -1,3 +1,4 @@
+import {recordRequestFailure} from './request-failures.mjs';
 import assert from 'node:assert/strict';
 
 export async function runShowcaseChecks({browser, origin, evidence, axe, report, checked}) {
@@ -5,7 +6,7 @@ export async function runShowcaseChecks({browser, origin, evidence, axe, report,
     const context = await browser.newContext({viewport: {width, height: 1000}, colorScheme: theme, reducedMotion: 'reduce'});
     const page = await context.newPage();
     page.on('pageerror', error => report.consoleErrors.push(error.message));
-    page.on('requestfailed', request => report.requestFailures.push(request.url()));
+    page.on('requestfailed', request => recordRequestFailure(report, request));
     const path = language === 'ru' ? '/ru/showcase/' : '/showcase/';
     await page.goto(origin + '/history_math' + path, {waitUntil: 'networkidle'});
     assert.equal(await page.locator('.showcase-book').count(), 5);
