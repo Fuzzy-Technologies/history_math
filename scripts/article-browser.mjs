@@ -1,6 +1,6 @@
 import {createServer} from 'node:http';
 import {readFile, stat, mkdir} from 'node:fs/promises';
-import {resolve, extname, sep} from 'node:path';
+import {resolve, extname, sep, relative} from 'node:path';
 import {chromium} from 'playwright';
 
 export async function checkBrowser(root, articles, evidence) {
@@ -53,7 +53,7 @@ export async function checkBrowser(root, articles, evidence) {
         if (state.overflow || state.formulaOverflow || state.tableOverflow || state.unrendered || state.missingAnchors.length || state.formulas !== article.formulas || state.images !== article.figures) issues.push(JSON.stringify(state));
         const screenshot = `${evidence}/${article.id}-${viewport.name}.png`;
         await page.screenshot({path: screenshot, fullPage: true});
-        pages.push({id: article.id, viewport: viewport.name, ...state, screenshot});
+        pages.push({id: article.id, viewport: viewport.name, ...state, screenshot: relative(resolve('test-results'), screenshot).split(sep).join('/')});
         for (const detail of issues) findings.push({code: 'HM_BROWSER', severity: 'error', file: article.file, detail});
         await page.close();
       }
