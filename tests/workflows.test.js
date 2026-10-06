@@ -78,7 +78,7 @@ test('the actual privileged article comment job has no checkout and rejects stal
   const workflow = readFileSync('.github/workflows/article-report.yml', 'utf8').replace(/\r\n/g, '\n');
   assert.ok(!workflow.includes('actions/checkout'));
   assert.ok(!/^\s+run:/m.test(workflow));
-  assert.match(workflow, /ref: context.payload.pull_request.base.sha/);
+  assert.match(workflow, /context.payload.pull_request.base.sha : context.sha/);
   assert.match(workflow, /live.head.ref.endsWith\('-ru'\)/);
   const source = workflow.split('script: |\n')[1].split('\n').map(line => line.replace(/^            /, '')).join('\n');
   const comments = []; let created = 0; let updated = 0; let currentSha = 'head'; let runId = 10;
@@ -89,11 +89,13 @@ test('the actual privileged article comment job has no checkout and rejects stal
     actions: {listWorkflowRunsForRepo: async () => ({data: {workflow_runs: [{name: 'Prototype checks', event: 'pull_request', status: 'completed', id: runId, html_url: 'https://github.com/example/repo/actions/runs/10', run_attempt: 1}]}}), listJobsForWorkflowRun: 'jobs'},
     issues: {listComments: 'comments', createComment: async args => { created++; comments.push({id: 1, user: {type: 'Bot'}, body: args.body}); }, updateComment: async args => { updated++; comments[0].body = args.body; }}
   }, paginate: async kind => kind === 'jobs' ? [{name: 'Article package', conclusion: 'success'}] : comments};
-  const context = {repo: {owner: 'example', repo: 'repo'}, payload: {pull_request: {number: 1, head: {sha: 'head'}, base: {sha: 'trusted-base'}}}};
+  const context = {eventName: 'pull_request_target', repo: {owner: 'example', repo: 'repo'}, payload: {pull_request: {number: 1, head: {sha: 'head'}, base: {sha: 'trusted-base'}}}};
   const execute = () => new AsyncFunction('github', 'context', source)(github, context);
   await execute(); await execute();
   assert.equal(created, 1); assert.equal(updated, 1);
   assert.match(comments[0].body, /Технические проверки пройдены/);
   runId = 9; await execute(); assert.equal(updated, 1);
   currentSha = 'new-head'; await execute(); assert.equal(updated, 1);
+  context.eventName = 'push'; context.ref = 'refs/heads/untrusted';
+  await execute(); assert.equal(updated, 1);
 });
