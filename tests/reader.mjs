@@ -1,3 +1,4 @@
+import {recordRequestFailure} from './request-failures.mjs';
 import assert from 'node:assert/strict';
 
 export async function runReaderChecks({browser, origin, evidence, axe, report, checked}) {
@@ -8,7 +9,7 @@ export async function runReaderChecks({browser, origin, evidence, axe, report, c
   let validPosition;
   function track(page) {
     page.on('pageerror', error => report.consoleErrors.push(error.message));
-    page.on('requestfailed', request => report.requestFailures.push(request.url()));
+    page.on('requestfailed', request => recordRequestFailure(report, request));
   }
   async function audit(page, label) {
     await page.addScriptTag({content: axe});

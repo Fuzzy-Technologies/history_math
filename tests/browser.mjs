@@ -1,3 +1,4 @@
+import {recordRequestFailure} from './request-failures.mjs';
 import assert from 'node:assert/strict';
 import {createServer} from 'node:http';
 import {readFile, mkdir, writeFile, stat} from 'node:fs/promises';
@@ -47,7 +48,7 @@ try {
     const page = await context.newPage();
     page.on('pageerror', error => report.consoleErrors.push(error.message));
     page.on('console', message => { if (message.type() === 'error') report.consoleErrors.push(message.text()); });
-    page.on('requestfailed', request => report.requestFailures.push(request.url()));
+    page.on('requestfailed', request => recordRequestFailure(report, request));
     const paths = ['/ru/', '/', '/ru/materials/', '/ru/search/', '/ru/about/', '/ru/showcase/', '/showcase/', '/ru/articles/demo-geometry/', '/ru/articles/demo-area/', '/ru/articles/demo-abacus/', '/ru/articles/demo-reading/', '/ru/articles/demo-notation/', '/404.html'];
     for (const path of paths) {
       const response = await page.goto(origin + '/history_math' + path);
@@ -208,7 +209,7 @@ try {
     await context.addInitScript(() => { Math.random = () => 0.4; });
     const page = await context.newPage();
     page.on('pageerror', error => report.consoleErrors.push(error.message));
-    page.on('requestfailed', request => report.requestFailures.push(request.url()));
+    page.on('requestfailed', request => recordRequestFailure(report, request));
     const home = origin + '/history_math/ru/';
     await page.goto(home, {waitUntil: 'networkidle'});
     let previous = await page.locator('#archive-cards h3 a').evaluateAll(links => links.map(link => link.href).sort());
@@ -330,7 +331,7 @@ try {
       const context = await browser.newContext({viewport, colorScheme: theme, reducedMotion: 'reduce', hasTouch: viewport.name === 'mobile'});
       const page = await context.newPage();
       page.on('pageerror', error => report.consoleErrors.push(error.message));
-      page.on('requestfailed', request => report.requestFailures.push(request.url()));
+      page.on('requestfailed', request => recordRequestFailure(report, request));
       await page.goto(origin + '/history_math/ru/', {waitUntil: 'networkidle'});
       assert.equal(await page.locator('.hero-copy .eyebrow, .hero-credit').count(), 0);
       assert.equal(await page.locator('nav a[href$="/search/"]').innerText(), 'Поиск');

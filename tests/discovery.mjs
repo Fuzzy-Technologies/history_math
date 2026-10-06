@@ -1,3 +1,4 @@
+import {recordRequestFailure} from './request-failures.mjs';
 import assert from 'node:assert/strict';
 
 export async function runDiscoveryChecks({browser, origin, evidence, axe, report, checked}) {
@@ -37,7 +38,7 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
     const page = await context.newPage();
     page.on('pageerror', error => report.consoleErrors.push(error.message));
     page.on('console', message => { if (message.type() === 'error') report.consoleErrors.push(message.text()); });
-    page.on('requestfailed', request => report.requestFailures.push(request.url()));
+    page.on('requestfailed', request => recordRequestFailure(report, request));
     await page.goto(base + '/ru/materials/', {waitUntil: 'networkidle'});
     const type = page.getByRole('combobox', {name: /^Тип материала/});
     const topic = page.getByRole('combobox', {name: /^Тема/});
