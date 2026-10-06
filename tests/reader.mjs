@@ -35,8 +35,8 @@ export async function runReaderChecks({browser, origin, evidence, axe, report, c
     await page.setViewportSize({width: start.width, height: start.height});
     await page.getByRole('link', {name: 'Витрина', exact: true}).click();
     assert.equal(await page.getByRole('link', {name: 'Витрина', exact: true}).getAttribute('aria-current'), 'page');
-    assert.equal(await page.getByRole('link', {name: 'Книга на Ridero', exact: false}).getAttribute('href'), 'https://ridero.ru/books/istoriya_matematiki/');
-    assert.equal(await page.locator('.showcase-book').count(), 1);
+    assert.equal(await page.locator('#book-history').getByRole('link', {name: 'Бумажная книга на Ridero', exact: false}).getAttribute('href'), 'https://ridero.ru/books/istoriya_matematiki/');
+    assert.equal(await page.locator('.showcase-book').count(), 5);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
     await audit(page, start.theme + ' ' + start.name + ': showcase');
     await page.screenshot({path: `${evidence}/showcase-${start.name}.jpg`, fullPage: true});

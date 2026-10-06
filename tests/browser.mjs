@@ -6,9 +6,11 @@ import {chromium} from 'playwright';
 import {runReaderChecks} from './reader.mjs';
 import {runDiscoveryChecks} from './discovery.mjs';
 import {runCarouselChecks} from './carousel.mjs';
+import {runShowcaseChecks} from './showcase.mjs';
 
 const discoveryOnly = process.argv.includes('--discovery-only');
 const carouselOnly = process.argv.includes('--carousel-only');
+const showcaseOnly = process.argv.includes('--showcase-only');
 
 const root = resolve('_site');
 const evidence = resolve('test-results');
@@ -36,8 +38,9 @@ const axe = await readFile('node_modules/axe-core/axe.min.js', 'utf8');
 function checked(message) { report.checks.push(message); console.log('PASS:', message); }
 
 try {
-  if (carouselOnly || !process.argv.some(flag => ['--discovery-only', '--reading-only', '--polish-only', '--resume-only'].includes(flag))) await runCarouselChecks({browser, origin, evidence, axe, report, checked});
-  if (!carouselOnly) {
+  if (!showcaseOnly && (carouselOnly || !process.argv.some(flag => ['--discovery-only', '--reading-only', '--polish-only', '--resume-only'].includes(flag)))) await runCarouselChecks({browser, origin, evidence, axe, report, checked});
+  if (showcaseOnly || process.argv.length === 2) await runShowcaseChecks({browser, origin, evidence, axe, report, checked});
+  if (!carouselOnly && !showcaseOnly) {
   if (!discoveryOnly && !process.argv.includes('--reading-only') && !process.argv.includes('--polish-only') && !process.argv.includes('--resume-only')) {
   for (const viewport of [{name: 'desktop', width: 1440, height: 1050}, {name: 'mobile', width: 390, height: 844}]) {
     const context = await browser.newContext({viewport, reducedMotion: 'reduce', timezoneId: 'Europe/Moscow'});
@@ -45,7 +48,7 @@ try {
     page.on('pageerror', error => report.consoleErrors.push(error.message));
     page.on('console', message => { if (message.type() === 'error') report.consoleErrors.push(message.text()); });
     page.on('requestfailed', request => report.requestFailures.push(request.url()));
-    const paths = ['/ru/', '/', '/ru/materials/', '/ru/search/', '/ru/about/', '/ru/showcase/', '/ru/articles/demo-geometry/', '/ru/articles/demo-area/', '/ru/articles/demo-abacus/', '/ru/articles/demo-reading/', '/ru/articles/demo-notation/', '/404.html'];
+    const paths = ['/ru/', '/', '/ru/materials/', '/ru/search/', '/ru/about/', '/ru/showcase/', '/showcase/', '/ru/articles/demo-geometry/', '/ru/articles/demo-area/', '/ru/articles/demo-abacus/', '/ru/articles/demo-reading/', '/ru/articles/demo-notation/', '/404.html'];
     for (const path of paths) {
       const response = await page.goto(origin + '/history_math' + path);
       assert.equal(response.status(), 200);
