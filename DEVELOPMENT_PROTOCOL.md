@@ -4,7 +4,7 @@ Version: 1.0. Project: Mathematics with Mansur (`history_math`). This owner-cont
 
 ## Architecture and authority
 
-The pipeline is editorial preparation in NAS/FELab → approved public Markdown/assets → Git → static Jekyll build. NAS remains the source of truth for editorial originals. Git stores website code, public publication copies, checks and documentation. No SQLite/FTS, locks, NAS paths, local session state or full `.felab.json` may be exported. FELab integration is out of scope for this prototype.
+The pipeline is editorial preparation in NAS/FELab → approved public Markdown/assets → Git → static Jekyll build. NAS remains the source of truth for editorial originals. Git stores website code, public publication copies, checks and documentation. No SQLite/FTS, locks, NAS paths, local session state or full `.felab.json` may be exported. The owner-authorized archival pilot adds FELab preparation and review exports as described in [ADR 0001](docs/adr/0001-archive-article-pilot.md); it does not authorize production publication.
 
 ## Change process
 
@@ -22,6 +22,8 @@ Every PR, including publication PRs and drafts, must have `Tim55667757` as an as
 ## Languages and editorial claims
 
 The README, source code, comments and technical documentation must be written in English. Other languages belong only in localized site content, UI text and locale-specific test fixtures. Default locale and original article language are independent. Do not require English-first drafting or fabricate translations. Every public page has its own canonical URL. Only existing published counterparts share `translation_key` and hreflang.
+
+Automation comments, summaries, recommendations and generated PR descriptions use local message dictionaries. Read the actual PR head branch, including forks: a lowercase terminal `-ru` selects Russian, a lowercase terminal `-en` selects English, and every other name falls back to English. Intermediate `ru`, uppercase suffixes and `-ru-fix` do not select Russian. This rule never changes article `lang`; check codes and required CI names remain stable. Technical success means that editorial review is pending, not that scientific review or publication approval has occurred.
 
 Demo content must remain visibly marked and must not be attributed as authored scholarship by Mansur or Timur. Do not invent historical sources or license the authors' work. Keep factual claims grounded in actual supplied materials when real articles replace demos.
 

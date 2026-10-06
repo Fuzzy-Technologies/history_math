@@ -13,7 +13,7 @@ const commit = option('--commit', process.env.PR_HEAD_SHA ?? spawnSync('git', ['
 const report = {version: 1, commit, branch, language: reportLanguage(branch), checks: Object.fromEntries(requiredChecks.map(key => [key, 'not_run'])), findings: [], articles: [], pages: []};
 mkdirSync('test-results', {recursive: true});
 const run = (code, executable, params) => {
-  const result = spawnSync(executable, params, {encoding: 'utf8', shell: process.platform === 'win32', timeout: 180000, env: {...process.env, PYTHONIOENCODING: 'utf-8'}});
+  const result = spawnSync(executable, params, {encoding: 'utf8', shell: false, timeout: 180000, env: {...process.env, PYTHONIOENCODING: 'utf-8'}});
   if (result.error || result.status !== 0) {
     // Diagnostics contain only the public checkout and its tool output, never editorial source locations.
     report.findings.push({code, severity: 'error', detail: (result.error?.message ?? (result.stderr + result.stdout)).slice(-6000)});

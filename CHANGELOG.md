@@ -2,7 +2,11 @@
 
 ## Unreleased — first prototype
 
+- Expand the bilingual showcase with four books, the 2026 calendar, real covers, edition-specific shop links, and a limited gift edition on Avito; omit prices and reuse the cover zoom viewer.
+
 - Keep mouse dragging and wheel browsing at the exact pixel position, without card snapping; clarify the reading-room navigation and showcase heading.
+
+- Correct the PR metadata token scope after a live assignment returned HTTP 403.
 
 - Assign all PRs to Tim55667757 and add the documentation label automatically on opening or reopening, preserving existing metadata.
 
