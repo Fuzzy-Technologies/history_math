@@ -95,11 +95,11 @@ def CheckSite(sitePath, basePath):
             errors.append(f"{path}: unexpected math renderer")
 
     for path in sitePath.rglob("*.css"):
-        for url in re.findall(r"url\(['\"]?([^)'\"]+)", path.read_text()):
+        for url in re.findall(r"url\(['\"]?([^)'\"]+)", path.read_text(encoding="utf-8")):
             if not url.startswith("data:"):
                 Resolve(url, path)
     for language in ("en", "ru"):
-        records = json.loads((sitePath / "assets" / f"search-{language}.json").read_text())
+        records = json.loads((sitePath / "assets" / f"search-{language}.json").read_text(encoding="utf-8"))
         if language == "en" and records:
             errors.append("The initial English index must be empty")
         for record in records:

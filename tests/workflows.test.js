@@ -37,7 +37,7 @@ test('cleanup permits only a merged same-repository unchanged feature into devel
 test('PR metadata uses additive APIs without executing contributor code', async () => {
   const workflow = readFileSync('.github/workflows/pr-metadata.yml', 'utf8').replace(/\r\n/g, '\n');
   assert.match(workflow, /pull_request_target:\s+types: \[opened, reopened\]/);
-  assert.match(workflow, /permissions:\s+issues: write\s+pull-requests: write\s+jobs:/);
+  assert.match(workflow, /permissions:\s+pull-requests: write\s+jobs:/);
   assert.ok(!workflow.includes('actions/checkout'));
   assert.ok(!/^\s+run:/m.test(workflow));
   assert.ok(!workflow.includes('${{'));
