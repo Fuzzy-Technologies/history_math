@@ -11,6 +11,7 @@ const option = (key, fallback) => args.includes(key) ? args[args.indexOf(key) + 
 const branch = option('--branch', process.env.PR_HEAD_REF ?? process.env.GITHUB_HEAD_REF ?? spawnSync('git', ['branch', '--show-current'], {encoding: 'utf8'}).stdout.trim());
 const commit = option('--commit', process.env.PR_HEAD_SHA ?? spawnSync('git', ['rev-parse', 'HEAD'], {encoding: 'utf8'}).stdout.trim());
 const report = {version: 1, commit, branch, language: reportLanguage(branch), checks: Object.fromEntries(requiredChecks.map(key => [key, 'not_run'])), findings: [], articles: [], pages: []};
+if (process.env.GITHUB_RUN_ID && process.env.GITHUB_REPOSITORY) report.artifact_url = `${process.env.GITHUB_SERVER_URL ?? 'https://github.com'}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
 mkdirSync('test-results', {recursive: true});
 const run = (code, executable, params) => {
   const result = spawnSync(executable, params, {encoding: 'utf8', shell: false, timeout: 180000, env: {...process.env, PYTHONIOENCODING: 'utf-8'}});
