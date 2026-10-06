@@ -1,0 +1,30 @@
+{
+  "article_id": "hm-56520386b771",
+  "selection": "Historical number theory with multiple arithmetic examples and superscript formulas.",
+  "source_formats": [
+    "txt"
+  ],
+  "original_publication": {
+    "outlet": "Telegram · history_math",
+    "date": "2023-11-21"
+  },
+  "reconciliation": {
+    "text": "All nonempty canonical source lines have a private handling ledger. Author prose is retained; technical markers are documented separately.",
+    "formulas": "Transcribed to dollar LaTeX where present; no factual or mathematical correction applied.",
+    "figures": 3,
+    "tables": 0,
+    "notes_and_bibliography": "Existing notes, source links and bibliography preserved; research attachments stay private.",
+    "automatic": "Source-contract checks and browser/build checks are recorded separately by CI.",
+    "manual": "Full canonical text read; numeric table cells and formula transformations compared with the source. Editorial accuracy still requires review."
+  },
+  "editorial_questions": [
+    "Сохранены сведения за 2019 год: число найденных совершенных чисел и рекорд не обновлялись. Решить, нужна ли датированная редакционная сноска.",
+    "Проверить авторское утверждение о применении совершенных чисел в криптографических протоколах.",
+    "Подтвердить происхождение архивной иллюстрации и авторской промокомпозиции; новые лицензии им не назначены."
+  ],
+  "manual_changes": [
+    "Original title promoted to the shared page title; original section headings marked as H2.",
+    "Operational comment-placement instructions and empty URL fields removed; hashtags moved to metadata.",
+    "Internal file markers mapped to figure inventory or retained bibliographic references."
+  ]
+}
