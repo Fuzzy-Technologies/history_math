@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title | escape }} · {% if ru %}Математика с Мансур-абый{% else %}Mathematics with Mansur{% endif %}</title>
   <meta name="description" content="{{ page.description | escape }}">
+  {% if page.status == 'draft' %}<meta name="robots" content="noindex, nofollow">{% endif %}
   <meta name="theme-color" content="#f4eddf">
   <script>
     (() => {

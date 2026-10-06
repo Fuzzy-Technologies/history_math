@@ -11,6 +11,7 @@ class PublicationTest < Minitest::Test
     Dir.mktmpdir("history-math-test") do |root|
       source = File.join(root, "site")
       FileUtils.cp_r(File.expand_path("../site", __dir__), source)
+      FileUtils.cp_r(File.expand_path("../schemas", __dir__), File.join(root, "schemas"))
       config = Jekyll.configuration("config" => File.expand_path("../_config.yml", __dir__),
         "source" => source, "destination" => File.join(root, "output"), "quiet" => true)
       yield source, config
@@ -55,6 +56,24 @@ class PublicationTest < Minitest::Test
     with_site do |source, config|
       FileUtils.cp(File.join(source, "_articles/demo-abacus.md"), File.join(source, "_articles/duplicate.md"))
       assert_raises(Jekyll::Errors::FatalException) { Jekyll::Site.new(config).process }
+    end
+  end
+
+  def test_review_preview_is_opt_in_and_never_indexes_a_draft
+    with_site do |source, config|
+      text = File.read(File.expand_path("../templates/minimal-article.md", __dir__))
+      File.write(File.join(source, "_articles/example-minimal.en.md"), text)
+      site = Jekyll::Site.new(config)
+      site.process
+      refute File.exist?(File.join(site.dest, "articles/example-minimal/index.html"))
+      config["article_review"] = true
+      review = Jekyll::Site.new(config)
+      review.process
+      page = File.read(File.join(review.dest, "articles/example-minimal/index.html"))
+      assert_includes page, "Editorial review copy"
+      assert_includes page, "noindex, nofollow"
+      refute_includes File.read(File.join(review.dest, "sitemap.xml")), "/articles/example-minimal/"
+      assert_empty JSON.parse(File.read(File.join(review.dest, "assets/search-en.json")))
     end
   end
 end

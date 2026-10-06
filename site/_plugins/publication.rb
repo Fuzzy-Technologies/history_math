@@ -9,8 +9,49 @@ module HistoryMath
   ARTICLE_FIELDS = %w[layout title lang translation_key date type author description tags math status permalink].freeze
   TYPES = %w[essay problem instrument note].freeze
 
+  # The source gate uses Ajv; Jekyll interprets the same pinned schema keyword set.
+  def self.schema_errors(value, schema, path = "metadata")
+    errors = []
+    types = {"object" => [Hash], "array" => [Array], "string" => [String], "boolean" => [TrueClass, FalseClass]}
+    if schema["type"] && !types.fetch(schema["type"]).any? { |type| value.is_a?(type) }
+      return ["#{path}: expected #{schema['type']}"]
+    end
+    errors << "#{path}: incorrect constant" if schema.key?("const") && value != schema["const"]
+    errors << "#{path}: incorrect enum" if schema["enum"] && !schema["enum"].include?(value)
+    if value.is_a?(Hash)
+      (schema["required"] || []).each { |key| errors << "#{path}.#{key}: required" unless value.key?(key) }
+      value.each do |key, item|
+        property = (schema["properties"] || {})[key]
+        errors.concat(schema_errors(item, property, "#{path}.#{key}")) if property
+        errors << "#{path}.#{key}: unknown field" if schema["additionalProperties"] == false && !property
+      end
+    elsif value.is_a?(Array)
+      errors << "#{path}: too few items" if schema["minItems"] && value.length < schema["minItems"]
+      errors << "#{path}: duplicate items" if schema["uniqueItems"] && value.uniq != value
+      value.each_with_index { |item, index| errors.concat(schema_errors(item, schema["items"], "#{path}[#{index}]")) } if schema["items"]
+    elsif value.is_a?(String)
+      errors << "#{path}: empty" if schema["minLength"] && value.length < schema["minLength"]
+      errors << "#{path}: invalid pattern" if schema["pattern"] && !Regexp.new(schema["pattern"]).match?(value)
+    end
+    (schema["allOf"] || []).each do |condition|
+      errors.concat(schema_errors(value, condition["then"], path)) if schema_errors(value, condition["if"]).empty?
+    end
+    errors
+  end
+
   def self.validate_article!(document)
     data = document.data
+    if data["schema_version"] == 1
+      schema = JSON.parse(File.read(File.expand_path("../schemas/article-v1.schema.json", document.site.source)))
+      # Jekyll adds date, excerpt and collection data; the source gate rejects unknown author fields.
+      public_data = data.select { |key, _| schema["properties"].key?(key) && key != "date" }
+      if PUBLIC_STATUSES.include?(data["status"]) && data["date"]
+        public_data["date"] = data["date"].strftime("%Y-%m-%d")
+      end
+      errors = schema_errors(public_data, schema)
+      raise Jekyll::Errors::FatalException, "#{document.path}: #{errors.join('; ')}" unless errors.empty?
+      return
+    end
     missing = ARTICLE_FIELDS.reject { |field| data.key?(field) }
     raise Jekyll::Errors::FatalException, "#{document.path}: missing #{missing.join(', ')}" unless missing.empty?
     valid = data["layout"] == "article" && %w[en ru].include?(data["lang"]) &&
@@ -57,7 +98,7 @@ module HistoryMath
           doc.data["translations"] = group.map { |translation| {"lang" => translation.data["lang"], "url" => translation.url} }
         end
       end
-      articles = site.collections.fetch("articles").docs.sort_by { |doc| doc.data["date"] }.reverse
+      articles = site.collections.fetch("articles").docs.select { |doc| PUBLIC_STATUSES.include?(doc.data["status"]) }.sort_by { |doc| doc.data["date"] }.reverse
       %w[en ru].each do |language|
         records = articles.select { |doc| doc.data["lang"] == language }.map do |doc|
           body = doc.content.gsub(/\{\{[\s\S]*?\}\}|\{%[\s\S]*?%\}/, " ")
@@ -74,7 +115,7 @@ module HistoryMath
         page.data["render_with_liquid"] = false
         site.pages << page
       end
-      urls = documents.select { |doc| doc.data["sitemap"] != false && doc.data["layout"] }.map do |doc|
+      urls = documents.select { |doc| doc.data["sitemap"] != false && doc.data["layout"] && PUBLIC_STATUSES.include?(doc.data["status"]) }.map do |doc|
         "<url><loc>#{CGI.escapeHTML(site.config['url'] + site.baseurl + doc.url)}</loc></url>"
       end
       sitemap = Jekyll::PageWithoutAFile.new(site, site.source, "", "sitemap.xml")
@@ -88,7 +129,10 @@ end
 
 # Remove non-public documents before rendering or index discovery, including their direct URLs.
 Jekyll::Hooks.register :site, :post_read do |site|
-  site.collections.fetch("articles").docs.select! { |doc| HistoryMath::PUBLIC_STATUSES.include?(doc.data["status"]) }
+  site.collections.fetch("articles").docs.select! do |doc|
+    HistoryMath::PUBLIC_STATUSES.include?(doc.data["status"]) ||
+      (site.config["article_review"] == true && doc.data["schema_version"] == 1 && doc.data["status"] == "draft")
+  end
   site.collections.fetch("articles").docs.each { |doc| HistoryMath.validate_article!(doc) }
   site.pages.select! { |page| HistoryMath::PUBLIC_STATUSES.include?(page.data["status"]) }
   site.static_files.select! { |file| file.relative_path.start_with?("/assets/") }

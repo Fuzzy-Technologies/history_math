@@ -1,5 +1,7 @@
 # Public content and export contract
 
+For archival publication packages, [ADR 0001](adr/0001-archive-article-pilot.md) and [the preparation procedure](ARTICLE_PREPARATION.md) define the implemented v1 contract. FELab owns its canonical schema; the site validates the pinned snapshot. The fields below describe the retained legacy demo contract. Real archival packages additionally use `schema_version`, `article_id`, `authors`, `rights_basis` and structured `figures`. Draft v1 packages have no website placement date. Opt-in review artifacts do not change the production draft gate.
+
 ## Add an article
 
 Copy `templates/article.md` to `site/_articles/<stable-slug>.<lang>.md`. One Markdown file is one article/language version. Edit the metadata and write prose using H2 section headings. The common site header, footer and article structure come from shared layouts. Keep confidential drafts on NAS; `status: draft` excludes a file from the generated site but does not make a public Git file private.
@@ -85,4 +87,4 @@ Fresh materials are sorted by publication date and remain stable. The archive ro
 
 ## Future FELab export boundary
 
-No exporter is implemented here. A future exporter may produce an approved public package of Markdown language variants and selected assets conforming to this contract. It must omit private research, local SQLite/FTS, sessions, locks, logs, NAS paths, full internal metadata and large source media. Safe `source_work_id` can preserve provenance without leaking internal locations. Export should preserve `translation_key` and stable permalinks and require editorial approval before Git publication. The public build then creates indexes; there is no promised live NAS synchronization.
+FELab's `HistoryMathPreparation` implements the archive-linked public export described in ADR 0001. It omits private research, local SQLite/FTS, sessions, locks, logs, NAS paths, full internal metadata and large source media. Safe public IDs preserve provenance without leaking internal locations. Editorial review precedes approved website publication; draft Git copies are explicitly authorized review material. This is an explicit export, without live NAS synchronization.

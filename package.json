@@ -3,11 +3,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/core.test.js tests/workflows.test.js",
+    "test": "node --test tests/core.test.js tests/workflows.test.js tests/articles.test.mjs",
+    "check:articles": "node scripts/check-articles.mjs",
     "test:browser": "node tests/browser.mjs"
   },
   "devDependencies": {
+    "ajv": "8.20.0",
     "axe-core": "4.10.3",
-    "playwright": "1.58.2"
+    "playwright": "1.58.2",
+    "yaml": "2.9.1"
   }
 }

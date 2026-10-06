@@ -1,0 +1,5 @@
+{% assign figure = page.figures | where: 'id', include.id | first %}
+<figure id="{{ figure.id }}">
+  <img src="{{ figure.path | relative_url }}" alt="{{ figure.alt | escape }}" loading="lazy">
+  <figcaption>{{ figure.caption | escape }} <span class="figure-source">{{ figure.source | escape }}{% if figure.source_url %} · <a href="{{ figure.source_url | escape }}">{% if page.lang == 'ru' %}Источник{% else %}Source{% endif %}</a>{% endif %}{% if figure.license %} · {{ figure.license | escape }}{% endif %}</span></figcaption>
+</figure>
