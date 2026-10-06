@@ -53,14 +53,24 @@ export function checkArticle(text, file, root, identities = new Set()) {
     if (['alt', 'caption', 'source', 'rights_basis'].some(key => typeof figure[key] !== 'string' || !figure[key].trim())) add('HM_FIGURE', figure.id);
     safeAsset(figure.path, metadataLine(figure.path));
   }
+  const rolePaths = new Set(['preview_image', 'cover_image', 'hero_image'].map(key => data[key]).filter(Boolean));
+  for (const path of rolePaths) if (![...figures.values()].some(figure => figure.path === path)) add('HM_FIGURE', `Image role lacks provenance inventory: ${path}`);
   const used = new Set();
+  if (data.hero_image) {
+    const hero = [...figures.values()].find(figure => figure.path === data.hero_image);
+    if (hero) {
+      used.add(hero.id);
+      if (hero.alt !== data.hero_alt || hero.caption !== data.hero_caption) add('HM_FIGURE', 'Hero caption and alternative text must match its figure inventory');
+    }
+  }
   const clean = body.replace(/```[\s\S]*?```|`[^`\n]*`/g, match => match.replace(/[^\n]/g, ' '));
   const lineAt = index => bodyLine + body.slice(0, index).split('\n').length - 1;
   for (const match of clean.matchAll(/\{%\s*include\s+article-figure.html\s+id="([a-z0-9-]+)"\s*%\}/g)) {
     if (!figures.has(match[1])) add('HM_FIGURE', match[1], lineAt(match.index));
+    if (used.has(match[1])) add('HM_IDENTIFIER', match[1], lineAt(match.index));
     used.add(match[1]);
   }
-  for (const id of figures.keys()) if (!used.has(id) && data.hero_image !== figures.get(id).path) add('HM_FIGURE', `Unused figure: ${id}`);
+  for (const id of figures.keys()) if (!used.has(id) && !rolePaths.has(figures.get(id).path)) add('HM_FIGURE', `Unused figure: ${id}`);
   if (/<\/?(?:script|iframe|img|figure|table|style)\b/i.test(clean) || /!\[[^\]]*\]\(/.test(clean)) add('HM_STRUCTURE', 'Use shared article-figure includes; raw active/media HTML is unsupported');
   const withoutIncludes = clean.replace(/\{%\s*include\s+article-figure.html\s+id="[a-z0-9-]+"\s*%\}/g, '');
   if (/\{%|\{\{/.test(withoutIncludes)) add('HM_STRUCTURE', 'Only the documented shared figure include is allowed');
@@ -91,7 +101,7 @@ export function checkArticle(text, file, root, identities = new Set()) {
   if (formulaCount > 0 && data.math !== true) add('HM_MATH', 'math: true is required');
   for (const question of data.editorial_questions ?? []) add('HM_EDITOR', question, 1, 'editor');
   if (/https:\/\//.test(body)) add('HM_EXTERNAL', '', 1, 'warning');
-  return {...article, findings, formulaCount, figureCount: figures.size};
+  return {...article, findings, formulaCount, figureCount: used.size};
 }
 
 export function checkContract(root) {
