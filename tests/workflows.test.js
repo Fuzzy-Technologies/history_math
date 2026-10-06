@@ -81,14 +81,14 @@ test('the actual privileged article comment job has no checkout and rejects stal
   assert.match(workflow, /context.payload.pull_request.base.sha : context.sha/);
   assert.match(workflow, /live.head.ref.endsWith\('-ru'\)/);
   const source = workflow.split('script: |\n')[1].split('\n').map(line => line.replace(/^            /, '')).join('\n');
-  const comments = []; let created = 0; let updated = 0; let currentSha = 'head'; let runId = 10;
+  const comments = []; let created = 0; let updated = 0; let currentSha = 'head'; let runId = 10; let jobConclusion = 'success';
   const dictionary = readFileSync('schemas/messages.json', 'utf8');
   const github = {rest: {
     repos: {getContent: async () => ({data: {size: dictionary.length, encoding: 'base64', content: Buffer.from(dictionary).toString('base64')}})},
     pulls: {get: async () => ({data: {state: 'open', head: {sha: currentSha, ref: 'feature/article-ru', repo: {full_name: 'fork/repo'}}}})},
     actions: {listWorkflowRunsForRepo: async () => ({data: {workflow_runs: [{name: 'Prototype checks', event: 'pull_request', status: 'completed', id: runId, html_url: 'https://github.com/example/repo/actions/runs/10', run_attempt: 1}]}}), listJobsForWorkflowRun: 'jobs'},
     issues: {listComments: 'comments', createComment: async args => { created++; comments.push({id: 1, user: {type: 'Bot'}, body: args.body}); }, updateComment: async args => { updated++; comments[0].body = args.body; }}
-  }, paginate: async kind => kind === 'jobs' ? [{name: 'Article package', conclusion: 'success'}] : comments};
+  }, paginate: async kind => kind === 'jobs' ? [{name: 'Article package', conclusion: jobConclusion}] : comments};
   const context = {eventName: 'pull_request_target', repo: {owner: 'example', repo: 'repo'}, payload: {pull_request: {number: 1, head: {sha: 'head'}, base: {sha: 'trusted-base'}}}};
   const execute = () => new AsyncFunction('github', 'context', source)(github, context);
   await execute(); await execute();
@@ -100,4 +100,7 @@ test('the actual privileged article comment job has no checkout and rejects stal
   currentSha = 'new-head'; await execute(); assert.equal(updated, 1);
   context.eventName = 'push'; context.ref = 'refs/heads/untrusted';
   await execute(); assert.equal(updated, 1);
+  context.eventName = 'pull_request_target'; currentSha = 'head'; runId = 11; jobConclusion = 'skipped';
+  await execute(); assert.equal(updated, 2);
+  assert.match(comments[0].body, /Обязательные технические проверки не выполнены/);
 });
