@@ -1,0 +1,32 @@
+{
+  "article_id": "hm-19a5d93e33c1",
+  "selection": "Numerical table and a complete system-of-equations solution; DOCX stores equations separately from text.",
+  "source_formats": [
+    "txt",
+    "docx"
+  ],
+  "original_publication": {
+    "outlet": "Telegram · history_math",
+    "date": "2025-03-21"
+  },
+  "reconciliation": {
+    "text": "All nonempty canonical source lines have a private handling ledger. Author prose is retained; technical markers are documented separately.",
+    "formulas": "Transcribed to dollar LaTeX where present; no factual or mathematical correction applied.",
+    "figures": 2,
+    "tables": 1,
+    "notes_and_bibliography": "Existing notes, source links and bibliography preserved; research attachments stay private.",
+    "automatic": "Source-contract checks and browser/build checks are recorded separately by CI.",
+    "manual": "Full canonical text read; numeric table cells and formula transformations compared with the source. Editorial accuracy still requires review."
+  },
+  "editorial_questions": [
+    "Проверить исторические утверждения о французских салонах XVII века и обучении банкиров: исследовательский DOCX содержит промежуточные выписки, а не подтверждённую научную ссылку.",
+    "Проверить библиографические сведения о Люка и основание размещения изображения монеты.",
+    "Таблица переписана из 15 ячеек исходного рисунка в доступную двухколоночную форму; подтвердить её соответствие исходным строкам и столбцам."
+  ],
+  "manual_changes": [
+    "Original title promoted to the shared page title; original section headings marked as H2.",
+    "Operational comment-placement instructions and empty URL fields removed; hashtags moved to metadata.",
+    "Internal file markers mapped to figure inventory or retained bibliographic references.",
+    "Image-table arithmetic transcribed with original row/column coordinates; long equations broken across aligned lines without changing operation order."
+  ]
+}
