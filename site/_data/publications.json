@@ -1,0 +1,367 @@
+{
+  "shop_url": "https://web.tribute.tg/l/w6",
+  "ui": {
+    "ru": {
+      "language_note": "Все издания — на русском языке.",
+      "shop_label": "Наш магазин в Telegram",
+      "cover_label": "Обложка: ",
+      "editions_label": "Где купить"
+    },
+    "en": {
+      "language_note": "All editions are in Russian.",
+      "shop_label": "Our Telegram shop",
+      "cover_label": "Cover: ",
+      "editions_label": "Where to buy"
+    }
+  },
+  "items": [
+    {
+      "id": "algebra",
+      "title": {
+        "ru": "Библия математика",
+        "en": "Mathematician’s Bible"
+      },
+      "subtitle": {
+        "ru": "Основы высшей и линейной алгебры",
+        "en": "Foundations of higher and linear algebra"
+      },
+      "author": {
+        "ru": "Мансур Гильмуллин",
+        "en": "Mansur Gilmullin"
+      },
+      "kind": {
+        "ru": "Алгебра",
+        "en": "Algebra"
+      },
+      "description": {
+        "ru": "От первых алгебраических понятий — к теории чисел, многочленам и линейной алгебре. Разделы можно изучать по отдельности, а знакомые идеи встречаются снова в новых задачах. Книга для студентов, преподавателей, инженеров и всех, кому нужен прочный математический фундамент.",
+        "en": "From introductory algebra to number theory, polynomials and linear algebra. Chapters can be studied separately, with familiar ideas returning in new problems. For students, teachers, engineers and readers building a solid mathematical foundation."
+      },
+      "cover": "algebra-cover.png",
+      "gallery": [
+        {
+          "image": "algebra-gift.jpg",
+          "caption": {
+            "ru": "Подарочный тираж",
+            "en": "Gift edition"
+          },
+          "width": 1653,
+          "height": 2048
+        },
+        {
+          "image": "algebra-paperback.jpg",
+          "caption": {
+            "ru": "Мягкая обложка",
+            "en": "Paperback"
+          },
+          "width": 1808,
+          "height": 1808
+        }
+      ],
+      "offers": [
+        {
+          "id": "ebook",
+          "enabled": true,
+          "title": {
+            "ru": "Электронная книга · PDF",
+            "en": "Ebook · PDF"
+          },
+          "links": [
+            {
+              "url": "https://web.tribute.tg/p/byD",
+              "label": {
+                "ru": "PDF в нашем магазине",
+                "en": "PDF in our shop"
+              }
+            },
+            {
+              "url": "https://ridero.ru/books/bibliya_matematika/",
+              "label": {
+                "ru": "PDF на Ridero",
+                "en": "PDF on Ridero"
+              }
+            }
+          ]
+        },
+        {
+          "id": "paperback",
+          "enabled": true,
+          "title": {
+            "ru": "Бумажная книга",
+            "en": "Printed book"
+          },
+          "links": [
+            {
+              "url": "https://ridero.ru/books/bibliya_matematika/",
+              "label": {
+                "ru": "Бумажная книга на Ridero",
+                "en": "Printed book on Ridero"
+              }
+            }
+          ]
+        },
+        {
+          "id": "gift",
+          "enabled": true,
+          "title": {
+            "ru": "Подарочное издание",
+            "en": "Gift edition"
+          },
+          "links": [
+            {
+              "url": "https://www.avito.ru/moskva/knigi_i_zhurnaly/kniga_bibliya_matematika_ot_mansura_gilmullina_8302534325",
+              "label": {
+                "ru": "Подарочная книга на Авито",
+                "en": "Gift edition on Avito"
+              }
+            },
+            {
+              "url": "https://t.me/tribute/app?startapp=hbuz",
+              "label": {
+                "ru": "Подарочная книга в Telegram",
+                "en": "Gift edition in Telegram"
+              }
+            }
+          ],
+          "note": {
+            "ru": "Ограниченный тираж. Наличие можно уточнить в объявлении или в нашем магазине.",
+            "en": "Limited print run. Check availability in the listing or our shop."
+          }
+        }
+      ],
+      "cover_width": 1457,
+      "cover_height": 2048
+    },
+    {
+      "id": "history",
+      "title": {
+        "ru": "История математики",
+        "en": "History of Mathematics"
+      },
+      "subtitle": {
+        "ru": "Учебное пособие",
+        "en": "Study guide"
+      },
+      "author": {
+        "ru": "Мансур Гильмуллин",
+        "en": "Mansur Gilmullin"
+      },
+      "kind": {
+        "ru": "История математики",
+        "en": "History of mathematics"
+      },
+      "description": {
+        "ru": "Как возникали математические идеи и какое место они занимали в жизни людей? Проследим историю математики как часть мировой культуры: от эпохи к эпохе, возвращаясь к важным открытиям и рассматривая их с разных сторон.",
+        "en": "How did mathematical ideas emerge, and what place did they hold in people’s lives? This guide follows mathematics through world history, returning to important discoveries to examine them from different perspectives."
+      },
+      "cover": "history-cover.png",
+      "offers": [
+        {
+          "id": "ebook",
+          "enabled": true,
+          "title": {
+            "ru": "Электронная книга · PDF",
+            "en": "Ebook · PDF"
+          },
+          "links": [
+            {
+              "url": "https://web.tribute.tg/p/bv1",
+              "label": {
+                "ru": "PDF в нашем магазине",
+                "en": "PDF in our shop"
+              }
+            }
+          ]
+        },
+        {
+          "id": "paperback",
+          "enabled": true,
+          "title": {
+            "ru": "Бумажная книга",
+            "en": "Printed book"
+          },
+          "links": [
+            {
+              "url": "https://ridero.ru/books/istoriya_matematiki/",
+              "label": {
+                "ru": "Бумажная книга на Ridero",
+                "en": "Printed book on Ridero"
+              }
+            }
+          ]
+        }
+      ],
+      "cover_width": 1449,
+      "cover_height": 2048
+    },
+    {
+      "id": "equations",
+      "title": {
+        "ru": "Методы решения уравнений в примерах",
+        "en": "Methods for Solving Equations: Worked Examples"
+      },
+      "subtitle": {
+        "ru": "Учебно-методическое пособие",
+        "en": "Teaching and study guide"
+      },
+      "author": {
+        "ru": "Мансур Гильмуллин",
+        "en": "Mansur Gilmullin"
+      },
+      "kind": {
+        "ru": "Спецкурс",
+        "en": "Special course"
+      },
+      "description": {
+        "ru": "Уравнения высших степеней, уравнения в целых числах и нестандартные задачи — с методами решения и примерами. Пособие пригодится старшеклассникам и студентам, а учителям поможет готовить занятия математического кружка, элективного курса или олимпиадной подготовки.",
+        "en": "Higher-degree equations, equations in integers and less familiar problems, with methods and worked examples. For school leavers and mathematics students; teachers can use it when preparing elective courses, mathematics clubs and olympiad sessions."
+      },
+      "cover": "equations-cover.png",
+      "offers": [
+        {
+          "id": "ebook",
+          "enabled": true,
+          "title": {
+            "ru": "Электронная книга · PDF",
+            "en": "Ebook · PDF"
+          },
+          "links": [
+            {
+              "url": "https://web.tribute.tg/p/byM",
+              "label": {
+                "ru": "PDF в нашем магазине",
+                "en": "PDF in our shop"
+              }
+            }
+          ]
+        },
+        {
+          "id": "paperback",
+          "enabled": true,
+          "title": {
+            "ru": "Бумажная книга",
+            "en": "Printed book"
+          },
+          "links": [
+            {
+              "url": "https://ridero.ru/books/metody_resheniya_uravnenii_v_primerakh/",
+              "label": {
+                "ru": "Бумажная книга на Ridero",
+                "en": "Printed book on Ridero"
+              }
+            }
+          ]
+        }
+      ],
+      "cover_width": 1449,
+      "cover_height": 2048
+    },
+    {
+      "id": "calendar-2026",
+      "title": {
+        "ru": "Математика с Мансур-абый · 2026",
+        "en": "Mathematics with Mansur · 2026"
+      },
+      "subtitle": {
+        "ru": "Историко-математический календарь",
+        "en": "Calendar of mathematical history"
+      },
+      "author": {
+        "ru": "Мансур Гильмуллин",
+        "en": "Mansur Gilmullin"
+      },
+      "kind": {
+        "ru": "Календарь",
+        "en": "Calendar"
+      },
+      "description": {
+        "ru": "Историко-математический календарь на 2026 год в электронном виде. Его можно приобрести в нашем Telegram-магазине.",
+        "en": "A calendar of mathematical history for 2026, available as a PDF from our Telegram shop."
+      },
+      "cover": "calendar-2026.jpg",
+      "offers": [
+        {
+          "id": "ebook",
+          "enabled": true,
+          "title": {
+            "ru": "Электронное издание · PDF",
+            "en": "Digital edition · PDF"
+          },
+          "links": [
+            {
+              "url": "https://web.tribute.tg/p/zvp",
+              "label": {
+                "ru": "Календарь в нашем магазине",
+                "en": "Calendar in our shop"
+              }
+            }
+          ]
+        }
+      ],
+      "cover_width": 715,
+      "cover_height": 1011
+    },
+    {
+      "id": "road-of-life",
+      "title": {
+        "ru": "Дорога жизни",
+        "en": "The Road of Life"
+      },
+      "subtitle": {
+        "ru": "Стихи",
+        "en": "Poems"
+      },
+      "author": {
+        "ru": "Татьяна Новоженина",
+        "en": "Tatyana Novozhenina"
+      },
+      "kind": {
+        "ru": "Поэзия",
+        "en": "Poetry"
+      },
+      "description": {
+        "ru": "Стихи Татьяны Новожениной — о счастливых и грустных мгновениях жизни. Мансур и дети собрали сохранившиеся записи из её архива и издали эту книгу в память о ней.",
+        "en": "Tatyana Novozhenina’s poems capture the happy and sorrowful moments of life. Mansur and their children gathered the surviving poems from her archive and published this collection in her memory."
+      },
+      "cover": "road-of-life.jpg",
+      "offers": [
+        {
+          "id": "ebook",
+          "enabled": true,
+          "title": {
+            "ru": "Электронная книга · PDF",
+            "en": "Ebook · PDF"
+          },
+          "links": [
+            {
+              "url": "https://web.tribute.tg/p/byU",
+              "label": {
+                "ru": "PDF в нашем магазине",
+                "en": "PDF in our shop"
+              }
+            }
+          ]
+        },
+        {
+          "id": "paperback",
+          "enabled": true,
+          "title": {
+            "ru": "Бумажная книга",
+            "en": "Printed book"
+          },
+          "links": [
+            {
+              "url": "https://ridero.ru/books/doroga_zhizni_3/",
+              "label": {
+                "ru": "Бумажная книга на Ridero",
+                "en": "Printed book on Ridero"
+              }
+            }
+          ]
+        }
+      ],
+      "cover_width": 1339,
+      "cover_height": 1920
+    }
+  ]
+}
