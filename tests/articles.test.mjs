@@ -31,6 +31,14 @@ test('date validation and publication date requirement reject invalid metadata',
   assert.ok(errors(text.replace('status: draft', 'status: published')).some(x => x.code === 'HM_METADATA'));
   assert.ok(errors(text.replace('status: draft', 'status: draft\ndate: 2026-02-30')).some(x => x.code === 'HM_METADATA'));
 });
+
+test('preview, social and hero roles retain provenance and count only displayed figures', () => {
+  const hero = text.replace('status: draft', 'status: draft\nhero_image: /assets/images/example/triangle.svg\nhero_alt: A triangle with a marked base and height.\nhero_caption: Figure 1. Base and height of a triangle.').replace('{% include article-figure.html id="fig-example" %}', '');
+  assert.deepEqual(errors(hero), []);
+  assert.equal(checkArticle(hero, 'article.md', root).figureCount, 1);
+  assert.ok(errors(hero.replace('hero_alt: A triangle with a marked base and height.', 'hero_alt: Different context')).some(x => x.code === 'HM_FIGURE'));
+  assert.ok(errors(text + '\n{% include article-figure.html id="fig-example" %}').some(x => x.code === 'HM_IDENTIFIER'));
+});
 test('stable identity and content language are independent of automation language', () => {
   const identities = new Set();
   checkArticle(text, 'a.md', root, identities);

@@ -2,6 +2,8 @@
 
 Follow [ADR 0001](adr/0001-archive-article-pilot.md). NAS/FELab owns editorial content; this repository receives exports for review.
 
+See [check conditions and report interpretation](ARTICLE_CHECKS.md) for stable codes, blocking failures and unavailable checks. `scripts/article-pr.mjs` exports the deterministic `articlePrBody` helper used for pilot PR descriptions; it consumes the same local language dictionaries and an actual head's report.
+
 1. Inspect both working trees and instructions. Search approved digests and metadata in the local runtime; read the complete authoritative `long.txt` and relevant source documents on NAS. Record source hashes, selection rationale and original publication records privately. Verify image provenance before public export. A digest is only a candidate finder.
 2. Assign a stable public ID; the pilot uses `hm-` plus 12 hexadecimal characters from SHA-256 of the historical Work ID. Retain the private mapping in FELab. Preserve it if a folder is renamed. Choose the content `lang` independently from the report language.
 3. Fill `templates/article.md`, or start from `templates/minimal-article.md`. Every schema `required` field is mandatory. Optional fields describe only known facts. Add `date` only for an approved website placement, and keep earlier outlet/date in `original_publication`. Keep `status: draft` during preparation.
