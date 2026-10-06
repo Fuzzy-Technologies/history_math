@@ -19,7 +19,7 @@ layout: default
   <div class="article-spread">
   <aside class="article-sidebar" hidden><nav class="article-toc" aria-label="{% if page.lang == 'ru' %}В этой статье{% else %}In this article{% endif %}"><p class="eyebrow">{% if page.lang == 'ru' %}Содержание{% else %}Contents{% endif %}</p><ol></ol></nav></aside>
   <div class="prose article-body">
-    {% if page.hero_image %}<figure><img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_alt | escape }}" width="960" height="600"><figcaption>{{ page.hero_caption | escape }}</figcaption></figure>{% endif %}
+    {% if page.hero_image %}{% if page.schema_version == 1 %}{% assign hero = page.figures | where: 'path', page.hero_image | first %}{% include article-figure.html id=hero.id %}{% else %}<figure><img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_alt | escape }}" width="960" height="600"><figcaption>{{ page.hero_caption | escape }}</figcaption></figure>{% endif %}{% endif %}
     {{ content }}
   </div>
   </div>
