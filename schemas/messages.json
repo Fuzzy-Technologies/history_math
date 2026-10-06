@@ -41,6 +41,22 @@
     "HM_EDITOR": "Question for the editor; technical validation does not resolve it."
   },
   "ru": {
+    "details": {
+      "YAML front matter required": "Требуется начальный блок метаданных YAML",
+      "author must display the authors array": "Поле author должно отображать список authors",
+      "Invalid calendar date:": "Недопустимая календарная дата:",
+      "Image role lacks provenance inventory:": "Изображение этой роли отсутствует в перечне источников:",
+      "Hero caption and alternative text must match its figure inventory": "Подпись и альтернативный текст hero должны совпадать с записью рисунка",
+      "Unused figure:": "Рисунок не используется:",
+      "Use shared article-figure includes; raw active/media HTML is unsupported": "Используйте общий include article-figure; активный HTML и прямая вставка медиа не поддерживаются",
+      "Only the documented shared figure include is allowed": "Разрешён только документированный общий include рисунка",
+      "Private paths or operational metadata must remain in FELab": "Частные пути и служебные метаданные должны оставаться в FELab",
+      "Use H2 sections beneath the shared H1 title": "Используйте разделы H2 под общим заголовком H1",
+      "Unmatched delimiters or LaTeX outside dollar math": "Непарные разделители или LaTeX вне формулы с разделителями $",
+      "math: true is required": "Требуется поле math: true",
+      "schema_version: 1 is required for new article packages": "Для новых комплектов требуется schema_version: 1",
+      "Preview commit does not match the checked commit": "Коммит предпросмотра не совпадает с проверяемым коммитом"
+    },
     "checks": {"source": "Контракт исходных файлов", "build": "Сборка Jekyll", "output": "Результат сборки", "browser": "Браузер"},
     "states": {"pass": "пройдено", "fail": "ошибка", "not_run": "не выполнено"},
     "severity": {"error": "блокирующая ошибка", "warning": "предупреждение", "editor": "вопрос редактору"},
