@@ -16,8 +16,11 @@ export async function runShowcaseChecks({browser, origin, evidence, axe, report,
     assert.equal(await page.locator('#book-algebra [data-edition="ebook"] a').first().getAttribute('href'), 'https://web.tribute.tg/p/byD');
     assert.equal(await page.locator('#book-algebra [data-edition="gift"] a').first().getAttribute('href'), 'https://www.avito.ru/moskva/knigi_i_zhurnaly/kniga_bibliya_matematika_ot_mansura_gilmullina_8302534325');
     assert.equal(await page.locator('#book-calendar-2026 .book-offer a').getAttribute('href'), 'https://web.tribute.tg/p/zvp');
-    await page.locator('.book-gallery img').evaluateAll(images => images.forEach(image => { image.loading = 'eager'; }));
-    await page.waitForFunction(() => [...document.querySelectorAll('.book-gallery img')].every(image => image.complete && image.naturalWidth > 0));
+    for (const image of await page.locator('.book-gallery img').all()) {
+      await image.scrollIntoViewIfNeeded();
+      await image.evaluate(image => image.decode());
+      assert.ok(await image.evaluate(image => image.naturalWidth > 0 && image.getBoundingClientRect().width > 0));
+    }
     const cover = page.locator('#book-algebra .book-cover button');
     await cover.click();
     assert.equal(await page.locator('#image-viewer').evaluate(dialog => dialog.open), true);
@@ -29,6 +32,8 @@ export async function runShowcaseChecks({browser, origin, evidence, axe, report,
     const audit = await page.evaluate(async () => window.axe.run(document, {runOnly: {type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa']}}));
     report.accessibility.push({name: `Showcase ${language} ${theme} ${width}`, violations: audit.violations});
     assert.deepEqual(audit.violations.map(item => ({id: item.id, targets: item.nodes.map(node => node.target)})), []);
+    await page.evaluate(() => window.scrollTo(0, 0));
+    await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
     await page.screenshot({path: `${evidence}/publications-${language}-${theme}-${width}.jpg`, fullPage: true});
     checked(`Showcase ${language} ${theme} ${width}: five works, seven real images, edition links, no prices, cover zoom and WCAG AA`);
     await context.close();
