@@ -52,6 +52,7 @@ jobs:
             test-results/article-screenshots
           if-no-files-found: error
           retention-days: 14
+          overwrite: true
   verify:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
@@ -91,6 +92,7 @@ jobs:
           path: _site
           if-no-files-found: error
           retention-days: 14
+          overwrite: true
       - name: Save browser evidence
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
@@ -99,3 +101,4 @@ jobs:
           path: test-results
           if-no-files-found: warn
           retention-days: 14
+          overwrite: true
