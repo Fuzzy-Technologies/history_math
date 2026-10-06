@@ -1,5 +1,23 @@
 {
   "en": {
+    "checks": {"source": "Source contract", "build": "Jekyll build", "output": "Output", "browser": "Browser"},
+    "states": {"pass": "passed", "fail": "failed", "not_run": "not executed"},
+    "severity": {"error": "blocking error", "warning": "warning", "editor": "editorial question"},
+    "pr": {
+      "selection": {
+        "historical_text": "Selected as the primarily textual historical biography in the archival pilot.",
+        "formula_article": "Selected to exercise mathematical formulas, superscripts and historical numerical claims.",
+        "numerical_table": "Selected for its image table, arithmetic examples and complete system of equations.",
+        "matrix_illustration": "Selected for its illustrated 5 × 5 matrix and a legacy DOC companion requiring additional manual review.",
+        "complex_layout": "Selected for its complex DOCX research layout, historical illustrations and number-circle proof.",
+        "default": "Selected from the author archive for the publication preparation pilot."
+      },
+      "publication": "Known earlier publication", "unknown": "not established", "none": "No recorded editorial questions",
+      "converted": "The complete canonical author text, equations, figures, captions, existing notes and bibliography were transferred. A public reconciliation report is included; private source hashes and fragment evidence remain in FELab. The page is a review draft.",
+      "commit": "Checked commit", "questions": "Questions for the editor", "preview": "Open the current Actions run", "artifact": "Download and serve the artifact", "page": "Article path inside the review preview",
+      "dependency": "Temporary base: the infrastructure branch in", "retarget": "After the owner accepts infrastructure into develop, retarget this independent article PR to develop and rerun its checks.",
+      "noPublication": "This PR requests editorial review. It does not authorize a merge or website publication."
+    },
     "pass": "Technical checks passed; editorial review pending.",
     "fail": "Technical checks have blocking errors.",
     "incomplete": "Required technical checks were not completed.",
@@ -23,6 +41,24 @@
     "HM_EDITOR": "Question for the editor; technical validation does not resolve it."
   },
   "ru": {
+    "checks": {"source": "Контракт исходных файлов", "build": "Сборка Jekyll", "output": "Результат сборки", "browser": "Браузер"},
+    "states": {"pass": "пройдено", "fail": "ошибка", "not_run": "не выполнено"},
+    "severity": {"error": "блокирующая ошибка", "warning": "предупреждение", "editor": "вопрос редактору"},
+    "pr": {
+      "selection": {
+        "historical_text": "Материал выбран как преимущественно текстовая историческая биография для архивного пилота.",
+        "formula_article": "Материал выбран для проверки переноса формул, степеней и исторических числовых утверждений.",
+        "numerical_table": "Материал выбран благодаря таблице в рисунке, числовым примерам и полному решению системы уравнений.",
+        "matrix_illustration": "Материал выбран благодаря иллюстрированной матрице 5 × 5 и сопутствующему старому DOC, требующему дополнительной ручной проверки.",
+        "complex_layout": "Материал выбран благодаря сложной вёрстке исследовательского DOCX, историческим иллюстрациям и доказательству для числового круга.",
+        "default": "Материал выбран из авторского архива для пилота подготовки публикаций."
+      },
+      "publication": "Известная прежняя публикация", "unknown": "не установлена", "none": "Редакторские вопросы не зарегистрированы",
+      "converted": "Перенесены полный канонический авторский текст, формулы, рисунки, подписи, имеющиеся примечания и библиография. Публичный отчёт сверки включён в PR; частные контрольные суммы и сопоставление фрагментов остаются в FELab. Страница имеет статус черновика для ревью.",
+      "commit": "Проверенный коммит", "questions": "Вопросы редактору", "preview": "Откройте актуальный запуск Actions", "artifact": "Скачайте и откройте через локальный сервер артефакт", "page": "Путь статьи внутри предпросмотра",
+      "dependency": "Временная база — инфраструктурная ветка в", "retarget": "После принятия владельцем инфраструктуры в develop переключите базу этого независимого PR на develop и повторите проверки.",
+      "noPublication": "PR предназначен для редакторского ревью. Слияние и выпуск статьи на сайт не выполняются автоматически."
+    },
     "pass": "Технические проверки пройдены; ожидается редакторское ревью.",
     "fail": "Технические проверки выявили блокирующие ошибки.",
     "incomplete": "Обязательные технические проверки не выполнены.",

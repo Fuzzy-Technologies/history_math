@@ -25,6 +25,7 @@ export function checkArticle(text, file, root, identities = new Set()) {
   let article;
   try { article = parseArticle(text); } catch (error) { add('HM_METADATA', error.message); return {findings}; }
   const {data, body, bodyLine} = article;
+  const metadataLine = value => text.slice(0, text.indexOf(String(value))).split('\n').length;
   if (!validate(data)) for (const error of validate.errors) add('HM_METADATA', `${error.instancePath || '/'} ${error.message}`);
   if (!data || typeof data !== 'object') return {findings};
   if (data.lang === 'ru' !== String(data.permalink).startsWith('/ru/')) add('HM_METADATA', 'lang / permalink');
@@ -50,7 +51,7 @@ export function checkArticle(text, file, root, identities = new Set()) {
     if (figures.has(figure.id)) add('HM_IDENTIFIER', figure.id);
     figures.set(figure.id, figure);
     if (['alt', 'caption', 'source', 'rights_basis'].some(key => typeof figure[key] !== 'string' || !figure[key].trim())) add('HM_FIGURE', figure.id);
-    safeAsset(figure.path, 1);
+    safeAsset(figure.path, metadataLine(figure.path));
   }
   const used = new Set();
   const clean = body.replace(/```[\s\S]*?```|`[^`\n]*`/g, match => match.replace(/[^\n]/g, ' '));
@@ -74,7 +75,10 @@ export function checkArticle(text, file, root, identities = new Set()) {
     if (!/^(?:https:\/\/|mailto:|#)/.test(match[1])) add('HM_PATH', match[1], lineAt(match.index));
   }
   const references = new Set([...clean.matchAll(/^\[([^\]^]+)\]:\s+\S/gm)].map(x => x[1].toLowerCase()));
-  for (const match of clean.matchAll(/\[[^\]]+\]\[([^\]]*)\]/g)) if (!references.has(match[1].toLowerCase())) add('HM_LINK', `[${match[1]}]`, lineAt(match.index));
+  for (const match of clean.matchAll(/\[([^\]]+)\]\[([^\]]*)\]/g)) {
+    const reference = (match[2] || match[1]).toLowerCase();
+    if (!references.has(reference)) add('HM_LINK', `[${reference}]`, lineAt(match.index));
+  }
   const mathPattern = /\$\$([\s\S]*?)\$\$|(?<![\\$])\$(?!\$)([^\n$]*?)\$(?!\$)/g;
   let formulaCount = 0;
   const remaining = clean.replace(mathPattern, (match, display, inline, offset) => {
@@ -106,7 +110,9 @@ export function checkSources(root, files = articleFiles(root)) {
   const articles = [];
   for (const file of files) {
     const text = readFileSync(resolve(root, file), 'utf8');
-    const parsed = parseArticle(text);
+    let parsed;
+    try { parsed = parseArticle(text); }
+    catch (error) { findings.push({code: 'HM_METADATA', severity: 'error', file, line: 1, detail: error.message}); continue; }
     if (parsed.data.schema_version !== 1) {
       if (!/^site\/_articles\/demo-(?:abacus|area|geometry|reading|notation)\.md$/.test(file)) findings.push({code: 'HM_METADATA', severity: 'error', file, line: 1, detail: 'schema_version: 1 is required for new article packages'});
       continue;

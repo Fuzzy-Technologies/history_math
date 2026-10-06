@@ -17,8 +17,8 @@ export function humanReport(report) {
   const m = messages[report.language];
   const result = overall(report);
   return `${m[result]}\n\n${m.commit}: \`${report.commit}\`\n\n` +
-    Object.entries(report.checks).map(([key, state]) => `- ${key}: ${state}`).join('\n') +
+    Object.entries(report.checks).map(([key, state]) => `- ${m.checks[key]}: ${m.states[state]}`).join('\n') +
     `\n\n${m.issues}:\n\n` + (report.findings.length ? report.findings.map(item =>
-      `- **${item.code}** (${item.severity}) \`${item.file ?? ''}${item.line ? ':' + item.line : ''}\`: ${m[item.code]} ${item.detail ?? ''}`).join('\n') : '—') +
+      `- **${item.code}** (${m.severity[item.severity]}) \`${item.file ?? ''}${item.line ? ':' + item.line : ''}\`: ${m[item.code]} ${item.detail ?? ''}`).join('\n') : '—') +
     `\n\n${m.preview}: ${report.artifact_url ?? 'test-results/article-preview/'}\n`;
 }

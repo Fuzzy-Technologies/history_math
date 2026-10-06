@@ -5,6 +5,7 @@ import {resolve} from 'node:path';
 import {checkArticle, checkContract} from '../scripts/article-checks.mjs';
 import {reportLanguage, overall, humanReport} from '../scripts/article-messages.mjs';
 import {updateReportComment} from '../scripts/article-comment.mjs';
+import {articlePrBody} from '../scripts/article-pr.mjs';
 
 const root = resolve('.');
 const text = readFileSync('templates/article.md', 'utf8').replace(/\r\n/g, '\n');
@@ -47,6 +48,16 @@ test('required checks never pass when absent, skipped or unavailable', () => {
   assert.equal(overall({checks: {source: 'pass'}, findings: []}), 'incomplete');
   assert.equal(overall({checks: {source: 'pass', build: 'pass', output: 'pass', browser: 'not_run'}, findings: []}), 'incomplete');
   assert.equal(overall({checks: {source: 'pass', build: 'pass', output: 'pass', browser: 'pass'}, findings: [{severity: 'editor'}]}), 'pass');
+});
+
+test('automated descriptions use the head suffix while preserving article content language', () => {
+  const input = {article: {title: 'Русская статья', lang: 'ru', permalink: '/ru/articles/example/'}, review: {}, report: {checks: {source: 'pass'}, findings: []}, commit: 'sha', runUrl: 'https://github.com/example/repo/actions', infrastructureUrl: 'https://github.com/example/repo/pull/1'};
+  assert.match(articlePrBody({...input, branch: 'feature/article-ru'}), /Обязательные технические проверки не выполнены/);
+  for (const branch of ['feature/article-en', 'feature/ru-article', 'feature/article-ru-fix']) {
+    const body = articlePrBody({...input, branch});
+    assert.match(body, /Required technical checks were not completed/);
+    assert.match(body, /Русская статья/);
+  }
 });
 test('one bot comment is updated and stale runs cannot replace newer fork heads', async () => {
   const comments = []; let created = 0; let updated = 0; let head = 'sha1';
