@@ -42,7 +42,7 @@ def CheckSite(sitePath, basePath):
     parsed = {}
     for path in sitePath.rglob("*.html"):
         page = PageParser()
-        page.feed(path.read_text())
+        page.feed(path.read_text(encoding="utf-8"))
         parsed[path] = page
 
     def Resolve(url, source):
