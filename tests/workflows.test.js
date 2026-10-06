@@ -94,6 +94,8 @@ test('the actual privileged article comment job has no checkout and rejects stal
   await execute(); await execute();
   assert.equal(created, 1); assert.equal(updated, 1);
   assert.match(comments[0].body, /Технические проверки пройдены/);
+  assert.ok(comments[0].body.includes('\n\n'));
+  assert.ok(!comments[0].body.includes('\\n'));
   runId = 9; await execute(); assert.equal(updated, 1);
   currentSha = 'new-head'; await execute(); assert.equal(updated, 1);
   context.eventName = 'push'; context.ref = 'refs/heads/untrusted';
