@@ -25,7 +25,8 @@
   <meta property="og:type" content="{% if page.layout == 'article' %}article{% else %}website{% endif %}">
   <meta property="og:locale" content="{% if ru %}ru_RU{% else %}en_US{% endif %}">
   {% if page.cover_image %}<meta property="og:image" content="{{ page.cover_image | absolute_url }}">{% endif %}
-  <link rel="icon" href="{{ '/assets/images/mark.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="icon" href="{{ '/assets/images/favicon-m2-32.png' | relative_url }}?v={{ asset_version }}" type="image/png" sizes="32x32">
+  <link rel="icon" href="{{ '/assets/images/favicon-m2.svg' | relative_url }}?v={{ asset_version }}" type="image/svg+xml" sizes="any">
   <link rel="preload" href="{{ '/assets/fonts/pt-serif-regular.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}?v={{ asset_version }}">
   <script type="module" src="{{ '/assets/app.js' | relative_url }}?v={{ asset_version }}"></script>
