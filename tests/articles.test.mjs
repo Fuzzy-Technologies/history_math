@@ -58,6 +58,15 @@ test('required checks never pass when absent, skipped or unavailable', () => {
   assert.equal(overall({checks: {source: 'pass', build: 'pass', output: 'pass', browser: 'pass'}, findings: [{severity: 'editor'}]}), 'pass');
 });
 
+test('own diagnostic actions use local dictionaries while codes and tool output stay stable', () => {
+  const report = {language: 'ru', commit: 'sha', checks: {source: 'fail'}, findings: [{code: 'HM_METADATA', severity: 'error', detail: 'author must display the authors array'}, {code: 'HM_REQUIRED', severity: 'warning', detail: 'browser'}]};
+  assert.match(humanReport(report), /Поле author должно отображать список authors/);
+  assert.match(humanReport(report), /HM_METADATA/);
+  assert.ok(!humanReport(report).includes('author must display'));
+  assert.match(humanReport({...report, language: 'en'}), /author must display/);
+  assert.ok(Buffer.byteLength(readFileSync('schemas/messages.json')) < 24000);
+});
+
 test('automated descriptions use the head suffix while preserving article content language', () => {
   const input = {article: {title: 'Русская статья', lang: 'ru', permalink: '/ru/articles/example/'}, review: {}, report: {checks: {source: 'pass'}, findings: []}, commit: 'sha', runUrl: 'https://github.com/example/repo/actions', infrastructureUrl: 'https://github.com/example/repo/pull/1'};
   assert.match(articlePrBody({...input, branch: 'feature/article-ru'}), /Обязательные технические проверки не выполнены/);
