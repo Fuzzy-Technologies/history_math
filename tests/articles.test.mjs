@@ -7,7 +7,7 @@ import {reportLanguage, overall, humanReport} from '../scripts/article-messages.
 import {updateReportComment} from '../scripts/article-comment.mjs';
 
 const root = resolve('.');
-const text = readFileSync('templates/article.md', 'utf8');
+const text = readFileSync('templates/article.md', 'utf8').replace(/\r\n/g, '\n');
 const errors = input => checkArticle(input, 'article.md', root).findings.filter(x => x.severity === 'error');
 test('filled template and minimal example satisfy the pinned contract', () => {
   assert.deepEqual(errors(text), []);
