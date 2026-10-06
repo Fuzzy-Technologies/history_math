@@ -11,6 +11,7 @@ export function articlePrBody({article, review, report, branch, commit, infrastr
     m[overall(report)], '', `${p.questions}:`, '',
     ...(review.editorial_questions?.length ? review.editorial_questions.map(question => `- ${question}`) : [`- ${p.none}`]), '',
     `${p.preview}: ${runUrl}. ${p.artifact} \`article-review-${commit}\`.`,
+    p.serve,
     `${p.page}: \`${article.permalink}\`.`, '',
     `${p.dependency} ${infrastructureUrl}. ${p.retarget}`, '', p.noPublication];
   return lines.join('\n');

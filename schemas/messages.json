@@ -1,8 +1,21 @@
 {
   "en": {
-    "checks": {"source": "Source contract", "build": "Jekyll build", "output": "Output", "browser": "Browser"},
-    "states": {"pass": "passed", "fail": "failed", "not_run": "not executed"},
-    "severity": {"error": "blocking error", "warning": "warning", "editor": "editorial question"},
+    "checks": {
+      "source": "Source contract",
+      "build": "Jekyll build",
+      "output": "Output",
+      "browser": "Browser"
+    },
+    "states": {
+      "pass": "passed",
+      "fail": "failed",
+      "not_run": "not executed"
+    },
+    "severity": {
+      "error": "blocking error",
+      "warning": "warning",
+      "editor": "editorial question"
+    },
     "pr": {
       "selection": {
         "historical_text": "Selected as the primarily textual historical biography in the archival pilot.",
@@ -12,11 +25,19 @@
         "complex_layout": "Selected for its complex DOCX research layout, historical illustrations and number-circle proof.",
         "default": "Selected from the author archive for the publication preparation pilot."
       },
-      "publication": "Known earlier publication", "unknown": "not established", "none": "No recorded editorial questions",
+      "publication": "Known earlier publication",
+      "unknown": "not established",
+      "none": "No recorded editorial questions",
       "converted": "The complete canonical author text, equations, figures, captions, existing notes and bibliography were transferred. A public reconciliation report is included; private source hashes and fragment evidence remain in FELab. The page is a review draft.",
-      "commit": "Checked commit", "questions": "Questions for the editor", "preview": "Open the current Actions run", "artifact": "Download and serve the artifact", "page": "Article path inside the review preview",
-      "dependency": "Temporary base: the infrastructure branch in", "retarget": "After the owner accepts infrastructure into develop, retarget this independent article PR to develop and rerun its checks.",
-      "noPublication": "This PR requests editorial review. It does not authorize a merge or website publication."
+      "commit": "Checked commit",
+      "questions": "Questions for the editor",
+      "preview": "Open the current Actions run",
+      "artifact": "Download and serve the artifact",
+      "page": "Article path inside the review preview",
+      "dependency": "Temporary base: the infrastructure branch in",
+      "retarget": "After the owner accepts infrastructure into develop, retarget this independent article PR to develop and rerun its checks.",
+      "noPublication": "This PR requests editorial review. It does not authorize a merge or website publication.",
+      "serve": "Unzip the artifact. From the infrastructure checkout run `node scripts/serve-review.mjs <unzipped-artifact>/article-preview` and open `http://127.0.0.1:4173/history_math` followed by the article path below. The artifact is retained for 14 days."
     },
     "pass": "Technical checks passed; editorial review pending.",
     "fail": "Technical checks have blocking errors.",
@@ -57,9 +78,22 @@
       "schema_version: 1 is required for new article packages": "Для новых комплектов требуется schema_version: 1",
       "Preview commit does not match the checked commit": "Коммит предпросмотра не совпадает с проверяемым коммитом"
     },
-    "checks": {"source": "Контракт исходных файлов", "build": "Сборка Jekyll", "output": "Результат сборки", "browser": "Браузер"},
-    "states": {"pass": "пройдено", "fail": "ошибка", "not_run": "не выполнено"},
-    "severity": {"error": "блокирующая ошибка", "warning": "предупреждение", "editor": "вопрос редактору"},
+    "checks": {
+      "source": "Контракт исходных файлов",
+      "build": "Сборка Jekyll",
+      "output": "Результат сборки",
+      "browser": "Браузер"
+    },
+    "states": {
+      "pass": "пройдено",
+      "fail": "ошибка",
+      "not_run": "не выполнено"
+    },
+    "severity": {
+      "error": "блокирующая ошибка",
+      "warning": "предупреждение",
+      "editor": "вопрос редактору"
+    },
     "pr": {
       "selection": {
         "historical_text": "Материал выбран как преимущественно текстовая историческая биография для архивного пилота.",
@@ -69,11 +103,19 @@
         "complex_layout": "Материал выбран благодаря сложной вёрстке исследовательского DOCX, историческим иллюстрациям и доказательству для числового круга.",
         "default": "Материал выбран из авторского архива для пилота подготовки публикаций."
       },
-      "publication": "Известная прежняя публикация", "unknown": "не установлена", "none": "Редакторские вопросы не зарегистрированы",
+      "publication": "Известная прежняя публикация",
+      "unknown": "не установлена",
+      "none": "Редакторские вопросы не зарегистрированы",
       "converted": "Перенесены полный канонический авторский текст, формулы, рисунки, подписи, имеющиеся примечания и библиография. Публичный отчёт сверки включён в PR; частные контрольные суммы и сопоставление фрагментов остаются в FELab. Страница имеет статус черновика для ревью.",
-      "commit": "Проверенный коммит", "questions": "Вопросы редактору", "preview": "Откройте актуальный запуск Actions", "artifact": "Скачайте и откройте через локальный сервер артефакт", "page": "Путь статьи внутри предпросмотра",
-      "dependency": "Временная база — инфраструктурная ветка в", "retarget": "После принятия владельцем инфраструктуры в develop переключите базу этого независимого PR на develop и повторите проверки.",
-      "noPublication": "PR предназначен для редакторского ревью. Слияние и выпуск статьи на сайт не выполняются автоматически."
+      "commit": "Проверенный коммит",
+      "questions": "Вопросы редактору",
+      "preview": "Откройте актуальный запуск Actions",
+      "artifact": "Скачайте и откройте через локальный сервер артефакт",
+      "page": "Путь статьи внутри предпросмотра",
+      "dependency": "Временная база — инфраструктурная ветка в",
+      "retarget": "После принятия владельцем инфраструктуры в develop переключите базу этого независимого PR на develop и повторите проверки.",
+      "noPublication": "PR предназначен для редакторского ревью. Слияние и выпуск статьи на сайт не выполняются автоматически.",
+      "serve": "?????????? ????????. ?? ????????????????? checkout ????????? `node scripts/serve-review.mjs <?????????????-????????>/article-preview` ? ???????? `http://127.0.0.1:4173/history_math` ? ????????? ???? ????? ??????. ???????? ???????? 14 ????."
     },
     "pass": "Технические проверки пройдены; ожидается редакторское ревью.",
     "fail": "Технические проверки выявили блокирующие ошибки.",

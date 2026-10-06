@@ -1,3 +1,4 @@
+import {recordRequestFailure} from './request-failures.mjs';
 import assert from 'node:assert/strict';
 
 export async function runCarouselChecks({browser, origin, evidence, axe, report, checked}) {
@@ -5,7 +6,7 @@ export async function runCarouselChecks({browser, origin, evidence, axe, report,
   async function track(context) {
     const page = await context.newPage();
     page.on('pageerror', error => report.consoleErrors.push(error.message));
-    page.on('requestfailed', request => report.requestFailures.push(request.url()));
+    page.on('requestfailed', request => recordRequestFailure(report, request));
     return page;
   }
   async function staysAt(page, carousel, expected, label) {
