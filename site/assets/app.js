@@ -98,7 +98,7 @@ if (viewer && typeof viewer.showModal === 'function') {
       if (viewer.open && current === request) caption.textContent = viewer.dataset.errorLabel;
     }
   }
-  document.querySelectorAll('.hero-figure img, .english-hero > img, .prose img, .about-teaser > img').forEach(image => {
+  document.querySelectorAll('.hero-figure img, .english-hero > img, .prose img, .about-teaser > img, .book-gallery img').forEach(image => {
     if (image.closest('a, button')) return;
     const trigger = element('button', 'image-trigger');
     trigger.type = 'button';
