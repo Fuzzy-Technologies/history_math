@@ -1,0 +1,25 @@
+{% assign labels = site.data.publications.ui[page.lang] %}
+<section class="page-heading"><p class="eyebrow">{{ page.eyebrow }}</p><h1>{{ page.title }}</h1><p class="lead">{{ page.description }}</p><div class="showcase-intro"><p class="quiet">{{ labels.language_note }}</p><a href="{{ site.data.publications.shop_url }}">{{ labels.shop_label }} <span aria-hidden="true">↗</span></a></div></section>
+<div class="publication-list">
+{% for book in site.data.publications.items %}
+  <article class="showcase-book" id="book-{{ book.id }}" aria-labelledby="title-{{ book.id }}">
+    <div class="book-gallery">
+      <figure class="book-cover"><img src="{{ '/assets/images/publications/' | append: book.cover | relative_url }}" alt="{{ labels.cover_label | append: book.title[page.lang] | escape }}" width="{{ book.cover_width }}" height="{{ book.cover_height }}" loading="lazy" decoding="async"></figure>
+      {% if book.gallery %}<div class="book-variants">{% for image in book.gallery %}<figure><img src="{{ '/assets/images/publications/' | append: image.image | relative_url }}" alt="{{ image.caption[page.lang] | append: ': ' | append: book.title[page.lang] | escape }}" width="{{ image.width }}" height="{{ image.height }}" loading="lazy" decoding="async"><figcaption>{{ image.caption[page.lang] }}</figcaption></figure>{% endfor %}</div>{% endif %}
+    </div>
+    <div class="book-copy">
+      <p class="eyebrow">{{ book.kind[page.lang] }}</p><h2 id="title-{{ book.id }}">{{ book.title[page.lang] }}</h2>
+      <p class="book-subtitle">{{ book.subtitle[page.lang] }}</p><p class="book-author">{{ book.author[page.lang] }}</p><p>{{ book.description[page.lang] }}</p>
+      <div class="book-offers" role="group" aria-label="{{ labels.editions_label }}">
+      {% assign offers = book.offers | where: 'enabled', true %}{% for offer in offers %}
+        <section class="book-offer" data-edition="{{ offer.id }}" aria-labelledby="offer-{{ book.id }}-{{ offer.id }}">
+          <h3 id="offer-{{ book.id }}-{{ offer.id }}">{{ offer.title[page.lang] }}</h3>
+          <div class="book-links">{% for link in offer.links %}<a class="button{% unless forloop.first %} button-secondary{% endunless %}" href="{{ link.url }}">{{ link.label[page.lang] }} <span aria-hidden="true">↗</span></a>{% endfor %}</div>
+          {% if offer.note %}<p class="quiet">{{ offer.note[page.lang] }}</p>{% endif %}
+        </section>
+      {% endfor %}
+      </div>
+    </div>
+  </article>
+{% endfor %}
+</div>
