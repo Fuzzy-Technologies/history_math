@@ -4,7 +4,7 @@ Version: 1.0. Project: Mathematics with Mansur (`history_math`). This owner-cont
 
 ## Architecture and authority
 
-The pipeline is editorial preparation in NAS/FELab → approved public Markdown/assets → Git → static Jekyll build. NAS remains the source of truth for editorial originals. Git stores website code, public publication copies, checks and documentation. No SQLite/FTS, locks, NAS paths, local session state or full `.felab.json` may be exported. The owner-authorized archival pilot adds FELab preparation and review exports as described in [ADR 0001](docs/adr/0001-archive-article-pilot.md); it does not authorize production publication.
+The pipeline reads existing FELab metadata and NAS originals, prepares public Markdown/assets in this repository, and builds them through Jekyll. FELab is used only as a read-only source of existing article metadata and digests; images come from each original article's corresponding NAS directories. Do not add code, branches, targets, production Works or cache records to the private FELab for this site. NAS remains the source of truth for original author material. This repository owns the article schema, templates, checks, documentation and the single editable publication derivative. Private reconciliation evidence stays in ignored local files here. No SQLite/FTS, locks, NAS paths, local session state or full `.felab.json` may be exported. [ADR 0001](docs/adr/0001-archive-article-pilot.md) describes the owner-authorized review pilot; production publication still requires human approval.
 
 ## Change process
 

@@ -8,7 +8,7 @@ authors: [Example author]
 author: Example author
 lang: en
 translation_key: example-minimal
-description: A structural example; replace the example facts before export.
+description: A structural example; replace the example facts before preparing a real article.
 type: note
 tags: [example]
 math: false

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "urn:felab:history-math:article:1",
+  "$id": "urn:history-math:article:1",
   "title": "History Math publication package v1",
   "type": "object",
   "additionalProperties": false,
