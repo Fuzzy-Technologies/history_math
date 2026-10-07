@@ -12,7 +12,7 @@ This implements [ADR 0001](adr/0001-archive-article-pilot.md). The mandatory gat
 | HM_STRUCTURE | Missing sections, active/raw media HTML, unsupported Liquid or private operational data | None | Unparseable front matter blocks assessment |
 | HM_LINK | Missing internal anchor, footnote or reference definition | None | Actual rendered anchors additionally require the browser gate |
 | HM_MATH | Unbalanced delimiters, unsupported KaTeX syntax or missing math opt-in | A suspected mathematical mistake is separately HM_EDITOR | Missing parser/browser cannot establish a PASS |
-| HM_CONTRACT | Snapshot differs from its pinned SHA-256 | None | Missing schema/lock blocks validation |
+| HM_CONTRACT | Canonical site schema differs from its SHA-256, ID or owning-repository/path lock | None | Missing or unreadable schema/lock blocks validation |
 | HM_BUILD | Stock Jekyll returns an error | None | Missing tool or stale/unavailable preview is blocking; downstream gates remain not_run |
 | HM_OUTPUT | Broken generated URLs/assets/language/index contracts | None | Missing build/tool prevents a successful output gate |
 | HM_BROWSER | Failed request/console, missing image/anchor, formula count/render failure or overflow at either viewport | None | Missing browser/preview blocks the gate; it is never silently skipped |
@@ -24,4 +24,4 @@ Every finding includes its source file/line when applicable, a stable code, seve
 
 The source-only command intentionally leaves the other mandatory gates `not_run`. Its process can succeed as a partial source check while its overall report remains incomplete. The full command exits successfully only when all four gates pass. The trusted comment job additionally requires the complete `Prototype checks` workflow to succeed, including its existing `verify` job. Skipped, cancelled or absent mandatory work is incomplete. It updates one marked bot comment, checks the live head again before writing and rejects older run IDs/attempts.
 
-Technical success is “Technical checks passed; editorial review pending.” Automatic build/render checks do not prove complete transfer or correct mathematics. The private FELab ledger records which source fragments, numerical table cells, formulas and image captions were actually compared; remaining manual questions stay explicit. English and fallback language behavior are regression-tested with Russian content rather than fabricated article translations.
+Technical success is “Technical checks passed; editorial review pending.” Automatic build/render checks do not prove complete transfer or correct mathematics. Private evidence in ignored local files in the site project records which source fragments, numerical table cells, formulas and image captions were actually compared; remaining manual questions stay explicit. FELab metadata and NAS originals/images are read only. English and fallback language behavior are regression-tested with Russian content.
