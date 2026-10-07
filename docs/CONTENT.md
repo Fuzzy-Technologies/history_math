@@ -1,6 +1,6 @@
 # Public content and export contract
 
-For archival publication packages, [ADR 0001](adr/0001-archive-article-pilot.md) and [the preparation procedure](ARTICLE_PREPARATION.md) define the implemented v1 contract. FELab owns its canonical schema; the site validates the pinned snapshot. The fields below describe the retained legacy demo contract. Real archival packages additionally use `schema_version`, `article_id`, `authors`, `rights_basis` and structured `figures`. Draft v1 packages have no website placement date. Opt-in review artifacts do not change the production draft gate.
+For archival publication packages, [ADR 0001](adr/0001-archive-article-pilot.md) and [the preparation procedure](ARTICLE_PREPARATION.md) define the implemented v1 contract. This repository owns the canonical schema in `schemas/article-v1.schema.json`; the source gate checks its integrity lock, and both filled templates use that schema. FELab metadata and NAS source articles/images are read only. The fields below describe the retained legacy demo contract. Real archival packages additionally use `schema_version`, `article_id`, `authors`, `rights_basis` and structured `figures`. Draft v1 packages have no website placement date. Opt-in review artifacts do not change the production draft gate.
 
 ## Add an article
 
@@ -85,6 +85,6 @@ The build generates compact `assets/search-ru.json` and `assets/search-en.json` 
 
 Fresh materials are sorted by publication date and remain stable. The archive rotates a three-item subset without duplicate URLs or repeated subsets when alternatives exist. Its reserved desktop grid and mobile row heights prevent rotation shifts. Publication anniversaries match month/day in previous years; historical birth/event dates are not used. If no date matches, a plain archive alternative is shown. Demos remain labeled, including when their illustrative dates match.
 
-## Future FELab export boundary
+## Archive reading and publication boundary
 
-FELab's `HistoryMathPreparation` implements the archive-linked public export described in ADR 0001. It omits private research, local SQLite/FTS, sessions, locks, logs, NAS paths, full internal metadata and large source media. Safe public IDs preserve provenance without leaking internal locations. Editorial review precedes approved website publication; draft Git copies are explicitly authorized review material. This is an explicit export, without live NAS synchronization.
+Read existing FELab metadata and full articles and images from their corresponding NAS directories, then prepare and review the publication derivative in this site repository. Do not modify FELab or NAS. Omit private research, local SQLite/FTS, sessions, locks, logs, NAS paths, full internal metadata and large source media. Safe public IDs preserve provenance without leaking internal locations. Keep private reconciliation evidence in ignored local files here. Editorial review precedes approved website publication; draft Git copies are explicitly authorized review material. There is no live NAS synchronization or second editable derivative.
