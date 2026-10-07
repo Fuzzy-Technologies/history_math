@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
-import {resolve} from 'node:path';
+import {readFileSync, writeFileSync, mkdirSync, mkdtempSync, rmSync} from 'node:fs';
+import {resolve, sep} from 'node:path';
 import {checkArticle, checkContract} from '../scripts/article-checks.mjs';
 import {reportLanguage, overall, humanReport} from '../scripts/article-messages.mjs';
 import {updateReportComment} from '../scripts/article-comment.mjs';
@@ -10,10 +10,36 @@ import {articlePrBody} from '../scripts/article-pr.mjs';
 const root = resolve('.');
 const text = readFileSync('templates/article.md', 'utf8').replace(/\r\n/g, '\n');
 const errors = input => checkArticle(input, 'article.md', root).findings.filter(x => x.severity === 'error');
-test('filled template and minimal example satisfy the pinned contract', () => {
+test('filled template and minimal example satisfy the canonical site contract', () => {
   assert.deepEqual(errors(text), []);
   assert.deepEqual(errors(readFileSync('templates/minimal-article.md', 'utf8')), []);
   assert.deepEqual(checkContract(root), []);
+});
+test('the site contract rejects external ownership, changed schema bytes and missing locks', () => {
+  mkdirSync(resolve(root, 'test-results'), {recursive: true});
+  const scratch = mkdtempSync(resolve(root, 'test-results/contract-'));
+  assert.ok(scratch.startsWith(resolve(root, 'test-results') + sep));
+  try {
+    mkdirSync(resolve(scratch, 'schemas'));
+    const schemaFile = resolve(scratch, 'schemas/article-v1.schema.json');
+    const lockFile = resolve(scratch, 'schemas/contract-lock.json');
+    const original = readFileSync(resolve(root, 'schemas/article-v1.schema.json'));
+    const lock = JSON.parse(readFileSync(resolve(root, 'schemas/contract-lock.json')));
+    writeFileSync(schemaFile, original);
+    writeFileSync(lockFile, JSON.stringify(lock));
+    assert.deepEqual(checkContract(scratch), []);
+    writeFileSync(lockFile, JSON.stringify({...lock, repository: 'FELab'}));
+    assert.equal(checkContract(scratch)[0].code, 'HM_CONTRACT');
+    writeFileSync(lockFile, JSON.stringify(lock));
+    writeFileSync(schemaFile, Buffer.concat([original, Buffer.from('\n')]));
+    assert.equal(checkContract(scratch)[0].code, 'HM_CONTRACT');
+    writeFileSync(schemaFile, original);
+    rmSync(lockFile);
+    assert.equal(checkContract(scratch)[0].code, 'HM_CONTRACT');
+  } finally {
+    assert.ok(scratch.startsWith(resolve(root, 'test-results') + sep));
+    rmSync(scratch, {recursive: true});
+  }
 });
 test('missing metadata, asset, caption, reference and malformed formula block validation', () => {
   for (const [input, code] of [

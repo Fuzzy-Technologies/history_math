@@ -9,7 +9,7 @@ module HistoryMath
   ARTICLE_FIELDS = %w[layout title lang translation_key date type author description tags math status permalink].freeze
   TYPES = %w[essay problem instrument note].freeze
 
-  # The source gate uses Ajv; Jekyll interprets the same pinned schema keyword set.
+  # The source gate uses Ajv; Jekyll interprets the same canonical site schema.
   def self.schema_errors(value, schema, path = "metadata")
     errors = []
     types = {"object" => [Hash], "array" => [Array], "string" => [String], "boolean" => [TrueClass, FalseClass]}
