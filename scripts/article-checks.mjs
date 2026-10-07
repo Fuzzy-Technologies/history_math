@@ -74,7 +74,7 @@ export function checkArticle(text, file, root, identities = new Set()) {
   if (/<\/?(?:script|iframe|img|figure|table|style)\b/i.test(clean) || /!\[[^\]]*\]\(/.test(clean)) add('HM_STRUCTURE', 'Use shared article-figure includes; raw active/media HTML is unsupported');
   const withoutIncludes = clean.replace(/\{%\s*include\s+article-figure.html\s+id="[a-z0-9-]+"\s*%\}/g, '');
   if (/\{%|\{\{/.test(withoutIncludes)) add('HM_STRUCTURE', 'Only the documented shared figure include is allowed');
-  if (/\\\\[A-Za-z0-9-]+\\|[A-Za-z]:\\|\.felab\.json|runtime\.sqlite|ОПУБЛИКОВАТЬ В|ОПУБЛИКОВАТЬ ВТОРЫМ|ОПУБЛИКОВАТЬ ТРЕТЬИМ/.test(text)) add('HM_STRUCTURE', 'Private paths or operational metadata must remain in FELab');
+  if (/\\\\[A-Za-z0-9-]+\\|[A-Za-z]:\\|\.felab\.json|runtime\.sqlite|ОПУБЛИКОВАТЬ В|ОПУБЛИКОВАТЬ ВТОРЫМ|ОПУБЛИКОВАТЬ ТРЕТЬИМ/.test(text)) add('HM_STRUCTURE', 'Private paths or operational metadata must remain outside public Git');
   if (!/^##\s+/m.test(clean) || /^#\s+/m.test(clean)) add('HM_STRUCTURE', 'Use H2 sections beneath the shared H1 title');
   const anchors = new Set([...clean.matchAll(/\{#([A-Za-z][A-Za-z0-9_-]*)\}/g)].map(x => x[1]));
   for (const id of used) anchors.add(id);
@@ -105,9 +105,18 @@ export function checkArticle(text, file, root, identities = new Set()) {
 }
 
 export function checkContract(root) {
-  const lock = JSON.parse(readFileSync(resolve(root, 'schemas/contract-lock.json'), 'utf8').replace(/^\uFEFF/, ''));
-  const hash = createHash('sha256').update(readFileSync(resolve(root, 'schemas/article-v1.schema.json'))).digest('hex');
-  return hash === lock.sha256 ? [] : [{code: 'HM_CONTRACT', severity: 'error', file: 'schemas/article-v1.schema.json'}];
+  const failure = [{code: 'HM_CONTRACT', severity: 'error', file: 'schemas/article-v1.schema.json'}];
+  try {
+    const lock = JSON.parse(readFileSync(resolve(root, 'schemas/contract-lock.json'), 'utf8').replace(/^\uFEFF/, ''));
+    const bytes = readFileSync(resolve(root, 'schemas/article-v1.schema.json'));
+    const contract = JSON.parse(bytes);
+    const hash = createHash('sha256').update(bytes).digest('hex');
+    return lock.version === 1 && lock.repository === 'Fuzzy-Technologies/history_math'
+      && lock.canonical_path === 'schemas/article-v1.schema.json'
+      && contract.$id === 'urn:history-math:article:1' && hash === lock.sha256 ? [] : failure;
+  } catch {
+    return failure;
+  }
 }
 
 export function articleFiles(root) {
