@@ -91,6 +91,12 @@ export function checkArticle(text, file, root, identities = new Set()) {
     const reference = (match[2] || match[1]).toLowerCase();
     if (!references.has(reference)) add('HM_LINK', `[${reference}]`, lineAt(match.index));
   }
+  const visibleLinks = clean
+    .replace(/\]\(\s*<?https?:\/\/[^\s)]+(?:\s+"[^"\n]*")?\s*\)/gi, match => match.replace(/[^\n]/g, ' '))
+    .replace(/^ {0,3}\[[^\]^]+\]:[ \t]*(?:<https?:\/\/[^>\n]+>|https?:\/\/\S+)/gmi, match => match.replace(/[^\n]/g, ' '));
+  for (const match of visibleLinks.matchAll(/(?:https?:\/\/|www\.)[^\s<>]+/gi)) {
+    add('HM_LINK', 'Use descriptive link text instead of a visible URL', lineAt(match.index));
+  }
   const mathPattern = /\$\$([\s\S]*?)\$\$|(?<![\\$])\$(?!\$)([^\n$]*?)\$(?!\$)/g;
   let formulaCount = 0;
   const remaining = clean.replace(mathPattern, (match, display, inline, offset) => {

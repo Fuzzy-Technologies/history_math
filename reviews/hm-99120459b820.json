@@ -34,7 +34,8 @@
     "Internal file markers mapped to figure inventory or retained bibliographic references.",
     "Removed the placeholder section heading; selected existing archive images for card and social previews.",
     "Verified the two ones and the n² proof; preserved Utilius after inspecting the actual engraving; removed the unsupported translation and Iamblichus-circle attribution.",
-    "All three substantive comment blocks were already included. The unchanged proof is moved next to the problem; the Ignatiev biography and Iamblichus bibliography are grouped under Примечания. Existing captions and rejected-claim corrections are preserved."
+    "All three substantive comment blocks were already included. The unchanged proof is moved next to the problem; the Ignatiev biography and Iamblichus bibliography are grouped under Примечания. Existing captions and rejected-claim corrections are preserved.",
+    "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged."
   ],
   "review_version": 1,
   "approval": {
