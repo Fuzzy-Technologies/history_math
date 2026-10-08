@@ -17,7 +17,15 @@
     "notes_and_bibliography": "Existing notes, source links and bibliography preserved; research attachments stay private.",
     "automatic": "Source-contract checks and browser/build checks are recorded separately by CI.",
     "manual": "Full canonical text read; numeric table cells and formula transformations compared with the source. Editorial accuracy still requires review.",
-    "editorial_follow_up": "Owner-authorized editorial corrections are recorded in manual_changes and question resolutions; NAS/FELab originals and selected image bytes remain unchanged."
+    "editorial_follow_up": "Owner-authorized editorial corrections are recorded in manual_changes and question resolutions; NAS/FELab originals and selected image bytes remain unchanged.",
+    "comment_blocks": {
+      "checked_on": "2026-10-09",
+      "source_scope": "Complete original article and announcement; associated working documents checked where present.",
+      "markers_found": 1,
+      "nonempty_blocks": 1,
+      "summary": "The announcement comment overlaps the existing explanation. Its missing count of nine cells, including the shared zero in a 5 by 5 grid, is restored beside step 2 under Разгадка. Other steps, generalization and closing invitation are already included once.",
+      "companion_check": "The complete legacy Word text contains the 25 matrix values; they match the current table. Visual document review and the existing bibliography question remain open."
+    }
   },
   "manual_changes": [
     "Original title promoted to the shared page title; original section headings marked as H2.",
@@ -25,7 +33,8 @@
     "Internal file markers mapped to figure inventory or retained bibliographic references.",
     "All 25 matrix values transcribed into an accessible Markdown table.",
     "Removed the placeholder section heading; selected existing archive images for card and social previews.",
-    "Corrected magic-square terminology and minor grammar. Independently verified all 120 row/column selections have sum 57; bibliography and legacy DOC checks remain open."
+    "Corrected magic-square terminology and minor grammar. Independently verified all 120 row/column selections have sum 57; bibliography and legacy DOC checks remain open.",
+    "The announcement comment overlaps the existing explanation. Its missing count of nine cells, including the shared zero in a 5 by 5 grid, is restored beside step 2 under Разгадка. Other steps, generalization and closing invitation are already included once."
   ],
   "review_version": 1,
   "approval": {
