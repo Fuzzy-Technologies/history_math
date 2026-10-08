@@ -33,7 +33,8 @@
     "Image-table arithmetic transcribed with original row/column coordinates; long equations broken across aligned lines without changing operation order.",
     "Removed the placeholder section heading; selected existing archive images for card and social previews.",
     "Restored the original 3 × 4 table with a row-label column, checked both solution directions, and removed unsupported historical context.",
-    "All three comment slots are empty. No text is invented from research excerpts; existing solutions, table and bibliography remain intact. Rejected historical claims are not restored."
+    "All three comment slots are empty. No text is invented from research excerpts; existing solutions, table and bibliography remain intact. Rejected historical claims are not restored.",
+    "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged."
   ],
   "review_version": 1,
   "approval": {

@@ -41,6 +41,12 @@ export async function checkBrowser(root, articles, evidence) {
           const formulas = [...document.querySelectorAll('.math-source')];
           const tables = [...document.querySelectorAll('.article-body table')];
           const anchors = [...document.querySelectorAll('.article-body a[href^="#"]')];
+          const walker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT);
+          const visibleUrls = [];
+          while (walker.nextNode()) {
+            const node = walker.currentNode;
+            if (!node.parentElement.closest('pre, code, .katex-mathml') && /https?:\/\/|www\./i.test(node.textContent)) visibleUrls.push(node.textContent.trim());
+          }
           const imageSizes = [...document.querySelectorAll('.article-body img')].map(img => {
             const style = getComputedStyle(img);
             const bounds = img.getBoundingClientRect();
@@ -62,11 +68,12 @@ export async function checkBrowser(root, articles, evidence) {
             tableRegions: tables.every(x => x.parentElement.matches('.table-scroll[tabindex="0"][role="region"][aria-label]')),
             imageSizing: imageSizes.every(x => x.displayed[0] <= Math.min(x.natural[0], 960) + 1 && x.displayed[1] <= Math.min(x.natural[1], 720) + 1),
             imageSizes,
+            visibleUrls,
             missingAnchors: anchors.filter(x => !document.getElementById(decodeURIComponent(x.hash.slice(1)))).map(x => x.hash),
             images: [...document.querySelectorAll('.article-body img')].length
           };
         });
-        if (state.overflow || state.formulaOverflow || state.tableOverflow || !state.tableRegions || !state.imageSizing || state.unrendered || state.missingAnchors.length || state.formulas !== article.formulas || state.images !== article.figures) issues.push(JSON.stringify(state));
+        if (state.overflow || state.formulaOverflow || state.tableOverflow || !state.tableRegions || !state.imageSizing || state.unrendered || state.visibleUrls.length || state.missingAnchors.length || state.formulas !== article.formulas || state.images !== article.figures) issues.push(JSON.stringify(state));
         const screenshot = `${evidence}/${article.id}-${viewport.name}.png`;
         await page.screenshot({path: screenshot, fullPage: true});
         if (viewport.name === 'wide') {
