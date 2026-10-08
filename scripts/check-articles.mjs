@@ -24,6 +24,7 @@ const run = (code, executable, params) => {
 };
 try {
   const source = checkSources(root);
+  run('HM_MARKDOWN', option('--python', process.env.PYTHON_EXECUTABLE ?? 'python3'), ['tools/markdown_tables.py']);
   report.findings.push(...source.findings);
   report.articles = source.articles;
   for (const template of ['templates/article.md', 'templates/minimal-article.md']) {

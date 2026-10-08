@@ -15,3 +15,5 @@ Thumbs.db
 
 .venv/
 .local/
+
+__pycache__/

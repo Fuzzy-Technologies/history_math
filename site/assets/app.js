@@ -8,6 +8,15 @@ const [{search, searchByTag, selection, anniversaries}, {enhanceSelect}, {rememb
 const language = document.body.dataset.lang;
 const labels = {essay: 'Очерк', problem: 'Задача', instrument: 'Инструмент', note: 'Заметка'};
 
+document.querySelectorAll('.prose table').forEach((table, index) => {
+  const region = element('div', 'table-scroll');
+  region.tabIndex = 0;
+  region.setAttribute('role', 'region');
+  region.setAttribute('aria-label', `${language === 'ru' ? 'Таблица' : 'Table'} ${index + 1}`);
+  table.before(region);
+  region.append(table);
+});
+
 const themeButton = document.querySelector('.theme-toggle');
 const systemTheme = matchMedia('(prefers-color-scheme: dark)');
 let explicitTheme = false;
