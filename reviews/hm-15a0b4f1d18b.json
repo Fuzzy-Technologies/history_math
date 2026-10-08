@@ -34,7 +34,8 @@
     "All 25 matrix values transcribed into an accessible Markdown table.",
     "Removed the placeholder section heading; selected existing archive images for card and social previews.",
     "Corrected magic-square terminology and minor grammar. Independently verified all 120 row/column selections have sum 57; bibliography and legacy DOC checks remain open.",
-    "The announcement comment overlaps the existing explanation. Its missing count of nine cells, including the shared zero in a 5 by 5 grid, is restored beside step 2 under Разгадка. Other steps, generalization and closing invitation are already included once."
+    "The announcement comment overlaps the existing explanation. Its missing count of nine cells, including the shared zero in a 5 by 5 grid, is restored beside step 2 under Разгадка. Other steps, generalization and closing invitation are already included once.",
+    "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged."
   ],
   "review_version": 1,
   "approval": {
