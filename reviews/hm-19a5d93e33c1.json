@@ -17,7 +17,14 @@
     "notes_and_bibliography": "Existing notes, source links and bibliography preserved; research attachments stay private.",
     "automatic": "Source-contract checks and browser/build checks are recorded separately by CI.",
     "manual": "Full canonical text read; numeric table cells and formula transformations compared with the source. Editorial accuracy still requires review.",
-    "editorial_follow_up": "Owner-authorized editorial corrections are recorded in manual_changes and question resolutions; NAS/FELab originals and selected image bytes remain unchanged."
+    "editorial_follow_up": "Owner-authorized editorial corrections are recorded in manual_changes and question resolutions; NAS/FELab originals and selected image bytes remain unchanged.",
+    "comment_blocks": {
+      "checked_on": "2026-10-09",
+      "source_scope": "Complete original article and announcement; associated working documents checked where present.",
+      "markers_found": 3,
+      "nonempty_blocks": 0,
+      "summary": "All three comment slots are empty. No text is invented from research excerpts; existing solutions, table and bibliography remain intact. Rejected historical claims are not restored."
+    }
   },
   "manual_changes": [
     "Original title promoted to the shared page title; original section headings marked as H2.",
@@ -25,7 +32,8 @@
     "Internal file markers mapped to figure inventory or retained bibliographic references.",
     "Image-table arithmetic transcribed with original row/column coordinates; long equations broken across aligned lines without changing operation order.",
     "Removed the placeholder section heading; selected existing archive images for card and social previews.",
-    "Restored the original 3 × 4 table with a row-label column, checked both solution directions, and removed unsupported historical context."
+    "Restored the original 3 × 4 table with a row-label column, checked both solution directions, and removed unsupported historical context.",
+    "All three comment slots are empty. No text is invented from research excerpts; existing solutions, table and bibliography remain intact. Rejected historical claims are not restored."
   ],
   "review_version": 1,
   "approval": {
