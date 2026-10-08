@@ -16,17 +16,41 @@
     "tables": 1,
     "notes_and_bibliography": "Existing notes, source links and bibliography preserved; research attachments stay private.",
     "automatic": "Source-contract checks and browser/build checks are recorded separately by CI.",
-    "manual": "Full canonical text read; numeric table cells and formula transformations compared with the source. Editorial accuracy still requires review."
+    "manual": "Full canonical text read; numeric table cells and formula transformations compared with the source. Editorial accuracy still requires review.",
+    "editorial_follow_up": "Owner-authorized editorial corrections are recorded in manual_changes and question resolutions; NAS/FELab originals and selected image bytes remain unchanged."
   },
-  "editorial_questions": [
-    "Проверить исторические утверждения о французских салонах XVII века и обучении банкиров: исследовательский DOCX содержит промежуточные выписки, а не подтверждённую научную ссылку.",
-    "Проверить библиографические сведения о Люка и основание размещения изображения монеты.",
-    "Таблица переписана из 15 ячеек исходного рисунка в доступную двухколоночную форму; подтвердить её соответствие исходным строкам и столбцам."
-  ],
   "manual_changes": [
     "Original title promoted to the shared page title; original section headings marked as H2.",
     "Operational comment-placement instructions and empty URL fields removed; hashtags moved to metadata.",
     "Internal file markers mapped to figure inventory or retained bibliographic references.",
-    "Image-table arithmetic transcribed with original row/column coordinates; long equations broken across aligned lines without changing operation order."
+    "Image-table arithmetic transcribed with original row/column coordinates; long equations broken across aligned lines without changing operation order.",
+    "Removed the placeholder section heading; selected existing archive images for card and social previews.",
+    "Restored the original 3 × 4 table with a row-label column, checked both solution directions, and removed unsupported historical context."
+  ],
+  "review_version": 1,
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Проверить исторические утверждения о французских салонах XVII века и обучении банкиров: исследовательский DOCX содержит промежуточные выписки, а не подтверждённую научную ссылку.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Неподтверждённые утверждения о салонах и обучении банкиров удалены. Условие и оба решения сохранены."
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить издание и страницу Люка для этой задачи; атрибуция монеты CNG и CC BY-SA 3.0 уже указаны.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q3",
+      "question": "Таблица переписана из 15 ячеек исходного рисунка в доступную двухколоночную форму; подтвердить её соответствие исходным строкам и столбцам.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Восстановлена структура исходного рисунка: три строки братьев и четыре столбца состояний. Проверен прямой ход: (13,7,4) → (2,14,8) → (4,4,16) → (8,8,8)."
+    }
   ]
 }
