@@ -32,6 +32,8 @@ The canonical contract is `schemas/article-v1.schema.json`. Legacy `demo-*.md` f
 
 Short notes may begin with ordinary prose; no placeholder heading is required. Real section headings start at H2 beneath the shared title. Use explicit anchors, footnotes, reference links and ordinary Markdown tables. Run `python3 tools/markdown_tables.py --write` after staging new Markdown files; CI checks alignment without editing files. The formatter is reused from 1337; see [reuse details](REUSE.md).
 
+External links use descriptive words, such as a book title or original publication title, rather than a visible URL. Keep the original destination in the Markdown link or reference definition. Figure `source_url` and `license_url` remain metadata; the shared include displays named source and license links. Source and browser gates reject bare URLs and URL-labelled links in article prose, while literal code examples remain unchanged.
+
 Use `$x_1^2+x_2^2=r^2$` inline and `$$...$$` on separate lines for display mathematics. Set `math: true`. The common hook protects formulas from Markdown and supplies them to pinned local KaTeX with trust disabled. Unsupported notation fails validation. Escape literal dollar signs as `\$`.
 
 Keep selected images in `site/assets/images/<article-id>/`. Record each figure in front matter and insert `{% include article-figure.html id="fig-1" %}`. The shared template keeps native dimensions and proportionally reduces images above 960 × 720 pixels or the available width. Small images stay small; the existing image viewer opens on click. Tables retain their row/column structure and scroll inside a keyboard-accessible region on narrow screens.
@@ -51,3 +53,5 @@ Fresh materials are sorted by publication date and remain stable. The archive ro
 ## Archive reading and publication boundary
 
 Read existing FELab metadata and full articles and images from their corresponding NAS directories, then prepare and review the publication derivative in this site repository. Do not modify FELab or NAS. Omit private research, local SQLite/FTS, sessions, locks, logs, NAS paths, full internal metadata and large source media. Safe public IDs preserve provenance without leaking internal locations. Keep private reconciliation evidence in ignored local files here. Editorial review precedes approved website publication; draft Git copies are explicitly authorized review material. There is no live NAS synchronization or second editable derivative.
+
+Legacy instructions to publish in comments are operational markers, not a reason to discard their contents. Preserve useful content in context, in notes or in an afterword; reconcile all blocks against the current article and existing editorial decisions. Follow the [complete comment-block procedure](ARTICLE_PREPARATION.md#legacy-comment-blocks) and retain a private disposition for each block, including empty or already incorporated ones.

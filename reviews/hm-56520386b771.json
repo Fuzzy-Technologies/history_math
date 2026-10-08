@@ -31,7 +31,8 @@
     "Internal file markers mapped to figure inventory or retained bibliographic references.",
     "Removed the placeholder section heading; selected existing archive images for card and social previews.",
     "Dated the archived record explicitly to 2019; narrowed the OEIS link; removed the unsupported cryptography example and museum attribution.",
-    "No comment-placement blocks occur in the complete article or announcement. The announcement repeats existing article content. Earlier corrections to the historical record, cryptography claim and painting caption are preserved."
+    "No comment-placement blocks occur in the complete article or announcement. The announcement repeats existing article content. Earlier corrections to the historical record, cryptography claim and painting caption are preserved.",
+    "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged."
   ],
   "review_version": 1,
   "approval": {
