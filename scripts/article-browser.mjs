@@ -41,6 +41,15 @@ export async function checkBrowser(root, articles, evidence) {
           const formulas = [...document.querySelectorAll('.math-source')];
           const tables = [...document.querySelectorAll('.article-body table')];
           const anchors = [...document.querySelectorAll('.article-body a[href^="#"]')];
+          const imageSizes = [...document.querySelectorAll('.article-body img')].map(img => {
+            const style = getComputedStyle(img);
+            const bounds = img.getBoundingClientRect();
+            return {
+              natural: [img.naturalWidth, img.naturalHeight],
+              displayed: [bounds.width - parseFloat(style.borderLeftWidth) - parseFloat(style.borderRightWidth) - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight),
+                bounds.height - parseFloat(style.borderTopWidth) - parseFloat(style.borderBottomWidth) - parseFloat(style.paddingTop) - parseFloat(style.paddingBottom)]
+            };
+          });
           return {
             overflow: document.documentElement.scrollWidth > innerWidth + 1,
             formulas: formulas.length,
@@ -48,10 +57,8 @@ export async function checkBrowser(root, articles, evidence) {
             formulaOverflow: formulas.some(x => x.querySelector('.katex')?.getBoundingClientRect().width > content.getBoundingClientRect().width + 2),
             tableOverflow: tables.some(x => (x.closest('.table-scroll') ?? x).getBoundingClientRect().right > content.getBoundingClientRect().right + 2),
             tableRegions: tables.every(x => x.parentElement.matches('.table-scroll[tabindex="0"][role="region"][aria-label]')),
-            imageSizing: [...document.querySelectorAll('.article-body img')].every(img => {
-              const style = getComputedStyle(img);
-              return parseFloat(style.width) <= Math.min(img.naturalWidth, 960) + 1 && parseFloat(style.height) <= Math.min(img.naturalHeight, 720) + 1;
-            }),
+            imageSizing: imageSizes.every(x => x.displayed[0] <= Math.min(x.natural[0], 960) + 1 && x.displayed[1] <= Math.min(x.natural[1], 720) + 1),
+            imageSizes,
             missingAnchors: anchors.filter(x => !document.getElementById(decodeURIComponent(x.hash.slice(1)))).map(x => x.hash),
             images: [...document.querySelectorAll('.article-body img')].length
           };
