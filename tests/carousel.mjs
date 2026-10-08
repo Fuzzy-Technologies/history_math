@@ -1,3 +1,4 @@
+import {recordRequestFailure} from './request-failures.mjs';
 import assert from 'node:assert/strict';
 
 export async function runCarouselChecks({browser, origin, evidence, axe, report, checked}) {
@@ -5,7 +6,7 @@ export async function runCarouselChecks({browser, origin, evidence, axe, report,
   async function track(context) {
     const page = await context.newPage();
     page.on('pageerror', error => report.consoleErrors.push(error.message));
-    page.on('requestfailed', request => report.requestFailures.push(request.url()));
+    page.on('requestfailed', request => recordRequestFailure(report, request));
     return page;
   }
   async function staysAt(page, carousel, expected, label) {
@@ -27,7 +28,7 @@ export async function runCarouselChecks({browser, origin, evidence, axe, report,
     await navigation.getByRole('link', {name: 'Витрина', exact: true}).click();
     await page.waitForURL('**/ru/showcase/');
     await page.waitForLoadState('networkidle');
-    assert.equal(await page.locator('h1').innerText(), 'Наши издания');
+    assert.equal(await page.locator('h1').innerText(), 'Книги и издания');
     assert.equal((await page.locator('.page-heading .eyebrow').textContent()).trim(), 'Книги и курсы');
     assert.equal(await navigation.getByRole('link', {name: 'Витрина', exact: true}).getAttribute('aria-current'), 'page');
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), true);

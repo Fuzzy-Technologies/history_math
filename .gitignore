@@ -12,3 +12,8 @@ playwright-report/
 .felab.json
 .DS_Store
 Thumbs.db
+
+.venv/
+.local/
+
+__pycache__/

@@ -1,16 +1,5 @@
-## Result
+Describe the change and why readers or editors need it in one or two sentences.
 
-Describe the reader/editor problem and resulting behavior. Identify demo content explicitly.
+Checks: link the CI run or describe the relevant verification.
 
-## Validation
-
-- Source/front matter and public/private publication boundary:
-- Built local URLs, assets, languages and canonical/hreflang:
-- Desktop/mobile browser, math, search, focus and accessibility:
-- Current head SHA and CI/artifacts:
-
-## Publication boundary
-
-This PR targets `develop`. No production publication occurs. Timur makes the merge decision; a separate `develop` → `master` PR approves publication.
-
-List any incomplete administrative setup or unverified integration behavior.
+Mention an unresolved editorial question only if it affects this change.

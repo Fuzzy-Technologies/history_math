@@ -11,6 +11,7 @@ class PublicationTest < Minitest::Test
     Dir.mktmpdir("history-math-test") do |root|
       source = File.join(root, "site")
       FileUtils.cp_r(File.expand_path("../site", __dir__), source)
+      FileUtils.cp_r(File.expand_path("../schemas", __dir__), File.join(root, "schemas"))
       config = Jekyll.configuration("config" => File.expand_path("../_config.yml", __dir__),
         "source" => source, "destination" => File.join(root, "output"), "quiet" => true)
       yield source, config
@@ -54,6 +55,49 @@ class PublicationTest < Minitest::Test
   def test_duplicate_public_urls_fail_closed
     with_site do |source, config|
       FileUtils.cp(File.join(source, "_articles/demo-abacus.md"), File.join(source, "_articles/duplicate.md"))
+      assert_raises(Jekyll::Errors::FatalException) { Jekyll::Site.new(config).process }
+    end
+  end
+
+  def test_review_preview_is_opt_in_and_never_indexes_a_draft
+    with_site do |source, config|
+      text = File.read(File.expand_path("../templates/minimal-article.md", __dir__))
+      File.write(File.join(source, "_articles/example-minimal.en.md"), text)
+      site = Jekyll::Site.new(config)
+      site.process
+      refute File.exist?(File.join(site.dest, "articles/example-minimal/index.html"))
+      config["article_review"] = true
+      review = Jekyll::Site.new(config)
+      review.process
+      page = File.read(File.join(review.dest, "articles/example-minimal/index.html"))
+      assert_includes page, "Editorial review copy"
+      assert_includes page, "noindex, nofollow"
+      refute_includes File.read(File.join(review.dest, "sitemap.xml")), "/articles/example-minimal/"
+      assert_empty JSON.parse(File.read(File.join(review.dest, "assets/search-en.json")))
+    end
+  end
+
+  def test_publication_requires_approval_for_current_package_and_closed_blockers
+    with_site do |source, config|
+      path = File.join(source, "_articles/example-minimal.en.md")
+      text = File.read(File.expand_path("../templates/minimal-article.md", __dir__))
+        .sub("status: draft", "status: published\ndate: '2026-10-08'")
+      File.write(path, text)
+      assert_raises(Jekyll::Errors::FatalException) { Jekyll::Site.new(config).process }
+      reviews = File.expand_path("../reviews", source)
+      FileUtils.mkdir_p(reviews)
+      review_path = File.join(reviews, "example-minimal.json")
+      review = {"review_version" => 1, "article_id" => "example-minimal", "questions" => [],
+        "approval" => {"status" => "approved", "reviewed_by" => "Test editor", "date" => "2026-10-08",
+          "package_sha256" => Digest::SHA256.hexdigest(text)}}
+      File.write(review_path, JSON.generate(review))
+      Jekyll::Site.new(config).process
+      assert File.exist?(File.join(config["destination"], "articles/example-minimal/index.html"))
+      File.write(path, text + "\nChanged after review.\n")
+      assert_raises(Jekyll::Errors::FatalException) { Jekyll::Site.new(config).process }
+      File.write(path, text)
+      review["questions"] = [{"id" => "source", "question" => "Confirm source", "blocking" => true, "state" => "open"}]
+      File.write(review_path, JSON.generate(review))
       assert_raises(Jekyll::Errors::FatalException) { Jekyll::Site.new(config).process }
     end
   end

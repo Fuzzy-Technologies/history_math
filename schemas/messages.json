@@ -1,0 +1,111 @@
+{
+  "en": {
+    "checks": {
+      "source": "Source contract",
+      "build": "Jekyll build",
+      "output": "Output",
+      "browser": "Browser"
+    },
+    "states": {
+      "pass": "passed",
+      "fail": "failed",
+      "not_run": "not executed"
+    },
+    "severity": {
+      "error": "blocking error",
+      "warning": "warning",
+      "editor": "editorial question"
+    },
+    "pr": {
+      "publication": "Known earlier publication",
+      "questions": "Questions for the editor",
+      "preview": "Preview and PDF in CI"
+    },
+    "pass": "Technical checks passed; editorial review pending.",
+    "fail": "Technical checks have blocking errors.",
+    "incomplete": "Required technical checks were not completed.",
+    "commit": "Checked commit",
+    "issues": "Findings and actions",
+    "preview": "Preview and evidence",
+    "HM_METADATA": "Invalid or missing metadata. Correct the field against the article schema.",
+    "HM_IDENTIFIER": "Duplicate identifier or URL. Choose one stable identity per language.",
+    "HM_PATH": "Unsafe or unsupported path. Use an existing local article asset and the base-path filter.",
+    "HM_IMAGE": "Image not found. Add the file or correct its path.",
+    "HM_FIGURE": "Missing figure caption, alternative text or provenance. Complete the figure metadata.",
+    "HM_STRUCTURE": "Unsupported Markdown structure. Use the documented article grammar.",
+    "HM_LINK": "Invalid article link. Check its target and use descriptive link text.",
+    "HM_MATH": "Formula processing failed. Correct the LaTeX or record an unsupported construct for the editor.",
+    "HM_BUILD": "The Jekyll preview build failed. Inspect the attached tool diagnostic.",
+    "HM_OUTPUT": "The output contract failed. Correct the generated URL, asset or language metadata.",
+    "HM_BROWSER": "Browser rendering failed. Inspect the screenshot and repair the overflow, image or formula.",
+    "HM_CONTRACT": "The site-owned article schema or its integrity lock is missing or inconsistent. Update schemas/article-v1.schema.json and schemas/contract-lock.json together in history_math.",
+    "HM_REQUIRED": "A required check was not executed. Run it successfully before claiming technical success.",
+    "HM_EXTERNAL": "External sources were not fetched. Verify them editorially; this does not imply an invalid source.",
+    "HM_EDITOR": "Question for the editor; technical validation does not resolve it.",
+    "HM_REVIEW": "Editorial approval is missing, incomplete or stale. Update the article review record.",
+    "HM_MARKDOWN": "Markdown tables are not aligned. Run python3 tools/markdown_tables.py --write."
+  },
+  "ru": {
+    "details": {
+      "YAML front matter required": "Требуется начальный блок метаданных YAML",
+      "author must display the authors array": "Поле author должно отображать список authors",
+      "Invalid calendar date:": "Недопустимая календарная дата:",
+      "Image role lacks provenance inventory:": "Изображение этой роли отсутствует в перечне источников:",
+      "Hero caption and alternative text must match its figure inventory": "Подпись и альтернативный текст hero должны совпадать с записью рисунка",
+      "Unused figure:": "Рисунок не используется:",
+      "Use shared article-figure includes; raw active/media HTML is unsupported": "Используйте общий include article-figure; активный HTML и прямая вставка медиа не поддерживаются",
+      "Only the documented shared figure include is allowed": "Разрешён только документированный общий include рисунка",
+      "Private paths or operational metadata must remain outside public Git": "Частные пути и служебные метаданные должны оставаться вне публичного Git",
+      "Use H2 sections beneath the shared H1 title": "Используйте разделы H2 под общим заголовком H1",
+      "Use descriptive link text instead of a visible URL": "Используйте содержательный текст ссылки вместо видимого URL",
+      "Unmatched delimiters or LaTeX outside dollar math": "Непарные разделители или LaTeX вне формулы с разделителями $",
+      "math: true is required": "Требуется поле math: true",
+      "schema_version: 1 is required for new article packages": "Для новых комплектов требуется schema_version: 1",
+      "Preview commit does not match the checked commit": "Коммит предпросмотра не совпадает с проверяемым коммитом"
+    },
+    "checks": {
+      "source": "Контракт исходных файлов",
+      "build": "Сборка Jekyll",
+      "output": "Результат сборки",
+      "browser": "Браузер"
+    },
+    "states": {
+      "pass": "пройдено",
+      "fail": "ошибка",
+      "not_run": "не выполнено"
+    },
+    "severity": {
+      "error": "блокирующая ошибка",
+      "warning": "предупреждение",
+      "editor": "вопрос редактору"
+    },
+    "pr": {
+      "publication": "Известная прежняя публикация",
+      "questions": "Вопросы редактору",
+      "preview": "Предпросмотр и PDF в CI"
+    },
+    "pass": "Технические проверки пройдены; ожидается редакторское ревью.",
+    "fail": "Технические проверки выявили блокирующие ошибки.",
+    "incomplete": "Обязательные технические проверки не выполнены.",
+    "commit": "Проверенный коммит",
+    "issues": "Проблемы и действия",
+    "preview": "Предпросмотр и подтверждения",
+    "HM_METADATA": "Некорректное или отсутствующее поле метаданных. Исправьте его по схеме статьи.",
+    "HM_IDENTIFIER": "Повторяется идентификатор или URL. Используйте одну стабильную запись для каждого языка.",
+    "HM_PATH": "Недопустимый путь. Используйте существующий локальный ресурс статьи и фильтр базового пути.",
+    "HM_IMAGE": "Не найден рисунок. Добавьте файл или исправьте путь.",
+    "HM_FIGURE": "Нет подписи, альтернативного текста или источника рисунка. Заполните метаданные.",
+    "HM_STRUCTURE": "Неподдерживаемая структура Markdown. Используйте описанный формат статьи.",
+    "HM_LINK": "Некорректная ссылка статьи. Проверьте её цель и используйте содержательный текст ссылки.",
+    "HM_MATH": "Ошибка обработки формулы. Исправьте LaTeX или передайте неподдерживаемую конструкцию редактору.",
+    "HM_BUILD": "Сборка предпросмотра Jekyll завершилась ошибкой. Изучите приложенную диагностику.",
+    "HM_OUTPUT": "Нарушен контракт результата сборки. Исправьте URL, ресурс или язык страницы.",
+    "HM_BROWSER": "Ошибка отображения в браузере. Проверьте снимок и исправьте переполнение, рисунок или формулу.",
+    "HM_CONTRACT": "Схема статьи сайта или файл её контрольной суммы отсутствуют либо не согласованы. Обновите schemas/article-v1.schema.json и schemas/contract-lock.json вместе в history_math.",
+    "HM_REQUIRED": "Обязательная проверка не выполнена. Запустите её успешно перед техническим подтверждением.",
+    "HM_EXTERNAL": "Внешние источники не загружались. Проверьте их редакционно; это не означает ошибку источника.",
+    "HM_EDITOR": "Вопрос редактору; техническая проверка его не разрешает.",
+    "HM_REVIEW": "Редакторское решение отсутствует, не завершено или относится к старой версии. Обновите запись ревью статьи.",
+    "HM_MARKDOWN": "Таблицы Markdown не выровнены. Запустите python3 tools/markdown_tables.py --write."
+  }
+}

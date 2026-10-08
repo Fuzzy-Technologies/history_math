@@ -36,7 +36,9 @@ jobs:
       - name: Verify approved source and build
         run: |
           npm ci
+          python3 tools/markdown_tables.py
           npm test
+          node scripts/check-articles.mjs --source-only
           bundle exec ruby tests/publication_test.rb
           bundle exec jekyll build --trace
           python3 scripts/check_site.py _site /history_math
