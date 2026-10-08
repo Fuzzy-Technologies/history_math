@@ -58,6 +58,25 @@ test('date validation and publication date requirement reject invalid metadata',
   assert.ok(errors(text.replace('status: draft', 'status: draft\ndate: 2026-02-30')).some(x => x.code === 'HM_METADATA'));
 });
 
+test('external links require descriptive text while destinations and code remain intact', () => {
+  for (const body of [
+    '\nSource: https://example.org/article',
+    '\n<https://example.org/article>',
+    '\n[https://example.org/article](https://example.org/article)',
+    '\n[^source]: https://example.org/article',
+    '\nSource: www.example.org/article'
+  ]) assert.ok(errors(text + body).some(x => x.code === 'HM_LINK'), body);
+  for (const body of [
+    '\n[Original publication](https://example.org/article)',
+    '\n[Original publication][source]\n\n[source]: https://example.org/article',
+    '\n[^example-note]: [Original publication](https://example.org/article)',
+    '\n`https://example.org/article`',
+    '\n```text\nhttps://example.org/article\n```'
+  ]) assert.deepEqual(errors(text + body), [], body);
+  const findings = checkArticle(text + '\nSource: https://example.org/article', 'article.md', root).findings;
+  assert.match(humanReport({language: 'ru', commit: 'sha', checks: {source: 'fail'}, findings}), /Используйте содержательный текст ссылки/);
+});
+
 test('preview, social and hero roles retain provenance and count only displayed figures', () => {
   const hero = text.replace('status: draft', 'status: draft\nhero_image: /assets/images/example/triangle.svg\nhero_alt: A triangle with a marked base and height.\nhero_caption: Figure 1. Base and height of a triangle.').replace('{% include article-figure.html id="fig-example" %}', '');
   assert.deepEqual(errors(hero), []);

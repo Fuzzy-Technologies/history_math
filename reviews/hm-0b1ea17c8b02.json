@@ -32,7 +32,8 @@
     "Internal file markers mapped to figure inventory or retained bibliographic references.",
     "Removed the placeholder section heading; selected existing archive images for card and social previews.",
     "Added the Персоналии series/tag and corrected the academy distinction with RAS references. The 150 × 200 portrait bytes are unchanged.",
-    "No comment-placement blocks occur in the complete article or announcement. Existing academy corrections and the biography tags are preserved."
+    "No comment-placement blocks occur in the complete article or announcement. Existing academy corrections and the biography tags are preserved.",
+    "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged."
   ],
   "review_version": 1,
   "approval": {
