@@ -23,7 +23,7 @@ export async function checkBrowser(root, articles, evidence) {
   const pages = [];
   try {
     browser = await chromium.launch({headless: true});
-    for (const viewport of [{name: 'wide', width: 1440, height: 1000}, {name: 'narrow', width: 390, height: 844}]) {
+    for (const viewport of [{name: 'wide', width: 1440, height: 1000}, {name: 'narrow', width: 390, height: 844}, {name: 'small', width: 320, height: 640}]) {
       for (const article of articles) {
         const page = await browser.newPage({viewport, reducedMotion: 'reduce'});
         const issues = [];
@@ -35,6 +35,7 @@ export async function checkBrowser(root, articles, evidence) {
         await page.locator('img').evaluateAll(images => images.forEach(img => { img.loading = 'eager'; }));
         try { await page.waitForFunction(() => [...document.images].every(x => x.complete && x.naturalWidth > 0), null, {timeout: 10000}); }
         catch { issues.push('Missing or undecoded image'); }
+        await page.evaluate(() => document.fonts.ready);
         const state = await page.evaluate(() => {
           const content = document.querySelector('.article-body');
           const formulas = [...document.querySelectorAll('.math-source')];
@@ -45,14 +46,23 @@ export async function checkBrowser(root, articles, evidence) {
             formulas: formulas.length,
             unrendered: formulas.filter(x => x.dataset.rendered !== 'true').length,
             formulaOverflow: formulas.some(x => x.querySelector('.katex')?.getBoundingClientRect().width > content.getBoundingClientRect().width + 2),
-            tableOverflow: tables.some(x => x.getBoundingClientRect().right > content.getBoundingClientRect().right + 2),
+            tableOverflow: tables.some(x => (x.closest('.table-scroll') ?? x).getBoundingClientRect().right > content.getBoundingClientRect().right + 2),
+            tableRegions: tables.every(x => x.parentElement.matches('.table-scroll[tabindex="0"][role="region"][aria-label]')),
+            imageSizing: [...document.querySelectorAll('.article-body img')].every(img => {
+              const style = getComputedStyle(img);
+              return parseFloat(style.width) <= Math.min(img.naturalWidth, 960) + 1 && parseFloat(style.height) <= Math.min(img.naturalHeight, 720) + 1;
+            }),
             missingAnchors: anchors.filter(x => !document.getElementById(decodeURIComponent(x.hash.slice(1)))).map(x => x.hash),
             images: [...document.querySelectorAll('.article-body img')].length
           };
         });
-        if (state.overflow || state.formulaOverflow || state.tableOverflow || state.unrendered || state.missingAnchors.length || state.formulas !== article.formulas || state.images !== article.figures) issues.push(JSON.stringify(state));
+        if (state.overflow || state.formulaOverflow || state.tableOverflow || !state.tableRegions || !state.imageSizing || state.unrendered || state.missingAnchors.length || state.formulas !== article.formulas || state.images !== article.figures) issues.push(JSON.stringify(state));
         const screenshot = `${evidence}/${article.id}-${viewport.name}.png`;
         await page.screenshot({path: screenshot, fullPage: true});
+        if (viewport.name === 'wide') {
+          await mkdir(resolve(evidence, '../article-pdfs'), {recursive: true});
+          await page.pdf({path: resolve(evidence, '../article-pdfs', `${article.id}.pdf`), format: 'A4', printBackground: true, margin: {top: '12mm', bottom: '12mm', left: '12mm', right: '12mm'}});
+        }
         pages.push({id: article.id, viewport: viewport.name, ...state, screenshot: relative(resolve('test-results'), screenshot).split(sep).join('/')});
         for (const detail of issues) findings.push({code: 'HM_BROWSER', severity: 'error', file: article.file, detail});
         await page.close();

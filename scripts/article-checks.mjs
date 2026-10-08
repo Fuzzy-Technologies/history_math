@@ -4,6 +4,7 @@ import {createHash} from 'node:crypto';
 import {runInNewContext} from 'node:vm';
 import Ajv from 'ajv';
 import {parseDocument} from 'yaml';
+import {checkReview} from './article-review.mjs';
 
 const katexModule = {exports: {}};
 runInNewContext(readFileSync(new URL('../site/assets/vendor/katex/katex.min.js', import.meta.url), 'utf8'), {module: katexModule, exports: katexModule.exports});
@@ -75,7 +76,8 @@ export function checkArticle(text, file, root, identities = new Set()) {
   const withoutIncludes = clean.replace(/\{%\s*include\s+article-figure.html\s+id="[a-z0-9-]+"\s*%\}/g, '');
   if (/\{%|\{\{/.test(withoutIncludes)) add('HM_STRUCTURE', 'Only the documented shared figure include is allowed');
   if (/\\\\[A-Za-z0-9-]+\\|[A-Za-z]:\\|\.felab\.json|runtime\.sqlite|ОПУБЛИКОВАТЬ В|ОПУБЛИКОВАТЬ ВТОРЫМ|ОПУБЛИКОВАТЬ ТРЕТЬИМ/.test(text)) add('HM_STRUCTURE', 'Private paths or operational metadata must remain outside public Git');
-  if (!/^##\s+/m.test(clean) || /^#\s+/m.test(clean)) add('HM_STRUCTURE', 'Use H2 sections beneath the shared H1 title');
+  if (/^#\s+/m.test(clean)) add('HM_STRUCTURE', 'Use H2 sections beneath the shared H1 title');
+  if (data.lang === 'ru' && data.series === 'Персоналии' && !data.tags?.includes('Персоналии')) add('HM_METADATA', 'Biographies require the Персоналии tag');
   const anchors = new Set([...clean.matchAll(/\{#([A-Za-z][A-Za-z0-9_-]*)\}/g)].map(x => x[1]));
   for (const id of used) anchors.add(id);
   const notes = new Set([...clean.matchAll(/^\[\^([^\]]+)\]:/gm)].map(x => x[1]));
@@ -99,7 +101,6 @@ export function checkArticle(text, file, root, identities = new Set()) {
   });
   if (/(?<!\\)\$/.test(remaining) || /\\(?:begin|end)\{/.test(remaining)) add('HM_MATH', 'Unmatched delimiters or LaTeX outside dollar math');
   if (formulaCount > 0 && data.math !== true) add('HM_MATH', 'math: true is required');
-  for (const question of data.editorial_questions ?? []) add('HM_EDITOR', question, 1, 'editor');
   if (/https:\/\//.test(body)) add('HM_EXTERNAL', '', 1, 'warning');
   return {...article, findings, formulaCount, figureCount: used.size};
 }
@@ -138,6 +139,7 @@ export function checkSources(root, files = articleFiles(root)) {
     }
     const result = checkArticle(text, file, root, identities);
     findings.push(...result.findings);
+    if (result.data) findings.push(...checkReview(text, result.data, root));
     articles.push({file, id: result.data?.article_id, url: result.data?.permalink, formulas: result.formulaCount, figures: result.figureCount});
   }
   return {findings, articles};

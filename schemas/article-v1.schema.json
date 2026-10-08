@@ -57,8 +57,7 @@
           "license_url": {"type": "string", "pattern": "^https://"}
         }
       }
-    },
-    "editorial_questions": {"type": "array", "items": {"type": "string", "minLength": 1}}
+    }
   },
   "allOf": [
     {"if": {"properties": {"status": {"enum": ["published", "demo"]}}}, "then": {"required": ["date"]}},

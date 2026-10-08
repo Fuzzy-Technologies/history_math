@@ -3,11 +3,42 @@
 require "json"
 require "cgi"
 require "date"
+require "digest"
 
 module HistoryMath
   PUBLIC_STATUSES = %w[published demo].freeze
   ARTICLE_FIELDS = %w[layout title lang translation_key date type author description tags math status permalink].freeze
   TYPES = %w[essay problem instrument note].freeze
+
+  def self.validate_approval!(document)
+    return unless document.data["status"] == "published"
+    root = File.expand_path("..", document.site.source)
+    review = JSON.parse(File.read(File.join(root, "reviews", "#{document.data['article_id']}.json")))
+    approval = review.fetch("approval")
+    questions = review.fetch("questions")
+    valid = review["review_version"] == 1 && review["article_id"] == document.data["article_id"] &&
+      !review.key?("editorial_questions") && approval["status"] == "approved" &&
+      approval["reviewed_by"].is_a?(String) && !approval["reviewed_by"].strip.empty? &&
+      approval["date"].is_a?(String) && Date.iso8601(approval["date"]).to_s == approval["date"] &&
+      questions.is_a?(Array) && questions.all? { |q| q.is_a?(Hash) &&
+        q["id"].is_a?(String) && !q["id"].strip.empty? &&
+        q["question"].is_a?(String) && !q["question"].strip.empty? &&
+        [true, false].include?(q["blocking"]) && %w[open resolved accepted].include?(q["state"]) &&
+        !(q["blocking"] && q["state"] == "open") &&
+        (q["state"] == "open" || (q["resolution"].is_a?(String) && !q["resolution"].strip.empty?)) } &&
+      questions.map { |q| q["id"] }.uniq.length == questions.length
+    digest = Digest::SHA256.new.update(File.binread(document.path).gsub("\r\n", "\n"))
+    paths = (document.data.fetch("figures", []).map { |figure| figure["path"] } +
+      %w[preview_image cover_image hero_image].filter_map { |key| document.data[key] }).uniq.sort
+    paths.each do |path|
+      raise ArgumentError unless path.match?(%r{\A/assets/images/[a-z0-9-]+/[A-Za-z0-9._-]+\z})
+      digest.update("\0#{path}\0").update(File.binread(File.join(document.site.source, path.delete_prefix("/"))))
+    end
+    valid &&= approval["package_sha256"] == digest.hexdigest
+    raise ArgumentError unless valid
+  rescue StandardError => error
+    raise Jekyll::Errors::FatalException, "#{document.path}: publication requires editorial approval for the current text and images (#{error.class})"
+  end
 
   # The source gate uses Ajv; Jekyll interprets the same canonical site schema.
   def self.schema_errors(value, schema, path = "metadata")
@@ -50,6 +81,7 @@ module HistoryMath
       end
       errors = schema_errors(public_data, schema)
       raise Jekyll::Errors::FatalException, "#{document.path}: #{errors.join('; ')}" unless errors.empty?
+      HistoryMath.validate_approval!(document)
       return
     end
     missing = ARTICLE_FIELDS.reject { |field| data.key?(field) }
