@@ -52,6 +52,9 @@ export async function checkBrowser(root, articles, evidence) {
           });
           return {
             overflow: document.documentElement.scrollWidth > innerWidth + 1,
+            overflowElements: document.documentElement.scrollWidth > innerWidth + 1 ? [...document.querySelectorAll('body *')]
+              .filter(x => !x.closest('.table-scroll') && !x.closest('.math-source[data-display="true"]') && x.getBoundingClientRect().right > innerWidth + 1)
+              .slice(0, 12).map(x => ({tag: x.tagName, class: String(x.className), right: x.getBoundingClientRect().right, text: x.textContent.slice(0, 80)})) : [],
             formulas: formulas.length,
             unrendered: formulas.filter(x => x.dataset.rendered !== 'true').length,
             formulaOverflow: formulas.some(x => x.querySelector('.katex')?.getBoundingClientRect().width > content.getBoundingClientRect().width + 2),
