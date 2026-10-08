@@ -1219,6 +1219,7 @@ input::placeholder {
   margin-bottom: 32px;
 }
 .article-heading h1 {
+  overflow-wrap: anywhere;
   font-size: calc(clamp(2.8rem, 4.8vw, 4.7rem) - 2px);
   line-height: 1.12;
   max-width: 950px;
@@ -1333,6 +1334,7 @@ input::placeholder {
   margin-top: 45px;
 }
 .reading-navigation a {
+  overflow-wrap: anywhere;
   font-family: var(--serif);
   font-size: 1.45rem;
   text-decoration: none;
