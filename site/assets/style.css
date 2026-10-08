@@ -506,11 +506,7 @@ main,
 .card-image img {
   width: 100%;
   aspect-ratio: 1.6;
-  object-fit: cover;
-  transition: transform 0.2s ease;
-}
-.card-image:hover img {
-  transform: scale(1.02);
+  object-fit: scale-down;
 }
 .plate-label {
   position: absolute;
@@ -1011,8 +1007,16 @@ input::placeholder {
 .prose figure {
   margin: 0 0 35px;
 }
+.prose img,
+.book-gallery img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(100%, 960px);
+  max-height: 720px;
+  margin-inline: auto;
+}
 .prose figure img {
-  width: 100%;
   border: 1px solid var(--line);
   border-radius: 16px;
 }
@@ -1036,6 +1040,15 @@ input::placeholder {
   border-collapse: collapse;
   width: 100%;
   font-size: 16px;
+  margin: 0;
+}
+.table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 30px 0;
+  overscroll-behavior-inline: contain;
+}
+.prose:not(:has(.table-scroll)) table {
   display: block;
   overflow-x: auto;
   margin: 30px 0;
@@ -1117,9 +1130,6 @@ input::placeholder {
   margin: 0;
 }
 .book-gallery img {
-  display: block;
-  width: 100%;
-  height: auto;
   border-radius: 4px 12px 12px 4px;
   box-shadow: 5px 9px 20px -12px var(--shadow);
 }
@@ -1130,8 +1140,6 @@ input::placeholder {
   margin-top: 18px;
 }
 .book-variants img {
-  aspect-ratio: 1;
-  object-fit: contain;
   background: var(--tint);
 }
 .book-variants figcaption {
@@ -1434,6 +1442,12 @@ input::placeholder {
   cursor: zoom-in;
   position: relative;
   line-height: 0;
+}
+.prose .image-trigger,
+.book-gallery .image-trigger {
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
 }
 .image-trigger::after {
   content: "⤢";
@@ -2262,4 +2276,15 @@ input::placeholder {
     padding: 8px 12px;
     bottom: 12px;
   }
+}
+
+@media print {
+  .site-header, .site-footer, .reading-tools, .article-toc, .language-switch, .image-trigger::after { display: none; }
+  body { background: white; color: black; }
+  .article-body { max-width: 100%; }
+  .prose.article-body { font-size: 12pt; }
+  .prose table { font-size: 9pt; }
+  .table-scroll { overflow: visible; }
+  .prose img { max-height: 190mm; }
+  figure, tr { break-inside: avoid; }
 }

@@ -76,4 +76,29 @@ class PublicationTest < Minitest::Test
       assert_empty JSON.parse(File.read(File.join(review.dest, "assets/search-en.json")))
     end
   end
+
+  def test_publication_requires_approval_for_current_package_and_closed_blockers
+    with_site do |source, config|
+      path = File.join(source, "_articles/example-minimal.en.md")
+      text = File.read(File.expand_path("../templates/minimal-article.md", __dir__))
+        .sub("status: draft", "status: published\ndate: '2026-10-08'")
+      File.write(path, text)
+      assert_raises(Jekyll::Errors::FatalException) { Jekyll::Site.new(config).process }
+      reviews = File.expand_path("../reviews", source)
+      FileUtils.mkdir_p(reviews)
+      review_path = File.join(reviews, "example-minimal.json")
+      review = {"review_version" => 1, "article_id" => "example-minimal", "questions" => [],
+        "approval" => {"status" => "approved", "reviewed_by" => "Test editor", "date" => "2026-10-08",
+          "package_sha256" => Digest::SHA256.hexdigest(text)}}
+      File.write(review_path, JSON.generate(review))
+      Jekyll::Site.new(config).process
+      assert File.exist?(File.join(config["destination"], "articles/example-minimal/index.html"))
+      File.write(path, text + "\nChanged after review.\n")
+      assert_raises(Jekyll::Errors::FatalException) { Jekyll::Site.new(config).process }
+      File.write(path, text)
+      review["questions"] = [{"id" => "source", "question" => "Confirm source", "blocking" => true, "state" => "open"}]
+      File.write(review_path, JSON.generate(review))
+      assert_raises(Jekyll::Errors::FatalException) { Jekyll::Site.new(config).process }
+    end
+  end
 end
