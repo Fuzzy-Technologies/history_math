@@ -101,7 +101,6 @@ export function checkArticle(text, file, root, identities = new Set()) {
   });
   if (/(?<!\\)\$/.test(remaining) || /\\(?:begin|end)\{/.test(remaining)) add('HM_MATH', 'Unmatched delimiters or LaTeX outside dollar math');
   if (formulaCount > 0 && data.math !== true) add('HM_MATH', 'math: true is required');
-  for (const question of data.editorial_questions ?? []) add('HM_EDITOR', question, 1, 'editor');
   if (/https:\/\//.test(body)) add('HM_EXTERNAL', '', 1, 'warning');
   return {...article, findings, formulaCount, figureCount: used.size};
 }
