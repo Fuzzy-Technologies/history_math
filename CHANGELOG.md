@@ -2,6 +2,8 @@
 
 ## Unreleased — first prototype
 
+- Replace the faint geometric favicon with an M² monogram in two rings, an ivory background and a local PNG fallback.
+
 - Expand the bilingual showcase with four books, the 2026 calendar, real covers, edition-specific shop links, and a limited gift edition on Avito; omit prices and reuse the cover zoom viewer.
 
 - Keep mouse dragging and wheel browsing at the exact pixel position, without card snapping; clarify the reading-room navigation and showcase heading.
