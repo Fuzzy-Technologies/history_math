@@ -1043,6 +1043,8 @@ input::placeholder {
   margin: 0;
 }
 .table-scroll {
+  width: 100%;
+  min-width: 0;
   max-width: 100%;
   overflow-x: auto;
   margin: 30px 0;
@@ -1812,7 +1814,7 @@ input::placeholder {
     font-size: calc(2rem - 2px);
   }
   .article-spread {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 24px;
     padding-top: 26px;
   }
@@ -2279,10 +2281,17 @@ input::placeholder {
 }
 
 @media print {
-  .site-header, .site-footer, .reading-tools, .article-toc, .language-switch, .image-trigger::after { display: none; }
+  .site-header, .site-footer, .reading-tools, .article-sidebar, .reading-navigation, .language-switch, .image-trigger::after { display: none; }
   body { background: white; color: black; }
+  .article-spread { display: block; padding: 0; }
+  .article-heading { padding: 0 0 12pt; }
+  .article-heading h1 { font-size: 24pt; line-height: 1.2; }
+  .article-heading .lead { font-size: 12pt; }
   .article-body { max-width: 100%; }
   .prose.article-body { font-size: 12pt; }
+  .prose h2 { font-size: 15pt; }
+  .prose h3 { font-size: 13pt; }
+  .prose figcaption { font-size: 9pt; }
   .prose table { font-size: 9pt; }
   .table-scroll { overflow: visible; }
   .prose img { max-height: 190mm; }
