@@ -39,9 +39,9 @@ $$
 {% include article-figure.html id="fig-example" %}
 
 | Quantity | Value |
-| --- | --- |
-| Base | $a$ |
-| Height | $h$ |
+| -------- | ----- |
+| Base     | $a$   |
+| Height   | $h$   |
 
 Refer to the [formula](#formula) or [figure](#fig-example).
 

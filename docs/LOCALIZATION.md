@@ -2,10 +2,10 @@
 
 `site.lang: en` selects the default site edition. It does not select the original language of every article. Russian originals may publish immediately without an English version.
 
-| Edition | Project-site URL | Current state |
-|---|---|---|
-| English | `/history_math/` | Coming-soon home, no article cards and empty search index. |
-| Russian | `/history_math/ru/` | First prototype with labeled demo content. |
+| Edition | Project-site URL    | Current state                                              |
+| ------- | ------------------- | ---------------------------------------------------------- |
+| English | `/history_math/`    | Coming-soon home, no article cards and empty search index. |
+| Russian | `/history_math/ru/` | First prototype with labeled demo content.                 |
 
 Every public page has its own canonical built from `site.url + site.baseurl + page.url`. In particular, a Russian article never uses the English homepage as canonical. `translation_key` is a stable work identity, not a slug and not a declaration that a translation already exists.
 

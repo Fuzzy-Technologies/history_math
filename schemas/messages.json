@@ -17,27 +17,9 @@
       "editor": "editorial question"
     },
     "pr": {
-      "selection": {
-        "historical_text": "Selected as the primarily textual historical biography in the archival pilot.",
-        "formula_article": "Selected to exercise mathematical formulas, superscripts and historical numerical claims.",
-        "numerical_table": "Selected for its image table, arithmetic examples and complete system of equations.",
-        "matrix_illustration": "Selected for its illustrated 5 × 5 matrix and a legacy DOC companion requiring additional manual review.",
-        "complex_layout": "Selected for its complex DOCX research layout, historical illustrations and number-circle proof.",
-        "default": "Selected from the author archive for the publication preparation pilot."
-      },
       "publication": "Known earlier publication",
-      "unknown": "not established",
-      "none": "No recorded editorial questions",
-      "converted": "The complete canonical author text, equations, figures, captions, existing notes and bibliography were transferred. A public reconciliation report is included; private source hashes and fragment evidence remain in ignored local files in the site project. FELab metadata and NAS originals serve as read-only sources. The page is a review draft.",
-      "commit": "Checked commit",
       "questions": "Questions for the editor",
-      "preview": "Open the current Actions run",
-      "artifact": "Download and serve the artifact",
-      "page": "Article path inside the review preview",
-      "dependency": "Temporary base: the infrastructure branch in",
-      "retarget": "After the owner accepts infrastructure into develop, retarget this independent article PR to develop and rerun its checks.",
-      "noPublication": "This PR requests editorial review. It does not authorize a merge or website publication.",
-      "serve": "Unzip the artifact. From the infrastructure checkout run `node scripts/serve-review.mjs <unzipped-artifact>/article-preview` and open `http://127.0.0.1:4173/history_math` followed by the article path below. The artifact is retained for 14 days."
+      "preview": "Preview and PDF in CI"
     },
     "pass": "Technical checks passed; editorial review pending.",
     "fail": "Technical checks have blocking errors.",
@@ -59,7 +41,9 @@
     "HM_CONTRACT": "The site-owned article schema or its integrity lock is missing or inconsistent. Update schemas/article-v1.schema.json and schemas/contract-lock.json together in history_math.",
     "HM_REQUIRED": "A required check was not executed. Run it successfully before claiming technical success.",
     "HM_EXTERNAL": "External sources were not fetched. Verify them editorially; this does not imply an invalid source.",
-    "HM_EDITOR": "Question for the editor; technical validation does not resolve it."
+    "HM_EDITOR": "Question for the editor; technical validation does not resolve it.",
+    "HM_REVIEW": "Editorial approval is missing, incomplete or stale. Update the article review record.",
+    "HM_MARKDOWN": "Markdown tables are not aligned. Run python3 tools/markdown_tables.py --write."
   },
   "ru": {
     "details": {
@@ -95,27 +79,9 @@
       "editor": "вопрос редактору"
     },
     "pr": {
-      "selection": {
-        "historical_text": "Материал выбран как преимущественно текстовая историческая биография для архивного пилота.",
-        "formula_article": "Материал выбран для проверки переноса формул, степеней и исторических числовых утверждений.",
-        "numerical_table": "Материал выбран благодаря таблице в рисунке, числовым примерам и полному решению системы уравнений.",
-        "matrix_illustration": "Материал выбран благодаря иллюстрированной матрице 5 × 5 и сопутствующему старому DOC, требующему дополнительной ручной проверки.",
-        "complex_layout": "Материал выбран благодаря сложной вёрстке исследовательского DOCX, историческим иллюстрациям и доказательству для числового круга.",
-        "default": "Материал выбран из авторского архива для пилота подготовки публикаций."
-      },
       "publication": "Известная прежняя публикация",
-      "unknown": "не установлена",
-      "none": "Редакторские вопросы не зарегистрированы",
-      "converted": "Перенесены полный канонический авторский текст, формулы, рисунки, подписи, имеющиеся примечания и библиография. Публичный отчёт сверки включён в PR; частные контрольные суммы и сопоставление фрагментов сохраняются в игнорируемых локальных файлах проекта сайта. Метаданные FELab и оригиналы на NAS служат источниками только для чтения. Страница имеет статус черновика для ревью.",
-      "commit": "Проверенный коммит",
       "questions": "Вопросы редактору",
-      "preview": "Откройте актуальный запуск Actions",
-      "artifact": "Скачайте и откройте через локальный сервер артефакт",
-      "page": "Путь статьи внутри предпросмотра",
-      "dependency": "Временная база — инфраструктурная ветка в",
-      "retarget": "После принятия владельцем инфраструктуры в develop переключите базу этого независимого PR на develop и повторите проверки.",
-      "noPublication": "PR предназначен для редакторского ревью. Слияние и выпуск статьи на сайт не выполняются автоматически.",
-      "serve": "Распакуйте артефакт. Из инфраструктурного checkout запустите `node scripts/serve-review.mjs <unzipped-artifact>/article-preview` и откройте `http://127.0.0.1:4173/history_math` с указанным ниже путём статьи. Артефакт хранится 14 дней."
+      "preview": "Предпросмотр и PDF в CI"
     },
     "pass": "Технические проверки пройдены; ожидается редакторское ревью.",
     "fail": "Технические проверки выявили блокирующие ошибки.",
@@ -137,6 +103,8 @@
     "HM_CONTRACT": "Схема статьи сайта или файл её контрольной суммы отсутствуют либо не согласованы. Обновите schemas/article-v1.schema.json и schemas/contract-lock.json вместе в history_math.",
     "HM_REQUIRED": "Обязательная проверка не выполнена. Запустите её успешно перед техническим подтверждением.",
     "HM_EXTERNAL": "Внешние источники не загружались. Проверьте их редакционно; это не означает ошибку источника.",
-    "HM_EDITOR": "Вопрос редактору; техническая проверка его не разрешает."
+    "HM_EDITOR": "Вопрос редактору; техническая проверка его не разрешает.",
+    "HM_REVIEW": "Редакторское решение отсутствует, не завершено или относится к старой версии. Обновите запись ревью статьи.",
+    "HM_MARKDOWN": "Таблицы Markdown не выровнены. Запустите python3 tools/markdown_tables.py --write."
   }
 }
