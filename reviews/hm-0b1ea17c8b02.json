@@ -17,14 +17,22 @@
     "notes_and_bibliography": "Existing notes, source links and bibliography preserved; research attachments stay private.",
     "automatic": "Source-contract checks and browser/build checks are recorded separately by CI.",
     "manual": "Full canonical text read; numeric table cells and formula transformations compared with the source. Editorial accuracy still requires review.",
-    "editorial_follow_up": "Owner-authorized editorial corrections are recorded in manual_changes and question resolutions; NAS/FELab originals and selected image bytes remain unchanged."
+    "editorial_follow_up": "Owner-authorized editorial corrections are recorded in manual_changes and question resolutions; NAS/FELab originals and selected image bytes remain unchanged.",
+    "comment_blocks": {
+      "checked_on": "2026-10-09",
+      "source_scope": "Complete original article and announcement; associated working documents checked where present.",
+      "markers_found": 0,
+      "nonempty_blocks": 0,
+      "summary": "No comment-placement blocks occur in the complete article or announcement. Existing academy corrections and the biography tags are preserved."
+    }
   },
   "manual_changes": [
     "Original title promoted to the shared page title; original section headings marked as H2.",
     "Operational comment-placement instructions and empty URL fields removed; hashtags moved to metadata.",
     "Internal file markers mapped to figure inventory or retained bibliographic references.",
     "Removed the placeholder section heading; selected existing archive images for card and social previews.",
-    "Added the Персоналии series/tag and corrected the academy distinction with RAS references. The 150 × 200 portrait bytes are unchanged."
+    "Added the Персоналии series/tag and corrected the academy distinction with RAS references. The 150 × 200 portrait bytes are unchanged.",
+    "No comment-placement blocks occur in the complete article or announcement. Existing academy corrections and the biography tags are preserved."
   ],
   "review_version": 1,
   "approval": {
