@@ -19,7 +19,7 @@ jobs:
       contents: read
       pages: read
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -33,6 +33,13 @@ jobs:
           node-version: '22'
           cache: npm
       - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+      - name: Restore incremental PDF cache
+        id: pdf-cache
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .pdf-cache
+          key: pdf-v1-${{ runner.os }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}-${{ github.job }}
+          restore-keys: pdf-v1-${{ runner.os }}-
       - name: Verify approved source and build
         run: |
           npm ci
@@ -43,11 +50,18 @@ jobs:
           node scripts/check-articles.mjs --source-only
           bundle exec ruby tests/publication_test.rb
           node scripts/article-pdf.mjs --site-dir test-results/pdf-fixture
+          node tests/pdf-cache-browser.mjs
           bundle exec jekyll build --trace
           node scripts/article-pdf.mjs
           python3 scripts/check_site.py _site /history_math
           npm run test:browser
           node tests/article-details-browser.mjs
+      - name: Save validated PDF cache
+        if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .pdf-cache
+          key: ${{ steps.pdf-cache.outputs.cache-primary-key }}
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: _site

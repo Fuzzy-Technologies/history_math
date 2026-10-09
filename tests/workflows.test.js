@@ -132,3 +132,24 @@ test('CI uploads compact reports without full-site, screenshots or PDF archives'
   assert.match(uploads[0], /test-results\/article-report.md/);
   assert.doesNotMatch(uploads[0], /article-preview|article-screenshots|article-pdfs|path: _site|path: test-results\s*$/m);
 });
+
+test('PDF caches restore on all builds but only validated master builds save reusable outputs', () => {
+  for (const path of ['.github/workflows/ci.yml', '.github/workflows/deploy.yml']) {
+    const workflow = parse(readFileSync(path, 'utf8'));
+    for (const [name, job] of Object.entries(workflow.jobs)) {
+      if (name === 'deploy') continue;
+      const restore = job.steps.find(step => step.uses?.startsWith('actions/cache/restore@'));
+      assert.equal(restore.with.path, '.pdf-cache');
+      assert.match(restore.with['restore-keys'], /pdf-v1-/);
+      assert.doesNotMatch(JSON.stringify(job.steps.filter(step => step.run)), /cache-hit/);
+      const save = job.steps.find(step => step.uses?.startsWith('actions/cache/save@'));
+      if (name === 'articles') assert.equal(save, undefined); // Review drafts never seed public cache.
+      else {
+        assert.match(save.if, /github.ref == 'refs\/heads\/master'/);
+        assert.match(save.if, /github.event_name != 'pull_request'/);
+        assert.equal(save.with.path, '.pdf-cache');
+        assert.match(save.with.key, /cache-primary-key/);
+      }
+    }
+  }
+});

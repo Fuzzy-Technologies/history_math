@@ -1,0 +1,72 @@
+// Real Chromium regression checks: no renderer mocks or fabricated cache entries.
+import assert from 'node:assert/strict';
+import {cp, readFile, writeFile, mkdir, rm, readdir} from 'node:fs/promises';
+import {resolve, dirname} from 'node:path';
+import {buildPdfs} from '../scripts/article-pdf.mjs';
+
+const root = resolve('test-results/pdf-cache-fixture');
+const cacheDirectory = resolve('test-results/pdf-cache-regression');
+await rm(root, {recursive: true, force: true});
+await rm(cacheDirectory, {recursive: true, force: true});
+await cp('test-results/pdf-fixture', root, {recursive: true});
+const manifestPath = resolve(root, 'assets/article-pdfs.json');
+const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
+// Exercise native Russian and English using a small bounded fixture in CI.
+manifest.articles = [manifest.articles.find(a => a.lang === 'ru'), manifest.articles.find(a => a.lang === 'en')];
+assert.ok(manifest.articles.every(Boolean));
+await writeFile(manifestPath, JSON.stringify(manifest));
+const run = async (rendered, reused, options = {}) => {
+  const result = await buildPdfs(root, {cacheDirectory, ...options});
+  assert.equal(result.rendered, rendered);
+  assert.equal(result.reused, reused);
+};
+await run(2, 0);
+await run(0, 2);
+const article = manifest.articles[0];
+const pagePath = resolve(root, '.' + article.url, 'index.html');
+const original = await readFile(pagePath, 'utf8');
+await writeFile(pagePath, original.replace('<body', '<!-- unrelated menu edit --><body'));
+await run(0, 2);
+await writeFile(pagePath, original.replace('<!-- pdf:body:start -->', '<!-- pdf:body:start --><p>Incremental regression check.</p>'));
+await run(1, 1);
+const cssPath = resolve(root, 'assets/article-print.css');
+await writeFile(cssPath, (await readFile(cssPath, 'utf8')) + '\n@media print { .article-heading { color: #39251b; } }');
+await run(2, 0);
+// One language's print masthead changes: invalidate only that language.
+const logoPath = resolve(root, 'assets/images/Math-with-Mansur-ru.png');
+const logo = await readFile(logoPath);
+await writeFile(logoPath, Buffer.concat([logo, Buffer.from('\n')]));
+await run(1, 1);
+await rm(logoPath);
+await assert.rejects(buildPdfs(root, {cacheDirectory}), /ENOENT/);
+await writeFile(logoPath, Buffer.concat([logo, Buffer.from('\n')]));
+await run(0, 2);
+const namespace = (await readdir(cacheDirectory))[0];
+const cachePath = resolve(cacheDirectory, namespace);
+const damaged = (await readdir(cachePath)).find(name => name.endsWith('.pdf'));
+await writeFile(resolve(cachePath, damaged), '%PDF-broken');
+await run(1, 1);
+await run(2, 0, {force: true});
+// Stale output is removed even when all remaining articles hit the cache.
+manifest.articles = manifest.articles.slice(1);
+await writeFile(manifestPath, JSON.stringify(manifest));
+const stale = resolve(root, '.' + article.pdf_url);
+await mkdir(dirname(stale), {recursive: true});
+await writeFile(stale, 'orphan');
+await run(0, 1);
+await assert.rejects(readFile(stale), /ENOENT/);
+assert.equal((await readdir(cachePath)).filter(name => name.endsWith('.pdf')).length, 1);
+manifest.origin = 'https://example.org';
+await writeFile(manifestPath, JSON.stringify(manifest));
+await run(1, 0);
+await assert.rejects(buildPdfs(root, {cacheDirectory: resolve(root, 'cache')}), /outside/);
+await assert.rejects(buildPdfs(root, {cacheDirectory, jobs: 0}), /PDF jobs/);
+const invalidPath = resolve(root, '.' + manifest.articles[0].url, 'index.html');
+const invalidSource = await readFile(invalidPath, 'utf8');
+await writeFile(invalidPath, invalidSource.replace('<!-- pdf:body:start -->', '<!-- pdf:body:start --><span class="math-source" data-tex="\\undefinedcommand" data-display="true"></span>'));
+await assert.rejects(buildPdfs(root, {cacheDirectory}), /PDF render failed/);
+manifest.articles = [];
+await writeFile(manifestPath, JSON.stringify(manifest));
+await run(0, 0);
+assert.equal((await readdir(resolve(root, 'assets'))).includes('pdf'), false);
+console.log('Incremental PDF browser checks passed');

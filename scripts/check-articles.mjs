@@ -13,8 +13,8 @@ const commit = option('--commit', process.env.PR_HEAD_SHA ?? spawnSync('git', ['
 const report = {version: 1, commit, branch, language: reportLanguage(branch), checks: Object.fromEntries(requiredChecks.map(key => [key, 'not_run'])), findings: [], articles: [], pages: []};
 if (process.env.GITHUB_RUN_ID && process.env.GITHUB_REPOSITORY) report.artifact_url = `${process.env.GITHUB_SERVER_URL ?? 'https://github.com'}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
 mkdirSync('test-results', {recursive: true});
-const run = (code, executable, params) => {
-  const result = spawnSync(executable, params, {encoding: 'utf8', shell: false, timeout: 180000, env: {...process.env, PYTHONIOENCODING: 'utf-8'}});
+const run = (code, executable, params, timeout = 180000) => {
+  const result = spawnSync(executable, params, {encoding: 'utf8', shell: false, timeout, env: {...process.env, PYTHONIOENCODING: 'utf-8'}});
   if (result.error || result.status !== 0) {
     // Diagnostics contain only the public checkout and its tool output, never editorial source locations.
     report.findings.push({code, severity: 'error', detail: (result.error?.message ?? (result.stderr + result.stdout)).slice(-6000)});
@@ -41,7 +41,7 @@ try {
       report.checks.build = run('HM_BUILD', option('--bundle', 'bundle'), ['exec', 'jekyll', 'build', '--config', '_config.yml,_config.review.yml', '--trace']) ? 'pass' : 'fail';
       if (report.checks.build === 'pass') writeFileSync(resolve(preview, 'review-build.json'), JSON.stringify({commit, jekyll: 'pass'}));
     }
-    if (report.checks.build === 'pass' && !run('HM_BUILD', process.execPath, ['scripts/article-pdf.mjs', '--site-dir', preview])) report.checks.build = 'fail';
+    if (report.checks.build === 'pass' && !run('HM_BUILD', process.execPath, ['scripts/article-pdf.mjs', '--site-dir', preview], 45 * 60 * 1000)) report.checks.build = 'fail';
     if (report.checks.build === 'pass') {
       report.checks.output = run('HM_OUTPUT', option('--python', process.env.PYTHON_EXECUTABLE ?? 'python3'), ['scripts/check_site.py', preview, '/history_math']) ? 'pass' : 'fail';
       const browser = await checkBrowser(preview, report.articles, resolve('test-results/article-screenshots'));
