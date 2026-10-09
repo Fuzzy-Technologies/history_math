@@ -18,6 +18,17 @@ export function validateManifest(manifest) {
   return manifest;
 }
 
+// Rewrite only the private PDF server response, before browser preload discovery.
+// Public HTML keeps previews and inert original URLs for the interactive viewer.
+export function printImageSources(html) {
+  return html.replace(/<img\b[^>]*>/gi, tag => {
+    const original = tag.match(/\sdata-original="([^"]+)"/);
+    if (!original) return tag;
+    return tag.replace(/\ssrc="[^"]*"/, () => ` src="${original[1]}"`)
+      .replace(/\s(?:srcset|sizes)="[^"]*"/g, '');
+  });
+}
+
 export async function buildPdfs(siteDirectory) {
   const root = resolve(siteDirectory);
   const manifest = validateManifest(JSON.parse(await readFile(resolve(root, 'assets/article-pdfs.json'), 'utf8')));
@@ -32,7 +43,8 @@ export async function buildPdfs(siteDirectory) {
       if (!path.startsWith(root + sep)) { response.writeHead(403).end(); return; }
       if ((await stat(path)).isDirectory()) path = resolve(path, 'index.html');
       response.setHeader('Content-Type', mime[extname(path)] ?? 'application/octet-stream');
-      response.end(await readFile(path));
+      const bytes = await readFile(path);
+      response.end(extname(path) === '.html' ? printImageSources(bytes.toString('utf8')) : bytes);
     } catch { response.writeHead(404).end(); }
   });
   await new Promise(done => server.listen(0, '127.0.0.1', done));
@@ -45,7 +57,7 @@ export async function buildPdfs(siteDirectory) {
       const errors = [];
       page.on('pageerror', error => errors.push(error.message));
       page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
-      page.on('requestfailed', request => errors.push(request.url()));
+      page.on('requestfailed', request => errors.push(`${request.url()} (${request.failure()?.errorText})`));
       page.on('response', response => { if (response.status() >= 400) errors.push(`${response.status()} ${response.url()}`); });
       await page.route('**/*', route => new URL(route.request().url()).origin === localOrigin ? route.continue() : route.abort());
       await page.emulateMedia({media: 'print', colorScheme: 'light'});
@@ -54,15 +66,6 @@ export async function buildPdfs(siteDirectory) {
       await page.evaluate(async () => {
         document.documentElement.dataset.theme = 'light';
         for (const img of document.images) img.loading = 'eager';
-        // Finish preview requests before replacing their sources, so Chromium does
-        // not report self-inflicted request cancellations during PDF validation.
-        await Promise.all([...document.images].map(img => img.decode()));
-        // Only the build-time PDF renderer loads originals without viewer interaction.
-        for (const img of document.querySelectorAll('.print-masthead img, .article-body img')) {
-          if (!img.dataset.original) continue;
-          img.removeAttribute('srcset');
-          img.src = img.dataset.original;
-        }
         await Promise.all([...document.images].map(img => img.decode()));
         await document.fonts.ready;
       });

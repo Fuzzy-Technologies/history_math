@@ -49,6 +49,12 @@ try {
     assert.deepEqual(failures, [], path);
     assert.deepEqual(requests.filter(url => /\.(png|jpe?g)$/i.test(url)), [], `Original fetched before zoom: ${path}`);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false, path);
+    for (const image of await page.locator('.article-body img[data-original]').all()) {
+      const identity = (await image.getAttribute('data-original')).slice(base.length);
+      const bounds = await image.boundingBox();
+      assert.ok(bounds.width <= inventory[identity].width + 2, 'Small originals must not be upscaled by responsive sizing');
+      assert.ok(bounds.height <= inventory[identity].height + 2);
+    }
     const originalPaths = await page.locator('img[data-original]').evaluateAll(images => [...new Set(images.map(img => img.dataset.original))]);
     const originalBytes = originalPaths.reduce((sum, url) => sum + inventory[url.slice(base.length)].bytes, 0);
     const readingBytes = (await Promise.all([...new Set(requests)].map(async url => (await stat(root + url.slice(base.length))).size))).reduce((a, b) => a + b, 0);
