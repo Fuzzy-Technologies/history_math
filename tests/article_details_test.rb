@@ -14,6 +14,7 @@ class ArticleDetailsTest < Minitest::Test
       source = File.join(root, "site")
       FileUtils.cp_r(File.expand_path("../site", __dir__), source)
       FileUtils.cp_r(File.expand_path("../schemas", __dir__), File.join(root, "schemas"))
+      FileUtils.cp_r(File.expand_path("../reviews", __dir__), File.join(root, "reviews"))
       config = Jekyll.configuration("config" => File.expand_path("../_config.yml", __dir__),
         "source" => source, "destination" => File.join(root, "output"), "quiet" => true)
       yield source, config
