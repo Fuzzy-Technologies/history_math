@@ -7,7 +7,7 @@ translation_key: about
 status: published
 permalink: /about/
 ---
-<figure class="about-banner"><img src="{{ '/assets/images/Math-with-Mansur.png' | relative_url }}" alt="Math with Mansur — a portrait of Mansur and mathematical symbols in sepia" width="2048" height="682"></figure>
+<figure class="about-banner"><img src="{{ '/assets/images/Math-with-Mansur.png' | relative_url }}" alt="Math with Mansur" width="2048" height="682"></figure>
 
 ## Editors
 
@@ -21,7 +21,7 @@ permalink: /about/
 
 Our publications are available on [Telegram](https://t.me/history_math) and [Teletype](https://teletype.in/@history_math). Earlier articles can be found in the [blog archive](https://history-math.blogspot.com/).
 
-The website publishes original articles after editorial preparation. Russian articles remain available whether or not a translation exists; English article pages indicate when a translation is still in preparation.
+The website publishes original articles after editorial preparation.
 
 ## About the project
 

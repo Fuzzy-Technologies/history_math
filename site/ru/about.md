@@ -7,7 +7,7 @@ translation_key: about
 status: published
 permalink: /ru/about/
 ---
-<figure class="about-banner"><img src="{{ '/assets/images/Math-with-Mansur-ru.svg' | relative_url }}" alt="Математика с Мансур-абый — портрет Мансура и математические символы в сепии" width="2048" height="682"></figure>
+<figure class="about-banner"><img src="{{ '/assets/images/Math-with-Mansur-ru.svg' | relative_url }}" alt="Математика с Мансур-абый" width="2048" height="682"></figure>
 
 ## Редакция
 
@@ -21,7 +21,7 @@ permalink: /ru/about/
 
 Наши публикации уже есть в [Telegram](https://t.me/history_math) и на [Teletype](https://teletype.in/@history_math). Старые статьи сохранились в [архиве блога](https://history-math.blogspot.com/).
 
-На сайте публикуются авторские статьи после редакционной подготовки. Русские статьи доступны независимо от наличия перевода; на английских страницах материалов указано, когда перевод ещё готовится.
+На сайте публикуются авторские статьи после редакционной подготовки.
 
 ## О проекте
 
