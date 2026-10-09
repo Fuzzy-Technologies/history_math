@@ -28,6 +28,13 @@ try {
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
     page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
+    await page.goto(`${origin}/ru/`, {waitUntil: 'networkidle'});
+    assert.equal(await page.locator('.demo-strip').count(), 0);
+    const latest = await page.locator('#latest-cards .card-image').evaluateAll(links => links.map(link => link.getAttribute('href')));
+    assert.deepEqual(latest.slice().sort(), ids.map(id => `/history_math/ru/articles/${id}/`).sort());
+    assert.equal(await page.locator('.cover-bottom a').getAttribute('href'), latest[0]);
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false);
+    await page.screenshot({path: `test-results/notice-screenshots/russian-home-${width}.png`, fullPage: true});
     await page.goto(`${origin}/`, {waitUntil: 'networkidle'});
     for (const id of ids) assert.equal(await page.locator(`main a[href="/history_math/articles/${id}/"]`).count(), 1);
     await page.screenshot({path: `test-results/notice-screenshots/home-${width}.png`, fullPage: true});

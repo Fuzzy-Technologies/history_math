@@ -34,4 +34,6 @@ Each pilot article has an English title and short description in `_data/english_
 
 The browser fixture temporarily approves copies of the five articles inside the test directory to validate the final navigation and home-page list. These fixture approvals are not editorial decisions and do not alter `reviews/`.
 
+When real articles are published, the Russian home, catalog and about page stop claiming that only demos exist. The cover links to the newest published article. Existing demo pages retain their explicit labels. Browser regression checks use the current article index and actual card destinations, so the suite also works after the five articles enter the catalog. A complete local release-fixture run can use `BROWSER_SITE_DIR=test-results/notices-fixture node tests/browser.mjs` after running `bundle exec ruby tests/translation_notices_test.rb`.
+
 Read the current report from the linked CI run. Reproduce visual evidence locally as described in [the preparation procedure](ARTICLE_PREPARATION.md).

@@ -640,7 +640,7 @@ main,
   counter-increment: archive;
   height: auto;
   overflow: visible;
-  min-height: 340px;
+  min-height: var(--archive-card-height, 340px);
 }
 .archive-card:first-child {
   border-left: 0;
@@ -1783,7 +1783,7 @@ input::placeholder {
     border-left: 0;
     border-top: 1px solid var(--line);
     padding: 24px 0 10px 48px;
-    height: 175px;
+    height: auto;
   }
   .archive-card::before {
     position: absolute;
@@ -2039,7 +2039,7 @@ input::placeholder {
   }
   .archive-card,
   .archive-card:first-child {
-    min-height: 280px;
+    min-height: var(--archive-card-height, 280px);
     height: auto;
     padding-left: 43px;
   }

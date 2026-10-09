@@ -63,8 +63,9 @@ export async function runCarouselChecks({browser, origin, evidence, axe, report,
     assert.equal(page.url(), home, 'Dragging followed the article link');
     assert.equal(await carousel.evaluate(node => node.classList.contains('is-dragging')), false);
     if (reducedMotion === 'reduce') await page.screenshot({path: `${evidence}/free-carousel-${theme}-desktop.jpg`, fullPage: false});
+    const destination = new URL(await page.locator('.card-image').first().getAttribute('href'), home).href;
     await page.locator('.card-image').first().click();
-    await page.waitForURL('**/demo-geometry/');
+    await page.waitForURL(destination);
     await copyChecks(page);
     checked(`${theme}, ${reducedMotion}: exact forward/backward wheel and horizontal scrolling, 73px drag with no release snapping, ordinary links and updated headings`);
     await context.close();
