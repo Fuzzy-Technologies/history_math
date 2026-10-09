@@ -8,7 +8,24 @@ require "json"
 require "digest"
 require "yaml"
 
+require_relative "../site/_plugins/external_urls"
+
 class ArticleDetailsTest < Minitest::Test
+  def test_external_urls_select_verified_locales_without_changing_resources
+    filter = Object.new.extend(HistoryMath::ExternalUrls)
+    assert_equal "https://fuzzy-technologies.github.io/ru/", filter.external_url("https://fuzzy-technologies.github.io/", "ru")
+    assert_equal "https://fuzzy-technologies.github.io/", filter.external_url("https://fuzzy-technologies.github.io/ru/", "en")
+    assert_equal "https://history-math.blogspot.com/?m=1&hl=ru#archive", filter.external_url("https://history-math.blogspot.com/?m=1&hl=en#archive", "ru")
+    assert_equal "https://history-math.blogspot.com/?hl=en", filter.external_url("https://history-math.blogspot.com/", "en")
+    url = "https://commons.wikimedia.org/wiki/File:Écu_louis_XII.jpg"
+    assert_equal url + "?uselang=ru", filter.external_url(url, "ru")
+    assert_equal "https://creativecommons.org/licenses/by-sa/3.0/deed.ru", filter.external_url("https://creativecommons.org/licenses/by-sa/3.0/", "ru")
+    assert_equal "https://creativecommons.org/licenses/by-sa/3.0/deed.en", filter.external_url("https://creativecommons.org/licenses/by-sa/3.0/deed.ru", "en")
+    %w[https://ridero.ru/books/bibliya_matematika/ https://t.me/tribute/app?startapp=hbuz https://oeis.org/A000396 /ru/articles/example/ https://fuzzy-technologies.github.io/history_math/ru/ https://creativecommons.org/licenses/by-sa/3.0/legalcode https://fuzzy-technologies.github.io.example.com/].each do |original|
+      assert_equal original, filter.external_url(original, "ru")
+    end
+  end
+
   def with_site
     Dir.mktmpdir("history-math-details") do |root|
       source = File.join(root, "site")
