@@ -5,7 +5,7 @@ import {chromium} from 'playwright';
 
 export async function checkBrowser(root, articles, evidence) {
   await mkdir(evidence, {recursive: true});
-  const mime = {'.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.jpg': 'image/jpeg', '.png': 'image/png', '.woff2': 'font/woff2'};
+  const mime = {'.pdf': 'application/pdf', '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.jpg': 'image/jpeg', '.png': 'image/png', '.woff2': 'font/woff2'};
   const server = createServer(async (request, response) => {
     try {
       const url = new URL(request.url, 'http://localhost');
@@ -22,7 +22,7 @@ export async function checkBrowser(root, articles, evidence) {
   const findings = [];
   const pages = [];
   try {
-    browser = await chromium.launch({headless: true});
+    browser = await chromium.launch({headless: true, executablePath: process.env.BROWSER_EXECUTABLE || undefined});
     for (const viewport of [{name: 'wide', width: 1440, height: 1000}, {name: 'narrow', width: 390, height: 844}, {name: 'small', width: 320, height: 640}]) {
       for (const article of articles) {
         const page = await browser.newPage({viewport, reducedMotion: 'reduce'});
@@ -76,10 +76,9 @@ export async function checkBrowser(root, articles, evidence) {
         if (state.overflow || state.formulaOverflow || state.tableOverflow || !state.tableRegions || !state.imageSizing || state.unrendered || state.visibleUrls.length || state.missingAnchors.length || state.formulas !== article.formulas || state.images !== article.figures) issues.push(JSON.stringify(state));
         const screenshot = `${evidence}/${article.id}-${viewport.name}.png`;
         await page.screenshot({path: screenshot, fullPage: true});
-        if (viewport.name === 'wide') {
-          await mkdir(resolve(evidence, '../article-pdfs'), {recursive: true});
-          await page.pdf({path: resolve(evidence, '../article-pdfs', `${article.id}.pdf`), format: 'A4', printBackground: true, margin: {top: '12mm', bottom: '12mm', left: '12mm', right: '12mm'}});
-        }
+        const pdfLink = page.locator('.article-pdf');
+        const pdfResponse = await page.request.get(new URL(await pdfLink.getAttribute('href'), page.url()).href);
+        if (pdfResponse.status() !== 200 || (await pdfResponse.body()).subarray(0, 5).toString() !== '%PDF-') issues.push('Missing article PDF');
         pages.push({id: article.id, viewport: viewport.name, ...state, screenshot: relative(resolve('test-results'), screenshot).split(sep).join('/')});
         for (const detail of issues) findings.push({code: 'HM_BROWSER', severity: 'error', file: article.file, detail});
         await page.close();

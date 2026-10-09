@@ -30,6 +30,7 @@
   <link rel="icon" href="{{ '/assets/images/favicon-m2.svg' | relative_url }}?v={{ asset_version }}" type="image/svg+xml" sizes="any">
   <link rel="preload" href="{{ '/assets/fonts/pt-serif-regular.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}?v={{ asset_version }}">
+  {% if page.layout == 'article' %}<link rel="stylesheet" href="{{ '/assets/article-print.css' | relative_url }}?v={{ asset_version }}">{% endif %}
   <script type="module" src="{{ '/assets/app.js' | relative_url }}?v={{ asset_version }}"></script>
   {% if page.math %}
   <link rel="stylesheet" href="{{ '/assets/vendor/katex/katex.min.css' | relative_url }}">

@@ -7,7 +7,8 @@
     "check:articles": "node scripts/check-articles.mjs",
     "test:browser": "node tests/browser.mjs",
     "format:markdown": "python3 tools/markdown_tables.py --write",
-    "check:markdown": "python3 tools/markdown_tables.py"
+    "check:markdown": "python3 tools/markdown_tables.py",
+    "build:pdf": "node scripts/article-pdf.mjs"
   },
   "devDependencies": {
     "ajv": "8.20.0",
