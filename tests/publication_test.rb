@@ -12,6 +12,7 @@ class PublicationTest < Minitest::Test
       source = File.join(root, "site")
       FileUtils.cp_r(File.expand_path("../site", __dir__), source)
       FileUtils.cp_r(File.expand_path("../schemas", __dir__), File.join(root, "schemas"))
+      FileUtils.cp_r(File.expand_path("../reviews", __dir__), File.join(root, "reviews"))
       config = Jekyll.configuration("config" => File.expand_path("../_config.yml", __dir__),
         "source" => source, "destination" => File.join(root, "output"), "quiet" => true)
       yield source, config
@@ -109,12 +110,13 @@ class PublicationTest < Minitest::Test
         .sub("translation_key: demo-geometry", "translation_key: pdf-example")
         .sub("permalink: /ru/articles/demo-geometry/", "permalink: /articles/pdf-example/")
       File.write(File.join(source, "_articles/pdf-example.md"), text)
+      File.write(File.join(source, "_articles/pdf-draft.md"), File.read(File.expand_path("../templates/minimal-article.md", __dir__)))
       site = Jekyll::Site.new(config)
       site.process
       manifest = JSON.parse(File.read(File.join(site.dest, "assets/article-pdfs.json")))
       assert_equal "/history_math", manifest["baseurl"]
       assert_equal %w[en ru], manifest["articles"].map { |item| item["lang"] }.uniq.sort
-      refute manifest["articles"].any? { |item| item["url"].include?("hm-") }
+      refute manifest["articles"].any? { |item| item["url"].include?("example-minimal") }
       en = File.read(File.join(site.dest, "articles/pdf-example/index.html"))
       assert_includes en, "/history_math/assets/pdf/en/pdf-example.pdf"
       assert_includes en, "/history_math/assets/images/Math-with-Mansur-logo.png"
