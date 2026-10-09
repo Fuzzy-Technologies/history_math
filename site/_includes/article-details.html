@@ -1,0 +1,31 @@
+{% assign ru_details = false %}{% if page.lang == 'ru' %}{% assign ru_details = true %}{% endif %}
+{% assign citation_names = page.authors %}{% unless citation_names %}{% assign citation_names = page.author | split: '||' %}{% endunless %}
+<details class="article-details">
+  <summary>{% if ru_details %}Выходные данные статьи{% else %}Article publication details{% endif %}</summary>
+  <div class="article-details-content">
+    <dl>
+      <dt>{% if ru_details %}Автор{% else %}Author{% endif %}</dt><dd>{{ page.author | escape }}</dd>
+      <dt>{% if ru_details %}Издание{% else %}Publication{% endif %}</dt><dd>{% if ru_details %}Математика с Мансур-абый{% else %}Mathematics with Mansur{% endif %}</dd>
+      <dt>{% if ru_details %}Язык{% else %}Language{% endif %}</dt><dd>{% if ru_details %}Русский{% else %}English{% endif %}</dd>
+      {% if page.status == 'published' %}<dt>{% if ru_details %}Опубликовано на сайте{% else %}Published on this website{% endif %}</dt><dd><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d.%m.%Y' }}</time></dd>{% endif %}
+      {% if page.updated %}<dt>{% if ru_details %}Обновлено{% else %}Updated{% endif %}</dt><dd><time datetime="{{ page.updated }}">{{ page.updated | date: '%d.%m.%Y' }}</time></dd>{% endif %}
+      {% if page.original_publication %}<dt>{% if ru_details %}Прежняя публикация{% else %}Previous publication{% endif %}</dt><dd>{{ page.original_publication.outlet | escape }}{% if page.original_publication.date %} · {{ page.original_publication.date | date: '%d.%m.%Y' }}{% endif %}</dd>{% endif %}
+      {% if page.status == 'published' %}<dt>{% if ru_details %}Постоянная ссылка{% else %}Permanent link{% endif %}</dt><dd><a href="{{ page.url | absolute_url }}">{% if ru_details %}Страница статьи{% else %}Article page{% endif %}</a></dd>{% endif %}
+    </dl>
+    {% if page.status == 'published' %}
+      {% assign citation_date = page.updated | default: page.date %}
+      <p class="citation-label">{% if ru_details %}Для цитирования · ГОСТ Р 7.0.108–2022{% else %}Cite this article · APA 7{% endif %}</p>
+      {% if ru_details %}
+      <p class="article-citation" data-article-citation>{% if citation_names.size < 4 %}{{ citation_names | citation_authors: 'ru' | escape }} {{ page.title | escape }}{% else %}{{ page.title | escape }} / {{ citation_names | citation_authors: 'ru' | escape }}{% endif %} // Математика с Мансур-абый : сайт. {{ page.date | date: '%Y' }}. {% if page.updated %}Дата обновления: {{ page.updated | date: '%d.%m.%Y' }}. {% endif %}URL: <a href="{{ page.url | absolute_url }}">{{ page.url | absolute_url }}</a> (дата обращения: <span data-citation-access>дд.мм.гггг</span>). Дата публикации: {{ page.date | date: '%d.%m.%Y' }}.</p>
+      <label class="citation-date-label">Дата обращения <input type="date" data-citation-date aria-describedby="citation-date-help"></label>
+      <p class="citation-help" id="citation-date-help">Укажите день, когда вы читали статью. Он будет включён в ссылку для цитирования.</p>
+      {% else %}
+      <p class="article-citation" data-article-citation>{{ citation_names | citation_authors: 'en' | escape }} ({{ citation_date | date: '%Y, %B %-d' }}). <em>{{ page.title | escape }}</em>. Mathematics with Mansur. <a href="{{ page.url | absolute_url }}">{{ page.url | absolute_url }}</a></p>
+      {% endif %}
+      <button type="button" data-copy-citation hidden>{% if ru_details %}Скопировать ссылку для цитирования{% else %}Copy citation{% endif %}</button>
+      <span class="citation-copy-status" role="status" aria-live="polite"></span>
+    {% else %}
+      <p class="citation-help">{% if page.status == 'demo' %}{% if ru_details %}Это демонстрационный материал, не авторская публикация.{% else %}This is demonstration material, not an authored publication.{% endif %}{% else %}{% if ru_details %}Статья ещё не опубликована. Дата и ссылка для цитирования появятся после публикации.{% else %}This article is not yet published. Its publication date and citation will appear after publication.{% endif %}{% endif %}</p>
+    {% endif %}
+  </div>
+</details>
