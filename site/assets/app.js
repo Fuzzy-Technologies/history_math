@@ -1,12 +1,17 @@
 const assetVersion = new URL(import.meta.url).search;
-const [{search, searchByTag, selection, anniversaries, journalGroups}, {enhanceSelect}, {rememberReadingPosition}] = await Promise.all([
+const [{search, searchByTag, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}] = await Promise.all([
   import('./core.js' + assetVersion),
   import('./select.js' + assetVersion),
   import('./reading-position.js' + assetVersion)
 ]);
 
 const language = document.body.dataset.lang;
-const labels = {essay: 'Очерк', problem: 'Задача', instrument: 'Инструмент', note: 'Заметка'};
+const ru = language === 'ru';
+const labels = ru ? {essay: 'Очерк', problem: 'Задача', instrument: 'Инструмент', note: 'Заметка'} :
+  {essay: 'Essay', problem: 'Problem', instrument: 'Instrument', note: 'Note'};
+const pendingLabel = ru ? 'Русский оригинал · Перевод готовится' : 'Russian original · Translation pending';
+const searchPrompt = ru ? 'Введите слово или фразу, чтобы начать поиск.' : 'Enter a word or phrase to start searching.';
+
 
 document.querySelectorAll('.prose table').forEach((table, index) => {
   const region = element('div', 'table-scroll');
@@ -225,13 +230,15 @@ function element(tag, className, text) {
 }
 function card(record, className) {
   const node = element('article', className);
-  const suffix = record.status === 'demo' ? ' · Демо' : '';
+  const suffix = record.status === 'demo' ? (ru ? ' · Демо' : ' · Demo') : '';
   node.append(element('p', 'eyebrow', `${labels[record.type]}${suffix}`));
   const heading = element('h3', '');
   const link = element('a', '', record.title);
   link.href = record.url;
   heading.append(link);
-  node.append(heading, element('p', '', record.description));
+  node.append(heading);
+  if (record.translation_notice) node.append(element('p', 'translation-label', pendingLabel));
+  node.append(element('p', '', record.description));
   const topics = element('div', 'tag-list');
   for (const tag of record.tags) {
     const link = element('a', 'tag', tag);
@@ -272,7 +279,7 @@ if (carousel) {
     controls.hidden = !wide.matches || !overflow;
 
     carousel.tabIndex = wide.matches && overflow ? 0 : -1;
-    carousel.setAttribute('aria-label', wide.matches ? 'Новые материалы: стрелки, перетаскивание или колёсико' : 'Новые материалы');
+    carousel.setAttribute('aria-label', ru ? (wide.matches ? 'Новые материалы: стрелки, перетаскивание или колёсико' : 'Новые материалы') : (wide.matches ? 'New materials: use arrows, drag or scroll' : 'New materials'));
     buttons[0].disabled = carousel.scrollLeft <= 2;
     buttons[1].disabled = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 2;
 
@@ -362,24 +369,29 @@ if (archive) {
   loadIndex().then(async records => {
     const groups = journalGroups(records, language);
     const pool = groups.archive;
-    archive.closest('.archive-section').hidden = !pool.length;
     const hero = document.querySelector('#hero-picks');
-    if (hero) {
-      const picks = selection(groups.featured, 4);
+    if (hero && groups.featured.length) {
+      const heroKey = `history-math:featured:${language}`;
+      let previous = [];
+      try {
+        const saved = JSON.parse(localStorage.getItem(heroKey));
+        if (Array.isArray(saved) && saved.every(url => typeof url === 'string')) previous = saved.slice(0, 4);
+      } catch {}
+      const picks = selection(groups.featured, 4, previous);
+      try { localStorage.setItem(heroKey, JSON.stringify(picks.map(record => record.url))); } catch {}
       hero.replaceChildren(...picks.map(record => {
         const link = element('a', 'hero-pick');
         link.href = record.url;
         if (record.preview_image) {
           const image = document.createElement('img');
-          image.src = record.preview_image; image.alt = ''; image.width = 160; image.height = 160;
+          image.src = record.preview_image; image.alt = ''; image.width = 120; image.height = 120;
           image.loading = 'lazy'; image.decoding = 'async';
           link.append(image);
         }
         link.append(element('span', '', record.title));
+        if (record.translation_notice) link.append(element('small', '', pendingLabel));
         return link;
       }));
-      hero.hidden = !picks.length;
-      hero.closest('.journal-hero').classList.toggle('without-picks', !picks.length);
     }
     // Reserve enough space for any article, including long archival titles and tags.
     function reserveArchiveSpace() {
@@ -410,30 +422,19 @@ if (archive) {
       if (Array.isArray(saved) && saved.every(url => typeof url === 'string')) previous = saved.slice(0, 4);
     } catch {}
     function rotate() {
+      if (!pool.length) return;
       const picked = selection(pool, 4, previous);
       previous = picked.map(record => record.url);
       try { localStorage.setItem(storageKey, JSON.stringify(previous)); } catch {}
       archive.replaceChildren(...picked.map(record => card(record, 'archive-card')));
-      document.querySelector('#archive-status').textContent = 'Подборка обновлена: ' + picked.map(record => record.title).join(', ');
+      document.querySelector('#archive-status').textContent = (ru ? 'Подборка обновлена: ' : 'Selection updated: ') + picked.map(record => record.title).join(', ');
     }
     rotate();
     const button = document.querySelector('#reshuffle');
     button.hidden = pool.length <= 4;
     button.addEventListener('click', rotate);
     window.addEventListener('pageshow', event => { if (event.persisted) rotate(); });
-    const matches = anniversaries(records.filter(record => record.status === 'published'), new Date(), language);
-    if (matches.length) {
-      document.querySelector('.anniversary-panel').hidden = false;
-      document.querySelector('#anniversary-heading').textContent = 'В этот день мы писали';
-      document.querySelector('#anniversary-note').textContent = 'Вспоминаем статьи, опубликованные в этот день.';
-      const result = document.querySelector('#anniversary-result');
-      result.replaceChildren(...matches.map(record => {
-        const link = element('a', '', `${record.title} (${record.date.slice(0, 4)}) →`);
-        link.href = record.url;
-        return link;
-      }));
-    }
-  }).catch(() => { document.querySelector('#archive-status').textContent = 'Показана исходная подборка.'; });
+  }).catch(() => { document.querySelector('#archive-status').textContent = ru ? 'Показана исходная подборка.' : 'Showing the original selection.'; });
 }
 
 const form = document.querySelector('#search-form');
@@ -456,19 +457,19 @@ if (form) {
     topic.querySelector('strong').textContent = activeTag;
     if (!query && !activeTag) {
       results.replaceChildren();
-      status.textContent = 'Введите слово или фразу, чтобы начать поиск.';
+      status.textContent = searchPrompt;
       return;
     }
-    status.textContent = 'Ищем…';
+    status.textContent = ru ? 'Ищем…' : 'Searching…';
     try {
       const records = await loadIndex();
       if (request !== requestNumber) return;
       const matches = activeTag ? searchByTag(records, activeTag, language) : search(records, query, language);
       results.replaceChildren(...matches.map(record => card(record, 'search-result')));
-      status.textContent = matches.length ? `Найдено материалов: ${matches.length}` : 'Ничего не найдено. Попробуйте другое слово или тему.';
+      status.textContent = matches.length ? (ru ? `Найдено материалов: ${matches.length}` : `Articles found: ${matches.length}`) : (ru ? 'Ничего не найдено. Попробуйте другое слово или тему.' : 'No matches. Try another word or topic.');
     } catch {
       if (request !== requestNumber) return;
-      status.textContent = 'Поиск временно недоступен. Откройте раздел «Материалы».';
+      status.textContent = ru ? 'Поиск временно недоступен. Откройте раздел «Материалы».' : 'Search is temporarily unavailable. Open the reading room.';
     }
   }
   let timer;
@@ -498,7 +499,7 @@ if (controls) {
         (tag.value && !node.dataset.tags.split('|').includes(tag.value)));
       if (!node.hidden) visible += 1;
     }
-    document.querySelector('#catalog-count').textContent = `Материалов: ${visible}`;
+    document.querySelector('#catalog-count').textContent = ru ? `Материалов: ${visible}` : `Articles: ${visible}`;
     document.querySelector('#catalog-empty').hidden = visible !== 0;
   }
   type.addEventListener('change', filter);

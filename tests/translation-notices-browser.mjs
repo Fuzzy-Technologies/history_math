@@ -36,7 +36,7 @@ try {
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false);
     await page.screenshot({path: `test-results/notice-screenshots/russian-home-${width}.png`, fullPage: true});
     await page.goto(`${origin}/`, {waitUntil: 'networkidle'});
-    for (const id of ids) assert.equal(await page.locator(`main a[href="/history_math/articles/${id}/"]`).count(), 1);
+    for (const id of ids) assert.equal(await page.locator(`#latest-cards h3 a[href="/history_math/articles/${id}/"]`).count(), 1);
     await page.screenshot({path: `test-results/notice-screenshots/home-${width}.png`, fullPage: true});
     for (const id of ids) {
       assert.equal((await page.goto(`${origin}/articles/${id}/`, {waitUntil: 'networkidle'})).status(), 200);

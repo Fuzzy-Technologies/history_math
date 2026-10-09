@@ -7,7 +7,4 @@ translation_key: catalog
 status: published
 permalink: /ru/materials/
 ---
-{% assign published_articles = site.articles | where: 'lang', 'ru' | where: 'status', 'published' %}
-<section class="page-heading"><p class="eyebrow">По темам</p><h1>{{ page.title }}</h1><p class="lead">{{ page.description }}</p>{% if published_articles.size == 0 %}<p class="quiet">Пока здесь размещены пробные материалы для проверки сайта.</p>{% endif %}</section>
-<div class="catalog-controls" hidden><div class="filter-field"><label id="type-filter-label" for="type-filter">Тип материала</label><select id="type-filter"><option value="">Все типы</option><option value="essay">Очерки</option><option value="problem">Задачи</option><option value="instrument">Инструменты</option><option value="note">Заметки</option></select></div><div class="filter-field"><label id="tag-filter-label" for="tag-filter">Тема</label><select id="tag-filter"><option value="">Все темы</option>{% assign tags = site.articles | where: 'lang', 'ru' | map: 'tags' | join: '|' | split: '|' | uniq | sort %}{% for tag in tags %}<option>{{ tag }}</option>{% endfor %}</select></div><p id="catalog-count" role="status"></p></div>
-<section class="catalog-list card-grid" aria-label="Материалы журнала">{% assign articles = site.articles | where: 'lang', 'ru' | sort: 'date' | reverse %}{% for article in articles %}{% include card.html article=article number=forloop.index %}{% endfor %}</section><p id="catalog-empty" class="empty-state" hidden>Таких материалов пока нет. Попробуйте другую тему или уберите фильтр.</p>
+{% include journal-catalog.html %}

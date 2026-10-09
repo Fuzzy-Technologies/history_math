@@ -3,7 +3,7 @@
 module HistoryMath
   class TranslationNotices < Jekyll::Generator
     safe false
-    priority :normal
+    priority :high
 
     def generate(site)
       articles = site.collections.fetch("articles").docs
@@ -20,7 +20,8 @@ module HistoryMath
         page.data.merge!({"layout" => "translation-notice", "title" => text.fetch("title"),
           "description" => text.fetch("description"), "lang" => "en", "status" => original.data["status"],
           "permalink" => url, "original_url" => original.url, "translation_notice" => true,
-          "sitemap" => false, "noindex" => true})
+          "date" => original.data["date"], "type" => original.data["type"], "tags" => [],
+          "preview_image" => original.data["preview_image"], "sitemap" => false, "noindex" => true})
         # The notice is not a translated article: no translation_key, hreflang or article index record.
         original.data["english_notice_url"] = url
         site.pages << page

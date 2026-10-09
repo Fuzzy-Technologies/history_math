@@ -46,9 +46,9 @@ Keep `approval: {"status": "pending"}` until a human editor approves. To publish
 
 ## Discovery and archive behavior
 
-The build generates compact `assets/search-ru.json` and `assets/search-en.json` indexes: title, description, tags, type, language, publication date, URL, plain search text, public status and optional preview image. Queries use a single local file and no keys/GitHub API. The current EN index is empty. Russian normalization handles case and Cyrillic Yo/Ye equivalence.
+The build generates compact `assets/search-ru.json` and `assets/search-en.json` indexes: title, description, tags, type, language, publication date, URL, plain search text, public status and optional preview image. Interactive discovery uses the separate indexes described below and needs no keys or GitHub API. The article-only EN index remains empty until a real English translation is approved. Russian normalization handles case and Cyrillic Yo/Ye equivalence.
 
-Fresh materials are sorted by publication date and remain stable. The archive rotates a three-item subset without duplicate URLs or repeated subsets when alternatives exist. Its reserved desktop grid and mobile row heights prevent rotation shifts. Publication anniversaries match month/day in previous years; historical birth/event dates are not used. If no date matches, a plain archive alternative is shown. Demos remain labeled, including when their illustrative dates match.
+Fresh materials remain stable and chronological. Featured and archive selections each show up to four distinct records from their exclusive pools; see the exact split below. Reserved archive card heights prevent layout shifts during rotation.
 
 ## Archive reading and publication boundary
 
@@ -59,3 +59,9 @@ Legacy instructions to publish in comments are operational markers, not a reason
 Figure `caption` may be an empty string for a decorative illustration. `source`, `rights_basis` and meaningful `alt` remain required provenance. Optional `credit` overrides the visible source text, including an empty string to omit internal editorial notes; verified source and license links remain visible. Captions are heading-like, without final periods. Inline formula punctuation belongs to ordinary prose outside dollar delimiters; the renderer keeps adjacent punctuation attached without including it in the TeX source.
 
 Raster additions or replacements also require `npm run build:images` (see `docs/DESIGN.md`). Commit the generated reading derivatives and image manifest together with the untouched originals.
+
+## Homepage discovery
+
+In each edition, sort published articles and eligible translation notices by website publication date descending, with URL descending as a stable tie-breaker. The newest ten appear only in the new-materials carousel. From the remainder, take the freshest quarter (round up) for the four small featured links; the older three quarters supply four text-only archive cards. Draw without replacement on page load and offer another archive selection. When more than four candidates exist, avoid repeating the previous complete selection if local storage is available. Smaller pools show only their available records. With ten or fewer records, both older-content sections remain visible with localized empty-state text. Full browsing belongs in the reading room; the carousel has no archive pagination.
+
+`assets/discovery-<lang>.json` powers homepage selections and interactive search. It adds English translation-notice summaries with `translation_notice: true` to eligible article records; each notice is visibly marked as a Russian original awaiting translation. The existing `search-<lang>.json` indexes remain article-only. Drafts and review-only notices never enter either public discovery set. Demos remain test-only and are excluded from homepage pools. The same shared templates provide Home, Reading room, Showcase and Search in both locales.

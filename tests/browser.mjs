@@ -109,8 +109,8 @@ try {
         checked(`${viewport.name}: archive rotation changes only its block, without repeats or layout shifts`);
       }
       if (path === '/') {
-        assert.match(await page.locator('main').innerText(), /English edition is coming/);
-        assert.equal(await page.locator('.material-card').count(), 0);
+        assert.match(await page.locator('h1').innerText(), /Let’s talk/);
+        assert.equal(await page.locator('#latest-cards .material-card').count(), 10);
       }
       if (path === '/ru/articles/demo-geometry/') {
         const toc = page.locator('.article-toc a');

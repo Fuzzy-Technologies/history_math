@@ -3,6 +3,6 @@ export function recordRequestFailure(report, request) {
   const error = request.failure()?.errorText;
   const path = new URL(request.url()).pathname;
   if (error === 'net::ERR_ABORTED' && request.resourceType() === 'fetch' &&
-      /^\/history_math\/assets\/search-(ru|en)\.json$/.test(path)) return;
+      /^\/history_math\/assets\/(?:search|discovery)-(ru|en)\.json$/.test(path)) return;
   report.requestFailures.push(`${request.url()} (${error ?? 'unknown failure'})`);
 }

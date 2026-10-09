@@ -6,6 +6,7 @@ test('navigation cancellation is limited to search fetches; real failures remain
   const report = {requestFailures: []};
   const request = (url, error, type = 'fetch') => ({url: () => url, failure: () => ({errorText: error}), resourceType: () => type});
   recordRequestFailure(report, request('http://localhost/history_math/assets/search-ru.json?v=1', 'net::ERR_ABORTED'));
+  recordRequestFailure(report, request('http://localhost/history_math/assets/discovery-en.json?v=1', 'net::ERR_ABORTED'));
   assert.deepEqual(report.requestFailures, []);
   recordRequestFailure(report, request('http://localhost/history_math/assets/search-en.json', 'net::ERR_FAILED'));
   recordRequestFailure(report, request('http://localhost/history_math/assets/figure.png', 'net::ERR_ABORTED', 'image'));

@@ -101,13 +101,18 @@ def CheckSite(sitePath, basePath):
             if not url.startswith("data:"):
                 Resolve(url, path)
     for language in ("en", "ru"):
-        records = json.loads((sitePath / "assets" / f"search-{language}.json").read_text(encoding="utf-8"))
-        if language == "en" and records:
-            errors.append("The initial English index must be empty")
-        for record in records:
-            if record["language"] != language or record["status"] not in ("published", "demo"):
-                errors.append("Non-public or wrong-language search record")
-            Resolve(record["url"], sitePath / "index.html")
+        for kind in ("search", "discovery"):
+            records = json.loads((sitePath / "assets" / f"{kind}-{language}.json").read_text(encoding="utf-8"))
+            if len({record["url"] for record in records}) != len(records):
+                errors.append(f"Duplicate {kind} record")
+            for record in records:
+                if record["language"] != language or record["status"] not in ("published", "demo"):
+                    errors.append(f"Non-public or wrong-language {kind} record")
+                if kind == "search" and record.get("translation_notice"):
+                    errors.append("Translation notice in article-only search index")
+                Resolve(record["url"], sitePath / "index.html")
+                if record.get("preview_image"):
+                    Resolve(record["preview_image"], sitePath / "index.html")
     sitemap = ElementTree.parse(sitePath / "sitemap.xml")
     for loc in sitemap.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}loc"):
         Resolve(loc.text, sitePath / "index.html")
