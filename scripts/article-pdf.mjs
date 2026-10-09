@@ -54,6 +54,9 @@ export async function buildPdfs(siteDirectory) {
       await page.evaluate(async () => {
         document.documentElement.dataset.theme = 'light';
         for (const img of document.images) img.loading = 'eager';
+        // Finish preview requests before replacing their sources, so Chromium does
+        // not report self-inflicted request cancellations during PDF validation.
+        await Promise.all([...document.images].map(img => img.decode()));
         // Only the build-time PDF renderer loads originals without viewer interaction.
         for (const img of document.querySelectorAll('.print-masthead img, .article-body img')) {
           if (!img.dataset.original) continue;
