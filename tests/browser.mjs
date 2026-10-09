@@ -378,7 +378,7 @@ try {
         assert.equal(await carousel.evaluate(node => node.classList.contains('is-dragging')), false);
         const destination = new URL(await image.getAttribute('href'), origin).href;
         await image.click();
-        await page.waitForURL(destination);
+        await page.waitForURL(destination, {waitUntil: 'networkidle'});
         await page.goto(origin + '/history_math/ru/articles/demo-geometry/', {waitUntil: 'networkidle'});
         checked(`${theme}: mouse drag preserves link clicks; wheel browses cards and releases page scrolling at both ends`);
       } else {
@@ -433,7 +433,7 @@ try {
   await motionPage.mouse.down();
   await motionPage.mouse.move(clickBounds.x + 38, clickBounds.y + 35);
   await motionPage.mouse.up();
-  await motionPage.waitForURL(clickDestination);
+  await motionPage.waitForURL(clickDestination, {waitUntil: 'networkidle'});
   await motionContext.close();
   checked('Normal motion: small card lift, continuous wheel browsing and small pointer movement keep ordinary links usable; reduced motion keeps cards stationary');
   }
