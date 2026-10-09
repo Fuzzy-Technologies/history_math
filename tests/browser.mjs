@@ -181,7 +181,7 @@ try {
     // Closing a context with pending requests creates false requestfailed events.
     await page.waitForLoadState('networkidle');
     assert.equal(missing.status(), 404);
-    assert.match(await page.locator('main').innerText(), /This page is missing/);
+    assert.match(await page.locator('main').innerText(), /Страница не найдена/);
     await context.close();
   }
   const responsiveContext = await browser.newContext({reducedMotion: 'reduce'});

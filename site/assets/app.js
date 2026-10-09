@@ -469,7 +469,7 @@ if (form) {
       status.textContent = matches.length ? (ru ? `Найдено материалов: ${matches.length}` : `Articles found: ${matches.length}`) : (ru ? 'Ничего не найдено. Попробуйте другое слово или тему.' : 'No matches. Try another word or topic.');
     } catch {
       if (request !== requestNumber) return;
-      status.textContent = ru ? 'Поиск временно недоступен. Откройте раздел «Материалы».' : 'Search is temporarily unavailable. Open the reading room.';
+      status.textContent = ru ? 'Поиск временно недоступен. Откройте читальный зал.' : 'Search is temporarily unavailable. Open the reading room.';
     }
   }
   let timer;

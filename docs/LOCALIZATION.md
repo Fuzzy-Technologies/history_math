@@ -22,3 +22,9 @@ The generator groups only emitted pages/documents by translation_key and rejects
 UI labels and the homepage, reading room and search markup are shared between editions. Discovery indexes contain approved local articles and explicitly marked English summary notices. Notice searches cover their English title and summary only; they do not claim an English full text. A real translation replaces its notice at the same URL. Further locales require deliberate updates to the publication contract, layouts, index generator and tests.
 
 For a later custom domain, change `_config.yml` `url` and set `baseurl: ''`. Continue storing local content/media paths without the project base prefix. CI also verifies a root-path build; no bulk link rewrite is needed.
+
+## Error pages
+
+The English `/404.html` and Russian `/ru/404.html` use the same localized content and site shell. GitHub Pages serves the root fallback for every missing URL; a small inline selector uses the `/ru` path segment (after the deployment base path) to install the pre-rendered Russian shell before application modules run. It preserves the original missing URL and HTTP 404 status, and updates the document language, title, metadata, navigation, logos and recovery links together. Other paths use English. Error pages are noindex and excluded from the sitemap. With JavaScript disabled, the shared fallback remains English with a language link to the fully rendered Russian error page; both explicit error URLs work without scripts.
+
+Search, image-loading and archive-fallback messages follow the page language. Browser tests exercise failed requests as well as unknown URLs on both project-path and root-domain hosting. Hosting-provider 5xx responses that bypass the site cannot use its templates.

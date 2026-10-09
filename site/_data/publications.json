@@ -2,13 +2,11 @@
   "shop_url": "https://web.tribute.tg/l/w6",
   "ui": {
     "ru": {
-      "language_note": "Все издания — на русском языке.",
       "shop_label": "Наш магазин в Telegram",
       "cover_label": "Обложка: ",
       "editions_label": "Где купить"
     },
     "en": {
-      "language_note": "All editions are in Russian.",
       "shop_label": "Our Telegram shop",
       "cover_label": "Cover: ",
       "editions_label": "Where to buy"

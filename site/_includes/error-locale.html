@@ -1,0 +1,31 @@
+{% comment %}GitHub Pages serves one fallback document. Render the Russian shell at build time and select it before modules run, preserving the requested URL and HTTP 404.{% endcomment %}
+{% assign original_page = page %}{% assign original_content = content %}
+{% assign page = site.pages | where: 'permalink', '/ru/404.html' | first %}
+{% assign ru = true %}{% assign home = '/ru/' %}
+{% capture content %}{% include error-content.html %}{% endcapture %}
+<template id="russian-error-page" data-title="{{ page.title | escape }} · Математика с Мансур-абый" data-description="{{ page.description | escape }}" data-url="{{ page.url | absolute_url }}" data-heading="{{ page.title | escape }}">
+  {% include page-shell.html %}
+</template>
+{% assign page = original_page %}{% assign content = original_content %}{% assign ru = false %}
+<script>
+  (() => {
+    const template = document.getElementById('russian-error-page');
+    if (document.documentElement.dataset.errorLocale === 'ru') {
+      document.documentElement.lang = 'ru';
+      document.title = template.dataset.title;
+      for (const [selector, value] of [
+        ['meta[name="description"]', template.dataset.description],
+        ['meta[property="og:title"]', template.dataset.heading],
+        ['meta[property="og:description"]', template.dataset.description],
+        ['meta[property="og:url"]', template.dataset.url],
+        ['meta[property="og:locale"]', 'ru_RU']
+      ]) document.querySelector(selector).content = value;
+      document.querySelector('link[rel="canonical"]').href = template.dataset.url;
+      document.body.dataset.lang = 'ru';
+      document.body.dataset.search = {{ '/ru/search/' | relative_url | jsonify }};
+      document.body.dataset.index = {{ '/assets/discovery-ru.json' | relative_url | jsonify }} + '?v={{ asset_version }}';
+      document.body.replaceChildren(template.content.cloneNode(true));
+      delete document.documentElement.dataset.errorLocale;
+    } else template.remove();
+  })();
+</script>

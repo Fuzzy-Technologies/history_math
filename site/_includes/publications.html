@@ -1,5 +1,5 @@
 {% assign labels = site.data.publications.ui[page.lang] %}
-<section class="page-heading"><p class="eyebrow">{{ page.eyebrow }}</p><h1>{{ page.title }}</h1><p class="lead">{{ page.description }}</p><div class="showcase-intro"><p class="quiet">{{ labels.language_note }}</p><a href="{{ site.data.publications.shop_url }}">{{ labels.shop_label }} <span aria-hidden="true">↗</span></a></div></section>
+<section class="page-heading"><p class="eyebrow">{{ page.eyebrow }}</p><h1>{{ page.title }}</h1><p class="lead">{{ page.description }}</p><div class="showcase-intro"><a href="{{ site.data.publications.shop_url }}">{{ labels.shop_label }} <span aria-hidden="true">↗</span></a></div></section>
 <div class="publication-list">
 {% for book in site.data.publications.items %}
   <article class="showcase-book" id="book-{{ book.id }}" aria-labelledby="title-{{ book.id }}">
