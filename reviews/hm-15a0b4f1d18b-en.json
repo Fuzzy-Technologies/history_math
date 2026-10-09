@@ -1,0 +1,26 @@
+{
+  "article_id": "hm-15a0b4f1d18b-en",
+  "review_version": 1,
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "source": "site/_articles/hm-15a0b4f1d18b.ru.md",
+    "source_commit": "b6153e6397ef5e4d171909cf4410d27dd148c13a",
+    "scope": "Full English adaptation of the approved Russian derivative, including all figures, captions, alt text, sections, notes and bibliographic references. Original image bytes, rights and source destinations retained.",
+    "editorial_review": {
+      "reviewer": "Codex (AI language and mathematical consistency review; not human publication approval)",
+      "date": "2026-10-09",
+      "passes": [
+        "Adaptation against the complete Russian article",
+        "English copy-edit for idiom, terminology, clarity, attribution and bibliographic accuracy"
+      ],
+      "decisions": [
+        "Kept the conversational invitation while making the coin-and-counter instructions unambiguous: cover other uncovered cells, not a selected coin.",
+        "Preserved all 25 numbers, the prediction 57, both generating sets, and all four construction steps; added the one-entry-per-row-and-column explanation implicit in the trick.",
+        "The citation describes the actual 1999 Russian edition, translator, editor, pages and figures, rather than inventing English edition details."
+      ]
+    }
+  }
+}

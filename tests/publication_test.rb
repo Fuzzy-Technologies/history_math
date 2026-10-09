@@ -126,4 +126,57 @@ class PublicationTest < Minitest::Test
       FileUtils.cp_r(site.dest, destination)
     end
   end
+
+  def test_five_english_adaptations_preview_pairing_and_approved_discovery
+    with_site do |source, config|
+      paths = Dir.glob(File.join(source, "_articles/hm-*.en.md"))
+      assert_equal 5, paths.length
+      production = Jekyll::Site.new(config)
+      production.process
+      assert_empty JSON.parse(File.read(File.join(production.dest, "assets/search-en.json")))
+      config["article_review"] = true
+      preview = Jekyll::Site.new(config)
+      preview.process
+      manifest = JSON.parse(File.read(File.join(preview.dest, "assets/article-pdfs.json")))
+      paths.each do |path|
+        _, frontmatter, body = File.read(path).split("---", 3)
+        data = YAML.safe_load(frontmatter, permitted_classes: [Date, Time])
+        url = data.fetch("permalink")
+        html = File.read(File.join(preview.dest, url.delete_prefix("/"), "index.html"))
+        assert_includes html, "<html lang=\"en\">"
+        assert_includes html, "Editorial review copy"
+        assert_includes html, "hreflang=\"ru\""
+        assert_includes html, "noindex, nofollow"
+        refute_includes html, "An English translation of this article is not available yet."
+        assert manifest["articles"].any? { |item| item["url"] == url && item["lang"] == "en" }
+        ru = File.read(File.join(preview.dest, "ru", url.delete_prefix("/"), "index.html"))
+        assert_includes ru, "hreflang=\"en\""
+
+        # Exercise the release path on temporary copies without approving repository drafts.
+        data.merge!({"status" => "published", "date" => "2026-10-09"})
+        text = YAML.dump(data) + "---" + body
+        File.write(path, text)
+        digest = Digest::SHA256.new.update(text)
+        assets = (data.fetch("figures").map { |figure| figure["path"] } +
+          %w[preview_image cover_image hero_image].filter_map { |key| data[key] }).uniq.sort
+        assets.each { |asset| digest.update("\0#{asset}\0").update(File.binread(File.join(source, asset.delete_prefix("/")))) }
+        File.write(File.join(File.dirname(source), "reviews", "#{data['article_id']}.json"), JSON.generate({
+          "review_version" => 1, "article_id" => data["article_id"], "questions" => [],
+          "approval" => {"status" => "approved", "reviewed_by" => "Test fixture", "date" => "2026-10-09", "package_sha256" => digest.hexdigest}}))
+      end
+      assert_empty JSON.parse(File.read(File.join(preview.dest, "assets/search-en.json")))
+      config["article_review"] = false
+      approved = Jekyll::Site.new(config)
+      approved.process
+      %w[search discovery].each do |kind|
+        records = JSON.parse(File.read(File.join(approved.dest, "assets/#{kind}-en.json")))
+        assert_equal 5, records.length
+        assert records.all? { |record| record["language"] == "en" && !record["translation_notice"] }
+      end
+      paths.each do |path|
+        key = File.basename(path, ".en.md")
+        assert_includes File.read(File.join(approved.dest, "sitemap.xml")), "/articles/#{key}/"
+      end
+    end
+  end
 end

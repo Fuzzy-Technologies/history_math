@@ -1,0 +1,39 @@
+{
+  "article_id": "hm-0b1ea17c8b02-en",
+  "review_version": 1,
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "chronology",
+      "question": "The Russian source gives both age 12 and 1748 for Rumovsky's selection for the Academic Gymnasium, although he was born in 1734. Confirm the entry year against an authoritative biography. The English draft retains 1748 and omits the contradictory age; the RAS page could not be fetched during this review.",
+      "blocking": true,
+      "state": "resolved",
+      "sources": [
+        "https://new.ras.ru/academy-new/staff/akademiki/rumovskiy-stepan-yakovlevich/",
+        "https://www.encyclopedia.com/science/dictionaries-thesauruses-pictures-and-press-releases/rumovsky-stepan-yakovlevich"
+      ],
+      "resolution": "Retained 1748 for the start of studies and omitted the contradictory age. P. G. Kulikovsky in the Complete Dictionary of Scientific Biography confirms the 1748 move from seminary to the Academy university; an English reference is added. The Russian original remains unchanged."
+    }
+  ],
+  "reconciliation": {
+    "source": "site/_articles/hm-0b1ea17c8b02.ru.md",
+    "source_commit": "b6153e6397ef5e4d171909cf4410d27dd148c13a",
+    "scope": "Full English adaptation of the approved Russian derivative, including all figures, captions, alt text, sections, notes and bibliographic references. Original image bytes, rights and source destinations retained.",
+    "editorial_review": {
+      "reviewer": "Codex (AI language and mathematical consistency review; not human publication approval)",
+      "date": "2026-10-09",
+      "passes": [
+        "Adaptation against the complete Russian article",
+        "English copy-edit for idiom, terminology, clarity, attribution and bibliographic accuracy"
+      ],
+      "decisions": [
+        "Preserved the two distinct academies and their membership dates, both calendars for the birth date, and the 2024 anniversary context.",
+        "Rendered extraordinary/ordinary academician as extraordinary/full member; explained the district trustee role in idiomatic English.",
+        "Book and memoir titles are descriptive translations, not claims of English editions. Russian-only references and shop link are identified as Russian.",
+        "Removed the contradictory age and separated selection from entry; checked the 1748 year against Kulikovsky and added an English citation. No change made to the approved Russian original."
+      ]
+    }
+  }
+}
