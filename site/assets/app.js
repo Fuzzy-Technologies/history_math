@@ -1,5 +1,5 @@
 const assetVersion = new URL(import.meta.url).search;
-const [{search, searchByTag, selection, anniversaries}, {enhanceSelect}, {rememberReadingPosition}] = await Promise.all([
+const [{search, searchByTag, selection, anniversaries, journalGroups}, {enhanceSelect}, {rememberReadingPosition}] = await Promise.all([
   import('./core.js' + assetVersion),
   import('./select.js' + assetVersion),
   import('./reading-position.js' + assetVersion)
@@ -237,7 +237,7 @@ function card(record, className) {
 const carousel = document.querySelector('#latest-cards');
 if (carousel) {
   const controls = document.querySelector('.carousel-controls');
-  const status = document.querySelector('.carousel-status');
+
   const buttons = [...controls.querySelectorAll('button')];
   const wide = window.matchMedia('(min-width: 621px)');
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -259,13 +259,13 @@ if (carousel) {
   function updateCarousel() {
     const overflow = carousel.scrollWidth > carousel.clientWidth + 2;
     controls.hidden = !wide.matches || !overflow;
-    status.hidden = !wide.matches || !overflow;
+
     carousel.tabIndex = wide.matches && overflow ? 0 : -1;
     carousel.setAttribute('aria-label', wide.matches ? 'Новые материалы: стрелки, перетаскивание или колёсико' : 'Новые материалы');
     buttons[0].disabled = carousel.scrollLeft <= 2;
     buttons[1].disabled = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 2;
-    const visible = cards.map((node, index) => ({index, left: node.offsetLeft - carousel.offsetLeft - carousel.scrollLeft, width: node.offsetWidth})).filter(item => item.left + item.width > 2 && item.left < carousel.clientWidth - 2);
-    if (visible.length) status.textContent = `Страницы ${visible[0].index + 1}–${visible.at(-1).index + 1} из ${cards.length}`;
+
+
   }
   function turn(direction) {
     const step = cards.length > 1 ? cards[1].offsetLeft - cards[0].offsetLeft : carousel.clientWidth;
@@ -349,7 +349,26 @@ rememberReadingPosition();
 const archive = document.querySelector('#archive-cards');
 if (archive) {
   loadIndex().then(async records => {
-    const pool = records.filter(record => record.language === language);
+    const groups = journalGroups(records, language);
+    const pool = groups.archive;
+    archive.closest('.archive-section').hidden = !pool.length;
+    const hero = document.querySelector('#hero-picks');
+    if (hero) {
+      const picks = selection(groups.featured, 4);
+      hero.replaceChildren(...picks.map(record => {
+        const link = element('a', 'hero-pick');
+        link.href = record.url;
+        if (record.preview_image) {
+          const image = document.createElement('img');
+          image.src = record.preview_image; image.alt = ''; image.width = 160; image.height = 160;
+          link.append(image);
+        }
+        link.append(element('span', '', record.title));
+        return link;
+      }));
+      hero.hidden = !picks.length;
+      hero.closest('.journal-hero').classList.toggle('without-picks', !picks.length);
+    }
     // Reserve enough space for any article, including long archival titles and tags.
     function reserveArchiveSpace() {
       if (!pool.length || !archive.clientWidth) return;
@@ -376,10 +395,10 @@ if (archive) {
     let previous = [...archive.querySelectorAll('h3 a')].map(link => link.getAttribute('href'));
     try {
       const saved = JSON.parse(localStorage.getItem(storageKey));
-      if (Array.isArray(saved) && saved.every(url => typeof url === 'string')) previous = saved.slice(0, 3);
+      if (Array.isArray(saved) && saved.every(url => typeof url === 'string')) previous = saved.slice(0, 4);
     } catch {}
     function rotate() {
-      const picked = selection(pool, 3, previous);
+      const picked = selection(pool, 4, previous);
       previous = picked.map(record => record.url);
       try { localStorage.setItem(storageKey, JSON.stringify(previous)); } catch {}
       archive.replaceChildren(...picked.map(record => card(record, 'archive-card')));
@@ -387,7 +406,7 @@ if (archive) {
     }
     rotate();
     const button = document.querySelector('#reshuffle');
-    button.hidden = pool.length <= 3;
+    button.hidden = pool.length <= 4;
     button.addEventListener('click', rotate);
     window.addEventListener('pageshow', event => { if (event.persisted) rotate(); });
     const matches = anniversaries(records.filter(record => record.status === 'published'), new Date(), language);

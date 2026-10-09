@@ -7,30 +7,30 @@ translation_key: home
 status: published
 permalink: /ru/
 ---
-{% assign articles = site.articles | where: 'lang', 'ru' | sort: 'date' | reverse %}
-{% assign published_articles = articles | where: 'status', 'published' %}
-{% assign featured = published_articles | first %}
-{% unless featured %}{% assign featured = articles | where: 'translation_key', 'demo-geometry' | first %}{% endunless %}
-{% unless featured %}{% assign featured = articles | first %}{% endunless %}
-<section class="journal-hero">
-  <div class="cover-line"><span>История математики</span><span>{% if published_articles.size > 0 %}Электронный журнал{% else %}Пробные страницы{% endif %}</span></div>
+{% assign articles = page.journal_articles %}
+{% assign article_offset = page.article_page | minus: 1 | times: 10 %}
+<section class="journal-hero{% if page.journal_featured.size == 0 %} without-picks{% endif %}">
+  <div class="cover-line"><span>История математики</span><span>Электронный журнал</span></div>
   <div class="hero-copy">
     <h1>Поговорим<br><em>о математике.</em></h1>
     <p class="lead">Об учёных и открытиях, задачах и старинных книгах. О том, как развивалась математика и кто её создавал.</p>
     <a class="button" href="{{ '/ru/materials/' | relative_url }}">Читать материалы <span aria-hidden="true">→</span></a>
   </div>
-  <figure class="hero-figure"><img src="{{ '/assets/images/frontispiece.svg' | relative_url }}" alt="Гравюрная композиция: окружности, вписанный треугольник и линии геометрического построения" width="900" height="900" fetchpriority="high"><figcaption><span>Геометрия</span><span>Таблица I</span></figcaption></figure>
-  <div class="cover-bottom"><span>Очерки · Задачи · История</span>{% if featured %}<a href="{{ featured.url | relative_url }}">{% if featured.status == 'published' %}Читать статью{% else %}Начать с чертежа{% endif %} <span aria-hidden="true">↗</span></a>{% endif %}</div>
+  <div class="hero-picks" id="hero-picks"{% if page.journal_featured.size == 0 %} hidden{% endif %} aria-label="Ещё интересные материалы">
+    {% for article in page.journal_featured limit:4 %}<a class="hero-pick" href="{{ article.url | relative_url }}">{% if article.preview_image %}<img src="{{ article.preview_image | relative_url }}" alt="" width="160" height="160" loading="lazy">{% endif %}<span>{{ article.title | escape }}</span></a>{% endfor %}
+  </div>
+
+  <div class="cover-bottom"><span>Очерки · Задачи · История</span><a href="{{ '/ru/materials/' | relative_url }}">Все материалы <span aria-hidden="true">↗</span></a></div>
 </section>
-{% if published_articles.size == 0 %}<div class="demo-strip"><span class="status-dot" aria-hidden="true"></span>Пока здесь пробные материалы для проверки сайта. Авторские статьи добавим позже.</div>{% endif %}
+
 <section class="journal-section latest-section" aria-labelledby="latest-heading">
-  <div class="section-heading"><div><p class="eyebrow">Читальный зал</p><h2 id="latest-heading">Новые материалы</h2></div><div class="section-actions"><a href="{{ '/ru/materials/' | relative_url }}">Все материалы ↗</a><div class="carousel-controls" hidden><button type="button" data-carousel-direction="-1" aria-label="Предыдущие материалы" aria-controls="latest-cards">←</button><button type="button" data-carousel-direction="1" aria-label="Следующие материалы" aria-controls="latest-cards">→</button></div></div></div>
-  <div class="card-grid magazine-carousel" id="latest-cards" tabindex="0" role="region" aria-label="Новые материалы">{% for article in articles limit:5 %}{% include card.html article=article number=forloop.index %}{% endfor %}</div>
-  <p class="carousel-status quiet" role="status" hidden></p>
+  <div class="section-heading"><div><p class="eyebrow">Читальный зал</p><h2 id="latest-heading">{% if page.article_page == 1 %}Новые материалы{% else %}Материалы · {{ page.article_page }}{% endif %}</h2></div><div class="section-actions"><a href="{{ '/ru/materials/' | relative_url }}">Все материалы ↗</a><div class="carousel-controls" hidden><button type="button" data-carousel-direction="-1" aria-label="Предыдущие материалы" aria-controls="latest-cards">←</button><button type="button" data-carousel-direction="1" aria-label="Следующие материалы" aria-controls="latest-cards">→</button></div></div></div>
+  <div class="card-grid magazine-carousel" id="latest-cards" tabindex="0" role="region" aria-label="Новые материалы">{% for article in articles offset:article_offset limit:10 %}{% include card.html article=article number=forloop.index %}{% endfor %}</div>
+  {% include journal-pagination.html %}
 </section>
-<section class="archive-section journal-section" aria-labelledby="archive-heading">
+<section class="archive-section journal-section"{% if page.journal_archive.size == 0 %} hidden{% endif %} aria-labelledby="archive-heading">
   <div class="section-heading"><div><p class="eyebrow">Что ещё почитать</p><h2 id="archive-heading">Из архива</h2></div><button class="text-button" id="reshuffle" type="button" hidden>Другая подборка <span aria-hidden="true">↻</span></button></div>
-  <div id="archive-cards" class="archive-grid">{% for article in articles offset:2 limit:3 %}<article class="archive-card"><p class="eyebrow">{% include type.html type=article.type %}{% if article.status == 'demo' %} · Демо{% endif %}</p><h3><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h3><p>{{ article.description }}</p><div class="tag-list">{% for tag in article.tags %}{% include tag.html tag=tag %}{% endfor %}</div></article>{% endfor %}</div><p id="archive-status" class="visually-hidden" role="status"></p>
+  <div id="archive-cards" class="archive-grid">{% for article in page.journal_archive limit:4 %}<article class="archive-card"><p class="eyebrow">{% include type.html type=article.type %}{% if article.status == 'demo' %} · Демо{% endif %}</p><h3><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h3><p>{{ article.description }}</p><div class="tag-list">{% for tag in article.tags %}{% include tag.html tag=tag %}{% endfor %}</div></article>{% endfor %}</div><p id="archive-status" class="visually-hidden" role="status"></p>
 </section>
 <section class="anniversary-panel" hidden><span class="anniversary-ornament" aria-hidden="true">∞</span><div><p class="eyebrow">Из архива журнала</p><h2 id="anniversary-heading">В этот день мы писали</h2><p id="anniversary-note"></p></div><div id="anniversary-result"></div></section>
 <section class="about-teaser">
