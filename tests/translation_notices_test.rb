@@ -13,6 +13,7 @@ class TranslationNoticesTest < Minitest::Test
       source = File.join(root, "site")
       FileUtils.cp_r(File.expand_path("../site", __dir__), source)
       FileUtils.cp_r(File.expand_path("../schemas", __dir__), File.join(root, "schemas"))
+      FileUtils.cp_r(File.expand_path("../reviews", __dir__), File.join(root, "reviews"))
       config = Jekyll.configuration("config" => File.expand_path("../_config.yml", __dir__),
         "source" => source, "destination" => File.join(root, "output"), "quiet" => true)
       yield source, config
@@ -22,6 +23,9 @@ class TranslationNoticesTest < Minitest::Test
   def test_translation_notices_follow_the_source_publication_boundary
     with_site do |source, config|
       id = "hm-0b1ea17c8b02"
+      Dir.glob(File.join(source, "_articles/hm-*.md")).each do |path|
+        File.write(path, File.read(path).sub("status: published", "status: draft"))
+      end
       site = Jekyll::Site.new(config)
       site.process
       refute File.exist?(File.join(site.dest, "articles/#{id}/index.html"))
@@ -50,9 +54,11 @@ class TranslationNoticesTest < Minitest::Test
       ids = JSON.parse(File.read(File.join(source, "_data/english_notices.json"))).keys
       ids.each do |id|
         path = Dir.glob(File.join(source, "_articles/#{id}.*.md")).fetch(0)
-        text = File.read(path).sub("status: draft", "status: published\ndate: '2026-10-09'")
+        _, frontmatter, body = File.read(path).split("---", 3)
+        metadata = YAML.safe_load(frontmatter, permitted_classes: [Date, Time])
+        metadata.merge!({"status" => "published", "date" => "2026-10-09"})
+        text = YAML.dump(metadata) + "---" + body
         File.write(path, text)
-        metadata = YAML.safe_load(text.split("---", 3)[1], permitted_classes: [Date, Time])
         digest = Digest::SHA256.new.update(text)
         paths = (metadata.fetch("figures", []).map { |figure| figure["path"] } +
           %w[preview_image cover_image hero_image].filter_map { |key| metadata[key] }).uniq.sort
