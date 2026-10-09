@@ -4,7 +4,7 @@ The five packages are review drafts. Current technical results are recorded by C
 
 Site infrastructure: [PR #26](https://github.com/Fuzzy-Technologies/history_math/pull/26), [ADR 0001](adr/0001-archive-article-pilot.md), [next-article procedure](ARTICLE_PREPARATION.md), [check conditions](ARTICLE_CHECKS.md). The site owns the canonical schema, templates, checks and editable article derivatives. Existing private FELab metadata and NAS article/image directories are read-only sources. No FELab infrastructure branch or PR is required; the separate public GitHub FELab project is outside this implementation.
 
-Each article PR independently targets the pending infrastructure branch. After the owner merges #26 into `develop`, retarget each article PR to `develop` and rerun its checks. A separate human-controlled publication PR remains necessary.
+The owner merged infrastructure #26 and article PRs #28–#32 into `develop`. All five articles still have `status: draft` and pending editorial approvals. A separate publication PR remains necessary after the remaining blocking questions are resolved or explicitly accepted by the editor.
 
 ## Selection and earlier publication
 
@@ -26,6 +26,12 @@ The coin has a verified Commons source, CNG credit and CC BY-SA 3.0 terms in its
 
 Each PR's current CI report is the authority for its checked head. Earlier runs do not establish success after an editorial correction. The compact CI artifact contains only the JSON/Markdown report for 14 days. Local checks still create the Jekyll preview, screenshots at 1440, 390 and 320 pixels, and offline PDFs. Full-site and screenshot archives are no longer uploaded.
 
-Question states, sources, resolutions and authorized changes live only in `reviews/<article-id>.json` on the corresponding article branch. Approval remains pending until the human editor records a decision for the current package. Small archive images retain their native dimensions, including Rumovsky's 150 × 200 portrait.
+Question states, sources, resolutions and authorized changes live only in `reviews/<article-id>.json`. Approval remains pending until the human editor records a decision for the current package. Small archive images retain their native dimensions, including Rumovsky's 150 × 200 portrait.
+
+## English translation notices
+
+Each pilot article has an English title and short description in `_data/english_notices.json`. After its Russian original is admitted by the publication gate, a notice at `/articles/<id>/` links to that original and clearly states that an English translation is not available. Draft notices exist only in opt-in review builds. Published notices appear on the English home page; they are excluded from article search, the sitemap and translation hreflang records. They do not carry PDF downloads or article citations. The Russian language switch links to the corresponding notice. A real English article with the same translation key replaces the notice automatically.
+
+The browser fixture temporarily approves copies of the five articles inside the test directory to validate the final navigation and home-page list. These fixture approvals are not editorial decisions and do not alter `reviews/`.
 
 Read the current report from the linked CI run. Reproduce visual evidence locally as described in [the preparation procedure](ARTICLE_PREPARATION.md).
