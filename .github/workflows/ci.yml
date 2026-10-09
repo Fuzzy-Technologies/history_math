@@ -77,10 +77,6 @@ jobs:
           python3 tools/markdown_tables.py
           npm test
           bundle exec ruby tests/publication_test.rb
-      - name: English translation notices
-        run: |
-          bundle exec ruby tests/translation_notices_test.rb
-          node tests/translation-notices-browser.mjs
       - name: Build and inspect project-path output
         run: |
           bundle exec jekyll build --trace

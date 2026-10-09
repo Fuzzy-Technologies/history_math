@@ -1,3 +1,4 @@
+import {execFileSync} from 'node:child_process';
 import {recordRequestFailure} from './request-failures.mjs';
 import assert from 'node:assert/strict';
 import {createServer} from 'node:http';
@@ -433,4 +434,10 @@ try {
   await writeFile(`${evidence}/browser-report.json`, JSON.stringify(report, null, 2));
   await browser.close();
   server.close();
+}
+
+// Complete runs also verify the final article/translation navigation with an isolated fixture.
+if (process.argv.length === 2) {
+  execFileSync('bundle', ['exec', 'ruby', 'tests/translation_notices_test.rb'], {stdio: 'inherit'});
+  await import('./translation-notices-browser.mjs');
 }
