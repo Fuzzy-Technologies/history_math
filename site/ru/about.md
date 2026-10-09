@@ -19,8 +19,8 @@ permalink: /ru/about/
 
 ## Где читать нас сейчас
 
-Наши публикации уже есть в [Telegram](https://t.me/history_math) и на [Teletype](https://teletype.in/@history_math). Старые статьи сохранились в [архиве блога](https://history-math.blogspot.com/).
+Наши публикации уже есть в [Telegram](https://t.me/history_math) и на [Teletype](https://teletype.in/@history_math). Старые статьи сохранились в [архиве блога]({{ 'https://history-math.blogspot.com/' | external_url: page.lang }}).
 
 ## О проекте
 
-Сайт связан с [Fuzzy Technologies](https://fuzzy-technologies.github.io/). Права на тексты остаются у их авторов и правообладателей; общей открытой лицензии на статьи здесь нет.
+Сайт связан с [Fuzzy Technologies]({{ 'https://fuzzy-technologies.github.io/' | external_url: page.lang }}). Права на тексты остаются у их авторов и правообладателей; общей открытой лицензии на статьи здесь нет.

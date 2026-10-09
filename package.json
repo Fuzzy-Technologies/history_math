@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "python3 tools/image_assets.py && python3 -m unittest discover -s tests -p image_assets_test.py && node --test tests/*.test.js tests/*.test.mjs",
+    "test": "python3 tools/image_assets.py && python3 -m unittest discover -s tests -p '*_test.py' && node --test tests/*.test.js tests/*.test.mjs",
     "check:articles": "node scripts/check-articles.mjs",
     "test:browser": "bundle exec ruby tests/browser_fixture.rb && BROWSER_SITE_DIR=test-results/browser-fixture node tests/browser.mjs && node tests/journal-browser.mjs && node tests/image-delivery-browser.mjs && node tests/errors-browser.mjs",
     "format:markdown": "python3 tools/markdown_tables.py --write",

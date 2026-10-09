@@ -5,7 +5,7 @@ import re
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import unquote, urlsplit
+from urllib.parse import unquote, urlsplit, parse_qs
 from xml.etree import ElementTree
 
 
@@ -18,11 +18,18 @@ class PageParser(HTMLParser):
         self.canonical = []
         self.alternates = []
         self.scripts = []
+        self.externalAnchors = []
+        self.templateLanguages = []
 
     def handle_starttag(self, tag, attributes):
         attributes = dict(attributes)
         if tag == "html":
             self.language = attributes.get("lang")
+        if tag == "template":
+            self.templateLanguages.append("ru" if attributes.get("id") == "russian-error-page" else self.language)
+        if tag == "a" and attributes.get("href"):
+            language = self.templateLanguages[-1] if self.templateLanguages else self.language
+            self.externalAnchors.append((attributes["href"], language))
         if attributes.get("id"):
             self.ids.add(attributes["id"])
         for name in ("href", "src", "poster", "data-original"):
@@ -36,6 +43,24 @@ class PageParser(HTMLParser):
             self.alternates.append((attributes.get("hreflang"), attributes.get("href")))
         if tag == "script" and attributes.get("src"):
             self.scripts.append(attributes["src"])
+
+    def handle_endtag(self, tag):
+        if tag == "template" and self.templateLanguages:
+            self.templateLanguages.pop()
+
+
+def ExternalLocaleError(url, language):
+    parts = urlsplit(url)
+    query = parse_qs(parts.query)
+    if parts.hostname == "fuzzy-technologies.github.io" and parts.path in ("", "/", "/ru/"):
+        return parts.path != ("/ru/" if language == "ru" else "/")
+    if parts.hostname == "history-math.blogspot.com":
+        return query.get("hl") != [language]
+    if parts.hostname == "commons.wikimedia.org" and parts.path.startswith("/wiki/"):
+        return query.get("uselang") != [language]
+    if parts.hostname == "creativecommons.org" and re.fullmatch(r"/licenses/[^/]+/\d+(?:\.\d+)?/(?:deed(?:\.[a-z-]+)?)?", parts.path):
+        return not parts.path.endswith("/deed." + language)
+    return False
 
 
 def CheckSite(sitePath, basePath):
@@ -87,6 +112,9 @@ def CheckSite(sitePath, basePath):
         expectedCanonical = "https://fuzzy-technologies.github.io" + basePath + publicPath
         if page.canonical != [expectedCanonical]:
             errors.append(f"{path}: wrong canonical {page.canonical}")
+        for url, language in page.externalAnchors:
+            if ExternalLocaleError(url, language):
+                errors.append(f"{path}: wrong external link language ({language}): {url}")
         for url in page.links:
             Resolve(url, path)
         for language, url in page.alternates:

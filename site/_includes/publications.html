@@ -1,5 +1,5 @@
 {% assign labels = site.data.publications.ui[page.lang] %}
-<section class="page-heading"><p class="eyebrow">{{ page.eyebrow }}</p><h1>{{ page.title }}</h1><p class="lead">{{ page.description }}</p><div class="showcase-intro"><a href="{{ site.data.publications.shop_url }}">{{ labels.shop_label }} <span aria-hidden="true">↗</span></a></div></section>
+<section class="page-heading"><p class="eyebrow">{{ page.eyebrow }}</p><h1>{{ page.title }}</h1><p class="lead">{{ page.description }}</p><div class="showcase-intro"><a href="{{ site.data.publications.shop_url | external_url: page.lang | escape }}">{{ labels.shop_label }} <span aria-hidden="true">↗</span></a></div></section>
 <div class="publication-list">
 {% for book in site.data.publications.items %}
   <article class="showcase-book" id="book-{{ book.id }}" aria-labelledby="title-{{ book.id }}">
@@ -14,7 +14,7 @@
       {% assign offers = book.offers | where: 'enabled', true %}{% for offer in offers %}
         <section class="book-offer" data-edition="{{ offer.id }}" aria-labelledby="offer-{{ book.id }}-{{ offer.id }}">
           <h3 id="offer-{{ book.id }}-{{ offer.id }}">{{ offer.title[page.lang] }}</h3>
-          <div class="book-links">{% for link in offer.links %}<a class="button{% unless forloop.first %} button-secondary{% endunless %}" href="{{ link.url }}">{{ link.label[page.lang] }} <span aria-hidden="true">↗</span></a>{% endfor %}</div>
+          <div class="book-links">{% for link in offer.links %}<a class="button{% unless forloop.first %} button-secondary{% endunless %}" href="{{ link.url | external_url: page.lang | escape }}">{{ link.label[page.lang] }} <span aria-hidden="true">↗</span></a>{% endfor %}</div>
           {% if offer.note %}<p class="quiet">{{ offer.note[page.lang] }}</p>{% endif %}
         </section>
       {% endfor %}
