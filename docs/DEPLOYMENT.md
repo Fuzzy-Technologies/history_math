@@ -6,7 +6,7 @@
 - `develop`: integrated editorial preparation; never public deployment.
 - `feature/*`: changes reviewed through PRs to `develop`.
 
-`ci.yml` runs source, workflow, clean-build, output and browser checks and uploads prototype/evidence artifacts. PR checks never obtain Pages/id-token write permissions. `deploy.yml` triggers only on pushes to master or manual dispatch, and both build and deploy jobs explicitly reject any ref other than `refs/heads/master`. Deployments use the GitHub Pages environment. Changing any workflow can change its policy; the administrative environment branch restriction below is a second boundary.
+`ci.yml` runs source, workflow, clean-build, output and browser checks and uploads only compact article reports. PR checks never obtain Pages/id-token write permissions. `deploy.yml` triggers only on pushes to master or manual dispatch, and both build and deploy jobs explicitly reject any ref other than `refs/heads/master`. Deployments use the GitHub Pages environment. Changing any workflow can change its policy; the administrative environment branch restriction below is a second boundary.
 
 ## Administrative setup
 
@@ -49,4 +49,4 @@ All Actions are pinned to full upstream commit SHAs. The implementation audit re
 | actions/deploy-pages          | v5.0.1       | `368f82528645a54fb793d4d04e342629a3f51346` |
 | actions/github-script         | v9.0.0       | `d746ffe35508b1917358783b479e04febd2b8f71` |
 
-Inspect the exact latest commit's CI run and downloadable artifacts before merge. A workflow file existing in Git does not prove a successful execution. No release/tag is required for publication.
+Inspect the exact latest commit's CI run and compact report before merge. A workflow file existing in Git does not prove a successful execution. No release/tag is required for publication.

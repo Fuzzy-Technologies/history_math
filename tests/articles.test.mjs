@@ -112,7 +112,7 @@ test('own diagnostic actions use local dictionaries while codes and tool output 
   assert.ok(Buffer.byteLength(readFileSync('schemas/messages.json')) < 24000);
   const dictionary = readFileSync('schemas/messages.json', 'utf8');
   assert.ok(!/\?{3,}|\uFFFD/.test(dictionary), 'Localized messages must retain Unicode text');
-  assert.match(JSON.parse(dictionary).ru.pr.preview, /PDF/);
+  assert.match(JSON.parse(dictionary).ru.pr.preview, /Отчёт/);
 });
 
 test('automated descriptions use the head suffix while preserving article content language', () => {
