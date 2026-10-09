@@ -34,11 +34,15 @@
     "Removed the placeholder section heading; selected existing archive images for card and social previews.",
     "Restored the original 3 × 4 table with a row-label column, checked both solution directions, and removed unsupported historical context.",
     "All three comment slots are empty. No text is invented from research excerpts; existing solutions, table and bibliography remain intact. Rejected historical claims are not restored.",
-    "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged."
+    "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged.",
+    "Recorded the owner's explicit publication approval dated 2026-10-09, set the website publication date, and bound the decision to the final Markdown and unchanged image bytes. Earlier publication dates are preserved."
   ],
   "review_version": 1,
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "Timur Gilmullin (Tim55667757)",
+    "date": "2026-10-09",
+    "package_sha256": "730369602a6f03ef348e3bdd3b1e324ea3c9f190184712456785fabfd5dcf0b6"
   },
   "questions": [
     {
@@ -52,7 +56,8 @@
       "id": "q2",
       "question": "Уточнить издание и страницу Люка для этой задачи; атрибуция монеты CNG и CC BY-SA 3.0 уже указаны.",
       "blocking": true,
-      "state": "open"
+      "state": "accepted",
+      "resolution": "09.10.2026 Тимур Гильмуллин разрешил публикацию текущей версии с последующим уточнением издания и страницы Люка. Существующая ссылка сохранена; точный локатор не считается проверенным."
     },
     {
       "id": "q3",

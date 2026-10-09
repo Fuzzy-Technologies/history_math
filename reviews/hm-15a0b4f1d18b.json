@@ -36,11 +36,15 @@
     "Corrected magic-square terminology and minor grammar. Independently verified all 120 row/column selections have sum 57; bibliography and legacy DOC checks remain open.",
     "The announcement comment overlaps the existing explanation. Its missing count of nine cells, including the shared zero in a 5 by 5 grid, is restored beside step 2 under Разгадка. Other steps, generalization and closing invitation are already included once.",
     "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged.",
-    "Added the verified 1999 Gardner edition, chapter 2, pages 21–23 and figures 8–9. Visually compared the printed matrix and explanation; did not claim to inspect the unavailable private DOC."
+    "Added the verified 1999 Gardner edition, chapter 2, pages 21–23 and figures 8–9. Visually compared the printed matrix and explanation; did not claim to inspect the unavailable private DOC.",
+    "Recorded the owner's explicit publication approval dated 2026-10-09, set the website publication date, and bound the decision to the final Markdown and unchanged image bytes. Earlier publication dates are preserved."
   ],
   "review_version": 1,
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "Timur Gilmullin (Tim55667757)",
+    "date": "2026-10-09",
+    "package_sha256": "f68a9d932dcc3fc2be6cb09474e319e92dfef8c6e050de437604b9f4e08e3531"
   },
   "questions": [
     {
@@ -59,7 +63,8 @@
       "id": "q2",
       "question": "Старый DOC требует дополнительной визуальной сверки в редакторе; автоматический Word-экспорт в этом окружении не завершился. Полный канонический long.txt прочитан и сохранён.",
       "blocking": true,
-      "state": "open"
+      "state": "accepted",
+      "resolution": "09.10.2026 Тимур Гильмуллин разрешил публикацию текущей версии без дополнительной визуальной сверки старого DOC. Эта сверка не объявляется выполненной; опубликованный источник Гарднера, все 25 чисел таблицы и объяснение проверены отдельно."
     },
     {
       "id": "matrix-sum",
