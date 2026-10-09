@@ -6,7 +6,7 @@
 - `develop`: integrated editorial preparation; never public deployment.
 - `feature/*`: changes reviewed through PRs to `develop`.
 
-`ci.yml` runs source, workflow, clean-build, output and browser checks and uploads prototype/evidence artifacts. PR checks never obtain Pages/id-token write permissions. `deploy.yml` triggers only on pushes to master or manual dispatch, and both build and deploy jobs explicitly reject any ref other than `refs/heads/master`. Deployments use the GitHub Pages environment. Changing any workflow can change its policy; the administrative environment branch restriction below is a second boundary.
+`ci.yml` runs source, workflow, clean-build, output and browser checks and uploads only compact article reports. PR checks never obtain Pages/id-token write permissions. `deploy.yml` triggers only on pushes to master or manual dispatch, and both build and deploy jobs explicitly reject any ref other than `refs/heads/master`. Deployments use the GitHub Pages environment. Changing any workflow can change its policy; the administrative environment branch restriction below is a second boundary.
 
 ## Administrative setup
 
@@ -38,15 +38,15 @@ The tests execute the actual inline workflow script with mocks for eligible, unm
 
 All Actions are pinned to full upstream commit SHAs. The implementation audit resolves each listed tag through GitHub's Git ref API. Ruby dependencies are locked in `Gemfile.lock`, browser dependencies in `package-lock.json`, and KaTeX assets are vendored at 0.16.10 with notices.
 
-| Action | Verified tag | Commit |
-|---|---|---|
-| actions/checkout | v7.0.1 | `3d3c42e5aac5ba805825da76410c181273ba90b1` |
-| ruby/setup-ruby | v1.327.0 | `14594264cd68ce8a2345dd349bc3d138a4ef85c8` |
-| actions/setup-node | v7.0.0 | `820762786026740c76f36085b0efc47a31fe5020` |
-| actions/upload-artifact | v7.0.1 | `043fb46d1a93c77aae656e7c1c64a875d1fc6a0a` |
-| actions/configure-pages | v6.0.0 | `45bfe0192ca1faeb007ade9deae92b16b8254a0d` |
-| actions/upload-pages-artifact | v5.0.0 | `fc324d3547104276b827a68afc52ff2a11cc49c9` |
-| actions/deploy-pages | v5.0.1 | `368f82528645a54fb793d4d04e342629a3f51346` |
-| actions/github-script | v9.0.0 | `d746ffe35508b1917358783b479e04febd2b8f71` |
+| Action                        | Verified tag | Commit                                     |
+| ----------------------------- | ------------ | ------------------------------------------ |
+| actions/checkout              | v7.0.1       | `3d3c42e5aac5ba805825da76410c181273ba90b1` |
+| ruby/setup-ruby               | v1.327.0     | `14594264cd68ce8a2345dd349bc3d138a4ef85c8` |
+| actions/setup-node            | v7.0.0       | `820762786026740c76f36085b0efc47a31fe5020` |
+| actions/upload-artifact       | v7.0.1       | `043fb46d1a93c77aae656e7c1c64a875d1fc6a0a` |
+| actions/configure-pages       | v6.0.0       | `45bfe0192ca1faeb007ade9deae92b16b8254a0d` |
+| actions/upload-pages-artifact | v5.0.0       | `fc324d3547104276b827a68afc52ff2a11cc49c9` |
+| actions/deploy-pages          | v5.0.1       | `368f82528645a54fb793d4d04e342629a3f51346` |
+| actions/github-script         | v9.0.0       | `d746ffe35508b1917358783b479e04febd2b8f71` |
 
-Inspect the exact latest commit's CI run and downloadable artifacts before merge. A workflow file existing in Git does not prove a successful execution. No release/tag is required for publication.
+Inspect the exact latest commit's CI run and compact report before merge. A workflow file existing in Git does not prove a successful execution. No release/tag is required for publication.

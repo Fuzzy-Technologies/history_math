@@ -1,3 +1,4 @@
+import {recordRequestFailure} from './request-failures.mjs';
 import assert from 'node:assert/strict';
 
 export async function runCarouselChecks({browser, origin, evidence, axe, report, checked}) {
@@ -5,7 +6,7 @@ export async function runCarouselChecks({browser, origin, evidence, axe, report,
   async function track(context) {
     const page = await context.newPage();
     page.on('pageerror', error => report.consoleErrors.push(error.message));
-    page.on('requestfailed', request => report.requestFailures.push(request.url()));
+    page.on('requestfailed', request => recordRequestFailure(report, request));
     return page;
   }
   async function staysAt(page, carousel, expected, label) {
@@ -27,7 +28,7 @@ export async function runCarouselChecks({browser, origin, evidence, axe, report,
     await navigation.getByRole('link', {name: 'Витрина', exact: true}).click();
     await page.waitForURL('**/ru/showcase/');
     await page.waitForLoadState('networkidle');
-    assert.equal(await page.locator('h1').innerText(), 'Наши издания');
+    assert.equal(await page.locator('h1').innerText(), 'Книги и издания');
     assert.equal((await page.locator('.page-heading .eyebrow').textContent()).trim(), 'Книги и курсы');
     assert.equal(await navigation.getByRole('link', {name: 'Витрина', exact: true}).getAttribute('aria-current'), 'page');
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), true);
@@ -62,8 +63,9 @@ export async function runCarouselChecks({browser, origin, evidence, axe, report,
     assert.equal(page.url(), home, 'Dragging followed the article link');
     assert.equal(await carousel.evaluate(node => node.classList.contains('is-dragging')), false);
     if (reducedMotion === 'reduce') await page.screenshot({path: `${evidence}/free-carousel-${theme}-desktop.jpg`, fullPage: false});
+    const destination = new URL(await page.locator('.card-image').first().getAttribute('href'), home).href;
     await page.locator('.card-image').first().click();
-    await page.waitForURL('**/demo-geometry/');
+    await page.waitForURL(destination);
     await copyChecks(page);
     checked(`${theme}, ${reducedMotion}: exact forward/backward wheel and horizontal scrolling, 73px drag with no release snapping, ordinary links and updated headings`);
     await context.close();

@@ -1,0 +1,3 @@
+# Opt-in artifact preview only; production and ordinary builds never use this file.
+article_review: true
+destination: test-results/article-preview

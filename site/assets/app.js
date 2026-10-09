@@ -8,6 +8,15 @@ const [{search, searchByTag, selection, anniversaries}, {enhanceSelect}, {rememb
 const language = document.body.dataset.lang;
 const labels = {essay: 'Очерк', problem: 'Задача', instrument: 'Инструмент', note: 'Заметка'};
 
+document.querySelectorAll('.prose table').forEach((table, index) => {
+  const region = element('div', 'table-scroll');
+  region.tabIndex = 0;
+  region.setAttribute('role', 'region');
+  region.setAttribute('aria-label', `${language === 'ru' ? 'Таблица' : 'Table'} ${index + 1}`);
+  table.before(region);
+  region.append(table);
+});
+
 const themeButton = document.querySelector('.theme-toggle');
 const systemTheme = matchMedia('(prefers-color-scheme: dark)');
 let explicitTheme = false;
@@ -339,8 +348,30 @@ rememberReadingPosition();
 
 const archive = document.querySelector('#archive-cards');
 if (archive) {
-  loadIndex().then(records => {
+  loadIndex().then(async records => {
     const pool = records.filter(record => record.language === language);
+    // Reserve enough space for any article, including long archival titles and tags.
+    function reserveArchiveSpace() {
+      if (!pool.length || !archive.clientWidth) return;
+      const probe = archive.cloneNode(false);
+      probe.removeAttribute('id');
+      probe.setAttribute('aria-hidden', 'true');
+      probe.inert = true;
+      probe.style.cssText = `position:absolute;visibility:hidden;pointer-events:none;width:${archive.clientWidth}px`;
+      probe.replaceChildren(...pool.map(record => card(record, 'archive-card')));
+      archive.after(probe);
+      const height = Math.ceil(Math.max(...[...probe.children].map(node => node.getBoundingClientRect().height)));
+      probe.remove();
+      archive.style.setProperty('--archive-card-height', `${height}px`);
+    }
+    await document.fonts.ready;
+    reserveArchiveSpace();
+    let measuredWidth = archive.clientWidth;
+    new ResizeObserver(() => {
+      if (archive.clientWidth === measuredWidth) return;
+      measuredWidth = archive.clientWidth;
+      reserveArchiveSpace();
+    }).observe(archive);
     const storageKey = `history-math:archive:${language}`;
     let previous = [...archive.querySelectorAll('h3 a')].map(link => link.getAttribute('href'));
     try {

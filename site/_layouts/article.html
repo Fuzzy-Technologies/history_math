@@ -2,12 +2,18 @@
 layout: default
 ---
 <article class="reading-layout">
+  {% include article-print-heading.html %}
   <header class="article-heading">
     <a class="back-link" href="{% if page.lang == 'ru' %}{{ '/ru/materials/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">← {% if page.lang == 'ru' %}К материалам{% else %}Back to journal{% endif %}</a>
-    <p class="eyebrow">{% include type.html type=page.type %} · {% if page.status == 'demo' %}{% if page.lang == 'ru' %}Демоматериал{% else %}Demo material{% endif %}{% endif %}</p>
+    <p class="eyebrow">{% include type.html type=page.type %}{% if page.status == 'demo' %} · {% if page.lang == 'ru' %}Демоматериал{% else %}Demo material{% endif %}{% endif %}</p>
     <h1 tabindex="-1">{{ page.title }}</h1><p class="lead">{{ page.description }}</p>
-    <p class="article-meta">{{ page.author }} <span>·</span> <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d.%m.%Y' }}</time> <span>·</span> {{ page.lang | upcase }}</p>
+    <p class="article-meta">{{ page.author }}{% if page.status != 'draft' %} <span>·</span> <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d.%m.%Y' }}</time>{% endif %} <span>·</span> {{ page.lang | upcase }}</p>
+    {% include article-details.html %}
+    {% if page.status == 'draft' %}<p class="demo-notice">{% if page.lang == 'ru' %}Копия для редакторского ревью. На сайте не опубликована.{% else %}Editorial review copy. Not published on the site.{% endif %}</p>{% endif %}
+    {% if page.original_publication %}<p class="original-publication">{% if page.lang == 'ru' %}Прежняя публикация{% else %}Previous publication{% endif %}: {{ page.original_publication.outlet | escape }}{% if page.original_publication.date %} · {{ page.original_publication.date | escape }}{% endif %}</p>{% endif %}
     {% if page.status == 'demo' %}<p class="demo-notice">{% if page.lang == 'ru' %}Пробный материал. Не авторская статья Мансура или Тимура.{% else %}A demo article, not authored by Mansur or Timur.{% endif %}</p>{% endif %}
+    <p class="print-source"><a href="{{ page.url | absolute_url }}">{% if page.lang == 'ru' %}Статья на сайте журнала{% else %}Read this article on the journal website{% endif %}</a></p>
+    {% if page.pdf_url %}<div class="article-actions"><a class="button article-pdf" href="{{ page.pdf_url | relative_url }}" download aria-label="{% if page.lang == 'ru' %}Скачать статью в PDF{% else %}Download article as PDF{% endif %}">PDF ↓</a></div>{% endif %}
   </header>
   <div class="reading-resume" hidden>
     <span role="status">{% if page.lang == 'ru' %}Продолжили с места остановки.{% else %}Resumed where you left off.{% endif %}</span>
@@ -17,7 +23,7 @@ layout: default
   <div class="article-spread">
   <aside class="article-sidebar" hidden><nav class="article-toc" aria-label="{% if page.lang == 'ru' %}В этой статье{% else %}In this article{% endif %}"><p class="eyebrow">{% if page.lang == 'ru' %}Содержание{% else %}Contents{% endif %}</p><ol></ol></nav></aside>
   <div class="prose article-body">
-    {% if page.hero_image %}<figure><img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_alt | escape }}" width="960" height="600"><figcaption>{{ page.hero_caption | escape }}</figcaption></figure>{% endif %}
+    {% if page.hero_image %}{% if page.schema_version == 1 %}{% assign hero = page.figures | where: 'path', page.hero_image | first %}{% include article-figure.html id=hero.id %}{% else %}<figure><img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_alt | escape }}" width="960" height="600"><figcaption>{{ page.hero_caption | escape }}</figcaption></figure>{% endif %}{% endif %}
     {{ content }}
   </div>
   </div>

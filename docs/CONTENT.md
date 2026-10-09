@@ -1,81 +1,48 @@
 # Public content and export contract
 
+For archival publication packages, [ADR 0001](adr/0001-archive-article-pilot.md) and [the preparation procedure](ARTICLE_PREPARATION.md) define the implemented v1 contract. This repository owns the canonical schema in `schemas/article-v1.schema.json`; the source gate checks its integrity lock, and both filled templates use that schema. FELab metadata and NAS source articles/images are read only. The fields below describe the retained legacy demo contract. Real archival packages additionally use `schema_version`, `article_id`, `authors`, `rights_basis` and structured `figures`. Draft v1 packages have no website placement date. Opt-in review artifacts do not change the production draft gate.
+
 ## Add an article
 
-Copy `templates/article.md` to `site/_articles/<stable-slug>.<lang>.md`. One Markdown file is one article/language version. Edit the metadata and write prose using H2 section headings. The common site header, footer and article structure come from shared layouts. Keep confidential drafts on NAS; `status: draft` excludes a file from the generated site but does not make a public Git file private.
+Copy `templates/article.md` to `site/_articles/<stable-slug>.<lang>.md`. One Markdown file is one article/language version. Edit the metadata and write prose with H2 headings where sections are useful. The common site header, footer and article structure come from shared layouts. Keep confidential drafts on NAS; `status: draft` excludes a file from the generated site but does not make a public Git file private.
 
 Set `status: published` only after editorial approval; use `demo` for deliberately public prototype examples. Only these two statuses are emitted. The post-read gate runs before rendering and discovery, so `draft`, missing and unrecognized statuses have no page, public index or sitemap entry. Development documentation and templates live outside `site/` and are never copied.
 
 ## Front matter
 
-| Field | Contract |
-|---|---|
-| `layout` | Required, `article`. |
-| `title` | Required, nonempty localized title. |
-| `lang` | Required, `ru` or `en`; actual language of this file. |
-| `translation_key` | Required, stable lowercase ASCII work key shared only by its language versions. |
-| `date` | Required publication date, `YYYY-MM-DD`; drives fresh order and anniversaries. Demo dates are illustrative. |
-| `type` | Required: `essay`, `problem`, `instrument`, or `note`. |
-| `author` | Required actual author or an explicit demo authorship label. |
-| `description` | Required brief localized summary for cards, metadata and search. Quote YAML strings containing a colon. |
-| `tags` | Required array of nonempty localized topic strings. |
-| `math` | Required boolean; `true` opts into formula assets and dollar-math protection. |
-| `status` | Required editorial state; only `published` and `demo` are public. |
-| `permalink` | Required stable path: `/ru/articles/<slug>/` or `/articles/<slug>/`, without baseurl. |
-| `updated` | Optional revision date. |
-| `series` | Optional localized series label. |
-| `preview_image` | Optional local asset used only for the catalog/card. |
-| `cover_image` | Optional separate local asset used only for social/Open Graph preview. |
-| `hero_image` | Optional local asset rendered inside the article. |
-| `hero_alt` | Required when hero_image exists; accessible localized description. |
-| `hero_caption` | Optional visible image provenance/context. |
-| `original_publication_date` | Optional original outlet date; not the website anniversary date. |
-| `source_work_id` | Optional safe public ID: letters, digits, `_` or `-`, at most 80 characters; never a NAS path. |
+The canonical contract is `schemas/article-v1.schema.json`. Legacy `demo-*.md` files retain their older demonstration contract; new articles use v1.
 
-Image fields must refer to existing `/assets/...` files and retain their distinct roles. The rendered URL adds `baseurl`. Article dates and duplicate public URLs/language versions are validated by the Jekyll plugin.
+| Field                                    | Contract                                                                                                                                  |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| `schema_version`                         | Required, `1`.                                                                                                                            |
+| `article_id`, `source_work_id`           | Required stable public IDs; never private paths.                                                                                          |
+| `layout`, `title`, `description`         | Required article layout, localized title and brief summary.                                                                               |
+| `authors`, `author`                      | Required authors array and its comma-separated display value.                                                                             |
+| `lang`, `translation_key`, `permalink`   | Required language, stable work key and language-specific URL.                                                                             |
+| `type`, `tags`, `math`                   | Required rubric, topic array and formula boolean. Biographies use `series: Персоналии` and the `Персоналии` tag, alongside existing tags. |
+| `status`                                 | `draft` during preparation; `published` requires recorded approval. `demo` labels examples.                                               |
+| `date`                                   | Website placement date; required only for published/demo pages. Omit on drafts.                                                           |
+| `original_publication`                   | Optional known earlier outlet, date, URL or citation; distinct from website placement.                                                    |
+| `rights_basis`                           | Required documented basis for placing the author text.                                                                                    |
+| `preview_image`, `cover_image`           | Optional existing illustrations for cards and social previews. Include their provenance in `figures`.                                     |
+| `hero_image`, `hero_alt`, `hero_caption` | Optional leading illustration; both text fields required when used.                                                                       |
+| `figures`                                | Figure inventory: ID, local path, alternative text, caption, source and rights basis; verified links/licenses when known.                 |
 
 ## Markdown, formulas and media
 
-Headings, lists, blockquotes, tables, footnotes and source links use GFM/kramdown Markdown. Use `$x_1^2 + x_2^2 = r^2$` inline and a separate block for display math:
+Short notes may begin with ordinary prose; no placeholder heading is required. Real section headings start at H2 beneath the shared title. Use explicit anchors, footnotes, reference links and ordinary Markdown tables. Run `python3 tools/markdown_tables.py --write` after staging new Markdown files; CI checks alignment without editing files. The formatter is reused from 1337; see [reuse details](REUSE.md).
 
-```latex
-$$
-S = \pi r^2.
-$$
-```
+External links use descriptive words, such as a book title or original publication title, rather than a visible URL. Keep the original destination in the Markdown link or reference definition. Figure `source_url` and `license_url` remain metadata; the shared include displays named source and license links. Source and browser gates reject bare URLs and URL-labelled links in article prose, while literal code examples remain unchanged.
 
-Set `math: true`. A pre-render hook protects math from Markdown emphasis and supplies it to pinned local KaTeX 0.16.10. Backtick code is left alone. KaTeX trust is disabled; unsupported notation produces a visible unrendered formula and makes browser validation fail. Pages without formulas load no math JavaScript or font CSS. Literal dollar signs outside math should be escaped as `\$`.
+Use `$x_1^2+x_2^2=r^2$` inline and `$$...$$` on separate lines for display mathematics. Set `math: true`. The common hook protects formulas from Markdown and supplies them to pinned local KaTeX with trust disabled. Unsupported notation fails validation. Escape literal dollar signs as `\$`.
 
-Place images and GIFs in `site/assets/images/<work-key>/`. They must be publication-sized and have known provenance. Use a base-path-aware Markdown image:
+Keep selected images in `site/assets/images/<article-id>/`. Record each figure in front matter and insert `{% include article-figure.html id="fig-1" %}`. The shared template keeps native dimensions and proportionally reduces images above 960 × 720 pixels or the available width. Small images stay small; the existing image viewer opens on click. Tables retain their row/column structure and scroll inside a keyboard-accessible region on narrow screens.
 
-```markdown
-![Localized alternative text]({{ '/assets/images/work-key/figure.gif' | relative_url }})
+## Editorial decision
 
-*Figure 1. A localized caption and source attribution.*
+`reviews/<article-id>.json` is the only editable question list. It contains `review_version: 1`, the article ID, `questions` and `approval`; reconciliation notes may remain alongside them. Each question has a stable `id`, `question`, `blocking` boolean and `state` (`open`, `resolved`, `accepted`). Closed questions require a written `resolution`. PR descriptions show only open questions; do not duplicate the list in article metadata or pilot documentation.
 
-Reference text.[^source]
-
-[^source]: Bibliographic details and a link to the actual source.
-```
-
-For semantic figures, Markdown content can contain HTML:
-
-```html
-<figure>
-  <img src="{{ '/assets/images/work-key/figure.svg' | relative_url }}" alt="Localized description">
-  <figcaption>Localized caption and provenance.</figcaption>
-</figure>
-```
-
-Small public video files can use native controls without a backend. Keep heavy originals outside Git. Caption tracks and accessible descriptions belong with the publication:
-
-```html
-<video controls preload="none" poster="{{ '/assets/images/work-key/poster.jpg' | relative_url }}">
-  <source src="{{ '/assets/media/work-key/video.mp4' | relative_url }}" type="video/mp4">
-  <track kind="captions" srclang="ru" label="Russian" src="{{ '/assets/media/work-key/captions.vtt' | relative_url }}" default>
-  A localized fallback link to the video.
-</video>
-```
+Keep `approval: {"status": "pending"}` until a human editor approves. To publish, set the intended publication metadata, resolve blocking questions, and calculate the public package digest with `node scripts/article-review.mjs site/_articles/<id>.<lang>.md`. Record `status: approved`, the actual `reviewed_by`, ISO `date`, and `package_sha256` in `approval`. Node checks and Jekyll require approval matching the current Markdown and selected image bytes. Changing either invalidates the decision. This records the editor's decision; it does not grant automatic merge or publication permission.
 
 ## Discovery and archive behavior
 
@@ -83,6 +50,8 @@ The build generates compact `assets/search-ru.json` and `assets/search-en.json` 
 
 Fresh materials are sorted by publication date and remain stable. The archive rotates a three-item subset without duplicate URLs or repeated subsets when alternatives exist. Its reserved desktop grid and mobile row heights prevent rotation shifts. Publication anniversaries match month/day in previous years; historical birth/event dates are not used. If no date matches, a plain archive alternative is shown. Demos remain labeled, including when their illustrative dates match.
 
-## Future FELab export boundary
+## Archive reading and publication boundary
 
-No exporter is implemented here. A future exporter may produce an approved public package of Markdown language variants and selected assets conforming to this contract. It must omit private research, local SQLite/FTS, sessions, locks, logs, NAS paths, full internal metadata and large source media. Safe `source_work_id` can preserve provenance without leaking internal locations. Export should preserve `translation_key` and stable permalinks and require editorial approval before Git publication. The public build then creates indexes; there is no promised live NAS synchronization.
+Read existing FELab metadata and full articles and images from their corresponding NAS directories, then prepare and review the publication derivative in this site repository. Do not modify FELab or NAS. Omit private research, local SQLite/FTS, sessions, locks, logs, NAS paths, full internal metadata and large source media. Safe public IDs preserve provenance without leaking internal locations. Keep private reconciliation evidence in ignored local files here. Editorial review precedes approved website publication; draft Git copies are explicitly authorized review material. There is no live NAS synchronization or second editable derivative.
+
+Legacy instructions to publish in comments are operational markers, not a reason to discard their contents. Preserve useful content in context, in notes or in an afterword; reconcile all blocks against the current article and existing editorial decisions. Follow the [complete comment-block procedure](ARTICLE_PREPARATION.md#legacy-comment-blocks) and retain a private disposition for each block, including empty or already incorporated ones.

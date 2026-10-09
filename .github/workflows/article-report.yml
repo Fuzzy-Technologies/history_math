@@ -1,0 +1,78 @@
+name: Update article review comment
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, ready_for_review]
+  # Bootstrap the pending infrastructure without merging it into the default branch.
+  # Only maintainers can push this same-repository infrastructure branch.
+  push:
+    branches: [feature/archive-pilot-en]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: article-comment-${{ github.event.pull_request.number || 'pilot-bootstrap' }}
+  cancel-in-progress: true
+
+jobs:
+  comment:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      # Privileged job reads API metadata and the base's local dictionary only.
+      # No checkout, artifact execution, PR code or contributor-controlled shell.
+      - uses: actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71 # v9.0.0
+        with:
+          script: |
+            async function updateArticleComment(pullRequest) {
+            const repo = context.repo;
+            const number = pullRequest.number;
+            const commit = pullRequest.head.sha;
+            const marker = '<!-- history-math-article-report-v1 -->';
+            const trustedRef = context.eventName === 'pull_request_target' ? context.payload.pull_request.base.sha : context.sha;
+            const dictionary = await github.rest.repos.getContent({...repo, path: 'schemas/messages.json', ref: trustedRef});
+            if (dictionary.data.size > 24000 || dictionary.data.encoding !== 'base64') throw new Error('Invalid message dictionary');
+            const messages = JSON.parse(Buffer.from(dictionary.data.content, 'base64').toString('utf8'));
+            let selected;
+            let result = 'incomplete';
+            for (let attempt = 0; attempt < 50; attempt++) {
+              const live = (await github.rest.pulls.get({...repo, pull_number: number})).data;
+              if (live.state !== 'open' || live.head.sha !== commit) return;
+              const runs = (await github.rest.actions.listWorkflowRunsForRepo({...repo, head_sha: commit, per_page: 30})).data.workflow_runs;
+              selected = runs.filter(run => run.name === 'Prototype checks' && ['push', 'pull_request'].includes(run.event)).sort((a, b) => b.id - a.id)[0];
+              if (selected?.status === 'completed') {
+                const jobs = await github.paginate(github.rest.actions.listJobsForWorkflowRun, {...repo, run_id: selected.id, filter: 'latest', per_page: 100});
+                const check = jobs.find(job => job.name === 'Article package');
+                result = check?.conclusion === 'success' && selected.conclusion === 'success' ? 'pass' :
+                  (check?.conclusion === 'failure' || selected.conclusion === 'failure' ? 'fail' : 'incomplete');
+                break;
+              }
+              await new Promise(done => setTimeout(done, 15000));
+            }
+            const live = (await github.rest.pulls.get({...repo, pull_number: number})).data;
+            if (live.head.sha !== commit) return;
+            const m = messages[live.head.ref.endsWith('-ru') ? 'ru' : 'en'];
+            const url = selected?.html_url ?? `https://github.com/${repo.owner}/${repo.repo}/actions`;
+            const runId = selected?.id ?? 0;
+            const attempt = selected?.run_attempt ?? 0;
+            const body = `${marker}\n<!-- run:${runId} attempt:${attempt} -->\n${m[result]}\n\n${m.commit}: \`${commit}\`\n\n${m.preview}: [${m.preview}](${url})\n`;
+            const comments = await github.paginate(github.rest.issues.listComments, {...repo, issue_number: number, per_page: 100});
+            const previous = comments.find(comment => comment.user?.type === 'Bot' && comment.body?.includes(marker));
+            const previousRun = /<!-- run:(\d+) attempt:(\d+) -->/.exec(previous?.body ?? '');
+            if (previousRun && (Number(previousRun[1]) > runId || (Number(previousRun[1]) === runId && Number(previousRun[2]) > attempt))) return;
+            if ((await github.rest.pulls.get({...repo, pull_number: number})).data.head.sha !== commit) return;
+            if (previous) await github.rest.issues.updateComment({...repo, comment_id: previous.id, body});
+            else await github.rest.issues.createComment({...repo, issue_number: number, body});
+            }
+            if (context.eventName === 'pull_request_target') {
+              await updateArticleComment(context.payload.pull_request);
+            } else {
+              if (context.ref !== 'refs/heads/feature/archive-pilot-en') return;
+              const requests = await github.paginate(github.rest.pulls.list, {...context.repo, state: 'open', base: 'feature/archive-pilot-en', per_page: 100});
+              for (const request of requests) await updateArticleComment(request);
+            }

@@ -1,3 +1,4 @@
+import {recordRequestFailure} from './request-failures.mjs';
 import assert from 'node:assert/strict';
 
 export async function runReaderChecks({browser, origin, evidence, axe, report, checked}) {
@@ -8,7 +9,7 @@ export async function runReaderChecks({browser, origin, evidence, axe, report, c
   let validPosition;
   function track(page) {
     page.on('pageerror', error => report.consoleErrors.push(error.message));
-    page.on('requestfailed', request => report.requestFailures.push(request.url()));
+    page.on('requestfailed', request => recordRequestFailure(report, request));
   }
   async function audit(page, label) {
     await page.addScriptTag({content: axe});
@@ -63,7 +64,8 @@ export async function runReaderChecks({browser, origin, evidence, axe, report, c
     await audit(page, start.theme + ' ' + start.name + ': resumed article');
     await page.screenshot({path: `${evidence}/resumed-${start.name}.jpg`, fullPage: false});
     await page.getByRole('link', {name: 'Главная', exact: true}).click();
-    await page.getByRole('link', {name: 'Начать с чертежа', exact: true}).click();
+    await page.getByRole('navigation', {name: 'Основная навигация', exact: true}).getByRole('link', {name: 'Читальный зал', exact: true}).click();
+    await page.locator('.catalog-list h3 a[href="/history_math/ru/articles/demo-geometry/"]').click();
     await page.locator('.reading-resume').waitFor({state: 'visible'});
     const menuAlignment = await paragraph.evaluate((node, offset) => node.getBoundingClientRect().top + node.getBoundingClientRect().height * offset, saved.offset);
     assert.ok(Math.abs(menuAlignment - 24) < 3, 'Header navigation cleared the reading position');

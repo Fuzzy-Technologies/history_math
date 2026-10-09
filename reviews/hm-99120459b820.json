@@ -1,0 +1,82 @@
+{
+  "article_id": "hm-99120459b820",
+  "selection": "Complex DOCX superscripts, a scanned historical cover, a numerical diagram and material originally split across comments.",
+  "source_formats": [
+    "txt",
+    "djvu",
+    "docx"
+  ],
+  "original_publication": {
+    "outlet": "Telegram · history_math",
+    "date": "2025-04-18"
+  },
+  "reconciliation": {
+    "text": "All nonempty canonical source lines have a private handling ledger. Author prose is retained; technical markers are documented separately.",
+    "formulas": "Transcribed to dollar LaTeX where present; no factual or mathematical correction applied.",
+    "figures": 3,
+    "tables": 0,
+    "notes_and_bibliography": "Existing notes, source links and bibliography preserved; research attachments stay private.",
+    "automatic": "Source-contract checks and browser/build checks are recorded separately by CI.",
+    "manual": "Full canonical text read; numeric table cells and formula transformations compared with the source. Editorial accuracy still requires review.",
+    "editorial_follow_up": "Owner-authorized editorial corrections are recorded in manual_changes and question resolutions; NAS/FELab originals and selected image bytes remain unchanged.",
+    "comment_blocks": {
+      "checked_on": "2026-10-09",
+      "source_scope": "Complete original article and announcement; associated working documents checked where present.",
+      "markers_found": 3,
+      "nonempty_blocks": 3,
+      "summary": "All three substantive comment blocks were already included. The unchanged proof is moved next to the problem; the Ignatiev biography and Iamblichus bibliography are grouped under Примечания. Existing captions and rejected-claim corrections are preserved.",
+      "companion_check": "The complete working DOCX and the reference PDF title/colophon were checked. The working DOCX suggests book 2, problem 11, pages 23–25; direct verification against the DjVu edition remains the existing open question."
+    }
+  },
+  "manual_changes": [
+    "Original title promoted to the shared page title; original section headings marked as H2.",
+    "Operational comment-placement instructions and empty URL fields removed; hashtags moved to metadata.",
+    "Internal file markers mapped to figure inventory or retained bibliographic references.",
+    "Removed the placeholder section heading; selected existing archive images for card and social previews.",
+    "Verified the two ones and the n² proof; preserved Utilius after inspecting the actual engraving; removed the unsupported translation and Iamblichus-circle attribution.",
+    "All three substantive comment blocks were already included. The unchanged proof is moved next to the problem; the Ignatiev biography and Iamblichus bibliography are grouped under Примечания. Existing captions and rejected-claim corrections are preserved.",
+    "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged.",
+    "Recorded the owner's explicit publication approval dated 2026-10-09, set the website publication date, and bound the decision to the final Markdown and unchanged image bytes. Earlier publication dates are preserved."
+  ],
+  "review_version": 1,
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Timur Gilmullin (Tim55667757)",
+    "date": "2026-10-09",
+    "package_sha256": "e844813fd1fe40b3e8351c634e7048ada6fadfdb236840c94c6c0b7d087a278f"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Формулировка ряда включает две единицы; сохранена без исправления. Подтвердить соответствие определения и доказательства.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Две единицы соответствуют рисунку и доказательству. Для n=7 сумма 1+2+3+4+5+6+7+6+5+4+3+2+1 равна 49; в общем случае сумма равна n²."
+    },
+    {
+      "id": "q2",
+      "question": "В подписи гравюры сохранено исходное написание латинского текста; проверить его по изображению.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Архивная гравюра просмотрена: читается Vtilius, в современной записи Utilius. Исходное написание сохранено; неподтверждённый перевод убран."
+    },
+    {
+      "id": "q3",
+      "question": "Уточнить том, задачу и страницу в издании Игнатьева для числового круга.",
+      "blocking": true,
+      "state": "accepted",
+      "sources": [
+        "https://www.directmedia.ru/book-104447-v-tsarstve-smekalki-ili-arifmetika-dlya-vsekh-opy/"
+      ],
+      "research_note": "Direct-Media identifies book 2, Saint Petersburg, A. S. Suvorin printing house, 1909. Its reproduced excerpt contains problem 11 and the matching ascending/descending sequence. The OCR starts with 28, while the earlier companion record suggested pages 23–25; the printed page still needs visual verification. No page number has been guessed or added to the article.",
+      "resolution": "09.10.2026 Тимур Гильмуллин разрешил публикацию текущей версии с последующим уточнением печатной страницы Игнатьева. Книга 2, издание 1909 года и задача 11 найдены; противоречивый номер страницы из OCR в статью не добавлялся."
+    },
+    {
+      "id": "iamblichus-circle",
+      "question": "Подтвердить связь Circulus Pythagoricus с трудом Ямвлиха.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Неподтверждённое отнесение этого числового круга к Ямвлиху удалено. Историческая справка оставляет его имя и название труда, без утверждения о конкретном круге."
+    }
+  ]
+}
