@@ -32,7 +32,7 @@ try {
     assert.equal(await page.locator('.demo-strip').count(), 0);
     const latest = await page.locator('#latest-cards .card-image').evaluateAll(links => links.map(link => link.getAttribute('href')));
     assert.deepEqual(latest.slice().sort(), ids.map(id => `/history_math/ru/articles/${id}/`).sort());
-    assert.equal(await page.locator('.cover-bottom a').getAttribute('href'), latest[0]);
+    assert.equal(await page.locator('.cover-bottom a').getAttribute('href'), '/history_math/ru/materials/');
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false);
     await page.screenshot({path: `test-results/notice-screenshots/russian-home-${width}.png`, fullPage: true});
     await page.goto(`${origin}/`, {waitUntil: 'networkidle'});

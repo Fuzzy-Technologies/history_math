@@ -28,11 +28,13 @@ try {
     await details.locator('summary').focus(); await page.keyboard.press('Enter');
     assert.notEqual(await details.getAttribute('open'), null);
     if (language === 'ru') {
-      await page.locator('[data-citation-date]').fill('2026-10-12');
-      assert.equal(await page.locator('[data-citation-access]').textContent(), '12.10.2026');
-      await page.locator('[data-citation-date]').fill('');
-      assert.equal(await page.locator('[data-copy-citation]').isDisabled(), true);
-      await page.locator('[data-citation-date]').fill('2026-10-12');
+      assert.equal(await page.locator('[data-citation-date]').count(), 0);
+      const today = await page.evaluate(() => {
+        const now = new Date();
+        return [now.getDate(), now.getMonth() + 1, now.getFullYear()].map((n, i) => i < 2 ? String(n).padStart(2, '0') : n).join('.');
+      });
+      assert.equal(await page.locator('[data-citation-access]').textContent(), today);
+      assert.equal(await page.locator('[data-copy-citation]').innerText(), 'Скопировать выходные данные');
     }
     await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', {configurable: true, value: {writeText: async value => { window.copiedCitation = value; }}}));
     await page.locator('[data-copy-citation]').click();
@@ -55,5 +57,5 @@ try {
   assert.notEqual(await noJs.locator('.article-details').getAttribute('open'), null);
   assert.equal(await noJs.locator('[data-copy-citation]').isVisible(), false);
   await noJs.close();
-  console.log('PASS: RU/EN citations, keyboard disclosure, chosen access date, copying, 320/1440px, light/dark and accessibility');
+  console.log('PASS: RU/EN citations, keyboard disclosure, current local access date, copying, 320/1440px, light/dark and accessibility');
 } finally { await browser.close(); await new Promise(done => server.close(done)); }

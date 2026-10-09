@@ -99,7 +99,7 @@ try {
         for (let index = 0; index < 10; index += 1) {
           await page.locator('#reshuffle').click();
           const current = await page.locator('#archive-cards h3 a').evaluateAll(links => links.map(link => link.href).sort());
-          assert.equal(new Set(current).size, 3);
+          assert.equal(new Set(current).size, 4);
           assert.notDeepEqual(current, previous);
           previous = current;
         }
@@ -199,8 +199,8 @@ try {
   const context = await browser.newContext({javaScriptEnabled: false, viewport: {width: 390, height: 844}});
   const page = await context.newPage();
   await page.goto(origin + '/history_math/ru/');
-  assert.equal(await page.locator('.material-card').count(), 5);
-  assert.equal(await page.locator('#archive-cards h3 a').count(), 3);
+  assert.equal(await page.locator('.material-card').count(), 10);
+  assert.equal(await page.locator('#archive-cards h3 a').count(), 4);
   await page.goto(origin + '/history_math/ru/materials/');
   assert.equal(await page.locator('.material-card:visible').count(), articleRecords.length);
   checked('Without JavaScript: reading, catalog and initial archive remain available');
@@ -221,7 +221,7 @@ try {
     for (let visit = 0; visit < 3; visit += 1) {
       await page.reload({waitUntil: 'networkidle'});
       const current = await page.locator('#archive-cards h3 a').evaluateAll(links => links.map(link => link.href).sort());
-      assert.equal(new Set(current).size, 3);
+      assert.equal(new Set(current).size, 4);
       assert.notDeepEqual(current, previous);
       previous = current;
     }
@@ -248,7 +248,7 @@ try {
     await page.screenshot({path: `${evidence}/reading-dark-${viewport.name}.png`, fullPage: true});
     checked(`${viewport.name}: archive changes across reloads/new tabs; readable text and saved dark theme stay in bounds`);
 
-    const trigger = page.locator('.hero-figure .image-trigger');
+    const trigger = page.locator('.about-teaser .image-trigger');
     await trigger.focus();
     await page.keyboard.press('Enter');
     const dialog = page.locator('#image-viewer');
@@ -350,12 +350,18 @@ try {
         assert.ok(Math.abs(await page.evaluate(() => scrollY) - pageTop) < 2, 'Wheel moved the page inside the strip');
         await carousel.evaluate(node => { node.scrollLeft = node.scrollWidth - node.clientWidth; });
         await carousel.hover({position: {x: 100, y: 100}});
+        // End the previous wheel gesture before testing native scroll chaining at a new boundary.
+        await page.waitForTimeout(700);
         const atEnd = await page.evaluate(() => scrollY);
         await page.mouse.wheel(0, 120);
+        // Chromium may consume one boundary event while reconciling fractional scroll widths.
+        await page.waitForTimeout(200);
+        if (await page.evaluate(() => scrollY) <= atEnd + 10) await page.mouse.wheel(0, 120);
         await page.waitForFunction(top => scrollY > top + 10, atEnd);
         await carousel.scrollIntoViewIfNeeded();
         await carousel.evaluate(node => { node.scrollLeft = 0; });
         await carousel.hover({position: {x: 100, y: 100}});
+        await page.waitForTimeout(700);
         const atStart = await page.evaluate(() => scrollY);
         await page.mouse.wheel(0, -120);
         await page.waitForFunction(top => scrollY < top - 10, atStart);

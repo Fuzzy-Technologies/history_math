@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased — journal reading polish
+
+- Simplify citations to the current local access date and move PDF downloads beside article metadata.
+- Apply owner-requested corrections to the five published articles, retain source/rights provenance, remove duplicate table imagery and keep prose punctuation attached to inline math.
+- Add bilingual about pages and compact localized horizontal PDF mastheads; PDFs remain automatically rebuilt deployment output, never committed binaries.
+- Retire five public demos, partition homepage selections, and paginate the carousel in batches of ten with four-column archive picks.
+
 ## Unreleased — first prototype
 
 - Replace the faint geometric favicon with an M² monogram in two rings, an ivory background and a local PNG fallback.

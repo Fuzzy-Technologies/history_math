@@ -53,3 +53,17 @@ test('a saved archive subset is replaced even when the random sequence repeats',
   assert.notDeepEqual(next.map(record => record.url).sort(), first.map(record => record.url).sort());
   assert.equal(new Set(next.map(record => record.url)).size, 3);
 });
+
+test('homepage pools exclude demos and newest ten, split odd remainders and stabilize tied dates', async () => {
+  const {journalGroups} = await import('../site/assets/core.js');
+  for (const count of [0, 5, 10, 11, 12, 19, 31, 101]) {
+    const input = Array.from({length: count}, (_, index) => ({url: `/article-${String(index).padStart(3, '0')}/`, date: '2026-10-09', status: 'published', language: 'ru'}));
+    const groups = journalGroups([...input, {url: '/demo/', status: 'demo', language: 'ru'}, {url: '/en/', status: 'published', language: 'en'}], 'ru');
+    assert.equal(groups.latest.length, Math.min(10, count));
+    assert.equal(groups.featured.length, Math.ceil(Math.max(0, count - 10) / 2));
+    assert.equal(groups.archive.length, Math.floor(Math.max(0, count - 10) / 2));
+    const urls = Object.values(groups).flat().map(record => record.url);
+    assert.equal(new Set(urls).size, count);
+    assert.deepEqual(journalGroups([...input].reverse(), 'ru'), groups);
+  }
+});

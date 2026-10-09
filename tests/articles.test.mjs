@@ -138,3 +138,12 @@ test('one bot comment is updated and stale runs cannot replace newer fork heads'
   head = 'sha2'; assert.equal(await updateReportComment(args), false);
   assert.equal(updated, 1);
 });
+
+test('decorative figures may omit visible captions but never provenance or alt text', () => {
+  const decorative = text.replace(/  caption: .*/, '  caption: ""\n    credit: ""');
+  assert.deepEqual(errors(decorative), []);
+  for (const field of ['alt', 'source', 'rights_basis']) {
+    assert.ok(errors(decorative.replace(new RegExp(`  ${field}: .*`), `  ${field}: ""`)).some(item => ['HM_METADATA', 'HM_FIGURE'].includes(item.code)));
+  }
+  assert.ok(errors(decorative.replace('  credit: ""', '  credit: false')).some(item => item.code === 'HM_METADATA'));
+});

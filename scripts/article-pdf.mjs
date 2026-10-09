@@ -66,14 +66,14 @@ export async function buildPdfs(siteDirectory) {
         clipped: [...document.querySelectorAll('.article-body table, .math-source[data-display="true"] .katex')]
           .some(node => node.getBoundingClientRect().width > document.querySelector('.article-body').getBoundingClientRect().width + 2)
       }));
-      const logo = article.lang === 'ru' ? 'Math-with-Mansur-logo-ru.png' : 'Math-with-Mansur-logo.png';
+      const logo = article.lang === 'ru' ? 'Math-with-Mansur-ru.svg' : 'Math-with-Mansur.png';
       if (errors.length || state.lang !== article.lang || state.unrendered || state.missingPrintImage || state.clipped || !state.content || !state.logo?.endsWith(logo)) {
         throw new Error(`PDF render failed for ${article.url}: ${JSON.stringify({errors, state})}`);
       }
       // Downsample only the print DOM to about 240 dpi; never modify the archived assets.
       await page.evaluate(async ({localOrigin, publicOrigin}) => {
         for (const img of document.querySelectorAll('.print-masthead img, .article-body img')) {
-          if (new URL(img.src).pathname.endsWith('.svg')) continue;
+          if (new URL(img.src).pathname.endsWith('.svg') && !img.closest('.print-masthead')) continue;
           const bounds = img.getBoundingClientRect();
           const ratio = Math.min(1, Math.max(bounds.width * 2.5 / img.naturalWidth, bounds.height * 2.5 / img.naturalHeight));
           if (ratio >= 1) continue;

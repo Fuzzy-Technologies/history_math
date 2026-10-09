@@ -37,14 +37,15 @@
     "The announcement comment overlaps the existing explanation. Its missing count of nine cells, including the shared zero in a 5 by 5 grid, is restored beside step 2 under Разгадка. Other steps, generalization and closing invitation are already included once.",
     "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged.",
     "Added the verified 1999 Gardner edition, chapter 2, pages 21–23 and figures 8–9. Visually compared the printed matrix and explanation; did not claim to inspect the unavailable private DOC.",
-    "Recorded the owner's explicit publication approval dated 2026-10-09, set the website publication date, and bound the decision to the final Markdown and unchanged image bytes. Earlier publication dates are preserved."
+    "Recorded the owner's explicit publication approval dated 2026-10-09, set the website publication date, and bound the decision to the final Markdown and unchanged image bytes. Earlier publication dates are preserved.",
+    "Applied Timur Gilmullin’s requested 2026-10-09 post-publication corrections: concise visible figure captions and credits; where applicable, nonduplicated numeric table, explanatory prose and compact equivalent formulas. Original source/rights provenance is retained separately. This is an owner-requested derivative update, not a new scientific review."
   ],
   "review_version": 1,
   "approval": {
     "status": "approved",
     "reviewed_by": "Timur Gilmullin (Tim55667757)",
     "date": "2026-10-09",
-    "package_sha256": "f68a9d932dcc3fc2be6cb09474e319e92dfef8c6e050de437604b9f4e08e3531"
+    "package_sha256": "8b352ab151d946f738e9ca65f5a0280fb4df9c4b19e055c4bca0e70d04ed7fb3"
   },
   "questions": [
     {

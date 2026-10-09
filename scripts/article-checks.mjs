@@ -51,7 +51,7 @@ export function checkArticle(text, file, root, identities = new Set()) {
   for (const figure of data.figures ?? []) {
     if (figures.has(figure.id)) add('HM_IDENTIFIER', figure.id);
     figures.set(figure.id, figure);
-    if (['alt', 'caption', 'source', 'rights_basis'].some(key => typeof figure[key] !== 'string' || !figure[key].trim())) add('HM_FIGURE', figure.id);
+    if (['alt', 'source', 'rights_basis'].some(key => typeof figure[key] !== 'string' || !figure[key].trim())) add('HM_FIGURE', figure.id);
     safeAsset(figure.path, metadataLine(figure.path));
   }
   const rolePaths = new Set(['preview_image', 'cover_image', 'hero_image'].map(key => data[key]).filter(Boolean));

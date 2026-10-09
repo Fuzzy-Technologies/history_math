@@ -33,14 +33,15 @@
     "Dated the archived record explicitly to 2019; narrowed the OEIS link; removed the unsupported cryptography example and museum attribution.",
     "No comment-placement blocks occur in the complete article or announcement. The announcement repeats existing article content. Earlier corrections to the historical record, cryptography claim and painting caption are preserved.",
     "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged.",
-    "Recorded the owner's explicit publication approval dated 2026-10-09, set the website publication date, and bound the decision to the final Markdown and unchanged image bytes. Earlier publication dates are preserved."
+    "Recorded the owner's explicit publication approval dated 2026-10-09, set the website publication date, and bound the decision to the final Markdown and unchanged image bytes. Earlier publication dates are preserved.",
+    "Applied Timur Gilmullin’s requested 2026-10-09 post-publication corrections: concise visible figure captions and credits; where applicable, nonduplicated numeric table, explanatory prose and compact equivalent formulas. Original source/rights provenance is retained separately. This is an owner-requested derivative update, not a new scientific review."
   ],
   "review_version": 1,
   "approval": {
     "status": "approved",
     "reviewed_by": "Timur Gilmullin (Tim55667757)",
     "date": "2026-10-09",
-    "package_sha256": "14331887f8f7b3ca65ffb46299ab3fef82d5ec8a919ba1403f437e2b53b5e63c"
+    "package_sha256": "5027833b2e45e3e61e29d40a91cee4bad713f91a02131211356ba2ab4f907491"
   },
   "questions": [
     {
