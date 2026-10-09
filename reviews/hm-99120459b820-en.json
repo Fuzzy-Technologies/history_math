@@ -2,7 +2,10 @@
   "article_id": "hm-99120459b820-en",
   "review_version": 1,
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "Timur Gilmullin (Tim55667757)",
+    "date": "2026-10-10",
+    "package_sha256": "6b02e45bd13c8c2891b72ee9d3fc9011f2a45199f37b98ba495f42a20856fc5a"
   },
   "questions": [],
   "reconciliation": {
@@ -22,6 +25,7 @@
         "Used consistent names and BCE/CE dating; retained the Latin inscription as an original inscription, not untranslated interface text.",
         "Translated descriptive Russian book titles while explicitly identifying the actual Russian editions and original publication."
       ]
-    }
+    },
+    "publication_approval": "Owner confirmed review and merge of PR #47 on 2026-10-10 (Europe/Moscow). Publication metadata updated; approved English prose and image bytes are unchanged."
   }
 }
