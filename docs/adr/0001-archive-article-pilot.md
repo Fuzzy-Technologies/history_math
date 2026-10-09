@@ -1,5 +1,7 @@
 # ADR 0001: Archive-linked article preparation and review
 
+The branch flow in this historical pilot decision is superseded by [ADR 0002](0002-master-only-workflow.md). Its editorial and source-preservation rules remain in force.
+
 Status: implemented on the pilot feature branch; awaiting owner review. Date: 2026-10-07.
 This is the first numbered ADR in this repository. It complements the owner-controlled development protocol.
 

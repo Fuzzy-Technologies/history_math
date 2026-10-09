@@ -25,9 +25,11 @@ class PageParser(HTMLParser):
             self.language = attributes.get("lang")
         if attributes.get("id"):
             self.ids.add(attributes["id"])
-        for name in ("href", "src", "poster"):
+        for name in ("href", "src", "poster", "data-original"):
             if attributes.get(name):
                 self.links.append(attributes[name])
+        if tag == "img" and attributes.get("srcset"):
+            self.links.extend(item.strip().split()[0] for item in attributes["srcset"].split(","))
         if tag == "link" and attributes.get("rel") == "canonical":
             self.canonical.append(attributes.get("href"))
         if tag == "link" and attributes.get("rel") == "alternate":

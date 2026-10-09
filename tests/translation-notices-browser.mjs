@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
 
 const root = resolve('test-results/notices-fixture');
-const mime = {'.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.woff2': 'font/woff2'};
+const mime = {'.webp': 'image/webp', '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.woff2': 'font/woff2'};
 const server = createServer(async (request, response) => {
   try {
     const pathname = new URL(request.url, 'http://localhost').pathname;
@@ -32,7 +32,7 @@ try {
     assert.equal(await page.locator('.demo-strip').count(), 0);
     const latest = await page.locator('#latest-cards .card-image').evaluateAll(links => links.map(link => link.getAttribute('href')));
     assert.deepEqual(latest.slice().sort(), ids.map(id => `/history_math/ru/articles/${id}/`).sort());
-    assert.equal(await page.locator('.cover-bottom a').getAttribute('href'), latest[0]);
+    assert.equal(await page.locator('.cover-bottom a').getAttribute('href'), '/history_math/ru/materials/');
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false);
     await page.screenshot({path: `test-results/notice-screenshots/russian-home-${width}.png`, fullPage: true});
     await page.goto(`${origin}/`, {waitUntil: 'networkidle'});

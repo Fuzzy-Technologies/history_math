@@ -10,7 +10,7 @@ Set `status: published` only after editorial approval; use `demo` for deliberate
 
 ## Front matter
 
-The canonical contract is `schemas/article-v1.schema.json`. Legacy `demo-*.md` files retain their older demonstration contract; new articles use v1.
+The canonical contract is `schemas/article-v1.schema.json`. Legacy `demo-*.md` files exist only under `tests/fixtures/articles/` for isolated regression builds; the production collection contains real v1 articles only.
 
 | Field                                    | Contract                                                                                                                                  |
 | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -55,3 +55,7 @@ Fresh materials are sorted by publication date and remain stable. The archive ro
 Read existing FELab metadata and full articles and images from their corresponding NAS directories, then prepare and review the publication derivative in this site repository. Do not modify FELab or NAS. Omit private research, local SQLite/FTS, sessions, locks, logs, NAS paths, full internal metadata and large source media. Safe public IDs preserve provenance without leaking internal locations. Keep private reconciliation evidence in ignored local files here. Editorial review precedes approved website publication; draft Git copies are explicitly authorized review material. There is no live NAS synchronization or second editable derivative.
 
 Legacy instructions to publish in comments are operational markers, not a reason to discard their contents. Preserve useful content in context, in notes or in an afterword; reconcile all blocks against the current article and existing editorial decisions. Follow the [complete comment-block procedure](ARTICLE_PREPARATION.md#legacy-comment-blocks) and retain a private disposition for each block, including empty or already incorporated ones.
+
+Figure `caption` may be an empty string for a decorative illustration. `source`, `rights_basis` and meaningful `alt` remain required provenance. Optional `credit` overrides the visible source text, including an empty string to omit internal editorial notes; verified source and license links remain visible. Captions are heading-like, without final periods. Inline formula punctuation belongs to ordinary prose outside dollar delimiters; the renderer keeps adjacent punctuation attached without including it in the TeX source.
+
+Raster additions or replacements also require `npm run build:images` (see `docs/DESIGN.md`). Commit the generated reading derivatives and image manifest together with the untouched originals.

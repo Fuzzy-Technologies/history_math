@@ -5,7 +5,7 @@ import {chromium} from 'playwright';
 
 export async function checkBrowser(root, articles, evidence) {
   await mkdir(evidence, {recursive: true});
-  const mime = {'.pdf': 'application/pdf', '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.jpg': 'image/jpeg', '.png': 'image/png', '.woff2': 'font/woff2'};
+  const mime = {'.webp': 'image/webp', '.pdf': 'application/pdf', '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.jpg': 'image/jpeg', '.png': 'image/png', '.woff2': 'font/woff2'};
   const server = createServer(async (request, response) => {
     try {
       const url = new URL(request.url, 'http://localhost');

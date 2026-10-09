@@ -26,7 +26,6 @@
   <meta property="og:type" content="{% if page.layout == 'article' %}article{% else %}website{% endif %}">
   <meta property="og:locale" content="{% if ru %}ru_RU{% else %}en_US{% endif %}">
   {% if page.cover_image %}<meta property="og:image" content="{{ page.cover_image | absolute_url }}">{% endif %}
-  <link rel="icon" href="{{ '/assets/images/favicon-m2-32.png' | relative_url }}?v={{ asset_version }}" type="image/png" sizes="32x32">
   <link rel="icon" href="{{ '/assets/images/favicon-m2.svg' | relative_url }}?v={{ asset_version }}" type="image/svg+xml" sizes="any">
   <link rel="preload" href="{{ '/assets/fonts/pt-serif-regular.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}?v={{ asset_version }}">
@@ -43,8 +42,8 @@
   <a class="skip-link" href="#main">{% if ru %}К содержимому{% else %}Skip to content{% endif %}</a>
   <div class="masthead-note"><span>{% if ru %}История математики{% else %}The history of mathematics{% endif %}</span><span>{% if ru %}Люди · Идеи · Открытия{% else %}People · Ideas · Discovery{% endif %}</span></div>
   <header class="site-header">
-    <a class="brand" href="{{ home | relative_url }}"><img src="{% if ru %}{{ '/assets/images/Math-with-Mansur-logo-ru.png' | relative_url }}{% else %}{{ '/assets/images/Math-with-Mansur-logo.png' | relative_url }}{% endif %}" alt="" width="112" height="112" fetchpriority="high"><span><span class="brand-title">{% if ru %}Математика{% else %}Mathematics{% endif %}</span><span class="brand-sub">{% if ru %}с Мансур-абый{% else %}with Mansur{% endif %}</span></span></a>
-    <div class="masthead-meta"><p class="masthead-motto">{% if ru %}О математике,<br>её истории и людях.{% else %}Mathematics,<br>its history and people.{% endif %}</p><a class="masthead-about" href="{{ '/ru/about/' | relative_url }}" {% if page.translation_key == 'about' %}aria-current="page"{% endif %}>{% if ru %}О журнале{% else %}About the journal (RU){% endif %}</a></div>
+    <a class="brand" href="{{ home | relative_url }}">{% if ru %}{% assign brand_image = '/assets/images/Math-with-Mansur-logo-ru.png' %}{% else %}{% assign brand_image = '/assets/images/Math-with-Mansur-logo.png' %}{% endif %}{% include reading-image.html src=brand_image alt='' width=112 height=112 loading='eager' priority='high' %}<span><span class="brand-title">{% if ru %}Математика{% else %}Mathematics{% endif %}</span><span class="brand-sub">{% if ru %}с Мансур-абый{% else %}with Mansur{% endif %}</span></span></a>
+    <div class="masthead-meta"><p class="masthead-motto">{% if ru %}О математике,<br>её истории и людях.{% else %}Mathematics,<br>its history and people.{% endif %}</p><a class="masthead-about" href="{% if ru %}{{ '/ru/about/' | relative_url }}{% else %}{{ '/about/' | relative_url }}{% endif %}" {% if page.translation_key == 'about' %}aria-current="page"{% endif %}>{% if ru %}О журнале{% else %}About the journal{% endif %}</a></div>
     <div class="navigation-bar">
     <nav aria-label="{% if ru %}Основная навигация{% else %}Main navigation{% endif %}">
       {% if ru %}
@@ -63,7 +62,7 @@
     </div>
   </header>
   <main id="main" tabindex="-1">{{ content }}</main>
-  <footer class="site-footer"><div class="footer-brand"><img src="{% if ru %}{{ '/assets/images/Math-with-Mansur-logo-ru.png' | relative_url }}{% else %}{{ '/assets/images/Math-with-Mansur-logo.png' | relative_url }}{% endif %}" alt="" width="64" height="64" loading="lazy"><div><strong>{% if ru %}Математика с Мансур-абый{% else %}Mathematics with Mansur{% endif %}</strong><p>{% if ru %}О математике и её истории.{% else %}The history of mathematics.{% endif %}</p></div></div><div><a href="https://fuzzy-technologies.github.io/">Fuzzy Technologies ↗</a><p>{% if ru %}Технологии · Знания · Наука{% else %}Technologies · Knowledge · Science{% endif %}</p></div></footer>
+  <footer class="site-footer"><div class="footer-brand">{% if ru %}{% assign brand_image = '/assets/images/Math-with-Mansur-logo-ru.png' %}{% else %}{% assign brand_image = '/assets/images/Math-with-Mansur-logo.png' %}{% endif %}{% include reading-image.html src=brand_image alt='' width=64 height=64 %}<div><strong>{% if ru %}Математика с Мансур-абый{% else %}Mathematics with Mansur{% endif %}</strong><p>{% if ru %}О математике и её истории.{% else %}The history of mathematics.{% endif %}</p></div></div><div><a href="https://fuzzy-technologies.github.io/">Fuzzy Technologies ↗</a><p>{% if ru %}Технологии · Знания · Наука{% else %}Technologies · Knowledge · Science{% endif %}</p></div></footer>
   {% include image-viewer.html %}
 </body>
 </html>

@@ -7,21 +7,13 @@ export function accessDate(value) {
 
 if (typeof document !== 'undefined') {
   for (const details of document.querySelectorAll('.article-details')) {
-    const input = details.querySelector('[data-citation-date]');
     const access = details.querySelector('[data-citation-access]');
     const button = details.querySelector('[data-copy-citation]');
     const status = details.querySelector('.citation-copy-status');
     const ru = document.documentElement.lang === 'ru';
-    if (input && access) {
+    if (access) {
       const now = new Date();
-      input.value = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
-      const update = () => {
-        const value = accessDate(input.value);
-        access.textContent = value || 'дд.мм.гггг';
-        if (button) button.disabled = !value;
-      };
-      update();
-      input.addEventListener('input', update);
+      access.textContent = accessDate(`${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`);
     }
     if (button) {
       button.hidden = false;

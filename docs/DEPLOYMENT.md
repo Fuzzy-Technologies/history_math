@@ -3,8 +3,8 @@
 ## Branch contract
 
 - `master`: default branch, approved production source.
-- `develop`: integrated editorial preparation; never public deployment.
-- `feature/*`: changes reviewed through PRs to `develop`.
+- `feature/*`: short-lived changes branched from `master`, reviewed through PRs directly to `master`.
+- The owner-approved merge to `master` is also the publication decision. There is no permanent integration branch; see [ADR 0002](adr/0002-master-only-workflow.md).
 
 `ci.yml` runs source, workflow, clean-build, output and browser checks and uploads only compact article reports. PR checks never obtain Pages/id-token write permissions. `deploy.yml` triggers only on pushes to master or manual dispatch, and both build and deploy jobs explicitly reject any ref other than `refs/heads/master`. Deployments use the GitHub Pages environment. Changing any workflow can change its policy; the administrative environment branch restriction below is a second boundary.
 
@@ -24,13 +24,13 @@ gh repo edit Fuzzy-Technologies/history_math --description "A multilingual journ
 gh api --method POST repos/Fuzzy-Technologies/history_math/pages -f build_type=workflow
 ```
 
-If Pages already exists, inspect it first and use `PUT` to update build_type instead of creating it. In Settings → Environments → github-pages, allow deployment branches/tags only from branch `master`, without requiring an additional reviewer. In Settings → Pages choose **GitHub Actions**, not branch-based deployment. Setting Pages to Actions does not publish this feature prototype; production waits for a separately approved master merge.
+If Pages already exists, inspect it first and use `PUT` to update build_type instead of creating it. In Settings → Environments → github-pages, allow deployment branches/tags only from branch `master`, without requiring an additional reviewer. In Settings → Pages choose **GitHub Actions**, not branch-based deployment. Production changes require an owner-approved PR merge into master.
 
 The GitHub connector and CLI authentication are independent. If `gh auth status` is unauthenticated, the owner must complete the browser/device authorization started by `gh auth login --hostname github.com --git-protocol https --web`. Never provide a PAT in chat or echo credentials. A connector-only session may write code and PRs while lacking callable administration endpoints; in that case report Description/Pages setup as incomplete.
 
 ## Existing feature cleanup
 
-`cleanup-merged-branch.yml` was installed on master before develop and feature branches were created. It uses `pull_request_target` only for closed PRs into develop. There is no checkout and no shell executing PR content. Eligibility is rechecked in the script: merged, same repository, `feature/*`, unchanged head, no other open PR. A final head recheck catches changes observed during cleanup; repeated runs and already-deleted refs are safe. GitHub's delete-ref API has no compare-and-delete parameter, so a commit racing after the final read cannot be atomically excluded. Contributors should stop pushing to a merged feature and use a new branch for follow-up work.
+`cleanup-merged-branch.yml` uses `pull_request_target` only for closed PRs into master. There is no checkout and no shell executing PR content. Eligibility is rechecked in the script: merged, same repository, `feature/*`, unchanged head, no other open PR. A final head recheck catches changes observed during cleanup; repeated runs and already-deleted refs are safe. GitHub's delete-ref API has no compare-and-delete parameter, so a commit racing after the final read cannot be atomically excluded. Contributors should stop pushing to a merged feature and use a new branch for follow-up work.
 
 The tests execute the actual inline workflow script with mocks for eligible, unmerged, wrong-base, protected branch, fork, advanced-head, concurrent-head, other-open-PR and deleted-ref cases. These tests do not represent a real merge event; that remains an owner-approved integration check. No branch is deleted as part of preparing this PR.
 

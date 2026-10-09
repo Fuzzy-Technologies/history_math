@@ -1,5 +1,6 @@
 {% assign figure = page.figures | where: 'id', include.id | first %}
+{% assign credit = figure.source %}{% if figure.credit != nil %}{% assign credit = figure.credit %}{% endif %}
 <figure id="{{ figure.id }}">
-  <img src="{{ figure.path | relative_url }}" alt="{{ figure.alt | escape }}" loading="lazy">
-  <figcaption>{{ figure.caption | escape }} <span class="figure-source">{{ figure.source | escape }}{% if figure.source_url %} · <a href="{{ figure.source_url | escape }}">{% if page.lang == 'ru' %}Источник{% else %}Source{% endif %}</a>{% endif %}{% if figure.license %} · {% if figure.license_url %}<a href="{{ figure.license_url | escape }}">{{ figure.license | escape }}</a>{% else %}{{ figure.license | escape }}{% endif %}{% endif %}</span></figcaption>
+  {% include reading-image.html src=figure.path alt=figure.alt %}
+  {% if figure.caption != '' or credit != '' or figure.source_url or figure.license %}<figcaption>{{ figure.caption | escape }}{% if credit != '' %}{% if figure.caption != '' %} · {% endif %}<span class="figure-source">{{ credit | escape }}</span>{% endif %}{% if figure.source_url %} · <a href="{{ figure.source_url | escape }}">{% if page.lang == 'ru' %}Источник{% else %}Source{% endif %}</a>{% endif %}{% if figure.license %} · {% if figure.license_url %}<a href="{{ figure.license_url | escape }}">{{ figure.license | escape }}</a>{% else %}{{ figure.license | escape }}{% endif %}{% endif %}</figcaption>{% endif %}
 </figure>

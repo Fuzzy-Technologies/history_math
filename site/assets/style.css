@@ -1221,7 +1221,7 @@ input::placeholder {
 }
 .article-heading h1 {
   overflow-wrap: anywhere;
-  font-size: calc(clamp(2.8rem, 4.8vw, 4.7rem) - 2px);
+  font-size: calc(clamp(2.8rem, 4.8vw, 4.7rem) - 4px);
   line-height: 1.12;
   max-width: 950px;
 }
@@ -1337,7 +1337,7 @@ input::placeholder {
 .reading-navigation a {
   overflow-wrap: anywhere;
   font-family: var(--serif);
-  font-size: 1.45rem;
+  font-size: calc(1.45rem - 1px);
   text-decoration: none;
   color: var(--ink);
   display: flex;
@@ -1842,7 +1842,7 @@ input::placeholder {
     grid-column: 1;
   }
   .article-heading h1 {
-    font-size: calc(3.7rem - 2px);
+    font-size: calc(3.7rem - 4px);
   }
   .page-prose {
     max-width: 700px;
@@ -2157,7 +2157,7 @@ input::placeholder {
     padding-bottom: 25px;
   }
   .article-heading h1 {
-    font-size: calc(2.8rem - 2px);
+    font-size: calc(2.8rem - 4px);
     line-height: 1.14;
   }
   .back-link {
@@ -2181,7 +2181,7 @@ input::placeholder {
     gap: 28px;
   }
   .reading-navigation a {
-    font-size: 1.45rem;
+    font-size: calc(1.45rem - 1px);
   }
   .reading-navigation a + a {
     padding-top: 24px;
@@ -2317,3 +2317,24 @@ input::placeholder {
 .citation-copy-status { display: block; margin-top: 8px; }
 @media (max-width: 480px) { .article-details dl { grid-template-columns: 1fr; gap: 2px; } .article-details dd { margin-bottom: 8px; } }
 @media print { .article-details { display: none; } }
+
+/* Keep inline math and its following prose punctuation on the same line. */
+.math-with-punctuation, .math-source[data-display="false"] { white-space: nowrap; }
+.math-source[data-display="false"] .katex { white-space: nowrap; }
+.article-meta-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.article-meta-row .article-meta { margin: 0; }
+
+.hero-picks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-self: center; padding: 30px; }
+.hero-picks:empty { display: none; }
+.hero-pick { display: flex; flex-direction: column; align-items: center; gap: 10px; text-decoration: none; text-align: center; color: var(--ink); font: 16px/1.35 var(--serif); }
+.hero-pick img { width: min(100%, 120px); aspect-ratio: 1; height: auto; object-fit: cover; }
+.hero-pick:hover span { text-decoration: underline; }
+.journal-hero:has(.hero-picks:empty), .journal-hero.without-picks { grid-template-columns: 1fr; }
+.archive-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.journal-pagination { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; padding-top: 24px; }
+.journal-pagination a { min-width: 40px; min-height: 40px; display: grid; place-items: center; border: 1px solid var(--line); text-decoration: none; }
+.journal-pagination a[aria-current] { background: var(--ink); color: var(--paper); }
+@media (max-width: 1000px) { .archive-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .archive-grid { grid-template-columns: 1fr; } .hero-picks { padding: 20px 0; } }
+
+.viewer-footer [data-viewer-download] { color: var(--panel-ink); display: inline-block; margin-bottom: 8px; }

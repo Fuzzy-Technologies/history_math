@@ -1,5 +1,7 @@
 # Archival pilot review evidence
 
+This records the original pilot publication. For subsequent work, use the master-only process in [ADR 0002](adr/0002-master-only-workflow.md).
+
 On 2026-10-09, Timur Gilmullin approved the five article packages for website publication. Their status is `published`, their website date is 2026-10-09, and each approval covers the final Markdown and selected image bytes. Current technical results are recorded by CI; live deployment is tracked by the separate publication PR #39 and its master workflow. This editorial admission does not claim an independent scientific peer review.
 
 Site infrastructure: [PR #26](https://github.com/Fuzzy-Technologies/history_math/pull/26), [ADR 0001](adr/0001-archive-article-pilot.md), [next-article procedure](ARTICLE_PREPARATION.md), [check conditions](ARTICLE_CHECKS.md). The site owns the canonical schema, templates, checks and editable article derivatives. Existing private FELab metadata and NAS article/image directories are read-only sources. No FELab infrastructure branch or PR is required; the separate public GitHub FELab project is outside this implementation.

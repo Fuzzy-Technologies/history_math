@@ -36,14 +36,15 @@
     "Verified the two ones and the n² proof; preserved Utilius after inspecting the actual engraving; removed the unsupported translation and Iamblichus-circle attribution.",
     "All three substantive comment blocks were already included. The unchanged proof is moved next to the problem; the Ignatiev biography and Iamblichus bibliography are grouped under Примечания. Existing captions and rejected-claim corrections are preserved.",
     "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged.",
-    "Recorded the owner's explicit publication approval dated 2026-10-09, set the website publication date, and bound the decision to the final Markdown and unchanged image bytes. Earlier publication dates are preserved."
+    "Recorded the owner's explicit publication approval dated 2026-10-09, set the website publication date, and bound the decision to the final Markdown and unchanged image bytes. Earlier publication dates are preserved.",
+    "Applied Timur Gilmullin’s requested 2026-10-09 post-publication corrections: concise visible figure captions and credits; where applicable, nonduplicated numeric table, explanatory prose and compact equivalent formulas. Original source/rights provenance is retained separately. This is an owner-requested derivative update, not a new scientific review."
   ],
   "review_version": 1,
   "approval": {
     "status": "approved",
     "reviewed_by": "Timur Gilmullin (Tim55667757)",
     "date": "2026-10-09",
-    "package_sha256": "e844813fd1fe40b3e8351c634e7048ada6fadfdb236840c94c6c0b7d087a278f"
+    "package_sha256": "ff40378665e0fb09a731a1e97c33f4b3d66dcda687aaf77f43d9aa63b0ddbb57"
   },
   "questions": [
     {

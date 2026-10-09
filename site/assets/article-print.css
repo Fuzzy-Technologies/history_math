@@ -10,10 +10,10 @@
   body { font-family: 'PT Serif', Georgia, serif; }
   .skip-link, .masthead-note, .site-header, .site-footer, .article-sidebar,
   .reading-resume, .reading-navigation, .article-actions, .back-link, .image-viewer,
-  .article-end, .image-trigger::after, .article-details { display: none !important; }
+  .article-end, .article-pdf, .image-trigger::after, .article-details { display: none !important; }
   main, #main, .reading-layout { width: auto; max-width: none; margin: 0; padding: 0; border: 0; }
   .print-masthead { display: flex; align-items: center; gap: 5mm; padding-bottom: 4mm; margin-bottom: 6mm; border-bottom: 1.5pt solid #8f6547; }
-  .print-masthead img { width: 23mm; height: 23mm; object-fit: contain; }
+  .print-masthead img { width: 86mm; height: auto; object-fit: contain; }
   .print-masthead strong { display: block; font-size: 15pt; font-weight: 400; }
   .print-masthead span { display: block; font: 8pt/1.5 system-ui, sans-serif; margin-top: 2mm; color: #62554e; }
   .article-heading { padding: 0 0 4mm; margin: 0; border: 0; break-inside: avoid; }

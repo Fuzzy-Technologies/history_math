@@ -37,3 +37,12 @@ export function anniversaries(records, now, language) {
   return records.filter(record => record.language === language && record.date.slice(5) === `${month}-${day}` &&
     Number(record.date.slice(0, 4)) < year);
 }
+
+// Newest ten are exclusive to the first carousel page. Split the rest by count.
+export function journalGroups(records, language) {
+  const articles = records.filter(record => record.language === language && record.status === 'published')
+    .sort((a, b) => b.date.localeCompare(a.date) || (a.url < b.url ? 1 : a.url > b.url ? -1 : 0));
+  const remainder = articles.slice(10);
+  const midpoint = Math.ceil(remainder.length / 2);
+  return {latest: articles.slice(0, 10), featured: remainder.slice(0, midpoint), archive: remainder.slice(midpoint)};
+}
