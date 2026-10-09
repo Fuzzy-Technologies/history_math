@@ -101,4 +101,26 @@ class PublicationTest < Minitest::Test
       assert_raises(Jekyll::Errors::FatalException) { Jekyll::Site.new(config).process }
     end
   end
+
+  def test_pdf_manifest_includes_both_languages_but_never_a_production_draft
+    with_site do |source, config|
+      text = File.read(File.join(source, "_articles/demo-geometry.md"))
+        .sub("lang: ru", "lang: en")
+        .sub("translation_key: demo-geometry", "translation_key: pdf-example")
+        .sub("permalink: /ru/articles/demo-geometry/", "permalink: /articles/pdf-example/")
+      File.write(File.join(source, "_articles/pdf-example.md"), text)
+      site = Jekyll::Site.new(config)
+      site.process
+      manifest = JSON.parse(File.read(File.join(site.dest, "assets/article-pdfs.json")))
+      assert_equal "/history_math", manifest["baseurl"]
+      assert_equal %w[en ru], manifest["articles"].map { |item| item["lang"] }.uniq.sort
+      refute manifest["articles"].any? { |item| item["url"].include?("hm-") }
+      en = File.read(File.join(site.dest, "articles/pdf-example/index.html"))
+      assert_includes en, "/history_math/assets/pdf/en/pdf-example.pdf"
+      assert_includes en, "/history_math/assets/images/Math-with-Mansur-logo.png"
+      destination = File.expand_path("../test-results/pdf-fixture", __dir__)
+      FileUtils.rm_rf(destination)
+      FileUtils.cp_r(site.dest, destination)
+    end
+  end
 end

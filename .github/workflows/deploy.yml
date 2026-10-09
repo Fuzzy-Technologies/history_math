@@ -36,13 +36,15 @@ jobs:
       - name: Verify approved source and build
         run: |
           npm ci
+          npx playwright install --with-deps chromium
           python3 tools/markdown_tables.py
           npm test
           node scripts/check-articles.mjs --source-only
           bundle exec ruby tests/publication_test.rb
+          node scripts/article-pdf.mjs --site-dir test-results/pdf-fixture
           bundle exec jekyll build --trace
+          node scripts/article-pdf.mjs
           python3 scripts/check_site.py _site /history_math
-          npx playwright install --with-deps chromium
           npm run test:browser
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
