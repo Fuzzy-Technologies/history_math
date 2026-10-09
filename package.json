@@ -3,12 +3,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/*.test.js tests/*.test.mjs",
+    "test": "python3 tools/image_assets.py && python3 -m unittest discover -s tests -p image_assets_test.py && node --test tests/*.test.js tests/*.test.mjs",
     "check:articles": "node scripts/check-articles.mjs",
-    "test:browser": "bundle exec ruby tests/browser_fixture.rb && BROWSER_SITE_DIR=test-results/browser-fixture node tests/browser.mjs && node tests/journal-browser.mjs",
+    "test:browser": "bundle exec ruby tests/browser_fixture.rb && BROWSER_SITE_DIR=test-results/browser-fixture node tests/browser.mjs && node tests/journal-browser.mjs && node tests/image-delivery-browser.mjs",
     "format:markdown": "python3 tools/markdown_tables.py --write",
     "check:markdown": "python3 tools/markdown_tables.py",
-    "build:pdf": "node scripts/article-pdf.mjs"
+    "build:pdf": "node scripts/article-pdf.mjs",
+    "build:images": "python3 tools/image_assets.py --write"
   },
   "devDependencies": {
     "ajv": "8.20.0",

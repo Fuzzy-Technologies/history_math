@@ -1,0 +1,504 @@
+{
+  "/assets/images/Math-with-Mansur-logo-ru.png": {
+    "sha256": "256b89831948156565a2268ba99ce32be91390f98800ab86b0e98963e7866b10",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 3087026,
+    "logo": true,
+    "variants": [
+      {
+        "path": "/assets/images/Math-with-Mansur-logo-ru.svg",
+        "width": 480,
+        "height": 480,
+        "sha256": "80fd5f7259ca67694d139dfaf28cce112291d6e30a32ea34d60abf32e14e48ba",
+        "bytes": 96531
+      }
+    ]
+  },
+  "/assets/images/Math-with-Mansur-logo.png": {
+    "sha256": "a757dd38ad85f18f9dec09b891779fccccc9b22b5452eafa8888442daba8f71c",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 3827398,
+    "logo": true,
+    "variants": [
+      {
+        "path": "/assets/images/Math-with-Mansur-logo.svg",
+        "width": 480,
+        "height": 480,
+        "sha256": "d3841723e21af0af17ee3d89ea0f776f9b61fd9f055ae97ba343199ba0567f2f",
+        "bytes": 89890
+      }
+    ]
+  },
+  "/assets/images/Math-with-Mansur-ru.png": {
+    "sha256": "b09c8fe59dfcd0372324c0a5cce4ef137f64a55777b2be056845e38b36326ab8",
+    "width": 2172,
+    "height": 724,
+    "bytes": 2414685,
+    "logo": true,
+    "variants": [
+      {
+        "path": "/assets/images/Math-with-Mansur-ru.svg",
+        "width": 1440,
+        "height": 480,
+        "sha256": "1c11c5e7ba4592450708df16b28ab34c3d1f27ac9653a33ccf11267353d14584",
+        "bytes": 141670
+      }
+    ]
+  },
+  "/assets/images/Math-with-Mansur.png": {
+    "sha256": "c19893d17aa9c0d61501302226ee24a4a5895a6f3bc93604f1f5133c0621a358",
+    "width": 2048,
+    "height": 682,
+    "bytes": 2971400,
+    "logo": true,
+    "variants": [
+      {
+        "path": "/assets/images/Math-with-Mansur.svg",
+        "width": 1440,
+        "height": 480,
+        "sha256": "547c72292a152f5ad3447972ee86f38134aa24e2013b6f9c2b2f62e35d24cbe6",
+        "bytes": 128185
+      }
+    ]
+  },
+  "/assets/images/hm-0b1ea17c8b02/figure-01.png": {
+    "sha256": "720063aabb61cd53942f324ea6d0229a58131b58fd2415931a553630a37c765d",
+    "width": 150,
+    "height": 200,
+    "bytes": 76976,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-0b1ea17c8b02/figure-01.png-150.webp",
+        "width": 150,
+        "height": 200,
+        "sha256": "616fab843e8a5ac0bfd2ed07614ad5f20ad78ca800b8886b5d01e6ee1619f685",
+        "bytes": 50824
+      }
+    ]
+  },
+  "/assets/images/hm-15a0b4f1d18b/figure-01.png": {
+    "sha256": "7ca5b09e7c34544a8e7bb2774b5443b65ec71e4468c17001756cbfea6ed84899",
+    "width": 689,
+    "height": 723,
+    "bytes": 24992,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-15a0b4f1d18b/figure-01.png-480.webp",
+        "width": 480,
+        "height": 504,
+        "sha256": "d25cd652135b6a2e94080f347ad968aec370c97f3bf9f975697b88f6c5257ec3",
+        "bytes": 16170
+      },
+      {
+        "path": "/assets/images/previews/hm-15a0b4f1d18b/figure-01.png-689.webp",
+        "width": 689,
+        "height": 723,
+        "sha256": "4955c06cf2b7634be866d72b9c93f827e83aec0856ad582cf9b8bf51dd4931e1",
+        "bytes": 6520
+      }
+    ]
+  },
+  "/assets/images/hm-19a5d93e33c1/figure-01.jpg": {
+    "sha256": "4a2f9ee94df3ed9bdf5c67468b26a0ef5faa45425009b0da328e6a620c47b869",
+    "width": 500,
+    "height": 260,
+    "bytes": 58883,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-19a5d93e33c1/figure-01.jpg-480.webp",
+        "width": 480,
+        "height": 250,
+        "sha256": "0e0329e99a0aae81abeae1224daddad0efc404652b309919babf96d04c559fbb",
+        "bytes": 41638
+      },
+      {
+        "path": "/assets/images/previews/hm-19a5d93e33c1/figure-01.jpg-500.webp",
+        "width": 500,
+        "height": 260,
+        "sha256": "be794e0d1dc8516b2e2b9cba512b4b51d1ed2f084d2e6125ccb15fa0d4f4ab2b",
+        "bytes": 44516
+      }
+    ]
+  },
+  "/assets/images/hm-56520386b771/figure-01.png": {
+    "sha256": "faae79aa06e9e471e456d9af650b5626e152a97e5ab6420ca91fe55e8f4088c5",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 1238107,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-56520386b771/figure-01.png-480.webp",
+        "width": 480,
+        "height": 480,
+        "sha256": "72706e58b3287c67fb5b42c4c5f3709111d51aee347977e5f354983df5949947",
+        "bytes": 43952
+      },
+      {
+        "path": "/assets/images/previews/hm-56520386b771/figure-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "e9d2f925d4d320512684087ed0bb5f9b61ad480fdf54675f66c96fc3d6f1e993",
+        "bytes": 118558
+      },
+      {
+        "path": "/assets/images/previews/hm-56520386b771/figure-01.png-1024.webp",
+        "width": 1024,
+        "height": 1024,
+        "sha256": "2fa403fd617544f062061a199f25284016a42e7df6bbae15eda967e7f61bdb2a",
+        "bytes": 128492
+      }
+    ]
+  },
+  "/assets/images/hm-56520386b771/figure-02.jpg": {
+    "sha256": "8919600b1fe3eceee1a4a9076fe9db8f3ff01fb715ab0578ad76139c191739d3",
+    "width": 2112,
+    "height": 1300,
+    "bytes": 561295,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-56520386b771/figure-02.jpg-480.webp",
+        "width": 480,
+        "height": 295,
+        "sha256": "bc08c15c2bb4844c8e39ac17a020da6761dfeeca9cfdb0615e75321e9aed4b68",
+        "bytes": 25126
+      },
+      {
+        "path": "/assets/images/previews/hm-56520386b771/figure-02.jpg-960.webp",
+        "width": 960,
+        "height": 591,
+        "sha256": "e1dba61c1835a9e3230c7eb3ca1a6aae44e0d900ee86afb35077baa9f62d99e6",
+        "bytes": 87172
+      },
+      {
+        "path": "/assets/images/previews/hm-56520386b771/figure-02.jpg-1440.webp",
+        "width": 1440,
+        "height": 886,
+        "sha256": "697ff2844c4d9d8a7efde11ef7b7322c86d7fac612aef40f9c1541eb9bfc76c9",
+        "bytes": 201436
+      }
+    ]
+  },
+  "/assets/images/hm-56520386b771/figure-03.png": {
+    "sha256": "576b9543fb74f418bf9f660b805ccc90c81427057361ebb521c3f2ebe2d9845b",
+    "width": 1350,
+    "height": 1350,
+    "bytes": 2422618,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-56520386b771/figure-03.png-480.webp",
+        "width": 480,
+        "height": 480,
+        "sha256": "f920c110acaa480826e697ec5e095bf4b8ee35af8afce5d102869ae1beddb24c",
+        "bytes": 42464
+      },
+      {
+        "path": "/assets/images/previews/hm-56520386b771/figure-03.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "ea70051462308ada1b8a4ed6c01a0b759e0b0189341c6628516633885620745d",
+        "bytes": 129094
+      },
+      {
+        "path": "/assets/images/previews/hm-56520386b771/figure-03.png-1350.webp",
+        "width": 1350,
+        "height": 1350,
+        "sha256": "7c4b96503c18ae10e6522baf8c9e28c213a0c408e8dd157ffad98a603f810504",
+        "bytes": 242264
+      }
+    ]
+  },
+  "/assets/images/hm-99120459b820/figure-01.png": {
+    "sha256": "d9096e831bae2c14296afc9e4310f04a526b2af139830402a0b1d3b1eb3766b1",
+    "width": 1163,
+    "height": 900,
+    "bytes": 1230248,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-99120459b820/figure-01.png-480.webp",
+        "width": 480,
+        "height": 371,
+        "sha256": "59019323ca4ee5d742abaf5a87dc16c454a38593d85e040163b323668d930bd8",
+        "bytes": 24940
+      },
+      {
+        "path": "/assets/images/previews/hm-99120459b820/figure-01.png-960.webp",
+        "width": 960,
+        "height": 743,
+        "sha256": "0a0ac0bea89b28dc1bb98d80dd7e4573edf5b71a09d879f2df7f5f5e53a85303",
+        "bytes": 80864
+      },
+      {
+        "path": "/assets/images/previews/hm-99120459b820/figure-01.png-1163.webp",
+        "width": 1163,
+        "height": 900,
+        "sha256": "ebdc9d4c7d970a98b5b91d847c0a6edcf5bf39d0e88a91219f585bc7c1c8efb0",
+        "bytes": 109568
+      }
+    ]
+  },
+  "/assets/images/hm-99120459b820/figure-02.png": {
+    "sha256": "e0eccdc8a422000f8647032916befedc18ec090a3402274ada23acaccc93cd0b",
+    "width": 500,
+    "height": 500,
+    "bytes": 28840,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-99120459b820/figure-02.png-480.webp",
+        "width": 480,
+        "height": 480,
+        "sha256": "934d36505f6a74aee6d07d8c179130e46bd3b0b704d649d9421379b3094df752",
+        "bytes": 10774
+      },
+      {
+        "path": "/assets/images/previews/hm-99120459b820/figure-02.png-500.webp",
+        "width": 500,
+        "height": 500,
+        "sha256": "1f5a3d03f0fb6a8cfa17f5b7549562ef5bfe784b5202c407d9ec387df6657b4c",
+        "bytes": 11118
+      }
+    ]
+  },
+  "/assets/images/hm-99120459b820/figure-03.jpg": {
+    "sha256": "d0951bab9f34b040b0bf000de23f5e518671a173899532acc1b0a5defe035783",
+    "width": 1019,
+    "height": 1524,
+    "bytes": 417347,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-99120459b820/figure-03.jpg-480.webp",
+        "width": 480,
+        "height": 718,
+        "sha256": "df47cbf6957c508ee3294052ed3e8bb6ce04202592299bd435c9e125dd657e86",
+        "bytes": 165104
+      },
+      {
+        "path": "/assets/images/previews/hm-99120459b820/figure-03.jpg-960.webp",
+        "width": 960,
+        "height": 1436,
+        "sha256": "0f6a446e83350d5da6aa2ab21da85bc851f4bb6e4caecf848bf706ddff60bdf8",
+        "bytes": 604088
+      },
+      {
+        "path": "/assets/images/previews/hm-99120459b820/figure-03.jpg-1019.webp",
+        "width": 1019,
+        "height": 1524,
+        "sha256": "1ec2a96b497dca2bed83e56c8ea053f28667d3d5a57a380adae28439cb318ee0",
+        "bytes": 649404
+      }
+    ]
+  },
+  "/assets/images/publications/algebra-cover.png": {
+    "sha256": "297db2e2183b76ad52903079c0e6585eab87377a851c8fa4704f8b3a9363ba6d",
+    "width": 1457,
+    "height": 2048,
+    "bytes": 1930433,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/publications/algebra-cover.png-480.webp",
+        "width": 480,
+        "height": 675,
+        "sha256": "79b41aebe19e6f7e2a497ddddebf4e8cf77363d16ae1ef099bd79e97796c6a04",
+        "bytes": 44208
+      },
+      {
+        "path": "/assets/images/previews/publications/algebra-cover.png-960.webp",
+        "width": 960,
+        "height": 1349,
+        "sha256": "f76af4dcbacf33e275d5769221f31ba1ec59ce98549afa69bbb44805b075e58e",
+        "bytes": 107084
+      },
+      {
+        "path": "/assets/images/previews/publications/algebra-cover.png-1440.webp",
+        "width": 1440,
+        "height": 2024,
+        "sha256": "35845c9e9bd52b159b9fe1f29ce1d307d75cc830aefaf080771534d067bfdfc6",
+        "bytes": 175216
+      }
+    ]
+  },
+  "/assets/images/publications/algebra-gift.jpg": {
+    "sha256": "9e661e95347e25708b608f7c195b46754b5f2d07416a761b967446017fc6c7bf",
+    "width": 1653,
+    "height": 2048,
+    "bytes": 1363129,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/publications/algebra-gift.jpg-480.webp",
+        "width": 480,
+        "height": 595,
+        "sha256": "26a935acb10ef96fc93d2296be4d26d69704eeda258965fe5405249ade5f9177",
+        "bytes": 106346
+      },
+      {
+        "path": "/assets/images/previews/publications/algebra-gift.jpg-960.webp",
+        "width": 960,
+        "height": 1189,
+        "sha256": "468fe5b1e00c0653404e4dbd3848c22f9137182dfe32415028232dc966c7a8f6",
+        "bytes": 381566
+      },
+      {
+        "path": "/assets/images/previews/publications/algebra-gift.jpg-1440.webp",
+        "width": 1440,
+        "height": 1784,
+        "sha256": "fbabf5fd02249707cd367fafe23b0e57086ef2d81cced8dfaa5f4ca6afede681",
+        "bytes": 747326
+      }
+    ]
+  },
+  "/assets/images/publications/algebra-paperback.jpg": {
+    "sha256": "6b1a7e48de3bedc61777916c780e825f3a05f25dc3148370e52539ecba5525db",
+    "width": 1808,
+    "height": 1808,
+    "bytes": 951302,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/publications/algebra-paperback.jpg-480.webp",
+        "width": 480,
+        "height": 480,
+        "sha256": "80dfb5877d1b68f0db7cf92e65ba1998665241abcb7521523a9535c77f5643dd",
+        "bytes": 60826
+      },
+      {
+        "path": "/assets/images/previews/publications/algebra-paperback.jpg-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "ae6e3b0afbcbaa434a0247e80f8e1d5d49c1ec86d211f796a339222b9762d122",
+        "bytes": 200174
+      },
+      {
+        "path": "/assets/images/previews/publications/algebra-paperback.jpg-1440.webp",
+        "width": 1440,
+        "height": 1440,
+        "sha256": "bf321f0251cfbf860f36e7585bed800e6b268f2fbc3f1266e75aa48c11b134d4",
+        "bytes": 366934
+      }
+    ]
+  },
+  "/assets/images/publications/calendar-2026.jpg": {
+    "sha256": "d731bd2a29bbded2ce242830d55cbdd0c89bd2e005b1ccd8c4b545d464e782e7",
+    "width": 715,
+    "height": 1011,
+    "bytes": 219291,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/publications/calendar-2026.jpg-480.webp",
+        "width": 480,
+        "height": 679,
+        "sha256": "244de99e22890bf443d8183805d4868d2bbafb6d25f49642960fece818059c29",
+        "bytes": 57586
+      },
+      {
+        "path": "/assets/images/previews/publications/calendar-2026.jpg-715.webp",
+        "width": 715,
+        "height": 1011,
+        "sha256": "fb71fd97731279376b7becdb7b95f4e2bfa180b67537aace81f7fb78c95b10cb",
+        "bytes": 114384
+      }
+    ]
+  },
+  "/assets/images/publications/equations-cover.png": {
+    "sha256": "fc1b6a5158537b6ac6d1663ed101591bb61e8bf1e1536e03519f799fe1ad002b",
+    "width": 1449,
+    "height": 2048,
+    "bytes": 1048859,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/publications/equations-cover.png-480.webp",
+        "width": 480,
+        "height": 678,
+        "sha256": "dd3efce6aec011ffb5184631c1e74f107ab120e7437461331fbf861726737244",
+        "bytes": 23978
+      },
+      {
+        "path": "/assets/images/previews/publications/equations-cover.png-960.webp",
+        "width": 960,
+        "height": 1357,
+        "sha256": "fc9b334d5291db5503f28719dae0d3d1eae2fabf104b037513f8252138f268bd",
+        "bytes": 66396
+      },
+      {
+        "path": "/assets/images/previews/publications/equations-cover.png-1440.webp",
+        "width": 1440,
+        "height": 2035,
+        "sha256": "e3cfaa208264a12d2cb7933566bc8d73e8b6f43953cbb8187f3c4a0d45707eca",
+        "bytes": 121602
+      }
+    ]
+  },
+  "/assets/images/publications/history-cover.png": {
+    "sha256": "979bfef7786c2c5d60a2771d13edd87f4460c4717ddd01abdf368b4a658126fd",
+    "width": 1449,
+    "height": 2048,
+    "bytes": 4340055,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/publications/history-cover.png-480.webp",
+        "width": 480,
+        "height": 678,
+        "sha256": "47165b658ae3351546c23e1c92c71d3ca169b9bbe58aad83b64df90320335353",
+        "bytes": 52768
+      },
+      {
+        "path": "/assets/images/previews/publications/history-cover.png-960.webp",
+        "width": 960,
+        "height": 1357,
+        "sha256": "99f2603102b49944c2caa8a98156d71f6cbd00ff67de360fcf1dfd6fb46cd3e9",
+        "bytes": 159344
+      },
+      {
+        "path": "/assets/images/previews/publications/history-cover.png-1440.webp",
+        "width": 1440,
+        "height": 2035,
+        "sha256": "66e010aa3f68352ca4230c1cab8a18dc78ec1c5b132f48a7cfb64cee4d761492",
+        "bytes": 273742
+      }
+    ]
+  },
+  "/assets/images/publications/road-of-life.jpg": {
+    "sha256": "498b71373bd11f5a80688b9cb0d759ba2d07b1a1808221379759efad02cb9c84",
+    "width": 1339,
+    "height": 1920,
+    "bytes": 425143,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/publications/road-of-life.jpg-480.webp",
+        "width": 480,
+        "height": 688,
+        "sha256": "66a80aef735655463a9188900a54b1902f92c263ef3f4399038b8b7da42906e4",
+        "bytes": 50576
+      },
+      {
+        "path": "/assets/images/previews/publications/road-of-life.jpg-960.webp",
+        "width": 960,
+        "height": 1377,
+        "sha256": "4271e8ebfa2bdf654912bc5324d070a77435ca03d06523388c5a0fdfbe115490",
+        "bytes": 132478
+      },
+      {
+        "path": "/assets/images/previews/publications/road-of-life.jpg-1339.webp",
+        "width": 1339,
+        "height": 1920,
+        "sha256": "1407022c26adc11462f58897cafc24ad7797a176c7aa06bc794dd9ef298f881f",
+        "bytes": 200694
+      }
+    ]
+  }
+}

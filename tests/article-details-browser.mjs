@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
 
 const root = resolve('test-results/details-fixture');
-const mime = {'.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.woff2': 'font/woff2'};
+const mime = {'.webp': 'image/webp', '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.woff2': 'font/woff2'};
 const server = createServer(async (request, response) => {
   try {
     let path = resolve(root, '.' + new URL(request.url, 'http://localhost').pathname.replace(/^\/history_math/, ''));

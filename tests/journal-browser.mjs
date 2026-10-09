@@ -7,7 +7,7 @@ import {journalGroups} from '../site/assets/core.js';
 
 async function serve(directory) {
   const root = resolve(directory);
-  const mime = {'.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2', '.pdf': 'application/pdf'};
+  const mime = {'.webp': 'image/webp', '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2', '.pdf': 'application/pdf'};
   const server = createServer(async (request, response) => {
     try {
       const url = new URL(request.url, 'http://localhost');
@@ -78,7 +78,7 @@ try {
     for (const language of ['ru', 'en']) {
       await page.goto(production.base + (language === 'ru' ? '/ru/about/' : '/about/'), {waitUntil: 'networkidle'});
       assert.equal(await page.locator('html').getAttribute('lang'), language);
-      assert.match(await page.locator('.about-banner img').getAttribute('src'), language === 'ru' ? /Mansur-ru.svg$/ : /Mansur.png$/);
+      assert.match(await page.locator('.about-banner img').getAttribute('src'), language === 'ru' ? /Mansur-ru.svg$/ : /Mansur.svg$/);
       assert.equal(await page.locator('link[hreflang]').count(), 2);
       await audit(page);
     }

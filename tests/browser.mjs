@@ -22,7 +22,7 @@ function neighbors(url) {
 }
 const evidence = resolve('test-results');
 await mkdir(evidence, {recursive: true});
-const mime = {'.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.woff2': 'font/woff2'};
+const mime = {'.webp': 'image/webp', '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.woff2': 'font/woff2'};
 const server = createServer(async (request, response) => {
   try {
     const url = new URL(request.url, 'http://localhost');
@@ -253,7 +253,7 @@ try {
     await page.keyboard.press('Enter');
     const dialog = page.locator('#image-viewer');
     await dialog.waitFor({state: 'visible'});
-    await page.waitForFunction(() => document.querySelector('.viewer-canvas img')?.naturalWidth > 0);
+    await page.waitForFunction(() => document.querySelector('.viewer-canvas img')?.naturalWidth > 0 && document.querySelector('#image-viewer').getAttribute('aria-busy') === 'false');
     const fittedWidth = await page.locator('.viewer-canvas img').evaluate(node => node.getBoundingClientRect().width);
     assert.ok(fittedWidth >= await page.locator('.viewer-stage').evaluate(node => node.clientWidth) - 2);
     await page.locator('[data-viewer-action="in"]').click();

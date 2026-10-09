@@ -7,7 +7,7 @@ translation_key: about
 status: published
 permalink: /about/
 ---
-<figure class="about-banner"><img src="{{ '/assets/images/Math-with-Mansur.png' | relative_url }}" alt="Math with Mansur" width="2048" height="682"></figure>
+<figure class="about-banner">{% include reading-image.html src='/assets/images/Math-with-Mansur.png' alt='Math with Mansur' loading='eager' %}</figure>
 
 ## Editors
 

@@ -138,7 +138,7 @@ module HistoryMath
           text = CGI.unescapeHTML(html.gsub(/<[^>]*>/, " ")).gsub(/\s+/, " ").strip
           {title: doc.data["title"], description: doc.data["description"], tags: doc.data["tags"],
            type: doc.data["type"], language: language, date: doc.data["date"].strftime("%Y-%m-%d"),
-           url: site.baseurl + doc.url, text: text, status: doc.data["status"], preview_image: doc.data["preview_image"] && site.baseurl + doc.data["preview_image"]}
+           url: site.baseurl + doc.url, text: text, status: doc.data["status"], preview_image: doc.data["preview_image"] && site.baseurl + (site.data.fetch("image_assets").dig(doc.data["preview_image"], "variants", 0, "path") || doc.data["preview_image"])}
         end
         page = Jekyll::PageWithoutAFile.new(site, site.source, "assets", "search-#{language}.json")
         page.content = JSON.generate(records)

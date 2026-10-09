@@ -23,7 +23,7 @@ export async function buildPdfs(siteDirectory) {
   const manifest = validateManifest(JSON.parse(await readFile(resolve(root, 'assets/article-pdfs.json'), 'utf8')));
   // A former public article must not survive as an orphaned downloadable PDF.
   await rm(resolve(root, 'assets/pdf'), {recursive: true, force: true});
-  const mime = {'.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.woff2': 'font/woff2', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg'};
+  const mime = {'.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.woff2': 'font/woff2', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp'};
   const server = createServer(async (request, response) => {
     try {
       const url = new URL(request.url, 'http://localhost');
@@ -54,6 +54,12 @@ export async function buildPdfs(siteDirectory) {
       await page.evaluate(async () => {
         document.documentElement.dataset.theme = 'light';
         for (const img of document.images) img.loading = 'eager';
+        // Only the build-time PDF renderer loads originals without viewer interaction.
+        for (const img of document.querySelectorAll('.print-masthead img, .article-body img')) {
+          if (!img.dataset.original) continue;
+          img.removeAttribute('srcset');
+          img.src = img.dataset.original;
+        }
         await Promise.all([...document.images].map(img => img.decode()));
         await document.fonts.ready;
       });
@@ -66,7 +72,7 @@ export async function buildPdfs(siteDirectory) {
         clipped: [...document.querySelectorAll('.article-body table, .math-source[data-display="true"] .katex')]
           .some(node => node.getBoundingClientRect().width > document.querySelector('.article-body').getBoundingClientRect().width + 2)
       }));
-      const logo = article.lang === 'ru' ? 'Math-with-Mansur-ru.svg' : 'Math-with-Mansur.png';
+      const logo = article.lang === 'ru' ? 'Math-with-Mansur-ru.png' : 'Math-with-Mansur.png';
       if (errors.length || state.lang !== article.lang || state.unrendered || state.missingPrintImage || state.clipped || !state.content || !state.logo?.endsWith(logo)) {
         throw new Error(`PDF render failed for ${article.url}: ${JSON.stringify({errors, state})}`);
       }
