@@ -33,7 +33,8 @@
     "Removed the placeholder section heading; selected existing archive images for card and social previews.",
     "Added the Персоналии series/tag and corrected the academy distinction with RAS references. The 150 × 200 portrait bytes are unchanged.",
     "No comment-placement blocks occur in the complete article or announcement. Existing academy corrections and the biography tags are preserved.",
-    "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged."
+    "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged.",
+    "Matched the existing portrait visually against the documented Commons lithograph; added attribution and source without changing the archived image bytes."
   ],
   "review_version": 1,
   "approval": {
@@ -55,7 +56,12 @@
       "id": "q2",
       "question": "Подтвердить атрибуцию исторического портрета и право размещения архивной репродукции.",
       "blocking": true,
-      "state": "open"
+      "state": "resolved",
+      "resolution": "Архивный профиль визуально сопоставлен с репродукцией Rumovsky.jpg: совпадают лицо, причёска, жабо и одежда. В карточке Commons указаны М. А. Кашенцев (рисунок), А. О. Мошарский (литография), около 1850 года, издание 1911 года и статус public domain. Атрибуция и ссылка добавлены; исходный файл 150 × 200 не заменён.",
+      "sources": [
+        "https://commons.wikimedia.org/wiki/File:Rumovsky.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/25/Rumovsky.jpg"
+      ]
     }
   ]
 }

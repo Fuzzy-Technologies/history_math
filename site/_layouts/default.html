@@ -30,12 +30,14 @@
   <link rel="icon" href="{{ '/assets/images/favicon-m2.svg' | relative_url }}?v={{ asset_version }}" type="image/svg+xml" sizes="any">
   <link rel="preload" href="{{ '/assets/fonts/pt-serif-regular.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}?v={{ asset_version }}">
+  {% if page.layout == 'article' %}<link rel="stylesheet" href="{{ '/assets/article-print.css' | relative_url }}?v={{ asset_version }}">{% endif %}
   <script type="module" src="{{ '/assets/app.js' | relative_url }}?v={{ asset_version }}"></script>
   {% if page.math %}
   <link rel="stylesheet" href="{{ '/assets/vendor/katex/katex.min.css' | relative_url }}">
   <script defer src="{{ '/assets/vendor/katex/katex.min.js' | relative_url }}"></script>
   <script defer src="{{ '/assets/math.js' | relative_url }}"></script>
   {% endif %}
+  {% if page.layout == 'article' %}<script type="module" src="{{ '/assets/article-details.js' | relative_url }}?v={{ asset_version }}"></script>{% endif %}
 </head>
 <body data-lang="{{ page.lang }}" data-search="{{ '/ru/search/' | relative_url }}" data-index="{{ '/assets/search-' | append: page.lang | append: '.json' | relative_url }}?v={{ asset_version }}">
   <a class="skip-link" href="#main">{% if ru %}К содержимому{% else %}Skip to content{% endif %}</a>

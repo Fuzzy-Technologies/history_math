@@ -35,7 +35,8 @@
     "Removed the placeholder section heading; selected existing archive images for card and social previews.",
     "Corrected magic-square terminology and minor grammar. Independently verified all 120 row/column selections have sum 57; bibliography and legacy DOC checks remain open.",
     "The announcement comment overlaps the existing explanation. Its missing count of nine cells, including the shared zero in a 5 by 5 grid, is restored beside step 2 under Разгадка. Other steps, generalization and closing invitation are already included once.",
-    "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged."
+    "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged.",
+    "Added the verified 1999 Gardner edition, chapter 2, pages 21–23 and figures 8–9. Visually compared the printed matrix and explanation; did not claim to inspect the unavailable private DOC."
   ],
   "review_version": 1,
   "approval": {
@@ -46,7 +47,13 @@
       "id": "q1",
       "question": "Уточнить издание и страницу книги Мартина Гарднера: в каноническом тексте они не указаны.",
       "blocking": true,
-      "state": "open"
+      "state": "resolved",
+      "resolution": "Найдена и проверена глава 2 «Фокусы с матрицами» в издании «Мир», 1999, с. 21–23, рис. 8–9. Скан с. 21 содержит все 25 чисел текущей таблицы, скан с. 22 — сумму 57 и оба исходных набора. Добавлена полная библиографическая ссылка. Это независимая сверка опубликованного источника; визуальная сверка частного DOC остаётся отдельным открытым вопросом.",
+      "sources": [
+        "https://djvu.online/file/7zQERopHUNo3F",
+        "https://djvu.online/jpg/7/z/Q/7zQERopHUNo3F/021.webp",
+        "https://djvu.online/jpg/7/z/Q/7zQERopHUNo3F/022.webp"
+      ]
     },
     {
       "id": "q2",

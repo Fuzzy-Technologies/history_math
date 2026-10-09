@@ -28,4 +28,4 @@ The source-only command intentionally leaves the other mandatory gates `not_run`
 
 Technical success is “Technical checks passed; editorial review pending.” Automatic build/render checks do not prove complete transfer or correct mathematics. Private evidence in ignored local files in the site project records which source fragments, numerical table cells, formulas and image captions were actually compared; remaining manual questions stay explicit. FELab metadata and NAS originals/images are read only. English and fallback language behavior are regression-tested with Russian content.
 
-Browser checks also require native-size images within the 960 × 720 cap and keyboard-accessible table scrolling at 1440, 390 and 320 pixels. Local checks also create article PDFs for offline editorial reading; they are not uploaded by CI.
+Browser checks also require native-size images within the 960 × 720 cap and keyboard-accessible table scrolling at 1440, 390 and 320 pixels. Local checks create branded PDFs under `test-results/article-preview/assets/pdf/<language>/`; see [PDF editions](ARTICLE_PDF.md). They are not uploaded as CI archives.

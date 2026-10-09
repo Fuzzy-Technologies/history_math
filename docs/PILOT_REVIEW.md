@@ -20,7 +20,7 @@ Approved digests and metadata located candidates; conversion used the complete c
 
 An archive scan candidate was excluded because permission to reproduce its complete magazine pages was insufficiently established. The complex-source slot therefore uses the number-circle article with DOCX superscripts/layout and historical illustrations. The Gardner legacy DOC adds a second nonstandard source case; its visual review remains outstanding. The pilot does not claim to have completed an OCR experiment.
 
-The coin has a verified Commons source, CNG credit and CC BY-SA 3.0 terms in its figure record. Bronnikov and the historical Iamblichus engraving have linked reproduction sources; author-supplied diagrams/compositions retain their documented archival basis. Exact attribution and reproduction quality of the Rumovsky portrait remain editor questions. Source documents and research attachments were not exported.
+The coin has a verified Commons source, CNG credit and CC BY-SA 3.0 terms in its figure record. Bronnikov and the historical Iamblichus engraving have linked reproduction sources; author-supplied diagrams/compositions retain their documented archival basis. The existing Rumovsky portrait was visually matched to the documented Commons lithograph; its authorship, historical publication and public-domain source are now recorded without replacing its original pixels. Source documents and research attachments were not exported.
 
 ## Current verification and review
 
@@ -37,3 +37,11 @@ The browser fixture temporarily approves copies of the five articles inside the 
 When real articles are published, the Russian home, catalog and about page stop claiming that only demos exist. The cover links to the newest published article. Existing demo pages retain their explicit labels. Browser regression checks use the current article index and actual card destinations, so the suite also works after the five articles enter the catalog. A complete local release-fixture run can use `BROWSER_SITE_DIR=test-results/notices-fixture node tests/browser.mjs` after running `bundle exec ruby tests/translation_notices_test.rb`.
 
 Read the current report from the linked CI run. Reproduce visual evidence locally as described in [the preparation procedure](ARTICLE_PREPARATION.md).
+
+## Publication decision checkpoint — 2026-10-09
+
+The publication-details and PDF features are integrated into `develop` through PRs #36 and #37. PR #38 integrates English notices and the final site navigation. These merges do not by themselves approve the five article packages.
+
+Two of the six previously open questions are resolved with evidence in the review records: the Rumovsky portrait attribution and the Gardner edition (1999, chapter 2, pages 21–23). Four questions remain: the two project compositions in the perfect-number article, the exact Lucas reference, the visual comparison of the private Gardner DOC, and the printed page for Ignatiev. The Direct-Media excerpt confirms Ignatiev book 2 (1909), problem 11, but its OCR page marker conflicts with the earlier companion record, so no unverified page was inserted.
+
+To complete publication, the owner must resolve or explicitly accept each remaining limitation. Record that decision in the existing review records, set the real website publication date and `status: published`, calculate the digest for each final article package, and run the current-head gates before the separate `develop` → `master` merge. Do not mark unavailable visual checks as completed or reuse fixture approvals as an editorial decision.

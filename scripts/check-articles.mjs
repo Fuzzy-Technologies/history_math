@@ -41,6 +41,7 @@ try {
       report.checks.build = run('HM_BUILD', option('--bundle', 'bundle'), ['exec', 'jekyll', 'build', '--config', '_config.yml,_config.review.yml', '--trace']) ? 'pass' : 'fail';
       if (report.checks.build === 'pass') writeFileSync(resolve(preview, 'review-build.json'), JSON.stringify({commit, jekyll: 'pass'}));
     }
+    if (report.checks.build === 'pass' && !run('HM_BUILD', process.execPath, ['scripts/article-pdf.mjs', '--site-dir', preview])) report.checks.build = 'fail';
     if (report.checks.build === 'pass') {
       report.checks.output = run('HM_OUTPUT', option('--python', process.env.PYTHON_EXECUTABLE ?? 'python3'), ['scripts/check_site.py', preview, '/history_math']) ? 'pass' : 'fail';
       const browser = await checkBrowser(preview, report.articles, resolve('test-results/article-screenshots'));

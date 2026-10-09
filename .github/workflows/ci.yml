@@ -76,15 +76,19 @@ jobs:
         run: |
           python3 tools/markdown_tables.py
           npm test
+          bundle exec ruby tests/article_details_test.rb
           bundle exec ruby tests/publication_test.rb
+          node scripts/article-pdf.mjs --site-dir test-results/pdf-fixture
       - name: Build and inspect project-path output
         run: |
           bundle exec jekyll build --trace
+          node scripts/article-pdf.mjs
           python3 scripts/check_site.py _site /history_math
       - name: Browser checks and screenshots
-        run: npm run test:browser
+        run: npm run test:browser && node tests/article-details-browser.mjs
       - name: Verify root-domain portability
         run: |
           bundle exec jekyll build --baseurl '' --destination _site-domain --trace
+          node scripts/article-pdf.mjs --site-dir _site-domain
           python3 scripts/check_site.py _site-domain ''
           rm -rf _site-domain
