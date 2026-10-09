@@ -1,0 +1,28 @@
+{
+  "article_id": "hm-56520386b771-en",
+  "review_version": 1,
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "source": "site/_articles/hm-56520386b771.ru.md",
+    "source_commit": "b6153e6397ef5e4d171909cf4410d27dd148c13a",
+    "scope": "Full English adaptation of the approved Russian derivative, including all figures, captions, alt text, sections, notes and bibliographic references. Original image bytes, rights and source destinations retained.",
+    "editorial_review": {
+      "reviewer": "Codex (AI language and mathematical consistency review; not human publication approval)",
+      "date": "2026-10-09",
+      "passes": [
+        "Adaptation against the complete Russian article",
+        "English copy-edit for idiom, terminology, clarity, attribution and bibliographic accuracy"
+      ],
+      "decisions": [
+        "Defined proper divisors in plain English before introducing deficient, abundant and perfect numbers; retained every TeX expression.",
+        "Kept 51 known even perfect numbers, the exponent and digit count explicitly tied to the source's 2019 snapshot, not presented as today's record.",
+        "Used a traditional attribution to the sixth-century BCE Pythagoreans rather than asserting a documented invention date.",
+        "Presented the 28-day lunar cycle as a traditional symbolic association rather than an exact orbital period; avoided implying that no large perfect numbers were found before computers.",
+        "Retained original artwork and Russian book-cover lettering with English alternative text and captions; no translated English book edition is claimed."
+      ]
+    }
+  }
+}

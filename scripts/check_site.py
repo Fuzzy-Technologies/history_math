@@ -121,7 +121,7 @@ def CheckSite(sitePath, basePath):
             target = Resolve(url, path)
             if target in parsed and parsed[target].language != language:
                 errors.append(f"{path}: wrong alternate language")
-        if not relative.startswith("ru/articles/") and any("katex" in script for script in page.scripts):
+        if not re.fullmatch(r"(?:ru/)?articles/[a-z0-9-]+/index\.html", relative) and any("katex" in script for script in page.scripts):
             errors.append(f"{path}: unexpected math renderer")
 
     for path in sitePath.rglob("*.css"):

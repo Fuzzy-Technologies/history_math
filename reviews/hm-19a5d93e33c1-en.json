@@ -1,0 +1,27 @@
+{
+  "article_id": "hm-19a5d93e33c1-en",
+  "review_version": 1,
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "source": "site/_articles/hm-19a5d93e33c1.ru.md",
+    "source_commit": "b6153e6397ef5e4d171909cf4410d27dd148c13a",
+    "scope": "Full English adaptation of the approved Russian derivative, including all figures, captions, alt text, sections, notes and bibliographic references. Original image bytes, rights and source destinations retained.",
+    "editorial_review": {
+      "reviewer": "Codex (AI language and mathematical consistency review; not human publication approval)",
+      "date": "2026-10-09",
+      "passes": [
+        "Adaptation against the complete Russian article",
+        "English copy-edit for idiom, terminology, clarity, attribution and bibliographic accuracy"
+      ],
+      "decisions": [
+        "Used 'transfer' and 'at that moment' to clarify the sequential doubling; both solution methods, every table cell and every TeX expression are preserved.",
+        "Kept the 1498 coin caption separate from the seventeenth-century puzzle attribution; the illustration is not presented as a coin from the puzzle's period.",
+        "Preserved both bibliographic records as Russian editions, using descriptive English titles. No new historical attribution is claimed.",
+        "Softened the general algorithm analogy to avoid implying that all dynamic programming proceeds backwards."
+      ]
+    }
+  }
+}

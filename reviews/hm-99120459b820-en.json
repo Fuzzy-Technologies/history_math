@@ -1,0 +1,27 @@
+{
+  "article_id": "hm-99120459b820-en",
+  "review_version": 1,
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "source": "site/_articles/hm-99120459b820.ru.md",
+    "source_commit": "b6153e6397ef5e4d171909cf4410d27dd148c13a",
+    "scope": "Full English adaptation of the approved Russian derivative, including all figures, captions, alt text, sections, notes and bibliographic references. Original image bytes, rights and source destinations retained.",
+    "editorial_review": {
+      "reviewer": "Codex (AI language and mathematical consistency review; not human publication approval)",
+      "date": "2026-10-09",
+      "passes": [
+        "Adaptation against the complete Russian article",
+        "English copy-edit for idiom, terminology, clarity, attribution and bibliographic accuracy"
+      ],
+      "decisions": [
+        "Rendered 'All is number' as a summary of the Pythagorean outlook, not a verified verbatim quotation from Pythagoras.",
+        "The historical puzzle quotation is an English adaptation of the Russian passage; sequence, example, proof, anchors and bibliography are preserved.",
+        "Used consistent names and BCE/CE dating; retained the Latin inscription as an original inscription, not untranslated interface text.",
+        "Translated descriptive Russian book titles while explicitly identifying the actual Russian editions and original publication."
+      ]
+    }
+  }
+}
