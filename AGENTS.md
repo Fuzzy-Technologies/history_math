@@ -3,7 +3,7 @@
 Read `DEVELOPMENT_PROTOCOL.md` before making changes. This repository is the public publication target for the Mathematics with Mansur project.
 
 - Continue the current feature branch; preserve user changes and never reset or force-push.
-- Normal PRs target `develop`. Publication is a separate `develop` → `master` PR with a human merge.
+- Create short-lived `feature/*` branches from `master` and target `master` with PRs. The owner-approved merge also approves publication; there is no permanent integration branch.
 - Assign every PR to `Tim55667757` and add the `documentation` label, including feature and publication PRs. Preserve other assignees and labels; verify both fields after creation.
 - Do not self-merge, create releases/tags, enable auto-merge, or create a backlog without explicit owner instruction.
 - Keep implementation, comments, documentation, commits and PR descriptions in English. Localized UI and articles use their actual language.

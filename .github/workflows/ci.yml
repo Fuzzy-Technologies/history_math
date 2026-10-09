@@ -3,7 +3,7 @@ name: Prototype checks
 on:
   pull_request:
   push:
-    branches: [develop, 'feature/**']
+    branches: [master, 'feature/**']
   workflow_dispatch:
 
 permissions:

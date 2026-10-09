@@ -1,6 +1,6 @@
 # Development protocol
 
-Version: 1.0. Project: Mathematics with Mansur (`history_math`). This owner-controlled contract applies to human contributors and automation. Its initial creation is authorized by the prototype task; future changes require owner instruction.
+Version: 1.1. Project: Mathematics with Mansur (`history_math`). This owner-controlled contract applies to human contributors and automation. Its initial creation is authorized by the prototype task; future changes require owner instruction.
 
 ## Architecture and authority
 
@@ -10,12 +10,12 @@ The pipeline reads existing FELab metadata and NAS originals, prepares public Ma
 
 1. Inspect live HEAD, worktree and repository instructions.
 2. Define the affected content, layout or infrastructure contract.
-3. Make a focused change on `feature/*` branched from `develop`.
+3. Make a focused change on `feature/*` branched from `master`.
 4. Run relevant checks, inspect the diff, and capture browser evidence for layout changes.
-5. Push without history rewriting and open a PR to `develop`. Assign it to `Tim55667757`, add the `documentation` label, and verify both fields.
-6. Let Timur decide whether to merge. A separate `develop` → `master` PR approves publication.
+5. Push without history rewriting and open a PR to `master`. Assign it to `Tim55667757`, add the `documentation` label, and verify both fields.
+6. Let Timur decide whether to merge. The merge into `master` approves publication and starts the existing Pages deployment. No second promotion PR is required.
 
-Never merge a PR, publish a release/tag, or change visibility without explicit authorization. Do not enable auto-merge or repository-wide automatic branch deletion. The guarded existing cleanup workflow deletes only eligible merged feature branches into `develop`.
+Never merge a PR, publish a release/tag, or change visibility without explicit authorization. Do not enable auto-merge or repository-wide automatic branch deletion. The guarded existing cleanup workflow deletes only eligible merged feature branches into `master`.
 
 Every PR, including publication PRs and drafts, must have `Tim55667757` as an assignee and the `documentation` label. Add these fields without replacing other assignees or labels. The PR metadata workflow applies this rule on opening and reopening; contributors must still verify it. Historical PRs were reconciled at the owner's request.
 

@@ -1,12 +1,13 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
+import {parse} from 'yaml';
 
 const cleanup = readFileSync('.github/workflows/cleanup-merged-branch.yml', 'utf8').replace(/\r\n/g, '\n');
 const script = cleanup.split('script: |\n')[1].split('\n').map(line => line.replace(/^            /, '')).join('\n');
 const AsyncFunction = Object.getPrototypeOf(async function() {}).constructor;
 async function cleanupScenario(overrides = {}) {
-  const pr = {merged: true, base: {ref: 'develop'}, head: {ref: 'feature/example', sha: 'old', repo: {full_name: 'Fuzzy-Technologies/history_math'}}, ...overrides.pr};
+  const pr = {merged: true, base: {ref: 'master'}, head: {ref: 'feature/example', sha: 'old', repo: {full_name: 'Fuzzy-Technologies/history_math'}}, ...overrides.pr};
   let deleted = 0;
   let reads = 0;
   const github = {rest: {git: {
@@ -21,9 +22,9 @@ async function cleanupScenario(overrides = {}) {
   return deleted;
 }
 
-test('cleanup permits only a merged same-repository unchanged feature into develop', async () => {
+test('cleanup permits only a merged same-repository unchanged feature into master', async () => {
   assert.equal(await cleanupScenario(), 1);
-  for (const overrides of [{pr: {merged: false}}, {pr: {base: {ref: 'master'}}},
+  for (const overrides of [{pr: {merged: false}}, {pr: {base: {ref: 'develop'}}},
     {pr: {head: {ref: 'master'}}}, {pr: {head: {ref: 'develop'}}},
     {pr: {head: {ref: 'feature/fork', repo: {full_name: 'someone/fork'}}}},
     {newHead: true}, {open: true}, {missing: true}, {race: true}]) {
@@ -32,6 +33,18 @@ test('cleanup permits only a merged same-repository unchanged feature into devel
   assert.ok(!cleanup.includes('actions/checkout'));
   assert.ok(!cleanup.includes('run:'));
   assert.ok(!/\$\{\{\s*github\.event\.pull_request\.(title|body)/.test(cleanup));
+});
+
+test('CI and cleanup route feature PRs directly to master', () => {
+  const ci = parse(readFileSync('.github/workflows/ci.yml', 'utf8'));
+  const clean = parse(cleanup);
+  assert.deepEqual(ci.on.push.branches, ['master', 'feature/**']);
+  assert.ok(Object.hasOwn(ci.on, 'pull_request'));
+  assert.deepEqual(clean.on.pull_request_target.branches, ['master']);
+  assert.deepEqual(clean.on.pull_request_target.types, ['closed']);
+  assert.match(clean.jobs.cleanup.if, /base\.ref == 'master'/);
+  assert.match(clean.jobs.cleanup.if, /merged == true/);
+  assert.match(clean.jobs.cleanup.if, /startsWith\(github.event.pull_request.head.ref, 'feature\/'\)/);
 });
 
 test('PR metadata uses additive APIs without executing contributor code', async () => {
