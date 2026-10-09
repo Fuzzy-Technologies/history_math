@@ -44,17 +44,14 @@ jobs:
           PR_HEAD_REF: ${{ github.event.pull_request.head.ref || github.ref_name }}
           PR_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         run: node scripts/check-articles.mjs
-      - name: Save article preview and reports
+      - name: Save compact article reports
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
-          name: article-review-${{ github.event.pull_request.head.sha || github.sha }}
+          name: article-report-${{ github.event.pull_request.head.sha || github.sha }}
           path: |
-            test-results/article-preview
             test-results/article-report.json
             test-results/article-report.md
-            test-results/article-screenshots
-            test-results/article-pdfs
           if-no-files-found: error
           retention-days: 14
           overwrite: true
@@ -91,20 +88,3 @@ jobs:
           bundle exec jekyll build --baseurl '' --destination _site-domain --trace
           python3 scripts/check_site.py _site-domain ''
           rm -rf _site-domain
-      - name: Save inspectable prototype
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-        with:
-          name: prototype-${{ github.sha }}
-          path: _site
-          if-no-files-found: error
-          retention-days: 14
-          overwrite: true
-      - name: Save browser evidence
-        if: always()
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-        with:
-          name: browser-evidence-${{ github.sha }}
-          path: test-results
-          if-no-files-found: warn
-          retention-days: 14
-          overwrite: true

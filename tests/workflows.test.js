@@ -108,3 +108,14 @@ test('the actual privileged article comment job has no checkout and rejects stal
   runId = 13; workflowConclusion = 'failure';
   await execute(); assert.match(comments[0].body, /Технические проверки выявили блокирующие ошибки/);
 });
+
+// Keep the owner's CI storage budget independent of website and screenshot growth.
+test('CI uploads compact reports without full-site, screenshots or PDF archives', () => {
+  const ci = readFileSync('.github/workflows/ci.yml', 'utf8');
+  const uploads = ci.split(/uses: actions\/upload-artifact@/).slice(1);
+  assert.equal(uploads.length, 1);
+  assert.match(uploads[0], /name: article-report-/);
+  assert.match(uploads[0], /test-results\/article-report.json/);
+  assert.match(uploads[0], /test-results\/article-report.md/);
+  assert.doesNotMatch(uploads[0], /article-preview|article-screenshots|article-pdfs|path: _site|path: test-results\s*$/m);
+});

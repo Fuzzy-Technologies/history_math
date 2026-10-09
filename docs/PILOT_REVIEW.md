@@ -24,8 +24,8 @@ The coin has a verified Commons source, CNG credit and CC BY-SA 3.0 terms in its
 
 ## Current verification and review
 
-Each PR's current CI report is the authority for its checked head. Earlier runs do not establish success after an editorial correction. The article artifact contains the stock Jekyll preview, JSON/Markdown report, screenshots at 1440, 390 and 320 pixels, and an offline PDF; retention is 14 days.
+Each PR's current CI report is the authority for its checked head. Earlier runs do not establish success after an editorial correction. The compact CI artifact contains only the JSON/Markdown report for 14 days. Local checks still create the Jekyll preview, screenshots at 1440, 390 and 320 pixels, and offline PDFs. Full-site and screenshot archives are no longer uploaded.
 
 Question states, sources, resolutions and authorized changes live only in `reviews/<article-id>.json` on the corresponding article branch. Approval remains pending until the human editor records a decision for the current package. Small archive images retain their native dimensions, including Rumovsky's 150 × 200 portrait.
 
-Download the current artifact from the CI link in the PR. Open `article-pdfs/<article-id>.pdf` directly, or run `node scripts/serve-review.mjs <unzipped-artifact>/article-preview` and follow the article URL. See [the preparation procedure](ARTICLE_PREPARATION.md) for the next article.
+Read the current report from the linked CI run. Reproduce visual evidence locally as described in [the preparation procedure](ARTICLE_PREPARATION.md).

@@ -19,14 +19,14 @@
     "pr": {
       "publication": "Known earlier publication",
       "questions": "Questions for the editor",
-      "preview": "Preview and PDF in CI"
+      "preview": "Check report in CI"
     },
     "pass": "Technical checks passed; editorial review pending.",
     "fail": "Technical checks have blocking errors.",
     "incomplete": "Required technical checks were not completed.",
     "commit": "Checked commit",
     "issues": "Findings and actions",
-    "preview": "Preview and evidence",
+    "preview": "Check results",
     "HM_METADATA": "Invalid or missing metadata. Correct the field against the article schema.",
     "HM_IDENTIFIER": "Duplicate identifier or URL. Choose one stable identity per language.",
     "HM_PATH": "Unsafe or unsupported path. Use an existing local article asset and the base-path filter.",
@@ -82,14 +82,14 @@
     "pr": {
       "publication": "Известная прежняя публикация",
       "questions": "Вопросы редактору",
-      "preview": "Предпросмотр и PDF в CI"
+      "preview": "Отчёт проверок в CI"
     },
     "pass": "Технические проверки пройдены; ожидается редакторское ревью.",
     "fail": "Технические проверки выявили блокирующие ошибки.",
     "incomplete": "Обязательные технические проверки не выполнены.",
     "commit": "Проверенный коммит",
     "issues": "Проблемы и действия",
-    "preview": "Предпросмотр и подтверждения",
+    "preview": "Результаты проверок",
     "HM_METADATA": "Некорректное или отсутствующее поле метаданных. Исправьте его по схеме статьи.",
     "HM_IDENTIFIER": "Повторяется идентификатор или URL. Используйте одну стабильную запись для каждого языка.",
     "HM_PATH": "Недопустимый путь. Используйте существующий локальный ресурс статьи и фильтр базового пути.",
