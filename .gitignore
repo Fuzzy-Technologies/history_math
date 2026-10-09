@@ -17,3 +17,5 @@ Thumbs.db
 .local/
 
 __pycache__/
+
+.pdf-cache/

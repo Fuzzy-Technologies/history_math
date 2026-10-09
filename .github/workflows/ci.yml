@@ -17,7 +17,7 @@ jobs:
   articles:
     name: Article package
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -37,6 +37,13 @@ jobs:
           python3 tools/markdown_tables.py
       - name: Install pinned checks
         run: npm ci && npx playwright install --with-deps chromium
+      - name: Restore incremental PDF cache
+        id: pdf-cache
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .pdf-cache
+          key: pdf-v1-${{ runner.os }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}-${{ github.job }}
+          restore-keys: pdf-v1-${{ runner.os }}-
       - name: Contract and report regression tests
         run: node --test tests/articles.test.mjs tests/article-review.test.mjs
       - name: Source, Jekyll preview, output and browser gates
@@ -57,7 +64,7 @@ jobs:
           overwrite: true
   verify:
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -72,6 +79,13 @@ jobs:
           cache: npm
       - name: Install pinned browser checks
         run: npm ci && npx playwright install --with-deps chromium
+      - name: Restore incremental PDF cache
+        id: pdf-cache
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .pdf-cache
+          key: pdf-v1-${{ runner.os }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}-${{ github.job }}
+          restore-keys: pdf-v1-${{ runner.os }}-
       - name: Validate source contracts, privacy boundary and workflow guards
         run: |
           python3 tools/markdown_tables.py
@@ -79,6 +93,7 @@ jobs:
           bundle exec ruby tests/article_details_test.rb
           bundle exec ruby tests/publication_test.rb
           node scripts/article-pdf.mjs --site-dir test-results/pdf-fixture
+          node tests/pdf-cache-browser.mjs
       - name: Build and inspect project-path output
         run: |
           bundle exec jekyll build --trace
@@ -94,3 +109,9 @@ jobs:
           IMAGE_SITE_DIR=_site-domain IMAGE_BASEURL='' node tests/image-delivery-browser.mjs
           ERROR_SITE_DIR=_site-domain ERROR_BASEURL='' node tests/errors-browser.mjs
           rm -rf _site-domain
+      - name: Save validated PDF cache
+        if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .pdf-cache
+          key: ${{ steps.pdf-cache.outputs.cache-primary-key }}
