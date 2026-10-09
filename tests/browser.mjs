@@ -109,8 +109,8 @@ try {
         checked(`${viewport.name}: archive rotation changes only its block, without repeats or layout shifts`);
       }
       if (path === '/') {
-        assert.match(await page.locator('main').innerText(), /English edition is coming/);
-        assert.equal(await page.locator('.material-card').count(), 0);
+        assert.match(await page.locator('h1').innerText(), /Let’s talk/);
+        assert.equal(await page.locator('#latest-cards .material-card').count(), 10);
       }
       if (path === '/ru/articles/demo-geometry/') {
         const toc = page.locator('.article-toc a');
@@ -181,7 +181,7 @@ try {
     // Closing a context with pending requests creates false requestfailed events.
     await page.waitForLoadState('networkidle');
     assert.equal(missing.status(), 404);
-    assert.match(await page.locator('main').innerText(), /This page is missing/);
+    assert.match(await page.locator('main').innerText(), /Страница не найдена/);
     await context.close();
   }
   const responsiveContext = await browser.newContext({reducedMotion: 'reduce'});
@@ -378,7 +378,7 @@ try {
         assert.equal(await carousel.evaluate(node => node.classList.contains('is-dragging')), false);
         const destination = new URL(await image.getAttribute('href'), origin).href;
         await image.click();
-        await page.waitForURL(destination);
+        await page.waitForURL(destination, {waitUntil: 'networkidle'});
         await page.goto(origin + '/history_math/ru/articles/demo-geometry/', {waitUntil: 'networkidle'});
         checked(`${theme}: mouse drag preserves link clicks; wheel browses cards and releases page scrolling at both ends`);
       } else {
@@ -433,7 +433,7 @@ try {
   await motionPage.mouse.down();
   await motionPage.mouse.move(clickBounds.x + 38, clickBounds.y + 35);
   await motionPage.mouse.up();
-  await motionPage.waitForURL(clickDestination);
+  await motionPage.waitForURL(clickDestination, {waitUntil: 'networkidle'});
   await motionContext.close();
   checked('Normal motion: small card lift, continuous wheel browsing and small pointer movement keep ordinary links usable; reduced motion keeps cards stationary');
   }

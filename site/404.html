@@ -1,11 +1,13 @@
 ---
 layout: default
-title: Page not found / Страница не найдена
-description: Return to the journal / Вернитесь на главную страницу журнала.
+title: Page not found
+description: This page could not be found. Return to the journal or browse the reading room.
 lang: en
 translation_key: not-found
 status: published
 sitemap: false
+noindex: true
+error_router: true
 permalink: /404.html
 ---
-<section class="not-found"><p class="eyebrow">404</p><h1>This page is missing.</h1><p class="lead" lang="ru">Этой страницы нет. Можно вернуться на главную или открыть раздел «Материалы».</p><a class="button" href="{{ '/ru/' | relative_url }}" lang="ru">На главную →</a><p><a href="{{ '/' | relative_url }}">English edition home</a></p></section>
+{% include error-content.html %}

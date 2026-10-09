@@ -54,16 +54,29 @@ test('a saved archive subset is replaced even when the random sequence repeats',
   assert.equal(new Set(next.map(record => record.url)).size, 3);
 });
 
-test('homepage pools exclude demos and newest ten, split odd remainders and stabilize tied dates', async () => {
+test('homepage pools exclude demos and newest ten, split the remaining quarter and three quarters and stabilize tied dates', async () => {
   const {journalGroups} = await import('../site/assets/core.js');
-  for (const count of [0, 5, 10, 11, 12, 19, 31, 101]) {
+  for (const count of [0, 5, 10, 11, 12, 13, 14, 19, 31, 101, 210, 211]) {
     const input = Array.from({length: count}, (_, index) => ({url: `/article-${String(index).padStart(3, '0')}/`, date: '2026-10-09', status: 'published', language: 'ru'}));
     const groups = journalGroups([...input, {url: '/demo/', status: 'demo', language: 'ru'}, {url: '/en/', status: 'published', language: 'en'}], 'ru');
     assert.equal(groups.latest.length, Math.min(10, count));
-    assert.equal(groups.featured.length, Math.ceil(Math.max(0, count - 10) / 2));
-    assert.equal(groups.archive.length, Math.floor(Math.max(0, count - 10) / 2));
+    assert.equal(groups.featured.length, Math.ceil(Math.max(0, count - 10) / 4));
+    assert.equal(groups.archive.length, Math.max(0, count - 10) - Math.ceil(Math.max(0, count - 10) / 4));
     const urls = Object.values(groups).flat().map(record => record.url);
     assert.equal(new Set(urls).size, count);
     assert.deepEqual(journalGroups([...input].reverse(), 'ru'), groups);
+  }
+});
+
+test('featured quarter contains the freshest remaining dates in either locale', async () => {
+  const {journalGroups} = await import('../site/assets/core.js');
+  for (const language of ['ru', 'en']) {
+    const records = Array.from({length: 210}, (_, index) => ({url: `/${language}/${index}/`,
+      date: new Date(Date.UTC(2020, 0, index + 1)).toISOString().slice(0, 10),
+      status: 'published', language, translation_notice: language === 'en'}));
+    const groups = journalGroups(records, language);
+    assert.deepEqual(groups.latest, records.slice(200).reverse());
+    assert.deepEqual(groups.featured, records.slice(150, 200).reverse());
+    assert.deepEqual(groups.archive, records.slice(0, 150).reverse());
   }
 });

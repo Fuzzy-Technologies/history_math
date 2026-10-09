@@ -130,22 +130,25 @@ module HistoryMath
           doc.data["translations"] = group.map { |translation| {"lang" => translation.data["lang"], "url" => translation.url} }
         end
       end
-      articles = site.collections.fetch("articles").docs.select { |doc| PUBLIC_STATUSES.include?(doc.data["status"]) }.sort_by { |doc| doc.data["date"] }.reverse
       %w[en ru].each do |language|
-        records = articles.select { |doc| doc.data["lang"] == language }.map do |doc|
-          body = doc.content.gsub(/\{\{[\s\S]*?\}\}|\{%[\s\S]*?%\}/, " ")
+        records = site.data.fetch("discovery_documents").fetch(language).map do |doc|
+          body = (doc.data["translation_notice"] ? doc.data["description"] : doc.content).gsub(/\{\{[\s\S]*?\}\}|\{%[\s\S]*?%\}/, " ")
           html = site.find_converter_instance(Jekyll::Converters::Markdown).convert(body)
           text = CGI.unescapeHTML(html.gsub(/<[^>]*>/, " ")).gsub(/\s+/, " ").strip
           {title: doc.data["title"], description: doc.data["description"], tags: doc.data["tags"],
            type: doc.data["type"], language: language, date: doc.data["date"].strftime("%Y-%m-%d"),
-           url: site.baseurl + doc.url, text: text, status: doc.data["status"], preview_image: doc.data["preview_image"] && site.baseurl + (site.data.fetch("image_assets").dig(doc.data["preview_image"], "variants", 0, "path") || doc.data["preview_image"])}
+           url: site.baseurl + doc.url, text: text, translation_notice: doc.data["translation_notice"] == true, status: doc.data["status"], preview_image: doc.data["preview_image"] && site.baseurl + (site.data.fetch("image_assets").dig(doc.data["preview_image"], "variants", 0, "path") || doc.data["preview_image"])}
         end
         page = Jekyll::PageWithoutAFile.new(site, site.source, "assets", "search-#{language}.json")
-        page.content = JSON.generate(records)
+        page.content = JSON.generate(records.reject { |record| record[:translation_notice] })
         page.data["layout"] = nil
         page.data["sitemap"] = false
         page.data["render_with_liquid"] = false
         site.pages << page
+        discovery = Jekyll::PageWithoutAFile.new(site, site.source, "assets", "discovery-#{language}.json")
+        discovery.content = JSON.generate(records)
+        discovery.data.merge!({"layout" => nil, "sitemap" => false, "render_with_liquid" => false})
+        site.pages << discovery
       end
       urls = documents.select { |doc| doc.data["sitemap"] != false && doc.data["layout"] && PUBLIC_STATUSES.include?(doc.data["status"]) }.map do |doc|
         "<url><loc>#{CGI.escapeHTML(site.config['url'] + site.baseurl + doc.url)}</loc></url>"

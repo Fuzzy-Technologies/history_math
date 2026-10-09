@@ -6,25 +6,20 @@ module HistoryMath
     priority :normal
 
     def generate(site)
-      home = site.pages.find { |page| page.url == "/ru/" }
-      return unless home
-      articles = site.collections.fetch("articles").docs
-        .select { |doc| doc.data["lang"] == "ru" && doc.data["status"] == "published" }
-        .sort_by { |doc| [doc.data["date"], doc.url] }.reverse
-      remainder = articles.drop(10)
-      midpoint = (remainder.length / 2.0).ceil
-      pages = [(articles.length / 10.0).ceil, 1].max
-      home.data.merge!({"journal_articles" => articles, "journal_featured" => remainder.take(midpoint),
-        "journal_archive" => remainder.drop(midpoint), "article_page" => 1, "article_pages" => pages})
-      (2..pages).each do |number|
-        page = Jekyll::PageWithoutAFile.new(site, site.source, "ru/page/#{number}", "index.html")
-        page.content = home.content
-        page.data = home.data.dup
-        page.data.delete("translation_key")
-        page.data.delete("translations")
-        page.data.merge!({"permalink" => "/ru/page/#{number}/", "article_page" => number,
-          "title" => "Материалы — страница #{number}"})
-        site.pages << page
+      # Notices are discoverable summaries, never translated full-text articles.
+      documents = site.collections.fetch("articles").docs + site.pages.select { |page| page.data["translation_notice"] }
+      site.data["discovery_documents"] = {}
+      %w[ru en].each do |language|
+        articles = documents.select { |doc| doc.data["lang"] == language && HistoryMath::PUBLIC_STATUSES.include?(doc.data["status"]) }
+          .sort_by { |doc| [doc.data["date"], doc.url] }.reverse
+        site.data["discovery_documents"][language] = articles
+        home = site.pages.find { |page| page.data["translation_key"] == "home" && page.data["lang"] == language }
+        next unless home
+        published = articles.select { |doc| doc.data["status"] == "published" }
+        remainder = published.drop(10)
+        quarter = (remainder.length / 4.0).ceil
+        home.data.merge!({"journal_articles" => published.take(10), "journal_featured" => remainder.take(quarter),
+          "journal_archive" => remainder.drop(quarter)})
       end
     end
   end

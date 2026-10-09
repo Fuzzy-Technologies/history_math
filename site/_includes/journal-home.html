@@ -1,0 +1,23 @@
+{% assign ui = site.data.interface[page.lang] %}
+{% assign prefix = '' %}{% assign logo = '/assets/images/Math-with-Mansur-logo.png' %}{% if page.lang == 'ru' %}{% assign prefix = '/ru' %}{% assign logo = '/assets/images/Math-with-Mansur-logo-ru.png' %}{% endif %}
+{% assign materials = prefix | append: '/materials/' %}{% assign about = prefix | append: '/about/' %}
+<section class="journal-hero">
+  <div class="cover-line"><span>{{ ui.history }}</span><span>{{ ui.journal }}</span></div>
+  <div class="hero-copy"><h1>{{ ui.hero_start }}<br><em>{{ ui.hero_end }}</em></h1><p class="lead">{{ ui.lead }}</p><a class="button" href="{{ materials | relative_url }}">{{ ui.read }} <span aria-hidden="true">→</span></a></div>
+  <div class="hero-picks" id="hero-picks" aria-label="{{ ui.more }}">
+    {% for article in page.journal_featured limit:4 %}<a class="hero-pick" href="{{ article.url | relative_url }}">{% if article.preview_image %}{% include reading-image.html src=article.preview_image alt='' width=120 height=120 sizes='120px' %}{% endif %}<span>{{ article.title | escape }}</span>{% if article.translation_notice %}<small>{{ ui.pending }}</small>{% endif %}</a>{% else %}<p class="selection-empty">{{ ui.featured_empty }}</p>{% endfor %}
+  </div>
+  <div class="cover-bottom"><span>{{ ui.genres }}</span><a href="{{ materials | relative_url }}">{{ ui.all }} <span aria-hidden="true">↗</span></a></div>
+</section>
+<section class="journal-section latest-section" aria-labelledby="latest-heading">
+  <div class="section-heading"><div><p class="eyebrow">{{ ui.reading }}</p><h2 id="latest-heading">{{ ui.new }}</h2></div><div class="section-actions"><a href="{{ materials | relative_url }}">{{ ui.all }} ↗</a><div class="carousel-controls" hidden><button type="button" data-carousel-direction="-1" aria-label="{{ ui.previous }}" aria-controls="latest-cards">←</button><button type="button" data-carousel-direction="1" aria-label="{{ ui.next }}" aria-controls="latest-cards">→</button></div></div></div>
+  <div class="card-grid magazine-carousel" id="latest-cards" tabindex="0" role="region" aria-label="{{ ui.new }}">{% for article in page.journal_articles limit:10 %}{% include card.html article=article %}{% else %}<p class="empty-state">{{ ui.latest_empty }}</p>{% endfor %}</div>
+</section>
+<section class="archive-section journal-section" aria-labelledby="archive-heading">
+  <div class="section-heading"><div><p class="eyebrow">{{ ui.also }}</p><h2 id="archive-heading">{{ ui.archive }}</h2></div><button class="text-button" id="reshuffle" type="button" hidden>{{ ui.shuffle }} <span aria-hidden="true">↻</span></button></div>
+  <div id="archive-cards" class="archive-grid">{% for article in page.journal_archive limit:4 %}<article class="archive-card"><p class="eyebrow">{% include type.html type=article.type %}</p><h3><a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a></h3>{% if article.translation_notice %}<p class="translation-label">{{ ui.pending }}</p>{% endif %}<p>{{ article.description | escape }}</p><div class="tag-list">{% for tag in article.tags %}{% include tag.html tag=tag %}{% endfor %}</div></article>{% else %}<p class="selection-empty">{{ ui.archive_empty }}</p>{% endfor %}</div><p id="archive-status" class="visually-hidden" role="status"></p>
+</section>
+<section class="about-teaser">
+  {% include reading-image.html src=logo alt='' width=240 height=240 %}
+  <div><p class="eyebrow">{{ ui.editorial }}</p><h2>{{ ui.editor }}</h2><p>{{ ui.editor_description }}</p><a href="{{ about | relative_url }}">{{ ui.about }} ↗</a></div>
+</section>

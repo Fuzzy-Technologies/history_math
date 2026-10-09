@@ -1,0 +1,9 @@
+{% assign error_home = '/' %}{% if page.lang == 'ru' %}{% assign error_home = '/ru/' %}{% endif %}
+{% assign error_catalog = error_home | append: 'materials/' %}{% assign error_search = error_home | append: 'search/' %}
+<section class="not-found">
+  <p class="eyebrow">404</p>
+  <h1>{{ page.title | escape }}</h1>
+  <p class="lead">{{ page.description | escape }}</p>
+  <a class="button" href="{{ error_home | relative_url }}">{% if page.lang == 'ru' %}На главную{% else %}Back to home{% endif %} →</a>
+  <p><a href="{{ error_catalog | relative_url }}">{% if page.lang == 'ru' %}Читальный зал{% else %}Reading room{% endif %}</a> · <a href="{{ error_search | relative_url }}">{% if page.lang == 'ru' %}Поиск{% else %}Search{% endif %}</a></p>
+</section>

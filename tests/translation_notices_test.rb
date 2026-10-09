@@ -40,6 +40,7 @@ class TranslationNoticesTest < Minitest::Test
       refute_includes html, "hreflang="
       refute_includes html, "property=\"og:type\" content=\"article\""
       assert_empty JSON.parse(File.read(File.join(review.dest, "assets/search-en.json")))
+      assert_empty JSON.parse(File.read(File.join(review.dest, "assets/discovery-en.json")))
       refute_includes File.read(File.join(review.dest, "sitemap.xml")), "/articles/#{id}/"
       russian = File.read(File.join(review.dest, "ru/articles/#{id}/index.html"))
       assert_includes russian, "English translation status"
@@ -72,12 +73,17 @@ class TranslationNoticesTest < Minitest::Test
       site = Jekyll::Site.new(config)
       site.process
       home = File.read(File.join(site.dest, "index.html"))
-      assert_includes home, "Articles available in Russian"
+      assert_includes home, "Russian original · Translation pending"
       ids.each do |id|
         assert_includes home, "/history_math/articles/#{id}/"
         assert File.exist?(File.join(site.dest, "articles/#{id}/index.html"))
       end
       assert_empty JSON.parse(File.read(File.join(site.dest, "assets/search-en.json")))
+      discovery = JSON.parse(File.read(File.join(site.dest, "assets/discovery-en.json")))
+      assert_equal ids.length, discovery.length
+      assert discovery.all? { |record| record["translation_notice"] == true && record["language"] == "en" }
+      assert discovery.all? { |record| record["text"] == record["description"] }
+      assert_equal ids.map { |id| "/history_math/articles/#{id}/" }.sort, discovery.map { |record| record["url"] }.sort
       fixture = File.expand_path("../test-results/notices-fixture", __dir__)
       FileUtils.rm_rf(fixture)
       FileUtils.mkdir_p(File.dirname(fixture))
@@ -93,6 +99,10 @@ class TranslationNoticesTest < Minitest::Test
       html = File.read(File.join(translated_site.dest, "articles/#{id}/index.html"))
       refute_includes html, "An English translation of this article is not available yet."
       assert_includes html, "hreflang=\"ru\""
+      replacement = JSON.parse(File.read(File.join(translated_site.dest, "assets/discovery-en.json")))
+        .select { |record| record["url"] == "/history_math/articles/#{id}/" }
+      assert_equal 1, replacement.length
+      refute replacement.first["translation_notice"]
 
       File.delete(File.join(source, "_articles/translated.en.md"))
       File.write(File.join(source, "conflict.html"), "---\nlayout: page\nstatus: published\npermalink: /articles/#{id}/\n---\nConflict")

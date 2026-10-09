@@ -26,7 +26,7 @@ const origin = `http://127.0.0.1:${server.address().port}`;
 const browser = await chromium.launch({executablePath: process.env.BROWSER_EXECUTABLE || undefined});
 const records = JSON.parse(await readFile(resolve(root, 'assets/search-ru.json'), 'utf8'));
 const pages = base ? ['/', '/ru/', '/about/', '/ru/about/', '/showcase/', '/ru/showcase/',
-  '/ru/materials/', '/ru/search/', ...records.map(record => record.url.slice(base.length))] : ['/ru/about/', '/about/'];
+  '/ru/materials/', '/ru/search/', '/materials/', '/search/', ...records.map(record => record.url.slice(base.length))] : ['/ru/about/', '/about/'];
 const report = [];
 await mkdir('test-results/image-delivery', {recursive: true});
 let checkedDownload = false;

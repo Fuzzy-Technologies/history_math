@@ -92,4 +92,5 @@ jobs:
           node scripts/article-pdf.mjs --site-dir _site-domain
           python3 scripts/check_site.py _site-domain ''
           IMAGE_SITE_DIR=_site-domain IMAGE_BASEURL='' node tests/image-delivery-browser.mjs
+          ERROR_SITE_DIR=_site-domain ERROR_BASEURL='' node tests/errors-browser.mjs
           rm -rf _site-domain
