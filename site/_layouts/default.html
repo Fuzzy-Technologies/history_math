@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title | escape }} · {% if ru %}Математика с Мансур-абый{% else %}Mathematics with Mansur{% endif %}</title>
   <meta name="description" content="{{ page.description | escape }}">
-  {% if page.status == 'draft' %}<meta name="robots" content="noindex, nofollow">{% endif %}
+  {% if page.status == 'draft' or page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
   <meta name="theme-color" content="#f4eddf">
   <script>
     (() => {
@@ -58,7 +58,7 @@
     <nav class="language-nav" aria-label="{% if ru %}Язык{% else %}Language{% endif %}">
       <span aria-current="page">{{ page.lang | upcase }}</span>
       {% assign has_other = false %}{% for translation in page.translations %}{% if translation.lang != page.lang %}{% assign has_other = true %}<a href="{{ translation.url | relative_url }}" lang="{{ translation.lang }}">{{ translation.lang | upcase }}</a>{% endif %}{% endfor %}
-      {% unless has_other %}{% if ru %}<a href="{{ '/' | relative_url }}" lang="en" aria-label="English edition home">EN ↗</a>{% else %}<a href="{{ '/ru/' | relative_url }}" lang="ru">RU ↗</a>{% endif %}{% endunless %}
+      {% unless has_other %}{% if page.english_notice_url %}<a href="{{ page.english_notice_url | relative_url }}" lang="en" aria-label="English translation status">EN</a>{% elsif page.original_url %}<a href="{{ page.original_url | relative_url }}" lang="ru">RU</a>{% elsif ru %}<a href="{{ '/' | relative_url }}" lang="en" aria-label="English edition home">EN ↗</a>{% else %}<a href="{{ '/ru/' | relative_url }}" lang="ru">RU ↗</a>{% endif %}{% endunless %}
     </nav></div>
     </div>
   </header>

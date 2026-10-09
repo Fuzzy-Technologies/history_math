@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<section class="page-heading">
+  <p class="eyebrow">Available in Russian</p>
+  <h1>{{ page.title | escape }}</h1>
+  <p class="lead">{{ page.description | escape }}</p>
+</section>
+<div class="prose page-body">
+  <p>An English translation of this article is not available yet.</p>
+  <p>The original article by Mansur Gilmullin is available in Russian.</p>
+  <p><a class="button" href="{{ page.original_url | relative_url }}">Read the Russian original →</a></p>
+  <p><a href="{{ '/' | relative_url }}">Back to the English edition</a></p>
+</div>

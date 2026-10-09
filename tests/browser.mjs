@@ -1,3 +1,4 @@
+import {execFileSync} from 'node:child_process';
 import {recordRequestFailure} from './request-failures.mjs';
 import assert from 'node:assert/strict';
 import {createServer} from 'node:http';
@@ -13,7 +14,12 @@ const discoveryOnly = process.argv.includes('--discovery-only');
 const carouselOnly = process.argv.includes('--carousel-only');
 const showcaseOnly = process.argv.includes('--showcase-only');
 
-const root = resolve('_site');
+const root = resolve(process.env.BROWSER_SITE_DIR || '_site');
+const articleRecords = JSON.parse(await readFile(resolve(root, 'assets/search-ru.json'), 'utf8'));
+function neighbors(url) {
+  const index = articleRecords.findIndex(article => article.url === url);
+  return [articleRecords[index - 1], articleRecords[index + 1]].filter(Boolean).map(article => article.url);
+}
 const evidence = resolve('test-results');
 await mkdir(evidence, {recursive: true});
 const mime = {'.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.woff2': 'font/woff2'};
@@ -111,8 +117,7 @@ try {
         assert.equal(await toc.count(), await page.locator('.article-body h2').count());
         await toc.nth(1).click();
         assert.ok(await page.evaluate(() => Boolean(document.getElementById(decodeURIComponent(location.hash.slice(1))))));
-        assert.equal(await page.locator('.reading-navigation a').count(), 1);
-        assert.equal(await page.locator('.reading-navigation a').getAttribute('href'), '/history_math/ru/articles/demo-area/');
+        assert.deepEqual(await page.locator('.reading-navigation a').evaluateAll(links => links.map(link => link.getAttribute('href'))), neighbors('/history_math/ru/articles/demo-geometry/'));
         await page.locator('h1').scrollIntoViewIfNeeded();
         assert.ok(await page.locator('.math-source[data-rendered=true]').count() >= 6);
         assert.equal(await page.locator('.math-source:not([data-rendered=true])').count(), 0);
@@ -125,7 +130,7 @@ try {
         checked(`${viewport.name}: literal dollar inline/display math rendered through Markdown to KaTeX; table, footnote and images present`);
       }
       if (path === '/ru/articles/demo-area/') {
-        assert.deepEqual(await page.locator('.reading-navigation a').evaluateAll(links => links.map(link => link.getAttribute('href'))), ['/history_math/ru/articles/demo-geometry/', '/history_math/ru/articles/demo-abacus/']);
+        assert.deepEqual(await page.locator('.reading-navigation a').evaluateAll(links => links.map(link => link.getAttribute('href'))), neighbors('/history_math/ru/articles/demo-area/'));
         checked(`${viewport.name}: article navigation respects publication order and end-of-sequence limits`);
       }
       if (path === '/ru/search/') {
@@ -148,7 +153,7 @@ try {
       if (path === '/ru/materials/') {
         await page.getByRole('combobox', {name: /^Тип материала/}).click();
         await page.getByRole('option', {name: 'Задачи', exact: true}).click();
-        assert.equal(await page.locator('.catalog-list .material-card:visible').count(), 1);
+        assert.equal(await page.locator('.catalog-list .material-card:visible').count(), articleRecords.filter(article => article.type === 'problem').length);
         await page.getByRole('combobox', {name: /^Тема/}).click();
         await page.getByRole('option', {name: 'счёт', exact: true}).click();
         assert.ok(await page.locator('#catalog-empty').isVisible());
@@ -197,7 +202,7 @@ try {
   assert.equal(await page.locator('.material-card').count(), 5);
   assert.equal(await page.locator('#archive-cards h3 a').count(), 3);
   await page.goto(origin + '/history_math/ru/materials/');
-  assert.equal(await page.locator('.material-card:visible').count(), 5);
+  assert.equal(await page.locator('.material-card:visible').count(), articleRecords.length);
   checked('Without JavaScript: reading, catalog and initial archive remain available');
   await context.close();
   }
@@ -365,8 +370,10 @@ try {
         await page.waitForFunction(() => document.querySelector('#latest-cards').scrollLeft > 100);
         assert.equal(page.url(), before, 'Dragging followed an article link');
         assert.equal(await carousel.evaluate(node => node.classList.contains('is-dragging')), false);
+        const destination = new URL(await image.getAttribute('href'), origin).href;
         await image.click();
-        await page.waitForURL('**/demo-geometry/');
+        await page.waitForURL(destination);
+        await page.goto(origin + '/history_math/ru/articles/demo-geometry/', {waitUntil: 'networkidle'});
         checked(`${theme}: mouse drag preserves link clicks; wheel browses cards and releases page scrolling at both ends`);
       } else {
         await page.waitForFunction(top => scrollY > top + 10, pageTop);
@@ -413,13 +420,14 @@ try {
   await motionPage.mouse.wheel(0, 120);
   await motionPage.waitForFunction(() => document.querySelector('#latest-cards').scrollLeft >= 119);
   const clickImage = motionPage.locator('.card-image').first();
+  const clickDestination = new URL(await clickImage.getAttribute('href'), origin).href;
   await clickImage.scrollIntoViewIfNeeded();
   const clickBounds = await clickImage.boundingBox();
   await motionPage.mouse.move(clickBounds.x + 35, clickBounds.y + 35);
   await motionPage.mouse.down();
   await motionPage.mouse.move(clickBounds.x + 38, clickBounds.y + 35);
   await motionPage.mouse.up();
-  await motionPage.waitForURL('**/demo-geometry/');
+  await motionPage.waitForURL(clickDestination);
   await motionContext.close();
   checked('Normal motion: small card lift, continuous wheel browsing and small pointer movement keep ordinary links usable; reduced motion keeps cards stationary');
   }
@@ -433,4 +441,10 @@ try {
   await writeFile(`${evidence}/browser-report.json`, JSON.stringify(report, null, 2));
   await browser.close();
   server.close();
+}
+
+// Complete runs also verify the final article/translation navigation with an isolated fixture.
+if (process.argv.length === 2) {
+  execFileSync('bundle', ['exec', 'ruby', 'tests/translation_notices_test.rb'], {stdio: 'inherit'});
+  await import('./translation-notices-browser.mjs');
 }

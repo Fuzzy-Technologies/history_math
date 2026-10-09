@@ -8,19 +8,21 @@ status: published
 permalink: /ru/
 ---
 {% assign articles = site.articles | where: 'lang', 'ru' | sort: 'date' | reverse %}
-{% assign featured = articles | where: 'translation_key', 'demo-geometry' | first %}
+{% assign published_articles = articles | where: 'status', 'published' %}
+{% assign featured = published_articles | first %}
+{% unless featured %}{% assign featured = articles | where: 'translation_key', 'demo-geometry' | first %}{% endunless %}
 {% unless featured %}{% assign featured = articles | first %}{% endunless %}
 <section class="journal-hero">
-  <div class="cover-line"><span>История математики</span><span>Пробные страницы</span></div>
+  <div class="cover-line"><span>История математики</span><span>{% if published_articles.size > 0 %}Электронный журнал{% else %}Пробные страницы{% endif %}</span></div>
   <div class="hero-copy">
     <h1>Поговорим<br><em>о математике.</em></h1>
     <p class="lead">Об учёных и открытиях, задачах и старинных книгах. О том, как развивалась математика и кто её создавал.</p>
     <a class="button" href="{{ '/ru/materials/' | relative_url }}">Читать материалы <span aria-hidden="true">→</span></a>
   </div>
   <figure class="hero-figure"><img src="{{ '/assets/images/frontispiece.svg' | relative_url }}" alt="Гравюрная композиция: окружности, вписанный треугольник и линии геометрического построения" width="900" height="900" fetchpriority="high"><figcaption><span>Геометрия</span><span>Таблица I</span></figcaption></figure>
-  <div class="cover-bottom"><span>Очерки · Задачи · История</span>{% if featured %}<a href="{{ featured.url | relative_url }}">Начать с чертежа <span aria-hidden="true">↗</span></a>{% endif %}</div>
+  <div class="cover-bottom"><span>Очерки · Задачи · История</span>{% if featured %}<a href="{{ featured.url | relative_url }}">{% if featured.status == 'published' %}Читать статью{% else %}Начать с чертежа{% endif %} <span aria-hidden="true">↗</span></a>{% endif %}</div>
 </section>
-<div class="demo-strip"><span class="status-dot" aria-hidden="true"></span>Пока здесь пробные материалы для проверки сайта. Авторские статьи добавим позже.</div>
+{% if published_articles.size == 0 %}<div class="demo-strip"><span class="status-dot" aria-hidden="true"></span>Пока здесь пробные материалы для проверки сайта. Авторские статьи добавим позже.</div>{% endif %}
 <section class="journal-section latest-section" aria-labelledby="latest-heading">
   <div class="section-heading"><div><p class="eyebrow">Читальный зал</p><h2 id="latest-heading">Новые материалы</h2></div><div class="section-actions"><a href="{{ '/ru/materials/' | relative_url }}">Все материалы ↗</a><div class="carousel-controls" hidden><button type="button" data-carousel-direction="-1" aria-label="Предыдущие материалы" aria-controls="latest-cards">←</button><button type="button" data-carousel-direction="1" aria-label="Следующие материалы" aria-controls="latest-cards">→</button></div></div></div>
   <div class="card-grid magazine-carousel" id="latest-cards" tabindex="0" role="region" aria-label="Новые материалы">{% for article in articles limit:5 %}{% include card.html article=article number=forloop.index %}{% endfor %}</div>

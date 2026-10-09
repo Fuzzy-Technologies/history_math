@@ -60,7 +60,11 @@
       "id": "q3",
       "question": "Уточнить том, задачу и страницу в издании Игнатьева для числового круга.",
       "blocking": true,
-      "state": "open"
+      "state": "open",
+      "sources": [
+        "https://www.directmedia.ru/book-104447-v-tsarstve-smekalki-ili-arifmetika-dlya-vsekh-opy/"
+      ],
+      "research_note": "Direct-Media identifies book 2, Saint Petersburg, A. S. Suvorin printing house, 1909. Its reproduced excerpt contains problem 11 and the matching ascending/descending sequence. The OCR starts with 28, while the earlier companion record suggested pages 23–25; the printed page still needs visual verification. No page number has been guessed or added to the article."
     },
     {
       "id": "iamblichus-circle",
