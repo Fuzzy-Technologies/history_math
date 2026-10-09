@@ -42,7 +42,7 @@ class PublicationTest < Minitest::Test
       refute_includes output, "draft-probe-marker"
       refute_includes output, "internal-probe-marker"
       refute_includes output, "DRAFT_MARKER"
-      assert_empty JSON.parse(File.read(File.join(site.dest, "assets/search-en.json")))
+      refute JSON.parse(File.read(File.join(site.dest, "assets/search-en.json"))).any? { |record| record["url"].include?("probe") }
     end
   end
 
@@ -75,7 +75,7 @@ class PublicationTest < Minitest::Test
       assert_includes page, "Editorial review copy"
       assert_includes page, "noindex, nofollow"
       refute_includes File.read(File.join(review.dest, "sitemap.xml")), "/articles/example-minimal/"
-      assert_empty JSON.parse(File.read(File.join(review.dest, "assets/search-en.json")))
+      refute JSON.parse(File.read(File.join(review.dest, "assets/search-en.json"))).any? { |record| record["url"].include?("example-minimal") }
     end
   end
 
@@ -133,6 +133,21 @@ class PublicationTest < Minitest::Test
       assert_equal 5, paths.length
       production = Jekyll::Site.new(config)
       production.process
+      records = JSON.parse(File.read(File.join(production.dest, "assets/search-en.json")))
+      assert_equal 5, records.length
+      assert records.all? { |record| record["status"] == "published" && !record["translation_notice"] }
+      paths.each do |path|
+        key = File.basename(path, ".en.md")
+        html = File.read(File.join(production.dest, "articles", key, "index.html"))
+        refute_includes html, "Editorial review copy"
+        refute_includes html, "noindex, nofollow"
+        assert_includes html, "hreflang=\"ru\""
+        assert_includes html, "/assets/pdf/en/#{key}.pdf"
+        # Draft exclusion is tested on temporary copies of the now-approved translations.
+        File.write(path, File.read(path).sub("status: published", "status: draft").gsub(/^date:.*\n/, ""))
+      end
+      production = Jekyll::Site.new(config)
+      production.process
       assert_empty JSON.parse(File.read(File.join(production.dest, "assets/search-en.json")))
       config["article_review"] = true
       preview = Jekyll::Site.new(config)
@@ -152,7 +167,7 @@ class PublicationTest < Minitest::Test
         ru = File.read(File.join(preview.dest, "ru", url.delete_prefix("/"), "index.html"))
         assert_includes ru, "hreflang=\"en\""
 
-        # Exercise the release path on temporary copies without approving repository drafts.
+        # Restore publication on temporary copies using fixture approvals only.
         data.merge!({"status" => "published", "date" => "2026-10-09"})
         text = YAML.dump(data) + "---" + body
         File.write(path, text)

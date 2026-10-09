@@ -27,6 +27,7 @@ const fixture = await serve('test-results/browser-fixture');
 const browser = await chromium.launch({executablePath: process.env.BROWSER_EXECUTABLE || undefined});
 const errors = [];
 const records = JSON.parse(await readFile('_site/assets/search-ru.json', 'utf8'));
+const englishRecords = JSON.parse(await readFile('_site/assets/search-en.json', 'utf8'));
 await mkdir('test-results/journal-polish', {recursive: true});
 async function audit(page) {
   await page.locator('img').evaluateAll(async images => { for (const image of images) image.loading = 'eager'; await Promise.all(images.map(image => image.decode())); });
@@ -38,6 +39,8 @@ async function audit(page) {
 try {
   assert.equal(records.length, 5);
   assert.ok(records.every(record => record.status === 'published' && !record.url.includes('/demo-')));
+  assert.equal(englishRecords.length, 5);
+  assert.ok(englishRecords.every(record => record.status === 'published' && !record.translation_notice));
   for (const width of [320, 390, 1440]) for (const theme of ['light', 'dark']) {
     const page = await browser.newPage({viewport: {width, height: 1000}, colorScheme: theme, reducedMotion: 'reduce', timezoneId: 'Europe/Moscow'});
     page.on('pageerror', error => errors.push(error.message));
@@ -56,7 +59,7 @@ try {
         ['Главная', 'Читальный зал', 'Витрина', 'Поиск'] : ['Home', 'Reading room', 'Showcase', 'Search']);
       assert.deepEqual(await navigation.locator('a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))),
         ['/', '/materials/', '/showcase/', '/search/'].map(path => '/history_math' + prefix + path));
-      assert.equal(await page.locator('#latest-cards .translation-label').count(), language === 'en' ? 5 : 0);
+      assert.equal(await page.locator('#latest-cards .translation-label').count(), 0);
       for (const heading of await page.locator('h1, h2, h3').allTextContents()) assert.doesNotMatch(heading.trim(), /\.$/);
       assert.doesNotMatch(await page.locator('.about-teaser').innerText(), /международного математического|international mathematics/);
       await audit(page);
@@ -71,7 +74,7 @@ try {
       await page.locator('#query').fill(language === 'ru' ? 'Гарднер' : 'Gardner');
       await page.locator('#search-form button').click();
       await page.waitForFunction(() => document.querySelectorAll('#search-results h3 a').length === 1);
-      assert.equal(await page.locator('#search-results .translation-label').count(), language === 'en' ? 1 : 0);
+      assert.equal(await page.locator('#search-results .translation-label').count(), 0);
       assert.match(await page.locator('#search-status').innerText(), language === 'ru' ? /Найдено материалов: 1/ : /Articles found: 1/);
       await audit(page);
     }

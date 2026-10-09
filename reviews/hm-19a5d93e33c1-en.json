@@ -2,7 +2,10 @@
   "article_id": "hm-19a5d93e33c1-en",
   "review_version": 1,
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "Timur Gilmullin (Tim55667757)",
+    "date": "2026-10-10",
+    "package_sha256": "125ac50622702f617d8e7a9e6ab9caf580fa63fb14f40b86e085cdcefce0a171"
   },
   "questions": [],
   "reconciliation": {
@@ -22,6 +25,7 @@
         "Preserved both bibliographic records as Russian editions, using descriptive English titles. No new historical attribution is claimed.",
         "Softened the general algorithm analogy to avoid implying that all dynamic programming proceeds backwards."
       ]
-    }
+    },
+    "publication_approval": "Owner confirmed review and merge of PR #47 on 2026-10-10 (Europe/Moscow). Publication metadata updated; approved English prose and image bytes are unchanged."
   }
 }

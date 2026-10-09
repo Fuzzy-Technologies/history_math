@@ -2,7 +2,10 @@
   "article_id": "hm-15a0b4f1d18b-en",
   "review_version": 1,
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "Timur Gilmullin (Tim55667757)",
+    "date": "2026-10-10",
+    "package_sha256": "1da677e8c138d92c12df3170eff74d72221bd12dc7855a048c289237f5d19f2c"
   },
   "questions": [],
   "reconciliation": {
@@ -21,6 +24,7 @@
         "Preserved all 25 numbers, the prediction 57, both generating sets, and all four construction steps; added the one-entry-per-row-and-column explanation implicit in the trick.",
         "The citation describes the actual 1999 Russian edition, translator, editor, pages and figures, rather than inventing English edition details."
       ]
-    }
+    },
+    "publication_approval": "Owner confirmed review and merge of PR #47 on 2026-10-10 (Europe/Moscow). Publication metadata updated; approved English prose and image bytes are unchanged."
   }
 }
