@@ -35,11 +35,15 @@
     "Removed the placeholder section heading; selected existing archive images for card and social previews.",
     "Verified the two ones and the n² proof; preserved Utilius after inspecting the actual engraving; removed the unsupported translation and Iamblichus-circle attribution.",
     "All three substantive comment blocks were already included. The unchanged proof is moved next to the problem; the Ignatiev biography and Iamblichus bibliography are grouped under Примечания. Existing captions and rejected-claim corrections are preserved.",
-    "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged."
+    "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged.",
+    "Recorded the owner's explicit publication approval dated 2026-10-09, set the website publication date, and bound the decision to the final Markdown and unchanged image bytes. Earlier publication dates are preserved."
   ],
   "review_version": 1,
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "Timur Gilmullin (Tim55667757)",
+    "date": "2026-10-09",
+    "package_sha256": "e844813fd1fe40b3e8351c634e7048ada6fadfdb236840c94c6c0b7d087a278f"
   },
   "questions": [
     {
@@ -60,11 +64,12 @@
       "id": "q3",
       "question": "Уточнить том, задачу и страницу в издании Игнатьева для числового круга.",
       "blocking": true,
-      "state": "open",
+      "state": "accepted",
       "sources": [
         "https://www.directmedia.ru/book-104447-v-tsarstve-smekalki-ili-arifmetika-dlya-vsekh-opy/"
       ],
-      "research_note": "Direct-Media identifies book 2, Saint Petersburg, A. S. Suvorin printing house, 1909. Its reproduced excerpt contains problem 11 and the matching ascending/descending sequence. The OCR starts with 28, while the earlier companion record suggested pages 23–25; the printed page still needs visual verification. No page number has been guessed or added to the article."
+      "research_note": "Direct-Media identifies book 2, Saint Petersburg, A. S. Suvorin printing house, 1909. Its reproduced excerpt contains problem 11 and the matching ascending/descending sequence. The OCR starts with 28, while the earlier companion record suggested pages 23–25; the printed page still needs visual verification. No page number has been guessed or added to the article.",
+      "resolution": "09.10.2026 Тимур Гильмуллин разрешил публикацию текущей версии с последующим уточнением печатной страницы Игнатьева. Книга 2, издание 1909 года и задача 11 найдены; противоречивый номер страницы из OCR в статью не добавлялся."
     },
     {
       "id": "iamblichus-circle",

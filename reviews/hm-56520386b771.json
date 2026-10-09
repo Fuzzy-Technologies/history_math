@@ -32,11 +32,15 @@
     "Removed the placeholder section heading; selected existing archive images for card and social previews.",
     "Dated the archived record explicitly to 2019; narrowed the OEIS link; removed the unsupported cryptography example and museum attribution.",
     "No comment-placement blocks occur in the complete article or announcement. The announcement repeats existing article content. Earlier corrections to the historical record, cryptography claim and painting caption are preserved.",
-    "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged."
+    "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged.",
+    "Recorded the owner's explicit publication approval dated 2026-10-09, set the website publication date, and bound the decision to the final Markdown and unchanged image bytes. Earlier publication dates are preserved."
   ],
   "review_version": 1,
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "Timur Gilmullin (Tim55667757)",
+    "date": "2026-10-09",
+    "package_sha256": "14331887f8f7b3ca65ffb46299ab3fef82d5ec8a919ba1403f437e2b53b5e63c"
   },
   "questions": [
     {
@@ -57,7 +61,8 @@
       "id": "q3",
       "question": "Подтвердить происхождение архивной иллюстрации и авторской промокомпозиции; новые лицензии им не назначены.",
       "blocking": true,
-      "state": "open"
+      "state": "resolved",
+      "resolution": "09.10.2026 Тимур Гильмуллин подтвердил, что заголовочная иллюстрация с математиком у моря и промоколлаж автора с книгами — материалы проекта, разрешённые к публикации. Новая лицензия не назначалась."
     },
     {
       "id": "bronnikov-caption",

@@ -1,10 +1,10 @@
 # Archival pilot review evidence
 
-The five packages are review drafts. Current technical results are recorded by CI; editorial review is pending. No article has been approved by scientific review or released to the production site. Ordinary builds have no output URL for these drafts.
+On 2026-10-09, Timur Gilmullin approved the five article packages for website publication. Their status is `published`, their website date is 2026-10-09, and each approval covers the final Markdown and selected image bytes. Current technical results are recorded by CI; live deployment is tracked by the separate publication PR #39 and its master workflow. This editorial admission does not claim an independent scientific peer review.
 
 Site infrastructure: [PR #26](https://github.com/Fuzzy-Technologies/history_math/pull/26), [ADR 0001](adr/0001-archive-article-pilot.md), [next-article procedure](ARTICLE_PREPARATION.md), [check conditions](ARTICLE_CHECKS.md). The site owns the canonical schema, templates, checks and editable article derivatives. Existing private FELab metadata and NAS article/image directories are read-only sources. No FELab infrastructure branch or PR is required; the separate public GitHub FELab project is outside this implementation.
 
-The owner merged infrastructure #26 and article PRs #28–#32 into `develop`. All five articles still have `status: draft` and pending editorial approvals. A separate publication PR remains necessary after the remaining blocking questions are resolved or explicitly accepted by the editor.
+The owner merged infrastructure #26 and article PRs #28–#32 into `develop`. PRs #36–#38 add publication details, branded PDFs and English notices. Publication follows the separate `develop` → `master` PR #39 after current-head checks pass.
 
 ## Selection and earlier publication
 
@@ -26,7 +26,7 @@ The coin has a verified Commons source, CNG credit and CC BY-SA 3.0 terms in its
 
 Each PR's current CI report is the authority for its checked head. Earlier runs do not establish success after an editorial correction. The compact CI artifact contains only the JSON/Markdown report for 14 days. Local checks still create the Jekyll preview, screenshots at 1440, 390 and 320 pixels, and offline PDFs. Full-site and screenshot archives are no longer uploaded.
 
-Question states, sources, resolutions and authorized changes live only in `reviews/<article-id>.json`. Approval remains pending until the human editor records a decision for the current package. Small archive images retain their native dimensions, including Rumovsky's 150 × 200 portrait.
+Question states, sources, resolutions and authorized changes live only in `reviews/<article-id>.json`. Those records now contain the owner's publication decision and package digests. Accepted limitations remain explicitly distinguished from completed verification. Small archive images retain their native dimensions, including Rumovsky's 150 × 200 portrait.
 
 ## English translation notices
 
@@ -38,10 +38,8 @@ When real articles are published, the Russian home, catalog and about page stop 
 
 Read the current report from the linked CI run. Reproduce visual evidence locally as described in [the preparation procedure](ARTICLE_PREPARATION.md).
 
-## Publication decision checkpoint — 2026-10-09
+## Publication decision — 2026-10-09
 
-The publication-details and PDF features are integrated into `develop` through PRs #36 and #37. PR #38 integrates English notices and the final site navigation. These merges do not by themselves approve the five article packages.
+Timur Gilmullin explicitly confirmed the project images and approved publication with the remaining source/document checks deferred. The corresponding questions are resolved or accepted in their canonical review records; no unavailable verification is marked as completed. All five packages have named approval, the website date and matching content digests. Their earlier Telegram dates and the exact archived image bytes are preserved.
 
-Two of the six previously open questions are resolved with evidence in the review records: the Rumovsky portrait attribution and the Gardner edition (1999, chapter 2, pages 21–23). Four questions remain: the two project compositions in the perfect-number article, the exact Lucas reference, the visual comparison of the private Gardner DOC, and the printed page for Ignatiev. The Direct-Media excerpt confirms Ignatiev book 2 (1909), problem 11, but its OCR page marker conflicts with the earlier companion record, so no unverified page was inserted.
-
-To complete publication, the owner must resolve or explicitly accept each remaining limitation. Record that decision in the existing review records, set the real website publication date and `status: published`, calculate the digest for each final article package, and run the current-head gates before the separate `develop` → `master` merge. Do not mark unavailable visual checks as completed or reuse fixture approvals as an editorial decision.
+PR #39 collects `develop` for publication in `master`. Production admission uses the normal approval and digest checks; no gate, fixture or protocol has been bypassed. The master deployment workflow is the authority for whether the approved articles have reached the live site.

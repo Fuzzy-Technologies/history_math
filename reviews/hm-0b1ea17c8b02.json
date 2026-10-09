@@ -34,11 +34,15 @@
     "Added the Персоналии series/tag and corrected the academy distinction with RAS references. The 150 × 200 portrait bytes are unchanged.",
     "No comment-placement blocks occur in the complete article or announcement. Existing academy corrections and the biography tags are preserved.",
     "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged.",
-    "Matched the existing portrait visually against the documented Commons lithograph; added attribution and source without changing the archived image bytes."
+    "Matched the existing portrait visually against the documented Commons lithograph; added attribution and source without changing the archived image bytes.",
+    "Recorded the owner's explicit publication approval dated 2026-10-09, set the website publication date, and bound the decision to the final Markdown and unchanged image bytes. Earlier publication dates are preserved."
   ],
   "review_version": 1,
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "Timur Gilmullin (Tim55667757)",
+    "date": "2026-10-09",
+    "package_sha256": "1b4f09195ac4776fadcfeaef5e4a7fada695b9f3813e4e56f3643138e6f856ab"
   },
   "questions": [
     {
