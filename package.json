@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/core.test.js tests/workflows.test.js tests/publications.test.js tests/articles.test.mjs tests/article-review.test.mjs tests/request-failures.test.mjs",
+    "test": "node --test tests/*.test.js tests/*.test.mjs",
     "check:articles": "node scripts/check-articles.mjs",
     "test:browser": "node tests/browser.mjs",
     "format:markdown": "python3 tools/markdown_tables.py --write",
