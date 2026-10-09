@@ -1,3 +1,4 @@
 <div class="print-masthead">
-  <img src="{% if page.lang == 'ru' %}{{ '/assets/images/Math-with-Mansur-ru.svg' | relative_url }}{% else %}{{ '/assets/images/Math-with-Mansur.png' | relative_url }}{% endif %}" alt="{% if page.lang == 'ru' %}Математика с Мансур-абый{% else %}Math with Mansur{% endif %}" width="2048" height="682">
+  {% if page.lang == 'ru' %}{% assign print_logo = '/assets/images/Math-with-Mansur-ru.png' %}{% assign print_name = 'Математика с Мансур-абый' %}{% else %}{% assign print_logo = '/assets/images/Math-with-Mansur.png' %}{% assign print_name = 'Math with Mansur' %}{% endif %}
+  {% include reading-image.html src=print_logo alt=print_name %}
 </div>

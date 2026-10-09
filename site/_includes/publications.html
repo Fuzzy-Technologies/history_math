@@ -4,8 +4,8 @@
 {% for book in site.data.publications.items %}
   <article class="showcase-book" id="book-{{ book.id }}" aria-labelledby="title-{{ book.id }}">
     <div class="book-gallery">
-      <figure class="book-cover"><img src="{{ '/assets/images/publications/' | append: book.cover | relative_url }}" alt="{{ labels.cover_label | append: book.title[page.lang] | escape }}" width="{{ book.cover_width }}" height="{{ book.cover_height }}" loading="lazy" decoding="async"></figure>
-      {% if book.gallery %}<div class="book-variants">{% for image in book.gallery %}<figure><img src="{{ '/assets/images/publications/' | append: image.image | relative_url }}" alt="{{ image.caption[page.lang] | append: ': ' | append: book.title[page.lang] | escape }}" width="{{ image.width }}" height="{{ image.height }}" loading="lazy" decoding="async"><figcaption>{{ image.caption[page.lang] }}</figcaption></figure>{% endfor %}</div>{% endif %}
+      <figure class="book-cover">{% assign cover_path = '/assets/images/publications/' | append: book.cover %}{% assign cover_alt = labels.cover_label | append: book.title[page.lang] %}{% include reading-image.html src=cover_path alt=cover_alt width=book.cover_width height=book.cover_height sizes='(max-width: 760px) 85vw, 440px' %}</figure>
+      {% if book.gallery %}<div class="book-variants">{% for image in book.gallery %}<figure>{% assign gallery_path = '/assets/images/publications/' | append: image.image %}{% assign gallery_alt = image.caption[page.lang] | append: ': ' | append: book.title[page.lang] %}{% include reading-image.html src=gallery_path alt=gallery_alt width=image.width height=image.height sizes='(max-width: 760px) 40vw, 220px' %}<figcaption>{{ image.caption[page.lang] }}</figcaption></figure>{% endfor %}</div>{% endif %}
     </div>
     <div class="book-copy">
       <p class="eyebrow">{{ book.kind[page.lang] }}</p><h2 id="title-{{ book.id }}">{{ book.title[page.lang] }}</h2>

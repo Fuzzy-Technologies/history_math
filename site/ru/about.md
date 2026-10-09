@@ -7,7 +7,7 @@ translation_key: about
 status: published
 permalink: /ru/about/
 ---
-<figure class="about-banner"><img src="{{ '/assets/images/Math-with-Mansur-ru.svg' | relative_url }}" alt="Математика с Мансур-абый" width="2048" height="682"></figure>
+<figure class="about-banner">{% include reading-image.html src='/assets/images/Math-with-Mansur-ru.png' alt='Математика с Мансур-абый' loading='eager' %}</figure>
 
 ## Редакция
 

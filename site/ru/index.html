@@ -17,7 +17,7 @@ permalink: /ru/
     <a class="button" href="{{ '/ru/materials/' | relative_url }}">Читать материалы <span aria-hidden="true">→</span></a>
   </div>
   <div class="hero-picks" id="hero-picks"{% if page.journal_featured.size == 0 %} hidden{% endif %} aria-label="Ещё интересные материалы">
-    {% for article in page.journal_featured limit:4 %}<a class="hero-pick" href="{{ article.url | relative_url }}">{% if article.preview_image %}<img src="{{ article.preview_image | relative_url }}" alt="" width="160" height="160" loading="lazy">{% endif %}<span>{{ article.title | escape }}</span></a>{% endfor %}
+    {% for article in page.journal_featured limit:4 %}<a class="hero-pick" href="{{ article.url | relative_url }}">{% if article.preview_image %}{% include reading-image.html src=article.preview_image alt='' width=160 height=160 sizes='160px' %}{% endif %}<span>{{ article.title | escape }}</span></a>{% endfor %}
   </div>
 
   <div class="cover-bottom"><span>Очерки · Задачи · История</span><a href="{{ '/ru/materials/' | relative_url }}">Все материалы <span aria-hidden="true">↗</span></a></div>
@@ -34,6 +34,6 @@ permalink: /ru/
 </section>
 <section class="anniversary-panel" hidden><span class="anniversary-ornament" aria-hidden="true">∞</span><div><p class="eyebrow">Из архива журнала</p><h2 id="anniversary-heading">В этот день мы писали</h2><p id="anniversary-note"></p></div><div id="anniversary-result"></div></section>
 <section class="about-teaser">
-  <img src="{{ '/assets/images/Math-with-Mansur-logo-ru.png' | relative_url }}" alt="Мансур Гильмуллин в круглом логотипе проекта" width="240" height="240" loading="lazy">
+  {% include reading-image.html src='/assets/images/Math-with-Mansur-logo-ru.png' alt='Математика с Мансур-абый' width=240 height=240 %}
   <div><p class="eyebrow">Редакция</p><h2>Мансур Гильмуллин</h2><p>Редактор международного математического журнала, математик, преподаватель и историк математики.</p><a href="{{ '/ru/about/' | relative_url }}">Подробнее о журнале ↗</a></div>
 </section>

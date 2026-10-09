@@ -18,12 +18,23 @@ export function validateManifest(manifest) {
   return manifest;
 }
 
+// Rewrite only the private PDF server response, before browser preload discovery.
+// Public HTML keeps previews and inert original URLs for the interactive viewer.
+export function printImageSources(html) {
+  return html.replace(/<img\b[^>]*>/gi, tag => {
+    const original = tag.match(/\sdata-original="([^"]+)"/);
+    if (!original) return tag;
+    return tag.replace(/\ssrc="[^"]*"/, () => ` src="${original[1]}"`)
+      .replace(/\s(?:srcset|sizes)="[^"]*"/g, '');
+  });
+}
+
 export async function buildPdfs(siteDirectory) {
   const root = resolve(siteDirectory);
   const manifest = validateManifest(JSON.parse(await readFile(resolve(root, 'assets/article-pdfs.json'), 'utf8')));
   // A former public article must not survive as an orphaned downloadable PDF.
   await rm(resolve(root, 'assets/pdf'), {recursive: true, force: true});
-  const mime = {'.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.woff2': 'font/woff2', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg'};
+  const mime = {'.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.woff2': 'font/woff2', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp'};
   const server = createServer(async (request, response) => {
     try {
       const url = new URL(request.url, 'http://localhost');
@@ -32,7 +43,8 @@ export async function buildPdfs(siteDirectory) {
       if (!path.startsWith(root + sep)) { response.writeHead(403).end(); return; }
       if ((await stat(path)).isDirectory()) path = resolve(path, 'index.html');
       response.setHeader('Content-Type', mime[extname(path)] ?? 'application/octet-stream');
-      response.end(await readFile(path));
+      const bytes = await readFile(path);
+      response.end(extname(path) === '.html' ? printImageSources(bytes.toString('utf8')) : bytes);
     } catch { response.writeHead(404).end(); }
   });
   await new Promise(done => server.listen(0, '127.0.0.1', done));
@@ -45,7 +57,7 @@ export async function buildPdfs(siteDirectory) {
       const errors = [];
       page.on('pageerror', error => errors.push(error.message));
       page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
-      page.on('requestfailed', request => errors.push(request.url()));
+      page.on('requestfailed', request => errors.push(`${request.url()} (${request.failure()?.errorText})`));
       page.on('response', response => { if (response.status() >= 400) errors.push(`${response.status()} ${response.url()}`); });
       await page.route('**/*', route => new URL(route.request().url()).origin === localOrigin ? route.continue() : route.abort());
       await page.emulateMedia({media: 'print', colorScheme: 'light'});
@@ -66,7 +78,7 @@ export async function buildPdfs(siteDirectory) {
         clipped: [...document.querySelectorAll('.article-body table, .math-source[data-display="true"] .katex')]
           .some(node => node.getBoundingClientRect().width > document.querySelector('.article-body').getBoundingClientRect().width + 2)
       }));
-      const logo = article.lang === 'ru' ? 'Math-with-Mansur-ru.svg' : 'Math-with-Mansur.png';
+      const logo = article.lang === 'ru' ? 'Math-with-Mansur-ru.png' : 'Math-with-Mansur.png';
       if (errors.length || state.lang !== article.lang || state.unrendered || state.missingPrintImage || state.clipped || !state.content || !state.logo?.endsWith(logo)) {
         throw new Error(`PDF render failed for ${article.url}: ${JSON.stringify({errors, state})}`);
       }

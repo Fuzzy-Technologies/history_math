@@ -1,5 +1,7 @@
 # Changelog
 
+- Serve responsive WebP reading images and compact bilingual SVG logos; fetch full originals only for image enlargement/download and PDF builds.
+
 ## Unreleased — journal reading polish
 
 - Simplify citations to the current local access date and move PDF downloads beside article metadata.

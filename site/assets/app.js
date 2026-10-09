@@ -50,6 +50,7 @@ if (viewer && typeof viewer.showModal === 'function') {
   const canvas = viewer.querySelector('.viewer-canvas');
   const scaleLabel = viewer.querySelector('.viewer-scale');
   const caption = viewer.querySelector('#viewer-caption');
+  const download = viewer.querySelector('[data-viewer-download]');
   const expanded = document.createElement('img');
   const pointers = new Map();
   let activeTrigger;
@@ -87,7 +88,10 @@ if (viewer && typeof viewer.showModal === 'function') {
   async function openImage(image, trigger) {
     const current = ++request;
     activeTrigger = trigger;
-    expanded.src = image.currentSrc || image.src;
+    viewer.setAttribute('aria-busy', 'true');
+    expanded.src = image.dataset.original || image.currentSrc || image.src;
+    download.href = expanded.src;
+    download.download = new URL(expanded.src).pathname.split('/').at(-1);
     expanded.alt = image.alt;
     const description = image.closest('figure')?.querySelector('figcaption');
     caption.textContent = (description?.innerText || image.alt).replace(/\s*\n\s*/g, ' · ');
@@ -103,8 +107,12 @@ if (viewer && typeof viewer.showModal === 'function') {
       zoom = 1;
       resizeImage();
       stage.scrollTo(0, 0);
+      viewer.setAttribute('aria-busy', 'false');
     } catch {
-      if (viewer.open && current === request) caption.textContent = viewer.dataset.errorLabel;
+      if (viewer.open && current === request) {
+        caption.textContent = viewer.dataset.errorLabel;
+        viewer.setAttribute('aria-busy', 'false');
+      }
     }
   }
   document.querySelectorAll('.hero-figure img, .english-hero > img, .prose img, .about-teaser > img, .book-gallery img').forEach(image => {
@@ -119,8 +127,11 @@ if (viewer && typeof viewer.showModal === 'function') {
   });
   viewer.addEventListener('close', () => {
     request += 1;
+    viewer.setAttribute('aria-busy', 'false');
     pointers.clear();
     canvas.replaceChildren();
+    expanded.removeAttribute('src');
+    download.removeAttribute('href');
     stage.classList.remove('is-dragging');
     document.documentElement.classList.remove('viewer-open');
     activeTrigger?.focus({preventScroll: true});
@@ -136,7 +147,7 @@ if (viewer && typeof viewer.showModal === 'function') {
   viewer.addEventListener('click', event => { if (event.target === viewer) viewer.close(); });
   viewer.addEventListener('keydown', event => {
     if (event.key === 'Tab') {
-      const focusable = [...viewer.querySelectorAll('button:not(:disabled), [tabindex="0"]')];
+      const focusable = [...viewer.querySelectorAll('button:not(:disabled), a[href], [tabindex="0"]')];
       const first = focusable[0];
       const last = focusable.at(-1);
       if (event.shiftKey && document.activeElement === first) {
@@ -361,6 +372,7 @@ if (archive) {
         if (record.preview_image) {
           const image = document.createElement('img');
           image.src = record.preview_image; image.alt = ''; image.width = 160; image.height = 160;
+          image.loading = 'lazy'; image.decoding = 'async';
           link.append(image);
         }
         link.append(element('span', '', record.title));
