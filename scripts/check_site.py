@@ -20,9 +20,15 @@ class PageParser(HTMLParser):
         self.scripts = []
         self.externalAnchors = []
         self.templateLanguages = []
+        self.redirect = None
+        self.robots = None
 
     def handle_starttag(self, tag, attributes):
         attributes = dict(attributes)
+        if tag == "meta" and attributes.get("name") == "article-redirect":
+            self.redirect = attributes.get("content")
+        if tag == "meta" and attributes.get("name") == "robots":
+            self.robots = attributes.get("content")
         if tag == "html":
             self.language = attributes.get("lang")
         if tag == "template":
@@ -110,6 +116,14 @@ def CheckSite(sitePath, basePath):
         else:
             publicPath = "/" + relative
         expectedCanonical = "https://fuzzy-technologies.github.io" + basePath + publicPath
+        if page.redirect:
+            match = re.fullmatch(r"(/(?:ru/)?articles/hm-[0-9a-f]{12})/", publicPath)
+            expectedRedirect = basePath + match[1] + "-" + expectedLanguage + "/" if match else None
+            target = Resolve(page.redirect, path)
+            if (page.redirect != expectedRedirect or page.robots != "noindex, follow" or
+                    target not in parsed or parsed[target].redirect or parsed[target].language != expectedLanguage):
+                errors.append(f"{path}: invalid article redirect")
+            expectedCanonical = "https://fuzzy-technologies.github.io" + (expectedRedirect or "")
         if page.canonical != [expectedCanonical]:
             errors.append(f"{path}: wrong canonical {page.canonical}")
         for url, language in page.externalAnchors:
@@ -138,12 +152,16 @@ def CheckSite(sitePath, basePath):
                     errors.append(f"Non-public or wrong-language {kind} record")
                 if kind == "search" and record.get("translation_notice"):
                     errors.append("Translation notice in article-only search index")
-                Resolve(record["url"], sitePath / "index.html")
+                target = Resolve(record["url"], sitePath / "index.html")
+                if target in parsed and parsed[target].redirect:
+                    errors.append(f"Redirect in {kind} index: {record['url']}")
                 if record.get("preview_image"):
                     Resolve(record["preview_image"], sitePath / "index.html")
     sitemap = ElementTree.parse(sitePath / "sitemap.xml")
     for loc in sitemap.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}loc"):
-        Resolve(loc.text, sitePath / "index.html")
+        target = Resolve(loc.text, sitePath / "index.html")
+        if target in parsed and parsed[target].redirect:
+            errors.append(f"Redirect in sitemap: {loc.text}")
     forbidden = [path for path in sitePath.rglob("*") if path.suffix in (".md", ".rb", ".py", ".sqlite3") or
                  path.name in ("Gemfile", "package.json", "AGENTS.md", ".felab.json")]
     errors.extend(f"Unexpected output file: {path}" for path in forbidden)

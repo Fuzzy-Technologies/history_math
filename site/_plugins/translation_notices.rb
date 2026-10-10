@@ -12,7 +12,7 @@ module HistoryMath
         next unless original
         # A real translation replaces the notice and owns the same public URL.
         next if articles.any? { |doc| doc.data["translation_key"] == original.data["translation_key"] && doc.data["lang"] == "en" }
-        url = original.url.delete_prefix("/ru")
+        url = HistoryMath.article_url(original.url.delete_prefix("/ru").sub(/-ru\/$/, "/"), "en")
         if HistoryMath.visible_documents(site).any? { |document| document.url == url }
           raise Jekyll::Errors::FatalException, "English notice conflicts with an existing URL: #{url}"
         end

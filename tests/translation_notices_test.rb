@@ -31,20 +31,20 @@ class TranslationNoticesTest < Minitest::Test
       end
       site = Jekyll::Site.new(config)
       site.process
-      refute File.exist?(File.join(site.dest, "articles/#{id}/index.html"))
+      refute File.exist?(File.join(site.dest, "articles/#{id}-en/index.html"))
       config["article_review"] = true
       review = Jekyll::Site.new(config)
       review.process
-      html = File.read(File.join(review.dest, "articles/#{id}/index.html"))
+      html = File.read(File.join(review.dest, "articles/#{id}-en/index.html"))
       assert_includes html, "An English translation of this article is not available yet."
-      assert_includes html, "/history_math/ru/articles/#{id}/"
+      assert_includes html, "/history_math/ru/articles/#{id}-ru/"
       assert_includes html, "noindex, nofollow"
       refute_includes html, "hreflang="
       refute_includes html, "property=\"og:type\" content=\"article\""
       assert_empty JSON.parse(File.read(File.join(review.dest, "assets/search-en.json")))
       assert_empty JSON.parse(File.read(File.join(review.dest, "assets/discovery-en.json")))
-      refute_includes File.read(File.join(review.dest, "sitemap.xml")), "/articles/#{id}/"
-      russian = File.read(File.join(review.dest, "ru/articles/#{id}/index.html"))
+      refute_includes File.read(File.join(review.dest, "sitemap.xml")), "/articles/#{id}-en/"
+      russian = File.read(File.join(review.dest, "ru/articles/#{id}-ru/index.html"))
       assert_includes russian, "English translation status"
       refute_includes russian, "hreflang=\"en\""
       refute_includes File.read(File.join(review.dest, "index.html")), "<h2>Articles available in Russian</h2>"
@@ -77,15 +77,15 @@ class TranslationNoticesTest < Minitest::Test
       home = File.read(File.join(site.dest, "index.html"))
       assert_includes home, "Russian original · Translation pending"
       ids.each do |id|
-        assert_includes home, "/history_math/articles/#{id}/"
-        assert File.exist?(File.join(site.dest, "articles/#{id}/index.html"))
+        assert_includes home, "/history_math/articles/#{id}-en/"
+        assert File.exist?(File.join(site.dest, "articles/#{id}-en/index.html"))
       end
       assert_empty JSON.parse(File.read(File.join(site.dest, "assets/search-en.json")))
       discovery = JSON.parse(File.read(File.join(site.dest, "assets/discovery-en.json")))
       assert_equal ids.length, discovery.length
       assert discovery.all? { |record| record["translation_notice"] == true && record["language"] == "en" }
       assert discovery.all? { |record| record["text"] == record["description"] }
-      assert_equal ids.map { |id| "/history_math/articles/#{id}/" }.sort, discovery.map { |record| record["url"] }.sort
+      assert_equal ids.map { |id| "/history_math/articles/#{id}-en/" }.sort, discovery.map { |record| record["url"] }.sort
       fixture = File.expand_path("../test-results/notices-fixture", __dir__)
       FileUtils.rm_rf(fixture)
       FileUtils.mkdir_p(File.dirname(fixture))
@@ -94,20 +94,20 @@ class TranslationNoticesTest < Minitest::Test
       id = ids.first
       translated = File.read(File.join(source, "_articles/demo-abacus.md"))
         .sub("lang: ru", "lang: en").sub("translation_key: demo-abacus", "translation_key: #{id}")
-        .sub("permalink: /ru/articles/demo-abacus/", "permalink: /articles/#{id}/")
+        .sub("permalink: /ru/articles/demo-abacus/", "permalink: /articles/#{id}-en/")
       File.write(File.join(source, "_articles/translated.en.md"), translated)
       translated_site = Jekyll::Site.new(config)
       translated_site.process
-      html = File.read(File.join(translated_site.dest, "articles/#{id}/index.html"))
+      html = File.read(File.join(translated_site.dest, "articles/#{id}-en/index.html"))
       refute_includes html, "An English translation of this article is not available yet."
       assert_includes html, "hreflang=\"ru\""
       replacement = JSON.parse(File.read(File.join(translated_site.dest, "assets/discovery-en.json")))
-        .select { |record| record["url"] == "/history_math/articles/#{id}/" }
+        .select { |record| record["url"] == "/history_math/articles/#{id}-en/" }
       assert_equal 1, replacement.length
       refute replacement.first["translation_notice"]
 
       File.delete(File.join(source, "_articles/translated.en.md"))
-      File.write(File.join(source, "conflict.html"), "---\nlayout: page\nstatus: published\npermalink: /articles/#{id}/\n---\nConflict")
+      File.write(File.join(source, "conflict.html"), "---\nlayout: page\nstatus: published\npermalink: /articles/#{id}-en/\n---\nConflict")
       assert_raises(Jekyll::Errors::FatalException) { Jekyll::Site.new(config).process }
     end
   end

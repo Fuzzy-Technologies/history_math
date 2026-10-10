@@ -4,6 +4,7 @@ import {createHash} from 'node:crypto';
 import {runInNewContext} from 'node:vm';
 import Ajv from 'ajv';
 import {parseDocument} from 'yaml';
+import {articleUrl} from './article-url.mjs';
 import {checkReview} from './article-review.mjs';
 
 const katexModule = {exports: {}};
@@ -36,7 +37,7 @@ export function checkArticle(text, file, root, identities = new Set()) {
       if (new Date(value).toISOString().slice(0, 10) !== value) add('HM_METADATA', `Invalid calendar date: ${value}`);
     } catch { add('HM_METADATA', `Invalid calendar date: ${value}`); }
   }
-  for (const key of [`id:${data.article_id}:${data.lang}`, `url:${data.permalink}`, `translation:${data.translation_key}:${data.lang}`]) {
+  for (const key of [`id:${data.article_id}:${data.lang}`, `url:${articleUrl(data.permalink, data.lang)}`, `translation:${data.translation_key}:${data.lang}`]) {
     if (identities.has(key)) add('HM_IDENTIFIER', key);
     identities.add(key);
   }
@@ -146,7 +147,7 @@ export function checkSources(root, files = articleFiles(root)) {
     const result = checkArticle(text, file, root, identities);
     findings.push(...result.findings);
     if (result.data) findings.push(...checkReview(text, result.data, root));
-    articles.push({file, id: result.data?.article_id, url: result.data?.permalink, formulas: result.formulaCount, figures: result.figureCount});
+    articles.push({file, id: result.data?.article_id, url: articleUrl(result.data?.permalink, result.data?.lang), formulas: result.formulaCount, figures: result.figureCount});
   }
   return {findings, articles};
 }

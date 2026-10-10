@@ -127,6 +127,38 @@ class PublicationTest < Minitest::Test
     end
   end
 
+  def test_article_routes_are_stable_localized_and_collision_checked
+    with_site do |source, config|
+      site = Jekyll::Site.new(config)
+      site.process
+      site.collections.fetch("articles").docs.select { |doc| doc.data["schema_version"] == 1 }.each do |doc|
+        language = doc.data.fetch("lang")
+        id = doc.data.fetch("translation_key")
+        prefix = language == "ru" ? "/ru" : ""
+        url = "#{prefix}/articles/#{id}-#{language}/"
+        assert_equal url, doc.url
+        html = File.read(File.join(site.dest, url, "index.html"))
+        assert_includes html, "https://fuzzy-technologies.github.io/history_math#{url}"
+        assert_includes html, "/assets/pdf/#{language}/#{id}.pdf"
+        legacy = "#{prefix}/articles/#{id}/"
+        redirect = File.read(File.join(site.dest, legacy, "index.html"))
+        assert_includes redirect, "noindex, follow"
+        assert_includes redirect, "data-article-redirect href=\"/history_math#{url}\""
+        refute_includes File.read(File.join(site.dest, "sitemap.xml")), "#{legacy}</loc>"
+        assert_equal url, HistoryMath.article_url(url, language), "normalization must be idempotent"
+      end
+      # A legacy route may never overwrite a separately authored page.
+      File.write(File.join(source, "collision.html"), "---\nlayout: page\nstatus: published\npermalink: /articles/hm-99120459b820/\n---\nConflict")
+      assert_raises(Jekyll::Errors::FatalException) { Jekyll::Site.new(config).process }
+      File.delete(File.join(source, "collision.html"))
+      Dir.glob(File.join(source, "_articles/hm-*.md")).each do |path|
+        File.write(path, File.read(path).sub("status: published", "status: draft"))
+      end
+      Jekyll::Site.new(config).process
+      assert_empty Dir.glob(File.join(site.dest, "**/articles/hm-*/index.html")), "drafts have neither routes nor aliases"
+    end
+  end
+
   def test_five_english_adaptations_preview_pairing_and_approved_discovery
     with_site do |source, config|
       paths = Dir.glob(File.join(source, "_articles/hm-*.en.md"))
@@ -138,7 +170,7 @@ class PublicationTest < Minitest::Test
       assert records.all? { |record| record["status"] == "published" && !record["translation_notice"] }
       paths.each do |path|
         key = File.basename(path, ".en.md")
-        html = File.read(File.join(production.dest, "articles", key, "index.html"))
+        html = File.read(File.join(production.dest, "articles", "#{key}-en", "index.html"))
         refute_includes html, "Editorial review copy"
         refute_includes html, "noindex, nofollow"
         assert_includes html, "hreflang=\"ru\""
@@ -156,7 +188,7 @@ class PublicationTest < Minitest::Test
       paths.each do |path|
         _, frontmatter, body = File.read(path).split("---", 3)
         data = YAML.safe_load(frontmatter, permitted_classes: [Date, Time])
-        url = data.fetch("permalink")
+        url = HistoryMath.article_url(data.fetch("permalink"), "en")
         html = File.read(File.join(preview.dest, url.delete_prefix("/"), "index.html"))
         assert_includes html, "<html lang=\"en\">"
         assert_includes html, "Editorial review copy"
@@ -164,7 +196,7 @@ class PublicationTest < Minitest::Test
         assert_includes html, "noindex, nofollow"
         refute_includes html, "An English translation of this article is not available yet."
         assert manifest["articles"].any? { |item| item["url"] == url && item["lang"] == "en" }
-        ru = File.read(File.join(preview.dest, "ru", url.delete_prefix("/"), "index.html"))
+        ru = File.read(File.join(preview.dest, "ru", url.delete_prefix("/").sub(/-en\/$/, "-ru/"), "index.html"))
         assert_includes ru, "hreflang=\"en\""
 
         # Restore publication on temporary copies using fixture approvals only.
@@ -190,7 +222,7 @@ class PublicationTest < Minitest::Test
       end
       paths.each do |path|
         key = File.basename(path, ".en.md")
-        assert_includes File.read(File.join(approved.dest, "sitemap.xml")), "/articles/#{key}/"
+        assert_includes File.read(File.join(approved.dest, "sitemap.xml")), "/articles/#{key}-en/"
       end
     end
   end
