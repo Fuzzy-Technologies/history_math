@@ -53,8 +53,9 @@ test('missing metadata, asset, caption, reference and malformed formula block va
     [text.replace('/example/triangle.svg', '/example/../triangle.svg'), 'HM_PATH']
   ]) assert.ok(errors(input).some(x => x.code === code), `Expected ${code}`);
 });
-test('date validation and publication date requirement reject invalid metadata', () => {
-  assert.ok(errors(text.replace('status: draft', 'status: published')).some(x => x.code === 'HM_METADATA'));
+test('publication dates are automatic; demo and supplied dates remain validated', () => {
+  assert.ok(!errors(text.replace('status: draft', 'status: published')).some(x => x.code === 'HM_METADATA'));
+  assert.ok(errors(text.replace('status: draft', 'status: demo')).some(x => x.code === 'HM_METADATA'));
   assert.ok(errors(text.replace('status: draft', 'status: draft\ndate: 2026-02-30')).some(x => x.code === 'HM_METADATA'));
 });
 

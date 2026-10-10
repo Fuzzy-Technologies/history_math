@@ -24,6 +24,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+          fetch-depth: 0
       - uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8 # v1.327.0
         with:
           ruby-version: '3.3'
@@ -51,7 +52,7 @@ jobs:
           bundle exec ruby tests/publication_test.rb
           node scripts/article-pdf.mjs --site-dir test-results/pdf-fixture
           node tests/pdf-cache-browser.mjs
-          bundle exec jekyll build --trace
+          HISTORY_MATH_PUBLICATION_REF="$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build --trace
           node scripts/article-pdf.mjs
           python3 scripts/check_site.py _site /history_math
           npm run test:browser

@@ -61,7 +61,7 @@
     }
   },
   "allOf": [
-    {"if": {"properties": {"status": {"enum": ["published", "demo"]}}}, "then": {"required": ["date"]}},
+    {"if": {"properties": {"status": {"enum": ["demo"]}}}, "then": {"required": ["date"]}},
     {"if": {"required": ["hero_image"]}, "then": {"required": ["hero_alt", "hero_caption"]}}
   ]
 }
