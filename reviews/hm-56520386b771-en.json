@@ -5,7 +5,7 @@
     "status": "approved",
     "reviewed_by": "Timur Gilmullin (Tim55667757)",
     "date": "2026-10-10",
-    "package_sha256": "723a233a880ea544f3ea961a57c8b684b0a5b1aa5687ac186adaea1372a2a385"
+    "package_sha256": "a3db0ed4285948c19b65d78b92bcd29cdee0c2a7356703392b78b98ea22808ee"
   },
   "questions": [],
   "reconciliation": {
@@ -27,6 +27,12 @@
         "Retained original artwork and Russian book-cover lettering with English alternative text and captions; no translated English book edition is claimed."
       ]
     },
-    "publication_approval": "Owner confirmed review and merge of PR #47 on 2026-10-10 (Europe/Moscow). Publication metadata updated; approved English prose and image bytes are unchanged."
+    "publication_approval": "Owner confirmed review and merge of PR #47 on 2026-10-10 (Europe/Moscow). Publication metadata updated; approved English prose and image bytes are unchanged.",
+    "illustration_update": {
+      "date": "2026-10-10",
+      "requested_by": "Timur Gilmullin (Tim55667757)",
+      "scope": "Owner-requested replacement of figure-01 in both language editions with a text-free historical comic illustration; alt text and provenance updated. Article body, formulas and other figures unchanged. Final publication acceptance remains the owner merge of this PR.",
+      "previous_package_sha256": "723a233a880ea544f3ea961a57c8b684b0a5b1aa5687ac186adaea1372a2a385"
+    }
   }
 }
