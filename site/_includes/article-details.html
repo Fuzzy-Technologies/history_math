@@ -13,12 +13,11 @@
       {% if page.status == 'published' %}<dt>{% if ru_details %}Постоянная ссылка{% else %}Permanent link{% endif %}</dt><dd><a href="{{ page.url | absolute_url }}">{% if ru_details %}Страница статьи{% else %}Article page{% endif %}</a></dd>{% endif %}
     </dl>
     {% if page.status == 'published' %}
-      {% assign citation_date = page.updated | default: page.date %}
-      <p class="citation-label">{% if ru_details %}Для цитирования · ГОСТ Р 7.0.108–2022{% else %}Cite this article · APA 7{% endif %}</p>
+      <p class="citation-label">{% if ru_details %}Для цитирования · ГОСТ Р 7.0.108–2022{% else %}Cite this article · IEEE{% endif %}</p>
       {% if ru_details %}
       <p class="article-citation" data-article-citation>{% if citation_names.size < 4 %}{{ citation_names | citation_authors: 'ru' | escape }} {{ page.title | escape }}{% else %}{{ page.title | escape }} / {{ citation_names | citation_authors: 'ru' | escape }}{% endif %} // Математика с Мансур-абый : сайт. {{ page.date | date: '%Y' }}. {% if page.updated %}Дата обновления: {{ page.updated | date: '%d.%m.%Y' }}. {% endif %}URL: <a href="{{ page.url | absolute_url }}">{{ page.url | absolute_url }}</a> (дата обращения: <span data-citation-access>дд.мм.гггг</span>). Дата публикации: {{ page.date | date: '%d.%m.%Y' }}.</p>
       {% else %}
-      <p class="article-citation" data-article-citation>{{ citation_names | citation_authors: 'en' | escape }} ({{ citation_date | date: '%Y, %B %-d' }}). <em>{{ page.title | escape }}</em>. Mathematics with Mansur. <a href="{{ page.url | absolute_url }}">{{ page.url | absolute_url }}</a></p>
+      <p class="article-citation" data-article-citation>{{ citation_names | citation_authors: 'en' | escape }}, “{{ page.title | escape }},” <em>Mathematics with Mansur</em>, {{ page.date | ieee_date }}. Accessed: <span data-citation-access>Mon. D, YYYY</span>. [Online]. Available: <a href="{{ page.url | absolute_url }}">{{ page.url | absolute_url }}</a></p>
       {% endif %}
       <button type="button" data-copy-citation hidden>{% if ru_details %}Скопировать выходные данные{% else %}Copy citation{% endif %}</button>
       <span class="citation-copy-status" role="status" aria-live="polite"></span>
