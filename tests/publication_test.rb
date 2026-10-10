@@ -5,8 +5,56 @@ require "jekyll"
 require "tmpdir"
 require "fileutils"
 require "json"
+require "open3"
 
 class PublicationTest < Minitest::Test
+  def test_master_dates_reach_output_without_changing_approved_source
+    with_site do |source, config|
+      root = File.dirname(source)
+      FileUtils.mkdir_p(File.join(root, "scripts"))
+      FileUtils.cp(File.expand_path("../scripts/publication-dates.mjs", __dir__), File.join(root, "scripts"))
+      FileUtils.ln_s(File.expand_path("../node_modules", __dir__), File.join(root, "node_modules"))
+      git = lambda do |*args|
+        output, error, status = Open3.capture3("git", *args, chdir: root)
+        assert status.success?, error
+        output.strip
+      end
+      git.call("init", "-b", "master")
+      git.call("config", "user.name", "Test")
+      git.call("config", "user.email", "test@example.invalid")
+      git.call("add", "site/_articles")
+      _, error, status = Open3.capture3({"GIT_AUTHOR_DATE" => "2020-01-01T00:00:00Z",
+        "GIT_COMMITTER_DATE" => "2026-10-12T21:30:00Z"}, "git", "commit", "-m", "Publish", chdir: root)
+      assert status.success?, error
+      git.call("update-ref", "refs/remotes/origin/master", "HEAD")
+      before = Dir.glob(File.join(source, "_articles/*.md")).to_h { |path| [path, File.binread(path)] }
+      site = Jekyll::Site.new(config)
+      site.process
+      site.collections.fetch("articles").docs.select { |doc| doc.data["status"] == "published" }.each do |doc|
+        assert_equal "2026-10-13", doc.data["date"].strftime("%Y-%m-%d")
+        html = File.read(doc.destination(site.dest))
+        assert_includes html, 'datetime="2026-10-13"'
+        assert_includes html, "13.10.2026" if doc.data["lang"] == "ru"
+        assert_includes html, "Oct. 13, 2026" if doc.data["lang"] == "en"
+      end
+      %w[search-ru search-en discovery-ru discovery-en].each do |name|
+        records = JSON.parse(File.read(File.join(site.dest, "assets/#{name}.json")))
+        records.select { |record| record["status"] == "published" }.each do |record|
+          assert_equal "2026-10-13", record["date"]
+        end
+      end
+      before.each { |path, bytes| assert_equal bytes, File.binread(path) }
+      # A strict deployment cannot silently use a preview/source date.
+      ENV["HISTORY_MATH_PUBLICATION_STRICT"] = "1"
+      # Test the resolver directly so the independent editorial gate is not bypassed.
+      doc = site.collections.fetch("articles").docs.find { |item| item.data["article_id"] == "hm-0b1ea17c8b02" }
+      doc.data["article_id"] = "never-published"
+      assert_raises(Jekyll::Errors::FatalException) { HistoryMath.apply_publication_dates!(site) }
+    ensure
+      ENV.delete("HISTORY_MATH_PUBLICATION_STRICT")
+    end
+  end
+
   def with_site
     Dir.mktmpdir("history-math-test") do |root|
       source = File.join(root, "site")
@@ -83,7 +131,7 @@ class PublicationTest < Minitest::Test
     with_site do |source, config|
       path = File.join(source, "_articles/example-minimal.en.md")
       text = File.read(File.expand_path("../templates/minimal-article.md", __dir__))
-        .sub("status: draft", "status: published\ndate: '2026-10-08'")
+        .sub("status: draft", "status: published")
       File.write(path, text)
       assert_raises(Jekyll::Errors::FatalException) { Jekyll::Site.new(config).process }
       reviews = File.expand_path("../reviews", source)

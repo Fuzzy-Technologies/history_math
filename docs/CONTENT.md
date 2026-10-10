@@ -21,7 +21,7 @@ The canonical contract is `schemas/article-v1.schema.json`. Legacy `demo-*.md` f
 | `lang`, `translation_key`, `permalink`   | Required language, stable work key and language-specific URL.                                                                             |
 | `type`, `tags`, `math`                   | Required rubric, topic array and formula boolean. Biographies use `series: Персоналии` and the `Персоналии` tag, alongside existing tags. |
 | `status`                                 | `draft` during preparation; `published` requires recorded approval. `demo` labels examples.                                               |
-| `date`                                   | Website placement date; required only for published/demo pages. Omit on drafts.                                                           |
+| `date`                                   | Automatic for published articles; required only for demos. Omit on new articles.                                                          |
 | `original_publication`                   | Optional known earlier outlet, date, URL or citation; distinct from website placement.                                                    |
 | `rights_basis`                           | Required documented basis for placing the author text.                                                                                    |
 | `preview_image`, `cover_image`           | Optional existing illustrations for cards and social previews. Include their provenance in `figures`.                                     |

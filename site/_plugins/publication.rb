@@ -5,6 +5,7 @@ require "cgi"
 require "date"
 require "digest"
 require_relative "article_urls"
+require_relative "publication_dates"
 
 module HistoryMath
   PUBLIC_STATUSES = %w[published demo].freeze
@@ -170,6 +171,7 @@ Jekyll::Hooks.register :site, :post_read do |site|
       (site.config["article_review"] == true && doc.data["schema_version"] == 1 && doc.data["status"] == "draft")
   end
   site.collections.fetch("articles").docs.each { |doc| HistoryMath.validate_article!(doc) }
+  HistoryMath.apply_publication_dates!(site)
   site.pages.select! { |page| HistoryMath::PUBLIC_STATUSES.include?(page.data["status"]) }
   site.static_files.select! { |file| file.relative_path.start_with?("/assets/") }
   HistoryMath.localize_article_urls!(site)

@@ -6,6 +6,18 @@ import {parse} from 'yaml';
 const cleanup = readFileSync('.github/workflows/cleanup-merged-branch.yml', 'utf8').replace(/\r\n/g, '\n');
 const script = cleanup.split('script: |\n')[1].split('\n').map(line => line.replace(/^            /, '')).join('\n');
 const AsyncFunction = Object.getPrototypeOf(async function() {}).constructor;
+test('publication builds fetch full history and deployment resolves the exact master SHA strictly', () => {
+  for (const file of ['ci.yml', 'deploy.yml']) {
+    const workflow = parse(readFileSync(`.github/workflows/${file}`, 'utf8'));
+    for (const job of Object.values(workflow.jobs)) {
+      for (const step of job.steps ?? []) {
+        if (step.uses?.startsWith('actions/checkout@')) assert.equal(step.with['fetch-depth'], 0);
+      }
+    }
+  }
+  const deploy = readFileSync('.github/workflows/deploy.yml', 'utf8');
+  assert.match(deploy, /HISTORY_MATH_PUBLICATION_REF="\$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build/);
+});
 async function cleanupScenario(overrides = {}) {
   const pr = {merged: true, base: {ref: 'master'}, head: {ref: 'feature/example', sha: 'old', repo: {full_name: 'Fuzzy-Technologies/history_math'}}, ...overrides.pr};
   let deleted = 0;
