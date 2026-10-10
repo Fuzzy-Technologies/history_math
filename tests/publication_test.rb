@@ -24,23 +24,23 @@ class PublicationTest < Minitest::Test
       git.call("config", "user.email", "test@example.invalid")
       git.call("add", "site/_articles")
       _, error, status = Open3.capture3({"GIT_AUTHOR_DATE" => "2020-01-01T00:00:00Z",
-        "GIT_COMMITTER_DATE" => "2026-10-12T21:30:00Z"}, "git", "commit", "-m", "Publish", chdir: root)
+        "GIT_COMMITTER_DATE" => "2026-09-20T21:30:00Z"}, "git", "commit", "-m", "Publish", chdir: root)
       assert status.success?, error
       git.call("update-ref", "refs/remotes/origin/master", "HEAD")
       before = Dir.glob(File.join(source, "_articles/*.md")).to_h { |path| [path, File.binread(path)] }
       site = Jekyll::Site.new(config)
       site.process
       site.collections.fetch("articles").docs.select { |doc| doc.data["status"] == "published" }.each do |doc|
-        assert_equal "2026-10-13", doc.data["date"].strftime("%Y-%m-%d")
+        assert_equal "2026-09-21", doc.data["date"].strftime("%Y-%m-%d")
         html = File.read(doc.destination(site.dest))
-        assert_includes html, 'datetime="2026-10-13"'
-        assert_includes html, "13.10.2026" if doc.data["lang"] == "ru"
-        assert_includes html, "Oct. 13, 2026" if doc.data["lang"] == "en"
+        assert_includes html, 'datetime="2026-09-21"'
+        assert_includes html, "21.09.2026" if doc.data["lang"] == "ru"
+        assert_includes html, "Sep. 21, 2026" if doc.data["lang"] == "en"
       end
       %w[search-ru search-en discovery-ru discovery-en].each do |name|
         records = JSON.parse(File.read(File.join(site.dest, "assets/#{name}.json")))
         records.select { |record| record["status"] == "published" }.each do |record|
-          assert_equal "2026-10-13", record["date"]
+          assert_equal "2026-09-21", record["date"]
         end
       end
       before.each { |path, bytes| assert_equal bytes, File.binread(path) }
