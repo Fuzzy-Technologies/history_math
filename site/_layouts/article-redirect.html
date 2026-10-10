@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="{{ page.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta name="article-redirect" content="{{ page.redirect_target | relative_url }}">
+  <link rel="canonical" href="{{ page.redirect_target | absolute_url }}">
+  <title>{% if page.lang == 'ru' %}Статья переехала{% else %}Article moved{% endif %}</title>
+  <script src="{{ '/assets/article-redirect.js' | relative_url }}" defer></script>
+</head>
+<body>
+  <main>
+    <h1>{% if page.lang == 'ru' %}Статья переехала{% else %}Article moved{% endif %}</h1>
+    <p><a data-article-redirect href="{{ page.redirect_target | relative_url }}">{% if page.lang == 'ru' %}Перейти к статье{% else %}Continue to the article{% endif %}</a></p>
+  </main>
+</body>
+</html>

@@ -10,7 +10,8 @@ module HistoryMath
     def generate(site)
       records = site.collections.fetch("articles").docs.map do |doc|
         # Drafts are already removed unless this is an explicit review build.
-        slug = doc.data.fetch("permalink").split("/").last
+        # Keep existing downloadable PDF addresses stable during the HTML URL migration.
+        slug = doc.data.fetch("permalink").split("/").last.sub(/\A(hm-[0-9a-f]{12})-(?:ru|en)\z/, '\1')
         language = doc.data.fetch("lang")
         raise Jekyll::Errors::FatalException, "Invalid PDF identity" unless slug.match?(/\A[a-z0-9-]+\z/) && %w[ru en].include?(language)
         doc.data["pdf_url"] = "/assets/pdf/#{language}/#{slug}.pdf"

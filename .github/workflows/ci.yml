@@ -92,6 +92,7 @@ jobs:
           npm test
           bundle exec ruby tests/article_details_test.rb
           bundle exec ruby tests/publication_test.rb
+          bundle exec ruby tests/translation_notices_test.rb
           node scripts/article-pdf.mjs --site-dir test-results/pdf-fixture
           node tests/pdf-cache-browser.mjs
       - name: Build and inspect project-path output
@@ -100,7 +101,7 @@ jobs:
           node scripts/article-pdf.mjs
           python3 scripts/check_site.py _site /history_math
       - name: Browser checks and screenshots
-        run: npm run test:browser && node tests/article-details-browser.mjs
+        run: npm run test:browser && node tests/article-details-browser.mjs && node tests/article-urls-browser.mjs
       - name: Verify root-domain portability
         run: |
           bundle exec jekyll build --baseurl '' --destination _site-domain --trace
@@ -108,6 +109,7 @@ jobs:
           python3 scripts/check_site.py _site-domain ''
           IMAGE_SITE_DIR=_site-domain IMAGE_BASEURL='' node tests/image-delivery-browser.mjs
           ERROR_SITE_DIR=_site-domain ERROR_BASEURL='' node tests/errors-browser.mjs
+          URL_SITE_DIR=_site-domain URL_BASEURL='' node tests/article-urls-browser.mjs
           rm -rf _site-domain
       - name: Save validated PDF cache
         if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'

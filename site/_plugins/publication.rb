@@ -4,6 +4,7 @@ require "json"
 require "cgi"
 require "date"
 require "digest"
+require_relative "article_urls"
 
 module HistoryMath
   PUBLIC_STATUSES = %w[published demo].freeze
@@ -171,6 +172,7 @@ Jekyll::Hooks.register :site, :post_read do |site|
   site.collections.fetch("articles").docs.each { |doc| HistoryMath.validate_article!(doc) }
   site.pages.select! { |page| HistoryMath::PUBLIC_STATUSES.include?(page.data["status"]) }
   site.static_files.select! { |file| file.relative_path.start_with?("/assets/") }
+  HistoryMath.localize_article_urls!(site)
   urls = HistoryMath.visible_documents(site).map(&:url)
   raise Jekyll::Errors::FatalException, "Duplicate public URL" unless urls.uniq == urls
 end

@@ -31,17 +31,17 @@ try {
     await page.goto(`${origin}/ru/`, {waitUntil: 'networkidle'});
     assert.equal(await page.locator('.demo-strip').count(), 0);
     const latest = await page.locator('#latest-cards .card-image').evaluateAll(links => links.map(link => link.getAttribute('href')));
-    assert.deepEqual(latest.slice().sort(), ids.map(id => `/history_math/ru/articles/${id}/`).sort());
+    assert.deepEqual(latest.slice().sort(), ids.map(id => `/history_math/ru/articles/${id}-ru/`).sort());
     assert.equal(await page.locator('.cover-bottom a').getAttribute('href'), '/history_math/ru/materials/');
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false);
     await page.screenshot({path: `test-results/notice-screenshots/russian-home-${width}.png`, fullPage: true});
     await page.goto(`${origin}/`, {waitUntil: 'networkidle'});
-    for (const id of ids) assert.equal(await page.locator(`#latest-cards h3 a[href="/history_math/articles/${id}/"]`).count(), 1);
+    for (const id of ids) assert.equal(await page.locator(`#latest-cards h3 a[href="/history_math/articles/${id}-en/"]`).count(), 1);
     await page.screenshot({path: `test-results/notice-screenshots/home-${width}.png`, fullPage: true});
     for (const id of ids) {
-      assert.equal((await page.goto(`${origin}/articles/${id}/`, {waitUntil: 'networkidle'})).status(), 200);
+      assert.equal((await page.goto(`${origin}/articles/${id}-en/`, {waitUntil: 'networkidle'})).status(), 200);
       assert.equal(await page.locator('html').getAttribute('lang'), 'en');
-      assert.equal(await page.locator('link[rel=canonical]').getAttribute('href'), `https://fuzzy-technologies.github.io/history_math/articles/${id}/`);
+      assert.equal(await page.locator('link[rel=canonical]').getAttribute('href'), `https://fuzzy-technologies.github.io/history_math/articles/${id}-en/`);
       assert.equal(await page.getByText('An English translation of this article is not available yet.', {exact: true}).count(), 1);
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false);
       await page.addScriptTag({path: 'node_modules/axe-core/axe.min.js'});
@@ -49,9 +49,9 @@ try {
       assert.deepEqual(violations.map(item => item.id), []);
       await page.screenshot({path: `test-results/notice-screenshots/${id}-${width}.png`, fullPage: true});
       await page.getByRole('link', {name: 'Read the Russian original'}).click();
-      assert.equal(new URL(page.url()).pathname, `/history_math/ru/articles/${id}/`);
+      assert.equal(new URL(page.url()).pathname, `/history_math/ru/articles/${id}-ru/`);
       await page.getByRole('link', {name: 'English translation status', exact: true}).click();
-      assert.equal(new URL(page.url()).pathname, `/history_math/articles/${id}/`);
+      assert.equal(new URL(page.url()).pathname, `/history_math/articles/${id}-en/`);
     }
     assert.deepEqual(errors, []);
     await page.close();
