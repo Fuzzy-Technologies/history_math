@@ -1,7 +1,11 @@
-export function accessDate(value) {
+export function accessDate(value, language = 'ru') {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return null;
   const date = new Date(value + 'T12:00:00Z');
   if (!Number.isFinite(date.getTime()) || date.toISOString().slice(0, 10) !== value) return null;
+  if (language === 'en') {
+    const months = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'];
+    return `${months[date.getUTCMonth()]} ${date.getUTCDate()}, ${date.getUTCFullYear()}`;
+  }
   return value.split('-').reverse().join('.');
 }
 
@@ -13,7 +17,7 @@ if (typeof document !== 'undefined') {
     const ru = document.documentElement.lang === 'ru';
     if (access) {
       const now = new Date();
-      access.textContent = accessDate(`${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`);
+      access.textContent = accessDate(`${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`, ru ? 'ru' : 'en');
     }
     if (button) {
       button.hidden = false;

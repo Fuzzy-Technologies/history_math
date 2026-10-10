@@ -9,8 +9,27 @@ require "digest"
 require "yaml"
 
 require_relative "../site/_plugins/external_urls"
+require_relative "../site/_plugins/article_details"
 
 class ArticleDetailsTest < Minitest::Test
+  def test_ieee_author_order_limits_and_dates_preserve_verified_names
+    registry = JSON.parse(File.read(File.expand_path("../site/_data/citation_authors.json", __dir__)))
+    site = Struct.new(:data).new({"citation_authors" => registry})
+    filter = Object.new.extend(HistoryMath::CitationFilters)
+    filter.instance_variable_set(:@context, Liquid::Context.new({}, {}, {site: site}))
+    assert_equal "M. F. Gilmullin", filter.citation_authors(["Mansur Gilmullin"], "en")
+    assert_equal "Гильмуллин, М. Ф.", filter.citation_authors(["Мансур Гильмуллин"], "ru")
+    assert_equal "A. Smith and B. Jones", filter.citation_authors(["A. Smith", "B. Jones"], "en")
+    assert_equal "A. Smith, B. Jones, and Research Group", filter.citation_authors(["A. Smith", "B. Jones", "Research Group"], "en")
+    names = (1..6).map { |i| "Author #{i}" }
+    assert_equal "Author 1, Author 2, Author 3, Author 4, Author 5, and Author 6", filter.citation_authors(names, "en")
+    assert_equal "Author 1 et al.", filter.citation_authors(names + ["Author 7"], "en")
+    assert_equal (names + ["Author 7"]).join(", "), filter.citation_authors(names + ["Author 7"], "ru")
+    assert_equal "May 1, 2026", filter.ieee_date("2026-05-01")
+    assert_equal "Sep. 9, 2026", filter.ieee_date(Date.new(2026, 9, 9))
+    assert_raises(Date::Error) { filter.ieee_date("2026-02-30") }
+  end
+
   def test_external_urls_select_verified_locales_without_changing_resources
     filter = Object.new.extend(HistoryMath::ExternalUrls)
     assert_equal "https://fuzzy-technologies.github.io/ru/", filter.external_url("https://fuzzy-technologies.github.io/", "ru")
@@ -66,8 +85,11 @@ class ArticleDetailsTest < Minitest::Test
       assert_includes ru, "Дата публикации: 09.10.2026."
       assert_includes ru, "Дата обновления: 10.10.2026."
       assert_includes ru, "23.08.2023"
-      assert_includes en, "Gilmullin, M. F. (2026, October 10). <em>Matrices and circles</em>."
-      refute_includes en, "data-citation-access"
+      assert_includes en, "Cite this article · IEEE"
+      assert_includes en, "M. F. Gilmullin, “Matrices and circles,” <em>Mathematics with Mansur</em>, Oct. 9, 2026. Accessed:"
+      assert_includes en, "[Online]. Available:"
+      assert_includes en, "data-citation-access>Mon. D, YYYY</span>"
+      refute_includes en, "APA"
       refute_match(/ISSN|DOI|Vol\./, ru + en)
       demo = File.read(File.join(site.dest, "ru/articles/demo-geometry/index.html"))
       refute_includes demo, "data-article-citation"
