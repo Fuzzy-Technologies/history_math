@@ -23,6 +23,12 @@
       "markers_found": 0,
       "nonempty_blocks": 0,
       "summary": "No comment-placement blocks occur in the complete article or announcement. The announcement repeats existing article content. Earlier corrections to the historical record, cryptography claim and painting caption are preserved."
+    },
+    "illustration_update": {
+      "date": "2026-10-10",
+      "requested_by": "Timur Gilmullin (Tim55667757)",
+      "scope": "Owner-requested replacement of figure-01 in both language editions with a text-free historical comic illustration; alt text and provenance updated. Article body, formulas and other figures unchanged. Final publication acceptance remains the owner merge of this PR.",
+      "previous_package_sha256": "5027833b2e45e3e61e29d40a91cee4bad713f91a02131211356ba2ab4f907491"
     }
   },
   "manual_changes": [
@@ -41,7 +47,7 @@
     "status": "approved",
     "reviewed_by": "Timur Gilmullin (Tim55667757)",
     "date": "2026-10-09",
-    "package_sha256": "5027833b2e45e3e61e29d40a91cee4bad713f91a02131211356ba2ab4f907491"
+    "package_sha256": "5e4a08fc9c2e8ce6f8b93b58c4a24a2041a69c0b40fad3610fc71e9217688064"
   },
   "questions": [
     {
