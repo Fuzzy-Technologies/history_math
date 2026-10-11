@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-875844cab133/poceluj-po-raschyotu-formula-01.png": {
+    "sha256": "195bae6d601a4b0c412ee2938eaaf3f4ddac37ecf6f9386f48cb33d06bc1156e",
+    "width": 3641,
+    "height": 5003,
+    "bytes": 13056296,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-875844cab133/poceluj-po-raschyotu-formula-01.png-960.webp",
+        "width": 960,
+        "height": 1319,
+        "sha256": "d4f4be706874131a6c2b48832344bf376c846b3c76a34170e77954c5b71fa3ed",
+        "bytes": 522254
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-875844cab133-poceluj-po-raschyotu-formula-01-195bae6d601a4b0c412ee2938eaaf3f4ddac37ecf6f9386f48cb33d06bc1156e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630499822",
+      "asset_id": 630499822,
+      "release_tag": "article-originals-1",
+      "sha256": "195bae6d601a4b0c412ee2938eaaf3f4ddac37ecf6f9386f48cb33d06bc1156e",
+      "bytes": 13056296
+    }
+  },
+  "/assets/images/hm-tt-875844cab133/poceluj-po-raschyotu-formula-02.png": {
+    "sha256": "ec96235857289587db321bb6337972e4621a98351b987ac9e2c59a8db49a1495",
+    "width": 752,
+    "height": 752,
+    "bytes": 74534,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-875844cab133/poceluj-po-raschyotu-formula-02.png-752.webp",
+        "width": 752,
+        "height": 752,
+        "sha256": "923c346cb7c6148cedee13f15cb5ad8332288a9b843a7f34bbe8853c9fcd19b4",
+        "bytes": 38750
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-875844cab133-poceluj-po-raschyotu-formula-02-ec96235857289587db321bb6337972e4621a98351b987ac9e2c59a8db49a1495.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539652",
+      "asset_id": 630539652,
+      "release_tag": "article-originals-e",
+      "sha256": "ec96235857289587db321bb6337972e4621a98351b987ac9e2c59a8db49a1495",
+      "bytes": 74534
+    }
+  },
+  "/assets/images/hm-tt-875844cab133/poceluj-po-raschyotu-formula-03.png": {
+    "sha256": "84da9dd6ce03752efeb61350edc612ac3628116950c4adf4b03ae27236240ae9",
+    "width": 790,
+    "height": 972,
+    "bytes": 109174,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-875844cab133/poceluj-po-raschyotu-formula-03.png-790.webp",
+        "width": 790,
+        "height": 972,
+        "sha256": "c7d24a07b185a9ad17153f2f5801d80f4fcf949b88207d3931dd276ae66a299d",
+        "bytes": 54160
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-875844cab133-poceluj-po-raschyotu-formula-03-84da9dd6ce03752efeb61350edc612ac3628116950c4adf4b03ae27236240ae9.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539812",
+      "asset_id": 630539812,
+      "release_tag": "article-originals-8",
+      "sha256": "84da9dd6ce03752efeb61350edc612ac3628116950c4adf4b03ae27236240ae9",
+      "bytes": 109174
+    }
+  }
+}

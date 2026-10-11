@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-875844cab133-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-soddy-signed-curvature",
+      "question": "Please review the sign convention: a negative curvature belongs to the enclosing circle in the oriented configuration, rather than to every circle involved in internal tangency. The source explanation is retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "en-soddy-poem-text",
+      "question": "The supplied English stanza says “This not so”, while the familiar published text says “This is not so”. Please compare the transcription with the 1936 Nature original before authorising a correction. The supplied text is retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-08-31",
+      "url": "https://teletype.in/@history_math/Poceluj-po-raschyotu-formula-Dekarta-Soddi-08-31"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
