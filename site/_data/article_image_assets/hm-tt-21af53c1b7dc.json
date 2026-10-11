@@ -1,0 +1,52 @@
+{
+  "/assets/images/hm-tt-21af53c1b7dc/magomet-sign-01.png": {
+    "sha256": "fd50b4b6ce7f132ec824d635eae266d6c1bb6f82960102fbfed4d62e4a5b0b4c",
+    "width": 800,
+    "height": 450,
+    "bytes": 51993,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-21af53c1b7dc/magomet-sign-01.png-800.webp",
+        "width": 800,
+        "height": 450,
+        "sha256": "25bbb19216f47f16b229ec27f88bc17aca5e81924c47e6a03b2c5674d7c79d0d",
+        "bytes": 26100
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-21af53c1b7dc-magomet-sign-01-fd50b4b6ce7f132ec824d635eae266d6c1bb6f82960102fbfed4d62e4a5b0b4c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630494159",
+      "asset_id": 630494159,
+      "release_tag": "article-originals-f",
+      "sha256": "fd50b4b6ce7f132ec824d635eae266d6c1bb6f82960102fbfed4d62e4a5b0b4c",
+      "bytes": 51993
+    }
+  },
+  "/assets/images/hm-tt-21af53c1b7dc/magomet-sign-02.png": {
+    "sha256": "d4dbef37ea46eb0b1350e03e8c1be052d773ec06aa451034d21ff834c8dda0c4",
+    "width": 953,
+    "height": 749,
+    "bytes": 204652,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-21af53c1b7dc/magomet-sign-02.png-953.webp",
+        "width": 953,
+        "height": 749,
+        "sha256": "a8488ed28afe245d268f6e1f5bf36abd268ed79414d7eb481b785411ce39cf9d",
+        "bytes": 120764
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-21af53c1b7dc-magomet-sign-02-d4dbef37ea46eb0b1350e03e8c1be052d773ec06aa451034d21ff834c8dda0c4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630531771",
+      "asset_id": 630531771,
+      "release_tag": "article-originals-d",
+      "sha256": "d4dbef37ea46eb0b1350e03e8c1be052d773ec06aa451034d21ff834c8dda0c4",
+      "bytes": 204652
+    }
+  }
+}
