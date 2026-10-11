@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-63702bd7e0b1-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-egypt-1",
+      "question": "Confirm the source's fifth-millennium BCE date for a 365-day calendar and its statement that Egyptian mathematics changed little after the two papyri were compiled. Both are preserved as source claims.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-egypt-2",
+      "question": "Confirm the Moscow Papyrus's stated decipherment date of 1927 and the attribution to B. A. Turayev and V. V. Struve. The English retains the supplied date and names.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-07-14",
+      "url": "https://teletype.in/@history_math/Matematika-Drevnego-Egipta-07-14"
+    }
+  }
+}
