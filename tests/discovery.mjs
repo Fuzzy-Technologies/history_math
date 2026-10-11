@@ -10,7 +10,7 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
   const upgradeErrors = [];
   upgradePage.on('pageerror', error => upgradeErrors.push(error.message));
   upgradePage.on('request', request => {
-    if (/\/(core|select|reading-position)\.js$/.test(new URL(request.url()).pathname)) dependencyURLs.push(request.url());
+    if (/\/(core|select|reading-position|original-image)\.js$/.test(new URL(request.url()).pathname)) dependencyURLs.push(request.url());
   });
   // Simulate a still-fresh cached core module from the previous deployment.
   await upgrade.route(url => url.pathname.endsWith('/core.js') && !url.search, route => route.fulfill({
@@ -22,7 +22,7 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
   assert.equal(await upgradePage.locator('.theme-toggle').isVisible(), true);
   const version = new URL(await upgradePage.locator('script[src*="/app.js"]').getAttribute('src'), base).search;
   assert.ok(version.startsWith('?v='));
-  assert.equal(dependencyURLs.length, 3);
+  assert.equal(dependencyURLs.length, 4);
   assert.ok(dependencyURLs.every(url => new URL(url).search === version));
   assert.deepEqual(upgradeErrors, []);
   await upgrade.close();
