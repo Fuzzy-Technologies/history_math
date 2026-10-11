@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-456381a4a8c6-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "greek-star-spelling",
+      "question": "The source spells the Greek word for star αδτρον. Is this a transcription error for ἄστρον? The original spelling is retained pending an authorized correction.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "stereographic-exception",
+      "question": "The source says stereographic projection maps circles on the sphere to circles in the plane without mentioning circles through the projection point. Should that statement be qualified? The original formulation is retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-04",
+      "url": "https://teletype.in/@history_math/Astrolyabiya-09-04"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
