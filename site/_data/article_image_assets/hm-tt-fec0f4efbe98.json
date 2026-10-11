@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-fec0f4efbe98/bernulli-iogann-16671748-01-01.png": {
+    "sha256": "2b9f3ef0480505d6fa92f1fed2b1829176bff02c40a7c32267c936cff0fc0eef",
+    "width": 2270,
+    "height": 3485,
+    "bytes": 20248361,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-fec0f4efbe98/bernulli-iogann-16671748-01-01.png-960.webp",
+        "width": 960,
+        "height": 1474,
+        "sha256": "824494a34a2a18184e1626537c46bed9e32f5cbdd191408d6a87794d668bbff0",
+        "bytes": 2055132
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-fec0f4efbe98-bernulli-iogann-16671748-01-01-2b9f3ef0480505d6fa92f1fed2b1829176bff02c40a7c32267c936cff0fc0eef.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630501211",
+      "asset_id": 630501211,
+      "release_tag": "article-originals-2",
+      "sha256": "2b9f3ef0480505d6fa92f1fed2b1829176bff02c40a7c32267c936cff0fc0eef",
+      "bytes": 20248361
+    }
+  },
+  "/assets/images/hm-tt-fec0f4efbe98/bernulli-iogann-16671748-01-02.png": {
+    "sha256": "32b7d894b192338346baa57d1aa32c2fab649b14b20215aed730d5a0b4b24ce9",
+    "width": 1292,
+    "height": 1826,
+    "bytes": 4884287,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-fec0f4efbe98/bernulli-iogann-16671748-01-02.png-960.webp",
+        "width": 960,
+        "height": 1357,
+        "sha256": "530180f6750d908f3391b39f7942fc47b5564bcb980337b27e0b1be8f7d6d8ba",
+        "bytes": 1438740
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-fec0f4efbe98-bernulli-iogann-16671748-01-02-32b7d894b192338346baa57d1aa32c2fab649b14b20215aed730d5a0b4b24ce9.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553127",
+      "asset_id": 630553127,
+      "release_tag": "article-originals-3",
+      "sha256": "32b7d894b192338346baa57d1aa32c2fab649b14b20215aed730d5a0b4b24ce9",
+      "bytes": 4884287
+    }
+  },
+  "/assets/images/hm-tt-fec0f4efbe98/bernulli-iogann-16671748-01-03.png": {
+    "sha256": "9df8cdd275e0e0979baf71edb4194ab70b4d5d43aad155adee2b3e1ffad3d410",
+    "width": 2316,
+    "height": 1010,
+    "bytes": 5090722,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-fec0f4efbe98/bernulli-iogann-16671748-01-03.png-960.webp",
+        "width": 960,
+        "height": 419,
+        "sha256": "91992a25b28e4f87c88277392604fc74842a5a05aed091d0f24ce3d42ce5a770",
+        "bytes": 484478
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-fec0f4efbe98-bernulli-iogann-16671748-01-03-9df8cdd275e0e0979baf71edb4194ab70b4d5d43aad155adee2b3e1ffad3d410.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553279",
+      "asset_id": 630553279,
+      "release_tag": "article-originals-9",
+      "sha256": "9df8cdd275e0e0979baf71edb4194ab70b4d5d43aad155adee2b3e1ffad3d410",
+      "bytes": 5090722
+    }
+  },
+  "/assets/images/hm-tt-fec0f4efbe98/bernulli-iogann-16671748-01-04.gif": {
+    "sha256": "dc710030e0a70adfc5b49886066c199cef10383f624ae9cf5cdb0314a124d935",
+    "width": 488,
+    "height": 203,
+    "bytes": 25735,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-fec0f4efbe98/bernulli-iogann-16671748-01-04.gif-488.webp",
+        "width": 488,
+        "height": 203,
+        "sha256": "1629d0d7c6dbdded9adcba326a412dd227370fa96575d6e1edc47e667f632ddd",
+        "bytes": 17458
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-fec0f4efbe98-bernulli-iogann-16671748-01-04-dc710030e0a70adfc5b49886066c199cef10383f624ae9cf5cdb0314a124d935.gif",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553413",
+      "asset_id": 630553413,
+      "release_tag": "article-originals-d",
+      "sha256": "dc710030e0a70adfc5b49886066c199cef10383f624ae9cf5cdb0314a124d935",
+      "bytes": 25735
+    }
+  },
+  "/assets/images/hm-tt-fec0f4efbe98/bernulli-iogann-16671748-01-05.gif": {
+    "sha256": "115ceb4548f7b2fcf50eb00f80872b2c5d6cb12f971d196937bbc630e494795e",
+    "width": 400,
+    "height": 200,
+    "bytes": 67477,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-fec0f4efbe98/bernulli-iogann-16671748-01-05.gif-400.webp",
+        "width": 400,
+        "height": 200,
+        "sha256": "17f7f5091a74c73b3be26d3f3b0bd8b2c038b6730e2a35705fcf60d698d14269",
+        "bytes": 76486
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-fec0f4efbe98-bernulli-iogann-16671748-01-05-115ceb4548f7b2fcf50eb00f80872b2c5d6cb12f971d196937bbc630e494795e.gif",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553561",
+      "asset_id": 630553561,
+      "release_tag": "article-originals-1",
+      "sha256": "115ceb4548f7b2fcf50eb00f80872b2c5d6cb12f971d196937bbc630e494795e",
+      "bytes": 67477
+    }
+  },
+  "/assets/images/hm-tt-fec0f4efbe98/bernulli-iogann-16671748-01-06.png": {
+    "sha256": "f7a8fd3aed935566b09996db8b963ddf66f537da948cdef4ca64ef975a63fe6d",
+    "width": 1500,
+    "height": 2076,
+    "bytes": 8729407,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-fec0f4efbe98/bernulli-iogann-16671748-01-06.png-960.webp",
+        "width": 960,
+        "height": 1329,
+        "sha256": "5267819e64ef0034dcff4f4f95cf164c43c8748c81629848215c3ae83b456920",
+        "bytes": 1864188
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-fec0f4efbe98-bernulli-iogann-16671748-01-06-f7a8fd3aed935566b09996db8b963ddf66f537da948cdef4ca64ef975a63fe6d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553692",
+      "asset_id": 630553692,
+      "release_tag": "article-originals-f",
+      "sha256": "f7a8fd3aed935566b09996db8b963ddf66f537da948cdef4ca64ef975a63fe6d",
+      "bytes": 8729407
+    }
+  }
+}
