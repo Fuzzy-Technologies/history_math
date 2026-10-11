@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-0a8e3e9ac2f8/magnitsky-arithmetic-01.jpeg": {
+    "sha256": "3777c04b3f6178426c00b4f5a89e938797289dd3249c4592c3a405c154420774",
+    "width": 1879,
+    "height": 837,
+    "bytes": 331687,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-0a8e3e9ac2f8/magnitsky-arithmetic-01.jpeg-960.webp",
+        "width": 960,
+        "height": 428,
+        "sha256": "77af5fce4fadc8d4f0dded67f01bf4168c45f3f1c0a9ca3ef697daa255469e77",
+        "bytes": 369620
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-0a8e3e9ac2f8-magnitsky-arithmetic-01-3777c04b3f6178426c00b4f5a89e938797289dd3249c4592c3a405c154420774.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630495788",
+      "asset_id": 630495788,
+      "release_tag": "article-originals-3",
+      "sha256": "3777c04b3f6178426c00b4f5a89e938797289dd3249c4592c3a405c154420774",
+      "bytes": 331687
+    }
+  },
+  "/assets/images/hm-tt-0a8e3e9ac2f8/magnitsky-arithmetic-02.png": {
+    "sha256": "1c2e71bac18c60d641d02c6051f8e0ab9bce5b2ad8fc23189f3a86aa25ccdc0b",
+    "width": 2632,
+    "height": 1964,
+    "bytes": 3575268,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-0a8e3e9ac2f8/magnitsky-arithmetic-02.png-960.webp",
+        "width": 960,
+        "height": 716,
+        "sha256": "681eae59ab0f1a3e1a386a17a96462ca3fed88d86ab6e41cb8def37bb6e3b8f1",
+        "bytes": 438874
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-0a8e3e9ac2f8-magnitsky-arithmetic-02-1c2e71bac18c60d641d02c6051f8e0ab9bce5b2ad8fc23189f3a86aa25ccdc0b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630535686",
+      "asset_id": 630535686,
+      "release_tag": "article-originals-1",
+      "sha256": "1c2e71bac18c60d641d02c6051f8e0ab9bce5b2ad8fc23189f3a86aa25ccdc0b",
+      "bytes": 3575268
+    }
+  },
+  "/assets/images/hm-tt-0a8e3e9ac2f8/magnitsky-arithmetic-03.png": {
+    "sha256": "09d10d2660e91f6d267962aea5b841eae3174f163c030d565a9cca3a98bc0671",
+    "width": 2812,
+    "height": 1810,
+    "bytes": 3433312,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-0a8e3e9ac2f8/magnitsky-arithmetic-03.png-960.webp",
+        "width": 960,
+        "height": 618,
+        "sha256": "5691fe89975c8339a382cd904794e92378338bcf830ff7eea0cb865303d5c3c0",
+        "bytes": 343034
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-0a8e3e9ac2f8-magnitsky-arithmetic-03-09d10d2660e91f6d267962aea5b841eae3174f163c030d565a9cca3a98bc0671.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630535936",
+      "asset_id": 630535936,
+      "release_tag": "article-originals-0",
+      "sha256": "09d10d2660e91f6d267962aea5b841eae3174f163c030d565a9cca3a98bc0671",
+      "bytes": 3433312
+    }
+  }
+}
