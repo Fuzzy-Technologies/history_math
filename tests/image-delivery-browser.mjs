@@ -34,14 +34,21 @@ const report = [];
 await mkdir('test-results/image-delivery', {recursive: true});
 let checkedDownload = false;
 let checkedCrossOriginDownload = false;
+const externalURLs = new Set(Object.values(inventory).flatMap(entry => entry.external_original ?
+  [entry.external_original.url, entry.external_original.api_url] : []));
+const originalRasterRequests = requests => requests.filter(url => !url.includes('/assets/images/previews/') && /\.(png|jpe?g)$/i.test(url));
 try {
   for (const width of [390, 1440]) for (const path of pages) {
     const context = await browser.newContext({viewport: {width, height: 1000}, reducedMotion: 'reduce',
       colorScheme: width === 390 ? 'dark' : 'light'});
     const page = await context.newPage();
     const requests = [];
+    const allRequests = [];
     const failures = [];
-    page.on('request', request => { if (request.resourceType() === 'image') requests.push(new URL(request.url()).pathname); });
+    page.on('request', request => {
+      allRequests.push(request.url());
+      if (request.resourceType() === 'image') requests.push(new URL(request.url()).pathname);
+    });
     page.on('pageerror', error => failures.push(error.message));
     page.on('response', response => { if (response.status() >= 400) failures.push(`${response.status()} ${response.url()}`); });
     await page.goto(origin + base + path, {waitUntil: 'networkidle'});
@@ -51,16 +58,17 @@ try {
       await Promise.all(images.map(img => img.decode()));
     });
     assert.deepEqual(failures, [], path);
-    assert.deepEqual(requests.filter(url => /\.(png|jpe?g)$/i.test(url)), [], `Original fetched before zoom: ${path}`);
+    assert.deepEqual(originalRasterRequests(requests), [], `Original fetched before zoom: ${path}`);
+    assert.deepEqual(allRequests.filter(url => externalURLs.has(url)), [], `External original fetched before zoom: ${path}`);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false, path);
     for (const image of await page.locator('.article-body img[data-original]').all()) {
-      const identity = (await image.getAttribute('data-original')).slice(base.length);
+      const identity = await image.getAttribute('data-original-path');
       const bounds = await image.boundingBox();
       assert.ok(bounds.width <= inventory[identity].width + 2, 'Small originals must not be upscaled by responsive sizing');
       assert.ok(bounds.height <= inventory[identity].height + 2);
     }
-    const originalPaths = await page.locator('img[data-original]').evaluateAll(images => [...new Set(images.map(img => img.dataset.original))]);
-    const originalBytes = originalPaths.reduce((sum, url) => sum + inventory[url.slice(base.length)].bytes, 0);
+    const originalPaths = await page.locator('img[data-original]').evaluateAll(images => [...new Set(images.map(img => img.dataset.originalPath))]);
+    const originalBytes = originalPaths.reduce((sum, identity) => sum + inventory[identity].bytes, 0);
     const readingBytes = (await Promise.all([...new Set(requests)].map(async url => (await stat(root + url.slice(base.length))).size))).reduce((a, b) => a + b, 0);
     if (path.includes('about/')) {
       const russian = path.startsWith('/ru/');
@@ -73,25 +81,35 @@ try {
     const trigger = page.locator('.image-trigger:has(img[data-original])').first();
     if (await trigger.count()) {
       const original = await trigger.locator('img').getAttribute('data-original');
+      const identity = await trigger.locator('img').getAttribute('data-original-path');
+      const external = inventory[identity].external_original;
       await trigger.click();
+      await page.waitForFunction(() => document.querySelector('#image-viewer').getAttribute('aria-busy') === 'false');
       await page.locator('.viewer-canvas img').evaluate(img => img.decode());
-      assert.equal(await page.locator('.viewer-canvas img').getAttribute('src'), original);
-      assert.deepEqual([...new Set(requests.filter(url => /\.(png|jpe?g)$/i.test(url)))], [original]);
+      if (external) {
+        assert.equal(await page.locator('.viewer-canvas img').getAttribute('src'), external.url);
+        assert.ok(allRequests.some(url => url === external.url));
+        assert.ok(!allRequests.some(url => url === external.api_url), 'Native delivery must not depend on API CORS');
+        assert.deepEqual([...new Set(originalRasterRequests(requests))], [new URL(external.url).pathname]);
+      } else {
+        assert.equal(await page.locator('.viewer-canvas img').getAttribute('src'), original);
+        assert.deepEqual([...new Set(originalRasterRequests(requests))], [new URL(original, origin).pathname]);
+      }
       const download = page.locator('[data-viewer-download]');
-      assert.equal(await download.getAttribute('href'), origin + original);
+      assert.equal(await download.getAttribute('href'), new URL(original, origin).href);
       if (!checkedDownload) {
         const [file] = await Promise.all([page.waitForEvent('download'), download.click()]);
         const bytes = await readFile(await file.path());
-        assert.equal(createHash('sha256').update(bytes).digest('hex'), inventory[original.slice(base.length)].sha256);
+        assert.equal(createHash('sha256').update(bytes).digest('hex'), inventory[identity].sha256);
         checkedDownload = true;
       }
       await page.keyboard.press('Escape');
       await page.waitForFunction(() => !document.documentElement.classList.contains('viewer-open'));
       assert.equal(await trigger.evaluate(node => document.activeElement === node), true);
       assert.equal(await download.getAttribute('href'), null);
-      if (!checkedCrossOriginDownload) {
-        const source = inventory[original.slice(base.length)];
-        const bytes = await readFile(resolve('site', '.' + original.slice(base.length)));
+      if (!checkedCrossOriginDownload && !external) {
+        const source = inventory[identity];
+        const bytes = await readFile(resolve('site', '.' + identity));
         const remote = `https://raw.githubusercontent.com/Fuzzy-Technologies/history_math/${'a'.repeat(40)}/site/assets/images/hm-tt-abc/original.png`;
         let fetched = 0;
         await page.route(remote, route => {
@@ -101,6 +119,7 @@ try {
         await trigger.locator('img').evaluate((img, url) => { img.dataset.original = url; }, remote);
         assert.equal(fetched, 0);
         await trigger.click();
+        await page.waitForFunction(() => document.querySelector('#image-viewer').getAttribute('aria-busy') === 'false');
         await page.locator('.viewer-canvas img').evaluate(img => img.decode());
         assert.ok(fetched >= 1);
         const [file] = await Promise.all([page.waitForEvent('download'), download.click()]);
