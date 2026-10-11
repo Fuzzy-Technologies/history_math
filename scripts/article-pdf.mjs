@@ -31,7 +31,7 @@ export function printImageSources(html) {
     if (!original) return tag;
     // Migrated print pages use the largest losslessly encoded reading variant.
     // Keep PDF generation deterministic and local even when zoom uses GitHub.
-    if (/\/assets\/images\/hm-tt-[a-z0-9]+\//.test(original[1])) {
+    if (/\sdata-original-api="[^"]+"/.test(tag) || /\/assets\/images\/hm-tt-[a-z0-9]+\//.test(original[1])) {
       return tag.replace(/\s(?:srcset|sizes)="[^"]*"/g, '');
     }
     return tag.replace(/\ssrc="[^"]*"/, () => ` src="${original[1]}"`)
@@ -150,7 +150,7 @@ export async function buildPdfs(siteDirectory, {cacheDirectory = '.pdf-cache', f
               if (new URL(img.src).pathname.endsWith('.svg') && !img.closest('.print-masthead')) continue;
               const bounds = img.getBoundingClientRect();
               const ratio = Math.min(1, Math.max(bounds.width * 2.5 / img.naturalWidth, bounds.height * 2.5 / img.naturalHeight));
-              const migrated = img.dataset.original?.includes('/assets/images/hm-tt-');
+              const migrated = Boolean(img.dataset.originalApi) || img.dataset.original?.includes('/assets/images/hm-tt-');
               // Encode migrated print rasters with the existing print JPEG profile,
               // even when a reading-sized variant needs no further downsampling.
               if (ratio >= 1 && !migrated) continue;
