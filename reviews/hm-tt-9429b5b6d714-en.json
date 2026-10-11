@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-9429b5b6d714-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-ruler-laser",
+      "question": "Please verify the source’s general claim that digital ruler applications on many smartphones or tablets work through a built-in laser rangefinder. The source explanation is retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "en-ruler-russian-production",
+      "question": "Please verify the claim that domestic ruler production in Russia began only in 1899 at Mendeleev’s initiative. The dates and attribution are retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-02-11",
+      "url": "https://teletype.in/@history_math/Linejka-02-11"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
