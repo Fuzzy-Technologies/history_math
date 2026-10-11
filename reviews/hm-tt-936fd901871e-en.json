@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-936fd901871e-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source dates Gödel’s incompleteness theorems to 1930 and gives abbreviated hypotheses for both theorems. Confirm whether this refers to announcement or publication and whether the hypotheses should be qualified; the source wording is retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 7,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-22",
+      "url": "https://teletype.in/@history_math/Krizisy-v-razvitii-matematiki-11-22"
+    }
+  }
+}
