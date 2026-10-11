@@ -1,0 +1,227 @@
+{
+  "/assets/images/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-01.png": {
+    "sha256": "f63f0c218bbd01febfee85cd89e739941733a44eed1ace844b94ba127d728aaa",
+    "width": 600,
+    "height": 600,
+    "bytes": 318316,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-01.png-600.webp",
+        "width": 600,
+        "height": 600,
+        "sha256": "93717cd9a8e2c610d87c71aa98862738622e0f83aaff73a260898e3f37d292af",
+        "bytes": 161404
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-8d623845d7d5-kak-ya-prishyol-v-matematiku-01-f63f0c218bbd01febfee85cd89e739941733a44eed1ace844b94ba127d728aaa.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563340",
+      "asset_id": 630563340,
+      "release_tag": "article-originals-f",
+      "sha256": "f63f0c218bbd01febfee85cd89e739941733a44eed1ace844b94ba127d728aaa",
+      "bytes": 318316
+    }
+  },
+  "/assets/images/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-02.png": {
+    "sha256": "fe5286ff72f0f415bf7940bd974d59963dd948d76b308ce33c55ca45595a531a",
+    "width": 2922,
+    "height": 2191,
+    "bytes": 11690585,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-02.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "f6c2dd6e6550f11d220095b9c03e0ff8880336fdbe85f21d49d469e734392a5d",
+        "bytes": 713288
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-8d623845d7d5-kak-ya-prishyol-v-matematiku-02-fe5286ff72f0f415bf7940bd974d59963dd948d76b308ce33c55ca45595a531a.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563524",
+      "asset_id": 630563524,
+      "release_tag": "article-originals-f",
+      "sha256": "fe5286ff72f0f415bf7940bd974d59963dd948d76b308ce33c55ca45595a531a",
+      "bytes": 11690585
+    }
+  },
+  "/assets/images/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-03.png": {
+    "sha256": "c94ea29033a37c1c8cb05f1094b01a9164590cab921529cf7fd5e526ca3674db",
+    "width": 1892,
+    "height": 2523,
+    "bytes": 6473462,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-03.png-960.webp",
+        "width": 960,
+        "height": 1280,
+        "sha256": "b8cc8f8a46217280948ad8aa721fd388d590954cc243f54d44dbea155d645548",
+        "bytes": 984410
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-8d623845d7d5-kak-ya-prishyol-v-matematiku-03-c94ea29033a37c1c8cb05f1094b01a9164590cab921529cf7fd5e526ca3674db.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563641",
+      "asset_id": 630563641,
+      "release_tag": "article-originals-c",
+      "sha256": "c94ea29033a37c1c8cb05f1094b01a9164590cab921529cf7fd5e526ca3674db",
+      "bytes": 6473462
+    }
+  },
+  "/assets/images/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-04.png": {
+    "sha256": "b1e94cead97489e6cf3217107873b6cbbe89047ec95887bba6438217d5050436",
+    "width": 3391,
+    "height": 2542,
+    "bytes": 20138395,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-04.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "652d9911cfe1115d78b3390dc32e14ce1d8c9e40a29ae10eaafc1a8e3146041d",
+        "bytes": 882196
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-8d623845d7d5-kak-ya-prishyol-v-matematiku-04-b1e94cead97489e6cf3217107873b6cbbe89047ec95887bba6438217d5050436.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563819",
+      "asset_id": 630563819,
+      "release_tag": "article-originals-b",
+      "sha256": "b1e94cead97489e6cf3217107873b6cbbe89047ec95887bba6438217d5050436",
+      "bytes": 20138395
+    }
+  },
+  "/assets/images/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-05.png": {
+    "sha256": "deb2c77818ca8c6e915173d9f8d0beb1ee45f83399f51b893223514048452cb8",
+    "width": 3157,
+    "height": 2368,
+    "bytes": 10266982,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-05.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "1ce67ad0900c46dd6179e34173f4b4780602ecc8d54a3e8ccf02dfd5a05f8923",
+        "bytes": 599400
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-8d623845d7d5-kak-ya-prishyol-v-matematiku-05-deb2c77818ca8c6e915173d9f8d0beb1ee45f83399f51b893223514048452cb8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563996",
+      "asset_id": 630563996,
+      "release_tag": "article-originals-d",
+      "sha256": "deb2c77818ca8c6e915173d9f8d0beb1ee45f83399f51b893223514048452cb8",
+      "bytes": 10266982
+    }
+  },
+  "/assets/images/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-06.png": {
+    "sha256": "ef992c5c3119cccadd7430800d9092246ddd7b78394a9a61de92106b4ebd5eeb",
+    "width": 458,
+    "height": 297,
+    "bytes": 369017,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-06.png-458.webp",
+        "width": 458,
+        "height": 297,
+        "sha256": "e0f3910a287246b207c3591ef60fa2d123099ec952e8765877c28abed4a2b2f3",
+        "bytes": 188578
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-8d623845d7d5-kak-ya-prishyol-v-matematiku-06-ef992c5c3119cccadd7430800d9092246ddd7b78394a9a61de92106b4ebd5eeb.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630564145",
+      "asset_id": 630564145,
+      "release_tag": "article-originals-e",
+      "sha256": "ef992c5c3119cccadd7430800d9092246ddd7b78394a9a61de92106b4ebd5eeb",
+      "bytes": 369017
+    }
+  },
+  "/assets/images/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-07.png": {
+    "sha256": "19ff719fc97d738d168e70b7612ba68e7a5aa6141f66d39d2b1b3f17a9aff7a2",
+    "width": 3120,
+    "height": 4160,
+    "bytes": 23749212,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-07.png-960.webp",
+        "width": 960,
+        "height": 1280,
+        "sha256": "22360fec02864e86f9bece21a41bf04a52e8685a77d9b536fc48e8b389318d25",
+        "bytes": 1265096
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-8d623845d7d5-kak-ya-prishyol-v-matematiku-07-19ff719fc97d738d168e70b7612ba68e7a5aa6141f66d39d2b1b3f17a9aff7a2.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630564303",
+      "asset_id": 630564303,
+      "release_tag": "article-originals-1",
+      "sha256": "19ff719fc97d738d168e70b7612ba68e7a5aa6141f66d39d2b1b3f17a9aff7a2",
+      "bytes": 23749212
+    }
+  },
+  "/assets/images/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-08.png": {
+    "sha256": "b5190725beb8a9e2e6a12768f1178050a61ee80db0aed95ac7b9ba7fa9ac726f",
+    "width": 1280,
+    "height": 960,
+    "bytes": 1752246,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-08.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "80a9ee76ffcc147bb786dc6e0c791fb2500a59b967d930cb59110a26d99bf547",
+        "bytes": 530924
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-8d623845d7d5-kak-ya-prishyol-v-matematiku-08-b5190725beb8a9e2e6a12768f1178050a61ee80db0aed95ac7b9ba7fa9ac726f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630564482",
+      "asset_id": 630564482,
+      "release_tag": "article-originals-b",
+      "sha256": "b5190725beb8a9e2e6a12768f1178050a61ee80db0aed95ac7b9ba7fa9ac726f",
+      "bytes": 1752246
+    }
+  },
+  "/assets/images/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-09.png": {
+    "sha256": "242e8191fab24a372a597c8dfe5f18009d7f7266df7af46338fab01ed18be6d7",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 1240213,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-09-png-reading-960-e358c9aba034.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "e358c9aba0349f92068e1d1ffb6f99bec9439b242f80b74ae54b7373a1ebc706",
+        "bytes": 637560
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-8d623845d7d5-kak-ya-prishyol-v-matematiku-09-242e8191fab24a372a597c8dfe5f18009d7f7266df7af46338fab01ed18be6d7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630564625",
+      "asset_id": 630564625,
+      "release_tag": "article-originals-2",
+      "sha256": "242e8191fab24a372a597c8dfe5f18009d7f7266df7af46338fab01ed18be6d7",
+      "bytes": 1240213
+    }
+  }
+}
