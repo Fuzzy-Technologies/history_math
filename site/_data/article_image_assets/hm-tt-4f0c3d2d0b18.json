@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-4f0c3d2d0b18/john-horton-conway-01.png": {
+    "sha256": "b12b470cdc3532fb95c6827e739d07faea68a44fe48102998955670e8926f58b",
+    "width": 1920,
+    "height": 2650,
+    "bytes": 3152982,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4f0c3d2d0b18/john-horton-conway-01-png-reading-960-315a458f743c.webp",
+        "width": 960,
+        "height": 1325,
+        "sha256": "315a458f743cf4b34ed793465dc23bc674fbd9fcaf7c1c60be856b244ef39e9e",
+        "bytes": 551088
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-4f0c3d2d0b18-john-horton-conway-01-b12b470cdc3532fb95c6827e739d07faea68a44fe48102998955670e8926f58b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630495042",
+      "asset_id": 630495042,
+      "release_tag": "article-originals-b",
+      "sha256": "b12b470cdc3532fb95c6827e739d07faea68a44fe48102998955670e8926f58b",
+      "bytes": 3152982
+    }
+  },
+  "/assets/images/hm-tt-4f0c3d2d0b18/john-horton-conway-02.png": {
+    "sha256": "2ef6b618ea3c778dfd4f704e02e63edeaa87ab07ab1cb41cf443cac7945ba424",
+    "width": 667,
+    "height": 563,
+    "bytes": 55713,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4f0c3d2d0b18/john-horton-conway-02.png-667.webp",
+        "width": 667,
+        "height": 563,
+        "sha256": "d3fc358d84aeb6e1f4e7346222f9a88df0ddd4c339609dfa0a655a14369e54a7",
+        "bytes": 33480
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-4f0c3d2d0b18-john-horton-conway-02-2ef6b618ea3c778dfd4f704e02e63edeaa87ab07ab1cb41cf443cac7945ba424.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539134",
+      "asset_id": 630539134,
+      "release_tag": "article-originals-2",
+      "sha256": "2ef6b618ea3c778dfd4f704e02e63edeaa87ab07ab1cb41cf443cac7945ba424",
+      "bytes": 55713
+    }
+  },
+  "/assets/images/hm-tt-4f0c3d2d0b18/john-horton-conway-03.gif": {
+    "sha256": "e8e0ae4d36217a917f4a076b892cb76d99a59f68aa1cfabd33685dccf8365586",
+    "width": 600,
+    "height": 450,
+    "bytes": 4523046,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4f0c3d2d0b18/john-horton-conway-03-gif-reading-600-3b9a3b25b5a8.webp",
+        "width": 600,
+        "height": 450,
+        "sha256": "3b9a3b25b5a8c74ce076d49b8e463a1d4cf05e6caacb28ae16a08267e74788fb",
+        "bytes": 2559398
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-4f0c3d2d0b18-john-horton-conway-03-e8e0ae4d36217a917f4a076b892cb76d99a59f68aa1cfabd33685dccf8365586.gif",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539334",
+      "asset_id": 630539334,
+      "release_tag": "article-originals-e",
+      "sha256": "e8e0ae4d36217a917f4a076b892cb76d99a59f68aa1cfabd33685dccf8365586",
+      "bytes": 4523046
+    }
+  },
+  "/assets/images/hm-tt-4f0c3d2d0b18/john-horton-conway-04.jpeg": {
+    "sha256": "2a41867f05f267d75bae9bd508d01abc9e58a0bba56ae7d8192950a6cd951817",
+    "width": 410,
+    "height": 307,
+    "bytes": 34152,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4f0c3d2d0b18/john-horton-conway-04-410.jpeg",
+        "width": 410,
+        "height": 307,
+        "bytes": 34152,
+        "sha256": "2a41867f05f267d75bae9bd508d01abc9e58a0bba56ae7d8192950a6cd951817"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-4f0c3d2d0b18-john-horton-conway-04-2a41867f05f267d75bae9bd508d01abc9e58a0bba56ae7d8192950a6cd951817.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539506",
+      "asset_id": 630539506,
+      "release_tag": "article-originals-2",
+      "sha256": "2a41867f05f267d75bae9bd508d01abc9e58a0bba56ae7d8192950a6cd951817",
+      "bytes": 34152
+    }
+  },
+  "/assets/images/hm-tt-4f0c3d2d0b18/john-horton-conway-05.png": {
+    "sha256": "35082d2e03b6528cf71a37f341004d247f02f7d266026c3acead49dc9bbeb6a1",
+    "width": 1050,
+    "height": 791,
+    "bytes": 405405,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4f0c3d2d0b18/john-horton-conway-05.png-960.webp",
+        "width": 960,
+        "height": 723,
+        "sha256": "9c8f89fddb4c890dc7fd92a38d537ce5243d53a92d534285415ad22e84cb11a0",
+        "bytes": 177956
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-4f0c3d2d0b18-john-horton-conway-05-35082d2e03b6528cf71a37f341004d247f02f7d266026c3acead49dc9bbeb6a1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539648",
+      "asset_id": 630539648,
+      "release_tag": "article-originals-3",
+      "sha256": "35082d2e03b6528cf71a37f341004d247f02f7d266026c3acead49dc9bbeb6a1",
+      "bytes": 405405
+    }
+  }
+}
