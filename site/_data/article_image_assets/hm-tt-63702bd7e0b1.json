@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-63702bd7e0b1/matematika-drevnego-egipta-0-01.png": {
+    "sha256": "625f2fde4ee47fa4b04c4eea88ae3c1935054c10c59c09108bd9bd8e8650d7dc",
+    "width": 450,
+    "height": 320,
+    "bytes": 370361,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-63702bd7e0b1/matematika-drevnego-egipta-0-01.png-450.webp",
+        "width": 450,
+        "height": 320,
+        "sha256": "b10bf91b5941bd6eaa3aaa4d2cee9bfd0178c178d79399b4ba25c7c602942418",
+        "bytes": 272742
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-63702bd7e0b1-matematika-drevnego-egipta-0-01-625f2fde4ee47fa4b04c4eea88ae3c1935054c10c59c09108bd9bd8e8650d7dc.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497879",
+      "asset_id": 630497879,
+      "release_tag": "article-originals-6",
+      "sha256": "625f2fde4ee47fa4b04c4eea88ae3c1935054c10c59c09108bd9bd8e8650d7dc",
+      "bytes": 370361
+    }
+  },
+  "/assets/images/hm-tt-63702bd7e0b1/matematika-drevnego-egipta-0-02.png": {
+    "sha256": "43344cc5de61b9873c707375dcee5dc869bb7599abf751fff42eca964e3f93f7",
+    "width": 450,
+    "height": 320,
+    "bytes": 422038,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-63702bd7e0b1/matematika-drevnego-egipta-0-02-png-reading-450-8c2369c429c6.webp",
+        "width": 450,
+        "height": 320,
+        "sha256": "8c2369c429c66a99abafae6bd35614d8945573a6a53ef702c96fc21660398be7",
+        "bytes": 308840
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-63702bd7e0b1-matematika-drevnego-egipta-0-02-43344cc5de61b9873c707375dcee5dc869bb7599abf751fff42eca964e3f93f7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542554",
+      "asset_id": 630542554,
+      "release_tag": "article-originals-4",
+      "sha256": "43344cc5de61b9873c707375dcee5dc869bb7599abf751fff42eca964e3f93f7",
+      "bytes": 422038
+    }
+  },
+  "/assets/images/hm-tt-63702bd7e0b1/matematika-drevnego-egipta-0-03.png": {
+    "sha256": "24cffa25ac0eac4ce888d39c682aa5f96fd566f4a6c058cc42ec1e884bfb96ce",
+    "width": 450,
+    "height": 200,
+    "bytes": 163816,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-63702bd7e0b1/matematika-drevnego-egipta-0-03-png-reading-450-c057982a60c4.webp",
+        "width": 450,
+        "height": 200,
+        "sha256": "c057982a60c4ce50eb6d5eeed82d342a1d34c0e98c239e49afb774280cb6e9be",
+        "bytes": 78590
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-63702bd7e0b1-matematika-drevnego-egipta-0-03-24cffa25ac0eac4ce888d39c682aa5f96fd566f4a6c058cc42ec1e884bfb96ce.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542700",
+      "asset_id": 630542700,
+      "release_tag": "article-originals-2",
+      "sha256": "24cffa25ac0eac4ce888d39c682aa5f96fd566f4a6c058cc42ec1e884bfb96ce",
+      "bytes": 163816
+    }
+  },
+  "/assets/images/hm-tt-63702bd7e0b1/matematika-drevnego-egipta-0-04.png": {
+    "sha256": "0a92fbf3bf08093b13eb216ab9e81433cb23a239621dd21d032743fa3bdc527e",
+    "width": 595,
+    "height": 595,
+    "bytes": 50869,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-63702bd7e0b1/matematika-drevnego-egipta-0-04.png-595.webp",
+        "width": 595,
+        "height": 595,
+        "sha256": "678eb2e40aa4f0407d51d7e0ea61523b3bb8a36570bb0cd26892c070583d3ca1",
+        "bytes": 27050
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-63702bd7e0b1-matematika-drevnego-egipta-0-04-0a92fbf3bf08093b13eb216ab9e81433cb23a239621dd21d032743fa3bdc527e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542840",
+      "asset_id": 630542840,
+      "release_tag": "article-originals-0",
+      "sha256": "0a92fbf3bf08093b13eb216ab9e81433cb23a239621dd21d032743fa3bdc527e",
+      "bytes": 50869
+    }
+  },
+  "/assets/images/hm-tt-63702bd7e0b1/matematika-drevnego-egipta-0-05.png": {
+    "sha256": "cf72c6cad0d59229db3821af2038eb9835054eccb6cb4024f02cb88614fcc06c",
+    "width": 595,
+    "height": 300,
+    "bytes": 18556,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-63702bd7e0b1/matematika-drevnego-egipta-0-05.png-595.webp",
+        "width": 595,
+        "height": 300,
+        "sha256": "f6b02073d641a07b9fa1a753f1751513e4c451ffd9d88dde5b9038babbdf309d",
+        "bytes": 8242
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-63702bd7e0b1-matematika-drevnego-egipta-0-05-cf72c6cad0d59229db3821af2038eb9835054eccb6cb4024f02cb88614fcc06c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542969",
+      "asset_id": 630542969,
+      "release_tag": "article-originals-c",
+      "sha256": "cf72c6cad0d59229db3821af2038eb9835054eccb6cb4024f02cb88614fcc06c",
+      "bytes": 18556
+    }
+  }
+}
