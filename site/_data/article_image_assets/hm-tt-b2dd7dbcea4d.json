@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-b2dd7dbcea4d/tri-klassicheskie-zadachi-dr-01.png": {
+    "sha256": "0248f5e922b0eb4d5555529589ca33153382c8148083cb7bc8c64ddca7ac24b5",
+    "width": 2258,
+    "height": 1270,
+    "bytes": 7877680,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b2dd7dbcea4d/tri-klassicheskie-zadachi-dr-01.png-960.webp",
+        "width": 960,
+        "height": 540,
+        "sha256": "3c567bb8e8556c0c6563f5a38d343aec5bfa37a1ba5d0de37e5c1dde62b2e4c3",
+        "bytes": 714972
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-b2dd7dbcea4d-tri-klassicheskie-zadachi-dr-01-0248f5e922b0eb4d5555529589ca33153382c8148083cb7bc8c64ddca7ac24b5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630499188",
+      "asset_id": 630499188,
+      "release_tag": "article-originals-0",
+      "sha256": "0248f5e922b0eb4d5555529589ca33153382c8148083cb7bc8c64ddca7ac24b5",
+      "bytes": 7877680
+    }
+  },
+  "/assets/images/hm-tt-b2dd7dbcea4d/tri-klassicheskie-zadachi-dr-02.png": {
+    "sha256": "66d49ade8e29431632512cc453f515869a744daf32992276d1a7512deef21330",
+    "width": 1850,
+    "height": 2480,
+    "bytes": 10066461,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b2dd7dbcea4d/tri-klassicheskie-zadachi-dr-02.png-960.webp",
+        "width": 960,
+        "height": 1287,
+        "sha256": "382671f704b878bfbaa7b79acfd9a6d30bee3ff30bd513878189baab5905c077",
+        "bytes": 1459490
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-b2dd7dbcea4d-tri-klassicheskie-zadachi-dr-02-66d49ade8e29431632512cc453f515869a744daf32992276d1a7512deef21330.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630546147",
+      "asset_id": 630546147,
+      "release_tag": "article-originals-6",
+      "sha256": "66d49ade8e29431632512cc453f515869a744daf32992276d1a7512deef21330",
+      "bytes": 10066461
+    }
+  },
+  "/assets/images/hm-tt-b2dd7dbcea4d/tri-klassicheskie-zadachi-dr-03.png": {
+    "sha256": "e88590e83a8491010fee68951bd4d11a289542454b52538a16c2fc4ed19ff5e4",
+    "width": 500,
+    "height": 500,
+    "bytes": 9016,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b2dd7dbcea4d/tri-klassicheskie-zadachi-dr-03.png-500.webp",
+        "width": 500,
+        "height": 500,
+        "sha256": "e3125efa02780c132151013fc218d88f662044fd4fa7a8744f8f7efd088ab8eb",
+        "bytes": 3864
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-b2dd7dbcea4d-tri-klassicheskie-zadachi-dr-03-e88590e83a8491010fee68951bd4d11a289542454b52538a16c2fc4ed19ff5e4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630546345",
+      "asset_id": 630546345,
+      "release_tag": "article-originals-e",
+      "sha256": "e88590e83a8491010fee68951bd4d11a289542454b52538a16c2fc4ed19ff5e4",
+      "bytes": 9016
+    }
+  },
+  "/assets/images/hm-tt-b2dd7dbcea4d/tri-klassicheskie-zadachi-dr-04.gif": {
+    "sha256": "7799fd95e7f3206815f51817aff8f5ffb495b32e9515457756ea3566a73edce0",
+    "width": 500,
+    "height": 500,
+    "bytes": 843246,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b2dd7dbcea4d/tri-klassicheskie-zadachi-dr-04.gif-500.webp",
+        "width": 500,
+        "height": 500,
+        "sha256": "3f9f4bee66c7a17856790b3a01de219d4296c02c426254f6d4c7ecb198a0c55d",
+        "bytes": 643440
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-b2dd7dbcea4d-tri-klassicheskie-zadachi-dr-04-7799fd95e7f3206815f51817aff8f5ffb495b32e9515457756ea3566a73edce0.gif",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630546506",
+      "asset_id": 630546506,
+      "release_tag": "article-originals-7",
+      "sha256": "7799fd95e7f3206815f51817aff8f5ffb495b32e9515457756ea3566a73edce0",
+      "bytes": 843246
+    }
+  },
+  "/assets/images/hm-tt-b2dd7dbcea4d/tri-klassicheskie-zadachi-dr-05.png": {
+    "sha256": "1fba9adf52ca0d92c8d5cfaf35687289a6f4e7294353ea5f2b85c09b4e8fbaaf",
+    "width": 1350,
+    "height": 1350,
+    "bytes": 3133264,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b2dd7dbcea4d/tri-klassicheskie-zadachi-dr-05-png-reading-960-14a2211800aa.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "14a2211800aa95b19c092f9c3941ae02a6278b674d0b34ee567a4cb7d98aaf5d",
+        "bytes": 865504
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-b2dd7dbcea4d-tri-klassicheskie-zadachi-dr-05-1fba9adf52ca0d92c8d5cfaf35687289a6f4e7294353ea5f2b85c09b4e8fbaaf.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630546630",
+      "asset_id": 630546630,
+      "release_tag": "article-originals-1",
+      "sha256": "1fba9adf52ca0d92c8d5cfaf35687289a6f4e7294353ea5f2b85c09b4e8fbaaf",
+      "bytes": 3133264
+    }
+  }
+}
