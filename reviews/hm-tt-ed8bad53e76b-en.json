@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-ed8bad53e76b-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "euler-publication-date",
+      "question": "The source gives 1759 as the publication year of Euler’s knight’s-tour paper. Should the distinction between the paper’s presentation, volume date and printing date be checked? The source year is retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-04-09",
+      "url": "https://teletype.in/@history_math/Knight-tour"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
