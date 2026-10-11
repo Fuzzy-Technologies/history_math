@@ -33,6 +33,7 @@ const pages = base ? ['/', '/ru/', '/about/', '/ru/about/', '/showcase/', '/ru/s
 const report = [];
 await mkdir('test-results/image-delivery', {recursive: true});
 let checkedDownload = false;
+let checkedCrossOriginDownload = false;
 try {
   for (const width of [390, 1440]) for (const path of pages) {
     const context = await browser.newContext({viewport: {width, height: 1000}, reducedMotion: 'reduce',
@@ -88,6 +89,25 @@ try {
       await page.waitForFunction(() => !document.documentElement.classList.contains('viewer-open'));
       assert.equal(await trigger.evaluate(node => document.activeElement === node), true);
       assert.equal(await download.getAttribute('href'), null);
+      if (!checkedCrossOriginDownload) {
+        const source = inventory[original.slice(base.length)];
+        const bytes = await readFile(resolve('site', '.' + original.slice(base.length)));
+        const remote = `https://raw.githubusercontent.com/Fuzzy-Technologies/history_math/${'a'.repeat(40)}/site/assets/images/hm-tt-abc/original.png`;
+        let fetched = 0;
+        await page.route(remote, route => {
+          fetched++;
+          return route.fulfill({body: bytes, contentType: mime[extname(original)], headers: {'Access-Control-Allow-Origin': '*'}});
+        });
+        await trigger.locator('img').evaluate((img, url) => { img.dataset.original = url; }, remote);
+        assert.equal(fetched, 0);
+        await trigger.click();
+        await page.locator('.viewer-canvas img').evaluate(img => img.decode());
+        assert.ok(fetched >= 1);
+        const [file] = await Promise.all([page.waitForEvent('download'), download.click()]);
+        assert.equal(createHash('sha256').update(await readFile(await file.path())).digest('hex'), source.sha256);
+        await page.keyboard.press('Escape');
+        checkedCrossOriginDownload = true;
+      }
     }
     await context.close();
   }

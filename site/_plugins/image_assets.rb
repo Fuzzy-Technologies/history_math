@@ -1,8 +1,22 @@
 # frozen_string_literal: true
 
 require "digest"
+require "open3"
 
 module HistoryMath
+  MIGRATED_ORIGINAL = %r{\A/assets/images/hm-tt-[a-z0-9]+/[a-z0-9.-]+\z}.freeze
+
+  def self.original_image_url(site, path)
+    unless path.to_s.match?(MIGRATED_ORIGINAL) && !site.config["article_review"]
+      return "#{site.baseurl}#{path}"
+    end
+    revision = site.config["image_source_revision"] ||= Open3.capture3("git", "-C", site.source, "rev-parse", "HEAD").first.strip
+    unless revision.match?(/\A[0-9a-f]{40}\z/)
+      raise Jekyll::Errors::FatalException, "Cannot determine immutable original image revision"
+    end
+    "https://raw.githubusercontent.com/Fuzzy-Technologies/history_math/#{revision}/site#{path}"
+  end
+
   def self.image_inventory(site)
     combined = site.data.fetch("image_assets").dup
     site.data.fetch("article_image_assets", {}).each_value do |fragment|
@@ -15,6 +29,10 @@ module HistoryMath
   end
 
   module ImageAssets
+    def original_image_url(path)
+      HistoryMath.original_image_url(@context.registers[:site], path)
+    end
+
     def image_asset(path)
       site = @context.registers[:site]
       entry = HistoryMath.image_inventory(site).fetch(path, nil)
@@ -38,6 +56,10 @@ module HistoryMath
             raise Jekyll::Errors::FatalException, "Stale or missing image derivative: #{asset['path']}; run tools/image_assets.py --write"
           end
         end
+      end
+      # Reading variants belong in Pages; multi-gigabyte originals stay in Git.
+      unless site.config["article_review"]
+        site.static_files.reject! { |file| file.relative_path.match?(MIGRATED_ORIGINAL) }
       end
     end
   end

@@ -46,7 +46,7 @@ def url(path):
     return "/" + path.relative_to(SITE).as_posix()
 
 
-def generate():
+def generate(article_id=None):
     from PIL import Image, ImageOps, ImageSequence
 
     manifest = {}
@@ -54,6 +54,8 @@ def generate():
     fragments = {}
     for source in originals():
         relative = source.relative_to(SITE / "assets/images")
+        if article_id is not None and relative.parts[0] != article_id:
+            continue
         migration = relative.parts[0].startswith("hm-tt-")
         destination = fragments.setdefault(relative.parts[0], {}) if migration else manifest
         old = previous.get(url(source))
@@ -66,7 +68,7 @@ def generate():
         image = ImageOps.exif_transpose(opened)
         image = image.convert("RGBA" if "A" in image.getbands() else "RGB")
         logo = source.name in LOGOS
-        widths = ([480 if "-logo" in source.stem else 1440] if logo else [480, 960, 1440])
+        widths = ([480 if "-logo" in source.stem else 1440] if logo else ([480, 960] if migration else [480, 960, 1440]))
         variants = []
         for width in sorted({min(width, image.width) for width in widths}):
             height = round(image.height * width / image.width)
@@ -102,7 +104,8 @@ def generate():
                              "sha256": digest(target), "bytes": target.stat().st_size})
         destination[url(source)] = {"sha256": digest(source), "width": image.width, "height": image.height,
                                  "bytes": source.stat().st_size, "logo": logo, "variants": variants}
-    MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if article_id is None:
+        MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     for identity, entries in fragments.items():
         target = SITE / "_data/article_image_assets" / f"{identity}.json"
         target.parent.mkdir(parents=True, exist_ok=True)

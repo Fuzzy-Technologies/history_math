@@ -27,6 +27,14 @@ test('PDF responses use original images before preload without changing public m
   assert.equal(printImageSources(vector), vector);
 });
 
+test('migrated PDFs retain local lossless variants without fetching repository originals', () => {
+  for (const original of ['/base/assets/images/hm-tt-abc/diagram.png', 'https://raw.githubusercontent.com/Fuzzy-Technologies/history_math/abc/site/assets/images/hm-tt-abc/diagram.png']) {
+    const output = printImageSources(`<img src="/base/reading.webp" srcset="/base/small.webp 480w" sizes="90vw" data-original="${original}">`);
+    assert.match(output, /src="\/base\/reading.webp"/);
+    assert.doesNotMatch(output, /srcset=|sizes=/);
+  }
+});
+
 import {mkdtemp, mkdir, writeFile, readFile, rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';

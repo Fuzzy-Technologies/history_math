@@ -29,6 +29,11 @@ export function printImageSources(html) {
   return html.replace(/<img\b[^>]*>/gi, tag => {
     const original = tag.match(/\sdata-original="([^"]+)"/);
     if (!original) return tag;
+    // Migrated print pages use the largest losslessly encoded reading variant.
+    // Keep PDF generation deterministic and local even when zoom uses GitHub.
+    if (/\/assets\/images\/hm-tt-[a-z0-9]+\//.test(original[1])) {
+      return tag.replace(/\s(?:srcset|sizes)="[^"]*"/g, '');
+    }
     return tag.replace(/\ssrc="[^"]*"/, () => ` src="${original[1]}"`)
       .replace(/\s(?:srcset|sizes)="[^"]*"/g, '');
   });
