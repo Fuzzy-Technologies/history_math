@@ -14,7 +14,7 @@ export function validateManifest(manifest) {
   for (const article of manifest.articles) {
     const match = /^\/(ru\/)?articles\/([a-z0-9-]+)\/$/.exec(article.url ?? '');
     // Existing PDF downloads retain the work hash when HTML gains a locale suffix.
-    const slug = match?.[2].replace(new RegExp(`^(hm-[0-9a-f]{12})-${article.lang}$`), '$1');
+    const slug = match?.[2].replace(new RegExp(`^(hm-(?:tt-)?[0-9a-f]{12})-${article.lang}$`), '$1');
     if (!match || !['en', 'ru'].includes(article.lang) || Boolean(match[1]) !== (article.lang === 'ru') ||
         article.pdf_url !== `/assets/pdf/${article.lang}/${slug}.pdf` ||
         typeof article.title !== 'string' || !article.title.trim() || paths.has(article.pdf_url)) throw new Error('Invalid or duplicate PDF article');
