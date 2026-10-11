@@ -21,7 +21,7 @@ concurrency:
 
 env:
   # Enabled only after the owner-authorized bootstrap code passes GitHub CI.
-  ARTICLE_ASSET_BOOTSTRAP_ENABLED: 'false'
+  ARTICLE_ASSET_BOOTSTRAP_ENABLED: 'true'
 
 jobs:
   plan:
