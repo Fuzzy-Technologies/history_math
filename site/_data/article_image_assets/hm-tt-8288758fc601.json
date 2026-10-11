@@ -1,0 +1,102 @@
+{
+  "/assets/images/hm-tt-8288758fc601/arifmetika-pifagorejcev-druz-01.png": {
+    "sha256": "856de3c43ff5bb06b871b67322fe2d6edbe269191382cd9a18e50fb342bd86b7",
+    "width": 800,
+    "height": 800,
+    "bytes": 1785125,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-8288758fc601/arifmetika-pifagorejcev-druz-01.png-800.webp",
+        "width": 800,
+        "height": 800,
+        "sha256": "87b10ef1f525d2282de73ed439fd5869861938d3589473531d034bf6a872f749",
+        "bytes": 891726
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-8288758fc601-arifmetika-pifagorejcev-druz-01-856de3c43ff5bb06b871b67322fe2d6edbe269191382cd9a18e50fb342bd86b7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497122",
+      "asset_id": 630497122,
+      "release_tag": "article-originals-8",
+      "sha256": "856de3c43ff5bb06b871b67322fe2d6edbe269191382cd9a18e50fb342bd86b7",
+      "bytes": 1785125
+    }
+  },
+  "/assets/images/hm-tt-8288758fc601/arifmetika-pifagorejcev-druz-02.png": {
+    "sha256": "5bade149838b166b91f5c6a65a1c314ddbbd3a61859dbdcc6e21f4dbf3e377b5",
+    "width": 1800,
+    "height": 3030,
+    "bytes": 11720599,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-8288758fc601/arifmetika-pifagorejcev-druz-02-png-reading-960-d53b4526b80d.webp",
+        "width": 960,
+        "height": 1616,
+        "sha256": "d53b4526b80d75d71d66d3237a1fc658d79a146fa1465e32e8fb667ae45d787c",
+        "bytes": 1612782
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-8288758fc601-arifmetika-pifagorejcev-druz-02-5bade149838b166b91f5c6a65a1c314ddbbd3a61859dbdcc6e21f4dbf3e377b5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549571",
+      "asset_id": 630549571,
+      "release_tag": "article-originals-5",
+      "sha256": "5bade149838b166b91f5c6a65a1c314ddbbd3a61859dbdcc6e21f4dbf3e377b5",
+      "bytes": 11720599
+    }
+  },
+  "/assets/images/hm-tt-8288758fc601/arifmetika-pifagorejcev-druz-03.png": {
+    "sha256": "ec2286b7edf9f1c9dca95ae678eaa3fb83b84fa9d25dc6dc74d45bc12c88641b",
+    "width": 614,
+    "height": 767,
+    "bytes": 1214049,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-8288758fc601/arifmetika-pifagorejcev-druz-03-png-reading-614-429db4fffaea.webp",
+        "width": 614,
+        "height": 767,
+        "sha256": "429db4fffaea0d44d9aef202634daef2756b0b487d2ecc2a8a1b89610d95f5ef",
+        "bytes": 600070
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-8288758fc601-arifmetika-pifagorejcev-druz-03-ec2286b7edf9f1c9dca95ae678eaa3fb83b84fa9d25dc6dc74d45bc12c88641b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549721",
+      "asset_id": 630549721,
+      "release_tag": "article-originals-e",
+      "sha256": "ec2286b7edf9f1c9dca95ae678eaa3fb83b84fa9d25dc6dc74d45bc12c88641b",
+      "bytes": 1214049
+    }
+  },
+  "/assets/images/hm-tt-8288758fc601/arifmetika-pifagorejcev-druz-04.png": {
+    "sha256": "0bbeead0030e4d78ee9e6fdc6e9366ce574db694ebaef41f41737ed167f5f2d7",
+    "width": 2181,
+    "height": 1025,
+    "bytes": 1847399,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-8288758fc601/arifmetika-pifagorejcev-druz-04.png-960.webp",
+        "width": 960,
+        "height": 451,
+        "sha256": "5624b1977dde46b27cc86243be0d386695aff716c5aee1fc7c57ef7f34081995",
+        "bytes": 285282
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-8288758fc601-arifmetika-pifagorejcev-druz-04-0bbeead0030e4d78ee9e6fdc6e9366ce574db694ebaef41f41737ed167f5f2d7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549890",
+      "asset_id": 630549890,
+      "release_tag": "article-originals-0",
+      "sha256": "0bbeead0030e4d78ee9e6fdc6e9366ce574db694ebaef41f41737ed167f5f2d7",
+      "bytes": 1847399
+    }
+  }
+}
