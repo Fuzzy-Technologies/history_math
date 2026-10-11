@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-e859aebffc4e-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "parallel-cut-range",
+      "question": "The source says any two cuts parallel to those in version 1 produce four pieces that form a square. Should the permitted positions of the cuts be specified? The universal wording is retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "christian-cross-date",
+      "question": "Should the statement that the Greek cross was introduced into Christianity around 332 be documented or qualified? The source date and claim are retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-10-13",
+      "url": "https://teletype.in/@history_math/greek-cross"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
