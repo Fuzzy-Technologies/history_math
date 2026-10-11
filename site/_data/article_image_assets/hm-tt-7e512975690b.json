@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-7e512975690b/kodoskop-kak-sozdavali-preze-01.png": {
+    "sha256": "b8352a04679ffc4d542c19c7a03083bfdbd4452a605469403f4abefb68e3e3e1",
+    "width": 1209,
+    "height": 1600,
+    "bytes": 4256263,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-7e512975690b/kodoskop-kak-sozdavali-preze-01.png-960.webp",
+        "width": 960,
+        "height": 1270,
+        "sha256": "95acc0c1659573b62c006fbc43a83f1e47f72f5e21b7806ad40db6253c9a386e",
+        "bytes": 1576806
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-7e512975690b-kodoskop-kak-sozdavali-preze-01-b8352a04679ffc4d542c19c7a03083bfdbd4452a605469403f4abefb68e3e3e1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497581",
+      "asset_id": 630497581,
+      "release_tag": "article-originals-b",
+      "sha256": "b8352a04679ffc4d542c19c7a03083bfdbd4452a605469403f4abefb68e3e3e1",
+      "bytes": 4256263
+    }
+  },
+  "/assets/images/hm-tt-7e512975690b/kodoskop-kak-sozdavali-preze-02.png": {
+    "sha256": "a3b579899a4dba5749fc9e4ac484ad8ee5165012560b98984d690831d5c2beeb",
+    "width": 1860,
+    "height": 2603,
+    "bytes": 3678735,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-7e512975690b/kodoskop-kak-sozdavali-preze-02.png-960.webp",
+        "width": 960,
+        "height": 1343,
+        "sha256": "fe51b9a4ad837f7f6f634c991e4003bd239f96f0af7cce376a910757b082a0d3",
+        "bytes": 602458
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-7e512975690b-kodoskop-kak-sozdavali-preze-02-a3b579899a4dba5749fc9e4ac484ad8ee5165012560b98984d690831d5c2beeb.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555322",
+      "asset_id": 630555322,
+      "release_tag": "article-originals-a",
+      "sha256": "a3b579899a4dba5749fc9e4ac484ad8ee5165012560b98984d690831d5c2beeb",
+      "bytes": 3678735
+    }
+  },
+  "/assets/images/hm-tt-7e512975690b/kodoskop-kak-sozdavali-preze-03.png": {
+    "sha256": "b82e8b3fd9939ffddb9bef3ec6af5a58ffd704b20a44166eedb536302fe4fce9",
+    "width": 564,
+    "height": 797,
+    "bytes": 458088,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-7e512975690b/kodoskop-kak-sozdavali-preze-03.png-564.webp",
+        "width": 564,
+        "height": 797,
+        "sha256": "5db2d4422d7d50728555baf149debcc6eb097dfc3e14200c4f7176c3df2e2217",
+        "bytes": 165528
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-7e512975690b-kodoskop-kak-sozdavali-preze-03-b82e8b3fd9939ffddb9bef3ec6af5a58ffd704b20a44166eedb536302fe4fce9.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555494",
+      "asset_id": 630555494,
+      "release_tag": "article-originals-b",
+      "sha256": "b82e8b3fd9939ffddb9bef3ec6af5a58ffd704b20a44166eedb536302fe4fce9",
+      "bytes": 458088
+    }
+  },
+  "/assets/images/hm-tt-7e512975690b/kodoskop-kak-sozdavali-preze-04.png": {
+    "sha256": "3ec7d827408f0eb59aeb5e0633613c0b827a010486893fccdd976ab29dbf01b7",
+    "width": 732,
+    "height": 733,
+    "bytes": 478999,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-7e512975690b/kodoskop-kak-sozdavali-preze-04.png-732.webp",
+        "width": 732,
+        "height": 733,
+        "sha256": "e1b772403c277255578ff729e06a53e466de52575ef62940a08839aff10bc397",
+        "bytes": 219124
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-7e512975690b-kodoskop-kak-sozdavali-preze-04-3ec7d827408f0eb59aeb5e0633613c0b827a010486893fccdd976ab29dbf01b7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555638",
+      "asset_id": 630555638,
+      "release_tag": "article-originals-3",
+      "sha256": "3ec7d827408f0eb59aeb5e0633613c0b827a010486893fccdd976ab29dbf01b7",
+      "bytes": 478999
+    }
+  },
+  "/assets/images/hm-tt-7e512975690b/kodoskop-kak-sozdavali-preze-05.png": {
+    "sha256": "572f36b31a0a01466da674f66b647dd6c0bd81a8a7b23a27e4a32e604a5a09b2",
+    "width": 800,
+    "height": 550,
+    "bytes": 247647,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-7e512975690b/kodoskop-kak-sozdavali-preze-05.png-800.webp",
+        "width": 800,
+        "height": 550,
+        "sha256": "c4e270122a5d009f14ee29c8c5ed8ca17422d439898382662bf101205d4c94c8",
+        "bytes": 101818
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-7e512975690b-kodoskop-kak-sozdavali-preze-05-572f36b31a0a01466da674f66b647dd6c0bd81a8a7b23a27e4a32e604a5a09b2.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555816",
+      "asset_id": 630555816,
+      "release_tag": "article-originals-5",
+      "sha256": "572f36b31a0a01466da674f66b647dd6c0bd81a8a7b23a27e4a32e604a5a09b2",
+      "bytes": 247647
+    }
+  }
+}
