@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-37f788299a0f/kolmogorov-buttons-01.png": {
+    "sha256": "5d2a346fd25dc94f4797f99d9e0aed0dabf638b9e3aa110f1e343c283dcdaf39",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 4120873,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-37f788299a0f/kolmogorov-buttons-01.png-960.webp",
+        "width": 960,
+        "height": 640,
+        "sha256": "496c05298f8f87871af0276c3b135be7277247250e40eb53bdcaa4212519c4b2",
+        "bytes": 945880
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-37f788299a0f-kolmogorov-buttons-01-5d2a346fd25dc94f4797f99d9e0aed0dabf638b9e3aa110f1e343c283dcdaf39.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630493459",
+      "asset_id": 630493459,
+      "release_tag": "article-originals-5",
+      "sha256": "5d2a346fd25dc94f4797f99d9e0aed0dabf638b9e3aa110f1e343c283dcdaf39",
+      "bytes": 4120873
+    }
+  },
+  "/assets/images/hm-tt-37f788299a0f/kolmogorov-buttons-02.png": {
+    "sha256": "7f789a0c39d1a7610363635a9a8f5646230651907c1b22906555f1ba0c1a7758",
+    "width": 1820,
+    "height": 2195,
+    "bytes": 2439918,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-37f788299a0f/kolmogorov-buttons-02-png-reading-960-b8577e2d1dbf.webp",
+        "width": 960,
+        "height": 1158,
+        "sha256": "b8577e2d1dbfca2a32b0eb542a5926b56a3c10a988ffe5a718af32b01a80c826",
+        "bytes": 337092
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-37f788299a0f-kolmogorov-buttons-02-7f789a0c39d1a7610363635a9a8f5646230651907c1b22906555f1ba0c1a7758.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630531714",
+      "asset_id": 630531714,
+      "release_tag": "article-originals-7",
+      "sha256": "7f789a0c39d1a7610363635a9a8f5646230651907c1b22906555f1ba0c1a7758",
+      "bytes": 2439918
+    }
+  },
+  "/assets/images/hm-tt-37f788299a0f/kolmogorov-buttons-03.png": {
+    "sha256": "0df897e831a31a6578f35efb2e82bec8b10dd96d6a41fbcad3cd2d0133953a6d",
+    "width": 980,
+    "height": 652,
+    "bytes": 1711910,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-37f788299a0f/kolmogorov-buttons-03.png-960.webp",
+        "width": 960,
+        "height": 639,
+        "sha256": "204d22a63000abe6be36bd2b8ebce77c0f1ac7cd437319a99cd429782f794ce2",
+        "bytes": 751994
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-37f788299a0f-kolmogorov-buttons-03-0df897e831a31a6578f35efb2e82bec8b10dd96d6a41fbcad3cd2d0133953a6d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630531878",
+      "asset_id": 630531878,
+      "release_tag": "article-originals-0",
+      "sha256": "0df897e831a31a6578f35efb2e82bec8b10dd96d6a41fbcad3cd2d0133953a6d",
+      "bytes": 1711910
+    }
+  }
+}
