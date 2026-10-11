@@ -1,0 +1,52 @@
+{
+  "/assets/images/hm-tt-452593011bea/rachinsky-sequences-01.jpeg": {
+    "sha256": "3ac9f9eec2e0f145e902f6127e8f6dcd532305909464514132fb21cd430de3f1",
+    "width": 1300,
+    "height": 1824,
+    "bytes": 365979,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-452593011bea/rachinsky-sequences-01.jpeg-960.webp",
+        "width": 960,
+        "height": 1347,
+        "sha256": "08aba3350063103192aa8e15f37c815df03c753f75b197a3d4a475b5e6c06457",
+        "bytes": 1330556
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-452593011bea-rachinsky-sequences-01-3ac9f9eec2e0f145e902f6127e8f6dcd532305909464514132fb21cd430de3f1.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630494669",
+      "asset_id": 630494669,
+      "release_tag": "article-originals-3",
+      "sha256": "3ac9f9eec2e0f145e902f6127e8f6dcd532305909464514132fb21cd430de3f1",
+      "bytes": 365979
+    }
+  },
+  "/assets/images/hm-tt-452593011bea/rachinsky-sequences-02.png": {
+    "sha256": "d740a2ce490c0a623bf60cbdf88bedc557b439eb7a6b1682643160e35bb4be03",
+    "width": 1105,
+    "height": 537,
+    "bytes": 36826,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-452593011bea/rachinsky-sequences-02.png-960.webp",
+        "width": 960,
+        "height": 467,
+        "sha256": "871cb8e3433464164ab1d5b2be13760e02ebb20a21305fea61c35a619d1dfdfa",
+        "bytes": 55870
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-452593011bea-rachinsky-sequences-02-d740a2ce490c0a623bf60cbdf88bedc557b439eb7a6b1682643160e35bb4be03.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630541044",
+      "asset_id": 630541044,
+      "release_tag": "article-originals-d",
+      "sha256": "d740a2ce490c0a623bf60cbdf88bedc557b439eb7a6b1682643160e35bb4be03",
+      "bytes": 36826
+    }
+  }
+}
