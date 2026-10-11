@@ -31,16 +31,18 @@ class PublicationTest < Minitest::Test
       site = Jekyll::Site.new(config)
       site.process
       site.collections.fetch("articles").docs.select { |doc| doc.data["status"] == "published" }.each do |doc|
-        assert_equal "2026-09-21", doc.data["date"].strftime("%Y-%m-%d")
+        expected = HistoryMath.teletype_publication_date(doc.data) || "2026-09-21"
+        assert_equal expected, doc.data["date"].strftime("%Y-%m-%d")
         html = File.read(doc.destination(site.dest))
-        assert_includes html, 'datetime="2026-09-21"'
-        assert_includes html, "21.09.2026" if doc.data["lang"] == "ru"
-        assert_includes html, "Sep. 21, 2026" if doc.data["lang"] == "en"
+        assert_includes html, %(datetime="#{expected}")
+        assert_includes html, "21.09.2026" if doc.data["lang"] == "ru" && expected == "2026-09-21"
+        assert_includes html, "Sep. 21, 2026" if doc.data["lang"] == "en" && expected == "2026-09-21"
       end
       %w[search-ru search-en discovery-ru discovery-en].each do |name|
         records = JSON.parse(File.read(File.join(site.dest, "assets/#{name}.json")))
         records.select { |record| record["status"] == "published" }.each do |record|
-          assert_equal "2026-09-21", record["date"]
+          doc = site.collections.fetch("articles").docs.find { |item| item.data["title"] == record["title"] }
+          assert_equal (HistoryMath.teletype_publication_date(doc.data) || "2026-09-21"), record["date"]
         end
       end
       before.each { |path, bytes| assert_equal bytes, File.binread(path) }
@@ -209,7 +211,7 @@ class PublicationTest < Minitest::Test
 
   def test_five_english_adaptations_preview_pairing_and_approved_discovery
     with_site do |source, config|
-      paths = Dir.glob(File.join(source, "_articles/hm-*.en.md"))
+      paths = Dir.glob(File.join(source, "_articles/hm-*.en.md")).select { |path| File.basename(path).match?(/\Ahm-[a-f0-9]{12}\.en\.md\z/) }
       assert_equal 5, paths.length
       production = Jekyll::Site.new(config)
       production.process

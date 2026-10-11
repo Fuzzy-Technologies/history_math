@@ -1,5 +1,5 @@
 import {createServer} from 'node:http';
-import {readFile, stat, mkdir} from 'node:fs/promises';
+import {readFile, stat, mkdir, readdir} from 'node:fs/promises';
 import {resolve, extname, sep} from 'node:path';
 import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
@@ -8,6 +8,9 @@ import {chromium} from 'playwright';
 const root = resolve(process.env.IMAGE_SITE_DIR || '_site');
 const base = process.env.IMAGE_BASEURL ?? '/history_math';
 const inventory = JSON.parse(await readFile('site/_data/image_assets.json', 'utf8'));
+for (const file of await readdir('site/_data/article_image_assets').catch(() => [])) {
+  Object.assign(inventory, JSON.parse(await readFile('site/_data/article_image_assets/' + file, 'utf8')));
+}
 const mime = {'.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json',
   '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2'};
 const server = createServer(async (request, response) => {

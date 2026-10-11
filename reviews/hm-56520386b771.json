@@ -40,14 +40,15 @@
     "No comment-placement blocks occur in the complete article or announcement. The announcement repeats existing article content. Earlier corrections to the historical record, cryptography claim and painting caption are preserved.",
     "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged.",
     "Recorded the owner's explicit publication approval dated 2026-10-09, set the website publication date, and bound the decision to the final Markdown and unchanged image bytes. Earlier publication dates are preserved.",
-    "Applied Timur Gilmullin’s requested 2026-10-09 post-publication corrections: concise visible figure captions and credits; where applicable, nonduplicated numeric table, explanatory prose and compact equivalent formulas. Original source/rights provenance is retained separately. This is an owner-requested derivative update, not a new scientific review."
+    "Applied Timur Gilmullin’s requested 2026-10-09 post-publication corrections: concise visible figure captions and credits; where applicable, nonduplicated numeric table, explanatory prose and compact equivalent formulas. Original source/rights provenance is retained separately. This is an owner-requested derivative update, not a new scientific review.",
+    "Owner-requested Teletype migration date correction on 2026-10-11; only publication/source metadata changed, editorial text and selected image bytes preserved."
   ],
   "review_version": 1,
   "approval": {
     "status": "approved",
     "reviewed_by": "Timur Gilmullin (Tim55667757)",
     "date": "2026-10-09",
-    "package_sha256": "5e4a08fc9c2e8ce6f8b93b58c4a24a2041a69c0b40fad3610fc71e9217688064"
+    "package_sha256": "87eb216fdf6f17c125b82b2f296aefc3d86a923a6a3c47fcc315bda4ab4dc743"
   },
   "questions": [
     {
