@@ -47,9 +47,10 @@ jobs:
           npx playwright install --with-deps chromium
           python3 tools/markdown_tables.py
           npm test
-          bundle exec ruby tests/article_details_test.rb
           node scripts/check-articles.mjs --source-only
-          bundle exec ruby tests/publication_test.rb
+          for test_file in tests/*_test.rb; do
+            bundle exec ruby "$test_file"
+          done
           node scripts/article-pdf.mjs --site-dir test-results/pdf-fixture
           node tests/pdf-cache-browser.mjs
           HISTORY_MATH_PUBLICATION_REF="$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build --trace
@@ -57,6 +58,16 @@ jobs:
           python3 scripts/check_site.py _site /history_math
           npm run test:browser
           node tests/article-details-browser.mjs
+          node tests/article-urls-browser.mjs
+      - name: Verify root-domain portability
+        run: |
+          HISTORY_MATH_PUBLICATION_REF="$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build --baseurl '' --destination _site-domain --trace
+          node scripts/article-pdf.mjs --site-dir _site-domain
+          python3 scripts/check_site.py _site-domain ''
+          IMAGE_SITE_DIR=_site-domain IMAGE_BASEURL='' node tests/image-delivery-browser.mjs
+          ERROR_SITE_DIR=_site-domain ERROR_BASEURL='' node tests/errors-browser.mjs
+          URL_SITE_DIR=_site-domain URL_BASEURL='' node tests/article-urls-browser.mjs
+          rm -rf _site-domain
       - name: Save validated PDF cache
         if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
         uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
