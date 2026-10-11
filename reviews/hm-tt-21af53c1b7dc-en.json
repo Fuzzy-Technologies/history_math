@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-21af53c1b7dc-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "legend-attribution",
+      "question": "Can a historical source be supplied for the Muhammad signature legend and the quotation attributed to Omar Khayyam? The source wording is retained pending review.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-03-19",
+      "url": "https://teletype.in/@history_math/Magomet-sign"
+    }
+  }
+}
