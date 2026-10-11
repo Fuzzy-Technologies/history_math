@@ -1,8 +1,9 @@
 const assetVersion = new URL(import.meta.url).search;
-const [{search, searchByTag, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}] = await Promise.all([
+const [{search, searchByTag, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}, {loadVerifiedOriginal, nativeOriginalTarget}] = await Promise.all([
   import('./core.js' + assetVersion),
   import('./select.js' + assetVersion),
-  import('./reading-position.js' + assetVersion)
+  import('./reading-position.js' + assetVersion),
+  import('./original-image.js' + assetVersion)
 ]);
 
 const language = document.body.dataset.lang;
@@ -57,25 +58,44 @@ if (viewer && typeof viewer.showModal === 'function') {
   const caption = viewer.querySelector('#viewer-caption');
   const download = viewer.querySelector('[data-viewer-download]');
   const expanded = document.createElement('img');
+  let activeOriginal;
+  let loadController;
   download.addEventListener('click', async event => {
+    if (!download.hasAttribute('href') || download.getAttribute('aria-disabled') === 'true') {
+      event.preventDefault();
+      return;
+    }
     const target = new URL(download.href);
-    if (target.origin === location.origin) return;
+    if (download.dataset.nativeOriginal === 'true' || target.protocol === 'blob:' || target.origin === location.origin) return;
     event.preventDefault();
+    const current = request;
+    let original;
     try {
       // A cross-origin download attribute alone navigates instead of downloading.
-      const response = await fetch(target.href, {credentials: 'omit'});
-      if (!response.ok) throw new Error('Original image download failed');
-      const objectUrl = URL.createObjectURL(await response.blob());
+      if (activeOriginal?.sha256) {
+        original = await loadVerifiedOriginal(activeOriginal, {signal: loadController.signal});
+      } else {
+        const response = await fetch(target.href, {credentials: 'omit', signal: loadController.signal});
+        if (!response.ok) throw new Error('Original image download failed');
+        const objectUrl = URL.createObjectURL(await response.blob());
+        original = {url: objectUrl, filename: target.pathname.split('/').at(-1),
+          revoke: () => URL.revokeObjectURL(objectUrl)};
+      }
+      if (!viewer.open || current !== request) {
+        original.revoke();
+        return;
+      }
       const link = document.createElement('a');
-      link.href = objectUrl;
-      link.download = target.pathname.split('/').at(-1);
+      link.href = original.url;
+      link.download = original.filename;
       link.hidden = true;
       document.body.append(link);
       link.click();
       link.remove();
-      setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
+      setTimeout(() => original.revoke(), 1000);
     } catch {
-      caption.textContent = viewer.dataset.errorLabel;
+      original?.revoke();
+      if (viewer.open && current === request) caption.textContent = viewer.dataset.errorLabel;
     }
   });
   const pointers = new Map();
@@ -113,21 +133,38 @@ if (viewer && typeof viewer.showModal === 'function') {
   }
   async function openImage(image, trigger) {
     const current = ++request;
+    loadController?.abort();
+    loadController = new AbortController();
+    activeOriginal = {url: image.dataset.original || image.currentSrc || image.src,
+      apiUrl: image.dataset.originalApi, sha256: image.dataset.originalSha256,
+      bytes: Number(image.dataset.originalBytes), filename: image.dataset.originalName};
     activeTrigger = trigger;
     viewer.setAttribute('aria-busy', 'true');
-    expanded.src = image.dataset.original || image.currentSrc || image.src;
-    download.href = expanded.src;
-    download.download = new URL(expanded.src).pathname.split('/').at(-1);
+    expanded.removeAttribute('src');
+    download.removeAttribute('href');
+    delete download.dataset.nativeOriginal;
+    download.setAttribute('aria-disabled', 'true');
     expanded.alt = image.alt;
     const description = image.closest('figure')?.querySelector('figcaption');
     caption.textContent = (description?.innerText || image.alt).replace(/\s*\n\s*/g, ' · ');
     canvas.replaceChildren(expanded);
-    viewer.showModal();
+    if (!viewer.open) viewer.showModal();
     document.documentElement.classList.add('viewer-open');
     viewer.querySelector('[data-viewer-action="close"]').focus();
     try {
+      if (activeOriginal.apiUrl) {
+        const original = nativeOriginalTarget(activeOriginal);
+        expanded.src = original.url;
+        download.download = original.filename;
+        download.dataset.nativeOriginal = 'true';
+      } else {
+        expanded.src = activeOriginal.url;
+        download.download = activeOriginal.filename || new URL(expanded.src).pathname.split('/').at(-1);
+      }
       await expanded.decode();
       if (!viewer.open || current !== request) return;
+      download.href = expanded.src;
+      download.removeAttribute('aria-disabled');
       baseWidth = stage.clientWidth;
       ratio = expanded.naturalWidth / expanded.naturalHeight;
       zoom = 1;
@@ -136,6 +173,7 @@ if (viewer && typeof viewer.showModal === 'function') {
       viewer.setAttribute('aria-busy', 'false');
     } catch {
       if (viewer.open && current === request) {
+        expanded.removeAttribute('src');
         caption.textContent = viewer.dataset.errorLabel;
         viewer.setAttribute('aria-busy', 'false');
       }
@@ -153,11 +191,15 @@ if (viewer && typeof viewer.showModal === 'function') {
   });
   viewer.addEventListener('close', () => {
     request += 1;
+    loadController?.abort();
+    activeOriginal = undefined;
     viewer.setAttribute('aria-busy', 'false');
     pointers.clear();
     canvas.replaceChildren();
     expanded.removeAttribute('src');
     download.removeAttribute('href');
+    delete download.dataset.nativeOriginal;
+    download.setAttribute('aria-disabled', 'true');
     stage.classList.remove('is-dragging');
     document.documentElement.classList.remove('viewer-open');
     activeTrigger?.focus({preventScroll: true});
