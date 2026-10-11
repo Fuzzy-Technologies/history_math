@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-aa2a668ec1b8-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-viete-1",
+      "question": "The source gives Henry III's reign as 1574–1689. The English preserves these numbers rather than silently changing the apparent typographical error. Confirm an authorised correction.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-viete-2",
+      "question": "Confirm the claim that the Spanish Inquisition sentenced Viète in absentia to be burned, as distinct from an accusation or complaint about his deciphering. This source claim is retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 7,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-08-22",
+      "url": "https://teletype.in/@history_math/Velikij-kostoprav-matematiki-08-22"
+    }
+  }
+}
