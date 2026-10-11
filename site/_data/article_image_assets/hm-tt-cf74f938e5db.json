@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-cf74f938e5db/conway-game-of-life-01.png": {
+    "sha256": "80deb87b6266601a767d39aa6eb55a25479069daa45e0f85e43ccc24844de5ea",
+    "width": 1909,
+    "height": 2543,
+    "bytes": 7155933,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cf74f938e5db/conway-game-of-life-01.png-960.webp",
+        "width": 960,
+        "height": 1279,
+        "sha256": "d0db4224727fa253aeca1eef0081d696bca4b7d2a545a9a75064eed59a6c0d80",
+        "bytes": 1030792
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-cf74f938e5db-conway-game-of-life-01-80deb87b6266601a767d39aa6eb55a25479069daa45e0f85e43ccc24844de5ea.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497113",
+      "asset_id": 630497113,
+      "release_tag": "article-originals-8",
+      "sha256": "80deb87b6266601a767d39aa6eb55a25479069daa45e0f85e43ccc24844de5ea",
+      "bytes": 7155933
+    }
+  },
+  "/assets/images/hm-tt-cf74f938e5db/conway-game-of-life-02.png": {
+    "sha256": "b12b470cdc3532fb95c6827e739d07faea68a44fe48102998955670e8926f58b",
+    "width": 1920,
+    "height": 2650,
+    "bytes": 3152982,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cf74f938e5db/conway-game-of-life-02-png-reading-960-315a458f743c.webp",
+        "width": 960,
+        "height": 1325,
+        "sha256": "315a458f743cf4b34ed793465dc23bc674fbd9fcaf7c1c60be856b244ef39e9e",
+        "bytes": 551088
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-cf74f938e5db-conway-game-of-life-02-b12b470cdc3532fb95c6827e739d07faea68a44fe48102998955670e8926f58b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539057",
+      "asset_id": 630539057,
+      "release_tag": "article-originals-b",
+      "sha256": "b12b470cdc3532fb95c6827e739d07faea68a44fe48102998955670e8926f58b",
+      "bytes": 3152982
+    }
+  },
+  "/assets/images/hm-tt-cf74f938e5db/conway-game-of-life-03.png": {
+    "sha256": "52e1b3c50120e0c7a277c18f6d06a3d5600d5ce05621a30b6104ed0ebea8de5d",
+    "width": 792,
+    "height": 1097,
+    "bytes": 428681,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cf74f938e5db/conway-game-of-life-03.png-792.webp",
+        "width": 792,
+        "height": 1097,
+        "sha256": "ec4e386369a0964a1049c1da214d435ebf77520018e3f9e0674320860365c7db",
+        "bytes": 322838
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-cf74f938e5db-conway-game-of-life-03-52e1b3c50120e0c7a277c18f6d06a3d5600d5ce05621a30b6104ed0ebea8de5d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539271",
+      "asset_id": 630539271,
+      "release_tag": "article-originals-5",
+      "sha256": "52e1b3c50120e0c7a277c18f6d06a3d5600d5ce05621a30b6104ed0ebea8de5d",
+      "bytes": 428681
+    }
+  },
+  "/assets/images/hm-tt-cf74f938e5db/conway-game-of-life-04.gif": {
+    "sha256": "e8e0ae4d36217a917f4a076b892cb76d99a59f68aa1cfabd33685dccf8365586",
+    "width": 600,
+    "height": 450,
+    "bytes": 4523046,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cf74f938e5db/conway-game-of-life-04-gif-reading-600-3b9a3b25b5a8.webp",
+        "width": 600,
+        "height": 450,
+        "sha256": "3b9a3b25b5a8c74ce076d49b8e463a1d4cf05e6caacb28ae16a08267e74788fb",
+        "bytes": 2559398
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-cf74f938e5db-conway-game-of-life-04-e8e0ae4d36217a917f4a076b892cb76d99a59f68aa1cfabd33685dccf8365586.gif",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539431",
+      "asset_id": 630539431,
+      "release_tag": "article-originals-e",
+      "sha256": "e8e0ae4d36217a917f4a076b892cb76d99a59f68aa1cfabd33685dccf8365586",
+      "bytes": 4523046
+    }
+  },
+  "/assets/images/hm-tt-cf74f938e5db/conway-game-of-life-05.png": {
+    "sha256": "eab01a46e7b380d37f94291fbb2fbba394e95fcf308455884984e057e212a81d",
+    "width": 1000,
+    "height": 276,
+    "bytes": 70420,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cf74f938e5db/conway-game-of-life-05.png-960.webp",
+        "width": 960,
+        "height": 265,
+        "sha256": "e6d40807fa12b4a01e59a1ae26b3c8dac6938a45b92072343329ab920f06f319",
+        "bytes": 29590
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-cf74f938e5db-conway-game-of-life-05-eab01a46e7b380d37f94291fbb2fbba394e95fcf308455884984e057e212a81d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539587",
+      "asset_id": 630539587,
+      "release_tag": "article-originals-e",
+      "sha256": "eab01a46e7b380d37f94291fbb2fbba394e95fcf308455884984e057e212a81d",
+      "bytes": 70420
+    }
+  },
+  "/assets/images/hm-tt-cf74f938e5db/conway-game-of-life-06.png": {
+    "sha256": "e9fa7779fa640736e7b36f0ddb580c37086d0ab3c284906922abd42728ec2ec0",
+    "width": 934,
+    "height": 891,
+    "bytes": 68802,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cf74f938e5db/conway-game-of-life-06.png-934.webp",
+        "width": 934,
+        "height": 891,
+        "sha256": "37e3210341611461c14efe4d1ed0a92f76ad7ead74346683cfd38efd5c739b1c",
+        "bytes": 34532
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-cf74f938e5db-conway-game-of-life-06-e9fa7779fa640736e7b36f0ddb580c37086d0ab3c284906922abd42728ec2ec0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539721",
+      "asset_id": 630539721,
+      "release_tag": "article-originals-e",
+      "sha256": "e9fa7779fa640736e7b36f0ddb580c37086d0ab3c284906922abd42728ec2ec0",
+      "bytes": 68802
+    }
+  }
+}
