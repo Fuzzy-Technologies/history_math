@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-468f6986bcb1-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-bernoulli-epitaph",
+      "question": "The supplied Russian translation of the epitaph contains the grammatically unclear phrase “Здесь, я мирюсь, ожидает воскрешения”. Please verify it against the Latin inscription; the English caption retains that uncertainty rather than silently repairing the quotation.",
+      "blocking": false,
+      "state": "open"
+    },
+    {
+      "id": "en-bernoulli-leibniz-travel",
+      "question": "Please verify the statement that Leibniz was away in Paris when Bernoulli’s reply was delayed until 1690. The source chronology is retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-01-04",
+      "url": "https://teletype.in/@history_math/Yakob-Bernulli-neveroyatnye-veroyatnosti-01-04"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
