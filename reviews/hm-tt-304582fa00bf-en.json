@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-304582fa00bf-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source discusses a roughly 3% error from replacing 69,3 with 72 and extends the rule directly to percentage decay. Confirm the intended approximation and its accuracy for decay; the statements have been retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-09",
+      "url": "https://teletype.in/@history_math/Vychislenie-vremeni-udvoeniya-kapitala-Pravilo-72-09-09"
+    }
+  }
+}
