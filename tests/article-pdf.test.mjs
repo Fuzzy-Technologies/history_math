@@ -73,6 +73,30 @@ test('dependency graph hashes transitive CSS, fonts and image bytes, rejects mis
   assert.throws(() => assetPath(root, '/base', '/base/%2e%2e%2fsecret'), /Invalid/);
 });
 
+test('release-backed originals keep PDFs dependent on local reading bytes only', async t => {
+  const root = await mkdtemp(join(tmpdir(), 'pdf-release-original-'));
+  t.after(() => rm(root, {recursive: true, force: true}));
+  await mkdir(join(root, 'assets'));
+  await writeFile(join(root, 'assets/reading.webp'), 'reading-image-a');
+  const original = 'https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/diagram-sha.png';
+  const api = ' data-original-api="https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/123"';
+  const html = `<img src="/base/assets/reading.webp" srcset="/base/assets/small.webp 480w" sizes="90vw" data-original="${original}"${api} alt="Diagram">`;
+  const output = printImageSources(html);
+  assert.match(output, /src="\/base\/assets\/reading.webp"/);
+  assert.doesNotMatch(output, /srcset=|sizes=/);
+  assert.match(output, /alt="Diagram"/);
+  assert.match(html, /srcset=/, 'Public markup remains unchanged');
+  const readDependencies = html => dependencyReader(root, '/base')(html);
+  const initial = await readDependencies(output);
+  assert.equal(initial.length, 1);
+  assert.equal(initial[0][0], '/base/assets/reading.webp');
+  await writeFile(join(root, 'assets/reading.webp'), 'reading-image-b');
+  assert.notDeepEqual(await readDependencies(output), initial);
+  await assert.rejects(readDependencies(printImageSources(html.replace(api, ''))), /Nonlocal/);
+  await rm(join(root, 'assets/reading.webp'));
+  await assert.rejects(readDependencies(output), /ENOENT/);
+});
+
 test('cache detects damaged or incomplete PDFs and prunes superseded entries', async t => {
   const cache = await mkdtemp(join(tmpdir(), 'pdf-cache-'));
   t.after(() => rm(cache, {recursive: true, force: true}));
