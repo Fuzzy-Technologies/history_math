@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-76a2afb741de-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source attributes the electrical signs + and − to Lichtenberg and describes ISO 216 as adopted worldwide except Canada and the USA. Verify these historical and geographical claims; they are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-english-2",
+      "question": "The source writes “АЗ” (Cyrillic letters) in the font-size problem, apparently intending A3, and the final answer does not fully derive the choice of 210 mm from the standard. Confirm the intended format and derivation; no silent mathematical correction has been made.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-10-08",
+      "url": "https://teletype.in/@history_math/paper-format"
+    }
+  }
+}
