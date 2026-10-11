@@ -47,11 +47,12 @@ test('cleanup permits only a merged same-repository unchanged feature into maste
   assert.ok(!/\$\{\{\s*github\.event\.pull_request\.(title|body)/.test(cleanup));
 });
 
-test('CI and cleanup route feature PRs directly to master', () => {
+test('CI checks feature PRs once and cleanup routes their merges directly to master', () => {
   const ci = parse(readFileSync('.github/workflows/ci.yml', 'utf8'));
   const clean = parse(cleanup);
-  assert.deepEqual(ci.on.push.branches, ['master', 'feature/**']);
+  assert.deepEqual(ci.on.push.branches, ['master']);
   assert.ok(Object.hasOwn(ci.on, 'pull_request'));
+  assert.ok(Object.hasOwn(ci.on, 'workflow_dispatch'));
   assert.deepEqual(clean.on.pull_request_target.branches, ['master']);
   assert.deepEqual(clean.on.pull_request_target.types, ['closed']);
   assert.match(clean.jobs.cleanup.if, /base\.ref == 'master'/);
@@ -133,6 +134,68 @@ test('the actual privileged article comment job has no checkout and rejects stal
   await execute(); assert.match(comments[0].body, /Обязательные технические проверки не выполнены/);
   runId = 13; workflowConclusion = 'failure';
   await execute(); assert.match(comments[0].body, /Технические проверки выявили блокирующие ошибки/);
+});
+
+test('completed manual CI runs report only the current open same-repository master PR', async () => {
+  const workflow = readFileSync('.github/workflows/article-report.yml', 'utf8').replace(/\r\n/g, '\n');
+  const parsed = parse(workflow);
+  assert.deepEqual(parsed.on.workflow_run, {workflows: ['Prototype checks'], types: ['completed']});
+  assert.match(parsed.concurrency.group, /workflow_run.head_branch/);
+  assert.ok(!workflow.includes('actions/checkout'));
+  assert.ok(!/^\s+run:/m.test(workflow));
+  const source = workflow.split('script: |\n')[1].split('\n').map(line => line.replace(/^            /, '')).join('\n');
+  const repository = 'example/repo', sha = 'a'.repeat(40), branch = 'feature/article-ru';
+  const original = {number: 1, state: 'open', base: {ref: 'master', repo: {full_name: repository}},
+    head: {sha, ref: branch, repo: {full_name: repository}}};
+  let live = structuredClone(original), candidates = [structuredClone(original)], runId = 20, reads = 0;
+  let created = 0, updated = 0;
+  const comments = [], refs = [], searches = [];
+  const dictionary = readFileSync('schemas/messages.json', 'utf8');
+  const context = {eventName: 'workflow_run', sha: 'trusted-default-sha', repo: {owner: 'example', repo: 'repo'},
+    payload: {workflow_run: {name: 'Prototype checks', status: 'completed', event: 'workflow_dispatch',
+      repository: {full_name: repository}, head_repository: {full_name: repository},
+      head_sha: sha, head_branch: branch, id: runId, run_attempt: 1, conclusion: 'success',
+      html_url: 'https://github.com/example/repo/actions/runs/20'}}};
+  const github = {rest: {
+    repos: {getContent: async args => { refs.push(args.ref); return {data: {size: dictionary.length, encoding: 'base64', content: Buffer.from(dictionary).toString('base64')}}; }},
+    pulls: {list: 'requests', get: async () => { reads++; return {data: live}; }},
+    actions: {listWorkflowRunsForRepo: async () => { throw new Error('Completed dispatch uses its pinned run'); }, listJobsForWorkflowRun: 'jobs'},
+    issues: {listComments: 'comments', createComment: async args => { created++; comments.push({id: 1, user: {type: 'Bot'}, body: args.body}); },
+      updateComment: async args => { updated++; comments[0].body = args.body; }}
+  }, paginate: async (kind, args) => {
+    if (kind === 'requests') { searches.push(args); return candidates; }
+    if (kind === 'jobs') return [{name: 'Article package', conclusion: 'success'}];
+    return comments;
+  }};
+  const execute = () => new AsyncFunction('github', 'context', source)(github, context);
+  await execute(); await execute();
+  assert.equal(created, 1); assert.equal(updated, 1);
+  assert.match(comments[0].body, /Проверки исходных файлов пройдены/);
+  assert.ok(refs.every(ref => ref === 'trusted-default-sha'));
+  assert.ok(searches.every(args => args.base === 'master' && args.state === 'open' && args.head === 'example:feature/article-ru'));
+  context.payload.workflow_run.id = 19;
+  await execute(); assert.equal(updated, 1);
+  context.payload.workflow_run.id = 21;
+  live = {...original, head: {...original.head, sha: 'b'.repeat(40)}};
+  await execute(); assert.equal(updated, 1);
+  live = {...original, state: 'closed'};
+  await execute(); assert.equal(updated, 1);
+  for (const mutation of [
+    {...original, state: 'closed'},
+    {...original, base: {...original.base, ref: 'develop'}},
+    {...original, head: {...original.head, sha: 'b'.repeat(40)}},
+    {...original, head: {...original.head, repo: {full_name: 'fork/repo'}}}
+  ]) {
+    candidates = [mutation]; live = mutation;
+    await execute(); assert.equal(updated, 1);
+  }
+  candidates = [structuredClone(original)]; live = structuredClone(original);
+  const before = reads;
+  context.payload.workflow_run.head_repository.full_name = 'fork/repo';
+  await execute(); assert.equal(reads, before); assert.equal(updated, 1);
+  context.payload.workflow_run.head_repository.full_name = repository;
+  context.payload.workflow_run.name = 'Unrelated workflow';
+  await execute(); assert.equal(reads, before); assert.equal(updated, 1);
 });
 
 // Keep the owner's CI storage budget independent of website and screenshot growth.

@@ -5,6 +5,8 @@ import hashlib
 import importlib.util
 import json
 from pathlib import Path
+import shutil
+import subprocess
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -204,11 +206,117 @@ class ArticlePublishTest(unittest.TestCase):
             with patch.object(publisher, "run_trusted_checks"):
                 receipt = publisher.run_prepare(args, api=api, reader=reader)
             self.assertEqual(len(api.calls), 2)
-            copied = f"site/assets/images/previews/{ARTICLE}/figure-01-png-reading-1200.png"
+            copied = f"site/assets/images/previews/{ARTICLE}/figure-01-png-reading-1200-{ORIGINAL_SHA[:12]}.png"
             self.assertEqual(receipt["preview_blobs"][copied], git_sha(ORIGINAL))
             entries = {item["path"]: item for item in api.calls[0][1]["tree"]}
             self.assertEqual(entries[copied]["sha"], git_sha(ORIGINAL))
             self.assertNotIn("site" + LOGICAL, entries)
+
+    def test_original_folder_alias_is_copied_and_unreferenced_staging_alias_removed(self):
+        with tempfile.TemporaryDirectory() as directory:
+            args, api, reader = args_for(directory), MemoryAPI(), MemoryGit()
+            alias = f"/assets/images/{ARTICLE}/old-reading-copy.jpeg"
+            reader.files["site" + alias] = PREVIEW
+            manifest = sample_manifest()
+            manifest[LOGICAL]["variants"][0]["path"] = alias
+            reader.files[f"site/_data/article_image_assets/{ARTICLE}.json"] = json.dumps(manifest).encode()
+            del reader.files["site" + PREVIEW_PATH]
+            with patch.object(publisher, "run_trusted_checks"):
+                receipt = publisher.run_prepare(args, api=api, reader=reader)
+            copied = f"site/assets/images/previews/{ARTICLE}/figure-01-png-reading-960-{PREVIEW_SHA[:12]}.jpeg"
+            self.assertEqual(receipt["preview_blobs"][copied], git_sha(PREVIEW))
+            entries = {item["path"]: item for item in api.calls[0][1]["tree"]}
+            self.assertNotIn("site" + alias, entries)
+            self.assertEqual(reader.files["site" + alias], PREVIEW)
+            self.assertEqual(len(api.calls), 2)
+
+    def test_shared_preview_is_fetched_as_pinned_data_and_reused_as_own_preview(self):
+        with tempfile.TemporaryDirectory() as directory:
+            args, api, reader = args_for(directory), MemoryAPI(), MemoryGit()
+            shared = "/assets/images/previews/shared/arifmometr-123456789abc-960.webp"
+            reader.files["site" + shared] = PREVIEW
+            manifest = sample_manifest()
+            manifest[LOGICAL]["variants"][0]["path"] = shared
+            reader.files[f"site/_data/article_image_assets/{ARTICLE}.json"] = json.dumps(manifest).encode()
+            del reader.files["site" + PREVIEW_PATH]
+            with patch.object(publisher, "run_trusted_checks"):
+                receipt = publisher.run_prepare(args, api=api, reader=reader)
+            copied = f"site/assets/images/previews/{ARTICLE}/figure-01-png-reading-960-{PREVIEW_SHA[:12]}.webp"
+            self.assertEqual(receipt["preview_blobs"][copied], git_sha(PREVIEW))
+            entries = {item["path"]: item for item in api.calls[0][1]["tree"]}
+            self.assertNotIn("site" + shared, entries)
+            self.assertEqual(len(api.calls), 2)
+
+    def test_invalid_alias_checksum_stops_before_an_upload(self):
+        with tempfile.TemporaryDirectory() as directory:
+            args, api, reader = args_for(directory), MemoryAPI(), MemoryGit()
+            alias = f"/assets/images/{ARTICLE}/reading.jpeg"
+            reader.files["site" + alias] = b"different reading bytes"
+            manifest = sample_manifest()
+            manifest[LOGICAL]["variants"][0]["path"] = alias
+            reader.files[f"site/_data/article_image_assets/{ARTICLE}.json"] = json.dumps(manifest).encode()
+            with self.assertRaisesRegex(publisher.PublishError, "alias differs"):
+                publisher.run_prepare(args, api=api, reader=reader)
+            self.assertEqual(api.calls, [])
+
+    def test_exported_source_gets_a_markdown_only_index_without_binary_objects(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            markdown = root / "article.md"
+            markdown.write_text("Literal $x+y$ remains unchanged.\n")
+            binary = root / "original.bin"
+            binary.write_bytes(ORIGINAL)
+            self.assertFalse((root / ".git").exists())
+            publisher.init_markdown_index(root)
+            tracked = subprocess.run(["git", "-C", str(root), "ls-files", "--stage"], check=True,
+                                     capture_output=True, text=True).stdout
+            self.assertIn("article.md", tracked)
+            self.assertNotIn("original.bin", tracked)
+            self.assertNotEqual(subprocess.run(["git", "-C", str(root), "cat-file", "-e", git_sha(ORIGINAL)],
+                                              capture_output=True).returncode, 0)
+            checked = subprocess.run(["python3", str(publisher.ROOT / "tools/markdown_tables.py")],
+                                     cwd=root, capture_output=True, text=True)
+            self.assertEqual(checked.returncode, 0, checked.stdout + checked.stderr)
+            self.assertEqual(binary.read_bytes(), ORIGINAL)
+
+    def test_real_trusted_source_checks_accept_an_export_without_git(self):
+        if not (publisher.ROOT / "node_modules/yaml").is_dir():
+            self.skipTest("Trusted Node authoring dependencies unavailable")
+        with tempfile.TemporaryDirectory() as directory:
+            stage = Path(directory) / "export"
+            stage.mkdir()
+            for name in ("site", "reviews", "schemas", "templates", "tools"):
+                shutil.copytree(publisher.ROOT / name, stage / name,
+                                ignore=shutil.ignore_patterns("__pycache__"))
+            reader = MemoryGit()
+            for language in ("ru", "en"):
+                identity = ARTICLE + ("-en" if language == "en" else "")
+                metadata = {"schema_version": 1, "article_id": identity, "source_work_id": ARTICLE,
+                            "layout": "article", "title": "Fixture author title", "authors": ["Fixture author"],
+                            "author": "Fixture author", "lang": language, "translation_key": ARTICLE,
+                            "description": "Fixture description for exported source validation.", "type": "essay",
+                            "tags": ["history", "math"], "math": True, "status": "draft", "date": "2024-03-25",
+                            "permalink": f"/{'ru/' if language == 'ru' else ''}articles/{ARTICLE}/",
+                            "rights_basis": "Owner-supplied fixture; editorial approval remains pending.",
+                            "original_publication": {"outlet": "Teletype", "date": "2024-03-25", "preserve_date": True},
+                            "figures": [{"id": "fig-1", "path": LOGICAL, "alt": "Fixture image.",
+                                         "caption": "Fixture caption.", "source": "Fixture author source.",
+                                         "rights_basis": "Owner-supplied fixture image."}],
+                            "preview_image": LOGICAL, "cover_image": LOGICAL}
+                reader.files[f"site/_articles/{ARTICLE}.{language}.md"] = (
+                    "---\n" + json.dumps(metadata, indent=2) + "\n---\n" +
+                    'Literal $x+y$ author formula.\n\n{% include article-figure.html id="fig-1" %}\n').encode()
+                reader.files[f"reviews/{identity}.json"] = json.dumps({"review_version": 1, "article_id": identity,
+                                                                       "approval": {"status": "pending"}, "questions": []}).encode()
+            for path in reader.files:
+                if publisher.scoped_path(path, ARTICLE):
+                    reader.blob(SOURCE, path, stage / path)
+            self.assertFalse((stage / ".git").exists())
+            result = publisher.run_trusted_checks(stage, args_for(directory))
+            self.assertEqual(result["editorial_approval"], "pending")
+            self.assertTrue(all(body["unchanged"] for body in result["bodies"]))
+            source_report = json.loads((stage / "test-results/article-report.json").read_text())
+            self.assertEqual(source_report["result"], "pass")
 
     def test_contributor_race_after_upload_blocks_commit_and_branch_update(self):
         with tempfile.TemporaryDirectory() as directory:

@@ -225,6 +225,24 @@ class ArticlePrepareTest(unittest.TestCase):
         self.assertFalse(report["canonical"])
         self.assertTrue(report["preview_generation_required"])
 
+    def test_verified_local_reading_alias_is_preserved_until_publishing(self):
+        alias = f"/assets/images/{self.article_id}/reading-copy.png"
+        (self.root / ("site" + self.preview)).unlink()
+        self.write("site" + alias, self.preview_bytes)
+        self.manifest[self.original]["variants"][0]["path"] = alias
+        self.write_manifest()
+        before = self.snapshot()
+        for write in (False, True):
+            report = prepare.prepare_package(self.root, self.article_id, write=write)
+            self.assertTrue(report["canonical"])
+            self.assertFalse(report["written"])
+            self.assertEqual(report["local_reading_aliases"], [alias])
+            self.assertTrue(report["warnings"])
+            self.assertEqual(before, self.snapshot())
+        self.write("site" + alias, b"unverified replacement")
+        with self.assertRaisesRegex(prepare.PreparationError, "bytes differ"):
+            prepare.prepare_package(self.root, self.article_id, write=True)
+
     def test_failed_generation_cannot_change_existing_preview_bytes(self):
         entry = self.manifest[self.original]
         entry["variants"].append({

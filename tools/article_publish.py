@@ -478,8 +478,8 @@ class GitReader:
         return [line.split(" ", 1)[1] for line in self.run("cat-file", "commit", sha).splitlines() if line.startswith("parent ")]
 
 
-def copy_original_reading_previews(stage, article_id):
-    """Keep an optimized small original as a local, byte-identical preview."""
+def copy_original_reading_previews(stage, article_id, reader=None, source_sha=None, source_tree=None):
+    """Keep original aliases and shared reading blobs in the article folder."""
     fragment = Path(stage) / f"site/_data/article_image_assets/{article_id}.json"
     try:
         manifest = json.loads(fragment.read_text("utf-8"))
@@ -488,21 +488,55 @@ def copy_original_reading_previews(stage, article_id):
     if not isinstance(manifest, dict):
         raise PublishError("The article image manifest must be an object")
     changed = False
+    old_reading_paths = set()
+    imported_reading_paths = set()
+    actual_original_paths = set(manifest)
+    # A declared figure/cover remains an original, even if a malformed inventory
+    # omitted it. The trusted preparer will reject that omission without deletion.
+    referenced_original_paths = set()
+    for path in article_paths(article_id, {
+            file.relative_to(stage).as_posix() for file in Path(stage).rglob("*.md")}).values():
+        text = (Path(stage) / path).read_text("utf-8")
+        referenced_original_paths.update(re.findall(r"/assets/images/" + re.escape(article_id) + r"/[a-z0-9.-]+", text))
     for logical, entry in manifest.items():
         for variant in entry.get("variants", []) if isinstance(entry, dict) else []:
-            if not isinstance(variant, dict) or variant.get("path") != logical:
+            if not isinstance(variant, dict):
+                raise PublishError("A reading preview descriptor is invalid")
+            source_path = variant.get("path")
+            own_preview_prefix = f"/assets/images/previews/{article_id}/"
+            if isinstance(source_path, str) and source_path.startswith(own_preview_prefix):
                 continue
             prefix = f"/assets/images/{article_id}/"
             if not logical.startswith(prefix) or not IMAGE.fullmatch(logical[len(prefix):]):
                 raise PublishError("A reading original is outside the article's own asset folder")
-            original = Path(stage) / "site" / logical.lstrip("/")
+            if not isinstance(source_path, str) or not source_path.startswith((prefix, "/assets/images/previews/shared/")):
+                raise PublishError("A reading preview is outside eligible original/shared folders")
+            relative = safe_relative("site" + source_path)
+            filename = PurePosixPath(source_path).name
+            if PurePosixPath(source_path).parent.as_posix() not in {prefix.rstrip("/"), "/assets/images/previews/shared"} or not re.fullmatch(r"[a-z0-9][a-z0-9.-]*\.(png|jpe?g|webp|gif)", filename):
+                raise PublishError("A reading source has an unsafe filename")
+            original = Path(stage) / relative
+            if not original.exists() and reader is not None:
+                record = (source_tree or {}).get(relative)
+                if not record or record.get("type") != "blob" or record.get("mode") != "100644":
+                    raise PublishError("A shared reading source is absent from the pinned regular Git blobs")
+                reader.blob(source_sha, relative, original)
+                imported_reading_paths.add(source_path)
             if not original.is_file() or original.is_symlink():
-                raise PublishError("The small reading original is unavailable")
-            stem, suffix = PurePosixPath(logical).name.rsplit(".", 1)
+                raise PublishError("The reading source is unavailable")
+            checksum, size = file_digest(original)
+            if checksum != variant.get("sha256") or size != variant.get("bytes"):
+                raise PublishError("A reading alias differs from its manifest checksum or size")
+            stem = PurePosixPath(logical).stem
+            suffix = PurePosixPath(source_path).suffix.lstrip(".")
+            original_suffix = PurePosixPath(logical).suffix.lstrip(".")
             width = variant.get("width")
             if isinstance(width, bool) or not isinstance(width, int) or width < 1:
-                raise PublishError("The small original preview width is invalid")
-            path = f"/assets/images/previews/{article_id}/{stem}-{suffix}-reading-{width}.{suffix}"
+                raise PublishError("The reading preview width is invalid")
+            height = variant.get("height")
+            if isinstance(height, bool) or not isinstance(height, int) or height < 1:
+                raise PublishError("The reading preview height is invalid")
+            path = f"{own_preview_prefix}{stem}-{original_suffix}-reading-{width}-{checksum[:12]}.{suffix}"
             target = Path(stage) / "site" / path.lstrip("/")
             target.parent.mkdir(parents=True, exist_ok=True)
             if target.exists() and file_digest(target) != file_digest(original):
@@ -510,7 +544,11 @@ def copy_original_reading_previews(stage, article_id):
             if not target.exists():
                 shutil.copyfile(original, target)
             variant["path"] = path
+            old_reading_paths.add(source_path)
             changed = True
+    for source_path in old_reading_paths - actual_original_paths - referenced_original_paths:
+        if source_path.startswith(f"/assets/images/{article_id}/") or source_path in imported_reading_paths:
+            (Path(stage) / "site" / source_path.lstrip("/")).unlink()
     if changed:
         fragment.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", "utf-8")
 
@@ -567,7 +605,20 @@ def manifest_entries(stage, article_id):
     return fragment, manifest
 
 
+def init_markdown_index(stage):
+    """Give the trusted formatter a Markdown-only index in an exported tree."""
+    environment = {key: value for key, value in os.environ.items() if not key.startswith("GIT_")}
+    environment.update({"GIT_CONFIG_NOSYSTEM": "1", "GIT_CONFIG_GLOBAL": os.devnull, "GIT_TERMINAL_PROMPT": "0"})
+    common = ["git", "-c", "core.hooksPath=" + os.devnull, "-c", "core.fsmonitor=false", "-C", str(stage)]
+    for parameters in (["init", "--quiet"], ["add", "--intent-to-add", "--", "*.md"]):
+        result = subprocess.run(common + parameters, env=environment, stdout=subprocess.PIPE,
+                                stderr=subprocess.PIPE, timeout=180)
+        if result.returncode:
+            raise PublishError("The isolated Markdown validation index could not be created")
+
+
 def run_trusted_checks(stage, args):
+    init_markdown_index(stage)
     report = Path(args.workspace).resolve() / f"{args.article_id}-prepare-report.json"
     commands = [
         [sys.executable, str(ROOT / "tools/article_prepare.py"), "--root", str(stage), "--article-id", args.article_id,
@@ -581,6 +632,16 @@ def run_trusted_checks(stage, args):
         result = subprocess.run(command, cwd=stage, env=environment, stdout=subprocess.PIPE,
                                 stderr=subprocess.STDOUT, timeout=600)
         if result.returncode:
+            source_report = Path(stage) / "test-results/article-report.json"
+            if command[0] == "node" and source_report.is_file():
+                try:
+                    findings = json.loads(source_report.read_text("utf-8")).get("findings", [])
+                    blocking = [{key: finding.get(key) for key in ("code", "file", "detail") if finding.get(key) is not None}
+                                for finding in findings if finding.get("severity") == "error"]
+                except (OSError, ValueError, AttributeError, TypeError):
+                    blocking = []
+                if blocking:
+                    raise PublishError("Trusted source checks failed: " + json.dumps(blocking, ensure_ascii=False)[:6000])
             raise PublishError(f"Trusted source preparation failed: {result.stdout.decode('utf-8', 'replace')[-1500:]}")
     try:
         preparation = json.loads(report.read_text("utf-8"))
@@ -625,7 +686,7 @@ def run_prepare(args, api=None, reader=None):
     try:
         for path in article_source:
             reader.blob(args.source_sha, path, stage / path)
-        copy_original_reading_previews(stage, args.article_id)
+        copy_original_reading_previews(stage, args.article_id, reader=reader, source_sha=args.source_sha, source_tree=source)
         preparation = run_trusted_checks(stage, args) if getattr(args, "prepare", True) else None
         fragment, manifest = manifest_entries(stage, args.article_id)
         remaining = {path.relative_to(stage).as_posix() for path in stage.rglob("*") if path.is_file()}

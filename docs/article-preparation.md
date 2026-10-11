@@ -68,6 +68,9 @@ attribution, rights statements and review decisions. It normalizes only
 insignificant source line endings/trailing whitespace outside literal code and
 mathematics. Markdown hard breaks retain their spaces. Existing readable image
 names, original image bytes and valid reading previews remain unchanged.
+Verified legacy reading aliases within the article's original-image folder are
+accepted and reported; external publishing copies them into the preview folder
+before removing any original. The standalone formatter retains their bytes.
 Renames update figure records and cover/preview/hero roles together in both
 languages. Missing previews use the site's trusted image generator; originals
 are never recompressed. Animation remains animation.

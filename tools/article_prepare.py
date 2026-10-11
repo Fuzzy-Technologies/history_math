@@ -392,11 +392,13 @@ def validate_inventory(root: Path, article_id: str, manifest: dict, references: 
                 needs_generation = True
                 continue
             raise PreparationError(f"Missing reading previews: {original}")
+        variant_paths = set()
         for variant in variants:
             path = variant.get("path") if isinstance(variant, dict) else None
-            if not isinstance(path, str) or not (path == original or path.startswith(preview_prefix)):
+            if not isinstance(path, str) or not (path.startswith(prefix) or path.startswith(preview_prefix)):
                 raise PreparationError(f"Reading preview belongs to another article: {original}")
-            if path.startswith(preview_prefix) and "/" in path[len(preview_prefix):]:
+            path_prefix = preview_prefix if path.startswith(preview_prefix) else prefix
+            if "/" in path[len(path_prefix):]:
                 raise PreparationError(f"Nested reading preview path: {original}")
             preview = safe_file(root, "site" + path, required=False)
             if not preview.exists():
@@ -411,8 +413,9 @@ def validate_inventory(root: Path, article_id: str, manifest: dict, references: 
             if any(type(variant.get(key)) is not int or variant[key] <= 0 or variant[key] > entry[key]
                    for key in ("width", "height")):
                 raise PreparationError(f"Reading preview exceeds original dimensions: {path}")
-            if path in used_previews:
+            if path in variant_paths:
                 raise PreparationError(f"Duplicate reading preview path: {path}")
+            variant_paths.add(path)
             used_previews.add(path)
             previews.append({"path": path, "sha256": variant["sha256"], "bytes": variant["bytes"]})
         originals.append({"path": original, "sha256": entry["sha256"], "bytes": entry["bytes"], "external": external})
@@ -496,11 +499,18 @@ def prepare_package(root: Path, article_id: str, *, write: bool = False,
             if role and role not in [figure.get("path") for figure in figures]:
                 raise PreparationError(f"{field} must have a figure provenance record: {edition['path']}")
     references = list(dict.fromkeys(references))
-    for name in paths:
-        if name.startswith(f"site/assets/images/{article_id}/") and name.removeprefix("site") not in references:
-            raise PreparationError(f"Unreferenced original image: {name}")
     fragment_name = f"site/_data/article_image_assets/{article_id}.json"
     manifest, legacy_inventory = load_inventory(root, article_id)
+    original_prefix = f"/assets/images/{article_id}/"
+    local_aliases = {
+        variant["path"] for entry in manifest.values() if isinstance(entry, dict)
+        for variant in (entry.get("variants") if isinstance(entry.get("variants"), list) else [])
+        if isinstance(variant, dict) and isinstance(variant.get("path"), str)
+        and variant["path"].startswith(original_prefix)
+    }
+    for name in paths:
+        if name.startswith(f"site/assets/images/{article_id}/") and name.removeprefix("site") not in set(references) | local_aliases:
+            raise PreparationError(f"Unreferenced original image: {name}")
     inventory = validate_inventory(root, article_id, manifest, set(references), allow_missing=True)
     rewrites = canonical_names(references)
     if legacy_inventory and (rewrites or inventory["needs_generation"]):
@@ -565,6 +575,9 @@ def prepare_package(root: Path, article_id: str, *, write: bool = False,
               "renamed_assets": [{"from": old.removeprefix("site"), "to": new.removeprefix("site")}
                                  for old, new in sorted(moves.items())],
               "bodies": body_checks, "originals": inventory["originals"], "previews": inventory["previews"],
+              "local_reading_aliases": sorted(local_aliases),
+              "warnings": ["Legacy local reading aliases are retained until verified external publishing copies them into the preview folder"]
+                          if local_aliases else [],
               "preview_generation_required": inventory["needs_generation"],
               "editorial_approval": "pending" if any(item["approval"]["status"] == "pending"
                                                      for item in reviews.values()) else "approved"}
