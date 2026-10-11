@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-31da7e3ce1e1-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-probability-paper-1",
+      "question": "The source treats normal probability paper and a Weibull plot as equivalent and attributes the theory of continuous distributions to Weibull (1951). Confirm the terminology and historical attribution; both source claims are retained in the English adaptation.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-probability-paper-2",
+      "question": "The source says that a curved probability plot allows the curvature and asymmetry of the probability density function to be assessed. Confirm the intended statistical interpretation.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-05-12",
+      "url": "https://teletype.in/@history_math/Veroyatnostnaya-bumaga-05-12"
+    }
+  }
+}
