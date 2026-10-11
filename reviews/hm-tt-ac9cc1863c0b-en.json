@@ -1,0 +1,42 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-ac9cc1863c0b-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "chinese-algebra-chronology",
+      "question": "Can the editor verify whether tianyuan should be attributed to The Nine Chapters and described as analogous to Horner's root-finding scheme? The source wording is preserved.",
+      "blocking": false,
+      "state": "open"
+    },
+    {
+      "id": "historical-priority-claims",
+      "question": "Several first-priority claims need historical review: Descartes introducing functions, Pascal first arranging the arithmetic triangle, Euler writing the first mathematics textbooks in Russian, and Leibniz introducing “algorithm.” These supplied assertions remain unchanged in the adaptation.",
+      "blocking": false,
+      "state": "open"
+    },
+    {
+      "id": "ferrari-name",
+      "question": "The source gives “Luigi Ferrari” for the mathematician dated 1522–1565. May the editor confirm whether the name should be Lodovico Ferrari? The source name is retained.",
+      "blocking": false,
+      "state": "open"
+    },
+    {
+      "id": "leibniz-machine-operations",
+      "question": "Should the description distinguish operations directly performed by Leibniz's calculator from powers and roots obtained by procedures using it? The body and figure caption have different lists of operations.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 18,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-02-02",
+      "url": "https://teletype.in/@history_math/algebra-history-part-2"
+    }
+  }
+}
