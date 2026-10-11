@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-899154c2dd52-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The general rule uses 1/n “at each stage” without explicitly stating whether n is the number of remaining participants or whether trimmings are returned to the remainder. Confirm the intended procedure; the English adaptation preserves the source’s level of detail.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 1,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-13",
+      "url": "https://teletype.in/@history_math/Spravedlivyj-razdel-delimyh-predmetov-11-13"
+    }
+  }
+}
