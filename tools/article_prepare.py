@@ -166,7 +166,9 @@ def package_paths(root: Path, article_id: str) -> tuple[str, ...]:
             continue
         for path in sorted(directory.rglob("*")):
             name = path.relative_to(root).as_posix()
-            if path.is_symlink() or not path.is_file() and not path.is_dir():
+            if path.is_symlink():
+                raise PreparationError(f"Symbolic links are not supported: {name}")
+            if not path.is_file() and not path.is_dir():
                 raise PreparationError(f"Unsupported article asset: {name}")
             if path.is_dir():
                 raise PreparationError(f"Nested article asset directories are not supported: {name}")
