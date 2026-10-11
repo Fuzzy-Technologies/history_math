@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-e5a4fc92063a-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "ford-recruitment-legend",
+      "question": "Can a historical source be supplied for the recruitment legend, its time limits and the claimed newspaper publication? The article explicitly retains it as a legend.",
+      "blocking": false,
+      "state": "open"
+    },
+    {
+      "id": "cryptarithm-carries",
+      "question": "Should the solution explain the carry constraints in steps 2 and 3? In particular, O + E = O alone does not immediately exclude E = 0 without referring to T = 0. The source reasoning is retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 9,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-06-09",
+      "url": "https://teletype.in/@history_math/Zadacha-Forda-kadrovyj-rebus-06-09"
+    }
+  }
+}
