@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-9b2cd87f4c03-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "diagonal-scale-reading-instruction",
+      "question": "The source instructs the user to raise the left leg to an intersection of horizontal and vertical lines. Should this instead say a horizontal line and a diagonal transversal, while preserving the dividers’ opening and moving both legs? The original instruction is retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-05-01",
+      "url": "https://teletype.in/@history_math/Transverse-Scale"
+    }
+  }
+}
