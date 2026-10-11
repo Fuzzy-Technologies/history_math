@@ -1,0 +1,202 @@
+{
+  "/assets/images/hm-tt-1b626a4e40b4/arifmometr-11-19-01.png": {
+    "sha256": "cfaa810978872d24bd0cb319fbfe1ab2b605637867b3adb79feae1bac2bf13a7",
+    "width": 1284,
+    "height": 1064,
+    "bytes": 3047002,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1b626a4e40b4/arifmometr-11-19-01.png-960.webp",
+        "width": 960,
+        "height": 796,
+        "sha256": "b1ede46e301b6fefe3075608af5fd0188cd74c06536a8781bf7b5045b08e7ddd",
+        "bytes": 840930
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-1b626a4e40b4-arifmometr-11-19-01-cfaa810978872d24bd0cb319fbfe1ab2b605637867b3adb79feae1bac2bf13a7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630502464",
+      "asset_id": 630502464,
+      "release_tag": "article-originals-c",
+      "sha256": "cfaa810978872d24bd0cb319fbfe1ab2b605637867b3adb79feae1bac2bf13a7",
+      "bytes": 3047002
+    }
+  },
+  "/assets/images/hm-tt-1b626a4e40b4/arifmometr-11-19-02.png": {
+    "sha256": "7afbca35beb49e1e5fa82c31a9809d50171abdf36048727f19a0566fe43b06bc",
+    "width": 783,
+    "height": 375,
+    "bytes": 601438,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1b626a4e40b4/arifmometr-11-19-02.png-783.webp",
+        "width": 783,
+        "height": 375,
+        "sha256": "797349441011ee13a09e4c30426e9a7502e3e2f5b0b7aae9fde66ec9a5055943",
+        "bytes": 343724
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-1b626a4e40b4-arifmometr-11-19-02-7afbca35beb49e1e5fa82c31a9809d50171abdf36048727f19a0566fe43b06bc.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551919",
+      "asset_id": 630551919,
+      "release_tag": "article-originals-7",
+      "sha256": "7afbca35beb49e1e5fa82c31a9809d50171abdf36048727f19a0566fe43b06bc",
+      "bytes": 601438
+    }
+  },
+  "/assets/images/hm-tt-1b626a4e40b4/arifmometr-11-19-03.png": {
+    "sha256": "f2536be42c89783c9272143428009c80863a3b4aa9868ed584e35d6dc0aaac5c",
+    "width": 2042,
+    "height": 1119,
+    "bytes": 5402474,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1b626a4e40b4/arifmometr-11-19-03-png-reading-960-1fdf2f43186e.webp",
+        "width": 960,
+        "height": 526,
+        "sha256": "1fdf2f43186ec086f6e9897ae39b96d30aca427e053bde9df73804086451b82a",
+        "bytes": 673174
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-1b626a4e40b4-arifmometr-11-19-03-f2536be42c89783c9272143428009c80863a3b4aa9868ed584e35d6dc0aaac5c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552055",
+      "asset_id": 630552055,
+      "release_tag": "article-originals-f",
+      "sha256": "f2536be42c89783c9272143428009c80863a3b4aa9868ed584e35d6dc0aaac5c",
+      "bytes": 5402474
+    }
+  },
+  "/assets/images/hm-tt-1b626a4e40b4/arifmometr-11-19-04.png": {
+    "sha256": "a615f410c4a391dd5163f1196a6fc9e4267df15cb089e6cb8d3a40d9cf7beb17",
+    "width": 2736,
+    "height": 1824,
+    "bytes": 12967687,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1b626a4e40b4/arifmometr-11-19-04-png-reading-960-8b1b04bc364d.webp",
+        "width": 960,
+        "height": 640,
+        "sha256": "8b1b04bc364d93b5e015e4823015aa700eb7c2211798353aabda2a61301d67b4",
+        "bytes": 733078
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-1b626a4e40b4-arifmometr-11-19-04-a615f410c4a391dd5163f1196a6fc9e4267df15cb089e6cb8d3a40d9cf7beb17.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552241",
+      "asset_id": 630552241,
+      "release_tag": "article-originals-a",
+      "sha256": "a615f410c4a391dd5163f1196a6fc9e4267df15cb089e6cb8d3a40d9cf7beb17",
+      "bytes": 12967687
+    }
+  },
+  "/assets/images/hm-tt-1b626a4e40b4/arifmometr-11-19-05.png": {
+    "sha256": "840aad5e8c36b0abebea94a275116d6a104ffb80a10a16110cf0908491465894",
+    "width": 1280,
+    "height": 903,
+    "bytes": 1158792,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1b626a4e40b4/arifmometr-11-19-05.png-960.webp",
+        "width": 960,
+        "height": 677,
+        "sha256": "46a4203411678098b8961d965772c245436404b0dd18c6595523595e00838307",
+        "bytes": 468104
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-1b626a4e40b4-arifmometr-11-19-05-840aad5e8c36b0abebea94a275116d6a104ffb80a10a16110cf0908491465894.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552400",
+      "asset_id": 630552400,
+      "release_tag": "article-originals-8",
+      "sha256": "840aad5e8c36b0abebea94a275116d6a104ffb80a10a16110cf0908491465894",
+      "bytes": 1158792
+    }
+  },
+  "/assets/images/hm-tt-1b626a4e40b4/arifmometr-11-19-06.png": {
+    "sha256": "5e9b91a1c56b58f1803504910fceab889dcb5875d37157b372ee0f53a1e2411a",
+    "width": 1280,
+    "height": 960,
+    "bytes": 2942737,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1b626a4e40b4/arifmometr-11-19-06.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "30ce2306066f840b20ed36bfad5e4684d8996ca99f2ffe84d2c0081bff633916",
+        "bytes": 885260
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-1b626a4e40b4-arifmometr-11-19-06-5e9b91a1c56b58f1803504910fceab889dcb5875d37157b372ee0f53a1e2411a.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552550",
+      "asset_id": 630552550,
+      "release_tag": "article-originals-5",
+      "sha256": "5e9b91a1c56b58f1803504910fceab889dcb5875d37157b372ee0f53a1e2411a",
+      "bytes": 2942737
+    }
+  },
+  "/assets/images/hm-tt-1b626a4e40b4/arifmometr-11-19-07.png": {
+    "sha256": "1a2eddd927eb15958194d0cc34282c1d1b80b8a0ee5f40a6130d468b34d35026",
+    "width": 1708,
+    "height": 1024,
+    "bytes": 3691228,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1b626a4e40b4/arifmometr-11-19-07.png-960.webp",
+        "width": 960,
+        "height": 576,
+        "sha256": "e467797890aebe0b474ef92ad5a970d732ae18df5287e3734d8c4bd7d32286f1",
+        "bytes": 614126
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-1b626a4e40b4-arifmometr-11-19-07-1a2eddd927eb15958194d0cc34282c1d1b80b8a0ee5f40a6130d468b34d35026.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552711",
+      "asset_id": 630552711,
+      "release_tag": "article-originals-1",
+      "sha256": "1a2eddd927eb15958194d0cc34282c1d1b80b8a0ee5f40a6130d468b34d35026",
+      "bytes": 3691228
+    }
+  },
+  "/assets/images/hm-tt-1b626a4e40b4/arifmometr-11-19-08.png": {
+    "sha256": "7df2dcbca13bdaf21aa66c2cbd0def356815c14411f8b587599ddf41275c12bd",
+    "width": 1280,
+    "height": 904,
+    "bytes": 1876910,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1b626a4e40b4/arifmometr-11-19-08.png-960.webp",
+        "width": 960,
+        "height": 678,
+        "sha256": "d6de83d84c93439475afecfdfbe2a6bd01d2324842b9e6e74ef0e0c8bf282d76",
+        "bytes": 621506
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-1b626a4e40b4-arifmometr-11-19-08-7df2dcbca13bdaf21aa66c2cbd0def356815c14411f8b587599ddf41275c12bd.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552855",
+      "asset_id": 630552855,
+      "release_tag": "article-originals-7",
+      "sha256": "7df2dcbca13bdaf21aa66c2cbd0def356815c14411f8b587599ddf41275c12bd",
+      "bytes": 1876910
+    }
+  }
+}

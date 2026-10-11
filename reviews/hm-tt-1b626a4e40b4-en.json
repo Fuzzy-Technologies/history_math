@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-1b626a4e40b4-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source calls the Odhner wheel the basic mechanism of all arithmometer designs, while also discussing machines using Leibniz’s principle. Confirm the intended scope of “all”; the statement is retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 8,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-19",
+      "url": "https://teletype.in/@history_math/Arifmometr-11-19"
+    }
+  }
+}
