@@ -1,0 +1,52 @@
+{
+  "/assets/images/hm-tt-01520ceee4c3/allotrion-01.jpeg": {
+    "sha256": "5e7f163cb6284d7f82ee5995a7784348564430269e211e70bfcbba19a7766fe5",
+    "width": 400,
+    "height": 636,
+    "bytes": 53381,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-01520ceee4c3/allotrion-01-400.jpeg",
+        "width": 400,
+        "height": 636,
+        "bytes": 53381,
+        "sha256": "5e7f163cb6284d7f82ee5995a7784348564430269e211e70bfcbba19a7766fe5"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-01520ceee4c3-allotrion-01-5e7f163cb6284d7f82ee5995a7784348564430269e211e70bfcbba19a7766fe5.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630493756",
+      "asset_id": 630493756,
+      "release_tag": "article-originals-5",
+      "sha256": "5e7f163cb6284d7f82ee5995a7784348564430269e211e70bfcbba19a7766fe5",
+      "bytes": 53381
+    }
+  },
+  "/assets/images/hm-tt-01520ceee4c3/allotrion-02.png": {
+    "sha256": "2e57c915c64b8f09883ac4b4fc651c3c631abe94e7049f8e109139f2fad169a8",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2075810,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-01520ceee4c3/allotrion-02.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "1821d9b133af54773b37e37ffda6654c056f19e49bf771e10eacca3f2671d477",
+        "bytes": 1070568
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-01520ceee4c3-allotrion-02-2e57c915c64b8f09883ac4b4fc651c3c631abe94e7049f8e109139f2fad169a8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630530871",
+      "asset_id": 630530871,
+      "release_tag": "article-originals-2",
+      "sha256": "2e57c915c64b8f09883ac4b4fc651c3c631abe94e7049f8e109139f2fad169a8",
+      "bytes": 2075810
+    }
+  }
+}
