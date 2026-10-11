@@ -1,0 +1,109 @@
+name: Prepare article files
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, ready_for_review]
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: 'Article PR number; leave empty to prepare all open article PRs (owner only)'
+        required: false
+        type: string
+  push:
+    branches: [feature/article-preparation-automation]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: article-preparation-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+env:
+  # Enabled only after the owner-authorized bootstrap code passes GitHub CI.
+  ARTICLE_ASSET_BOOTSTRAP_ENABLED: 'true'
+
+jobs:
+  plan:
+    if: >-
+      github.repository == 'Fuzzy-Technologies/history_math' &&
+      (github.event_name == 'pull_request_target' ||
+       (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/master') ||
+       (github.event_name == 'push' && github.ref == 'refs/heads/feature/article-preparation-automation' && github.actor == 'Tim55667757'))
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    outputs:
+      count: ${{ steps.plan.outputs.count }}
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      # Never check out the PR head in a job with write permissions.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.base.sha || github.sha }}
+          persist-credentials: false
+          fetch-depth: 1
+      - id: plan
+        name: Authorize and pin article source commits
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: >-
+          python3 tools/article_batch.py --repository "$GITHUB_REPOSITORY"
+          --base-sha "$GITHUB_SHA" --event-file "$GITHUB_EVENT_PATH"
+          --output test-results/article-preparation-plan.json
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: article-preparation-plan
+          path: test-results/article-preparation-plan.json
+          retention-days: 30
+          if-no-files-found: error
+
+  prepare:
+    needs: plan
+    if: needs.plan.outputs.count != '0'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.base.sha || github.sha }}
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install trusted preparation dependencies
+        run: |
+          npm ci
+          python3 -m pip install -r tools/requirements-images.txt
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: article-preparation-plan
+          path: test-results
+      - name: Verify originals, store assets and prepare clean article commits
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PREPARATION_SHARD: ${{ matrix.shard }}
+          PREPARATION_SHARDS: ${{ matrix.shards }}
+        run: >-
+          python3 tools/article_batch.py --repository "$GITHUB_REPOSITORY"
+          --plan test-results/article-preparation-plan.json
+          --shard "$PREPARATION_SHARD" --shards "$PREPARATION_SHARDS"
+          --workspace "$RUNNER_TEMP/article-preparation"
+          --output test-results/article-preparation-receipts.json
+      - name: Save verified preparation receipts
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: article-preparation-receipts-${{ matrix.shard }}
+          path: test-results/article-preparation-receipts.json
+          retention-days: 30
+          if-no-files-found: warn

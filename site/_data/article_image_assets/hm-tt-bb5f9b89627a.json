@@ -1,0 +1,227 @@
+{
+  "/assets/images/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-01.png": {
+    "sha256": "c8ae31d2b73ec95c4cc3140be799e9d316d528644e96823f0df7f64af6b7d0d8",
+    "width": 687,
+    "height": 980,
+    "bytes": 1170891,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-01-png-reading-687-c83418f65435.webp",
+        "width": 687,
+        "height": 980,
+        "sha256": "c83418f654357dc80b45c263ae10716d96b76b34f8ebdbe587fd4b5018eea3a4",
+        "bytes": 521010
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-bb5f9b89627a-isaak-nyuton-malchik-igrayus-01-c8ae31d2b73ec95c4cc3140be799e9d316d528644e96823f0df7f64af6b7d0d8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630500116",
+      "asset_id": 630500116,
+      "release_tag": "article-originals-c",
+      "sha256": "c8ae31d2b73ec95c4cc3140be799e9d316d528644e96823f0df7f64af6b7d0d8",
+      "bytes": 1170891
+    }
+  },
+  "/assets/images/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-02.png": {
+    "sha256": "ec000943178c3231d5ae15af7ce371d42ede1f0216119e13746953d8fe277309",
+    "width": 4595,
+    "height": 3032,
+    "bytes": 36075901,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-02.png-960.webp",
+        "width": 960,
+        "height": 633,
+        "sha256": "536d819de28d38ba218cc56f245a48acd3ea876a4f623c36764fe2b462465244",
+        "bytes": 1109270
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-bb5f9b89627a-isaak-nyuton-malchik-igrayus-02-ec000943178c3231d5ae15af7ce371d42ede1f0216119e13746953d8fe277309.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630566639",
+      "asset_id": 630566639,
+      "release_tag": "article-originals-e",
+      "sha256": "ec000943178c3231d5ae15af7ce371d42ede1f0216119e13746953d8fe277309",
+      "bytes": 36075901
+    }
+  },
+  "/assets/images/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-03.png": {
+    "sha256": "c3c3d7b5b63c97133642ed98d6d4e39f41c6c16d7c04bc3d2cf6033d6f301d34",
+    "width": 640,
+    "height": 480,
+    "bytes": 594921,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-03.png-640.webp",
+        "width": 640,
+        "height": 480,
+        "sha256": "2cf3a2204c3a679b58cc9bbbb77f0a8db23bd22a83c3d3573c56b53e39371a9b",
+        "bytes": 242872
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-bb5f9b89627a-isaak-nyuton-malchik-igrayus-03-c3c3d7b5b63c97133642ed98d6d4e39f41c6c16d7c04bc3d2cf6033d6f301d34.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630566824",
+      "asset_id": 630566824,
+      "release_tag": "article-originals-c",
+      "sha256": "c3c3d7b5b63c97133642ed98d6d4e39f41c6c16d7c04bc3d2cf6033d6f301d34",
+      "bytes": 594921
+    }
+  },
+  "/assets/images/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-04.png": {
+    "sha256": "5926bcb8c3345a9a5d1e27dfc5034263fd79bfa0d2182156e3faf1fb0a151302",
+    "width": 2298,
+    "height": 2606,
+    "bytes": 92722,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-04.png-960.webp",
+        "width": 960,
+        "height": 1089,
+        "sha256": "b9061aa75d0eaf058e88169718c40ed0d60c68e019a8ae9ea3f1fb71fbb0724c",
+        "bytes": 112724
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-bb5f9b89627a-isaak-nyuton-malchik-igrayus-04-5926bcb8c3345a9a5d1e27dfc5034263fd79bfa0d2182156e3faf1fb0a151302.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630566979",
+      "asset_id": 630566979,
+      "release_tag": "article-originals-5",
+      "sha256": "5926bcb8c3345a9a5d1e27dfc5034263fd79bfa0d2182156e3faf1fb0a151302",
+      "bytes": 92722
+    }
+  },
+  "/assets/images/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-05.png": {
+    "sha256": "e62f83740646da803256590d12be6788fe045f0d2d8c8087ea118af2fc20e291",
+    "width": 1205,
+    "height": 777,
+    "bytes": 2073864,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-05.png-960.webp",
+        "width": 960,
+        "height": 619,
+        "sha256": "997ef0acc66fe6b57d48f0008c1abc421e3f5d294e0a889fdbe4b2f965bc5965",
+        "bytes": 798030
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-bb5f9b89627a-isaak-nyuton-malchik-igrayus-05-e62f83740646da803256590d12be6788fe045f0d2d8c8087ea118af2fc20e291.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630567185",
+      "asset_id": 630567185,
+      "release_tag": "article-originals-e",
+      "sha256": "e62f83740646da803256590d12be6788fe045f0d2d8c8087ea118af2fc20e291",
+      "bytes": 2073864
+    }
+  },
+  "/assets/images/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-06.png": {
+    "sha256": "47c28cc95a51efa891da314b0e79c2f0d01cdb3488e9b7978f075c3a101827a2",
+    "width": 1537,
+    "height": 852,
+    "bytes": 1930899,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-06-png-reading-960-8c951e169074.webp",
+        "width": 960,
+        "height": 532,
+        "sha256": "8c951e169074062fcf6c5ff5f8873a53d8dc88a7a66553a6edb9f98c4af040f9",
+        "bytes": 518984
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-bb5f9b89627a-isaak-nyuton-malchik-igrayus-06-47c28cc95a51efa891da314b0e79c2f0d01cdb3488e9b7978f075c3a101827a2.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630567330",
+      "asset_id": 630567330,
+      "release_tag": "article-originals-4",
+      "sha256": "47c28cc95a51efa891da314b0e79c2f0d01cdb3488e9b7978f075c3a101827a2",
+      "bytes": 1930899
+    }
+  },
+  "/assets/images/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-07.png": {
+    "sha256": "e306f1fcf26a825faf00242158cd37257718bcbff4ac74889623ef9a7608e02b",
+    "width": 1145,
+    "height": 800,
+    "bytes": 1151751,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-07.png-960.webp",
+        "width": 960,
+        "height": 671,
+        "sha256": "de8da679e0f88e9fde02c63b564e3e7ad5b8e920213b382cf9b5c99f7d7dc51e",
+        "bytes": 411392
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-bb5f9b89627a-isaak-nyuton-malchik-igrayus-07-e306f1fcf26a825faf00242158cd37257718bcbff4ac74889623ef9a7608e02b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630567592",
+      "asset_id": 630567592,
+      "release_tag": "article-originals-e",
+      "sha256": "e306f1fcf26a825faf00242158cd37257718bcbff4ac74889623ef9a7608e02b",
+      "bytes": 1151751
+    }
+  },
+  "/assets/images/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-08.png": {
+    "sha256": "5fca1729642ea52b88380db58e30208716f9229f43cec95d1f13eb000ec48216",
+    "width": 1204,
+    "height": 1621,
+    "bytes": 5274807,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-08.png-960.webp",
+        "width": 960,
+        "height": 1292,
+        "sha256": "f2ac0b2eeecffbb5a6dee48234d048681192f826a29f4d39282a9e304d82a9a9",
+        "bytes": 2089516
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-bb5f9b89627a-isaak-nyuton-malchik-igrayus-08-5fca1729642ea52b88380db58e30208716f9229f43cec95d1f13eb000ec48216.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630567831",
+      "asset_id": 630567831,
+      "release_tag": "article-originals-5",
+      "sha256": "5fca1729642ea52b88380db58e30208716f9229f43cec95d1f13eb000ec48216",
+      "bytes": 5274807
+    }
+  },
+  "/assets/images/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-09.png": {
+    "sha256": "9999ab19cd496dec9d0df7782b9b23b4a0cf33c6a961a42389356e8e1798b276",
+    "width": 653,
+    "height": 1356,
+    "bytes": 1869885,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-09.png-653.webp",
+        "width": 653,
+        "height": 1356,
+        "sha256": "fe1f95235a037ccbcc66f3073198a52c5a8eef3c3ba40e17f9c8a1045e1aa258",
+        "bytes": 1044794
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-bb5f9b89627a-isaak-nyuton-malchik-igrayus-09-9999ab19cd496dec9d0df7782b9b23b4a0cf33c6a961a42389356e8e1798b276.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630568065",
+      "asset_id": 630568065,
+      "release_tag": "article-originals-9",
+      "sha256": "9999ab19cd496dec9d0df7782b9b23b4a0cf33c6a961a42389356e8e1798b276",
+      "bytes": 1869885
+    }
+  }
+}
