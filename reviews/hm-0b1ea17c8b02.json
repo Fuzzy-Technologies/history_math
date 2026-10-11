@@ -36,14 +36,15 @@
     "Converted visible external URLs into descriptive Markdown links; destinations, comment-block reconciliation and editorial decisions remain unchanged.",
     "Matched the existing portrait visually against the documented Commons lithograph; added attribution and source without changing the archived image bytes.",
     "Recorded the owner's explicit publication approval dated 2026-10-09, set the website publication date, and bound the decision to the final Markdown and unchanged image bytes. Earlier publication dates are preserved.",
-    "Applied Timur Gilmullin’s requested 2026-10-09 post-publication corrections: concise visible figure captions and credits; where applicable, nonduplicated numeric table, explanatory prose and compact equivalent formulas. Original source/rights provenance is retained separately. This is an owner-requested derivative update, not a new scientific review."
+    "Applied Timur Gilmullin’s requested 2026-10-09 post-publication corrections: concise visible figure captions and credits; where applicable, nonduplicated numeric table, explanatory prose and compact equivalent formulas. Original source/rights provenance is retained separately. This is an owner-requested derivative update, not a new scientific review.",
+    "Owner requested on 2026-10-11 that the Rumovsky website publication date be 2024-03-25 in both languages. Enabled explicit preservation of the existing original date and refreshed the package hash; prior editorial decisions, prose and portrait bytes are retained."
   ],
   "review_version": 1,
   "approval": {
     "status": "approved",
     "reviewed_by": "Timur Gilmullin (Tim55667757)",
     "date": "2026-10-09",
-    "package_sha256": "dbb51f6bf73e92aa524d4705ab35b28218eb62aeba10be4e251d7fb306de90f0"
+    "package_sha256": "515644c6ada57b95728c05c45db82f934b0ca48d87de5d1d71ee15848497abd5"
   },
   "questions": [
     {

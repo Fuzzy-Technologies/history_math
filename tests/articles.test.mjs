@@ -59,6 +59,16 @@ test('publication dates are automatic; demo and supplied dates remain validated'
   assert.ok(errors(text.replace('status: draft', 'status: draft\ndate: 2026-02-30')).some(x => x.code === 'HM_METADATA'));
 });
 
+test('preserving an original publication date requires a boolean flag and a valid date', () => {
+  const input = text.replace('status: draft', 'status: draft\noriginal_publication:\n  outlet: Telegram\n  date: "2024-03-25"\n  preserve_date: true');
+  assert.deepEqual(errors(input), []);
+  for (const mutated of [
+    input.replace('  date: "2024-03-25"\n', ''),
+    input.replace('2024-03-25', '2024-02-30'),
+    input.replace('preserve_date: true', 'preserve_date: "true"')
+  ]) assert.ok(errors(mutated).some(x => x.code === 'HM_METADATA'));
+});
+
 test('external links require descriptive text while destinations and code remain intact', () => {
   for (const body of [
     '\nSource: https://example.org/article',

@@ -7,8 +7,20 @@ require "date"
 require "uri"
 
 module HistoryMath
+  # Explicit owner-authorized corrections may retain another outlet's date.
+  def self.preserved_publication_date(data)
+    original = data["original_publication"]
+    return unless original.is_a?(Hash) && original["preserve_date"] == true
+
+    date = Date.iso8601(original.fetch("date")).to_s
+    raise Date::Error unless date == original["date"]
+    date
+  rescue KeyError, TypeError, Date::Error
+    raise Jekyll::Errors::FatalException, "Invalid preserved original publication date"
+  end
+
   # The owner-authorized Teletype migration preserves its visible outlet date.
-  # Ordinary publications and other historical outlets keep master merge dates.
+  # Other publications keep master merge dates unless explicitly opted in above.
   def self.teletype_publication_date(data)
     original = data["original_publication"]
     return unless original.is_a?(Hash) && original["outlet"] == "Teletype"
@@ -34,7 +46,7 @@ module HistoryMath
     end
     site.collections.fetch("articles").docs.each do |doc|
       next unless doc.data["status"] == "published"
-      original_date = teletype_publication_date(doc.data)
+      original_date = preserved_publication_date(doc.data) || teletype_publication_date(doc.data)
       if original_date
         doc.data["date"] = Time.iso8601("#{original_date}T00:00:00+03:00")
         next
