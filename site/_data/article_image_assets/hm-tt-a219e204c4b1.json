@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-a219e204c4b1/kartochki-perelmana-10-06-01.png": {
+    "sha256": "4d313907075ececd8d22615792547d0b51e6a84729ca6a3085639039b96a4d45",
+    "width": 725,
+    "height": 725,
+    "bytes": 1477015,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-a219e204c4b1/kartochki-perelmana-10-06-01.png-725.webp",
+        "width": 725,
+        "height": 725,
+        "sha256": "cfe1ddf0b855e1338fd9ce317398646ffad6ebc2d1b3ce8783ca5edb59fc086f",
+        "bytes": 464576
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-a219e204c4b1-kartochki-perelmana-10-06-01-4d313907075ececd8d22615792547d0b51e6a84729ca6a3085639039b96a4d45.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552094",
+      "asset_id": 630552094,
+      "release_tag": "article-originals-4",
+      "sha256": "4d313907075ececd8d22615792547d0b51e6a84729ca6a3085639039b96a4d45",
+      "bytes": 1477015
+    }
+  },
+  "/assets/images/hm-tt-a219e204c4b1/kartochki-perelmana-10-06-02.png": {
+    "sha256": "9397ca5d30d4d46f9e7e6044e905d45037b41bd8e8f70064fe7e8c71d0f2afb7",
+    "width": 500,
+    "height": 800,
+    "bytes": 25792,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-a219e204c4b1/kartochki-perelmana-10-06-02.png-500.webp",
+        "width": 500,
+        "height": 800,
+        "sha256": "01f43fcec15cb920b143b619ac157999423220557924277278d3aa005b8cb03f",
+        "bytes": 10592
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-a219e204c4b1-kartochki-perelmana-10-06-02-9397ca5d30d4d46f9e7e6044e905d45037b41bd8e8f70064fe7e8c71d0f2afb7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552248",
+      "asset_id": 630552248,
+      "release_tag": "article-originals-9",
+      "sha256": "9397ca5d30d4d46f9e7e6044e905d45037b41bd8e8f70064fe7e8c71d0f2afb7",
+      "bytes": 25792
+    }
+  },
+  "/assets/images/hm-tt-a219e204c4b1/kartochki-perelmana-10-06-03.png": {
+    "sha256": "e3f79c501acc2b0e5670d728b5c1b42f60a0cff18c24409cd6a2c468b39a8c94",
+    "width": 388,
+    "height": 323,
+    "bytes": 3818,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-a219e204c4b1/kartochki-perelmana-10-06-03.png-388.webp",
+        "width": 388,
+        "height": 323,
+        "sha256": "dd02c441819d5415b0c13e913fd698175d7a0e1553d708f529c42b15a46df9fa",
+        "bytes": 1752
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-a219e204c4b1-kartochki-perelmana-10-06-03-e3f79c501acc2b0e5670d728b5c1b42f60a0cff18c24409cd6a2c468b39a8c94.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552412",
+      "asset_id": 630552412,
+      "release_tag": "article-originals-e",
+      "sha256": "e3f79c501acc2b0e5670d728b5c1b42f60a0cff18c24409cd6a2c468b39a8c94",
+      "bytes": 3818
+    }
+  },
+  "/assets/images/hm-tt-a219e204c4b1/kartochki-perelmana-10-06-04.png": {
+    "sha256": "b653105c1ac9fa91af21af6b19dc665f1187d1aea5c22ddeb9e1e34fe9b1bde5",
+    "width": 689,
+    "height": 1024,
+    "bytes": 1137998,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-a219e204c4b1/kartochki-perelmana-10-06-04.png-689.webp",
+        "width": 689,
+        "height": 1024,
+        "sha256": "5f074ae4773d2c5ad31e3085cd6265aef36564fd0066e1e13feca17cc555e989",
+        "bytes": 431288
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-a219e204c4b1-kartochki-perelmana-10-06-04-b653105c1ac9fa91af21af6b19dc665f1187d1aea5c22ddeb9e1e34fe9b1bde5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552574",
+      "asset_id": 630552574,
+      "release_tag": "article-originals-b",
+      "sha256": "b653105c1ac9fa91af21af6b19dc665f1187d1aea5c22ddeb9e1e34fe9b1bde5",
+      "bytes": 1137998
+    }
+  },
+  "/assets/images/hm-tt-a219e204c4b1/kartochki-perelmana-10-06-05.png": {
+    "sha256": "a1868d23ef50383162e3e43f2d1535982e063c81c957dc1f55f432d0fcc40de8",
+    "width": 2000,
+    "height": 2000,
+    "bytes": 6713146,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-a219e204c4b1/kartochki-perelmana-10-06-05.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "de4e3a0a3b5e56f818b4536e45dd320c4128fa5c6dd61cf14932ad20e27ef263",
+        "bytes": 990468
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-a219e204c4b1-kartochki-perelmana-10-06-05-a1868d23ef50383162e3e43f2d1535982e063c81c957dc1f55f432d0fcc40de8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552727",
+      "asset_id": 630552727,
+      "release_tag": "article-originals-a",
+      "sha256": "a1868d23ef50383162e3e43f2d1535982e063c81c957dc1f55f432d0fcc40de8",
+      "bytes": 6713146
+    }
+  }
+}
