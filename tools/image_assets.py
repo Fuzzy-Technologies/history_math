@@ -9,6 +9,7 @@ import base64
 import hashlib
 import io
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -20,6 +21,62 @@ LOGOS = {
     "Math-with-Mansur-logo.png": "Math with Mansur",
     "Math-with-Mansur-logo-ru.png": "Математика с Мансур-абый",
 }
+EXTERNAL_REPOSITORY = "Fuzzy-Technologies/history_math"
+EXTERNAL_PATH = re.compile(r"/assets/images/([a-z0-9][a-z0-9-]*)/([a-z0-9][a-z0-9.-]*)\.(png|jpg|jpeg|webp|gif|svg)\Z")
+SHA256 = re.compile(r"[a-f0-9]{64}\Z")
+EXTERNAL_KEYS = {"api_url", "asset_id", "bytes", "release_tag", "sha256", "storage", "url"}
+
+
+def positive_integer(value):
+    return type(value) is int and 0 < value <= 9_007_199_254_740_991
+
+
+def external_asset_name(path, sha256):
+    match = EXTERNAL_PATH.fullmatch(path) if isinstance(path, str) else None
+    if not match or ".." in path or not isinstance(sha256, str) or not SHA256.fullmatch(sha256):
+        raise ValueError("Invalid external original identity")
+    return f"{match[1]}-{match[2]}-{sha256}.{match[3]}"
+
+
+def external_original(entry, path):
+    """Accept only immutable, content-addressed assets in the approved repository."""
+    if not isinstance(entry, dict) or "external_original" not in entry:
+        return None
+    external = entry["external_original"]
+    name = external_asset_name(path, entry.get("sha256"))
+    tag = f"article-originals-{entry['sha256'][0]}"
+    valid = isinstance(external, dict) and set(external) == EXTERNAL_KEYS and external.get("storage") == "github-release" and \
+        positive_integer(external.get("asset_id")) and \
+        all(positive_integer(entry.get(key)) for key in ("bytes", "width", "height")) and \
+        type(entry.get("logo")) is bool and external.get("sha256") == entry["sha256"] and \
+        external.get("bytes") == entry["bytes"] and external.get("release_tag") == tag and \
+        external.get("url") == f"https://github.com/{EXTERNAL_REPOSITORY}/releases/download/{tag}/{name}" and \
+        external.get("api_url") == f"https://api.github.com/repos/{EXTERNAL_REPOSITORY}/releases/assets/{external.get('asset_id')}"
+    if not valid:
+        raise ValueError(f"Invalid external original descriptor: {path}")
+    return external
+
+
+def validate_external_previews(entry, site=None):
+    site = SITE if site is None else Path(site)
+    variants = entry.get("variants")
+    if not isinstance(variants, list) or not variants:
+        raise ValueError("Missing external original preview")
+    paths = set()
+    for variant in variants:
+        path = variant.get("path") if isinstance(variant, dict) else None
+        if not isinstance(path, str) or not re.fullmatch(r"/assets/images/previews/[a-z0-9-]+/[a-z0-9][a-z0-9._-]*", path) or \
+                ".." in path or path in paths or not isinstance(variant.get("sha256"), str) or not SHA256.fullmatch(variant["sha256"]) or \
+                not all(positive_integer(variant.get(key)) for key in ("bytes", "width", "height")) or \
+                variant["width"] > entry["width"] or variant["height"] > entry["height"]:
+            raise ValueError("Invalid external original preview")
+        paths.add(path)
+        target = (site / path.lstrip("/")).resolve(strict=True)
+        if not target.is_relative_to(site.resolve()) or not target.is_file():
+            raise ValueError(f"Unsafe image asset: {path}")
+        if target.stat().st_size != variant["bytes"] or digest(target) != variant["sha256"]:
+            raise ValueError(f"Changed external original preview: {path}")
+    return variants
 
 
 def digest(path):
@@ -47,17 +104,45 @@ def url(path):
 
 
 def generate(article_id=None):
+    if article_id is not None and (not isinstance(article_id, str) or not re.fullmatch(r"[a-z0-9][a-z0-9-]*", article_id)):
+        raise ValueError("Invalid article image identity")
     from PIL import Image, ImageOps, ImageSequence
 
-    manifest = {}
-    previous = inventory() if MANIFEST.exists() else {}
+    global_previous = json.loads(MANIFEST.read_text(encoding="utf-8")) if MANIFEST.exists() else {}
+    fragment_previous = {path.stem: json.loads(path.read_text(encoding="utf-8"))
+                         for path in sorted((SITE / "_data/article_image_assets").glob("*.json"))}
+    previous = dict(global_previous)
+    owners = {}
+    for identity, entries in fragment_previous.items():
+        if set(previous).intersection(entries):
+            raise ValueError("Duplicate image manifest entry")
+        previous.update(entries)
+        owners.update({path: identity for path in entries})
+    manifest = dict(global_previous) if article_id is not None else {}
     fragments = {}
+    # An external original cannot be regenerated from an absent local file. Keep
+    # its verified derivatives and descriptor in their existing inventory.
+    for path, entry in previous.items():
+        identity = path.split("/")[3]
+        if article_id is not None and identity != article_id:
+            continue
+        if external_original(entry, path):
+            if not (SITE / path.lstrip("/")).exists():
+                validate_external_previews(entry)
+            destination = fragments.setdefault(article_id or owners.get(path, identity), {}) \
+                if article_id is not None or path in owners else manifest
+            destination[path] = entry
+            if destination is not manifest:
+                manifest.pop(path, None)
     for source in originals():
         relative = source.relative_to(SITE / "assets/images")
         if article_id is not None and relative.parts[0] != article_id:
             continue
         migration = relative.parts[0].startswith("hm-tt-")
-        destination = fragments.setdefault(relative.parts[0], {}) if migration else manifest
+        identity = article_id or owners.get(url(source), relative.parts[0])
+        destination = fragments.setdefault(identity, {}) if article_id is not None or migration or url(source) in owners else manifest
+        if destination is not manifest:
+            manifest.pop(url(source), None)
         old = previous.get(url(source))
         if old and old["sha256"] == digest(source) and all(
                 (SITE / v["path"].lstrip("/")).exists() and digest(SITE / v["path"].lstrip("/")) == v["sha256"]
@@ -104,7 +189,8 @@ def generate(article_id=None):
                              "sha256": digest(target), "bytes": target.stat().st_size})
         destination[url(source)] = {"sha256": digest(source), "width": image.width, "height": image.height,
                                  "bytes": source.stat().st_size, "logo": logo, "variants": variants}
-    if article_id is None:
+    if article_id is None or manifest != global_previous:
+        MANIFEST.parent.mkdir(parents=True, exist_ok=True)
         MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     for identity, entries in fragments.items():
         target = SITE / "_data/article_image_assets" / f"{identity}.json"
@@ -114,9 +200,17 @@ def generate(article_id=None):
 
 def validate():
     manifest = inventory()
-    assert set(manifest) == {url(p) for p in originals()}, "Image inventory changed; regenerate assets"
+    external = {path for path, entry in manifest.items() if external_original(entry, path)}
+    local = {url(p) for p in originals()}
+    assert set(manifest) == local | external, "Image inventory changed; regenerate assets"
     for original, entry in manifest.items():
-        assert digest(SITE / original.lstrip("/")) == entry["sha256"], f"Stale preview: {original}"
+        target = SITE / original.lstrip("/")
+        if original in external:
+            validate_external_previews(entry)
+        if target.exists():
+            assert target.resolve().is_relative_to(SITE.resolve()), f"Unsafe original: {original}"
+            assert digest(target) == entry["sha256"], f"Stale preview: {original}"
+            assert target.stat().st_size == entry["bytes"], f"Changed original size: {original}"
         assert entry["variants"], f"Missing preview: {original}"
         for variant in entry["variants"]:
             target = SITE / variant["path"].lstrip("/")
@@ -129,7 +223,7 @@ def validate():
                 assert variant["bytes"] < 200_000, f"Logo exceeds transfer budget: {target}"
     total = sum(item["bytes"] for item in manifest.values())
     previews = sum(item["variants"][-1]["bytes"] for item in manifest.values())
-    print(f"PASS: {len(manifest)} originals unchanged; largest reading assets {previews:,} vs {total:,} bytes")
+    print(f"PASS: {len(manifest)} original records, {len(external)} external; largest reading assets {previews:,} vs {total:,} bytes")
 
 
 if __name__ == "__main__":
