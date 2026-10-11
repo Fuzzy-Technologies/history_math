@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-ea92383ab5d3-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "rsa-theorem-relationship",
+      "question": "The source describes Fermat’s little theorem as based on Euler’s totient function, and gives aᵖ⁻¹ ≡ 1 (mod p) without its hypotheses. Should the relationship to Euler’s theorem and the required hypotheses be clarified? The English text preserves the source claim and formula.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-02-03",
+      "url": "https://teletype.in/@history_math/Bible-of-Math-Algebra-Is-More-Than-Just-Numbers"
+    }
+  }
+}
