@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-b9eb93e87ff6-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-mouseion-duration",
+      "question": "Please verify the claim of at least 800 years of continuous operation against the article’s foundation around 290 BCE and its account of decline and the last named scholar in the fourth/fifth centuries CE. The source chronology is retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "en-library-arab-destruction",
+      "question": "Please review the claim that the Library of Alexandria may have been destroyed during the Arab conquest and provide its evidential status; the source presents it as an alternative account and that framing is retained.",
+      "blocking": false,
+      "state": "open"
+    },
+    {
+      "id": "en-mouseion-foundation",
+      "question": "Please verify the 332 BCE founding date for Alexandria and the claim that Aristotle’s library formed the foundation of its collection. Both source statements are retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-03-09",
+      "url": "https://teletype.in/@history_math/Museion"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
