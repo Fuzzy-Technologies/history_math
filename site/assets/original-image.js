@@ -28,40 +28,37 @@ function validateOriginal({url, apiUrl, sha256, bytes, filename}) {
   return source.href;
 }
 
+// Release responses are loaded as native images and attachments. Cross-origin
+// fetch cannot read their redirected response without a matching CORS header.
+export function nativeOriginalTarget(descriptor) {
+  if (!descriptor.apiUrl) throw new Error('External original metadata is required');
+  return {url: validateOriginal(descriptor), filename: descriptor.filename};
+}
+
 // The returned object URL exists only after the exact original passes its digest.
 // The caller owns its lifetime and must revoke it when the viewer closes.
 export async function loadVerifiedOriginal(descriptor, {fetch: request = globalThis.fetch,
   crypto: cryptoAPI = globalThis.crypto, url: urlAPI = globalThis.URL, signal} = {}) {
   const source = validateOriginal(descriptor);
+  if (descriptor.apiUrl) throw new Error('External originals require native image and attachment delivery');
   assertActive(signal);
-  const candidates = descriptor.apiUrl ? [descriptor.apiUrl, source] : [source];
-  let failure;
-  for (const candidate of candidates) {
-    try {
-      assertActive(signal);
-      const response = await request(candidate, {credentials: 'omit', signal,
-        headers: candidate === descriptor.apiUrl ? {Accept: 'application/octet-stream'} : {}});
-      if (!response.ok || /\bjson\b/i.test(response.headers.get('content-type') || '')) {
-        throw new Error('Original image binary unavailable');
-      }
-      const bytes = await response.arrayBuffer();
-      assertActive(signal);
-      if (bytes.byteLength !== descriptor.bytes) throw new Error('Original image size mismatch');
-      const digest = await cryptoAPI.subtle.digest('SHA-256', bytes);
-      assertActive(signal);
-      const sha256 = [...new Uint8Array(digest)].map(byte => byte.toString(16).padStart(2, '0')).join('');
-      if (sha256 !== descriptor.sha256) throw new Error('Original image checksum mismatch');
-      const extension = descriptor.filename.split('.').at(-1).toLowerCase();
-      const objectUrl = urlAPI.createObjectURL(new Blob([bytes], {type: imageTypes[extension]}));
-      let revoked = false;
-      return {url: objectUrl, filename: descriptor.filename, revoke() {
-        if (!revoked) urlAPI.revokeObjectURL(objectUrl);
-        revoked = true;
-      }};
-    } catch (error) {
-      assertActive(signal);
-      failure = error;
-    }
+  const response = await request(source, {credentials: 'omit', signal});
+  assertActive(signal);
+  if (!response.ok || /\bjson\b/i.test(response.headers.get('content-type') || '')) {
+    throw new Error('Original image binary unavailable');
   }
-  throw failure || new Error('Original image unavailable');
+  const bytes = await response.arrayBuffer();
+  assertActive(signal);
+  if (bytes.byteLength !== descriptor.bytes) throw new Error('Original image size mismatch');
+  const digest = await cryptoAPI.subtle.digest('SHA-256', bytes);
+  assertActive(signal);
+  const sha256 = [...new Uint8Array(digest)].map(byte => byte.toString(16).padStart(2, '0')).join('');
+  if (sha256 !== descriptor.sha256) throw new Error('Original image checksum mismatch');
+  const extension = descriptor.filename.split('.').at(-1).toLowerCase();
+  const objectUrl = urlAPI.createObjectURL(new Blob([bytes], {type: imageTypes[extension]}));
+  let revoked = false;
+  return {url: objectUrl, filename: descriptor.filename, revoke() {
+    if (!revoked) urlAPI.revokeObjectURL(objectUrl);
+    revoked = true;
+  }};
 }

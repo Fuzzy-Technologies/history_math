@@ -76,15 +76,28 @@ languages. Missing previews use the site's trusted image generator; originals
 are never recompressed. Animation remains animation.
 
 The external publishing step is separate from this formatter. It uploads an
-original under an immutable checksum name, verifies the uploaded bytes and
+original under an immutable checksum name, independently downloads the public
+release bytes without authentication, verifies their length and SHA-256, and
 records its `external_original` descriptor in the article inventory. The
 logical `/assets/images/<id>/...` figure path remains stable. Reading previews
-stay in the article's Git branch; opening or downloading the original resolves
-to the verified external asset. An existing external descriptor is validated
-and preserved, never replaced by an unverified URL.
+stay in the article's Git branch. Opening an original loads its release URL
+lazily through a native image element; downloading follows the release
+attachment link. Both use normal browser delivery. The frontend does not fetch
+original bytes through JavaScript or perform a client-side checksum check, so
+it does not depend on cross-origin JavaScript access to release responses.
+The strict API URL remains verification metadata, not a browser fallback.
+The client validates the repository, checksum bucket, complete checksum name
+and descriptor metadata before assigning an external URL.
+An existing external descriptor is validated and preserved, never replaced by
+an unverified URL.
 
-After upload verification, the authorized migration reconstructs the unmerged
-article branch from the current trusted base with the prepared files. It uses
+The storage receipt requires `public_native_delivery: pass` for every external
+original. An optional API binary checksum probe is reported separately as
+`public_api_binary_sha256`; it does not establish browser CORS support.
+
+After upload and public native delivery verification, the authorized migration
+reconstructs the unmerged article branch from the current trusted base with the
+prepared files. It uses
 an expected-head check so another contributor's intervening changes are never
 overwritten. Deleting an image in a later ordinary commit would leave its
 bytes in history; rebuilding the unmerged branch avoids that ancestry. The PR

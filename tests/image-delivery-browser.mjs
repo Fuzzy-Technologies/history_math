@@ -87,16 +87,16 @@ try {
       await page.waitForFunction(() => document.querySelector('#image-viewer').getAttribute('aria-busy') === 'false');
       await page.locator('.viewer-canvas img').evaluate(img => img.decode());
       if (external) {
-        assert.match(await page.locator('.viewer-canvas img').getAttribute('src'), /^blob:/);
-        assert.ok(allRequests.some(url => url === external.api_url || url === external.url));
-        assert.deepEqual(originalRasterRequests(requests), []);
+        assert.equal(await page.locator('.viewer-canvas img').getAttribute('src'), external.url);
+        assert.ok(allRequests.some(url => url === external.url));
+        assert.ok(!allRequests.some(url => url === external.api_url), 'Native delivery must not depend on API CORS');
+        assert.deepEqual([...new Set(originalRasterRequests(requests))], [new URL(external.url).pathname]);
       } else {
         assert.equal(await page.locator('.viewer-canvas img').getAttribute('src'), original);
         assert.deepEqual([...new Set(originalRasterRequests(requests))], [new URL(original, origin).pathname]);
       }
       const download = page.locator('[data-viewer-download]');
-      if (external) assert.match(await download.getAttribute('href'), /^blob:/);
-      else assert.equal(await download.getAttribute('href'), new URL(original, origin).href);
+      assert.equal(await download.getAttribute('href'), new URL(original, origin).href);
       if (!checkedDownload) {
         const [file] = await Promise.all([page.waitForEvent('download'), download.click()]);
         const bytes = await readFile(await file.path());

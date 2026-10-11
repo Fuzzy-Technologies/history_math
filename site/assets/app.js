@@ -1,5 +1,5 @@
 const assetVersion = new URL(import.meta.url).search;
-const [{search, searchByTag, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}, {loadVerifiedOriginal}] = await Promise.all([
+const [{search, searchByTag, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}, {loadVerifiedOriginal, nativeOriginalTarget}] = await Promise.all([
   import('./core.js' + assetVersion),
   import('./select.js' + assetVersion),
   import('./reading-position.js' + assetVersion),
@@ -59,7 +59,6 @@ if (viewer && typeof viewer.showModal === 'function') {
   const download = viewer.querySelector('[data-viewer-download]');
   const expanded = document.createElement('img');
   let activeOriginal;
-  let loadedOriginal;
   let loadController;
   download.addEventListener('click', async event => {
     if (!download.hasAttribute('href') || download.getAttribute('aria-disabled') === 'true') {
@@ -67,7 +66,7 @@ if (viewer && typeof viewer.showModal === 'function') {
       return;
     }
     const target = new URL(download.href);
-    if (target.protocol === 'blob:' || target.origin === location.origin) return;
+    if (download.dataset.nativeOriginal === 'true' || target.protocol === 'blob:' || target.origin === location.origin) return;
     event.preventDefault();
     const current = request;
     let original;
@@ -135,8 +134,6 @@ if (viewer && typeof viewer.showModal === 'function') {
   async function openImage(image, trigger) {
     const current = ++request;
     loadController?.abort();
-    loadedOriginal?.revoke();
-    loadedOriginal = undefined;
     loadController = new AbortController();
     activeOriginal = {url: image.dataset.original || image.currentSrc || image.src,
       apiUrl: image.dataset.originalApi, sha256: image.dataset.originalSha256,
@@ -145,6 +142,7 @@ if (viewer && typeof viewer.showModal === 'function') {
     viewer.setAttribute('aria-busy', 'true');
     expanded.removeAttribute('src');
     download.removeAttribute('href');
+    delete download.dataset.nativeOriginal;
     download.setAttribute('aria-disabled', 'true');
     expanded.alt = image.alt;
     const description = image.closest('figure')?.querySelector('figcaption');
@@ -155,14 +153,10 @@ if (viewer && typeof viewer.showModal === 'function') {
     viewer.querySelector('[data-viewer-action="close"]').focus();
     try {
       if (activeOriginal.apiUrl) {
-        const original = await loadVerifiedOriginal(activeOriginal, {signal: loadController.signal});
-        if (!viewer.open || current !== request) {
-          original.revoke();
-          return;
-        }
-        loadedOriginal = original;
+        const original = nativeOriginalTarget(activeOriginal);
         expanded.src = original.url;
         download.download = original.filename;
+        download.dataset.nativeOriginal = 'true';
       } else {
         expanded.src = activeOriginal.url;
         download.download = activeOriginal.filename || new URL(expanded.src).pathname.split('/').at(-1);
@@ -179,8 +173,6 @@ if (viewer && typeof viewer.showModal === 'function') {
       viewer.setAttribute('aria-busy', 'false');
     } catch {
       if (viewer.open && current === request) {
-        loadedOriginal?.revoke();
-        loadedOriginal = undefined;
         expanded.removeAttribute('src');
         caption.textContent = viewer.dataset.errorLabel;
         viewer.setAttribute('aria-busy', 'false');
@@ -200,14 +192,13 @@ if (viewer && typeof viewer.showModal === 'function') {
   viewer.addEventListener('close', () => {
     request += 1;
     loadController?.abort();
-    loadedOriginal?.revoke();
-    loadedOriginal = undefined;
     activeOriginal = undefined;
     viewer.setAttribute('aria-busy', 'false');
     pointers.clear();
     canvas.replaceChildren();
     expanded.removeAttribute('src');
     download.removeAttribute('href');
+    delete download.dataset.nativeOriginal;
     download.setAttribute('aria-disabled', 'true');
     stage.classList.remove('is-dragging');
     document.documentElement.classList.remove('viewer-open');

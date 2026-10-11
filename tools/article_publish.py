@@ -164,7 +164,7 @@ class GitHubAPI:
         self.opener = build_opener(SafeRedirect())
         self.releases = {}
         self.release_assets = {}
-        self.public_delivery_verified = False
+        self.public_api_binary_verified = False
         self.last_write = 0
 
     def _wait(self, seconds, reason):
@@ -372,10 +372,12 @@ class GitHubAPI:
         if self.download_digest(expected_url) != (expected_sha, expected_size):
             raise PublishError("Downloaded original checksum or size differs; keep the branch history")
         api_url = f"https://api.github.com/repos/{self.repository}/releases/assets/{asset_id}"
-        if delivery_probe and not self.public_delivery_verified:
-            if self.download_digest(api_url, require_cors=True) != (expected_sha, expected_size):
+        if delivery_probe and not self.public_api_binary_verified:
+            # GitHub's binary response has no final CORS header. Native <img> and
+            # attachment links do not use browser fetch; verify bytes, not CORS.
+            if self.download_digest(api_url) != (expected_sha, expected_size):
                 raise PublishError("Public API delivery did not return the exact original bytes")
-            self.public_delivery_verified = True
+            self.public_api_binary_verified = True
         return {
             "storage": "github-release", "url": expected_url, "api_url": api_url,
             "asset_id": asset_id, "release_tag": tag,
@@ -671,10 +673,10 @@ def run_prepare(args, api=None, reader=None):
     required = {
         *language_paths.values(),
         f"reviews/{args.article_id}.json", f"reviews/{args.article_id}-en.json",
-        f"site/_data/article_image_assets/{args.article_id}.json",
     }
     if not required.issubset(article_source):
-        raise PublishError("The pinned article must include both language versions, review records and image manifest")
+        raise PublishError("The pinned article must include both language versions and review records")
+    fragment_path = f"site/_data/article_image_assets/{args.article_id}.json"
     for path, record in article_source.items():
         safe_relative(path)
         if record["type"] != "blob" or record["mode"] != "100644":
@@ -686,12 +688,19 @@ def run_prepare(args, api=None, reader=None):
     try:
         for path in article_source:
             reader.blob(args.source_sha, path, stage / path)
+        # Contributors supply declared original images; trusted preparation
+        # creates their inventory and previews. A present malformed fragment
+        # remains an error rather than being replaced with an empty inventory.
+        if fragment_path not in article_source:
+            initial_fragment = stage / fragment_path
+            initial_fragment.parent.mkdir(parents=True, exist_ok=True)
+            initial_fragment.write_text("{}\n", "utf-8")
         copy_original_reading_previews(stage, args.article_id, reader=reader, source_sha=args.source_sha, source_tree=source)
         preparation = run_trusted_checks(stage, args) if getattr(args, "prepare", True) else None
         fragment, manifest = manifest_entries(stage, args.article_id)
         remaining = {path.relative_to(stage).as_posix() for path in stage.rglob("*") if path.is_file()}
-        if set(article_paths(args.article_id, remaining).values()) != set(language_paths.values()) or not required.issubset(remaining):
-            raise PublishError("Preparation must retain both source language files and review records")
+        if set(article_paths(args.article_id, remaining).values()) != set(language_paths.values()) or not (required | {fragment_path}).issubset(remaining):
+            raise PublishError("Preparation must retain both source language files, review records and an image manifest")
         receipt = {
             "version": 1, "repository": args.repository, "pr": args.pr, "article_id": args.article_id,
             "branch": args.branch, "source_sha": args.source_sha, "base_sha": args.base_sha,
@@ -766,7 +775,8 @@ def run_prepare(args, api=None, reader=None):
             raise PublishError("The prepared commit must have only the trusted clean base as parent")
         api.check_pr(args)
         receipt.update({"mode": "prepared", "new_sha": commit["sha"], "tree_sha": tree["sha"],
-                        "public_api_delivery": "pass" if api.public_delivery_verified else ("not_required" if not manifest else "not_run")})
+                        "public_native_delivery": "pass" if manifest else "not_required",
+                        "public_api_binary_sha256": "pass" if api.public_api_binary_verified else "not_run"})
         return write_receipt(receipt, args.receipt_out)
     finally:
         shutil.rmtree(stage)
@@ -824,8 +834,8 @@ def apply_receipt(receipt, api, reader):
     evidence = {original.get("path"): original for original in originals}
     if len(evidence) != len(originals) or set(evidence) != set(manifest):
         raise PublishError("The original verification evidence does not match the prepared manifest")
-    if manifest and receipt.get("public_api_delivery") != "pass":
-        raise PublishError("Public original delivery was not verified")
+    if manifest and receipt.get("public_native_delivery") != "pass":
+        raise PublishError("Native public original delivery was not verified")
     external_keys = {"storage", "url", "api_url", "asset_id", "release_tag", "sha256", "bytes"}
     for logical, entry in manifest.items():
         external = entry.get("external_original") if isinstance(entry, dict) else None

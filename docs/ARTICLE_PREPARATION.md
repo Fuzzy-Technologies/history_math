@@ -16,9 +16,13 @@ do not edit one shared inventory. Teletype image originals are unchanged;
 lossless WebP reading variants retain the original download/zoom target. The
 article preparation automation stores heavy originals outside Git, records
 their immutable URLs and SHA-256 digests in the inventory, and keeps compact
-reading assets in the article PR. It removes originals from unmerged branch
-history only after verifying the uploaded bytes. Existing local originals
-remain supported. Migrated PDFs use the largest local reading variant so
+reading assets in the article PR. Opening an external original uses a native
+image request; downloading follows its release attachment link. Exact-byte
+and checksum verification happens in trusted preparation, without relying on
+cross-origin JavaScript reads in the browser. It removes originals from
+unmerged branch history only after independently verifying public delivery and
+the uploaded bytes. Existing local originals remain supported. Migrated PDFs
+use the largest local reading variant so
 their post-merge generation remains offline and reproducible.
 Original animations retain animation in their reading variants. Editorial
 approval remains pending until the owner reviews the current package.

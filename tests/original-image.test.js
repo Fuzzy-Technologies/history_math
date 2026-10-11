@@ -1,13 +1,15 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash, webcrypto} from 'node:crypto';
-import {loadVerifiedOriginal} from '../site/assets/original-image.js';
+import {loadVerifiedOriginal, nativeOriginalTarget} from '../site/assets/original-image.js';
 
 const original = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+j/pkAAAAASUVORK5CYII=', 'base64');
 const sha256 = createHash('sha256').update(original).digest('hex');
 const descriptor = {sha256, bytes: original.length, filename: 'diagram-01.png',
   apiUrl: 'https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/273',
   url: `https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-${sha256[0]}/hm-tt-abc-diagram-01-${sha256}.png`};
+const legacy = {...descriptor, apiUrl: undefined,
+  url: `https://raw.githubusercontent.com/Fuzzy-Technologies/history_math/${'a'.repeat(40)}/site/assets/images/hm-tt-abc/diagram-01.png`};
 
 function dependencies(respond) {
   const calls = [];
@@ -30,16 +32,16 @@ function binary(bytes = original) {
   return new Response(bytes, {headers: {'Content-Type': 'application/octet-stream'}});
 }
 
-test('the public asset API loads an exact original without credentials and owns one revocable blob', async () => {
+test('legacy Git downloads retain exact-byte verification without credentials', async () => {
   const runtime = dependencies(() => binary());
   assert.equal(runtime.calls.length, 0, 'No original is fetched until explicitly requested');
-  const loaded = await loadVerifiedOriginal(descriptor, runtime.options);
+  const loaded = await loadVerifiedOriginal(legacy, runtime.options);
   assert.equal(loaded.url, 'blob:verified-original');
   assert.equal(loaded.filename, 'diagram-01.png');
   assert.equal(runtime.calls.length, 1);
-  assert.equal(runtime.calls[0].url, descriptor.apiUrl);
+  assert.equal(runtime.calls[0].url, legacy.url);
   assert.equal(runtime.calls[0].options.credentials, 'omit');
-  assert.deepEqual(runtime.calls[0].options.headers, {Accept: 'application/octet-stream'});
+  assert.equal(runtime.calls[0].options.headers, undefined);
   assert.equal(runtime.created[0].type, 'image/png');
   assert.deepEqual(Buffer.from(await runtime.created[0].arrayBuffer()), original);
   loaded.revoke();
@@ -47,25 +49,16 @@ test('the public asset API loads an exact original without credentials and owns 
   assert.deepEqual(runtime.revoked, ['blob:verified-original']);
 });
 
-test('JSON asset metadata falls back to the verified binary release URL', async () => {
-  const runtime = dependencies(url => url === descriptor.apiUrl ?
-    new Response('{"name":"image.png"}', {headers: {'Content-Type': 'application/json'}}) : binary());
-  const loaded = await loadVerifiedOriginal(descriptor, runtime.options);
-  assert.deepEqual(runtime.calls.map(call => call.url), [descriptor.apiUrl, descriptor.url]);
-  assert.equal(runtime.created.length, 1);
-  assert.deepEqual(runtime.calls[1].options.headers, {});
-  loaded.revoke();
+test('an external original selects its native immutable image and attachment URL', () => {
+  assert.deepEqual(nativeOriginalTarget(descriptor), {url: descriptor.url, filename: 'diagram-01.png'});
+  assert.throws(() => nativeOriginalTarget(legacy), /External original metadata is required/);
 });
 
-test('a failed API request can fall back to an exact release original', async () => {
-  const runtime = dependencies(url => {
-    if (url === descriptor.apiUrl) throw new TypeError('CORS request failed');
-    return binary();
-  });
-  const loaded = await loadVerifiedOriginal(descriptor, runtime.options);
-  assert.equal(runtime.calls.length, 2);
-  assert.equal(runtime.created.length, 1);
-  loaded.revoke();
+test('external originals never use cross-origin fetch or allocate a viewer blob', async () => {
+  const runtime = dependencies(() => binary());
+  await assert.rejects(loadVerifiedOriginal(descriptor, runtime.options), /native image and attachment delivery/);
+  assert.deepEqual(runtime.calls, []);
+  assert.deepEqual(runtime.created, []);
 });
 
 test('incorrect original size or digest never creates a zoom or download blob', async () => {
@@ -73,8 +66,8 @@ test('incorrect original size or digest never creates a zoom or download blob', 
   corrupt[0] ^= 1;
   for (const [bytes, message] of [[original.subarray(1), /size mismatch/], [corrupt, /checksum mismatch/]]) {
     const runtime = dependencies(() => binary(bytes));
-    await assert.rejects(loadVerifiedOriginal(descriptor, runtime.options), message);
-    assert.equal(runtime.calls.length, 2);
+    await assert.rejects(loadVerifiedOriginal(legacy, runtime.options), message);
+    assert.equal(runtime.calls.length, 1);
     assert.deepEqual(runtime.created, []);
   }
 });
@@ -83,7 +76,7 @@ test('unavailable or JSON originals fail without substituting a reading preview'
   for (const respond of [() => new Response('', {status: 404}),
     () => new Response('{}', {headers: {'Content-Type': 'application/json'}})]) {
     const runtime = dependencies(respond);
-    await assert.rejects(loadVerifiedOriginal(descriptor, runtime.options), /binary unavailable/);
+    await assert.rejects(loadVerifiedOriginal(legacy, runtime.options), /binary unavailable/);
     assert.deepEqual(runtime.created, []);
   }
 });
@@ -102,19 +95,20 @@ test('invalid integrity and external locations are rejected before a request', a
   ];
   for (const mutation of mutations) {
     const runtime = dependencies(() => binary());
+    assert.throws(() => nativeOriginalTarget({...descriptor, ...mutation}), /Invalid/);
     await assert.rejects(loadVerifiedOriginal({...descriptor, ...mutation}, runtime.options), /Invalid/);
     assert.deepEqual(runtime.calls, []);
     assert.deepEqual(runtime.created, []);
   }
 });
 
-test('closing during the request aborts without a fallback or object URL', async () => {
+test('closing during a legacy download aborts without allocating an object URL', async () => {
   const controller = new AbortController();
   const runtime = dependencies(() => {
     controller.abort();
     return binary();
   });
-  await assert.rejects(loadVerifiedOriginal(descriptor, {...runtime.options, signal: controller.signal}), {name: 'AbortError'});
+  await assert.rejects(loadVerifiedOriginal(legacy, {...runtime.options, signal: controller.signal}), {name: 'AbortError'});
   assert.equal(runtime.calls.length, 1);
   assert.deepEqual(runtime.created, []);
 });
@@ -126,17 +120,12 @@ test('closing during checksum verification does not leak a completed blob', asyn
     controller.abort();
     return webcrypto.subtle.digest(...args);
   }}};
-  await assert.rejects(loadVerifiedOriginal(descriptor, {...runtime.options, crypto, signal: controller.signal}), {name: 'AbortError'});
+  await assert.rejects(loadVerifiedOriginal(legacy, {...runtime.options, crypto, signal: controller.signal}), {name: 'AbortError'});
   assert.equal(runtime.calls.length, 1);
   assert.deepEqual(runtime.created, []);
 });
 
-test('a legacy immutable Git URL can still be downloaded with the same integrity check', async () => {
-  const runtime = dependencies(() => binary());
-  const source = {...descriptor, apiUrl: undefined,
-    url: `https://raw.githubusercontent.com/Fuzzy-Technologies/history_math/${'a'.repeat(40)}/site/assets/images/hm-tt-abc/diagram-01.png`};
-  const loaded = await loadVerifiedOriginal(source, runtime.options);
-  assert.deepEqual(runtime.calls.map(call => call.url), [source.url]);
-  assert.equal(runtime.created.length, 1);
-  loaded.revoke();
+test('future ordinary article identifiers can use the same native storage contract', () => {
+  const source = {...descriptor, url: descriptor.url.replace('hm-tt-abc-', 'geometry-first-')};
+  assert.deepEqual(nativeOriginalTarget(source), {url: source.url, filename: source.filename});
 });

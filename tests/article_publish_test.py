@@ -1,8 +1,10 @@
 """Publication preparation fails closed before leased branch history changes."""
 
 import argparse
+import base64
 import hashlib
 import importlib.util
+import io
 import json
 from pathlib import Path
 import shutil
@@ -55,6 +57,29 @@ def sample_manifest():
                       "sha256": PREVIEW_SHA, "bytes": len(PREVIEW)}]}}
 
 
+def complete_editions(reader):
+    """Give exported packages valid author metadata without importing PR code."""
+    for language in ("ru", "en"):
+        identity = ARTICLE + ("-en" if language == "en" else "")
+        metadata = {"schema_version": 1, "article_id": identity, "source_work_id": ARTICLE,
+                    "layout": "article", "title": "Fixture author title", "authors": ["Fixture author"],
+                    "author": "Fixture author", "lang": language, "translation_key": ARTICLE,
+                    "description": "Fixture description for exported source validation.", "type": "essay",
+                    "tags": ["history", "math"], "math": True, "status": "draft", "date": "2024-03-25",
+                    "permalink": f"/{'ru/' if language == 'ru' else ''}articles/{ARTICLE}/",
+                    "rights_basis": "Owner-supplied fixture; editorial approval remains pending.",
+                    "original_publication": {"outlet": "Teletype", "date": "2024-03-25", "preserve_date": True},
+                    "figures": [{"id": "fig-1", "path": LOGICAL, "alt": "Fixture image.",
+                                 "caption": "Fixture caption.", "source": "Fixture author source.",
+                                 "rights_basis": "Owner-supplied fixture image."}],
+                    "preview_image": LOGICAL, "cover_image": LOGICAL}
+        reader.files[f"site/_articles/{ARTICLE}.{language}.md"] = (
+            "---\n" + json.dumps(metadata, indent=2) + "\n---\n" +
+            'Literal $x+y$ author formula.\n\n{% include article-figure.html id="fig-1" %}\n').encode()
+        reader.files[f"reviews/{identity}.json"] = json.dumps({"review_version": 1, "article_id": identity,
+                                                               "approval": {"status": "pending"}, "questions": []}).encode()
+
+
 class MemoryGit:
     def __init__(self):
         self.files = {
@@ -95,7 +120,7 @@ class MemoryGit:
 
 class MemoryAPI:
     token = "test-only-secret-not-a-real-token"
-    public_delivery_verified = True
+    public_api_binary_verified = True
 
     def __init__(self, fail_upload=False, fail_head_check=None):
         self.calls = []
@@ -160,6 +185,9 @@ class ArticlePublishTest(unittest.TestCase):
             self.assertEqual(receipt["new_sha"], NEW)
             self.assertEqual(receipt["release_target_sha"], MASTER)
             self.assertFalse(receipt["branch_updated"])
+            self.assertEqual(receipt["public_native_delivery"], "pass")
+            self.assertEqual(receipt["public_api_binary_sha256"], "pass")
+            self.assertNotIn("public_api_delivery", receipt)
             self.assertEqual(reader.pushes, [])
             entries = {item["path"]: item for item in api.calls[0][1]["tree"]}
             self.assertNotIn("site" + LOGICAL, entries)
@@ -289,25 +317,7 @@ class ArticlePublishTest(unittest.TestCase):
                 shutil.copytree(publisher.ROOT / name, stage / name,
                                 ignore=shutil.ignore_patterns("__pycache__"))
             reader = MemoryGit()
-            for language in ("ru", "en"):
-                identity = ARTICLE + ("-en" if language == "en" else "")
-                metadata = {"schema_version": 1, "article_id": identity, "source_work_id": ARTICLE,
-                            "layout": "article", "title": "Fixture author title", "authors": ["Fixture author"],
-                            "author": "Fixture author", "lang": language, "translation_key": ARTICLE,
-                            "description": "Fixture description for exported source validation.", "type": "essay",
-                            "tags": ["history", "math"], "math": True, "status": "draft", "date": "2024-03-25",
-                            "permalink": f"/{'ru/' if language == 'ru' else ''}articles/{ARTICLE}/",
-                            "rights_basis": "Owner-supplied fixture; editorial approval remains pending.",
-                            "original_publication": {"outlet": "Teletype", "date": "2024-03-25", "preserve_date": True},
-                            "figures": [{"id": "fig-1", "path": LOGICAL, "alt": "Fixture image.",
-                                         "caption": "Fixture caption.", "source": "Fixture author source.",
-                                         "rights_basis": "Owner-supplied fixture image."}],
-                            "preview_image": LOGICAL, "cover_image": LOGICAL}
-                reader.files[f"site/_articles/{ARTICLE}.{language}.md"] = (
-                    "---\n" + json.dumps(metadata, indent=2) + "\n---\n" +
-                    'Literal $x+y$ author formula.\n\n{% include article-figure.html id="fig-1" %}\n').encode()
-                reader.files[f"reviews/{identity}.json"] = json.dumps({"review_version": 1, "article_id": identity,
-                                                                       "approval": {"status": "pending"}, "questions": []}).encode()
+            complete_editions(reader)
             for path in reader.files:
                 if publisher.scoped_path(path, ARTICLE):
                     reader.blob(SOURCE, path, stage / path)
@@ -317,6 +327,80 @@ class ArticlePublishTest(unittest.TestCase):
             self.assertTrue(all(body["unchanged"] for body in result["bodies"]))
             source_report = json.loads((stage / "test-results/article-report.json").read_text())
             self.assertEqual(source_report["result"], "pass")
+
+    def test_contributor_original_without_inventory_gets_verified_generated_preview(self):
+        if not (publisher.ROOT / "node_modules/yaml").is_dir():
+            self.skipTest("Trusted Node authoring dependencies unavailable")
+        from PIL import Image
+
+        class ExportGit(MemoryGit):
+            def base_workspace(self, sha, destination):
+                super().base_workspace(sha, destination)
+                for name in ("site", "reviews", "schemas", "templates", "tools"):
+                    shutil.copytree(publisher.ROOT / name, Path(destination) / name,
+                                    ignore=shutil.ignore_patterns("__pycache__"))
+
+        class PreparingAPI(MemoryAPI):
+            def __init__(self):
+                super().__init__()
+                self.original_bytes = None
+                self.uploaded_blobs = {}
+
+            def ensure_original(self, article_id, logical, entry, local_path, *remaining):
+                self.original_bytes = local_path.read_bytes()
+                if publisher.file_digest(local_path) != (entry["sha256"], entry["bytes"]):
+                    raise AssertionError("Generated inventory must match supplied original bytes")
+                tag = f"article-originals-{entry['sha256'][0]}"
+                name = f"{ARTICLE}-figure-01-{entry['sha256']}.png"
+                return {**descriptor(), "url": f"https://github.com/{publisher.REPOSITORY}/releases/download/{tag}/{name}",
+                        "release_tag": tag, "sha256": entry["sha256"], "bytes": entry["bytes"]}
+
+            def post(self, path, payload):
+                if path.endswith("/blobs"):
+                    data = base64.b64decode(payload["content"])
+                    self.uploaded_blobs[git_sha(data)] = data
+                    return {"sha": git_sha(data)}
+                return super().post(path, payload)
+
+        with tempfile.TemporaryDirectory() as directory:
+            reader, api = ExportGit(), PreparingAPI()
+            complete_editions(reader)
+            png = io.BytesIO()
+            Image.new("RGB", (64, 48), (24, 68, 116)).save(png, format="PNG")
+            supplied = png.getvalue()
+            reader.files["site" + LOGICAL] = supplied
+            fragment = f"site/_data/article_image_assets/{ARTICLE}.json"
+            del reader.files[fragment]
+            del reader.files["site" + PREVIEW_PATH]
+            receipt = publisher.run_prepare(args_for(directory), api=api, reader=reader)
+            self.assertEqual(receipt["source_checks"], "pass")
+            self.assertTrue(all(body["unchanged"] for body in receipt["preparation"]["bodies"]))
+            self.assertEqual(api.original_bytes, supplied)
+            self.assertEqual(reader.files["site" + LOGICAL], supplied)
+            self.assertNotIn(fragment, reader.files)
+            tree = {entry["path"]: entry for entry in api.calls[0][1]["tree"]}
+            generated = json.loads(tree[fragment]["content"])[LOGICAL]
+            self.assertEqual(generated["sha256"], hashlib.sha256(supplied).hexdigest())
+            self.assertEqual(generated["bytes"], len(supplied))
+            self.assertNotIn("site" + LOGICAL, tree)
+            self.assertEqual(generated["external_original"]["sha256"], generated["sha256"])
+            for variant in generated["variants"]:
+                data = api.uploaded_blobs[tree["site" + variant["path"]]["sha"]]
+                self.assertEqual(hashlib.sha256(data).hexdigest(), variant["sha256"])
+                self.assertEqual(len(data), variant["bytes"])
+                with Image.open(io.BytesIO(data)) as preview:
+                    self.assertEqual(preview.size, (64, 48))
+                    self.assertEqual(preview.convert("RGB").getpixel((0, 0)), (24, 68, 116))
+
+    def test_present_malformed_inventory_is_not_replaced(self):
+        with tempfile.TemporaryDirectory() as directory:
+            reader, api = MemoryGit(), MemoryAPI()
+            fragment = f"site/_data/article_image_assets/{ARTICLE}.json"
+            reader.files[fragment] = b"not valid JSON"
+            with self.assertRaisesRegex(publisher.PublishError, "unavailable or invalid"):
+                publisher.run_prepare(args_for(directory), api=api, reader=reader)
+            self.assertEqual(reader.files[fragment], b"not valid JSON")
+            self.assertEqual(api.calls, [])
 
     def test_contributor_race_after_upload_blocks_commit_and_branch_update(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -384,7 +468,38 @@ class ArticlePublishTest(unittest.TestCase):
         for _ in range(2):
             self.assertEqual(api.ensure_original(ARTICLE, LOGICAL, sample_manifest()[LOGICAL], None, MASTER), descriptor())
         self.assertEqual(api.uploads, [])
-        self.assertEqual(sum(cors for _, cors in api.downloads), 1)
+        self.assertEqual(sum("/releases/assets/" in url for url, _ in api.downloads), 1)
+        self.assertTrue(all(cors is False for _, cors in api.downloads))
+
+    def test_native_exact_original_delivery_does_not_require_cors(self):
+        class PublicResponse(io.BytesIO):
+            headers = {"Content-Type": "application/octet-stream"}
+
+        class PublicOpener:
+            def __init__(self, data):
+                self.data = data
+                self.requests = []
+
+            def open(self, request, timeout):
+                self.requests.append(request)
+                return PublicResponse(self.data)
+
+        api = ExistingAssetAPI()
+        # Exercise real streamed public verification, not a mocked checksum.
+        api.download_digest = publisher.GitHubAPI.download_digest.__get__(api)
+        opener = PublicOpener(ORIGINAL)
+        with patch.object(publisher, "build_opener", return_value=opener):
+            self.assertEqual(api.ensure_original(ARTICLE, LOGICAL, sample_manifest()[LOGICAL], None, MASTER), descriptor())
+        self.assertTrue(api.public_api_binary_verified)
+        self.assertEqual(len(opener.requests), 2)
+        self.assertTrue(all(request.get_header("Authorization") is None for request in opener.requests))
+
+        altered = ExistingAssetAPI()
+        altered.download_digest = publisher.GitHubAPI.download_digest.__get__(altered)
+        with patch.object(publisher, "build_opener", return_value=PublicOpener(b"altered original")):
+            with self.assertRaisesRegex(publisher.PublishError, "Downloaded original checksum"):
+                altered.ensure_original(ARTICLE, LOGICAL, sample_manifest()[LOGICAL], None, MASTER)
+        self.assertFalse(altered.public_api_binary_verified)
 
     def test_symlink_executable_and_unmanifested_original_data_are_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
