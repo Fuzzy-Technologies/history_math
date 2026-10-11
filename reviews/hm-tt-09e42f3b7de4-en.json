@@ -1,0 +1,42 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-09e42f3b7de4-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source associates Emmy Noether with a textbook Modern Algebra (1931), while separately attributing Modern Algebra (1930) to van der Waerden. Confirm the intended authorship and dates; both attributions are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-english-2",
+      "question": "The source states that Chebyshev established the asymptotic law of prime distribution. Confirm the intended result and whether a qualification concerning bounds is required; the statement is retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-english-3",
+      "question": "The Hilbert-problem paragraph states that all continuous groups are Lie groups and summarizes the eighteenth problem as finiteness of crystallographic groups. Confirm the intended hypotheses, scope and dates of these compressed statements; the English does not silently amend them.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-english-4",
+      "question": "The source describes Morozov’s 1938 result as enumerating all “primitive representations” of simple Lie groups. Confirm the intended term, since a different representation-theoretic classification may be meant; the source phrase is retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 12,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-02-02",
+      "url": "https://teletype.in/@history_math/algebra-history-part-3"
+    }
+  }
+}
