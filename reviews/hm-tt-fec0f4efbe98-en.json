@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-fec0f4efbe98-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-johann-1",
+      "question": "The source dates Bernoulli's Paris teaching to 1691–1693 but says he returned home in 1692, and describes him as a professor of Greek on returning to Basel in 1705. Confirm these chronology and appointment details; all are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-johann-2",
+      "question": "Confirm the source's claim that Bernoulli practised medicine throughout his life and its statement that the exponential function was unavailable in 1691. The English retains these claims.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-01-07",
+      "url": "https://teletype.in/@history_math/Bernulli-Iogann-16671748-01-07"
+    }
+  }
+}
