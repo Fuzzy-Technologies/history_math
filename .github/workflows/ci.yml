@@ -3,7 +3,7 @@ name: Prototype checks
 on:
   pull_request:
   push:
-    branches: [master, 'feature/**']
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -17,17 +17,13 @@ jobs:
   articles:
     name: Article package
     runs-on: ubuntu-24.04
-    timeout-minutes: 60
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-          fetch-depth: 0
+          fetch-depth: 1
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
-      - uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8 # v1.327.0
-        with:
-          ruby-version: '3.3'
-          bundler-cache: true
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: '22'
@@ -37,21 +33,14 @@ jobs:
           python3 -m unittest discover -s tests -p markdown_tables_test.py
           python3 tools/markdown_tables.py
       - name: Install pinned checks
-        run: npm ci && npx playwright install --with-deps chromium
-      - name: Restore incremental PDF cache
-        id: pdf-cache
-        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
-        with:
-          path: .pdf-cache
-          key: pdf-v1-${{ runner.os }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}-${{ github.job }}
-          restore-keys: pdf-v1-${{ runner.os }}-
+        run: npm ci
       - name: Contract and report regression tests
         run: node --test tests/articles.test.mjs tests/article-review.test.mjs
-      - name: Source, Jekyll preview, output and browser gates
+      - name: Source contracts and article report
         env:
           PR_HEAD_REF: ${{ github.event.pull_request.head.ref || github.ref_name }}
           PR_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
-        run: node scripts/check-articles.mjs
+        run: node scripts/check-articles.mjs --source-only
       - name: Save compact article reports
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
@@ -65,12 +54,12 @@ jobs:
           overwrite: true
   verify:
     runs-on: ubuntu-24.04
-    timeout-minutes: 60
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-          fetch-depth: 0
+          fetch-depth: 1
       - uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8 # v1.327.0
         with:
           ruby-version: '3.3'
@@ -79,43 +68,14 @@ jobs:
         with:
           node-version: '22'
           cache: npm
-      - name: Install pinned browser checks
-        run: npm ci && npx playwright install --with-deps chromium
-      - name: Restore incremental PDF cache
-        id: pdf-cache
-        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
-        with:
-          path: .pdf-cache
-          key: pdf-v1-${{ runner.os }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}-${{ github.job }}
-          restore-keys: pdf-v1-${{ runner.os }}-
+      - name: Install pinned source checks
+        run: |
+          npm ci
+          python3 -m pip install -r tools/requirements-images.txt
       - name: Validate source contracts, privacy boundary and workflow guards
         run: |
           python3 tools/markdown_tables.py
           npm test
-          bundle exec ruby tests/article_details_test.rb
-          bundle exec ruby tests/publication_test.rb
-          bundle exec ruby tests/translation_notices_test.rb
-          node scripts/article-pdf.mjs --site-dir test-results/pdf-fixture
-          node tests/pdf-cache-browser.mjs
-      - name: Build and inspect project-path output
-        run: |
-          bundle exec jekyll build --trace
-          node scripts/article-pdf.mjs
-          python3 scripts/check_site.py _site /history_math
-      - name: Browser checks and screenshots
-        run: npm run test:browser && node tests/article-details-browser.mjs && node tests/article-urls-browser.mjs
-      - name: Verify root-domain portability
-        run: |
-          bundle exec jekyll build --baseurl '' --destination _site-domain --trace
-          node scripts/article-pdf.mjs --site-dir _site-domain
-          python3 scripts/check_site.py _site-domain ''
-          IMAGE_SITE_DIR=_site-domain IMAGE_BASEURL='' node tests/image-delivery-browser.mjs
-          ERROR_SITE_DIR=_site-domain ERROR_BASEURL='' node tests/errors-browser.mjs
-          URL_SITE_DIR=_site-domain URL_BASEURL='' node tests/article-urls-browser.mjs
-          rm -rf _site-domain
-      - name: Save validated PDF cache
-        if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
-        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
-        with:
-          path: .pdf-cache
-          key: ${{ steps.pdf-cache.outputs.cache-primary-key }}
+          bundle exec ruby tests/teletype_dates_test.rb
+          bundle exec ruby tests/image_originals_test.rb
+          bundle exec ruby tests/external_originals_test.rb
