@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-8f19bedeaa1e-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source classifies the vernier caliper as a main type of compass and an improvement on the rope compass. Confirm this historical and technical relationship; it is retained in the English adaptation.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 10,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-02-25",
+      "url": "https://teletype.in/@history_math/Cirkul-02-25"
+    }
+  }
+}
