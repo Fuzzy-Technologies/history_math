@@ -1,15 +1,18 @@
-import {readFileSync} from 'node:fs';
+import {readFileSync, existsSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {createHash} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
+import {updateAssetDigest, imageInventory} from './external-originals.mjs';
 
 // Approval covers the public Markdown and the exact bytes of its selected assets.
 export function packageDigest(text, data, root) {
   const hash = createHash('sha256').update(text.replace(/\r\n/g, '\n'));
   const paths = [...new Set([...(data.figures ?? []).map(x => x.path), ...['preview_image', 'cover_image', 'hero_image'].map(key => data[key]).filter(Boolean)])].sort();
+  let inventory;
   for (const path of paths) {
     if (!/^\/assets\/images\/[a-z0-9-]+\/[A-Za-z0-9._-]+$/.test(path)) throw new Error('Invalid review asset path');
-    hash.update('\0' + path + '\0').update(readFileSync(resolve(root, 'site', '.' + path)));
+    if (!existsSync(resolve(root, 'site', '.' + path))) inventory ??= imageInventory(root);
+    updateAssetDigest(hash, root, path, inventory);
   }
   return hash.digest('hex');
 }
