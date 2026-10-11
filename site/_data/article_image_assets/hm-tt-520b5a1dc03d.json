@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-520b5a1dc03d/bhaskara-verse-algebra-01.png": {
+    "sha256": "5d096c6c483f1fdb919a7a4bda8e52e6d3f7b35d485859f20c225d674466c2f9",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 4236668,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-520b5a1dc03d/bhaskara-verse-algebra-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "29abf467a2bee6cddcba45aa17fff4d64708f21402645833179d98ad213c492d",
+        "bytes": 1522872
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-520b5a1dc03d-bhaskara-verse-algebra-01-5d096c6c483f1fdb919a7a4bda8e52e6d3f7b35d485859f20c225d674466c2f9.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630491726",
+      "asset_id": 630491726,
+      "release_tag": "article-originals-5",
+      "sha256": "5d096c6c483f1fdb919a7a4bda8e52e6d3f7b35d485859f20c225d674466c2f9",
+      "bytes": 4236668
+    }
+  },
+  "/assets/images/hm-tt-520b5a1dc03d/bhaskara-verse-algebra-02.png": {
+    "sha256": "635b838c102e85a22950f55e8bfcb6109b366c918b49e8b0fcab975f8ff6b1b3",
+    "width": 1470,
+    "height": 708,
+    "bytes": 2765140,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-520b5a1dc03d/bhaskara-verse-algebra-02.png-960.webp",
+        "width": 960,
+        "height": 462,
+        "sha256": "e5a5b815f0bb28446a493bd824446ef823c87e97863ffea07060b97117bc6c02",
+        "bytes": 729578
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-520b5a1dc03d-bhaskara-verse-algebra-02-635b838c102e85a22950f55e8bfcb6109b366c918b49e8b0fcab975f8ff6b1b3.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526225",
+      "asset_id": 630526225,
+      "release_tag": "article-originals-6",
+      "sha256": "635b838c102e85a22950f55e8bfcb6109b366c918b49e8b0fcab975f8ff6b1b3",
+      "bytes": 2765140
+    }
+  },
+  "/assets/images/hm-tt-520b5a1dc03d/bhaskara-verse-algebra-03.png": {
+    "sha256": "7ea7fc5e4b245e56eafec13ef0c0b297d1304e07a15c0adbbbc28318de44374b",
+    "width": 1734,
+    "height": 838,
+    "bytes": 3269224,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-520b5a1dc03d/bhaskara-verse-algebra-03.png-960.webp",
+        "width": 960,
+        "height": 464,
+        "sha256": "13e3af1a63a98435d180411a0a6fbe063816e0ff2584c11e27d2a35dbc06c9b3",
+        "bytes": 663872
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-520b5a1dc03d-bhaskara-verse-algebra-03-7ea7fc5e4b245e56eafec13ef0c0b297d1304e07a15c0adbbbc28318de44374b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526404",
+      "asset_id": 630526404,
+      "release_tag": "article-originals-7",
+      "sha256": "7ea7fc5e4b245e56eafec13ef0c0b297d1304e07a15c0adbbbc28318de44374b",
+      "bytes": 3269224
+    }
+  },
+  "/assets/images/hm-tt-520b5a1dc03d/bhaskara-verse-algebra-04.png": {
+    "sha256": "66466253a56eefcc2c9eb7f3f0ed3d2dd828c5d3113f1ea4b30120639576470a",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 4378541,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-520b5a1dc03d/bhaskara-verse-algebra-04.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "d110ef1f508e90b6db4ca9ed6c3a7d176b45f2bef4cb2494bbbadf782c3e1c62",
+        "bytes": 1568900
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-520b5a1dc03d-bhaskara-verse-algebra-04-66466253a56eefcc2c9eb7f3f0ed3d2dd828c5d3113f1ea4b30120639576470a.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526567",
+      "asset_id": 630526567,
+      "release_tag": "article-originals-6",
+      "sha256": "66466253a56eefcc2c9eb7f3f0ed3d2dd828c5d3113f1ea4b30120639576470a",
+      "bytes": 4378541
+    }
+  },
+  "/assets/images/hm-tt-520b5a1dc03d/bhaskara-verse-algebra-05.png": {
+    "sha256": "1cfd3a98a97ec10c919210cdc72e76e4de2fa2f9cee2865cabae5455f2bf3bf3",
+    "width": 1348,
+    "height": 1015,
+    "bytes": 581250,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-520b5a1dc03d/bhaskara-verse-algebra-05.png-960.webp",
+        "width": 960,
+        "height": 723,
+        "sha256": "81cb8ea4b4e0af708c57ec66fd7db85dcff6f65dabafe970a4664388c4e536e2",
+        "bytes": 189626
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-520b5a1dc03d-bhaskara-verse-algebra-05-1cfd3a98a97ec10c919210cdc72e76e4de2fa2f9cee2865cabae5455f2bf3bf3.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526727",
+      "asset_id": 630526727,
+      "release_tag": "article-originals-1",
+      "sha256": "1cfd3a98a97ec10c919210cdc72e76e4de2fa2f9cee2865cabae5455f2bf3bf3",
+      "bytes": 581250
+    }
+  },
+  "/assets/images/hm-tt-520b5a1dc03d/bhaskara-verse-algebra-06.png": {
+    "sha256": "55ed5d81655820782eb47c0bd18c7add9b489ef11f33bca0be2c08c6d47d878d",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 4380967,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-520b5a1dc03d/bhaskara-verse-algebra-06.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "6b401af3c6292ef69d1bc65c4511c5c9da4d90f83e2ee02640b8a4225d4d7bb7",
+        "bytes": 1495870
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-520b5a1dc03d-bhaskara-verse-algebra-06-55ed5d81655820782eb47c0bd18c7add9b489ef11f33bca0be2c08c6d47d878d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526929",
+      "asset_id": 630526929,
+      "release_tag": "article-originals-5",
+      "sha256": "55ed5d81655820782eb47c0bd18c7add9b489ef11f33bca0be2c08c6d47d878d",
+      "bytes": 4380967
+    }
+  }
+}
