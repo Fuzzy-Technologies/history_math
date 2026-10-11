@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-d8a5800e6fb8-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-novozhenina-school-photo",
+      "question": "The figure 5 caption dates the school physics lesson to 1971, while the prose gives her school years as 1955–1966 and her university years as 1967–1972. Please verify whether this is a later visit or a caption-date error. All dates are retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 17,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-16",
+      "url": "https://teletype.in/@history_math/Novozhenina-Tatyana-Evgenevna-Syzran-Kazan-Elabuga-11-16"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
