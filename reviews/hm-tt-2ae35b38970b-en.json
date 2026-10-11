@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-2ae35b38970b-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-ambartsumian-1",
+      "question": "The source gives birth on 5 (18) September 1908, death on 12 August 1996, and age 88. The dates imply he died shortly before his 88th birthday. Confirm the age; all source numbers are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-ambartsumian-2",
+      "question": "The source calls Armenia his homeland while also stating he was born in Tbilisi. Confirm the intended biographical use of 'homeland'; the English retains both statements.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 8,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-15",
+      "url": "https://teletype.in/@history_math/Akademik-Viktor-Amazaspovich-Ambarcumyan-Okno-v-beskonechnost-09-15"
+    }
+  }
+}
