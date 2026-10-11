@@ -1,0 +1,27 @@
+{
+  "/assets/images/hm-tt-56e78bf70582/matematika-demokrita-08-31-01.png": {
+    "sha256": "ca5bf6cc5b3cddf7361f129081f82985d0c0212cd8313c9a44265cfd63fb9b87",
+    "width": 528,
+    "height": 700,
+    "bytes": 679261,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-56e78bf70582/matematika-demokrita-08-31-01.png-528.webp",
+        "width": 528,
+        "height": 700,
+        "sha256": "a4a08ba9de5558aa5e3de6b0e03a68efc921e369a0fd888369f6cdaa4104d862",
+        "bytes": 302248
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-56e78bf70582-matematika-demokrita-08-31-01-ca5bf6cc5b3cddf7361f129081f82985d0c0212cd8313c9a44265cfd63fb9b87.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497645",
+      "asset_id": 630497645,
+      "release_tag": "article-originals-c",
+      "sha256": "ca5bf6cc5b3cddf7361f129081f82985d0c0212cd8313c9a44265cfd63fb9b87",
+      "bytes": 679261
+    }
+  }
+}
