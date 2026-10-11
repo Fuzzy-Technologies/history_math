@@ -1,0 +1,252 @@
+{
+  "/assets/images/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-01.png": {
+    "sha256": "fdd8530d762b53bf83d22d21764bb2c3b8d5b0b53c72999854af47446f2f0fe6",
+    "width": 1000,
+    "height": 1206,
+    "bytes": 829429,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-01-png-reading-960-a83f591852ae.webp",
+        "width": 960,
+        "height": 1158,
+        "sha256": "a83f591852aeb54ff0ff993d47bf3d4d6221b5571129ddca8ca060141c018e4d",
+        "bytes": 305500
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-d53be80a8676-yavlenie-chrezvychajnoe-andr-01-fdd8530d762b53bf83d22d21764bb2c3b8d5b0b53c72999854af47446f2f0fe6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553284",
+      "asset_id": 630553284,
+      "release_tag": "article-originals-f",
+      "sha256": "fdd8530d762b53bf83d22d21764bb2c3b8d5b0b53c72999854af47446f2f0fe6",
+      "bytes": 829429
+    }
+  },
+  "/assets/images/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-02.png": {
+    "sha256": "68d91f2e1ab152446b3ef77cd7fac10f5ef30a13cf8c1f09bc6ea246fb84248a",
+    "width": 588,
+    "height": 366,
+    "bytes": 487455,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-02-png-reading-588-d15b4edac933.webp",
+        "width": 588,
+        "height": 366,
+        "sha256": "d15b4edac9336fb554474e48106252c99653f89d0759303972ab0f9713bf7bfa",
+        "bytes": 163634
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-d53be80a8676-yavlenie-chrezvychajnoe-andr-02-68d91f2e1ab152446b3ef77cd7fac10f5ef30a13cf8c1f09bc6ea246fb84248a.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553412",
+      "asset_id": 630553412,
+      "release_tag": "article-originals-6",
+      "sha256": "68d91f2e1ab152446b3ef77cd7fac10f5ef30a13cf8c1f09bc6ea246fb84248a",
+      "bytes": 487455
+    }
+  },
+  "/assets/images/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-03.png": {
+    "sha256": "5efa37aa9bf4f73d6af632f40ef98fd39aa7b411e4184679c04ebdd0cad6f463",
+    "width": 311,
+    "height": 129,
+    "bytes": 4326,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-03-png-reading-311-be2f2e99d3f2.webp",
+        "width": 311,
+        "height": 129,
+        "sha256": "be2f2e99d3f2616c4e637dedb68faed92d514c02477237f37b7fae61cada78c8",
+        "bytes": 2378
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-d53be80a8676-yavlenie-chrezvychajnoe-andr-03-5efa37aa9bf4f73d6af632f40ef98fd39aa7b411e4184679c04ebdd0cad6f463.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553567",
+      "asset_id": 630553567,
+      "release_tag": "article-originals-5",
+      "sha256": "5efa37aa9bf4f73d6af632f40ef98fd39aa7b411e4184679c04ebdd0cad6f463",
+      "bytes": 4326
+    }
+  },
+  "/assets/images/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-04.png": {
+    "sha256": "8345126fef8b759969e80b197fcf0933f55bde3d776bca42cd3fb4e0e7874492",
+    "width": 1000,
+    "height": 1316,
+    "bytes": 1010990,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-04-png-reading-960-7bd798aef63e.webp",
+        "width": 960,
+        "height": 1263,
+        "sha256": "7bd798aef63eca9f4bf88aaf97fffebc04b827cb5ac23fef578be4ac22c1e160",
+        "bytes": 396836
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-d53be80a8676-yavlenie-chrezvychajnoe-andr-04-8345126fef8b759969e80b197fcf0933f55bde3d776bca42cd3fb4e0e7874492.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553695",
+      "asset_id": 630553695,
+      "release_tag": "article-originals-8",
+      "sha256": "8345126fef8b759969e80b197fcf0933f55bde3d776bca42cd3fb4e0e7874492",
+      "bytes": 1010990
+    }
+  },
+  "/assets/images/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-05.png": {
+    "sha256": "56105d9f291bf5e0e40ed81da9dbab9e5b3da810ac030eda41ef6843fe4f28c1",
+    "width": 1000,
+    "height": 1424,
+    "bytes": 1212694,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-05.png-960.webp",
+        "width": 960,
+        "height": 1367,
+        "sha256": "191d43b80b1726e56d8e81de07c7eef43cffea274562851771e28f2a8c9a2af1",
+        "bytes": 718786
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-d53be80a8676-yavlenie-chrezvychajnoe-andr-05-56105d9f291bf5e0e40ed81da9dbab9e5b3da810ac030eda41ef6843fe4f28c1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553827",
+      "asset_id": 630553827,
+      "release_tag": "article-originals-5",
+      "sha256": "56105d9f291bf5e0e40ed81da9dbab9e5b3da810ac030eda41ef6843fe4f28c1",
+      "bytes": 1212694
+    }
+  },
+  "/assets/images/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-06.png": {
+    "sha256": "83df9e2dd639b779179b8623d044c16ac2c3dd8b2ccce77f50b6949cd9fa74ae",
+    "width": 2000,
+    "height": 1394,
+    "bytes": 2950549,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-06.png-960.webp",
+        "width": 960,
+        "height": 669,
+        "sha256": "745deb5e1f53f40e56d3400a0bd02164d90cf34be9daacd230a651500270c9c7",
+        "bytes": 422560
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-d53be80a8676-yavlenie-chrezvychajnoe-andr-06-83df9e2dd639b779179b8623d044c16ac2c3dd8b2ccce77f50b6949cd9fa74ae.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553954",
+      "asset_id": 630553954,
+      "release_tag": "article-originals-8",
+      "sha256": "83df9e2dd639b779179b8623d044c16ac2c3dd8b2ccce77f50b6949cd9fa74ae",
+      "bytes": 2950549
+    }
+  },
+  "/assets/images/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-07.png": {
+    "sha256": "285a9c7e48677e8245a5b12e709fc7be4c1638964f1de13e98e30a33d1d886a9",
+    "width": 1070,
+    "height": 1550,
+    "bytes": 2738579,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-07.png-960.webp",
+        "width": 960,
+        "height": 1391,
+        "sha256": "d71644c710727202f2b35d391f0f6a9b94d12284be9ffbddda22f8e2b7639847",
+        "bytes": 1508538
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-d53be80a8676-yavlenie-chrezvychajnoe-andr-07-285a9c7e48677e8245a5b12e709fc7be4c1638964f1de13e98e30a33d1d886a9.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554102",
+      "asset_id": 630554102,
+      "release_tag": "article-originals-2",
+      "sha256": "285a9c7e48677e8245a5b12e709fc7be4c1638964f1de13e98e30a33d1d886a9",
+      "bytes": 2738579
+    }
+  },
+  "/assets/images/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-08.png": {
+    "sha256": "6c40a2627f788243d468a0aa0c5fb62b8d886691841a4b22114f2a67c46c2f69",
+    "width": 801,
+    "height": 512,
+    "bytes": 432997,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-08-png-reading-801-26a9231b601e.webp",
+        "width": 801,
+        "height": 512,
+        "sha256": "26a9231b601e85e4177ec3100062dc8dca5b97db8023949c0a44d11647ebc905",
+        "bytes": 243150
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-d53be80a8676-yavlenie-chrezvychajnoe-andr-08-6c40a2627f788243d468a0aa0c5fb62b8d886691841a4b22114f2a67c46c2f69.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554235",
+      "asset_id": 630554235,
+      "release_tag": "article-originals-6",
+      "sha256": "6c40a2627f788243d468a0aa0c5fb62b8d886691841a4b22114f2a67c46c2f69",
+      "bytes": 432997
+    }
+  },
+  "/assets/images/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-09.png": {
+    "sha256": "cdae35152efdf0f2753ad4e77a1b1d7ce98697031267e3413f74bc4f1468b48d",
+    "width": 1453,
+    "height": 1034,
+    "bytes": 552254,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-09.png-960.webp",
+        "width": 960,
+        "height": 683,
+        "sha256": "f3bdecd17ea794a3483395d8bf4500c0a679674667f467a44fa93453c4e4fbd9",
+        "bytes": 584218
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-d53be80a8676-yavlenie-chrezvychajnoe-andr-09-cdae35152efdf0f2753ad4e77a1b1d7ce98697031267e3413f74bc4f1468b48d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554383",
+      "asset_id": 630554383,
+      "release_tag": "article-originals-c",
+      "sha256": "cdae35152efdf0f2753ad4e77a1b1d7ce98697031267e3413f74bc4f1468b48d",
+      "bytes": 552254
+    }
+  },
+  "/assets/images/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-10.png": {
+    "sha256": "b0feca22221d76b48d39af6992ce5441a49c1c3bf11ddc7c894bc6afc705f94f",
+    "width": 1900,
+    "height": 2760,
+    "bytes": 13651106,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-10.png-960.webp",
+        "width": 960,
+        "height": 1395,
+        "sha256": "910a924739962b44aa59f601105b47af77288421a237c20ff3d4686bfb863398",
+        "bytes": 1786636
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-d53be80a8676-yavlenie-chrezvychajnoe-andr-10-b0feca22221d76b48d39af6992ce5441a49c1c3bf11ddc7c894bc6afc705f94f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554545",
+      "asset_id": 630554545,
+      "release_tag": "article-originals-b",
+      "sha256": "b0feca22221d76b48d39af6992ce5441a49c1c3bf11ddc7c894bc6afc705f94f",
+      "bytes": 13651106
+    }
+  }
+}
