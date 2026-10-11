@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-15d8e940d461-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 7,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-28",
+      "url": "https://teletype.in/@history_math/Bussol-09-28"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
