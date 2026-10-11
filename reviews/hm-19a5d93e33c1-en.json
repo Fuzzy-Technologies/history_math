@@ -5,7 +5,7 @@
     "status": "approved",
     "reviewed_by": "Timur Gilmullin (Tim55667757)",
     "date": "2026-10-10",
-    "package_sha256": "125ac50622702f617d8e7a9e6ab9caf580fa63fb14f40b86e085cdcefce0a171"
+    "package_sha256": "afaddc51c730b8badeffde934db92b9d19cf02ea97eb395255d8ee7ad7b4e665"
   },
   "questions": [],
   "reconciliation": {
@@ -27,5 +27,8 @@
       ]
     },
     "publication_approval": "Owner confirmed review and merge of PR #47 on 2026-10-10 (Europe/Moscow). Publication metadata updated; approved English prose and image bytes are unchanged."
-  }
+  },
+  "manual_changes": [
+    "Owner-requested Teletype migration date correction on 2026-10-11; only publication/source metadata changed, editorial text and selected image bytes preserved."
+  ]
 }

@@ -28,31 +28,64 @@ def digest(path):
 
 def originals():
     return sorted(p for p in (SITE / "assets/images").rglob("*")
-                  if p.suffix.lower() in {".png", ".jpg", ".jpeg"}
+                  if p.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp", ".gif"}
+                  and "previews" not in p.relative_to(SITE / "assets/images").parts
                   and p.name != "favicon-m2-32.png")
+
+
+def inventory():
+    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    for fragment in sorted((SITE / "_data/article_image_assets").glob("*.json")):
+        entries = json.loads(fragment.read_text(encoding="utf-8"))
+        assert not set(manifest).intersection(entries), "Duplicate image manifest entry"
+        manifest.update(entries)
+    return manifest
 
 
 def url(path):
     return "/" + path.relative_to(SITE).as_posix()
 
 
-def generate():
-    from PIL import Image, ImageOps
+def generate(article_id=None):
+    from PIL import Image, ImageOps, ImageSequence
 
     manifest = {}
+    previous = inventory() if MANIFEST.exists() else {}
+    fragments = {}
     for source in originals():
-        image = ImageOps.exif_transpose(Image.open(source))
+        relative = source.relative_to(SITE / "assets/images")
+        if article_id is not None and relative.parts[0] != article_id:
+            continue
+        migration = relative.parts[0].startswith("hm-tt-")
+        destination = fragments.setdefault(relative.parts[0], {}) if migration else manifest
+        old = previous.get(url(source))
+        if old and old["sha256"] == digest(source) and all(
+                (SITE / v["path"].lstrip("/")).exists() and digest(SITE / v["path"].lstrip("/")) == v["sha256"]
+                for v in old["variants"]):
+            destination[url(source)] = old
+            continue
+        opened = Image.open(source)
+        image = ImageOps.exif_transpose(opened)
         image = image.convert("RGBA" if "A" in image.getbands() else "RGB")
         logo = source.name in LOGOS
-        widths = ([480 if "-logo" in source.stem else 1440] if logo else [480, 960, 1440])
+        widths = ([480 if "-logo" in source.stem else 1440] if logo else ([960] if migration else [480, 960, 1440]))
         variants = []
         for width in sorted({min(width, image.width) for width in widths}):
             height = round(image.height * width / image.width)
             resized = image.resize((width, height), Image.Resampling.LANCZOS)
             buffer = io.BytesIO()
             # Lossless encoding protects small numerical diagrams and portraits.
-            lossless = not logo and source.suffix.lower() == ".png" and max(image.size) <= 800
-            resized.save(buffer, format="WEBP", quality=86, method=6, lossless=lossless, exact=True)
+            lossless = migration or (not logo and source.suffix.lower() == ".png" and max(image.size) <= 800)
+            animation = {}
+            if getattr(opened, "is_animated", False):
+                frames = [frame.convert("RGBA").resize((width, height), Image.Resampling.LANCZOS)
+                          for frame in ImageSequence.Iterator(opened)]
+                durations = [frame.info.get("duration", 100) for frame in ImageSequence.Iterator(opened)]
+                resized = frames[0]
+                animation = {"save_all": True, "append_images": frames[1:], "duration": durations,
+                             "loop": opened.info.get("loop", 0)}
+            resized.save(buffer, format="WEBP", quality=86, method=4 if migration else 6,
+                         lossless=lossless, exact=True, **animation)
             if logo:
                 target = source.with_suffix(".svg")
                 encoded = base64.b64encode(buffer.getvalue()).decode("ascii")
@@ -69,13 +102,18 @@ def generate():
                 target.write_bytes(buffer.getvalue())
             variants.append({"path": url(target), "width": width, "height": height,
                              "sha256": digest(target), "bytes": target.stat().st_size})
-        manifest[url(source)] = {"sha256": digest(source), "width": image.width, "height": image.height,
+        destination[url(source)] = {"sha256": digest(source), "width": image.width, "height": image.height,
                                  "bytes": source.stat().st_size, "logo": logo, "variants": variants}
-    MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if article_id is None:
+        MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    for identity, entries in fragments.items():
+        target = SITE / "_data/article_image_assets" / f"{identity}.json"
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(json.dumps(entries, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def validate():
-    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    manifest = inventory()
     assert set(manifest) == {url(p) for p in originals()}, "Image inventory changed; regenerate assets"
     for original, entry in manifest.items():
         assert digest(SITE / original.lstrip("/")) == entry["sha256"], f"Stale preview: {original}"

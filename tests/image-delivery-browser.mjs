@@ -1,5 +1,5 @@
 import {createServer} from 'node:http';
-import {readFile, stat, mkdir} from 'node:fs/promises';
+import {readFile, stat, mkdir, readdir} from 'node:fs/promises';
 import {resolve, extname, sep} from 'node:path';
 import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
@@ -8,6 +8,9 @@ import {chromium} from 'playwright';
 const root = resolve(process.env.IMAGE_SITE_DIR || '_site');
 const base = process.env.IMAGE_BASEURL ?? '/history_math';
 const inventory = JSON.parse(await readFile('site/_data/image_assets.json', 'utf8'));
+for (const file of await readdir('site/_data/article_image_assets').catch(() => [])) {
+  Object.assign(inventory, JSON.parse(await readFile('site/_data/article_image_assets/' + file, 'utf8')));
+}
 const mime = {'.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json',
   '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2'};
 const server = createServer(async (request, response) => {
@@ -30,6 +33,7 @@ const pages = base ? ['/', '/ru/', '/about/', '/ru/about/', '/showcase/', '/ru/s
 const report = [];
 await mkdir('test-results/image-delivery', {recursive: true});
 let checkedDownload = false;
+let checkedCrossOriginDownload = false;
 try {
   for (const width of [390, 1440]) for (const path of pages) {
     const context = await browser.newContext({viewport: {width, height: 1000}, reducedMotion: 'reduce',
@@ -85,6 +89,25 @@ try {
       await page.waitForFunction(() => !document.documentElement.classList.contains('viewer-open'));
       assert.equal(await trigger.evaluate(node => document.activeElement === node), true);
       assert.equal(await download.getAttribute('href'), null);
+      if (!checkedCrossOriginDownload) {
+        const source = inventory[original.slice(base.length)];
+        const bytes = await readFile(resolve('site', '.' + original.slice(base.length)));
+        const remote = `https://raw.githubusercontent.com/Fuzzy-Technologies/history_math/${'a'.repeat(40)}/site/assets/images/hm-tt-abc/original.png`;
+        let fetched = 0;
+        await page.route(remote, route => {
+          fetched++;
+          return route.fulfill({body: bytes, contentType: mime[extname(original)], headers: {'Access-Control-Allow-Origin': '*'}});
+        });
+        await trigger.locator('img').evaluate((img, url) => { img.dataset.original = url; }, remote);
+        assert.equal(fetched, 0);
+        await trigger.click();
+        await page.locator('.viewer-canvas img').evaluate(img => img.decode());
+        assert.ok(fetched >= 1);
+        const [file] = await Promise.all([page.waitForEvent('download'), download.click()]);
+        assert.equal(createHash('sha256').update(await readFile(await file.path())).digest('hex'), source.sha256);
+        await page.keyboard.press('Escape');
+        checkedCrossOriginDownload = true;
+      }
     }
     await context.close();
   }

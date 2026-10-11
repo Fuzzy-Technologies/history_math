@@ -1,5 +1,18 @@
 # Preparing the next archival article
 
+For the owner-authorized 2026-10-11 Teletype migration, read the complete saved
+Teletype article and its exact original image bytes instead of unavailable
+NAS working files. Preserve the visible source publication date using the
+exception in PUBLICATION_DATES.md. Prepare one Russian article and an explicit
+English translation placeholder per independent master-targeting draft PR;
+replace that placeholder only after the Russian package and image delivery
+are complete. Store each new article's image inventory in
+`site/_data/article_image_assets/<article-id>.json`, so independent article PRs
+do not edit one shared inventory. Teletype image originals are unchanged;
+lossless WebP reading variants retain the original download/zoom target. Production pages reference migrated originals at the immutable GitHub revision used to build the site; their original bytes remain in Git but are excluded from the Pages payload. Review previews use local originals. Migrated PDFs use the largest local reading variant so their generation remains offline and reproducible.
+Original animations retain animation in their reading variants. Editorial
+approval remains pending until the owner reviews the current package.
+
 Follow [ADR 0001](adr/0001-archive-article-pilot.md). Use existing FELab metadata and NAS originals only for reading. This repository owns the schema, templates, checks and prepared article versions for review. Do not create or modify FELab code, branches, targets, Works or cache entries.
 
 See [check conditions and report interpretation](ARTICLE_CHECKS.md) for stable codes, blocking failures and unavailable checks. `scripts/article-pr.mjs` exports the deterministic `articlePrBody` helper used for pilot PR descriptions; it consumes the same local language dictionaries and an actual head's report.

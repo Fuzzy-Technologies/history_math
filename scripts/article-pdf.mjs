@@ -14,7 +14,7 @@ export function validateManifest(manifest) {
   for (const article of manifest.articles) {
     const match = /^\/(ru\/)?articles\/([a-z0-9-]+)\/$/.exec(article.url ?? '');
     // Existing PDF downloads retain the work hash when HTML gains a locale suffix.
-    const slug = match?.[2].replace(new RegExp(`^(hm-[0-9a-f]{12})-${article.lang}$`), '$1');
+    const slug = match?.[2].replace(new RegExp(`^(hm-(?:tt-)?[0-9a-f]{12})-${article.lang}$`), '$1');
     if (!match || !['en', 'ru'].includes(article.lang) || Boolean(match[1]) !== (article.lang === 'ru') ||
         article.pdf_url !== `/assets/pdf/${article.lang}/${slug}.pdf` ||
         typeof article.title !== 'string' || !article.title.trim() || paths.has(article.pdf_url)) throw new Error('Invalid or duplicate PDF article');
@@ -29,6 +29,11 @@ export function printImageSources(html) {
   return html.replace(/<img\b[^>]*>/gi, tag => {
     const original = tag.match(/\sdata-original="([^"]+)"/);
     if (!original) return tag;
+    // Migrated print pages use the largest losslessly encoded reading variant.
+    // Keep PDF generation deterministic and local even when zoom uses GitHub.
+    if (/\/assets\/images\/hm-tt-[a-z0-9]+\//.test(original[1])) {
+      return tag.replace(/\s(?:srcset|sizes)="[^"]*"/g, '');
+    }
     return tag.replace(/\ssrc="[^"]*"/, () => ` src="${original[1]}"`)
       .replace(/\s(?:srcset|sizes)="[^"]*"/g, '');
   });
@@ -145,7 +150,10 @@ export async function buildPdfs(siteDirectory, {cacheDirectory = '.pdf-cache', f
               if (new URL(img.src).pathname.endsWith('.svg') && !img.closest('.print-masthead')) continue;
               const bounds = img.getBoundingClientRect();
               const ratio = Math.min(1, Math.max(bounds.width * 2.5 / img.naturalWidth, bounds.height * 2.5 / img.naturalHeight));
-              if (ratio >= 1) continue;
+              const migrated = img.dataset.original?.includes('/assets/images/hm-tt-');
+              // Encode migrated print rasters with the existing print JPEG profile,
+              // even when a reading-sized variant needs no further downsampling.
+              if (ratio >= 1 && !migrated) continue;
               const canvas = document.createElement('canvas');
               canvas.width = Math.ceil(img.naturalWidth * ratio); canvas.height = Math.ceil(img.naturalHeight * ratio);
               const context = canvas.getContext('2d');

@@ -1,5 +1,16 @@
 # Automatic publication dates
 
+## Owner-authorized Teletype migration
+
+The 2026-10-11 migration retains each article's visible Teletype date. Set
+`original_publication.outlet: Teletype`, its verified visible `date`, and the
+current HTTPS article `url`; `source_url` must match that URL. Only the
+`teletype.in/@history_math/` archive qualifies. Store the same date in the
+review derivative for previews. The original metadata timestamp may disagree
+with the visible date and is not substituted. Other articles retain the
+ordinary master-history rule below. The four earlier migrated articles use
+the same exception; their existing editorial text and images are preserved.
+
 The website publication date is the Moscow calendar day of the first commit on
 `master`'s first-parent history whose article metadata has `status: published`.
 For a normal PR merge or squash, this is the merge commit's committer timestamp,

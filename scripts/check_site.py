@@ -117,7 +117,7 @@ def CheckSite(sitePath, basePath):
             publicPath = "/" + relative
         expectedCanonical = "https://fuzzy-technologies.github.io" + basePath + publicPath
         if page.redirect:
-            match = re.fullmatch(r"(/(?:ru/)?articles/hm-[0-9a-f]{12})/", publicPath)
+            match = re.fullmatch(r"(/(?:ru/)?articles/hm-(?:tt-)?[0-9a-f]{12})/", publicPath)
             expectedRedirect = basePath + match[1] + "-" + expectedLanguage + "/" if match else None
             target = Resolve(page.redirect, path)
             if (page.redirect != expectedRedirect or page.robots != "noindex, follow" or

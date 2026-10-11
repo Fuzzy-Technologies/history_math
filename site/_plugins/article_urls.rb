@@ -3,7 +3,7 @@
 module HistoryMath
   # Derive public routes without rewriting approved editorial packages.
   def self.article_url(path, language)
-    path.sub(%r{/(hm-[0-9a-f]{12})(?:-ru|-en)?/\z}, "/\\1-#{language}/")
+    path.sub(%r{/(hm-(?:tt-)?[0-9a-f]{12})(?:-ru|-en)?/\z}, "/\\1-#{language}/")
   end
 
   def self.localize_article_urls!(site)
@@ -21,7 +21,7 @@ module HistoryMath
       documents = HistoryMath.visible_documents(site).dup
       documents.each do |doc|
         next unless PUBLIC_STATUSES.include?(doc.data["status"])
-        next unless doc.url.match?(%r{\A/(?:ru/)?articles/hm-[0-9a-f]{12}-(?:ru|en)/\z})
+        next unless doc.url.match?(%r{\A/(?:ru/)?articles/hm-(?:tt-)?[0-9a-f]{12}-(?:ru|en)/\z})
         legacy = doc.url.sub(/-(?:ru|en)\/$/, "/")
         if HistoryMath.visible_documents(site).any? { |page| page.url == legacy }
           raise Jekyll::Errors::FatalException, "Legacy article URL collision: #{legacy}"

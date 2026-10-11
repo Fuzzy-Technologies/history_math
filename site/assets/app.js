@@ -57,6 +57,27 @@ if (viewer && typeof viewer.showModal === 'function') {
   const caption = viewer.querySelector('#viewer-caption');
   const download = viewer.querySelector('[data-viewer-download]');
   const expanded = document.createElement('img');
+  download.addEventListener('click', async event => {
+    const target = new URL(download.href);
+    if (target.origin === location.origin) return;
+    event.preventDefault();
+    try {
+      // A cross-origin download attribute alone navigates instead of downloading.
+      const response = await fetch(target.href, {credentials: 'omit'});
+      if (!response.ok) throw new Error('Original image download failed');
+      const objectUrl = URL.createObjectURL(await response.blob());
+      const link = document.createElement('a');
+      link.href = objectUrl;
+      link.download = target.pathname.split('/').at(-1);
+      link.hidden = true;
+      document.body.append(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
+    } catch {
+      caption.textContent = viewer.dataset.errorLabel;
+    }
+  });
   const pointers = new Map();
   let activeTrigger;
   let baseWidth = 1;
