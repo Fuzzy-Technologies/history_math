@@ -1,0 +1,52 @@
+{
+  "/assets/images/hm-tt-ffdd248f35a6/palette-01.png": {
+    "sha256": "da62cc51b3d94dd098f1f988a89cd80c2212dce30713c2eae778097fb3b72e14",
+    "width": 800,
+    "height": 650,
+    "bytes": 733331,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ffdd248f35a6/palette-01.png-800.webp",
+        "width": 800,
+        "height": 650,
+        "sha256": "4edab34d52d34ec357a81e762660d2956ddc753de14377e44952185370bd0f38",
+        "bytes": 394410
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-ffdd248f35a6-palette-01-da62cc51b3d94dd098f1f988a89cd80c2212dce30713c2eae778097fb3b72e14.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630494412",
+      "asset_id": 630494412,
+      "release_tag": "article-originals-d",
+      "sha256": "da62cc51b3d94dd098f1f988a89cd80c2212dce30713c2eae778097fb3b72e14",
+      "bytes": 733331
+    }
+  },
+  "/assets/images/hm-tt-ffdd248f35a6/palette-02.jpeg": {
+    "sha256": "184ec3cbd474f6b2a52e421bc60137ba03cc38d1f28d5c546e52bace423139cd",
+    "width": 800,
+    "height": 800,
+    "bytes": 106613,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ffdd248f35a6/palette-02-800.jpeg",
+        "width": 800,
+        "height": 800,
+        "bytes": 106613,
+        "sha256": "184ec3cbd474f6b2a52e421bc60137ba03cc38d1f28d5c546e52bace423139cd"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-ffdd248f35a6-palette-02-184ec3cbd474f6b2a52e421bc60137ba03cc38d1f28d5c546e52bace423139cd.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630532350",
+      "asset_id": 630532350,
+      "release_tag": "article-originals-1",
+      "sha256": "184ec3cbd474f6b2a52e421bc60137ba03cc38d1f28d5c546e52bace423139cd",
+      "bytes": 106613
+    }
+  }
+}
