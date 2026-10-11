@@ -1,0 +1,102 @@
+{
+  "/assets/images/hm-tt-9cd7cf41b694/ya-poznane-sdelal-svoim-reme-01.png": {
+    "sha256": "0e4784c745fee11e47faeb7cbcbff1f5b50c4ea565fcd3a34105fa81256b03f4",
+    "width": 1000,
+    "height": 1492,
+    "bytes": 4402833,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-9cd7cf41b694/ya-poznane-sdelal-svoim-reme-01.png-960.webp",
+        "width": 960,
+        "height": 1432,
+        "sha256": "b42ba080de5f1ae3b327d91ae7b32e8368644ca750fbc3185f1571355ffc5a0e",
+        "bytes": 2522958
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-9cd7cf41b694-ya-poznane-sdelal-svoim-reme-01-0e4784c745fee11e47faeb7cbcbff1f5b50c4ea565fcd3a34105fa81256b03f4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630499318",
+      "asset_id": 630499318,
+      "release_tag": "article-originals-0",
+      "sha256": "0e4784c745fee11e47faeb7cbcbff1f5b50c4ea565fcd3a34105fa81256b03f4",
+      "bytes": 4402833
+    }
+  },
+  "/assets/images/hm-tt-9cd7cf41b694/ya-poznane-sdelal-svoim-reme-02.png": {
+    "sha256": "91f098eda4098698e3f52ba3ac5af2944c63189def85484866a269a6b12bb36b",
+    "width": 971,
+    "height": 973,
+    "bytes": 2241371,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-9cd7cf41b694/ya-poznane-sdelal-svoim-reme-02.png-960.webp",
+        "width": 960,
+        "height": 962,
+        "sha256": "aa881988ef98cda7c38d0ae5f6a2d35e74327d60d9a0b2eb7059d867d6a9a182",
+        "bytes": 1139684
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-9cd7cf41b694-ya-poznane-sdelal-svoim-reme-02-91f098eda4098698e3f52ba3ac5af2944c63189def85484866a269a6b12bb36b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630564933",
+      "asset_id": 630564933,
+      "release_tag": "article-originals-9",
+      "sha256": "91f098eda4098698e3f52ba3ac5af2944c63189def85484866a269a6b12bb36b",
+      "bytes": 2241371
+    }
+  },
+  "/assets/images/hm-tt-9cd7cf41b694/ya-poznane-sdelal-svoim-reme-03.png": {
+    "sha256": "518e254e42adf63ca43551ef9871fc8b87d4e3dd1636a692adaf540d9b8f82c4",
+    "width": 2709,
+    "height": 1942,
+    "bytes": 14256406,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-9cd7cf41b694/ya-poznane-sdelal-svoim-reme-03.png-960.webp",
+        "width": 960,
+        "height": 688,
+        "sha256": "bee7daf8e969d7174a4caac07d541c778037f595ff6c6423fb62ee61e82e89bf",
+        "bytes": 1256592
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-9cd7cf41b694-ya-poznane-sdelal-svoim-reme-03-518e254e42adf63ca43551ef9871fc8b87d4e3dd1636a692adaf540d9b8f82c4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630565142",
+      "asset_id": 630565142,
+      "release_tag": "article-originals-5",
+      "sha256": "518e254e42adf63ca43551ef9871fc8b87d4e3dd1636a692adaf540d9b8f82c4",
+      "bytes": 14256406
+    }
+  },
+  "/assets/images/hm-tt-9cd7cf41b694/ya-poznane-sdelal-svoim-reme-04.png": {
+    "sha256": "fb37ec895f48f490dc9656120a1136ee98c4032493b2bda7dd4b01919b96e1ff",
+    "width": 2082,
+    "height": 1210,
+    "bytes": 5757141,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-9cd7cf41b694/ya-poznane-sdelal-svoim-reme-04.png-960.webp",
+        "width": 960,
+        "height": 558,
+        "sha256": "b2db154813b14e24b168694c8dcd295316f0d8022a6e560d02d4bcebe4214ef3",
+        "bytes": 726642
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-9cd7cf41b694-ya-poznane-sdelal-svoim-reme-04-fb37ec895f48f490dc9656120a1136ee98c4032493b2bda7dd4b01919b96e1ff.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630565283",
+      "asset_id": 630565283,
+      "release_tag": "article-originals-f",
+      "sha256": "fb37ec895f48f490dc9656120a1136ee98c4032493b2bda7dd4b01919b96e1ff",
+      "bytes": 5757141
+    }
+  }
+}

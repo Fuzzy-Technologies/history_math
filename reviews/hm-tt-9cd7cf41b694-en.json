@@ -1,0 +1,36 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-9cd7cf41b694-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-khayyam-1",
+      "question": "Confirm the claim that Khayyam spent more than 40 years at the Isfahan observatory and the account of the Jalali calendar's use until 1976. The English retains both claims.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-khayyam-2",
+      "question": "The source gives a calendar error of 19 seconds annually, a 7-second advantage over the modern calendar, and one-day errors in 5000 and 3330 years. Confirm the numerical comparisons and whether the month lengths describe the original Jalali or a later Solar Hijri calendar.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-khayyam-3",
+      "question": "Please confirm the source and attribution of the fictionalised Rustam encounter and the quoted poems, including the Tatar and English versions. The narrative and all verse content are retained in the English adaptation.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-01",
+      "url": "https://teletype.in/@history_math/YA-poznane-sdelal-svoim-remeslom-09-01"
+    }
+  }
+}
