@@ -3,6 +3,9 @@ name: Update article review comment
 on:
   pull_request_target:
     types: [opened, reopened, synchronize, ready_for_review]
+  workflow_run:
+    workflows: ['Prototype checks']
+    types: [completed]
   # Bootstrap the pending infrastructure without merging it into the default branch.
   # Only maintainers can push this same-repository infrastructure branch.
   push:
@@ -16,7 +19,7 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: article-comment-${{ github.event.pull_request.number || 'pilot-bootstrap' }}
+  group: article-comment-${{ github.event.pull_request.number || github.event.workflow_run.pull_requests[0].number || github.event.workflow_run.head_branch || 'pilot-bootstrap' }}
   cancel-in-progress: true
 
 jobs:
@@ -29,7 +32,7 @@ jobs:
       - uses: actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71 # v9.0.0
         with:
           script: |
-            async function updateArticleComment(pullRequest) {
+            async function updateArticleComment(pullRequest, completedRun) {
             const repo = context.repo;
             const number = pullRequest.number;
             const commit = pullRequest.head.sha;
@@ -38,13 +41,17 @@ jobs:
             const dictionary = await github.rest.repos.getContent({...repo, path: 'schemas/messages.json', ref: trustedRef});
             if (dictionary.data.size > 24000 || dictionary.data.encoding !== 'base64') throw new Error('Invalid message dictionary');
             const messages = JSON.parse(Buffer.from(dictionary.data.content, 'base64').toString('utf8'));
+            const current = live => live.state === 'open' && live.head.sha === commit &&
+              (context.eventName !== 'workflow_run' || (live.base?.ref === 'master' &&
+                live.base.repo?.full_name === `${repo.owner}/${repo.repo}` &&
+                live.head.repo?.full_name === `${repo.owner}/${repo.repo}`));
             let selected;
             let result = 'incomplete';
             for (let attempt = 0; attempt < 50; attempt++) {
               const live = (await github.rest.pulls.get({...repo, pull_number: number})).data;
-              if (live.state !== 'open' || live.head.sha !== commit) return;
-              const runs = (await github.rest.actions.listWorkflowRunsForRepo({...repo, head_sha: commit, per_page: 30})).data.workflow_runs;
-              selected = runs.filter(run => run.name === 'Prototype checks' && ['push', 'pull_request'].includes(run.event)).sort((a, b) => b.id - a.id)[0];
+              if (!current(live)) return;
+              const runs = completedRun ? [completedRun] : (await github.rest.actions.listWorkflowRunsForRepo({...repo, head_sha: commit, per_page: 30})).data.workflow_runs;
+              selected = runs.filter(run => run.name === 'Prototype checks' && ['push', 'pull_request', 'workflow_dispatch'].includes(run.event)).sort((a, b) => b.id - a.id)[0];
               if (selected?.status === 'completed') {
                 const jobs = await github.paginate(github.rest.actions.listJobsForWorkflowRun, {...repo, run_id: selected.id, filter: 'latest', per_page: 100});
                 const check = jobs.find(job => job.name === 'Article package');
@@ -55,22 +62,40 @@ jobs:
               await new Promise(done => setTimeout(done, 15000));
             }
             const live = (await github.rest.pulls.get({...repo, pull_number: number})).data;
-            if (live.head.sha !== commit) return;
+            if (!current(live)) return;
             const m = messages[live.head.ref.endsWith('-ru') ? 'ru' : 'en'];
             const url = selected?.html_url ?? `https://github.com/${repo.owner}/${repo.repo}/actions`;
             const runId = selected?.id ?? 0;
             const attempt = selected?.run_attempt ?? 0;
-            const body = `${marker}\n<!-- run:${runId} attempt:${attempt} -->\n${m[result]}\n\n${m.commit}: \`${commit}\`\n\n${m.preview}: [${m.preview}](${url})\n`;
+            const outcome = result === 'pass' ? m.source_pass : m[result];
+            const body = `${marker}\n<!-- run:${runId} attempt:${attempt} -->\n${outcome}\n\n${m.source_profile}\n\n${m.commit}: \`${commit}\`\n\n${m.preview}: [${m.preview}](${url})\n`;
             const comments = await github.paginate(github.rest.issues.listComments, {...repo, issue_number: number, per_page: 100});
             const previous = comments.find(comment => comment.user?.type === 'Bot' && comment.body?.includes(marker));
             const previousRun = /<!-- run:(\d+) attempt:(\d+) -->/.exec(previous?.body ?? '');
             if (previousRun && (Number(previousRun[1]) > runId || (Number(previousRun[1]) === runId && Number(previousRun[2]) > attempt))) return;
-            if ((await github.rest.pulls.get({...repo, pull_number: number})).data.head.sha !== commit) return;
+            if (!current((await github.rest.pulls.get({...repo, pull_number: number})).data)) return;
             if (previous) await github.rest.issues.updateComment({...repo, comment_id: previous.id, body});
             else await github.rest.issues.createComment({...repo, issue_number: number, body});
             }
             if (context.eventName === 'pull_request_target') {
               await updateArticleComment(context.payload.pull_request);
+            } else if (context.eventName === 'workflow_run') {
+              const run = context.payload.workflow_run;
+              const repository = `${context.repo.owner}/${context.repo.repo}`;
+              if (run?.name !== 'Prototype checks' || run.status !== 'completed' ||
+                  !['push', 'pull_request', 'workflow_dispatch'].includes(run.event) ||
+                  !/^[a-f0-9]{40}$/.test(run.head_sha ?? '') ||
+                  run.repository?.full_name !== repository || run.head_repository?.full_name !== repository ||
+                  typeof run.head_branch !== 'string' || !run.head_branch.startsWith('feature/')) return;
+              const requests = await github.paginate(github.rest.pulls.list, {...context.repo,
+                state: 'open', base: 'master', head: `${context.repo.owner}:${run.head_branch}`, per_page: 100});
+              for (const request of requests) {
+                if (request.state === 'open' && request.base?.ref === 'master' &&
+                    request.base.repo?.full_name === repository && request.head.sha === run.head_sha &&
+                    request.head.ref === run.head_branch && request.head.repo?.full_name === repository) {
+                  await updateArticleComment(request, run);
+                }
+              }
             } else {
               if (context.ref !== 'refs/heads/feature/archive-pilot-en') return;
               const requests = await github.paginate(github.rest.pulls.list, {...context.repo, state: 'open', base: 'feature/archive-pilot-en', per_page: 100});

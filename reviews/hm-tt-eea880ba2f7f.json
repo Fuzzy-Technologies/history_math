@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-eea880ba2f7f",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 8,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-11-03",
+      "url": "https://teletype.in/@history_math/Nonius"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
