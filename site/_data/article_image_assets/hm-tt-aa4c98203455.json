@@ -1,0 +1,102 @@
+{
+  "/assets/images/hm-tt-aa4c98203455/carroll-pirate-puzzle-01.png": {
+    "sha256": "cef29702e6ac7574bd3fac4a03008ea4463f1129ae0075a6bf47265383b55317",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 3037499,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-aa4c98203455/carroll-pirate-puzzle-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "e687ff8bae7003e3c4802cff73f890b28b6370e1ecbadc9756e96ab45d6652f5",
+        "bytes": 1537340
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-aa4c98203455-carroll-pirate-puzzle-01-cef29702e6ac7574bd3fac4a03008ea4463f1129ae0075a6bf47265383b55317.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630492374",
+      "asset_id": 630492374,
+      "release_tag": "article-originals-c",
+      "sha256": "cef29702e6ac7574bd3fac4a03008ea4463f1129ae0075a6bf47265383b55317",
+      "bytes": 3037499
+    }
+  },
+  "/assets/images/hm-tt-aa4c98203455/carroll-pirate-puzzle-02.png": {
+    "sha256": "ed2e04f02846a20e99c585a54004300ef80e30596a55d9019c4fb23d297ac155",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2875266,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-aa4c98203455/carroll-pirate-puzzle-02.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "7bb5f4976909f70cf366babaa563736d3de8a05a7b3be09ee1bd00110b99d54d",
+        "bytes": 1649846
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-aa4c98203455-carroll-pirate-puzzle-02-ed2e04f02846a20e99c585a54004300ef80e30596a55d9019c4fb23d297ac155.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630530435",
+      "asset_id": 630530435,
+      "release_tag": "article-originals-e",
+      "sha256": "ed2e04f02846a20e99c585a54004300ef80e30596a55d9019c4fb23d297ac155",
+      "bytes": 2875266
+    }
+  },
+  "/assets/images/hm-tt-aa4c98203455/carroll-pirate-puzzle-03.png": {
+    "sha256": "fd242da5c47058e8502c874fc050b88af11bb4ce5fd31a10f068dde8e16540ae",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 65697,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-aa4c98203455/carroll-pirate-puzzle-03.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "9b331bcf6086b0614e7a09a7c4eadb43ee8f5abbdea79489b4d3b6aeb45bb3db",
+        "bytes": 69060
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-aa4c98203455-carroll-pirate-puzzle-03-fd242da5c47058e8502c874fc050b88af11bb4ce5fd31a10f068dde8e16540ae.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630530612",
+      "asset_id": 630530612,
+      "release_tag": "article-originals-f",
+      "sha256": "fd242da5c47058e8502c874fc050b88af11bb4ce5fd31a10f068dde8e16540ae",
+      "bytes": 65697
+    }
+  },
+  "/assets/images/hm-tt-aa4c98203455/carroll-pirate-puzzle-04.png": {
+    "sha256": "c39d93cbabf06ce1f67192aeebd369ba755d13e3083a393295ae93f03bc52502",
+    "width": 1024,
+    "height": 512,
+    "bytes": 1522978,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-aa4c98203455/carroll-pirate-puzzle-04.png-960.webp",
+        "width": 960,
+        "height": 480,
+        "sha256": "1016d2a813324df594fdebca47847f8f91fd4fdbf4d0074987a704ddc06b7a5f",
+        "bytes": 774426
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-aa4c98203455-carroll-pirate-puzzle-04-c39d93cbabf06ce1f67192aeebd369ba755d13e3083a393295ae93f03bc52502.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630530857",
+      "asset_id": 630530857,
+      "release_tag": "article-originals-c",
+      "sha256": "c39d93cbabf06ce1f67192aeebd369ba755d13e3083a393295ae93f03bc52502",
+      "bytes": 1522978
+    }
+  }
+}
