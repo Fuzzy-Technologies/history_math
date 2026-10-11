@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-e4f7e2e65d63/drambalop-10-14-01.png": {
+    "sha256": "cbcfbfd1ca62fd7c80001d4c8a8cfebe95a66bc573fe97716d34c7688ce32f5d",
+    "width": 952,
+    "height": 700,
+    "bytes": 1610876,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e4f7e2e65d63/drambalop-10-14-01.png-952.webp",
+        "width": 952,
+        "height": 700,
+        "sha256": "5a0684769482097921aff5a02c2095d6b44e8fd9acbee4a8991b8b8de4c67221",
+        "bytes": 883360
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-e4f7e2e65d63-drambalop-10-14-01-cbcfbfd1ca62fd7c80001d4c8a8cfebe95a66bc573fe97716d34c7688ce32f5d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630498428",
+      "asset_id": 630498428,
+      "release_tag": "article-originals-c",
+      "sha256": "cbcfbfd1ca62fd7c80001d4c8a8cfebe95a66bc573fe97716d34c7688ce32f5d",
+      "bytes": 1610876
+    }
+  },
+  "/assets/images/hm-tt-e4f7e2e65d63/drambalop-10-14-02.png": {
+    "sha256": "7f57ac3dad03912006551a64ce73ed76faa8ee3580cba45440f8e3dc568fd96f",
+    "width": 400,
+    "height": 654,
+    "bytes": 244429,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e4f7e2e65d63/drambalop-10-14-02.png-400.webp",
+        "width": 400,
+        "height": 654,
+        "sha256": "ad9b4e682a91299a94550e798a38ffa786ac7f438aa584b2fd6844da71e7082c",
+        "bytes": 122600
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-e4f7e2e65d63-drambalop-10-14-02-7f57ac3dad03912006551a64ce73ed76faa8ee3580cba45440f8e3dc568fd96f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559574",
+      "asset_id": 630559574,
+      "release_tag": "article-originals-7",
+      "sha256": "7f57ac3dad03912006551a64ce73ed76faa8ee3580cba45440f8e3dc568fd96f",
+      "bytes": 244429
+    }
+  },
+  "/assets/images/hm-tt-e4f7e2e65d63/drambalop-10-14-03.png": {
+    "sha256": "ef6cd58933ea13f3cea473a535adfc68b412ece129843aae7d9b970d0f383b05",
+    "width": 1820,
+    "height": 2750,
+    "bytes": 5213348,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e4f7e2e65d63/drambalop-10-14-03.png-960.webp",
+        "width": 960,
+        "height": 1451,
+        "sha256": "fd508d58138890dd9b8ddcd1587331c1812ab6efec1e3b566ccf11c6f95ed8bf",
+        "bytes": 835550
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-e4f7e2e65d63-drambalop-10-14-03-ef6cd58933ea13f3cea473a535adfc68b412ece129843aae7d9b970d0f383b05.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559740",
+      "asset_id": 630559740,
+      "release_tag": "article-originals-e",
+      "sha256": "ef6cd58933ea13f3cea473a535adfc68b412ece129843aae7d9b970d0f383b05",
+      "bytes": 5213348
+    }
+  }
+}
