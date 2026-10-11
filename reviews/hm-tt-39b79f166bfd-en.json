@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-39b79f166bfd-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "degree-anniversary-year",
+      "question": "The source says “2004” in the paragraph about the 220th anniversary of academic degrees, whereas its opening and the arithmetic indicate 2024. May this apparent typo be corrected before publication? It is retained in the English adaptation.",
+      "blocking": false,
+      "state": "open"
+    },
+    {
+      "id": "educational-period-and-dates",
+      "question": "Can the editor verify the dates given for Vilna and Dorpat, the claim about Moscow being the only functioning university, and the placement of an 1848–1851 rectorship within the “first third” of the century? Source claims are preserved.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-02-24",
+      "url": "https://teletype.in/@history_math/Reforma-obrazovaniya-nachala-XIX-veka-02-24"
+    }
+  }
+}
