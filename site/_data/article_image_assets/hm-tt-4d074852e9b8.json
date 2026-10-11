@@ -1,0 +1,102 @@
+{
+  "/assets/images/hm-tt-4d074852e9b8/the-paradoxes-of-zeno-of-ele-01.jpeg": {
+    "sha256": "4bc804ac94aa6254de66176949f6518ad3d70ca2cacb71ae38a27d129ab766d0",
+    "width": 487,
+    "height": 600,
+    "bytes": 69952,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4d074852e9b8/the-paradoxes-of-zeno-of-ele-01-487.jpeg",
+        "width": 487,
+        "height": 600,
+        "bytes": 69952,
+        "sha256": "4bc804ac94aa6254de66176949f6518ad3d70ca2cacb71ae38a27d129ab766d0"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-4d074852e9b8-the-paradoxes-of-zeno-of-ele-01-4bc804ac94aa6254de66176949f6518ad3d70ca2cacb71ae38a27d129ab766d0.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630493833",
+      "asset_id": 630493833,
+      "release_tag": "article-originals-4",
+      "sha256": "4bc804ac94aa6254de66176949f6518ad3d70ca2cacb71ae38a27d129ab766d0",
+      "bytes": 69952
+    }
+  },
+  "/assets/images/hm-tt-4d074852e9b8/the-paradoxes-of-zeno-of-ele-02.png": {
+    "sha256": "35580829d46ed6189a149edfb9a77c2779f21e7f444803429ffc87f0a920a415",
+    "width": 559,
+    "height": 564,
+    "bytes": 41757,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4d074852e9b8/the-paradoxes-of-zeno-of-ele-02.png-559.webp",
+        "width": 559,
+        "height": 564,
+        "sha256": "a2c136fc909f56cc5c63f1b5596c168fde9bdab206e77639c0c0c36536d9023b",
+        "bytes": 22656
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-4d074852e9b8-the-paradoxes-of-zeno-of-ele-02-35580829d46ed6189a149edfb9a77c2779f21e7f444803429ffc87f0a920a415.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630534626",
+      "asset_id": 630534626,
+      "release_tag": "article-originals-3",
+      "sha256": "35580829d46ed6189a149edfb9a77c2779f21e7f444803429ffc87f0a920a415",
+      "bytes": 41757
+    }
+  },
+  "/assets/images/hm-tt-4d074852e9b8/the-paradoxes-of-zeno-of-ele-03.png": {
+    "sha256": "87b9e57aa5fa42ff281f9ec9fcd1b63d48a940fdfdb935b23f204ecc58f3c346",
+    "width": 764,
+    "height": 261,
+    "bytes": 19983,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4d074852e9b8/the-paradoxes-of-zeno-of-ele-03.png-764.webp",
+        "width": 764,
+        "height": 261,
+        "sha256": "e36de61a88da518b2e795a7ad1ab6092f3b66c1a135fd146926a2b88be0904db",
+        "bytes": 11264
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-4d074852e9b8-the-paradoxes-of-zeno-of-ele-03-87b9e57aa5fa42ff281f9ec9fcd1b63d48a940fdfdb935b23f204ecc58f3c346.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630534887",
+      "asset_id": 630534887,
+      "release_tag": "article-originals-8",
+      "sha256": "87b9e57aa5fa42ff281f9ec9fcd1b63d48a940fdfdb935b23f204ecc58f3c346",
+      "bytes": 19983
+    }
+  },
+  "/assets/images/hm-tt-4d074852e9b8/the-paradoxes-of-zeno-of-ele-04.jpeg": {
+    "sha256": "fc96806c07e04e41a21a0fe5b47d68398a5ea6598e261aa48eefb99e1ea951a8",
+    "width": 2300,
+    "height": 750,
+    "bytes": 198994,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4d074852e9b8/the-paradoxes-of-zeno-of-ele-04.jpeg-960.webp",
+        "width": 960,
+        "height": 313,
+        "sha256": "bab3d72ab3d7560b3ca702c55429277ee96c8639064ccafb809c1a2cf8b2e7ec",
+        "bytes": 306552
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-4d074852e9b8-the-paradoxes-of-zeno-of-ele-04-fc96806c07e04e41a21a0fe5b47d68398a5ea6598e261aa48eefb99e1ea951a8.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630535091",
+      "asset_id": 630535091,
+      "release_tag": "article-originals-f",
+      "sha256": "fc96806c07e04e41a21a0fe5b47d68398a5ea6598e261aa48eefb99e1ea951a8",
+      "bytes": 198994
+    }
+  }
+}
