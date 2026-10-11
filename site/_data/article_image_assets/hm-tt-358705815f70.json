@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-358705815f70/tremaux-maze-01.png": {
+    "sha256": "5ff9d199e183055dd5c3dda39d0891db3ed4a14a26e72b4de7cecec446593c10",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 1502527,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-358705815f70/tremaux-maze-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "c23e3254b0edfb420edaf6123bc8805e8bbce59a47c67bb0029a6951e0011cc9",
+        "bytes": 1072380
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-358705815f70-tremaux-maze-01-5ff9d199e183055dd5c3dda39d0891db3ed4a14a26e72b4de7cecec446593c10.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630493463",
+      "asset_id": 630493463,
+      "release_tag": "article-originals-5",
+      "sha256": "5ff9d199e183055dd5c3dda39d0891db3ed4a14a26e72b4de7cecec446593c10",
+      "bytes": 1502527
+    }
+  },
+  "/assets/images/hm-tt-358705815f70/tremaux-maze-02.png": {
+    "sha256": "7e456fcdf432b6f82e0a74e0ea7c79498aea435e312fbb4defc7795ef3dceecd",
+    "width": 1000,
+    "height": 808,
+    "bytes": 440446,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-358705815f70/tremaux-maze-02.png-960.webp",
+        "width": 960,
+        "height": 776,
+        "sha256": "c2efe059cd1aaebb593c92c48c40aa1b0f0519a744801dd7ef3f078af7792341",
+        "bytes": 274356
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-358705815f70-tremaux-maze-02-7e456fcdf432b6f82e0a74e0ea7c79498aea435e312fbb4defc7795ef3dceecd.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630529504",
+      "asset_id": 630529504,
+      "release_tag": "article-originals-7",
+      "sha256": "7e456fcdf432b6f82e0a74e0ea7c79498aea435e312fbb4defc7795ef3dceecd",
+      "bytes": 440446
+    }
+  },
+  "/assets/images/hm-tt-358705815f70/tremaux-maze-03.gif": {
+    "sha256": "16a3f4f96098f8beeff49a2b1291944eeb78a375cbae50f2de30b958cd285c65",
+    "width": 220,
+    "height": 251,
+    "bytes": 84171,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-358705815f70/tremaux-maze-03.gif-220.webp",
+        "width": 220,
+        "height": 251,
+        "sha256": "deac0d38f167ce9885b21ccbf7578160eff2b8c67d141b3fb465181376a57f26",
+        "bytes": 210050
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-358705815f70-tremaux-maze-03-16a3f4f96098f8beeff49a2b1291944eeb78a375cbae50f2de30b958cd285c65.gif",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630529694",
+      "asset_id": 630529694,
+      "release_tag": "article-originals-1",
+      "sha256": "16a3f4f96098f8beeff49a2b1291944eeb78a375cbae50f2de30b958cd285c65",
+      "bytes": 84171
+    }
+  },
+  "/assets/images/hm-tt-358705815f70/tremaux-maze-04.png": {
+    "sha256": "297b2871b2c8a71f9cdb38961fca41d6d31d8670fe57570119f28c24de6bc417",
+    "width": 500,
+    "height": 440,
+    "bytes": 14708,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-358705815f70/tremaux-maze-04.png-500.webp",
+        "width": 500,
+        "height": 440,
+        "sha256": "fdacac11af17d94a48ae234ccb75520696663950bd585214d93049178954df9d",
+        "bytes": 4400
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-358705815f70-tremaux-maze-04-297b2871b2c8a71f9cdb38961fca41d6d31d8670fe57570119f28c24de6bc417.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630529918",
+      "asset_id": 630529918,
+      "release_tag": "article-originals-2",
+      "sha256": "297b2871b2c8a71f9cdb38961fca41d6d31d8670fe57570119f28c24de6bc417",
+      "bytes": 14708
+    }
+  },
+  "/assets/images/hm-tt-358705815f70/tremaux-maze-05.png": {
+    "sha256": "e84846042b0cbddb491d5be3832f1e0f4b4e5fe55cf7c81ad840dad5c02d33a1",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 4477435,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-358705815f70/tremaux-maze-05.png-960.webp",
+        "width": 960,
+        "height": 640,
+        "sha256": "d9ec77890ab699bc870400ab5ba73538d0cf5b388ce9472fd5a3b4bd995a9dd6",
+        "bytes": 984136
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-358705815f70-tremaux-maze-05-e84846042b0cbddb491d5be3832f1e0f4b4e5fe55cf7c81ad840dad5c02d33a1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630530110",
+      "asset_id": 630530110,
+      "release_tag": "article-originals-e",
+      "sha256": "e84846042b0cbddb491d5be3832f1e0f4b4e5fe55cf7c81ad840dad5c02d33a1",
+      "bytes": 4477435
+    }
+  },
+  "/assets/images/hm-tt-358705815f70/tremaux-maze-06.png": {
+    "sha256": "3d945f67af8bb009f072513a927e17aee3fe7d4749884d2ecfac556b4ea95a96",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2285347,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-358705815f70/tremaux-maze-06.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "81400cb84dc937590c48d527575852cb26a07b33a883ed3f2c5edcf1eed1daf1",
+        "bytes": 1138434
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-358705815f70-tremaux-maze-06-3d945f67af8bb009f072513a927e17aee3fe7d4749884d2ecfac556b4ea95a96.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630530266",
+      "asset_id": 630530266,
+      "release_tag": "article-originals-3",
+      "sha256": "3d945f67af8bb009f072513a927e17aee3fe7d4749884d2ecfac556b4ea95a96",
+      "bytes": 2285347
+    }
+  }
+}
