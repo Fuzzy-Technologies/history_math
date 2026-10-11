@@ -1,0 +1,17 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-ca4998c719f0-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-08-31",
+      "url": "https://teletype.in/@history_math/Alidada-08-31"
+    }
+  }
+}
