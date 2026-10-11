@@ -1,0 +1,36 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-5cbde4c21638-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The Briggs paragraph begins “In 1617” but dates the publication in parentheses to 1624 and joins different table precisions in one sentence. Confirm the intended distinction between publications; every date and precision has been retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-english-2",
+      "question": "The opening caption describes Napier’s entries as absolute values of natural logarithms of sines. Confirm the scale and normalization of the historical table; the description is retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-english-3",
+      "question": "The source says logarithm tables were used for more than three centuries “until the 19th century”, then displaced in the 20th. Confirm the intended endpoint; the chronology is retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 12,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-01-12",
+      "url": "https://teletype.in/@history_math/logarithmic-tables"
+    }
+  }
+}
