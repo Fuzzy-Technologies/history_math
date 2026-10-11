@@ -1,0 +1,21 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-1f5b334a6aad",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-06-11",
+      "url": "https://teletype.in/@history_math/Proportional-Compass"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged.",
+    "Formatted the archived book addresses in figure captions as descriptive Source links; original image bytes and bibliographic information retained."
+  ]
+}
