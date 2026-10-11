@@ -20,8 +20,8 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  # Enabled only after the owner-authorized bootstrap code passes GitHub CI.
-  ARTICLE_ASSET_BOOTSTRAP_ENABLED: 'true'
+  # The owner-authorized bootstrap has completed; future preparation runs use master.
+  ARTICLE_ASSET_BOOTSTRAP_ENABLED: 'false'
 
 jobs:
   plan:
