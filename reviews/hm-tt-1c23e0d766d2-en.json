@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-1c23e0d766d2-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-primes-1",
+      "question": "Confirm the source's claim that Mersenne conjectured 2ⁿ − 1 to be prime for every prime n and that this was disproved only in the twentieth century. The adaptation retains the claim without correction.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-12-01",
+      "url": "https://teletype.in/@history_math/prime-numbers"
+    }
+  }
+}
