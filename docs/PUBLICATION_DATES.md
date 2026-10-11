@@ -11,6 +11,12 @@ with the visible date and is not substituted. Other articles retain the
 ordinary master-history rule below. The four earlier migrated articles use
 the same exception; their existing editorial text and images are preserved.
 
+For an explicit owner-authorized date correction outside that archive, set
+`original_publication.preserve_date: true` alongside a valid original `date`.
+On 2026-10-11 the owner requested 2024-03-25 for both Rumovsky versions
+(`hm-0b1ea17c8b02`); their Telegram attribution is retained. The flag is opt-in:
+other original outlet dates continue to use the ordinary rule below.
+
 The website publication date is the Moscow calendar day of the first commit on
 `master`'s first-parent history whose article metadata has `status: published`.
 For a normal PR merge or squash, this is the merge commit's committer timestamp,

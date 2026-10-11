@@ -29,8 +29,12 @@
         "outlet": {"type": "string", "minLength": 1},
         "date": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
         "url": {"type": "string", "pattern": "^https://"},
-        "citation": {"type": "string", "minLength": 1}
-      }
+        "citation": {"type": "string", "minLength": 1},
+        "preserve_date": {"type": "boolean"}
+      },
+      "allOf": [
+        {"if": {"required": ["preserve_date"], "properties": {"preserve_date": {"const": true}}}, "then": {"required": ["date"]}}
+      ]
     },
     "source_url": {"type": "string", "pattern": "^https://"},
     "rights_basis": {"type": "string", "minLength": 1},

@@ -6,8 +6,25 @@ require "tmpdir"
 require "fileutils"
 require "json"
 require "open3"
+require_relative "../site/_plugins/publication_dates"
 
 class PublicationTest < Minitest::Test
+  def test_preserved_original_dates_require_explicit_opt_in_and_valid_calendar_dates
+    original = {"outlet" => "Telegram · history_math", "date" => "2024-03-25"}
+    data = {"original_publication" => original}
+    assert_nil HistoryMath.preserved_publication_date(data)
+    original["preserve_date"] = false
+    assert_nil HistoryMath.preserved_publication_date(data)
+    original["preserve_date"] = true
+    assert_equal "2024-03-25", HistoryMath.preserved_publication_date(data)
+    [nil, "2024-02-30", "2024-03-25T00:00:00Z"].each do |date|
+      original["date"] = date
+      assert_raises(Jekyll::Errors::FatalException) { HistoryMath.preserved_publication_date(data) }
+    end
+    original.delete("date")
+    assert_raises(Jekyll::Errors::FatalException) { HistoryMath.preserved_publication_date(data) }
+  end
+
   def test_master_dates_reach_output_without_changing_approved_source
     with_site do |source, config|
       root = File.dirname(source)
@@ -31,18 +48,22 @@ class PublicationTest < Minitest::Test
       site = Jekyll::Site.new(config)
       site.process
       site.collections.fetch("articles").docs.select { |doc| doc.data["status"] == "published" }.each do |doc|
-        expected = HistoryMath.teletype_publication_date(doc.data) || "2026-09-21"
+        expected = HistoryMath.preserved_publication_date(doc.data) || HistoryMath.teletype_publication_date(doc.data) || "2026-09-21"
         assert_equal expected, doc.data["date"].strftime("%Y-%m-%d")
         html = File.read(doc.destination(site.dest))
         assert_includes html, %(datetime="#{expected}")
         assert_includes html, "21.09.2026" if doc.data["lang"] == "ru" && expected == "2026-09-21"
         assert_includes html, "Sep. 21, 2026" if doc.data["lang"] == "en" && expected == "2026-09-21"
+        if doc.data["translation_key"] == "hm-0b1ea17c8b02"
+          assert_equal "2024-03-25", expected
+          assert_includes html, doc.data["lang"] == "ru" ? "25.03.2024" : "Mar. 25, 2024"
+        end
       end
       %w[search-ru search-en discovery-ru discovery-en].each do |name|
         records = JSON.parse(File.read(File.join(site.dest, "assets/#{name}.json")))
         records.select { |record| record["status"] == "published" }.each do |record|
           doc = site.collections.fetch("articles").docs.find { |item| item.data["title"] == record["title"] }
-          assert_equal (HistoryMath.teletype_publication_date(doc.data) || "2026-09-21"), record["date"]
+          assert_equal (HistoryMath.preserved_publication_date(doc.data) || HistoryMath.teletype_publication_date(doc.data) || "2026-09-21"), record["date"]
         end
       end
       before.each { |path, bytes| assert_equal bytes, File.binread(path) }
@@ -51,6 +72,7 @@ class PublicationTest < Minitest::Test
       # Test the resolver directly so the independent editorial gate is not bypassed.
       doc = site.collections.fetch("articles").docs.find { |item| item.data["article_id"] == "hm-0b1ea17c8b02" }
       doc.data["article_id"] = "never-published"
+      doc.data["original_publication"].delete("preserve_date")
       assert_raises(Jekyll::Errors::FatalException) { HistoryMath.apply_publication_dates!(site) }
     ensure
       ENV.delete("HISTORY_MATH_PUBLICATION_STRICT")

@@ -5,7 +5,7 @@
     "status": "approved",
     "reviewed_by": "Timur Gilmullin (Tim55667757)",
     "date": "2026-10-10",
-    "package_sha256": "17f2c54d8d4131dd2921bf6f45d433d9549a6a19315557142975369104cdcb9c"
+    "package_sha256": "2653018e22a86b256dd0e0921e3482163165d2ae881beff2bc95bd402b691b8e"
   },
   "questions": [
     {
@@ -38,6 +38,7 @@
         "Removed the contradictory age and separated selection from entry; checked the 1748 year against Kulikovsky and added an English citation. No change made to the approved Russian original."
       ]
     },
-    "publication_approval": "Owner confirmed review and merge of PR #47 on 2026-10-10 (Europe/Moscow). Publication metadata updated; approved English prose and image bytes are unchanged."
+    "publication_approval": "Owner confirmed review and merge of PR #47 on 2026-10-10 (Europe/Moscow). Publication metadata updated; approved English prose and image bytes are unchanged.",
+    "publication_date_correction": "Owner requested on 2026-10-11 that the Rumovsky website publication date be 2024-03-25 in both languages. Enabled explicit preservation of the existing original date and refreshed the package hash; prior editorial decisions, prose and portrait bytes are retained."
   }
 }
