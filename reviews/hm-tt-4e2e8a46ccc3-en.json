@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-4e2e8a46ccc3-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-quadrant-1",
+      "question": "The source identifies Ulugh Beg's instrument as a quadrant and says the instrument fell out of use in the late seventeenth century. Confirm the instrument classification and the scope of the latter statement. The English retains both claims.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-quadrant-2",
+      "question": "The source places 'zenith distance' in parentheses after 'altitude', although the two angles are complementary. Confirm the intended wording; the source distinction has not been silently corrected.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-04-06",
+      "url": "https://teletype.in/@history_math/Kvadrant-04-06"
+    }
+  }
+}
