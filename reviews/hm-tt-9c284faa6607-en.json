@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-9c284faa6607-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-modzalevsky-age",
+      "question": "The source says Modzalevsky lived 46 years, but its dates, 27 July 1902 to 26 June 1948, imply 45 completed years. Please authorise any correction; the supplied age and dates are retained.",
+      "blocking": false,
+      "state": "open"
+    },
+    {
+      "id": "en-modzalevsky-period",
+      "question": "Please clarify the opening description as the best-known archivist of 1930–1950 despite the death date in 1948. The source period and superlative are retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 8,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-10-19",
+      "url": "https://teletype.in/@history_math/Pushkin-Lomonosov-Lobachevskij-ehto-vsyo-o-nyom-10-19"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
