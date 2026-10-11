@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-e3b5f5408303-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "quoted-money-word",
+      "question": "The Gleyzer quotation says percentages were used in commercial and monetary “references” (ссылках), an unusual phrase that may be a transcription error for transactions. Which wording is intended? The source wording is retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-01-06",
+      "url": "https://teletype.in/@history_math/Procenty-01-06"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
