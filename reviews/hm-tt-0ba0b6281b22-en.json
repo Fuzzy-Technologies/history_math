@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-0ba0b6281b22-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-farey-zero-fraction",
+      "question": "The definition gives 0/n as the first reduced fraction, although 0/1 is the reduced form and is used in the displayed answer. Please authorise any correction; 0/n is retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "en-farey-mediant-history",
+      "question": "Please verify the claim that Khinchin introduced the concept of the mediant, given the earlier Farey/Cauchy discussion in the same article. The historical attribution is retained.",
+      "blocking": false,
+      "state": "open"
+    },
+    {
+      "id": "en-farey-induction",
+      "question": "The induction prose says the mediant is inserted between a general neighbouring pair at the next order; this occurs only when the denominator sum is n + 1. Please review the quantification in the proof and the implicit denominator/range conditions in the totient statement. The source proof is retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-10-26",
+      "url": "https://teletype.in/@history_math/Farey-sequence"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
