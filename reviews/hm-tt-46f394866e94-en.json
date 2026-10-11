@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-46f394866e94-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "newton-first-edition",
+      "question": "Figure 11 dates the first edition of Newton’s Principia to 1686. Should this be distinguished from the first publication date of 1687? The source caption is retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "bacon-quotation-attribution",
+      "question": "The quotation about knowing mathematics is placed beside a portrait of Francis Bacon. Should its attribution be verified, particularly whether Roger Bacon is intended? The original quotation and figure placement are retained.",
+      "blocking": false,
+      "state": "open"
+    },
+    {
+      "id": "newton-life-dates",
+      "question": "Figure 10 dates Newton to 1642–1726. Should the calendar convention be stated, since modern Gregorian dates are often given as 1643–1727? The original dates are retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 11,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-14",
+      "url": "https://teletype.in/@history_math/What-is-Math"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}

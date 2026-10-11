@@ -1,0 +1,277 @@
+{
+  "/assets/images/hm-tt-46f394866e94/what-is-math-01.png": {
+    "sha256": "26d15c4dea9348a7a88939c13305f6e8e2af018a4f2d86e10f6b2c047ef436b2",
+    "width": 1600,
+    "height": 1126,
+    "bytes": 1702966,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-01-png-reading-960-b3a453a905ee.webp",
+        "width": 960,
+        "height": 676,
+        "sha256": "b3a453a905ee5ff5cea0b24173bd4067b84160da0761d0f6b2aad5f337673881",
+        "bytes": 602024
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-46f394866e94-what-is-math-01-26d15c4dea9348a7a88939c13305f6e8e2af018a4f2d86e10f6b2c047ef436b2.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630499525",
+      "asset_id": 630499525,
+      "release_tag": "article-originals-2",
+      "sha256": "26d15c4dea9348a7a88939c13305f6e8e2af018a4f2d86e10f6b2c047ef436b2",
+      "bytes": 1702966
+    }
+  },
+  "/assets/images/hm-tt-46f394866e94/what-is-math-02.png": {
+    "sha256": "0f26b5dafe2e75471135340ca31e22bd0a69916a96ab5ea2a529c9d5604620d4",
+    "width": 597,
+    "height": 800,
+    "bytes": 1160417,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-02.png-597.webp",
+        "width": 597,
+        "height": 800,
+        "sha256": "e51df4421afc682aa80a2575dff5d7023cb3472b0497392182c7aa5b2508203a",
+        "bytes": 496066
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-46f394866e94-what-is-math-02-0f26b5dafe2e75471135340ca31e22bd0a69916a96ab5ea2a529c9d5604620d4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630562189",
+      "asset_id": 630562189,
+      "release_tag": "article-originals-0",
+      "sha256": "0f26b5dafe2e75471135340ca31e22bd0a69916a96ab5ea2a529c9d5604620d4",
+      "bytes": 1160417
+    }
+  },
+  "/assets/images/hm-tt-46f394866e94/what-is-math-03.png": {
+    "sha256": "3caf3d136a20cf3f768b011287ab09b1fc457655f1b2c0a4c397fbfefda1a0d0",
+    "width": 2400,
+    "height": 2993,
+    "bytes": 9577192,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-03.png-960.webp",
+        "width": 960,
+        "height": 1197,
+        "sha256": "50cc955f2d6fb3eebaca233819c3b61331a8faa042efa404de0831bc1af6e955",
+        "bytes": 1061290
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-46f394866e94-what-is-math-03-3caf3d136a20cf3f768b011287ab09b1fc457655f1b2c0a4c397fbfefda1a0d0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630562364",
+      "asset_id": 630562364,
+      "release_tag": "article-originals-3",
+      "sha256": "3caf3d136a20cf3f768b011287ab09b1fc457655f1b2c0a4c397fbfefda1a0d0",
+      "bytes": 9577192
+    }
+  },
+  "/assets/images/hm-tt-46f394866e94/what-is-math-04.png": {
+    "sha256": "7f789a0c39d1a7610363635a9a8f5646230651907c1b22906555f1ba0c1a7758",
+    "width": 1820,
+    "height": 2195,
+    "bytes": 2439918,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-04-png-reading-960-b8577e2d1dbf.webp",
+        "width": 960,
+        "height": 1158,
+        "sha256": "b8577e2d1dbfca2a32b0eb542a5926b56a3c10a988ffe5a718af32b01a80c826",
+        "bytes": 337092
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-46f394866e94-what-is-math-04-7f789a0c39d1a7610363635a9a8f5646230651907c1b22906555f1ba0c1a7758.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630562602",
+      "asset_id": 630562602,
+      "release_tag": "article-originals-7",
+      "sha256": "7f789a0c39d1a7610363635a9a8f5646230651907c1b22906555f1ba0c1a7758",
+      "bytes": 2439918
+    }
+  },
+  "/assets/images/hm-tt-46f394866e94/what-is-math-05.png": {
+    "sha256": "39fa6583f6a1811a6d22eaa71bcbfe1b431a73d586bf2eb59fdc8b95167400a6",
+    "width": 474,
+    "height": 149,
+    "bytes": 10626,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-05.png-474.webp",
+        "width": 474,
+        "height": 149,
+        "sha256": "6ed03c73933045d518958585b44b454a40a35d6aa0e4853a39f827043bf3ca52",
+        "bytes": 3336
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-46f394866e94-what-is-math-05-39fa6583f6a1811a6d22eaa71bcbfe1b431a73d586bf2eb59fdc8b95167400a6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630562806",
+      "asset_id": 630562806,
+      "release_tag": "article-originals-3",
+      "sha256": "39fa6583f6a1811a6d22eaa71bcbfe1b431a73d586bf2eb59fdc8b95167400a6",
+      "bytes": 10626
+    }
+  },
+  "/assets/images/hm-tt-46f394866e94/what-is-math-06.png": {
+    "sha256": "5b67c5a13831e3f0f0ff0960dbf19cf50a866396b2a238614c95add4977aad28",
+    "width": 320,
+    "height": 103,
+    "bytes": 7420,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-06.png-320.webp",
+        "width": 320,
+        "height": 103,
+        "sha256": "8b11e530c49e50a1f8469f7bc36b500cda7fe4c6a328e8cb7343b042d682c3ad",
+        "bytes": 2218
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-46f394866e94-what-is-math-06-5b67c5a13831e3f0f0ff0960dbf19cf50a866396b2a238614c95add4977aad28.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630562996",
+      "asset_id": 630562996,
+      "release_tag": "article-originals-5",
+      "sha256": "5b67c5a13831e3f0f0ff0960dbf19cf50a866396b2a238614c95add4977aad28",
+      "bytes": 7420
+    }
+  },
+  "/assets/images/hm-tt-46f394866e94/what-is-math-07.png": {
+    "sha256": "354881802f64269cb75afeb045570af15fb4b7df16d58f14aba9086da6cee4f9",
+    "width": 562,
+    "height": 185,
+    "bytes": 17571,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-07.png-562.webp",
+        "width": 562,
+        "height": 185,
+        "sha256": "964751ce93802e3c7631c775a0525c09f6c98398d6d7621943ee2095a0209f8e",
+        "bytes": 5516
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-46f394866e94-what-is-math-07-354881802f64269cb75afeb045570af15fb4b7df16d58f14aba9086da6cee4f9.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563182",
+      "asset_id": 630563182,
+      "release_tag": "article-originals-3",
+      "sha256": "354881802f64269cb75afeb045570af15fb4b7df16d58f14aba9086da6cee4f9",
+      "bytes": 17571
+    }
+  },
+  "/assets/images/hm-tt-46f394866e94/what-is-math-08.png": {
+    "sha256": "36e6313511a2def9415e0816412dded75959ef5811a9b69dd68b77e340e1f207",
+    "width": 850,
+    "height": 1166,
+    "bytes": 2522847,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-08-png-reading-850-77d6532ee8ea.webp",
+        "width": 850,
+        "height": 1166,
+        "sha256": "77d6532ee8ea20767db847fd363ab80148f9bb91b41c6d0ca3ad579b8eab167b",
+        "bytes": 1548670
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-46f394866e94-what-is-math-08-36e6313511a2def9415e0816412dded75959ef5811a9b69dd68b77e340e1f207.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563392",
+      "asset_id": 630563392,
+      "release_tag": "article-originals-3",
+      "sha256": "36e6313511a2def9415e0816412dded75959ef5811a9b69dd68b77e340e1f207",
+      "bytes": 2522847
+    }
+  },
+  "/assets/images/hm-tt-46f394866e94/what-is-math-09.png": {
+    "sha256": "ca2de6345926fcc9f7797f23a03ea6a0130dea11ef937d6356b86cc2427e1524",
+    "width": 2048,
+    "height": 1360,
+    "bytes": 7503703,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-09.png-960.webp",
+        "width": 960,
+        "height": 638,
+        "sha256": "843890776da25dd22543f9e6612112a03d2000168f27764d3e0e7f2395eae91c",
+        "bytes": 982514
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-46f394866e94-what-is-math-09-ca2de6345926fcc9f7797f23a03ea6a0130dea11ef937d6356b86cc2427e1524.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563560",
+      "asset_id": 630563560,
+      "release_tag": "article-originals-c",
+      "sha256": "ca2de6345926fcc9f7797f23a03ea6a0130dea11ef937d6356b86cc2427e1524",
+      "bytes": 7503703
+    }
+  },
+  "/assets/images/hm-tt-46f394866e94/what-is-math-10.png": {
+    "sha256": "c8ae31d2b73ec95c4cc3140be799e9d316d528644e96823f0df7f64af6b7d0d8",
+    "width": 687,
+    "height": 980,
+    "bytes": 1170891,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-10-png-reading-687-c83418f65435.webp",
+        "width": 687,
+        "height": 980,
+        "sha256": "c83418f654357dc80b45c263ae10716d96b76b34f8ebdbe587fd4b5018eea3a4",
+        "bytes": 521010
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-46f394866e94-what-is-math-10-c8ae31d2b73ec95c4cc3140be799e9d316d528644e96823f0df7f64af6b7d0d8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563688",
+      "asset_id": 630563688,
+      "release_tag": "article-originals-c",
+      "sha256": "c8ae31d2b73ec95c4cc3140be799e9d316d528644e96823f0df7f64af6b7d0d8",
+      "bytes": 1170891
+    }
+  },
+  "/assets/images/hm-tt-46f394866e94/what-is-math-11.png": {
+    "sha256": "41113ebe9bea267374431ad24be0d9b097fcd8228876446c9570182910e6e0f9",
+    "width": 2000,
+    "height": 880,
+    "bytes": 3360324,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-11.png-960.webp",
+        "width": 960,
+        "height": 422,
+        "sha256": "00a220b2005a15095643b3d15346ee99e3f315c72be0e6635bd51f6606ca759a",
+        "bytes": 475890
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-46f394866e94-what-is-math-11-41113ebe9bea267374431ad24be0d9b097fcd8228876446c9570182910e6e0f9.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563862",
+      "asset_id": 630563862,
+      "release_tag": "article-originals-4",
+      "sha256": "41113ebe9bea267374431ad24be0d9b097fcd8228876446c9570182910e6e0f9",
+      "bytes": 3360324
+    }
+  }
+}
