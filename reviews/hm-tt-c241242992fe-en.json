@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-c241242992fe-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source dates the council drawing to 1515 but then places the elections in the 15th century, and glosses Italian Lotto as “Fate”. Confirm the chronology and etymology; both statements are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-english-2",
+      "question": "The source describes winning tickets as containing all five drawn numbers, although it also discusses bets on one to four numbers. Confirm the intended winning condition; the wording is retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-02-02",
+      "url": "https://teletype.in/@history_math/The-Genoese-Lottery-Problem"
+    }
+  }
+}
