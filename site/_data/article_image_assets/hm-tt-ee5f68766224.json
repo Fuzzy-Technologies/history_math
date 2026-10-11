@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-ee5f68766224/kurvimetr-01-21-01.png": {
+    "sha256": "16ff0bfeb7f891bc008e285c9477fce5774c7383ec932de1bb64b5a30e7b555d",
+    "width": 1920,
+    "height": 1920,
+    "bytes": 9544675,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ee5f68766224/kurvimetr-01-21-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "653501b2298e66e10e5a50952481e501b7582363e64e4269fed6ec0f9da71fe5",
+        "bytes": 1395876
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-ee5f68766224-kurvimetr-01-21-01-16ff0bfeb7f891bc008e285c9477fce5774c7383ec932de1bb64b5a30e7b555d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630498458",
+      "asset_id": 630498458,
+      "release_tag": "article-originals-1",
+      "sha256": "16ff0bfeb7f891bc008e285c9477fce5774c7383ec932de1bb64b5a30e7b555d",
+      "bytes": 9544675
+    }
+  },
+  "/assets/images/hm-tt-ee5f68766224/kurvimetr-01-21-02.png": {
+    "sha256": "0b857a68c4be291b83366b50a65f48030afe6697006f93a8e4fea3abb9ebe4fa",
+    "width": 1023,
+    "height": 768,
+    "bytes": 1391181,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ee5f68766224/kurvimetr-01-21-02.png-960.webp",
+        "width": 960,
+        "height": 721,
+        "sha256": "93c3e3a5a5988576501d192dbd58dd2374e3c627d73cc63b0537306e052f1372",
+        "bytes": 761946
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-ee5f68766224-kurvimetr-01-21-02-0b857a68c4be291b83366b50a65f48030afe6697006f93a8e4fea3abb9ebe4fa.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558715",
+      "asset_id": 630558715,
+      "release_tag": "article-originals-0",
+      "sha256": "0b857a68c4be291b83366b50a65f48030afe6697006f93a8e4fea3abb9ebe4fa",
+      "bytes": 1391181
+    }
+  },
+  "/assets/images/hm-tt-ee5f68766224/kurvimetr-01-21-03.png": {
+    "sha256": "f80024fc105826da67a0724cd4ca5b3fd3d6df26e9472dea512488bbac343527",
+    "width": 481,
+    "height": 481,
+    "bytes": 302091,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ee5f68766224/kurvimetr-01-21-03.png-481.webp",
+        "width": 481,
+        "height": 481,
+        "sha256": "f9c17c8e1e913acb84570a942ecdf11646f81f3c4e81b7ec9a5995de1bc3235f",
+        "bytes": 155862
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-ee5f68766224-kurvimetr-01-21-03-f80024fc105826da67a0724cd4ca5b3fd3d6df26e9472dea512488bbac343527.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558856",
+      "asset_id": 630558856,
+      "release_tag": "article-originals-f",
+      "sha256": "f80024fc105826da67a0724cd4ca5b3fd3d6df26e9472dea512488bbac343527",
+      "bytes": 302091
+    }
+  },
+  "/assets/images/hm-tt-ee5f68766224/kurvimetr-01-21-04.png": {
+    "sha256": "4f006a5042a20585e7334362762b52315def63d48f3438a7b2e4e86e07792415",
+    "width": 1862,
+    "height": 2498,
+    "bytes": 2806405,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ee5f68766224/kurvimetr-01-21-04.png-960.webp",
+        "width": 960,
+        "height": 1288,
+        "sha256": "255b9f6a549005ff292fcf3020d093821332f67aa861552c2c35443f5bde37de",
+        "bytes": 455244
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-ee5f68766224-kurvimetr-01-21-04-4f006a5042a20585e7334362762b52315def63d48f3438a7b2e4e86e07792415.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559057",
+      "asset_id": 630559057,
+      "release_tag": "article-originals-4",
+      "sha256": "4f006a5042a20585e7334362762b52315def63d48f3438a7b2e4e86e07792415",
+      "bytes": 2806405
+    }
+  },
+  "/assets/images/hm-tt-ee5f68766224/kurvimetr-01-21-05.png": {
+    "sha256": "a56e75a5e8c42406b31209de1e5e48a86323f183849a6f256355eded3a007848",
+    "width": 1500,
+    "height": 1500,
+    "bytes": 1055058,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ee5f68766224/kurvimetr-01-21-05.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "7354889e4d8da337d969c253c60e0109ffdc22ad4600655b8db7d17b33f8f341",
+        "bytes": 304754
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-ee5f68766224-kurvimetr-01-21-05-a56e75a5e8c42406b31209de1e5e48a86323f183849a6f256355eded3a007848.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559215",
+      "asset_id": 630559215,
+      "release_tag": "article-originals-a",
+      "sha256": "a56e75a5e8c42406b31209de1e5e48a86323f183849a6f256355eded3a007848",
+      "bytes": 1055058
+    }
+  }
+}
