@@ -68,7 +68,7 @@ def generate(article_id=None):
         image = ImageOps.exif_transpose(opened)
         image = image.convert("RGBA" if "A" in image.getbands() else "RGB")
         logo = source.name in LOGOS
-        widths = ([480 if "-logo" in source.stem else 1440] if logo else ([480, 960] if migration else [480, 960, 1440]))
+        widths = ([480 if "-logo" in source.stem else 1440] if logo else ([960] if migration else [480, 960, 1440]))
         variants = []
         for width in sorted({min(width, image.width) for width in widths}):
             height = round(image.height * width / image.width)

@@ -150,7 +150,10 @@ export async function buildPdfs(siteDirectory, {cacheDirectory = '.pdf-cache', f
               if (new URL(img.src).pathname.endsWith('.svg') && !img.closest('.print-masthead')) continue;
               const bounds = img.getBoundingClientRect();
               const ratio = Math.min(1, Math.max(bounds.width * 2.5 / img.naturalWidth, bounds.height * 2.5 / img.naturalHeight));
-              if (ratio >= 1) continue;
+              const migrated = img.dataset.original?.includes('/assets/images/hm-tt-');
+              // Encode migrated print rasters with the existing print JPEG profile,
+              // even when a reading-sized variant needs no further downsampling.
+              if (ratio >= 1 && !migrated) continue;
               const canvas = document.createElement('canvas');
               canvas.width = Math.ceil(img.naturalWidth * ratio); canvas.height = Math.ceil(img.naturalHeight * ratio);
               const context = canvas.getContext('2d');
