@@ -1,0 +1,427 @@
+{
+  "/assets/images/hm-tt-911cb8fa227f/bible-math-algebra-basics-01.png": {
+    "sha256": "5abab3f0598929d37ae1dff3bf4468775d921f83450388156efdff073aee9746",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 1236571,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-911cb8fa227f/bible-math-algebra-basics-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "aafddda0714647d1e4df37a6491c120c1bfe55dadff569cde78071d20491a729",
+        "bytes": 638798
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-911cb8fa227f-bible-math-algebra-basics-01-5abab3f0598929d37ae1dff3bf4468775d921f83450388156efdff073aee9746.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630496622",
+      "asset_id": 630496622,
+      "release_tag": "article-originals-5",
+      "sha256": "5abab3f0598929d37ae1dff3bf4468775d921f83450388156efdff073aee9746",
+      "bytes": 1236571
+    }
+  },
+  "/assets/images/hm-tt-911cb8fa227f/bible-math-algebra-basics-02.png": {
+    "sha256": "b3c10642ff30b8660e9a0585462c17d5b979e96cb4983b4b0923cef34645baa2",
+    "width": 938,
+    "height": 722,
+    "bytes": 205049,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-911cb8fa227f/bible-math-algebra-basics-02.png-938.webp",
+        "width": 938,
+        "height": 722,
+        "sha256": "2641696ee13b60e59bf5f30af771c2c996fba8c83eeac5bf00495f838ce61cea",
+        "bytes": 119934
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-911cb8fa227f-bible-math-algebra-basics-02-b3c10642ff30b8660e9a0585462c17d5b979e96cb4983b4b0923cef34645baa2.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630536784",
+      "asset_id": 630536784,
+      "release_tag": "article-originals-b",
+      "sha256": "b3c10642ff30b8660e9a0585462c17d5b979e96cb4983b4b0923cef34645baa2",
+      "bytes": 205049
+    }
+  },
+  "/assets/images/hm-tt-911cb8fa227f/bible-math-algebra-basics-03.png": {
+    "sha256": "02f870788df065fc4ce8c633e5496286ff9559c48eefdba5f8d5b881563cd344",
+    "width": 1772,
+    "height": 2539,
+    "bytes": 3025148,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-911cb8fa227f/bible-math-algebra-basics-03.png-960.webp",
+        "width": 960,
+        "height": 1376,
+        "sha256": "396793f3feed2104bf5a835eaf58246c1f20eea33ea4570e8f1df01f2778aa0c",
+        "bytes": 553924
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-911cb8fa227f-bible-math-algebra-basics-03-02f870788df065fc4ce8c633e5496286ff9559c48eefdba5f8d5b881563cd344.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630536958",
+      "asset_id": 630536958,
+      "release_tag": "article-originals-0",
+      "sha256": "02f870788df065fc4ce8c633e5496286ff9559c48eefdba5f8d5b881563cd344",
+      "bytes": 3025148
+    }
+  },
+  "/assets/images/hm-tt-911cb8fa227f/bible-math-algebra-basics-04.png": {
+    "sha256": "da49604275d438baa485964de12238fabd9b0f6cf0c3c045a152e49c0e69b2ad",
+    "width": 1772,
+    "height": 2539,
+    "bytes": 592261,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-911cb8fa227f/bible-math-algebra-basics-04.png-960.webp",
+        "width": 960,
+        "height": 1376,
+        "sha256": "e3332e91e10d08d0079dd0c3d1ed1a2a92d750447eb162b2e67dfd3ed4f4bf80",
+        "bytes": 417032
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-911cb8fa227f-bible-math-algebra-basics-04-da49604275d438baa485964de12238fabd9b0f6cf0c3c045a152e49c0e69b2ad.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630537177",
+      "asset_id": 630537177,
+      "release_tag": "article-originals-d",
+      "sha256": "da49604275d438baa485964de12238fabd9b0f6cf0c3c045a152e49c0e69b2ad",
+      "bytes": 592261
+    }
+  },
+  "/assets/images/hm-tt-911cb8fa227f/bible-math-algebra-basics-05.png": {
+    "sha256": "c59a987510adc0cab3f25a711b0dce13424bd506278d1e02733ed3ea3a2548c8",
+    "width": 1344,
+    "height": 950,
+    "bytes": 105036,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-911cb8fa227f/bible-math-algebra-basics-05.png-960.webp",
+        "width": 960,
+        "height": 679,
+        "sha256": "9d973b365912579a51f4ea5d1ebe34869ea617cefde3dffc120a346a7c382e2b",
+        "bytes": 215494
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-911cb8fa227f-bible-math-algebra-basics-05-c59a987510adc0cab3f25a711b0dce13424bd506278d1e02733ed3ea3a2548c8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630537353",
+      "asset_id": 630537353,
+      "release_tag": "article-originals-c",
+      "sha256": "c59a987510adc0cab3f25a711b0dce13424bd506278d1e02733ed3ea3a2548c8",
+      "bytes": 105036
+    }
+  },
+  "/assets/images/hm-tt-911cb8fa227f/bible-math-algebra-basics-06.png": {
+    "sha256": "ed747bbc555f4aa503003fb38199802288028b730db7fe51211971ca77049ee1",
+    "width": 1344,
+    "height": 950,
+    "bytes": 115778,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-911cb8fa227f/bible-math-algebra-basics-06.png-960.webp",
+        "width": 960,
+        "height": 679,
+        "sha256": "8fdb61829f51738a6f6fb42f3e93f8b9621a91ed62793d53cdfd44b0d16829b8",
+        "bytes": 229244
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-911cb8fa227f-bible-math-algebra-basics-06-ed747bbc555f4aa503003fb38199802288028b730db7fe51211971ca77049ee1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630537540",
+      "asset_id": 630537540,
+      "release_tag": "article-originals-e",
+      "sha256": "ed747bbc555f4aa503003fb38199802288028b730db7fe51211971ca77049ee1",
+      "bytes": 115778
+    }
+  },
+  "/assets/images/hm-tt-911cb8fa227f/bible-math-algebra-basics-07.png": {
+    "sha256": "c56b96f0f46600868bd48fd4a56b656340bfa3b66720e1021dfa796e0a30865b",
+    "width": 1344,
+    "height": 950,
+    "bytes": 122771,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-911cb8fa227f/bible-math-algebra-basics-07.png-960.webp",
+        "width": 960,
+        "height": 679,
+        "sha256": "9d1a5998380f7f5a364292d5b4d1abda26b8d7a7e6c4ffb183d64018ec91b294",
+        "bytes": 254000
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-911cb8fa227f-bible-math-algebra-basics-07-c56b96f0f46600868bd48fd4a56b656340bfa3b66720e1021dfa796e0a30865b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630537724",
+      "asset_id": 630537724,
+      "release_tag": "article-originals-c",
+      "sha256": "c56b96f0f46600868bd48fd4a56b656340bfa3b66720e1021dfa796e0a30865b",
+      "bytes": 122771
+    }
+  },
+  "/assets/images/hm-tt-911cb8fa227f/bible-math-algebra-basics-08.png": {
+    "sha256": "f32591a0bf7caf4d476de9fb958af6f3d98f8eb7e54ed6eda874efc936b84347",
+    "width": 1344,
+    "height": 950,
+    "bytes": 192918,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-911cb8fa227f/bible-math-algebra-basics-08.png-960.webp",
+        "width": 960,
+        "height": 679,
+        "sha256": "3910f00e11703bd5a9eaf4bb6dff0d8496877994181e5390fa785837c35e01eb",
+        "bytes": 229840
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-911cb8fa227f-bible-math-algebra-basics-08-f32591a0bf7caf4d476de9fb958af6f3d98f8eb7e54ed6eda874efc936b84347.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630537855",
+      "asset_id": 630537855,
+      "release_tag": "article-originals-f",
+      "sha256": "f32591a0bf7caf4d476de9fb958af6f3d98f8eb7e54ed6eda874efc936b84347",
+      "bytes": 192918
+    }
+  },
+  "/assets/images/hm-tt-911cb8fa227f/bible-math-algebra-basics-09.png": {
+    "sha256": "bf0de95ab0e67b9c374a85e50251d18f77f9dff892e074f0583ca0005728cc16",
+    "width": 1344,
+    "height": 950,
+    "bytes": 136657,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-911cb8fa227f/bible-math-algebra-basics-09.png-960.webp",
+        "width": 960,
+        "height": 679,
+        "sha256": "0fa32ec54331134653c1f8548511ae3ed63d4d672fbb914ee3a765414506a115",
+        "bytes": 239054
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-911cb8fa227f-bible-math-algebra-basics-09-bf0de95ab0e67b9c374a85e50251d18f77f9dff892e074f0583ca0005728cc16.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630538023",
+      "asset_id": 630538023,
+      "release_tag": "article-originals-b",
+      "sha256": "bf0de95ab0e67b9c374a85e50251d18f77f9dff892e074f0583ca0005728cc16",
+      "bytes": 136657
+    }
+  },
+  "/assets/images/hm-tt-911cb8fa227f/bible-math-algebra-basics-10.png": {
+    "sha256": "af7415e1fe11a6e99f6edb7c3af148dd73909fa4c5eeab6f247e06e02e95e9c7",
+    "width": 1344,
+    "height": 950,
+    "bytes": 91935,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-911cb8fa227f/bible-math-algebra-basics-10.png-960.webp",
+        "width": 960,
+        "height": 679,
+        "sha256": "c2f006104edb5a4721c1649093e8504bd6cb156c1984d48c6be0ae1cf8ea0cf1",
+        "bytes": 131606
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-911cb8fa227f-bible-math-algebra-basics-10-af7415e1fe11a6e99f6edb7c3af148dd73909fa4c5eeab6f247e06e02e95e9c7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630538156",
+      "asset_id": 630538156,
+      "release_tag": "article-originals-a",
+      "sha256": "af7415e1fe11a6e99f6edb7c3af148dd73909fa4c5eeab6f247e06e02e95e9c7",
+      "bytes": 91935
+    }
+  },
+  "/assets/images/hm-tt-911cb8fa227f/bible-math-algebra-basics-11.png": {
+    "sha256": "8d43234315b80ad1db25b32b4168ddb7b523c158d1735a6a53c29298be2e429e",
+    "width": 1344,
+    "height": 950,
+    "bytes": 227209,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-911cb8fa227f/bible-math-algebra-basics-11.png-960.webp",
+        "width": 960,
+        "height": 679,
+        "sha256": "ccf566e1beb15bf0d9f6b68d2b6420236371352110f9aad29fb843b4bb7054e9",
+        "bytes": 285726
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-911cb8fa227f-bible-math-algebra-basics-11-8d43234315b80ad1db25b32b4168ddb7b523c158d1735a6a53c29298be2e429e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630538335",
+      "asset_id": 630538335,
+      "release_tag": "article-originals-8",
+      "sha256": "8d43234315b80ad1db25b32b4168ddb7b523c158d1735a6a53c29298be2e429e",
+      "bytes": 227209
+    }
+  },
+  "/assets/images/hm-tt-911cb8fa227f/bible-math-algebra-basics-12.png": {
+    "sha256": "6142b5322045433995c32b67174c4d08d9e9080373cc99d40ecfca039d046e8e",
+    "width": 1344,
+    "height": 950,
+    "bytes": 192685,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-911cb8fa227f/bible-math-algebra-basics-12.png-960.webp",
+        "width": 960,
+        "height": 679,
+        "sha256": "1ae2422a27e3a152ea8ea969b5a58f44e6b70cf0f2db5a912083f1cbca120551",
+        "bytes": 222490
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-911cb8fa227f-bible-math-algebra-basics-12-6142b5322045433995c32b67174c4d08d9e9080373cc99d40ecfca039d046e8e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630538537",
+      "asset_id": 630538537,
+      "release_tag": "article-originals-6",
+      "sha256": "6142b5322045433995c32b67174c4d08d9e9080373cc99d40ecfca039d046e8e",
+      "bytes": 192685
+    }
+  },
+  "/assets/images/hm-tt-911cb8fa227f/bible-math-algebra-basics-13.png": {
+    "sha256": "b1df2ef072ae09e90b8367df55ae763885b662eb09d340b26ff66a4e50a514d4",
+    "width": 1344,
+    "height": 950,
+    "bytes": 181581,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-911cb8fa227f/bible-math-algebra-basics-13.png-960.webp",
+        "width": 960,
+        "height": 679,
+        "sha256": "484e133ff9d974f2b072d4a8893c5a8fd1b53f4d593568031c3c729c0e55a111",
+        "bytes": 197794
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-911cb8fa227f-bible-math-algebra-basics-13-b1df2ef072ae09e90b8367df55ae763885b662eb09d340b26ff66a4e50a514d4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630538699",
+      "asset_id": 630538699,
+      "release_tag": "article-originals-b",
+      "sha256": "b1df2ef072ae09e90b8367df55ae763885b662eb09d340b26ff66a4e50a514d4",
+      "bytes": 181581
+    }
+  },
+  "/assets/images/hm-tt-911cb8fa227f/bible-math-algebra-basics-14.png": {
+    "sha256": "2d47403c64bebe325dada328c58123f0971a85c85bc269beac1bd3ad5e86f72d",
+    "width": 1344,
+    "height": 950,
+    "bytes": 215277,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-911cb8fa227f/bible-math-algebra-basics-14.png-960.webp",
+        "width": 960,
+        "height": 679,
+        "sha256": "da5df59a162d0e22010ca48c42027f146e849b7579c1cae21125c8acf7cb229e",
+        "bytes": 242626
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-911cb8fa227f-bible-math-algebra-basics-14-2d47403c64bebe325dada328c58123f0971a85c85bc269beac1bd3ad5e86f72d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630538862",
+      "asset_id": 630538862,
+      "release_tag": "article-originals-2",
+      "sha256": "2d47403c64bebe325dada328c58123f0971a85c85bc269beac1bd3ad5e86f72d",
+      "bytes": 215277
+    }
+  },
+  "/assets/images/hm-tt-911cb8fa227f/bible-math-algebra-basics-15.png": {
+    "sha256": "eea10b342ec2518d858ff026bca3b545fffb2a44e106f8ea9f72a0adb05db0bc",
+    "width": 1344,
+    "height": 950,
+    "bytes": 96605,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-911cb8fa227f/bible-math-algebra-basics-15.png-960.webp",
+        "width": 960,
+        "height": 679,
+        "sha256": "7dc1321e50687fbbf1c1bb1ba81144789eacb2ff62fbbd73459110140a381285",
+        "bytes": 212314
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-911cb8fa227f-bible-math-algebra-basics-15-eea10b342ec2518d858ff026bca3b545fffb2a44e106f8ea9f72a0adb05db0bc.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539056",
+      "asset_id": 630539056,
+      "release_tag": "article-originals-e",
+      "sha256": "eea10b342ec2518d858ff026bca3b545fffb2a44e106f8ea9f72a0adb05db0bc",
+      "bytes": 96605
+    }
+  },
+  "/assets/images/hm-tt-911cb8fa227f/bible-math-algebra-basics-16.png": {
+    "sha256": "27f0634597582f170d8713eab64972f8ce9790b40e9d9ac0d80d570f7aeb0ff5",
+    "width": 1344,
+    "height": 950,
+    "bytes": 175655,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-911cb8fa227f/bible-math-algebra-basics-16.png-960.webp",
+        "width": 960,
+        "height": 679,
+        "sha256": "0f82bd21eb87e9b042ac9041c48519016e561c482e111575aeb9c5a702ad2723",
+        "bytes": 197100
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-911cb8fa227f-bible-math-algebra-basics-16-27f0634597582f170d8713eab64972f8ce9790b40e9d9ac0d80d570f7aeb0ff5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539272",
+      "asset_id": 630539272,
+      "release_tag": "article-originals-2",
+      "sha256": "27f0634597582f170d8713eab64972f8ce9790b40e9d9ac0d80d570f7aeb0ff5",
+      "bytes": 175655
+    }
+  },
+  "/assets/images/hm-tt-911cb8fa227f/bible-math-algebra-basics-17.png": {
+    "sha256": "c7db04651abed20886604fb2ddf09bfd7b968d462b9dfa552c5b6774e3aba355",
+    "width": 1344,
+    "height": 950,
+    "bytes": 238554,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-911cb8fa227f/bible-math-algebra-basics-17.png-960.webp",
+        "width": 960,
+        "height": 679,
+        "sha256": "378d98935fedcabf31a279378bc8cc9a4899959ecbde0b935881e57c0dc7754b",
+        "bytes": 367056
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-911cb8fa227f-bible-math-algebra-basics-17-c7db04651abed20886604fb2ddf09bfd7b968d462b9dfa552c5b6774e3aba355.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539432",
+      "asset_id": 630539432,
+      "release_tag": "article-originals-c",
+      "sha256": "c7db04651abed20886604fb2ddf09bfd7b968d462b9dfa552c5b6774e3aba355",
+      "bytes": 238554
+    }
+  }
+}
