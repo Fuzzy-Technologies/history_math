@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-0688bb8d1a11/giroskop-05-12-01.png": {
+    "sha256": "87d383a3a1ca064fd01c63c9e0ac4a4e034d4ec0f92bb9043b0d95c09d9fb096",
+    "width": 5000,
+    "height": 5000,
+    "bytes": 6801084,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-0688bb8d1a11/giroskop-05-12-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "d29a22a96826b8839d0e142ec5be0625d73dc00c79943d5c240a4e09a7837306",
+        "bytes": 153188
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-0688bb8d1a11-giroskop-05-12-01-87d383a3a1ca064fd01c63c9e0ac4a4e034d4ec0f92bb9043b0d95c09d9fb096.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630499340",
+      "asset_id": 630499340,
+      "release_tag": "article-originals-8",
+      "sha256": "87d383a3a1ca064fd01c63c9e0ac4a4e034d4ec0f92bb9043b0d95c09d9fb096",
+      "bytes": 6801084
+    }
+  },
+  "/assets/images/hm-tt-0688bb8d1a11/giroskop-05-12-02.png": {
+    "sha256": "3d8ce2b4f76348211076cde9c98dd3bc17e0b126b4e8693ef2024b0e07024e4d",
+    "width": 1540,
+    "height": 1155,
+    "bytes": 3255130,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-0688bb8d1a11/giroskop-05-12-02.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "532ef37a14d8cf1f3cddbe99e716e83385e89359b886e9031e182a8253d171a3",
+        "bytes": 662924
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-0688bb8d1a11-giroskop-05-12-02-3d8ce2b4f76348211076cde9c98dd3bc17e0b126b4e8693ef2024b0e07024e4d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544191",
+      "asset_id": 630544191,
+      "release_tag": "article-originals-3",
+      "sha256": "3d8ce2b4f76348211076cde9c98dd3bc17e0b126b4e8693ef2024b0e07024e4d",
+      "bytes": 3255130
+    }
+  },
+  "/assets/images/hm-tt-0688bb8d1a11/giroskop-05-12-03.gif": {
+    "sha256": "bb606b223cae510c1aba15681f051f46bd5b714bfb521145d73fbdb299102585",
+    "width": 300,
+    "height": 300,
+    "bytes": 657025,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-0688bb8d1a11/giroskop-05-12-03.gif-300.webp",
+        "width": 300,
+        "height": 300,
+        "sha256": "12cbc87c654db144ad1dcaa646717459988019eb9b7982330bd9b6fac2efc980",
+        "bytes": 465036
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-0688bb8d1a11-giroskop-05-12-03-bb606b223cae510c1aba15681f051f46bd5b714bfb521145d73fbdb299102585.gif",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544357",
+      "asset_id": 630544357,
+      "release_tag": "article-originals-b",
+      "sha256": "bb606b223cae510c1aba15681f051f46bd5b714bfb521145d73fbdb299102585",
+      "bytes": 657025
+    }
+  },
+  "/assets/images/hm-tt-0688bb8d1a11/giroskop-05-12-04.png": {
+    "sha256": "26f423366863e59d8fcc53b202f6cbd19b55d91540de2171abb787bb8b1e516b",
+    "width": 250,
+    "height": 348,
+    "bytes": 119353,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-0688bb8d1a11/giroskop-05-12-04.png-250.webp",
+        "width": 250,
+        "height": 348,
+        "sha256": "c38f9c2959b10733d26862ac9aaf0db417ec4887f3716b85b3e6ec838fa29033",
+        "bytes": 50270
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-0688bb8d1a11-giroskop-05-12-04-26f423366863e59d8fcc53b202f6cbd19b55d91540de2171abb787bb8b1e516b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544552",
+      "asset_id": 630544552,
+      "release_tag": "article-originals-2",
+      "sha256": "26f423366863e59d8fcc53b202f6cbd19b55d91540de2171abb787bb8b1e516b",
+      "bytes": 119353
+    }
+  },
+  "/assets/images/hm-tt-0688bb8d1a11/giroskop-05-12-05.png": {
+    "sha256": "bc50698df1f6eebb918c211860ffae18dc51d19a624306d1507acd78779a7fb8",
+    "width": 361,
+    "height": 600,
+    "bytes": 417548,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-0688bb8d1a11/giroskop-05-12-05.png-361.webp",
+        "width": 361,
+        "height": 600,
+        "sha256": "69a8770bd9c6cc3d283f4faaf4695ed1a972cce427aaacf1ef45656728001b41",
+        "bytes": 146264
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-0688bb8d1a11-giroskop-05-12-05-bc50698df1f6eebb918c211860ffae18dc51d19a624306d1507acd78779a7fb8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544726",
+      "asset_id": 630544726,
+      "release_tag": "article-originals-b",
+      "sha256": "bc50698df1f6eebb918c211860ffae18dc51d19a624306d1507acd78779a7fb8",
+      "bytes": 417548
+    }
+  },
+  "/assets/images/hm-tt-0688bb8d1a11/giroskop-05-12-06.png": {
+    "sha256": "13da40398b6c9599ce3dfe03f0d0507489d20b10fcbd6a23e780495e7e1479ca",
+    "width": 3000,
+    "height": 2000,
+    "bytes": 12293155,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-0688bb8d1a11/giroskop-05-12-06.png-960.webp",
+        "width": 960,
+        "height": 640,
+        "sha256": "40b6c69c2dca2dae5fbb19553efaf1d38f521112b02ea3d875c530bdc77c4450",
+        "bytes": 550112
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-0688bb8d1a11-giroskop-05-12-06-13da40398b6c9599ce3dfe03f0d0507489d20b10fcbd6a23e780495e7e1479ca.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544864",
+      "asset_id": 630544864,
+      "release_tag": "article-originals-1",
+      "sha256": "13da40398b6c9599ce3dfe03f0d0507489d20b10fcbd6a23e780495e7e1479ca",
+      "bytes": 12293155
+    }
+  }
+}
