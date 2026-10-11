@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-44fd2065afe0-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "kozlovsky-missing-fractions",
+      "question": "The supplied second quotation from “On Hope” appears to omit fractions before “in my favour” and “I may make a mistake.” Can the printed page be checked and the missing expressions restored by the editor? No fractions have been invented in the adaptation.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-04-06",
+      "url": "https://teletype.in/@history_math/Pushkin-Aleksandr-Sergeevich-ob-udobosbytnosti"
+    }
+  }
+}
