@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-882a0bdb2989/mektebe-i-medrese-02-24-01.png": {
+    "sha256": "b017daac65b7a80d50add6b86589a0361dd66c0e48010c0b367ac21c73abc821",
+    "width": 1200,
+    "height": 792,
+    "bytes": 2035372,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-882a0bdb2989/mektebe-i-medrese-02-24-01.png-960.webp",
+        "width": 960,
+        "height": 634,
+        "sha256": "210eef02db9cdc2cc742c2cf79a858c2d77af97b334c8dbbd85cff1be449c2fe",
+        "bytes": 719204
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-882a0bdb2989-mektebe-i-medrese-02-24-01-b017daac65b7a80d50add6b86589a0361dd66c0e48010c0b367ac21c73abc821.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630498206",
+      "asset_id": 630498206,
+      "release_tag": "article-originals-b",
+      "sha256": "b017daac65b7a80d50add6b86589a0361dd66c0e48010c0b367ac21c73abc821",
+      "bytes": 2035372
+    }
+  },
+  "/assets/images/hm-tt-882a0bdb2989/mektebe-i-medrese-02-24-02.png": {
+    "sha256": "7edece6c80a4b28cb95c23d55a7974e3c54033134e7e041f13fb5b54ee5578e0",
+    "width": 1135,
+    "height": 1121,
+    "bytes": 2937141,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-882a0bdb2989/mektebe-i-medrese-02-24-02.png-960.webp",
+        "width": 960,
+        "height": 948,
+        "sha256": "67d7d30a9684b487efc2975ce1f4dcfcac0957a47a4df4d50d17b205149c44f3",
+        "bytes": 1194048
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-882a0bdb2989-mektebe-i-medrese-02-24-02-7edece6c80a4b28cb95c23d55a7974e3c54033134e7e041f13fb5b54ee5578e0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557401",
+      "asset_id": 630557401,
+      "release_tag": "article-originals-7",
+      "sha256": "7edece6c80a4b28cb95c23d55a7974e3c54033134e7e041f13fb5b54ee5578e0",
+      "bytes": 2937141
+    }
+  },
+  "/assets/images/hm-tt-882a0bdb2989/mektebe-i-medrese-02-24-03.png": {
+    "sha256": "b0666af4384fa955292596cca9e7676c1648c2a0e151f12393bb61052132cc7f",
+    "width": 2048,
+    "height": 1135,
+    "bytes": 4887053,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-882a0bdb2989/mektebe-i-medrese-02-24-03.png-960.webp",
+        "width": 960,
+        "height": 532,
+        "sha256": "11eca8a7ba2572361689e805c0574dd19825d5d82855bfe6350ccf725b5fc644",
+        "bytes": 592960
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-882a0bdb2989-mektebe-i-medrese-02-24-03-b0666af4384fa955292596cca9e7676c1648c2a0e151f12393bb61052132cc7f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557557",
+      "asset_id": 630557557,
+      "release_tag": "article-originals-b",
+      "sha256": "b0666af4384fa955292596cca9e7676c1648c2a0e151f12393bb61052132cc7f",
+      "bytes": 4887053
+    }
+  },
+  "/assets/images/hm-tt-882a0bdb2989/mektebe-i-medrese-02-24-04.png": {
+    "sha256": "901529388d493ac2b3a24959829569d3ca3273dbfe044a8ae438269f3c95fce0",
+    "width": 2272,
+    "height": 1704,
+    "bytes": 7966058,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-882a0bdb2989/mektebe-i-medrese-02-24-04.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "fb184dce7575cf5125452b70341746c0d0a5da0f99a52f3b58f3ba9f975dd268",
+        "bytes": 877286
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-882a0bdb2989-mektebe-i-medrese-02-24-04-901529388d493ac2b3a24959829569d3ca3273dbfe044a8ae438269f3c95fce0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557669",
+      "asset_id": 630557669,
+      "release_tag": "article-originals-9",
+      "sha256": "901529388d493ac2b3a24959829569d3ca3273dbfe044a8ae438269f3c95fce0",
+      "bytes": 7966058
+    }
+  },
+  "/assets/images/hm-tt-882a0bdb2989/mektebe-i-medrese-02-24-05.png": {
+    "sha256": "3afb6d84cea47c6dcda1ca381a35046e4e4ccda9ac08b810d30e93e2307d4d34",
+    "width": 441,
+    "height": 600,
+    "bytes": 500723,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-882a0bdb2989/mektebe-i-medrese-02-24-05-png-reading-441-823dfc48faed.webp",
+        "width": 441,
+        "height": 600,
+        "sha256": "823dfc48faed3e1c7fd621c4f4c8001a79db83aa20fc79aa2fe62f403b2df26b",
+        "bytes": 322238
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-882a0bdb2989-mektebe-i-medrese-02-24-05-3afb6d84cea47c6dcda1ca381a35046e4e4ccda9ac08b810d30e93e2307d4d34.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557822",
+      "asset_id": 630557822,
+      "release_tag": "article-originals-3",
+      "sha256": "3afb6d84cea47c6dcda1ca381a35046e4e4ccda9ac08b810d30e93e2307d4d34",
+      "bytes": 500723
+    }
+  },
+  "/assets/images/hm-tt-882a0bdb2989/mektebe-i-medrese-02-24-06.png": {
+    "sha256": "e5d35040f3a41926dac19d0198ab6fb3e1781859cb7b7106204a2e5d94010853",
+    "width": 900,
+    "height": 600,
+    "bytes": 1355487,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-882a0bdb2989/mektebe-i-medrese-02-24-06.png-900.webp",
+        "width": 900,
+        "height": 600,
+        "sha256": "74728c8895b7a1d9a86b59fe420a2a6b4ce0d1cd57308df7ce777ff0ec194245",
+        "bytes": 727898
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-882a0bdb2989-mektebe-i-medrese-02-24-06-e5d35040f3a41926dac19d0198ab6fb3e1781859cb7b7106204a2e5d94010853.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557992",
+      "asset_id": 630557992,
+      "release_tag": "article-originals-e",
+      "sha256": "e5d35040f3a41926dac19d0198ab6fb3e1781859cb7b7106204a2e5d94010853",
+      "bytes": 1355487
+    }
+  }
+}
