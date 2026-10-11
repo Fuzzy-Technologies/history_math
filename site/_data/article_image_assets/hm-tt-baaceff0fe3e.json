@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-baaceff0fe3e/maori-eleven-counting-01.jpeg": {
+    "sha256": "0b6cb501954a4355e28466a3e26847fcad20157089287cbefed61c620940ee42",
+    "width": 1024,
+    "height": 1394,
+    "bytes": 185584,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-baaceff0fe3e/maori-eleven-counting-01.jpeg-960.webp",
+        "width": 960,
+        "height": 1307,
+        "sha256": "c325759d0936958bf12b217dd48efe9593aa707408bb81889d661c0e6b1fc136",
+        "bytes": 562096
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-baaceff0fe3e-maori-eleven-counting-01-0b6cb501954a4355e28466a3e26847fcad20157089287cbefed61c620940ee42.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630491611",
+      "asset_id": 630491611,
+      "release_tag": "article-originals-0",
+      "sha256": "0b6cb501954a4355e28466a3e26847fcad20157089287cbefed61c620940ee42",
+      "bytes": 185584
+    }
+  },
+  "/assets/images/hm-tt-baaceff0fe3e/maori-eleven-counting-02.jpeg": {
+    "sha256": "2d7c463a86289130984c886ac799405073962919b337d5ca0bfb9b57414d313f",
+    "width": 927,
+    "height": 1224,
+    "bytes": 252053,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-baaceff0fe3e/maori-eleven-counting-02-927.jpeg",
+        "width": 927,
+        "height": 1224,
+        "bytes": 252053,
+        "sha256": "2d7c463a86289130984c886ac799405073962919b337d5ca0bfb9b57414d313f"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-baaceff0fe3e-maori-eleven-counting-02-2d7c463a86289130984c886ac799405073962919b337d5ca0bfb9b57414d313f.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630525792",
+      "asset_id": 630525792,
+      "release_tag": "article-originals-2",
+      "sha256": "2d7c463a86289130984c886ac799405073962919b337d5ca0bfb9b57414d313f",
+      "bytes": 252053
+    }
+  },
+  "/assets/images/hm-tt-baaceff0fe3e/maori-eleven-counting-03.png": {
+    "sha256": "e0ec393eb3a825feed6053eb8db752e5fc4ee17b888752a19fcdf40b064f5572",
+    "width": 563,
+    "height": 1013,
+    "bytes": 741528,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-baaceff0fe3e/maori-eleven-counting-03.png-563.webp",
+        "width": 563,
+        "height": 1013,
+        "sha256": "b30df488673d00cb5e73a5e0dbf47117374e4b3125a2d92f5441fc3310b1ce1b",
+        "bytes": 401372
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-baaceff0fe3e-maori-eleven-counting-03-e0ec393eb3a825feed6053eb8db752e5fc4ee17b888752a19fcdf40b064f5572.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526009",
+      "asset_id": 630526009,
+      "release_tag": "article-originals-e",
+      "sha256": "e0ec393eb3a825feed6053eb8db752e5fc4ee17b888752a19fcdf40b064f5572",
+      "bytes": 741528
+    }
+  },
+  "/assets/images/hm-tt-baaceff0fe3e/maori-eleven-counting-04.png": {
+    "sha256": "a518dc5e1ff424583ae336cbf5568a2dc424c7686a1b9f29d1c22e8948b494f9",
+    "width": 586,
+    "height": 1014,
+    "bytes": 687799,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-baaceff0fe3e/maori-eleven-counting-04.png-586.webp",
+        "width": 586,
+        "height": 1014,
+        "sha256": "a09e740a8adf5aced6783574fa4d614599c3ee8c7312e1dcb521ae634cff40f1",
+        "bytes": 388784
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-baaceff0fe3e-maori-eleven-counting-04-a518dc5e1ff424583ae336cbf5568a2dc424c7686a1b9f29d1c22e8948b494f9.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526235",
+      "asset_id": 630526235,
+      "release_tag": "article-originals-a",
+      "sha256": "a518dc5e1ff424583ae336cbf5568a2dc424c7686a1b9f29d1c22e8948b494f9",
+      "bytes": 687799
+    }
+  },
+  "/assets/images/hm-tt-baaceff0fe3e/maori-eleven-counting-05.png": {
+    "sha256": "f6e043e8982b10c154e60304106b3d701ebbfdd6d17744173c92a23be263d818",
+    "width": 693,
+    "height": 1006,
+    "bytes": 282789,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-baaceff0fe3e/maori-eleven-counting-05.png-693.webp",
+        "width": 693,
+        "height": 1006,
+        "sha256": "7380b54bc804838b36c4e8403a5812380cdd5a5584fa2dae02dee9c8503bdda1",
+        "bytes": 107032
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-baaceff0fe3e-maori-eleven-counting-05-f6e043e8982b10c154e60304106b3d701ebbfdd6d17744173c92a23be263d818.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526411",
+      "asset_id": 630526411,
+      "release_tag": "article-originals-f",
+      "sha256": "f6e043e8982b10c154e60304106b3d701ebbfdd6d17744173c92a23be263d818",
+      "bytes": 282789
+    }
+  }
+}
