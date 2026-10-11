@@ -6,6 +6,7 @@ require "date"
 require "digest"
 require_relative "article_urls"
 require_relative "publication_dates"
+require_relative "external_originals"
 
 module HistoryMath
   PUBLIC_STATUSES = %w[published demo].freeze
@@ -32,9 +33,11 @@ module HistoryMath
     digest = Digest::SHA256.new.update(File.binread(document.path).gsub("\r\n", "\n"))
     paths = (document.data.fetch("figures", []).map { |figure| figure["path"] } +
       %w[preview_image cover_image hero_image].filter_map { |key| document.data[key] }).uniq.sort
+    inventory = nil
     paths.each do |path|
       raise ArgumentError unless path.match?(%r{\A/assets/images/[a-z0-9-]+/[A-Za-z0-9._-]+\z})
-      digest.update("\0#{path}\0").update(File.binread(File.join(document.site.source, path.delete_prefix("/"))))
+      inventory ||= HistoryMath.external_image_inventory(document.site.source) unless File.exist?(File.join(document.site.source, path.delete_prefix("/")))
+      HistoryMath.update_asset_digest!(digest, document.site.source, path, inventory)
     end
     valid &&= approval["package_sha256"] == digest.hexdigest
     raise ArgumentError unless valid
