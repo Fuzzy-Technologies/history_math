@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-d5228b66d7da",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 8,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-05-01",
+      "url": "https://teletype.in/@history_math/Dlya-chego-nuzhny-soft-skilly-IT-specialistam-05-01"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}

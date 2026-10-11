@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-d5228b66d7da-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 8,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-05-01",
+      "url": "https://teletype.in/@history_math/Dlya-chego-nuzhny-soft-skilly-IT-specialistam-05-01"
+    }
+  },
+  "manual_changes": [
+    "Corrected the converted author metadata to Timur Gilmullin, as explicitly credited by the original article byline and confirmed by the complete first-person source text. The article's prose and byline are preserved."
+  ]
+}
