@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-cf74f938e5db-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-10-26",
+      "url": "https://teletype.in/@history_math/Conway-Game-of-Life"
+    }
+  },
+  "manual_changes": [
+    "Restored the nested rule lists directly from the archived Teletype HTML in both languages and proofread their English adaptation."
+  ]
+}
