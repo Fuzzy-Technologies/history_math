@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-b047fdc27947-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "euler-memoir-record",
+      "question": "The body describes a 1779 St Petersburg Academy memoir, while reference 3 cites a 1782 publication in a different society’s proceedings and contains unusual French spellings. Should the presentation, publication venue and bibliographic transcription be reconciled? The source records are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "computer-proof-attribution",
+      "question": "The source attributes the general existence result, dated 1959, to a computer proof without naming its authors. Should the proof method and attribution be verified and documented? The original claim is retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "quantum-latin-square-date",
+      "question": "The source dates the Cambridge introduction of quantum Latin squares to 2016. Should the publication or preprint date be checked? The source date is retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-02-02",
+      "url": "https://teletype.in/@history_math/36-Officers-Puzzle-Using-Latin-Squares"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
