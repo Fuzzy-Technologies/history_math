@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-3baa380bee70-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-kirkman-1",
+      "question": "Confirm the source's date of 1881 for Kirkman's election to the Royal Society, the lottery-cartel anecdote, and the statement that the classical Hamming code uses a solution of the schoolgirl problem. These claims are retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-10-08",
+      "url": "https://teletype.in/@history_math/Kirkman-schoolgirls"
+    }
+  }
+}
