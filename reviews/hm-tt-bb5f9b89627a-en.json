@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-bb5f9b89627a-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-newton-1",
+      "question": "The source caption says the first edition of the Principia was published under Samuel Pepys's name. Confirm whether this is intended to refer to his imprimatur as Royal Society president rather than authorship. The source claim is retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-newton-2",
+      "question": "Confirm the source's statement that Newton studied first at Trinity College and then at Cambridge University, and the attribution of the first reflecting telescope to him in 1668. The English preserves both statements.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 9,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-10-18",
+      "url": "https://teletype.in/@history_math/Isaak-Nyuton-malchik-igrayushchij-na-morskom-beregu-10-18"
+    }
+  }
+}
