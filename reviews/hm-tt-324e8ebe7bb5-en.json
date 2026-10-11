@@ -1,0 +1,17 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-324e8ebe7bb5-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 7,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-10-06",
+      "url": "https://teletype.in/@history_math/Sodruzhestvo-tryoh-vuzov-Elabuga-Leningrad-Voronezh-10-06"
+    }
+  }
+}
