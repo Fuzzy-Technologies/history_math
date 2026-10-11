@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-d35a502d3e49/the-kirik-of-novgorod-story-01.png": {
+    "sha256": "1e6249239e3592207ddea627325866ef198745ceeef57c049e1025a65506cd69",
+    "width": 560,
+    "height": 909,
+    "bytes": 958746,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d35a502d3e49/the-kirik-of-novgorod-story-01.png-560.webp",
+        "width": 560,
+        "height": 909,
+        "sha256": "f2d7a418ad2df424fb787627078bd4b3809a74d37e753e678c17bf69d0a37174",
+        "bytes": 415432
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-d35a502d3e49-the-kirik-of-novgorod-story-01-1e6249239e3592207ddea627325866ef198745ceeef57c049e1025a65506cd69.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630532408",
+      "asset_id": 630532408,
+      "release_tag": "article-originals-1",
+      "sha256": "1e6249239e3592207ddea627325866ef198745ceeef57c049e1025a65506cd69",
+      "bytes": 958746
+    }
+  },
+  "/assets/images/hm-tt-d35a502d3e49/the-kirik-of-novgorod-story-02.png": {
+    "sha256": "8b337787ed7773f5f702902c0b7f8d8a706b0d61380819cb54f12faf126e8d12",
+    "width": 1050,
+    "height": 813,
+    "bytes": 427045,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d35a502d3e49/the-kirik-of-novgorod-story-02.png-960.webp",
+        "width": 960,
+        "height": 743,
+        "sha256": "2a5c528537fd2761203792a2d174d334fa36c8ca4038dfd6178f4b50ec4708f7",
+        "bytes": 253962
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-d35a502d3e49-the-kirik-of-novgorod-story-02-8b337787ed7773f5f702902c0b7f8d8a706b0d61380819cb54f12faf126e8d12.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630532608",
+      "asset_id": 630532608,
+      "release_tag": "article-originals-8",
+      "sha256": "8b337787ed7773f5f702902c0b7f8d8a706b0d61380819cb54f12faf126e8d12",
+      "bytes": 427045
+    }
+  },
+  "/assets/images/hm-tt-d35a502d3e49/the-kirik-of-novgorod-story-03.jpeg": {
+    "sha256": "bbb43183b6916f43489111caa28747e8bed8a6cccbf9b5536951b4c1da7a33b6",
+    "width": 600,
+    "height": 600,
+    "bytes": 209100,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d35a502d3e49/the-kirik-of-novgorod-story-03-600.jpeg",
+        "width": 600,
+        "height": 600,
+        "bytes": 209100,
+        "sha256": "bbb43183b6916f43489111caa28747e8bed8a6cccbf9b5536951b4c1da7a33b6"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-d35a502d3e49-the-kirik-of-novgorod-story-03-bbb43183b6916f43489111caa28747e8bed8a6cccbf9b5536951b4c1da7a33b6.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630532841",
+      "asset_id": 630532841,
+      "release_tag": "article-originals-b",
+      "sha256": "bbb43183b6916f43489111caa28747e8bed8a6cccbf9b5536951b4c1da7a33b6",
+      "bytes": 209100
+    }
+  }
+}

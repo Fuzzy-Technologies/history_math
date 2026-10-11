@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-d35a502d3e49-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source treats 365 × 26 + 7 = 9497 days as exact and gives an integer 1356 weeks, while noting that Kirik may have rounded. Confirm the birthday/calendar assumptions and the treatment of the remaining days; the source’s calculation is retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-04-26",
+      "url": "https://teletype.in/@history_math/The-Kirik-of-Novgorod-Story"
+    }
+  }
+}
