@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-36ba9a4b7d39-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "oughtred-treatise-date",
+      "question": "The source dates publication of Oughtred’s Circles of Proportion to 1622 and separately mentions 1633. Should the invention and publication dates be distinguished? The source dates are retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-12-21",
+      "url": "https://teletype.in/@history_math/slide-rule"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
