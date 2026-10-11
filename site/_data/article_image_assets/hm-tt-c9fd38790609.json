@@ -1,0 +1,52 @@
+{
+  "/assets/images/hm-tt-c9fd38790609/einstein-puzzle-01.jpeg": {
+    "sha256": "a5596fc0451296661c03f517c68f15387d9a7b5def3b8b28a5bad9f169b4064a",
+    "width": 550,
+    "height": 762,
+    "bytes": 125243,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-c9fd38790609/einstein-puzzle-01-550.jpeg",
+        "width": 550,
+        "height": 762,
+        "bytes": 125243,
+        "sha256": "a5596fc0451296661c03f517c68f15387d9a7b5def3b8b28a5bad9f169b4064a"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-c9fd38790609-einstein-puzzle-01-a5596fc0451296661c03f517c68f15387d9a7b5def3b8b28a5bad9f169b4064a.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630494457",
+      "asset_id": 630494457,
+      "release_tag": "article-originals-a",
+      "sha256": "a5596fc0451296661c03f517c68f15387d9a7b5def3b8b28a5bad9f169b4064a",
+      "bytes": 125243
+    }
+  },
+  "/assets/images/hm-tt-c9fd38790609/einstein-puzzle-02.jpeg": {
+    "sha256": "2732fce4a29fd180f1828f28788c5f476cc75c340368bd44ea2e1e500504990d",
+    "width": 1115,
+    "height": 1460,
+    "bytes": 230556,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-c9fd38790609/einstein-puzzle-02.jpeg-960.webp",
+        "width": 960,
+        "height": 1257,
+        "sha256": "5dd043d3b3c08692d015488e660a3f197725064d1d2d9562afdfd839276ddca5",
+        "bytes": 713848
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-c9fd38790609-einstein-puzzle-02-2732fce4a29fd180f1828f28788c5f476cc75c340368bd44ea2e1e500504990d.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630537438",
+      "asset_id": 630537438,
+      "release_tag": "article-originals-2",
+      "sha256": "2732fce4a29fd180f1828f28788c5f476cc75c340368bd44ea2e1e500504990d",
+      "bytes": 230556
+    }
+  }
+}
