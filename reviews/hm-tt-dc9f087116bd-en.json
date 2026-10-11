@@ -1,0 +1,36 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-dc9f087116bd-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-raphael-1",
+      "question": "Confirm the source's dating of Athens' Golden Age to the late fifth–early fourth centuries BCE and Plato's Academy to 380 BCE. The English preserves both dates.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-raphael-2",
+      "question": "Confirm the source's identifications of the numbered figures, especially Hypatia and Boethius, which are presented as definite in their individual passages despite the general discussion of uncertainty. The English retains the source's degrees of certainty.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-raphael-3",
+      "question": "The source glosses Stanza della Segnatura as 'Room of Signs'. Confirm the intended translation and the claim that the fresco's vanishing point coincides with Plato's and Aristotle's hands. Both are retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 21,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-03-31",
+      "url": "https://teletype.in/@history_math/The-School-of-Athens-by-Raphael-Santi"
+    }
+  }
+}
