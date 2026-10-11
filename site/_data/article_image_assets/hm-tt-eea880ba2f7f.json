@@ -1,0 +1,202 @@
+{
+  "/assets/images/hm-tt-eea880ba2f7f/nonius-01.jpeg": {
+    "sha256": "63a95e32001b50b6aefd3b460031f92d088c9f7a8af8416bee3f09842d256637",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 194842,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-eea880ba2f7f/nonius-01.jpeg-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "52d22da7379338ce8cfebc0b3b4fbefb60501795c5a8cb9cdfc3b1427dae88ed",
+        "bytes": 1040814
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-eea880ba2f7f-nonius-01-63a95e32001b50b6aefd3b460031f92d088c9f7a8af8416bee3f09842d256637.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497107",
+      "asset_id": 630497107,
+      "release_tag": "article-originals-6",
+      "sha256": "63a95e32001b50b6aefd3b460031f92d088c9f7a8af8416bee3f09842d256637",
+      "bytes": 194842
+    }
+  },
+  "/assets/images/hm-tt-eea880ba2f7f/nonius-02.jpeg": {
+    "sha256": "6c91bb131ffabba56a95fce2c7c6db16fc6b616706f6092f9af23ee4f642e94f",
+    "width": 446,
+    "height": 1042,
+    "bytes": 94310,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-eea880ba2f7f/nonius-02-446.jpeg",
+        "width": 446,
+        "height": 1042,
+        "bytes": 94310,
+        "sha256": "6c91bb131ffabba56a95fce2c7c6db16fc6b616706f6092f9af23ee4f642e94f"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-eea880ba2f7f-nonius-02-6c91bb131ffabba56a95fce2c7c6db16fc6b616706f6092f9af23ee4f642e94f.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540000",
+      "asset_id": 630540000,
+      "release_tag": "article-originals-6",
+      "sha256": "6c91bb131ffabba56a95fce2c7c6db16fc6b616706f6092f9af23ee4f642e94f",
+      "bytes": 94310
+    }
+  },
+  "/assets/images/hm-tt-eea880ba2f7f/nonius-03.jpeg": {
+    "sha256": "669dcf65109839687369bc21b366d56d5aea330fca7df265ef942c309c17b21a",
+    "width": 3189,
+    "height": 1964,
+    "bytes": 1440361,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-eea880ba2f7f/nonius-03.jpeg-960.webp",
+        "width": 960,
+        "height": 591,
+        "sha256": "821f78da3cd1a785dbd0fad5adc860bfaa3e27015bdfa52922d4f24140f7edca",
+        "bytes": 597278
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-eea880ba2f7f-nonius-03-669dcf65109839687369bc21b366d56d5aea330fca7df265ef942c309c17b21a.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540147",
+      "asset_id": 630540147,
+      "release_tag": "article-originals-6",
+      "sha256": "669dcf65109839687369bc21b366d56d5aea330fca7df265ef942c309c17b21a",
+      "bytes": 1440361
+    }
+  },
+  "/assets/images/hm-tt-eea880ba2f7f/nonius-04.jpeg": {
+    "sha256": "f7aab1e5170638bb9562f520429aca5e74283e65833fb39631ae202a90661b56",
+    "width": 2448,
+    "height": 3264,
+    "bytes": 1218453,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-eea880ba2f7f/nonius-04.jpeg-960.webp",
+        "width": 960,
+        "height": 1280,
+        "sha256": "7f50cc0c9b14b409fd85b391dba04543f9e3688f3b86960143583c25ba83daa6",
+        "bytes": 1153916
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-eea880ba2f7f-nonius-04-f7aab1e5170638bb9562f520429aca5e74283e65833fb39631ae202a90661b56.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540281",
+      "asset_id": 630540281,
+      "release_tag": "article-originals-f",
+      "sha256": "f7aab1e5170638bb9562f520429aca5e74283e65833fb39631ae202a90661b56",
+      "bytes": 1218453
+    }
+  },
+  "/assets/images/hm-tt-eea880ba2f7f/nonius-05.jpeg": {
+    "sha256": "8b4224c800b967f3e338b67fe41c8ded7b2ccbbad83054f593bf56bb99102240",
+    "width": 1050,
+    "height": 1050,
+    "bytes": 130674,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-eea880ba2f7f/nonius-05.jpeg-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "ad242b56a0db4ccd7eb5b50ee274d189073be80880c61d6c6317a06e83fdf4ca",
+        "bytes": 358150
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-eea880ba2f7f-nonius-05-8b4224c800b967f3e338b67fe41c8ded7b2ccbbad83054f593bf56bb99102240.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540410",
+      "asset_id": 630540410,
+      "release_tag": "article-originals-8",
+      "sha256": "8b4224c800b967f3e338b67fe41c8ded7b2ccbbad83054f593bf56bb99102240",
+      "bytes": 130674
+    }
+  },
+  "/assets/images/hm-tt-eea880ba2f7f/nonius-06.jpeg": {
+    "sha256": "bdaa8ca5680ed2f7abeb7350060b80ce7658924ba6f08d9352a5da4ddc37633d",
+    "width": 800,
+    "height": 347,
+    "bytes": 49574,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-eea880ba2f7f/nonius-06-800.jpeg",
+        "width": 800,
+        "height": 347,
+        "bytes": 49574,
+        "sha256": "bdaa8ca5680ed2f7abeb7350060b80ce7658924ba6f08d9352a5da4ddc37633d"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-eea880ba2f7f-nonius-06-bdaa8ca5680ed2f7abeb7350060b80ce7658924ba6f08d9352a5da4ddc37633d.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540555",
+      "asset_id": 630540555,
+      "release_tag": "article-originals-b",
+      "sha256": "bdaa8ca5680ed2f7abeb7350060b80ce7658924ba6f08d9352a5da4ddc37633d",
+      "bytes": 49574
+    }
+  },
+  "/assets/images/hm-tt-eea880ba2f7f/nonius-07.jpeg": {
+    "sha256": "f852be180805be72ec4227621ec751d5ba621fb9403edc830bab6136443958ec",
+    "width": 800,
+    "height": 674,
+    "bytes": 89248,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-eea880ba2f7f/nonius-07-800.jpeg",
+        "width": 800,
+        "height": 674,
+        "bytes": 89248,
+        "sha256": "f852be180805be72ec4227621ec751d5ba621fb9403edc830bab6136443958ec"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-eea880ba2f7f-nonius-07-f852be180805be72ec4227621ec751d5ba621fb9403edc830bab6136443958ec.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540724",
+      "asset_id": 630540724,
+      "release_tag": "article-originals-f",
+      "sha256": "f852be180805be72ec4227621ec751d5ba621fb9403edc830bab6136443958ec",
+      "bytes": 89248
+    }
+  },
+  "/assets/images/hm-tt-eea880ba2f7f/nonius-08.gif": {
+    "sha256": "dde9bc6c71ad5de4c6785f4830b3a733bc0b9d443d77bf790b6613f997cc4713",
+    "width": 720,
+    "height": 329,
+    "bytes": 1029741,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-eea880ba2f7f/nonius-08.gif-720.webp",
+        "width": 720,
+        "height": 329,
+        "sha256": "275fe2058bb1361d05fce0b2a98289666d0452fdab5fac4ecd32058bcb5bc081",
+        "bytes": 440748
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-eea880ba2f7f-nonius-08-dde9bc6c71ad5de4c6785f4830b3a733bc0b9d443d77bf790b6613f997cc4713.gif",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540846",
+      "asset_id": 630540846,
+      "release_tag": "article-originals-d",
+      "sha256": "dde9bc6c71ad5de4c6785f4830b3a733bc0b9d443d77bf790b6613f997cc4713",
+      "bytes": 1029741
+    }
+  }
+}
