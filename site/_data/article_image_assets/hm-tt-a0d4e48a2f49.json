@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-a0d4e48a2f49/goniometr-06-16-01.png": {
+    "sha256": "711f2988f048e46dd85b7026245c3690bdc931b419b3749ecf70ce77757b8d3c",
+    "width": 3500,
+    "height": 3500,
+    "bytes": 3063404,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-a0d4e48a2f49/goniometr-06-16-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "435b8765d9cddf45eb5ba48840305ad498683d00bc0d684a74b84f12773b9fcf",
+        "bytes": 156748
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-a0d4e48a2f49-goniometr-06-16-01-711f2988f048e46dd85b7026245c3690bdc931b419b3749ecf70ce77757b8d3c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630496024",
+      "asset_id": 630496024,
+      "release_tag": "article-originals-7",
+      "sha256": "711f2988f048e46dd85b7026245c3690bdc931b419b3749ecf70ce77757b8d3c",
+      "bytes": 3063404
+    }
+  },
+  "/assets/images/hm-tt-a0d4e48a2f49/goniometr-06-16-02.png": {
+    "sha256": "f12b44b6e3012c92fd10367630766b7b62c2a513c4c479229cae2d8791aa0ed7",
+    "width": 4000,
+    "height": 4422,
+    "bytes": 11297348,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-a0d4e48a2f49/goniometr-06-16-02.png-960.webp",
+        "width": 960,
+        "height": 1061,
+        "sha256": "6d34c2b07959572187fef66a16c278b0eb655651850788badc7d0ed354cb4a80",
+        "bytes": 667490
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-a0d4e48a2f49-goniometr-06-16-02-f12b44b6e3012c92fd10367630766b7b62c2a513c4c479229cae2d8791aa0ed7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630541766",
+      "asset_id": 630541766,
+      "release_tag": "article-originals-f",
+      "sha256": "f12b44b6e3012c92fd10367630766b7b62c2a513c4c479229cae2d8791aa0ed7",
+      "bytes": 11297348
+    }
+  },
+  "/assets/images/hm-tt-a0d4e48a2f49/goniometr-06-16-03.png": {
+    "sha256": "dd25024e80a5332d12b19c67290a998af375d1a1552f2f1a4d3db847e5c7f9b6",
+    "width": 500,
+    "height": 356,
+    "bytes": 116001,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-a0d4e48a2f49/goniometr-06-16-03.png-500.webp",
+        "width": 500,
+        "height": 356,
+        "sha256": "1aed6d3a706fe13329de76786bad0bbb4688d90ad5003a5b1f648a7ddd502eac",
+        "bytes": 52098
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-a0d4e48a2f49-goniometr-06-16-03-dd25024e80a5332d12b19c67290a998af375d1a1552f2f1a4d3db847e5c7f9b6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630541940",
+      "asset_id": 630541940,
+      "release_tag": "article-originals-d",
+      "sha256": "dd25024e80a5332d12b19c67290a998af375d1a1552f2f1a4d3db847e5c7f9b6",
+      "bytes": 116001
+    }
+  },
+  "/assets/images/hm-tt-a0d4e48a2f49/goniometr-06-16-04.png": {
+    "sha256": "dbbad6267b3e3486a32f15bf8fc23768efd5162b48a6031fe849101930721e39",
+    "width": 2784,
+    "height": 2336,
+    "bytes": 15062438,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-a0d4e48a2f49/goniometr-06-16-04.png-960.webp",
+        "width": 960,
+        "height": 806,
+        "sha256": "616730924bd193698a24d25a0fff959563805a97cf3232795cc814218f84f879",
+        "bytes": 1037922
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-a0d4e48a2f49-goniometr-06-16-04-dbbad6267b3e3486a32f15bf8fc23768efd5162b48a6031fe849101930721e39.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542070",
+      "asset_id": 630542070,
+      "release_tag": "article-originals-d",
+      "sha256": "dbbad6267b3e3486a32f15bf8fc23768efd5162b48a6031fe849101930721e39",
+      "bytes": 15062438
+    }
+  },
+  "/assets/images/hm-tt-a0d4e48a2f49/goniometr-06-16-05.png": {
+    "sha256": "9226f3fbbc630d9b1aacb5d16ef2e45138442309eb5638b4e018ac5283f105fe",
+    "width": 871,
+    "height": 872,
+    "bytes": 423133,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-a0d4e48a2f49/goniometr-06-16-05.png-871.webp",
+        "width": 871,
+        "height": 872,
+        "sha256": "f2cc5e448c353f152140aa561bf0e2552db7be9c8a57cc75158f239c085a03cd",
+        "bytes": 272812
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-a0d4e48a2f49-goniometr-06-16-05-9226f3fbbc630d9b1aacb5d16ef2e45138442309eb5638b4e018ac5283f105fe.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542202",
+      "asset_id": 630542202,
+      "release_tag": "article-originals-9",
+      "sha256": "9226f3fbbc630d9b1aacb5d16ef2e45138442309eb5638b4e018ac5283f105fe",
+      "bytes": 423133
+    }
+  }
+}
