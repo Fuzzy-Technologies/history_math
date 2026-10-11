@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-6b7055e5c357-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "academic-university-closure",
+      "question": "The source first gives the Academic University's existence as 1726–1767, but later says it closed in 1783. Which chronology should the approved article use? Both dates have been preserved.",
+      "blocking": false,
+      "state": "open"
+    },
+    {
+      "id": "first-mathematicians-count",
+      "question": "The source says seven of the first 23 academicians were mathematicians but names only five. Should the list be completed, or the stated count reviewed? The source count and list are retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-30",
+      "url": "https://teletype.in/@history_math/Matematika-v-Rossijskoj-akademii-nauk-RAN-11-30"
+    }
+  }
+}
