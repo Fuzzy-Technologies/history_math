@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-791e3d415580-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "lobachevsky-caption-year",
+      "question": "Figure 5 dates Lobachevsky to 1792–1956. Should the death year be 1856? The caption’s source date is preserved.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "early-professors-period",
+      "question": "The source groups Bartels, Renner, Littrow, Bronner and Brashman under 1808–1810. Should their different appointment dates be distinguished, particularly Brashman’s? The source grouping is retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 9,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-06-30",
+      "url": "https://teletype.in/@history_math/Razvitie-matematiki-v-Kazanskom-universitete-XIX-vek-06-30"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
