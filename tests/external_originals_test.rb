@@ -81,12 +81,12 @@ class ExternalOriginalsTest < Minitest::Test
       script = <<~JS
         import {readFileSync} from 'node:fs';
         import {pathToFileURL} from 'node:url';
-        const {packageDigest} = await import(pathToFileURL(process.argv[1]));
-        const fixture = JSON.parse(readFileSync(process.argv[2], 'utf8'));
-        process.stdout.write(packageDigest(fixture.text, fixture.data, process.argv[3]));
+        const {packageDigest} = await import(pathToFileURL(process.argv[2]));
+        const fixture = JSON.parse(readFileSync(process.argv[3], 'utf8'));
+        process.stdout.write(packageDigest(fixture.text, fixture.data, process.argv[4]));
       JS
       output, error, status = Open3.capture3("node", "--input-type=module", "-e", script,
-        File.expand_path("../scripts/article-review.mjs", __dir__), fixture, root)
+        "digest-parity-fixture", File.expand_path("../scripts/article-review.mjs", __dir__), fixture, root)
       assert status.success?, error
       assert_equal digest.hexdigest, output
       external_digest = digest.hexdigest
