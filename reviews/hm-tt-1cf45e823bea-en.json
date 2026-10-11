@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-1cf45e823bea-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "morozov-classification-term",
+      "question": "The source describes Morozov’s 1938 result as enumerating all primitive representations of simple Lie groups. Should the exact objects classified and the term primitive representations be checked? The original terminology and date are retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 10,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-06-30",
+      "url": "https://teletype.in/@history_math/Razvitie-matematiki-v-Kazanskom-universitete-XX-vek-06-30"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
