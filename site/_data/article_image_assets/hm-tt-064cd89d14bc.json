@@ -1,0 +1,177 @@
+{
+  "/assets/images/hm-tt-064cd89d14bc/istoriya-matematiki-dlya-nas-01.png": {
+    "sha256": "2e0f1392c26d19e9a56b15d0805960c3427c09fff81622ba5f1cc99add76fb1f",
+    "width": 2000,
+    "height": 1200,
+    "bytes": 1450605,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-064cd89d14bc/istoriya-matematiki-dlya-nas-01.png-960.webp",
+        "width": 960,
+        "height": 576,
+        "sha256": "a91c7c909e5635d82beabd9380b99ad38fe2ccb7598338c6525a9d907a019ebc",
+        "bytes": 242522
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-064cd89d14bc-istoriya-matematiki-dlya-nas-01-2e0f1392c26d19e9a56b15d0805960c3427c09fff81622ba5f1cc99add76fb1f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630498859",
+      "asset_id": 630498859,
+      "release_tag": "article-originals-2",
+      "sha256": "2e0f1392c26d19e9a56b15d0805960c3427c09fff81622ba5f1cc99add76fb1f",
+      "bytes": 1450605
+    }
+  },
+  "/assets/images/hm-tt-064cd89d14bc/istoriya-matematiki-dlya-nas-02.png": {
+    "sha256": "99f7a548f27b5bdb16b32220de3735f223f22f6f58d69533f8a3cc55dc36fd33",
+    "width": 1080,
+    "height": 1080,
+    "bytes": 2909370,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-064cd89d14bc/istoriya-matematiki-dlya-nas-02.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "d815cd53fbfe2abf384f6f7ea37f5971963c73dac54b5ce91ac865e801c1e53b",
+        "bytes": 1239402
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-064cd89d14bc-istoriya-matematiki-dlya-nas-02-99f7a548f27b5bdb16b32220de3735f223f22f6f58d69533f8a3cc55dc36fd33.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544707",
+      "asset_id": 630544707,
+      "release_tag": "article-originals-9",
+      "sha256": "99f7a548f27b5bdb16b32220de3735f223f22f6f58d69533f8a3cc55dc36fd33",
+      "bytes": 2909370
+    }
+  },
+  "/assets/images/hm-tt-064cd89d14bc/istoriya-matematiki-dlya-nas-03.png": {
+    "sha256": "0db1cc6998a7fc046f51995e6cf6753fc916cd73580f321b838d6a6b471baedf",
+    "width": 1155,
+    "height": 805,
+    "bytes": 793974,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-064cd89d14bc/istoriya-matematiki-dlya-nas-03.png-960.webp",
+        "width": 960,
+        "height": 669,
+        "sha256": "12f0a2e088bf724b30a74b14f7b49f16df337bc1960d7f185156fd73119d60ab",
+        "bytes": 488870
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-064cd89d14bc-istoriya-matematiki-dlya-nas-03-0db1cc6998a7fc046f51995e6cf6753fc916cd73580f321b838d6a6b471baedf.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544847",
+      "asset_id": 630544847,
+      "release_tag": "article-originals-0",
+      "sha256": "0db1cc6998a7fc046f51995e6cf6753fc916cd73580f321b838d6a6b471baedf",
+      "bytes": 793974
+    }
+  },
+  "/assets/images/hm-tt-064cd89d14bc/istoriya-matematiki-dlya-nas-04.png": {
+    "sha256": "f3f91e2a38f6f07657cb74d248728a567bc4f2522c4d4d9db3a7934206a193f7",
+    "width": 1155,
+    "height": 805,
+    "bytes": 145561,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-064cd89d14bc/istoriya-matematiki-dlya-nas-04.png-960.webp",
+        "width": 960,
+        "height": 669,
+        "sha256": "f64c9eb9ff8bed924430905429a59d8d4fde7366ae792ef73ce6bd5e1ef557ef",
+        "bytes": 292542
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-064cd89d14bc-istoriya-matematiki-dlya-nas-04-f3f91e2a38f6f07657cb74d248728a567bc4f2522c4d4d9db3a7934206a193f7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630545070",
+      "asset_id": 630545070,
+      "release_tag": "article-originals-f",
+      "sha256": "f3f91e2a38f6f07657cb74d248728a567bc4f2522c4d4d9db3a7934206a193f7",
+      "bytes": 145561
+    }
+  },
+  "/assets/images/hm-tt-064cd89d14bc/istoriya-matematiki-dlya-nas-05.png": {
+    "sha256": "4a0c07bc63a833f44ce20e7edd1fdcbce073931958419153fb436376f780653b",
+    "width": 1710,
+    "height": 801,
+    "bytes": 184930,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-064cd89d14bc/istoriya-matematiki-dlya-nas-05.png-960.webp",
+        "width": 960,
+        "height": 450,
+        "sha256": "5558c08db59cc7f1223dfb3648f9421d6d2102fe04ad3d5d3367e2217aab10de",
+        "bytes": 142848
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-064cd89d14bc-istoriya-matematiki-dlya-nas-05-4a0c07bc63a833f44ce20e7edd1fdcbce073931958419153fb436376f780653b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630545279",
+      "asset_id": 630545279,
+      "release_tag": "article-originals-4",
+      "sha256": "4a0c07bc63a833f44ce20e7edd1fdcbce073931958419153fb436376f780653b",
+      "bytes": 184930
+    }
+  },
+  "/assets/images/hm-tt-064cd89d14bc/istoriya-matematiki-dlya-nas-06.png": {
+    "sha256": "0596660b4fe9a1efd52929586a4ef0f6265bac00cb1211bcd291b133d86637fa",
+    "width": 5616,
+    "height": 3744,
+    "bytes": 33928913,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-064cd89d14bc/istoriya-matematiki-dlya-nas-06.png-960.webp",
+        "width": 960,
+        "height": 640,
+        "sha256": "ab2a789c7b46b05f2b6ba73c7ab2fb16ad4be4893aca2883cab39639e8836ffe",
+        "bytes": 494702
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-064cd89d14bc-istoriya-matematiki-dlya-nas-06-0596660b4fe9a1efd52929586a4ef0f6265bac00cb1211bcd291b133d86637fa.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630545410",
+      "asset_id": 630545410,
+      "release_tag": "article-originals-0",
+      "sha256": "0596660b4fe9a1efd52929586a4ef0f6265bac00cb1211bcd291b133d86637fa",
+      "bytes": 33928913
+    }
+  },
+  "/assets/images/hm-tt-064cd89d14bc/istoriya-matematiki-dlya-nas-07.png": {
+    "sha256": "1fba9adf52ca0d92c8d5cfaf35687289a6f4e7294353ea5f2b85c09b4e8fbaaf",
+    "width": 1350,
+    "height": 1350,
+    "bytes": 3133264,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-064cd89d14bc/istoriya-matematiki-dlya-nas-07-png-reading-960-14a2211800aa.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "14a2211800aa95b19c092f9c3941ae02a6278b674d0b34ee567a4cb7d98aaf5d",
+        "bytes": 865504
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-064cd89d14bc-istoriya-matematiki-dlya-nas-07-1fba9adf52ca0d92c8d5cfaf35687289a6f4e7294353ea5f2b85c09b4e8fbaaf.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630545577",
+      "asset_id": 630545577,
+      "release_tag": "article-originals-1",
+      "sha256": "1fba9adf52ca0d92c8d5cfaf35687289a6f4e7294353ea5f2b85c09b4e8fbaaf",
+      "bytes": 3133264
+    }
+  }
+}
