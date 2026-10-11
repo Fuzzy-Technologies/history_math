@@ -6,12 +6,12 @@ import {parse} from 'yaml';
 const cleanup = readFileSync('.github/workflows/cleanup-merged-branch.yml', 'utf8').replace(/\r\n/g, '\n');
 const script = cleanup.split('script: |\n')[1].split('\n').map(line => line.replace(/^            /, '')).join('\n');
 const AsyncFunction = Object.getPrototypeOf(async function() {}).constructor;
-test('publication builds fetch full history and deployment resolves the exact master SHA strictly', () => {
+test('source checks use shallow heads and publication resolves the exact master SHA from full history', () => {
   for (const file of ['ci.yml', 'deploy.yml']) {
     const workflow = parse(readFileSync(`.github/workflows/${file}`, 'utf8'));
     for (const job of Object.values(workflow.jobs)) {
       for (const step of job.steps ?? []) {
-        if (step.uses?.startsWith('actions/checkout@')) assert.equal(step.with['fetch-depth'], 0);
+        if (step.uses?.startsWith('actions/checkout@')) assert.equal(step.with['fetch-depth'], file === 'deploy.yml' ? 0 : 1);
       }
     }
   }
@@ -92,7 +92,7 @@ test('production build and deployment both require master for push and manual di
       assert.equal(allowed, branch === 'master' && event !== 'pull_request');
     }
   }
-  const files = ['ci.yml', 'deploy.yml', 'cleanup-merged-branch.yml', 'pr-metadata.yml', 'article-report.yml'];
+  const files = ['ci.yml', 'deploy.yml', 'cleanup-merged-branch.yml', 'pr-metadata.yml', 'article-report.yml', 'article-prepare.yml'];
   for (const file of files) {
     const content = readFileSync(`.github/workflows/${file}`, 'utf8');
     for (const match of content.matchAll(/uses: ([^\s]+)/g)) assert.match(match[1], /@[a-f0-9]{40}$/);
@@ -118,7 +118,8 @@ test('the actual privileged article comment job has no checkout and rejects stal
   const execute = () => new AsyncFunction('github', 'context', source)(github, context);
   await execute(); await execute();
   assert.equal(created, 1); assert.equal(updated, 1);
-  assert.match(comments[0].body, /Технические проверки пройдены/);
+  assert.match(comments[0].body, /Проверки исходных файлов пройдены/);
+  assert.match(comments[0].body, /только исходные файлы/);
   assert.ok(comments[0].body.includes('\n\n'));
   assert.ok(!comments[0].body.includes('\\n'));
   runId = 9; await execute(); assert.equal(updated, 1);
@@ -145,23 +146,41 @@ test('CI uploads compact reports without full-site, screenshots or PDF archives'
   assert.doesNotMatch(uploads[0], /article-preview|article-screenshots|article-pdfs|path: _site|path: test-results\s*$/m);
 });
 
-test('PDF caches restore on all builds but only validated master builds save reusable outputs', () => {
-  for (const path of ['.github/workflows/ci.yml', '.github/workflows/deploy.yml']) {
-    const workflow = parse(readFileSync(path, 'utf8'));
-    for (const [name, job] of Object.entries(workflow.jobs)) {
-      if (name === 'deploy') continue;
-      const restore = job.steps.find(step => step.uses?.startsWith('actions/cache/restore@'));
-      assert.equal(restore.with.path, '.pdf-cache');
-      assert.match(restore.with['restore-keys'], /pdf-v1-/);
-      assert.doesNotMatch(JSON.stringify(job.steps.filter(step => step.run)), /cache-hit/);
-      const save = job.steps.find(step => step.uses?.startsWith('actions/cache/save@'));
-      if (name === 'articles') assert.equal(save, undefined); // Review drafts never seed public cache.
-      else {
-        assert.match(save.if, /github.ref == 'refs\/heads\/master'/);
-        assert.match(save.if, /github.event_name != 'pull_request'/);
-        assert.equal(save.with.path, '.pdf-cache');
-        assert.match(save.with.key, /cache-primary-key/);
-      }
-    }
+test('PR and feature CI run source checks without building sites, browsers or PDFs', () => {
+  const ci = parse(readFileSync('.github/workflows/ci.yml', 'utf8'));
+  assert.equal(ci.name, 'Prototype checks');
+  assert.equal(ci.jobs.articles.name, 'Article package');
+  assert.equal(ci.permissions.contents, 'read');
+  const articleCommands = ci.jobs.articles.steps.filter(step => step.run).map(step => step.run).join('\n');
+  assert.match(articleCommands, /node scripts\/check-articles\.mjs --source-only/);
+  const commands = Object.values(ci.jobs).flatMap(job => job.steps.filter(step => step.run).map(step => step.run)).join('\n');
+  assert.match(commands, /npm test/);
+  assert.match(commands, /tests\/image_originals_test\.rb/);
+  assert.match(commands, /tests\/external_originals_test\.rb/);
+  assert.match(commands, /pip install -r tools\/requirements-images.txt/);
+  assert.doesNotMatch(commands, /jekyll build|article-pdf\.mjs|playwright install|test:browser|browser\.mjs|publication_test\.rb|article_details_test\.rb|translation_notices_test\.rb/);
+  for (const job of Object.values(ci.jobs)) {
+    assert.ok(!job.steps.some(step => step.uses?.startsWith('actions/cache/')));
   }
+  const checker = readFileSync('scripts/check-articles.mjs', 'utf8');
+  assert.doesNotMatch(checker, /article-pdf\.mjs/);
+});
+
+test('only guarded master publication generates PDFs and saves their validated cache', () => {
+  const deploy = parse(readFileSync('.github/workflows/deploy.yml', 'utf8'));
+  const build = deploy.jobs.build;
+  assert.match(build.if, /github.ref == 'refs\/heads\/master'/);
+  assert.match(build.if, /github.event_name == 'push'/);
+  const commands = build.steps.filter(step => step.run).map(step => step.run).join('\n');
+  assert.match(commands, /bundle exec jekyll build/);
+  assert.match(commands, /node scripts\/article-pdf\.mjs/);
+  const restore = build.steps.find(step => step.uses?.startsWith('actions/cache/restore@'));
+  assert.equal(restore.with.path, '.pdf-cache');
+  assert.match(restore.with['restore-keys'], /pdf-v1-/);
+  assert.doesNotMatch(commands, /cache-hit/);
+  const save = build.steps.find(step => step.uses?.startsWith('actions/cache/save@'));
+  assert.match(save.if, /github.ref == 'refs\/heads\/master'/);
+  assert.match(save.if, /github.event_name != 'pull_request'/);
+  assert.equal(save.with.path, '.pdf-cache');
+  assert.match(save.with.key, /cache-primary-key/);
 });

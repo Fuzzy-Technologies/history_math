@@ -1,15 +1,25 @@
 # Preparing the next archival article
 
+For the current contributor upload and automated storage flow, use
+[Preparing an article PR](article-preparation.md) and
+[external-original storage](adr/0005-external-article-originals.md).
+
 For the owner-authorized 2026-10-11 Teletype migration, read the complete saved
 Teletype article and its exact original image bytes instead of unavailable
 NAS working files. Preserve the visible source publication date using the
 exception in PUBLICATION_DATES.md. Prepare one Russian article and an explicit
-English translation placeholder per independent master-targeting draft PR;
-replace that placeholder only after the Russian package and image delivery
-are complete. Store each new article's image inventory in
+English version per independent master-targeting draft PR. An explicit
+translation placeholder may be used during preparation, but final review
+requires the completed English adaptation. Store each new article's image inventory in
 `site/_data/article_image_assets/<article-id>.json`, so independent article PRs
 do not edit one shared inventory. Teletype image originals are unchanged;
-lossless WebP reading variants retain the original download/zoom target. Production pages reference migrated originals at the immutable GitHub revision used to build the site; their original bytes remain in Git but are excluded from the Pages payload. Review previews use local originals. Migrated PDFs use the largest local reading variant so their generation remains offline and reproducible.
+lossless WebP reading variants retain the original download/zoom target. The
+article preparation automation stores heavy originals outside Git, records
+their immutable URLs and SHA-256 digests in the inventory, and keeps compact
+reading assets in the article PR. It removes originals from unmerged branch
+history only after verifying the uploaded bytes. Existing local originals
+remain supported. Migrated PDFs use the largest local reading variant so
+their post-merge generation remains offline and reproducible.
 Original animations retain animation in their reading variants. Editorial
 approval remains pending until the owner reviews the current package.
 
@@ -24,14 +34,14 @@ See [check conditions and report interpretation](ARTICLE_CHECKS.md) for stable c
 5. Use explicit `{#section-id}` anchors, `[text](#section-id)` references, kramdown footnotes and ordinary reference definitions. Every cited definition must exist. Link external destinations from descriptive words; do not display bare URLs or URL-labelled links in prose. Use dollar LaTeX; unsupported commands block the gate. Preserve equality and operation order when splitting a long equation. Preserve the original rows and columns when transcribing image tables. Stage new Markdown and run `python3 tools/markdown_tables.py --write`. Figure records supply `id`, `path`, `alt`, `caption`, `source`, `rights_basis`, plus a verified URL/license when known. Insert `{% include article-figure.html id="fig-1" %}`; put no shared HTML in the article.
 6. Prepare `site/_articles/<id>.<lang>.md`, copy selected images to `site/assets/images/<id>/`, and write `reviews/<id>.json` with public reconciliation and editor questions. These files are the single editable site derivative. Keep private source paths, byte hashes, fragment mappings and review evidence in ignored `test-results/private/`, not on NAS or in FELab. Verify original source bytes before and after reading/conversion. Original source and image files are never overwritten. Do not maintain another editable article in a staging folder.
 7. Create `feature/article-<id>-ru` for Russian reports, `-en` for English, or omit the suffix for English fallback. Start each independent article branch from current `master` and target `master`. Make review corrections directly in that article's site branch. Do not write them back to the source archive or FELab.
-8. Run `npm ci`, `npm test`, and `node scripts/check-articles.mjs`. The latter needs the existing Ruby/Bundler/Jekyll toolchain, Python and Playwright Chromium. `--source-only` is an explicitly partial source check: its report remains incomplete. `--existing-preview --commit <sha> --preview-dir <artifact-dir>` validates a stock CI-built preview after checking its commit manifest. A missing tool is a failed/incomplete check. CI runs the stock Jekyll build; it does not require an LLM.
-9. Inspect all 1440, 390 and 320 pixel screenshots and the actual page. Review formulas, table cells, caption/source relations and bibliography against originals. Update private evidence with exactly what was automatically checked, visually compared or left to the editor. Common validator/template changes require all five pilot packages to pass, not only a minimal example.
+8. Push the prepared branch and use GitHub CI for source contracts and regression tests. `Article package` runs `node scripts/check-articles.mjs --source-only`; its `source` profile can pass without claiming a site build or browser result. Feature CI installs no browser and creates no site or PDF. A missing source tool or failed required source check blocks technical success.
+9. Review formulas, table cells, caption/source relations and bibliography against originals. Update private evidence with exactly what was compared or left to the editor. Keep questions explicit and editorial approval pending. The owner handles visual review; agents do not build or browse the site during article preparation.
 10. Commit the public Markdown, its selected assets and `reviews/<id>.json` only. Push to site origin and open a PR into `master`. Add `Tim55667757` and `documentation` without replacing existing metadata, then verify both. Use one or two plain sentences about the change, only open editorial questions, and a CI report link. Keep operational details in the report, not the PR body. The terminal branch suffix controls automatically generated descriptions as well as reports.
-11. Verify the actual head SHA's `Article package` run and its JSON/Markdown report, preview and screenshots. A single bot comment links the current run. Successful technical checks still await editorial review. Let the owner merge into `master` after editorial approval and current-head CI checks pass. This merge is the publication decision; no separate promotion PR is needed.
+11. Verify the actual head SHA's `Article package` run and its JSON/Markdown source report. A single bot comment links the current run. Successful source checks still await editorial review. Let the owner merge into `master` after editorial approval and current-head CI checks pass. This merge is the publication decision; the guarded master workflow then builds the site and PDFs and checks rendered output. No separate promotion PR is needed.
 
 To prepare article six, repeat these steps using the site-owned schema and templates. FELab and NAS access remains read-only throughout.
 
-CI keeps only the small `article-report-<head-sha>` JSON/Markdown artifact for 14 days; the same human report appears in the job summary. Full-site previews, browser screenshots and temporary PDFs are no longer uploaded. For local visual review, check out the exact PR head, run `npm ci` and `node scripts/check-articles.mjs`, then serve `test-results/article-preview` with `node scripts/serve-review.mjs test-results/article-preview`. Screenshots and PDFs remain local under `test-results` and are ignored by Git.
+CI keeps only the small `article-report-<head-sha>` JSON/Markdown artifact for 14 days; the same human report appears in the job summary. PR and feature checks validate source files and run regression tests without generating a site, screenshots or PDFs. Master publication generates the deployed site and PDF editions after owner approval, with reusable PDF cache entries saved only from validated master builds.
 
 Before publication, record the real human approval as described in [the content contract](CONTENT.md#editorial-decision). It covers current public text and image bytes and requires closed blocking questions.
 
@@ -43,4 +53,4 @@ Remove the placement instruction itself. Retain the useful prose, formulas, expl
 
 Compare every block with the current article before adding text. Map already covered content to its existing location and add only missing information. Do not restore assertions rejected by earlier editorial corrections, including claims found again in an announcement or research document. Keep ambiguities in the canonical `reviews/<id>.json` question list and leave editorial approval pending.
 
-In ignored local evidence, record every marker's source hash and line range, its complete block, individual paragraph/formula/image/reference destinations, and the reason for any exclusion. Distinguish empty placeholders, already included content, newly restored content and material withheld because of an existing editorial correction. Map private attachment names to retained public bibliographic references or permitted figures; do not export private research files. A source with no markers also receives an explicit checked result. Public review records contain only publication-safe summaries. Recheck source hashes after the work and verify current-commit source, build, output and all three viewport results.
+In ignored local evidence, record every marker's source hash and line range, its complete block, individual paragraph/formula/image/reference destinations, and the reason for any exclusion. Distinguish empty placeholders, already included content, newly restored content and material withheld because of an existing editorial correction. Map private attachment names to retained public bibliographic references or permitted figures; do not export private research files. A source with no markers also receives an explicit checked result. Public review records contain only publication-safe summaries. Recheck source hashes after the work and verify the current-commit GitHub source checks; rendering checks belong to owner-approved master publication.
