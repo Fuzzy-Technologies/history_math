@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-4c57329c14a2/christmas-theorem-01.jpeg": {
+    "sha256": "eb0f9513e962274960496757ad528d5c41bd496bb86d54176e2efc8944711a2a",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 383032,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4c57329c14a2/christmas-theorem-01.jpeg-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "50b531b291483f4a636e5a8cbb28a2ad721c7d63c8f68b4411f641586db57cec",
+        "bytes": 1295220
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-4c57329c14a2-christmas-theorem-01-eb0f9513e962274960496757ad528d5c41bd496bb86d54176e2efc8944711a2a.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630499026",
+      "asset_id": 630499026,
+      "release_tag": "article-originals-e",
+      "sha256": "eb0f9513e962274960496757ad528d5c41bd496bb86d54176e2efc8944711a2a",
+      "bytes": 383032
+    }
+  },
+  "/assets/images/hm-tt-4c57329c14a2/christmas-theorem-02.jpeg": {
+    "sha256": "ae2820a1371cac729b47eb84eccd6a68ae2940f35ce905d8670f48fcf9ffc5a4",
+    "width": 299,
+    "height": 400,
+    "bytes": 23512,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4c57329c14a2/christmas-theorem-02-299.jpeg",
+        "width": 299,
+        "height": 400,
+        "bytes": 23512,
+        "sha256": "ae2820a1371cac729b47eb84eccd6a68ae2940f35ce905d8670f48fcf9ffc5a4"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-4c57329c14a2-christmas-theorem-02-ae2820a1371cac729b47eb84eccd6a68ae2940f35ce905d8670f48fcf9ffc5a4.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630537782",
+      "asset_id": 630537782,
+      "release_tag": "article-originals-a",
+      "sha256": "ae2820a1371cac729b47eb84eccd6a68ae2940f35ce905d8670f48fcf9ffc5a4",
+      "bytes": 23512
+    }
+  },
+  "/assets/images/hm-tt-4c57329c14a2/christmas-theorem-03.png": {
+    "sha256": "d3adf9a91ff01107f645a3f1c831abd9860e48734f2ead3f0cdd3fd204da2088",
+    "width": 1200,
+    "height": 630,
+    "bytes": 2281072,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4c57329c14a2/christmas-theorem-03.png-960.webp",
+        "width": 960,
+        "height": 504,
+        "sha256": "3bb441e3f6f04d7f99d7b2f6c6706f9f20e6f482bdef59cb50017c7bd4c6dc4d",
+        "bytes": 719370
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-4c57329c14a2-christmas-theorem-03-d3adf9a91ff01107f645a3f1c831abd9860e48734f2ead3f0cdd3fd204da2088.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630537939",
+      "asset_id": 630537939,
+      "release_tag": "article-originals-d",
+      "sha256": "d3adf9a91ff01107f645a3f1c831abd9860e48734f2ead3f0cdd3fd204da2088",
+      "bytes": 2281072
+    }
+  }
+}
