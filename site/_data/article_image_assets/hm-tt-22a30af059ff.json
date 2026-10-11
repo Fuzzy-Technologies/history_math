@@ -1,0 +1,102 @@
+{
+  "/assets/images/hm-tt-22a30af059ff/agrometr-bibikova-10-05-01.png": {
+    "sha256": "c777b1344c19759bfcd00d14a30b726145a9ef586a7e1244215ffe1d7ce9a3ba",
+    "width": 2300,
+    "height": 1100,
+    "bytes": 442891,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-22a30af059ff/agrometr-bibikova-10-05-01.png-960.webp",
+        "width": 960,
+        "height": 459,
+        "sha256": "d67e9f5a222711ec44b9d332cefce2b934c050d2accc451451ee52703e28dec7",
+        "bytes": 61086
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-22a30af059ff-agrometr-bibikova-10-05-01-c777b1344c19759bfcd00d14a30b726145a9ef586a7e1244215ffe1d7ce9a3ba.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557105",
+      "asset_id": 630557105,
+      "release_tag": "article-originals-c",
+      "sha256": "c777b1344c19759bfcd00d14a30b726145a9ef586a7e1244215ffe1d7ce9a3ba",
+      "bytes": 442891
+    }
+  },
+  "/assets/images/hm-tt-22a30af059ff/agrometr-bibikova-10-05-02.png": {
+    "sha256": "9230a5d55eb93cd753029a766fded90c1be601232a3acc3cf3a9dc020ea601b0",
+    "width": 794,
+    "height": 1027,
+    "bytes": 498469,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-22a30af059ff/agrometr-bibikova-10-05-02.png-794.webp",
+        "width": 794,
+        "height": 1027,
+        "sha256": "43de8f5d66e0cc69b06f6eb9462064355dd3f19b4ea3ff5df4abcffa6ef85876",
+        "bytes": 266092
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-22a30af059ff-agrometr-bibikova-10-05-02-9230a5d55eb93cd753029a766fded90c1be601232a3acc3cf3a9dc020ea601b0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557252",
+      "asset_id": 630557252,
+      "release_tag": "article-originals-9",
+      "sha256": "9230a5d55eb93cd753029a766fded90c1be601232a3acc3cf3a9dc020ea601b0",
+      "bytes": 498469
+    }
+  },
+  "/assets/images/hm-tt-22a30af059ff/agrometr-bibikova-10-05-03.png": {
+    "sha256": "9ba10010cd02b02785cdbc26dd2806f87650f2ff11c8b025f4893d6509389422",
+    "width": 499,
+    "height": 802,
+    "bytes": 243320,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-22a30af059ff/agrometr-bibikova-10-05-03.png-499.webp",
+        "width": 499,
+        "height": 802,
+        "sha256": "cb988f5987ab3b0301c735ac38eb17505a19da1d4f8506812f51a1de0b548d72",
+        "bytes": 120126
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-22a30af059ff-agrometr-bibikova-10-05-03-9ba10010cd02b02785cdbc26dd2806f87650f2ff11c8b025f4893d6509389422.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557374",
+      "asset_id": 630557374,
+      "release_tag": "article-originals-9",
+      "sha256": "9ba10010cd02b02785cdbc26dd2806f87650f2ff11c8b025f4893d6509389422",
+      "bytes": 243320
+    }
+  },
+  "/assets/images/hm-tt-22a30af059ff/agrometr-bibikova-10-05-04.png": {
+    "sha256": "38167552e19d5f6ebf55e4cd8e2b7398181b0127fb50bba53e19fa71b426ed58",
+    "width": 380,
+    "height": 303,
+    "bytes": 177516,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-22a30af059ff/agrometr-bibikova-10-05-04.png-380.webp",
+        "width": 380,
+        "height": 303,
+        "sha256": "a25650a985428eff574aa83b87547ed92de013041291d521af33bffd6b544770",
+        "bytes": 114700
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-22a30af059ff-agrometr-bibikova-10-05-04-38167552e19d5f6ebf55e4cd8e2b7398181b0127fb50bba53e19fa71b426ed58.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557540",
+      "asset_id": 630557540,
+      "release_tag": "article-originals-3",
+      "sha256": "38167552e19d5f6ebf55e4cd8e2b7398181b0127fb50bba53e19fa71b426ed58",
+      "bytes": 177516
+    }
+  }
+}
