@@ -2,10 +2,10 @@
 
 Read `DEVELOPMENT_PROTOCOL.md` before making changes. This repository is the public publication target for the Mathematics with Mansur project.
 
-- Continue the current feature branch; preserve user changes and never reset or force-push.
+- Continue the current feature branch and preserve user changes. History rewriting is forbidden except for owner-authorized article preparation: verify external originals first, then replace only the pinned article branch with an atomic lease. Never rewrite `master`.
 - Create short-lived `feature/*` branches from `master` and target `master` with PRs. The owner-approved merge also approves publication; there is no permanent integration branch.
 - Assign every PR to `Tim55667757` and add the `documentation` label, including feature and publication PRs. Preserve other assignees and labels; verify both fields after creation.
-- Do not self-merge, create releases/tags, enable auto-merge, or create a backlog without explicit owner instruction.
+- Do not self-merge, create product releases/tags, enable auto-merge, or create a backlog without explicit owner instruction. The owner has authorized content-addressed `article-originals-*` storage releases and preparation of the 190 unmerged article PRs; this does not authorize publication.
 - Keep implementation, comments, documentation, commits and PR descriptions in English. Localized UI and articles use their actual language.
 - English is the default site locale, not a requirement on the original language of articles.
 - Keep NAS/FELab as the editorial source of truth; no private paths, databases, sessions, logs or internal metadata belong here.
