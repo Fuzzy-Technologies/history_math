@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-074d7931840e-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "babylon-conquest-chronology",
+      "question": "Please verify the historical chronology, particularly the VII-century placement of Nebuchadnezzar and the date 336 for Alexander’s conquest of Babylon. The dates are preserved from the source.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-07-22",
+      "url": "https://teletype.in/@history_math/Matematika-Drevnego-Vavilona-07-23"
+    }
+  }
+}
