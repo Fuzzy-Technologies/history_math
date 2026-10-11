@@ -1,0 +1,17 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-911cb8fa227f-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 17,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-12-08",
+      "url": "https://teletype.in/@history_math/Bible-math-Algebra-basics"
+    }
+  }
+}
