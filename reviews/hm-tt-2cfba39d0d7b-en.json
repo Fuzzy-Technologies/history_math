@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-2cfba39d0d7b-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-false-position-1",
+      "question": "The source associates the simple rule with linear interpolation and says its twentieth-century revival was the secant method. Confirm the distinction between historical single/double false position, modern regula falsi, and the secant method. All source statements are retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 1,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-04-26",
+      "url": "https://teletype.in/@history_math/False-Position-Method"
+    }
+  }
+}
