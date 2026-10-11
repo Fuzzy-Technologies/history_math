@@ -1,0 +1,27 @@
+{
+  "/assets/images/hm-tt-2cfba39d0d7b/false-position-method-01.png": {
+    "sha256": "ccf9247bb2aec599ca48e519874559bbb5d4e4720454bfa81a8c85ce50d8b891",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 4317754,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2cfba39d0d7b/false-position-method-01.png-960.webp",
+        "width": 960,
+        "height": 640,
+        "sha256": "6d3803555978600f170713bade37661fa0a99fdf2c5e2a58ec52852badb22be4",
+        "bytes": 796502
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-2cfba39d0d7b-false-position-method-01-ccf9247bb2aec599ca48e519874559bbb5d4e4720454bfa81a8c85ce50d8b891.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630493838",
+      "asset_id": 630493838,
+      "release_tag": "article-originals-c",
+      "sha256": "ccf9247bb2aec599ca48e519874559bbb5d4e4720454bfa81a8c85ce50d8b891",
+      "bytes": 4317754
+    }
+  }
+}
