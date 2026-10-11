@@ -1,0 +1,177 @@
+{
+  "/assets/images/hm-tt-936fd901871e/krizisy-v-razvitii-matematik-01.png": {
+    "sha256": "18cffec9e93add5007e69ad314a63170a9514e96c3630be6cc3a2420bddae4a1",
+    "width": 1500,
+    "height": 1500,
+    "bytes": 57378,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-936fd901871e/krizisy-v-razvitii-matematik-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "d95c832ff51f7cfd5d101fde10c901474ccf7f244db6ef94791ca76b20512dda",
+        "bytes": 57270
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-936fd901871e-krizisy-v-razvitii-matematik-01-18cffec9e93add5007e69ad314a63170a9514e96c3630be6cc3a2420bddae4a1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630499037",
+      "asset_id": 630499037,
+      "release_tag": "article-originals-1",
+      "sha256": "18cffec9e93add5007e69ad314a63170a9514e96c3630be6cc3a2420bddae4a1",
+      "bytes": 57378
+    }
+  },
+  "/assets/images/hm-tt-936fd901871e/krizisy-v-razvitii-matematik-02.png": {
+    "sha256": "1b10f2011e2297974712104fdba002f3e0302906c3d15336177266cbbbc81337",
+    "width": 150,
+    "height": 200,
+    "bytes": 50221,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-936fd901871e/krizisy-v-razvitii-matematik-02.png-150.webp",
+        "width": 150,
+        "height": 200,
+        "sha256": "c5f44583f97048994b1cb948fe521f347c99e8d2896de413d0497bc47e7f577e",
+        "bytes": 20412
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-936fd901871e-krizisy-v-razvitii-matematik-02-1b10f2011e2297974712104fdba002f3e0302906c3d15336177266cbbbc81337.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560499",
+      "asset_id": 630560499,
+      "release_tag": "article-originals-1",
+      "sha256": "1b10f2011e2297974712104fdba002f3e0302906c3d15336177266cbbbc81337",
+      "bytes": 50221
+    }
+  },
+  "/assets/images/hm-tt-936fd901871e/krizisy-v-razvitii-matematik-03.png": {
+    "sha256": "e889ead0af3545e2271d16e99dfbbe35ca949db6d706d4d824b0144e47eeecf7",
+    "width": 150,
+    "height": 200,
+    "bytes": 44499,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-936fd901871e/krizisy-v-razvitii-matematik-03.png-150.webp",
+        "width": 150,
+        "height": 200,
+        "sha256": "c5ffd8c186300e01546a4f3fbcbc13ad4bac1926f144bd7caf03b9cf0455ad02",
+        "bytes": 22060
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-936fd901871e-krizisy-v-razvitii-matematik-03-e889ead0af3545e2271d16e99dfbbe35ca949db6d706d4d824b0144e47eeecf7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560664",
+      "asset_id": 630560664,
+      "release_tag": "article-originals-e",
+      "sha256": "e889ead0af3545e2271d16e99dfbbe35ca949db6d706d4d824b0144e47eeecf7",
+      "bytes": 44499
+    }
+  },
+  "/assets/images/hm-tt-936fd901871e/krizisy-v-razvitii-matematik-04.png": {
+    "sha256": "9b42027e6fd799ff1d00303c51fea1e8b71c9a6d429b26f52ebae88966eb1708",
+    "width": 150,
+    "height": 200,
+    "bytes": 69605,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-936fd901871e/krizisy-v-razvitii-matematik-04.png-150.webp",
+        "width": 150,
+        "height": 200,
+        "sha256": "d8166fb6f72e86acfff4e9373e7532728917d0c4ddcfa4f4f319eafd2a4b89f6",
+        "bytes": 46640
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-936fd901871e-krizisy-v-razvitii-matematik-04-9b42027e6fd799ff1d00303c51fea1e8b71c9a6d429b26f52ebae88966eb1708.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560806",
+      "asset_id": 630560806,
+      "release_tag": "article-originals-9",
+      "sha256": "9b42027e6fd799ff1d00303c51fea1e8b71c9a6d429b26f52ebae88966eb1708",
+      "bytes": 69605
+    }
+  },
+  "/assets/images/hm-tt-936fd901871e/krizisy-v-razvitii-matematik-05.png": {
+    "sha256": "217a8b91ed6f6f9551294d2a6def9d526d2c56346e570cd1c2fbf41553305aa7",
+    "width": 150,
+    "height": 200,
+    "bytes": 69924,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-936fd901871e/krizisy-v-razvitii-matematik-05.png-150.webp",
+        "width": 150,
+        "height": 200,
+        "sha256": "a49f2145b55fbbcad05fd508680dae9b457cb865cc112aeaadc916a1c658d49c",
+        "bytes": 46452
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-936fd901871e-krizisy-v-razvitii-matematik-05-217a8b91ed6f6f9551294d2a6def9d526d2c56346e570cd1c2fbf41553305aa7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560936",
+      "asset_id": 630560936,
+      "release_tag": "article-originals-2",
+      "sha256": "217a8b91ed6f6f9551294d2a6def9d526d2c56346e570cd1c2fbf41553305aa7",
+      "bytes": 69924
+    }
+  },
+  "/assets/images/hm-tt-936fd901871e/krizisy-v-razvitii-matematik-06.png": {
+    "sha256": "0c5afb011cff9db2d81e6659d3d7f6d8f969e2ee54ebd53bbe3c1f3c9c37035e",
+    "width": 150,
+    "height": 200,
+    "bytes": 43515,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-936fd901871e/krizisy-v-razvitii-matematik-06.png-150.webp",
+        "width": 150,
+        "height": 200,
+        "sha256": "fc03d1857744ae4099cf895544e3a9fcaa653bd5417adbe89f44c815617b467d",
+        "bytes": 21518
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-936fd901871e-krizisy-v-razvitii-matematik-06-0c5afb011cff9db2d81e6659d3d7f6d8f969e2ee54ebd53bbe3c1f3c9c37035e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561064",
+      "asset_id": 630561064,
+      "release_tag": "article-originals-0",
+      "sha256": "0c5afb011cff9db2d81e6659d3d7f6d8f969e2ee54ebd53bbe3c1f3c9c37035e",
+      "bytes": 43515
+    }
+  },
+  "/assets/images/hm-tt-936fd901871e/krizisy-v-razvitii-matematik-07.png": {
+    "sha256": "43ddc752d14311df56e960368afe6291a007384333c44374ab9a1d9ec184b03c",
+    "width": 150,
+    "height": 200,
+    "bytes": 81519,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-936fd901871e/krizisy-v-razvitii-matematik-07.png-150.webp",
+        "width": 150,
+        "height": 200,
+        "sha256": "4fea96ba3a9a23fbdaa23a31cfa29d321942166ae864ed1a73533c4e124ba549",
+        "bytes": 52228
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-936fd901871e-krizisy-v-razvitii-matematik-07-43ddc752d14311df56e960368afe6291a007384333c44374ab9a1d9ec184b03c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561246",
+      "asset_id": 630561246,
+      "release_tag": "article-originals-4",
+      "sha256": "43ddc752d14311df56e960368afe6291a007384333c44374ab9a1d9ec184b03c",
+      "bytes": 81519
+    }
+  }
+}
