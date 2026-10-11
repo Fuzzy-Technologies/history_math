@@ -1,0 +1,252 @@
+{
+  "/assets/images/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-01.png": {
+    "sha256": "2199ff38a36e6511949b6cf83268b883205da7f246cf86ac75e2f8f3a97325f9",
+    "width": 1820,
+    "height": 2685,
+    "bytes": 5053904,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-01.png-960.webp",
+        "width": 960,
+        "height": 1416,
+        "sha256": "02ee20334d4794b329e02e1900990130792e6d74278e501272c5d1a2d9076db7",
+        "bytes": 764858
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-dc7cf6992f78-doktor-filosofii-soldat-sove-01-2199ff38a36e6511949b6cf83268b883205da7f246cf86ac75e2f8f3a97325f9.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553937",
+      "asset_id": 630553937,
+      "release_tag": "article-originals-2",
+      "sha256": "2199ff38a36e6511949b6cf83268b883205da7f246cf86ac75e2f8f3a97325f9",
+      "bytes": 5053904
+    }
+  },
+  "/assets/images/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-02.png": {
+    "sha256": "eafa7fba43f11c53a61a22aa9a8e420a6376fe7e13f27e9a468ee6e82dab2017",
+    "width": 2000,
+    "height": 525,
+    "bytes": 2460061,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-02.png-960.webp",
+        "width": 960,
+        "height": 252,
+        "sha256": "de18266a4bece54be5b6b9b9879807a3b47af6eb928502951cf91c094a9ac40a",
+        "bytes": 378216
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-dc7cf6992f78-doktor-filosofii-soldat-sove-02-eafa7fba43f11c53a61a22aa9a8e420a6376fe7e13f27e9a468ee6e82dab2017.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554087",
+      "asset_id": 630554087,
+      "release_tag": "article-originals-e",
+      "sha256": "eafa7fba43f11c53a61a22aa9a8e420a6376fe7e13f27e9a468ee6e82dab2017",
+      "bytes": 2460061
+    }
+  },
+  "/assets/images/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-03.png": {
+    "sha256": "44cd369e35e24e657604c8310d86dfe0aff887d8f8d5baefbfb646f69d1424df",
+    "width": 2450,
+    "height": 3500,
+    "bytes": 6902915,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-03.png-960.webp",
+        "width": 960,
+        "height": 1371,
+        "sha256": "ddc366afd3daa69a13178772734460a9c23858424c76bf69dec0776f9cba140a",
+        "bytes": 693636
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-dc7cf6992f78-doktor-filosofii-soldat-sove-03-44cd369e35e24e657604c8310d86dfe0aff887d8f8d5baefbfb646f69d1424df.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554225",
+      "asset_id": 630554225,
+      "release_tag": "article-originals-4",
+      "sha256": "44cd369e35e24e657604c8310d86dfe0aff887d8f8d5baefbfb646f69d1424df",
+      "bytes": 6902915
+    }
+  },
+  "/assets/images/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-04.png": {
+    "sha256": "04247bc162fa3cab2dee61881fe999ede08bc15537f4f332f73bc0c7ecaf7d09",
+    "width": 4010,
+    "height": 2420,
+    "bytes": 11318003,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-04.png-960.webp",
+        "width": 960,
+        "height": 579,
+        "sha256": "f6decb803b6a9725e7b90497d02a4979f8840f179f4ecd70423bab82755dde89",
+        "bytes": 427552
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-dc7cf6992f78-doktor-filosofii-soldat-sove-04-04247bc162fa3cab2dee61881fe999ede08bc15537f4f332f73bc0c7ecaf7d09.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554365",
+      "asset_id": 630554365,
+      "release_tag": "article-originals-0",
+      "sha256": "04247bc162fa3cab2dee61881fe999ede08bc15537f4f332f73bc0c7ecaf7d09",
+      "bytes": 11318003
+    }
+  },
+  "/assets/images/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-05.png": {
+    "sha256": "c80055d7c867a6b0e9118537a532084a018d1945a12866e83cb93b5f1d9b50dc",
+    "width": 3903,
+    "height": 4230,
+    "bytes": 18748835,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-05.png-960.webp",
+        "width": 960,
+        "height": 1040,
+        "sha256": "37d220e632139985cf942b03be3cab746ab10310ac359c9f62c89a624d817291",
+        "bytes": 854698
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-dc7cf6992f78-doktor-filosofii-soldat-sove-05-c80055d7c867a6b0e9118537a532084a018d1945a12866e83cb93b5f1d9b50dc.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554532",
+      "asset_id": 630554532,
+      "release_tag": "article-originals-c",
+      "sha256": "c80055d7c867a6b0e9118537a532084a018d1945a12866e83cb93b5f1d9b50dc",
+      "bytes": 18748835
+    }
+  },
+  "/assets/images/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-06.png": {
+    "sha256": "7a0ccc6e20c7ac182cca4c950835f944a7b3b62640fd3e03b620f48d2d0c9f6e",
+    "width": 2058,
+    "height": 2623,
+    "bytes": 6434928,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-06.png-960.webp",
+        "width": 960,
+        "height": 1224,
+        "sha256": "9285ffcaa44a084b9bdfe4b4eff5d5df3364357f5132e764b25ea0c006e77dcd",
+        "bytes": 634158
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-dc7cf6992f78-doktor-filosofii-soldat-sove-06-7a0ccc6e20c7ac182cca4c950835f944a7b3b62640fd3e03b620f48d2d0c9f6e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554688",
+      "asset_id": 630554688,
+      "release_tag": "article-originals-7",
+      "sha256": "7a0ccc6e20c7ac182cca4c950835f944a7b3b62640fd3e03b620f48d2d0c9f6e",
+      "bytes": 6434928
+    }
+  },
+  "/assets/images/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-07.png": {
+    "sha256": "34dac7a374af92e676a67383a0e884b94a66e5ff56274ad526f403c2c02b8a34",
+    "width": 2303,
+    "height": 970,
+    "bytes": 1430556,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-07.png-960.webp",
+        "width": 960,
+        "height": 404,
+        "sha256": "472770903682c33b4e94dccc8883528ea1eb423295bf6055eaca647c4d7258c2",
+        "bytes": 188762
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-dc7cf6992f78-doktor-filosofii-soldat-sove-07-34dac7a374af92e676a67383a0e884b94a66e5ff56274ad526f403c2c02b8a34.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554829",
+      "asset_id": 630554829,
+      "release_tag": "article-originals-3",
+      "sha256": "34dac7a374af92e676a67383a0e884b94a66e5ff56274ad526f403c2c02b8a34",
+      "bytes": 1430556
+    }
+  },
+  "/assets/images/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-08.png": {
+    "sha256": "09f5ce58a1dc55a81ded516e7f0bdebc1d4e8908a542df0d4a334ec950b05fdb",
+    "width": 1484,
+    "height": 2200,
+    "bytes": 3300615,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-08.png-960.webp",
+        "width": 960,
+        "height": 1423,
+        "sha256": "380344fade42136d91f15bdabb5cfc8875980842f4de96cfbace7901b66d95af",
+        "bytes": 667018
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-dc7cf6992f78-doktor-filosofii-soldat-sove-08-09f5ce58a1dc55a81ded516e7f0bdebc1d4e8908a542df0d4a334ec950b05fdb.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555004",
+      "asset_id": 630555004,
+      "release_tag": "article-originals-0",
+      "sha256": "09f5ce58a1dc55a81ded516e7f0bdebc1d4e8908a542df0d4a334ec950b05fdb",
+      "bytes": 3300615
+    }
+  },
+  "/assets/images/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-09.png": {
+    "sha256": "db84f46346a8e9acfe981fe513633e24a9f6b0a37989a2a4604679381a8cac92",
+    "width": 2272,
+    "height": 1704,
+    "bytes": 10430756,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-09.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "d2896160cecd53b21065f311373a24b9ebe7e168fdcfaa6fb2269546b0beab8e",
+        "bytes": 1105432
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-dc7cf6992f78-doktor-filosofii-soldat-sove-09-db84f46346a8e9acfe981fe513633e24a9f6b0a37989a2a4604679381a8cac92.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555138",
+      "asset_id": 630555138,
+      "release_tag": "article-originals-d",
+      "sha256": "db84f46346a8e9acfe981fe513633e24a9f6b0a37989a2a4604679381a8cac92",
+      "bytes": 10430756
+    }
+  },
+  "/assets/images/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-10.png": {
+    "sha256": "e736cb1d792fc4480548ae738f7186ba54b097b77593deefc48b91fbd354a050",
+    "width": 1302,
+    "height": 913,
+    "bytes": 202641,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-10.png-960.webp",
+        "width": 960,
+        "height": 673,
+        "sha256": "d9bfe951038eafa910cbfaaacd4104b065b0d71d9fa11f50487b5698be30733b",
+        "bytes": 95804
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-dc7cf6992f78-doktor-filosofii-soldat-sove-10-e736cb1d792fc4480548ae738f7186ba54b097b77593deefc48b91fbd354a050.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555333",
+      "asset_id": 630555333,
+      "release_tag": "article-originals-e",
+      "sha256": "e736cb1d792fc4480548ae738f7186ba54b097b77593deefc48b91fbd354a050",
+      "bytes": 202641
+    }
+  }
+}
