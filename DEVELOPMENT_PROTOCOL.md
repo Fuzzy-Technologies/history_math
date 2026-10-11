@@ -12,10 +12,14 @@ The pipeline reads existing FELab metadata and NAS originals, prepares public Ma
 2. Define the affected content, layout or infrastructure contract.
 3. Make a focused change on `feature/*` branched from `master`.
 4. Run relevant checks, inspect the diff, and capture browser evidence for layout changes.
-5. Push without history rewriting and open a PR to `master`. Assign it to `Tim55667757`, add the `documentation` label, and verify both fields.
+5. Push without history rewriting and open a PR to `master`. Assign it to `Tim55667757`, add the `documentation` label, and verify both fields. The owner-authorized article preparation exception below permits replacing a pinned article branch after verified external storage.
 6. Let Timur decide whether to merge. The merge into `master` approves publication and starts the existing Pages deployment. No second promotion PR is required.
 
 Never merge a PR, publish a release/tag, or change visibility without explicit authorization. Do not enable auto-merge or repository-wide automatic branch deletion. The guarded existing cleanup workflow deletes only eligible merged feature branches into `master`.
+
+The owner has explicitly authorized preparation automation and parallel processing of article PRs #56–#245. Article-original storage releases use only `article-originals-*` tags anchored to clean `master`, immutable content-addressed asset names, and verified SHA-256 receipts. They are storage containers, not product releases or approval to publish articles. Preparation may replace an unmerged same-repository article branch with a clean commit after all excluded originals have been publicly downloaded and verified. Use a pinned head and an atomic lease; stop on concurrent changes. Retain the PR number, texts, dates, previews, pending editorial review, assignees and labels. Never rewrite `master`, remove source originals from NAS, or claim GitHub has purged old PR objects.
+
+Feature and PR checks validate source data and contract unit tests. Site rendering, browser checks and PDF generation belong to the owner-approved `master` publication workflow. This follows the owner's instruction to avoid feature-site builds and browser checks during preparation.
 
 Every PR, including publication PRs and drafts, must have `Tim55667757` as an assignee and the `documentation` label. Add these fields without replacing other assignees or labels. The PR metadata workflow applies this rule on opening and reopening; contributors must still verify it. Historical PRs were reconciled at the owner's request.
 

@@ -1,0 +1,52 @@
+{
+  "/assets/images/hm-tt-ed37e9b7e624/diametromer-centroiskatel-07-01.png": {
+    "sha256": "5963e18e195045ae96923c89141b3688132ecef7f58ced71f4912756f9d9081d",
+    "width": 850,
+    "height": 850,
+    "bytes": 670723,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ed37e9b7e624/diametromer-centroiskatel-07-01.png-850.webp",
+        "width": 850,
+        "height": 850,
+        "sha256": "507174a4ac0934742bbc9b01144fc6de63969690f5c46e34fd1affd32fa24fd8",
+        "bytes": 344686
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-ed37e9b7e624-diametromer-centroiskatel-07-01-5963e18e195045ae96923c89141b3688132ecef7f58ced71f4912756f9d9081d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630495823",
+      "asset_id": 630495823,
+      "release_tag": "article-originals-5",
+      "sha256": "5963e18e195045ae96923c89141b3688132ecef7f58ced71f4912756f9d9081d",
+      "bytes": 670723
+    }
+  },
+  "/assets/images/hm-tt-ed37e9b7e624/diametromer-centroiskatel-07-02.png": {
+    "sha256": "00b2aab42e0017f6b4760530904790ea0eaa3b1ed273edfc7673a5141a5819e2",
+    "width": 550,
+    "height": 550,
+    "bytes": 72853,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ed37e9b7e624/diametromer-centroiskatel-07-02.png-550.webp",
+        "width": 550,
+        "height": 550,
+        "sha256": "eefbcfc6b4b986f80e8549e6ff0a778c297ad1916a16a850ee7957f3f227c111",
+        "bytes": 36600
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-ed37e9b7e624-diametromer-centroiskatel-07-02-00b2aab42e0017f6b4760530904790ea0eaa3b1ed273edfc7673a5141a5819e2.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630541207",
+      "asset_id": 630541207,
+      "release_tag": "article-originals-0",
+      "sha256": "00b2aab42e0017f6b4760530904790ea0eaa3b1ed273edfc7673a5141a5819e2",
+      "bytes": 72853
+    }
+  }
+}
