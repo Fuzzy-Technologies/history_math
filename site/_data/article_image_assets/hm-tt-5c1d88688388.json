@@ -1,0 +1,202 @@
+{
+  "/assets/images/hm-tt-5c1d88688388/japanese-sangaku-01.jpeg": {
+    "sha256": "0f56f8cc65ffa6097fff729749632a469baabec0126cd86e2d60a4a6c92f5b12",
+    "width": 1200,
+    "height": 565,
+    "bytes": 193680,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5c1d88688388/japanese-sangaku-01.jpeg-960.webp",
+        "width": 960,
+        "height": 452,
+        "sha256": "22764163bc69abb260d337763b838a29d28327615320ba639c96cda6d1a24638",
+        "bytes": 550170
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-5c1d88688388-japanese-sangaku-01-0f56f8cc65ffa6097fff729749632a469baabec0126cd86e2d60a4a6c92f5b12.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630492155",
+      "asset_id": 630492155,
+      "release_tag": "article-originals-0",
+      "sha256": "0f56f8cc65ffa6097fff729749632a469baabec0126cd86e2d60a4a6c92f5b12",
+      "bytes": 193680
+    }
+  },
+  "/assets/images/hm-tt-5c1d88688388/japanese-sangaku-02.jpeg": {
+    "sha256": "d6993293a1171b0d53c3dcbd92a1153617ffd1df2cc05d6e624e6d2e1cbd28ba",
+    "width": 1288,
+    "height": 1024,
+    "bytes": 395037,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5c1d88688388/japanese-sangaku-02.jpeg-960.webp",
+        "width": 960,
+        "height": 763,
+        "sha256": "bebc8000fba6fb116759cb138ebf45a0ac9ed1d47a0dd71c4cc56f755de33c11",
+        "bytes": 901486
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-5c1d88688388-japanese-sangaku-02-d6993293a1171b0d53c3dcbd92a1153617ffd1df2cc05d6e624e6d2e1cbd28ba.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526939",
+      "asset_id": 630526939,
+      "release_tag": "article-originals-d",
+      "sha256": "d6993293a1171b0d53c3dcbd92a1153617ffd1df2cc05d6e624e6d2e1cbd28ba",
+      "bytes": 395037
+    }
+  },
+  "/assets/images/hm-tt-5c1d88688388/japanese-sangaku-03.jpeg": {
+    "sha256": "d3b5fb106399df18e60e19bd3d60cae140c5e41decfaf04673d39c531141ffaf",
+    "width": 1271,
+    "height": 1024,
+    "bytes": 425877,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5c1d88688388/japanese-sangaku-03.jpeg-960.webp",
+        "width": 960,
+        "height": 773,
+        "sha256": "24dd94338a10e08adf5807d6e6622ef826c9010870888b214ef9cccbd9201ae1",
+        "bytes": 976754
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-5c1d88688388-japanese-sangaku-03-d3b5fb106399df18e60e19bd3d60cae140c5e41decfaf04673d39c531141ffaf.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630527162",
+      "asset_id": 630527162,
+      "release_tag": "article-originals-d",
+      "sha256": "d3b5fb106399df18e60e19bd3d60cae140c5e41decfaf04673d39c531141ffaf",
+      "bytes": 425877
+    }
+  },
+  "/assets/images/hm-tt-5c1d88688388/japanese-sangaku-04.png": {
+    "sha256": "e2df821c5ec759b0742c58253ebed8081bae9387201236412b3373f494a6d182",
+    "width": 1124,
+    "height": 797,
+    "bytes": 963809,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5c1d88688388/japanese-sangaku-04.png-960.webp",
+        "width": 960,
+        "height": 681,
+        "sha256": "d5238cdb469f7bf360feee9819e5cc8e54c2283f363c599b97b971ac4451a280",
+        "bytes": 310222
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-5c1d88688388-japanese-sangaku-04-e2df821c5ec759b0742c58253ebed8081bae9387201236412b3373f494a6d182.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630527411",
+      "asset_id": 630527411,
+      "release_tag": "article-originals-e",
+      "sha256": "e2df821c5ec759b0742c58253ebed8081bae9387201236412b3373f494a6d182",
+      "bytes": 963809
+    }
+  },
+  "/assets/images/hm-tt-5c1d88688388/japanese-sangaku-05.png": {
+    "sha256": "af930a79431f05bfb1084348534791cb0a9c5d66608c1c0eae6e9f50792c7d15",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3073003,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5c1d88688388/japanese-sangaku-05.png-960.webp",
+        "width": 960,
+        "height": 640,
+        "sha256": "4f22522da8eb07797ff3da035148c0ed6feaadcdd8e5804fee5794dd1e4f5cb1",
+        "bytes": 687504
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-5c1d88688388-japanese-sangaku-05-af930a79431f05bfb1084348534791cb0a9c5d66608c1c0eae6e9f50792c7d15.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630527715",
+      "asset_id": 630527715,
+      "release_tag": "article-originals-a",
+      "sha256": "af930a79431f05bfb1084348534791cb0a9c5d66608c1c0eae6e9f50792c7d15",
+      "bytes": 3073003
+    }
+  },
+  "/assets/images/hm-tt-5c1d88688388/japanese-sangaku-06.png": {
+    "sha256": "9916d85e1e85f975cdcb0b1525ddae5cb71f66ec4e6a6ece2f01359fe9f59f35",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3499738,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5c1d88688388/japanese-sangaku-06.png-960.webp",
+        "width": 960,
+        "height": 640,
+        "sha256": "f6d97efb7957fef5082d58307fcafaacc339079b7a9075b0f1612f8e20652784",
+        "bytes": 751302
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-5c1d88688388-japanese-sangaku-06-9916d85e1e85f975cdcb0b1525ddae5cb71f66ec4e6a6ece2f01359fe9f59f35.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630527931",
+      "asset_id": 630527931,
+      "release_tag": "article-originals-9",
+      "sha256": "9916d85e1e85f975cdcb0b1525ddae5cb71f66ec4e6a6ece2f01359fe9f59f35",
+      "bytes": 3499738
+    }
+  },
+  "/assets/images/hm-tt-5c1d88688388/japanese-sangaku-07.jpeg": {
+    "sha256": "a4b2a12cc314aad7163f9d2814747fa443fcdfb500658899f56539c6d2e1b9c8",
+    "width": 1200,
+    "height": 438,
+    "bytes": 162661,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5c1d88688388/japanese-sangaku-07.jpeg-960.webp",
+        "width": 960,
+        "height": 350,
+        "sha256": "b8e81c2d552382b3854c163ad2aab6d3b78dbb1e0b43e21890e2ed1eae9e37eb",
+        "bytes": 454788
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-5c1d88688388-japanese-sangaku-07-a4b2a12cc314aad7163f9d2814747fa443fcdfb500658899f56539c6d2e1b9c8.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630528133",
+      "asset_id": 630528133,
+      "release_tag": "article-originals-a",
+      "sha256": "a4b2a12cc314aad7163f9d2814747fa443fcdfb500658899f56539c6d2e1b9c8",
+      "bytes": 162661
+    }
+  },
+  "/assets/images/hm-tt-5c1d88688388/japanese-sangaku-08.jpeg": {
+    "sha256": "543c68c384f01c481d4ff41a88c541e29bed7a35b2f0e3ea8a9db19fed57178c",
+    "width": 3524,
+    "height": 2295,
+    "bytes": 2219745,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5c1d88688388/japanese-sangaku-08.jpeg-960.webp",
+        "width": 960,
+        "height": 625,
+        "sha256": "8938a7f0d3d9b1968b1be94afbf3ec0b0357e41adc44f02daa5ad4241dee5a6a",
+        "bytes": 712480
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-5c1d88688388-japanese-sangaku-08-543c68c384f01c481d4ff41a88c541e29bed7a35b2f0e3ea8a9db19fed57178c.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630528317",
+      "asset_id": 630528317,
+      "release_tag": "article-originals-5",
+      "sha256": "543c68c384f01c481d4ff41a88c541e29bed7a35b2f0e3ea8a9db19fed57178c",
+      "bytes": 2219745
+    }
+  }
+}
