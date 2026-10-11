@@ -1,0 +1,227 @@
+{
+  "/assets/images/hm-tt-514184820ada/kakoj-on-nikolaj-ivanovich-l-01.png": {
+    "sha256": "545d286a4367bbe339bf4a672c9e1dbb0458b51198a66a82add58a2c554841b3",
+    "width": 1812,
+    "height": 1812,
+    "bytes": 6704078,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-514184820ada/kakoj-on-nikolaj-ivanovich-l-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "bf29a7ff1b852881185803aaf919d6913d34f0850cef75842bf080ea3c2be88d",
+        "bytes": 1191800
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-514184820ada-kakoj-on-nikolaj-ivanovich-l-01-545d286a4367bbe339bf4a672c9e1dbb0458b51198a66a82add58a2c554841b3.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630498337",
+      "asset_id": 630498337,
+      "release_tag": "article-originals-5",
+      "sha256": "545d286a4367bbe339bf4a672c9e1dbb0458b51198a66a82add58a2c554841b3",
+      "bytes": 6704078
+    }
+  },
+  "/assets/images/hm-tt-514184820ada/kakoj-on-nikolaj-ivanovich-l-02.png": {
+    "sha256": "551803739cbdbd39f376a20f264f3e33536d99d07982b49df32b4497aebc7d04",
+    "width": 300,
+    "height": 470,
+    "bytes": 165863,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-514184820ada/kakoj-on-nikolaj-ivanovich-l-02.png-300.webp",
+        "width": 300,
+        "height": 470,
+        "sha256": "1763d07902174c4d6f1b893115c16c3135e263a0876fc7cb28cf066691bfc564",
+        "bytes": 71824
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-514184820ada-kakoj-on-nikolaj-ivanovich-l-02-551803739cbdbd39f376a20f264f3e33536d99d07982b49df32b4497aebc7d04.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630556171",
+      "asset_id": 630556171,
+      "release_tag": "article-originals-5",
+      "sha256": "551803739cbdbd39f376a20f264f3e33536d99d07982b49df32b4497aebc7d04",
+      "bytes": 165863
+    }
+  },
+  "/assets/images/hm-tt-514184820ada/kakoj-on-nikolaj-ivanovich-l-03.png": {
+    "sha256": "54a92d5fce18d1908cf5e345457875df9088b2fdd08cfdb53e13a6e104b08c1c",
+    "width": 394,
+    "height": 394,
+    "bytes": 392447,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-514184820ada/kakoj-on-nikolaj-ivanovich-l-03.png-394.webp",
+        "width": 394,
+        "height": 394,
+        "sha256": "8a57fe40465c41ea58a9862fe44f221eba5c3eebf8e386dee670e0b534e7d8a9",
+        "bytes": 278714
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-514184820ada-kakoj-on-nikolaj-ivanovich-l-03-54a92d5fce18d1908cf5e345457875df9088b2fdd08cfdb53e13a6e104b08c1c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630556312",
+      "asset_id": 630556312,
+      "release_tag": "article-originals-5",
+      "sha256": "54a92d5fce18d1908cf5e345457875df9088b2fdd08cfdb53e13a6e104b08c1c",
+      "bytes": 392447
+    }
+  },
+  "/assets/images/hm-tt-514184820ada/kakoj-on-nikolaj-ivanovich-l-04.png": {
+    "sha256": "54c2ba1c97a009931e3bb5a7281756c7660a33e8c25b8bcd5596a7eb87f9514b",
+    "width": 600,
+    "height": 800,
+    "bytes": 906710,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-514184820ada/kakoj-on-nikolaj-ivanovich-l-04-png-reading-600-3bca5c77b33a.webp",
+        "width": 600,
+        "height": 800,
+        "sha256": "3bca5c77b33a0b7ea7197aeb055dfad15b7127a1b125f12a1223c207a75dd418",
+        "bytes": 397572
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-514184820ada-kakoj-on-nikolaj-ivanovich-l-04-54c2ba1c97a009931e3bb5a7281756c7660a33e8c25b8bcd5596a7eb87f9514b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630556491",
+      "asset_id": 630556491,
+      "release_tag": "article-originals-5",
+      "sha256": "54c2ba1c97a009931e3bb5a7281756c7660a33e8c25b8bcd5596a7eb87f9514b",
+      "bytes": 906710
+    }
+  },
+  "/assets/images/hm-tt-514184820ada/kakoj-on-nikolaj-ivanovich-l-05.png": {
+    "sha256": "13d4ebb76013dd26e4d0cb70ec05c505f71fb1ffe86148f098c78646c689f639",
+    "width": 758,
+    "height": 928,
+    "bytes": 1284916,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-514184820ada/kakoj-on-nikolaj-ivanovich-l-05.png-758.webp",
+        "width": 758,
+        "height": 928,
+        "sha256": "1e8b284dc492eb4e4fe8bb489d6966b402bfe990acc7c1b0aae78c49005d9bea",
+        "bytes": 525386
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-514184820ada-kakoj-on-nikolaj-ivanovich-l-05-13d4ebb76013dd26e4d0cb70ec05c505f71fb1ffe86148f098c78646c689f639.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630556701",
+      "asset_id": 630556701,
+      "release_tag": "article-originals-1",
+      "sha256": "13d4ebb76013dd26e4d0cb70ec05c505f71fb1ffe86148f098c78646c689f639",
+      "bytes": 1284916
+    }
+  },
+  "/assets/images/hm-tt-514184820ada/kakoj-on-nikolaj-ivanovich-l-06.png": {
+    "sha256": "055c6445399b3db79279b807d0741a6cb63190114da25ce0c2025a3746fce7f0",
+    "width": 1000,
+    "height": 685,
+    "bytes": 1408616,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-514184820ada/kakoj-on-nikolaj-ivanovich-l-06.png-960.webp",
+        "width": 960,
+        "height": 658,
+        "sha256": "6a8c792fffd044300de7025607f0a8d9f2a0fe18fdd840e02f2e49fb203b0df2",
+        "bytes": 676612
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-514184820ada-kakoj-on-nikolaj-ivanovich-l-06-055c6445399b3db79279b807d0741a6cb63190114da25ce0c2025a3746fce7f0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630556883",
+      "asset_id": 630556883,
+      "release_tag": "article-originals-0",
+      "sha256": "055c6445399b3db79279b807d0741a6cb63190114da25ce0c2025a3746fce7f0",
+      "bytes": 1408616
+    }
+  },
+  "/assets/images/hm-tt-514184820ada/kakoj-on-nikolaj-ivanovich-l-07.png": {
+    "sha256": "1328b932551550f55352f4ec88c40e07e2e71a615e30b676af71754140d7e8ad",
+    "width": 1868,
+    "height": 1867,
+    "bytes": 8111777,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-514184820ada/kakoj-on-nikolaj-ivanovich-l-07.png-960.webp",
+        "width": 960,
+        "height": 959,
+        "sha256": "938e0dd06a75a6f130349822ecfc5f14e7dd0d11a9dce0f57211533d74c40eaf",
+        "bytes": 1148700
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-514184820ada-kakoj-on-nikolaj-ivanovich-l-07-1328b932551550f55352f4ec88c40e07e2e71a615e30b676af71754140d7e8ad.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557103",
+      "asset_id": 630557103,
+      "release_tag": "article-originals-1",
+      "sha256": "1328b932551550f55352f4ec88c40e07e2e71a615e30b676af71754140d7e8ad",
+      "bytes": 8111777
+    }
+  },
+  "/assets/images/hm-tt-514184820ada/kakoj-on-nikolaj-ivanovich-l-08.png": {
+    "sha256": "c04442a38993bcb247572b6c67fe4ad4799c919b5de4c54fa96f65b2267953b8",
+    "width": 394,
+    "height": 521,
+    "bytes": 259296,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-514184820ada/kakoj-on-nikolaj-ivanovich-l-08.png-394.webp",
+        "width": 394,
+        "height": 521,
+        "sha256": "b11549d60e1462e7a77b15184bd95a2b6b346d06c6b27eb82c41f6451cf2d9d5",
+        "bytes": 138340
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-514184820ada-kakoj-on-nikolaj-ivanovich-l-08-c04442a38993bcb247572b6c67fe4ad4799c919b5de4c54fa96f65b2267953b8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557249",
+      "asset_id": 630557249,
+      "release_tag": "article-originals-c",
+      "sha256": "c04442a38993bcb247572b6c67fe4ad4799c919b5de4c54fa96f65b2267953b8",
+      "bytes": 259296
+    }
+  },
+  "/assets/images/hm-tt-514184820ada/kakoj-on-nikolaj-ivanovich-l-09.png": {
+    "sha256": "aef6a0719fe9a9e7b81f0a494b9026d8c8cb036373667dfc2fb565a6cd7cd9ac",
+    "width": 1662,
+    "height": 2160,
+    "bytes": 4819685,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-514184820ada/kakoj-on-nikolaj-ivanovich-l-09.png-960.webp",
+        "width": 960,
+        "height": 1248,
+        "sha256": "07152e3ca1c136ddd7d903857edc630710d8f2000d01e4173a70e306c5fed154",
+        "bytes": 972632
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-514184820ada-kakoj-on-nikolaj-ivanovich-l-09-aef6a0719fe9a9e7b81f0a494b9026d8c8cb036373667dfc2fb565a6cd7cd9ac.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557370",
+      "asset_id": 630557370,
+      "release_tag": "article-originals-a",
+      "sha256": "aef6a0719fe9a9e7b81f0a494b9026d8c8cb036373667dfc2fb565a6cd7cd9ac",
+      "bytes": 4819685
+    }
+  }
+}
