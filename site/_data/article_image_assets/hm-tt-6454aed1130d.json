@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-6454aed1130d/kipregel-01.jpeg": {
+    "sha256": "9245758871631e3a39e409d6ea39dd4d53f6e42fff4eafa494d25d0040d731a4",
+    "width": 1573,
+    "height": 1014,
+    "bytes": 155751,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6454aed1130d/kipregel-01.jpeg-960.webp",
+        "width": 960,
+        "height": 619,
+        "sha256": "a6637e3523edb5f2f22bbb24504f13fec6cb72e9055f42871b3cb35c0ef42aca",
+        "bytes": 230178
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-6454aed1130d-kipregel-01-9245758871631e3a39e409d6ea39dd4d53f6e42fff4eafa494d25d0040d731a4.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630496273",
+      "asset_id": 630496273,
+      "release_tag": "article-originals-9",
+      "sha256": "9245758871631e3a39e409d6ea39dd4d53f6e42fff4eafa494d25d0040d731a4",
+      "bytes": 155751
+    }
+  },
+  "/assets/images/hm-tt-6454aed1130d/kipregel-02.jpeg": {
+    "sha256": "f1042fcabf28289316de6e5eab1e7f185682684e9c5a9095c85eb181faad1e1f",
+    "width": 1535,
+    "height": 1138,
+    "bytes": 166179,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6454aed1130d/kipregel-02.jpeg-960.webp",
+        "width": 960,
+        "height": 712,
+        "sha256": "e0abb4647a45fd922af6c7b3e4c2c64235eac81c9f31d9d961b292298fb9867e",
+        "bytes": 259304
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-6454aed1130d-kipregel-02-f1042fcabf28289316de6e5eab1e7f185682684e9c5a9095c85eb181faad1e1f.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630547950",
+      "asset_id": 630547950,
+      "release_tag": "article-originals-f",
+      "sha256": "f1042fcabf28289316de6e5eab1e7f185682684e9c5a9095c85eb181faad1e1f",
+      "bytes": 166179
+    }
+  },
+  "/assets/images/hm-tt-6454aed1130d/kipregel-03.jpeg": {
+    "sha256": "788e5de5deb4e7b320987ae182c3dc382681128455416bb2cafcf7f33c6b8a75",
+    "width": 1299,
+    "height": 976,
+    "bytes": 135315,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6454aed1130d/kipregel-03.jpeg-960.webp",
+        "width": 960,
+        "height": 721,
+        "sha256": "0ab0d44c6ab26643fe7d31f2bf5e78306a14e7a20b24ffdad40ea810a803bfef",
+        "bytes": 280484
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-6454aed1130d-kipregel-03-788e5de5deb4e7b320987ae182c3dc382681128455416bb2cafcf7f33c6b8a75.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548112",
+      "asset_id": 630548112,
+      "release_tag": "article-originals-7",
+      "sha256": "788e5de5deb4e7b320987ae182c3dc382681128455416bb2cafcf7f33c6b8a75",
+      "bytes": 135315
+    }
+  },
+  "/assets/images/hm-tt-6454aed1130d/kipregel-04.jpeg": {
+    "sha256": "0fc79182b5dc363aae38eef680eae920fad438ed0283df5bec76d74c24a8e6f9",
+    "width": 1600,
+    "height": 1064,
+    "bytes": 210159,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6454aed1130d/kipregel-04.jpeg-960.webp",
+        "width": 960,
+        "height": 638,
+        "sha256": "f7308eabc2b1fc3b6263079a7f531589ea69ce6cfaca9645333cfdcee997dce0",
+        "bytes": 400820
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-6454aed1130d-kipregel-04-0fc79182b5dc363aae38eef680eae920fad438ed0283df5bec76d74c24a8e6f9.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548280",
+      "asset_id": 630548280,
+      "release_tag": "article-originals-0",
+      "sha256": "0fc79182b5dc363aae38eef680eae920fad438ed0283df5bec76d74c24a8e6f9",
+      "bytes": 210159
+    }
+  },
+  "/assets/images/hm-tt-6454aed1130d/kipregel-05.jpeg": {
+    "sha256": "3b5d337a0cc8c47416e1dc98e5f933c5d5ff4e42e7c3d0dcc80c08cc27ecf74f",
+    "width": 1474,
+    "height": 1071,
+    "bytes": 217057,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6454aed1130d/kipregel-05.jpeg-960.webp",
+        "width": 960,
+        "height": 698,
+        "sha256": "704349120a06f3b59ba9557ecf25b2ed54f6a2ee21fc7ce6f7c457896fd4ef44",
+        "bytes": 350614
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-6454aed1130d-kipregel-05-3b5d337a0cc8c47416e1dc98e5f933c5d5ff4e42e7c3d0dcc80c08cc27ecf74f.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548435",
+      "asset_id": 630548435,
+      "release_tag": "article-originals-3",
+      "sha256": "3b5d337a0cc8c47416e1dc98e5f933c5d5ff4e42e7c3d0dcc80c08cc27ecf74f",
+      "bytes": 217057
+    }
+  }
+}
