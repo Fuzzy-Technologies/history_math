@@ -1,0 +1,102 @@
+{
+  "/assets/images/hm-tt-818e84ae24b9/uimz-na-temu-parkety-06-30-01.png": {
+    "sha256": "0a36a220f05b15d6a61de632ac4c634575951cec5d7b38d1bac81ce072b52f10",
+    "width": 1366,
+    "height": 767,
+    "bytes": 3175212,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-818e84ae24b9/uimz-na-temu-parkety-06-30-01.png-960.webp",
+        "width": 960,
+        "height": 539,
+        "sha256": "3a516c238732bccda5860eb072f04f6fe21078adaf03d803fdfcd5c16a4977f1",
+        "bytes": 953952
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-818e84ae24b9-uimz-na-temu-parkety-06-30-01-0a36a220f05b15d6a61de632ac4c634575951cec5d7b38d1bac81ce072b52f10.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630496316",
+      "asset_id": 630496316,
+      "release_tag": "article-originals-0",
+      "sha256": "0a36a220f05b15d6a61de632ac4c634575951cec5d7b38d1bac81ce072b52f10",
+      "bytes": 3175212
+    }
+  },
+  "/assets/images/hm-tt-818e84ae24b9/uimz-na-temu-parkety-06-30-02.jpg": {
+    "sha256": "30bb084486cf14f2773bb34549a8b42f4a16b6a94ced0c58268435145ca09149",
+    "width": 1536,
+    "height": 2048,
+    "bytes": 634046,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-818e84ae24b9/uimz-na-temu-parkety-06-30-02.jpg-960.webp",
+        "width": 960,
+        "height": 1280,
+        "sha256": "277636559fa68bdde8d409870366d76b62912b2fc880981124e68f62b4dfd98c",
+        "bytes": 610606
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-818e84ae24b9-uimz-na-temu-parkety-06-30-02-30bb084486cf14f2773bb34549a8b42f4a16b6a94ced0c58268435145ca09149.jpg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549912",
+      "asset_id": 630549912,
+      "release_tag": "article-originals-3",
+      "sha256": "30bb084486cf14f2773bb34549a8b42f4a16b6a94ced0c58268435145ca09149",
+      "bytes": 634046
+    }
+  },
+  "/assets/images/hm-tt-818e84ae24b9/uimz-na-temu-parkety-06-30-03.png": {
+    "sha256": "56c135ed166c21c94ca395c092ee5b2015f1020c3299b6780d3cdaa1cd67e11c",
+    "width": 1020,
+    "height": 350,
+    "bytes": 15976,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-818e84ae24b9/uimz-na-temu-parkety-06-30-03.png-960.webp",
+        "width": 960,
+        "height": 329,
+        "sha256": "3077d40afcbaa4aafe0c9ef74f82ba7dd0dc1cf7bc325703646d4bdc11363cca",
+        "bytes": 78878
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-818e84ae24b9-uimz-na-temu-parkety-06-30-03-56c135ed166c21c94ca395c092ee5b2015f1020c3299b6780d3cdaa1cd67e11c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630550034",
+      "asset_id": 630550034,
+      "release_tag": "article-originals-5",
+      "sha256": "56c135ed166c21c94ca395c092ee5b2015f1020c3299b6780d3cdaa1cd67e11c",
+      "bytes": 15976
+    }
+  },
+  "/assets/images/hm-tt-818e84ae24b9/uimz-na-temu-parkety-06-30-04.png": {
+    "sha256": "b2c0019c2f03b691fc6e7d53fece5d50c3657791f2e8e1159e88ac7a00939153",
+    "width": 840,
+    "height": 420,
+    "bytes": 106304,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-818e84ae24b9/uimz-na-temu-parkety-06-30-04.png-840.webp",
+        "width": 840,
+        "height": 420,
+        "sha256": "a613bd0794e8ce5d4e44a57f1cfcaf0ed1d046cf8e5f3e0c4ccceeb917fe8dfc",
+        "bytes": 67554
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-818e84ae24b9-uimz-na-temu-parkety-06-30-04-b2c0019c2f03b691fc6e7d53fece5d50c3657791f2e8e1159e88ac7a00939153.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630550194",
+      "asset_id": 630550194,
+      "release_tag": "article-originals-b",
+      "sha256": "b2c0019c2f03b691fc6e7d53fece5d50c3657791f2e8e1159e88ac7a00939153",
+      "bytes": 106304
+    }
+  }
+}
