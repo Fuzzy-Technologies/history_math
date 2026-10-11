@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-fe2f642f1e5a/priznak-delimosti-na-19-ehkz-01.png": {
+    "sha256": "ad3ba0a0216ae78c5189b72b830328fbea12d0b2a42b250659995e2bb1980f83",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2203379,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-fe2f642f1e5a/priznak-delimosti-na-19-ehkz-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "7297cee993a0e154124f99c8c20e294e0c462a9a0689d5658ce1561205fa2a18",
+        "bytes": 892970
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-fe2f642f1e5a-priznak-delimosti-na-19-ehkz-01-ad3ba0a0216ae78c5189b72b830328fbea12d0b2a42b250659995e2bb1980f83.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630500691",
+      "asset_id": 630500691,
+      "release_tag": "article-originals-a",
+      "sha256": "ad3ba0a0216ae78c5189b72b830328fbea12d0b2a42b250659995e2bb1980f83",
+      "bytes": 2203379
+    }
+  },
+  "/assets/images/hm-tt-fe2f642f1e5a/priznak-delimosti-na-19-ehkz-02.png": {
+    "sha256": "c8c510834ce10c755c240f343ab3d725bd8555cac80cafad516c96cb360c28c6",
+    "width": 2000,
+    "height": 3008,
+    "bytes": 15786637,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-fe2f642f1e5a/priznak-delimosti-na-19-ehkz-02.png-960.webp",
+        "width": 960,
+        "height": 1444,
+        "sha256": "8272df14cb5bd00b3e9df5514b8685a07695e2c801e6732f078aff9c02319ae8",
+        "bytes": 1869170
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-fe2f642f1e5a-priznak-delimosti-na-19-ehkz-02-c8c510834ce10c755c240f343ab3d725bd8555cac80cafad516c96cb360c28c6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542576",
+      "asset_id": 630542576,
+      "release_tag": "article-originals-c",
+      "sha256": "c8c510834ce10c755c240f343ab3d725bd8555cac80cafad516c96cb360c28c6",
+      "bytes": 15786637
+    }
+  },
+  "/assets/images/hm-tt-fe2f642f1e5a/priznak-delimosti-na-19-ehkz-03.png": {
+    "sha256": "379d2f8c7d8db40c8f54356a651ecec51878c8858019174e7b8ce1c3785d2f4b",
+    "width": 800,
+    "height": 1022,
+    "bytes": 1271545,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-fe2f642f1e5a/priznak-delimosti-na-19-ehkz-03.png-800.webp",
+        "width": 800,
+        "height": 1022,
+        "sha256": "3b67ec5a347bde20fac6a9dd289be7b409ad0da27ddc016b656f58090cb3ca2f",
+        "bytes": 547464
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-fe2f642f1e5a-priznak-delimosti-na-19-ehkz-03-379d2f8c7d8db40c8f54356a651ecec51878c8858019174e7b8ce1c3785d2f4b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542717",
+      "asset_id": 630542717,
+      "release_tag": "article-originals-3",
+      "sha256": "379d2f8c7d8db40c8f54356a651ecec51878c8858019174e7b8ce1c3785d2f4b",
+      "bytes": 1271545
+    }
+  }
+}
