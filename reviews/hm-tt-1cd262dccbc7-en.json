@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-1cd262dccbc7-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "leibniz-terminology-priority",
+      "question": "Can the editor verify the terminology-priority claims, particularly “algorithm,” and the assertion that Leibniz was the first to break the Latin-only scholarly tradition? The original assertions are preserved.",
+      "blocking": false,
+      "state": "open"
+    },
+    {
+      "id": "leibniz-calculator-capabilities",
+      "question": "Does the account distinguish operations directly performed by Leibniz's calculator from powers and roots obtained by procedures using it? The body names powers and roots; the caption names only the four arithmetic operations.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-10-18",
+      "url": "https://teletype.in/@history_math/Universalnyj-genij-Lejbnic-10-18"
+    }
+  }
+}
