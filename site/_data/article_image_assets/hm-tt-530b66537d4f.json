@@ -1,0 +1,27 @@
+{
+  "/assets/images/hm-tt-530b66537d4f/kak-vychislit-den-nedeli-po-01.png": {
+    "sha256": "0f2de62cc69eefb5fd07ee65d1439c3e94833192eff3c5abd04f4c9e930d1304",
+    "width": 583,
+    "height": 250,
+    "bytes": 81551,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-530b66537d4f/kak-vychislit-den-nedeli-po-01.png-583.webp",
+        "width": 583,
+        "height": 250,
+        "sha256": "3ef810fd8deb68d2dbb712158e5502ce76e34faf963113202890efd3469ad97c",
+        "bytes": 57202
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-530b66537d4f-kak-vychislit-den-nedeli-po-01-0f2de62cc69eefb5fd07ee65d1439c3e94833192eff3c5abd04f4c9e930d1304.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630498033",
+      "asset_id": 630498033,
+      "release_tag": "article-originals-0",
+      "sha256": "0f2de62cc69eefb5fd07ee65d1439c3e94833192eff3c5abd04f4c9e930d1304",
+      "bytes": 81551
+    }
+  }
+}
