@@ -114,6 +114,26 @@ test('required checks never pass when absent, skipped or unavailable', () => {
   assert.equal(overall({checks: {source: 'pass', build: 'pass', output: 'pass', browser: 'pass'}, findings: [{severity: 'editor'}]}), 'pass');
 });
 
+test('source reports pass only their declared source contract and explain deferred publication checks', () => {
+  const report = {profile: 'source', language: 'en', commit: 'sha', checks: {source: 'pass'}, findings: []};
+  assert.equal(overall(report), 'pass');
+  for (const checks of [{}, {source: 'not_run'}, {source: 'fail'}]) {
+    assert.equal(overall({...report, checks}), 'incomplete');
+  }
+  for (const profile of ['unknown', '__proto__', 'constructor']) assert.equal(overall({...report, profile}), 'incomplete');
+  assert.equal(overall({...report, findings: [{severity: 'error'}]}), 'fail');
+  const en = humanReport(report);
+  assert.match(en, /Source checks passed; editorial review pending/);
+  assert.match(en, /source contracts only/);
+  assert.match(en, /after an owner-approved merge to master/);
+  assert.doesNotMatch(en, /Jekyll build: passed|Output: passed|Browser: passed/);
+  assert.match(en, /test-results\/article-report.json/);
+  const ru = humanReport({...report, language: 'ru'});
+  assert.match(ru, /Проверки исходных файлов пройдены/);
+  assert.match(ru, /только исходные файлы/);
+  assert.match(ru, /ожидается редакторское ревью/);
+});
+
 test('own diagnostic actions use local dictionaries while codes and tool output stay stable', () => {
   const report = {language: 'ru', commit: 'sha', checks: {source: 'fail'}, findings: [{code: 'HM_METADATA', severity: 'error', detail: 'author must display the authors array'}, {code: 'HM_REQUIRED', severity: 'warning', detail: 'browser'}]};
   assert.match(humanReport(report), /Поле author должно отображать список authors/);
