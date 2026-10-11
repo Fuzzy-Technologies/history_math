@@ -1,0 +1,327 @@
+{
+  "/assets/images/hm-tt-d014330df145/vklad-matematiki-i-matematik-01.png": {
+    "sha256": "0eed8e02807e3bbb333da3853f059948388d74b98ad49ac9259ff9b9ed8af5e4",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2834077,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d014330df145/vklad-matematiki-i-matematik-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "c0a308a93495ff4d432a0fafb28e06d1946181fedef946f2797bff60642cc6d3",
+        "bytes": 1039348
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-d014330df145-vklad-matematiki-i-matematik-01-0eed8e02807e3bbb333da3853f059948388d74b98ad49ac9259ff9b9ed8af5e4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630496339",
+      "asset_id": 630496339,
+      "release_tag": "article-originals-0",
+      "sha256": "0eed8e02807e3bbb333da3853f059948388d74b98ad49ac9259ff9b9ed8af5e4",
+      "bytes": 2834077
+    }
+  },
+  "/assets/images/hm-tt-d014330df145/vklad-matematiki-i-matematik-02.png": {
+    "sha256": "f9360ff449a9a8de47e89cb38bb099a987f5b20552a3a63b5a2cd26c4c3fa257",
+    "width": 484,
+    "height": 695,
+    "bytes": 344057,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d014330df145/vklad-matematiki-i-matematik-02.png-484.webp",
+        "width": 484,
+        "height": 695,
+        "sha256": "04211eccee449981572f6ce206f8ebe822fd5585296fb3b5202b1a7a6ece657a",
+        "bytes": 145414
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-d014330df145-vklad-matematiki-i-matematik-02-f9360ff449a9a8de47e89cb38bb099a987f5b20552a3a63b5a2cd26c4c3fa257.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542990",
+      "asset_id": 630542990,
+      "release_tag": "article-originals-f",
+      "sha256": "f9360ff449a9a8de47e89cb38bb099a987f5b20552a3a63b5a2cd26c4c3fa257",
+      "bytes": 344057
+    }
+  },
+  "/assets/images/hm-tt-d014330df145/vklad-matematiki-i-matematik-03.png": {
+    "sha256": "c3ef1c4f96510edffa2810e84cdd0d4164a04d74d74d9f13d0a1c4d5bbc3ac96",
+    "width": 855,
+    "height": 1000,
+    "bytes": 668692,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d014330df145/vklad-matematiki-i-matematik-03.png-855.webp",
+        "width": 855,
+        "height": 1000,
+        "sha256": "c024c71d570a71957857bf071bc58f59a0dbe084a7a82f021d76ca2f54ffca5a",
+        "bytes": 312760
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-d014330df145-vklad-matematiki-i-matematik-03-c3ef1c4f96510edffa2810e84cdd0d4164a04d74d74d9f13d0a1c4d5bbc3ac96.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630543142",
+      "asset_id": 630543142,
+      "release_tag": "article-originals-c",
+      "sha256": "c3ef1c4f96510edffa2810e84cdd0d4164a04d74d74d9f13d0a1c4d5bbc3ac96",
+      "bytes": 668692
+    }
+  },
+  "/assets/images/hm-tt-d014330df145/vklad-matematiki-i-matematik-04.png": {
+    "sha256": "ff5bc536f4d0b94d84b542e9a98b9236619198d75a4bc2bcb3d14b60ab842bab",
+    "width": 719,
+    "height": 891,
+    "bytes": 692954,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d014330df145/vklad-matematiki-i-matematik-04.png-719.webp",
+        "width": 719,
+        "height": 891,
+        "sha256": "8fb923cd563729375f12583165aa98703a47d572ca9ee46f872a7d0d8a8d3101",
+        "bytes": 322322
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-d014330df145-vklad-matematiki-i-matematik-04-ff5bc536f4d0b94d84b542e9a98b9236619198d75a4bc2bcb3d14b60ab842bab.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630543295",
+      "asset_id": 630543295,
+      "release_tag": "article-originals-f",
+      "sha256": "ff5bc536f4d0b94d84b542e9a98b9236619198d75a4bc2bcb3d14b60ab842bab",
+      "bytes": 692954
+    }
+  },
+  "/assets/images/hm-tt-d014330df145/vklad-matematiki-i-matematik-05.png": {
+    "sha256": "7e55855cd9710236d95eef48a3c1455a03ab63528b048844b8680d45bb9cf4d8",
+    "width": 604,
+    "height": 296,
+    "bytes": 89046,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d014330df145/vklad-matematiki-i-matematik-05.png-604.webp",
+        "width": 604,
+        "height": 296,
+        "sha256": "0de502b987029ac51d3d35891424d93572e8477801a6a96b3c5b571911faa52e",
+        "bytes": 66640
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-d014330df145-vklad-matematiki-i-matematik-05-7e55855cd9710236d95eef48a3c1455a03ab63528b048844b8680d45bb9cf4d8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630543443",
+      "asset_id": 630543443,
+      "release_tag": "article-originals-7",
+      "sha256": "7e55855cd9710236d95eef48a3c1455a03ab63528b048844b8680d45bb9cf4d8",
+      "bytes": 89046
+    }
+  },
+  "/assets/images/hm-tt-d014330df145/vklad-matematiki-i-matematik-06.png": {
+    "sha256": "fdd8530d762b53bf83d22d21764bb2c3b8d5b0b53c72999854af47446f2f0fe6",
+    "width": 1000,
+    "height": 1206,
+    "bytes": 829429,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d014330df145/vklad-matematiki-i-matematik-06-png-reading-960-a83f591852ae.webp",
+        "width": 960,
+        "height": 1158,
+        "sha256": "a83f591852aeb54ff0ff993d47bf3d4d6221b5571129ddca8ca060141c018e4d",
+        "bytes": 305500
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-d014330df145-vklad-matematiki-i-matematik-06-fdd8530d762b53bf83d22d21764bb2c3b8d5b0b53c72999854af47446f2f0fe6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630543622",
+      "asset_id": 630543622,
+      "release_tag": "article-originals-f",
+      "sha256": "fdd8530d762b53bf83d22d21764bb2c3b8d5b0b53c72999854af47446f2f0fe6",
+      "bytes": 829429
+    }
+  },
+  "/assets/images/hm-tt-d014330df145/vklad-matematiki-i-matematik-07.png": {
+    "sha256": "d501768bc6a8635061ae0b99dc34a8b97bb65520e5d63cdc719235c055c474d6",
+    "width": 206,
+    "height": 320,
+    "bytes": 131875,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d014330df145/vklad-matematiki-i-matematik-07.png-206.webp",
+        "width": 206,
+        "height": 320,
+        "sha256": "ef3885d7305cf711321cdc5e3010656b75fe79a1522874a18f3c5c47d1273638",
+        "bytes": 47284
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-d014330df145-vklad-matematiki-i-matematik-07-d501768bc6a8635061ae0b99dc34a8b97bb65520e5d63cdc719235c055c474d6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630543832",
+      "asset_id": 630543832,
+      "release_tag": "article-originals-d",
+      "sha256": "d501768bc6a8635061ae0b99dc34a8b97bb65520e5d63cdc719235c055c474d6",
+      "bytes": 131875
+    }
+  },
+  "/assets/images/hm-tt-d014330df145/vklad-matematiki-i-matematik-08.png": {
+    "sha256": "939f3d98b0656a104d7d854148fce2973a77b29a1af2b730a4a36edf0f95986d",
+    "width": 433,
+    "height": 585,
+    "bytes": 252490,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d014330df145/vklad-matematiki-i-matematik-08.png-433.webp",
+        "width": 433,
+        "height": 585,
+        "sha256": "c0c023639a0407bfdf976bb907c086109ab2558751be75334856cd3840134046",
+        "bytes": 117472
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-d014330df145-vklad-matematiki-i-matematik-08-939f3d98b0656a104d7d854148fce2973a77b29a1af2b730a4a36edf0f95986d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630543985",
+      "asset_id": 630543985,
+      "release_tag": "article-originals-9",
+      "sha256": "939f3d98b0656a104d7d854148fce2973a77b29a1af2b730a4a36edf0f95986d",
+      "bytes": 252490
+    }
+  },
+  "/assets/images/hm-tt-d014330df145/vklad-matematiki-i-matematik-09.png": {
+    "sha256": "7d6d904003b1e49df9bcc474ef490eb6cc4dbc1d5030c4b369b6c96df608fe83",
+    "width": 286,
+    "height": 400,
+    "bytes": 112063,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d014330df145/vklad-matematiki-i-matematik-09.png-286.webp",
+        "width": 286,
+        "height": 400,
+        "sha256": "36f6f92491b6b138d82bba544e2bb8d487ede74b550f08e25129f21f6812ae58",
+        "bytes": 46876
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-d014330df145-vklad-matematiki-i-matematik-09-7d6d904003b1e49df9bcc474ef490eb6cc4dbc1d5030c4b369b6c96df608fe83.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544128",
+      "asset_id": 630544128,
+      "release_tag": "article-originals-7",
+      "sha256": "7d6d904003b1e49df9bcc474ef490eb6cc4dbc1d5030c4b369b6c96df608fe83",
+      "bytes": 112063
+    }
+  },
+  "/assets/images/hm-tt-d014330df145/vklad-matematiki-i-matematik-10.png": {
+    "sha256": "ef0002c4f37a8794ff347e09035a6b88c014380911360f914d71e3c227f69033",
+    "width": 520,
+    "height": 670,
+    "bytes": 408467,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d014330df145/vklad-matematiki-i-matematik-10.png-520.webp",
+        "width": 520,
+        "height": 670,
+        "sha256": "40d8be5d0babfdcc98012026c1ba7719b40c2b07ae296f8e28bd1118ffb5d224",
+        "bytes": 175540
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-d014330df145-vklad-matematiki-i-matematik-10-ef0002c4f37a8794ff347e09035a6b88c014380911360f914d71e3c227f69033.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544284",
+      "asset_id": 630544284,
+      "release_tag": "article-originals-e",
+      "sha256": "ef0002c4f37a8794ff347e09035a6b88c014380911360f914d71e3c227f69033",
+      "bytes": 408467
+    }
+  },
+  "/assets/images/hm-tt-d014330df145/vklad-matematiki-i-matematik-11.png": {
+    "sha256": "97b5db4805c34ba74a62df505af673153053218b7eea1e311e907e550805cf96",
+    "width": 314,
+    "height": 498,
+    "bytes": 192846,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d014330df145/vklad-matematiki-i-matematik-11.png-314.webp",
+        "width": 314,
+        "height": 498,
+        "sha256": "805cb2e69a7152c32aeb64f6c1506efa90e0a0dfae2bc0495abbfcdbac176a2e",
+        "bytes": 88906
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-d014330df145-vklad-matematiki-i-matematik-11-97b5db4805c34ba74a62df505af673153053218b7eea1e311e907e550805cf96.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544467",
+      "asset_id": 630544467,
+      "release_tag": "article-originals-9",
+      "sha256": "97b5db4805c34ba74a62df505af673153053218b7eea1e311e907e550805cf96",
+      "bytes": 192846
+    }
+  },
+  "/assets/images/hm-tt-d014330df145/vklad-matematiki-i-matematik-12.png": {
+    "sha256": "df243aa36548529f0af3bc960e87dbbd7725913028df30aca4d12dec35b37bde",
+    "width": 2808,
+    "height": 3743,
+    "bytes": 17681018,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d014330df145/vklad-matematiki-i-matematik-12.png-960.webp",
+        "width": 960,
+        "height": 1280,
+        "sha256": "23dca2a9797154868d60be45aed2565b5ab940f0f1ec23c3187311af8d894cee",
+        "bytes": 1214224
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-d014330df145-vklad-matematiki-i-matematik-12-df243aa36548529f0af3bc960e87dbbd7725913028df30aca4d12dec35b37bde.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544638",
+      "asset_id": 630544638,
+      "release_tag": "article-originals-d",
+      "sha256": "df243aa36548529f0af3bc960e87dbbd7725913028df30aca4d12dec35b37bde",
+      "bytes": 17681018
+    }
+  },
+  "/assets/images/hm-tt-d014330df145/vklad-matematiki-i-matematik-13.png": {
+    "sha256": "1dfac19d84836aad6a68482a324e1717b016c945a8716d906df9e2c6de46959f",
+    "width": 526,
+    "height": 779,
+    "bytes": 437723,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d014330df145/vklad-matematiki-i-matematik-13.png-526.webp",
+        "width": 526,
+        "height": 779,
+        "sha256": "09149b6c94dbe90894f9369b799583684b69328f5d12277fe73854b81040dd03",
+        "bytes": 235496
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-d014330df145-vklad-matematiki-i-matematik-13-1dfac19d84836aad6a68482a324e1717b016c945a8716d906df9e2c6de46959f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544797",
+      "asset_id": 630544797,
+      "release_tag": "article-originals-1",
+      "sha256": "1dfac19d84836aad6a68482a324e1717b016c945a8716d906df9e2c6de46959f",
+      "bytes": 437723
+    }
+  }
+}
