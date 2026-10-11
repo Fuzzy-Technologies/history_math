@@ -1,0 +1,202 @@
+{
+  "/assets/images/hm-tt-9c284faa6607/pushkin-lomonosov-lobachevsk-01.png": {
+    "sha256": "33d11e2485b3daa04f6d936e75951b821ac85b4ca25679d8bb3c615be6ff2d5b",
+    "width": 1820,
+    "height": 2458,
+    "bytes": 2669978,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-9c284faa6607/pushkin-lomonosov-lobachevsk-01.png-960.webp",
+        "width": 960,
+        "height": 1297,
+        "sha256": "1d10198d35a24893e3c2a96a86ba4ba7a40488d1cca0c18aae2ccd24683953e8",
+        "bytes": 389772
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-9c284faa6607-pushkin-lomonosov-lobachevsk-01-33d11e2485b3daa04f6d936e75951b821ac85b4ca25679d8bb3c615be6ff2d5b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560755",
+      "asset_id": 630560755,
+      "release_tag": "article-originals-3",
+      "sha256": "33d11e2485b3daa04f6d936e75951b821ac85b4ca25679d8bb3c615be6ff2d5b",
+      "bytes": 2669978
+    }
+  },
+  "/assets/images/hm-tt-9c284faa6607/pushkin-lomonosov-lobachevsk-02.png": {
+    "sha256": "54c2ba1c97a009931e3bb5a7281756c7660a33e8c25b8bcd5596a7eb87f9514b",
+    "width": 600,
+    "height": 800,
+    "bytes": 906710,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-9c284faa6607/pushkin-lomonosov-lobachevsk-02-png-reading-600-3bca5c77b33a.webp",
+        "width": 600,
+        "height": 800,
+        "sha256": "3bca5c77b33a0b7ea7197aeb055dfad15b7127a1b125f12a1223c207a75dd418",
+        "bytes": 397572
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-9c284faa6607-pushkin-lomonosov-lobachevsk-02-54c2ba1c97a009931e3bb5a7281756c7660a33e8c25b8bcd5596a7eb87f9514b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560906",
+      "asset_id": 630560906,
+      "release_tag": "article-originals-5",
+      "sha256": "54c2ba1c97a009931e3bb5a7281756c7660a33e8c25b8bcd5596a7eb87f9514b",
+      "bytes": 906710
+    }
+  },
+  "/assets/images/hm-tt-9c284faa6607/pushkin-lomonosov-lobachevsk-03.png": {
+    "sha256": "94620ed68bab649cdca4a65e47487e48be23962edf0b5aa37baf0b7d0a0f8684",
+    "width": 2000,
+    "height": 1400,
+    "bytes": 5018417,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-9c284faa6607/pushkin-lomonosov-lobachevsk-03.png-960.webp",
+        "width": 960,
+        "height": 672,
+        "sha256": "e46f82f284cb898bdf7d2fff47a0216f07174fa7b615d1d8d986c7f6614ae787",
+        "bytes": 712328
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-9c284faa6607-pushkin-lomonosov-lobachevsk-03-94620ed68bab649cdca4a65e47487e48be23962edf0b5aa37baf0b7d0a0f8684.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561026",
+      "asset_id": 630561026,
+      "release_tag": "article-originals-9",
+      "sha256": "94620ed68bab649cdca4a65e47487e48be23962edf0b5aa37baf0b7d0a0f8684",
+      "bytes": 5018417
+    }
+  },
+  "/assets/images/hm-tt-9c284faa6607/pushkin-lomonosov-lobachevsk-04.png": {
+    "sha256": "cc5ae884f49664941a02903e7b3b7be3990f17f46e54591f020e69cd64e64600",
+    "width": 1800,
+    "height": 875,
+    "bytes": 1717280,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-9c284faa6607/pushkin-lomonosov-lobachevsk-04.png-960.webp",
+        "width": 960,
+        "height": 467,
+        "sha256": "fed6059a974f12e1815a17c8dd447496f64f8ecb22da89ef064fffa904636c73",
+        "bytes": 285598
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-9c284faa6607-pushkin-lomonosov-lobachevsk-04-cc5ae884f49664941a02903e7b3b7be3990f17f46e54591f020e69cd64e64600.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561187",
+      "asset_id": 630561187,
+      "release_tag": "article-originals-c",
+      "sha256": "cc5ae884f49664941a02903e7b3b7be3990f17f46e54591f020e69cd64e64600",
+      "bytes": 1717280
+    }
+  },
+  "/assets/images/hm-tt-9c284faa6607/pushkin-lomonosov-lobachevsk-05.png": {
+    "sha256": "893d088b78f2ac0333d0a22a654934acdd75df5bd7c2d55a7bba1ff968c4756c",
+    "width": 1137,
+    "height": 802,
+    "bytes": 188287,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-9c284faa6607/pushkin-lomonosov-lobachevsk-05.png-960.webp",
+        "width": 960,
+        "height": 677,
+        "sha256": "5af27b14efe3bdda66442218f97caf290588b6a35afc1719c15edf40f1784a88",
+        "bytes": 188974
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-9c284faa6607-pushkin-lomonosov-lobachevsk-05-893d088b78f2ac0333d0a22a654934acdd75df5bd7c2d55a7bba1ff968c4756c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561374",
+      "asset_id": 630561374,
+      "release_tag": "article-originals-8",
+      "sha256": "893d088b78f2ac0333d0a22a654934acdd75df5bd7c2d55a7bba1ff968c4756c",
+      "bytes": 188287
+    }
+  },
+  "/assets/images/hm-tt-9c284faa6607/pushkin-lomonosov-lobachevsk-06.png": {
+    "sha256": "2e509b5c3567cd1abba2646e6f8eff6bada649f1ec911e3611dc9c5c3f951d6e",
+    "width": 1820,
+    "height": 2783,
+    "bytes": 5348728,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-9c284faa6607/pushkin-lomonosov-lobachevsk-06.png-960.webp",
+        "width": 960,
+        "height": 1468,
+        "sha256": "076385245e3ce649c856ebf03d65b2fd137db80ff79fa46e8ecee1d01825e9e7",
+        "bytes": 838160
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-9c284faa6607-pushkin-lomonosov-lobachevsk-06-2e509b5c3567cd1abba2646e6f8eff6bada649f1ec911e3611dc9c5c3f951d6e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561532",
+      "asset_id": 630561532,
+      "release_tag": "article-originals-2",
+      "sha256": "2e509b5c3567cd1abba2646e6f8eff6bada649f1ec911e3611dc9c5c3f951d6e",
+      "bytes": 5348728
+    }
+  },
+  "/assets/images/hm-tt-9c284faa6607/pushkin-lomonosov-lobachevsk-07.png": {
+    "sha256": "abf5131c0e36b788ce9a7ac9e9e7ce5a1c06b219d65b8e5904922da9752fe06a",
+    "width": 3723,
+    "height": 1706,
+    "bytes": 12098344,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-9c284faa6607/pushkin-lomonosov-lobachevsk-07.png-960.webp",
+        "width": 960,
+        "height": 440,
+        "sha256": "5794ac4c8e0f9abe6a9f06a5e87bf93a7c907b56169a8af3688704d81a221ed7",
+        "bytes": 600312
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-9c284faa6607-pushkin-lomonosov-lobachevsk-07-abf5131c0e36b788ce9a7ac9e9e7ce5a1c06b219d65b8e5904922da9752fe06a.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561664",
+      "asset_id": 630561664,
+      "release_tag": "article-originals-a",
+      "sha256": "abf5131c0e36b788ce9a7ac9e9e7ce5a1c06b219d65b8e5904922da9752fe06a",
+      "bytes": 12098344
+    }
+  },
+  "/assets/images/hm-tt-9c284faa6607/pushkin-lomonosov-lobachevsk-08.png": {
+    "sha256": "8ea15ec3d315a130064f4c787066c335fcac0a4d7e0326f363a0487c72eba9a7",
+    "width": 1820,
+    "height": 2213,
+    "bytes": 1781417,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-9c284faa6607/pushkin-lomonosov-lobachevsk-08.png-960.webp",
+        "width": 960,
+        "height": 1167,
+        "sha256": "6f20f6ed02a2493accfc4292d47dc8b29b1f39e702e74c261e896fb3bea27231",
+        "bytes": 359528
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-9c284faa6607-pushkin-lomonosov-lobachevsk-08-8ea15ec3d315a130064f4c787066c335fcac0a4d7e0326f363a0487c72eba9a7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561798",
+      "asset_id": 630561798,
+      "release_tag": "article-originals-8",
+      "sha256": "8ea15ec3d315a130064f4c787066c335fcac0a4d7e0326f363a0487c72eba9a7",
+      "bytes": 1781417
+    }
+  }
+}
