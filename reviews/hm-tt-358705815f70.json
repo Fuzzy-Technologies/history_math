@@ -1,0 +1,22 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-358705815f70",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-06-12",
+      "url": "https://teletype.in/@history_math/Tremaux-Maze"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged.",
+    "Восстановлены вложенные списки правил по сохранённому HTML Teletype; содержание источника не изменено.",
+    "Formatted the archived book addresses in figure captions as descriptive Source links; original image bytes and bibliographic information retained."
+  ]
+}

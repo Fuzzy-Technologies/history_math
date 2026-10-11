@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-358705815f70-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "exit-versus-full-exploration",
+      "question": "Rule 3 in the archived source equates returning to the start after fully exploring the maze with finding an exit. Please review this distinction before publication; the complete source rules, including all junction instructions, are retained in English.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "tremaux-identity",
+      "question": "Please verify the maze algorithm’s inventor and biography. The source’s “Charles Pierre Trémaux (1818–1895)” and architect/photographer biography may conflate Charles Trémaux with Pierre Trémaux. The supplied name, dates and biography are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "shannon-shortest-path",
+      "question": "Please verify the claim that Shannon’s Theseus ultimately selects the shortest path; systematic maze traversal does not by itself guarantee shortest paths. The source claim is preserved.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-06-12",
+      "url": "https://teletype.in/@history_math/Tremaux-Maze"
+    }
+  },
+  "manual_changes": [
+    "Restored the nested rule lists directly from the archived Teletype HTML in both languages and proofread their English adaptation.",
+    "Formatted the archived book addresses in figure captions as descriptive Source links; original image bytes and bibliographic information retained."
+  ]
+}
