@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-e7d93ddb0cd7-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-anaglyph-initials",
+      "question": "The source uses G. A. Vladimirsky in the caption and bibliography but V. G. Vladimirsky in the prose; it also uses A. P. Kiselev in the prose and P. A. Kiselev in the bibliography, and N. A. Rybkin in the prose. Please verify the authors’ initials and the two variants of the album title. All variants are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "en-anaglyph-greek",
+      "question": "Please verify the Greek form αναγλνφον supplied in the source; it is retained verbatim pending editorial correction.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-10-05",
+      "url": "https://teletype.in/@history_math/Anaglif-10-05"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
