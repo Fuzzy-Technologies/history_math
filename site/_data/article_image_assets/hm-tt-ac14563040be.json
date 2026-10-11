@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-ac14563040be/luzitania-school-01.png": {
+    "sha256": "22a819ba94df2fe197f2887ae1d4f0b817a4feffedfb5bb40942097327ee935d",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 3276341,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ac14563040be/luzitania-school-01.png-960.webp",
+        "width": 960,
+        "height": 1440,
+        "sha256": "f980e0014437a8918b8becbbd011707858b2da41a02878b5a87a4adfd02872b7",
+        "bytes": 1751178
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-ac14563040be-luzitania-school-01-22a819ba94df2fe197f2887ae1d4f0b817a4feffedfb5bb40942097327ee935d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630492671",
+      "asset_id": 630492671,
+      "release_tag": "article-originals-2",
+      "sha256": "22a819ba94df2fe197f2887ae1d4f0b817a4feffedfb5bb40942097327ee935d",
+      "bytes": 3276341
+    }
+  },
+  "/assets/images/hm-tt-ac14563040be/luzitania-school-02.jpeg": {
+    "sha256": "787968f1e4de16d3b8a8bf35016d8f03cc74c31104306b96936e8f07f2e5b223",
+    "width": 385,
+    "height": 338,
+    "bytes": 6828,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ac14563040be/luzitania-school-02-385.jpeg",
+        "width": 385,
+        "height": 338,
+        "bytes": 6828,
+        "sha256": "787968f1e4de16d3b8a8bf35016d8f03cc74c31104306b96936e8f07f2e5b223"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-ac14563040be-luzitania-school-02-787968f1e4de16d3b8a8bf35016d8f03cc74c31104306b96936e8f07f2e5b223.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630530430",
+      "asset_id": 630530430,
+      "release_tag": "article-originals-7",
+      "sha256": "787968f1e4de16d3b8a8bf35016d8f03cc74c31104306b96936e8f07f2e5b223",
+      "bytes": 6828
+    }
+  },
+  "/assets/images/hm-tt-ac14563040be/luzitania-school-03.jpeg": {
+    "sha256": "c77228ed7425f30ad29da7d94cc6c97289a56ee4f95a93aaf95b0d290e3d9544",
+    "width": 3072,
+    "height": 4096,
+    "bytes": 2256172,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ac14563040be/luzitania-school-03.jpeg-960.webp",
+        "width": 960,
+        "height": 1280,
+        "sha256": "225a26dc42f39a959469edd178c6f21af0aa44e47cf858da2c75e000f524886e",
+        "bytes": 1118956
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-ac14563040be-luzitania-school-03-c77228ed7425f30ad29da7d94cc6c97289a56ee4f95a93aaf95b0d290e3d9544.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630530603",
+      "asset_id": 630530603,
+      "release_tag": "article-originals-c",
+      "sha256": "c77228ed7425f30ad29da7d94cc6c97289a56ee4f95a93aaf95b0d290e3d9544",
+      "bytes": 2256172
+    }
+  },
+  "/assets/images/hm-tt-ac14563040be/luzitania-school-04.jpeg": {
+    "sha256": "774711c6351afc8ad7bd590d91ac2b77cd04dad71db89955bfdeb85a9b0e3c2b",
+    "width": 3120,
+    "height": 4160,
+    "bytes": 1956612,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ac14563040be/luzitania-school-04.jpeg-960.webp",
+        "width": 960,
+        "height": 1280,
+        "sha256": "bc8e9a0de2fc489a71ef02a68dcc85a92548244943325dce71830a0e07dd6903",
+        "bytes": 1243106
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-ac14563040be-luzitania-school-04-774711c6351afc8ad7bd590d91ac2b77cd04dad71db89955bfdeb85a9b0e3c2b.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630530851",
+      "asset_id": 630530851,
+      "release_tag": "article-originals-7",
+      "sha256": "774711c6351afc8ad7bd590d91ac2b77cd04dad71db89955bfdeb85a9b0e3c2b",
+      "bytes": 1956612
+    }
+  },
+  "/assets/images/hm-tt-ac14563040be/luzitania-school-05.jpeg": {
+    "sha256": "e46ce7ee34b2eecb527e441d3baad207d3a9a99a6f0c225a97b1cb4861b3d762",
+    "width": 3620,
+    "height": 2484,
+    "bytes": 2195258,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ac14563040be/luzitania-school-05.jpeg-960.webp",
+        "width": 960,
+        "height": 659,
+        "sha256": "2f0ed2954625d736ddf9c17210521f0b876e3e305438ba236de0ca85054ae9e8",
+        "bytes": 743282
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-ac14563040be-luzitania-school-05-e46ce7ee34b2eecb527e441d3baad207d3a9a99a6f0c225a97b1cb4861b3d762.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630531065",
+      "asset_id": 630531065,
+      "release_tag": "article-originals-e",
+      "sha256": "e46ce7ee34b2eecb527e441d3baad207d3a9a99a6f0c225a97b1cb4861b3d762",
+      "bytes": 2195258
+    }
+  }
+}
