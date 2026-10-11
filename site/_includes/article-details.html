@@ -9,7 +9,6 @@
       <dt>{% if ru_details %}Язык{% else %}Language{% endif %}</dt><dd>{% if ru_details %}Русский{% else %}English{% endif %}</dd>
       {% if page.status == 'published' %}<dt>{% if ru_details %}Опубликовано на сайте{% else %}Published on this website{% endif %}</dt><dd><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d.%m.%Y' }}</time></dd>{% endif %}
       {% if page.updated %}<dt>{% if ru_details %}Обновлено{% else %}Updated{% endif %}</dt><dd><time datetime="{{ page.updated }}">{{ page.updated | date: '%d.%m.%Y' }}</time></dd>{% endif %}
-      {% if page.original_publication %}<dt>{% if ru_details %}Прежняя публикация{% else %}Previous publication{% endif %}</dt><dd>{{ page.original_publication.outlet | escape }}{% if page.original_publication.date %} · {{ page.original_publication.date | date: '%d.%m.%Y' }}{% endif %}</dd>{% endif %}
       {% if page.status == 'published' %}<dt>{% if ru_details %}Постоянная ссылка{% else %}Permanent link{% endif %}</dt><dd><a href="{{ page.url | absolute_url }}">{% if ru_details %}Страница статьи{% else %}Article page{% endif %}</a></dd>{% endif %}
     </dl>
     {% if page.status == 'published' %}

@@ -15,7 +15,6 @@ layout: default
     {% include article-details.html %}
     <!-- pdf:notice:start -->
     {% if page.status == 'draft' %}<p class="demo-notice">{% if page.lang == 'ru' %}Копия для редакторского ревью. На сайте не опубликована.{% else %}Editorial review copy. Not published on the site.{% endif %}</p>{% endif %}
-    {% if page.original_publication %}<p class="original-publication">{% if page.lang == 'ru' %}Прежняя публикация{% else %}Previous publication{% endif %}: {{ page.original_publication.outlet | escape }}{% if page.original_publication.date %} · {{ page.original_publication.date | escape }}{% endif %}</p>{% endif %}
     {% if page.status == 'demo' %}<p class="demo-notice">{% if page.lang == 'ru' %}Пробный материал. Не авторская статья Мансура или Тимура.{% else %}A demo article, not authored by Mansur or Timur.{% endif %}</p>{% endif %}
     <p class="print-source"><a href="{{ page.url | absolute_url }}">{% if page.lang == 'ru' %}Статья на сайте журнала{% else %}Read this article on the journal website{% endif %}</a></p>
 
