@@ -1,0 +1,252 @@
+{
+  "/assets/images/hm-tt-7ade6c199c0f/maya-zero-01.jpeg": {
+    "sha256": "22a77a995c27e87860fe9dd2e7c0031905c79de0c12e3f21f6179fb0b0acbfb0",
+    "width": 1563,
+    "height": 3620,
+    "bytes": 2926290,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-7ade6c199c0f/maya-zero-01.jpeg-960.webp",
+        "width": 960,
+        "height": 2223,
+        "sha256": "7155b0d0f88c1b2a0724669a48be1cba7f5443cb61e2b528f9f6aeff213483d1",
+        "bytes": 4143850
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-7ade6c199c0f-maya-zero-01-22a77a995c27e87860fe9dd2e7c0031905c79de0c12e3f21f6179fb0b0acbfb0.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630492223",
+      "asset_id": 630492223,
+      "release_tag": "article-originals-2",
+      "sha256": "22a77a995c27e87860fe9dd2e7c0031905c79de0c12e3f21f6179fb0b0acbfb0",
+      "bytes": 2926290
+    }
+  },
+  "/assets/images/hm-tt-7ade6c199c0f/maya-zero-02.jpeg": {
+    "sha256": "3274e689676e87c13ef84a705f1f46f325b3201302c3c2633699bf389ee1e23f",
+    "width": 725,
+    "height": 725,
+    "bytes": 210670,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-7ade6c199c0f/maya-zero-02-725.jpeg",
+        "width": 725,
+        "height": 725,
+        "bytes": 210670,
+        "sha256": "3274e689676e87c13ef84a705f1f46f325b3201302c3c2633699bf389ee1e23f"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-7ade6c199c0f-maya-zero-02-3274e689676e87c13ef84a705f1f46f325b3201302c3c2633699bf389ee1e23f.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526849",
+      "asset_id": 630526849,
+      "release_tag": "article-originals-3",
+      "sha256": "3274e689676e87c13ef84a705f1f46f325b3201302c3c2633699bf389ee1e23f",
+      "bytes": 210670
+    }
+  },
+  "/assets/images/hm-tt-7ade6c199c0f/maya-zero-03.png": {
+    "sha256": "dfd94cf0e4d60cab0dd89b1c70fea966ceb753947ae842c548bedbe1ce3acd26",
+    "width": 862,
+    "height": 404,
+    "bytes": 23514,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-7ade6c199c0f/maya-zero-03.png-862.webp",
+        "width": 862,
+        "height": 404,
+        "sha256": "7235539718214a5ab1bd0a004bcf6d67cb98e9a0db6c78bdeff5e5ae4118cbc6",
+        "bytes": 11542
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-7ade6c199c0f-maya-zero-03-dfd94cf0e4d60cab0dd89b1c70fea966ceb753947ae842c548bedbe1ce3acd26.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630527054",
+      "asset_id": 630527054,
+      "release_tag": "article-originals-d",
+      "sha256": "dfd94cf0e4d60cab0dd89b1c70fea966ceb753947ae842c548bedbe1ce3acd26",
+      "bytes": 23514
+    }
+  },
+  "/assets/images/hm-tt-7ade6c199c0f/maya-zero-04.png": {
+    "sha256": "71598f22d4c1e0ee40d8052bb1ffc3f4f889ada6800fd90e53136fe05132d79d",
+    "width": 3364,
+    "height": 3364,
+    "bytes": 304157,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-7ade6c199c0f/maya-zero-04.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "8bdfac2cf7ecac991185132bfa7c69f1f4d629f7c5d4a35776a63af98e238566",
+        "bytes": 44038
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-7ade6c199c0f-maya-zero-04-71598f22d4c1e0ee40d8052bb1ffc3f4f889ada6800fd90e53136fe05132d79d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630527304",
+      "asset_id": 630527304,
+      "release_tag": "article-originals-7",
+      "sha256": "71598f22d4c1e0ee40d8052bb1ffc3f4f889ada6800fd90e53136fe05132d79d",
+      "bytes": 304157
+    }
+  },
+  "/assets/images/hm-tt-7ade6c199c0f/maya-zero-05.jpeg": {
+    "sha256": "8c488f78d94578dd33956fb493879dc54cfdddbca81d15f12d2bd88d725bb7d5",
+    "width": 3449,
+    "height": 1215,
+    "bytes": 1715180,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-7ade6c199c0f/maya-zero-05.jpeg-960.webp",
+        "width": 960,
+        "height": 338,
+        "sha256": "59607a206a8b56861d2c74d1ddb4aacf6ed125433af21ea8f17c9e093de6c564",
+        "bytes": 397648
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-7ade6c199c0f-maya-zero-05-8c488f78d94578dd33956fb493879dc54cfdddbca81d15f12d2bd88d725bb7d5.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630527612",
+      "asset_id": 630527612,
+      "release_tag": "article-originals-8",
+      "sha256": "8c488f78d94578dd33956fb493879dc54cfdddbca81d15f12d2bd88d725bb7d5",
+      "bytes": 1715180
+    }
+  },
+  "/assets/images/hm-tt-7ade6c199c0f/maya-zero-06.jpeg": {
+    "sha256": "50b0f9f24ae88b2ce0eb7e924a87ac6641caf88c39cb60e08b843d7a7d3e4c74",
+    "width": 3874,
+    "height": 7649,
+    "bytes": 6034040,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-7ade6c199c0f/maya-zero-06.jpeg-960.webp",
+        "width": 960,
+        "height": 1895,
+        "sha256": "f82f786aaa92be1948cd3aa3e91dd3a25f57b95e4db1bfa0997423915283949c",
+        "bytes": 2865910
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-7ade6c199c0f-maya-zero-06-50b0f9f24ae88b2ce0eb7e924a87ac6641caf88c39cb60e08b843d7a7d3e4c74.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630527810",
+      "asset_id": 630527810,
+      "release_tag": "article-originals-5",
+      "sha256": "50b0f9f24ae88b2ce0eb7e924a87ac6641caf88c39cb60e08b843d7a7d3e4c74",
+      "bytes": 6034040
+    }
+  },
+  "/assets/images/hm-tt-7ade6c199c0f/maya-zero-07.jpeg": {
+    "sha256": "d5461eea81c8f26a0a5810d08a0e59f257a297ee6230ee9b9cfb893d95a5b36a",
+    "width": 1674,
+    "height": 2681,
+    "bytes": 757326,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-7ade6c199c0f/maya-zero-07.jpeg-960.webp",
+        "width": 960,
+        "height": 1537,
+        "sha256": "3fd94459776d4543c014fd3f6a86d5f3486c158b0cdf9ba1c798ef80ce4998ee",
+        "bytes": 974498
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-7ade6c199c0f-maya-zero-07-d5461eea81c8f26a0a5810d08a0e59f257a297ee6230ee9b9cfb893d95a5b36a.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630528035",
+      "asset_id": 630528035,
+      "release_tag": "article-originals-d",
+      "sha256": "d5461eea81c8f26a0a5810d08a0e59f257a297ee6230ee9b9cfb893d95a5b36a",
+      "bytes": 757326
+    }
+  },
+  "/assets/images/hm-tt-7ade6c199c0f/maya-zero-08.jpeg": {
+    "sha256": "25a866f228a52eeb4db88d572e774826e3a1436a658192aa78f46e883f30ef7c",
+    "width": 800,
+    "height": 1041,
+    "bytes": 387357,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-7ade6c199c0f/maya-zero-08-800.jpeg",
+        "width": 800,
+        "height": 1041,
+        "bytes": 387357,
+        "sha256": "25a866f228a52eeb4db88d572e774826e3a1436a658192aa78f46e883f30ef7c"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-7ade6c199c0f-maya-zero-08-25a866f228a52eeb4db88d572e774826e3a1436a658192aa78f46e883f30ef7c.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630528236",
+      "asset_id": 630528236,
+      "release_tag": "article-originals-2",
+      "sha256": "25a866f228a52eeb4db88d572e774826e3a1436a658192aa78f46e883f30ef7c",
+      "bytes": 387357
+    }
+  },
+  "/assets/images/hm-tt-7ade6c199c0f/maya-zero-09.png": {
+    "sha256": "caae4772aef453bb231a50de4848cb886197bc01e8f638f3f1f92a719f924bb0",
+    "width": 1804,
+    "height": 1024,
+    "bytes": 2011041,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-7ade6c199c0f/maya-zero-09.png-960.webp",
+        "width": 960,
+        "height": 545,
+        "sha256": "731321b8cbfad4f41ed3b8d837d807e634e568e9984cf5c2ffdf636455134e24",
+        "bytes": 333308
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-7ade6c199c0f-maya-zero-09-caae4772aef453bb231a50de4848cb886197bc01e8f638f3f1f92a719f924bb0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630528395",
+      "asset_id": 630528395,
+      "release_tag": "article-originals-c",
+      "sha256": "caae4772aef453bb231a50de4848cb886197bc01e8f638f3f1f92a719f924bb0",
+      "bytes": 2011041
+    }
+  },
+  "/assets/images/hm-tt-7ade6c199c0f/maya-zero-10.png": {
+    "sha256": "0b8a93f95e06a327d8a65606568062ee049794f683b8e542558fec103efafec5",
+    "width": 684,
+    "height": 322,
+    "bytes": 548310,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-7ade6c199c0f/maya-zero-10.png-684.webp",
+        "width": 684,
+        "height": 322,
+        "sha256": "7bd423f467fb959a8bdeeca79ae7a1255be9c67a72a6e2077b68f522a6a4e458",
+        "bytes": 227564
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-7ade6c199c0f-maya-zero-10-0b8a93f95e06a327d8a65606568062ee049794f683b8e542558fec103efafec5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630528603",
+      "asset_id": 630528603,
+      "release_tag": "article-originals-0",
+      "sha256": "0b8a93f95e06a327d8a65606568062ee049794f683b8e542558fec103efafec5",
+      "bytes": 548310
+    }
+  }
+}
