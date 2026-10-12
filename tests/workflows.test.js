@@ -229,6 +229,16 @@ test('PR and feature CI run source checks without building sites, browsers or PD
   assert.doesNotMatch(checker, /article-pdf\.mjs/);
 });
 
+test('source and publication jobs install pinned image dependencies before their tests', () => {
+  for (const [file, job] of [['ci.yml', 'verify'], ['deploy.yml', 'build']]) {
+    const workflow = parse(readFileSync(`.github/workflows/${file}`, 'utf8'));
+    const commands = workflow.jobs[job].steps.filter(step => step.run).map(step => step.run).join('\n');
+    const install = commands.indexOf('python3 -m pip install -r tools/requirements-images.txt');
+    const tests = commands.indexOf('npm test');
+    assert.ok(install >= 0 && tests > install, `${file} must install Pillow before image preparation tests`);
+  }
+});
+
 test('only guarded master publication generates PDFs and saves their validated cache', () => {
   const deploy = parse(readFileSync('.github/workflows/deploy.yml', 'utf8'));
   const build = deploy.jobs.build;

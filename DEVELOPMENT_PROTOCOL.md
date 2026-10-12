@@ -1,6 +1,6 @@
 # Development protocol
 
-Version: 1.1. Project: Mathematics with Mansur (`history_math`). This owner-controlled contract applies to human contributors and automation. Its initial creation is authorized by the prototype task; future changes require owner instruction.
+Version: 1.2. Project: Mathematics with Mansur (`history_math`). This owner-controlled contract applies to human contributors and automation. Its initial creation is authorized by the prototype task; future changes require owner instruction.
 
 ## Architecture and authority
 
@@ -14,6 +14,8 @@ The pipeline reads existing FELab metadata and NAS originals, prepares public Ma
 4. Run relevant checks, inspect the diff, and capture browser evidence for layout changes.
 5. Push without history rewriting and open a PR to `master`. Assign it to `Tim55667757`, add the `documentation` label, and verify both fields. The owner-authorized article preparation exception below permits replacing a pinned article branch after verified external storage.
 6. Let Timur decide whether to merge. The merge into `master` approves publication and starts the existing Pages deployment. No second promotion PR is required.
+
+For article PRs, complete editorial corrections and technical checks before requesting the owner's final review. Timur must review the final version, explicitly write `Approved`, and merge the article PR himself. Neither a technical PASS, an infrastructure merge nor an agent-written approval record substitutes for this decision. Record only approval actually given by the owner; any later change to article text or images requires renewed review and `Approved` for that version. This rule was explicitly reaffirmed by the owner on 2026-10-12.
 
 Never merge a PR, publish a release/tag, or change visibility without explicit authorization. Do not enable auto-merge or repository-wide automatic branch deletion. The guarded existing cleanup workflow deletes only eligible merged feature branches into `master`.
 
