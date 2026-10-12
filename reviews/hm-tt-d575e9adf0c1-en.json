@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-d575e9adf0c1-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "riemann-first-recognition",
+      "question": "The source calls Riemann’s 1854 work the first recognition of Lobachevsky’s geometry, after describing Gauss’s recognition and the 1842 election. Should “first recognition” be qualified? Both passages are preserved.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "persecuted-professors-list",
+      "question": "Please review the list of professors said to have left Göttingen under persecution in the 1930s, especially Otto Toeplitz, whose institutional affiliation may need clarification. The list is retained unchanged in substance.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 9,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-06-29",
+      "url": "https://teletype.in/@history_math/Gottingen-Math-School"
+    }
+  }
+}
