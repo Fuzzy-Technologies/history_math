@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-81b856c513b1-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source calls this an indeterminate system, although the four displayed equations determine a unique solution. It also preserves the Latin quotation beginning “Cubem”. Confirm these points before publication; neither has been silently corrected.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 1,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-06-06",
+      "url": "https://teletype.in/@history_math/Diophantus-Problem"
+    }
+  }
+}
