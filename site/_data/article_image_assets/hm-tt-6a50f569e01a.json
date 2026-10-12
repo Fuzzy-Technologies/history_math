@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-6a50f569e01a/tabulator-01.jpeg": {
+    "sha256": "73b51be9ddc9a55ef2f5260232ba1f2a9d6400d886cc6e621e837a05a260fa4d",
+    "width": 2000,
+    "height": 1577,
+    "bytes": 913521,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6a50f569e01a/tabulator-01.jpeg-960.webp",
+        "width": 960,
+        "height": 757,
+        "sha256": "922520723fb08a475070bedcf2616112cafae667e9b42de386885c24002e155f",
+        "bytes": 869674
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-6a50f569e01a-tabulator-01-73b51be9ddc9a55ef2f5260232ba1f2a9d6400d886cc6e621e837a05a260fa4d.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630491492",
+      "asset_id": 630491492,
+      "release_tag": "article-originals-7",
+      "sha256": "73b51be9ddc9a55ef2f5260232ba1f2a9d6400d886cc6e621e837a05a260fa4d",
+      "bytes": 913521
+    }
+  },
+  "/assets/images/hm-tt-6a50f569e01a/tabulator-02.jpeg": {
+    "sha256": "7faeee10ed2f0a9a08cfbe6b94cc1c4bd17e00f65b4da3da381538b48913b475",
+    "width": 2000,
+    "height": 2667,
+    "bytes": 763500,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6a50f569e01a/tabulator-02.jpeg-960.webp",
+        "width": 960,
+        "height": 1280,
+        "sha256": "f6c1090541c2441ac8a28574dfb6c9f3b068541c9af4557c39bae3734d9cc5a5",
+        "bytes": 561980
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-6a50f569e01a-tabulator-02-7faeee10ed2f0a9a08cfbe6b94cc1c4bd17e00f65b4da3da381538b48913b475.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526032",
+      "asset_id": 630526032,
+      "release_tag": "article-originals-7",
+      "sha256": "7faeee10ed2f0a9a08cfbe6b94cc1c4bd17e00f65b4da3da381538b48913b475",
+      "bytes": 763500
+    }
+  },
+  "/assets/images/hm-tt-6a50f569e01a/tabulator-03.png": {
+    "sha256": "98755257fbed228f74ac00236abe9c8c6e483c9c1dad2c26af7801e44d4c778a",
+    "width": 2099,
+    "height": 974,
+    "bytes": 3330789,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6a50f569e01a/tabulator-03.png-960.webp",
+        "width": 960,
+        "height": 445,
+        "sha256": "27faaa827e8a684e38f18b33be6e2a458980ceec0266220815ff17b663edc707",
+        "bytes": 446794
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-6a50f569e01a-tabulator-03-98755257fbed228f74ac00236abe9c8c6e483c9c1dad2c26af7801e44d4c778a.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526257",
+      "asset_id": 630526257,
+      "release_tag": "article-originals-9",
+      "sha256": "98755257fbed228f74ac00236abe9c8c6e483c9c1dad2c26af7801e44d4c778a",
+      "bytes": 3330789
+    }
+  },
+  "/assets/images/hm-tt-6a50f569e01a/tabulator-04.jpeg": {
+    "sha256": "febc1cffbdd8c9f0ad803e9d8f1e403a2f449d62f1e1d017693ad18d087aa4cd",
+    "width": 600,
+    "height": 500,
+    "bytes": 50204,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6a50f569e01a/tabulator-04-600.jpeg",
+        "width": 600,
+        "height": 500,
+        "bytes": 50204,
+        "sha256": "febc1cffbdd8c9f0ad803e9d8f1e403a2f449d62f1e1d017693ad18d087aa4cd"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-6a50f569e01a-tabulator-04-febc1cffbdd8c9f0ad803e9d8f1e403a2f449d62f1e1d017693ad18d087aa4cd.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526444",
+      "asset_id": 630526444,
+      "release_tag": "article-originals-f",
+      "sha256": "febc1cffbdd8c9f0ad803e9d8f1e403a2f449d62f1e1d017693ad18d087aa4cd",
+      "bytes": 50204
+    }
+  },
+  "/assets/images/hm-tt-6a50f569e01a/tabulator-05.png": {
+    "sha256": "bc6b80121bf0b6cddd015edaff9d550acd3ed487b78a893f526aa8cec09e76e1",
+    "width": 808,
+    "height": 1022,
+    "bytes": 212938,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6a50f569e01a/tabulator-05.png-808.webp",
+        "width": 808,
+        "height": 1022,
+        "sha256": "35c50951742ea762e7442837348d9cc61fd5a55fe154836023e7841336c82d1a",
+        "bytes": 118446
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-6a50f569e01a-tabulator-05-bc6b80121bf0b6cddd015edaff9d550acd3ed487b78a893f526aa8cec09e76e1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526615",
+      "asset_id": 630526615,
+      "release_tag": "article-originals-b",
+      "sha256": "bc6b80121bf0b6cddd015edaff9d550acd3ed487b78a893f526aa8cec09e76e1",
+      "bytes": 212938
+    }
+  },
+  "/assets/images/hm-tt-6a50f569e01a/tabulator-06.jpeg": {
+    "sha256": "5f0ddbbd7980ff255fb3998db308276354452eb07e8ec32d0c9e4e7eba3b9a8a",
+    "width": 600,
+    "height": 422,
+    "bytes": 56638,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6a50f569e01a/tabulator-06-600.jpeg",
+        "width": 600,
+        "height": 422,
+        "bytes": 56638,
+        "sha256": "5f0ddbbd7980ff255fb3998db308276354452eb07e8ec32d0c9e4e7eba3b9a8a"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-6a50f569e01a-tabulator-06-5f0ddbbd7980ff255fb3998db308276354452eb07e8ec32d0c9e4e7eba3b9a8a.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526748",
+      "asset_id": 630526748,
+      "release_tag": "article-originals-5",
+      "sha256": "5f0ddbbd7980ff255fb3998db308276354452eb07e8ec32d0c9e4e7eba3b9a8a",
+      "bytes": 56638
+    }
+  }
+}

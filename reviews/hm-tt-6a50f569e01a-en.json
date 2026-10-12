@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-6a50f569e01a-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-tabulator-persecution-scope",
+      "question": "Please review the scope of the claims about punched-card classification and Nazi persecution against the cited USHMM account, which distinguishes census processing and management of living prisoners from the paper records used to identify people to be killed. The source’s broad account and its qualification about IBM responsibility are retained. Evidence: https://encyclopedia.ushmm.org/content/en/article/locating-the-victims?series=32",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2026-04-30",
+      "url": "https://teletype.in/@history_math/tabulator"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
