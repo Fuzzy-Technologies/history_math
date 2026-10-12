@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-6dd23b980cc5-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "archimedes-method",
+      "question": "The source specifically attributes proofs of both listed arbelos properties to Archimedes and says he used the method of exhaustion. Should these historical attributions be verified before publication? They are retained without correction.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-06-12",
+      "url": "https://teletype.in/@history_math/Arbelos"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
