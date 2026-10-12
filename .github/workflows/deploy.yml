@@ -44,6 +44,7 @@ jobs:
       - name: Verify approved source and build
         run: |
           npm ci
+          python3 -m pip install -r tools/requirements-images.txt
           npx playwright install --with-deps chromium
           python3 tools/markdown_tables.py
           npm test

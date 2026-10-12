@@ -6,6 +6,7 @@ Read `DEVELOPMENT_PROTOCOL.md` before making changes. This repository is the pub
 - Create short-lived `feature/*` branches from `master` and target `master` with PRs. The owner-approved merge also approves publication; there is no permanent integration branch.
 - Assign every PR to `Tim55667757` and add the `documentation` label, including feature and publication PRs. Preserve other assignees and labels; verify both fields after creation.
 - Do not self-merge, create product releases/tags, enable auto-merge, or create a backlog without explicit owner instruction. The owner has authorized content-addressed `article-originals-*` storage releases and preparation of the 190 unmerged article PRs; this does not authorize publication.
+- Article publication requires Timur's final review after editorial corrections, his explicit `Approved`, and his own merge. Never manufacture approval or treat infrastructure approval or green CI as article approval. Text or image changes after approval require his renewed review.
 - Keep implementation, comments, documentation, commits and PR descriptions in English. Localized UI and articles use their actual language.
 - English is the default site locale, not a requirement on the original language of articles.
 - Keep NAS/FELab as the editorial source of truth; no private paths, databases, sessions, logs or internal metadata belong here.
