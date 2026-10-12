@@ -63,7 +63,16 @@
       "Unmatched delimiters or LaTeX outside dollar math": "Непарные разделители или LaTeX вне формулы с разделителями $",
       "math: true is required": "Требуется поле math: true",
       "schema_version: 1 is required for new article packages": "Для новых комплектов требуется schema_version: 1",
-      "Preview commit does not match the checked commit": "Коммит предпросмотра не совпадает с проверяемым коммитом"
+      "Preview commit does not match the checked commit": "Коммит предпросмотра не совпадает с проверяемым коммитом",
+      "Missing or unreadable review record": "Запись редакторского ревью отсутствует или не читается",
+      "Invalid review record": "Недопустимая запись редакторского ревью",
+      "Invalid or duplicate editorial question": "Недопустимый или повторяющийся редакторский вопрос",
+      "Closed question requires a resolution": "Для закрытого вопроса требуется записанное решение",
+      "Publication requires a named editorial approval and valid date": "Для публикации требуются имя редактора, одобрение и корректная дата",
+      "Publication has open blocking questions": "Для публикации нужно закрыть блокирующие редакторские вопросы",
+      "Approval does not match the current text and images": "Одобрение не соответствует текущим тексту и изображениям",
+      "Invalid or stale editorial question localization": "Перевод редакторского вопроса недопустим или относится к прежней формулировке",
+      "Russian editorial question translation required: ": "Добавьте русский перевод редакторского вопроса: "
     },
     "checks": {
       "source": "Контракт исходных файлов",

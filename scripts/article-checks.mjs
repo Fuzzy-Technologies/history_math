@@ -147,7 +147,7 @@ export function articleFiles(root) {
   return files.sort();
 }
 
-export function checkSources(root, files = articleFiles(root)) {
+export function checkSources(root, files = articleFiles(root), language) {
   const identities = new Set();
   const findings = checkContract(root);
   const articles = [];
@@ -162,7 +162,7 @@ export function checkSources(root, files = articleFiles(root)) {
     }
     const result = checkArticle(text, file, root, identities);
     findings.push(...result.findings);
-    if (result.data) findings.push(...checkReview(text, result.data, root));
+    if (result.data) findings.push(...checkReview(text, result.data, root, language));
     articles.push({file, id: result.data?.article_id, url: articleUrl(result.data?.permalink, result.data?.lang), formulas: result.formulaCount, figures: result.figureCount});
   }
   return {findings, articles};

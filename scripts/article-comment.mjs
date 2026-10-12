@@ -6,7 +6,7 @@ export async function updateReportComment({github, repo, number, commit, result,
   const pr = (await github.rest.pulls.get({...repo, pull_number: number})).data;
   if (pr.head.sha !== commit) return false;
   const m = messages[reportLanguage(pr.head.ref)];
-  const body = `${commentMarker}\n${m[result] ?? m.incomplete}\n\n${m.commit}: \`${commit}\`\n\n${m.preview}: [Actions report, preview and screenshots](${runUrl})\n`;
+  const body = `${commentMarker}\n${m[result] ?? m.incomplete}\n\n${m.commit}: \`${commit}\`\n\n${m.preview}: [${m.preview}](${runUrl})\n`;
   const issue = {...repo, issue_number: number};
   const comments = await github.paginate(github.rest.issues.listComments, {...issue, per_page: 100});
   const previous = comments.find(x => x.user?.type === 'Bot' && x.body?.includes(commentMarker));

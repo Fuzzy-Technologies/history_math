@@ -1,4 +1,5 @@
 import {readFileSync} from 'node:fs';
+import {editorialQuestionText} from './editorial-question-messages.mjs';
 export function reportLanguage(branch = '') {
   return branch.endsWith('-ru') ? 'ru' : 'en';
 }
@@ -25,9 +26,11 @@ export function humanReport(report) {
   const outcome = report.profile === 'source' && result === 'pass' ? m.source_pass : m[result];
   const detail = item => {
     const value = item.detail ?? '';
+    if (item.code === 'HM_EDITOR') return editorialQuestionText({question: value,
+      ...(item.detail_localizations ? {localizations: item.detail_localizations} : {})}, report.language);
     if (item.code === 'HM_REQUIRED' && m.checks[value]) return m.checks[value];
     for (const [prefix, localized] of Object.entries(m.details ?? {})) if (value.startsWith(prefix)) return localized + value.slice(prefix.length);
-    // Original article questions and third-party diagnostics retain their supplied text.
+    // Third-party diagnostics retain their supplied text beneath localized actions.
     return value;
   };
   return `${outcome}\n\n` + (report.profile === 'source' ? `${m.source_profile}\n\n` : '') +

@@ -24,7 +24,7 @@ const run = (code, executable, params, timeout = 180000) => {
   return true;
 };
 try {
-  const source = checkSources(root);
+  const source = checkSources(root, undefined, report.language);
   run('HM_MARKDOWN', option('--python', process.env.PYTHON_EXECUTABLE ?? 'python3'), ['tools/markdown_tables.py']);
   report.findings.push(...source.findings);
   report.articles = source.articles;

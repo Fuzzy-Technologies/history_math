@@ -35,7 +35,7 @@ jobs:
       - name: Install pinned checks
         run: npm ci
       - name: Contract and report regression tests
-        run: node --test tests/articles.test.mjs tests/article-review.test.mjs
+        run: node --test tests/articles.test.mjs tests/article-review.test.mjs tests/editorial-question-messages.test.mjs
       - name: Source contracts and article report
         env:
           PR_HEAD_REF: ${{ github.event.pull_request.head.ref || github.ref_name }}
