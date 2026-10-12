@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-16b5a4e33afd/medianta-dvuh-drobei-01.png": {
+    "sha256": "836b1c42420081bb617c985a9d67d9a456dcb9053b40d010621aeb1065945735",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 3693031,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-16b5a4e33afd/medianta-dvuh-drobei-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "cde2984c9e7da49810bd6a662e02fa5a80e0a45ca33485b9a4d983272e828da8",
+        "bytes": 1245344
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-16b5a4e33afd-medianta-dvuh-drobei-01-836b1c42420081bb617c985a9d67d9a456dcb9053b40d010621aeb1065945735.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630491856",
+      "asset_id": 630491856,
+      "release_tag": "article-originals-8",
+      "sha256": "836b1c42420081bb617c985a9d67d9a456dcb9053b40d010621aeb1065945735",
+      "bytes": 3693031
+    }
+  },
+  "/assets/images/hm-tt-16b5a4e33afd/medianta-dvuh-drobei-02.jpeg": {
+    "sha256": "878ac352e250d0e890791cb9d3952f0be4e3db4cfb3e1d4050e007359cc9a95d",
+    "width": 500,
+    "height": 703,
+    "bytes": 74681,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-16b5a4e33afd/medianta-dvuh-drobei-02-500.jpeg",
+        "width": 500,
+        "height": 703,
+        "bytes": 74681,
+        "sha256": "878ac352e250d0e890791cb9d3952f0be4e3db4cfb3e1d4050e007359cc9a95d"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-16b5a4e33afd-medianta-dvuh-drobei-02-878ac352e250d0e890791cb9d3952f0be4e3db4cfb3e1d4050e007359cc9a95d.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630527649",
+      "asset_id": 630527649,
+      "release_tag": "article-originals-8",
+      "sha256": "878ac352e250d0e890791cb9d3952f0be4e3db4cfb3e1d4050e007359cc9a95d",
+      "bytes": 74681
+    }
+  },
+  "/assets/images/hm-tt-16b5a4e33afd/medianta-dvuh-drobei-03.jpeg": {
+    "sha256": "98f29b213e79bb8f65aa5d4c24f0b14a6e86f926c8ef6fe3b91b4a614bf8c5c4",
+    "width": 500,
+    "height": 660,
+    "bytes": 53801,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-16b5a4e33afd/medianta-dvuh-drobei-03-500.jpeg",
+        "width": 500,
+        "height": 660,
+        "bytes": 53801,
+        "sha256": "98f29b213e79bb8f65aa5d4c24f0b14a6e86f926c8ef6fe3b91b4a614bf8c5c4"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-16b5a4e33afd-medianta-dvuh-drobei-03-98f29b213e79bb8f65aa5d4c24f0b14a6e86f926c8ef6fe3b91b4a614bf8c5c4.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630527842",
+      "asset_id": 630527842,
+      "release_tag": "article-originals-9",
+      "sha256": "98f29b213e79bb8f65aa5d4c24f0b14a6e86f926c8ef6fe3b91b4a614bf8c5c4",
+      "bytes": 53801
+    }
+  },
+  "/assets/images/hm-tt-16b5a4e33afd/medianta-dvuh-drobei-04.png": {
+    "sha256": "68cb8788df0aa62eec524fa67cf4558627136fdbe7e3964f745214ea09fc6577",
+    "width": 513,
+    "height": 557,
+    "bytes": 150572,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-16b5a4e33afd/medianta-dvuh-drobei-04.png-513.webp",
+        "width": 513,
+        "height": 557,
+        "sha256": "4b47df37e7110758f3f050b3b2a46f55b7e277dcaf40b1dd0b64edd35cd463c0",
+        "bytes": 90588
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-16b5a4e33afd-medianta-dvuh-drobei-04-68cb8788df0aa62eec524fa67cf4558627136fdbe7e3964f745214ea09fc6577.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630528062",
+      "asset_id": 630528062,
+      "release_tag": "article-originals-6",
+      "sha256": "68cb8788df0aa62eec524fa67cf4558627136fdbe7e3964f745214ea09fc6577",
+      "bytes": 150572
+    }
+  },
+  "/assets/images/hm-tt-16b5a4e33afd/medianta-dvuh-drobei-05.png": {
+    "sha256": "608471ca43406c6f467434cb8a1001515d170fbff60d2313101bc243804017e3",
+    "width": 496,
+    "height": 264,
+    "bytes": 54237,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-16b5a4e33afd/medianta-dvuh-drobei-05.png-496.webp",
+        "width": 496,
+        "height": 264,
+        "sha256": "aa711e25acade63274cec9134e2f9d31ed5b5f2e15197092a8d17aaec2ef73b8",
+        "bytes": 32086
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-16b5a4e33afd-medianta-dvuh-drobei-05-608471ca43406c6f467434cb8a1001515d170fbff60d2313101bc243804017e3.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630528259",
+      "asset_id": 630528259,
+      "release_tag": "article-originals-6",
+      "sha256": "608471ca43406c6f467434cb8a1001515d170fbff60d2313101bc243804017e3",
+      "bytes": 54237
+    }
+  },
+  "/assets/images/hm-tt-16b5a4e33afd/medianta-dvuh-drobei-06.png": {
+    "sha256": "439bf0d9bc771c0fb873d0e319535a9ed08a44acd9586684c1edaf6794c4c7d7",
+    "width": 501,
+    "height": 158,
+    "bytes": 50065,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-16b5a4e33afd/medianta-dvuh-drobei-06.png-501.webp",
+        "width": 501,
+        "height": 158,
+        "sha256": "c596988b88ee22bc799050153f4afdf9f7c53112c3d85efb1764cf7b645150eb",
+        "bytes": 30634
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-16b5a4e33afd-medianta-dvuh-drobei-06-439bf0d9bc771c0fb873d0e319535a9ed08a44acd9586684c1edaf6794c4c7d7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630528409",
+      "asset_id": 630528409,
+      "release_tag": "article-originals-4",
+      "sha256": "439bf0d9bc771c0fb873d0e319535a9ed08a44acd9586684c1edaf6794c4c7d7",
+      "bytes": 50065
+    }
+  }
+}

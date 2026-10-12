@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-16b5a4e33afd-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source attributes introduction of the mediant to Khinchin and calls the French chocolates “médiants”. Verify the historical attribution and culinary spelling; these claims are retained without correction.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2026-04-21",
+      "url": "https://teletype.in/@history_math/medianta-dvuh-drobei"
+    }
+  }
+}
