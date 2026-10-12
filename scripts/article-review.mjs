@@ -1,20 +1,24 @@
-import {readFileSync} from 'node:fs';
+import {readFileSync, existsSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {createHash} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
+import {updateAssetDigest, imageInventory} from './external-originals.mjs';
+import {validQuestionLocalizations, hasQuestionTranslation} from './editorial-question-messages.mjs';
 
 // Approval covers the public Markdown and the exact bytes of its selected assets.
 export function packageDigest(text, data, root) {
   const hash = createHash('sha256').update(text.replace(/\r\n/g, '\n'));
   const paths = [...new Set([...(data.figures ?? []).map(x => x.path), ...['preview_image', 'cover_image', 'hero_image'].map(key => data[key]).filter(Boolean)])].sort();
+  let inventory;
   for (const path of paths) {
     if (!/^\/assets\/images\/[a-z0-9-]+\/[A-Za-z0-9._-]+$/.test(path)) throw new Error('Invalid review asset path');
-    hash.update('\0' + path + '\0').update(readFileSync(resolve(root, 'site', '.' + path)));
+    if (!existsSync(resolve(root, 'site', '.' + path))) inventory ??= imageInventory(root);
+    updateAssetDigest(hash, root, path, inventory);
   }
   return hash.digest('hex');
 }
 
-export function checkReview(text, data, root) {
+export function checkReview(text, data, root, language) {
   const file = `reviews/${data.article_id}.json`;
   const findings = [];
   const fail = detail => findings.push({code: 'HM_REVIEW', severity: 'error', file, detail});
@@ -30,8 +34,15 @@ export function checkReview(text, data, root) {
       fail('Invalid or duplicate editorial question'); continue;
     }
     ids.add(question.id);
+    if (!validQuestionLocalizations(question)) fail('Invalid or stale editorial question localization');
     if (question.state !== 'open' && (typeof question.resolution !== 'string' || !question.resolution.trim())) fail('Closed question requires a resolution');
-    if (question.state === 'open') findings.push({code: 'HM_EDITOR', severity: 'editor', file, detail: question.question});
+    if (question.state === 'open') {
+      if (language === 'ru' && !hasQuestionTranslation(question, language, data.lang)) {
+        fail('Russian editorial question translation required: ' + question.id);
+      }
+      findings.push({code: 'HM_EDITOR', severity: 'editor', file, detail: question.question,
+        ...(question.localizations ? {detail_localizations: question.localizations} : {})});
+    }
   }
   if (data.status === 'published') {
     const approval = review.approval;

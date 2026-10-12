@@ -6,6 +6,7 @@ import Ajv from 'ajv';
 import {parseDocument} from 'yaml';
 import {articleUrl} from './article-url.mjs';
 import {checkReview} from './article-review.mjs';
+import {externalEntry, imageInventory} from './external-originals.mjs';
 
 const katexModule = {exports: {}};
 runInNewContext(readFileSync(new URL('../site/assets/vendor/katex/katex.min.js', import.meta.url), 'utf8'), {module: katexModule, exports: katexModule.exports});
@@ -41,10 +42,15 @@ export function checkArticle(text, file, root, identities = new Set()) {
     if (identities.has(key)) add('HM_IDENTIFIER', key);
     identities.add(key);
   }
+  let externalInventory;
   const safeAsset = (path, line) => {
     if (typeof path !== 'string' || !/^\/assets\/images\/[a-z0-9-]+\/[A-Za-z0-9._-]+$/.test(path) || path.includes('..')) { add('HM_PATH', String(path), line); return; }
     const target = resolve(root, 'site', '.' + path);
-    if (!existsSync(target)) { add('HM_IMAGE', path, line); return; }
+    if (!existsSync(target)) {
+      try { externalEntry(root, path, externalInventory ??= imageInventory(root)); }
+      catch (error) { add('HM_IMAGE', `${path}: ${error.message}`, line); }
+      return;
+    }
     if (!realpathSync(target).startsWith(realpathSync(resolve(root, 'site')) + sep)) add('HM_PATH', path, line);
   };
   for (const key of ['preview_image', 'cover_image', 'hero_image']) if (data[key]) safeAsset(data[key], 1);
@@ -128,10 +134,20 @@ export function checkContract(root) {
 }
 
 export function articleFiles(root) {
-  return readdirSync(resolve(root, 'site/_articles')).filter(x => x.endsWith('.md')).map(x => 'site/_articles/' + x);
+  const files = [];
+  const visit = directory => {
+    for (const entry of readdirSync(directory, {withFileTypes: true})) {
+      const target = resolve(directory, entry.name);
+      if (entry.isSymbolicLink()) throw new Error('Article source paths cannot contain symbolic links');
+      if (entry.isDirectory()) visit(target);
+      else if (entry.isFile() && entry.name.endsWith('.md')) files.push(relative(root, target).split(sep).join('/'));
+    }
+  };
+  visit(resolve(root, 'site/_articles'));
+  return files.sort();
 }
 
-export function checkSources(root, files = articleFiles(root)) {
+export function checkSources(root, files = articleFiles(root), language) {
   const identities = new Set();
   const findings = checkContract(root);
   const articles = [];
@@ -146,7 +162,7 @@ export function checkSources(root, files = articleFiles(root)) {
     }
     const result = checkArticle(text, file, root, identities);
     findings.push(...result.findings);
-    if (result.data) findings.push(...checkReview(text, result.data, root));
+    if (result.data) findings.push(...checkReview(text, result.data, root, language));
     articles.push({file, id: result.data?.article_id, url: articleUrl(result.data?.permalink, result.data?.lang), formulas: result.formulaCount, figures: result.figureCount});
   }
   return {findings, articles};
