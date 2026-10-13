@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-1c23e0d766d2/prime-numbers-01.png": {
+    "sha256": "2bae21f76a5fcb0a89f4d3cb73a91ff84c007b759733a068b7c08c0b2ecd633d",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2923766,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1c23e0d766d2/prime-numbers-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "05be359b4b325b97c6f12efe8a79cd4348d3d267d95d0def8a50940da36aa744",
+        "bytes": 1265188
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-1c23e0d766d2-prime-numbers-01-2bae21f76a5fcb0a89f4d3cb73a91ff84c007b759733a068b7c08c0b2ecd633d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630494656",
+      "asset_id": 630494656,
+      "release_tag": "article-originals-2",
+      "sha256": "2bae21f76a5fcb0a89f4d3cb73a91ff84c007b759733a068b7c08c0b2ecd633d",
+      "bytes": 2923766
+    }
+  },
+  "/assets/images/hm-tt-1c23e0d766d2/prime-numbers-02.png": {
+    "sha256": "ca61315ee10c45e46ce41d4e0997b2cee6f79f5b802cb7e8469c8dd9b603fad3",
+    "width": 383,
+    "height": 119,
+    "bytes": 2623,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1c23e0d766d2/prime-numbers-02.png-383.webp",
+        "width": 383,
+        "height": 119,
+        "sha256": "96ddc9b0570e7a5bdd226d44a3854cc980bf1f8a86157d923521db7e2c657628",
+        "bytes": 1206
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-1c23e0d766d2-prime-numbers-02-ca61315ee10c45e46ce41d4e0997b2cee6f79f5b802cb7e8469c8dd9b603fad3.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630538001",
+      "asset_id": 630538001,
+      "release_tag": "article-originals-c",
+      "sha256": "ca61315ee10c45e46ce41d4e0997b2cee6f79f5b802cb7e8469c8dd9b603fad3",
+      "bytes": 2623
+    }
+  },
+  "/assets/images/hm-tt-1c23e0d766d2/prime-numbers-03.png": {
+    "sha256": "0b6f00f6b237ca2ab98e01447bf610efb85eb9fb270570f6a6cf704865dd6333",
+    "width": 630,
+    "height": 450,
+    "bytes": 70085,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1c23e0d766d2/prime-numbers-03.png-630.webp",
+        "width": 630,
+        "height": 450,
+        "sha256": "9957f8b6b1ac771d6d816309a9aa518a01520ccf59012c7f98b07404cd2e5811",
+        "bytes": 24682
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-1c23e0d766d2-prime-numbers-03-0b6f00f6b237ca2ab98e01447bf610efb85eb9fb270570f6a6cf704865dd6333.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630538135",
+      "asset_id": 630538135,
+      "release_tag": "article-originals-0",
+      "sha256": "0b6f00f6b237ca2ab98e01447bf610efb85eb9fb270570f6a6cf704865dd6333",
+      "bytes": 70085
+    }
+  },
+  "/assets/images/hm-tt-1c23e0d766d2/prime-numbers-04.jpeg": {
+    "sha256": "ae2820a1371cac729b47eb84eccd6a68ae2940f35ce905d8670f48fcf9ffc5a4",
+    "width": 299,
+    "height": 400,
+    "bytes": 23512,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1c23e0d766d2/prime-numbers-04-299.jpeg",
+        "width": 299,
+        "height": 400,
+        "bytes": 23512,
+        "sha256": "ae2820a1371cac729b47eb84eccd6a68ae2940f35ce905d8670f48fcf9ffc5a4"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-1c23e0d766d2-prime-numbers-04-ae2820a1371cac729b47eb84eccd6a68ae2940f35ce905d8670f48fcf9ffc5a4.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630538305",
+      "asset_id": 630538305,
+      "release_tag": "article-originals-a",
+      "sha256": "ae2820a1371cac729b47eb84eccd6a68ae2940f35ce905d8670f48fcf9ffc5a4",
+      "bytes": 23512
+    }
+  },
+  "/assets/images/hm-tt-1c23e0d766d2/prime-numbers-05.png": {
+    "sha256": "f443674690824b494b6cbac23609224d4ce949588944446fa73dd3cdbdd8ee21",
+    "width": 835,
+    "height": 1079,
+    "bytes": 1586957,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1c23e0d766d2/prime-numbers-05.png-835.webp",
+        "width": 835,
+        "height": 1079,
+        "sha256": "1dd6f5c733de581f334a32afcac1acfc23171b4e524ef1d65f3dfaff7d0ae6f4",
+        "bytes": 806210
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-1c23e0d766d2-prime-numbers-05-f443674690824b494b6cbac23609224d4ce949588944446fa73dd3cdbdd8ee21.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630538513",
+      "asset_id": 630538513,
+      "release_tag": "article-originals-f",
+      "sha256": "f443674690824b494b6cbac23609224d4ce949588944446fa73dd3cdbdd8ee21",
+      "bytes": 1586957
+    }
+  }
+}
