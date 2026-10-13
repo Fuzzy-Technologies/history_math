@@ -1,0 +1,227 @@
+{
+  "/assets/images/hm-tt-50c4fc21835c/seminar-for-math-teachers-20-01.jpeg": {
+    "sha256": "ab29c9b2a10212ddc8b8f4e5260b8ce780571ca73e77ea8d4b08394aeacb5ee5",
+    "width": 3072,
+    "height": 4096,
+    "bytes": 1636841,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-50c4fc21835c/seminar-for-math-teachers-20-01-jpeg-reading-960-137287474a1a.webp",
+        "width": 960,
+        "height": 1280,
+        "sha256": "137287474a1a2f6f05b6d5b8570bf3522eaa1e381df869a3917d024955251e13",
+        "bytes": 1127466
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-50c4fc21835c-seminar-for-math-teachers-20-01-ab29c9b2a10212ddc8b8f4e5260b8ce780571ca73e77ea8d4b08394aeacb5ee5.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630498250",
+      "asset_id": 630498250,
+      "release_tag": "article-originals-a",
+      "sha256": "ab29c9b2a10212ddc8b8f4e5260b8ce780571ca73e77ea8d4b08394aeacb5ee5",
+      "bytes": 1636841
+    }
+  },
+  "/assets/images/hm-tt-50c4fc21835c/seminar-for-math-teachers-20-02.jpeg": {
+    "sha256": "fa25c3185556f8871e148cdc864c25f3520c095b40dd825f7637ead58bad66bc",
+    "width": 4111,
+    "height": 2046,
+    "bytes": 1700922,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-50c4fc21835c/seminar-for-math-teachers-20-02.jpeg-960.webp",
+        "width": 960,
+        "height": 478,
+        "sha256": "9a2e9977e487ac6b8223233616e87ba4e8fface138d1955eeb9e0ba5ccc54a99",
+        "bytes": 536232
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-50c4fc21835c-seminar-for-math-teachers-20-02-fa25c3185556f8871e148cdc864c25f3520c095b40dd825f7637ead58bad66bc.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630535067",
+      "asset_id": 630535067,
+      "release_tag": "article-originals-f",
+      "sha256": "fa25c3185556f8871e148cdc864c25f3520c095b40dd825f7637ead58bad66bc",
+      "bytes": 1700922
+    }
+  },
+  "/assets/images/hm-tt-50c4fc21835c/seminar-for-math-teachers-20-03.png": {
+    "sha256": "f4bd7e7bbc90b536c0d0def28cb226d030bc77ca85b7ddb992481d7d79da2da1",
+    "width": 546,
+    "height": 546,
+    "bytes": 41649,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-50c4fc21835c/seminar-for-math-teachers-20-03.png-546.webp",
+        "width": 546,
+        "height": 546,
+        "sha256": "8fb10562e2a0cf3b341db5b4eaeef940e2714f7692b279d27d3a6fb7d3c3be40",
+        "bytes": 27156
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-50c4fc21835c-seminar-for-math-teachers-20-03-f4bd7e7bbc90b536c0d0def28cb226d030bc77ca85b7ddb992481d7d79da2da1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630535281",
+      "asset_id": 630535281,
+      "release_tag": "article-originals-f",
+      "sha256": "f4bd7e7bbc90b536c0d0def28cb226d030bc77ca85b7ddb992481d7d79da2da1",
+      "bytes": 41649
+    }
+  },
+  "/assets/images/hm-tt-50c4fc21835c/seminar-for-math-teachers-20-04.png": {
+    "sha256": "34030d4728fe0c321e6d1b8982af0fc9d7cab885cfec18eba6e25e56a985e395",
+    "width": 256,
+    "height": 256,
+    "bytes": 47643,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-50c4fc21835c/seminar-for-math-teachers-20-04.png-256.webp",
+        "width": 256,
+        "height": 256,
+        "sha256": "25e7c0744d3f2921102766c760ec936eeebc9225cd62893655951c6924875659",
+        "bytes": 26150
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-50c4fc21835c-seminar-for-math-teachers-20-04-34030d4728fe0c321e6d1b8982af0fc9d7cab885cfec18eba6e25e56a985e395.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630535534",
+      "asset_id": 630535534,
+      "release_tag": "article-originals-3",
+      "sha256": "34030d4728fe0c321e6d1b8982af0fc9d7cab885cfec18eba6e25e56a985e395",
+      "bytes": 47643
+    }
+  },
+  "/assets/images/hm-tt-50c4fc21835c/seminar-for-math-teachers-20-05.png": {
+    "sha256": "fc22a0c285a0bcb5d975953a02c76aa8ebd247c5825752ebbffb1e08bf323e8d",
+    "width": 769,
+    "height": 491,
+    "bytes": 31068,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-50c4fc21835c/seminar-for-math-teachers-20-05.png-769.webp",
+        "width": 769,
+        "height": 491,
+        "sha256": "845445dc0abb924664d2e6b38c02cccdeebcc7a553b3090d0af6529ee1cb36f1",
+        "bytes": 17964
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-50c4fc21835c-seminar-for-math-teachers-20-05-fc22a0c285a0bcb5d975953a02c76aa8ebd247c5825752ebbffb1e08bf323e8d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630535728",
+      "asset_id": 630535728,
+      "release_tag": "article-originals-f",
+      "sha256": "fc22a0c285a0bcb5d975953a02c76aa8ebd247c5825752ebbffb1e08bf323e8d",
+      "bytes": 31068
+    }
+  },
+  "/assets/images/hm-tt-50c4fc21835c/seminar-for-math-teachers-20-06.png": {
+    "sha256": "335830a234c2f92c886f07e407618309eec34c04aeffe6574c9536c100e0e49c",
+    "width": 410,
+    "height": 410,
+    "bytes": 80547,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-50c4fc21835c/seminar-for-math-teachers-20-06.png-410.webp",
+        "width": 410,
+        "height": 410,
+        "sha256": "6a531ad76304616739097efb25a81449c6937ed4f1111e0bdd74ad6750c2ca89",
+        "bytes": 53994
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-50c4fc21835c-seminar-for-math-teachers-20-06-335830a234c2f92c886f07e407618309eec34c04aeffe6574c9536c100e0e49c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630535990",
+      "asset_id": 630535990,
+      "release_tag": "article-originals-3",
+      "sha256": "335830a234c2f92c886f07e407618309eec34c04aeffe6574c9536c100e0e49c",
+      "bytes": 80547
+    }
+  },
+  "/assets/images/hm-tt-50c4fc21835c/seminar-for-math-teachers-20-07.png": {
+    "sha256": "52bf8eb037739a7396eaf5ad3cf40ec33c2f490c1de12f53af2c9e6dacc4d7f8",
+    "width": 509,
+    "height": 509,
+    "bytes": 103436,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-50c4fc21835c/seminar-for-math-teachers-20-07.png-509.webp",
+        "width": 509,
+        "height": 509,
+        "sha256": "6ef308703dcfe19372cd208a671eb19caaf93dbfd1c610ef172b27e3d6707c55",
+        "bytes": 65690
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-50c4fc21835c-seminar-for-math-teachers-20-07-52bf8eb037739a7396eaf5ad3cf40ec33c2f490c1de12f53af2c9e6dacc4d7f8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630536118",
+      "asset_id": 630536118,
+      "release_tag": "article-originals-5",
+      "sha256": "52bf8eb037739a7396eaf5ad3cf40ec33c2f490c1de12f53af2c9e6dacc4d7f8",
+      "bytes": 103436
+    }
+  },
+  "/assets/images/hm-tt-50c4fc21835c/seminar-for-math-teachers-20-08.png": {
+    "sha256": "87bfbdba5987104e307406b9412761470e6a888ff8b86fef34bebed53da83243",
+    "width": 1085,
+    "height": 927,
+    "bytes": 1745307,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-50c4fc21835c/seminar-for-math-teachers-20-08.png-960.webp",
+        "width": 960,
+        "height": 820,
+        "sha256": "bc30e3994f5167ab52ef1b3878d256f8a2dfc67e7f855485bf48c8c63e012020",
+        "bytes": 988496
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-50c4fc21835c-seminar-for-math-teachers-20-08-87bfbdba5987104e307406b9412761470e6a888ff8b86fef34bebed53da83243.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630536300",
+      "asset_id": 630536300,
+      "release_tag": "article-originals-8",
+      "sha256": "87bfbdba5987104e307406b9412761470e6a888ff8b86fef34bebed53da83243",
+      "bytes": 1745307
+    }
+  },
+  "/assets/images/hm-tt-50c4fc21835c/seminar-for-math-teachers-20-09.jpeg": {
+    "sha256": "1dc25fa5a2302880e18f8118689548aa20a9a113f3a2ece5d24ef39230cbc860",
+    "width": 3072,
+    "height": 4096,
+    "bytes": 1406853,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-50c4fc21835c/seminar-for-math-teachers-20-09.jpeg-960.webp",
+        "width": 960,
+        "height": 1280,
+        "sha256": "ac66b4522d98af4ebaaa114f15a07d944d91a14b9629f39f6863c34610b22d18",
+        "bytes": 1094716
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-50c4fc21835c-seminar-for-math-teachers-20-09-1dc25fa5a2302880e18f8118689548aa20a9a113f3a2ece5d24ef39230cbc860.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630536518",
+      "asset_id": 630536518,
+      "release_tag": "article-originals-1",
+      "sha256": "1dc25fa5a2302880e18f8118689548aa20a9a113f3a2ece5d24ef39230cbc860",
+      "bytes": 1406853
+    }
+  }
+}
