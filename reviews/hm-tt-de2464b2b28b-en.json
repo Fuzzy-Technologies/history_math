@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-de2464b2b28b-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-tolstoy-experiment-date",
+      "question": "Please verify the source’s 1862 date for the seven-week comparison of Tolstoy’s and Yevtushevsky’s systems, which appears in the discussion of the 1872–1874 textbooks and reviews. The date and account are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "en-tolstoy-strannolyubsky-rank",
+      "question": "Please verify the description of A. N. Strannolyubsky as a general. The source rank is retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 9,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-08-30",
+      "url": "https://teletype.in/@history_math/Lev-Tolstoj-i-matematika-08-30"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
