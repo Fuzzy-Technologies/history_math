@@ -1,0 +1,36 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-e0952dd62d49-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-measures-1",
+      "question": "The source presents Claude Litre as a historical French bottle-maker after whom the litre was named. Please verify the historical basis of this account and authorise any necessary correction. The English retains the complete source account.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-measures-2",
+      "question": "Confirm the source's 1801 date for introduction of France's metric system, the claimed Latin origins of yard and bushel, and the claim that foot and ounce retained their sizes internationally. The latter also sits beside differing national foot lengths; all statements are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-measures-3",
+      "question": "The source says a funt equals 96 zolotniks and places 'about 4.3 g' immediately afterwards. The English interprets 4.3 g as the mass of one zolotnik. Confirm that reading.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 8,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-08-21",
+      "url": "https://teletype.in/@history_math/Bylo-by-chto-merit-08-21"
+    }
+  }
+}
