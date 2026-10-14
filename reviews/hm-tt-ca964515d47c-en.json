@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-ca964515d47c-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-euler-blindness",
+      "question": "Please verify the comet-prize anecdote, its causal link to blindness in 1735, and the date 1766 for loss of sight in Euler’s other eye. These source claims are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "en-euler-collected-works",
+      "question": "Please verify the 1909–1975 publication span and 72-volume total given for Euler’s collected works. They are retained as supplied.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-08-21",
+      "url": "https://teletype.in/@history_math/Velikij-zhrec-korolevy-nauk-08-22"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
