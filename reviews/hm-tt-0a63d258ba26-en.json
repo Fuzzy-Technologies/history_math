@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-0a63d258ba26-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "vernier-similarity-basis",
+      "question": "The source groups the vernier and diagonal scale together as based on similar triangles. Please verify the vernier statement, whose operating principle may instead be the difference between two scale divisions. The source explanation is preserved.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-08-28",
+      "url": "https://teletype.in/@history_math/Istoriya-matematicheskih-instrumentov-08-28"
+    }
+  }
+}
