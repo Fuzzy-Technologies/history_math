@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-107395be1bf5-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-planimeter-swept-area",
+      "question": "Please review the statement that swept area equals segment length times the length of the midpoint’s path. In general the relevant component of motion is perpendicular to the segment, and a simple arc-length product needs additional conditions. The source statement is retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "en-planimeter-gonnella-date",
+      "question": "The Smithsonian’s planimeter collection uses Johann Martin Hermann and gives construction dates 1818, 1825 and 1826 for Hermann, Gonnella and Oppikofer, whereas the source supplies Herman, an 1814 idea, and 1824/1827 inventions. Please distinguish proposals from construction and authorise any spelling/date corrections. Source wording is retained. Evidence: https://americanhistory.si.edu/collections/object-groups/planimeters",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-03-19",
+      "url": "https://teletype.in/@history_math/planimetr"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}

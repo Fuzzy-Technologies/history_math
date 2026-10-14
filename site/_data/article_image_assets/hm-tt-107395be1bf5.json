@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-107395be1bf5/planimetr-01.jpeg": {
+    "sha256": "fe9510e76cfb9cd417d3ab786f022037e4a2f640175d113af573d64c57d859e9",
+    "width": 3581,
+    "height": 2247,
+    "bytes": 581803,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-107395be1bf5/planimetr-01.jpeg-960.webp",
+        "width": 960,
+        "height": 602,
+        "sha256": "e67459d7617ad878712eca67437804dacd9ccde289802460732dceafad8023cd",
+        "bytes": 296578
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-107395be1bf5-planimetr-01-fe9510e76cfb9cd417d3ab786f022037e4a2f640175d113af573d64c57d859e9.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497727",
+      "asset_id": 630497727,
+      "release_tag": "article-originals-f",
+      "sha256": "fe9510e76cfb9cd417d3ab786f022037e4a2f640175d113af573d64c57d859e9",
+      "bytes": 581803
+    }
+  },
+  "/assets/images/hm-tt-107395be1bf5/planimetr-02.jpeg": {
+    "sha256": "15b1d41e437da31015a185b5085a9f8369491b21097f8138ededf57f9c209506",
+    "width": 1024,
+    "height": 683,
+    "bytes": 95577,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-107395be1bf5/planimetr-02.jpeg-960.webp",
+        "width": 960,
+        "height": 640,
+        "sha256": "0bbbf8affa8f4a0e167e0487c7f44b39cdfe0ef2edd8702fe97ae127db605c8b",
+        "bytes": 460534
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-107395be1bf5-planimetr-02-15b1d41e437da31015a185b5085a9f8369491b21097f8138ededf57f9c209506.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630533357",
+      "asset_id": 630533357,
+      "release_tag": "article-originals-1",
+      "sha256": "15b1d41e437da31015a185b5085a9f8369491b21097f8138ededf57f9c209506",
+      "bytes": 95577
+    }
+  },
+  "/assets/images/hm-tt-107395be1bf5/planimetr-03.jpeg": {
+    "sha256": "77e75a63394ff091f27ab190cef8220cb5c830a165e6c9c75add6686765781a1",
+    "width": 800,
+    "height": 1142,
+    "bytes": 185369,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-107395be1bf5/planimetr-03-800.jpeg",
+        "width": 800,
+        "height": 1142,
+        "bytes": 185369,
+        "sha256": "77e75a63394ff091f27ab190cef8220cb5c830a165e6c9c75add6686765781a1"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-107395be1bf5-planimetr-03-77e75a63394ff091f27ab190cef8220cb5c830a165e6c9c75add6686765781a1.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630533520",
+      "asset_id": 630533520,
+      "release_tag": "article-originals-7",
+      "sha256": "77e75a63394ff091f27ab190cef8220cb5c830a165e6c9c75add6686765781a1",
+      "bytes": 185369
+    }
+  },
+  "/assets/images/hm-tt-107395be1bf5/planimetr-04.jpeg": {
+    "sha256": "9a9bcf5285c637fefce88d84dceb0734b1267917ebbe0331e556fb01da235e00",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 46212,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-107395be1bf5/planimetr-04.jpeg-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "9dc6ee592a898b6714fa8058fefcee8afea616a845330307a743d8436f6d7ea0",
+        "bytes": 157126
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-107395be1bf5-planimetr-04-9a9bcf5285c637fefce88d84dceb0734b1267917ebbe0331e556fb01da235e00.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630533706",
+      "asset_id": 630533706,
+      "release_tag": "article-originals-9",
+      "sha256": "9a9bcf5285c637fefce88d84dceb0734b1267917ebbe0331e556fb01da235e00",
+      "bytes": 46212
+    }
+  },
+  "/assets/images/hm-tt-107395be1bf5/planimetr-05.png": {
+    "sha256": "26dbfef178eacfdaa9ba0a7187e1466f820eae31f5a3a5fb2527fb25c3e126a9",
+    "width": 1407,
+    "height": 877,
+    "bytes": 574459,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-107395be1bf5/planimetr-05.png-960.webp",
+        "width": 960,
+        "height": 598,
+        "sha256": "d38beaf2cd10a2f94df5eb4f52338b2c556c8aa9f057db7e9f824786d5a1ab4b",
+        "bytes": 181090
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-107395be1bf5-planimetr-05-26dbfef178eacfdaa9ba0a7187e1466f820eae31f5a3a5fb2527fb25c3e126a9.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630533883",
+      "asset_id": 630533883,
+      "release_tag": "article-originals-2",
+      "sha256": "26dbfef178eacfdaa9ba0a7187e1466f820eae31f5a3a5fb2527fb25c3e126a9",
+      "bytes": 574459
+    }
+  },
+  "/assets/images/hm-tt-107395be1bf5/planimetr-06.jpeg": {
+    "sha256": "17fb8af4d04640e6b3ab98031ce6879d3287f3dca52aa54ac9b4396876707d02",
+    "width": 1018,
+    "height": 1510,
+    "bytes": 333026,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-107395be1bf5/planimetr-06.jpeg-960.webp",
+        "width": 960,
+        "height": 1424,
+        "sha256": "c39dc08fd58c885c5d0f91fad1f25408280a3a65c43c59fee4a25c704ce25e84",
+        "bytes": 1240084
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-107395be1bf5-planimetr-06-17fb8af4d04640e6b3ab98031ce6879d3287f3dca52aa54ac9b4396876707d02.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630534049",
+      "asset_id": 630534049,
+      "release_tag": "article-originals-1",
+      "sha256": "17fb8af4d04640e6b3ab98031ce6879d3287f3dca52aa54ac9b4396876707d02",
+      "bytes": 333026
+    }
+  }
+}
