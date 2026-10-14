@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-2dcb541603cd-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "employment-end-dates",
+      "question": "The body gives 19 June 1944 as the end of Smirnov’s work, then describes leave beginning 22 June and release from employment after it expired. Should these dates be reconciled? The source dates and sequence are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "victory-anniversary-date",
+      "question": "The source refers to the 80th anniversary of the Great Victory. Should the timing of that dedication be distinguished from the original publication date? The dedication and metadata date are retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 15,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-08",
+      "url": "https://teletype.in/@history_math/Akademik-Vladimir-Ivanovich-Smirnov-09-08"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
