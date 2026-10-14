@@ -1,0 +1,452 @@
+{
+  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-01.png": {
+    "sha256": "ecfb47a02a236f1f6ada3c7f4c39cb2895ab2a6c96f7819cf20584b6c09727c6",
+    "width": 590,
+    "height": 468,
+    "bytes": 388005,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-01.png-590.webp",
+        "width": 590,
+        "height": 468,
+        "sha256": "1a4f6ff8cbcbb6483ffdd0478ef5d7281320f04d0bc5f4cc85c7e6ffbf8a4798",
+        "bytes": 160926
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-01-ecfb47a02a236f1f6ada3c7f4c39cb2895ab2a6c96f7819cf20584b6c09727c6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558441",
+      "asset_id": 630558441,
+      "release_tag": "article-originals-e",
+      "sha256": "ecfb47a02a236f1f6ada3c7f4c39cb2895ab2a6c96f7819cf20584b6c09727c6",
+      "bytes": 388005
+    }
+  },
+  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-02.png": {
+    "sha256": "043213b407e6d905f0143b2353a72d13d45b73cc66a18ced969dc71e720ee9a5",
+    "width": 272,
+    "height": 141,
+    "bytes": 1800,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-02.png-272.webp",
+        "width": 272,
+        "height": 141,
+        "sha256": "52ad236461ee7521c6d0ef439ecb5c6e3756c2fe74791cf570bb392d583c3f15",
+        "bytes": 730
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-02-043213b407e6d905f0143b2353a72d13d45b73cc66a18ced969dc71e720ee9a5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558591",
+      "asset_id": 630558591,
+      "release_tag": "article-originals-0",
+      "sha256": "043213b407e6d905f0143b2353a72d13d45b73cc66a18ced969dc71e720ee9a5",
+      "bytes": 1800
+    }
+  },
+  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-03.png": {
+    "sha256": "13cadd54ddb2ee5261818fc501b59e3ca5090d400b20e0daa02196ca1fa29383",
+    "width": 584,
+    "height": 800,
+    "bytes": 1210071,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-03.png-584.webp",
+        "width": 584,
+        "height": 800,
+        "sha256": "d5f8f9bbf39ac29946f9d8e5b8590e815901614c3bacca1246dcfd62a9f7eb1d",
+        "bytes": 656192
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-03-13cadd54ddb2ee5261818fc501b59e3ca5090d400b20e0daa02196ca1fa29383.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558735",
+      "asset_id": 630558735,
+      "release_tag": "article-originals-1",
+      "sha256": "13cadd54ddb2ee5261818fc501b59e3ca5090d400b20e0daa02196ca1fa29383",
+      "bytes": 1210071
+    }
+  },
+  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-04.png": {
+    "sha256": "79b9e06be2ab8fe74bf5d8c3548c9f9193d11e1191ee0b76380c058e6e382efb",
+    "width": 800,
+    "height": 800,
+    "bytes": 1101103,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-04.png-800.webp",
+        "width": 800,
+        "height": 800,
+        "sha256": "2a5d896950bc4bfb2e839478866127f8f48fa4a946b1e576a53f70fadbea0383",
+        "bytes": 411892
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-04-79b9e06be2ab8fe74bf5d8c3548c9f9193d11e1191ee0b76380c058e6e382efb.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558869",
+      "asset_id": 630558869,
+      "release_tag": "article-originals-7",
+      "sha256": "79b9e06be2ab8fe74bf5d8c3548c9f9193d11e1191ee0b76380c058e6e382efb",
+      "bytes": 1101103
+    }
+  },
+  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-05.png": {
+    "sha256": "792f89d4c073d4b21d71f311531d3dc2682312b58519dae72fda6967a21746a3",
+    "width": 630,
+    "height": 500,
+    "bytes": 418147,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-05.png-630.webp",
+        "width": 630,
+        "height": 500,
+        "sha256": "04cf4afb2411a7d1129f64af80d670fd8e1bb8c68627693d129c3e773e384b58",
+        "bytes": 190494
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-05-792f89d4c073d4b21d71f311531d3dc2682312b58519dae72fda6967a21746a3.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559077",
+      "asset_id": 630559077,
+      "release_tag": "article-originals-7",
+      "sha256": "792f89d4c073d4b21d71f311531d3dc2682312b58519dae72fda6967a21746a3",
+      "bytes": 418147
+    }
+  },
+  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-06.png": {
+    "sha256": "603deb17143dfc2d170470b9fcdb8863c3981c6f2e39cf7d00ee8574c0fe236e",
+    "width": 2153,
+    "height": 3271,
+    "bytes": 5626513,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-06.png-960.webp",
+        "width": 960,
+        "height": 1459,
+        "sha256": "b68a671c71b352e7e4ab0e04c52b80e5ce091d5e74a04aa494b07ad64e3eebc9",
+        "bytes": 667906
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-06-603deb17143dfc2d170470b9fcdb8863c3981c6f2e39cf7d00ee8574c0fe236e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559240",
+      "asset_id": 630559240,
+      "release_tag": "article-originals-6",
+      "sha256": "603deb17143dfc2d170470b9fcdb8863c3981c6f2e39cf7d00ee8574c0fe236e",
+      "bytes": 5626513
+    }
+  },
+  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-07.png": {
+    "sha256": "7597cd2d7d9b1a3fbf26918427bdb3ffd16aa83b4b065ea0945a42c3279d9000",
+    "width": 800,
+    "height": 1022,
+    "bytes": 1271607,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-07.png-800.webp",
+        "width": 800,
+        "height": 1022,
+        "sha256": "79e29de1a13f83754f8d91a76e931f86bffab07d0cf5d0236ddfe9c542360bb6",
+        "bytes": 547934
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-07-7597cd2d7d9b1a3fbf26918427bdb3ffd16aa83b4b065ea0945a42c3279d9000.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559366",
+      "asset_id": 630559366,
+      "release_tag": "article-originals-7",
+      "sha256": "7597cd2d7d9b1a3fbf26918427bdb3ffd16aa83b4b065ea0945a42c3279d9000",
+      "bytes": 1271607
+    }
+  },
+  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-08.png": {
+    "sha256": "1bdc6890f0e1e6b588089640a0b2458fc80b7ddcf31bd8573e873dbc5f7377af",
+    "width": 352,
+    "height": 264,
+    "bytes": 8149,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-08.png-352.webp",
+        "width": 352,
+        "height": 264,
+        "sha256": "0134bb3fe5bc1fb0455b6144f8b90534c90605955c77ba3380d93fe94f1b606b",
+        "bytes": 5062
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-08-1bdc6890f0e1e6b588089640a0b2458fc80b7ddcf31bd8573e873dbc5f7377af.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559502",
+      "asset_id": 630559502,
+      "release_tag": "article-originals-1",
+      "sha256": "1bdc6890f0e1e6b588089640a0b2458fc80b7ddcf31bd8573e873dbc5f7377af",
+      "bytes": 8149
+    }
+  },
+  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-09.png": {
+    "sha256": "f2536be42c89783c9272143428009c80863a3b4aa9868ed584e35d6dc0aaac5c",
+    "width": 2042,
+    "height": 1119,
+    "bytes": 5402474,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-09-png-reading-960-1fdf2f43186e.webp",
+        "width": 960,
+        "height": 526,
+        "sha256": "1fdf2f43186ec086f6e9897ae39b96d30aca427e053bde9df73804086451b82a",
+        "bytes": 673174
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-09-f2536be42c89783c9272143428009c80863a3b4aa9868ed584e35d6dc0aaac5c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559652",
+      "asset_id": 630559652,
+      "release_tag": "article-originals-f",
+      "sha256": "f2536be42c89783c9272143428009c80863a3b4aa9868ed584e35d6dc0aaac5c",
+      "bytes": 5402474
+    }
+  },
+  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-10.png": {
+    "sha256": "43129f67fe57c7414094c835f42337459b0702cc517d33fd906d15f14e2ddb2f",
+    "width": 576,
+    "height": 738,
+    "bytes": 978721,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-10.png-576.webp",
+        "width": 576,
+        "height": 738,
+        "sha256": "3d92b714e50e758671a2a208c863d53cd8e8473e753b69dbd6c817599aaac167",
+        "bytes": 495322
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-10-43129f67fe57c7414094c835f42337459b0702cc517d33fd906d15f14e2ddb2f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559802",
+      "asset_id": 630559802,
+      "release_tag": "article-originals-4",
+      "sha256": "43129f67fe57c7414094c835f42337459b0702cc517d33fd906d15f14e2ddb2f",
+      "bytes": 978721
+    }
+  },
+  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-11.png": {
+    "sha256": "ed803e414a6c8caae2afb1142ed4ba283693ca9dbeb9e03cc4eba60d09481cf3",
+    "width": 373,
+    "height": 129,
+    "bytes": 5168,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-11.png-373.webp",
+        "width": 373,
+        "height": 129,
+        "sha256": "5c9d120ce392e46c037c934c8cb6bbcb656add54c7d505b76793fe6ee1087cbb",
+        "bytes": 2476
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-11-ed803e414a6c8caae2afb1142ed4ba283693ca9dbeb9e03cc4eba60d09481cf3.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559971",
+      "asset_id": 630559971,
+      "release_tag": "article-originals-e",
+      "sha256": "ed803e414a6c8caae2afb1142ed4ba283693ca9dbeb9e03cc4eba60d09481cf3",
+      "bytes": 5168
+    }
+  },
+  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-12.png": {
+    "sha256": "37603b5850e00ea58625f9af557fc4295de7c95d69507299a2bc43cf214c789b",
+    "width": 1280,
+    "height": 960,
+    "bytes": 3067695,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-12.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "b94bd4e0794e16855a1ddd55f08785b6988e1ff4811dd909afe133357deb3405",
+        "bytes": 790610
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-12-37603b5850e00ea58625f9af557fc4295de7c95d69507299a2bc43cf214c789b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560084",
+      "asset_id": 630560084,
+      "release_tag": "article-originals-3",
+      "sha256": "37603b5850e00ea58625f9af557fc4295de7c95d69507299a2bc43cf214c789b",
+      "bytes": 3067695
+    }
+  },
+  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-13.png": {
+    "sha256": "8345126fef8b759969e80b197fcf0933f55bde3d776bca42cd3fb4e0e7874492",
+    "width": 1000,
+    "height": 1316,
+    "bytes": 1010990,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-13-png-reading-960-7bd798aef63e.webp",
+        "width": 960,
+        "height": 1263,
+        "sha256": "7bd798aef63eca9f4bf88aaf97fffebc04b827cb5ac23fef578be4ac22c1e160",
+        "bytes": 396836
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-13-8345126fef8b759969e80b197fcf0933f55bde3d776bca42cd3fb4e0e7874492.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560225",
+      "asset_id": 630560225,
+      "release_tag": "article-originals-8",
+      "sha256": "8345126fef8b759969e80b197fcf0933f55bde3d776bca42cd3fb4e0e7874492",
+      "bytes": 1010990
+    }
+  },
+  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-14.png": {
+    "sha256": "68d91f2e1ab152446b3ef77cd7fac10f5ef30a13cf8c1f09bc6ea246fb84248a",
+    "width": 588,
+    "height": 366,
+    "bytes": 487455,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-14-png-reading-588-d15b4edac933.webp",
+        "width": 588,
+        "height": 366,
+        "sha256": "d15b4edac9336fb554474e48106252c99653f89d0759303972ab0f9713bf7bfa",
+        "bytes": 163634
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-14-68d91f2e1ab152446b3ef77cd7fac10f5ef30a13cf8c1f09bc6ea246fb84248a.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560380",
+      "asset_id": 630560380,
+      "release_tag": "article-originals-6",
+      "sha256": "68d91f2e1ab152446b3ef77cd7fac10f5ef30a13cf8c1f09bc6ea246fb84248a",
+      "bytes": 487455
+    }
+  },
+  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-15.png": {
+    "sha256": "5efa37aa9bf4f73d6af632f40ef98fd39aa7b411e4184679c04ebdd0cad6f463",
+    "width": 311,
+    "height": 129,
+    "bytes": 4326,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-15-png-reading-311-be2f2e99d3f2.webp",
+        "width": 311,
+        "height": 129,
+        "sha256": "be2f2e99d3f2616c4e637dedb68faed92d514c02477237f37b7fae61cada78c8",
+        "bytes": 2378
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-15-5efa37aa9bf4f73d6af632f40ef98fd39aa7b411e4184679c04ebdd0cad6f463.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560540",
+      "asset_id": 630560540,
+      "release_tag": "article-originals-5",
+      "sha256": "5efa37aa9bf4f73d6af632f40ef98fd39aa7b411e4184679c04ebdd0cad6f463",
+      "bytes": 4326
+    }
+  },
+  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-16.png": {
+    "sha256": "6c40a2627f788243d468a0aa0c5fb62b8d886691841a4b22114f2a67c46c2f69",
+    "width": 801,
+    "height": 512,
+    "bytes": 432997,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-16-png-reading-801-26a9231b601e.webp",
+        "width": 801,
+        "height": 512,
+        "sha256": "26a9231b601e85e4177ec3100062dc8dca5b97db8023949c0a44d11647ebc905",
+        "bytes": 243150
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-16-6c40a2627f788243d468a0aa0c5fb62b8d886691841a4b22114f2a67c46c2f69.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560705",
+      "asset_id": 630560705,
+      "release_tag": "article-originals-6",
+      "sha256": "6c40a2627f788243d468a0aa0c5fb62b8d886691841a4b22114f2a67c46c2f69",
+      "bytes": 432997
+    }
+  },
+  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-17.png": {
+    "sha256": "ce5abc6e771e83909f2de0055456c136e0b2d4e2043ab1f0169b358e209591cd",
+    "width": 650,
+    "height": 365,
+    "bytes": 345690,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-17.png-650.webp",
+        "width": 650,
+        "height": 365,
+        "sha256": "ef14e33f09587a8fddbe1fc48c2cb3c20e67ff5aa331058a358e76ce03dae33d",
+        "bytes": 149912
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-17-ce5abc6e771e83909f2de0055456c136e0b2d4e2043ab1f0169b358e209591cd.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560842",
+      "asset_id": 630560842,
+      "release_tag": "article-originals-c",
+      "sha256": "ce5abc6e771e83909f2de0055456c136e0b2d4e2043ab1f0169b358e209591cd",
+      "bytes": 345690
+    }
+  },
+  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-18.png": {
+    "sha256": "69e23b253aedd482f127768ca7616bfa2eb0d258214475bbfb78a1b62122593e",
+    "width": 557,
+    "height": 779,
+    "bytes": 255797,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-18.png-557.webp",
+        "width": 557,
+        "height": 779,
+        "sha256": "655e101adfe7218e8bc1feeb76046771f8573212bd65f55d922e021b12fb2326",
+        "bytes": 115440
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-18-69e23b253aedd482f127768ca7616bfa2eb0d258214475bbfb78a1b62122593e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560967",
+      "asset_id": 630560967,
+      "release_tag": "article-originals-6",
+      "sha256": "69e23b253aedd482f127768ca7616bfa2eb0d258214475bbfb78a1b62122593e",
+      "bytes": 255797
+    }
+  }
+}
