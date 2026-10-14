@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-eaba3ff1d327-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "golden-section-term",
+      "question": "Please verify the attribution of the term “golden section” to Leonardo da Vinci; its documented terminology may date from much later. The source claim is retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "camera-obscura-attribution",
+      "question": "The source says Leonardo created the camera obscura. Should this distinguish his studies or description of it from an invention claim, given its earlier history? The English preserves the supplied claim.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 10,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-08-31",
+      "url": "https://teletype.in/@history_math/Fontan-idej-da-Vinchi-08-31"
+    }
+  }
+}
