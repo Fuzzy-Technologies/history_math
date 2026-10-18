@@ -2,6 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {parse} from 'yaml';
+import {pagesConfig} from '../scripts/pages-config.mjs';
 
 const cleanup = readFileSync('.github/workflows/cleanup-merged-branch.yml', 'utf8').replace(/\r\n/g, '\n');
 const script = cleanup.split('script: |\n')[1].split('\n').map(line => line.replace(/^            /, '')).join('\n');
@@ -26,7 +27,7 @@ test('publication validates and uploads the build selected by GitHub Pages metad
   assert.equal(configuration.id, 'pages');
   const build = steps.find(step => step.name === 'Build and verify configured Pages site');
   assert.deepEqual(build.env, {
-    PAGES_ORIGIN: '${{ steps.pages.outputs.origin }}',
+    PAGES_ORIGIN: 'https://${{ steps.pages.outputs.host }}',
     PAGES_BASE_PATH: '${{ steps.pages.outputs.base_path }}'
   });
   assert.match(build.run, /node scripts\/pages-config.mjs > "\$RUNNER_TEMP\/history-math-pages.yml"/);
@@ -35,6 +36,20 @@ test('publication validates and uploads the build selected by GitHub Pages metad
   assert.match(build.run, /URL_SITE_DIR=_site-pages URL_BASEURL="\$PAGES_BASE_PATH" URL_ORIGIN="\$PAGES_ORIGIN"/);
   assert.equal(steps.find(step => step.uses?.startsWith('actions/upload-pages-artifact@')).with.path, '_site-pages');
   assert.ok(steps.indexOf(build) < steps.findIndex(step => step.uses?.startsWith('actions/upload-pages-artifact@')));
+});
+
+test('publication uses HTTPS even when Pages reports HTTP before certificate activation', () => {
+  const workflow = parse(readFileSync('.github/workflows/deploy.yml', 'utf8'));
+  const build = workflow.jobs.build.steps.find(step => step.name === 'Build and verify configured Pages site');
+  for (const [host, base_path] of [['history-math.org', ''], ['fuzzy-technologies.com', '/history_math']]) {
+    const outputs = {origin: `http://${host}`, host, base_path};
+    const environment = Object.fromEntries(Object.entries(build.env).map(([name, value]) => [name,
+      value.replace(/\$\{\{ steps\.pages\.outputs\.(\w+) \}\}/g, (_, key) => outputs[key])
+    ]));
+    assert.deepEqual(pagesConfig(environment.PAGES_ORIGIN, environment.PAGES_BASE_PATH), {
+      url: `https://${host}`, baseurl: base_path
+    });
+  }
 });
 async function cleanupScenario(overrides = {}) {
   const pr = {merged: true, base: {ref: 'master'}, head: {ref: 'feature/example', sha: 'old', repo: {full_name: 'Fuzzy-Technologies/history_math'}}, ...overrides.pr};
