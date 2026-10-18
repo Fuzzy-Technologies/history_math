@@ -69,8 +69,11 @@ def ExternalLocaleError(url, language):
     return False
 
 
-def CheckSite(sitePath, basePath):
+def CheckSite(sitePath, basePath, site_origin="https://fuzzy-technologies.github.io"):
+    """Check rendered files against the configured publication origin and path."""
+
     sitePath = Path(sitePath).resolve()
+    origin_parts = urlsplit(site_origin)
     errors = []
     parsed = {}
     for path in sitePath.rglob("*.html"):
@@ -81,7 +84,7 @@ def CheckSite(sitePath, basePath):
     def Resolve(url, source):
         parts = urlsplit(url)
         if parts.scheme or parts.netloc:
-            if parts.netloc != "fuzzy-technologies.github.io":
+            if parts.netloc != origin_parts.netloc:
                 return None
             if not parts.path.startswith(basePath + "/") and basePath:
                 return None
@@ -115,7 +118,7 @@ def CheckSite(sitePath, basePath):
             publicPath = "/" + relative.removesuffix("index.html")
         else:
             publicPath = "/" + relative
-        expectedCanonical = "https://fuzzy-technologies.github.io" + basePath + publicPath
+        expectedCanonical = site_origin + basePath + publicPath
         if page.redirect:
             match = re.fullmatch(r"(/(?:ru/)?articles/hm-(?:tt-)?[0-9a-f]{12})/", publicPath)
             expectedRedirect = basePath + match[1] + "-" + expectedLanguage + "/" if match else None
@@ -123,7 +126,7 @@ def CheckSite(sitePath, basePath):
             if (page.redirect != expectedRedirect or page.robots != "noindex, follow" or
                     target not in parsed or parsed[target].redirect or parsed[target].language != expectedLanguage):
                 errors.append(f"{path}: invalid article redirect")
-            expectedCanonical = "https://fuzzy-technologies.github.io" + (expectedRedirect or "")
+            expectedCanonical = site_origin + (expectedRedirect or "")
         if page.canonical != [expectedCanonical]:
             errors.append(f"{path}: wrong canonical {page.canonical}")
         for url, language in page.externalAnchors:
@@ -171,4 +174,5 @@ def CheckSite(sitePath, basePath):
 
 
 if __name__ == "__main__":
-    CheckSite(sys.argv[1] if len(sys.argv) > 1 else "_site", sys.argv[2] if len(sys.argv) > 2 else "/history_math")
+    CheckSite(sys.argv[1] if len(sys.argv) > 1 else "_site", sys.argv[2] if len(sys.argv) > 2 else "/history_math",
+              sys.argv[3] if len(sys.argv) > 3 else "https://fuzzy-technologies.github.io")

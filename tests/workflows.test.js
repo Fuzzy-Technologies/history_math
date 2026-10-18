@@ -18,6 +18,24 @@ test('source checks use shallow heads and publication resolves the exact master 
   const deploy = readFileSync('.github/workflows/deploy.yml', 'utf8');
   assert.match(deploy, /HISTORY_MATH_PUBLICATION_REF="\$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build/);
 });
+
+test('publication validates and uploads the build selected by GitHub Pages metadata', () => {
+  const workflow = parse(readFileSync('.github/workflows/deploy.yml', 'utf8'));
+  const steps = workflow.jobs.build.steps;
+  const configuration = steps.find(step => step.uses?.startsWith('actions/configure-pages@'));
+  assert.equal(configuration.id, 'pages');
+  const build = steps.find(step => step.name === 'Build and verify configured Pages site');
+  assert.deepEqual(build.env, {
+    PAGES_ORIGIN: '${{ steps.pages.outputs.origin }}',
+    PAGES_BASE_PATH: '${{ steps.pages.outputs.base_path }}'
+  });
+  assert.match(build.run, /node scripts\/pages-config.mjs > "\$RUNNER_TEMP\/history-math-pages.yml"/);
+  assert.match(build.run, /jekyll build --config "_config.yml,\$RUNNER_TEMP\/history-math-pages.yml" --destination _site-pages/);
+  assert.match(build.run, /python3 scripts\/check_site.py _site-pages "\$PAGES_BASE_PATH" "\$PAGES_ORIGIN"/);
+  assert.match(build.run, /URL_SITE_DIR=_site-pages URL_BASEURL="\$PAGES_BASE_PATH" URL_ORIGIN="\$PAGES_ORIGIN"/);
+  assert.equal(steps.find(step => step.uses?.startsWith('actions/upload-pages-artifact@')).with.path, '_site-pages');
+  assert.ok(steps.indexOf(build) < steps.findIndex(step => step.uses?.startsWith('actions/upload-pages-artifact@')));
+});
 async function cleanupScenario(overrides = {}) {
   const pr = {merged: true, base: {ref: 'master'}, head: {ref: 'feature/example', sha: 'old', repo: {full_name: 'Fuzzy-Technologies/history_math'}}, ...overrides.pr};
   let deleted = 0;

@@ -34,6 +34,7 @@ jobs:
           node-version: '22'
           cache: npm
       - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+        id: pages
       - name: Restore incremental PDF cache
         id: pdf-cache
         uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
@@ -60,15 +61,18 @@ jobs:
           npm run test:browser
           node tests/article-details-browser.mjs
           node tests/article-urls-browser.mjs
-      - name: Verify root-domain portability
+      - name: Build and verify configured Pages site
+        env:
+          PAGES_ORIGIN: ${{ steps.pages.outputs.origin }}
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
         run: |
-          HISTORY_MATH_PUBLICATION_REF="$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build --baseurl '' --destination _site-domain --trace
-          node scripts/article-pdf.mjs --site-dir _site-domain
-          python3 scripts/check_site.py _site-domain ''
-          IMAGE_SITE_DIR=_site-domain IMAGE_BASEURL='' node tests/image-delivery-browser.mjs
-          ERROR_SITE_DIR=_site-domain ERROR_BASEURL='' node tests/errors-browser.mjs
-          URL_SITE_DIR=_site-domain URL_BASEURL='' node tests/article-urls-browser.mjs
-          rm -rf _site-domain
+          node scripts/pages-config.mjs > "$RUNNER_TEMP/history-math-pages.yml"
+          HISTORY_MATH_PUBLICATION_REF="$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build --config "_config.yml,$RUNNER_TEMP/history-math-pages.yml" --destination _site-pages --trace
+          node scripts/article-pdf.mjs --site-dir _site-pages
+          python3 scripts/check_site.py _site-pages "$PAGES_BASE_PATH" "$PAGES_ORIGIN"
+          IMAGE_SITE_DIR=_site-pages IMAGE_BASEURL="$PAGES_BASE_PATH" node tests/image-delivery-browser.mjs
+          ERROR_SITE_DIR=_site-pages ERROR_BASEURL="$PAGES_BASE_PATH" node tests/errors-browser.mjs
+          URL_SITE_DIR=_site-pages URL_BASEURL="$PAGES_BASE_PATH" URL_ORIGIN="$PAGES_ORIGIN" node tests/article-urls-browser.mjs
       - name: Save validated PDF cache
         if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
         uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
@@ -77,7 +81,7 @@ jobs:
           key: ${{ steps.pdf-cache.outputs.cache-primary-key }}
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
-          path: _site
+          path: _site-pages
   deploy:
     if: github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
     needs: build

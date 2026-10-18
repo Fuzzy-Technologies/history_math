@@ -6,6 +6,7 @@ import {chromium} from 'playwright';
 
 const root = resolve(process.env.URL_SITE_DIR || '_site');
 const base = process.env.URL_BASEURL ?? '/history_math';
+const publicOrigin = process.env.URL_ORIGIN ?? 'https://fuzzy-technologies.github.io';
 const mime = {'.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2'};
 const server = createServer(async (request, response) => {
   try {
@@ -35,7 +36,7 @@ try {
     await page.goto(origin + base + legacy + suffix, {waitUntil: 'networkidle'});
     await page.waitForURL(origin + base + article.url + suffix);
     assert.equal(await page.locator('html').getAttribute('lang'), article.lang);
-    assert.equal(await page.locator('link[rel=canonical]').getAttribute('href'), 'https://fuzzy-technologies.github.io' + base + article.url);
+    assert.equal(await page.locator('link[rel=canonical]').getAttribute('href'), publicOrigin + base + article.url);
     await page.locator('.article-details summary').click();
     assert.ok((await page.locator('.article-details').innerText()).includes(article.url));
     const otherLang = article.lang === 'ru' ? 'en' : 'ru';
