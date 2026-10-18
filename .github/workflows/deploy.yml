@@ -63,7 +63,8 @@ jobs:
           node tests/article-urls-browser.mjs
       - name: Build and verify configured Pages site
         env:
-          PAGES_ORIGIN: ${{ steps.pages.outputs.origin }}
+          # Pages can report HTTP while the custom-domain certificate is being issued.
+          PAGES_ORIGIN: https://${{ steps.pages.outputs.host }}
           PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
         run: |
           node scripts/pages-config.mjs > "$RUNNER_TEMP/history-math-pages.yml"
