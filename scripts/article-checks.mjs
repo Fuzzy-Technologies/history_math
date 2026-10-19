@@ -3,7 +3,7 @@ import {resolve, relative, sep} from 'node:path';
 import {createHash} from 'node:crypto';
 import {runInNewContext} from 'node:vm';
 import Ajv from 'ajv';
-import {parseDocument} from 'yaml';
+import {parseArticle} from './article-frontmatter.mjs';
 import {articleUrl} from './article-url.mjs';
 import {checkReview} from './article-review.mjs';
 import {externalEntry, imageInventory} from './external-originals.mjs';
@@ -14,13 +14,7 @@ const katex = katexModule.exports;
 const schema = JSON.parse(readFileSync(new URL('../schemas/article-v1.schema.json', import.meta.url)));
 const validate = new Ajv({allErrors: true, strict: false}).compile(schema);
 
-export function parseArticle(text) {
-  const match = /^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/.exec(text);
-  if (!match) throw new Error('YAML front matter required');
-  const yaml = parseDocument(match[1], {uniqueKeys: true});
-  if (yaml.errors.length) throw new Error(yaml.errors.map(x => x.message).join('; '));
-  return {data: yaml.toJS(), body: match[2], bodyLine: match[1].split('\n').length + 3};
-}
+export {parseArticle};
 
 export function checkArticle(text, file, root, identities = new Set()) {
   const findings = [];
