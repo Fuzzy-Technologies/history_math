@@ -233,8 +233,12 @@ class PublicationTest < Minitest::Test
 
   def test_five_english_adaptations_preview_pairing_and_approved_discovery
     with_site do |source, config|
-      paths = Dir.glob(File.join(source, "_articles/hm-*.en.md")).select { |path| File.basename(path).match?(/\Ahm-[a-f0-9]{12}\.en\.md\z/) }
+      keys = JSON.parse(File.read(File.join(source, "_data/english_notices.json"))).keys
+      paths = keys.map { |key| File.join(source, "_articles/#{key}.en.md") }
       assert_equal 5, paths.length
+      # This scenario edits only the original five translation fixtures.
+      # Newly published translations must not leak into its empty-index assertions.
+      (Dir.glob(File.join(source, "_articles/*.en.md")) - paths).each { |path| File.delete(path) }
       production = Jekyll::Site.new(config)
       production.process
       records = JSON.parse(File.read(File.join(production.dest, "assets/search-en.json")))
