@@ -105,7 +105,10 @@ number and discussion remain. GitHub may retain earlier PR references, so this
 does not promise immediate deletion of every server-side object.
 
 PDFs are build outputs rather than committed authoring files. Generate them
-after the owner approves the article and merges into `master`; PR preparation
+after the owner approves the article and the agent merges it into `master`; PR preparation
 uses source checks without a local site build or browser session. The owner
 reviews the complete bilingual article, images and any open editorial questions
-before deciding whether to publish.
+before posting a new top-level `Approved` comment. That owner decision authorizes
+the agent to finish the technical publication steps, verify current-head CI and
+merge the reviewed package without another confirmation. See
+[the development protocol](../DEVELOPMENT_PROTOCOL.md#change-process).

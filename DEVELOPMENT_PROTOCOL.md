@@ -1,6 +1,6 @@
 # Development protocol
 
-Version: 1.2. Project: Mathematics with Mansur (`history_math`). This owner-controlled contract applies to human contributors and automation. Its initial creation is authorized by the prototype task; future changes require owner instruction.
+Version: 1.3. Project: Mathematics with Mansur (`history_math`). This owner-controlled contract applies to human contributors and automation. Its initial creation is authorized by the prototype task; future changes require owner instruction.
 
 ## Architecture and authority
 
@@ -13,9 +13,13 @@ The pipeline reads existing FELab metadata and NAS originals, prepares public Ma
 3. Make a focused change on `feature/*` branched from `master`.
 4. Run relevant checks, inspect the diff, and capture browser evidence for layout changes.
 5. Push without history rewriting and open a PR to `master`. Assign it to `Tim55667757`, add the `documentation` label, and verify both fields. The owner-authorized article preparation exception below permits replacing a pinned article branch after verified external storage.
-6. Let Timur decide whether to merge. The merge into `master` approves publication and starts the existing Pages deployment. No second promotion PR is required.
+6. For article PRs, obtain Timur's final `Approved`, complete the delegated publication preparation and current-head CI checks, then merge into `master` on his behalf. For other PRs, follow their explicit merge authorization. The article merge starts the existing Pages deployment; no second promotion PR is required.
 
-For article PRs, complete editorial corrections and technical checks before requesting the owner's final review. Timur must review the final version, explicitly write `Approved`, and merge the article PR himself. Neither a technical PASS, an infrastructure merge nor an agent-written approval record substitutes for this decision. Record only approval actually given by the owner; any later change to article text or images requires renewed review and `Approved` for that version. This rule was explicitly reaffirmed by the owner on 2026-10-12.
+For article PRs, Timur may edit the existing branch directly or request corrections from the agent. When satisfied with the complete bilingual package, images and listed editorial questions, he posts a new top-level PR comment containing only `Approved` from `Tim55667757`. On 2026-10-19 he explicitly delegated the subsequent technical preparation and merge to the agent, superseding the earlier requirement that he merge articles himself. No additional confirmation is needed for that approved package.
+
+Treat the comment as the owner's editorial decision and permission to publish the reviewed revision. Verify its author and actual comment/review context, pin the reviewed source commit, and retain the approval comment URL and source commit with the review data. An unqualified approval accepts the current wording: remaining questions may be recorded as accepted with that evidence, without inventing historical answers. An agent-written record or a green check is never a substitute for real owner approval. If the reviewed revision cannot be established, stop before publication and obtain a new approval.
+
+After approval, preserve the reviewed prose, formulas, captions, translations and image bytes. The agent may finalize publication status and approval metadata, calculate the required package digests, refresh the PR description and transition it out of draft without asking for another approval. Any subsequent editorial or image change requires renewed review and a new `Approved`; editing an old approval comment is not a new approval. Recheck the live head and successful required CI for the final commit before merging with an expected-head SHA. Follow the master publication run and report the actual site/PDF result or a concrete blocker. The existing guarded cleanup handles eligible merged branches.
 
 Never merge a PR, publish a release/tag, or change visibility without explicit authorization. Do not enable auto-merge or repository-wide automatic branch deletion. The guarded existing cleanup workflow deletes only eligible merged feature branches into `master`.
 
