@@ -3,8 +3,18 @@ import assert from 'node:assert/strict';
 import {mkdtempSync, mkdirSync, readFileSync, writeFileSync, rmSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {resolve} from 'node:path';
+import {spawnSync} from 'node:child_process';
 import {checkReview, packageDigest} from '../scripts/article-review.mjs';
 import {checkArticle} from '../scripts/article-checks.mjs';
+
+test('review digest CLI completes without a cyclic import and requires an article path', () => {
+  const result = spawnSync(process.execPath, ['scripts/article-review.mjs', 'templates/minimal-article.md'], {encoding: 'utf8', timeout: 10000});
+  assert.equal(result.status, 0, result.stderr);
+  assert.match(result.stdout.trim(), /^[a-f0-9]{64}$/);
+  const missing = spawnSync(process.execPath, ['scripts/article-review.mjs'], {encoding: 'utf8', timeout: 10000});
+  assert.notEqual(missing.status, 0);
+  assert.match(missing.stderr, /Usage: node scripts\/article-review\.mjs/);
+});
 
 test('short biographies need no artificial heading and retain the Personalia tag', () => {
   const text = readFileSync('templates/minimal-article.md', 'utf8').replace('## First section {#first-section}\n\n', '').replace('lang: en', 'lang: ru').replace('/articles/', '/ru/articles/').replace('tags: [example]', 'series: Персоналии\ntags: [Персоналии]');

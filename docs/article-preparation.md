@@ -108,7 +108,8 @@ PDFs are build outputs rather than committed authoring files. Generate them
 after the owner approves the article and the agent merges it into `master`; PR preparation
 uses source checks without a local site build or browser session. The owner
 reviews the complete bilingual article, images and any open editorial questions
-before posting a new top-level `Approved` comment. That owner decision authorizes
+before posting a new `Approved` PR discussion comment or submitting an overall
+review with that main body. A `COMMENTED` review is valid. That decision authorizes
 the agent to finish the technical publication steps, verify current-head CI and
 merge the reviewed package without another confirmation. See
 [the development protocol](../DEVELOPMENT_PROTOCOL.md#change-process).
