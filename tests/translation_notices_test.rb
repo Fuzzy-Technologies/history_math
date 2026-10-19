@@ -15,6 +15,10 @@ class TranslationNoticesTest < Minitest::Test
       FileUtils.cp_r(File.expand_path("../schemas", __dir__), File.join(root, "schemas"))
       FileUtils.cp_r(File.expand_path("../reviews", __dir__), File.join(root, "reviews"))
       # These scenarios deliberately exercise articles that have no translation yet.
+      notice_keys = JSON.parse(File.read(File.join(source, "_data/english_notices.json"))).keys
+      Dir.glob(File.join(source, "_articles/hm-*.ru.md")).each do |path|
+        File.delete(path) unless notice_keys.include?(File.basename(path, ".ru.md"))
+      end
       Dir.glob(File.join(source, "_articles/*.en.md")).each { |path| File.delete(path) }
       Dir.glob(File.expand_path("fixtures/articles/*.md", __dir__)).each { |file| FileUtils.cp(file, File.join(source, "_articles")) }
       config = Jekyll.configuration("config" => File.expand_path("../_config.yml", __dir__),
