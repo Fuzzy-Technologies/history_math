@@ -13,6 +13,11 @@ Dir.mktmpdir("history-math-browser") do |root|
   FileUtils.cp_r("site", source)
   FileUtils.cp_r("schemas", File.join(root, "schemas"))
   FileUtils.cp_r("reviews", File.join(root, "reviews"))
+  # Keep the legacy reading/grouping fixture independent of new production articles.
+  fixture_keys = JSON.parse(File.read("site/_data/english_notices.json")).keys
+  Dir.glob(File.join(source, "_articles/hm-*.md")).each do |path|
+    File.delete(path) unless fixture_keys.include?(File.basename(path).sub(/\.(?:ru|en)\.md\z/, ""))
+  end
   Dir.glob("tests/fixtures/articles/*.md").each { |file| FileUtils.cp(file, File.join(source, "_articles")) }
   %w[ru en].each do |language|
     46.times do |index|

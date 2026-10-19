@@ -3,6 +3,7 @@ import {readFile, stat} from 'node:fs/promises';
 import {resolve, extname, sep} from 'node:path';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
+import {publishedArticles} from './published-articles.mjs';
 
 const root = resolve(process.env.URL_SITE_DIR || '_site');
 const base = process.env.URL_BASEURL ?? '/history_math';
@@ -24,7 +25,10 @@ const origin = `http://127.0.0.1:${server.address().port}`;
 const browser = await chromium.launch({executablePath: process.env.BROWSER_EXECUTABLE || undefined});
 try {
   const records = JSON.parse(await readFile(resolve(root, 'assets/article-pdfs.json'), 'utf8')).articles;
-  assert.equal(records.length, 10);
+  const expected = publishedArticles();
+  assert.ok(expected.length > 0, 'The route check needs published source articles');
+  assert.deepEqual(records.map(article => `${article.lang}:${article.url}`).sort(),
+    expected.map(article => `${article.lang}:${article.url}`).sort());
   for (const article of records) {
     const page = await browser.newPage({viewport: {width: 320, height: 800}});
     const errors = [];

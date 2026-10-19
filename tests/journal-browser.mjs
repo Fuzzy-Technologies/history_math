@@ -3,7 +3,8 @@ import {readFile, stat, mkdir} from 'node:fs/promises';
 import {resolve, extname} from 'node:path';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
-import {journalGroups} from '../site/assets/core.js';
+import {journalGroups, search} from '../site/assets/core.js';
+import {publishedArticles} from './published-articles.mjs';
 
 async function serve(directory) {
   const root = resolve(directory);
@@ -37,9 +38,13 @@ async function audit(page) {
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false);
 }
 try {
-  assert.equal(records.length, 5);
+  const expected = publishedArticles();
+  assert.ok(expected.length > 0, 'The journal check needs published source articles');
+  for (const [language, index] of [['ru', records], ['en', englishRecords]]) {
+    assert.deepEqual(index.map(record => record.url).sort(),
+      expected.filter(article => article.lang === language).map(article => '/history_math' + article.url).sort());
+  }
   assert.ok(records.every(record => record.status === 'published' && !record.url.includes('/demo-')));
-  assert.equal(englishRecords.length, 5);
   assert.ok(englishRecords.every(record => record.status === 'published' && !record.translation_notice));
   for (const width of [320, 390, 1440]) for (const theme of ['light', 'dark']) {
     const page = await browser.newPage({viewport: {width, height: 1000}, colorScheme: theme, reducedMotion: 'reduce', timezoneId: 'Europe/Moscow'});
@@ -47,13 +52,17 @@ try {
     page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
     for (const language of ['ru', 'en']) {
       const prefix = language === 'ru' ? '/ru' : '';
+      const index = language === 'ru' ? records : englishRecords;
+      const groups = journalGroups(index, language);
       await page.goto(production.base + prefix + '/', {waitUntil: 'networkidle'});
-      assert.equal(await page.locator('#latest-cards .material-card').count(), 5);
+      assert.deepEqual(await page.locator('#latest-cards h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))),
+        groups.latest.map(record => record.url));
       assert.equal(await page.locator('.plate-label, .carousel-status, .journal-pagination').count(), 0);
-      assert.equal(await page.locator('#hero-picks a').count(), 0);
-      assert.equal(await page.locator('#hero-picks .selection-empty').isVisible(), true);
+      assert.equal(await page.locator('#hero-picks a').count(), Math.min(4, groups.featured.length));
+      assert.equal(await page.locator('#hero-picks .selection-empty').count(), groups.featured.length ? 0 : 1);
       assert.equal(await page.locator('.archive-section').isVisible(), true);
-      assert.equal(await page.locator('#archive-cards .selection-empty').isVisible(), true);
+      assert.equal(await page.locator('#archive-cards h3 a').count(), Math.min(4, groups.archive.length));
+      assert.equal(await page.locator('#archive-cards .selection-empty').count(), groups.archive.length ? 0 : 1);
       const navigation = page.locator('.navigation-bar > nav');
       assert.deepEqual(await navigation.locator('a').allTextContents(), language === 'ru' ?
         ['Главная', 'Читальный зал', 'Витрина', 'Поиск'] : ['Home', 'Reading room', 'Showcase', 'Search']);
@@ -65,17 +74,22 @@ try {
       await audit(page);
       await page.screenshot({path: `test-results/journal-polish/home-${language}-${width}-${theme}.png`, fullPage: true});
       await page.goto(production.base + prefix + '/materials/', {waitUntil: 'networkidle'});
-      assert.equal(await page.locator('.catalog-list .material-card').count(), 5);
+      assert.equal(await page.locator('.catalog-list .material-card').count(), index.length);
       assert.equal(await page.locator('link[hreflang]').count(), 2);
-      assert.match(await page.locator('#catalog-count').innerText(), language === 'ru' ? /Материалов: 5/ : /Articles: 5/);
+      assert.equal((await page.locator('#catalog-count').innerText()).trim(),
+        `${language === 'ru' ? 'Материалов' : 'Articles'}: ${index.length}`);
       await audit(page);
       await page.goto(production.base + prefix + '/search/', {waitUntil: 'networkidle'});
       assert.equal(await page.locator('link[hreflang]').count(), 2);
-      await page.locator('#query').fill(language === 'ru' ? 'Гарднер' : 'Gardner');
+      const query = language === 'ru' ? 'Гарднер' : 'Gardner';
+      const matches = search(index, query, language);
+      assert.ok(matches.length > 0);
+      await page.locator('#query').fill(query);
       await page.locator('#search-form button').click();
-      await page.waitForFunction(() => document.querySelectorAll('#search-results h3 a').length === 1);
+      await page.waitForFunction(count => document.querySelectorAll('#search-results h3 a').length === count, matches.length);
       assert.equal(await page.locator('#search-results .translation-label').count(), 0);
-      assert.match(await page.locator('#search-status').innerText(), language === 'ru' ? /Найдено материалов: 1/ : /Articles found: 1/);
+      assert.equal((await page.locator('#search-status').innerText()).trim(),
+        `${language === 'ru' ? 'Найдено материалов' : 'Articles found'}: ${matches.length}`);
       await audit(page);
     }
     for (const record of records) {
@@ -163,7 +177,7 @@ try {
     await page.close();
   }
   assert.deepEqual(errors, []);
-  console.log('PASS: five published articles, captions, math punctuation, metadata/PDF placement, local-day reload, bilingual navigation/search/about pages, exclusive newest ten, quarter/three-quarter pools, reload rotation and visible empty states with/without JS');
+  console.log('PASS: published source articles, captions, math punctuation, metadata/PDF placement, local-day reload, bilingual navigation/search/about pages, exclusive newest ten, quarter/three-quarter pools, reload rotation and visible empty states with/without JS');
 } finally {
   await browser.close();
   await Promise.all([production, fixture].map(({server}) => new Promise(done => server.close(done))));
