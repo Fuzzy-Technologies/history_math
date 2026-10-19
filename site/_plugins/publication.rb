@@ -127,6 +127,7 @@ module HistoryMath
 
     def generate(site)
       documents = HistoryMath.visible_documents(site)
+      image_assets = HistoryMath.image_inventory(site)
       groups = documents.select { |doc| doc.data["translation_key"] }.group_by { |doc| doc.data["translation_key"] }
       groups.each_value do |group|
         languages = group.map { |doc| doc.data["lang"] }
@@ -142,7 +143,7 @@ module HistoryMath
           text = CGI.unescapeHTML(html.gsub(/<[^>]*>/, " ")).gsub(/\s+/, " ").strip
           {title: doc.data["title"], description: doc.data["description"], tags: doc.data["tags"],
            type: doc.data["type"], language: language, date: doc.data["date"].strftime("%Y-%m-%d"),
-           url: site.baseurl + doc.url, text: text, translation_notice: doc.data["translation_notice"] == true, status: doc.data["status"], preview_image: doc.data["preview_image"] && site.baseurl + (site.data.fetch("image_assets").dig(doc.data["preview_image"], "variants", 0, "path") || doc.data["preview_image"])}
+           url: site.baseurl + doc.url, text: text, translation_notice: doc.data["translation_notice"] == true, status: doc.data["status"], preview_image: doc.data["preview_image"] && site.baseurl + (image_assets.dig(doc.data["preview_image"], "variants", 0, "path") || doc.data["preview_image"])}
         end
         page = Jekyll::PageWithoutAFile.new(site, site.source, "assets", "search-#{language}.json")
         page.content = JSON.generate(records.reject { |record| record[:translation_notice] })

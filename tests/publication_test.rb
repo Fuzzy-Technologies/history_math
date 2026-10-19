@@ -302,4 +302,30 @@ class PublicationTest < Minitest::Test
       end
     end
   end
+
+  def test_external_originals_use_existing_local_previews_in_indexes_and_social_metadata
+    with_site do |_source, config|
+      site = Jekyll::Site.new(config)
+      site.process
+      inventory = HistoryMath.image_inventory(site)
+      documents = site.collections.fetch("articles").docs.select do |doc|
+        inventory.dig(doc.data["preview_image"], "external_original")
+      end
+      refute_empty documents, "The migrated article exercises split image manifests"
+      documents.each do |doc|
+        %w[search discovery].each do |kind|
+          records = JSON.parse(File.read(File.join(site.dest, "assets/#{kind}-#{doc.data['lang']}.json")))
+          record = records.find { |item| item["url"] == site.baseurl + doc.url }
+          refute_nil record
+          assert_match %r{\A#{Regexp.escape(site.baseurl)}/assets/images/previews/}, record["preview_image"]
+          assert File.file?(File.join(site.dest, record["preview_image"].delete_prefix(site.baseurl).delete_prefix("/")))
+        end
+        html = File.read(doc.destination(site.dest))
+        social_image = html[/<meta property="og:image" content="([^"]+)"/, 1]
+        refute_nil social_image
+        assert_match %r{/assets/images/previews/}, social_image
+        refute File.exist?(File.join(site.dest, doc.data["preview_image"].delete_prefix("/")))
+      end
+    end
+  end
 end
