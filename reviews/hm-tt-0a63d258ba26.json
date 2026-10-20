@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-0a63d258ba26",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-20",
+    "package_sha256": "42bd76a1319fde1cda2db5beddc47ac0c31525536eb3a602123aab925e70d6e3",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/239#issuecomment-6300190813",
+    "source_commit": "e54af7d6b1ab59cab50aaec6ee04ae88282ace05",
+    "source_comment_id": 6300190813,
+    "source_review_state": "ISSUE_COMMENT",
+    "approved_at": "2026-10-20T19:58:57Z",
+    "prepared_from_commit": "e54af7d6b1ab59cab50aaec6ee04ae88282ace05",
+    "post_review_changes": "No changes after the reviewed source revision."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-08-28",
+      "url": "https://teletype.in/@history_math/Istoriya-matematicheskih-instrumentov-08-28"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
