@@ -8,13 +8,13 @@ export function catalogState(params, {types = [], tags = []} = {}) {
   return {
     type: types.includes(params.get('type')) ? params.get('type') : '',
     tag: tags.includes(params.get('tag')) ? params.get('tag') : '',
-    perPage: catalogPageSizes.includes(perPage) ? perPage : 10,
+    perPage: catalogPageSizes.includes(perPage) ? perPage : 20,
     page: positiveInteger(params.get('page'))
   };
 }
 
 export function catalogPage(items, state) {
-  const perPage = catalogPageSizes.includes(state.perPage) ? state.perPage : 10;
+  const perPage = catalogPageSizes.includes(state.perPage) ? state.perPage : 20;
   const matching = items.filter(item => (!state.type || item.type === state.type) && (!state.tag || item.tags.includes(state.tag)));
   const pageCount = Math.ceil(matching.length / perPage);
   const requested = Number.isSafeInteger(state.page) && state.page > 0 ? state.page : 1;
@@ -43,7 +43,7 @@ export function catalogPageNumbers(page, pageCount) {
 export function catalogUrl(current, state) {
   const url = new URL(current);
   for (const [key, value] of [['type', state.type], ['tag', state.tag],
-    ['page', state.page > 1 ? String(state.page) : ''], ['per_page', state.perPage !== 10 ? String(state.perPage) : '']]) {
+    ['page', state.page > 1 ? String(state.page) : ''], ['per_page', state.perPage !== 20 ? String(state.perPage) : '']]) {
     if (value) url.searchParams.set(key, value); else url.searchParams.delete(key);
   }
   return url;

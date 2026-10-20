@@ -77,7 +77,7 @@ try {
       await audit(page);
       await page.screenshot({path: `test-results/journal-polish/home-${language}-${width}-${theme}.png`, fullPage: true});
       await page.goto(production.base + prefix + '/materials/', {waitUntil: 'networkidle'});
-      assert.equal(await page.locator('.catalog-list .material-card').count(), Math.min(10, index.length));
+      assert.equal(await page.locator('.catalog-list .material-card').count(), Math.min(20, index.length));
       assert.equal(await page.locator('link[hreflang]').count(), 2);
       assert.equal((await page.locator('#catalog-count').innerText()).trim(),
         `${language === 'ru' ? 'Материалов' : 'Articles'}: ${index.length}`);
@@ -176,7 +176,7 @@ try {
     await page.screenshot({path: `test-results/journal-polish/populated-${language}-${width}-${javaScriptEnabled}.png`, fullPage: true});
     await page.locator('.cover-bottom a').click();
     await page.waitForLoadState('networkidle');
-    assert.equal(await page.locator('.catalog-list .material-card').count(), javaScriptEnabled ? Math.min(10, fixtureRecords.length) : fixtureRecords.length);
+    assert.equal(await page.locator('.catalog-list .material-card').count(), javaScriptEnabled ? Math.min(20, fixtureRecords.length) : fixtureRecords.length);
     await page.close();
   }
   assert.deepEqual(errors, []);

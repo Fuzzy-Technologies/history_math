@@ -8,12 +8,12 @@ const items = Array.from({length: 107}, (_, index) => ({id: index + 1,
 
 test('catalog defaults, URL validation and supported page sizes are stable', () => {
   assert.deepEqual(catalogPageSizes, [5, 10, 20, 50, 100]);
-  assert.deepEqual(catalogState(new URLSearchParams(), options), {type: '', tag: '', page: 1, perPage: 10});
+  assert.deepEqual(catalogState(new URLSearchParams(), options), {type: '', tag: '', page: 1, perPage: 20});
   assert.deepEqual(catalogState(new URLSearchParams('type=problem&tag=%D1%81%D1%87%D1%91%D1%82&page=3&per_page=50'), options),
     {type: 'problem', tag: 'счёт', page: 3, perPage: 50});
   for (const value of ['0', '-1', '1.5', 'Infinity', 'NaN', '9007199254740992', '1e3', '1e2', '0x32', ' 50 ', '100.0', '+20', '<script>']) {
     const state = catalogState(new URLSearchParams({page: value, per_page: value, type: value, tag: value}), options);
-    assert.deepEqual(state, {type: '', tag: '', page: 1, perPage: 10});
+    assert.deepEqual(state, {type: '', tag: '', page: 1, perPage: 20});
   }
 });
 
@@ -43,7 +43,7 @@ test('filters apply to the whole archive before slicing and clamp a stale page',
   assert.deepEqual(result.items, matching.slice((result.page - 1) * 5));
   const empty = catalogPage(items, {type: 'essay', tag: '', perPage: 10, page: 20});
   assert.deepEqual(empty, {items: [], total: 0, pageCount: 0, page: 1, perPage: 10, start: 0, end: 0});
-  assert.equal(catalogPage(items, {type: '', tag: '', perPage: 7, page: -2}).items.length, 10);
+  assert.equal(catalogPage(items, {type: '', tag: '', perPage: 7, page: -2}).items.length, 20);
 });
 
 test('numbered navigation remains bounded and keeps edges/current neighbours for thousands of pages', () => {
@@ -72,6 +72,10 @@ test('catalog URLs round-trip Unicode filters, preserve unrelated state and omit
   assert.equal(url.hash, current.hash);
   assert.equal(url.searchParams.get('from'), 'menu');
   assert.deepEqual(catalogState(url.searchParams, options), state);
-  const reset = catalogUrl(url, {type: '', tag: '', perPage: 10, page: 1});
+  assert.equal(url.searchParams.has('per_page'), false);
+  const reset = catalogUrl(url, {type: '', tag: '', perPage: 20, page: 1});
   assert.equal(reset.search, '?from=menu');
+  const ten = catalogUrl(reset, {type: '', tag: '', perPage: 10, page: 1});
+  assert.equal(ten.searchParams.get('per_page'), '10');
+  assert.equal(catalogState(ten.searchParams, options).perPage, 10);
 });
