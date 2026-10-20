@@ -15,12 +15,10 @@ permalink: /about/
 
 **Timur Gilmullin** is an engineer and the founder of Fuzzy Technologies. He helps collect, prepare and publish the materials.
 
-*Mathematics with Mansur* is an international mathematics journal.
-
-## Where to read us
+## Where else to read about us
 
 Our Russian-language publications are available on [Telegram](https://t.me/history_math) and [Teletype](https://teletype.in/@history_math). Earlier articles can be found in the [blog archive in Russian]({{ 'https://history-math.blogspot.com/' | external_url: page.lang }}).
 
 ## About the project
 
-The website is associated with [Fuzzy Technologies]({{ 'https://fuzzy-technologies.github.io/' | external_url: page.lang }}). Texts remain the property of their respective authors and rights holders; there is no blanket open license for the articles.
+The website is associated with [Fuzzy Technologies]({{ 'https://fuzzy-technologies.github.io/' | external_url: page.lang }}). Rights to the texts belong to their authors and rights holders.
