@@ -254,8 +254,13 @@ try {
     const dialog = page.locator('#image-viewer');
     await dialog.waitFor({state: 'visible'});
     await page.waitForFunction(() => document.querySelector('.viewer-canvas img')?.naturalWidth > 0 && document.querySelector('#image-viewer').getAttribute('aria-busy') === 'false');
-    const fittedWidth = await page.locator('.viewer-canvas img').evaluate(node => node.getBoundingClientRect().width);
-    assert.ok(fittedWidth >= await page.locator('.viewer-stage').evaluate(node => node.clientWidth) - 2);
+    const fitted = await page.locator('.viewer-canvas img').evaluate(node => {
+      const image = node.getBoundingClientRect(), stage = document.querySelector('.viewer-stage');
+      return {width: image.width, height: image.height, availableWidth: stage.clientWidth, availableHeight: stage.clientHeight};
+    });
+    const fittedWidth = fitted.width;
+    assert.ok(fitted.width <= fitted.availableWidth + 1 && fitted.height <= fitted.availableHeight + 1);
+    assert.ok(Math.min(Math.abs(fitted.width - fitted.availableWidth), Math.abs(fitted.height - fitted.availableHeight)) <= 2);
     await page.locator('[data-viewer-action="in"]').click();
     assert.ok(await page.locator('.viewer-canvas img').evaluate(node => node.getBoundingClientRect().width) > fittedWidth * 1.2);
     const stage = page.locator('.viewer-stage');
@@ -294,7 +299,7 @@ try {
     assert.equal(await dialog.isVisible(), false);
     assert.ok(await trigger.evaluate(node => node === document.activeElement));
     assert.equal(await page.locator('html.viewer-open').count(), 0);
-    checked(`${viewport.name}: full-width image dialog supports zoom, pan/pinch, fit, focus containment and Escape return`);
+    checked(`${viewport.name}: fitted image dialog supports zoom, pan/pinch, fit, focus containment and Escape return`);
 
     await page.goto(origin + '/history_math/ru/articles/demo-geometry/', {waitUntil: 'networkidle'});
     assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');

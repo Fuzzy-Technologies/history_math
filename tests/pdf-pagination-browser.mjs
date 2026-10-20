@@ -1,6 +1,7 @@
 // Targeted real-Chromium regression for the private print DOM.
 import assert from 'node:assert/strict';
 import {readFile, mkdir, writeFile} from 'node:fs/promises';
+import {inflateSync} from 'node:zlib';
 import {chromium} from 'playwright';
 
 const module = await readFile('scripts/pdf-pagination.mjs', 'utf8');
@@ -12,6 +13,30 @@ const css = 'html,body{margin:0;padding:0}body{font:16px/20px Arial}.article-bod
   '.article-body>*{margin:0;padding:0}figure{break-inside:avoid}figure img{display:block;width:200px;height:100px}' +
   'figcaption{height:20px;font:12px/20px Arial}.pdf-math-pair{display:flow-root;break-inside:avoid}' +
   '.pdf-page-break{break-before:page}.pdf-short-paragraph{break-inside:avoid}p{orphans:3;widows:3}';
+
+// Inspect the actual vector ink in this bounded Chromium PDF fixture. Its
+// unique decoration color distinguishes underlines from text and page fills.
+function underlinePaintCount(bytes) {
+  const pdf = bytes.toString('latin1');
+  const number = '-?(?:\\d*\\.)?\\d+';
+  const fill = new RegExp('(' + number + ') (' + number + ') (' + number + ') rg(?:\\s|$)');
+  const rectangle = new RegExp('^' + Array(4).fill(number).join(' ') + ' re$');
+  let count = 0;
+  for (const match of pdf.matchAll(/<<([^<>]*\/Length\s+(\d+)[^<>]*)>>\s*stream\r?\n/g)) {
+    const start = match.index + match[0].length;
+    const data = bytes.subarray(start, start + Number(match[2]));
+    const stream = (match[1].includes('/FlateDecode') ? inflateSync(data) : data).toString('latin1');
+    let underline = false;
+    const lines = stream.split('\n');
+    for (let index = 0; index < lines.length; index++) {
+      const color = fill.exec(lines[index]);
+      if (color) underline = color.slice(1).every((value, i) => Math.abs(Number(value) - [1, 17, 33][i] / 255) < 0.001);
+      if (underline && rectangle.test(lines[index]) && lines[index + 1] === 'f') count++;
+    }
+  }
+  return count;
+}
+
 async function scenario(content, options = {}) {
   const page = await browser.newPage();
   await page.emulateMedia({media: 'print'});
@@ -107,6 +132,29 @@ try {
   assert.equal(await result.page.locator('p.pdf-keep-with-next + .math-source.pdf-keep-with-previous').count(), 1);
   assert.equal(await result.page.locator('.article-body').innerText(), result.before);
   await result.page.close();
-  console.log('PASS: unchanged defaults, fractional A4 boundaries, twenty-percent page-local shrink, original-size paragraph relocation, safe break fallback, formula pairing and deterministic print DOM');
+
+  const printCss = await readFile('site/assets/article-print.css', 'utf8');
+  for (const [language, label] of [['ru', 'Источник'], ['en', 'Source']]) {
+    for (const legacy of [false, true]) {
+      const page = await browser.newPage();
+      await page.emulateMedia({media: 'print'});
+      await page.setContent('<style>a{text-underline-offset:5px;text-decoration-thickness:1px}' + printCss +
+        'html,body{width:172mm;margin:0;padding:0}.prose figure,.prose figcaption{margin:0}' +
+        '.prose a{text-decoration-color:rgb(1,17,33)' + (legacy ? ';text-underline-offset:5px' : '') + '}</style>' +
+        '<main><div class="prose article-body"><div id="spacer"></div><figure><figcaption>' +
+        '<a href="https://example.org/">' + label + '</a></figcaption></figure>' +
+        '<p style="break-before:page">Next page</p></div></main>');
+      await page.evaluate(async () => {
+        await document.fonts.ready;
+        document.querySelector('#spacer').style.height = (260 * 96 / 25.4 - document.querySelector('figcaption').getBoundingClientRect().height - 0.2) + 'px';
+      });
+      const bytes = await page.pdf({format: 'A4', preferCSSPageSize: true, printBackground: true});
+      assert.equal(underlinePaintCount(bytes), legacy ? 2 : 1,
+        language + ': a caption underline must be painted only on its own page; the legacy offset reproduces the duplicate');
+      await writeFile('test-results/pdf-pagination/caption-' + language + (legacy ? '-legacy' : '') + '.pdf', bytes);
+      await page.close();
+    }
+  }
+  console.log('PASS: unchanged defaults, fractional A4 boundaries, twenty-percent page-local shrink, original-size paragraph relocation, safe break fallback, formula pairing, deterministic print DOM and bilingual caption underlines without page duplication');
 } finally { await browser.close(); }
 
