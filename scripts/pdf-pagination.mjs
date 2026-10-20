@@ -1,19 +1,19 @@
 // Deterministic A4 print planning. Mutations apply to the private print DOM only.
 export const PRINT_LAYOUT = Object.freeze({pageWidthMm: 172, pageHeightMm: 260,
-  maxImageReductionMm: 10, minimumImageScale: 0.88, minimumWhitespaceMm: 8,
+  minimumImageScale: 0.8, minimumWhitespaceMm: 8,
   maximumPasses: 48});
 
-export function figureFitPlan(overflow, images, {maximumReduction = 10 * 96 / 25.4, minimumScale = 0.88} = {}) {
+export function figureFitPlan(overflow, images, {minimumScale = PRINT_LAYOUT.minimumImageScale} = {}) {
   if (!Number.isFinite(overflow) || overflow <= 0 || !Array.isArray(images) || !images.length ||
-      !Number.isFinite(maximumReduction) || maximumReduction < 0 || !Number.isFinite(minimumScale) || minimumScale <= 0 || minimumScale > 1) return null;
+      !Number.isFinite(minimumScale) || minimumScale < PRINT_LAYOUT.minimumImageScale || minimumScale > 1) return null;
   if (!images.every(image => Number.isFinite(image.height) && image.height > 0 && Number.isFinite(image.width) && image.width > 0 &&
     (image.minimumHeight == null || Number.isFinite(image.minimumHeight)))) return null;
   const limits = images.map(image => Number.isFinite(image.height) && image.height > 0 && Number.isFinite(image.width) && image.width > 0 ?
-    Math.max(0, Math.min(maximumReduction, image.height * (1 - minimumScale),
+    Math.max(0, Math.min(image.height * (1 - minimumScale),
       image.minimumHeight == null ? Infinity : image.height - image.minimumHeight)) : 0);
   const capacity = limits.reduce((sum, limit) => sum + limit, 0);
   const required = overflow + 1;
-  if (capacity + 0.01 < required) return null;
+  if (capacity < required) return null;
   return images.map((image, index) => {
     const reduction = capacity ? limits[index] * required / capacity : 0;
     const scale = 1 - reduction / image.height;
@@ -25,12 +25,15 @@ export function layoutPrintBlocks(blocks, pageHeight, initialOffset = 0) {
   if (!(pageHeight > 0) || !Number.isFinite(pageHeight) || initialOffset < 0 || !Number.isFinite(initialOffset)) throw new Error('Invalid print geometry');
   let cursor = initialOffset;
   const placements = [];
-  const remainder = value => pageHeight - (value % pageHeight);
+  // Physical millimetres become fractional CSS pixels. A boundary such as
+  // 3 * pageHeight can divide back to 2.9999999999999996, hiding a real break.
+  const pageAt = value => Math.floor(value / pageHeight + 1e-9);
+  const remainder = value => Math.min(pageHeight, Math.max(0, pageHeight - (value - pageAt(value) * pageHeight)));
   for (const block of blocks) {
     if (!Number.isFinite(block.height) || block.height < 0 || !Number.isFinite(block.gap ?? 0)) throw new Error('Invalid print block');
     cursor += Math.max(0, block.gap ?? 0);
-    if (block.breakBefore && cursor % pageHeight > 0.5) cursor = Math.ceil(cursor / pageHeight) * pageHeight;
-    const before = cursor, originPage = Math.floor(cursor / pageHeight), available = remainder(cursor);
+    if (block.breakBefore && remainder(cursor) < pageHeight - 0.5) cursor = (pageAt(cursor) + 1) * pageHeight;
+    const before = cursor, originPage = pageAt(cursor), available = remainder(cursor);
     const keep = Math.max(0, block.keepNextHeight ?? 0);
     if (keep > 0 && block.height + keep <= pageHeight && block.height + keep > available + 0.5) cursor = (originPage + 1) * pageHeight;
     if (block.kind === 'text' && Number.isInteger(block.lines) && block.lines > 1 && block.lines < 100000 && block.height <= pageHeight * 20) {
@@ -46,26 +49,26 @@ export function layoutPrintBlocks(blocks, pageHeight, initialOffset = 0) {
         if (fit === 0 && remainder(cursor) >= pageHeight - 0.5) fit = Math.min(lines, Math.floor(pageHeight / lineHeight));
         if (fit === 0) {
           if (lineHeight > pageHeight) { cursor += lines * lineHeight; break; }
-          cursor = (Math.floor(cursor / pageHeight) + 1) * pageHeight;
+          cursor = (pageAt(cursor) + 1) * pageHeight;
         } else {
           cursor += fit * lineHeight;
           lines -= fit;
-          cursor = (Math.floor((cursor - 0.01) / pageHeight) + 1) * pageHeight;
+          cursor = (pageAt(cursor - 0.01) + 1) * pageHeight;
         }
       }
     } else {
-      if (block.height <= pageHeight && block.height > remainder(cursor) + 0.5) cursor = (Math.floor(cursor / pageHeight) + 1) * pageHeight;
+      if (block.height <= pageHeight && block.height > remainder(cursor) + 0.5) cursor = (pageAt(cursor) + 1) * pageHeight;
       const start = cursor;
       cursor += block.height;
-      placements.push({...block, originPage, page: Math.floor(start / pageHeight), start, end: cursor,
-        whitespace: Math.floor(start / pageHeight) > originPage ? available : 0,
+      placements.push({...block, originPage, page: pageAt(start), start, end: cursor,
+        whitespace: pageAt(start) > originPage ? available : 0,
         overflow: Math.max(0, block.height - available), oversized: block.height > pageHeight});
       continue;
     }
-    placements.push({...block, originPage, page: Math.floor(before / pageHeight), start: before, end: cursor,
+    placements.push({...block, originPage, page: pageAt(before), start: before, end: cursor,
       whitespace: 0, overflow: 0, oversized: false});
   }
-  return {placements, height: cursor, pages: Math.max(1, Math.ceil(cursor / pageHeight))};
+  return {placements, height: cursor, pages: Math.max(1, Math.ceil(cursor / pageHeight - 1e-9))};
 }
 
 export function paginatePrintDocument(options = PRINT_LAYOUT) {
@@ -75,8 +78,7 @@ export function paginatePrintDocument(options = PRINT_LAYOUT) {
   const mm = 96 / 25.4, pageHeight = settings.pageHeightMm * mm;
   if (!Number.isFinite(settings.pageWidthMm) || settings.pageWidthMm <= 0 || !Number.isFinite(pageHeight) || pageHeight <= 0 ||
     !Number.isInteger(settings.maximumPasses) || settings.maximumPasses < 1 || settings.maximumPasses > 100 ||
-    !Number.isFinite(settings.maxImageReductionMm) || settings.maxImageReductionMm < 0 || settings.maxImageReductionMm > 10 ||
-    !Number.isFinite(settings.minimumImageScale) || settings.minimumImageScale < 0.88 || settings.minimumImageScale > 1 ||
+    !Number.isFinite(settings.minimumImageScale) || settings.minimumImageScale < PRINT_LAYOUT.minimumImageScale || settings.minimumImageScale > 1 ||
     !Number.isFinite(settings.minimumWhitespaceMm) || settings.minimumWhitespaceMm < 0) throw new Error('Invalid print layout settings');
   document.documentElement.style.width = settings.pageWidthMm + 'mm';
   document.body.style.width = settings.pageWidthMm + 'mm';
@@ -152,9 +154,9 @@ export function paginatePrintDocument(options = PRINT_LAYOUT) {
     const fit = figureFitPlan(problem.overflow, images.map((img, index) => {
       const original = remember(img), rect = img.getBoundingClientRect();
       return {index, width: rect.width, height: rect.height,
-        minimumHeight: Math.max(original.height - settings.maxImageReductionMm * mm, original.height * settings.minimumImageScale)};
+        minimumHeight: original.height * settings.minimumImageScale};
     }),
-      {maximumReduction: settings.maxImageReductionMm * mm, minimumScale: settings.minimumImageScale});
+      {minimumScale: settings.minimumImageScale});
     if (fit) {
       fit.forEach(plan => { const img = images[plan.index]; img.style.width = plan.width + 'px'; img.style.height = plan.height + 'px'; });
       const after = measure().placements.find(block => block.node === figure);

@@ -38,6 +38,8 @@ Use `$x_1^2+x_2^2=r^2$` inline and `$$...$$` on separate lines for display mathe
 
 Keep selected images in `site/assets/images/<article-id>/`. Record each figure in front matter and insert `{% include article-figure.html id="fig-1" %}`. The shared template keeps native dimensions and proportionally reduces images above 960 × 720 pixels or the available width. Small images stay small; the existing image viewer opens on click. Tables retain their row/column structure and scroll inside a keyboard-accessible region on narrow screens.
 
+PDF pagination keeps each figure with its caption. When a figure would leave unused space on the preceding page, the private print layout may proportionally reduce images on that page only as much as needed, down to 80% of each image's original print width and height. This 20% limit is cumulative across planning passes. If fitting remains impossible, the planner tries moving the figure before one or two preceding paragraphs at its original size, then uses a safe page break.
+
 ## Editorial decision
 
 `reviews/<article-id>.json` is the only editable question list. It contains `review_version: 1`, the article ID, `questions` and `approval`; reconciliation notes may remain alongside them. Each question has a stable `id`, `question` in the edition's language, `blocking` boolean and `state` (`open`, `resolved`, `accepted`). Closed questions require a written `resolution`. PR descriptions show only open questions; do not duplicate the list in article metadata or pilot documentation.
