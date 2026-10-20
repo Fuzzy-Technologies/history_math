@@ -1,0 +1,42 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-eaba3ff1d327-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-20",
+    "package_sha256": "732fdb017c8743d0841efb1d2b60269d781d7c78edff54e85872ee9f196d6fb3",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/237#issuecomment-6300192123",
+    "source_commit": "37b40a26f1543ebefd50b992c180c70d937e3091",
+    "source_comment_id": 6300192123,
+    "source_review_state": "ISSUE_COMMENT",
+    "approved_at": "2026-10-20T19:59:02Z",
+    "prepared_from_commit": "37b40a26f1543ebefd50b992c180c70d937e3091",
+    "post_review_changes": "No changes after the reviewed source revision."
+  },
+  "questions": [
+    {
+      "id": "golden-section-term",
+      "question": "Please verify the attribution of the term “golden section” to Leonardo da Vinci; its documented terminology may date from much later. The source claim is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Accepted by the owner without textual changes in https://github.com/Fuzzy-Technologies/history_math/pull/237#issuecomment-6300192123; the reviewed source wording is retained."
+    },
+    {
+      "id": "camera-obscura-attribution",
+      "question": "The source says Leonardo created the camera obscura. Should this distinguish his studies or description of it from an invention claim, given its earlier history? The English preserves the supplied claim.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Accepted by the owner without textual changes in https://github.com/Fuzzy-Technologies/history_math/pull/237#issuecomment-6300192123; the reviewed source wording is retained."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 10,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-08-31",
+      "url": "https://teletype.in/@history_math/Fontan-idej-da-Vinchi-08-31"
+    }
+  }
+}
