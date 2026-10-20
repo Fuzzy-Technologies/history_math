@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-9cd7cf41b694-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-20",
+    "package_sha256": "6c11ce53211a5ccf86fd05ef97c1d1ac5a25c1b4be891ae5e251b71213ed1c22",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/236#issuecomment-6300192722",
+    "source_commit": "0f251a6f2a225c3a312292a425823331d150734d",
+    "source_comment_id": 6300192722,
+    "source_review_state": "ISSUE_COMMENT",
+    "approved_at": "2026-10-20T19:59:03Z",
+    "prepared_from_commit": "0f251a6f2a225c3a312292a425823331d150734d",
+    "post_review_changes": "No changes after the reviewed source revision."
+  },
+  "questions": [
+    {
+      "id": "q-khayyam-1",
+      "question": "Confirm the claim that Khayyam spent more than 40 years at the Isfahan observatory and the account of the Jalali calendar's use until 1976. The English retains both claims.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Accepted by the owner without textual changes in https://github.com/Fuzzy-Technologies/history_math/pull/236#issuecomment-6300192722; the reviewed source wording is retained."
+    },
+    {
+      "id": "q-khayyam-2",
+      "question": "The source gives a calendar error of 19 seconds annually, a 7-second advantage over the modern calendar, and one-day errors in 5000 and 3330 years. Confirm the numerical comparisons and whether the month lengths describe the original Jalali or a later Solar Hijri calendar.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Accepted by the owner without textual changes in https://github.com/Fuzzy-Technologies/history_math/pull/236#issuecomment-6300192722; the reviewed source wording is retained."
+    },
+    {
+      "id": "q-khayyam-3",
+      "question": "Please confirm the source and attribution of the fictionalised Rustam encounter and the quoted poems, including the Tatar and English versions. The narrative and all verse content are retained in the English adaptation.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Accepted by the owner without textual changes in https://github.com/Fuzzy-Technologies/history_math/pull/236#issuecomment-6300192722; the reviewed source wording is retained."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-01",
+      "url": "https://teletype.in/@history_math/YA-poznane-sdelal-svoim-remeslom-09-01"
+    }
+  }
+}

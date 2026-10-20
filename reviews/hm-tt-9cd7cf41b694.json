@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-9cd7cf41b694",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-20",
+    "package_sha256": "64b4b88d65bcc36ee6fac41542b32ebbda97c324c386b9fb458cff9348d04921",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/236#issuecomment-6300192722",
+    "source_commit": "0f251a6f2a225c3a312292a425823331d150734d",
+    "source_comment_id": 6300192722,
+    "source_review_state": "ISSUE_COMMENT",
+    "approved_at": "2026-10-20T19:59:03Z",
+    "prepared_from_commit": "0f251a6f2a225c3a312292a425823331d150734d",
+    "post_review_changes": "No changes after the reviewed source revision."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-01",
+      "url": "https://teletype.in/@history_math/YA-poznane-sdelal-svoim-remeslom-09-01"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
