@@ -1,0 +1,45 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-ca964515d47c-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-20",
+    "package_sha256": "e2296cf966e45fd464ff91cfb032e781d5f75aa1d6e44e860bf8b15f3c18eae0",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/243#pullrequestreview-5588217405",
+    "source_commit": "cdeae26d240a21267d680897a3c72328d7d58e6e",
+    "source_review_id": 5588217405,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-20T16:28:06Z",
+    "prepared_from_commit": "cdeae26d240a21267d680897a3c72328d7d58e6e",
+    "post_review_changes": "No changes after the reviewed source revision."
+  },
+  "questions": [
+    {
+      "id": "en-euler-blindness",
+      "question": "Please verify the comet-prize anecdote, its causal link to blindness in 1735, and the date 1766 for loss of sight in Euler’s other eye. These source claims are retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Accepted by the owner without textual changes in https://github.com/Fuzzy-Technologies/history_math/pull/243#pullrequestreview-5588217405; the reviewed source wording is retained."
+    },
+    {
+      "id": "en-euler-collected-works",
+      "question": "Please verify the 1909–1975 publication span and 72-volume total given for Euler’s collected works. They are retained as supplied.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Accepted by the owner without textual changes in https://github.com/Fuzzy-Technologies/history_math/pull/243#pullrequestreview-5588217405; the reviewed source wording is retained."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-08-21",
+      "url": "https://teletype.in/@history_math/Velikij-zhrec-korolevy-nauk-08-22"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}

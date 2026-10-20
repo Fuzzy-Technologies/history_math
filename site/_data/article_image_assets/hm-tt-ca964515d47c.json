@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-ca964515d47c/velikij-zhrec-korolevy-nauk-01.jpeg": {
+    "sha256": "7f289502c4c7f41100ac71cb77a7a4da523bc0d5375e4b91106eb588911764e8",
+    "width": 614,
+    "height": 767,
+    "bytes": 155787,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ca964515d47c/velikij-zhrec-korolevy-nauk-01.jpeg-614.jpeg",
+        "width": 614,
+        "height": 767,
+        "bytes": 155787,
+        "sha256": "7f289502c4c7f41100ac71cb77a7a4da523bc0d5375e4b91106eb588911764e8"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-ca964515d47c-velikij-zhrec-korolevy-nauk-01-7f289502c4c7f41100ac71cb77a7a4da523bc0d5375e4b91106eb588911764e8.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630501481",
+      "asset_id": 630501481,
+      "release_tag": "article-originals-7",
+      "sha256": "7f289502c4c7f41100ac71cb77a7a4da523bc0d5375e4b91106eb588911764e8",
+      "bytes": 155787
+    }
+  },
+  "/assets/images/hm-tt-ca964515d47c/velikij-zhrec-korolevy-nauk-02.png": {
+    "sha256": "3d810455e1f9dd5cf1edb21296b0ca862475b44d7e0cf75ad598a23ea1fad5a7",
+    "width": 1280,
+    "height": 838,
+    "bytes": 1425312,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ca964515d47c/velikij-zhrec-korolevy-nauk-02.png-960.webp",
+        "width": 960,
+        "height": 628,
+        "sha256": "50a3c82317e1b7ee58176f5349743b45019967396b74d29e55a8d3b2694d8c41",
+        "bytes": 494952
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-ca964515d47c-velikij-zhrec-korolevy-nauk-02-3d810455e1f9dd5cf1edb21296b0ca862475b44d7e0cf75ad598a23ea1fad5a7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630576681",
+      "asset_id": 630576681,
+      "release_tag": "article-originals-3",
+      "sha256": "3d810455e1f9dd5cf1edb21296b0ca862475b44d7e0cf75ad598a23ea1fad5a7",
+      "bytes": 1425312
+    }
+  },
+  "/assets/images/hm-tt-ca964515d47c/velikij-zhrec-korolevy-nauk-03.png": {
+    "sha256": "a3d08df9e73f1b42f57eca653bdcda028f2cb4c694cff90dd54ec748dcdc83a3",
+    "width": 250,
+    "height": 250,
+    "bytes": 68083,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ca964515d47c/velikij-zhrec-korolevy-nauk-03.png-250.webp",
+        "width": 250,
+        "height": 250,
+        "sha256": "ab9f0d9f7c5271a67043e109a2f130b319797c29fae5b10c7eca2dc9b5e81233",
+        "bytes": 38086
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-ca964515d47c-velikij-zhrec-korolevy-nauk-03-a3d08df9e73f1b42f57eca653bdcda028f2cb4c694cff90dd54ec748dcdc83a3.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630576826",
+      "asset_id": 630576826,
+      "release_tag": "article-originals-a",
+      "sha256": "a3d08df9e73f1b42f57eca653bdcda028f2cb4c694cff90dd54ec748dcdc83a3",
+      "bytes": 68083
+    }
+  }
+}
