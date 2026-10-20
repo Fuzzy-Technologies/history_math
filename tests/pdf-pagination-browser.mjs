@@ -63,7 +63,7 @@ try {
   assert.equal(result.report.shrunk.length, 1, 'A figure crossing the third A4 boundary must trigger fitting');
   assert.ok(result.imageState[0].height >= 80 && result.imageState[0].height < 88,
     'Use the newly permitted twelve-to-twenty-percent range when necessary');
-  assert.deepEqual(result.report.pageBreaks, []);
+  assert.deepEqual(result.report.naturalBreaks, []);
   assert.equal(await result.page.locator('.article-body').innerText(), result.before);
   await result.page.close();
 
@@ -105,11 +105,16 @@ try {
   await result.page.close();
 
   result = await scenario('<div style="height:300px">Unmovable block</div>' + figure('next-page'));
-  assert.deepEqual(result.report.pageBreaks, ['next-page']);
+  assert.deepEqual(result.report.naturalBreaks, ['next-page']);
   assert.equal(result.imageState[0].style, null);
-  assert.equal(await result.page.locator('figure.pdf-page-break').count(), 1);
-  await result.page.pdf({path: 'test-results/pdf-pagination/fallback.pdf', width: '210mm', height: '137mm',
+  assert.equal(await result.page.locator('figure.pdf-page-break').count(), 0,
+    'An estimated overflow must not force a page break into the print DOM');
+  assert.equal(await result.page.locator('figure').evaluate(node => getComputedStyle(node).breakInside), 'avoid');
+  assert.equal(await result.page.locator('.article-body').innerText(), result.before);
+  const fallback = await result.page.pdf({path: 'test-results/pdf-pagination/fallback.pdf', width: '210mm', height: '137mm',
     margin: {top: '17mm', left: '19mm', right: '19mm', bottom: '20mm'}, printBackground: true});
+  assert.equal([...fallback.toString('latin1').matchAll(/\/Type\s*\/Page\b/g)].length, 2,
+    'Native pagination still moves an intact figure that genuinely cannot fit');
   await result.page.close();
 
   result = await scenario('<div style="height:300px">Earlier content</div><p style="height:40px">An introducing sentence.</p><div class="math-source" data-display="true" style="height:60px">x + y = z</div>');
@@ -155,6 +160,6 @@ try {
       await page.close();
     }
   }
-  console.log('PASS: unchanged defaults, fractional A4 boundaries, twenty-percent page-local shrink, original-size paragraph relocation, safe break fallback, formula pairing, deterministic print DOM and bilingual caption underlines without page duplication');
+  console.log('PASS: unchanged defaults, fractional A4 boundaries, twenty-percent page-local shrink, original-size paragraph relocation, native figure pagination without forced breaks, formula pairing, deterministic print DOM and bilingual caption underlines without page duplication');
 } finally { await browser.close(); }
 
