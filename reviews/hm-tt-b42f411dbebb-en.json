@@ -1,0 +1,59 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-b42f411dbebb-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-20",
+    "package_sha256": "140fbfa7676c0522e24d05b2306426bbff929844b31d477043ccce352c2cd2e8",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/240#issuecomment-6300190096",
+    "source_commit": "6bde902860a534edaedd720af114e0ab70d0f11b",
+    "source_comment_id": 6300190096,
+    "source_review_state": "ISSUE_COMMENT",
+    "approved_at": "2026-10-20T19:58:55Z",
+    "prepared_from_commit": "6bde902860a534edaedd720af114e0ab70d0f11b",
+    "post_review_changes": "No changes after the reviewed source revision."
+  },
+  "questions": [
+    {
+      "id": "giftedness-claims",
+      "question": "The source says gifted children most often lose their abilities as adults, and cites 50%, 70% and 90% intellectual-development figures without identifying the psychological research. Should these claims be documented or qualified? All source claims and figures are retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Accepted by the owner without textual changes in https://github.com/Fuzzy-Technologies/history_math/pull/240#issuecomment-6300190096; the reviewed source wording is retained."
+    },
+    {
+      "id": "wiener-mit-age",
+      "question": "The source says Wiener joined or was invited to MIT’s mathematics department at 19. Should this be checked against the commonly recorded 1919 appointment? The source age is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Accepted by the owner without textual changes in https://github.com/Fuzzy-Technologies/history_math/pull/240#issuecomment-6300190096; the reviewed source wording is retained."
+    },
+    {
+      "id": "gauss-monument-location",
+      "question": "Figure 12 calls the 17-pointed star an ornament on Gauss’s grave, while the body says he requested a 17-gon there. Should the pictured monument’s location and the fulfilment of that request be clarified? Both source descriptions are retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Accepted by the owner without textual changes in https://github.com/Fuzzy-Technologies/history_math/pull/240#issuecomment-6300190096; the reviewed source wording is retained."
+    },
+    {
+      "id": "gauss-construction-converse",
+      "question": "The source credits Gauss with completely resolving regular-polygon constructibility. Should the attribution distinguish his construction criterion from the later proof of necessity? The original attribution is retained.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Accepted by the owner without textual changes in https://github.com/Fuzzy-Technologies/history_math/pull/240#issuecomment-6300190096; the reviewed source wording is retained."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 18,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-08-25",
+      "url": "https://teletype.in/@history_math/Vunderkindy-matematiki-08-25"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
