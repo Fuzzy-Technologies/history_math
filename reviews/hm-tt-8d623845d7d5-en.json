@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-8d623845d7d5-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-20",
+    "package_sha256": "d880554020bb199dd5e9ca9b699306b5ade30daf309df45fbee3e2c7be456fe8",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/245#pullrequestreview-5588104139",
+    "source_commit": "9e8057d94809153da72024220b37faef025f3a94",
+    "source_review_id": 5588104139,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-20T16:18:54Z",
+    "prepared_from_commit": "3a18c12d3bc53b15f848a1f4a8c1598675a0061b",
+    "post_review_changes": "Only owner-requested em-dash spacing; image hashes and dimensions are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 9,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-08-17",
+      "url": "https://teletype.in/@history_math/Kak-ya-prishyol-v-matematiku-08-17"
+    }
+  }
+}
