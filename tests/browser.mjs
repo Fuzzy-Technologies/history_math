@@ -266,6 +266,11 @@ try {
     const stage = page.locator('.viewer-stage');
     const box = await stage.boundingBox();
     if (viewport.name === 'desktop') {
+      for (let attempt = 0; attempt < 8 && await stage.evaluate(node => node.scrollWidth - node.clientWidth) < 240; attempt += 1) {
+        assert.equal(await page.locator('[data-viewer-action="in"]').isDisabled(), false, 'Horizontal pan fixture must support further zoom');
+        await page.locator('[data-viewer-action="in"]').click();
+      }
+      assert.ok(await stage.evaluate(node => node.scrollWidth - node.clientWidth) >= 240, 'Zoom beyond the viewport before checking horizontal panning');
       const before = await stage.evaluate(node => node.scrollLeft);
       await page.mouse.move(box.x + box.width * 0.6, box.y + box.height * 0.5);
       await page.mouse.down();
