@@ -12,7 +12,7 @@ const css = 'html,body{margin:0;padding:0}body{font:16px/20px Arial}.article-bod
   '.article-body>*{margin:0;padding:0}figure{break-inside:avoid}figure img{display:block;width:200px;height:100px}' +
   'figcaption{height:20px;font:12px/20px Arial}.pdf-math-pair{display:flow-root;break-inside:avoid}' +
   '.pdf-page-break{break-before:page}.pdf-short-paragraph{break-inside:avoid}p{orphans:3;widows:3}';
-async function scenario(content) {
+async function scenario(content, options = {}) {
   const page = await browser.newPage();
   await page.emulateMedia({media: 'print'});
   await page.setContent('<style>' + css + '</style><article class="article-body">' + content + '</article>');
@@ -20,7 +20,7 @@ async function scenario(content) {
   const before = await page.locator('.article-body').innerText();
   await page.addScriptTag({type: 'module', content: module});
   await page.waitForFunction(() => typeof window.HistoryMathPdfPagination === 'function');
-  const report = await page.evaluate(() => window.HistoryMathPdfPagination({pageHeightMm: 100}));
+  const report = await page.evaluate(settings => window.HistoryMathPdfPagination({pageHeightMm: 100, ...settings}), options);
   const imageState = await page.locator('figure img').evaluateAll(images => images.map(img => ({width: img.getBoundingClientRect().width,
     height: img.getBoundingClientRect().height, alt: img.alt, style: img.getAttribute('style')})));
   return {page, report, before, imageState};
@@ -31,6 +31,15 @@ try {
   assert.deepEqual(result.report.moved, []);
   assert.equal(result.imageState[0].style, null);
   assert.equal(result.imageState[0].height, 100);
+  await result.page.close();
+
+  const a4Height = 260 * (96 / 25.4);
+  result = await scenario('<div style="height:' + (3 * a4Height - 103) + 'px">Earlier pages</div>' + figure('fractional-boundary'), {pageHeightMm: 260});
+  assert.equal(result.report.shrunk.length, 1, 'A figure crossing the third A4 boundary must trigger fitting');
+  assert.ok(result.imageState[0].height >= 80 && result.imageState[0].height < 88,
+    'Use the newly permitted twelve-to-twenty-percent range when necessary');
+  assert.deepEqual(result.report.pageBreaks, []);
+  assert.equal(await result.page.locator('.article-body').innerText(), result.before);
   await result.page.close();
 
   result = await scenario('<div style="height:330px">Earlier content</div><p style="height:80px">A short paragraph stays intact.</p>');
@@ -98,6 +107,6 @@ try {
   assert.equal(await result.page.locator('p.pdf-keep-with-next + .math-source.pdf-keep-with-previous').count(), 1);
   assert.equal(await result.page.locator('.article-body').innerText(), result.before);
   await result.page.close();
-  console.log('PASS: unchanged defaults, bounded page-local multi-image shrink, original-size paragraph relocation, safe break fallback, formula pairing and deterministic print DOM');
+  console.log('PASS: unchanged defaults, fractional A4 boundaries, twenty-percent page-local shrink, original-size paragraph relocation, safe break fallback, formula pairing and deterministic print DOM');
 } finally { await browser.close(); }
 

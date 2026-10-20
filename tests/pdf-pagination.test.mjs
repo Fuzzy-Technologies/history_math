@@ -2,16 +2,38 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {figureFitPlan, layoutPrintBlocks, PRINT_LAYOUT} from '../scripts/pdf-pagination.mjs';
 
-test('page-local shrink preserves aspect ratios and respects both millimetre and scale caps', () => {
+test('page-local shrink preserves aspect ratios and never exceeds twenty percent', () => {
   const images = [{id: 'earlier', width: 400, height: 280}, {id: 'last', width: 300, height: 240}];
   const fit = figureFitPlan(45, images);
   assert.equal(fit.length, 2);
   assert.ok(fit.every((item, i) => item.scale >= PRINT_LAYOUT.minimumImageScale &&
-    item.reduction <= 10 * 96 / 25.4 && Math.abs(item.width / item.height - images[i].width / images[i].height) < 1e-9));
+    item.reduction <= images[i].height * 0.2 && Math.abs(item.width / item.height - images[i].width / images[i].height) < 1e-9));
   assert.ok(fit.reduce((sum, item) => sum + item.reduction, 0) > 45);
-  assert.equal(figureFitPlan(100, images), null, 'Never force a figure to fit through excessive shrink');
+  assert.equal(figureFitPlan(110, images), null, 'Never force a figure to fit through excessive shrink');
   assert.equal(figureFitPlan(5, [{width: 400, height: 250, minimumHeight: 248}]), null, 'Repeated passes cannot exceed the original image limit');
   for (const overflow of [NaN, Infinity, -1, 0]) assert.equal(figureFitPlan(overflow, images), null);
+  assert.equal(figureFitPlan(5, images, {minimumScale: 0.79}), null);
+  const large = figureFitPlan(55, [{width: 400, height: 288}]);
+  assert.ok(large && large[0].scale >= 0.8 && large[0].scale < 0.88,
+    'A large figure may save more than ten millimetres within the percentage cap');
+  assert.equal(figureFitPlan(19.005, [{width: 200, height: 100}]), null,
+    'The fit buffer must not push an image beyond the twenty-percent limit');
+});
+
+test('fractional A4 page boundaries expose figure overflow instead of hiding the break', () => {
+  const pageHeight = PRINT_LAYOUT.pageHeightMm * (96 / 25.4);
+  for (let page = 1; page <= 48; page++) {
+    const layout = layoutPrintBlocks([{id: 'image', kind: 'figure', height: 310.25}], pageHeight, page * pageHeight - 241.4);
+    const figure = layout.placements[0];
+    assert.equal(figure.originPage, page - 1);
+    assert.equal(figure.page, page);
+    assert.ok(Math.abs(figure.whitespace - 241.4) < 1e-7);
+    assert.ok(Math.abs(figure.overflow - 68.85) < 1e-7);
+    const onBoundary = layoutPrintBlocks([{kind: 'figure', height: 100}], pageHeight, page * pageHeight);
+    assert.equal(onBoundary.placements[0].page, page);
+    assert.equal(onBoundary.placements[0].whitespace, 0);
+    assert.equal(layoutPrintBlocks([{kind: 'atomic', height: pageHeight}], pageHeight, (page - 1) * pageHeight).pages, page);
+  }
 });
 
 test('atomic figure and caption stay together and expose actionable whitespace', () => {
