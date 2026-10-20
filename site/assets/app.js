@@ -1,9 +1,10 @@
 const assetVersion = new URL(import.meta.url).search;
-const [{search, searchByTag, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}, {loadVerifiedOriginal, nativeOriginalTarget}] = await Promise.all([
+const [{search, searchByTag, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}, {loadVerifiedOriginal, nativeOriginalTarget}, {catalogState, catalogPage, catalogPageNumbers, catalogUrl}] = await Promise.all([
   import('./core.js' + assetVersion),
   import('./select.js' + assetVersion),
   import('./reading-position.js' + assetVersion),
-  import('./original-image.js' + assetVersion)
+  import('./original-image.js' + assetVersion),
+  import('./catalog.js' + assetVersion)
 ]);
 
 const language = document.body.dataset.lang;
@@ -551,23 +552,95 @@ if (form) {
 
 const controls = document.querySelector('.catalog-controls');
 if (controls) {
-  controls.hidden = false;
   const type = document.querySelector('#type-filter');
   const tag = document.querySelector('#tag-filter');
-  const cards = [...document.querySelectorAll('.catalog-list .material-card')];
-  function filter() {
-    let visible = 0;
-    for (const node of cards) {
-      node.hidden = Boolean((type.value && type.value !== node.dataset.type) ||
-        (tag.value && !node.dataset.tags.split('|').includes(tag.value)));
-      if (!node.hidden) visible += 1;
+  const pageSize = document.querySelector('#page-size');
+  const list = document.querySelector('.catalog-list');
+  const pagination = document.querySelector('.catalog-pagination');
+  const pageLinks = pagination.querySelector('ol');
+  // The complete server-rendered list remains readable without JavaScript.
+  // Once enhanced, keep only one page attached, including for large archives.
+  const cards = [...list.querySelectorAll('.material-card')].map(node => ({node,
+    type: node.dataset.type, tags: node.dataset.tags.split('|')}));
+  const options = {types: [...type.options].map(option => option.value), tags: [...tag.options].map(option => option.value)};
+  const readState = () => catalogState(new URL(location.href).searchParams, options);
+  let state = readState();
+  let restoring = false;
+
+  function pageLink(page, text, label) {
+    const item = document.createElement('li');
+    const link = document.createElement('a');
+    link.className = 'catalog-page';
+    link.textContent = text;
+    link.href = catalogUrl(location.href, {...state, page});
+    link.setAttribute('aria-label', label);
+    link.addEventListener('click', event => {
+      if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      if (state.page !== page) {
+        state.page = page;
+        render('push');
+      }
+      list.querySelector('h3 a')?.focus({preventScroll: true});
+      list.scrollIntoView({block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
+    });
+    item.append(link);
+    return item;
+  }
+
+  function render(history = 'replace') {
+    const result = catalogPage(cards, state);
+    state.page = result.page;
+    type.value = state.type;
+    tag.value = state.tag;
+    pageSize.value = String(result.perPage);
+    list.replaceChildren(...result.items.map(item => item.node));
+    document.querySelector('#catalog-count').textContent = ru ? `Материалов: ${result.total}` : `Articles: ${result.total}`;
+    document.querySelector('#catalog-empty').hidden = result.total !== 0;
+    document.querySelector('#catalog-range').textContent = ru ? `Показано ${result.start}–${result.end} из ${result.total}` : `Showing ${result.start}–${result.end} of ${result.total}`;
+    pagination.hidden = result.pageCount <= 1;
+    const links = [];
+    if (result.page > 1) links.push(pageLink(result.page - 1, '←', pagination.dataset.previousLabel));
+    for (const number of catalogPageNumbers(result.page, result.pageCount)) {
+      if (number === 'ellipsis') {
+        const item = document.createElement('li');
+        const token = document.createElement('span');
+        token.className = 'catalog-ellipsis';
+        token.textContent = '…';
+        token.setAttribute('aria-hidden', 'true');
+        item.append(token);
+        links.push(item);
+      } else {
+        const item = pageLink(number, String(number), `${pagination.dataset.pageLabel} ${number}`);
+        if (number === result.page) item.firstChild.setAttribute('aria-current', 'page');
+        links.push(item);
+      }
     }
-    document.querySelector('#catalog-count').textContent = ru ? `Материалов: ${visible}` : `Articles: ${visible}`;
-    document.querySelector('#catalog-empty').hidden = visible !== 0;
+    if (result.page < result.pageCount) links.push(pageLink(result.page + 1, '→', pagination.dataset.nextLabel));
+    pageLinks.replaceChildren(...links);
+    const url = catalogUrl(location.href, state);
+    if (history === 'push') window.history.pushState(null, '', url);
+    else window.history.replaceState(null, '', url);
+  }
+
+  function filter() {
+    if (restoring) return;
+    state = {type: type.value, tag: tag.value, perPage: Number(pageSize.value), page: 1};
+    render('push');
   }
   type.addEventListener('change', filter);
   tag.addEventListener('change', filter);
+  pageSize.addEventListener('change', filter);
+  render();
+  controls.hidden = false;
   enhanceSelect(type);
   enhanceSelect(tag);
-  filter();
+  enhanceSelect(pageSize);
+  window.addEventListener('popstate', () => {
+    state = readState();
+    render();
+    restoring = true;
+    for (const select of [type, tag, pageSize]) select.dispatchEvent(new Event('change', {bubbles: true}));
+    restoring = false;
+  });
 }

@@ -31,6 +31,38 @@
       }
     ]
   },
+  "/assets/images/Math-with-Mansur-print-en.png": {
+    "sha256": "c68481b7d5e9aa06983f2acaa29a4dde27cf0c5bca18695da33c5b5433a18c1a",
+    "width": 4344,
+    "height": 724,
+    "bytes": 3332036,
+    "logo": true,
+    "variants": [
+      {
+        "path": "/assets/images/Math-with-Mansur-print-en.svg",
+        "width": 4344,
+        "height": 724,
+        "sha256": "c64d40e253fe749698b0d903dbf28ad0e4631f2ac2ebbaaa0d7d8e920e5308ea",
+        "bytes": 4443122
+      }
+    ]
+  },
+  "/assets/images/Math-with-Mansur-print-ru.png": {
+    "sha256": "1175e42adce0de350fd319a443deb1aa700ff21ac64ceafca00c7b710427136b",
+    "width": 4344,
+    "height": 724,
+    "bytes": 3351201,
+    "logo": true,
+    "variants": [
+      {
+        "path": "/assets/images/Math-with-Mansur-print-ru.svg",
+        "width": 4344,
+        "height": 724,
+        "sha256": "02c6630c37d7363cb7fcc5384409ea87b1b88fdeccffaea8ed5b59235655d2da",
+        "bytes": 4468703
+      }
+    ]
+  },
   "/assets/images/Math-with-Mansur-ru.png": {
     "sha256": "b09c8fe59dfcd0372324c0a5cce4ef137f64a55777b2be056845e38b36326ab8",
     "width": 2172,

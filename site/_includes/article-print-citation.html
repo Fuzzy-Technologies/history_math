@@ -1,0 +1,10 @@
+{% if page.status == 'published' %}
+{% assign print_authors = page.authors %}{% unless print_authors %}{% assign print_authors = page.author | split: '||' %}{% endunless %}
+<p class="print-citation">
+  {% if page.lang == 'ru' %}
+  {% if print_authors.size < 4 %}{{ print_authors | citation_authors: 'ru' | escape }} {{ page.title | escape }}{% else %}{{ page.title | escape }} / {{ print_authors | citation_authors: 'ru' | escape }}{% endif %} // Математика с Мансур-абый. {{ page.date | date: '%Y' }}. URL: <a href="{{ page.url | absolute_url }}">{{ page.url | absolute_url }}</a>. Дата публикации: {{ page.date | date: '%d.%m.%Y' }}.
+  {% else %}
+  {{ print_authors | citation_authors: 'en' | escape }}, “{{ page.title | escape }},” <em>Mathematics with Mansur</em>, {{ page.date | ieee_date }}. [Online]. Available: <a href="{{ page.url | absolute_url }}">{{ page.url | absolute_url }}</a>.
+  {% endif %}
+</p>
+{% endif %}

@@ -1,4 +1,5 @@
 <div class="print-masthead">
-  {% if page.lang == 'ru' %}{% assign print_logo = '/assets/images/Math-with-Mansur-ru.png' %}{% assign print_name = 'Математика с Мансур-абый' %}{% else %}{% assign print_logo = '/assets/images/Math-with-Mansur.png' %}{% assign print_name = 'Math with Mansur' %}{% endif %}
-  {% include reading-image.html src=print_logo alt=print_name %}
+  {% if page.lang == 'ru' %}{% assign print_logo = '/assets/images/Math-with-Mansur-print-ru.svg' %}{% assign print_name = 'Математика с Мансур-абый' %}{% else %}{% assign print_logo = '/assets/images/Math-with-Mansur-print-en.svg' %}{% assign print_name = 'Math with Mansur' %}{% endif %}
+  <img src="{{ print_logo | relative_url }}" alt="{{ print_name | escape }}" width="4344" height="724" loading="lazy" decoding="async">
 </div>
+{% include article-print-citation.html %}

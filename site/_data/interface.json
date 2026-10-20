@@ -41,7 +41,12 @@
     "clear_filter": "Снять фильтр",
     "search_prompt": "Введите слово или фразу, чтобы начать поиск.",
     "noscript": "Для поиска нужен JavaScript. Все материалы доступны в читальном зале.",
-    "pending": "Русский оригинал · Перевод готовится"
+    "pending": "Русский оригинал · Перевод готовится",
+    "per_page": "На странице",
+    "catalog_pages": "Страницы материалов",
+    "catalog_previous": "Предыдущая страница",
+    "catalog_next": "Следующая страница",
+    "catalog_page": "Страница"
   },
   "en": {
     "history": "The history of mathematics",
@@ -85,6 +90,11 @@
     "clear_filter": "Clear filter",
     "search_prompt": "Enter a word or phrase to start searching.",
     "noscript": "Search requires JavaScript. All articles are available in the reading room.",
-    "pending": "Russian original · Translation pending"
+    "pending": "Russian original · Translation pending",
+    "per_page": "Per page",
+    "catalog_pages": "Article pages",
+    "catalog_previous": "Previous page",
+    "catalog_next": "Next page",
+    "catalog_page": "Page"
   }
 }

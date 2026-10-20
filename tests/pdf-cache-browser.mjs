@@ -33,7 +33,7 @@ const cssPath = resolve(root, 'assets/article-print.css');
 await writeFile(cssPath, (await readFile(cssPath, 'utf8')) + '\n@media print { .article-heading { color: #39251b; } }');
 await run(2, 0);
 // One language's print masthead changes: invalidate only that language.
-const logoPath = resolve(root, 'assets/images/Math-with-Mansur-ru.png');
+const logoPath = resolve(root, 'assets/images/Math-with-Mansur-print-ru.svg');
 const logo = await readFile(logoPath);
 await writeFile(logoPath, Buffer.concat([logo, Buffer.from('\n')]));
 await run(1, 1);

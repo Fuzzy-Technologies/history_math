@@ -23,7 +23,7 @@
   --tint: #e9deca;
   --serif: "PT Serif", Georgia, "Times New Roman", serif;
   --summary-text: 17px;
-  --reading-text: calc(clamp(1.25rem, 1.1rem + 0.4vw, 1.375rem) - 1.3333px);
+  --reading-text: calc(clamp(1.25rem, 1.1rem + 0.4vw, 1.375rem) - 2.6666px);
   --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
   --page-glow: #fff9ec;
   --cover-start: #fffaf0;
@@ -305,7 +305,7 @@ main,
 }
 .journal-hero {
   display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
   gap: 0 30px;
   padding: 20px 30px 0;
   margin: 32px 0 24px;
@@ -331,6 +331,8 @@ main,
   border-bottom: 1px solid var(--line);
 }
 .hero-copy {
+  container-type: inline-size;
+  min-width: 0;
   padding: 35px 0 30px;
   align-self: center;
   position: relative;
@@ -341,10 +343,14 @@ main,
   letter-spacing: 0.12em;
 }
 .hero-copy h1 {
-  font-size: calc(clamp(2.6rem, 5.4vw, 5.6rem) - 2px);
+  font-size: clamp(1.5rem, 11.5cqw, 3.625rem);
   line-height: 1.015;
   letter-spacing: -0.055em;
   margin: 16px 0 22px;
+}
+.hero-copy h1 .hero-title-line {
+  display: block;
+  white-space: nowrap;
 }
 .hero-copy h1 em {
   font-weight: 400;
@@ -576,7 +582,8 @@ main,
 }
 .magazine-carousel {
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% - 65px) / 3);
+  grid-auto-columns: calc((100% - 72px) / 4.2);
+  gap: 18px;
   grid-template-columns: none;
   overflow-x: auto;
   scroll-snap-type: none;
@@ -585,6 +592,43 @@ main,
   scrollbar-color: var(--brass) var(--tint);
   padding: 5px 0 18px;
   scroll-padding-inline: 1px;
+}
+/* Keep the homepage carousel compact without changing catalog or search cards. */
+.magazine-carousel .card-image {
+  margin: 8px 8px 0;
+}
+.magazine-carousel .card-image img {
+  aspect-ratio: 1.8;
+}
+.magazine-carousel .card-copy {
+  padding: 16px;
+}
+.magazine-carousel .card-copy h3 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  min-height: 3.6em;
+  margin: 12px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.magazine-carousel .card-copy > p:not(.eyebrow) {
+  min-height: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.magazine-carousel .card-meta {
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 12px;
+  margin-top: 14px;
+}
+.magazine-carousel .card-meta .tag-list {
+  justify-content: flex-start;
 }
 @media (min-width: 621px) and (pointer: fine) {
   .magazine-carousel {
@@ -1637,7 +1681,7 @@ input::placeholder {
     gap: 0 12px;
   }
   .hero-copy h1 {
-    font-size: calc(clamp(2.6rem, 5.4vw, 5.6rem) - 2px);
+    font-size: clamp(1.5rem, 11.5cqw, 3.625rem);
   }
   .hero-copy .eyebrow {
     max-width: 240px;
@@ -1729,7 +1773,7 @@ input::placeholder {
     padding-inline: 20px;
   }
   .hero-copy h1 {
-    font-size: calc(clamp(2.6rem, 5.4vw, 5.6rem) - 2px);
+    font-size: clamp(1.5rem, 11.5cqw, 3.625rem);
   }
   .hero-copy .lead {
     font-size: var(--summary-text);
@@ -1929,7 +1973,7 @@ input::placeholder {
     padding-right: 8px;
   }
   .hero-copy h1 {
-    font-size: calc(clamp(2.6rem, 5.4vw, 5.6rem) - 2px);
+    font-size: clamp(1.5rem, 11.5cqw, 3.625rem);
     line-height: 1.025;
     margin: 16px 0 18px;
   }
@@ -2005,6 +2049,14 @@ input::placeholder {
     overflow: visible;
     padding: 0;
     scroll-snap-type: none;
+  }
+  .magazine-carousel .card-copy h3 {
+    display: block;
+    min-height: 0;
+    font-size: 1.45rem;
+  }
+  .magazine-carousel .card-copy > p:not(.eyebrow) {
+    display: block;
   }
   .carousel-controls,
   .carousel-status {
@@ -2222,7 +2274,7 @@ input::placeholder {
     gap: 12px;
   }
   .hero-copy h1 {
-    font-size: calc(clamp(2.6rem, 5.4vw, 5.6rem) - 2px);
+    font-size: clamp(1.5rem, 11.5cqw, 3.625rem);
   }
   .hero-copy .eyebrow {
     font-size: 14px;

@@ -21,6 +21,10 @@ LOGOS = {
     "Math-with-Mansur-logo.png": "Math with Mansur",
     "Math-with-Mansur-logo-ru.png": "Математика с Мансур-абый",
 }
+PRINT_MASTHEADS = {
+    "/assets/images/Math-with-Mansur-print-ru.png",
+    "/assets/images/Math-with-Mansur-print-en.png",
+}
 EXTERNAL_REPOSITORY = "Fuzzy-Technologies/history_math"
 EXTERNAL_PATH = re.compile(r"/assets/images/([a-z0-9][a-z0-9-]*)/([a-z0-9][a-z0-9.-]*)\.(png|jpg|jpeg|webp|gif|svg)\Z")
 SHA256 = re.compile(r"[a-f0-9]{64}\Z")
@@ -218,7 +222,11 @@ def validate():
             assert digest(target) == variant["sha256"], f"Changed derivative: {target}"
             assert variant["width"] <= entry["width"], f"Unexpected upscaling: {target}"
             assert target.stat().st_size == variant["bytes"]
-            if entry["logo"]:
+            if entry["logo"] and original in PRINT_MASTHEADS:
+                # Print-only SVGs contain the owner's full PNG losslessly.
+                # Screen logos keep their independent lightweight asset budget.
+                assert variant["bytes"] <= 6_000_000, f"Print masthead exceeds transfer budget: {target}"
+            elif entry["logo"]:
                 assert "data:image/png" not in target.read_text()
                 assert variant["bytes"] < 200_000, f"Logo exceeds transfer budget: {target}"
     total = sum(item["bytes"] for item in manifest.values())

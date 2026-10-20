@@ -52,7 +52,7 @@ export async function buildPdfs(siteDirectory, {cacheDirectory = '.pdf-cache', f
   // Fontconfig enumerates Linux fonts; other platforms render without persistent reuse.
   const fonts = platform() === 'linux' ? [...new Set(execFileSync('fc-list', ['--format', '%{file}\n'], {encoding: 'utf8'}).trim().split('\n'))].filter(Boolean).sort() : [];
   const engineFiles = [executablePath, new URL('./article-pdf.mjs', import.meta.url),
-    new URL('./pdf-cache.mjs', import.meta.url), new URL('../package-lock.json', import.meta.url), ...fonts];
+    new URL('./pdf-cache.mjs', import.meta.url), new URL('./pdf-pagination.mjs', import.meta.url), new URL('../package-lock.json', import.meta.url), ...fonts];
   const engineHashes = [];
   for (const path of engineFiles) engineHashes.push(await fileDigest(path));
   const engine = digest(JSON.stringify([platform(), release(), process.env.ImageVersion, fonts, engineHashes]));
@@ -104,6 +104,7 @@ export async function buildPdfs(siteDirectory, {cacheDirectory = '.pdf-cache', f
   await new Promise(done => server.listen(0, '127.0.0.1', done));
   const localOrigin = `http://127.0.0.1:${server.address().port}`;
   let browser;
+  const paginationModule = await readFile(new URL('./pdf-pagination.mjs', import.meta.url), 'utf8');
   try {
     browser = await chromium.launch({headless: true, executablePath});
     let cursor = 0, stopped = false;
@@ -131,6 +132,11 @@ export async function buildPdfs(siteDirectory, {cacheDirectory = '.pdf-cache', f
             await Promise.all([...document.images].map(img => img.decode()));
             await document.fonts.ready;
           });
+          // Plan against the actual printable A4 width before validating geometry.
+          await page.addScriptTag({type: 'module', content: paginationModule});
+          await page.waitForFunction(() => typeof window.HistoryMathPdfPagination === 'function');
+          const pagination = await page.evaluate(() => window.HistoryMathPdfPagination());
+          console.log(`PDF layout ${article.lang}: ${JSON.stringify(pagination)}`);
           const state = await page.evaluate(() => ({
             lang: document.documentElement.lang,
             unrendered: [...document.querySelectorAll('.math-source')].some(node => node.dataset.rendered !== 'true'),
@@ -140,14 +146,14 @@ export async function buildPdfs(siteDirectory, {cacheDirectory = '.pdf-cache', f
             clipped: [...document.querySelectorAll('.article-body table, .math-source[data-display="true"] .katex')]
               .some(node => node.getBoundingClientRect().width > document.querySelector('.article-body').getBoundingClientRect().width + 2)
           }));
-          const logo = article.lang === 'ru' ? 'Math-with-Mansur-ru.png' : 'Math-with-Mansur.png';
-          if (errors.length || state.lang !== article.lang || state.unrendered || state.missingPrintImage || state.clipped || !state.content || !state.logo?.endsWith(logo)) {
+          const logos = article.lang === 'ru' ? ['Math-with-Mansur-print-ru.svg', 'Math-with-Mansur-ru.png'] : ['Math-with-Mansur-print-en.svg', 'Math-with-Mansur.png'];
+          if (errors.length || state.lang !== article.lang || state.unrendered || state.missingPrintImage || state.clipped || !state.content || !logos.some(logo => state.logo?.endsWith(logo))) {
             throw new Error(`PDF render failed for ${article.url}: ${JSON.stringify({errors, state})}`);
           }
           // Downsample only the print DOM to about 240 dpi; never modify the archived assets.
           await page.evaluate(async ({localOrigin, publicOrigin}) => {
             for (const img of document.querySelectorAll('.print-masthead img, .article-body img')) {
-              if (new URL(img.src).pathname.endsWith('.svg') && !img.closest('.print-masthead')) continue;
+              if (new URL(img.src).pathname.endsWith('.svg')) continue;
               const bounds = img.getBoundingClientRect();
               const ratio = Math.min(1, Math.max(bounds.width * 2.5 / img.naturalWidth, bounds.height * 2.5 / img.naturalHeight));
               const migrated = Boolean(img.dataset.originalApi) || img.dataset.original?.includes('/assets/images/hm-tt-');

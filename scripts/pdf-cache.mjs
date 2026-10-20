@@ -19,7 +19,7 @@ export function printDocument(html, article, baseurl) {
     if (parts.length !== 2 || parts[1].split(end).length !== 2) throw new Error(`Missing or duplicate PDF region: ${name}`);
     return parts[1].split(end)[0];
   };
-  const styles = ['style.css', 'article-print.css', 'vendor/katex/katex.min.css'];
+  const styles = ['style.css', 'article-print.css', 'pdf-masthead.css', 'vendor/katex/katex.min.css'];
   const scripts = ['vendor/katex/katex.min.js', 'math.js'];
   return `<!doctype html><html lang="${article.lang}" data-theme="light"><head><meta charset="utf-8"><title>${escape(article.title)}</title>${styles.map(path => `<link rel="stylesheet" href="${baseurl}/assets/${path}">`).join('')}${scripts.map(path => `<script defer src="${baseurl}/assets/${path}"></script>`).join('')}</head><body><main id="main"><article class="reading-layout">${region('heading')}${region('notice')}<div class="article-spread"><div class="prose article-body">${region('body')}</div></div></article></main></body></html>`;
 }
