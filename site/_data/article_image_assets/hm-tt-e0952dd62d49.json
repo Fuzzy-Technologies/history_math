@@ -1,0 +1,202 @@
+{
+  "/assets/images/hm-tt-e0952dd62d49/bylo-by-chto-merit-08-21-01.png": {
+    "sha256": "7ffab81d356e6d8868222cb5df07be5a95ad5d6fa9ee060161ee20e29e8cae25",
+    "width": 450,
+    "height": 331,
+    "bytes": 334689,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e0952dd62d49/bylo-by-chto-merit-08-21-01.png-450.webp",
+        "width": 450,
+        "height": 331,
+        "sha256": "440dc551ede9be0a6bbb2a12475fa71602e262f589b46fac27358d2bf665c8c2",
+        "bytes": 131826
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-e0952dd62d49-bylo-by-chto-merit-08-21-01-7ffab81d356e6d8868222cb5df07be5a95ad5d6fa9ee060161ee20e29e8cae25.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630499915",
+      "asset_id": 630499915,
+      "release_tag": "article-originals-7",
+      "sha256": "7ffab81d356e6d8868222cb5df07be5a95ad5d6fa9ee060161ee20e29e8cae25",
+      "bytes": 334689
+    }
+  },
+  "/assets/images/hm-tt-e0952dd62d49/bylo-by-chto-merit-08-21-02.png": {
+    "sha256": "d6475feb1d1aaa14b70516cfd466f05caaf47872dbab8f937be311e4fffa7a63",
+    "width": 398,
+    "height": 600,
+    "bytes": 403117,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e0952dd62d49/bylo-by-chto-merit-08-21-02.png-398.webp",
+        "width": 398,
+        "height": 600,
+        "sha256": "ada6f62bfdb677fb90ba4cd148ab3acf2e6bf35acec08928d365aeab20bfcfd8",
+        "bytes": 188180
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-e0952dd62d49-bylo-by-chto-merit-08-21-02-d6475feb1d1aaa14b70516cfd466f05caaf47872dbab8f937be311e4fffa7a63.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630567654",
+      "asset_id": 630567654,
+      "release_tag": "article-originals-d",
+      "sha256": "d6475feb1d1aaa14b70516cfd466f05caaf47872dbab8f937be311e4fffa7a63",
+      "bytes": 403117
+    }
+  },
+  "/assets/images/hm-tt-e0952dd62d49/bylo-by-chto-merit-08-21-03.png": {
+    "sha256": "f9381d0244c2c24c265efe132a59092dc03716b87ac0dacff4cda696b21de273",
+    "width": 960,
+    "height": 960,
+    "bytes": 1961706,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e0952dd62d49/bylo-by-chto-merit-08-21-03.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "57507dd711044f8adc2e8c5e5e7819c1c7f1504989c9b8c65082d7835e236c02",
+        "bytes": 856438
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-e0952dd62d49-bylo-by-chto-merit-08-21-03-f9381d0244c2c24c265efe132a59092dc03716b87ac0dacff4cda696b21de273.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630567876",
+      "asset_id": 630567876,
+      "release_tag": "article-originals-f",
+      "sha256": "f9381d0244c2c24c265efe132a59092dc03716b87ac0dacff4cda696b21de273",
+      "bytes": 1961706
+    }
+  },
+  "/assets/images/hm-tt-e0952dd62d49/bylo-by-chto-merit-08-21-04.png": {
+    "sha256": "e272e4420af9ec5d113a44c8bbdf9d4148f200b7719a3c6ad71a86df04c215d6",
+    "width": 480,
+    "height": 600,
+    "bytes": 350059,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e0952dd62d49/bylo-by-chto-merit-08-21-04.png-480.webp",
+        "width": 480,
+        "height": 600,
+        "sha256": "7d79ff58e05d14441f51e161f97e6b01a8b4d2aad4054c51fbfd8ec387c13ec7",
+        "bytes": 140194
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-e0952dd62d49-bylo-by-chto-merit-08-21-04-e272e4420af9ec5d113a44c8bbdf9d4148f200b7719a3c6ad71a86df04c215d6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630568137",
+      "asset_id": 630568137,
+      "release_tag": "article-originals-e",
+      "sha256": "e272e4420af9ec5d113a44c8bbdf9d4148f200b7719a3c6ad71a86df04c215d6",
+      "bytes": 350059
+    }
+  },
+  "/assets/images/hm-tt-e0952dd62d49/bylo-by-chto-merit-08-21-05.png": {
+    "sha256": "489766b5b8487dd21f62b6b9459b9bec8dc2b086f252e3a277419bf1969287fb",
+    "width": 900,
+    "height": 200,
+    "bytes": 193316,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e0952dd62d49/bylo-by-chto-merit-08-21-05.png-900.webp",
+        "width": 900,
+        "height": 200,
+        "sha256": "0b5441e5c2c163c0afa7c36266fd87ae872e88fe685878f67516037ae6f59f29",
+        "bytes": 113652
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-e0952dd62d49-bylo-by-chto-merit-08-21-05-489766b5b8487dd21f62b6b9459b9bec8dc2b086f252e3a277419bf1969287fb.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630568467",
+      "asset_id": 630568467,
+      "release_tag": "article-originals-4",
+      "sha256": "489766b5b8487dd21f62b6b9459b9bec8dc2b086f252e3a277419bf1969287fb",
+      "bytes": 193316
+    }
+  },
+  "/assets/images/hm-tt-e0952dd62d49/bylo-by-chto-merit-08-21-06.png": {
+    "sha256": "53ba1d05e52e705d9ec447301c15285f1eebe81d0c60aad002b8d3600afcd9a7",
+    "width": 2732,
+    "height": 2472,
+    "bytes": 14007049,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e0952dd62d49/bylo-by-chto-merit-08-21-06.png-960.webp",
+        "width": 960,
+        "height": 869,
+        "sha256": "8375cc17513a820af9d708521934c697fffe474735a628e67702bba264ba4c9c",
+        "bytes": 1169254
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-e0952dd62d49-bylo-by-chto-merit-08-21-06-53ba1d05e52e705d9ec447301c15285f1eebe81d0c60aad002b8d3600afcd9a7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630568750",
+      "asset_id": 630568750,
+      "release_tag": "article-originals-5",
+      "sha256": "53ba1d05e52e705d9ec447301c15285f1eebe81d0c60aad002b8d3600afcd9a7",
+      "bytes": 14007049
+    }
+  },
+  "/assets/images/hm-tt-e0952dd62d49/bylo-by-chto-merit-08-21-07.png": {
+    "sha256": "832f7262e8edbf5273f3c49370ea2aef51addcdf0cb461a98af961524be90a9c",
+    "width": 3140,
+    "height": 1532,
+    "bytes": 6961226,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e0952dd62d49/bylo-by-chto-merit-08-21-07.png-960.webp",
+        "width": 960,
+        "height": 468,
+        "sha256": "cb2b68eede8f8508bf0be76055a4c81453248f8ff1ce6097cd8653ee84d287ed",
+        "bytes": 389014
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-e0952dd62d49-bylo-by-chto-merit-08-21-07-832f7262e8edbf5273f3c49370ea2aef51addcdf0cb461a98af961524be90a9c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630568993",
+      "asset_id": 630568993,
+      "release_tag": "article-originals-8",
+      "sha256": "832f7262e8edbf5273f3c49370ea2aef51addcdf0cb461a98af961524be90a9c",
+      "bytes": 6961226
+    }
+  },
+  "/assets/images/hm-tt-e0952dd62d49/bylo-by-chto-merit-08-21-08.png": {
+    "sha256": "a344685d435548f02d44bb4fca51a28b983b7fd4180dbf6ae9ed7a537049d091",
+    "width": 1204,
+    "height": 665,
+    "bytes": 1829036,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e0952dd62d49/bylo-by-chto-merit-08-21-08.png-960.webp",
+        "width": 960,
+        "height": 530,
+        "sha256": "9a08de8a3fd4166fd523cf2ece04cfdb450f8e024e18af3cf62288a9128fce1d",
+        "bytes": 537378
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-e0952dd62d49-bylo-by-chto-merit-08-21-08-a344685d435548f02d44bb4fca51a28b983b7fd4180dbf6ae9ed7a537049d091.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630569214",
+      "asset_id": 630569214,
+      "release_tag": "article-originals-a",
+      "sha256": "a344685d435548f02d44bb4fca51a28b983b7fd4180dbf6ae9ed7a537049d091",
+      "bytes": 1829036
+    }
+  }
+}
