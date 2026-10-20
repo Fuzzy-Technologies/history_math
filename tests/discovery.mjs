@@ -10,7 +10,7 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
   const upgradeErrors = [];
   upgradePage.on('pageerror', error => upgradeErrors.push(error.message));
   upgradePage.on('request', request => {
-    if (/\/(core|select|reading-position|original-image)\.js$/.test(new URL(request.url()).pathname)) dependencyURLs.push(request.url());
+    if (/\/(core|select|reading-position|original-image|catalog)\.js$/.test(new URL(request.url()).pathname)) dependencyURLs.push(request.url());
   });
   // Simulate a still-fresh cached core module from the previous deployment.
   await upgrade.route(url => url.pathname.endsWith('/core.js') && !url.search, route => route.fulfill({
@@ -18,11 +18,11 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
     body: 'export const normalize = value => value; export const search = () => []; export const selection = () => []; export const anniversaries = () => [];'
   }));
   await upgradePage.goto(base + '/ru/materials/', {waitUntil: 'networkidle'});
-  assert.equal(await upgradePage.getByRole('combobox').count(), 2, 'A cached dependency disabled the new interface');
+  assert.equal(await upgradePage.getByRole('combobox').count(), 3, 'A cached dependency disabled the new interface');
   assert.equal(await upgradePage.locator('.theme-toggle').isVisible(), true);
   const version = new URL(await upgradePage.locator('script[src*="/app.js"]').getAttribute('src'), base).search;
   assert.ok(version.startsWith('?v='));
-  assert.equal(dependencyURLs.length, 4);
+  assert.equal(dependencyURLs.length, 5);
   assert.ok(dependencyURLs.every(url => new URL(url).search === version));
   assert.deepEqual(upgradeErrors, []);
   await upgrade.close();
@@ -54,7 +54,7 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
     await type.press('ArrowDown');
     await type.press('ArrowDown');
     await type.press('Enter');
-    assert.equal(await page.locator('.catalog-list .material-card:visible').count(), records.filter(record => record.type === 'problem').length);
+    assert.equal(await page.locator('.catalog-list .material-card:visible').count(), Math.min(10, records.filter(record => record.type === 'problem').length));
     assert.equal(await page.locator('#type-filter').inputValue(), 'problem');
     assert.equal(await type.evaluate(node => node === document.activeElement), true);
     await topic.click();
@@ -124,7 +124,7 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
       const style = getComputedStyle(node);
       return {size: parseFloat(style.fontSize), leading: parseFloat(style.lineHeight) / parseFloat(style.fontSize), link: parseFloat(getComputedStyle(node.querySelector(':scope > ul a')).fontSize)};
     });
-    assert.ok(typography.size >= 17.2 && typography.size <= 19.5);
+    assert.ok(typography.size >= 16 && typography.size <= 18.2);
     assert.equal(typography.link, typography.size);
     assert.ok(Math.abs(typography.leading - 1.55) < 0.01);
     assert.equal(await page.locator('.math-source[data-rendered=true]').count(), 7);

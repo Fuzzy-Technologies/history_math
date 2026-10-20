@@ -153,7 +153,7 @@ try {
       if (path === '/ru/materials/') {
         await page.getByRole('combobox', {name: /^Тип материала/}).click();
         await page.getByRole('option', {name: 'Задачи', exact: true}).click();
-        assert.equal(await page.locator('.catalog-list .material-card:visible').count(), articleRecords.filter(article => article.type === 'problem').length);
+        assert.equal(await page.locator('.catalog-list .material-card:visible').count(), Math.min(10, articleRecords.filter(article => article.type === 'problem').length));
         await page.getByRole('combobox', {name: /^Тема/}).click();
         await page.getByRole('option', {name: 'счёт', exact: true}).click();
         assert.ok(await page.locator('#catalog-empty').isVisible());
@@ -298,7 +298,7 @@ try {
 
     await page.goto(origin + '/history_math/ru/articles/demo-geometry/', {waitUntil: 'networkidle'});
     assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
-    assert.ok(await page.locator('.article-body').evaluate(node => parseFloat(getComputedStyle(node).fontSize)) >= 17.2);
+    assert.ok(await page.locator('.article-body').evaluate(node => parseFloat(getComputedStyle(node).fontSize)) >= 16);
     assert.ok(await page.locator('.article-body figcaption').evaluate(node => parseFloat(getComputedStyle(node).fontSize)) >= 16);
     assert.equal(await page.locator('.math-source:not([data-rendered=true])').count(), 0);
     await page.addScriptTag({content: axe});
@@ -395,7 +395,7 @@ try {
         const paragraph = getComputedStyle(node.querySelector('p'));
         return {size: parseFloat(style.fontSize), leading: parseFloat(style.lineHeight) / parseFloat(style.fontSize), gap: parseFloat(paragraph.marginBottom) / parseFloat(paragraph.fontSize)};
       });
-      assert.ok(measurements.size >= 17.2 && measurements.size <= 19.5);
+      assert.ok(measurements.size >= 16 && measurements.size <= 18.2);
       assert.ok(measurements.leading <= 1.6 && measurements.leading >= 1.5);
       assert.ok(measurements.gap <= 0.8);
       assert.equal(await page.locator('.math-source[data-rendered=true]').count(), 7);

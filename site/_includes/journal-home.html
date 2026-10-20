@@ -3,7 +3,7 @@
 {% assign materials = prefix | append: '/materials/' %}{% assign about = prefix | append: '/about/' %}
 <section class="journal-hero">
   <div class="cover-line"><span>{{ ui.history }}</span><span>{{ ui.journal }}</span></div>
-  <div class="hero-copy"><h1>{{ ui.hero_start }}<br><em>{{ ui.hero_end }}</em></h1><p class="lead">{{ ui.lead }}</p><a class="button" href="{{ materials | relative_url }}">{{ ui.read }} <span aria-hidden="true">→</span></a></div>
+  <div class="hero-copy"><h1><span class="hero-title-line">{{ ui.hero_start }}</span> <em class="hero-title-line">{{ ui.hero_end }}</em></h1><p class="lead">{{ ui.lead }}</p><a class="button" href="{{ materials | relative_url }}">{{ ui.read }} <span aria-hidden="true">→</span></a></div>
   <div class="hero-picks" id="hero-picks" aria-label="{{ ui.more }}">
     {% for article in page.journal_featured limit:4 %}<a class="hero-pick" href="{{ article.url | relative_url }}">{% if article.preview_image %}{% include reading-image.html src=article.preview_image alt='' width=120 height=120 sizes='120px' %}{% endif %}<span>{{ article.title | escape }}</span>{% if article.translation_notice %}<small>{{ ui.pending }}</small>{% endif %}</a>{% else %}<p class="selection-empty">{{ ui.featured_empty }}</p>{% endfor %}
   </div>

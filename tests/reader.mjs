@@ -46,7 +46,7 @@ export async function runReaderChecks({browser, origin, evidence, axe, report, c
     assert.equal(await page.evaluate(() => scrollY), 0);
     assert.equal(await page.locator('.math-source[data-rendered=true]').count(), 7);
     const typography = await page.locator('.article-body').evaluate(node => ({size: parseFloat(getComputedStyle(node).fontSize), leading: parseFloat(getComputedStyle(node).lineHeight) / parseFloat(getComputedStyle(node).fontSize)}));
-    assert.ok(typography.size >= 17.2 && typography.size <= 19.5);
+    assert.ok(typography.size >= 16 && typography.size <= 18.2);
     assert.ok(Math.abs(typography.leading - 1.55) < 0.01);
     const paragraph = page.locator('.article-body > p').first();
     await paragraph.evaluate(node => window.scrollTo({top: scrollY + node.getBoundingClientRect().top + node.getBoundingClientRect().height * 0.25 - 24, behavior: 'instant'}));
@@ -64,7 +64,10 @@ export async function runReaderChecks({browser, origin, evidence, axe, report, c
     await audit(page, start.theme + ' ' + start.name + ': resumed article');
     await page.screenshot({path: `${evidence}/resumed-${start.name}.jpg`, fullPage: false});
     await page.getByRole('link', {name: 'Главная', exact: true}).click();
+    await page.waitForLoadState('networkidle');
     await page.getByRole('navigation', {name: 'Основная навигация', exact: true}).getByRole('link', {name: 'Читальный зал', exact: true}).click();
+    await page.waitForLoadState('networkidle');
+    await page.goto(home + 'materials/?per_page=100', {waitUntil: 'networkidle'});
     await page.locator('.catalog-list h3 a[href="/history_math/ru/articles/demo-geometry/"]').click();
     await page.locator('.reading-resume').waitFor({state: 'visible'});
     const menuAlignment = await paragraph.evaluate((node, offset) => node.getBoundingClientRect().top + node.getBoundingClientRect().height * offset, saved.offset);

@@ -17,8 +17,8 @@
   .print-masthead strong { display: block; font-size: 15pt; font-weight: 400; }
   .print-masthead span { display: block; font: 8pt/1.5 system-ui, sans-serif; margin-top: 2mm; color: #62554e; }
   .article-heading { padding: 0 0 4mm; margin: 0; border: 0; break-inside: avoid; }
-  .article-heading h1 { font-size: 25pt; line-height: 1.16; letter-spacing: -.4pt; margin: 2mm 0 4mm; text-wrap: pretty; }
-  .article-heading .lead { font-size: 11.5pt; line-height: 1.5; margin: 0 0 4mm; }
+  .article-heading h1 { font-size: 24pt; line-height: 1.16; letter-spacing: -.4pt; margin: 2mm 0 4mm; text-wrap: pretty; }
+  .article-heading .lead { font-size: 11.5pt; line-height: 1.5; margin: 0 0 calc(4mm - 2pt); }
   .article-heading .eyebrow { font: 8pt/1.5 system-ui, sans-serif; letter-spacing: .8pt; color: #7b5139; }
   .article-meta, .original-publication, .print-source { font: 8.5pt/1.5 system-ui, sans-serif; margin: 1.5mm 0; color: #62554e; }
   .print-source { display: block; }
@@ -30,9 +30,14 @@
   .prose h3 { font-size: 13pt; line-height: 1.3; break-after: avoid; }
   .prose a, .print-source a { color: #6e432c; text-decoration: underline; }
   .prose figure { margin: 4mm 0; break-inside: avoid; }
+  .prose figure, .pdf-math-pair, .pdf-short-paragraph { break-inside: avoid; page-break-inside: avoid; }
+  .pdf-math-pair { display: flow-root; break-inside: avoid; }
+  .pdf-keep-with-next { break-after: avoid; page-break-after: avoid; }
+  .pdf-keep-with-previous { break-before: avoid; page-break-before: avoid; }
+  .prose .pdf-page-break { break-before: page; page-break-before: always; }
   .prose .image-trigger { width: 100%; display: block; margin: 0 auto; padding: 0; border: 0; background: transparent; box-shadow: none; max-width: 100%; }
   .prose img { display: block; width: auto; height: auto; max-width: 100%; max-height: 76mm; object-fit: contain; margin: 0 auto; border: 0; padding: 0; }
-  .prose figcaption { font: 8pt/1.45 system-ui, sans-serif; margin: 2mm auto 0; max-width: 100%; color: #62554e; }
+  .prose figcaption { font: 8pt/1.45 system-ui, sans-serif; margin: 2mm auto 0; max-width: 100%; color: #62554e; break-before: avoid; }
   .table-scroll { overflow: visible; margin: 4mm 0; border: 0; }
   .prose table { width: 100%; min-width: 0; border-collapse: collapse; font-size: 8.5pt; }
   .prose th, .prose td { padding: 2mm; border: .5pt solid #b5a99c; background: transparent !important; color: #2b201b; }
