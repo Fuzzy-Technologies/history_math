@@ -82,7 +82,7 @@ export function paginatePrintDocument(options = PRINT_LAYOUT) {
     !Number.isFinite(settings.minimumWhitespaceMm) || settings.minimumWhitespaceMm < 0) throw new Error('Invalid print layout settings');
   document.documentElement.style.width = settings.pageWidthMm + 'mm';
   document.body.style.width = settings.pageWidthMm + 'mm';
-  const report = {shrunk: [], moved: [], pageBreaks: [], oversized: [], passes: 0};
+  const report = {shrunk: [], moved: [], naturalBreaks: [], oversized: [], passes: 0};
   const originals = new WeakMap(), attempted = new WeakSet();
   const figures = [...body.querySelectorAll(':scope > figure')];
   figures.forEach((figure, index) => { figure.dataset.pdfFigure = figure.id || 'figure-' + (index + 1); });
@@ -177,7 +177,11 @@ export function paginatePrintDocument(options = PRINT_LAYOUT) {
     }
     if (!moved) {
       parent.insertBefore(figure, originalNext);
-      figure.classList.add('pdf-page-break'); report.pageBreaks.push(problem.id);
+      // The unfragmented measurements only approximate Chromium's pagination:
+      // page-edge margins and paragraph fragments can leave more room in print.
+      // Keep the original order and let break-inside: avoid place the complete
+      // figure naturally instead of turning an estimate into a forced break.
+      report.naturalBreaks.push(problem.id);
     }
   }
   report.estimatedPages = measure().pages;
