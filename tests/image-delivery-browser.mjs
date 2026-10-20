@@ -36,7 +36,7 @@ let checkedDownload = false;
 let checkedCrossOriginDownload = false;
 const externalURLs = new Set(Object.values(inventory).flatMap(entry => entry.external_original ?
   [entry.external_original.url, entry.external_original.api_url] : []));
-const originalRasterRequests = requests => requests.filter(url => !url.includes('/assets/images/previews/') && /\.(png|jpe?g)$/i.test(url));
+const originalRasterRequests = requests => requests.filter(url => !url.includes('/assets/images/previews/') && /\.(png|jpe?g|gif)$/i.test(url));
 try {
   for (const width of [390, 1440]) for (const path of pages) {
     const context = await browser.newContext({viewport: {width, height: 1000}, reducedMotion: 'reduce',
@@ -140,7 +140,7 @@ try {
       images.forEach(img => { img.loading = 'eager'; });
       await Promise.all(images.map(img => img.decode()));
     });
-    assert.deepEqual(requests.filter(url => /\.(png|jpe?g)$/i.test(url)), []);
+    assert.deepEqual(requests.filter(url => /\.(png|jpe?g|gif)$/i.test(url)), []);
     await context.close();
   }
   await import('node:fs/promises').then(fs => fs.writeFile('test-results/image-delivery/network.json', JSON.stringify(report, null, 2)));
