@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-b42f411dbebb",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-20",
+    "package_sha256": "f6ce29e2ddd69eebab58df844f69790829b89c821af7d5bc7183a453ddfbf0b0",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/240#issuecomment-6300190096",
+    "source_commit": "6bde902860a534edaedd720af114e0ab70d0f11b",
+    "source_comment_id": 6300190096,
+    "source_review_state": "ISSUE_COMMENT",
+    "approved_at": "2026-10-20T19:58:55Z",
+    "prepared_from_commit": "6bde902860a534edaedd720af114e0ab70d0f11b",
+    "post_review_changes": "No changes after the reviewed source revision."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 18,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-08-25",
+      "url": "https://teletype.in/@history_math/Vunderkindy-matematiki-08-25"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
