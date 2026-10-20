@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-0a63d258ba26/istoriya-matematicheskih-ins-01.png": {
+    "sha256": "c5e063e6220983abc66aa565df22b3302ba70e06c8fa1c142c837eb3f9749894",
+    "width": 2258,
+    "height": 1270,
+    "bytes": 7877556,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-0a63d258ba26/istoriya-matematicheskih-ins-01-png-reading-960-8c0b371c6d3d.webp",
+        "width": 960,
+        "height": 540,
+        "sha256": "8c0b371c6d3df9d78ff37e980608cb5c57101dfe01c636fef45a3e6f445ce842",
+        "bytes": 715012
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-0a63d258ba26-istoriya-matematicheskih-ins-01-c5e063e6220983abc66aa565df22b3302ba70e06c8fa1c142c837eb3f9749894.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561775",
+      "asset_id": 630561775,
+      "release_tag": "article-originals-c",
+      "sha256": "c5e063e6220983abc66aa565df22b3302ba70e06c8fa1c142c837eb3f9749894",
+      "bytes": 7877556
+    }
+  },
+  "/assets/images/hm-tt-0a63d258ba26/istoriya-matematicheskih-ins-02.png": {
+    "sha256": "a410eb124b59ee3d0f6104e70fb64ecdd0a0e8fc87c0d51c4227c5d029d96aa6",
+    "width": 2000,
+    "height": 600,
+    "bytes": 1276484,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-0a63d258ba26/istoriya-matematicheskih-ins-02.png-960.webp",
+        "width": 960,
+        "height": 288,
+        "sha256": "cd0061d80e7bb4378066d7f637df7d2880063aa301897c5c3db877a812a6a269",
+        "bytes": 183524
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-0a63d258ba26-istoriya-matematicheskih-ins-02-a410eb124b59ee3d0f6104e70fb64ecdd0a0e8fc87c0d51c4227c5d029d96aa6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561889",
+      "asset_id": 630561889,
+      "release_tag": "article-originals-a",
+      "sha256": "a410eb124b59ee3d0f6104e70fb64ecdd0a0e8fc87c0d51c4227c5d029d96aa6",
+      "bytes": 1276484
+    }
+  },
+  "/assets/images/hm-tt-0a63d258ba26/istoriya-matematicheskih-ins-03.png": {
+    "sha256": "9896a43a52fa048b7e017c227c68606af90ab72ead7543bf80890a3562c73dd4",
+    "width": 2000,
+    "height": 600,
+    "bytes": 494784,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-0a63d258ba26/istoriya-matematicheskih-ins-03.png-960.webp",
+        "width": 960,
+        "height": 288,
+        "sha256": "2a52540579e07a81ad73b9772b011d2012ff406c8ff6d1cac8adfe25a0bfab17",
+        "bytes": 78784
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-0a63d258ba26-istoriya-matematicheskih-ins-03-9896a43a52fa048b7e017c227c68606af90ab72ead7543bf80890a3562c73dd4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630562085",
+      "asset_id": 630562085,
+      "release_tag": "article-originals-9",
+      "sha256": "9896a43a52fa048b7e017c227c68606af90ab72ead7543bf80890a3562c73dd4",
+      "bytes": 494784
+    }
+  },
+  "/assets/images/hm-tt-0a63d258ba26/istoriya-matematicheskih-ins-04.png": {
+    "sha256": "6b501c4405370ab841e8fafbf3b5eae74f6b19e7bcc37fe6b53f993fd1a63ea4",
+    "width": 2000,
+    "height": 600,
+    "bytes": 998418,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-0a63d258ba26/istoriya-matematicheskih-ins-04.png-960.webp",
+        "width": 960,
+        "height": 288,
+        "sha256": "14d524eaad3ac791eb0d02efcf4abbb8841d4e023ee5e35f59627acb85c38141",
+        "bytes": 139614
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-0a63d258ba26-istoriya-matematicheskih-ins-04-6b501c4405370ab841e8fafbf3b5eae74f6b19e7bcc37fe6b53f993fd1a63ea4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630562270",
+      "asset_id": 630562270,
+      "release_tag": "article-originals-6",
+      "sha256": "6b501c4405370ab841e8fafbf3b5eae74f6b19e7bcc37fe6b53f993fd1a63ea4",
+      "bytes": 998418
+    }
+  },
+  "/assets/images/hm-tt-0a63d258ba26/istoriya-matematicheskih-ins-05.png": {
+    "sha256": "6374864ef639282aa5a75517dd6a462a38d12575132b9ee42130e43edc63e97f",
+    "width": 2000,
+    "height": 600,
+    "bytes": 577887,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-0a63d258ba26/istoriya-matematicheskih-ins-05.png-960.webp",
+        "width": 960,
+        "height": 288,
+        "sha256": "89838ecd4f8125a34453d4551c6491c9fbd292bf30335191472d741118adbc91",
+        "bytes": 106016
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-0a63d258ba26-istoriya-matematicheskih-ins-05-6374864ef639282aa5a75517dd6a462a38d12575132b9ee42130e43edc63e97f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630562475",
+      "asset_id": 630562475,
+      "release_tag": "article-originals-6",
+      "sha256": "6374864ef639282aa5a75517dd6a462a38d12575132b9ee42130e43edc63e97f",
+      "bytes": 577887
+    }
+  },
+  "/assets/images/hm-tt-0a63d258ba26/istoriya-matematicheskih-ins-06.png": {
+    "sha256": "0af966f7aee8dca5d71fbaba0bf42ba78c576ea23a7d328f65ec930451aab76b",
+    "width": 5120,
+    "height": 3840,
+    "bytes": 31040442,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-0a63d258ba26/istoriya-matematicheskih-ins-06-png-reading-960-f881236eb32c.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "f881236eb32c89b43811e5d4f232260cb116ead29e87c42a0febd536b2e3c592",
+        "bytes": 645846
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-0a63d258ba26-istoriya-matematicheskih-ins-06-0af966f7aee8dca5d71fbaba0bf42ba78c576ea23a7d328f65ec930451aab76b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630562696",
+      "asset_id": 630562696,
+      "release_tag": "article-originals-0",
+      "sha256": "0af966f7aee8dca5d71fbaba0bf42ba78c576ea23a7d328f65ec930451aab76b",
+      "bytes": 31040442
+    }
+  }
+}

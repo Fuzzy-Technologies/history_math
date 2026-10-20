@@ -1,0 +1,35 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-0a63d258ba26-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-20",
+    "package_sha256": "1a69c1560f774b707146728e104eaa14af921d06ec58007dd40ab04cbc77f1f3",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/239#issuecomment-6300190813",
+    "source_commit": "e54af7d6b1ab59cab50aaec6ee04ae88282ace05",
+    "source_comment_id": 6300190813,
+    "source_review_state": "ISSUE_COMMENT",
+    "approved_at": "2026-10-20T19:58:57Z",
+    "prepared_from_commit": "e54af7d6b1ab59cab50aaec6ee04ae88282ace05",
+    "post_review_changes": "No changes after the reviewed source revision."
+  },
+  "questions": [
+    {
+      "id": "vernier-similarity-basis",
+      "question": "The source groups the vernier and diagonal scale together as based on similar triangles. Please verify the vernier statement, whose operating principle may instead be the difference between two scale divisions. The source explanation is preserved.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Accepted by the owner without textual changes in https://github.com/Fuzzy-Technologies/history_math/pull/239#issuecomment-6300190813; the reviewed source wording is retained."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-08-28",
+      "url": "https://teletype.in/@history_math/Istoriya-matematicheskih-instrumentov-08-28"
+    }
+  }
+}
