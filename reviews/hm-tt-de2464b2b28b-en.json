@@ -1,0 +1,45 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-de2464b2b28b-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-20",
+    "package_sha256": "08d5abbb5d4c7ade8440c5ca0d17e43f19bbeb3af65a850e456b735a76eda372",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/238#issuecomment-6300191505",
+    "source_commit": "2fb24a4213e622dad0326259c9a2baef06d78ece",
+    "source_comment_id": 6300191505,
+    "source_review_state": "ISSUE_COMMENT",
+    "approved_at": "2026-10-20T19:59:00Z",
+    "prepared_from_commit": "2fb24a4213e622dad0326259c9a2baef06d78ece",
+    "post_review_changes": "No changes after the reviewed source revision."
+  },
+  "questions": [
+    {
+      "id": "en-tolstoy-experiment-date",
+      "question": "Please verify the source’s 1862 date for the seven-week comparison of Tolstoy’s and Yevtushevsky’s systems, which appears in the discussion of the 1872–1874 textbooks and reviews. The date and account are retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Accepted by the owner without textual changes in https://github.com/Fuzzy-Technologies/history_math/pull/238#issuecomment-6300191505; the reviewed source wording is retained."
+    },
+    {
+      "id": "en-tolstoy-strannolyubsky-rank",
+      "question": "Please verify the description of A. N. Strannolyubsky as a general. The source rank is retained.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Accepted by the owner without textual changes in https://github.com/Fuzzy-Technologies/history_math/pull/238#issuecomment-6300191505; the reviewed source wording is retained."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 9,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-08-30",
+      "url": "https://teletype.in/@history_math/Lev-Tolstoj-i-matematika-08-30"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "/assets/images/hm-tt-de2464b2b28b/lev-tolstoj-i-matematika-08-01.png": {
+    "sha256": "dd1c600f3bd3554a48217842bf3b75df0bd81903ac7f48dce1691ea3eff70ca7",
+    "width": 1000,
+    "height": 1420,
+    "bytes": 3203950,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-de2464b2b28b/lev-tolstoj-i-matematika-08-01.png-960.webp",
+        "width": 960,
+        "height": 1363,
+        "sha256": "67765e0bae1eb1c04f5d2b65adcdfadd8d013896c0d04698262aa39000ac17e7",
+        "bytes": 1129722
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-de2464b2b28b-lev-tolstoj-i-matematika-08-01-dd1c600f3bd3554a48217842bf3b75df0bd81903ac7f48dce1691ea3eff70ca7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630499651",
+      "asset_id": 630499651,
+      "release_tag": "article-originals-d",
+      "sha256": "dd1c600f3bd3554a48217842bf3b75df0bd81903ac7f48dce1691ea3eff70ca7",
+      "bytes": 3203950
+    }
+  },
+  "/assets/images/hm-tt-de2464b2b28b/lev-tolstoj-i-matematika-08-02.png": {
+    "sha256": "3cd69a4961afbe7028cc25996320b8c67adc52368a2932fd82e51c17081a16e7",
+    "width": 725,
+    "height": 527,
+    "bytes": 1036337,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-de2464b2b28b/lev-tolstoj-i-matematika-08-02.png-725.webp",
+        "width": 725,
+        "height": 527,
+        "sha256": "f84aae51827c00f030b60cbddaba0d5d884d94bd77146fbc8ce438caf3affff8",
+        "bytes": 449484
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-de2464b2b28b-lev-tolstoj-i-matematika-08-02-3cd69a4961afbe7028cc25996320b8c67adc52368a2932fd82e51c17081a16e7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630565544",
+      "asset_id": 630565544,
+      "release_tag": "article-originals-3",
+      "sha256": "3cd69a4961afbe7028cc25996320b8c67adc52368a2932fd82e51c17081a16e7",
+      "bytes": 1036337
+    }
+  },
+  "/assets/images/hm-tt-de2464b2b28b/lev-tolstoj-i-matematika-08-03.png": {
+    "sha256": "e7aeb224c38892ead59f63947c3b632c5b8884e07e37703b8cb7459b7280d1d4",
+    "width": 1800,
+    "height": 900,
+    "bytes": 2968743,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-de2464b2b28b/lev-tolstoj-i-matematika-08-03.png-960.webp",
+        "width": 960,
+        "height": 480,
+        "sha256": "c5d50510afdcd4a823bc3eccb723034d50d40a5337810510cd47f124d480ff69",
+        "bytes": 482080
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-de2464b2b28b-lev-tolstoj-i-matematika-08-03-e7aeb224c38892ead59f63947c3b632c5b8884e07e37703b8cb7459b7280d1d4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630565698",
+      "asset_id": 630565698,
+      "release_tag": "article-originals-e",
+      "sha256": "e7aeb224c38892ead59f63947c3b632c5b8884e07e37703b8cb7459b7280d1d4",
+      "bytes": 2968743
+    }
+  },
+  "/assets/images/hm-tt-de2464b2b28b/lev-tolstoj-i-matematika-08-04.png": {
+    "sha256": "4c6b243aa6090ca38452f76b737b7e8c934a0523ccd6b8d1c43618ccdfb8a546",
+    "width": 1800,
+    "height": 900,
+    "bytes": 2850992,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-de2464b2b28b/lev-tolstoj-i-matematika-08-04.png-960.webp",
+        "width": 960,
+        "height": 480,
+        "sha256": "cd950196f75ada30645c3b2d7f649e04e741e342cefe39299f933ad435e3c7a3",
+        "bytes": 458008
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-de2464b2b28b-lev-tolstoj-i-matematika-08-04-4c6b243aa6090ca38452f76b737b7e8c934a0523ccd6b8d1c43618ccdfb8a546.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630565896",
+      "asset_id": 630565896,
+      "release_tag": "article-originals-4",
+      "sha256": "4c6b243aa6090ca38452f76b737b7e8c934a0523ccd6b8d1c43618ccdfb8a546",
+      "bytes": 2850992
+    }
+  },
+  "/assets/images/hm-tt-de2464b2b28b/lev-tolstoj-i-matematika-08-05.png": {
+    "sha256": "d7e6913bb3b3a6779a327da089493f17e932fd29a116372eea985e1ff9fd3037",
+    "width": 550,
+    "height": 367,
+    "bytes": 293464,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-de2464b2b28b/lev-tolstoj-i-matematika-08-05.png-550.webp",
+        "width": 550,
+        "height": 367,
+        "sha256": "c815e925e375329b7d8cb7da675812ac893509ad132c3f0604ef83995fede323",
+        "bytes": 119380
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-de2464b2b28b-lev-tolstoj-i-matematika-08-05-d7e6913bb3b3a6779a327da089493f17e932fd29a116372eea985e1ff9fd3037.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630566135",
+      "asset_id": 630566135,
+      "release_tag": "article-originals-d",
+      "sha256": "d7e6913bb3b3a6779a327da089493f17e932fd29a116372eea985e1ff9fd3037",
+      "bytes": 293464
+    }
+  },
+  "/assets/images/hm-tt-de2464b2b28b/lev-tolstoj-i-matematika-08-06.png": {
+    "sha256": "d70eac6829f4f0bc50cb865efb93421db5a0434fecc5bed6c1712c991d9704c6",
+    "width": 3485,
+    "height": 5052,
+    "bytes": 216199,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-de2464b2b28b/lev-tolstoj-i-matematika-08-06.png-960.webp",
+        "width": 960,
+        "height": 1392,
+        "sha256": "0a1420bf05785f40dc23e29206c20d2ff7adde566fe3f5b28be470de11d3476f",
+        "bytes": 105144
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-de2464b2b28b-lev-tolstoj-i-matematika-08-06-d70eac6829f4f0bc50cb865efb93421db5a0434fecc5bed6c1712c991d9704c6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630566375",
+      "asset_id": 630566375,
+      "release_tag": "article-originals-d",
+      "sha256": "d70eac6829f4f0bc50cb865efb93421db5a0434fecc5bed6c1712c991d9704c6",
+      "bytes": 216199
+    }
+  },
+  "/assets/images/hm-tt-de2464b2b28b/lev-tolstoj-i-matematika-08-07.png": {
+    "sha256": "c6c890653fe755cdaf76dc1a94b59fae711b20fcfcb4b06eb41beb74cbca6281",
+    "width": 3485,
+    "height": 5052,
+    "bytes": 280892,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-de2464b2b28b/lev-tolstoj-i-matematika-08-07.png-960.webp",
+        "width": 960,
+        "height": 1392,
+        "sha256": "5b15682d2e7a6b3519381f0f0d84a963bc6762f25c06fc211f6507cbd2c87b06",
+        "bytes": 172128
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-de2464b2b28b-lev-tolstoj-i-matematika-08-07-c6c890653fe755cdaf76dc1a94b59fae711b20fcfcb4b06eb41beb74cbca6281.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630566566",
+      "asset_id": 630566566,
+      "release_tag": "article-originals-c",
+      "sha256": "c6c890653fe755cdaf76dc1a94b59fae711b20fcfcb4b06eb41beb74cbca6281",
+      "bytes": 280892
+    }
+  },
+  "/assets/images/hm-tt-de2464b2b28b/lev-tolstoj-i-matematika-08-08.png": {
+    "sha256": "5072c7324af76c761b17908c624adfeb04117d22966720684cedaf4ea82574e4",
+    "width": 1800,
+    "height": 900,
+    "bytes": 817002,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-de2464b2b28b/lev-tolstoj-i-matematika-08-08.png-960.webp",
+        "width": 960,
+        "height": 480,
+        "sha256": "16ddc55fe5bf1a831a27e8c477b8d64b36ed8ca6791a9fca01706ca3c92bb773",
+        "bytes": 159134
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-de2464b2b28b-lev-tolstoj-i-matematika-08-08-5072c7324af76c761b17908c624adfeb04117d22966720684cedaf4ea82574e4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630566734",
+      "asset_id": 630566734,
+      "release_tag": "article-originals-5",
+      "sha256": "5072c7324af76c761b17908c624adfeb04117d22966720684cedaf4ea82574e4",
+      "bytes": 817002
+    }
+  },
+  "/assets/images/hm-tt-de2464b2b28b/lev-tolstoj-i-matematika-08-09.png": {
+    "sha256": "451f15b74c02f4b0b31092d3ed0e2ce73133c0de2cb8199137ddd54d61109996",
+    "width": 1130,
+    "height": 799,
+    "bytes": 2533163,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-de2464b2b28b/lev-tolstoj-i-matematika-08-09.png-960.webp",
+        "width": 960,
+        "height": 679,
+        "sha256": "d36480dba1283968d4946f9f52d631cc4dabc5f5033bfbafcac0ac359c599b24",
+        "bytes": 911318
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-de2464b2b28b-lev-tolstoj-i-matematika-08-09-451f15b74c02f4b0b31092d3ed0e2ce73133c0de2cb8199137ddd54d61109996.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630566903",
+      "asset_id": 630566903,
+      "release_tag": "article-originals-4",
+      "sha256": "451f15b74c02f4b0b31092d3ed0e2ce73133c0de2cb8199137ddd54d61109996",
+      "bytes": 2533163
+    }
+  }
+}
