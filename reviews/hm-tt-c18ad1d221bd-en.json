@@ -1,0 +1,42 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-c18ad1d221bd-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-20",
+    "package_sha256": "018cb012f149131715fbe1bf90ecbac7e8c18c47305f8c03d659e1d81725443c",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/241#issuecomment-6300189364",
+    "source_commit": "007a48d4cb166e1eba376b4fb710b3ea0ab9f387",
+    "source_comment_id": 6300189364,
+    "source_review_state": "ISSUE_COMMENT",
+    "approved_at": "2026-10-20T19:58:53Z",
+    "prepared_from_commit": "007a48d4cb166e1eba376b4fb710b3ea0ab9f387",
+    "post_review_changes": "No changes after the reviewed source revision."
+  },
+  "questions": [
+    {
+      "id": "cardano-historical-claims",
+      "question": "Can the editor verify the account of Cardano's medical degree, the 1570 imprisonment being in Rome, and the claim that Hamlet holds On Consolation during “To be or not to be”? These source claims have been preserved without correction.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Accepted by the owner without textual changes in https://github.com/Fuzzy-Technologies/history_math/pull/241#issuecomment-6300189364; the reviewed source wording is retained."
+    },
+    {
+      "id": "negative-numbers-cardano",
+      "question": "Should “nor even negative numbers” be qualified to distinguish their existence from their status and acceptance in sixteenth-century European algebra? The source assertion is retained.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Accepted by the owner without textual changes in https://github.com/Fuzzy-Technologies/history_math/pull/241#issuecomment-6300189364; the reviewed source wording is retained."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-08-22",
+      "url": "https://teletype.in/@history_math/Ars-magna-Velikoe-iskusstvo-08-22"
+    }
+  }
+}
