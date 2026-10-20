@@ -104,16 +104,24 @@ if (viewer && typeof viewer.showModal === 'function') {
   let baseWidth = 1;
   let ratio = 1;
   let zoom = 1;
+  let fitMode = true;
   let request = 0;
 
+  function fittedZoom() {
+    return Math.min(1, stage.clientHeight * ratio / baseWidth);
+  }
+  function minimumZoom() {
+    return Math.min(0.1, fittedZoom());
+  }
   function resizeImage() {
     const width = baseWidth * zoom;
     const height = width / ratio;
     canvas.style.width = Math.max(stage.clientWidth, width) + 'px';
     canvas.style.height = Math.max(stage.clientHeight, height) + 'px';
     expanded.style.width = width + 'px';
-    scaleLabel.value = Math.round(zoom * 100) + '%';
-    viewer.querySelector('[data-viewer-action="out"]').disabled = zoom <= 0.1;
+    const percentage = zoom * 100;
+    scaleLabel.value = (percentage < 1 ? percentage.toFixed(1) : Math.round(percentage)) + '%';
+    viewer.querySelector('[data-viewer-action="out"]').disabled = zoom <= minimumZoom();
     viewer.querySelector('[data-viewer-action="in"]').disabled = zoom >= 4;
   }
   function changeZoom(value, anchor = {x: stage.clientWidth / 2, y: stage.clientHeight / 2}) {
@@ -121,7 +129,8 @@ if (viewer && typeof viewer.showModal === 'function') {
     const previousHeight = previousWidth / ratio;
     const x = (stage.scrollLeft + anchor.x - Math.max(0, (stage.clientWidth - previousWidth) / 2)) / previousWidth;
     const y = (stage.scrollTop + anchor.y - Math.max(0, (stage.clientHeight - previousHeight) / 2)) / previousHeight;
-    zoom = Math.min(4, Math.max(0.1, value));
+    fitMode = false;
+    zoom = Math.min(4, Math.max(minimumZoom(), value));
     resizeImage();
     const width = baseWidth * zoom;
     const height = width / ratio;
@@ -129,7 +138,9 @@ if (viewer && typeof viewer.showModal === 'function') {
     stage.scrollTop = y * height + Math.max(0, (stage.clientHeight - height) / 2) - anchor.y;
   }
   function fitImage() {
-    changeZoom(Math.min(1, stage.clientHeight * ratio / baseWidth));
+    fitMode = true;
+    zoom = fittedZoom();
+    resizeImage();
     stage.scrollTo(0, 0);
   }
   async function openImage(image, trigger) {
@@ -168,9 +179,7 @@ if (viewer && typeof viewer.showModal === 'function') {
       download.removeAttribute('aria-disabled');
       baseWidth = stage.clientWidth;
       ratio = expanded.naturalWidth / expanded.naturalHeight;
-      zoom = 1;
-      resizeImage();
-      stage.scrollTo(0, 0);
+      fitImage();
       viewer.setAttribute('aria-busy', 'false');
     } catch {
       if (viewer.open && current === request) {
@@ -274,7 +283,7 @@ if (viewer && typeof viewer.showModal === 'function') {
   window.addEventListener('resize', () => {
     if (!viewer.open || !expanded.naturalWidth) return;
     baseWidth = stage.clientWidth;
-    resizeImage();
+    if (fitMode) fitImage(); else resizeImage();
   });
 }
 
