@@ -69,7 +69,10 @@ try {
       assert.deepEqual(await navigation.locator('a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))),
         ['/', '/materials/', '/showcase/', '/search/'].map(path => '/history_math' + prefix + path));
       assert.equal(await page.locator('#latest-cards .translation-label').count(), 0);
-      for (const heading of await page.locator('h1, h2, h3').allTextContents()) assert.doesNotMatch(heading.trim(), /\.$/);
+      for (const heading of await page.locator('h1, h2, h3').allTextContents()) {
+        // An author's closing ellipsis is valid title punctuation.
+        assert.doesNotMatch(heading.trim().replace(/(?:\.{3}|…)$/, ''), /\.$/);
+      }
       assert.doesNotMatch(await page.locator('.about-teaser').innerText(), /международного математического|international mathematics/);
       await audit(page);
       await page.screenshot({path: `test-results/journal-polish/home-${language}-${width}-${theme}.png`, fullPage: true});
