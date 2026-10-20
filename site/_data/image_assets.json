@@ -32,34 +32,34 @@
     ]
   },
   "/assets/images/Math-with-Mansur-print-en.png": {
-    "sha256": "5ed2b018211f3c9306433cad87f6c1c09832832476da5e309447734c68534c1e",
-    "width": 2880,
-    "height": 480,
-    "bytes": 727460,
+    "sha256": "c68481b7d5e9aa06983f2acaa29a4dde27cf0c5bca18695da33c5b5433a18c1a",
+    "width": 4344,
+    "height": 724,
+    "bytes": 3332036,
     "logo": true,
     "variants": [
       {
         "path": "/assets/images/Math-with-Mansur-print-en.svg",
-        "width": 2880,
-        "height": 480,
-        "sha256": "60034ef50405ad1ffab6c778a67b0890f4ea20eb24f1a7ab895b94dd61814081",
-        "bytes": 131913
+        "width": 4344,
+        "height": 724,
+        "sha256": "c64d40e253fe749698b0d903dbf28ad0e4631f2ac2ebbaaa0d7d8e920e5308ea",
+        "bytes": 4443122
       }
     ]
   },
   "/assets/images/Math-with-Mansur-print-ru.png": {
-    "sha256": "04e1005ab023d69961d6b757819d390086c713deefef58ce0faa04313d5ae946",
-    "width": 2880,
-    "height": 480,
-    "bytes": 768807,
+    "sha256": "1175e42adce0de350fd319a443deb1aa700ff21ac64ceafca00c7b710427136b",
+    "width": 4344,
+    "height": 724,
+    "bytes": 3351201,
     "logo": true,
     "variants": [
       {
         "path": "/assets/images/Math-with-Mansur-print-ru.svg",
-        "width": 2880,
-        "height": 480,
-        "sha256": "b41c6b9bb4241d03478af848de2ec9b00d291090327c51f128a93ddc448871e9",
-        "bytes": 145595
+        "width": 4344,
+        "height": 724,
+        "sha256": "02c6630c37d7363cb7fcc5384409ea87b1b88fdeccffaea8ed5b59235655d2da",
+        "bytes": 4468703
       }
     ]
   },
