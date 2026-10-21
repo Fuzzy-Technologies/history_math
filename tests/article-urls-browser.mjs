@@ -8,7 +8,7 @@ import {publishedArticles} from './published-articles.mjs';
 const root = resolve(process.env.URL_SITE_DIR || '_site');
 const base = process.env.URL_BASEURL ?? '/history_math';
 const publicOrigin = process.env.URL_ORIGIN ?? 'https://fuzzy-technologies.github.io';
-const mime = {'.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2'};
+const mime = {'.pdf': 'application/pdf', '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2'};
 const server = createServer(async (request, response) => {
   try {
     const pathname = new URL(request.url, 'http://localhost').pathname;
@@ -29,6 +29,7 @@ try {
   assert.ok(expected.length > 0, 'The route check needs published source articles');
   assert.deepEqual(records.map(article => `${article.lang}:${article.url}`).sort(),
     expected.map(article => `${article.lang}:${article.url}`).sort());
+  const downloaded = new Map();
   for (const article of records) {
     const page = await browser.newPage({viewport: {width: 320, height: 800}});
     const errors = [];
@@ -46,6 +47,20 @@ try {
     const otherLang = article.lang === 'ru' ? 'en' : 'ru';
     const alternate = await page.locator(`link[hreflang=${otherLang}]`).getAttribute('href');
     assert.ok(alternate.endsWith(`-${otherLang}/`));
+    const filename = article.pdf_url.split('/').at(-1);
+    assert.ok(filename.endsWith(`-${article.lang}.pdf`));
+    assert.equal(await page.locator('.article-pdf').getAttribute('href'), base + article.pdf_url);
+    assert.equal(await page.locator('.article-pdf').getAttribute('download'), filename);
+    if (!downloaded.has(article.lang)) {
+      const pending = page.waitForEvent('download');
+      await page.locator('.article-pdf').click();
+      const download = await pending;
+      assert.equal(download.suggestedFilename(), filename);
+      assert.equal(await download.failure(), null);
+      const bytes = await readFile(await download.path());
+      assert.equal(bytes.subarray(0, 5).toString(), '%PDF-');
+      downloaded.set(article.lang, filename);
+    }
     assert.deepEqual(errors, []);
     await page.close();
     const nojs = await browser.newPage({javaScriptEnabled: false});
@@ -56,5 +71,7 @@ try {
     assert.equal(new URL(nojs.url()).pathname, base + article.url);
     await nojs.close();
   }
-  console.log(`PASS: ${records.length} localized article URLs, legacy redirects with query/anchors, citations, hreflang and no-JS links (${base || 'root'})`);
+  assert.equal(downloaded.size, 2);
+  assert.notEqual(downloaded.get('ru'), downloaded.get('en'));
+  console.log(`PASS: ${records.length} localized article URLs/PDF names, native RU/EN downloads, legacy redirects with query/anchors, citations, hreflang and no-JS links (${base || 'root'})`);
 } finally { await browser.close(); await new Promise(done => server.close(done)); }

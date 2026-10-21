@@ -198,11 +198,12 @@ class PublicationTest < Minitest::Test
       site = Jekyll::Site.new(config)
       site.process
       manifest = JSON.parse(File.read(File.join(site.dest, "assets/article-pdfs.json")))
+      assert_equal 2, manifest["version"]
       assert_equal "/history_math", manifest["baseurl"]
       assert_equal %w[en ru], manifest["articles"].map { |item| item["lang"] }.uniq.sort
       refute manifest["articles"].any? { |item| item["url"].include?("example-minimal") }
       en = File.read(File.join(site.dest, "articles/pdf-example/index.html"))
-      assert_includes en, "/history_math/assets/pdf/en/pdf-example.pdf"
+      assert_includes en, "/history_math/assets/pdf/en/pdf-example-en.pdf"
       assert_includes en, "/history_math/assets/images/Math-with-Mansur-logo.png"
       destination = File.expand_path("../test-results/pdf-fixture", __dir__)
       FileUtils.rm_rf(destination)
@@ -222,7 +223,8 @@ class PublicationTest < Minitest::Test
         assert_equal url, doc.url
         html = File.read(File.join(site.dest, url, "index.html"))
         assert_includes html, "https://fuzzy-technologies.github.io/history_math#{url}"
-        assert_includes html, "/assets/pdf/#{language}/#{id}.pdf"
+        assert_includes html, "/assets/pdf/#{language}/#{id}-#{language}.pdf"
+        assert_includes html, %(download="#{id}-#{language}.pdf")
         legacy = "#{prefix}/articles/#{id}/"
         redirect = File.read(File.join(site.dest, legacy, "index.html"))
         assert_includes redirect, "noindex, follow"
@@ -261,7 +263,7 @@ class PublicationTest < Minitest::Test
         refute_includes html, "Editorial review copy"
         refute_includes html, "noindex, nofollow"
         assert_includes html, "hreflang=\"ru\""
-        assert_includes html, "/assets/pdf/en/#{key}.pdf"
+        assert_includes html, "/assets/pdf/en/#{key}-en.pdf"
         # Draft exclusion is tested on temporary copies of the now-approved translations.
         File.write(path, File.read(path).sub("status: published", "status: draft").gsub(/^date:.*\n/, ""))
       end
