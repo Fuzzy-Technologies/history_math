@@ -7,7 +7,7 @@
   <section class="hero-articles" aria-labelledby="article-picks-heading">
     <h2 id="article-picks-heading">{{ ui.article_picks }}</h2>
     <div class="hero-article-cards" id="article-picks" data-exclude-tags="{{ page.journal_excluded_tags | join: '|' | escape }}">
-      {% for article in page.journal_article_picks limit:2 %}<a class="hero-pick" href="{{ article.url | relative_url }}">{% if article.preview_image %}{% include reading-image.html src=article.preview_image alt='' width=64 height=64 sizes='64px' %}{% endif %}<span class="hero-pick-copy"><span class="hero-pick-title">{{ article.title | escape }}</span></span></a>{% else %}<p class="selection-empty">{{ ui.rubric_empty }}</p>{% endfor %}
+      {% for article in page.journal_article_picks limit:3 %}<a class="hero-pick" href="{{ article.url | relative_url }}">{% if article.preview_image %}{% include reading-image.html src=article.preview_image alt='' width=64 height=64 sizes='64px' %}{% endif %}<span class="hero-pick-copy"><span class="hero-pick-title">{{ article.title | escape }}</span></span></a>{% else %}<p class="selection-empty">{{ ui.rubric_empty }}</p>{% endfor %}
     </div>
   </section>
   <div class="hero-rubrics" id="hero-picks">
