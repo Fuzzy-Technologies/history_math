@@ -80,9 +80,11 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
 
     await page.goto(base + '/ru/', {waitUntil: 'networkidle'});
     const archive = page.locator('#archive-cards');
+    assert.equal(await page.locator('#reshuffle').count(), 0);
     const height = await archive.evaluate(node => node.getBoundingClientRect().height);
     for (let rotation = 0; rotation < 3; rotation += 1) {
-      await page.locator('#reshuffle').click();
+      await page.evaluate(() => window.dispatchEvent(new PageTransitionEvent('pageshow', {persisted: true})));
+      await page.evaluate(() => document.fonts.ready);
       assert.ok(Math.abs(await archive.evaluate(node => node.getBoundingClientRect().height) - height) < 2);
     }
     const cardTag = page.locator('#latest-cards [data-tag]').first();

@@ -38,7 +38,7 @@ layout: default
   {% assign reading = site.articles | where: 'lang', page.lang | sort: 'date' | reverse %}
   {% for item in reading %}{% if item.url == page.url %}{% assign current_index = forloop.index0 %}{% assign following_index = current_index | plus: 1 %}{% assign preceding_index = current_index | minus: 1 %}{% endif %}{% endfor %}
   <nav class="reading-navigation" aria-label="{% if page.lang == 'ru' %}Листать статьи{% else %}Browse articles{% endif %}">
-    {% if preceding_index >= 0 %}{% assign preceding = reading[preceding_index] %}<a href="{{ preceding.url | relative_url }}"><span class="eyebrow">← {% if page.lang == 'ru' %}Предыдущая статья{% else %}Previous article{% endif %}</span><span>{{ preceding.title }}</span></a>{% endif %}
-    {% if following_index < reading.size %}{% assign following = reading[following_index] %}<a href="{{ following.url | relative_url }}"><span class="eyebrow">{% if page.lang == 'ru' %}Следующая статья{% else %}Next article{% endif %} →</span><span>{{ following.title }}</span></a>{% endif %}
+    {% if preceding_index >= 0 %}{% assign preceding = reading[preceding_index] %}<a class="reading-previous" rel="prev" href="{{ preceding.url | relative_url }}"><span class="eyebrow">← {% if page.lang == 'ru' %}Предыдущая статья{% else %}Previous article{% endif %}</span><span>{{ preceding.title }}</span></a>{% endif %}
+    {% if following_index < reading.size %}{% assign following = reading[following_index] %}<a class="reading-next" rel="next" href="{{ following.url | relative_url }}"><span class="eyebrow">{% if page.lang == 'ru' %}Следующая статья{% else %}Next article{% endif %} →</span><span>{{ following.title }}</span></a>{% endif %}
   </nav>
 </article>

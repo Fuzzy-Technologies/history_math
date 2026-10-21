@@ -585,16 +585,12 @@ if (archive) {
       document.querySelector('#archive-status').textContent = (ru ? 'Подборка обновлена: ' : 'Selection updated: ') + picked.map(record => record.title).join(', ');
     }
     rotate();
-    const button = document.querySelector('#reshuffle');
-    button.hidden = pool.length <= 4;
-    button.addEventListener('click', rotate);
     window.addEventListener('pageshow', event => {
       if (!event.persisted) return;
       rotateReading();
       rotateArticlePicks();
       rotateRubrics();
       reserveArchiveSpace();
-      button.hidden = pool.length <= 4;
       rotate();
     });
   }).catch(() => { document.querySelector('#archive-status').textContent = ru ? 'Показана исходная подборка.' : 'Showing the original selection.'; });

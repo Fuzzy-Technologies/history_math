@@ -29,7 +29,7 @@
   <div class="card-grid magazine-carousel" id="latest-cards" data-selection="{{ site.data.reading_selection | jsonify | escape }}" tabindex="0" role="region" aria-label="{{ ui.recommendations }}">{% for article in page.journal_articles limit:10 %}{% include card.html article=article %}{% else %}<p class="empty-state">{{ ui.latest_empty }}</p>{% endfor %}</div>
 </section>
 <section class="archive-section journal-section" aria-labelledby="archive-heading">
-  <div class="section-heading"><div><p class="eyebrow">{{ ui.also }}</p><h2 id="archive-heading">{{ ui.archive }}</h2></div><button class="text-button" id="reshuffle" type="button" hidden>{{ ui.shuffle }} <span aria-hidden="true">↻</span></button></div>
+  <div class="section-heading"><div><p class="eyebrow">{{ ui.also }}</p><h2 id="archive-heading">{{ ui.archive }}</h2></div></div>
   <div id="archive-cards" class="archive-grid">{% for article in page.journal_archive limit:4 %}<article class="archive-card"><p class="eyebrow">{% include type.html type=article.type %}</p><h3><a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a></h3>{% if article.translation_notice %}<p class="translation-label">{{ ui.pending }}</p>{% endif %}<p>{{ article.description | escape }}</p><div class="tag-list">{% assign archive_tags = article.tags | topic_labels %}{% for tag in archive_tags %}{% include tag.html tag=tag %}{% endfor %}</div></article>{% else %}<p class="selection-empty">{{ ui.archive_empty }}</p>{% endfor %}</div><p id="archive-status" class="visually-hidden" role="status"></p>
 </section>
 <section class="about-teaser">

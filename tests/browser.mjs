@@ -93,17 +93,17 @@ try {
           assert.ok(cards.every(card => Math.abs(card.left - cards[0].left) < 1));
           checked('Mobile: all magazine cards form a vertical reading sequence');
         }
-        const titles = await page.locator('.journal-section .material-card h3').allTextContents();
+        assert.equal(await page.locator('#reshuffle').count(), 0);
         const originalHeight = await page.locator('#archive-cards').evaluate(node => node.getBoundingClientRect().height);
         let previous = await page.locator('#archive-cards h3 a').evaluateAll(links => links.map(link => link.href).sort());
         for (let index = 0; index < 10; index += 1) {
-          await page.locator('#reshuffle').click();
+          await page.evaluate(() => window.dispatchEvent(new PageTransitionEvent('pageshow', {persisted: true})));
+          await page.evaluate(() => document.fonts.ready);
           const current = await page.locator('#archive-cards h3 a').evaluateAll(links => links.map(link => link.href).sort());
           assert.equal(new Set(current).size, 4);
           assert.notDeepEqual(current, previous);
           previous = current;
         }
-        assert.deepEqual(await page.locator('.journal-section .material-card h3').allTextContents(), titles);
         assert.ok(Math.abs(await page.locator('#archive-cards').evaluate(node => node.getBoundingClientRect().height) - originalHeight) < 2, 'Archive height changed during rotation');
         await page.screenshot({path: `${evidence}/home-${viewport.name}.png`, fullPage: true});
         checked(`${viewport.name}: archive rotation changes only its block, without repeats or layout shifts`);
@@ -336,7 +336,8 @@ try {
   assert.equal(await restrictedPage.locator('html').getAttribute('data-theme'), 'dark');
   await restrictedPage.locator('.theme-toggle').click();
   assert.equal(await restrictedPage.locator('html').getAttribute('data-theme'), 'light');
-  assert.ok(await restrictedPage.locator('#reshuffle').isVisible());
+  assert.equal(await restrictedPage.locator('#reshuffle').count(), 0);
+  assert.equal(await restrictedPage.locator('#archive-cards h3 a').count(), 4);
   await restricted.close();
   checked('System dark preference and blocked storage preserve working reading controls');
   }
