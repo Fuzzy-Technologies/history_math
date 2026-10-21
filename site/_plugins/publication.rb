@@ -125,7 +125,7 @@ module HistoryMath
 
   class PublicIndex < Jekyll::Generator
     safe false
-    priority :low
+    priority :lowest
 
     def generate(site)
       documents = HistoryMath.visible_documents(site)
@@ -154,7 +154,7 @@ module HistoryMath
         page.data["render_with_liquid"] = false
         site.pages << page
         discovery = Jekyll::PageWithoutAFile.new(site, site.source, "assets", "discovery-#{language}.json")
-        discovery.content = JSON.generate(records)
+        discovery.content = JSON.generate(records.map { |record| record.reject { |key, _value| key == :text } })
         discovery.data.merge!({"layout" => nil, "sitemap" => false, "render_with_liquid" => false})
         site.pages << discovery
       end

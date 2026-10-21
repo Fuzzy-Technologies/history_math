@@ -66,6 +66,17 @@ class PublicationTest < Minitest::Test
           assert_equal (HistoryMath.preserved_publication_date(doc.data) || HistoryMath.teletype_publication_date(doc.data) || "2026-09-21"), record["date"]
         end
       end
+      %w[en ru].each do |language|
+        discovery = JSON.parse(File.read(File.join(site.dest, "assets/discovery-#{language}.json")))
+        search = JSON.parse(File.read(File.join(site.dest, "assets/search-#{language}.json")))
+        assert discovery.none? { |record| record.key?("text") }
+        assert search.all? { |record| record["text"].is_a?(String) }
+        assert_equal discovery.reject { |record| record["translation_notice"] }.map { |record| record["url"] }, search.map { |record| record["url"] }
+        pages = site.pages.select { |page| page.data["catalog_section"] && page.data["lang"] == language }.sort_by { |page| page.data["catalog_page"] }
+        urls = pages.flat_map { |page| page.data.fetch("catalog_articles").map { |article| site.baseurl + article.url } }
+        assert_equal discovery.map { |record| record["url"] }, urls
+        pages.each { |page| assert File.file?(page.destination(site.dest)) }
+      end
       before.each { |path, bytes| assert_equal bytes, File.binread(path) }
       # A strict deployment cannot silently use a preview/source date.
       ENV["HISTORY_MATH_PUBLICATION_STRICT"] = "1"

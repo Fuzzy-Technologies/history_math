@@ -249,7 +249,7 @@ try {
     await page.screenshot({path: `test-results/journal-polish/populated-${language}-${width}-${javaScriptEnabled}.png`, fullPage: true});
     await page.locator('.cover-bottom a').click();
     await page.waitForLoadState('networkidle');
-    assert.equal(await page.locator('.catalog-list .material-card').count(), javaScriptEnabled ? Math.min(20, fixtureRecords.length) : fixtureRecords.length);
+    assert.equal(await page.locator('.catalog-list .material-card').count(), Math.min(20, fixtureRecords.length));
     await page.close();
   }
   // Storage failures must preserve usable rubric cards and normal navigation.

@@ -23,6 +23,7 @@
       document.querySelector('link[rel="canonical"]').href = template.dataset.url;
       document.body.dataset.lang = 'ru';
       document.body.dataset.search = {{ '/ru/search/' | relative_url | jsonify }};
+      document.body.dataset.searchIndex = {{ '/assets/search-ru.json' | relative_url | jsonify }} + '?v={{ asset_version }}';
       document.body.dataset.index = {{ '/assets/discovery-ru.json' | relative_url | jsonify }} + '?v={{ asset_version }}';
       document.body.replaceChildren(template.content.cloneNode(true));
       delete document.documentElement.dataset.errorLocale;

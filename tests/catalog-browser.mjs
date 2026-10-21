@@ -35,7 +35,11 @@ try {
     page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
     const url = origin + base + prefix + '/materials/';
     const visible = () => page.locator('.catalog-list h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
+    const indexRequests = [];
+    page.on('request', request => { if (/assets\/(?:discovery|search)-/.test(request.url())) indexRequests.push(request.url()); });
     await page.goto(url, {waitUntil: 'networkidle'});
+    assert.ok(indexRequests.some(url => url.includes('/discovery-')));
+    assert.ok(indexRequests.every(url => !url.includes('/search-')));
     assert.equal(await page.getByRole('combobox').count(), 3);
     assert.deepEqual(await visible(), records.slice(0, 20).map(record => record.url));
     assert.equal(await page.locator('#page-size').inputValue(), '20');
@@ -57,6 +61,9 @@ try {
     await page.goBack({waitUntil: 'networkidle'});
     await page.waitForFunction(() => document.querySelector('#page-size').value === '20');
     assert.equal(await page.locator('#page-size-button span').textContent(), '20');
+    assert.deepEqual(await visible(), records.slice(20, 40).map(record => record.url));
+    await page.goto(url + 'page/2/', {waitUntil: 'networkidle'});
+    assert.equal(new URL(page.url()).pathname, new URL(url).pathname);
     assert.deepEqual(await visible(), records.slice(20, 40).map(record => record.url));
     await page.goto(url + '?page=2&per_page=10', {waitUntil: 'networkidle'});
     await page.reload({waitUntil: 'networkidle'});
@@ -90,11 +97,27 @@ try {
     }
     await context.close();
     const noJs = await browser.newPage({javaScriptEnabled: false, viewport: {width: 1440, height: 1000}});
-    await noJs.goto(url, {waitUntil: 'networkidle'});
-    assert.equal(await noJs.locator('.catalog-list .material-card').count(), records.length);
-    assert.equal(await noJs.locator('.catalog-controls').isVisible(), false);
-    assert.equal(await noJs.locator('.catalog-pagination').isVisible(), false);
+    const allStatic = [];
+    for (let number = 1; number <= Math.ceil(records.length / 20); number++) {
+      await noJs.goto(number === 1 ? url : url + `page/${number}/`, {waitUntil: 'networkidle'});
+      const links = await noJs.locator('.catalog-list h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
+      assert.ok(links.length <= 20);
+      allStatic.push(...links);
+      assert.equal(await noJs.locator('.catalog-controls').isVisible(), false);
+      assert.equal(await noJs.locator('.catalog-pagination').isVisible(), true);
+      if (number < Math.ceil(records.length / 20)) assert.ok(await noJs.locator(`.catalog-pagination a[href$="page/${number + 1}/"]`).count());
+    }
+    assert.deepEqual(allStatic, records.map(record => record.url));
     await noJs.close();
+    const offline = await browser.newPage();
+    await offline.route('**/assets/discovery-*.json*', route => route.fulfill({status: 503, body: 'Unavailable'}));
+    await offline.goto(url + 'page/2/', {waitUntil: 'networkidle'});
+    assert.deepEqual(await offline.locator('.catalog-list h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))), records.slice(20, 40).map(record => record.url));
+    assert.equal(await offline.locator('.catalog-controls').isVisible(), false);
+    await offline.locator('.catalog-pagination a').filter({hasText: /^1$/}).click();
+    await offline.waitForURL(url);
+    assert.equal(await offline.locator('.catalog-list .material-card').count(), 20);
+    await offline.close();
   }
   assert.deepEqual(errors, []);
   console.log('PASS: bilingual compact five-column catalog, default/page-size pagination, URL reload/back/clamping, filters, responsive menus and complete no-JS fallback');

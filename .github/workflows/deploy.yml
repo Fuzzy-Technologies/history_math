@@ -18,6 +18,7 @@ jobs:
     permissions:
       contents: read
       pages: read
+      actions: read
     runs-on: ubuntu-24.04
     timeout-minutes: 60
     steps:
@@ -42,14 +43,27 @@ jobs:
           path: .pdf-cache
           key: pdf-v1-${{ runner.os }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}-${{ github.job }}
           restore-keys: pdf-v1-${{ runner.os }}-
-      - name: Verify approved source and build
+      - name: Install publication dependencies
+        run: npm ci
+      - name: Choose checks since the last successful publication
+        id: plan
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PUBLICATION_FORCE_FULL: ${{ github.event_name == 'workflow_dispatch' }}
+        run: node scripts/publication-plan.mjs
+      - name: Validate article sources and reading assets
         run: |
-          npm ci
-          python3 -m pip install -r tools/requirements-images.txt
-          npx playwright install --with-deps chromium
           python3 tools/markdown_tables.py
-          npm test
+          python3 tools/image_assets.py
+          python3 tools/pdf_mastheads.py
           node scripts/check-articles.mjs --source-only
+      - name: Install PDF rendering engine
+        run: npx playwright install --with-deps chromium
+      - name: Verify site code, layout and browser contracts
+        if: steps.plan.outputs.full_checks == 'true'
+        run: |
+          python3 -m pip install -r tools/requirements-images.txt
+          npm test
           for test_file in tests/*_test.rb; do
             bundle exec ruby "$test_file"
           done
@@ -66,14 +80,18 @@ jobs:
           # Pages can report HTTP while the custom-domain certificate is being issued.
           PAGES_ORIGIN: https://${{ steps.pages.outputs.host }}
           PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          FULL_CHECKS: ${{ steps.plan.outputs.full_checks }}
         run: |
           node scripts/pages-config.mjs > "$RUNNER_TEMP/history-math-pages.yml"
           HISTORY_MATH_PUBLICATION_REF="$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build --config "_config.yml,$RUNNER_TEMP/history-math-pages.yml" --destination _site-pages --trace
           node scripts/article-pdf.mjs --site-dir _site-pages
           python3 scripts/check_site.py _site-pages "$PAGES_BASE_PATH" "$PAGES_ORIGIN"
-          IMAGE_SITE_DIR=_site-pages IMAGE_BASEURL="$PAGES_BASE_PATH" node tests/image-delivery-browser.mjs
-          ERROR_SITE_DIR=_site-pages ERROR_BASEURL="$PAGES_BASE_PATH" node tests/errors-browser.mjs
-          URL_SITE_DIR=_site-pages URL_BASEURL="$PAGES_BASE_PATH" URL_ORIGIN="$PAGES_ORIGIN" node tests/article-urls-browser.mjs
+          node scripts/publication-size.mjs _site-pages
+          if [ "$FULL_CHECKS" = "true" ]; then
+            IMAGE_SITE_DIR=_site-pages IMAGE_BASEURL="$PAGES_BASE_PATH" node tests/image-delivery-browser.mjs
+            ERROR_SITE_DIR=_site-pages ERROR_BASEURL="$PAGES_BASE_PATH" node tests/errors-browser.mjs
+            URL_SITE_DIR=_site-pages URL_BASEURL="$PAGES_BASE_PATH" URL_ORIGIN="$PAGES_ORIGIN" node tests/article-urls-browser.mjs
+          fi
       - name: Save validated PDF cache
         if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
         uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0

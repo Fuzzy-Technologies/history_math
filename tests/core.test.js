@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {normalize, search, searchByTag, selection, anniversaries, topicKey, rubricArticles, articleCandidates} from '../site/assets/core.js';
+import {normalize, search, searchByTag, selection, anniversaries, topicKey, rubricArticles, articleCandidates, archiveMeasurements} from '../site/assets/core.js';
 
 const records = [
   {title: 'Счёт и геометрия', description: '', text: 'Чертёж', tags: ['идеи'], type: 'essay', language: 'ru', date: '2025-10-01', url: '/a/'},
@@ -101,4 +101,20 @@ test('ordinary hero articles exclude every humor/personality alias, drafts, demo
   assert.equal(new Set(next.map(record => record.url)).size, 2);
   assert.notDeepEqual(next.map(record => record.url).sort(), first.map(record => record.url).sort());
   assert.deepEqual(selection(ordinary.slice(0, 1), 2), ordinary.slice(0, 1));
+});
+
+
+test('archive measurement stays bounded for a thousand articles without reducing the selectable pool', () => {
+  const input = Array.from({length: 1000}, (_, index) => ({...records[0], url: `/archive-${index}/`}));
+  input[701] = {...input[701], title: 'Title '.repeat(200)};
+  input[702] = {...input[702], description: 'Summary '.repeat(200)};
+  input[703] = {...input[703], tags: Array(100).fill('Long tag')};
+  const before = structuredClone(input);
+  const probes = archiveMeasurements(input);
+  assert.ok(probes.length <= 16);
+  for (const index of [701, 702, 703]) assert.ok(probes.includes(input[index]));
+  assert.deepEqual(input, before);
+  assert.equal(selection(input, 1000).length, 1000);
+  assert.deepEqual(archiveMeasurements(input.slice(0, 6)), input.slice(0, 6));
+  assert.deepEqual(archiveMeasurements([]), []);
 });

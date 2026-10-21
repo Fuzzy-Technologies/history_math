@@ -202,7 +202,7 @@ try {
   assert.equal(await page.locator('.material-card').count(), 10);
   assert.equal(await page.locator('#archive-cards h3 a').count(), 4);
   await page.goto(origin + '/history_math/ru/materials/');
-  assert.equal(await page.locator('.material-card:visible').count(), articleRecords.length);
+  assert.equal(await page.locator('.material-card:visible').count(), Math.min(20, articleRecords.length));
   checked('Without JavaScript: reading, catalog and initial archive remain available');
   await context.close();
   }

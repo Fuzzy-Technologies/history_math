@@ -88,7 +88,7 @@ class TranslationNoticesTest < Minitest::Test
       discovery = JSON.parse(File.read(File.join(site.dest, "assets/discovery-en.json")))
       assert_equal ids.length, discovery.length
       assert discovery.all? { |record| record["translation_notice"] == true && record["language"] == "en" }
-      assert discovery.all? { |record| record["text"] == record["description"] }
+      assert discovery.none? { |record| record.key?("text") }
       assert_equal ids.map { |id| "/history_math/articles/#{id}-en/" }.sort, discovery.map { |record| record["url"] }.sort
       fixture = File.expand_path("../test-results/notices-fixture", __dir__)
       FileUtils.rm_rf(fixture)
