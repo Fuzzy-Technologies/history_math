@@ -73,6 +73,9 @@ async function checkArticlePicks(page, records, language) {
 
 async function checkHeroColumns(page) {
   const width = page.viewportSize().width;
+  assert.ok(await page.locator('.hero-pick img').evaluateAll(images => images.every(image =>
+    ['TopLeft', 'TopRight', 'BottomLeft', 'BottomRight'].every(corner =>
+      parseFloat(getComputedStyle(image)[`border${corner}Radius`]) > 0))), 'All hero thumbnails have rounded corners');
   const [copy, articles, rubrics] = await page.locator('.hero-copy, .hero-articles, .hero-rubrics')
     .evaluateAll(nodes => nodes.map(node => { const box = node.getBoundingClientRect(); return {x: box.x, top: box.top, bottom: box.bottom}; }));
   const cards = await page.locator('#article-picks > a').evaluateAll(nodes => nodes.map(node => {
@@ -100,6 +103,33 @@ async function checkHeroColumns(page) {
   }));
   assert.equal(rubricCards.length, 2);
   assert.ok(rubricCards[1].top >= rubricCards[0].bottom, 'Keep humor above the single personality card');
+}
+
+async function checkArticleLayout(page) {
+  const geometry = await page.evaluate(() => {
+    const edges = node => { const box = node.getBoundingClientRect(); return {left: box.left, right: box.right, top: box.top, bottom: box.bottom}; };
+    const nav = document.querySelector('.reading-navigation');
+    return {
+      separator: edges(document.querySelector('.article-spread')),
+      details: edges(document.querySelector('.article-details')),
+      pdf: edges(document.querySelector('.article-pdf')),
+      meta: edges(document.querySelector('.article-meta')),
+      nav: edges(nav),
+      links: [...nav.querySelectorAll('a')].map(node => ({...edges(node), next: node.rel === 'next',
+        alignment: [...node.children].map(span => getComputedStyle(span).textAlign)}))
+    };
+  });
+  for (const block of [geometry.details, geometry.pdf]) {
+    assert.ok(Math.abs(block.left - geometry.separator.left) <= 1 && Math.abs(block.right - geometry.separator.right) <= 1,
+      'PDF and publication details span the full separator width');
+  }
+  assert.ok(geometry.pdf.top >= geometry.meta.bottom, 'The full-width PDF button follows the author metadata');
+  assert.ok(geometry.details.top >= geometry.pdf.bottom, 'Publication details follow the PDF button');
+  for (const link of geometry.links) {
+    assert.ok(Math.abs(link.next ? link.right - geometry.nav.right : link.left - geometry.nav.left) <= 1,
+      'Next stays at the right edge and previous stays at the left edge, including single-link navigation');
+    if (link.next) assert.deepEqual(link.alignment, ['right', 'right'], 'Both next-article label and title align right');
+  }
 }
 
 async function audit(page) {
@@ -194,6 +224,7 @@ try {
       }
       assert.equal(await page.locator('[data-citation-date]').count(), 0);
       assert.equal(await page.locator('.article-meta-row .article-pdf').count(), 1);
+      await checkArticleLayout(page);
       assert.equal(await page.locator('.math-source:not([data-rendered=true])').count(), 0);
       assert.equal(await page.locator('.math-source[data-display=false]').evaluateAll(nodes => nodes.some(node => /[,.;:!?]$/.test(node.dataset.tex))), false);
       assert.equal(await page.locator('.math-with-punctuation').evaluateAll(nodes => nodes.some(node => {
@@ -269,10 +300,7 @@ try {
     assert.ok(await page.locator('#hero-picks img').evaluateAll(nodes => nodes.every(n => n.clientWidth <= 80)));
     if (javaScriptEnabled) {
       const readingBefore = await urls('#latest-cards h3 a');
-      const before = await urls('#archive-cards h3 a');
-      await page.locator('#reshuffle').click();
-      assert.notDeepEqual((await urls('#archive-cards h3 a')).sort(), before.sort());
-      assert.deepEqual(await urls('#latest-cards h3 a'), readingBefore);
+      assert.equal(await page.locator('#reshuffle').count(), 0);
       const heroBefore = await urls('#hero-picks a');
       const archiveBefore = await urls('#archive-cards h3 a');
       await page.reload({waitUntil: 'networkidle'});
