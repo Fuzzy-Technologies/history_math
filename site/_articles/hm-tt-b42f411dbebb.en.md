@@ -22,7 +22,7 @@ tags:
 - Kolmogorov
 - Wiener
 math: true
-status: published
+status: draft
 date: '2023-08-25'
 permalink: /articles/hm-tt-b42f411dbebb/
 rights_basis: Owner-requested migration of the author's complete Teletype publication on 2026-10-11; editorial publication
@@ -42,15 +42,6 @@ figures:
   rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original
     attribution retained; no new license asserted.
   source_url: https://img3.teletype.in/files/ea/0a/ea0a73d4-5dde-4ae5-b192-b494a613adfa.png
-- id: fig-2
-  path: /assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-02.png
-  alt: Illustration 2 for Mathematical Child Prodigies
-  caption: ''
-  source: Illustrations from the original Teletype article
-  credit: ''
-  rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original
-    attribution retained; no new license asserted.
-  source_url: https://img4.teletype.in/files/fa/80/fa80f8cc-ed35-48cc-92f0-36778b9a361c.png
 - id: fig-3
   path: /assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-03.png
   alt: Wolfgang Amadeus Mozart (1756–1791)
@@ -123,15 +114,6 @@ figures:
   rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original
     attribution retained; no new license asserted.
   source_url: https://img3.teletype.in/files/20/86/2086ec8a-e4ae-4284-97fa-51611966a2cb.png
-- id: fig-11
-  path: /assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-11.png
-  alt: Illustration 11 for Mathematical Child Prodigies
-  caption: ''
-  source: Illustrations from the original Teletype article
-  credit: ''
-  rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original
-    attribution retained; no new license asserted.
-  source_url: https://img4.teletype.in/files/3a/fb/3afb7287-7587-4ac5-93e4-c7d1c7185de7.png
 - id: fig-12
   path: /assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-12.png
   alt: A regular 17-pointed star on Gauss’s grave
@@ -159,15 +141,6 @@ figures:
   rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original
     attribution retained; no new license asserted.
   source_url: https://img1.teletype.in/files/cc/b6/ccb6d743-1de1-4123-80ad-166e200eb69b.png
-- id: fig-15
-  path: /assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-15.png
-  alt: Illustration 15 for Mathematical Child Prodigies
-  caption: ''
-  source: Illustrations from the original Teletype article
-  credit: ''
-  rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original
-    attribution retained; no new license asserted.
-  source_url: https://img3.teletype.in/files/ea/0f/ea0f1377-28b7-4683-968f-bcf2e7ce3ca7.png
 - id: fig-16
   path: /assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-16.png
   alt: A. N. Kolmogorov among pupils of Physics and Mathematics School No. 18 at Moscow State University
@@ -208,7 +181,15 @@ The first thing they learned was to notice the beauty of numerical patterns. *�
 
 The great Russian mathematician Andrey Nikolayevich Kolmogorov wrote that he experienced the joy of mathematical discovery early, noticing this pattern at the age of five:
 
-{% include article-figure.html id="fig-2" %}
+$$
+\begin{aligned}
+1&=1^2,\\
+1+3&=2^2,\\
+1+3+5&=3^2,\\
+1+3+5+7&=4^2,\\
+&\vdots
+\end{aligned}
+$$
 
 This property of natural numbers was already known to the ancient Greeks, particularly Pythagoras: the sum of any number of consecutive odd numbers starting with 1 always gives a perfect square, or “square number”, as Pythagoras called it. Gifted children, however, could set themselves learning problems and try to solve them independently. Both great mathematicians also solved another problem in childhood: *“Find the sum of the natural numbers from 1 to 100.”* Can you solve it?
 
@@ -268,7 +249,14 @@ According to legend, his mathematics teacher asked the children to sum the numbe
 
 He performed these calculations:
 
-{% include article-figure.html id="fig-11" %}
+$$
+\begin{aligned}
+1+2+3+\cdots+98+99+100
+&=(1+100)+(2+99)+(3+98)\\
+&\quad+\cdots+(49+52)+(50+51)\\
+&=101\times50=5050.
+\end{aligned}
+$$
 
 Gauss continued doing most calculations mentally into old age.
 
@@ -288,7 +276,14 @@ Among them was the button problem: in how many ways can a four-hole button be se
 
 Here, at five, the boy also published his first mathematical work. This is how he solved the problem of summing a hundred numbers, using a different method from Gauss:
 
-{% include article-figure.html id="fig-15" %}
+$$
+\begin{aligned}
+1+2+3+\cdots+98+99+100
+&=(1+3+5+\cdots+99)\\
+&\quad+(2+4+6+\cdots+100)\\
+&=50^2+50^2+50=5050.
+\end{aligned}
+$$
 
 Kolmogorov's method was this: there are 50 odd terms and 50 even terms. The sum of the even terms exceeds the sum of the odd terms by 50, since 2 exceeds 1 by 1, 4 exceeds 3 by 1, and so on. The sum of the odd numbers from 1 to 100 is 50 squared, or 2500.
 

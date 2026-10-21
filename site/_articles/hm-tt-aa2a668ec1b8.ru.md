@@ -17,7 +17,7 @@ tags:
 - ЖЗЛ
 - Виет
 math: true
-status: published
+status: draft
 date: '2023-08-22'
 permalink: /ru/articles/hm-tt-aa2a668ec1b8/
 rights_basis: Owner-requested migration of the author's complete Teletype publication on 2026-10-11; editorial publication
@@ -28,15 +28,6 @@ original_publication:
   url: https://teletype.in/@history_math/Velikij-kostoprav-matematiki-08-22
 source_url: https://teletype.in/@history_math/Velikij-kostoprav-matematiki-08-22
 figures:
-- id: fig-1
-  path: /assets/images/hm-tt-aa2a668ec1b8/velikij-kostoprav-matematiki-01.png
-  alt: Формулы Виета
-  caption: Формулы Виета
-  source: Архив иллюстраций исходной статьи в Teletype.
-  credit: ''
-  rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original attribution
-    retained; no new license asserted.
-  source_url: https://img2.teletype.in/files/54/8a/548a8bf3-55f6-4ae5-b0d7-07d128057e74.png
 - id: fig-2
   path: /assets/images/hm-tt-aa2a668ec1b8/velikij-kostoprav-matematiki-02.png
   alt: Абу Абдуллах Мухаммад ибн Муса аль-Хорезми (787–850)
@@ -93,12 +84,36 @@ figures:
   rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original attribution
     retained; no new license asserted.
   source_url: https://img2.teletype.in/files/97/33/9733a3e8-03f8-4f6d-9def-1040100c3f5e.png
-preview_image: /assets/images/hm-tt-aa2a668ec1b8/velikij-kostoprav-matematiki-01.png
-cover_image: /assets/images/hm-tt-aa2a668ec1b8/velikij-kostoprav-matematiki-01.png
+preview_image: /assets/images/hm-tt-aa2a668ec1b8/velikij-kostoprav-matematiki-06.png
+cover_image: /assets/images/hm-tt-aa2a668ec1b8/velikij-kostoprav-matematiki-06.png
 ---
 Трудно представить современную математику без формул и уравнений (возможно, поэтому некоторые её и не любят). Сначала было время, когда математика существовала, а формулы нет. Но теперь каждый ученик, изучавший алгебру, помнит одну именную формулу.
 
-{% include article-figure.html id="fig-1" %}
+$$
+ax^2+bx+c=0,\qquad a\ne0
+$$
+
+$$
+\begin{cases}
+x_1+x_2=-\dfrac{b}{a},\\[4pt]
+x_1x_2=\dfrac{c}{a}.
+\end{cases}
+$$
+
+При $a=1$:
+
+$$
+x^2+px+q=0
+$$
+
+$$
+\begin{cases}
+x_1+x_2=-p,\\
+x_1x_2=q.
+\end{cases}
+$$
+
+*Формулы Виета*
 
 Знаменитые формулы Виета, указывающие зависимость между корнями и коэффициентами квадратного уравнения, являются памятником этому великому человеку. Именно он считается «отцом» символьной алгебры. Но могло случиться, что этого открытия не было бы, если святая испанская инквизиция, заочно приговорившая Виета к сожжению на костре, довела свои козни до конца. Мог он погибнуть и в большой резне гугенотов, в Варфоломеевскую ночь, когда погибли многие его друзья.
 

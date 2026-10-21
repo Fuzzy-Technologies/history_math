@@ -74,31 +74,6 @@
       "bytes": 1164295
     }
   },
-  "/assets/images/hm-tt-c18ad1d221bd/ars-magna-velikoe-iskusstvo-04.png": {
-    "sha256": "ab958edd567f285587727be88cd277ac908d19070b99b9ddeb23c0d56a82cc9f",
-    "width": 712,
-    "height": 355,
-    "bytes": 20785,
-    "logo": false,
-    "variants": [
-      {
-        "path": "/assets/images/previews/hm-tt-c18ad1d221bd/ars-magna-velikoe-iskusstvo-04.png-712.webp",
-        "width": 712,
-        "height": 355,
-        "sha256": "59228bf924c20aa2bbdfd31960e5005300ca09a5b74dd35df5782375d9ecb92c",
-        "bytes": 9880
-      }
-    ],
-    "external_original": {
-      "storage": "github-release",
-      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-c18ad1d221bd-ars-magna-velikoe-iskusstvo-04-ab958edd567f285587727be88cd277ac908d19070b99b9ddeb23c0d56a82cc9f.png",
-      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630571380",
-      "asset_id": 630571380,
-      "release_tag": "article-originals-a",
-      "sha256": "ab958edd567f285587727be88cd277ac908d19070b99b9ddeb23c0d56a82cc9f",
-      "bytes": 20785
-    }
-  },
   "/assets/images/hm-tt-c18ad1d221bd/ars-magna-velikoe-iskusstvo-05.png": {
     "sha256": "1e9b981edf2cbbbf5b9546a2963a59b803a9fad5b9d7bae20614a10a9b410b8b",
     "width": 976,

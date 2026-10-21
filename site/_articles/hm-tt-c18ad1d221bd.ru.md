@@ -17,7 +17,7 @@ tags:
   - ЖЗЛ
   - Кардано
 math: true
-status: published
+status: draft
 date: '2023-08-22'
 permalink: /ru/articles/hm-tt-c18ad1d221bd/
 rights_basis: Owner-requested migration of the author's complete Teletype
@@ -61,16 +61,6 @@ figures:
       migrated at the owner request; original attribution retained; no new
       license asserted.
     source_url: https://img2.teletype.in/files/d9/8f/d98fb051-ec67-436b-8e7e-32ed0e63ceb2.png
-  - id: fig-4
-    path: /assets/images/hm-tt-c18ad1d221bd/ars-magna-velikoe-iskusstvo-04.png
-    alt: Формула Кардано для вычисления корней кубического уравнения
-    caption: Формула Кардано для вычисления корней кубического уравнения
-    source: Архив иллюстраций исходной статьи в Teletype.
-    credit: ''
-    rights_basis: Original image bytes from the owner-supplied Teletype archive,
-      migrated at the owner request; original attribution retained; no new
-      license asserted.
-    source_url: https://img1.teletype.in/files/c2/0c/c20c8919-b461-43f1-90b7-92cf53a782db.png
   - id: fig-5
     path: /assets/images/hm-tt-c18ad1d221bd/ars-magna-velikoe-iskusstvo-05.png
     alt: «Великое искусство» (Ars magna, 1545)
@@ -114,7 +104,43 @@ cover_image: /assets/images/hm-tt-c18ad1d221bd/ars-magna-velikoe-iskusstvo-06.pn
 
 Литературная карьера учёного тоже многогранна. Он издал более трёхсот книг, не только по медицине и математике, но и по философии, астрологии, этике. Его энциклопедические трактаты «О тонких материях» и «О разнообразии вещей», в которых дано полное изложение состояния естественных наук, долгое время использовались в Европе как учебники. Особой популярностью пользовалась книга «Об утешении», переведённая на английский язык. Считается, что именно она вдохновила Шекспира на написание «Гамлета», а сам Гамлет произносит монолог «Быть или не быть», держа эту книгу в руках.
 
-{% include article-figure.html id="fig-4" %}
+$$
+ax^3+bx^2+cx+d=0,\qquad a\ne0
+$$
+
+Заменой переменной
+
+$$
+x=y-\frac{b}{3a}
+$$
+
+любое такое кубическое уравнение приводится к канонической форме
+
+$$
+y^3+py+q=0
+$$
+
+$$
+\begin{aligned}
+p&=\frac{3ac-b^2}{3a^2},\\[4pt]
+q&=\frac{2b^3-9abc+27a^2d}{27a^3}.
+\end{aligned}
+$$
+
+Его корни:
+
+$$
+\begin{aligned}
+y_1&=\alpha+\beta,\\[4pt]
+y_{2,3}&=-\frac{\alpha+\beta}{2}\pm i\,\frac{\alpha-\beta}{2}\sqrt{3},\\[4pt]
+\alpha&=\sqrt[3]{-\frac q2+\sqrt{\left(\frac p3\right)^3+\left(\frac q2\right)^2}},\\[4pt]
+\beta&=\sqrt[3]{-\frac q2-\sqrt{\left(\frac p3\right)^3+\left(\frac q2\right)^2}}.
+\end{aligned}
+$$
+
+Значения кубических корней выбираются согласованно: $\alpha\beta=-p/3$. Корни исходного уравнения получаются обратной заменой $x_j=y_j-b/(3a)$.
+
+*Формула Кардано для вычисления корней кубического уравнения*
 
 Увлёкся Кардано и математикой. История формулы Кардано является одной из драматичных историй математики. Каждому школьнику известна формула вычисления корней квадратного уравнения. Такая же формула существует и для уравнения третьей степени, и именно она называется формулой Кардано. В истории математики она известна как первое серьёзное достижение европейских математиков после многовекового застоя.
 

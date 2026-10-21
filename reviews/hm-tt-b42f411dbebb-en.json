@@ -2,17 +2,7 @@
   "review_version": 1,
   "article_id": "hm-tt-b42f411dbebb-en",
   "approval": {
-    "status": "approved",
-    "reviewed_by": "Tim55667757",
-    "date": "2026-10-20",
-    "package_sha256": "140fbfa7676c0522e24d05b2306426bbff929844b31d477043ccce352c2cd2e8",
-    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/240#issuecomment-6300190096",
-    "source_commit": "6bde902860a534edaedd720af114e0ab70d0f11b",
-    "source_comment_id": 6300190096,
-    "source_review_state": "ISSUE_COMMENT",
-    "approved_at": "2026-10-20T19:58:55Z",
-    "prepared_from_commit": "6bde902860a534edaedd720af114e0ab70d0f11b",
-    "post_review_changes": "No changes after the reviewed source revision."
+    "status": "pending"
   },
   "questions": [
     {
@@ -46,7 +36,7 @@
   ],
   "reconciliation": {
     "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
-    "figures": 18,
+    "figures": 15,
     "original_publication": {
       "outlet": "Teletype",
       "date": "2023-08-25",
@@ -54,6 +44,22 @@
     }
   },
   "manual_changes": [
-    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections.",
+    "Replaced formula-only images fig-2, fig-11, fig-15 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending."
+  ],
+  "previous_approvals": [
+    {
+      "status": "approved",
+      "reviewed_by": "Tim55667757",
+      "date": "2026-10-20",
+      "package_sha256": "140fbfa7676c0522e24d05b2306426bbff929844b31d477043ccce352c2cd2e8",
+      "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/240#issuecomment-6300190096",
+      "source_commit": "6bde902860a534edaedd720af114e0ab70d0f11b",
+      "source_comment_id": 6300190096,
+      "source_review_state": "ISSUE_COMMENT",
+      "approved_at": "2026-10-20T19:58:55Z",
+      "prepared_from_commit": "6bde902860a534edaedd720af114e0ab70d0f11b",
+      "post_review_changes": "No changes after the reviewed source revision."
+    }
   ]
 }
