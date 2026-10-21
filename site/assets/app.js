@@ -1,5 +1,5 @@
 const assetVersion = new URL(import.meta.url).search;
-const [{search, searchByTag, topicKey, rubricArticles, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}, {loadVerifiedOriginal, nativeOriginalTarget}, {catalogState, catalogPage, catalogPageNumbers, catalogUrl}] = await Promise.all([
+const [{search, searchByTag, topicKey, rubricArticles, articleCandidates, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}, {loadVerifiedOriginal, nativeOriginalTarget}, {catalogState, catalogPage, catalogPageNumbers, catalogUrl}] = await Promise.all([
   import('./core.js' + assetVersion),
   import('./select.js' + assetVersion),
   import('./reading-position.js' + assetVersion),
@@ -325,6 +325,22 @@ function card(record, className) {
   return node;
 }
 
+function heroPick(record, {size = 80, description = true} = {}) {
+  const link = element('a', 'hero-pick');
+  link.href = record.url;
+  if (record.preview_image) {
+    const image = document.createElement('img');
+    image.src = record.preview_image; image.alt = ''; image.width = size; image.height = size;
+    image.loading = 'lazy'; image.decoding = 'async';
+    link.append(image);
+  }
+  const copy = element('span', 'hero-pick-copy');
+  copy.append(element('span', 'hero-pick-title', record.title));
+  if (description) copy.append(element('span', 'hero-pick-description', record.description));
+  link.append(copy);
+  return link;
+}
+
 function readingCard(record) {
   const node = card(record, 'material-card');
   node.dataset.type = record.type;
@@ -487,6 +503,22 @@ if (archive) {
       pool = groups.archive;
     }
     rotateReading();
+    const articlePicks = document.querySelector('#article-picks');
+    const articlePool = articlePicks ? articleCandidates(records, language, articlePicks.dataset.excludeTags.split('|')) : [];
+    const articleKey = `history-math:article-picks:${language}`;
+    let articlePrevious = [];
+    try {
+      const saved = JSON.parse(sessionStorage.getItem(articleKey));
+      if (Array.isArray(saved) && saved.every(url => typeof url === 'string')) articlePrevious = saved.slice(0, 2);
+    } catch {}
+    function rotateArticlePicks() {
+      if (!articlePool.length) return;
+      const picks = selection(articlePool, 2, articlePrevious);
+      articlePrevious = picks.map(record => record.url);
+      try { sessionStorage.setItem(articleKey, JSON.stringify(articlePrevious)); } catch {}
+      articlePicks.replaceChildren(...picks.map(record => heroPick(record, {size: 64, description: false})));
+    }
+    rotateArticlePicks();
     const rubricPrevious = new Map();
     function rotateRubrics() {
       document.querySelectorAll('[data-rubric]').forEach(rubric => {
@@ -501,18 +533,7 @@ if (archive) {
         const [record] = selection(candidates, 1, previous);
         rubricPrevious.set(key, [record.url]);
         try { sessionStorage.setItem(key, JSON.stringify([record.url])); } catch {}
-        const link = element('a', 'hero-pick');
-        link.href = record.url;
-        if (record.preview_image) {
-          const image = document.createElement('img');
-          image.src = record.preview_image; image.alt = ''; image.width = 80; image.height = 80;
-          image.loading = 'lazy'; image.decoding = 'async';
-          link.append(image);
-        }
-        const copy = element('span', 'hero-pick-copy');
-        copy.append(element('span', 'hero-pick-title', record.title),
-          element('span', 'hero-pick-description', record.description));
-        link.append(copy);
+        const link = heroPick(record);
         rubric.querySelector('.hero-rubric-content').replaceChildren(link);
       });
     }
@@ -560,6 +581,7 @@ if (archive) {
     window.addEventListener('pageshow', event => {
       if (!event.persisted) return;
       rotateReading();
+      rotateArticlePicks();
       rotateRubrics();
       reserveArchiveSpace();
       button.hidden = pool.length <= 4;

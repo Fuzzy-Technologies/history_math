@@ -46,7 +46,8 @@
     "catalog_next": "Следующая страница",
     "catalog_page": "Страница",
     "rubric_empty": "Пока нет материалов",
-    "recommendations": "Рекомендуем почитать"
+    "recommendations": "Рекомендуем почитать",
+    "article_picks": "Статьи"
   },
   "en": {
     "history": "The history of mathematics",
@@ -95,6 +96,7 @@
     "catalog_next": "Next page",
     "catalog_page": "Page",
     "rubric_empty": "No articles yet",
-    "recommendations": "Articles to Explore"
+    "recommendations": "Articles to Explore",
+    "article_picks": "Articles"
   }
 }

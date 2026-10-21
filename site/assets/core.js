@@ -26,6 +26,12 @@ export function rubricArticles(records, language, tags) {
     !record.translation_notice && record.tags.some(tag => topics.has(topicKey(tag))));
 }
 
+export function articleCandidates(records, language, excludedTags) {
+  const excluded = new Set(excludedTags.map(topicKey));
+  return records.filter(record => record.language === language && record.status === 'published' &&
+    !record.translation_notice && record.tags.every(tag => !excluded.has(topicKey(tag))));
+}
+
 export function selection(records, count, previous = [], random = Math.random) {
   const unique = Array.from(new Map(records.map(record => [record.url, record])).values());
   const shuffled = [...unique];

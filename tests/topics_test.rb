@@ -21,6 +21,16 @@ class TopicsTest < Minitest::Test
     assert_equal "History of Mathematics;People", template.render!("tag" => "history_of_mathematics", "tags" => ["People", "people"])
   end
 
+  def test_ordinary_article_pool_excludes_rubric_tags_and_nonarticles
+    make = ->(tags, status = "published", notice = false) { Article.new({"tags" => tags, "status" => status, "translation_notice" => notice}) }
+    ordinary = make.call(["History of Mathematics", "Глоссарий"])
+    entries = [ordinary, make.call(["персоналии"]), make.call(["PEOPLE"]), make.call(["математики_шутят"]),
+      make.call(["Анекдоты"]), make.call(["ЦИТАТЫ"]), make.call(["history"], "draft"),
+      make.call(["history"], "demo"), make.call(["history"], "published", true)]
+    assert_equal [ordinary], HistoryMath::Topics.article_candidates(entries, ["Персоналии", "People", "Математики шутят", "Анекдоты", "Цитаты"])
+    assert_empty HistoryMath::Topics.article_candidates([], [])
+  end
+
   def test_rubrics_require_a_matching_published_article_tag
     make = ->(tags, status = "published", notice = false) { Article.new({"tags" => tags, "status" => status, "translation_notice" => notice}) }
     person = make.call(["персоналии"])

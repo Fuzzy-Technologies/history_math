@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {normalize, search, searchByTag, selection, anniversaries, topicKey, rubricArticles} from '../site/assets/core.js';
+import {normalize, search, searchByTag, selection, anniversaries, topicKey, rubricArticles, articleCandidates} from '../site/assets/core.js';
 
 const records = [
   {title: 'Счёт и геометрия', description: '', text: 'Чертёж', tags: ['идеи'], type: 'essay', language: 'ru', date: '2025-10-01', url: '/a/'},
@@ -82,4 +82,23 @@ test('rubrics match explicit whole tags across case and exclude drafts, demos, n
   const first = selection(pool, 1, [], () => 0.5);
   assert.notDeepEqual(selection(pool, 1, [first[0].url], () => 0.5), first);
   assert.deepEqual(selection([pool[0]], 1, [pool[0].url]), [pool[0]]);
+});
+
+
+test('ordinary hero articles exclude every humor/personality alias, drafts, demos, notices and other languages', () => {
+  const base = {...records[0], status: 'published'};
+  const excluded = ['Математики шутят', 'Анекдоты', 'Цитаты', 'People', 'Персоналии'];
+  const ordinary = Array.from({length: 5}, (_, index) => ({...base, url: `/ordinary-${index}/`, tags: index ? ['История математики'] : ['Глоссарий']}));
+  const input = [...ordinary, ...['математики_шутят', 'анекдоты', 'цитаты', 'people', 'персоналии'].map((tag, index) => ({...base, url: `/excluded-${index}/`, tags: [tag]})),
+    {...base, url: '/draft/', status: 'draft'}, {...base, url: '/demo/', status: 'demo'},
+    {...base, url: '/notice/', translation_notice: true}, {...base, url: '/en/', language: 'en'}];
+  assert.deepEqual(articleCandidates(input, 'ru', excluded), ordinary);
+  assert.deepEqual(articleCandidates(input, 'en', excluded).map(record => record.url), ['/en/']);
+  assert.deepEqual(articleCandidates([], 'ru', excluded), []);
+  const first = selection(ordinary, 2, [], () => 0.4);
+  const next = selection(ordinary, 2, first.map(record => record.url), () => 0.4);
+  assert.equal(next.length, 2);
+  assert.equal(new Set(next.map(record => record.url)).size, 2);
+  assert.notDeepEqual(next.map(record => record.url).sort(), first.map(record => record.url).sort());
+  assert.deepEqual(selection(ordinary.slice(0, 1), 2), ordinary.slice(0, 1));
 });
