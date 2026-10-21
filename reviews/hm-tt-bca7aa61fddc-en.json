@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-bca7aa61fddc-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-21",
+    "package_sha256": "db2f000ce15d6bd16f4f411a9ecf4bdadd54ee3f1ec44da61f3a315d52080c6d",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/77#pullrequestreview-5606338064",
+    "source_commit": "e9de5f8e96fda4d27adff3c6c0323234c29bcaa1",
+    "source_review_id": 5606338064,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-21T21:16:29Z",
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-06-22",
+      "url": "https://teletype.in/@history_math/de-gua-theorem"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections.",
+    "Replaced formula-only images fig-2 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending. Transcribed the short text-only problem crop with its title, problem number and bibliographic caption; retained the tetrahedron diagram."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "/assets/images/hm-tt-bca7aa61fddc/de-gua-theorem-01.png": {
+    "sha256": "09c32b2534278e9ac7863a68c14b4684742d75709579adadadd50129bccc5401",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2014130,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bca7aa61fddc/de-gua-theorem-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "bd11e2e661eb7134721024527e898c79d1bc3d2c6d82a39f20c1a85152200462",
+        "bytes": 537696
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-bca7aa61fddc-de-gua-theorem-01-09c32b2534278e9ac7863a68c14b4684742d75709579adadadd50129bccc5401.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630493006",
+      "asset_id": 630493006,
+      "release_tag": "article-originals-0",
+      "sha256": "09c32b2534278e9ac7863a68c14b4684742d75709579adadadd50129bccc5401",
+      "bytes": 2014130
+    }
+  },
+  "/assets/images/hm-tt-bca7aa61fddc/de-gua-theorem-03.png": {
+    "sha256": "ca4cbe0e078f59cf323eca3542397272cf16711908bcff081dab1d2bd4cfefda",
+    "width": 1056,
+    "height": 1056,
+    "bytes": 135912,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bca7aa61fddc/de-gua-theorem-03.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "a565b3736d1142b37b462e25030c682fbc875fa23c85a391c3add570b97ca0db",
+        "bytes": 97890
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-bca7aa61fddc-de-gua-theorem-03-ca4cbe0e078f59cf323eca3542397272cf16711908bcff081dab1d2bd4cfefda.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630530072",
+      "asset_id": 630530072,
+      "release_tag": "article-originals-c",
+      "sha256": "ca4cbe0e078f59cf323eca3542397272cf16711908bcff081dab1d2bd4cfefda",
+      "bytes": 135912
+    }
+  }
+}
