@@ -9,7 +9,7 @@ layout: default
     <p class="eyebrow">{% include type.html type=page.type %}{% if page.status == 'demo' %} · {% if page.lang == 'ru' %}Демоматериал{% else %}Demo material{% endif %}{% endif %}</p>
     <h1 tabindex="-1">{{ page.title }}</h1><p class="lead">{{ page.description }}</p>
     <div class="article-meta-row"><p class="article-meta">{{ page.author }}{% if page.status != 'draft' %} <span>·</span> <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d.%m.%Y' }}</time>{% endif %} <span>·</span> {{ page.lang | upcase }}</p>
-    {% if page.pdf_url %}<a class="button article-pdf" href="{{ page.pdf_url | relative_url }}" download aria-label="{% if page.lang == 'ru' %}Скачать статью в PDF{% else %}Download article as PDF{% endif %}">PDF ↓</a>{% endif %}
+    {% if page.pdf_url %}<a class="button article-pdf" href="{{ page.pdf_url | relative_url }}" download="{{ page.pdf_url | split: '/' | last }}" aria-label="{% if page.lang == 'ru' %}Скачать статью в PDF{% else %}Download article as PDF{% endif %}">PDF ↓</a>{% endif %}
     </div>
     <!-- pdf:heading:end -->
     {% include article-details.html %}

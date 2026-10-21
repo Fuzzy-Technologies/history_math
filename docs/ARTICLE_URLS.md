@@ -12,8 +12,10 @@ translation keys and approval digests remain unchanged. Non-archive examples and
 test fixtures keep their existing routes.
 
 Cards, search, citations, canonical/hreflang, the sitemap and the PDF manifest use
-the derived URL. PDF download filenames stay stable for existing shared links;
-the article URL printed inside regenerated PDFs uses the new canonical route.
+the derived URL. PDF filenames include the same terminal language suffix, such as
+`hm-tt-9cd7cf41b694-ru.pdf` and `hm-tt-9cd7cf41b694-en.pdf`. The article URL printed
+inside PDFs uses the canonical route. Unsuffixed PDF filenames were retired at
+the owner's request; article HTML redirects remain supported.
 
 Old HTML paths produce localized, non-indexed transition pages on GitHub Pages.
 JavaScript replaces the location, preserving query parameters and section anchors;

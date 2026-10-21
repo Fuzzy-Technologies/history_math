@@ -1,18 +1,35 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {validateManifest, printImageSources} from '../scripts/article-pdf.mjs';
+import {validateManifest, printImageSources, articlePdfPath} from '../scripts/article-pdf.mjs';
 
 test('PDF manifest binds language, URL and output filename without traversal or duplicates', () => {
-  const article = {url: '/ru/articles/example/', pdf_url: '/assets/pdf/ru/example.pdf', lang: 'ru', title: 'Пример'};
-  const manifest = {version: 1, baseurl: '/history_math', origin: 'https://fuzzy-technologies.github.io', articles: [article]};
+  const article = {url: '/ru/articles/example/', pdf_url: '/assets/pdf/ru/example-ru.pdf', lang: 'ru', title: 'Пример'};
+  const manifest = {version: 2, baseurl: '/history_math', origin: 'https://fuzzy-technologies.github.io', articles: [article]};
   assert.equal(validateManifest(manifest), manifest);
-  assert.doesNotThrow(() => validateManifest({...manifest, baseurl: '', articles: [{...article, lang: 'en', url: '/articles/example/', pdf_url: '/assets/pdf/en/example.pdf'}]}));
-  for (const change of [{lang: 'en'}, {url: '/ru/articles/../secret/'}, {pdf_url: '/assets/pdf/../../secret'}, {title: ''}]) {
+  assert.doesNotThrow(() => validateManifest({...manifest, baseurl: '', articles: [{...article, lang: 'en', url: '/articles/example/', pdf_url: '/assets/pdf/en/example-en.pdf'}]}));
+  for (const change of [{lang: 'en'}, {pdf_url: '/assets/pdf/ru/example.pdf'}, {pdf_url: '/assets/pdf/ru/example-en.pdf'}, {url: '/ru/articles/../secret/'}, {pdf_url: '/assets/pdf/../../secret'}, {title: ''}]) {
     assert.throws(() => validateManifest({...manifest, articles: [{...article, ...change}]}));
   }
   assert.throws(() => validateManifest({...manifest, articles: [article, article]}));
   assert.throws(() => validateManifest({...manifest, baseurl: '/../../tmp'}));
   assert.throws(() => validateManifest({...manifest, origin: 'javascript:alert(1)'}));
+  assert.throws(() => validateManifest({...manifest, version: 1}));
+});
+
+test('PDF names preserve identity, append language once and distinguish downloaded editions', () => {
+  for (const id of ['hm-99120459b820', 'hm-tt-9cd7cf41b694']) {
+    const paths = ['ru', 'en'].map(language => {
+      const prefix = language === 'ru' ? '/ru' : '';
+      const expected = `/assets/pdf/${language}/${id}-${language}.pdf`;
+      assert.equal(articlePdfPath(`${prefix}/articles/${id}/`, language), expected);
+      assert.equal(articlePdfPath(`${prefix}/articles/${id}-${language}/`, language), expected);
+      return expected.split('/').at(-1);
+    });
+    assert.notEqual(paths[0], paths[1]);
+  }
+  for (const [url, language] of [['/articles/example/', 'ru'], ['/ru/articles/example/', 'en'],
+    ['/articles/example/', 'fr'], ['/ru/articles/../secret/', 'ru'], ['/articles/example/?download=1', 'en'],
+    ['/ru/articles/hm-tt-9cd7cf41b694-en/', 'ru'], ['/ru/articles/hm-tt-9cd7cf41b694-ru-ru/', 'ru'], [null, 'en']]) assert.throws(() => articlePdfPath(url, language));
 });
 
 

@@ -18,7 +18,7 @@ const source = await readFile(resolve('test-results/pdf-fixture', '.' + sample.u
 manifest.articles = [];
 for (let index = 0; index < count; index++) {
   const url = `/ru/articles/scale-${index}/`;
-  const article = {...sample, url, title: `${sample.title} ${index}`, pdf_url: `/assets/pdf/ru/scale-${index}.pdf`};
+  const article = {...sample, url, title: `${sample.title} ${index}`, pdf_url: `/assets/pdf/ru/scale-${index}-ru.pdf`};
   manifest.articles.push(article);
   await mkdir(resolve(root, '.' + url), {recursive: true});
   await writeFile(resolve(root, '.' + url, 'index.html'), source.replaceAll(sample.url, url));

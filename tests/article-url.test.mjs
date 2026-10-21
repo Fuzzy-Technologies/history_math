@@ -11,8 +11,8 @@ test('article routes include language, are idempotent and preserve fixture route
     const canonical = `${prefix}/articles/${id}-${lang}/`;
     assert.equal(articleUrl(legacy, lang), canonical);
     assert.equal(articleUrl(canonical, lang), canonical);
-    const article = {url: canonical, lang, title: 'Fixture', pdf_url: `/assets/pdf/${lang}/${id}.pdf`};
-    const manifest = {version: 1, baseurl: '/history_math', origin: 'https://example.org', articles: [article]};
+    const article = {url: canonical, lang, title: 'Fixture', pdf_url: `/assets/pdf/${lang}/${id}-${lang}.pdf`};
+    const manifest = {version: 2, baseurl: '/history_math', origin: 'https://example.org', articles: [article]};
     assert.doesNotThrow(() => validateManifest(manifest));
     for (const pdf_url of ['/assets/pdf/en/other.pdf', '/assets/pdf/ru/../private.pdf']) {
       assert.throws(() => validateManifest({...manifest, articles: [{...article, pdf_url}]}));

@@ -7,16 +7,20 @@ import {platform, release} from 'node:os';
 import {digest, fileDigest, printDocument, dependencyReader, readCachedPdf, writeCachedPdf, pruneCache, validPdf} from './pdf-cache.mjs';
 import {chromium} from 'playwright';
 
+export function articlePdfPath(url, language) {
+  const match = typeof url === 'string' && /^\/(ru\/)?articles\/([a-z0-9-]+)\/$/.exec(url);
+  if (!match || !['en', 'ru'].includes(language) || Boolean(match[1]) !== (language === 'ru') || /-(?:ru|en)-(?:ru|en)$/.test(match[2]) ||
+      (/^hm-(?:tt-)?[0-9a-f]{12}-(?:ru|en)$/.test(match[2]) && !match[2].endsWith('-' + language))) throw new Error('Invalid PDF identity');
+  const slug = match[2].endsWith('-' + language) ? match[2] : `${match[2]}-${language}`;
+  return `/assets/pdf/${language}/${slug}.pdf`;
+}
+
 export function validateManifest(manifest) {
-  if (manifest.version !== 1 || !/^(?:\/[a-zA-Z0-9_-]+)*$/.test(manifest.baseurl ?? 'INVALID') ||
+  if (manifest.version !== 2 || !/^(?:\/[a-zA-Z0-9_-]+)*$/.test(manifest.baseurl ?? 'INVALID') ||
       !/^https:\/\/[^/]+$/.test(manifest.origin ?? '') || !Array.isArray(manifest.articles)) throw new Error('Invalid PDF manifest');
   const paths = new Set();
   for (const article of manifest.articles) {
-    const match = /^\/(ru\/)?articles\/([a-z0-9-]+)\/$/.exec(article.url ?? '');
-    // Existing PDF downloads retain the work hash when HTML gains a locale suffix.
-    const slug = match?.[2].replace(new RegExp(`^(hm-(?:tt-)?[0-9a-f]{12})-${article.lang}$`), '$1');
-    if (!match || !['en', 'ru'].includes(article.lang) || Boolean(match[1]) !== (article.lang === 'ru') ||
-        article.pdf_url !== `/assets/pdf/${article.lang}/${slug}.pdf` ||
+    if (article.pdf_url !== articlePdfPath(article.url, article.lang) ||
         typeof article.title !== 'string' || !article.title.trim() || paths.has(article.pdf_url)) throw new Error('Invalid or duplicate PDF article');
     paths.add(article.pdf_url);
   }

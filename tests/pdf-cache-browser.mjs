@@ -22,6 +22,13 @@ const run = async (rendered, reused, options = {}) => {
 };
 await run(2, 0);
 await run(0, 2);
+// The filename migration must remove stale unsuffixed outputs, even on a warm export.
+const localized = manifest.articles[0].pdf_url;
+const legacy = localized.replace(/-(?:ru|en)\.pdf$/, '.pdf');
+assert.notEqual(localized, legacy);
+await writeFile(resolve(root, '.' + legacy), await readFile(resolve(root, '.' + localized)));
+await run(0, 2);
+await assert.rejects(readFile(resolve(root, '.' + legacy)), /ENOENT/);
 const article = manifest.articles[0];
 const pagePath = resolve(root, '.' + article.url, 'index.html');
 const original = await readFile(pagePath, 'utf8');
