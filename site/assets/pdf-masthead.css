@@ -20,8 +20,8 @@
     display: block;
     margin: 0 0 4mm;
     padding-top: 1.5mm;
-    border-top: .4pt solid #b5a99c;
-    color: #62554e;
+    border-top: .4pt solid var(--line);
+    color: var(--muted);
     font: 7.5pt/1.4 system-ui, sans-serif;
     overflow-wrap: anywhere;
     break-inside: avoid;

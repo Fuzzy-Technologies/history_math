@@ -1,26 +1,50 @@
 .print-masthead, .print-source { display: none; }
 .article-actions { display: flex; gap: 12px; margin-top: 20px; }
 .article-pdf { font: 600 .85rem system-ui, sans-serif; }
-@page { size: A4; margin: 17mm 19mm 20mm; }
+@page {
+  size: A4;
+  margin: 17mm 19mm 20mm;
+  /* Chromium paints margin boxes separately from the document canvas. */
+  @top-left-corner { content: ""; background: #f4eddf; }
+  @top-center { content: ""; width: 100%; background: #f4eddf; }
+  @top-right-corner { content: ""; background: #f4eddf; }
+  @left-middle { content: ""; height: 100%; background: #f4eddf; }
+  @right-middle { content: ""; height: 100%; background: #f4eddf; }
+  @bottom-left-corner { content: ""; background: #f4eddf; }
+  @bottom-center { content: ""; width: 100%; background: #f4eddf; }
+  @bottom-right-corner { content: ""; background: #f4eddf; }
+}
 @media print {
-  :root, :root[data-theme] { color-scheme: light; --paper: #fff; --ink: #2b201b; --muted: #62554e; }
+  :root, :root[data-theme], :root:not([data-theme]) {
+    color-scheme: light;
+    --paper: #f4eddf;
+    --white: #fffaf0;
+    --ink: #33271f;
+    --muted: #70604f;
+    --copper: #8b422b;
+    --brass: #8c6339;
+    --line: #cdbda6;
+    --tint: #e9deca;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
   body::before, body::after { display: none !important; }
   * { background-image: none !important; }
-  html, body { background: #fff !important; color: #2b201b !important; margin: 0; padding: 0; }
+  html, body { background: var(--paper) !important; color: var(--ink) !important; margin: 0; padding: 0; }
   body { font-family: 'PT Serif', Georgia, serif; }
   .skip-link, .masthead-note, .site-header, .site-footer, .article-sidebar,
   .reading-resume, .reading-navigation, .article-actions, .back-link, .image-viewer,
   .article-end, .article-pdf, .image-trigger::after, .article-details { display: none !important; }
   main, #main, .reading-layout { width: auto; max-width: none; margin: 0; padding: 0; border: 0; }
-  .print-masthead { display: flex; align-items: center; gap: 5mm; padding-bottom: 4mm; margin-bottom: 6mm; border-bottom: 1.5pt solid #8f6547; }
+  .print-masthead { display: flex; align-items: center; gap: 5mm; padding-bottom: 4mm; margin-bottom: 6mm; border-bottom: 1.5pt solid var(--brass); }
   .print-masthead img { width: 86mm; height: auto; object-fit: contain; }
   .print-masthead strong { display: block; font-size: 15pt; font-weight: 400; }
-  .print-masthead span { display: block; font: 8pt/1.5 system-ui, sans-serif; margin-top: 2mm; color: #62554e; }
+  .print-masthead span { display: block; font: 8pt/1.5 system-ui, sans-serif; margin-top: 2mm; color: var(--muted); }
   .article-heading { padding: 0 0 4mm; margin: 0; border: 0; break-inside: avoid; }
   .article-heading h1 { font-size: 24pt; line-height: 1.16; letter-spacing: -.4pt; margin: 2mm 0 4mm; text-wrap: pretty; }
   .article-heading .lead { font-size: 11.5pt; line-height: 1.5; margin: 0 0 calc(4mm - 2pt); }
-  .article-heading .eyebrow { font: 8pt/1.5 system-ui, sans-serif; letter-spacing: .8pt; color: #7b5139; }
-  .article-meta, .original-publication, .print-source { font: 8.5pt/1.5 system-ui, sans-serif; margin: 1.5mm 0; color: #62554e; }
+  .article-heading .eyebrow { font: 8pt/1.5 system-ui, sans-serif; letter-spacing: .8pt; color: var(--muted); }
+  .article-meta, .original-publication, .print-source { font: 8.5pt/1.5 system-ui, sans-serif; margin: 1.5mm 0; color: var(--muted); }
   .print-source { display: block; }
   .article-spread { display: block; padding: 0; margin: 0; }
   .prose.article-body { width: auto; max-width: none; padding: 0; font-size: 11pt; line-height: 1.58; }
@@ -29,7 +53,7 @@
   .prose h2 { font-size: 16pt; line-height: 1.25; margin: 6mm 0 3mm; break-after: avoid; }
   .prose h3 { font-size: 13pt; line-height: 1.3; break-after: avoid; }
   /* Keep underline ink inside small caption lines at page boundaries. */
-  .prose a, .print-source a { color: #6e432c; text-decoration: underline; text-underline-offset: .12em; }
+  .prose a, .print-source a { color: var(--copper); text-decoration: underline; text-underline-offset: .12em; }
   .prose figure { margin: 4mm 0; break-inside: avoid; }
   .prose figure, .pdf-math-pair, .pdf-short-paragraph { break-inside: avoid; page-break-inside: avoid; }
   .pdf-math-pair { display: flow-root; break-inside: avoid; }
@@ -38,14 +62,14 @@
   .prose .pdf-page-break { break-before: page; page-break-before: always; }
   .prose .image-trigger { width: 100%; display: block; margin: 0 auto; padding: 0; border: 0; background: transparent; box-shadow: none; max-width: 100%; }
   .prose img { display: block; width: auto; height: auto; max-width: 100%; max-height: 76mm; object-fit: contain; margin: 0 auto; border: 0; padding: 0; }
-  .prose figcaption { font: 8pt/1.45 system-ui, sans-serif; margin: 2mm auto 0; max-width: 100%; color: #62554e; break-before: avoid; }
+  .prose figcaption { font: 8pt/1.45 system-ui, sans-serif; margin: 2mm auto 0; max-width: 100%; color: var(--muted); break-before: avoid; }
   .table-scroll { overflow: visible; margin: 4mm 0; border: 0; }
   .prose table { width: 100%; min-width: 0; border-collapse: collapse; font-size: 8.5pt; }
-  .prose th, .prose td { padding: 2mm; border: .5pt solid #b5a99c; background: transparent !important; color: #2b201b; }
+  .prose th, .prose td { padding: 2mm; border: .5pt solid var(--line); background: transparent !important; color: var(--ink); }
   .prose thead { display: table-header-group; }
   .prose tr, .math-source[data-display='true'] { break-inside: avoid; }
   .math-source[data-display='true'] { overflow: visible; font-size: 10.5pt; margin: 4mm 0; }
-  .prose .footnotes { font-size: 9pt; border-top: .5pt solid #b5a99c; margin-top: 5mm; padding-top: 3mm; }
-  .demo-notice { font-size: 9pt; padding: 3mm; background: #f5eee3 !important; }
+  .prose .footnotes { font-size: 9pt; border-top: .5pt solid var(--line); margin-top: 5mm; padding-top: 3mm; }
+  .demo-notice { font-size: 9pt; padding: 3mm; background: var(--tint) !important; }
   * { box-shadow: none !important; text-shadow: none !important; }
 }

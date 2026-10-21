@@ -58,7 +58,11 @@ jobs:
           python3 tools/pdf_mastheads.py
           node scripts/check-articles.mjs --source-only
       - name: Install PDF rendering engine
-        run: npx playwright install --with-deps chromium
+        run: |
+          npx playwright install --with-deps chromium
+          if [ "${{ steps.plan.outputs.full_checks }}" = "true" ] && ! command -v pdftoppm >/dev/null; then
+            sudo apt-get install -y poppler-utils
+          fi
       - name: Verify site code, layout and browser contracts
         if: steps.plan.outputs.full_checks == 'true'
         run: |
@@ -71,6 +75,7 @@ jobs:
           node tests/pdf-cache-browser.mjs
           HISTORY_MATH_PUBLICATION_REF="$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build --trace
           node scripts/article-pdf.mjs
+          python3 scripts/check_pdf_colors.py _site
           python3 scripts/check_site.py _site /history_math
           npm run test:browser
           node tests/article-details-browser.mjs
@@ -91,6 +96,7 @@ jobs:
             IMAGE_SITE_DIR=_site-pages IMAGE_BASEURL="$PAGES_BASE_PATH" node tests/image-delivery-browser.mjs
             ERROR_SITE_DIR=_site-pages ERROR_BASEURL="$PAGES_BASE_PATH" node tests/errors-browser.mjs
             URL_SITE_DIR=_site-pages URL_BASEURL="$PAGES_BASE_PATH" URL_ORIGIN="$PAGES_ORIGIN" node tests/article-urls-browser.mjs
+            python3 scripts/check_pdf_colors.py _site-pages
           fi
       - name: Save validated PDF cache
         if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
