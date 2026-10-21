@@ -1,0 +1,102 @@
+{
+  "/assets/images/hm-tt-d055acbd27c8/iskusstvo-programmirovaniya-01.png": {
+    "sha256": "000c0534a58a03cd3d48b689e4a4b959f29b89a1f7ec2648387eb855fc6ffead",
+    "width": 1548,
+    "height": 2168,
+    "bytes": 5049300,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d055acbd27c8/iskusstvo-programmirovaniya-01.png-960.webp",
+        "width": 960,
+        "height": 1344,
+        "sha256": "4d52b1f33d204e1e10dde9b44f1824579084ecc81a46acf1fd0d1a67096cb8f4",
+        "bytes": 945164
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-d055acbd27c8-iskusstvo-programmirovaniya-01-000c0534a58a03cd3d48b689e4a4b959f29b89a1f7ec2648387eb855fc6ffead.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497888",
+      "asset_id": 630497888,
+      "release_tag": "article-originals-0",
+      "sha256": "000c0534a58a03cd3d48b689e4a4b959f29b89a1f7ec2648387eb855fc6ffead",
+      "bytes": 5049300
+    }
+  },
+  "/assets/images/hm-tt-d055acbd27c8/iskusstvo-programmirovaniya-02.png": {
+    "sha256": "0fde2c11c8d65665abf9d215868e2c60917546f4f1bfa98727d2168b863d0195",
+    "width": 6808,
+    "height": 2336,
+    "bytes": 27016413,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d055acbd27c8/iskusstvo-programmirovaniya-02.png-960.webp",
+        "width": 960,
+        "height": 329,
+        "sha256": "0f4221bb3bdaf171cf1f02a27c16bae5dd771f028e656e7dc7f5b9a706836568",
+        "bytes": 372442
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-d055acbd27c8-iskusstvo-programmirovaniya-02-0fde2c11c8d65665abf9d215868e2c60917546f4f1bfa98727d2168b863d0195.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557224",
+      "asset_id": 630557224,
+      "release_tag": "article-originals-0",
+      "sha256": "0fde2c11c8d65665abf9d215868e2c60917546f4f1bfa98727d2168b863d0195",
+      "bytes": 27016413
+    }
+  },
+  "/assets/images/hm-tt-d055acbd27c8/iskusstvo-programmirovaniya-03.png": {
+    "sha256": "6daec081ad974c6fcb958f5a466f4e4b30a58eef53a06f545c5077173f38bc53",
+    "width": 1360,
+    "height": 654,
+    "bytes": 1032535,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d055acbd27c8/iskusstvo-programmirovaniya-03.png-960.webp",
+        "width": 960,
+        "height": 462,
+        "sha256": "397add877b8cf9e77f3f23d835b7351a2dc45b92db3615741f50896daa801d50",
+        "bytes": 338324
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-d055acbd27c8-iskusstvo-programmirovaniya-03-6daec081ad974c6fcb958f5a466f4e4b30a58eef53a06f545c5077173f38bc53.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557342",
+      "asset_id": 630557342,
+      "release_tag": "article-originals-6",
+      "sha256": "6daec081ad974c6fcb958f5a466f4e4b30a58eef53a06f545c5077173f38bc53",
+      "bytes": 1032535
+    }
+  },
+  "/assets/images/hm-tt-d055acbd27c8/iskusstvo-programmirovaniya-04.png": {
+    "sha256": "6886782cbef417ee7f9b9761de4393058d9989e4426ea8043ae0b31f34a0bef8",
+    "width": 1820,
+    "height": 2461,
+    "bytes": 4057791,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d055acbd27c8/iskusstvo-programmirovaniya-04.png-960.webp",
+        "width": 960,
+        "height": 1298,
+        "sha256": "999d72e8f732f60397b5138c329806c0680330b78b31da02051c6304d60c3d80",
+        "bytes": 598780
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-d055acbd27c8-iskusstvo-programmirovaniya-04-6886782cbef417ee7f9b9761de4393058d9989e4426ea8043ae0b31f34a0bef8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557482",
+      "asset_id": 630557482,
+      "release_tag": "article-originals-6",
+      "sha256": "6886782cbef417ee7f9b9761de4393058d9989e4426ea8043ae0b31f34a0bef8",
+      "bytes": 4057791
+    }
+  }
+}

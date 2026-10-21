@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-d055acbd27c8",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-21",
+    "package_sha256": "0a29922c645fc5e47a2264f62b2224ac70e528675c376315adadc7450ab86ebc",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/196#pullrequestreview-5606340077",
+    "source_commit": "1208389582e797a249e6f8cdab98ad48760eda5f",
+    "source_review_id": 5606340077,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-21T21:16:39Z",
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-19",
+      "url": "https://teletype.in/@history_math/Iskusstvo-programmirovaniya-Donald-Knut-11-19"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged.",
+    "Replaced formula-only images fig-5 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending."
+  ]
+}

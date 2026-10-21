@@ -1,0 +1,37 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-d055acbd27c8-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-21",
+    "package_sha256": "18b1c201e98fe23bb0a41d3bf29dd2cb147a57329bcbb89d719be638869bb11c",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/196#pullrequestreview-5606340077",
+    "source_commit": "1208389582e797a249e6f8cdab98ad48760eda5f",
+    "source_review_id": 5606340077,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-21T21:16:39Z",
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged."
+  },
+  "questions": [
+    {
+      "id": "q-knuth-1",
+      "question": "The source calls TeX the first publishing system and describes The Art of Computer Programming as a three-volume work. Confirm the intended scope of these descriptions in this article published in 2023; both are retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual wording without qualification; this records acceptance and does not invent a historical answer. https://github.com/Fuzzy-Technologies/history_math/pull/196#pullrequestreview-5606340077"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-19",
+      "url": "https://teletype.in/@history_math/Iskusstvo-programmirovaniya-Donald-Knut-11-19"
+    }
+  },
+  "manual_changes": [
+    "Replaced formula-only images fig-5 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending."
+  ]
+}
