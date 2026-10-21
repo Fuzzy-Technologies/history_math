@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-1c23e0d766d2-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-21",
+    "package_sha256": "1716bddeed8a69badd8f915ddd3741cbc06956fb4bf21720141a1da88405c386",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/122#pullrequestreview-5606339186",
+    "source_commit": "60c15d5b14ee6288ec8cdfd03e7abf1782bce65e",
+    "source_review_id": 5606339186,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-21T21:16:35Z",
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged."
+  },
+  "questions": [
+    {
+      "id": "q-primes-1",
+      "question": "Confirm the source's claim that Mersenne conjectured 2ⁿ − 1 to be prime for every prime n and that this was disproved only in the twentieth century. The adaptation retains the claim without correction.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual wording without qualification; this records acceptance and does not invent a historical answer. https://github.com/Fuzzy-Technologies/history_math/pull/122#pullrequestreview-5606339186"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-12-01",
+      "url": "https://teletype.in/@history_math/prime-numbers"
+    }
+  },
+  "manual_changes": [
+    "Replaced formula-only images fig-2 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending.",
+    "Removed the duplicate record-prime display and its former-image caption. Typeset the existing record primes, Fermat and Mersenne expressions and parameter conditions inline."
+  ]
+}
