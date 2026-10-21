@@ -48,10 +48,41 @@ export function anniversaries(records, now, language) {
     Number(record.date.slice(0, 4)) < year);
 }
 
-// Rubrics may feature any published article; the archive contains everything after the newest ten.
-export function journalGroups(records, language) {
-  const articles = records.filter(record => record.language === language && record.status === 'published')
-    .sort((a, b) => b.date.localeCompare(a.date) || (a.url < b.url ? 1 : a.url > b.url ? -1 : 0));
-  const remainder = articles.slice(10);
-  return {latest: articles.slice(0, 10), archive: remainder};
+export function seriesKey(record, rules) {
+  const explicit = topicKey(record.series || '');
+  const keys = new Set([explicit, ...(record.tags || []).map(topicKey)]);
+  return rules.series_tags.find(group => group.tags.some(tag => keys.has(topicKey(tag))))?.id || explicit;
+}
+
+export function newestFirst(a, b) {
+  return b.date.localeCompare(a.date) || (a.url < b.url ? 1 : a.url > b.url ? -1 : 0);
+}
+
+// Sample recent articles before sorting; series limits soften only to fill a sparse selection.
+export function journalGroups(records, language, rules, {previous = [], random = Math.random} = {}) {
+  const articles = Array.from(new Map(records.filter(record => record.language === language && record.status === 'published')
+    .sort(newestFirst).map(record => [record.url, record])).values());
+  const candidates = articles.slice(0, rules.pool_size);
+  const shuffled = selection(candidates, candidates.length, [], random);
+  const counts = new Map();
+  const selected = [], overflow = [];
+  for (const record of shuffled) {
+    const key = seriesKey(record, rules);
+    if (!key || (counts.get(key) || 0) < rules.series_limit) {
+      selected.push(record);
+      counts.set(key, (counts.get(key) || 0) + 1);
+    } else overflow.push(record);
+  }
+  const reading = [...selected, ...overflow].slice(0, rules.card_count);
+  if (candidates.length > reading.length && reading.every(record => previous.includes(record.url))) {
+    const alternative = shuffled.find(record => !previous.includes(record.url));
+    if (alternative) {
+      const key = seriesKey(alternative, rules);
+      const sameSeries = reading.filter(record => key && seriesKey(record, rules) === key);
+      const replace = sameSeries.length >= rules.series_limit ? reading.indexOf(sameSeries.at(-1)) : reading.length - 1;
+      reading[replace] = alternative;
+    }
+  }
+  const urls = new Set(reading.map(record => record.url));
+  return {reading: reading.sort(newestFirst), archive: articles.filter(record => !urls.has(record.url))};
 }

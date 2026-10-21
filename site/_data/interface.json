@@ -10,7 +10,6 @@
     "genres": "Очерки · Задачи · История",
     "all": "Все материалы",
     "reading": "Читальный зал",
-    "new": "Новые материалы",
     "previous": "Предыдущие материалы",
     "next": "Следующие материалы",
     "latest_empty": "Материалы готовятся к публикации",
@@ -46,7 +45,8 @@
     "catalog_previous": "Предыдущая страница",
     "catalog_next": "Следующая страница",
     "catalog_page": "Страница",
-    "rubric_empty": "Пока нет материалов"
+    "rubric_empty": "Пока нет материалов",
+    "recommendations": "Рекомендуем почитать"
   },
   "en": {
     "history": "The history of mathematics",
@@ -59,7 +59,6 @@
     "genres": "Essays · Problems · History",
     "all": "All articles",
     "reading": "Reading room",
-    "new": "New materials",
     "previous": "Previous articles",
     "next": "Next articles",
     "latest_empty": "Articles are being prepared for publication",
@@ -95,6 +94,7 @@
     "catalog_previous": "Previous page",
     "catalog_next": "Next page",
     "catalog_page": "Page",
-    "rubric_empty": "No articles yet"
+    "rubric_empty": "No articles yet",
+    "recommendations": "Articles to Explore"
   }
 }

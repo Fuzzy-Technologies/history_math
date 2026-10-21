@@ -3,7 +3,7 @@ import {readFile, stat, mkdir} from 'node:fs/promises';
 import {resolve, extname} from 'node:path';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
-import {journalGroups, rubricArticles, search} from '../site/assets/core.js';
+import {journalGroups, newestFirst, seriesKey, rubricArticles, search} from '../site/assets/core.js';
 import {publishedArticles} from './published-articles.mjs';
 
 async function serve(directory) {
@@ -30,6 +30,33 @@ const errors = [];
 const records = JSON.parse(await readFile('_site/assets/search-ru.json', 'utf8'));
 const englishRecords = JSON.parse(await readFile('_site/assets/search-en.json', 'utf8'));
 await mkdir('test-results/journal-polish', {recursive: true});
+const readingRules = JSON.parse(await readFile('site/_data/reading_selection.json', 'utf8'));
+async function checkReading(page, records, language, randomized = true) {
+  const articles = records.filter(record => record.language === language && record.status === 'published').sort(newestFirst);
+  const urls = await page.locator('#latest-cards h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
+  const reading = urls.map(url => articles.find(record => record.url === url));
+  assert.equal(urls.length, Math.min(readingRules.card_count, articles.length));
+  assert.equal(new Set(urls).size, urls.length);
+  assert.ok(reading.every(record => record && articles.slice(0, readingRules.pool_size).includes(record)));
+  assert.deepEqual(reading, [...reading].sort(newestFirst));
+  const counts = new Map();
+  let capacity = 0;
+  for (const record of articles.slice(0, readingRules.pool_size)) {
+    const key = seriesKey(record, readingRules);
+    if (!key) capacity++;
+    else counts.set(key, (counts.get(key) || 0) + 1);
+  }
+  capacity += [...counts.values()].reduce((sum, count) => sum + Math.min(count, readingRules.series_limit), 0);
+  if (capacity >= urls.length) {
+    for (const key of counts.keys()) assert.ok(reading.filter(record => seriesKey(record, readingRules) === key).length <= readingRules.series_limit);
+  }
+  if (!randomized) assert.deepEqual(reading, journalGroups(records, language, readingRules, {random: () => 1 - Number.EPSILON}).reading);
+  const archive = articles.filter(record => !urls.includes(record.url));
+  const archiveUrls = await page.locator('#archive-cards h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
+  assert.ok(archiveUrls.every(url => archive.some(record => record.url === url)));
+  return {reading, archive};
+}
+
 async function audit(page) {
   await page.locator('img').evaluateAll(async images => { for (const image of images) image.loading = 'eager'; await Promise.all(images.map(image => image.decode())); });
   await page.addScriptTag({path: 'node_modules/axe-core/axe.min.js'});
@@ -53,10 +80,14 @@ try {
     for (const language of ['ru', 'en']) {
       const prefix = language === 'ru' ? '/ru' : '';
       const index = language === 'ru' ? records : englishRecords;
-      const groups = journalGroups(index, language);
       await page.goto(production.base + prefix + '/', {waitUntil: 'networkidle'});
-      assert.deepEqual(await page.locator('#latest-cards h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))),
-        groups.latest.map(record => record.url));
+      const groups = await checkReading(page, index, language);
+      assert.equal(await page.locator('#latest-heading').textContent(), language === 'ru' ? 'Рекомендуем почитать' : 'Articles to Explore');
+      assert.equal(await page.locator('.masthead-blog').count(), language === 'ru' ? 1 : 0);
+      if (language === 'ru') {
+        assert.deepEqual(await page.locator('.masthead-links a').allTextContents(), ['Наш блог', 'О журнале']);
+        assert.equal(await page.locator('.masthead-blog').getAttribute('href'), 'https://t.me/history_math');
+      }
       assert.equal(await page.locator('.plate-label, .carousel-status, .journal-pagination').count(), 0);
       for (const rubric of await page.locator('[data-rubric]').all()) {
         const tags = (await rubric.getAttribute('data-rubric-tags')).split('|');
@@ -158,13 +189,12 @@ try {
   for (const language of ['ru', 'en']) for (const width of [320, 1440]) for (const javaScriptEnabled of [true, false]) {
     const prefix = language === 'ru' ? '/ru' : '';
     const fixtureRecords = JSON.parse(await readFile(`test-results/browser-fixture/assets/discovery-${language}.json`, 'utf8'));
-    const groups = journalGroups(fixtureRecords, language);
-    assert.deepEqual([groups.latest.length, groups.archive.length], [10, 41]);
     const page = await browser.newPage({viewport: {width, height: 1000}, javaScriptEnabled, reducedMotion: 'reduce'});
     page.on('pageerror', error => errors.push(error.message));
     await page.goto(fixture.base + prefix + '/', {waitUntil: 'networkidle'});
     const urls = selector => page.locator(selector).evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
-    assert.deepEqual(await urls('#latest-cards h3 a'), groups.latest.map(record => record.url));
+    const groups = await checkReading(page, fixtureRecords, language, javaScriptEnabled);
+    assert.deepEqual([groups.reading.length, groups.archive.length], [10, 41]);
     assert.equal(await page.locator('#hero-picks a').count(), 2);
     assert.equal(await page.locator('#archive-cards h3 a').count(), 4);
     assert.equal(await page.locator('#archive-cards img, .journal-pagination').count(), 0);
@@ -180,16 +210,19 @@ try {
     assert.ok(boxes[1].y > boxes[0].y && Math.abs(boxes[1].x - boxes[0].x) < 1);
     assert.ok(await page.locator('#hero-picks img').evaluateAll(nodes => nodes.every(n => n.clientWidth <= 80)));
     if (javaScriptEnabled) {
+      const readingBefore = await urls('#latest-cards h3 a');
       const before = await urls('#archive-cards h3 a');
       await page.locator('#reshuffle').click();
       assert.notDeepEqual((await urls('#archive-cards h3 a')).sort(), before.sort());
+      assert.deepEqual(await urls('#latest-cards h3 a'), readingBefore);
       const heroBefore = await urls('#hero-picks a');
       const archiveBefore = await urls('#archive-cards h3 a');
       await page.reload({waitUntil: 'networkidle'});
       const heroAfter = await urls('#hero-picks a');
       assert.ok(heroAfter.every((url, index) => url !== heroBefore[index]));
       assert.notDeepEqual((await urls('#archive-cards h3 a')).sort(), archiveBefore.sort());
-      assert.deepEqual(await urls('#latest-cards h3 a'), groups.latest.map(record => record.url));
+      assert.notDeepEqual(await urls('#latest-cards h3 a'), readingBefore);
+      await checkReading(page, fixtureRecords, language);
       await audit(page);
     }
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false);
@@ -207,16 +240,23 @@ try {
       if (mode === 'blocked') {
         for (const method of ['getItem', 'setItem']) Storage.prototype[method] = () => { throw new DOMException('Blocked', 'SecurityError'); };
       } else {
+        sessionStorage.setItem('history-math:reading:en', '{broken');
         sessionStorage.setItem('history-math:rubric:en:humor', '{broken');
         sessionStorage.setItem('history-math:rubric:en:people', '{"unexpected":true}');
       }
     }, storageMode);
     await page.goto(fixture.base + '/', {waitUntil: 'networkidle'});
     assert.equal(await page.locator('#hero-picks a').count(), 2);
+    const fixtureIndex = JSON.parse(await readFile('test-results/browser-fixture/assets/discovery-en.json', 'utf8'));
+    await checkReading(page, fixtureIndex, 'en');
+    const readingBefore = await page.locator('#latest-cards h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
     const before = await page.locator('#hero-picks a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
     await page.evaluate(() => dispatchEvent(new PageTransitionEvent('pageshow', {persisted: true})));
     const after = await page.locator('#hero-picks a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
     assert.ok(after.every((url, index) => url !== before[index]));
+    const readingAfter = await page.locator('#latest-cards h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
+    assert.notDeepEqual(readingAfter, readingBefore);
+    await checkReading(page, fixtureIndex, 'en');
     await page.locator('.cover-bottom a').click();
     await page.waitForLoadState('networkidle');
     assert.equal(await page.locator('.catalog-list .material-card').count(), 20);
@@ -237,7 +277,7 @@ try {
   assert.equal(await legacy.locator('#search-results h3 a').count(), expectedTopic.filter(record => !record.translation_notice).length);
   await legacy.close();
   assert.deepEqual(errors, []);
-  console.log('PASS: published source articles, captions, math punctuation, metadata/PDF placement, local-day reload, bilingual navigation/search/about pages, newest ten and full remaining archive, explicit-tag rubrics, reload rotation and visible empty states with/without JS');
+  console.log('PASS: published source articles, captions, math punctuation, metadata/PDF placement, local-day reload, bilingual navigation/search/about pages, balanced recent selection and disjoint remaining archive, explicit-tag rubrics, reload rotation and visible empty states with/without JS');
 } finally {
   await browser.close();
   await Promise.all([production, fixture].map(({server}) => new Promise(done => server.close(done))));

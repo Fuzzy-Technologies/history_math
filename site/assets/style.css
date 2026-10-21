@@ -231,7 +231,8 @@ main,
   text-align: right;
   margin-bottom: 25px;
 }
-.masthead-about {
+.masthead-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 18px; }
+.masthead-about, .masthead-blog {
   display: inline-block;
   margin-top: 8px;
   font-size: 14px;
@@ -2307,7 +2308,7 @@ input::placeholder {
     margin: -10px 0 12px;
     justify-self: end;
   }
-  .masthead-about {
+  .masthead-about, .masthead-blog {
     margin-top: 0;
   }
   .showcase-book {

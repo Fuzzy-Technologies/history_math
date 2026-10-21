@@ -33,6 +33,10 @@ Dir.mktmpdir("history-math-browser") do |root|
         "figures" => [{"id" => "fig-1", "path" => "/assets/images/example/triangle.svg",
           "alt" => "Test triangle", "caption" => "", "credit" => "",
           "source" => "Repository test illustration", "rights_basis" => "Test-only fixture"}]})
+      if index >= 19
+        data["tags"] << (language == "ru" ? "Глоссарий" : "Glossary")
+        data["series"] = language == "ru" ? "Глоссарий" : "Glossary" if index.even?
+      end
       text = YAML.dump(data) + "---\n\nTest-only bilingual discovery fixture.\n"
       File.write(File.join(source, "_articles/#{id}.md"), text)
       digest = Digest::SHA256.new.update(text)

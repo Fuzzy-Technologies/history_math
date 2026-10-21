@@ -54,31 +54,6 @@ test('a saved archive subset is replaced even when the random sequence repeats',
   assert.equal(new Set(next.map(record => record.url)).size, 3);
 });
 
-test('homepage pools exclude demos, keep the newest ten and all remaining archive articles, and stabilize tied dates', async () => {
-  const {journalGroups} = await import('../site/assets/core.js');
-  for (const count of [0, 5, 10, 11, 12, 13, 14, 19, 31, 101, 210, 211]) {
-    const input = Array.from({length: count}, (_, index) => ({url: `/article-${String(index).padStart(3, '0')}/`, date: '2026-10-09', status: 'published', language: 'ru'}));
-    const groups = journalGroups([...input, {url: '/demo/', status: 'demo', language: 'ru'}, {url: '/en/', status: 'published', language: 'en'}], 'ru');
-    assert.equal(groups.latest.length, Math.min(10, count));
-    assert.equal(groups.archive.length, Math.max(0, count - 10));
-    const urls = Object.values(groups).flat().map(record => record.url);
-    assert.equal(new Set(urls).size, count);
-    assert.deepEqual(journalGroups([...input].reverse(), 'ru'), groups);
-  }
-});
-
-test('archive contains every article after the latest ten in either locale', async () => {
-  const {journalGroups} = await import('../site/assets/core.js');
-  for (const language of ['ru', 'en']) {
-    const records = Array.from({length: 210}, (_, index) => ({url: `/${language}/${index}/`,
-      date: new Date(Date.UTC(2020, 0, index + 1)).toISOString().slice(0, 10),
-      status: 'published', language, translation_notice: language === 'en'}));
-    const groups = journalGroups(records, language);
-    assert.deepEqual(groups.latest, records.slice(200).reverse());
-    assert.deepEqual(groups.archive, records.slice(0, 200).reverse());
-  }
-});
-
 test('topic keys and legacy exact-tag URLs fold spaces, underscores and case', () => {
   assert.equal(topicKey('  History_of_Mathematics '), 'history of mathematics');
   const tagged = ['History of Mathematics', 'History of mathematics', 'history_of_mathematics'].map((tag, index) =>
