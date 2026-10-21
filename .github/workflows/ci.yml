@@ -98,6 +98,8 @@ jobs:
           bundle exec ruby tests/topics_test.rb
           bundle exec ruby tests/catalog_pages_test.rb
           bundle exec ruby tests/article_pdf_names_test.rb
+          bundle exec ruby tests/publication_test.rb
+          bundle exec ruby tests/translation_notices_test.rb
           bundle exec ruby tests/teletype_dates_test.rb
           bundle exec ruby tests/image_originals_test.rb
           bundle exec ruby tests/external_originals_test.rb
