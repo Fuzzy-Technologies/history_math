@@ -502,8 +502,11 @@ if (archive) {
       if (groups.reading.length) carousel.replaceChildren(...groups.reading.map(readingCard));
       refreshCarousel();
       pool = groups.archive;
+      return groups;
     }
-    rotateReading();
+    const initialGroups = rotateReading();
+    // Any reading card can enter the archive after a restored-page selection changes.
+    const archiveCandidates = [...initialGroups.reading, ...initialGroups.archive];
     const articlePicks = document.querySelector('#article-picks');
     const articlePool = articlePicks ? articleCandidates(records, language, articlePicks.dataset.excludeTags.split('|')) : [];
     const articleKey = `history-math:article-picks:${language}`;
@@ -541,7 +544,7 @@ if (archive) {
     rotateRubrics();
     // Measure every candidate in bounded batches; text length cannot predict wrapped height.
     function reserveArchiveSpace() {
-      if (!pool.length || !archive.clientWidth) return;
+      if (!archiveCandidates.length || !archive.clientWidth) return;
       const probe = archive.cloneNode(false);
       probe.removeAttribute('id');
       probe.setAttribute('aria-hidden', 'true');
@@ -550,7 +553,7 @@ if (archive) {
       archive.after(probe);
       let height = 0;
       try {
-        for (const batch of archiveMeasurementBatches(pool)) {
+        for (const batch of archiveMeasurementBatches(archiveCandidates)) {
           // The first visible slot has more text width. Reserve the narrower ordinary-slot height
           // for every record, since rotation can put any article in any of the four positions.
           const sentinel = document.createElement('span');

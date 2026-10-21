@@ -106,7 +106,7 @@ try {
         }
         assert.ok(Math.abs(await page.locator('#archive-cards').evaluate(node => node.getBoundingClientRect().height) - originalHeight) < 2, 'Archive height changed during rotation');
         await page.screenshot({path: `${evidence}/home-${viewport.name}.png`, fullPage: true});
-        checked(`${viewport.name}: archive rotation changes only its block, without repeats or layout shifts`);
+        checked(`${viewport.name}: restored-page selections rotate without archive repeats or height shifts`);
       }
       if (path === '/') {
         assert.match(await page.locator('h1').innerText(), /Let’s talk/);
