@@ -79,3 +79,13 @@ test('catalog URLs round-trip Unicode filters, preserve unrelated state and omit
   assert.equal(ten.searchParams.get('per_page'), '10');
   assert.equal(catalogState(ten.searchParams, options).perPage, 10);
 });
+
+test('legacy topic variants resolve to one canonical catalog option and retain all matching articles', () => {
+  const tags = ['History of Mathematics', 'Lives of Remarkable People'];
+  for (const tag of ['history_of_mathematics', 'History of mathematics', 'HISTORY OF MATHEMATICS']) {
+    const state = catalogState(new URLSearchParams({tag}), {tags});
+    assert.equal(state.tag, 'History of Mathematics');
+    assert.equal(catalogUrl(new URL('https://example.invalid/materials/'), state).searchParams.get('tag'), 'History of Mathematics');
+  }
+  assert.equal(catalogState(new URLSearchParams({tag: 'History'}), {tags}).tag, '');
+});

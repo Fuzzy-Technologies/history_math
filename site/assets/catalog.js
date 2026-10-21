@@ -1,3 +1,5 @@
+const {topicKey} = await import('./core.js' + new URL(import.meta.url).search);
+
 export const catalogPageSizes = Object.freeze([5, 10, 20, 50, 100]);
 
 // Keep URL state small and restricted to the real filter options.
@@ -7,7 +9,7 @@ export function catalogState(params, {types = [], tags = []} = {}) {
   const perPage = /^[1-9]\d*$/.test(rawPerPage ?? '') ? Number(rawPerPage) : NaN;
   return {
     type: types.includes(params.get('type')) ? params.get('type') : '',
-    tag: tags.includes(params.get('tag')) ? params.get('tag') : '',
+    tag: tags.find(tag => topicKey(tag) === topicKey(params.get('tag') ?? '')) || '',
     perPage: catalogPageSizes.includes(perPage) ? perPage : 20,
     page: positiveInteger(params.get('page'))
   };

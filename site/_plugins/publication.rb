@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative "topics"
+
 require "json"
 require "cgi"
 require "date"
@@ -141,7 +143,7 @@ module HistoryMath
           body = (doc.data["translation_notice"] ? doc.data["description"] : doc.content).gsub(/\{\{[\s\S]*?\}\}|\{%[\s\S]*?%\}/, " ")
           html = site.find_converter_instance(Jekyll::Converters::Markdown).convert(body)
           text = CGI.unescapeHTML(html.gsub(/<[^>]*>/, " ")).gsub(/\s+/, " ").strip
-          {title: doc.data["title"], description: doc.data["description"], tags: doc.data["tags"],
+          {title: doc.data["title"], description: doc.data["description"], tags: Topics.labels(doc.data["tags"]),
            type: doc.data["type"], language: language, date: doc.data["date"].strftime("%Y-%m-%d"),
            url: site.baseurl + doc.url, text: text, translation_notice: doc.data["translation_notice"] == true, status: doc.data["status"], preview_image: doc.data["preview_image"] && site.baseurl + (image_assets.dig(doc.data["preview_image"], "variants", 0, "path") || doc.data["preview_image"])}
         end

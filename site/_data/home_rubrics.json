@@ -1,0 +1,12 @@
+[
+  {
+    "id": "humor",
+    "ru": {"title": "Математики шутят", "tags": ["Математики шутят", "Анекдоты", "Цитаты"]},
+    "en": {"title": "Mathematicians Joke", "tags": ["Mathematicians Joke", "Jokes", "Anecdotes", "Quotes", "Quotations", "Математики шутят", "Анекдоты", "Цитаты"]}
+  },
+  {
+    "id": "people",
+    "ru": {"title": "Персоналии", "tags": ["Персоналии"]},
+    "en": {"title": "People", "tags": ["People", "Персоналии"]}
+  }
+]

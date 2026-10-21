@@ -3,6 +3,7 @@ import {resolve, relative, sep} from 'node:path';
 import {createHash} from 'node:crypto';
 import {runInNewContext} from 'node:vm';
 import Ajv from 'ajv';
+import {topicKey} from '../site/assets/core.js';
 import {parseArticle} from './article-frontmatter.mjs';
 import {articleUrl} from './article-url.mjs';
 import {checkReview} from './article-review.mjs';
@@ -12,6 +13,7 @@ const katexModule = {exports: {}};
 runInNewContext(readFileSync(new URL('../site/assets/vendor/katex/katex.min.js', import.meta.url), 'utf8'), {module: katexModule, exports: katexModule.exports});
 const katex = katexModule.exports;
 const schema = JSON.parse(readFileSync(new URL('../schemas/article-v1.schema.json', import.meta.url)));
+const topicLabels = new Map(JSON.parse(readFileSync(new URL('../site/_data/topics.json', import.meta.url))).map(label => [topicKey(label), label]));
 const validate = new Ajv({allErrors: true, strict: false}).compile(schema);
 
 export {parseArticle};
@@ -78,7 +80,11 @@ export function checkArticle(text, file, root, identities = new Set()) {
   if (/\{%|\{\{/.test(withoutIncludes)) add('HM_STRUCTURE', 'Only the documented shared figure include is allowed');
   if (/\\\\[A-Za-z0-9-]+\\|[A-Za-z]:\\|\.felab\.json|runtime\.sqlite|ОПУБЛИКОВАТЬ В|ОПУБЛИКОВАТЬ ВТОРЫМ|ОПУБЛИКОВАТЬ ТРЕТЬИМ/.test(text)) add('HM_STRUCTURE', 'Private paths or operational metadata must remain outside public Git');
   if (/^#\s+/m.test(clean)) add('HM_STRUCTURE', 'Use H2 sections beneath the shared H1 title');
-  if (data.lang === 'ru' && data.series === 'Персоналии' && !data.tags?.includes('Персоналии')) add('HM_METADATA', 'Biographies require the Персоналии tag');
+  for (const tag of Array.isArray(data.tags) && data.status === 'draft' ? data.tags : []) {
+    const canonical = topicLabels.get(topicKey(tag));
+    if (canonical && canonical !== tag) add('HM_METADATA', `Prefer the canonical topic label: ${canonical} (received ${tag})`, 1, 'warning');
+  }
+  if (data.lang === 'ru' && data.series === 'Персоналии' && !(Array.isArray(data.tags) && data.tags.some(tag => topicKey(tag) === topicKey('Персоналии')))) add('HM_METADATA', 'Biographies require the Персоналии tag');
   const anchors = new Set([...clean.matchAll(/\{#([A-Za-z][A-Za-z0-9_-]*)\}/g)].map(x => x[1]));
   for (const id of used) anchors.add(id);
   const notes = new Set([...clean.matchAll(/^\[\^([^\]]+)\]:/gm)].map(x => x[1]));

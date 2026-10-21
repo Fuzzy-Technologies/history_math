@@ -1,5 +1,5 @@
 const assetVersion = new URL(import.meta.url).search;
-const [{search, searchByTag, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}, {loadVerifiedOriginal, nativeOriginalTarget}, {catalogState, catalogPage, catalogPageNumbers, catalogUrl}] = await Promise.all([
+const [{search, searchByTag, topicKey, rubricArticles, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}, {loadVerifiedOriginal, nativeOriginalTarget}, {catalogState, catalogPage, catalogPageNumbers, catalogUrl}] = await Promise.all([
   import('./core.js' + assetVersion),
   import('./select.js' + assetVersion),
   import('./reading-position.js' + assetVersion),
@@ -442,30 +442,37 @@ if (archive) {
   loadIndex().then(async records => {
     const groups = journalGroups(records, language);
     const pool = groups.archive;
-    const hero = document.querySelector('#hero-picks');
-    if (hero && groups.featured.length) {
-      const heroKey = `history-math:featured:${language}`;
-      let previous = [];
-      try {
-        const saved = JSON.parse(localStorage.getItem(heroKey));
-        if (Array.isArray(saved) && saved.every(url => typeof url === 'string')) previous = saved.slice(0, 4);
-      } catch {}
-      const picks = selection(groups.featured, 4, previous);
-      try { localStorage.setItem(heroKey, JSON.stringify(picks.map(record => record.url))); } catch {}
-      hero.replaceChildren(...picks.map(record => {
+    const rubricPrevious = new Map();
+    function rotateRubrics() {
+      document.querySelectorAll('[data-rubric]').forEach(rubric => {
+        const candidates = rubricArticles(records, language, rubric.dataset.rubricTags.split('|'));
+        if (!candidates.length) return; // Keep the localized server-rendered empty state.
+        const key = `history-math:rubric:${language}:${rubric.dataset.rubric}`;
+        let previous = rubricPrevious.get(key) || [];
+        try {
+          const saved = JSON.parse(sessionStorage.getItem(key));
+          if (Array.isArray(saved) && saved.every(url => typeof url === 'string')) previous = saved.slice(0, 1);
+        } catch {}
+        const [record] = selection(candidates, 1, previous);
+        rubricPrevious.set(key, [record.url]);
+        try { sessionStorage.setItem(key, JSON.stringify([record.url])); } catch {}
         const link = element('a', 'hero-pick');
         link.href = record.url;
         if (record.preview_image) {
           const image = document.createElement('img');
-          image.src = record.preview_image; image.alt = ''; image.width = 120; image.height = 120;
+          image.src = record.preview_image; image.alt = ''; image.width = 80; image.height = 80;
           image.loading = 'lazy'; image.decoding = 'async';
           link.append(image);
         }
-        link.append(element('span', '', record.title));
-        if (record.translation_notice) link.append(element('small', '', pendingLabel));
-        return link;
-      }));
+        const copy = element('span', 'hero-pick-copy');
+        copy.append(element('span', 'hero-pick-title', record.title),
+          element('span', 'hero-pick-description', record.description));
+        link.append(copy);
+        rubric.querySelector('.hero-rubric-content').replaceChildren(link);
+      });
     }
+    rotateRubrics();
+    window.addEventListener('pageshow', event => { if (event.persisted) rotateRubrics(); });
     // Reserve enough space for any article, including long archival titles and tags.
     function reserveArchiveSpace() {
       if (!pool.length || !archive.clientWidth) return;
@@ -537,6 +544,13 @@ if (form) {
     try {
       const records = await loadIndex();
       if (request !== requestNumber) return;
+      if (activeTag) {
+        activeTag = records.flatMap(record => record.tags).find(tag => topicKey(tag) === topicKey(activeTag)) || activeTag;
+        topic.querySelector('strong').textContent = activeTag;
+        const canonicalUrl = new URL(location.href);
+        canonicalUrl.searchParams.set('tag', activeTag);
+        history.replaceState(null, '', canonicalUrl);
+      }
       const matches = activeTag ? searchByTag(records, activeTag, language) : search(records, query, language);
       results.replaceChildren(...matches.map(record => card(record, 'search-result')));
       status.textContent = matches.length ? (ru ? `Найдено материалов: ${matches.length}` : `Articles found: ${matches.length}`) : (ru ? 'Ничего не найдено. Попробуйте другое слово или тему.' : 'No matches. Try another word or topic.');

@@ -19,6 +19,7 @@ test('review digest CLI completes without a cyclic import and requires an articl
 test('short biographies need no artificial heading and retain the Personalia tag', () => {
   const text = readFileSync('templates/minimal-article.md', 'utf8').replace('## First section {#first-section}\n\n', '').replace('lang: en', 'lang: ru').replace('/articles/', '/ru/articles/').replace('tags: [example]', 'series: Персоналии\ntags: [Персоналии]');
   assert.deepEqual(checkArticle(text, 'short.md', resolve('.')).findings.filter(x => x.severity === 'error'), []);
+  assert.deepEqual(checkArticle(text.replace('tags: [Персоналии]', 'tags: [персоналии]'), 'short.md', resolve('.')).findings.filter(x => x.severity === 'error'), []);
   assert.ok(checkArticle(text.replace('tags: [Персоналии]', 'tags: [историяматематики]'), 'short.md', resolve('.')).findings.some(x => x.code === 'HM_METADATA'));
 });
 

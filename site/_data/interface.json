@@ -7,7 +7,6 @@
     "lead": "Об учёных и открытиях, задачах и старинных книгах. О том, как развивалась математика и кто её создавал.",
     "read": "Читать материалы",
     "more": "Ещё интересные материалы",
-    "featured_empty": "Здесь появится подборка из ранее опубликованных материалов",
     "genres": "Очерки · Задачи · История",
     "all": "Все материалы",
     "reading": "Читальный зал",
@@ -46,7 +45,8 @@
     "catalog_pages": "Страницы материалов",
     "catalog_previous": "Предыдущая страница",
     "catalog_next": "Следующая страница",
-    "catalog_page": "Страница"
+    "catalog_page": "Страница",
+    "rubric_empty": "Пока нет материалов"
   },
   "en": {
     "history": "The history of mathematics",
@@ -56,7 +56,6 @@
     "lead": "Scholars and discoveries, problems and old books. How mathematics developed, and the people who shaped it.",
     "read": "Explore the articles",
     "more": "More to explore",
-    "featured_empty": "A selection of earlier articles will appear here",
     "genres": "Essays · Problems · History",
     "all": "All articles",
     "reading": "Reading room",
@@ -95,6 +94,7 @@
     "catalog_pages": "Article pages",
     "catalog_previous": "Previous page",
     "catalog_next": "Next page",
-    "catalog_page": "Page"
+    "catalog_page": "Page",
+    "rubric_empty": "No articles yet"
   }
 }

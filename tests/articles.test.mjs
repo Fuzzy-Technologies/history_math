@@ -178,3 +178,13 @@ test('decorative figures may omit visible captions but never provenance or alt t
   }
   assert.ok(errors(decorative.replace('  credit: ""', '  credit: false')).some(item => item.code === 'HM_METADATA'));
 });
+
+test('draft topic aliases produce authoring guidance without changing approved metadata', () => {
+  const input = text.replace(/^tags:.*$/m, 'tags: [history_of_mathematics]');
+  const findings = checkArticle(input, 'article.md', root).findings;
+  assert.ok(findings.some(item => item.severity === 'warning' && item.detail.includes('History of Mathematics')));
+  assert.ok(!checkArticle(input.replace('status: draft', 'status: published'), 'article.md', root).findings
+    .some(item => item.detail.includes('Prefer the canonical topic label')));
+  assert.ok(!checkArticle(input.replace('history_of_mathematics', 'History of Mathematics'), 'article.md', root).findings
+    .some(item => item.detail.includes('Prefer the canonical topic label')));
+});

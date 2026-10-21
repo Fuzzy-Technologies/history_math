@@ -10,10 +10,20 @@ export function search(records, query, language) {
 }
 
 export function searchByTag(records, tag, language) {
-  const topic = normalize(tag);
+  const topic = topicKey(tag);
   if (!topic) return [];
   return records.filter(record => record.language === language &&
-    record.tags.some(value => normalize(value) === topic));
+    record.tags.some(value => topicKey(value) === topic));
+}
+
+export function topicKey(value) {
+  return normalize(String(value).normalize('NFKC').replaceAll('_', ' '));
+}
+
+export function rubricArticles(records, language, tags) {
+  const topics = new Set(tags.map(topicKey));
+  return records.filter(record => record.language === language && record.status === 'published' &&
+    !record.translation_notice && record.tags.some(tag => topics.has(topicKey(tag))));
 }
 
 export function selection(records, count, previous = [], random = Math.random) {
@@ -38,11 +48,10 @@ export function anniversaries(records, now, language) {
     Number(record.date.slice(0, 4)) < year);
 }
 
-// Newest ten are exclusive to the carousel; the freshest quarter of the rest is featured.
+// Rubrics may feature any published article; the archive contains everything after the newest ten.
 export function journalGroups(records, language) {
   const articles = records.filter(record => record.language === language && record.status === 'published')
     .sort((a, b) => b.date.localeCompare(a.date) || (a.url < b.url ? 1 : a.url > b.url ? -1 : 0));
   const remainder = articles.slice(10);
-  const midpoint = Math.ceil(remainder.length / 4);
-  return {latest: articles.slice(0, 10), featured: remainder.slice(0, midpoint), archive: remainder.slice(midpoint)};
+  return {latest: articles.slice(0, 10), archive: remainder};
 }

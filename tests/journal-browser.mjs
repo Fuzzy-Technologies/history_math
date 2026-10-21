@@ -3,7 +3,7 @@ import {readFile, stat, mkdir} from 'node:fs/promises';
 import {resolve, extname} from 'node:path';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
-import {journalGroups, search} from '../site/assets/core.js';
+import {journalGroups, rubricArticles, search} from '../site/assets/core.js';
 import {publishedArticles} from './published-articles.mjs';
 
 async function serve(directory) {
@@ -58,8 +58,16 @@ try {
       assert.deepEqual(await page.locator('#latest-cards h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))),
         groups.latest.map(record => record.url));
       assert.equal(await page.locator('.plate-label, .carousel-status, .journal-pagination').count(), 0);
-      assert.equal(await page.locator('#hero-picks a').count(), Math.min(4, groups.featured.length));
-      assert.equal(await page.locator('#hero-picks .selection-empty').count(), groups.featured.length ? 0 : 1);
+      for (const rubric of await page.locator('[data-rubric]').all()) {
+        const tags = (await rubric.getAttribute('data-rubric-tags')).split('|');
+        const pool = rubricArticles(index, language, tags);
+        assert.equal(await rubric.locator('a').count(), pool.length ? 1 : 0);
+        assert.equal(await rubric.locator('.selection-empty').count(), pool.length ? 0 : 1);
+        if (pool.length) {
+          const href = await rubric.locator('a').getAttribute('href');
+          assert.ok(pool.some(record => record.url === href));
+        }
+      }
       assert.equal(await page.locator('.archive-section').isVisible(), true);
       assert.equal(await page.locator('#archive-cards h3 a').count(), Math.min(4, groups.archive.length));
       assert.equal(await page.locator('#archive-cards .selection-empty').count(), groups.archive.length ? 0 : 1);
@@ -131,6 +139,14 @@ try {
     }
     await page.close();
   }
+  for (const [language, index] of [['ru', records], ['en', englishRecords]]) {
+    const page = await browser.newPage();
+    await page.goto(production.base + index[0].url.replace('/history_math', ''), {waitUntil: 'networkidle'});
+    const target = '/history_math' + (language === 'ru' ? '/ru' : '') + '/materials/';
+    assert.equal(await page.locator('.back-link').getAttribute('href'), target);
+    assert.equal(await page.locator('.article-end > a').getAttribute('href'), target);
+    await page.close();
+  }
   const dated = await browser.newPage({timezoneId: 'Europe/Moscow'});
   await dated.clock.setFixedTime(new Date('2026-10-09T20:59:00Z'));
   await dated.goto(production.base + records[0].url.replace('/history_math', ''), {waitUntil: 'networkidle'});
@@ -143,23 +159,26 @@ try {
     const prefix = language === 'ru' ? '/ru' : '';
     const fixtureRecords = JSON.parse(await readFile(`test-results/browser-fixture/assets/discovery-${language}.json`, 'utf8'));
     const groups = journalGroups(fixtureRecords, language);
-    assert.deepEqual([groups.latest.length, groups.featured.length, groups.archive.length], [10, 11, 30]);
+    assert.deepEqual([groups.latest.length, groups.archive.length], [10, 41]);
     const page = await browser.newPage({viewport: {width, height: 1000}, javaScriptEnabled, reducedMotion: 'reduce'});
     page.on('pageerror', error => errors.push(error.message));
     await page.goto(fixture.base + prefix + '/', {waitUntil: 'networkidle'});
     const urls = selector => page.locator(selector).evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
     assert.deepEqual(await urls('#latest-cards h3 a'), groups.latest.map(record => record.url));
-    assert.equal(await page.locator('#hero-picks a').count(), 4);
+    assert.equal(await page.locator('#hero-picks a').count(), 2);
     assert.equal(await page.locator('#archive-cards h3 a').count(), 4);
     assert.equal(await page.locator('#archive-cards img, .journal-pagination').count(), 0);
-    assert.ok((await urls('#hero-picks a')).every(url => groups.featured.some(record => record.url === url)));
+    for (const rubric of await page.locator('[data-rubric]').all()) {
+      const tags = (await rubric.getAttribute('data-rubric-tags')).split('|');
+      const href = await rubric.locator('a').getAttribute('href');
+      assert.ok(rubricArticles(fixtureRecords, language, tags).some(record => record.url === href));
+    }
     assert.ok((await urls('#archive-cards h3 a')).every(url => groups.archive.some(record => record.url === url)));
-    const all = [...await urls('#latest-cards h3 a'), ...await urls('#hero-picks a'), ...await urls('#archive-cards h3 a')];
-    assert.equal(new Set(all).size, 18);
+    const all = [...await urls('#latest-cards h3 a'), ...await urls('#archive-cards h3 a')];
+    assert.equal(new Set(all).size, 14);
     const boxes = await page.locator('#hero-picks a').evaluateAll(nodes => nodes.map(n => { const b=n.getBoundingClientRect(); return {x:b.x,y:b.y,width:b.width}; }));
-    assert.ok(boxes[0].x < boxes[1].x && Math.abs(boxes[0].y - boxes[1].y) < 1);
-    assert.ok(boxes[2].y > boxes[0].y && Math.abs(boxes[2].x - boxes[0].x) < 1);
-    assert.ok(await page.locator('#hero-picks img').evaluateAll(nodes => nodes.every(n => n.clientWidth <= 120)));
+    assert.ok(boxes[1].y > boxes[0].y && Math.abs(boxes[1].x - boxes[0].x) < 1);
+    assert.ok(await page.locator('#hero-picks img').evaluateAll(nodes => nodes.every(n => n.clientWidth <= 80)));
     if (javaScriptEnabled) {
       const before = await urls('#archive-cards h3 a');
       await page.locator('#reshuffle').click();
@@ -167,7 +186,8 @@ try {
       const heroBefore = await urls('#hero-picks a');
       const archiveBefore = await urls('#archive-cards h3 a');
       await page.reload({waitUntil: 'networkidle'});
-      assert.notDeepEqual((await urls('#hero-picks a')).sort(), heroBefore.sort());
+      const heroAfter = await urls('#hero-picks a');
+      assert.ok(heroAfter.every((url, index) => url !== heroBefore[index]));
       assert.notDeepEqual((await urls('#archive-cards h3 a')).sort(), archiveBefore.sort());
       assert.deepEqual(await urls('#latest-cards h3 a'), groups.latest.map(record => record.url));
       await audit(page);
@@ -179,8 +199,45 @@ try {
     assert.equal(await page.locator('.catalog-list .material-card').count(), javaScriptEnabled ? Math.min(20, fixtureRecords.length) : fixtureRecords.length);
     await page.close();
   }
+  // Storage failures must preserve usable rubric cards and normal navigation.
+  for (const storageMode of ['blocked', 'malformed']) {
+    const page = await browser.newPage({viewport: {width: 390, height: 1000}});
+    page.on('pageerror', error => errors.push(error.message));
+    await page.addInitScript(mode => {
+      if (mode === 'blocked') {
+        for (const method of ['getItem', 'setItem']) Storage.prototype[method] = () => { throw new DOMException('Blocked', 'SecurityError'); };
+      } else {
+        sessionStorage.setItem('history-math:rubric:en:humor', '{broken');
+        sessionStorage.setItem('history-math:rubric:en:people', '{"unexpected":true}');
+      }
+    }, storageMode);
+    await page.goto(fixture.base + '/', {waitUntil: 'networkidle'});
+    assert.equal(await page.locator('#hero-picks a').count(), 2);
+    const before = await page.locator('#hero-picks a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
+    await page.evaluate(() => dispatchEvent(new PageTransitionEvent('pageshow', {persisted: true})));
+    const after = await page.locator('#hero-picks a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
+    assert.ok(after.every((url, index) => url !== before[index]));
+    await page.locator('.cover-bottom a').click();
+    await page.waitForLoadState('networkidle');
+    assert.equal(await page.locator('.catalog-list .material-card').count(), 20);
+    await page.close();
+  }
+  // Existing topic URLs converge on the canonical option, label and result set.
+  const legacy = await browser.newPage();
+  const fixtureIndex = JSON.parse(await readFile('test-results/browser-fixture/assets/discovery-en.json', 'utf8'));
+  const expectedTopic = fixtureIndex.filter(record => record.tags.includes('History of Mathematics'));
+  assert.ok(expectedTopic.length > 1);
+  await legacy.goto(fixture.base + '/materials/?tag=history_of_mathematics', {waitUntil: 'networkidle'});
+  assert.equal(await legacy.locator('#tag-filter').inputValue(), 'History of Mathematics');
+  assert.equal(await legacy.locator('#tag-filter option').filter({hasText: /^History of Mathematics$/}).count(), 1);
+  assert.equal(new URL(legacy.url()).searchParams.get('tag'), 'History of Mathematics');
+  assert.equal(await legacy.locator('.catalog-list .material-card').count(), Math.min(20, expectedTopic.length));
+  await legacy.goto(fixture.base + '/search/?tag=History%20of%20mathematics', {waitUntil: 'networkidle'});
+  assert.equal(await legacy.locator('#search-topic strong').textContent(), 'History of Mathematics');
+  assert.equal(await legacy.locator('#search-results h3 a').count(), expectedTopic.filter(record => !record.translation_notice).length);
+  await legacy.close();
   assert.deepEqual(errors, []);
-  console.log('PASS: published source articles, captions, math punctuation, metadata/PDF placement, local-day reload, bilingual navigation/search/about pages, exclusive newest ten, quarter/three-quarter pools, reload rotation and visible empty states with/without JS');
+  console.log('PASS: published source articles, captions, math punctuation, metadata/PDF placement, local-day reload, bilingual navigation/search/about pages, newest ten and full remaining archive, explicit-tag rubrics, reload rotation and visible empty states with/without JS');
 } finally {
   await browser.close();
   await Promise.all([production, fixture].map(({server}) => new Promise(done => server.close(done))));

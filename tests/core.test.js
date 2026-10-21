@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {normalize, search, searchByTag, selection, anniversaries} from '../site/assets/core.js';
+import {normalize, search, searchByTag, selection, anniversaries, topicKey, rubricArticles} from '../site/assets/core.js';
 
 const records = [
   {title: 'Счёт и геометрия', description: '', text: 'Чертёж', tags: ['идеи'], type: 'essay', language: 'ru', date: '2025-10-01', url: '/a/'},
@@ -54,21 +54,20 @@ test('a saved archive subset is replaced even when the random sequence repeats',
   assert.equal(new Set(next.map(record => record.url)).size, 3);
 });
 
-test('homepage pools exclude demos and newest ten, split the remaining quarter and three quarters and stabilize tied dates', async () => {
+test('homepage pools exclude demos, keep the newest ten and all remaining archive articles, and stabilize tied dates', async () => {
   const {journalGroups} = await import('../site/assets/core.js');
   for (const count of [0, 5, 10, 11, 12, 13, 14, 19, 31, 101, 210, 211]) {
     const input = Array.from({length: count}, (_, index) => ({url: `/article-${String(index).padStart(3, '0')}/`, date: '2026-10-09', status: 'published', language: 'ru'}));
     const groups = journalGroups([...input, {url: '/demo/', status: 'demo', language: 'ru'}, {url: '/en/', status: 'published', language: 'en'}], 'ru');
     assert.equal(groups.latest.length, Math.min(10, count));
-    assert.equal(groups.featured.length, Math.ceil(Math.max(0, count - 10) / 4));
-    assert.equal(groups.archive.length, Math.max(0, count - 10) - Math.ceil(Math.max(0, count - 10) / 4));
+    assert.equal(groups.archive.length, Math.max(0, count - 10));
     const urls = Object.values(groups).flat().map(record => record.url);
     assert.equal(new Set(urls).size, count);
     assert.deepEqual(journalGroups([...input].reverse(), 'ru'), groups);
   }
 });
 
-test('featured quarter contains the freshest remaining dates in either locale', async () => {
+test('archive contains every article after the latest ten in either locale', async () => {
   const {journalGroups} = await import('../site/assets/core.js');
   for (const language of ['ru', 'en']) {
     const records = Array.from({length: 210}, (_, index) => ({url: `/${language}/${index}/`,
@@ -76,7 +75,36 @@ test('featured quarter contains the freshest remaining dates in either locale', 
       status: 'published', language, translation_notice: language === 'en'}));
     const groups = journalGroups(records, language);
     assert.deepEqual(groups.latest, records.slice(200).reverse());
-    assert.deepEqual(groups.featured, records.slice(150, 200).reverse());
-    assert.deepEqual(groups.archive, records.slice(0, 150).reverse());
+    assert.deepEqual(groups.archive, records.slice(0, 200).reverse());
   }
+});
+
+test('topic keys and legacy exact-tag URLs fold spaces, underscores and case', () => {
+  assert.equal(topicKey('  History_of_Mathematics '), 'history of mathematics');
+  const tagged = ['History of Mathematics', 'History of mathematics', 'history_of_mathematics'].map((tag, index) =>
+    ({...records[1], url: `/legacy-${index}/`, tags: [tag]}));
+  assert.equal(searchByTag(tagged, 'HISTORY_OF_MATHEMATICS', 'en').length, 3);
+  assert.equal(searchByTag(tagged, 'History', 'en').length, 0);
+});
+
+test('rubrics match explicit whole tags across case and exclude drafts, demos, notices and the other locale', () => {
+  const base = {...records[0], status: 'published'};
+  const candidates = [
+    {...base, url: '/people/', tags: ['персоналии']},
+    {...base, url: '/biography/', tags: ['ЖЗЛ']},
+    {...base, url: '/fragment/', tags: ['персоналии ученых']},
+    {...base, url: '/draft/', tags: ['Персоналии'], status: 'draft'},
+    {...base, url: '/demo/', tags: ['Персоналии'], status: 'demo'},
+    {...base, url: '/notice/', tags: ['Персоналии'], translation_notice: true},
+    {...base, url: '/english/', tags: ['People'], language: 'en'},
+    ...['математики шутят', 'Анекдоты', 'цитаты'].map((tag, index) => ({...base, url: `/joke-${index}/`, tags: [tag]}))
+  ];
+  assert.deepEqual(rubricArticles(candidates, 'ru', ['Персоналии']).map(record => record.url), ['/people/']);
+  assert.deepEqual(rubricArticles(candidates, 'en', ['People']).map(record => record.url), ['/english/']);
+  assert.deepEqual(rubricArticles(candidates, 'ru', ['Математики шутят', 'анекдоты', 'Цитаты']).map(record => record.url), ['/joke-0/', '/joke-1/', '/joke-2/']);
+  assert.deepEqual(rubricArticles([], 'ru', ['Персоналии']), []);
+  const pool = candidates.filter(record => record.url.startsWith('/joke-'));
+  const first = selection(pool, 1, [], () => 0.5);
+  assert.notDeepEqual(selection(pool, 1, [first[0].url], () => 0.5), first);
+  assert.deepEqual(selection([pool[0]], 1, [pool[0].url]), [pool[0]]);
 });
