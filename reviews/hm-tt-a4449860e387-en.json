@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-a4449860e387-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-21",
+    "package_sha256": "d8b2b00efe44bf81f63de8eef401497dd2095b1ea91495e3c9812cb0e8133b00",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/109#pullrequestreview-5606338257",
+    "source_commit": "8d7f4d207df6b4395aa3e5ef48045902253599da",
+    "source_review_id": 5606338257,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-21T21:16:30Z",
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged."
+  },
+  "questions": [
+    {
+      "id": "example-one-subtraction",
+      "question": "Example 1, step 6, gives 496 − 496 = 0 after describing the remainder and product as 416. Should it read 416 − 416 = 0? The original expression is retained.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "The owner explicitly confirmed 416 and approved the corrected bilingual package. https://github.com/Fuzzy-Technologies/history_math/pull/109#pullrequestreview-5606338257"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 1,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-02-02",
+      "url": "https://teletype.in/@history_math/Algorithm-for-Calculating-Square-Roots"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections.",
+    "Replaced formula-only images fig-2, fig-3, fig-4, fig-5 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending. Transcribed every displayed extraction step as aligned arithmetic, retaining the intermediate trial products and remainders. The adjacent erroneous 496 - 496 is corrected to 416 - 416.",
+    "Removed the four redundant former-image captions in each edition; retained every worked extraction step and the corrected 416 subtraction."
+  ]
+}

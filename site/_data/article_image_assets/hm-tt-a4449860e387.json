@@ -1,0 +1,27 @@
+{
+  "/assets/images/hm-tt-a4449860e387/algorithm-for-calculating-sq-01.png": {
+    "sha256": "1eb11d2d7425f24f3dbb0c1ec481d6aa1f564e882f534c2b153c9f7f69af587f",
+    "width": 1550,
+    "height": 1550,
+    "bytes": 1107656,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-a4449860e387/algorithm-for-calculating-sq-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "9bbcf13819a1737dc38153d33e2874becef806b12b1dbb98b1d8369932858115",
+        "bytes": 341522
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-a4449860e387-algorithm-for-calculating-sq-01-1eb11d2d7425f24f3dbb0c1ec481d6aa1f564e882f534c2b153c9f7f69af587f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630495345",
+      "asset_id": 630495345,
+      "release_tag": "article-originals-1",
+      "sha256": "1eb11d2d7425f24f3dbb0c1ec481d6aa1f564e882f534c2b153c9f7f69af587f",
+      "bytes": 1107656
+    }
+  }
+}
