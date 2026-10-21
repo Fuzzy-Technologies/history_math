@@ -9,7 +9,8 @@
   @top-center { content: ""; width: 100%; background: #f4eddf; }
   @top-right-corner { content: ""; background: #f4eddf; }
   @left-middle { content: ""; height: 100%; background: #f4eddf; }
-  @right-middle { content: ""; height: 100%; background: #f4eddf; }
+  /* Cover Chromium's one-pixel rounding gap beside the fixed print canvas. */
+  @right-middle { content: ""; height: 100%; margin-left: -1px; background: #f4eddf; }
   @bottom-left-corner { content: ""; background: #f4eddf; }
   @bottom-center { content: ""; width: 100%; background: #f4eddf; }
   @bottom-right-corner { content: ""; background: #f4eddf; }

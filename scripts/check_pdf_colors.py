@@ -42,6 +42,15 @@ def check_page(image, paper, ink, require_ink=True, muted=None):
     return has_ink
 
 
+def CheckSeam(image):
+    """Reject a near-white column along the content/paper join, allowing figures."""
+    image = image.convert("RGB")
+    for x in range(image.width):
+        whitePixels = sum(all(channel > 250 for channel in image.getpixel((x, y))) for y in range(image.height))
+        if whitePixels >= image.height * 0.95:
+            raise ValueError("White seam at the content/paper join")
+
+
 def check_site(site):
     palette = light_palette((site / "assets/style.css").read_text())
     rgb = lambda key: tuple(bytes.fromhex(palette[key][1:]))
@@ -67,6 +76,20 @@ def check_site(site):
             pages += len(images)
             if not has_ink:
                 raise ValueError(f"Missing light-theme body/title ink: {pdf.name}")
+            # A 0.75pt join can disappear at 36 dpi. Rasterize only a five-pixel
+            # strip around the right content edge at 100 dpi, without rebuilding.
+            seamPrefix = Path(directory) / "seam"
+            subprocess.run(["pdftoppm", "-r", "100", "-x", "750", "-y", "67", "-W", "5", "-H", "1024",
+                            str(pdf), str(seamPrefix)], check=True, capture_output=True, timeout=120)
+            seamImages = sorted(Path(directory).glob("seam-*.ppm"))
+            if len(seamImages) != len(images):
+                raise ValueError(f"Missing seam checks: {pdf.name}")
+            for path in seamImages:
+                try:
+                    with Image.open(path) as image:
+                        CheckSeam(image)
+                except ValueError as error:
+                    raise ValueError(f"{pdf.name}, {path.stem}: {error}") from error
     if not pages:
         raise ValueError("No admitted PDF pages")
     print(f"PASS: light-theme ink and full-sheet paper in {pages} pages / {len(manifest['articles'])} PDFs")
