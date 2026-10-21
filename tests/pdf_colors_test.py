@@ -58,6 +58,18 @@ class PdfColorsTest(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "obscured.*footer"):
                 COLORS.check_page(damaged, paper, ink, muted=muted)
 
+    def test_rejects_a_white_seam_without_rejecting_white_figure_regions(self):
+        paper = (244, 237, 223)
+        strip = Image.new("RGB", (5, 100), paper)
+        COLORS.CheckSeam(strip)
+        ImageDraw.Draw(strip).rectangle((0, 10, 4, 70), fill="white")
+        COLORS.CheckSeam(strip)
+        for shade in [(255, 255, 255), (254, 254, 254)]:
+            damaged = strip.copy()
+            ImageDraw.Draw(damaged).line((2, 0, 2, 99), fill=shade)
+            with self.assertRaisesRegex(ValueError, "seam"):
+                COLORS.CheckSeam(damaged)
+
 
 if __name__ == "__main__":
     unittest.main()
