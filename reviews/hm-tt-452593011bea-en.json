@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-452593011bea-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-21",
+    "package_sha256": "a0fb591542037092559c8ac7865a3f876119feb2f20cbf2302e63c0c191704ba",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/118#pullrequestreview-5606338917",
+    "source_commit": "9e9ef047ea631c381eae27302f9f29a024c96f22",
+    "source_review_id": 5606338917,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-21T21:16:34Z",
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 1,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-12-21",
+      "url": "https://teletype.in/@history_math/Rachinsky-sequences"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections.",
+    "Replaced formula-only images fig-2 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending.",
+    "Removed cross-equation alignment gaps, kept the complete expanded equality on one line, and moved the numbered answer outside display math."
+  ]
+}

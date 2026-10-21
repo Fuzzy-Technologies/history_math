@@ -1,0 +1,27 @@
+{
+  "/assets/images/hm-tt-452593011bea/rachinsky-sequences-01.jpeg": {
+    "sha256": "3ac9f9eec2e0f145e902f6127e8f6dcd532305909464514132fb21cd430de3f1",
+    "width": 1300,
+    "height": 1824,
+    "bytes": 365979,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-452593011bea/rachinsky-sequences-01.jpeg-960.webp",
+        "width": 960,
+        "height": 1347,
+        "sha256": "08aba3350063103192aa8e15f37c815df03c753f75b197a3d4a475b5e6c06457",
+        "bytes": 1330556
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-452593011bea-rachinsky-sequences-01-3ac9f9eec2e0f145e902f6127e8f6dcd532305909464514132fb21cd430de3f1.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630494669",
+      "asset_id": 630494669,
+      "release_tag": "article-originals-3",
+      "sha256": "3ac9f9eec2e0f145e902f6127e8f6dcd532305909464514132fb21cd430de3f1",
+      "bytes": 365979
+    }
+  }
+}
