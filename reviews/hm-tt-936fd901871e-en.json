@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-936fd901871e-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-21",
+    "package_sha256": "1e43b9159f69e83edcdfa9b39c0992970aaa2fcc47b305a1e948cddc68e79e8d",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/195#pullrequestreview-5606339880",
+    "source_commit": "45c3bd3191a611941cbe5af1c3acd7a4f79e3e75",
+    "source_review_id": 5606339880,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-21T21:16:38Z",
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged."
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source dates Gödel’s incompleteness theorems to 1930 and gives abbreviated hypotheses for both theorems. Confirm whether this refers to announcement or publication and whether the hypotheses should be qualified; the source wording is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual wording without qualification; this records acceptance and does not invent a historical answer. https://github.com/Fuzzy-Technologies/history_math/pull/195#pullrequestreview-5606339880"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 7,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-22",
+      "url": "https://teletype.in/@history_math/Krizisy-v-razvitii-matematiki-11-22"
+    }
+  },
+  "manual_changes": [
+    "Replaced formula-only images fig-1 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending. Transcribed the three numbered labels and symbols; retained the original caption explaining that the first two crossed-out crises were overcome. Reused the existing Pythagoras portrait for preview/cover roles.",
+    "Restored the original opening illustration, its full localized caption, image roles and verified reading asset at the owner request."
+  ]
+}
