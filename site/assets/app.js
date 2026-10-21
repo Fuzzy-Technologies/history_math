@@ -510,11 +510,11 @@ if (archive) {
     let articlePrevious = [];
     try {
       const saved = JSON.parse(sessionStorage.getItem(articleKey));
-      if (Array.isArray(saved) && saved.every(url => typeof url === 'string')) articlePrevious = saved.slice(0, 2);
+      if (Array.isArray(saved) && saved.every(url => typeof url === 'string')) articlePrevious = saved.slice(0, 3);
     } catch {}
     function rotateArticlePicks() {
       if (!articlePool.length) return;
-      const picks = selection(articlePool, 2, articlePrevious);
+      const picks = selection(articlePool, 3, articlePrevious);
       articlePrevious = picks.map(record => record.url);
       try { sessionStorage.setItem(articleKey, JSON.stringify(articlePrevious)); } catch {}
       articlePicks.replaceChildren(...picks.map(record => heroPick(record, {size: 64, description: false})));

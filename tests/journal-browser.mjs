@@ -63,11 +63,43 @@ async function checkArticlePicks(page, records, language) {
   const pool = articleCandidates(records, language, tags);
   const urls = await container.locator('a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
   assert.equal(await page.locator('#article-picks-heading').textContent(), language === 'ru' ? 'Статьи' : 'Articles');
-  assert.equal(urls.length, Math.min(2, pool.length));
+  assert.equal(urls.length, Math.min(3, pool.length));
   assert.equal(new Set(urls).size, urls.length);
   assert.ok(urls.every(url => pool.some(record => record.url === url)));
   assert.equal(await container.locator('.selection-empty').count(), pool.length ? 0 : 1);
+  await checkHeroColumns(page);
   return urls;
+}
+
+async function checkHeroColumns(page) {
+  const width = page.viewportSize().width;
+  const [copy, articles, rubrics] = await page.locator('.hero-copy, .hero-articles, .hero-rubrics')
+    .evaluateAll(nodes => nodes.map(node => { const box = node.getBoundingClientRect(); return {x: box.x, top: box.top, bottom: box.bottom}; }));
+  const cards = await page.locator('#article-picks > a').evaluateAll(nodes => nodes.map(node => {
+    const box = node.getBoundingClientRect(); return {x: box.x, top: box.top, bottom: box.bottom};
+  }));
+  if (width > 1100) {
+    assert.ok(copy.x < articles.x && articles.x < rubrics.x, 'Keep the three desktop columns in order');
+    assert.ok(Math.abs(articles.top - rubrics.top) <= 1, `Hero column tops differ at ${width}px`);
+    assert.ok(Math.abs(articles.bottom - rubrics.bottom) <= 1, `Hero column bottoms differ at ${width}px`);
+    for (let index = 1; index < cards.length; index++) {
+      assert.ok(cards[index].top >= cards[index - 1].bottom, 'Ordinary articles form one vertical column');
+    }
+  } else if (width > 620) {
+    assert.ok(articles.top >= rubrics.bottom, 'Tablet article row follows the introductory columns');
+    if (cards.length === 3) {
+      assert.ok(cards.every(card => Math.abs(card.top - cards[0].top) <= 1), 'Three articles share the tablet row');
+      assert.ok(cards[0].x < cards[1].x && cards[1].x < cards[2].x);
+    }
+  } else {
+    assert.ok(articles.top >= copy.bottom && rubrics.top >= articles.bottom, 'Mobile sections remain in reading order');
+    for (let index = 1; index < cards.length; index++) assert.ok(cards[index].top >= cards[index - 1].bottom);
+  }
+  const rubricCards = await page.locator('.hero-rubric').evaluateAll(nodes => nodes.map(node => {
+    const box = node.getBoundingClientRect(); return {top: box.top, bottom: box.bottom};
+  }));
+  assert.equal(rubricCards.length, 2);
+  assert.ok(rubricCards[1].top >= rubricCards[0].bottom, 'Keep humor above the single personality card');
 }
 
 async function audit(page) {
@@ -213,6 +245,13 @@ try {
     const urls = selector => page.locator(selector).evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
     const groups = await checkReading(page, fixtureRecords, language, javaScriptEnabled);
     const articleBefore = await checkArticlePicks(page, fixtureRecords, language);
+    if (width === 1440) {
+      for (const responsiveWidth of [620, 621, 768, 1100, 1101, 1270, 1440]) {
+        await page.setViewportSize({width: responsiveWidth, height: 1000});
+        await checkHeroColumns(page);
+        assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false);
+      }
+    }
     assert.deepEqual([groups.reading.length, groups.archive.length], [10, 41]);
     assert.equal(await page.locator('#hero-picks a').count(), 2);
     assert.equal(await page.locator('#archive-cards h3 a').count(), 4);

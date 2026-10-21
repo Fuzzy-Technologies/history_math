@@ -95,12 +95,12 @@ test('ordinary hero articles exclude every humor/personality alias, drafts, demo
   assert.deepEqual(articleCandidates(input, 'ru', excluded), ordinary);
   assert.deepEqual(articleCandidates(input, 'en', excluded).map(record => record.url), ['/en/']);
   assert.deepEqual(articleCandidates([], 'ru', excluded), []);
-  const first = selection(ordinary, 2, [], () => 0.4);
-  const next = selection(ordinary, 2, first.map(record => record.url), () => 0.4);
-  assert.equal(next.length, 2);
-  assert.equal(new Set(next.map(record => record.url)).size, 2);
+  const first = selection(ordinary, 3, [], () => 0.4);
+  const next = selection(ordinary, 3, first.map(record => record.url), () => 0.4);
+  assert.equal(next.length, 3);
+  assert.equal(new Set(next.map(record => record.url)).size, 3);
   assert.notDeepEqual(next.map(record => record.url).sort(), first.map(record => record.url).sort());
-  assert.deepEqual(selection(ordinary.slice(0, 1), 2), ordinary.slice(0, 1));
+  assert.deepEqual(selection(ordinary.slice(0, 1), 3), ordinary.slice(0, 1));
 });
 
 
