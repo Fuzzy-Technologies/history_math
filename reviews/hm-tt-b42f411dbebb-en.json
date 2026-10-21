@@ -45,7 +45,8 @@
   },
   "manual_changes": [
     "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections.",
-    "Replaced formula-only images fig-2, fig-11, fig-15 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending."
+    "Replaced formula-only images fig-2, fig-11, fig-15 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending.",
+    "Replaced Markdown-sensitive equation row spacing with explicit TeX row separators, preserving every term and sign in both editions."
   ],
   "previous_approvals": [
     {

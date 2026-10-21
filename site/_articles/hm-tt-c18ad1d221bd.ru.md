@@ -122,7 +122,7 @@ $$
 
 $$
 \begin{aligned}
-p&=\frac{3ac-b^2}{3a^2},\\[4pt]
+p&=\frac{3ac-b^2}{3a^2},\cr
 q&=\frac{2b^3-9abc+27a^2d}{27a^3}.
 \end{aligned}
 $$
@@ -131,9 +131,9 @@ $$
 
 $$
 \begin{aligned}
-y_1&=\alpha+\beta,\\[4pt]
-y_{2,3}&=-\frac{\alpha+\beta}{2}\pm i\,\frac{\alpha-\beta}{2}\sqrt{3},\\[4pt]
-\alpha&=\sqrt[3]{-\frac q2+\sqrt{\left(\frac p3\right)^3+\left(\frac q2\right)^2}},\\[4pt]
+y_1&=\alpha+\beta,\cr
+y_{2,3}&=-\frac{\alpha+\beta}{2}\pm i\,\frac{\alpha-\beta}{2}\sqrt{3},\cr
+\alpha&=\sqrt[3]{-\frac q2+\sqrt{\left(\frac p3\right)^3+\left(\frac q2\right)^2}},\cr
 \beta&=\sqrt[3]{-\frac q2-\sqrt{\left(\frac p3\right)^3+\left(\frac q2\right)^2}}.
 \end{aligned}
 $$

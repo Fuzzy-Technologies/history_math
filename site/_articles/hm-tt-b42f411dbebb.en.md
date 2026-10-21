@@ -183,10 +183,10 @@ The great Russian mathematician Andrey Nikolayevich Kolmogorov wrote that he exp
 
 $$
 \begin{aligned}
-1&=1^2,\\
-1+3&=2^2,\\
-1+3+5&=3^2,\\
-1+3+5+7&=4^2,\\
+1&=1^2,\cr
+1+3&=2^2,\cr
+1+3+5&=3^2,\cr
+1+3+5+7&=4^2,\cr
 &\vdots
 \end{aligned}
 $$
@@ -252,8 +252,8 @@ He performed these calculations:
 $$
 \begin{aligned}
 1+2+3+\cdots+98+99+100
-&=(1+100)+(2+99)+(3+98)\\
-&\quad+\cdots+(49+52)+(50+51)\\
+&=(1+100)+(2+99)+(3+98)\cr
+&\quad+\cdots+(49+52)+(50+51)\cr
 &=101\times50=5050.
 \end{aligned}
 $$
@@ -279,8 +279,8 @@ Here, at five, the boy also published his first mathematical work. This is how h
 $$
 \begin{aligned}
 1+2+3+\cdots+98+99+100
-&=(1+3+5+\cdots+99)\\
-&\quad+(2+4+6+\cdots+100)\\
+&=(1+3+5+\cdots+99)\cr
+&\quad+(2+4+6+\cdots+100)\cr
 &=50^2+50^2+50=5050.
 \end{aligned}
 $$

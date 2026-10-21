@@ -95,7 +95,7 @@ $$
 
 $$
 \begin{cases}
-x_1+x_2=-\dfrac{b}{a},\\[4pt]
+x_1+x_2=-\dfrac{b}{a},\cr
 x_1x_2=\dfrac{c}{a}.
 \end{cases}
 $$
@@ -108,7 +108,7 @@ $$
 
 $$
 \begin{cases}
-x_1+x_2=-p,\\
+x_1+x_2=-p,\cr
 x_1x_2=q.
 \end{cases}
 $$

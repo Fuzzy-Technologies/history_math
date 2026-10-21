@@ -45,6 +45,7 @@
     }
   ],
   "manual_changes": [
-    "Replaced formula-only images fig-4 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending. Retained every coefficient, sign and radical; made the nonzero leading coefficient and consistent cube-root branch condition explicit, and stated the inverse substitution for the original roots."
+    "Replaced formula-only images fig-4 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending. Retained every coefficient, sign and radical; made the nonzero leading coefficient and consistent cube-root branch condition explicit, and stated the inverse substitution for the original roots.",
+    "Replaced Markdown-sensitive equation row spacing with explicit TeX row separators, preserving every term and sign in both editions."
   ]
 }
