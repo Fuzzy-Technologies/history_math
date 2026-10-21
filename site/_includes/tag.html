@@ -1,1 +1,1 @@
-{% assign tag_search = '/search/' %}{% if page.lang == 'ru' %}{% assign tag_search = '/ru/search/' %}{% endif %}<a class="tag" data-tag="{{ include.tag | escape }}" href="{{ tag_search | relative_url }}?tag={{ include.tag | url_encode }}">{{ include.tag | escape }}</a>
+{% assign topic = include.tag | topic_label %}{% assign tag_search = '/search/' %}{% if page.lang == 'ru' %}{% assign tag_search = '/ru/search/' %}{% endif %}<a class="tag" data-tag="{{ topic | escape }}" href="{{ tag_search | relative_url }}?tag={{ topic | url_encode }}">{{ topic | escape }}</a>

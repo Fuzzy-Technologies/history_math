@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require_relative "topics"
+require_relative "reading_selection"
+
 module HistoryMath
   class JournalSections < Jekyll::Generator
     safe false
@@ -16,10 +19,13 @@ module HistoryMath
         home = site.pages.find { |page| page.data["translation_key"] == "home" && page.data["lang"] == language }
         next unless home
         published = articles.select { |doc| doc.data["status"] == "published" }
-        remainder = published.drop(10)
-        quarter = (remainder.length / 4.0).ceil
-        home.data.merge!({"journal_articles" => published.take(10), "journal_featured" => remainder.take(quarter),
-          "journal_archive" => remainder.drop(quarter)})
+        groups = ReadingSelection.groups(published, site.data.fetch("reading_selection"))
+        rubrics = site.data.fetch("home_rubrics").map do |rubric|
+          localized = rubric.fetch(language)
+          localized.merge("id" => rubric.fetch("id"), "articles" => Topics.rubric_articles(published, localized.fetch("tags")))
+        end
+        home.data.merge!({"journal_articles" => groups.fetch("reading"), "journal_rubrics" => rubrics,
+          "journal_archive" => groups.fetch("archive")})
       end
     end
   end

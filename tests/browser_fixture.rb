@@ -25,12 +25,18 @@ Dir.mktmpdir("history-math-browser") do |root|
       data = YAML.safe_load(File.read("templates/minimal-article.md").split("---", 3)[1])
       data.merge!({"article_id" => id, "source_work_id" => id, "translation_key" => id,
         "title" => language == "ru" ? "Проверка подборок #{index}" : "Archive selection #{index}", "author" => "Test fixture", "authors" => ["Test fixture"],
-        "lang" => language, "status" => "published", "date" => "2020-01-01", "tags" => ["fixture"],
+        "lang" => language, "status" => "published", "date" => "2020-01-01",
+        "tags" => ["fixture", language == "en" ? (index.even? ? "history_of_mathematics" : "History of mathematics") : "история", index.even? ? (language == "ru" ? "персоналии" : "People") :
+          (language == "ru" ? ["Математики шутят", "анекдоты", "Цитаты"][index % 3] : ["Jokes", "Anecdotes", "Quotes"][index % 3])],
         "permalink" => "#{language == 'ru' ? '/ru' : ''}/articles/#{id}/",
         "preview_image" => "/assets/images/example/triangle.svg",
         "figures" => [{"id" => "fig-1", "path" => "/assets/images/example/triangle.svg",
           "alt" => "Test triangle", "caption" => "", "credit" => "",
           "source" => "Repository test illustration", "rights_basis" => "Test-only fixture"}]})
+      if index >= 19
+        data["tags"] << (language == "ru" ? "Глоссарий" : "Glossary")
+        data["series"] = language == "ru" ? "Глоссарий" : "Glossary" if index.even?
+      end
       text = YAML.dump(data) + "---\n\nTest-only bilingual discovery fixture.\n"
       File.write(File.join(source, "_articles/#{id}.md"), text)
       digest = Digest::SHA256.new.update(text)

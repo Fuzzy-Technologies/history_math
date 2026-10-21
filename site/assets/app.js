@@ -1,5 +1,5 @@
 const assetVersion = new URL(import.meta.url).search;
-const [{search, searchByTag, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}, {loadVerifiedOriginal, nativeOriginalTarget}, {catalogState, catalogPage, catalogPageNumbers, catalogUrl}] = await Promise.all([
+const [{search, searchByTag, topicKey, rubricArticles, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}, {loadVerifiedOriginal, nativeOriginalTarget}, {catalogState, catalogPage, catalogPageNumbers, catalogUrl}] = await Promise.all([
   import('./core.js' + assetVersion),
   import('./select.js' + assetVersion),
   import('./reading-position.js' + assetVersion),
@@ -325,14 +325,41 @@ function card(record, className) {
   return node;
 }
 
+function readingCard(record) {
+  const node = card(record, 'material-card');
+  node.dataset.type = record.type;
+  node.dataset.tags = record.tags.join('|');
+  const topics = node.querySelector('.tag-list');
+  const copy = element('div', 'card-copy');
+  copy.append(...node.childNodes);
+  const meta = element('div', 'card-meta');
+  const date = element('time', '', record.date.split('-').reverse().join('.'));
+  date.dateTime = record.date;
+  meta.append(date, topics);
+  copy.append(meta);
+  if (record.preview_image) {
+    const link = element('a', 'card-image');
+    link.href = record.url;
+    link.tabIndex = -1;
+    link.setAttribute('aria-hidden', 'true');
+    const image = document.createElement('img');
+    image.src = record.preview_image; image.alt = ''; image.width = 640; image.height = 400;
+    image.loading = 'lazy'; image.decoding = 'async';
+    link.append(image);
+    node.append(link);
+  }
+  node.append(copy);
+  return node;
+}
+
 const carousel = document.querySelector('#latest-cards');
+let refreshCarousel = () => {};
 if (carousel) {
   const controls = document.querySelector('.carousel-controls');
 
   const buttons = [...controls.querySelectorAll('button')];
   const wide = window.matchMedia('(min-width: 621px)');
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const cards = [...carousel.children];
   let drag;
   let suppressClick = false;
   const canScroll = () => wide.matches && carousel.scrollWidth > carousel.clientWidth + 2;
@@ -352,13 +379,15 @@ if (carousel) {
     controls.hidden = !wide.matches || !overflow;
 
     carousel.tabIndex = wide.matches && overflow ? 0 : -1;
-    carousel.setAttribute('aria-label', ru ? (wide.matches ? 'Новые материалы: стрелки, перетаскивание или колёсико' : 'Новые материалы') : (wide.matches ? 'New materials: use arrows, drag or scroll' : 'New materials'));
+    const title = document.querySelector('#latest-heading').textContent;
+    carousel.setAttribute('aria-label', title + (wide.matches ? (ru ? ': стрелки, перетаскивание или колёсико' : ': use arrows, drag or scroll') : ''));
     buttons[0].disabled = carousel.scrollLeft <= 2;
     buttons[1].disabled = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 2;
 
 
   }
   function turn(direction) {
+    const cards = [...carousel.children];
     const step = cards.length > 1 ? cards[1].offsetLeft - cards[0].offsetLeft : carousel.clientWidth;
     carousel.scrollBy({left: direction * step, behavior: reduced.matches ? 'auto' : 'smooth'});
   }
@@ -411,6 +440,7 @@ if (carousel) {
   }, {passive: true});
   new ResizeObserver(updateCarousel).observe(carousel);
   wide.addEventListener('change', () => { finishDrag(); updateCarousel(); });
+  refreshCarousel = () => { finishDrag(); carousel.scrollLeft = 0; updateCarousel(); };
   updateCarousel();
 }
 
@@ -440,32 +470,53 @@ rememberReadingPosition();
 const archive = document.querySelector('#archive-cards');
 if (archive) {
   loadIndex().then(async records => {
-    const groups = journalGroups(records, language);
-    const pool = groups.archive;
-    const hero = document.querySelector('#hero-picks');
-    if (hero && groups.featured.length) {
-      const heroKey = `history-math:featured:${language}`;
-      let previous = [];
-      try {
-        const saved = JSON.parse(localStorage.getItem(heroKey));
-        if (Array.isArray(saved) && saved.every(url => typeof url === 'string')) previous = saved.slice(0, 4);
-      } catch {}
-      const picks = selection(groups.featured, 4, previous);
-      try { localStorage.setItem(heroKey, JSON.stringify(picks.map(record => record.url))); } catch {}
-      hero.replaceChildren(...picks.map(record => {
+    const rules = JSON.parse(carousel.dataset.selection);
+    const readingKey = `history-math:reading:${language}`;
+    let readingPrevious = [];
+    try {
+      const saved = JSON.parse(sessionStorage.getItem(readingKey));
+      if (Array.isArray(saved) && saved.every(url => typeof url === 'string')) readingPrevious = saved.slice(0, rules.card_count);
+    } catch {}
+    let pool = [];
+    function rotateReading() {
+      const groups = journalGroups(records, language, rules, {previous: readingPrevious});
+      readingPrevious = groups.reading.map(record => record.url);
+      try { sessionStorage.setItem(readingKey, JSON.stringify(readingPrevious)); } catch {}
+      if (groups.reading.length) carousel.replaceChildren(...groups.reading.map(readingCard));
+      refreshCarousel();
+      pool = groups.archive;
+    }
+    rotateReading();
+    const rubricPrevious = new Map();
+    function rotateRubrics() {
+      document.querySelectorAll('[data-rubric]').forEach(rubric => {
+        const candidates = rubricArticles(records, language, rubric.dataset.rubricTags.split('|'));
+        if (!candidates.length) return; // Keep the localized server-rendered empty state.
+        const key = `history-math:rubric:${language}:${rubric.dataset.rubric}`;
+        let previous = rubricPrevious.get(key) || [];
+        try {
+          const saved = JSON.parse(sessionStorage.getItem(key));
+          if (Array.isArray(saved) && saved.every(url => typeof url === 'string')) previous = saved.slice(0, 1);
+        } catch {}
+        const [record] = selection(candidates, 1, previous);
+        rubricPrevious.set(key, [record.url]);
+        try { sessionStorage.setItem(key, JSON.stringify([record.url])); } catch {}
         const link = element('a', 'hero-pick');
         link.href = record.url;
         if (record.preview_image) {
           const image = document.createElement('img');
-          image.src = record.preview_image; image.alt = ''; image.width = 120; image.height = 120;
+          image.src = record.preview_image; image.alt = ''; image.width = 80; image.height = 80;
           image.loading = 'lazy'; image.decoding = 'async';
           link.append(image);
         }
-        link.append(element('span', '', record.title));
-        if (record.translation_notice) link.append(element('small', '', pendingLabel));
-        return link;
-      }));
+        const copy = element('span', 'hero-pick-copy');
+        copy.append(element('span', 'hero-pick-title', record.title),
+          element('span', 'hero-pick-description', record.description));
+        link.append(copy);
+        rubric.querySelector('.hero-rubric-content').replaceChildren(link);
+      });
     }
+    rotateRubrics();
     // Reserve enough space for any article, including long archival titles and tags.
     function reserveArchiveSpace() {
       if (!pool.length || !archive.clientWidth) return;
@@ -506,7 +557,14 @@ if (archive) {
     const button = document.querySelector('#reshuffle');
     button.hidden = pool.length <= 4;
     button.addEventListener('click', rotate);
-    window.addEventListener('pageshow', event => { if (event.persisted) rotate(); });
+    window.addEventListener('pageshow', event => {
+      if (!event.persisted) return;
+      rotateReading();
+      rotateRubrics();
+      reserveArchiveSpace();
+      button.hidden = pool.length <= 4;
+      rotate();
+    });
   }).catch(() => { document.querySelector('#archive-status').textContent = ru ? 'Показана исходная подборка.' : 'Showing the original selection.'; });
 }
 
@@ -537,6 +595,13 @@ if (form) {
     try {
       const records = await loadIndex();
       if (request !== requestNumber) return;
+      if (activeTag) {
+        activeTag = records.flatMap(record => record.tags).find(tag => topicKey(tag) === topicKey(activeTag)) || activeTag;
+        topic.querySelector('strong').textContent = activeTag;
+        const canonicalUrl = new URL(location.href);
+        canonicalUrl.searchParams.set('tag', activeTag);
+        history.replaceState(null, '', canonicalUrl);
+      }
       const matches = activeTag ? searchByTag(records, activeTag, language) : search(records, query, language);
       results.replaceChildren(...matches.map(record => card(record, 'search-result')));
       status.textContent = matches.length ? (ru ? `Найдено материалов: ${matches.length}` : `Articles found: ${matches.length}`) : (ru ? 'Ничего не найдено. Попробуйте другое слово или тему.' : 'No matches. Try another word or topic.');

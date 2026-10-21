@@ -76,6 +76,7 @@ jobs:
         run: |
           python3 tools/markdown_tables.py
           npm test
+          bundle exec ruby tests/topics_test.rb
           bundle exec ruby tests/teletype_dates_test.rb
           bundle exec ruby tests/image_originals_test.rb
           bundle exec ruby tests/external_originals_test.rb
