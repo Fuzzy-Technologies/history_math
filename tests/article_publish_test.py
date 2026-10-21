@@ -174,6 +174,15 @@ class ExistingAssetAPI(publisher.GitHubAPI):
 
 
 class ArticlePublishTest(unittest.TestCase):
+    def test_canonical_suffixes_are_scoped_and_legacy_duplicates_are_rejected(self):
+        paths = {f"site/_articles/{ARTICLE}-{lang}.md" for lang in ("ru", "en")}
+        self.assertTrue(all(publisher.scoped_path(path, ARTICLE) for path in paths))
+        self.assertEqual(set(publisher.article_paths(ARTICLE, paths).values()), paths)
+        self.assertFalse(publisher.scoped_path("site/_articles/another-ru.md", ARTICLE))
+        paths.add(f"site/_articles/{ARTICLE}.ru.md")
+        with self.assertRaisesRegex(publisher.PublishError, "exactly one RU source"):
+            publisher.article_paths(ARTICLE, paths)
+
     def test_preparation_reuses_previews_keeps_prose_and_has_one_clean_parent(self):
         with tempfile.TemporaryDirectory() as directory:
             args = args_for(directory)
@@ -374,6 +383,13 @@ class ArticlePublishTest(unittest.TestCase):
             del reader.files["site" + PREVIEW_PATH]
             receipt = publisher.run_prepare(args_for(directory), api=api, reader=reader)
             self.assertEqual(receipt["source_checks"], "pass")
+            self.assertEqual(set(receipt["source_article_blobs"]), {
+                f"site/_articles/{ARTICLE}.{lang}.md" for lang in ("ru", "en")})
+            self.assertEqual(set(receipt["prepared_article_blobs"]), {
+                f"site/_articles/{ARTICLE}-{lang}.md" for lang in ("ru", "en")})
+            for lang in ("ru", "en"):
+                self.assertEqual(receipt["prepared_article_blobs"][f"site/_articles/{ARTICLE}-{lang}.md"],
+                                 receipt["source_article_blobs"][f"site/_articles/{ARTICLE}.{lang}.md"])
             self.assertTrue(all(body["unchanged"] for body in receipt["preparation"]["bodies"]))
             self.assertEqual(api.original_bytes, supplied)
             self.assertEqual(reader.files["site" + LOGICAL], supplied)

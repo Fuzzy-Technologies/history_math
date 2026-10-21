@@ -76,7 +76,7 @@ class ArticlePrepareTest(unittest.TestCase):
             if mutation:
                 mutation(metadata)
             # JSON is valid YAML; fixtures need no additional Python dependency.
-            self.write(f"site/_articles/{self.article_id}.{lang}.md",
+            self.write(f"site/_articles/{self.article_id}-{lang}.md",
                        "---\n" + json.dumps(metadata, ensure_ascii=False, indent=2) + "\n---\n" +
                        (self.body if body is None else body))
 
@@ -95,20 +95,54 @@ class ArticlePrepareTest(unittest.TestCase):
         self.assertEqual(before, self.snapshot())
         self.assertEqual(result, prepare.prepare_package(self.root, self.article_id, write=True))
 
-    def test_archival_language_folders_and_both_review_records_are_preserved(self):
+    def test_archival_language_folders_are_normalized_without_changing_bytes(self):
         for lang in ("ru", "en"):
-            old = self.root / f"site/_articles/{self.article_id}.{lang}.md"
+            old = self.root / f"site/_articles/{self.article_id}-{lang}.md"
             new = self.root / f"site/_articles/{lang}/{self.article_id}{'-en' if lang == 'en' else ''}.md"
             new.parent.mkdir(parents=True, exist_ok=True)
             old.rename(new)
         before = self.snapshot()
         result = prepare.prepare_package(self.root, self.article_id, write=True)
-        self.assertFalse(result["written"])
-        self.assertEqual(before, self.snapshot())
+        self.assertTrue(result["written"])
+        expected = {name: data for name, data in before.items() if not name.startswith("site/_articles/")}
+        for lang in ("ru", "en"):
+            old = f"site/_articles/{lang}/{self.article_id}{'-en' if lang == 'en' else ''}.md"
+            expected[f"site/_articles/{self.article_id}-{lang}.md"] = before[old]
+        self.assertEqual(expected, self.snapshot())
         paths = prepare.package_paths(self.root, self.article_id)
-        self.assertIn(f"site/_articles/ru/{self.article_id}.md", paths)
-        self.assertIn(f"site/_articles/en/{self.article_id}-en.md", paths)
+        self.assertIn(f"site/_articles/{self.article_id}-ru.md", paths)
+        self.assertIn(f"site/_articles/{self.article_id}-en.md", paths)
         self.assertIn(f"reviews/{self.article_id}-en.json", paths)
+
+    def test_dot_suffix_migration_is_byte_exact_idempotent_and_keeps_approval(self):
+        self.write_review(status="approved")
+        before = self.snapshot()
+        for lang in ("ru", "en"):
+            (self.root / f"site/_articles/{self.article_id}-{lang}.md").rename(
+                self.root / f"site/_articles/{self.article_id}.{lang}.md")
+        result = prepare.prepare_package(self.root, self.article_id, write=True)
+        self.assertEqual(len(result["renamed_articles"]), 2)
+        self.assertEqual(result["editorial_approval"], "approved")
+        self.assertEqual(before, self.snapshot())
+        self.assertFalse(prepare.prepare_package(self.root, self.article_id, write=True)["written"])
+
+    def test_legacy_move_also_applies_source_normalization(self):
+        for lang in ("ru", "en"):
+            old = self.root / f"site/_articles/{self.article_id}-{lang}.md"
+            old.write_text(old.read_text().replace("Author paragraph",
+                                                   "Plain text paragraph. \n\nAuthor paragraph"))
+            old.rename(self.root / f"site/_articles/{self.article_id}.{lang}.md")
+        prepare.prepare_package(self.root, self.article_id, write=True)
+        self.assertTrue(all(edition["body"] == "Plain text paragraph.\n\n" + self.body for edition in
+                            prepare.parse_editions(self.root, self.article_id)))
+
+    def test_canonical_and_legacy_duplicate_editions_fail_without_changes(self):
+        original = self.root / f"site/_articles/{self.article_id}-ru.md"
+        self.write(f"site/_articles/{self.article_id}.ru.md", original.read_bytes())
+        before = self.snapshot()
+        with self.assertRaisesRegex(prepare.PreparationError, "Exactly one RU edition"):
+            prepare.prepare_package(self.root, self.article_id, write=True)
+        self.assertEqual(before, self.snapshot())
 
     def test_legacy_shared_inventory_is_read_without_migrating_it(self):
         old = self.root / f"site/_data/article_image_assets/{self.article_id}.json"

@@ -147,7 +147,7 @@ class PublicationTest < Minitest::Test
   def test_review_preview_is_opt_in_and_never_indexes_a_draft
     with_site do |source, config|
       text = File.read(File.expand_path("../templates/minimal-article.md", __dir__))
-      File.write(File.join(source, "_articles/example-minimal.en.md"), text)
+      File.write(File.join(source, "_articles/example-minimal-en.md"), text)
       site = Jekyll::Site.new(config)
       site.process
       refute File.exist?(File.join(site.dest, "articles/example-minimal/index.html"))
@@ -164,7 +164,7 @@ class PublicationTest < Minitest::Test
 
   def test_publication_requires_approval_for_current_package_and_closed_blockers
     with_site do |source, config|
-      path = File.join(source, "_articles/example-minimal.en.md")
+      path = File.join(source, "_articles/example-minimal-en.md")
       text = File.read(File.expand_path("../templates/minimal-article.md", __dir__))
         .sub("status: draft", "status: published")
       File.write(path, text)
@@ -247,18 +247,18 @@ class PublicationTest < Minitest::Test
   def test_five_english_adaptations_preview_pairing_and_approved_discovery
     with_site do |source, config|
       keys = JSON.parse(File.read(File.join(source, "_data/english_notices.json"))).keys
-      paths = keys.map { |key| File.join(source, "_articles/#{key}.en.md") }
+      paths = keys.map { |key| File.join(source, "_articles/#{key}-en.md") }
       assert_equal 5, paths.length
       # This scenario edits only the original five translation fixtures.
       # Newly published translations must not leak into its empty-index assertions.
-      (Dir.glob(File.join(source, "_articles/*.en.md")) - paths).each { |path| File.delete(path) }
+      (Dir.glob(File.join(source, "_articles/*-en.md")) - paths).each { |path| File.delete(path) }
       production = Jekyll::Site.new(config)
       production.process
       records = JSON.parse(File.read(File.join(production.dest, "assets/search-en.json")))
       assert_equal 5, records.length
       assert records.all? { |record| record["status"] == "published" && !record["translation_notice"] }
       paths.each do |path|
-        key = File.basename(path, ".en.md")
+        key = File.basename(path, "-en.md")
         html = File.read(File.join(production.dest, "articles", "#{key}-en", "index.html"))
         refute_includes html, "Editorial review copy"
         refute_includes html, "noindex, nofollow"
@@ -310,7 +310,7 @@ class PublicationTest < Minitest::Test
         assert records.all? { |record| record["language"] == "en" && !record["translation_notice"] }
       end
       paths.each do |path|
-        key = File.basename(path, ".en.md")
+        key = File.basename(path, "-en.md")
         assert_includes File.read(File.join(approved.dest, "sitemap.xml")), "/articles/#{key}-en/"
       end
     end

@@ -4,7 +4,7 @@ import {readFileSync} from 'node:fs';
 import {parseArticle} from '../scripts/article-checks.mjs';
 
 const ids = ['hm-0b1ea17c8b02', 'hm-15a0b4f1d18b', 'hm-19a5d93e33c1', 'hm-56520386b771', 'hm-99120459b820'];
-const article = (id, lang) => parseArticle(readFileSync(`site/_articles/${id}.${lang}.md`, 'utf8'));
+const article = (id, lang) => parseArticle(readFileSync(`site/_articles/${id}-${lang}.md`, 'utf8'));
 const formulas = body => [...body.matchAll(/\$\$([\s\S]+?)\$\$|(?<![\\$])\$(?!\$)([^\n$]+?)\$(?!\$)/g)].map(match => (match[1] ?? match[2]).trim());
 const anchors = body => [...body.matchAll(/\{#([^}]+)\}/g)].map(match => match[1]);
 const links = body => [...body.matchAll(/https:\/\/[^\s)]+/g)].map(match => match[0]);

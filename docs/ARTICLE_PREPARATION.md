@@ -8,7 +8,10 @@ For the owner-authorized 2026-10-11 Teletype migration, read the complete saved
 Teletype article and its exact original image bytes instead of unavailable
 NAS working files. Preserve the visible source publication date using the
 exception in PUBLICATION_DATES.md. Prepare one Russian article and an explicit
-English version per independent master-targeting draft PR. An explicit
+English version per independent master-targeting draft PR. Name the Markdown
+files `<id>-ru.md` and `<id>-en.md` under `site/_articles/`, matching the PDF
+basenames. Existing dotted names and archival language folders are accepted by
+trusted preparation and normalized without changing the article text or URLs. An explicit
 translation placeholder may be used during preparation, but final review
 requires the completed English adaptation. Store each new article's image inventory in
 `site/_data/article_image_assets/<article-id>.json`, so independent article PRs

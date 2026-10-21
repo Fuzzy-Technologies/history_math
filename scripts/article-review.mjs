@@ -58,7 +58,7 @@ export function checkReview(text, data, root, language) {
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   const {parseArticle} = await import('./article-frontmatter.mjs');
   const file = process.argv[2];
-  if (!file) throw new Error('Usage: node scripts/article-review.mjs site/_articles/<id>.<lang>.md');
+  if (!file) throw new Error('Usage: node scripts/article-review.mjs site/_articles/<id>-<lang>.md');
   const text = readFileSync(file, 'utf8');
   console.log(packageDigest(text, parseArticle(text).data, resolve('.')));
 }
