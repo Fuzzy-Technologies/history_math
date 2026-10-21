@@ -1,0 +1,37 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-d53be80a8676-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-21",
+    "package_sha256": "869eceaf6b3354e556698516f7401bcf091636ea8593bbe0e2ec863229936145",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/222#pullrequestreview-5606339676",
+    "source_commit": "8aa827695f0b1740c7e05236bfd3b7b6803f5a03",
+    "source_review_id": 5606339676,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-21T21:16:37Z",
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged."
+  },
+  "questions": [
+    {
+      "id": "q-kolmogorov-1",
+      "question": "The source dates Kolmogorov's axiomatic construction of probability theory to 1929. Confirm the intended date and distinction from publication of Foundations of the Theory of Probability. The English retains 1929.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual wording without qualification; this records acceptance and does not invent a historical answer. https://github.com/Fuzzy-Technologies/history_math/pull/222#pullrequestreview-5606339676"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 9,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-10-02",
+      "url": "https://teletype.in/@history_math/Yavlenie-chrezvychajnoe-Andrey-Kolmogorov"
+    }
+  },
+  "manual_changes": [
+    "Replaced formula-only images fig-3 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending."
+  ]
+}
