@@ -16,7 +16,7 @@ Code/layout publications additionally run the full source, rendering and browser
 
 The catalog renders 20 cards per static page, with real `/materials/page/N/` and `/ru/materials/page/N/` links. All public records remain accessible without JavaScript or if the metadata request fails. Enhancement filters the whole metadata collection before creating only the selected page's cards; page sizes, reload/back state and existing query links remain supported. Static pagination gets localized canonical/hreflang and sitemap entries where counterparts exist. Output validation rejects missing or duplicated catalog entries and missing rendered articles in discovery/search.
 
-Home selections retain their existing pools and rotation rules. Hidden archive height probes are limited to at most 16 representative records instead of constructing the whole archive in the DOM. This limit applies only to measurement, never to the selectable article pool.
+Home selections retain their existing pools and rotation rules. Archive height measurement checks every candidate in batches of at most 16 cards instead of constructing the whole archive in the DOM at once. Text length alone cannot predict wrapped height. Each candidate is measured with the narrower ordinary-slot padding so a different rotation cannot exceed the reserved height. The selectable article pool remains complete.
 
 ## Size budget
 
