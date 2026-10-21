@@ -1,0 +1,44 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-c241242992fe-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-21",
+    "package_sha256": "71de565f4c44f8d5fa3ff96a5ae1af075bcd89f4fd0f594d5449125e10b259ee",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/110#pullrequestreview-5606338716",
+    "source_commit": "84950967fff5824d43c6500d8eb4f04d89473e75",
+    "source_review_id": 5606338716,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-21T21:16:33Z",
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged."
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source dates the council drawing to 1515 but then places the elections in the 15th century, and glosses Italian Lotto as “Fate”. Confirm the chronology and etymology; both statements are retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual wording without qualification; this records acceptance and does not invent a historical answer. https://github.com/Fuzzy-Technologies/history_math/pull/110#pullrequestreview-5606338716"
+    },
+    {
+      "id": "q-english-2",
+      "question": "The source describes winning tickets as containing all five drawn numbers, although it also discusses bets on one to four numbers. Confirm the intended winning condition; the wording is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual wording without qualification; this records acceptance and does not invent a historical answer. https://github.com/Fuzzy-Technologies/history_math/pull/110#pullrequestreview-5606338716"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 1,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-02-02",
+      "url": "https://teletype.in/@history_math/The-Genoese-Lottery-Problem"
+    }
+  },
+  "manual_changes": [
+    "Replaced formula-only images fig-2 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending. Transcribed the five probability-table rows with native binomial coefficients. Checked all exact ratios against combinations; retained the source approximations and payouts."
+  ]
+}

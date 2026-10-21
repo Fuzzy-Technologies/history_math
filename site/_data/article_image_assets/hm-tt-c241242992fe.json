@@ -1,0 +1,27 @@
+{
+  "/assets/images/hm-tt-c241242992fe/the-genoese-lottery-problem-01.jpeg": {
+    "sha256": "a6ac0d139789c6d16475121a6e04427de8e2a5a51c73dc870173a6fdb0b8559e",
+    "width": 2500,
+    "height": 1743,
+    "bytes": 1136450,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-c241242992fe/the-genoese-lottery-problem-01.jpeg-960.webp",
+        "width": 960,
+        "height": 669,
+        "sha256": "4b06a2100309d49393e9df90f7fe6564748af567f9aa81f3f5480e3ebf44d8d1",
+        "bytes": 900978
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-c241242992fe-the-genoese-lottery-problem-01-a6ac0d139789c6d16475121a6e04427de8e2a5a51c73dc870173a6fdb0b8559e.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630494262",
+      "asset_id": 630494262,
+      "release_tag": "article-originals-a",
+      "sha256": "a6ac0d139789c6d16475121a6e04427de8e2a5a51c73dc870173a6fdb0b8559e",
+      "bytes": 1136450
+    }
+  }
+}
