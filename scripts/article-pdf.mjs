@@ -143,6 +143,7 @@ export async function buildPdfs(siteDirectory, {cacheDirectory = '.pdf-cache', f
           console.log(`PDF layout ${article.lang}: ${JSON.stringify(pagination)}`);
           const state = await page.evaluate(() => ({
             lang: document.documentElement.lang,
+            muted: getComputedStyle(document.documentElement).getPropertyValue('--muted').trim(),
             unrendered: [...document.querySelectorAll('.math-source')].some(node => node.dataset.rendered !== 'true'),
             logo: document.querySelector('.print-masthead img')?.getAttribute('src'),
             content: document.querySelector('.article-body')?.textContent.trim(),
@@ -186,7 +187,7 @@ export async function buildPdfs(siteDirectory, {cacheDirectory = '.pdf-cache', f
           // Chromium keeps selectable text, vector formulas, embedded fonts and link annotations.
           const bytes = await page.pdf({format: 'A4', preferCSSPageSize: true, printBackground: true, tagged: true, outline: true,
             displayHeaderFooter: true, headerTemplate: '<span></span>',
-            footerTemplate: `<div style="width:100%;margin:0 19mm;font:8pt Arial;color:#62554e;display:flex;justify-content:space-between"><span>${journal}</span><span><span class="pageNumber"></span> / <span class="totalPages"></span></span></div>`});
+            footerTemplate: `<div style="width:100%;margin:0 19mm;font:8pt Arial;color:${state.muted};display:flex;justify-content:space-between"><span>${journal}</span><span><span class="pageNumber"></span> / <span class="totalPages"></span></span></div>`});
           if (!validPdf(bytes)) throw new Error('Invalid generated PDF');
           await writeFile(destination, bytes);
           await writeCachedPdf(cache, key, bytes);
