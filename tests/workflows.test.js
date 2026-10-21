@@ -28,7 +28,8 @@ test('publication validates and uploads the build selected by GitHub Pages metad
   const build = steps.find(step => step.name === 'Build and verify configured Pages site');
   assert.deepEqual(build.env, {
     PAGES_ORIGIN: 'https://${{ steps.pages.outputs.host }}',
-    PAGES_BASE_PATH: '${{ steps.pages.outputs.base_path }}'
+    PAGES_BASE_PATH: '${{ steps.pages.outputs.base_path }}',
+    FULL_CHECKS: '${{ steps.plan.outputs.full_checks }}'
   });
   assert.match(build.run, /node scripts\/pages-config.mjs > "\$RUNNER_TEMP\/history-math-pages.yml"/);
   assert.match(build.run, /jekyll build --config "_config.yml,\$RUNNER_TEMP\/history-math-pages.yml" --destination _site-pages/);
@@ -289,4 +290,27 @@ test('only guarded master publication generates PDFs and saves their validated c
   assert.match(save.if, /github.event_name != 'pull_request'/);
   assert.equal(save.with.path, '.pdf-cache');
   assert.match(save.with.key, /cache-primary-key/);
+});
+
+test('content publication keeps output gates while layout changes require the complete browser suite', () => {
+  const deploy = parse(readFileSync('.github/workflows/deploy.yml', 'utf8'));
+  const build = deploy.jobs.build;
+  assert.equal(build.permissions.actions, 'read');
+  const plan = build.steps.find(step => step.id === 'plan');
+  assert.match(plan.run, /node scripts\/publication-plan.mjs/);
+  assert.equal(plan.env.PUBLICATION_FORCE_FULL, "${{ github.event_name == 'workflow_dispatch' }}");
+  const full = build.steps.find(step => step.run?.includes('npm run test:browser'));
+  assert.equal(full.if, "steps.plan.outputs.full_checks == 'true'");
+  assert.match(full.run, /npm test/);
+  const output = build.steps.find(step => step.name === 'Build and verify configured Pages site');
+  assert.equal(output.if, undefined);
+  assert.ok(output.run.indexOf('check_site.py') < output.run.indexOf('if [ "$FULL_CHECKS"'));
+  assert.ok(output.run.indexOf('publication-size.mjs') < output.run.indexOf('if [ "$FULL_CHECKS"'));
+  assert.match(output.run, /if \[ "\$FULL_CHECKS" = "true" \]; then\s+IMAGE_SITE_DIR/);
+  const source = build.steps.find(step => step.name === 'Validate article sources and reading assets');
+  assert.equal(source.if, undefined);
+  assert.match(source.run, /check-articles.mjs --source-only/);
+  const ci = parse(readFileSync('.github/workflows/ci.yml', 'utf8'));
+  const tests = ci.jobs.verify.steps.find(step => step.run?.includes('npm test'));
+  assert.equal(tests.if, "steps.plan.outputs.full_checks == 'true'");
 });

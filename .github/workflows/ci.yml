@@ -60,23 +60,43 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 1
-      - uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8 # v1.327.0
-        with:
-          ruby-version: '3.3'
-          bundler-cache: true
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: '22'
           cache: npm
       - name: Install pinned source checks
+        run: npm ci
+      - name: Classify source changes
+        id: plan
+        env:
+          PLAN_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          PUBLICATION_FORCE_FULL: ${{ github.event_name == 'workflow_dispatch' }}
         run: |
-          npm ci
-          python3 -m pip install -r tools/requirements-images.txt
-      - name: Validate source contracts, privacy boundary and workflow guards
+          if [[ "$PLAN_BASE_SHA" =~ ^[a-f0-9]{40}$ && ! "$PLAN_BASE_SHA" =~ ^0+$ ]]; then
+            git fetch --no-tags --depth=2 origin "$GITHUB_SHA"
+            git fetch --no-tags --depth=1 origin "$PLAN_BASE_SHA"
+          fi
+          node scripts/publication-plan.mjs --base "${PLAN_BASE_SHA:-unavailable}"
+      - name: Validate light article and image contracts
         run: |
           python3 tools/markdown_tables.py
+          python3 tools/image_assets.py
+          python3 tools/pdf_mastheads.py
+          node scripts/check-articles.mjs --source-only
+      - uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8 # v1.327.0
+        if: steps.plan.outputs.full_checks == 'true'
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+      - name: Install full source test dependencies
+        if: steps.plan.outputs.full_checks == 'true'
+        run: python3 -m pip install -r tools/requirements-images.txt
+      - name: Validate source contracts, privacy boundary and workflow guards
+        if: steps.plan.outputs.full_checks == 'true'
+        run: |
           npm test
           bundle exec ruby tests/topics_test.rb
+          bundle exec ruby tests/catalog_pages_test.rb
           bundle exec ruby tests/teletype_dates_test.rb
           bundle exec ruby tests/image_originals_test.rb
           bundle exec ruby tests/external_originals_test.rb

@@ -6,7 +6,7 @@
 - `feature/*`: short-lived changes branched from `master`, reviewed through PRs directly to `master`.
 - The owner-approved merge to `master` is also the publication decision. There is no permanent integration branch; see [ADR 0002](adr/0002-master-only-workflow.md).
 
-`ci.yml` runs source, workflow, clean-build, output and browser checks and uploads only compact article reports. PR checks never obtain Pages/id-token write permissions. `deploy.yml` triggers only on pushes to master or manual dispatch, and both build and deploy jobs explicitly reject any ref other than `refs/heads/master`. Deployments use the GitHub Pages environment. Changing any workflow can change its policy; the administrative environment branch restriction below is a second boundary.
+`ci.yml` runs light article contracts for content-only changes and full source/workflow unit checks for code changes; it uploads only compact article reports. Site builds and PDF generation run in the approved master publication. Browser suites are conditional on layout/logic/page changes; every publication keeps output/index/catalog coverage checks. See [publication performance](PUBLICATION_PERFORMANCE.md). PR checks never obtain Pages/id-token write permissions. `deploy.yml` triggers only on pushes to master or manual dispatch, and both build and deploy jobs explicitly reject any ref other than `refs/heads/master`. Deployments use the GitHub Pages environment. Changing any workflow can change its policy; the administrative environment branch restriction below is a second boundary.
 
 ## Administrative setup
 

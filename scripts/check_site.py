@@ -22,9 +22,27 @@ class PageParser(HTMLParser):
         self.templateLanguages = []
         self.redirect = None
         self.robots = None
+        self.article = False
+        self.catalog = False
+        self.catalogLinks = []
+        self.catalogDepth = 0
+        self.catalogHeading = False
 
     def handle_starttag(self, tag, attributes):
         attributes = dict(attributes)
+        classes = attributes.get("class", "").split()
+        if "reading-layout" in classes or "translation-notice" in classes:
+            self.article = True
+        if tag == "section":
+            if "catalog-list" in classes:
+                self.catalog = True
+                self.catalogDepth = 1
+            elif self.catalogDepth:
+                self.catalogDepth += 1
+        if tag == "h3" and self.catalogDepth:
+            self.catalogHeading = True
+        if tag == "a" and self.catalogHeading and attributes.get("href"):
+            self.catalogLinks.append(attributes["href"])
         if tag == "meta" and attributes.get("name") == "article-redirect":
             self.redirect = attributes.get("content")
         if tag == "meta" and attributes.get("name") == "robots":
@@ -51,6 +69,10 @@ class PageParser(HTMLParser):
             self.scripts.append(attributes["src"])
 
     def handle_endtag(self, tag):
+        if tag == "section" and self.catalogDepth:
+            self.catalogDepth -= 1
+        if tag == "h3":
+            self.catalogHeading = False
         if tag == "template" and self.templateLanguages:
             self.templateLanguages.pop()
 
@@ -146,8 +168,10 @@ def CheckSite(sitePath, basePath, site_origin="https://fuzzy-technologies.github
             if not url.startswith("data:"):
                 Resolve(url, path)
     for language in ("en", "ru"):
+        indexes = {}
         for kind in ("search", "discovery"):
             records = json.loads((sitePath / "assets" / f"{kind}-{language}.json").read_text(encoding="utf-8"))
+            indexes[kind] = records
             if len({record["url"] for record in records}) != len(records):
                 errors.append(f"Duplicate {kind} record")
             for record in records:
@@ -155,11 +179,29 @@ def CheckSite(sitePath, basePath, site_origin="https://fuzzy-technologies.github
                     errors.append(f"Non-public or wrong-language {kind} record")
                 if kind == "search" and record.get("translation_notice"):
                     errors.append("Translation notice in article-only search index")
+                if kind == "search" and not isinstance(record.get("text"), str):
+                    errors.append("Missing full text in search index")
+                if kind == "discovery" and "text" in record:
+                    errors.append("Full text in lightweight discovery index")
                 target = Resolve(record["url"], sitePath / "index.html")
                 if target in parsed and parsed[target].redirect:
                     errors.append(f"Redirect in {kind} index: {record['url']}")
                 if record.get("preview_image"):
                     Resolve(record["preview_image"], sitePath / "index.html")
+        discovery = indexes["discovery"]
+        if {record["url"] for record in indexes["search"]} != {record["url"] for record in discovery if not record.get("translation_notice")}:
+            errors.append(f"Search/discovery coverage differs ({language})")
+        discovered = {Resolve(record["url"], sitePath / "index.html") for record in discovery}
+        rendered = {path for path, page in parsed.items() if page.article and page.language == language}
+        if not rendered.issubset(discovered):
+            errors.append(f"Rendered articles missing from discovery ({language})")
+        catalogs = [(path, page) for path, page in parsed.items() if page.catalog and page.language == language]
+        if catalogs:
+            catalog_targets = [Resolve(url, path) for path, page in catalogs for url in page.catalogLinks]
+            if len(catalog_targets) != len(discovery) or set(catalog_targets) != discovered:
+                errors.append(f"Static catalog loses or duplicates articles ({language})")
+            if any(len(page.catalogLinks) > 20 for _path, page in catalogs):
+                errors.append(f"Static catalog page exceeds 20 cards ({language})")
     sitemap = ElementTree.parse(sitePath / "sitemap.xml")
     for loc in sitemap.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}loc"):
         target = Resolve(loc.text, sitePath / "index.html")

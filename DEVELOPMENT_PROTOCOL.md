@@ -1,6 +1,6 @@
 # Development protocol
 
-Version: 1.3. Project: Mathematics with Mansur (`history_math`). This owner-controlled contract applies to human contributors and automation. Its initial creation is authorized by the prototype task; future changes require owner instruction.
+Version: 1.4. Project: Mathematics with Mansur (`history_math`). This owner-controlled contract applies to human contributors and automation. Its initial creation is authorized by the prototype task; future changes require owner instruction.
 
 ## Architecture and authority
 
@@ -11,7 +11,7 @@ The pipeline reads existing FELab metadata and NAS originals, prepares public Ma
 1. Inspect live HEAD, worktree and repository instructions.
 2. Define the affected content, layout or infrastructure contract.
 3. Make a focused change on `feature/*` branched from `master`.
-4. Run relevant checks, inspect the diff, and capture browser evidence for layout changes.
+4. Run relevant source checks and inspect the diff. Capture browser evidence for layout/logic changes during the owner-approved master publication.
 5. Push without history rewriting and open a PR to `master`. Assign it to `Tim55667757`, add the `documentation` label, and verify both fields. The owner-authorized article preparation exception below permits replacing a pinned article branch after verified external storage.
 6. For article PRs, obtain Timur's final `Approved`, complete the delegated publication preparation and current-head CI checks, then merge into `master` on his behalf. For other PRs, follow their explicit merge authorization. The article merge starts the existing Pages deployment; no second promotion PR is required.
 
@@ -25,7 +25,7 @@ Never merge a PR, publish a release/tag, or change visibility without explicit a
 
 The owner has explicitly authorized preparation automation and parallel processing of article PRs #56–#245. Article-original storage releases use only `article-originals-*` tags anchored to clean `master`, immutable content-addressed asset names, and verified SHA-256 receipts. They are storage containers, not product releases or approval to publish articles. Preparation may replace an unmerged same-repository article branch with a clean commit after all excluded originals have been publicly downloaded and verified. Use a pinned head and an atomic lease; stop on concurrent changes. Retain the PR number, texts, dates, previews, pending editorial review, assignees and labels. Never rewrite `master`, remove source originals from NAS, or claim GitHub has purged old PR objects.
 
-Feature and PR checks validate source data and contract unit tests. Site rendering, browser checks and PDF generation belong to the owner-approved `master` publication workflow. This follows the owner's instruction to avoid feature-site builds and browser checks during preparation.
+Feature and PR checks validate source data. On 2026-10-21 the owner authorized a light path for article Markdown, article-owned images and review/image manifests: keep source/schema, approval, image hash and Markdown checks, and omit unrelated regression suites. Code, layout, new pages/sections and unclassified changes require the full source contract suite. Site rendering and PDF generation remain in the owner-approved `master` publication workflow. Browser tests run there only for code/layout/logic/page changes, or an explicit manual full run. Compare production changes against the last successful deployment, so a failed or queued interface update cannot be bypassed by a later article-only commit; unavailable or ambiguous history requires the full gate. Every publication still validates the actual built URLs/assets, language indexes, complete catalog coverage and output size before upload. See [publication performance](docs/PUBLICATION_PERFORMANCE.md). This follows the owner's instruction to avoid feature-site builds and browser checks during preparation.
 
 Every PR, including publication PRs and drafts, must have `Tim55667757` as an assignee and the `documentation` label. Add these fields without replacing other assignees or labels. The PR metadata workflow applies this rule on opening and reopening; contributors must still verify it. Historical PRs were reconciled at the owner's request.
 
@@ -43,6 +43,6 @@ Use the owner-requested sepia science-magazine design: ivory paper, dark brown i
 
 ## Validation and evidence
 
-Changes affecting source/publication contracts need mutation tests for rejected inputs. Validate built URLs, assets, languages, canonical/hreflang and indexes. Verify literal `$...$` and `$$...$$` through Markdown into the browser. Check search case, Cyrillic Yo/Ye equivalence, empty queries and no-result behavior, plus safe archive rotation. Capture desktop/mobile evidence, check console/request failures and run automated accessibility rules.
+Changes affecting source/publication contracts need mutation tests for rejected inputs. Validate built URLs, assets, languages, canonical/hreflang and indexes. Verify literal `$...$` and `$$...$$` through Markdown into the browser. Check search case, Cyrillic Yo/Ye equivalence, empty queries and no-result behavior, plus safe archive rotation. For layout or application logic changes, capture desktop/mobile evidence, check console/request failures and run automated accessibility rules in the master publication workflow. Article/image-only updates retain the light source and output gates.
 
 CI must succeed for the current PR SHA. The mere presence of a workflow is not evidence it ran. Cleanup mocks prove decision logic only; a real merged event remains unverified until an owner-approved merge. Production workflow guards must reject non-master refs even on manual dispatch. Do not claim the site was published when only a PR or artifact exists.

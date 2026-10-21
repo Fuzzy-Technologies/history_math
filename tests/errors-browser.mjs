@@ -68,7 +68,7 @@ try {
     const prefix = lang === 'ru' ? '/ru' : '';
     const page = await browser.newPage();
     page.on('pageerror', error => errors.push(error.message));
-    await page.route('**/assets/discovery-*.json*', route => route.fulfill({status: 503, body: 'Unavailable'}));
+    await page.route('**/assets/{discovery,search}-*.json*', route => route.fulfill({status: 503, body: 'Unavailable'}));
     await page.goto(origin + base + prefix + '/search/?q=geometry');
     const searchError = lang === 'ru' ? 'Поиск временно недоступен. Откройте читальный зал.' : 'Search is temporarily unavailable. Open the reading room.';
     await page.waitForFunction(value => document.querySelector('#search-status')?.textContent === value, searchError);

@@ -14,5 +14,5 @@ Read `DEVELOPMENT_PROTOCOL.md` before making changes. This repository is the pub
 - Keep shared markup in layouts/includes. Apply base-path filters to site URLs.
 - Public article statuses are only `published` and `demo`; ensure drafts have no direct output URL.
 - Preserve preview/social/hero image roles; use assets with documented provenance.
-- Run source contract, workflow, output and browser checks. Report actual results and unresolved limitations.
+- Run the source, workflow and output checks required by DEVELOPMENT_PROTOCOL.md; browser suites are conditional on code/layout/logic/page changes. Report actual results and unresolved limitations.
 - Do not modify the corporate website as part of a history_math change.
