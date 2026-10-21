@@ -45,6 +45,19 @@ class PdfColorsTest(unittest.TestCase):
         self.assertFalse(COLORS.check_page(Image.new("RGB", page.size, paper), paper, ink, require_ink=False),
                          "An illustration-only page need not contain body text")
 
+    def test_paper_fill_cannot_obscure_the_footer_or_page_number(self):
+        paper, ink, muted = (244, 237, 223), (51, 39, 31), (112, 96, 79)
+        page = Image.new("RGB", (298, 421), paper)
+        page.putpixel((100, 100), ink)
+        for position in [(30, 410), (260, 410)]:
+            page.putpixel(position, muted)
+        COLORS.check_page(page, paper, ink, muted=muted)
+        for position in [(30, 410), (260, 410)]:
+            damaged = page.copy()
+            damaged.putpixel(position, paper)
+            with self.assertRaisesRegex(ValueError, "obscured.*footer"):
+                COLORS.check_page(damaged, paper, ink, muted=muted)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -17,7 +17,7 @@ def light_palette(css):
     return dict(re.findall(r"(--[a-z-]+):\s*(#[0-9a-fA-F]{6})\s*;", root[1]))
 
 
-def check_page(image, paper, ink, require_ink=True):
+def check_page(image, paper, ink, require_ink=True, muted=None):
     """Scan whole margin bands, including all four corners and page edges."""
     image = image.convert("RGB")
     width, height = image.size
@@ -34,6 +34,11 @@ def check_page(image, paper, ink, require_ink=True):
     has_ink = ink in set(image.get_flattened_data())
     if require_ink and not has_ink:
         raise ValueError("Missing light-theme body/title ink")
+    if muted is not None:
+        footer_top, footer_bottom = int(height * (1 - 16 / 297)), height - bottom
+        for left, right in [(side, width // 2), (width // 2, width - side)]:
+            if muted not in set(image.crop((left, footer_top, right, footer_bottom)).get_flattened_data()):
+                raise ValueError("Missing or obscured light-theme footer label/page number")
     return has_ink
 
 
@@ -56,7 +61,7 @@ def check_site(site):
             for path in images:
                 try:
                     with Image.open(path) as image:
-                        has_ink |= check_page(image, rgb("--paper"), rgb("--ink"), require_ink=False)
+                        has_ink |= check_page(image, rgb("--paper"), rgb("--ink"), require_ink=False, muted=rgb("--muted"))
                 except ValueError as error:
                     raise ValueError(f"{pdf.name}, {path.stem}: {error}") from error
             pages += len(images)
