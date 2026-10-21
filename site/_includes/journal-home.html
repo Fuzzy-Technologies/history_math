@@ -4,6 +4,12 @@
 <section class="journal-hero">
   <div class="cover-line"><span>{{ ui.history }}</span><span>{{ ui.journal }}</span></div>
   <div class="hero-copy"><h1><span class="hero-title-line">{{ ui.hero_start }}</span> <em class="hero-title-line">{{ ui.hero_end }}</em></h1><p class="lead">{{ ui.lead }}</p><a class="button" href="{{ materials | relative_url }}">{{ ui.read }} <span aria-hidden="true">→</span></a></div>
+  <section class="hero-articles" aria-labelledby="article-picks-heading">
+    <h2 id="article-picks-heading">{{ ui.article_picks }}</h2>
+    <div class="hero-article-cards" id="article-picks" data-exclude-tags="{{ page.journal_excluded_tags | join: '|' | escape }}">
+      {% for article in page.journal_article_picks limit:2 %}<a class="hero-pick" href="{{ article.url | relative_url }}">{% if article.preview_image %}{% include reading-image.html src=article.preview_image alt='' width=64 height=64 sizes='64px' %}{% endif %}<span class="hero-pick-copy"><span class="hero-pick-title">{{ article.title | escape }}</span></span></a>{% else %}<p class="selection-empty">{{ ui.rubric_empty }}</p>{% endfor %}
+    </div>
+  </section>
   <div class="hero-rubrics" id="hero-picks">
     {% for rubric in page.journal_rubrics %}
     <section class="hero-rubric" aria-labelledby="rubric-{{ rubric.id }}" data-rubric="{{ rubric.id }}" data-rubric-tags="{{ rubric.tags | join: '|' | escape }}">

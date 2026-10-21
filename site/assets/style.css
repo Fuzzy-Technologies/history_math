@@ -306,7 +306,7 @@ main,
 }
 .journal-hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 0.45fr) minmax(0, 0.6fr);
   gap: 0 30px;
   padding: 20px 30px 0;
   margin: 32px 0 24px;
@@ -2377,9 +2377,26 @@ input::placeholder {
 .article-meta-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 .article-meta-row .article-meta { margin: 0; }
 
+.hero-articles { align-self: center; min-width: 0; margin: 24px 0; padding: 14px; border: 1px solid var(--line); border-radius: 14px; }
+.hero-article-cards { display: grid; gap: 18px; }
+.hero-article-cards .hero-pick img { flex-basis: 64px; width: 64px; height: 64px; }
+.hero-article-cards .hero-pick-title { font-size: 16px; }
+@media (max-width: 1100px) {
+  .journal-hero { grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); }
+  .hero-articles { grid-column: 1 / -1; grid-row: 3; margin-top: 0; }
+  .hero-article-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero-rubrics { grid-column: 2; grid-row: 2; }
+}
+@media (max-width: 620px) {
+  .journal-hero { grid-template-columns: 1fr; }
+  .hero-articles { grid-column: auto; grid-row: auto; margin: 20px 0 0; }
+  .hero-article-cards { grid-template-columns: 1fr; }
+  .hero-rubrics { grid-column: auto; grid-row: auto; }
+}
+
 .hero-rubrics { display: grid; gap: 14px; align-self: center; min-width: 0; padding: 24px 0; }
 .hero-rubric { min-width: 0; padding: 14px 16px; border: 1px solid var(--line); border-radius: 14px; }
-.hero-rubric h2 { margin: 0 0 10px; font: 14px/1.4 var(--sans); letter-spacing: 0.08em; color: var(--muted); }
+.hero-articles h2, .hero-rubric h2 { margin: 0 0 10px; font: 14px/1.4 var(--sans); letter-spacing: 0.08em; color: var(--muted); }
 .hero-rubric-content { min-height: 80px; display: flex; align-items: center; }
 .hero-pick { display: flex; align-items: center; gap: 14px; min-width: 0; width: 100%; text-decoration: none; color: var(--ink); }
 .hero-pick img { flex: 0 0 80px; width: 80px; height: 80px; object-fit: cover; }

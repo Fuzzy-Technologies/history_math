@@ -3,7 +3,7 @@ import {readFile, stat, mkdir} from 'node:fs/promises';
 import {resolve, extname} from 'node:path';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
-import {journalGroups, newestFirst, seriesKey, rubricArticles, search} from '../site/assets/core.js';
+import {journalGroups, newestFirst, seriesKey, rubricArticles, articleCandidates, search} from '../site/assets/core.js';
 import {publishedArticles} from './published-articles.mjs';
 
 async function serve(directory) {
@@ -57,6 +57,19 @@ async function checkReading(page, records, language, randomized = true) {
   return {reading, archive};
 }
 
+async function checkArticlePicks(page, records, language) {
+  const container = page.locator('#article-picks');
+  const tags = (await container.getAttribute('data-exclude-tags')).split('|');
+  const pool = articleCandidates(records, language, tags);
+  const urls = await container.locator('a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
+  assert.equal(await page.locator('#article-picks-heading').textContent(), language === 'ru' ? 'Статьи' : 'Articles');
+  assert.equal(urls.length, Math.min(2, pool.length));
+  assert.equal(new Set(urls).size, urls.length);
+  assert.ok(urls.every(url => pool.some(record => record.url === url)));
+  assert.equal(await container.locator('.selection-empty').count(), pool.length ? 0 : 1);
+  return urls;
+}
+
 async function audit(page) {
   await page.locator('img').evaluateAll(async images => { for (const image of images) image.loading = 'eager'; await Promise.all(images.map(image => image.decode())); });
   await page.addScriptTag({path: 'node_modules/axe-core/axe.min.js'});
@@ -82,6 +95,11 @@ try {
       const index = language === 'ru' ? records : englishRecords;
       await page.goto(production.base + prefix + '/', {waitUntil: 'networkidle'});
       const groups = await checkReading(page, index, language);
+      await checkArticlePicks(page, index, language);
+      if (width > 1100) {
+        const boxes = await page.locator('.hero-copy, .hero-articles, .hero-rubrics').evaluateAll(nodes => nodes.map(node => node.getBoundingClientRect().x));
+        assert.ok(boxes[0] < boxes[1] && boxes[1] < boxes[2]);
+      }
       assert.equal(await page.locator('#latest-heading').textContent(), language === 'ru' ? 'Рекомендуем почитать' : 'Articles to Explore');
       assert.equal(await page.locator('.masthead-blog').count(), language === 'ru' ? 1 : 0);
       if (language === 'ru') {
@@ -194,6 +212,7 @@ try {
     await page.goto(fixture.base + prefix + '/', {waitUntil: 'networkidle'});
     const urls = selector => page.locator(selector).evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
     const groups = await checkReading(page, fixtureRecords, language, javaScriptEnabled);
+    const articleBefore = await checkArticlePicks(page, fixtureRecords, language);
     assert.deepEqual([groups.reading.length, groups.archive.length], [10, 41]);
     assert.equal(await page.locator('#hero-picks a').count(), 2);
     assert.equal(await page.locator('#archive-cards h3 a').count(), 4);
@@ -222,6 +241,7 @@ try {
       assert.ok(heroAfter.every((url, index) => url !== heroBefore[index]));
       assert.notDeepEqual((await urls('#archive-cards h3 a')).sort(), archiveBefore.sort());
       assert.notDeepEqual(await urls('#latest-cards h3 a'), readingBefore);
+      assert.notDeepEqual((await checkArticlePicks(page, fixtureRecords, language)).sort(), articleBefore.sort());
       await checkReading(page, fixtureRecords, language);
       await audit(page);
     }
@@ -240,6 +260,7 @@ try {
       if (mode === 'blocked') {
         for (const method of ['getItem', 'setItem']) Storage.prototype[method] = () => { throw new DOMException('Blocked', 'SecurityError'); };
       } else {
+        sessionStorage.setItem('history-math:article-picks:en', '{broken');
         sessionStorage.setItem('history-math:reading:en', '{broken');
         sessionStorage.setItem('history-math:rubric:en:humor', '{broken');
         sessionStorage.setItem('history-math:rubric:en:people', '{"unexpected":true}');
@@ -249,6 +270,7 @@ try {
     assert.equal(await page.locator('#hero-picks a').count(), 2);
     const fixtureIndex = JSON.parse(await readFile('test-results/browser-fixture/assets/discovery-en.json', 'utf8'));
     await checkReading(page, fixtureIndex, 'en');
+    await checkArticlePicks(page, fixtureIndex, 'en');
     const readingBefore = await page.locator('#latest-cards h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
     const before = await page.locator('#hero-picks a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
     await page.evaluate(() => dispatchEvent(new PageTransitionEvent('pageshow', {persisted: true})));
@@ -257,6 +279,7 @@ try {
     const readingAfter = await page.locator('#latest-cards h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
     assert.notDeepEqual(readingAfter, readingBefore);
     await checkReading(page, fixtureIndex, 'en');
+    await checkArticlePicks(page, fixtureIndex, 'en');
     await page.locator('.cover-bottom a').click();
     await page.waitForLoadState('networkidle');
     assert.equal(await page.locator('.catalog-list .material-card').count(), 20);

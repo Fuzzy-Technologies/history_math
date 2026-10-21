@@ -22,6 +22,14 @@ module HistoryMath
           Array(article.data["tags"]).any? { |tag| keys.include?(key(tag)) }
       end
     end
+
+    def self.article_candidates(articles, excluded_tags)
+      keys = excluded_tags.map { |tag| key(tag) }
+      articles.select do |article|
+        article.data["status"] == "published" && !article.data["translation_notice"] &&
+          Array(article.data["tags"]).none? { |tag| keys.include?(key(tag)) }
+      end
+    end
   end
 
   module TopicFilters
