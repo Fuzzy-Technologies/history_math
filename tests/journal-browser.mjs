@@ -119,11 +119,16 @@ async function checkArticleLayout(page) {
         alignment: [...node.children].map(span => getComputedStyle(span).textAlign)}))
     };
   });
-  for (const block of [geometry.details, geometry.pdf]) {
-    assert.ok(Math.abs(block.left - geometry.separator.left) <= 1 && Math.abs(block.right - geometry.separator.right) <= 1,
-      'PDF and publication details span the full separator width');
-  }
-  assert.ok(geometry.pdf.top >= geometry.meta.bottom, 'The full-width PDF button follows the author metadata');
+  assert.ok(Math.abs(geometry.details.left - geometry.separator.left) <= 1 && Math.abs(geometry.details.right - geometry.separator.right) <= 1,
+    'Publication details span the full separator width');
+  assert.ok(Math.abs(geometry.pdf.right - geometry.separator.right) <= 1,
+    'The compact PDF button sits at the right edge of the full article column');
+  assert.ok(geometry.pdf.right - geometry.pdf.left < Math.min(160, (geometry.separator.right - geometry.separator.left) / 2),
+    'The PDF button keeps its compact size');
+  assert.ok(Math.abs(geometry.meta.left - geometry.separator.left) <= 1 && geometry.meta.right <= geometry.pdf.left,
+    'Author metadata stays left without overlapping the PDF button');
+  assert.ok(Math.abs((geometry.pdf.top + geometry.pdf.bottom) - (geometry.meta.top + geometry.meta.bottom)) <= 2,
+    'The PDF button and author metadata share the same vertically centered row');
   assert.ok(geometry.details.top >= geometry.pdf.bottom, 'Publication details follow the PDF button');
   for (const link of geometry.links) {
     assert.ok(Math.abs(link.next ? link.right - geometry.nav.right : link.left - geometry.nav.left) <= 1,
