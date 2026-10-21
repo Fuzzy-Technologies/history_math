@@ -32,14 +32,9 @@ export function articleCandidates(records, language, excludedTags) {
     !record.translation_notice && record.tags.every(tag => !excluded.has(topicKey(tag))));
 }
 
-// Bound hidden layout probes, keeping representatives for long titles, summaries and tag lists.
-export function archiveMeasurements(records) {
-  if (records.length <= 16) return records;
-  const scores = [record => record.title.length, record => record.description.length,
-    record => record.tags.join(' ').length,
-    record => record.title.length + record.description.length + record.tags.join(' ').length];
-  return [...new Map(scores.flatMap(score => [...records].sort((a, b) => score(b) - score(a)).slice(0, 4))
-    .map(record => [record.url, record])).values()];
+// Measure every candidate while keeping the temporary DOM bounded.
+export function* archiveMeasurementBatches(records) {
+  for (let offset = 0; offset < records.length; offset += 16) yield records.slice(offset, offset + 16);
 }
 
 export function selection(records, count, previous = [], random = Math.random) {

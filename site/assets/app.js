@@ -1,5 +1,5 @@
 const assetVersion = new URL(import.meta.url).search;
-const [{search, searchByTag, topicKey, rubricArticles, articleCandidates, archiveMeasurements, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}, {loadVerifiedOriginal, nativeOriginalTarget}, {catalogState, catalogPage, catalogPageNumbers, catalogUrl}] = await Promise.all([
+const [{search, searchByTag, topicKey, rubricArticles, articleCandidates, archiveMeasurementBatches, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}, {loadVerifiedOriginal, nativeOriginalTarget}, {catalogState, catalogPage, catalogPageNumbers, catalogUrl}] = await Promise.all([
   import('./core.js' + assetVersion),
   import('./select.js' + assetVersion),
   import('./reading-position.js' + assetVersion),
@@ -539,7 +539,7 @@ if (archive) {
       });
     }
     rotateRubrics();
-    // Reserve space with a bounded sample instead of constructing the entire archive.
+    // Measure every candidate in bounded batches; text length cannot predict wrapped height.
     function reserveArchiveSpace() {
       if (!pool.length || !archive.clientWidth) return;
       const probe = archive.cloneNode(false);
@@ -547,11 +547,20 @@ if (archive) {
       probe.setAttribute('aria-hidden', 'true');
       probe.inert = true;
       probe.style.cssText = `position:absolute;visibility:hidden;pointer-events:none;width:${archive.clientWidth}px`;
-      probe.replaceChildren(...archiveMeasurements(pool).map(record => card(record, 'archive-card')));
       archive.after(probe);
-      const height = Math.ceil(Math.max(...[...probe.children].map(node => node.getBoundingClientRect().height)));
-      probe.remove();
-      archive.style.setProperty('--archive-card-height', `${height}px`);
+      let height = 0;
+      try {
+        for (const batch of archiveMeasurementBatches(pool)) {
+          // The first visible slot has more text width. Reserve the narrower ordinary-slot height
+          // for every record, since rotation can put any article in any of the four positions.
+          const sentinel = document.createElement('span');
+          sentinel.hidden = true;
+          const cards = batch.map(record => card(record, 'archive-card'));
+          probe.replaceChildren(sentinel, ...cards);
+          for (const node of cards) height = Math.max(height, node.getBoundingClientRect().height);
+        }
+      } finally { probe.remove(); }
+      archive.style.setProperty('--archive-card-height', `${Math.ceil(height)}px`);
     }
     await document.fonts.ready;
     reserveArchiveSpace();
