@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-98034199babc/rol-zhenshchin-v-matematike-01.png": {
+    "sha256": "65eabf35f23822b8d72b29c12691366e2eeec0ae3bc662ce5a8c6e1e45b3c641",
+    "width": 1850,
+    "height": 2480,
+    "bytes": 10066514,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-98034199babc/rol-zhenshchin-v-matematike-01.png-960.webp",
+        "width": 960,
+        "height": 1287,
+        "sha256": "2e495419f640b52315a2b6f7ba51e09c2924c8bb435f20809e167bb00fb22d93",
+        "bytes": 1459286
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-98034199babc-rol-zhenshchin-v-matematike-01-65eabf35f23822b8d72b29c12691366e2eeec0ae3bc662ce5a8c6e1e45b3c641.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560578",
+      "asset_id": 630560578,
+      "release_tag": "article-originals-6",
+      "sha256": "65eabf35f23822b8d72b29c12691366e2eeec0ae3bc662ce5a8c6e1e45b3c641",
+      "bytes": 10066514
+    }
+  },
+  "/assets/images/hm-tt-98034199babc/rol-zhenshchin-v-matematike-02.png": {
+    "sha256": "37d3062544be172ac0c4c5d9e1cede69a388aee04e1f0d617dda88440edc7667",
+    "width": 1176,
+    "height": 1722,
+    "bytes": 1107376,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-98034199babc/rol-zhenshchin-v-matematike-02.png-960.webp",
+        "width": 960,
+        "height": 1406,
+        "sha256": "216a4172f57962687b5392d9040c01fc92fcae4f0cc9ca42b45ec2ce8f69d246",
+        "bytes": 345048
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-98034199babc-rol-zhenshchin-v-matematike-02-37d3062544be172ac0c4c5d9e1cede69a388aee04e1f0d617dda88440edc7667.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560731",
+      "asset_id": 630560731,
+      "release_tag": "article-originals-3",
+      "sha256": "37d3062544be172ac0c4c5d9e1cede69a388aee04e1f0d617dda88440edc7667",
+      "bytes": 1107376
+    }
+  },
+  "/assets/images/hm-tt-98034199babc/rol-zhenshchin-v-matematike-03.png": {
+    "sha256": "29df6cb138f3cd6cd5d0eeb8603b220880ef7193554227d281472310f2fc7d24",
+    "width": 2439,
+    "height": 3504,
+    "bytes": 22677499,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-98034199babc/rol-zhenshchin-v-matematike-03.png-960.webp",
+        "width": 960,
+        "height": 1379,
+        "sha256": "09ea29fee8a031e9e37026b7b82bb754f7c98571b4a02e33a46b46c1c4da2162",
+        "bytes": 1963330
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-98034199babc-rol-zhenshchin-v-matematike-03-29df6cb138f3cd6cd5d0eeb8603b220880ef7193554227d281472310f2fc7d24.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560879",
+      "asset_id": 630560879,
+      "release_tag": "article-originals-2",
+      "sha256": "29df6cb138f3cd6cd5d0eeb8603b220880ef7193554227d281472310f2fc7d24",
+      "bytes": 22677499
+    }
+  },
+  "/assets/images/hm-tt-98034199babc/rol-zhenshchin-v-matematike-04.png": {
+    "sha256": "5d68fa975fd175a29868824a717e1d3859b8878c019ec1d4f7d16a6b7f8c2415",
+    "width": 690,
+    "height": 840,
+    "bytes": 816065,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-98034199babc/rol-zhenshchin-v-matematike-04.png-690.webp",
+        "width": 690,
+        "height": 840,
+        "sha256": "2a33a563022d9479803a0f371f16a2d167a7e5314c8a5fd644524f52f42ce586",
+        "bytes": 300272
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-98034199babc-rol-zhenshchin-v-matematike-04-5d68fa975fd175a29868824a717e1d3859b8878c019ec1d4f7d16a6b7f8c2415.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560998",
+      "asset_id": 630560998,
+      "release_tag": "article-originals-5",
+      "sha256": "5d68fa975fd175a29868824a717e1d3859b8878c019ec1d4f7d16a6b7f8c2415",
+      "bytes": 816065
+    }
+  },
+  "/assets/images/hm-tt-98034199babc/rol-zhenshchin-v-matematike-05.png": {
+    "sha256": "d54d1f8d9ce750c222cad296dc39f3eab4cac82fccd5c17f596e76b267244125",
+    "width": 1208,
+    "height": 1840,
+    "bytes": 2104701,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-98034199babc/rol-zhenshchin-v-matematike-05.png-960.webp",
+        "width": 960,
+        "height": 1462,
+        "sha256": "3abd4437db1abf7d7f705b567887b36c1b941e7e84f247827ef865e31a035a3b",
+        "bytes": 585690
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-98034199babc-rol-zhenshchin-v-matematike-05-d54d1f8d9ce750c222cad296dc39f3eab4cac82fccd5c17f596e76b267244125.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561159",
+      "asset_id": 630561159,
+      "release_tag": "article-originals-d",
+      "sha256": "d54d1f8d9ce750c222cad296dc39f3eab4cac82fccd5c17f596e76b267244125",
+      "bytes": 2104701
+    }
+  },
+  "/assets/images/hm-tt-98034199babc/rol-zhenshchin-v-matematike-06.png": {
+    "sha256": "02107275372dd0bf3dc0271c5dcb6a494138e396516358c5441d983907e1d77e",
+    "width": 300,
+    "height": 430,
+    "bytes": 131650,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-98034199babc/rol-zhenshchin-v-matematike-06.png-300.webp",
+        "width": 300,
+        "height": 430,
+        "sha256": "8b0debc53b026f526dffbf796e9b17471c042af16987c06b1f5e8412f88fb185",
+        "bytes": 49046
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-98034199babc-rol-zhenshchin-v-matematike-06-02107275372dd0bf3dc0271c5dcb6a494138e396516358c5441d983907e1d77e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561341",
+      "asset_id": 630561341,
+      "release_tag": "article-originals-0",
+      "sha256": "02107275372dd0bf3dc0271c5dcb6a494138e396516358c5441d983907e1d77e",
+      "bytes": 131650
+    }
+  }
+}

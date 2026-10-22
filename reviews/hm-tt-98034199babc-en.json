@@ -1,0 +1,36 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-98034199babc-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-women-1",
+      "question": "Confirm the source's claims that Theano led Pythagoras's school for six years, Hypatia invented the hydrometer, astrolabe and planisphere, and that no religion or prevailing social view permitted women to do science for a long period. All claims are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-women-2",
+      "question": "The source calls Noether a professor at Göttingen and then says she never obtained a professorship. Confirm the intended distinction between her academic title and an appointed position. Both statements are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-women-3",
+      "question": "Confirm the documentary basis for the account of Wentzel concealing her dissertation defence from her husband, which is retained in full.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-06",
+      "url": "https://teletype.in/@history_math/Rol-zhenshchin-v-matematike-09-06"
+    }
+  }
+}
