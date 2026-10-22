@@ -1,0 +1,17 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-791e3d415580",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 9,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-06-30",
+      "url": "https://teletype.in/@history_math/Razvitie-matematiki-v-Kazanskom-universitete-XIX-vek-06-30"
+    }
+  }
+}
