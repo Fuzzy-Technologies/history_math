@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-5c1d88688388-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "7ee0bf11cff678d9e8f11cc6b073e116670822c72ddba95db668f6962af7808c",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/65#pullrequestreview-5616495372",
+    "source_commit": "90928e15cead3e26038e51c5fc2681ac45a8b24d",
+    "source_review_id": 5616495372,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T15:15:54Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 8,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2026-04-10",
+      "url": "https://teletype.in/@history_math/japanese-sangaku"
+    }
+  }
+}
