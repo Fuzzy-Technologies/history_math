@@ -82,6 +82,7 @@ jobs:
           node tests/article-urls-browser.mjs
       - name: Build and verify configured Pages site
         env:
+          JEKYLL_ENV: production
           # Pages can report HTTP while the custom-domain certificate is being issued.
           PAGES_ORIGIN: https://${{ steps.pages.outputs.host }}
           PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}

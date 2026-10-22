@@ -4,6 +4,7 @@ import {resolve, extname, sep} from 'node:path';
 import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
+import {stubMetrika} from './metrika-fixture.mjs';
 
 const root = resolve(process.env.IMAGE_SITE_DIR || '_site');
 const base = process.env.IMAGE_BASEURL ?? '/history_math';
@@ -41,6 +42,7 @@ try {
   for (const width of [390, 1440]) for (const path of pages) {
     const context = await browser.newContext({viewport: {width, height: 1000}, reducedMotion: 'reduce',
       colorScheme: width === 390 ? 'dark' : 'light'});
+    await stubMetrika(context);
     const page = await context.newPage();
     const requests = [];
     const allRequests = [];
@@ -132,6 +134,7 @@ try {
   }
   for (const path of ['/ru/about/', '/ru/showcase/']) {
     const context = await browser.newContext({javaScriptEnabled: false, viewport: {width: 390, height: 1000}});
+    await stubMetrika(context);
     const page = await context.newPage();
     const requests = [];
     page.on('request', req => { if (req.resourceType() === 'image') requests.push(req.url()); });

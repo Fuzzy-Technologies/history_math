@@ -3,6 +3,7 @@ import {readFile, stat, mkdir} from 'node:fs/promises';
 import {resolve, extname, sep} from 'node:path';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
+import {stubMetrika} from './metrika-fixture.mjs';
 
 const root = resolve(process.env.ERROR_SITE_DIR || '_site');
 const base = process.env.ERROR_BASEURL ?? '/history_math';
@@ -30,6 +31,7 @@ const cases = [['/missing/nested/', 'en', 404], ['/ru/missing/nested/', 'ru', 40
 try {
   for (const width of [320, 1440]) for (const theme of ['light', 'dark']) {
     const page = await browser.newPage({viewport: {width, height: 1000}, colorScheme: theme, locale: 'en-US'});
+    await stubMetrika(page.context());
     page.on('pageerror', error => errors.push(error.message));
     page.on('response', response => { if (response.status() >= 400 && response.request().resourceType() !== 'document') errors.push(response.url()); });
     for (const [path, lang, code] of cases) {
@@ -67,6 +69,7 @@ try {
   for (const lang of ['ru', 'en']) {
     const prefix = lang === 'ru' ? '/ru' : '';
     const page = await browser.newPage();
+    await stubMetrika(page.context());
     page.on('pageerror', error => errors.push(error.message));
     await page.route('**/assets/{discovery,search}-*.json*', route => route.fulfill({status: 503, body: 'Unavailable'}));
     await page.goto(origin + base + prefix + '/search/?q=geometry');
@@ -85,6 +88,7 @@ try {
     assert.doesNotMatch(await page.locator('main').innerText(), /Все издания — на русском языке|All editions are in Russian/);
     await page.close();
     const staticPage = await browser.newPage({javaScriptEnabled: false});
+    await stubMetrika(staticPage.context());
     await staticPage.goto(origin + base + prefix + '/404.html');
     assert.equal(await staticPage.locator('html').getAttribute('lang'), lang);
     assert.equal(await staticPage.locator('h1').innerText(), lang === 'ru' ? 'Страница не найдена' : 'Page not found');
