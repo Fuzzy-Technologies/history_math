@@ -4,7 +4,7 @@ For archival publication packages, [ADR 0001](adr/0001-archive-article-pilot.md)
 
 ## Add an article
 
-Copy `templates/article.md` to `site/_articles/<stable-slug>.<lang>.md`. One Markdown file is one article/language version. Edit the metadata and write prose with H2 headings where sections are useful. The common site header, footer and article structure come from shared layouts. Keep confidential drafts on NAS; `status: draft` excludes a file from the generated site but does not make a public Git file private.
+Copy `templates/article.md` to `site/_articles/<stable-slug>-<lang>.md`. One Markdown file is one article/language version. Edit the metadata and write prose with H2 headings where sections are useful. The common site header, footer and article structure come from shared layouts. Keep confidential drafts on NAS; `status: draft` excludes a file from the generated site but does not make a public Git file private.
 
 Set `status: published` only after editorial approval; use `demo` for deliberately public prototype examples. Only these two statuses are emitted. The post-read gate runs before rendering and discovery, so `draft`, missing and unrecognized statuses have no page, public index or sitemap entry. Development documentation and templates live outside `site/` and are never copied.
 

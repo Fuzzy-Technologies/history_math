@@ -28,15 +28,6 @@ original_publication:
   url: https://teletype.in/@history_math/Velikij-kostoprav-matematiki-08-22
 source_url: https://teletype.in/@history_math/Velikij-kostoprav-matematiki-08-22
 figures:
-- id: fig-1
-  path: /assets/images/hm-tt-aa2a668ec1b8/velikij-kostoprav-matematiki-01.png
-  alt: Viète's formulas.
-  caption: Viète's formulas.
-  source: Illustration archive of the original Teletype article.
-  credit: ''
-  rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original
-    attribution retained; no new license asserted.
-  source_url: https://img2.teletype.in/files/54/8a/548a8bf3-55f6-4ae5-b0d7-07d128057e74.png
 - id: fig-2
   path: /assets/images/hm-tt-aa2a668ec1b8/velikij-kostoprav-matematiki-02.png
   alt: Abu Abdallah Muhammad ibn Musa al-Khwarizmi (787–850).
@@ -93,12 +84,36 @@ figures:
   rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original
     attribution retained; no new license asserted.
   source_url: https://img2.teletype.in/files/97/33/9733a3e8-03f8-4f6d-9def-1040100c3f5e.png
-preview_image: /assets/images/hm-tt-aa2a668ec1b8/velikij-kostoprav-matematiki-01.png
-cover_image: /assets/images/hm-tt-aa2a668ec1b8/velikij-kostoprav-matematiki-01.png
+preview_image: /assets/images/hm-tt-aa2a668ec1b8/velikij-kostoprav-matematiki-06.png
+cover_image: /assets/images/hm-tt-aa2a668ec1b8/velikij-kostoprav-matematiki-06.png
 ---
 It is hard to imagine modern mathematics without formulas and equations — perhaps that is why some people dislike it. There was once a time when mathematics existed but formulas did not. Today, every pupil who has studied algebra remembers a formula named after a person.
 
-{% include article-figure.html id="fig-1" %}
+$$
+ax^2+bx+c=0,\qquad a\ne0
+$$
+
+$$
+\begin{cases}
+x_1+x_2=-\dfrac{b}{a},\cr
+x_1x_2=\dfrac{c}{a}.
+\end{cases}
+$$
+
+For $a=1$:
+
+$$
+x^2+px+q=0
+$$
+
+$$
+\begin{cases}
+x_1+x_2=-p,\cr
+x_1x_2=q.
+\end{cases}
+$$
+
+*Viète's formulas.*
 
 Viète's famous formulas, expressing the relationship between the roots and coefficients of a quadratic equation, are a monument to this great man. He is regarded as the “father” of symbolic algebra. Yet this discovery might never have happened had the Holy Spanish Inquisition, which sentenced Viète in absentia to be burned at the stake, carried its schemes through. He might also have died in the great massacre of Huguenots on Saint Bartholomew's Night, when many of his friends were killed.
 

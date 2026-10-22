@@ -4,15 +4,14 @@
   "approval": {
     "status": "approved",
     "reviewed_by": "Tim55667757",
-    "date": "2026-10-20",
-    "package_sha256": "018cb012f149131715fbe1bf90ecbac7e8c18c47305f8c03d659e1d81725443c",
-    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/241#issuecomment-6300189364",
-    "source_commit": "007a48d4cb166e1eba376b4fb710b3ea0ab9f387",
-    "source_comment_id": 6300189364,
-    "source_review_state": "ISSUE_COMMENT",
-    "approved_at": "2026-10-20T19:58:53Z",
-    "prepared_from_commit": "007a48d4cb166e1eba376b4fb710b3ea0ab9f387",
-    "post_review_changes": "No changes after the reviewed source revision."
+    "date": "2026-10-22",
+    "package_sha256": "d19dd9517a00e0366acb3c0814e0b3f693669d8269f581c9b48ccbed85316225",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/276#pullrequestreview-5609871665",
+    "source_commit": "cd40da898168dfc815e4f05eece2e4bf666033e4",
+    "source_review_id": 5609871665,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T06:01:16Z",
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions, translations and image bytes are unchanged."
   },
   "questions": [
     {
@@ -32,11 +31,30 @@
   ],
   "reconciliation": {
     "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
-    "figures": 6,
+    "figures": 5,
     "original_publication": {
       "outlet": "Teletype",
       "date": "2023-08-22",
       "url": "https://teletype.in/@history_math/Ars-magna-Velikoe-iskusstvo-08-22"
     }
-  }
+  },
+  "previous_approvals": [
+    {
+      "status": "approved",
+      "reviewed_by": "Tim55667757",
+      "date": "2026-10-20",
+      "package_sha256": "018cb012f149131715fbe1bf90ecbac7e8c18c47305f8c03d659e1d81725443c",
+      "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/241#issuecomment-6300189364",
+      "source_commit": "007a48d4cb166e1eba376b4fb710b3ea0ab9f387",
+      "source_comment_id": 6300189364,
+      "source_review_state": "ISSUE_COMMENT",
+      "approved_at": "2026-10-20T19:58:53Z",
+      "prepared_from_commit": "007a48d4cb166e1eba376b4fb710b3ea0ab9f387",
+      "post_review_changes": "No changes after the reviewed source revision."
+    }
+  ],
+  "manual_changes": [
+    "Replaced formula-only images fig-4 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending. Retained every coefficient, sign and radical; made the nonzero leading coefficient and consistent cube-root branch condition explicit, and stated the inverse substitution for the original roots.",
+    "Replaced Markdown-sensitive equation row spacing with explicit TeX row separators, preserving every term and sign in both editions."
+  ]
 }
