@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-bee6ffe4c0d3/inversor-08-31-01.png": {
+    "sha256": "fb69055416e1f43a2f07b621ceccdb445270a2d3ce049ce17ea34aacda27e3f5",
+    "width": 900,
+    "height": 1094,
+    "bytes": 859175,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bee6ffe4c0d3/inversor-08-31-01.png-900.webp",
+        "width": 900,
+        "height": 1094,
+        "sha256": "b20db6b1413488fa188d1694d1418aca81c383f3e93a3a1ac858b865035e7fde",
+        "bytes": 444508
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-bee6ffe4c0d3-inversor-08-31-01-fb69055416e1f43a2f07b621ceccdb445270a2d3ce049ce17ea34aacda27e3f5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630495601",
+      "asset_id": 630495601,
+      "release_tag": "article-originals-f",
+      "sha256": "fb69055416e1f43a2f07b621ceccdb445270a2d3ce049ce17ea34aacda27e3f5",
+      "bytes": 859175
+    }
+  },
+  "/assets/images/hm-tt-bee6ffe4c0d3/inversor-08-31-02.png": {
+    "sha256": "4e7a04454ee892aeb3299a8ca89dd87aacfcb43a25d0448057bb92c0ed240f2b",
+    "width": 2880,
+    "height": 2160,
+    "bytes": 1353364,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bee6ffe4c0d3/inversor-08-31-02.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "13a5bd175a5ed9095d978eac389f4178b8c005e9a3a046c93155dbda3d769c4b",
+        "bytes": 131610
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-bee6ffe4c0d3-inversor-08-31-02-4e7a04454ee892aeb3299a8ca89dd87aacfcb43a25d0448057bb92c0ed240f2b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540604",
+      "asset_id": 630540604,
+      "release_tag": "article-originals-4",
+      "sha256": "4e7a04454ee892aeb3299a8ca89dd87aacfcb43a25d0448057bb92c0ed240f2b",
+      "bytes": 1353364
+    }
+  },
+  "/assets/images/hm-tt-bee6ffe4c0d3/inversor-08-31-03.png": {
+    "sha256": "489156bf2f0836bda72d5eced1bd8ae471981fa1f290dc2ff845a360b356efb3",
+    "width": 315,
+    "height": 315,
+    "bytes": 3498,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bee6ffe4c0d3/inversor-08-31-03.png-315.webp",
+        "width": 315,
+        "height": 315,
+        "sha256": "90dd5ff0f9c23fed3aaf1a8e55e4e46dac08c4493fd3ec17bb3736ecda584673",
+        "bytes": 2008
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-bee6ffe4c0d3-inversor-08-31-03-489156bf2f0836bda72d5eced1bd8ae471981fa1f290dc2ff845a360b356efb3.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540745",
+      "asset_id": 630540745,
+      "release_tag": "article-originals-4",
+      "sha256": "489156bf2f0836bda72d5eced1bd8ae471981fa1f290dc2ff845a360b356efb3",
+      "bytes": 3498
+    }
+  }
+}
