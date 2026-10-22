@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-913717b9a0e5-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-newton-attribution",
+      "question": "Please provide primary evidence for the attribution to Newton, particularly the statement that the first illustrated solution was proposed by Newton himself. The source’s attribution is retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "en-newton-row-intersections",
+      "question": "Please verify the claim that some trees must belong to four or more rows. With nine distinct trees and three per straight row, four is the maximum through one tree; whether even four is required should be checked against the displayed configurations. The source wording is retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-03-19",
+      "url": "https://teletype.in/@history_math/Sir-Isaac-Newton-Tree-planting-puzzle"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
