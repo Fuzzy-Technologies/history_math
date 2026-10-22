@@ -1,0 +1,34 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-eea880ba2f7f-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "e90e5200fe3e2fbff87c3182ca481385e0b8557461440212137f88cd98872bf2",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/127#pullrequestreview-5617301953",
+    "source_commit": "0e8fc8c997adeaa90dda1c4eb00d71608ddd4b6a",
+    "source_review_id": 5617301953,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T16:11:29Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [
+    {
+      "id": "q-vernier-1",
+      "question": "Confirm whether Avicenna's observing instrument used a vernier in the modern sense or a different refinement of scale reading. The source's attribution of the vernier principle to him is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Reviewed under the owner-delegated Teletype audit. The published source wording and its authorial historical account are retained; no unresolved mathematical or transfer blocker was identified for this question. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/127#pullrequestreview-5617301953"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 8,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-11-03",
+      "url": "https://teletype.in/@history_math/Nonius"
+    }
+  }
+}
