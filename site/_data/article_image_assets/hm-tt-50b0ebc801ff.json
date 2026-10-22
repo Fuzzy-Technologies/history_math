@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-50b0ebc801ff/reissmass-01.jpeg": {
+    "sha256": "841db96e730bbf0c533c144ecff3e07ffac950d52ce2035c77eadf6b1ebd967f",
+    "width": 2332,
+    "height": 967,
+    "bytes": 186862,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-50b0ebc801ff/reissmass-01.jpeg-960.webp",
+        "width": 960,
+        "height": 398,
+        "sha256": "a7a6098a01c64065c9e9cd0473f49d6160255f08a6375c162ca7219ba0267e1a",
+        "bytes": 159490
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-50b0ebc801ff-reissmass-01-841db96e730bbf0c533c144ecff3e07ffac950d52ce2035c77eadf6b1ebd967f.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630492585",
+      "asset_id": 630492585,
+      "release_tag": "article-originals-8",
+      "sha256": "841db96e730bbf0c533c144ecff3e07ffac950d52ce2035c77eadf6b1ebd967f",
+      "bytes": 186862
+    }
+  },
+  "/assets/images/hm-tt-50b0ebc801ff/reissmass-02.jpeg": {
+    "sha256": "d8cd685f1868059eb543549196b8b34f6c4cf6b9d0b9866e650884525cc3f1ce",
+    "width": 960,
+    "height": 506,
+    "bytes": 203533,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-50b0ebc801ff/reissmass-02-960.jpeg",
+        "width": 960,
+        "height": 506,
+        "bytes": 203533,
+        "sha256": "d8cd685f1868059eb543549196b8b34f6c4cf6b9d0b9866e650884525cc3f1ce"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-50b0ebc801ff-reissmass-02-d8cd685f1868059eb543549196b8b34f6c4cf6b9d0b9866e650884525cc3f1ce.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630531450",
+      "asset_id": 630531450,
+      "release_tag": "article-originals-d",
+      "sha256": "d8cd685f1868059eb543549196b8b34f6c4cf6b9d0b9866e650884525cc3f1ce",
+      "bytes": 203533
+    }
+  },
+  "/assets/images/hm-tt-50b0ebc801ff/reissmass-03.jpeg": {
+    "sha256": "7f6901554b7a90017b853d238762604957a7f454252ddabb701d73f1be305522",
+    "width": 960,
+    "height": 382,
+    "bytes": 127824,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-50b0ebc801ff/reissmass-03-960.jpeg",
+        "width": 960,
+        "height": 382,
+        "bytes": 127824,
+        "sha256": "7f6901554b7a90017b853d238762604957a7f454252ddabb701d73f1be305522"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-50b0ebc801ff-reissmass-03-7f6901554b7a90017b853d238762604957a7f454252ddabb701d73f1be305522.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630531614",
+      "asset_id": 630531614,
+      "release_tag": "article-originals-7",
+      "sha256": "7f6901554b7a90017b853d238762604957a7f454252ddabb701d73f1be305522",
+      "bytes": 127824
+    }
+  },
+  "/assets/images/hm-tt-50b0ebc801ff/reissmass-04.jpeg": {
+    "sha256": "92c6a9ee9ff7158d55ed10024d6ea77d2dc41968b918c534e87a8f4345f867da",
+    "width": 1044,
+    "height": 1220,
+    "bytes": 88413,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-50b0ebc801ff/reissmass-04.jpeg-960.webp",
+        "width": 960,
+        "height": 1122,
+        "sha256": "644c03bf73c34057e57dc0ef97a3505f4c2601da3c1c9dbc85f77c9875a8b6e9",
+        "bytes": 277846
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-50b0ebc801ff-reissmass-04-92c6a9ee9ff7158d55ed10024d6ea77d2dc41968b918c534e87a8f4345f867da.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630531793",
+      "asset_id": 630531793,
+      "release_tag": "article-originals-9",
+      "sha256": "92c6a9ee9ff7158d55ed10024d6ea77d2dc41968b918c534e87a8f4345f867da",
+      "bytes": 88413
+    }
+  },
+  "/assets/images/hm-tt-50b0ebc801ff/reissmass-05.png": {
+    "sha256": "71cc0f5295d0f820e1a93db8e0592b5591388ff747c0fcd0955efa0337215ac0",
+    "width": 999,
+    "height": 731,
+    "bytes": 312443,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-50b0ebc801ff/reissmass-05.png-960.webp",
+        "width": 960,
+        "height": 702,
+        "sha256": "b38418ce345339c4f5795091f4ce015bee606fdadd78e0c251e27e3fed1aa2df",
+        "bytes": 178672
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-50b0ebc801ff-reissmass-05-71cc0f5295d0f820e1a93db8e0592b5591388ff747c0fcd0955efa0337215ac0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630531984",
+      "asset_id": 630531984,
+      "release_tag": "article-originals-7",
+      "sha256": "71cc0f5295d0f820e1a93db8e0592b5591388ff747c0fcd0955efa0337215ac0",
+      "bytes": 312443
+    }
+  }
+}
