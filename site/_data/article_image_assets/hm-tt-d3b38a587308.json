@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-d3b38a587308/vybory-po-sisteme-proporcion-01.png": {
+    "sha256": "739ea10256bcc433ab3e5c96245973372efb73a9cd9bfd5b50c623d0d5bb032c",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 1432070,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d3b38a587308/vybory-po-sisteme-proporcion-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "9b11bc9427a2aca7c6bc765b97a2eb0ac40f824f1df5a56cd4cc9426b78dcc91",
+        "bytes": 652014
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-d3b38a587308-vybory-po-sisteme-proporcion-01-739ea10256bcc433ab3e5c96245973372efb73a9cd9bfd5b50c623d0d5bb032c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630502866",
+      "asset_id": 630502866,
+      "release_tag": "article-originals-7",
+      "sha256": "739ea10256bcc433ab3e5c96245973372efb73a9cd9bfd5b50c623d0d5bb032c",
+      "bytes": 1432070
+    }
+  },
+  "/assets/images/hm-tt-d3b38a587308/vybory-po-sisteme-proporcion-02.png": {
+    "sha256": "d99e9d3a29358da58182ab87d9d89bea4ed43270749a5f03389598cb2d4e15cf",
+    "width": 520,
+    "height": 520,
+    "bytes": 134654,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d3b38a587308/vybory-po-sisteme-proporcion-02.png-520.webp",
+        "width": 520,
+        "height": 520,
+        "sha256": "584c6bcefb4135f3253ae0e27c101b19dc9e1a79d34c82efa4801f9cf672d9c1",
+        "bytes": 114166
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-d3b38a587308-vybory-po-sisteme-proporcion-02-d99e9d3a29358da58182ab87d9d89bea4ed43270749a5f03389598cb2d4e15cf.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553335",
+      "asset_id": 630553335,
+      "release_tag": "article-originals-d",
+      "sha256": "d99e9d3a29358da58182ab87d9d89bea4ed43270749a5f03389598cb2d4e15cf",
+      "bytes": 134654
+    }
+  },
+  "/assets/images/hm-tt-d3b38a587308/vybory-po-sisteme-proporcion-03.png": {
+    "sha256": "e7339d37152267ce5aeb6d3ca0f8418a768f5e6c2e3009354dc0f7d6998d54d5",
+    "width": 600,
+    "height": 600,
+    "bytes": 160688,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d3b38a587308/vybory-po-sisteme-proporcion-03.png-600.webp",
+        "width": 600,
+        "height": 600,
+        "sha256": "8e871ef769bb74c38838a38e7559c7daaf438448d854c10b82de1a8e72e47752",
+        "bytes": 138022
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-d3b38a587308-vybory-po-sisteme-proporcion-03-e7339d37152267ce5aeb6d3ca0f8418a768f5e6c2e3009354dc0f7d6998d54d5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553480",
+      "asset_id": 630553480,
+      "release_tag": "article-originals-e",
+      "sha256": "e7339d37152267ce5aeb6d3ca0f8418a768f5e6c2e3009354dc0f7d6998d54d5",
+      "bytes": 160688
+    }
+  }
+}
