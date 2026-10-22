@@ -1,0 +1,352 @@
+{
+  "/assets/images/hm-tt-cabaf322b762/mccme-seminars-2025-2026-01.webp": {
+    "sha256": "98679a29efd6718603d7bc0cbf0ae4e4f03fcc0d7db0af30aad5501ec47953a8",
+    "width": 1280,
+    "height": 853,
+    "bytes": 1568030,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cabaf322b762/mccme-seminars-2025-2026-01.webp-960.webp",
+        "width": 960,
+        "height": 640,
+        "sha256": "ada5822f32a861af672e04f198e76fd7e42f6fc05d968a2f91ed423b12232148",
+        "bytes": 944720
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-cabaf322b762-mccme-seminars-2025-2026-01-98679a29efd6718603d7bc0cbf0ae4e4f03fcc0d7db0af30aad5501ec47953a8.webp",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630492015",
+      "asset_id": 630492015,
+      "release_tag": "article-originals-9",
+      "sha256": "98679a29efd6718603d7bc0cbf0ae4e4f03fcc0d7db0af30aad5501ec47953a8",
+      "bytes": 1568030
+    }
+  },
+  "/assets/images/hm-tt-cabaf322b762/mccme-seminars-2025-2026-02.png": {
+    "sha256": "e7bd148d8e4ecc918d2bc50d65a518fe110aad88411b534be13ade6c8eb341c1",
+    "width": 1368,
+    "height": 778,
+    "bytes": 1987440,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cabaf322b762/mccme-seminars-2025-2026-02.png-960.webp",
+        "width": 960,
+        "height": 546,
+        "sha256": "389c4f926168c956ef0ad41d1346387d70d07359b771a82a8c9af592bbf93f9f",
+        "bytes": 469592
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-cabaf322b762-mccme-seminars-2025-2026-02-e7bd148d8e4ecc918d2bc50d65a518fe110aad88411b534be13ade6c8eb341c1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630527400",
+      "asset_id": 630527400,
+      "release_tag": "article-originals-e",
+      "sha256": "e7bd148d8e4ecc918d2bc50d65a518fe110aad88411b534be13ade6c8eb341c1",
+      "bytes": 1987440
+    }
+  },
+  "/assets/images/hm-tt-cabaf322b762/mccme-seminars-2025-2026-03.png": {
+    "sha256": "e26f8e980da031efdc4410697d92db64ec015ef25de27adcdcb84191e42d5d64",
+    "width": 1377,
+    "height": 706,
+    "bytes": 1400875,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cabaf322b762/mccme-seminars-2025-2026-03.png-960.webp",
+        "width": 960,
+        "height": 492,
+        "sha256": "2cc034a41db6d49bcd75bb6834bb0a07f956435699328b9ef12338f22d48e6a8",
+        "bytes": 349164
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-cabaf322b762-mccme-seminars-2025-2026-03-e26f8e980da031efdc4410697d92db64ec015ef25de27adcdcb84191e42d5d64.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630527707",
+      "asset_id": 630527707,
+      "release_tag": "article-originals-e",
+      "sha256": "e26f8e980da031efdc4410697d92db64ec015ef25de27adcdcb84191e42d5d64",
+      "bytes": 1400875
+    }
+  },
+  "/assets/images/hm-tt-cabaf322b762/mccme-seminars-2025-2026-04.png": {
+    "sha256": "92907a3b33567bcdb6e87645032a04664a4595f04c6d228ee1aa581b7ba1eb56",
+    "width": 1370,
+    "height": 766,
+    "bytes": 1721591,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cabaf322b762/mccme-seminars-2025-2026-04.png-960.webp",
+        "width": 960,
+        "height": 537,
+        "sha256": "72bc3abecf76742b839470861988fd19952b8f89ed873582008f95010393fc33",
+        "bytes": 401650
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-cabaf322b762-mccme-seminars-2025-2026-04-92907a3b33567bcdb6e87645032a04664a4595f04c6d228ee1aa581b7ba1eb56.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630527925",
+      "asset_id": 630527925,
+      "release_tag": "article-originals-9",
+      "sha256": "92907a3b33567bcdb6e87645032a04664a4595f04c6d228ee1aa581b7ba1eb56",
+      "bytes": 1721591
+    }
+  },
+  "/assets/images/hm-tt-cabaf322b762/mccme-seminars-2025-2026-05.png": {
+    "sha256": "48d0606be4da6d9487ab61a6587f6446837f454d9220025c561c646f843276f9",
+    "width": 1395,
+    "height": 676,
+    "bytes": 1150037,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cabaf322b762/mccme-seminars-2025-2026-05.png-960.webp",
+        "width": 960,
+        "height": 465,
+        "sha256": "da14c4bbc6c688d57ef9ed477c677ba5f315b8961d917d545971a31d428646d4",
+        "bytes": 230860
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-cabaf322b762-mccme-seminars-2025-2026-05-48d0606be4da6d9487ab61a6587f6446837f454d9220025c561c646f843276f9.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630528125",
+      "asset_id": 630528125,
+      "release_tag": "article-originals-4",
+      "sha256": "48d0606be4da6d9487ab61a6587f6446837f454d9220025c561c646f843276f9",
+      "bytes": 1150037
+    }
+  },
+  "/assets/images/hm-tt-cabaf322b762/mccme-seminars-2025-2026-06.png": {
+    "sha256": "d5672042e4394063d8d1351f37bd0a85995de1c23704f56b2c17566904304209",
+    "width": 1363,
+    "height": 701,
+    "bytes": 767140,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cabaf322b762/mccme-seminars-2025-2026-06.png-960.webp",
+        "width": 960,
+        "height": 494,
+        "sha256": "7f9bb6c62b8cb213dffb72529f5f64b810642b3a39913e67cdfb880e1e61069d",
+        "bytes": 216792
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-cabaf322b762-mccme-seminars-2025-2026-06-d5672042e4394063d8d1351f37bd0a85995de1c23704f56b2c17566904304209.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630528313",
+      "asset_id": 630528313,
+      "release_tag": "article-originals-d",
+      "sha256": "d5672042e4394063d8d1351f37bd0a85995de1c23704f56b2c17566904304209",
+      "bytes": 767140
+    }
+  },
+  "/assets/images/hm-tt-cabaf322b762/mccme-seminars-2025-2026-07.png": {
+    "sha256": "6ddfb0ab805014a8c3d648162819731cfa368af67307bc254589365dca8e1f8b",
+    "width": 1376,
+    "height": 769,
+    "bytes": 1605518,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cabaf322b762/mccme-seminars-2025-2026-07.png-960.webp",
+        "width": 960,
+        "height": 537,
+        "sha256": "ec4d65f7e3a0a7aaa0b11e215573044422f94de3d0498b7e2d6e273e1ca6bd28",
+        "bytes": 415098
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-cabaf322b762-mccme-seminars-2025-2026-07-6ddfb0ab805014a8c3d648162819731cfa368af67307bc254589365dca8e1f8b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630528467",
+      "asset_id": 630528467,
+      "release_tag": "article-originals-6",
+      "sha256": "6ddfb0ab805014a8c3d648162819731cfa368af67307bc254589365dca8e1f8b",
+      "bytes": 1605518
+    }
+  },
+  "/assets/images/hm-tt-cabaf322b762/mccme-seminars-2025-2026-08.png": {
+    "sha256": "795ada5c7cec456d9e2102afc41bba6b29fb471763a724c6204b0032ab403b01",
+    "width": 1373,
+    "height": 777,
+    "bytes": 1520850,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cabaf322b762/mccme-seminars-2025-2026-08.png-960.webp",
+        "width": 960,
+        "height": 543,
+        "sha256": "0d86390fbedc74db3454174b50b583b4cf2e7c22fd99460422d99e7c1361a39a",
+        "bytes": 362012
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-cabaf322b762-mccme-seminars-2025-2026-08-795ada5c7cec456d9e2102afc41bba6b29fb471763a724c6204b0032ab403b01.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630528681",
+      "asset_id": 630528681,
+      "release_tag": "article-originals-7",
+      "sha256": "795ada5c7cec456d9e2102afc41bba6b29fb471763a724c6204b0032ab403b01",
+      "bytes": 1520850
+    }
+  },
+  "/assets/images/hm-tt-cabaf322b762/mccme-seminars-2025-2026-09.jpeg": {
+    "sha256": "0ed6264dc695fe66069bab069cdd0dad55603b6d7ec18c6b4646f31f89c87389",
+    "width": 1280,
+    "height": 960,
+    "bytes": 215117,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cabaf322b762/mccme-seminars-2025-2026-09.jpeg-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "8e37038c05ee86f499eeeb4aa4b610fa29f24d5a0c5640c9e30ba71efc53b5e0",
+        "bytes": 659498
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-cabaf322b762-mccme-seminars-2025-2026-09-0ed6264dc695fe66069bab069cdd0dad55603b6d7ec18c6b4646f31f89c87389.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630528887",
+      "asset_id": 630528887,
+      "release_tag": "article-originals-0",
+      "sha256": "0ed6264dc695fe66069bab069cdd0dad55603b6d7ec18c6b4646f31f89c87389",
+      "bytes": 215117
+    }
+  },
+  "/assets/images/hm-tt-cabaf322b762/mccme-seminars-2025-2026-10.png": {
+    "sha256": "37eb4a9259491430f44ae2e1dfc137f421530a683ea8c623be33444b8aa4b79e",
+    "width": 1301,
+    "height": 689,
+    "bytes": 982941,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cabaf322b762/mccme-seminars-2025-2026-10.png-960.webp",
+        "width": 960,
+        "height": 508,
+        "sha256": "bf761d428c13f55f61a40e835699548c813d900eb90b73b2497d1fcbe6f7d969",
+        "bytes": 265778
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-cabaf322b762-mccme-seminars-2025-2026-10-37eb4a9259491430f44ae2e1dfc137f421530a683ea8c623be33444b8aa4b79e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630529087",
+      "asset_id": 630529087,
+      "release_tag": "article-originals-3",
+      "sha256": "37eb4a9259491430f44ae2e1dfc137f421530a683ea8c623be33444b8aa4b79e",
+      "bytes": 982941
+    }
+  },
+  "/assets/images/hm-tt-cabaf322b762/mccme-seminars-2025-2026-11.png": {
+    "sha256": "efc202de213f95b5788066fbe69983d0b0e26725476a6761aa8c8235ed274cf8",
+    "width": 1320,
+    "height": 695,
+    "bytes": 954862,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cabaf322b762/mccme-seminars-2025-2026-11.png-960.webp",
+        "width": 960,
+        "height": 505,
+        "sha256": "ffdd9195c06b6734818230fe3e7b12c583281e1bffe774f80610653b31861cf7",
+        "bytes": 253428
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-cabaf322b762-mccme-seminars-2025-2026-11-efc202de213f95b5788066fbe69983d0b0e26725476a6761aa8c8235ed274cf8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630529274",
+      "asset_id": 630529274,
+      "release_tag": "article-originals-e",
+      "sha256": "efc202de213f95b5788066fbe69983d0b0e26725476a6761aa8c8235ed274cf8",
+      "bytes": 954862
+    }
+  },
+  "/assets/images/hm-tt-cabaf322b762/mccme-seminars-2025-2026-12.png": {
+    "sha256": "63e879bd52cf433cf83861fef7f916705c2cb5a21432065a3703256a719f17d3",
+    "width": 2012,
+    "height": 1070,
+    "bytes": 644968,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cabaf322b762/mccme-seminars-2025-2026-12.png-960.webp",
+        "width": 960,
+        "height": 511,
+        "sha256": "52feb7403c430f79209f9a8f6fae395d2297f0c9eac48dbe42d1bcc2ec6a9a8a",
+        "bytes": 106906
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-cabaf322b762-mccme-seminars-2025-2026-12-63e879bd52cf433cf83861fef7f916705c2cb5a21432065a3703256a719f17d3.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630529450",
+      "asset_id": 630529450,
+      "release_tag": "article-originals-6",
+      "sha256": "63e879bd52cf433cf83861fef7f916705c2cb5a21432065a3703256a719f17d3",
+      "bytes": 644968
+    }
+  },
+  "/assets/images/hm-tt-cabaf322b762/mccme-seminars-2025-2026-13.png": {
+    "sha256": "e3e889990506e22aed8578fe9f1f0c054f24aed27f57ab3026202a9e7b30821c",
+    "width": 1320,
+    "height": 686,
+    "bytes": 950015,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cabaf322b762/mccme-seminars-2025-2026-13.png-960.webp",
+        "width": 960,
+        "height": 499,
+        "sha256": "480fbe5ac1e6a3e93e68ddaefe8aede7ebc50a55fa8ec607208807452cdfbe72",
+        "bytes": 266732
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-cabaf322b762-mccme-seminars-2025-2026-13-e3e889990506e22aed8578fe9f1f0c054f24aed27f57ab3026202a9e7b30821c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630529643",
+      "asset_id": 630529643,
+      "release_tag": "article-originals-e",
+      "sha256": "e3e889990506e22aed8578fe9f1f0c054f24aed27f57ab3026202a9e7b30821c",
+      "bytes": 950015
+    }
+  },
+  "/assets/images/hm-tt-cabaf322b762/mccme-seminars-2025-2026-14.png": {
+    "sha256": "75392ec27fdefa2facd731cbb4c81c941ff635725732b4b3b29f4175a9d74bd1",
+    "width": 1314,
+    "height": 920,
+    "bytes": 1929985,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-cabaf322b762/mccme-seminars-2025-2026-14.png-960.webp",
+        "width": 960,
+        "height": 672,
+        "sha256": "a12407a32602094e6e32ce0f65c8058dc63f05ba29918bea5c9a731b0b0c26d8",
+        "bytes": 449604
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-cabaf322b762-mccme-seminars-2025-2026-14-75392ec27fdefa2facd731cbb4c81c941ff635725732b4b3b29f4175a9d74bd1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630529880",
+      "asset_id": 630529880,
+      "release_tag": "article-originals-7",
+      "sha256": "75392ec27fdefa2facd731cbb4c81c941ff635725732b4b3b29f4175a9d74bd1",
+      "bytes": 1929985
+    }
+  }
+}
