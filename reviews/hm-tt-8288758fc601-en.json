@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-8288758fc601-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-amicable-1",
+      "question": "Confirm the source's attribution to the Pythagorean school around 500 BCE, Euler's count of 90 pairs, the identification of the 1866 discoverer as Niccolò Paganini, and the claim of more than 1000000000 known pairs by April 2016. These historical and numerical claims are retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-02-24",
+      "url": "https://teletype.in/@history_math/Arifmetika-pifagorejcev-druzhestvennye-chisla-02-24"
+    }
+  }
+}
