@@ -16,10 +16,10 @@ class TranslationNoticesTest < Minitest::Test
       FileUtils.cp_r(File.expand_path("../reviews", __dir__), File.join(root, "reviews"))
       # These scenarios deliberately exercise articles that have no translation yet.
       notice_keys = JSON.parse(File.read(File.join(source, "_data/english_notices.json"))).keys
-      Dir.glob(File.join(source, "_articles/hm-*.ru.md")).each do |path|
-        File.delete(path) unless notice_keys.include?(File.basename(path, ".ru.md"))
+      Dir.glob(File.join(source, "_articles/hm-*-ru.md")).each do |path|
+        File.delete(path) unless notice_keys.include?(File.basename(path, "-ru.md"))
       end
-      Dir.glob(File.join(source, "_articles/*.en.md")).each { |path| File.delete(path) }
+      Dir.glob(File.join(source, "_articles/*-en.md")).each { |path| File.delete(path) }
       Dir.glob(File.expand_path("fixtures/articles/*.md", __dir__)).each { |file| FileUtils.cp(file, File.join(source, "_articles")) }
       config = Jekyll.configuration("config" => File.expand_path("../_config.yml", __dir__),
         "source" => source, "destination" => File.join(root, "output"), "quiet" => true)
@@ -99,7 +99,7 @@ class TranslationNoticesTest < Minitest::Test
       translated = File.read(File.join(source, "_articles/demo-abacus.md"))
         .sub("lang: ru", "lang: en").sub("translation_key: demo-abacus", "translation_key: #{id}")
         .sub("permalink: /ru/articles/demo-abacus/", "permalink: /articles/#{id}-en/")
-      File.write(File.join(source, "_articles/translated.en.md"), translated)
+      File.write(File.join(source, "_articles/translated-en.md"), translated)
       translated_site = Jekyll::Site.new(config)
       translated_site.process
       html = File.read(File.join(translated_site.dest, "articles/#{id}-en/index.html"))
@@ -110,7 +110,7 @@ class TranslationNoticesTest < Minitest::Test
       assert_equal 1, replacement.length
       refute replacement.first["translation_notice"]
 
-      File.delete(File.join(source, "_articles/translated.en.md"))
+      File.delete(File.join(source, "_articles/translated-en.md"))
       File.write(File.join(source, "conflict.html"), "---\nlayout: page\nstatus: published\npermalink: /articles/#{id}-en/\n---\nConflict")
       assert_raises(Jekyll::Errors::FatalException) { Jekyll::Site.new(config).process }
     end

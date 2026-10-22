@@ -103,6 +103,7 @@ def is_package_path(name: str, article_id: str) -> bool:
     except PreparationError:
         return False
     if name in {
+        f"site/_articles/{article_id}-ru.md", f"site/_articles/{article_id}-en.md",
         f"site/_articles/{article_id}.ru.md", f"site/_articles/{article_id}.en.md",
         f"site/_articles/ru/{article_id}.md", f"site/_articles/en/{article_id}-en.md",
         f"reviews/{article_id}.json", f"reviews/{article_id}-en.json",
@@ -145,6 +146,7 @@ def package_paths(root: Path, article_id: str) -> tuple[str, ...]:
     if safe_file(root, manifest, required=False).exists():
         paths.add(manifest)
     for folder, pattern in (("site/_articles", f"{article_id}.*"),
+                            ("site/_articles", f"{article_id}-*"),
                             ("site/_articles/ru", f"{article_id}.*"),
                             ("site/_articles/en", f"{article_id}-en.*")):
         articles = root / folder
@@ -181,12 +183,14 @@ def package_paths(root: Path, article_id: str) -> tuple[str, ...]:
 
 
 def edition_specs(root: Path, article_id: str) -> list[dict]:
-    """Support both archival subfolders and the five published legacy pairs."""
+    """Read canonical language suffixes and unambiguous legacy article paths."""
     editions = []
     choices = {
-        "ru": [(f"site/_articles/ru/{article_id}.md", article_id),
+        "ru": [(f"site/_articles/{article_id}-ru.md", article_id),
+               (f"site/_articles/ru/{article_id}.md", article_id),
                (f"site/_articles/{article_id}.ru.md", article_id)],
-        "en": [(f"site/_articles/en/{article_id}-en.md", article_id + "-en"),
+        "en": [(f"site/_articles/{article_id}-en.md", article_id + "-en"),
+               (f"site/_articles/en/{article_id}-en.md", article_id + "-en"),
                (f"site/_articles/{article_id}.en.md", article_id + "-en")],
     }
     for lang, candidates in choices.items():
@@ -522,6 +526,10 @@ def prepare_package(root: Path, article_id: str, *, write: bool = False,
     for edition in updated_editions:
         if edition["errors"]:
             raise PreparationError(f"{edition['path']}: {'; '.join(edition['errors'])}")
+    moves = {edition["path"]: f"site/_articles/{article_id}-{edition['lang']}.md"
+             for edition in editions
+             if edition["path"] != f"site/_articles/{article_id}-{edition['lang']}.md"}
+    article_moves = dict(moves)
     text_changes = {}
     body_checks = []
     for old, edition in zip(editions, updated_editions, strict=True):
@@ -536,10 +544,9 @@ def prepare_package(root: Path, article_id: str, *, write: bool = False,
         else:
             text = old["text"]
         if text != old["text"]:
-            text_changes[old["path"]] = text.encode("utf-8")
+            text_changes[moves.get(old["path"], old["path"])] = text.encode("utf-8")
         body_checks.append({"path": old["path"], "before_sha256": digest_text(old["body"]),
                             "after_sha256": digest_text(body), "unchanged": body == old["body"]})
-    moves = {}
     updated_manifest = {}
     for original, entry in manifest.items():
         new_original = rewrites.get(original, original)
@@ -561,11 +568,11 @@ def prepare_package(root: Path, article_id: str, *, write: bool = False,
         if safe_file(root, "site" + old, required=False).exists():
             moves["site" + old] = "site" + new
     if len(set(moves.values())) != len(moves):
-        raise PreparationError("Image normalization would create a filename collision")
+        raise PreparationError("Package normalization would create a filename collision")
     for old, new in moves.items():
         target = safe_file(root, new, required=False)
         if target.exists() and new not in moves:
-            raise PreparationError(f"Image normalization would overwrite an existing file: {new}")
+            raise PreparationError(f"Package normalization would overwrite an existing file: {new}")
     if updated_manifest != manifest:
         text_changes[fragment_name] = (json.dumps(updated_manifest, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
     pending = bool(text_changes or moves or inventory["needs_generation"])
@@ -573,7 +580,8 @@ def prepare_package(root: Path, article_id: str, *, write: bool = False,
               "canonical": not pending, "written": False,
               "changed_paths": sorted(set(text_changes) | set(moves) | set(moves.values())),
               "renamed_assets": [{"from": old.removeprefix("site"), "to": new.removeprefix("site")}
-                                 for old, new in sorted(moves.items())],
+                                 for old, new in sorted(moves.items()) if old not in article_moves],
+              "renamed_articles": [{"from": old, "to": new} for old, new in sorted(article_moves.items())],
               "bodies": body_checks, "originals": inventory["originals"], "previews": inventory["previews"],
               "local_reading_aliases": sorted(local_aliases),
               "warnings": ["Legacy local reading aliases are retained until verified external publishing copies them into the preview folder"]
@@ -616,11 +624,12 @@ def prepare_package(root: Path, article_id: str, *, write: bool = False,
         for name in staged_paths:
             target = root / name
             prepared = stage / name
-            if name in moves.values():
+            source_name = next((old for old, new in moves.items() if new == name), None)
+            if source_name and digest_file(safe_file(root, source_name)) == digest_file(prepared):
                 continue
             if not target.exists() or digest_file(target) != digest_file(prepared):
                 new_data[name] = prepared.read_bytes()
-        # Source images are moved through temporary names to handle safe cycles.
+        # Package files are moved through temporary names to handle safe cycles.
         temporary_moves = []
         for old, new in sorted(moves.items()):
             source = safe_file(root, old)

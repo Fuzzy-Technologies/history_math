@@ -8,14 +8,15 @@ does not grant editorial approval, translate prose or change mathematics.
 ## Contributor workflow
 
 1. Copy the article template and fill the Russian and English editions. Use
-   `site/_articles/ru/<id>.md` and `site/_articles/en/<id>-en.md`. Their
+   `site/_articles/<id>-ru.md` and `site/_articles/<id>-en.md`. Their
    `article_id` values are `<id>` and `<id>-en`; both `translation_key` and
    `source_work_id` identify `<id>`. Keep `status: draft` during preparation.
 2. Put the shared original images in `site/assets/images/<id>/`. Images may
    arrive with their original names. Set the figures and image roles in both
    editions to those exact paths; retain captions, attribution and rights
-   information. The existing root-level `<id>.ru.md` / `<id>.en.md` layout is
-   also accepted without moving articles or changing their URLs.
+   information. Legacy root-level `<id>.ru.md` / `<id>.en.md` and language subfolders
+   remain accepted as inputs. Trusted preparation renames them to the canonical
+   `-ru.md` / `-en.md` pair without changing article bytes or URLs.
 3. Include `reviews/<id>.json` and `reviews/<id>-en.json` with an explicit
    `approval.status: pending` and any editorial questions. Use existing tags;
    automated preparation never invents a topic, license, source or date.
@@ -45,12 +46,15 @@ python3 tools/article_prepare.py --root /path/to/article-checkout \
 
 `--check` writes no publication files and exits unsuccessfully when preparation
 is needed or package data are invalid. `--write` prepares the publication
-derivative after validating its scope and bytes. A canonical package remains
+derivative after validating its scope and bytes. The language suffix matches the
+PDF basename: `<id>-ru.md` corresponds to `<id>-ru.pdf`, and likewise for English.
+Review identifiers and shared image names retain their existing provenance.
+A canonical package remains
 byte-for-byte identical on every run. Optional repeated `--changed-path`
 arguments let a caller reject PR changes outside this one article's files.
 
 The JSON report contains original and preview SHA-256 digests, before/after
-body digests, renamed assets, changed paths, preparation state and the existing
+body digests, renamed articles and assets, changed paths, preparation state and the existing
 human decision. Store processing reports and source receipts outside public
 Git. Reports are technical evidence, not a publication or scientific review.
 

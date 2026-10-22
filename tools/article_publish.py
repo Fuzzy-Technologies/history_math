@@ -92,6 +92,8 @@ def safe_relative(path):
 
 def scoped_path(path, article_id):
     exact = {
+        f"site/_articles/{article_id}-ru.md",
+        f"site/_articles/{article_id}-en.md",
         f"site/_articles/{article_id}.ru.md",
         f"site/_articles/{article_id}.en.md",
         f"site/_articles/ru/{article_id}.md",
@@ -109,8 +111,8 @@ def scoped_path(path, article_id):
 
 def article_paths(article_id, paths):
     candidates = {
-        "ru": (f"site/_articles/{article_id}.ru.md", f"site/_articles/ru/{article_id}.md"),
-        "en": (f"site/_articles/{article_id}.en.md", f"site/_articles/en/{article_id}-en.md", f"site/_articles/en/{article_id}.md"),
+        "ru": (f"site/_articles/{article_id}-ru.md", f"site/_articles/{article_id}.ru.md", f"site/_articles/ru/{article_id}.md"),
+        "en": (f"site/_articles/{article_id}-en.md", f"site/_articles/{article_id}.en.md", f"site/_articles/en/{article_id}-en.md", f"site/_articles/en/{article_id}.md"),
     }
     selected = {}
     for lang, options in candidates.items():
@@ -620,7 +622,6 @@ def init_markdown_index(stage):
 
 
 def run_trusted_checks(stage, args):
-    init_markdown_index(stage)
     report = Path(args.workspace).resolve() / f"{args.article_id}-prepare-report.json"
     commands = [
         [sys.executable, str(ROOT / "tools/article_prepare.py"), "--root", str(stage), "--article-id", args.article_id,
@@ -631,6 +632,8 @@ def run_trusted_checks(stage, args):
     environment = dict(os.environ)
     environment.pop("GITHUB_TOKEN", None)
     for command in commands:
+        if command[0] == "node":
+            init_markdown_index(stage)
         result = subprocess.run(command, cwd=stage, env=environment, stdout=subprocess.PIPE,
                                 stderr=subprocess.STDOUT, timeout=600)
         if result.returncode:
@@ -651,7 +654,7 @@ def run_trusted_checks(stage, args):
         raise PublishError("Trusted preparation did not produce its required report") from error
     if preparation.get("canonical") is not True or preparation.get("article_id") != args.article_id:
         raise PublishError("Trusted preparation did not confirm a canonical article package")
-    return {key: preparation.get(key) for key in ("bodies", "renamed_assets", "editorial_approval")}
+    return {key: preparation.get(key) for key in ("bodies", "renamed_assets", "renamed_articles", "editorial_approval")}
 
 
 def run_prepare(args, api=None, reader=None):
@@ -699,7 +702,9 @@ def run_prepare(args, api=None, reader=None):
         preparation = run_trusted_checks(stage, args) if getattr(args, "prepare", True) else None
         fragment, manifest = manifest_entries(stage, args.article_id)
         remaining = {path.relative_to(stage).as_posix() for path in stage.rglob("*") if path.is_file()}
-        if set(article_paths(args.article_id, remaining).values()) != set(language_paths.values()) or not (required | {fragment_path}).issubset(remaining):
+        prepared_language_paths = article_paths(args.article_id, remaining)
+        required_reviews = {path for path in required if path.endswith(".json")}
+        if not (set(prepared_language_paths.values()) | required_reviews | {fragment_path}).issubset(remaining):
             raise PublishError("Preparation must retain both source language files, review records and an image manifest")
         receipt = {
             "version": 1, "repository": args.repository, "pr": args.pr, "article_id": args.article_id,
@@ -754,7 +759,7 @@ def run_prepare(args, api=None, reader=None):
                     raise PublishError("Prepared derivative blob checksum differs")
                 item["sha"] = object_sha
             tree_entries.append(item)
-            if relative in receipt["source_article_blobs"]:
+            if relative in prepared_language_paths.values():
                 receipt["prepared_article_blobs"][relative] = object_sha
             if relative.startswith(f"site/assets/images/previews/{args.article_id}/"):
                 receipt["preview_blobs"][relative] = object_sha
