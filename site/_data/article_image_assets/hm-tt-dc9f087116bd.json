@@ -1,0 +1,527 @@
+{
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-01.jpeg": {
+    "sha256": "9033b2a01843b21b9e395fe46d279cfc3a35225c554b9e56ec45b74a2947af99",
+    "width": 2258,
+    "height": 1270,
+    "bytes": 923675,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-01.jpeg-960.webp",
+        "width": 960,
+        "height": 540,
+        "sha256": "7e8c437e5ac91c262cda373915093fb0e3d6bb2a94223d7ccfd530eb229af609",
+        "bytes": 713878
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-01-9033b2a01843b21b9e395fe46d279cfc3a35225c554b9e56ec45b74a2947af99.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630493875",
+      "asset_id": 630493875,
+      "release_tag": "article-originals-9",
+      "sha256": "9033b2a01843b21b9e395fe46d279cfc3a35225c554b9e56ec45b74a2947af99",
+      "bytes": 923675
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-02.jpeg": {
+    "sha256": "e87089df904acadaa1af6942a18ee2b06e6ea8951b1ec9d6ebbc71b173c25be7",
+    "width": 2400,
+    "height": 3600,
+    "bytes": 1713731,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-02.jpeg-960.webp",
+        "width": 960,
+        "height": 1440,
+        "sha256": "62a2e0c8f2e6c02461a87cafe04e0e7ed02b50e11b6ea47ab816be67cd4a2c97",
+        "bytes": 1398098
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-02-e87089df904acadaa1af6942a18ee2b06e6ea8951b1ec9d6ebbc71b173c25be7.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630534527",
+      "asset_id": 630534527,
+      "release_tag": "article-originals-e",
+      "sha256": "e87089df904acadaa1af6942a18ee2b06e6ea8951b1ec9d6ebbc71b173c25be7",
+      "bytes": 1713731
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-03.jpeg": {
+    "sha256": "9ceda0433062e3317a8e5d7ee4d8c6425e5af2d054a901b1560873ea15f98d38",
+    "width": 1000,
+    "height": 1020,
+    "bytes": 372915,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-03.jpeg-960.webp",
+        "width": 960,
+        "height": 979,
+        "sha256": "4bf986fc56080784bba8afa38c382772d466e8c944ddbe678a66d96e9bd4af89",
+        "bytes": 1198686
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-03-9ceda0433062e3317a8e5d7ee4d8c6425e5af2d054a901b1560873ea15f98d38.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630534780",
+      "asset_id": 630534780,
+      "release_tag": "article-originals-9",
+      "sha256": "9ceda0433062e3317a8e5d7ee4d8c6425e5af2d054a901b1560873ea15f98d38",
+      "bytes": 372915
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-04.jpeg": {
+    "sha256": "bc356e9efb389ab99557b4bb5b59557271784b6a50b5c73f242eb13e2cee97ba",
+    "width": 3898,
+    "height": 5315,
+    "bytes": 2875676,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-04.jpeg-960.webp",
+        "width": 960,
+        "height": 1309,
+        "sha256": "70b6948602e85a22a3b001d40fcf4eae51531b979fe7b8dc30e41837fe0a7409",
+        "bytes": 1340000
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-04-bc356e9efb389ab99557b4bb5b59557271784b6a50b5c73f242eb13e2cee97ba.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630534997",
+      "asset_id": 630534997,
+      "release_tag": "article-originals-b",
+      "sha256": "bc356e9efb389ab99557b4bb5b59557271784b6a50b5c73f242eb13e2cee97ba",
+      "bytes": 2875676
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-05.jpeg": {
+    "sha256": "a55c37052b2ca7d38dc3aece008464270708e4bf06055478b740aae13a7907e1",
+    "width": 2258,
+    "height": 1270,
+    "bytes": 941174,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-05.jpeg-960.webp",
+        "width": 960,
+        "height": 540,
+        "sha256": "2c091dc272d2e77f8fcfc7ccf50d141c1d7f6cb9ef1da592fcbd54f19b0d4ff1",
+        "bytes": 728596
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-05-a55c37052b2ca7d38dc3aece008464270708e4bf06055478b740aae13a7907e1.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630535210",
+      "asset_id": 630535210,
+      "release_tag": "article-originals-a",
+      "sha256": "a55c37052b2ca7d38dc3aece008464270708e4bf06055478b740aae13a7907e1",
+      "bytes": 941174
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-06.png": {
+    "sha256": "d8073d8a57413b809c9398dc3c495aff686126652c321a6c1c67f7af12a52f22",
+    "width": 289,
+    "height": 511,
+    "bytes": 419931,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-06.png-289.webp",
+        "width": 289,
+        "height": 511,
+        "sha256": "cddd99367d4b58729c92b18d5d6ed91da8fee9016d7138bae258945e4350da38",
+        "bytes": 190982
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-06-d8073d8a57413b809c9398dc3c495aff686126652c321a6c1c67f7af12a52f22.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630535464",
+      "asset_id": 630535464,
+      "release_tag": "article-originals-d",
+      "sha256": "d8073d8a57413b809c9398dc3c495aff686126652c321a6c1c67f7af12a52f22",
+      "bytes": 419931
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-07.png": {
+    "sha256": "1bde262a1140a40ce97d9a09e1a17bdef571f027eb791998eb7a5d9818807acc",
+    "width": 379,
+    "height": 405,
+    "bytes": 474988,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-07.png-379.webp",
+        "width": 379,
+        "height": 405,
+        "sha256": "21b9371b245b9ba42cc7f545bebf053ce1730a1f210a7a75352412e338f11d9f",
+        "bytes": 216214
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-07-1bde262a1140a40ce97d9a09e1a17bdef571f027eb791998eb7a5d9818807acc.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630535666",
+      "asset_id": 630535666,
+      "release_tag": "article-originals-1",
+      "sha256": "1bde262a1140a40ce97d9a09e1a17bdef571f027eb791998eb7a5d9818807acc",
+      "bytes": 474988
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-08.jpeg": {
+    "sha256": "cd5dcd34c6f1692c4c4c6b6aa735cac846881193ff5f94e4edd95252c93c6b87",
+    "width": 1800,
+    "height": 3030,
+    "bytes": 1446231,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-08-jpeg-reading-960-d6aacde5f372.webp",
+        "width": 960,
+        "height": 1616,
+        "sha256": "d6aacde5f37293f9d791d85411a4c7cd89be4dda8b627b25df3183837065afc7",
+        "bytes": 1582946
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-08-cd5dcd34c6f1692c4c4c6b6aa735cac846881193ff5f94e4edd95252c93c6b87.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630535924",
+      "asset_id": 630535924,
+      "release_tag": "article-originals-c",
+      "sha256": "cd5dcd34c6f1692c4c4c6b6aa735cac846881193ff5f94e4edd95252c93c6b87",
+      "bytes": 1446231
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-09.png": {
+    "sha256": "a5fd27f6b532a892261242669a59c44d18437844b0d957d9c14c03c8de7778d9",
+    "width": 329,
+    "height": 347,
+    "bytes": 338590,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-09.png-329.webp",
+        "width": 329,
+        "height": 347,
+        "sha256": "0e6b3fa7067088d8c38d253b8766d7c9c27019affa495d234686991a45c2e04b",
+        "bytes": 158412
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-09-a5fd27f6b532a892261242669a59c44d18437844b0d957d9c14c03c8de7778d9.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630536079",
+      "asset_id": 630536079,
+      "release_tag": "article-originals-a",
+      "sha256": "a5fd27f6b532a892261242669a59c44d18437844b0d957d9c14c03c8de7778d9",
+      "bytes": 338590
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-10.png": {
+    "sha256": "e18d07c4dd57150f8e00860525c5c5c009d0edf5ad1a26ebcdf21655de417757",
+    "width": 950,
+    "height": 1472,
+    "bytes": 3507639,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-10-png-reading-950-49a9b9500b6f.webp",
+        "width": 950,
+        "height": 1472,
+        "sha256": "49a9b9500b6faf500137ab943d3415fd32a58043887fed2f022cc305c7495476",
+        "bytes": 1920868
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-10-e18d07c4dd57150f8e00860525c5c5c009d0edf5ad1a26ebcdf21655de417757.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630536242",
+      "asset_id": 630536242,
+      "release_tag": "article-originals-e",
+      "sha256": "e18d07c4dd57150f8e00860525c5c5c009d0edf5ad1a26ebcdf21655de417757",
+      "bytes": 3507639
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-11.jpeg": {
+    "sha256": "4bc804ac94aa6254de66176949f6518ad3d70ca2cacb71ae38a27d129ab766d0",
+    "width": 487,
+    "height": 600,
+    "bytes": 69952,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-11-487.jpeg",
+        "width": 487,
+        "height": 600,
+        "bytes": 69952,
+        "sha256": "4bc804ac94aa6254de66176949f6518ad3d70ca2cacb71ae38a27d129ab766d0"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-11-4bc804ac94aa6254de66176949f6518ad3d70ca2cacb71ae38a27d129ab766d0.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630536460",
+      "asset_id": 630536460,
+      "release_tag": "article-originals-4",
+      "sha256": "4bc804ac94aa6254de66176949f6518ad3d70ca2cacb71ae38a27d129ab766d0",
+      "bytes": 69952
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-12.jpeg": {
+    "sha256": "dac41f5e524526a71123810e3859157155854ab7429c7870a80c6cac0ecaa85a",
+    "width": 528,
+    "height": 647,
+    "bytes": 185775,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-12-528.jpeg",
+        "width": 528,
+        "height": 647,
+        "bytes": 185775,
+        "sha256": "dac41f5e524526a71123810e3859157155854ab7429c7870a80c6cac0ecaa85a"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-12-dac41f5e524526a71123810e3859157155854ab7429c7870a80c6cac0ecaa85a.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630536665",
+      "asset_id": 630536665,
+      "release_tag": "article-originals-d",
+      "sha256": "dac41f5e524526a71123810e3859157155854ab7429c7870a80c6cac0ecaa85a",
+      "bytes": 185775
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-13.png": {
+    "sha256": "79aa080a43b923fc0c272a3abb0dddfa3da8ec10d4832aa310b6c162c93fa547",
+    "width": 199,
+    "height": 247,
+    "bytes": 147648,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-13.png-199.webp",
+        "width": 199,
+        "height": 247,
+        "sha256": "3f582708d500b0704ef7aaedc27fd936617579b8d2abfa0d3fa812a6409f5704",
+        "bytes": 71402
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-13-79aa080a43b923fc0c272a3abb0dddfa3da8ec10d4832aa310b6c162c93fa547.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630536819",
+      "asset_id": 630536819,
+      "release_tag": "article-originals-7",
+      "sha256": "79aa080a43b923fc0c272a3abb0dddfa3da8ec10d4832aa310b6c162c93fa547",
+      "bytes": 147648
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-14.png": {
+    "sha256": "8bd10d5aa92c2e4a8ac7ea3e5a3f17de51bd1f1fe62c3b35530825fd7eac4391",
+    "width": 163,
+    "height": 461,
+    "bytes": 230345,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-14.png-163.webp",
+        "width": 163,
+        "height": 461,
+        "sha256": "e99c1e778e6b2329ea200994a76334cca3ce04ad4a1edb666c3491a52a1f808b",
+        "bytes": 106290
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-14-8bd10d5aa92c2e4a8ac7ea3e5a3f17de51bd1f1fe62c3b35530825fd7eac4391.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630537000",
+      "asset_id": 630537000,
+      "release_tag": "article-originals-8",
+      "sha256": "8bd10d5aa92c2e4a8ac7ea3e5a3f17de51bd1f1fe62c3b35530825fd7eac4391",
+      "bytes": 230345
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-15.webp": {
+    "sha256": "c3fc55a1bded8e32893e641485ca4e8b11540b362aa965dd0c62935c156def39",
+    "width": 1219,
+    "height": 1600,
+    "bytes": 817948,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-15.webp-960.webp",
+        "width": 960,
+        "height": 1260,
+        "sha256": "7bae0e91650bffe2b5a2528f3f577397f61062657d5a7369dbaf0db983a1f4a1",
+        "bytes": 531656
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-15-c3fc55a1bded8e32893e641485ca4e8b11540b362aa965dd0c62935c156def39.webp",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630537205",
+      "asset_id": 630537205,
+      "release_tag": "article-originals-c",
+      "sha256": "c3fc55a1bded8e32893e641485ca4e8b11540b362aa965dd0c62935c156def39",
+      "bytes": 817948
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-16.png": {
+    "sha256": "43bd305c24701ad5a2ad82f5a0cf6acd54c1b482dbda6b3ad47e85991afe3407",
+    "width": 245,
+    "height": 284,
+    "bytes": 198363,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-16.png-245.webp",
+        "width": 245,
+        "height": 284,
+        "sha256": "31257b0c64baf3b5c5e24de70b1134b29e77182f9bd28eecacbd1157ff659794",
+        "bytes": 91730
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-16-43bd305c24701ad5a2ad82f5a0cf6acd54c1b482dbda6b3ad47e85991afe3407.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630537389",
+      "asset_id": 630537389,
+      "release_tag": "article-originals-4",
+      "sha256": "43bd305c24701ad5a2ad82f5a0cf6acd54c1b482dbda6b3ad47e85991afe3407",
+      "bytes": 198363
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-17.jpeg": {
+    "sha256": "3c81510f6a82405a477aff8dec128c2f4c058ea828cd42e0c83e8565e8119756",
+    "width": 499,
+    "height": 705,
+    "bytes": 110932,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-17-499.jpeg",
+        "width": 499,
+        "height": 705,
+        "bytes": 110932,
+        "sha256": "3c81510f6a82405a477aff8dec128c2f4c058ea828cd42e0c83e8565e8119756"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-17-3c81510f6a82405a477aff8dec128c2f4c058ea828cd42e0c83e8565e8119756.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630537583",
+      "asset_id": 630537583,
+      "release_tag": "article-originals-3",
+      "sha256": "3c81510f6a82405a477aff8dec128c2f4c058ea828cd42e0c83e8565e8119756",
+      "bytes": 110932
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-18.jpeg": {
+    "sha256": "6ebd6bde63383b11b287b0d780ba6109c6c762fc9e1b2b5c9042275274bfec40",
+    "width": 352,
+    "height": 276,
+    "bytes": 28980,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-18-352.jpeg",
+        "width": 352,
+        "height": 276,
+        "bytes": 28980,
+        "sha256": "6ebd6bde63383b11b287b0d780ba6109c6c762fc9e1b2b5c9042275274bfec40"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-18-6ebd6bde63383b11b287b0d780ba6109c6c762fc9e1b2b5c9042275274bfec40.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630537746",
+      "asset_id": 630537746,
+      "release_tag": "article-originals-6",
+      "sha256": "6ebd6bde63383b11b287b0d780ba6109c6c762fc9e1b2b5c9042275274bfec40",
+      "bytes": 28980
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-19.png": {
+    "sha256": "3e177540f3b874467cf73d89a085a4e76a2765cda0d97d124724c5c453eee41f",
+    "width": 195,
+    "height": 247,
+    "bytes": 138497,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-19.png-195.webp",
+        "width": 195,
+        "height": 247,
+        "sha256": "bd5477d4b64b0214150b98cc3e01962358a563a5bd5c89c05b74aa93d4249808",
+        "bytes": 66850
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-19-3e177540f3b874467cf73d89a085a4e76a2765cda0d97d124724c5c453eee41f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630537887",
+      "asset_id": 630537887,
+      "release_tag": "article-originals-3",
+      "sha256": "3e177540f3b874467cf73d89a085a4e76a2765cda0d97d124724c5c453eee41f",
+      "bytes": 138497
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-20.png": {
+    "sha256": "725c1b053b3d248fc22d5a41452c8d08052d1f9005529ea0e1c3d76be6ebb8a0",
+    "width": 353,
+    "height": 340,
+    "bytes": 349481,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-20.png-353.webp",
+        "width": 353,
+        "height": 340,
+        "sha256": "86a4850b590af3bb59eb5422ddedbcccdb65f7bf7565b4adb3f5e0a7020575c0",
+        "bytes": 164088
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-20-725c1b053b3d248fc22d5a41452c8d08052d1f9005529ea0e1c3d76be6ebb8a0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630538049",
+      "asset_id": 630538049,
+      "release_tag": "article-originals-7",
+      "sha256": "725c1b053b3d248fc22d5a41452c8d08052d1f9005529ea0e1c3d76be6ebb8a0",
+      "bytes": 349481
+    }
+  },
+  "/assets/images/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-21.png": {
+    "sha256": "242e8191fab24a372a597c8dfe5f18009d7f7266df7af46338fab01ed18be6d7",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 1240213,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dc9f087116bd/the-school-of-athens-by-raph-21-png-reading-960-e358c9aba034.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "e358c9aba0349f92068e1d1ffb6f99bec9439b242f80b74ae54b7373a1ebc706",
+        "bytes": 637560
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-dc9f087116bd-the-school-of-athens-by-raph-21-242e8191fab24a372a597c8dfe5f18009d7f7266df7af46338fab01ed18be6d7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630538203",
+      "asset_id": 630538203,
+      "release_tag": "article-originals-2",
+      "sha256": "242e8191fab24a372a597c8dfe5f18009d7f7266df7af46338fab01ed18be6d7",
+      "bytes": 1240213
+    }
+  }
+}
