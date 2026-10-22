@@ -61,7 +61,7 @@ class TranslationNoticesTest < Minitest::Test
       FileUtils.mkdir_p(reviews)
       ids = JSON.parse(File.read(File.join(source, "_data/english_notices.json"))).keys
       ids.each do |id|
-        path = Dir.glob(File.join(source, "_articles/#{id}.*.md")).fetch(0)
+        path = File.join(source, "_articles/#{id}-ru.md")
         _, frontmatter, body = File.read(path).split("---", 3)
         metadata = YAML.safe_load(frontmatter, permitted_classes: [Date, Time])
         metadata.merge!({"status" => "published", "date" => "2026-10-09"})

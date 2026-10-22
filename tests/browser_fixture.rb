@@ -16,7 +16,7 @@ Dir.mktmpdir("history-math-browser") do |root|
   # Keep the legacy reading/grouping fixture independent of new production articles.
   fixture_keys = JSON.parse(File.read("site/_data/english_notices.json")).keys
   Dir.glob(File.join(source, "_articles/hm-*.md")).each do |path|
-    File.delete(path) unless fixture_keys.include?(File.basename(path).sub(/\.(?:ru|en)\.md\z/, ""))
+    File.delete(path) unless fixture_keys.include?(File.basename(path).sub(/-(?:ru|en)\.md\z/, ""))
   end
   Dir.glob("tests/fixtures/articles/*.md").each { |file| FileUtils.cp(file, File.join(source, "_articles")) }
   %w[ru en].each do |language|
