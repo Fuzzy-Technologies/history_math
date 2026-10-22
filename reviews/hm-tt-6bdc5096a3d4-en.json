@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-6bdc5096a3d4-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "aristotle-liberal-arts-quotation",
+      "question": "The opening quotation attributes the seven liberal arts to Aristotle’s Politics. Please verify its wording and attribution, since the medieval seven-part curriculum postdates Aristotle. The source attribution is preserved.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "salerno-school-university-dates",
+      "question": "The source first dates Salerno to the XI century, then says the university was founded in the IX century. Does the latter refer to the medical school rather than the university? Both statements are retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-02-24",
+      "url": "https://teletype.in/@history_math/Pervye-universitety-02-24"
+    }
+  }
+}
