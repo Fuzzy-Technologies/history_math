@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-b9eb93e87ff6",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "5673168834acafe2e9f8ee3b9fdb71309da97bf0b0cd5329485084abe81fbc36",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/99#pullrequestreview-5617296975",
+    "source_commit": "5ae4d85cb79a7b18c50d883ee5c13cccc89a25ea",
+    "source_review_id": 5617296975,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T16:11:09Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-03-09",
+      "url": "https://teletype.in/@history_math/Museion"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
