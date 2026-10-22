@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-ab5d27d34d50/al-biruni-earth-01.png": {
+    "sha256": "fdc2dfd0d6a6b05d137331aa92a745aa471e4f0ad9db3025ab7f6a1051b4cf37",
+    "width": 547,
+    "height": 637,
+    "bytes": 481804,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ab5d27d34d50/al-biruni-earth-01.png-547.webp",
+        "width": 547,
+        "height": 637,
+        "sha256": "a653231a9c01187618347ff1eb1932ad79c9a066395e3b513f18e7c362b780f6",
+        "bytes": 237974
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-ab5d27d34d50-al-biruni-earth-01-fdc2dfd0d6a6b05d137331aa92a745aa471e4f0ad9db3025ab7f6a1051b4cf37.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630491764",
+      "asset_id": 630491764,
+      "release_tag": "article-originals-f",
+      "sha256": "fdc2dfd0d6a6b05d137331aa92a745aa471e4f0ad9db3025ab7f6a1051b4cf37",
+      "bytes": 481804
+    }
+  },
+  "/assets/images/hm-tt-ab5d27d34d50/al-biruni-earth-02.png": {
+    "sha256": "02e4afbb0bd7ae1f0004a9675612cdfe3f4687a03ecb3717a6c25dd55df5b7a4",
+    "width": 656,
+    "height": 927,
+    "bytes": 1314489,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ab5d27d34d50/al-biruni-earth-02-png-reading-656-5a7bc6c052d0.webp",
+        "width": 656,
+        "height": 927,
+        "sha256": "5a7bc6c052d029a6a30736114e820960cbfa730af9005a84ca1eca801d5cb1f4",
+        "bytes": 572840
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-ab5d27d34d50-al-biruni-earth-02-02e4afbb0bd7ae1f0004a9675612cdfe3f4687a03ecb3717a6c25dd55df5b7a4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630525754",
+      "asset_id": 630525754,
+      "release_tag": "article-originals-0",
+      "sha256": "02e4afbb0bd7ae1f0004a9675612cdfe3f4687a03ecb3717a6c25dd55df5b7a4",
+      "bytes": 1314489
+    }
+  },
+  "/assets/images/hm-tt-ab5d27d34d50/al-biruni-earth-03.jpeg": {
+    "sha256": "37b51b55d0754f001d2233f722e4d23e02b1ba388fdef66a95ce5761c7d4ad82",
+    "width": 421,
+    "height": 621,
+    "bytes": 53642,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ab5d27d34d50/al-biruni-earth-03.jpeg-421.webp",
+        "width": 421,
+        "height": 621,
+        "sha256": "bb12c739f804ebdbd9d73294e3a42da2cefa9d7a7bfaeca2be5e8319f7898c0f",
+        "bytes": 141556
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-ab5d27d34d50-al-biruni-earth-03-37b51b55d0754f001d2233f722e4d23e02b1ba388fdef66a95ce5761c7d4ad82.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/666208725",
+      "asset_id": 666208725,
+      "release_tag": "article-originals-3",
+      "sha256": "37b51b55d0754f001d2233f722e4d23e02b1ba388fdef66a95ce5761c7d4ad82",
+      "bytes": 53642
+    }
+  },
+  "/assets/images/hm-tt-ab5d27d34d50/al-biruni-earth-04.jpeg": {
+    "sha256": "b0025a8ab9b3fdb185e89c17c86c602a62082a38c42bc48852f929aed561e0eb",
+    "width": 856,
+    "height": 753,
+    "bytes": 229974,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ab5d27d34d50/al-biruni-earth-04.jpeg-856.webp",
+        "width": 856,
+        "height": 753,
+        "sha256": "6eca6f34f781d40144f40f4a669a5975260f039a56b0275b5ce3b2226ece3687",
+        "bytes": 724810
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-ab5d27d34d50-al-biruni-earth-04-b0025a8ab9b3fdb185e89c17c86c602a62082a38c42bc48852f929aed561e0eb.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/666208955",
+      "asset_id": 666208955,
+      "release_tag": "article-originals-b",
+      "sha256": "b0025a8ab9b3fdb185e89c17c86c602a62082a38c42bc48852f929aed561e0eb",
+      "bytes": 229974
+    }
+  },
+  "/assets/images/hm-tt-ab5d27d34d50/al-biruni-earth-05.png": {
+    "sha256": "028efcad01e2561553035e9dc63d3fcc6d6125b0f3adeec71e41d2ab664cbb56",
+    "width": 770,
+    "height": 770,
+    "bytes": 86140,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ab5d27d34d50/al-biruni-earth-05.png-770.webp",
+        "width": 770,
+        "height": 770,
+        "sha256": "49922da3508a93cf6d1bc81d47868679b8840ba70f9e386ba4291b8b9e5f3ebb",
+        "bytes": 37818
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-ab5d27d34d50-al-biruni-earth-05-028efcad01e2561553035e9dc63d3fcc6d6125b0f3adeec71e41d2ab664cbb56.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/666209237",
+      "asset_id": 666209237,
+      "release_tag": "article-originals-0",
+      "sha256": "028efcad01e2561553035e9dc63d3fcc6d6125b0f3adeec71e41d2ab664cbb56",
+      "bytes": 86140
+    }
+  },
+  "/assets/images/hm-tt-ab5d27d34d50/al-biruni-earth-06.jpeg": {
+    "sha256": "91f2cb2c897166eb91f7e16aecbcf3f5fae8ff9cb31aa95748df98fd3a204cfd",
+    "width": 960,
+    "height": 1280,
+    "bytes": 219144,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ab5d27d34d50/al-biruni-earth-06.jpeg-960.webp",
+        "width": 960,
+        "height": 1280,
+        "sha256": "634b11f63209ee21cee6774ef784ff2c983e957a366665ac6dabbd2c0f8484f4",
+        "bytes": 1147300
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-ab5d27d34d50-al-biruni-earth-06-91f2cb2c897166eb91f7e16aecbcf3f5fae8ff9cb31aa95748df98fd3a204cfd.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/666209476",
+      "asset_id": 666209476,
+      "release_tag": "article-originals-9",
+      "sha256": "91f2cb2c897166eb91f7e16aecbcf3f5fae8ff9cb31aa95748df98fd3a204cfd",
+      "bytes": 219144
+    }
+  }
+}
