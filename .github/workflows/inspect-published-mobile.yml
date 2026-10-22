@@ -1,0 +1,44 @@
+name: Inspect published mobile articles
+on:
+  push:
+    branches: [feature/mobile-formula-containment]
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Inspect live published pages without a site build
+        run: |
+          node --input-type=module <<'JS'
+          import {chromium} from 'playwright';
+          const browser = await chromium.launch();
+          const page = await browser.newPage({viewport: {width: 320, height: 1000}, reducedMotion: 'reduce'});
+          const records = await (await fetch('https://history-math.org/assets/search-ru.json')).json();
+          const failures = [];
+          for (const record of records) {
+            await page.goto('https://history-math.org' + record.url, {waitUntil: 'networkidle'});
+            await page.evaluate(() => document.fonts.ready);
+            const report = await page.evaluate(() => ({
+              width: innerWidth, actual: document.documentElement.scrollWidth,
+              wide: [...document.querySelectorAll('main *')].filter(n => n.getBoundingClientRect().right > innerWidth + 1)
+                .map(n => ({tag: n.tagName, class: n.className?.baseVal ?? n.className,
+                  width: n.getBoundingClientRect().width, right: n.getBoundingClientRect().right,
+                  display: getComputedStyle(n).display, overflow: getComputedStyle(n).overflowX,
+                  tex: n.dataset.tex, text: n.textContent.trim().slice(0, 140)})).slice(0, 25)
+            }));
+            if (report.actual > report.width + 1) { failures.push({url: record.url, ...report}); console.log('OVERFLOW ' + JSON.stringify(failures.at(-1))); }
+          }
+          console.log('SUMMARY ' + JSON.stringify({checked: records.length, failures: failures.length}));
+          await browser.close();
+          JS
