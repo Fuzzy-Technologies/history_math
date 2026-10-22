@@ -22,7 +22,7 @@ tags:
 - Kolmogorov
 - Wiener
 math: true
-status: draft
+status: published
 date: '2023-08-25'
 permalink: /articles/hm-tt-b42f411dbebb/
 rights_basis: Owner-requested migration of the author's complete Teletype publication on 2026-10-11; editorial publication

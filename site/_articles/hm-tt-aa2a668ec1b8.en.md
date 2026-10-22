@@ -17,7 +17,7 @@ tags:
 - Lives_of_Remarkable_People
 - Viète
 math: true
-status: draft
+status: published
 date: '2023-08-22'
 permalink: /articles/hm-tt-aa2a668ec1b8/
 rights_basis: Owner-requested migration of the author's complete Teletype publication on 2026-10-11; editorial publication

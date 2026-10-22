@@ -17,7 +17,7 @@ tags:
   - ЖЗЛ
   - Кардано
 math: true
-status: draft
+status: published
 date: '2023-08-22'
 permalink: /ru/articles/hm-tt-c18ad1d221bd/
 rights_basis: Owner-requested migration of the author's complete Teletype
