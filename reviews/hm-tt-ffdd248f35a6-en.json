@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-ffdd248f35a6-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-migration-1",
+      "question": "The source text and figure caption state ‘34 + 8:2 = 34 cm²’. Ordinary arithmetic gives 38 cm². Please confirm the intended square count, calculation and final area against the illustration before publication. The source expression is retained in both languages.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-03-19",
+      "url": "https://teletype.in/@history_math/palette"
+    }
+  }
+}
