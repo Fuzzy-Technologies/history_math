@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-27be9c0624da-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "fb6cc202c3d2b0677c51d9b33f603052fa13aa96b396a3eb9b74cac3eaf069e8",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/88#pullrequestreview-5617292149",
+    "source_commit": "0ad3c1bc1fd7b15abe6cff98f21220575c97b718",
+    "source_review_id": 5617292149,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T16:10:50Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-05-01",
+      "url": "https://teletype.in/@history_math/The-Field-Compass"
+    }
+  }
+}

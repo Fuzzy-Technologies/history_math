@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-27be9c0624da/the-field-compass-01.png": {
+    "sha256": "fdf83f40b9d5f7b672a73e917801ac79f3eee22da39bbc8f734918055a38644d",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2871208,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-27be9c0624da/the-field-compass-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "74626d163400096c07d7bd9edfa937d66e609aa155400152b1257be57781d23d",
+        "bytes": 1641584
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-27be9c0624da-the-field-compass-01-fdf83f40b9d5f7b672a73e917801ac79f3eee22da39bbc8f734918055a38644d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630493304",
+      "asset_id": 630493304,
+      "release_tag": "article-originals-f",
+      "sha256": "fdf83f40b9d5f7b672a73e917801ac79f3eee22da39bbc8f734918055a38644d",
+      "bytes": 2871208
+    }
+  },
+  "/assets/images/hm-tt-27be9c0624da/the-field-compass-02.png": {
+    "sha256": "0146b3264318b89dbbde3a9dd379eeccf26222e0723057e26050ce8f09cfaf06",
+    "width": 880,
+    "height": 612,
+    "bytes": 486257,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-27be9c0624da/the-field-compass-02.png-880.webp",
+        "width": 880,
+        "height": 612,
+        "sha256": "5796f0fb7e3cbbe48e7418a51ada4cbb13ffdbcaa538925b989e768e496c252f",
+        "bytes": 198356
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-27be9c0624da-the-field-compass-02-0146b3264318b89dbbde3a9dd379eeccf26222e0723057e26050ce8f09cfaf06.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630532951",
+      "asset_id": 630532951,
+      "release_tag": "article-originals-0",
+      "sha256": "0146b3264318b89dbbde3a9dd379eeccf26222e0723057e26050ce8f09cfaf06",
+      "bytes": 486257
+    }
+  },
+  "/assets/images/hm-tt-27be9c0624da/the-field-compass-03.jpeg": {
+    "sha256": "fc660eb73fa2884026243b0a98328e78ffa47dcc9b72d3513d9c2174b1147f58",
+    "width": 1000,
+    "height": 760,
+    "bytes": 148609,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-27be9c0624da/the-field-compass-03.jpeg-960.webp",
+        "width": 960,
+        "height": 730,
+        "sha256": "78f57891bc750c4b6430c1497938e6686d2f4bc4c21b6202ebee248a1a53bb00",
+        "bytes": 609618
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-27be9c0624da-the-field-compass-03-fc660eb73fa2884026243b0a98328e78ffa47dcc9b72d3513d9c2174b1147f58.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630533120",
+      "asset_id": 630533120,
+      "release_tag": "article-originals-f",
+      "sha256": "fc660eb73fa2884026243b0a98328e78ffa47dcc9b72d3513d9c2174b1147f58",
+      "bytes": 148609
+    }
+  }
+}
