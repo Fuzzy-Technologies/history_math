@@ -1,0 +1,17 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-905d637b4435-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-06-09",
+      "url": "https://teletype.in/@history_math/O-predmete-matematiki-kratkaya-harakteristika-06-09"
+    }
+  }
+}

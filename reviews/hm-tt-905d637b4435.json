@@ -1,0 +1,17 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-905d637b4435",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-06-09",
+      "url": "https://teletype.in/@history_math/O-predmete-matematiki-kratkaya-harakteristika-06-09"
+    }
+  }
+}
