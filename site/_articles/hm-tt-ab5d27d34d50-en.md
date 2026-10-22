@@ -20,11 +20,11 @@ tags:
 - Trigonometry
 - Measuring the Earth
 math: true
-status: draft
+status: published
 date: '2026-04-24'
 permalink: /articles/hm-tt-ab5d27d34d50/
 rights_basis: Owner-requested migration of the author's complete Teletype publication on 2026-10-11; editorial publication
-  approval remains pending; no new license asserted.
+  approved under the owner-delegated audit; no new license asserted.
 original_publication:
   outlet: Teletype
   date: '2026-04-24'
