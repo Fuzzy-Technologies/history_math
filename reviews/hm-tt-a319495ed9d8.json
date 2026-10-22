@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-a319495ed9d8",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "b4cd172ee5bbad649d00f642fb29bf36eef06581d27205335fa4e5b71f319b2e",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/92#pullrequestreview-5617294667",
+    "source_commit": "4a3194ab0fafa68fe2b7eafbf40e22afa8a73d81",
+    "source_review_id": 5617294667,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T16:11:00Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-04-09",
+      "url": "https://teletype.in/@history_math/Tricky-soldiers-in-the-tavern"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
