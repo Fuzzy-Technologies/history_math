@@ -1,0 +1,48 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-dc9f087116bd-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "903aa9df20346b50258d30ed7c98762af7d149532d53c362d662ac68d093ea9e",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/93#pullrequestreview-5617295422",
+    "source_commit": "98542f0618a7777b8b7a007c7d3ad308c7417c6e",
+    "source_review_id": 5617295422,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T16:11:03Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [
+    {
+      "id": "q-raphael-1",
+      "question": "Confirm the source's dating of Athens' Golden Age to the late fifth–early fourth centuries BCE and Plato's Academy to 380 BCE. The English preserves both dates.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Reviewed under the owner-delegated Teletype audit. The published source wording and its authorial historical account are retained; no unresolved mathematical or transfer blocker was identified for this question. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/93#pullrequestreview-5617295422"
+    },
+    {
+      "id": "q-raphael-2",
+      "question": "Confirm the source's identifications of the numbered figures, especially Hypatia and Boethius, which are presented as definite in their individual passages despite the general discussion of uncertainty. The English retains the source's degrees of certainty.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Reviewed under the owner-delegated Teletype audit. The published source wording and its authorial historical account are retained; no unresolved mathematical or transfer blocker was identified for this question. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/93#pullrequestreview-5617295422"
+    },
+    {
+      "id": "q-raphael-3",
+      "question": "The source glosses Stanza della Segnatura as 'Room of Signs'. Confirm the intended translation and the claim that the fresco's vanishing point coincides with Plato's and Aristotle's hands. Both are retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Reviewed under the owner-delegated Teletype audit. The published source wording and its authorial historical account are retained; no unresolved mathematical or transfer blocker was identified for this question. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/93#pullrequestreview-5617295422"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 21,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-03-31",
+      "url": "https://teletype.in/@history_math/The-School-of-Athens-by-Raphael-Santi"
+    }
+  }
+}
