@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-c933e6a5aaf6-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "41d978889f55502e9803c9edb220593d4db76c600e6ada1b19b2e4bc8baa0fb7",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/83#pullrequestreview-5617288253",
+    "source_commit": "27eb86858fb77b1e434b498f2dff1f2ca0bd8098",
+    "source_review_id": 5617288253,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T16:10:37Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-06-04",
+      "url": "https://teletype.in/@history_math/Infinite-Descent"
+    }
+  }
+}

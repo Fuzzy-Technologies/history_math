@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-c933e6a5aaf6/infinite-descent-01.png": {
+    "sha256": "38f8aefe0010c8b4619697159b12fc56ad778e17dfd0a555d0c9280216eb07f7",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3830188,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-c933e6a5aaf6/infinite-descent-01.png-960.webp",
+        "width": 960,
+        "height": 640,
+        "sha256": "62e3132f95c5be79486319a40ed0d0d903567e21572566d343a0248ad289039e",
+        "bytes": 839246
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-c933e6a5aaf6-infinite-descent-01-38f8aefe0010c8b4619697159b12fc56ad778e17dfd0a555d0c9280216eb07f7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630493493",
+      "asset_id": 630493493,
+      "release_tag": "article-originals-3",
+      "sha256": "38f8aefe0010c8b4619697159b12fc56ad778e17dfd0a555d0c9280216eb07f7",
+      "bytes": 3830188
+    }
+  },
+  "/assets/images/hm-tt-c933e6a5aaf6/infinite-descent-02.jpeg": {
+    "sha256": "00bef0ada970df15d83defc4beaec9888bbb99f3d44f4da993dd2acdf49092fa",
+    "width": 2500,
+    "height": 3529,
+    "bytes": 1476976,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-c933e6a5aaf6/infinite-descent-02-jpeg-reading-960-b821a61aa9fd.webp",
+        "width": 960,
+        "height": 1355,
+        "sha256": "b821a61aa9fd657c93e725fd53494a765714913c0d9ac33487a33294d0ab7cad",
+        "bytes": 785496
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-c933e6a5aaf6-infinite-descent-02-00bef0ada970df15d83defc4beaec9888bbb99f3d44f4da993dd2acdf49092fa.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630530583",
+      "asset_id": 630530583,
+      "release_tag": "article-originals-0",
+      "sha256": "00bef0ada970df15d83defc4beaec9888bbb99f3d44f4da993dd2acdf49092fa",
+      "bytes": 1476976
+    }
+  },
+  "/assets/images/hm-tt-c933e6a5aaf6/infinite-descent-03.png": {
+    "sha256": "b2cce074a328fe36a34be3a51d57b0cdefad03c11d7afa8ae285d7dfc15e627e",
+    "width": 1713,
+    "height": 2421,
+    "bytes": 1025437,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-c933e6a5aaf6/infinite-descent-03.png-960.webp",
+        "width": 960,
+        "height": 1357,
+        "sha256": "9dbbe6b89aa165ebf989d61f75e3acce3d69db34d935cc6693fea272b26e7a10",
+        "bytes": 244218
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-c933e6a5aaf6-infinite-descent-03-b2cce074a328fe36a34be3a51d57b0cdefad03c11d7afa8ae285d7dfc15e627e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630530822",
+      "asset_id": 630530822,
+      "release_tag": "article-originals-b",
+      "sha256": "b2cce074a328fe36a34be3a51d57b0cdefad03c11d7afa8ae285d7dfc15e627e",
+      "bytes": 1025437
+    }
+  }
+}
