@@ -1,0 +1,27 @@
+{
+  "/assets/images/hm-tt-899154c2dd52/spravedlivyj-razdel-delimyh-01.png": {
+    "sha256": "5fcb0f108123021c8d6bd0f36895ab0665c5bd63fcbb79145b255908395b510a",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 1341655,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-899154c2dd52/spravedlivyj-razdel-delimyh-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "a10f47426fd6d6b2cb15039d769592fd3d559f0086451612d7c1cd38f8ca570d",
+        "bytes": 541062
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-899154c2dd52-spravedlivyj-razdel-delimyh-01-5fcb0f108123021c8d6bd0f36895ab0665c5bd63fcbb79145b255908395b510a.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497915",
+      "asset_id": 630497915,
+      "release_tag": "article-originals-5",
+      "sha256": "5fcb0f108123021c8d6bd0f36895ab0665c5bd63fcbb79145b255908395b510a",
+      "bytes": 1341655
+    }
+  }
+}
