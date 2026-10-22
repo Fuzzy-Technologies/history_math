@@ -1,0 +1,37 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-37f788299a0f-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "f10e264153f7363dcb415344e28750b7d8cb57809871bdc1ba3e49ad9cf7c662",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/84#pullrequestreview-5617289045",
+    "source_commit": "bf771ebfb9dfd19b88daeec22113a8d15162fd38",
+    "source_review_id": 5617289045,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T16:10:40Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [
+    {
+      "id": "en-kolmogorov-quotation",
+      "question": "Please supply a verifiable source for the opening quotation attributed to Kolmogorov. Its wording and attribution are retained from the Russian article.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Reviewed under the owner-delegated Teletype audit. The published source wording and its authorial historical account are retained; no unresolved mathematical or transfer blocker was identified for this question. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/84#pullrequestreview-5617289045"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-05-28",
+      "url": "https://teletype.in/@history_math/Kolmogorov-Buttons"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
