@@ -20,6 +20,27 @@ test('source checks use shallow heads and publication resolves the exact master 
   assert.match(deploy, /HISTORY_MATH_PUBLICATION_REF="\$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build/);
 });
 
+test('article preparation uses one trusted workflow SHA when the PR base snapshot is stale', () => {
+  const workflow = parse(readFileSync('.github/workflows/article-prepare.yml', 'utf8'));
+  const check = candidate => {
+    for (const job of [candidate.jobs.plan, candidate.jobs.prepare]) {
+      const checkout = job.steps.find(step => step.uses?.startsWith('actions/checkout@'));
+      for (const event of ['pull_request_target', 'workflow_dispatch']) {
+        const github = {sha: 'trusted-current-master', event_name: event,
+          event: {pull_request: {base: {sha: 'stale-pr-base'}, head: {sha: 'untrusted-head'}}}};
+        const expression = checkout.with.ref.slice(3, -2).trim();
+        assert.equal(new Function('github', `return (${expression});`)(github), github.sha);
+      }
+      assert.ok(job.steps.some(step => step.run?.includes('--base-sha "$GITHUB_SHA"') || step.run?.includes('--plan test-results/article-preparation-plan.json')));
+    }
+  };
+  check(workflow);
+  const stale = structuredClone(workflow);
+  stale.jobs.prepare.steps.find(step => step.uses?.startsWith('actions/checkout@')).with.ref =
+    "${{ github.event_name == 'pull_request_target' && github.event.pull_request.base.sha || github.sha }}";
+  assert.throws(() => check(stale));
+});
+
 test('publication validates and uploads the build selected by GitHub Pages metadata', () => {
   const workflow = parse(readFileSync('.github/workflows/deploy.yml', 'utf8'));
   const steps = workflow.jobs.build.steps;
