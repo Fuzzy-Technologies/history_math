@@ -24,6 +24,12 @@ document.querySelectorAll('.prose table').forEach((table, index) => {
   region.append(table);
 });
 
+document.querySelectorAll('.prose pre').forEach((block, index) => {
+  block.tabIndex = 0;
+  block.setAttribute('role', 'region');
+  block.setAttribute('aria-label', `${ru ? 'Пример кода' : 'Code example'} ${index + 1}`);
+});
+
 const themeButton = document.querySelector('.theme-toggle');
 const systemTheme = matchMedia('(prefers-color-scheme: dark)');
 let explicitTheme = false;
