@@ -1,0 +1,52 @@
+{
+  "/assets/images/hm-tt-dd2ef8a97500/chinese-remainder-theorem-01.webp": {
+    "sha256": "e4b9ed962734e8eb010c9465c25c9e79a88b04642092ea2d8c367420dfdd1045",
+    "width": 1600,
+    "height": 900,
+    "bytes": 1915756,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dd2ef8a97500/chinese-remainder-theorem-01.webp-960.webp",
+        "width": 960,
+        "height": 540,
+        "sha256": "dc443a2fdecb64012e09d085e319a5992197606799cc29002672ff6ebb4ff531",
+        "bytes": 767810
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-dd2ef8a97500-chinese-remainder-theorem-01-e4b9ed962734e8eb010c9465c25c9e79a88b04642092ea2d8c367420dfdd1045.webp",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630492231",
+      "asset_id": 630492231,
+      "release_tag": "article-originals-e",
+      "sha256": "e4b9ed962734e8eb010c9465c25c9e79a88b04642092ea2d8c367420dfdd1045",
+      "bytes": 1915756
+    }
+  },
+  "/assets/images/hm-tt-dd2ef8a97500/chinese-remainder-theorem-02.png": {
+    "sha256": "c472741f02471f88a1e52cfbbf43c2c7f0f1a4bb31483b10eb5fc3d1d9f882e2",
+    "width": 960,
+    "height": 1440,
+    "bytes": 159162,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-dd2ef8a97500/chinese-remainder-theorem-02.png-960.webp",
+        "width": 960,
+        "height": 1440,
+        "sha256": "59063e75d081308e54a3dbf40bd0bccccd528aff2050af67f9194e028de554a0",
+        "bytes": 76454
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-dd2ef8a97500-chinese-remainder-theorem-02-c472741f02471f88a1e52cfbbf43c2c7f0f1a4bb31483b10eb5fc3d1d9f882e2.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630529115",
+      "asset_id": 630529115,
+      "release_tag": "article-originals-c",
+      "sha256": "c472741f02471f88a1e52cfbbf43c2c7f0f1a4bb31483b10eb5fc3d1d9f882e2",
+      "bytes": 159162
+    }
+  }
+}

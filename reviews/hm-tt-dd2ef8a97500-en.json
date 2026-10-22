@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-dd2ef8a97500-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "5f0b69e0354169652f76c3012dc1757ee77d787c090273608d04419044154e3e",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/68#pullrequestreview-5616502064",
+    "source_commit": "17b292b17a5622b359dbf7e0f95d9918e9a0b06a",
+    "source_review_id": 5616502064,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T15:16:24Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2026-02-05",
+      "url": "https://teletype.in/@history_math/chinese-remainder-theorem"
+    }
+  }
+}
