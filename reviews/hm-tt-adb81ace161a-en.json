@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-adb81ace161a-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "6180321ff34d0d8f881b74efa49b4f4d3ecd3874318d6b37871e9788df6913e1",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/71#pullrequestreview-5616511177",
+    "source_commit": "eb6405f65a7379ba4f66bde00c786b1f8e90ab36",
+    "source_review_id": 5616511177,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T15:17:04Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-10-06",
+      "url": "https://teletype.in/@history_math/tape-measure"
+    }
+  }
+}
