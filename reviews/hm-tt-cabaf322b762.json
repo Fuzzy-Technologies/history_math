@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-cabaf322b762",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "f01007805253e36ed5c72dcb445b038b9731636a85d8efabfce36bc8bebe46f4",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/64#pullrequestreview-5617305463",
+    "source_commit": "7fec8d8e54a4542949ea906a19a23c73c9cb25c1",
+    "source_review_id": 5617305463,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T16:11:44Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 14,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2026-04-18",
+      "url": "https://teletype.in/@history_math/mccme-seminars-2025-2026"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
