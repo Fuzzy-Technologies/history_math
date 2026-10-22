@@ -1,0 +1,37 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-3079a878ffdf-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "e3d62259653a1d0c89612255e8349c514ef367b5cfa2c1b83baa14959bf9a250",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/86#pullrequestreview-5617291202",
+    "source_commit": "5b0774e395573a99feccaa6718f4f31dd33fceba",
+    "source_review_id": 5617291202,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T16:10:47Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [
+    {
+      "id": "en-triangle-publication",
+      "question": "Can the editor supply an issue, year and page reference supporting the claim that the puzzle first appeared in Journal of Recreational Mathematics in the 1970s under the stated title? The source claim is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Reviewed under the owner-delegated Teletype audit. The published source wording and its authorial historical account are retained; no unresolved mathematical or transfer blocker was identified for this question. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/86#pullrequestreview-5617291202"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-05-01",
+      "url": "https://teletype.in/@history_math/The-Einstein-Triangle"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
