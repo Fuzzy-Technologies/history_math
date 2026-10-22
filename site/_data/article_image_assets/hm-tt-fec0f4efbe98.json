@@ -107,11 +107,11 @@
     "logo": false,
     "variants": [
       {
-        "path": "/assets/images/previews/hm-tt-fec0f4efbe98/bernulli-iogann-16671748-01-05.gif-400.webp",
+        "path": "/assets/images/previews/hm-tt-fec0f4efbe98/cycloid-frame-076-9f48955d86afe568d1ee1f67d7310217dc86f4b19f6588851d5ffeb028a63139.webp",
         "width": 400,
         "height": 200,
-        "sha256": "17f7f5091a74c73b3be26d3f3b0bd8b2c038b6730e2a35705fcf60d698d14269",
-        "bytes": 76486
+        "sha256": "9f48955d86afe568d1ee1f67d7310217dc86f4b19f6588851d5ffeb028a63139",
+        "bytes": 1636
       }
     ],
     "external_original": {
