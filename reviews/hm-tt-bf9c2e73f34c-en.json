@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-bf9c2e73f34c-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "flexible-polyhedra-flexagons",
+      "question": "The opening paragraph calls flexible figures with regular-polygon faces “flexagons”, potentially conflating flexible polyhedra with the folded paper flexagons described next. Please confirm the intended distinction. The source wording is preserved in substance.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-06-16",
+      "url": "https://teletype.in/@history_math/Fleksagon"
+    }
+  }
+}
