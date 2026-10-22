@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-1a77a094393e-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "nymph-theorem-attribution",
+      "question": "Can a source substantiate the assertion that Euclid called this the “nymph's theorem,” including the butterfly/bride explanation? The original claim appears in both prose and a caption and is retained pending review.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 8,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-01-08",
+      "url": "https://teletype.in/@history_math/Geometriya-pifagorejcev-teorema-Pifagora-01-08"
+    }
+  }
+}
