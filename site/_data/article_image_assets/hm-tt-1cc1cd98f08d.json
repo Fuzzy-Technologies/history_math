@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-1cc1cd98f08d/nomogramma-11-17-01.png": {
+    "sha256": "4fa2c7db358f14a6b189d7e67f2672849b4b235d3f5bfb3bcf37d4b77a18d259",
+    "width": 1150,
+    "height": 1350,
+    "bytes": 395893,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1cc1cd98f08d/nomogramma-11-17-01.png-960.webp",
+        "width": 960,
+        "height": 1127,
+        "sha256": "44f6c248dd915327bd35d23fa702fc6aa38158de58b8fe7ea11b73457a7ae11a",
+        "bytes": 1416522
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-1cc1cd98f08d-nomogramma-11-17-01-4fa2c7db358f14a6b189d7e67f2672849b4b235d3f5bfb3bcf37d4b77a18d259.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630503290",
+      "asset_id": 630503290,
+      "release_tag": "article-originals-4",
+      "sha256": "4fa2c7db358f14a6b189d7e67f2672849b4b235d3f5bfb3bcf37d4b77a18d259",
+      "bytes": 395893
+    }
+  },
+  "/assets/images/hm-tt-1cc1cd98f08d/nomogramma-11-17-02.png": {
+    "sha256": "27eeadcdbd647a010e06d71c931f93b4b4ff534a975220263e2534f18c337388",
+    "width": 620,
+    "height": 920,
+    "bytes": 64317,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1cc1cd98f08d/nomogramma-11-17-02.png-620.webp",
+        "width": 620,
+        "height": 920,
+        "sha256": "3f30c97ec10c7b53ac9a9bc03ba679936e5dd3c02aa72d2e21cb0784b07c6326",
+        "bytes": 27270
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-1cc1cd98f08d-nomogramma-11-17-02-27eeadcdbd647a010e06d71c931f93b4b4ff534a975220263e2534f18c337388.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548502",
+      "asset_id": 630548502,
+      "release_tag": "article-originals-2",
+      "sha256": "27eeadcdbd647a010e06d71c931f93b4b4ff534a975220263e2534f18c337388",
+      "bytes": 64317
+    }
+  },
+  "/assets/images/hm-tt-1cc1cd98f08d/nomogramma-11-17-03.png": {
+    "sha256": "d6a269bcbf8473bbe6c3537172069877684c276c720d24f67cc3d75973e51ec2",
+    "width": 1695,
+    "height": 878,
+    "bytes": 92100,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1cc1cd98f08d/nomogramma-11-17-03.png-960.webp",
+        "width": 960,
+        "height": 497,
+        "sha256": "50e8ec2375dc590b6f6b35769bb69fea2b360f7643096e7e6a1d9673865a3f8c",
+        "bytes": 43736
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-1cc1cd98f08d-nomogramma-11-17-03-d6a269bcbf8473bbe6c3537172069877684c276c720d24f67cc3d75973e51ec2.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548648",
+      "asset_id": 630548648,
+      "release_tag": "article-originals-d",
+      "sha256": "d6a269bcbf8473bbe6c3537172069877684c276c720d24f67cc3d75973e51ec2",
+      "bytes": 92100
+    }
+  },
+  "/assets/images/hm-tt-1cc1cd98f08d/nomogramma-11-17-04.png": {
+    "sha256": "e5b7ffba54819f14f98bc5f4a36f6e8ab7a00b60d101530519d1f731c24c29e7",
+    "width": 415,
+    "height": 600,
+    "bytes": 72964,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1cc1cd98f08d/nomogramma-11-17-04.png-415.webp",
+        "width": 415,
+        "height": 600,
+        "sha256": "ff3bdddbc6562c44ac0a18fc09a669f82f8a93dbf0fd92da178db3f7bb0c88bd",
+        "bytes": 41702
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-1cc1cd98f08d-nomogramma-11-17-04-e5b7ffba54819f14f98bc5f4a36f6e8ab7a00b60d101530519d1f731c24c29e7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548772",
+      "asset_id": 630548772,
+      "release_tag": "article-originals-e",
+      "sha256": "e5b7ffba54819f14f98bc5f4a36f6e8ab7a00b60d101530519d1f731c24c29e7",
+      "bytes": 72964
+    }
+  },
+  "/assets/images/hm-tt-1cc1cd98f08d/nomogramma-11-17-05.png": {
+    "sha256": "24845312058aa9984a5c596e0fb9a6de056554cd94a9a1b00cbd4571635878c5",
+    "width": 2244,
+    "height": 3147,
+    "bytes": 16047308,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1cc1cd98f08d/nomogramma-11-17-05.png-960.webp",
+        "width": 960,
+        "height": 1346,
+        "sha256": "cdc6b15fb3df25c295117ea46498ba2fb52de3b8c8f504dc0fc5651934e13a7b",
+        "bytes": 1702376
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-1cc1cd98f08d-nomogramma-11-17-05-24845312058aa9984a5c596e0fb9a6de056554cd94a9a1b00cbd4571635878c5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548949",
+      "asset_id": 630548949,
+      "release_tag": "article-originals-2",
+      "sha256": "24845312058aa9984a5c596e0fb9a6de056554cd94a9a1b00cbd4571635878c5",
+      "bytes": 16047308
+    }
+  },
+  "/assets/images/hm-tt-1cc1cd98f08d/nomogramma-11-17-06.png": {
+    "sha256": "bd3701315bbaa7396eb2ed4a948fa38d667118257063b4b704713e55e2f676f0",
+    "width": 1693,
+    "height": 847,
+    "bytes": 950857,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1cc1cd98f08d/nomogramma-11-17-06.png-960.webp",
+        "width": 960,
+        "height": 480,
+        "sha256": "de19a210aa4fc9b7a4b1b9e0dd8be9fbdff40ae75f93007e114c5b9dcb7147bb",
+        "bytes": 267700
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-1cc1cd98f08d-nomogramma-11-17-06-bd3701315bbaa7396eb2ed4a948fa38d667118257063b4b704713e55e2f676f0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549122",
+      "asset_id": 630549122,
+      "release_tag": "article-originals-b",
+      "sha256": "bd3701315bbaa7396eb2ed4a948fa38d667118257063b4b704713e55e2f676f0",
+      "bytes": 950857
+    }
+  }
+}
