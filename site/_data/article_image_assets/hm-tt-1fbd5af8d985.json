@@ -1,0 +1,27 @@
+{
+  "/assets/images/hm-tt-1fbd5af8d985/ozanam-dinner-01.png": {
+    "sha256": "d71cd73455380057de1d5a5088b62b26d4ed11a627b924871ccc526e1c0989f6",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2115634,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1fbd5af8d985/ozanam-dinner-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "e8e5bd4e5c391f25a5d8e801bca8d5108cd53d26bd9edebbac793a8bcf956da9",
+        "bytes": 1138860
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-1fbd5af8d985-ozanam-dinner-01-d71cd73455380057de1d5a5088b62b26d4ed11a627b924871ccc526e1c0989f6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630493041",
+      "asset_id": 630493041,
+      "release_tag": "article-originals-d",
+      "sha256": "d71cd73455380057de1d5a5088b62b26d4ed11a627b924871ccc526e1c0989f6",
+      "bytes": 2115634
+    }
+  }
+}
