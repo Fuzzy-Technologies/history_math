@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-9bca9e95f00b-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "91ce7fd468389e8d6c97f1fc7b1f2e7edae9fb068d6d00c74224c7839e8c708c",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/60#pullrequestreview-5617302813",
+    "source_commit": "56614c2de414ee837859808f4bf860438d333f16",
+    "source_review_id": 5617302813,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T16:11:32Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2026-04-25",
+      "url": "https://teletype.in/@history_math/ybc-7289-sqrt2"
+    }
+  }
+}
