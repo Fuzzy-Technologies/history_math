@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-6395d0df3ad4/bolshie-chisla-01-06-01.png": {
+    "sha256": "358d4b23aca1b97aeed2d82abb9e92ae84cc6f484edd9dca270df20123da9316",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2794524,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6395d0df3ad4/bolshie-chisla-01-06-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "941a33d4ea3d9b88678ae6b8470065bd82799db6c279f1bcfefd04a97d1d8af0",
+        "bytes": 1146438
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-6395d0df3ad4-bolshie-chisla-01-06-01-358d4b23aca1b97aeed2d82abb9e92ae84cc6f484edd9dca270df20123da9316.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630498751",
+      "asset_id": 630498751,
+      "release_tag": "article-originals-3",
+      "sha256": "358d4b23aca1b97aeed2d82abb9e92ae84cc6f484edd9dca270df20123da9316",
+      "bytes": 2794524
+    }
+  },
+  "/assets/images/hm-tt-6395d0df3ad4/bolshie-chisla-01-06-02.png": {
+    "sha256": "c645e762eaa180e8793d38ccd9dcb38defcbaddc5008855c49ee1ddf90cd9e5a",
+    "width": 1024,
+    "height": 714,
+    "bytes": 1889271,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6395d0df3ad4/bolshie-chisla-01-06-02.png-960.webp",
+        "width": 960,
+        "height": 669,
+        "sha256": "660dd596625820c6128b7908cfdd554e4a85829fe0470cb18e859269d506ad46",
+        "bytes": 811842
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-6395d0df3ad4-bolshie-chisla-01-06-02-c645e762eaa180e8793d38ccd9dcb38defcbaddc5008855c49ee1ddf90cd9e5a.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559748",
+      "asset_id": 630559748,
+      "release_tag": "article-originals-c",
+      "sha256": "c645e762eaa180e8793d38ccd9dcb38defcbaddc5008855c49ee1ddf90cd9e5a",
+      "bytes": 1889271
+    }
+  },
+  "/assets/images/hm-tt-6395d0df3ad4/bolshie-chisla-01-06-03.png": {
+    "sha256": "4a0762f62b750fead0f5c08dd2c234a68f29f6e522cd1604103f767ce077b193",
+    "width": 500,
+    "height": 460,
+    "bytes": 58675,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6395d0df3ad4/bolshie-chisla-01-06-03.png-500.webp",
+        "width": 500,
+        "height": 460,
+        "sha256": "27a3e145959d8a85604cc0bf3c12fc763d112bcf550bfe71b1dfebc62e93f2e2",
+        "bytes": 35712
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-6395d0df3ad4-bolshie-chisla-01-06-03-4a0762f62b750fead0f5c08dd2c234a68f29f6e522cd1604103f767ce077b193.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559914",
+      "asset_id": 630559914,
+      "release_tag": "article-originals-4",
+      "sha256": "4a0762f62b750fead0f5c08dd2c234a68f29f6e522cd1604103f767ce077b193",
+      "bytes": 58675
+    }
+  }
+}
