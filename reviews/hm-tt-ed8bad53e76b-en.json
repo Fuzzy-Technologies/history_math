@@ -1,0 +1,37 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-ed8bad53e76b-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "f14f500efd82ed0a70f227bb6ed7c699a59fab9b92e41ae088d2b35a5c721ada",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/91#pullrequestreview-5617293753",
+    "source_commit": "099f086a61e4153391f49b28f0e331240d12245f",
+    "source_review_id": 5617293753,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T16:10:56Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [
+    {
+      "id": "euler-publication-date",
+      "question": "The source gives 1759 as the publication year of Euler’s knight’s-tour paper. Should the distinction between the paper’s presentation, volume date and printing date be checked? The source year is retained.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Reviewed under the owner-delegated Teletype audit. The published source wording and its authorial historical account are retained; no unresolved mathematical or transfer blocker was identified for this question. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/91#pullrequestreview-5617293753"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-04-09",
+      "url": "https://teletype.in/@history_math/Knight-tour"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
