@@ -1,0 +1,17 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-9370105116b8",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-06-09",
+      "url": "https://teletype.in/@history_math/Zadacha-puteshestvennica-sem-koshek-06-09"
+    }
+  }
+}

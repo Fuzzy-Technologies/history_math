@@ -1,0 +1,102 @@
+{
+  "/assets/images/hm-tt-9370105116b8/zadacha-puteshestvennica-sem-01.png": {
+    "sha256": "12064d84e3b92641df0d0a42dc6afe7749a5dbd0f17b8eb4442cd27a300d3b81",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2206689,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-9370105116b8/zadacha-puteshestvennica-sem-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "88fe382afba4886cbee61b5698b9c1f947f049b882efb4f9ad847470f143a2dc",
+        "bytes": 939398
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-9370105116b8-zadacha-puteshestvennica-sem-01-12064d84e3b92641df0d0a42dc6afe7749a5dbd0f17b8eb4442cd27a300d3b81.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630496529",
+      "asset_id": 630496529,
+      "release_tag": "article-originals-1",
+      "sha256": "12064d84e3b92641df0d0a42dc6afe7749a5dbd0f17b8eb4442cd27a300d3b81",
+      "bytes": 2206689
+    }
+  },
+  "/assets/images/hm-tt-9370105116b8/zadacha-puteshestvennica-sem-02.png": {
+    "sha256": "42c86da2b05bed2d50e6199873f1892ce83fd354c2ae1b484376e01ac536624e",
+    "width": 2316,
+    "height": 928,
+    "bytes": 6076293,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-9370105116b8/zadacha-puteshestvennica-sem-02.png-960.webp",
+        "width": 960,
+        "height": 385,
+        "sha256": "9b62eb247c05e302ff0827b98b36d8d0c74b01d06a7d16e65a24f49df4c3eac8",
+        "bytes": 637484
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-9370105116b8-zadacha-puteshestvennica-sem-02-42c86da2b05bed2d50e6199873f1892ce83fd354c2ae1b484376e01ac536624e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630550864",
+      "asset_id": 630550864,
+      "release_tag": "article-originals-4",
+      "sha256": "42c86da2b05bed2d50e6199873f1892ce83fd354c2ae1b484376e01ac536624e",
+      "bytes": 6076293
+    }
+  },
+  "/assets/images/hm-tt-9370105116b8/zadacha-puteshestvennica-sem-03.png": {
+    "sha256": "2db72a40da4b18a3a1fa9992594d4e44532f9c2423df0f695de224eb50f368fa",
+    "width": 1078,
+    "height": 907,
+    "bytes": 1220255,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-9370105116b8/zadacha-puteshestvennica-sem-03.png-960.webp",
+        "width": 960,
+        "height": 808,
+        "sha256": "2b23d3f6c331c104854687a8ce66fbad5f593367ee7f6b80a320ef7ca4d15d2c",
+        "bytes": 525146
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-9370105116b8-zadacha-puteshestvennica-sem-03-2db72a40da4b18a3a1fa9992594d4e44532f9c2423df0f695de224eb50f368fa.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551075",
+      "asset_id": 630551075,
+      "release_tag": "article-originals-2",
+      "sha256": "2db72a40da4b18a3a1fa9992594d4e44532f9c2423df0f695de224eb50f368fa",
+      "bytes": 1220255
+    }
+  },
+  "/assets/images/hm-tt-9370105116b8/zadacha-puteshestvennica-sem-04.png": {
+    "sha256": "e1d3a4ab0e7c52a608d55dee21ef894d12561cf26a4ac31fa339aeeac4e50482",
+    "width": 1050,
+    "height": 705,
+    "bytes": 2009132,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-9370105116b8/zadacha-puteshestvennica-sem-04.png-960.webp",
+        "width": 960,
+        "height": 645,
+        "sha256": "8704249c9c07706c862cea9d8c51e73716b69afa2860f0789feb16e17354929f",
+        "bytes": 798226
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-9370105116b8-zadacha-puteshestvennica-sem-04-e1d3a4ab0e7c52a608d55dee21ef894d12561cf26a4ac31fa339aeeac4e50482.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551203",
+      "asset_id": 630551203,
+      "release_tag": "article-originals-e",
+      "sha256": "e1d3a4ab0e7c52a608d55dee21ef894d12561cf26a4ac31fa339aeeac4e50482",
+      "bytes": 2009132
+    }
+  }
+}
