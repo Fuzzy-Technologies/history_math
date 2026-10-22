@@ -1,0 +1,52 @@
+{
+  "/assets/images/hm-tt-1220bac36def/percents-01.jpeg": {
+    "sha256": "a653a1a594e3b90f1fe7035603146885694462b8237705835de021e150389810",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 344968,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1220bac36def/percents-01.jpeg-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "32586d29bb02a41e4b65118bcc3cf6056f0fe9c53950dd2829271ea8915f1173",
+        "bytes": 1061956
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-1220bac36def-percents-01-a653a1a594e3b90f1fe7035603146885694462b8237705835de021e150389810.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630499273",
+      "asset_id": 630499273,
+      "release_tag": "article-originals-a",
+      "sha256": "a653a1a594e3b90f1fe7035603146885694462b8237705835de021e150389810",
+      "bytes": 344968
+    }
+  },
+  "/assets/images/hm-tt-1220bac36def/percents-02.jpeg": {
+    "sha256": "d72b246843013b5189a527d48e497b3592f26958f9a092f12167feb4389a69cc",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 352021,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1220bac36def/percents-02.jpeg-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "1edec4aee9246fe45fe25c858113e7ea664aa4637e69b6410115f1664a5b0efc",
+        "bytes": 1239388
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-1220bac36def-percents-02-d72b246843013b5189a527d48e497b3592f26958f9a092f12167feb4389a69cc.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630538435",
+      "asset_id": 630538435,
+      "release_tag": "article-originals-d",
+      "sha256": "d72b246843013b5189a527d48e497b3592f26958f9a092f12167feb4389a69cc",
+      "bytes": 352021
+    }
+  }
+}
