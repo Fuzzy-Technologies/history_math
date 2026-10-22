@@ -87,12 +87,18 @@ jobs:
           PAGES_ORIGIN: https://${{ steps.pages.outputs.host }}
           PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
           FULL_CHECKS: ${{ steps.plan.outputs.full_checks }}
+          PDF_RELEASE_STORAGE: ${{ vars.ARTICLE_PDF_RELEASE_STORAGE }}
         run: |
           node scripts/pages-config.mjs > "$RUNNER_TEMP/history-math-pages.yml"
           HISTORY_MATH_PUBLICATION_REF="$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build --config "_config.yml,$RUNNER_TEMP/history-math-pages.yml" --destination _site-pages --trace
           node scripts/article-pdf.mjs --site-dir _site-pages
           python3 scripts/check_site.py _site-pages "$PAGES_BASE_PATH" "$PAGES_ORIGIN"
-          node scripts/publication-size.mjs _site-pages
+          if [ "$PDF_RELEASE_STORAGE" = "true" ]; then
+            python3 scripts/external_pdfs.py fetch --compatibility-dir test-results/pdf-compatibility-cache --report test-results/pdf-compatibility-fetch.json
+            python3 scripts/external_pdfs.py plan --site-dir _site-pages --compatibility-dir test-results/pdf-compatibility-cache --report test-results/pdf-storage-plan.json
+          else
+            node scripts/publication-size.mjs _site-pages
+          fi
           if [ "$FULL_CHECKS" = "true" ]; then
             IMAGE_SITE_DIR=_site-pages IMAGE_BASEURL="$PAGES_BASE_PATH" node tests/image-delivery-browser.mjs
             ERROR_SITE_DIR=_site-pages ERROR_BASEURL="$PAGES_BASE_PATH" node tests/errors-browser.mjs
@@ -106,11 +112,85 @@ jobs:
           path: .pdf-cache
           key: ${{ steps.pdf-cache.outputs.cache-primary-key }}
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        if: vars.ARTICLE_PDF_RELEASE_STORAGE != 'true'
         with:
           path: _site-pages
-  deploy:
-    if: github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+      - name: Retain checked local output for the opt-in storage job
+        if: vars.ARTICLE_PDF_RELEASE_STORAGE == 'true'
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: pdf-storage-input
+          path: |
+            _site-pages
+            test-results/pdf-storage-plan.json
+            test-results/pdf-compatibility-cache
+            test-results/pdf-compatibility-fetch.json
+          retention-days: 1
+          compression-level: 0
+          if-no-files-found: error
+  pdf-storage:
     needs: build
+    if: >-
+      github.repository == 'Fuzzy-Technologies/history_math' &&
+      github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') &&
+      vars.ARTICLE_PDF_RELEASE_STORAGE == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: pdf-storage-input
+          path: publication-input
+      - name: Verify immutable PDF storage before constructing a separate Pages output
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          ARTICLE_PDF_RELEASE_STORAGE: ${{ vars.ARTICLE_PDF_RELEASE_STORAGE }}
+        run: >-
+          python3 scripts/external_pdfs.py store
+          --site-dir publication-input/_site-pages
+          --plan publication-input/test-results/pdf-storage-plan.json
+          --compatibility-dir publication-input/test-results/pdf-compatibility-cache
+          --destination _site-pages-external
+          --report test-results/pdf-storage-receipt.json
+      - name: Verify external output, native downloads and unchanged size budget
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+          python3 scripts/check_site.py _site-pages-external "$(node -p 'JSON.parse(require("fs").readFileSync("_site-pages-external/assets/article-pdfs.json")).baseurl')" "$(node -p 'JSON.parse(require("fs").readFileSync("_site-pages-external/assets/article-pdfs.json")).origin')"
+          PDF_SITE_DIR=_site-pages-external node tests/pdf-delivery-browser.mjs
+          node scripts/publication-size.mjs _site-pages-external
+      - name: Retain PDF verification evidence
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: pdf-storage-receipt
+          path: |
+            test-results/pdf-storage-receipt.json
+            publication-input/test-results/pdf-storage-plan.json
+            publication-input/test-results/pdf-compatibility-fetch.json
+          retention-days: 30
+          if-no-files-found: error
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: _site-pages-external
+  deploy:
+    if: >-
+      always() && github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') &&
+      needs.build.result == 'success' &&
+      ((vars.ARTICLE_PDF_RELEASE_STORAGE == 'true' && needs.pdf-storage.result == 'success') ||
+       (vars.ARTICLE_PDF_RELEASE_STORAGE != 'true' && needs.pdf-storage.result == 'skipped'))
+    needs: [build, pdf-storage]
     runs-on: ubuntu-24.04
     permissions:
       pages: write

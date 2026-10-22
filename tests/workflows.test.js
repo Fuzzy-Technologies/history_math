@@ -51,7 +51,8 @@ test('publication validates and uploads the build selected by GitHub Pages metad
     JEKYLL_ENV: 'production',
     PAGES_ORIGIN: 'https://${{ steps.pages.outputs.host }}',
     PAGES_BASE_PATH: '${{ steps.pages.outputs.base_path }}',
-    FULL_CHECKS: '${{ steps.plan.outputs.full_checks }}'
+    FULL_CHECKS: '${{ steps.plan.outputs.full_checks }}',
+    PDF_RELEASE_STORAGE: '${{ vars.ARTICLE_PDF_RELEASE_STORAGE }}'
   });
   assert.match(build.run, /node scripts\/pages-config.mjs > "\$RUNNER_TEMP\/history-math-pages.yml"/);
   assert.match(build.run, /jekyll build --config "_config.yml,\$RUNNER_TEMP\/history-math-pages.yml" --destination _site-pages/);
@@ -140,7 +141,7 @@ test('PR metadata uses additive APIs without executing contributor code', async 
 test('production build and deployment both require master for push and manual dispatch', () => {
   const deploy = readFileSync('.github/workflows/deploy.yml', 'utf8');
   const guard = "github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')";
-  assert.equal(deploy.split(guard).length - 1, 2);
+  assert.equal(deploy.split(guard).length - 1, 3);
   assert.match(deploy, /branches: \[master\]/);
   assert.ok(!deploy.includes('pull_request:'));
   for (const branch of ['master', 'develop', 'feature/site-prototype']) {
