@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-e2ee9b3f8708/ornaments-girih-01.jpeg": {
+    "sha256": "09beafdba2830f0e533e240bd0fb04fcf725f9e3845af8cac26663260b03d289",
+    "width": 1160,
+    "height": 1956,
+    "bytes": 667315,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e2ee9b3f8708/ornaments-girih-01.jpeg-960.webp",
+        "width": 960,
+        "height": 1619,
+        "sha256": "8dd869b3e2a4fc4381b45f463620891a43279b508ed7bdaddc0a6dbfe6e6fcb7",
+        "bytes": 2324138
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-e2ee9b3f8708-ornaments-girih-01-09beafdba2830f0e533e240bd0fb04fcf725f9e3845af8cac26663260b03d289.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630491511",
+      "asset_id": 630491511,
+      "release_tag": "article-originals-0",
+      "sha256": "09beafdba2830f0e533e240bd0fb04fcf725f9e3845af8cac26663260b03d289",
+      "bytes": 667315
+    }
+  },
+  "/assets/images/hm-tt-e2ee9b3f8708/ornaments-girih-02.png": {
+    "sha256": "0ee18ee47c68d179c24fa24610d1e5a4458a55cef842637d0ca30b0f690e9317",
+    "width": 1946,
+    "height": 851,
+    "bytes": 3947790,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e2ee9b3f8708/ornaments-girih-02.png-960.webp",
+        "width": 960,
+        "height": 420,
+        "sha256": "022d739e7cda13adca183d5b8d4b3e927ed9266992e4705e8705a29fb7d3d311",
+        "bytes": 581972
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-e2ee9b3f8708-ornaments-girih-02-0ee18ee47c68d179c24fa24610d1e5a4458a55cef842637d0ca30b0f690e9317.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630525789",
+      "asset_id": 630525789,
+      "release_tag": "article-originals-0",
+      "sha256": "0ee18ee47c68d179c24fa24610d1e5a4458a55cef842637d0ca30b0f690e9317",
+      "bytes": 3947790
+    }
+  },
+  "/assets/images/hm-tt-e2ee9b3f8708/ornaments-girih-03.png": {
+    "sha256": "92e47f4edee099438f177d04c8d753baf84f660aa257d9c355417d8b5839cedf",
+    "width": 1474,
+    "height": 822,
+    "bytes": 1388919,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e2ee9b3f8708/ornaments-girih-03.png-960.webp",
+        "width": 960,
+        "height": 535,
+        "sha256": "794a42a56da8df79dbedf9064091575b6816cfe73f8236e17b1ac087d8d9f2bd",
+        "bytes": 443148
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-e2ee9b3f8708-ornaments-girih-03-92e47f4edee099438f177d04c8d753baf84f660aa257d9c355417d8b5839cedf.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526004",
+      "asset_id": 630526004,
+      "release_tag": "article-originals-9",
+      "sha256": "92e47f4edee099438f177d04c8d753baf84f660aa257d9c355417d8b5839cedf",
+      "bytes": 1388919
+    }
+  },
+  "/assets/images/hm-tt-e2ee9b3f8708/ornaments-girih-04.jpeg": {
+    "sha256": "8286bd14d532e6a7467ec8846196e03d0cd7fffa7825e40f5c4cd1a1ca054d1d",
+    "width": 1500,
+    "height": 988,
+    "bytes": 229719,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e2ee9b3f8708/ornaments-girih-04.jpeg-960.webp",
+        "width": 960,
+        "height": 632,
+        "sha256": "d6357b85b01e973175a6c11dd438e84022cfc01ff77ef9c017c0a8f9ed807c16",
+        "bytes": 535474
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-e2ee9b3f8708-ornaments-girih-04-8286bd14d532e6a7467ec8846196e03d0cd7fffa7825e40f5c4cd1a1ca054d1d.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526234",
+      "asset_id": 630526234,
+      "release_tag": "article-originals-8",
+      "sha256": "8286bd14d532e6a7467ec8846196e03d0cd7fffa7825e40f5c4cd1a1ca054d1d",
+      "bytes": 229719
+    }
+  },
+  "/assets/images/hm-tt-e2ee9b3f8708/ornaments-girih-05.jpeg": {
+    "sha256": "3d1d8cdba5fc6f2aa1a971b1d76726950652d7b833ef36c8b56126fd2f4d6ecd",
+    "width": 1230,
+    "height": 1947,
+    "bytes": 461721,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e2ee9b3f8708/ornaments-girih-05.jpeg-960.webp",
+        "width": 960,
+        "height": 1520,
+        "sha256": "5659bf9dc9c54d0e3982dfd93cfca2daa01132aa966737c9f5b49c0588b2c714",
+        "bytes": 843818
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-e2ee9b3f8708-ornaments-girih-05-3d1d8cdba5fc6f2aa1a971b1d76726950652d7b833ef36c8b56126fd2f4d6ecd.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526408",
+      "asset_id": 630526408,
+      "release_tag": "article-originals-3",
+      "sha256": "3d1d8cdba5fc6f2aa1a971b1d76726950652d7b833ef36c8b56126fd2f4d6ecd",
+      "bytes": 461721
+    }
+  },
+  "/assets/images/hm-tt-e2ee9b3f8708/ornaments-girih-06.jpeg": {
+    "sha256": "961a4e38ed7a829a29e21d4c3440fd1adde57c2212a36f11d4ee7605624f33f3",
+    "width": 4000,
+    "height": 3495,
+    "bytes": 2843390,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e2ee9b3f8708/ornaments-girih-06.jpeg-960.webp",
+        "width": 960,
+        "height": 839,
+        "sha256": "ef530d03dda34f698cc432009503b3acb2c66545f1eb473520d02404516097f6",
+        "bytes": 1062156
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-e2ee9b3f8708-ornaments-girih-06-961a4e38ed7a829a29e21d4c3440fd1adde57c2212a36f11d4ee7605624f33f3.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630526576",
+      "asset_id": 630526576,
+      "release_tag": "article-originals-9",
+      "sha256": "961a4e38ed7a829a29e21d4c3440fd1adde57c2212a36f11d4ee7605624f33f3",
+      "bytes": 2843390
+    }
+  }
+}
