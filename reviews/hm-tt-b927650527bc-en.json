@@ -1,0 +1,45 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-b927650527bc-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-cattle-page-count",
+      "question": "The stated 206 545 digits would occupy about 83 pages at 2500 characters per page, whereas the source says 660 pages. Please resolve the numerical inconsistency; every supplied number is retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "en-cattle-total-and-1965",
+      "question": "Please verify whether 7.76 × 10²⁰⁶⁵⁴⁴ is the total of all cattle rather than bulls alone, and distinguish the 1880 mathematical solution from the 1965 printing/computation. The source wording and chronology are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "en-cattle-poem-archaic",
+      "question": "The poem’s phrase “полтрети” is rendered as “half a third” to preserve its apparent fractional context, but its archaic meaning is ambiguous and may conflict with the stated 1/6 + 1/7 condition. Please verify the Russian quotation against the cited translation before authorising a correction.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "en-cattle-computing-authors",
+      "question": "The source gives S. Williams, R. A. German and C. R. Zarnke. The University of Waterloo’s chronology names Hugh Williams, Gus German and Robert Zarnke. Please verify the initials against the 1965 paper; the supplied initials remain in the article. Evidence: https://cs.uwaterloo.ca/40th/Chronology/1965.shtml",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 1,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-03-09",
+      "url": "https://teletype.in/@history_math/The-Cattle-Problem-of-Archimedes"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
