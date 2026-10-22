@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-efe3233ee7ab-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "3d6903f3cb65e43d75b86d49fc570cde0096b4174bf2f6d2148314b1d144c161",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/72#pullrequestreview-5616514079",
+    "source_commit": "8e88c01df8649c547a7220a25741ca25f4e3a020",
+    "source_review_id": 5616514079,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T15:17:17Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 10,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-10-03",
+      "url": "https://teletype.in/@history_math/mordkovich-seminar-2025"
+    }
+  }
+}
