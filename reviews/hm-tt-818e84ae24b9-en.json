@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-818e84ae24b9-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "finite-tilings-scope",
+      "question": "Should statement (2)(b) explicitly restrict the class of tilings, for example to regular and semiregular edge-to-edge tilings? As written, the claim of finitely many tilings by regular polygons is broader than the later classification.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-06-30",
+      "url": "https://teletype.in/@history_math/UIMZ-na-temu-Parkety-06-30"
+    }
+  }
+}
