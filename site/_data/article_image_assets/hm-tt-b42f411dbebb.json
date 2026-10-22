@@ -24,31 +24,6 @@
       "bytes": 388005
     }
   },
-  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-02.png": {
-    "sha256": "043213b407e6d905f0143b2353a72d13d45b73cc66a18ced969dc71e720ee9a5",
-    "width": 272,
-    "height": 141,
-    "bytes": 1800,
-    "logo": false,
-    "variants": [
-      {
-        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-02.png-272.webp",
-        "width": 272,
-        "height": 141,
-        "sha256": "52ad236461ee7521c6d0ef439ecb5c6e3756c2fe74791cf570bb392d583c3f15",
-        "bytes": 730
-      }
-    ],
-    "external_original": {
-      "storage": "github-release",
-      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-02-043213b407e6d905f0143b2353a72d13d45b73cc66a18ced969dc71e720ee9a5.png",
-      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558591",
-      "asset_id": 630558591,
-      "release_tag": "article-originals-0",
-      "sha256": "043213b407e6d905f0143b2353a72d13d45b73cc66a18ced969dc71e720ee9a5",
-      "bytes": 1800
-    }
-  },
   "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-03.png": {
     "sha256": "13cadd54ddb2ee5261818fc501b59e3ca5090d400b20e0daa02196ca1fa29383",
     "width": 584,
@@ -249,31 +224,6 @@
       "bytes": 978721
     }
   },
-  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-11.png": {
-    "sha256": "ed803e414a6c8caae2afb1142ed4ba283693ca9dbeb9e03cc4eba60d09481cf3",
-    "width": 373,
-    "height": 129,
-    "bytes": 5168,
-    "logo": false,
-    "variants": [
-      {
-        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-11.png-373.webp",
-        "width": 373,
-        "height": 129,
-        "sha256": "5c9d120ce392e46c037c934c8cb6bbcb656add54c7d505b76793fe6ee1087cbb",
-        "bytes": 2476
-      }
-    ],
-    "external_original": {
-      "storage": "github-release",
-      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-11-ed803e414a6c8caae2afb1142ed4ba283693ca9dbeb9e03cc4eba60d09481cf3.png",
-      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559971",
-      "asset_id": 630559971,
-      "release_tag": "article-originals-e",
-      "sha256": "ed803e414a6c8caae2afb1142ed4ba283693ca9dbeb9e03cc4eba60d09481cf3",
-      "bytes": 5168
-    }
-  },
   "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-12.png": {
     "sha256": "37603b5850e00ea58625f9af557fc4295de7c95d69507299a2bc43cf214c789b",
     "width": 1280,
@@ -347,31 +297,6 @@
       "release_tag": "article-originals-6",
       "sha256": "68d91f2e1ab152446b3ef77cd7fac10f5ef30a13cf8c1f09bc6ea246fb84248a",
       "bytes": 487455
-    }
-  },
-  "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-15.png": {
-    "sha256": "5efa37aa9bf4f73d6af632f40ef98fd39aa7b411e4184679c04ebdd0cad6f463",
-    "width": 311,
-    "height": 129,
-    "bytes": 4326,
-    "logo": false,
-    "variants": [
-      {
-        "path": "/assets/images/previews/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-15-png-reading-311-be2f2e99d3f2.webp",
-        "width": 311,
-        "height": 129,
-        "sha256": "be2f2e99d3f2616c4e637dedb68faed92d514c02477237f37b7fae61cada78c8",
-        "bytes": 2378
-      }
-    ],
-    "external_original": {
-      "storage": "github-release",
-      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-b42f411dbebb-vunderkindy-matematiki-08-25-15-5efa37aa9bf4f73d6af632f40ef98fd39aa7b411e4184679c04ebdd0cad6f463.png",
-      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560540",
-      "asset_id": 630560540,
-      "release_tag": "article-originals-5",
-      "sha256": "5efa37aa9bf4f73d6af632f40ef98fd39aa7b411e4184679c04ebdd0cad6f463",
-      "bytes": 4326
     }
   },
   "/assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-16.png": {

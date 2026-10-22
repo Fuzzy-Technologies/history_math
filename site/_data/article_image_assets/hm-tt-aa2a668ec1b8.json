@@ -1,29 +1,4 @@
 {
-  "/assets/images/hm-tt-aa2a668ec1b8/velikij-kostoprav-matematiki-01.png": {
-    "sha256": "79aa6e32308890124404a685f4a93c7284494f862128c6f2ae3b81fb367441b7",
-    "width": 480,
-    "height": 490,
-    "bytes": 13344,
-    "logo": false,
-    "variants": [
-      {
-        "path": "/assets/images/previews/hm-tt-aa2a668ec1b8/velikij-kostoprav-matematiki-01.png-480.webp",
-        "width": 480,
-        "height": 490,
-        "sha256": "f821ad81b35355cf7e78c6f0360ffaf411aa0a2eb0c17da8ffdcfdb540969368",
-        "bytes": 5542
-      }
-    ],
-    "external_original": {
-      "storage": "github-release",
-      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-aa2a668ec1b8-velikij-kostoprav-matematiki-01-79aa6e32308890124404a685f4a93c7284494f862128c6f2ae3b81fb367441b7.png",
-      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630499594",
-      "asset_id": 630499594,
-      "release_tag": "article-originals-7",
-      "sha256": "79aa6e32308890124404a685f4a93c7284494f862128c6f2ae3b81fb367441b7",
-      "bytes": 13344
-    }
-  },
   "/assets/images/hm-tt-aa2a668ec1b8/velikij-kostoprav-matematiki-02.png": {
     "sha256": "844f70f8e408c953bb957a861a991e395ce958b181606ecdcdfaa4d6a10568f2",
     "width": 250,

@@ -42,15 +42,6 @@ figures:
   rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original attribution
     retained; no new license asserted.
   source_url: https://img3.teletype.in/files/ea/0a/ea0a73d4-5dde-4ae5-b192-b494a613adfa.png
-- id: fig-2
-  path: /assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-02.png
-  alt: Иллюстрация 2 к статье «Вундеркинды-математики»
-  caption: ''
-  source: Архив иллюстраций исходной статьи в Teletype.
-  credit: ''
-  rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original attribution
-    retained; no new license asserted.
-  source_url: https://img4.teletype.in/files/fa/80/fa80f8cc-ed35-48cc-92f0-36778b9a361c.png
 - id: fig-3
   path: /assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-03.png
   alt: Вольфганг Амадей Моцарт (1756–1791)
@@ -123,15 +114,6 @@ figures:
   rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original attribution
     retained; no new license asserted.
   source_url: https://img3.teletype.in/files/20/86/2086ec8a-e4ae-4284-97fa-51611966a2cb.png
-- id: fig-11
-  path: /assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-11.png
-  alt: Иллюстрация 11 к статье «Вундеркинды-математики»
-  caption: ''
-  source: Архив иллюстраций исходной статьи в Teletype.
-  credit: ''
-  rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original attribution
-    retained; no new license asserted.
-  source_url: https://img4.teletype.in/files/3a/fb/3afb7287-7587-4ac5-93e4-c7d1c7185de7.png
 - id: fig-12
   path: /assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-12.png
   alt: Правильная 17-ти конечная звезда на могиле Гаусса
@@ -159,15 +141,6 @@ figures:
   rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original attribution
     retained; no new license asserted.
   source_url: https://img1.teletype.in/files/cc/b6/ccb6d743-1de1-4123-80ad-166e200eb69b.png
-- id: fig-15
-  path: /assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-15.png
-  alt: Иллюстрация 15 к статье «Вундеркинды-математики»
-  caption: ''
-  source: Архив иллюстраций исходной статьи в Teletype.
-  credit: ''
-  rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original attribution
-    retained; no new license asserted.
-  source_url: https://img3.teletype.in/files/ea/0f/ea0f1377-28b7-4683-968f-bcf2e7ce3ca7.png
 - id: fig-16
   path: /assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-16.png
   alt: А. Н. Колмогоров среди школьников ФМШ № 18 при МГУ
@@ -208,7 +181,15 @@ cover_image: /assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-01.p
 
 Великий русский математик Андрей Николаевич Колмогоров писал, что радость математического открытия он познал рано, подметив в возрасте пяти лет закономерность:
 
-{% include article-figure.html id="fig-2" %}
+$$
+\begin{aligned}
+1&=1^2,\cr
+1+3&=2^2,\cr
+1+3+5&=3^2,\cr
+1+3+5+7&=4^2,\cr
+&\vdots
+\end{aligned}
+$$
 
 Это свойство натуральных чисел было известно ещё древним грекам (в частности, Пифагору): сумма любого количества нечётных чисел, начиная с 1, всегда даёт точный квадрат (квадратное число, как их называл Пифагор). Но одарённые дети умели ставить себе учебные задачи и пытались решить их самостоятельно. Оба великих математика решили и другую задачу ещё в детском возрасте: «*Найдите сумму натуральных чисел от 1 до 100*». А вы с ней справитесь?
 
@@ -268,7 +249,14 @@ cover_image: /assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-01.p
 
 Он сделал вычисления:
 
-{% include article-figure.html id="fig-11" %}
+$$
+\begin{aligned}
+1+2+3+\cdots+98+99+100
+&=(1+100)+(2+99)+(3+98)\cr
+&\quad+\cdots+(49+52)+(50+51)\cr
+&=101\times50=5050.
+\end{aligned}
+$$
 
 И до самой старости Гаусс большую часть вычислений производил в уме.
 
@@ -288,7 +276,14 @@ cover_image: /assets/images/hm-tt-b42f411dbebb/vunderkindy-matematiki-08-25-01.p
 
 Здесь же мальчик опубликовал в пять лет свою первую работу по математике. А вот как он решил ту самую задачу о сумме ста чисел, причём не так, как у Гаусса:
 
-{% include article-figure.html id="fig-15" %}
+$$
+\begin{aligned}
+1+2+3+\cdots+98+99+100
+&=(1+3+5+\cdots+99)\cr
+&\quad+(2+4+6+\cdots+100)\cr
+&=50^2+50^2+50=5050.
+\end{aligned}
+$$
 
 Метод Колмогорова был таким: у нас имеется 50 нечётных слагаемых и 50 чётных. Причём сумма чётных слагаемых больше суммы нечётных слагаемых на 50 (2 больше 1 на 1, 4 больше 3 на 1 и т. д.). Сумма нечётных чисел от 1 до 100 будет равна 50 в квадрате, что составляет 2500.
 

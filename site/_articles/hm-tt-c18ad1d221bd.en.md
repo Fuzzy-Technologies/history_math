@@ -59,16 +59,6 @@ figures:
       migrated at the owner request; original attribution retained; no new
       license asserted.
     source_url: https://img2.teletype.in/files/d9/8f/d98fb051-ec67-436b-8e7e-32ed0e63ceb2.png
-  - id: fig-4
-    path: /assets/images/hm-tt-c18ad1d221bd/ars-magna-velikoe-iskusstvo-04.png
-    alt: Cardano's formula for the roots of a cubic equation
-    caption: Cardano's formula for the roots of a cubic equation
-    source: Illustration archive of the original Teletype article.
-    credit: ''
-    rights_basis: Original image bytes from the owner-supplied Teletype archive,
-      migrated at the owner request; original attribution retained; no new
-      license asserted.
-    source_url: https://img1.teletype.in/files/c2/0c/c20c8919-b461-43f1-90b7-92cf53a782db.png
   - id: fig-5
     path: /assets/images/hm-tt-c18ad1d221bd/ars-magna-velikoe-iskusstvo-05.png
     alt: The Great Art (Ars Magna, 1545)
@@ -112,7 +102,43 @@ Medicine did not absorb him entirely. He became a well-known inventor. We have a
 
 His literary career was equally varied. He published more than three hundred books, on medicine and mathematics but also philosophy, astrology and ethics. His encyclopedic treatises *On Subtlety* and *On the Variety of Things*, comprehensive accounts of the state of the natural sciences, were used as textbooks in Europe for a long time. *On Consolation*, translated into English, was especially popular. It is believed to have inspired Shakespeare's *Hamlet*, and Hamlet himself delivers “To be or not to be” with this book in his hands.
 
-{% include article-figure.html id="fig-4" %}
+$$
+ax^3+bx^2+cx+d=0,\qquad a\ne0
+$$
+
+With the substitution
+
+$$
+x=y-\frac{b}{3a}
+$$
+
+any such cubic equation reduces to the depressed form
+
+$$
+y^3+py+q=0
+$$
+
+$$
+\begin{aligned}
+p&=\frac{3ac-b^2}{3a^2},\cr
+q&=\frac{2b^3-9abc+27a^2d}{27a^3}.
+\end{aligned}
+$$
+
+Its roots are:
+
+$$
+\begin{aligned}
+y_1&=\alpha+\beta,\cr
+y_{2,3}&=-\frac{\alpha+\beta}{2}\pm i\,\frac{\alpha-\beta}{2}\sqrt{3},\cr
+\alpha&=\sqrt[3]{-\frac q2+\sqrt{\left(\frac p3\right)^3+\left(\frac q2\right)^2}},\cr
+\beta&=\sqrt[3]{-\frac q2-\sqrt{\left(\frac p3\right)^3+\left(\frac q2\right)^2}}.
+\end{aligned}
+$$
+
+The cube roots must be chosen consistently so that $\alpha\beta=-p/3$. The roots of the original equation follow from $x_j=y_j-b/(3a)$.
+
+*Cardano's formula for the roots of a cubic equation*
 
 Cardano also became absorbed in mathematics. The history of Cardano's formula is one of mathematics' dramatic stories. Every school pupil knows the formula for the roots of a quadratic equation. A comparable formula exists for an equation of the third degree, and it is called Cardano's formula. Historians regard it as the first major achievement of European mathematicians after centuries of stagnation.
 

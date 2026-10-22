@@ -4,15 +4,14 @@
   "approval": {
     "status": "approved",
     "reviewed_by": "Tim55667757",
-    "date": "2026-10-20",
-    "package_sha256": "0b9656d64cf20d1d9abc1568d709dc48df66ec66720758c14d6e90ae0159a392",
-    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/242#pullrequestreview-5588229008",
-    "source_commit": "da147da5410fe49c6477ec22e94f16e7ae73cc51",
-    "source_review_id": 5588229008,
+    "date": "2026-10-22",
+    "package_sha256": "9f36fce6e8bea0a1ec702d095804a162ad54ae3c069020b7637393769e694306",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/276#pullrequestreview-5609871665",
+    "source_commit": "cd40da898168dfc815e4f05eece2e4bf666033e4",
+    "source_review_id": 5609871665,
     "source_review_state": "COMMENTED",
-    "approved_at": "2026-10-20T16:28:59Z",
-    "prepared_from_commit": "7203e4588b0b1c5faf2cc94c602f66ecce3c3898",
-    "post_review_changes": "Only owner-requested em-dash spacing; image hashes and dimensions are unchanged."
+    "approved_at": "2026-10-22T06:01:16Z",
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions, translations and image bytes are unchanged."
   },
   "questions": [
     {
@@ -32,11 +31,30 @@
   ],
   "reconciliation": {
     "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
-    "figures": 7,
+    "figures": 6,
     "original_publication": {
       "outlet": "Teletype",
       "date": "2023-08-22",
       "url": "https://teletype.in/@history_math/Velikij-kostoprav-matematiki-08-22"
     }
-  }
+  },
+  "previous_approvals": [
+    {
+      "status": "approved",
+      "reviewed_by": "Tim55667757",
+      "date": "2026-10-20",
+      "package_sha256": "0b9656d64cf20d1d9abc1568d709dc48df66ec66720758c14d6e90ae0159a392",
+      "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/242#pullrequestreview-5588229008",
+      "source_commit": "da147da5410fe49c6477ec22e94f16e7ae73cc51",
+      "source_review_id": 5588229008,
+      "source_review_state": "COMMENTED",
+      "approved_at": "2026-10-20T16:28:59Z",
+      "prepared_from_commit": "7203e4588b0b1c5faf2cc94c602f66ecce3c3898",
+      "post_review_changes": "Only owner-requested em-dash spacing; image hashes and dimensions are unchanged."
+    }
+  ],
+  "manual_changes": [
+    "Replaced formula-only images fig-1 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending.",
+    "Replaced Markdown-sensitive equation row spacing with explicit TeX row separators, preserving every term and sign in both editions."
+  ]
 }

@@ -4,20 +4,19 @@
   "approval": {
     "status": "approved",
     "reviewed_by": "Tim55667757",
-    "date": "2026-10-20",
-    "package_sha256": "1c309ee3ac409b028fee0f9dbe72e8dbbcf55a4d342869dae771411b185b848a",
-    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/241#issuecomment-6300189364",
-    "source_commit": "007a48d4cb166e1eba376b4fb710b3ea0ab9f387",
-    "source_comment_id": 6300189364,
-    "source_review_state": "ISSUE_COMMENT",
-    "approved_at": "2026-10-20T19:58:53Z",
-    "prepared_from_commit": "007a48d4cb166e1eba376b4fb710b3ea0ab9f387",
-    "post_review_changes": "No changes after the reviewed source revision."
+    "date": "2026-10-22",
+    "package_sha256": "28ac9ea9a2286ad39c37f1a8fd5204ece43089ca9c4e466bcd73bf4df210a773",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/276#pullrequestreview-5609871665",
+    "source_commit": "cd40da898168dfc815e4f05eece2e4bf666033e4",
+    "source_review_id": 5609871665,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T06:01:16Z",
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions, translations and image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
     "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
-    "figures": 6,
+    "figures": 5,
     "original_publication": {
       "outlet": "Teletype",
       "date": "2023-08-22",
@@ -25,6 +24,23 @@
     }
   },
   "manual_changes": [
-    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged.",
+    "Replaced formula-only images fig-4 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending. Retained every coefficient, sign and radical; made the nonzero leading coefficient and consistent cube-root branch condition explicit, and stated the inverse substitution for the original roots.",
+    "Replaced Markdown-sensitive equation row spacing with explicit TeX row separators, preserving every term and sign in both editions."
+  ],
+  "previous_approvals": [
+    {
+      "status": "approved",
+      "reviewed_by": "Tim55667757",
+      "date": "2026-10-20",
+      "package_sha256": "1c309ee3ac409b028fee0f9dbe72e8dbbcf55a4d342869dae771411b185b848a",
+      "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/241#issuecomment-6300189364",
+      "source_commit": "007a48d4cb166e1eba376b4fb710b3ea0ab9f387",
+      "source_comment_id": 6300189364,
+      "source_review_state": "ISSUE_COMMENT",
+      "approved_at": "2026-10-20T19:58:53Z",
+      "prepared_from_commit": "007a48d4cb166e1eba376b4fb710b3ea0ab9f387",
+      "post_review_changes": "No changes after the reviewed source revision."
+    }
   ]
 }
