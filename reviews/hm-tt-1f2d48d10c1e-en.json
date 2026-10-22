@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-1f2d48d10c1e-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-pantograph-scheiner-date",
+      "question": "Please verify the source’s 1603 invention date for Scheiner’s pantograph against the commonly cited 1603/1631 development and publication dates. The supplied date is retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 11,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-13",
+      "url": "https://teletype.in/@history_math/Pantograf-09-13"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
