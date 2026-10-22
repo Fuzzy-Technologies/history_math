@@ -1,0 +1,252 @@
+{
+  "/assets/images/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-01.png": {
+    "sha256": "bad8e856126ab20a93c5d067061b85e03df0511e06a9c6f86d415ceeb92471e0",
+    "width": 2000,
+    "height": 1400,
+    "bytes": 5018303,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-01.png-960.webp",
+        "width": 960,
+        "height": 672,
+        "sha256": "59a2b7adf76c9acdb7e3cbd6a61519b5cbeb5b73d816cc68062f8efb351fd0b4",
+        "bytes": 712280
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-1cf45e823bea-razvitie-matematiki-v-kazans-01-bad8e856126ab20a93c5d067061b85e03df0511e06a9c6f86d415ceeb92471e0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630498476",
+      "asset_id": 630498476,
+      "release_tag": "article-originals-b",
+      "sha256": "bad8e856126ab20a93c5d067061b85e03df0511e06a9c6f86d415ceeb92471e0",
+      "bytes": 5018303
+    }
+  },
+  "/assets/images/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-02.png": {
+    "sha256": "2a1472af8bbac9757aa138d16219c6f0772a8b862bc3162c47844d1b2f705367",
+    "width": 599,
+    "height": 875,
+    "bytes": 631049,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-02.png-599.webp",
+        "width": 599,
+        "height": 875,
+        "sha256": "2538b74a43655ea00c6e628fc1f3794c214d36ca58d5222e40b7a95452b18633",
+        "bytes": 409616
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-1cf45e823bea-razvitie-matematiki-v-kazans-02-2a1472af8bbac9757aa138d16219c6f0772a8b862bc3162c47844d1b2f705367.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630541928",
+      "asset_id": 630541928,
+      "release_tag": "article-originals-2",
+      "sha256": "2a1472af8bbac9757aa138d16219c6f0772a8b862bc3162c47844d1b2f705367",
+      "bytes": 631049
+    }
+  },
+  "/assets/images/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-03.png": {
+    "sha256": "c72f527c6da00280fedd797ba488ba4a32f49f70789b04089d0f147da987aafe",
+    "width": 697,
+    "height": 839,
+    "bytes": 749460,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-03.png-697.webp",
+        "width": 697,
+        "height": 839,
+        "sha256": "1ce54447815e97882157f814cd61173376d668f008fffa2ee17d7607eca9e050",
+        "bytes": 197596
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-1cf45e823bea-razvitie-matematiki-v-kazans-03-c72f527c6da00280fedd797ba488ba4a32f49f70789b04089d0f147da987aafe.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542058",
+      "asset_id": 630542058,
+      "release_tag": "article-originals-c",
+      "sha256": "c72f527c6da00280fedd797ba488ba4a32f49f70789b04089d0f147da987aafe",
+      "bytes": 749460
+    }
+  },
+  "/assets/images/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-04.png": {
+    "sha256": "f7702a067b65ebc9aaa14cfe50a9c3ffa87633c3d8f9185e3376833e2273250e",
+    "width": 781,
+    "height": 762,
+    "bytes": 886494,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-04.png-781.webp",
+        "width": 781,
+        "height": 762,
+        "sha256": "7116834b222b2e917581e3be751a0f43a9db137a6e3db617b70c8f3d07401b03",
+        "bytes": 380552
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-1cf45e823bea-razvitie-matematiki-v-kazans-04-f7702a067b65ebc9aaa14cfe50a9c3ffa87633c3d8f9185e3376833e2273250e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542180",
+      "asset_id": 630542180,
+      "release_tag": "article-originals-f",
+      "sha256": "f7702a067b65ebc9aaa14cfe50a9c3ffa87633c3d8f9185e3376833e2273250e",
+      "bytes": 886494
+    }
+  },
+  "/assets/images/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-05.png": {
+    "sha256": "654e619b7b87e9a6345d3a59dbc94fab4d13f393685fb59c8dd6fb34b2bb9f3d",
+    "width": 600,
+    "height": 932,
+    "bytes": 756337,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-05.png-600.webp",
+        "width": 600,
+        "height": 932,
+        "sha256": "5555bd8f70a2b9bc1e576eb543bcd1d5a136f05d5fc1593177e2039040f33fed",
+        "bytes": 224318
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-1cf45e823bea-razvitie-matematiki-v-kazans-05-654e619b7b87e9a6345d3a59dbc94fab4d13f393685fb59c8dd6fb34b2bb9f3d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542333",
+      "asset_id": 630542333,
+      "release_tag": "article-originals-6",
+      "sha256": "654e619b7b87e9a6345d3a59dbc94fab4d13f393685fb59c8dd6fb34b2bb9f3d",
+      "bytes": 756337
+    }
+  },
+  "/assets/images/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-06.png": {
+    "sha256": "6970da2631eab8ff264308f935a0b14524fb7d7c5761594d4e8e1d5060d7f6ff",
+    "width": 307,
+    "height": 413,
+    "bytes": 135864,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-06.png-307.webp",
+        "width": 307,
+        "height": 413,
+        "sha256": "a06f28a96ca69a8e080ac282f29ac6b60dcbf80bc893f5a92c0d09d31c90f019",
+        "bytes": 53070
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-1cf45e823bea-razvitie-matematiki-v-kazans-06-6970da2631eab8ff264308f935a0b14524fb7d7c5761594d4e8e1d5060d7f6ff.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542506",
+      "asset_id": 630542506,
+      "release_tag": "article-originals-6",
+      "sha256": "6970da2631eab8ff264308f935a0b14524fb7d7c5761594d4e8e1d5060d7f6ff",
+      "bytes": 135864
+    }
+  },
+  "/assets/images/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-07.png": {
+    "sha256": "f2daa8dd1c24f696aeced6022153683173203b77218b5fee7eb83e9a57bb8f85",
+    "width": 768,
+    "height": 1080,
+    "bytes": 1084796,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-07.png-768.webp",
+        "width": 768,
+        "height": 1080,
+        "sha256": "f3471ebac656890be19f2421ace16209fda9a846796dafba2cda59d0fefa00eb",
+        "bytes": 475856
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-1cf45e823bea-razvitie-matematiki-v-kazans-07-f2daa8dd1c24f696aeced6022153683173203b77218b5fee7eb83e9a57bb8f85.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542663",
+      "asset_id": 630542663,
+      "release_tag": "article-originals-f",
+      "sha256": "f2daa8dd1c24f696aeced6022153683173203b77218b5fee7eb83e9a57bb8f85",
+      "bytes": 1084796
+    }
+  },
+  "/assets/images/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-08.png": {
+    "sha256": "73d2cd79d4a52ad1e5ca2ab951acd03c1e9ec880c818178f820134ab90860cfb",
+    "width": 1260,
+    "height": 1614,
+    "bytes": 430183,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-08.png-960.webp",
+        "width": 960,
+        "height": 1230,
+        "sha256": "6b2a619ea07a643b46362ca2f48c89b2220715b1ab677fc4102b8ffd441f5911",
+        "bytes": 434858
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-1cf45e823bea-razvitie-matematiki-v-kazans-08-73d2cd79d4a52ad1e5ca2ab951acd03c1e9ec880c818178f820134ab90860cfb.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542786",
+      "asset_id": 630542786,
+      "release_tag": "article-originals-7",
+      "sha256": "73d2cd79d4a52ad1e5ca2ab951acd03c1e9ec880c818178f820134ab90860cfb",
+      "bytes": 430183
+    }
+  },
+  "/assets/images/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-09.png": {
+    "sha256": "721f193a8cfab04b7bf7ecba82218ea4d2ecd3d9f7801323bc27663a436e8f5b",
+    "width": 600,
+    "height": 685,
+    "bytes": 539913,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-09.png-600.webp",
+        "width": 600,
+        "height": 685,
+        "sha256": "72858d032bd2b611b56c32febb88b22b547bcf123fdc4c10bf10b3aed2e9e77b",
+        "bytes": 190434
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-1cf45e823bea-razvitie-matematiki-v-kazans-09-721f193a8cfab04b7bf7ecba82218ea4d2ecd3d9f7801323bc27663a436e8f5b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542940",
+      "asset_id": 630542940,
+      "release_tag": "article-originals-7",
+      "sha256": "721f193a8cfab04b7bf7ecba82218ea4d2ecd3d9f7801323bc27663a436e8f5b",
+      "bytes": 539913
+    }
+  },
+  "/assets/images/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-10.png": {
+    "sha256": "2bf2cd852dfd0264b587ef77e3acbfa0bf38891381ce3447e6aa354dd0f9f16f",
+    "width": 912,
+    "height": 1105,
+    "bytes": 1286546,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1cf45e823bea/razvitie-matematiki-v-kazans-10.png-912.webp",
+        "width": 912,
+        "height": 1105,
+        "sha256": "6b42d4d92aa29c2e89099179ee3ec3a72487d79f959a637b7c1ef94fe6dbe790",
+        "bytes": 458890
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-1cf45e823bea-razvitie-matematiki-v-kazans-10-2bf2cd852dfd0264b587ef77e3acbfa0bf38891381ce3447e6aa354dd0f9f16f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630543035",
+      "asset_id": 630543035,
+      "release_tag": "article-originals-2",
+      "sha256": "2bf2cd852dfd0264b587ef77e3acbfa0bf38891381ce3447e6aa354dd0f9f16f",
+      "bytes": 1286546
+    }
+  }
+}
