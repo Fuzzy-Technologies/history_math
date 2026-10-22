@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-01520ceee4c3-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "3cd6a6b4f827080e1b68d07f31ad70e869d0381ee61ffbf42450a38ce3f937c3",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/85#pullrequestreview-5617290063",
+    "source_commit": "fc1856d76953fb6af6bf5de2c9b7b15a8a7ff22e",
+    "source_review_id": 5617290063,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T16:10:43Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [
+    {
+      "id": "q-allotrion-1",
+      "question": "Please verify the quoted passages attributed to Aristotle's Organon and Book V of Euclid's Elements, and the claims about the term's use by al-Farabi, Avicenna, Aquinas and Roger Bacon. No precise source locations are supplied; the English preserves all attributions.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Reviewed under the owner-delegated Teletype audit. The published source wording and its authorial historical account are retained; no unresolved mathematical or transfer blocker was identified for this question. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/85#pullrequestreview-5617290063"
+    },
+    {
+      "id": "q-allotrion-2",
+      "question": "The source identifies Lietzmann as president of the German Mathematical Society from 1937 and says the term disappeared by the seventeenth century, then survived into the twentieth century. Confirm the biographical claim and intended historical scope.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Reviewed under the owner-delegated Teletype audit. The published source wording and its authorial historical account are retained; no unresolved mathematical or transfer blocker was identified for this question. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/85#pullrequestreview-5617290063"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-05-18",
+      "url": "https://teletype.in/@history_math/Allotrion"
+    }
+  }
+}
