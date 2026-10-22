@@ -4,6 +4,7 @@ import {resolve, extname, sep} from 'node:path';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
 import {publishedArticles} from './published-articles.mjs';
+import {stubMetrika} from './metrika-fixture.mjs';
 
 const root = resolve(process.env.URL_SITE_DIR || '_site');
 const base = process.env.URL_BASEURL ?? '/history_math';
@@ -32,6 +33,7 @@ try {
   const downloaded = new Map();
   for (const article of records) {
     const page = await browser.newPage({viewport: {width: 320, height: 800}});
+    await stubMetrika(page.context());
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
     await page.goto(origin + base + article.url, {waitUntil: 'networkidle'});
@@ -64,6 +66,7 @@ try {
     assert.deepEqual(errors, []);
     await page.close();
     const nojs = await browser.newPage({javaScriptEnabled: false});
+    await stubMetrika(nojs.context());
     await nojs.goto(origin + base + legacy);
     assert.equal(await nojs.locator('html').getAttribute('lang'), article.lang);
     assert.equal(await nojs.locator('[data-article-redirect]').getAttribute('href'), base + article.url);

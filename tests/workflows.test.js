@@ -48,6 +48,7 @@ test('publication validates and uploads the build selected by GitHub Pages metad
   assert.equal(configuration.id, 'pages');
   const build = steps.find(step => step.name === 'Build and verify configured Pages site');
   assert.deepEqual(build.env, {
+    JEKYLL_ENV: 'production',
     PAGES_ORIGIN: 'https://${{ steps.pages.outputs.host }}',
     PAGES_BASE_PATH: '${{ steps.pages.outputs.base_path }}',
     FULL_CHECKS: '${{ steps.plan.outputs.full_checks }}'

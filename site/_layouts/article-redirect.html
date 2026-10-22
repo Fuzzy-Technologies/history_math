@@ -14,5 +14,6 @@
     <h1>{% if page.lang == 'ru' %}Статья переехала{% else %}Article moved{% endif %}</h1>
     <p><a data-article-redirect href="{{ page.redirect_target | relative_url }}">{% if page.lang == 'ru' %}Перейти к статье{% else %}Continue to the article{% endif %}</a></p>
   </main>
+  {% include yandex-metrika.html %}
 </body>
 </html>
