@@ -142,8 +142,14 @@ async function audit(page) {
   await page.addScriptTag({path: 'node_modules/axe-core/axe.min.js'});
   const violations = await page.evaluate(async () => (await axe.run(document, {runOnly: {type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa']}})).violations);
   assert.deepEqual(violations.map(item => ({id: item.id, nodes: item.nodes.map(node => node.target)})), [], page.url());
-  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false,
-    `Horizontal page overflow at ${page.url()}`);
+  const overflow = await page.evaluate(() => {
+    if (document.documentElement.scrollWidth <= innerWidth + 1) return null;
+    return {viewport: innerWidth, page: document.documentElement.scrollWidth,
+      elements: [...document.querySelectorAll('main *')].filter(node => node.getBoundingClientRect().right > innerWidth + 1)
+        .slice(0, 8).map(node => ({tag: node.tagName, class: node.getAttribute('class'),
+          width: node.getBoundingClientRect().width, text: node.textContent.trim().slice(0, 80)}))};
+  });
+  assert.equal(overflow, null, `Horizontal page overflow at ${page.url()}: ${JSON.stringify(overflow)}`);
 }
 try {
   const expected = publishedArticles();

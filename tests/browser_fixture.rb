@@ -37,6 +37,7 @@ Dir.mktmpdir("history-math-browser") do |root|
         data["tags"] << (language == "ru" ? "Глоссарий" : "Glossary")
         data["series"] = language == "ru" ? "Глоссарий" : "Glossary" if index.even?
       end
+      data["tags"] << (language == "ru" ? "московская_математическая_школа" : "long_unbroken_mathematical_history_topic")
       text = YAML.dump(data) + "---\n\nTest-only bilingual discovery fixture.\n"
       File.write(File.join(source, "_articles/#{id}.md"), text)
       digest = Digest::SHA256.new.update(text)
