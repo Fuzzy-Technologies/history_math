@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-50b0ebc801ff",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "0ec68d50f4eac1df1cecee21a060d69245dff7c74d824e7b17c8855e791856cc",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/76#pullrequestreview-5617285610",
+    "source_commit": "7cdb542788fc4eb03844f1821d3b07f684673549",
+    "source_review_id": 5617285610,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T16:10:26Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-06-22",
+      "url": "https://teletype.in/@history_math/Reissmass"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
