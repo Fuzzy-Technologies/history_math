@@ -1,0 +1,37 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-4d074852e9b8-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "ce779a61ddf0673055118d0f28fa0f1382d3d5991aef9bbcad895dbc437d90cf",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/98#pullrequestreview-5617296165",
+    "source_commit": "61de87d69a6b9f6b24f31c6f01840bf35c7eb618",
+    "source_review_id": 5617296165,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T16:11:06Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [
+    {
+      "id": "en-zeno-surviving-count",
+      "question": "Please verify the source’s count of 45 original aporias and 9 surviving ones and clarify which ancient testimony supplies these totals. The numbers are retained.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Reviewed under the owner-delegated Teletype audit. The published source wording and its authorial historical account are retained; no unresolved mathematical or transfer blocker was identified for this question. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/98#pullrequestreview-5617296165"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-03-09",
+      "url": "https://teletype.in/@history_math/The-Paradoxes-of-Zeno-of-Elea"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
