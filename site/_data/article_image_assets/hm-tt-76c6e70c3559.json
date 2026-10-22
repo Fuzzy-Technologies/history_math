@@ -1,0 +1,27 @@
+{
+  "/assets/images/hm-tt-76c6e70c3559/palindrome-numbers-01.webp": {
+    "sha256": "d04c24af4a9302fc59b3a49529e3bbf190ec11d74c34947baa2185a513d6d1d7",
+    "width": 1692,
+    "height": 1000,
+    "bytes": 1871232,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-76c6e70c3559/palindrome-numbers-01.webp-960.webp",
+        "width": 960,
+        "height": 567,
+        "sha256": "bac0ef752977c0e1e2b5c07a210d0a402afb9dbc7641e87bd2c4a6201f96e774",
+        "bytes": 666746
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-76c6e70c3559-palindrome-numbers-01-d04c24af4a9302fc59b3a49529e3bbf190ec11d74c34947baa2185a513d6d1d7.webp",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630492190",
+      "asset_id": 630492190,
+      "release_tag": "article-originals-d",
+      "sha256": "d04c24af4a9302fc59b3a49529e3bbf190ec11d74c34947baa2185a513d6d1d7",
+      "bytes": 1871232
+    }
+  }
+}
