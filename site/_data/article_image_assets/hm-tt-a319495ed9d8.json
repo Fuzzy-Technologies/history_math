@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-a319495ed9d8/tricky-soldiers-in-the-taver-01.jpeg": {
+    "sha256": "768761724996fbb29221437050fb8b8fb0b292365c581cbb62395e2d92de04ea",
+    "width": 1476,
+    "height": 914,
+    "bytes": 320186,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-a319495ed9d8/tricky-soldiers-in-the-taver-01.jpeg-960.webp",
+        "width": 960,
+        "height": 594,
+        "sha256": "680b67e917c3c36c8c4118a75e22bcaa88b99de781121d3cc2a5af800277807d",
+        "bytes": 771482
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-a319495ed9d8-tricky-soldiers-in-the-taver-01-768761724996fbb29221437050fb8b8fb0b292365c581cbb62395e2d92de04ea.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630493601",
+      "asset_id": 630493601,
+      "release_tag": "article-originals-7",
+      "sha256": "768761724996fbb29221437050fb8b8fb0b292365c581cbb62395e2d92de04ea",
+      "bytes": 320186
+    }
+  },
+  "/assets/images/hm-tt-a319495ed9d8/tricky-soldiers-in-the-taver-02.png": {
+    "sha256": "b6ad9743b446b86354f61e0f4cbbf3ed155ebf712421579afedd7cbb2f652ced",
+    "width": 667,
+    "height": 540,
+    "bytes": 30124,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-a319495ed9d8/tricky-soldiers-in-the-taver-02.png-667.webp",
+        "width": 667,
+        "height": 540,
+        "sha256": "3db5148e77c8db992077fe89323eeec6bf0b5eb1811eaec3d6506cee3cffa9a1",
+        "bytes": 12836
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-a319495ed9d8-tricky-soldiers-in-the-taver-02-b6ad9743b446b86354f61e0f4cbbf3ed155ebf712421579afedd7cbb2f652ced.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630533515",
+      "asset_id": 630533515,
+      "release_tag": "article-originals-b",
+      "sha256": "b6ad9743b446b86354f61e0f4cbbf3ed155ebf712421579afedd7cbb2f652ced",
+      "bytes": 30124
+    }
+  },
+  "/assets/images/hm-tt-a319495ed9d8/tricky-soldiers-in-the-taver-03.png": {
+    "sha256": "345ed3d22d6dcd1cce96d48aff3c86ca022520fa66a64bbb6b3426f3212b4065",
+    "width": 1163,
+    "height": 900,
+    "bytes": 1587838,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-a319495ed9d8/tricky-soldiers-in-the-taver-03.png-960.webp",
+        "width": 960,
+        "height": 743,
+        "sha256": "53d57d3bcc4ff5c7dba3171c7be7f66e54f2e7569f3e0f4b4b34e7c2f3b0a6b2",
+        "bytes": 526680
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-a319495ed9d8-tricky-soldiers-in-the-taver-03-345ed3d22d6dcd1cce96d48aff3c86ca022520fa66a64bbb6b3426f3212b4065.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630533698",
+      "asset_id": 630533698,
+      "release_tag": "article-originals-3",
+      "sha256": "345ed3d22d6dcd1cce96d48aff3c86ca022520fa66a64bbb6b3426f3212b4065",
+      "bytes": 1587838
+    }
+  },
+  "/assets/images/hm-tt-a319495ed9d8/tricky-soldiers-in-the-taver-04.png": {
+    "sha256": "cad25fa341e6c008d0c586214d7ca2f114c8ca7b2f40a73ebe81f6c349190324",
+    "width": 537,
+    "height": 754,
+    "bytes": 150778,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-a319495ed9d8/tricky-soldiers-in-the-taver-04.png-537.webp",
+        "width": 537,
+        "height": 754,
+        "sha256": "fba2392567cde5f2a340856bfb056f3a42ecf07dbe1069891da264fa958da5a2",
+        "bytes": 88080
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-a319495ed9d8-tricky-soldiers-in-the-taver-04-cad25fa341e6c008d0c586214d7ca2f114c8ca7b2f40a73ebe81f6c349190324.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630533872",
+      "asset_id": 630533872,
+      "release_tag": "article-originals-c",
+      "sha256": "cad25fa341e6c008d0c586214d7ca2f114c8ca7b2f40a73ebe81f6c349190324",
+      "bytes": 150778
+    }
+  },
+  "/assets/images/hm-tt-a319495ed9d8/tricky-soldiers-in-the-taver-05.jpeg": {
+    "sha256": "8822d8f1a0da1d51e4e2d87699ef3b776bf70d7a6881cf5173ac18b9f127508c",
+    "width": 1312,
+    "height": 1749,
+    "bytes": 566279,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-a319495ed9d8/tricky-soldiers-in-the-taver-05.jpeg-960.webp",
+        "width": 960,
+        "height": 1280,
+        "sha256": "628eb49b52bae13dd9b0d8c3c30f5e65d1588825ccf4e79f7cc329f344872a53",
+        "bytes": 1243320
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-a319495ed9d8-tricky-soldiers-in-the-taver-05-8822d8f1a0da1d51e4e2d87699ef3b776bf70d7a6881cf5173ac18b9f127508c.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630534045",
+      "asset_id": 630534045,
+      "release_tag": "article-originals-8",
+      "sha256": "8822d8f1a0da1d51e4e2d87699ef3b776bf70d7a6881cf5173ac18b9f127508c",
+      "bytes": 566279
+    }
+  }
+}
