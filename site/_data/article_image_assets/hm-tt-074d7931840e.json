@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-074d7931840e/matematika-drevnego-vavilona-01.png": {
+    "sha256": "f4f10795a492b06efa08be7e4c6e304d203aea49902828464ab7483cbd6e2654",
+    "width": 5000,
+    "height": 3567,
+    "bytes": 38555642,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-074d7931840e/matematika-drevnego-vavilona-01.png-960.webp",
+        "width": 960,
+        "height": 685,
+        "sha256": "46786e0db8e602b42b2d8b8680b31b142b290f9c0befe502633cbff900935237",
+        "bytes": 937218
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-074d7931840e-matematika-drevnego-vavilona-01-f4f10795a492b06efa08be7e4c6e304d203aea49902828464ab7483cbd6e2654.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497837",
+      "asset_id": 630497837,
+      "release_tag": "article-originals-f",
+      "sha256": "f4f10795a492b06efa08be7e4c6e304d203aea49902828464ab7483cbd6e2654",
+      "bytes": 38555642
+    }
+  },
+  "/assets/images/hm-tt-074d7931840e/matematika-drevnego-vavilona-02.png": {
+    "sha256": "926366aba4e617ecb93201239f6069fc1732b01731fd746f6816909aa11316c9",
+    "width": 500,
+    "height": 500,
+    "bytes": 580848,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-074d7931840e/matematika-drevnego-vavilona-02.png-500.webp",
+        "width": 500,
+        "height": 500,
+        "sha256": "a822e29c867f6e01f49e847d287725863273dde428ccb69aceb6ffbbebdcedc2",
+        "bytes": 388032
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-074d7931840e-matematika-drevnego-vavilona-02-926366aba4e617ecb93201239f6069fc1732b01731fd746f6816909aa11316c9.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540902",
+      "asset_id": 630540902,
+      "release_tag": "article-originals-9",
+      "sha256": "926366aba4e617ecb93201239f6069fc1732b01731fd746f6816909aa11316c9",
+      "bytes": 580848
+    }
+  },
+  "/assets/images/hm-tt-074d7931840e/matematika-drevnego-vavilona-03.png": {
+    "sha256": "2a75716c181b8e2e5716d0d4a9a34ecab703226a3420b3cc03b8d71c5b72487d",
+    "width": 1712,
+    "height": 1368,
+    "bytes": 5599703,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-074d7931840e/matematika-drevnego-vavilona-03.png-960.webp",
+        "width": 960,
+        "height": 767,
+        "sha256": "6c56192bb2d4c10de132db91c11817c484d2aa56fe4fc46d4dfa06bc2b133dc3",
+        "bytes": 984690
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-074d7931840e-matematika-drevnego-vavilona-03-2a75716c181b8e2e5716d0d4a9a34ecab703226a3420b3cc03b8d71c5b72487d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630541022",
+      "asset_id": 630541022,
+      "release_tag": "article-originals-2",
+      "sha256": "2a75716c181b8e2e5716d0d4a9a34ecab703226a3420b3cc03b8d71c5b72487d",
+      "bytes": 5599703
+    }
+  },
+  "/assets/images/hm-tt-074d7931840e/matematika-drevnego-vavilona-04.png": {
+    "sha256": "05ed05128b9199810c9f27c0c80e7a6994b3321623af2ba3433b5b04bc0a4a75",
+    "width": 450,
+    "height": 320,
+    "bytes": 361287,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-074d7931840e/matematika-drevnego-vavilona-04.png-450.webp",
+        "width": 450,
+        "height": 320,
+        "sha256": "1ab84cfbaeffb74e3510b89d7c7c27a14ab18a8ab462af1e82f535a7b4862f24",
+        "bytes": 232018
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-074d7931840e-matematika-drevnego-vavilona-04-05ed05128b9199810c9f27c0c80e7a6994b3321623af2ba3433b5b04bc0a4a75.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630541178",
+      "asset_id": 630541178,
+      "release_tag": "article-originals-0",
+      "sha256": "05ed05128b9199810c9f27c0c80e7a6994b3321623af2ba3433b5b04bc0a4a75",
+      "bytes": 361287
+    }
+  },
+  "/assets/images/hm-tt-074d7931840e/matematika-drevnego-vavilona-05.png": {
+    "sha256": "0c7c9fa851326e65d9a32f5461817c37305bc304f9f61c8fa4ed89beea74c76d",
+    "width": 450,
+    "height": 300,
+    "bytes": 84002,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-074d7931840e/matematika-drevnego-vavilona-05.png-450.webp",
+        "width": 450,
+        "height": 300,
+        "sha256": "b35ece4773f7125e67f238be573958058bedeb86381cc11784f343dda6cd1b92",
+        "bytes": 50874
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-074d7931840e-matematika-drevnego-vavilona-05-0c7c9fa851326e65d9a32f5461817c37305bc304f9f61c8fa4ed89beea74c76d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630541318",
+      "asset_id": 630541318,
+      "release_tag": "article-originals-0",
+      "sha256": "0c7c9fa851326e65d9a32f5461817c37305bc304f9f61c8fa4ed89beea74c76d",
+      "bytes": 84002
+    }
+  },
+  "/assets/images/hm-tt-074d7931840e/matematika-drevnego-vavilona-06.png": {
+    "sha256": "41e4b8fafcc7e3b2179c085ec205175b9169243fafe79d4f2d4baed3067904e7",
+    "width": 450,
+    "height": 550,
+    "bytes": 492662,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-074d7931840e/matematika-drevnego-vavilona-06.png-450.webp",
+        "width": 450,
+        "height": 550,
+        "sha256": "6c7737e23f69e99ca81b84779b81e77e6fc7ea0c45828a32ce4a05e3f56cacd4",
+        "bytes": 308620
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-074d7931840e-matematika-drevnego-vavilona-06-41e4b8fafcc7e3b2179c085ec205175b9169243fafe79d4f2d4baed3067904e7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630541460",
+      "asset_id": 630541460,
+      "release_tag": "article-originals-4",
+      "sha256": "41e4b8fafcc7e3b2179c085ec205175b9169243fafe79d4f2d4baed3067904e7",
+      "bytes": 492662
+    }
+  }
+}
