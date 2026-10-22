@@ -1,0 +1,52 @@
+{
+  "/assets/images/hm-tt-0ba0b6281b22/farey-sequence-01.jpeg": {
+    "sha256": "58310ef3c6ccda52e1be31d60aa930ecff8eb1d287f5474014bed856b8011365",
+    "width": 835,
+    "height": 1055,
+    "bytes": 101609,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-0ba0b6281b22/farey-sequence-01-835.jpeg",
+        "width": 835,
+        "height": 1055,
+        "bytes": 101609,
+        "sha256": "58310ef3c6ccda52e1be31d60aa930ecff8eb1d287f5474014bed856b8011365"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-0ba0b6281b22-farey-sequence-01-58310ef3c6ccda52e1be31d60aa930ecff8eb1d287f5474014bed856b8011365.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630499569",
+      "asset_id": 630499569,
+      "release_tag": "article-originals-5",
+      "sha256": "58310ef3c6ccda52e1be31d60aa930ecff8eb1d287f5474014bed856b8011365",
+      "bytes": 101609
+    }
+  },
+  "/assets/images/hm-tt-0ba0b6281b22/farey-sequence-03.png": {
+    "sha256": "c639b01da3c17268fedaabb93fda6fb96edffd2d83e081d0ff757e5bf8899fed",
+    "width": 660,
+    "height": 1160,
+    "bytes": 513483,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-0ba0b6281b22/farey-sequence-03.png-660.webp",
+        "width": 660,
+        "height": 1160,
+        "sha256": "99b3d471f69ed09fb7a5c403141672a530975947f5243cd1d633c3e69ba58e6c",
+        "bytes": 213898
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-0ba0b6281b22-farey-sequence-03-c639b01da3c17268fedaabb93fda6fb96edffd2d83e081d0ff757e5bf8899fed.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539138",
+      "asset_id": 630539138,
+      "release_tag": "article-originals-c",
+      "sha256": "c639b01da3c17268fedaabb93fda6fb96edffd2d83e081d0ff757e5bf8899fed",
+      "bytes": 513483
+    }
+  }
+}

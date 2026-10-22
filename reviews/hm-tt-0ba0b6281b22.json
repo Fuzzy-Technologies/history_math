@@ -1,0 +1,32 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-0ba0b6281b22",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "e484f7b370569dc1931d327e4e25388636faf7cb7242760197b66dc0da5a7600",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/132#pullrequestreview-5609879521",
+    "source_commit": "3d4b259b8faf06d2daf2e0488d91df83610113b3",
+    "source_review_id": 5609879521,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T06:02:09Z",
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-10-26",
+      "url": "https://teletype.in/@history_math/Farey-sequence"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged.",
+    "Replaced formula-only images fig-2 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending. Made the omitted denominator bound b <= n explicit in the definition; all five listed sequences were checked by exact rational enumeration. Corrected 0/n to 0/1 in the adjacent reduced-fraction definition.",
+    "Used explicit brace delimiter commands and braced fraction arguments for Markdown preview compatibility. Repaired the numbered F6 answer and the final induction equality.",
+    "At the owner request, placed F_5 and F_6 on one line each and converted every mathematical expression and symbol in surrounding prose to inline TeX in both languages; sequence terms and mathematical statements are unchanged."
+  ]
+}
