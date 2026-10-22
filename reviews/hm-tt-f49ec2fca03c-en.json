@@ -1,0 +1,51 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-f49ec2fca03c-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "solus-sun-etymology",
+      "question": "The source connects solus, the Russian word for sun, and the Roman name for 1 as an explanation of their origins. Should these etymological claims be documented or revised? They are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "greek-one-name",
+      "question": "The source gives ios as the Greek name for one and lists mixed Greek/Cyrillic letter forms in the Herodianic numerals. Should the word and character transcription be checked? They are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "civilization-chronology",
+      "question": "The source calls Egypt the first civilization and dates the formation of its state to around four millennia BCE. Should the priority claim and chronology be qualified? The source wording is retained.",
+      "blocking": false,
+      "state": "open"
+    },
+    {
+      "id": "russian-numeral-first-use",
+      "question": "The source says Indo-Arabic numerals first appeared in Russia only in the seventeenth century. Should first appearance be distinguished from widespread adoption? The source date is retained.",
+      "blocking": false,
+      "state": "open"
+    },
+    {
+      "id": "zero-circle-date",
+      "question": "The source dates replacement of the Indian zero-dot by a circle to the fifth century. Should this precise chronology be supported with a source? The original century is retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 23,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-11",
+      "url": "https://teletype.in/@history_math/Kak-lyudi-nauchilis-schitat-09-11"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
