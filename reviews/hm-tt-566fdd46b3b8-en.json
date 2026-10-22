@@ -1,0 +1,17 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-566fdd46b3b8-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 11,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-04-06",
+      "url": "https://teletype.in/@history_math/Geometricheskoe-mesto-tochek-na-kozah-04-06"
+    }
+  }
+}
