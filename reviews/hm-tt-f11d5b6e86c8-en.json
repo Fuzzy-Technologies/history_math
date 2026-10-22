@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-f11d5b6e86c8-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "jealous-husbands-condition",
+      "question": "The source clarification refers to other husbands being accompanied by their wives, while the usual puzzle requires a wife to be accompanied by her own husband whenever another husband is present. Which restriction should govern this article and its 11-trip diagram? The source wording has been preserved.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-12-01",
+      "url": "https://teletype.in/@history_math/crossing"
+    }
+  }
+}
