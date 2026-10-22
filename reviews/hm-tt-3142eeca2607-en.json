@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-3142eeca2607-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "chebyshev-lecture-anecdote",
+      "question": "Can a historical source be supplied for the claim about fashion designers attending the 1878 lecture and for its quoted opening sentence? The anecdote is retained from the source pending review.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-02-11",
+      "url": "https://teletype.in/@history_math/Lekalo-02-11"
+    }
+  }
+}
