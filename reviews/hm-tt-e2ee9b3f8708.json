@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-e2ee9b3f8708",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-22",
+    "package_sha256": "1c2221604b5161986d207685de512e181995feda020ba6fd274c91e060e1ee19",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/58#pullrequestreview-5616489118",
+    "source_commit": "f2c9aecb2af5fc217096875bde599baf133f0647",
+    "source_review_id": 5616489118,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-22T15:15:26Z",
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2026-04-28",
+      "url": "https://teletype.in/@history_math/ornaments-girih"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
