@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-3079a878ffdf/the-einstein-triangle-01.png": {
+    "sha256": "d831c474f8cb79a195ea9b5ef2f2659529a0cab9e6889ae27c3273f9a5700d32",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2711958,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-3079a878ffdf/the-einstein-triangle-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "f097ab11d6951cff57cc435926cc16592cfed306c9fc0801a9a8ba233f7c19d4",
+        "bytes": 1689918
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-3079a878ffdf-the-einstein-triangle-01-d831c474f8cb79a195ea9b5ef2f2659529a0cab9e6889ae27c3273f9a5700d32.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630493368",
+      "asset_id": 630493368,
+      "release_tag": "article-originals-d",
+      "sha256": "d831c474f8cb79a195ea9b5ef2f2659529a0cab9e6889ae27c3273f9a5700d32",
+      "bytes": 2711958
+    }
+  },
+  "/assets/images/hm-tt-3079a878ffdf/the-einstein-triangle-02.png": {
+    "sha256": "a4242ff7cb3e3ac513bb3b14770fc4e6db34fa2c29c5227f27dc1c5274fcce68",
+    "width": 1000,
+    "height": 600,
+    "bytes": 62298,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-3079a878ffdf/the-einstein-triangle-02.png-960.webp",
+        "width": 960,
+        "height": 576,
+        "sha256": "72b8a6693c9366872b591085885e4e4da71f7e9e9ec8c019a9495c1f32471847",
+        "bytes": 39646
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-3079a878ffdf-the-einstein-triangle-02-a4242ff7cb3e3ac513bb3b14770fc4e6db34fa2c29c5227f27dc1c5274fcce68.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630532706",
+      "asset_id": 630532706,
+      "release_tag": "article-originals-a",
+      "sha256": "a4242ff7cb3e3ac513bb3b14770fc4e6db34fa2c29c5227f27dc1c5274fcce68",
+      "bytes": 62298
+    }
+  },
+  "/assets/images/hm-tt-3079a878ffdf/the-einstein-triangle-03.png": {
+    "sha256": "c89b22c178da33f88226566a053eaa178fe88219fd2c66edd07c4f364a0009e8",
+    "width": 1000,
+    "height": 600,
+    "bytes": 75017,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-3079a878ffdf/the-einstein-triangle-03.png-960.webp",
+        "width": 960,
+        "height": 576,
+        "sha256": "e83175976b40cdcfde9007aee45fdd50aacf84d7fa156d7f777d9ab82fae427c",
+        "bytes": 53508
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-3079a878ffdf-the-einstein-triangle-03-c89b22c178da33f88226566a053eaa178fe88219fd2c66edd07c4f364a0009e8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630532932",
+      "asset_id": 630532932,
+      "release_tag": "article-originals-c",
+      "sha256": "c89b22c178da33f88226566a053eaa178fe88219fd2c66edd07c4f364a0009e8",
+      "bytes": 75017
+    }
+  }
+}
