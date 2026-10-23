@@ -1,0 +1,109 @@
+---
+schema_version: 1
+article_id: hm-tt-6454aed1130d-en
+source_work_id: tt-6454aed1130d
+layout: article
+title: The Telescopic Alidade
+authors:
+- Mansur Gilmullin
+author: Mansur Gilmullin
+lang: en
+translation_key: hm-tt-6454aed1130d
+description: The telescopic alidade measures height differences, distances and vertical angles and plots survey
+  directions on a plane table.
+type: instrument
+tags:
+- Instruments
+- Telescopic alidade
+math: true
+status: published
+date: '2024-10-08'
+permalink: /articles/hm-tt-6454aed1130d/
+rights_basis: Owner-requested migration of the author's complete Teletype publication on 2026-10-11; editorial publication
+  approved by Tim55667757; owner approval recorded; no new license asserted.
+original_publication:
+  outlet: Teletype
+  date: '2024-10-08'
+  url: https://teletype.in/@history_math/kipregel
+source_url: https://teletype.in/@history_math/kipregel
+figures:
+- id: fig-1
+  path: /assets/images/hm-tt-6454aed1130d/kipregel-01.jpeg
+  alt: KB alidade (1943), manufactured by the Geofizika factory
+  caption: KB alidade (1943), manufactured by the Geofizika factory
+  source: Illustration archive of the original Teletype article.
+  credit: ''
+  rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original
+    attribution retained; no new license asserted.
+  source_url: https://img4.teletype.in/files/b2/af/b2afc710-60c6-4adf-a70c-b017fbd4e940.jpeg
+- id: fig-2
+  path: /assets/images/hm-tt-6454aed1130d/kipregel-02.jpeg
+  alt: Shiryayev KVSh-8 height-measuring alidade (1970)
+  caption: Shiryayev KVSh-8 height-measuring alidade (1970)
+  source: Illustration archive of the original Teletype article.
+  credit: ''
+  rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original
+    attribution retained; no new license asserted.
+  source_url: https://img2.teletype.in/files/94/89/9489293b-b5cd-4925-802a-8bc111250c48.jpeg
+- id: fig-3
+  path: /assets/images/hm-tt-6454aed1130d/kipregel-03.jpeg
+  alt: KA-2 automatic alidade (1973) on a plane table
+  caption: KA-2 automatic alidade (1973) on a plane table
+  source: Illustration archive of the original Teletype article.
+  credit: ''
+  rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original
+    attribution retained; no new license asserted.
+  source_url: https://img4.teletype.in/files/35/ef/35ef0e52-eeb6-41bb-9e5a-0fd0ba915edc.jpeg
+- id: fig-4
+  path: /assets/images/hm-tt-6454aed1130d/kipregel-04.jpeg
+  alt: MOM MA-5 alidade (1970, Hungary)
+  caption: MOM MA-5 alidade (1970, Hungary)
+  source: Illustration archive of the original Teletype article.
+  credit: ''
+  rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original
+    attribution retained; no new license asserted.
+  source_url: https://img1.teletype.in/files/05/53/05535f46-cf63-40bf-9114-7d19502d6c26.jpeg
+- id: fig-5
+  path: /assets/images/hm-tt-6454aed1130d/kipregel-05.jpeg
+  alt: KN nomographic alidade (1986)
+  caption: KN nomographic alidade (1986)
+  source: Illustration archive of the original Teletype article.
+  credit: ''
+  rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original
+    attribution retained; no new license asserted.
+  source_url: https://img3.teletype.in/files/aa/ef/aaef242e-72d0-451e-b54c-a671c4712af9.jpeg
+preview_image: /assets/images/hm-tt-6454aed1130d/kipregel-01.jpeg
+cover_image: /assets/images/hm-tt-6454aed1130d/kipregel-01.jpeg
+---
+{% include article-figure.html id="fig-1" %}
+
+The telescopic alidade (German kippregel, from kippen, “to tip”, and regel, “rule”) is a mechanical or optical surveying instrument for measuring differences in elevation, distances and vertical angles, and for constructing directions graphically and plotting them on a terrain plan.
+
+{% include article-figure.html id="fig-2" %}
+
+The alidade forms part of a plane-table surveying set — the plane table being a drawing table used in the field — for topographic surveys. An alidade usually includes:
+
+• a supporting column;  
+• a telescope with stadia hairs, or a sight;  
+• a vertical circle, graduated in degrees, for determining angles of inclination;  
+• a tubular spirit level used for levelling;  
+• a graduated rule for plotting survey points on the plane-table board.
+
+{% include article-figure.html id="fig-3" %}
+
+The alidade is used to sight survey points. The stadia hairs give the distance to a point. Its difference in elevation is determined from the vertical angle and distance. The rule is used to plot the line towards the point and its distance on the board.
+
+Plane-table surveying with an alidade is used, for example, in railway surveys to prepare plans of bridge crossings and difficult terrain.
+
+{% include article-figure.html id="fig-4" %}
+
+In our country, a nomographic alidade was also mass-produced in two versions from 1976 onwards.
+
+{% include article-figure.html id="fig-5" %}
+
+## Further reading {#section-1}
+
+1. Great Soviet Encyclopedia. Vol. 12 / Chief editor A. M. Prokhorov. — Moscow: Sovetskaya Entsiklopediya, 1970–1978.  
+2. Zakharov, A. I. Surveying Instruments: A Handbook. — Moscow: Nedra, 1989. — 314 pp.  
+3. Znamensky, M. A. Measurement Work in the Field. — Moscow: Uchpedgiz, 1960. — 192 pp.  
+4. Prochukhaev, V. G. Measurement in the Secondary-School Mathematics Course. — Moscow: Prosveshcheniye, 1965. — 140 pp.
