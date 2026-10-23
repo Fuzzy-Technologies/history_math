@@ -1,0 +1,102 @@
+{
+  "/assets/images/hm-tt-b047fdc27947/36-officers-puzzle-using-lat-01.png": {
+    "sha256": "23789eea709544af88fbdb5dd9a75f9002f4c57ec91666a498e8d5b84406e9a4",
+    "width": 1218,
+    "height": 722,
+    "bytes": 1958629,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b047fdc27947/36-officers-puzzle-using-lat-01.png-960.webp",
+        "width": 960,
+        "height": 569,
+        "sha256": "796791502902aa061022b2317916673cb263bece71b1162c2d9f29583809f6d3",
+        "bytes": 514292
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-b047fdc27947-36-officers-puzzle-using-lat-01-23789eea709544af88fbdb5dd9a75f9002f4c57ec91666a498e8d5b84406e9a4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630494860",
+      "asset_id": 630494860,
+      "release_tag": "article-originals-2",
+      "sha256": "23789eea709544af88fbdb5dd9a75f9002f4c57ec91666a498e8d5b84406e9a4",
+      "bytes": 1958629
+    }
+  },
+  "/assets/images/hm-tt-b047fdc27947/36-officers-puzzle-using-lat-02.png": {
+    "sha256": "e681baff2ae7f76e423133526c6d5243f4192099ffac274205ed96220af09376",
+    "width": 839,
+    "height": 292,
+    "bytes": 14715,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b047fdc27947/36-officers-puzzle-using-lat-02.png-839.webp",
+        "width": 839,
+        "height": 292,
+        "sha256": "9193ecf72429361480ce1df04f47b604ff7bd8857aab5adb90132736e95fbc66",
+        "bytes": 4146
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-b047fdc27947-36-officers-puzzle-using-lat-02-e681baff2ae7f76e423133526c6d5243f4192099ffac274205ed96220af09376.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630533410",
+      "asset_id": 630533410,
+      "release_tag": "article-originals-e",
+      "sha256": "e681baff2ae7f76e423133526c6d5243f4192099ffac274205ed96220af09376",
+      "bytes": 14715
+    }
+  },
+  "/assets/images/hm-tt-b047fdc27947/36-officers-puzzle-using-lat-03.png": {
+    "sha256": "c2ad5a9eb0b98ae705bf872c5be06d0da48beb466cbc4860c58af4596e2e2636",
+    "width": 544,
+    "height": 542,
+    "bytes": 39734,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b047fdc27947/36-officers-puzzle-using-lat-03.png-544.webp",
+        "width": 544,
+        "height": 542,
+        "sha256": "a3532417d08565edd2b53de26b7658d972ea4a2d7a916b586170587d92b7ec4d",
+        "bytes": 24162
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-b047fdc27947-36-officers-puzzle-using-lat-03-c2ad5a9eb0b98ae705bf872c5be06d0da48beb466cbc4860c58af4596e2e2636.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630533598",
+      "asset_id": 630533598,
+      "release_tag": "article-originals-c",
+      "sha256": "c2ad5a9eb0b98ae705bf872c5be06d0da48beb466cbc4860c58af4596e2e2636",
+      "bytes": 39734
+    }
+  },
+  "/assets/images/hm-tt-b047fdc27947/36-officers-puzzle-using-lat-04.png": {
+    "sha256": "b54d459f54a1110c6ebd50a73ac1396a5ae200b781f21fc2d90abb3aeface4d4",
+    "width": 714,
+    "height": 768,
+    "bytes": 190539,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b047fdc27947/36-officers-puzzle-using-lat-04.png-714.webp",
+        "width": 714,
+        "height": 768,
+        "sha256": "f5eb10221e5eaee95e9f6026bfef6791aeba7e9f2a25221cb66b5c96854d05ff",
+        "bytes": 124522
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-b047fdc27947-36-officers-puzzle-using-lat-04-b54d459f54a1110c6ebd50a73ac1396a5ae200b781f21fc2d90abb3aeface4d4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630533775",
+      "asset_id": 630533775,
+      "release_tag": "article-originals-b",
+      "sha256": "b54d459f54a1110c6ebd50a73ac1396a5ae200b781f21fc2d90abb3aeface4d4",
+      "bytes": 190539
+    }
+  }
+}
