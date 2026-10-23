@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-bd200442cc7d",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-23",
+    "package_sha256": "ae92614ee7f44e0c5e33bdcdd8b42a88ce2d6c75afe04fc19ee27d372a0cfcda",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/129#pullrequestreview-5626008185",
+    "source_commit": "0fb73ba8693add8d579b01981e57d05334d8dc49",
+    "source_review_id": 5626008185,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-23T08:51:27Z",
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 16,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-10-26",
+      "url": "https://teletype.in/@history_math/Mordkovich-seminar-43"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
