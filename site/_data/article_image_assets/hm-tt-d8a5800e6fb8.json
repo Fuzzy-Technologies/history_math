@@ -1,0 +1,427 @@
+{
+  "/assets/images/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-01.png": {
+    "sha256": "6f2d7fffd82b6953574ea3f8281195bd513ed29d4808eca686632f21b4a4fd8a",
+    "width": 1820,
+    "height": 2664,
+    "bytes": 5098921,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-01.png-960.webp",
+        "width": 960,
+        "height": 1405,
+        "sha256": "2f295de2cc1d29c66551df8fbebe128d9e815a7cc032e24dea639dc726e76770",
+        "bytes": 873560
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-d8a5800e6fb8-novozhenina-tatyana-evgenevn-01-6f2d7fffd82b6953574ea3f8281195bd513ed29d4808eca686632f21b4a4fd8a.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630556915",
+      "asset_id": 630556915,
+      "release_tag": "article-originals-6",
+      "sha256": "6f2d7fffd82b6953574ea3f8281195bd513ed29d4808eca686632f21b4a4fd8a",
+      "bytes": 5098921
+    }
+  },
+  "/assets/images/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-02.png": {
+    "sha256": "7721b768a0166739c5fe523affa284ce76fef9332482ab28acbde8ec8a04bac2",
+    "width": 1670,
+    "height": 2420,
+    "bytes": 3477026,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-02.png-960.webp",
+        "width": 960,
+        "height": 1391,
+        "sha256": "44bbf69184f49b7eee8cd1879e766d9606d303c10e7a467003c42880552f47bd",
+        "bytes": 707934
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-d8a5800e6fb8-novozhenina-tatyana-evgenevn-02-7721b768a0166739c5fe523affa284ce76fef9332482ab28acbde8ec8a04bac2.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557120",
+      "asset_id": 630557120,
+      "release_tag": "article-originals-7",
+      "sha256": "7721b768a0166739c5fe523affa284ce76fef9332482ab28acbde8ec8a04bac2",
+      "bytes": 3477026
+    }
+  },
+  "/assets/images/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-03.png": {
+    "sha256": "c2bf9fe43c4b02de4ccf725c1e0c64fe954a6055a68e9c19800b517b8e761efe",
+    "width": 1820,
+    "height": 1090,
+    "bytes": 2077088,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-03.png-960.webp",
+        "width": 960,
+        "height": 575,
+        "sha256": "30b1f27589b3dec6dace601ec502d4252e337c47ef386370ded59cfa898653be",
+        "bytes": 420626
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-d8a5800e6fb8-novozhenina-tatyana-evgenevn-03-c2bf9fe43c4b02de4ccf725c1e0c64fe954a6055a68e9c19800b517b8e761efe.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557272",
+      "asset_id": 630557272,
+      "release_tag": "article-originals-c",
+      "sha256": "c2bf9fe43c4b02de4ccf725c1e0c64fe954a6055a68e9c19800b517b8e761efe",
+      "bytes": 2077088
+    }
+  },
+  "/assets/images/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-04.png": {
+    "sha256": "98ccd659f04660b6f76da7204b1986771f85fca5a14674d97a2d8ef50cb42d03",
+    "width": 1850,
+    "height": 2850,
+    "bytes": 7801119,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-04.png-960.webp",
+        "width": 960,
+        "height": 1479,
+        "sha256": "6ca36792ac7970e1a8d60565c16b303f1813d1449579da72cea7c21e80dd4d25",
+        "bytes": 1129094
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-d8a5800e6fb8-novozhenina-tatyana-evgenevn-04-98ccd659f04660b6f76da7204b1986771f85fca5a14674d97a2d8ef50cb42d03.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557390",
+      "asset_id": 630557390,
+      "release_tag": "article-originals-9",
+      "sha256": "98ccd659f04660b6f76da7204b1986771f85fca5a14674d97a2d8ef50cb42d03",
+      "bytes": 7801119
+    }
+  },
+  "/assets/images/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-05.png": {
+    "sha256": "123a7edebd38471cf07f0307f48cc0a2c3e8169d481e42e34fed60abed653fc5",
+    "width": 1850,
+    "height": 2750,
+    "bytes": 6618240,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-05.png-960.webp",
+        "width": 960,
+        "height": 1427,
+        "sha256": "a1941bd8414cb76590cc6f4d75db89530112b40f69e9df16fc1fedebb9140766",
+        "bytes": 1083016
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-d8a5800e6fb8-novozhenina-tatyana-evgenevn-05-123a7edebd38471cf07f0307f48cc0a2c3e8169d481e42e34fed60abed653fc5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557548",
+      "asset_id": 630557548,
+      "release_tag": "article-originals-1",
+      "sha256": "123a7edebd38471cf07f0307f48cc0a2c3e8169d481e42e34fed60abed653fc5",
+      "bytes": 6618240
+    }
+  },
+  "/assets/images/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-06.png": {
+    "sha256": "3f4adb8ffda99923a367e333a9b90055945763618249be5921fcadb78066d39c",
+    "width": 1850,
+    "height": 1390,
+    "bytes": 3730230,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-06.png-960.webp",
+        "width": 960,
+        "height": 721,
+        "sha256": "063e6ee47b358e1f3368364b32a1563d456fa250dcc96f8e1366d057047d741e",
+        "bytes": 593702
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-d8a5800e6fb8-novozhenina-tatyana-evgenevn-06-3f4adb8ffda99923a367e333a9b90055945763618249be5921fcadb78066d39c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557660",
+      "asset_id": 630557660,
+      "release_tag": "article-originals-3",
+      "sha256": "3f4adb8ffda99923a367e333a9b90055945763618249be5921fcadb78066d39c",
+      "bytes": 3730230
+    }
+  },
+  "/assets/images/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-07.png": {
+    "sha256": "625c64d4bc341a60b4b520f0c852862d98a5633cca65dd3a122392e33ac1c12d",
+    "width": 1850,
+    "height": 2550,
+    "bytes": 9356996,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-07.png-960.webp",
+        "width": 960,
+        "height": 1323,
+        "sha256": "efad24a30a0e6dc794ea6163a61b1e2c69fd4a95ac2ee8a44dd8fcd7d845a53f",
+        "bytes": 1194638
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-d8a5800e6fb8-novozhenina-tatyana-evgenevn-07-625c64d4bc341a60b4b520f0c852862d98a5633cca65dd3a122392e33ac1c12d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557808",
+      "asset_id": 630557808,
+      "release_tag": "article-originals-6",
+      "sha256": "625c64d4bc341a60b4b520f0c852862d98a5633cca65dd3a122392e33ac1c12d",
+      "bytes": 9356996
+    }
+  },
+  "/assets/images/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-08.png": {
+    "sha256": "01a4fce35a38fd650cd5bb863535c79c005c656e50c572cf3aee36de76e6790d",
+    "width": 1850,
+    "height": 1230,
+    "bytes": 4142123,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-08.png-960.webp",
+        "width": 960,
+        "height": 638,
+        "sha256": "8583cca7138208788c57d887f95d4db69dd75f480b454a8ce3943dda412dc886",
+        "bytes": 660630
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-d8a5800e6fb8-novozhenina-tatyana-evgenevn-08-01a4fce35a38fd650cd5bb863535c79c005c656e50c572cf3aee36de76e6790d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557966",
+      "asset_id": 630557966,
+      "release_tag": "article-originals-0",
+      "sha256": "01a4fce35a38fd650cd5bb863535c79c005c656e50c572cf3aee36de76e6790d",
+      "bytes": 4142123
+    }
+  },
+  "/assets/images/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-09.png": {
+    "sha256": "ed79c96feaab36385f124b8306fa4ca4e18c8891b40406a5c6ef63daf72d85cb",
+    "width": 1850,
+    "height": 1190,
+    "bytes": 4219052,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-09.png-960.webp",
+        "width": 960,
+        "height": 618,
+        "sha256": "d7f7af63d2b76fc8b5057fbdf76186cdaa6252da09f0c32200aa847d7fd2cb27",
+        "bytes": 655500
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-d8a5800e6fb8-novozhenina-tatyana-evgenevn-09-ed79c96feaab36385f124b8306fa4ca4e18c8891b40406a5c6ef63daf72d85cb.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558167",
+      "asset_id": 630558167,
+      "release_tag": "article-originals-e",
+      "sha256": "ed79c96feaab36385f124b8306fa4ca4e18c8891b40406a5c6ef63daf72d85cb",
+      "bytes": 4219052
+    }
+  },
+  "/assets/images/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-10.png": {
+    "sha256": "5dd74df41e43ec723a6c7e4abab31c6da38f2541febefdc0e38055697f041c76",
+    "width": 1850,
+    "height": 1400,
+    "bytes": 3535491,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-10.png-960.webp",
+        "width": 960,
+        "height": 726,
+        "sha256": "4fc1d5681f282ab979428fe2b77581da1d8702bb4561efa0d6055481921a6f17",
+        "bytes": 602046
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-d8a5800e6fb8-novozhenina-tatyana-evgenevn-10-5dd74df41e43ec723a6c7e4abab31c6da38f2541febefdc0e38055697f041c76.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558295",
+      "asset_id": 630558295,
+      "release_tag": "article-originals-5",
+      "sha256": "5dd74df41e43ec723a6c7e4abab31c6da38f2541febefdc0e38055697f041c76",
+      "bytes": 3535491
+    }
+  },
+  "/assets/images/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-11.png": {
+    "sha256": "21a91a17461eaec36f83ef8f502c0a29bcf5c60c95a0757b767d5eb687f6db30",
+    "width": 1920,
+    "height": 1920,
+    "bytes": 7406332,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-11.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "4b845db2c716ea8860844aecaea25e1be8a24f45b1b425099ce7be870a3d5e30",
+        "bytes": 1088294
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-d8a5800e6fb8-novozhenina-tatyana-evgenevn-11-21a91a17461eaec36f83ef8f502c0a29bcf5c60c95a0757b767d5eb687f6db30.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558480",
+      "asset_id": 630558480,
+      "release_tag": "article-originals-2",
+      "sha256": "21a91a17461eaec36f83ef8f502c0a29bcf5c60c95a0757b767d5eb687f6db30",
+      "bytes": 7406332
+    }
+  },
+  "/assets/images/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-12.png": {
+    "sha256": "89b519dd24d1f74ad42cd3c12a7b47efc2ee6e0734ef79c1bc6a7c501d2d7aac",
+    "width": 1500,
+    "height": 1995,
+    "bytes": 6982971,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-12.png-960.webp",
+        "width": 960,
+        "height": 1277,
+        "sha256": "05f55ab015c4bb226ca6595f02f6c11b4772b1c6f87053687ecb909603511619",
+        "bytes": 1651134
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-d8a5800e6fb8-novozhenina-tatyana-evgenevn-12-89b519dd24d1f74ad42cd3c12a7b47efc2ee6e0734ef79c1bc6a7c501d2d7aac.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558630",
+      "asset_id": 630558630,
+      "release_tag": "article-originals-8",
+      "sha256": "89b519dd24d1f74ad42cd3c12a7b47efc2ee6e0734ef79c1bc6a7c501d2d7aac",
+      "bytes": 6982971
+    }
+  },
+  "/assets/images/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-13.png": {
+    "sha256": "8f2dabb5ee5007d5960eaee41ce5e2f440ed575cbb9ef5dfadbde16ca634b566",
+    "width": 2050,
+    "height": 2050,
+    "bytes": 7198868,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-13.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "a009f688ce8758279a62ef05e0c39e404edc830cc975c81c66db629474bec3cb",
+        "bytes": 945140
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-d8a5800e6fb8-novozhenina-tatyana-evgenevn-13-8f2dabb5ee5007d5960eaee41ce5e2f440ed575cbb9ef5dfadbde16ca634b566.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558781",
+      "asset_id": 630558781,
+      "release_tag": "article-originals-8",
+      "sha256": "8f2dabb5ee5007d5960eaee41ce5e2f440ed575cbb9ef5dfadbde16ca634b566",
+      "bytes": 7198868
+    }
+  },
+  "/assets/images/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-14.png": {
+    "sha256": "0fa3af7823611bde65a759b0455129742368af7a821765e80f703827b2a335d7",
+    "width": 1850,
+    "height": 1635,
+    "bytes": 5414081,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-14.png-960.webp",
+        "width": 960,
+        "height": 848,
+        "sha256": "49fabfeedd2e4633501842b314661e83ba77489e0e1d7e5ffccead4903599053",
+        "bytes": 750194
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-d8a5800e6fb8-novozhenina-tatyana-evgenevn-14-0fa3af7823611bde65a759b0455129742368af7a821765e80f703827b2a335d7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558922",
+      "asset_id": 630558922,
+      "release_tag": "article-originals-0",
+      "sha256": "0fa3af7823611bde65a759b0455129742368af7a821765e80f703827b2a335d7",
+      "bytes": 5414081
+    }
+  },
+  "/assets/images/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-15.png": {
+    "sha256": "a07acab5108eeb9e3eda788149be3e5d53f7fd4b5364d6dd78df03adc9a703de",
+    "width": 1850,
+    "height": 1435,
+    "bytes": 6066425,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-15.png-960.webp",
+        "width": 960,
+        "height": 745,
+        "sha256": "8810dc38e7f97f673e090117ee7ce702dc1db9aff1f57b68b685c23de1afb237",
+        "bytes": 931078
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-d8a5800e6fb8-novozhenina-tatyana-evgenevn-15-a07acab5108eeb9e3eda788149be3e5d53f7fd4b5364d6dd78df03adc9a703de.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559132",
+      "asset_id": 630559132,
+      "release_tag": "article-originals-a",
+      "sha256": "a07acab5108eeb9e3eda788149be3e5d53f7fd4b5364d6dd78df03adc9a703de",
+      "bytes": 6066425
+    }
+  },
+  "/assets/images/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-16.png": {
+    "sha256": "60e52674965035ba2fabc7566164bada859c26aa4621091fbd6f172b563cb6a0",
+    "width": 1850,
+    "height": 1240,
+    "bytes": 5030799,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-16.png-960.webp",
+        "width": 960,
+        "height": 643,
+        "sha256": "af977cba950e0444122e081003a8bab76ac746ec604aa50b91d940f7a590bd79",
+        "bytes": 708542
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-d8a5800e6fb8-novozhenina-tatyana-evgenevn-16-60e52674965035ba2fabc7566164bada859c26aa4621091fbd6f172b563cb6a0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559269",
+      "asset_id": 630559269,
+      "release_tag": "article-originals-6",
+      "sha256": "60e52674965035ba2fabc7566164bada859c26aa4621091fbd6f172b563cb6a0",
+      "bytes": 5030799
+    }
+  },
+  "/assets/images/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-17.png": {
+    "sha256": "36990a7853913fd5c3288b9583fda2b834640fb3b086fe32ac5642a7bfde621a",
+    "width": 3670,
+    "height": 5260,
+    "bytes": 7949543,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d8a5800e6fb8/novozhenina-tatyana-evgenevn-17.png-960.webp",
+        "width": 960,
+        "height": 1376,
+        "sha256": "fe40977b356bea9cc816035c7415929af5d5af8cfaaeca4753a53f8d5778ac6b",
+        "bytes": 505068
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-d8a5800e6fb8-novozhenina-tatyana-evgenevn-17-36990a7853913fd5c3288b9583fda2b834640fb3b086fe32ac5642a7bfde621a.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559408",
+      "asset_id": 630559408,
+      "release_tag": "article-originals-3",
+      "sha256": "36990a7853913fd5c3288b9583fda2b834640fb3b086fe32ac5642a7bfde621a",
+      "bytes": 7949543
+    }
+  }
+}
