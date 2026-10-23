@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-cf74f938e5db-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-23",
+    "package_sha256": "1906204c7502d28f14a3cbdef76f34d2bdfc6550ff9e8adaae906578a0d092fa",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/131#pullrequestreview-5626008735",
+    "source_commit": "1e19ebd8c10b1578777ed3d25831af9102d87c87",
+    "source_review_id": 5626008735,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-23T08:51:30Z",
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-10-26",
+      "url": "https://teletype.in/@history_math/Conway-Game-of-Life"
+    }
+  },
+  "manual_changes": [
+    "Restored the nested rule lists directly from the archived Teletype HTML in both languages and proofread their English adaptation."
+  ]
+}
