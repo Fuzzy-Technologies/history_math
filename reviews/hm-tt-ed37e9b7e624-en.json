@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-ed37e9b7e624-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-migration-1",
+      "question": "The Russian instruction says ‘прибор изменяется дважды’. Confirm that this means placing the instrument in two different positions to draw two centre lines, as expressed in the English adaptation. The Russian source wording is retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-07-03",
+      "url": "https://teletype.in/@history_math/Diametromer-centroiskatel-07-03"
+    }
+  }
+}
