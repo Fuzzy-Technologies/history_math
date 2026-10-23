@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-911cb8fa227f-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-23",
+    "package_sha256": "3dea37a03962e9b1b5820e3c7aaca14f29a6ab1ec3206423e3ac43118487faea",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/121#pullrequestreview-5626007619",
+    "source_commit": "2a1dab6af10f4d8e6898df5f94aaf0e1b93c21b1",
+    "source_review_id": 5626007619,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-23T08:51:23Z",
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Publication approved by the owner: https://github.com/Fuzzy-Technologies/history_math/pull/121#pullrequestreview-5626007619",
+    "figures": 17,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-12-08",
+      "url": "https://teletype.in/@history_math/Bible-math-Algebra-basics"
+    }
+  }
+}
