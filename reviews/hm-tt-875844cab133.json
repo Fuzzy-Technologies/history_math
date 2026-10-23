@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-875844cab133",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-23",
+    "package_sha256": "e99d0c12b00bcaf6944478df488e64e5a0830ed15a1fe1c57ecb67763f39c2f1",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/138#pullrequestreview-5626009519",
+    "source_commit": "529e5faed7bbe125f12742f8c8408acb65ea79bc",
+    "source_review_id": 5626009519,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-23T08:51:35Z",
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-08-31",
+      "url": "https://teletype.in/@history_math/Poceluj-po-raschyotu-formula-Dekarta-Soddi-08-31"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
