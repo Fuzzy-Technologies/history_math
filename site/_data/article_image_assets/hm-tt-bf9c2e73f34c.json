@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-bf9c2e73f34c/fleksagon-01.gif": {
+    "sha256": "02b5c83898f35c78e48ab2f582880c18e00173c27f1be49b4b2805807d5a8b47",
+    "width": 240,
+    "height": 248,
+    "bytes": 2239322,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bf9c2e73f34c/fleksagon-01.gif-240.webp",
+        "width": 240,
+        "height": 248,
+        "sha256": "58a24bd62f81ab44a719404a671338f7acaa35007b453b727451dc901057834d",
+        "bytes": 1742434
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-bf9c2e73f34c-fleksagon-01-02b5c83898f35c78e48ab2f582880c18e00173c27f1be49b4b2805807d5a8b47.gif",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630498238",
+      "asset_id": 630498238,
+      "release_tag": "article-originals-0",
+      "sha256": "02b5c83898f35c78e48ab2f582880c18e00173c27f1be49b4b2805807d5a8b47",
+      "bytes": 2239322
+    }
+  },
+  "/assets/images/hm-tt-bf9c2e73f34c/fleksagon-02.png": {
+    "sha256": "dcf456f43e253b760074d9503e108a4a1ba0f6274a6bee39aa02f7d4d18eeb68",
+    "width": 5000,
+    "height": 3263,
+    "bytes": 32733476,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bf9c2e73f34c/fleksagon-02.png-960.webp",
+        "width": 960,
+        "height": 626,
+        "sha256": "303513ad5465a13239a0754998a605312e3bbf130d91769136fceb8d9b9d07e6",
+        "bytes": 933190
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-bf9c2e73f34c-fleksagon-02-dcf456f43e253b760074d9503e108a4a1ba0f6274a6bee39aa02f7d4d18eeb68.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630543536",
+      "asset_id": 630543536,
+      "release_tag": "article-originals-d",
+      "sha256": "dcf456f43e253b760074d9503e108a4a1ba0f6274a6bee39aa02f7d4d18eeb68",
+      "bytes": 32733476
+    }
+  },
+  "/assets/images/hm-tt-bf9c2e73f34c/fleksagon-03.png": {
+    "sha256": "dac95ff02008cbcf9bf40d9029a0cda0a25937a85b7a031773913f02ad1e730c",
+    "width": 1868,
+    "height": 849,
+    "bytes": 1520201,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bf9c2e73f34c/fleksagon-03.png-960.webp",
+        "width": 960,
+        "height": 436,
+        "sha256": "60dfaf26aae6b8a362b7a038f16d87e07436885fb86590d814c70a97c94e5c1c",
+        "bytes": 206684
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-bf9c2e73f34c-fleksagon-03-dac95ff02008cbcf9bf40d9029a0cda0a25937a85b7a031773913f02ad1e730c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630543698",
+      "asset_id": 630543698,
+      "release_tag": "article-originals-d",
+      "sha256": "dac95ff02008cbcf9bf40d9029a0cda0a25937a85b7a031773913f02ad1e730c",
+      "bytes": 1520201
+    }
+  },
+  "/assets/images/hm-tt-bf9c2e73f34c/fleksagon-04.png": {
+    "sha256": "01d653a97c4eb09fd9e39c85e07557f4c3f94cdd575c87c9ac3867dc5ae2ea38",
+    "width": 646,
+    "height": 546,
+    "bytes": 16382,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bf9c2e73f34c/fleksagon-04.png-646.webp",
+        "width": 646,
+        "height": 546,
+        "sha256": "6b7a4fecf363c9ac485b29ec55492572ebb2dc0f51ab7369b823545a2504f4dc",
+        "bytes": 8560
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-bf9c2e73f34c-fleksagon-04-01d653a97c4eb09fd9e39c85e07557f4c3f94cdd575c87c9ac3867dc5ae2ea38.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630543886",
+      "asset_id": 630543886,
+      "release_tag": "article-originals-0",
+      "sha256": "01d653a97c4eb09fd9e39c85e07557f4c3f94cdd575c87c9ac3867dc5ae2ea38",
+      "bytes": 16382
+    }
+  },
+  "/assets/images/hm-tt-bf9c2e73f34c/fleksagon-05.png": {
+    "sha256": "bff6f246934fbce55246bea0db480502e5c66d08886626cf281eaef640e6d8bc",
+    "width": 240,
+    "height": 248,
+    "bytes": 41829,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bf9c2e73f34c/fleksagon-05.png-240.webp",
+        "width": 240,
+        "height": 248,
+        "sha256": "07d6bed4acde80d435c0dd001e3422ca25143729371f8c18b422215fe1054fc2",
+        "bytes": 27684
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-bf9c2e73f34c-fleksagon-05-bff6f246934fbce55246bea0db480502e5c66d08886626cf281eaef640e6d8bc.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544027",
+      "asset_id": 630544027,
+      "release_tag": "article-originals-b",
+      "sha256": "bff6f246934fbce55246bea0db480502e5c66d08886626cf281eaef640e6d8bc",
+      "bytes": 41829
+    }
+  }
+}
