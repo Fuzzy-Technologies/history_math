@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-358705815f70",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-23",
+    "package_sha256": "fdfab6364e09dca10130cef2241d18eaa0e8f82216b755f1ed9d39d1913ae15d",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/79#pullrequestreview-5626005266",
+    "source_commit": "09910705df003f4960fba440384c7b05ddbcbf59",
+    "source_review_id": 5626005266,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-23T08:51:09Z",
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-06-12",
+      "url": "https://teletype.in/@history_math/Tremaux-Maze"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged.",
+    "Восстановлены вложенные списки правил по сохранённому HTML Teletype; содержание источника не изменено.",
+    "Formatted the archived book addresses in figure captions as descriptive Source links; original image bytes and bibliographic information retained."
+  ]
+}
