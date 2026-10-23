@@ -1,0 +1,45 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-fa8340af2638-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-galileo-first-telescope",
+      "question": "The source says Galileo constructed the first telescope in 1609 and the stamp caption calls him its inventor. Museo Galileo instead dates Hans Lipperhey’s earlier instrument to October 1608. Please authorise any correction; the source statements are retained. Evidence: https://catalogue.museogalileo.it/multimedia/TelescopeBis.html",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "en-galileo-flat-earth",
+      "question": "Please review the Flammarion caption’s implication that medieval people generally imagined a flat Earth before Galileo. The supplied caption is retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "en-galileo-statue",
+      "question": "Please verify the source caption’s sculptor “Kotodi” and date 1839. Italy’s cultural heritage catalogue identifies Costoli and dates his Uffizi Galileo statue to 1842–1851. The source spelling and date are retained. Evidence: https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/0900225227",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "en-galileo-birth-burial",
+      "question": "Please verify the source’s location “Pisa, Florence” and its claim that Galileo was initially buried in Arcetri. These supplied locations are retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 12,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-28",
+      "url": "https://teletype.in/@history_math/I-vsyo-taki-ona-vertitsya-09-28"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
