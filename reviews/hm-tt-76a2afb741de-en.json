@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-76a2afb741de-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-23",
+    "package_sha256": "14d46d35a1cce5cf1057939ed1786bf7580e4e82984676fa0ebf430fc0a7a01e",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/134#pullrequestreview-5626008914",
+    "source_commit": "65ccf5358c736dfd0ea764a7c1d7e612c00362b4",
+    "source_review_id": 5626008914,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-23T08:51:31Z",
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source attributes the electrical signs + and − to Lichtenberg and describes ISO 216 as adopted worldwide except Canada and the USA. Verify these historical and geographical claims; they are retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual package and retained source wording, including this question. No historical answer or substantive correction is inferred. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/134#pullrequestreview-5626008914"
+    },
+    {
+      "id": "q-english-2",
+      "question": "The source writes “АЗ” (Cyrillic letters) in the font-size problem, apparently intending A3, and the final answer does not fully derive the choice of 210 mm from the standard. Confirm the intended format and derivation; no silent mathematical correction has been made.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual package and retained source wording, including this question. No historical answer or substantive correction is inferred. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/134#pullrequestreview-5626008914"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Publication approved by the owner: https://github.com/Fuzzy-Technologies/history_math/pull/134#pullrequestreview-5626008914",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-10-08",
+      "url": "https://teletype.in/@history_math/paper-format"
+    }
+  }
+}
