@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-0a290d6244f8-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "historical-scoring-context",
+      "question": "The source presents several Olympic scoring schemes and a ten-point gymnastics scale as current. Should these be dated or otherwise qualified for the 2023 source publication? Their wording and numbers are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "expert-relation-direction",
+      "question": "The final paragraph calls judgements communicated to experts relations, whereas the preceding explanation discusses judgements given by experts. Which direction is intended? The source wording is retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 1,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-14",
+      "url": "https://teletype.in/@history_math/Podschyot-rezultatov-na-sportivnyh-sorevnovaniyah-11-14"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
