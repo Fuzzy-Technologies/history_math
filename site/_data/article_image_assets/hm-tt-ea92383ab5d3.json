@@ -1,0 +1,102 @@
+{
+  "/assets/images/hm-tt-ea92383ab5d3/bible-of-math-algebra-is-mor-01.jpeg": {
+    "sha256": "2ba7c152257edddd12c8855fa3f682de003163582efc246999628558c7621dcc",
+    "width": 2790,
+    "height": 1845,
+    "bytes": 1365981,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ea92383ab5d3/bible-of-math-algebra-is-mor-01.jpeg-960.webp",
+        "width": 960,
+        "height": 635,
+        "sha256": "6195d8e595f2895a4766166579717f647f60998470cea8a35b0acbbee70909fe",
+        "bytes": 747420
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-ea92383ab5d3-bible-of-math-algebra-is-mor-01-2ba7c152257edddd12c8855fa3f682de003163582efc246999628558c7621dcc.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630494026",
+      "asset_id": 630494026,
+      "release_tag": "article-originals-2",
+      "sha256": "2ba7c152257edddd12c8855fa3f682de003163582efc246999628558c7621dcc",
+      "bytes": 1365981
+    }
+  },
+  "/assets/images/hm-tt-ea92383ab5d3/bible-of-math-algebra-is-mor-02.png": {
+    "sha256": "dca51f49407866da45cca12a55b4883778c56ca00a1322b3855b2626fe291461",
+    "width": 1529,
+    "height": 1022,
+    "bytes": 3254087,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ea92383ab5d3/bible-of-math-algebra-is-mor-02-png-reading-960-44f869d069a6.webp",
+        "width": 960,
+        "height": 642,
+        "sha256": "44f869d069a6af2d8a26fd29cd535960169d7f31b958fb9f504822794d0a781d",
+        "bytes": 807460
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-ea92383ab5d3-bible-of-math-algebra-is-mor-02-dca51f49407866da45cca12a55b4883778c56ca00a1322b3855b2626fe291461.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630535911",
+      "asset_id": 630535911,
+      "release_tag": "article-originals-d",
+      "sha256": "dca51f49407866da45cca12a55b4883778c56ca00a1322b3855b2626fe291461",
+      "bytes": 3254087
+    }
+  },
+  "/assets/images/hm-tt-ea92383ab5d3/bible-of-math-algebra-is-mor-03.png": {
+    "sha256": "65ce69b0a7271026a0937c0395615a3a4daa816d31dc4ac49f99a3ae60f0ea55",
+    "width": 730,
+    "height": 729,
+    "bytes": 53383,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ea92383ab5d3/bible-of-math-algebra-is-mor-03.png-730.webp",
+        "width": 730,
+        "height": 729,
+        "sha256": "69f27a50c7d8227fd121b1302486d243eda48a2516fea80d4325513ec91010fd",
+        "bytes": 15676
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-ea92383ab5d3-bible-of-math-algebra-is-mor-03-65ce69b0a7271026a0937c0395615a3a4daa816d31dc4ac49f99a3ae60f0ea55.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630536073",
+      "asset_id": 630536073,
+      "release_tag": "article-originals-6",
+      "sha256": "65ce69b0a7271026a0937c0395615a3a4daa816d31dc4ac49f99a3ae60f0ea55",
+      "bytes": 53383
+    }
+  },
+  "/assets/images/hm-tt-ea92383ab5d3/bible-of-math-algebra-is-mor-04.png": {
+    "sha256": "242e8191fab24a372a597c8dfe5f18009d7f7266df7af46338fab01ed18be6d7",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 1240213,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-ea92383ab5d3/bible-of-math-algebra-is-mor-04-png-reading-960-e358c9aba034.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "e358c9aba0349f92068e1d1ffb6f99bec9439b242f80b74ae54b7373a1ebc706",
+        "bytes": 637560
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-ea92383ab5d3-bible-of-math-algebra-is-mor-04-242e8191fab24a372a597c8dfe5f18009d7f7266df7af46338fab01ed18be6d7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630536235",
+      "asset_id": 630536235,
+      "release_tag": "article-originals-2",
+      "sha256": "242e8191fab24a372a597c8dfe5f18009d7f7266df7af46338fab01ed18be6d7",
+      "bytes": 1240213
+    }
+  }
+}
