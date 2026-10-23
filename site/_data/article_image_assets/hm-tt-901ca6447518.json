@@ -1,0 +1,352 @@
+{
+  "/assets/images/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-01.png": {
+    "sha256": "43abc3f1529cf8c6f8de4de567acf5ee878f5b38842c846aff84cb21637d1037",
+    "width": 1300,
+    "height": 1824,
+    "bytes": 4824524,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-01.png-960.webp",
+        "width": 960,
+        "height": 1347,
+        "sha256": "d4a292945909429a60b1eff1625b40b851e006df9ebb190ebf3975e0e574285e",
+        "bytes": 1343454
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-901ca6447518-rachinskij-sergej-aleksandro-01-43abc3f1529cf8c6f8de4de567acf5ee878f5b38842c846aff84cb21637d1037.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558122",
+      "asset_id": 630558122,
+      "release_tag": "article-originals-4",
+      "sha256": "43abc3f1529cf8c6f8de4de567acf5ee878f5b38842c846aff84cb21637d1037",
+      "bytes": 4824524
+    }
+  },
+  "/assets/images/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-02.png": {
+    "sha256": "ea0d419c9ab52c44764b850f6aaeb31b9d34eb3b50a2f60c503a0b49b0e9a493",
+    "width": 1024,
+    "height": 846,
+    "bytes": 1264820,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-02.png-960.webp",
+        "width": 960,
+        "height": 793,
+        "sha256": "b755663b8d6c6a20325ac16ed648e055425f6fb329e084b4003ca87b1b541655",
+        "bytes": 467674
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-901ca6447518-rachinskij-sergej-aleksandro-02-ea0d419c9ab52c44764b850f6aaeb31b9d34eb3b50a2f60c503a0b49b0e9a493.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558256",
+      "asset_id": 630558256,
+      "release_tag": "article-originals-e",
+      "sha256": "ea0d419c9ab52c44764b850f6aaeb31b9d34eb3b50a2f60c503a0b49b0e9a493",
+      "bytes": 1264820
+    }
+  },
+  "/assets/images/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-03.png": {
+    "sha256": "748b7809b23c4df9174ba22c934d4d8a2666cfbf61bafaa19ce12cb34ef35c76",
+    "width": 1024,
+    "height": 645,
+    "bytes": 1922014,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-03.png-960.webp",
+        "width": 960,
+        "height": 605,
+        "sha256": "1c95b28ed302c00a080480a3726d63a6be4578b682ebeaad16fc9dcce1b39545",
+        "bytes": 1187102
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-901ca6447518-rachinskij-sergej-aleksandro-03-748b7809b23c4df9174ba22c934d4d8a2666cfbf61bafaa19ce12cb34ef35c76.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558444",
+      "asset_id": 630558444,
+      "release_tag": "article-originals-7",
+      "sha256": "748b7809b23c4df9174ba22c934d4d8a2666cfbf61bafaa19ce12cb34ef35c76",
+      "bytes": 1922014
+    }
+  },
+  "/assets/images/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-04.png": {
+    "sha256": "6db4700b508b560242f976273aa651725432163b677ff651127c5ce07132aab3",
+    "width": 362,
+    "height": 800,
+    "bytes": 678866,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-04.png-362.webp",
+        "width": 362,
+        "height": 800,
+        "sha256": "351c5a4f72bd450b68abe920d8f1e0f55ea4ae53119482bf02780722d86b91c1",
+        "bytes": 401112
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-901ca6447518-rachinskij-sergej-aleksandro-04-6db4700b508b560242f976273aa651725432163b677ff651127c5ce07132aab3.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558597",
+      "asset_id": 630558597,
+      "release_tag": "article-originals-6",
+      "sha256": "6db4700b508b560242f976273aa651725432163b677ff651127c5ce07132aab3",
+      "bytes": 678866
+    }
+  },
+  "/assets/images/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-05.png": {
+    "sha256": "70af3b81668e78475a86a8224dc2a5d218ba66a16a283bb49e68a7efb158c54e",
+    "width": 609,
+    "height": 791,
+    "bytes": 1206381,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-05.png-609.webp",
+        "width": 609,
+        "height": 791,
+        "sha256": "eb3f4538771bbc43a7773bab6e7ca6ab2958c3bd38344407b8cd309605a75d97",
+        "bytes": 743956
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-901ca6447518-rachinskij-sergej-aleksandro-05-70af3b81668e78475a86a8224dc2a5d218ba66a16a283bb49e68a7efb158c54e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558746",
+      "asset_id": 630558746,
+      "release_tag": "article-originals-7",
+      "sha256": "70af3b81668e78475a86a8224dc2a5d218ba66a16a283bb49e68a7efb158c54e",
+      "bytes": 1206381
+    }
+  },
+  "/assets/images/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-06.png": {
+    "sha256": "978da8b63926105561420d72728fc54f195cec1006ea20efd4f483d85f9b7a75",
+    "width": 2000,
+    "height": 1261,
+    "bytes": 5634156,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-06.png-960.webp",
+        "width": 960,
+        "height": 605,
+        "sha256": "2c94518ac283e04b75d6c5f5ca05c2bc0997782130c0cfa226c7768b0d4db393",
+        "bytes": 719052
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-901ca6447518-rachinskij-sergej-aleksandro-06-978da8b63926105561420d72728fc54f195cec1006ea20efd4f483d85f9b7a75.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558883",
+      "asset_id": 630558883,
+      "release_tag": "article-originals-9",
+      "sha256": "978da8b63926105561420d72728fc54f195cec1006ea20efd4f483d85f9b7a75",
+      "bytes": 5634156
+    }
+  },
+  "/assets/images/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-07.png": {
+    "sha256": "47d62fac1f96cf8bb128143eb274f8f51fd735689de4a02a8692657b9242db73",
+    "width": 5312,
+    "height": 2988,
+    "bytes": 35142542,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-07.png-960.webp",
+        "width": 960,
+        "height": 540,
+        "sha256": "74d605d42ab1383aed02a96d8375e527110b895d9a0bad5af70f76dca05f9571",
+        "bytes": 725662
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-901ca6447518-rachinskij-sergej-aleksandro-07-47d62fac1f96cf8bb128143eb274f8f51fd735689de4a02a8692657b9242db73.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559082",
+      "asset_id": 630559082,
+      "release_tag": "article-originals-4",
+      "sha256": "47d62fac1f96cf8bb128143eb274f8f51fd735689de4a02a8692657b9242db73",
+      "bytes": 35142542
+    }
+  },
+  "/assets/images/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-08.png": {
+    "sha256": "1d2d5a3b352867cdebecf635d5470eb24b229e81b149fabb884d81b8ebcccddb",
+    "width": 3198,
+    "height": 2584,
+    "bytes": 20093723,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-08.png-960.webp",
+        "width": 960,
+        "height": 776,
+        "sha256": "9b798bc9d695ea749c27cac615c689ddbc36f119bbdaef4e26f50a36cd685874",
+        "bytes": 988368
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-901ca6447518-rachinskij-sergej-aleksandro-08-1d2d5a3b352867cdebecf635d5470eb24b229e81b149fabb884d81b8ebcccddb.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559245",
+      "asset_id": 630559245,
+      "release_tag": "article-originals-1",
+      "sha256": "1d2d5a3b352867cdebecf635d5470eb24b229e81b149fabb884d81b8ebcccddb",
+      "bytes": 20093723
+    }
+  },
+  "/assets/images/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-09.png": {
+    "sha256": "15871612e386c6bdc16d3bdccc2b11ec833d893ee7b7be4b407c07a4adb4b2d4",
+    "width": 2022,
+    "height": 3580,
+    "bytes": 17265231,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-09.png-960.webp",
+        "width": 960,
+        "height": 1700,
+        "sha256": "b4ccbbf93e862fa23581a4c0e99b1314af4d02362821a5f5222d9567b34731dc",
+        "bytes": 1901322
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-901ca6447518-rachinskij-sergej-aleksandro-09-15871612e386c6bdc16d3bdccc2b11ec833d893ee7b7be4b407c07a4adb4b2d4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559371",
+      "asset_id": 630559371,
+      "release_tag": "article-originals-1",
+      "sha256": "15871612e386c6bdc16d3bdccc2b11ec833d893ee7b7be4b407c07a4adb4b2d4",
+      "bytes": 17265231
+    }
+  },
+  "/assets/images/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-10.png": {
+    "sha256": "0a3cd8c6624d8d15c5bffb8f5c227d84996452c53112f736215f0d70e74ae07c",
+    "width": 1300,
+    "height": 1798,
+    "bytes": 6151338,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-10.png-960.webp",
+        "width": 960,
+        "height": 1328,
+        "sha256": "7630ccf9e7c3862a98a12a79d4098bc8d30dbe78a1835d8e194eb283c19b7286",
+        "bytes": 1651814
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-901ca6447518-rachinskij-sergej-aleksandro-10-0a3cd8c6624d8d15c5bffb8f5c227d84996452c53112f736215f0d70e74ae07c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559511",
+      "asset_id": 630559511,
+      "release_tag": "article-originals-0",
+      "sha256": "0a3cd8c6624d8d15c5bffb8f5c227d84996452c53112f736215f0d70e74ae07c",
+      "bytes": 6151338
+    }
+  },
+  "/assets/images/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-11.png": {
+    "sha256": "dcc50b7543692131485b8253964153124b404527ef5d0013d855feafb90c46f1",
+    "width": 2000,
+    "height": 1614,
+    "bytes": 8427786,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-11.png-960.webp",
+        "width": 960,
+        "height": 775,
+        "sha256": "21aba855f485c0d412129b2d47ffcdc624c208b081073cc24b22bb385951fefd",
+        "bytes": 990226
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-901ca6447518-rachinskij-sergej-aleksandro-11-dcc50b7543692131485b8253964153124b404527ef5d0013d855feafb90c46f1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559668",
+      "asset_id": 630559668,
+      "release_tag": "article-originals-d",
+      "sha256": "dcc50b7543692131485b8253964153124b404527ef5d0013d855feafb90c46f1",
+      "bytes": 8427786
+    }
+  },
+  "/assets/images/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-12.png": {
+    "sha256": "5373dcc2f562a3a838c8f807e36b19ac3d46663a4106dc9ae264d6294f9b0ee6",
+    "width": 537,
+    "height": 822,
+    "bytes": 889091,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-12.png-537.webp",
+        "width": 537,
+        "height": 822,
+        "sha256": "46a5b178a663f300349428ec892ebfa403a0f3a5ea5b24a74dab7e1732261b2e",
+        "bytes": 575198
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-901ca6447518-rachinskij-sergej-aleksandro-12-5373dcc2f562a3a838c8f807e36b19ac3d46663a4106dc9ae264d6294f9b0ee6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559807",
+      "asset_id": 630559807,
+      "release_tag": "article-originals-5",
+      "sha256": "5373dcc2f562a3a838c8f807e36b19ac3d46663a4106dc9ae264d6294f9b0ee6",
+      "bytes": 889091
+    }
+  },
+  "/assets/images/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-13.png": {
+    "sha256": "7d86a4d2b75145d246519e86073be1e200187fa723b0d8f424188e312aef8862",
+    "width": 1642,
+    "height": 2176,
+    "bytes": 9790929,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-13.png-960.webp",
+        "width": 960,
+        "height": 1272,
+        "sha256": "d35618eaeabb0610d63b5a920dbd73826e6fe6a906f841e0c45524563788b756",
+        "bytes": 1912356
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-901ca6447518-rachinskij-sergej-aleksandro-13-7d86a4d2b75145d246519e86073be1e200187fa723b0d8f424188e312aef8862.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559977",
+      "asset_id": 630559977,
+      "release_tag": "article-originals-7",
+      "sha256": "7d86a4d2b75145d246519e86073be1e200187fa723b0d8f424188e312aef8862",
+      "bytes": 9790929
+    }
+  },
+  "/assets/images/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-14.png": {
+    "sha256": "0af966f7aee8dca5d71fbaba0bf42ba78c576ea23a7d328f65ec930451aab76b",
+    "width": 5120,
+    "height": 3840,
+    "bytes": 31040442,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-14-png-reading-960-f881236eb32c.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "f881236eb32c89b43811e5d4f232260cb116ead29e87c42a0febd536b2e3c592",
+        "bytes": 645846
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-901ca6447518-rachinskij-sergej-aleksandro-14-0af966f7aee8dca5d71fbaba0bf42ba78c576ea23a7d328f65ec930451aab76b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560090",
+      "asset_id": 630560090,
+      "release_tag": "article-originals-0",
+      "sha256": "0af966f7aee8dca5d71fbaba0bf42ba78c576ea23a7d328f65ec930451aab76b",
+      "bytes": 31040442
+    }
+  }
+}
