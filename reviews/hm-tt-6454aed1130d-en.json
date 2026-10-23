@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-6454aed1130d-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-23",
+    "package_sha256": "dc2fd0628651fa4786fd4d23d3f006772fdea846f16782115c025775d45e5d97",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/135#pullrequestreview-5626009066",
+    "source_commit": "e123f34a2a43803032121c4aeb0eb2ee53a6dac5",
+    "source_review_id": 5626009066,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-23T08:51:32Z",
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Publication approved by the owner: https://github.com/Fuzzy-Technologies/history_math/pull/135#pullrequestreview-5626009066",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-10-08",
+      "url": "https://teletype.in/@history_math/kipregel"
+    }
+  }
+}
