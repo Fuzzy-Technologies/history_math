@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-bd58bae6a5bd-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-23",
+    "package_sha256": "cdde6723fe837ccf5a7ce8540fdd2f9a5b69490bb62f1cd61867f8db687ae67f",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/117#pullrequestreview-5626007414",
+    "source_commit": "19e09b87d9e99785b18c520fb851a31b25b28a24",
+    "source_review_id": 5626007414,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-23T08:51:22Z",
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-01-03",
+      "url": "https://teletype.in/@history_math/Lewis-Carroll"
+    }
+  }
+}
