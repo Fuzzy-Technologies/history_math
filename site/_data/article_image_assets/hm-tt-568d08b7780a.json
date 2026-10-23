@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-568d08b7780a/velikoe-sumasshestvie-ferma-01.png": {
+    "sha256": "bdd7e04f9c9d3d784fd4ccb350e5b44c20bda5d975d5148df8c8c3bf43d36c98",
+    "width": 2500,
+    "height": 3529,
+    "bytes": 11044020,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-568d08b7780a/velikoe-sumasshestvie-ferma-01.png-960.webp",
+        "width": 960,
+        "height": 1355,
+        "sha256": "56b8a4763343d2070d6a4d4e007aa57e40a38fe96c9466bd373ce268b6d3a611",
+        "bytes": 804946
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-568d08b7780a-velikoe-sumasshestvie-ferma-01-bdd7e04f9c9d3d784fd4ccb350e5b44c20bda5d975d5148df8c8c3bf43d36c98.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555835",
+      "asset_id": 630555835,
+      "release_tag": "article-originals-b",
+      "sha256": "bdd7e04f9c9d3d784fd4ccb350e5b44c20bda5d975d5148df8c8c3bf43d36c98",
+      "bytes": 11044020
+    }
+  },
+  "/assets/images/hm-tt-568d08b7780a/velikoe-sumasshestvie-ferma-02.png": {
+    "sha256": "5b9fbb91e9a66eb68c6e813fec0357e6a195d0552ca48b26a9c44d87c0984718",
+    "width": 731,
+    "height": 935,
+    "bytes": 1835457,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-568d08b7780a/velikoe-sumasshestvie-ferma-02.png-731.webp",
+        "width": 731,
+        "height": 935,
+        "sha256": "6664c9943926951b562f0042498d06c330350bdaaa923c93d4e094bd19188a6d",
+        "bytes": 1052206
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-568d08b7780a-velikoe-sumasshestvie-ferma-02-5b9fbb91e9a66eb68c6e813fec0357e6a195d0552ca48b26a9c44d87c0984718.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630556021",
+      "asset_id": 630556021,
+      "release_tag": "article-originals-5",
+      "sha256": "5b9fbb91e9a66eb68c6e813fec0357e6a195d0552ca48b26a9c44d87c0984718",
+      "bytes": 1835457
+    }
+  },
+  "/assets/images/hm-tt-568d08b7780a/velikoe-sumasshestvie-ferma-03.png": {
+    "sha256": "a210d5454ce6eeb6c92b633b98f34212293236532b7d5cd042eb0938bbafbc80",
+    "width": 307,
+    "height": 406,
+    "bytes": 273143,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-568d08b7780a/velikoe-sumasshestvie-ferma-03.png-307.webp",
+        "width": 307,
+        "height": 406,
+        "sha256": "6aeccaae5ba541b1f470d6da47e4270a55bbfe61c1cc760e3a6b1a568efce26a",
+        "bytes": 138050
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-568d08b7780a-velikoe-sumasshestvie-ferma-03-a210d5454ce6eeb6c92b633b98f34212293236532b7d5cd042eb0938bbafbc80.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630556179",
+      "asset_id": 630556179,
+      "release_tag": "article-originals-a",
+      "sha256": "a210d5454ce6eeb6c92b633b98f34212293236532b7d5cd042eb0938bbafbc80",
+      "bytes": 273143
+    }
+  },
+  "/assets/images/hm-tt-568d08b7780a/velikoe-sumasshestvie-ferma-04.png": {
+    "sha256": "9635b8eb4b7e236ef83bbb7946d677af3ba8b9ffd245d840781b0a4ec4d5110d",
+    "width": 689,
+    "height": 469,
+    "bytes": 373367,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-568d08b7780a/velikoe-sumasshestvie-ferma-04.png-689.webp",
+        "width": 689,
+        "height": 469,
+        "sha256": "5525a7b78e01d3228981a44633d1c97eb003abe4d53912f6cd531a038a22e87c",
+        "bytes": 175212
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-568d08b7780a-velikoe-sumasshestvie-ferma-04-9635b8eb4b7e236ef83bbb7946d677af3ba8b9ffd245d840781b0a4ec4d5110d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630556316",
+      "asset_id": 630556316,
+      "release_tag": "article-originals-9",
+      "sha256": "9635b8eb4b7e236ef83bbb7946d677af3ba8b9ffd245d840781b0a4ec4d5110d",
+      "bytes": 373367
+    }
+  },
+  "/assets/images/hm-tt-568d08b7780a/velikoe-sumasshestvie-ferma-05.png": {
+    "sha256": "75824a2abd0f4056f4179746cba57c48813ac9f4dcf54be03a322653c05d1bd6",
+    "width": 968,
+    "height": 625,
+    "bytes": 1237566,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-568d08b7780a/velikoe-sumasshestvie-ferma-05.png-960.webp",
+        "width": 960,
+        "height": 620,
+        "sha256": "18837bd0dcab3707dff0ca3bc3188db3d753588b37cdbc85e2b19d2821fc6b63",
+        "bytes": 736972
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-568d08b7780a-velikoe-sumasshestvie-ferma-05-75824a2abd0f4056f4179746cba57c48813ac9f4dcf54be03a322653c05d1bd6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630556496",
+      "asset_id": 630556496,
+      "release_tag": "article-originals-7",
+      "sha256": "75824a2abd0f4056f4179746cba57c48813ac9f4dcf54be03a322653c05d1bd6",
+      "bytes": 1237566
+    }
+  }
+}
