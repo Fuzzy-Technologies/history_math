@@ -1,0 +1,34 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-81b856c513b1-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-23",
+    "package_sha256": "582cf5319bcbbe0febf09ced656d8464b01f759aa366c8cc764a142d7b9f7129",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/82#pullrequestreview-5626005432",
+    "source_commit": "193823c8726df0a59d12f3dd1d8a0a2b24397b99",
+    "source_review_id": 5626005432,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-23T08:51:10Z",
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source calls this an indeterminate system, although the four displayed equations determine a unique solution. It also preserves the Latin quotation beginning “Cubem”. Confirm these points before publication; neither has been silently corrected.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual package and retained source wording, including this question. No historical answer or substantive correction is inferred. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/82#pullrequestreview-5626005432"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Publication approved by the owner: https://github.com/Fuzzy-Technologies/history_math/pull/82#pullrequestreview-5626005432",
+    "figures": 1,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-06-06",
+      "url": "https://teletype.in/@history_math/Diophantus-Problem"
+    }
+  }
+}

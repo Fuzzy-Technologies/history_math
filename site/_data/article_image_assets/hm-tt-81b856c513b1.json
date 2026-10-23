@@ -1,0 +1,27 @@
+{
+  "/assets/images/hm-tt-81b856c513b1/diophantus-problem-01.png": {
+    "sha256": "a592242eae3b695a8814d0b5613400a3872f9216a8fa1a7f16f043e165dd8b95",
+    "width": 828,
+    "height": 1295,
+    "bytes": 2428855,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-81b856c513b1/diophantus-problem-01.png-828.webp",
+        "width": 828,
+        "height": 1295,
+        "sha256": "9ebc40484f24786b5f20dd558e5d101261c478f6d07be4f916e3a29afe6be0d8",
+        "bytes": 1370648
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-81b856c513b1-diophantus-problem-01-a592242eae3b695a8814d0b5613400a3872f9216a8fa1a7f16f043e165dd8b95.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630493036",
+      "asset_id": 630493036,
+      "release_tag": "article-originals-a",
+      "sha256": "a592242eae3b695a8814d0b5613400a3872f9216a8fa1a7f16f043e165dd8b95",
+      "bytes": 2428855
+    }
+  }
+}
