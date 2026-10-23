@@ -8,6 +8,11 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit, parse_qs
 from xml.etree import ElementTree
 
+try:
+    from .external_pdfs import PdfButtons, validate_pdf_output, validate_manifest
+except ImportError:  # Direct script invocation in the publication workflow.
+    from external_pdfs import PdfButtons, validate_pdf_output, validate_manifest
+
 
 class PageParser(HTMLParser):
     def __init__(self):
@@ -167,6 +172,17 @@ def CheckSite(sitePath, basePath, site_origin="https://fuzzy-technologies.github
         for url in re.findall(r"url\(['\"]?([^)'\"]+)", path.read_text(encoding="utf-8")):
             if not url.startswith("data:"):
                 Resolve(url, path)
+    pdf_manifest = sitePath / "assets/article-pdfs.json"
+    if pdf_manifest.exists():
+        try:
+            manifest = validate_manifest(json.loads(pdf_manifest.read_text(encoding="utf-8")))
+            if manifest["baseurl"] != basePath or manifest["origin"] != site_origin:
+                raise ValueError("PDF manifest origin/path differs from publication")
+            validate_pdf_output(sitePath, manifest)
+        except (ValueError, KeyError, TypeError, OSError) as error:
+            errors.append(f"Invalid PDF publication: {error}")
+    elif any(PdfButtons(path.read_text(encoding="utf-8")).buttons for path in parsed):
+        errors.append("Missing PDF manifest for download controls")
     for language in ("en", "ru"):
         indexes = {}
         for kind in ("search", "discovery"):

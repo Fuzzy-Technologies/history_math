@@ -1,0 +1,303 @@
+{
+  "version": 1,
+  "source_commit": "ee813b940797237bf9fc36b36cd3ff2e4206a14c",
+  "source_run": 39802600955,
+  "source_attempt": 2,
+  "source_manifest_sha256": "3c79ca3be36a332ae9b7a11ca79c5d4b21b421ca48e0e238e8fb178fa15f0b87",
+  "origin": "https://history-math.org",
+  "baseurl": "",
+  "pdf_count": 58,
+  "pdf_bytes": 216536165,
+  "pdfs": [
+    {
+      "path": "/assets/pdf/en/hm-0b1ea17c8b02-en.pdf",
+      "sha256": "5ad7db538b477ff347e5b6bf7025d1ce8afde8e424ed883338777dd2c3bf1e32",
+      "bytes": 3247584
+    },
+    {
+      "path": "/assets/pdf/en/hm-15a0b4f1d18b-en.pdf",
+      "sha256": "36761ba68f53ed888451b33aeaa784a2216681775f77d115534d7285fcd3d066",
+      "bytes": 3218328
+    },
+    {
+      "path": "/assets/pdf/en/hm-19a5d93e33c1-en.pdf",
+      "sha256": "fed5836c2a11994047a741a7e66683b228f6d4dea4d9c34ad54d9f224f1e58aa",
+      "bytes": 3309400
+    },
+    {
+      "path": "/assets/pdf/en/hm-56520386b771-en.pdf",
+      "sha256": "e44a7fff8af59b5faef6f14d51d968842b5ada3292664e3ff4f92cf82e4c059d",
+      "bytes": 3853378
+    },
+    {
+      "path": "/assets/pdf/en/hm-99120459b820-en.pdf",
+      "sha256": "c0d454ea7a9cd6fce5a94f35078e0fd79f11be2bc6fdf1aedf2ea96f62c73ac2",
+      "bytes": 3508356
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-0a63d258ba26-en.pdf",
+      "sha256": "54ef5483e9ba3764d26845bb8ec1141b22a94f9d3db04c25682dcd7124ddab6b",
+      "bytes": 3769390
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-0ba0b6281b22-en.pdf",
+      "sha256": "615a0e0fda9477a9d9bde1020b884260dfef847b5d943a6221bb02763648be51",
+      "bytes": 3379276
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-16b5a4e33afd-en.pdf",
+      "sha256": "7e41cd4f07edd932a590a2509c4357ca57b31149b380a863a23dd27385a3faa9",
+      "bytes": 3638479
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-1c23e0d766d2-en.pdf",
+      "sha256": "c283e9a952030feac6f1e6b19da592848664b9fa7bbb933e65148340bc6dd3ad",
+      "bytes": 3615658
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-452593011bea-en.pdf",
+      "sha256": "ceea23ec61f604ee7f236f6e1fa3d29065700783cb18199d7bfe0dc5410949b4",
+      "bytes": 3303248
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-520b5a1dc03d-en.pdf",
+      "sha256": "2612d7ae3a0462dd7597f07ba20ad65cc7e3a0bc18a1f21b43276def3a1cd21c",
+      "bytes": 4339365
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-6a50f569e01a-en.pdf",
+      "sha256": "57f8f173a098118ed7b3af549175ac7ac5a6f55a3c08b1f9936e3ba24fd187a3",
+      "bytes": 3795859
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-8cc653e7a5c5-en.pdf",
+      "sha256": "c9aa652fb88e0dd5d915958aa6d8442732906f3691cf41e03b3dfc55a90a5dba",
+      "bytes": 3412749
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-8d623845d7d5-en.pdf",
+      "sha256": "d470fd7b1605d09a753c81961b1caf91774be876cd458de4ca76aa7e969a85fe",
+      "bytes": 4190316
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-936fd901871e-en.pdf",
+      "sha256": "641b3562a414869806a4d520f46627707fe622955a173d279fd74827a6d560f6",
+      "bytes": 3320459
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-9cd7cf41b694-en.pdf",
+      "sha256": "dba6d31dbd5c23ece72ede59be4600115b37f7cb057c11a7f3bbbaee47ae1f3f",
+      "bytes": 4186176
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-a4449860e387-en.pdf",
+      "sha256": "a07516a21e0d96d8309111a87286de1784f3eedbeda209232da0072a451f7f3b",
+      "bytes": 3297688
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-aa2a668ec1b8-en.pdf",
+      "sha256": "207f790f6db49532d7ad5efebd19f4c85b5d1e59fdef3f3daee982825db41833",
+      "bytes": 3782446
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-ac14563040be-en.pdf",
+      "sha256": "fdb9fa70ef4b067bae6e47249a53bcf35dd4d9675e449819dfb9d524b3f0d3f6",
+      "bytes": 3615575
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-b42f411dbebb-en.pdf",
+      "sha256": "85d5e5783a128076a86ca9799dcd16aa91080dcf16e16afc4bab4d15c4c534d0",
+      "bytes": 4685952
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-bca7aa61fddc-en.pdf",
+      "sha256": "4a17325dfd94fd938c641013a535475e9ae9884537958e0afa080b4c4c8e85c8",
+      "bytes": 3348894
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-c18ad1d221bd-en.pdf",
+      "sha256": "349832f12b0e53133676a3fdc129aa7e3c5a40684e8b87b197e5474a6c944ed8",
+      "bytes": 3420330
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-c241242992fe-en.pdf",
+      "sha256": "b5752e480aa8eb3cf53bf350ea8c4df3ec3311947a12e412303d90adff36d675",
+      "bytes": 3374485
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-ca964515d47c-en.pdf",
+      "sha256": "e7afea4591ca1526a9afbb1fa07e4ee278c060bc4b5125e94c60e4a8e8ce21aa",
+      "bytes": 3464177
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-d055acbd27c8-en.pdf",
+      "sha256": "10b4600dfa5cb6389dc3da59e2573fadd6f5bb56c69caa752444f748376229e9",
+      "bytes": 3602944
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-d53be80a8676-en.pdf",
+      "sha256": "f622c48c0191cd45c76bbb3ec13152e696afb96797c37829ac1eade197a3a2f5",
+      "bytes": 4212784
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-de2464b2b28b-en.pdf",
+      "sha256": "c44921705cf6fe5c715d265a7b14c200a8d36a02dc9e5f03e89c436694d6f1ba",
+      "bytes": 4436657
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-e0952dd62d49-en.pdf",
+      "sha256": "38e40470adac77e9ba686d3b62135f47bb07d426d684e6337ecbd13c888d86c5",
+      "bytes": 4047069
+    },
+    {
+      "path": "/assets/pdf/en/hm-tt-eaba3ff1d327-en.pdf",
+      "sha256": "3f3bcc1e0d65b0e4a55ee5ba1cc7c305e15081f0c8e0de9f42a5fda6358520b3",
+      "bytes": 4465779
+    },
+    {
+      "path": "/assets/pdf/ru/hm-0b1ea17c8b02-ru.pdf",
+      "sha256": "932424a7a6a9dc4cea2eb599c20ec5d460fc8cfa31a18f4e72cc82eeedac9017",
+      "bytes": 3246486
+    },
+    {
+      "path": "/assets/pdf/ru/hm-15a0b4f1d18b-ru.pdf",
+      "sha256": "332c2f41c2ff94e41ef9689092f8450bffd5571172dbf7edd221469b8178e52d",
+      "bytes": 3231539
+    },
+    {
+      "path": "/assets/pdf/ru/hm-19a5d93e33c1-ru.pdf",
+      "sha256": "e3173b5520593c80b7e1ce6c79cb77506b2bf22bdd7aa15651dabdd485f08d53",
+      "bytes": 3245342
+    },
+    {
+      "path": "/assets/pdf/ru/hm-56520386b771-ru.pdf",
+      "sha256": "8644a793bf2af427c5e9783a415aee29c98d5e324d69dca2743f965e9ab364c2",
+      "bytes": 3806654
+    },
+    {
+      "path": "/assets/pdf/ru/hm-99120459b820-ru.pdf",
+      "sha256": "3478242df75b15f2f8b6f5068a827052364456a7f29f237c43b02a3f7a232f36",
+      "bytes": 3518037
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-0a63d258ba26-ru.pdf",
+      "sha256": "882248b37ede980e313c97e0b844c54bbed25b58f8738aa974631bfb693e3d6a",
+      "bytes": 3844277
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-0ba0b6281b22-ru.pdf",
+      "sha256": "4c528608291a3e684ef66f163e6fc26378a62cbb8d8cf8f65903b802606c0e4e",
+      "bytes": 3411622
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-16b5a4e33afd-ru.pdf",
+      "sha256": "ce432c23e0bfe94b35de9be41aa71f74469885c7ed6850c672ac90fc5df9e037",
+      "bytes": 3729939
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-1c23e0d766d2-ru.pdf",
+      "sha256": "de333e263787983065b008e254e4fb4f547fb8aa22b7800a9e4fc4633d9abe4f",
+      "bytes": 3649882
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-452593011bea-ru.pdf",
+      "sha256": "8136b4276a588e482a82867b9e6be908fef2ed3435dde898f69a7635b6c86c5f",
+      "bytes": 3318903
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-520b5a1dc03d-ru.pdf",
+      "sha256": "b2c5623c3e7a062b051de97a292f3c16acd3529385b6518eb7fb4c0d80146a5e",
+      "bytes": 4399217
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-6a50f569e01a-ru.pdf",
+      "sha256": "ead92891658849f0f9413330687529433ac1ce6be64528bf3391ae9e991892ea",
+      "bytes": 3818063
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-8cc653e7a5c5-ru.pdf",
+      "sha256": "037a8f9af9bf6788cb251a7c783ffc9e79f9422a7c87ca1b46cbb166a2bc308f",
+      "bytes": 3435959
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-8d623845d7d5-ru.pdf",
+      "sha256": "1c580eb9bf6e6bbdcee1bcddd782c47e6491339a3fa0ed484bf34a4fe3d0d0b8",
+      "bytes": 4215186
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-936fd901871e-ru.pdf",
+      "sha256": "519bfda2468813db18856f8584a23072210c6df50b0e7200fd6a026e0c8ff602",
+      "bytes": 3344461
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-9cd7cf41b694-ru.pdf",
+      "sha256": "2d0af4a11a837a2892eaf1d05e5d1337e9c9497667646ac4bac6089adb25dfce",
+      "bytes": 4220951
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-a4449860e387-ru.pdf",
+      "sha256": "86cdb7bda7c73709ae2bb22728d96d26468abdbeef8abb33e172a0432524b030",
+      "bytes": 3341466
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-aa2a668ec1b8-ru.pdf",
+      "sha256": "4bcac6e79e10160200126bcc663dc75c3cd280574527431ecddaa633d1be7ab8",
+      "bytes": 3803588
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-ac14563040be-ru.pdf",
+      "sha256": "f84af886eb18abadf5e8e2a7dd7c3a0ab70810034af5b3ea55eb07f11a1d0505",
+      "bytes": 3639532
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-b42f411dbebb-ru.pdf",
+      "sha256": "0bc619612818a8d9eee8c89d13001dc71dd2bb29ff96a037c68fcd3919f53af1",
+      "bytes": 4786104
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-bca7aa61fddc-ru.pdf",
+      "sha256": "8ccc0445dcfab8142877d0a217aead77cd5a0ef91afcb88d4e6d517c8d675d32",
+      "bytes": 3397338
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-c18ad1d221bd-ru.pdf",
+      "sha256": "a6f626e483a9c19d7d13d59c0f97fe0d8db2a88421385e6649ac70a8c128a983",
+      "bytes": 3451377
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-c241242992fe-ru.pdf",
+      "sha256": "8b99ed8303f4f83007215b4433e17ccb3ec7c29a2045c2200f155c706bfa4b27",
+      "bytes": 3402359
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-ca964515d47c-ru.pdf",
+      "sha256": "daaf175108035168787c919e06b4c3833197e22800e20b48e1ef3e07b05e8aa6",
+      "bytes": 3476122
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-d055acbd27c8-ru.pdf",
+      "sha256": "ebc2661c9cded1c8918ebd89144c349d69b8997f879b8cdb51660a0c39f995f7",
+      "bytes": 3635247
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-d53be80a8676-ru.pdf",
+      "sha256": "1aa55dcae28b7750dfcb4c78b19ed9740ed6717dec6df05ae632ecc101e1c097",
+      "bytes": 4189311
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-de2464b2b28b-ru.pdf",
+      "sha256": "1368af41c091ba3efb69d3b94e3986afddfcbea2379ec9041032b88625272255",
+      "bytes": 4500145
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-e0952dd62d49-ru.pdf",
+      "sha256": "3b7a2ac44ff53482f00f3e9c81ce097f3651e6df32db5b7f67268fede5f5c387",
+      "bytes": 4101791
+    },
+    {
+      "path": "/assets/pdf/ru/hm-tt-eaba3ff1d327-ru.pdf",
+      "sha256": "b2a6e48da312e1a4ee7a34ce5160da6f9c89b7e3156c3a5583ff36a2643f2978",
+      "bytes": 4532466
+    }
+  ]
+}
