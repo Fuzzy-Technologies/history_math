@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-62bd6c96a60a-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source uses visually similar Cyrillic and Latin point labels (А, В, С, МВ, ВС, CN); these exact labels are retained to match the figure. Confirm the intended labels and the total of 36 arrangements before publication.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-13",
+      "url": "https://teletype.in/@history_math/Spravedlivyj-razdel-zemelnyh-uchastkov-11-13-2"
+    }
+  }
+}
