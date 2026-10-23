@@ -1,0 +1,102 @@
+{
+  "/assets/images/hm-tt-bd58bae6a5bd/lewis-carroll-01.jpeg": {
+    "sha256": "26e54906bdd3f80c312d1406f1cf5192e11d65f3a569d5421425bf006920fcfb",
+    "width": 1024,
+    "height": 614,
+    "bytes": 107689,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bd58bae6a5bd/lewis-carroll-01.jpeg-960.webp",
+        "width": 960,
+        "height": 576,
+        "sha256": "b2b21ea5a4e912570debd75ac56297308f4fd69eba3be166cb68f1e5678897fc",
+        "bytes": 266504
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-bd58bae6a5bd-lewis-carroll-01-26e54906bdd3f80c312d1406f1cf5192e11d65f3a569d5421425bf006920fcfb.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630494989",
+      "asset_id": 630494989,
+      "release_tag": "article-originals-2",
+      "sha256": "26e54906bdd3f80c312d1406f1cf5192e11d65f3a569d5421425bf006920fcfb",
+      "bytes": 107689
+    }
+  },
+  "/assets/images/hm-tt-bd58bae6a5bd/lewis-carroll-02.jpeg": {
+    "sha256": "b5122d2aa70ee9416153686615bf328f717091db8d3fdd98b0a76b2352cfea7d",
+    "width": 1440,
+    "height": 1080,
+    "bytes": 212682,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bd58bae6a5bd/lewis-carroll-02.jpeg-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "6bf333d8ce20aecacaeeffabff63a75978d0cda0027eed107ccbc3a502586905",
+        "bytes": 546166
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-bd58bae6a5bd-lewis-carroll-02-b5122d2aa70ee9416153686615bf328f717091db8d3fdd98b0a76b2352cfea7d.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542462",
+      "asset_id": 630542462,
+      "release_tag": "article-originals-b",
+      "sha256": "b5122d2aa70ee9416153686615bf328f717091db8d3fdd98b0a76b2352cfea7d",
+      "bytes": 212682
+    }
+  },
+  "/assets/images/hm-tt-bd58bae6a5bd/lewis-carroll-03.jpeg": {
+    "sha256": "9c4fa3afb53d9f7173c3248e3f645bb4297c95c09f607c73c4ddaf7dcdddffad",
+    "width": 820,
+    "height": 731,
+    "bytes": 129211,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bd58bae6a5bd/lewis-carroll-03-820.jpeg",
+        "width": 820,
+        "height": 731,
+        "bytes": 129211,
+        "sha256": "9c4fa3afb53d9f7173c3248e3f645bb4297c95c09f607c73c4ddaf7dcdddffad"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-bd58bae6a5bd-lewis-carroll-03-9c4fa3afb53d9f7173c3248e3f645bb4297c95c09f607c73c4ddaf7dcdddffad.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542639",
+      "asset_id": 630542639,
+      "release_tag": "article-originals-9",
+      "sha256": "9c4fa3afb53d9f7173c3248e3f645bb4297c95c09f607c73c4ddaf7dcdddffad",
+      "bytes": 129211
+    }
+  },
+  "/assets/images/hm-tt-bd58bae6a5bd/lewis-carroll-04.jpeg": {
+    "sha256": "5f82af8b346715186458fe01819f16b5eb8917533d71a8a19413fcc5677d89a7",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 287240,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-bd58bae6a5bd/lewis-carroll-04.jpeg-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "6747814fd3c75fa55d14f2d31e32b444ff7550e60df359fd71ae16b98b16274f",
+        "bytes": 1047372
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-bd58bae6a5bd-lewis-carroll-04-5f82af8b346715186458fe01819f16b5eb8917533d71a8a19413fcc5677d89a7.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542764",
+      "asset_id": 630542764,
+      "release_tag": "article-originals-5",
+      "sha256": "5f82af8b346715186458fe01819f16b5eb8917533d71a8a19413fcc5677d89a7",
+      "bytes": 287240
+    }
+  }
+}
