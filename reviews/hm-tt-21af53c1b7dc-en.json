@@ -1,0 +1,34 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-21af53c1b7dc-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-23",
+    "package_sha256": "4ba7c8c5897af64776bb12c2b3bea5447aebbc8f971f603c584a0e1094c791c4",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/95#pullrequestreview-5626005601",
+    "source_commit": "c5e3d5e4bd1598a2ef911126c48b9a8ca5c43bc5",
+    "source_review_id": 5626005601,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-23T08:51:11Z",
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+  },
+  "questions": [
+    {
+      "id": "legend-attribution",
+      "question": "Can a historical source be supplied for the Muhammad signature legend and the quotation attributed to Omar Khayyam? The source wording is retained pending review.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual package and retained source wording, including this question. No historical answer or substantive correction is inferred. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/95#pullrequestreview-5626005601"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-03-19",
+      "url": "https://teletype.in/@history_math/Magomet-sign"
+    }
+  }
+}
