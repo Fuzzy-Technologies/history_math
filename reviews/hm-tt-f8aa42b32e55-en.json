@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-f8aa42b32e55-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "arab-conquest-date",
+      "question": "The source places the Arab conquest of Spain at the end of the eighth century. Should that date be corrected after historical review? The original date is preserved in the adaptation.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 7,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-26",
+      "url": "https://teletype.in/@history_math/Abak-09-26"
+    }
+  }
+}
