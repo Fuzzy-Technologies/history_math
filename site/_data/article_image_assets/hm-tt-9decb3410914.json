@@ -1,0 +1,52 @@
+{
+  "/assets/images/hm-tt-9decb3410914/solving-the-herb-divination-01.jpeg": {
+    "sha256": "98efcf729c9164b8d1378737e79e6f6266106ee007f0581347e38a755e35cab6",
+    "width": 1300,
+    "height": 736,
+    "bytes": 237718,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-9decb3410914/solving-the-herb-divination-01.jpeg-960.webp",
+        "width": 960,
+        "height": 544,
+        "sha256": "0e1f013a0bcb1a2b1ab5785edd2bad5e171a1742613e60014998ff4f80fdcbdc",
+        "bytes": 625826
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-9decb3410914-solving-the-herb-divination-01-98efcf729c9164b8d1378737e79e6f6266106ee007f0581347e38a755e35cab6.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630494763",
+      "asset_id": 630494763,
+      "release_tag": "article-originals-9",
+      "sha256": "98efcf729c9164b8d1378737e79e6f6266106ee007f0581347e38a755e35cab6",
+      "bytes": 237718
+    }
+  },
+  "/assets/images/hm-tt-9decb3410914/solving-the-herb-divination-02.png": {
+    "sha256": "1e80eca5402913158537d033422fd32b261d5c58882e3b97aa080426d9b4e212",
+    "width": 1590,
+    "height": 2000,
+    "bytes": 2573035,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-9decb3410914/solving-the-herb-divination-02.png-960.webp",
+        "width": 960,
+        "height": 1208,
+        "sha256": "2d3d74062740ed017cbfbdbbdff48ac64881797513e3ecb16b812dfd11c510e7",
+        "bytes": 644584
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-9decb3410914-solving-the-herb-divination-02-1e80eca5402913158537d033422fd32b261d5c58882e3b97aa080426d9b4e212.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630541936",
+      "asset_id": 630541936,
+      "release_tag": "article-originals-1",
+      "sha256": "1e80eca5402913158537d033422fd32b261d5c58882e3b97aa080426d9b4e212",
+      "bytes": 2573035
+    }
+  }
+}
