@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-9decb3410914",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-23",
+    "package_sha256": "9b9978ec6ed89fdb822a686e115d8c6cdf30890e4b466b720f34b1781c479ffa",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/111#pullrequestreview-5626006892",
+    "source_commit": "626e09cc08b0cabe42fedc7b1174dfc13984e8b7",
+    "source_review_id": 5626006892,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-23T08:51:19Z",
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-02-02",
+      "url": "https://teletype.in/@history_math/Solving-the-Herb-Divination-Puzzle"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
