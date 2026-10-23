@@ -1,0 +1,65 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-227ab7324448-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-23",
+    "package_sha256": "b97f56a6ae9021178943851739f695710ad7953ef0d1aa2de734f7d2d1a35a12",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/113#pullrequestreview-5626007270",
+    "source_commit": "dff34b2f5dfb6e98b06beaa0096d42447eab5750",
+    "source_review_id": 5626007270,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-23T08:51:21Z",
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+  },
+  "questions": [
+    {
+      "id": "moscow-papyrus-solid",
+      "question": "Figure 4 says its problem concerns the volume of a pyramid. Should the illustrated solid be identified more precisely as a truncated pyramid? The source caption is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual package and retained source wording, including this question. No historical answer or substantive correction is inferred. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/113#pullrequestreview-5626007270"
+    },
+    {
+      "id": "classical-problem-list",
+      "question": "The source lists three classical problems, then says one of them is constructing regular polygons, which is absent from that list. How should this transition be clarified? The original sequence is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual package and retained source wording, including this question. No historical answer or substantive correction is inferred. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/113#pullrequestreview-5626007270"
+    },
+    {
+      "id": "diophantus-surviving-books",
+      "question": "The source says only six Arithmetica books survive. Should the Greek books be distinguished from additional books surviving in Arabic? The source count is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual package and retained source wording, including this question. No historical answer or substantive correction is inferred. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/113#pullrequestreview-5626007270"
+    },
+    {
+      "id": "diophantus-solution-domain",
+      "question": "The source describes Diophantus’ equations as solved in positive integers. Should it distinguish Diophantus’ positive rational solutions from the modern integer-solution terminology? The source formulation is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual package and retained source wording, including this question. No historical answer or substantive correction is inferred. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/113#pullrequestreview-5626007270"
+    },
+    {
+      "id": "euclid-nymph-name",
+      "question": "The source attributes the name nymph’s theorem to Euclid. Should the textual source of this historical name be verified? The attribution is retained.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual package and retained source wording, including this question. No historical answer or substantive correction is inferred. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/113#pullrequestreview-5626007270"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Publication approved by the owner: https://github.com/Fuzzy-Technologies/history_math/pull/113#pullrequestreview-5626007270",
+    "figures": 11,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-01-12",
+      "url": "https://teletype.in/@history_math/algebra-history-part-1"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}

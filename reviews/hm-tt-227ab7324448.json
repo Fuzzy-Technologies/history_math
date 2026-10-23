@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-227ab7324448",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-23",
+    "package_sha256": "e3c7d6b91530b412581cee7615e308ed115f6dd04bf756cc928aad8501df70f1",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/113#pullrequestreview-5626007270",
+    "source_commit": "dff34b2f5dfb6e98b06beaa0096d42447eab5750",
+    "source_review_id": 5626007270,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-23T08:51:21Z",
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 11,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-01-12",
+      "url": "https://teletype.in/@history_math/algebra-history-part-1"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
