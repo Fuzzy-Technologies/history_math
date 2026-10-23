@@ -1,0 +1,302 @@
+{
+  "/assets/images/hm-tt-5cbde4c21638/logarithmic-tables-01.jpeg": {
+    "sha256": "c47f8571867c2cd6955704581d12e3570c767094c39b004fa14f078a312235d4",
+    "width": 1025,
+    "height": 1366,
+    "bytes": 300132,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5cbde4c21638/logarithmic-tables-01.jpeg-960.webp",
+        "width": 960,
+        "height": 1279,
+        "sha256": "5a34db5be01befc4ca5672c088607998c7939d46b7b6bf703ba210709320d45e",
+        "bytes": 1277408
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-5cbde4c21638-logarithmic-tables-01-c47f8571867c2cd6955704581d12e3570c767094c39b004fa14f078a312235d4.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630494487",
+      "asset_id": 630494487,
+      "release_tag": "article-originals-c",
+      "sha256": "c47f8571867c2cd6955704581d12e3570c767094c39b004fa14f078a312235d4",
+      "bytes": 300132
+    }
+  },
+  "/assets/images/hm-tt-5cbde4c21638/logarithmic-tables-02.png": {
+    "sha256": "04ffe06037ea582620d992051a1b2a01a095c2c1e067be195d7e5134109f60df",
+    "width": 865,
+    "height": 1080,
+    "bytes": 1592806,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5cbde4c21638/logarithmic-tables-02-png-reading-865-9c571f8cdbf2.webp",
+        "width": 865,
+        "height": 1080,
+        "sha256": "9c571f8cdbf2db81b3e56ff01525ab829912cf90cab0c3e7a5d4d720c77d3e45",
+        "bytes": 900668
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-5cbde4c21638-logarithmic-tables-02-04ffe06037ea582620d992051a1b2a01a095c2c1e067be195d7e5134109f60df.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539100",
+      "asset_id": 630539100,
+      "release_tag": "article-originals-0",
+      "sha256": "04ffe06037ea582620d992051a1b2a01a095c2c1e067be195d7e5134109f60df",
+      "bytes": 1592806
+    }
+  },
+  "/assets/images/hm-tt-5cbde4c21638/logarithmic-tables-03.jpeg": {
+    "sha256": "eb08ae83139740b1caf7e1d206581989ab863d410c10115f427f21d9dd76c6b1",
+    "width": 616,
+    "height": 812,
+    "bytes": 188034,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5cbde4c21638/logarithmic-tables-03-616.jpeg",
+        "width": 616,
+        "height": 812,
+        "bytes": 188034,
+        "sha256": "eb08ae83139740b1caf7e1d206581989ab863d410c10115f427f21d9dd76c6b1"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-5cbde4c21638-logarithmic-tables-03-eb08ae83139740b1caf7e1d206581989ab863d410c10115f427f21d9dd76c6b1.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539305",
+      "asset_id": 630539305,
+      "release_tag": "article-originals-e",
+      "sha256": "eb08ae83139740b1caf7e1d206581989ab863d410c10115f427f21d9dd76c6b1",
+      "bytes": 188034
+    }
+  },
+  "/assets/images/hm-tt-5cbde4c21638/logarithmic-tables-04.jpeg": {
+    "sha256": "d68988343557bc670d920b6f100df3c1ff5561aeb267b2d23af5b4ebffec63be",
+    "width": 407,
+    "height": 600,
+    "bytes": 96113,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5cbde4c21638/logarithmic-tables-04-407.jpeg",
+        "width": 407,
+        "height": 600,
+        "bytes": 96113,
+        "sha256": "d68988343557bc670d920b6f100df3c1ff5561aeb267b2d23af5b4ebffec63be"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-5cbde4c21638-logarithmic-tables-04-d68988343557bc670d920b6f100df3c1ff5561aeb267b2d23af5b4ebffec63be.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539473",
+      "asset_id": 630539473,
+      "release_tag": "article-originals-d",
+      "sha256": "d68988343557bc670d920b6f100df3c1ff5561aeb267b2d23af5b4ebffec63be",
+      "bytes": 96113
+    }
+  },
+  "/assets/images/hm-tt-5cbde4c21638/logarithmic-tables-05.png": {
+    "sha256": "d2e8ab17b629e2c8ce845246d834ed2b9945775efab6a0cee3b5606a62dbd18c",
+    "width": 488,
+    "height": 609,
+    "bytes": 722653,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5cbde4c21638/logarithmic-tables-05.png-488.webp",
+        "width": 488,
+        "height": 609,
+        "sha256": "242746afece53f60e645ddf0a7d423415de9b67df1ef092cf00aa555714dab5f",
+        "bytes": 563956
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-5cbde4c21638-logarithmic-tables-05-d2e8ab17b629e2c8ce845246d834ed2b9945775efab6a0cee3b5606a62dbd18c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539613",
+      "asset_id": 630539613,
+      "release_tag": "article-originals-d",
+      "sha256": "d2e8ab17b629e2c8ce845246d834ed2b9945775efab6a0cee3b5606a62dbd18c",
+      "bytes": 722653
+    }
+  },
+  "/assets/images/hm-tt-5cbde4c21638/logarithmic-tables-06.jpeg": {
+    "sha256": "73dc5f755378eeaf1410741cb606413f0e0c9107f05f658c7b077f2db271b5ee",
+    "width": 563,
+    "height": 800,
+    "bytes": 126117,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5cbde4c21638/logarithmic-tables-06-563.jpeg",
+        "width": 563,
+        "height": 800,
+        "bytes": 126117,
+        "sha256": "73dc5f755378eeaf1410741cb606413f0e0c9107f05f658c7b077f2db271b5ee"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-5cbde4c21638-logarithmic-tables-06-73dc5f755378eeaf1410741cb606413f0e0c9107f05f658c7b077f2db271b5ee.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539757",
+      "asset_id": 630539757,
+      "release_tag": "article-originals-7",
+      "sha256": "73dc5f755378eeaf1410741cb606413f0e0c9107f05f658c7b077f2db271b5ee",
+      "bytes": 126117
+    }
+  },
+  "/assets/images/hm-tt-5cbde4c21638/logarithmic-tables-07.png": {
+    "sha256": "3e5942de772bbcf412409c279534a52822a70885b9125c2b0a774b0c38304deb",
+    "width": 526,
+    "height": 856,
+    "bytes": 421421,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5cbde4c21638/logarithmic-tables-07.png-526.webp",
+        "width": 526,
+        "height": 856,
+        "sha256": "cf134fe546ae4288623b0d801439d109176fcfb7acac3e8adebec5da2363a037",
+        "bytes": 236028
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-5cbde4c21638-logarithmic-tables-07-3e5942de772bbcf412409c279534a52822a70885b9125c2b0a774b0c38304deb.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630539940",
+      "asset_id": 630539940,
+      "release_tag": "article-originals-3",
+      "sha256": "3e5942de772bbcf412409c279534a52822a70885b9125c2b0a774b0c38304deb",
+      "bytes": 421421
+    }
+  },
+  "/assets/images/hm-tt-5cbde4c21638/logarithmic-tables-08.jpeg": {
+    "sha256": "e1c51e8b95a4cba86529de43db3911cab9983b36f321439d9b3d05053be16fa4",
+    "width": 1000,
+    "height": 1672,
+    "bytes": 442605,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5cbde4c21638/logarithmic-tables-08.jpeg-960.webp",
+        "width": 960,
+        "height": 1605,
+        "sha256": "99e67830a0e715189605c05a5371da607a6ec750d24d3835d7764a4818f1a0be",
+        "bytes": 1402490
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-5cbde4c21638-logarithmic-tables-08-e1c51e8b95a4cba86529de43db3911cab9983b36f321439d9b3d05053be16fa4.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540088",
+      "asset_id": 630540088,
+      "release_tag": "article-originals-e",
+      "sha256": "e1c51e8b95a4cba86529de43db3911cab9983b36f321439d9b3d05053be16fa4",
+      "bytes": 442605
+    }
+  },
+  "/assets/images/hm-tt-5cbde4c21638/logarithmic-tables-09.jpeg": {
+    "sha256": "35454cd1a9a9a1ab33b486e5d45afa897c4b9fb4fe62cd7f8373e2302a3b91ab",
+    "width": 1025,
+    "height": 1634,
+    "bytes": 326279,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5cbde4c21638/logarithmic-tables-09.jpeg-960.webp",
+        "width": 960,
+        "height": 1530,
+        "sha256": "ba2e5a23ade4f67293090f3bb0d804d2288d197387e0f6dc26b000b11548db70",
+        "bytes": 1462804
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-5cbde4c21638-logarithmic-tables-09-35454cd1a9a9a1ab33b486e5d45afa897c4b9fb4fe62cd7f8373e2302a3b91ab.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540233",
+      "asset_id": 630540233,
+      "release_tag": "article-originals-3",
+      "sha256": "35454cd1a9a9a1ab33b486e5d45afa897c4b9fb4fe62cd7f8373e2302a3b91ab",
+      "bytes": 326279
+    }
+  },
+  "/assets/images/hm-tt-5cbde4c21638/logarithmic-tables-10.jpeg": {
+    "sha256": "161691cf74136cb51707242516c35e4c504ff423ff66ec23c6f0cc8ea6ab9a7e",
+    "width": 426,
+    "height": 596,
+    "bytes": 43342,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5cbde4c21638/logarithmic-tables-10-426.jpeg",
+        "width": 426,
+        "height": 596,
+        "bytes": 43342,
+        "sha256": "161691cf74136cb51707242516c35e4c504ff423ff66ec23c6f0cc8ea6ab9a7e"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-5cbde4c21638-logarithmic-tables-10-161691cf74136cb51707242516c35e4c504ff423ff66ec23c6f0cc8ea6ab9a7e.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540363",
+      "asset_id": 630540363,
+      "release_tag": "article-originals-1",
+      "sha256": "161691cf74136cb51707242516c35e4c504ff423ff66ec23c6f0cc8ea6ab9a7e",
+      "bytes": 43342
+    }
+  },
+  "/assets/images/hm-tt-5cbde4c21638/logarithmic-tables-11.png": {
+    "sha256": "54a76b76f07b0eb1f64c6f962e4edee194ccc4f8d3933ef11a432ef4dbac9e83",
+    "width": 527,
+    "height": 808,
+    "bytes": 200988,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5cbde4c21638/logarithmic-tables-11.png-527.webp",
+        "width": 527,
+        "height": 808,
+        "sha256": "79e722b89f170fe89b04245aaa3a5798990186f5ffefadf77e18414512002c15",
+        "bytes": 114106
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-5cbde4c21638-logarithmic-tables-11-54a76b76f07b0eb1f64c6f962e4edee194ccc4f8d3933ef11a432ef4dbac9e83.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540501",
+      "asset_id": 630540501,
+      "release_tag": "article-originals-5",
+      "sha256": "54a76b76f07b0eb1f64c6f962e4edee194ccc4f8d3933ef11a432ef4dbac9e83",
+      "bytes": 200988
+    }
+  },
+  "/assets/images/hm-tt-5cbde4c21638/logarithmic-tables-12.png": {
+    "sha256": "3890389760728025c4b1453894acff0b4f996666f408bf4e739f5fc8f3bfab42",
+    "width": 527,
+    "height": 813,
+    "bytes": 229908,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-5cbde4c21638/logarithmic-tables-12.png-527.webp",
+        "width": 527,
+        "height": 813,
+        "sha256": "e693e3c1f629e875983cacf1e2531dbfa2e037cea989e375ca9828cbcc5571bf",
+        "bytes": 132828
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-5cbde4c21638-logarithmic-tables-12-3890389760728025c4b1453894acff0b4f996666f408bf4e739f5fc8f3bfab42.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540681",
+      "asset_id": 630540681,
+      "release_tag": "article-originals-3",
+      "sha256": "3890389760728025c4b1453894acff0b4f996666f408bf4e739f5fc8f3bfab42",
+      "bytes": 229908
+    }
+  }
+}
