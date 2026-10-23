@@ -1,0 +1,48 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-5cbde4c21638-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-23",
+    "package_sha256": "6b07f7cc880aeda3898b777ce56a8e65639d7072313ae9770f2e7b2b6fed69a9",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/112#pullrequestreview-5626007086",
+    "source_commit": "817ebc39433dfa5091ca0c3abb8e829b7371980e",
+    "source_review_id": 5626007086,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-23T08:51:20Z",
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The Briggs paragraph begins “In 1617” but dates the publication in parentheses to 1624 and joins different table precisions in one sentence. Confirm the intended distinction between publications; every date and precision has been retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual package and retained source wording, including this question. No historical answer or substantive correction is inferred. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/112#pullrequestreview-5626007086"
+    },
+    {
+      "id": "q-english-2",
+      "question": "The opening caption describes Napier’s entries as absolute values of natural logarithms of sines. Confirm the scale and normalization of the historical table; the description is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual package and retained source wording, including this question. No historical answer or substantive correction is inferred. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/112#pullrequestreview-5626007086"
+    },
+    {
+      "id": "q-english-3",
+      "question": "The source says logarithm tables were used for more than three centuries “until the 19th century”, then displaced in the 20th. Confirm the intended endpoint; the chronology is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual package and retained source wording, including this question. No historical answer or substantive correction is inferred. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/112#pullrequestreview-5626007086"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Publication approved by the owner: https://github.com/Fuzzy-Technologies/history_math/pull/112#pullrequestreview-5626007086",
+    "figures": 12,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-01-12",
+      "url": "https://teletype.in/@history_math/logarithmic-tables"
+    }
+  }
+}

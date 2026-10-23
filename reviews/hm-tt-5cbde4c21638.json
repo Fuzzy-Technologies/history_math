@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-5cbde4c21638",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-23",
+    "package_sha256": "3e090d55fd9a9089847c5d2482e779ad626dfee1768a3370f099ef6d7a0e323f",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/112#pullrequestreview-5626007086",
+    "source_commit": "817ebc39433dfa5091ca0c3abb8e829b7371980e",
+    "source_review_id": 5626007086,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-23T08:51:20Z",
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 12,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-01-12",
+      "url": "https://teletype.in/@history_math/logarithmic-tables"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
