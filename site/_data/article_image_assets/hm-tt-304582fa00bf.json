@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-304582fa00bf/vychislenie-vremeni-udvoeniy-01.png": {
+    "sha256": "435c18dee738dab29e431e1628025cbae93280486cbe767164cde7106027cf1b",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 1960371,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-304582fa00bf/vychislenie-vremeni-udvoeniy-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "0d23fc6761cfcb1555bee695b71a04629388ee3579fddeee12430162ad782129",
+        "bytes": 703744
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-304582fa00bf-vychislenie-vremeni-udvoeniy-01-435c18dee738dab29e431e1628025cbae93280486cbe767164cde7106027cf1b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630500881",
+      "asset_id": 630500881,
+      "release_tag": "article-originals-4",
+      "sha256": "435c18dee738dab29e431e1628025cbae93280486cbe767164cde7106027cf1b",
+      "bytes": 1960371
+    }
+  },
+  "/assets/images/hm-tt-304582fa00bf/vychislenie-vremeni-udvoeniy-02.png": {
+    "sha256": "9457ab5cde74bc7c1a7d2f3940fed3a0ba8e840e161f9b1128a0dc648eda93d2",
+    "width": 3840,
+    "height": 2704,
+    "bytes": 3180171,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-304582fa00bf/vychislenie-vremeni-udvoeniy-02.png-960.webp",
+        "width": 960,
+        "height": 676,
+        "sha256": "954b47e9f1a30785293ed93f93905579dd4c78cb85ce37911da97aa7e3118f82",
+        "bytes": 875186
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-304582fa00bf-vychislenie-vremeni-udvoeniy-02-9457ab5cde74bc7c1a7d2f3940fed3a0ba8e840e161f9b1128a0dc648eda93d2.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630573013",
+      "asset_id": 630573013,
+      "release_tag": "article-originals-9",
+      "sha256": "9457ab5cde74bc7c1a7d2f3940fed3a0ba8e840e161f9b1128a0dc648eda93d2",
+      "bytes": 3180171
+    }
+  },
+  "/assets/images/hm-tt-304582fa00bf/vychislenie-vremeni-udvoeniy-03.png": {
+    "sha256": "e4ca002846a90badd847235ed297106eafa7d2ebab22e2b814cd0c727199abc7",
+    "width": 1500,
+    "height": 1250,
+    "bytes": 3612201,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-304582fa00bf/vychislenie-vremeni-udvoeniy-03.png-960.webp",
+        "width": 960,
+        "height": 800,
+        "sha256": "04ec36a332b82c8bca9bd02364d4f608d73f9d6c07613032dc65fa4b24c18efc",
+        "bytes": 833530
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-304582fa00bf-vychislenie-vremeni-udvoeniy-03-e4ca002846a90badd847235ed297106eafa7d2ebab22e2b814cd0c727199abc7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630573198",
+      "asset_id": 630573198,
+      "release_tag": "article-originals-e",
+      "sha256": "e4ca002846a90badd847235ed297106eafa7d2ebab22e2b814cd0c727199abc7",
+      "bytes": 3612201
+    }
+  }
+}
