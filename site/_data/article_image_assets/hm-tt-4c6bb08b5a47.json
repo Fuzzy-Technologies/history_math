@@ -1,0 +1,102 @@
+{
+  "/assets/images/hm-tt-4c6bb08b5a47/alla-efimovna-malyh-19392019-01.png": {
+    "sha256": "aaee529b6837ddc1c47af8d8b1386a18b2c4a953e840329ba823e060b5e11634",
+    "width": 1900,
+    "height": 2700,
+    "bytes": 5945035,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4c6bb08b5a47/alla-efimovna-malyh-19392019-01.png-960.webp",
+        "width": 960,
+        "height": 1364,
+        "sha256": "abdb49692d6b222943b4421cb8c4ba7ef22de34335aa08e23b83880925675edb",
+        "bytes": 804558
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-4c6bb08b5a47-alla-efimovna-malyh-19392019-01-aaee529b6837ddc1c47af8d8b1386a18b2c4a953e840329ba823e060b5e11634.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630496741",
+      "asset_id": 630496741,
+      "release_tag": "article-originals-a",
+      "sha256": "aaee529b6837ddc1c47af8d8b1386a18b2c4a953e840329ba823e060b5e11634",
+      "bytes": 5945035
+    }
+  },
+  "/assets/images/hm-tt-4c6bb08b5a47/alla-efimovna-malyh-19392019-02.png": {
+    "sha256": "2896eed259497529baf3447b10f3f25b00e1af972861885db09b0bdcce459459",
+    "width": 687,
+    "height": 433,
+    "bytes": 709143,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4c6bb08b5a47/alla-efimovna-malyh-19392019-02.png-687.webp",
+        "width": 687,
+        "height": 433,
+        "sha256": "bb1c27f8ac51d547ce4995aba6c19a0526e85ed8362b41435545e42f31923883",
+        "bytes": 291610
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-4c6bb08b5a47-alla-efimovna-malyh-19392019-02-2896eed259497529baf3447b10f3f25b00e1af972861885db09b0bdcce459459.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551810",
+      "asset_id": 630551810,
+      "release_tag": "article-originals-2",
+      "sha256": "2896eed259497529baf3447b10f3f25b00e1af972861885db09b0bdcce459459",
+      "bytes": 709143
+    }
+  },
+  "/assets/images/hm-tt-4c6bb08b5a47/alla-efimovna-malyh-19392019-03.png": {
+    "sha256": "5c22f03e6e56df674b1613b3d121db124d3fb6a9bc77ae8631eb951e24490172",
+    "width": 2272,
+    "height": 1704,
+    "bytes": 5955927,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4c6bb08b5a47/alla-efimovna-malyh-19392019-03.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "664568bd07d7a7bb270abca82443e9ebcbbe493c161d6e76c207dae6fb1e6a56",
+        "bytes": 673998
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-4c6bb08b5a47-alla-efimovna-malyh-19392019-03-5c22f03e6e56df674b1613b3d121db124d3fb6a9bc77ae8631eb951e24490172.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551970",
+      "asset_id": 630551970,
+      "release_tag": "article-originals-5",
+      "sha256": "5c22f03e6e56df674b1613b3d121db124d3fb6a9bc77ae8631eb951e24490172",
+      "bytes": 5955927
+    }
+  },
+  "/assets/images/hm-tt-4c6bb08b5a47/alla-efimovna-malyh-19392019-04.png": {
+    "sha256": "1b7b9ed6d0583fe9bcf5536b235e14837aab3b3236780d5be01e74b9aa064e8f",
+    "width": 2816,
+    "height": 2112,
+    "bytes": 14216105,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4c6bb08b5a47/alla-efimovna-malyh-19392019-04.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "90dc5e59519a8e38d697fb374a8cf65b91be4b264bc3132d65c94b718360639b",
+        "bytes": 968270
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-4c6bb08b5a47-alla-efimovna-malyh-19392019-04-1b7b9ed6d0583fe9bcf5536b235e14837aab3b3236780d5be01e74b9aa064e8f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552139",
+      "asset_id": 630552139,
+      "release_tag": "article-originals-1",
+      "sha256": "1b7b9ed6d0583fe9bcf5536b235e14837aab3b3236780d5be01e74b9aa064e8f",
+      "bytes": 14216105
+    }
+  }
+}
