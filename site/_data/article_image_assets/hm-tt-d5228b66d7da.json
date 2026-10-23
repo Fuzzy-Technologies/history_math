@@ -1,0 +1,202 @@
+{
+  "/assets/images/hm-tt-d5228b66d7da/dlya-chego-nuzhny-soft-skill-01.png": {
+    "sha256": "877c242f63ed69e8b28e62542d4c9f7cecf2a759f9de4f25dbe065df0913a4ab",
+    "width": 1280,
+    "height": 720,
+    "bytes": 1473916,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d5228b66d7da/dlya-chego-nuzhny-soft-skill-01.png-960.webp",
+        "width": 960,
+        "height": 540,
+        "sha256": "4047f8ec822a76002dcff366fd74872cd2e9cd3ccf8d31188e839a90d0839d10",
+        "bytes": 465840
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-d5228b66d7da-dlya-chego-nuzhny-soft-skill-01-877c242f63ed69e8b28e62542d4c9f7cecf2a759f9de4f25dbe065df0913a4ab.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497712",
+      "asset_id": 630497712,
+      "release_tag": "article-originals-8",
+      "sha256": "877c242f63ed69e8b28e62542d4c9f7cecf2a759f9de4f25dbe065df0913a4ab",
+      "bytes": 1473916
+    }
+  },
+  "/assets/images/hm-tt-d5228b66d7da/dlya-chego-nuzhny-soft-skill-02.png": {
+    "sha256": "e26d97b540569033e7f137a506ee449d9844e02c8584762c07954dd153b474fa",
+    "width": 1280,
+    "height": 720,
+    "bytes": 1856812,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d5228b66d7da/dlya-chego-nuzhny-soft-skill-02.png-960.webp",
+        "width": 960,
+        "height": 540,
+        "sha256": "1c7de045d7470df02c014d073dfbfe7980b161ecf1bde50a823cdf42315899a8",
+        "bytes": 632728
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-d5228b66d7da-dlya-chego-nuzhny-soft-skill-02-e26d97b540569033e7f137a506ee449d9844e02c8584762c07954dd153b474fa.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554584",
+      "asset_id": 630554584,
+      "release_tag": "article-originals-e",
+      "sha256": "e26d97b540569033e7f137a506ee449d9844e02c8584762c07954dd153b474fa",
+      "bytes": 1856812
+    }
+  },
+  "/assets/images/hm-tt-d5228b66d7da/dlya-chego-nuzhny-soft-skill-03.png": {
+    "sha256": "56b7e8ec818798c8f3a22241e12d6226cd12fbcad44351e933dba4dd48a28a69",
+    "width": 1280,
+    "height": 720,
+    "bytes": 1546354,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d5228b66d7da/dlya-chego-nuzhny-soft-skill-03.png-960.webp",
+        "width": 960,
+        "height": 540,
+        "sha256": "11ca4eac265ee91ad334b63ca35f2f168209900c0d47650c5976ca61bdbdfec0",
+        "bytes": 501420
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-d5228b66d7da-dlya-chego-nuzhny-soft-skill-03-56b7e8ec818798c8f3a22241e12d6226cd12fbcad44351e933dba4dd48a28a69.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554737",
+      "asset_id": 630554737,
+      "release_tag": "article-originals-5",
+      "sha256": "56b7e8ec818798c8f3a22241e12d6226cd12fbcad44351e933dba4dd48a28a69",
+      "bytes": 1546354
+    }
+  },
+  "/assets/images/hm-tt-d5228b66d7da/dlya-chego-nuzhny-soft-skill-04.png": {
+    "sha256": "db5c814f5227da3b3665189eadd95283ab8a29afff1536f3f6d11dc59a1d1c71",
+    "width": 1280,
+    "height": 720,
+    "bytes": 1403216,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d5228b66d7da/dlya-chego-nuzhny-soft-skill-04.png-960.webp",
+        "width": 960,
+        "height": 540,
+        "sha256": "883546ccab6a288071ca15bade3fb35c06c904bec54c66216adfe32542f1e072",
+        "bytes": 486284
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-d5228b66d7da-dlya-chego-nuzhny-soft-skill-04-db5c814f5227da3b3665189eadd95283ab8a29afff1536f3f6d11dc59a1d1c71.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554897",
+      "asset_id": 630554897,
+      "release_tag": "article-originals-d",
+      "sha256": "db5c814f5227da3b3665189eadd95283ab8a29afff1536f3f6d11dc59a1d1c71",
+      "bytes": 1403216
+    }
+  },
+  "/assets/images/hm-tt-d5228b66d7da/dlya-chego-nuzhny-soft-skill-05.png": {
+    "sha256": "108cff9258728b9a1dd71ab0a2892720e6af326ddd2f9e6ba30430cd62955d47",
+    "width": 1280,
+    "height": 720,
+    "bytes": 1420263,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d5228b66d7da/dlya-chego-nuzhny-soft-skill-05.png-960.webp",
+        "width": 960,
+        "height": 540,
+        "sha256": "05eacfbfc1bd22dbf761f1f72f57f67ee37fad6aa70b3da36ec45f83f1b892c6",
+        "bytes": 522190
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-d5228b66d7da-dlya-chego-nuzhny-soft-skill-05-108cff9258728b9a1dd71ab0a2892720e6af326ddd2f9e6ba30430cd62955d47.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555049",
+      "asset_id": 630555049,
+      "release_tag": "article-originals-1",
+      "sha256": "108cff9258728b9a1dd71ab0a2892720e6af326ddd2f9e6ba30430cd62955d47",
+      "bytes": 1420263
+    }
+  },
+  "/assets/images/hm-tt-d5228b66d7da/dlya-chego-nuzhny-soft-skill-06.png": {
+    "sha256": "31dd227743154ba060eef078941964dfcffcee2783b8833ccf7b2b8b45ef7fc5",
+    "width": 1280,
+    "height": 720,
+    "bytes": 670221,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d5228b66d7da/dlya-chego-nuzhny-soft-skill-06.png-960.webp",
+        "width": 960,
+        "height": 540,
+        "sha256": "4ada0f1561605963ebe128aa728f658ff6be3c7fb037ca8b0471dc85cf4f2456",
+        "bytes": 317590
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-d5228b66d7da-dlya-chego-nuzhny-soft-skill-06-31dd227743154ba060eef078941964dfcffcee2783b8833ccf7b2b8b45ef7fc5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555190",
+      "asset_id": 630555190,
+      "release_tag": "article-originals-3",
+      "sha256": "31dd227743154ba060eef078941964dfcffcee2783b8833ccf7b2b8b45ef7fc5",
+      "bytes": 670221
+    }
+  },
+  "/assets/images/hm-tt-d5228b66d7da/dlya-chego-nuzhny-soft-skill-07.png": {
+    "sha256": "cd3c47cf0b601477c13ceb5acbd918d27d94333bf1e2364517cb0bb8427837af",
+    "width": 1280,
+    "height": 720,
+    "bytes": 1380845,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d5228b66d7da/dlya-chego-nuzhny-soft-skill-07.png-960.webp",
+        "width": 960,
+        "height": 540,
+        "sha256": "4dafc9b4ff6666032a299a8232233cb23dd3241d2188cf75161bdbc99e496caa",
+        "bytes": 460858
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-d5228b66d7da-dlya-chego-nuzhny-soft-skill-07-cd3c47cf0b601477c13ceb5acbd918d27d94333bf1e2364517cb0bb8427837af.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555417",
+      "asset_id": 630555417,
+      "release_tag": "article-originals-c",
+      "sha256": "cd3c47cf0b601477c13ceb5acbd918d27d94333bf1e2364517cb0bb8427837af",
+      "bytes": 1380845
+    }
+  },
+  "/assets/images/hm-tt-d5228b66d7da/dlya-chego-nuzhny-soft-skill-08.png": {
+    "sha256": "0a18f4db54c9140c75d03cd7e09068fcfb1ed0f4dd7be39bc66b8a771e12c763",
+    "width": 1280,
+    "height": 720,
+    "bytes": 1442078,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d5228b66d7da/dlya-chego-nuzhny-soft-skill-08.png-960.webp",
+        "width": 960,
+        "height": 540,
+        "sha256": "6581215045d07de273f5b172d13fc36669ebdbe798701b8ed3026c8c58e566c4",
+        "bytes": 511698
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-d5228b66d7da-dlya-chego-nuzhny-soft-skill-08-0a18f4db54c9140c75d03cd7e09068fcfb1ed0f4dd7be39bc66b8a771e12c763.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555571",
+      "asset_id": 630555571,
+      "release_tag": "article-originals-0",
+      "sha256": "0a18f4db54c9140c75d03cd7e09068fcfb1ed0f4dd7be39bc66b8a771e12c763",
+      "bytes": 1442078
+    }
+  }
+}
