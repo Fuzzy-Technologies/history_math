@@ -1,0 +1,52 @@
+{
+  "/assets/images/hm-tt-76a2afb741de/paper-format-01.png": {
+    "sha256": "3465dfb9792670834d269e9996cf7cd197bfee490e0b97887d930241b0934637",
+    "width": 538,
+    "height": 798,
+    "bytes": 875252,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-76a2afb741de/paper-format-01.png-538.webp",
+        "width": 538,
+        "height": 798,
+        "sha256": "9658e157f2c6046b4545521b59a0768b8e5e38b33752e18c34175a9ac5ffae81",
+        "bytes": 519492
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-76a2afb741de-paper-format-01-3465dfb9792670834d269e9996cf7cd197bfee490e0b97887d930241b0934637.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630495335",
+      "asset_id": 630495335,
+      "release_tag": "article-originals-3",
+      "sha256": "3465dfb9792670834d269e9996cf7cd197bfee490e0b97887d930241b0934637",
+      "bytes": 875252
+    }
+  },
+  "/assets/images/hm-tt-76a2afb741de/paper-format-02.png": {
+    "sha256": "0723b3ef92875af40eeaf69cc80f3b8630924bd077dcda023d91f548b06ea9cc",
+    "width": 496,
+    "height": 795,
+    "bytes": 231394,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-76a2afb741de/paper-format-02.png-496.webp",
+        "width": 496,
+        "height": 795,
+        "sha256": "cc5b565fe56910fbef453d18a71b87916185549e26cb3923a29e65277cdaaa26",
+        "bytes": 182138
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-76a2afb741de-paper-format-02-0723b3ef92875af40eeaf69cc80f3b8630924bd077dcda023d91f548b06ea9cc.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540139",
+      "asset_id": 630540139,
+      "release_tag": "article-originals-0",
+      "sha256": "0723b3ef92875af40eeaf69cc80f3b8630924bd077dcda023d91f548b06ea9cc",
+      "bytes": 231394
+    }
+  }
+}
