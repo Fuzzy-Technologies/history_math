@@ -1,0 +1,302 @@
+{
+  "/assets/images/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-01.png": {
+    "sha256": "f8b80732fbd1d3c15b72532b6182017c60155198ba22bf0f8ff361fae87a0797",
+    "width": 428,
+    "height": 429,
+    "bytes": 433427,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-01.png-428.webp",
+        "width": 428,
+        "height": 429,
+        "sha256": "25732667672116dd23ad0dd13c981d8bc30b7c1b1bd13e96805e7eda9ba43713",
+        "bytes": 164130
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-baa8b29ac53e-vsyu-svoyu-zhizn-posvyatil-n-01-f8b80732fbd1d3c15b72532b6182017c60155198ba22bf0f8ff361fae87a0797.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630499950",
+      "asset_id": 630499950,
+      "release_tag": "article-originals-f",
+      "sha256": "f8b80732fbd1d3c15b72532b6182017c60155198ba22bf0f8ff361fae87a0797",
+      "bytes": 433427
+    }
+  },
+  "/assets/images/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-02.png": {
+    "sha256": "542c670791ffee418f1494c363307098d77de994a0122ff0a1c09cd91fd7c79d",
+    "width": 974,
+    "height": 638,
+    "bytes": 155664,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-02.png-960.webp",
+        "width": 960,
+        "height": 629,
+        "sha256": "a3d259c852a087de2ee817a502c6404778643b2f63dbedc40d812eda55a0a194",
+        "bytes": 857700
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-baa8b29ac53e-vsyu-svoyu-zhizn-posvyatil-n-02-542c670791ffee418f1494c363307098d77de994a0122ff0a1c09cd91fd7c79d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630547605",
+      "asset_id": 630547605,
+      "release_tag": "article-originals-5",
+      "sha256": "542c670791ffee418f1494c363307098d77de994a0122ff0a1c09cd91fd7c79d",
+      "bytes": 155664
+    }
+  },
+  "/assets/images/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-03.png": {
+    "sha256": "4998a8bc22920e3e925d1508251cc4a47c8273217b1a2807c78bb65497a48482",
+    "width": 2736,
+    "height": 3648,
+    "bytes": 15213033,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-03.png-960.webp",
+        "width": 960,
+        "height": 1280,
+        "sha256": "f7bb04f6a8c2d88ef14905cd15fb0f794a92f1ba17a74e257a4bc72473e8d579",
+        "bytes": 1181000
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-baa8b29ac53e-vsyu-svoyu-zhizn-posvyatil-n-03-4998a8bc22920e3e925d1508251cc4a47c8273217b1a2807c78bb65497a48482.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630547830",
+      "asset_id": 630547830,
+      "release_tag": "article-originals-4",
+      "sha256": "4998a8bc22920e3e925d1508251cc4a47c8273217b1a2807c78bb65497a48482",
+      "bytes": 15213033
+    }
+  },
+  "/assets/images/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-04.png": {
+    "sha256": "3afb6d84cea47c6dcda1ca381a35046e4e4ccda9ac08b810d30e93e2307d4d34",
+    "width": 441,
+    "height": 600,
+    "bytes": 500723,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-04-png-reading-441-823dfc48faed.webp",
+        "width": 441,
+        "height": 600,
+        "sha256": "823dfc48faed3e1c7fd621c4f4c8001a79db83aa20fc79aa2fe62f403b2df26b",
+        "bytes": 322238
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-baa8b29ac53e-vsyu-svoyu-zhizn-posvyatil-n-04-3afb6d84cea47c6dcda1ca381a35046e4e4ccda9ac08b810d30e93e2307d4d34.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630547971",
+      "asset_id": 630547971,
+      "release_tag": "article-originals-3",
+      "sha256": "3afb6d84cea47c6dcda1ca381a35046e4e4ccda9ac08b810d30e93e2307d4d34",
+      "bytes": 500723
+    }
+  },
+  "/assets/images/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-05.png": {
+    "sha256": "fbbe05cadbe485e6edf923d46a99ebc802675042105256b72492caec17407604",
+    "width": 3648,
+    "height": 2736,
+    "bytes": 13758702,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-05.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "f5fdff6af1c8a42a7fa8ffde183e76272a05f9da8d24d8c7b666b2af4ab845a1",
+        "bytes": 607386
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-baa8b29ac53e-vsyu-svoyu-zhizn-posvyatil-n-05-fbbe05cadbe485e6edf923d46a99ebc802675042105256b72492caec17407604.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548137",
+      "asset_id": 630548137,
+      "release_tag": "article-originals-f",
+      "sha256": "fbbe05cadbe485e6edf923d46a99ebc802675042105256b72492caec17407604",
+      "bytes": 13758702
+    }
+  },
+  "/assets/images/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-06.png": {
+    "sha256": "f619413ad94a997f7aded8bdc26c3e5241531fb21a930f653f6b4a48884671e2",
+    "width": 779,
+    "height": 999,
+    "bytes": 1057575,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-06.png-779.webp",
+        "width": 779,
+        "height": 999,
+        "sha256": "412e21119606a86efd534d17a41b2a0aabf14e3d6aa2b472e7a2ad1c6c3402aa",
+        "bytes": 542206
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-baa8b29ac53e-vsyu-svoyu-zhizn-posvyatil-n-06-f619413ad94a997f7aded8bdc26c3e5241531fb21a930f653f6b4a48884671e2.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548304",
+      "asset_id": 630548304,
+      "release_tag": "article-originals-f",
+      "sha256": "f619413ad94a997f7aded8bdc26c3e5241531fb21a930f653f6b4a48884671e2",
+      "bytes": 1057575
+    }
+  },
+  "/assets/images/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-07.png": {
+    "sha256": "1573e9a8c7730ec45ce5c0e86b23e7bf2ef196f03dcd922f4393039b69a45836",
+    "width": 960,
+    "height": 1280,
+    "bytes": 1884059,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-07.png-960.webp",
+        "width": 960,
+        "height": 1280,
+        "sha256": "4fb79bd0b878210819bf83fc50a91963b3d6f5162e750a0e21a382c57049bd01",
+        "bytes": 1080356
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-baa8b29ac53e-vsyu-svoyu-zhizn-posvyatil-n-07-1573e9a8c7730ec45ce5c0e86b23e7bf2ef196f03dcd922f4393039b69a45836.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548452",
+      "asset_id": 630548452,
+      "release_tag": "article-originals-1",
+      "sha256": "1573e9a8c7730ec45ce5c0e86b23e7bf2ef196f03dcd922f4393039b69a45836",
+      "bytes": 1884059
+    }
+  },
+  "/assets/images/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-08.png": {
+    "sha256": "e2205aef28c1408954f576348a33f82aa2b73fd614b7943958b7c514cb465acf",
+    "width": 445,
+    "height": 589,
+    "bytes": 487304,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-08.png-445.webp",
+        "width": 445,
+        "height": 589,
+        "sha256": "1e832bbaa55d150b3136e0cf732b1b838ebde4b034ceb387904f9111d9341d74",
+        "bytes": 259056
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-baa8b29ac53e-vsyu-svoyu-zhizn-posvyatil-n-08-e2205aef28c1408954f576348a33f82aa2b73fd614b7943958b7c514cb465acf.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548581",
+      "asset_id": 630548581,
+      "release_tag": "article-originals-e",
+      "sha256": "e2205aef28c1408954f576348a33f82aa2b73fd614b7943958b7c514cb465acf",
+      "bytes": 487304
+    }
+  },
+  "/assets/images/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-09.png": {
+    "sha256": "5b2b9032a0b25a181466d8a1719f0949c12e6d4032e3348a178a284a4e217e3e",
+    "width": 960,
+    "height": 1280,
+    "bytes": 3056807,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-09.png-960.webp",
+        "width": 960,
+        "height": 1280,
+        "sha256": "95f2e9544d377f48eeafcc780b8db53a5ee158991a4025df91a684939f1d617a",
+        "bytes": 1339166
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-baa8b29ac53e-vsyu-svoyu-zhizn-posvyatil-n-09-5b2b9032a0b25a181466d8a1719f0949c12e6d4032e3348a178a284a4e217e3e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548717",
+      "asset_id": 630548717,
+      "release_tag": "article-originals-5",
+      "sha256": "5b2b9032a0b25a181466d8a1719f0949c12e6d4032e3348a178a284a4e217e3e",
+      "bytes": 3056807
+    }
+  },
+  "/assets/images/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-10.png": {
+    "sha256": "756196d9d5d22ae3a603d287778c2f944702eec854cbc16d41aa7f1519653ea7",
+    "width": 794,
+    "height": 593,
+    "bytes": 1270280,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-10.png-794.webp",
+        "width": 794,
+        "height": 593,
+        "sha256": "425ad5a2472ebe839295f3cad225fa836e36cf738867690f3f84d25be3cf5cd5",
+        "bytes": 735396
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-baa8b29ac53e-vsyu-svoyu-zhizn-posvyatil-n-10-756196d9d5d22ae3a603d287778c2f944702eec854cbc16d41aa7f1519653ea7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548871",
+      "asset_id": 630548871,
+      "release_tag": "article-originals-7",
+      "sha256": "756196d9d5d22ae3a603d287778c2f944702eec854cbc16d41aa7f1519653ea7",
+      "bytes": 1270280
+    }
+  },
+  "/assets/images/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-11.png": {
+    "sha256": "96a83c44d04db3ec4bdfbbd08973877e8a60903a8e3b914127cbc96cb047c3c1",
+    "width": 324,
+    "height": 441,
+    "bytes": 391621,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-11.png-324.webp",
+        "width": 324,
+        "height": 441,
+        "sha256": "9608682b1b768e220a72972e7f1faee76a92545320a0b3effad6aad5c5e806c0",
+        "bytes": 176284
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-baa8b29ac53e-vsyu-svoyu-zhizn-posvyatil-n-11-96a83c44d04db3ec4bdfbbd08973877e8a60903a8e3b914127cbc96cb047c3c1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549034",
+      "asset_id": 630549034,
+      "release_tag": "article-originals-9",
+      "sha256": "96a83c44d04db3ec4bdfbbd08973877e8a60903a8e3b914127cbc96cb047c3c1",
+      "bytes": 391621
+    }
+  },
+  "/assets/images/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-12.png": {
+    "sha256": "1fba9adf52ca0d92c8d5cfaf35687289a6f4e7294353ea5f2b85c09b4e8fbaaf",
+    "width": 1350,
+    "height": 1350,
+    "bytes": 3133264,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-12-png-reading-960-14a2211800aa.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "14a2211800aa95b19c092f9c3941ae02a6278b674d0b34ee567a4cb7d98aaf5d",
+        "bytes": 865504
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-baa8b29ac53e-vsyu-svoyu-zhizn-posvyatil-n-12-1fba9adf52ca0d92c8d5cfaf35687289a6f4e7294353ea5f2b85c09b4e8fbaaf.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549258",
+      "asset_id": 630549258,
+      "release_tag": "article-originals-1",
+      "sha256": "1fba9adf52ca0d92c8d5cfaf35687289a6f4e7294353ea5f2b85c09b4e8fbaaf",
+      "bytes": 3133264
+    }
+  }
+}
