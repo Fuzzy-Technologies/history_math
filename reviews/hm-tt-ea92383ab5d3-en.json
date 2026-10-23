@@ -1,0 +1,34 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-ea92383ab5d3-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-23",
+    "package_sha256": "5de428a02e98b44fd1c5392dc491194444a7e052601bcda8d726160b706875e1",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/104#pullrequestreview-5626005967",
+    "source_commit": "9c13ced5cf90dded89917e79c81588d26e0ef914",
+    "source_review_id": 5626005967,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-23T08:51:13Z",
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+  },
+  "questions": [
+    {
+      "id": "rsa-theorem-relationship",
+      "question": "The source describes Fermat’s little theorem as based on Euler’s totient function, and gives aᵖ⁻¹ ≡ 1 (mod p) without its hypotheses. Should the relationship to Euler’s theorem and the required hypotheses be clarified? The English text preserves the source claim and formula.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual package and retained source wording, including this question. No historical answer or substantive correction is inferred. Approval: https://github.com/Fuzzy-Technologies/history_math/pull/104#pullrequestreview-5626005967"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-02-03",
+      "url": "https://teletype.in/@history_math/Bible-of-Math-Algebra-Is-More-Than-Just-Numbers"
+    }
+  }
+}
