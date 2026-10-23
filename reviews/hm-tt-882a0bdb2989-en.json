@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-882a0bdb2989-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source derives medrese from “madarasat” and glosses “daras” as “lesson, lecture”, and describes geometrical rules as studied deductively without proofs. Confirm the linguistic forms and intended pedagogical terminology; the English retains these claims.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-02-24",
+      "url": "https://teletype.in/@history_math/Mektebe-i-medrese-02-24"
+    }
+  }
+}
