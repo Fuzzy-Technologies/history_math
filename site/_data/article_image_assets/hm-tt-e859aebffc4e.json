@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-e859aebffc4e/greek-cross-01.png": {
+    "sha256": "3294e7aa1a0bf2bd0e3611209609c942be9da2ff9ad24c265aa645dda3cea107",
+    "width": 820,
+    "height": 820,
+    "bytes": 140802,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e859aebffc4e/greek-cross-01.png-820.webp",
+        "width": 820,
+        "height": 820,
+        "sha256": "556a40685a98b8ac3e50e32fd90fd24f34f7bbd9dcca9b3f6a2df4f2f08252d2",
+        "bytes": 83700
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-e859aebffc4e-greek-cross-01-3294e7aa1a0bf2bd0e3611209609c942be9da2ff9ad24c265aa645dda3cea107.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497457",
+      "asset_id": 630497457,
+      "release_tag": "article-originals-3",
+      "sha256": "3294e7aa1a0bf2bd0e3611209609c942be9da2ff9ad24c265aa645dda3cea107",
+      "bytes": 140802
+    }
+  },
+  "/assets/images/hm-tt-e859aebffc4e/greek-cross-02.png": {
+    "sha256": "8244191b9cc8bfca7e10550bfe4789cf19f802871262e16396c1740aac5054f6",
+    "width": 1800,
+    "height": 1800,
+    "bytes": 1726596,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e859aebffc4e/greek-cross-02.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "904c99341d9befd1bd1ae359dff25d0d44f2de29a7cea6f3ee7a1b6cb6fab1ee",
+        "bytes": 412250
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-e859aebffc4e-greek-cross-02-8244191b9cc8bfca7e10550bfe4789cf19f802871262e16396c1740aac5054f6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630541330",
+      "asset_id": 630541330,
+      "release_tag": "article-originals-8",
+      "sha256": "8244191b9cc8bfca7e10550bfe4789cf19f802871262e16396c1740aac5054f6",
+      "bytes": 1726596
+    }
+  },
+  "/assets/images/hm-tt-e859aebffc4e/greek-cross-03.png": {
+    "sha256": "bc6393e21bea674bc5e81a135ee9d60cc2c94eaa136b8b0988ed00ff45c47be0",
+    "width": 3600,
+    "height": 1800,
+    "bytes": 3170795,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e859aebffc4e/greek-cross-03.png-960.webp",
+        "width": 960,
+        "height": 480,
+        "sha256": "e70ca91cdc4262cd922c8bfc2e8719be800147ac3716eaa935baa062316d0b7f",
+        "bytes": 182002
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-e859aebffc4e-greek-cross-03-bc6393e21bea674bc5e81a135ee9d60cc2c94eaa136b8b0988ed00ff45c47be0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630541467",
+      "asset_id": 630541467,
+      "release_tag": "article-originals-b",
+      "sha256": "bc6393e21bea674bc5e81a135ee9d60cc2c94eaa136b8b0988ed00ff45c47be0",
+      "bytes": 3170795
+    }
+  },
+  "/assets/images/hm-tt-e859aebffc4e/greek-cross-04.png": {
+    "sha256": "007a29f7c624b83cd67693ff24d68a31aca72ef9be4ef4638599ae17848fb5fd",
+    "width": 1808,
+    "height": 1808,
+    "bytes": 1397036,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e859aebffc4e/greek-cross-04.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "e97af266207a44419cd59b314909fbca0cf4229e2dabdfd5e6c817489f77ad7c",
+        "bytes": 364890
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-e859aebffc4e-greek-cross-04-007a29f7c624b83cd67693ff24d68a31aca72ef9be4ef4638599ae17848fb5fd.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630541585",
+      "asset_id": 630541585,
+      "release_tag": "article-originals-0",
+      "sha256": "007a29f7c624b83cd67693ff24d68a31aca72ef9be4ef4638599ae17848fb5fd",
+      "bytes": 1397036
+    }
+  },
+  "/assets/images/hm-tt-e859aebffc4e/greek-cross-05.png": {
+    "sha256": "dafc5210da0c85416a25f53dbdf5ec5056639ee58403d79e62d578e51f692230",
+    "width": 1800,
+    "height": 1800,
+    "bytes": 2183118,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e859aebffc4e/greek-cross-05.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "3069a79aacbacecdb56d953f9f1764a769ffc1ed175a49705c6cdc6c932e5e89",
+        "bytes": 595536
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-e859aebffc4e-greek-cross-05-dafc5210da0c85416a25f53dbdf5ec5056639ee58403d79e62d578e51f692230.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630541743",
+      "asset_id": 630541743,
+      "release_tag": "article-originals-d",
+      "sha256": "dafc5210da0c85416a25f53dbdf5ec5056639ee58403d79e62d578e51f692230",
+      "bytes": 2183118
+    }
+  }
+}
