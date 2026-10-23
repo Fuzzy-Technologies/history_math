@@ -1,0 +1,45 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-0688bb8d1a11-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "foucault-date",
+      "question": "The first figure caption dates Foucault’s gyroscope to 1851, while the body dates his improvement to 1852. Should the distinction or dates be clarified? Both are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "precession-force",
+      "question": "The source describes precession as a force perpendicular to the applied force, then describes the effect of torque. Should this physical explanation be revised to distinguish force, torque and angular momentum? It is translated without correction.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "bicycle-stability",
+      "question": "The source attributes bicycle and motorcycle stability to their wheels acting as gyroscopes. Should this explanation be qualified to account for the other mechanisms of stability? The assertion is retained.",
+      "blocking": false,
+      "state": "open"
+    },
+    {
+      "id": "quadcopters-three-gyroscopes",
+      "question": "The source says quadcopters need at least three gyroscopes. Does it mean three sensing axes or three separate instruments? The original numerical assertion is retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-05-12",
+      "url": "https://teletype.in/@history_math/Giroskop-05-12"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
