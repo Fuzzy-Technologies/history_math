@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-1aea6232863d/niveler-01.png": {
+    "sha256": "68eeb5ac5f9853bdbe6c5cd51248dd549f010559331c661208a03a21fdb79a36",
+    "width": 1250,
+    "height": 850,
+    "bytes": 796786,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1aea6232863d/niveler-01.png-960.webp",
+        "width": 960,
+        "height": 653,
+        "sha256": "676cf29576b9ca14a587027efbeff66abbf3eae3a57deeff57ed6fcdc714c03b",
+        "bytes": 271818
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-1aea6232863d-niveler-01-68eeb5ac5f9853bdbe6c5cd51248dd549f010559331c661208a03a21fdb79a36.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630494551",
+      "asset_id": 630494551,
+      "release_tag": "article-originals-6",
+      "sha256": "68eeb5ac5f9853bdbe6c5cd51248dd549f010559331c661208a03a21fdb79a36",
+      "bytes": 796786
+    }
+  },
+  "/assets/images/hm-tt-1aea6232863d/niveler-02.png": {
+    "sha256": "8b1ef021eea4013558aaa91fc2d23c3c0480629547ad3071ffc92c3170f3fdf8",
+    "width": 618,
+    "height": 600,
+    "bytes": 247303,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1aea6232863d/niveler-02.png-618.webp",
+        "width": 618,
+        "height": 600,
+        "sha256": "2c76d2e6319fc75270fd6e2fdbd6a3f225331c1466488ffee5b7eed4b379df11",
+        "bytes": 107590
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-1aea6232863d-niveler-02-8b1ef021eea4013558aaa91fc2d23c3c0480629547ad3071ffc92c3170f3fdf8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630532282",
+      "asset_id": 630532282,
+      "release_tag": "article-originals-8",
+      "sha256": "8b1ef021eea4013558aaa91fc2d23c3c0480629547ad3071ffc92c3170f3fdf8",
+      "bytes": 247303
+    }
+  },
+  "/assets/images/hm-tt-1aea6232863d/niveler-03.jpeg": {
+    "sha256": "40b5088477b74e078e81dbee52342d5fda7b1603b156e755648562a8a975eb7e",
+    "width": 340,
+    "height": 599,
+    "bytes": 58417,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1aea6232863d/niveler-03-340.jpeg",
+        "width": 340,
+        "height": 599,
+        "bytes": 58417,
+        "sha256": "40b5088477b74e078e81dbee52342d5fda7b1603b156e755648562a8a975eb7e"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-1aea6232863d-niveler-03-40b5088477b74e078e81dbee52342d5fda7b1603b156e755648562a8a975eb7e.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630532474",
+      "asset_id": 630532474,
+      "release_tag": "article-originals-4",
+      "sha256": "40b5088477b74e078e81dbee52342d5fda7b1603b156e755648562a8a975eb7e",
+      "bytes": 58417
+    }
+  },
+  "/assets/images/hm-tt-1aea6232863d/niveler-04.png": {
+    "sha256": "33fd61369dc17ce9370deb4441a54066560f637c57eb672496ce57f14ee7ebd7",
+    "width": 983,
+    "height": 983,
+    "bytes": 428346,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1aea6232863d/niveler-04.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "059324ca80d09249f044a40816fa04318a2ccd1cf6e7bc5d5ca4fa55b677e7f3",
+        "bytes": 257090
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-1aea6232863d-niveler-04-33fd61369dc17ce9370deb4441a54066560f637c57eb672496ce57f14ee7ebd7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630532702",
+      "asset_id": 630532702,
+      "release_tag": "article-originals-3",
+      "sha256": "33fd61369dc17ce9370deb4441a54066560f637c57eb672496ce57f14ee7ebd7",
+      "bytes": 428346
+    }
+  },
+  "/assets/images/hm-tt-1aea6232863d/niveler-05.png": {
+    "sha256": "97fbadb4652df048b46e63635052ebcfa8f73b9d93f23e90b179e0a5d39d6643",
+    "width": 561,
+    "height": 561,
+    "bytes": 340363,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1aea6232863d/niveler-05.png-561.webp",
+        "width": 561,
+        "height": 561,
+        "sha256": "2b061c43ccc871d5ee0aaf404b6738d355bd6f1262ed4f242c353148e5440b60",
+        "bytes": 218944
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-1aea6232863d-niveler-05-97fbadb4652df048b46e63635052ebcfa8f73b9d93f23e90b179e0a5d39d6643.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630532931",
+      "asset_id": 630532931,
+      "release_tag": "article-originals-9",
+      "sha256": "97fbadb4652df048b46e63635052ebcfa8f73b9d93f23e90b179e0a5d39d6643",
+      "bytes": 340363
+    }
+  }
+}
