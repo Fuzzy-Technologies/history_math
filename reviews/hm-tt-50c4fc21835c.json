@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-50c4fc21835c",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-23",
+    "package_sha256": "ac9883287d7ad057906764ca2e8e78e4c47d783bfee53ad9fbed1a5c1f7ef568",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/108#pullrequestreview-5626006719",
+    "source_commit": "b29a59f85fb2c89d43ec036744be5adce8711a69",
+    "source_review_id": 5626006719,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-23T08:51:18Z",
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 9,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-02-02",
+      "url": "https://teletype.in/@history_math/Seminar-for-Math-Teachers--2025-01-30"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
