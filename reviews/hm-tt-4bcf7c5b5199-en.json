@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-4bcf7c5b5199-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "rangefinder-priority",
+      "question": "Please verify the “world’s first” priority claimed for Petrushevsky’s late-1860s rangefinder and define the class of instrument intended. The English retains the source claim.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-07-03",
+      "url": "https://teletype.in/@history_math/Dalnomer-07-03"
+    }
+  }
+}
