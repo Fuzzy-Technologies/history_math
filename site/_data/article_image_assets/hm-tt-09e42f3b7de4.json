@@ -1,0 +1,302 @@
+{
+  "/assets/images/hm-tt-09e42f3b7de4/algebra-history-part-3-01.png": {
+    "sha256": "2dca9ff132ac65e2e26d1a65b6fb36b98bfe486897c413d02b696aa6ce3ef9dc",
+    "width": 1380,
+    "height": 2245,
+    "bytes": 3128499,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-09e42f3b7de4/algebra-history-part-3-01.png-960.webp",
+        "width": 960,
+        "height": 1562,
+        "sha256": "5a299bd23e374a877c52cb395d921e084486416248889abe1a3212d4c550e5ce",
+        "bytes": 860564
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-09e42f3b7de4-algebra-history-part-3-01-2dca9ff132ac65e2e26d1a65b6fb36b98bfe486897c413d02b696aa6ce3ef9dc.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630494586",
+      "asset_id": 630494586,
+      "release_tag": "article-originals-2",
+      "sha256": "2dca9ff132ac65e2e26d1a65b6fb36b98bfe486897c413d02b696aa6ce3ef9dc",
+      "bytes": 3128499
+    }
+  },
+  "/assets/images/hm-tt-09e42f3b7de4/algebra-history-part-3-02.jpeg": {
+    "sha256": "5d933a18ccbc5a971d2cb47e582752ab696e42d853d5a1f160c53397b22de4af",
+    "width": 2408,
+    "height": 1184,
+    "bytes": 997238,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-09e42f3b7de4/algebra-history-part-3-02.jpeg-960.webp",
+        "width": 960,
+        "height": 472,
+        "sha256": "ff94d527108af854764ea2440c8c593376a0fa479e19e0e42e1d854509587726",
+        "bytes": 528288
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-09e42f3b7de4-algebra-history-part-3-02-5d933a18ccbc5a971d2cb47e582752ab696e42d853d5a1f160c53397b22de4af.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540007",
+      "asset_id": 630540007,
+      "release_tag": "article-originals-5",
+      "sha256": "5d933a18ccbc5a971d2cb47e582752ab696e42d853d5a1f160c53397b22de4af",
+      "bytes": 997238
+    }
+  },
+  "/assets/images/hm-tt-09e42f3b7de4/algebra-history-part-3-03.png": {
+    "sha256": "4a5a5218413264a8231c697c7cb8d12684f2e4f34132a26bbc9a321aed46f738",
+    "width": 1820,
+    "height": 1132,
+    "bytes": 1229689,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-09e42f3b7de4/algebra-history-part-3-03.png-960.webp",
+        "width": 960,
+        "height": 597,
+        "sha256": "8bdc0e08dd62deffd1a969d40e57a3aa77c77b384da7c91229bb47e1ad8d4eb4",
+        "bytes": 168690
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-09e42f3b7de4-algebra-history-part-3-03-4a5a5218413264a8231c697c7cb8d12684f2e4f34132a26bbc9a321aed46f738.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540155",
+      "asset_id": 630540155,
+      "release_tag": "article-originals-4",
+      "sha256": "4a5a5218413264a8231c697c7cb8d12684f2e4f34132a26bbc9a321aed46f738",
+      "bytes": 1229689
+    }
+  },
+  "/assets/images/hm-tt-09e42f3b7de4/algebra-history-part-3-04.png": {
+    "sha256": "55de9c0a7fd05f223daf6221de46806c791d3388bab7dbdd52820f48c4419b89",
+    "width": 1425,
+    "height": 1048,
+    "bytes": 1593404,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-09e42f3b7de4/algebra-history-part-3-04.png-960.webp",
+        "width": 960,
+        "height": 706,
+        "sha256": "7ce7689a224af7fe9190bfc00f03a624b96c20bd81b2c22794d119fadbb137d0",
+        "bytes": 354078
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-09e42f3b7de4-algebra-history-part-3-04-55de9c0a7fd05f223daf6221de46806c791d3388bab7dbdd52820f48c4419b89.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540289",
+      "asset_id": 630540289,
+      "release_tag": "article-originals-5",
+      "sha256": "55de9c0a7fd05f223daf6221de46806c791d3388bab7dbdd52820f48c4419b89",
+      "bytes": 1593404
+    }
+  },
+  "/assets/images/hm-tt-09e42f3b7de4/algebra-history-part-3-05.jpeg": {
+    "sha256": "583f207875f76c75f1fe61a9e3ce461be34f4c25297f3c7fa066aa6c58b7cd5e",
+    "width": 3333,
+    "height": 2212,
+    "bytes": 1498840,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-09e42f3b7de4/algebra-history-part-3-05.jpeg-960.webp",
+        "width": 960,
+        "height": 637,
+        "sha256": "5d9f4ffcb88ee0988569800b60829b3434c7e84d2deaf98a52693c43a66ea121",
+        "bytes": 470470
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-09e42f3b7de4-algebra-history-part-3-05-583f207875f76c75f1fe61a9e3ce461be34f4c25297f3c7fa066aa6c58b7cd5e.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540416",
+      "asset_id": 630540416,
+      "release_tag": "article-originals-5",
+      "sha256": "583f207875f76c75f1fe61a9e3ce461be34f4c25297f3c7fa066aa6c58b7cd5e",
+      "bytes": 1498840
+    }
+  },
+  "/assets/images/hm-tt-09e42f3b7de4/algebra-history-part-3-06.png": {
+    "sha256": "d87b41ae6373146605a056724c4534590cd2f27e54b5f9bb0c95787e79342752",
+    "width": 715,
+    "height": 910,
+    "bytes": 951950,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-09e42f3b7de4/algebra-history-part-3-06.png-715.webp",
+        "width": 715,
+        "height": 910,
+        "sha256": "243f17de2d3b2fd6e5b6846899bee4977c489a6b5b04b64fb431afb02ffc9a62",
+        "bytes": 463772
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-09e42f3b7de4-algebra-history-part-3-06-d87b41ae6373146605a056724c4534590cd2f27e54b5f9bb0c95787e79342752.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540563",
+      "asset_id": 630540563,
+      "release_tag": "article-originals-d",
+      "sha256": "d87b41ae6373146605a056724c4534590cd2f27e54b5f9bb0c95787e79342752",
+      "bytes": 951950
+    }
+  },
+  "/assets/images/hm-tt-09e42f3b7de4/algebra-history-part-3-07.png": {
+    "sha256": "bf163ee9348a34ff477dd497180712ffe3d0ba423576e2fb65b9692c70c769d9",
+    "width": 2577,
+    "height": 1892,
+    "bytes": 5059752,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-09e42f3b7de4/algebra-history-part-3-07.png-960.webp",
+        "width": 960,
+        "height": 705,
+        "sha256": "92fab68a9aacfcfac6f311b117399f34bc06ee34e8c52dc41f1c8e524740fa2b",
+        "bytes": 344282
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-09e42f3b7de4-algebra-history-part-3-07-bf163ee9348a34ff477dd497180712ffe3d0ba423576e2fb65b9692c70c769d9.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540730",
+      "asset_id": 630540730,
+      "release_tag": "article-originals-b",
+      "sha256": "bf163ee9348a34ff477dd497180712ffe3d0ba423576e2fb65b9692c70c769d9",
+      "bytes": 5059752
+    }
+  },
+  "/assets/images/hm-tt-09e42f3b7de4/algebra-history-part-3-08.png": {
+    "sha256": "7615fcf88a35484a7e7adefeb03b5dd18cab2288157f972044d05ca05903fc6f",
+    "width": 2243,
+    "height": 2184,
+    "bytes": 2421797,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-09e42f3b7de4/algebra-history-part-3-08.png-960.webp",
+        "width": 960,
+        "height": 935,
+        "sha256": "1c7f174a77d67408b82efba418fc8026c989c70c35800a0997e203904af108ec",
+        "bytes": 363596
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-09e42f3b7de4-algebra-history-part-3-08-7615fcf88a35484a7e7adefeb03b5dd18cab2288157f972044d05ca05903fc6f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540853",
+      "asset_id": 630540853,
+      "release_tag": "article-originals-7",
+      "sha256": "7615fcf88a35484a7e7adefeb03b5dd18cab2288157f972044d05ca05903fc6f",
+      "bytes": 2421797
+    }
+  },
+  "/assets/images/hm-tt-09e42f3b7de4/algebra-history-part-3-09.jpeg": {
+    "sha256": "5c7256f0e35dd5670e18cca882844b1765be025a76f1a84a4a12eba33c1d3cdb",
+    "width": 3260,
+    "height": 3258,
+    "bytes": 1109332,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-09e42f3b7de4/algebra-history-part-3-09.jpeg-960.webp",
+        "width": 960,
+        "height": 959,
+        "sha256": "ddceaac823680d60de0c1b7fc050d66eb797b8bc901634e2cf64a0bd7a62c1cd",
+        "bytes": 548910
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-09e42f3b7de4-algebra-history-part-3-09-5c7256f0e35dd5670e18cca882844b1765be025a76f1a84a4a12eba33c1d3cdb.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630540984",
+      "asset_id": 630540984,
+      "release_tag": "article-originals-5",
+      "sha256": "5c7256f0e35dd5670e18cca882844b1765be025a76f1a84a4a12eba33c1d3cdb",
+      "bytes": 1109332
+    }
+  },
+  "/assets/images/hm-tt-09e42f3b7de4/algebra-history-part-3-10.png": {
+    "sha256": "1e7604a8678a9426f7ccc0eba8ddf25842b51dbfaa36ab5b7c587ad022fcbee4",
+    "width": 1024,
+    "height": 656,
+    "bytes": 1137645,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-09e42f3b7de4/algebra-history-part-3-10.png-960.webp",
+        "width": 960,
+        "height": 615,
+        "sha256": "e8717674e7d0809e18bf8d44620b56542e334f89b7438c130f3b190345721e02",
+        "bytes": 562360
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-09e42f3b7de4-algebra-history-part-3-10-1e7604a8678a9426f7ccc0eba8ddf25842b51dbfaa36ab5b7c587ad022fcbee4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630541104",
+      "asset_id": 630541104,
+      "release_tag": "article-originals-1",
+      "sha256": "1e7604a8678a9426f7ccc0eba8ddf25842b51dbfaa36ab5b7c587ad022fcbee4",
+      "bytes": 1137645
+    }
+  },
+  "/assets/images/hm-tt-09e42f3b7de4/algebra-history-part-3-11.png": {
+    "sha256": "672d00a0e413f9e0f21c0691bc66e1d8286eb6a353d941a3a1d15570c9ca3bc6",
+    "width": 2667,
+    "height": 2257,
+    "bytes": 4985362,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-09e42f3b7de4/algebra-history-part-3-11.png-960.webp",
+        "width": 960,
+        "height": 812,
+        "sha256": "a42b5a2098453187be4ba635164d2b63ec447f69c957d1d633f0044e52e756eb",
+        "bytes": 528954
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-09e42f3b7de4-algebra-history-part-3-11-672d00a0e413f9e0f21c0691bc66e1d8286eb6a353d941a3a1d15570c9ca3bc6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630541242",
+      "asset_id": 630541242,
+      "release_tag": "article-originals-6",
+      "sha256": "672d00a0e413f9e0f21c0691bc66e1d8286eb6a353d941a3a1d15570c9ca3bc6",
+      "bytes": 4985362
+    }
+  },
+  "/assets/images/hm-tt-09e42f3b7de4/algebra-history-part-3-12.png": {
+    "sha256": "242e8191fab24a372a597c8dfe5f18009d7f7266df7af46338fab01ed18be6d7",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 1240213,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-09e42f3b7de4/algebra-history-part-3-12-png-reading-960-e358c9aba034.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "e358c9aba0349f92068e1d1ffb6f99bec9439b242f80b74ae54b7373a1ebc706",
+        "bytes": 637560
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-09e42f3b7de4-algebra-history-part-3-12-242e8191fab24a372a597c8dfe5f18009d7f7266df7af46338fab01ed18be6d7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630541408",
+      "asset_id": 630541408,
+      "release_tag": "article-originals-2",
+      "sha256": "242e8191fab24a372a597c8dfe5f18009d7f7266df7af46338fab01ed18be6d7",
+      "bytes": 1240213
+    }
+  }
+}
