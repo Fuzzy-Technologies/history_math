@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-cb91ae79e363-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-23",
+    "package_sha256": "a526e16d9871bc88e61b6d9da4cb2d17312c2565beaa2a0b05c3fd3f54f793ba",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/137#pullrequestreview-5626009374",
+    "source_commit": "476d3574d42bc5427f7c164c3a48510c768471ba",
+    "source_review_id": 5626009374,
+    "source_review_state": "COMMENTED",
+    "approved_at": "2026-10-23T08:51:34Z",
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Publication approved by the owner: https://github.com/Fuzzy-Technologies/history_math/pull/137#pullrequestreview-5626009374",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-09-04",
+      "url": "https://teletype.in/@history_math/Menzula-09-04"
+    }
+  }
+}
