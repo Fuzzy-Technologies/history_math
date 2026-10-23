@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-3baa380bee70/kirkman-schoolgirls-01.png": {
+    "sha256": "6bc00257eb51855481f874dd80f7cdae5c7b5b888a9b7a7a3ed94f94207977c5",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2706040,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-3baa380bee70/kirkman-schoolgirls-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "acd1c911dc35859c794465538dbd116bd7a95d2cc7ceca63727425b9346763c2",
+        "bytes": 1200326
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-3baa380bee70-kirkman-schoolgirls-01-6bc00257eb51855481f874dd80f7cdae5c7b5b888a9b7a7a3ed94f94207977c5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630495364",
+      "asset_id": 630495364,
+      "release_tag": "article-originals-6",
+      "sha256": "6bc00257eb51855481f874dd80f7cdae5c7b5b888a9b7a7a3ed94f94207977c5",
+      "bytes": 2706040
+    }
+  },
+  "/assets/images/hm-tt-3baa380bee70/kirkman-schoolgirls-02.png": {
+    "sha256": "b9bc790dfb92f70e54a756f78324ba6cff75a3525b87d52e8d9216a985c04ead",
+    "width": 1900,
+    "height": 2300,
+    "bytes": 2553351,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-3baa380bee70/kirkman-schoolgirls-02.png-960.webp",
+        "width": 960,
+        "height": 1162,
+        "sha256": "5c3bb11a24d8bb2b6a4dab83cf9e31a3371910875b04c2a53908428838401a4f",
+        "bytes": 327160
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-3baa380bee70-kirkman-schoolgirls-02-b9bc790dfb92f70e54a756f78324ba6cff75a3525b87d52e8d9216a985c04ead.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542870",
+      "asset_id": 630542870,
+      "release_tag": "article-originals-b",
+      "sha256": "b9bc790dfb92f70e54a756f78324ba6cff75a3525b87d52e8d9216a985c04ead",
+      "bytes": 2553351
+    }
+  },
+  "/assets/images/hm-tt-3baa380bee70/kirkman-schoolgirls-03.jpeg": {
+    "sha256": "dbb7a0863be3d28962811dfb2bbae871c1530fa505b6c218a870caf4e5b6fde8",
+    "width": 880,
+    "height": 700,
+    "bytes": 207180,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-3baa380bee70/kirkman-schoolgirls-03-880.jpeg",
+        "width": 880,
+        "height": 700,
+        "bytes": 207180,
+        "sha256": "dbb7a0863be3d28962811dfb2bbae871c1530fa505b6c218a870caf4e5b6fde8"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-3baa380bee70-kirkman-schoolgirls-03-dbb7a0863be3d28962811dfb2bbae871c1530fa505b6c218a870caf4e5b6fde8.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542993",
+      "asset_id": 630542993,
+      "release_tag": "article-originals-d",
+      "sha256": "dbb7a0863be3d28962811dfb2bbae871c1530fa505b6c218a870caf4e5b6fde8",
+      "bytes": 207180
+    }
+  },
+  "/assets/images/hm-tt-3baa380bee70/kirkman-schoolgirls-04.png": {
+    "sha256": "b8a2803095e6c2f226dcda40185d992883429196467c91be808199aa685711d2",
+    "width": 1530,
+    "height": 511,
+    "bytes": 28040,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-3baa380bee70/kirkman-schoolgirls-04.png-960.webp",
+        "width": 960,
+        "height": 321,
+        "sha256": "1e4ad9d569185d5bd916364c2ac8663b2549b7ae89dd5b91e0928d17a2e04382",
+        "bytes": 28020
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-3baa380bee70-kirkman-schoolgirls-04-b8a2803095e6c2f226dcda40185d992883429196467c91be808199aa685711d2.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630543152",
+      "asset_id": 630543152,
+      "release_tag": "article-originals-b",
+      "sha256": "b8a2803095e6c2f226dcda40185d992883429196467c91be808199aa685711d2",
+      "bytes": 28040
+    }
+  },
+  "/assets/images/hm-tt-3baa380bee70/kirkman-schoolgirls-05.png": {
+    "sha256": "042c2cf56bd15314f5ebb4005480b5ca13eeb1b71ce60f2fb8e0c11d1023ef75",
+    "width": 1246,
+    "height": 739,
+    "bytes": 25946,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-3baa380bee70/kirkman-schoolgirls-05.png-960.webp",
+        "width": 960,
+        "height": 569,
+        "sha256": "4c73e413361727b7913fe32af89429d40c627df55cc554690b54e01825f85316",
+        "bytes": 58424
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-3baa380bee70-kirkman-schoolgirls-05-042c2cf56bd15314f5ebb4005480b5ca13eeb1b71ce60f2fb8e0c11d1023ef75.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630543313",
+      "asset_id": 630543313,
+      "release_tag": "article-originals-0",
+      "sha256": "042c2cf56bd15314f5ebb4005480b5ca13eeb1b71ce60f2fb8e0c11d1023ef75",
+      "bytes": 25946
+    }
+  }
+}
