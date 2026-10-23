@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-e4f7e2e65d63-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "anniversary-and-source-date",
+      "question": "The article is dated 2023-10-14 but opens with a dedication to the 80th anniversary of the Great Victory, which falls in 2025. Should the dedication’s later revision or the publication date be clarified? Both source records are retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-10-14",
+      "url": "https://teletype.in/@history_math/Drambalop-10-14"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
