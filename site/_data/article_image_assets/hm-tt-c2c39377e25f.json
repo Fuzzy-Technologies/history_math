@@ -1,0 +1,202 @@
+{
+  "/assets/images/hm-tt-c2c39377e25f/akademik-fok-v-elabuge-09-26-01.png": {
+    "sha256": "e182bd50af61c96597855f48b876f5d852286eaf70b7386ef76686e001c740eb",
+    "width": 445,
+    "height": 606,
+    "bytes": 354970,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-c2c39377e25f/akademik-fok-v-elabuge-09-26-01.png-445.webp",
+        "width": 445,
+        "height": 606,
+        "sha256": "26637177eb812973ee7bcbb45af87b666bdb7fb7de713bcbccf3ba3789293b5e",
+        "bytes": 184386
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-c2c39377e25f-akademik-fok-v-elabuge-09-26-01-e182bd50af61c96597855f48b876f5d852286eaf70b7386ef76686e001c740eb.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630498922",
+      "asset_id": 630498922,
+      "release_tag": "article-originals-e",
+      "sha256": "e182bd50af61c96597855f48b876f5d852286eaf70b7386ef76686e001c740eb",
+      "bytes": 354970
+    }
+  },
+  "/assets/images/hm-tt-c2c39377e25f/akademik-fok-v-elabuge-09-26-02.png": {
+    "sha256": "85920de994ba901e02f844a7eaa8dc1961342de52293383c1a932d94768319f4",
+    "width": 728,
+    "height": 1216,
+    "bytes": 1231224,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-c2c39377e25f/akademik-fok-v-elabuge-09-26-02.png-728.webp",
+        "width": 728,
+        "height": 1216,
+        "sha256": "39087ee26888ca6077eebf0f70e3b8bd4df2d00fee85f64ee25eef4a18b8eeea",
+        "bytes": 552110
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-c2c39377e25f-akademik-fok-v-elabuge-09-26-02-85920de994ba901e02f844a7eaa8dc1961342de52293383c1a932d94768319f4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560983",
+      "asset_id": 630560983,
+      "release_tag": "article-originals-8",
+      "sha256": "85920de994ba901e02f844a7eaa8dc1961342de52293383c1a932d94768319f4",
+      "bytes": 1231224
+    }
+  },
+  "/assets/images/hm-tt-c2c39377e25f/akademik-fok-v-elabuge-09-26-03.png": {
+    "sha256": "b99a973eff3cbb3b985c90d4e6cf6a049913227dd962b33423284fe980ec3076",
+    "width": 1395,
+    "height": 733,
+    "bytes": 1772899,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-c2c39377e25f/akademik-fok-v-elabuge-09-26-03-png-reading-960-868bd84893f2.webp",
+        "width": 960,
+        "height": 504,
+        "sha256": "868bd84893f2f50d1d5f4cb596583a317a3fa2f3df0795a1d189d6976ad29116",
+        "bytes": 436210
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-c2c39377e25f-akademik-fok-v-elabuge-09-26-03-b99a973eff3cbb3b985c90d4e6cf6a049913227dd962b33423284fe980ec3076.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561138",
+      "asset_id": 630561138,
+      "release_tag": "article-originals-b",
+      "sha256": "b99a973eff3cbb3b985c90d4e6cf6a049913227dd962b33423284fe980ec3076",
+      "bytes": 1772899
+    }
+  },
+  "/assets/images/hm-tt-c2c39377e25f/akademik-fok-v-elabuge-09-26-04.png": {
+    "sha256": "49402e43b751613b8c53c8c6c736275ccff670a0f51a5226d482e703815d9fcd",
+    "width": 470,
+    "height": 700,
+    "bytes": 518662,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-c2c39377e25f/akademik-fok-v-elabuge-09-26-04.png-470.webp",
+        "width": 470,
+        "height": 700,
+        "sha256": "e8b466fd81ab645d25d7729144c92437a22cce34700a72f4be84ec65773572b2",
+        "bytes": 263068
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-c2c39377e25f-akademik-fok-v-elabuge-09-26-04-49402e43b751613b8c53c8c6c736275ccff670a0f51a5226d482e703815d9fcd.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561316",
+      "asset_id": 630561316,
+      "release_tag": "article-originals-4",
+      "sha256": "49402e43b751613b8c53c8c6c736275ccff670a0f51a5226d482e703815d9fcd",
+      "bytes": 518662
+    }
+  },
+  "/assets/images/hm-tt-c2c39377e25f/akademik-fok-v-elabuge-09-26-05.png": {
+    "sha256": "adddad8063b7aea13bc4b04b4c087ebef59071914228b0223b9c1aea5a394792",
+    "width": 600,
+    "height": 600,
+    "bytes": 315164,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-c2c39377e25f/akademik-fok-v-elabuge-09-26-05.png-600.webp",
+        "width": 600,
+        "height": 600,
+        "sha256": "5ee89f9ad15f80a206c8ce4d2bb32b35d66866dfb165502dd9696c105c0d856e",
+        "bytes": 181408
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-c2c39377e25f-akademik-fok-v-elabuge-09-26-05-adddad8063b7aea13bc4b04b4c087ebef59071914228b0223b9c1aea5a394792.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561464",
+      "asset_id": 630561464,
+      "release_tag": "article-originals-a",
+      "sha256": "adddad8063b7aea13bc4b04b4c087ebef59071914228b0223b9c1aea5a394792",
+      "bytes": 315164
+    }
+  },
+  "/assets/images/hm-tt-c2c39377e25f/akademik-fok-v-elabuge-09-26-06.png": {
+    "sha256": "ac5a12a65f53f3206fd6617b7cc81b70dff5a5531983f55788e62472f6447a41",
+    "width": 990,
+    "height": 730,
+    "bytes": 1584036,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-c2c39377e25f/akademik-fok-v-elabuge-09-26-06.png-960.webp",
+        "width": 960,
+        "height": 708,
+        "sha256": "0e31526ddc1d859bbd0f9b15d50c5768796faaa72fe76284c41b0b1ab8048dd7",
+        "bytes": 893998
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-c2c39377e25f-akademik-fok-v-elabuge-09-26-06-ac5a12a65f53f3206fd6617b7cc81b70dff5a5531983f55788e62472f6447a41.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561613",
+      "asset_id": 630561613,
+      "release_tag": "article-originals-a",
+      "sha256": "ac5a12a65f53f3206fd6617b7cc81b70dff5a5531983f55788e62472f6447a41",
+      "bytes": 1584036
+    }
+  },
+  "/assets/images/hm-tt-c2c39377e25f/akademik-fok-v-elabuge-09-26-07.png": {
+    "sha256": "108fedf010884045d7951137376fff3762703950ed7bcd603a563e7e92694aa9",
+    "width": 990,
+    "height": 762,
+    "bytes": 1679348,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-c2c39377e25f/akademik-fok-v-elabuge-09-26-07.png-960.webp",
+        "width": 960,
+        "height": 739,
+        "sha256": "398b9849e62c24fb3ad930f1a08f6b63fa9b00492a7f8033f1d23900198a4e0e",
+        "bytes": 684870
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-c2c39377e25f-akademik-fok-v-elabuge-09-26-07-108fedf010884045d7951137376fff3762703950ed7bcd603a563e7e92694aa9.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561750",
+      "asset_id": 630561750,
+      "release_tag": "article-originals-1",
+      "sha256": "108fedf010884045d7951137376fff3762703950ed7bcd603a563e7e92694aa9",
+      "bytes": 1679348
+    }
+  },
+  "/assets/images/hm-tt-c2c39377e25f/akademik-fok-v-elabuge-09-26-08.png": {
+    "sha256": "87df5fb59c4488c11f9d7746903a24617c9fd1ad390221d0ac0c3dda3dabbdfa",
+    "width": 1500,
+    "height": 2070,
+    "bytes": 9024955,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-c2c39377e25f/akademik-fok-v-elabuge-09-26-08.png-960.webp",
+        "width": 960,
+        "height": 1325,
+        "sha256": "c9c0dc03979e35a39d0f1e5c72b10f310a2edfaf4b3be2da3ea502fb609b9816",
+        "bytes": 2347394
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-c2c39377e25f-akademik-fok-v-elabuge-09-26-08-87df5fb59c4488c11f9d7746903a24617c9fd1ad390221d0ac0c3dda3dabbdfa.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561878",
+      "asset_id": 630561878,
+      "release_tag": "article-originals-8",
+      "sha256": "87df5fb59c4488c11f9d7746903a24617c9fd1ad390221d0ac0c3dda3dabbdfa",
+      "bytes": 9024955
+    }
+  }
+}
