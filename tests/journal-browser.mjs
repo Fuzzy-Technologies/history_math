@@ -5,6 +5,7 @@ import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
 import {journalGroups, newestFirst, seriesKey, rubricArticles, articleCandidates, search} from '../site/assets/core.js';
 import {publishedArticles} from './published-articles.mjs';
+import {hasStrayHeadingPeriod} from './journal-heading.mjs';
 
 async function serve(directory) {
   const root = resolve(directory);
@@ -201,8 +202,7 @@ try {
         ['/', '/materials/', '/showcase/', '/search/'].map(path => '/history_math' + prefix + path));
       assert.equal(await page.locator('#latest-cards .translation-label').count(), 0);
       for (const heading of await page.locator('h1, h2, h3').allTextContents()) {
-        // An author's closing ellipsis is valid title punctuation.
-        assert.doesNotMatch(heading.trim().replace(/(?:\.{3}|…)$/, ''), /\.$/);
+        assert.equal(hasStrayHeadingPeriod(heading, index), false, heading);
       }
       assert.doesNotMatch(await page.locator('.about-teaser').innerText(), /международного математического|international mathematics/);
       await audit(page);
