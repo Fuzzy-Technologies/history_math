@@ -1,0 +1,227 @@
+{
+  "/assets/images/hm-tt-d575e9adf0c1/gottingen-math-school-01.png": {
+    "sha256": "3f5855aa1dc803ea8d0344b96829cba64d00f72ee56ca48b912c9ac54f54fb3a",
+    "width": 1000,
+    "height": 675,
+    "bytes": 1781528,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d575e9adf0c1/gottingen-math-school-01.png-960.webp",
+        "width": 960,
+        "height": 648,
+        "sha256": "207d7cdd271a6736ad993f8984751dfc552aa55bbb5dd688c949a39ab78edf9d",
+        "bytes": 884156
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-d575e9adf0c1-gottingen-math-school-01-3f5855aa1dc803ea8d0344b96829cba64d00f72ee56ca48b912c9ac54f54fb3a.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630492646",
+      "asset_id": 630492646,
+      "release_tag": "article-originals-3",
+      "sha256": "3f5855aa1dc803ea8d0344b96829cba64d00f72ee56ca48b912c9ac54f54fb3a",
+      "bytes": 1781528
+    }
+  },
+  "/assets/images/hm-tt-d575e9adf0c1/gottingen-math-school-02.webp": {
+    "sha256": "221ec4176c2a1acaec449710beb38646b0fab7e253901f50390fd9bbee77c988",
+    "width": 1600,
+    "height": 1033,
+    "bytes": 1697494,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d575e9adf0c1/gottingen-math-school-02.webp-960.webp",
+        "width": 960,
+        "height": 620,
+        "sha256": "3c8a3e66e5d9632b3890dee1c42a2cf4ab8197f07140d1bc2179cdad384bd167",
+        "bytes": 684816
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-d575e9adf0c1-gottingen-math-school-02-221ec4176c2a1acaec449710beb38646b0fab7e253901f50390fd9bbee77c988.webp",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630529912",
+      "asset_id": 630529912,
+      "release_tag": "article-originals-2",
+      "sha256": "221ec4176c2a1acaec449710beb38646b0fab7e253901f50390fd9bbee77c988",
+      "bytes": 1697494
+    }
+  },
+  "/assets/images/hm-tt-d575e9adf0c1/gottingen-math-school-03.jpeg": {
+    "sha256": "67da6c5f29a8bc2232a2273a3811ac7dea1727039b6c101ddd7d2ccc8969abbe",
+    "width": 850,
+    "height": 1166,
+    "bytes": 259263,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d575e9adf0c1/gottingen-math-school-03-850.jpeg",
+        "width": 850,
+        "height": 1166,
+        "bytes": 259263,
+        "sha256": "67da6c5f29a8bc2232a2273a3811ac7dea1727039b6c101ddd7d2ccc8969abbe"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-d575e9adf0c1-gottingen-math-school-03-67da6c5f29a8bc2232a2273a3811ac7dea1727039b6c101ddd7d2ccc8969abbe.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630530115",
+      "asset_id": 630530115,
+      "release_tag": "article-originals-6",
+      "sha256": "67da6c5f29a8bc2232a2273a3811ac7dea1727039b6c101ddd7d2ccc8969abbe",
+      "bytes": 259263
+    }
+  },
+  "/assets/images/hm-tt-d575e9adf0c1/gottingen-math-school-04.jpeg": {
+    "sha256": "72ab20cdde58a79305dfba222300fb13da81366ea63029905300e9c1c9942fd9",
+    "width": 493,
+    "height": 545,
+    "bytes": 54635,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d575e9adf0c1/gottingen-math-school-04-493.jpeg",
+        "width": 493,
+        "height": 545,
+        "bytes": 54635,
+        "sha256": "72ab20cdde58a79305dfba222300fb13da81366ea63029905300e9c1c9942fd9"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-d575e9adf0c1-gottingen-math-school-04-72ab20cdde58a79305dfba222300fb13da81366ea63029905300e9c1c9942fd9.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630530263",
+      "asset_id": 630530263,
+      "release_tag": "article-originals-7",
+      "sha256": "72ab20cdde58a79305dfba222300fb13da81366ea63029905300e9c1c9942fd9",
+      "bytes": 54635
+    }
+  },
+  "/assets/images/hm-tt-d575e9adf0c1/gottingen-math-school-05.jpeg": {
+    "sha256": "8ff7f8b8ff1e7f2ff9744df93249427027e4dca430ccf776bba9c6c38d1074c7",
+    "width": 581,
+    "height": 718,
+    "bytes": 74207,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d575e9adf0c1/gottingen-math-school-05-581.jpeg",
+        "width": 581,
+        "height": 718,
+        "bytes": 74207,
+        "sha256": "8ff7f8b8ff1e7f2ff9744df93249427027e4dca430ccf776bba9c6c38d1074c7"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-d575e9adf0c1-gottingen-math-school-05-8ff7f8b8ff1e7f2ff9744df93249427027e4dca430ccf776bba9c6c38d1074c7.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630530441",
+      "asset_id": 630530441,
+      "release_tag": "article-originals-8",
+      "sha256": "8ff7f8b8ff1e7f2ff9744df93249427027e4dca430ccf776bba9c6c38d1074c7",
+      "bytes": 74207
+    }
+  },
+  "/assets/images/hm-tt-d575e9adf0c1/gottingen-math-school-06.jpeg": {
+    "sha256": "44b2fe83c9d4b73648ffc9d6422db6c5f9cc4703aa02bdc8e604461f555f528b",
+    "width": 480,
+    "height": 640,
+    "bytes": 52083,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d575e9adf0c1/gottingen-math-school-06-480.jpeg",
+        "width": 480,
+        "height": 640,
+        "bytes": 52083,
+        "sha256": "44b2fe83c9d4b73648ffc9d6422db6c5f9cc4703aa02bdc8e604461f555f528b"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-d575e9adf0c1-gottingen-math-school-06-44b2fe83c9d4b73648ffc9d6422db6c5f9cc4703aa02bdc8e604461f555f528b.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630530622",
+      "asset_id": 630530622,
+      "release_tag": "article-originals-4",
+      "sha256": "44b2fe83c9d4b73648ffc9d6422db6c5f9cc4703aa02bdc8e604461f555f528b",
+      "bytes": 52083
+    }
+  },
+  "/assets/images/hm-tt-d575e9adf0c1/gottingen-math-school-07.jpeg": {
+    "sha256": "364165c8fa128a49c98aff1d2ded6049b18a2cc0b3cdfa86bb623521cfd38e66",
+    "width": 785,
+    "height": 1200,
+    "bytes": 144684,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d575e9adf0c1/gottingen-math-school-07-785.jpeg",
+        "width": 785,
+        "height": 1200,
+        "bytes": 144684,
+        "sha256": "364165c8fa128a49c98aff1d2ded6049b18a2cc0b3cdfa86bb623521cfd38e66"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-d575e9adf0c1-gottingen-math-school-07-364165c8fa128a49c98aff1d2ded6049b18a2cc0b3cdfa86bb623521cfd38e66.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630530868",
+      "asset_id": 630530868,
+      "release_tag": "article-originals-3",
+      "sha256": "364165c8fa128a49c98aff1d2ded6049b18a2cc0b3cdfa86bb623521cfd38e66",
+      "bytes": 144684
+    }
+  },
+  "/assets/images/hm-tt-d575e9adf0c1/gottingen-math-school-08.jpeg": {
+    "sha256": "830efd5349dd1475e4471984de2664758918f0720cd6b475cda8a2605f5acfc8",
+    "width": 818,
+    "height": 1162,
+    "bytes": 143308,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d575e9adf0c1/gottingen-math-school-08-818.jpeg",
+        "width": 818,
+        "height": 1162,
+        "bytes": 143308,
+        "sha256": "830efd5349dd1475e4471984de2664758918f0720cd6b475cda8a2605f5acfc8"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-d575e9adf0c1-gottingen-math-school-08-830efd5349dd1475e4471984de2664758918f0720cd6b475cda8a2605f5acfc8.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630531095",
+      "asset_id": 630531095,
+      "release_tag": "article-originals-8",
+      "sha256": "830efd5349dd1475e4471984de2664758918f0720cd6b475cda8a2605f5acfc8",
+      "bytes": 143308
+    }
+  },
+  "/assets/images/hm-tt-d575e9adf0c1/gottingen-math-school-09.png": {
+    "sha256": "65e846ef8f9e16140ca13a0b06047c96edf9ed866694dc1a60ac59abd5bedffe",
+    "width": 780,
+    "height": 1079,
+    "bytes": 1445216,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-d575e9adf0c1/gottingen-math-school-09.png-780.webp",
+        "width": 780,
+        "height": 1079,
+        "sha256": "eb408a15e90bbd7bd309b439b43ed873ec3bb82ce6b5846ddd490420b4ef8a3b",
+        "bytes": 893242
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-d575e9adf0c1-gottingen-math-school-09-65e846ef8f9e16140ca13a0b06047c96edf9ed866694dc1a60ac59abd5bedffe.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630531276",
+      "asset_id": 630531276,
+      "release_tag": "article-originals-6",
+      "sha256": "65e846ef8f9e16140ca13a0b06047c96edf9ed866694dc1a60ac59abd5bedffe",
+      "bytes": 1445216
+    }
+  }
+}
