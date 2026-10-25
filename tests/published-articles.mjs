@@ -3,6 +3,13 @@ import {resolve} from 'node:path';
 import {parseArticle} from '../scripts/article-frontmatter.mjs';
 import {articleUrl} from '../scripts/article-url.mjs';
 
+// Article-specific checks must not match fragments of another article's hash.
+export function matchesArticleUrl(url, workId, language, basePath = '/history_math') {
+  const prefix = language === 'ru' ? '/ru' : '';
+  const route = articleUrl(`${prefix}/articles/${workId}/`, language);
+  return new URL(url, 'https://journal.invalid').pathname === basePath + route;
+}
+
 // Read expected publication identities from source, independently of rendered indexes.
 export function publishedArticles() {
   const directory = resolve('site/_articles');
