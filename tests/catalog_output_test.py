@@ -30,7 +30,7 @@ class CatalogOutputTest(unittest.TestCase):
             if mutation == "duplicate" and number == 2:
                 entries = [records[0]]
             cards = ''.join(f'<article><h3><a href="{entry["url"]}">Title</a></h3></article>' for entry in entries)
-            page("/materials/" if number == 1 else "/materials/page/2/", '<section class="catalog-list">' + cards + '</section>')
+            page("/publications/" if number == 1 else "/publications/page/2/", '<section class="catalog-list">' + cards + '</section>')
         discovery = [dict(record) for record in records]
         search = [{**record, "text": "Article body"} for record in records]
         if mutation == "missing-index":

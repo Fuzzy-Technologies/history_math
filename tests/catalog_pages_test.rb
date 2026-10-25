@@ -3,6 +3,7 @@
 require "minitest/autorun"
 require "jekyll"
 require "tmpdir"
+require "yaml"
 require_relative "../site/_plugins/catalog_pages"
 
 class CatalogPagesTest < Minitest::Test
@@ -12,12 +13,15 @@ class CatalogPagesTest < Minitest::Test
       article = Struct.new(:url, :data)
       site.data["discovery_documents"] = {}
       %w[en ru].each do |language|
-        base = language == "ru" ? "/ru/materials/" : "/materials/"
+        base = language == "ru" ? "/ru/publications/" : "/publications/"
+        source = File.read(File.expand_path("../site/#{language == 'ru' ? 'ru/' : ''}publications.html", __dir__))
+        metadata = YAML.safe_load(source.match(/\A---\n(.*?)\n---\n/m)[1])
+        assert_equal base, metadata.fetch("permalink")
         entries = Array.new(190) { |index| article.new("/#{language}/article-#{index}/", {"tags" => ["History_of_mathematics"]}) }
         site.data["discovery_documents"][language] = entries
         page = Jekyll::PageWithoutAFile.new(site, site.source, base.delete_prefix("/"), "index.html")
         page.content = "{% include journal-catalog.html %}"
-        page.data.merge!("translation_key" => "catalog", "lang" => language, "permalink" => base, "layout" => "page", "status" => "published")
+        page.data.merge!(metadata)
         site.pages << page
       end
       HistoryMath::CatalogPages.new.generate(site)
@@ -28,7 +32,7 @@ class CatalogPagesTest < Minitest::Test
         assert_equal "catalog-page-10", pages.last.data["translation_key"]
         assert_equal ["History of Mathematics"], pages.last.data["catalog_tags"]
         assert_equal "{% include journal-catalog.html %}", pages.last.content
-        assert_equal (language == "ru" ? "/ru/materials/page/10/" : "/materials/page/10/"), pages.last.url
+        assert_equal (language == "ru" ? "/ru/publications/page/10/" : "/publications/page/10/"), pages.last.url
       end
     end
   end
@@ -36,7 +40,7 @@ class CatalogPagesTest < Minitest::Test
   def test_static_pages_preserve_every_article_exactly_once_in_order
     [0, 1, 20, 21, 190, 1000].each do |count|
       articles = Array.new(count) { |index| "/article-#{index}/" }
-      %w[/materials/ /ru/materials/].each do |base|
+      %w[/publications/ /ru/publications/].each do |base|
         first = HistoryMath::CatalogPagination.data(articles, base, 1)
         pages = (1..first.fetch("catalog_page_count")).map { |page| HistoryMath::CatalogPagination.data(articles, base, page) }
         assert_equal articles, pages.flat_map { |page| page.fetch("catalog_articles") }

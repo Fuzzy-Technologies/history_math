@@ -18,13 +18,13 @@ export async function runCarouselChecks({browser, origin, evidence, axe, report,
   async function copyChecks(page) {
     await page.waitForLoadState('networkidle');
     const navigation = page.getByRole('navigation', {name: 'Основная навигация', exact: true});
-    assert.deepEqual(await navigation.locator('a').allTextContents(), ['Главная', 'Читальный зал', 'Витрина', 'Поиск']);
-    await navigation.getByRole('link', {name: 'Читальный зал', exact: true}).click();
-    await page.waitForURL('**/ru/materials/');
+    assert.deepEqual(await navigation.locator('a').allTextContents(), ['Главная', 'Публикации', 'Витрина', 'Поиск']);
+    await navigation.getByRole('link', {name: 'Публикации', exact: true}).click();
+    await page.waitForURL('**/ru/publications/');
     await page.waitForLoadState('networkidle');
-    assert.equal(await page.locator('h1').innerText(), 'Материалы');
+    assert.equal(await page.locator('h1').innerText(), 'Публикации');
     assert.equal((await page.locator('.page-heading .eyebrow').textContent()).trim(), 'По темам');
-    assert.equal(await navigation.getByRole('link', {name: 'Читальный зал', exact: true}).getAttribute('aria-current'), 'page');
+    assert.equal(await navigation.getByRole('link', {name: 'Публикации', exact: true}).getAttribute('aria-current'), 'page');
     await navigation.getByRole('link', {name: 'Витрина', exact: true}).click();
     await page.waitForURL('**/ru/showcase/');
     await page.waitForLoadState('networkidle');

@@ -21,6 +21,8 @@ The generator groups only emitted pages/documents by translation_key and rejects
 
 UI labels and the homepage, reading room and search markup are shared between editions. Discovery indexes contain approved local articles and explicitly marked English summary notices. Notice searches cover their English title and summary only; they do not claim an English full text. A real translation replaces its notice at the same URL. Further locales require deliberate updates to the publication contract, layouts, index generator and tests.
 
+The catalog routes are `/publications/` and `/ru/publications/`, with numbered pages under `page/N/`. The Russian section title and navigation use «Публикации»; the English title remains “Reading room”. Shared discovery, search, article-return and error links use these routes with the deployment base path. The paired pages retain the `catalog` translation key, so language links and canonical/hreflang metadata follow the new URLs. Article permalinks are independent of the catalog routes.
+
 For a later custom domain, change `_config.yml` `url` and set `baseurl: ''`. Continue storing local content/media paths without the project base prefix. CI also verifies a root-path build; no bulk link rewrite is needed.
 
 ## Error pages

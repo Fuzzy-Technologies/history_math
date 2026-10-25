@@ -48,7 +48,7 @@ try {
       else assert.doesNotMatch(text, /Page not found|Reading room|Back to home|Mathematics|Illustration|Main navigation/);
       const prefix = lang === 'ru' ? '/ru' : '';
       assert.equal(await page.locator('.not-found .button').getAttribute('href'), base + prefix + '/');
-      assert.equal(await page.locator('.not-found p a').first().getAttribute('href'), base + prefix + '/materials/');
+      assert.equal(await page.locator('.not-found p a').first().getAttribute('href'), base + prefix + '/publications/');
       assert.equal(await page.locator('.language-nav a').getAttribute('href'), base + (lang === 'ru' ? '/404.html' : '/ru/404.html'));
       assert.equal(await page.locator('meta[name="robots"]').getAttribute('content'), 'noindex, nofollow');
       assert.match(await page.locator('.brand img').getAttribute('data-original'), lang === 'ru' ? /logo-ru\.png$/ : /logo\.png$/);
@@ -73,7 +73,7 @@ try {
     page.on('pageerror', error => errors.push(error.message));
     await page.route('**/assets/{discovery,search}-*.json*', route => route.fulfill({status: 503, body: 'Unavailable'}));
     await page.goto(origin + base + prefix + '/search/?q=geometry');
-    const searchError = lang === 'ru' ? 'Поиск временно недоступен. Откройте читальный зал.' : 'Search is temporarily unavailable. Open the reading room.';
+    const searchError = lang === 'ru' ? 'Поиск временно недоступен. Откройте раздел публикаций.' : 'Search is temporarily unavailable. Open the reading room.';
     await page.waitForFunction(value => document.querySelector('#search-status')?.textContent === value, searchError);
     await page.goto(origin + base + prefix + '/');
     const archiveError = lang === 'ru' ? 'Показана исходная подборка.' : 'Showing the original selection.';

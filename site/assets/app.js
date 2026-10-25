@@ -642,10 +642,10 @@ if (form) {
       const searchable = records.filter(record => !record.translation_notice);
       const matches = activeTag ? searchByTag(searchable, activeTag, language) : search(searchable, query, language);
       results.replaceChildren(...matches.map(record => card(record, 'search-result')));
-      status.textContent = matches.length ? (ru ? `Найдено материалов: ${matches.length}` : `Articles found: ${matches.length}`) : (ru ? 'Ничего не найдено. Попробуйте другое слово или тему.' : 'No matches. Try another word or topic.');
+      status.textContent = matches.length ? (ru ? `Найдено публикаций: ${matches.length}` : `Articles found: ${matches.length}`) : (ru ? 'Ничего не найдено. Попробуйте другое слово или тему.' : 'No matches. Try another word or topic.');
     } catch {
       if (request !== requestNumber) return;
-      status.textContent = ru ? 'Поиск временно недоступен. Откройте читальный зал.' : 'Search is temporarily unavailable. Open the reading room.';
+      status.textContent = ru ? 'Поиск временно недоступен. Откройте раздел публикаций.' : 'Search is temporarily unavailable. Open the reading room.';
     }
   }
   let timer;
@@ -713,7 +713,7 @@ if (controls) {
       tag.value = state.tag;
       pageSize.value = String(result.perPage);
       list.replaceChildren(...result.items.map(readingCard));
-      document.querySelector('#catalog-count').textContent = ru ? `Материалов: ${result.total}` : `Articles: ${result.total}`;
+      document.querySelector('#catalog-count').textContent = ru ? `Публикаций: ${result.total}` : `Articles: ${result.total}`;
       document.querySelector('#catalog-empty').hidden = result.total !== 0;
       document.querySelector('#catalog-range').textContent = ru ? `Показано ${result.start}–${result.end} из ${result.total}` : `Showing ${result.start}–${result.end} of ${result.total}`;
       pagination.hidden = result.pageCount <= 1;

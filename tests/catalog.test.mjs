@@ -64,7 +64,7 @@ test('numbered navigation remains bounded and keeps edges/current neighbours for
 });
 
 test('catalog URLs round-trip Unicode filters, preserve unrelated state and omit defaults', () => {
-  const current = new URL('https://example.invalid/history_math/ru/materials/?from=menu#catalog');
+  const current = new URL('https://example.invalid/history_math/ru/publications/?from=menu#catalog');
   const state = {type: 'instrument', tag: 'счёт', perPage: 20, page: 4};
   const url = catalogUrl(current, state);
   assert.equal(url.origin, current.origin);
@@ -85,7 +85,7 @@ test('legacy topic variants resolve to one canonical catalog option and retain a
   for (const tag of ['history_of_mathematics', 'History of mathematics', 'HISTORY OF MATHEMATICS']) {
     const state = catalogState(new URLSearchParams({tag}), {tags});
     assert.equal(state.tag, 'History of Mathematics');
-    assert.equal(catalogUrl(new URL('https://example.invalid/materials/'), state).searchParams.get('tag'), 'History of Mathematics');
+    assert.equal(catalogUrl(new URL('https://example.invalid/publications/'), state).searchParams.get('tag'), 'History of Mathematics');
   }
   assert.equal(catalogState(new URLSearchParams({tag: 'History'}), {tags}).tag, '');
 });

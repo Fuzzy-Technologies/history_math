@@ -28,16 +28,20 @@ try {
   for (const lang of ['ru', 'en']) {
     const prefix = lang === 'ru' ? '/ru' : '';
     const records = JSON.parse(await readFile(resolve(root, `assets/discovery-${lang}.json`), 'utf8'));
+    const otherLanguage = lang === 'ru' ? 'en' : 'ru';
+    const otherRecords = JSON.parse(await readFile(resolve(root, `assets/discovery-${otherLanguage}.json`), 'utf8'));
     assert.ok(records.length > 20, 'Pagination checks need a populated fixture');
     const context = await browser.newContext({viewport: {width: 1440, height: 1000}, reducedMotion: 'reduce'});
     const page = await context.newPage();
     page.on('pageerror', error => errors.push(error.message));
     page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
-    const url = origin + base + prefix + '/materials/';
+    const url = origin + base + prefix + '/publications/';
     const visible = () => page.locator('.catalog-list h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
     const indexRequests = [];
     page.on('request', request => { if (/assets\/(?:discovery|search)-/.test(request.url())) indexRequests.push(request.url()); });
     await page.goto(url, {waitUntil: 'networkidle'});
+    assert.equal(await page.locator('h1').innerText(), lang === 'ru' ? 'Публикации' : 'Reading room');
+    assert.equal(await page.locator('.catalog-list').getAttribute('aria-label'), lang === 'ru' ? 'Публикации журнала' : 'Journal articles');
     assert.ok(indexRequests.some(url => url.includes('/discovery-')));
     assert.ok(indexRequests.every(url => !url.includes('/search-')));
     assert.equal(await page.getByRole('combobox').count(), 3);
@@ -100,6 +104,17 @@ try {
     const allStatic = [];
     for (let number = 1; number <= Math.ceil(records.length / 20); number++) {
       await noJs.goto(number === 1 ? url : url + `page/${number}/`, {waitUntil: 'networkidle'});
+      const suffix = number === 1 ? '' : `page/${number}/`;
+      const path = `${base}${prefix}/publications/${suffix}`;
+      assert.equal(new URL(await noJs.locator('link[rel=canonical]').getAttribute('href')).pathname, path);
+      assert.equal(new URL(await noJs.locator('meta[property="og:url"]').getAttribute('content')).pathname, path);
+      assert.equal(await noJs.locator('.navigation-bar nav').first().locator('a[aria-current=page]').getAttribute('href'), `${base}${prefix}/publications/`);
+      assert.equal(await noJs.locator('a[href*="/materials/"]').count(), 0);
+      if (number <= Math.ceil(otherRecords.length / 20)) {
+        const counterpart = `${base}${otherLanguage === 'ru' ? '/ru' : ''}/publications/${suffix}`;
+        assert.equal(new URL(await noJs.locator(`link[rel=alternate][hreflang=${otherLanguage}]`).getAttribute('href')).pathname, counterpart);
+        assert.equal(await noJs.locator(`.language-nav a[lang=${otherLanguage}]`).getAttribute('href'), counterpart);
+      }
       const links = await noJs.locator('.catalog-list h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
       assert.ok(links.length <= 20);
       allStatic.push(...links);
@@ -120,7 +135,7 @@ try {
     await offline.close();
   }
   assert.deepEqual(errors, []);
-  console.log('PASS: bilingual compact five-column catalog, default/page-size pagination, URL reload/back/clamping, filters, responsive menus and complete no-JS fallback');
+  console.log('PASS: bilingual publications routes, canonical/hreflang/language navigation, compact catalog, URL state, filters and complete no-JS pagination');
 } finally {
   await browser.close();
   await new Promise(done => server.close(done));

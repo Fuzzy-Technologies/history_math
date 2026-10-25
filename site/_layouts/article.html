@@ -5,7 +5,7 @@ layout: default
   <!-- pdf:heading:start -->
   {% include article-print-heading.html %}
   <header class="article-heading">
-    <a class="back-link" href="{% if page.lang == 'ru' %}{{ '/ru/materials/' | relative_url }}{% else %}{{ '/materials/' | relative_url }}{% endif %}">← {% if page.lang == 'ru' %}К материалам{% else %}Back to reading room{% endif %}</a>
+    <a class="back-link" href="{% if page.lang == 'ru' %}{{ '/ru/publications/' | relative_url }}{% else %}{{ '/publications/' | relative_url }}{% endif %}">← {% if page.lang == 'ru' %}К публикациям{% else %}Back to reading room{% endif %}</a>
     <p class="eyebrow">{% include type.html type=page.type %}{% if page.status == 'demo' %} · {% if page.lang == 'ru' %}Демоматериал{% else %}Demo material{% endif %}{% endif %}</p>
     <h1 tabindex="-1">{{ page.title }}</h1><p class="lead">{{ page.description }}</p>
     <div class="article-meta-row"><p class="article-meta">{{ page.author }}{% if page.status != 'draft' %} <span>·</span> <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d.%m.%Y' }}</time>{% endif %} <span>·</span> {{ page.lang | upcase }}</p>
@@ -34,7 +34,7 @@ layout: default
     <!-- pdf:body:end -->
   </div>
   </div>
-  <footer class="article-end"><p>{% if page.lang == 'ru' %}Темы{% else %}Topics{% endif %}: {% assign article_tags = page.tags | topic_labels %}{% for tag in article_tags %}{% include tag.html tag=tag %}{% endfor %}</p><a href="{% if page.lang == 'ru' %}{{ '/ru/materials/' | relative_url }}{% else %}{{ '/materials/' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Продолжить чтение →{% else %}Keep reading →{% endif %}</a></footer>
+  <footer class="article-end"><p>{% if page.lang == 'ru' %}Темы{% else %}Topics{% endif %}: {% assign article_tags = page.tags | topic_labels %}{% for tag in article_tags %}{% include tag.html tag=tag %}{% endfor %}</p><a href="{% if page.lang == 'ru' %}{{ '/ru/publications/' | relative_url }}{% else %}{{ '/publications/' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Продолжить чтение →{% else %}Keep reading →{% endif %}</a></footer>
   {% assign reading = site.articles | where: 'lang', page.lang | sort: 'date' | reverse %}
   {% for item in reading %}{% if item.url == page.url %}{% assign current_index = forloop.index0 %}{% assign following_index = current_index | plus: 1 %}{% assign preceding_index = current_index | minus: 1 %}{% endif %}{% endfor %}
   <nav class="reading-navigation" aria-label="{% if page.lang == 'ru' %}Листать статьи{% else %}Browse articles{% endif %}">

@@ -8,7 +8,7 @@ Edited by Mansur Gilmullin, the journal brings together historical essays, mathe
 
 [Read the journal →](https://fuzzy-technologies.github.io/history_math/)
 
-- [Reading Room](https://fuzzy-technologies.github.io/history_math/materials/) — browse articles, problems and notes by topic.
+- [Reading Room](https://fuzzy-technologies.github.io/history_math/publications/) — browse articles, problems and notes by topic.
 - [Showcase](https://fuzzy-technologies.github.io/history_math/showcase/) — discover books and other publications.
 - [Search](https://fuzzy-technologies.github.io/history_math/search/) — find articles by title, topic or words from the text.
 - [About the Journal](https://fuzzy-technologies.github.io/history_math/about/) — meet the editor and learn about the journal.

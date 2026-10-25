@@ -197,9 +197,9 @@ try {
       assert.equal(await page.locator('#archive-cards .selection-empty').count(), groups.archive.length ? 0 : 1);
       const navigation = page.locator('.navigation-bar > nav');
       assert.deepEqual(await navigation.locator('a').allTextContents(), language === 'ru' ?
-        ['Главная', 'Читальный зал', 'Витрина', 'Поиск'] : ['Home', 'Reading room', 'Showcase', 'Search']);
+        ['Главная', 'Публикации', 'Витрина', 'Поиск'] : ['Home', 'Reading room', 'Showcase', 'Search']);
       assert.deepEqual(await navigation.locator('a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))),
-        ['/', '/materials/', '/showcase/', '/search/'].map(path => '/history_math' + prefix + path));
+        ['/', '/publications/', '/showcase/', '/search/'].map(path => '/history_math' + prefix + path));
       assert.equal(await page.locator('#latest-cards .translation-label').count(), 0);
       for (const heading of await page.locator('h1, h2, h3').allTextContents()) {
         assert.equal(hasStrayHeadingPeriod(heading, index), false, heading);
@@ -207,11 +207,11 @@ try {
       assert.doesNotMatch(await page.locator('.about-teaser').innerText(), /международного математического|international mathematics/);
       await audit(page);
       await page.screenshot({path: `test-results/journal-polish/home-${language}-${width}-${theme}.png`, fullPage: true});
-      await page.goto(production.base + prefix + '/materials/', {waitUntil: 'networkidle'});
+      await page.goto(production.base + prefix + '/publications/', {waitUntil: 'networkidle'});
       assert.equal(await page.locator('.catalog-list .material-card').count(), Math.min(20, index.length));
       assert.equal(await page.locator('link[hreflang]').count(), 2);
       assert.equal((await page.locator('#catalog-count').innerText()).trim(),
-        `${language === 'ru' ? 'Материалов' : 'Articles'}: ${index.length}`);
+        `${language === 'ru' ? 'Публикаций' : 'Articles'}: ${index.length}`);
       await audit(page);
       await page.goto(production.base + prefix + '/search/', {waitUntil: 'networkidle'});
       assert.equal(await page.locator('link[hreflang]').count(), 2);
@@ -223,7 +223,7 @@ try {
       await page.waitForFunction(count => document.querySelectorAll('#search-results h3 a').length === count, matches.length);
       assert.equal(await page.locator('#search-results .translation-label').count(), 0);
       assert.equal((await page.locator('#search-status').innerText()).trim(),
-        `${language === 'ru' ? 'Найдено материалов' : 'Articles found'}: ${matches.length}`);
+        `${language === 'ru' ? 'Найдено публикаций' : 'Articles found'}: ${matches.length}`);
       await audit(page);
     }
     for (const record of records) {
@@ -266,7 +266,7 @@ try {
   for (const [language, index] of [['ru', records], ['en', englishRecords]]) {
     const page = await browser.newPage();
     await page.goto(production.base + index[0].url.replace('/history_math', ''), {waitUntil: 'networkidle'});
-    const target = '/history_math' + (language === 'ru' ? '/ru' : '') + '/materials/';
+    const target = '/history_math' + (language === 'ru' ? '/ru' : '') + '/publications/';
     assert.equal(await page.locator('.back-link').getAttribute('href'), target);
     assert.equal(await page.locator('.article-end > a').getAttribute('href'), target);
     await page.close();
@@ -369,7 +369,7 @@ try {
   const fixtureIndex = JSON.parse(await readFile('test-results/browser-fixture/assets/discovery-en.json', 'utf8'));
   const expectedTopic = fixtureIndex.filter(record => record.tags.includes('History of Mathematics'));
   assert.ok(expectedTopic.length > 1);
-  await legacy.goto(fixture.base + '/materials/?tag=history_of_mathematics', {waitUntil: 'networkidle'});
+  await legacy.goto(fixture.base + '/publications/?tag=history_of_mathematics', {waitUntil: 'networkidle'});
   assert.equal(await legacy.locator('#tag-filter').inputValue(), 'History of Mathematics');
   assert.equal(await legacy.locator('#tag-filter option').filter({hasText: /^History of Mathematics$/}).count(), 1);
   assert.equal(new URL(legacy.url()).searchParams.get('tag'), 'History of Mathematics');
