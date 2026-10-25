@@ -4,7 +4,7 @@ import {resolve, extname} from 'node:path';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
 import {journalGroups, newestFirst, seriesKey, rubricArticles, articleCandidates, search} from '../site/assets/core.js';
-import {publishedArticles} from './published-articles.mjs';
+import {publishedArticles, matchesArticleUrl} from './published-articles.mjs';
 import {hasStrayHeadingPeriod} from './journal-heading.mjs';
 
 async function serve(directory) {
@@ -243,13 +243,13 @@ try {
         const text = node.lastChild; const range = document.createRange(); range.selectNode(text);
         return range.getBoundingClientRect().left < node.firstChild.getBoundingClientRect().left;
       })), false);
-      if (record.url.includes('19a5')) {
+      if (matchesArticleUrl(record.url, 'hm-19a5d93e33c1', 'ru')) {
         assert.equal(await page.locator('.article-body table').count(), 1);
         assert.equal(await page.locator('#fig-2').count(), 0);
         assert.match(await page.locator('.article-body').innerText(), /13/);
       }
-      if (record.url.includes('5652')) assert.equal(await page.locator('#fig-1 figcaption').count(), 0);
-      if (record.url.includes('0b1')) assert.match(await page.locator('h1').innerText(), /1734\u20131812/);
+      if (matchesArticleUrl(record.url, 'hm-56520386b771', 'ru')) assert.equal(await page.locator('#fig-1 figcaption').count(), 0);
+      if (matchesArticleUrl(record.url, 'hm-0b1ea17c8b02', 'ru')) assert.match(await page.locator('h1').innerText(), /1734\u20131812/);
       await page.screenshot({path: `test-results/journal-polish/${record.url.split('/').at(-2)}-${width}-${theme}.png`, fullPage: true});
       await audit(page);
     }
