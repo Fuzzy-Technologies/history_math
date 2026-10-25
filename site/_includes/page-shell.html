@@ -7,12 +7,12 @@
     <nav aria-label="{% if ru %}Основная навигация{% else %}Main navigation{% endif %}">
       {% if ru %}
       <a href="{{ '/ru/' | relative_url }}" {% if page.translation_key == 'home' %}aria-current="page"{% endif %}>Главная</a>
-      <a href="{{ '/ru/materials/' | relative_url }}" {% if page.translation_key == 'catalog' or page.catalog_section %}aria-current="page"{% endif %}>Читальный зал</a>
+      <a href="{{ '/ru/publications/' | relative_url }}" {% if page.translation_key == 'catalog' or page.catalog_section %}aria-current="page"{% endif %}>Публикации</a>
       <a href="{{ '/ru/showcase/' | relative_url }}" {% if page.translation_key == 'showcase' %}aria-current="page"{% endif %}>Витрина</a>
       <a href="{{ '/ru/search/' | relative_url }}" {% if page.translation_key == 'search' %}aria-current="page"{% endif %}>Поиск</a>
       {% else %}
       <a href="{{ '/' | relative_url }}" {% if page.translation_key == 'home' %}aria-current="page"{% endif %}>Home</a>
-      <a href="{{ '/materials/' | relative_url }}" {% if page.translation_key == 'catalog' or page.catalog_section %}aria-current="page"{% endif %}>Reading room</a>
+      <a href="{{ '/publications/' | relative_url }}" {% if page.translation_key == 'catalog' or page.catalog_section %}aria-current="page"{% endif %}>Reading room</a>
       <a href="{{ '/showcase/' | relative_url }}" {% if page.translation_key == 'showcase' %}aria-current="page"{% endif %}>Showcase</a>
       <a href="{{ '/search/' | relative_url }}" {% if page.translation_key == 'search' %}aria-current="page"{% endif %}>Search</a>
       {% endif %}

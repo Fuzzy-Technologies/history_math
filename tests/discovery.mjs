@@ -17,7 +17,7 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
     contentType: 'text/javascript',
     body: 'export const normalize = value => value; export const search = () => []; export const selection = () => []; export const anniversaries = () => [];'
   }));
-  await upgradePage.goto(base + '/ru/materials/', {waitUntil: 'networkidle'});
+  await upgradePage.goto(base + '/ru/publications/', {waitUntil: 'networkidle'});
   assert.equal(await upgradePage.getByRole('combobox').count(), 3, 'A cached dependency disabled the new interface');
   assert.equal(await upgradePage.locator('.theme-toggle').isVisible(), true);
   const version = new URL(await upgradePage.locator('script[src*="/app.js"]').getAttribute('src'), base).search;
@@ -39,8 +39,8 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
     page.on('pageerror', error => report.consoleErrors.push(error.message));
     page.on('console', message => { if (message.type() === 'error') report.consoleErrors.push(message.text()); });
     page.on('requestfailed', request => recordRequestFailure(report, request));
-    await page.goto(base + '/ru/materials/', {waitUntil: 'networkidle'});
-    const type = page.getByRole('combobox', {name: /^Тип материала/});
+    await page.goto(base + '/ru/publications/', {waitUntil: 'networkidle'});
+    const type = page.getByRole('combobox', {name: /^Тип публикации/});
     const topic = page.getByRole('combobox', {name: /^Тема/});
     await type.click();
     await audit(page, `Open catalog menu ${width} ${theme}`);
@@ -74,7 +74,7 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
     await topic.press('Enter');
     assert.equal(await page.locator('#tag-filter').inputValue(), 'счёт');
     await topic.click();
-    await page.getByRole('heading', {name: 'Материалы', exact: true}).click();
+    await page.getByRole('heading', {name: 'Публикации', exact: true}).click();
     assert.equal(await topic.getAttribute('aria-expanded'), 'false');
     checked(`${width} ${theme}: styled filters combine correctly; keyboard, type-ahead, Escape, Tab and outside dismissal work`);
 
@@ -90,7 +90,7 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
     const cardTag = page.locator('#latest-cards [data-tag]').first();
     const tag = await cardTag.getAttribute('data-tag');
     await cardTag.click();
-    await page.locator('#search-status').filter({hasText: 'Найдено материалов:'}).waitFor();
+    await page.locator('#search-status').filter({hasText: 'Найдено публикаций:'}).waitFor();
     assert.equal(new URL(page.url()).searchParams.get('tag'), tag);
     const expected = records.filter(record => record.tags.includes(tag)).map(record => base + record.url.slice('/history_math'.length)).sort();
     assert.deepEqual(await page.locator('.search-result h3 a').evaluateAll(links => links.map(link => link.href).sort()), expected);
@@ -102,7 +102,7 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
     const relatedTag = page.locator('.search-result [data-tag]').first();
     const related = await relatedTag.getAttribute('data-tag');
     await relatedTag.click();
-    await page.locator('#search-status').filter({hasText: 'Найдено материалов:'}).waitFor();
+    await page.locator('#search-status').filter({hasText: 'Найдено публикаций:'}).waitFor();
     assert.equal(await page.locator('.search-result').count(), records.filter(record => record.tags.includes(related)).length);
     await page.locator('#search-topic button').click();
     assert.equal(await page.locator('#search-topic').isVisible(), false);
@@ -113,7 +113,7 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
     assert.equal(new URL(page.url()).searchParams.has('q'), false);
     await page.locator('#query').fill('радиусами');
     await page.locator('#search-form button').click();
-    await page.locator('#search-status').filter({hasText: 'Найдено материалов:'}).waitFor();
+    await page.locator('#search-status').filter({hasText: 'Найдено публикаций:'}).waitFor();
     assert.equal(await page.locator('.search-result').count(), 1);
     assert.equal(new URL(page.url()).searchParams.has('tag'), false);
     await page.goto(base + '/ru/search/?tag=unknown', {waitUntil: 'networkidle'});
@@ -134,7 +134,7 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
     await page.screenshot({path: `${evidence}/smaller-article-${theme}-${width}.jpg`});
     const geometryCount = records.filter(record => record.tags.includes('геометрия')).length;
     await page.locator('.article-end [data-tag="геометрия"]').click();
-    await page.locator('#search-status').filter({hasText: 'Найдено материалов:'}).waitFor();
+    await page.locator('#search-status').filter({hasText: 'Найдено публикаций:'}).waitFor();
     assert.equal(await page.locator('.search-result').count(), geometryCount);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
     await context.close();
@@ -142,7 +142,7 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
   }
   const context = await browser.newContext({viewport: {width: 320, height: 640}});
   const page = await context.newPage();
-  await page.goto(base + '/ru/materials/', {waitUntil: 'networkidle'});
+  await page.goto(base + '/ru/publications/', {waitUntil: 'networkidle'});
   const topic = page.getByRole('combobox', {name: /^Тема/});
   await topic.scrollIntoViewIfNeeded();
   await topic.click();

@@ -55,7 +55,7 @@ try {
     page.on('pageerror', error => report.consoleErrors.push(error.message));
     page.on('console', message => { if (message.type() === 'error') report.consoleErrors.push(message.text()); });
     page.on('requestfailed', request => recordRequestFailure(report, request));
-    const paths = ['/ru/', '/', '/ru/materials/', '/ru/search/', '/ru/about/', '/ru/showcase/', '/showcase/', '/ru/articles/demo-geometry/', '/ru/articles/demo-area/', '/ru/articles/demo-abacus/', '/ru/articles/demo-reading/', '/ru/articles/demo-notation/', '/404.html'];
+    const paths = ['/ru/', '/', '/ru/publications/', '/ru/search/', '/ru/about/', '/ru/showcase/', '/showcase/', '/ru/articles/demo-geometry/', '/ru/articles/demo-area/', '/ru/articles/demo-abacus/', '/ru/articles/demo-reading/', '/ru/articles/demo-notation/', '/404.html'];
     for (const path of paths) {
       const response = await page.goto(origin + '/history_math' + path);
       assert.equal(response.status(), 200);
@@ -137,7 +137,7 @@ try {
         for (const query of ['СЧЕТ', 'счёт', 'ЧЕРТЕЖ']) {
           await page.locator('#query').fill(query);
           await page.locator('#search-form button').click();
-          await page.locator('#search-status').filter({hasText: 'Найдено материалов:'}).waitFor();
+          await page.locator('#search-status').filter({hasText: 'Найдено публикаций:'}).waitFor();
           assert.ok(await page.locator('.search-result').count() > 0);
         }
         await page.locator('#query').fill('несуществующийзапрос');
@@ -150,14 +150,14 @@ try {
         await page.screenshot({path: `${evidence}/search-${viewport.name}.png`, fullPage: true});
         checked(`${viewport.name}: Cyrillic case and ё/е search, empty query and no-result state`);
       }
-      if (path === '/ru/materials/') {
-        await page.getByRole('combobox', {name: /^Тип материала/}).click();
+      if (path === '/ru/publications/') {
+        await page.getByRole('combobox', {name: /^Тип публикации/}).click();
         await page.getByRole('option', {name: 'Задачи', exact: true}).click();
         assert.equal(await page.locator('.catalog-list .material-card:visible').count(), Math.min(10, articleRecords.filter(article => article.type === 'problem').length));
         await page.getByRole('combobox', {name: /^Тема/}).click();
         await page.getByRole('option', {name: 'счёт', exact: true}).click();
         assert.ok(await page.locator('#catalog-empty').isVisible());
-        await page.getByRole('combobox', {name: /^Тип материала/}).click();
+        await page.getByRole('combobox', {name: /^Тип публикации/}).click();
         await page.getByRole('option', {name: 'Все типы', exact: true}).click();
         await page.getByRole('combobox', {name: /^Тема/}).click();
         await page.getByRole('option', {name: 'Все темы', exact: true}).click();
@@ -201,7 +201,7 @@ try {
   await page.goto(origin + '/history_math/ru/');
   assert.equal(await page.locator('.material-card').count(), 10);
   assert.equal(await page.locator('#archive-cards h3 a').count(), 4);
-  await page.goto(origin + '/history_math/ru/materials/');
+  await page.goto(origin + '/history_math/ru/publications/');
   assert.equal(await page.locator('.material-card:visible').count(), Math.min(20, articleRecords.length));
   checked('Without JavaScript: reading, catalog and initial archive remain available');
   await context.close();

@@ -22,9 +22,9 @@ export async function runReaderChecks({browser, origin, evidence, axe, report, c
     const page = await context.newPage();
     track(page);
     await page.goto(home, {waitUntil: 'networkidle'});
-    assert.deepEqual(await page.getByRole('navigation', {name: 'Основная навигация', exact: true}).locator('a').allTextContents(), ['Главная', 'Читальный зал', 'Витрина', 'Поиск']);
+    assert.deepEqual(await page.getByRole('navigation', {name: 'Основная навигация', exact: true}).locator('a').allTextContents(), ['Главная', 'Публикации', 'Витрина', 'Поиск']);
     assert.ok(await page.locator('.masthead-about').isVisible());
-    assert.equal((await page.locator('.latest-section .eyebrow').first().textContent()).trim(), 'Читальный зал');
+    assert.equal((await page.locator('.latest-section .eyebrow').first().textContent()).trim(), 'Публикации');
     const summarySize = await page.locator('.hero-copy .lead').evaluate(node => getComputedStyle(node).fontSize);
     assert.equal(summarySize, await page.locator('.card-copy > p:not(.eyebrow)').first().evaluate(node => getComputedStyle(node).fontSize));
     assert.equal(summarySize, '17px');
@@ -65,9 +65,9 @@ export async function runReaderChecks({browser, origin, evidence, axe, report, c
     await page.screenshot({path: `${evidence}/resumed-${start.name}.jpg`, fullPage: false});
     await page.getByRole('link', {name: 'Главная', exact: true}).click();
     await page.waitForLoadState('networkidle');
-    await page.getByRole('navigation', {name: 'Основная навигация', exact: true}).getByRole('link', {name: 'Читальный зал', exact: true}).click();
+    await page.getByRole('navigation', {name: 'Основная навигация', exact: true}).getByRole('link', {name: 'Публикации', exact: true}).click();
     await page.waitForLoadState('networkidle');
-    await page.goto(home + 'materials/?per_page=100', {waitUntil: 'networkidle'});
+    await page.goto(home + 'publications/?per_page=100', {waitUntil: 'networkidle'});
     await page.locator('.catalog-list h3 a[href="/history_math/ru/articles/demo-geometry/"]').click();
     await page.locator('.reading-resume').waitFor({state: 'visible'});
     const menuAlignment = await paragraph.evaluate((node, offset) => node.getBoundingClientRect().top + node.getBoundingClientRect().height * offset, saved.offset);

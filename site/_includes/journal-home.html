@@ -1,6 +1,6 @@
 {% assign ui = site.data.interface[page.lang] %}
 {% assign prefix = '' %}{% assign logo = '/assets/images/Math-with-Mansur-logo.png' %}{% if page.lang == 'ru' %}{% assign prefix = '/ru' %}{% assign logo = '/assets/images/Math-with-Mansur-logo-ru.png' %}{% endif %}
-{% assign materials = prefix | append: '/materials/' %}{% assign about = prefix | append: '/about/' %}
+{% assign materials = prefix | append: '/publications/' %}{% assign about = prefix | append: '/about/' %}
 <section class="journal-hero">
   <div class="cover-line"><span>{{ ui.history }}</span><span>{{ ui.journal }}</span></div>
   <div class="hero-copy"><h1><span class="hero-title-line">{{ ui.hero_start }}</span> <em class="hero-title-line">{{ ui.hero_end }}</em></h1><p class="lead">{{ ui.lead }}</p><a class="button" href="{{ materials | relative_url }}">{{ ui.read }} <span aria-hidden="true">→</span></a></div>
