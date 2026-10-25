@@ -886,6 +886,7 @@ select {
   transform: rotate(225deg);
 }
 .choice-list {
+  display: none;
   position: absolute;
   z-index: 20;
   top: calc(100% + 8px);
@@ -907,9 +908,16 @@ select {
   transition: opacity 160ms ease, transform 160ms ease, visibility 160ms;
 }
 .choice.is-open .choice-list {
+  display: block;
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+@starting-style {
+  .choice.is-open .choice-list {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
 }
 .choice.opens-up .choice-list {
   top: auto;
