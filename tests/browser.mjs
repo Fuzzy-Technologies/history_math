@@ -55,7 +55,7 @@ try {
     page.on('pageerror', error => report.consoleErrors.push(error.message));
     page.on('console', message => { if (message.type() === 'error') report.consoleErrors.push(message.text()); });
     page.on('requestfailed', request => recordRequestFailure(report, request));
-    const paths = ['/ru/', '/', '/ru/publications/', '/ru/search/', '/ru/about/', '/ru/showcase/', '/showcase/', '/ru/articles/demo-geometry/', '/ru/articles/demo-area/', '/ru/articles/demo-abacus/', '/ru/articles/demo-reading/', '/ru/articles/demo-notation/', '/404.html'];
+    const paths = ['/ru/', '/', '/ru/publications/', '/ru/search/', '/ru/about/', '/ru/showcase/', '/showcase/', '/ru/publications/demo-geometry/', '/ru/publications/demo-area/', '/ru/publications/demo-abacus/', '/ru/publications/demo-reading/', '/ru/publications/demo-notation/', '/404.html'];
     for (const path of paths) {
       const response = await page.goto(origin + '/history_math' + path);
       assert.equal(response.status(), 200);
@@ -65,7 +65,7 @@ try {
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), `Horizontal overflow on ${viewport.name} ${path}`);
       await page.locator('img').evaluateAll(images => images.forEach(image => { image.loading = 'eager'; }));
       await page.waitForFunction(() => [...document.images].every(image => image.complete && image.naturalWidth > 0));
-      assert.equal(await page.locator('script[src*=katex]').count(), ['/ru/articles/demo-geometry/', '/ru/articles/demo-area/', '/ru/articles/demo-notation/'].includes(path) ? 1 : 0);
+      assert.equal(await page.locator('script[src*=katex]').count(), ['/ru/publications/demo-geometry/', '/ru/publications/demo-area/', '/ru/publications/demo-notation/'].includes(path) ? 1 : 0);
       await page.addScriptTag({content: axe});
       const audit = await page.evaluate(async () => window.axe.run(document, {runOnly: {type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa']}}));
       report.accessibility.push({viewport: viewport.name, path, violations: audit.violations});
@@ -112,12 +112,12 @@ try {
         assert.match(await page.locator('h1').innerText(), /Let’s talk/);
         assert.equal(await page.locator('#latest-cards .material-card').count(), 10);
       }
-      if (path === '/ru/articles/demo-geometry/') {
+      if (path === '/ru/publications/demo-geometry/') {
         const toc = page.locator('.article-toc a');
         assert.equal(await toc.count(), await page.locator('.article-body h2').count());
         await toc.nth(1).click();
         assert.ok(await page.evaluate(() => Boolean(document.getElementById(decodeURIComponent(location.hash.slice(1))))));
-        assert.deepEqual(await page.locator('.reading-navigation a').evaluateAll(links => links.map(link => link.getAttribute('href'))), neighbors('/history_math/ru/articles/demo-geometry/'));
+        assert.deepEqual(await page.locator('.reading-navigation a').evaluateAll(links => links.map(link => link.getAttribute('href'))), neighbors('/history_math/ru/publications/demo-geometry/'));
         await page.locator('h1').scrollIntoViewIfNeeded();
         assert.ok(await page.locator('.math-source[data-rendered=true]').count() >= 6);
         assert.equal(await page.locator('.math-source:not([data-rendered=true])').count(), 0);
@@ -129,8 +129,8 @@ try {
         await page.screenshot({path: `${evidence}/article-${viewport.name}.png`, fullPage: true});
         checked(`${viewport.name}: literal dollar inline/display math rendered through Markdown to KaTeX; table, footnote and images present`);
       }
-      if (path === '/ru/articles/demo-area/') {
-        assert.deepEqual(await page.locator('.reading-navigation a').evaluateAll(links => links.map(link => link.getAttribute('href'))), neighbors('/history_math/ru/articles/demo-area/'));
+      if (path === '/ru/publications/demo-area/') {
+        assert.deepEqual(await page.locator('.reading-navigation a').evaluateAll(links => links.map(link => link.getAttribute('href'))), neighbors('/history_math/ru/publications/demo-area/'));
         checked(`${viewport.name}: article navigation respects publication order and end-of-sequence limits`);
       }
       if (path === '/ru/search/') {
@@ -177,7 +177,7 @@ try {
     checked(`${viewport.name}: keyboard skip link and visible focus`);
     // Probe a non-public URL directly. A missing URL must return the 404 document.
     page.removeAllListeners('console');
-    const missing = await page.goto(origin + '/history_math/ru/articles/draft-probe/');
+    const missing = await page.goto(origin + '/history_math/ru/publications/draft-probe/');
     // Closing a context with pending requests creates false requestfailed events.
     await page.waitForLoadState('networkidle');
     assert.equal(missing.status(), 404);
@@ -306,14 +306,14 @@ try {
     assert.equal(await page.locator('html.viewer-open').count(), 0);
     checked(`${viewport.name}: fitted image dialog supports zoom, pan/pinch, fit, focus containment and Escape return`);
 
-    await page.goto(origin + '/history_math/ru/articles/demo-geometry/', {waitUntil: 'networkidle'});
+    await page.goto(origin + '/history_math/ru/publications/demo-geometry/', {waitUntil: 'networkidle'});
     assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
     assert.ok(await page.locator('.article-body').evaluate(node => parseFloat(getComputedStyle(node).fontSize)) >= 16);
     assert.ok(await page.locator('.article-body figcaption').evaluate(node => parseFloat(getComputedStyle(node).fontSize)) >= 16);
     assert.equal(await page.locator('.math-source:not([data-rendered=true])').count(), 0);
     await page.addScriptTag({content: axe});
     const articleAudit = await page.evaluate(async () => window.axe.run(document, {runOnly: {type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa']}}));
-    report.accessibility.push({viewport: viewport.name, path: '/ru/articles/demo-geometry/', theme: 'dark', violations: articleAudit.violations});
+    report.accessibility.push({viewport: viewport.name, path: '/ru/publications/demo-geometry/', theme: 'dark', violations: articleAudit.violations});
     assert.deepEqual(articleAudit.violations.map(item => item.id), [], 'Dark article accessibility');
     await page.locator('.article-body .image-trigger').click();
     await page.locator('#image-viewer').waitFor({state: 'visible'});
@@ -390,13 +390,13 @@ try {
         const destination = new URL(await image.getAttribute('href'), origin).href;
         await image.click();
         await page.waitForURL(destination, {waitUntil: 'networkidle'});
-        await page.goto(origin + '/history_math/ru/articles/demo-geometry/', {waitUntil: 'networkidle'});
+        await page.goto(origin + '/history_math/ru/publications/demo-geometry/', {waitUntil: 'networkidle'});
         checked(`${theme}: mouse drag preserves link clicks; wheel browses cards and releases page scrolling at both ends`);
       } else {
         await page.waitForFunction(top => scrollY > top + 10, pageTop);
         assert.equal(await carousel.evaluate(node => node.scrollLeft), 0);
         assert.equal(await page.locator('.carousel-controls').isVisible(), false);
-        await page.goto(origin + '/history_math/ru/articles/demo-geometry/', {waitUntil: 'networkidle'});
+        await page.goto(origin + '/history_math/ru/publications/demo-geometry/', {waitUntil: 'networkidle'});
         checked(`${theme}: mobile material cards retain ordinary vertical scrolling`);
       }
       await page.waitForLoadState('networkidle');
@@ -418,7 +418,7 @@ try {
       await page.locator('.theme-toggle').click();
       await page.addScriptTag({content: axe});
       const audit = await page.evaluate(async () => window.axe.run(document, {runOnly: {type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa']}}));
-      report.accessibility.push({viewport: viewport.name, path: '/ru/articles/demo-geometry/', theme, violations: audit.violations});
+      report.accessibility.push({viewport: viewport.name, path: '/ru/publications/demo-geometry/', theme, violations: audit.violations});
       assert.deepEqual(audit.violations.map(item => item.id), []);
       await page.screenshot({path: `${evidence}/compact-article-${theme}-${viewport.name}.png`, fullPage: true});
       checked(`${theme} ${viewport.name}: compact readable prose, rendered formulas, one article markup for both themes and WCAG AA`);

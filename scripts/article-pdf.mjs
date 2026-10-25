@@ -6,9 +6,10 @@ import {execFileSync} from 'node:child_process';
 import {platform, release} from 'node:os';
 import {digest, fileDigest, printDocument, dependencyReader, readCachedPdf, writeCachedPdf, pruneCache, validPdf} from './pdf-cache.mjs';
 import {chromium} from 'playwright';
+import {articleUrl} from './article-url.mjs';
 
 export function articlePdfPath(url, language) {
-  const match = typeof url === 'string' && /^\/(ru\/)?articles\/([a-z0-9-]+)\/$/.exec(url);
+  const match = typeof url === 'string' && /^\/(ru\/)?(?:articles|publications)\/([a-z0-9-]+)\/$/.exec(url);
   if (!match || !['en', 'ru'].includes(language) || Boolean(match[1]) !== (language === 'ru') || /-(?:ru|en)-(?:ru|en)$/.test(match[2]) ||
       (/^hm-(?:tt-)?[0-9a-f]{12}-(?:ru|en)$/.test(match[2]) && !match[2].endsWith('-' + language))) throw new Error('Invalid PDF identity');
   const slug = match[2].endsWith('-' + language) ? match[2] : `${match[2]}-${language}`;
@@ -20,7 +21,7 @@ export function validateManifest(manifest) {
       !/^https:\/\/[^/]+$/.test(manifest.origin ?? '') || !Array.isArray(manifest.articles)) throw new Error('Invalid PDF manifest');
   const paths = new Set();
   for (const article of manifest.articles) {
-    if (article.pdf_url !== articlePdfPath(article.url, article.lang) ||
+    if (articleUrl(article.url, article.lang) !== article.url || article.pdf_url !== articlePdfPath(article.url, article.lang) ||
         typeof article.title !== 'string' || !article.title.trim() || paths.has(article.pdf_url)) throw new Error('Invalid or duplicate PDF article');
     paths.add(article.pdf_url);
   }

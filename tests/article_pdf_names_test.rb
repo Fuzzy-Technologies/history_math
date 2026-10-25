@@ -3,6 +3,7 @@
 require "minitest/autorun"
 require "jekyll"
 require_relative "../site/_plugins/article_pdf"
+require_relative "../site/_plugins/article_urls"
 
 class ArticlePdfNamesTest < Minitest::Test
   def test_both_editions_have_distinct_download_names_without_duplicate_suffixes
@@ -25,6 +26,28 @@ class ArticlePdfNamesTest < Minitest::Test
       ["/ru/articles/../secret/", "ru"], ["/articles/example/?download=1", "en"],
       ["/ru/articles/hm-tt-9cd7cf41b694-en/", "ru"], ["/ru/articles/hm-tt-9cd7cf41b694-ru-ru/", "ru"], [nil, "en"]].each do |path, language|
       assert_raises(Jekyll::Errors::FatalException) { HistoryMath.article_pdf_path(path, language) }
+    end
+  end
+
+  def test_old_and_new_routes_derive_one_canonical_without_rewriting_source
+    %w[ru en].each do |language|
+      prefix = language == "ru" ? "/ru" : ""
+      %w[hm-99120459b820 hm-tt-9cd7cf41b694].each do |id|
+        canonical = "#{prefix}/publications/#{id}-#{language}/"
+        %w[articles publications].each do |section|
+          ["", "-#{language}"].each do |suffix|
+            source = "#{prefix}/#{section}/#{id}#{suffix}/".freeze
+            assert_equal canonical, HistoryMath.article_url(source, language)
+            assert_equal "/assets/pdf/#{language}/#{id}-#{language}.pdf", HistoryMath.article_pdf_path(source, language)
+          end
+        end
+        assert_equal ["#{prefix}/articles/#{id}-#{language}/", "#{prefix}/articles/#{id}/"], HistoryMath.article_aliases(canonical)
+      end
+      assert_equal "#{prefix}/publications/example/", HistoryMath.article_url("#{prefix}/articles/example/", language)
+    end
+    ["/publications/", "/publications/page/2/", "https://www.nature.com/articles/1371021a0", "/articles/../private/"].each do |path|
+      assert_equal path, HistoryMath.article_url(path, "en")
+      assert_empty HistoryMath.article_aliases(path)
     end
   end
 end

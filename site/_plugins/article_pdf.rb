@@ -4,7 +4,7 @@ require "json"
 
 module HistoryMath
   def self.article_pdf_path(path, language)
-    match = path.is_a?(String) && path.match(%r{\A/(ru/)?articles/([a-z0-9-]+)/\z})
+    match = path.is_a?(String) && path.match(%r{\A/(ru/)?(?:articles|publications)/([a-z0-9-]+)/\z})
     valid = match && %w[ru en].include?(language) && (match[1] ? "ru" : "en") == language
     valid = false if valid && match[2].match?(/-(?:ru|en)-(?:ru|en)\z/)
     if valid && match[2].match?(/\Ahm-(?:tt-)?[0-9a-f]{12}-(?:ru|en)\z/)

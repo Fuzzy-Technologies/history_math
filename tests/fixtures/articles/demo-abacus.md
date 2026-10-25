@@ -10,7 +10,7 @@ description: Посмотрим, как движение косточек пом
 tags: [счёт, инструменты]
 math: false
 status: demo
-permalink: /ru/articles/demo-abacus/
+permalink: /ru/publications/demo-abacus/
 preview_image: /assets/images/abacus.svg
 hero_image: /assets/images/abacus.svg
 hero_alt: Условная схема счётного инструмента со спицами и косточками

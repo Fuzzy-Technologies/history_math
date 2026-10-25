@@ -20,7 +20,7 @@
     "tags": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
     "math": {"type": "boolean"},
     "status": {"enum": ["draft", "published", "demo"]},
-    "permalink": {"type": "string", "pattern": "^/(ru/)?articles/[a-z0-9-]+/$"},
+    "permalink": {"type": "string", "pattern": "^/(ru/)?(?:articles|publications)/[a-z0-9-]+/$"},
     "date": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
     "updated": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
     "original_publication": {

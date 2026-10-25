@@ -10,7 +10,7 @@ description: Запишем одно действие словами, рисун
 tags: [идеи, обозначения]
 math: true
 status: demo
-permalink: /ru/articles/demo-notation/
+permalink: /ru/publications/demo-notation/
 preview_image: /assets/images/geometry.svg
 ---
 ## Одна мысль — несколько записей

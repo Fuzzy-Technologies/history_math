@@ -40,7 +40,7 @@ class ArticleDetailsTest < Minitest::Test
     assert_equal url + "?uselang=ru", filter.external_url(url, "ru")
     assert_equal "https://creativecommons.org/licenses/by-sa/3.0/deed.ru", filter.external_url("https://creativecommons.org/licenses/by-sa/3.0/", "ru")
     assert_equal "https://creativecommons.org/licenses/by-sa/3.0/deed.en", filter.external_url("https://creativecommons.org/licenses/by-sa/3.0/deed.ru", "en")
-    %w[https://ridero.ru/books/bibliya_matematika/ https://t.me/tribute/app?startapp=hbuz https://oeis.org/A000396 /ru/articles/example/ https://fuzzy-technologies.github.io/history_math/ru/ https://creativecommons.org/licenses/by-sa/3.0/legalcode https://fuzzy-technologies.github.io.example.com/].each do |original|
+    %w[https://ridero.ru/books/bibliya_matematika/ https://t.me/tribute/app?startapp=hbuz https://oeis.org/A000396 /ru/publications/example/ https://fuzzy-technologies.github.io/history_math/ru/ https://creativecommons.org/licenses/by-sa/3.0/legalcode https://fuzzy-technologies.github.io.example.com/].each do |original|
       assert_equal original, filter.external_url(original, "ru")
     end
   end
@@ -79,8 +79,8 @@ class ArticleDetailsTest < Minitest::Test
       end
       site = Jekyll::Site.new(config)
       site.process
-      ru = File.read(File.join(site.dest, "ru/articles/citation-ru/index.html"))
-      en = File.read(File.join(site.dest, "articles/citation-en/index.html"))
+      ru = File.read(File.join(site.dest, "ru/publications/citation-ru/index.html"))
+      en = File.read(File.join(site.dest, "publications/citation-en/index.html"))
       assert_includes ru, "Гильмуллин, М. Ф. Матрицы и окружности //"
       assert_includes ru, "Дата публикации: 09.10.2026."
       assert_includes ru, "Дата обновления: 10.10.2026."
@@ -93,7 +93,7 @@ class ArticleDetailsTest < Minitest::Test
       assert_includes en, "data-citation-access>Mon. D, YYYY</span>"
       refute_includes en, "APA"
       refute_match(/ISSN|DOI|Vol\./, ru + en)
-      demo = File.read(File.join(site.dest, "ru/articles/demo-geometry/index.html"))
+      demo = File.read(File.join(site.dest, "ru/publications/demo-geometry/index.html"))
       refute_includes demo, "data-article-citation"
       destination = File.expand_path("../test-results/details-fixture", __dir__)
       FileUtils.rm_rf(destination)

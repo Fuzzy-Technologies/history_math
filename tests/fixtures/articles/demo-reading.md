@@ -10,7 +10,7 @@ description: Прежде чем решать задачу, разберёмся
 tags: [источники, задачи]
 math: false
 status: demo
-permalink: /ru/articles/demo-reading/
+permalink: /ru/publications/demo-reading/
 preview_image: /assets/images/triangle.svg
 ---
 ## Не спешите переписывать условие

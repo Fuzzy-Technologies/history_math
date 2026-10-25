@@ -104,7 +104,7 @@ test('stable identity and content language are independent of automation languag
     ['feature/article-0123', 'en'], ['feature/ru-article-0123', 'en'],
     ['feature/article-0123-ru-fix', 'en'], ['feature/article-0123-RU', 'en']
   ]) assert.equal(reportLanguage(branch), language);
-  const russian = text.replace('lang: en', 'lang: ru').replace('/articles/example-article/', '/ru/articles/example-article/');
+  const russian = text.replace('lang: en', 'lang: ru').replace('/publications/example-article/', '/ru/publications/example-article/');
   assert.deepEqual(errors(russian), []);
   assert.match(humanReport({language: reportLanguage('feature/article-en'), commit: 'abc', checks: {source: 'pass', build: 'pass', output: 'pass', browser: 'pass'}, findings: []}), /Technical checks passed/);
 });
@@ -147,7 +147,7 @@ test('own diagnostic actions use local dictionaries while codes and tool output 
 });
 
 test('automated descriptions use the head suffix while preserving article content language', () => {
-  const input = {article: {title: 'Русская статья', lang: 'ru', permalink: '/ru/articles/example/'}, review: {}, report: {checks: {source: 'pass'}, findings: []}, commit: 'sha', runUrl: 'https://github.com/example/repo/actions', infrastructureUrl: 'https://github.com/example/repo/pull/1'};
+  const input = {article: {title: 'Русская статья', lang: 'ru', permalink: '/ru/publications/example/'}, review: {}, report: {checks: {source: 'pass'}, findings: []}, commit: 'sha', runUrl: 'https://github.com/example/repo/actions', infrastructureUrl: 'https://github.com/example/repo/pull/1'};
   assert.match(articlePrBody({...input, branch: 'feature/article-ru'}), /Обязательные технические проверки не выполнены/);
   for (const branch of ['feature/article-en', 'feature/ru-article', 'feature/article-ru-fix']) {
     const body = articlePrBody({...input, branch});

@@ -3,9 +3,9 @@ import assert from 'node:assert/strict';
 
 export async function runReaderChecks({browser, origin, evidence, axe, report, checked}) {
   const home = origin + '/history_math/ru/';
-  const article = home + 'articles/demo-geometry/';
-  const other = home + 'articles/demo-area/';
-  const key = 'history-math:reading:/history_math/ru/articles/demo-geometry/';
+  const article = home + 'publications/demo-geometry/';
+  const other = home + 'publications/demo-area/';
+  const key = 'history-math:reading:/history_math/ru/publications/demo-geometry/';
   let validPosition;
   function track(page) {
     page.on('pageerror', error => report.consoleErrors.push(error.message));
@@ -68,7 +68,7 @@ export async function runReaderChecks({browser, origin, evidence, axe, report, c
     await page.getByRole('navigation', {name: 'Основная навигация', exact: true}).getByRole('link', {name: 'Публикации', exact: true}).click();
     await page.waitForLoadState('networkidle');
     await page.goto(home + 'publications/?per_page=100', {waitUntil: 'networkidle'});
-    await page.locator('.catalog-list h3 a[href="/history_math/ru/articles/demo-geometry/"]').click();
+    await page.locator('.catalog-list h3 a[href="/history_math/ru/publications/demo-geometry/"]').click();
     await page.locator('.reading-resume').waitFor({state: 'visible'});
     const menuAlignment = await paragraph.evaluate((node, offset) => node.getBoundingClientRect().top + node.getBoundingClientRect().height * offset, saved.offset);
     assert.ok(Math.abs(menuAlignment - 24) < 3, 'Header navigation cleared the reading position');
