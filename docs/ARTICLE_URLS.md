@@ -1,15 +1,16 @@
 # Stable article URLs
 
 Public archive articles use `hm-<12-character work hash>-<language>` as the final
-path segment. English routes are `/articles/hm-<hash>-en/`; Russian routes are
-`/ru/articles/hm-<hash>-ru/`. Authors, titles and publication dates do not affect
+path segment. English routes are `/publications/hm-<hash>-en/`; Russian routes are
+`/ru/publications/hm-<hash>-ru/`. Authors, titles and publication dates do not affect
 the URL. The existing hash is retained rather than recalculated from mutable text.
 
-The publication layer derives this route from the approved package's `permalink`
-after validation and before URL discovery. Both legacy and already suffixed
-permalinks normalize to the same route. Editorial Markdown, internal article IDs,
-translation keys and approval digests remain unchanged. Non-archive examples and
-test fixtures keep their existing routes.
+The catalog and its detail pages share the `publications` namespace. The publication
+layer derives this route from the approved package's `permalink` after validation
+and before URL discovery. Both legacy and already suffixed permalinks in either the
+old `articles` or new `publications` namespace normalize to the same route. Editorial
+Markdown, internal article IDs, translation keys and approval digests remain
+unchanged. New templates use `publications`; legacy source permalinks remain valid.
 
 Cards, search, citations, canonical/hreflang, the sitemap and the PDF manifest use
 the derived URL. PDF filenames include the same terminal language suffix, such as
@@ -17,7 +18,8 @@ the derived URL. PDF filenames include the same terminal language suffix, such a
 inside PDFs uses the canonical route. Unsuffixed PDF filenames were retired at
 the owner's request; article HTML redirects remain supported.
 
-Old HTML paths produce localized, non-indexed transition pages on GitHub Pages.
+Both suffixed and unsuffixed old `/articles/` HTML paths produce localized,
+non-indexed transition pages on GitHub Pages, pointing directly to the new canonical address.
 JavaScript replaces the location, preserving query parameters and section anchors;
 without JavaScript a localized link remains available. These are static HTML
 transitions, not HTTP 301 responses. Alias collisions fail the build, aliases do

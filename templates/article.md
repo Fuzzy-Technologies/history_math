@@ -13,7 +13,7 @@ description: A filled structural example for an archival article package.
 tags: [example, mathematics]
 math: true
 status: draft
-permalink: /articles/example-article/
+permalink: /publications/example-article/
 rights_basis: Original template text and existing site illustration; not an archival publication.
 figures:
   - id: fig-example

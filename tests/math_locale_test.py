@@ -29,9 +29,9 @@ class MathLocaleTest(unittest.TestCase):
                 CheckSite(root, '/history_math')
 
     def test_renderer_is_allowed_on_both_article_routes_only(self):
-        self.check_page('articles/example')
-        self.check_page('ru/articles/example')
-        for route in ('about', 'ru/about', 'articles'):
+        self.check_page('publications/example')
+        self.check_page('ru/publications/example')
+        for route in ('about', 'ru/about', 'articles', 'articles/example', 'ru/articles/example'):
             with self.assertRaisesRegex(SystemExit, 'unexpected math renderer'):
                 self.check_page(route)
 
@@ -107,9 +107,9 @@ class PublicationDomainTest(unittest.TestCase):
             site_origin = "https://history-math.org"
             self.WriteSite(root, "", site_origin)
             route = "/ru/articles/hm-012345abcdef"
-            target = route + "-ru/"
+            target = "/ru/publications/hm-012345abcdef-ru/"
 
-            for path, redirect in ((route + "/", True), (target, False)):
+            for path, redirect in ((route + "/", True), (route + "-ru/", True), (target, False)):
                 page = root / path.lstrip("/") / "index.html"
                 page.parent.mkdir(parents=True, exist_ok=True)
                 metadata = (f'<meta name="article-redirect" content="{target}">'
@@ -118,4 +118,9 @@ class PublicationDomainTest(unittest.TestCase):
                                 f'{metadata}</html>', encoding="utf-8")
 
             with contextlib.redirect_stdout(io.StringIO()):
+                CheckSite(root, "", site_origin)
+
+            alias = root / route.lstrip("/") / "index.html"
+            alias.write_text(alias.read_text().replace(f'content="{target}"', f'content="{route}-ru/"'))
+            with self.assertRaisesRegex(SystemExit, "invalid article redirect"):
                 CheckSite(root, "", site_origin)

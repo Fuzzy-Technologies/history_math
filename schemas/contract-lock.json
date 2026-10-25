@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "sha256": "002e1f595117a84ceb298feb339213e40cd87e8af91f93ae3a8b122cfd5629d6",
+  "sha256": "f7496216512900dc16ffc5fe965f3caf62c1b0dd0a627f858896bf2004492a4c",
   "owner": "History Math article contract",
   "repository": "Fuzzy-Technologies/history_math",
   "canonical_path": "schemas/article-v1.schema.json"

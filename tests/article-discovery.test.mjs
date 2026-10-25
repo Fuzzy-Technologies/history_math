@@ -11,7 +11,7 @@ test('source gates discover both nested migrated editions and existing flat arti
     for (const folder of ['site/_articles/ru', 'site/_articles/en', 'reviews', 'schemas']) mkdirSync(resolve(root, folder), {recursive: true});
     for (const file of ['article-v1.schema.json', 'contract-lock.json']) copyFileSync('schemas/' + file, resolve(root, 'schemas', file));
     const template = readFileSync('templates/minimal-article.md', 'utf8').replaceAll('example-minimal', 'hm-test');
-    const ru = template.replace('lang: en', 'lang: ru').replace('/articles/hm-test/', '/ru/articles/hm-test/');
+    const ru = template.replace('lang: en', 'lang: ru').replace('/publications/hm-test/', '/ru/publications/hm-test/');
     const en = template.replace('article_id: hm-test\n', 'article_id: hm-test-en\n');
     writeFileSync(resolve(root, 'site/_articles/ru/hm-test.md'), ru);
     writeFileSync(resolve(root, 'site/_articles/en/hm-test-en.md'), en);

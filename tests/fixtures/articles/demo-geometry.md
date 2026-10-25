@@ -10,7 +10,7 @@ description: Рассмотрим чертёж и проверим, как ра�
 tags: [геометрия, идеи]
 math: true
 status: demo
-permalink: /ru/articles/demo-geometry/
+permalink: /ru/publications/demo-geometry/
 preview_image: /assets/images/geometry.svg
 cover_image: /assets/images/triangle.svg
 hero_image: /assets/images/geometry.svg
@@ -47,6 +47,6 @@ $$
 ## Источники и дальнейшее чтение
 
 - [Цифровые материалы по истории математики Университета Сент-Эндрюс](https://mathshistory.st-andrews.ac.uk/).
-- [Задача о площади треугольника]({{ '/ru/articles/demo-area/' | relative_url }}).
+- [Задача о площади треугольника]({{ '/ru/publications/demo-area/' | relative_url }}).
 
 [^demo]: Все тексты и даты демоматериалов служат проверке прототипа. Реальные авторские статьи будут подготовлены отдельно.

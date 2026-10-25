@@ -98,7 +98,7 @@ module HistoryMath
       data["tags"].is_a?(Array) && data["tags"].all? { |tag| tag.is_a?(String) && !tag.strip.empty? } &&
       %w[title translation_key author description].all? { |key| data[key].is_a?(String) && !data[key].strip.empty? } &&
       data["translation_key"].match?(/\A[a-z0-9][a-z0-9-]*\z/) &&
-      data["permalink"].is_a?(String) && data["permalink"].match?(/\A\/(ru\/)?articles\/[a-z0-9-]+\/\z/)
+      data["permalink"].is_a?(String) && data["permalink"].match?(/\A\/(ru\/)?(?:articles|publications)\/[a-z0-9-]+\/\z/)
     valid &&= data["lang"] == "ru" ? data["permalink"].start_with?("/ru/") : !data["permalink"].start_with?("/ru/")
     raise Jekyll::Errors::FatalException, "#{document.path}: invalid public article contract" unless valid
     Date.iso8601(data["date"].strftime("%Y-%m-%d"))

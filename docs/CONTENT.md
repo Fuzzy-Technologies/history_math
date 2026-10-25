@@ -10,7 +10,7 @@ Set `status: published` only after editorial approval; use `demo` for deliberate
 
 ## Front matter
 
-The canonical contract is `schemas/article-v1.schema.json`. Legacy `demo-*.md` files exist only under `tests/fixtures/articles/` for isolated regression builds; the production collection contains real v1 articles only.
+The canonical contract is `schemas/article-v1.schema.json`. Legacy `demo-*.md` files exist only under `tests/fixtures/publications/` for isolated regression builds; the production collection contains real v1 articles only.
 
 | Field                                    | Contract                                                                                                                                  |
 | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |

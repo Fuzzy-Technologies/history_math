@@ -10,7 +10,7 @@ description: Найдём площадь одного и того же треу�
 tags: [геометрия, задачи]
 math: true
 status: demo
-permalink: /ru/articles/demo-area/
+permalink: /ru/publications/demo-area/
 preview_image: /assets/images/triangle.svg
 hero_image: /assets/images/triangle.svg
 hero_alt: Треугольник с проведённой к основанию высотой h

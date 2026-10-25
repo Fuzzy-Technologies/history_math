@@ -142,8 +142,9 @@ def CheckSite(sitePath, basePath, site_origin="https://fuzzy-technologies.github
             publicPath = "/" + relative
         expectedCanonical = site_origin + basePath + publicPath
         if page.redirect:
-            match = re.fullmatch(r"(/(?:ru/)?articles/hm-(?:tt-)?[0-9a-f]{12})/", publicPath)
-            expectedRedirect = basePath + match[1] + "-" + expectedLanguage + "/" if match else None
+            match = re.fullmatch(r"/(ru/)?articles/([a-z0-9-]+)/", publicPath)
+            slug = re.sub(r"^(hm-(?:tt-)?[0-9a-f]{12})$", r"\1-" + expectedLanguage, match[2]) if match else None
+            expectedRedirect = basePath + "/" + (match[1] or "") + "publications/" + slug + "/" if match else None
             target = Resolve(page.redirect, path)
             if (page.redirect != expectedRedirect or page.robots != "noindex, follow" or
                     target not in parsed or parsed[target].redirect or parsed[target].language != expectedLanguage):
@@ -151,6 +152,8 @@ def CheckSite(sitePath, basePath, site_origin="https://fuzzy-technologies.github
             expectedCanonical = site_origin + (expectedRedirect or "")
         if page.canonical != [expectedCanonical]:
             errors.append(f"{path}: wrong canonical {page.canonical}")
+        if page.article and not re.fullmatch(r"/(?:ru/)?publications/[a-z0-9-]+/", publicPath):
+            errors.append(f"{path}: stale publication route")
         for url, language in page.externalAnchors:
             if ExternalLocaleError(url, language):
                 errors.append(f"{path}: wrong external link language ({language}): {url}")
@@ -160,7 +163,9 @@ def CheckSite(sitePath, basePath, site_origin="https://fuzzy-technologies.github
             target = Resolve(url, path)
             if target in parsed and parsed[target].language != language:
                 errors.append(f"{path}: wrong alternate language")
-        if not re.fullmatch(r"(?:ru/)?articles/[a-z0-9-]+/index\.html", relative) and any("katex" in script for script in page.scripts):
+            if target in parsed and parsed[target].redirect:
+                errors.append(f"{path}: redirect in alternate link")
+        if not re.fullmatch(r"(?:ru/)?publications/[a-z0-9-]+/index\.html", relative) and any("katex" in script for script in page.scripts):
             errors.append(f"{path}: unexpected math renderer")
 
     for path in sitePath.rglob("*.css"):

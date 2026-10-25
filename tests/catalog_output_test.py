@@ -14,7 +14,9 @@ class CatalogOutputTest(unittest.TestCase):
         origin = "https://history-math.org"
         assets = root / "assets"
         assets.mkdir()
-        records = [{"url": f"/articles/example-{index}/", "language": "en", "status": "published"} for index in range(21)]
+        records = [{"url": f"/publications/example-{index}/", "language": "en", "status": "published"} for index in range(21)]
+        if mutation == "stale-route":
+            records[0]["url"] = "/articles/example-0/"
 
         def page(route, content):
             path = root / route.strip("/") / "index.html"
@@ -57,7 +59,8 @@ class CatalogOutputTest(unittest.TestCase):
     def test_gate_rejects_lost_cards_indexes_duplicates_and_heavy_metadata(self):
         for mutation, message in (("lost-card", "Static catalog loses"), ("duplicate", "Static catalog loses"),
                                   ("missing-index", "Rendered articles missing"), ("full-discovery", "Full text in lightweight"),
-                                  ("missing-text", "Missing full text"), ("missing-search", "Search/discovery coverage differs")):
+                                  ("missing-text", "Missing full text"), ("missing-search", "Search/discovery coverage differs"),
+                                  ("stale-route", "stale publication route")):
             with self.subTest(mutation=mutation), tempfile.TemporaryDirectory() as directory:
                 root = Path(directory)
                 self.fixture(root, mutation)

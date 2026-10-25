@@ -121,7 +121,7 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
     assert.match(await page.locator('#search-status').innerText(), /Ничего не найдено/);
     checked(`${width} ${theme}: card and result tags open exact-topic URLs; reload, Cyrillic folding, reset and ordinary text search work`);
 
-    await page.goto(base + '/ru/articles/demo-geometry/', {waitUntil: 'networkidle'});
+    await page.goto(base + '/ru/publications/demo-geometry/', {waitUntil: 'networkidle'});
     const typography = await page.locator('.article-body').evaluate(node => {
       const style = getComputedStyle(node);
       return {size: parseFloat(style.fontSize), leading: parseFloat(style.lineHeight) / parseFloat(style.fontSize), link: parseFloat(getComputedStyle(node.querySelector(':scope > ul a')).fontSize)};

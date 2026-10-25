@@ -109,7 +109,7 @@ class PublicationTest < Minitest::Test
         text = File.read(File.join(source, "_articles/demo-abacus.md"))
           .sub("status: demo", "status: #{status}")
           .sub("translation_key: demo-abacus", "translation_key: #{status}-probe")
-          .sub("permalink: /ru/articles/demo-abacus/", "permalink: /ru/articles/#{status}-probe/")
+          .sub("permalink: /ru/publications/demo-abacus/", "permalink: /ru/publications/#{status}-probe/")
           .sub("title: Счёт, который можно потрогать", "title: #{status}-probe-marker")
         File.write(File.join(source, "_articles/#{status}-probe.md"), text)
       end
@@ -117,8 +117,8 @@ class PublicationTest < Minitest::Test
       File.write(File.join(source, "internal.txt"), "INTERNAL_MARKER")
       site = Jekyll::Site.new(config)
       site.process
-      refute File.exist?(File.join(site.dest, "ru/articles/draft-probe/index.html"))
-      refute File.exist?(File.join(site.dest, "ru/articles/internal-probe/index.html"))
+      refute File.exist?(File.join(site.dest, "ru/publications/draft-probe/index.html"))
+      refute File.exist?(File.join(site.dest, "ru/publications/internal-probe/index.html"))
       refute File.exist?(File.join(site.dest, "private/index.html"))
       refute File.exist?(File.join(site.dest, "internal.txt"))
       output = Dir.glob(File.join(site.dest, "**/*")).select { |path| File.file?(path) && path.match?(/\.(html|json|xml)\z/) }.map { |path| File.read(path) }.join
@@ -150,14 +150,14 @@ class PublicationTest < Minitest::Test
       File.write(File.join(source, "_articles/example-minimal-en.md"), text)
       site = Jekyll::Site.new(config)
       site.process
-      refute File.exist?(File.join(site.dest, "articles/example-minimal/index.html"))
+      refute File.exist?(File.join(site.dest, "publications/example-minimal/index.html"))
       config["article_review"] = true
       review = Jekyll::Site.new(config)
       review.process
-      page = File.read(File.join(review.dest, "articles/example-minimal/index.html"))
+      page = File.read(File.join(review.dest, "publications/example-minimal/index.html"))
       assert_includes page, "Editorial review copy"
       assert_includes page, "noindex, nofollow"
-      refute_includes File.read(File.join(review.dest, "sitemap.xml")), "/articles/example-minimal/"
+      refute_includes File.read(File.join(review.dest, "sitemap.xml")), "/publications/example-minimal/"
       refute JSON.parse(File.read(File.join(review.dest, "assets/search-en.json"))).any? { |record| record["url"].include?("example-minimal") }
     end
   end
@@ -177,7 +177,7 @@ class PublicationTest < Minitest::Test
           "package_sha256" => Digest::SHA256.hexdigest(text)}}
       File.write(review_path, JSON.generate(review))
       Jekyll::Site.new(config).process
-      assert File.exist?(File.join(config["destination"], "articles/example-minimal/index.html"))
+      assert File.exist?(File.join(config["destination"], "publications/example-minimal/index.html"))
       File.write(path, text + "\nChanged after review.\n")
       assert_raises(Jekyll::Errors::FatalException) { Jekyll::Site.new(config).process }
       File.write(path, text)
@@ -192,7 +192,7 @@ class PublicationTest < Minitest::Test
       text = File.read(File.join(source, "_articles/demo-geometry.md"))
         .sub("lang: ru", "lang: en")
         .sub("translation_key: demo-geometry", "translation_key: pdf-example")
-        .sub("permalink: /ru/articles/demo-geometry/", "permalink: /articles/pdf-example/")
+        .sub("permalink: /ru/publications/demo-geometry/", "permalink: /publications/pdf-example/")
       File.write(File.join(source, "_articles/pdf-example.md"), text)
       File.write(File.join(source, "_articles/pdf-draft.md"), File.read(File.expand_path("../templates/minimal-article.md", __dir__)))
       site = Jekyll::Site.new(config)
@@ -202,7 +202,7 @@ class PublicationTest < Minitest::Test
       assert_equal "/history_math", manifest["baseurl"]
       assert_equal %w[en ru], manifest["articles"].map { |item| item["lang"] }.uniq.sort
       refute manifest["articles"].any? { |item| item["url"].include?("example-minimal") }
-      en = File.read(File.join(site.dest, "articles/pdf-example/index.html"))
+      en = File.read(File.join(site.dest, "publications/pdf-example/index.html"))
       assert_includes en, "/history_math/assets/pdf/en/pdf-example-en.pdf"
       assert_includes en, "/history_math/assets/images/Math-with-Mansur-logo.png"
       destination = File.expand_path("../test-results/pdf-fixture", __dir__)
@@ -219,17 +219,18 @@ class PublicationTest < Minitest::Test
         language = doc.data.fetch("lang")
         id = doc.data.fetch("translation_key")
         prefix = language == "ru" ? "/ru" : ""
-        url = "#{prefix}/articles/#{id}-#{language}/"
+        url = "#{prefix}/publications/#{id}-#{language}/"
         assert_equal url, doc.url
         html = File.read(File.join(site.dest, url, "index.html"))
         assert_includes html, "https://fuzzy-technologies.github.io/history_math#{url}"
         assert_includes html, "/assets/pdf/#{language}/#{id}-#{language}.pdf"
         assert_includes html, %(download="#{id}-#{language}.pdf")
-        legacy = "#{prefix}/articles/#{id}/"
-        redirect = File.read(File.join(site.dest, legacy, "index.html"))
-        assert_includes redirect, "noindex, follow"
-        assert_includes redirect, "data-article-redirect href=\"/history_math#{url}\""
-        refute_includes File.read(File.join(site.dest, "sitemap.xml")), "#{legacy}</loc>"
+        ["#{prefix}/articles/#{id}/", "#{prefix}/articles/#{id}-#{language}/"].each do |legacy|
+          redirect = File.read(File.join(site.dest, legacy, "index.html"))
+          assert_includes redirect, "noindex, follow"
+          assert_includes redirect, "data-article-redirect href=\"/history_math#{url}\""
+          refute_includes File.read(File.join(site.dest, "sitemap.xml")), "#{legacy}</loc>"
+        end
         assert_equal url, HistoryMath.article_url(url, language), "normalization must be idempotent"
       end
       # A legacy route may never overwrite a separately authored page.
@@ -240,7 +241,8 @@ class PublicationTest < Minitest::Test
         File.write(path, File.read(path).sub("status: published", "status: draft"))
       end
       Jekyll::Site.new(config).process
-      assert_empty Dir.glob(File.join(site.dest, "**/articles/hm-*/index.html")), "drafts have neither routes nor aliases"
+      assert_empty Dir.glob(File.join(site.dest, "**/publications/hm-*/index.html")), "drafts have neither routes nor aliases"
+      assert_empty Dir.glob(File.join(site.dest, "**/articles/hm-*/index.html")), "drafts have no old-route aliases"
     end
   end
 
@@ -259,7 +261,7 @@ class PublicationTest < Minitest::Test
       assert records.all? { |record| record["status"] == "published" && !record["translation_notice"] }
       paths.each do |path|
         key = File.basename(path, "-en.md")
-        html = File.read(File.join(production.dest, "articles", "#{key}-en", "index.html"))
+        html = File.read(File.join(production.dest, "publications", "#{key}-en", "index.html"))
         refute_includes html, "Editorial review copy"
         refute_includes html, "noindex, nofollow"
         assert_includes html, "hreflang=\"ru\""
@@ -311,7 +313,7 @@ class PublicationTest < Minitest::Test
       end
       paths.each do |path|
         key = File.basename(path, "-en.md")
-        assert_includes File.read(File.join(approved.dest, "sitemap.xml")), "/articles/#{key}-en/"
+        assert_includes File.read(File.join(approved.dest, "sitemap.xml")), "/publications/#{key}-en/"
       end
     end
   end

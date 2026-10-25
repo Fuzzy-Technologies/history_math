@@ -23,7 +23,7 @@ try {
     const page = await browser.newPage({viewport: {width, height: 1000}, colorScheme: width === 320 ? 'dark' : 'light', timezoneId: 'Europe/Moscow'});
     await page.clock.setFixedTime(new Date('2026-10-09T20:59:00Z'));
     const errors = []; page.on('pageerror', error => errors.push(error.message));
-    await page.goto(`${origin}/history_math/${language === 'ru' ? 'ru/' : ''}articles/citation-${language}/`, {waitUntil: 'networkidle'});
+    await page.goto(`${origin}/history_math/${language === 'ru' ? 'ru/' : ''}publications/citation-${language}/`, {waitUntil: 'networkidle'});
     await page.locator('img').evaluateAll(async images => {
       images.forEach(image => { image.loading = 'eager'; });
       await Promise.all(images.map(image => image.decode()));
@@ -67,7 +67,7 @@ try {
   }
   for (const language of ['ru', 'en']) {
     const noJs = await browser.newPage({javaScriptEnabled: false});
-    await noJs.goto(`${origin}/history_math/${language === 'ru' ? 'ru/' : ''}articles/citation-${language}/`);
+    await noJs.goto(`${origin}/history_math/${language === 'ru' ? 'ru/' : ''}publications/citation-${language}/`);
     await noJs.locator('.article-details summary').click();
     assert.notEqual(await noJs.locator('.article-details').getAttribute('open'), null);
     assert.equal(await noJs.locator('[data-copy-citation]').isVisible(), false);

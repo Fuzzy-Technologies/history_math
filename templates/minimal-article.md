@@ -13,7 +13,7 @@ type: note
 tags: [example]
 math: false
 status: draft
-permalink: /articles/example-minimal/
+permalink: /publications/example-minimal/
 rights_basis: Structural example created for this template; no archival text is included.
 ---
 ## First section {#first-section}
