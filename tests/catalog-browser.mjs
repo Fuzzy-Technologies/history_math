@@ -23,6 +23,14 @@ await new Promise(done => server.listen(0, '127.0.0.1', done));
 const origin = `http://127.0.0.1:${server.address().port}`;
 const browser = await chromium.launch({executablePath: process.env.BROWSER_EXECUTABLE || undefined});
 const errors = [];
+async function checkDocumentEnd(page) {
+  const bounds = await page.evaluate(() => ({
+    height: document.documentElement.scrollHeight,
+    end: Math.max(innerHeight, Math.ceil(document.querySelector('.site-footer').getBoundingClientRect().bottom + scrollY))
+  }));
+  assert.ok(bounds.height <= bounds.end + 1,
+    `Closed filters leave ${bounds.height - bounds.end}px of empty scrolling below the footer at ${page.url()}`);
+}
 await mkdir('test-results/catalog', {recursive: true});
 try {
   for (const lang of ['ru', 'en']) {
@@ -39,6 +47,18 @@ try {
     const visible = () => page.locator('.catalog-list h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
     const indexRequests = [];
     page.on('request', request => { if (/assets\/(?:discovery|search)-/.test(request.url())) indexRequests.push(request.url()); });
+    for (const size of [5, 100, 20]) {
+      await page.goto(url + `?per_page=${size}`, {waitUntil: 'networkidle'});
+      assert.equal(await page.getByRole('combobox').count(), 3);
+      assert.deepEqual(await visible(), records.slice(0, size).map(record => record.url));
+      await checkDocumentEnd(page);
+      await page.locator('#tag-filter-button').click();
+      assert.equal(await page.locator('#tag-filter-list').isVisible(), true);
+      await page.locator('#tag-filter-button').press('End');
+      await page.locator('#tag-filter-button').press('Escape');
+      assert.equal(await page.locator('#tag-filter-list').isVisible(), false);
+      await checkDocumentEnd(page);
+    }
     await page.goto(url, {waitUntil: 'networkidle'});
     assert.equal(await page.locator('h1').innerText(), lang === 'ru' ? 'Публикации' : 'Reading room');
     assert.equal(await page.locator('.catalog-list').getAttribute('aria-label'), lang === 'ru' ? 'Публикации журнала' : 'Journal articles');
@@ -92,11 +112,13 @@ try {
     for (const width of [320, 390, 768]) {
       await page.setViewportSize({width, height: 1000});
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false);
+      await checkDocumentEnd(page);
       await page.locator('#page-size-button').scrollIntoViewIfNeeded();
       await page.locator('#page-size-button').click();
       const bounds = await page.locator('#page-size-list').boundingBox();
       assert.ok(bounds.x >= 0 && bounds.x + bounds.width <= width && bounds.y >= 0 && bounds.y + bounds.height <= 1000);
       await page.locator('#page-size-button').press('Escape');
+      await checkDocumentEnd(page);
       if (width === 390) await page.screenshot({path: `test-results/catalog/${lang}-mobile.png`, fullPage: true});
     }
     await context.close();
