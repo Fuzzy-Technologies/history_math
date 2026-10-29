@@ -7,6 +7,49 @@ import {pagesConfig} from '../scripts/pages-config.mjs';
 const cleanup = readFileSync('.github/workflows/cleanup-merged-branch.yml', 'utf8').replace(/\r\n/g, '\n');
 const script = cleanup.split('script: |\n')[1].split('\n').map(line => line.replace(/^            /, '')).join('\n');
 const AsyncFunction = Object.getPrototypeOf(async function() {}).constructor;
+test('S3 publication stays on approved master and blocks Pages upload until final validation', () => {
+  const workflow = parse(readFileSync('.github/workflows/deploy.yml', 'utf8'));
+  assert.deepEqual(workflow.on.push.branches, ['master']);
+  assert.equal(Object.hasOwn(workflow.on, 'pull_request'), false);
+  const job = workflow.jobs.build, steps = job.steps;
+  assert.match(job.if, /github.ref == 'refs\/heads\/master'/);
+  assert.equal(job.environment, 'history-math-storage');
+  const media = steps.findIndex(step => step.name === 'Publish verified S3 media');
+  const check = steps.findIndex(step => step.name === 'Verify final lightweight publication');
+  const upload = steps.findIndex(step => step.uses?.startsWith('actions/upload-pages-artifact@'));
+  assert.ok(media > steps.findIndex(step => step.name === 'Build and verify configured Pages site'));
+  assert.ok(media < check && check < upload);
+  assert.match(steps[media].run, /publication-media.mjs --site-dir _site-pages --publish --prune-output/);
+  assert.ok(steps[media].run.indexOf('backfill-media.mjs --published-only') < steps[media].run.indexOf('publication-media.mjs'));
+  for (const key of ['S3_ACCESS_KEY_ID', 'S3_SECRET_ACCESS_KEY']) {
+    assert.equal(steps[media].env[key], '${{ secrets.' + key + ' }}');
+    assert.equal(steps.filter(step => Object.hasOwn(step.env || {}, key)).length, 1);
+  }
+  assert.match(steps[check].run, /check_site.py/);
+  assert.match(steps[check].run, /publication-size.mjs/);
+  assert.match(steps[check].run, /publication-media-browser.mjs/);
+  assert.equal(workflow.jobs.deploy.needs, 'build');
+});
+
+test('one-time backfill uses the deployment account on master without deploying or executing PR code', () => {
+  const workflow = parse(readFileSync('.github/workflows/media-backfill.yml', 'utf8'));
+  assert.deepEqual(Object.keys(workflow.on), ['workflow_dispatch']);
+  assert.equal(workflow.concurrency.group, 'github-pages');
+  assert.equal(workflow.concurrency['cancel-in-progress'], false);
+  const job = workflow.jobs.copy;
+  assert.equal(job.environment, 'history-math-storage');
+  assert.match(job.if, /github.ref == 'refs\/heads\/master'/);
+  assert.match(job.if, /github.event_name == 'workflow_dispatch'/);
+  assert.deepEqual(workflow.permissions, {contents: 'read', 'pull-requests': 'read', pages: 'read'});
+  const source = JSON.stringify(job);
+  assert.ok(!source.includes('pull_request_target')); assert.ok(!source.includes('deploy-pages@'));
+  assert.ok(!source.includes('git push')); assert.ok(!source.includes('jekyll'));
+  assert.equal(job.steps.find(step => step.uses?.startsWith('actions/checkout@')).with['persist-credentials'], false);
+  const transfer = job.steps.find(step => step.run?.includes('backfill-media.mjs'));
+  assert.equal(transfer.env.S3_ACCESS_KEY_ID, '${{ secrets.S3_ACCESS_KEY_ID }}');
+  assert.equal(transfer.env.S3_SECRET_ACCESS_KEY, '${{ secrets.S3_SECRET_ACCESS_KEY }}');
+});
+
 test('source checks use shallow heads and publication resolves the exact master SHA from full history', () => {
   for (const file of ['ci.yml', 'deploy.yml']) {
     const workflow = parse(readFileSync(`.github/workflows/${file}`, 'utf8'));

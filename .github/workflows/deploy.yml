@@ -21,6 +21,7 @@ jobs:
       actions: read
     runs-on: ubuntu-24.04
     timeout-minutes: 90
+    environment: history-math-storage
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -92,7 +93,6 @@ jobs:
           HISTORY_MATH_PUBLICATION_REF="$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build --config "_config.yml,$RUNNER_TEMP/history-math-pages.yml" --destination _site-pages --trace
           node scripts/article-pdf.mjs --site-dir _site-pages
           python3 scripts/check_site.py _site-pages "$PAGES_BASE_PATH" "$PAGES_ORIGIN"
-          node scripts/publication-size.mjs _site-pages
           if [ "$FULL_CHECKS" = "true" ]; then
             IMAGE_SITE_DIR=_site-pages IMAGE_BASEURL="$PAGES_BASE_PATH" node tests/image-delivery-browser.mjs
             ERROR_SITE_DIR=_site-pages ERROR_BASEURL="$PAGES_BASE_PATH" node tests/errors-browser.mjs
@@ -105,6 +105,40 @@ jobs:
         with:
           path: .pdf-cache
           key: ${{ steps.pdf-cache.outputs.cache-primary-key }}
+      - name: Publish verified S3 media
+        env:
+          PAGES_ORIGIN: https://${{ steps.pages.outputs.host }}
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          S3_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
+          S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+          S3_ENDPOINT_URL: ${{ vars.S3_ENDPOINT_URL }}
+          S3_REGION: ${{ vars.S3_REGION }}
+          S3_BUCKET: ${{ vars.S3_BUCKET }}
+          S3_PUBLIC_BASE_URL: ${{ vars.S3_PUBLIC_BASE_URL }}
+        run: |
+          node scripts/backfill-media.mjs --published-only
+          node scripts/publication-media.mjs --site-dir _site-pages --publish --prune-output
+      - name: Verify final lightweight publication
+        env:
+          PAGES_ORIGIN: https://${{ steps.pages.outputs.host }}
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          FULL_CHECKS: ${{ steps.plan.outputs.full_checks }}
+        run: |
+          python3 scripts/check_site.py _site-pages "$PAGES_BASE_PATH" "$PAGES_ORIGIN"
+          node scripts/publication-size.mjs _site-pages
+          if [ "$FULL_CHECKS" = "true" ]; then
+            VIEWER_SITE_DIR=_site-pages node tests/image-viewer-browser.mjs
+            MEDIA_SITE_DIR=_site-pages MEDIA_BASEURL="$PAGES_BASE_PATH" node tests/publication-media-browser.mjs
+          fi
+      - name: Retain media integrity receipts
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: publication-media-${{ github.sha }}-${{ github.run_id }}
+          path: |
+            test-results/media-backfill/receipt.json
+            _site-pages/assets/publication-media.json
+          if-no-files-found: error
+          retention-days: 90
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: _site-pages
