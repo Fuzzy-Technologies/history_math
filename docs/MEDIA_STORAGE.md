@@ -7,7 +7,7 @@ workstation, local S3 key, new service account or manual file transfer is needed
 ## Destination and authority
 
 Both workflows use the existing `history-math-storage` environment, restricted
-to `master`. Only the upload step receives `S3_ACCESS_KEY_ID` and
+to `master`. Only upload steps receive `S3_ACCESS_KEY_ID` and
 `S3_SECRET_ACCESS_KEY`. Its four environment variables must match:
 
 | Variable             | Value                                                  |
@@ -32,13 +32,14 @@ Secrets, verify publication, then revoke the former key.
 ## Automatic publication
 
 `Publish approved master` retains its existing source, render, PDF and browser
-gates. After producing validated PDFs, it:
+gates. After validating article sources, an upload-only migration preflight
+copies existing PDFs and master originals before expensive rendering. Once the
+deployed PDF manifest uses S3 URLs, that preflight becomes a metadata-only check.
+It never rewrites links or deletes files. After producing validated PDFs, the
+final publication step:
 
-1. Copies and publicly verifies the exact PDFs of the currently deployed site
-   if its manifest still uses local PDF URLs. This happens automatically on the
-   first migration deployment. Once the deployed manifest uses S3 URLs, this
-   compatibility copy is skipped; no manual migration is required for published
-   articles.
+1. Reuses the public media verified during the migration preflight. No manual
+   migration is required for published articles.
 2. Enumerates all source image manifests and every PDF in the actual built site,
    including legacy/static PDF files outside the current article PDF directory.
 3. Uses the original bytes from the repository or the existing verified GitHub
@@ -61,6 +62,12 @@ Transfer or verification failures block the new Pages deployment. The current
 site remains live. Partial uploads are safe to reuse on a later run. A failure
 after output pruning affects only the temporary runner output. Earlier objects
 remain available for the previous site's links and for rollback.
+
+Transient public-read disconnects, timeouts, rate limits and gateway errors
+receive at most three attempts with bounded backoff. Integrity, authentication,
+TLS and metadata failures still block publication. Error diagnostics identify
+the public object key and a network error code, never an upstream message or a
+redirected signed URL.
 
 The pre-migration size gate moves after media finalization: a temporary build
 containing local PDFs must not block a valid lightweight Pages publication.
