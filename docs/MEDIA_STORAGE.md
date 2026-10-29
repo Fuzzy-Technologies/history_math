@@ -11,7 +11,7 @@ to `master`. Only the upload step receives `S3_ACCESS_KEY_ID` and
 `S3_SECRET_ACCESS_KEY`. Its four environment variables must match:
 
 | Variable             | Value                                                  |
-|----------------------|--------------------------------------------------------|
+| -------------------- | ------------------------------------------------------ |
 | `S3_ENDPOINT_URL`    | `https://storage.yandexcloud.kz`                       |
 | `S3_REGION`          | `kz1`                                                  |
 | `S3_BUCKET`          | `history-math-media-kz`                                |
