@@ -5,7 +5,7 @@ function assertActive(signal) {
   if (signal?.aborted) throw signal.reason || new DOMException('Original image request cancelled', 'AbortError');
 }
 
-function validateOriginal({url, apiUrl, sha256, bytes, filename}) {
+function validateOriginal({url, apiUrl, storage, sha256, bytes, filename}) {
   if (!/^[a-f0-9]{64}$/.test(sha256) || !Number.isSafeInteger(bytes) || bytes <= 0 ||
       !/^[a-z0-9][a-z0-9.-]*\.(png|jpe?g|gif|webp|svg)$/i.test(filename)) {
     throw new Error('Invalid original image integrity metadata');
@@ -13,6 +13,12 @@ function validateOriginal({url, apiUrl, sha256, bytes, filename}) {
   const source = new URL(url, globalThis.location?.href || 'http://localhost/');
   if (!['http:', 'https:'].includes(source.protocol) || source.username || source.password) {
     throw new Error('Invalid original image URL');
+  }
+  if (storage) {
+    if (storage !== 's3' || apiUrl || source.href !==
+        `https://storage.yandexcloud.kz/history-math-media-kz/originals/${sha256}/${filename}`) {
+      throw new Error('Invalid S3 original image location');
+    }
   }
   if (apiUrl) {
     const api = new URL(apiUrl);
@@ -31,7 +37,7 @@ function validateOriginal({url, apiUrl, sha256, bytes, filename}) {
 // Release responses are loaded as native images and attachments. Cross-origin
 // fetch cannot read their redirected response without a matching CORS header.
 export function nativeOriginalTarget(descriptor) {
-  if (!descriptor.apiUrl) throw new Error('External original metadata is required');
+  if (!descriptor.apiUrl && descriptor.storage !== 's3') throw new Error('External original metadata is required');
   return {url: validateOriginal(descriptor), filename: descriptor.filename};
 }
 
@@ -40,7 +46,7 @@ export function nativeOriginalTarget(descriptor) {
 export async function loadVerifiedOriginal(descriptor, {fetch: request = globalThis.fetch,
   crypto: cryptoAPI = globalThis.crypto, url: urlAPI = globalThis.URL, signal} = {}) {
   const source = validateOriginal(descriptor);
-  if (descriptor.apiUrl) throw new Error('External originals require native image and attachment delivery');
+  if (descriptor.apiUrl || descriptor.storage === 's3') throw new Error('External originals require native image and attachment delivery');
   assertActive(signal);
   const response = await request(source, {credentials: 'omit', signal});
   assertActive(signal);

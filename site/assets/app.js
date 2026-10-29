@@ -154,7 +154,7 @@ if (viewer && typeof viewer.showModal === 'function') {
     loadController?.abort();
     loadController = new AbortController();
     activeOriginal = {url: image.dataset.original || image.currentSrc || image.src,
-      apiUrl: image.dataset.originalApi, sha256: image.dataset.originalSha256,
+      apiUrl: image.dataset.originalApi, storage: image.dataset.originalStorage, sha256: image.dataset.originalSha256,
       bytes: Number(image.dataset.originalBytes), filename: image.dataset.originalName};
     activeTrigger = trigger;
     viewer.setAttribute('aria-busy', 'true');
@@ -170,7 +170,7 @@ if (viewer && typeof viewer.showModal === 'function') {
     document.documentElement.classList.add('viewer-open');
     viewer.querySelector('[data-viewer-action="close"]').focus();
     try {
-      if (activeOriginal.apiUrl) {
+      if (activeOriginal.apiUrl || activeOriginal.storage === 's3') {
         const original = nativeOriginalTarget(activeOriginal);
         expanded.src = original.url;
         download.download = original.filename;
