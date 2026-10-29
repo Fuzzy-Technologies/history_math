@@ -30,7 +30,8 @@ test('public reads retry transient failures with bounded backoff and safe object
     error.message.includes('UND_ERR_CONNECT_TIMEOUT; 3 attempts') && !error.message.includes('never-log-signed-token'));
   for (const error of [Object.assign(new Error('denied'), {status: 403}), Object.assign(new Error('missing'), {status: 404}),
     Object.assign(new TypeError('fetch failed'), {cause: {code: 'CERT_HAS_EXPIRED'}}), new Error('Media integrity failure')]) {
-    await assert.rejects(readWithRetries(object.key, async () => { throw error; }, {pause: () => assert.fail('No retry for permanent failure')}), value => value === error);
+    await assert.rejects(readWithRetries(object.key, async () => { throw error; }, {pause: () => assert.fail('No retry for permanent failure')}), value =>
+      value.message.includes(object.key) && value.message.includes('1 attempts'));
   }
 });
 

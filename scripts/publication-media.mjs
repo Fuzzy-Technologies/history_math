@@ -88,7 +88,7 @@ export async function sourceBytes(object, request = fetch, retryOptions) {
   // from a pull request. Only the project's existing release objects are valid.
   if (!source.href.startsWith('https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-') ||
       source.search || source.hash || source.username || source.password) throw new Error('Untrusted original source');
-  return readWithRetries(object.key, async () => {
+  return readWithRetries(`original source ${object.key}`, async () => {
     const bytes = await responseBytes(await request(source, {credentials: 'omit', redirect: 'follow', signal: AbortSignal.timeout(120_000)}), object.bytes);
     assertBytes(object, bytes);
     return bytes;

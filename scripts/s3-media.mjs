@@ -74,8 +74,12 @@ export async function readWithRetries(context, read, {pause = milliseconds => ne
     try { return await read(); }
     catch (error) {
       const code = transientCode(error);
-      if (!code) throw error;
-      if (attempt === 2) throw new Error(`Public media read failed: ${context} (${code}; 3 attempts)`);
+      if (!code || attempt === 2) {
+        const tlsCodes = new Set(['CERT_HAS_EXPIRED', 'ERR_TLS_CERT_ALTNAME_INVALID', 'UNABLE_TO_VERIFY_LEAF_SIGNATURE', 'DEPTH_ZERO_SELF_SIGNED_CERT']);
+        const permanent = Number.isInteger(error?.status) ? `HTTP_${error.status}` :
+          tlsCodes.has(error?.cause?.code) ? error.cause.code : /integrity/i.test(error?.message || '') ? 'integrity mismatch' : 'INVALID_MEDIA';
+        throw new Error(`Public media read failed: ${context} (${code || permanent}; ${attempt + 1} attempts)`);
+      }
       await pause([1000, 3000][attempt]);
     }
   }
@@ -85,7 +89,7 @@ export async function readWithRetries(context, read, {pause = milliseconds => ne
 // prove that the public site will be able to download the exact object.
 export async function verifyPublic(object, request = fetch) {
   validateObject(object);
-  return readWithRetries(object.key, async () => {
+  return readWithRetries(`S3 verification ${object.key}`, async () => {
     const response = await request(object.url, {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)});
     if (!response.ok) await responseBytes(response, object.bytes);
     if (response.headers.get('content-type')?.split(';')[0] !== object.content_type ||
