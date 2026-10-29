@@ -10,11 +10,11 @@ Both workflows use the existing `history-math-storage` environment, restricted
 to `master`. Only the upload step receives `S3_ACCESS_KEY_ID` and
 `S3_SECRET_ACCESS_KEY`. Its four environment variables must match:
 
-| Variable | Value |
-| --- | --- |
-| `S3_ENDPOINT_URL` | `https://storage.yandexcloud.kz` |
-| `S3_REGION` | `kz1` |
-| `S3_BUCKET` | `history-math-media-kz` |
+| Variable             | Value                                                  |
+|----------------------|--------------------------------------------------------|
+| `S3_ENDPOINT_URL`    | `https://storage.yandexcloud.kz`                       |
+| `S3_REGION`          | `kz1`                                                  |
+| `S3_BUCKET`          | `history-math-media-kz`                                |
 | `S3_PUBLIC_BASE_URL` | `https://storage.yandexcloud.kz/history-math-media-kz` |
 
 The existing bucket-scoped publisher account requires object upload/read, with
