@@ -196,6 +196,23 @@ test('URL rewriting covers root/project base, legacy HTML, CSS and JSON without 
   });
 });
 
+test('literal percentages and malformed URI escapes stay untouched while valid media URLs migrate', async () => {
+  await fixture(async ({root, site}) => {
+    const plan = await publicationPlan(root, site);
+    const untouched = '<meta name="description" content="Use 100% of the page"><a href="/reference/%E0%A4%A">Reference</a>';
+    const html = untouched + '<a href="/legacy/%6Fld.pdf?download=1#page=2">PDF</a>';
+    const rewritten = rewriteMedia(html, 'index.html', plan);
+    assert.ok(rewritten.startsWith(untouched));
+    assert.ok(rewritten.includes(plan.pdfs.find(value => value.path === '/legacy/old.pdf').object.url + '?download=1#page=2'));
+    const css = 'a{background:url("/decorative/100%.svg")}';
+    assert.equal(rewriteMedia(css, 'assets/style.css', plan), css);
+    const data = {url: '/reference/%FF', image: '/decorative/100%.svg', pdf_url: '/legacy/old.pdf'};
+    const json = JSON.parse(rewriteMedia(JSON.stringify(data), 'assets/example.json', plan));
+    assert.equal(json.url, data.url); assert.equal(json.image, data.image);
+    assert.ok(json.pdf_url.startsWith(storage.base));
+  });
+});
+
 test('native S3 originals use exact identities and never require cross-origin fetch', async () => {
   const descriptor = {url: object.url, storage: 's3', sha256: object.sha256, bytes: object.bytes, filename: object.filename};
   assert.equal(nativeOriginalTarget(descriptor).url, object.url);
