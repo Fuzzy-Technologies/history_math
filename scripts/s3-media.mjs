@@ -41,7 +41,10 @@ export function configuredClient(env = process.env) {
 }
 
 export async function responseBytes(response, limit) {
-  if (!response.ok) throw new Error(`Media HTTP ${response.status}`);
+  if (!response.ok) {
+    try { await response.body?.cancel(); } catch { /* The failed response is discarded. */ }
+    throw Object.assign(new Error(`Media HTTP ${response.status}`), {status: response.status});
+  }
   const chunks = [];
   let length = 0;
   for await (const chunk of response.body) {
@@ -52,17 +55,46 @@ export async function responseBytes(response, limit) {
   return Buffer.concat(chunks);
 }
 
+function transientCode(error) {
+  if ([408, 429, 500, 502, 503, 504].includes(error?.status)) return `HTTP_${error.status}`;
+  const codes = new Set(['ECONNRESET', 'ETIMEDOUT', 'ECONNREFUSED', 'EAI_AGAIN', 'ENETUNREACH', 'EHOSTUNREACH',
+    'UND_ERR_CONNECT_TIMEOUT', 'UND_ERR_SOCKET', 'UND_ERR_HEADERS_TIMEOUT', 'UND_ERR_BODY_TIMEOUT']);
+  for (let cause = error, depth = 0; cause && depth < 4; cause = cause.cause, depth++) {
+    if (codes.has(cause.code)) return cause.code;
+  }
+  if (error?.name === 'TimeoutError') return 'TIMEOUT';
+  if (error instanceof TypeError && error.message === 'fetch failed' && !error.cause?.code) return 'NETWORK';
+  return null;
+}
+
+// Retry only public reads. Authentication, TLS, integrity and metadata errors
+// remain blocking. Never print upstream messages or redirected signed URLs.
+export async function readWithRetries(context, read, {pause = milliseconds => new Promise(done => setTimeout(done, milliseconds))} = {}) {
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try { return await read(); }
+    catch (error) {
+      const code = transientCode(error);
+      if (!code) throw error;
+      if (attempt === 2) throw new Error(`Public media read failed: ${context} (${code}; 3 attempts)`);
+      await pause([1000, 3000][attempt]);
+    }
+  }
+}
+
 // Verification is deliberately anonymous: signed HEAD/metadata alone cannot
 // prove that the public site will be able to download the exact object.
 export async function verifyPublic(object, request = fetch) {
   validateObject(object);
-  const response = await request(object.url, {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)});
-  if (response.headers.get('content-type')?.split(';')[0] !== object.content_type ||
-      !response.headers.get('content-disposition')?.includes(`filename="${object.filename}"`)) {
-    throw new Error(`Invalid public media headers: ${object.key}`);
-  }
-  assertBytes(object, await responseBytes(response, object.bytes));
-  return {...validateObject(object), verified: true};
+  return readWithRetries(object.key, async () => {
+    const response = await request(object.url, {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)});
+    if (!response.ok) await responseBytes(response, object.bytes);
+    if (response.headers.get('content-type')?.split(';')[0] !== object.content_type ||
+        !response.headers.get('content-disposition')?.includes(`filename="${object.filename}"`)) {
+      throw new Error(`Invalid public media headers: ${object.key}`);
+    }
+    assertBytes(object, await responseBytes(response, object.bytes));
+    return {...validateObject(object), verified: true};
+  });
 }
 
 // Content addressing preserves previous publications. There is no delete API,

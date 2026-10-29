@@ -4,9 +4,9 @@ import {mkdtemp, mkdir, writeFile, readFile, rm, access, symlink} from 'node:fs/
 import {tmpdir} from 'node:os';
 import {resolve, dirname} from 'node:path';
 import {HeadObjectCommand, PutObjectCommand} from '@aws-sdk/client-s3';
-import {mediaObject, storage, sha256, assertBytes, validateObject, configuredClient, uploadVerified, transfer} from '../scripts/s3-media.mjs';
+import {mediaObject, storage, sha256, assertBytes, validateObject, configuredClient, uploadVerified, transfer, readWithRetries} from '../scripts/s3-media.mjs';
 import {publicationPlan, rewriteMedia, finalizePublication, requireReceipt, sourceBytes, localBytes} from '../scripts/publication-media.mjs';
-import {eligiblePR, pullRequestObjects, deployedPdfObjects, copyPublishedPdfs, githubData, revisionBytes} from '../scripts/backfill-media.mjs';
+import {eligiblePR, pullRequestObjects, deployedPdfObjects, copyPublishedPdfs, preflightMedia, githubData, revisionBytes} from '../scripts/backfill-media.mjs';
 import {nativeOriginalTarget, loadVerifiedOriginal} from '../site/assets/original-image.js';
 
 const original = Buffer.from('original image fixture'), pdf = Buffer.from('%PDF-1.7\nexisting publication\n%%EOF');
@@ -15,6 +15,40 @@ const publicResponse = (value = object, bytes = original, options = {}) => new R
   headers: {'content-type': value.content_type, 'content-disposition': `attachment; filename="${value.filename}"`, ...options}});
 const config = {S3_ENDPOINT_URL: storage.endpoint, S3_REGION: storage.region, S3_BUCKET: storage.bucket,
   S3_PUBLIC_BASE_URL: storage.base, S3_ACCESS_KEY_ID: 'test', S3_SECRET_ACCESS_KEY: 'never-log-test-secret'};
+
+test('public reads retry transient failures with bounded backoff and safe object diagnostics', async () => {
+  const delays = [];
+  let attempts = 0;
+  assert.equal(await readWithRetries(object.key, async () => {
+    if (++attempts < 3) throw Object.assign(new TypeError('fetch failed'), {cause: {code: 'ECONNRESET', message: 'never-log-signed-token'}});
+    return 'verified';
+  }, {pause: async value => delays.push(value)}), 'verified');
+  assert.equal(attempts, 3); assert.deepEqual(delays, [1000, 3000]);
+  await assert.rejects(readWithRetries(object.key, async () => {
+    throw Object.assign(new TypeError('fetch failed'), {cause: {code: 'UND_ERR_CONNECT_TIMEOUT', message: 'never-log-signed-token'}});
+  }, {pause: async () => {}}), error => error.message.includes(object.key) &&
+    error.message.includes('UND_ERR_CONNECT_TIMEOUT; 3 attempts') && !error.message.includes('never-log-signed-token'));
+  for (const error of [Object.assign(new Error('denied'), {status: 403}), Object.assign(new Error('missing'), {status: 404}),
+    Object.assign(new TypeError('fetch failed'), {cause: {code: 'CERT_HAS_EXPIRED'}}), new Error('Media integrity failure')]) {
+    await assert.rejects(readWithRetries(object.key, async () => { throw error; }, {pause: () => assert.fail('No retry for permanent failure')}), value => value === error);
+  }
+});
+
+test('source download retries a gateway error and reconnect, then checks exact original bytes', async () => {
+  let calls = 0;
+  const source = {...object, source: {url: 'https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/test.png'}};
+  const bytes = await sourceBytes(source, async (url, options) => {
+    assert.equal(options.credentials, 'omit'); assert.equal(options.headers, undefined);
+    if (++calls === 1) return new Response('temporary gateway failure', {status: 503});
+    if (calls === 2) throw Object.assign(new TypeError('fetch failed'), {cause: {code: 'ECONNRESET'}});
+    return new Response(original);
+  }, {pause: async () => {}});
+  assert.equal(calls, 3); assert.deepEqual(bytes, original);
+  let corruptReads = 0;
+  await assert.rejects(sourceBytes(source, async () => { corruptReads++; return new Response('corrupt'); },
+    {pause: () => assert.fail('No retry for integrity failure')}), /integrity/);
+  assert.equal(corruptReads, 1);
+});
 
 test('storage destination, identities and source bytes reject mutations', () => {
   const client = configuredClient(config); client.destroy();
@@ -228,4 +262,26 @@ test('first publication automatically copies old PDFs and skips that migration a
     return Response.json({version: 2, origin, baseurl: '', articles: [{pdf_url: expected.url}]});
   }});
   assert.equal(skipped.summary.existing_pdfs, 0);
+});
+
+test('early migration preflight copies originals and legacy PDFs without changing any site or source files', async () => {
+  await fixture(async ({root, site, path}) => {
+    const pdfObject = mediaObject('pdf', 'example-ru.pdf', sha256(pdf), pdf.length);
+    const htmlFile = resolve(site, 'ru/publications/example/index.html'), before = await readFile(htmlFile, 'utf8');
+    const result = await preflightMedia({root, origin: 'https://history-math.org', baseurl: '',
+      client: {send: async command => { if (command instanceof HeadObjectCommand) throw {$metadata: {httpStatusCode: 404}}; }},
+      request: async url => {
+        if (url.endsWith('.json')) return Response.json({version: 2, origin: 'https://history-math.org', baseurl: '', articles: [{pdf_url: '/assets/pdf/ru/example-ru.pdf'}]});
+        if (url === pdfObject.url) return publicResponse(pdfObject, pdf);
+        if (url === object.url) return publicResponse(object, original);
+        return new Response(pdf, {headers: {'content-type': 'application/pdf'}});
+      }});
+    assert.equal(result.summary.existing_pdfs, 1); assert.equal(result.summary.originals, 1); assert.equal(result.summary.deleted, 0);
+    assert.equal(await readFile(htmlFile, 'utf8'), before);
+    await access(resolve(site, '.' + path)); assert.deepEqual(await readFile(resolve(root, 'site', '.' + path)), original);
+    const skipped = await preflightMedia({root: '/unavailable-not-needed', origin: 'https://history-math.org', baseurl: '',
+      client: {send: () => assert.fail('No new upload for migrated site')}, request: async () => Response.json({version: 2,
+        origin: 'https://history-math.org', baseurl: '', articles: [{pdf_url: pdfObject.url}]})});
+    assert.equal(skipped.summary.existing_pdfs, 0);
+  });
 });

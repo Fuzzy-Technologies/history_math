@@ -2,7 +2,7 @@ import {readFile, writeFile, readdir, realpath, unlink, stat} from 'node:fs/prom
 import {resolve, relative, sep, basename} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {imageInventory, validateExternalOriginal} from './external-originals.mjs';
-import {storage, mediaObject, validateObject, assertBytes, sha256, configuredClient, responseBytes, transfer} from './s3-media.mjs';
+import {storage, mediaObject, validateObject, assertBytes, sha256, configuredClient, responseBytes, transfer, readWithRetries} from './s3-media.mjs';
 
 export async function filesUnder(directory) {
   const files = [];
@@ -77,7 +77,7 @@ export async function publicationPlan(root, siteDirectory) {
     objects: uniqueObjects([...images.map(image => image.object), ...pdfs.map(pdf => pdf.object)])};
 }
 
-export async function sourceBytes(object, request = fetch) {
+export async function sourceBytes(object, request = fetch, retryOptions) {
   if (object.source.file) {
     const bytes = await readFile(object.source.file);
     assertBytes(object, bytes);
@@ -88,9 +88,11 @@ export async function sourceBytes(object, request = fetch) {
   // from a pull request. Only the project's existing release objects are valid.
   if (!source.href.startsWith('https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-') ||
       source.search || source.hash || source.username || source.password) throw new Error('Untrusted original source');
-  const bytes = await responseBytes(await request(source, {credentials: 'omit', redirect: 'follow', signal: AbortSignal.timeout(120_000)}), object.bytes);
-  assertBytes(object, bytes);
-  return bytes;
+  return readWithRetries(object.key, async () => {
+    const bytes = await responseBytes(await request(source, {credentials: 'omit', redirect: 'follow', signal: AbortSignal.timeout(120_000)}), object.bytes);
+    assertBytes(object, bytes);
+    return bytes;
+  }, retryOptions);
 }
 
 const tagPattern = /<[a-z][a-z0-9:-]*\b(?:[^>"']|"[^"]*"|'[^']*')*>/gi;
@@ -201,7 +203,9 @@ async function main() {
   const client = configuredClient();
   try {
     const plan = await publicationPlan(process.cwd(), args[index + 1]);
-    const receipt = await transfer(plan.objects, client, sourceBytes);
+    const receipt = await transfer(plan.objects, client, sourceBytes, {progress: (done, total) => {
+      if (done % 25 === 0 || done === total) console.log(`Publicly verified ${done}/${total} publication objects`);
+    }});
     console.log(JSON.stringify(await finalizePublication(args[index + 1], plan, receipt, {pruneOutput: args.includes('--prune-output')})));
   } finally { client.destroy(); }
 }

@@ -3,7 +3,7 @@ import {resolve, dirname, basename} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {imageInventory} from './external-originals.mjs';
 import {imageObjects, uniqueObjects, sourceBytes, localBytes} from './publication-media.mjs';
-import {mediaObject, assertBytes, sha256, configuredClient, responseBytes, transfer} from './s3-media.mjs';
+import {mediaObject, assertBytes, sha256, configuredClient, responseBytes, transfer, readWithRetries} from './s3-media.mjs';
 
 const repository = 'Fuzzy-Technologies/history_math';
 const apiRoot = `https://api.github.com/repos/${repository}`;
@@ -70,17 +70,19 @@ export async function pullRequestObjects(api = githubData, request = fetch) {
 
 export async function revisionBytes(revision, path, request = fetch, limit = sourcePdfLimit) {
   if (!revisionPattern.test(revision) || !/^site\/assets\/[a-z0-9._/-]+$/i.test(path) || path.includes('..')) throw new Error('Unsafe revision media source');
-  return responseBytes(await request(`https://raw.githubusercontent.com/${repository}/${revision}/${path}`,
-    {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)}), limit);
+  return readWithRetries(`${revision}/${basename(path)}`, async () => responseBytes(await request(`https://raw.githubusercontent.com/${repository}/${revision}/${path}`,
+    {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)}), limit));
 }
 
 export async function deployedPdfObjects(origin, baseurl, request = fetch, {legacyOnly = false} = {}) {
   if (!['https://history-math.org', 'https://fuzzy-technologies.github.io'].includes(origin) ||
       !['', '/history_math'].includes(baseurl)) throw new Error('Untrusted publication origin');
-  const manifestResponse = await request(origin + baseurl + '/assets/article-pdfs.json',
-    {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)});
-  if (!manifestResponse.ok) throw new Error('Current publication PDF manifest is unavailable');
-  const manifest = await manifestResponse.json();
+  const manifest = await readWithRetries('published PDF manifest', async () => {
+    const response = await request(origin + baseurl + '/assets/article-pdfs.json',
+      {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)});
+    if (!response.ok) await responseBytes(response, 0);
+    return response.json();
+  });
   if (manifest.version !== 2 || !Array.isArray(manifest.articles) || !manifest.articles.length || manifest.origin !== origin || manifest.baseurl !== baseurl) {
     throw new Error('Invalid current publication PDF manifest');
   }
@@ -90,25 +92,41 @@ export async function deployedPdfObjects(origin, baseurl, request = fetch, {lega
     if (!migrated && !/^\/assets\/pdf\/(en|ru)\/[a-z0-9-]+\.pdf$/.test(article.pdf_url)) throw new Error('Unsafe deployed PDF URL');
     if (migrated && legacyOnly) continue;
     const url = migrated ? article.pdf_url : origin + baseurl + article.pdf_url;
-    const response = await request(url, {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)});
-    if (response.headers.get('content-type')?.split(';')[0] !== 'application/pdf') throw new Error('Deployed PDF is not a PDF');
-    const bytes = await responseBytes(response, sourcePdfLimit);
-    const object = {...mediaObject('pdf', basename(article.pdf_url), sha256(bytes), bytes.length), source: {deployed_url: url}};
-    if (migrated && object.url !== url) throw new Error('Changed migrated PDF identity');
-    assertBytes(object, bytes); objects.push(object);
+    objects.push(await readWithRetries(basename(article.pdf_url), async () => {
+      const response = await request(url, {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)});
+      if (!response.ok) await responseBytes(response, sourcePdfLimit);
+      if (response.headers.get('content-type')?.split(';')[0] !== 'application/pdf') throw new Error('Deployed PDF is not a PDF');
+      const bytes = await responseBytes(response, sourcePdfLimit);
+      const object = {...mediaObject('pdf', basename(article.pdf_url), sha256(bytes), bytes.length), source: {deployed_url: url}};
+      if (migrated && object.url !== url) throw new Error('Changed migrated PDF identity');
+      assertBytes(object, bytes); return object;
+    }));
   }
   return objects;
 }
 
 export async function copyPublishedPdfs({origin, baseurl, client, request = fetch, progress} = {}) {
   const objects = uniqueObjects(await deployedPdfObjects(origin, baseurl, request, {legacyOnly: true}));
-  const receipt = await transfer(objects, client, async object => {
+  const receipt = await transfer(objects, client, object => readWithRetries(object.key, async () => {
     const bytes = await responseBytes(await request(object.source.deployed_url,
       {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)}), object.bytes);
     assertBytes(object, bytes); return bytes;
-  }, {request, progress});
+  }), {request, progress});
   return {version: 1, objects: receipt, summary: {existing_pdfs: objects.length,
     bytes: objects.reduce((sum, object) => sum + object.bytes, 0), deleted: 0}};
+}
+
+// Upload-only migration runs before expensive rendering. A deployed S3 PDF
+// manifest makes this a cheap no-op on subsequent publications.
+export async function preflightMedia({root, origin, baseurl, client, request = fetch, progress} = {}) {
+  const copied = await copyPublishedPdfs({origin, baseurl, client, request, progress});
+  if (!copied.summary.existing_pdfs) return copied;
+  const images = imageObjects(imageInventory(root), path => ({file: resolve(root, 'site', '.' + path)}));
+  for (const image of images.filter(image => !image.external_url)) assertBytes(image.object, await localBytes(resolve(root, 'site'), image.path));
+  const originals = await transfer(uniqueObjects(images.map(image => image.object)), client,
+    object => sourceBytes(object, request), {request, progress});
+  return {version: 1, objects: [...copied.objects, ...originals], summary: {...copied.summary,
+    originals: originals.length, bytes: copied.summary.bytes + originals.reduce((sum, object) => sum + object.bytes, 0)}};
 }
 
 export async function backfill({root, origin, baseurl, includeOpenPRs, client, api = githubData, request = fetch, progress} = {}) {
@@ -124,9 +142,11 @@ export async function backfill({root, origin, baseurl, includeOpenPRs, client, a
       assertBytes(object, bytes); return bytes;
     }
     if (object.source.deployed_url) {
-      const bytes = await responseBytes(await request(object.source.deployed_url,
-        {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)}), object.bytes);
-      assertBytes(object, bytes); return bytes;
+      return readWithRetries(object.key, async () => {
+        const bytes = await responseBytes(await request(object.source.deployed_url,
+          {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)}), object.bytes);
+        assertBytes(object, bytes); return bytes;
+      });
     }
     return sourceBytes(object, request);
   }, {request, progress});
@@ -137,15 +157,16 @@ export async function backfill({root, origin, baseurl, includeOpenPRs, client, a
 
 async function main() {
   const publishedOnly = process.argv.includes('--published-only');
+  const preflight = process.argv.includes('--preflight');
   if (process.env.GITHUB_REF !== 'refs/heads/master' ||
-      !(publishedOnly ? ['push', 'workflow_dispatch'] : ['workflow_dispatch']).includes(process.env.GITHUB_EVENT_NAME)) {
+      !(publishedOnly || preflight ? ['push', 'workflow_dispatch'] : ['workflow_dispatch']).includes(process.env.GITHUB_EVENT_NAME)) {
     throw new Error('Backfill runs only through trusted GitHub Actions on master');
   }
   const client = configuredClient(), output = resolve('test-results/media-backfill/receipt.json');
   try {
     const options = {root: process.cwd(), origin: process.env.PAGES_ORIGIN, baseurl: process.env.PAGES_BASE_PATH || '',
       includeOpenPRs: true, client, progress: (done, total) => { if (done % 25 === 0 || done === total) console.log(`Publicly verified ${done}/${total} objects`); }};
-    const receipt = await (publishedOnly ? copyPublishedPdfs(options) : backfill(options));
+    const receipt = await (preflight ? preflightMedia(options) : publishedOnly ? copyPublishedPdfs(options) : backfill(options));
     await mkdir(dirname(output), {recursive: true});
     await writeFile(output, JSON.stringify(receipt, null, 2) + '\n');
     console.log(JSON.stringify(receipt.summary));
