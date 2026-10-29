@@ -16,6 +16,8 @@ test('S3 publication stays on approved master and blocks Pages upload until fina
   assert.equal(job.environment, 'history-math-storage');
   const media = steps.findIndex(step => step.name === 'Publish verified S3 media');
   const preflight = steps.findIndex(step => step.name === 'Preflight existing S3 media copies');
+  const attachment = steps.findIndex(step => step.name === 'Check native S3 attachment downloads');
+  const full = steps.findIndex(step => step.name === 'Verify site code, layout and browser contracts');
   const check = steps.findIndex(step => step.name === 'Verify final lightweight publication');
   const upload = steps.findIndex(step => step.uses?.startsWith('actions/upload-pages-artifact@'));
   assert.ok(media > steps.findIndex(step => step.name === 'Build and verify configured Pages site'));
@@ -25,6 +27,10 @@ test('S3 publication stays on approved master and blocks Pages upload until fina
   assert.ok(preflight < steps.findIndex(step => step.name === 'Install PDF rendering engine'));
   assert.match(steps[preflight].run, /backfill-media.mjs --preflight/);
   assert.doesNotMatch(steps[preflight].run, /prune|finalize|publication-media.mjs/);
+  assert.ok(attachment > steps.findIndex(step => step.name === 'Install PDF rendering engine') && attachment < full);
+  assert.equal(steps[attachment].if, "steps.plan.outputs.full_checks == 'true'");
+  assert.match(steps[attachment].run, /s3-download-browser.mjs/);
+  assert.ok(!JSON.stringify(steps[attachment]).includes('secrets.'));
   for (const key of ['S3_ACCESS_KEY_ID', 'S3_SECRET_ACCESS_KEY']) {
     assert.equal(steps[media].env[key], '${{ secrets.' + key + ' }}');
     assert.equal(steps[preflight].env[key], '${{ secrets.' + key + ' }}');

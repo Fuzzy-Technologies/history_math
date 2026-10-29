@@ -75,6 +75,12 @@ jobs:
           if [ "${{ steps.plan.outputs.full_checks }}" = "true" ] && ! command -v pdftoppm >/dev/null; then
             sudo apt-get install -y poppler-utils
           fi
+      - name: Check native S3 attachment downloads
+        if: steps.plan.outputs.full_checks == 'true'
+        env:
+          PAGES_ORIGIN: https://${{ steps.pages.outputs.host }}
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: node tests/s3-download-browser.mjs
       - name: Verify site code, layout and browser contracts
         if: steps.plan.outputs.full_checks == 'true'
         run: |

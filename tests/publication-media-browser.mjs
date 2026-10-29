@@ -6,6 +6,7 @@ import {chromium} from 'playwright';
 import {filesUnder} from '../scripts/publication-media.mjs';
 import {storage, validateObject, assertBytes} from '../scripts/s3-media.mjs';
 import {stubMetrika} from './metrika-fixture.mjs';
+import {attachmentRequestFailure, unexpectedAttachmentFailures} from './request-failures.mjs';
 
 const root = resolve(process.env.MEDIA_SITE_DIR || '_site-pages'), base = process.env.MEDIA_BASEURL || '';
 const receipt = JSON.parse(await readFile(resolve(root, 'assets/publication-media.json'), 'utf8'));
@@ -46,9 +47,10 @@ try {
       const context = await browser.newContext({viewport: {width, height: 900}, reducedMotion: 'reduce'});
       await stubMetrika(context);
       const page = await context.newPage(), requests = [], errors = [];
+      const failures = [], verifiedDownloads = new Set();
       page.on('request', request => requests.push({url: request.url(), type: request.resourceType()}));
       page.on('pageerror', error => errors.push(error.message));
-      page.on('requestfailed', request => errors.push(request.url()));
+      page.on('requestfailed', request => failures.push(attachmentRequestFailure(request)));
       page.on('response', response => { if (response.status() >= 400) errors.push(`${response.status()} ${response.url()}`); });
       await page.goto(origin + base + url, {waitUntil: 'networkidle'});
       await page.locator('main img').evaluateAll(async images => {
@@ -60,23 +62,34 @@ try {
       assert.ok(await trigger.count(), `S3 viewer fixture: ${url}`);
       const target = await trigger.locator('img').getAttribute('data-original');
       assert.ok(objects.has(target));
+      const originalResponse = page.waitForResponse(response => response.url() === target && response.request().resourceType() === 'image');
       await trigger.click();
+      const loaded = await originalResponse;
+      assert.equal(loaded.status(), 200);
+      await page.waitForFunction(() => document.querySelector('#image-viewer').getAttribute('aria-busy') === 'false');
       await page.locator('.viewer-canvas img').evaluate(image => image.decode());
+      assert.equal(await page.locator('.viewer-canvas img').getAttribute('src'), target);
+      assert.equal(await loaded.finished(), null, 'The original image response must finish before closing the viewer');
       assert.ok(requests.some(request => request.url === target && request.type === 'image'));
       assert.ok(!requests.some(request => request.url === target && ['fetch', 'xhr'].includes(request.type)), 'Native zoom requires no bucket CORS');
       const [download] = await Promise.all([page.waitForEvent('download'), page.locator('[data-viewer-download]').click()]);
       assert.equal(await download.failure(), null);
+      assert.equal(download.url(), target);
       assert.equal(download.suggestedFilename(), objects.get(target).filename);
       assertBytes(objects.get(target), await readFile(await download.path()));
+      verifiedDownloads.add(target);
       await page.screenshot({path: `test-results/s3-media/${url.replaceAll('/', '_')}-${width}.png`});
       await page.keyboard.press('Escape');
       const article = articlePages.find(article => article.url === url);
       if (article && width === 390) {
         const [pdf] = await Promise.all([page.waitForEvent('download'), page.locator('.article-pdf').click()]);
         assert.equal(await pdf.failure(), null);
+        assert.equal(pdf.url(), article.pdf_url);
         assertBytes(objects.get(article.pdf_url), await readFile(await pdf.path()));
+        verifiedDownloads.add(article.pdf_url);
       }
       assert.deepEqual(errors, [], url);
+      assert.deepEqual(unexpectedAttachmentFailures(failures, verifiedDownloads), [], url);
       await context.close();
     }
   }
