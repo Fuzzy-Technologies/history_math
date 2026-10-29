@@ -120,7 +120,9 @@ export function rewriteMedia(text, filename, plan) {
     const release = external.get(url.origin + url.pathname);
     if (release) return {item: release, suffix: url.search + url.hash};
     if (![plan.origin, 'https://history-math.org', 'https://fuzzy-technologies.github.io'].includes(url.origin)) return null;
-    let path = decodeURIComponent(url.pathname);
+    // Non-URL metadata can contain literal percentages or incomplete escapes.
+    let path;
+    try { path = decodeURIComponent(url.pathname); } catch { return null; }
     for (const base of [plan.baseurl, '/history_math'].filter(Boolean)) if (path.startsWith(base + '/')) { path = path.slice(base.length); break; }
     const item = objects.get(path);
     return item ? {item, suffix: url.search + url.hash} : null;
