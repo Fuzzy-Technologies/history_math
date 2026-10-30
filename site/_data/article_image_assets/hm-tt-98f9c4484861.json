@@ -1,0 +1,277 @@
+{
+  "/assets/images/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-01.png": {
+    "sha256": "a2519259e197abf8df5b79b4339088ebfa1477e43e4473e7e96dd32a23656ac3",
+    "width": 1464,
+    "height": 1968,
+    "bytes": 5120954,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-01.png-960.webp",
+        "width": 960,
+        "height": 1290,
+        "sha256": "a993efbe81b6cfdd49927fe3225cefc70d681878c91e116391a9e88703dd4271",
+        "bytes": 1200504
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-98f9c4484861-volshebnye-palochki-nepera-1-01-a2519259e197abf8df5b79b4339088ebfa1477e43e4473e7e96dd32a23656ac3.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630501896",
+      "asset_id": 630501896,
+      "release_tag": "article-originals-a",
+      "sha256": "a2519259e197abf8df5b79b4339088ebfa1477e43e4473e7e96dd32a23656ac3",
+      "bytes": 5120954
+    }
+  },
+  "/assets/images/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-02.png": {
+    "sha256": "04ffe06037ea582620d992051a1b2a01a095c2c1e067be195d7e5134109f60df",
+    "width": 865,
+    "height": 1080,
+    "bytes": 1592806,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-02-png-reading-865-9c571f8cdbf2.webp",
+        "width": 865,
+        "height": 1080,
+        "sha256": "9c571f8cdbf2db81b3e56ff01525ab829912cf90cab0c3e7a5d4d720c77d3e45",
+        "bytes": 900668
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-98f9c4484861-volshebnye-palochki-nepera-1-02-04ffe06037ea582620d992051a1b2a01a095c2c1e067be195d7e5134109f60df.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554327",
+      "asset_id": 630554327,
+      "release_tag": "article-originals-0",
+      "sha256": "04ffe06037ea582620d992051a1b2a01a095c2c1e067be195d7e5134109f60df",
+      "bytes": 1592806
+    }
+  },
+  "/assets/images/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-03.png": {
+    "sha256": "94c5706a7f56940458da2de64e9f0394544d4d806ec96f8cd04bcf04e4fe53f8",
+    "width": 1050,
+    "height": 610,
+    "bytes": 1538095,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-03.png-960.webp",
+        "width": 960,
+        "height": 558,
+        "sha256": "afa4ef0c5638a48e9f883b2c71aadb4bea82d094dd871edb0366bcebd2942726",
+        "bytes": 834866
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-98f9c4484861-volshebnye-palochki-nepera-1-03-94c5706a7f56940458da2de64e9f0394544d4d806ec96f8cd04bcf04e4fe53f8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554480",
+      "asset_id": 630554480,
+      "release_tag": "article-originals-9",
+      "sha256": "94c5706a7f56940458da2de64e9f0394544d4d806ec96f8cd04bcf04e4fe53f8",
+      "bytes": 1538095
+    }
+  },
+  "/assets/images/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-04.png": {
+    "sha256": "f47826e33eade9263aff18d61d5b4723d333aa4671069786fd71fac0c499d0f2",
+    "width": 1500,
+    "height": 1400,
+    "bytes": 3526224,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-04.png-960.webp",
+        "width": 960,
+        "height": 896,
+        "sha256": "599e39ea4ae2580d6f3405bbb467e0823333c2d17668aa7b045e524f816263f5",
+        "bytes": 891160
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-98f9c4484861-volshebnye-palochki-nepera-1-04-f47826e33eade9263aff18d61d5b4723d333aa4671069786fd71fac0c499d0f2.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554634",
+      "asset_id": 630554634,
+      "release_tag": "article-originals-f",
+      "sha256": "f47826e33eade9263aff18d61d5b4723d333aa4671069786fd71fac0c499d0f2",
+      "bytes": 3526224
+    }
+  },
+  "/assets/images/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-05.png": {
+    "sha256": "23653e8c49d293c71f32d082a7b8d66536bc149718902900c2a7b5e752d4748e",
+    "width": 1750,
+    "height": 1900,
+    "bytes": 4789321,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-05.png-960.webp",
+        "width": 960,
+        "height": 1042,
+        "sha256": "ea5471535d2fb57673fbdd6c7852929f5db6318e8a77b190554f3064fee54790",
+        "bytes": 896238
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-98f9c4484861-volshebnye-palochki-nepera-1-05-23653e8c49d293c71f32d082a7b8d66536bc149718902900c2a7b5e752d4748e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554782",
+      "asset_id": 630554782,
+      "release_tag": "article-originals-2",
+      "sha256": "23653e8c49d293c71f32d082a7b8d66536bc149718902900c2a7b5e752d4748e",
+      "bytes": 4789321
+    }
+  },
+  "/assets/images/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-06.png": {
+    "sha256": "f0da35c341a8bc37a06c70cfb9027bd7748c0bfeceb2b2f23448255d82c6cfac",
+    "width": 300,
+    "height": 780,
+    "bytes": 102904,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-06.png-300.webp",
+        "width": 300,
+        "height": 780,
+        "sha256": "04f138421570ef7a10a4db6d83adb4bdce458ddf2681cd422af179278f0f4c53",
+        "bytes": 83970
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-98f9c4484861-volshebnye-palochki-nepera-1-06-f0da35c341a8bc37a06c70cfb9027bd7748c0bfeceb2b2f23448255d82c6cfac.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554950",
+      "asset_id": 630554950,
+      "release_tag": "article-originals-f",
+      "sha256": "f0da35c341a8bc37a06c70cfb9027bd7748c0bfeceb2b2f23448255d82c6cfac",
+      "bytes": 102904
+    }
+  },
+  "/assets/images/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-07.png": {
+    "sha256": "4d0eec97801b9d2bbf42c2a9757a621a5206d0248bd9d2a357691cdafca8a570",
+    "width": 360,
+    "height": 360,
+    "bytes": 54749,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-07.png-360.webp",
+        "width": 360,
+        "height": 360,
+        "sha256": "9d9a0e57573f0818e3f272fccbc68d844047ca67555c5cd82d37827717a0d362",
+        "bytes": 32968
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-98f9c4484861-volshebnye-palochki-nepera-1-07-4d0eec97801b9d2bbf42c2a9757a621a5206d0248bd9d2a357691cdafca8a570.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555102",
+      "asset_id": 630555102,
+      "release_tag": "article-originals-4",
+      "sha256": "4d0eec97801b9d2bbf42c2a9757a621a5206d0248bd9d2a357691cdafca8a570",
+      "bytes": 54749
+    }
+  },
+  "/assets/images/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-08.png": {
+    "sha256": "4286b9849f1700b401d7758b8c2e05713dcd97e0867274d5b3a0f328e8870463",
+    "width": 830,
+    "height": 630,
+    "bytes": 1309298,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-08.png-830.webp",
+        "width": 830,
+        "height": 630,
+        "sha256": "23620d3438881a99376805b66c567b17d5d18fa1d262f31a717d848c7472881b",
+        "bytes": 666252
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-98f9c4484861-volshebnye-palochki-nepera-1-08-4286b9849f1700b401d7758b8c2e05713dcd97e0867274d5b3a0f328e8870463.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555246",
+      "asset_id": 630555246,
+      "release_tag": "article-originals-4",
+      "sha256": "4286b9849f1700b401d7758b8c2e05713dcd97e0867274d5b3a0f328e8870463",
+      "bytes": 1309298
+    }
+  },
+  "/assets/images/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-09.png": {
+    "sha256": "820ab487ae76ba84d998c4b0d4e8c68095223bdce9a148662d7a2836e8f552c8",
+    "width": 874,
+    "height": 874,
+    "bytes": 80973,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-09.png-874.webp",
+        "width": 874,
+        "height": 874,
+        "sha256": "96159c127a5a604682a0a3ecc8c27c1d3e9ffb58c0b3f8b3ceea4b4d389bf393",
+        "bytes": 42890
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-98f9c4484861-volshebnye-palochki-nepera-1-09-820ab487ae76ba84d998c4b0d4e8c68095223bdce9a148662d7a2836e8f552c8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555468",
+      "asset_id": 630555468,
+      "release_tag": "article-originals-8",
+      "sha256": "820ab487ae76ba84d998c4b0d4e8c68095223bdce9a148662d7a2836e8f552c8",
+      "bytes": 80973
+    }
+  },
+  "/assets/images/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-10.png": {
+    "sha256": "ca701845dd9bfdb879fa117b9c8f1d0187409d068ce46f2bc3925d12eb3f1d56",
+    "width": 3321,
+    "height": 2785,
+    "bytes": 8197433,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-10.png-960.webp",
+        "width": 960,
+        "height": 805,
+        "sha256": "f5ea514935251ca8c57bd3022939e25480ded15645ab42e005d9227eb5cfe856",
+        "bytes": 667090
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-98f9c4484861-volshebnye-palochki-nepera-1-10-ca701845dd9bfdb879fa117b9c8f1d0187409d068ce46f2bc3925d12eb3f1d56.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555619",
+      "asset_id": 630555619,
+      "release_tag": "article-originals-c",
+      "sha256": "ca701845dd9bfdb879fa117b9c8f1d0187409d068ce46f2bc3925d12eb3f1d56",
+      "bytes": 8197433
+    }
+  },
+  "/assets/images/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-11.png": {
+    "sha256": "e3d678e73b18b51910191c8c3a163f044dc03ff3b3c3fe7736b9a6575fef2195",
+    "width": 350,
+    "height": 350,
+    "bytes": 35678,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-98f9c4484861/volshebnye-palochki-nepera-1-11.png-350.webp",
+        "width": 350,
+        "height": 350,
+        "sha256": "e303664700c96c17002ec3656af497f74d0541d7757736fc67bd52e600b086cb",
+        "bytes": 20034
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-98f9c4484861-volshebnye-palochki-nepera-1-11-e3d678e73b18b51910191c8c3a163f044dc03ff3b3c3fe7736b9a6575fef2195.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555776",
+      "asset_id": 630555776,
+      "release_tag": "article-originals-e",
+      "sha256": "e3d678e73b18b51910191c8c3a163f044dc03ff3b3c3fe7736b9a6575fef2195",
+      "bytes": 35678
+    }
+  }
+}

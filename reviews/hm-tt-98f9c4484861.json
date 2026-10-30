@@ -1,0 +1,37 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-98f9c4484861",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "9c821883f01e650815a1148e7dabaa54c911e55122e23b4d1ed8133fee9428af",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Мержим.",
+    "source_commit": "b13dda13e3ce119c0a4ec6281093942874f77a01",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/193"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 11,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-12-05",
+      "url": "https://teletype.in/@history_math/Volshebnye-palochki-Nepera-12-05"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "external_editorial_reviews": [
+    {
+      "url": "https://github.com/Fuzzy-Technologies/history_math/pull/193#pullrequestreview-5618267955",
+      "review_id": 5618267955,
+      "source_commit": "b13dda13e3ce119c0a4ec6281093942874f77a01",
+      "disposition": "accepted_unchanged",
+      "resolution": "Tim55667757 approved publication of PR #193 in the 2026-10-30 owner chat instruction. The previously flagged source material is retained unchanged."
+    }
+  ]
+}
