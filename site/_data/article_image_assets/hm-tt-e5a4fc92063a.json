@@ -1,0 +1,227 @@
+{
+  "/assets/images/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-01.jpeg": {
+    "sha256": "d994759dc390d9c7dd05f8b60ff3070f34ff74f0ac8027a5263ba5016b7320e2",
+    "width": 1744,
+    "height": 2226,
+    "bytes": 909709,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-01.jpeg-960.webp",
+        "width": 960,
+        "height": 1225,
+        "sha256": "aec0e859d8fb0be92ea728fefaf19fb55019a8d9c5fa53b255ea3534dda40119",
+        "bytes": 613402
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-e5a4fc92063a-zadacha-forda-kadrovyj-rebus-01-d994759dc390d9c7dd05f8b60ff3070f34ff74f0ac8027a5263ba5016b7320e2.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497230",
+      "asset_id": 630497230,
+      "release_tag": "article-originals-d",
+      "sha256": "d994759dc390d9c7dd05f8b60ff3070f34ff74f0ac8027a5263ba5016b7320e2",
+      "bytes": 909709
+    }
+  },
+  "/assets/images/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-02.png": {
+    "sha256": "f0b3711a7df1384de6a254d3b1ea2dac4266bc0538200528359b6ef2ce7e3e69",
+    "width": 337,
+    "height": 324,
+    "bytes": 199908,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-02.png-337.webp",
+        "width": 337,
+        "height": 324,
+        "sha256": "cab02e6cac7ec503243375545563af8c49651d19a3667ddbefbac6a4b649858f",
+        "bytes": 92900
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-e5a4fc92063a-zadacha-forda-kadrovyj-rebus-02-f0b3711a7df1384de6a254d3b1ea2dac4266bc0538200528359b6ef2ce7e3e69.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551639",
+      "asset_id": 630551639,
+      "release_tag": "article-originals-f",
+      "sha256": "f0b3711a7df1384de6a254d3b1ea2dac4266bc0538200528359b6ef2ce7e3e69",
+      "bytes": 199908
+    }
+  },
+  "/assets/images/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-03.png": {
+    "sha256": "aea3c7ad32bb7e38aabed7d0faa863e5783cf5daf4c414475be1b6ff14a35dfc",
+    "width": 4775,
+    "height": 3772,
+    "bytes": 11172184,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-03.png-960.webp",
+        "width": 960,
+        "height": 758,
+        "sha256": "dd961745417565701ee46dbc540b870ab0ef0fbd620c753874c81b5144c0763a",
+        "bytes": 293286
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-e5a4fc92063a-zadacha-forda-kadrovyj-rebus-03-aea3c7ad32bb7e38aabed7d0faa863e5783cf5daf4c414475be1b6ff14a35dfc.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551868",
+      "asset_id": 630551868,
+      "release_tag": "article-originals-a",
+      "sha256": "aea3c7ad32bb7e38aabed7d0faa863e5783cf5daf4c414475be1b6ff14a35dfc",
+      "bytes": 11172184
+    }
+  },
+  "/assets/images/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-04.png": {
+    "sha256": "72b8c1bfd4cca7ccff157fe1f0f87899ffcf7424c3ba592fb148f4de4218e3d4",
+    "width": 670,
+    "height": 527,
+    "bytes": 488782,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-04.png-670.webp",
+        "width": 670,
+        "height": 527,
+        "sha256": "0cb0b792a62becc79fc4d4b80f46cf030ebcf7f7d97071b133fa8a8b0d4f638b",
+        "bytes": 216462
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-e5a4fc92063a-zadacha-forda-kadrovyj-rebus-04-72b8c1bfd4cca7ccff157fe1f0f87899ffcf7424c3ba592fb148f4de4218e3d4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552001",
+      "asset_id": 630552001,
+      "release_tag": "article-originals-7",
+      "sha256": "72b8c1bfd4cca7ccff157fe1f0f87899ffcf7424c3ba592fb148f4de4218e3d4",
+      "bytes": 488782
+    }
+  },
+  "/assets/images/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-05.png": {
+    "sha256": "818569e8d63839da69ba7f46a8a430c4a9e8ff16ff697a65f33e07ac81be9942",
+    "width": 3916,
+    "height": 2826,
+    "bytes": 9925504,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-05.png-960.webp",
+        "width": 960,
+        "height": 693,
+        "sha256": "8ba61d34543f94ea5724101e952ccab76c34715a74d481c7e7d1b5ea2b9c2ef4",
+        "bytes": 363210
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-e5a4fc92063a-zadacha-forda-kadrovyj-rebus-05-818569e8d63839da69ba7f46a8a430c4a9e8ff16ff697a65f33e07ac81be9942.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552188",
+      "asset_id": 630552188,
+      "release_tag": "article-originals-8",
+      "sha256": "818569e8d63839da69ba7f46a8a430c4a9e8ff16ff697a65f33e07ac81be9942",
+      "bytes": 9925504
+    }
+  },
+  "/assets/images/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-06.png": {
+    "sha256": "e090977a0f72a70df128b4277dd94d1f3427beebf97269cfb6f09a73fa97a15c",
+    "width": 1162,
+    "height": 665,
+    "bytes": 242144,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-06.png-960.webp",
+        "width": 960,
+        "height": 549,
+        "sha256": "1743d7d76656fafa07d9def04fd75640387f91fc41d8b30fc2d597f264d0d707",
+        "bytes": 105910
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-e5a4fc92063a-zadacha-forda-kadrovyj-rebus-06-e090977a0f72a70df128b4277dd94d1f3427beebf97269cfb6f09a73fa97a15c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552319",
+      "asset_id": 630552319,
+      "release_tag": "article-originals-e",
+      "sha256": "e090977a0f72a70df128b4277dd94d1f3427beebf97269cfb6f09a73fa97a15c",
+      "bytes": 242144
+    }
+  },
+  "/assets/images/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-07.png": {
+    "sha256": "de638998912755d745a3cf2c8dd3104b38bd2e4ed400675d9fe5fe55cb58e6d2",
+    "width": 600,
+    "height": 800,
+    "bytes": 645168,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-07.png-600.webp",
+        "width": 600,
+        "height": 800,
+        "sha256": "db3083ea4dc20411ff47b179e418fe5be335948749c9bf72e8d8e8c4e8caf0a8",
+        "bytes": 272084
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-e5a4fc92063a-zadacha-forda-kadrovyj-rebus-07-de638998912755d745a3cf2c8dd3104b38bd2e4ed400675d9fe5fe55cb58e6d2.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552497",
+      "asset_id": 630552497,
+      "release_tag": "article-originals-d",
+      "sha256": "de638998912755d745a3cf2c8dd3104b38bd2e4ed400675d9fe5fe55cb58e6d2",
+      "bytes": 645168
+    }
+  },
+  "/assets/images/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-08.png": {
+    "sha256": "f9c900211e164027a3c8e334ac1bb14402c859758b130f1af234e52c4ef05bf8",
+    "width": 3264,
+    "height": 2448,
+    "bytes": 13073946,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-08.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "a203da1bc4e8c2dbc61fc1569b9ccd97ded2e9c86518f7bdd14fb7afff810167",
+        "bytes": 744802
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-e5a4fc92063a-zadacha-forda-kadrovyj-rebus-08-f9c900211e164027a3c8e334ac1bb14402c859758b130f1af234e52c4ef05bf8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552668",
+      "asset_id": 630552668,
+      "release_tag": "article-originals-f",
+      "sha256": "f9c900211e164027a3c8e334ac1bb14402c859758b130f1af234e52c4ef05bf8",
+      "bytes": 13073946
+    }
+  },
+  "/assets/images/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-09.jpeg": {
+    "sha256": "0109d3da645f0f0944ba395811d78601490b75b657565212122cdea9793a984f",
+    "width": 802,
+    "height": 525,
+    "bytes": 47416,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-09-802.jpeg",
+        "width": 802,
+        "height": 525,
+        "bytes": 47416,
+        "sha256": "0109d3da645f0f0944ba395811d78601490b75b657565212122cdea9793a984f"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-e5a4fc92063a-zadacha-forda-kadrovyj-rebus-09-0109d3da645f0f0944ba395811d78601490b75b657565212122cdea9793a984f.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552790",
+      "asset_id": 630552790,
+      "release_tag": "article-originals-0",
+      "sha256": "0109d3da645f0f0944ba395811d78601490b75b657565212122cdea9793a984f",
+      "bytes": 47416
+    }
+  }
+}
