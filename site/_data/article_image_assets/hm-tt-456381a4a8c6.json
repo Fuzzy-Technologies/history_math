@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-456381a4a8c6/astrolyabiya-09-04-01.png": {
+    "sha256": "c1148d06f8c015c966bd36b7faf132b87456aec3c6489a005150798b89199e25",
+    "width": 1547,
+    "height": 2000,
+    "bytes": 3078545,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-456381a4a8c6/astrolyabiya-09-04-01.png-960.webp",
+        "width": 960,
+        "height": 1241,
+        "sha256": "d9fe6586487163554f102d3c35f9416396a27045dc5e2f20ed33ef1bd2970aa1",
+        "bytes": 682826
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-456381a4a8c6-astrolyabiya-09-04-01-c1148d06f8c015c966bd36b7faf132b87456aec3c6489a005150798b89199e25.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630569150",
+      "asset_id": 630569150,
+      "release_tag": "article-originals-c",
+      "sha256": "c1148d06f8c015c966bd36b7faf132b87456aec3c6489a005150798b89199e25",
+      "bytes": 3078545
+    }
+  },
+  "/assets/images/hm-tt-456381a4a8c6/astrolyabiya-09-04-02.png": {
+    "sha256": "596dca9681d51f8e125c9f01df67bf2f27a9cb87521db073cc677a7dbe2f0bbf",
+    "width": 1200,
+    "height": 1721,
+    "bytes": 3250645,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-456381a4a8c6/astrolyabiya-09-04-02.png-960.webp",
+        "width": 960,
+        "height": 1377,
+        "sha256": "a757855c054770b0cc101a16d390549b4127f0a63741bee692fe5d694d997c92",
+        "bytes": 1223826
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-456381a4a8c6-astrolyabiya-09-04-02-596dca9681d51f8e125c9f01df67bf2f27a9cb87521db073cc677a7dbe2f0bbf.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630569396",
+      "asset_id": 630569396,
+      "release_tag": "article-originals-5",
+      "sha256": "596dca9681d51f8e125c9f01df67bf2f27a9cb87521db073cc677a7dbe2f0bbf",
+      "bytes": 3250645
+    }
+  },
+  "/assets/images/hm-tt-456381a4a8c6/astrolyabiya-09-04-03.png": {
+    "sha256": "025eafc56dd2d150b6e293cffe644f4d64cffc01c67e9c042c85a54933f959d7",
+    "width": 2400,
+    "height": 1949,
+    "bytes": 4948970,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-456381a4a8c6/astrolyabiya-09-04-03.png-960.webp",
+        "width": 960,
+        "height": 780,
+        "sha256": "4d2ed65f64f105378c95ace8fb98ebadb97f0b91754517ce69a068af61c1d83b",
+        "bytes": 448102
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-456381a4a8c6-astrolyabiya-09-04-03-025eafc56dd2d150b6e293cffe644f4d64cffc01c67e9c042c85a54933f959d7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630569599",
+      "asset_id": 630569599,
+      "release_tag": "article-originals-0",
+      "sha256": "025eafc56dd2d150b6e293cffe644f4d64cffc01c67e9c042c85a54933f959d7",
+      "bytes": 4948970
+    }
+  },
+  "/assets/images/hm-tt-456381a4a8c6/astrolyabiya-09-04-04.png": {
+    "sha256": "c9b2b7a6de894dfb77c295ae7b3b9df9e899d67e7c35fb385a36cc547329ab65",
+    "width": 1194,
+    "height": 1194,
+    "bytes": 3434368,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-456381a4a8c6/astrolyabiya-09-04-04.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "aa7600b9cefb68769f1292248045400b4a9c6be9bcc645c7ae2bd63aa3070f68",
+        "bytes": 1349128
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-456381a4a8c6-astrolyabiya-09-04-04-c9b2b7a6de894dfb77c295ae7b3b9df9e899d67e7c35fb385a36cc547329ab65.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630569825",
+      "asset_id": 630569825,
+      "release_tag": "article-originals-c",
+      "sha256": "c9b2b7a6de894dfb77c295ae7b3b9df9e899d67e7c35fb385a36cc547329ab65",
+      "bytes": 3434368
+    }
+  },
+  "/assets/images/hm-tt-456381a4a8c6/astrolyabiya-09-04-05.png": {
+    "sha256": "b6a8fd32b5fca02432f58da771209f83d58e3477e9dac00d31d39d51d1e65a7d",
+    "width": 1800,
+    "height": 1800,
+    "bytes": 4503336,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-456381a4a8c6/astrolyabiya-09-04-05.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "7867a873299a16a83c6c8ce83b5d69a7a81a9f14fa79fef4b8bf460812a7750d",
+        "bytes": 786146
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-456381a4a8c6-astrolyabiya-09-04-05-b6a8fd32b5fca02432f58da771209f83d58e3477e9dac00d31d39d51d1e65a7d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630570068",
+      "asset_id": 630570068,
+      "release_tag": "article-originals-b",
+      "sha256": "b6a8fd32b5fca02432f58da771209f83d58e3477e9dac00d31d39d51d1e65a7d",
+      "bytes": 4503336
+    }
+  }
+}
