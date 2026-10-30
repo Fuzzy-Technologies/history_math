@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-fd033cf19830/kachestvennye-zadachi-po-mat-01.png": {
+    "sha256": "404473f6e99a779bb050fe040a484b270ab703578fc57974681ed1b5feec0ee0",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2453366,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-fd033cf19830/kachestvennye-zadachi-po-mat-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "4c29ff0f5bf0dd1be6a0d36c73f4b4197e3706c53853d277b9375d80d5ff1997",
+        "bytes": 1076254
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-fd033cf19830-kachestvennye-zadachi-po-mat-01-404473f6e99a779bb050fe040a484b270ab703578fc57974681ed1b5feec0ee0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630500233",
+      "asset_id": 630500233,
+      "release_tag": "article-originals-4",
+      "sha256": "404473f6e99a779bb050fe040a484b270ab703578fc57974681ed1b5feec0ee0",
+      "bytes": 2453366
+    }
+  },
+  "/assets/images/hm-tt-fd033cf19830/kachestvennye-zadachi-po-mat-02.png": {
+    "sha256": "aa03128ba7d5bdbe6142012b49016a27fef44bf85997faae5155aa639bea744b",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 1917017,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-fd033cf19830/kachestvennye-zadachi-po-mat-02.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "eebc04e5c62d900c1d8ea47fc79d291866720d70ad43499dce953a680a13b3ad",
+        "bytes": 846796
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-fd033cf19830-kachestvennye-zadachi-po-mat-02-aa03128ba7d5bdbe6142012b49016a27fef44bf85997faae5155aa639bea744b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630546713",
+      "asset_id": 630546713,
+      "release_tag": "article-originals-a",
+      "sha256": "aa03128ba7d5bdbe6142012b49016a27fef44bf85997faae5155aa639bea744b",
+      "bytes": 1917017
+    }
+  },
+  "/assets/images/hm-tt-fd033cf19830/kachestvennye-zadachi-po-mat-03.png": {
+    "sha256": "189f1e7e3887e7e341aac13e8a33e6277d41f7e2b5ed5000d55762e20bff7751",
+    "width": 1079,
+    "height": 1079,
+    "bytes": 2806893,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-fd033cf19830/kachestvennye-zadachi-po-mat-03.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "adbda71a847b546c09967720008cd97fb85f182a0285f4f723ebb9c3a32adc0a",
+        "bytes": 1564568
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-fd033cf19830-kachestvennye-zadachi-po-mat-03-189f1e7e3887e7e341aac13e8a33e6277d41f7e2b5ed5000d55762e20bff7751.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630546939",
+      "asset_id": 630546939,
+      "release_tag": "article-originals-1",
+      "sha256": "189f1e7e3887e7e341aac13e8a33e6277d41f7e2b5ed5000d55762e20bff7751",
+      "bytes": 2806893
+    }
+  },
+  "/assets/images/hm-tt-fd033cf19830/kachestvennye-zadachi-po-mat-04.png": {
+    "sha256": "5d77ec9d7873a311c483424d3928167fd940f692172ac820d071626ed18feddc",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2672570,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-fd033cf19830/kachestvennye-zadachi-po-mat-04.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "f951b101910e5b43ab6f507c757b134398097062da2418b3e254e641efa9974e",
+        "bytes": 1135944
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-fd033cf19830-kachestvennye-zadachi-po-mat-04-5d77ec9d7873a311c483424d3928167fd940f692172ac820d071626ed18feddc.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630547218",
+      "asset_id": 630547218,
+      "release_tag": "article-originals-5",
+      "sha256": "5d77ec9d7873a311c483424d3928167fd940f692172ac820d071626ed18feddc",
+      "bytes": 2672570
+    }
+  },
+  "/assets/images/hm-tt-fd033cf19830/kachestvennye-zadachi-po-mat-05.png": {
+    "sha256": "39e0c21c53253fc8af3f04353b7c838333cae90869ef63eb368eb9c5134e5e7e",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2206597,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-fd033cf19830/kachestvennye-zadachi-po-mat-05.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "097b77bad04b7d1c7643041b8cf5002b1cffdefa1838a4c49429f7a73694bb38",
+        "bytes": 1180208
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-fd033cf19830-kachestvennye-zadachi-po-mat-05-39e0c21c53253fc8af3f04353b7c838333cae90869ef63eb368eb9c5134e5e7e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630547409",
+      "asset_id": 630547409,
+      "release_tag": "article-originals-3",
+      "sha256": "39e0c21c53253fc8af3f04353b7c838333cae90869ef63eb368eb9c5134e5e7e",
+      "bytes": 2206597
+    }
+  },
+  "/assets/images/hm-tt-fd033cf19830/kachestvennye-zadachi-po-mat-06.png": {
+    "sha256": "a793899223dbc22243c7f6cc62c6892e16ad375f15dd072ce776d673a68ad4b6",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2989200,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-fd033cf19830/kachestvennye-zadachi-po-mat-06.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "00e312fafc0e6bf823936d3fffea83a975efe5cd078e0f8a4eda16da66d57916",
+        "bytes": 1289428
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-fd033cf19830-kachestvennye-zadachi-po-mat-06-a793899223dbc22243c7f6cc62c6892e16ad375f15dd072ce776d673a68ad4b6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630547583",
+      "asset_id": 630547583,
+      "release_tag": "article-originals-a",
+      "sha256": "a793899223dbc22243c7f6cc62c6892e16ad375f15dd072ce776d673a68ad4b6",
+      "bytes": 2989200
+    }
+  }
+}
