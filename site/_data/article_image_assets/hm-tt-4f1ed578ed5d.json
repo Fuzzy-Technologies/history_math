@@ -1,0 +1,202 @@
+{
+  "/assets/images/hm-tt-4f1ed578ed5d/seminar-mordkovicha-01-21-01.png": {
+    "sha256": "ab1105ddc4910a0e728248e91a50f3e7768266c0e4affd4399431a00246661f1",
+    "width": 1856,
+    "height": 1856,
+    "bytes": 3622623,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4f1ed578ed5d/seminar-mordkovicha-01-21-01-png-reading-960-8351a8e9772a.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "8351a8e9772acfd4ec335211c6b6e77f23d13dd4cd5c357a8e8e4dcf36e7b5b7",
+        "bytes": 545682
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-4f1ed578ed5d-seminar-mordkovicha-01-21-01-ab1105ddc4910a0e728248e91a50f3e7768266c0e4affd4399431a00246661f1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497331",
+      "asset_id": 630497331,
+      "release_tag": "article-originals-a",
+      "sha256": "ab1105ddc4910a0e728248e91a50f3e7768266c0e4affd4399431a00246661f1",
+      "bytes": 3622623
+    }
+  },
+  "/assets/images/hm-tt-4f1ed578ed5d/seminar-mordkovicha-01-21-02.png": {
+    "sha256": "0b61c8941d6aeef2b4e5cad46088d5eda4980c83f137d4e46ee1cb286d59c1c8",
+    "width": 1280,
+    "height": 632,
+    "bytes": 1338041,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4f1ed578ed5d/seminar-mordkovicha-01-21-02.png-960.webp",
+        "width": 960,
+        "height": 474,
+        "sha256": "c0039bbe74b37ac10fe870e66fe56ec4efe3377f6fd096e83a08df68aae5c8bd",
+        "bytes": 465038
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-4f1ed578ed5d-seminar-mordkovicha-01-21-02-0b61c8941d6aeef2b4e5cad46088d5eda4980c83f137d4e46ee1cb286d59c1c8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630550614",
+      "asset_id": 630550614,
+      "release_tag": "article-originals-0",
+      "sha256": "0b61c8941d6aeef2b4e5cad46088d5eda4980c83f137d4e46ee1cb286d59c1c8",
+      "bytes": 1338041
+    }
+  },
+  "/assets/images/hm-tt-4f1ed578ed5d/seminar-mordkovicha-01-21-03.png": {
+    "sha256": "094e1325b607e1cde58a1f310bbaae7c855c2be1a94a57fed84dfabaa8c9a627",
+    "width": 1846,
+    "height": 1352,
+    "bytes": 4525804,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4f1ed578ed5d/seminar-mordkovicha-01-21-03.png-960.webp",
+        "width": 960,
+        "height": 703,
+        "sha256": "8b22f1067ddaa62872909a11b435abfeece2c233f2501de7339e40c099d6d4b6",
+        "bytes": 597822
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-4f1ed578ed5d-seminar-mordkovicha-01-21-03-094e1325b607e1cde58a1f310bbaae7c855c2be1a94a57fed84dfabaa8c9a627.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630550874",
+      "asset_id": 630550874,
+      "release_tag": "article-originals-0",
+      "sha256": "094e1325b607e1cde58a1f310bbaae7c855c2be1a94a57fed84dfabaa8c9a627",
+      "bytes": 4525804
+    }
+  },
+  "/assets/images/hm-tt-4f1ed578ed5d/seminar-mordkovicha-01-21-04.png": {
+    "sha256": "1edce3eddcccd5843be72a650a01f51118ac9a398e68600821414909f2ee931e",
+    "width": 4288,
+    "height": 2232,
+    "bytes": 23466054,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4f1ed578ed5d/seminar-mordkovicha-01-21-04.png-960.webp",
+        "width": 960,
+        "height": 500,
+        "sha256": "fea1c359dfdfcb9026b41d4a3d34a282e4d5344a9470d2abd6f7d18e98f4e46c",
+        "bytes": 687714
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-4f1ed578ed5d-seminar-mordkovicha-01-21-04-1edce3eddcccd5843be72a650a01f51118ac9a398e68600821414909f2ee931e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551094",
+      "asset_id": 630551094,
+      "release_tag": "article-originals-1",
+      "sha256": "1edce3eddcccd5843be72a650a01f51118ac9a398e68600821414909f2ee931e",
+      "bytes": 23466054
+    }
+  },
+  "/assets/images/hm-tt-4f1ed578ed5d/seminar-mordkovicha-01-21-05.png": {
+    "sha256": "ade09ebb57a435ed8d0d1a73386d5626e3c1f1613434273462276c18906f4e8b",
+    "width": 1846,
+    "height": 1385,
+    "bytes": 4433156,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4f1ed578ed5d/seminar-mordkovicha-01-21-05.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "690151ffc0581976c3fa96655979bb8ec30ece6186428f1989128430e18e101e",
+        "bytes": 653222
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-4f1ed578ed5d-seminar-mordkovicha-01-21-05-ade09ebb57a435ed8d0d1a73386d5626e3c1f1613434273462276c18906f4e8b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551221",
+      "asset_id": 630551221,
+      "release_tag": "article-originals-a",
+      "sha256": "ade09ebb57a435ed8d0d1a73386d5626e3c1f1613434273462276c18906f4e8b",
+      "bytes": 4433156
+    }
+  },
+  "/assets/images/hm-tt-4f1ed578ed5d/seminar-mordkovicha-01-21-06.png": {
+    "sha256": "0755f9edc3f094b92b27cf36b804987c9c1d4e56b356f929ca9f0e412f4244e1",
+    "width": 1848,
+    "height": 2464,
+    "bytes": 10282809,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4f1ed578ed5d/seminar-mordkovicha-01-21-06.png-960.webp",
+        "width": 960,
+        "height": 1280,
+        "sha256": "f385885b1f1017b4799f8b5e4abab167cfff9eb3a9570a059885cf15d2887472",
+        "bytes": 1574844
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-4f1ed578ed5d-seminar-mordkovicha-01-21-06-0755f9edc3f094b92b27cf36b804987c9c1d4e56b356f929ca9f0e412f4244e1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551370",
+      "asset_id": 630551370,
+      "release_tag": "article-originals-0",
+      "sha256": "0755f9edc3f094b92b27cf36b804987c9c1d4e56b356f929ca9f0e412f4244e1",
+      "bytes": 10282809
+    }
+  },
+  "/assets/images/hm-tt-4f1ed578ed5d/seminar-mordkovicha-01-21-07.png": {
+    "sha256": "773267405c6b763a649e4e338a56287794c6cd5b4e6ad87925c4a9fe53d067ba",
+    "width": 1842,
+    "height": 1381,
+    "bytes": 4817443,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4f1ed578ed5d/seminar-mordkovicha-01-21-07.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "d1ead75da853cb2c4b0b146d3bc148f8266ffa413d0ccdef4c73bc8b95a81e35",
+        "bytes": 776588
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-4f1ed578ed5d-seminar-mordkovicha-01-21-07-773267405c6b763a649e4e338a56287794c6cd5b4e6ad87925c4a9fe53d067ba.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551545",
+      "asset_id": 630551545,
+      "release_tag": "article-originals-7",
+      "sha256": "773267405c6b763a649e4e338a56287794c6cd5b4e6ad87925c4a9fe53d067ba",
+      "bytes": 4817443
+    }
+  },
+  "/assets/images/hm-tt-4f1ed578ed5d/seminar-mordkovicha-01-21-08.png": {
+    "sha256": "5b72e7e3411172a50584bdbdb1e80db8a7838b6e95b32978a17091658f79e685",
+    "width": 1834,
+    "height": 1224,
+    "bytes": 2980281,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4f1ed578ed5d/seminar-mordkovicha-01-21-08.png-960.webp",
+        "width": 960,
+        "height": 641,
+        "sha256": "adc501da1c6aa9f58381556d391534b11b627ac0e1d0b4e4af9029283f273763",
+        "bytes": 501566
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-4f1ed578ed5d-seminar-mordkovicha-01-21-08-5b72e7e3411172a50584bdbdb1e80db8a7838b6e95b32978a17091658f79e685.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551772",
+      "asset_id": 630551772,
+      "release_tag": "article-originals-5",
+      "sha256": "5b72e7e3411172a50584bdbdb1e80db8a7838b6e95b32978a17091658f79e685",
+      "bytes": 2980281
+    }
+  }
+}
