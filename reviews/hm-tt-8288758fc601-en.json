@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-8288758fc601-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "fd816f057b9f25d81f2838ebc558368f0ef6aaa0400bd50dbbe3e3d66039bbf3",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Оставь как есть, мержим.",
+    "source_commit": "ac509cf56a7702725374acacc40dbf762d9db68d",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/176"
+  },
+  "questions": [
+    {
+      "id": "q-amicable-1",
+      "question": "Confirm the source's attribution to the Pythagorean school around 500 BCE, Euler's count of 90 pairs, the identification of the 1866 discoverer as Niccolò Paganini, and the claim of more than 1000000000 known pairs by April 2016. These historical and numerical claims are retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #176 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-02-24",
+      "url": "https://teletype.in/@history_math/Arifmetika-pifagorejcev-druzhestvennye-chisla-02-24"
+    }
+  }
+}
