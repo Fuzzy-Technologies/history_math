@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-3142eeca2607/lekalo-02-11-01.png": {
+    "sha256": "5e71060d4468c2b24c61149e067dd75d765f618edbbcff99ba968a2ef2edb0c7",
+    "width": 3755,
+    "height": 2555,
+    "bytes": 7891494,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-3142eeca2607/lekalo-02-11-01.png-960.webp",
+        "width": 960,
+        "height": 653,
+        "sha256": "f4aa196adc5350160ff515ab1631b0f85ed6f9de67a74b5d545fe1b3be417ab8",
+        "bytes": 424238
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-3142eeca2607-lekalo-02-11-01-5e71060d4468c2b24c61149e067dd75d765f618edbbcff99ba968a2ef2edb0c7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630500763",
+      "asset_id": 630500763,
+      "release_tag": "article-originals-5",
+      "sha256": "5e71060d4468c2b24c61149e067dd75d765f618edbbcff99ba968a2ef2edb0c7",
+      "bytes": 7891494
+    }
+  },
+  "/assets/images/hm-tt-3142eeca2607/lekalo-02-11-02.png": {
+    "sha256": "806e1ae721fed2dccdee36efb81876fbbafbd0318058dbbddb5d873bdc58fa79",
+    "width": 1623,
+    "height": 1623,
+    "bytes": 1877542,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-3142eeca2607/lekalo-02-11-02.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "3354c6e4edab2e119e6ea7377f19478613553bc79d62c02d0baf0bcb5ecbc6f5",
+        "bytes": 518938
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-3142eeca2607-lekalo-02-11-02-806e1ae721fed2dccdee36efb81876fbbafbd0318058dbbddb5d873bdc58fa79.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551994",
+      "asset_id": 630551994,
+      "release_tag": "article-originals-8",
+      "sha256": "806e1ae721fed2dccdee36efb81876fbbafbd0318058dbbddb5d873bdc58fa79",
+      "bytes": 1877542
+    }
+  },
+  "/assets/images/hm-tt-3142eeca2607/lekalo-02-11-03.png": {
+    "sha256": "758bf381d63a48f06e7deea499bd70c748acf859d769e9ea7b13321860f0c2d7",
+    "width": 915,
+    "height": 630,
+    "bytes": 932547,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-3142eeca2607/lekalo-02-11-03.png-915.webp",
+        "width": 915,
+        "height": 630,
+        "sha256": "8fc49d568c1cb5cba7face15738a6311fab68af91a82ffc43d37991d0ca70f95",
+        "bytes": 566298
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-3142eeca2607-lekalo-02-11-03-758bf381d63a48f06e7deea499bd70c748acf859d769e9ea7b13321860f0c2d7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552176",
+      "asset_id": 630552176,
+      "release_tag": "article-originals-7",
+      "sha256": "758bf381d63a48f06e7deea499bd70c748acf859d769e9ea7b13321860f0c2d7",
+      "bytes": 932547
+    }
+  },
+  "/assets/images/hm-tt-3142eeca2607/lekalo-02-11-04.png": {
+    "sha256": "e31f505f681d1da8fa87c7c00c0d3177b96cc5e9895e2b7adde55e7f632b481e",
+    "width": 1844,
+    "height": 2454,
+    "bytes": 4764169,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-3142eeca2607/lekalo-02-11-04.png-960.webp",
+        "width": 960,
+        "height": 1278,
+        "sha256": "e120b917e9ce6768f32f9618c17101649598ed6c9d9a2a07a1d53423e83cfea2",
+        "bytes": 789908
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-3142eeca2607-lekalo-02-11-04-e31f505f681d1da8fa87c7c00c0d3177b96cc5e9895e2b7adde55e7f632b481e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552305",
+      "asset_id": 630552305,
+      "release_tag": "article-originals-e",
+      "sha256": "e31f505f681d1da8fa87c7c00c0d3177b96cc5e9895e2b7adde55e7f632b481e",
+      "bytes": 4764169
+    }
+  },
+  "/assets/images/hm-tt-3142eeca2607/lekalo-02-11-05.png": {
+    "sha256": "243fb4271611216e455a31bcd2656aa8cbd163e9acc72896640056aca568d5e5",
+    "width": 700,
+    "height": 400,
+    "bytes": 91178,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-3142eeca2607/lekalo-02-11-05.png-700.webp",
+        "width": 700,
+        "height": 400,
+        "sha256": "2a482224ac5753f15024a5ff67de82c725a018e8f9f6b55821fa42732a579d40",
+        "bytes": 46616
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-3142eeca2607-lekalo-02-11-05-243fb4271611216e455a31bcd2656aa8cbd163e9acc72896640056aca568d5e5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552482",
+      "asset_id": 630552482,
+      "release_tag": "article-originals-2",
+      "sha256": "243fb4271611216e455a31bcd2656aa8cbd163e9acc72896640056aca568d5e5",
+      "bytes": 91178
+    }
+  }
+}
