@@ -1,0 +1,202 @@
+{
+  "/assets/images/hm-tt-2ae35b38970b/akademik-viktor-amazaspovich-01.png": {
+    "sha256": "764224c563e2da6650f3cd4f1c910120b21bf02f741760675732c104dfb2a253",
+    "width": 771,
+    "height": 1226,
+    "bytes": 874056,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2ae35b38970b/akademik-viktor-amazaspovich-01-png-reading-771-7ff3cdbe7bf4.webp",
+        "width": 771,
+        "height": 1226,
+        "sha256": "7ff3cdbe7bf4e19afc3dcd041347d6fbca8a6096a34ef0d7b77c7aad686839c1",
+        "bytes": 427138
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-2ae35b38970b-akademik-viktor-amazaspovich-01-764224c563e2da6650f3cd4f1c910120b21bf02f741760675732c104dfb2a253.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555035",
+      "asset_id": 630555035,
+      "release_tag": "article-originals-7",
+      "sha256": "764224c563e2da6650f3cd4f1c910120b21bf02f741760675732c104dfb2a253",
+      "bytes": 874056
+    }
+  },
+  "/assets/images/hm-tt-2ae35b38970b/akademik-viktor-amazaspovich-02.png": {
+    "sha256": "3a606e7b970782160dcf5bd9c72e0b51722309cadaf7adcdcbfaabbe837fd429",
+    "width": 2272,
+    "height": 1704,
+    "bytes": 9401979,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2ae35b38970b/akademik-viktor-amazaspovich-02-png-reading-960-e0d77fec81c4.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "e0d77fec81c42056ee8892ae7bbce64e9b4e8fced87d42db9889fdfc754bb0ad",
+        "bytes": 1098580
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-2ae35b38970b-akademik-viktor-amazaspovich-02-3a606e7b970782160dcf5bd9c72e0b51722309cadaf7adcdcbfaabbe837fd429.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555182",
+      "asset_id": 630555182,
+      "release_tag": "article-originals-3",
+      "sha256": "3a606e7b970782160dcf5bd9c72e0b51722309cadaf7adcdcbfaabbe837fd429",
+      "bytes": 9401979
+    }
+  },
+  "/assets/images/hm-tt-2ae35b38970b/akademik-viktor-amazaspovich-03.png": {
+    "sha256": "ab54df4ca1c23e0014f05f7f595a9e3210ad9c49a3915e14dedbe4e70257a627",
+    "width": 2502,
+    "height": 1542,
+    "bytes": 5896199,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2ae35b38970b/akademik-viktor-amazaspovich-03.png-960.webp",
+        "width": 960,
+        "height": 592,
+        "sha256": "c6379717f288d6fb3db8b35e3b0858132f8bd58d43ddb00f2c8445e4475d62ef",
+        "bytes": 352716
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-2ae35b38970b-akademik-viktor-amazaspovich-03-ab54df4ca1c23e0014f05f7f595a9e3210ad9c49a3915e14dedbe4e70257a627.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555399",
+      "asset_id": 630555399,
+      "release_tag": "article-originals-a",
+      "sha256": "ab54df4ca1c23e0014f05f7f595a9e3210ad9c49a3915e14dedbe4e70257a627",
+      "bytes": 5896199
+    }
+  },
+  "/assets/images/hm-tt-2ae35b38970b/akademik-viktor-amazaspovich-04.png": {
+    "sha256": "4c12d53ce3c7b910c92f1cb216781f885acc5209fd8e074169c04613525f99cd",
+    "width": 400,
+    "height": 391,
+    "bytes": 221054,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2ae35b38970b/akademik-viktor-amazaspovich-04.png-400.webp",
+        "width": 400,
+        "height": 391,
+        "sha256": "27b50f27960a2141772ffedf3bda97396ffc4e95521c36f3cd85f881309aa21e",
+        "bytes": 95314
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-2ae35b38970b-akademik-viktor-amazaspovich-04-4c12d53ce3c7b910c92f1cb216781f885acc5209fd8e074169c04613525f99cd.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555559",
+      "asset_id": 630555559,
+      "release_tag": "article-originals-4",
+      "sha256": "4c12d53ce3c7b910c92f1cb216781f885acc5209fd8e074169c04613525f99cd",
+      "bytes": 221054
+    }
+  },
+  "/assets/images/hm-tt-2ae35b38970b/akademik-viktor-amazaspovich-05.png": {
+    "sha256": "6c0ebfa1a1d8c60183590f4001b5104b8e271689f2bacea0be045958d05d67dc",
+    "width": 830,
+    "height": 885,
+    "bytes": 1931239,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2ae35b38970b/akademik-viktor-amazaspovich-05.png-830.webp",
+        "width": 830,
+        "height": 885,
+        "sha256": "b73e1acc951a0df7c0176c0a73209478dc58cc1b9ea1c8f877af494c88ae2bc7",
+        "bytes": 1046448
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-2ae35b38970b-akademik-viktor-amazaspovich-05-6c0ebfa1a1d8c60183590f4001b5104b8e271689f2bacea0be045958d05d67dc.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555679",
+      "asset_id": 630555679,
+      "release_tag": "article-originals-6",
+      "sha256": "6c0ebfa1a1d8c60183590f4001b5104b8e271689f2bacea0be045958d05d67dc",
+      "bytes": 1931239
+    }
+  },
+  "/assets/images/hm-tt-2ae35b38970b/akademik-viktor-amazaspovich-06.png": {
+    "sha256": "99bdb45e95e8ca80f1b0604c87fd02ff6680a834856446e088f309682d627080",
+    "width": 1500,
+    "height": 1000,
+    "bytes": 3505613,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2ae35b38970b/akademik-viktor-amazaspovich-06.png-960.webp",
+        "width": 960,
+        "height": 640,
+        "sha256": "90d1691f98d43bfed68077a305c83d5a7fede8744e1b25cef938c989022c269e",
+        "bytes": 1151920
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-2ae35b38970b-akademik-viktor-amazaspovich-06-99bdb45e95e8ca80f1b0604c87fd02ff6680a834856446e088f309682d627080.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630555885",
+      "asset_id": 630555885,
+      "release_tag": "article-originals-9",
+      "sha256": "99bdb45e95e8ca80f1b0604c87fd02ff6680a834856446e088f309682d627080",
+      "bytes": 3505613
+    }
+  },
+  "/assets/images/hm-tt-2ae35b38970b/akademik-viktor-amazaspovich-07.png": {
+    "sha256": "ec87e37b3b6fb94fb1538092bb7a1e480b5eeaadd15d3df907fb5db8992ecfcf",
+    "width": 2250,
+    "height": 1644,
+    "bytes": 9782665,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2ae35b38970b/akademik-viktor-amazaspovich-07.png-960.webp",
+        "width": 960,
+        "height": 701,
+        "sha256": "89932040f03f5a49e6b534db1d93149d0fbf1e2496da45ba4e98557beea36962",
+        "bytes": 897560
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-2ae35b38970b-akademik-viktor-amazaspovich-07-ec87e37b3b6fb94fb1538092bb7a1e480b5eeaadd15d3df907fb5db8992ecfcf.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630556066",
+      "asset_id": 630556066,
+      "release_tag": "article-originals-e",
+      "sha256": "ec87e37b3b6fb94fb1538092bb7a1e480b5eeaadd15d3df907fb5db8992ecfcf",
+      "bytes": 9782665
+    }
+  },
+  "/assets/images/hm-tt-2ae35b38970b/akademik-viktor-amazaspovich-08.png": {
+    "sha256": "147246a9160869ac42d57538683e6646b9121ca4e844390a3dd3a1247196fb9b",
+    "width": 2000,
+    "height": 2854,
+    "bytes": 13913077,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2ae35b38970b/akademik-viktor-amazaspovich-08.png-960.webp",
+        "width": 960,
+        "height": 1370,
+        "sha256": "cdbd474248fdeb9a2bf534053b8d77376275722506edae6e56664530b323badb",
+        "bytes": 2190058
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-2ae35b38970b-akademik-viktor-amazaspovich-08-147246a9160869ac42d57538683e6646b9121ca4e844390a3dd3a1247196fb9b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630556211",
+      "asset_id": 630556211,
+      "release_tag": "article-originals-1",
+      "sha256": "147246a9160869ac42d57538683e6646b9121ca4e844390a3dd3a1247196fb9b",
+      "bytes": 13913077
+    }
+  }
+}
