@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-bf9c2e73f34c-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "e8938b57236b9b9e2c46e3fdae4e3ea9a7dc26fe34da9ad14ef902cd6790ca5e",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Оставляем как есть, мержим.",
+    "source_commit": "9e60e69e71086235a8bb69bad3503919b9a3639c",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/151"
+  },
+  "questions": [
+    {
+      "id": "flexible-polyhedra-flexagons",
+      "question": "The opening paragraph calls flexible figures with regular-polygon faces “flexagons”, potentially conflating flexible polyhedra with the folded paper flexagons described next. Please confirm the intended distinction. The source wording is preserved in substance.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #151 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-06-16",
+      "url": "https://teletype.in/@history_math/Fleksagon"
+    }
+  }
+}
