@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-31da7e3ce1e1-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "651d3e4b2b5ac9bbef21e4d1e913b981456ccffb01969008f8b06f679af551a2",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Оставь как есть, мержим.",
+    "source_commit": "a5346eae901f36441985e693bdd09e4d7ef04209",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/162"
+  },
+  "questions": [
+    {
+      "id": "q-probability-paper-1",
+      "question": "The source treats normal probability paper and a Weibull plot as equivalent and attributes the theory of continuous distributions to Weibull (1951). Confirm the terminology and historical attribution; both source claims are retained in the English adaptation.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #162 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    },
+    {
+      "id": "q-probability-paper-2",
+      "question": "The source says that a curved probability plot allows the curvature and asymmetry of the probability density function to be assessed. Confirm the intended statistical interpretation.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #162 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-05-12",
+      "url": "https://teletype.in/@history_math/Veroyatnostnaya-bumaga-05-12"
+    }
+  },
+  "external_editorial_reviews": [
+    {
+      "url": "https://github.com/Fuzzy-Technologies/history_math/pull/162#pullrequestreview-5618263640",
+      "review_id": 5618263640,
+      "source_commit": "a5346eae901f36441985e693bdd09e4d7ef04209",
+      "disposition": "accepted_unchanged",
+      "resolution": "Tim55667757 approved publication of PR #162 in the 2026-10-30 owner chat instruction. The previously flagged source material is retained unchanged."
+    }
+  ]
+}
