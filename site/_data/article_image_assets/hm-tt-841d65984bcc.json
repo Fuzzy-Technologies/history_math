@@ -1,0 +1,777 @@
+{
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-01.png": {
+    "sha256": "9579c298b2bef1bf4963878f3491434495e7ba1a092da3f9f8ec3bf7c18347c1",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 1591974,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "9ea3aea08490fb9eaeef7e62af500e2e69cf5399e37a47d45049df732426b839",
+        "bytes": 666110
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-841d65984bcc-matematika-internacionalnaya-01-9579c298b2bef1bf4963878f3491434495e7ba1a092da3f9f8ec3bf7c18347c1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630496095",
+      "asset_id": 630496095,
+      "release_tag": "article-originals-9",
+      "sha256": "9579c298b2bef1bf4963878f3491434495e7ba1a092da3f9f8ec3bf7c18347c1",
+      "bytes": 1591974
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-02.png": {
+    "sha256": "5bade149838b166b91f5c6a65a1c314ddbbd3a61859dbdcc6e21f4dbf3e377b5",
+    "width": 1800,
+    "height": 3030,
+    "bytes": 11720599,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-02-png-reading-960-d53b4526b80d.webp",
+        "width": 960,
+        "height": 1616,
+        "sha256": "d53b4526b80d75d71d66d3237a1fc658d79a146fa1465e32e8fb667ae45d787c",
+        "bytes": 1612782
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-841d65984bcc-matematika-internacionalnaya-02-5bade149838b166b91f5c6a65a1c314ddbbd3a61859dbdcc6e21f4dbf3e377b5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544273",
+      "asset_id": 630544273,
+      "release_tag": "article-originals-5",
+      "sha256": "5bade149838b166b91f5c6a65a1c314ddbbd3a61859dbdcc6e21f4dbf3e377b5",
+      "bytes": 11720599
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-03.png": {
+    "sha256": "d54f64d4f56d7ce96b58f3098cbbe0e1441b7a0b1ff8bf9e51dd30327bbae5d5",
+    "width": 387,
+    "height": 600,
+    "bytes": 503942,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-03.png-387.webp",
+        "width": 387,
+        "height": 600,
+        "sha256": "239149fb581988b4c569bad748032ec56fbfe931108a0b220f64059249ada293",
+        "bytes": 217338
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-841d65984bcc-matematika-internacionalnaya-03-d54f64d4f56d7ce96b58f3098cbbe0e1441b7a0b1ff8bf9e51dd30327bbae5d5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544459",
+      "asset_id": 630544459,
+      "release_tag": "article-originals-d",
+      "sha256": "d54f64d4f56d7ce96b58f3098cbbe0e1441b7a0b1ff8bf9e51dd30327bbae5d5",
+      "bytes": 503942
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-04.png": {
+    "sha256": "9efc64fc63b09ff68954c5d4da3be18f725501d25922007977d3a6aefecc822d",
+    "width": 2493,
+    "height": 2398,
+    "bytes": 14651731,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-04.png-960.webp",
+        "width": 960,
+        "height": 923,
+        "sha256": "7161c6d40540664f40426433291d68cd586f5ff72434ee0d893b1bcbb78d218e",
+        "bytes": 1206396
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-841d65984bcc-matematika-internacionalnaya-04-9efc64fc63b09ff68954c5d4da3be18f725501d25922007977d3a6aefecc822d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544626",
+      "asset_id": 630544626,
+      "release_tag": "article-originals-9",
+      "sha256": "9efc64fc63b09ff68954c5d4da3be18f725501d25922007977d3a6aefecc822d",
+      "bytes": 14651731
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-05.png": {
+    "sha256": "78b8c253b4ce1859d6442c8373a7375cc11542ed49a5d43f35488e64e69454e5",
+    "width": 751,
+    "height": 751,
+    "bytes": 1397108,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-05.png-751.webp",
+        "width": 751,
+        "height": 751,
+        "sha256": "2c10509dfd6e9958fababaf1ed33e980f949f90804432fc1a66fbd5584120edd",
+        "bytes": 567764
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-841d65984bcc-matematika-internacionalnaya-05-78b8c253b4ce1859d6442c8373a7375cc11542ed49a5d43f35488e64e69454e5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544789",
+      "asset_id": 630544789,
+      "release_tag": "article-originals-7",
+      "sha256": "78b8c253b4ce1859d6442c8373a7375cc11542ed49a5d43f35488e64e69454e5",
+      "bytes": 1397108
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-06.png": {
+    "sha256": "b571a28558b91172506235af091c54f472f79a71bf0d91a02cf4cdd93fdd8de3",
+    "width": 951,
+    "height": 1361,
+    "bytes": 3064660,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-06.png-951.webp",
+        "width": 951,
+        "height": 1361,
+        "sha256": "ccc8e23024faeb055d05133f955de4c745c2662816ce2968cd080f3fcb603971",
+        "bytes": 1201938
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-841d65984bcc-matematika-internacionalnaya-06-b571a28558b91172506235af091c54f472f79a71bf0d91a02cf4cdd93fdd8de3.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544973",
+      "asset_id": 630544973,
+      "release_tag": "article-originals-b",
+      "sha256": "b571a28558b91172506235af091c54f472f79a71bf0d91a02cf4cdd93fdd8de3",
+      "bytes": 3064660
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-07.png": {
+    "sha256": "92f53802e9b3765cd040b1bda585519d5815f31ebb8d78e594538370dd08df80",
+    "width": 735,
+    "height": 985,
+    "bytes": 1597644,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-07.png-735.webp",
+        "width": 735,
+        "height": 985,
+        "sha256": "2c005e0ad49d31225dc98aea50b29e4f66682428197484f158a6271fc5cc012f",
+        "bytes": 821634
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-841d65984bcc-matematika-internacionalnaya-07-92f53802e9b3765cd040b1bda585519d5815f31ebb8d78e594538370dd08df80.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630545186",
+      "asset_id": 630545186,
+      "release_tag": "article-originals-9",
+      "sha256": "92f53802e9b3765cd040b1bda585519d5815f31ebb8d78e594538370dd08df80",
+      "bytes": 1597644
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-08.png": {
+    "sha256": "a2cc718ceb24149a7a6b51aa6c3a1186d141c03a95ce45294c5fa29ad19736fa",
+    "width": 1000,
+    "height": 1492,
+    "bytes": 4402858,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-08.png-960.webp",
+        "width": 960,
+        "height": 1432,
+        "sha256": "025b2d093719e0b008dea74223d1e3e7a73240f5d64ff468da9dfc63f4d7af15",
+        "bytes": 2523446
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-841d65984bcc-matematika-internacionalnaya-08-a2cc718ceb24149a7a6b51aa6c3a1186d141c03a95ce45294c5fa29ad19736fa.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630545368",
+      "asset_id": 630545368,
+      "release_tag": "article-originals-a",
+      "sha256": "a2cc718ceb24149a7a6b51aa6c3a1186d141c03a95ce45294c5fa29ad19736fa",
+      "bytes": 4402858
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-09.png": {
+    "sha256": "0b5fbc3f9efdfe0e775e13b0c938c1553758442d1f8f981b399644559dd3a0de",
+    "width": 1100,
+    "height": 1900,
+    "bytes": 5796568,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-09.png-960.webp",
+        "width": 960,
+        "height": 1658,
+        "sha256": "3cc5dbf3c18839c07380d27ddca52f3126ba0d375839cf89926e01bdfb763fa7",
+        "bytes": 2401638
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-841d65984bcc-matematika-internacionalnaya-09-0b5fbc3f9efdfe0e775e13b0c938c1553758442d1f8f981b399644559dd3a0de.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630545514",
+      "asset_id": 630545514,
+      "release_tag": "article-originals-0",
+      "sha256": "0b5fbc3f9efdfe0e775e13b0c938c1553758442d1f8f981b399644559dd3a0de",
+      "bytes": 5796568
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-10.png": {
+    "sha256": "71623be73461104b74bb7811db019209d92e6eddfabde94a85e8897f279d4858",
+    "width": 560,
+    "height": 760,
+    "bytes": 918384,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-10.png-560.webp",
+        "width": 560,
+        "height": 760,
+        "sha256": "d2a4d71096cebef2ee50d19ab6d5b863c16201491df2c427bc96060308fddfd0",
+        "bytes": 381496
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-841d65984bcc-matematika-internacionalnaya-10-71623be73461104b74bb7811db019209d92e6eddfabde94a85e8897f279d4858.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630545704",
+      "asset_id": 630545704,
+      "release_tag": "article-originals-7",
+      "sha256": "71623be73461104b74bb7811db019209d92e6eddfabde94a85e8897f279d4858",
+      "bytes": 918384
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-11.png": {
+    "sha256": "864f8697159484349a77a6b93c3ccc86a1ed5d36b85dff5fc51566a3ec0db47f",
+    "width": 2500,
+    "height": 3176,
+    "bytes": 11014104,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-11.png-960.webp",
+        "width": 960,
+        "height": 1220,
+        "sha256": "10f7964b2f24b61d842c6aea03f52bbb37da7d2f26d4a5ef0de9ec2d8c2d84e6",
+        "bytes": 1124296
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-841d65984bcc-matematika-internacionalnaya-11-864f8697159484349a77a6b93c3ccc86a1ed5d36b85dff5fc51566a3ec0db47f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630545831",
+      "asset_id": 630545831,
+      "release_tag": "article-originals-8",
+      "sha256": "864f8697159484349a77a6b93c3ccc86a1ed5d36b85dff5fc51566a3ec0db47f",
+      "bytes": 11014104
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-12.png": {
+    "sha256": "8b9c4d09e616e7fa8bca178a67559439e4045da9bd7bed1deaaf445073a02a91",
+    "width": 4400,
+    "height": 5432,
+    "bytes": 50890240,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-12.png-960.webp",
+        "width": 960,
+        "height": 1185,
+        "sha256": "258a32006415cbb789760c641c866e31ed1c343281dbd7847aef5b8a181541ee",
+        "bytes": 1577392
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-841d65984bcc-matematika-internacionalnaya-12-8b9c4d09e616e7fa8bca178a67559439e4045da9bd7bed1deaaf445073a02a91.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630546033",
+      "asset_id": 630546033,
+      "release_tag": "article-originals-8",
+      "sha256": "8b9c4d09e616e7fa8bca178a67559439e4045da9bd7bed1deaaf445073a02a91",
+      "bytes": 50890240
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-13.png": {
+    "sha256": "36e6313511a2def9415e0816412dded75959ef5811a9b69dd68b77e340e1f207",
+    "width": 850,
+    "height": 1166,
+    "bytes": 2522847,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-13-png-reading-850-77d6532ee8ea.webp",
+        "width": 850,
+        "height": 1166,
+        "sha256": "77d6532ee8ea20767db847fd363ab80148f9bb91b41c6d0ca3ad579b8eab167b",
+        "bytes": 1548670
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-841d65984bcc-matematika-internacionalnaya-13-36e6313511a2def9415e0816412dded75959ef5811a9b69dd68b77e340e1f207.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630546170",
+      "asset_id": 630546170,
+      "release_tag": "article-originals-3",
+      "sha256": "36e6313511a2def9415e0816412dded75959ef5811a9b69dd68b77e340e1f207",
+      "bytes": 2522847
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-14.png": {
+    "sha256": "1f1397be53d3af3485b48246df106ef5a2c75b0034fa523ed657de8db4da9313",
+    "width": 600,
+    "height": 861,
+    "bytes": 312190,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-14.png-600.webp",
+        "width": 600,
+        "height": 861,
+        "sha256": "5a6dbe2f3d824c426fccda80788ccd2080a83627648a9a69dd3d1a6be42e21eb",
+        "bytes": 117870
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-841d65984bcc-matematika-internacionalnaya-14-1f1397be53d3af3485b48246df106ef5a2c75b0034fa523ed657de8db4da9313.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630546355",
+      "asset_id": 630546355,
+      "release_tag": "article-originals-1",
+      "sha256": "1f1397be53d3af3485b48246df106ef5a2c75b0034fa523ed657de8db4da9313",
+      "bytes": 312190
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-15.png": {
+    "sha256": "d54d1f8d9ce750c222cad296dc39f3eab4cac82fccd5c17f596e76b267244125",
+    "width": 1208,
+    "height": 1840,
+    "bytes": 2104701,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-15-png-reading-960-3abd4437db1a.webp",
+        "width": 960,
+        "height": 1462,
+        "sha256": "3abd4437db1abf7d7f705b567887b36c1b941e7e84f247827ef865e31a035a3b",
+        "bytes": 585690
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-841d65984bcc-matematika-internacionalnaya-15-d54d1f8d9ce750c222cad296dc39f3eab4cac82fccd5c17f596e76b267244125.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630546514",
+      "asset_id": 630546514,
+      "release_tag": "article-originals-d",
+      "sha256": "d54d1f8d9ce750c222cad296dc39f3eab4cac82fccd5c17f596e76b267244125",
+      "bytes": 2104701
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-16.png": {
+    "sha256": "05f579c2d1e960288b7dfafd81654af9c34ff5a8c06439aeeab2aa3d5be24446",
+    "width": 640,
+    "height": 1003,
+    "bytes": 1104355,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-16-png-reading-640-43e99e9538de.webp",
+        "width": 640,
+        "height": 1003,
+        "sha256": "43e99e9538de21de6a0843d48f6cedcfaace8dec4e4f393da2a85c2fa11bb0e6",
+        "bytes": 497746
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-841d65984bcc-matematika-internacionalnaya-16-05f579c2d1e960288b7dfafd81654af9c34ff5a8c06439aeeab2aa3d5be24446.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630546641",
+      "asset_id": 630546641,
+      "release_tag": "article-originals-0",
+      "sha256": "05f579c2d1e960288b7dfafd81654af9c34ff5a8c06439aeeab2aa3d5be24446",
+      "bytes": 1104355
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-17.png": {
+    "sha256": "606b196c40b93c685b7c3116f5cea68e12c3c1fa03984df5c5e6e00feeb3bfa7",
+    "width": 817,
+    "height": 1000,
+    "bytes": 1368323,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-17.png-817.webp",
+        "width": 817,
+        "height": 1000,
+        "sha256": "ac1cb64af068d0d677c11a8e090cc9b1fb57cf5e20506c768f83a1cee577cdef",
+        "bytes": 635864
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-841d65984bcc-matematika-internacionalnaya-17-606b196c40b93c685b7c3116f5cea68e12c3c1fa03984df5c5e6e00feeb3bfa7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630546793",
+      "asset_id": 630546793,
+      "release_tag": "article-originals-6",
+      "sha256": "606b196c40b93c685b7c3116f5cea68e12c3c1fa03984df5c5e6e00feeb3bfa7",
+      "bytes": 1368323
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-18.png": {
+    "sha256": "a210d5454ce6eeb6c92b633b98f34212293236532b7d5cd042eb0938bbafbc80",
+    "width": 307,
+    "height": 406,
+    "bytes": 273143,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-18-png-reading-307-6aeccaae5ba5.webp",
+        "width": 307,
+        "height": 406,
+        "sha256": "6aeccaae5ba541b1f470d6da47e4270a55bbfe61c1cc760e3a6b1a568efce26a",
+        "bytes": 138050
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-841d65984bcc-matematika-internacionalnaya-18-a210d5454ce6eeb6c92b633b98f34212293236532b7d5cd042eb0938bbafbc80.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630547122",
+      "asset_id": 630547122,
+      "release_tag": "article-originals-a",
+      "sha256": "a210d5454ce6eeb6c92b633b98f34212293236532b7d5cd042eb0938bbafbc80",
+      "bytes": 273143
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-19.png": {
+    "sha256": "eeea4d4eabb54265ef9b1f2edf63f2ee7d5f7ac2dc297410ac6eb7dd2b4bc717",
+    "width": 945,
+    "height": 1316,
+    "bytes": 2040572,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-19.png-945.webp",
+        "width": 945,
+        "height": 1316,
+        "sha256": "530cc792168e4e6f4e099e0ed1a8ddad990b9ac1d6c3a8eb8170238a90a7f396",
+        "bytes": 1032990
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-841d65984bcc-matematika-internacionalnaya-19-eeea4d4eabb54265ef9b1f2edf63f2ee7d5f7ac2dc297410ac6eb7dd2b4bc717.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630547307",
+      "asset_id": 630547307,
+      "release_tag": "article-originals-e",
+      "sha256": "eeea4d4eabb54265ef9b1f2edf63f2ee7d5f7ac2dc297410ac6eb7dd2b4bc717",
+      "bytes": 2040572
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-20.png": {
+    "sha256": "72a9b6b75084644db6adefddc3fb265e718f82879b3994d72b38d173b1ef24c1",
+    "width": 687,
+    "height": 980,
+    "bytes": 1170711,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-20.png-687.webp",
+        "width": 687,
+        "height": 980,
+        "sha256": "842d48523826a5e8598c02ea97946953090d8e43b042d499d384ff4ef92e282d",
+        "bytes": 520638
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-841d65984bcc-matematika-internacionalnaya-20-72a9b6b75084644db6adefddc3fb265e718f82879b3994d72b38d173b1ef24c1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630547494",
+      "asset_id": 630547494,
+      "release_tag": "article-originals-7",
+      "sha256": "72a9b6b75084644db6adefddc3fb265e718f82879b3994d72b38d173b1ef24c1",
+      "bytes": 1170711
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-21.png": {
+    "sha256": "5b726a38ebf502c312d4d064fd3a60e7ff55b3bb951b299e7854096650b09ced",
+    "width": 725,
+    "height": 944,
+    "bytes": 978036,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-21.png-725.webp",
+        "width": 725,
+        "height": 944,
+        "sha256": "a6d5e5a8f972d996efe3e18dd50375ab70db5ba4fe91904d3f0d9ee3e1cecc83",
+        "bytes": 447734
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-841d65984bcc-matematika-internacionalnaya-21-5b726a38ebf502c312d4d064fd3a60e7ff55b3bb951b299e7854096650b09ced.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630547704",
+      "asset_id": 630547704,
+      "release_tag": "article-originals-5",
+      "sha256": "5b726a38ebf502c312d4d064fd3a60e7ff55b3bb951b299e7854096650b09ced",
+      "bytes": 978036
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-22.png": {
+    "sha256": "71335679e5149522c84fbcaa8fff9fb84825bbe17489efb3cc9c1aad0f1a79a2",
+    "width": 2400,
+    "height": 2900,
+    "bytes": 11944809,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-22.png-960.webp",
+        "width": 960,
+        "height": 1160,
+        "sha256": "bfe25f582f43f5740343d461f49c48a7a839d7f2f22447f61131ceadb2745859",
+        "bytes": 1109058
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-841d65984bcc-matematika-internacionalnaya-22-71335679e5149522c84fbcaa8fff9fb84825bbe17489efb3cc9c1aad0f1a79a2.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630547887",
+      "asset_id": 630547887,
+      "release_tag": "article-originals-7",
+      "sha256": "71335679e5149522c84fbcaa8fff9fb84825bbe17489efb3cc9c1aad0f1a79a2",
+      "bytes": 11944809
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-23.png": {
+    "sha256": "de3876c63755697503c651e10c47783cd2995bab9f9b96da129e08e2535f83db",
+    "width": 1682,
+    "height": 2204,
+    "bytes": 7678207,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-23.png-960.webp",
+        "width": 960,
+        "height": 1258,
+        "sha256": "f09790b9aeab679ccf62cc6211ce7f6f1ccdcf2f80b66d155d446ed5ab1eeb3e",
+        "bytes": 1493682
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-841d65984bcc-matematika-internacionalnaya-23-de3876c63755697503c651e10c47783cd2995bab9f9b96da129e08e2535f83db.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548045",
+      "asset_id": 630548045,
+      "release_tag": "article-originals-d",
+      "sha256": "de3876c63755697503c651e10c47783cd2995bab9f9b96da129e08e2535f83db",
+      "bytes": 7678207
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-24.png": {
+    "sha256": "ec2286b7edf9f1c9dca95ae678eaa3fb83b84fa9d25dc6dc74d45bc12c88641b",
+    "width": 614,
+    "height": 767,
+    "bytes": 1214049,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-24-png-reading-614-429db4fffaea.webp",
+        "width": 614,
+        "height": 767,
+        "sha256": "429db4fffaea0d44d9aef202634daef2756b0b487d2ecc2a8a1b89610d95f5ef",
+        "bytes": 600070
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-841d65984bcc-matematika-internacionalnaya-24-ec2286b7edf9f1c9dca95ae678eaa3fb83b84fa9d25dc6dc74d45bc12c88641b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548205",
+      "asset_id": 630548205,
+      "release_tag": "article-originals-e",
+      "sha256": "ec2286b7edf9f1c9dca95ae678eaa3fb83b84fa9d25dc6dc74d45bc12c88641b",
+      "bytes": 1214049
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-25.png": {
+    "sha256": "9e07f7976668c3587dff0ebb0fbec93134def472bc70fdc1b215e50aa41ab56a",
+    "width": 268,
+    "height": 326,
+    "bytes": 112525,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-25.png-268.webp",
+        "width": 268,
+        "height": 326,
+        "sha256": "64fb17b5d4953576c33c618c63d73e88a308da56a806ea2634537d3591ca4998",
+        "bytes": 49684
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-841d65984bcc-matematika-internacionalnaya-25-9e07f7976668c3587dff0ebb0fbec93134def472bc70fdc1b215e50aa41ab56a.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548365",
+      "asset_id": 630548365,
+      "release_tag": "article-originals-9",
+      "sha256": "9e07f7976668c3587dff0ebb0fbec93134def472bc70fdc1b215e50aa41ab56a",
+      "bytes": 112525
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-26.png": {
+    "sha256": "b5a37f32c0c2c854736445ac4f50a4b9e60b680af91f18869b9305859c45ca9c",
+    "width": 400,
+    "height": 400,
+    "bytes": 215914,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-26.png-400.webp",
+        "width": 400,
+        "height": 400,
+        "sha256": "7e7cb891940b98d11a35a171e91dbe70cb40e0607215aa418335d337b7d55ff3",
+        "bytes": 99786
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-841d65984bcc-matematika-internacionalnaya-26-b5a37f32c0c2c854736445ac4f50a4b9e60b680af91f18869b9305859c45ca9c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548491",
+      "asset_id": 630548491,
+      "release_tag": "article-originals-b",
+      "sha256": "b5a37f32c0c2c854736445ac4f50a4b9e60b680af91f18869b9305859c45ca9c",
+      "bytes": 215914
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-27.png": {
+    "sha256": "22d514dcfc41d5db54a4f847823ebf81b4253bdb73058c0606edc5b04b457cf0",
+    "width": 1000,
+    "height": 685,
+    "bytes": 1408424,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-27.png-960.webp",
+        "width": 960,
+        "height": 658,
+        "sha256": "c9641c376c16b8143bf7f8b31d5fd97481b06aa54befd2ccba3a2afe5972c32d",
+        "bytes": 676646
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-841d65984bcc-matematika-internacionalnaya-27-22d514dcfc41d5db54a4f847823ebf81b4253bdb73058c0606edc5b04b457cf0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548640",
+      "asset_id": 630548640,
+      "release_tag": "article-originals-2",
+      "sha256": "22d514dcfc41d5db54a4f847823ebf81b4253bdb73058c0606edc5b04b457cf0",
+      "bytes": 1408424
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-28.png": {
+    "sha256": "3f2755125f53f135bf550cf0c499d120b153b58d0c7ea634ce3998745953c797",
+    "width": 690,
+    "height": 840,
+    "bytes": 815788,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-28.png-690.webp",
+        "width": 690,
+        "height": 840,
+        "sha256": "24d64fa8e83cba7099dbb68e7126fb665f8c28a21ae1c8ab748e086a51c13c67",
+        "bytes": 299676
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-841d65984bcc-matematika-internacionalnaya-28-3f2755125f53f135bf550cf0c499d120b153b58d0c7ea634ce3998745953c797.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548766",
+      "asset_id": 630548766,
+      "release_tag": "article-originals-3",
+      "sha256": "3f2755125f53f135bf550cf0c499d120b153b58d0c7ea634ce3998745953c797",
+      "bytes": 815788
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-29.png": {
+    "sha256": "7f789a0c39d1a7610363635a9a8f5646230651907c1b22906555f1ba0c1a7758",
+    "width": 1820,
+    "height": 2195,
+    "bytes": 2439918,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-29-png-reading-960-b8577e2d1dbf.webp",
+        "width": 960,
+        "height": 1158,
+        "sha256": "b8577e2d1dbfca2a32b0eb542a5926b56a3c10a988ffe5a718af32b01a80c826",
+        "bytes": 337092
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-841d65984bcc-matematika-internacionalnaya-29-7f789a0c39d1a7610363635a9a8f5646230651907c1b22906555f1ba0c1a7758.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548942",
+      "asset_id": 630548942,
+      "release_tag": "article-originals-7",
+      "sha256": "7f789a0c39d1a7610363635a9a8f5646230651907c1b22906555f1ba0c1a7758",
+      "bytes": 2439918
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-30.png": {
+    "sha256": "26d15c4dea9348a7a88939c13305f6e8e2af018a4f2d86e10f6b2c047ef436b2",
+    "width": 1600,
+    "height": 1126,
+    "bytes": 1702966,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-30-png-reading-960-b3a453a905ee.webp",
+        "width": 960,
+        "height": 676,
+        "sha256": "b3a453a905ee5ff5cea0b24173bd4067b84160da0761d0f6b2aad5f337673881",
+        "bytes": 602024
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-841d65984bcc-matematika-internacionalnaya-30-26d15c4dea9348a7a88939c13305f6e8e2af018a4f2d86e10f6b2c047ef436b2.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549120",
+      "asset_id": 630549120,
+      "release_tag": "article-originals-2",
+      "sha256": "26d15c4dea9348a7a88939c13305f6e8e2af018a4f2d86e10f6b2c047ef436b2",
+      "bytes": 1702966
+    }
+  },
+  "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-31.png": {
+    "sha256": "1fba9adf52ca0d92c8d5cfaf35687289a6f4e7294353ea5f2b85c09b4e8fbaaf",
+    "width": 1350,
+    "height": 1350,
+    "bytes": 3133264,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-841d65984bcc/matematika-internacionalnaya-31-png-reading-960-14a2211800aa.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "14a2211800aa95b19c092f9c3941ae02a6278b674d0b34ee567a4cb7d98aaf5d",
+        "bytes": 865504
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-841d65984bcc-matematika-internacionalnaya-31-1fba9adf52ca0d92c8d5cfaf35687289a6f4e7294353ea5f2b85c09b4e8fbaaf.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549340",
+      "asset_id": 630549340,
+      "release_tag": "article-originals-1",
+      "sha256": "1fba9adf52ca0d92c8d5cfaf35687289a6f4e7294353ea5f2b85c09b4e8fbaaf",
+      "bytes": 3133264
+    }
+  }
+}
