@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-4bcf7c5b5199/dalnomer-07-03-01.png": {
+    "sha256": "9e7f58bf44ee42054ad326929bce04480a64d3366729c6ccfdbe742c3eeeaa24",
+    "width": 600,
+    "height": 720,
+    "bytes": 592967,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4bcf7c5b5199/dalnomer-07-03-01.png-600.webp",
+        "width": 600,
+        "height": 720,
+        "sha256": "7f296b562dd994304077a58eb6b8fda29d227b10774064a7f54a77624c4bd287",
+        "bytes": 286762
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-4bcf7c5b5199-dalnomer-07-03-01-9e7f58bf44ee42054ad326929bce04480a64d3366729c6ccfdbe742c3eeeaa24.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630496840",
+      "asset_id": 630496840,
+      "release_tag": "article-originals-9",
+      "sha256": "9e7f58bf44ee42054ad326929bce04480a64d3366729c6ccfdbe742c3eeeaa24",
+      "bytes": 592967
+    }
+  },
+  "/assets/images/hm-tt-4bcf7c5b5199/dalnomer-07-03-02.png": {
+    "sha256": "678a7282865a4080459598082a7cb2b1349e7b4d17b9660b5c64325757e9b6b4",
+    "width": 2053,
+    "height": 1630,
+    "bytes": 3955473,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4bcf7c5b5199/dalnomer-07-03-02.png-960.webp",
+        "width": 960,
+        "height": 762,
+        "sha256": "0129672ebd3818135ec29d36de72c224054ac85eb64df6f98d266fc8701fb8ad",
+        "bytes": 532858
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-4bcf7c5b5199-dalnomer-07-03-02-678a7282865a4080459598082a7cb2b1349e7b4d17b9660b5c64325757e9b6b4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630550157",
+      "asset_id": 630550157,
+      "release_tag": "article-originals-6",
+      "sha256": "678a7282865a4080459598082a7cb2b1349e7b4d17b9660b5c64325757e9b6b4",
+      "bytes": 3955473
+    }
+  },
+  "/assets/images/hm-tt-4bcf7c5b5199/dalnomer-07-03-03.png": {
+    "sha256": "a1ea85f04db53bcc9595a77e4dc413c0a44a37eaf1ee58bf124869b2ef1f2584",
+    "width": 900,
+    "height": 900,
+    "bytes": 54200,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4bcf7c5b5199/dalnomer-07-03-03.png-900.webp",
+        "width": 900,
+        "height": 900,
+        "sha256": "d6ba772d7efc09a801eaaf21b04024cfd1ba704273ef5ad6aac4772b7eb5f91c",
+        "bytes": 25450
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-4bcf7c5b5199-dalnomer-07-03-03-a1ea85f04db53bcc9595a77e4dc413c0a44a37eaf1ee58bf124869b2ef1f2584.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630550316",
+      "asset_id": 630550316,
+      "release_tag": "article-originals-a",
+      "sha256": "a1ea85f04db53bcc9595a77e4dc413c0a44a37eaf1ee58bf124869b2ef1f2584",
+      "bytes": 54200
+    }
+  },
+  "/assets/images/hm-tt-4bcf7c5b5199/dalnomer-07-03-04.png": {
+    "sha256": "839342e3d5443a6907a03c26e55bd607b4cd092b6830706f18c521b952a2b0c6",
+    "width": 2960,
+    "height": 1498,
+    "bytes": 8171014,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4bcf7c5b5199/dalnomer-07-03-04.png-960.webp",
+        "width": 960,
+        "height": 486,
+        "sha256": "0472f1a91f98658eb0126ba0035d4f999dbd74547ec23200ebfebd0a71c8de98",
+        "bytes": 517334
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-4bcf7c5b5199-dalnomer-07-03-04-839342e3d5443a6907a03c26e55bd607b4cd092b6830706f18c521b952a2b0c6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630550469",
+      "asset_id": 630550469,
+      "release_tag": "article-originals-8",
+      "sha256": "839342e3d5443a6907a03c26e55bd607b4cd092b6830706f18c521b952a2b0c6",
+      "bytes": 8171014
+    }
+  },
+  "/assets/images/hm-tt-4bcf7c5b5199/dalnomer-07-03-05.png": {
+    "sha256": "ec58cbea6213851604e675cbb415e1c1639c10719b27ee306c77c866d00e2f5c",
+    "width": 647,
+    "height": 768,
+    "bytes": 996152,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-4bcf7c5b5199/dalnomer-07-03-05.png-647.webp",
+        "width": 647,
+        "height": 768,
+        "sha256": "fef12e1ccb16d172f04f62b93ecd192bc0856c684b791c147f617de9c4c4eee1",
+        "bytes": 454108
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-4bcf7c5b5199-dalnomer-07-03-05-ec58cbea6213851604e675cbb415e1c1639c10719b27ee306c77c866d00e2f5c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630550668",
+      "asset_id": 630550668,
+      "release_tag": "article-originals-e",
+      "sha256": "ec58cbea6213851604e675cbb415e1c1639c10719b27ee306c77c866d00e2f5c",
+      "bytes": 996152
+    }
+  }
+}
