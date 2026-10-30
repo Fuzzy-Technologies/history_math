@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-913717b9a0e5/sir-isaac-newton-tree-planti-01.png": {
+    "sha256": "ef1b4d96c8a365865262a1b04780a0bf9f5533438116687f97e8508706df6a54",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 546480,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-913717b9a0e5/sir-isaac-newton-tree-planti-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "d0876d55d7f83fa9131c9c76fe99869fd0676c29aef8bc95ee30714c52f9e0a7",
+        "bytes": 803730
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-913717b9a0e5-sir-isaac-newton-tree-planti-01-ef1b4d96c8a365865262a1b04780a0bf9f5533438116687f97e8508706df6a54.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630493545",
+      "asset_id": 630493545,
+      "release_tag": "article-originals-e",
+      "sha256": "ef1b4d96c8a365865262a1b04780a0bf9f5533438116687f97e8508706df6a54",
+      "bytes": 546480
+    }
+  },
+  "/assets/images/hm-tt-913717b9a0e5/sir-isaac-newton-tree-planti-02.png": {
+    "sha256": "d3807669c2aafa4d0f476110943c3188732c1931a31e5c25fae5e6a4a3bb6b44",
+    "width": 1088,
+    "height": 1296,
+    "bytes": 1218176,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-913717b9a0e5/sir-isaac-newton-tree-planti-02.png-960.webp",
+        "width": 960,
+        "height": 1144,
+        "sha256": "cbc4b1d8ad22a7bb0411ff64fcfe7c499f51dbe017ea7b79ecd41b25c5054749",
+        "bytes": 828010
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-913717b9a0e5-sir-isaac-newton-tree-planti-02-d3807669c2aafa4d0f476110943c3188732c1931a31e5c25fae5e6a4a3bb6b44.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630533629",
+      "asset_id": 630533629,
+      "release_tag": "article-originals-d",
+      "sha256": "d3807669c2aafa4d0f476110943c3188732c1931a31e5c25fae5e6a4a3bb6b44",
+      "bytes": 1218176
+    }
+  },
+  "/assets/images/hm-tt-913717b9a0e5/sir-isaac-newton-tree-planti-03.png": {
+    "sha256": "e314f7cba979c98010783bd1a8c334c48155334bf6ff0f67f24ded214b4a1e81",
+    "width": 1137,
+    "height": 1088,
+    "bytes": 837750,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-913717b9a0e5/sir-isaac-newton-tree-planti-03.png-960.webp",
+        "width": 960,
+        "height": 919,
+        "sha256": "1ac0e49609eb0f5b801e3ec66c454ed8fd4a0976ffe97d062667daadca354b0a",
+        "bytes": 533804
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-913717b9a0e5-sir-isaac-newton-tree-planti-03-e314f7cba979c98010783bd1a8c334c48155334bf6ff0f67f24ded214b4a1e81.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630533807",
+      "asset_id": 630533807,
+      "release_tag": "article-originals-e",
+      "sha256": "e314f7cba979c98010783bd1a8c334c48155334bf6ff0f67f24ded214b4a1e81",
+      "bytes": 837750
+    }
+  }
+}
