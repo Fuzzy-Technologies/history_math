@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-e63c86b2277a/happy-new-year-01.png": {
+    "sha256": "9353dbb1e81339257ddfec16df9029385796071031859c1edd003c6ff974ff93",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 1800274,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e63c86b2277a/happy-new-year-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "dd3f7d62a9dabdfff9de02e1eac596b2a3cb9d7b2a83ad2bd3fb5c3b80d3923d",
+        "bytes": 727886
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-e63c86b2277a-happy-new-year-01-9353dbb1e81339257ddfec16df9029385796071031859c1edd003c6ff974ff93.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630498764",
+      "asset_id": 630498764,
+      "release_tag": "article-originals-9",
+      "sha256": "9353dbb1e81339257ddfec16df9029385796071031859c1edd003c6ff974ff93",
+      "bytes": 1800274
+    }
+  },
+  "/assets/images/hm-tt-e63c86b2277a/happy-new-year-02.png": {
+    "sha256": "d4e96bcde05bd680b3d387f67140a0da1f70c159843fb1f83fc770013b2bebdc",
+    "width": 2585,
+    "height": 2585,
+    "bytes": 1599907,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e63c86b2277a/happy-new-year-02.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "d4e552d8b288de9ffd0e29e2d27f6b8a03a209a9ae6fd2b6f1abf4250666bd07",
+        "bytes": 1124792
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-e63c86b2277a-happy-new-year-02-d4e96bcde05bd680b3d387f67140a0da1f70c159843fb1f83fc770013b2bebdc.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630537060",
+      "asset_id": 630537060,
+      "release_tag": "article-originals-d",
+      "sha256": "d4e96bcde05bd680b3d387f67140a0da1f70c159843fb1f83fc770013b2bebdc",
+      "bytes": 1599907
+    }
+  },
+  "/assets/images/hm-tt-e63c86b2277a/happy-new-year-03.png": {
+    "sha256": "8a7666ddb85fc729137be9960217a6cea76cb9c596a4f667992f9454cc24f1d4",
+    "width": 1020,
+    "height": 1020,
+    "bytes": 1910094,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-e63c86b2277a/happy-new-year-03.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "0008d571fd48cb223703cc4147d0e0d32904f209afa25c0ddbb3ffd2413cad4f",
+        "bytes": 1417990
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-e63c86b2277a-happy-new-year-03-8a7666ddb85fc729137be9960217a6cea76cb9c596a4f667992f9454cc24f1d4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630537261",
+      "asset_id": 630537261,
+      "release_tag": "article-originals-8",
+      "sha256": "8a7666ddb85fc729137be9960217a6cea76cb9c596a4f667992f9454cc24f1d4",
+      "bytes": 1910094
+    }
+  }
+}
