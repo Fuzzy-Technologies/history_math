@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-1b626a4e40b4-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "ad4fac2d44faf4b564106ff954a80ff9c24c779ebc5997c63823b8441d11c7e0",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Оставь как есть, мержим.",
+    "source_commit": "52f285cd6d3bed2f7396c9e2c2ce63750ed5528d",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/197"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source calls the Odhner wheel the basic mechanism of all arithmometer designs, while also discussing machines using Leibniz’s principle. Confirm the intended scope of “all”; the statement is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #197 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 8,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-19",
+      "url": "https://teletype.in/@history_math/Arifmometr-11-19"
+    }
+  }
+}
