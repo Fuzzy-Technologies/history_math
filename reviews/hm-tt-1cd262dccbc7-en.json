@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-1cd262dccbc7-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "1f0fc6481cd8de7c3088722bb92e054db1fe7f76d4dc500d78212360598559cc",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Замечания. Согласен, но они не критичные. 212 можно мержить.",
+    "source_commit": "4a112a4c177930bbbe414c827a202b418ab40065",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/212"
+  },
+  "questions": [
+    {
+      "id": "leibniz-terminology-priority",
+      "question": "Can the editor verify the terminology-priority claims, particularly “algorithm,” and the assertion that Leibniz was the first to break the Latin-only scholarly tradition? The original assertions are preserved.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #212 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    },
+    {
+      "id": "leibniz-calculator-capabilities",
+      "question": "Does the account distinguish operations directly performed by Leibniz's calculator from powers and roots obtained by procedures using it? The body names powers and roots; the caption names only the four arithmetic operations.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #212 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-10-18",
+      "url": "https://teletype.in/@history_math/Universalnyj-genij-Lejbnic-10-18"
+    }
+  },
+  "external_editorial_reviews": [
+    {
+      "url": "https://github.com/Fuzzy-Technologies/history_math/pull/212#pullrequestreview-5618270702",
+      "review_id": 5618270702,
+      "source_commit": "4a112a4c177930bbbe414c827a202b418ab40065",
+      "disposition": "accepted_unchanged",
+      "resolution": "Tim55667757 approved publication of PR #212 in the 2026-10-30 owner chat instruction. The previously flagged source material is retained unchanged."
+    }
+  ]
+}
