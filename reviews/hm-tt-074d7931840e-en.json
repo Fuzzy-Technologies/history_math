@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-074d7931840e-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "56aac69ddd1b367934f5c28995e4caa0918166f9d5e49f9d1d95bfe7806a926f",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Оставляем как есть, даты не трогаем, мержим.",
+    "source_commit": "296a204de0a29f151ad2b588eb23d5b558b872ad",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/143"
+  },
+  "questions": [
+    {
+      "id": "babylon-conquest-chronology",
+      "question": "Please verify the historical chronology, particularly the VII-century placement of Nebuchadnezzar and the date 336 for Alexander’s conquest of Babylon. The dates are preserved from the source.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #143 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-07-22",
+      "url": "https://teletype.in/@history_math/Matematika-Drevnego-Vavilona-07-23"
+    }
+  }
+}
