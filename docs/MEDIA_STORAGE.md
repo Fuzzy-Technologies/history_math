@@ -117,3 +117,11 @@ The draft does not authorize deleting source originals from Git. If removing
 them from the repository is desired after successful migration, prepare a
 separate reviewed change with stored receipts and approval-digest compatibility.
 Do not rewrite history to reduce repository size.
+
+## Bounded original downloads
+
+The 2026-10-30 owner instruction supersedes preservation of oversized PNG bytes in public downloads. `docs/IMAGE_SIZE_POLICY.md` sets a 10 MB recommendation, a 13 MB critical warning with an exact-object PR exception, and a non-overridable 15 MB ceiling. All upload paths enforce that ceiling, including manual backfill.
+
+`site/_data/image_publication.json` pins each authorized PNG-to-JPEG conversion by source hash, source size, unchanged dimensions, exact JPEG hash/size and quality. The pinned Pillow encoder uses 4:4:4 sampling and tries quality 100 first. The registry includes pending article packages; their JPEG downloads can be prepared without publishing their articles. Existing reading previews and editorial source evidence remain intact.
+
+The master workflow prepares missing JPEG bytes, checks them against the registry, uploads and publicly verifies them, and rewrites full-view/download controls to the JPEG's S3 URL and filename. Previously verified JPEG objects are reused. The retained receipt includes a complete authenticated object/version size inventory. Upload-only publication does not claim that old versions were deleted: retirement requires separate deletion rights and verification that live links have switched.

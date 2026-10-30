@@ -4,6 +4,7 @@ import {pathToFileURL} from 'node:url';
 import {imageInventory} from './external-originals.mjs';
 import {imageObjects, uniqueObjects, sourceBytes, localBytes} from './publication-media.mjs';
 import {mediaObject, assertBytes, sha256, configuredClient, responseBytes, transfer, readWithRetries} from './s3-media.mjs';
+import {publicationReplacements} from './image-publication.mjs';
 
 const repository = 'Fuzzy-Technologies/history_math';
 const apiRoot = `https://api.github.com/repos/${repository}`;
@@ -34,7 +35,7 @@ export function eligiblePR(pr) {
     pr.head?.repo?.full_name === repository && /^feature\/article-/.test(pr.head.ref) && revisionPattern.test(pr.head.sha);
 }
 
-export async function pullRequestObjects(api = githubData, request = fetch) {
+export async function pullRequestObjects(api = githubData, request = fetch, replacements = {}, root = '.') {
   const pulls = (await pages(api, '/pulls?state=open&sort=created&direction=asc')).filter(eligiblePR), objects = [], evidence = [];
   for (const pr of pulls) {
     const revision = pr.head.sha, tree = await api(`/git/trees/${revision}?recursive=1`);
@@ -47,7 +48,7 @@ export async function pullRequestObjects(api = githubData, request = fetch) {
       const content = await api(`/contents/${file.filename}?ref=${revision}`);
       if (content.encoding !== 'base64' || !content.content) throw new Error('Unavailable pull request media manifest');
       const inventory = JSON.parse(Buffer.from(content.content, 'base64').toString('utf8'));
-      objects.push(...imageObjects(inventory, path => ({revision, path: 'site' + path})).map(image => image.object));
+      objects.push(...imageObjects(inventory, path => ({revision, path: 'site' + path}), replacements, root).map(image => image.object));
     }
     let pdfs = 0;
     for (const file of tree.tree.filter(file => file.type === 'blob' && /\.pdf$/i.test(file.path))) {
@@ -121,8 +122,8 @@ export async function copyPublishedPdfs({origin, baseurl, client, request = fetc
 export async function preflightMedia({root, origin, baseurl, client, request = fetch, progress} = {}) {
   const copied = await copyPublishedPdfs({origin, baseurl, client, request, progress});
   if (!copied.summary.existing_pdfs) return copied;
-  const images = imageObjects(imageInventory(root), path => ({file: resolve(root, 'site', '.' + path)}));
-  for (const image of images.filter(image => !image.external_url)) assertBytes(image.object, await localBytes(resolve(root, 'site'), image.path));
+  const images = imageObjects(imageInventory(root), path => ({file: resolve(root, 'site', '.' + path)}), publicationReplacements(root), root);
+  for (const image of images.filter(image => !image.external_url)) assertBytes(image.original_object, await localBytes(resolve(root, 'site'), image.path));
   const originals = await transfer(uniqueObjects(images.map(image => image.object)), client,
     object => sourceBytes(object, request), {request, progress});
   return {version: 1, objects: [...copied.objects, ...originals], summary: {...copied.summary,
@@ -130,11 +131,12 @@ export async function preflightMedia({root, origin, baseurl, client, request = f
 }
 
 export async function backfill({root, origin, baseurl, includeOpenPRs, client, api = githubData, request = fetch, progress} = {}) {
-  const images = imageObjects(imageInventory(root), path => ({file: resolve(root, 'site', '.' + path)}));
+  const replacements = publicationReplacements(root);
+  const images = imageObjects(imageInventory(root), path => ({file: resolve(root, 'site', '.' + path)}), replacements, root);
   // Verify local master sources before the first upload, including symlink guards.
-  for (const image of images.filter(image => !image.external_url)) assertBytes(image.object, await localBytes(resolve(root, 'site'), image.path));
+  for (const image of images.filter(image => !image.external_url)) assertBytes(image.original_object, await localBytes(resolve(root, 'site'), image.path));
   const deployed = await deployedPdfObjects(origin, baseurl, request);
-  const pending = includeOpenPRs ? await pullRequestObjects(api, request) : {objects: [], pulls: []};
+  const pending = includeOpenPRs ? await pullRequestObjects(api, request, replacements, root) : {objects: [], pulls: []};
   const objects = uniqueObjects([...images.map(image => image.object), ...deployed, ...pending.objects]);
   const receipt = await transfer(objects, client, async object => {
     if (object.source.revision) {

@@ -33,10 +33,15 @@ const origin = `http://127.0.0.1:${server.address().port}`;
 const browser = await chromium.launch({executablePath: process.env.BROWSER_EXECUTABLE || undefined});
 try {
   const articlePages = [];
+  const convertedUrls = new Set(Object.values(receipt.jpeg_originals || {}).map(record =>
+    `${storage.base}/originals/${record.sha256}/${record.filename}`));
   for (const lang of ['ru', 'en']) {
     let found;
     for (const article of manifest.articles.filter(article => article.lang === lang)) {
-      if ((await readFile(resolve(root, '.' + article.url, 'index.html'), 'utf8')).includes('data-original-storage="s3"')) { found = article; break; }
+      const html = await readFile(resolve(root, '.' + article.url, 'index.html'), 'utf8');
+      if (!html.includes('data-original-storage="s3"')) continue;
+      found ||= article;
+      if ([...convertedUrls].some(url => html.includes(`data-original="${url}"`))) { found = article; break; }
     }
     assert.ok(found, `A published ${lang} image fixture is required`);
     articlePages.push(found);
@@ -58,7 +63,9 @@ try {
         await Promise.all(images.map(image => image.decode()));
       });
       assert.deepEqual(requests.filter(request => request.url.startsWith(storage.base)), [], 'Reading must not preload originals or PDFs');
-      const trigger = page.locator('.image-trigger:has(img[data-original-storage="s3"])').first();
+      const convertedTrigger = page.locator('.image-trigger:has(img[data-original-storage="s3"][data-original-name$=".jpg"])');
+      const trigger = convertedUrls.size && await convertedTrigger.count() ? convertedTrigger.first() :
+        page.locator('.image-trigger:has(img[data-original-storage="s3"])').first();
       assert.ok(await trigger.count(), `S3 viewer fixture: ${url}`);
       const target = await trigger.locator('img').getAttribute('data-original');
       assert.ok(objects.has(target));

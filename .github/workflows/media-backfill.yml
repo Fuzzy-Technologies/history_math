@@ -31,6 +31,10 @@ jobs:
       - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
         id: pages
       - run: npm ci
+      - name: Prepare bounded original downloads
+        run: |
+          python3 -m pip install -r tools/requirements-images.txt
+          python3 scripts/publication_jpegs.py --registry site/_data/image_publication.json --output test-results/publication-jpegs/plan.json
       - name: Copy and publicly verify existing media
         env:
           GITHUB_TOKEN: ${{ github.token }}

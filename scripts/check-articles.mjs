@@ -4,6 +4,8 @@ import {spawnSync} from 'node:child_process';
 import {checkSources, checkArticle} from './article-checks.mjs';
 import {checkBrowser} from './article-browser.mjs';
 import {reportLanguage, overall, humanReport, checksForProfile} from './article-messages.mjs';
+import {imageInventory} from './external-originals.mjs';
+import {imageSizeFindings, publicationReplacements, publicationSizeExceptions} from './image-publication.mjs';
 
 const root = resolve('.');
 const args = process.argv.slice(2);
@@ -27,6 +29,7 @@ try {
   const source = checkSources(root, undefined, report.language);
   run('HM_MARKDOWN', option('--python', process.env.PYTHON_EXECUTABLE ?? 'python3'), ['tools/markdown_tables.py']);
   report.findings.push(...source.findings);
+  report.findings.push(...imageSizeFindings(imageInventory(root), publicationReplacements(root), publicationSizeExceptions(root)));
   report.articles = source.articles;
   for (const template of ['templates/article.md', 'templates/minimal-article.md']) {
     report.findings.push(...checkArticle(readFileSync(template, 'utf8'), template, root).findings.filter(x => x.severity === 'error'));
