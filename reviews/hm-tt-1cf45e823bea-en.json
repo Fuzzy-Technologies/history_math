@@ -1,0 +1,36 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-1cf45e823bea-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "2b59350297860f1b37e0a8cc7b22a4cd93915b2f63363358740f0125445ffc8b",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Оставляем как есть, мержим.",
+    "source_commit": "7de2ebbc03dddbb8342a73b67decaf18f4558800",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/149"
+  },
+  "questions": [
+    {
+      "id": "morozov-classification-term",
+      "question": "The source describes Morozov’s 1938 result as enumerating all primitive representations of simple Lie groups. Should the exact objects classified and the term primitive representations be checked? The original terminology and date are retained.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #149 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 10,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-06-30",
+      "url": "https://teletype.in/@history_math/Razvitie-matematiki-v-Kazanskom-universitete-XX-vek-06-30"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
