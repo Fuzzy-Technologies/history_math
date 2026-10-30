@@ -43,6 +43,12 @@ Use the owner-requested sepia science-magazine design: ivory paper, dark brown i
 
 ## Validation and evidence
 
+### Original image size policy (owner instruction, 2026-10-30)
+
+`docs/IMAGE_SIZE_POLICY.md` is mandatory for published content and every open article PR. MB means 1,000,000 bytes. Keep originals below 10 MB where practicable; at 10 MB report a recommendation, at 13 MB require a critical warning and a one-use exception documented in the PR, and reject any image above 15 MB without an override. Exceptions bind one exact SHA-256 and size and cannot authorize later replacements. Normalize oversized raster downloads to JPEG without resizing, using the highest quality that fits the hard limit and 4:4:4 chroma sampling. Preserve source evidence and verify generated dimensions, hashes, public URLs and original-download controls before retiring the replaced stored objects.
+
+The owner explicitly authorized this technical image normalization for existing publications and all 28 remaining article PRs. This does not approve pending articles for publication or authorize editorial text/date changes. The technical normalization and its original-to-JPEG receipts must remain separate from editorial approval evidence.
+
 Changes affecting source/publication contracts need mutation tests for rejected inputs. Validate built URLs, assets, languages, canonical/hreflang and indexes. Verify literal `$...$` and `$$...$$` through Markdown into the browser. Check search case, Cyrillic Yo/Ye equivalence, empty queries and no-result behavior, plus safe archive rotation. For layout or application logic changes, capture desktop/mobile evidence, check console/request failures and run automated accessibility rules in the master publication workflow. Article/image-only updates retain the light source and output gates.
 
 CI must succeed for the current PR SHA. The mere presence of a workflow is not evidence it ran. Cleanup mocks prove decision logic only; a real merged event remains unverified until an owner-approved merge. Production workflow guards must reject non-master refs even on manual dispatch. Do not claim the site was published when only a PR or artifact exists.
