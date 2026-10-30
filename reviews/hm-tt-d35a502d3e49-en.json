@@ -1,0 +1,42 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-d35a502d3e49-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "ef74d34ef96a81a3c237bc0c20d46af1c94964393a31960b238cd3dfda11c129",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Про Кирика новгородца оставляем как есть, мержим.",
+    "source_commit": "3715e2ad14cf074081d790b5da7b482ff510b6a5",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/90"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source treats 365 × 26 + 7 = 9497 days as exact and gives an integer 1356 weeks, while noting that Kirik may have rounded. Confirm the birthday/calendar assumptions and the treatment of the remaining days; the source’s calculation is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #90 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-04-26",
+      "url": "https://teletype.in/@history_math/The-Kirik-of-Novgorod-Story"
+    }
+  },
+  "external_editorial_reviews": [
+    {
+      "url": "https://github.com/Fuzzy-Technologies/history_math/pull/90#pullrequestreview-5618254275",
+      "review_id": 5618254275,
+      "source_commit": "3715e2ad14cf074081d790b5da7b482ff510b6a5",
+      "disposition": "accepted_unchanged",
+      "resolution": "Tim55667757 approved publication of PR #90 in the 2026-10-30 owner chat instruction. The previously flagged source material is retained unchanged."
+    }
+  ]
+}

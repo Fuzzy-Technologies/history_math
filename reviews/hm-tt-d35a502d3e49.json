@@ -1,0 +1,37 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-d35a502d3e49",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "a65bacb9571838fb5bb2d12e6e1923214ca372474884c10c376d49bf7e075aca",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Про Кирика новгородца оставляем как есть, мержим.",
+    "source_commit": "3715e2ad14cf074081d790b5da7b482ff510b6a5",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/90"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-04-26",
+      "url": "https://teletype.in/@history_math/The-Kirik-of-Novgorod-Story"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "external_editorial_reviews": [
+    {
+      "url": "https://github.com/Fuzzy-Technologies/history_math/pull/90#pullrequestreview-5618254275",
+      "review_id": 5618254275,
+      "source_commit": "3715e2ad14cf074081d790b5da7b482ff510b6a5",
+      "disposition": "accepted_unchanged",
+      "resolution": "Tim55667757 approved publication of PR #90 in the 2026-10-30 owner chat instruction. The previously flagged source material is retained unchanged."
+    }
+  ]
+}
