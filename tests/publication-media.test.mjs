@@ -8,6 +8,7 @@ import {mediaObject, storage, sha256, assertBytes, validateObject, configuredCli
 import {publicationPlan, rewriteMedia, finalizePublication, requireReceipt, sourceBytes, localBytes} from '../scripts/publication-media.mjs';
 import {eligiblePR, pullRequestObjects, deployedPdfObjects, copyPublishedPdfs, preflightMedia, githubData, revisionBytes} from '../scripts/backfill-media.mjs';
 import {nativeOriginalTarget, loadVerifiedOriginal} from '../site/assets/original-image.js';
+import {jpegPolicy} from '../scripts/image-publication.mjs';
 
 const original = Buffer.from('original image fixture'), pdf = Buffer.from('%PDF-1.7\nexisting publication\n%%EOF');
 const object = mediaObject('originals', 'figure.png', sha256(original), original.length);
@@ -174,6 +175,36 @@ test('changed local media and symlink escapes fail before output edits', async (
     await assert.rejects(localBytes(site, '/escape/assets/images/example/figure.png'));
     await assert.rejects(publicationPlan(root, site), /Symlink/);
   });
+});
+
+test('verified JPEG replacements change full-view/download identity while preserving source and reading bytes', async () => {
+  await fixture(async ({root, site, path, previewPath, write}) => {
+    const source = JSON.parse(await readFile(resolve(root, 'site/_data/image_assets.json'), 'utf8'))[path];
+    const encoded = Buffer.from('jpeg');
+    const record = {policy: jpegPolicy, source_sha256: source.sha256, source_bytes: source.bytes,
+      width: source.width, height: source.height, sha256: sha256(encoded), bytes: encoded.length,
+      filename: 'figure.jpg', quality: 100, source};
+    await write(resolve(root, 'site/_data/image_publication.json'), JSON.stringify({version: 1, policy: jpegPolicy, replacements: {[path]: record}}));
+    const plan = await publicationPlan(root, site);
+    assert.equal(plan.images[0].object.filename, 'figure.jpg');
+    assert.equal(plan.images[0].object.content_type, 'image/jpeg');
+    const receipt = plan.objects.map(value => ({...validateObject(value), verified: true}));
+    await finalizePublication(site, plan, receipt, {pruneOutput: true});
+    const html = await readFile(resolve(site, 'ru/publications/example/index.html'), 'utf8');
+    assert.ok(html.includes(`data-original="${plan.images[0].object.url}"`));
+    assert.ok(html.includes('data-original-name="figure.jpg"'));
+    assert.ok(html.includes(`src="${previewPath}"`));
+    assert.deepEqual(await readFile(resolve(root, 'site', '.' + path)), original);
+    const published = JSON.parse(await readFile(resolve(site, 'assets/publication-media.json'), 'utf8'));
+    assert.equal(published.jpeg_originals[path].sha256, record.sha256);
+    assert.equal(Object.hasOwn(published.jpeg_originals[path], 'source'), false);
+  });
+});
+
+test('all S3 writers reject a file above 15 MB before any network or source operation', async () => {
+  const oversized = mediaObject('originals', 'large.jpg', 'a'.repeat(64), 15_000_001);
+  await assert.rejects(uploadVerified({send: () => assert.fail('No network operation for oversized bytes')},
+    oversized, () => assert.fail('No oversized upload source')), /15 MB hard limit/);
 });
 
 test('URL rewriting covers root/project base, legacy HTML, CSS and JSON without changing prose or titles', async () => {

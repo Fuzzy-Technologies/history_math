@@ -15,4 +15,5 @@ Read `DEVELOPMENT_PROTOCOL.md` before making changes. This repository is the pub
 - Public article statuses are only `published` and `demo`; ensure drafts have no direct output URL.
 - Preserve preview/social/hero image roles; use assets with documented provenance.
 - Run the source, workflow and output checks required by DEVELOPMENT_PROTOCOL.md; browser suites are conditional on code/layout/logic/page changes. Report actual results and unresolved limitations.
+- Enforce the owner-approved image budget in `docs/IMAGE_SIZE_POLICY.md`: 10 MB recommendation, 13 MB critical warning requiring a one-use PR exception, and a hard rejection above 15 MB. Apply it to published content, pending PRs, all formats and public originals. Normalize oversized raster downloads to JPEG at unchanged pixel dimensions and the highest fitting quality; validate links and hashes before retiring old objects.
 - Do not modify the corporate website as part of a history_math change.

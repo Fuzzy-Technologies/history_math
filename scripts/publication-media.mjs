@@ -3,6 +3,7 @@ import {resolve, relative, sep, basename} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {imageInventory, validateExternalOriginal} from './external-originals.mjs';
 import {storage, mediaObject, validateObject, assertBytes, sha256, configuredClient, responseBytes, transfer, readWithRetries} from './s3-media.mjs';
+import {publicationReplacements, publicationSizeExceptions, jpegObject, imageSizeFindings} from './image-publication.mjs';
 
 export async function filesUnder(directory) {
   const files = [];
@@ -25,7 +26,7 @@ export async function localBytes(directory, path) {
   return readFile(target);
 }
 
-export function imageObjects(inventory, localSource) {
+export function imageObjects(inventory, localSource, replacements = {}, root = '.') {
   return Object.entries(inventory).map(([path, entry]) => {
     if (!/^\/assets\/images\/[a-z0-9._/-]+$/i.test(path) || path.includes('..') ||
         !Array.isArray(entry.variants) || !entry.variants.length) throw new Error('Invalid original image manifest');
@@ -34,9 +35,10 @@ export function imageObjects(inventory, localSource) {
     if (!preview || preview.path === path || !preview.path.startsWith('/assets/images/') || preview.path.includes('..')) {
       throw new Error('Original requires a separate reading preview');
     }
-    return {path, preview, external_url: external?.url,
-      object: {...mediaObject('originals', basename(path), entry.sha256, entry.bytes),
-        source: external ? {url: external.url} : localSource(path)}};
+    const original = {...mediaObject('originals', basename(path), entry.sha256, entry.bytes),
+      source: external ? {url: external.url} : localSource(path)};
+    return {path, preview, external_url: external?.url, original_object: original,
+      object: replacements[path] ? jpegObject(root, path, entry, replacements[path]) : original};
   });
 }
 
@@ -59,9 +61,12 @@ export async function publicationPlan(root, siteDirectory) {
   const manifest = JSON.parse(await readFile(resolve(site, 'assets/article-pdfs.json'), 'utf8'));
   if (manifest.version !== 2 || !Array.isArray(manifest.articles) ||
       !/^(?:\/[a-zA-Z0-9_-]+)*$/.test(manifest.baseurl) || !/^https:\/\/[^/@?#]+$/.test(manifest.origin)) throw new Error('Invalid publication manifest');
-  const images = imageObjects(imageInventory(root), path => ({file: resolve(root, 'site', '.' + path)}));
+  const inventory = imageInventory(root), replacements = publicationReplacements(root);
+  const errors = imageSizeFindings(inventory, replacements, publicationSizeExceptions(root)).filter(finding => finding.severity === 'error');
+  if (errors.length) throw new Error(errors.map(error => error.detail).join('\n'));
+  const images = imageObjects(inventory, path => ({file: resolve(root, 'site', '.' + path)}), replacements, root);
   for (const image of images) {
-    if (!image.external_url) assertBytes(image.object, await localBytes(source, image.path));
+    if (!image.external_url) assertBytes(image.original_object, await localBytes(source, image.path));
     const bytes = await localBytes(site, image.preview.path);
     if (sha256(bytes) !== image.preview.sha256 || bytes.length !== image.preview.bytes) throw new Error('Changed reading preview');
   }
@@ -73,8 +78,10 @@ export async function publicationPlan(root, siteDirectory) {
     pdfs.push({path, object});
   }
   for (const article of manifest.articles) if (!pdfs.some(pdf => pdf.path === article.pdf_url)) throw new Error('Missing publication PDF');
-  return {version: 1, output_directory: site, source_directory: source, origin: manifest.origin, baseurl: manifest.baseurl, images, pdfs,
-    objects: uniqueObjects([...images.map(image => image.object), ...pdfs.map(pdf => pdf.object)])};
+  const pendingJpegs = Object.entries(replacements).filter(([path]) => !Object.hasOwn(inventory, path))
+    .map(([path, record]) => jpegObject(root, path, record.source, record));
+  return {version: 1, output_directory: site, source_directory: source, origin: manifest.origin, baseurl: manifest.baseurl, images, pdfs, replacements,
+    objects: uniqueObjects([...images.map(image => image.object), ...pdfs.map(pdf => pdf.object), ...pendingJpegs])};
 }
 
 export async function sourceBytes(object, request = fetch, retryOptions) {
@@ -184,7 +191,7 @@ export async function finalizePublication(siteDirectory, plan, receipt, {pruneOu
   for (const item of [...plan.images, ...plan.pdfs]) {
     const file = resolve(site, '.' + item.path);
     if (!files.includes(file)) continue;
-    assertBytes(item.object, await localBytes(site, item.path));
+    assertBytes(item.original_object || item.object, await localBytes(site, item.path));
     removed.push(file);
   }
   for (const file of files.filter(file => /\.(html|css|json)$/i.test(file))) {
@@ -194,7 +201,11 @@ export async function finalizePublication(siteDirectory, plan, receipt, {pruneOu
   // The entire transfer is verified before any links change. Only disposable
   // Pages output is pruned; Git, Releases and editorial sources remain intact.
   for (const [file, text] of edits) await writeFile(file, text);
-  await writeFile(resolve(site, 'assets/publication-media.json'), JSON.stringify({version: 1, objects: receipt}, null, 2) + '\n');
+  const jpegOriginals = Object.fromEntries(Object.entries(plan.replacements || {}).map(([path, record]) => {
+    const {source, file, ...publicRecord} = record;
+    return [path, publicRecord];
+  }));
+  await writeFile(resolve(site, 'assets/publication-media.json'), JSON.stringify({version: 1, objects: receipt, jpeg_originals: jpegOriginals}, null, 2) + '\n');
   if (pruneOutput) for (const file of removed) await unlink(file);
   return {objects: receipt.length, rewritten: edits.length, removed: pruneOutput ? removed.length : 0};
 }

@@ -1,0 +1,1621 @@
+{
+  "version": 1,
+  "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+  "replacements": {
+    "/assets/images/hm-tt-064cd89d14bc/istoriya-matematiki-dlya-nas-06.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "0596660b4fe9a1efd52929586a4ef0f6265bac00cb1211bcd291b133d86637fa",
+      "source_bytes": 33928913,
+      "width": 5616,
+      "height": 3744,
+      "sha256": "609a22cc4929aec3b2d57df4170494dbb9f75dfe887cdc9d317701abfc44c836",
+      "bytes": 9927527,
+      "filename": "istoriya-matematiki-dlya-nas-06.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "0596660b4fe9a1efd52929586a4ef0f6265bac00cb1211bcd291b133d86637fa",
+        "width": 5616,
+        "height": 3744,
+        "bytes": 33928913,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-064cd89d14bc-istoriya-matematiki-dlya-nas-06-0596660b4fe9a1efd52929586a4ef0f6265bac00cb1211bcd291b133d86637fa.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630545410",
+          "asset_id": 630545410,
+          "release_tag": "article-originals-0",
+          "sha256": "0596660b4fe9a1efd52929586a4ef0f6265bac00cb1211bcd291b133d86637fa",
+          "bytes": 33928913
+        }
+      }
+    },
+    "/assets/images/hm-tt-074d7931840e/matematika-drevnego-vavilona-01.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "f4f10795a492b06efa08be7e4c6e304d203aea49902828464ab7483cbd6e2654",
+      "source_bytes": 38555642,
+      "width": 5000,
+      "height": 3567,
+      "sha256": "41a7005131c22c5601a9bb48ebdba9d2f4d6ff46faad9b9d95ff5e5eb184d2e7",
+      "bytes": 12108077,
+      "filename": "matematika-drevnego-vavilona-01.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "f4f10795a492b06efa08be7e4c6e304d203aea49902828464ab7483cbd6e2654",
+        "width": 5000,
+        "height": 3567,
+        "bytes": 38555642,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-074d7931840e-matematika-drevnego-vavilona-01-f4f10795a492b06efa08be7e4c6e304d203aea49902828464ab7483cbd6e2654.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497837",
+          "asset_id": 630497837,
+          "release_tag": "article-originals-f",
+          "sha256": "f4f10795a492b06efa08be7e4c6e304d203aea49902828464ab7483cbd6e2654",
+          "bytes": 38555642
+        }
+      }
+    },
+    "/assets/images/hm-tt-0a63d258ba26/istoriya-matematicheskih-ins-06.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "0af966f7aee8dca5d71fbaba0bf42ba78c576ea23a7d328f65ec930451aab76b",
+      "source_bytes": 31040442,
+      "width": 5120,
+      "height": 3840,
+      "sha256": "c22faeaaa83e1a32c80805302e120e9333609fff68b8a2d3e0a859c4805c0f74",
+      "bytes": 8877688,
+      "filename": "istoriya-matematicheskih-ins-06.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "0af966f7aee8dca5d71fbaba0bf42ba78c576ea23a7d328f65ec930451aab76b",
+        "width": 5120,
+        "height": 3840,
+        "bytes": 31040442,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-0a63d258ba26-istoriya-matematicheskih-ins-06-0af966f7aee8dca5d71fbaba0bf42ba78c576ea23a7d328f65ec930451aab76b.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630562696",
+          "asset_id": 630562696,
+          "release_tag": "article-originals-0",
+          "sha256": "0af966f7aee8dca5d71fbaba0bf42ba78c576ea23a7d328f65ec930451aab76b",
+          "bytes": 31040442
+        }
+      }
+    },
+    "/assets/images/hm-tt-1a77a094393e/geometriya-pifagorejcev-teor-02.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "84f5b92feae9febeee1440a6ea453639a80170ed596989e94097350de4b512f2",
+      "source_bytes": 30207377,
+      "width": 4200,
+      "height": 2654,
+      "sha256": "4449dea42f35b8ddbc86c77402df761cf9347a00f394069000f884a2bdf08e46",
+      "bytes": 8001387,
+      "filename": "geometriya-pifagorejcev-teor-02.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "84f5b92feae9febeee1440a6ea453639a80170ed596989e94097350de4b512f2",
+        "width": 4200,
+        "height": 2654,
+        "bytes": 30207377,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-1a77a094393e-geometriya-pifagorejcev-teor-02-84f5b92feae9febeee1440a6ea453639a80170ed596989e94097350de4b512f2.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549306",
+          "asset_id": 630549306,
+          "release_tag": "article-originals-8",
+          "sha256": "84f5b92feae9febeee1440a6ea453639a80170ed596989e94097350de4b512f2",
+          "bytes": 30207377
+        }
+      }
+    },
+    "/assets/images/hm-tt-1cc1cd98f08d/nomogramma-11-17-05.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "24845312058aa9984a5c596e0fb9a6de056554cd94a9a1b00cbd4571635878c5",
+      "source_bytes": 16047308,
+      "width": 2244,
+      "height": 3147,
+      "sha256": "a24c68ca23a4c55ee426bfe35c5a2c2477406f68a78d5afdb338dc069dcffff0",
+      "bytes": 5949667,
+      "filename": "nomogramma-11-17-05.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "24845312058aa9984a5c596e0fb9a6de056554cd94a9a1b00cbd4571635878c5",
+        "width": 2244,
+        "height": 3147,
+        "bytes": 16047308,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-1cc1cd98f08d-nomogramma-11-17-05-24845312058aa9984a5c596e0fb9a6de056554cd94a9a1b00cbd4571635878c5.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548949",
+          "asset_id": 630548949,
+          "release_tag": "article-originals-2",
+          "sha256": "24845312058aa9984a5c596e0fb9a6de056554cd94a9a1b00cbd4571635878c5",
+          "bytes": 16047308
+        }
+      }
+    },
+    "/assets/images/hm-tt-1cd262dccbc7/universalnyj-genij-lejbnic-1-01.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "071aaf3cd7933d62f759e53c423d2b3e293a9ec213ec481e9c8b6095eca0e31c",
+      "source_bytes": 50890482,
+      "width": 4400,
+      "height": 5432,
+      "sha256": "dc176ded03a36bc7cc1508e9d3484e212ec649e9fd35e942448282f7fdd7d639",
+      "bytes": 14624275,
+      "filename": "universalnyj-genij-lejbnic-1-01.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "071aaf3cd7933d62f759e53c423d2b3e293a9ec213ec481e9c8b6095eca0e31c",
+        "width": 4400,
+        "height": 5432,
+        "bytes": 50890482,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-1cd262dccbc7-universalnyj-genij-lejbnic-1-01-071aaf3cd7933d62f759e53c423d2b3e293a9ec213ec481e9c8b6095eca0e31c.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630498079",
+          "asset_id": 630498079,
+          "release_tag": "article-originals-0",
+          "sha256": "071aaf3cd7933d62f759e53c423d2b3e293a9ec213ec481e9c8b6095eca0e31c",
+          "bytes": 50890482
+        }
+      },
+      "exception": {
+        "sha256": "dc176ded03a36bc7cc1508e9d3484e212ec649e9fd35e942448282f7fdd7d639",
+        "bytes": 14624275,
+        "one_use": true,
+        "note_url": "https://github.com/Fuzzy-Technologies/history_math/pull/293#issuecomment-6532984126",
+        "reason": "Owner-authorized one-use maximum-quality original; unchanged pixel dimensions."
+      }
+    },
+    "/assets/images/hm-tt-2ae35b38970b/akademik-viktor-amazaspovich-08.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "147246a9160869ac42d57538683e6646b9121ca4e844390a3dd3a1247196fb9b",
+      "source_bytes": 13913077,
+      "width": 2000,
+      "height": 2854,
+      "sha256": "00e58434fc4d99a9e4f9b52021a7848e878ce4d241ff235f3dc18681de56c7bf",
+      "bytes": 7133540,
+      "filename": "akademik-viktor-amazaspovich-08.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "147246a9160869ac42d57538683e6646b9121ca4e844390a3dd3a1247196fb9b",
+        "width": 2000,
+        "height": 2854,
+        "bytes": 13913077,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-2ae35b38970b-akademik-viktor-amazaspovich-08-147246a9160869ac42d57538683e6646b9121ca4e844390a3dd3a1247196fb9b.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630556211",
+          "asset_id": 630556211,
+          "release_tag": "article-originals-1",
+          "sha256": "147246a9160869ac42d57538683e6646b9121ca4e844390a3dd3a1247196fb9b",
+          "bytes": 13913077
+        }
+      }
+    },
+    "/assets/images/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-07.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "05c7db5a0892160dc3cb07cf02adeb967f8d58e3dceefb8bda25d2ed693fcbec",
+      "source_bytes": 16669358,
+      "width": 2976,
+      "height": 2531,
+      "sha256": "cd56572fee0fac1a3a0ca7e7a2f3e493bfb268e5b12eac0c12b3a8034fe89309",
+      "bytes": 4168805,
+      "filename": "akademik-vladimir-ivanovich-07.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "05c7db5a0892160dc3cb07cf02adeb967f8d58e3dceefb8bda25d2ed693fcbec",
+        "width": 2976,
+        "height": 2531,
+        "bytes": 16669358,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-2dcb541603cd-akademik-vladimir-ivanovich-07-05c7db5a0892160dc3cb07cf02adeb967f8d58e3dceefb8bda25d2ed693fcbec.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563668",
+          "asset_id": 630563668,
+          "release_tag": "article-originals-0",
+          "sha256": "05c7db5a0892160dc3cb07cf02adeb967f8d58e3dceefb8bda25d2ed693fcbec",
+          "bytes": 16669358
+        }
+      }
+    },
+    "/assets/images/hm-tt-39b79f166bfd/reforma-obrazovaniya-nachala-03.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "6654efbbf8b5dd4f67a09d9aa79fe6790b6f4ba3036e02bf8973aa857afdaea6",
+      "source_bytes": 23717397,
+      "width": 5312,
+      "height": 2988,
+      "sha256": "bd56c651f0749d5a4f3587ba29a342d8890a5eb9315ff203589406a6b8029f5e",
+      "bytes": 6722070,
+      "filename": "reforma-obrazovaniya-nachala-03.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "6654efbbf8b5dd4f67a09d9aa79fe6790b6f4ba3036e02bf8973aa857afdaea6",
+        "width": 5312,
+        "height": 2988,
+        "bytes": 23717397,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-39b79f166bfd-reforma-obrazovaniya-nachala-03-6654efbbf8b5dd4f67a09d9aa79fe6790b6f4ba3036e02bf8973aa857afdaea6.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554626",
+          "asset_id": 630554626,
+          "release_tag": "article-originals-6",
+          "sha256": "6654efbbf8b5dd4f67a09d9aa79fe6790b6f4ba3036e02bf8973aa857afdaea6",
+          "bytes": 23717397
+        }
+      }
+    },
+    "/assets/images/hm-tt-425a55816516/dinastiya-bernulli-12-08-04.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "ba10dfc349ecfa891e6837820abb1eff8a0682777934b74a1db671362a394df6",
+      "source_bytes": 20248286,
+      "width": 2270,
+      "height": 3485,
+      "sha256": "6687321dd90ae49a076190d3d72daa8d36b368bd6c9606a333120be7d2f382fc",
+      "bytes": 6976398,
+      "filename": "dinastiya-bernulli-12-08-04.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "ba10dfc349ecfa891e6837820abb1eff8a0682777934b74a1db671362a394df6",
+        "width": 2270,
+        "height": 3485,
+        "bytes": 20248286,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-425a55816516-dinastiya-bernulli-12-08-04-ba10dfc349ecfa891e6837820abb1eff8a0682777934b74a1db671362a394df6.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551191",
+          "asset_id": 630551191,
+          "release_tag": "article-originals-b",
+          "sha256": "ba10dfc349ecfa891e6837820abb1eff8a0682777934b74a1db671362a394df6",
+          "bytes": 20248286
+        }
+      }
+    },
+    "/assets/images/hm-tt-425a55816516/dinastiya-bernulli-12-08-05.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "5c7aa8f0f125dd2f8a364618ce9e6e9ac3c0a5aae4e4aa308605ec896e648276",
+      "source_bytes": 16488882,
+      "width": 2289,
+      "height": 2916,
+      "sha256": "3ddd14105ba8fa86a5c0a21edbb95a47c7b023a43d8c3f1a27b1f73627fc4020",
+      "bytes": 5948242,
+      "filename": "dinastiya-bernulli-12-08-05.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "5c7aa8f0f125dd2f8a364618ce9e6e9ac3c0a5aae4e4aa308605ec896e648276",
+        "width": 2289,
+        "height": 2916,
+        "bytes": 16488882,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-425a55816516-dinastiya-bernulli-12-08-05-5c7aa8f0f125dd2f8a364618ce9e6e9ac3c0a5aae4e4aa308605ec896e648276.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551321",
+          "asset_id": 630551321,
+          "release_tag": "article-originals-5",
+          "sha256": "5c7aa8f0f125dd2f8a364618ce9e6e9ac3c0a5aae4e4aa308605ec896e648276",
+          "bytes": 16488882
+        }
+      }
+    },
+    "/assets/images/hm-tt-468f6986bcb1/yakob-bernulli-neveroyatnye-03.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "234a175a88bc167665303aa589d86f1ec373e4e6f1e541b658ed16bc9db212e1",
+      "source_bytes": 24331225,
+      "width": 3880,
+      "height": 2780,
+      "sha256": "df4bf246b139b186394eb4717311030b09515914a5a27ac3ede64e8e11d613f7",
+      "bytes": 9896218,
+      "filename": "yakob-bernulli-neveroyatnye-03.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "234a175a88bc167665303aa589d86f1ec373e4e6f1e541b658ed16bc9db212e1",
+        "width": 3880,
+        "height": 2780,
+        "bytes": 24331225,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-468f6986bcb1-yakob-bernulli-neveroyatnye-03-234a175a88bc167665303aa589d86f1ec373e4e6f1e541b658ed16bc9db212e1.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630556521",
+          "asset_id": 630556521,
+          "release_tag": "article-originals-2",
+          "sha256": "234a175a88bc167665303aa589d86f1ec373e4e6f1e541b658ed16bc9db212e1",
+          "bytes": 24331225
+        }
+      }
+    },
+    "/assets/images/hm-tt-4c6bb08b5a47/alla-efimovna-malyh-19392019-04.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "1b7b9ed6d0583fe9bcf5536b235e14837aab3b3236780d5be01e74b9aa064e8f",
+      "source_bytes": 14216105,
+      "width": 2816,
+      "height": 2112,
+      "sha256": "41e970e049730e935f2e06f4df43858c3af19e23dcee000aac871370efe995cf",
+      "bytes": 4525385,
+      "filename": "alla-efimovna-malyh-19392019-04.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "1b7b9ed6d0583fe9bcf5536b235e14837aab3b3236780d5be01e74b9aa064e8f",
+        "width": 2816,
+        "height": 2112,
+        "bytes": 14216105,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-4c6bb08b5a47-alla-efimovna-malyh-19392019-04-1b7b9ed6d0583fe9bcf5536b235e14837aab3b3236780d5be01e74b9aa064e8f.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552139",
+          "asset_id": 630552139,
+          "release_tag": "article-originals-1",
+          "sha256": "1b7b9ed6d0583fe9bcf5536b235e14837aab3b3236780d5be01e74b9aa064e8f",
+          "bytes": 14216105
+        }
+      }
+    },
+    "/assets/images/hm-tt-4e2e8a46ccc3/kvadrant-04-06-01.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "a853adfe2d654051f968b44d36f42a944f1c7abcf4162de145b0eaa9844412ed",
+      "source_bytes": 19909410,
+      "width": 3408,
+      "height": 2992,
+      "sha256": "9370ea969543910d7ee943b1152150d4599e8d64cbdf15ddf32ca4bf7dbe8192",
+      "bytes": 6662800,
+      "filename": "kvadrant-04-06-01.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "a853adfe2d654051f968b44d36f42a944f1c7abcf4162de145b0eaa9844412ed",
+        "width": 3408,
+        "height": 2992,
+        "bytes": 19909410,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-4e2e8a46ccc3-kvadrant-04-06-01-a853adfe2d654051f968b44d36f42a944f1c7abcf4162de145b0eaa9844412ed.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630501223",
+          "asset_id": 630501223,
+          "release_tag": "article-originals-a",
+          "sha256": "a853adfe2d654051f968b44d36f42a944f1c7abcf4162de145b0eaa9844412ed",
+          "bytes": 19909410
+        }
+      }
+    },
+    "/assets/images/hm-tt-4f1ed578ed5d/seminar-mordkovicha-01-21-04.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "1edce3eddcccd5843be72a650a01f51118ac9a398e68600821414909f2ee931e",
+      "source_bytes": 23466054,
+      "width": 4288,
+      "height": 2232,
+      "sha256": "dba93bd4448209de295153653cbb676e99f4d68685b249743a6b9b7d53e4855c",
+      "bytes": 7113778,
+      "filename": "seminar-mordkovicha-01-21-04.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "1edce3eddcccd5843be72a650a01f51118ac9a398e68600821414909f2ee931e",
+        "width": 4288,
+        "height": 2232,
+        "bytes": 23466054,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-4f1ed578ed5d-seminar-mordkovicha-01-21-04-1edce3eddcccd5843be72a650a01f51118ac9a398e68600821414909f2ee931e.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551094",
+          "asset_id": 630551094,
+          "release_tag": "article-originals-1",
+          "sha256": "1edce3eddcccd5843be72a650a01f51118ac9a398e68600821414909f2ee931e",
+          "bytes": 23466054
+        }
+      }
+    },
+    "/assets/images/hm-tt-6b7055e5c357/matematika-v-rossijskoj-akad-01.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "1a97dba4e01a0d90f06fc03863e376a50a80e0ff9fe35b9832bd75224768ac1c",
+      "source_bytes": 22900028,
+      "width": 4200,
+      "height": 2780,
+      "sha256": "ed354ad91171f76ed63cbf4b9763306bfb91e0eeca538a0e2bbdb425adeaf512",
+      "bytes": 7990423,
+      "filename": "matematika-v-rossijskoj-akad-01.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "1a97dba4e01a0d90f06fc03863e376a50a80e0ff9fe35b9832bd75224768ac1c",
+        "width": 4200,
+        "height": 2780,
+        "bytes": 22900028,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-6b7055e5c357-matematika-v-rossijskoj-akad-01-1a97dba4e01a0d90f06fc03863e376a50a80e0ff9fe35b9832bd75224768ac1c.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497651",
+          "asset_id": 630497651,
+          "release_tag": "article-originals-1",
+          "sha256": "1a97dba4e01a0d90f06fc03863e376a50a80e0ff9fe35b9832bd75224768ac1c",
+          "bytes": 22900028
+        }
+      }
+    },
+    "/assets/images/hm-tt-6b7055e5c357/matematika-v-rossijskoj-akad-02.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "4c668bd24cc771df927287b884920ff137a0f3fba8d588e31d92397b5bb083a0",
+      "source_bytes": 24703320,
+      "width": 4971,
+      "height": 2992,
+      "sha256": "afe92d0dcc1914fdcc4d998c4e8cbc4de59c210028620e6675659f2808eb027a",
+      "bytes": 8328649,
+      "filename": "matematika-v-rossijskoj-akad-02.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "4c668bd24cc771df927287b884920ff137a0f3fba8d588e31d92397b5bb083a0",
+        "width": 4971,
+        "height": 2992,
+        "bytes": 24703320,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-6b7055e5c357-matematika-v-rossijskoj-akad-02-4c668bd24cc771df927287b884920ff137a0f3fba8d588e31d92397b5bb083a0.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553328",
+          "asset_id": 630553328,
+          "release_tag": "article-originals-4",
+          "sha256": "4c668bd24cc771df927287b884920ff137a0f3fba8d588e31d92397b5bb083a0",
+          "bytes": 24703320
+        }
+      }
+    },
+    "/assets/images/hm-tt-6b7055e5c357/matematika-v-rossijskoj-akad-04.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "79b3a25ca9744ca56607010d82dc22f018018ee1a658a2f3dd3c0c97d2f6d68e",
+      "source_bytes": 19788744,
+      "width": 4032,
+      "height": 3024,
+      "sha256": "6685533fa37b6a8d153cb77063b1b67cbf5a2a7ca8df2b687843d4be09a08706",
+      "bytes": 6574108,
+      "filename": "matematika-v-rossijskoj-akad-04.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "79b3a25ca9744ca56607010d82dc22f018018ee1a658a2f3dd3c0c97d2f6d68e",
+        "width": 4032,
+        "height": 3024,
+        "bytes": 19788744,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-6b7055e5c357-matematika-v-rossijskoj-akad-04-79b3a25ca9744ca56607010d82dc22f018018ee1a658a2f3dd3c0c97d2f6d68e.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553617",
+          "asset_id": 630553617,
+          "release_tag": "article-originals-7",
+          "sha256": "79b3a25ca9744ca56607010d82dc22f018018ee1a658a2f3dd3c0c97d2f6d68e",
+          "bytes": 19788744
+        }
+      }
+    },
+    "/assets/images/hm-tt-6bdc5096a3d4/pervye-universitety-02-24-03.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "ffe9575305ef51ba278dbfbab33cef36c5222f5ba62f322576425d1c613046b9",
+      "source_bytes": 19722174,
+      "width": 2487,
+      "height": 3650,
+      "sha256": "49c9e3950a3f589897f7276bec3020fc412672c6751a7319aa23d2812b38e76b",
+      "bytes": 6163092,
+      "filename": "pervye-universitety-02-24-03.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "ffe9575305ef51ba278dbfbab33cef36c5222f5ba62f322576425d1c613046b9",
+        "width": 2487,
+        "height": 3650,
+        "bytes": 19722174,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-6bdc5096a3d4-pervye-universitety-02-24-03-ffe9575305ef51ba278dbfbab33cef36c5222f5ba62f322576425d1c613046b9.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548306",
+          "asset_id": 630548306,
+          "release_tag": "article-originals-f",
+          "sha256": "ffe9575305ef51ba278dbfbab33cef36c5222f5ba62f322576425d1c613046b9",
+          "bytes": 19722174
+        }
+      }
+    },
+    "/assets/images/hm-tt-6bdc5096a3d4/pervye-universitety-02-24-06.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "b1e4c05cfa55acae68b24b6314c85367faccd428c910efcc44e438804e37afc4",
+      "source_bytes": 24618633,
+      "width": 3946,
+      "height": 2610,
+      "sha256": "06a50c267a7c03b8ecadbad9e1720b1b3731b22f20c92b9f32b9a989c1252d65",
+      "bytes": 8845755,
+      "filename": "pervye-universitety-02-24-06.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "b1e4c05cfa55acae68b24b6314c85367faccd428c910efcc44e438804e37afc4",
+        "width": 3946,
+        "height": 2610,
+        "bytes": 24618633,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-6bdc5096a3d4-pervye-universitety-02-24-06-b1e4c05cfa55acae68b24b6314c85367faccd428c910efcc44e438804e37afc4.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548718",
+          "asset_id": 630548718,
+          "release_tag": "article-originals-b",
+          "sha256": "b1e4c05cfa55acae68b24b6314c85367faccd428c910efcc44e438804e37afc4",
+          "bytes": 24618633
+        }
+      }
+    },
+    "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-04.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "9efc64fc63b09ff68954c5d4da3be18f725501d25922007977d3a6aefecc822d",
+      "source_bytes": 14651731,
+      "width": 2493,
+      "height": 2398,
+      "sha256": "7d30ac73f0fc960f813fb400f0838a67ae2b718a2eaaeb5032f177525b74e7e0",
+      "bytes": 5376100,
+      "filename": "matematika-internacionalnaya-04.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "9efc64fc63b09ff68954c5d4da3be18f725501d25922007977d3a6aefecc822d",
+        "width": 2493,
+        "height": 2398,
+        "bytes": 14651731,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-841d65984bcc-matematika-internacionalnaya-04-9efc64fc63b09ff68954c5d4da3be18f725501d25922007977d3a6aefecc822d.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544626",
+          "asset_id": 630544626,
+          "release_tag": "article-originals-9",
+          "sha256": "9efc64fc63b09ff68954c5d4da3be18f725501d25922007977d3a6aefecc822d",
+          "bytes": 14651731
+        }
+      }
+    },
+    "/assets/images/hm-tt-841d65984bcc/matematika-internacionalnaya-12.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "8b9c4d09e616e7fa8bca178a67559439e4045da9bd7bed1deaaf445073a02a91",
+      "source_bytes": 50890240,
+      "width": 4400,
+      "height": 5432,
+      "sha256": "75548964997228de06102aa6a0d0125198024fd0bc2652f61c75fd4a08c6145d",
+      "bytes": 14623816,
+      "filename": "matematika-internacionalnaya-12.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "8b9c4d09e616e7fa8bca178a67559439e4045da9bd7bed1deaaf445073a02a91",
+        "width": 4400,
+        "height": 5432,
+        "bytes": 50890240,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-841d65984bcc-matematika-internacionalnaya-12-8b9c4d09e616e7fa8bca178a67559439e4045da9bd7bed1deaaf445073a02a91.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630546033",
+          "asset_id": 630546033,
+          "release_tag": "article-originals-8",
+          "sha256": "8b9c4d09e616e7fa8bca178a67559439e4045da9bd7bed1deaaf445073a02a91",
+          "bytes": 50890240
+        }
+      },
+      "exception": {
+        "sha256": "75548964997228de06102aa6a0d0125198024fd0bc2652f61c75fd4a08c6145d",
+        "bytes": 14623816,
+        "one_use": true,
+        "note_url": "https://github.com/Fuzzy-Technologies/history_math/pull/293#issuecomment-6532984126",
+        "reason": "Owner-authorized one-use maximum-quality original; unchanged pixel dimensions."
+      }
+    },
+    "/assets/images/hm-tt-875844cab133/poceluj-po-raschyotu-formula-01.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "195bae6d601a4b0c412ee2938eaaf3f4ddac37ecf6f9386f48cb33d06bc1156e",
+      "source_bytes": 13056296,
+      "width": 3641,
+      "height": 5003,
+      "sha256": "679bd74030a1f7e4405e2af3434770e56f025a2cd0670847bd43eb01e09721e6",
+      "bytes": 4212960,
+      "filename": "poceluj-po-raschyotu-formula-01.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "195bae6d601a4b0c412ee2938eaaf3f4ddac37ecf6f9386f48cb33d06bc1156e",
+        "width": 3641,
+        "height": 5003,
+        "bytes": 13056296,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-875844cab133-poceluj-po-raschyotu-formula-01-195bae6d601a4b0c412ee2938eaaf3f4ddac37ecf6f9386f48cb33d06bc1156e.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630499822",
+          "asset_id": 630499822,
+          "release_tag": "article-originals-1",
+          "sha256": "195bae6d601a4b0c412ee2938eaaf3f4ddac37ecf6f9386f48cb33d06bc1156e",
+          "bytes": 13056296
+        }
+      }
+    },
+    "/assets/images/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-04.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "b1e94cead97489e6cf3217107873b6cbbe89047ec95887bba6438217d5050436",
+      "source_bytes": 20138395,
+      "width": 3391,
+      "height": 2542,
+      "sha256": "097ce77348d5bb74fafcf1bfb3aa4b6a55b46f51471eeda9c490eb12f7cac9a2",
+      "bytes": 5609375,
+      "filename": "kak-ya-prishyol-v-matematiku-04.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "b1e94cead97489e6cf3217107873b6cbbe89047ec95887bba6438217d5050436",
+        "width": 3391,
+        "height": 2542,
+        "bytes": 20138395,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-8d623845d7d5-kak-ya-prishyol-v-matematiku-04-b1e94cead97489e6cf3217107873b6cbbe89047ec95887bba6438217d5050436.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563819",
+          "asset_id": 630563819,
+          "release_tag": "article-originals-b",
+          "sha256": "b1e94cead97489e6cf3217107873b6cbbe89047ec95887bba6438217d5050436",
+          "bytes": 20138395
+        }
+      }
+    },
+    "/assets/images/hm-tt-8d623845d7d5/kak-ya-prishyol-v-matematiku-07.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "19ff719fc97d738d168e70b7612ba68e7a5aa6141f66d39d2b1b3f17a9aff7a2",
+      "source_bytes": 23749212,
+      "width": 3120,
+      "height": 4160,
+      "sha256": "2401d8964badcf5ee671ec5f470d1f9833392e46173fe03dd7b2830f250314f4",
+      "bytes": 6740457,
+      "filename": "kak-ya-prishyol-v-matematiku-07.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "19ff719fc97d738d168e70b7612ba68e7a5aa6141f66d39d2b1b3f17a9aff7a2",
+        "width": 3120,
+        "height": 4160,
+        "bytes": 23749212,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-8d623845d7d5-kak-ya-prishyol-v-matematiku-07-19ff719fc97d738d168e70b7612ba68e7a5aa6141f66d39d2b1b3f17a9aff7a2.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630564303",
+          "asset_id": 630564303,
+          "release_tag": "article-originals-1",
+          "sha256": "19ff719fc97d738d168e70b7612ba68e7a5aa6141f66d39d2b1b3f17a9aff7a2",
+          "bytes": 23749212
+        }
+      }
+    },
+    "/assets/images/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-07.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "47d62fac1f96cf8bb128143eb274f8f51fd735689de4a02a8692657b9242db73",
+      "source_bytes": 35142542,
+      "width": 5312,
+      "height": 2988,
+      "sha256": "a9b3c8da6169c98b2dde5a0db1ac0efff41519c58ebb6feaf9a6e56c4168ecaa",
+      "bytes": 11647963,
+      "filename": "rachinskij-sergej-aleksandro-07.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "47d62fac1f96cf8bb128143eb274f8f51fd735689de4a02a8692657b9242db73",
+        "width": 5312,
+        "height": 2988,
+        "bytes": 35142542,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-901ca6447518-rachinskij-sergej-aleksandro-07-47d62fac1f96cf8bb128143eb274f8f51fd735689de4a02a8692657b9242db73.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559082",
+          "asset_id": 630559082,
+          "release_tag": "article-originals-4",
+          "sha256": "47d62fac1f96cf8bb128143eb274f8f51fd735689de4a02a8692657b9242db73",
+          "bytes": 35142542
+        }
+      }
+    },
+    "/assets/images/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-08.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "1d2d5a3b352867cdebecf635d5470eb24b229e81b149fabb884d81b8ebcccddb",
+      "source_bytes": 20093723,
+      "width": 3198,
+      "height": 2584,
+      "sha256": "eaaf9ccd90f7d94004d0003380a75e64d557d641d4d788d94e11f3d2cb1e1a54",
+      "bytes": 5337757,
+      "filename": "rachinskij-sergej-aleksandro-08.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "1d2d5a3b352867cdebecf635d5470eb24b229e81b149fabb884d81b8ebcccddb",
+        "width": 3198,
+        "height": 2584,
+        "bytes": 20093723,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-901ca6447518-rachinskij-sergej-aleksandro-08-1d2d5a3b352867cdebecf635d5470eb24b229e81b149fabb884d81b8ebcccddb.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559245",
+          "asset_id": 630559245,
+          "release_tag": "article-originals-1",
+          "sha256": "1d2d5a3b352867cdebecf635d5470eb24b229e81b149fabb884d81b8ebcccddb",
+          "bytes": 20093723
+        }
+      }
+    },
+    "/assets/images/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-09.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "15871612e386c6bdc16d3bdccc2b11ec833d893ee7b7be4b407c07a4adb4b2d4",
+      "source_bytes": 17265231,
+      "width": 2022,
+      "height": 3580,
+      "sha256": "98f75d62e43696fba7e637577fbf1e1423e7e87eb82902cbfbfd41c9d2c84994",
+      "bytes": 4475752,
+      "filename": "rachinskij-sergej-aleksandro-09.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "15871612e386c6bdc16d3bdccc2b11ec833d893ee7b7be4b407c07a4adb4b2d4",
+        "width": 2022,
+        "height": 3580,
+        "bytes": 17265231,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-901ca6447518-rachinskij-sergej-aleksandro-09-15871612e386c6bdc16d3bdccc2b11ec833d893ee7b7be4b407c07a4adb4b2d4.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630559371",
+          "asset_id": 630559371,
+          "release_tag": "article-originals-1",
+          "sha256": "15871612e386c6bdc16d3bdccc2b11ec833d893ee7b7be4b407c07a4adb4b2d4",
+          "bytes": 17265231
+        }
+      }
+    },
+    "/assets/images/hm-tt-901ca6447518/rachinskij-sergej-aleksandro-14.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "0af966f7aee8dca5d71fbaba0bf42ba78c576ea23a7d328f65ec930451aab76b",
+      "source_bytes": 31040442,
+      "width": 5120,
+      "height": 3840,
+      "sha256": "c22faeaaa83e1a32c80805302e120e9333609fff68b8a2d3e0a859c4805c0f74",
+      "bytes": 8877688,
+      "filename": "rachinskij-sergej-aleksandro-14.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "0af966f7aee8dca5d71fbaba0bf42ba78c576ea23a7d328f65ec930451aab76b",
+        "width": 5120,
+        "height": 3840,
+        "bytes": 31040442,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-901ca6447518-rachinskij-sergej-aleksandro-14-0af966f7aee8dca5d71fbaba0bf42ba78c576ea23a7d328f65ec930451aab76b.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560090",
+          "asset_id": 630560090,
+          "release_tag": "article-originals-0",
+          "sha256": "0af966f7aee8dca5d71fbaba0bf42ba78c576ea23a7d328f65ec930451aab76b",
+          "bytes": 31040442
+        }
+      }
+    },
+    "/assets/images/hm-tt-98034199babc/rol-zhenshchin-v-matematike-03.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "29df6cb138f3cd6cd5d0eeb8603b220880ef7193554227d281472310f2fc7d24",
+      "source_bytes": 22677499,
+      "width": 2439,
+      "height": 3504,
+      "sha256": "9c1d78a740fec59457b78ac3d1fc6250d17cec2e8adb53111c6d9b1e8184cc59",
+      "bytes": 6561703,
+      "filename": "rol-zhenshchin-v-matematike-03.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "29df6cb138f3cd6cd5d0eeb8603b220880ef7193554227d281472310f2fc7d24",
+        "width": 2439,
+        "height": 3504,
+        "bytes": 22677499,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-98034199babc-rol-zhenshchin-v-matematike-03-29df6cb138f3cd6cd5d0eeb8603b220880ef7193554227d281472310f2fc7d24.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560879",
+          "asset_id": 630560879,
+          "release_tag": "article-originals-2",
+          "sha256": "29df6cb138f3cd6cd5d0eeb8603b220880ef7193554227d281472310f2fc7d24",
+          "bytes": 22677499
+        }
+      }
+    },
+    "/assets/images/hm-tt-9a46ef2753ad/centralnyj-dom-uchyonyh-05-1-01.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "3bbeb338a3cf9a21b857c02cc1990996278c4cc04106fd8aaacdfb2025c693e7",
+      "source_bytes": 16668781,
+      "width": 2604,
+      "height": 2604,
+      "sha256": "a82d26421e0c4215ddfb7f73d243e120219e4098a0c80c0f4a08a93c5311169b",
+      "bytes": 7398393,
+      "filename": "centralnyj-dom-uchyonyh-05-1-01.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "3bbeb338a3cf9a21b857c02cc1990996278c4cc04106fd8aaacdfb2025c693e7",
+        "width": 2604,
+        "height": 2604,
+        "bytes": 16668781,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-9a46ef2753ad-centralnyj-dom-uchyonyh-05-1-01-3bbeb338a3cf9a21b857c02cc1990996278c4cc04106fd8aaacdfb2025c693e7.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630496620",
+          "asset_id": 630496620,
+          "release_tag": "article-originals-3",
+          "sha256": "3bbeb338a3cf9a21b857c02cc1990996278c4cc04106fd8aaacdfb2025c693e7",
+          "bytes": 16668781
+        }
+      }
+    },
+    "/assets/images/hm-tt-9a46ef2753ad/centralnyj-dom-uchyonyh-05-1-02.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "0c99f76606c6f1b0747dcfccd98b1e0a8aee6822c8f4675b15f6319d6d4d03bb",
+      "source_bytes": 22804445,
+      "width": 4096,
+      "height": 3072,
+      "sha256": "a1c90c3febb1c51c52242b9fa2f36a1e5ffef92626473f9b8194f5de1fd1652c",
+      "bytes": 8505260,
+      "filename": "centralnyj-dom-uchyonyh-05-1-02.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "0c99f76606c6f1b0747dcfccd98b1e0a8aee6822c8f4675b15f6319d6d4d03bb",
+        "width": 4096,
+        "height": 3072,
+        "bytes": 22804445,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-9a46ef2753ad-centralnyj-dom-uchyonyh-05-1-02-0c99f76606c6f1b0747dcfccd98b1e0a8aee6822c8f4675b15f6319d6d4d03bb.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630545664",
+          "asset_id": 630545664,
+          "release_tag": "article-originals-0",
+          "sha256": "0c99f76606c6f1b0747dcfccd98b1e0a8aee6822c8f4675b15f6319d6d4d03bb",
+          "bytes": 22804445
+        }
+      }
+    },
+    "/assets/images/hm-tt-9a46ef2753ad/centralnyj-dom-uchyonyh-05-1-03.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "38ea1b667ba884e5ec4f3cae42b77bc42fc9dae026154195870902a4f90f62a5",
+      "source_bytes": 25263111,
+      "width": 4160,
+      "height": 3120,
+      "sha256": "9333e69f2355bca08437f30ee7953d033506438a21324e1bf8e14571c5ed2c3d",
+      "bytes": 6377227,
+      "filename": "centralnyj-dom-uchyonyh-05-1-03.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "38ea1b667ba884e5ec4f3cae42b77bc42fc9dae026154195870902a4f90f62a5",
+        "width": 4160,
+        "height": 3120,
+        "bytes": 25263111,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-9a46ef2753ad-centralnyj-dom-uchyonyh-05-1-03-38ea1b667ba884e5ec4f3cae42b77bc42fc9dae026154195870902a4f90f62a5.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630545805",
+          "asset_id": 630545805,
+          "release_tag": "article-originals-3",
+          "sha256": "38ea1b667ba884e5ec4f3cae42b77bc42fc9dae026154195870902a4f90f62a5",
+          "bytes": 25263111
+        }
+      }
+    },
+    "/assets/images/hm-tt-9a46ef2753ad/centralnyj-dom-uchyonyh-05-1-04.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "3509089da7bdf041d46d73df74d4b60aba6a0c979f68c593c3384c66bc90a271",
+      "source_bytes": 26668805,
+      "width": 4096,
+      "height": 3072,
+      "sha256": "0cd6ce21063b9c218afc75a3e65ff0e33751468aeca1d3f86205de8c71e72557",
+      "bytes": 7642788,
+      "filename": "centralnyj-dom-uchyonyh-05-1-04.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "3509089da7bdf041d46d73df74d4b60aba6a0c979f68c593c3384c66bc90a271",
+        "width": 4096,
+        "height": 3072,
+        "bytes": 26668805,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-9a46ef2753ad-centralnyj-dom-uchyonyh-05-1-04-3509089da7bdf041d46d73df74d4b60aba6a0c979f68c593c3384c66bc90a271.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630545989",
+          "asset_id": 630545989,
+          "release_tag": "article-originals-3",
+          "sha256": "3509089da7bdf041d46d73df74d4b60aba6a0c979f68c593c3384c66bc90a271",
+          "bytes": 26668805
+        }
+      }
+    },
+    "/assets/images/hm-tt-9a46ef2753ad/centralnyj-dom-uchyonyh-05-1-05.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "83e2bfdc81b3ca2b7cdb2b218977d930ba3fe512a5030ab9a89d2e22051afb25",
+      "source_bytes": 16673017,
+      "width": 3072,
+      "height": 4096,
+      "sha256": "ea008c64ea3d27ea8f76a73581374b36638c75ce1a288d5552a72c81d0440b7c",
+      "bytes": 5608695,
+      "filename": "centralnyj-dom-uchyonyh-05-1-05.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "83e2bfdc81b3ca2b7cdb2b218977d930ba3fe512a5030ab9a89d2e22051afb25",
+        "width": 3072,
+        "height": 4096,
+        "bytes": 16673017,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-9a46ef2753ad-centralnyj-dom-uchyonyh-05-1-05-83e2bfdc81b3ca2b7cdb2b218977d930ba3fe512a5030ab9a89d2e22051afb25.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630546136",
+          "asset_id": 630546136,
+          "release_tag": "article-originals-8",
+          "sha256": "83e2bfdc81b3ca2b7cdb2b218977d930ba3fe512a5030ab9a89d2e22051afb25",
+          "bytes": 16673017
+        }
+      }
+    },
+    "/assets/images/hm-tt-9a46ef2753ad/centralnyj-dom-uchyonyh-05-1-07.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "345aef3b63dd041a79e03cb20c05d5f6199a2ee714a6cd197e50adaa7f458394",
+      "source_bytes": 16203355,
+      "width": 5000,
+      "height": 3320,
+      "sha256": "6395a1b711220c811b542455f15b8575ddc908d2066ac7efffc84541db2fa5b8",
+      "bytes": 6078091,
+      "filename": "centralnyj-dom-uchyonyh-05-1-07.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "345aef3b63dd041a79e03cb20c05d5f6199a2ee714a6cd197e50adaa7f458394",
+        "width": 5000,
+        "height": 3320,
+        "bytes": 16203355,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-9a46ef2753ad-centralnyj-dom-uchyonyh-05-1-07-345aef3b63dd041a79e03cb20c05d5f6199a2ee714a6cd197e50adaa7f458394.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630546494",
+          "asset_id": 630546494,
+          "release_tag": "article-originals-3",
+          "sha256": "345aef3b63dd041a79e03cb20c05d5f6199a2ee714a6cd197e50adaa7f458394",
+          "bytes": 16203355
+        }
+      }
+    },
+    "/assets/images/hm-tt-9cd7cf41b694/ya-poznane-sdelal-svoim-reme-03.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "518e254e42adf63ca43551ef9871fc8b87d4e3dd1636a692adaf540d9b8f82c4",
+      "source_bytes": 14256406,
+      "width": 2709,
+      "height": 1942,
+      "sha256": "5cbb757a20a8f4b1f6ace5984426757a71684da66368e393d08992ef60715745",
+      "bytes": 6761192,
+      "filename": "ya-poznane-sdelal-svoim-reme-03.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "518e254e42adf63ca43551ef9871fc8b87d4e3dd1636a692adaf540d9b8f82c4",
+        "width": 2709,
+        "height": 1942,
+        "bytes": 14256406,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-9cd7cf41b694-ya-poznane-sdelal-svoim-reme-03-518e254e42adf63ca43551ef9871fc8b87d4e3dd1636a692adaf540d9b8f82c4.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630565142",
+          "asset_id": 630565142,
+          "release_tag": "article-originals-5",
+          "sha256": "518e254e42adf63ca43551ef9871fc8b87d4e3dd1636a692adaf540d9b8f82c4",
+          "bytes": 14256406
+        }
+      }
+    },
+    "/assets/images/hm-tt-a0d4e48a2f49/goniometr-06-16-04.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "dbbad6267b3e3486a32f15bf8fc23768efd5162b48a6031fe849101930721e39",
+      "source_bytes": 15062438,
+      "width": 2784,
+      "height": 2336,
+      "sha256": "59477fbe9d0b3f6aef338fec46c286a70ad4e8093675bec6250145e11616e3fb",
+      "bytes": 4012667,
+      "filename": "goniometr-06-16-04.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "dbbad6267b3e3486a32f15bf8fc23768efd5162b48a6031fe849101930721e39",
+        "width": 2784,
+        "height": 2336,
+        "bytes": 15062438,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-a0d4e48a2f49-goniometr-06-16-04-dbbad6267b3e3486a32f15bf8fc23768efd5162b48a6031fe849101930721e39.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542070",
+          "asset_id": 630542070,
+          "release_tag": "article-originals-d",
+          "sha256": "dbbad6267b3e3486a32f15bf8fc23768efd5162b48a6031fe849101930721e39",
+          "bytes": 15062438
+        }
+      }
+    },
+    "/assets/images/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-03.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "4998a8bc22920e3e925d1508251cc4a47c8273217b1a2807c78bb65497a48482",
+      "source_bytes": 15213033,
+      "width": 2736,
+      "height": 3648,
+      "sha256": "537fda8a11dedcc5fad04124c01c8b7d3b95a0faebac5efb2a83ce0217b8d26d",
+      "bytes": 4478967,
+      "filename": "vsyu-svoyu-zhizn-posvyatil-n-03.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "4998a8bc22920e3e925d1508251cc4a47c8273217b1a2807c78bb65497a48482",
+        "width": 2736,
+        "height": 3648,
+        "bytes": 15213033,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-baa8b29ac53e-vsyu-svoyu-zhizn-posvyatil-n-03-4998a8bc22920e3e925d1508251cc4a47c8273217b1a2807c78bb65497a48482.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630547830",
+          "asset_id": 630547830,
+          "release_tag": "article-originals-4",
+          "sha256": "4998a8bc22920e3e925d1508251cc4a47c8273217b1a2807c78bb65497a48482",
+          "bytes": 15213033
+        }
+      }
+    },
+    "/assets/images/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-05.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "fbbe05cadbe485e6edf923d46a99ebc802675042105256b72492caec17407604",
+      "source_bytes": 13758702,
+      "width": 3648,
+      "height": 2736,
+      "sha256": "f1e45a0dfb88d4273500863d6abd7a165b5182efeab9375a635dba02c26911ca",
+      "bytes": 4023119,
+      "filename": "vsyu-svoyu-zhizn-posvyatil-n-05.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "fbbe05cadbe485e6edf923d46a99ebc802675042105256b72492caec17407604",
+        "width": 3648,
+        "height": 2736,
+        "bytes": 13758702,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-baa8b29ac53e-vsyu-svoyu-zhizn-posvyatil-n-05-fbbe05cadbe485e6edf923d46a99ebc802675042105256b72492caec17407604.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548137",
+          "asset_id": 630548137,
+          "release_tag": "article-originals-f",
+          "sha256": "fbbe05cadbe485e6edf923d46a99ebc802675042105256b72492caec17407604",
+          "bytes": 13758702
+        }
+      }
+    },
+    "/assets/images/hm-tt-bb5f9b89627a/isaak-nyuton-malchik-igrayus-02.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "ec000943178c3231d5ae15af7ce371d42ede1f0216119e13746953d8fe277309",
+      "source_bytes": 36075901,
+      "width": 4595,
+      "height": 3032,
+      "sha256": "849a5d42f93d0cc8bc3a172e2950b8f4a4ec9e68dc141bd98442f81d8a022167",
+      "bytes": 13396677,
+      "filename": "isaak-nyuton-malchik-igrayus-02.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "ec000943178c3231d5ae15af7ce371d42ede1f0216119e13746953d8fe277309",
+        "width": 4595,
+        "height": 3032,
+        "bytes": 36075901,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-bb5f9b89627a-isaak-nyuton-malchik-igrayus-02-ec000943178c3231d5ae15af7ce371d42ede1f0216119e13746953d8fe277309.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630566639",
+          "asset_id": 630566639,
+          "release_tag": "article-originals-e",
+          "sha256": "ec000943178c3231d5ae15af7ce371d42ede1f0216119e13746953d8fe277309",
+          "bytes": 36075901
+        }
+      },
+      "exception": {
+        "sha256": "849a5d42f93d0cc8bc3a172e2950b8f4a4ec9e68dc141bd98442f81d8a022167",
+        "bytes": 13396677,
+        "one_use": true,
+        "note_url": "https://github.com/Fuzzy-Technologies/history_math/pull/293#issuecomment-6532984126",
+        "reason": "Owner-authorized one-use maximum-quality original; unchanged pixel dimensions."
+      }
+    },
+    "/assets/images/hm-tt-bf9c2e73f34c/fleksagon-02.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "dcf456f43e253b760074d9503e108a4a1ba0f6274a6bee39aa02f7d4d18eeb68",
+      "source_bytes": 32733476,
+      "width": 5000,
+      "height": 3263,
+      "sha256": "7f3623393912f3387a74807c2b4032c739936d7239e3834ec53368263343c3eb",
+      "bytes": 10984446,
+      "filename": "fleksagon-02.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "dcf456f43e253b760074d9503e108a4a1ba0f6274a6bee39aa02f7d4d18eeb68",
+        "width": 5000,
+        "height": 3263,
+        "bytes": 32733476,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-bf9c2e73f34c-fleksagon-02-dcf456f43e253b760074d9503e108a4a1ba0f6274a6bee39aa02f7d4d18eeb68.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630543536",
+          "asset_id": 630543536,
+          "release_tag": "article-originals-d",
+          "sha256": "dcf456f43e253b760074d9503e108a4a1ba0f6274a6bee39aa02f7d4d18eeb68",
+          "bytes": 32733476
+        }
+      }
+    },
+    "/assets/images/hm-tt-ca4998c719f0/alidada-08-31-03.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "fd5321db9a3a548461e77252d0a57dfecb6fa4ee49a80384beeb7a75fe327fcc",
+      "source_bytes": 20925507,
+      "width": 3721,
+      "height": 2634,
+      "sha256": "0ff00ad454eebc7c90d2694fe18850258efd3481ac6c440b7ee7ff7ad289eca9",
+      "bytes": 6289594,
+      "filename": "alidada-08-31-03.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "fd5321db9a3a548461e77252d0a57dfecb6fa4ee49a80384beeb7a75fe327fcc",
+        "width": 3721,
+        "height": 2634,
+        "bytes": 20925507,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-ca4998c719f0-alidada-08-31-03-fd5321db9a3a548461e77252d0a57dfecb6fa4ee49a80384beeb7a75fe327fcc.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549336",
+          "asset_id": 630549336,
+          "release_tag": "article-originals-f",
+          "sha256": "fd5321db9a3a548461e77252d0a57dfecb6fa4ee49a80384beeb7a75fe327fcc",
+          "bytes": 20925507
+        }
+      }
+    },
+    "/assets/images/hm-tt-d014330df145/vklad-matematiki-i-matematik-12.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "df243aa36548529f0af3bc960e87dbbd7725913028df30aca4d12dec35b37bde",
+      "source_bytes": 17681018,
+      "width": 2808,
+      "height": 3743,
+      "sha256": "4076a10209a1a520cbb39ab27bb0aac7347fefafc38274806b9044d4e5e46b67",
+      "bytes": 4949669,
+      "filename": "vklad-matematiki-i-matematik-12.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "df243aa36548529f0af3bc960e87dbbd7725913028df30aca4d12dec35b37bde",
+        "width": 2808,
+        "height": 3743,
+        "bytes": 17681018,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-d014330df145-vklad-matematiki-i-matematik-12-df243aa36548529f0af3bc960e87dbbd7725913028df30aca4d12dec35b37bde.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544638",
+          "asset_id": 630544638,
+          "release_tag": "article-originals-d",
+          "sha256": "df243aa36548529f0af3bc960e87dbbd7725913028df30aca4d12dec35b37bde",
+          "bytes": 17681018
+        }
+      }
+    },
+    "/assets/images/hm-tt-d055acbd27c8/iskusstvo-programmirovaniya-02.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "0fde2c11c8d65665abf9d215868e2c60917546f4f1bfa98727d2168b863d0195",
+      "source_bytes": 27016413,
+      "width": 6808,
+      "height": 2336,
+      "sha256": "505813b4f093fe047cc3e647c92dc2b35aa47527321f47557a890e25bffe8a4e",
+      "bytes": 9028846,
+      "filename": "iskusstvo-programmirovaniya-02.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "0fde2c11c8d65665abf9d215868e2c60917546f4f1bfa98727d2168b863d0195",
+        "width": 6808,
+        "height": 2336,
+        "bytes": 27016413,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-d055acbd27c8-iskusstvo-programmirovaniya-02-0fde2c11c8d65665abf9d215868e2c60917546f4f1bfa98727d2168b863d0195.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557224",
+          "asset_id": 630557224,
+          "release_tag": "article-originals-0",
+          "sha256": "0fde2c11c8d65665abf9d215868e2c60917546f4f1bfa98727d2168b863d0195",
+          "bytes": 27016413
+        }
+      }
+    },
+    "/assets/images/hm-tt-d53be80a8676/yavlenie-chrezvychajnoe-andr-10.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "b0feca22221d76b48d39af6992ce5441a49c1c3bf11ddc7c894bc6afc705f94f",
+      "source_bytes": 13651106,
+      "width": 1900,
+      "height": 2760,
+      "sha256": "cc1f308c99c1cb4524233f7469e55258c4530bbfe624561844397741a50f05a6",
+      "bytes": 4305789,
+      "filename": "yavlenie-chrezvychajnoe-andr-10.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "b0feca22221d76b48d39af6992ce5441a49c1c3bf11ddc7c894bc6afc705f94f",
+        "width": 1900,
+        "height": 2760,
+        "bytes": 13651106,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-d53be80a8676-yavlenie-chrezvychajnoe-andr-10-b0feca22221d76b48d39af6992ce5441a49c1c3bf11ddc7c894bc6afc705f94f.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554545",
+          "asset_id": 630554545,
+          "release_tag": "article-originals-b",
+          "sha256": "b0feca22221d76b48d39af6992ce5441a49c1c3bf11ddc7c894bc6afc705f94f",
+          "bytes": 13651106
+        }
+      }
+    },
+    "/assets/images/hm-tt-dc7cf6992f78/doktor-filosofii-soldat-sove-05.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "c80055d7c867a6b0e9118537a532084a018d1945a12866e83cb93b5f1d9b50dc",
+      "source_bytes": 18748835,
+      "width": 3903,
+      "height": 4230,
+      "sha256": "af8080208e0e6c3a53a75cde7a0652e294b98c5017bae5d1a54023e5b699d7df",
+      "bytes": 7185707,
+      "filename": "doktor-filosofii-soldat-sove-05.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "c80055d7c867a6b0e9118537a532084a018d1945a12866e83cb93b5f1d9b50dc",
+        "width": 3903,
+        "height": 4230,
+        "bytes": 18748835,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-dc7cf6992f78-doktor-filosofii-soldat-sove-05-c80055d7c867a6b0e9118537a532084a018d1945a12866e83cb93b5f1d9b50dc.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554532",
+          "asset_id": 630554532,
+          "release_tag": "article-originals-c",
+          "sha256": "c80055d7c867a6b0e9118537a532084a018d1945a12866e83cb93b5f1d9b50dc",
+          "bytes": 18748835
+        }
+      }
+    },
+    "/assets/images/hm-tt-e01902faaaa8/daniil-bernulli-17001782-01-01.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "6041ba895c4e7b2171037bc97212b7cc78bd7abd42d12d10aec78a140e7ee0de",
+      "source_bytes": 16480276,
+      "width": 2289,
+      "height": 2916,
+      "sha256": "1c5eded1d81e30dd8e76b6db250b31d9e25bc238f3dff4bf7a08ad0ffc6afa14",
+      "bytes": 5945836,
+      "filename": "daniil-bernulli-17001782-01-01.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "6041ba895c4e7b2171037bc97212b7cc78bd7abd42d12d10aec78a140e7ee0de",
+        "width": 2289,
+        "height": 2916,
+        "bytes": 16480276,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-e01902faaaa8-daniil-bernulli-17001782-01-01-6041ba895c4e7b2171037bc97212b7cc78bd7abd42d12d10aec78a140e7ee0de.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630502549",
+          "asset_id": 630502549,
+          "release_tag": "article-originals-6",
+          "sha256": "6041ba895c4e7b2171037bc97212b7cc78bd7abd42d12d10aec78a140e7ee0de",
+          "bytes": 16480276
+        }
+      }
+    },
+    "/assets/images/hm-tt-e0952dd62d49/bylo-by-chto-merit-08-21-06.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "53ba1d05e52e705d9ec447301c15285f1eebe81d0c60aad002b8d3600afcd9a7",
+      "source_bytes": 14007049,
+      "width": 2732,
+      "height": 2472,
+      "sha256": "78e900fa381b5fa2dc8a1408f9f743826220cc245f455c6d047e225a9c247d0b",
+      "bytes": 4857563,
+      "filename": "bylo-by-chto-merit-08-21-06.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "53ba1d05e52e705d9ec447301c15285f1eebe81d0c60aad002b8d3600afcd9a7",
+        "width": 2732,
+        "height": 2472,
+        "bytes": 14007049,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-e0952dd62d49-bylo-by-chto-merit-08-21-06-53ba1d05e52e705d9ec447301c15285f1eebe81d0c60aad002b8d3600afcd9a7.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630568750",
+          "asset_id": 630568750,
+          "release_tag": "article-originals-5",
+          "sha256": "53ba1d05e52e705d9ec447301c15285f1eebe81d0c60aad002b8d3600afcd9a7",
+          "bytes": 14007049
+        }
+      }
+    },
+    "/assets/images/hm-tt-e5340946d64e/uchyonyj-operedivshij-vremya-02.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "661714ee3ae36bfc1ca94afd41544691beeabe467f6f028a2a798b446b58cadb",
+      "source_bytes": 19144057,
+      "width": 3024,
+      "height": 3600,
+      "sha256": "7ece87415f197c3a65d30ac46eb7673d1805d483c3d42ea52f3393406d548a2e",
+      "bytes": 5285409,
+      "filename": "uchyonyj-operedivshij-vremya-02.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "661714ee3ae36bfc1ca94afd41544691beeabe467f6f028a2a798b446b58cadb",
+        "width": 3024,
+        "height": 3600,
+        "bytes": 19144057,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-e5340946d64e-uchyonyj-operedivshij-vremya-02-661714ee3ae36bfc1ca94afd41544691beeabe467f6f028a2a798b446b58cadb.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558509",
+          "asset_id": 630558509,
+          "release_tag": "article-originals-6",
+          "sha256": "661714ee3ae36bfc1ca94afd41544691beeabe467f6f028a2a798b446b58cadb",
+          "bytes": 19144057
+        }
+      }
+    },
+    "/assets/images/hm-tt-e5a4fc92063a/zadacha-forda-kadrovyj-rebus-08.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "f9c900211e164027a3c8e334ac1bb14402c859758b130f1af234e52c4ef05bf8",
+      "source_bytes": 13073946,
+      "width": 3264,
+      "height": 2448,
+      "sha256": "9b56bfc6b26c69f3126a87d144cd221158ac24b83ef1332783255e94c594cdc8",
+      "bytes": 3649317,
+      "filename": "zadacha-forda-kadrovyj-rebus-08.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "f9c900211e164027a3c8e334ac1bb14402c859758b130f1af234e52c4ef05bf8",
+        "width": 3264,
+        "height": 2448,
+        "bytes": 13073946,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-e5a4fc92063a-zadacha-forda-kadrovyj-rebus-08-f9c900211e164027a3c8e334ac1bb14402c859758b130f1af234e52c4ef05bf8.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552668",
+          "asset_id": 630552668,
+          "release_tag": "article-originals-f",
+          "sha256": "f9c900211e164027a3c8e334ac1bb14402c859758b130f1af234e52c4ef05bf8",
+          "bytes": 13073946
+        }
+      }
+    },
+    "/assets/images/hm-tt-eaba3ff1d327/fontan-idej-da-vinchi-08-31-01.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "4d5e56886777587bc3afcad8ed41e3494dec9688db91a610793870e17fff31d3",
+      "source_bytes": 13199090,
+      "width": 2446,
+      "height": 3100,
+      "sha256": "15a32a2bafe36f7638baf0de6b56db8c32d82b16db4af347dad95997e9451715",
+      "bytes": 3407567,
+      "filename": "fontan-idej-da-vinchi-08-31-01.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "4d5e56886777587bc3afcad8ed41e3494dec9688db91a610793870e17fff31d3",
+        "width": 2446,
+        "height": 3100,
+        "bytes": 13199090,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-eaba3ff1d327-fontan-idej-da-vinchi-08-31-01-4d5e56886777587bc3afcad8ed41e3494dec9688db91a610793870e17fff31d3.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630501308",
+          "asset_id": 630501308,
+          "release_tag": "article-originals-4",
+          "sha256": "4d5e56886777587bc3afcad8ed41e3494dec9688db91a610793870e17fff31d3",
+          "bytes": 13199090
+        }
+      }
+    },
+    "/assets/images/hm-tt-eaba3ff1d327/fontan-idej-da-vinchi-08-31-04.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "127425cc391ec001df06d4b9b1104124ae73538ac948480275c3508309d57e97",
+      "source_bytes": 17323936,
+      "width": 2258,
+      "height": 3070,
+      "sha256": "ac127de2527ac9551109ef9a647604e0bb013760e73869e560c7b467ac24a464",
+      "bytes": 6305764,
+      "filename": "fontan-idej-da-vinchi-08-31-04.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "127425cc391ec001df06d4b9b1104124ae73538ac948480275c3508309d57e97",
+        "width": 2258,
+        "height": 3070,
+        "bytes": 17323936,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-eaba3ff1d327-fontan-idej-da-vinchi-08-31-04-127425cc391ec001df06d4b9b1104124ae73538ac948480275c3508309d57e97.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630574890",
+          "asset_id": 630574890,
+          "release_tag": "article-originals-1",
+          "sha256": "127425cc391ec001df06d4b9b1104124ae73538ac948480275c3508309d57e97",
+          "bytes": 17323936
+        }
+      }
+    },
+    "/assets/images/hm-tt-eaba3ff1d327/fontan-idej-da-vinchi-08-31-10.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "c1e99d44dce1012491bca07830399b94a2c5aa14d15cc20696b180786152bacd",
+      "source_bytes": 45828863,
+      "width": 3931,
+      "height": 5748,
+      "sha256": "d8debb7c7ed22ab5d222e3cd80c5f957e6a40ea5c64f653d1fef70740c1b6c65",
+      "bytes": 12058859,
+      "filename": "fontan-idej-da-vinchi-08-31-10.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "c1e99d44dce1012491bca07830399b94a2c5aa14d15cc20696b180786152bacd",
+        "width": 3931,
+        "height": 5748,
+        "bytes": 45828863,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-eaba3ff1d327-fontan-idej-da-vinchi-08-31-10-c1e99d44dce1012491bca07830399b94a2c5aa14d15cc20696b180786152bacd.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630575981",
+          "asset_id": 630575981,
+          "release_tag": "article-originals-c",
+          "sha256": "c1e99d44dce1012491bca07830399b94a2c5aa14d15cc20696b180786152bacd",
+          "bytes": 45828863
+        }
+      }
+    },
+    "/assets/images/hm-tt-fa8340af2638/i-vsyo-taki-ona-vertitsya-09-02.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "14ca8b57d162f7a54881659b94b8679572bfb0d945bca9a0b09344e11ca258b1",
+      "source_bytes": 14282034,
+      "width": 3614,
+      "height": 3027,
+      "sha256": "fbd37bc9f4efa4bc172a973afe888cdb5a9b5b844a1b9a667086a4b02cbdef75",
+      "bytes": 5991915,
+      "filename": "i-vsyo-taki-ona-vertitsya-09-02.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "14ca8b57d162f7a54881659b94b8679572bfb0d945bca9a0b09344e11ca258b1",
+        "width": 3614,
+        "height": 3027,
+        "bytes": 14282034,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-fa8340af2638-i-vsyo-taki-ona-vertitsya-09-02-14ca8b57d162f7a54881659b94b8679572bfb0d945bca9a0b09344e11ca258b1.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558215",
+          "asset_id": 630558215,
+          "release_tag": "article-originals-1",
+          "sha256": "14ca8b57d162f7a54881659b94b8679572bfb0d945bca9a0b09344e11ca258b1",
+          "bytes": 14282034
+        }
+      }
+    },
+    "/assets/images/hm-tt-fa8340af2638/i-vsyo-taki-ona-vertitsya-09-05.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "e716534bff65307f7bc4dee893052bf3a1d8b2c1b32a159d9945ad31af2329cc",
+      "source_bytes": 13189870,
+      "width": 2000,
+      "height": 2664,
+      "sha256": "bf7008f912c62689b53e64c7668564ec6de76574ef06c68f73001df2bee55c4e",
+      "bytes": 4106835,
+      "filename": "i-vsyo-taki-ona-vertitsya-09-05.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "e716534bff65307f7bc4dee893052bf3a1d8b2c1b32a159d9945ad31af2329cc",
+        "width": 2000,
+        "height": 2664,
+        "bytes": 13189870,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-fa8340af2638-i-vsyo-taki-ona-vertitsya-09-05-e716534bff65307f7bc4dee893052bf3a1d8b2c1b32a159d9945ad31af2329cc.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558679",
+          "asset_id": 630558679,
+          "release_tag": "article-originals-e",
+          "sha256": "e716534bff65307f7bc4dee893052bf3a1d8b2c1b32a159d9945ad31af2329cc",
+          "bytes": 13189870
+        }
+      }
+    },
+    "/assets/images/hm-tt-fa8340af2638/i-vsyo-taki-ona-vertitsya-09-06.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "b8fb83625bdc84556ce4036da05f1e298679182a1acac48166fa1a665b131176",
+      "source_bytes": 13651398,
+      "width": 2005,
+      "height": 2720,
+      "sha256": "12e8899ae58fb3c806feffd2d3d031832d405bd7481503cabc32f142041787db",
+      "bytes": 4260033,
+      "filename": "i-vsyo-taki-ona-vertitsya-09-06.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "b8fb83625bdc84556ce4036da05f1e298679182a1acac48166fa1a665b131176",
+        "width": 2005,
+        "height": 2720,
+        "bytes": 13651398,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-fa8340af2638-i-vsyo-taki-ona-vertitsya-09-06-b8fb83625bdc84556ce4036da05f1e298679182a1acac48166fa1a665b131176.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630558821",
+          "asset_id": 630558821,
+          "release_tag": "article-originals-b",
+          "sha256": "b8fb83625bdc84556ce4036da05f1e298679182a1acac48166fa1a665b131176",
+          "bytes": 13651398
+        }
+      }
+    },
+    "/assets/images/hm-tt-fe2f642f1e5a/priznak-delimosti-na-19-ehkz-02.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "c8c510834ce10c755c240f343ab3d725bd8555cac80cafad516c96cb360c28c6",
+      "source_bytes": 15786637,
+      "width": 2000,
+      "height": 3008,
+      "sha256": "0d619a15eeeaa6ecec36c42f28092ca1de7925026da733d6b3b6d8877bbcc0f0",
+      "bytes": 5687231,
+      "filename": "priznak-delimosti-na-19-ehkz-02.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "c8c510834ce10c755c240f343ab3d725bd8555cac80cafad516c96cb360c28c6",
+        "width": 2000,
+        "height": 3008,
+        "bytes": 15786637,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-fe2f642f1e5a-priznak-delimosti-na-19-ehkz-02-c8c510834ce10c755c240f343ab3d725bd8555cac80cafad516c96cb360c28c6.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630542576",
+          "asset_id": 630542576,
+          "release_tag": "article-originals-c",
+          "sha256": "c8c510834ce10c755c240f343ab3d725bd8555cac80cafad516c96cb360c28c6",
+          "bytes": 15786637
+        }
+      }
+    },
+    "/assets/images/hm-tt-fec0f4efbe98/bernulli-iogann-16671748-01-01.png": {
+      "policy": "jpeg-max15mb-444-pillow-12.3.0-v1",
+      "source_sha256": "2b9f3ef0480505d6fa92f1fed2b1829176bff02c40a7c32267c936cff0fc0eef",
+      "source_bytes": 20248361,
+      "width": 2270,
+      "height": 3485,
+      "sha256": "ad7927410ae7b6fdc2298fe337436afaac23250deaa9aad129b87f1498e81ccb",
+      "bytes": 6975761,
+      "filename": "bernulli-iogann-16671748-01-01.jpg",
+      "quality": 100,
+      "source": {
+        "sha256": "2b9f3ef0480505d6fa92f1fed2b1829176bff02c40a7c32267c936cff0fc0eef",
+        "width": 2270,
+        "height": 3485,
+        "bytes": 20248361,
+        "logo": false,
+        "external_original": {
+          "storage": "github-release",
+          "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-fec0f4efbe98-bernulli-iogann-16671748-01-01-2b9f3ef0480505d6fa92f1fed2b1829176bff02c40a7c32267c936cff0fc0eef.png",
+          "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630501211",
+          "asset_id": 630501211,
+          "release_tag": "article-originals-2",
+          "sha256": "2b9f3ef0480505d6fa92f1fed2b1829176bff02c40a7c32267c936cff0fc0eef",
+          "bytes": 20248361
+        }
+      }
+    }
+  },
+  "retained": {}
+}

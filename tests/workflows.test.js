@@ -194,7 +194,7 @@ test('PR metadata uses additive APIs without executing contributor code', async 
 test('production build and deployment both require master for push and manual dispatch', () => {
   const deploy = readFileSync('.github/workflows/deploy.yml', 'utf8');
   const guard = "github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')";
-  assert.equal(deploy.split(guard).length - 1, 2);
+  assert.equal(deploy.split(guard).length - 1, 3);
   assert.match(deploy, /branches: \[master\]/);
   assert.ok(!deploy.includes('pull_request:'));
   for (const branch of ['master', 'develop', 'feature/site-prototype']) {

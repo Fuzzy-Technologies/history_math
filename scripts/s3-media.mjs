@@ -105,6 +105,7 @@ export async function verifyPublic(object, request = fetch) {
 // bucket listing, ACL change or overwrite of a different content identity here.
 export async function uploadVerified(client, object, source, {request = fetch} = {}) {
   validateObject(object);
+  if (object.bytes > 15_000_000) throw new Error(`S3 media exceeds the 15 MB hard limit: ${object.key}`);
   let missing = false;
   try { await client.send(new HeadObjectCommand({Bucket: storage.bucket, Key: object.key})); }
   catch (error) {
