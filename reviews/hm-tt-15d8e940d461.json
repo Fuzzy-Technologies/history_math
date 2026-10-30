@@ -1,0 +1,28 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-15d8e940d461",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "b7c39ceaf4b44acb8033e41442eb67a3db30d4e9ad59665a78b0f6129e6145cc",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Мержить.",
+    "source_commit": "830322380714d2d6ac216d594bd31c5ec3181670",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/223"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 7,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-28",
+      "url": "https://teletype.in/@history_math/Bussol-09-28"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
