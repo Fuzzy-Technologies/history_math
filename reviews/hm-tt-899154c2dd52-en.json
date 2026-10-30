@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-899154c2dd52-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "2b8f826ef909cf1e3631b52acd42e6d2207a09dc5dfe69a29795a75b16560888",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Ничего не меняем, мержим.",
+    "source_commit": "0132bd14031ff962ed9b908f2aaddc47375cdc7f",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/206"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The general rule uses 1/n “at each stage” without explicitly stating whether n is the number of remaining participants or whether trimmings are returned to the remainder. Confirm the intended procedure; the English adaptation preserves the source’s level of detail.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #206 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 1,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-13",
+      "url": "https://teletype.in/@history_math/Spravedlivyj-razdel-delimyh-predmetov-11-13"
+    }
+  }
+}
