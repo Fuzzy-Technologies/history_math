@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-304582fa00bf-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "93d5485e770a21df3024667a6a186bd526b284324c341c16f1a280718e1db92e",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Оставь как есть, смержи.",
+    "source_commit": "bef8cfb9c77b5f888dbc7e8dc68c4808a8a8686c",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/231"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source discusses a roughly 3% error from replacing 69,3 with 72 and extends the rule directly to percentage decay. Confirm the intended approximation and its accuracy for decay; the statements have been retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #231 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-09",
+      "url": "https://teletype.in/@history_math/Vychislenie-vremeni-udvoeniya-kapitala-Pravilo-72-09-09"
+    }
+  }
+}
