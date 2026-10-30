@@ -1,0 +1,47 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-98034199babc-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "51c80dfc7284704e40fa5b3e824f26b62ebe115f599734808f10f947972b62a3",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Оставь как есть, там всё правильно, мержи.",
+    "source_commit": "73b2a9fe315dfc2b82e16c1be43f00a610bac773",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/233"
+  },
+  "questions": [
+    {
+      "id": "q-women-1",
+      "question": "Confirm the source's claims that Theano led Pythagoras's school for six years, Hypatia invented the hydrometer, astrolabe and planisphere, and that no religion or prevailing social view permitted women to do science for a long period. All claims are retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #233 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    },
+    {
+      "id": "q-women-2",
+      "question": "The source calls Noether a professor at Göttingen and then says she never obtained a professorship. Confirm the intended distinction between her academic title and an appointed position. Both statements are retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #233 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    },
+    {
+      "id": "q-women-3",
+      "question": "Confirm the documentary basis for the account of Wentzel concealing her dissertation defence from her husband, which is retained in full.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #233 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-06",
+      "url": "https://teletype.in/@history_math/Rol-zhenshchin-v-matematike-09-06"
+    }
+  }
+}
