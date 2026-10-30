@@ -2,12 +2,12 @@
 
 The owner approved these final thresholds on 2026-10-30. They apply to every image format, every public original and reading derivative, existing publications, and unmerged article PRs. Units are decimal MB (1 MB = 1,000,000 bytes).
 
-| File size | Required handling |
-| --- | --- |
-| Below 10 MB | Preferred; retain the existing format when appropriate. |
+| File size            | Required handling                                                       |
+| -------------------- | ----------------------------------------------------------------------- |
+| Below 10 MB          | Preferred; retain the existing format when appropriate.                 |
 | 10 MB to below 13 MB | Recommendation to reduce transfer/storage size; not a blocking finding. |
-| 13 MB through 15 MB | Critical warning; block without a one-use exception recorded in the PR. |
-| Above 15 MB | Hard failure; no exception or approval can bypass it. |
+| 13 MB through 15 MB  | Critical warning; block without a one-use exception recorded in the PR. |
+| Above 15 MB          | Hard failure; no exception or approval can bypass it.                   |
 
 A critical exception identifies the exact public image SHA-256, byte count, reason and PR note. It applies only to that immutable object. A different hash or larger size needs a new review note. Never silently turn a critical warning into a general project exemption.
 
