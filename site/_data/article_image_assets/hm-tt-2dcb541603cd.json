@@ -1,0 +1,377 @@
+{
+  "/assets/images/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-01.png": {
+    "sha256": "278ed47016a6b866e4e52aa5923622ae6294be406408a47667d27c169a3e1ca0",
+    "width": 1048,
+    "height": 1527,
+    "bytes": 1605795,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-01.png-960.webp",
+        "width": 960,
+        "height": 1399,
+        "sha256": "e21e927e695bece687c3f9f27afa43b98312f67df122b4ee84082f3b0910fade",
+        "bytes": 696196
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-2dcb541603cd-akademik-vladimir-ivanovich-01-278ed47016a6b866e4e52aa5923622ae6294be406408a47667d27c169a3e1ca0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630499334",
+      "asset_id": 630499334,
+      "release_tag": "article-originals-2",
+      "sha256": "278ed47016a6b866e4e52aa5923622ae6294be406408a47667d27c169a3e1ca0",
+      "bytes": 1605795
+    }
+  },
+  "/assets/images/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-02.png": {
+    "sha256": "5db85de370d9de124e92ed322250881e7c227150b928cdff8e5f4c176b639e12",
+    "width": 1200,
+    "height": 775,
+    "bytes": 1130966,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-02.png-960.webp",
+        "width": 960,
+        "height": 620,
+        "sha256": "032bee4607424eab0d53953080a327f9dffa4498d4718bc4eeb0814d9bd345b2",
+        "bytes": 339622
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-2dcb541603cd-akademik-vladimir-ivanovich-02-5db85de370d9de124e92ed322250881e7c227150b928cdff8e5f4c176b639e12.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630562784",
+      "asset_id": 630562784,
+      "release_tag": "article-originals-5",
+      "sha256": "5db85de370d9de124e92ed322250881e7c227150b928cdff8e5f4c176b639e12",
+      "bytes": 1130966
+    }
+  },
+  "/assets/images/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-03.png": {
+    "sha256": "3a606e7b970782160dcf5bd9c72e0b51722309cadaf7adcdcbfaabbe837fd429",
+    "width": 2272,
+    "height": 1704,
+    "bytes": 9401979,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-03.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "e0d77fec81c42056ee8892ae7bbce64e9b4e8fced87d42db9889fdfc754bb0ad",
+        "bytes": 1098580
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-2dcb541603cd-akademik-vladimir-ivanovich-03-3a606e7b970782160dcf5bd9c72e0b51722309cadaf7adcdcbfaabbe837fd429.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630562976",
+      "asset_id": 630562976,
+      "release_tag": "article-originals-3",
+      "sha256": "3a606e7b970782160dcf5bd9c72e0b51722309cadaf7adcdcbfaabbe837fd429",
+      "bytes": 9401979
+    }
+  },
+  "/assets/images/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-04.png": {
+    "sha256": "b84315d7f3598cd8673e0f5b0c09f10db367ccbde57734fb51a5c410ba0a2e02",
+    "width": 2272,
+    "height": 1704,
+    "bytes": 7966101,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-04.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "91fc545b0230d1d0795d8867890d7a9e3e960a2ccf7dbd1a2931c34f24223228",
+        "bytes": 877426
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-2dcb541603cd-akademik-vladimir-ivanovich-04-b84315d7f3598cd8673e0f5b0c09f10db367ccbde57734fb51a5c410ba0a2e02.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563147",
+      "asset_id": 630563147,
+      "release_tag": "article-originals-b",
+      "sha256": "b84315d7f3598cd8673e0f5b0c09f10db367ccbde57734fb51a5c410ba0a2e02",
+      "bytes": 7966101
+    }
+  },
+  "/assets/images/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-05.png": {
+    "sha256": "4d2ef074000d51e15722bcabfc15e209f39a9cd330a200ad05eed14dda5b0a4d",
+    "width": 2171,
+    "height": 1485,
+    "bytes": 2255673,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-05.png-960.webp",
+        "width": 960,
+        "height": 657,
+        "sha256": "86d7a015ceee58deae360fd5972417f198e019a0101d2194817c83fdaf058dd1",
+        "bytes": 250342
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-2dcb541603cd-akademik-vladimir-ivanovich-05-4d2ef074000d51e15722bcabfc15e209f39a9cd330a200ad05eed14dda5b0a4d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563376",
+      "asset_id": 630563376,
+      "release_tag": "article-originals-4",
+      "sha256": "4d2ef074000d51e15722bcabfc15e209f39a9cd330a200ad05eed14dda5b0a4d",
+      "bytes": 2255673
+    }
+  },
+  "/assets/images/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-06.png": {
+    "sha256": "f521da218e5ad6395c3e1efc82f5c4407b011dfc2dcbf6316aaaf1135ef651e0",
+    "width": 3303,
+    "height": 2338,
+    "bytes": 6957257,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-06.png-960.webp",
+        "width": 960,
+        "height": 680,
+        "sha256": "1594afe845a11ba2b8edd5cea378ae88c27ddae2797393ccbfc40df9a5ef50f0",
+        "bytes": 370736
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-2dcb541603cd-akademik-vladimir-ivanovich-06-f521da218e5ad6395c3e1efc82f5c4407b011dfc2dcbf6316aaaf1135ef651e0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563544",
+      "asset_id": 630563544,
+      "release_tag": "article-originals-f",
+      "sha256": "f521da218e5ad6395c3e1efc82f5c4407b011dfc2dcbf6316aaaf1135ef651e0",
+      "bytes": 6957257
+    }
+  },
+  "/assets/images/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-07.png": {
+    "sha256": "05c7db5a0892160dc3cb07cf02adeb967f8d58e3dceefb8bda25d2ed693fcbec",
+    "width": 2976,
+    "height": 2531,
+    "bytes": 16669358,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-07.png-960.webp",
+        "width": 960,
+        "height": 816,
+        "sha256": "f422e6850de839790040d1aaaf533c235901a2285e2104b9ee7b775b6982687f",
+        "bytes": 811044
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-2dcb541603cd-akademik-vladimir-ivanovich-07-05c7db5a0892160dc3cb07cf02adeb967f8d58e3dceefb8bda25d2ed693fcbec.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563668",
+      "asset_id": 630563668,
+      "release_tag": "article-originals-0",
+      "sha256": "05c7db5a0892160dc3cb07cf02adeb967f8d58e3dceefb8bda25d2ed693fcbec",
+      "bytes": 16669358
+    }
+  },
+  "/assets/images/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-08.png": {
+    "sha256": "bdfc182f88e9b54608ee96e36e866bdab13f783380387f9be55b140a09b0be8b",
+    "width": 950,
+    "height": 620,
+    "bytes": 1052100,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-08.png-950.webp",
+        "width": 950,
+        "height": 620,
+        "sha256": "cd3705e57f196bcf38ec4fab733a795570b70b916122107bd02de83ba3fcdcc3",
+        "bytes": 505500
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-2dcb541603cd-akademik-vladimir-ivanovich-08-bdfc182f88e9b54608ee96e36e866bdab13f783380387f9be55b140a09b0be8b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563841",
+      "asset_id": 630563841,
+      "release_tag": "article-originals-b",
+      "sha256": "bdfc182f88e9b54608ee96e36e866bdab13f783380387f9be55b140a09b0be8b",
+      "bytes": 1052100
+    }
+  },
+  "/assets/images/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-09.png": {
+    "sha256": "30df20f05781f210525de38929753f53bc5f9f321f182892112e0042f1a63472",
+    "width": 1396,
+    "height": 735,
+    "bytes": 1532478,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-09.png-960.webp",
+        "width": 960,
+        "height": 505,
+        "sha256": "6967becdcc9f6a14aed4cce744f744d489d21650345f6a311a5229a96cd859b2",
+        "bytes": 382690
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-2dcb541603cd-akademik-vladimir-ivanovich-09-30df20f05781f210525de38929753f53bc5f9f321f182892112e0042f1a63472.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630564021",
+      "asset_id": 630564021,
+      "release_tag": "article-originals-3",
+      "sha256": "30df20f05781f210525de38929753f53bc5f9f321f182892112e0042f1a63472",
+      "bytes": 1532478
+    }
+  },
+  "/assets/images/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-10.png": {
+    "sha256": "b99a973eff3cbb3b985c90d4e6cf6a049913227dd962b33423284fe980ec3076",
+    "width": 1395,
+    "height": 733,
+    "bytes": 1772899,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-10.png-960.webp",
+        "width": 960,
+        "height": 504,
+        "sha256": "868bd84893f2f50d1d5f4cb596583a317a3fa2f3df0795a1d189d6976ad29116",
+        "bytes": 436210
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-2dcb541603cd-akademik-vladimir-ivanovich-10-b99a973eff3cbb3b985c90d4e6cf6a049913227dd962b33423284fe980ec3076.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630564165",
+      "asset_id": 630564165,
+      "release_tag": "article-originals-b",
+      "sha256": "b99a973eff3cbb3b985c90d4e6cf6a049913227dd962b33423284fe980ec3076",
+      "bytes": 1772899
+    }
+  },
+  "/assets/images/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-11.png": {
+    "sha256": "cb8f5363284e5e386ef1fef02ff3ba905351088a069f99e4fef9c30e0ded7b69",
+    "width": 2482,
+    "height": 1830,
+    "bytes": 10022006,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-11.png-960.webp",
+        "width": 960,
+        "height": 708,
+        "sha256": "861eab88852a90c6e0787b2499f48cfbd9cac8f015d63e114ab5ce10ef32ed62",
+        "bytes": 877772
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-2dcb541603cd-akademik-vladimir-ivanovich-11-cb8f5363284e5e386ef1fef02ff3ba905351088a069f99e4fef9c30e0ded7b69.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630564320",
+      "asset_id": 630564320,
+      "release_tag": "article-originals-c",
+      "sha256": "cb8f5363284e5e386ef1fef02ff3ba905351088a069f99e4fef9c30e0ded7b69",
+      "bytes": 10022006
+    }
+  },
+  "/assets/images/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-12.png": {
+    "sha256": "3a0d64b9ea0830ff09c5c5fa03f5249cff8104c892556d511e0bbb6df611bdc5",
+    "width": 3264,
+    "height": 1840,
+    "bytes": 9754607,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-12.png-960.webp",
+        "width": 960,
+        "height": 541,
+        "sha256": "7dfcc244bcb95a084162c3aa4f3cbee224784b8d2ee3b318fcc5438b57e9708d",
+        "bytes": 672568
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-2dcb541603cd-akademik-vladimir-ivanovich-12-3a0d64b9ea0830ff09c5c5fa03f5249cff8104c892556d511e0bbb6df611bdc5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630564511",
+      "asset_id": 630564511,
+      "release_tag": "article-originals-3",
+      "sha256": "3a0d64b9ea0830ff09c5c5fa03f5249cff8104c892556d511e0bbb6df611bdc5",
+      "bytes": 9754607
+    }
+  },
+  "/assets/images/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-13.png": {
+    "sha256": "0234f6beea3287a6325f9106bb0b226db9a0f355b362f7fe52d10aba69c7250d",
+    "width": 1289,
+    "height": 1837,
+    "bytes": 1648509,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-13.png-960.webp",
+        "width": 960,
+        "height": 1368,
+        "sha256": "7d9a38c673926cee690f6ef828a02cb922775f3c6e1fe927d2ec3bede944bc49",
+        "bytes": 481564
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-2dcb541603cd-akademik-vladimir-ivanovich-13-0234f6beea3287a6325f9106bb0b226db9a0f355b362f7fe52d10aba69c7250d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630564643",
+      "asset_id": 630564643,
+      "release_tag": "article-originals-0",
+      "sha256": "0234f6beea3287a6325f9106bb0b226db9a0f355b362f7fe52d10aba69c7250d",
+      "bytes": 1648509
+    }
+  },
+  "/assets/images/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-14.png": {
+    "sha256": "ade6bcc871f63a582beb0f15c4fa50e9067b3313a7f2076e197fada336d99b68",
+    "width": 1752,
+    "height": 2658,
+    "bytes": 5472331,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-14.png-960.webp",
+        "width": 960,
+        "height": 1456,
+        "sha256": "e82dff6d59c7bcf136645a2c5c61f5d20009a2a3d48083421e0b34b42ee60ee7",
+        "bytes": 615534
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-2dcb541603cd-akademik-vladimir-ivanovich-14-ade6bcc871f63a582beb0f15c4fa50e9067b3313a7f2076e197fada336d99b68.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630564777",
+      "asset_id": 630564777,
+      "release_tag": "article-originals-a",
+      "sha256": "ade6bcc871f63a582beb0f15c4fa50e9067b3313a7f2076e197fada336d99b68",
+      "bytes": 5472331
+    }
+  },
+  "/assets/images/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-15.png": {
+    "sha256": "989a8d2f872a00fd9c605fb737f5bb2df904f9679a3d170390173483d946847c",
+    "width": 3333,
+    "height": 2327,
+    "bytes": 3501830,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2dcb541603cd/akademik-vladimir-ivanovich-15.png-960.webp",
+        "width": 960,
+        "height": 670,
+        "sha256": "b055617118f23d80598e224402c90ffbd3d085ae8c0d3cb24dc88d1bd51e1268",
+        "bytes": 237966
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-2dcb541603cd-akademik-vladimir-ivanovich-15-989a8d2f872a00fd9c605fb737f5bb2df904f9679a3d170390173483d946847c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630564915",
+      "asset_id": 630564915,
+      "release_tag": "article-originals-9",
+      "sha256": "989a8d2f872a00fd9c605fb737f5bb2df904f9679a3d170390173483d946847c",
+      "bytes": 3501830
+    }
+  }
+}
