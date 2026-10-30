@@ -1,0 +1,28 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-0b52f1a4bad8",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "fd9793bc9430bb82eaa36be9e4b435b099ccab8e48115c3c488f7dc455360b93",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Мержим.",
+    "source_commit": "900aca1de22c1e0b15f6751951837d50811bc529",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/167"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 7,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-04-06",
+      "url": "https://teletype.in/@history_math/E-Hkker-04-06"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
