@@ -1,0 +1,25 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-4c6bb08b5a47-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "08a6041793f550ba4ed22ce59c5d018d5cae5a97f6e81fcdb96d65bbfe3f2c3f",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Мержим.",
+    "source_commit": "b34e750c395ebb7e0119bf7abd5fc8eb8cc4b140",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/160"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-05-19",
+      "url": "https://teletype.in/@history_math/Alla-Efimovna-Malyh-19392019-05-19"
+    }
+  }
+}
