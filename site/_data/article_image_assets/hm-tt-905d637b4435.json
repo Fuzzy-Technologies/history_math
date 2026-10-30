@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-905d637b4435/o-predmete-matematiki-kratka-01.png": {
+    "sha256": "26d15c4dea9348a7a88939c13305f6e8e2af018a4f2d86e10f6b2c047ef436b2",
+    "width": 1600,
+    "height": 1126,
+    "bytes": 1702966,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-905d637b4435/o-predmete-matematiki-kratka-01-png-reading-960-b3a453a905ee.webp",
+        "width": 960,
+        "height": 676,
+        "sha256": "b3a453a905ee5ff5cea0b24173bd4067b84160da0761d0f6b2aad5f337673881",
+        "bytes": 602024
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-905d637b4435-o-predmete-matematiki-kratka-01-26d15c4dea9348a7a88939c13305f6e8e2af018a4f2d86e10f6b2c047ef436b2.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630498884",
+      "asset_id": 630498884,
+      "release_tag": "article-originals-2",
+      "sha256": "26d15c4dea9348a7a88939c13305f6e8e2af018a4f2d86e10f6b2c047ef436b2",
+      "bytes": 1702966
+    }
+  },
+  "/assets/images/hm-tt-905d637b4435/o-predmete-matematiki-kratka-02.png": {
+    "sha256": "7f789a0c39d1a7610363635a9a8f5646230651907c1b22906555f1ba0c1a7758",
+    "width": 1820,
+    "height": 2195,
+    "bytes": 2439918,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-905d637b4435/o-predmete-matematiki-kratka-02-png-reading-960-b8577e2d1dbf.webp",
+        "width": 960,
+        "height": 1158,
+        "sha256": "b8577e2d1dbfca2a32b0eb542a5926b56a3c10a988ffe5a718af32b01a80c826",
+        "bytes": 337092
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-905d637b4435-o-predmete-matematiki-kratka-02-7f789a0c39d1a7610363635a9a8f5646230651907c1b22906555f1ba0c1a7758.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630543558",
+      "asset_id": 630543558,
+      "release_tag": "article-originals-7",
+      "sha256": "7f789a0c39d1a7610363635a9a8f5646230651907c1b22906555f1ba0c1a7758",
+      "bytes": 2439918
+    }
+  },
+  "/assets/images/hm-tt-905d637b4435/o-predmete-matematiki-kratka-03.png": {
+    "sha256": "bfb9e3bfd1403d4ed05926618691624e1fb4be2a58f947059225d67ee060afae",
+    "width": 805,
+    "height": 1260,
+    "bytes": 2151606,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-905d637b4435/o-predmete-matematiki-kratka-03.png-805.webp",
+        "width": 805,
+        "height": 1260,
+        "sha256": "087b3c0f60bfb14f2025810a1fdbd7dc1b7d85309adfeb4c356505c52db48a86",
+        "bytes": 945242
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-905d637b4435-o-predmete-matematiki-kratka-03-bfb9e3bfd1403d4ed05926618691624e1fb4be2a58f947059225d67ee060afae.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630543723",
+      "asset_id": 630543723,
+      "release_tag": "article-originals-b",
+      "sha256": "bfb9e3bfd1403d4ed05926618691624e1fb4be2a58f947059225d67ee060afae",
+      "bytes": 2151606
+    }
+  }
+}
