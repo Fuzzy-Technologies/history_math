@@ -1,0 +1,36 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-d8a5800e6fb8-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "249be2640310e4b2322fe67d7ba18c1921185de197378692c2d894f9e591a885",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Оставь как есть, мержим.",
+    "source_commit": "6a51a32927847a473f07cd052666f8dc96102123",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/199"
+  },
+  "questions": [
+    {
+      "id": "en-novozhenina-school-photo",
+      "question": "The figure 5 caption dates the school physics lesson to 1971, while the prose gives her school years as 1955–1966 and her university years as 1967–1972. Please verify whether this is a later visit or a caption-date error. All dates are retained.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #199 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 17,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-16",
+      "url": "https://teletype.in/@history_math/Novozhenina-Tatyana-Evgenevna-Syzran-Kazan-Elabuga-11-16"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
