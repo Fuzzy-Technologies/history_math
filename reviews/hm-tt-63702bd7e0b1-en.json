@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-63702bd7e0b1-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "3b1245493373da6f2035dc7b68ede2824d58ea25f5c3a5faf96283079f3c055a",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Оставляем как есть, мержим.",
+    "source_commit": "7f635c74e8cfd574be88d32ccb84c0fdb0021dda",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/145"
+  },
+  "questions": [
+    {
+      "id": "q-egypt-1",
+      "question": "Confirm the source's fifth-millennium BCE date for a 365-day calendar and its statement that Egyptian mathematics changed little after the two papyri were compiled. Both are preserved as source claims.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #145 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    },
+    {
+      "id": "q-egypt-2",
+      "question": "Confirm the Moscow Papyrus's stated decipherment date of 1927 and the attribution to B. A. Turayev and V. V. Struve. The English retains the supplied date and names.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #145 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-07-14",
+      "url": "https://teletype.in/@history_math/Matematika-Drevnego-Egipta-07-14"
+    }
+  }
+}
