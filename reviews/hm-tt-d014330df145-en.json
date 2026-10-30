@@ -1,0 +1,25 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-d014330df145-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "561dcc1124827ac6ea068b4832fb321d38ff4eb30099c3e8dd22fb30eb4d5787",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Мержим.",
+    "source_commit": "96e7b56445f283c29cbbbb4bb80e1407594c9a84",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/158"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 13,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-05-19",
+      "url": "https://teletype.in/@history_math/Vklad-matematiki-i-matematikov-v-Pobedu-Nauchnyj-polk-05-19"
+    }
+  }
+}
