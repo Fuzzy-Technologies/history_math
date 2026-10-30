@@ -1,0 +1,28 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-d3b38a587308",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "198eaa4e7a8a4bb25c20e3f2e1e3c991c93be296b9c8a9b4c560874bea5c082c",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Мержим.",
+    "source_commit": "7708cebe62b27cc6410189e8a4bbf56133537074",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/203"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-13",
+      "url": "https://teletype.in/@history_math/Vybory-po-sisteme-proporcionalnogo-predstavitelstva-11-13"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
