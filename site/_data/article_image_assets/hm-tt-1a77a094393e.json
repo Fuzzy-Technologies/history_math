@@ -1,0 +1,202 @@
+{
+  "/assets/images/hm-tt-1a77a094393e/geometriya-pifagorejcev-teor-01.png": {
+    "sha256": "5bade149838b166b91f5c6a65a1c314ddbbd3a61859dbdcc6e21f4dbf3e377b5",
+    "width": 1800,
+    "height": 3030,
+    "bytes": 11720599,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1a77a094393e/geometriya-pifagorejcev-teor-01-png-reading-960-d53b4526b80d.webp",
+        "width": 960,
+        "height": 1616,
+        "sha256": "d53b4526b80d75d71d66d3237a1fc658d79a146fa1465e32e8fb667ae45d787c",
+        "bytes": 1612782
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-1a77a094393e-geometriya-pifagorejcev-teor-01-5bade149838b166b91f5c6a65a1c314ddbbd3a61859dbdcc6e21f4dbf3e377b5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630501209",
+      "asset_id": 630501209,
+      "release_tag": "article-originals-5",
+      "sha256": "5bade149838b166b91f5c6a65a1c314ddbbd3a61859dbdcc6e21f4dbf3e377b5",
+      "bytes": 11720599
+    }
+  },
+  "/assets/images/hm-tt-1a77a094393e/geometriya-pifagorejcev-teor-02.png": {
+    "sha256": "84f5b92feae9febeee1440a6ea453639a80170ed596989e94097350de4b512f2",
+    "width": 4200,
+    "height": 2654,
+    "bytes": 30207377,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1a77a094393e/geometriya-pifagorejcev-teor-02.png-960.webp",
+        "width": 960,
+        "height": 607,
+        "sha256": "f3f3688f443aaa1ecf0f559d219458bbd64d825e440ec02943c3fbf40a422b55",
+        "bytes": 881604
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-1a77a094393e-geometriya-pifagorejcev-teor-02-84f5b92feae9febeee1440a6ea453639a80170ed596989e94097350de4b512f2.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549306",
+      "asset_id": 630549306,
+      "release_tag": "article-originals-8",
+      "sha256": "84f5b92feae9febeee1440a6ea453639a80170ed596989e94097350de4b512f2",
+      "bytes": 30207377
+    }
+  },
+  "/assets/images/hm-tt-1a77a094393e/geometriya-pifagorejcev-teor-03.png": {
+    "sha256": "e3d0d7f313169d9abceebc15eaca302195da7e0ed27d9c3569a860269b70a922",
+    "width": 2200,
+    "height": 1351,
+    "bytes": 7859986,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1a77a094393e/geometriya-pifagorejcev-teor-03.png-960.webp",
+        "width": 960,
+        "height": 590,
+        "sha256": "18b41e4955abb4f74973e334ac9e9995a81775123f0ed0c9fab6db3d8426487d",
+        "bytes": 912160
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-1a77a094393e-geometriya-pifagorejcev-teor-03-e3d0d7f313169d9abceebc15eaca302195da7e0ed27d9c3569a860269b70a922.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549508",
+      "asset_id": 630549508,
+      "release_tag": "article-originals-e",
+      "sha256": "e3d0d7f313169d9abceebc15eaca302195da7e0ed27d9c3569a860269b70a922",
+      "bytes": 7859986
+    }
+  },
+  "/assets/images/hm-tt-1a77a094393e/geometriya-pifagorejcev-teor-04.png": {
+    "sha256": "17fe458d768c39ccbbdd2c9778111e4918b646fb6d1abdb5f57a100dc35f7b71",
+    "width": 2112,
+    "height": 1300,
+    "bytes": 5970311,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1a77a094393e/geometriya-pifagorejcev-teor-04.png-960.webp",
+        "width": 960,
+        "height": 591,
+        "sha256": "947348bf792d6c27c7745496cf534088c148d8f505c752f2d1a3279eb43abbfb",
+        "bytes": 730122
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-1a77a094393e-geometriya-pifagorejcev-teor-04-17fe458d768c39ccbbdd2c9778111e4918b646fb6d1abdb5f57a100dc35f7b71.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549672",
+      "asset_id": 630549672,
+      "release_tag": "article-originals-1",
+      "sha256": "17fe458d768c39ccbbdd2c9778111e4918b646fb6d1abdb5f57a100dc35f7b71",
+      "bytes": 5970311
+    }
+  },
+  "/assets/images/hm-tt-1a77a094393e/geometriya-pifagorejcev-teor-05.png": {
+    "sha256": "4130447ec1716392f0cfe471762609a325b09a85b0573fd88189d5b5e7766e71",
+    "width": 1063,
+    "height": 472,
+    "bytes": 27638,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1a77a094393e/geometriya-pifagorejcev-teor-05.png-960.webp",
+        "width": 960,
+        "height": 426,
+        "sha256": "2a0e3551d11ba872e7133d589e98d2a5807a37e0615d4dd208e48dc3fa34d8fa",
+        "bytes": 15836
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-1a77a094393e-geometriya-pifagorejcev-teor-05-4130447ec1716392f0cfe471762609a325b09a85b0573fd88189d5b5e7766e71.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549824",
+      "asset_id": 630549824,
+      "release_tag": "article-originals-4",
+      "sha256": "4130447ec1716392f0cfe471762609a325b09a85b0573fd88189d5b5e7766e71",
+      "bytes": 27638
+    }
+  },
+  "/assets/images/hm-tt-1a77a094393e/geometriya-pifagorejcev-teor-06.png": {
+    "sha256": "3eeb06aaeb9866e8d612227c7d56389a33ca1b73e05b1c89a4329bc6a01a5f52",
+    "width": 472,
+    "height": 472,
+    "bytes": 14627,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1a77a094393e/geometriya-pifagorejcev-teor-06.png-472.webp",
+        "width": 472,
+        "height": 472,
+        "sha256": "1569573f4066333ff6397bdabed9bb122b02c789bf8b08b4656c3f25e8f7f937",
+        "bytes": 6178
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-1a77a094393e-geometriya-pifagorejcev-teor-06-3eeb06aaeb9866e8d612227c7d56389a33ca1b73e05b1c89a4329bc6a01a5f52.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549962",
+      "asset_id": 630549962,
+      "release_tag": "article-originals-3",
+      "sha256": "3eeb06aaeb9866e8d612227c7d56389a33ca1b73e05b1c89a4329bc6a01a5f52",
+      "bytes": 14627
+    }
+  },
+  "/assets/images/hm-tt-1a77a094393e/geometriya-pifagorejcev-teor-07.png": {
+    "sha256": "e18d07c4dd57150f8e00860525c5c5c009d0edf5ad1a26ebcdf21655de417757",
+    "width": 950,
+    "height": 1472,
+    "bytes": 3507639,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1a77a094393e/geometriya-pifagorejcev-teor-07-png-reading-950-49a9b9500b6f.webp",
+        "width": 950,
+        "height": 1472,
+        "sha256": "49a9b9500b6faf500137ab943d3415fd32a58043887fed2f022cc305c7495476",
+        "bytes": 1920868
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-1a77a094393e-geometriya-pifagorejcev-teor-07-e18d07c4dd57150f8e00860525c5c5c009d0edf5ad1a26ebcdf21655de417757.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630550098",
+      "asset_id": 630550098,
+      "release_tag": "article-originals-e",
+      "sha256": "e18d07c4dd57150f8e00860525c5c5c009d0edf5ad1a26ebcdf21655de417757",
+      "bytes": 3507639
+    }
+  },
+  "/assets/images/hm-tt-1a77a094393e/geometriya-pifagorejcev-teor-08.png": {
+    "sha256": "5c2b89e24353207f34c6c832bf7477124d0f39d7c4dbca0a3647e5ca8f635e6a",
+    "width": 2181,
+    "height": 1025,
+    "bytes": 1676850,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1a77a094393e/geometriya-pifagorejcev-teor-08-png-reading-960-cdc440d9493b.webp",
+        "width": 960,
+        "height": 451,
+        "sha256": "cdc440d9493ba59708426e6f472965e83871809fe63f2930ba01e8073e02d489",
+        "bytes": 260200
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-1a77a094393e-geometriya-pifagorejcev-teor-08-5c2b89e24353207f34c6c832bf7477124d0f39d7c4dbca0a3647e5ca8f635e6a.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630550238",
+      "asset_id": 630550238,
+      "release_tag": "article-originals-5",
+      "sha256": "5c2b89e24353207f34c6c832bf7477124d0f39d7c4dbca0a3647e5ca8f635e6a",
+      "bytes": 1676850
+    }
+  }
+}
