@@ -1,0 +1,277 @@
+{
+  "/assets/images/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-01.png": {
+    "sha256": "61faef0cb9561d8ba7097d0bc97597ce560c74a2057f1d0960811185192d8106",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2198466,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "2f88eb984514bf8288cb61412408707aafe861911167b782fa460def9308dabc",
+        "bytes": 882460
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-566fdd46b3b8-geometricheskoe-mesto-tochek-01-61faef0cb9561d8ba7097d0bc97597ce560c74a2057f1d0960811185192d8106.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630496884",
+      "asset_id": 630496884,
+      "release_tag": "article-originals-6",
+      "sha256": "61faef0cb9561d8ba7097d0bc97597ce560c74a2057f1d0960811185192d8106",
+      "bytes": 2198466
+    }
+  },
+  "/assets/images/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-02.png": {
+    "sha256": "2c8872b4bc315628ac79b93f7c8fa4cec84bcd0933ade7ea7cd0fb936eb5eb73",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 1132924,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-02.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "87a88f2197b287db4000d4a8eb1f50b232eb334da072986543ca8d4cf441332e",
+        "bytes": 662150
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-566fdd46b3b8-geometricheskoe-mesto-tochek-02-2c8872b4bc315628ac79b93f7c8fa4cec84bcd0933ade7ea7cd0fb936eb5eb73.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630547382",
+      "asset_id": 630547382,
+      "release_tag": "article-originals-2",
+      "sha256": "2c8872b4bc315628ac79b93f7c8fa4cec84bcd0933ade7ea7cd0fb936eb5eb73",
+      "bytes": 1132924
+    }
+  },
+  "/assets/images/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-03.png": {
+    "sha256": "62093cdcde631491a69c262ae696486898568a03c129f10b580908127ef36474",
+    "width": 188,
+    "height": 181,
+    "bytes": 4606,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-03.png-188.webp",
+        "width": 188,
+        "height": 181,
+        "sha256": "5e51b82984afd86c7d158f53db5fdeec350545a1950996ab0a4b47ffd64e9ca5",
+        "bytes": 2872
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-566fdd46b3b8-geometricheskoe-mesto-tochek-03-62093cdcde631491a69c262ae696486898568a03c129f10b580908127ef36474.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630547557",
+      "asset_id": 630547557,
+      "release_tag": "article-originals-6",
+      "sha256": "62093cdcde631491a69c262ae696486898568a03c129f10b580908127ef36474",
+      "bytes": 4606
+    }
+  },
+  "/assets/images/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-04.png": {
+    "sha256": "6d9356288465cbf73fc0e96c3df24b2962571f976aebff252d636326cc4f53bc",
+    "width": 190,
+    "height": 188,
+    "bytes": 2546,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-04.png-190.webp",
+        "width": 190,
+        "height": 188,
+        "sha256": "52a743fbc9158708ac14df4e1e6bd7bf6b2deed495ebfdb1814bdb0cc1396bfb",
+        "bytes": 1530
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-566fdd46b3b8-geometricheskoe-mesto-tochek-04-6d9356288465cbf73fc0e96c3df24b2962571f976aebff252d636326cc4f53bc.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630547780",
+      "asset_id": 630547780,
+      "release_tag": "article-originals-6",
+      "sha256": "6d9356288465cbf73fc0e96c3df24b2962571f976aebff252d636326cc4f53bc",
+      "bytes": 2546
+    }
+  },
+  "/assets/images/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-05.png": {
+    "sha256": "96907d3dbd1ab4773f072ddb14d593c1469055d44274f4e98ca488d547eb97a3",
+    "width": 97,
+    "height": 90,
+    "bytes": 2859,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-05.png-97.webp",
+        "width": 97,
+        "height": 90,
+        "sha256": "3fe7721a92cfeb5932be7ca7b818d029933f32bc5e8898323ed69d65f12907a3",
+        "bytes": 2142
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-566fdd46b3b8-geometricheskoe-mesto-tochek-05-96907d3dbd1ab4773f072ddb14d593c1469055d44274f4e98ca488d547eb97a3.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630547932",
+      "asset_id": 630547932,
+      "release_tag": "article-originals-9",
+      "sha256": "96907d3dbd1ab4773f072ddb14d593c1469055d44274f4e98ca488d547eb97a3",
+      "bytes": 2859
+    }
+  },
+  "/assets/images/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-06.png": {
+    "sha256": "622c587d574e328c40e543b42d377a6412a33653510da74d5621361ccf74c5c0",
+    "width": 187,
+    "height": 174,
+    "bytes": 6848,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-06.png-187.webp",
+        "width": 187,
+        "height": 174,
+        "sha256": "1b68e17cd0ebf2d6b059b3bc1378d2dfb785a559bac999956442dbfafab6d61b",
+        "bytes": 4940
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-566fdd46b3b8-geometricheskoe-mesto-tochek-06-622c587d574e328c40e543b42d377a6412a33653510da74d5621361ccf74c5c0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548100",
+      "asset_id": 630548100,
+      "release_tag": "article-originals-6",
+      "sha256": "622c587d574e328c40e543b42d377a6412a33653510da74d5621361ccf74c5c0",
+      "bytes": 6848
+    }
+  },
+  "/assets/images/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-07.png": {
+    "sha256": "6835195899cb7d4e4342064a4ca51b74567a9c13080f690bc39c175270ce94e4",
+    "width": 193,
+    "height": 152,
+    "bytes": 1497,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-07.png-193.webp",
+        "width": 193,
+        "height": 152,
+        "sha256": "ff68769fda7a22cbc929217d57d3dcbddf8135a9785fa2b27c5d835cb3f4b3fe",
+        "bytes": 906
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-566fdd46b3b8-geometricheskoe-mesto-tochek-07-6835195899cb7d4e4342064a4ca51b74567a9c13080f690bc39c175270ce94e4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548263",
+      "asset_id": 630548263,
+      "release_tag": "article-originals-6",
+      "sha256": "6835195899cb7d4e4342064a4ca51b74567a9c13080f690bc39c175270ce94e4",
+      "bytes": 1497
+    }
+  },
+  "/assets/images/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-08.png": {
+    "sha256": "4e1189157d0e88c96f205d6d0c62fc96f2df49ec453cc05b9e465aaaf02ceb2e",
+    "width": 187,
+    "height": 259,
+    "bytes": 7972,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-08.png-187.webp",
+        "width": 187,
+        "height": 259,
+        "sha256": "255cd721fe52dee064a4e3c9ce8aea4348db2cab315ae16725a59df3e39f097a",
+        "bytes": 5016
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-566fdd46b3b8-geometricheskoe-mesto-tochek-08-4e1189157d0e88c96f205d6d0c62fc96f2df49ec453cc05b9e465aaaf02ceb2e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548425",
+      "asset_id": 630548425,
+      "release_tag": "article-originals-4",
+      "sha256": "4e1189157d0e88c96f205d6d0c62fc96f2df49ec453cc05b9e465aaaf02ceb2e",
+      "bytes": 7972
+    }
+  },
+  "/assets/images/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-09.gif": {
+    "sha256": "76dccf2a4eabd4656ee03251380013f501c42da8504a4051fc88cbc1f82b870c",
+    "width": 588,
+    "height": 580,
+    "bytes": 332840,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-09.gif-588.webp",
+        "width": 588,
+        "height": 580,
+        "sha256": "6e4577c9a82b41118bb77877730055792cbdbb9e7b33307d4f619bce8e4cc272",
+        "bytes": 73888
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-566fdd46b3b8-geometricheskoe-mesto-tochek-09-76dccf2a4eabd4656ee03251380013f501c42da8504a4051fc88cbc1f82b870c.gif",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548549",
+      "asset_id": 630548549,
+      "release_tag": "article-originals-7",
+      "sha256": "76dccf2a4eabd4656ee03251380013f501c42da8504a4051fc88cbc1f82b870c",
+      "bytes": 332840
+    }
+  },
+  "/assets/images/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-10.gif": {
+    "sha256": "bf6b5cff611cb8721b91810c3f084160527c0687686a7d667baed61e9468e8c1",
+    "width": 540,
+    "height": 460,
+    "bytes": 385828,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-10.gif-540.webp",
+        "width": 540,
+        "height": 460,
+        "sha256": "c4cf7788ebcf0769ad801587024c2f0196b2b6e84e718a1393aab51ef2492b01",
+        "bytes": 142702
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-566fdd46b3b8-geometricheskoe-mesto-tochek-10-bf6b5cff611cb8721b91810c3f084160527c0687686a7d667baed61e9468e8c1.gif",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548689",
+      "asset_id": 630548689,
+      "release_tag": "article-originals-b",
+      "sha256": "bf6b5cff611cb8721b91810c3f084160527c0687686a7d667baed61e9468e8c1",
+      "bytes": 385828
+    }
+  },
+  "/assets/images/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-11.gif": {
+    "sha256": "f3d77746ab891215808948c9e1726055ff0175bd0fb73b54e475c512077050bd",
+    "width": 600,
+    "height": 400,
+    "bytes": 456384,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-566fdd46b3b8/geometricheskoe-mesto-tochek-11.gif-600.webp",
+        "width": 600,
+        "height": 400,
+        "sha256": "df98226152bc821c7c6c7c49cd4c82b0597c0e4cfa28ed8b27401d32aeab47b5",
+        "bytes": 212982
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-566fdd46b3b8-geometricheskoe-mesto-tochek-11-f3d77746ab891215808948c9e1726055ff0175bd0fb73b54e475c512077050bd.gif",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548832",
+      "asset_id": 630548832,
+      "release_tag": "article-originals-f",
+      "sha256": "f3d77746ab891215808948c9e1726055ff0175bd0fb73b54e475c512077050bd",
+      "bytes": 456384
+    }
+  }
+}
