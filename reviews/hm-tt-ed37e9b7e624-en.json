@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-ed37e9b7e624-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "c95f44101199b03edff182e12eb2ac5ae0cf7ef7d986fc81cc27154874ea2f6b",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Оставляем как есть, мержим.",
+    "source_commit": "3fcd8e6c63e327a77890c1304ecfad57fa106274",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/146"
+  },
+  "questions": [
+    {
+      "id": "q-migration-1",
+      "question": "The Russian instruction says ‘прибор изменяется дважды’. Confirm that this means placing the instrument in two different positions to draw two centre lines, as expressed in the English adaptation. The Russian source wording is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #146 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-07-03",
+      "url": "https://teletype.in/@history_math/Diametromer-centroiskatel-07-03"
+    }
+  }
+}
