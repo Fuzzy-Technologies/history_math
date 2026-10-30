@@ -1,0 +1,42 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-f11d5b6e86c8-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "a36dcd98302eb9b3a50a7bf22723f5cd9c205a52348f9225c9add4855a83b6ea",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Оставляем как есть, мержим.",
+    "source_commit": "4712f02938605d3a5c54976d1b5d890b5976aaeb",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/123"
+  },
+  "questions": [
+    {
+      "id": "jealous-husbands-condition",
+      "question": "The source clarification refers to other husbands being accompanied by their wives, while the usual puzzle requires a wife to be accompanied by her own husband whenever another husband is present. Which restriction should govern this article and its 11-trip diagram? The source wording has been preserved.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #123 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-12-01",
+      "url": "https://teletype.in/@history_math/crossing"
+    }
+  },
+  "external_editorial_reviews": [
+    {
+      "url": "https://github.com/Fuzzy-Technologies/history_math/pull/123#pullrequestreview-5618259866",
+      "review_id": 5618259866,
+      "source_commit": "4712f02938605d3a5c54976d1b5d890b5976aaeb",
+      "disposition": "accepted_unchanged",
+      "resolution": "Tim55667757 approved publication of PR #123 in the 2026-10-30 owner chat instruction. The previously flagged source material is retained unchanged."
+    }
+  ]
+}

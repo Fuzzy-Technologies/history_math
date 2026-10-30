@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-f11d5b6e86c8/crossing-01.jpeg": {
+    "sha256": "7287efad388031efbeb667e8fb6248c2917ea6fbb974e0993037dbedc8ff105f",
+    "width": 1000,
+    "height": 648,
+    "bytes": 173288,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f11d5b6e86c8/crossing-01.jpeg-960.webp",
+        "width": 960,
+        "height": 622,
+        "sha256": "39e6e8b40b2b5ccf7517ae8f86a792067434104e67c01c291cb1e0c71bf44035",
+        "bytes": 759590
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-f11d5b6e86c8-crossing-01-7287efad388031efbeb667e8fb6248c2917ea6fbb974e0993037dbedc8ff105f.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630495289",
+      "asset_id": 630495289,
+      "release_tag": "article-originals-7",
+      "sha256": "7287efad388031efbeb667e8fb6248c2917ea6fbb974e0993037dbedc8ff105f",
+      "bytes": 173288
+    }
+  },
+  "/assets/images/hm-tt-f11d5b6e86c8/crossing-02.jpeg": {
+    "sha256": "dd831ac4213c2df5fec361ff97fe70aef8c31db68f27a51fbe2f16961dad617e",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 266135,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f11d5b6e86c8/crossing-02.jpeg-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "cf7f019a2736a1f47d940c124bd1a5fd760f8e7715439145ca1580c4656330dc",
+        "bytes": 858124
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-f11d5b6e86c8-crossing-02-dd831ac4213c2df5fec361ff97fe70aef8c31db68f27a51fbe2f16961dad617e.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630543276",
+      "asset_id": 630543276,
+      "release_tag": "article-originals-d",
+      "sha256": "dd831ac4213c2df5fec361ff97fe70aef8c31db68f27a51fbe2f16961dad617e",
+      "bytes": 266135
+    }
+  },
+  "/assets/images/hm-tt-f11d5b6e86c8/crossing-03.png": {
+    "sha256": "59a3e70c7573fb5408e91891159bd1a52e72f298df35a96354ac9f35184b4ea8",
+    "width": 406,
+    "height": 431,
+    "bytes": 22463,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f11d5b6e86c8/crossing-03.png-406.webp",
+        "width": 406,
+        "height": 431,
+        "sha256": "35f51766178ab35ce346d3ab670897f52b5a08872b27b9e9338d18bdc3459d29",
+        "bytes": 7536
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-f11d5b6e86c8-crossing-03-59a3e70c7573fb5408e91891159bd1a52e72f298df35a96354ac9f35184b4ea8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630543427",
+      "asset_id": 630543427,
+      "release_tag": "article-originals-5",
+      "sha256": "59a3e70c7573fb5408e91891159bd1a52e72f298df35a96354ac9f35184b4ea8",
+      "bytes": 22463
+    }
+  }
+}
