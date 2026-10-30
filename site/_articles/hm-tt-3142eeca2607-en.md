@@ -1,0 +1,109 @@
+---
+schema_version: 1
+article_id: hm-tt-3142eeca2607-en
+source_work_id: tt-3142eeca2607
+layout: article
+title: The French Curve
+authors:
+- Mansur Gilmullin
+author: Mansur Gilmullin
+lang: en
+translation_key: hm-tt-3142eeca2607
+description: A French curve is a shaped drawing template used to construct and check curves in drafting and design.
+type: essay
+tags:
+- Instruments
+- French curve
+math: true
+status: published
+date: '2024-02-11'
+permalink: /articles/hm-tt-3142eeca2607/
+rights_basis: Owner-requested migration of the author's complete Teletype publication on 2026-10-11; editorial publication
+  approval granted by the owner on 2026-10-30; no new license asserted.
+original_publication:
+  outlet: Teletype
+  date: '2024-02-11'
+  url: https://teletype.in/@history_math/Lekalo-02-11
+source_url: https://teletype.in/@history_math/Lekalo-02-11
+figures:
+- id: fig-1
+  path: /assets/images/hm-tt-3142eeca2607/lekalo-02-11-01.png
+  alt: French curves made in the USSR
+  caption: French curves made in the USSR
+  source: Illustration archive of the original Teletype article.
+  credit: ''
+  rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original attribution
+    retained; no new license asserted.
+  source_url: https://img2.teletype.in/files/13/d2/13d24c21-648e-4f41-94c0-b613c09424c3.png
+- id: fig-2
+  path: /assets/images/hm-tt-3142eeca2607/lekalo-02-11-02.png
+  alt: Stencils for mathematical function graphs and circles of various diameters, made by Koh-i-Noor Hardtmuth, Czechia,
+    and a Soviet-style officer's ruler with stencils for various shapes
+  caption: Stencils for mathematical function graphs and circles of various diameters, made by Koh-i-Noor Hardtmuth, Czechia,
+    and a Soviet-style officer's ruler with stencils for various shapes
+  source: Illustration archive of the original Teletype article.
+  credit: ''
+  rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original attribution
+    retained; no new license asserted.
+  source_url: https://img3.teletype.in/files/a5/20/a520dcce-ee4f-4c9e-b20f-91ab58fdaac1.png
+- id: fig-3
+  path: /assets/images/hm-tt-3142eeca2607/lekalo-02-11-03.png
+  alt: An example of a template for cutting an armhole
+  caption: An example of a template for cutting an armhole
+  source: Illustration archive of the original Teletype article.
+  credit: ''
+  rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original attribution
+    retained; no new license asserted.
+  source_url: https://img2.teletype.in/files/5b/61/5b615b47-01f6-4348-b2b2-f1bfcab8d78a.png
+- id: fig-4
+  path: /assets/images/hm-tt-3142eeca2607/lekalo-02-11-04.png
+  alt: Pafnuty Lvovich Chebyshev (1821–1894), Russian mathematician and professor at St Petersburg University
+  caption: 'Pafnuty Lvovich Chebyshev (1821–1894), eminent Russian mathematician, professor of algebra, number theory and
+    probability theory at St Petersburg University, and member of many academies of sciences. Photograph from the late 1880s
+    or early 1890s. Source: History of the USSR Academy of Sciences. Moscow–Leningrad: Nauka, 1964, vol. 2, pp. 296–297'
+  source: Illustration archive of the original Teletype article.
+  credit: ''
+  rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original attribution
+    retained; no new license asserted.
+  source_url: https://img1.teletype.in/files/05/af/05afcc6a-c102-4c52-9be9-eb7d61b0da4e.png
+- id: fig-5
+  path: /assets/images/hm-tt-3142eeca2607/lekalo-02-11-05.png
+  alt: Diagram of a fabric Chebyshev net on a plane and on the surface of a sphere
+  caption: Diagram of a fabric Chebyshev net on a plane and on the surface of a sphere
+  source: Illustration archive of the original Teletype article.
+  credit: ''
+  rights_basis: Original image bytes from the owner-supplied Teletype archive, migrated at the owner request; original attribution
+    retained; no new license asserted.
+  source_url: https://img3.teletype.in/files/ab/8e/ab8ee391-e6cf-4e1f-a979-23a4d560acd0.png
+preview_image: /assets/images/hm-tt-3142eeca2607/lekalo-02-11-01.png
+cover_image: /assets/images/hm-tt-3142eeca2607/lekalo-02-11-01.png
+---
+{% include article-figure.html id="fig-1" %}
+
+A French curve is a shaped drawing tool — a template, model or stencil — for constructing and checking curves in drafting and design. Curve templates may have fixed or adjustable curvature.
+
+They are used when a curve cannot be drawn with a compass and ruler. They allow sections of ellipses, parabolas, hyperbolas and various spirals to be drawn with reasonable accuracy.
+
+Students initially plot graphs point by point. This takes considerable time and effort. When redrawing them on a classroom board or in an exercise book, special templates are recommended. You can make these yourself from plywood or stiff cardboard; they are also sold ready-made.
+
+{% include article-figure.html id="fig-2" %}
+
+To draw a curve of arbitrary shape with a French curve, first plot points whose coordinates are known. Then choose a template, or part of one, that fits the points as closely as possible and trace along it.
+
+A profile gauge is a measuring template used to check the curved contours of components. The check usually involves assessing the width of the gap between the template and the component, or inserting a feeler gauge into that gap.
+
+Templates are still used for artistic work and for working by hand with fabric, leather and wood. Dressmaking patterns, for example, are component shapes made from heavy paper or cardboard, ready to use, with precise dimensional instructions suitable for mass production of clothing.
+
+{% include article-figure.html id="fig-3" %}
+
+## A historical fact {#section-1}
+
+{% include article-figure.html id="fig-4" %}
+
+In Paris in 1878, the celebrated Russian mathematician Pafnuty Lvovich Chebyshev gave a lecture entitled “On Cutting Clothes.” To solve this problem, he devised a new class of mathematical objects: Chebyshev nets. Such a net makes it possible to construct curves along which fabric can be cut into flat pieces that, when sewn together, form elegant and comfortable fitted clothing. Many famous fashion designers attended. Chebyshev began with a phrase that went down in history: *“For simplicity, ladies and gentlemen, let us assume that the human body is a sphere!”*
+
+{% include article-figure.html id="fig-5" %}
+
+## Further reading {#section-2}
+
+1. Prochukhayev, V. G. *Types of Practical Work in Mathematics Lessons*. Moscow: Uchpedgiz, 1955. 96 pp. [In Russian.]
