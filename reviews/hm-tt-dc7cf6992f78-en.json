@@ -1,0 +1,25 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-dc7cf6992f78-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "bcc1048d8a03fda14e9641038c7add910d4dfbe621abd07c20cc47d3a5249eff",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Мержим.",
+    "source_commit": "81e5bc4b9f07bf4e6c86655aff24afe9fb68b8a1",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/209"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 10,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-10-23",
+      "url": "https://teletype.in/@history_math/Doktor-filosofii-soldat-Sovetskoj-Armii-uchitel-uchitelej-ehto-vsyo-ob-Alfrede-Maksoviche-Lyustige-10-23"
+    }
+  }
+}
