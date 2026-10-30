@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-bee6ffe4c0d3-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "e604270a5af3474992756e67cef3a584fc27e64d7f1f3bc2686df296e471794e",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Оставляем как есть, мержим.",
+    "source_commit": "c26a5e5193d72bf92490b1b93d27621beed95040",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/140"
+  },
+  "questions": [
+    {
+      "id": "first-planar-linkage",
+      "question": "The source calls the Peaucellier–Lipkin device the first planar hinged mechanism. Should this be qualified as the first exact straight-line linkage, rather than the first planar linkage of any kind? The original claim is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #140 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-08-31",
+      "url": "https://teletype.in/@history_math/Inversor-08-31"
+    }
+  }
+}
