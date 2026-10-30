@@ -1,0 +1,28 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-1f2d48d10c1e",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "fa40ba2a14a5530cb53eb41ecc5d4e5c521af6de536a79820c4700d9aef1890e",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Оставь как есть, смержи.",
+    "source_commit": "e8895feb68aa1f940a1b5de872aa88708467f7f4",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/229"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 11,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-13",
+      "url": "https://teletype.in/@history_math/Pantograf-09-13"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
