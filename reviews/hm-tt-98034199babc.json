@@ -1,0 +1,28 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-98034199babc",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "8d91430db81a0ed81e28fbd9a05bbc293d98768f1037cbfb4f82ebbfa011ff00",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Оставь как есть, там всё правильно, мержи.",
+    "source_commit": "73b2a9fe315dfc2b82e16c1be43f00a610bac773",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/233"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-06",
+      "url": "https://teletype.in/@history_math/Rol-zhenshchin-v-matematike-09-06"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
