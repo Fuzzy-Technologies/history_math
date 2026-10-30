@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-2c9cf4ab7419/altari-na-putyah-nauki-peter-01.png": {
+    "sha256": "254419a1c83fd0c2c2709504e615d02ea36c87375d26f9b86e6c22dedc35065f",
+    "width": 1820,
+    "height": 2529,
+    "bytes": 4669613,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2c9cf4ab7419/altari-na-putyah-nauki-peter-01.png-960.webp",
+        "width": 960,
+        "height": 1334,
+        "sha256": "8313721053f30c6af6dada2b72f30e7aec8753da8fdc77803461560b125a59d3",
+        "bytes": 693540
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-2c9cf4ab7419-altari-na-putyah-nauki-peter-01-254419a1c83fd0c2c2709504e615d02ea36c87375d26f9b86e6c22dedc35065f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630500373",
+      "asset_id": 630500373,
+      "release_tag": "article-originals-2",
+      "sha256": "254419a1c83fd0c2c2709504e615d02ea36c87375d26f9b86e6c22dedc35065f",
+      "bytes": 4669613
+    }
+  },
+  "/assets/images/hm-tt-2c9cf4ab7419/altari-na-putyah-nauki-peter-02.png": {
+    "sha256": "49951d5a07129762eddd3d5f14203aeaf1b347bb08b6254f09360674f63b5ad5",
+    "width": 1268,
+    "height": 1700,
+    "bytes": 2980121,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2c9cf4ab7419/altari-na-putyah-nauki-peter-02.png-960.webp",
+        "width": 960,
+        "height": 1287,
+        "sha256": "97a4e2da812b6721e7fdbce3be0f4f2173304198b109aa2191602ff49af97bea",
+        "bytes": 873914
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-2c9cf4ab7419-altari-na-putyah-nauki-peter-02-49951d5a07129762eddd3d5f14203aeaf1b347bb08b6254f09360674f63b5ad5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630569447",
+      "asset_id": 630569447,
+      "release_tag": "article-originals-4",
+      "sha256": "49951d5a07129762eddd3d5f14203aeaf1b347bb08b6254f09360674f63b5ad5",
+      "bytes": 2980121
+    }
+  },
+  "/assets/images/hm-tt-2c9cf4ab7419/altari-na-putyah-nauki-peter-03.png": {
+    "sha256": "d786796da552e80466aaa5d44ffd13b4cee20225512ffdd39f43b023ad245af9",
+    "width": 2316,
+    "height": 3360,
+    "bytes": 6399586,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2c9cf4ab7419/altari-na-putyah-nauki-peter-03.png-960.webp",
+        "width": 960,
+        "height": 1393,
+        "sha256": "d744c6f841e2e122550a97b6a3c17d862d058d97b7a2fde247837986c3640a79",
+        "bytes": 703692
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-2c9cf4ab7419-altari-na-putyah-nauki-peter-03-d786796da552e80466aaa5d44ffd13b4cee20225512ffdd39f43b023ad245af9.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630569643",
+      "asset_id": 630569643,
+      "release_tag": "article-originals-d",
+      "sha256": "d786796da552e80466aaa5d44ffd13b4cee20225512ffdd39f43b023ad245af9",
+      "bytes": 6399586
+    }
+  },
+  "/assets/images/hm-tt-2c9cf4ab7419/altari-na-putyah-nauki-peter-04.png": {
+    "sha256": "99ecc072725ea5f497fd772172e5cc74e3eff19b92142c4c33c09a2ba6e089a5",
+    "width": 952,
+    "height": 741,
+    "bytes": 1701320,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2c9cf4ab7419/altari-na-putyah-nauki-peter-04.png-952.webp",
+        "width": 952,
+        "height": 741,
+        "sha256": "fb151a2d3f0b12c30f05b63fc4dab02a7da85cd6e5f29c99ea18365fac7ad60b",
+        "bytes": 860178
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-2c9cf4ab7419-altari-na-putyah-nauki-peter-04-99ecc072725ea5f497fd772172e5cc74e3eff19b92142c4c33c09a2ba6e089a5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630569884",
+      "asset_id": 630569884,
+      "release_tag": "article-originals-9",
+      "sha256": "99ecc072725ea5f497fd772172e5cc74e3eff19b92142c4c33c09a2ba6e089a5",
+      "bytes": 1701320
+    }
+  },
+  "/assets/images/hm-tt-2c9cf4ab7419/altari-na-putyah-nauki-peter-05.png": {
+    "sha256": "b5c3cea78349fc96b7b3e74b3ef61b935c8265393e30529b9c58bf851bc6f1c3",
+    "width": 2900,
+    "height": 1900,
+    "bytes": 11448234,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2c9cf4ab7419/altari-na-putyah-nauki-peter-05.png-960.webp",
+        "width": 960,
+        "height": 629,
+        "sha256": "f5269bc31fc8f3e219746f455244e266c93e3751045e49ef5e4bc57a5aee72f5",
+        "bytes": 696724
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-2c9cf4ab7419-altari-na-putyah-nauki-peter-05-b5c3cea78349fc96b7b3e74b3ef61b935c8265393e30529b9c58bf851bc6f1c3.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630570128",
+      "asset_id": 630570128,
+      "release_tag": "article-originals-b",
+      "sha256": "b5c3cea78349fc96b7b3e74b3ef61b935c8265393e30529b9c58bf851bc6f1c3",
+      "bytes": 11448234
+    }
+  },
+  "/assets/images/hm-tt-2c9cf4ab7419/altari-na-putyah-nauki-peter-06.png": {
+    "sha256": "f707f35716ca78ff624edf23f6570f0f3f72cfa6cf9cc0f5bf378aa0c5a16fe8",
+    "width": 1700,
+    "height": 2600,
+    "bytes": 11349139,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-2c9cf4ab7419/altari-na-putyah-nauki-peter-06.png-960.webp",
+        "width": 960,
+        "height": 1468,
+        "sha256": "8368b614231a54b3d2b5c82164a889a2cd2061052f2481a2e4813042a2ea9158",
+        "bytes": 2120420
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-2c9cf4ab7419-altari-na-putyah-nauki-peter-06-f707f35716ca78ff624edf23f6570f0f3f72cfa6cf9cc0f5bf378aa0c5a16fe8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630570330",
+      "asset_id": 630570330,
+      "release_tag": "article-originals-f",
+      "sha256": "f707f35716ca78ff624edf23f6570f0f3f72cfa6cf9cc0f5bf378aa0c5a16fe8",
+      "bytes": 11349139
+    }
+  }
+}
