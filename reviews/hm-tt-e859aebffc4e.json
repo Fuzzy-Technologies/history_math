@@ -1,0 +1,37 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-e859aebffc4e",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "f5b48f84150536d20f2d497cc3e6c5a2d8aaf45a61fe5de27b54e0ce9cbd3595",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Ничего не меняем, мержим.",
+    "source_commit": "f5cbcc94c417eccb7a11e9204c063f6a6159e1f4",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/133"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-10-13",
+      "url": "https://teletype.in/@history_math/greek-cross"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "external_editorial_reviews": [
+    {
+      "url": "https://github.com/Fuzzy-Technologies/history_math/pull/133#pullrequestreview-5618261049",
+      "review_id": 5618261049,
+      "source_commit": "f5cbcc94c417eccb7a11e9204c063f6a6159e1f4",
+      "disposition": "accepted_unchanged",
+      "resolution": "Tim55667757 approved publication of PR #133 in the 2026-10-30 owner chat instruction. The previously flagged source material is retained unchanged."
+    }
+  ]
+}

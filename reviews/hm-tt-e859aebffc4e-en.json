@@ -1,0 +1,52 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-e859aebffc4e-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "36eddcdb27eae0104fb55a663ebad76f49c6227389126d634095532e0a4eff83",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Ничего не меняем, мержим.",
+    "source_commit": "f5cbcc94c417eccb7a11e9204c063f6a6159e1f4",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/133"
+  },
+  "questions": [
+    {
+      "id": "parallel-cut-range",
+      "question": "The source says any two cuts parallel to those in version 1 produce four pieces that form a square. Should the permitted positions of the cuts be specified? The universal wording is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #133 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    },
+    {
+      "id": "christian-cross-date",
+      "question": "Should the statement that the Greek cross was introduced into Christianity around 332 be documented or qualified? The source date and claim are retained.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #133 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-10-13",
+      "url": "https://teletype.in/@history_math/greek-cross"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ],
+  "external_editorial_reviews": [
+    {
+      "url": "https://github.com/Fuzzy-Technologies/history_math/pull/133#pullrequestreview-5618261049",
+      "review_id": 5618261049,
+      "source_commit": "f5cbcc94c417eccb7a11e9204c063f6a6159e1f4",
+      "disposition": "accepted_unchanged",
+      "resolution": "Tim55667757 approved publication of PR #133 in the 2026-10-30 owner chat instruction. The previously flagged source material is retained unchanged."
+    }
+  ]
+}
