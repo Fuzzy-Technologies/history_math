@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-e5a4fc92063a-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "cc06d96dafb514a6bbeae856c187d596a186bda15118c96cbdacbbb059ee6544",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Ничего там исправлять не надо, мержим.",
+    "source_commit": "b0ecd5be71f8a2bb576526f06c7b7de16cedbecd",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/153"
+  },
+  "questions": [
+    {
+      "id": "ford-recruitment-legend",
+      "question": "Can a historical source be supplied for the recruitment legend, its time limits and the claimed newspaper publication? The article explicitly retains it as a legend.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #153 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    },
+    {
+      "id": "cryptarithm-carries",
+      "question": "Should the solution explain the carry constraints in steps 2 and 3? In particular, O + E = O alone does not immediately exclude E = 0 without referring to T = 0. The source reasoning is retained.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #153 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 9,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-06-09",
+      "url": "https://teletype.in/@history_math/Zadacha-Forda-kadrovyj-rebus-06-09"
+    }
+  }
+}
