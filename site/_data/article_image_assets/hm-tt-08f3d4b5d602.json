@@ -1,0 +1,202 @@
+{
+  "/assets/images/hm-tt-08f3d4b5d602/v-surovye-gody-voennye-09-04-01.png": {
+    "sha256": "b84315d7f3598cd8673e0f5b0c09f10db367ccbde57734fb51a5c410ba0a2e02",
+    "width": 2272,
+    "height": 1704,
+    "bytes": 7966101,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-08f3d4b5d602/v-surovye-gody-voennye-09-04-01-png-reading-960-91fc545b0230.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "91fc545b0230d1d0795d8867890d7a9e3e960a2ccf7dbd1a2931c34f24223228",
+        "bytes": 877426
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-08f3d4b5d602-v-surovye-gody-voennye-09-04-01-b84315d7f3598cd8673e0f5b0c09f10db367ccbde57734fb51a5c410ba0a2e02.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630556763",
+      "asset_id": 630556763,
+      "release_tag": "article-originals-b",
+      "sha256": "b84315d7f3598cd8673e0f5b0c09f10db367ccbde57734fb51a5c410ba0a2e02",
+      "bytes": 7966101
+    }
+  },
+  "/assets/images/hm-tt-08f3d4b5d602/v-surovye-gody-voennye-09-04-02.png": {
+    "sha256": "764224c563e2da6650f3cd4f1c910120b21bf02f741760675732c104dfb2a253",
+    "width": 771,
+    "height": 1226,
+    "bytes": 874056,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-08f3d4b5d602/v-surovye-gody-voennye-09-04-02-png-reading-771-7ff3cdbe7bf4.webp",
+        "width": 771,
+        "height": 1226,
+        "sha256": "7ff3cdbe7bf4e19afc3dcd041347d6fbca8a6096a34ef0d7b77c7aad686839c1",
+        "bytes": 427138
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-08f3d4b5d602-v-surovye-gody-voennye-09-04-02-764224c563e2da6650f3cd4f1c910120b21bf02f741760675732c104dfb2a253.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630556941",
+      "asset_id": 630556941,
+      "release_tag": "article-originals-7",
+      "sha256": "764224c563e2da6650f3cd4f1c910120b21bf02f741760675732c104dfb2a253",
+      "bytes": 874056
+    }
+  },
+  "/assets/images/hm-tt-08f3d4b5d602/v-surovye-gody-voennye-09-04-03.png": {
+    "sha256": "278ed47016a6b866e4e52aa5923622ae6294be406408a47667d27c169a3e1ca0",
+    "width": 1048,
+    "height": 1527,
+    "bytes": 1605795,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-08f3d4b5d602/v-surovye-gody-voennye-09-04-03-png-reading-960-e21e927e695b.webp",
+        "width": 960,
+        "height": 1399,
+        "sha256": "e21e927e695bece687c3f9f27afa43b98312f67df122b4ee84082f3b0910fade",
+        "bytes": 696196
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-08f3d4b5d602-v-surovye-gody-voennye-09-04-03-278ed47016a6b866e4e52aa5923622ae6294be406408a47667d27c169a3e1ca0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557158",
+      "asset_id": 630557158,
+      "release_tag": "article-originals-2",
+      "sha256": "278ed47016a6b866e4e52aa5923622ae6294be406408a47667d27c169a3e1ca0",
+      "bytes": 1605795
+    }
+  },
+  "/assets/images/hm-tt-08f3d4b5d602/v-surovye-gody-voennye-09-04-04.png": {
+    "sha256": "cb8f5363284e5e386ef1fef02ff3ba905351088a069f99e4fef9c30e0ded7b69",
+    "width": 2482,
+    "height": 1830,
+    "bytes": 10022006,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-08f3d4b5d602/v-surovye-gody-voennye-09-04-04-png-reading-960-861eab88852a.webp",
+        "width": 960,
+        "height": 708,
+        "sha256": "861eab88852a90c6e0787b2499f48cfbd9cac8f015d63e114ab5ce10ef32ed62",
+        "bytes": 877772
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-08f3d4b5d602-v-surovye-gody-voennye-09-04-04-cb8f5363284e5e386ef1fef02ff3ba905351088a069f99e4fef9c30e0ded7b69.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557286",
+      "asset_id": 630557286,
+      "release_tag": "article-originals-c",
+      "sha256": "cb8f5363284e5e386ef1fef02ff3ba905351088a069f99e4fef9c30e0ded7b69",
+      "bytes": 10022006
+    }
+  },
+  "/assets/images/hm-tt-08f3d4b5d602/v-surovye-gody-voennye-09-04-05.png": {
+    "sha256": "3a0d64b9ea0830ff09c5c5fa03f5249cff8104c892556d511e0bbb6df611bdc5",
+    "width": 3264,
+    "height": 1840,
+    "bytes": 9754607,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-08f3d4b5d602/v-surovye-gody-voennye-09-04-05-png-reading-960-7dfcc244bcb9.webp",
+        "width": 960,
+        "height": 541,
+        "sha256": "7dfcc244bcb95a084162c3aa4f3cbee224784b8d2ee3b318fcc5438b57e9708d",
+        "bytes": 672568
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-08f3d4b5d602-v-surovye-gody-voennye-09-04-05-3a0d64b9ea0830ff09c5c5fa03f5249cff8104c892556d511e0bbb6df611bdc5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557405",
+      "asset_id": 630557405,
+      "release_tag": "article-originals-3",
+      "sha256": "3a0d64b9ea0830ff09c5c5fa03f5249cff8104c892556d511e0bbb6df611bdc5",
+      "bytes": 9754607
+    }
+  },
+  "/assets/images/hm-tt-08f3d4b5d602/v-surovye-gody-voennye-09-04-06.png": {
+    "sha256": "3a606e7b970782160dcf5bd9c72e0b51722309cadaf7adcdcbfaabbe837fd429",
+    "width": 2272,
+    "height": 1704,
+    "bytes": 9401979,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-08f3d4b5d602/v-surovye-gody-voennye-09-04-06-png-reading-960-e0d77fec81c4.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "e0d77fec81c42056ee8892ae7bbce64e9b4e8fced87d42db9889fdfc754bb0ad",
+        "bytes": 1098580
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-08f3d4b5d602-v-surovye-gody-voennye-09-04-06-3a606e7b970782160dcf5bd9c72e0b51722309cadaf7adcdcbfaabbe837fd429.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557564",
+      "asset_id": 630557564,
+      "release_tag": "article-originals-3",
+      "sha256": "3a606e7b970782160dcf5bd9c72e0b51722309cadaf7adcdcbfaabbe837fd429",
+      "bytes": 9401979
+    }
+  },
+  "/assets/images/hm-tt-08f3d4b5d602/v-surovye-gody-voennye-09-04-07.png": {
+    "sha256": "ade6bcc871f63a582beb0f15c4fa50e9067b3313a7f2076e197fada336d99b68",
+    "width": 1752,
+    "height": 2658,
+    "bytes": 5472331,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-08f3d4b5d602/v-surovye-gody-voennye-09-04-07-png-reading-960-e82dff6d59c7.webp",
+        "width": 960,
+        "height": 1456,
+        "sha256": "e82dff6d59c7bcf136645a2c5c61f5d20009a2a3d48083421e0b34b42ee60ee7",
+        "bytes": 615534
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-08f3d4b5d602-v-surovye-gody-voennye-09-04-07-ade6bcc871f63a582beb0f15c4fa50e9067b3313a7f2076e197fada336d99b68.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557679",
+      "asset_id": 630557679,
+      "release_tag": "article-originals-a",
+      "sha256": "ade6bcc871f63a582beb0f15c4fa50e9067b3313a7f2076e197fada336d99b68",
+      "bytes": 5472331
+    }
+  },
+  "/assets/images/hm-tt-08f3d4b5d602/v-surovye-gody-voennye-09-04-08.png": {
+    "sha256": "efde449486fdba4b2b3d65c0fd4d56688777d63eb156112167fbc26083a3672b",
+    "width": 391,
+    "height": 542,
+    "bytes": 314980,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-08f3d4b5d602/v-surovye-gody-voennye-09-04-08.png-391.webp",
+        "width": 391,
+        "height": 542,
+        "sha256": "17fe74ad071e56857e12292b9bfeaa9169efe22b58500800bf5c3d918585ed38",
+        "bytes": 146428
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-08f3d4b5d602-v-surovye-gody-voennye-09-04-08-efde449486fdba4b2b3d65c0fd4d56688777d63eb156112167fbc26083a3672b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630557826",
+      "asset_id": 630557826,
+      "release_tag": "article-originals-e",
+      "sha256": "efde449486fdba4b2b3d65c0fd4d56688777d63eb156112167fbc26083a3672b",
+      "bytes": 314980
+    }
+  }
+}
