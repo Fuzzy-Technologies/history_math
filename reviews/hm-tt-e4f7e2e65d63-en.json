@@ -1,0 +1,36 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-e4f7e2e65d63-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "4d494f9c76ef72480a298a2c627395fc0fd6397391fc6f88e0e09701aacee96d",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Исправлять ничего не надо, мержи.",
+    "source_commit": "06916f028b2f55421fcf632780988e8547bdf201",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/214"
+  },
+  "questions": [
+    {
+      "id": "anniversary-and-source-date",
+      "question": "The article is dated 2023-10-14 but opens with a dedication to the 80th anniversary of the Great Victory, which falls in 2025. Should the dedication’s later revision or the publication date be clarified? Both source records are retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #214 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-10-14",
+      "url": "https://teletype.in/@history_math/Drambalop-10-14"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ]
+}
