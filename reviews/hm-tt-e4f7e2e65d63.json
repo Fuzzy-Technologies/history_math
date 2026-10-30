@@ -1,0 +1,28 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-e4f7e2e65d63",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "91c8faa8fbff444198349415a814f78420f7b00392e5937eab15f532f77d2c6b",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Исправлять ничего не надо, мержи.",
+    "source_commit": "06916f028b2f55421fcf632780988e8547bdf201",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/214"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-10-14",
+      "url": "https://teletype.in/@history_math/Drambalop-10-14"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
