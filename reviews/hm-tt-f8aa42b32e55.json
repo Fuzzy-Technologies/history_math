@@ -1,0 +1,28 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-f8aa42b32e55",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "57514b77072ca4ea2377230822eb21f97d87c2cc5e497d1045eb2eae380e34cf",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Мержить. Исправлять ничего не надо.",
+    "source_commit": "cfb165867a9de7a839deb9289bc2082bf8a6316f",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/225"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 7,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-26",
+      "url": "https://teletype.in/@history_math/Abak-09-26"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
