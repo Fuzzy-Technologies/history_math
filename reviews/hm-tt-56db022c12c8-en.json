@@ -1,0 +1,25 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-56db022c12c8-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "0538ce35bd7f5905a45c218a729ebc3a615d6defc683372ad129cfde961e1cc2",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "По периоды можно мержить.",
+    "source_commit": "3665093785af7d5ff5fce2045a6e11e10f85839f",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/210"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 7,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-10-23",
+      "url": "https://teletype.in/@history_math/Periody-razvitiya-matematiki-10-23"
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "/assets/images/hm-tt-56db022c12c8/periody-razvitiya-matematiki-01.png": {
+    "sha256": "c5e063e6220983abc66aa565df22b3302ba70e06c8fa1c142c837eb3f9749894",
+    "width": 2258,
+    "height": 1270,
+    "bytes": 7877556,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-56db022c12c8/periody-razvitiya-matematiki-01-png-reading-960-8c0b371c6d3d.webp",
+        "width": 960,
+        "height": 540,
+        "sha256": "8c0b371c6d3df9d78ff37e980608cb5c57101dfe01c636fef45a3e6f445ce842",
+        "bytes": 715012
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-56db022c12c8-periody-razvitiya-matematiki-01-c5e063e6220983abc66aa565df22b3302ba70e06c8fa1c142c837eb3f9749894.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630550440",
+      "asset_id": 630550440,
+      "release_tag": "article-originals-c",
+      "sha256": "c5e063e6220983abc66aa565df22b3302ba70e06c8fa1c142c837eb3f9749894",
+      "bytes": 7877556
+    }
+  },
+  "/assets/images/hm-tt-56db022c12c8/periody-razvitiya-matematiki-02.png": {
+    "sha256": "c04376136fbc9af60b934c7be5cb15c12cfbe61d3634d42633ba14f3ef25443e",
+    "width": 391,
+    "height": 526,
+    "bytes": 231512,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-56db022c12c8/periody-razvitiya-matematiki-02.png-391.webp",
+        "width": 391,
+        "height": 526,
+        "sha256": "0173843600122db2ffe45ac9e52c4635b753c866fc7bcb59445e46ba0183f66e",
+        "bytes": 132376
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-56db022c12c8-periody-razvitiya-matematiki-02-c04376136fbc9af60b934c7be5cb15c12cfbe61d3634d42633ba14f3ef25443e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630550595",
+      "asset_id": 630550595,
+      "release_tag": "article-originals-c",
+      "sha256": "c04376136fbc9af60b934c7be5cb15c12cfbe61d3634d42633ba14f3ef25443e",
+      "bytes": 231512
+    }
+  },
+  "/assets/images/hm-tt-56db022c12c8/periody-razvitiya-matematiki-03.png": {
+    "sha256": "f7f17d269d16da7aaeb2a6f3dbd2ef0c929280591ec627fbf34170a23bca737c",
+    "width": 2316,
+    "height": 928,
+    "bytes": 6076336,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-56db022c12c8/periody-razvitiya-matematiki-03.png-960.webp",
+        "width": 960,
+        "height": 385,
+        "sha256": "02bfe882bac218c386e2e20e5ca3b9888c9dd95f8ec26d1fba2d887a241dcec7",
+        "bytes": 637436
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-56db022c12c8-periody-razvitiya-matematiki-03-f7f17d269d16da7aaeb2a6f3dbd2ef0c929280591ec627fbf34170a23bca737c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630550867",
+      "asset_id": 630550867,
+      "release_tag": "article-originals-f",
+      "sha256": "f7f17d269d16da7aaeb2a6f3dbd2ef0c929280591ec627fbf34170a23bca737c",
+      "bytes": 6076336
+    }
+  },
+  "/assets/images/hm-tt-56db022c12c8/periody-razvitiya-matematiki-04.png": {
+    "sha256": "044dd36c3ea926bf2ab7a0a2a7ea8244a40b92e720c339b966c72e34888b0ea0",
+    "width": 2200,
+    "height": 1351,
+    "bytes": 8074360,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-56db022c12c8/periody-razvitiya-matematiki-04.png-960.webp",
+        "width": 960,
+        "height": 590,
+        "sha256": "9f940a9e22a112d4bc8dae360a0cabee53433757b319b4f82a2a4f53fb50d20c",
+        "bytes": 973566
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-56db022c12c8-periody-razvitiya-matematiki-04-044dd36c3ea926bf2ab7a0a2a7ea8244a40b92e720c339b966c72e34888b0ea0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551083",
+      "asset_id": 630551083,
+      "release_tag": "article-originals-0",
+      "sha256": "044dd36c3ea926bf2ab7a0a2a7ea8244a40b92e720c339b966c72e34888b0ea0",
+      "bytes": 8074360
+    }
+  },
+  "/assets/images/hm-tt-56db022c12c8/periody-razvitiya-matematiki-05.png": {
+    "sha256": "b07c699d7da02bf5157f85e374bc018126debc99e885a6fac6c10c690d0f5b66",
+    "width": 2814,
+    "height": 1439,
+    "bytes": 8064897,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-56db022c12c8/periody-razvitiya-matematiki-05.png-960.webp",
+        "width": 960,
+        "height": 491,
+        "sha256": "2d121e886bfa041535636bbddd1275c58f33f270fd7a34232731961657fcbdbe",
+        "bytes": 642998
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-56db022c12c8-periody-razvitiya-matematiki-05-b07c699d7da02bf5157f85e374bc018126debc99e885a6fac6c10c690d0f5b66.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551205",
+      "asset_id": 630551205,
+      "release_tag": "article-originals-b",
+      "sha256": "b07c699d7da02bf5157f85e374bc018126debc99e885a6fac6c10c690d0f5b66",
+      "bytes": 8064897
+    }
+  },
+  "/assets/images/hm-tt-56db022c12c8/periody-razvitiya-matematiki-06.png": {
+    "sha256": "cfb0fb0ab2e6ee7403faacef58dda8848c8963780e350f4fe0de9b9957f005ca",
+    "width": 1772,
+    "height": 853,
+    "bytes": 2488240,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-56db022c12c8/periody-razvitiya-matematiki-06.png-960.webp",
+        "width": 960,
+        "height": 462,
+        "sha256": "74ec355ea77dc3ed6e645032c09e7d0f699848febd75302954256c2ce5889f11",
+        "bytes": 511654
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-56db022c12c8-periody-razvitiya-matematiki-06-cfb0fb0ab2e6ee7403faacef58dda8848c8963780e350f4fe0de9b9957f005ca.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551360",
+      "asset_id": 630551360,
+      "release_tag": "article-originals-c",
+      "sha256": "cfb0fb0ab2e6ee7403faacef58dda8848c8963780e350f4fe0de9b9957f005ca",
+      "bytes": 2488240
+    }
+  },
+  "/assets/images/hm-tt-56db022c12c8/periody-razvitiya-matematiki-07.png": {
+    "sha256": "3b398a0ce0d6f3f605e707d325cb1309bc0e7250284d4731cc5f955ab1f1b87c",
+    "width": 1600,
+    "height": 1010,
+    "bytes": 1047102,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-56db022c12c8/periody-razvitiya-matematiki-07.png-960.webp",
+        "width": 960,
+        "height": 606,
+        "sha256": "3672c59398cae0d5a98e475e5ab177f0207e2c8f460313f2db33af19bb15cdd5",
+        "bytes": 278486
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-56db022c12c8-periody-razvitiya-matematiki-07-3b398a0ce0d6f3f605e707d325cb1309bc0e7250284d4731cc5f955ab1f1b87c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551514",
+      "asset_id": 630551514,
+      "release_tag": "article-originals-3",
+      "sha256": "3b398a0ce0d6f3f605e707d325cb1309bc0e7250284d4731cc5f955ab1f1b87c",
+      "bytes": 1047102
+    }
+  }
+}
