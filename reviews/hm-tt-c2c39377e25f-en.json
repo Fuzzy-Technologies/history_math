@@ -1,0 +1,36 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-c2c39377e25f-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "b7ccd4d514a9132ad7be7bd88cefd3655ead30c332341ba29e8984755e4d1eac",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Исправлять ничего не надо, мержить.",
+    "source_commit": "34a3cbbd1f9d0c4bc2f2727830ffed084d44cc27",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/226"
+  },
+  "questions": [
+    {
+      "id": "en-fock-german-quotation",
+      "question": "The source’s German quotation “Die Grosse Mathematishe Kanon” contains apparent spelling and gender errors. Please verify Born’s original wording; the quotation is retained verbatim.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #226 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 8,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-26",
+      "url": "https://teletype.in/@history_math/Akademik-Fok-v-Elabuge-09-26"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ]
+}
