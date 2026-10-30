@@ -1,0 +1,51 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-456381a4a8c6-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-10-30",
+    "package_sha256": "674f54f0eba4cc6e921b8e3f50e6884bf406a0dde6784c2ebe9cedc2e23f2147",
+    "evidence_type": "owner_chat_instruction",
+    "evidence_date": "2026-10-30",
+    "evidence_excerpt": "Поправь греческое слово, так, как ты написала в редакторских вопросах. Там действительно ошибка. То есть греческое слово исправь в русском и английском языке. А второе замечание исправлять не надо. После этого 235 смержи.",
+    "source_commit": "5edbd35f37382a35b270dd5d1ed08c4212ffeb5c",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/235",
+    "authorized_changes": [
+      {
+        "from": "αδτρον",
+        "to": "ἄστρον",
+        "scope": "Both Russian and English article bodies; all other content retained."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "greek-star-spelling",
+      "question": "The source spells the Greek word for star αδτρον. Is this a transcription error for ἄστρον? The original spelling is retained pending an authorized correction.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Tim55667757 authorized correction of αδτρον to ἄστρον in both editions in the 2026-10-30 chat instruction for PR #235. The exact correction was applied; no other prose was changed."
+    },
+    {
+      "id": "stereographic-exception",
+      "question": "The source says stereographic projection maps circles on the sphere to circles in the plane without mentioning circles through the projection point. Should that statement be qualified? The original formulation is retained.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Tim55667757 approved PR #235 for publication in the 2026-10-30 chat instruction and explicitly retained its current wording. This records acceptance, not independent historical verification."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-04",
+      "url": "https://teletype.in/@history_math/Astrolyabiya-09-04"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections.",
+    "Owner-authorized correction on 2026-10-30: replaced the single Greek transcription αδτρον with ἄστρον in this edition. The stereographic-projection statement and all other author content remain unchanged."
+  ]
+}
