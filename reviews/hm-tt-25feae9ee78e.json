@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-25feae9ee78e",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-03-09",
+      "url": "https://teletype.in/@history_math/Mind-game-from-the-17th-century"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "94939a9db93c62a7cdb2a2dfb5acac79f9a9a5ae24946b8bb18c782d7f5aee27",
+      "description_sha256": "c7238365afc9a5b602913373f5c351bbc30d0ffdd18d0a1ae62a3d5462fec394"
+    }
+  ]
+}

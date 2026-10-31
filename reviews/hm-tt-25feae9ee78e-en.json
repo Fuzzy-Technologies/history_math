@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-25feae9ee78e-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-bachet-1",
+      "question": "The source's sequence of key totals is 1, 12, 34, 45, 56, 67, 78, 89, 100, omitting 23. The English retains it literally. Confirm whether an editorial correction to include 23 is authorised.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-bachet-2",
+      "question": "Confirm the historical claims that Bachet's game laid the foundations of strategy theory 400 years before Nash and that minimax algorithms descend from Bachet's winning-position idea. They are retained as source claims.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-03-09",
+      "url": "https://teletype.in/@history_math/Mind-game-from-the-17th-century"
+    }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "3eb4626b9c1aa59f6728268de8265bb45aaf96477c4ecb276025fa8bfc984655",
+      "description_sha256": "b0bcc24e502aec4bc6ffa1d0ee5ca0ef668505ff5248d0ba7e052fca118e7799"
+    }
+  ]
+}
