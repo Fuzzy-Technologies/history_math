@@ -1,7 +1,18 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {spawnSync} from 'node:child_process';
+import {readFileSync} from 'node:fs';
+import {parse} from 'yaml';
 import {pagesConfig} from '../scripts/pages-config.mjs';
+
+test('production defaults are canonical and the legacy address is an explicit reference override', () => {
+  const production = parse(readFileSync('_config.yml', 'utf8'));
+  assert.equal(production.url, 'https://history-math.org');
+  assert.equal(production.baseurl, '');
+  assert.equal(production.lang, 'en');
+  const reference = parse(readFileSync('_config.reference.yml', 'utf8'));
+  assert.deepEqual(reference, {url: 'https://fuzzy-technologies.github.io', baseurl: '/history_math'});
+});
 
 test('Pages metadata selects the company project path or the independent journal domain', () => {
   assert.deepEqual(pagesConfig('https://fuzzy-technologies.com', '/history_math'), {
