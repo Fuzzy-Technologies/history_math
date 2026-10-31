@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-44fd2065afe0-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "kozlovsky-missing-fractions",
+      "question": "The supplied second quotation from “On Hope” appears to omit fractions before “in my favour” and “I may make a mistake.” Can the printed page be checked and the missing expressions restored by the editor? No fractions have been invented in the adaptation.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-04-06",
+      "url": "https://teletype.in/@history_math/Pushkin-Aleksandr-Sergeevich-ob-udobosbytnosti"
+    }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "998930521cf8f30faa6189c61cf7a6a2ef5985598d52d70d777e4b610787c99d",
+      "description_sha256": "2b52200f887f91665734567b082c259cc384da51d406c4503abe83f480c5ae33"
+    }
+  ]
+}
