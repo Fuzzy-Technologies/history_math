@@ -1,0 +1,42 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-0a290d6244f8-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "historical-scoring-context",
+      "question": "The source presents several Olympic scoring schemes and a ten-point gymnastics scale as current. Should these be dated or otherwise qualified for the 2023 source publication? Their wording and numbers are retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "expert-relation-direction",
+      "question": "The final paragraph calls judgements communicated to experts relations, whereas the preceding explanation discusses judgements given by experts. Which direction is intended? The source wording is retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 1,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-14",
+      "url": "https://teletype.in/@history_math/Podschyot-rezultatov-na-sportivnyh-sorevnovaniyah-11-14"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "c1bcc70cb6a48dc4dcf0daa9e4e5cc1913007b9e3d576eb4ed6ae732ca211455",
+      "description_sha256": "65bd2cda026a76f88a1a225de6f76515c52657981d2b134ee711e35aec963e4a"
+    }
+  ]
+}
