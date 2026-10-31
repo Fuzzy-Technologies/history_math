@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-519002f50e51",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-13",
+      "url": "https://teletype.in/@history_math/Spravedlivyj-razdel-nedelimyh-predmetov-11-13"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "192e452076ba0c52d4c5fd9eb04cee4ec1dc8de297d996494f51e9d7ae7811df",
+      "description_sha256": "519f2f2e7c9af3a0fdb7fc4e861cfb345dce2147b49cc393b01db5a404fbf684"
+    }
+  ]
+}

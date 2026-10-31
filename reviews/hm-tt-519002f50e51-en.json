@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-519002f50e51-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "surplus-amount-discrepancy",
+      "question": "The final sentence gives each heir’s surplus as 843.25 rubles, but the preceding calculation and distributions give 843.75 rubles. Please confirm the intended amount. Both source values are preserved.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "unique-allocation-claim",
+      "question": "The introduction claims a uniquely fair division by valuation. Please confirm whether ties in individual valuations require a tie-breaking rule or qualification. The source’s uniqueness claim is retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-13",
+      "url": "https://teletype.in/@history_math/Spravedlivyj-razdel-nedelimyh-predmetov-11-13"
+    }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "4c7ecce98c8a58f04abab9c9ebe584037dfa48b45b475554c6f5e10bbb990fff",
+      "description_sha256": "4c84401d0453420bc9460e7fdedd3151a9e79eb16ef2c141084924a8af2bdfd4"
+    }
+  ]
+}
