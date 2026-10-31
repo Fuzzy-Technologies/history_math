@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-425a55816516",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-12-08",
+      "url": "https://teletype.in/@history_math/Dinastiya-Bernulli-12-08"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "8cc59b47adf1ac1fa3d67bb159d5f4e6eec37b0ea67247f4a812ca332e07f6a8",
+      "description_sha256": "8480dd5ea299a8557cc2643d3ce11dd41399c15cb360d153051a56e586293e9d"
+    }
+  ]
+}

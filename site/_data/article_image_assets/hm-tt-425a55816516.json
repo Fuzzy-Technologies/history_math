@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-425a55816516/dinastiya-bernulli-12-08-01.png": {
+    "sha256": "48b9f491424c62c534e1aee95bd42dac832498e91c66842450a7115ffe0553bb",
+    "width": 1350,
+    "height": 2200,
+    "bytes": 6523889,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-425a55816516/dinastiya-bernulli-12-08-01.png-960.webp",
+        "width": 960,
+        "height": 1564,
+        "sha256": "dfe1e4a9d3308a8faa40e6e726af73d49cd6972416467806739df18456d0d812",
+        "bytes": 1892208
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-425a55816516-dinastiya-bernulli-12-08-01-48b9f491424c62c534e1aee95bd42dac832498e91c66842450a7115ffe0553bb.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630501638",
+      "asset_id": 630501638,
+      "release_tag": "article-originals-4",
+      "sha256": "48b9f491424c62c534e1aee95bd42dac832498e91c66842450a7115ffe0553bb",
+      "bytes": 6523889
+    }
+  },
+  "/assets/images/hm-tt-425a55816516/dinastiya-bernulli-12-08-02.png": {
+    "sha256": "0ce52b0d1464c9fd16d6c3ccf975281858467824d07674fb100611c576676b82",
+    "width": 732,
+    "height": 480,
+    "bytes": 35072,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-425a55816516/dinastiya-bernulli-12-08-02.png-732.webp",
+        "width": 732,
+        "height": 480,
+        "sha256": "534d46e6c7d884fe84061ffc9507e57cb03f3405a2961844697b456ac0c8b466",
+        "bytes": 8966
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-425a55816516-dinastiya-bernulli-12-08-02-0ce52b0d1464c9fd16d6c3ccf975281858467824d07674fb100611c576676b82.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630550818",
+      "asset_id": 630550818,
+      "release_tag": "article-originals-0",
+      "sha256": "0ce52b0d1464c9fd16d6c3ccf975281858467824d07674fb100611c576676b82",
+      "bytes": 35072
+    }
+  },
+  "/assets/images/hm-tt-425a55816516/dinastiya-bernulli-12-08-03.png": {
+    "sha256": "06a0d495e8b12f37614f939d587986fd6f096ba1118db44c57be072792a88a3f",
+    "width": 2000,
+    "height": 2338,
+    "bytes": 7071195,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-425a55816516/dinastiya-bernulli-12-08-03-png-reading-960-af163ddac239.webp",
+        "width": 960,
+        "height": 1122,
+        "sha256": "af163ddac2398c30f38e138be42da39d1dc29b3184005fa6cbcfbc4f208c7d99",
+        "bytes": 1017530
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-425a55816516-dinastiya-bernulli-12-08-03-06a0d495e8b12f37614f939d587986fd6f096ba1118db44c57be072792a88a3f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551031",
+      "asset_id": 630551031,
+      "release_tag": "article-originals-0",
+      "sha256": "06a0d495e8b12f37614f939d587986fd6f096ba1118db44c57be072792a88a3f",
+      "bytes": 7071195
+    }
+  },
+  "/assets/images/hm-tt-425a55816516/dinastiya-bernulli-12-08-04.png": {
+    "sha256": "ba10dfc349ecfa891e6837820abb1eff8a0682777934b74a1db671362a394df6",
+    "width": 2270,
+    "height": 3485,
+    "bytes": 20248286,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-425a55816516/dinastiya-bernulli-12-08-04.png-960.webp",
+        "width": 960,
+        "height": 1474,
+        "sha256": "6f1b4264148769e6f699d1963b22aa081ee90d64af21c78f342f0e8021acd97c",
+        "bytes": 2055064
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-425a55816516-dinastiya-bernulli-12-08-04-ba10dfc349ecfa891e6837820abb1eff8a0682777934b74a1db671362a394df6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551191",
+      "asset_id": 630551191,
+      "release_tag": "article-originals-b",
+      "sha256": "ba10dfc349ecfa891e6837820abb1eff8a0682777934b74a1db671362a394df6",
+      "bytes": 20248286
+    }
+  },
+  "/assets/images/hm-tt-425a55816516/dinastiya-bernulli-12-08-05.png": {
+    "sha256": "5c7aa8f0f125dd2f8a364618ce9e6e9ac3c0a5aae4e4aa308605ec896e648276",
+    "width": 2289,
+    "height": 2916,
+    "bytes": 16488882,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-425a55816516/dinastiya-bernulli-12-08-05.png-960.webp",
+        "width": 960,
+        "height": 1223,
+        "sha256": "1fa96c4158bd10000f1ef95433e026d5042363a928364929f76bed1660c5494e",
+        "bytes": 1559454
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-425a55816516-dinastiya-bernulli-12-08-05-5c7aa8f0f125dd2f8a364618ce9e6e9ac3c0a5aae4e4aa308605ec896e648276.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630551321",
+      "asset_id": 630551321,
+      "release_tag": "article-originals-5",
+      "sha256": "5c7aa8f0f125dd2f8a364618ce9e6e9ac3c0a5aae4e4aa308605ec896e648276",
+      "bytes": 16488882
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-425a55816516-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "jacob-teacher-pupil-direction",
+      "question": "The source calls Jacob a pupil of Johann, Nicholas I and Paul Euler, although it may intend to say their teacher. Please confirm the intended relationship. The English retains the literal pupil claim.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "bernoulli-eponyms-attribution",
+      "question": "The source attributes every mathematical item in the first eponym list, including Bernoulli’s differential equation, to Jacob. Please verify whether this needs individual attribution, particularly to Johann. The supplied attribution is preserved.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-12-08",
+      "url": "https://teletype.in/@history_math/Dinastiya-Bernulli-12-08"
+    }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "00d11ca72b52a14d1b7dc492c26218d5c2fdd04536467cf2f207cf2c221061aa",
+      "description_sha256": "88837d2ebc8a9c28c37047fecd7fdf99b6760956986ea740f8fb0a6b2cfa39f0"
+    }
+  ]
+}
