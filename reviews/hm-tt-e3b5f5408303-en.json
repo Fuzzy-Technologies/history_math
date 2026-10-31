@@ -1,0 +1,36 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-e3b5f5408303-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "quoted-money-word",
+      "question": "The Gleyzer quotation says percentages were used in commercial and monetary “references” (ссылках), an unusual phrase that may be a transcription error for transactions. Which wording is intended? The source wording is retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-01-06",
+      "url": "https://teletype.in/@history_math/Procenty-01-06"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "664ac2bf03b86e902310af169dddc02a94c617a57ba66a606b73fa7567966e90",
+      "description_sha256": "42eaa15e84f45612528f0bd41a7816ce3aa370825f30082cae5188fdd230805d"
+    }
+  ]
+}

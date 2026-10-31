@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-e3b5f5408303",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-01-06",
+      "url": "https://teletype.in/@history_math/Procenty-01-06"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "16f8d263b214dd068449a61a5b637fdc8bb64b8c1c5f1f8f892f51e067aebcf2",
+      "description_sha256": "5f68c65f6360b4052570ee8e0da5701f8c26f3fe0a2952d2d366074087bd3ba2"
+    }
+  ]
+}
