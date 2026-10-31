@@ -1,0 +1,577 @@
+{
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-01.png": {
+    "sha256": "ad49b4c4142d82aeb28764c502237cde519545bab19ee7909edf91c610b4b123",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2641027,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "cbd758233a5ea447c261be234ad02dcdb47eb300024ae282398aafbeead6847d",
+        "bytes": 1028620
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-01-ad49b4c4142d82aeb28764c502237cde519545bab19ee7909edf91c610b4b123.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630499112",
+      "asset_id": 630499112,
+      "release_tag": "article-originals-a",
+      "sha256": "ad49b4c4142d82aeb28764c502237cde519545bab19ee7909edf91c610b4b123",
+      "bytes": 2641027
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-02.png": {
+    "sha256": "04adf9ddffd57ec77c7410a287c4ccaba2b995447cf740a81cc7de5ed25efbde",
+    "width": 1023,
+    "height": 1024,
+    "bytes": 2415304,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-02.png-960.webp",
+        "width": 960,
+        "height": 961,
+        "sha256": "4e270b9053094f806aeb124922e2b64d420f0ba59ad2f75479bd37e5febceb1e",
+        "bytes": 950670
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-02-04adf9ddffd57ec77c7410a287c4ccaba2b995447cf740a81cc7de5ed25efbde.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560830",
+      "asset_id": 630560830,
+      "release_tag": "article-originals-0",
+      "sha256": "04adf9ddffd57ec77c7410a287c4ccaba2b995447cf740a81cc7de5ed25efbde",
+      "bytes": 2415304
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-03.png": {
+    "sha256": "a7de70a8b0c800ca18f8b69d65c8421cfc3ab23e33d13766670d01789e962b3d",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 1913553,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-03.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "71cd65d09753e711443891ed915eee8e682ec7a35a0d9afd64336d92bb124565",
+        "bytes": 732298
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-03-a7de70a8b0c800ca18f8b69d65c8421cfc3ab23e33d13766670d01789e962b3d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630560956",
+      "asset_id": 630560956,
+      "release_tag": "article-originals-a",
+      "sha256": "a7de70a8b0c800ca18f8b69d65c8421cfc3ab23e33d13766670d01789e962b3d",
+      "bytes": 1913553
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-04.png": {
+    "sha256": "4f7b22dba5cb679c01977e68df405270b25011ad7a20e2cafa499eb71e47ce4f",
+    "width": 1023,
+    "height": 1023,
+    "bytes": 1977927,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-04.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "603173bfdc19a15f47ea0f7450281f0119c16d22bebce9dcd926d543192d21f7",
+        "bytes": 929646
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-04-4f7b22dba5cb679c01977e68df405270b25011ad7a20e2cafa499eb71e47ce4f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561087",
+      "asset_id": 630561087,
+      "release_tag": "article-originals-4",
+      "sha256": "4f7b22dba5cb679c01977e68df405270b25011ad7a20e2cafa499eb71e47ce4f",
+      "bytes": 1977927
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-05.png": {
+    "sha256": "a2b946edd463334f9e7005c4c1fa5f93f083bb357942843fc3af664bd33d67e3",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2300283,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-05.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "67c220e4b1a6840ce85185d3efef61dd4eb8c70489f5d0e27c92694b4cbb98e1",
+        "bytes": 832670
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-05-a2b946edd463334f9e7005c4c1fa5f93f083bb357942843fc3af664bd33d67e3.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561288",
+      "asset_id": 630561288,
+      "release_tag": "article-originals-a",
+      "sha256": "a2b946edd463334f9e7005c4c1fa5f93f083bb357942843fc3af664bd33d67e3",
+      "bytes": 2300283
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-06.png": {
+    "sha256": "3231f64901b76d899ec2fae32ddc794c39d6f60640e7e3711ca84ac01e646243",
+    "width": 1023,
+    "height": 1023,
+    "bytes": 2324909,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-06.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "940760c44ad15a15b2872d95dc15cd5f312530902436b3a0f43fbd1b6faacc3b",
+        "bytes": 1508166
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-06-3231f64901b76d899ec2fae32ddc794c39d6f60640e7e3711ca84ac01e646243.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561430",
+      "asset_id": 630561430,
+      "release_tag": "article-originals-3",
+      "sha256": "3231f64901b76d899ec2fae32ddc794c39d6f60640e7e3711ca84ac01e646243",
+      "bytes": 2324909
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-07.png": {
+    "sha256": "d53b6d34e714f31ec5ebc909b5d8261e2326dcd988a4a3c246a550ef59ea6357",
+    "width": 1023,
+    "height": 1024,
+    "bytes": 2459214,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-07.png-960.webp",
+        "width": 960,
+        "height": 961,
+        "sha256": "38a90d63f8fa74e94e6eca9b01d1d4b18768fd8b3ee55e28b61f44b48ddce856",
+        "bytes": 839674
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-07-d53b6d34e714f31ec5ebc909b5d8261e2326dcd988a4a3c246a550ef59ea6357.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561590",
+      "asset_id": 630561590,
+      "release_tag": "article-originals-d",
+      "sha256": "d53b6d34e714f31ec5ebc909b5d8261e2326dcd988a4a3c246a550ef59ea6357",
+      "bytes": 2459214
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-08.png": {
+    "sha256": "e3a7e8f7450e22590700a89e78893a4cae69017d39efeb475aa5151f1abc48ca",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2467649,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-08.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "ac541cd21d7cd5a94d3e76110aa3ae16d86b94a0a2cd0087444cf58fb2211917",
+        "bytes": 858202
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-08-e3a7e8f7450e22590700a89e78893a4cae69017d39efeb475aa5151f1abc48ca.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561725",
+      "asset_id": 630561725,
+      "release_tag": "article-originals-e",
+      "sha256": "e3a7e8f7450e22590700a89e78893a4cae69017d39efeb475aa5151f1abc48ca",
+      "bytes": 2467649
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-09.png": {
+    "sha256": "3ca38f183d332fd938ff99e5a2bc9ae9cdadf8bdb5dbe95109d3de6bf6cffbb5",
+    "width": 1024,
+    "height": 1023,
+    "bytes": 825614,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-09.png-960.webp",
+        "width": 960,
+        "height": 959,
+        "sha256": "a8827c5ca40f89e2aa875979404b2156723597e72ce061ee4bddfae26deb1a42",
+        "bytes": 444960
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-09-3ca38f183d332fd938ff99e5a2bc9ae9cdadf8bdb5dbe95109d3de6bf6cffbb5.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630561843",
+      "asset_id": 630561843,
+      "release_tag": "article-originals-3",
+      "sha256": "3ca38f183d332fd938ff99e5a2bc9ae9cdadf8bdb5dbe95109d3de6bf6cffbb5",
+      "bytes": 825614
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-10.png": {
+    "sha256": "9a2b251baaa66cc17a64143c312b52e4c8bc0441dff027dec9babeddd5d544ee",
+    "width": 1024,
+    "height": 1023,
+    "bytes": 1973858,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-10.png-960.webp",
+        "width": 960,
+        "height": 959,
+        "sha256": "4daebc2ea644ba953e07ce16bbfe53de59cc927270989f80ba448c1fdfcf9b88",
+        "bytes": 878892
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-10-9a2b251baaa66cc17a64143c312b52e4c8bc0441dff027dec9babeddd5d544ee.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630562010",
+      "asset_id": 630562010,
+      "release_tag": "article-originals-9",
+      "sha256": "9a2b251baaa66cc17a64143c312b52e4c8bc0441dff027dec9babeddd5d544ee",
+      "bytes": 1973858
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-11.png": {
+    "sha256": "887c675603eec1267d2bab2e740c65aac80c7bfc9b8cbeb69e310bf323f662d8",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2560328,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-11.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "be7f6c0950c56d0f9d12c514b3c4d8e2af1896927061f6c1aac1a8e4a28d8854",
+        "bytes": 1180796
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-11-887c675603eec1267d2bab2e740c65aac80c7bfc9b8cbeb69e310bf323f662d8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630562207",
+      "asset_id": 630562207,
+      "release_tag": "article-originals-8",
+      "sha256": "887c675603eec1267d2bab2e740c65aac80c7bfc9b8cbeb69e310bf323f662d8",
+      "bytes": 2560328
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-12.png": {
+    "sha256": "00824a6efe1385c0b0417a2cc3c76c9a1f8a055e90a749a43dd4328fb213bca1",
+    "width": 1024,
+    "height": 1023,
+    "bytes": 1496104,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-12.png-960.webp",
+        "width": 960,
+        "height": 959,
+        "sha256": "7abd5c129cd4dfa49069d8cc98d7858e6c0fb04f0e4a01e9ef4d03dab1483833",
+        "bytes": 652924
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-12-00824a6efe1385c0b0417a2cc3c76c9a1f8a055e90a749a43dd4328fb213bca1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630562382",
+      "asset_id": 630562382,
+      "release_tag": "article-originals-0",
+      "sha256": "00824a6efe1385c0b0417a2cc3c76c9a1f8a055e90a749a43dd4328fb213bca1",
+      "bytes": 1496104
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-13.png": {
+    "sha256": "9bf16ff0f9bc39ab7f654c7286619cb00f82ac9ff94136e66a1630c412301b0d",
+    "width": 1024,
+    "height": 1023,
+    "bytes": 2428192,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-13.png-960.webp",
+        "width": 960,
+        "height": 959,
+        "sha256": "f3be5009e7814d7cefa017ea5785beca2b4a62b211c29c456e4e913f332cd731",
+        "bytes": 1155654
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-13-9bf16ff0f9bc39ab7f654c7286619cb00f82ac9ff94136e66a1630c412301b0d.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630562618",
+      "asset_id": 630562618,
+      "release_tag": "article-originals-9",
+      "sha256": "9bf16ff0f9bc39ab7f654c7286619cb00f82ac9ff94136e66a1630c412301b0d",
+      "bytes": 2428192
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-14.png": {
+    "sha256": "988cca3358c447628dd80aa378d8915fa6b82da6ea7d5fcd008a0c6b35fc355e",
+    "width": 1800,
+    "height": 1800,
+    "bytes": 7974775,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-14.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "2b058ca12f5eb7501926cb9033f81445002a74598b8ca6e4f720742032d387a4",
+        "bytes": 1331798
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-14-988cca3358c447628dd80aa378d8915fa6b82da6ea7d5fcd008a0c6b35fc355e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630562829",
+      "asset_id": 630562829,
+      "release_tag": "article-originals-9",
+      "sha256": "988cca3358c447628dd80aa378d8915fa6b82da6ea7d5fcd008a0c6b35fc355e",
+      "bytes": 7974775
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-15.png": {
+    "sha256": "2caf17b4f46e359b77c4d792071eff32db889eb89aa3bf51d35a9e72b7c56aa6",
+    "width": 1024,
+    "height": 1023,
+    "bytes": 2296110,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-15.png-960.webp",
+        "width": 960,
+        "height": 959,
+        "sha256": "96306095f7533925e6222ba166bba088987c659704b9e916da0d70afbfc99a3f",
+        "bytes": 1277332
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-15-2caf17b4f46e359b77c4d792071eff32db889eb89aa3bf51d35a9e72b7c56aa6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563006",
+      "asset_id": 630563006,
+      "release_tag": "article-originals-2",
+      "sha256": "2caf17b4f46e359b77c4d792071eff32db889eb89aa3bf51d35a9e72b7c56aa6",
+      "bytes": 2296110
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-16.png": {
+    "sha256": "5e540cd3413a6f9ec7ec40786cf41f1f2a298950eebd673caa65f4f897841e74",
+    "width": 1024,
+    "height": 1023,
+    "bytes": 3087013,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-16.png-960.webp",
+        "width": 960,
+        "height": 959,
+        "sha256": "ad3647bf2b6b9cf13c2e3a1ea75ba9ddc53a89d4e5f9dcca2a94831753a5335c",
+        "bytes": 1341934
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-16-5e540cd3413a6f9ec7ec40786cf41f1f2a298950eebd673caa65f4f897841e74.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563209",
+      "asset_id": 630563209,
+      "release_tag": "article-originals-5",
+      "sha256": "5e540cd3413a6f9ec7ec40786cf41f1f2a298950eebd673caa65f4f897841e74",
+      "bytes": 3087013
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-17.png": {
+    "sha256": "c00cf4e1342c68555870cb9f75463f1718b5c8914e5516513bec6f40420ad5c7",
+    "width": 1024,
+    "height": 600,
+    "bytes": 620211,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-17.png-960.webp",
+        "width": 960,
+        "height": 562,
+        "sha256": "7c81e83de2079b67d8553cf51ebb726cd498b60d9f34a0ab0367f619fe8abf88",
+        "bytes": 269904
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-17-c00cf4e1342c68555870cb9f75463f1718b5c8914e5516513bec6f40420ad5c7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563401",
+      "asset_id": 630563401,
+      "release_tag": "article-originals-c",
+      "sha256": "c00cf4e1342c68555870cb9f75463f1718b5c8914e5516513bec6f40420ad5c7",
+      "bytes": 620211
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-18.png": {
+    "sha256": "82842d3908b974999ae23b9075a80e68f9c54a9fae5b84cbb2867e3b250feba4",
+    "width": 1024,
+    "height": 600,
+    "bytes": 565731,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-18.png-960.webp",
+        "width": 960,
+        "height": 562,
+        "sha256": "c7b2cc8db57a188dfe5a6c49a4dbc68c397317f5aebd4d4398a8352a7c2aea93",
+        "bytes": 266464
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-18-82842d3908b974999ae23b9075a80e68f9c54a9fae5b84cbb2867e3b250feba4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563571",
+      "asset_id": 630563571,
+      "release_tag": "article-originals-8",
+      "sha256": "82842d3908b974999ae23b9075a80e68f9c54a9fae5b84cbb2867e3b250feba4",
+      "bytes": 565731
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-19.png": {
+    "sha256": "a77f49f31665c2b6898df016a133f0fb7c8b7ef38660e2f051e9386554b5e9e1",
+    "width": 1024,
+    "height": 600,
+    "bytes": 791317,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-19.png-960.webp",
+        "width": 960,
+        "height": 562,
+        "sha256": "bffdc624ff6d209327142a25b7e0fdbbcee00157d33b1c746a2a03e6b4413852",
+        "bytes": 393752
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-19-a77f49f31665c2b6898df016a133f0fb7c8b7ef38660e2f051e9386554b5e9e1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563705",
+      "asset_id": 630563705,
+      "release_tag": "article-originals-a",
+      "sha256": "a77f49f31665c2b6898df016a133f0fb7c8b7ef38660e2f051e9386554b5e9e1",
+      "bytes": 791317
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-20.png": {
+    "sha256": "dff337174a11e510102a2533b65e99d3bca70ddbdc47a2985e25aa8c4d703a49",
+    "width": 1024,
+    "height": 600,
+    "bytes": 565998,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-20.png-960.webp",
+        "width": 960,
+        "height": 562,
+        "sha256": "865e2af9401ee167dc38607e2c68c9dd0b83c4ccc13774f2290a6c7c6a8df87d",
+        "bytes": 338448
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-20-dff337174a11e510102a2533b65e99d3bca70ddbdc47a2985e25aa8c4d703a49.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630563870",
+      "asset_id": 630563870,
+      "release_tag": "article-originals-d",
+      "sha256": "dff337174a11e510102a2533b65e99d3bca70ddbdc47a2985e25aa8c4d703a49",
+      "bytes": 565998
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-21.png": {
+    "sha256": "51f307ab7799c172a22c2d0687fd377870f5df57a17261e124b7b865a4be3180",
+    "width": 1024,
+    "height": 1023,
+    "bytes": 948655,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-21.png-960.webp",
+        "width": 960,
+        "height": 959,
+        "sha256": "bc9524bb73b589c1f4fa9a6bd905fad0802998ae7505a2c66fac26504b160465",
+        "bytes": 513858
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-21-51f307ab7799c172a22c2d0687fd377870f5df57a17261e124b7b865a4be3180.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630564061",
+      "asset_id": 630564061,
+      "release_tag": "article-originals-5",
+      "sha256": "51f307ab7799c172a22c2d0687fd377870f5df57a17261e124b7b865a4be3180",
+      "bytes": 948655
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-22.png": {
+    "sha256": "c880fdfb387d035607d89e5d767065593d21d95587efdbde7bfa401d6a3fbb7b",
+    "width": 1024,
+    "height": 1023,
+    "bytes": 930296,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-22.png-960.webp",
+        "width": 960,
+        "height": 959,
+        "sha256": "770906dd0505f991536b95fe7a11272dd69a4bdfa1aef825bebff38e62e35cbe",
+        "bytes": 424730
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-22-c880fdfb387d035607d89e5d767065593d21d95587efdbde7bfa401d6a3fbb7b.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630564190",
+      "asset_id": 630564190,
+      "release_tag": "article-originals-c",
+      "sha256": "c880fdfb387d035607d89e5d767065593d21d95587efdbde7bfa401d6a3fbb7b",
+      "bytes": 930296
+    }
+  },
+  "/assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-23.png": {
+    "sha256": "dc7e90fd6e4d1e70dd24e98e19ae8804bed31560f2c42371bdd85ac56a27d561",
+    "width": 1023,
+    "height": 1023,
+    "bytes": 1321282,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-23.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "e97d20779e85da12c9114c77ea41b75d1431ffcc5a2b91a7b979938d0f7777e3",
+        "bytes": 473574
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-f49ec2fca03c-kak-lyudi-nauchilis-schitat-23-dc7e90fd6e4d1e70dd24e98e19ae8804bed31560f2c42371bdd85ac56a27d561.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630564360",
+      "asset_id": 630564360,
+      "release_tag": "article-originals-d",
+      "sha256": "dc7e90fd6e4d1e70dd24e98e19ae8804bed31560f2c42371bdd85ac56a27d561",
+      "bytes": 1321282
+    }
+  }
+}

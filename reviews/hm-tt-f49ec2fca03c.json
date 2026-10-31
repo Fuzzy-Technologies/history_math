@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-f49ec2fca03c",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 23,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-11",
+      "url": "https://teletype.in/@history_math/Kak-lyudi-nauchilis-schitat-09-11"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "b4fa366771c191d4edb879ea2ee728456a58869cf68a4c21026cf309295eb2fd",
+      "description_sha256": "222a71f22bbc67f8cee93f0b67e886e05c996386e36a936e9189ca85264de0c5"
+    }
+  ]
+}
