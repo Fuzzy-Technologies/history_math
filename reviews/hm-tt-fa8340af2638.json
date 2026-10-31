@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-fa8340af2638",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 12,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-09-28",
+      "url": "https://teletype.in/@history_math/I-vsyo-taki-ona-vertitsya-09-28"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "9a4c5120eb53bc8117c86176040b86161a7cf79991cb17ca6e71cc62cdc0b3b7",
+      "description_sha256": "e3c77b4b8452e356bf7b6063fb23dd467b85d998a7905091ac2115790eca123f"
+    }
+  ]
+}
