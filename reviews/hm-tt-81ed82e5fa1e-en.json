@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-81ed82e5fa1e-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "q-binoculars-1",
+      "question": "The source says the arc–chord difference is no more than one thousandth for angles up to 15°. Confirm this numerical bound; the English retains it.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "q-binoculars-2",
+      "question": "The source's sentence about an angle of one mil corresponding to an arc and chord at 1000 m supplies no length. Confirm the intended missing quantity; no length has been added in the English.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-11-05",
+      "url": "https://teletype.in/@history_math/Binoculars"
+    }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "0c12a88bcd8aa853092ab68be4590f3a1663495d5ff816d6768e913b768bb731",
+      "description_sha256": "ca214dde07b34ea17b8955754c64b462631302004f3d5c32b230f2b70c9fdbf0"
+    }
+  ]
+}
