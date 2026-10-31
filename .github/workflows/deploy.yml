@@ -93,10 +93,10 @@ jobs:
           done
           node scripts/article-pdf.mjs --site-dir test-results/pdf-fixture
           node tests/pdf-cache-browser.mjs
-          HISTORY_MATH_PUBLICATION_REF="$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build --trace
+          HISTORY_MATH_PUBLICATION_REF="$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build --config "_config.yml,_config.reference.yml" --trace
           node scripts/article-pdf.mjs
           python3 scripts/check_pdf_colors.py _site
-          python3 scripts/check_site.py _site /history_math
+          python3 scripts/check_site.py _site /history_math https://fuzzy-technologies.github.io
           npm run test:browser
           node tests/article-details-browser.mjs
           node tests/article-urls-browser.mjs

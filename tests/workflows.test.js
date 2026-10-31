@@ -128,6 +128,18 @@ test('publication uses HTTPS even when Pages reports HTTP before certificate act
     });
   }
 });
+
+test('only the reference gate opts into the legacy path; configured Pages keeps its validated override', () => {
+  const workflow = parse(readFileSync('.github/workflows/deploy.yml', 'utf8'));
+  const steps = workflow.jobs.build.steps;
+  const reference = steps.find(step => step.name === 'Verify site code, layout and browser contracts');
+  const production = steps.find(step => step.name === 'Build and verify configured Pages site');
+  assert.match(reference.run, /--config "_config.yml,_config.reference.yml"/);
+  assert.match(reference.run, /check_site.py _site \/history_math https:\/\/fuzzy-technologies.github.io/);
+  assert.doesNotMatch(production.run, /_config.reference.yml/);
+  assert.match(production.run, /node scripts\/pages-config.mjs/);
+  assert.match(production.run, /--config "_config.yml,\$RUNNER_TEMP\/history-math-pages.yml"/);
+});
 async function cleanupScenario(overrides = {}) {
   const pr = {merged: true, base: {ref: 'master'}, head: {ref: 'feature/example', sha: 'old', repo: {full_name: 'Fuzzy-Technologies/history_math'}}, ...overrides.pr};
   let deleted = 0;

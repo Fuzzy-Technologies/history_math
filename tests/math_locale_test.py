@@ -26,7 +26,7 @@ class MathLocaleTest(unittest.TestCase):
                     (assets / f'{kind}-{language}.json').write_text(json.dumps([]))
             (root / 'sitemap.xml').write_text('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"/>')
             with contextlib.redirect_stdout(io.StringIO()):
-                CheckSite(root, '/history_math')
+                CheckSite(root, '/history_math', 'https://fuzzy-technologies.github.io')
 
     def test_renderer_is_allowed_on_both_article_routes_only(self):
         self.check_page('publications/example')

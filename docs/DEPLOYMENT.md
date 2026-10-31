@@ -1,5 +1,29 @@
 # Deployment and repository setup
 
+## Publication domain and reference builds
+
+`_config.yml` defines the production defaults: `url: https://history-math.org`, `baseurl: ""`, English at `/` and Russian at `/ru/`. The secondary `history-math.ru` domain redirects to the Russian edition; DNS and external redirect changes require separate authorization.
+
+The existing Pages deployment still derives an HTTPS origin and base path from `actions/configure-pages`, validates them with `scripts/pages-config.mjs`, and appends the resulting override after `_config.yml`. Missing or malformed Pages metadata fails before a configured-site build. A correct source default does not substitute for checking the actual Pages settings and output.
+
+The historical GitHub project address is isolated in `_config.reference.yml`. The compatibility gate, review preview and legacy regression fixtures load that file explicitly; the configured Pages build never loads it.
+
+```sh
+# Production defaults (no deployment or PDF generation).
+bundle exec jekyll build --config _config.yml --destination _site-domain
+python3 scripts/check_site.py _site-domain "" https://history-math.org
+
+# Explicit legacy reference build.
+bundle exec jekyll build --config _config.yml,_config.reference.yml
+python3 scripts/check_site.py _site /history_math https://fuzzy-technologies.github.io
+
+# Render the real templates under default, validated Pages and reference configurations.
+bundle exec ruby tests/production_domain_test.rb
+node --test tests/pages-config.test.mjs tests/workflows.test.js tests/article-url.test.mjs
+```
+
+These checks cover canonical/Open Graph URLs, reciprocal published translations, citations, sitemap origins and canonical article links in the print heading/PDF manifest. They do not assert that a newly generated PDF or production deployment has completed.
+
 ## Branch contract
 
 - `master`: default branch, approved production source.
