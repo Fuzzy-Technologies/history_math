@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-b2dd7dbcea4d",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-05-12",
+      "url": "https://teletype.in/@history_math/Tri-klassicheskie-zadachi-drevnosti-05-12"
+    }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "b42b51d22e8f17d1111a909ead80b2115c4892f333cd3682cde38f5627bf7aba",
+      "description_sha256": "aa0102ea395f12a7a7d14500207111dbe70671a7cc2e30173eee80bdf0a25f2f"
+    }
+  ]
+}

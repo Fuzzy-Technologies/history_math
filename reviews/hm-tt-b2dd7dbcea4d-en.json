@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-b2dd7dbcea4d-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-quadratrix-history",
+      "question": "Please verify the description of Dinostratus as Hippias’ pupil and the attribution of the term quadratrix to Leibniz. These source claims are retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-05-12",
+      "url": "https://teletype.in/@history_math/Tri-klassicheskie-zadachi-drevnosti-05-12"
+    }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "116eac5f8ec97ca3c64dd2532e8bc212f91d6066b8e14b3c17ded78fe57a3738",
+      "description_sha256": "25be71d792f932fa6c836a30160d8794dbf7fc5cd0801381327e221308d6ac60"
+    }
+  ]
+}
