@@ -1,0 +1,102 @@
+{
+  "/assets/images/hm-tt-1f5b334a6aad/proportional-compass-01.jpeg": {
+    "sha256": "db9f838a31673ed60738911abec35cca487a8229ee309fe8af5d96c24a20ca66",
+    "width": 330,
+    "height": 678,
+    "bytes": 31457,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1f5b334a6aad/proportional-compass-01-330.jpeg",
+        "width": 330,
+        "height": 678,
+        "bytes": 31457,
+        "sha256": "db9f838a31673ed60738911abec35cca487a8229ee309fe8af5d96c24a20ca66"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-1f5b334a6aad-proportional-compass-01-db9f838a31673ed60738911abec35cca487a8229ee309fe8af5d96c24a20ca66.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630492925",
+      "asset_id": 630492925,
+      "release_tag": "article-originals-d",
+      "sha256": "db9f838a31673ed60738911abec35cca487a8229ee309fe8af5d96c24a20ca66",
+      "bytes": 31457
+    }
+  },
+  "/assets/images/hm-tt-1f5b334a6aad/proportional-compass-02.png": {
+    "sha256": "282e7c8bc441c994540a387e596278ff4e44697a5bd3363809ed9c92bcf69454",
+    "width": 1001,
+    "height": 803,
+    "bytes": 400263,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1f5b334a6aad/proportional-compass-02.png-960.webp",
+        "width": 960,
+        "height": 770,
+        "sha256": "a7ba752abeec404ea430b04483440796953675d025c8b7ed32030511fa67f240",
+        "bytes": 247830
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-1f5b334a6aad-proportional-compass-02-282e7c8bc441c994540a387e596278ff4e44697a5bd3363809ed9c92bcf69454.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630531721",
+      "asset_id": 630531721,
+      "release_tag": "article-originals-2",
+      "sha256": "282e7c8bc441c994540a387e596278ff4e44697a5bd3363809ed9c92bcf69454",
+      "bytes": 400263
+    }
+  },
+  "/assets/images/hm-tt-1f5b334a6aad/proportional-compass-03.png": {
+    "sha256": "ca90532db1762c4961bd0ae94426d72556f061a8a6be1382715cea0e0a97a5a1",
+    "width": 1005,
+    "height": 874,
+    "bytes": 387361,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1f5b334a6aad/proportional-compass-03.png-960.webp",
+        "width": 960,
+        "height": 835,
+        "sha256": "d2da2c336b94443860377871fc39249815f6915c37983b71d108b8d75abfa6ff",
+        "bytes": 235254
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-1f5b334a6aad-proportional-compass-03-ca90532db1762c4961bd0ae94426d72556f061a8a6be1382715cea0e0a97a5a1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630531892",
+      "asset_id": 630531892,
+      "release_tag": "article-originals-c",
+      "sha256": "ca90532db1762c4961bd0ae94426d72556f061a8a6be1382715cea0e0a97a5a1",
+      "bytes": 387361
+    }
+  },
+  "/assets/images/hm-tt-1f5b334a6aad/proportional-compass-04.jpeg": {
+    "sha256": "e384ec27b1f1ae6770e350d78a11f4f6f6ef9d42ce82f8b74196345a9577e3e6",
+    "width": 1100,
+    "height": 1100,
+    "bytes": 34429,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1f5b334a6aad/proportional-compass-04.jpeg-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "3f5402863c9704bf42c94668536bbcb23ffdec1585e223de40448949cba9c520",
+        "bytes": 111550
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-1f5b334a6aad-proportional-compass-04-e384ec27b1f1ae6770e350d78a11f4f6f6ef9d42ce82f8b74196345a9577e3e6.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630532074",
+      "asset_id": 630532074,
+      "release_tag": "article-originals-e",
+      "sha256": "e384ec27b1f1ae6770e350d78a11f4f6f6ef9d42ce82f8b74196345a9577e3e6",
+      "bytes": 34429
+    }
+  }
+}

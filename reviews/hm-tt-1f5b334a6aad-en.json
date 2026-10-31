@@ -1,0 +1,48 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-1f5b334a6aad-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "rsa-proportional-blocks",
+      "question": "What source supports the claim that RSA uses division into proportional blocks and derives from the principle of the proportional compass? The supplied claim is retained but needs mathematical review.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "compass-sector-history",
+      "question": "Should the historical discussion distinguish proportional dividers from Galileo's geometrical and military sector? The source combines the instruments; its dates and claims have been retained.",
+      "blocking": false,
+      "state": "open"
+    },
+    {
+      "id": "kiselev-initials",
+      "question": "The body and captions use A. P. Kiselev, but bibliography item 1 gives P. A. Kiselev. Which initials should the approved bibliography use?",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-06-11",
+      "url": "https://teletype.in/@history_math/Proportional-Compass"
+    }
+  },
+  "manual_changes": [
+    "Formatted the archived book addresses in figure captions as descriptive Source links; original image bytes and bibliographic information retained."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "14987763c197827ebf18949c2c3c0c711b880900cb5dd02e966d127abacc7a87",
+      "description_sha256": "5a1b3c5867b173a08816dda31b6f4f19b963f5f0f92df60619146a686e4cf1d6"
+    }
+  ]
+}
