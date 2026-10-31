@@ -1,0 +1,36 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-340f67aaa486-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-histogram-bar-chart",
+      "question": "The source describes labelled horizontal bars and bar charts as types of histogram, although standard statistical usage distinguishes categorical bar charts from histograms of numerical intervals. Please review this terminology and whether the area/frequency statement should explicitly assume equal bin widths. The source account is retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-12-07",
+      "url": "https://teletype.in/@history_math/Gistogramma-12-07"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "3130178ab1e9a37bc04db71330dee5f7cbe47825af565604e4f3de8082bf70b1",
+      "description_sha256": "56c188652efbed96e435b7c84e4532e827491b2b0311a07ddcda26090b764fbb"
+    }
+  ]
+}
