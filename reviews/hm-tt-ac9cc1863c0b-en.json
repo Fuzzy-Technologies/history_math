@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-23",
-    "package_sha256": "9d82366d70642408e881b94004cc89668ff4aa4590ef8dfe891952c548c55ac7",
+    "package_sha256": "f65242fbc263bf68a0a94a602a2bc23218b516f5a96b716eb5487647f16e6365",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/106#pullrequestreview-5626006302",
     "source_commit": "c2c92d7a7631601b715a46c5785ce023153cd1fb",
     "source_review_id": 5626006302,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-23T08:51:15Z",
-    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -51,5 +51,15 @@
       "date": "2025-02-02",
       "url": "https://teletype.in/@history_math/algebra-history-part-2"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "5990fa2ddcdaae69673fcc06050f61c375831670a6e492b9bf217b544409f423",
+      "description_sha256": "1ef514a0e02fae98072566ae1575f9321e24c7068d4611266cbbc55aa40a59be",
+      "previous_package_sha256": "9d82366d70642408e881b94004cc89668ff4aa4590ef8dfe891952c548c55ac7"
+    }
+  ]
 }

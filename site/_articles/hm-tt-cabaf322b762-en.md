@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-cabaf322b762
-description: At 11 Bolshoy Vlasyevsky Lane in Moscow, the Moscow Center for Continuous Mathematical Education hosts
-  a longstanding seminar for mathematics teachers.
+description: "The MCCME teachers’ seminar review for 2025–2026 brings together talks on olympiad geometry, probability, assessment and mathematical games. Meeting descriptions and recording links also introduce teaching experience and uses of AI in education."
 type: essay
 tags:
 - History of mathematics

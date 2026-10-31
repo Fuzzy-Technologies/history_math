@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "56aac69ddd1b367934f5c28995e4caa0918166f9d5e49f9d1d95bfe7806a926f",
+    "package_sha256": "686049ba621e0ab678ca4f12cd11cba040e4c8665e8b6d948852272f241504b8",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Оставляем как есть, даты не трогаем, мержим.",
     "source_commit": "296a204de0a29f151ad2b588eb23d5b558b872ad",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/143"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/143",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -29,5 +30,15 @@
       "date": "2024-07-22",
       "url": "https://teletype.in/@history_math/Matematika-Drevnego-Vavilona-07-23"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "35326ead82fe4e90bb549eda6bcd0be64c7774dd4effc10550918cffceb0b4f3",
+      "description_sha256": "f5c5fe3ced8fd7a72cab0d0fe69f9fb6197088f391b51d67f3b986f4b16f99be",
+      "previous_package_sha256": "56aac69ddd1b367934f5c28995e4caa0918166f9d5e49f9d1d95bfe7806a926f"
+    }
+  ]
 }

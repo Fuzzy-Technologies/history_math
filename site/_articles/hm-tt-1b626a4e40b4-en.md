@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-1b626a4e40b4
-description: Mechanical arithmometers mechanized the four arithmetic operations, from early designs to the widely
-  used Soviet Felix.
+description: "Arithmometers performed all four arithmetic operations through toothed wheels, digit-by-digit addition and carriage shifts. Their development led to the widely used Soviet Felix, before electronic calculators displaced these machines in the 1970s."
 type: essay
 tags:
 - Instruments

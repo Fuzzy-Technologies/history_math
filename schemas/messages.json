@@ -30,6 +30,7 @@
     "issues": "Findings and actions",
     "preview": "Check results",
     "HM_METADATA": "Invalid or missing metadata. Correct the field against the article schema.",
+    "HM_DIGEST": "Write an informative digest in one or two complete sentences; do not clip the article introduction.",
     "HM_IDENTIFIER": "Duplicate identifier or URL. Choose one stable identity per language.",
     "HM_PATH": "Unsafe or unsupported path. Use an existing local article asset and the base-path filter.",
     "HM_IMAGE": "Image not found. Add the file or correct its path.",
@@ -51,6 +52,7 @@
     "HM_MARKDOWN": "Markdown tables are not aligned. Run python3 tools/markdown_tables.py --write."
   },
   "ru": {
+    "HM_DIGEST": "Напишите содержательный дайджест из одного-двух законченных предложений; не обрезайте вступление статьи.",
     "details": {
       "YAML front matter required": "Требуется начальный блок метаданных YAML",
       "author must display the authors array": "Поле author должно отображать список authors",

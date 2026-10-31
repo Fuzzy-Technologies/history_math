@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-5cbde4c21638
-description: From Napier and Bürgi to Briggs, Vega and Bradis, logarithm tables transformed laborious multiplication
-  and division into simpler operations.
+description: "Logarithm tables replaced multiplication with addition and supported scientific calculation for centuries. Their development from Napier and Briggs to Vega and Bradis accompanies an explanation of characteristics, mantissas and common-logarithm calculations."
 type: instrument
 tags:
 - Instruments

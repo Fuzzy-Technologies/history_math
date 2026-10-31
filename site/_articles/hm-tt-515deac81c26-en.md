@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-515deac81c26
-description: The sextant measures angles between visible objects and the altitude of celestial bodies, making navigation
-  possible even from a moving ship or aircraft.
+description: "A sextant uses mirrors to bring two objects into the same field of view and measure angles even aboard a moving ship. Its development from the octant and its graduated scale explain its role in finding a navigator’s position from celestial observations."
 type: essay
 tags:
 - Instruments

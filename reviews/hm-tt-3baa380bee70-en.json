@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-23",
-    "package_sha256": "5bd67f0b668717c5bc5e4019e28525a37cf7bfcfbf96ed0ce7da681afdcedfc9",
+    "package_sha256": "5718785f4c50698c73f697339eab41261c6248e802cf350a0353e684844ee529",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/136#pullrequestreview-5626009212",
     "source_commit": "f05d765728ec4f64007403022e54f253c04450b2",
     "source_review_id": 5626009212,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-23T08:51:33Z",
-    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -30,5 +30,15 @@
       "date": "2024-10-08",
       "url": "https://teletype.in/@history_math/Kirkman-schoolgirls"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "80f551589f15ab63fc283c95435ea468c5954e9fba6f4c748809b9946e56585b",
+      "description_sha256": "cc4932a5bfd0d1e9fcbdb15c5db9a185591bac3e92e3423b31100b96833554bf",
+      "previous_package_sha256": "5bd67f0b668717c5bc5e4019e28525a37cf7bfcfbf96ed0ce7da681afdcedfc9"
+    }
+  ]
 }

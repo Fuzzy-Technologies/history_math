@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-22",
-    "package_sha256": "7ee0bf11cff678d9e8f11cc6b073e116670822c72ddba95db668f6962af7808c",
+    "package_sha256": "06c04fb223c08f38543dba182984265e06d2e3903002461edaac7cb9945bf880",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/65#pullrequestreview-5616495372",
     "source_commit": "90928e15cead3e26038e51c5fc2681ac45a8b24d",
     "source_review_id": 5616495372,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-22T15:15:54Z",
-    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -22,5 +22,15 @@
       "date": "2026-04-10",
       "url": "https://teletype.in/@history_math/japanese-sangaku"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "d1ce526df48646e65e715a5c1bbf13a1a6138aa1c2cfea478e1ed58a45dd76ef",
+      "description_sha256": "3858fb4fdc4565ac3c3c5426fca27ffe99645beced651e9d915620a4c58ebe2b",
+      "previous_package_sha256": "7ee0bf11cff678d9e8f11cc6b073e116670822c72ddba95db668f6962af7808c"
+    }
+  ]
 }

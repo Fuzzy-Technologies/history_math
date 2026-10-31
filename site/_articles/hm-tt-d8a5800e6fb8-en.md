@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-d8a5800e6fb8
-description: On the 76th anniversary of her birth, in the Year of the Teacher and Mentor.
+description: "Mansur Gilmullin recalls Tatyana Novozhenina’s path from school in Syzran and university in Kazan to training mathematics teachers in Yelabuga. Her research on applied teaching, student competitions, family and poetry form a personal portrait of an educator."
 type: essay
 tags:
 - History of Mathematics

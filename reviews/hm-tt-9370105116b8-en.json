@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "3ca80f932e2f3e1275c77219a9d2dbc28520695199aed298b7f2e1b677ec3f86",
+    "package_sha256": "aa7e5cdc094c26922d5631159f21aa690d2e9014dc3f08011bb9eacea7b8b38e",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Оставляем как есть, мержим.",
     "source_commit": "ad938e39f06799b9df6414c74e689ae8285f8533",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/154"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/154",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -29,5 +30,15 @@
       "date": "2024-06-09",
       "url": "https://teletype.in/@history_math/Zadacha-puteshestvennica-sem-koshek-06-09"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "7c416fc1bc4d8c0177f91e6c6c3a113ebd977aa95646dce4da7922e951b6a851",
+      "description_sha256": "55dff49a05c90501b1684cf35175a70ef4ea74749f42bbe158a7926c9c8fb105",
+      "previous_package_sha256": "3ca80f932e2f3e1275c77219a9d2dbc28520695199aed298b7f2e1b677ec3f86"
+    }
+  ]
 }

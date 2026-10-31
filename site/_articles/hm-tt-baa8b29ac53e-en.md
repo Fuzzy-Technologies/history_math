@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-baa8b29ac53e
-description: Kayum Nasyri’s life as a Tatar educator, writer and scholar illuminates the development of national
-  schooling and mathematical education.
+description: "Kayum Nasyri advanced secular Tatar education, writing arithmetic and geometry textbooks and developing scientific terminology in his native language. His teaching and educational work unfold against a background of school reforms and public resistance."
 type: essay
 tags:
 - People

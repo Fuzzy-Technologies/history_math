@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-22",
-    "package_sha256": "6933ef8c6a3e0aebd90142b161d395071997a6c1f1179fe5f0913fbe1e6a631c",
+    "package_sha256": "76346256b9bbd3c2941adf1ba6a15d142600c6f4e57b2ac0f39607c28100dc6c",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/78#pullrequestreview-5617286429",
     "source_commit": "fe3dd89d4f0409c8abba237f436fc5e553164f3a",
     "source_review_id": 5617286429,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-22T16:10:29Z",
-    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -22,5 +22,15 @@
       "date": "2025-06-12",
       "url": "https://teletype.in/@history_math/Ozanam-Dinner"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "0dab49ade119ad5b3320cf885aa937c20f479039bc57b65ae6af41c3ff3a5145",
+      "description_sha256": "06bbf0b2715701387dcded9fd157a6ca20c1c7a2d0d2b2549e6a5bd0566848ff",
+      "previous_package_sha256": "6933ef8c6a3e0aebd90142b161d395071997a6c1f1179fe5f0913fbe1e6a631c"
+    }
+  ]
 }

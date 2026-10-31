@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-baaceff0fe3e
-description: A report that Māori counted by elevens became a historical mathematical mystery, revealing the risks
-  of misunderstanding another culture’s counting practices.
+description: "Nineteenth-century reports of Māori “counting by elevens” are compared with grammars, dictionaries and grouping practices. Rather than establishing base 11, the evidence suggests possible explanations involving paired counting and object markers—an “ephemeral abacus”."
 type: essay
 tags:
 - History of mathematics

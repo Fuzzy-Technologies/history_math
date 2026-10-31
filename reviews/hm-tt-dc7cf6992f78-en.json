@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "bcc1048d8a03fda14e9641038c7add910d4dfbe621abd07c20cc47d3a5249eff",
+    "package_sha256": "2ee42a8caadb2a167f854f973d9b506b25bc40905046f7bd2245ebd7be617a71",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Мержим.",
     "source_commit": "81e5bc4b9f07bf4e6c86655aff24afe9fb68b8a1",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/209"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/209",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -21,5 +22,15 @@
       "date": "2023-10-23",
       "url": "https://teletype.in/@history_math/Doktor-filosofii-soldat-Sovetskoj-Armii-uchitel-uchitelej-ehto-vsyo-ob-Alfrede-Maksoviche-Lyustige-10-23"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "35e71598a0ce4216624fb6b349ccd11eb3dfa499b96d8517c6dd0a97bf1b7cdf",
+      "description_sha256": "6303b2664761fecf64e7c6add2d1ccc382353d7f9cad162cea1573ee2c0376f2",
+      "previous_package_sha256": "bcc1048d8a03fda14e9641038c7add910d4dfbe621abd07c20cc47d3a5249eff"
+    }
+  ]
 }

@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-1cf45e823bea
-description: Twentieth-century Kazan mathematics developed influential schools in algebra, geometry, analysis and
-  mechanics, led by Chebotaryov and successive generations.
+description: "Twentieth-century Kazan University developed research schools in algebra, geometry, analysis and stability theory. Chebotaryov, Shirokov, Gagayev, Chetaev and their pupils helped build its departments and Research Institute of Mathematics and Mechanics."
 type: essay
 tags:
 - History of mathematics

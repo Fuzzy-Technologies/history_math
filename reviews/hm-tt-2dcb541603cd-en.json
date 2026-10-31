@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "ff51631792ceb280be613f26172e76d5e58f38586cf255d7b5366ce992268d3d",
+    "package_sha256": "116a5943eca88b70de50a11e976ba37e99dcacc38e56e6ec57b79d8802194cc2",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Всё оставь как есть, смержи. То, что там 80-летие Победы, это ну просто автор так любит подписывать некоторые статьи. Первоначальную дату публикации оставь ту, которая была в телетайпе для 232 PR.",
     "source_commit": "9f71ec07542c0de8cc0b48caddabbafb8afb993e",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/232"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/232",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -39,5 +40,15 @@
   },
   "manual_changes": [
     "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "8605af999d62ec98017f0168eb1c55a1c75a1fe7c2176e696ac28fdb3be931a1",
+      "description_sha256": "7ee884c50a37a150ffe455ce945730bd772eca4c146212be5018171685a104a3",
+      "previous_package_sha256": "ff51631792ceb280be613f26172e76d5e58f38586cf255d7b5366ce992268d3d"
+    }
   ]
 }

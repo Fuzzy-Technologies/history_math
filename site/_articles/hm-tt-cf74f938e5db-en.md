@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-cf74f938e5db
-description: John Horton Conway’s Game of Life uses simple cellular-automaton rules to generate a remarkable diversity
-  of patterns, attracting researchers and enthusiasts for decades.
+description: "In Conway's Game of Life, simple rules for cell birth and death generate stable, periodic and moving patterns. An explanation of the rules, gliders and computational possibilities is accompanied by tasks for readers' own experiments."
 type: essay
 tags:
 - History of mathematics

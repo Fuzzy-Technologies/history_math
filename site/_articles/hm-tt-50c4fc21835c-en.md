@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-50c4fc21835c
-description: Notes from the 155th mathematics teachers’ seminar at the Moscow Center for Continuous Mathematical
-  Education on 30 January 2025.
+description: "Notes from an MCCME teachers' seminar present geometrical demonstrations: the Poincaré disk, the pseudosphere, symmetry puzzles and curves made by paper folds and threads. These visual models offer material for school mathematics lessons."
 type: essay
 tags:
 - History of mathematics

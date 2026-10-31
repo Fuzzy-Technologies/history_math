@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-23",
-    "package_sha256": "582cf5319bcbbe0febf09ced656d8464b01f759aa366c8cc764a142d7b9f7129",
+    "package_sha256": "af42c6b3c035a8cbac67cc61704f193c3f14d1a906cc3ce1172264a73e677d0c",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/82#pullrequestreview-5626005432",
     "source_commit": "193823c8726df0a59d12f3dd1d8a0a2b24397b99",
     "source_review_id": 5626005432,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-23T08:51:10Z",
-    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -30,5 +30,15 @@
       "date": "2025-06-06",
       "url": "https://teletype.in/@history_math/Diophantus-Problem"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "de6d6ffe1a3c7777106f95049c469f92ed05df05b2c23bd14b6584ecdc48b7ab",
+      "description_sha256": "5de82f7505ac43b560521fe9efa5627f827e694f1dda03a39f52abb141700a59",
+      "previous_package_sha256": "582cf5319bcbbe0febf09ced656d8464b01f759aa366c8cc764a142d7b9f7129"
+    }
+  ]
 }

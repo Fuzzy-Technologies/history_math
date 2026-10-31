@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-22",
-    "package_sha256": "c5b03c8e1ba78899fc61e139ce501fe6c7f8081c5a3c0c57a54344e92ff5bc21",
+    "package_sha256": "b8b154285c61db324d442197eda1da6d9c70aa34d8ef7057350e0dcc72d7fd58",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/63#pullrequestreview-5617304667",
     "source_commit": "5496d382cbbe54311970a92fa259c1239342db8f",
     "source_review_id": 5617304667,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-22T16:11:40Z",
-    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -22,5 +22,15 @@
       "date": "2026-04-19",
       "url": "https://teletype.in/@history_math/inca-khipu"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "0a34df442199d7cf4e65a809f56cadb1415a07d50f25b564a3586100cb88b06b",
+      "description_sha256": "cc6a2ccc4de319ed6e005038396eefeb0f77d289dccc3ed886a0c2c559ce3d66",
+      "previous_package_sha256": "c5b03c8e1ba78899fc61e139ce501fe6c7f8081c5a3c0c57a54344e92ff5bc21"
+    }
+  ]
 }

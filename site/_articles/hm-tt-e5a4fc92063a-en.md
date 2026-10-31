@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-e5a4fc92063a
-description: “Whether you think you can, or you think you cannot, you are right.” Henry Ford
+description: "In the cryptarithm DONALD + GERALD = ROBERT, different letters represent different digits and D equals 5. A step-by-step solution using column carries accompanies the legend that Henry Ford used the puzzle to test job applicants."
 type: problem
 tags:
 - Historical problems

@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-ac9cc1863c0b
-description: 'Continuing the history of algebra: its elementary period, from early equation-solving to the foundations of
-  modern algebra.'
+description: "Elementary algebra grew from equation-solving methods in China, India, the Arab world and Europe. The development of notation, solutions of cubic and quartic equations, and the work of Abel and Galois shaped its language and the limits of solution by radicals."
 type: essay
 tags:
 - History of mathematics

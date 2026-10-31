@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "fd816f057b9f25d81f2838ebc558368f0ef6aaa0400bd50dbbe3e3d66039bbf3",
+    "package_sha256": "80caed4967a6fcea34e5a219f7549ccbc7279311138a9e4a65533b5ca586e1c1",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Оставь как есть, мержим.",
     "source_commit": "ac509cf56a7702725374acacc40dbf762d9db68d",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/176"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/176",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -29,5 +30,15 @@
       "date": "2024-02-24",
       "url": "https://teletype.in/@history_math/Arifmetika-pifagorejcev-druzhestvennye-chisla-02-24"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "706cd463859d9864a3190ff60042fa75ced077ef1a180a7e22e5f58ca0337242",
+      "description_sha256": "75dba34a842f4d48f638520e00ff5da744e088320d8c6af6add76c15e01c0dfd",
+      "previous_package_sha256": "fd816f057b9f25d81f2838ebc558368f0ef6aaa0400bd50dbbe3e3d66039bbf3"
+    }
+  ]
 }

@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-d53be80a8676
-description: 'On the 120th anniversary of Andrey Nikolaevich Kolmogorov: his mathematical discoveries, scholarship, teaching
-  and influence on school education.'
+description: "Andrey Kolmogorov established axiomatic foundations for probability and contributed to many branches of mathematics. His biography connects early discoveries, research schools and applied work with school reform, a boarding school for gifted pupils and Kvant magazine."
 type: essay
 tags:
 - history_of_mathematics

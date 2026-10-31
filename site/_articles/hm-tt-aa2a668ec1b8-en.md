@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-aa2a668ec1b8
-description: François Viète's symbolic algebra transformed mathematics, while his career unfolded amid religious wars,
-  royal service and codebreaking.
+description: "François Viète advanced symbolic algebra by using letters for both unknowns and coefficients, allowing problems to be solved in general form. His formulas and trigonometric results are set against his government service, codebreaking and France’s religious wars."
 type: essay
 tags:
 - history_of_mathematics

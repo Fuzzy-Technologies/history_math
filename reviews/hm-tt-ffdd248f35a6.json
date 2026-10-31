@@ -5,7 +5,7 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "3345b88394b084dab5eacb400a73b0cc78d4b6dc3153259a95c1ce51f9de6fa0",
+    "package_sha256": "e2a338d1d66a6a987a20f76040a7b7d26b20bd23a9c2216962175287cf6edcd7",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Естественно должно получиться 38. Исправь: равно 38 см в квадрате. После этого можешь смержить.",
@@ -17,7 +17,8 @@
         "to": "34 + 8:2 = 38",
         "scope": "Area in cm², once in each body and in figure 2 alt/caption in both editions. Image bytes unchanged."
       }
-    ]
+    ],
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -48,6 +49,16 @@
       "source_commit": "9b97a509143087aa88152abbfc2b778c3b9bf03b",
       "disposition": "resolved_with_owner_authorized_correction",
       "resolution": "Tim55667757 authorized the 2026-10-30 owner chat correction: 34 + 8:2 = 38 cm² in the body and figure 2 alt/caption, in both languages. The original diagram and all other source wording are retained unchanged."
+    }
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "df20bb4f5b0450c3ec0cc1d885318182aa7f52a44a7360a78990c8c1ed7ff333",
+      "description_sha256": "fdeada94ae3737be350912e7fb9d1dceb111a74464cfc0c3d3b9961c6e10709d",
+      "previous_package_sha256": "3345b88394b084dab5eacb400a73b0cc78d4b6dc3153259a95c1ce51f9de6fa0"
     }
   ]
 }

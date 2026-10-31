@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-911cb8fa227f
-description: 'A new book by Mansur Gilmullin, author of Mathematics with Mansur-abyy: a lifetime of material on the foundations
-  of algebra.'
+description: "Mansur Gilmullin presents The Mathematician's Bible, a modular lecture course on abstract and linear algebra, number theory, polynomials and algebra's history. Key concepts recur at different levels of abstraction and in new problems."
 type: essay
 tags:
 - history_of_mathematics

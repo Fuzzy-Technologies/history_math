@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-ffdd248f35a6
-description: A transparent square grid provides a simple way to estimate the area of an irregular shape on a plan
-  or map.
+description: "An area grid on a transparent sheet estimates the area of irregular shapes on plans and maps. Add the whole squares inside the outline to half the squares crossed by its boundary, then convert the count using the cell size and the map's scale."
 type: instrument
 tags:
 - Instruments

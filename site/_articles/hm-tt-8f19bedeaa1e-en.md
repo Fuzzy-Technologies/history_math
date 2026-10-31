@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-8f19bedeaa1e
-description: The compass and its many measuring variants connect geometrical construction with surveying, draughting
-  and practical measurement.
+description: "Compasses do more than draw circles: different forms transfer dimensions, change scale and construct conic sections. Historical examples connect drawing and measuring instruments with geometry, building, navigation and medicine."
 type: essay
 tags:
 - Instruments

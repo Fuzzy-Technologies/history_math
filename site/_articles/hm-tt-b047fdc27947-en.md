@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-b047fdc27947
-description: Euler’s thirty-six officers puzzle leads to orthogonal Latin squares, a celebrated impossibility result
-  and wide-ranging mathematical applications.
+description: "Euler's puzzle asks for 36 officers of six regiments and six ranks in a square with every rank and regiment in each row and column. The impossibility of this arrangement introduces orthogonal Latin squares and their links to combinatorics, algebra and sudoku."
 type: essay
 tags:
 - History of mathematics

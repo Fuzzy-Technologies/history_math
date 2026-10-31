@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-de2464b2b28b
-description: On the 195th anniversary of his birth.
+description: "Teaching at Yasnaya Polyana led Leo Tolstoy to write Arithmetic, using visual counting, different numeral systems and clearly stated problems. His methods and the debate over the textbook reveal his aim of developing children’s independent thinking."
 type: essay
 tags:
   - History of Mathematics

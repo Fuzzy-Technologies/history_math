@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-324e8ebe7bb5
-description: During the war, three higher-education institutions in Yelabuga sustained teaching and research through
-  mutual support.
+description: "During the war, the Yelabuga Teachers' Institute, the Leningrad University branch and Voronezh University sustained research and teaching together in evacuation. Shared rooms, equipment and lecturers enabled scientific work, teacher training and students' education to continue."
 type: essay
 tags:
 - History of mathematics

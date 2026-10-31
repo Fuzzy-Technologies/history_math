@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-23",
-    "package_sha256": "955df4b8a3ec168b0fbb2b924b96d42b55a4afa78861a0f325292eb1fdff895d",
+    "package_sha256": "a872e0b74f1a6b2a401ba8c214d9fb9a812bafb9a0b6ac8a5889655708d2cb5e",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/111#pullrequestreview-5626006892",
     "source_commit": "626e09cc08b0cabe42fedc7b1174dfc13984e8b7",
     "source_review_id": 5626006892,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-23T08:51:19Z",
-    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -33,5 +33,15 @@
   },
   "manual_changes": [
     "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "1b8490fc509751d249ef2008ae4af2cfe3ef1f229f8df3ef1867f55a1bb46768",
+      "description_sha256": "dee73282293acb9b9d9df80fd617db61990671743bbdb00a2270f02dad950494",
+      "previous_package_sha256": "955df4b8a3ec168b0fbb2b924b96d42b55a4afa78861a0f325292eb1fdff895d"
+    }
   ]
 }

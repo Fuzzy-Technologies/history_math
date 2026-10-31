@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-21",
-    "package_sha256": "a0ee91149ac06309b6a92c31747805e1436e0b3ab62f060b4a650d9f78861083",
+    "package_sha256": "4f50fa2bde874aa681eb78c09eccb708231959143202dee4362c15d852397c53",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/75#pullrequestreview-5606338460",
     "source_commit": "8f9b37a4de0bba74ca5c4de86fbdad205a6d7450",
     "source_review_id": 5606338460,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-21T21:16:31Z",
-    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged."
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -27,5 +27,15 @@
     "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections.",
     "Replaced formula-only images fig-2 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending.",
     "Integrated the native Aleph-17 symbol and its explanation into one ordinary sentence using em dashes in both languages."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "654888791071ce5556c80a7fe793cffec98907de65d10d80930f5483c5fb9c69",
+      "description_sha256": "b21fbc98ac7859209fd75765ca5cde4c9c755e3df68e04c8864846afbff05b01",
+      "previous_package_sha256": "a0ee91149ac06309b6a92c31747805e1436e0b3ab62f060b4a650d9f78861083"
+    }
   ]
 }

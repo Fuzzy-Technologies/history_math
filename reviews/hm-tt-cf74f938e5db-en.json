@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-23",
-    "package_sha256": "1906204c7502d28f14a3cbdef76f34d2bdfc6550ff9e8adaae906578a0d092fa",
+    "package_sha256": "5e69a88fa9b97312423ad96beda497cc001882401b799e477e66d02a39c4d113",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/131#pullrequestreview-5626008735",
     "source_commit": "1e19ebd8c10b1578777ed3d25831af9102d87c87",
     "source_review_id": 5626008735,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-23T08:51:30Z",
-    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -25,5 +25,15 @@
   },
   "manual_changes": [
     "Restored the nested rule lists directly from the archived Teletype HTML in both languages and proofread their English adaptation."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "eefa761aad298a5de0a8c139b5ec43f2806e6d199685b52831bbd1c652fdf618",
+      "description_sha256": "41e43811276a3b3622d539e9fa666f8f0b1d1256ec89bd537c369d620ae12226",
+      "previous_package_sha256": "1906204c7502d28f14a3cbdef76f34d2bdfc6550ff9e8adaae906578a0d092fa"
+    }
   ]
 }

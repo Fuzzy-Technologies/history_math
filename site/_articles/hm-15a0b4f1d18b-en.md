@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-15a0b4f1d18b
-description: Choose five numbers from a seemingly random grid and their sum is always 57. Try Martin Gardner's mathematical
-  magic trick and discover how it works.
+description: "In Martin Gardner’s matrix, five numbers chosen one per row and column always add up to 57. The trick uses an addition table, and the same principle produces grids of any size with a predetermined total."
 type: problem
 tags:
 - Mathematical magic

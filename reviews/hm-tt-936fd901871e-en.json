@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-21",
-    "package_sha256": "1e43b9159f69e83edcdfa9b39c0992970aaa2fcc47b305a1e948cddc68e79e8d",
+    "package_sha256": "c05533265731968563ba6d0a5808338101b401e730a042c6e626146ef1ff3e9a",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/195#pullrequestreview-5606339880",
     "source_commit": "45c3bd3191a611941cbe5af1c3acd7a4f79e3e75",
     "source_review_id": 5606339880,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-21T21:16:38Z",
-    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged."
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -34,5 +34,15 @@
   "manual_changes": [
     "Replaced formula-only images fig-1 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending. Transcribed the three numbered labels and symbols; retained the original caption explaining that the first two crossed-out crises were overcome. Reused the existing Pythagoras portrait for preview/cover roles.",
     "Restored the original opening illustration, its full localized caption, image roles and verified reading asset at the owner request."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "a18ef2173a3d206ca8f5e6406912e08e916baeeb3d0eb97a302fbbcc4066d497",
+      "description_sha256": "58512f357d61bf990c3fc077d485f3c9a47564de4d036726d7bfa3a14311876c",
+      "previous_package_sha256": "1e43b9159f69e83edcdfa9b39c0992970aaa2fcc47b305a1e948cddc68e79e8d"
+    }
   ]
 }

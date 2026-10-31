@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "29d11320b903c97ab24c8afdf681617567106806a556f1a1a810b9ad48fc97d6",
+    "package_sha256": "1328a1b57f51b03d415bec9b80172ae52d3aac301a123350456b51415425588e",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Мержить.",
     "source_commit": "79dbad5e0e04a325c2f0ce33db4d54f63ca5e647",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/221"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/221",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -21,5 +22,15 @@
       "date": "2023-10-05",
       "url": "https://teletype.in/@history_math/Agrometr-Bibikova-10-05"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "63a719acc7e9e5e75060803d77ebc1602defca4b9123985dc88923b8f0fd2dcf",
+      "description_sha256": "3dd16ee75fa29e21461ed054ee41257bd186e22b598d4f69b8d6de199086588d",
+      "previous_package_sha256": "29d11320b903c97ab24c8afdf681617567106806a556f1a1a810b9ad48fc97d6"
+    }
+  ]
 }

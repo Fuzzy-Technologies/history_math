@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "2b8f826ef909cf1e3631b52acd42e6d2207a09dc5dfe69a29795a75b16560888",
+    "package_sha256": "1837be546e4e9342f7d3f3c033a254a0139918a81e34138a7e95c02896dcb7ff",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Ничего не меняем, мержим.",
     "source_commit": "0132bd14031ff962ed9b908f2aaddc47375cdc7f",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/206"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/206",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -29,5 +30,15 @@
       "date": "2023-11-13",
       "url": "https://teletype.in/@history_math/Spravedlivyj-razdel-delimyh-predmetov-11-13"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "4600e234823fa98af2a2c511118d4e8751f5efd73957171dfc2d55a08c6dae25",
+      "description_sha256": "5c0eaaa797c3712ec337ce620ffb6ea4531cf11f8416c62bcd463e695d4aa96f",
+      "previous_package_sha256": "2b8f826ef909cf1e3631b52acd42e6d2207a09dc5dfe69a29795a75b16560888"
+    }
+  ]
 }

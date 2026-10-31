@@ -5,14 +5,14 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-20",
-    "package_sha256": "e68f2f99f9b72c0dc76499b095305aa36d5bf0af93dc6f520eadeb928d85660d",
+    "package_sha256": "c5ceb09ee085bc6cf557d5ae60e19d2955cceacd24388394042b632a0f97c37e",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/244#pullrequestreview-5588211823",
     "source_commit": "712f8422ffad801ca33474adbf86bc4769c1c650",
     "source_review_id": 5588211823,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-20T16:27:41Z",
     "prepared_from_commit": "372ca2e6f309075864403104f07ef631a01d9710",
-    "post_review_changes": "Only owner-requested em-dash spacing; image hashes and dimensions are unchanged."
+    "post_review_changes": "Only owner-requested em-dash spacing; image hashes and dimensions are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -45,5 +45,15 @@
       "date": "2023-08-21",
       "url": "https://teletype.in/@history_math/Bylo-by-chto-merit-08-21"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "2c65181c0a04fa7d58fa77a6a89dc6e179831cab8d9c3838d8cb1f3d3799e8c5",
+      "description_sha256": "e9d7eda00b10f9750ea894ede9531d5b1d3baa3a91923a862de23272a83d0879",
+      "previous_package_sha256": "e68f2f99f9b72c0dc76499b095305aa36d5bf0af93dc6f520eadeb928d85660d"
+    }
+  ]
 }

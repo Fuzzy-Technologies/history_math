@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-22",
-    "package_sha256": "e90e5200fe3e2fbff87c3182ca481385e0b8557461440212137f88cd98872bf2",
+    "package_sha256": "db8594bb5acacd5f5514c55c7640958f7a3e5a857d2263a73fe11063fa1edffe",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/127#pullrequestreview-5617301953",
     "source_commit": "0e8fc8c997adeaa90dda1c4eb00d71608ddd4b6a",
     "source_review_id": 5617301953,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-22T16:11:29Z",
-    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -30,5 +30,15 @@
       "date": "2024-11-03",
       "url": "https://teletype.in/@history_math/Nonius"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "3876d63d23458887b75be6669d1db911e9e3778e2caeecfadd68b3071b423c44",
+      "description_sha256": "308824ef0444d89fbcc46aea02f78693593e76eb1da87967c5791ddc41f5adb7",
+      "previous_package_sha256": "e90e5200fe3e2fbff87c3182ca481385e0b8557461440212137f88cd98872bf2"
+    }
+  ]
 }

@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-3baa380bee70
-description: Arranging fifteen schoolgirls in rows of three for seven days led to a famous combinatorial problem and
-  the study of combinatorial designs.
+description: "Kirkman's problem arranges fifteen schoolgirls in triples for seven days without repeating a pair. Its solutions, including binary XOR triples, lead to the theory of combinatorial designs and their applications."
 type: problem
 tags:
 - history_of_mathematics

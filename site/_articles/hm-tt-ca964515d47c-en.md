@@ -9,9 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-ca964515d47c
-description: In May 1727, a twenty-year-old Swiss scholar newly arrived from
-  Basel walked along Nevsky Prospekt in St Petersburg. His name was Leonhard
-  Euler.
+description: "Leonhard Euler's St Petersburg years combined mathematical discoveries with cartography, engineering projects and the training of Russian scholars. His work at the Academy of Sciences reveals his extraordinary productivity and influence."
 type: essay
 tags:
   - History of Mathematics

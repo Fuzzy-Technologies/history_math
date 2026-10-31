@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-566fdd46b3b8
-description: 'An ideal mathematical goat offers a simple way to explain a geometric locus: it has no size and eats everything
-  it can reach.'
+description: "A tethered goat illustrates a geometric locus: the region it can reach is defined by distance conditions. Circles and ellipses lead to further examples involving perpendicular bisectors, angle bisectors, parabolas and hyperbolas."
 type: essay
 tags:
 - History of mathematics

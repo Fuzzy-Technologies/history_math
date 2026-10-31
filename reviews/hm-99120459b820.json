@@ -45,7 +45,8 @@
     "status": "approved",
     "reviewed_by": "Timur Gilmullin (Tim55667757)",
     "date": "2026-10-09",
-    "package_sha256": "2f0932cbe9193d593ecf37e40b3d29483dd125e1215174abf71040290fd4ab0b"
+    "package_sha256": "e55c773d01e7b4bdafec512fe7a586bf2f296b1035db52127d4e8968ca308808",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -79,6 +80,16 @@
       "blocking": true,
       "state": "resolved",
       "resolution": "Неподтверждённое отнесение этого числового круга к Ямвлиху удалено. Историческая справка оставляет его имя и название труда, без утверждения о конкретном круге."
+    }
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "50ca488d1fef40121c48a5897699f065866ae9a4fd151457c779b137e3d18a75",
+      "description_sha256": "73bd61b9a43b2c8183201fbf50a406f5b1d34dbdab5917799967466c4336b4fe",
+      "previous_package_sha256": "2f0932cbe9193d593ecf37e40b3d29483dd125e1215174abf71040290fd4ab0b"
     }
   ]
 }

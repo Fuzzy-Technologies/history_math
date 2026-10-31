@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-21",
-    "package_sha256": "46ca59de3f8b1346886aaa22097568f7f71ee440ad90d5135f09bd7b7bf4f1dd",
+    "package_sha256": "744f9a9768d6384ebb841098fb3c86a3c859ff6c613dcdd3f2db6836af937841",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/195#pullrequestreview-5606339880",
     "source_commit": "45c3bd3191a611941cbe5af1c3acd7a4f79e3e75",
     "source_review_id": 5606339880,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-21T21:16:38Z",
-    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged."
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -27,5 +27,15 @@
     "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged.",
     "Replaced formula-only images fig-1 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending. Transcribed the three numbered labels and symbols; retained the original caption explaining that the first two crossed-out crises were overcome. Reused the existing Pythagoras portrait for preview/cover roles.",
     "Restored the original opening illustration, its full localized caption, image roles and verified reading asset at the owner request."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "0d9fdcc050cf0b4ecb55ce1dc0935afe7d807efa80337db1e4459705f64f0c8d",
+      "description_sha256": "8df2ba9531366523215801429311e1e1efaef449f52957285f47eca3e4d0ca9d",
+      "previous_package_sha256": "46ca59de3f8b1346886aaa22097568f7f71ee440ad90d5135f09bd7b7bf4f1dd"
+    }
   ]
 }

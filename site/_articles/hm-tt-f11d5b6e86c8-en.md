@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-f11d5b6e86c8
-description: The crossing, the crossing! The left bank, the right bank…
+description: "Three married couples must cross a river in a two-person boat under restrictions on which men and women may be together. An eleven-trip plan is illustrated, followed by variants involving four couples, a larger boat or an island."
 type: essay
 tags:
 - History of mathematics

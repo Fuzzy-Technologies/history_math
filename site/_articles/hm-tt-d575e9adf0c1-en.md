@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-d575e9adf0c1
-description: We must know; we shall know. David Hilbert, Göttingen.
+description: "From Gauss and Riemann to Klein and Hilbert, Göttingen brought together generations and branches of mathematical thought. Its history connects research with teaching, traces its international influence and describes the devastation of Nazi persecution in 1933."
 type: essay
 tags:
 - History of mathematics

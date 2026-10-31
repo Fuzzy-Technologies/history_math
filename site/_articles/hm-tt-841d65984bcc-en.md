@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-841d65984bcc
-description: Mathematics has been created over millennia by many peoples. A selection of mathematicians from different
-  countries illustrates the science’s international character.
+description: "Mathematicians from ancient Greece and India through Europe and Russia illustrate the international character of the discipline. Hilbert's rejection of national boundaries in mathematics frames an account of research traditions, Göttingen and the role of international congresses."
 type: essay
 tags:
 - History of mathematics

@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-22",
-    "package_sha256": "a42e91e8da5440e573978fb92fce157d1b5d646149694baa0cdc9bf099f7599b",
+    "package_sha256": "d06ebea535a548f73c1ed48d9921673e8eddf47cead070f74e1793859ba33bad",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/70#pullrequestreview-5616508023",
     "source_commit": "ca3c99efba9ed5a9b27ab2640b75cd22ffbe263a",
     "source_review_id": 5616508023,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-22T15:16:51Z",
-    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -22,5 +22,15 @@
       "date": "2025-10-16",
       "url": "https://teletype.in/@history_math/carroll-pirate-puzzle"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "e64f50c3ffb30e97829933d8b2031841047db9496019dc27e49130ffb329ae93",
+      "description_sha256": "a099048c5cd905b51dcb533a76d249b97b140f312fa20aab345d65aedc67bd84",
+      "previous_package_sha256": "a42e91e8da5440e573978fb92fce157d1b5d646149694baa0cdc9bf099f7599b"
+    }
+  ]
 }

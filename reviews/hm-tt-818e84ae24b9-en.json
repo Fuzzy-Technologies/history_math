@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "482b858cd43c0072b73d006555efa2ecb801bb4a8ddb1a994b29746030dea239",
+    "package_sha256": "909e9ba7d19d2db6ac9283f49734f26fdb4b072e3cd7e8d0b206bb81e518afd3",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Ничего не меняем, оставляем как есть, авторское, мержим.",
     "source_commit": "ce7a5161e3e7b0ab2d8d585859c65237d246ddad",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/148"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/148",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -29,5 +30,15 @@
       "date": "2024-06-30",
       "url": "https://teletype.in/@history_math/UIMZ-na-temu-Parkety-06-30"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "6825886981618fb94a6bcd61232f616131f3576dbcbde91284efb2fedcd9c74b",
+      "description_sha256": "def95d29dd57b9024a2c8f3e717251bfdef5f7115c55c2483055f1660b50dc67",
+      "previous_package_sha256": "482b858cd43c0072b73d006555efa2ecb801bb4a8ddb1a994b29746030dea239"
+    }
+  ]
 }

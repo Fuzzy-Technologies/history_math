@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-dc7cf6992f78
-description: The remarkable life of Alfred Lustig, from physics in Vienna and wartime service to mathematics teaching
-  in Yelabuga.
+description: "Vienna University graduate Alfred Lustig reached the USSR after Nazi persecution, served in the Soviet Army and was wounded twice. In Yelabuga, he devoted decades to teaching mathematics and training teachers, heading a department and supporting younger colleagues."
 type: essay
 tags:
 - History of mathematics

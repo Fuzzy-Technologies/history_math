@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-0a63d258ba26
-description: 'A new series on mathematical instruments begins with their history: how everyday tools became visual
-  teaching aids and entered mathematics education.'
+description: "Calculating, measuring and construction instruments connect mathematical principles with practical work. Their history in schools shows how using instruments and making models can support the study of geometry and calculation."
 type: instrument
 tags:
 - History of mathematics
