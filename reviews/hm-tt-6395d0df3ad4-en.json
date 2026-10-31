@@ -1,0 +1,48 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-6395d0df3ad4-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "en-large-numbers-milli",
+      "question": "The source says the prefix milli denotes thousands, but its SI meaning is one thousandth. Please authorise any correction; the supplied explanation is retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "en-large-numbers-dates",
+      "question": "Please verify Marco Polo’s stated 1254–1323 lifespan and the historical attribution of the first use of milione. The source dates and attribution are retained.",
+      "blocking": false,
+      "state": "open"
+    },
+    {
+      "id": "en-large-numbers-practical-limit",
+      "question": "Please review the claim that a googol marks a boundary beyond which numbers have no practical use, and the description of 10⁵⁰ as infinite. Both source claims are retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-01-06",
+      "url": "https://teletype.in/@history_math/Bolshie-chisla-01-06"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "9f7df52ca029ebee6528ad959a8fffbc29a4f8a308cb73120c6b214c1d98b7b1",
+      "description_sha256": "75bb529b5c38283669653aa42fe2802622b6fe5ff177baf87d7dd3e40bba4337"
+    }
+  ]
+}
