@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-fe2f642f1e5a",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-06-03",
+      "url": "https://teletype.in/@history_math/Priznak-delimosti-na-19-ehkzotika-v-teorii-chisel-06-04"
+    }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "60abd6b3c0e696cdbe3c06ffea60abbb37d9b255e3165682476280685b858047",
+      "description_sha256": "7c750cb483981f442839f496a63e75acc0e3f36ec036f79a4ec833d451d93b15"
+    }
+  ]
+}
