@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-6b7055e5c357",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-30",
+      "url": "https://teletype.in/@history_math/Matematika-v-Rossijskoj-akademii-nauk-RAN-11-30"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "ee24548847405dcfaef8dca1309adbbc4dee14e049cc5f2dd16bd2d3fe6de8f5",
+      "description_sha256": "e50d8f3f44bcfa33f4e1f091a38d01826412876e9b2a01c741aa917076e69803"
+    }
+  ]
+}
