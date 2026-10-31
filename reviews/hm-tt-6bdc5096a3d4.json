@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-6bdc5096a3d4",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-02-24",
+      "url": "https://teletype.in/@history_math/Pervye-universitety-02-24"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "6a37c8ae370eda54005aa35e94cfe5e8b7cf1dea58dcc8339c484bba0dc2c2fd",
+      "description_sha256": "a2020e0948677c31038bf571d2a1cb74bc7add0b7c3fd7b96dda1250db673945"
+    }
+  ]
+}
