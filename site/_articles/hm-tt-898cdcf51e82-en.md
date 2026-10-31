@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-898cdcf51e82
-description: Cut an 8 by 8 square into four pieces and rearrange them into a 13 by 5 rectangle. Where does the extra
-  unit of area come from?
+description: "Rearranging an 8 × 8 square seems to produce a 13 × 5 rectangle with an extra unit of area. A narrow gap along the apparent diagonal explains the paradox, while Fibonacci numbers and Cassini’s identity describe the difference in area."
 type: essay
 tags:
 - Experiments

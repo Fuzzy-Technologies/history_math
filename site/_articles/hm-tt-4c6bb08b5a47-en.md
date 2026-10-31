@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-4c6bb08b5a47
-description: On the 85th anniversary of the birth of Alla Yefimovna Malykh, historian of mathematics, educator and
-  founder of scholarly schools in Perm.
+description: "Alla Yefimovna Malykh spent more than half a century at Perm's pedagogical institution and founded research schools in the history and teaching of mathematics. Her studies of finite geometries and combinatorics accompanied manuals that brought history into mathematics education."
 type: essay
 tags:
 - History of mathematics

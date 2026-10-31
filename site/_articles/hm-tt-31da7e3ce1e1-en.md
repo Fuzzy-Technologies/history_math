@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-31da7e3ce1e1
-description: Probability paper provides a visual way to assess whether statistical measurements follow a normal distribution.
+description: "Probability paper changes the plotting scale so that a chosen cumulative distribution appears as a straight line. On normal probability paper, approximately aligned sample points provide a visual check of normality without prior knowledge of the distribution’s parameters."
 type: essay
 tags:
 - Instruments

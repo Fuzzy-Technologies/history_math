@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-3079a878ffdf
-description: Among the many mathematical puzzles attributed to Albert Einstein, the problem of nine numbers and
-  seven triangles has a special place.
+description: "A puzzle attributed to Einstein without direct evidence asks for the numbers 1–9 to be placed at the vertices of seven triangles with equal sums. Each triangle must total 15; symmetry and the constraints of the layout guide the solution."
 type: problem
 tags:
 - History of Mathematics

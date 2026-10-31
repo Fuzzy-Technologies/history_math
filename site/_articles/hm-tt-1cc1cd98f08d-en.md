@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-1cc1cd98f08d
-description: Nomograms replace numerical calculations with simple geometrical operations on carefully designed scales
-  and grids.
+description: "A nomogram replaces calculation with geometrical operations and readings from scales. Examples explain its three main types, while a historical account traces the development of these graphical computing devices from Lalanne to d'Ocagne."
 type: essay
 tags:
 - Instruments

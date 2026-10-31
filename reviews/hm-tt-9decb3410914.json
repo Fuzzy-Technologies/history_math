@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-23",
-    "package_sha256": "9b9978ec6ed89fdb822a686e115d8c6cdf30890e4b466b720f34b1781c479ffa",
+    "package_sha256": "9d0066af0cad61ce3916bd3bcf4a8cbe0047808fe53bf18061df8380c4256bd8",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/111#pullrequestreview-5626006892",
     "source_commit": "626e09cc08b0cabe42fedc7b1174dfc13984e8b7",
     "source_review_id": 5626006892,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-23T08:51:19Z",
-    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -25,5 +25,15 @@
   },
   "manual_changes": [
     "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "33c5378dbbed7b63d3efe5facb919c9669ab5235e1c59a5b2d93ebd5c9a31abe",
+      "description_sha256": "c1f746c8959ce237484fdeee7364b3ae1b47e0ef577a32036beba38d7fd2dca4",
+      "previous_package_sha256": "9b9978ec6ed89fdb822a686e115d8c6cdf30890e4b466b720f34b1781c479ffa"
+    }
   ]
 }

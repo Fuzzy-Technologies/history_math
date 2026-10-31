@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "e8938b57236b9b9e2c46e3fdae4e3ea9a7dc26fe34da9ad14ef902cd6790ca5e",
+    "package_sha256": "2e48e7a48c4773081a7da89ccb3b3bda564246e964e7aa68cf1e4ad051fdf159",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Оставляем как есть, мержим.",
     "source_commit": "9e60e69e71086235a8bb69bad3503919b9a3639c",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/151"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/151",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -29,5 +30,15 @@
       "date": "2024-06-16",
       "url": "https://teletype.in/@history_math/Fleksagon"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "7df72302784e11429285002b7a98f9b2b777dc4470ba494a6bf5a9e040b30bec",
+      "description_sha256": "81679c6b3c0db1ff00da2a726b6f30071809168455e1b914c66dfed826532461",
+      "previous_package_sha256": "e8938b57236b9b9e2c46e3fdae4e3ea9a7dc26fe34da9ad14ef902cd6790ca5e"
+    }
+  ]
 }

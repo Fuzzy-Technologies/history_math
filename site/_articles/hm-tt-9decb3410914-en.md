@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-9decb3410914
-description: 'A traditional grass-divination custom becomes a probability
-  problem: what is the chance that six paired blades of grass form one ring?'
+description: "An old divination custom becomes a probability problem about randomly pairing the ends of six grass blades. The chance of forming one large ring is 8/15: avoiding smaller closed loops at successive steps gives factors of 4/5 and 2/3."
 type: problem
 tags:
   - History of mathematics

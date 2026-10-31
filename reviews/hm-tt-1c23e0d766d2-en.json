@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-21",
-    "package_sha256": "1716bddeed8a69badd8f915ddd3741cbc06956fb4bf21720141a1da88405c386",
+    "package_sha256": "ba0cb6e3126e0f59c84a3d08ffdfa3b9731a412f1119ed5d7cd8a74b18d155e6",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/122#pullrequestreview-5606339186",
     "source_commit": "60c15d5b14ee6288ec8cdfd03e7abf1782bce65e",
     "source_review_id": 5606339186,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-21T21:16:35Z",
-    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged."
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -34,5 +34,15 @@
   "manual_changes": [
     "Replaced formula-only images fig-2 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending.",
     "Removed the duplicate record-prime display and its former-image caption. Typeset the existing record primes, Fermat and Mersenne expressions and parameter conditions inline."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "e9d7c7d7ab3b8941375f7b36da651b44bb3822ca99b39ffae32ed9df2908eda3",
+      "description_sha256": "33bca4db29efb1ad22db39a9c4648f1911df28348e2e3cc93bb6b506d7943f0d",
+      "previous_package_sha256": "1716bddeed8a69badd8f915ddd3741cbc06956fb4bf21720141a1da88405c386"
+    }
   ]
 }

@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-21",
-    "package_sha256": "0a4f86700b7fea72ca58a0a3dac6f865220222e1eec6fe7f7287d44412d592cf",
+    "package_sha256": "c847c0158d3b7cc52f95747725479593a6edb91bae8e3d9db15dc3002baeab02",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/222#pullrequestreview-5606339676",
     "source_commit": "8aa827695f0b1740c7e05236bfd3b7b6803f5a03",
     "source_review_id": 5606339676,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-21T21:16:37Z",
-    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged."
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -26,5 +26,15 @@
   "manual_changes": [
     "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged.",
     "Replaced formula-only images fig-3 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "e59a20ffa0becb8b9948418e743ade902113e83d5ca784adbb8a69117640f674",
+      "description_sha256": "a296f697d515b050314cf02b004947184ea64fc12ea54d0097f155e30fa170aa",
+      "previous_package_sha256": "0a4f86700b7fea72ca58a0a3dac6f865220222e1eec6fe7f7287d44412d592cf"
+    }
   ]
 }

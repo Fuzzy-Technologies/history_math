@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-9a46ef2753ad
-description: A first visit to Moscow’s Central House of Scientists and its mathematics section, including a meeting
-  in memory of Yuri Manin.
+description: "A visit to Moscow’s Central House of Scientists introduces its scientific and cultural life. The account centres on a March 2024 Mathematics Section meeting in memory of Yuri Manin and on discussions connecting mathematics with other sciences."
 type: essay
 tags:
 - History of mathematics

@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-8cc653e7a5c5
-description: The Pythagoreans’ five-pointed star connects the golden ratio, classical means and a long history of
-  symbolic uses.
+description: "The diagonals of a regular pentagon form a pentagram linking the golden ratio with arithmetic, geometric and harmonic means. The geometrical properties of this five-pointed star are accompanied by a history of its use as a symbol."
 type: essay
 tags:
 - History of mathematics

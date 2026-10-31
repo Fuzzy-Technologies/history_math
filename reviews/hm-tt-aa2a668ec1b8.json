@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-22",
-    "package_sha256": "e5fa06d3d4ebdf2a32042be8335c2484b42b617a6ece0ba6d1372c5357a9e06b",
+    "package_sha256": "f2a2a4e0a9481cea184856ef4600093edbf6b0534ede02a6d329fbb07336c44c",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/276#pullrequestreview-5609871665",
     "source_commit": "cd40da898168dfc815e4f05eece2e4bf666033e4",
     "source_review_id": 5609871665,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-22T06:01:16Z",
-    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions, translations and image bytes are unchanged."
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions, translations and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -41,6 +41,16 @@
       "approved_at": "2026-10-20T16:28:59Z",
       "prepared_from_commit": "7203e4588b0b1c5faf2cc94c602f66ecce3c3898",
       "post_review_changes": "Only owner-requested em-dash spacing; image hashes and dimensions are unchanged."
+    }
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "9e236961d3c765426c8ad63152755146dfe7c33fad91d0e32f957f91e56590ce",
+      "description_sha256": "2229b7d566b5cc135410e675e3ed717a5359c7192724c2a5d34808b567e2046f",
+      "previous_package_sha256": "e5fa06d3d4ebdf2a32042be8335c2484b42b617a6ece0ba6d1372c5357a9e06b"
     }
   ]
 }

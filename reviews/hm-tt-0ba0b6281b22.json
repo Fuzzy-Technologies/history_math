@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-22",
-    "package_sha256": "e484f7b370569dc1931d327e4e25388636faf7cb7242760197b66dc0da5a7600",
+    "package_sha256": "fcd3306c31da9abbe75196da6d04907f3837545aeb33dad0b34ccd19f78b27b3",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/132#pullrequestreview-5609879521",
     "source_commit": "3d4b259b8faf06d2daf2e0488d91df83610113b3",
     "source_review_id": 5609879521,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-22T06:02:09Z",
-    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions, translations and image bytes are unchanged."
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions, translations and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -28,5 +28,15 @@
     "Replaced formula-only images fig-2 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending. Made the omitted denominator bound b <= n explicit in the definition; all five listed sequences were checked by exact rational enumeration. Corrected 0/n to 0/1 in the adjacent reduced-fraction definition.",
     "Used explicit brace delimiter commands and braced fraction arguments for Markdown preview compatibility. Repaired the numbered F6 answer and the final induction equality.",
     "At the owner request, placed F_5 and F_6 on one line each and converted every mathematical expression and symbol in surrounding prose to inline TeX in both languages; sequence terms and mathematical statements are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "e3120f4dc05654364af459f5681bda942cc6e01120052d44716dbf385e609139",
+      "description_sha256": "12907cf65b6757c09a0db1774fb18f2724e98ab1f578bbeb4ca180863292471f",
+      "previous_package_sha256": "e484f7b370569dc1931d327e4e25388636faf7cb7242760197b66dc0da5a7600"
+    }
   ]
 }

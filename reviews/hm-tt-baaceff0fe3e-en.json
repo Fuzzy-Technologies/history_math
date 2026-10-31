@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-22",
-    "package_sha256": "aac5fb2211a593a655aa03e4aa61d74a517e9bf7ee185b381652d8654c31daec",
+    "package_sha256": "e8758bae7946c4eda053a5d3cebdd91c0d3eb33976d1a8bcf67d7959896c7f55",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/59#pullrequestreview-5616492430",
     "source_commit": "4da227236e42cb2d236bd889acb6eb4824ba9147",
     "source_review_id": 5616492430,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-22T15:15:41Z",
-    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -22,5 +22,15 @@
       "date": "2026-04-25",
       "url": "https://teletype.in/@history_math/maori-eleven-counting"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "85bd2d704ea24afdb4824f50122a91db680b7e9cd95ef34e242b58042dce2143",
+      "description_sha256": "82cbc69bd11f82f596f38994844eb03d764b34810d42c12e4c05c78ea1f26de6",
+      "previous_package_sha256": "aac5fb2211a593a655aa03e4aa61d74a517e9bf7ee185b381652d8654c31daec"
+    }
+  ]
 }

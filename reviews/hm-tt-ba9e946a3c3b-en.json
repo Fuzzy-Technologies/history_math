@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "0decf8a8210df7c7781ebd5e73765933d88cac161550cc32cc5d3203cde1bdaa",
+    "package_sha256": "e865ed7c71bba42664ac5f818604a49e6b7275eb58885f4ceb859228d826b39e",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Мержим.",
     "source_commit": "ab817272cb337c19c08981b76c9812e286dd548c",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/207"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/207",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -21,5 +22,15 @@
       "date": "2023-11-09",
       "url": "https://teletype.in/@history_math/Arifmetika-pifagorejcev-figurnye-chisla-11-09"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "87f6f59a1d69b07677c8aa86dd8ef84ef627589c768528c7effae3f4840f207c",
+      "description_sha256": "24f0c27916b912497138397fd9adc8cde1658c02ff360ecd9568582da695428f",
+      "previous_package_sha256": "0decf8a8210df7c7781ebd5e73765933d88cac161550cc32cc5d3203cde1bdaa"
+    }
+  ]
 }

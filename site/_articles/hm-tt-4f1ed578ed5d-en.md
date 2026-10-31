@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-4f1ed578ed5d
-description: A travelling seminar brings together mathematics educators across Russia to discuss teaching, research
-  and the preparation of teachers.
+description: "Mordkovich’s Seminar brings together researchers in school and university mathematics education, with 42 meetings held across Russia in 1987–2023. Particular attention goes to the Yelabuga meetings of 1994 and 2011, their participants and teaching workshops."
 type: essay
 tags:
 - History of mathematics

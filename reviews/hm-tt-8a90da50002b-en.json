@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-22",
-    "package_sha256": "b6a16bff0ca030e51928e95d8fbb61eb79e2c9d7bb869af0d0bde1874a262922",
+    "package_sha256": "c91167cf267036d1f0648eb6e630d7e8b9d709f068a714e2fd316af7650349b9",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/73#pullrequestreview-5617307481",
     "source_commit": "1b22aed0714c7782279f25a80a5dedf15e55fb7a",
     "source_review_id": 5617307481,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-22T16:11:52Z",
-    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -22,5 +22,15 @@
       "date": "2025-07-09",
       "url": "https://teletype.in/@history_math/t-square-history"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "e64efd594ea759767ea24d2e66c28f1f2690ac821ed5c88f7348a7887bdff687",
+      "description_sha256": "68fac957aa365441f017ac0fef2b1d7ac0c0b79169b96fdbed0368f211b000c2",
+      "previous_package_sha256": "b6a16bff0ca030e51928e95d8fbb61eb79e2c9d7bb869af0d0bde1874a262922"
+    }
+  ]
 }

@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "cc06d96dafb514a6bbeae856c187d596a186bda15118c96cbdacbbb059ee6544",
+    "package_sha256": "4b41e162ab22ae9bcdc86f898b7b8645fea0a44da65916683d55ed1d1e7b919c",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Ничего там исправлять не надо, мержим.",
     "source_commit": "b0ecd5be71f8a2bb576526f06c7b7de16cedbecd",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/153"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/153",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -36,5 +37,15 @@
       "date": "2024-06-09",
       "url": "https://teletype.in/@history_math/Zadacha-Forda-kadrovyj-rebus-06-09"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "0c24509477bff1d4a55ec02bc8a8c3ab85ba0abf316376ea282bd25b77904b8c",
+      "description_sha256": "c5e606d0e0d1933fcff2f99f488d2caa51481c5c42ea928a86def88d302c0648",
+      "previous_package_sha256": "cc06d96dafb514a6bbeae856c187d596a186bda15118c96cbdacbbb059ee6544"
+    }
+  ]
 }

@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "89034b694b5b151d235fdecdb283509f5d7c8d88d9b94ae57cde1cdfd8ec2b5b",
+    "package_sha256": "0b88c0ecda2aa299ac7f7187dd1176f5ed777ca4d12877bd2c2e8d065223ff37",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Мержить.",
     "source_commit": "3022ed0a610854face84505980c2f91aa3ce7a26",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/218"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/218",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -21,5 +22,15 @@
       "date": "2023-10-05",
       "url": "https://teletype.in/@history_math/Kakoj-on-Nikolaj-Ivanovich-Lobachevskij"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "e048bf3fa322c028bc62a7f60a6f9bd6470b0d5a825a00f47895595763b276ca",
+      "description_sha256": "ce04c5530c40f27602be9c59bff80038bb1b28f7f91aa3452730a10248a0bbb6",
+      "previous_package_sha256": "89034b694b5b151d235fdecdb283509f5d7c8d88d9b94ae57cde1cdfd8ec2b5b"
+    }
+  ]
 }

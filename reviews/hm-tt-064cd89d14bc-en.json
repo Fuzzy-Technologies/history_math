@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "ae273646a1de9f6a8dd77b02d850ecf6762f79e9592a1c2bbd68b16fcc7e039c",
+    "package_sha256": "3ff3f5a7342655bafb93f5a8c61ee4f435fa80d0a2b43493f3aad2ad3a227cd4",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Оставь как есть, мержим.",
     "source_commit": "6d6b42b1989200781f9c584e524248b63e7c9469",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/157"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/157",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -21,5 +22,15 @@
       "date": "2024-05-19",
       "url": "https://teletype.in/@history_math/Istoriya-matematiki-dlya-nastoyashchih-matematikov-05-19"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "080765ff099da9a0ac2fe0fc41d813a48fe033fa407e89a771f6d2529175fd81",
+      "description_sha256": "65b902b1e520a14666dc0fd65059204df7cc38f4fbd778bcb9dce5fd2f933278",
+      "previous_package_sha256": "ae273646a1de9f6a8dd77b02d850ecf6762f79e9592a1c2bbd68b16fcc7e039c"
+    }
+  ]
 }

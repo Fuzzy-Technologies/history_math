@@ -9,8 +9,7 @@ authors:
 author: Timur Gilmullin
 lang: en
 translation_key: hm-tt-d5228b66d7da
-description: 'Author: Timur Gilmullin. A graduate of Yelabuga''s pedagogical university reflects on how teaching skills
-  support a career in IT.'
+description: "Drawing on his career, Timur Gilmullin shows how teacher training helps engineers teach colleagues, lead teams and continue learning. A practical account of a competency map connects knowledge, abilities and skills with career progression in DevOps."
 type: essay
 tags:
 - mathematics

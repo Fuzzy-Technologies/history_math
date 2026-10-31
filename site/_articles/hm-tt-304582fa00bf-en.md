@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-304582fa00bf
-description: A mental shortcut estimates doubling time under compound growth by dividing 72 by the percentage growth
-  rate.
+description: "The Rule of 72 estimates how long a deposit takes to double by dividing 72 by the annual percentage rate. Its connection with compound interest explains the approximation and its use for other processes of exponential growth and decay."
 type: essay
 tags:
 - Life hacks

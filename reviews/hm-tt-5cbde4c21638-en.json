@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-23",
-    "package_sha256": "6b07f7cc880aeda3898b777ce56a8e65639d7072313ae9770f2e7b2b6fed69a9",
+    "package_sha256": "67ea4681850bba091b18c5edb9ec857aca34a8c19501d26e542f100a46e11e09",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/112#pullrequestreview-5626007086",
     "source_commit": "817ebc39433dfa5091ca0c3abb8e829b7371980e",
     "source_review_id": 5626007086,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-23T08:51:20Z",
-    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -44,5 +44,15 @@
       "date": "2025-01-12",
       "url": "https://teletype.in/@history_math/logarithmic-tables"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "2fc99cb477a261360f2efb00627f3e4736245a4b1c53438cc35894ca5499a25c",
+      "description_sha256": "9c049de6c51629d7a39c20db1d1fda10f55b2f47154b116e4728850fcd93d43f",
+      "previous_package_sha256": "6b07f7cc880aeda3898b777ce56a8e65639d7072313ae9770f2e7b2b6fed69a9"
+    }
+  ]
 }

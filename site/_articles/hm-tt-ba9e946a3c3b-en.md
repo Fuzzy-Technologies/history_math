@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-ba9e946a3c3b
-description: '“All is number”: Pythagorean arithmetic connected numbers with geometric arrangements of points, laying
-  foundations for the study of figurate numbers.'
+description: "The Pythagoreans represented numbers with dots, linking arithmetic to geometry. Triangular, square and pentagonal numbers arise as sums of arithmetic progressions, while the connection between squares and consecutive triangular numbers shows the power of this visual approach."
 type: essay
 tags:
 - History of mathematics

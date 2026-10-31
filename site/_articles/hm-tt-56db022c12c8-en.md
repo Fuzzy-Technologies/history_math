@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-56db022c12c8
-description: A. N. Kolmogorov distinguished four broad periods in mathematical history, defined by their methods, results
-  and ideas.
+description: "Kolmogorov’s periodization distinguishes mathematics’ origins, elementary mathematics, the mathematics of variable quantities and the modern era. The stages trace a path from counting and measurement to deduction, functions and calculus, then revised foundations and new theories."
 type: essay
 tags:
 - History of mathematics

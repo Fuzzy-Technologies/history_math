@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-eaba3ff1d327
-description: Leonardo da Vinci was a brilliant Renaissance painter and an extraordinarily gifted inventor whose
-  interests ranged across mathematics, mechanics, anatomy and natural science.
+description: "Leonardo da Vinci's scientific work connected art with mechanics, optics, anatomy and geometry. His drawings and engineering designs show how observing nature and seeking to unite theory with practice nourished his artistic work."
 type: essay
 tags:
 - History of mathematics

@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-3142eeca2607
-description: A French curve is a shaped drawing template used to construct and check curves in drafting and design.
+description: "French curves help draw smooth curves through plotted points, while profile templates check component contours. Their uses in drafting, teaching and dressmaking lead to Chebyshev nets and the mathematics of cutting clothes."
 type: essay
 tags:
 - Instruments

@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-ea92383ab5d3
-description: 'A new book by Mansur Gilmullin, The Mathematician’s Bible: Foundations of Higher and Linear Algebra,
-  has appeared. What does it cover, and why do we need algebra?'
+description: "RSA, principal component analysis and elliptic curves show how abstract algebra addresses practical problems. Mansur Gilmullin's The Mathematician's Bible connects these applications with a modular course in linear algebra, groups, rings, fields and number theory."
 type: essay
 tags:
 - History of mathematics

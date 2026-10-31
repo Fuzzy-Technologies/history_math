@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-a219e204c4b1
-description: Perelman’s “Amazing Memory” trick lets a performer recover large numbers from card labels through a
-  simple arithmetic code rather than memorization.
+description: "A trick inspired by Perelman makes the performer appear to remember many large numbers on cards. Its secret is a letter-and-digit code and four simple arithmetic operations, explained in a worked example that lets readers perform it themselves."
 type: essay
 tags:
 - Magic tricks

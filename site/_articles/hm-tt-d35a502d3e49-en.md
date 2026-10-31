@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-d35a502d3e49
-description: A 12th-century calendar treatise by Kirik of Novgorod asks how many months, weeks, days and hours a
-  person has lived.
+description: "In his 1136 Teaching, Kirik of Novgorod connected arithmetic with the church calendar, leap years and cycles of time. A problem about an age of 26 illustrates conversion into months, weeks, days and hours, including differences between medieval and modern hour-counting."
 type: problem
 tags:
 - History of mathematics

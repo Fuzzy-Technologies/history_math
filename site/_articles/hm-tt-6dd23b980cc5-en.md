@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-6dd23b980cc5
-description: Archimedes’ arbelos, bounded by three semicircles, reveals striking relationships between areas, arcs
-  and straight lines.
+description: "An arbelos is the region between three semicircles drawn on a segment and its two parts. Its perimeter equals the circumference of the circle on the whole segment; its area equals that of the circle whose diameter is the perpendicular from the division point to the large semicircle."
 type: problem
 tags:
 - History of mathematics

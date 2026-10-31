@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-21",
-    "package_sha256": "db2f000ce15d6bd16f4f411a9ecf4bdadd54ee3f1ec44da61f3a315d52080c6d",
+    "package_sha256": "87399e05066b38888a002c8503f8f41392770ec422fa2d17d57132f658a7cc09",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/77#pullrequestreview-5606338064",
     "source_commit": "e9de5f8e96fda4d27adff3c6c0323234c29bcaa1",
     "source_review_id": 5606338064,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-21T21:16:29Z",
-    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged."
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -26,5 +26,15 @@
   "manual_changes": [
     "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections.",
     "Replaced formula-only images fig-2 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending. Transcribed the short text-only problem crop with its title, problem number and bibliographic caption; retained the tetrahedron diagram."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "a780f7a0131430a2a2989d4999450b0e15a197b4f80f1976ba328c73481e5b96",
+      "description_sha256": "910f8d94f3d495d221f153b97fa089f01c4bfe8ef4c28848cd6809e1f6e91867",
+      "previous_package_sha256": "db2f000ce15d6bd16f4f411a9ecf4bdadd54ee3f1ec44da61f3a315d52080c6d"
+    }
   ]
 }

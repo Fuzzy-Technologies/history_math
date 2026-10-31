@@ -2,6 +2,8 @@ import {readFileSync, writeFileSync, mkdirSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {checkSources, checkArticle} from './article-checks.mjs';
+import {digestProblems} from './article-digest.mjs';
+import {parseArticle} from './article-frontmatter.mjs';
 import {checkBrowser} from './article-browser.mjs';
 import {reportLanguage, overall, humanReport, checksForProfile} from './article-messages.mjs';
 import {imageInventory} from './external-originals.mjs';
@@ -31,6 +33,12 @@ try {
   report.findings.push(...source.findings);
   report.findings.push(...imageSizeFindings(imageInventory(root), publicationReplacements(root), publicationSizeExceptions(root)));
   report.articles = source.articles;
+  for (const article of source.articles) {
+    const {data} = parseArticle(readFileSync(resolve(root, article.file), 'utf8'));
+    for (const detail of digestProblems(data.description, data.lang)) {
+      report.findings.push({code: 'HM_DIGEST', severity: 'error', file: article.file, line: 1, detail});
+    }
+  }
   for (const template of ['templates/article.md', 'templates/minimal-article.md']) {
     report.findings.push(...checkArticle(readFileSync(template, 'utf8'), template, root).findings.filter(x => x.severity === 'error'));
   }

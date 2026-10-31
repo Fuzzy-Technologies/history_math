@@ -5,7 +5,8 @@
     "status": "approved",
     "reviewed_by": "Timur Gilmullin (Tim55667757)",
     "date": "2026-10-10",
-    "package_sha256": "afaddc51c730b8badeffde934db92b9d19cf02ea97eb395255d8ee7ad7b4e665"
+    "package_sha256": "0bd9eb3841e76ded99ccf1441a3528c4916e05528fc9cbb6af29372af75b260c",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -30,5 +31,15 @@
   },
   "manual_changes": [
     "Owner-requested Teletype migration date correction on 2026-10-11; only publication/source metadata changed, editorial text and selected image bytes preserved."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "bf5ee6a4277ee54c0cccbb3c6096d1c5843d57ba93a5fe1d68cdd162edf0e979",
+      "description_sha256": "7cd4550539e5830a402d5fc1bf5a3bbfe0a891947d3c78181dbed70f7aeb80b0",
+      "previous_package_sha256": "afaddc51c730b8badeffde934db92b9d19cf02ea97eb395255d8ee7ad7b4e665"
+    }
   ]
 }

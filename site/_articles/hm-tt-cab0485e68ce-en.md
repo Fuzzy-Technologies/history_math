@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-cab0485e68ce
-description: The 166th Mathematics Teachers' Seminar explored the history of Kvant and the possibilities of its new digital
-  archive.
+description: "A mathematics teachers’ seminar in December 2025 connected Kvant’s history with the launch of kvant.digital. Its sections, problem book and book series show how a searchable digital archive continues a culture of independent mathematical reading."
 type: essay
 tags:
 - history_of_mathematics

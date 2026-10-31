@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-fd033cf19830
-description: Qualitative mathematical problems invite quick, imaginative reasoning about mathematical properties
-  rather than lengthy calculation, with examples for the classroom.
+description: "Qualitative problems use logic, imagination and the properties of objects with minimal calculation. Examples involving a compass, a five-pointed star, a letter fraction and sharing a cake show how these tasks can spark curiosity in lessons and quizzes."
 type: essay
 tags:
 - History of mathematics

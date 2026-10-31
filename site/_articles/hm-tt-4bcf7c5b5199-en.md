@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-4bcf7c5b5199
-description: A rangefinder determines an object’s distance remotely. Geometric and active instruments are used in
-  surveying, military work, astronomy and photography.
+description: "Rangefinders measure distance remotely: geometric instruments use a baseline and angle, while active instruments time a signal’s outward and return journey. Their applications include Petrushevsky’s instrument for coastal artillery."
 type: essay
 tags:
 - Instruments

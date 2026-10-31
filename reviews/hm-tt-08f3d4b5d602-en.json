@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "1b041d13c9dbdfdf503f92d424b5fd8b4855ae600285d590791c2baa9bf2fc35",
+    "package_sha256": "3471e261babafbc9618ce9ab85f4aacda007d58721eab5af19210748436ddd01",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Мержи.",
     "source_commit": "130502143421fbb38b8f551ba303058c8e6e8ed3",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/234"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/234",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -21,5 +22,15 @@
       "date": "2023-09-04",
       "url": "https://teletype.in/@history_math/V-surovye-gody-voennye-09-04"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "42bb1d001e11433ee3bd83add27e2bc3c92523733fb0008fb9cec4cc924fa8e6",
+      "description_sha256": "1fcd72cfea6bb263c4b84b9958e794fefd88f066995a4300b3a49d87d309ea2c",
+      "previous_package_sha256": "1b041d13c9dbdfdf503f92d424b5fd8b4855ae600285d590791c2baa9bf2fc35"
+    }
+  ]
 }

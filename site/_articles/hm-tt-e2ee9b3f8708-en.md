@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-e2ee9b3f8708
-description: Girih patterns in Islamic art bring together geometry, symmetry and craftsmanship, with intriguing
-  connections to the golden ratio and quasiperiodic tilings.
+description: "Girih patterns connect Islamic art with pentagonal geometry, the golden ratio and tilings. Their proposed resemblance to quasiperiodic structures is considered alongside disputes over the periodicity and dating of the Darb-i Imam ornaments."
 type: essay
 tags:
 - History of mathematics

@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-dc9f087116bd
-description: Raphael's School of Athens brings ancient thinkers into a Renaissance vision of dialogue, mathematics and
-  the harmony of art, philosophy and science.
+description: "Raphael's School of Athens gathers thinkers from different periods into an ideal community of teachers and pupils. Its composition and proposed identifications are examined with particular attention to mathematics, Pythagoras, Euclid and the dialogue between antiquity and the Renaissance."
 type: essay
 tags:
 - history_of_mathematics

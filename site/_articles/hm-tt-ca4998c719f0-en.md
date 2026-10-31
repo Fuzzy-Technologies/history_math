@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-ca4998c719f0
-description: The alidade is the rotating sighting component of several surveying and astronomical instruments.
+description: "An alidade is a rotating sighting ruler used to read angles against a graduated circle. It forms part of instruments such as the astrolabe, sextant and theodolite, measuring directions in a horizontal, vertical or other chosen plane."
 type: essay
 tags:
 - Instruments

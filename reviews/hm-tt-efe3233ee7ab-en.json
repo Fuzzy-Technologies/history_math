@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-22",
-    "package_sha256": "3d6903f3cb65e43d75b86d49fc570cde0096b4174bf2f6d2148314b1d144c161",
+    "package_sha256": "4fe30c046d9a941a50a2c0bcd1b1a21c62a73859a7d3588f852247af735e2b5c",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/72#pullrequestreview-5616514079",
     "source_commit": "8e88c01df8649c547a7220a25741ca25f4e3a020",
     "source_review_id": 5616514079,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-22T15:17:17Z",
-    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -22,5 +22,15 @@
       "date": "2025-10-03",
       "url": "https://teletype.in/@history_math/mordkovich-seminar-2025"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "f869227e470b9bc1ad761c54db5dc2fe8cda5f87f75434f56a25a8f08a3f0ce7",
+      "description_sha256": "0e592280ee43b75ba142cd9319bba7b817b9b58490f6d813b9d269fe881d1fa9",
+      "previous_package_sha256": "3d6903f3cb65e43d75b86d49fc570cde0096b4174bf2f6d2148314b1d144c161"
+    }
+  ]
 }

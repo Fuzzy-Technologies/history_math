@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-e859aebffc4e
-description: 'The Greek cross, formed from five equal squares, gives rise to a dissection puzzle: cut it into pieces
-  that can be rearranged into a square.'
+description: "A Greek cross made of five equal squares becomes a dissection puzzle: two straight cuts produce four pieces that can be rearranged into a square. Illustrated solutions show several approaches, including a family of dissections using parallel cut lines."
 type: problem
 tags:
 - History of mathematics

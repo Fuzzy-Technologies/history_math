@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-36ba9a4b7d39
-description: The slide rule turns multiplication and division into operations on logarithmic scales and served generations
-  of engineers before pocket calculators.
+description: "The slide rule replaces multiplication and division with addition and subtraction of logarithms. Its history, scales and calculation methods explain how engineers obtained approximate results before calculators became widespread."
 type: instrument
 tags:
 - Instruments

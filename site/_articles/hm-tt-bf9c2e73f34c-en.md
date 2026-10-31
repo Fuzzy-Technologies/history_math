@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-bf9c2e73f34c
-description: Flexagons are folded paper models whose hidden faces appear as they are flexed. Their history, mathematical
-  interest and a trihexaflexagon construction.
+description: "A flexagon folds from a paper strip and reveals hidden surfaces when flexed. Arthur Stone’s discovery and the Flexagon Committee’s work accompany an explanation of model names and instructions for making a trihexaflexagon from ten equilateral triangles."
 type: essay
 tags:
 - Experiments

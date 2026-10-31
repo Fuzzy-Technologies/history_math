@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-22",
-    "package_sha256": "0adeed4428247957365dbcda1f90b75a02a1b67d5de740e58a073036bdcd209e",
+    "package_sha256": "c532387b6d3a20ed27931e783c6c534f89ea3919aaf86054980d6a1c063987bc",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/58#pullrequestreview-5616489118",
     "source_commit": "f2c9aecb2af5fc217096875bde599baf133f0647",
     "source_review_id": 5616489118,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-22T15:15:26Z",
-    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -22,5 +22,15 @@
       "date": "2026-04-28",
       "url": "https://teletype.in/@history_math/ornaments-girih"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "e7a82b20ab632ed30e43d4e4d4d0a202903e343974b6ed0845e57fa83f59b4d9",
+      "description_sha256": "a06122ac5ceed13d28ab94819e24bffc6ee8f419b1a68749d2910602c4b31153",
+      "previous_package_sha256": "0adeed4428247957365dbcda1f90b75a02a1b67d5de740e58a073036bdcd209e"
+    }
+  ]
 }

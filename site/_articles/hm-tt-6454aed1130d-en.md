@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-6454aed1130d
-description: The telescopic alidade measures height differences, distances and vertical angles and plots survey
-  directions on a plane table.
+description: "A telescopic alidade measures distances, vertical angles and differences in elevation while plotting points on a field drawing board. Its construction explains how the telescope, stadia hairs and rule work together in plane-table surveying."
 type: instrument
 tags:
 - Instruments

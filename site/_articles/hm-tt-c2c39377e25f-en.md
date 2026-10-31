@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-c2c39377e25f
-description: On the 125th anniversary of his birth.
+description: "During evacuation to Yelabuga, Vladimir Fock developed integral-equation theory for radio-wave diffraction. Family and colleagues’ recollections connect his wartime life with contributions to quantum physics, gravitation and the defence of science."
 type: essay
 tags:
 - History of Mathematics

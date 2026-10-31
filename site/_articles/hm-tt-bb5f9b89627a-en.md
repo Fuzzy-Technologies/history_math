@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-bb5f9b89627a
-description: Newton's image of a boy finding pebbles beside an unexplored ocean of truth introduces his work on calculus,
-  mechanics, algebra and optics.
+description: "Newton’s method of fluxions linked changing quantities to their rates of change, enabling solutions in analysis and mechanics. His scientific biography also covers infinite series, algebra, optics and difficulties in justifying infinitesimals."
 type: essay
 tags:
 - history_of_mathematics

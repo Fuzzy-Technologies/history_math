@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-a319495ed9d8
-description: An old recreational problem by Ye. I. Ignatyev leads from soldiers’ dinner bill to the Josephus recurrence.
+description: "In Ignatyev’s puzzle, 21 soldiers and an innkeeper leave a circle one by one, every seventh person departing, and the last pays. The Josephus recurrence shows that counting must begin with the sixth soldier to the innkeeper’s left to leave him last."
 type: problem
 tags:
 - History of mathematics

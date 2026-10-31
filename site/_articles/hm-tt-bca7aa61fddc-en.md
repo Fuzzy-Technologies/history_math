@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-bca7aa61fddc
-description: De Gua’s theorem extends the Pythagorean theorem to the face areas of a right tetrahedron; a short
-  proof uses orthogonal projections.
+description: "De Gua’s theorem generalizes Pythagoras: in a right tetrahedron, the squared area of the face opposite the right trihedral angle equals the sum of the other three squared face areas. A proof uses orthogonal projections and direction cosines."
 type: problem
 tags:
 - History of mathematics
