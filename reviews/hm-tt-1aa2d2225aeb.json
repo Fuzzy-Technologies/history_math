@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-1aa2d2225aeb",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 7,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-02-25",
+      "url": "https://teletype.in/@history_math/Arifmetika-pifagorejcev-pifagorovy-trojki-02-25"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "bc812a60c9fe2e46a370818fc4b87aa94a165adf21a75c9cec5f2bda44be9786",
+      "description_sha256": "085f8fedc8684f6b66cb691a95165dead768c04a3a6d629f0cd519f5bc66b7e8"
+    }
+  ]
+}
