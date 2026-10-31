@@ -1,0 +1,48 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-46f394866e94-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "newton-first-edition",
+      "question": "Figure 11 dates the first edition of Newton’s Principia to 1686. Should this be distinguished from the first publication date of 1687? The source caption is retained.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "bacon-quotation-attribution",
+      "question": "The quotation about knowing mathematics is placed beside a portrait of Francis Bacon. Should its attribution be verified, particularly whether Roger Bacon is intended? The original quotation and figure placement are retained.",
+      "blocking": false,
+      "state": "open"
+    },
+    {
+      "id": "newton-life-dates",
+      "question": "Figure 10 dates Newton to 1642–1726. Should the calendar convention be stated, since modern Gregorian dates are often given as 1643–1727? The original dates are retained.",
+      "blocking": false,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 11,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-14",
+      "url": "https://teletype.in/@history_math/What-is-Math"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "c16bc914b4baff3e699f47bbd4db6ef7fb9fc486e017f6a8a7ac043b5584e065",
+      "description_sha256": "89a96ebb9c39b6e8f07c7c75f3e07f16af01d939ed2e742c51bf848ea856902e"
+    }
+  ]
+}
