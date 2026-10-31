@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-9c6b66f64c63-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "dieulefit-caption-place",
+      "question": "The figure-2 caption names “Delphi (Dieulefit)”. Please confirm that the Russian place-name should be Dieulefit, France, rather than Delphi. Both forms are retained in the English caption.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "bourbaki-foundations-notation",
+      "question": "Please verify the precise axiomatic foundation described as Zermelo–Fraenkel in Bernays and Gödel’s development, and the collective first-introduction claim for N, Z, Q, R, C. The source statements are preserved.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-04-06",
+      "url": "https://teletype.in/@history_math/Burbaki-04-06"
+    }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "e4d92f93e77879b9bf56a1037d54755530b62ebd70768f35243869b93ff7c504",
+      "description_sha256": "60a8144b82c569f713233ee08d9561eb444fd1080ba8879c01e2865af038e31e"
+    }
+  ]
+}
