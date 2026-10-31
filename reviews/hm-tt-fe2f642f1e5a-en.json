@@ -1,0 +1,36 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-fe2f642f1e5a-en",
+  "approval": {
+    "status": "pending"
+  },
+  "questions": [
+    {
+      "id": "fibonacci-dates",
+      "question": "The figure caption dates Fibonacci to 1170–1240, while the article body gives c. 1170–1250. Which date should be used? Both source versions are retained.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-06-03",
+      "url": "https://teletype.in/@history_math/Priznak-delimosti-na-19-ehkzotika-v-teorii-chisel-06-04"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "f35831c195a7665f26555393253b1919759061da65e5370ca229af4b64dc3f73",
+      "description_sha256": "2c63624649b27127ee68a54e0325fcd1f4abbd67295dccd93232b35d82bd25ab"
+    }
+  ]
+}
