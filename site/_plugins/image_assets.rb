@@ -7,10 +7,31 @@ require_relative "external_originals"
 module HistoryMath
   MIGRATED_ORIGINAL = %r{\A/assets/images/hm-tt-[a-z0-9]+/[a-z0-9.-]+\z}.freeze
 
+  def self.original_image_delivery(site, path)
+    entry = image_inventory(site).fetch(path)
+    external = external_original(entry, path)
+    filename = File.basename(path)
+    delivery = {"sha256" => entry.fetch("sha256"), "bytes" => entry.fetch("bytes"), "filename" => filename}
+    unless external
+      return delivery.merge("url" => original_image_url(site, path))
+    end
+    record = site.data.fetch("image_publication", {}).fetch("replacements", {})[path]
+    if record
+      valid = record["source_sha256"] == entry["sha256"] && record["source_bytes"] == entry["bytes"] &&
+        record["width"] == entry["width"] && record["height"] == entry["height"] &&
+        record["sha256"].to_s.match?(/\A[a-f0-9]{64}\z/) && record["bytes"].is_a?(Integer) &&
+        record["bytes"].positive? && record["bytes"] <= 15_000_000 &&
+        record["filename"] == filename.sub(/\.[^.]+\z/, ".jpg")
+      raise ArgumentError, "Invalid S3 publication replacement" unless valid
+      delivery = {"sha256" => record["sha256"], "bytes" => record["bytes"], "filename" => record["filename"]}
+    end
+    delivery.merge("storage" => "s3", "url" => "https://storage.yandexcloud.kz/history-math-media-kz/originals/#{delivery['sha256']}/#{delivery['filename']}")
+  end
+
   def self.original_image_url(site, path)
     entry = image_inventory(site).fetch(path, nil)
     external = external_original(entry, path) if entry
-    return external.fetch("url") if external
+    return original_image_delivery(site, path).fetch("url") if external
 
     unless path.to_s.match?(MIGRATED_ORIGINAL) && !site.config["article_review"]
       return "#{site.baseurl}#{path}"
@@ -34,6 +55,9 @@ module HistoryMath
   end
 
   module ImageAssets
+    def original_image_delivery(path)
+      HistoryMath.original_image_delivery(@context.registers[:site], path)
+    end
     def original_image_url(path)
       HistoryMath.original_image_url(@context.registers[:site], path)
     end

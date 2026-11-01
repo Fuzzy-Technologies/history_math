@@ -4,29 +4,33 @@ import {createHash} from 'node:crypto';
 import {TextDecoder} from 'node:util';
 import {githubData} from './backfill-media.mjs';
 import {storage, validateObject, mediaObject, responseBytes, sha256} from './s3-media.mjs';
+import {imageObjects, uniqueObjects} from './publication-media.mjs';
+import {publicationReplacements} from './image-publication.mjs';
 
 const repository = 'Fuzzy-Technologies/history_math';
 const origin = 'https://history-math.org';
 const revisionPattern = /^[a-f0-9]{40}$/;
 const binary = /\.(?:png|jpe?g|gif|webp|ico|woff2?|ttf|eot|zip|gz|7z|mp[34]|avi|mov)$/i;
-const keyExpression = /\bpdf\/[a-f0-9]{64}\/[a-z0-9][a-z0-9._-]*\.pdf\b/g;
+const keyExpression = /\b(?:pdf|originals)\/[a-f0-9]{64}\/[a-z0-9][a-z0-9._-]*\.(?:pdf|png|jpe?g|webp|gif|svg)\b/gi;
 
-export function sourcePdfReferences(text) {
+export function sourceMediaReferences(text) {
   if (typeof text !== 'string') throw new Error('Missing source reference text');
   const normalized = text.replaceAll('\\/', '/').replace(/\\([_-])/g, '$1');
   const keys = [...new Set(normalized.match(keyExpression) || [])];
-  // Stable local PDF aliases do not identify a historical content hash.
-  // Conservatively pin all versions of that filename.
-  const names = [...new Set([...normalized.matchAll(/\/assets\/pdf\/(?:en|ru)\/([a-z0-9][a-z0-9._-]*\.pdf)\b/g)].map(match => match[1]))];
-  for (const match of normalized.matchAll(/https?:\/\/storage\.yandexcloud\.kz\/history-math-media-kz\/pdf\/[^\s"'<>\])}]+/g)) {
+  // Stable aliases are resolved to current objects by the cleanup planner.
+  const names = [...new Set([...normalized.matchAll(/\/assets\/pdf\/(?:en|ru)\/([a-z0-9][a-z0-9._-]*\.pdf)\b/g)].map(match => match[1]))], versions = [];
+  for (const match of normalized.matchAll(/https?:\/\/storage\.yandexcloud\.kz\/history-math-media-kz\/(?:pdf|originals)\/[^\s"'<>\])}]+/g)) {
     let url;
     try {
       url = new URL(match[0].replaceAll('&amp;', '&'));
       const key = decodeURIComponent(url.pathname.slice('/history-math-media-kz/'.length));
-      if (/^pdf\/[a-f0-9]{64}\/[a-z0-9][a-z0-9._-]*\.pdf$/.test(key) && !key.includes('..')) keys.push(key);
+      if (/^(?:pdf|originals)\/[a-f0-9]{64}\/[a-z0-9][a-z0-9._-]*\.(?:pdf|png|jpe?g|webp|gif|svg)$/i.test(key) && !key.includes('..')) {
+        keys.push(key);
+        if (url.searchParams.has('versionId')) versions.push({key, version_id: url.searchParams.get('versionId')});
+      }
     } catch { /* Code, tests and documentation may contain non-URL templates. */ }
   }
-  return {keys: [...new Set(keys)], names};
+  return {keys: [...new Set(keys)], names, versions};
 }
 
 async function pages(api, path) {
@@ -49,7 +53,7 @@ export async function referenceHeads(api = githubData) {
   for (const pr of pulls) {
     if (pr.state !== 'open' || pr.head?.repo?.full_name !== repository || !revisionPattern.test(pr.head.sha || '') ||
         !Number.isSafeInteger(pr.number) || pr.number < 1 || seen.has(pr.number) || typeof (pr.body ?? '') !== 'string') {
-      throw new Error('An open PR cannot be fully inventoried; retention is blocked');
+      throw new Error('An open PR cannot be fully inventoried; cleanup is blocked');
     }
     seen.add(pr.number);
   }
@@ -62,19 +66,28 @@ export function referenceIdentity(snapshot) {
     pulls: snapshot.pulls.map(pr => [pr.number, pr.sha, pr.body_sha256]).sort((a, b) => a[0] - b[0])});
 }
 
-export async function retentionReferences({api = githubData, root, localRead = readFile} = {}) {
-  const heads = await referenceHeads(api), keys = new Set(), names = new Set(), cache = new Map();
-  const add = text => {
-    const found = sourcePdfReferences(text);
+export async function currentReferences({api = githubData, root, localRead = readFile, replacements = root ? publicationReplacements(root) : {}, readBlob} = {}) {
+  const heads = await referenceHeads(api), keys = new Set(), names = new Set(), cache = new Map(), objects = [], migrations = [], versions = [], releaseUrls = new Set();
+  const add = (text, aliases = true) => {
+    const found = sourceMediaReferences(text);
     for (const key of found.keys) keys.add(key);
-    for (const name of found.names) names.add(name);
+    if (aliases) for (const name of found.names) names.add(name);
+    versions.push(...found.versions);
+    if (aliases) for (const match of text.matchAll(/https:\/\/github\.com\/Fuzzy-Technologies\/history_math\/releases\/download\/article-originals-[a-f0-9]\/[^\s"'<>\])}]+/g)) { const url = new URL(match[0]); releaseUrls.add(url.origin + url.pathname); }
   };
   for (const pr of heads.pulls) add(pr.body);
   for (const revision of [...new Set([heads.master_sha, ...heads.pulls.map(pr => pr.sha)])]) {
+    const changed = new Set();
+    if (revision !== heads.master_sha) for (const pr of heads.pulls.filter(pr => pr.sha === revision)) {
+      const files = await pages(api, `/pulls/${pr.number}/files`);
+      if (files.length >= 3000) throw new Error('Incomplete PR changed-file inventory');
+      for (const file of files) if (file.status !== 'removed') changed.add(file.filename);
+    }
     const tree = await api(`/git/trees/${revision}?recursive=1`);
     if (tree.truncated !== false || !Array.isArray(tree.tree) || !tree.tree.length) throw new Error('Incomplete source reference tree');
     if (tree.tree.some(item => item.type === 'commit')) throw new Error('Submodule references require explicit review');
-    for (const item of tree.tree.filter(item => item.type === 'blob' && !binary.test(item.path))) {
+    for (const item of tree.tree.filter(item => item.type === 'blob' && !binary.test(item.path) &&
+      (revision === heads.master_sha || changed.has(item.path)))) {
       if (typeof item.path !== 'string' || item.path.startsWith('/') || item.path.split('/').includes('..') ||
           !revisionPattern.test(item.sha || '') || !['100644', '100755'].includes(item.mode) ||
           !Number.isSafeInteger(item.size) || item.size < 0 || item.size > (/\.(?:pdf|svg)$/i.test(item.path) ? 15_000_000 : 2_000_000)) {
@@ -91,7 +104,7 @@ export async function retentionReferences({api = githubData, root, localRead = r
         } catch { /* Missing sparse files are obtained through the fixed API. */ }
       }
       if (!bytes) {
-        const blob = await api(`/git/blobs/${item.sha}`);
+        const blob = readBlob ? await readBlob(revision, item) : await api(`/git/blobs/${item.sha}`);
         if (blob.encoding !== 'base64' || typeof blob.content !== 'string' || blob.size !== item.size) throw new Error('Unavailable source reference bytes');
         bytes = Buffer.from(blob.content, 'base64');
         if (bytes.length !== item.size || blobHash(bytes) !== item.sha) throw new Error('Changed source reference blob');
@@ -99,13 +112,68 @@ export async function retentionReferences({api = githubData, root, localRead = r
       cache.set(item.sha, bytes);
       if (/\.pdf$/i.test(item.path)) {
         if (!bytes.subarray(0, 5).equals(Buffer.from('%PDF-'))) throw new Error('Tracked PDF signature mismatch');
-        keys.add(mediaObject('pdf', basename(item.path), sha256(bytes), bytes.length).key);
-      } else add(new TextDecoder('utf-8', {fatal: true}).decode(bytes));
+        const object = {...mediaObject('pdf', basename(item.path), sha256(bytes), bytes.length), source: {revision, path: item.path}};
+        keys.add(object.key); objects.push(object);
+      } else {
+        const text = new TextDecoder('utf-8', {fatal: true}).decode(bytes);
+        const imageManifest = item.path === 'site/_data/image_assets.json' || /^site\/_data\/article_image_assets\/[^/]+\.json$/.test(item.path);
+        add(text, item.path.startsWith('site/') && !imageManifest && item.path !== 'site/_data/image_publication.json');
+        if (item.path === 'site/_data/image_assets.json' || /^site\/_data\/article_image_assets\/[^/]+\.json$/.test(item.path)) {
+          const inventory = JSON.parse(text);
+          if (!inventory || typeof inventory !== 'object' || Array.isArray(inventory)) throw new Error('Invalid current image inventory');
+          for (const image of imageObjects(inventory, path => ({revision, path: 'site' + path}), replacements, root || '.')) {
+            keys.add(image.object.key); objects.push(image.object);
+            if (inventory[image.path].external_original) migrations.push({external: inventory[image.path].external_original,
+              source_path: image.path, object: image.object});
+          }
+        }
+      }
     }
   }
   const after = await referenceHeads(api);
   if (referenceIdentity(heads) !== referenceIdentity(after)) throw new Error('Master or open PR references changed during collection');
-  return {master_sha: heads.master_sha, pulls: heads.pulls.map(({body, ...pr}) => pr), keys: [...keys], names: [...names]};
+  return {master_sha: heads.master_sha, pulls: heads.pulls.map(({body, ...pr}) => pr), keys: [...keys], names: [...names],
+    objects: uniqueObjects(objects), migrations, versions, releaseUrls: [...releaseUrls]};
+}
+
+// Fixed public repository, pinned commit and Git-verified bytes; no PR code runs.
+export async function rawReferenceBlob(revision, item, request = fetch) {
+  if (!revisionPattern.test(revision) || item.path.startsWith('/') || item.path.split('/').includes('..')) throw new Error('Unsafe raw source path');
+  const url = `https://raw.githubusercontent.com/${repository}/${revision}/${item.path.split('/').map(encodeURIComponent).join('/')}`;
+  const response = await request(url, {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(60_000)});
+  const bytes = await responseBytes(response, item.size);
+  return {encoding: 'base64', content: bytes.toString('base64'), size: bytes.length};
+}
+
+// GraphQL has a separate point budget: checking references before every S3
+// deletion must not exhaust the REST quota used to inventory source trees.
+export async function guardedHeads({request = fetch, token = process.env.GITHUB_TOKEN} = {}) {
+  if (!token) throw new Error('A read token is required for reference guards');
+  const query = `query($cursor:String){repository(owner:"Fuzzy-Technologies",name:"history_math"){
+    ref(qualifiedName:"refs/heads/master"){target{oid}}
+    pullRequests(states:OPEN,first:100,after:$cursor){nodes{number body state headRefOid headRepository{nameWithOwner}}
+    pageInfo{hasNextPage endCursor}}}}`;
+  const pulls = [], cursors = new Set(); let cursor = null, master;
+  for (let page = 0; page < 100; page++) {
+    const response = await request('https://api.github.com/graphql', {method: 'POST', redirect: 'error',
+      headers: {Authorization: `Bearer ${token}`, 'Content-Type': 'application/json'}, body: JSON.stringify({query, variables: {cursor}}), signal: AbortSignal.timeout(60_000)});
+    if (!response.ok) throw new Error(`Reference guard failed (HTTP ${response.status})`);
+    const result = await response.json(), repo = result.data?.repository;
+    if (result.errors?.length || !revisionPattern.test(repo?.ref?.target?.oid || '') ||
+        !Array.isArray(repo.pullRequests?.nodes) || typeof repo.pullRequests?.pageInfo?.hasNextPage !== 'boolean') throw new Error('Incomplete reference guard');
+    if (master && master !== repo.ref.target.oid) throw new Error('Master changed during reference guard');
+    master = repo.ref.target.oid;
+    for (const pr of repo.pullRequests.nodes) {
+      if (pr.state !== 'OPEN' || pr.headRepository?.nameWithOwner !== repository || !revisionPattern.test(pr.headRefOid || '') ||
+          !Number.isSafeInteger(pr.number) || pr.number < 1 || typeof pr.body !== 'string' || pulls.some(old => old.number === pr.number)) throw new Error('Unsafe open PR reference guard');
+      pulls.push({number: pr.number, sha: pr.headRefOid, body_sha256: sha256(Buffer.from(pr.body))});
+    }
+    if (!repo.pullRequests.pageInfo.hasNextPage) return {master_sha: master, pulls};
+    cursor = repo.pullRequests.pageInfo.endCursor;
+    if (!cursor || cursors.has(cursor)) throw new Error('Reference guard pagination did not advance');
+    cursors.add(cursor);
+  }
+  throw new Error('Incomplete reference guard pagination');
 }
 
 async function publicJson(path, request) {
@@ -116,7 +184,7 @@ async function publicJson(path, request) {
   return {data: JSON.parse(bytes.toString('utf8')), digest: sha256(bytes)};
 }
 
-export async function liveRetentionReferences({request = fetch, pages: checkPages = true} = {}) {
+export async function currentPublication({request = fetch, pages: checkPages = true} = {}) {
   const media = await publicJson('/assets/publication-media.json', request);
   const pdfs = await publicJson('/assets/article-pdfs.json', request);
   if (media.data.version !== 1 || !Array.isArray(media.data.objects) || pdfs.data.version !== 2 ||
@@ -145,7 +213,7 @@ export async function liveRetentionReferences({request = fetch, pages: checkPage
       const response = await request(origin + article.url, {redirect: 'error', cache: 'no-store', signal: AbortSignal.timeout(60_000)});
       if (response.status !== 200) throw new Error('Published article is unavailable');
       const text = (await responseBytes(response, 5_000_000)).toString('utf8');
-      const found = sourcePdfReferences(text);
+      const found = sourceMediaReferences(text);
       if (!found.keys.includes(byUrl.get(article.pdf_url).key)) throw new Error('Article PDF link disagrees with publication manifest');
       for (const key of found.keys) protectedKeys.add(key);
       // Reading previews stay on Pages; full-view/download originals must use
@@ -158,5 +226,5 @@ export async function liveRetentionReferences({request = fetch, pages: checkPage
   }
   await Promise.all(Array.from({length: Math.min(4, pdfs.data.articles.length)}, worker));
   if (used.size !== objects.length) throw new Error('Publication PDF coverage mismatch');
-  return {objects, protectedKeys: [...protectedKeys], digest: sha256(Buffer.from(media.digest + pdfs.digest))};
+  return {objects: all, pdfObjects: objects, protectedKeys: [...new Set([...protectedKeys, ...all.map(object => object.key)])], digest: sha256(Buffer.from(media.digest + pdfs.digest))};
 }

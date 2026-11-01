@@ -66,7 +66,7 @@ test('source checks use shallow heads and publication resolves the exact master 
     const workflow = parse(readFileSync(`.github/workflows/${file}`, 'utf8'));
     for (const [name, job] of Object.entries(workflow.jobs)) {
       for (const step of job.steps ?? []) {
-        if (step.uses?.startsWith('actions/checkout@')) assert.equal(step.with['fetch-depth'], file === 'deploy.yml' && name !== 'pdf_retention' ? 0 : 1);
+        if (step.uses?.startsWith('actions/checkout@')) assert.equal(step.with['fetch-depth'], file === 'deploy.yml' && name !== 'media_cleanup' ? 0 : 1);
       }
     }
   }
@@ -222,50 +222,49 @@ test('production build and deployment both require master for push and manual di
   }
 });
 
-test('PDF observation cannot delete or displace publication; deletion follows successful deployment', () => {
-  const audit = parse(readFileSync('.github/workflows/pdf-retention-audit.yml', 'utf8'));
-  const deploy = parse(readFileSync('.github/workflows/deploy.yml', 'utf8'));
-  const check = (observation, publication) => {
-    assert.deepEqual(Object.keys(observation.on), ['schedule', 'workflow_dispatch']);
-    assert.deepEqual(observation.on.workflow_dispatch.inputs.mode.options, ['dry-run', 'observe']);
-    assert.equal(observation.on.workflow_dispatch.inputs.mode.default, 'dry-run');
-    assert.equal(observation.concurrency.group, 'pdf-retention-audit');
-    assert.notEqual(observation.concurrency.group, publication.concurrency.group);
-    assert.equal(publication.concurrency.group, 'github-pages');
-    assert.equal(publication.concurrency['cancel-in-progress'], false);
-    const job = publication.jobs.pdf_retention;
+test('current-media deletion follows deployment; daily audit cannot delete S3 or displace publication', () => {
+  const maintenance = parse(readFileSync('.github/workflows/storage-maintenance.yml', 'utf8'));
+  const publication = parse(readFileSync('.github/workflows/deploy.yml', 'utf8'));
+  const check = (audit, deploy) => {
+    assert.deepEqual(Object.keys(audit.on), ['schedule', 'workflow_dispatch']);
+    assert.equal(audit.on.workflow_dispatch.inputs.clean_github.default, false);
+    assert.notEqual(audit.concurrency.group, deploy.concurrency.group);
+    assert.equal(deploy.concurrency.group, 'github-pages');
+    assert.equal(deploy.concurrency['cancel-in-progress'], false);
+    const job = deploy.jobs.media_cleanup;
     assert.deepEqual(job.needs, ['deploy', 'retire_oversized_media']);
     assert.ok(!job.if.includes('always()'));
-    const step = job.steps.find(step => step.run?.includes('scripts/pdf-retention.mjs'));
-    assert.equal(step.env.PDF_RETENTION_AFTER_DEPLOY, 'true');
-    assert.equal(step.env.PDF_RETENTION_DELETE_ENABLED, '${{ vars.PDF_RETENTION_DELETE_ENABLED }}');
-    assert.equal(step.env.RETENTION_MODE, "${{ vars.PDF_RETENTION_DELETE_ENABLED == 'true' && '--apply' || '--observe' }}");
-    assert.ok(!JSON.stringify(observation).includes('--apply'));
-    assert.ok(!JSON.stringify(observation).includes('PDF_RETENTION_AFTER_DEPLOY'));
-    for (const candidate of [observation.jobs.audit, job]) {
+    assert.equal(job.concurrency.group, audit.jobs.github_cleanup.concurrency.group);
+    const runtime = job.steps.find(step => step.run?.includes('scripts/media-cleanup.mjs'));
+    assert.equal(runtime.run, 'node scripts/media-cleanup.mjs --apply');
+    assert.equal(runtime.env.MEDIA_CLEANUP_AFTER_DEPLOY, 'true');
+    assert.equal(runtime.env.GITHUB_TOKEN, '${{ github.token }}');
+    assert.deepEqual(job.permissions, {contents: 'write', actions: 'write', 'pull-requests': 'read'});
+    const report = audit.jobs.audit.steps.find(step => step.run?.includes('scripts/media-cleanup.mjs'));
+    assert.equal(report.run, 'node scripts/media-cleanup.mjs --dry-run');
+    assert.ok(!JSON.stringify(report).includes('MEDIA_CLEANUP_AFTER_DEPLOY'));
+    const github = audit.jobs.github_cleanup;
+    assert.equal(github.needs, 'audit');
+    assert.ok(github.if.includes('inputs.clean_github'));
+    assert.ok(!JSON.stringify(github).includes('S3_SECRET_ACCESS_KEY'));
+    assert.ok(github.steps.some(step => step.run === 'node scripts/github-storage-cleanup.mjs --apply'));
+    for (const candidate of [audit.jobs.audit, github, job]) {
       assert.match(candidate.if, /github.ref == 'refs\/heads\/master'/);
-      assert.equal(candidate.environment, 'history-math-storage');
       const checkout = candidate.steps.find(step => step.uses?.startsWith('actions/checkout@'));
       assert.equal(checkout.with['persist-credentials'], false);
-      const runtime = candidate.steps.find(step => step.run?.includes('scripts/pdf-retention.mjs'));
-      assert.equal(runtime.env.GITHUB_TOKEN, '${{ github.token }}');
-      assert.equal(runtime.env.S3_ACCESS_KEY_ID, '${{ secrets.S3_ACCESS_KEY_ID }}');
-      assert.equal(runtime.env.S3_SECRET_ACCESS_KEY, '${{ secrets.S3_SECRET_ACCESS_KEY }}');
-      assert.equal(candidate.steps.filter(step => step.env?.S3_SECRET_ACCESS_KEY).length, 1);
       assert.ok(!JSON.stringify(candidate).includes('pull_request_target'));
       for (const action of candidate.steps.filter(step => step.uses)) assert.match(action.uses, /@[a-f0-9]{40}$/);
     }
   };
-  check(audit, deploy);
-  for (const mutate of [
-    copy => { copy.jobs.pdf_retention.needs = ['build']; },
-    copy => { copy.jobs.pdf_retention.if = 'always()'; },
-    copy => { copy.jobs.pdf_retention.steps.find(step => step.env?.RETENTION_MODE).env.RETENTION_MODE = '--apply'; }
-  ]) {
-    const unsafe = structuredClone(deploy); mutate(unsafe); assert.throws(() => check(audit, unsafe));
+  check(maintenance, publication);
+  for (const mutate of [p => {p.jobs.media_cleanup.needs = ['build'];}, p => {p.jobs.media_cleanup.if = 'always()';},
+    p => {p.jobs.media_cleanup.steps.find(step => step.env?.MEDIA_CLEANUP_AFTER_DEPLOY).env.MEDIA_CLEANUP_AFTER_DEPLOY = ''; }]) {
+    const unsafe = structuredClone(publication); mutate(unsafe); assert.throws(() => check(maintenance, unsafe));
   }
-  const unsafe = structuredClone(audit); unsafe.concurrency.group = 'github-pages';
-  assert.throws(() => check(unsafe, deploy));
+  const unsafe = structuredClone(maintenance); unsafe.concurrency.group = 'github-pages';
+  assert.throws(() => check(unsafe, publication));
+  const steps = publication.jobs.build.steps;
+  assert.ok(steps.findIndex(s => s.name === 'Prepare bounded full-resolution JPEG originals') < steps.findIndex(s => s.name === 'Preflight existing S3 media copies'));
 });
 
 test('the actual privileged article comment job has no checkout and rejects stale or duplicate results', async () => {

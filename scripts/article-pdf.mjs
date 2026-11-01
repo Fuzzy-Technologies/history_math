@@ -36,7 +36,7 @@ export function printImageSources(html) {
     if (!original) return tag;
     // Migrated print pages use the largest losslessly encoded reading variant.
     // Keep PDF generation deterministic and local even when zoom uses GitHub.
-    if (/\sdata-original-api="[^"]+"/.test(tag) || /\/assets\/images\/hm-tt-[a-z0-9]+\//.test(original[1])) {
+    if (/\sdata-original-(?:api|storage)="[^"]+"/.test(tag) || /\/assets\/images\/hm-tt-[a-z0-9]+\//.test(original[1])) {
       return tag.replace(/\s(?:srcset|sizes)="[^"]*"/g, '');
     }
     return tag.replace(/\ssrc="[^"]*"/, () => ` src="${original[1]}"`)

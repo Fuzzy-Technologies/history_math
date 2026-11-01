@@ -17,32 +17,33 @@ to `master`. Only designated storage steps receive `S3_ACCESS_KEY_ID` and
 | `S3_BUCKET`          | `history-math-media-kz`                                |
 | `S3_PUBLIC_BASE_URL` | `https://storage.yandexcloud.kz/history-math-media-kz` |
 
-The existing bucket-scoped publisher account requires object upload/read, with
-public HTTPS object reads. It does not need deletion, bucket administration or
-cloud/folder permissions. Bucket versioning and access policy are infrastructure
+The upload path requires object upload/read, with public HTTPS object reads.
+The separate owner-authorized cleanup also needs scoped version deletion for
+managed media. It does not need bucket administration or cloud/folder
+permissions. Bucket versioning and access policy are infrastructure
 configuration; publication does not change them. Credentials are consumed by
 the pinned AWS S3 SDK and never written to receipts or frontend assets.
 
 Objects use `originals/<sha256>/<filename>` or `pdf/<sha256>/<filename>`.
 Names identify immutable bytes. Existing objects are publicly reverified and
-reused; a changed file gets a new address. Publication does not rotate or delete
-objects. Key rotation remains: issue a replacement key, update the environment
+reused; a changed file gets a new address. The upload step does not delete
+objects; post-deployment cleanup removes obsolete copies after reference checks.
+Key rotation remains: issue a replacement key, update the environment
 Secrets, verify publication, then revoke the former key.
 
-Optional post-deployment PDF maintenance is separate from upload/verification.
-[PDF retention](PDF_RETENTION.md) defines a 24-hour unreferenced grace period,
-current/previous/draft protections, weekly observation and an explicit deletion
-enable switch. It uses the same account after a reviewed PDF-scoped policy
-change; publication never changes bucket policy. Images and source originals
-remain outside that automatic retention scope.
+[Current media cleanup](MEDIA_CLEANUP.md) keeps the current site's and open
+drafts' required PDFs/images. There is no previous-build archive or grace-period
+timer. It also removes verified GitHub migration copies, old Actions artifacts
+and superseded PDF caches. Bucket policy remains an infrastructure responsibility.
 
 ## Automatic publication
 
 `Publish approved master` retains its existing source, render, PDF and browser
-gates. After validating article sources, an upload-only migration preflight
-copies existing PDFs and master originals before expensive rendering. Once the
-deployed PDF manifest uses S3 URLs, that preflight becomes a metadata-only check.
-It never rewrites links or deletes files. After producing validated PDFs, the
+gates. After validating article sources, JPEG preparation and upload-only
+preflight ensure current originals exist in S3 before rendering or browser
+checks. Migrated PDFs are not recopied; existing originals receive metadata
+checks and only missing objects are uploaded. Preflight never deletes files.
+After producing validated PDFs, the
 final publication step:
 
 1. Reuses the public media verified during the migration preflight. No manual
@@ -68,7 +69,8 @@ final publication step:
 Transfer or verification failures block the new Pages deployment. The current
 site remains live. Partial uploads are safe to reuse on a later run. A failure
 after output pruning affects only the temporary runner output. Earlier objects
-remain available for the previous site's links and for rollback.
+remain available until successful deployment changes the current reference set;
+post-deployment cleanup then retires unreferenced versions.
 
 Transient public-read disconnects, timeouts, rate limits and gateway errors
 receive at most three attempts with bounded backoff. Integrity, authentication,
@@ -120,10 +122,9 @@ master-only secrets and the upload/verify/prune/check/Pages ordering. Browser
 and PDF checks run in the owner-approved master publication as required by the
 development protocol. Source tests do not prove a real bucket upload occurred.
 
-The draft does not authorize deleting source originals from Git. If removing
-them from the repository is desired after successful migration, prepare a
-separate reviewed change with stored receipts and approval-digest compatibility.
-Do not rewrite history to reduce repository size.
+Cleanup deletes verified redundant Release binaries, not Git history or the
+unchanged source descriptors bound to editorial approval. Current reading images,
+logos and print assets remain in Git. Do not rewrite history to reduce size.
 
 ## Bounded original downloads
 

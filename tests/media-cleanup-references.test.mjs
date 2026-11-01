@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {mediaObject, sha256, storage} from '../scripts/s3-media.mjs';
-import {sourcePdfReferences, referenceHeads, retentionReferences, liveRetentionReferences} from '../scripts/pdf-retention-references.mjs';
+import {sourceMediaReferences, referenceHeads, currentReferences, currentPublication, guardedHeads, rawReferenceBlob, referenceIdentity} from '../scripts/media-cleanup-references.mjs';
 
 const master = 'a'.repeat(40), draft = 'b'.repeat(40);
 const pdf = {...mediaObject('pdf', 'article-en.pdf', 'c'.repeat(64), 100), verified: true};
@@ -20,6 +20,7 @@ function fixture() {
     calls.push(path);
     if (path === '/branches/master') return {commit: {sha: master}};
     if (path.startsWith('/pulls?')) return structuredClone(pulls);
+    if (/^\/pulls\/28\/files\?/.test(path)) return trees[draft].map(item => ({filename: item.path, status: 'modified'}));
     if (path.startsWith('/git/trees/')) return {truncated: false, tree: structuredClone(trees[path.split('/')[3].split('?')[0]])};
     if (path.startsWith('/git/blobs/')) return structuredClone(blobs[path.split('/')[3]]);
     throw new Error('Unexpected API path');
@@ -29,13 +30,13 @@ function fixture() {
 
 test('references cover direct, escaped, encoded S3 links and stable PDF aliases', () => {
   const encoded = pdf.url.replace('/article-en.pdf', '/article%2Den.pdf');
-  const found = sourcePdfReferences(`${pdf.url.replaceAll('/', '\\/')} ${encoded} /assets/pdf/ru/pinned-ru.pdf`);
+  const found = sourceMediaReferences(`${pdf.url.replaceAll('/', '\\/')} ${encoded} /assets/pdf/ru/pinned-ru.pdf`);
   assert.deepEqual(found.keys, [pdf.key]); assert.deepEqual(found.names, ['pinned-ru.pdf']);
-  assert.deepEqual(sourcePdfReferences('https://storage.yandexcloud.kz/history-math-media-kz/pdf/${hash}/${name}'), {keys: [], names: []});
+  assert.deepEqual(sourceMediaReferences('https://storage.yandexcloud.kz/history-math-media-kz/pdf/${hash}/${name}'), {keys: [], names: [], versions: []});
 });
 
 test('all open PR heads and bodies are pinned; tracked PDF bytes protect their S3 identity', async () => {
-  const f = fixture(), result = await retentionReferences({api: f.api});
+  const f = fixture(), result = await currentReferences({api: f.api});
   assert.ok(result.keys.includes(pdf.key));
   assert.ok(result.keys.includes(mediaObject('pdf', 'draft-ru.pdf', sha256(Buffer.from('%PDF-fixture')), 12).key));
   assert.equal(result.pulls[0].number, 28); assert.equal(result.pulls[0].body, undefined);
@@ -47,12 +48,12 @@ test('all open PR heads and bodies are pinned; tracked PDF bytes protect their S
 test('local cache is accepted only for the pinned Git blob identity', async () => {
   for (const corrupt of [false, true]) {
     const f = fixture();
-    await retentionReferences({api: f.api, root: '/trusted', localRead: async () => Buffer.from(corrupt ? 'bad' : `Read ${pdf.url}`)});
+    await currentReferences({api: f.api, root: '/trusted', localRead: async () => Buffer.from(corrupt ? 'bad' : `Read ${pdf.url}`)});
     assert.equal(f.calls.includes(`/git/blobs/${f.source.item.sha}`), corrupt);
   }
 });
 
-test('foreign PRs, truncated trees, unsafe paths, corrupt bytes and reference races block retention', async () => {
+test('foreign PRs, truncated trees, unsafe paths, corrupt bytes and reference races block cleanup', async () => {
   const foreign = fixture(); foreign.setPulls([{...pr(), head: {...pr().head, repo: {full_name: 'fork/repo'}}}]);
   await assert.rejects(referenceHeads(foreign.api), /cannot be fully inventoried/);
   for (const change of [
@@ -62,13 +63,13 @@ test('foreign PRs, truncated trees, unsafe paths, corrupt bytes and reference ra
     f => {f.trees[draft][1].path = 'oversized.md'; f.trees[draft][1].size = 2_000_001;},
     f => {f.trees[draft].push({type: 'commit', path: 'submodule'});},
     f => {f.blobs[f.tracked.item.sha].content = Buffer.from('corrupt').toString('base64');}
-  ]) {const f = fixture(); change(f); await assert.rejects(retentionReferences({api: f.api}));}
+  ]) {const f = fixture(); change(f); await assert.rejects(currentReferences({api: f.api}));}
   const f = fixture();
-  await assert.rejects(retentionReferences({api: async path => {
+  await assert.rejects(currentReferences({api: async path => {
     const value = await f.api(path); return path.startsWith('/git/trees/') ? {...value, truncated: true} : value;
   }}), /Incomplete/);
   const race = fixture(); let reads = 0;
-  await assert.rejects(retentionReferences({api: async path => {
+  await assert.rejects(currentReferences({api: async path => {
     if (path === '/branches/master' && ++reads === 2) race.setPulls([{...pr(), body: 'Changed references'}]);
     return race.api(path);
   }}), /changed during collection/);
@@ -97,11 +98,11 @@ function publicFixture({article = `<a href="${pdf.url}">PDF</a><img data-origina
 }
 
 test('live pages must link to receipt PDFs and S3 originals; guards can reread just the manifests', async () => {
-  const f = publicFixture(), result = await liveRetentionReferences({request: f.request});
-  assert.deepEqual(result.objects, [pdf]); assert.deepEqual(result.protectedKeys, [pdf.key]);
+  const f = publicFixture(), result = await currentPublication({request: f.request});
+  assert.deepEqual(result.objects, [pdf, image]); assert.deepEqual(result.pdfObjects, [pdf]); assert.deepEqual(result.protectedKeys, [pdf.key, image.key]);
   assert.equal(f.urls.length, 3);
   f.urls.length = 0;
-  assert.equal((await liveRetentionReferences({request: f.request, pages: false})).digest, result.digest);
+  assert.equal((await currentPublication({request: f.request, pages: false})).digest, result.digest);
   assert.equal(f.urls.length, 2);
   for (const mutation of [
     {article: '<a href="/assets/pdf/en/article-en.pdf">PDF</a>'},
@@ -110,5 +111,50 @@ test('live pages must link to receipt PDFs and S3 originals; guards can reread j
     {articles: [{url: 'https://foreign.test/', lang: 'en', pdf_url: pdf.url}]},
     {articles: [{url: '/publications/article-en/', lang: 'en', pdf_url: 'https://foreign.test/a.pdf'}]},
     {objects: [pdf, pdf]}, {objects: [{...pdf, verified: false}, image]}
-  ]) await assert.rejects(liveRetentionReferences({request: publicFixture(mutation).request}));
+  ]) await assert.rejects(currentPublication({request: publicFixture(mutation).request}));
+});
+
+test('pinned raw source reads never forward tokens, accept redirects or exceed their byte bound', async () => {
+  const source = blob('site/assets/a.pdf', '%PDF-fixture');
+  const result = await rawReferenceBlob(master, source.item, async (url, options) => {
+    assert.equal(url, `https://raw.githubusercontent.com/Fuzzy-Technologies/history_math/${master}/site/assets/a.pdf`);
+    assert.equal(options.redirect, 'error'); assert.equal(options.credentials, 'omit'); assert.equal(options.headers, undefined);
+    return new Response('%PDF-fixture');
+  });
+  assert.equal(result.size, source.item.size);
+  await assert.rejects(rawReferenceBlob(master, {...source.item, path: '../secret'}, async () => assert.fail('No read')));
+  await assert.rejects(rawReferenceBlob(master, {...source.item, size: 2}, async () => new Response('too long')));
+});
+
+test('GraphQL guards match REST identities and reject forks, changed pagination and partial data', async () => {
+  const result = {data: {repository: {ref: {target: {oid: master}}, pullRequests: {nodes: [
+    {number: 28, body: pr().body, state: 'OPEN', headRefOid: draft, headRepository: {nameWithOwner: 'Fuzzy-Technologies/history_math'}}
+  ], pageInfo: {hasNextPage: false, endCursor: null}}}}};
+  const heads = await guardedHeads({token: 'test', request: async (url, options) => {
+    assert.equal(url, 'https://api.github.com/graphql'); assert.equal(options.method, 'POST'); assert.equal(options.redirect, 'error');
+    return Response.json(result);
+  }});
+  assert.equal(referenceIdentity(heads), referenceIdentity(await referenceHeads(fixture().api)));
+  for (const mutate of [r => {r.errors = [{message: 'do not print'}];},
+    r => {r.data.repository.pullRequests.nodes[0].headRepository.nameWithOwner = 'fork/repo';},
+    r => {r.data.repository.pullRequests.pageInfo.hasNextPage = true;},
+    r => {r.data.repository.ref.target.oid = 'invalid';}]) {
+    const bad = structuredClone(result); mutate(bad);
+    await assert.rejects(guardedHeads({token: 'test', request: async () => Response.json(bad)}));
+  }
+});
+
+test('image references protect the current S3 variant and bind its release source for migration', async () => {
+  const f = fixture(), path = '/assets/images/hm-tt-example/figure.jpg', hash = image.sha256, tag = `article-originals-${hash[0]}`;
+  const entry = {sha256: hash, bytes: 200, width: 10, height: 10, logo: false,
+    variants: [{path: '/assets/images/previews/hm-tt-example/figure.webp', width: 5, height: 5, bytes: 10, sha256: 'e'.repeat(64)}],
+    external_original: {storage: 'github-release', sha256: hash, bytes: 200, asset_id: 123, release_tag: tag,
+      url: `https://github.com/Fuzzy-Technologies/history_math/releases/download/${tag}/hm-tt-example-figure-${hash}.jpg`,
+      api_url: 'https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/123'}};
+  const descriptor = blob('site/_data/article_image_assets/hm-tt-example.json', JSON.stringify({[path]: entry}));
+  f.trees[draft].push(descriptor.item); f.blobs[descriptor.item.sha] = descriptor.data;
+  const result = await currentReferences({api: f.api});
+  assert.ok(result.objects.some(o => o.key === image.key));
+  assert.equal(result.migrations[0].external.asset_id, 123);
+  assert.equal(result.releaseUrls.includes(entry.external_original.url), false, 'Provenance is not a live GitHub download link');
 });
