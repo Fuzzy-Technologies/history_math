@@ -103,9 +103,13 @@ export async function verifyPublic(object, request = fetch) {
 
 // Content addressing preserves previous publications. There is no delete API,
 // bucket listing, ACL change or overwrite of a different content identity here.
-export async function uploadVerified(client, object, source, {request = fetch} = {}) {
+function assertUploadBudget(object) {
   validateObject(object);
   if (object.bytes > 15_000_000) throw new Error(`S3 media exceeds the 15 MB hard limit: ${object.key}`);
+}
+
+export async function uploadVerified(client, object, source, {request = fetch} = {}) {
+  assertUploadBudget(object);
   let missing = false;
   try { await client.send(new HeadObjectCommand({Bucket: storage.bucket, Key: object.key})); }
   catch (error) {
@@ -126,6 +130,8 @@ export async function uploadVerified(client, object, source, {request = fetch} =
 }
 
 export async function transfer(objects, client, source, {request = fetch, progress = () => {}} = {}) {
+  // Reject an invalid later item before any earlier object can be uploaded.
+  for (const object of objects) assertUploadBudget(object);
   const receipt = [];
   let cursor = 0, failed = false;
   async function worker() {

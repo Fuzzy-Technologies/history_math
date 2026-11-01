@@ -141,6 +141,19 @@ test('forbidden operations, failed uploads and corrupt public copies cannot prod
   await assert.rejects(transfer([object], exists, async () => original, {request: async () => publicResponse(object, Buffer.from('corrupt'))}));
 });
 
+test('the complete batch is budget-checked before any S3 operation', async () => {
+  for (const kind of ['pdf', 'originals']) {
+    const oversized = mediaObject(kind, kind === 'pdf' ? 'oversized-ru.pdf' : 'oversized.png', 'a'.repeat(64), 15_000_001);
+    await assert.rejects(transfer([object, oversized], {send: () => assert.fail('No partial uploads')},
+      () => assert.fail('No source reads'), {request: () => assert.fail('No public requests')}), /15 MB hard limit/);
+  }
+  const boundary = mediaObject('pdf', 'boundary.pdf', 'a'.repeat(64), 15_000_000);
+  let heads = 0;
+  await assert.rejects(transfer([boundary], {send: async () => {heads++; throw {$metadata: {httpStatusCode: 403}};}},
+    () => assert.fail('No source read after denied HEAD')), /S3 HEAD failed/);
+  assert.equal(heads, 1, 'The exact budget boundary is admitted');
+});
+
 async function fixture(run) {
   const root = await mkdtemp(resolve(tmpdir(), 's3-publication-')), site = resolve(root, 'output');
   const path = '/assets/images/example/figure.png', previewPath = '/assets/images/previews/example/figure.webp';
