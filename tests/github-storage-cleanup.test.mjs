@@ -95,3 +95,19 @@ test('GitHub write adapter only permits the fixed repository and three exact del
     assert.equal(options.redirect, 'error'); return new Response(null, {status: 204});
   }});
 });
+
+test('GitHub storage inventory retries transient reads while exact-ID deletes are attempted once', async () => {
+  let calls = 0;
+  const result = await storageRequest('/actions/artifacts?per_page=100&page=1', {token: 'SECRET', retryOptions: {pause: async () => {}}, request: async (url, options) => {
+    assert.equal(options.method, 'GET');
+    if (++calls === 1) return new Response('upstream SECRET', {status: 503});
+    if (calls === 2) throw Object.assign(new TypeError('fetch failed'), {cause: {code: 'ECONNRESET'}});
+    return Response.json({artifacts: []});
+  }});
+  assert.equal(calls, 3); assert.deepEqual(result, {artifacts: []});
+  calls = 0;
+  await assert.rejects(storageRequest('/releases/assets/123', {method: 'DELETE', token: 'SECRET',
+    retryOptions: {pause: () => assert.fail('Never retry a deletion')}, request: async () => {calls++; return new Response('SECRET', {status: 503});}}),
+    error => error.status === 503 && !error.message.includes('SECRET'));
+  assert.equal(calls, 1);
+});

@@ -114,6 +114,22 @@ test('live pages must link to receipt PDFs and S3 originals; guards can reread j
   ]) await assert.rejects(currentPublication({request: publicFixture(mutation).request}));
 });
 
+test('live manifests and pages reconnect without weakening content validation', async () => {
+  const f = publicFixture(), attempts = new Map();
+  const result = await currentPublication({retryOptions: {pause: async () => {}}, request: async (url, options) => {
+    const count = (attempts.get(url) || 0) + 1; attempts.set(url, count);
+    if (count === 1) return new Response('temporary', {status: 503});
+    if (count === 2) throw Object.assign(new TypeError('fetch failed'), {cause: {code: 'UND_ERR_SOCKET'}});
+    return f.request(url, options);
+  }});
+  assert.deepEqual(result.objects, [pdf, image]);
+  assert.equal(attempts.size, 3); assert.ok([...attempts.values()].every(value => value === 3));
+  let calls = 0;
+  await assert.rejects(currentPublication({retryOptions: {pause: () => assert.fail('No authentication retry')},
+    request: async () => {calls++; return new Response('SECRET', {status: 403});}}), /HTTP_403/);
+  assert.equal(calls, 1);
+});
+
 test('pinned raw source reads never forward tokens, accept redirects or exceed their byte bound', async () => {
   const source = blob('site/assets/a.pdf', '%PDF-fixture');
   const result = await rawReferenceBlob(master, source.item, async (url, options) => {
@@ -124,6 +140,21 @@ test('pinned raw source reads never forward tokens, accept redirects or exceed t
   assert.equal(result.size, source.item.size);
   await assert.rejects(rawReferenceBlob(master, {...source.item, path: '../secret'}, async () => assert.fail('No read')));
   await assert.rejects(rawReferenceBlob(master, {...source.item, size: 2}, async () => new Response('too long')));
+});
+
+test('pinned source reads reconnect with unchanged destination and byte bounds', async () => {
+  const source = blob('site/source.md', 'source'); let calls = 0;
+  const result = await rawReferenceBlob(master, source.item, async (url, options) => {
+    assert.equal(url, `https://raw.githubusercontent.com/Fuzzy-Technologies/history_math/${master}/site/source.md`);
+    assert.equal(options.headers, undefined); assert.equal(options.redirect, 'error');
+    if (++calls < 3) throw Object.assign(new TypeError('fetch failed'), {cause: {code: 'ECONNRESET'}});
+    return new Response('source');
+  }, {pause: async () => {}});
+  assert.equal(calls, 3); assert.equal(result.content, source.data.content);
+  calls = 0;
+  await assert.rejects(rawReferenceBlob(master, source.item, async () => {calls++; return new Response('too many bytes');},
+    {pause: () => assert.fail('No retry for invalid bytes')}));
+  assert.equal(calls, 1);
 });
 
 test('GraphQL guards match REST identities and reject forks, changed pagination and partial data', async () => {
@@ -142,6 +173,20 @@ test('GraphQL guards match REST identities and reject forks, changed pagination 
     const bad = structuredClone(result); mutate(bad);
     await assert.rejects(guardedHeads({token: 'test', request: async () => Response.json(bad)}));
   }
+});
+
+test('read-only GraphQL guards retry transport errors without retrying partial reference data', async () => {
+  const result = {data: {repository: {ref: {target: {oid: master}}, pullRequests: {nodes: [], pageInfo: {hasNextPage: false}}}}};
+  let calls = 0;
+  assert.equal((await guardedHeads({token: 'SECRET', retryOptions: {pause: async () => {}}, request: async () => {
+    if (++calls === 1) throw Object.assign(new TypeError('fetch failed'), {cause: {code: 'ECONNRESET'}});
+    return Response.json(result);
+  }})).master_sha, master);
+  assert.equal(calls, 2);
+  calls = 0;
+  await assert.rejects(guardedHeads({token: 'SECRET', retryOptions: {pause: () => assert.fail('No partial-data retry')},
+    request: async () => {calls++; return Response.json({errors: [{message: 'SECRET'}]});}}));
+  assert.equal(calls, 1);
 });
 
 test('image references protect the current S3 variant and bind its release source for migration', async () => {

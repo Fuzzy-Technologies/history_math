@@ -92,8 +92,8 @@ from pinned public Git URLs with Git SHA verification.
 inside the existing `github-pages` lock. It copies missing draft media without
 publishing drafts, prunes obsolete S3 versions, checks the result, then cleans
 GitHub duplicates. No extra deletion-enable variable is required by this policy.
-The code still rejects destructive S3 execution outside trusted master
-post-deployment context. Its default CLI invocation is read-only.
+The default CLI invocation is read-only. Normal `--apply` execution still
+requires the trusted master post-deployment context.
 
 `Audit and maintain current media storage` runs daily at 01:17 UTC (04:17 Moscow).
 Its audit cannot delete S3 objects. Its following GitHub-only job resumes any
@@ -101,6 +101,24 @@ quota-limited cleanup without rebuilding or deploying the site. Both GitHub
 writers share one job concurrency group. Manual dispatch defaults to audit only;
 `clean_github=true` additionally enables GitHub cleanup after a successful audit.
 The GitHub-only job receives no S3 credentials.
+
+Manual `clean_s3=true` enables a separate S3-only recovery job after a successful
+audit, including when a storage failure prevents a new deployment. It takes the
+same `github-pages` workflow lock as publication before the audit starts, so a
+publisher cannot upload pending files while recovery inventories and deletes.
+The `--apply-s3` CLI mode requires an explicit trusted master `workflow_dispatch`
+context; scheduled runs cannot enable it. It re-inventories the actual live site,
+master and every open PR, checks all current objects, guards every exact-version
+deletion and reconciles the result. No previous-PDF archive or age delay is added.
+S3 and GitHub recovery jobs independently depend on the audit: denied S3 deletion
+does not prevent verified GitHub cleanup. They share the writer concurrency group.
+
+Public manifests/pages, source blobs, current-object HEADs and GitHub reference
+reads retry only transient transport, timeout, rate-limit and gateway failures,
+at most three times. Permission, TLS, metadata, integrity and reference races
+still stop cleanup. GitHub DELETE requests are never automatically retried.
+Upload errors retain a bounded HTTP status and recognized S3/network error code;
+upstream messages, credentials and signed URLs are not logged.
 
 The existing publisher account and `history-math-storage` environment are reused.
 Before rollout, an administrator must read/back up the actual bucket policy.
@@ -117,6 +135,9 @@ Merge through the owner-approved PR process only after source CI succeeds.
 The first deployment's cleanup plan is based on its actual new live manifests,
 not an old listing or a guessed age. If permissions prevent deletion, the
 incremental journal records the real failure and the current site stays live.
+Manual recovery instead protects the still-current live publication until a new
+deployment has succeeded. Authenticated inventories are retained before deletion
+and progress identifies the last completed audit stage even when a later read fails.
 
 Actions retains compact plans and exact deletion journals, never PDF archives.
 The maintenance reports expire after seven days, and superseded reports are

@@ -95,6 +95,17 @@ test('default mode only reports; apply requires trusted successful master public
   assert.throws(() => executionMode(['--observe'], env));
 });
 
+test('S3-only recovery requires explicit manual master context and cannot impersonate deployment', () => {
+  const env = {GITHUB_REF: 'refs/heads/master', GITHUB_SHA: 'a'.repeat(40), GITHUB_EVENT_NAME: 'workflow_dispatch', MEDIA_CLEANUP_MANUAL: 'true'};
+  assert.equal(executionMode(['--apply-s3'], env), '--apply-s3');
+  assert.throws(() => executionMode(['--apply'], env));
+  for (const change of [{GITHUB_REF: 'refs/heads/feature/x'}, {GITHUB_SHA: ''}, {GITHUB_SHA: 'bad'},
+    {GITHUB_EVENT_NAME: 'push'}, {GITHUB_EVENT_NAME: 'schedule'}, {MEDIA_CLEANUP_MANUAL: ''},
+    {MEDIA_CLEANUP_MANUAL: '', MEDIA_CLEANUP_AFTER_DEPLOY: 'true'}]) {
+    assert.throws(() => executionMode(['--apply-s3'], {...env, ...change}));
+  }
+});
+
 test('public metadata checks cover both PDFs and original images without accepting redirects', async () => {
   await verifyCurrentMedia([pdf, image], async (url, options) => {
     const o = url === pdf.url ? pdf : image; assert.equal(options.method, 'HEAD'); assert.equal(options.redirect, 'error');
@@ -104,4 +115,26 @@ test('public metadata checks cover both PDFs and original images without accepti
     await assert.rejects(verifyCurrentMedia([pdf], async () => new Response(null, {headers: {'content-length': '100', 'content-type': pdf.content_type,
       'x-amz-meta-sha256': pdf.sha256, ...patch}})));
   }
+});
+
+test('current-object verification retries transient reads but stops on permanent or exhausted failures', async () => {
+  let calls = 0;
+  const retryOptions = {pause: async () => {}};
+  await verifyCurrentMedia([pdf], async () => {
+    if (++calls === 1) return new Response(null, {status: 503});
+    if (calls === 2) throw Object.assign(new TypeError('fetch failed'), {cause: {code: 'ECONNRESET'}});
+    return new Response(null, {headers: {'content-length': '100', 'content-type': pdf.content_type, 'x-amz-meta-sha256': pdf.sha256}});
+  }, retryOptions);
+  assert.equal(calls, 3);
+  for (const response of [() => new Response(null, {status: 403}), () => new Response(null, {status: 404}),
+    () => new Response(null, {headers: {'content-length': '99'}})]) {
+    calls = 0;
+    await assert.rejects(verifyCurrentMedia([pdf], async () => {calls++; return response();}, retryOptions));
+    assert.equal(calls, 1);
+  }
+  calls = 0;
+  await assert.rejects(verifyCurrentMedia([pdf], async () => {
+    calls++; throw Object.assign(new TypeError('fetch failed'), {cause: {code: 'ECONNRESET', message: 'SECRET'}});
+  }, retryOptions), error => error.message.includes(pdf.key) && error.message.includes('ECONNRESET; 3 attempts') && !error.message.includes('SECRET'));
+  assert.equal(calls, 3);
 });

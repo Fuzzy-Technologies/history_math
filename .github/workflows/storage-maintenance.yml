@@ -5,6 +5,10 @@ on:
     - cron: '17 1 * * *'
   workflow_dispatch:
     inputs:
+      clean_s3:
+        description: Remove obsolete S3 versions under the publication lock
+        type: boolean
+        default: false
       clean_github:
         description: Remove verified GitHub duplicates after the audit
         type: boolean
@@ -16,7 +20,9 @@ permissions:
   actions: read
 
 concurrency:
-  group: media-storage-audit
+  # Only an explicit S3 recovery shares the publication lock. Daily read-only
+  # audits and GitHub-only maintenance cannot queue ahead of publication.
+  group: ${{ github.event_name == 'workflow_dispatch' && inputs.clean_s3 && 'github-pages' || 'media-storage-audit' }}
   cancel-in-progress: false
 
 jobs:
@@ -57,6 +63,51 @@ jobs:
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: media-audit-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: test-results/media-cleanup/
+          if-no-files-found: warn
+          retention-days: 7
+  s3_cleanup:
+    if: github.ref == 'refs/heads/master' && github.event_name == 'workflow_dispatch' && inputs.clean_s3
+    needs: audit
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    environment: history-math-storage
+    concurrency:
+      group: github-storage-maintenance
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/site/assets/images/
+            !/site/assets/fonts/
+            !/site/assets/vendor/katex/fonts/
+            !/docs/previews/
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Remove obsolete S3 versions while preserving live and draft references
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          MEDIA_CLEANUP_MANUAL: 'true'
+          S3_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
+          S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+          S3_ENDPOINT_URL: ${{ vars.S3_ENDPOINT_URL }}
+          S3_REGION: ${{ vars.S3_REGION }}
+          S3_BUCKET: ${{ vars.S3_BUCKET }}
+          S3_PUBLIC_BASE_URL: ${{ vars.S3_PUBLIC_BASE_URL }}
+        run: node scripts/media-cleanup.mjs --apply-s3
+      - name: Retain exact S3 recovery evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: media-s3-recovery-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
           path: test-results/media-cleanup/
           if-no-files-found: warn
           retention-days: 7

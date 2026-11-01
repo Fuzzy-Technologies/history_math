@@ -12,12 +12,14 @@ const apiRoot = `https://api.github.com/repos/${repository}`;
 const revisionPattern = /^[a-f0-9]{40}$/;
 const sourcePdfLimit = 512 * 1024 * 1024;
 
-export async function githubData(path, {request = fetch, token = process.env.GITHUB_TOKEN} = {}) {
+export async function githubData(path, {request = fetch, token = process.env.GITHUB_TOKEN, retryOptions} = {}) {
   if (!path.startsWith('/') || path.includes('..')) throw new Error('Invalid GitHub API path');
-  const response = await request(apiRoot + path, {redirect: 'error', signal: AbortSignal.timeout(120_000),
-    headers: {Accept: 'application/vnd.github+json', ...(token ? {Authorization: `Bearer ${token}`} : {})}});
-  if (!response.ok) throw new Error(`GitHub data request failed: HTTP ${response.status}`);
-  return response.json();
+  return readWithRetries('GitHub reference data', async () => {
+    const response = await request(apiRoot + path, {redirect: 'error', signal: AbortSignal.timeout(120_000),
+      headers: {Accept: 'application/vnd.github+json', ...(token ? {Authorization: `Bearer ${token}`} : {})}});
+    if (!response.ok) await responseBytes(response, 0);
+    return response.json();
+  }, retryOptions);
 }
 
 async function pages(api, path) {
