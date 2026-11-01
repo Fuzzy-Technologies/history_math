@@ -30,7 +30,7 @@ objects. Key rotation remains: issue a replacement key, update the environment
 Secrets, verify publication, then revoke the former key.
 
 Optional post-deployment PDF maintenance is separate from upload/verification.
-[PDF retention](PDF_RETENTION.md) defines a 30-day unreferenced grace period,
+[PDF retention](PDF_RETENTION.md) defines a 24-hour unreferenced grace period,
 current/previous/draft protections, weekly observation and an explicit deletion
 enable switch. It uses the same account after a reviewed PDF-scoped policy
 change; publication never changes bucket policy. Images and source originals

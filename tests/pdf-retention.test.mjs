@@ -11,13 +11,14 @@ const version = (object, id = 'v1', offset = -60) => ({key: object.key, version_
 const empty = () => ({version: 1, updated_at: null, entries: []});
 const versions = () => [version(active), version(previous, 'previous', -10), version(older, 'old', -20)];
 const plan = (extra = {}) => retentionPlan({versions: versions(), liveObjects: [active], state: empty(), now: start, ...extra});
-const mature = () => plan({state: plan().state, now: start + 30 * day});
+const mature = () => plan({state: plan().state, now: start + day});
 
-test('grace starts at the first complete observation; current and one previous PDF stay', () => {
+test('grace lasts exactly 24 hours from the first complete observation; current and one previous PDF stay', () => {
   const first = plan();
   assert.equal(first.deletions.length, 0);
   assert.equal(first.state.entries.length, 2);
-  assert.equal(plan({state: first.state, now: start + 30 * day - 1}).deletions.length, 0);
+  assert.equal(first.retention_days, 1);
+  assert.equal(plan({state: first.state, now: start + day - 1}).deletions.length, 0);
   const eligible = mature();
   assert.deepEqual(eligible.deletions, [version(older, 'old', -20)]);
   assert.equal(eligible.summary.candidate_bytes, 100);
@@ -28,21 +29,21 @@ test('grace starts at the first complete observation; current and one previous P
 test('PR references, stable filename aliases and unknown filenames are never collected', () => {
   const originalState = plan().state;
   for (const protection of [{protectedKeys: [older.key]}, {protectedNames: [older.filename]}]) {
-    const protectedPlan = plan({...protection, state: originalState, now: start + 31 * day});
+    const protectedPlan = plan({...protection, state: originalState, now: start + 2 * day});
     assert.equal(protectedPlan.deletions.length, 0);
     assert.ok(!protectedPlan.state.entries.some(entry => entry.key === older.key));
-    const released = plan({state: protectedPlan.state, now: start + 32 * day});
+    const released = plan({state: protectedPlan.state, now: start + 3 * day});
     assert.equal(released.deletions.length, 0);
-    assert.equal(released.state.entries.find(entry => entry.key === older.key).unreferenced_since, new Date(start + 32 * day).toISOString());
+    assert.equal(released.state.entries.find(entry => entry.key === older.key).unreferenced_since, new Date(start + 3 * day).toISOString());
   }
-  const result = plan({versions: [...versions(), version(object('d', 'withdrawn-ru.pdf'))], state: originalState, now: start + 31 * day});
+  const result = plan({versions: [...versions(), version(object('d', 'withdrawn-ru.pdf'))], state: originalState, now: start + 2 * day});
   assert.equal(result.retained.at(-1).reason, 'no-current-counterpart');
   assert.equal(result.state.entries.length, 2);
 });
 
 test('recent versions restart observation and every version of a protected key stays', () => {
-  const first = plan(), now = start + 40 * day;
-  const fresh = {...version(older, 'new-id'), last_modified: new Date(now - day).toISOString()};
+  const first = plan(), now = start + 2 * day;
+  const fresh = {...version(older, 'new-id'), last_modified: new Date(now - day / 2).toISOString()};
   const result = plan({versions: [...versions(), fresh, {...version(active), version_id: 'active-old', latest: false}], state: first.state, now});
   assert.ok(!result.deletions.some(item => item.version_id === 'new-id' || item.version_id === 'active-old'));
 });

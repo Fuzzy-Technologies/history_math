@@ -7,10 +7,10 @@ Old publication builds consume space in **Object Storage**, under
 or Git history does not perform this cleanup. This maintenance job does not
 change any of them and never deletes anything under `originals/`.
 
-The retention period is **30 complete days after the first successful,
+The retention period is **24 complete hours after the first successful,
 authenticated observation that a version is unreferenced**. Object creation
 time alone never establishes eligibility. The version itself must also be at
-least 30 days old. Missing state starts a new grace period; corrupt state stops
+least 24 hours old. Missing state starts a new grace period; corrupt state stops
 the job. There is no immediate purge on rollout.
 
 The following remain protected regardless of age:
@@ -29,7 +29,7 @@ The following remain protected regardless of age:
 A literal S3 PDF URL or key in a tracked source file pins that content key.
 A stable `/assets/pdf/en/<filename>.pdf` or `/assets/pdf/ru/<filename>.pdf`
 reference conservatively pins **all** versions of that filename. Removing a
-reference restarts the 30-day clock on the next successful observation.
+reference restarts the 24-hour clock on the next successful observation.
 Reintroducing a reference clears its previous unreferenced observation.
 
 Stable article/download pages continue to select the current PDF. Direct
@@ -75,7 +75,7 @@ Before observation or deletion, the job:
 
 There is no atomic transaction across GitHub, Pages and S3. The publication
 lock prevents managed deployment races; immediate reference rechecks and the
-30-day grace reduce the remaining PR-edit race. Do not use an external bucket
+24-hour grace reduce the remaining PR-edit race. Do not use an external bucket
 cleanup process concurrently. No blanket Lifecycle expiration may target
 `pdf/`: an old object can still be the current publication.
 

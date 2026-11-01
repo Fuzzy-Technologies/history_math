@@ -5,7 +5,7 @@ import {ListObjectVersionsCommand, GetObjectCommand, PutObjectCommand, DeleteObj
 import {storage, configuredClient, validateObject} from './s3-media.mjs';
 import {retentionReferences, liveRetentionReferences, referenceIdentity, referenceHeads} from './pdf-retention-references.mjs';
 
-export const retentionDays = 30;
+export const retentionDays = 1;
 export const stateKey = 'maintenance/pdf-retention-v1.json';
 const day = 86_400_000;
 const keyPattern = /^pdf\/([a-f0-9]{64})\/([a-z0-9][a-z0-9._-]*\.pdf)$/;
