@@ -1,0 +1,66 @@
+name: Audit PDF retention
+
+on:
+  schedule:
+    - cron: '17 1 * * 0'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Report only or record the first unreferenced observation
+        type: choice
+        default: dry-run
+        options: [dry-run, observe]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+# Observation never deletes data and must not replace a pending Pages deployment
+# in GitHub's single pending concurrency slot. Actual deletion is a post-deploy
+# job inside the existing github-pages group in deploy.yml.
+concurrency:
+  group: pdf-retention-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    if: github.ref == 'refs/heads/master' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    environment: history-math-storage
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/site/assets/images/
+            !/site/assets/fonts/
+            !/site/assets/vendor/katex/fonts/
+            !/docs/previews/
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Audit references and observe the grace period
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          RETENTION_MODE: ${{ github.event_name == 'schedule' && 'observe' || inputs.mode }}
+          S3_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
+          S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+          S3_ENDPOINT_URL: ${{ vars.S3_ENDPOINT_URL }}
+          S3_REGION: ${{ vars.S3_REGION }}
+          S3_BUCKET: ${{ vars.S3_BUCKET }}
+          S3_PUBLIC_BASE_URL: ${{ vars.S3_PUBLIC_BASE_URL }}
+        run: node scripts/pdf-retention.mjs "--$RETENTION_MODE"
+      - name: Retain PDF audit evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: pdf-retention-audit-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: test-results/pdf-retention/
+          if-no-files-found: warn
+          retention-days: 90

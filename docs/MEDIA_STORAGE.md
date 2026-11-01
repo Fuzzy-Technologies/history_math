@@ -6,8 +6,8 @@ workstation, local S3 key, new service account or manual file transfer is needed
 
 ## Destination and authority
 
-Both workflows use the existing `history-math-storage` environment, restricted
-to `master`. Only upload steps receive `S3_ACCESS_KEY_ID` and
+Media workflows use the existing `history-math-storage` environment, restricted
+to `master`. Only designated storage steps receive `S3_ACCESS_KEY_ID` and
 `S3_SECRET_ACCESS_KEY`. Its four environment variables must match:
 
 | Variable             | Value                                                  |
@@ -28,6 +28,13 @@ Names identify immutable bytes. Existing objects are publicly reverified and
 reused; a changed file gets a new address. Publication does not rotate or delete
 objects. Key rotation remains: issue a replacement key, update the environment
 Secrets, verify publication, then revoke the former key.
+
+Optional post-deployment PDF maintenance is separate from upload/verification.
+[PDF retention](PDF_RETENTION.md) defines a 30-day unreferenced grace period,
+current/previous/draft protections, weekly observation and an explicit deletion
+enable switch. It uses the same account after a reviewed PDF-scoped policy
+change; publication never changes bucket policy. Images and source originals
+remain outside that automatic retention scope.
 
 ## Automatic publication
 
