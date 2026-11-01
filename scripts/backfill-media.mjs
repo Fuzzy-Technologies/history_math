@@ -1,9 +1,10 @@
 import {readFile, mkdir, writeFile} from 'node:fs/promises';
 import {resolve, dirname, basename} from 'node:path';
 import {pathToFileURL} from 'node:url';
+import {HeadObjectCommand} from '@aws-sdk/client-s3';
 import {imageInventory} from './external-originals.mjs';
 import {imageObjects, uniqueObjects, sourceBytes, localBytes} from './publication-media.mjs';
-import {mediaObject, assertBytes, sha256, configuredClient, responseBytes, transfer, readWithRetries} from './s3-media.mjs';
+import {storage, mediaObject, assertBytes, sha256, configuredClient, responseBytes, transfer, readWithRetries} from './s3-media.mjs';
 import {publicationReplacements} from './image-publication.mjs';
 
 const repository = 'Fuzzy-Technologies/history_math';
@@ -121,13 +122,23 @@ export async function copyPublishedPdfs({origin, baseurl, client, request = fetc
 // manifest makes this a cheap no-op on subsequent publications.
 export async function preflightMedia({root, origin, baseurl, client, request = fetch, progress} = {}) {
   const copied = await copyPublishedPdfs({origin, baseurl, client, request, progress});
-  if (!copied.summary.existing_pdfs) return copied;
   const images = imageObjects(imageInventory(root), path => ({file: resolve(root, 'site', '.' + path)}), publicationReplacements(root), root);
   for (const image of images.filter(image => !image.external_url)) assertBytes(image.original_object, await localBytes(resolve(root, 'site'), image.path));
-  const originals = await transfer(uniqueObjects(images.map(image => image.object)), client,
+  const missing = [];
+  for (const object of uniqueObjects(images.map(image => image.object))) {
+    try {
+      const head = await client.send(new HeadObjectCommand({Bucket: storage.bucket, Key: object.key}));
+      if (head.ContentLength !== object.bytes || head.ContentType?.split(';')[0] !== object.content_type || head.Metadata?.sha256 !== object.sha256) throw new Error('Changed S3 preflight identity');
+    } catch (error) {
+      if (error.$metadata?.httpStatusCode !== 404) throw error;
+      missing.push(object);
+    }
+  }
+  const originals = await transfer(missing, client,
     object => sourceBytes(object, request), {request, progress});
   return {version: 1, objects: [...copied.objects, ...originals], summary: {...copied.summary,
-    originals: originals.length, bytes: copied.summary.bytes + originals.reduce((sum, object) => sum + object.bytes, 0)}};
+    originals: originals.length, existing_originals: images.length - missing.length,
+    bytes: copied.summary.bytes + originals.reduce((sum, object) => sum + object.bytes, 0)}};
 }
 
 export async function backfill({root, origin, baseurl, includeOpenPRs, client, api = githubData, request = fetch, progress} = {}) {

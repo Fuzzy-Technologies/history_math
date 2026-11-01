@@ -52,6 +52,34 @@ test('source download retries a gateway error and reconnect, then checks exact o
   assert.equal(corruptReads, 1);
 });
 
+test('S3 source stays usable after release removal; corrupt or forbidden replicas never fall back', async () => {
+  const source = {...object, source: {url: 'https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/test.png'}};
+  let releaseCalls = 0;
+  const good = await sourceBytes(source, async url => {
+    if (String(url) !== object.url) {releaseCalls++; return new Response('removed', {status: 404});}
+    return new Response(original);
+  });
+  assert.deepEqual(good, original); assert.equal(releaseCalls, 0);
+  for (const response of [new Response('wrong bytes'), new Response('forbidden', {status: 403})]) {
+    await assert.rejects(sourceBytes(source, async url => {assert.equal(String(url), object.url); return response;}));
+  }
+});
+
+test('preflight checks existing S3 metadata even after PDF migration and avoids original downloads', async () => {
+  await fixture(async ({root}) => {
+    const copiedPdf = mediaObject('pdf', 'existing.pdf', sha256(pdf), pdf.length);
+    let heads = 0;
+    const result = await preflightMedia({root, origin: 'https://history-math.org', baseurl: '', client: {send: async command => {
+      assert.ok(command instanceof HeadObjectCommand); heads++;
+      return {ContentLength: object.bytes, ContentType: object.content_type, Metadata: {sha256: object.sha256}};
+    }}, request: async url => {assert.ok(url.endsWith('/article-pdfs.json')); return Response.json({version: 2,
+      origin: 'https://history-math.org', baseurl: '', articles: [{pdf_url: copiedPdf.url}]});}});
+    assert.equal(heads, 1); assert.equal(result.summary.existing_originals, 1); assert.equal(result.summary.originals, 0);
+    await assert.rejects(preflightMedia({root, origin: 'https://history-math.org', baseurl: '', client: {send: async () => ({ContentLength: 1})},
+      request: async () => Response.json({version: 2, origin: 'https://history-math.org', baseurl: '', articles: [{pdf_url: copiedPdf.url}]})}), /Changed S3 preflight/);
+  });
+});
+
 test('storage destination, identities and source bytes reject mutations', () => {
   const client = configuredClient(config); client.destroy();
   for (const key of Object.keys(config)) assert.throws(() => configuredClient({...config, [key]: ''}));

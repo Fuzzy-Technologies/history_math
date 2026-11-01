@@ -95,6 +95,15 @@ export async function sourceBytes(object, request = fetch, retryOptions) {
   // from a pull request. Only the project's existing release objects are valid.
   if (!source.href.startsWith('https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-') ||
       source.search || source.hash || source.username || source.password) throw new Error('Untrusted original source');
+  // S3 is authoritative after migration. Legacy release descriptors remain
+  // provenance for unchanged editorial approval digests, not backup copies.
+  const cached = await readWithRetries(`S3 source ${object.key}`, async () => {
+    const replica = await request(object.url, {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)});
+    if (replica.status === 404) { await replica.body?.cancel(); return null; }
+    const bytes = await responseBytes(replica, object.bytes);
+    assertBytes(object, bytes); return bytes;
+  }, retryOptions);
+  if (cached) return cached;
   return readWithRetries(`original source ${object.key}`, async () => {
     const bytes = await responseBytes(await request(source, {credentials: 'omit', redirect: 'follow', signal: AbortSignal.timeout(120_000)}), object.bytes);
     assertBytes(object, bytes);

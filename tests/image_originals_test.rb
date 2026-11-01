@@ -32,12 +32,30 @@ class ImageOriginalsTest < Minitest::Test
     refute_match HistoryMath::MIGRATED_ORIGINAL, "/assets/images/hm-99120459b820/diagram.png"
   end
 
-  def test_external_originals_use_verified_release_location_in_review_and_production
+  def test_external_originals_use_s3_without_changing_source_provenance
     entry = external_entry
     site = external_site(".", entry)
     [true, false].each do |review|
       site.config["article_review"] = review
-      assert_equal entry["external_original"]["url"], HistoryMath.original_image_url(site, ORIGINAL_PATH)
+      assert_equal "https://storage.yandexcloud.kz/history-math-media-kz/originals/#{entry['sha256']}/diagram-01.png", HistoryMath.original_image_url(site, ORIGINAL_PATH)
+      assert_equal "s3", HistoryMath.original_image_delivery(site, ORIGINAL_PATH)["storage"]
+    end
+  end
+
+  def test_s3_delivery_uses_only_a_matching_pinned_jpeg_and_preserves_approval_metadata
+    entry = external_entry
+    site = external_site(".", entry)
+    original = Marshal.load(Marshal.dump(entry))
+    record = {"source_sha256" => entry["sha256"], "source_bytes" => entry["bytes"], "width" => 1, "height" => 1,
+      "sha256" => "a" * 64, "bytes" => 40, "filename" => "diagram-01.jpg"}
+    site.data["image_publication"] = {"replacements" => {ORIGINAL_PATH => record}}
+    delivery = HistoryMath.original_image_delivery(site, ORIGINAL_PATH)
+    assert_equal "https://storage.yandexcloud.kz/history-math-media-kz/originals/#{'a' * 64}/diagram-01.jpg", delivery["url"]
+    assert_equal 40, delivery["bytes"]
+    assert_equal original, entry
+    [{"source_sha256" => "b" * 64}, {"filename" => "../wrong.jpg"}, {"width" => 2}, {"sha256" => "invalid"}, {"bytes" => 15_000_001}].each do |change|
+      site.data["image_publication"]["replacements"][ORIGINAL_PATH] = record.merge(change)
+      assert_raises(ArgumentError) { HistoryMath.original_image_delivery(site, ORIGINAL_PATH) }
     end
   end
 

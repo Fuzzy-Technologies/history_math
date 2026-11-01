@@ -64,9 +64,9 @@ test('one-time backfill uses the deployment account on master without deploying 
 test('source checks use shallow heads and publication resolves the exact master SHA from full history', () => {
   for (const file of ['ci.yml', 'deploy.yml']) {
     const workflow = parse(readFileSync(`.github/workflows/${file}`, 'utf8'));
-    for (const job of Object.values(workflow.jobs)) {
+    for (const [name, job] of Object.entries(workflow.jobs)) {
       for (const step of job.steps ?? []) {
-        if (step.uses?.startsWith('actions/checkout@')) assert.equal(step.with['fetch-depth'], file === 'deploy.yml' ? 0 : 1);
+        if (step.uses?.startsWith('actions/checkout@')) assert.equal(step.with['fetch-depth'], file === 'deploy.yml' && name !== 'media_cleanup' ? 0 : 1);
       }
     }
   }
@@ -206,7 +206,7 @@ test('PR metadata uses additive APIs without executing contributor code', async 
 test('production build and deployment both require master for push and manual dispatch', () => {
   const deploy = readFileSync('.github/workflows/deploy.yml', 'utf8');
   const guard = "github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')";
-  assert.equal(deploy.split(guard).length - 1, 3);
+  assert.equal(deploy.split(guard).length - 1, 4);
   assert.match(deploy, /branches: \[master\]/);
   assert.ok(!deploy.includes('pull_request:'));
   for (const branch of ['master', 'develop', 'feature/site-prototype']) {
@@ -220,6 +220,51 @@ test('production build and deployment both require master for push and manual di
     const content = readFileSync(`.github/workflows/${file}`, 'utf8');
     for (const match of content.matchAll(/uses: ([^\s]+)/g)) assert.match(match[1], /@[a-f0-9]{40}$/);
   }
+});
+
+test('current-media deletion follows deployment; daily audit cannot delete S3 or displace publication', () => {
+  const maintenance = parse(readFileSync('.github/workflows/storage-maintenance.yml', 'utf8'));
+  const publication = parse(readFileSync('.github/workflows/deploy.yml', 'utf8'));
+  const check = (audit, deploy) => {
+    assert.deepEqual(Object.keys(audit.on), ['schedule', 'workflow_dispatch']);
+    assert.equal(audit.on.workflow_dispatch.inputs.clean_github.default, false);
+    assert.notEqual(audit.concurrency.group, deploy.concurrency.group);
+    assert.equal(deploy.concurrency.group, 'github-pages');
+    assert.equal(deploy.concurrency['cancel-in-progress'], false);
+    const job = deploy.jobs.media_cleanup;
+    assert.deepEqual(job.needs, ['deploy', 'retire_oversized_media']);
+    assert.ok(!job.if.includes('always()'));
+    assert.equal(job.concurrency.group, audit.jobs.github_cleanup.concurrency.group);
+    const runtime = job.steps.find(step => step.run?.includes('scripts/media-cleanup.mjs'));
+    assert.equal(runtime.run, 'node scripts/media-cleanup.mjs --apply');
+    assert.equal(runtime.env.MEDIA_CLEANUP_AFTER_DEPLOY, 'true');
+    assert.equal(runtime.env.GITHUB_TOKEN, '${{ github.token }}');
+    assert.deepEqual(job.permissions, {contents: 'write', actions: 'write', 'pull-requests': 'read'});
+    const report = audit.jobs.audit.steps.find(step => step.run?.includes('scripts/media-cleanup.mjs'));
+    assert.equal(report.run, 'node scripts/media-cleanup.mjs --dry-run');
+    assert.ok(!JSON.stringify(report).includes('MEDIA_CLEANUP_AFTER_DEPLOY'));
+    const github = audit.jobs.github_cleanup;
+    assert.equal(github.needs, 'audit');
+    assert.ok(github.if.includes('inputs.clean_github'));
+    assert.ok(!JSON.stringify(github).includes('S3_SECRET_ACCESS_KEY'));
+    assert.ok(github.steps.some(step => step.run === 'node scripts/github-storage-cleanup.mjs --apply'));
+    for (const candidate of [audit.jobs.audit, github, job]) {
+      assert.match(candidate.if, /github.ref == 'refs\/heads\/master'/);
+      const checkout = candidate.steps.find(step => step.uses?.startsWith('actions/checkout@'));
+      assert.equal(checkout.with['persist-credentials'], false);
+      assert.ok(!JSON.stringify(candidate).includes('pull_request_target'));
+      for (const action of candidate.steps.filter(step => step.uses)) assert.match(action.uses, /@[a-f0-9]{40}$/);
+    }
+  };
+  check(maintenance, publication);
+  for (const mutate of [p => {p.jobs.media_cleanup.needs = ['build'];}, p => {p.jobs.media_cleanup.if = 'always()';},
+    p => {p.jobs.media_cleanup.steps.find(step => step.env?.MEDIA_CLEANUP_AFTER_DEPLOY).env.MEDIA_CLEANUP_AFTER_DEPLOY = ''; }]) {
+    const unsafe = structuredClone(publication); mutate(unsafe); assert.throws(() => check(maintenance, unsafe));
+  }
+  const unsafe = structuredClone(maintenance); unsafe.concurrency.group = 'github-pages';
+  assert.throws(() => check(unsafe, publication));
+  const steps = publication.jobs.build.steps;
+  assert.ok(steps.findIndex(s => s.name === 'Prepare bounded full-resolution JPEG originals') < steps.findIndex(s => s.name === 'Preflight existing S3 media copies'));
 });
 
 test('the actual privileged article comment job has no checkout and rejects stale or duplicate results', async () => {

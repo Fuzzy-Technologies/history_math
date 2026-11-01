@@ -2,6 +2,13 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {validateManifest, printImageSources, articlePdfPath} from '../scripts/article-pdf.mjs';
 
+test('S3 originals keep PDF printing on local reading variants after release cleanup', () => {
+  const html = '<img src="/reading.webp" srcset="/small.webp 480w" data-original="https://storage.yandexcloud.kz/history-math-media-kz/originals/hash/figure.jpg" data-original-storage="s3">';
+  const output = printImageSources(html);
+  assert.match(output, /src="\/reading.webp"/);
+  assert.doesNotMatch(output, /srcset=/);
+});
+
 test('PDF manifest binds language, URL and output filename without traversal or duplicates', () => {
   const article = {url: '/ru/publications/example/', pdf_url: '/assets/pdf/ru/example-ru.pdf', lang: 'ru', title: 'Пример'};
   const manifest = {version: 2, baseurl: '/history_math', origin: 'https://fuzzy-technologies.github.io', articles: [article]};

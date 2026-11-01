@@ -5,6 +5,8 @@ import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
 import {stubMetrika} from './metrika-fixture.mjs';
+import {imageObjects} from '../scripts/publication-media.mjs';
+import {publicationReplacements} from '../scripts/image-publication.mjs';
 
 const root = resolve(process.env.IMAGE_SITE_DIR || '_site');
 const base = process.env.IMAGE_BASEURL ?? '/history_math';
@@ -12,6 +14,7 @@ const inventory = JSON.parse(await readFile('site/_data/image_assets.json', 'utf
 for (const file of await readdir('site/_data/article_image_assets').catch(() => [])) {
   Object.assign(inventory, JSON.parse(await readFile('site/_data/article_image_assets/' + file, 'utf8')));
 }
+const deliveries = new Map(imageObjects(inventory, path => ({file: path}), publicationReplacements(process.cwd()), process.cwd()).map(image => [image.path, image.object]));
 const mime = {'.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json',
   '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2'};
 const server = createServer(async (request, response) => {
@@ -89,10 +92,12 @@ try {
       await page.waitForFunction(() => document.querySelector('#image-viewer').getAttribute('aria-busy') === 'false');
       await page.locator('.viewer-canvas img').evaluate(img => img.decode());
       if (external) {
-        assert.equal(await page.locator('.viewer-canvas img').getAttribute('src'), external.url);
-        assert.ok(allRequests.some(url => url === external.url));
+        assert.equal(original, deliveries.get(identity).url);
+        assert.equal(await page.locator('.viewer-canvas img').getAttribute('src'), original);
+        assert.ok(allRequests.some(url => url === original));
+        assert.ok(!allRequests.some(url => url === external.url), 'Removed release copies must never be requested');
         assert.ok(!allRequests.some(url => url === external.api_url), 'Native delivery must not depend on API CORS');
-        assert.deepEqual([...new Set(originalRasterRequests(requests))], [new URL(external.url).pathname]);
+        assert.deepEqual([...new Set(originalRasterRequests(requests))], [new URL(original).pathname]);
       } else {
         assert.equal(await page.locator('.viewer-canvas img').getAttribute('src'), original);
         assert.deepEqual([...new Set(originalRasterRequests(requests))], [new URL(original, origin).pathname]);
@@ -102,7 +107,7 @@ try {
       if (!checkedDownload) {
         const [file] = await Promise.all([page.waitForEvent('download'), download.click()]);
         const bytes = await readFile(await file.path());
-        assert.equal(createHash('sha256').update(bytes).digest('hex'), inventory[identity].sha256);
+        assert.equal(createHash('sha256').update(bytes).digest('hex'), await trigger.locator('img').getAttribute('data-original-sha256'));
         checkedDownload = true;
       }
       await page.keyboard.press('Escape');
