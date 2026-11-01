@@ -75,7 +75,8 @@ export function githubCleanupPlan(inventory, references, {master, runId}) {
     actions.push({kind: 'release-asset', id: asset.id, bytes: asset.size, name: asset.name,
       replica: migration ? validateObject(migration.object) : null, reason: migration ? 'verified-s3-copy' : 'unreferenced-original'});
   }
-  const activeHeads = new Set([master, ...references.pulls.map(pr => pr.sha)]), newest = new Map(), running = new Set([...inventory.running, runId]);
+  const draftHeads = new Set(references.pulls.map(pr => pr.sha));
+  const activeHeads = new Set([master, ...draftHeads]), newest = new Map(), running = new Set([...inventory.running, runId]);
   const group = item => JSON.stringify([item.workflow_run?.head_sha, item.name?.replace(/-[a-f0-9]{40}(?:-.*)?$/, '')]);
   for (const item of inventory.artifacts) {
     if (!positive(item.id) || !Number.isSafeInteger(item.size_in_bytes) || item.size_in_bytes < 0 || !stamp(item.created_at)) throw new Error('Invalid artifact identity');
@@ -86,7 +87,7 @@ export function githubCleanupPlan(inventory, references, {master, runId}) {
     const run = item.workflow_run;
     if (!run || running.has(run.id)) {retained.push({kind: 'artifact', id: item.id, reason: 'active-or-unclassified-run'}); continue;}
     const oldMedia = /^(?:article-(?:pdfs|preview|screenshots)|browser-site|site-build)(?:-|$)/.test(item.name);
-    if (oldMedia || !activeHeads.has(run.head_sha) || newest.get(group(item)).id !== item.id) actions.push({kind: 'artifact', id: item.id, bytes: item.size_in_bytes, name: item.name});
+    if ((oldMedia && !draftHeads.has(run.head_sha)) || !activeHeads.has(run.head_sha) || newest.get(group(item)).id !== item.id) actions.push({kind: 'artifact', id: item.id, bytes: item.size_in_bytes, name: item.name});
     else retained.push({kind: 'artifact', id: item.id, reason: 'current-report-or-pages-transfer'});
   }
   const pdfCaches = inventory.caches.filter(item => item.ref === 'refs/heads/master' && /^pdf-v1-[A-Za-z0-9_]+-[a-f0-9]{40}-/.test(item.key));

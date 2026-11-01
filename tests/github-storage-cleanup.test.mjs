@@ -32,6 +32,15 @@ test('stale artifacts are deleted while current reports and all active runs rema
   assert.ok(result.retained.some(a => a.id === 6)); assert.ok(result.retained.some(a => a.id === 7));
 });
 
+test('the current review preview of an open draft survives while its previous preview is removed', () => {
+  const result = plan({artifacts: [artifact(8, draft, 'article-preview-' + draft), artifact(9, draft, 'article-preview-' + draft)]});
+  assert.ok(result.retained.some(item => item.kind === 'artifact' && item.id === 9));
+  assert.ok(!result.actions.some(item => item.kind === 'artifact' && item.id === 9));
+  assert.ok(result.actions.some(item => item.kind === 'artifact' && item.id === 8));
+  const bad = structuredClone(result); bad.actions.push({kind: 'artifact', id: 9, bytes: 100});
+  return assert.rejects(applyGithubCleanup(bad, {api: async () => assert.fail('Never delete the current preview'), guard: async () => {}, verify: async () => {}}));
+});
+
 test('only the newest current master PDF cache is retained; unrelated dependency caches are untouched', () => {
   const result = plan({caches: [1, 2].map(id => ({id, key: `pdf-v1-Linux-${master}-${id}-1-build`, version: String(id), ref: 'refs/heads/master',
     size_in_bytes: 1000, created_at: `2026-01-0${id}T00:00:00Z`})).concat({id: 3, key: 'node-cache', ref: 'refs/heads/master'})});

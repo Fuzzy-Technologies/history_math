@@ -63,8 +63,9 @@ not deleted merely because their PR has not appeared yet. Individual asset
 deletion cannot erase a concurrently uploaded asset with another ID. Release
 containers, product releases and tags are not deleted.
 
-Completed-run media archives, superseded reports and obsolete master PDF caches
-are removed. Active/queued/waiting runs, current open-PR reports, the newest
+Completed-run production media archives, superseded reports/review previews and
+obsolete master PDF caches are removed. Active/queued/waiting runs, the latest
+review preview and report for each current open-PR head, the newest
 current Pages transfer/report and one current master PDF rendering cache per
 runner platform remain. Dependency caches are outside this policy. The current
 PDF cache speeds deterministic rendering; it is separate from published S3 media.
