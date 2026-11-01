@@ -38,6 +38,15 @@ binary copy once its current S3 representation passes verification. Source reads
 prefer verified S3 bytes; GitHub is only a migration fallback on a genuine 404.
 Authentication, corruption and TLS errors do not silently fall back.
 
+Re-preparing an edited article also verifies its current S3 original before
+looking for a Release asset. Existing provenance descriptors stay byte-for-byte
+unchanged. A JPEG is accepted only through the trusted matching normalization
+registry, with its full delivered checksum and size. A genuine 404 for an exact
+not-yet-migrated original may use the legacy Release path; a missing normalized
+JPEG, corrupt bytes or an access/network failure stops preparation. Reuse is
+recorded separately in the preparation receipt and never claims that a removed
+GitHub API binary was tested.
+
 Cleanup inventories all relevant object/version and GitHub pages, pins master,
 open PR heads/descriptions and public manifest digests, and reads PR content as
 bounded, Git-verified data. It never executes PR code. Forks, truncated trees,
