@@ -8,6 +8,7 @@ import io
 import json
 import socket
 import ssl
+import subprocess
 import time
 import urllib.error
 import urllib.request
@@ -136,7 +137,22 @@ def download(url, maximum):
         time.sleep((1, 3)[attempt])
 
 
-def cached_record(path, entry, previous):
+def checked_registry_cache(registry):
+    payload = json.dumps(registry).encode("utf-8")
+    result = subprocess.run(["node", str(ROOT / "scripts/check-jpeg-cache.mjs")],
+                            input=payload, capture_output=True, timeout=240)
+    if result.returncode:
+        raise ValueError("Pinned JPEG cache verification failed: " + result.stderr.decode("utf-8", errors="replace").strip())
+    receipt = json.loads(result.stdout)
+    cached = receipt.get("cached")
+    if receipt.get("version") != 1 or receipt.get("registry_sha256") != digest(payload) or \
+            not isinstance(cached, list) or any(not isinstance(path, str) for path in cached) or \
+            len(set(cached)) != len(cached) or not set(cached).issubset(registry["replacements"]):
+        raise ValueError("Invalid pinned JPEG verification receipt")
+    return {path: path in cached for path in registry["replacements"]}
+
+
+def cached_record(path, entry, previous, verified=None):
     record = previous.get(path)
     if not isinstance(record, dict) or record.get("policy") != POLICY:
         return None
@@ -151,6 +167,8 @@ def cached_record(path, entry, previous):
     if not isinstance(sha, str) or len(sha) != 64 or any(c not in "0123456789abcdef" for c in sha) or \
             type(size) is not int or not 0 < size < entry["bytes"]:
         return None
+    if verified is not None:
+        return {key: value for key, value in record.items() if key != "file"} if verified else None
     url = f"{BASE}/originals/{sha}/{record['filename']}"
     for attempt in range(3):
         try:
@@ -173,8 +191,8 @@ def cached_record(path, entry, previous):
     return None
 
 
-def prepare(path, entry, directory, previous):
-    cached = cached_record(path, entry, previous)
+def prepare(path, entry, directory, previous, cache=None):
+    cached = cached_record(path, entry, previous, cache[path] if cache is not None else None)
     if cached:
         return path, cached, None
     local = ROOT / "site" / path.lstrip("/")
@@ -218,6 +236,7 @@ def main():
     output.parent.mkdir(parents=True, exist_ok=True)
     registry = json.loads(Path(options.registry).read_text()) if options.registry else None
     previous = registry["replacements"] if registry else {}
+    cache = checked_registry_cache(registry) if registry is not None else None
     if registry is None:
         try:
             previous = json.loads(download(options.previous, 12_000_000)).get("jpeg_originals", {})
@@ -237,7 +256,7 @@ def main():
                and not entry.get("logo") and entry["bytes"] >= 13_000_000]
     replacements, retained = {}, {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
-        futures = [pool.submit(prepare, path, entry, output.parent, previous) for path, entry in entries]
+        futures = [pool.submit(prepare, path, entry, output.parent, previous, cache) for path, entry in entries]
         try:
             for done, future in enumerate(concurrent.futures.as_completed(futures), 1):
                 path, record, reason = future.result()

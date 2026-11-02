@@ -80,13 +80,44 @@ class PublicationJpegsTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             registry = Path(directory) / "registry.json"
             output = Path(directory) / "plan.json"
-            registry.write_text(json.dumps({"replacements": {}}))
+            registry.write_text(json.dumps({"version": 1, "policy": jpegs.POLICY, "replacements": {}}))
             with mock.patch.object(jpegs.sys, "argv", ["publication_jpegs.py", "--registry", str(registry), "--output", str(output)]), \
                     mock.patch.object(jpegs, "pillow_version", "12.3.0"), \
                     mock.patch.object(jpegs, "inventory", return_value={}), \
                     mock.patch.object(jpegs, "download") as download:
                 jpegs.main()
             self.assertEqual(json.loads(output.read_text())["replacements"], {})
+            download.assert_not_called()
+
+    def test_verified_pinned_cache_reuses_records_without_a_second_python_head(self):
+        entry, record, _ = self.cache()
+        path = "/assets/images/image.png"
+        with mock.patch.object(jpegs, "open_media") as read, mock.patch.object(jpegs, "download") as download:
+            self.assertEqual(jpegs.prepare(path, entry, Path("unused"), {path: record}, {path: True}),
+                             (path, record, None))
+            read.assert_not_called()
+            download.assert_not_called()
+
+    def test_node_cache_receipt_is_bound_to_exact_registry_and_known_unique_paths(self):
+        registry = {"replacements": {"image.png": {}}}
+        sha = jpegs.digest(json.dumps(registry).encode("utf-8"))
+        valid = {"version": 1, "registry_sha256": sha, "cached": ["image.png"]}
+        for receipt in [valid, {**valid, "registry_sha256": "0" * 64},
+                        {**valid, "cached": ["unknown"]}, {**valid, "cached": ["image.png", "image.png"]},
+                        {**valid, "cached": [None]}, {**valid, "version": 2}]:
+            result = mock.Mock(returncode=0, stdout=json.dumps(receipt).encode(), stderr=b"")
+            with mock.patch.object(jpegs.subprocess, "run", return_value=result) as run:
+                if receipt is valid:
+                    self.assertEqual(jpegs.checked_registry_cache(registry), {"image.png": True})
+                    self.assertEqual(run.call_args.args[0][0], "node")
+                    self.assertEqual(run.call_args.kwargs["timeout"], 240)
+                else:
+                    with self.assertRaises(ValueError):
+                        jpegs.checked_registry_cache(registry)
+        with mock.patch.object(jpegs.subprocess, "run", return_value=mock.Mock(returncode=1, stderr=b"ETIMEDOUT")), \
+                mock.patch.object(jpegs, "download") as download:
+            with self.assertRaisesRegex(ValueError, "ETIMEDOUT"):
+                jpegs.checked_registry_cache(registry)
             download.assert_not_called()
 
     def test_public_connection_tries_only_ipv4_and_closes_failed_sockets(self):

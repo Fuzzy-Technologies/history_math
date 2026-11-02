@@ -96,20 +96,24 @@ export function cleanupPlan({versions, liveObjects, protectedKeys = [], protecte
 }
 
 export async function verifyCurrentMedia(objects, request = mediaRead, retryOptions) {
-  let cursor = 0;
-  await Promise.all(Array.from({length: Math.min(6, objects.length)}, async () => {
-    while (cursor < objects.length) {
-      const object = objects[cursor++]; validateObject(object);
-      await readWithRetries(`current media ${object.key}`, async () => {
-        const response = await request(object.url, {method: 'HEAD', credentials: 'omit', redirect: 'error', cache: 'no-store', signal: AbortSignal.timeout(60_000)});
-        if (response.status !== 200) throw Object.assign(new Error('Current media unavailable'), {status: response.status});
-        if (response.headers.get('content-length') !== String(object.bytes) ||
-            response.headers.get('content-type')?.split(';')[0] !== object.content_type || response.headers.get('x-amz-meta-sha256') !== object.sha256) {
-          throw new Error('Current media metadata mismatch');
-        }
-      }, retryOptions);
+  let cursor = 0, failed = false;
+  const results = await Promise.allSettled(Array.from({length: Math.min(6, objects.length)}, async () => {
+    while (!failed && cursor < objects.length) {
+      try {
+        const object = objects[cursor++]; validateObject(object);
+        await readWithRetries(`current media ${object.key}`, async () => {
+          const response = await request(object.url, {method: 'HEAD', credentials: 'omit', redirect: 'error', cache: 'no-store', signal: AbortSignal.timeout(60_000)});
+          if (response.status !== 200) throw Object.assign(new Error('Current media unavailable'), {status: response.status});
+          if (response.headers.get('content-length') !== String(object.bytes) ||
+              response.headers.get('content-type')?.split(';')[0] !== object.content_type || response.headers.get('x-amz-meta-sha256') !== object.sha256) {
+            throw new Error('Current media metadata mismatch');
+          }
+        }, retryOptions);
+      } catch (error) { failed = true; throw error; }
     }
   }));
+  const failure = results.find(result => result.status === 'rejected');
+  if (failure) throw failure.reason;
 }
 
 export async function applyCleanup(client, plan, {guard, journal = async () => {}}) {
