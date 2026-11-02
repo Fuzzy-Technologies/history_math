@@ -2,7 +2,7 @@ import {mkdir, writeFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {ListObjectVersionsCommand, DeleteObjectCommand} from '@aws-sdk/client-s3';
-import {storage, configuredClient, mediaObject, validateObject, uploadVerified, readWithRetries, mediaRead} from './s3-media.mjs';
+import {storage, configuredClient, mediaObject, validateObject, uploadVerified, readWithRetries, mediaRead, storageFailure} from './s3-media.mjs';
 import {sourceBytes, uniqueObjects} from './publication-media.mjs';
 import {revisionBytes} from './backfill-media.mjs';
 import {currentReferences, currentPublication, referenceIdentity, guardedHeads, rawReferenceBlob} from './media-cleanup-references.mjs';
@@ -127,8 +127,10 @@ export async function applyCleanup(client, plan, {guard, journal = async () => {
     await guard();
     try { await client.send(new DeleteObjectCommand({Bucket: storage.bucket, Key: item.key, VersionId: item.version_id})); }
     catch (error) {
-      result.failure = {key: item.key, version_id: item.version_id, http_status: error.$metadata?.httpStatusCode || null};
-      await journal(result); throw new Error(`Media deletion failed (HTTP ${result.failure.http_status || 'unknown'}); check explicit bucket policy, IAM and locks`);
+      const details = storageFailure('version deletion', item, error);
+      result.failure = {key: item.key, version_id: item.version_id, http_status: details.http_status,
+        code: details.code, sdk_attempts: details.sdk_attempts};
+      await journal(result); throw new Error(`Media deletion failed (HTTP ${details.http_status || 'unknown'}); ${details.code}; ${details.sdk_attempts || 'unknown'} SDK attempts; check explicit bucket policy, IAM and locks`);
     }
     result.deleted.push(item); await journal(result);
   }

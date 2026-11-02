@@ -72,6 +72,8 @@ export function configuredClient(env = process.env) {
       env.S3_BUCKET !== storage.bucket || env.S3_PUBLIC_BASE_URL !== storage.base ||
       !env.S3_ACCESS_KEY_ID || !env.S3_SECRET_ACCESS_KEY) throw new Error('Missing or invalid Kazakhstan storage configuration');
   return new S3Client({endpoint: storage.endpoint, region: storage.region, forcePathStyle: true, maxAttempts: 3,
+    requestHandler: {httpsAgent: {family: 4, keepAlive: true, maxSockets: 6, rejectUnauthorized: true},
+      connectionTimeout: 30_000, requestTimeout: 120_000, throwOnRequestTimeout: true},
     requestChecksumCalculation: 'WHEN_REQUIRED', responseChecksumValidation: 'WHEN_REQUIRED',
     credentials: {accessKeyId: env.S3_ACCESS_KEY_ID, secretAccessKey: env.S3_SECRET_ACCESS_KEY}});
 }
@@ -147,7 +149,7 @@ function assertUploadBudget(object) {
   if (object.bytes > 15_000_000) throw new Error(`S3 media exceeds the 15 MB hard limit: ${object.key}`);
 }
 
-function storageFailure(operation, object, error) {
+export function storageFailure(operation, object, error) {
   const names = new Set(['AccessDenied', 'AccountProblem', 'InvalidAccessKeyId', 'InvalidSecurity',
     'InvalidPayer', 'SignatureDoesNotMatch', 'RequestTimeTooSkewed', 'BucketMaxSizeExceeded',
     'CloudTotalAliveSizeQuotaExceed', 'NoSuchBucket', 'NoSuchKey', 'EntityTooLarge', 'InvalidArgument',
@@ -155,7 +157,10 @@ function storageFailure(operation, object, error) {
     'ServiceUnavailable', 'InternalError']);
   const status = error?.$metadata?.httpStatusCode, attempts = error?.$metadata?.attempts;
   const code = names.has(error?.name) ? error.name : transientCode(error) || 'UNCLASSIFIED';
-  return new Error(`S3 ${operation} failed: ${object.key} (HTTP ${Number.isInteger(status) && status >= 100 && status <= 599 ? status : 'unknown'}; ${code}; ${Number.isSafeInteger(attempts) && attempts > 0 ? attempts : 'unknown'} SDK attempts)`);
+  const http_status = Number.isInteger(status) && status >= 100 && status <= 599 ? status : null;
+  const sdk_attempts = Number.isSafeInteger(attempts) && attempts > 0 ? attempts : null;
+  return Object.assign(new Error(`S3 ${operation} failed: ${object.key} (HTTP ${http_status || 'unknown'}; ${code}; ${sdk_attempts || 'unknown'} SDK attempts)`),
+    {http_status, code, sdk_attempts});
 }
 
 export async function uploadVerified(client, object, source, {request = mediaRead} = {}) {

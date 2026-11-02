@@ -2,6 +2,8 @@ import hashlib
 import importlib.util
 import io
 import json
+import socket
+import ssl
 import tempfile
 import urllib.error
 from email.message import Message
@@ -36,7 +38,7 @@ class PublicationJpegsTest(unittest.TestCase):
         for failure in [TimeoutError(), urllib.error.URLError("connection reset"),
                         urllib.error.HTTPError("https://example.invalid", 503, "Unavailable", {}, None)]:
             with self.subTest(error=type(failure).__name__), \
-                    mock.patch.object(jpegs.urllib.request, "urlopen", side_effect=[failure, response]) as read, \
+                    mock.patch.object(jpegs, "open_media", side_effect=[failure, response]) as read, \
                     mock.patch.object(jpegs.time, "sleep") as pause, \
                     mock.patch.object(jpegs, "download") as download:
                 self.assertEqual(jpegs.prepare(path, entry, Path("unused"), {path: record}),
@@ -52,7 +54,7 @@ class PublicationJpegsTest(unittest.TestCase):
         for failure, attempts in [(TimeoutError(), 3),
                                   (urllib.error.HTTPError("https://example.invalid", 403, "Forbidden", {}, None), 1)]:
             with self.subTest(error=type(failure).__name__), \
-                    mock.patch.object(jpegs.urllib.request, "urlopen", side_effect=failure) as read, \
+                    mock.patch.object(jpegs, "open_media", side_effect=failure) as read, \
                     mock.patch.object(jpegs.time, "sleep"), \
                     mock.patch.object(jpegs, "download") as download:
                 with self.assertRaises(type(failure)):
@@ -63,14 +65,14 @@ class PublicationJpegsTest(unittest.TestCase):
     def test_missing_or_changed_cached_jpeg_remains_a_real_cache_miss(self):
         entry, record, response = self.cache()
         path = "/assets/images/image.png"
-        with mock.patch.object(jpegs.urllib.request, "urlopen",
+        with mock.patch.object(jpegs, "open_media",
                                side_effect=urllib.error.HTTPError("https://example.invalid", 404, "Missing", {}, None)) as read:
             self.assertIsNone(jpegs.cached_record(path, entry, {path: record}))
             self.assertEqual(read.call_count, 1)
         response.__enter__.return_value.headers.replace_header("Content-Length", "31")
-        with mock.patch.object(jpegs.urllib.request, "urlopen", return_value=response):
+        with mock.patch.object(jpegs, "open_media", return_value=response):
             self.assertIsNone(jpegs.cached_record(path, entry, {path: record}))
-        with mock.patch.object(jpegs.urllib.request, "urlopen") as read:
+        with mock.patch.object(jpegs, "open_media") as read:
             self.assertIsNone(jpegs.cached_record(path, {**entry, "sha256": "c" * 64}, {path: record}))
             read.assert_not_called()
 
@@ -86,6 +88,54 @@ class PublicationJpegsTest(unittest.TestCase):
                 jpegs.main()
             self.assertEqual(json.loads(output.read_text())["replacements"], {})
             download.assert_not_called()
+
+    def test_public_connection_tries_only_ipv4_and_closes_failed_sockets(self):
+        first, second = mock.Mock(), mock.Mock()
+        first.connect.side_effect = OSError("unreachable")
+        addresses = [(socket.AF_INET, socket.SOCK_STREAM, 6, "", ("192.0.2.1", 443)),
+                     (socket.AF_INET, socket.SOCK_STREAM, 6, "", ("192.0.2.2", 443))]
+        with mock.patch.object(jpegs.socket, "getaddrinfo", return_value=addresses) as lookup, \
+                mock.patch.object(jpegs.socket, "socket", side_effect=[first, second]):
+            self.assertIs(jpegs.ipv4_connection(("storage.yandexcloud.kz", 443), 30), second)
+        lookup.assert_called_once_with("storage.yandexcloud.kz", 443, socket.AF_INET, socket.SOCK_STREAM)
+        first.close.assert_called_once()
+        second.settimeout.assert_called_once_with(30)
+        second.connect.assert_called_once_with(("192.0.2.2", 443))
+        second.close.assert_not_called()
+        self.assertEqual(jpegs.PUBLIC_CONTEXT.verify_mode, ssl.CERT_REQUIRED)
+        self.assertTrue(jpegs.PUBLIC_CONTEXT.check_hostname)
+
+    def test_only_fixed_anonymous_bucket_reads_use_the_public_transport(self):
+        good = f"{jpegs.BASE}/originals/{'b' * 64}/image.jpg"
+        request = jpegs.urllib.request.Request(good, method="HEAD")
+        with mock.patch.object(jpegs.PUBLIC_OPENER, "open", return_value="public") as public, \
+                mock.patch.object(jpegs.urllib.request, "urlopen", return_value="legacy") as legacy:
+            self.assertEqual(jpegs.open_media(request, 30), "public")
+            public.assert_called_once_with(request, timeout=30)
+            for changed in [good.replace("https:", "http:"), good.replace("history-math-media-kz", "other-bucket"),
+                            good.replace("https://", "https://user:secret@"), good + "?versionId=private", good + "#fragment",
+                            jpegs.urllib.request.Request(good, method="DELETE"),
+                            jpegs.urllib.request.Request(good, headers={"Authorization": "secret"}),
+                            jpegs.urllib.request.Request(good, data=b"write")]:
+                with self.subTest(request=str(changed)), self.assertRaises(ValueError):
+                    jpegs.open_media(changed, 30)
+            self.assertEqual(public.call_count, 1)
+            legacy.assert_not_called()
+            self.assertEqual(jpegs.open_media("https://history-math.org/assets/publication-media.json", 120), "legacy")
+            legacy.assert_called_once()
+        self.assertIsNone(jpegs.NoPublicRedirect().redirect_request(request, None, 302, "Found", {}, "https://example.invalid"))
+
+    def test_proxy_connections_retain_the_standard_proxy_transport(self):
+        observed = []
+        def connect(connection):
+            observed.append(connection._create_connection)
+        with mock.patch.object(jpegs.http.client.HTTPSConnection, "connect", connect):
+            direct = jpegs.PublicHTTPSConnection("storage.yandexcloud.kz", timeout=30)
+            direct.connect()
+            proxied = jpegs.PublicHTTPSConnection("proxy.invalid", timeout=30)
+            proxied.set_tunnel("storage.yandexcloud.kz")
+            proxied.connect()
+        self.assertEqual(observed, [jpegs.ipv4_connection, jpegs.socket.create_connection])
 
     def source(self, mode="RGB", transparent=False):
         image = Image.effect_noise((320, 240), 35).convert(mode)

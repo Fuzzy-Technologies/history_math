@@ -90,7 +90,14 @@ Anonymous reads of this bucket use a bounded Node HTTPS connection pool with
 IPv4 DNS resolution. The configured hostname remains the DNS and TLS target;
 only GET and HEAD are accepted, credentials and redirects are rejected, and
 caller cancellation deadlines are preserved. GitHub and Pages use their existing
-fetch transport. Authenticated S3 operations keep the SDK transport.
+fetch transport. Authenticated S3 operations retain SDK signing and bounded
+retries, with an IPv4 HTTPS agent, certificate validation, a 30-second connection
+deadline and a 120-second request deadline. Deletion failures record only the
+exact version identity, bounded HTTP/network code and SDK attempt count.
+Python JPEG preparation also resolves public bucket connections through IPv4,
+using the standard HTTPS certificate and hostname checks. Its opener preserves
+configured proxy handling, rejects public-bucket redirects and credentials, and
+leaves GitHub and Pages requests on the original urllib transport.
 JPEG preparation uses the pinned conversion registry without first downloading an
 unused remote receipt. Existing JPEG HEAD checks retry transient failures before
 declaring a cache miss; exhausted or forbidden reads stop preparation instead of
