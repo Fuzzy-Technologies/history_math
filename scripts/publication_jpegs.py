@@ -98,13 +98,24 @@ def cached_record(path, entry, previous):
             type(size) is not int or not 0 < size < entry["bytes"]:
         return None
     url = f"{BASE}/originals/{sha}/{record['filename']}"
-    try:
-        with urllib.request.urlopen(urllib.request.Request(url, method="HEAD"), timeout=30) as response:
-            if int(response.headers["Content-Length"]) == size and \
-                    response.headers.get_content_type() == "image/jpeg":
-                return {key: value for key, value in record.items() if key != "file"}
-    except (urllib.error.URLError, TimeoutError, ConnectionError, ValueError, KeyError):
-        pass
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, method="HEAD"), timeout=30) as response:
+                if int(response.headers["Content-Length"]) == size and \
+                        response.headers.get_content_type() == "image/jpeg":
+                    return {key: value for key, value in record.items() if key != "file"}
+            return None
+        except urllib.error.HTTPError as error:
+            if error.code == 404:
+                return None
+            if error.code not in (408, 429, 500, 502, 503, 504) or attempt == 2:
+                raise
+        except (urllib.error.URLError, TimeoutError, ConnectionError):
+            if attempt == 2:
+                raise
+        except (ValueError, KeyError):
+            return None
+        time.sleep((1, 3)[attempt])
     return None
 
 
@@ -151,11 +162,13 @@ def main():
         raise ValueError("Publication JPEGs require pinned Pillow 12.3.0")
     output = Path(options.output).resolve()
     output.parent.mkdir(parents=True, exist_ok=True)
-    previous = {}
-    try:
-        previous = json.loads(download(options.previous, 12_000_000)).get("jpeg_originals", {})
-    except (urllib.error.URLError, TimeoutError, ConnectionError, ValueError):
-        pass  # A missing receipt is a cache miss, never permission to skip verification.
+    registry = json.loads(Path(options.registry).read_text()) if options.registry else None
+    previous = registry["replacements"] if registry else {}
+    if registry is None:
+        try:
+            previous = json.loads(download(options.previous, 12_000_000)).get("jpeg_originals", {})
+        except (urllib.error.URLError, TimeoutError, ConnectionError, ValueError):
+            pass  # A missing receipt is a cache miss, never permission to skip verification.
     originals = inventory()
     if options.include_pending:
         for pr in json.loads(Path(options.include_pending).read_text()):
@@ -163,28 +176,31 @@ def main():
                 if path in originals and originals[path] != entry:
                     raise ValueError("Conflicting pending original identity")
                 originals[path] = entry
-    registry = json.loads(Path(options.registry).read_text()) if options.registry else None
     if registry:
         originals = {path: record["source"] for path, record in registry["replacements"].items()}
-        previous = registry["replacements"]
     entries = [(path, entry) for path, entry in originals.items()
                if Path(path).suffix.lower() in {".png", ".jpg", ".jpeg", ".webp", ".gif"}
                and not entry.get("logo") and entry["bytes"] >= 13_000_000]
     replacements, retained = {}, {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
         futures = [pool.submit(prepare, path, entry, output.parent, previous) for path, entry in entries]
-        for done, future in enumerate(concurrent.futures.as_completed(futures), 1):
-            path, record, reason = future.result()
-            if record:
-                if registry:
-                    expected = registry["replacements"][path]
-                    if any(record[key] != expected[key] for key in ("sha256", "bytes", "quality", "width", "height")):
-                        raise ValueError(f"JPEG differs from the pinned conversion: {path}")
-                replacements[path] = record
-            else:
-                retained[path] = reason
-            if done % 25 == 0 or done == len(entries):
-                print(f"Prepared JPEG originals {done}/{len(entries)}", flush=True)
+        try:
+            for done, future in enumerate(concurrent.futures.as_completed(futures), 1):
+                path, record, reason = future.result()
+                if record:
+                    if registry:
+                        expected = registry["replacements"][path]
+                        if any(record[key] != expected[key] for key in ("sha256", "bytes", "quality", "width", "height")):
+                            raise ValueError(f"JPEG differs from the pinned conversion: {path}")
+                    replacements[path] = record
+                else:
+                    retained[path] = reason
+                if done % 25 == 0 or done == len(entries):
+                    print(f"Prepared JPEG originals {done}/{len(entries)}", flush=True)
+        except BaseException:
+            for pending in futures:
+                pending.cancel()
+            raise
     result = {"version": 1, "policy": POLICY, "replacements": dict(sorted(replacements.items())),
               "retained": dict(sorted(retained.items()))}
     output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")

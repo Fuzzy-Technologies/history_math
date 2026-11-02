@@ -86,6 +86,11 @@ The longer budget also accommodates cross-region handshakes that exceed two seco
 See the [Node API](https://nodejs.org/docs/latest-v22.x/api/net.html#netsetdefaultautoselectfamilyattempttimeoutvalue)
 and [upstream connection-timeout report](https://github.com/nodejs/node/issues/54359).
 Family selection, TLS checks, overall request deadlines and bounded retries remain enabled.
+JPEG preparation uses the pinned conversion registry without first downloading an
+unused remote receipt. Existing JPEG HEAD checks retry transient failures before
+declaring a cache miss; exhausted or forbidden reads stop preparation instead of
+falling back to a retired source. A failed conversion cancels queued preparation
+tasks while any already-running bounded requests finish.
 The explicit manual S3 recovery in `docs/MEDIA_CLEANUP.md` can remove obsolete
 versions while a publication is blocked; it preserves live/master/draft references
 and excludes concurrent publication through the existing workflow lock.
