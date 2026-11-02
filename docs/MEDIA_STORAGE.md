@@ -99,10 +99,16 @@ using the standard HTTPS certificate and hostname checks. Its opener preserves
 configured proxy handling, rejects public-bucket redirects and credentials, and
 leaves GitHub and Pages requests on the original urllib transport.
 JPEG preparation uses the pinned conversion registry without first downloading an
-unused remote receipt. Existing JPEG HEAD checks retry transient failures before
-declaring a cache miss; exhausted or forbidden reads stop preparation instead of
-falling back to a retired source. A failed conversion cancels queued preparation
-tasks while any already-running bounded requests finish.
+unused remote receipt. Before conversion, `check-jpeg-cache.mjs` validates every
+registry identity and checks existing JPEGs through the shared bounded Node HTTPS
+pool. The private process receipt binds its cached paths to the exact input
+registry SHA-256; Python reuses those records without a second set of one-shot
+HEAD connections. Size, MIME and SHA metadata must match. Only a real 404 or
+metadata mismatch permits regeneration; exhausted or forbidden reads stop
+preparation instead of falling back to a retired source. Non-registry preparation
+retains its existing checked Python path. A failed conversion cancels queued
+preparation tasks while any already-running bounded requests finish. Publication
+preflight and final anonymous full-byte verification remain mandatory.
 The explicit manual S3 recovery in `docs/MEDIA_CLEANUP.md` can remove obsolete
 versions while a publication is blocked; it preserves live/master/draft references
 and excludes concurrent publication through the existing workflow lock.
