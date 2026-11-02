@@ -79,6 +79,12 @@ the public object key and a network error code, never an upstream message or a
 redirected signed URL.
 Authenticated S3 upload/HEAD failures report their HTTP status, a recognized
 provider/network error code and SDK attempt count without exposing raw messages.
+Media processes give each network-family connection attempt at least two seconds,
+preserving a longer operator setting. The Node LTS default is only 250 ms, which
+can abandon a viable remote TCP connection before an unreachable fallback fails.
+See the [Node API](https://nodejs.org/docs/latest-v22.x/api/net.html#netsetdefaultautoselectfamilyattempttimeoutvalue)
+and [upstream connection-timeout report](https://github.com/nodejs/node/issues/54359).
+Family selection, TLS checks, overall request deadlines and bounded retries remain enabled.
 The explicit manual S3 recovery in `docs/MEDIA_CLEANUP.md` can remove obsolete
 versions while a publication is blocked; it preserves live/master/draft references
 and excludes concurrent publication through the existing workflow lock.
