@@ -2,6 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {checkedJpegCache} from '../scripts/check-jpeg-cache.mjs';
 import {jpegPolicy} from '../scripts/image-publication.mjs';
+import {verifyCurrentMedia} from '../scripts/media-cleanup.mjs';
+import {mediaObject} from '../scripts/s3-media.mjs';
 
 const path = '/assets/images/hm-test/figure.png';
 const source = {sha256: 'a'.repeat(64), bytes: 50_000_000, width: 4400, height: 5432, logo: false, variants: []};
@@ -56,4 +58,25 @@ test('mutated registry identities are rejected before any public request', async
     await assert.rejects(checkedJpegCache(changed, read));
   }
   assert.equal(calls, 0);
+});
+
+test('a failed verification stops queued reads after bounded in-flight workers finish', async () => {
+  for (const mode of ['jpeg', 'cleanup']) {
+    const entries = Array.from({length: 20}, (_, i) => [`/assets/images/hm-test/figure-${i}.png`, {...record, filename: `figure-${i}.jpg`}]);
+    let calls = 0, release;
+    const pending = new Promise(done => {release = done;});
+    const request = async () => {
+      calls++;
+      if (calls === 1) return response(403);
+      await pending;
+      return response();
+    };
+    const verification = mode === 'jpeg' ? checkedJpegCache({...registry, replacements: Object.fromEntries(entries)}, request) :
+      verifyCurrentMedia(entries.map(([, item]) => mediaObject('originals', item.filename, item.sha256, item.bytes)), request);
+    await new Promise(done => setImmediate(done));
+    assert.equal(calls, 6);
+    release();
+    await assert.rejects(verification, /403/);
+    assert.equal(calls, 6);
+  }
 });

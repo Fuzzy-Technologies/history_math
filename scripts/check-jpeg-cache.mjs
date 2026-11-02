@@ -10,23 +10,27 @@ export async function checkedJpegCache(registry, request = mediaRead, retryOptio
       typeof registry.replacements !== 'object' || Array.isArray(registry.replacements)) throw new Error('Invalid JPEG registry');
   const entries = Object.entries(registry.replacements);
   for (const [path, record] of entries) validateReplacement(path, record?.source, record);
-  const cached = []; let cursor = 0;
-  await Promise.all(Array.from({length: Math.min(6, entries.length)}, async () => {
-    while (cursor < entries.length) {
+  const cached = []; let cursor = 0, failed = false;
+  const results = await Promise.allSettled(Array.from({length: Math.min(6, entries.length)}, async () => {
+    while (!failed && cursor < entries.length) {
       const [path, record] = entries[cursor++];
       const object = mediaObject('originals', record.filename, record.sha256, record.bytes);
-      const found = await readWithRetries(`cached JPEG ${object.key}`, async () => {
-        const response = await request(object.url, {method: 'HEAD', credentials: 'omit', redirect: 'error',
-          signal: AbortSignal.timeout(60_000)});
-        if (response.status === 404) return false;
-        if (response.status !== 200) throw Object.assign(new Error('Cached JPEG unavailable'), {status: response.status});
-        return response.headers.get('content-length') === String(object.bytes) &&
-          response.headers.get('content-type')?.split(';')[0] === object.content_type &&
-          response.headers.get('x-amz-meta-sha256') === object.sha256;
-      }, retryOptions);
-      if (found) cached.push(path);
+      try {
+        const found = await readWithRetries(`cached JPEG ${object.key}`, async () => {
+          const response = await request(object.url, {method: 'HEAD', credentials: 'omit', redirect: 'error',
+            signal: AbortSignal.timeout(60_000)});
+          if (response.status === 404) return false;
+          if (response.status !== 200) throw Object.assign(new Error('Cached JPEG unavailable'), {status: response.status});
+          return response.headers.get('content-length') === String(object.bytes) &&
+            response.headers.get('content-type')?.split(';')[0] === object.content_type &&
+            response.headers.get('x-amz-meta-sha256') === object.sha256;
+        }, retryOptions);
+        if (found) cached.push(path);
+      } catch (error) { failed = true; throw error; }
     }
   }));
+  const failure = results.find(result => result.status === 'rejected');
+  if (failure) throw failure.reason;
   return cached.sort();
 }
 

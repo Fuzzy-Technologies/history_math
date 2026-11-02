@@ -109,6 +109,8 @@ preparation instead of falling back to a retired source. Non-registry preparatio
 retains its existing checked Python path. A failed conversion cancels queued
 preparation tasks while any already-running bounded requests finish. Publication
 preflight and final anonymous full-byte verification remain mandatory.
+JPEG and cleanup verification stop assigning queued objects after the first
+failure, wait for their already-running bounded reads and then fail the job.
 The explicit manual S3 recovery in `docs/MEDIA_CLEANUP.md` can remove obsolete
 versions while a publication is blocked; it preserves live/master/draft references
 and excludes concurrent publication through the existing workflow lock.
