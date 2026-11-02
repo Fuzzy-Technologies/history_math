@@ -1,5 +1,10 @@
 import {createHash} from 'node:crypto';
+import {getDefaultAutoSelectFamilyAttemptTimeout, setDefaultAutoSelectFamilyAttemptTimeout} from 'node:net';
 import {S3Client, HeadObjectCommand, PutObjectCommand} from '@aws-sdk/client-s3';
+
+// Allow remote TCP handshakes to complete before trying the next IP family.
+// Node LTS otherwise gives each non-final address candidate only 250 ms.
+setDefaultAutoSelectFamilyAttemptTimeout(Math.max(2_000, getDefaultAutoSelectFamilyAttemptTimeout()));
 
 export const storage = Object.freeze({endpoint: 'https://storage.yandexcloud.kz', region: 'kz1',
   bucket: 'history-math-media-kz', base: 'https://storage.yandexcloud.kz/history-math-media-kz'});
