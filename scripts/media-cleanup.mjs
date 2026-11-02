@@ -2,7 +2,7 @@ import {mkdir, writeFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {ListObjectVersionsCommand, DeleteObjectCommand} from '@aws-sdk/client-s3';
-import {storage, configuredClient, mediaObject, validateObject, uploadVerified} from './s3-media.mjs';
+import {storage, configuredClient, mediaObject, validateObject, uploadVerified, readWithRetries} from './s3-media.mjs';
 import {sourceBytes, uniqueObjects} from './publication-media.mjs';
 import {revisionBytes} from './backfill-media.mjs';
 import {currentReferences, currentPublication, referenceIdentity, guardedHeads, rawReferenceBlob} from './media-cleanup-references.mjs';
@@ -95,16 +95,19 @@ export function cleanupPlan({versions, liveObjects, protectedKeys = [], protecte
       candidate_bytes: deletions.reduce((sum, item) => sum + item.bytes, 0)}};
 }
 
-export async function verifyCurrentMedia(objects, request = fetch) {
+export async function verifyCurrentMedia(objects, request = fetch, retryOptions) {
   let cursor = 0;
   await Promise.all(Array.from({length: Math.min(6, objects.length)}, async () => {
     while (cursor < objects.length) {
       const object = objects[cursor++]; validateObject(object);
-      const response = await request(object.url, {method: 'HEAD', credentials: 'omit', redirect: 'error', cache: 'no-store', signal: AbortSignal.timeout(60_000)});
-      if (response.status !== 200 || response.headers.get('content-length') !== String(object.bytes) ||
-          response.headers.get('content-type')?.split(';')[0] !== object.content_type || response.headers.get('x-amz-meta-sha256') !== object.sha256) {
-        throw new Error(`Current public media verification failed: ${object.key}`);
-      }
+      await readWithRetries(`current media ${object.key}`, async () => {
+        const response = await request(object.url, {method: 'HEAD', credentials: 'omit', redirect: 'error', cache: 'no-store', signal: AbortSignal.timeout(60_000)});
+        if (response.status !== 200) throw Object.assign(new Error('Current media unavailable'), {status: response.status});
+        if (response.headers.get('content-length') !== String(object.bytes) ||
+            response.headers.get('content-type')?.split(';')[0] !== object.content_type || response.headers.get('x-amz-meta-sha256') !== object.sha256) {
+          throw new Error('Current media metadata mismatch');
+        }
+      }, retryOptions);
     }
   }));
 }
@@ -133,10 +136,12 @@ export async function applyCleanup(client, plan, {guard, journal = async () => {
 }
 
 export function executionMode(args, env = process.env) {
-  if (args.length > 1 || (args.length && !['--dry-run', '--apply'].includes(args[0]))) throw new Error('Choose --dry-run or --apply');
+  if (args.length > 1 || (args.length && !['--dry-run', '--apply', '--apply-s3'].includes(args[0]))) throw new Error('Choose --dry-run, --apply or --apply-s3');
   const mode = args[0] || '--dry-run';
   if (mode === '--apply' && (env.GITHUB_REF !== 'refs/heads/master' || !['push', 'workflow_dispatch'].includes(env.GITHUB_EVENT_NAME) ||
       env.MEDIA_CLEANUP_AFTER_DEPLOY !== 'true' || !/^[a-f0-9]{40}$/.test(env.GITHUB_SHA || ''))) throw new Error('Deletion requires a trusted master post-deployment job');
+  if (mode === '--apply-s3' && (env.GITHUB_REF !== 'refs/heads/master' || env.GITHUB_EVENT_NAME !== 'workflow_dispatch' ||
+      env.MEDIA_CLEANUP_MANUAL !== 'true' || !/^[a-f0-9]{40}$/.test(env.GITHUB_SHA || ''))) throw new Error('S3 recovery requires an explicit trusted master manual job');
   return mode;
 }
 
@@ -146,7 +151,9 @@ async function main() {
   const record = (name, value) => writeFile(resolve(output, name), JSON.stringify(value, null, 2) + '\n');
   const client = configuredClient();
   try {
-    const live = await currentPublication(), references = await currentReferences({root: process.cwd(), readBlob: rawReferenceBlob});
+    const live = await currentPublication(); console.log('Verified current published page references');
+    const references = await currentReferences({root: process.cwd(), readBlob: rawReferenceBlob});
+    console.log(`Pinned master and ${references.pulls.length} open PR heads`);
     if (references.master_sha !== process.env.GITHUB_SHA) throw new Error('Workflow no longer matches master');
     const expected = referenceIdentity(references);
     const guard = async () => {
@@ -155,16 +162,20 @@ async function main() {
     };
     await guard();
     let versions = await mediaVersions(client, Date.now());
+    await record('inventory-before.json', {complete: true, versions});
+    console.log(`Inventoried ${versions.length} managed versions`);
+    const apply = mode === '--apply' || mode === '--apply-s3';
     // Newly prepared draft originals are copied as bounded data; no draft is
     // published and no PR code runs with the storage credentials.
     const missing = references.objects.filter(object => !versions.some(v => v.key === object.key && v.latest && !v.delete_marker));
-    if (mode === '--apply') for (const object of missing) {
+    if (apply) for (const object of missing) {
       await guard();
       await uploadVerified(client, object, async () => object.source.revision ? revisionBytes(object.source.revision, object.source.path, fetch, object.bytes) : sourceBytes(object));
     }
-    if (missing.length && mode === '--apply') versions = await mediaVersions(client, Date.now());
+    if (missing.length && apply) versions = await mediaVersions(client, Date.now());
     const objects = uniqueObjects([...live.objects, ...references.objects]);
     await verifyCurrentMedia(objects);
+    console.log(`Verified ${objects.length} current published and draft media objects`);
     const plan = cleanupPlan({versions, liveObjects: objects.map(object => ({...object, verified: true})),
       protectedKeys: [...live.protectedKeys, ...references.keys], protectedNames: references.names, protectedVersions: references.versions, now: Date.now()});
     plan.context = {master_sha: references.master_sha, pulls: references.pulls, live_sha256: live.digest};
@@ -173,14 +184,14 @@ async function main() {
     const githubPlan = githubCleanupPlan(github, references, {master: references.master_sha, runId: Number(process.env.GITHUB_RUN_ID)});
     await record('github-plan.json', githubPlan);
     await guard();
-    if (mode === '--apply') {
+    if (apply) {
       const result = await applyCleanup(client, plan, {guard, journal: value => record('retirement.json', value)});
       const after = await mediaVersions(client, Date.now()), deleted = new Set(result.deleted.map(identity));
       const remaining = new Map(versions.filter(v => !deleted.has(identity(v))).map(v => [identity(v), signature(v)]));
       if (after.length !== remaining.size || after.some(v => remaining.get(identity(v)) !== signature(v))) throw new Error('Remaining inventory differs from the exact deletion journal');
       await verifyCurrentMedia(objects);
       await record('inventory-after.json', {complete: true, versions: after});
-      await applyGithubCleanup(githubPlan, {guard, journal: value => record('github-retirement.json', value)});
+      if (mode === '--apply') await applyGithubCleanup(githubPlan, {guard, journal: value => record('github-retirement.json', value)});
     }
     const summary = {mode, ...plan.summary, open_prs: references.pulls.length, github: githubPlan.summary};
     await record('summary.json', summary); console.log(JSON.stringify(summary));

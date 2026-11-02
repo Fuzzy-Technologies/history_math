@@ -222,13 +222,15 @@ test('production build and deployment both require master for push and manual di
   }
 });
 
-test('current-media deletion follows deployment; daily audit cannot delete S3 or displace publication', () => {
+test('automatic S3 deletion follows deployment; only explicit manual recovery takes the publication lock', () => {
   const maintenance = parse(readFileSync('.github/workflows/storage-maintenance.yml', 'utf8'));
   const publication = parse(readFileSync('.github/workflows/deploy.yml', 'utf8'));
   const check = (audit, deploy) => {
     assert.deepEqual(Object.keys(audit.on), ['schedule', 'workflow_dispatch']);
+    assert.equal(audit.on.workflow_dispatch.inputs.clean_s3.default, false);
     assert.equal(audit.on.workflow_dispatch.inputs.clean_github.default, false);
-    assert.notEqual(audit.concurrency.group, deploy.concurrency.group);
+    assert.equal(audit.concurrency.group, "${{ github.event_name == 'workflow_dispatch' && inputs.clean_s3 && 'github-pages' || 'media-storage-audit' }}");
+    assert.equal(audit.concurrency['cancel-in-progress'], false);
     assert.equal(deploy.concurrency.group, 'github-pages');
     assert.equal(deploy.concurrency['cancel-in-progress'], false);
     const job = deploy.jobs.media_cleanup;
@@ -243,12 +245,25 @@ test('current-media deletion follows deployment; daily audit cannot delete S3 or
     const report = audit.jobs.audit.steps.find(step => step.run?.includes('scripts/media-cleanup.mjs'));
     assert.equal(report.run, 'node scripts/media-cleanup.mjs --dry-run');
     assert.ok(!JSON.stringify(report).includes('MEDIA_CLEANUP_AFTER_DEPLOY'));
+    assert.ok(!JSON.stringify(report).includes('MEDIA_CLEANUP_MANUAL'));
+    const s3 = audit.jobs.s3_cleanup;
+    assert.equal(s3.needs, 'audit');
+    assert.equal(s3.if, "github.ref == 'refs/heads/master' && github.event_name == 'workflow_dispatch' && inputs.clean_s3");
+    assert.equal(s3.environment, 'history-math-storage');
+    assert.equal(s3.permissions, undefined);
+    assert.deepEqual(audit.permissions, {contents: 'read', 'pull-requests': 'read', actions: 'read'});
+    assert.equal(s3.concurrency.group, job.concurrency.group);
+    assert.equal(s3.concurrency['cancel-in-progress'], false);
+    const recovery = s3.steps.find(step => step.run?.includes('scripts/media-cleanup.mjs'));
+    assert.equal(recovery.run, 'node scripts/media-cleanup.mjs --apply-s3');
+    assert.equal(recovery.env.MEDIA_CLEANUP_MANUAL, 'true');
+    assert.ok(!JSON.stringify(recovery).includes('MEDIA_CLEANUP_AFTER_DEPLOY'));
     const github = audit.jobs.github_cleanup;
     assert.equal(github.needs, 'audit');
     assert.ok(github.if.includes('inputs.clean_github'));
     assert.ok(!JSON.stringify(github).includes('S3_SECRET_ACCESS_KEY'));
     assert.ok(github.steps.some(step => step.run === 'node scripts/github-storage-cleanup.mjs --apply'));
-    for (const candidate of [audit.jobs.audit, github, job]) {
+    for (const candidate of [audit.jobs.audit, s3, github, job]) {
       assert.match(candidate.if, /github.ref == 'refs\/heads\/master'/);
       const checkout = candidate.steps.find(step => step.uses?.startsWith('actions/checkout@'));
       assert.equal(checkout.with['persist-credentials'], false);
@@ -261,8 +276,12 @@ test('current-media deletion follows deployment; daily audit cannot delete S3 or
     p => {p.jobs.media_cleanup.steps.find(step => step.env?.MEDIA_CLEANUP_AFTER_DEPLOY).env.MEDIA_CLEANUP_AFTER_DEPLOY = ''; }]) {
     const unsafe = structuredClone(publication); mutate(unsafe); assert.throws(() => check(maintenance, unsafe));
   }
-  const unsafe = structuredClone(maintenance); unsafe.concurrency.group = 'github-pages';
-  assert.throws(() => check(unsafe, publication));
+  for (const mutate of [m => {m.concurrency.group = 'github-pages';}, m => {m.concurrency.group = 'media-storage-audit';},
+    m => {m.on.workflow_dispatch.inputs.clean_s3.default = true;}, m => {m.jobs.s3_cleanup.if = "github.ref == 'refs/heads/master'";},
+    m => {m.jobs.s3_cleanup.steps.find(s => s.env?.MEDIA_CLEANUP_MANUAL).env.MEDIA_CLEANUP_MANUAL = '';},
+    m => {m.jobs.s3_cleanup.steps.find(s => s.env?.MEDIA_CLEANUP_MANUAL).run = 'node scripts/media-cleanup.mjs --apply';}]) {
+    const unsafe = structuredClone(maintenance); mutate(unsafe); assert.throws(() => check(unsafe, publication));
+  }
   const steps = publication.jobs.build.steps;
   assert.ok(steps.findIndex(s => s.name === 'Prepare bounded full-resolution JPEG originals') < steps.findIndex(s => s.name === 'Preflight existing S3 media copies'));
 });

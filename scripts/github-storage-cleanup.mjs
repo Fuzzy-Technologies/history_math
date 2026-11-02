@@ -1,4 +1,4 @@
-import {validateObject, verifyPublic} from './s3-media.mjs';
+import {validateObject, verifyPublic, readWithRetries} from './s3-media.mjs';
 import {mkdir, writeFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
@@ -14,17 +14,26 @@ const retiredAssetIds = new Set([630538942,630559971,630541044,630534362,6305380
   630553549,630571380,630525839,630499594,630530430,630528062,630528259,630526052,630560540,
   630536833,630553567,630528409,630529889,630534525,630526200,630534781,630534996,630525962,630526543,630558591]);
 
-export async function storageRequest(path, {method = 'GET', request = fetch, token = process.env.GITHUB_TOKEN} = {}) {
+export async function storageRequest(path, {method = 'GET', request = fetch, token = process.env.GITHUB_TOKEN, retryOptions} = {}) {
   const allowed = method === 'DELETE' ? /^\/(?:releases\/assets|actions\/(?:artifacts|caches))\/[1-9]\d*$/ :
     /^\/(?:releases(?:\/[1-9]\d*\/assets)?|actions\/(?:artifacts|caches|runs))(?:\?[A-Za-z0-9_=&-]+)?$/;
   if (!token || !allowed.test(path) || !['GET', 'DELETE'].includes(method)) throw new Error('Unsafe GitHub storage request');
-  const response = await request(root + path, {method, redirect: 'error', signal: AbortSignal.timeout(60_000),
-    headers: {Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2026-03-10'}});
-  const quota = response.headers.get('x-ratelimit-remaining');
-  if (quota !== null && /^\d+$/.test(quota)) remaining = Number(quota);
-  if (method === 'DELETE' && response.status === 404) return {already_absent: true};
-  if (!response.ok || (method === 'DELETE' && response.status !== 204)) throw Object.assign(new Error(`GitHub storage request failed (HTTP ${response.status})`), {status: response.status});
-  return method === 'DELETE' ? {} : response.json();
+  const perform = async () => {
+    const response = await request(root + path, {method, redirect: 'error', signal: AbortSignal.timeout(60_000),
+      headers: {Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2026-03-10'}});
+    const quota = response.headers.get('x-ratelimit-remaining');
+    if (quota !== null && /^\d+$/.test(quota)) remaining = Number(quota);
+    if (method === 'DELETE' && response.status === 404) {
+      try { await response.body?.cancel(); } catch { /* The absent object is already reconciled. */ }
+      return {already_absent: true};
+    }
+    if (!response.ok || (method === 'DELETE' && response.status !== 204)) {
+      try { await response.body?.cancel(); } catch { /* Preserve the HTTP failure. */ }
+      throw Object.assign(new Error(`GitHub storage request failed (HTTP ${response.status})`), {status: response.status});
+    }
+    return method === 'DELETE' ? {} : response.json();
+  };
+  return method === 'GET' ? readWithRetries('GitHub storage inventory', perform, retryOptions) : perform();
 }
 
 async function pages(api, path, field) {

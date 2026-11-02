@@ -141,6 +141,34 @@ test('forbidden operations, failed uploads and corrupt public copies cannot prod
   await assert.rejects(transfer([object], exists, async () => original, {request: async () => publicResponse(object, Buffer.from('corrupt'))}));
 });
 
+test('S3 failures expose bounded HTTP/provider diagnostics without upstream secrets', async () => {
+  for (const [name, status] of [['BucketMaxSizeExceeded', 400], ['CloudTotalAliveSizeQuotaExceed', 400], ['AccessDenied', 403]]) {
+    let calls = 0;
+    await assert.rejects(uploadVerified({send: async () => {
+      if (++calls === 1) throw {$metadata: {httpStatusCode: 404}};
+      throw Object.assign(Error('SECRET signed-url https://example.test/?token=SECRET'), {name, $metadata: {httpStatusCode: status, attempts: 3}});
+    }}, object, async () => original), error => error.message.includes(`HTTP ${status}; ${name}; 3 SDK attempts`) && !error.message.includes('SECRET'));
+    assert.equal(calls, 2, 'The adapter does not add another write retry loop');
+  }
+  await assert.rejects(uploadVerified({send: async () => {
+    throw Object.assign(Error('SECRET'), {name: 'SECRET', $metadata: {httpStatusCode: 'SECRET', attempts: 'SECRET'}});
+  }}, object, async () => assert.fail('No source read')), error =>
+    error.message.includes('HTTP unknown; UNCLASSIFIED; unknown SDK attempts') && !error.message.includes('SECRET'));
+});
+
+test('GitHub reference data reconnects without leaking the token or relaxing its fixed destination', async () => {
+  let calls = 0;
+  const result = await githubData('/branches/master', {token: 'SECRET', retryOptions: {pause: async () => {}}, request: async (url, options) => {
+    assert.equal(url, 'https://api.github.com/repos/Fuzzy-Technologies/history_math/branches/master');
+    assert.equal(options.headers.Authorization, 'Bearer SECRET'); assert.equal(options.redirect, 'error');
+    if (++calls === 1) return new Response('SECRET', {status: 502});
+    return Response.json({commit: {sha: 'a'.repeat(40)}});
+  }});
+  assert.equal(result.commit.sha, 'a'.repeat(40)); assert.equal(calls, 2);
+  await assert.rejects(githubData('/branches/master', {token: 'SECRET', retryOptions: {pause: () => assert.fail('No permission retry')},
+    request: async () => new Response('SECRET', {status: 403})}), error => error.status === 403 && !error.message.includes('SECRET'));
+});
+
 test('the complete batch is budget-checked before any S3 operation', async () => {
   for (const kind of ['pdf', 'originals']) {
     const oversized = mediaObject(kind, kind === 'pdf' ? 'oversized-ru.pdf' : 'oversized.png', 'a'.repeat(64), 15_000_001);

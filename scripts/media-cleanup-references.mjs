@@ -3,7 +3,7 @@ import {resolve, basename} from 'node:path';
 import {createHash} from 'node:crypto';
 import {TextDecoder} from 'node:util';
 import {githubData} from './backfill-media.mjs';
-import {storage, validateObject, mediaObject, responseBytes, sha256} from './s3-media.mjs';
+import {storage, validateObject, mediaObject, responseBytes, sha256, readWithRetries} from './s3-media.mjs';
 import {imageObjects, uniqueObjects} from './publication-media.mjs';
 import {publicationReplacements} from './image-publication.mjs';
 
@@ -137,17 +137,19 @@ export async function currentReferences({api = githubData, root, localRead = rea
 }
 
 // Fixed public repository, pinned commit and Git-verified bytes; no PR code runs.
-export async function rawReferenceBlob(revision, item, request = fetch) {
+export async function rawReferenceBlob(revision, item, request = fetch, retryOptions) {
   if (!revisionPattern.test(revision) || item.path.startsWith('/') || item.path.split('/').includes('..')) throw new Error('Unsafe raw source path');
   const url = `https://raw.githubusercontent.com/${repository}/${revision}/${item.path.split('/').map(encodeURIComponent).join('/')}`;
-  const response = await request(url, {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(60_000)});
-  const bytes = await responseBytes(response, item.size);
-  return {encoding: 'base64', content: bytes.toString('base64'), size: bytes.length};
+  return readWithRetries(`source ${revision}/${item.path}`, async () => {
+    const response = await request(url, {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(60_000)});
+    const bytes = await responseBytes(response, item.size);
+    return {encoding: 'base64', content: bytes.toString('base64'), size: bytes.length};
+  }, retryOptions);
 }
 
 // GraphQL has a separate point budget: checking references before every S3
 // deletion must not exhaust the REST quota used to inventory source trees.
-export async function guardedHeads({request = fetch, token = process.env.GITHUB_TOKEN} = {}) {
+export async function guardedHeads({request = fetch, token = process.env.GITHUB_TOKEN, retryOptions} = {}) {
   if (!token) throw new Error('A read token is required for reference guards');
   const query = `query($cursor:String){repository(owner:"Fuzzy-Technologies",name:"history_math"){
     ref(qualifiedName:"refs/heads/master"){target{oid}}
@@ -155,10 +157,12 @@ export async function guardedHeads({request = fetch, token = process.env.GITHUB_
     pageInfo{hasNextPage endCursor}}}}`;
   const pulls = [], cursors = new Set(); let cursor = null, master;
   for (let page = 0; page < 100; page++) {
-    const response = await request('https://api.github.com/graphql', {method: 'POST', redirect: 'error',
-      headers: {Authorization: `Bearer ${token}`, 'Content-Type': 'application/json'}, body: JSON.stringify({query, variables: {cursor}}), signal: AbortSignal.timeout(60_000)});
-    if (!response.ok) throw new Error(`Reference guard failed (HTTP ${response.status})`);
-    const result = await response.json(), repo = result.data?.repository;
+    const result = await readWithRetries('GitHub reference guard', async () => {
+      const response = await request('https://api.github.com/graphql', {method: 'POST', redirect: 'error',
+        headers: {Authorization: `Bearer ${token}`, 'Content-Type': 'application/json'}, body: JSON.stringify({query, variables: {cursor}}), signal: AbortSignal.timeout(60_000)});
+      if (!response.ok) await responseBytes(response, 0);
+      return response.json();
+    }, retryOptions), repo = result.data?.repository;
     if (result.errors?.length || !revisionPattern.test(repo?.ref?.target?.oid || '') ||
         !Array.isArray(repo.pullRequests?.nodes) || typeof repo.pullRequests?.pageInfo?.hasNextPage !== 'boolean') throw new Error('Incomplete reference guard');
     if (master && master !== repo.ref.target.oid) throw new Error('Master changed during reference guard');
@@ -176,17 +180,22 @@ export async function guardedHeads({request = fetch, token = process.env.GITHUB_
   throw new Error('Incomplete reference guard pagination');
 }
 
-async function publicJson(path, request) {
-  const response = await request(origin + path, {redirect: 'error', cache: 'no-store',
-    headers: {'Cache-Control': 'no-cache'}, signal: AbortSignal.timeout(60_000)});
-  if (response.status !== 200) throw new Error('Unavailable public publication manifest');
-  const bytes = await responseBytes(response, 10_000_000);
-  return {data: JSON.parse(bytes.toString('utf8')), digest: sha256(bytes)};
+async function publicJson(path, request, retryOptions) {
+  return readWithRetries(`publication ${path}`, async () => {
+    const response = await request(origin + path, {redirect: 'error', cache: 'no-store',
+      headers: {'Cache-Control': 'no-cache'}, signal: AbortSignal.timeout(60_000)});
+    if (response.status !== 200) {
+      try { await response.body?.cancel(); } catch { /* Preserve the HTTP failure. */ }
+      throw Object.assign(new Error('Unavailable publication manifest'), {status: response.status});
+    }
+    const bytes = await responseBytes(response, 10_000_000);
+    return {data: JSON.parse(bytes.toString('utf8')), digest: sha256(bytes)};
+  }, retryOptions);
 }
 
-export async function currentPublication({request = fetch, pages: checkPages = true} = {}) {
-  const media = await publicJson('/assets/publication-media.json', request);
-  const pdfs = await publicJson('/assets/article-pdfs.json', request);
+export async function currentPublication({request = fetch, pages: checkPages = true, retryOptions} = {}) {
+  const media = await publicJson('/assets/publication-media.json', request, retryOptions);
+  const pdfs = await publicJson('/assets/article-pdfs.json', request, retryOptions);
   if (media.data.version !== 1 || !Array.isArray(media.data.objects) || pdfs.data.version !== 2 ||
       pdfs.data.origin !== origin || pdfs.data.baseurl !== '' || !Array.isArray(pdfs.data.articles) || !pdfs.data.articles.length) {
     throw new Error('Invalid current publication manifests');
@@ -210,9 +219,14 @@ export async function currentPublication({request = fetch, pages: checkPages = t
       }
       used.add(article.pdf_url);
       if (!checkPages) continue;
-      const response = await request(origin + article.url, {redirect: 'error', cache: 'no-store', signal: AbortSignal.timeout(60_000)});
-      if (response.status !== 200) throw new Error('Published article is unavailable');
-      const text = (await responseBytes(response, 5_000_000)).toString('utf8');
+      const text = await readWithRetries(`published article ${article.url}`, async () => {
+        const response = await request(origin + article.url, {redirect: 'error', cache: 'no-store', signal: AbortSignal.timeout(60_000)});
+        if (response.status !== 200) {
+          try { await response.body?.cancel(); } catch { /* Preserve the HTTP failure. */ }
+          throw Object.assign(new Error('Published article is unavailable'), {status: response.status});
+        }
+        return (await responseBytes(response, 5_000_000)).toString('utf8');
+      }, retryOptions);
       const found = sourceMediaReferences(text);
       if (!found.keys.includes(byUrl.get(article.pdf_url).key)) throw new Error('Article PDF link disagrees with publication manifest');
       for (const key of found.keys) protectedKeys.add(key);

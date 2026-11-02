@@ -67,7 +67,7 @@ function transientCode(error) {
   return null;
 }
 
-// Retry only public reads. Authentication, TLS, integrity and metadata errors
+// Retry only reads. Authentication, TLS, integrity and metadata errors
 // remain blocking. Never print upstream messages or redirected signed URLs.
 export async function readWithRetries(context, read, {pause = milliseconds => new Promise(done => setTimeout(done, milliseconds))} = {}) {
   for (let attempt = 0; attempt < 3; attempt++) {
@@ -78,7 +78,8 @@ export async function readWithRetries(context, read, {pause = milliseconds => ne
         const tlsCodes = new Set(['CERT_HAS_EXPIRED', 'ERR_TLS_CERT_ALTNAME_INVALID', 'UNABLE_TO_VERIFY_LEAF_SIGNATURE', 'DEPTH_ZERO_SELF_SIGNED_CERT']);
         const permanent = Number.isInteger(error?.status) ? `HTTP_${error.status}` :
           tlsCodes.has(error?.cause?.code) ? error.cause.code : /integrity/i.test(error?.message || '') ? 'integrity mismatch' : 'INVALID_MEDIA';
-        throw new Error(`Public media read failed: ${context} (${code || permanent}; ${attempt + 1} attempts)`);
+        throw Object.assign(new Error(`Media read failed: ${context} (${code || permanent}; ${attempt + 1} attempts)`),
+          Number.isInteger(error?.status) ? {status: error.status} : {});
       }
       await pause([1000, 3000][attempt]);
     }
@@ -108,12 +109,23 @@ function assertUploadBudget(object) {
   if (object.bytes > 15_000_000) throw new Error(`S3 media exceeds the 15 MB hard limit: ${object.key}`);
 }
 
+function storageFailure(operation, object, error) {
+  const names = new Set(['AccessDenied', 'AccountProblem', 'InvalidAccessKeyId', 'InvalidSecurity',
+    'InvalidPayer', 'SignatureDoesNotMatch', 'RequestTimeTooSkewed', 'BucketMaxSizeExceeded',
+    'CloudTotalAliveSizeQuotaExceed', 'NoSuchBucket', 'NoSuchKey', 'EntityTooLarge', 'InvalidArgument',
+    'InvalidRequest', 'IncompleteBody', 'BadDigest', 'InvalidDigest', 'RequestTimeout', 'SlowDown',
+    'ServiceUnavailable', 'InternalError']);
+  const status = error?.$metadata?.httpStatusCode, attempts = error?.$metadata?.attempts;
+  const code = names.has(error?.name) ? error.name : transientCode(error) || 'UNCLASSIFIED';
+  return new Error(`S3 ${operation} failed: ${object.key} (HTTP ${Number.isInteger(status) && status >= 100 && status <= 599 ? status : 'unknown'}; ${code}; ${Number.isSafeInteger(attempts) && attempts > 0 ? attempts : 'unknown'} SDK attempts)`);
+}
+
 export async function uploadVerified(client, object, source, {request = fetch} = {}) {
   assertUploadBudget(object);
   let missing = false;
   try { await client.send(new HeadObjectCommand({Bucket: storage.bucket, Key: object.key})); }
   catch (error) {
-    if (error.$metadata?.httpStatusCode !== 404) throw new Error(`S3 HEAD failed: ${object.key}`);
+    if (error.$metadata?.httpStatusCode !== 404) throw storageFailure('HEAD', object, error);
     missing = true;
   }
   if (missing) {
@@ -124,7 +136,7 @@ export async function uploadVerified(client, object, source, {request = fetch} =
         ContentLength: bytes.length, ContentType: object.content_type,
         ContentDisposition: `attachment; filename="${object.filename}"`,
         CacheControl: 'public, max-age=31536000, immutable', Metadata: {sha256: object.sha256}}));
-    } catch { throw new Error(`S3 upload failed: ${object.key}`); }
+    } catch (error) { throw storageFailure('upload', object, error); }
   }
   return verifyPublic(object, request);
 }

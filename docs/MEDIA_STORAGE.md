@@ -77,6 +77,11 @@ receive at most three attempts with bounded backoff. Integrity, authentication,
 TLS and metadata failures still block publication. Error diagnostics identify
 the public object key and a network error code, never an upstream message or a
 redirected signed URL.
+Authenticated S3 upload/HEAD failures report their HTTP status, a recognized
+provider/network error code and SDK attempt count without exposing raw messages.
+The explicit manual S3 recovery in `docs/MEDIA_CLEANUP.md` can remove obsolete
+versions while a publication is blocked; it preserves live/master/draft references
+and excludes concurrent publication through the existing workflow lock.
 
 The pre-migration size gate moves after media finalization: a temporary build
 containing local PDFs must not block a valid lightweight Pages publication.
