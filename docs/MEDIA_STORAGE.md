@@ -79,9 +79,10 @@ the public object key and a network error code, never an upstream message or a
 redirected signed URL.
 Authenticated S3 upload/HEAD failures report their HTTP status, a recognized
 provider/network error code and SDK attempt count without exposing raw messages.
-Media processes give each network-family connection attempt at least two seconds,
+Media processes give each network-family connection attempt at least ten seconds,
 preserving a longer operator setting. The Node LTS default is only 250 ms, which
 can abandon a viable remote TCP connection before an unreachable fallback fails.
+The longer budget also accommodates cross-region handshakes that exceed two seconds.
 See the [Node API](https://nodejs.org/docs/latest-v22.x/api/net.html#netsetdefaultautoselectfamilyattempttimeoutvalue)
 and [upstream connection-timeout report](https://github.com/nodejs/node/issues/54359).
 Family selection, TLS checks, overall request deadlines and bounded retries remain enabled.
