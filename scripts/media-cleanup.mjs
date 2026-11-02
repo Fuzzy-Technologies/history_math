@@ -2,7 +2,7 @@ import {mkdir, writeFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {ListObjectVersionsCommand, DeleteObjectCommand} from '@aws-sdk/client-s3';
-import {storage, configuredClient, mediaObject, validateObject, uploadVerified, readWithRetries} from './s3-media.mjs';
+import {storage, configuredClient, mediaObject, validateObject, uploadVerified, readWithRetries, mediaRead} from './s3-media.mjs';
 import {sourceBytes, uniqueObjects} from './publication-media.mjs';
 import {revisionBytes} from './backfill-media.mjs';
 import {currentReferences, currentPublication, referenceIdentity, guardedHeads, rawReferenceBlob} from './media-cleanup-references.mjs';
@@ -95,7 +95,7 @@ export function cleanupPlan({versions, liveObjects, protectedKeys = [], protecte
       candidate_bytes: deletions.reduce((sum, item) => sum + item.bytes, 0)}};
 }
 
-export async function verifyCurrentMedia(objects, request = fetch, retryOptions) {
+export async function verifyCurrentMedia(objects, request = mediaRead, retryOptions) {
   let cursor = 0;
   await Promise.all(Array.from({length: Math.min(6, objects.length)}, async () => {
     while (cursor < objects.length) {

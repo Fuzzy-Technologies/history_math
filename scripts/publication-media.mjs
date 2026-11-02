@@ -2,7 +2,7 @@ import {readFile, writeFile, readdir, realpath, unlink, stat} from 'node:fs/prom
 import {resolve, relative, sep, basename} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {imageInventory, validateExternalOriginal} from './external-originals.mjs';
-import {storage, mediaObject, validateObject, assertBytes, sha256, configuredClient, responseBytes, transfer, readWithRetries} from './s3-media.mjs';
+import {storage, mediaObject, validateObject, assertBytes, sha256, configuredClient, responseBytes, transfer, readWithRetries, mediaRead} from './s3-media.mjs';
 import {publicationReplacements, publicationSizeExceptions, jpegObject, imageSizeFindings} from './image-publication.mjs';
 
 export async function filesUnder(directory) {
@@ -84,7 +84,7 @@ export async function publicationPlan(root, siteDirectory) {
     objects: uniqueObjects([...images.map(image => image.object), ...pdfs.map(pdf => pdf.object), ...pendingJpegs])};
 }
 
-export async function sourceBytes(object, request = fetch, retryOptions) {
+export async function sourceBytes(object, request = mediaRead, retryOptions) {
   if (object.source.file) {
     const bytes = await readFile(object.source.file);
     assertBytes(object, bytes);

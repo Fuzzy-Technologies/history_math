@@ -4,7 +4,7 @@ import {pathToFileURL} from 'node:url';
 import {HeadObjectCommand} from '@aws-sdk/client-s3';
 import {imageInventory} from './external-originals.mjs';
 import {imageObjects, uniqueObjects, sourceBytes, localBytes} from './publication-media.mjs';
-import {storage, mediaObject, assertBytes, sha256, configuredClient, responseBytes, transfer, readWithRetries} from './s3-media.mjs';
+import {storage, mediaObject, assertBytes, sha256, configuredClient, responseBytes, transfer, readWithRetries, mediaRead} from './s3-media.mjs';
 import {publicationReplacements} from './image-publication.mjs';
 
 const repository = 'Fuzzy-Technologies/history_math';
@@ -38,7 +38,7 @@ export function eligiblePR(pr) {
     pr.head?.repo?.full_name === repository && /^feature\/article-/.test(pr.head.ref) && revisionPattern.test(pr.head.sha);
 }
 
-export async function pullRequestObjects(api = githubData, request = fetch, replacements = {}, root = '.') {
+export async function pullRequestObjects(api = githubData, request = mediaRead, replacements = {}, root = '.') {
   const pulls = (await pages(api, '/pulls?state=open&sort=created&direction=asc')).filter(eligiblePR), objects = [], evidence = [];
   for (const pr of pulls) {
     const revision = pr.head.sha, tree = await api(`/git/trees/${revision}?recursive=1`);
@@ -78,7 +78,7 @@ export async function revisionBytes(revision, path, request = fetch, limit = sou
     {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)}), limit));
 }
 
-export async function deployedPdfObjects(origin, baseurl, request = fetch, {legacyOnly = false} = {}) {
+export async function deployedPdfObjects(origin, baseurl, request = mediaRead, {legacyOnly = false} = {}) {
   if (!['https://history-math.org', 'https://fuzzy-technologies.github.io'].includes(origin) ||
       !['', '/history_math'].includes(baseurl)) throw new Error('Untrusted publication origin');
   const manifest = await readWithRetries('published PDF manifest', async () => {
@@ -109,7 +109,7 @@ export async function deployedPdfObjects(origin, baseurl, request = fetch, {lega
   return objects;
 }
 
-export async function copyPublishedPdfs({origin, baseurl, client, request = fetch, progress} = {}) {
+export async function copyPublishedPdfs({origin, baseurl, client, request = mediaRead, progress} = {}) {
   const objects = uniqueObjects(await deployedPdfObjects(origin, baseurl, request, {legacyOnly: true}));
   const receipt = await transfer(objects, client, object => readWithRetries(object.key, async () => {
     const bytes = await responseBytes(await request(object.source.deployed_url,
@@ -122,7 +122,7 @@ export async function copyPublishedPdfs({origin, baseurl, client, request = fetc
 
 // Upload-only migration runs before expensive rendering. A deployed S3 PDF
 // manifest makes this a cheap no-op on subsequent publications.
-export async function preflightMedia({root, origin, baseurl, client, request = fetch, progress} = {}) {
+export async function preflightMedia({root, origin, baseurl, client, request = mediaRead, progress} = {}) {
   const copied = await copyPublishedPdfs({origin, baseurl, client, request, progress});
   const images = imageObjects(imageInventory(root), path => ({file: resolve(root, 'site', '.' + path)}), publicationReplacements(root), root);
   for (const image of images.filter(image => !image.external_url)) assertBytes(image.original_object, await localBytes(resolve(root, 'site'), image.path));
@@ -143,7 +143,7 @@ export async function preflightMedia({root, origin, baseurl, client, request = f
     bytes: copied.summary.bytes + originals.reduce((sum, object) => sum + object.bytes, 0)}};
 }
 
-export async function backfill({root, origin, baseurl, includeOpenPRs, client, api = githubData, request = fetch, progress} = {}) {
+export async function backfill({root, origin, baseurl, includeOpenPRs, client, api = githubData, request = mediaRead, progress} = {}) {
   const replacements = publicationReplacements(root);
   const images = imageObjects(imageInventory(root), path => ({file: resolve(root, 'site', '.' + path)}), replacements, root);
   // Verify local master sources before the first upload, including symlink guards.

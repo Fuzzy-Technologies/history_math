@@ -1,5 +1,7 @@
 import {createHash} from 'node:crypto';
 import {getDefaultAutoSelectFamilyAttemptTimeout, setDefaultAutoSelectFamilyAttemptTimeout} from 'node:net';
+import {Agent, request as httpsRequest} from 'node:https';
+import {Readable} from 'node:stream';
 import {S3Client, HeadObjectCommand, PutObjectCommand} from '@aws-sdk/client-s3';
 
 // Allow remote TCP handshakes to complete before trying the next IP family.
@@ -8,6 +10,35 @@ setDefaultAutoSelectFamilyAttemptTimeout(Math.max(10_000, getDefaultAutoSelectFa
 
 export const storage = Object.freeze({endpoint: 'https://storage.yandexcloud.kz', region: 'kz1',
   bucket: 'history-math-media-kz', base: 'https://storage.yandexcloud.kz/history-math-media-kz'});
+const publicAgent = new Agent({keepAlive: true, maxSockets: 6, family: 4, rejectUnauthorized: true});
+
+// Public bucket checks remain anonymous and use the hostname for DNS and TLS.
+// Select IPv4 for this endpoint without changing GitHub or Pages transports.
+export async function publicMediaRead(url, options = {}, send = httpsRequest) {
+  const target = new URL(url), method = options.method || 'GET';
+  if (target.origin !== storage.endpoint || !target.pathname.startsWith('/' + storage.bucket + '/') ||
+      target.username || target.password || target.search || target.hash || !['GET', 'HEAD'].includes(method) ||
+      (options.credentials && options.credentials !== 'omit') || (options.redirect && options.redirect !== 'error') ||
+      (options.headers && [...new Headers(options.headers)].length) || options.body) throw new Error('Invalid anonymous media request');
+  return new Promise((done, failed) => {
+    const request = send(target, {method, family: 4, agent: publicAgent, signal: options.signal || AbortSignal.timeout(120_000)}, response => {
+      const headers = new Headers();
+      for (const [key, value] of Object.entries(response.headers)) if (value !== undefined) {
+        for (const item of Array.isArray(value) ? value : [value]) headers.append(key, item);
+      }
+      response.once('error', failed);
+      const status = response.statusCode;
+      if (method === 'HEAD' || status !== 200) {
+        response.resume(); done(new Response(null, {status, headers}));
+      } else done(new Response(Readable.toWeb(response), {status, headers}));
+    });
+    request.once('error', failed); request.end();
+  });
+}
+
+export function mediaRead(url, options) {
+  return new URL(url).hostname === new URL(storage.endpoint).hostname ? publicMediaRead(url, options) : fetch(url, options);
+}
 export const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
 const types = {pdf: 'application/pdf', png: 'image/png', jpg: 'image/jpeg', jpeg: 'image/jpeg',
   webp: 'image/webp', gif: 'image/gif', svg: 'image/svg+xml'};
@@ -66,6 +97,7 @@ function transientCode(error) {
     'UND_ERR_CONNECT_TIMEOUT', 'UND_ERR_SOCKET', 'UND_ERR_HEADERS_TIMEOUT', 'UND_ERR_BODY_TIMEOUT']);
   for (let cause = error, depth = 0; cause && depth < 4; cause = cause.cause, depth++) {
     if (codes.has(cause.code)) return cause.code;
+    if (cause.name === 'TimeoutError') return 'TIMEOUT';
   }
   if (error?.name === 'TimeoutError') return 'TIMEOUT';
   if (error instanceof TypeError && error.message === 'fetch failed' && !error.cause?.code) return 'NETWORK';
@@ -81,8 +113,9 @@ export async function readWithRetries(context, read, {pause = milliseconds => ne
       const code = transientCode(error);
       if (!code || attempt === 2) {
         const tlsCodes = new Set(['CERT_HAS_EXPIRED', 'ERR_TLS_CERT_ALTNAME_INVALID', 'UNABLE_TO_VERIFY_LEAF_SIGNATURE', 'DEPTH_ZERO_SELF_SIGNED_CERT']);
+        const tlsCode = [error?.code, error?.cause?.code].find(code => tlsCodes.has(code));
         const permanent = Number.isInteger(error?.status) ? `HTTP_${error.status}` :
-          tlsCodes.has(error?.cause?.code) ? error.cause.code : /integrity/i.test(error?.message || '') ? 'integrity mismatch' : 'INVALID_MEDIA';
+          tlsCode || (/integrity/i.test(error?.message || '') ? 'integrity mismatch' : 'INVALID_MEDIA');
         throw Object.assign(new Error(`Media read failed: ${context} (${code || permanent}; ${attempt + 1} attempts)`),
           Number.isInteger(error?.status) ? {status: error.status} : {});
       }
@@ -93,7 +126,7 @@ export async function readWithRetries(context, read, {pause = milliseconds => ne
 
 // Verification is deliberately anonymous: signed HEAD/metadata alone cannot
 // prove that the public site will be able to download the exact object.
-export async function verifyPublic(object, request = fetch) {
+export async function verifyPublic(object, request = mediaRead) {
   validateObject(object);
   return readWithRetries(`S3 verification ${object.key}`, async () => {
     const response = await request(object.url, {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)});
@@ -125,7 +158,7 @@ function storageFailure(operation, object, error) {
   return new Error(`S3 ${operation} failed: ${object.key} (HTTP ${Number.isInteger(status) && status >= 100 && status <= 599 ? status : 'unknown'}; ${code}; ${Number.isSafeInteger(attempts) && attempts > 0 ? attempts : 'unknown'} SDK attempts)`);
 }
 
-export async function uploadVerified(client, object, source, {request = fetch} = {}) {
+export async function uploadVerified(client, object, source, {request = mediaRead} = {}) {
   assertUploadBudget(object);
   let missing = false;
   try { await client.send(new HeadObjectCommand({Bucket: storage.bucket, Key: object.key})); }
@@ -146,7 +179,7 @@ export async function uploadVerified(client, object, source, {request = fetch} =
   return verifyPublic(object, request);
 }
 
-export async function transfer(objects, client, source, {request = fetch, progress = () => {}} = {}) {
+export async function transfer(objects, client, source, {request = mediaRead, progress = () => {}} = {}) {
   // Reject an invalid later item before any earlier object can be uploaded.
   for (const object of objects) assertUploadBudget(object);
   const receipt = [];
