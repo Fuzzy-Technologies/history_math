@@ -85,6 +85,23 @@ test('exact version deletion rechecks references for every item and journals den
   assert.equal(journals.at(-1).failure.http_status, 403); assert.ok(!JSON.stringify(journals).includes('SECRET'));
 });
 
+test('an unacknowledged delete records safe transport details without an extra delete attempt', async () => {
+  const journals = []; let calls = 0;
+  const client = {send: async () => {
+    calls++;
+    throw Object.assign(Error('SECRET signed URL'), {code: 'ETIMEDOUT', $metadata: {attempts: 3}});
+  }};
+  await assert.rejects(applyCleanup(client, plan(), {guard: async () => {},
+    journal: async value => journals.push(structuredClone(value))}), /HTTP unknown.*ETIMEDOUT.*3 SDK attempts/);
+  assert.equal(calls, 1);
+  assert.equal(journals.at(-1).complete, false);
+  assert.equal(journals.at(-1).deleted.length, 0);
+  assert.equal(journals.at(-1).failure.http_status, null);
+  assert.equal(journals.at(-1).failure.code, 'ETIMEDOUT');
+  assert.equal(journals.at(-1).failure.sdk_attempts, 3);
+  assert.ok(!JSON.stringify(journals).includes('SECRET'));
+});
+
 test('default mode only reports; apply requires trusted successful master publication context', () => {
   assert.equal(executionMode([], {}), '--dry-run');
   const env = {GITHUB_REF: 'refs/heads/master', GITHUB_SHA: 'a'.repeat(40), GITHUB_EVENT_NAME: 'push', MEDIA_CLEANUP_AFTER_DEPLOY: 'true'};

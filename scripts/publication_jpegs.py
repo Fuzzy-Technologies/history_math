@@ -3,11 +3,15 @@
 import argparse
 import concurrent.futures
 import hashlib
+import http.client
 import io
 import json
+import socket
+import ssl
 import time
 import urllib.error
 import urllib.request
+from urllib.parse import urlsplit
 from pathlib import Path
 import sys
 
@@ -20,6 +24,56 @@ from image_assets import inventory, external_original  # noqa: E402
 BASE = "https://storage.yandexcloud.kz/history-math-media-kz"
 POLICY = "jpeg-max15mb-444-pillow-12.3.0-v1"
 HARD_LIMIT = 15_000_000
+
+
+def ipv4_connection(address, timeout=None, source_address=None):
+    last_error = None
+    for family, kind, protocol, _, target in socket.getaddrinfo(address[0], address[1], socket.AF_INET, socket.SOCK_STREAM):
+        connection = socket.socket(family, kind, protocol)
+        try:
+            if timeout is not socket._GLOBAL_DEFAULT_TIMEOUT:
+                connection.settimeout(timeout)
+            if source_address:
+                connection.bind(source_address)
+            connection.connect(target)
+            return connection
+        except OSError as error:
+            last_error = error
+            connection.close()
+    raise last_error or OSError("No IPv4 address for public media endpoint")
+
+
+class PublicHTTPSConnection(http.client.HTTPSConnection):
+    def connect(self):
+        self._create_connection = socket.create_connection if self._tunnel_host else ipv4_connection
+        super().connect()
+
+
+class PublicHTTPSHandler(urllib.request.HTTPSHandler):
+    def https_open(self, request):
+        return self.do_open(PublicHTTPSConnection, request, context=self._context)
+
+
+class NoPublicRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, request, response, code, message, headers, new_url):
+        return None
+
+
+PUBLIC_CONTEXT = ssl.create_default_context()
+PUBLIC_OPENER = urllib.request.build_opener(PublicHTTPSHandler(context=PUBLIC_CONTEXT), NoPublicRedirect())
+
+
+def open_media(request, timeout):
+    url = request.full_url if isinstance(request, urllib.request.Request) else request
+    target, base = urlsplit(url), urlsplit(BASE)
+    if target.hostname != base.hostname:
+        return urllib.request.urlopen(request, timeout=timeout)
+    method = request.get_method() if isinstance(request, urllib.request.Request) else "GET"
+    if target.scheme != "https" or target.netloc != base.netloc or not target.path.startswith(base.path + "/") or \
+            target.query or target.fragment or method not in {"GET", "HEAD"} or \
+            (isinstance(request, urllib.request.Request) and (request.header_items() or request.data is not None)):
+        raise ValueError("Invalid anonymous public media request")
+    return PUBLIC_OPENER.open(request, timeout=timeout)
 
 
 def digest(data):
@@ -68,7 +122,7 @@ def encode_original(data, entry):
 def download(url, maximum):
     for attempt in range(3):
         try:
-            with urllib.request.urlopen(url, timeout=120) as response:
+            with open_media(url, timeout=120) as response:
                 data = response.read(maximum + 1)
             if len(data) > maximum:
                 raise ValueError("Media download exceeds expected size")
@@ -100,7 +154,7 @@ def cached_record(path, entry, previous):
     url = f"{BASE}/originals/{sha}/{record['filename']}"
     for attempt in range(3):
         try:
-            with urllib.request.urlopen(urllib.request.Request(url, method="HEAD"), timeout=30) as response:
+            with open_media(urllib.request.Request(url, method="HEAD"), timeout=30) as response:
                 if int(response.headers["Content-Length"]) == size and \
                         response.headers.get_content_type() == "image/jpeg":
                     return {key: value for key, value in record.items() if key != "file"}
