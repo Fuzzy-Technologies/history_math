@@ -1,0 +1,54 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-468f6986bcb1-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "a8fe8059a622c89cfa805619507d21fe301cdae0e3e22a56f39f414fbb3969b5",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "d188b1ead1b131b4cd41ea395e2154c9a36bd788",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/190",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/190#issuecomment-6600161826",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed"
+  },
+  "questions": [
+    {
+      "id": "en-bernoulli-epitaph",
+      "question": "The supplied Russian translation of the epitaph contains the grammatically unclear phrase “Здесь, я мирюсь, ожидает воскрешения”. Please verify it against the Latin inscription; the English caption retains that uncertainty rather than silently repairing the quotation.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/190#issuecomment-6600161826"
+    },
+    {
+      "id": "en-bernoulli-leibniz-travel",
+      "question": "Please verify the statement that Leibniz was away in Paris when Bernoulli’s reply was delayed until 1690. The source chronology is retained.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/190#issuecomment-6600161826"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. All source paragraphs, figure positions, bibliographic facts, dates, numbers, anchors, links and literal LaTeX expressions retained. Editorial publication approval remains pending.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-01-04",
+      "url": "https://teletype.in/@history_math/Yakob-Bernulli-neveroyatnye-veroyatnosti-01-04"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "bedcf69ef591edda7a2ea18e8a3782aa18f53d02f9765a35d15e58bb9dc7f876",
+      "description_sha256": "a0494b576344859288fb51706d728490c8fbffcfd570b74002ab0120223ff286"
+    }
+  ]
+}
