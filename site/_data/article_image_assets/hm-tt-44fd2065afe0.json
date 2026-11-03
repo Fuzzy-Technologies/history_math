@@ -1,0 +1,127 @@
+{
+  "/assets/images/hm-tt-44fd2065afe0/pushkin-aleksandr-sergeevich-01.png": {
+    "sha256": "955c46a617ac4fc85af3ef3a3205ff788e966efe8fa275ed0c05807ce4fc9bea",
+    "width": 1759,
+    "height": 2048,
+    "bytes": 7818432,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-44fd2065afe0/pushkin-aleksandr-sergeevich-01.png-960.webp",
+        "width": 960,
+        "height": 1118,
+        "sha256": "6ce6f050fdf1b46b781ab0f63f7a6286d5cbb6df2533cc785fd7a83ef9831e8e",
+        "bytes": 1316824
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-44fd2065afe0-pushkin-aleksandr-sergeevich-01-955c46a617ac4fc85af3ef3a3205ff788e966efe8fa275ed0c05807ce4fc9bea.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630496956",
+      "asset_id": 630496956,
+      "release_tag": "article-originals-9",
+      "sha256": "955c46a617ac4fc85af3ef3a3205ff788e966efe8fa275ed0c05807ce4fc9bea",
+      "bytes": 7818432
+    }
+  },
+  "/assets/images/hm-tt-44fd2065afe0/pushkin-aleksandr-sergeevich-02.png": {
+    "sha256": "4aa4b74703c1de62cb69a3273e6dfa7db98794a9bcf8f94a2fb7f429baf07063",
+    "width": 718,
+    "height": 1067,
+    "bytes": 1378007,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-44fd2065afe0/pushkin-aleksandr-sergeevich-02.png-718.webp",
+        "width": 718,
+        "height": 1067,
+        "sha256": "6c083213ca4a6a7de442939d498da5bda58b00154e5c1cfb47e65ef9dbb5684a",
+        "bytes": 677916
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-44fd2065afe0-pushkin-aleksandr-sergeevich-02-4aa4b74703c1de62cb69a3273e6dfa7db98794a9bcf8f94a2fb7f429baf07063.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552661",
+      "asset_id": 630552661,
+      "release_tag": "article-originals-4",
+      "sha256": "4aa4b74703c1de62cb69a3273e6dfa7db98794a9bcf8f94a2fb7f429baf07063",
+      "bytes": 1378007
+    }
+  },
+  "/assets/images/hm-tt-44fd2065afe0/pushkin-aleksandr-sergeevich-03.png": {
+    "sha256": "faacb552dcda262d0350bd97b5da485bf1515a0e836e3f11d107058061c65696",
+    "width": 486,
+    "height": 551,
+    "bytes": 281299,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-44fd2065afe0/pushkin-aleksandr-sergeevich-03.png-486.webp",
+        "width": 486,
+        "height": 551,
+        "sha256": "e1616325c83aa9b5a73d489585f1eb25235050ef1abb27ed4aac091ea0c4eaa4",
+        "bytes": 139310
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-44fd2065afe0-pushkin-aleksandr-sergeevich-03-faacb552dcda262d0350bd97b5da485bf1515a0e836e3f11d107058061c65696.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552788",
+      "asset_id": 630552788,
+      "release_tag": "article-originals-f",
+      "sha256": "faacb552dcda262d0350bd97b5da485bf1515a0e836e3f11d107058061c65696",
+      "bytes": 281299
+    }
+  },
+  "/assets/images/hm-tt-44fd2065afe0/pushkin-aleksandr-sergeevich-04.png": {
+    "sha256": "7c9fa847942de80088532955429b90755aee2d3840b753dd439e8f3e8ef6980c",
+    "width": 1904,
+    "height": 860,
+    "bytes": 1990336,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-44fd2065afe0/pushkin-aleksandr-sergeevich-04.png-960.webp",
+        "width": 960,
+        "height": 434,
+        "sha256": "802d17df304a913035d9b72dacb900e11605883acc04ec57a5244ec3898243d8",
+        "bytes": 303916
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-44fd2065afe0-pushkin-aleksandr-sergeevich-04-7c9fa847942de80088532955429b90755aee2d3840b753dd439e8f3e8ef6980c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630552941",
+      "asset_id": 630552941,
+      "release_tag": "article-originals-7",
+      "sha256": "7c9fa847942de80088532955429b90755aee2d3840b753dd439e8f3e8ef6980c",
+      "bytes": 1990336
+    }
+  },
+  "/assets/images/hm-tt-44fd2065afe0/pushkin-aleksandr-sergeevich-05.png": {
+    "sha256": "349c591569fb3fd32287a55b5c2247d34818f9edbe0c939ea0986e12c868c5ca",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2421969,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-44fd2065afe0/pushkin-aleksandr-sergeevich-05.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "cef1916eae013dd6fd6dd645d0e20a9193d729b29b87abc5fafa084d58b9a8f4",
+        "bytes": 1020960
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-44fd2065afe0-pushkin-aleksandr-sergeevich-05-349c591569fb3fd32287a55b5c2247d34818f9edbe0c939ea0986e12c868c5ca.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553142",
+      "asset_id": 630553142,
+      "release_tag": "article-originals-3",
+      "sha256": "349c591569fb3fd32287a55b5c2247d34818f9edbe0c939ea0986e12c868c5ca",
+      "bytes": 2421969
+    }
+  }
+}
