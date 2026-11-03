@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-fec0f4efbe98",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "24328ddfe5a12699de0bf3adceb01f3295fd7a07ce6617c01fa1d81b92047bd3",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "f41cb1e2bb4a1363617036cf54e3b949014e29cc",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/187",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/187#pullrequestreview-5754393862",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed",
+    "review_commit_id": "363ba7c266c5bc67a790091a84c6accd047944fd"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-01-07",
+      "url": "https://teletype.in/@history_math/Bernulli-Iogann-16671748-01-07"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "b65f67a42910c7020601bfa35c51c58440fe6693dc52cc713b6bb2726083c196",
+      "description_sha256": "597cf85cbf82a75203b6be617ae6e07c60913eaba5b20b97f3b20c409512971a"
+    }
+  ]
+}

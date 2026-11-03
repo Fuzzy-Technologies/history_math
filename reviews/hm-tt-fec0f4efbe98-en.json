@@ -1,0 +1,52 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-fec0f4efbe98-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "7f2c8c779837d090b0a8379fc2b96b7155fc7f795e372a163bb1844e1e38cdd3",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "f41cb1e2bb4a1363617036cf54e3b949014e29cc",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/187",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/187#pullrequestreview-5754393862",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed",
+    "review_commit_id": "363ba7c266c5bc67a790091a84c6accd047944fd"
+  },
+  "questions": [
+    {
+      "id": "q-johann-1",
+      "question": "The source dates Bernoulli's Paris teaching to 1691–1693 but says he returned home in 1692, and describes him as a professor of Greek on returning to Basel in 1705. Confirm these chronology and appointment details; all are retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/187#pullrequestreview-5754393862"
+    },
+    {
+      "id": "q-johann-2",
+      "question": "Confirm the source's claim that Bernoulli practised medicine throughout his life and its statement that the exponential function was unavailable in 1691. The English retains these claims.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/187#pullrequestreview-5754393862"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-01-07",
+      "url": "https://teletype.in/@history_math/Bernulli-Iogann-16671748-01-07"
+    }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "bb6173e55fea228c1f21bcea1a2bb344675a91a1289aea5b8b9d1c80ef2eadcd",
+      "description_sha256": "71fcd1f2514ea75f8dd94178c44d082cb406c30d21b15c9be943af144b9d57b1"
+    }
+  ]
+}
