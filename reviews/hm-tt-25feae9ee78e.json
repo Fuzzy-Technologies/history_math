@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-25feae9ee78e",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "dcbf5c2b0ceb7f48325ede13a716532d873df9664fbcc9f5307fc2ff1b458e1f",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "80a0c8e4122edd974d510c772d4201087efb2803",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/100",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/100#pullrequestreview-5756190443",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed",
+    "review_commit_id": "b4885e57920aba95f9bdf3ea43a33e2ae998212e"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-03-09",
+      "url": "https://teletype.in/@history_math/Mind-game-from-the-17th-century"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "94939a9db93c62a7cdb2a2dfb5acac79f9a9a5ae24946b8bb18c782d7f5aee27",
+      "description_sha256": "c7238365afc9a5b602913373f5c351bbc30d0ffdd18d0a1ae62a3d5462fec394"
+    }
+  ]
+}

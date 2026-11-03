@@ -1,0 +1,52 @@
+{
+  "/assets/images/hm-tt-25feae9ee78e/mind-game-from-the-17th-cent-01.jpeg": {
+    "sha256": "dfd36c76cffd801704f91e38b78ff2366c21c2bc39b6dfa864383b077e1aeb87",
+    "width": 744,
+    "height": 887,
+    "bytes": 107202,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-25feae9ee78e/mind-game-from-the-17th-cent-01-744.jpeg",
+        "width": 744,
+        "height": 887,
+        "bytes": 107202,
+        "sha256": "dfd36c76cffd801704f91e38b78ff2366c21c2bc39b6dfa864383b077e1aeb87"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-25feae9ee78e-mind-game-from-the-17th-cent-01-dfd36c76cffd801704f91e38b78ff2366c21c2bc39b6dfa864383b077e1aeb87.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630493758",
+      "asset_id": 630493758,
+      "release_tag": "article-originals-d",
+      "sha256": "dfd36c76cffd801704f91e38b78ff2366c21c2bc39b6dfa864383b077e1aeb87",
+      "bytes": 107202
+    }
+  },
+  "/assets/images/hm-tt-25feae9ee78e/mind-game-from-the-17th-cent-02.jpeg": {
+    "sha256": "02841faba1c174a1df4aca781739d838b9b0d640f0444219f7e4485f904c762f",
+    "width": 360,
+    "height": 591,
+    "bytes": 72835,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-25feae9ee78e/mind-game-from-the-17th-cent-02-360.jpeg",
+        "width": 360,
+        "height": 591,
+        "bytes": 72835,
+        "sha256": "02841faba1c174a1df4aca781739d838b9b0d640f0444219f7e4485f904c762f"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-25feae9ee78e-mind-game-from-the-17th-cent-02-02841faba1c174a1df4aca781739d838b9b0d640f0444219f7e4485f904c762f.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630534327",
+      "asset_id": 630534327,
+      "release_tag": "article-originals-0",
+      "sha256": "02841faba1c174a1df4aca781739d838b9b0d640f0444219f7e4485f904c762f",
+      "bytes": 72835
+    }
+  }
+}
