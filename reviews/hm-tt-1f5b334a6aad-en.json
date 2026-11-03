@@ -1,0 +1,62 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-1f5b334a6aad-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "012fd979a82fd23bddbdf7a431117e400b3548ef6c3877a17f6b102622969cd4",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "bc620b0b0345b147ca05fecaf54acae5ce3e99f4",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/81",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/81#pullrequestreview-5748917344",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed",
+    "review_commit_id": "bc620b0b0345b147ca05fecaf54acae5ce3e99f4"
+  },
+  "questions": [
+    {
+      "id": "rsa-proportional-blocks",
+      "question": "What source supports the claim that RSA uses division into proportional blocks and derives from the principle of the proportional compass? The supplied claim is retained but needs mathematical review.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/81#pullrequestreview-5748917344"
+    },
+    {
+      "id": "compass-sector-history",
+      "question": "Should the historical discussion distinguish proportional dividers from Galileo's geometrical and military sector? The source combines the instruments; its dates and claims have been retained.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/81#pullrequestreview-5748917344"
+    },
+    {
+      "id": "kiselev-initials",
+      "question": "The body and captions use A. P. Kiselev, but bibliography item 1 gives P. A. Kiselev. Which initials should the approved bibliography use?",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/81#pullrequestreview-5748917344"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication; every author paragraph, note, bibliography item, formula, link, anchor and figure placement retained. Mathematical formulas are preserved literally. English prose and all figure captions and alternative text were reviewed against the complete source. Editorial approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-06-11",
+      "url": "https://teletype.in/@history_math/Proportional-Compass"
+    }
+  },
+  "manual_changes": [
+    "Formatted the archived book addresses in figure captions as descriptive Source links; original image bytes and bibliographic information retained."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "14987763c197827ebf18949c2c3c0c711b880900cb5dd02e966d127abacc7a87",
+      "description_sha256": "5a1b3c5867b173a08816dda31b6f4f19b963f5f0f92df60619146a686e4cf1d6"
+    }
+  ]
+}
