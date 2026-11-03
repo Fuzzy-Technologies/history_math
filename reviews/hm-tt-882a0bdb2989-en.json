@@ -1,0 +1,45 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-882a0bdb2989-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "336c8a6cedfff50936cc09297ad69c4b12cf210420ae95f965bf120ef2ee46e8",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "5358ecb6956b2b1c19424bc457dce89ed7f80025",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/177",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/177#pullrequestreview-5754937732",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed",
+    "review_commit_id": "43a0530cbaba709fef4823562574e370d7b11324"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source derives medrese from “madarasat” and glosses “daras” as “lesson, lecture”, and describes geometrical rules as studied deductively without proofs. Confirm the linguistic forms and intended pedagogical terminology; the English retains these claims.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/177#pullrequestreview-5754937732"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-02-24",
+      "url": "https://teletype.in/@history_math/Mektebe-i-medrese-02-24"
+    }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "c41ce2cd467b0919e5b1da511f0bc6f258549c749518f6bf5b0fb84bcd73719e",
+      "description_sha256": "38b4afe71977d09fa545af556ebcc4081466bd6a8b534af76cf59d7bd5497e1e"
+    }
+  ]
+}

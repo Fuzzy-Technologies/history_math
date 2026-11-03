@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-882a0bdb2989",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "42ed15c77e7baa0e13f38fb6f5a0c08139c7f088b7c9aa63fa54092d3b76c75c",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "5358ecb6956b2b1c19424bc457dce89ed7f80025",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/177",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/177#pullrequestreview-5754937732",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed",
+    "review_commit_id": "43a0530cbaba709fef4823562574e370d7b11324"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 6,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-02-24",
+      "url": "https://teletype.in/@history_math/Mektebe-i-medrese-02-24"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "e583e509ec8e089f6705a63f131c72da926c393eaac32052991f5b01930b5b2c",
+      "description_sha256": "7c967dfe7c43ebdbfcbd421a90639f0d978e6385702523a8655eeedfbca5f093"
+    }
+  ]
+}
