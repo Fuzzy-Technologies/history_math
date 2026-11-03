@@ -1,0 +1,54 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-0a290d6244f8-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "9a7eb84ddd0c5db49db0e2e8354925318650a3d35a5a4ddaa59ae003cd0f0ae3",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "33b48e0d29ee32e3b5b4a6ddf4e8f2a8fd584f34",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/200",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/200#issuecomment-6599627418",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed"
+  },
+  "questions": [
+    {
+      "id": "historical-scoring-context",
+      "question": "The source presents several Olympic scoring schemes and a ten-point gymnastics scale as current. Should these be dated or otherwise qualified for the 2023 source publication? Their wording and numbers are retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/200#issuecomment-6599627418"
+    },
+    {
+      "id": "expert-relation-direction",
+      "question": "The final paragraph calls judgements communicated to experts relations, whereas the preceding explanation discusses judgements given by experts. Which direction is intended? The source wording is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/200#issuecomment-6599627418"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 1,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-14",
+      "url": "https://teletype.in/@history_math/Podschyot-rezultatov-na-sportivnyh-sorevnovaniyah-11-14"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "c1bcc70cb6a48dc4dcf0daa9e4e5cc1913007b9e3d576eb4ed6ae732ca211455",
+      "description_sha256": "65bd2cda026a76f88a1a225de6f76515c52657981d2b134ee711e35aec963e4a"
+    }
+  ]
+}

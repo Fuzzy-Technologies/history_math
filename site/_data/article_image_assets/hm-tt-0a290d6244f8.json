@@ -1,0 +1,27 @@
+{
+  "/assets/images/hm-tt-0a290d6244f8/podschyot-rezultatov-na-spor-01.png": {
+    "sha256": "2992b74659a90549226cb2ae25d2583d85c2d3749a326a3273f6e3f2bc8f603f",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 1872557,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-0a290d6244f8/podschyot-rezultatov-na-spor-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "264578503d68d1d40ba233fb2fef34a686a70ff44429edb8991aef57b4f7c5fb",
+        "bytes": 1027452
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-0a290d6244f8-podschyot-rezultatov-na-spor-01-2992b74659a90549226cb2ae25d2583d85c2d3749a326a3273f6e3f2bc8f603f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497770",
+      "asset_id": 630497770,
+      "release_tag": "article-originals-2",
+      "sha256": "2992b74659a90549226cb2ae25d2583d85c2d3749a326a3273f6e3f2bc8f603f",
+      "bytes": 1872557
+    }
+  }
+}
