@@ -115,6 +115,21 @@ The explicit manual S3 recovery in `docs/MEDIA_CLEANUP.md` can remove obsolete
 versions while a publication is blocked; it preserves live/master/draft references
 and excludes concurrent publication through the existing workflow lock.
 
+The image-delivery browser gate gives full-size bucket originals a bounded
+120-second load deadline, matching public media verification; local and mocked
+non-bucket images retain their 30-second deadline. It still requires the viewer
+to finish loading, successful decoding and exact download hashes. Each page and
+viewport is logged, and a failed load reports its public URL and viewer state
+without query strings or credentials. A slow or failed original never counts as
+a successful check.
+
+Article preparation accepts anonymous full-byte verification of canonical
+`originals/<sha256>/<filename>` URLs in this bucket as well as GitHub originals.
+Foreign buckets, non-HTTPS URLs, credentials, ports, queries and fragments are
+rejected before a request. Reusing a migrated original still requires the exact
+reviewed SHA-256 and byte count; a failed read cannot silently restore a retired
+source.
+
 The pre-migration size gate moves after media finalization: a temporary build
 containing local PDFs must not block a valid lightweight Pages publication.
 PDF rendering and its cache remain local to the runner and run before media

@@ -41,8 +41,31 @@ let checkedCrossOriginDownload = false;
 const externalURLs = new Set(Object.values(inventory).flatMap(entry => entry.external_original ?
   [entry.external_original.url, entry.external_original.api_url] : []));
 const originalRasterRequests = requests => requests.filter(url => !url.includes('/assets/images/previews/') && /\.(png|jpe?g|gif|webp)$/i.test(url));
+const publicURL = value => {
+  try { const url = new URL(value, origin); return url.origin + url.pathname; }
+  catch { return '[invalid URL]'; }
+};
+async function waitForOriginal(page, detail) {
+  const url = new URL(detail.original, origin);
+  // Full-size bucket reads have the same bounded deadline as media verification.
+  const timeout = url.origin === 'https://storage.yandexcloud.kz' && url.pathname.startsWith('/history-math-media-kz/') ? 120_000 : 30_000;
+  try {
+    await page.waitForFunction(() => document.querySelector('#image-viewer').getAttribute('aria-busy') === 'false', undefined, {timeout});
+    await page.locator('.viewer-canvas img').evaluate(img => img.decode());
+  } catch (error) {
+    const state = await page.evaluate(() => {
+      const viewer = document.querySelector('#image-viewer'), image = viewer?.querySelector('.viewer-canvas img');
+      return {busy: viewer?.getAttribute('aria-busy'), open: document.documentElement.classList.contains('viewer-open'),
+        image_complete: image?.complete, image_width: image?.naturalWidth, image_height: image?.naturalHeight};
+    }).catch(() => null);
+    console.error(JSON.stringify({check: 'original-image-load', path: detail.path, width: detail.width,
+      identity: detail.identity, original: publicURL(detail.original), timeout_ms: timeout, state}));
+    throw error;
+  }
+}
 try {
   for (const width of [390, 1440]) for (const path of pages) {
+    console.log(`Checking image delivery: ${path} at ${width}px`);
     const context = await browser.newContext({viewport: {width, height: 1000}, reducedMotion: 'reduce',
       colorScheme: width === 390 ? 'dark' : 'light'});
     await stubMetrika(context);
@@ -89,8 +112,7 @@ try {
       const identity = await trigger.locator('img').getAttribute('data-original-path');
       const external = inventory[identity].external_original;
       await trigger.click();
-      await page.waitForFunction(() => document.querySelector('#image-viewer').getAttribute('aria-busy') === 'false');
-      await page.locator('.viewer-canvas img').evaluate(img => img.decode());
+      await waitForOriginal(page, {path, width, identity, original});
       if (external) {
         assert.equal(original, deliveries.get(identity).url);
         assert.equal(await page.locator('.viewer-canvas img').getAttribute('src'), original);
@@ -126,8 +148,7 @@ try {
         await trigger.locator('img').evaluate((img, url) => { img.dataset.original = url; }, remote);
         assert.equal(fetched, 0);
         await trigger.click();
-        await page.waitForFunction(() => document.querySelector('#image-viewer').getAttribute('aria-busy') === 'false');
-        await page.locator('.viewer-canvas img').evaluate(img => img.decode());
+        await waitForOriginal(page, {path, width, identity, original: remote});
         assert.ok(fetched >= 1);
         const [file] = await Promise.all([page.waitForEvent('download'), download.click()]);
         assert.equal(createHash('sha256').update(await readFile(await file.path())).digest('hex'), source.sha256);
