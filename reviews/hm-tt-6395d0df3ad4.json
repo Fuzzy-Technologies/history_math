@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-6395d0df3ad4",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "8433155a16bb9dfaff468b28d58819e81ee35920ada1facdf75e2261cb24abae",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "86b11cf94c26aa575c903b1e13d644aa55db6a8f",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/189",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/189#issuecomment-6600259469",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-01-06",
+      "url": "https://teletype.in/@history_math/Bolshie-chisla-01-06"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "ef94423a07004faef8df8a230e4b297d40cabba186b9e5804baad7e3ea948be5",
+      "description_sha256": "0a24d3c4c03cc17b329ed17ebadadcf85efbbe50f94f3d176199369646a92fcf"
+    }
+  ]
+}
