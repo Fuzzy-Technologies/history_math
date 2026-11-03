@@ -1,0 +1,52 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-4e2e8a46ccc3-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "c35cd620d551edebefade29edf6cf67f86b179e659fcc5494f9e7a6d0917d032",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "33a12f82ae177a69dc4f257da68d97847d99694f",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/168",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/168#pullrequestreview-5755296419",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed",
+    "review_commit_id": "cd989e2cfb3702ed857398fc4e69a73a1ccea6b8"
+  },
+  "questions": [
+    {
+      "id": "q-quadrant-1",
+      "question": "The source identifies Ulugh Beg's instrument as a quadrant and says the instrument fell out of use in the late seventeenth century. Confirm the instrument classification and the scope of the latter statement. The English retains both claims.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/168#pullrequestreview-5755296419"
+    },
+    {
+      "id": "q-quadrant-2",
+      "question": "The source places 'zenith distance' in parentheses after 'altitude', although the two angles are complementary. Confirm the intended wording; the source distinction has not been silently corrected.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/168#pullrequestreview-5755296419"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Author paragraphs, mathematical expressions, numeric facts, references, figure order and exact original publication date retained. Editorial publication approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-04-06",
+      "url": "https://teletype.in/@history_math/Kvadrant-04-06"
+    }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "361d272f7be1f84232e776460447aa47c1aa191499e0d10d2bc5ef4dc3f501a1",
+      "description_sha256": "4f595412d23f60f53d5b4d2361f50a865e26dc9937bc5740362c950b7a439d47"
+    }
+  ]
+}

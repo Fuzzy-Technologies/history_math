@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-4e2e8a46ccc3",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "54d07201dedf9b95bb78a0b67f0c21c179e503aab8058237735b015718e09271",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "33a12f82ae177a69dc4f257da68d97847d99694f",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/168",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/168#pullrequestreview-5755296419",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed",
+    "review_commit_id": "cd989e2cfb3702ed857398fc4e69a73a1ccea6b8"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-04-06",
+      "url": "https://teletype.in/@history_math/Kvadrant-04-06"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "f60e5ef7367315fc7eb15ebb3d2b6f988470a00f81af3bc9678177ee261a635b",
+      "description_sha256": "b5f11ebfe6cdd81797306cdf885e417f71f8b10273f28003f9df52b2069edfb9"
+    }
+  ]
+}
