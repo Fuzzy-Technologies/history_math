@@ -1,0 +1,37 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-fe2f642f1e5a",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "66e9f752115f85eaf292f3170c322842d457ebd787cb4ecfd990e506cd327ce0",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "b885e2b6a8c9d72c2bd996d2078f7d850ae58cef",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/156",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/156#pullrequestreview-5755795175",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed",
+    "review_commit_id": "b7be77989aba7be7b07dc300f0a9e86a94abc1c3"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 3,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-06-03",
+      "url": "https://teletype.in/@history_math/Priznak-delimosti-na-19-ehkzotika-v-teorii-chisel-06-04"
+    }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "60abd6b3c0e696cdbe3c06ffea60abbb37d9b255e3165682476280685b858047",
+      "description_sha256": "7c750cb483981f442839f496a63e75acc0e3f36ec036f79a4ec833d451d93b15"
+    }
+  ]
+}
