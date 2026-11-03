@@ -1,0 +1,52 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-1aa2d2225aeb-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "861421c8f9cea8253cf5d350c4b5f394248b2c8ac3cbd833f1775c0e0cb8fc84",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "f0619f8a3883f5e7bd3e124f05db423f563e28e2",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/174",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/174#pullrequestreview-5755129556",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed",
+    "review_commit_id": "8227eb01cd10d77fa0a09883e0188a4ee7d79d75"
+  },
+  "questions": [
+    {
+      "id": "q-english-1",
+      "question": "The source’s primitive-triple parametrization states only (p, q) = 1 and does not specify opposite parity or p > q. Confirm the intended restrictions; the formulas and conditions are retained literally.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/174#pullrequestreview-5755129556"
+    },
+    {
+      "id": "q-english-2",
+      "question": "The Pythagoras-tree caption first sets the largest square to one unit but later calls the initial square’s area 2. Confirm the intended normalization; both values are retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/174#pullrequestreview-5755129556"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation of the Russian publication derivative, manually compared paragraph by paragraph. Bibliographic facts, figure sequence, dates and literal mathematical expressions retained. Editorial publication approval remains pending.",
+    "figures": 7,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-02-25",
+      "url": "https://teletype.in/@history_math/Arifmetika-pifagorejcev-pifagorovy-trojki-02-25"
+    }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "fae94775ad6114a983f6f8cfceb6db4ba25b10907b7828c9852a6584d6fdc9ac",
+      "description_sha256": "7e2fee9126a29abab496fc68aba200f79622f13deb8e54a486242f5ba24c8753"
+    }
+  ]
+}

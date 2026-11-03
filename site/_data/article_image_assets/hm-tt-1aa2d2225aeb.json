@@ -1,0 +1,177 @@
+{
+  "/assets/images/hm-tt-1aa2d2225aeb/arifmetika-pifagorejcev-pifa-01.png": {
+    "sha256": "d4a50bbe26a3ccbe84f3984efa45d60a2a454bd115d39e52916cec4949f50370",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2797804,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1aa2d2225aeb/arifmetika-pifagorejcev-pifa-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "c1916f35ca525a34a1efb265a0559f6b9372346b7b6f70c3c4bfb093040d72e7",
+        "bytes": 1227930
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-1aa2d2225aeb-arifmetika-pifagorejcev-pifa-01-d4a50bbe26a3ccbe84f3984efa45d60a2a454bd115d39e52916cec4949f50370.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630501686",
+      "asset_id": 630501686,
+      "release_tag": "article-originals-d",
+      "sha256": "d4a50bbe26a3ccbe84f3984efa45d60a2a454bd115d39e52916cec4949f50370",
+      "bytes": 2797804
+    }
+  },
+  "/assets/images/hm-tt-1aa2d2225aeb/arifmetika-pifagorejcev-pifa-02.png": {
+    "sha256": "f408f9db937c2de9762925f654104e9422f7a70c3c1005f28b6840b27d4744fe",
+    "width": 1800,
+    "height": 3030,
+    "bytes": 11721472,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1aa2d2225aeb/arifmetika-pifagorejcev-pifa-02.png-960.webp",
+        "width": 960,
+        "height": 1616,
+        "sha256": "ddbb402c129a314344370354f082426cca1b82f88c4d44d2671b9ff3e5b37a13",
+        "bytes": 1607850
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-1aa2d2225aeb-arifmetika-pifagorejcev-pifa-02-f408f9db937c2de9762925f654104e9422f7a70c3c1005f28b6840b27d4744fe.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544622",
+      "asset_id": 630544622,
+      "release_tag": "article-originals-f",
+      "sha256": "f408f9db937c2de9762925f654104e9422f7a70c3c1005f28b6840b27d4744fe",
+      "bytes": 11721472
+    }
+  },
+  "/assets/images/hm-tt-1aa2d2225aeb/arifmetika-pifagorejcev-pifa-03.png": {
+    "sha256": "e780124be823f1155e50c06953776bce240f9ad424e1de462bf167e12abe8432",
+    "width": 600,
+    "height": 597,
+    "bytes": 27026,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1aa2d2225aeb/arifmetika-pifagorejcev-pifa-03.png-600.webp",
+        "width": 600,
+        "height": 597,
+        "sha256": "fbbd7edadffc5d21d67d80862ddae232377af568361ddb73be6061d8d14097b3",
+        "bytes": 11404
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-1aa2d2225aeb-arifmetika-pifagorejcev-pifa-03-e780124be823f1155e50c06953776bce240f9ad424e1de462bf167e12abe8432.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544786",
+      "asset_id": 630544786,
+      "release_tag": "article-originals-e",
+      "sha256": "e780124be823f1155e50c06953776bce240f9ad424e1de462bf167e12abe8432",
+      "bytes": 27026
+    }
+  },
+  "/assets/images/hm-tt-1aa2d2225aeb/arifmetika-pifagorejcev-pifa-04.png": {
+    "sha256": "e18d07c4dd57150f8e00860525c5c5c009d0edf5ad1a26ebcdf21655de417757",
+    "width": 950,
+    "height": 1472,
+    "bytes": 3507639,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1aa2d2225aeb/arifmetika-pifagorejcev-pifa-04-png-reading-950-49a9b9500b6f.webp",
+        "width": 950,
+        "height": 1472,
+        "sha256": "49a9b9500b6faf500137ab943d3415fd32a58043887fed2f022cc305c7495476",
+        "bytes": 1920868
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-e/hm-tt-1aa2d2225aeb-arifmetika-pifagorejcev-pifa-04-e18d07c4dd57150f8e00860525c5c5c009d0edf5ad1a26ebcdf21655de417757.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630544961",
+      "asset_id": 630544961,
+      "release_tag": "article-originals-e",
+      "sha256": "e18d07c4dd57150f8e00860525c5c5c009d0edf5ad1a26ebcdf21655de417757",
+      "bytes": 3507639
+    }
+  },
+  "/assets/images/hm-tt-1aa2d2225aeb/arifmetika-pifagorejcev-pifa-05.png": {
+    "sha256": "9e03847e315ebb2f7034058e7fd7dc87c3553ab6c73f282d58edeed611518eaa",
+    "width": 1920,
+    "height": 1572,
+    "bytes": 5816156,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1aa2d2225aeb/arifmetika-pifagorejcev-pifa-05.png-960.webp",
+        "width": 960,
+        "height": 786,
+        "sha256": "5b9b83ab343b54e379c438798c89f91b65d53dbe51aab235385425f97f71af04",
+        "bytes": 928234
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-9/hm-tt-1aa2d2225aeb-arifmetika-pifagorejcev-pifa-05-9e03847e315ebb2f7034058e7fd7dc87c3553ab6c73f282d58edeed611518eaa.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630545180",
+      "asset_id": 630545180,
+      "release_tag": "article-originals-9",
+      "sha256": "9e03847e315ebb2f7034058e7fd7dc87c3553ab6c73f282d58edeed611518eaa",
+      "bytes": 5816156
+    }
+  },
+  "/assets/images/hm-tt-1aa2d2225aeb/arifmetika-pifagorejcev-pifa-06.png": {
+    "sha256": "332f1f913218e329e0b68cdf4bf33665cd83e6c6b0d451e82818dd36ebe9d5d6",
+    "width": 1240,
+    "height": 855,
+    "bytes": 160745,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1aa2d2225aeb/arifmetika-pifagorejcev-pifa-06.png-960.webp",
+        "width": 960,
+        "height": 662,
+        "sha256": "f5a830d8995c7c91b01c7c80455b3829a62c88141c5166dca424172ea97096e6",
+        "bytes": 187544
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-1aa2d2225aeb-arifmetika-pifagorejcev-pifa-06-332f1f913218e329e0b68cdf4bf33665cd83e6c6b0d451e82818dd36ebe9d5d6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630545364",
+      "asset_id": 630545364,
+      "release_tag": "article-originals-3",
+      "sha256": "332f1f913218e329e0b68cdf4bf33665cd83e6c6b0d451e82818dd36ebe9d5d6",
+      "bytes": 160745
+    }
+  },
+  "/assets/images/hm-tt-1aa2d2225aeb/arifmetika-pifagorejcev-pifa-07.png": {
+    "sha256": "5c2b89e24353207f34c6c832bf7477124d0f39d7c4dbca0a3647e5ca8f635e6a",
+    "width": 2181,
+    "height": 1025,
+    "bytes": 1676850,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-1aa2d2225aeb/arifmetika-pifagorejcev-pifa-07-png-reading-960-cdc440d9493b.webp",
+        "width": 960,
+        "height": 451,
+        "sha256": "cdc440d9493ba59708426e6f472965e83871809fe63f2930ba01e8073e02d489",
+        "bytes": 260200
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-1aa2d2225aeb-arifmetika-pifagorejcev-pifa-07-5c2b89e24353207f34c6c832bf7477124d0f39d7c4dbca0a3647e5ca8f635e6a.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630545507",
+      "asset_id": 630545507,
+      "release_tag": "article-originals-5",
+      "sha256": "5c2b89e24353207f34c6c832bf7477124d0f39d7c4dbca0a3647e5ca8f635e6a",
+      "bytes": 1676850
+    }
+  }
+}
