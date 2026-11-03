@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-6bdc5096a3d4/pervye-universitety-02-24-01.png": {
+    "sha256": "561302893aa8e3fd3bdb8758c4e0f7f1340934e3e71f91845cd5e68b7c528a9c",
+    "width": 2500,
+    "height": 3100,
+    "bytes": 11959581,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6bdc5096a3d4/pervye-universitety-02-24-01.png-960.webp",
+        "width": 960,
+        "height": 1190,
+        "sha256": "91e5a812e634d0d5681048bca199f7bbc87e606f44b8a368b7bcd3dc69889bec",
+        "bytes": 1679546
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-tt-6bdc5096a3d4-pervye-universitety-02-24-01-561302893aa8e3fd3bdb8758c4e0f7f1340934e3e71f91845cd5e68b7c528a9c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630500688",
+      "asset_id": 630500688,
+      "release_tag": "article-originals-5",
+      "sha256": "561302893aa8e3fd3bdb8758c4e0f7f1340934e3e71f91845cd5e68b7c528a9c",
+      "bytes": 11959581
+    }
+  },
+  "/assets/images/hm-tt-6bdc5096a3d4/pervye-universitety-02-24-02.png": {
+    "sha256": "c6fec2d02b630b2eec1ed15a9eceeef8c21badeebfe1ccee1f495fbaadd40e8a",
+    "width": 2000,
+    "height": 1333,
+    "bytes": 5416848,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6bdc5096a3d4/pervye-universitety-02-24-02.png-960.webp",
+        "width": 960,
+        "height": 640,
+        "sha256": "4f134ff4740465cc1f95ba9e8bdf57366ef95a942b5df5ea856b676850de572e",
+        "bytes": 678148
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-6bdc5096a3d4-pervye-universitety-02-24-02-c6fec2d02b630b2eec1ed15a9eceeef8c21badeebfe1ccee1f495fbaadd40e8a.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548143",
+      "asset_id": 630548143,
+      "release_tag": "article-originals-c",
+      "sha256": "c6fec2d02b630b2eec1ed15a9eceeef8c21badeebfe1ccee1f495fbaadd40e8a",
+      "bytes": 5416848
+    }
+  },
+  "/assets/images/hm-tt-6bdc5096a3d4/pervye-universitety-02-24-03.png": {
+    "sha256": "ffe9575305ef51ba278dbfbab33cef36c5222f5ba62f322576425d1c613046b9",
+    "width": 2487,
+    "height": 3650,
+    "bytes": 19722174,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6bdc5096a3d4/pervye-universitety-02-24-03.png-960.webp",
+        "width": 960,
+        "height": 1409,
+        "sha256": "8d6e6959754b1328f14456cc2bf198a3413049d8df410f8a848ba5c22e93b277",
+        "bytes": 1605594
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-6bdc5096a3d4-pervye-universitety-02-24-03-ffe9575305ef51ba278dbfbab33cef36c5222f5ba62f322576425d1c613046b9.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548306",
+      "asset_id": 630548306,
+      "release_tag": "article-originals-f",
+      "sha256": "ffe9575305ef51ba278dbfbab33cef36c5222f5ba62f322576425d1c613046b9",
+      "bytes": 19722174
+    }
+  },
+  "/assets/images/hm-tt-6bdc5096a3d4/pervye-universitety-02-24-04.png": {
+    "sha256": "15d73f52e4da0f7e6f1309a92760f44dc709f5dfc3d2bac1bc0c22c05936a1ef",
+    "width": 743,
+    "height": 600,
+    "bytes": 1259102,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6bdc5096a3d4/pervye-universitety-02-24-04.png-743.webp",
+        "width": 743,
+        "height": 600,
+        "sha256": "00862df9a88736b0694bde4144895b4e24b9b7599b87203b8b774c41d9ab86d2",
+        "bytes": 563784
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-6bdc5096a3d4-pervye-universitety-02-24-04-15d73f52e4da0f7e6f1309a92760f44dc709f5dfc3d2bac1bc0c22c05936a1ef.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548454",
+      "asset_id": 630548454,
+      "release_tag": "article-originals-1",
+      "sha256": "15d73f52e4da0f7e6f1309a92760f44dc709f5dfc3d2bac1bc0c22c05936a1ef",
+      "bytes": 1259102
+    }
+  },
+  "/assets/images/hm-tt-6bdc5096a3d4/pervye-universitety-02-24-05.png": {
+    "sha256": "0ebe565f3eeadee35087da80dbc5322487dca2e885d84e27254748156a44134a",
+    "width": 499,
+    "height": 705,
+    "bytes": 795011,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6bdc5096a3d4/pervye-universitety-02-24-05.png-499.webp",
+        "width": 499,
+        "height": 705,
+        "sha256": "63ea4b065291e568c8d5188bbd0d2020160cdd6251daa80a080f13cf2a4e84fe",
+        "bytes": 412438
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-6bdc5096a3d4-pervye-universitety-02-24-05-0ebe565f3eeadee35087da80dbc5322487dca2e885d84e27254748156a44134a.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548583",
+      "asset_id": 630548583,
+      "release_tag": "article-originals-0",
+      "sha256": "0ebe565f3eeadee35087da80dbc5322487dca2e885d84e27254748156a44134a",
+      "bytes": 795011
+    }
+  },
+  "/assets/images/hm-tt-6bdc5096a3d4/pervye-universitety-02-24-06.png": {
+    "sha256": "b1e4c05cfa55acae68b24b6314c85367faccd428c910efcc44e438804e37afc4",
+    "width": 3946,
+    "height": 2610,
+    "bytes": 24618633,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6bdc5096a3d4/pervye-universitety-02-24-06.png-960.webp",
+        "width": 960,
+        "height": 635,
+        "sha256": "f70d2309acf9bf047cc66b307b76830e5166183412297c9498f1cada5d79eb03",
+        "bytes": 935860
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-6bdc5096a3d4-pervye-universitety-02-24-06-b1e4c05cfa55acae68b24b6314c85367faccd428c910efcc44e438804e37afc4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548718",
+      "asset_id": 630548718,
+      "release_tag": "article-originals-b",
+      "sha256": "b1e4c05cfa55acae68b24b6314c85367faccd428c910efcc44e438804e37afc4",
+      "bytes": 24618633
+    }
+  }
+}
