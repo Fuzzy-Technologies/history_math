@@ -1,0 +1,102 @@
+{
+  "/assets/images/hm-tt-39b79f166bfd/reforma-obrazovaniya-nachala-01.png": {
+    "sha256": "d9e427b0239265604704e17e384f08fe1ea0bc96aa8c092eee40e766bca5bdcf",
+    "width": 792,
+    "height": 1080,
+    "bytes": 1676868,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-39b79f166bfd/reforma-obrazovaniya-nachala-01.png-792.webp",
+        "width": 792,
+        "height": 1080,
+        "sha256": "299d5df001e8a1caa6656647c3f4bded03c4dfbb3f4822b228f8386f66e0772e",
+        "bytes": 764762
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-tt-39b79f166bfd-reforma-obrazovaniya-nachala-01-d9e427b0239265604704e17e384f08fe1ea0bc96aa8c092eee40e766bca5bdcf.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497405",
+      "asset_id": 630497405,
+      "release_tag": "article-originals-d",
+      "sha256": "d9e427b0239265604704e17e384f08fe1ea0bc96aa8c092eee40e766bca5bdcf",
+      "bytes": 1676868
+    }
+  },
+  "/assets/images/hm-tt-39b79f166bfd/reforma-obrazovaniya-nachala-02.png": {
+    "sha256": "178b1a9b4eaa42552f2cfe3d25a791cd8685a5c211c44879bfab657c042922ce",
+    "width": 1453,
+    "height": 626,
+    "bytes": 1508502,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-39b79f166bfd/reforma-obrazovaniya-nachala-02.png-960.webp",
+        "width": 960,
+        "height": 414,
+        "sha256": "3076b20728bcb2119aaa21211ff51d33a438868b088f04fffa5a0e1090a86e30",
+        "bytes": 409594
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-39b79f166bfd-reforma-obrazovaniya-nachala-02-178b1a9b4eaa42552f2cfe3d25a791cd8685a5c211c44879bfab657c042922ce.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554468",
+      "asset_id": 630554468,
+      "release_tag": "article-originals-1",
+      "sha256": "178b1a9b4eaa42552f2cfe3d25a791cd8685a5c211c44879bfab657c042922ce",
+      "bytes": 1508502
+    }
+  },
+  "/assets/images/hm-tt-39b79f166bfd/reforma-obrazovaniya-nachala-03.png": {
+    "sha256": "6654efbbf8b5dd4f67a09d9aa79fe6790b6f4ba3036e02bf8973aa857afdaea6",
+    "width": 5312,
+    "height": 2988,
+    "bytes": 23717397,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-39b79f166bfd/reforma-obrazovaniya-nachala-03.png-960.webp",
+        "width": 960,
+        "height": 540,
+        "sha256": "3010ac0eb1e5e95503534eefa4497e818929572b50f972d90676000138a65194",
+        "bytes": 603502
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-6/hm-tt-39b79f166bfd-reforma-obrazovaniya-nachala-03-6654efbbf8b5dd4f67a09d9aa79fe6790b6f4ba3036e02bf8973aa857afdaea6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554626",
+      "asset_id": 630554626,
+      "release_tag": "article-originals-6",
+      "sha256": "6654efbbf8b5dd4f67a09d9aa79fe6790b6f4ba3036e02bf8973aa857afdaea6",
+      "bytes": 23717397
+    }
+  },
+  "/assets/images/hm-tt-39b79f166bfd/reforma-obrazovaniya-nachala-04.png": {
+    "sha256": "0bfbf4f57378c656e5fb743d4545e5fa4b76c00427b45134f93d1e4985de4317",
+    "width": 1150,
+    "height": 850,
+    "bytes": 2110111,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-39b79f166bfd/reforma-obrazovaniya-nachala-04.png-960.webp",
+        "width": 960,
+        "height": 710,
+        "sha256": "311352b3ced899a6303d84b3fa99314b3f64e648366e60a252bdafedad5fe4eb",
+        "bytes": 933780
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-39b79f166bfd-reforma-obrazovaniya-nachala-04-0bfbf4f57378c656e5fb743d4545e5fa4b76c00427b45134f93d1e4985de4317.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630554767",
+      "asset_id": 630554767,
+      "release_tag": "article-originals-0",
+      "sha256": "0bfbf4f57378c656e5fb743d4545e5fa4b76c00427b45134f93d1e4985de4317",
+      "bytes": 2110111
+    }
+  }
+}
