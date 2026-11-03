@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-62bd6c96a60a/spravedlivyj-razdel-zemelnyh-01.png": {
+    "sha256": "42b7372241a535e9054dcefbe00eb0659a0f0b592d83b2177fb09bc5de0f12e7",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 1718917,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-62bd6c96a60a/spravedlivyj-razdel-zemelnyh-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "52e3a385b598461a0a27e73ef9ad3e9a4370b6678dd9e4000628249d64b7ee15",
+        "bytes": 685728
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-62bd6c96a60a-spravedlivyj-razdel-zemelnyh-01-42b7372241a535e9054dcefbe00eb0659a0f0b592d83b2177fb09bc5de0f12e7.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549687",
+      "asset_id": 630549687,
+      "release_tag": "article-originals-4",
+      "sha256": "42b7372241a535e9054dcefbe00eb0659a0f0b592d83b2177fb09bc5de0f12e7",
+      "bytes": 1718917
+    }
+  },
+  "/assets/images/hm-tt-62bd6c96a60a/spravedlivyj-razdel-zemelnyh-02.png": {
+    "sha256": "b50b309ef3babd9b67808d7f5f6737275bec2c9fbdcf364d5b93f8d6cbe0da66",
+    "width": 650,
+    "height": 280,
+    "bytes": 50635,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-62bd6c96a60a/spravedlivyj-razdel-zemelnyh-02.png-650.webp",
+        "width": 650,
+        "height": 280,
+        "sha256": "4a1562abc5bc684778223abfbc028876ba33fea074a560c662c9ed68a4fb0eaa",
+        "bytes": 33188
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-62bd6c96a60a-spravedlivyj-razdel-zemelnyh-02-b50b309ef3babd9b67808d7f5f6737275bec2c9fbdcf364d5b93f8d6cbe0da66.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549842",
+      "asset_id": 630549842,
+      "release_tag": "article-originals-b",
+      "sha256": "b50b309ef3babd9b67808d7f5f6737275bec2c9fbdcf364d5b93f8d6cbe0da66",
+      "bytes": 50635
+    }
+  },
+  "/assets/images/hm-tt-62bd6c96a60a/spravedlivyj-razdel-zemelnyh-03.png": {
+    "sha256": "0cff28eec5ed761da8ac77b0f05ba4c1c537f32b08f55e0e2ad9004d4ba15844",
+    "width": 800,
+    "height": 430,
+    "bytes": 131703,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-62bd6c96a60a/spravedlivyj-razdel-zemelnyh-03.png-800.webp",
+        "width": 800,
+        "height": 430,
+        "sha256": "ceafc19b0b5d9af7dec20dbcd4b63254ef309fed048277f64be8e2055c4a8092",
+        "bytes": 78082
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-62bd6c96a60a-spravedlivyj-razdel-zemelnyh-03-0cff28eec5ed761da8ac77b0f05ba4c1c537f32b08f55e0e2ad9004d4ba15844.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630549987",
+      "asset_id": 630549987,
+      "release_tag": "article-originals-0",
+      "sha256": "0cff28eec5ed761da8ac77b0f05ba4c1c537f32b08f55e0e2ad9004d4ba15844",
+      "bytes": 131703
+    }
+  }
+}
