@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-1aa2d2225aeb",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "1f0affdff4a70667014126703681719c94393d509fc21e47af8ef76e845286ed",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "f0619f8a3883f5e7bd3e124f05db423f563e28e2",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/174",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/174#pullrequestreview-5755129556",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed",
+    "review_commit_id": "8227eb01cd10d77fa0a09883e0188a4ee7d79d75"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 7,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-02-25",
+      "url": "https://teletype.in/@history_math/Arifmetika-pifagorejcev-pifagorovy-trojki-02-25"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "bc812a60c9fe2e46a370818fc4b87aa94a165adf21a75c9cec5f2bda44be9786",
+      "description_sha256": "085f8fedc8684f6b66cb691a95165dead768c04a3a6d629f0cd519f5bc66b7e8"
+    }
+  ]
+}
