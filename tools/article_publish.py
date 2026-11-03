@@ -339,7 +339,9 @@ class GitHubAPI:
     def download_digest(self, url, require_cors=False):
         parsed = urlsplit(url)
         allowed = {"github.com", "api.github.com"}
-        if parsed.scheme != "https" or parsed.hostname not in allowed or parsed.username or parsed.password:
+        s3_original = bool(re.fullmatch(
+            re.escape(MEDIA_BASE) + r"/originals/[0-9a-f]{64}/[a-z0-9][a-z0-9.-]*\.(?:png|jpe?g|webp|gif)", url))
+        if parsed.scheme != "https" or (parsed.hostname not in allowed and not s3_original) or parsed.username or parsed.password:
             raise PublishError("Unexpected public original URL")
         cors = [] if require_cors else None
         opener = build_opener(SafeRedirect(cors))

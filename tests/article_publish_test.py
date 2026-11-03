@@ -528,6 +528,37 @@ class ArticlePublishTest(unittest.TestCase):
         self.assertFalse(api.public_api_binary_verified)
         self.assertEqual(api.verified_s3_originals[LOGICAL]["sha256"], ORIGINAL_SHA)
 
+    def test_real_s3_verifier_streams_exact_bucket_original_without_credentials(self):
+        api = ExistingAssetAPI()
+        api.asset = None
+        api.download_digest = publisher.GitHubAPI.download_digest.__get__(api)
+        entry = sample_manifest()[LOGICAL] | {"external_original": descriptor()}
+        expected = f"{publisher.MEDIA_BASE}/originals/{ORIGINAL_SHA}/figure-01.png"
+        response = io.BytesIO(ORIGINAL)
+        opener = unittest.mock.Mock()
+        opener.open.return_value = response
+        with patch.object(publisher, "build_opener", return_value=opener):
+            self.assertEqual(api.ensure_original(ARTICLE, LOGICAL, entry, None, MASTER), descriptor())
+        request = opener.open.call_args.args[0]
+        self.assertEqual(request.full_url, expected)
+        self.assertIsNone(request.get_header("Authorization"))
+        self.assertEqual(api.uploads, [])
+        self.assertEqual(api.verified_s3_originals[LOGICAL]["sha256"], ORIGINAL_SHA)
+
+    def test_s3_verifier_rejects_foreign_or_noncanonical_original_urls_before_network(self):
+        api = ExistingAssetAPI()
+        api.download_digest = publisher.GitHubAPI.download_digest.__get__(api)
+        url = f"{publisher.MEDIA_BASE}/originals/{ORIGINAL_SHA}/figure-01.png"
+        for candidate in [url.replace("https:", "http:"), url.replace("media-kz", "foreign"),
+                          url.replace(".kz/", ".kz.evil.example/"), url.replace("/originals/", "/other/"),
+                          url + "?other=1", url + "#fragment", url.replace("/figure-01", "/../figure-01"),
+                          url.replace(ORIGINAL_SHA, "invalid"), url.replace("https://", "https://user@"),
+                          url.replace(".kz/", ".kz:443/")]:
+            with self.subTest(url=candidate), patch.object(publisher, "build_opener") as opener:
+                with self.assertRaisesRegex(publisher.PublishError, "Unexpected public original URL"):
+                    api.download_digest(candidate)
+                opener.assert_not_called()
+
     def test_s3_preparation_receipt_preserves_provenance_without_claiming_api_probe(self):
         class MigratedAPI(MemoryAPI):
             ensure_original = publisher.GitHubAPI.ensure_original
