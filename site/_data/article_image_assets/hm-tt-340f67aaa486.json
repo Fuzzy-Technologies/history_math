@@ -1,0 +1,52 @@
+{
+  "/assets/images/hm-tt-340f67aaa486/gistogramma-12-07-01.png": {
+    "sha256": "4faeabb4b66e502cc4ebc49ef4ec42bd165c90eeb151869115642b8a08dbb5e4",
+    "width": 575,
+    "height": 575,
+    "bytes": 12055,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-340f67aaa486/gistogramma-12-07-01.png-575.webp",
+        "width": 575,
+        "height": 575,
+        "sha256": "6062f98b0f1abd9c216f10f35f49fd7d4d2c7a2e8f7a4f4d4c50f7b661b29737",
+        "bytes": 3984
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-340f67aaa486-gistogramma-12-07-01-4faeabb4b66e502cc4ebc49ef4ec42bd165c90eeb151869115642b8a08dbb5e4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630502865",
+      "asset_id": 630502865,
+      "release_tag": "article-originals-4",
+      "sha256": "4faeabb4b66e502cc4ebc49ef4ec42bd165c90eeb151869115642b8a08dbb5e4",
+      "bytes": 12055
+    }
+  },
+  "/assets/images/hm-tt-340f67aaa486/gistogramma-12-07-02.png": {
+    "sha256": "c0480cff868f368ba9201adc53a189edb3bc24a9e6b2893c495f3231a1bdbd36",
+    "width": 1145,
+    "height": 575,
+    "bytes": 40622,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-340f67aaa486/gistogramma-12-07-02.png-960.webp",
+        "width": 960,
+        "height": 482,
+        "sha256": "9ce5712e16651a5fd45c281e74d1fa956c12076c70a8291870da3e0ab79180eb",
+        "bytes": 54752
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-c/hm-tt-340f67aaa486-gistogramma-12-07-02-c0480cff868f368ba9201adc53a189edb3bc24a9e6b2893c495f3231a1bdbd36.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630548043",
+      "asset_id": 630548043,
+      "release_tag": "article-originals-c",
+      "sha256": "c0480cff868f368ba9201adc53a189edb3bc24a9e6b2893c495f3231a1bdbd36",
+      "bytes": 40622
+    }
+  }
+}

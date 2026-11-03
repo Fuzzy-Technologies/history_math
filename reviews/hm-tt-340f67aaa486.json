@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-340f67aaa486",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "632a3310a99d8ead025f62edd1779bafaf861e80980534cab3c62cd4efd939f0",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "c69762a038dc5d8e0af190cd04c3e78dab55ed3e",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/192",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/192#issuecomment-6599875763",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 2,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-12-07",
+      "url": "https://teletype.in/@history_math/Gistogramma-12-07"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "f79156761799824acd45dd69f4192ae6192e944c82847a513760e09174c5c1c7",
+      "description_sha256": "3ce27a590a644fbd5a5f9e2b8e3d14618bd749676787bf50a323b9f36b252323"
+    }
+  ]
+}
