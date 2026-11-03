@@ -43,6 +43,11 @@ gates. After validating article sources, JPEG preparation and upload-only
 preflight ensure current originals exist in S3 before rendering or browser
 checks. Migrated PDFs are not recopied; existing originals receive metadata
 checks and only missing objects are uploaded. Preflight never deletes files.
+Its receipt lists only newly copied objects, so the native-download smoke check
+fills each absent kind from the deployed public manifest. A newly copied image
+does not imply that a PDF is present in the preflight receipt. Both selected
+objects must have verified identities, and both downloads are checked byte for
+byte against their recorded SHA-256 and size.
 After producing validated PDFs, the
 final publication step:
 

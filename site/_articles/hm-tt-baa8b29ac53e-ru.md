@@ -12,7 +12,6 @@ translation_key: hm-tt-baa8b29ac53e
 description: "Каюм Насыри развивал светское образование татар, создавал учебники арифметики и геометрии и научную терминологию на родном языке. Его педагогическая и просветительская работа раскрывается на фоне школьных реформ и общественного сопротивления."
 type: essay
 tags:
-- Персоналии
 - Насыри
 - Краеведение
 - Просветители
@@ -144,7 +143,6 @@ figures:
   source_url: https://img2.teletype.in/files/90/e2/90e2d01f-9541-47ce-9b98-7a227dccf299.png
 preview_image: /assets/images/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-01.png
 cover_image: /assets/images/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-01.png
-series: Персоналии
 ---
 {% include article-figure.html id="fig-1" %}
 

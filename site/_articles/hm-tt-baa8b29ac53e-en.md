@@ -12,7 +12,6 @@ translation_key: hm-tt-baa8b29ac53e
 description: "Kayum Nasyri advanced secular Tatar education, writing arithmetic and geometry textbooks and developing scientific terminology in his native language. His teaching and educational work unfold against a background of school reforms and public resistance."
 type: essay
 tags:
-- People
 - Nasyri
 - Local history
 - Educators
@@ -144,7 +143,6 @@ figures:
   source_url: https://img2.teletype.in/files/90/e2/90e2d01f-9541-47ce-9b98-7a227dccf299.png
 preview_image: /assets/images/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-01.png
 cover_image: /assets/images/hm-tt-baa8b29ac53e/vsyu-svoyu-zhizn-posvyatil-n-01.png
-series: People
 ---
 {% include article-figure.html id="fig-1" %}
 
