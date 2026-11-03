@@ -5,7 +5,7 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "b6641e33927b8272c8943d49ec913f88cdaad3ceebd7d41aaf31f3501751ee00",
+    "package_sha256": "c78f5160264cb14419c296946a30854dfd0e0e940db7827602ff893a3c71b965",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Оставляем как есть, мержим.",
@@ -34,6 +34,13 @@
       "previous_description_sha256": "0e3b42abe6ec01e7acb193728825b937815faf9d3affc77960839237f95e03bb",
       "description_sha256": "30e2ac6d91f78c1e67dc846c287db6e27e5f6a478b191e1532e97f291da3cd28",
       "previous_package_sha256": "32e4758ec769a5ff6b75e8778474397e3f49a9222c95081a2ef50cc560f67ec7"
+    },
+    {
+      "date": "2026-11-03",
+      "scope": "classification tags and series only",
+      "authority": "Direct owner instruction in ChatGPT: this is an article, not a person entry; remove it from the People block in both languages.",
+      "source_commit": "20a257ec40cf70074925a8d994278acaf866e446",
+      "previous_package_sha256": "b6641e33927b8272c8943d49ec913f88cdaad3ceebd7d41aaf31f3501751ee00"
     }
   ]
 }

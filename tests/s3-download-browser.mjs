@@ -2,28 +2,24 @@ import assert from 'node:assert/strict';
 import {createServer} from 'node:http';
 import {readFile} from 'node:fs/promises';
 import {chromium} from 'playwright';
-import {validateObject, assertBytes, readWithRetries, responseBytes} from '../scripts/s3-media.mjs';
+import {assertBytes, readWithRetries, responseBytes} from '../scripts/s3-media.mjs';
 import {attachmentRequestFailure, unexpectedAttachmentFailures} from './request-failures.mjs';
+import {attachmentSmokeObjects, missingAttachmentKinds} from './s3-attachment-receipts.mjs';
 
-let receipt = JSON.parse(await readFile('test-results/media-backfill/receipt.json', 'utf8'));
-if (!receipt.objects?.length) {
+const receipt = JSON.parse(await readFile('test-results/media-backfill/receipt.json', 'utf8'));
+let published;
+if (missingAttachmentKinds(receipt).length) {
   const origin = process.env.PAGES_ORIGIN, base = process.env.PAGES_BASE_PATH || '';
   assert.ok(['https://history-math.org', 'https://fuzzy-technologies.github.io'].includes(origin));
   assert.ok(['', '/history_math'].includes(base));
-  receipt = await readWithRetries('published attachment smoke receipt', async () => {
+  published = await readWithRetries('published attachment smoke receipt', async () => {
     const response = await fetch(origin + base + '/assets/publication-media.json',
       {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(30_000)});
     if (!response.ok) await responseBytes(response, 0);
     return response.json();
   });
 }
-assert.equal(receipt.version, 1);
-assert.ok(Array.isArray(receipt.objects));
-const objects = ['originals/', 'pdf/'].map(prefix => {
-  const item = receipt.objects.find(value => value.key?.startsWith(prefix));
-  assert.equal(item?.verified, true);
-  return validateObject(item);
-});
+const objects = attachmentSmokeObjects(receipt, published);
 const server = createServer((request, response) => {
   if (request.url !== '/') { response.writeHead(404).end(); return; }
   response.setHeader('Content-Type', 'text/html; charset=utf-8');
@@ -35,6 +31,7 @@ let browser;
 try {
   browser = await chromium.launch({executablePath: process.env.BROWSER_EXECUTABLE || undefined});
   const page = await browser.newPage(), failures = [], errors = [], verifiedDownloads = new Set();
+  page.setDefaultTimeout(120_000);
   page.on('requestfailed', request => failures.push(attachmentRequestFailure(request)));
   page.on('pageerror', error => errors.push(error.message));
   page.on('response', response => { if (response.status() >= 400) errors.push(`${response.status()} ${response.url()}`); });
