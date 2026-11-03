@@ -1,0 +1,66 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-46f394866e94-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "bdb3d64454568a6943d12ebaf47c9fec43f5b5a9999e8a4fa334e1ba01a27e27",
+    "evidence_type": "owner_chat_instruction",
+    "authority": "Direct owner approval of the current bilingual PR201 package, including the requested Roger Bacon portrait and captions, in ChatGPT on 2026-11-03.",
+    "source_commit": "efed68f89903b8750790cfeab7155d556efb056e",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/201",
+    "source_message": "201 одобряю на мерж тоже- и не забудь померять ci-тесты на мерж!"
+  },
+  "questions": [
+    {
+      "id": "newton-first-edition",
+      "question": "Figure 11 dates the first edition of Newton’s Principia to 1686. Should this be distinguished from the first publication date of 1687? The source caption is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual package for merging in ChatGPT on 2026-11-03, following his explicit portrait correction and instruction to preserve the mathematical map. No historical answer has been invented."
+    },
+    {
+      "id": "bacon-quotation-attribution",
+      "question": "The quotation about knowing mathematics is placed beside a portrait of Francis Bacon. Should its attribution be verified, particularly whether Roger Bacon is intended? The original quotation and figure placement are retained.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "The owner supplied the correct Roger Bacon portrait and caption on 2026-11-03; both language versions now use that original and a newly generated reading WebP."
+    },
+    {
+      "id": "newton-life-dates",
+      "question": "Figure 10 dates Newton to 1642–1726. Should the calendar convention be stated, since modern Gregorian dates are often given as 1643–1727? The original dates are retained.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "The owner approved the current bilingual package for merging in ChatGPT on 2026-11-03, following his explicit portrait correction and instruction to preserve the mathematical map. No historical answer has been invented."
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 11,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-11-14",
+      "url": "https://teletype.in/@history_math/What-is-Math"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "c16bc914b4baff3e699f47bbd4db6ef7fb9fc486e017f6a8a7ac043b5584e065",
+      "description_sha256": "89a96ebb9c39b6e8f07c7c75f3e07f16af01d939ed2e742c51bf848ea856902e"
+    },
+    {
+      "date": "2026-11-03",
+      "scope": "Figure 3 portrait, reading WebP, caption and provenance only; mathematical map unchanged",
+      "authority": "Direct owner instruction in ChatGPT, with the exact supplied Roger_Bacon.jpeg and Russian caption.",
+      "source_commit": "b4d9052f83b9dd170b6c5ee4923c3c39df1225ed",
+      "original_image_sha256": "490957515d2f4d58bf94c4a5b7227f315b445b12fe3699995872a3c0141f1f3d"
+    }
+  ]
+}
