@@ -1,0 +1,52 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-9c6b66f64c63-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "6901e4a612371ea813328ce7a1faa09122ba5848f98059234325464c38f0205c",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "978aa1361a33a4e0193f46f028c3bb39190f13fc",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/171",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/171#pullrequestreview-5755214014",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed",
+    "review_commit_id": "21c38c7e163833a7819a3a8cc14eaf8817996c2b"
+  },
+  "questions": [
+    {
+      "id": "dieulefit-caption-place",
+      "question": "The figure-2 caption names “Delphi (Dieulefit)”. Please confirm that the Russian place-name should be Dieulefit, France, rather than Delphi. Both forms are retained in the English caption.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/171#pullrequestreview-5755214014"
+    },
+    {
+      "id": "bourbaki-foundations-notation",
+      "question": "Please verify the precise axiomatic foundation described as Zermelo–Fraenkel in Bernays and Gödel’s development, and the collective first-introduction claim for N, Z, Q, R, C. The source statements are preserved.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/171#pullrequestreview-5755214014"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-04-06",
+      "url": "https://teletype.in/@history_math/Burbaki-04-06"
+    }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "e4d92f93e77879b9bf56a1037d54755530b62ebd70768f35243869b93ff7c504",
+      "description_sha256": "60a8144b82c569f713233ee08d9561eb444fd1080ba8879c01e2865af038e31e"
+    }
+  ]
+}
