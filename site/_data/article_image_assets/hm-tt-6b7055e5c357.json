@@ -1,0 +1,102 @@
+{
+  "/assets/images/hm-tt-6b7055e5c357/matematika-v-rossijskoj-akad-01.png": {
+    "sha256": "1a97dba4e01a0d90f06fc03863e376a50a80e0ff9fe35b9832bd75224768ac1c",
+    "width": 4200,
+    "height": 2780,
+    "bytes": 22900028,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6b7055e5c357/matematika-v-rossijskoj-akad-01.png-960.webp",
+        "width": 960,
+        "height": 635,
+        "sha256": "186f6dea1532fbcf93ec372974a1ca649636e8ae9afe50367b4bfec5d8fc0d12",
+        "bytes": 769238
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-1/hm-tt-6b7055e5c357-matematika-v-rossijskoj-akad-01-1a97dba4e01a0d90f06fc03863e376a50a80e0ff9fe35b9832bd75224768ac1c.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497651",
+      "asset_id": 630497651,
+      "release_tag": "article-originals-1",
+      "sha256": "1a97dba4e01a0d90f06fc03863e376a50a80e0ff9fe35b9832bd75224768ac1c",
+      "bytes": 22900028
+    }
+  },
+  "/assets/images/hm-tt-6b7055e5c357/matematika-v-rossijskoj-akad-02.png": {
+    "sha256": "4c668bd24cc771df927287b884920ff137a0f3fba8d588e31d92397b5bb083a0",
+    "width": 4971,
+    "height": 2992,
+    "bytes": 24703320,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6b7055e5c357/matematika-v-rossijskoj-akad-02.png-960.webp",
+        "width": 960,
+        "height": 578,
+        "sha256": "e2d96d5f401be239973cd8dcb411b5c5a8e7696885df652d9d2f8ac666efc3a2",
+        "bytes": 565624
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-4/hm-tt-6b7055e5c357-matematika-v-rossijskoj-akad-02-4c668bd24cc771df927287b884920ff137a0f3fba8d588e31d92397b5bb083a0.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553328",
+      "asset_id": 630553328,
+      "release_tag": "article-originals-4",
+      "sha256": "4c668bd24cc771df927287b884920ff137a0f3fba8d588e31d92397b5bb083a0",
+      "bytes": 24703320
+    }
+  },
+  "/assets/images/hm-tt-6b7055e5c357/matematika-v-rossijskoj-akad-03.png": {
+    "sha256": "bed52585d1237d7e844c010ef1944536d81e002491f1f90774f30a7021ed5005",
+    "width": 597,
+    "height": 800,
+    "bytes": 1247699,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6b7055e5c357/matematika-v-rossijskoj-akad-03.png-597.webp",
+        "width": 597,
+        "height": 800,
+        "sha256": "a99055c4a0304ab5473d4a7185d2b41a7875bcd5f657e4bad8ac22760e550a96",
+        "bytes": 709368
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-b/hm-tt-6b7055e5c357-matematika-v-rossijskoj-akad-03-bed52585d1237d7e844c010ef1944536d81e002491f1f90774f30a7021ed5005.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553477",
+      "asset_id": 630553477,
+      "release_tag": "article-originals-b",
+      "sha256": "bed52585d1237d7e844c010ef1944536d81e002491f1f90774f30a7021ed5005",
+      "bytes": 1247699
+    }
+  },
+  "/assets/images/hm-tt-6b7055e5c357/matematika-v-rossijskoj-akad-04.png": {
+    "sha256": "79b3a25ca9744ca56607010d82dc22f018018ee1a658a2f3dd3c0c97d2f6d68e",
+    "width": 4032,
+    "height": 3024,
+    "bytes": 19788744,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-6b7055e5c357/matematika-v-rossijskoj-akad-04.png-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "ecc26b6266b01bd52371b10ab79ef7745582ab7a82ed151c5e51364a7e8c7a35",
+        "bytes": 705828
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-7/hm-tt-6b7055e5c357-matematika-v-rossijskoj-akad-04-79b3a25ca9744ca56607010d82dc22f018018ee1a658a2f3dd3c0c97d2f6d68e.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630553617",
+      "asset_id": 630553617,
+      "release_tag": "article-originals-7",
+      "sha256": "79b3a25ca9744ca56607010d82dc22f018018ee1a658a2f3dd3c0c97d2f6d68e",
+      "bytes": 19788744
+    }
+  }
+}
