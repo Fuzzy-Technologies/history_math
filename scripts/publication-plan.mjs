@@ -21,23 +21,43 @@ export function publicationPlan(paths, articleIds = []) {
   return {fullChecks, reason: fullChecks ? 'Site code, layout, pages or unclassified files changed' : 'Article content/assets or documentation only'};
 }
 
-export function latestPublishedRevision(runs) {
-  return [...runs].filter(run => run.status === 'completed' && run.conclusion === 'success' &&
+export function completedPublications(runs) {
+  return [...runs].filter(run => run.status === 'completed' && Number.isSafeInteger(run.id) && run.id > 0 &&
     run.head_branch === 'master' && ['push', 'workflow_dispatch'].includes(run.event) &&
     run.path === '.github/workflows/deploy.yml' && shaPattern.test(run.head_sha || ''))
-    .sort((a, b) => String(b.created_at).localeCompare(String(a.created_at)))[0]?.head_sha;
+    .sort((a, b) => String(b.created_at).localeCompare(String(a.created_at)) || b.id - a.id);
+}
+
+export function successfulDeployment(data, runId) {
+  if (!Array.isArray(data?.jobs) || !Number.isSafeInteger(data.total_count) || data.total_count !== data.jobs.length) return false;
+  return ['build', 'deploy'].every(name => {
+    const matches = data.jobs.filter(job => job.name === name);
+    return matches.length === 1 && matches[0].run_id === runId &&
+      matches[0].status === 'completed' && matches[0].conclusion === 'success';
+  });
 }
 
 export async function deployedRevision(repository, token, request = fetch) {
   if (!/^[\w.-]+\/[\w.-]+$/.test(repository || '') || !token) return undefined;
   try {
-    const response = await request(`https://api.github.com/repos/${repository}/actions/workflows/deploy.yml/runs?branch=master&status=success&per_page=10`, {
+    const get = async path => {
+      const response = await request(`https://api.github.com/repos/${repository}/${path}`, {
       headers: {Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28'},
       signal: AbortSignal.timeout(15000)
-    });
-    if (!response.ok) return undefined;
-    const data = await response.json();
-    return Array.isArray(data.workflow_runs) ? latestPublishedRevision(data.workflow_runs) : undefined;
+      });
+      if (!response.ok) throw new Error('Publication history unavailable');
+      return response.json();
+    };
+    // Cleanup may fail after Pages deployed successfully. Inspect the actual
+    // latest-attempt build/deploy jobs, rather than the overall workflow result.
+    const data = await get('actions/workflows/deploy.yml/runs?branch=master&status=completed&per_page=30');
+    if (!Array.isArray(data.workflow_runs)) return undefined;
+    for (const run of completedPublications(data.workflow_runs).slice(0, 30)) {
+      const jobs = await get(`actions/runs/${run.id}/jobs?filter=latest&per_page=100`);
+      if (!Array.isArray(jobs.jobs) || !Number.isSafeInteger(jobs.total_count) || jobs.total_count !== jobs.jobs.length) return undefined;
+      if (successfulDeployment(jobs, run.id)) return run.head_sha;
+    }
+    return undefined;
   } catch { return undefined; }
 }
 

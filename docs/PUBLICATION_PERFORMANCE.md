@@ -6,6 +6,8 @@
 
 PR checks compare with the PR base. Master publication compares with the most recent **successful deployment** of `deploy.yml` on `master`, rather than the immediately preceding commit. An unpublished layout change therefore remains subject to browser checks even if the next push contains only an article. Only successful ancestor revisions qualify.
 
+The comparison verifies successful `build` and `deploy` jobs in the latest attempt of a completed master publication. A later cleanup failure or cancellation does not undo that deployment and must not restart the full browser gate for the next article. Failed or skipped deployments never qualify. The lookup examines at most 30 recent completed publication runs; unavailable, malformed or incomplete history retains the full gate.
+
 Every content publication retains Markdown, schema, editorial approval/digest and image metadata/hash checks, the configured Pages Jekyll build, incremental PDF generation, and standard-library output validation. It does not rebuild the separate reference site or run unrelated unit/browser suites. Chromium is still installed as the existing PDF rendering engine; this is not a browser regression run. PDF format, generation and storage are unchanged.
 
 Code/layout publications additionally run the full source, rendering and browser contracts, including the reference project path and configured Pages domain. Feature PRs still do not render websites or generate PDFs. The first publication of this pipeline change itself uses the full gate.
