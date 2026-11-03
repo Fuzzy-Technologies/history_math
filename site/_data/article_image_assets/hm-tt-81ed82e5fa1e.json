@@ -1,0 +1,152 @@
+{
+  "/assets/images/hm-tt-81ed82e5fa1e/binoculars-01.jpeg": {
+    "sha256": "f2e40c6d5df87cfcdb7b48b6645c0ee6fdc62b292b53516c733b22a8773400ce",
+    "width": 700,
+    "height": 700,
+    "bytes": 85885,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-81ed82e5fa1e/binoculars-01-700.jpeg",
+        "width": 700,
+        "height": 700,
+        "bytes": 85885,
+        "sha256": "f2e40c6d5df87cfcdb7b48b6645c0ee6fdc62b292b53516c733b22a8773400ce"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-81ed82e5fa1e-binoculars-01-f2e40c6d5df87cfcdb7b48b6645c0ee6fdc62b292b53516c733b22a8773400ce.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630496587",
+      "asset_id": 630496587,
+      "release_tag": "article-originals-f",
+      "sha256": "f2e40c6d5df87cfcdb7b48b6645c0ee6fdc62b292b53516c733b22a8773400ce",
+      "bytes": 85885
+    }
+  },
+  "/assets/images/hm-tt-81ed82e5fa1e/binoculars-02.png": {
+    "sha256": "26daad0aa8200dcbb6990a695bb63ea5a9efac042353f5766c1b918190d9c360",
+    "width": 1047,
+    "height": 254,
+    "bytes": 20169,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-81ed82e5fa1e/binoculars-02.png-960.webp",
+        "width": 960,
+        "height": 233,
+        "sha256": "c87bc7f25759748acbcdde6a5706a5d8a367a290d785b3197410b6919b16f537",
+        "bytes": 17210
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-81ed82e5fa1e-binoculars-02-26daad0aa8200dcbb6990a695bb63ea5a9efac042353f5766c1b918190d9c360.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630537856",
+      "asset_id": 630537856,
+      "release_tag": "article-originals-2",
+      "sha256": "26daad0aa8200dcbb6990a695bb63ea5a9efac042353f5766c1b918190d9c360",
+      "bytes": 20169
+    }
+  },
+  "/assets/images/hm-tt-81ed82e5fa1e/binoculars-03.jpeg": {
+    "sha256": "8dca2daf7233657428d11986223ad72818683021bdcc264d1c3dec8e703ae1ee",
+    "width": 692,
+    "height": 392,
+    "bytes": 33674,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-81ed82e5fa1e/binoculars-03-692.jpeg",
+        "width": 692,
+        "height": 392,
+        "bytes": 33674,
+        "sha256": "8dca2daf7233657428d11986223ad72818683021bdcc264d1c3dec8e703ae1ee"
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-81ed82e5fa1e-binoculars-03-8dca2daf7233657428d11986223ad72818683021bdcc264d1c3dec8e703ae1ee.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630538024",
+      "asset_id": 630538024,
+      "release_tag": "article-originals-8",
+      "sha256": "8dca2daf7233657428d11986223ad72818683021bdcc264d1c3dec8e703ae1ee",
+      "bytes": 33674
+    }
+  },
+  "/assets/images/hm-tt-81ed82e5fa1e/binoculars-04.png": {
+    "sha256": "f822299e007e8e4aa5d98504e2f6cdad780d9dc5ea62815a1674e76c4ae0cfe4",
+    "width": 488,
+    "height": 488,
+    "bytes": 491958,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-81ed82e5fa1e/binoculars-04.png-488.webp",
+        "width": 488,
+        "height": 488,
+        "sha256": "e5a423ebc0305b199af6764b141a23222084a2c586b9359347522ac0ae69fc85",
+        "bytes": 300278
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-tt-81ed82e5fa1e-binoculars-04-f822299e007e8e4aa5d98504e2f6cdad780d9dc5ea62815a1674e76c4ae0cfe4.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630538159",
+      "asset_id": 630538159,
+      "release_tag": "article-originals-f",
+      "sha256": "f822299e007e8e4aa5d98504e2f6cdad780d9dc5ea62815a1674e76c4ae0cfe4",
+      "bytes": 491958
+    }
+  },
+  "/assets/images/hm-tt-81ed82e5fa1e/binoculars-05.png": {
+    "sha256": "a3fe60c082064bd4344ac8603c271163a49ab3894e1b74d9a8e3b83da7a85412",
+    "width": 1500,
+    "height": 1500,
+    "bytes": 367254,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-81ed82e5fa1e/binoculars-05.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "e6a3f66d1b705eea3995759516a59adefa137674c17d75886c3e23afe026080f",
+        "bytes": 119060
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-tt-81ed82e5fa1e-binoculars-05-a3fe60c082064bd4344ac8603c271163a49ab3894e1b74d9a8e3b83da7a85412.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630538337",
+      "asset_id": 630538337,
+      "release_tag": "article-originals-a",
+      "sha256": "a3fe60c082064bd4344ac8603c271163a49ab3894e1b74d9a8e3b83da7a85412",
+      "bytes": 367254
+    }
+  },
+  "/assets/images/hm-tt-81ed82e5fa1e/binoculars-06.png": {
+    "sha256": "828e25173ea84af7a7da8dab3bbb85d35e1bdda262769b72436cac0d65fc0fd8",
+    "width": 800,
+    "height": 444,
+    "bytes": 92725,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-81ed82e5fa1e/binoculars-06.png-800.webp",
+        "width": 800,
+        "height": 444,
+        "sha256": "115220d3d77d9a6ce95bf5c040cefc29541aeec769a018eaa3efa107e4b9567e",
+        "bytes": 54850
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-8/hm-tt-81ed82e5fa1e-binoculars-06-828e25173ea84af7a7da8dab3bbb85d35e1bdda262769b72436cac0d65fc0fd8.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630538540",
+      "asset_id": 630538540,
+      "release_tag": "article-originals-8",
+      "sha256": "828e25173ea84af7a7da8dab3bbb85d35e1bdda262769b72436cac0d65fc0fd8",
+      "bytes": 92725
+    }
+  }
+}
