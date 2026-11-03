@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-425a55816516",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "1ebeecd333cf07ff27e87245c8c035660027053ea7898c69e134f04a23f67cfe",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "295671987724a02b49e90e97125bc66b54a27872",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/191",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/191#pullrequestreview-5749803511",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed",
+    "review_commit_id": "160eef9554d7dbb7e02073a9ef74825a76afad58"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-12-08",
+      "url": "https://teletype.in/@history_math/Dinastiya-Bernulli-12-08"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "8cc59b47adf1ac1fa3d67bb159d5f4e6eec37b0ea67247f4a812ca332e07f6a8",
+      "description_sha256": "8480dd5ea299a8557cc2643d3ce11dd41399c15cb360d153051a56e586293e9d"
+    }
+  ]
+}

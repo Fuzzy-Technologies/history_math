@@ -1,0 +1,52 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-425a55816516-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "2286ecd755c6f1d032d3c0a115d72a3b8f9254d413455fb7680d16b6b370ab0d",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "295671987724a02b49e90e97125bc66b54a27872",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/191",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/191#pullrequestreview-5749803511",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed",
+    "review_commit_id": "160eef9554d7dbb7e02073a9ef74825a76afad58"
+  },
+  "questions": [
+    {
+      "id": "jacob-teacher-pupil-direction",
+      "question": "The source calls Jacob a pupil of Johann, Nicholas I and Paul Euler, although it may intend to say their teacher. Please confirm the intended relationship. The English retains the literal pupil claim.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/191#pullrequestreview-5749803511"
+    },
+    {
+      "id": "bernoulli-eponyms-attribution",
+      "question": "The source attributes every mathematical item in the first eponym list, including Bernoulli’s differential equation, to Jacob. Please verify whether this needs individual attribution, particularly to Johann. The supplied attribution is preserved.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/191#pullrequestreview-5749803511"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation prepared from the complete Russian article in source order. All paragraphs, lists, notes, mathematical expressions, dates, numbers, links and figure placements retained. Metadata and illustration text translated; scientific and editorial approval remains pending.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2023-12-08",
+      "url": "https://teletype.in/@history_math/Dinastiya-Bernulli-12-08"
+    }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "00d11ca72b52a14d1b7dc492c26218d5c2fdd04536467cf2f207cf2c221061aa",
+      "description_sha256": "88837d2ebc8a9c28c37047fecd7fdf99b6760956986ea740f8fb0a6b2cfa39f0"
+    }
+  ]
+}
