@@ -1,0 +1,48 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-e3b5f5408303-en",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "65dd0210216ddffeb29cfe5de9a042906886af547542aafd013cb2a5aeb331ed",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "d3c64c2ffb23e04c211da4717eab2084683fa610",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/188",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/188#pullrequestreview-5750020371",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed",
+    "review_commit_id": "9adb1e93ab93104e113b8377e924e687fee63397"
+  },
+  "questions": [
+    {
+      "id": "quoted-money-word",
+      "question": "The Gleyzer quotation says percentages were used in commercial and monetary “references” (ссылках), an unusual phrase that may be a transcription error for transactions. Which wording is intended? The source wording is retained.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "The owner reviewed the bilingual package and authorized publication of its current wording in ChatGPT on 2026-11-03. Review evidence: https://github.com/Fuzzy-Technologies/history_math/pull/188#pullrequestreview-5750020371"
+    }
+  ],
+  "reconciliation": {
+    "text": "Complete English adaptation, read and proofread against the complete canonical Russian article and its figure records. Source paragraphs, notes, bibliography, literal mathematical expressions, links, anchors, figure order and publication dates retained. Editorial publication approval remains pending.",
+    "figures": 4,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-01-06",
+      "url": "https://teletype.in/@history_math/Procenty-01-06"
+    }
+  },
+  "manual_changes": [
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "664ac2bf03b86e902310af169dddc02a94c617a57ba66a606b73fa7567966e90",
+      "description_sha256": "42eaa15e84f45612528f0bd41a7816ce3aa370825f30082cae5188fdd230805d"
+    }
+  ]
+}
