@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-b927650527bc",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "e218c1a01e861ea93aa4e4c02118f0f86b7a5a59415b31706a60474010f5d71b",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "e898b5ea74bdcba7f8e9a3956a6c6defd9962cfd",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/102",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/102#pullrequestreview-5756085971",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed",
+    "review_commit_id": "8bd7240a11b1ad570fbc9d63b25486706017e262"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 1,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2025-03-09",
+      "url": "https://teletype.in/@history_math/The-Cattle-Problem-of-Archimedes"
+    }
+  },
+  "manual_changes": [
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "d36cb65409c4d73a630afa4075b66713fe31f48b4e93c17745c9d33ec93308c0",
+      "description_sha256": "23aa7a509d2d7a2a6c6472bcfcbc575197d3a0a2074022b5fa8d12f15e948c94"
+    }
+  ]
+}

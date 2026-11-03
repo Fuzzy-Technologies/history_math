@@ -1,0 +1,27 @@
+{
+  "/assets/images/hm-tt-b927650527bc/the-cattle-problem-of-archim-01.jpeg": {
+    "sha256": "3ef3fff1b8a329dca393044e60d2f95814d117dc2fd0ee6bdce0941b5b33fdec",
+    "width": 2357,
+    "height": 1768,
+    "bytes": 1391711,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-b927650527bc/the-cattle-problem-of-archim-01.jpeg-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "37eb7ad5c7012ce54704982c8267eb4f0a534239fe048a4342376f9785269a41",
+        "bytes": 1172366
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-b927650527bc-the-cattle-problem-of-archim-01-3ef3fff1b8a329dca393044e60d2f95814d117dc2fd0ee6bdce0941b5b33fdec.jpeg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497890",
+      "asset_id": 630497890,
+      "release_tag": "article-originals-3",
+      "sha256": "3ef3fff1b8a329dca393044e60d2f95814d117dc2fd0ee6bdce0941b5b33fdec",
+      "bytes": 1391711
+    }
+  }
+}
