@@ -1,0 +1,77 @@
+{
+  "/assets/images/hm-tt-468f6986bcb1/yakob-bernulli-neveroyatnye-01.png": {
+    "sha256": "06a0d495e8b12f37614f939d587986fd6f096ba1118db44c57be072792a88a3f",
+    "width": 2000,
+    "height": 2338,
+    "bytes": 7071195,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-468f6986bcb1/yakob-bernulli-neveroyatnye-01.png-960.webp",
+        "width": 960,
+        "height": 1122,
+        "sha256": "af163ddac2398c30f38e138be42da39d1dc29b3184005fa6cbcfbc4f208c7d99",
+        "bytes": 1017530
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-0/hm-tt-468f6986bcb1-yakob-bernulli-neveroyatnye-01-06a0d495e8b12f37614f939d587986fd6f096ba1118db44c57be072792a88a3f.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630497711",
+      "asset_id": 630497711,
+      "release_tag": "article-originals-0",
+      "sha256": "06a0d495e8b12f37614f939d587986fd6f096ba1118db44c57be072792a88a3f",
+      "bytes": 7071195
+    }
+  },
+  "/assets/images/hm-tt-468f6986bcb1/yakob-bernulli-neveroyatnye-02.png": {
+    "sha256": "3e8eb5b538bd4fdb94e6beef737c3bc1164b2eab7780a97e96eef967bd49e9f6",
+    "width": 1776,
+    "height": 757,
+    "bytes": 3159870,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-468f6986bcb1/yakob-bernulli-neveroyatnye-02.png-960.webp",
+        "width": 960,
+        "height": 409,
+        "sha256": "a1ff1135bde15d78d9fb341cdcd89c749d1034eebcffdaae029bfce536f884ff",
+        "bytes": 533092
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-3/hm-tt-468f6986bcb1-yakob-bernulli-neveroyatnye-02-3e8eb5b538bd4fdb94e6beef737c3bc1164b2eab7780a97e96eef967bd49e9f6.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630556349",
+      "asset_id": 630556349,
+      "release_tag": "article-originals-3",
+      "sha256": "3e8eb5b538bd4fdb94e6beef737c3bc1164b2eab7780a97e96eef967bd49e9f6",
+      "bytes": 3159870
+    }
+  },
+  "/assets/images/hm-tt-468f6986bcb1/yakob-bernulli-neveroyatnye-03.png": {
+    "sha256": "234a175a88bc167665303aa589d86f1ec373e4e6f1e541b658ed16bc9db212e1",
+    "width": 3880,
+    "height": 2780,
+    "bytes": 24331225,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-468f6986bcb1/yakob-bernulli-neveroyatnye-03.png-960.webp",
+        "width": 960,
+        "height": 688,
+        "sha256": "a3b1bfee56c4206fd9333239dfb774e4da6fae8127491004e1fd93636712e74f",
+        "bytes": 911270
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-468f6986bcb1-yakob-bernulli-neveroyatnye-03-234a175a88bc167665303aa589d86f1ec373e4e6f1e541b658ed16bc9db212e1.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630556521",
+      "asset_id": 630556521,
+      "release_tag": "article-originals-2",
+      "sha256": "234a175a88bc167665303aa589d86f1ec373e4e6f1e541b658ed16bc9db212e1",
+      "bytes": 24331225
+    }
+  }
+}
