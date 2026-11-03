@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-bd58bae6a5bd
-description: “A knot!” said Alice. “Oh, do let me help to undo it!” (Lewis Carroll)
+description: "Lewis Carroll's puzzle asks for the weights of five sacks from the results of weighing them in groups. Adding and subtracting those results yields an arithmetic solution in place of solving a system of linear equations."
 type: problem
 tags:
 - History of mathematics

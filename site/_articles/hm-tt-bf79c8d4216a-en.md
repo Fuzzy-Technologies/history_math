@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-bf79c8d4216a
-description: In the Andes, khipu stored and transmitted information through cords, knots, colours and their relationships,
-  supporting Inca administration.
+description: "Inca khipu stored numbers in knots and place values on pendant cords to record supplies, labour and obligations. Examples explain decimal notation and empty places, while the research history distinguishes deciphered numbers from unresolved non-numerical information."
 type: essay
 tags:
 - Mathematics

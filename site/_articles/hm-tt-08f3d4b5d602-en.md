@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-08f3d4b5d602
-description: At the beginning of the war, thousands of evacuees reached the quiet town of Yelabuga on the Kama,
-  including the research staff of Leningrad State University.
+description: "Leningrad University scientists evacuated to Yelabuga in 1941–1944 pursued defence research and trained teachers. Vladimir Smirnov taught at the local institute and worked on volume five of his Course of Higher Mathematics while sharing the townspeople's wartime hardships."
 type: essay
 tags:
 - History of mathematics

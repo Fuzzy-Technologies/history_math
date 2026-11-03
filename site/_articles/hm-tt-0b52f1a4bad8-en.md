@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-0b52f1a4bad8
-description: From the Roman groma to mirror and prism instruments, the surveyor’s square sets out fixed angles in
-  the field.
+description: "The surveyor's square sets out fixed angles in the field, especially right angles. Its designs range from the Roman groma and sighting crosses to mirror instruments and pentaprisms that turn a light ray through 90°."
 type: essay
 tags:
 - Instruments

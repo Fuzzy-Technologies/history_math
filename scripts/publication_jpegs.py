@@ -3,11 +3,16 @@
 import argparse
 import concurrent.futures
 import hashlib
+import http.client
 import io
 import json
+import socket
+import ssl
+import subprocess
 import time
 import urllib.error
 import urllib.request
+from urllib.parse import urlsplit
 from pathlib import Path
 import sys
 
@@ -20,6 +25,56 @@ from image_assets import inventory, external_original  # noqa: E402
 BASE = "https://storage.yandexcloud.kz/history-math-media-kz"
 POLICY = "jpeg-max15mb-444-pillow-12.3.0-v1"
 HARD_LIMIT = 15_000_000
+
+
+def ipv4_connection(address, timeout=None, source_address=None):
+    last_error = None
+    for family, kind, protocol, _, target in socket.getaddrinfo(address[0], address[1], socket.AF_INET, socket.SOCK_STREAM):
+        connection = socket.socket(family, kind, protocol)
+        try:
+            if timeout is not socket._GLOBAL_DEFAULT_TIMEOUT:
+                connection.settimeout(timeout)
+            if source_address:
+                connection.bind(source_address)
+            connection.connect(target)
+            return connection
+        except OSError as error:
+            last_error = error
+            connection.close()
+    raise last_error or OSError("No IPv4 address for public media endpoint")
+
+
+class PublicHTTPSConnection(http.client.HTTPSConnection):
+    def connect(self):
+        self._create_connection = socket.create_connection if self._tunnel_host else ipv4_connection
+        super().connect()
+
+
+class PublicHTTPSHandler(urllib.request.HTTPSHandler):
+    def https_open(self, request):
+        return self.do_open(PublicHTTPSConnection, request, context=self._context)
+
+
+class NoPublicRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, request, response, code, message, headers, new_url):
+        return None
+
+
+PUBLIC_CONTEXT = ssl.create_default_context()
+PUBLIC_OPENER = urllib.request.build_opener(PublicHTTPSHandler(context=PUBLIC_CONTEXT), NoPublicRedirect())
+
+
+def open_media(request, timeout):
+    url = request.full_url if isinstance(request, urllib.request.Request) else request
+    target, base = urlsplit(url), urlsplit(BASE)
+    if target.hostname != base.hostname:
+        return urllib.request.urlopen(request, timeout=timeout)
+    method = request.get_method() if isinstance(request, urllib.request.Request) else "GET"
+    if target.scheme != "https" or target.netloc != base.netloc or not target.path.startswith(base.path + "/") or \
+            target.query or target.fragment or method not in {"GET", "HEAD"} or \
+            (isinstance(request, urllib.request.Request) and (request.header_items() or request.data is not None)):
+        raise ValueError("Invalid anonymous public media request")
+    return PUBLIC_OPENER.open(request, timeout=timeout)
 
 
 def digest(data):
@@ -68,7 +123,7 @@ def encode_original(data, entry):
 def download(url, maximum):
     for attempt in range(3):
         try:
-            with urllib.request.urlopen(url, timeout=120) as response:
+            with open_media(url, timeout=120) as response:
                 data = response.read(maximum + 1)
             if len(data) > maximum:
                 raise ValueError("Media download exceeds expected size")
@@ -82,7 +137,22 @@ def download(url, maximum):
         time.sleep((1, 3)[attempt])
 
 
-def cached_record(path, entry, previous):
+def checked_registry_cache(registry):
+    payload = json.dumps(registry).encode("utf-8")
+    result = subprocess.run(["node", str(ROOT / "scripts/check-jpeg-cache.mjs")],
+                            input=payload, capture_output=True, timeout=240)
+    if result.returncode:
+        raise ValueError("Pinned JPEG cache verification failed: " + result.stderr.decode("utf-8", errors="replace").strip())
+    receipt = json.loads(result.stdout)
+    cached = receipt.get("cached")
+    if receipt.get("version") != 1 or receipt.get("registry_sha256") != digest(payload) or \
+            not isinstance(cached, list) or any(not isinstance(path, str) for path in cached) or \
+            len(set(cached)) != len(cached) or not set(cached).issubset(registry["replacements"]):
+        raise ValueError("Invalid pinned JPEG verification receipt")
+    return {path: path in cached for path in registry["replacements"]}
+
+
+def cached_record(path, entry, previous, verified=None):
     record = previous.get(path)
     if not isinstance(record, dict) or record.get("policy") != POLICY:
         return None
@@ -97,19 +167,32 @@ def cached_record(path, entry, previous):
     if not isinstance(sha, str) or len(sha) != 64 or any(c not in "0123456789abcdef" for c in sha) or \
             type(size) is not int or not 0 < size < entry["bytes"]:
         return None
+    if verified is not None:
+        return {key: value for key, value in record.items() if key != "file"} if verified else None
     url = f"{BASE}/originals/{sha}/{record['filename']}"
-    try:
-        with urllib.request.urlopen(urllib.request.Request(url, method="HEAD"), timeout=30) as response:
-            if int(response.headers["Content-Length"]) == size and \
-                    response.headers.get_content_type() == "image/jpeg":
-                return {key: value for key, value in record.items() if key != "file"}
-    except (urllib.error.URLError, TimeoutError, ConnectionError, ValueError, KeyError):
-        pass
+    for attempt in range(3):
+        try:
+            with open_media(urllib.request.Request(url, method="HEAD"), timeout=30) as response:
+                if int(response.headers["Content-Length"]) == size and \
+                        response.headers.get_content_type() == "image/jpeg":
+                    return {key: value for key, value in record.items() if key != "file"}
+            return None
+        except urllib.error.HTTPError as error:
+            if error.code == 404:
+                return None
+            if error.code not in (408, 429, 500, 502, 503, 504) or attempt == 2:
+                raise
+        except (urllib.error.URLError, TimeoutError, ConnectionError):
+            if attempt == 2:
+                raise
+        except (ValueError, KeyError):
+            return None
+        time.sleep((1, 3)[attempt])
     return None
 
 
-def prepare(path, entry, directory, previous):
-    cached = cached_record(path, entry, previous)
+def prepare(path, entry, directory, previous, cache=None):
+    cached = cached_record(path, entry, previous, cache[path] if cache is not None else None)
     if cached:
         return path, cached, None
     local = ROOT / "site" / path.lstrip("/")
@@ -151,11 +234,14 @@ def main():
         raise ValueError("Publication JPEGs require pinned Pillow 12.3.0")
     output = Path(options.output).resolve()
     output.parent.mkdir(parents=True, exist_ok=True)
-    previous = {}
-    try:
-        previous = json.loads(download(options.previous, 12_000_000)).get("jpeg_originals", {})
-    except (urllib.error.URLError, TimeoutError, ConnectionError, ValueError):
-        pass  # A missing receipt is a cache miss, never permission to skip verification.
+    registry = json.loads(Path(options.registry).read_text()) if options.registry else None
+    previous = registry["replacements"] if registry else {}
+    cache = checked_registry_cache(registry) if registry is not None else None
+    if registry is None:
+        try:
+            previous = json.loads(download(options.previous, 12_000_000)).get("jpeg_originals", {})
+        except (urllib.error.URLError, TimeoutError, ConnectionError, ValueError):
+            pass  # A missing receipt is a cache miss, never permission to skip verification.
     originals = inventory()
     if options.include_pending:
         for pr in json.loads(Path(options.include_pending).read_text()):
@@ -163,28 +249,31 @@ def main():
                 if path in originals and originals[path] != entry:
                     raise ValueError("Conflicting pending original identity")
                 originals[path] = entry
-    registry = json.loads(Path(options.registry).read_text()) if options.registry else None
     if registry:
         originals = {path: record["source"] for path, record in registry["replacements"].items()}
-        previous = registry["replacements"]
     entries = [(path, entry) for path, entry in originals.items()
                if Path(path).suffix.lower() in {".png", ".jpg", ".jpeg", ".webp", ".gif"}
                and not entry.get("logo") and entry["bytes"] >= 13_000_000]
     replacements, retained = {}, {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
-        futures = [pool.submit(prepare, path, entry, output.parent, previous) for path, entry in entries]
-        for done, future in enumerate(concurrent.futures.as_completed(futures), 1):
-            path, record, reason = future.result()
-            if record:
-                if registry:
-                    expected = registry["replacements"][path]
-                    if any(record[key] != expected[key] for key in ("sha256", "bytes", "quality", "width", "height")):
-                        raise ValueError(f"JPEG differs from the pinned conversion: {path}")
-                replacements[path] = record
-            else:
-                retained[path] = reason
-            if done % 25 == 0 or done == len(entries):
-                print(f"Prepared JPEG originals {done}/{len(entries)}", flush=True)
+        futures = [pool.submit(prepare, path, entry, output.parent, previous, cache) for path, entry in entries]
+        try:
+            for done, future in enumerate(concurrent.futures.as_completed(futures), 1):
+                path, record, reason = future.result()
+                if record:
+                    if registry:
+                        expected = registry["replacements"][path]
+                        if any(record[key] != expected[key] for key in ("sha256", "bytes", "quality", "width", "height")):
+                            raise ValueError(f"JPEG differs from the pinned conversion: {path}")
+                    replacements[path] = record
+                else:
+                    retained[path] = reason
+                if done % 25 == 0 or done == len(entries):
+                    print(f"Prepared JPEG originals {done}/{len(entries)}", flush=True)
+        except BaseException:
+            for pending in futures:
+                pending.cancel()
+            raise
     result = {"version": 1, "policy": POLICY, "replacements": dict(sorted(replacements.items())),
               "retained": dict(sorted(retained.items()))}
     output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")

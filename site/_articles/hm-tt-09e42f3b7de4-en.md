@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-09e42f3b7de4
-description: From Galois and abstract operations to algebraic structures and modern applications, this essay surveys
-  algebra since the mid-19th century.
+description: "Modern algebra grew from the theory of equations into the study of groups, rings, fields and other algebraic systems. The history of this transition connects the ideas of Galois and Noether with mathematical schools and algebra's applications."
 type: essay
 tags:
 - History of mathematics

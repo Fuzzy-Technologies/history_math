@@ -1,9 +1,10 @@
 import {readFile, mkdir, writeFile} from 'node:fs/promises';
 import {resolve, dirname, basename} from 'node:path';
 import {pathToFileURL} from 'node:url';
+import {HeadObjectCommand} from '@aws-sdk/client-s3';
 import {imageInventory} from './external-originals.mjs';
 import {imageObjects, uniqueObjects, sourceBytes, localBytes} from './publication-media.mjs';
-import {mediaObject, assertBytes, sha256, configuredClient, responseBytes, transfer, readWithRetries} from './s3-media.mjs';
+import {storage, mediaObject, assertBytes, sha256, configuredClient, responseBytes, transfer, readWithRetries, mediaRead} from './s3-media.mjs';
 import {publicationReplacements} from './image-publication.mjs';
 
 const repository = 'Fuzzy-Technologies/history_math';
@@ -11,12 +12,14 @@ const apiRoot = `https://api.github.com/repos/${repository}`;
 const revisionPattern = /^[a-f0-9]{40}$/;
 const sourcePdfLimit = 512 * 1024 * 1024;
 
-export async function githubData(path, {request = fetch, token = process.env.GITHUB_TOKEN} = {}) {
+export async function githubData(path, {request = fetch, token = process.env.GITHUB_TOKEN, retryOptions} = {}) {
   if (!path.startsWith('/') || path.includes('..')) throw new Error('Invalid GitHub API path');
-  const response = await request(apiRoot + path, {redirect: 'error', signal: AbortSignal.timeout(120_000),
-    headers: {Accept: 'application/vnd.github+json', ...(token ? {Authorization: `Bearer ${token}`} : {})}});
-  if (!response.ok) throw new Error(`GitHub data request failed: HTTP ${response.status}`);
-  return response.json();
+  return readWithRetries('GitHub reference data', async () => {
+    const response = await request(apiRoot + path, {redirect: 'error', signal: AbortSignal.timeout(120_000),
+      headers: {Accept: 'application/vnd.github+json', ...(token ? {Authorization: `Bearer ${token}`} : {})}});
+    if (!response.ok) await responseBytes(response, 0);
+    return response.json();
+  }, retryOptions);
 }
 
 async function pages(api, path) {
@@ -35,7 +38,7 @@ export function eligiblePR(pr) {
     pr.head?.repo?.full_name === repository && /^feature\/article-/.test(pr.head.ref) && revisionPattern.test(pr.head.sha);
 }
 
-export async function pullRequestObjects(api = githubData, request = fetch, replacements = {}, root = '.') {
+export async function pullRequestObjects(api = githubData, request = mediaRead, replacements = {}, root = '.') {
   const pulls = (await pages(api, '/pulls?state=open&sort=created&direction=asc')).filter(eligiblePR), objects = [], evidence = [];
   for (const pr of pulls) {
     const revision = pr.head.sha, tree = await api(`/git/trees/${revision}?recursive=1`);
@@ -75,7 +78,7 @@ export async function revisionBytes(revision, path, request = fetch, limit = sou
     {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)}), limit));
 }
 
-export async function deployedPdfObjects(origin, baseurl, request = fetch, {legacyOnly = false} = {}) {
+export async function deployedPdfObjects(origin, baseurl, request = mediaRead, {legacyOnly = false} = {}) {
   if (!['https://history-math.org', 'https://fuzzy-technologies.github.io'].includes(origin) ||
       !['', '/history_math'].includes(baseurl)) throw new Error('Untrusted publication origin');
   const manifest = await readWithRetries('published PDF manifest', async () => {
@@ -106,7 +109,7 @@ export async function deployedPdfObjects(origin, baseurl, request = fetch, {lega
   return objects;
 }
 
-export async function copyPublishedPdfs({origin, baseurl, client, request = fetch, progress} = {}) {
+export async function copyPublishedPdfs({origin, baseurl, client, request = mediaRead, progress} = {}) {
   const objects = uniqueObjects(await deployedPdfObjects(origin, baseurl, request, {legacyOnly: true}));
   const receipt = await transfer(objects, client, object => readWithRetries(object.key, async () => {
     const bytes = await responseBytes(await request(object.source.deployed_url,
@@ -119,18 +122,28 @@ export async function copyPublishedPdfs({origin, baseurl, client, request = fetc
 
 // Upload-only migration runs before expensive rendering. A deployed S3 PDF
 // manifest makes this a cheap no-op on subsequent publications.
-export async function preflightMedia({root, origin, baseurl, client, request = fetch, progress} = {}) {
+export async function preflightMedia({root, origin, baseurl, client, request = mediaRead, progress} = {}) {
   const copied = await copyPublishedPdfs({origin, baseurl, client, request, progress});
-  if (!copied.summary.existing_pdfs) return copied;
   const images = imageObjects(imageInventory(root), path => ({file: resolve(root, 'site', '.' + path)}), publicationReplacements(root), root);
   for (const image of images.filter(image => !image.external_url)) assertBytes(image.original_object, await localBytes(resolve(root, 'site'), image.path));
-  const originals = await transfer(uniqueObjects(images.map(image => image.object)), client,
+  const missing = [];
+  for (const object of uniqueObjects(images.map(image => image.object))) {
+    try {
+      const head = await client.send(new HeadObjectCommand({Bucket: storage.bucket, Key: object.key}));
+      if (head.ContentLength !== object.bytes || head.ContentType?.split(';')[0] !== object.content_type || head.Metadata?.sha256 !== object.sha256) throw new Error('Changed S3 preflight identity');
+    } catch (error) {
+      if (error.$metadata?.httpStatusCode !== 404) throw error;
+      missing.push(object);
+    }
+  }
+  const originals = await transfer(missing, client,
     object => sourceBytes(object, request), {request, progress});
   return {version: 1, objects: [...copied.objects, ...originals], summary: {...copied.summary,
-    originals: originals.length, bytes: copied.summary.bytes + originals.reduce((sum, object) => sum + object.bytes, 0)}};
+    originals: originals.length, existing_originals: images.length - missing.length,
+    bytes: copied.summary.bytes + originals.reduce((sum, object) => sum + object.bytes, 0)}};
 }
 
-export async function backfill({root, origin, baseurl, includeOpenPRs, client, api = githubData, request = fetch, progress} = {}) {
+export async function backfill({root, origin, baseurl, includeOpenPRs, client, api = githubData, request = mediaRead, progress} = {}) {
   const replacements = publicationReplacements(root);
   const images = imageObjects(imageInventory(root), path => ({file: resolve(root, 'site', '.' + path)}), replacements, root);
   // Verify local master sources before the first upload, including symlink guards.

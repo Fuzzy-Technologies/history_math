@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-1f2d48d10c1e
-description: A pantograph is an instrument for drawing homothetic figures, allowing drawings, plans and maps to
-  be copied at a different scale.
+description: "A pantograph’s hinged parallelogram copies a drawing at a chosen scale through homothety. Its geometry is explained alongside a homemade five-strip model and examples of related mechanisms in household objects and transport."
 type: instrument
 tags:
 - Instruments

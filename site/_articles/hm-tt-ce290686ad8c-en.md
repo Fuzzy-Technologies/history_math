@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-ce290686ad8c
-description: 'From Soviet pocket calculators to scientific and programmable models: the history, operating logic
-  and educational uses of the electronic calculator.'
+description: "The shift from mechanical calculation to electronics produced pocket, scientific, programmable and graphing calculators. Their components, operating logic and the history of Soviet Elektronika models are considered alongside experiments with calculators in school mathematics."
 type: instrument
 tags:
 - Instruments

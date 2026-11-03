@@ -42,6 +42,12 @@ PDF pagination keeps each figure with its caption. When a figure would leave unu
 
 ## Editorial decision
 
+### Article digests
+
+The localized `description` is an authored digest of the complete article in one or two finished sentences. State the specific subject and useful scope, argument or result; avoid teasers, generic promotional wording, copied opening fragments and ellipses. Russian and English editions must convey equivalent information in natural language. The same complete digest appears in the article heading, metadata and PDF; compact cards may limit visible lines without modifying its source. Source CI rejects truncated or unfinished digests and descriptions longer than two sentences. A description change must refresh the reviewed package hash and invalidates the PDF print-input cache.
+
+On 2026-10-31 the owner explicitly requested a description-only editorial revision across the existing Russian and English archive, followed by PDF regeneration. Preserve original approval evidence and record this specific instruction, the old/new description hashes and refreshed package hash in each review record. This instruction does not approve draft articles for publication or authorize changes to their bodies, figures or dates.
+
 `reviews/<article-id>.json` is the only editable question list. It contains `review_version: 1`, the article ID, `questions` and `approval`; reconciliation notes may remain alongside them. Each question has a stable `id`, `question` in the edition's language, `blocking` boolean and `state` (`open`, `resolved`, `accepted`). Closed questions require a written `resolution`. PR descriptions show only open questions; do not duplicate the list in article metadata or pilot documentation.
 
 When an English edition has an open question but the branch ends in `-ru`, supply its Russian wording as `"localizations": {"source": "Exact canonical question", "ru": "Russian translation"}` on that question. The `source` must match `question` exactly; update both when the question changes. Imported questions already have source-bound Russian text in `schemas/editorial-question-messages.json`; this compatibility catalog is a presentation dictionary, not another editable question list. Reports and generated PR descriptions choose localized question text while preserving the canonical wording, evidence links, blocking flag, state and approval. Missing or stale required translations fail source checks. English reports retain the original English question.

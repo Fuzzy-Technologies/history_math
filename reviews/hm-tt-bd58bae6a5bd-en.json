@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-23",
-    "package_sha256": "cdde6723fe837ccf5a7ce8540fdd2f9a5b69490bb62f1cd61867f8db687ae67f",
+    "package_sha256": "cf08240eabee7e29b258740377d95b41add8beb520573f397b4e29f87868f22e",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/117#pullrequestreview-5626007414",
     "source_commit": "19e09b87d9e99785b18c520fb851a31b25b28a24",
     "source_review_id": 5626007414,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-23T08:51:22Z",
-    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -22,5 +22,15 @@
       "date": "2025-01-03",
       "url": "https://teletype.in/@history_math/Lewis-Carroll"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "c40fb0992f84a3c1d9739b554afc8db0f8e12d902088e1c48a000d6e65813a64",
+      "description_sha256": "bf0920ca841d595e1fb51cf9fe9589f4436948b61446ca712ad0a43b9d9efc1e",
+      "previous_package_sha256": "cdde6723fe837ccf5a7ce8540fdd2f9a5b69490bb62f1cd61867f8db687ae67f"
+    }
+  ]
 }

@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-e4f7e2e65d63
-description: 'For the 80th anniversary of the Great Victory: the amateur theatre created by evacuated Leningrad
-  University scholars in wartime Yelabuga.'
+description: "Leningrad University scholars evacuated to Yelabuga created the amateur Drambalop theatre. Nikiforovskaya’s recollections describe its 1942 production of Guilty Without Guilt, the performers, the local audience’s response and the donation of proceeds to the Defence Fund."
 type: essay
 tags:
 - History of mathematics

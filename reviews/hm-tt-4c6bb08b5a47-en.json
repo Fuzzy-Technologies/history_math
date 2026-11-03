@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "08a6041793f550ba4ed22ce59c5d018d5cae5a97f6e81fcdb96d65bbfe3f2c3f",
+    "package_sha256": "bd720fb6912cfaa0352e7c9dc97c2a5a68c18cb634d9abe21b331e3623415e8f",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Мержим.",
     "source_commit": "b34e750c395ebb7e0119bf7abd5fc8eb8cc4b140",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/160"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/160",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -21,5 +22,15 @@
       "date": "2024-05-19",
       "url": "https://teletype.in/@history_math/Alla-Efimovna-Malyh-19392019-05-19"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "f483202d09a6bd5766a6137e1041952ec46d431da00633cdeaf4c4a420a968a9",
+      "description_sha256": "0d98edb5ceaa641ff35197da23a691d81cea179dd6a5c8a359cf39359a60ef86",
+      "previous_package_sha256": "08a6041793f550ba4ed22ce59c5d018d5cae5a97f6e81fcdb96d65bbfe3f2c3f"
+    }
+  ]
 }

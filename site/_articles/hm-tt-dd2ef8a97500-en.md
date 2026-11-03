@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-dd2ef8a97500
-description: 'A legend about counting soldiers leads to the Chinese remainder theorem: recovering an integer from its
-  remainders modulo pairwise coprime numbers.'
+description: "The Chinese remainder theorem determines an integer modulo the product of pairwise coprime divisors from its remainders. Sunzi’s problem, whose smallest solution is 23, is solved by enumeration, algebra and the general algorithm using modular inverses."
 type: essay
 tags:
 - history_of_mathematics

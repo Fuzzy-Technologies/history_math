@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-23",
-    "package_sha256": "d90fa8bd629f7ad55d034eccb3f7729614135bd756d77e39799ebc120113f6c2",
+    "package_sha256": "312b880d8fc34e346fd7d86a3584d4a85116f79f31d27e26f884ca9f328a9407",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/95#pullrequestreview-5626005601",
     "source_commit": "c5e3d5e4bd1598a2ef911126c48b9a8ca5c43bc5",
     "source_review_id": 5626005601,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-23T08:51:11Z",
-    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -25,5 +25,15 @@
   },
   "manual_changes": [
     "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "0d32e43fd3747b9d3b0708f884b8cd3a9fb39097452d38dbf6740d2c0699d86f",
+      "description_sha256": "7ae8545e015e6fd3d480dc24be43c12a5a9b0669d058af4340f88fc972afed7d",
+      "previous_package_sha256": "d90fa8bd629f7ad55d034eccb3f7729614135bd756d77e39799ebc120113f6c2"
+    }
   ]
 }

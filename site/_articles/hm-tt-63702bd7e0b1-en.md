@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-63702bd7e0b1
-description: The surviving Egyptian mathematical papyri reveal practical arithmetic, unit fractions, geometric problems
-  and the method of false position.
+description: "The Rhind and Moscow papyri preserve practical problems from ancient Egyptian mathematics. They reveal non-positional decimal notation, multiplication by doubling and addition, unit fractions and the solution of linear problems through false position."
 type: essay
 tags:
 - history_of_mathematics

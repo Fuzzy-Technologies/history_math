@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-27be9c0624da
-description: 'An old measuring instrument that brings together mathematics, everyday life and peasant ingenuity: the
-  field compass.'
+description: "A field compass is a wooden A-shaped frame that measures equal distances by “walking” across the ground. Its construction connects traditional land measurement with practical lessons on length, angles, equal segments and scale."
 type: instrument
 tags:
 - instruments

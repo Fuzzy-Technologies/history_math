@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-23",
-    "package_sha256": "73668c16575c103b2267af159d181c974ece8d7e106c1e778dbe02ff49b86450",
+    "package_sha256": "87e28d69e6594cb6bcc92752e7d7ee8995b7e07d50f3379e55f69647787e8223",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/138#pullrequestreview-5626009519",
     "source_commit": "529e5faed7bbe125f12742f8c8408acb65ea79bc",
     "source_review_id": 5626009519,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-23T08:51:35Z",
-    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -40,5 +40,15 @@
   },
   "manual_changes": [
     "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "0cdb960b95d39ea47412cea43f7f7a4e82055d4212bc030b1224f6986fc14d2a",
+      "description_sha256": "97f99f75718cd17a79d2254efa30a4974df7862fb4aeb5257ca46a5606d0d5b1",
+      "previous_package_sha256": "73668c16575c103b2267af159d181c974ece8d7e106c1e778dbe02ff49b86450"
+    }
   ]
 }

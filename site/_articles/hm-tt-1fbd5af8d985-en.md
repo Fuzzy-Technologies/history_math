@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-1fbd5af8d985
-description: Ozanam’s seven friends want to try every dinner seating. The count depends on whether seats form a
-  row or a circle and whether mirror images are distinguished.
+description: "Ozanam's puzzle about seating seven friends shows how the conditions change the count: 5040 arrangements in a row, 720 around a round table and 360 when mirror images are identified. A dinner puzzle becomes a lesson in accounting for symmetry."
 type: problem
 tags:
 - History of mathematics

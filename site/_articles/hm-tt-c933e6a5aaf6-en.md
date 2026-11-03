@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-c933e6a5aaf6
-description: Fermat's method of infinite descent proves impossibility by constructing an endlessly decreasing sequence of
-  natural numbers.
+description: "Infinite descent rules out a solution when every assumed solution would produce a smaller one in natural numbers. A proof of the irrationality of the square root of two shows how Fermat’s method relies on the existence of a least element."
 type: essay
 tags:
 - History of mathematics

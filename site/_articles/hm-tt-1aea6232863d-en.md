@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-1aea6232863d
-description: A surveyor's level determines the difference in elevation between two points.
+description: "A surveyor’s level measures differences in elevation for surveying and construction. The optical instrument uses a horizontal line of sight and staff readings, while digital and laser versions obtain their measurements in different ways."
 type: instrument
 tags:
 - Instruments

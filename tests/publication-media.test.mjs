@@ -52,6 +52,34 @@ test('source download retries a gateway error and reconnect, then checks exact o
   assert.equal(corruptReads, 1);
 });
 
+test('S3 source stays usable after release removal; corrupt or forbidden replicas never fall back', async () => {
+  const source = {...object, source: {url: 'https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/test.png'}};
+  let releaseCalls = 0;
+  const good = await sourceBytes(source, async url => {
+    if (String(url) !== object.url) {releaseCalls++; return new Response('removed', {status: 404});}
+    return new Response(original);
+  });
+  assert.deepEqual(good, original); assert.equal(releaseCalls, 0);
+  for (const response of [new Response('wrong bytes'), new Response('forbidden', {status: 403})]) {
+    await assert.rejects(sourceBytes(source, async url => {assert.equal(String(url), object.url); return response;}));
+  }
+});
+
+test('preflight checks existing S3 metadata even after PDF migration and avoids original downloads', async () => {
+  await fixture(async ({root}) => {
+    const copiedPdf = mediaObject('pdf', 'existing.pdf', sha256(pdf), pdf.length);
+    let heads = 0;
+    const result = await preflightMedia({root, origin: 'https://history-math.org', baseurl: '', client: {send: async command => {
+      assert.ok(command instanceof HeadObjectCommand); heads++;
+      return {ContentLength: object.bytes, ContentType: object.content_type, Metadata: {sha256: object.sha256}};
+    }}, request: async url => {assert.ok(url.endsWith('/article-pdfs.json')); return Response.json({version: 2,
+      origin: 'https://history-math.org', baseurl: '', articles: [{pdf_url: copiedPdf.url}]});}});
+    assert.equal(heads, 1); assert.equal(result.summary.existing_originals, 1); assert.equal(result.summary.originals, 0);
+    await assert.rejects(preflightMedia({root, origin: 'https://history-math.org', baseurl: '', client: {send: async () => ({ContentLength: 1})},
+      request: async () => Response.json({version: 2, origin: 'https://history-math.org', baseurl: '', articles: [{pdf_url: copiedPdf.url}]})}), /Changed S3 preflight/);
+  });
+});
+
 test('storage destination, identities and source bytes reject mutations', () => {
   const client = configuredClient(config); client.destroy();
   for (const key of Object.keys(config)) assert.throws(() => configuredClient({...config, [key]: ''}));
@@ -111,6 +139,47 @@ test('forbidden operations, failed uploads and corrupt public copies cannot prod
     throw new Error('upstream error');
   }}, object, async () => original), /upload failed/);
   await assert.rejects(transfer([object], exists, async () => original, {request: async () => publicResponse(object, Buffer.from('corrupt'))}));
+});
+
+test('S3 failures expose bounded HTTP/provider diagnostics without upstream secrets', async () => {
+  for (const [name, status] of [['BucketMaxSizeExceeded', 400], ['CloudTotalAliveSizeQuotaExceed', 400], ['AccessDenied', 403]]) {
+    let calls = 0;
+    await assert.rejects(uploadVerified({send: async () => {
+      if (++calls === 1) throw {$metadata: {httpStatusCode: 404}};
+      throw Object.assign(Error('SECRET signed-url https://example.test/?token=SECRET'), {name, $metadata: {httpStatusCode: status, attempts: 3}});
+    }}, object, async () => original), error => error.message.includes(`HTTP ${status}; ${name}; 3 SDK attempts`) && !error.message.includes('SECRET'));
+    assert.equal(calls, 2, 'The adapter does not add another write retry loop');
+  }
+  await assert.rejects(uploadVerified({send: async () => {
+    throw Object.assign(Error('SECRET'), {name: 'SECRET', $metadata: {httpStatusCode: 'SECRET', attempts: 'SECRET'}});
+  }}, object, async () => assert.fail('No source read')), error =>
+    error.message.includes('HTTP unknown; UNCLASSIFIED; unknown SDK attempts') && !error.message.includes('SECRET'));
+});
+
+test('GitHub reference data reconnects without leaking the token or relaxing its fixed destination', async () => {
+  let calls = 0;
+  const result = await githubData('/branches/master', {token: 'SECRET', retryOptions: {pause: async () => {}}, request: async (url, options) => {
+    assert.equal(url, 'https://api.github.com/repos/Fuzzy-Technologies/history_math/branches/master');
+    assert.equal(options.headers.Authorization, 'Bearer SECRET'); assert.equal(options.redirect, 'error');
+    if (++calls === 1) return new Response('SECRET', {status: 502});
+    return Response.json({commit: {sha: 'a'.repeat(40)}});
+  }});
+  assert.equal(result.commit.sha, 'a'.repeat(40)); assert.equal(calls, 2);
+  await assert.rejects(githubData('/branches/master', {token: 'SECRET', retryOptions: {pause: () => assert.fail('No permission retry')},
+    request: async () => new Response('SECRET', {status: 403})}), error => error.status === 403 && !error.message.includes('SECRET'));
+});
+
+test('the complete batch is budget-checked before any S3 operation', async () => {
+  for (const kind of ['pdf', 'originals']) {
+    const oversized = mediaObject(kind, kind === 'pdf' ? 'oversized-ru.pdf' : 'oversized.png', 'a'.repeat(64), 15_000_001);
+    await assert.rejects(transfer([object, oversized], {send: () => assert.fail('No partial uploads')},
+      () => assert.fail('No source reads'), {request: () => assert.fail('No public requests')}), /15 MB hard limit/);
+  }
+  const boundary = mediaObject('pdf', 'boundary.pdf', 'a'.repeat(64), 15_000_000);
+  let heads = 0;
+  await assert.rejects(transfer([boundary], {send: async () => {heads++; throw {$metadata: {httpStatusCode: 403}};}},
+    () => assert.fail('No source read after denied HEAD')), /S3 HEAD failed/);
+  assert.equal(heads, 1, 'The exact budget boundary is admitted');
 });
 
 async function fixture(run) {

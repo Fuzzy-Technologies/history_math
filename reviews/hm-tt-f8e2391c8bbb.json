@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-23",
-    "package_sha256": "bbd449c4de81d99e7df0fe1c6a34d14a78ff83c4d67937435914b78bb02a8c4f",
+    "package_sha256": "abe3cbbcfe4d2db151c87a06ca7e0166946eb3d9b0100a0dd912cc4ce979b83d",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/103#pullrequestreview-5626005754",
     "source_commit": "44ba9361ecd5d69b21a64d7dd3b73451b172c044",
     "source_review_id": 5626005754,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-23T08:51:12Z",
-    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -25,5 +25,15 @@
   },
   "manual_changes": [
     "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "0fb56493d5e4880b7d6750fe7dc4af8f2f08cd74d919390cc341266857fa02be",
+      "description_sha256": "0dc9a441f1ecbb3cd90e83c9e4adc31dccd7ffaed9e5bcc61d822f74464a029f",
+      "previous_package_sha256": "bbd449c4de81d99e7df0fe1c6a34d14a78ff83c4d67937435914b78bb02a8c4f"
+    }
   ]
 }

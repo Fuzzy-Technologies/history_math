@@ -5,14 +5,14 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-20",
-    "package_sha256": "6c11ce53211a5ccf86fd05ef97c1d1ac5a25c1b4be891ae5e251b71213ed1c22",
+    "package_sha256": "821cf8592594a456b49c69335bc097e2ce5ee18d00a90773eb2f4454fb0945ea",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/236#issuecomment-6300192722",
     "source_commit": "0f251a6f2a225c3a312292a425823331d150734d",
     "source_comment_id": 6300192722,
     "source_review_state": "ISSUE_COMMENT",
     "approved_at": "2026-10-20T19:59:03Z",
     "prepared_from_commit": "0f251a6f2a225c3a312292a425823331d150734d",
-    "post_review_changes": "No changes after the reviewed source revision."
+    "post_review_changes": "No changes after the reviewed source revision. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -45,5 +45,15 @@
       "date": "2023-09-01",
       "url": "https://teletype.in/@history_math/YA-poznane-sdelal-svoim-remeslom-09-01"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "4c7c6427955bd6ac0db04be381cf52dd0eca97dd598d979541a30cbf40880c10",
+      "description_sha256": "54f183b415c1f03923065e6abe3fb5fe496ad26647a33f15e65a54f5d875ed51",
+      "previous_package_sha256": "6c11ce53211a5ccf86fd05ef97c1d1ac5a25c1b4be891ae5e251b71213ed1c22"
+    }
+  ]
 }

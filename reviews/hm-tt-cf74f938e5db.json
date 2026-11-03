@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-23",
-    "package_sha256": "4d1af483a5e5730d2ec2fa4256fb7a15b979b2f7033e0da509af81c64b051f94",
+    "package_sha256": "4d6dc7613227e4f0a82a098043bc74bd2372b99ca2967f94a8a0a4ab5759a62c",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/131#pullrequestreview-5626008735",
     "source_commit": "1e19ebd8c10b1578777ed3d25831af9102d87c87",
     "source_review_id": 5626008735,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-23T08:51:30Z",
-    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -26,5 +26,15 @@
   "manual_changes": [
     "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged.",
     "Восстановлены вложенные списки правил по сохранённому HTML Teletype; содержание источника не изменено."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "c5c5dfd65c6b2f181a60ac1a94c23518127395169ce738763006007f253447d6",
+      "description_sha256": "b1d5a463e369b7b74b444292ac17619fa2e79d8a85faa1b8dde429f8ba5ed80c",
+      "previous_package_sha256": "4d1af483a5e5730d2ec2fa4256fb7a15b979b2f7033e0da509af81c64b051f94"
+    }
   ]
 }

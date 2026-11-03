@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-4f0c3d2d0b18
-description: John Horton Conway, creator of the Game of Life, made major contributions to group theory, games, surreal
-  numbers and recreational mathematics.
+description: "John Conway combined mathematical play with research into finite groups, cellular automata and game theory. The Game of Life, surreal numbers and the Atlas of Finite Groups reveal the variety of results that grew from his curiosity."
 type: essay
 tags:
 - History of mathematics

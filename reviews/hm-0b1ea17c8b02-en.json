@@ -5,7 +5,8 @@
     "status": "approved",
     "reviewed_by": "Timur Gilmullin (Tim55667757)",
     "date": "2026-10-10",
-    "package_sha256": "2653018e22a86b256dd0e0921e3482163165d2ae881beff2bc95bd402b691b8e"
+    "package_sha256": "723549657439cbd00171b086eefa87846e6864ba1bc7762bf3ec3e88f7d7179b",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -40,5 +41,15 @@
     },
     "publication_approval": "Owner confirmed review and merge of PR #47 on 2026-10-10 (Europe/Moscow). Publication metadata updated; approved English prose and image bytes are unchanged.",
     "publication_date_correction": "Owner requested on 2026-10-11 that the Rumovsky website publication date be 2024-03-25 in both languages. Enabled explicit preservation of the existing original date and refreshed the package hash; prior editorial decisions, prose and portrait bytes are retained."
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "5fcc2118b734ef080168140d6e67e9aae2e6ce77ac1d146f99fe9da087935bed",
+      "description_sha256": "9d7c861b1b55def5e26381d38a44418d4c32646ebd5b39420016548e1d306098",
+      "previous_package_sha256": "2653018e22a86b256dd0e0921e3482163165d2ae881beff2bc95bd402b691b8e"
+    }
+  ]
 }

@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-21",
-    "package_sha256": "71de565f4c44f8d5fa3ff96a5ae1af075bcd89f4fd0f594d5449125e10b259ee",
+    "package_sha256": "598faa9095f3caae5d30d2c05106858ea8eac6bdfaccfd3124da155865062f80",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/110#pullrequestreview-5606338716",
     "source_commit": "84950967fff5824d43c6500d8eb4f04d89473e75",
     "source_review_id": 5606338716,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-21T21:16:33Z",
-    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged."
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -40,5 +40,15 @@
   },
   "manual_changes": [
     "Replaced formula-only images fig-2 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending. Transcribed the five probability-table rows with native binomial coefficients. Checked all exact ratios against combinations; retained the source approximations and payouts."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "f62f32943d30ad7fa2f3e9aa501cf128352dfb3cb8f768d77e46f0c299e28b5d",
+      "description_sha256": "7435ca88ad484bd89920b5a5ae23b86fb514f356e67d8618bd4fd877941df173",
+      "previous_package_sha256": "71de565f4c44f8d5fa3ff96a5ae1af075bcd89f4fd0f594d5449125e10b259ee"
+    }
   ]
 }

@@ -9,9 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-2dcb541603cd
-description: Vladimir Smirnov’s wartime years in Yelabuga joined university
-  teaching, defence research and work on his celebrated Course of Higher
-  Mathematics.
+description: "In 1941–1944, Vladimir Smirnov headed the Yelabuga Teachers' Institute's physics and mathematics department and directed defence research in ballistics. He also worked there on volume five of his Course of Higher Mathematics; memoirs and a memorial plaque preserve his legacy."
 type: essay
 tags:
   - History of mathematics

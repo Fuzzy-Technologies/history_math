@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-22",
-    "package_sha256": "4d90a4cf309ee4172d40652efa563067b2bf8172422da1300dcc70dd7f92ddd0",
+    "package_sha256": "db7a4c9f8a05efa562a8ede1365db827631859df1c8d30d6a825b3aad2d9f053",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/92#pullrequestreview-5617294667",
     "source_commit": "4a3194ab0fafa68fe2b7eafbf40e22afa8a73d81",
     "source_review_id": 5617294667,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-22T16:11:00Z",
-    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -22,5 +22,15 @@
       "date": "2025-04-09",
       "url": "https://teletype.in/@history_math/Tricky-soldiers-in-the-tavern"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "2f643f88be6f522d8f1e55f33743530ec77ddfff87ca4a7bde10c7a9f28dcebb",
+      "description_sha256": "ee3f1799ed875ca43b22203b979a2e0a3132ab3ef79c03aba8932ff0e08408d4",
+      "previous_package_sha256": "4d90a4cf309ee4172d40652efa563067b2bf8172422da1300dcc70dd7f92ddd0"
+    }
+  ]
 }

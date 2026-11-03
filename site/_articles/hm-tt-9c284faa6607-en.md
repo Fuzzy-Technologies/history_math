@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-9c284faa6607
-description: Leningrad — Yelabuga — Kazan.
+description: "Archivist Lev Modzalevsky studied Pushkin and Lomonosov and compiled a major collection of documents about Lobachevsky. His biography connects Pushkin House with the preservation of scholarly heritage during the war in Kazan and Yelabuga."
 type: essay
 tags:
 - History of Mathematics

@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "e5ee7ff666a24a9bf1b4d4e319942024a49d35f71e59c6e4b354120092dac7e8",
+    "package_sha256": "4efb41e3af1b27c7c6d1c9c801db323f46dd669454355965dca4155ef331dcf5",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Мержим.",
     "source_commit": "f4d0c664971d0aefb6d6b21fefd6f6a42940f8e5",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/164"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/164",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -21,5 +22,15 @@
       "date": "2024-05-12",
       "url": "https://teletype.in/@history_math/Centralnyj-Dom-Uchyonyh-05-12"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "780919d812668d317b8945ed18cf2104f3924d6fd7a9789a596b8f925b061b63",
+      "description_sha256": "310370e79cfea678de6c9305f4c1aab2bbee3a45b7cf78bf7bf282cdacc4def7",
+      "previous_package_sha256": "e5ee7ff666a24a9bf1b4d4e319942024a49d35f71e59c6e4b354120092dac7e8"
+    }
+  ]
 }

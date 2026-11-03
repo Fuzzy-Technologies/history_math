@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-01520ceee4c3
-description: Allotrion, a term for something alien to a subject, travelled from ancient logic into the teaching of mathematics.
+description: "An “allotrion” meant an extraneous basis unrelated to the subject of an argument. In Walter Lietzmann's teaching, the word also came to describe historical and cultural digressions that help pupils remember mathematics."
 type: essay
 tags:
 - history_of_mathematics

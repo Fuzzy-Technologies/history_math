@@ -9,18 +9,18 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-f49ec2fca03c
-description: "The history of counting runs from fingers, notches and knots to the numerals of Egypt, Babylon, China, Greece and Rome. Particular attention goes to India’s decimal place-value system with zero and its spread through the Arab world to Europe."
+description: "An illustrated introduction for preschool and early primary school children traces how people learned to count, from fingers, notches and knots to the numerals of different peoples. It concludes with decimal place value, zero and the spread of Indian numerals through the Arab world to Europe."
 type: essay
 tags:
   - History of mathematics
   - Counting
   - Numerals
 math: true
-status: draft
+status: published
 date: '2023-09-11'
-permalink: /articles/hm-tt-f49ec2fca03c/
+permalink: /publications/hm-tt-f49ec2fca03c-en/
 rights_basis: Owner-requested migration of the author's complete Teletype
-  publication on 2026-10-11; editorial publication approval remains pending; no
+  publication on 2026-10-11; editorial publication approved by the owner on 2026-11-03; no
   new license asserted.
 original_publication:
   outlet: Teletype
@@ -142,12 +142,10 @@ figures:
     path: /assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-12.png
     alt: Illustration 12 for How People Learned to Count
     caption: ''
-    source: Illustrations from the original Teletype article
+    source: Corrected illustration supplied by the owner on 3 November 2026.
     credit: ''
-    rights_basis: Original image bytes from the owner-supplied Teletype archive,
-      migrated at the owner request; original attribution retained; no new
-      license asserted.
-    source_url: https://img2.teletype.in/files/53/26/53265d94-db22-4529-8a1a-ef52ae05a161.png
+    rights_basis: Owner-supplied corrected original authorized for this article on 2026-11-03; no new license asserted.
+    source_url: https://storage.yandexcloud.kz/history-math-media-kz/originals/c3761f458ceefa1d555e40247cfbb41865d7aa9151009b08c1053832e3bf94da/kak-lyudi-nauchilis-schitat-12.png
   - id: fig-13
     path: /assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-13.png
     alt: Illustration 13 for How People Learned to Count

@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-520b5a1dc03d
-description: Much of the classical mathematical literature in Sanskrit was written in verse, a familiar way to preserve
-  and transmit knowledge in medieval India.
+description: "In Bhaskara II's Lilavati and Bijaganita, verse helped students memorise mathematical rules that a teacher then explained. Problems about a peacock and snake and a troop of monkeys turn vivid stories into equations, including one with two valid solutions."
 type: essay
 tags:
 - History of Mathematics

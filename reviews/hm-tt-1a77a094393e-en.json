@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "72598291b71b69fccaa43d6597ba4a2f6e79ce8b21adcea35115ddde70bec953",
+    "package_sha256": "9f635eacc3842c43c6f340d209c6d1317ed5c2b25110ca394a07c46e510b7b98",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Оставь как есть, мержим.",
     "source_commit": "e80ffa8e2dc3f8bab087aa1df54315ee3cc07f82",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/185"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/185",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -29,5 +30,15 @@
       "date": "2024-01-08",
       "url": "https://teletype.in/@history_math/Geometriya-pifagorejcev-teorema-Pifagora-01-08"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "8a736afc6a752e8e1940f4b4b7154098b783af3ef91e6092982b00483ae6fef2",
+      "description_sha256": "d3cc06f5c7c7e27f6bec4918d8da02a7f447d84c11c395fc57f88985c2d5249c",
+      "previous_package_sha256": "72598291b71b69fccaa43d6597ba4a2f6e79ce8b21adcea35115ddde70bec953"
+    }
+  ]
 }

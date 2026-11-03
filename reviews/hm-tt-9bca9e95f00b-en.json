@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-22",
-    "package_sha256": "91ce7fd468389e8d6c97f1fc7b1f2e7edae9fb068d6d00c74224c7839e8c708c",
+    "package_sha256": "6c48610ae78b03ef9122433cc57837a86d24ec856a95a277c2ff799e44c80700",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/60#pullrequestreview-5617302813",
     "source_commit": "56614c2de414ee837859808f4bf860438d333f16",
     "source_review_id": 5617302813,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-22T16:11:32Z",
-    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -22,5 +22,15 @@
       "date": "2026-04-25",
       "url": "https://teletype.in/@history_math/ybc-7289-sqrt2"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "20f2134e2598ddef4fd1d8e3a9df4047db2cc957d31b9d07e1c47f1631ae8270",
+      "description_sha256": "82f68e2553906fd16f37847c8d26c3f0d6d907eac5db888a600eeedcbbaea4e9",
+      "previous_package_sha256": "91ce7fd468389e8d6c97f1fc7b1f2e7edae9fb068d6d00c74224c7839e8c708c"
+    }
+  ]
 }

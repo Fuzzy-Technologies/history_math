@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-1cd262dccbc7
-description: “Patronage of the sciences has always been my chief aim; what was lacking was a great monarch sufficiently interested
-  in the cause.” G. W. Leibniz
+description: "Leibniz developed calculus independently of Newton and devised influential mathematical notation. His biography connects work on logic, binary arithmetic and calculating machines with scientific institutions and the calculus priority dispute."
 type: essay
 tags:
 - History of mathematics

@@ -101,3 +101,4 @@ jobs:
           bundle exec ruby tests/teletype_dates_test.rb
           bundle exec ruby tests/image_originals_test.rb
           bundle exec ruby tests/external_originals_test.rb
+          bundle exec ruby tests/production_domain_test.rb

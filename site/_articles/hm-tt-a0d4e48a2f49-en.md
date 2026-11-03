@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-a0d4e48a2f49
-description: A goniometer measures angles. Contact and reflecting versions serve crystallography, industrial measurement
-  and the assessment of joint movement.
+description: "Goniometers measure angles by contact with an object or by light reflected from its faces. Instruments by Carangeot, Wollaston and Fedorov trace the development of crystallographic measurement, while medical models assess the range of joint movement."
 type: essay
 tags:
 - Instruments

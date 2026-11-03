@@ -2,10 +2,10 @@
 
 `site.lang: en` selects the default site edition. It does not select the original language of every article. Russian originals may publish immediately without an English version.
 
-| Edition | Project-site URL    | Current state                                                           |
-| ------- | ------------------- | ----------------------------------------------------------------------- |
-| English | `/history_math/`    | Full navigation and discovery; notices identify untranslated originals. |
-| Russian | `/history_math/ru/` | Published originals, reading room, showcase and search.                 |
+| Edition | Production URL                 | Current state                                                           |
+| ------- | ------------------------------ | ----------------------------------------------------------------------- |
+| English | `https://history-math.org/`    | Full navigation and discovery; notices identify untranslated originals. |
+| Russian | `https://history-math.org/ru/` | Published originals, reading room, showcase and search.                 |
 
 Every public page has its own canonical built from `site.url + site.baseurl + page.url`. In particular, a Russian article never uses the English homepage as canonical. `translation_key` is a stable work identity, not a slug and not a declaration that a translation already exists.
 
@@ -23,7 +23,7 @@ UI labels and the homepage, reading room and search markup are shared between ed
 
 The catalog routes are `/publications/` and `/ru/publications/`, with numbered pages under `page/N/`. The Russian section title and navigation use «Публикации»; the English title remains “Reading room”. Shared discovery, search, article-return and error links use these routes with the deployment base path. The paired pages retain the `catalog` translation key, so language links and canonical/hreflang metadata follow the new URLs. Article permalinks are independent of the catalog routes.
 
-For a later custom domain, change `_config.yml` `url` and set `baseurl: ''`. Continue storing local content/media paths without the project base prefix. CI also verifies a root-path build; no bulk link rewrite is needed.
+The primary production origin is explicitly defined in `_config.yml` with an empty base path. `history-math.ru` is a secondary redirect to the Russian edition, not a separate canonical origin. Continue storing local content/media paths without a deployment prefix. Historical `/history_math/` routes belong to the explicit `_config.reference.yml` test build; Pages publication retains its validated metadata override. No bulk link rewrite is needed.
 
 ## Error pages
 

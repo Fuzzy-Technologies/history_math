@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {cp, readFile, writeFile, mkdir, rm, readdir} from 'node:fs/promises';
 import {resolve, dirname} from 'node:path';
 import {buildPdfs} from '../scripts/article-pdf.mjs';
+await import('./pdf-print-media-browser.mjs');
 
 const root = resolve('test-results/pdf-cache-fixture');
 const cacheDirectory = resolve('test-results/pdf-cache-regression');

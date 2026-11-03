@@ -60,6 +60,10 @@ jobs:
           python3 tools/image_assets.py
           python3 tools/pdf_mastheads.py
           node scripts/check-articles.mjs --source-only
+      - name: Prepare bounded full-resolution JPEG originals
+        run: |
+          python3 -m pip install -r tools/requirements-images.txt
+          python3 scripts/publication_jpegs.py --registry site/_data/image_publication.json --output test-results/publication-jpegs/plan.json
       - name: Preflight existing S3 media copies
         env:
           PAGES_ORIGIN: https://${{ steps.pages.outputs.host }}
@@ -93,10 +97,10 @@ jobs:
           done
           node scripts/article-pdf.mjs --site-dir test-results/pdf-fixture
           node tests/pdf-cache-browser.mjs
-          HISTORY_MATH_PUBLICATION_REF="$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build --trace
+          HISTORY_MATH_PUBLICATION_REF="$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build --config "_config.yml,_config.reference.yml" --trace
           node scripts/article-pdf.mjs
           python3 scripts/check_pdf_colors.py _site
-          python3 scripts/check_site.py _site /history_math
+          python3 scripts/check_site.py _site /history_math https://fuzzy-technologies.github.io
           npm run test:browser
           node tests/article-details-browser.mjs
           node tests/article-urls-browser.mjs
@@ -124,10 +128,6 @@ jobs:
         with:
           path: .pdf-cache
           key: ${{ steps.pdf-cache.outputs.cache-primary-key }}
-      - name: Prepare bounded full-resolution JPEG originals
-        run: |
-          python3 -m pip install -r tools/requirements-images.txt
-          python3 scripts/publication_jpegs.py --registry site/_data/image_publication.json --output test-results/publication-jpegs/plan.json
       - name: Publish verified S3 media
         env:
           PAGES_ORIGIN: https://${{ steps.pages.outputs.host }}
@@ -219,5 +219,55 @@ jobs:
         with:
           name: bucket-budget-${{ github.sha }}-${{ github.run_id }}
           path: test-results/bucket-budget/
+          if-no-files-found: warn
+          retention-days: 90
+
+  media_cleanup:
+    if: github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    needs: [deploy, retire_oversized_media]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    environment: history-math-storage
+    permissions:
+      contents: write
+      actions: write
+      pull-requests: read
+    concurrency:
+      group: github-storage-maintenance
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/site/assets/images/
+            !/site/assets/fonts/
+            !/site/assets/vendor/katex/fonts/
+            !/docs/previews/
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Keep current media and remove verified obsolete copies
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          MEDIA_CLEANUP_AFTER_DEPLOY: 'true'
+          S3_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
+          S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+          S3_ENDPOINT_URL: ${{ vars.S3_ENDPOINT_URL }}
+          S3_REGION: ${{ vars.S3_REGION }}
+          S3_BUCKET: ${{ vars.S3_BUCKET }}
+          S3_PUBLIC_BASE_URL: ${{ vars.S3_PUBLIC_BASE_URL }}
+        run: node scripts/media-cleanup.mjs --apply
+      - name: Retain current-media cleanup evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: media-cleanup-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: test-results/media-cleanup/
           if-no-files-found: warn
           retention-days: 90

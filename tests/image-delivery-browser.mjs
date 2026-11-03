@@ -5,6 +5,8 @@ import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
 import {stubMetrika} from './metrika-fixture.mjs';
+import {imageObjects} from '../scripts/publication-media.mjs';
+import {publicationReplacements} from '../scripts/image-publication.mjs';
 
 const root = resolve(process.env.IMAGE_SITE_DIR || '_site');
 const base = process.env.IMAGE_BASEURL ?? '/history_math';
@@ -12,6 +14,7 @@ const inventory = JSON.parse(await readFile('site/_data/image_assets.json', 'utf
 for (const file of await readdir('site/_data/article_image_assets').catch(() => [])) {
   Object.assign(inventory, JSON.parse(await readFile('site/_data/article_image_assets/' + file, 'utf8')));
 }
+const deliveries = new Map(imageObjects(inventory, path => ({file: path}), publicationReplacements(process.cwd()), process.cwd()).map(image => [image.path, image.object]));
 const mime = {'.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json',
   '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2'};
 const server = createServer(async (request, response) => {
@@ -38,8 +41,31 @@ let checkedCrossOriginDownload = false;
 const externalURLs = new Set(Object.values(inventory).flatMap(entry => entry.external_original ?
   [entry.external_original.url, entry.external_original.api_url] : []));
 const originalRasterRequests = requests => requests.filter(url => !url.includes('/assets/images/previews/') && /\.(png|jpe?g|gif|webp)$/i.test(url));
+const publicURL = value => {
+  try { const url = new URL(value, origin); return url.origin + url.pathname; }
+  catch { return '[invalid URL]'; }
+};
+async function waitForOriginal(page, detail) {
+  const url = new URL(detail.original, origin);
+  // Full-size bucket reads have the same bounded deadline as media verification.
+  const timeout = url.origin === 'https://storage.yandexcloud.kz' && url.pathname.startsWith('/history-math-media-kz/') ? 120_000 : 30_000;
+  try {
+    await page.waitForFunction(() => document.querySelector('#image-viewer').getAttribute('aria-busy') === 'false', undefined, {timeout});
+    await page.locator('.viewer-canvas img').evaluate(img => img.decode());
+  } catch (error) {
+    const state = await page.evaluate(() => {
+      const viewer = document.querySelector('#image-viewer'), image = viewer?.querySelector('.viewer-canvas img');
+      return {busy: viewer?.getAttribute('aria-busy'), open: document.documentElement.classList.contains('viewer-open'),
+        image_complete: image?.complete, image_width: image?.naturalWidth, image_height: image?.naturalHeight};
+    }).catch(() => null);
+    console.error(JSON.stringify({check: 'original-image-load', path: detail.path, width: detail.width,
+      identity: detail.identity, original: publicURL(detail.original), timeout_ms: timeout, state}));
+    throw error;
+  }
+}
 try {
   for (const width of [390, 1440]) for (const path of pages) {
+    console.log(`Checking image delivery: ${path} at ${width}px`);
     const context = await browser.newContext({viewport: {width, height: 1000}, reducedMotion: 'reduce',
       colorScheme: width === 390 ? 'dark' : 'light'});
     await stubMetrika(context);
@@ -86,13 +112,14 @@ try {
       const identity = await trigger.locator('img').getAttribute('data-original-path');
       const external = inventory[identity].external_original;
       await trigger.click();
-      await page.waitForFunction(() => document.querySelector('#image-viewer').getAttribute('aria-busy') === 'false');
-      await page.locator('.viewer-canvas img').evaluate(img => img.decode());
+      await waitForOriginal(page, {path, width, identity, original});
       if (external) {
-        assert.equal(await page.locator('.viewer-canvas img').getAttribute('src'), external.url);
-        assert.ok(allRequests.some(url => url === external.url));
+        assert.equal(original, deliveries.get(identity).url);
+        assert.equal(await page.locator('.viewer-canvas img').getAttribute('src'), original);
+        assert.ok(allRequests.some(url => url === original));
+        assert.ok(!allRequests.some(url => url === external.url), 'Removed release copies must never be requested');
         assert.ok(!allRequests.some(url => url === external.api_url), 'Native delivery must not depend on API CORS');
-        assert.deepEqual([...new Set(originalRasterRequests(requests))], [new URL(external.url).pathname]);
+        assert.deepEqual([...new Set(originalRasterRequests(requests))], [new URL(original).pathname]);
       } else {
         assert.equal(await page.locator('.viewer-canvas img').getAttribute('src'), original);
         assert.deepEqual([...new Set(originalRasterRequests(requests))], [new URL(original, origin).pathname]);
@@ -102,7 +129,7 @@ try {
       if (!checkedDownload) {
         const [file] = await Promise.all([page.waitForEvent('download'), download.click()]);
         const bytes = await readFile(await file.path());
-        assert.equal(createHash('sha256').update(bytes).digest('hex'), inventory[identity].sha256);
+        assert.equal(createHash('sha256').update(bytes).digest('hex'), await trigger.locator('img').getAttribute('data-original-sha256'));
         checkedDownload = true;
       }
       await page.keyboard.press('Escape');
@@ -121,8 +148,7 @@ try {
         await trigger.locator('img').evaluate((img, url) => { img.dataset.original = url; }, remote);
         assert.equal(fetched, 0);
         await trigger.click();
-        await page.waitForFunction(() => document.querySelector('#image-viewer').getAttribute('aria-busy') === 'false');
-        await page.locator('.viewer-canvas img').evaluate(img => img.decode());
+        await waitForOriginal(page, {path, width, identity, original: remote});
         assert.ok(fetched >= 1);
         const [file] = await Promise.all([page.waitForEvent('download'), download.click()]);
         assert.equal(createHash('sha256').update(await readFile(await file.path())).digest('hex'), source.sha256);

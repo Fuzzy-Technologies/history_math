@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-b42f411dbebb
-description: Childhood discoveries and early talents of Pascal, Gauss, Kolmogorov and Wiener, alongside other celebrated
-  prodigies, show different paths into creative work.
+description: "Childhood discoveries by Pascal, Gauss, Kolmogorov and Wiener illustrate different paths of mathematical talent. Two ways to sum the numbers from 1 to 100 demonstrate independent pattern-finding and the importance of supporting gifted children."
 type: essay
 tags:
 - History of mathematics

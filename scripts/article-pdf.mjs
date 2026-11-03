@@ -36,12 +36,37 @@ export function printImageSources(html) {
     if (!original) return tag;
     // Migrated print pages use the largest losslessly encoded reading variant.
     // Keep PDF generation deterministic and local even when zoom uses GitHub.
-    if (/\sdata-original-api="[^"]+"/.test(tag) || /\/assets\/images\/hm-tt-[a-z0-9]+\//.test(original[1])) {
+    if (/\sdata-original-(?:api|storage)="[^"]+"/.test(tag) || /\/assets\/images\/hm-tt-[a-z0-9]+\//.test(original[1])) {
       return tag.replace(/\s(?:srcset|sizes)="[^"]*"/g, '');
     }
     return tag.replace(/\ssrc="[^"]*"/, () => ` src="${original[1]}"`)
       .replace(/\s(?:srcset|sizes)="[^"]*"/g, '');
   });
+}
+
+// Runs only in the private print document. Keep the established JPEG profile
+// for storage-backed rasters even when their reading variant needs no resizing.
+export async function preparePrintMedia({localOrigin, publicOrigin}) {
+  for (const img of document.querySelectorAll('.print-masthead img, .article-body img')) {
+    if (new URL(img.src).pathname.endsWith('.svg')) continue;
+    const bounds = img.getBoundingClientRect();
+    const ratio = Math.min(1, Math.max(bounds.width * 2.5 / img.naturalWidth, bounds.height * 2.5 / img.naturalHeight));
+    const migrated = Boolean(img.dataset.originalApi || img.dataset.originalStorage) || img.dataset.original?.includes('/assets/images/hm-tt-');
+    if (ratio >= 1 && !migrated) continue;
+    const canvas = document.createElement('canvas');
+    canvas.width = Math.ceil(img.naturalWidth * ratio); canvas.height = Math.ceil(img.naturalHeight * ratio);
+    const context = canvas.getContext('2d');
+    context.fillStyle = '#ffffff'; context.fillRect(0, 0, canvas.width, canvas.height);
+    context.drawImage(img, 0, 0, canvas.width, canvas.height);
+    img.style.width = `${bounds.width}px`; img.style.height = `${bounds.height}px`;
+    img.src = canvas.toDataURL('image/jpeg', 0.9);
+    await img.decode();
+  }
+  for (const link of document.querySelectorAll('a[href]')) {
+    if (link.getAttribute('href').startsWith('#')) continue;
+    const target = new URL(link.href);
+    if (target.origin === localOrigin) link.href = publicOrigin + target.pathname + target.search + target.hash;
+  }
 }
 
 export async function buildPdfs(siteDirectory, {cacheDirectory = '.pdf-cache', force = false, jobs = 2} = {}) {
@@ -157,31 +182,7 @@ export async function buildPdfs(siteDirectory, {cacheDirectory = '.pdf-cache', f
             throw new Error(`PDF render failed for ${article.url}: ${JSON.stringify({errors, state})}`);
           }
           // Downsample only the print DOM to about 240 dpi; never modify the archived assets.
-          await page.evaluate(async ({localOrigin, publicOrigin}) => {
-            for (const img of document.querySelectorAll('.print-masthead img, .article-body img')) {
-              if (new URL(img.src).pathname.endsWith('.svg')) continue;
-              const bounds = img.getBoundingClientRect();
-              const ratio = Math.min(1, Math.max(bounds.width * 2.5 / img.naturalWidth, bounds.height * 2.5 / img.naturalHeight));
-              const migrated = Boolean(img.dataset.originalApi) || img.dataset.original?.includes('/assets/images/hm-tt-');
-              // Encode migrated print rasters with the existing print JPEG profile,
-              // even when a reading-sized variant needs no further downsampling.
-              if (ratio >= 1 && !migrated) continue;
-              const canvas = document.createElement('canvas');
-              canvas.width = Math.ceil(img.naturalWidth * ratio); canvas.height = Math.ceil(img.naturalHeight * ratio);
-              const context = canvas.getContext('2d');
-              context.fillStyle = '#ffffff'; context.fillRect(0, 0, canvas.width, canvas.height);
-              context.drawImage(img, 0, 0, canvas.width, canvas.height);
-              // Keep the CSS dimensions stable when intrinsic pixel dimensions change.
-              img.style.width = `${bounds.width}px`; img.style.height = `${bounds.height}px`;
-              img.src = canvas.toDataURL('image/jpeg', 0.9);
-              await img.decode();
-            }
-            for (const link of document.querySelectorAll('a[href]')) {
-              if (link.getAttribute('href').startsWith('#')) continue;
-              const target = new URL(link.href);
-              if (target.origin === localOrigin) link.href = publicOrigin + target.pathname + target.search + target.hash;
-            }
-          }, {localOrigin, publicOrigin: manifest.origin});
+          await page.evaluate(preparePrintMedia, {localOrigin, publicOrigin: manifest.origin});
           const destination = resolve(root, '.' + article.pdf_url);
           await mkdir(dirname(destination), {recursive: true});
           const journal = article.lang === 'ru' ? 'Математика с Мансур-абый' : 'Mathematics with Mansur';

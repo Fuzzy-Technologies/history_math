@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-22",
-    "package_sha256": "0d7c01b39aabfc938eb0fc6363f39e76c476aa7ca1b6cd81d17292f47e846169",
+    "package_sha256": "534a1129ea1d75b70812a555c23cb352473488d8c6a21554bc0458189bc605f1",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/66#pullrequestreview-5617306495",
     "source_commit": "f4c4b6a1fdf3a30cf9d88b72a7b433edf0a6691c",
     "source_review_id": 5617306495,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-22T16:11:48Z",
-    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -22,5 +22,15 @@
       "date": "2026-04-10",
       "url": "https://teletype.in/@history_math/maya-zero"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "beabb9d669853b47f307efd8e07dc8fc666f093db30dccfe54c21cd13996fc6a",
+      "description_sha256": "f18a0e152e9a7b35f869e9578ac5939218c9e66f8feb3c579b3c79e2290adf04",
+      "previous_package_sha256": "0d7c01b39aabfc938eb0fc6363f39e76c476aa7ca1b6cd81d17292f47e846169"
+    }
+  ]
 }

@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "c5b542cc1f070ff705ed5af367b2258ddfa78c9c4e33c34ebc1511fb5b5d76e2",
+    "package_sha256": "da442f742c2e6587380f1eb9b6719d52cce31e2fdd8b179eb280ef5e92d68f79",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Оставь как есть и переведи как есть в адаптации и мержим.",
     "source_commit": "a4b27de658a94532d95f93f33facd94e14240d78",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/175"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/175",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -29,5 +30,15 @@
       "date": "2024-02-25",
       "url": "https://teletype.in/@history_math/Cirkul-02-25"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "9e835f2d349219cf8f348dcee942904821a063bb06594e0bba4119227370e0bd",
+      "description_sha256": "9f0e258e73d27b52d516275632d9a54e3eab26340aae603066f7de0fffeb8a35",
+      "previous_package_sha256": "c5b542cc1f070ff705ed5af367b2258ddfa78c9c4e33c34ebc1511fb5b5d76e2"
+    }
+  ]
 }

@@ -1,5 +1,7 @@
 # Stable article URLs
 
+The canonical production origin is `https://history-math.org`, with English at `/`, Russian at `/ru/`, and no `/history_math` base path. Canonical, hreflang, Open Graph, citation, sitemap and PDF article links use that origin plus each stable route. `history-math.ru` redirects to the Russian edition and is not a publication origin. The historical GitHub Pages origin/base path is available only by explicitly loading `_config.reference.yml`; see [deployment](DEPLOYMENT.md#publication-domain-and-reference-builds).
+
 Public archive articles use `hm-<12-character work hash>-<language>` as the final
 path segment. English routes are `/publications/hm-<hash>-en/`; Russian routes are
 `/ru/publications/hm-<hash>-ru/`. Authors, titles and publication dates do not affect

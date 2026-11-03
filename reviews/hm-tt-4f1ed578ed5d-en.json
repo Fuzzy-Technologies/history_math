@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "8c6a18178e70b9891e7e4a0a17f744fafc0842b54c172ceae76bb57bd266e2f4",
+    "package_sha256": "a11c9f17f1d9c600f0ccc8fe621c07a77297b91671d8298ac26638a78d1dd3d8",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Мержим.",
     "source_commit": "6b73769e80b5fd1b24a09028786895a7e0114e6e",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/182"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/182",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -21,5 +22,15 @@
       "date": "2024-01-21",
       "url": "https://teletype.in/@history_math/Seminar-Mordkovicha-01-21"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "b405579d467d27160c334bcc507e3f20c864a66f01311b8bacf2850e9cad7889",
+      "description_sha256": "ce9af36147b8e942188f98dd3de9665bedadacc66036c3b0a7f73fff509a42ab",
+      "previous_package_sha256": "8c6a18178e70b9891e7e4a0a17f744fafc0842b54c172ceae76bb57bd266e2f4"
+    }
+  ]
 }

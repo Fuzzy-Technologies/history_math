@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-22",
-    "package_sha256": "d19dd9517a00e0366acb3c0814e0b3f693669d8269f581c9b48ccbed85316225",
+    "package_sha256": "d1ad6aec91db31ead98889d12ebaca4be79f9274d17fe5ce30e13cc3bcae87d8",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/276#pullrequestreview-5609871665",
     "source_commit": "cd40da898168dfc815e4f05eece2e4bf666033e4",
     "source_review_id": 5609871665,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-22T06:01:16Z",
-    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions, translations and image bytes are unchanged."
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions, translations and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -56,5 +56,15 @@
   "manual_changes": [
     "Replaced formula-only images fig-4 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending. Retained every coefficient, sign and radical; made the nonzero leading coefficient and consistent cube-root branch condition explicit, and stated the inverse substitution for the original roots.",
     "Replaced Markdown-sensitive equation row spacing with explicit TeX row separators, preserving every term and sign in both editions."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "03130a1bac7bc18aa84f1af62f610fa14c50ae00d89dc5c6ce5b476771658e7b",
+      "description_sha256": "7741dbebb5cb23da6f652fad677c616211f9c97f096ed62de7fb23cc5d86e70b",
+      "previous_package_sha256": "d19dd9517a00e0366acb3c0814e0b3f693669d8269f581c9b48ccbed85316225"
+    }
   ]
 }

@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-2cfba39d0d7b
-description: The ancient rule of false position used trial values and proportional corrections to solve equations long
-  before formal symbolic algebra.
+description: "False position solves linear problems by correcting a trial value or comparing the errors of two trials. Historical examples and an algebraic derivation accompany Magnitsky’s classroom problem, where double false position gives 36 pupils."
 type: essay
 tags:
 - history_of_mathematics

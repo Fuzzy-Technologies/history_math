@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-76a2afb741de
-description: Paper formats connect geometric similarity with practical exam tasks, mathematical literacy and economical
-  printing.
+description: "A-series paper sizes preserve a side ratio of 1:√2 when a sheet is halved. Problems on similarity, area and font size show how examination tasks can become investigations that connect mathematical literacy with saving paper."
 type: essay
 tags:
 - History of mathematics

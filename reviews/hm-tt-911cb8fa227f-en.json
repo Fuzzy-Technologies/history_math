@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-23",
-    "package_sha256": "3dea37a03962e9b1b5820e3c7aaca14f29a6ab1ec3206423e3ac43118487faea",
+    "package_sha256": "539c114f017a5f59779bddd1fe3a18f749ac387591ce41e449bcd3c26a2a86d6",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/121#pullrequestreview-5626007619",
     "source_commit": "2a1dab6af10f4d8e6898df5f94aaf0e1b93c21b1",
     "source_review_id": 5626007619,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-23T08:51:23Z",
-    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -22,5 +22,15 @@
       "date": "2024-12-08",
       "url": "https://teletype.in/@history_math/Bible-math-Algebra-basics"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "d2ed4646876bab09265fce8f6b32fb10e4cb349b45a2fa47b8d632725ebdf0c3",
+      "description_sha256": "d500cbc076c4f8964a5df943f94cf3c7ff2bf0c80cac97f459d87c506cfb0883",
+      "previous_package_sha256": "3dea37a03962e9b1b5820e3c7aaca14f29a6ab1ec3206423e3ac43118487faea"
+    }
+  ]
 }

@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "0905abf467a0f29b165509bdee86c8ca89cf87447262046e3c5fc941b19a1252",
+    "package_sha256": "3d31f46ecb7b921e29864994e956218a47567e5ec26db720755c1e8bbca9cf5a",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Мержим.",
     "source_commit": "402e27857994ec8eb0ba528d98beca08439e1918",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/173"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/173",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -21,5 +22,15 @@
       "date": "2024-02-27",
       "url": "https://teletype.in/@history_math/Kachestvennye-zadachi-po-matematike-02-27"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "1f46c04f57eca7f3ed74e6266e925121599a409f7becfedb278683412e14c830",
+      "description_sha256": "ac0ed426e2ecda57274326dfc02619ad0abd9a03d7f7772ac96f5ef70e86f920",
+      "previous_package_sha256": "0905abf467a0f29b165509bdee86c8ca89cf87447262046e3c5fc941b19a1252"
+    }
+  ]
 }

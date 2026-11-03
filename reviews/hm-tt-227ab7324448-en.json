@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-23",
-    "package_sha256": "b97f56a6ae9021178943851739f695710ad7953ef0d1aa2de734f7d2d1a35a12",
+    "package_sha256": "731caa69f119b5cb80ff10354cbed4d8aef03489cf66f51173cc9fe382a7badb",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/113#pullrequestreview-5626007270",
     "source_commit": "dff34b2f5dfb6e98b06beaa0096d42447eab5750",
     "source_review_id": 5626007270,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-23T08:51:21Z",
-    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -61,5 +61,15 @@
   },
   "manual_changes": [
     "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "701c9fc6b21991e35bf87286c627ab04bf529975119cd63ee2c038c5cadbff2e",
+      "description_sha256": "385c9c57fe9bd12d43c56363dac1abb16f7e8d0410c41921c5fd3ad5761427ff",
+      "previous_package_sha256": "b97f56a6ae9021178943851739f695710ad7953ef0d1aa2de734f7d2d1a35a12"
+    }
   ]
 }

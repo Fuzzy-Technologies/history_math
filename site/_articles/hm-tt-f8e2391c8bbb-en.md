@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-f8e2391c8bbb
-description: Construction, woodworking and metalworking require accurate measurements with suitable tools.
+description: "A sliding bevel copies an angle by fitting its stock and blade against the two sides, locking the screw and transferring the setting to a workpiece. A basic model acts as a template, while versions with a scale or digital sensor also display the angle in degrees."
 type: instrument
 tags:
 - Instruments

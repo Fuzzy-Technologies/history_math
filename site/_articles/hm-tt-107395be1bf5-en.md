@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-107395be1bf5
-description: The planimeter, or integrator, is one of the oldest instruments for approximately determining the areas
-  of plane figures enclosed by closed boundaries.
+description: "A planimeter measures the area of a plane figure by tracing its boundary. Mechanical and electronic designs are described alongside the history of linear and polar instruments, including the inventions of Amsler and Zarubin."
 type: instrument
 tags:
 - Instruments

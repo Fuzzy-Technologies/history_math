@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "0aaff2d278c8d949f571b511f576f307312df2e7b835b9966ef33a0a27e8b84a",
+    "package_sha256": "d2f6566ead3a6f0c45906b577fc02d34788717f668e0124d4aaa69ae2c4ba14f",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Мержим.",
     "source_commit": "5ab16662d23046307e92a16384adf8daf5c505b1",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/155"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/155",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -21,5 +22,15 @@
       "date": "2024-06-09",
       "url": "https://teletype.in/@history_math/O-predmete-matematiki-kratkaya-harakteristika-06-09"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "e9444abbfe24c3dff79cccbe8859352f1d1c9e3bf91a002ece87948f98ac5de8",
+      "description_sha256": "bb8df00bee8fdff1211daa79f758be5f059a7b98777cc86157fbc19457eb9c28",
+      "previous_package_sha256": "0aaff2d278c8d949f571b511f576f307312df2e7b835b9966ef33a0a27e8b84a"
+    }
+  ]
 }

@@ -21,7 +21,7 @@ class TranslationNoticesTest < Minitest::Test
       end
       Dir.glob(File.join(source, "_articles/*-en.md")).each { |path| File.delete(path) }
       Dir.glob(File.expand_path("fixtures/articles/*.md", __dir__)).each { |file| FileUtils.cp(file, File.join(source, "_articles")) }
-      config = Jekyll.configuration("config" => File.expand_path("../_config.yml", __dir__),
+      config = Jekyll.configuration("config" => %w[_config.yml _config.reference.yml].map { |file| File.expand_path("../#{file}", __dir__) },
         "source" => source, "destination" => File.join(root, "output"), "quiet" => true)
       yield source, config
     end

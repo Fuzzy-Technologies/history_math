@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "1d8c236abe838a1af861e39edd3171cc6a30f04f562cd3c4f69e684304d9b67d",
+    "package_sha256": "800128999dca29a52617b386eddd26821538c7e9cb8a9309a39997bb7f509c18",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Мержим.",
     "source_commit": "7d57bca1d641e8801204eb194b6a9918557ddf51",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/170"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/170",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -21,5 +22,15 @@
       "date": "2024-04-06",
       "url": "https://teletype.in/@history_math/Geometricheskoe-mesto-tochek-na-kozah-04-06"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "8abd71deae0372856c705facf50bc6d54de99529d607572024a446a7ed113ce2",
+      "description_sha256": "1ce4e48285b9819522392bc6bb0dda80bdea9337c3b71196ecdd245603d6b35e",
+      "previous_package_sha256": "1d8c236abe838a1af861e39edd3171cc6a30f04f562cd3c4f69e684304d9b67d"
+    }
+  ]
 }

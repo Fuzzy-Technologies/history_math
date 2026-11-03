@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-9b2cd87f4c03
-description: The diagonal scale is a graphical instrument for measuring tenths and hundredths, using similar triangles
-  to support precise map and drawing measurements.
+description: "A diagonal scale uses similar triangles to measure segments to hundredths of a base interval. Instructions explain how to construct its grid and read lengths with dividers, alongside its uses in cartography, surveying and construction."
 type: instrument
 tags:
 - Instruments

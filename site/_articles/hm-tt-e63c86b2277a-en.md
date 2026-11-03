@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-e63c86b2277a
-description: 'A dilution problem for a warming holiday drink: how much juice or water makes wine into mulled wine
-  with 7% alcohol by volume.'
+description: "A mulled-wine problem uses percentages to calculate how much liquid reduces wine to 7% alcohol. In the model presented, two 0.75-litre bottles at 13% require 9/7 litres of water, and a simple formula gives the general result."
 type: essay
 tags:
 - Life hacks

@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "3b1245493373da6f2035dc7b68ede2824d58ea25f5c3a5faf96283079f3c055a",
+    "package_sha256": "24d3ed1f257817ed6c339ec11d1d12e8a3f5ae01f60953bce7735a1f401b8fbc",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Оставляем как есть, мержим.",
     "source_commit": "7f635c74e8cfd574be88d32ccb84c0fdb0021dda",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/145"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/145",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -36,5 +37,15 @@
       "date": "2024-07-14",
       "url": "https://teletype.in/@history_math/Matematika-Drevnego-Egipta-07-14"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "61695b447be07df5a6d9ff49bc5f4ad9d1995d7695d417d866328594d4d5e05f",
+      "description_sha256": "9171328759585a4f896f05dd37c92d07c227fc9d0e0681acb07906f260708250",
+      "previous_package_sha256": "3b1245493373da6f2035dc7b68ede2824d58ea25f5c3a5faf96283079f3c055a"
+    }
+  ]
 }

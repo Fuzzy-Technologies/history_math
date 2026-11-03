@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-c18ad1d221bd
-description: Girolamo Cardano's Ars Magna was a major step toward modern
-  algebra, but the story of its cubic formula remains controversial.
+description: "The varied career of physician and mathematician Girolamo Cardano leads to his 1545 Ars Magna and the formula for solving cubic equations. Publishing a method Tartaglia had shared under a promise of secrecy sparked a lasting dispute over priority and the right to disclose it."
 type: essay
 tags:
   - History of mathematics

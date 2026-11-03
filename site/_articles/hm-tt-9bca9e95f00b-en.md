@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-9bca9e95f00b
-description: The palm-sized Babylonian tablet YBC 7289 records a strikingly accurate approximation to √2 and offers
-  a glimpse of ancient scribal mathematics.
+description: "The Old Babylonian tablet YBC 7289 shows a square of side 30 and a sexagesimal approximation to √2 with an error below one millionth. It was probably a school exercise using a known coefficient; exactly how that approximation was calculated remains uncertain."
 type: essay
 tags:
 - History of mathematics

@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-0ba0b6281b22
-description: Farey sequences form a family of finite sets of rational numbers with distinctive and mathematically
-  beautiful properties.
+description: "Farey sequences order the reduced fractions from zero to one with bounded denominators. Examples and exercises develop their construction by mediants, the properties of neighbouring fractions and the connection with Euler's totient function."
 type: essay
 tags:
 - Experiments

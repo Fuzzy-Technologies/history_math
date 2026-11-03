@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-0a8e3e9ac2f8
-description: Mixture word problems received considerable attention in early mathematical texts, including Leonty
-  Magnitsky’s Arithmetic.
+description: "Magnitsky’s fish diagram finds mixing ratios from the differences between the initial and desired prices or concentrations. Wine costing 10 and 6 grivnas per bucket produces a 7-grivna mixture when one part of the dearer wine is combined with three parts of the cheaper."
 type: essay
 tags:
 - History of Mathematics

@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-efe3233ee7ab
-description: The 44th International Seminar on creativity in mathematics and computer science brought 205 participants
-  to Minsk on 25–27 September 2025.
+description: "The 44th Mordkovich seminar in Minsk brought mathematics and computer science educators together to discuss developing students' creativity. Its programme covered research, artificial intelligence, olympiads and Mansur Gilmullin's talk on algebra's history."
 type: essay
 tags:
 - history_of_mathematics

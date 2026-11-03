@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-cb91ae79e363
-description: 'Homothety in practical surveying: the plane table transfers directions and distances from the terrain
-  onto a drawing.'
+description: "A plane table allows a plot to be mapped directly in the field using a sighting rule and measured distances. Once the scale is set, directions to the plot’s vertices are drawn on the stationary board, distances are marked and the points joined into an outline."
 type: essay
 tags:
 - Instruments

@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-ed8bad53e76b
-description: From Euler to Warnsdorff’s rule, the knight’s tour connects a familiar chess puzzle with Hamiltonian
-  paths and algorithmic search.
+description: "A knight’s tour visiting every square once is a Hamiltonian path in the graph of legal moves. Warnsdorff’s rule chooses a square with the fewest onward moves, but the discussion explains why following that rule does not guarantee a complete tour."
 type: essay
 tags:
 - History of mathematics

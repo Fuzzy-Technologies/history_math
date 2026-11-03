@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-eea880ba2f7f
-description: A vernier is an auxiliary scale that allows fractions of a main scale division to be read more precisely;
-  its history links Nunes, Vernier and Avicenna.
+description: "A vernier refines a main-scale reading because matching two marks is easier than judging a position between them. Its history connects Nunes and Vernier with the development of instruments for precise measurement of lengths and angles."
 type: instrument
 tags:
 - instruments

@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-2ae35b38970b
-description: 'On Viktor Ambartsumian''s 115th birthday: his discoveries in astrophysics, his wartime work in Yelabuga
-  and the observatory he founded at Byurakan.'
+description: "Viktor Ambartsumian transformed ideas about stellar and galactic evolution and founded a school of theoretical astrophysics. His biography gives special attention to leading Leningrad University’s evacuated branch in Yelabuga, where light-scattering theory was developed."
 type: essay
 tags:
 - history_of_mathematics

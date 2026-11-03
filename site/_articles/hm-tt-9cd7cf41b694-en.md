@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-9cd7cf41b694
-description: 'On the 975th anniversary of Omar Khayyam (1048–1131): the astronomer, mathematician, philosopher and poet
-  whose quatrains made him immortal.'
+description: "Omar Khayyam is famous for his quatrains, but his scientific legacy includes studies of equations and parallel lines and a reform of the solar calendar. His mathematical and astronomical work is presented alongside the philosophical themes of his poetry."
 type: essay
 tags:
 - history_of_mathematics

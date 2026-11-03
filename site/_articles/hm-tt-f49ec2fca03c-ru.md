@@ -9,18 +9,18 @@ authors:
 author: Мансур Гильмуллин
 lang: ru
 translation_key: hm-tt-f49ec2fca03c
-description: "История счёта ведёт от пальцев, зарубок и узелков к числовым знакам Египта, Вавилона, Китая, Греции и Рима. Отдельное место занимает индийская десятичная позиционная система с нулём и распространение её записи через арабский мир в Европу."
+description: "Иллюстрированный рассказ для дошкольников и младших школьников знакомит с тем, как люди учились считать: от пальцев, зарубок и узелков до числовых знаков разных народов. Завершает его история десятичной позиционной записи, нуля и распространения индийских цифр через арабский мир в Европу."
 type: essay
 tags:
   - историяматематики
   - счёт
   - цифры
 math: true
-status: draft
+status: published
 date: '2023-09-11'
-permalink: /ru/articles/hm-tt-f49ec2fca03c/
+permalink: /ru/publications/hm-tt-f49ec2fca03c-ru/
 rights_basis: Owner-requested migration of the author's complete Teletype
-  publication on 2026-10-11; editorial publication approval remains pending; no
+  publication on 2026-10-11; editorial publication approved by the owner on 2026-11-03; no
   new license asserted.
 original_publication:
   outlet: Teletype
@@ -142,12 +142,10 @@ figures:
     path: /assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-12.png
     alt: Иллюстрация 12 к статье «Как люди научились считать»
     caption: ''
-    source: Архив иллюстраций исходной статьи в Teletype.
+    source: Исправленная иллюстрация, предоставленная владельцем 3 ноября 2026 года.
     credit: ''
-    rights_basis: Original image bytes from the owner-supplied Teletype archive,
-      migrated at the owner request; original attribution retained; no new
-      license asserted.
-    source_url: https://img2.teletype.in/files/53/26/53265d94-db22-4529-8a1a-ef52ae05a161.png
+    rights_basis: Owner-supplied corrected original authorized for this article on 2026-11-03; no new license asserted.
+    source_url: https://storage.yandexcloud.kz/history-math-media-kz/originals/c3761f458ceefa1d555e40247cfbb41865d7aa9151009b08c1053832e3bf94da/kak-lyudi-nauchilis-schitat-12.png
   - id: fig-13
     path: /assets/images/hm-tt-f49ec2fca03c/kak-lyudi-nauchilis-schitat-13.png
     alt: Иллюстрация 13 к статье «Как люди научились считать»

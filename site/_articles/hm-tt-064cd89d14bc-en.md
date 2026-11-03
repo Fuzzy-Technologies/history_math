@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-064cd89d14bc
-description: Mansur Gilmullin introduces his illustrated History of Mathematics, a book for pupils, students, teachers
-  and everyone interested in the history of science.
+description: "Mansur Gilmullin’s History of Mathematics connects the development of mathematical ideas with the history of civilisations. Its six chapters, illustrations, exercises and glossary serve pupils, students and teachers."
 type: essay
 tags:
 - history_of_mathematics

@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-bd200442cc7d
-description: On 26–28 September, Pitirim Sorokin Syktyvkar State University hosted the 43rd international seminar on mathematics
-  education.
+description: "In September 2024, the 43rd international seminar in Syktyvkar brought together 60 mathematics and computer science lecturers. Talks and workshops covered teacher training, geometry teaching, digital technology and AI, and the use of mathematical history in education."
 type: essay
 tags:
 - History of mathematics

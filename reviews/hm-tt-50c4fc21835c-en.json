@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-23",
-    "package_sha256": "7e9d9a99d257f7af1c4079274d03c5b5f01df31d68da3267b98d4175ce420b05",
+    "package_sha256": "e4d9dbd99a8df1325c83675f23ceea4b5ace361b0b09557505e521a6659a3e0a",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/108#pullrequestreview-5626006719",
     "source_commit": "b29a59f85fb2c89d43ec036744be5adce8711a69",
     "source_review_id": 5626006719,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-23T08:51:18Z",
-    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -22,5 +22,15 @@
       "date": "2025-02-02",
       "url": "https://teletype.in/@history_math/Seminar-for-Math-Teachers--2025-01-30"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "d9a2cd82a8227ebb7ea4b76d197c12fe4cc0046d7a5a6f601a2453f8e19f739d",
+      "description_sha256": "115e6297b41466d04a12644d20e5f36980e2c49c035894f979b619c225f79fff",
+      "previous_package_sha256": "7e9d9a99d257f7af1c4079274d03c5b5f01df31d68da3267b98d4175ce420b05"
+    }
+  ]
 }

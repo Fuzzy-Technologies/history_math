@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-1220bac36def
-description: Percentages, percentage points and basis points measure different kinds of change; practical examples
-  show how to distinguish them.
+description: "Percentages, percentage points and basis points measure different kinds of change. Interest-rate and return examples show why a rise from 10% to 12% is two percentage points but a 20% increase relative to the initial value."
 type: essay
 tags:
 - History of mathematics

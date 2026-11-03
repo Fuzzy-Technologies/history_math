@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-ab5d27d34d50
-description: In the eleventh century, Abu Rayhan al-Biruni showed how a mountain, a few angles and trigonometry
-  could reveal the radius of the Earth.
+description: "Al-Biruni's method derives the Earth's radius from a mountain's height and the dip of the horizon seen from its summit. Geometry and a worked example explain the method, while historical units and refraction qualify claims about its accuracy."
 type: essay
 tags:
 - Mathematics

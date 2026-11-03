@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-ac14563040be
-description: Nikolai Luzin’s Lusitania united pioneering mathematics, a remarkable generation of pupils and a playful
-  culture of intellectual fellowship.
+description: "Nikolai Luzin’s Lusitania brought future founders of major mathematical schools together around function theory and new ideas. Its scientific achievements and playful rituals are set alongside the political persecution of Luzin in 1936."
 type: essay
 tags:
 - History of mathematics

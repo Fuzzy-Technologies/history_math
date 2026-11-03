@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-2c9cf4ab7419
-description: The wartime years and scientific career of Fyodor Dmitriyevich Klement, recalled through his and his
-  son’s memoirs.
+description: "Memoirs by physicist Fyodor Klement and his son reveal research and everyday life at Leningrad University’s evacuated Yelabuga branch. Wartime luminescence work connects with the later history of his laboratory and the Tartu research school."
 type: essay
 tags:
 - History of mathematics

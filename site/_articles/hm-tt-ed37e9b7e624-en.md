@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-ed37e9b7e624
-description: A simple instrument for measuring circular cross-sections, drawing diameters and locating the centre
-  of a circle.
+description: "A diameter gauge and centre finder uses a right angle and a ruler along its bisector to measure circular sections. Lines drawn with the instrument in two positions intersect at the centre; a construction square can serve the same purpose."
 type: essay
 tags:
 - Instruments

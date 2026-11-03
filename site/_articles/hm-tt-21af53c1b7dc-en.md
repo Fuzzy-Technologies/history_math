@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-21af53c1b7dc
-description: Through geometry the soul touches the divine. Omar Khayyam
+description: "The legendary “Muhammad’s Signature”, formed by two intersecting crescents, becomes a one-stroke drawing puzzle. Graph theory supplies the explanation: every vertex has even degree, allowing all lines to be traced without repetition."
 type: problem
 tags:
 - History of mathematics

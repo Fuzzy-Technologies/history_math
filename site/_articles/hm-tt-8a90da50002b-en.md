@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-8a90da50002b
-description: The T-square is a drawing ruler with a perpendicular crosspiece at one end, used to draw parallel lines.
+description: "A T-square draws parallel lines by sliding its head along a drawing board's edge; adjustable and roller models extend its uses. A central tool in design offices before CAD, it later retained a place in drafting education and work done by hand."
 type: instrument
 tags:
 - Instruments

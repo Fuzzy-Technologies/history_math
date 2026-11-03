@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "d0d0b0517473fa7e1e2c3132f1e113d62238e813b1aea9cb0853d1f459538512",
+    "package_sha256": "6eb3355343a7fff741d23b34a57a40653e9a0cb167e456d23dc48e6479ad1ec1",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Мержим.",
     "source_commit": "96e7b56445f283c29cbbbb4bb80e1407594c9a84",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/158"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/158",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -21,5 +22,15 @@
       "date": "2024-05-19",
       "url": "https://teletype.in/@history_math/Vklad-matematiki-i-matematikov-v-Pobedu-Nauchnyj-polk-05-19"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "4ffac8d2aa7580ca3b96a96bcd0077691496271ee234264d4ada3fe53f029b66",
+      "description_sha256": "311ca23f56eaa2fc9fca284f6678cae71687be8e41d942bfc7b65a86f12faa68",
+      "previous_package_sha256": "d0d0b0517473fa7e1e2c3132f1e113d62238e813b1aea9cb0853d1f459538512"
+    }
+  ]
 }

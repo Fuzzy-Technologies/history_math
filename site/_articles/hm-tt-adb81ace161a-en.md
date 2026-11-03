@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-adb81ace161a
-description: A tape measure is a flexible graduated strip, rolled into a case, for measuring lengths and perimeters.
+description: "The tape measure evolved from flexible measuring ribbons through Chesterman’s steel tape to pocket instruments with springs and locks. Its scales and rewind mechanisms lead into developments using electronic displays, sensors and smartphone connections."
 type: instrument
 tags:
 - Instruments

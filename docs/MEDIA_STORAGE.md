@@ -6,8 +6,8 @@ workstation, local S3 key, new service account or manual file transfer is needed
 
 ## Destination and authority
 
-Both workflows use the existing `history-math-storage` environment, restricted
-to `master`. Only upload steps receive `S3_ACCESS_KEY_ID` and
+Media workflows use the existing `history-math-storage` environment, restricted
+to `master`. Only designated storage steps receive `S3_ACCESS_KEY_ID` and
 `S3_SECRET_ACCESS_KEY`. Its four environment variables must match:
 
 | Variable             | Value                                                  |
@@ -17,25 +17,33 @@ to `master`. Only upload steps receive `S3_ACCESS_KEY_ID` and
 | `S3_BUCKET`          | `history-math-media-kz`                                |
 | `S3_PUBLIC_BASE_URL` | `https://storage.yandexcloud.kz/history-math-media-kz` |
 
-The existing bucket-scoped publisher account requires object upload/read, with
-public HTTPS object reads. It does not need deletion, bucket administration or
-cloud/folder permissions. Bucket versioning and access policy are infrastructure
+The upload path requires object upload/read, with public HTTPS object reads.
+The separate owner-authorized cleanup also needs scoped version deletion for
+managed media. It does not need bucket administration or cloud/folder
+permissions. Bucket versioning and access policy are infrastructure
 configuration; publication does not change them. Credentials are consumed by
 the pinned AWS S3 SDK and never written to receipts or frontend assets.
 
 Objects use `originals/<sha256>/<filename>` or `pdf/<sha256>/<filename>`.
 Names identify immutable bytes. Existing objects are publicly reverified and
-reused; a changed file gets a new address. Publication does not rotate or delete
-objects. Key rotation remains: issue a replacement key, update the environment
+reused; a changed file gets a new address. The upload step does not delete
+objects; post-deployment cleanup removes obsolete copies after reference checks.
+Key rotation remains: issue a replacement key, update the environment
 Secrets, verify publication, then revoke the former key.
+
+[Current media cleanup](MEDIA_CLEANUP.md) keeps the current site's and open
+drafts' required PDFs/images. There is no previous-build archive or grace-period
+timer. It also removes verified GitHub migration copies, old Actions artifacts
+and superseded PDF caches. Bucket policy remains an infrastructure responsibility.
 
 ## Automatic publication
 
 `Publish approved master` retains its existing source, render, PDF and browser
-gates. After validating article sources, an upload-only migration preflight
-copies existing PDFs and master originals before expensive rendering. Once the
-deployed PDF manifest uses S3 URLs, that preflight becomes a metadata-only check.
-It never rewrites links or deletes files. After producing validated PDFs, the
+gates. After validating article sources, JPEG preparation and upload-only
+preflight ensure current originals exist in S3 before rendering or browser
+checks. Migrated PDFs are not recopied; existing originals receive metadata
+checks and only missing objects are uploaded. Preflight never deletes files.
+After producing validated PDFs, the
 final publication step:
 
 1. Reuses the public media verified during the migration preflight. No manual
@@ -61,13 +69,59 @@ final publication step:
 Transfer or verification failures block the new Pages deployment. The current
 site remains live. Partial uploads are safe to reuse on a later run. A failure
 after output pruning affects only the temporary runner output. Earlier objects
-remain available for the previous site's links and for rollback.
+remain available until successful deployment changes the current reference set;
+post-deployment cleanup then retires unreferenced versions.
 
 Transient public-read disconnects, timeouts, rate limits and gateway errors
 receive at most three attempts with bounded backoff. Integrity, authentication,
 TLS and metadata failures still block publication. Error diagnostics identify
 the public object key and a network error code, never an upstream message or a
 redirected signed URL.
+Authenticated S3 upload/HEAD failures report their HTTP status, a recognized
+provider/network error code and SDK attempt count without exposing raw messages.
+Media processes give each network-family connection attempt at least ten seconds,
+preserving a longer operator setting. The Node LTS default is only 250 ms, which
+can abandon a viable remote TCP connection before an unreachable fallback fails.
+The longer budget also accommodates cross-region handshakes that exceed two seconds.
+See the [Node API](https://nodejs.org/docs/latest-v22.x/api/net.html#netsetdefaultautoselectfamilyattempttimeoutvalue)
+and [upstream connection-timeout report](https://github.com/nodejs/node/issues/54359).
+Family selection, TLS checks, overall request deadlines and bounded retries remain enabled.
+Anonymous reads of this bucket use a bounded Node HTTPS connection pool with
+IPv4 DNS resolution. The configured hostname remains the DNS and TLS target;
+only GET and HEAD are accepted, credentials and redirects are rejected, and
+caller cancellation deadlines are preserved. GitHub and Pages use their existing
+fetch transport. Authenticated S3 operations retain SDK signing and bounded
+retries, with an IPv4 HTTPS agent, certificate validation, a 30-second connection
+deadline and a 120-second request deadline. Deletion failures record only the
+exact version identity, bounded HTTP/network code and SDK attempt count.
+Python JPEG preparation also resolves public bucket connections through IPv4,
+using the standard HTTPS certificate and hostname checks. Its opener preserves
+configured proxy handling, rejects public-bucket redirects and credentials, and
+leaves GitHub and Pages requests on the original urllib transport.
+JPEG preparation uses the pinned conversion registry without first downloading an
+unused remote receipt. Before conversion, `check-jpeg-cache.mjs` validates every
+registry identity and checks existing JPEGs through the shared bounded Node HTTPS
+pool. The private process receipt binds its cached paths to the exact input
+registry SHA-256; Python reuses those records without a second set of one-shot
+HEAD connections. Size, MIME and SHA metadata must match. Only a real 404 or
+metadata mismatch permits regeneration; exhausted or forbidden reads stop
+preparation instead of falling back to a retired source. Non-registry preparation
+retains its existing checked Python path. A failed conversion cancels queued
+preparation tasks while any already-running bounded requests finish. Publication
+preflight and final anonymous full-byte verification remain mandatory.
+JPEG and cleanup verification stop assigning queued objects after the first
+failure, wait for their already-running bounded reads and then fail the job.
+The explicit manual S3 recovery in `docs/MEDIA_CLEANUP.md` can remove obsolete
+versions while a publication is blocked; it preserves live/master/draft references
+and excludes concurrent publication through the existing workflow lock.
+
+The image-delivery browser gate gives full-size bucket originals a bounded
+120-second load deadline, matching public media verification; local and mocked
+non-bucket images retain their 30-second deadline. It still requires the viewer
+to finish loading, successful decoding and exact download hashes. Each page and
+viewport is logged, and a failed load reports its public URL and viewer state
+without query strings or credentials. A slow or failed original never counts as
+a successful check.
 
 The pre-migration size gate moves after media finalization: a temporary build
 containing local PDFs must not block a valid lightweight Pages publication.
@@ -113,10 +167,9 @@ master-only secrets and the upload/verify/prune/check/Pages ordering. Browser
 and PDF checks run in the owner-approved master publication as required by the
 development protocol. Source tests do not prove a real bucket upload occurred.
 
-The draft does not authorize deleting source originals from Git. If removing
-them from the repository is desired after successful migration, prepare a
-separate reviewed change with stored receipts and approval-digest compatibility.
-Do not rewrite history to reduce repository size.
+Cleanup deletes verified redundant Release binaries, not Git history or the
+unchanged source descriptors bound to editorial approval. Current reading images,
+logos and print assets remain in Git. Do not rewrite history to reduce size.
 
 ## Bounded original downloads
 

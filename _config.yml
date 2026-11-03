@@ -1,7 +1,7 @@
 title: Mathematics with Mansur
 description: A journal of the history of mathematics — people, ideas, problems, and instruments.
-url: https://fuzzy-technologies.github.io
-baseurl: /history_math
+url: https://history-math.org
+baseurl: ""
 lang: en
 source: site
 destination: _site

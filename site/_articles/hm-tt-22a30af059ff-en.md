@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-22a30af059ff
-description: Bibikov's agrometer is a ruler that measures the area of a triangle on a drawing in a single operation.
+description: "Bibikov’s agrometer is a 2 cm-wide ruler that measures a drawn triangle’s area through a segment’s length. It replaces the original triangle with one of equal area and altitude two units, making the base length numerically equal to the area."
 type: essay
 tags:
 - Instruments

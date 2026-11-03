@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-21",
-    "package_sha256": "18b1c201e98fe23bb0a41d3bf29dd2cb147a57329bcbb89d719be638869bb11c",
+    "package_sha256": "533cc3fa3dbe82fe81162685f7d3d65a3f9e5614ac5f028a98125949ce1d12c7",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/196#pullrequestreview-5606340077",
     "source_commit": "1208389582e797a249e6f8cdab98ad48760eda5f",
     "source_review_id": 5606340077,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-21T21:16:39Z",
-    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged."
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -33,5 +33,15 @@
   },
   "manual_changes": [
     "Replaced formula-only images fig-5 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "5d3e4dd9f37103af6ae082859d082ab706d87dd2bde481b6e1fad6145c9b7878",
+      "description_sha256": "6813c78cb2fad7f472ea391137cdda8d451e075fd77b14f795457516e0102e53",
+      "previous_package_sha256": "18b1c201e98fe23bb0a41d3bf29dd2cb147a57329bcbb89d719be638869bb11c"
+    }
   ]
 }

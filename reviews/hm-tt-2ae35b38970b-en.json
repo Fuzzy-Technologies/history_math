@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "7d9bc31dc68d4f91d9fcdb250dd133af87466e984f8fc33d09b6762c83618bee",
+    "package_sha256": "ca8d4e3773af037b3164f4e7a56fbc2d9aed225d2239166725f1ebb7d466353e",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Исправлять ничего не надо. Мержить.",
     "source_commit": "349bc8339126e98140027a26baf8961abd2463fa",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/228"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/228",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -36,5 +37,15 @@
       "date": "2023-09-15",
       "url": "https://teletype.in/@history_math/Akademik-Viktor-Amazaspovich-Ambarcumyan-Okno-v-beskonechnost-09-15"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "be9075a39e58bd7a59d0dab65ef825035aae92705bb652154fb55924e5f80ebf",
+      "description_sha256": "0770f2ae5a71811f793a48cab19e72694de8c26052a0fc9fb06dcc409c49570f",
+      "previous_package_sha256": "7d9bc31dc68d4f91d9fcdb250dd133af87466e984f8fc33d09b6762c83618bee"
+    }
+  ]
 }

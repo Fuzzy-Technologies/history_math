@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-50b0ebc801ff
-description: A marking gauge turns parallel-line geometry into practical layout work, from woodworking to modern
-  height measurement.
+description: "A marking gauge draws lines at a set distance from a workpiece's edge, putting parallelism to practical use in joinery. Its development from a wooden stock and scriber to the height gauge traces a path from craft marking to precise height measurement."
 type: instrument
 tags:
 - Instruments

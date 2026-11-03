@@ -2,6 +2,8 @@ import {readFileSync, writeFileSync, mkdirSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {checkSources, checkArticle} from './article-checks.mjs';
+import {digestProblems} from './article-digest.mjs';
+import {parseArticle} from './article-frontmatter.mjs';
 import {checkBrowser} from './article-browser.mjs';
 import {reportLanguage, overall, humanReport, checksForProfile} from './article-messages.mjs';
 import {imageInventory} from './external-originals.mjs';
@@ -31,6 +33,12 @@ try {
   report.findings.push(...source.findings);
   report.findings.push(...imageSizeFindings(imageInventory(root), publicationReplacements(root), publicationSizeExceptions(root)));
   report.articles = source.articles;
+  for (const article of source.articles) {
+    const {data} = parseArticle(readFileSync(resolve(root, article.file), 'utf8'));
+    for (const detail of digestProblems(data.description, data.lang)) {
+      report.findings.push({code: 'HM_DIGEST', severity: 'error', file: article.file, line: 1, detail});
+    }
+  }
   for (const template of ['templates/article.md', 'templates/minimal-article.md']) {
     report.findings.push(...checkArticle(readFileSync(template, 'utf8'), template, root).findings.filter(x => x.severity === 'error'));
   }
@@ -42,11 +50,11 @@ try {
       if (manifest.commit !== commit) throw new Error('Preview commit does not match the checked commit');
       report.checks.build = manifest.jekyll === 'pass' ? 'pass' : 'not_run';
     } else {
-      report.checks.build = run('HM_BUILD', option('--bundle', 'bundle'), ['exec', 'jekyll', 'build', '--config', '_config.yml,_config.review.yml', '--trace']) ? 'pass' : 'fail';
+      report.checks.build = run('HM_BUILD', option('--bundle', 'bundle'), ['exec', 'jekyll', 'build', '--config', '_config.yml,_config.reference.yml,_config.review.yml', '--trace']) ? 'pass' : 'fail';
       if (report.checks.build === 'pass') writeFileSync(resolve(preview, 'review-build.json'), JSON.stringify({commit, jekyll: 'pass'}));
     }
     if (report.checks.build === 'pass') {
-      report.checks.output = run('HM_OUTPUT', option('--python', process.env.PYTHON_EXECUTABLE ?? 'python3'), ['scripts/check_site.py', preview, '/history_math']) ? 'pass' : 'fail';
+      report.checks.output = run('HM_OUTPUT', option('--python', process.env.PYTHON_EXECUTABLE ?? 'python3'), ['scripts/check_site.py', preview, '/history_math', 'https://fuzzy-technologies.github.io']) ? 'pass' : 'fail';
       const browser = await checkBrowser(preview, report.articles, resolve('test-results/article-screenshots'));
       report.findings.push(...browser.findings); report.pages = browser.pages;
       report.checks.browser = browser.findings.length ? 'fail' : 'pass';

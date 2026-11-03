@@ -2,7 +2,7 @@ import {readFile, writeFile, readdir, realpath, unlink, stat} from 'node:fs/prom
 import {resolve, relative, sep, basename} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {imageInventory, validateExternalOriginal} from './external-originals.mjs';
-import {storage, mediaObject, validateObject, assertBytes, sha256, configuredClient, responseBytes, transfer, readWithRetries} from './s3-media.mjs';
+import {storage, mediaObject, validateObject, assertBytes, sha256, configuredClient, responseBytes, transfer, readWithRetries, mediaRead} from './s3-media.mjs';
 import {publicationReplacements, publicationSizeExceptions, jpegObject, imageSizeFindings} from './image-publication.mjs';
 
 export async function filesUnder(directory) {
@@ -84,7 +84,7 @@ export async function publicationPlan(root, siteDirectory) {
     objects: uniqueObjects([...images.map(image => image.object), ...pdfs.map(pdf => pdf.object), ...pendingJpegs])};
 }
 
-export async function sourceBytes(object, request = fetch, retryOptions) {
+export async function sourceBytes(object, request = mediaRead, retryOptions) {
   if (object.source.file) {
     const bytes = await readFile(object.source.file);
     assertBytes(object, bytes);
@@ -95,6 +95,15 @@ export async function sourceBytes(object, request = fetch, retryOptions) {
   // from a pull request. Only the project's existing release objects are valid.
   if (!source.href.startsWith('https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-') ||
       source.search || source.hash || source.username || source.password) throw new Error('Untrusted original source');
+  // S3 is authoritative after migration. Legacy release descriptors remain
+  // provenance for unchanged editorial approval digests, not backup copies.
+  const cached = await readWithRetries(`S3 source ${object.key}`, async () => {
+    const replica = await request(object.url, {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)});
+    if (replica.status === 404) { await replica.body?.cancel(); return null; }
+    const bytes = await responseBytes(replica, object.bytes);
+    assertBytes(object, bytes); return bytes;
+  }, retryOptions);
+  if (cached) return cached;
   return readWithRetries(`original source ${object.key}`, async () => {
     const bytes = await responseBytes(await request(source, {credentials: 'omit', redirect: 'follow', signal: AbortSignal.timeout(120_000)}), object.bytes);
     assertBytes(object, bytes);

@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-23",
-    "package_sha256": "4ba7c8c5897af64776bb12c2b3bea5447aebbc8f971f603c584a0e1094c791c4",
+    "package_sha256": "f66f2931fd69f04f5a662485985b7420e64617a326a175259c18a81bf8ecd3d4",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/95#pullrequestreview-5626005601",
     "source_commit": "c5e3d5e4bd1598a2ef911126c48b9a8ca5c43bc5",
     "source_review_id": 5626005601,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-23T08:51:11Z",
-    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -30,5 +30,15 @@
       "date": "2025-03-19",
       "url": "https://teletype.in/@history_math/Magomet-sign"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "15ba23960271745bb76dd82d1ff41b5bc95578796ab4e9790aa215ebbd96ddb4",
+      "description_sha256": "86e8a323094f3d69e60decaf01fb173bd6fbb79cf4ad2f5b4e6e65975203d375",
+      "previous_package_sha256": "4ba7c8c5897af64776bb12c2b3bea5447aebbc8f971f603c584a0e1094c791c4"
+    }
+  ]
 }

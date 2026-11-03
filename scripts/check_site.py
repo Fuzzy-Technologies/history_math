@@ -91,7 +91,7 @@ def ExternalLocaleError(url, language):
     return False
 
 
-def CheckSite(sitePath, basePath, site_origin="https://fuzzy-technologies.github.io"):
+def CheckSite(sitePath, basePath, site_origin="https://history-math.org"):
     """Check rendered files against the configured publication origin and path."""
 
     sitePath = Path(sitePath).resolve()
@@ -221,5 +221,5 @@ def CheckSite(sitePath, basePath, site_origin="https://fuzzy-technologies.github
 
 
 if __name__ == "__main__":
-    CheckSite(sys.argv[1] if len(sys.argv) > 1 else "_site", sys.argv[2] if len(sys.argv) > 2 else "/history_math",
-              sys.argv[3] if len(sys.argv) > 3 else "https://fuzzy-technologies.github.io")
+    CheckSite(sys.argv[1] if len(sys.argv) > 1 else "_site", sys.argv[2] if len(sys.argv) > 2 else "",
+              sys.argv[3] if len(sys.argv) > 3 else "https://history-math.org")

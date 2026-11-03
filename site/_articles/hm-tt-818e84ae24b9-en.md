@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-818e84ae24b9
-description: Explore the mathematical rules behind the tessellations seen in M. C. Escher's pictures and construct a small
-  theory of your own.
+description: "Building a “little theory” of tessellations teaches pupils to choose foundational statements, define concepts and prove properties of tilings. Tasks and historical notes introduce the three regular and eight semiregular tessellations."
 type: essay
 tags:
 - History of mathematics

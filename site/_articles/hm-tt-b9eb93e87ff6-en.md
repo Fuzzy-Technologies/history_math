@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-b9eb93e87ff6
-description: Alexander the Great’s conquests opened a new age in the ancient world, creating an empire larger than
-  any that had existed before.
+description: "Alexandria’s Mouseion brought research, teaching and culture together under Ptolemaic state patronage. Its library, scholars’ working conditions and links between mathematics, astronomy and other fields illustrate Alexandria’s role as a scientific centre of the Hellenistic world."
 type: essay
 tags:
 - History of Mathematics

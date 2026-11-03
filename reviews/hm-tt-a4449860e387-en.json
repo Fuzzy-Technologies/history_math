@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-21",
-    "package_sha256": "d8b2b00efe44bf81f63de8eef401497dd2095b1ea91495e3c9812cb0e8133b00",
+    "package_sha256": "f15d757cb5a520a1bceccad18b753fa44d4867ff0e953909af9524a1351386be",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/109#pullrequestreview-5606338257",
     "source_commit": "8d7f4d207df6b4395aa3e5ef48045902253599da",
     "source_review_id": 5606338257,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-21T21:16:30Z",
-    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged."
+    "post_review_changes": "Publication status, rights confirmation and approval bookkeeping only. Reviewed article prose, formulas, captions and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -35,5 +35,15 @@
     "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections.",
     "Replaced formula-only images fig-2, fig-3, fig-4, fig-5 with native LaTeX and localized explanatory text after visual comparison with the original images. Removed their figure entries and selected reading assets; retained diagrams and historical facsimiles. Renewed editorial review is pending. Transcribed every displayed extraction step as aligned arithmetic, retaining the intermediate trial products and remainders. The adjacent erroneous 496 - 496 is corrected to 416 - 416.",
     "Removed the four redundant former-image captions in each edition; retained every worked extraction step and the corrected 416 subtraction."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "b82ac640406c3f9b78ab32d9afd71acc7a7411183d5b19899f4af0c1c0c265ce",
+      "description_sha256": "436ebd128e7e511073797c41fc207e3e30f210292f158f51be47d0a6ebd16fe2",
+      "previous_package_sha256": "d8b2b00efe44bf81f63de8eef401497dd2095b1ea91495e3c9812cb0e8133b00"
+    }
   ]
 }

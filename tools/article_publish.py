@@ -9,6 +9,7 @@ commit and a receipt; moving the existing PR branch is a separate leased action.
 import argparse
 import base64
 import hashlib
+import importlib.util
 import json
 import mimetypes
 import os
@@ -32,6 +33,38 @@ ARTICLE = re.compile(r"[a-z0-9][a-z0-9-]{0,79}\Z")
 IMAGE = re.compile(r"[a-z0-9][a-z0-9.-]*\.(?:png|jpe?g|webp|gif)\Z")
 RASTER_SUFFIXES = {".png", ".jpg", ".jpeg", ".webp", ".gif"}
 PUBLIC_ORIGIN = "https://fuzzy-technologies.github.io"
+MEDIA_BASE = "https://storage.yandexcloud.kz/history-math-media-kz"
+
+
+def current_s3_original(logical_path, entry):
+    """Resolve trusted delivery metadata without changing approval provenance."""
+    if "external_original" not in entry:
+        return None
+    spec = importlib.util.spec_from_file_location("trusted_preparation_images", ROOT / "tools/image_assets.py")
+    images = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(images)
+    try:
+        external = images.external_original(entry, logical_path)
+    except ValueError as error:
+        raise PublishError("Invalid existing original provenance") from error
+    if external is None:
+        return None
+    registry = json.loads((ROOT / "site/_data/image_publication.json").read_text("utf-8"))
+    if registry.get("version") != 1 or registry.get("policy") != "jpeg-max15mb-444-pillow-12.3.0-v1" or not isinstance(registry.get("replacements"), dict):
+        raise PublishError("Invalid trusted JPEG registry")
+    record = registry["replacements"].get(logical_path)
+    sha, size, filename = entry["sha256"], entry["bytes"], PurePosixPath(logical_path).name
+    if record is not None:
+        if not isinstance(record, dict) or record.get("policy") != registry["policy"] or \
+                any(record.get(key) != entry[source] for key, source in (("source_sha256", "sha256"), ("source_bytes", "bytes"), ("width", "width"), ("height", "height"))) or \
+                not isinstance(record.get("source"), dict) or record["source"].get("external_original") != external or \
+                not SHA256.fullmatch(str(record.get("sha256", ""))) or type(record.get("bytes")) is not int or \
+                not 0 < record["bytes"] < size or record["bytes"] > 15_000_000 or \
+                record.get("filename") != PurePosixPath(filename).stem + ".jpg":
+            raise PublishError("JPEG delivery differs from the reviewed source identity")
+        sha, size, filename = record["sha256"], record["bytes"], record["filename"]
+    return {"url": f"{MEDIA_BASE}/originals/{sha}/{filename}", "sha256": sha, "bytes": size,
+            "normalized": record is not None}
 
 
 class PublishError(RuntimeError):
@@ -167,6 +200,7 @@ class GitHubAPI:
         self.releases = {}
         self.release_assets = {}
         self.public_api_binary_verified = False
+        self.verified_s3_originals = {}
         self.last_write = 0
 
     def _wait(self, seconds, reason):
@@ -335,6 +369,20 @@ class GitHubAPI:
                 self._wait(2 ** retries, "public download retry")
 
     def ensure_original(self, article_id, logical_path, entry, local_path, master_sha, delivery_probe=True):
+        delivery = current_s3_original(logical_path, entry)
+        if delivery:
+            try:
+                actual = self.download_digest(delivery["url"])
+            except PublishError as error:
+                # Only a genuinely not-yet-migrated exact original may use the
+                # legacy upload path. A missing normalized JPEG must stop.
+                if delivery["normalized"] or not isinstance(error.__cause__, HTTPError) or error.__cause__.code != 404:
+                    raise
+            else:
+                if actual != (delivery["sha256"], delivery["bytes"]):
+                    raise PublishError("Current S3 original checksum or size differs")
+                self.verified_s3_originals[logical_path] = delivery
+                return entry["external_original"]
         expected_sha = entry["sha256"]
         expected_size = entry["bytes"]
         original = PurePosixPath(logical_path).name
@@ -733,6 +781,9 @@ def run_prepare(args, api=None, reader=None):
                 original.unlink()
                 receipt["removed_original_bytes"] += entry["bytes"]
             receipt["originals"].append({"path": logical, **descriptor, "verified": True})
+            delivery = getattr(api, "verified_s3_originals", {}).get(logical)
+            if delivery:
+                receipt["originals"][-1]["delivery"] = delivery
         fragment.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", "utf-8")
         manifest_entries(stage, args.article_id)
         tree_entries = []

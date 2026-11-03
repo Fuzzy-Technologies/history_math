@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-e0952dd62d49
-description: The history of measures reflects everyday work, trade, conquest and language, from body-based lengths to
-  weights, money and the metric system.
+description: "The history of the arshin, sazhen, pud and other old units connects measurement with the human body, labour, trade and money. The variety of local units explains the need for standards, state supervision and a transition to the metric system."
 type: essay
 tags:
 - history_of_mathematics

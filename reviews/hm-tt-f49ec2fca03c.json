@@ -2,7 +2,12 @@
   "review_version": 1,
   "article_id": "hm-tt-f49ec2fca03c",
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "62efac375eb1cc089a746bdb9f5dea37633df18c87113f07644e2bcc18478917",
+    "authority": "Direct owner publication instruction during article preparation on 2026-11-03, explicitly covering the supplied corrected figure, the child-oriented digest and acceptance of remaining editorial notes.",
+    "reviewed_source_commit": "1bfbac5144abaeab208b71418b758afeef2ae878"
   },
   "questions": [],
   "reconciliation": {
@@ -15,7 +20,8 @@
     }
   },
   "manual_changes": [
-    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+    "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged.",
+    "Replaced the numeral table (figure12) and regenerated its lossless reading preview from the owner-supplied corrected original. Added an age-appropriate digest; retained the complete article body, its other22 illustrations and original publication date."
   ],
   "owner_requested_revisions": [
     {
@@ -24,6 +30,14 @@
       "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
       "previous_description_sha256": "b4fa366771c191d4edb879ea2ee728456a58869cf68a4c21026cf309295eb2fd",
       "description_sha256": "222a71f22bbc67f8cee93f0b67e886e05c996386e36a936e9189ca85264de0c5"
+    },
+    {
+      "date": "2026-11-03",
+      "scope": "numeral table (figure12), its reading preview, child-oriented digest and publication preparation",
+      "authority": "Direct owner instruction to use the corrected original, introduce the article for preschool and early primary school children, accept remaining minor editorial notes and publish.",
+      "previous_description_sha256": "222a71f22bbc67f8cee93f0b67e886e05c996386e36a936e9189ca85264de0c5",
+      "description_sha256": "1982586b596951ce1f3a046634e1c188f36c01d7d4e0f735babfce1b63130c8f",
+      "original_image_sha256": "c3761f458ceefa1d555e40247cfbb41865d7aa9151009b08c1053832e3bf94da"
     }
   ]
 }

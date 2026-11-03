@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-d055acbd27c8
-description: 'Marking Donald Knuth''s 85th birthday: mathematics, algorithms,
-  The Art of Computer Programming and the creation of TeX.'
+description: "Donald Knuth’s work connects mathematics with algorithm analysis and computer typography. The Art of Computer Programming, Concrete Mathematics, TeX and METAFONT reveal his contributions to teaching programmers and typesetting scientific books."
 type: essay
 tags:
   - history_of_mathematics

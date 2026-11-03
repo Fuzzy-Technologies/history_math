@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-0b1ea17c8b02
-description: Euler's pupil Stepan Rumovsky helped shape mathematics, astronomy and education in Russia, from the Academy of Sciences to Kazan University.
+description: "Euler's pupil Stepan Rumovsky combined mathematics and astronomy with cartography and education. He wrote school textbooks and helped establish Kazan University and the educational system of its district."
 type: essay
 tags:
   - History of mathematics

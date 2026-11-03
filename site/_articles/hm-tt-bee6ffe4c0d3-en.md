@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-bee6ffe4c0d3
-description: An inversor constructs inverse figures and can convert circular motion into straight-line motion. The
-  Peaucellier–Lipkin linkage illustrates its geometry.
+description: "The Peaucellier–Lipkin inversor converts motion along a circle through a fixed pivot into straight-line motion. The geometry of its links explains how the mechanism realises inversion and how such instruments can demonstrate geometry in the classroom."
 type: essay
 tags:
 - Instruments

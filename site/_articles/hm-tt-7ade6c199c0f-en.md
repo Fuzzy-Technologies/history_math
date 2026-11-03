@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-7ade6c199c0f
-description: The Maya independently developed positional number notation with a zero sign, an essential working part of their
-  calendar calculations.
+description: "The Maya independently developed positional notation with zero to mark empty places in calendar calculations. The Long Count, Dresden Codex and stela inscriptions show how their vigesimal numerical culture connected astronomy with historical memory."
 type: essay
 tags:
 - History of mathematics

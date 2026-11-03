@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-e01902faaaa8
-description: Daniel Bernoulli helped establish hydrodynamics, the kinetic theory
-  of gases and mathematical physics, working in St Petersburg and Basel.
+description: "Daniel Bernoulli linked mathematics and physics through hydrodynamics, the kinetic theory of gases and the study of oscillations. His work at the St Petersburg Academy, preparation of Hydrodynamica, exchanges with Euler and later Basel career trace his scientific development."
 type: essay
 tags:
   - History of mathematics

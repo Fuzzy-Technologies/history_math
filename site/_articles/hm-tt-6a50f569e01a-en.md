@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-6a50f569e01a
-description: In the history of computing, a tabulator was a machine that processed statistical data recorded on
-  punched cards.
+description: "Hollerith’s tabulator turned punched-card census records into machine counts and groupings, helping establish the data-processing industry. Its history covers the operating mechanism, links to IBM and the use of machine record-keeping in Nazi persecution."
 type: instrument
 tags:
 - Instruments

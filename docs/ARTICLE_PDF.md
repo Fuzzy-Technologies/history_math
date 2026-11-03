@@ -10,6 +10,11 @@ The filename migration changes the exporter fingerprint and invalidates prior PD
 
 PDFs use compact horizontal Russian/English journal mastheads, embedded PT Serif and KaTeX fonts, the site's light-theme paper (`#f4eddf`), chocolate ink (`#33271f`), copper accents, page numbers, repeated table headers and bounded illustrations. The same light palette supplies secondary text, captions, citation lines and footer text, regardless of the reader's screen theme. Native Chromium margin boxes extend the solid paper color to every edge and corner of every sheet while retaining the existing A4 content margins. Article text remains selectable; links point to the public website, never the temporary local rendering server. Print-only image downsampling targets roughly 240 dpi at the rendered size. Source image files and screen rendering remain unchanged. The decorative paper grain is omitted to avoid multi-megabyte per-page raster backgrounds.
 
+Storage-backed reading rasters keep the established print JPEG profile even when
+they already fit the print resolution. S3 migration metadata must not make native
+reading PNGs bypass this compression. The full S3 publication batch is checked
+against the 15 MB ceiling before its first upload.
+
 Full master publications run `python3 scripts/check_pdf_colors.py <site-directory>` on the actual project-path and configured Pages PDFs. Poppler rasterizes each page at a bounded resolution; the check scans all four margin bands and corners for white strips, requires visible muted footer ink on both the journal-label and page-number sides, and requires the correct body/title ink in each document. Illustration-only pages are allowed. The source suite checks print/light palette consistency and rejected page colors without generating PDFs. This gate stays outside the light article-only publication path.
 
 Chromium rounds the fixed 172mm print canvas and native margin boxes separately. The right margin background overlaps the canvas by one CSS pixel to close the resulting 0.75pt white join without changing content geometry. The output gate also rasterizes a five-pixel strip at that join at 100 dpi and rejects a near-white column spanning almost the entire content height. Bounded white figure regions remain valid.

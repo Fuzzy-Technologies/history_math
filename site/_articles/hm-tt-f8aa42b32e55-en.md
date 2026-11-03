@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-f8aa42b32e55
-description: For centuries in the Middle Ages, abacists and algorists disputed methods of calculation; the abacus itself was
-  not to blame.
+description: "From boards with pebbles to the suanpan, soroban and Russian counting frame, the abacus retained its place-value principle. Its history spans different cultures, competition with written arithmetic and its role in teaching calculation."
 type: essay
 tags:
 - Instruments

@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "5109166a480780b250ecbc33d0d657c5465ca131b0adef4c725b2c79a2bb0ee3",
+    "package_sha256": "5f2ce5ed3d2f6102ed3bfde4848a6c1ab5f1144760380a8bd9000070e3f1dcf5",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Мержим.",
     "source_commit": "e69d69cd51bc219676db9bf5287323716cffb0a0",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/208"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/208",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -21,5 +22,15 @@
       "date": "2023-11-03",
       "url": "https://teletype.in/@history_math/Uchyonyj-operedivshij-vremya-al-Beruni-11-03"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "888aa82f689a5752de571b05eb8e6af8fd7353f0fd414f3e3ab427119a03b5cc",
+      "description_sha256": "a80a20c2be5f35b7f018324ca941e2216db01cfa957483c2c8990a6bbb927dad",
+      "previous_package_sha256": "5109166a480780b250ecbc33d0d657c5465ca131b0adef4c725b2c79a2bb0ee3"
+    }
+  ]
 }

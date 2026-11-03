@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "d2671782d09bdf61f400346181ee7a2171c8252b62bc22bd915575d00cf3767d",
+    "package_sha256": "1ea7d728ff272bb18c3b160911238cd35bdbf2e07578ae0b7a80b84824aa9c16",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Оставь как есть, мержи.",
     "source_commit": "1fee9f5fc148053fd593d2d793b4a9a0729249b9",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/181"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/181",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -29,5 +30,15 @@
       "date": "2024-02-11",
       "url": "https://teletype.in/@history_math/Lekalo-02-11"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "42e7ffc9fab06504f4d922fa38844f3f4fa14d1822bd0464546e43e4ccd92dbd",
+      "description_sha256": "9275e193c95621701c942736169495f8399c4f5fe2c086d1c29b31a029647a8b",
+      "previous_package_sha256": "d2671782d09bdf61f400346181ee7a2171c8252b62bc22bd915575d00cf3767d"
+    }
+  ]
 }

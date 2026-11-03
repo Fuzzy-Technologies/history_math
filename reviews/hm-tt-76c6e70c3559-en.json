@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-22",
-    "package_sha256": "5e8a6d44695c7e5f517d19ba79cb25be92ec6bd2a8055f796a729509fc08a344",
+    "package_sha256": "7aa029047a6a4ba7307961fd9a765c8227e1e31cb13a5d3a928059eebedea5fb",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/67#pullrequestreview-5616498638",
     "source_commit": "c14d7e67426ef9c1b81f444c73f97766483a2d5a",
     "source_review_id": 5616498638,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-22T15:16:09Z",
-    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged."
+    "post_review_changes": "Publication status, owner-delegated rights confirmation and approval bookkeeping only. Reviewed prose, formulas, captions, translations and image bytes are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -22,5 +22,15 @@
       "date": "2026-02-07",
       "url": "https://teletype.in/@history_math/palindrome-numbers"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "54f6aa4db9955ee2bf776673a616c5a3e8d35436b980b6d0361470b9799a79b9",
+      "description_sha256": "28b4c9e61ea060b3040e3fa366cedc2d4cfaa79feb418d78b13958a345c6a156",
+      "previous_package_sha256": "5e8a6d44695c7e5f517d19ba79cb25be92ec6bd2a8055f796a729509fc08a344"
+    }
+  ]
 }

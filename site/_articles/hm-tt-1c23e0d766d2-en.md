@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-1c23e0d766d2
-description: '“Prime numbers were made to be multiplied”: their story stretches from ancient Greece to modern records
-  and public-key cryptography.'
+description: "The history of primes connects Euclid's proof that they are infinite with computational searches for Mersenne primes. Modern examples include the 2024 GIMPS record and the use of primes in RSA cryptography."
 type: essay
 tags:
 - history_of_mathematics

@@ -1,0 +1,4 @@
+# Explicit compatibility build for the historical GitHub Pages project path.
+# Production uses _config.yml and the validated Pages metadata override instead.
+url: https://fuzzy-technologies.github.io
+baseurl: /history_math

@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-23",
-    "package_sha256": "5de428a02e98b44fd1c5392dc491194444a7e052601bcda8d726160b706875e1",
+    "package_sha256": "8bdc0d04d83a064531f7a0e316faa07459d0937bb358a46b4fc43f43b6fd47bb",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/104#pullrequestreview-5626005967",
     "source_commit": "9c13ced5cf90dded89917e79c81588d26e0ef914",
     "source_review_id": 5626005967,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-23T08:51:13Z",
-    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -30,5 +30,15 @@
       "date": "2025-02-03",
       "url": "https://teletype.in/@history_math/Bible-of-Math-Algebra-Is-More-Than-Just-Numbers"
     }
-  }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "638bcb451925000a8c8870d448d20884f8ae4b1996f248d436e9cef9930e2df4",
+      "description_sha256": "5dd24ff46f8e1ee9a8f26c5f87c8a3bbda499bebab685f92123c36ea21c87a0a",
+      "previous_package_sha256": "5de428a02e98b44fd1c5392dc491194444a7e052601bcda8d726160b706875e1"
+    }
+  ]
 }

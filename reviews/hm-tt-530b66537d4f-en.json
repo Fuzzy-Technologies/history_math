@@ -5,12 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-30",
-    "package_sha256": "ea28aa5b39248abd95fa5079e816a566b72fa01effca64388c7d0e489c56ad1a",
+    "package_sha256": "3f041df68c2dfab6626fe2759909d0c4d59052fc1f4d7ee3ec483971db25dd8a",
     "evidence_type": "owner_chat_instruction",
     "evidence_date": "2026-10-30",
     "evidence_excerpt": "Мержим.",
     "source_commit": "e10894aa3adf60aa912bd05bd1a2d9b9bb355b19",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/202"
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/202",
+    "post_review_changes": " On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [],
   "reconciliation": {
@@ -24,5 +25,15 @@
   },
   "manual_changes": [
     "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "422b489c84484d3116567debf80c45482c44d9ed95810dfd267ebfdb095e436d",
+      "description_sha256": "232f5917711da535c11f863473242ab111d6a02e4e93963ed792abb648a2993d",
+      "previous_package_sha256": "ea28aa5b39248abd95fa5079e816a566b72fa01effca64388c7d0e489c56ad1a"
+    }
   ]
 }

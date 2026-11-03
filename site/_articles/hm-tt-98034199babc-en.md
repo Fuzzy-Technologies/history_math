@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-98034199babc
-description: Women have contributed to mathematics despite barriers imposed by
-  men and the state, from Theano and Hypatia to Noether and Wentzel.
+description: "The lives of Hypatia, Ada Lovelace, Sofya Kovalevskaya, Emmy Noether and Elena Wentzel show women's contributions to mathematics and computing. Their achievements accompany accounts of the struggle for education, employment and recognition."
 type: essay
 tags:
   - history_of_mathematics

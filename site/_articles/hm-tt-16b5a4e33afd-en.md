@@ -9,8 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-tt-16b5a4e33afd
-description: The mediant combines numerators and denominators and explains practical averages in sport, travel,
-  trade and mixtures.
+description: "The mediant adds two fractions' numerators and denominators separately and lies between them when their denominators are positive. Football scoring rates, average speed and mixed solutions show when this operation has a practical meaning."
 type: essay
 tags:
 - History of mathematics

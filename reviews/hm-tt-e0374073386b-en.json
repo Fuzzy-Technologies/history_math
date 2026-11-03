@@ -5,13 +5,13 @@
     "status": "approved",
     "reviewed_by": "Tim55667757",
     "date": "2026-10-23",
-    "package_sha256": "146f7766331152a696f301de34cbebb03de85c149f56bc8243d9404b66d7373e",
+    "package_sha256": "377b4bfac02d3bb823ef9bf49c0f2cf507b3f86546cb36ec5d91c5c3b529326a",
     "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/124#pullrequestreview-5626007791",
     "source_commit": "168f980ca5a2626dc1559290437d7ded84eb263e",
     "source_review_id": 5626007791,
     "source_review_state": "COMMENTED",
     "approved_at": "2026-10-23T08:51:25Z",
-    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged."
+    "post_review_changes": "Publication status, owner-approved publication rights and approval bookkeeping only. Reviewed prose, formulas, translations, captions, figures, image bytes, dates, links and manifests are unchanged. On 2026-10-31 the owner explicitly requested rewriting the description only; the article body, formulas, captions, dates and selected image bytes are unchanged."
   },
   "questions": [
     {
@@ -33,5 +33,15 @@
   },
   "manual_changes": [
     "Removed residual hashtag-only lines from the article body; every tag is retained in the searchable article metadata. Author prose, formulas, links and figures are unchanged."
+  ],
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "07bc80567e2ca41c841ba4eb82db71700de32c94b30fa0b388cbc754f68bd32a",
+      "description_sha256": "f961ff5f3d76613831a6ab5e96978e26aa4576d4a6acdfb581c2d89749881307",
+      "previous_package_sha256": "146f7766331152a696f301de34cbebb03de85c149f56bc8243d9404b66d7373e"
+    }
   ]
 }
