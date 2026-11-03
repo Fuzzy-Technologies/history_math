@@ -1,0 +1,37 @@
+{
+  "review_version": 1,
+  "article_id": "hm-tt-b2dd7dbcea4d",
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-03",
+    "package_sha256": "56ae29f51b17155c767cd12358ba132b47b9635a72a6fc4f4b03f574bf7d3efc",
+    "evidence_type": "owner_chat_authorization_with_github_review",
+    "authority": "Direct owner instruction in ChatGPT on 2026-11-03 explicitly authorizes checking and merging all article PRs with his Reviewed review/comment, including their current corrections.",
+    "source_commit": "eb1252e0aba59a44a9f647bb80afce8f2cde941e",
+    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/163",
+    "source_comment_url": "https://github.com/Fuzzy-Technologies/history_math/pull/163#pullrequestreview-5755683825",
+    "source_comment_author": "Tim55667757",
+    "source_comment_body": "Reviewed",
+    "review_commit_id": "12d35a3fd355dc6aaad7bea8f649f4d4a6b85440"
+  },
+  "questions": [],
+  "reconciliation": {
+    "text": "Complete rendered Teletype article converted in source order. Original captions retained; hashtags moved to metadata.",
+    "figures": 5,
+    "original_publication": {
+      "outlet": "Teletype",
+      "date": "2024-05-12",
+      "url": "https://teletype.in/@history_math/Tri-klassicheskie-zadachi-drevnosti-05-12"
+    }
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-10-31",
+      "scope": "description only",
+      "authority": "Direct owner instruction in the current ChatGPT task: rewrite all Russian and English article digests in one or two complete sentences and regenerate PDFs.",
+      "previous_description_sha256": "b42b51d22e8f17d1111a909ead80b2115c4892f333cd3682cde38f5627bf7aba",
+      "description_sha256": "aa0102ea395f12a7a7d14500207111dbe70671a7cc2e30173eee80bdf0a25f2f"
+    }
+  ]
+}
