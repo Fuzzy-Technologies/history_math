@@ -1,0 +1,52 @@
+{
+  "review_version": 1,
+  "article_id": "hm-870bb5aabf83-en",
+  "reconciliation": {
+    "text": "Complete author post retained; operational markers removed.",
+    "comments": "One empty comment placeholder omitted; no substantive supplement discarded.",
+    "images": "4 selected archival illustrations; source bytes retained.",
+    "original_date": "Owner requested the archival post date to be preserved in both editions.",
+    "digest": "Approved archival digest condensed and checked against the complete text.",
+    "source_status": "Archival source; publication link included only where supplied by the source."
+  },
+  "manual_changes": [
+    "Source title promoted to page title; hashtags moved to metadata; operational placement markers removed.",
+    "External URLs placed on descriptive words; archival attachments remain in the source archive.",
+    "English adaptation prepared from the complete Russian source.",
+    "Editorial verification confirmed the cover subtitle as biobibliographical and the purchase date within the advertised festival dates; the historical first-person news context is retained."
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Confirm the rights to reproduce the cover and page 142 and the photographs’ attribution.",
+      "blocking": true,
+      "state": "accepted",
+      "localizations": {
+        "source": "Confirm the rights to reproduce the cover and page 142 and the photographs’ attribution.",
+        "ru": "Подтвердить право воспроизведения обложки и страницы 142 и атрибуцию фотографий."
+      },
+      "resolution": "The editor approved the reviewed wording as submitted. https://github.com/Fuzzy-Technologies/history_math/pull/318#issuecomment-6635261737"
+    },
+    {
+      "id": "q2",
+      "question": "Consistency of the purchase date with the festival dates and retention of the news item’s historical context.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Editorial review confirmed that the purchase date, 4 June 2025, falls within the poster’s 4–7 June dates. The owner requested retention of the historical news context and the September fair announcement.",
+      "localizations": {
+        "source": "Consistency of the purchase date with the festival dates and retention of the news item’s historical context.",
+        "ru": "Соответствие даты покупки датам фестиваля и сохранение исторического контекста новости."
+      }
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-04",
+    "package_sha256": "174c6a400f5de9612c350e34dc45fce3e65c590f15aa80394d7db56c80e8b25b",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/318#issuecomment-6635261737",
+    "source_commit": "b930ce8d238a7c003ce8f9242c556bb4f57dcd90",
+    "source_comment_id": 6635261737,
+    "approved_at": "2026-11-04T15:53:55Z"
+  }
+}
