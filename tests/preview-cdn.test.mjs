@@ -34,12 +34,15 @@ test('pruning requires exact origin bytes and a verified warm CDN response', asy
       assert.match(object.key, /^previews\/[a-f0-9]{64}\/figure\.webp$/);
       assert.deepEqual(await read(object), bytes);
     };
-    const request = data => async (target, options) => {
+    const request = (data, age = '1') => async (target, options) => {
       assert.match(target, /^https:\/\/media\.history-math\.org\/previews\//);
       assert.equal(options.credentials, 'omit');
-      return new Response(data, {headers: {'content-type': 'image/webp', age: '1'}});
+      return new Response(data, {headers: {'content-type': 'image/webp', age}});
     };
     await assert.rejects(publishPreviews(site, {}, {request: request(changed), upload, sourceDirectory}), /integrity mismatch/);
+    assert.equal(await readFile(page, 'utf8'), initial);
+    assert.deepEqual(await readFile(preview), bytes);
+    await assert.rejects(publishPreviews(site, {}, {request: request(bytes, '0'), upload, sourceDirectory}), /HTTP_503/);
     assert.equal(await readFile(page, 'utf8'), initial);
     assert.deepEqual(await readFile(preview), bytes);
     const result = await publishPreviews(site, {}, {request: request(bytes), upload, sourceDirectory});
