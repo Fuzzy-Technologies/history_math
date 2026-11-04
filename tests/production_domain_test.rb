@@ -26,6 +26,9 @@ class ProductionDomainTest < Minitest::Test
         id = "domain-#{key}-#{lang}"
         data.merge!({"article_id" => id, "source_work_id" => id, "translation_key" => "domain-#{key}",
           "lang" => lang, "status" => status, "permalink" => "/#{lang == 'ru' ? 'ru/' : ''}publications/#{id}/"})
+        if key == "pair"
+          data["original_publication"] = {"outlet" => "Fixture archive", "date" => "2026-11-10", "preserve_date" => true}
+        end
         text = YAML.dump(data) + "---\n\nDomain regression fixture.\n"
         File.write(File.join(source, "_articles/#{id}.md"), text)
         File.write(File.join(root, "reviews/#{id}.json"), JSON.generate({"review_version" => 1, "article_id" => id,
@@ -42,7 +45,8 @@ class ProductionDomainTest < Minitest::Test
         "reference" => [[File.join(ROOT, "_config.reference.yml")], "https://fuzzy-technologies.github.io", "/history_math"]}
       scenarios.each do |name, (overrides, origin, base)|
         config = Jekyll.configuration("config" => [File.join(ROOT, "_config.yml"), *overrides],
-          "source" => source, "destination" => File.join(root, name), "quiet" => true)
+          "source" => source, "destination" => File.join(root, name), "quiet" => true,
+          "time" => "2026-11-04 12:00:00 +0300")
         site = Jekyll::Site.new(config)
         site.process
         %w[en ru].each do |lang|
@@ -50,6 +54,7 @@ class ProductionDomainTest < Minitest::Test
           other_lang = lang == "ru" ? "en" : "ru"
           other_route = "/#{other_lang == 'ru' ? 'ru/' : ''}publications/domain-pair-#{other_lang}/"
           html = File.read(File.join(site.dest, route, "index.html"))
+          assert_includes html, %(datetime="2026-11-10")
           expected = origin + base + route
           assert_includes html, %(<link rel="canonical" href="#{expected}">)
           assert_includes html, %(<meta property="og:url" content="#{expected}">)
@@ -74,6 +79,8 @@ class ProductionDomainTest < Minitest::Test
         assert_equal origin, manifest["origin"]
         assert_equal base, manifest["baseurl"]
         assert_equal 3, manifest["articles"].length
+        assert_includes manifest["articles"].map { |article| article["url"] }, "/publications/domain-pair-en/"
+        assert_includes manifest["articles"].map { |article| article["url"] }, "/ru/publications/domain-pair-ru/"
         manifest["articles"].each do |article|
           refute article["url"].start_with?("/history_math/")
           assert article["pdf_url"].start_with?("/assets/pdf/")
