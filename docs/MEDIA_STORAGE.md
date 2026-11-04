@@ -66,10 +66,14 @@ final publication step:
    the native image viewer requests the bucket original only after a click.
 6. Removes migrated originals and PDFs from the disposable Pages build output.
    It never deletes repository sources, Releases, NAS originals or S3 objects.
-7. Rechecks built URLs, catalogs, locale indexes and final Pages size. For code
+7. Optimizes static lossless WebP previews in the disposable Pages output.
+   The encoder retains dimensions and alpha, and keeps the input whenever the
+   candidate misses the quality or savings floor. This happens after PDF
+   generation and publication-media integrity checks.
+8. Rechecks built URLs, catalogs, locale indexes and final Pages size. For code
    changes, browser tests exercise actual S3 zoom/downloads on old and current
    RU/EN pages, mobile and desktop, with analytics stubbed.
-8. Uploads the lightweight Pages artifact and deploys it only after those gates.
+9. Uploads the lightweight Pages artifact and deploys it only after those gates.
 
 Transfer or verification failures block the new Pages deployment. The current
 site remains live. Partial uploads are safe to reuse on a later run. A failure
