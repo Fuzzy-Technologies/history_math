@@ -38,6 +38,6 @@ $$
 
 ## Источники и дальнейшее чтение
 
-[Связанная тестовая страница]({{ '/ru/publications/fixture-area/' | relative_url }}).
+- [Связанная тестовая страница]({{ '/ru/publications/fixture-area/' | relative_url }}).
 
 [^fixture]: Тестовая сноска.
