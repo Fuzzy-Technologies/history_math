@@ -1,29 +1,4 @@
 {
-  "/assets/images/hm-tt-46f394866e94/what-is-math-01.png": {
-    "sha256": "26d15c4dea9348a7a88939c13305f6e8e2af018a4f2d86e10f6b2c047ef436b2",
-    "width": 1600,
-    "height": 1126,
-    "bytes": 1702966,
-    "logo": false,
-    "variants": [
-      {
-        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-01-png-reading-960-b3a453a905ee.webp",
-        "width": 960,
-        "height": 676,
-        "sha256": "b3a453a905ee5ff5cea0b24173bd4067b84160da0761d0f6b2aad5f337673881",
-        "bytes": 602024
-      }
-    ],
-    "external_original": {
-      "storage": "github-release",
-      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-46f394866e94-what-is-math-01-26d15c4dea9348a7a88939c13305f6e8e2af018a4f2d86e10f6b2c047ef436b2.png",
-      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630499525",
-      "asset_id": 630499525,
-      "release_tag": "article-originals-2",
-      "sha256": "26d15c4dea9348a7a88939c13305f6e8e2af018a4f2d86e10f6b2c047ef436b2",
-      "bytes": 1702966
-    }
-  },
   "/assets/images/hm-tt-46f394866e94/what-is-math-02.png": {
     "sha256": "0f26b5dafe2e75471135340ca31e22bd0a69916a96ab5ea2a529c9d5604620d4",
     "width": 597,
@@ -273,5 +248,85 @@
       "sha256": "490957515d2f4d58bf94c4a5b7227f315b445b12fe3699995872a3c0141f1f3d",
       "bytes": 69321
     }
+  },
+  "/assets/images/hm-tt-46f394866e94/mathematics-map-en.png": {
+    "sha256": "a598659b4648fda298ef1aaee10625c2aa6a84e72f109acb89f38130b80f9297",
+    "width": 1800,
+    "height": 1576,
+    "bytes": 711033,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/mathematics-map-en.png-960.webp",
+        "width": 960,
+        "height": 841,
+        "sha256": "acfe13ef8382637a41b8345bfd59633bc6158962b4fbf3ad0a05ff77701a3896",
+        "bytes": 351026
+      }
+    ]
+  },
+  "/assets/images/hm-tt-46f394866e94/mathematics-map-ru.png": {
+    "sha256": "34bb222734cabfceed9b6b27437ca13bcf68b889fe21ba389474ea87a88b4a45",
+    "width": 1800,
+    "height": 1576,
+    "bytes": 718445,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/mathematics-map-ru.png-960.webp",
+        "width": 960,
+        "height": 841,
+        "sha256": "1e90ed3fa5f038ac8d964ab09e3d019537b24a7366e4a22f8b123ed49925b270",
+        "bytes": 373216
+      }
+    ]
+  },
+  "/assets/images/hm-tt-46f394866e94/what-is-math-05-en.png": {
+    "sha256": "fa171ec8b1ea7f9adde6ea39316e4bbaf815d2693b3ffbb89df2cb34af85d17c",
+    "width": 474,
+    "height": 149,
+    "bytes": 9170,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-05-en.png-474.webp",
+        "width": 474,
+        "height": 149,
+        "sha256": "66019252504f8eb79a0ec5fa25ddabaacc2cbfb82ebb637cf0736c02fe204a75",
+        "bytes": 3956
+      }
+    ]
+  },
+  "/assets/images/hm-tt-46f394866e94/what-is-math-06-en.png": {
+    "sha256": "11f579d7c8e71f82e040aba97a74d7b05f2d7507fb826fcf421d7d7119a260ac",
+    "width": 320,
+    "height": 103,
+    "bytes": 5429,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-06-en.png-320.webp",
+        "width": 320,
+        "height": 103,
+        "sha256": "7e38f661cbc965a47afc30b78d3b7b17603c4f215b3183958da0b46635db7c25",
+        "bytes": 2196
+      }
+    ]
+  },
+  "/assets/images/hm-tt-46f394866e94/what-is-math-07-en.png": {
+    "sha256": "b4c63b7eb163f2e7608ef1fe004d6f3e538d5b2040c0c5ef4b1d119b013e5735",
+    "width": 562,
+    "height": 185,
+    "bytes": 17155,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-07-en.png-562.webp",
+        "width": 562,
+        "height": 185,
+        "sha256": "9a0ead368d8fd85106fae5f8f1ed1f1d73fc55043723a4b52da7217957d06020",
+        "bytes": 6268
+      }
+    ]
   }
 }
