@@ -141,6 +141,8 @@ jobs:
         run: |
           node scripts/publication-media.mjs --site-dir _site-pages --publish --prune-output
           node scripts/bucket-media-budget.mjs
+      - name: Optimize reading WebP previews for Pages
+        run: python3 scripts/optimize_reading_webp.py _site-pages
       - name: Verify final lightweight publication
         env:
           PAGES_ORIGIN: https://${{ steps.pages.outputs.host }}
