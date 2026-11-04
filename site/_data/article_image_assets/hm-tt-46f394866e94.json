@@ -273,5 +273,69 @@
       "sha256": "490957515d2f4d58bf94c4a5b7227f315b445b12fe3699995872a3c0141f1f3d",
       "bytes": 69321
     }
+  },
+  "/assets/images/hm-tt-46f394866e94/what-is-math-01-en.png": {
+    "sha256": "a30589839833e3d4de7cfb52f1a32f90066d60196141055b6eb01710cb4a0857",
+    "width": 1600,
+    "height": 1126,
+    "bytes": 1631497,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-01-en.png-960.webp",
+        "width": 960,
+        "height": 676,
+        "sha256": "6eda2fdcc61ea04e04501137b1c18590932002542d6f8f460dbb0a0c521707f1",
+        "bytes": 563690
+      }
+    ]
+  },
+  "/assets/images/hm-tt-46f394866e94/what-is-math-05-en.png": {
+    "sha256": "fa171ec8b1ea7f9adde6ea39316e4bbaf815d2693b3ffbb89df2cb34af85d17c",
+    "width": 474,
+    "height": 149,
+    "bytes": 9170,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-05-en.png-474.webp",
+        "width": 474,
+        "height": 149,
+        "sha256": "66019252504f8eb79a0ec5fa25ddabaacc2cbfb82ebb637cf0736c02fe204a75",
+        "bytes": 3956
+      }
+    ]
+  },
+  "/assets/images/hm-tt-46f394866e94/what-is-math-06-en.png": {
+    "sha256": "11f579d7c8e71f82e040aba97a74d7b05f2d7507fb826fcf421d7d7119a260ac",
+    "width": 320,
+    "height": 103,
+    "bytes": 5429,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-06-en.png-320.webp",
+        "width": 320,
+        "height": 103,
+        "sha256": "7e38f661cbc965a47afc30b78d3b7b17603c4f215b3183958da0b46635db7c25",
+        "bytes": 2196
+      }
+    ]
+  },
+  "/assets/images/hm-tt-46f394866e94/what-is-math-07-en.png": {
+    "sha256": "b4c63b7eb163f2e7608ef1fe004d6f3e538d5b2040c0c5ef4b1d119b013e5735",
+    "width": 562,
+    "height": 185,
+    "bytes": 17155,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-07-en.png-562.webp",
+        "width": 562,
+        "height": 185,
+        "sha256": "9a0ead368d8fd85106fae5f8f1ed1f1d73fc55043723a4b52da7217957d06020",
+        "bytes": 6268
+      }
+    ]
   }
 }

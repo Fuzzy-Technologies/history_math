@@ -2,15 +2,7 @@
   "review_version": 1,
   "article_id": "hm-tt-46f394866e94-en",
   "approval": {
-    "status": "approved",
-    "reviewed_by": "Tim55667757",
-    "date": "2026-11-03",
-    "package_sha256": "bdb3d64454568a6943d12ebaf47c9fec43f5b5a9999e8a4fa334e1ba01a27e27",
-    "evidence_type": "owner_chat_instruction",
-    "authority": "Direct owner approval of the current bilingual PR201 package, including the requested Roger Bacon portrait and captions, in ChatGPT on 2026-11-03.",
-    "source_commit": "efed68f89903b8750790cfeab7155d556efb056e",
-    "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/201",
-    "source_message": "201 одобряю на мерж тоже- и не забудь померять ci-тесты на мерж!"
+    "status": "pending"
   },
   "questions": [
     {
@@ -45,7 +37,8 @@
     }
   },
   "manual_changes": [
-    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections."
+    "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections.",
+    "Localized the labels in figures 1 and 5–7 for the English edition. Kept the original figure order, illustrations, diagram dimensions and article body."
   ],
   "owner_requested_revisions": [
     {
@@ -61,6 +54,19 @@
       "authority": "Direct owner instruction in ChatGPT, with the exact supplied Roger_Bacon.jpeg and Russian caption.",
       "source_commit": "b4d9052f83b9dd170b6c5ee4923c3c39df1225ed",
       "original_image_sha256": "490957515d2f4d58bf94c4a5b7227f315b445b12fe3699995872a3c0141f1f3d"
+    }
+  ],
+  "previous_approvals": [
+    {
+      "status": "approved",
+      "reviewed_by": "Tim55667757",
+      "date": "2026-11-03",
+      "package_sha256": "bdb3d64454568a6943d12ebaf47c9fec43f5b5a9999e8a4fa334e1ba01a27e27",
+      "evidence_type": "owner_chat_instruction",
+      "authority": "Direct owner approval of the current bilingual PR201 package, including the requested Roger Bacon portrait and captions, in ChatGPT on 2026-11-03.",
+      "source_commit": "efed68f89903b8750790cfeab7155d556efb056e",
+      "source_pull_request": "https://github.com/Fuzzy-Technologies/history_math/pull/201",
+      "source_message": "201 одобряю на мерж тоже- и не забудь померять ci-тесты на мерж!"
     }
   ]
 }
