@@ -2,6 +2,7 @@
 
 require "minitest/autorun"
 require "jekyll"
+require_relative "fixture_image_revision"
 require "tmpdir"
 require "fileutils"
 require "json"
@@ -25,7 +26,7 @@ class TranslationNoticesTest < Minitest::Test
       FileUtils.cp(File.expand_path("fixtures/assets/reading-diagram.svg", __dir__), asset_directory)
       Dir.glob(File.expand_path("fixtures/articles/*.md", __dir__)).each { |file| FileUtils.cp(file, File.join(source, "_articles")) }
       config = Jekyll.configuration("config" => %w[_config.yml _config.reference.yml].map { |file| File.expand_path("../#{file}", __dir__) },
-        "source" => source, "destination" => File.join(root, "output"), "quiet" => true)
+        "source" => source, "image_source_revision" => FixtureImageRevision.read, "destination" => File.join(root, "output"), "quiet" => true)
       yield source, config
     end
   end
