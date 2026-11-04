@@ -1,0 +1,54 @@
+{
+  "review_version": 1,
+  "article_id": "hm-473df24c030a-en",
+  "reconciliation": {
+    "text": "Complete long article with the announcement checked for unique information.",
+    "comments": "No comment-placement blocks in the full source texts.",
+    "images": "2 selected archival illustrations; source bytes retained.",
+    "original_date": "Owner requested the archival post date to be preserved in both editions.",
+    "digest": "Approved archival digest condensed and checked against the complete text.",
+    "source_status": "Archival source; publication link included only where supplied by the source."
+  },
+  "manual_changes": [
+    "Source title promoted to page title; hashtags moved to metadata; operational placement markers removed.",
+    "External URLs placed on descriptive words; archival attachments remain in the source archive.",
+    "English adaptation prepared from the complete Russian source."
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Agree the paragraphs about Wiener’s education and academic career: MIT Press gives a Harvard PhD at eighteen and the start of his work in MIT’s Department of Mathematics in 1919. Verify the references to Cornell, an invitation to MIT at nineteen and professorships at every university listed. Discuss “according to this account” and “the account describes” in the English version together with these paragraphs.",
+      "blocking": true,
+      "state": "accepted",
+      "sources": [
+        "https://mitpress.mit.edu/9780262535441/norbert-wienera-life-in-cybernetics/"
+      ],
+      "localizations": {
+        "source": "Agree the paragraphs about Wiener’s education and academic career: MIT Press gives a Harvard PhD at eighteen and the start of his work in MIT’s Department of Mathematics in 1919. Verify the references to Cornell, an invitation to MIT at nineteen and professorships at every university listed. Discuss “according to this account” and “the account describes” in the English version together with these paragraphs.",
+        "ru": "Согласовать абзацы об образовании и академической карьере Винера: MIT Press указывает докторскую степень в Гарварде в 18 лет и начало работы на математическом факультете MIT в 1919 году. Проверить упоминания Корнеллского университета, приглашения в MIT в 19 лет и профессорских должностей во всех перечисленных университетах. Вместе с этими абзацами обсудить оговорки “according to this account” и “the account describes” в EN-версии."
+      },
+      "resolution": "The editor approved the reviewed wording as submitted. https://github.com/Fuzzy-Technologies/history_math/pull/315#issuecomment-6635269786"
+    },
+    {
+      "id": "q2",
+      "question": "Verify the wording and attribution of the three opening quotations, the claim that Wiener introduced cybernetics in 1947 and the provenance of both archival illustrations.",
+      "blocking": true,
+      "state": "accepted",
+      "localizations": {
+        "source": "Verify the wording and attribution of the three opening quotations, the claim that Wiener introduced cybernetics in 1947 and the provenance of both archival illustrations.",
+        "ru": "Проверить точность и атрибуцию трёх вводных цитат, формулировку о введении термина «кибернетика» в 1947 году и происхождение двух архивных иллюстраций."
+      },
+      "resolution": "The editor approved the reviewed wording as submitted. https://github.com/Fuzzy-Technologies/history_math/pull/315#issuecomment-6635269786"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-04",
+    "package_sha256": "7bde2beb654726e3f77e9f416d44682410107c50e43e4c70da35c4e192826997",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/315#issuecomment-6635269786",
+    "source_commit": "8ee765d149e62ca893ab92d6c34328e948ac2ce4",
+    "source_comment_id": 6635269786,
+    "approved_at": "2026-11-04T15:54:16Z"
+  }
+}
