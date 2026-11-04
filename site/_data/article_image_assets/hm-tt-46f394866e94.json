@@ -250,18 +250,18 @@
     }
   },
   "/assets/images/hm-tt-46f394866e94/mathematics-map-en.png": {
-    "sha256": "e1ac8796ae2db07f25c52ac58a37b84bd02b9fe7811ff7f525c1d58993c371e9",
+    "sha256": "a598659b4648fda298ef1aaee10625c2aa6a84e72f109acb89f38130b80f9297",
     "width": 1800,
     "height": 1576,
-    "bytes": 715768,
+    "bytes": 711033,
     "logo": false,
     "variants": [
       {
         "path": "/assets/images/previews/hm-tt-46f394866e94/mathematics-map-en.png-960.webp",
         "width": 960,
         "height": 841,
-        "sha256": "ae6857f4c5670964657721d5a4c9ae5ef3554253bd0630dec13656cb38beecec",
-        "bytes": 352928
+        "sha256": "acfe13ef8382637a41b8345bfd59633bc6158962b4fbf3ad0a05ff77701a3896",
+        "bytes": 351026
       }
     ]
   },
