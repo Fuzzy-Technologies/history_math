@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "jekyll"
+require_relative "fixture_image_revision"
 require "tmpdir"
 require "fileutils"
 require "yaml"
@@ -50,7 +51,7 @@ Dir.mktmpdir("history-math-browser") do |root|
         "date" => "2026-10-09", "package_sha256" => digest.hexdigest}}))
     end
   end
-  config = Jekyll.configuration("config" => %w[_config.yml _config.reference.yml].map { |file| File.expand_path(file) }, "source" => source,
+  config = Jekyll.configuration("config" => %w[_config.yml _config.reference.yml].map { |file| File.expand_path(file) }, "source" => source, "image_source_revision" => FixtureImageRevision.read,
     "destination" => File.expand_path("test-results/browser-fixture"), "quiet" => true)
   Jekyll::Site.new(config).process
 end

@@ -5,6 +5,7 @@ require "jekyll"
 require "tmpdir"
 require "fileutils"
 require "base64"
+require_relative "fixture_image_revision"
 require_relative "../site/_plugins/image_assets"
 
 class ImageOriginalsTest < Minitest::Test
@@ -24,6 +25,16 @@ class ImageOriginalsTest < Minitest::Test
     assert_equal "/history_math/assets/images/pilot.png", HistoryMath.original_image_url(site, "/assets/images/pilot.png")
     site.config["image_source_revision"] = "master"
     assert_raises(Jekyll::Errors::FatalException) { HistoryMath.original_image_url(site, path) }
+  end
+
+  def test_an_isolated_fixture_uses_the_source_checkout_revision
+    Dir.mktmpdir do |source|
+      revision = FixtureImageRevision.read
+      site = Site.new({"image_source_revision" => revision}, source, "", {"image_assets" => {}})
+      assert_match(/\A[a-f0-9]{40}\z/, revision)
+      assert_equal "https://raw.githubusercontent.com/Fuzzy-Technologies/history_math/#{revision}/site#{ORIGINAL_PATH}",
+        HistoryMath.original_image_url(site, ORIGINAL_PATH)
+    end
   end
 
   def test_only_migrated_originals_are_excluded_from_static_delivery
