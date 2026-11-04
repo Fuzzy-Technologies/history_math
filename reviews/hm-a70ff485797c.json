@@ -1,0 +1,61 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a70ff485797c",
+  "reconciliation": {
+    "text": "Complete author post retained; operational markers removed.",
+    "comments": "No comment-placement blocks in the full source texts.",
+    "images": "1 selected archival illustrations; source bytes retained.",
+    "original_date": "Owner requested the archival post date to be preserved in both editions.",
+    "digest": "Approved archival digest condensed and checked against the complete text.",
+    "source_status": "Archival source; publication link included only where supplied by the source."
+  },
+  "manual_changes": [
+    "Source title promoted to page title; hashtags moved to metadata; operational placement markers removed.",
+    "External URLs placed on descriptive words; archival attachments remain in the source archive.",
+    "English adaptation prepared from the complete Russian source.",
+    "Corrected the typographical join аон to а он without changing meaning."
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Подтвердить атрибуцию выбранного исторического портрета и основание его публикации: исходный маркер и имя файла различаются.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Редактор одобрил текущую редакцию без изменений. https://github.com/Fuzzy-Technologies/history_math/pull/314#issuecomment-6635271496"
+    },
+    {
+      "id": "q2",
+      "question": "Согласовать формулировку о «Началах» 1739 года для обеих версий. Каталог РГБ воспроизводит титул: Фарварсон подготовил сокращение до восьми книг, с латыни перевёл Иван Сатаров. Предлагаемый RU-текст: «В 1739 году вышло русское издание „Начал“ Евклида в сокращении до восьми книг, подготовленном Фарварсоном; с латыни его перевёл Иван Сатаров». Предлагаемый EN-текст: “In 1739, a Russian edition of Euclid’s Elements appeared in an eight-book abridgement prepared by Farquharson and translated from Latin by Ivan Satarov.”",
+      "blocking": true,
+      "state": "accepted",
+      "sources": [
+        "https://search.rsl.ru/ru/record/01003338926"
+      ],
+      "resolution": "Редактор одобрил текущую редакцию без изменений. https://github.com/Fuzzy-Technologies/history_math/pull/314#issuecomment-6635271496"
+    },
+    {
+      "id": "q3",
+      "question": "Уточнить год рождения Фарварсона и связанную с ним юбилейную датировку: источники расходятся.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Редактор одобрил текущую редакцию без изменений. https://github.com/Fuzzy-Technologies/history_math/pull/314#issuecomment-6635271496"
+    },
+    {
+      "id": "q4",
+      "question": "Уточнить должность Фарварсона в Абердине: в тексте указаны профессор и тьютор по математике; источники расходятся.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Редактор одобрил текущую редакцию без изменений. https://github.com/Fuzzy-Technologies/history_math/pull/314#issuecomment-6635271496"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-04",
+    "package_sha256": "de05e3dcd9ff2ff1ff7637d04e25d1631e4757da979a6a0cb9b7d49576bf5520",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/314#issuecomment-6635271496",
+    "source_commit": "dd2792736f43a6de7fd1658c43e4176d8112815b",
+    "source_comment_id": 6635271496,
+    "approved_at": "2026-11-04T15:54:19Z"
+  }
+}
