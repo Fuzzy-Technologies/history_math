@@ -51,6 +51,9 @@ class ArticleDetailsTest < Minitest::Test
       FileUtils.cp_r(File.expand_path("../site", __dir__), source)
       FileUtils.cp_r(File.expand_path("../schemas", __dir__), File.join(root, "schemas"))
       FileUtils.cp_r(File.expand_path("../reviews", __dir__), File.join(root, "reviews"))
+      asset_directory = File.join(source, "assets/images/example")
+      FileUtils.mkdir_p(asset_directory)
+      FileUtils.cp(File.expand_path("fixtures/assets/reading-diagram.svg", __dir__), asset_directory)
       Dir.glob(File.expand_path("fixtures/articles/*.md", __dir__)).each { |file| FileUtils.cp(file, File.join(source, "_articles")) }
       config = Jekyll.configuration("config" => %w[_config.yml _config.reference.yml].map { |file| File.expand_path("../#{file}", __dir__) },
         "source" => source, "destination" => File.join(root, "output"), "quiet" => true)
@@ -93,7 +96,7 @@ class ArticleDetailsTest < Minitest::Test
       assert_includes en, "data-citation-access>Mon. D, YYYY</span>"
       refute_includes en, "APA"
       refute_match(/ISSN|DOI|Vol\./, ru + en)
-      demo = File.read(File.join(site.dest, "ru/publications/demo-geometry/index.html"))
+      demo = File.read(File.join(site.dest, "ru/publications/fixture-geometry/index.html"))
       refute_includes demo, "data-article-citation"
       destination = File.expand_path("../test-results/details-fixture", __dir__)
       FileUtils.rm_rf(destination)

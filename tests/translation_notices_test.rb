@@ -20,6 +20,9 @@ class TranslationNoticesTest < Minitest::Test
         File.delete(path) unless notice_keys.include?(File.basename(path, "-ru.md"))
       end
       Dir.glob(File.join(source, "_articles/*-en.md")).each { |path| File.delete(path) }
+      asset_directory = File.join(source, "assets/images/example")
+      FileUtils.mkdir_p(asset_directory)
+      FileUtils.cp(File.expand_path("fixtures/assets/reading-diagram.svg", __dir__), asset_directory)
       Dir.glob(File.expand_path("fixtures/articles/*.md", __dir__)).each { |file| FileUtils.cp(file, File.join(source, "_articles")) }
       config = Jekyll.configuration("config" => %w[_config.yml _config.reference.yml].map { |file| File.expand_path("../#{file}", __dir__) },
         "source" => source, "destination" => File.join(root, "output"), "quiet" => true)
@@ -96,9 +99,9 @@ class TranslationNoticesTest < Minitest::Test
       FileUtils.cp_r(site.dest, fixture)
 
       id = ids.first
-      translated = File.read(File.join(source, "_articles/demo-abacus.md"))
-        .sub("lang: ru", "lang: en").sub("translation_key: demo-abacus", "translation_key: #{id}")
-        .sub("permalink: /ru/publications/demo-abacus/", "permalink: /publications/#{id}-en/")
+      translated = File.read(File.join(source, "_articles/fixture-abacus.md"))
+        .sub("lang: ru", "lang: en").sub("translation_key: fixture-abacus", "translation_key: #{id}")
+        .sub("permalink: /ru/publications/fixture-abacus/", "permalink: /publications/#{id}-en/")
       File.write(File.join(source, "_articles/translated-en.md"), translated)
       translated_site = Jekyll::Site.new(config)
       translated_site.process

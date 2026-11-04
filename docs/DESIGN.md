@@ -51,9 +51,7 @@ Reduce article prose by a further point (1.3333 CSS pixels), with prose links an
 
 - `Math-with-Mansur.png` and `Math-with-Mansur-logo.png`: original artwork supplied by the owner, already committed to the repository. Kept intact.
 - `Math-with-Mansur-logo-ru.png`: the exact supplied Russian medallion from `02-math_channel_final.png`; no bitmap alteration.
-- `frontispiece.svg`: original, code-drawn geometric artwork for this redesign. An illustrative composition, not a scan, historical source or attributed scientific discovery.
 - `paper-grain.svg`: original decorative SVG noise tile, used at low opacity without obscuring text.
-- `geometry.svg`, `triangle.svg`, `abacus.svg`, `mark.svg`: existing original prototype drawings, recolored into the new palette. Article image roles and provenance captions remain distinct.
 - `favicon-m2.svg` and its 32px PNG fallback: the owner-requested M² monogram for Mathematics with Mansur, with an ivory disc, copper outer ring and lighter inner ring. M and 2 are outlines derived from the bundled, SIL Open Font License PT Serif; no installed font or external asset is needed. The filled disc preserves contrast in light and dark browser tabs, and versioned URLs refresh cached icons.
 - `assets/fonts/pt-serif-*.woff2`: regular and italic PT Serif from [Google Fonts](https://github.com/google/fonts/tree/main/ofl/ptserif), losslessly converted from the supplied TTF format. The complete SIL Open Font License and copyright notice accompany them in `assets/fonts/OFL.txt`.
 

@@ -13,7 +13,7 @@ await rm(cacheDirectory, {recursive: true, force: true});
 await mkdir(root, {recursive: true});
 await cp('test-results/pdf-fixture/assets', resolve(root, 'assets'), {recursive: true});
 const manifest = JSON.parse(await readFile('test-results/pdf-fixture/assets/article-pdfs.json', 'utf8'));
-const sample = manifest.articles.find(article => article.url === '/ru/publications/demo-reading/');
+const sample = manifest.articles.find(article => article.url === '/ru/publications/fixture-reading/');
 const source = await readFile(resolve('test-results/pdf-fixture', '.' + sample.url, 'index.html'), 'utf8');
 manifest.articles = [];
 for (let index = 0; index < count; index++) {
