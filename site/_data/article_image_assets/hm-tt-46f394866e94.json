@@ -1,29 +1,4 @@
 {
-  "/assets/images/hm-tt-46f394866e94/what-is-math-01.png": {
-    "sha256": "26d15c4dea9348a7a88939c13305f6e8e2af018a4f2d86e10f6b2c047ef436b2",
-    "width": 1600,
-    "height": 1126,
-    "bytes": 1702966,
-    "logo": false,
-    "variants": [
-      {
-        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-01-png-reading-960-b3a453a905ee.webp",
-        "width": 960,
-        "height": 676,
-        "sha256": "b3a453a905ee5ff5cea0b24173bd4067b84160da0761d0f6b2aad5f337673881",
-        "bytes": 602024
-      }
-    ],
-    "external_original": {
-      "storage": "github-release",
-      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-2/hm-tt-46f394866e94-what-is-math-01-26d15c4dea9348a7a88939c13305f6e8e2af018a4f2d86e10f6b2c047ef436b2.png",
-      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/630499525",
-      "asset_id": 630499525,
-      "release_tag": "article-originals-2",
-      "sha256": "26d15c4dea9348a7a88939c13305f6e8e2af018a4f2d86e10f6b2c047ef436b2",
-      "bytes": 1702966
-    }
-  },
   "/assets/images/hm-tt-46f394866e94/what-is-math-02.png": {
     "sha256": "0f26b5dafe2e75471135340ca31e22bd0a69916a96ab5ea2a529c9d5604620d4",
     "width": 597,
@@ -274,19 +249,35 @@
       "bytes": 69321
     }
   },
-  "/assets/images/hm-tt-46f394866e94/what-is-math-01-en.png": {
-    "sha256": "a30589839833e3d4de7cfb52f1a32f90066d60196141055b6eb01710cb4a0857",
-    "width": 1600,
-    "height": 1126,
-    "bytes": 1631497,
+  "/assets/images/hm-tt-46f394866e94/mathematics-map-en.png": {
+    "sha256": "05019db5748f553dafdad2f62e778402e4f037351fbf4bb718cd5bd0b26134c4",
+    "width": 1800,
+    "height": 1268,
+    "bytes": 428538,
     "logo": false,
     "variants": [
       {
-        "path": "/assets/images/previews/hm-tt-46f394866e94/what-is-math-01-en.png-960.webp",
+        "path": "/assets/images/previews/hm-tt-46f394866e94/mathematics-map-en.png-960.webp",
         "width": 960,
         "height": 676,
-        "sha256": "6eda2fdcc61ea04e04501137b1c18590932002542d6f8f460dbb0a0c521707f1",
-        "bytes": 563690
+        "sha256": "21d26f1d04e318e915d549dc2f6efd77335bdca8511325dd3c118e943280d251",
+        "bytes": 207060
+      }
+    ]
+  },
+  "/assets/images/hm-tt-46f394866e94/mathematics-map-ru.png": {
+    "sha256": "b887313ef61d014e35109245f94b3e064e6d709090237279e1ab5a1597cb4e8b",
+    "width": 1800,
+    "height": 1268,
+    "bytes": 428186,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-tt-46f394866e94/mathematics-map-ru.png-960.webp",
+        "width": 960,
+        "height": 676,
+        "sha256": "ba40e8de364195cc791cf9f713feee1f671ec0b64413e5793329cd6085e88eeb",
+        "bytes": 218848
       }
     ]
   },

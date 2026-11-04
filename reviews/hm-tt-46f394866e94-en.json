@@ -38,7 +38,8 @@
   },
   "manual_changes": [
     "Translated the full article and figure descriptions into English; used established English mathematical terminology and historical names. No silent factual corrections.",
-    "Localized the labels in figures 1 and 5–7 for the English edition. Kept the original figure order, illustrations, diagram dimensions and article body."
+    "Localized the labels in figures 5–7 for the English edition, preserving their dimensions and geometry.",
+    "Replaced figure 1 with the journal’s original map of selected branches and their connections, using MSC2020 as a subject reference. The revised image awaits editorial approval."
   ],
   "owner_requested_revisions": [
     {
