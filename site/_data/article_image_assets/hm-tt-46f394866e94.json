@@ -250,34 +250,34 @@
     }
   },
   "/assets/images/hm-tt-46f394866e94/mathematics-map-en.png": {
-    "sha256": "05019db5748f553dafdad2f62e778402e4f037351fbf4bb718cd5bd0b26134c4",
+    "sha256": "c01b3b2db9ebf2ac36dabd8a38afab4d4c891a8b60242921fd6b7634a5e5ae31",
     "width": 1800,
     "height": 1268,
-    "bytes": 428538,
+    "bytes": 428537,
     "logo": false,
     "variants": [
       {
         "path": "/assets/images/previews/hm-tt-46f394866e94/mathematics-map-en.png-960.webp",
         "width": 960,
         "height": 676,
-        "sha256": "21d26f1d04e318e915d549dc2f6efd77335bdca8511325dd3c118e943280d251",
-        "bytes": 207060
+        "sha256": "fb469a399ee1f18f2bb2a6cf331e313d9ba719faf3875d9ac44c6d67dcf4dd96",
+        "bytes": 207042
       }
     ]
   },
   "/assets/images/hm-tt-46f394866e94/mathematics-map-ru.png": {
-    "sha256": "b887313ef61d014e35109245f94b3e064e6d709090237279e1ab5a1597cb4e8b",
+    "sha256": "35222b54e9a09ed06877a0290ecf13abfa68c88f167def2d09dbb492b57ee9c3",
     "width": 1800,
     "height": 1268,
-    "bytes": 428186,
+    "bytes": 427449,
     "logo": false,
     "variants": [
       {
         "path": "/assets/images/previews/hm-tt-46f394866e94/mathematics-map-ru.png-960.webp",
         "width": 960,
         "height": 676,
-        "sha256": "ba40e8de364195cc791cf9f713feee1f671ec0b64413e5793329cd6085e88eeb",
-        "bytes": 218848
+        "sha256": "102a819aeae8f7d8e38152609d40908c58e5531da32e1d19f8b833f58b50bcf7",
+        "bytes": 218380
       }
     ]
   },
