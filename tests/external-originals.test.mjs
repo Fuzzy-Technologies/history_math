@@ -38,7 +38,7 @@ test('missing originals require a content-addressed descriptor and complete veri
     assert.equal(externalAssetName(path, f.entry.sha256), `hm-tt-example-diagram-${f.entry.sha256}.png`);
     assert.equal(externalEntry(f.root, path).sha256, f.entry.sha256);
     assert.doesNotThrow(() => validateExternalPreviews(f.root, f.entry));
-    const text = readFileSync('templates/article.md', 'utf8').replaceAll('/assets/images/example/triangle.svg', path);
+    const text = readFileSync('templates/article.md', 'utf8').replaceAll('/assets/images/publications/history-cover.png', path);
     assert.deepEqual(checkArticle(text, 'article.md', f.root).findings.filter(x => x.severity === 'error'), []);
     delete f.entry.external_original; f.save();
     assert.throws(() => externalEntry(f.root, path), /Missing original/);

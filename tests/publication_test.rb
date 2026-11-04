@@ -96,6 +96,9 @@ class PublicationTest < Minitest::Test
       FileUtils.cp_r(File.expand_path("../site", __dir__), source)
       FileUtils.cp_r(File.expand_path("../schemas", __dir__), File.join(root, "schemas"))
       FileUtils.cp_r(File.expand_path("../reviews", __dir__), File.join(root, "reviews"))
+      asset_directory = File.join(source, "assets/images/example")
+      FileUtils.mkdir_p(asset_directory)
+      FileUtils.cp(File.expand_path("fixtures/assets/reading-diagram.svg", __dir__), asset_directory)
       Dir.glob(File.expand_path("fixtures/articles/*.md", __dir__)).each { |file| FileUtils.cp(file, File.join(source, "_articles")) }
       config = Jekyll.configuration("config" => %w[_config.yml _config.reference.yml].map { |file| File.expand_path("../#{file}", __dir__) },
         "source" => source, "destination" => File.join(root, "output"), "quiet" => true)
@@ -106,10 +109,10 @@ class PublicationTest < Minitest::Test
   def test_drafts_and_unknown_statuses_have_no_direct_url_or_index_entry
     with_site do |source, config|
       %w[draft internal].each do |status|
-        text = File.read(File.join(source, "_articles/demo-abacus.md"))
+        text = File.read(File.join(source, "_articles/fixture-abacus.md"))
           .sub("status: demo", "status: #{status}")
-          .sub("translation_key: demo-abacus", "translation_key: #{status}-probe")
-          .sub("permalink: /ru/publications/demo-abacus/", "permalink: /ru/publications/#{status}-probe/")
+          .sub("translation_key: fixture-abacus", "translation_key: #{status}-probe")
+          .sub("permalink: /ru/publications/fixture-abacus/", "permalink: /ru/publications/#{status}-probe/")
           .sub("title: Счёт, который можно потрогать", "title: #{status}-probe-marker")
         File.write(File.join(source, "_articles/#{status}-probe.md"), text)
       end
@@ -131,7 +134,7 @@ class PublicationTest < Minitest::Test
 
   def test_invalid_published_metadata_fails_closed
     with_site do |source, config|
-      path = File.join(source, "_articles/demo-abacus.md")
+      path = File.join(source, "_articles/fixture-abacus.md")
       File.write(path, File.read(path).sub("math: false", "math: maybe"))
       assert_raises(Jekyll::Errors::FatalException) { Jekyll::Site.new(config).process }
     end
@@ -139,7 +142,7 @@ class PublicationTest < Minitest::Test
 
   def test_duplicate_public_urls_fail_closed
     with_site do |source, config|
-      FileUtils.cp(File.join(source, "_articles/demo-abacus.md"), File.join(source, "_articles/duplicate.md"))
+      FileUtils.cp(File.join(source, "_articles/fixture-abacus.md"), File.join(source, "_articles/duplicate.md"))
       assert_raises(Jekyll::Errors::FatalException) { Jekyll::Site.new(config).process }
     end
   end
@@ -189,10 +192,10 @@ class PublicationTest < Minitest::Test
 
   def test_pdf_manifest_includes_both_languages_but_never_a_production_draft
     with_site do |source, config|
-      text = File.read(File.join(source, "_articles/demo-geometry.md"))
+      text = File.read(File.join(source, "_articles/fixture-geometry.md"))
         .sub("lang: ru", "lang: en")
-        .sub("translation_key: demo-geometry", "translation_key: pdf-example")
-        .sub("permalink: /ru/publications/demo-geometry/", "permalink: /publications/pdf-example/")
+        .sub("translation_key: fixture-geometry", "translation_key: pdf-example")
+        .sub("permalink: /ru/publications/fixture-geometry/", "permalink: /publications/pdf-example/")
       File.write(File.join(source, "_articles/pdf-example.md"), text)
       File.write(File.join(source, "_articles/pdf-draft.md"), File.read(File.expand_path("../templates/minimal-article.md", __dir__)))
       site = Jekyll::Site.new(config)

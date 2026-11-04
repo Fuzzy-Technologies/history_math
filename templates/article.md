@@ -17,11 +17,11 @@ permalink: /publications/example-article/
 rights_basis: Original template text and existing site illustration; not an archival publication.
 figures:
   - id: fig-example
-    path: /assets/images/example/triangle.svg
-    alt: A triangle with a marked base and height.
-    caption: Figure 1. Base and height of a triangle.
-    source: Existing History Math geometric illustration.
-    rights_basis: Site-authored diagram documented in the design asset inventory.
+    path: /assets/images/publications/history-cover.png
+    alt: Cover of the journal’s history book.
+    caption: Figure 1. Cover of the journal’s history book.
+    source: Existing journal artwork.
+    rights_basis: Owner-supplied cover already used on the journal site.
 ---
 ## Text and inline mathematics {#text}
 

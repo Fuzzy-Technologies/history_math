@@ -18,6 +18,9 @@ Dir.mktmpdir("history-math-browser") do |root|
   Dir.glob(File.join(source, "_articles/hm-*.md")).each do |path|
     File.delete(path) unless fixture_keys.include?(File.basename(path).sub(/-(?:ru|en)\.md\z/, ""))
   end
+  asset_directory = File.join(source, "assets/images/example")
+  FileUtils.mkdir_p(asset_directory)
+  FileUtils.cp("tests/fixtures/assets/reading-diagram.svg", asset_directory)
   Dir.glob("tests/fixtures/articles/*.md").each { |file| FileUtils.cp(file, File.join(source, "_articles")) }
   %w[ru en].each do |language|
     46.times do |index|
@@ -29,8 +32,8 @@ Dir.mktmpdir("history-math-browser") do |root|
         "tags" => ["fixture", language == "en" ? (index.even? ? "history_of_mathematics" : "History of mathematics") : "история", index.even? ? (language == "ru" ? "персоналии" : "People") :
           (language == "ru" ? ["Математики шутят", "анекдоты", "Цитаты"][index % 3] : ["Jokes", "Anecdotes", "Quotes"][index % 3])],
         "permalink" => "#{language == 'ru' ? '/ru' : ''}/articles/#{id}/",
-        "preview_image" => "/assets/images/example/triangle.svg",
-        "figures" => [{"id" => "fig-1", "path" => "/assets/images/example/triangle.svg",
+        "preview_image" => "/assets/images/example/reading-diagram.svg",
+        "figures" => [{"id" => "fig-1", "path" => "/assets/images/example/reading-diagram.svg",
           "alt" => "Test triangle", "caption" => "", "credit" => "",
           "source" => "Repository test illustration", "rights_basis" => "Test-only fixture"}]})
       if index >= 19
@@ -41,7 +44,7 @@ Dir.mktmpdir("history-math-browser") do |root|
       text = YAML.dump(data) + "---\n\nTest-only bilingual discovery fixture.\n"
       File.write(File.join(source, "_articles/#{id}.md"), text)
       digest = Digest::SHA256.new.update(text)
-      digest.update("\0/assets/images/example/triangle.svg\0").update(File.binread("site/assets/images/example/triangle.svg"))
+      digest.update("\0/assets/images/example/reading-diagram.svg\0").update(File.binread("tests/fixtures/assets/reading-diagram.svg"))
       File.write(File.join(root, "reviews/#{id}.json"), JSON.generate({"article_id" => id, "review_version" => 1,
         "questions" => [], "approval" => {"status" => "approved", "reviewed_by" => "Test editor",
         "date" => "2026-10-09", "package_sha256" => digest.hexdigest}}))

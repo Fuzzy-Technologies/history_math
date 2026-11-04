@@ -44,13 +44,13 @@ test('the site contract rejects external ownership, changed schema bytes and mis
 test('missing metadata, asset, caption, reference and malformed formula block validation', () => {
   for (const [input, code] of [
     [text.replace('title: Article preparation example\n', ''), 'HM_METADATA'],
-    [text.replace('/example/triangle.svg', '/example/missing.png'), 'HM_IMAGE'],
-    [text.replace('alt: A triangle with a marked base and height.', 'alt: ""'), 'HM_FIGURE'],
+    [text.replace('/publications/history-cover.png', '/example/missing.png'), 'HM_IMAGE'],
+    [text.replace('alt: Cover of the journal’s history book.', 'alt: ""'), 'HM_FIGURE'],
     [text.replace('](#formula)', '](#missing)'), 'HM_LINK'],
     [text.replace('a^2+b^2=c^2', '\\unknowncommand{x}'), 'HM_MATH'],
     [text.replace('$a^2+b^2=c^2$', '$a^2+b^2=c^2'), 'HM_MATH'],
     [text.replace('[^example-note]:', '[^other-note]:'), 'HM_LINK'],
-    [text.replace('/example/triangle.svg', '/example/../triangle.svg'), 'HM_PATH']
+    [text.replace('/publications/history-cover.png', '/publications/../history-cover.png'), 'HM_PATH']
   ]) assert.ok(errors(input).some(x => x.code === code), `Expected ${code}`);
 });
 test('publication dates are automatic; demo and supplied dates remain validated', () => {
@@ -89,10 +89,10 @@ test('external links require descriptive text while destinations and code remain
 });
 
 test('preview, social and hero roles retain provenance and count only displayed figures', () => {
-  const hero = text.replace('status: draft', 'status: draft\nhero_image: /assets/images/example/triangle.svg\nhero_alt: A triangle with a marked base and height.\nhero_caption: Figure 1. Base and height of a triangle.').replace('{% include article-figure.html id="fig-example" %}', '');
+  const hero = text.replace('status: draft', 'status: draft\nhero_image: /assets/images/publications/history-cover.png\nhero_alt: Cover of the journal’s history book.\nhero_caption: Figure 1. Cover of the journal’s history book.').replace('{% include article-figure.html id="fig-example" %}', '');
   assert.deepEqual(errors(hero), []);
   assert.equal(checkArticle(hero, 'article.md', root).figureCount, 1);
-  assert.ok(errors(hero.replace('hero_alt: A triangle with a marked base and height.', 'hero_alt: Different context')).some(x => x.code === 'HM_FIGURE'));
+  assert.ok(errors(hero.replace('hero_alt: Cover of the journal’s history book.', 'hero_alt: Different context')).some(x => x.code === 'HM_FIGURE'));
   assert.ok(errors(text + '\n{% include article-figure.html id="fig-example" %}').some(x => x.code === 'HM_IDENTIFIER'));
 });
 test('stable identity and content language are independent of automation language', () => {
