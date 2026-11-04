@@ -145,12 +145,33 @@ jobs:
         env:
           PAGES_ORIGIN: https://${{ steps.pages.outputs.host }}
           PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          PREVIEW_CDN_BASE_URL: ${{ vars.PREVIEW_CDN_BASE_URL }}
           FULL_CHECKS: ${{ steps.plan.outputs.full_checks }}
         run: |
           python3 scripts/check_site.py _site-pages "$PAGES_BASE_PATH" "$PAGES_ORIGIN"
-          node scripts/publication-size.mjs _site-pages
+          if [ -z "$PREVIEW_CDN_BASE_URL" ]; then node scripts/publication-size.mjs _site-pages; fi
           if [ "$FULL_CHECKS" = "true" ]; then
             VIEWER_SITE_DIR=_site-pages node tests/image-viewer-browser.mjs
+            if [ -z "$PREVIEW_CDN_BASE_URL" ]; then
+              MEDIA_SITE_DIR=_site-pages MEDIA_BASEURL="$PAGES_BASE_PATH" node tests/publication-media-browser.mjs
+            fi
+          fi
+      - name: Verify CDN previews and prune their Pages copies
+        env:
+          PREVIEW_CDN_BASE_URL: ${{ vars.PREVIEW_CDN_BASE_URL }}
+          S3_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
+          S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+          S3_ENDPOINT_URL: ${{ vars.S3_ENDPOINT_URL }}
+          S3_REGION: ${{ vars.S3_REGION }}
+          S3_BUCKET: ${{ vars.S3_BUCKET }}
+          S3_PUBLIC_BASE_URL: ${{ vars.S3_PUBLIC_BASE_URL }}
+          PAGES_ORIGIN: https://${{ steps.pages.outputs.host }}
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: |
+          node scripts/publish-preview-cdn.mjs _site-pages
+          if [ -n "$PREVIEW_CDN_BASE_URL" ]; then
+            python3 scripts/check_site.py _site-pages "$PAGES_BASE_PATH" "$PAGES_ORIGIN"
+            node scripts/publication-size.mjs _site-pages
             MEDIA_SITE_DIR=_site-pages MEDIA_BASEURL="$PAGES_BASE_PATH" node tests/publication-media-browser.mjs
           fi
       - name: Retain media integrity receipts
