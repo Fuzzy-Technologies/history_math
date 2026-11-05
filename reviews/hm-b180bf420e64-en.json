@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b180bf420e64-en",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "Both comment blocks are retained in the final Notes section, including the scanned rules page, both Britannica links and the complete Colebrooke bibliography with the public archive link supplied by the source. The 27 MB NAS book PDF stays in the archive and is not added to Git. The historical division rules and the source’s modern correction are both retained.",
+    "images": "2 archival illustrations inspected and included.",
+    "digest": "The approved digest was checked against the complete source, including all substantive comments, and condensed into one or two finished sentences."
+  },
+  "manual_changes": [
+    "Source title moved to shared heading; source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [
+    {
+      "id": "brahmagupta-citation-numbering",
+      "question": "Please clarify “chapter XVIII, §§ 34–36”: on the supplied p. 339, 34–36 number the rules in the translation, while the adjacent verse references are §§ 22–24. Rule 34 covers multiplication and rules 35–36 division. The quotations and the author’s explicit explanation that 0/0 = 0 is a historical error are retained. Please agree an unambiguous locator for both versions.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please clarify “chapter XVIII, §§ 34–36”: on the supplied p. 339, 34–36 number the rules in the translation, while the adjacent verse references are §§ 22–24. Rule 34 covers multiplication and rules 35–36 division. The quotations and the author’s explicit explanation that 0/0 = 0 is a historical error are retained. Please agree an unambiguous locator for both versions.",
+        "ru": "Уточнить ссылку «гл. XVIII, §§34–36»: на приложенной странице 339 числа 34–36 — номера правил в переводе, а рядом указаны §§22–24; правило 34 относится к умножению, правила 35–36 — к делению. Содержание цитат и явное авторское пояснение, что 0/0 = 0 — историческая ошибка, сохранены. Редактору согласовать однозначный указатель для RU/EN."
+      },
+      "resolution": "Checked pp. 339–340 of the 1817 edition. Both versions identify chapter XVIII, section II, rules 34–36 and §§ 22–24, and label the retained wording as a modernization of Colebrooke’s translation."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-06",
+    "package_sha256": "91dfeb937e879c08c61201eea151a1bcf9e8568d4449ac3a67ff6d2d59a7191d",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/574#pullrequestreview-5792076950",
+    "source_commit": "3b77945a36cef1bbb645a5c69e22a3281fa958ad",
+    "source_review_id": 5792076950,
+    "approved_at": "2026-11-05T21:02:33Z",
+    "delegated_by": "Tim55667757"
+  }
+}
