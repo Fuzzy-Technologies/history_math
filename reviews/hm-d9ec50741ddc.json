@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d9ec50741ddc",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "All three comment blocks are retained in one Notes section with their three portraits and original links. Bari’s unfinished biography contains only her linked name and life dates; the empty trailing dash is omitted without inventing a continuation. Both full Menshov and Luzin paragraphs, the complete student list and the book link are preserved.",
+    "images": "4 archival illustrations inspected and included.",
+    "digest": "The approved digest was checked against the complete source and condensed into a specific one- or two-sentence description."
+  },
+  "manual_changes": [
+    "A descriptive publication heading is proposed; the complete untitled source opening remains in the body. Source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-05",
+    "package_sha256": "d07f3d03788067aa3105b7b8528bdbf4a4685bc283c4af8b200e2264b61818b8",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/542#pullrequestreview-5791941686",
+    "source_commit": "06323b416801c7a1e847f28a5b0ad4d2173b6c26",
+    "source_review_id": 5791941686,
+    "approved_at": "2026-11-05T20:52:37Z",
+    "delegated_by": "Tim55667757"
+  }
+}
