@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-aed39fccc827-en",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "The entire comment is retained, including both separately marked retouched portraits in their source order and all seven references. The university’s degree chronology and the academy’s actual 1965–1968 presidential dates were verified. The ICHM’s own history confirms the first 1989 May Prize shared with Struik; no false prize-versus-medal discrepancy is added.",
+    "images": "3 archival illustrations inspected and included.",
+    "digest": "The approved source digest was checked against the complete post and condensed into two finished sentences."
+  },
+  "manual_changes": [
+    "Source title moved to shared heading; source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-05",
+    "package_sha256": "0201e9e5641125e7eb57f22b57979b63a288b7fabbdc97aa163d3497f64d0ac8",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/457#pullrequestreview-5786991226",
+    "source_commit": "76ae2462bac5a65d29219fc6d7a4958b948e2bc5",
+    "source_review_id": 5786991226,
+    "approved_at": "2026-11-05T14:58:05Z",
+    "delegated_by": "Tim55667757"
+  }
+}
