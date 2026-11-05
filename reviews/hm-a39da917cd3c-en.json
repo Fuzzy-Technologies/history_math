@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a39da917cd3c-en",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "There are no comment-placement blocks. The complete substantive postscript remains in the body, including both dates, the institution link and the remark about vodka. The deliberately absurd definition remains a joke rather than being rewritten as a physics definition.",
+    "images": "1 archival illustrations inspected and included.",
+    "digest": "The approved digest was checked against the complete source and condensed into a specific one- or two-sentence description."
+  },
+  "manual_changes": [
+    "A descriptive publication heading is proposed; the complete untitled source opening remains in the body. Source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [
+    {
+      "id": "mendeleev-institution-1892",
+      "question": "Please clarify the institution named for the 1892 post in the postscript. VNIIM’s institutional history states that Mendeleev became scientific custodian of the Depot of Standard Weights and Measures in 1892; it became the Main Chamber in 1893. The source places both posts under the Main Chamber’s name. Please agree the clarification in both languages; the source dates and wording are retained.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please clarify the institution named for the 1892 post in the postscript. VNIIM’s institutional history states that Mendeleev became scientific custodian of the Depot of Standard Weights and Measures in 1892; it became the Main Chamber in 1893. The source places both posts under the Main Chamber’s name. Please agree the clarification in both languages; the source dates and wording are retained.",
+        "ru": "Уточнить название учреждения для должности 1892 года в P.S. ВНИИМ указывает, что Менделеев стал учёным-хранителем Депо образцовых мер и весов в 1892 году, а Главная палата была создана на его базе в 1893 году: https://www.vniim.ru/about/history/ . Исходник объединяет обе должности под названием Главной палаты. Согласовать уточнение в RU/EN; даты и авторская формулировка пока сохранены."
+      },
+      "resolution": "VNIIM’s biography confirms the distinct institutions: scientific custodian of the Depot from 1892, and director of its successor, the Main Chamber, from 1893. https://www.vniim.ru/about/history/head_of_vniim/mendeleev-dmitriy-ivanovich/"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-05",
+    "package_sha256": "2ddaadddd7b1869d885b4889724ac7852640b39e8d92b5540bde466c14d613b8",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/546#pullrequestreview-5791941454",
+    "source_commit": "479008b5b5628d98e545c08651792fc76fe5cbe9",
+    "source_review_id": 5791941454,
+    "approved_at": "2026-11-05T20:52:36Z",
+    "delegated_by": "Tim55667757"
+  }
+}
