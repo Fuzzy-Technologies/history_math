@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-3683fd166d8d-en",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "The complete biographical comment, all named students, the portrait and the original linked reference are retained in Notes. The author’s separate book postscript remains in the body.",
+    "images": "2 archival illustrations inspected and included.",
+    "digest": "The approved digest was checked against the complete source and shortened to a complete card description that preserves the joke’s effect."
+  },
+  "manual_changes": [
+    "A descriptive publication heading is proposed; the complete untitled source opening remains in the body. Source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [
+    {
+      "id": "luzin-menshov-result",
+      "question": "Please verify the attribution of the 1912 result about a trigonometric series whose coefficients tend to zero while the series diverges almost everywhere. The comment credits Luzin; it should be compared with Menshov’s work and the precise statements of the relevant theorems. The source paragraph is retained in both languages pending review.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please verify the attribution of the 1912 result about a trigonometric series whose coefficients tend to zero while the series diverges almost everywhere. The comment credits Luzin; it should be compared with Menshov’s work and the precise statements of the relevant theorems. The source paragraph is retained in both languages pending review.",
+        "ru": "Проверить атрибуцию результата 1912 года о тригонометрическом ряде с коэффициентами, стремящимися к нулю, и расходимостью почти всюду. В комментарии он приписан Лузину; нужно сопоставить его с работами Меньшова и формулировками соответствующих теорем. До решения исходный абзац сохранён в RU/EN."
+      },
+      "resolution": "Luzin himself confirms the attribution and statement in section 61 of The Integral and the Trigonometric Series (https://djvu.online/file/4QUaip4NzH6ES). He cites the German publication of 1911; Matematicheskii Sbornik records the Russian version of 1912 (https://www.mathnet.ru/eng/sm6532). Menshov’s null series is a separate result."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-06",
+    "package_sha256": "4e4ddfcdf2506129875e217d5769f42d7d046e9cb511d1f0717f86b0a1a74dc4",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/540#pullrequestreview-5792090005",
+    "source_commit": "586a5855d6c640b97141cd4edda411a7b03fa267",
+    "source_review_id": 5792090005,
+    "approved_at": "2026-11-05T21:03:35Z",
+    "delegated_by": "Tim55667757"
+  }
+}
