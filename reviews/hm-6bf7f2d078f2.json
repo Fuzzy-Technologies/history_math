@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6bf7f2d078f2",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "The complete comment, marked retouched portrait and all five references are retained in Notes. The two-page archival obituary was read to check the research and teaching account; the PDF itself remains on NAS.",
+    "images": "2 archival illustrations inspected and included.",
+    "digest": "The approved source digest was checked against the complete post and condensed into two finished sentences."
+  },
+  "manual_changes": [
+    "Source title moved to shared heading; source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-05",
+    "package_sha256": "7f6085a9b05e990a1538296f615c6fb5644888060fee5ac80e4c5e020229b95f",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/468#pullrequestreview-5787273025",
+    "source_commit": "9184cca9ff84636a8b1c071f21aeff0ade3e0819",
+    "source_review_id": 5787273025,
+    "approved_at": "2026-11-05T15:15:42Z",
+    "delegated_by": "Tim55667757"
+  }
+}
