@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-42f75ebdad6e-en",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "The complete post, the exact English quotation, its Russian version and letter attribution are retained. The sole comment block is included in Notes, with both its portrait and complete two-year mortality chart, the 1858 book title and all three colour meanings. All three selected source illustrations are included in order.",
+    "images": "3 archival illustrations inspected and included.",
+    "digest": "The approved digest was checked against the complete source, including all substantive comments, and condensed into one or two finished sentences."
+  },
+  "manual_changes": [
+    "Source title moved to shared heading; source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [
+    {
+      "id": "nightingale-letter-locator",
+      "question": "Please supply an archival shelfmark or edition page for “Whenever I am infuriated…” in the letter to Sidney Herbert dated 19 August 1857. The source gives the date and addressee but no precise locator; both are retained in Russian and English. Membership in 1858 has been verified against the RSS itself at https://rss.org.uk/news-publication/news-publications/2020/general-news/nightingale-2020-the-bicentenary-our-first-female/ and is not an open question.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please supply an archival shelfmark or edition page for “Whenever I am infuriated…” in the letter to Sidney Herbert dated 19 August 1857. The source gives the date and addressee but no precise locator; both are retained in Russian and English. Membership in 1858 has been verified against the RSS itself at https://rss.org.uk/news-publication/news-publications/2020/general-news/nightingale-2020-the-bicentenary-our-first-female/ and is not an open question.",
+        "ru": "Для цитаты «Whenever I am infuriated…» уточнить архивный шифр либо страницу издания письма Сидни Герберту от 19 августа 1857 года. В исходнике приведены дата и адресат, но нет точного указателя; они сохранены в RU/EN. Членство 1858 года проверено по странице самого RSS https://rss.org.uk/news-publication/news-publications/2020/general-news/nightingale-2020-the-bicentenary-our-first-female/ и не является открытым вопросом."
+      },
+      "resolution": "Verified the wording in the UKWILT transcription, p. 126, Wiltshire County Record Office 2057/F4/66. The Collected Works chronology, pp. 257–258, dates it 19 August 1857. Both versions link to the transcript and give the archival reference."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-06",
+    "package_sha256": "2fc11a359c0a3f7ba59a6d6616020a85e34a2c6d9dbe548da40bb026b7624c1c",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/576#pullrequestreview-5792095684",
+    "source_commit": "7f66cbdb1d7df860713bac34c308c4f4fbe98b73",
+    "source_review_id": 5792095684,
+    "approved_at": "2026-11-05T21:04:04Z",
+    "delegated_by": "Tim55667757"
+  }
+}
