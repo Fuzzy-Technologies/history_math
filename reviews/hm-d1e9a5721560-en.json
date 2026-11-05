@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d1e9a5721560-en",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "Both comment-placement blocks are mapped. The verbatim English quotation repeated in the first comment is covered by the main quotation; its explanatory bibliography and page reference are retained in Notes. The portrait, complete attribution and earlier author article link from the second comment are retained. The NAS PDF remains in the archive; a verified JSTOR link is supplied. The oversized portrait is normalized to JPEG at quality 100, 4:4:4 and identical dimensions under IMAGE_SIZE_POLICY.md; NAS bytes are unchanged.",
+    "images": "2 archival illustrations inspected and included.",
+    "digest": "The approved digest was checked against the complete source, including all substantive comments, and condensed into one or two finished sentences."
+  },
+  "manual_changes": [
+    "Source title moved to shared heading; source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [
+    {
+      "id": "bernoulli-publication-genre",
+      "question": "The source comment calls the translation a book. The archival PDF, visually checked title and p. 24, and the issue contents https://www.jstor.org/stable/i332643 identify a journal article in Econometrica 22(1), 1954, pp. 23–36; the quotation is on p. 24. Please decide whether to replace “book” with “work” or “article” in the Russian note. The original Latin publication date 1738 and translator Louise Sommer are confirmed on the first article page.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The source comment calls the translation a book. The archival PDF, visually checked title and p. 24, and the issue contents https://www.jstor.org/stable/i332643 identify a journal article in Econometrica 22(1), 1954, pp. 23–36; the quotation is on p. 24. Please decide whether to replace “book” with “work” or “article” in the Russian note. The original Latin publication date 1738 and translator Louise Sommer are confirmed on the first article page.",
+        "ru": "В комментарии исходника перевод назван книгой. Архивный PDF, визуально проверенные титул и стр. 24, а также оглавление выпуска https://www.jstor.org/stable/i332643 показывают журнальную статью в Econometrica 22(1), 1954, стр. 23–36; цитата находится на стр. 24. Редактору решить, заменить ли слово «книги» на «работы» или «статьи» в русском примечании. Дата исходной латинской работы 1738 и переводчик Louise Sommer подтверждаются первой страницей статьи."
+      },
+      "resolution": "The Russian note now identifies Louise Sommer’s translation as a journal article in Econometrica, 22(1), 1954, pp. 23–36. The locator for the quotation remains p. 24. See https://www.jstor.org/stable/i332643 ."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-05",
+    "package_sha256": "50b501486991b2b7a1838c9842dcfd597933f39f8b34ef58ce1deb53cbef6053",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/571#pullrequestreview-5791914231",
+    "source_commit": "917e45ff62e37f8a0e83999b92cc264b414b61dc",
+    "source_review_id": 5791914231,
+    "approved_at": "2026-11-05T20:50:41Z",
+    "delegated_by": "Tim55667757"
+  }
+}
