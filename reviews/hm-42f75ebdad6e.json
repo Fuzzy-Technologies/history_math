@@ -1,0 +1,34 @@
+{
+  "review_version": 1,
+  "article_id": "hm-42f75ebdad6e",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "The complete post, the exact English quotation, its Russian version and letter attribution are retained. The sole comment block is included in Notes, with both its portrait and complete two-year mortality chart, the 1858 book title and all three colour meanings. All three selected source illustrations are included in order.",
+    "images": "3 archival illustrations inspected and included.",
+    "digest": "The approved digest was checked against the complete source, including all substantive comments, and condensed into one or two finished sentences."
+  },
+  "manual_changes": [
+    "Source title moved to shared heading; source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [
+    {
+      "id": "nightingale-letter-locator",
+      "question": "Для цитаты «Whenever I am infuriated…» уточнить архивный шифр либо страницу издания письма Сидни Герберту от 19 августа 1857 года. В исходнике приведены дата и адресат, но нет точного указателя; они сохранены в RU/EN. Членство 1858 года проверено по странице самого RSS https://rss.org.uk/news-publication/news-publications/2020/general-news/nightingale-2020-the-bicentenary-our-first-female/ и не является открытым вопросом.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Фраза проверена по транскрипции письма Сидни Герберту в UKWILT, с. 126, Wiltshire County Record Office 2057/F4/66. Хронология Collected Works, с. 257–258, датирует письмо 19 августа 1857 года. В обеих версиях добавлена ссылка на транскрипцию с архивным шифром."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-06",
+    "package_sha256": "573cbf3ee445e5a14e4532f2aaf3cfa8015e11c66ecabf857a70402c1ccac898",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/576#pullrequestreview-5792095684",
+    "source_commit": "7f66cbdb1d7df860713bac34c308c4f4fbe98b73",
+    "source_review_id": 5792095684,
+    "approved_at": "2026-11-05T21:04:04Z",
+    "delegated_by": "Tim55667757"
+  }
+}
