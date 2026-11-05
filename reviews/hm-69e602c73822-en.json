@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-69e602c73822-en",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "No comment-placement blocks in the source post.",
+    "images": "1 archival illustrations inspected and included.",
+    "digest": "The approved digest was checked against the complete source and shortened to a complete card description that preserves the joke’s effect."
+  },
+  "manual_changes": [
+    "A descriptive publication heading is proposed; the complete untitled source opening remains in the body. Source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-05",
+    "package_sha256": "7ad948fda8a45a25814660e602cda9a2261fd6d35ef26dcaecfe70d103ad6c86",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/526#pullrequestreview-5786840254",
+    "source_commit": "e9b389c43d2319f360a07868353b570f89813fda",
+    "source_review_id": 5786840254,
+    "approved_at": "2026-11-05T14:49:27Z",
+    "delegated_by": "Tim55667757"
+  }
+}
