@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-450a4dddd755-en",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "The complete comment is retained in Notes: the 1838 portrait, the painter’s name and dates, the painting’s full title in French and translation, and the original linked biography.",
+    "images": "2 archival illustrations inspected and included.",
+    "digest": "The approved digest was checked against the complete source and shortened to a complete card description that preserves the joke’s effect."
+  },
+  "manual_changes": [
+    "A descriptive publication heading is proposed; the complete untitled source opening remains in the body. Source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-05",
+    "package_sha256": "ae4f5a3cca78d354d895abc3615364e20fee5e620184b88027f2356964e8c45f",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/536#pullrequestreview-5786843457",
+    "source_commit": "a2ef74082eb684b7802c9a03e5bd57fa55e52eed",
+    "source_review_id": 5786843457,
+    "approved_at": "2026-11-05T14:49:39Z",
+    "delegated_by": "Tim55667757"
+  }
+}
