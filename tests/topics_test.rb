@@ -41,6 +41,23 @@ class TopicsTest < Minitest::Test
     jokes = %w[анекдоты цитаты].map { |tag| make.call([tag]) }
     assert_equal jokes, HistoryMath::Topics.rubric_articles(jokes, ["Анекдоты", "Цитаты", "Математики шутят"])
   end
+
+  def test_article_headings_use_localized_rubrics_with_type_fallback
+    rubrics = JSON.parse(File.read(File.expand_path("../site/_data/home_rubrics.json", __dir__)))
+    template = Liquid::Template.parse('{{ tags | article_rubric_title: rubrics, lang | default: type }}')
+    heading = ->(lang, tags, type = "Essay") do
+      template.render!("lang" => lang, "tags" => tags, "type" => type, "rubrics" => rubrics)
+    end
+
+    assert_equal "Персоналия", heading.call("ru", ["ПЕРСОНАЛИИ"])
+    assert_equal "Profile", heading.call("en", ["People"])
+    assert_equal "Математики шутят", heading.call("ru", ["математики_шутят"])
+    assert_equal "Mathematicians Joke", heading.call("en", ["People", "Anecdotes"])
+    assert_equal "Математики шутят", heading.call("ru", ["Факты"], "Заметка")
+    assert_equal "Mathematicians Joke", heading.call("en", ["Facts"], "Note")
+    assert_equal "Essay", heading.call("en", ["Lives of Remarkable People"])
+    assert_equal "Инструмент", heading.call("ru", ["Геометрия"], "Инструмент")
+  end
 end
 
 class ReadingSelectionTest < Minitest::Test
