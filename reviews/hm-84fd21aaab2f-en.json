@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-84fd21aaab2f-en",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "All three substantive comment paragraphs, the portrait, the translator, the 1990 bibliography and the page-39 reference are retained in Notes; the local PDF marker is omitted and the PDF stays in the archive.",
+    "images": "2 archival illustrations inspected and included.",
+    "digest": "The approved digest was checked against the complete source and shortened to a complete card description that preserves the joke’s effect."
+  },
+  "manual_changes": [
+    "A descriptive publication heading is proposed; the complete untitled source opening remains in the body. Source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [
+    {
+      "id": "book-pagination",
+      "question": "The source bibliography gives 140 pages, while the library catalogue gives 144. The supplied scan has 140 image pages, which does not itself establish the publication’s pagination. The 1990 title page, V. I. Levin’s translation credit and the quotation on printed page 39 have been checked against the scan. Please resolve the total pagination; the source’s 140 is retained.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The source bibliography gives 140 pages, while the library catalogue gives 144. The supplied scan has 140 image pages, which does not itself establish the publication’s pagination. The 1990 title page, V. I. Levin’s translation credit and the quotation on printed page 39 have been checked against the scan. Please resolve the total pagination; the source’s 140 is retained.",
+        "ru": "В исходнике библиографическое описание указывает 140 с., а каталог библиотеки https://www.mathedu.ru/text/litlvud_matematicheskaya_smes_1990/ — 144 с. Предоставленный скан содержит 140 листов, что само по себе не подтверждает издательскую пагинацию. Титул 1990 года, перевод В. И. Левина и цитата на печатной с. 39 сверены по скану; согласовать общее число страниц, пока сохранено исходное 140."
+      },
+      "resolution": "Retained 140 pages, as stated on the title-page verso of Nauka’s fifth edition of 1990 (ISBN 5-02-014332-4): https://ru.djvu.online/file/KGcrAVKaSZRc8 . The reference to printed page 39 is unchanged; 1957 is identified as the date of the English edition used."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-05",
+    "package_sha256": "b087abfeab57d442dce3a6e970605dde36ced700e4f5cf3f751e170ed9172107",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/539#pullrequestreview-5792031820",
+    "source_commit": "09f7d088b65209e9c097862bf8df98fa67b57095",
+    "source_review_id": 5792031820,
+    "approved_at": "2026-11-05T20:58:52Z",
+    "delegated_by": "Tim55667757"
+  }
+}
