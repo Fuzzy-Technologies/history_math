@@ -1,0 +1,16 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c831fcde9a2b",
+  "questions": [],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-06",
+    "package_sha256": "239e69cc06d80333574226e10d38ad1a9cb8673eddedee4970ee29b83003e3c3",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/682#pullrequestreview-5805937553",
+    "source_commit": "7fb7941882c9749fad4a2093925f4c8679c1d56c",
+    "source_review_id": 5805937553,
+    "approved_at": "2026-11-06T19:38:27Z",
+    "delegated_by": "Tim55667757"
+  }
+}
