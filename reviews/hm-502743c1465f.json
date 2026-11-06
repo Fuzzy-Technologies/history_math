@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-502743c1465f",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "The entire prompt, all five finger-number sequences, experiment questions and authored answer are retained. The source’s five rows become a complete Markdown table in each language. The English title adapts the Russian familiarity idiom while retaining the hand image. The original diagram, confirmed Telegram URL and FELab date are preserved; the answer is separated by H2 without adding an invented proof.",
+    "images": "1 archival illustrations inspected and included.",
+    "digest": "The approved FELab digest was checked against the complete NAS post, all substantive comments and selected artwork, then condensed into one or two finished sentences."
+  },
+  "manual_changes": [
+    "Source title moved to shared heading; source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-06",
+    "package_sha256": "afae2beadaaa5fe5488adb9c132e0106b7b33017f619ff7d9ec440f6d47877f9",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/678#pullrequestreview-5798312543",
+    "source_commit": "c636cb6af6846bddd59b66c5f28c5dfd504349d8",
+    "source_review_id": 5798312543,
+    "approved_at": "2026-11-06T09:37:57Z",
+    "delegated_by": "Tim55667757"
+  }
+}
