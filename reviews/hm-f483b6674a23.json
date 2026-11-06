@@ -1,0 +1,24 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f483b6674a23",
+  "questions": [
+    {
+      "id": "pascal-carry-threshold",
+      "question": "Уточнить слова «больших, чем 10» и «большие, чем 10 биномиальные коэффициенты»: перенос нужен уже для коэффициента 10, который и выделен в первом примере. Нужна согласованная формулировка «не менее 10» или «двузначные и более крупные коэффициенты»; обозначения конкатенации со скобками сохранены как строки, чтобы не выдавать их за обычное умножение.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "В обеих версиях уточнён порог: перенос требуется при коэффициенте 10 или больше."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-06",
+    "package_sha256": "79fd3d8428cb361fe040e52dcbb2bd92b3891aeb294148174da64013a6e98f2c",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/685#pullrequestreview-5805937962",
+    "source_commit": "076a205d21d9cc9de1ee857ecfd8a22112dd8184",
+    "source_review_id": 5805937962,
+    "approved_at": "2026-11-06T19:38:29Z",
+    "delegated_by": "Tim55667757"
+  }
+}
