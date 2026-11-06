@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b22319860b3d-en",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "The complete mental method, both full digit/cube correspondences, mnemonic advice, thousands interval explanation and worked answer 38 are retained. Both source row pairs are transcribed into complete bilingual Markdown tables without dropping any value. The original diagram and FELab date are preserved. No confirmed Telegram URL or substantive comment block is present.",
+    "images": "1 archival illustrations inspected and included.",
+    "digest": "The approved FELab digest was checked against the complete NAS post, all substantive comments and selected artwork, then condensed into one or two finished sentences."
+  },
+  "manual_changes": [
+    "Source title moved to shared heading; source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-06",
+    "package_sha256": "3635dceb949d8d3feeb87714dd191f3d81ad97bdb4531ccde0d75412fb945b95",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/675#pullrequestreview-5798365594",
+    "source_commit": "92f5570851039a7a844c3b21f9da9ca4a9429305",
+    "source_review_id": 5798365594,
+    "approved_at": "2026-11-06T09:43:14Z",
+    "delegated_by": "Tim55667757"
+  }
+}
