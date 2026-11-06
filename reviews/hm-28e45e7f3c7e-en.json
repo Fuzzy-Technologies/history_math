@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-28e45e7f3c7e-en",
+  "questions": [
+    {
+      "id": "term-interpretation",
+      "question": "Please verify the separate claim that Wallis introduced the mathematical term “interpretation”. The cited Oxford account confirms “interpolation”; a source for “interpretation”, or an agreed revision of the list in both versions, is needed. The source word is retained pending review.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please verify the separate claim that Wallis introduced the mathematical term “interpretation”. The cited Oxford account confirms “interpolation”; a source for “interpretation”, or an agreed revision of the list in both versions, is needed. The source word is retained pending review.",
+        "ru": "Проверить приписываемое Валлису введение термина «интерпретация»: в перечне рядом с мантиссой, интерполяцией и непрерывной дробью это отдельное утверждение, а не синоним интерполяции. Оксфордский обзор подтверждает именно interpolation: https://www.maths.ox.ac.uk/system/files/attachments/John%20Wallis.pdf . Нужен конкретный источник для interpretation либо согласованная правка перечня в RU/EN. Исходное слово сохранено."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
