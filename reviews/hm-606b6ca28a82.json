@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-606b6ca28a82",
+  "questions": [
+    {
+      "id": "epsilon-backwards-english-pun",
+      "question": "Проверить английскую передачу игры «задом наперёд» / «заданного наперёд»: в диалоге сохранено противопоставление backwards / given in advance, а сходство русских фраз объяснено в EN-примечании. Достаточно ли этого для английского читателя?",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
