@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d0ee4800581e-en",
+  "questions": [
+    {
+      "id": "birth-year",
+      "question": "The author gives 1766, as does the RSL catalogue, while the linked NEB mechanics record identifies the author as circa 1764–1813. The original date and anniversary remain; please review the authority-record discrepancy rather than automatically replacing an exact date with an approximate one.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The author gives 1766, as does the RSL catalogue, while the linked NEB mechanics record identifies the author as circa 1764–1813. The original date and anniversary remain; please review the authority-record discrepancy rather than automatically replacing an exact date with an approximate one.",
+        "ru": "В авторском посте и каталоге РГБ указан 1766 год рождения: https://search.rsl.ru/ru/record/01002987909 . В связанной карточке НЭБ «Основания механики» автор обозначен «ок.1764–1813»: https://kp.rusneb.ru/item/material/osnovaniya-mehaniki-ch-1-soderzhashchaya-feoriyu-onoy . Сохранены исходные 1766 год и 260-летие; перед публикацией уточнить разницу авторитетных записей, не заменяя автоматически точную дату приблизительной."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
