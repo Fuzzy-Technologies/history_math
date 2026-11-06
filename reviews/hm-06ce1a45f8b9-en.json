@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-06ce1a45f8b9-en",
+  "questions": [
+    {
+      "id": "pythagorean-positive-parameter",
+      "question": "Please specify an odd parameter m > 1 for a nondegenerate triangle with positive integer sides. At m = 1, the source formulas give (1, 0, 1). The numerical examples for 25 and 2025 are correct.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please specify an odd parameter m > 1 for a nondegenerate triangle with positive integer sides. At m = 1, the source formulas give (1, 0, 1). The numerical examples for 25 and 2025 are correct.",
+        "ru": "Уточнить условие на параметр m: для невырожденного треугольника с натуральными сторонами требуется нечётное m > 1. При m = 1 исходные формулы дают (1, 0, 1). Численные примеры с 25 и 2025 верны."
+      },
+      "resolution": "Both editions require odd m > 1 for a nondegenerate triple."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
