@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-396aabb2f889-en",
+  "questions": [
+    {
+      "id": "hilbert-anecdote-source",
+      "question": "Please supply a printed or archival source, with edition and page, for the remark attributed to David Hilbert. The source post provides none. Its attribution and wording are preserved, while the card description identifies the text as an anecdote. Please agree the historical attribution in both versions.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please supply a printed or archival source, with edition and page, for the remark attributed to David Hilbert. The source post provides none. Its attribution and wording are preserved, while the card description identifies the text as an anecdote. Please agree the historical attribution in both versions.",
+        "ru": "Для приписываемой Давиду Гильберту реплики о поэте нужен печатный или архивный источник с изданием и страницей: в исходном посте такой ссылки нет. Сохранены авторская атрибуция и формулировка, а описание карточки называет текст анекдотом. Согласовать источник либо подачу исторической атрибуции в обеих версиях."
+      },
+      "resolution": "Both editions introduce the exchange as an anecdote. The wording makes no claim of a documented quotation."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
