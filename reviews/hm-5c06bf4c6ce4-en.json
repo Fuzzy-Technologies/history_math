@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-5c06bf4c6ce4-en",
+  "questions": [
+    {
+      "id": "courant-dream-problem-source",
+      "question": "Please identify the pages in Constance Reid’s Courant for the lecture-room nap, the two attributed remarks and the later publication of the solution. The claim of publication particularly needs the problem’s name and the work containing its solution, neither of which the post identifies. The publisher page for the collected edition https://link.springer.com/book/9780387962566 confirms the Courant biography, but not this episode. The source story remains in both versions, and the illustrated cover is not treated as proof of a real publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please identify the pages in Constance Reid’s Courant for the lecture-room nap, the two attributed remarks and the later publication of the solution. The claim of publication particularly needs the problem’s name and the work containing its solution, neither of which the post identifies. The publisher page for the collected edition https://link.springer.com/book/9780387962566 confirms the Courant biography, but not this episode. The source story remains in both versions, and the illustrated cover is not treated as proof of a real publication.",
+        "ru": "Уточнить страницы в Constance Reid «Courant» для сна на лекции, двух приписанных реплик и последующей публикации решения. Для утверждения о публикации особенно нужны название задачи и работа, где появилось решение; пост их не называет. Страница издателя сборного издания https://link.springer.com/book/9780387962566 подтверждает существование биографии «Courant», но не этот эпизод. Исходный рассказ сохранён в RU/EN, изображённая обложка не используется как доказательство реальной публикации."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
