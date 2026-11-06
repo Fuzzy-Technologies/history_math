@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c2ca386d390b",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Сверить год переезда Раабе в Цюрих: пост связывает сам переезд с осенью 1831 года, тогда как Исторический словарь Швейцарии указывает 1832 год. В MacTutor осень 1831 относится к эпидемии и прекращению уроков в Вене, затем описан отъезд без столь же явной даты. Возможно, смешаны начало эпидемии и переезд; согласовать обе версии. https://hls-dhs-dss.ch/de/articles/031631/ ; https://mathshistory.st-andrews.ac.uk/Biographies/Raabe/ .",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
