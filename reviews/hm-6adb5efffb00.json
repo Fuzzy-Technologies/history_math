@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6adb5efffb00",
+  "questions": [
+    {
+      "id": "cucumbers-original-jir-issue",
+      "question": "Перепечатка и Федин относят пародию к The Journal of Irreproducible Results, но автор, год и номер первопубликации не установлены. Уточнить библиографию, если необходима точная ссылка на оригинал; в обеих версиях сохранены подтверждённые ссылки на перепечатку и контекст журнала.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}

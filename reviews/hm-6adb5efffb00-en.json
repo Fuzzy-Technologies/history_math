@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6adb5efffb00-en",
+  "questions": [
+    {
+      "id": "cucumbers-original-jir-issue",
+      "question": "The reprint and Fedin attribute the parody to The Journal of Irreproducible Results, but the original author, year and issue are not established. Clarify the original bibliography if an exact first-publication citation is required; the supplied reprint and journal-context references are retained.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The reprint and Fedin attribute the parody to The Journal of Irreproducible Results, but the original author, year and issue are not established. Clarify the original bibliography if an exact first-publication citation is required; the supplied reprint and journal-context references are retained.",
+        "ru": "Перепечатка и Федин относят пародию к The Journal of Irreproducible Results, но автор, год и номер первопубликации не установлены. Уточнить библиографию, если необходима точная ссылка на оригинал; в обеих версиях сохранены подтверждённые ссылки на перепечатку и контекст журнала."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
