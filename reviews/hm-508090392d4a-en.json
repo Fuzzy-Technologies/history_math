@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-508090392d4a-en",
+  "questions": [
+    {
+      "id": "pheasants-chinese-source",
+      "question": "Please check the ancient Chinese source title. The post assigns the problem’s first appearance to Chiu-chang / the Nine Chapters, but Man-Keung Siu identifies the 35-head, 94-leg version as problem 31 in Book III of Sunzi Suanjing, pp. 3–4 of the PDF: https://hkumath.hku.hk/~mks/ESU8_MKSiu_Equations_RevisedDraft_Mar12_2019.pdf . Please agree a correction distinguishing the two treatises. All solutions and the original attribution remain pending that decision.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please check the ancient Chinese source title. The post assigns the problem’s first appearance to Chiu-chang / the Nine Chapters, but Man-Keung Siu identifies the 35-head, 94-leg version as problem 31 in Book III of Sunzi Suanjing, pp. 3–4 of the PDF: https://hkumath.hku.hk/~mks/ESU8_MKSiu_Equations_RevisedDraft_Mar12_2019.pdf . Please agree a correction distinguishing the two treatises. All solutions and the original attribution remain pending that decision.",
+        "ru": "Проверить название древнекитайского источника в обеих версиях. В посте задача впервые отнесена к «Киу-Чанг» / «Девяти отделам», но вариант с 35 головами и 94 ногами у Ман-Кён Сиу указан как задача 31 книги III «Сунь-цзы суань цзин»: Equations in China: Two Millennia of Innovation, Transmission and Re-transmission, с. 3–4 PDF, https://hkumath.hku.hk/~mks/ESU8_MKSiu_Equations_RevisedDraft_Mar12_2019.pdf . Согласовать уточнение, не смешивая два трактата. Все авторские решения и исходная атрибуция пока сохранены."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
