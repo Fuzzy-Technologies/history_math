@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8c3741ef7ce7-en",
+  "questions": [
+    {
+      "id": "death-date",
+      "question": "Please decide the death date, or a short note on the discrepancy, in both versions. The source and Österreichisches Biographisches Lexikon give 28 January 1884, while Allgemeine Deutsche Biographie gives 27 January. The source date is retained pending review.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please decide the death date, or a short note on the discrepancy, in both versions. The source and Österreichisches Biographisches Lexikon give 28 January 1884, while Allgemeine Deutsche Biographie gives 27 January. The source date is retained pending review.",
+        "ru": "В исходнике дата смерти Грубе — 28 января 1884 года; её подтверждает Österreichisches Biographisches Lexikon: https://www.biographien.ac.at/oebl/oebl_G/Grube_August-Wilhelm_1816_1884.xml . Приведённая рядом Allgemeine Deutsche Biographie дважды указывает 27 января: https://www.deutsche-biographie.de/sfz24124.html . Согласовать дату либо краткое примечание о расхождении для обеих версий. Авторское 28 января пока сохранено."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}

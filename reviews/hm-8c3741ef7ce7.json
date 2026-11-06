@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8c3741ef7ce7",
+  "questions": [
+    {
+      "id": "death-date",
+      "question": "В исходнике дата смерти Грубе — 28 января 1884 года; её подтверждает Österreichisches Biographisches Lexikon: https://www.biographien.ac.at/oebl/oebl_G/Grube_August-Wilhelm_1816_1884.xml . Приведённая рядом Allgemeine Deutsche Biographie дважды указывает 27 января: https://www.deutsche-biographie.de/sfz24124.html . Согласовать дату либо краткое примечание о расхождении для обеих версий. Авторское 28 января пока сохранено.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
