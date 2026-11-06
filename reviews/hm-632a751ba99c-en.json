@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-632a751ba99c-en",
+  "questions": [
+    {
+      "id": "pi-vodka-illustration-exponents",
+      "question": "In fig-1, the digits 09 and 63 are displaced as subscripts or superscripts beside 1.49 and 2.86, making the formula ambiguous. Both formulas in the text are correctly typeset and numerically checked. The original image is retained; decide whether its lettering needs correction before publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "In fig-1, the digits 09 and 63 are displaced as subscripts or superscripts beside 1.49 and 2.86, making the formula ambiguous. Both formulas in the text are correctly typeset and numerically checked. The original image is retained; decide whether its lettering needs correction before publication.",
+        "ru": "На fig-1 цифры 09 и 63 вынесены относительно 1, 49 и 2, 86 в нижний/верхний индексы, поэтому запись может читаться не как 1, 4909 в степени 2, 8663. В тексте обе формулы набраны корректно и численно проверены; исходный рисунок сохранён. Решить, нужно ли исправить надпись на иллюстрации перед публикацией."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
