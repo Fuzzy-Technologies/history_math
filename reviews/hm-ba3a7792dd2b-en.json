@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ba3a7792dd2b-en",
+  "questions": [
+    {
+      "id": "khayyam-wine-anecdote-source",
+      "question": "Please identify the page or quatrain underlying the story about wine with three unknowns. The source cites Edward FitzGerald’s The Rubaiyat of Omar Khayyam (1859), but no connection to a specific passage has been established. The publication year is not disputed. The joke and original bibliography are retained; the editor should agree the attribution.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please identify the page or quatrain underlying the story about wine with three unknowns. The source cites Edward FitzGerald’s The Rubaiyat of Omar Khayyam (1859), but no connection to a specific passage has been established. The publication year is not disputed. The joke and original bibliography are retained; the editor should agree the attribution.",
+        "ru": "Уточнить страницу или номер рубаи, на котором основана история про вино с тремя неизвестными. Исходник ссылается на перевод Edward FitzGerald «The Rubaiyat of Omar Khayyam» (1859), но связь этого анекдота с конкретным текстом не установлена. Год издания не оспаривается. Сохранены шутка и исходная библиография; редактору решить, как обозначить атрибуцию."
+      }
+    },
+    {
+      "id": "khayyam-memorial-photograph",
+      "question": "The memorial photograph has a visible Google mark at the bottom. Please confirm the photographer or the basis for using this particular archival photograph; no public page for the exact image has been established. It is not cropped and the mark is retained; source identifies the accompanying illustration without claiming an external licence.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The memorial photograph has a visible Google mark at the bottom. Please confirm the photographer or the basis for using this particular archival photograph; no public page for the exact image has been established. It is not cropped and the mark is retained; source identifies the accompanying illustration without claiming an external licence.",
+        "ru": "На фотографии мемориала внизу виден знак Google. Подтвердить фотографа или допустимость использования именно этого архивного снимка; подтверждённой публичной страницы конкретного изображения пока нет. Изображение не обрезано и знак сохранён; source указывает иллюстрацию к материалу без заявления о внешней лицензии."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
