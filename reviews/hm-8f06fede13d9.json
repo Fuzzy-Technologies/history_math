@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8f06fede13d9",
+  "questions": [
+    {
+      "id": "club-members-terms-english",
+      "question": "Проверить передачу игры слова «член» (член клуба / член ряда) в EN. В правиле оставлено members, а двойной смысл объяснён в примечании; решить, достаточно ли естественна реплика о людях по нескольким членам для английского читателя.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
