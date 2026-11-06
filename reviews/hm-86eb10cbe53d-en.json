@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-86eb10cbe53d-en",
+  "questions": [
+    {
+      "id": "russell-false-premise-scope",
+      "question": "Smullyan does write “a false proposition implies any proposition” in no. 244, pp. 206–207, verified in the PDF. Decide whether to explain the distinction between material implication with a false antecedent and explosion from a contradiction: an arbitrary false axiom need not itself make a theory inconsistent. Here 2+2=5 conflicts with ordinary arithmetic. The author’s popular explanation is retained.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Smullyan does write “a false proposition implies any proposition” in no. 244, pp. 206–207, verified in the PDF. Decide whether to explain the distinction between material implication with a false antecedent and explosion from a contradiction: an arbitrary false axiom need not itself make a theory inconsistent. Here 2+2=5 conflicts with ordinary arithmetic. The author’s popular explanation is retained.",
+        "ru": "Смаллиан действительно употребляет “a false proposition implies any proposition” (№ 244, стр. 206–207; проверено по PDF). Редактору решить, нужно ли пояснение: истинность материальной импликации с ложным антецедентом и принцип взрыва из противоречия — разные формулировки; произвольная ложная аксиома сама по себе не всегда делает теорию противоречивой. Здесь 2+2=5 противоречит обычной арифметике. Авторское популярное объяснение сохранено."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
