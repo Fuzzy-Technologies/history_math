@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-5159a38b8099-en",
+  "questions": [
+    {
+      "id": "convexity-assumptions",
+      "question": "Please specify finite-dimensional values and the usual finiteness assumptions in the convexity theorem. The original 1940 paper concerns an n-dimensional space; the abbreviated source wording should not suggest an unrestricted infinite-dimensional theorem. The clarification remains an editorial decision for both versions.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please specify finite-dimensional values and the usual finiteness assumptions in the convexity theorem. The original 1940 paper concerns an n-dimensional space; the abbreviated source wording should not suggest an unrestricted infinite-dimensional theorem. The clarification remains an editorial decision for both versions.",
+        "ru": "Для теоремы о выпуклости явно уточнить конечномерность значений векторной меры и стандартные условия её конечности: без оговорок фраза может быть прочитана как утверждение для произвольных бесконечномерных пространств. В оригинальной работе рассматривается n-мерное пространство: А. А. Ляпунов, «О вполне аддитивных вектор-функциях», Изв. АН СССР. Сер. матем., 4: 6 (1940), 465–478, https://www.mathnet.ru/php/archive.phtml?jrnid=im&option_lang=rus&paperid=3907&wshow=paper . Исходная краткая формулировка сохранена; уточнение нужно согласовать в обеих версиях."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
