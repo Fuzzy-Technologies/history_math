@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-df6eaaba27d7-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the claims of priority for arranging combinations in a triangle and inventing the first calculating machine, and the figure of more than fifty Pascalines built.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the claims of priority for arranging combinations in a triangle and inventing the first calculating machine, and the figure of more than fifty Pascalines built.",
+        "ru": "Проверить заявления о первом треугольном расположении сочетаний и первой счётной машине, а также число построенных паскалин «более 50»."
+      },
+      "resolution": "Priority claims were removed: the triangular array is stated to have been known earlier, the Pascaline is called one of the earliest mechanical calculators, and the number manufactured is presented as approximate."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
