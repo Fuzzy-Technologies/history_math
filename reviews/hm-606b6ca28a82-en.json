@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-606b6ca28a82-en",
+  "questions": [
+    {
+      "id": "epsilon-backwards-english-pun",
+      "question": "Review the English adaptation of the Russian near-homophones zadom naperyod / zadannogo naperyod; the dialogue contrasts backwards with given in advance, and Notes explains the Russian wording.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Review the English adaptation of the Russian near-homophones zadom naperyod / zadannogo naperyod; the dialogue contrasts backwards with given in advance, and Notes explains the Russian wording.",
+        "ru": "Проверить английскую передачу игры «задом наперёд» / «заданного наперёд»: в диалоге сохранено противопоставление backwards / given in advance, а сходство русских фраз объяснено в EN-примечании. Достаточно ли этого для английского читателя?"
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
