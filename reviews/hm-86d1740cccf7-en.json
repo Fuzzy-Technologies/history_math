@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-86d1740cccf7-en",
+  "questions": [
+    {
+      "id": "fibonacci-weights-optimality",
+      "question": "Please clarify the claim that Fibonacci-number weights minimise the number required. Under the preceding conditions, powers of two cover a larger continuous range on one pan and powers of three on both pans for the same number of weights. Are there additional constraints? Please agree an explanation or removal of “smallest”; the whole source paragraph and sequence remain.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please clarify the claim that Fibonacci-number weights minimise the number required. Under the preceding conditions, powers of two cover a larger continuous range on one pan and powers of three on both pans for the same number of weights. Are there additional constraints? Please agree an explanation or removal of “smallest”; the whole source paragraph and sequence remain.",
+        "ru": "Уточнить абзац о минимальном числе «гирь Фибоначчи». Набор 1, 2, 3, 5,… не является оптимальным при условиях выше: при том же числе гирь степени двойки покрывают больший непрерывный диапазон для одной чаши, а степени тройки — для двух. В чём дополнительные ограничения этой системы? Согласовать пояснение или убрать слово «минимальным» в обеих версиях. Сам ряд и весь авторский абзац сохранены."
+      },
+      "resolution": "The paragraph now states that Fibonacci weights can weigh integer masses but do not minimise the number of weights under the stated conditions; the optimal powers-of-two and powers-of-three systems are identified explicitly."
+    },
+    {
+      "id": "fibonacci-historical-generality",
+      "question": "Please check the final note’s categorical claim that Fibonacci was Western Europe’s first independent mathematician to cover every achievement of mathematicians in the Islamic world and advance beyond them. A specific historical source or a more precise account of his contribution and transmission of knowledge is needed. The source wording remains for editorial decision.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please check the final note’s categorical claim that Fibonacci was Western Europe’s first independent mathematician to cover every achievement of mathematicians in the Islamic world and advance beyond them. A specific historical source or a more precise account of his contribution and transmission of knowledge is needed. The source wording remains for editorial decision.",
+        "ru": "Проверить категоричную формулировку в последнем примечании: «первый самостоятельный математик Западной Европы», «полностью осветил все достижения … и продвинулся дальше них». Нужен конкретный исторический источник или более точное описание вклада и передачи знаний. Исходные сведения сохранены для решения редактора."
+      },
+      "resolution": "The categorical priority claim has been replaced with a precise account of Fibonacci’s role in transmitting mathematical methods; the lifespan is given as c. 1170–c. 1250."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
