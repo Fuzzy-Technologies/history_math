@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a18833a10db5-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the birth date and doctorate year: the source gives 6/19 March 1900 and 1941; Math-Net gives 18 March, while the Encyclopedia of Modern Ukraine gives 19 March/1 April and the degree in 1942, https://www.mathnet.ru/php/person.phtml?option_lang=rus&personid=42476 and https://esu.com.ua/article-43288 . Resolve calendar styles and use primary records for both languages.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the birth date and doctorate year: the source gives 6/19 March 1900 and 1941; Math-Net gives 18 March, while the Encyclopedia of Modern Ukraine gives 19 March/1 April and the degree in 1942, https://www.mathnet.ru/php/person.phtml?option_lang=rus&personid=42476 and https://esu.com.ua/article-43288 . Resolve calendar styles and use primary records for both languages.",
+        "ru": "Сверить дату рождения и год докторской защиты: исходник указывает 6 (19) марта 1900 и 1941; Math-Net даёт 18 марта, а ЕСУ — 19 марта (1 апреля) и степень в 1942: https://www.mathnet.ru/php/person.phtml?option_lang=rus&personid=42476 ; https://esu.com.ua/article-43288 . Не смешивать старый и новый стили; выбрать даты по первичным документам и согласовать RU/EN."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Verify the institute’s historical name in 1944 and the scope of the claims about the first defence and absence of earlier modern theoretical-arithmetic works. The author’s judgement and personal recollection are retained; the final wording needs precise evidence for priority.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the institute’s historical name in 1944 and the scope of the claims about the first defence and absence of earlier modern theoretical-arithmetic works. The author’s judgement and personal recollection are retained; the final wording needs precise evidence for priority.",
+        "ru": "Уточнить историческое название института в 1944 году и границы утверждений о первой защите и отсутствии предшествующих современных работ по теоретической арифметике. Авторское суждение и воспоминание сохранены; для окончательной редакции нужны точные основания приоритета."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
