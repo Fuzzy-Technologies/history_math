@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-e95fa8609e6f-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Check the list of foreign academies, the description of Chebyshev’s school, the title and date of his work on mechanisms, and the source of Markov’s recollection.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Check the list of foreign academies, the description of Chebyshev’s school, the title and date of his work on mechanisms, and the source of Markov’s recollection.",
+        "ru": "Проверить перечень иностранных академий, описание школы Чебышёва, название и дату работы о механизмах и источник воспоминания Маркова."
+      },
+      "resolution": "The exact unsupported society count was removed; the school is described without asserting that every named mathematician was a direct pupil; the 1854 title is given more precisely, and Markov’s unsourced direct quotation is paraphrased as a recollection."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
