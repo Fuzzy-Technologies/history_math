@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-513a4bc3cae8-en",
+  "questions": [
+    {
+      "id": "related-essay",
+      "question": "Please confirm retaining this separately dated birthday profile alongside the existing Ars magna essay, hm-tt-c18ad1d 221bd. The source explicitly cites the older essay and its text has not been copied into this package.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please confirm retaining this separately dated birthday profile alongside the existing Ars magna essay, hm-tt-c18ad1d 221bd. The source explicitly cites the older essay and its text has not been copied into this package.",
+        "ru": "На сайте уже есть самостоятельная статья «Ars magna: Великое искусство», hm-tt-c18ad1d 221bd: https://history-math.org/ru/articles/hm-tt-c18ad1d221bd/ . Новый юбилейный пост отдельно ссылается на неё, имеет другую редакцию и исходную дату. Подтвердить сохранение краткой персоналии рядом с существующим очерком; текст старой статьи в этот пакет не копировался."
+      }
+    },
+    {
+      "id": "comment-image",
+      "question": "The second comment names a JPG, but only the PNG with the same stem and version exists in the source archive. That PNG is included and described as an artistic illustration, without historical attribution. Please confirm the intended variant.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The second comment names a JPG, but only the PNG with the same stem and version exists in the source archive. That PNG is included and described as an artistic illustration, without historical attribution. Please confirm the intended variant.",
+        "ru": "Во втором комментарии маркер «Кардано-ретушь-1.jpg», но в архиве есть только «Кардано-ретушь-1.png» с тем же именем и номером версии. Использована эта PNG-иллюстрация; она подписана как художественная, без утверждения исторической атрибуции. Подтвердить соответствие выбранному варианту."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
