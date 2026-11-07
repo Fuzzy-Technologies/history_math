@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ac011f37fe47-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Approve the birth date: the post gives 30 January/11 February with an alternative 1/13 February; Stepanov’s 1941 obituary gives 12 February, while Kuznetsov and Solomentsev’s 1982 article gives 13 February, 1 February Old Style. Both originals were read and linked in Notes. Select the date from primary evidence for both versions.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Approve the birth date: the post gives 30 January/11 February with an alternative 1/13 February; Stepanov’s 1941 obituary gives 12 February, while Kuznetsov and Solomentsev’s 1982 article gives 13 February, 1 February Old Style. Both originals were read and linked in Notes. Select the date from primary evidence for both versions.",
+        "ru": "Согласовать дату рождения: пост даёт 30 января (11 февраля), с альтернативой 1 (13) февраля; некролог Степанова 1941 года — 12 февраля, а статья Кузнецова и Соломенцева 1982 года — 13(1) февраля. Обе статьи приведены в примечаниях. Нужен выбор по первоисточнику для RU/EN."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Clarify the Luzin–Privalov theorem hypotheses: angular and radial limits cannot be unconditionally interchanged for an arbitrary holomorphic function. Specify the function class, boundary-set assumptions and hypotheses for preserving null sets under conformal mapping. Primary paper: Lusin and Priwaloff, 1925, https://www.numdam.org/articles/10.24033/asens.763/ . The source wording remains pending approval.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the Luzin–Privalov theorem hypotheses: angular and radial limits cannot be unconditionally interchanged for an arbitrary holomorphic function. Specify the function class, boundary-set assumptions and hypotheses for preserving null sets under conformal mapping. Primary paper: Lusin and Priwaloff, 1925, https://www.numdam.org/articles/10.24033/asens.763/ . The source wording remains pending approval.",
+        "ru": "Уточнить условия теорем Лузина–Привалова: угловые и радиальные предельные значения нельзя безусловно объединять союзом «или» для произвольной голоморфной функции. Согласовать условия класса функций и граничного множества, а также условия сохранения множеств меры нуль при конформном отображении. Первоисточник: Lusin, Priwaloff, 1925, https://www.numdam.org/articles/10.24033/asens.763/ . Исходная формулировка пока сохранена в обеих версиях."
+      },
+      "resolution": "The conditions on the conformal map and the nontangential limits follow [Luzin and Privalov’s paper](https://www.numdam.org/articles/10.24033/asens.763/), sections 12, 14 and 34."
+    },
+    {
+      "id": "q3",
+      "question": "Verify the year of The Cauchy Integral: the post gives 1918, the 1941 obituary’s bibliography places the monograph in 1919, and the 1982 article also mentions 1918. Preparation or dissertation and publication dates may differ; check the title page before changing them.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the year of The Cauchy Integral: the post gives 1918, the 1941 obituary’s bibliography places the monograph in 1919, and the 1982 article also mentions 1918. Preparation or dissertation and publication dates may differ; check the title page before changing them.",
+        "ru": "Сверить год «Интеграла Коши»: основной пост даёт 1918, библиография некролога 1941 года относит монографию к 1919; в статье 1982 года встречается также 1918. Возможно, различаются подготовка/диссертация и печатное издание. Не исправлять без проверки титула."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
