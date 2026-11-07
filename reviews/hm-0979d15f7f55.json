@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0979d15f7f55",
+  "questions": [
+    {
+      "id": "hilbert-quotation-edition",
+      "question": "Подтвердить точное издание Hilbert–Courant и страницу 174 по книге: в исходнике стоит 1984 год, а приведённая ссылка Springer относится к отдельному Hilbert (1996). Это разные библиографические записи; страница цитаты в нужном издании пока не проверена. Указание 1984 не заменено автоматически.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
