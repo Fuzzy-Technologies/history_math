@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-24d839c05939-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Review the translation of the historical dissertation title concerning congruences with functional moduli and establish the degree associated with the 1918 defence. The English text does not add a PhD or doctoral designation.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Review the translation of the historical dissertation title concerning congruences with functional moduli and establish the degree associated with the 1918 defence. The English text does not add a PhD or doctoral designation.",
+        "ru": "Согласовать перевод исторического названия диссертации «Алгебра как учение о сравнении по функциональным модулям» и уточнить степень, к которой относится защита 1918 года. В EN не добавлено обозначение PhD или докторской степени."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Verify the scope of the first specialist natural-science publisher claim and the 1923 Introduction to Analysis imprint, including who compiled it from the lectures.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the scope of the first specialist natural-science publisher claim and the 1923 Introduction to Analysis imprint, including who compiled it from the lectures.",
+        "ru": "Сверить область утверждения о первом специальном естественно-научном издательстве и выходные данные «Введения в анализ» 1923 года, включая составителя по лекциям."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
