@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-841d78f77c55-en",
+  "questions": [
+    {
+      "id": "wiener-anecdote-sources",
+      "question": "Confirm the exact Eves edition and page for the winner/Wiener punchline, and publication locators for Phyllis L. Block’s and Gene B. Chase’s recollections. Wiener and winner are not standard English homophones, while the current source list gives only general references; keep this five-story collection separate from the existing Wiener biography.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the exact Eves edition and page for the winner/Wiener punchline, and publication locators for Phyllis L. Block’s and Gene B. Chase’s recollections. Wiener and winner are not standard English homophones, while the current source list gives only general references; keep this five-story collection separate from the existing Wiener biography.",
+        "ru": "Уточнить точное издание и страницу Ивза для развязки winner/Wiener, а также публикационные указатели для воспоминаний Филлис Л. Блок и Джина Б. Чейза. Wiener и winner не являются обычными английскими омофонами, а текущий список даёт лишь общие ссылки; эту подборку пяти баек следует сохранить отдельно от уже подготовленной биографии Винера."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
