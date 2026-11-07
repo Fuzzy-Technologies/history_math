@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f07fd644391f-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify 1936 versus 1937 for the technical candidate degree and professorial title: the Keldysh Institute biography and MSU chronicle give 1936, while the Academy’s presidential biography gives 1937. Sources: https://keldysh.ru/memory/keldysh/bio.htm ; https://www.letopis.msu.ru/peoples/8641 ; https://www.ras.ru/presidents/5ecea152-dae8-4146-b569-80499038fc40.aspx . The source’s 1937 remains pending a decision.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify 1936 versus 1937 for the technical candidate degree and professorial title: the Keldysh Institute biography and MSU chronicle give 1936, while the Academy’s presidential biography gives 1937. Sources: https://keldysh.ru/memory/keldysh/bio.htm ; https://www.letopis.msu.ru/peoples/8641 ; https://www.ras.ru/presidents/5ecea152-dae8-4146-b569-80499038fc40.aspx . The source’s 1937 remains pending a decision.",
+        "ru": "Сверить 1936/1937 для степени кандидата технических наук и звания профессора: биография ИПМ и летопись МГУ дают 1936, президентская биография РАН — 1937. Источники: https://keldysh.ru/memory/keldysh/bio.htm ; https://www.letopis.msu.ru/peoples/8641 ; https://www.ras.ru/presidents/5ecea152-dae8-4146-b569-80499038fc40.aspx . До решения сохранён исходный 1937 в RU/EN."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Clarify director of the Institute of Applied Mathematics from 1953: the Applied Mathematics Division was established in 1953 and became an independent institute in 1966. Steklov’s record distinguishes these posts, https://mi.ras.ru/index.php?c=inmemoriapage&id=24591&l=1 . Approve the wording in both versions.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify director of the Institute of Applied Mathematics from 1953: the Applied Mathematics Division was established in 1953 and became an independent institute in 1966. Steklov’s record distinguishes these posts, https://mi.ras.ru/index.php?c=inmemoriapage&id=24591&l=1 . Approve the wording in both versions.",
+        "ru": "Уточнить фразу «директор Института прикладной математики с 1953»: в 1953 создано Отделение прикладной математики МИАН, самостоятельный институт — в 1966. МИАН подробно различает эти должности: https://mi.ras.ru/index.php?c=inmemoriapage&id=24591&l=1 . Согласовать точную формулировку обеих версий."
+      },
+      "resolution": "Both editions distinguish the division from the independent institute, following the [Steklov Institute’s biography](https://mi.ras.ru/index.php?c=inmemoriapage&id=24591&l=1)."
+    },
+    {
+      "id": "q3",
+      "question": "Supply the exact source of V. I. Arnold’s recollection and of the decision to copy IBM System/360 at the end of 1966. Approve the historical assessment of Keldysh’s role and the causal wording in both languages. The entire disputed authorial passage is retained in Notes.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Supply the exact source of V. I. Arnold’s recollection and of the decision to copy IBM System/360 at the end of 1966. Approve the historical assessment of Keldysh’s role and the causal wording in both languages. The entire disputed authorial passage is retained in Notes.",
+        "ru": "Нужны точная ссылка на воспоминание В. И. Арнольда и источник решения о копировании IBM-360 в конце 1966 года. Согласовать историческую оценку роли Келдыша и её причинно-следственные формулировки в RU/EN. Весь спорный фрагмент авторского текста сохранён в примечаниях."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
