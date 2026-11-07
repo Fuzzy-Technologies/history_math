@@ -1,0 +1,74 @@
+{
+  "review_version": 1,
+  "article_id": "hm-95838b5617bc-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the MAD terminology: the Russian source says “mean absolute deviation”, whereas equation (1), the English expansion and the English edition use the median absolute deviation. Agree consistent terminology in both editions.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the MAD terminology: the Russian source says “mean absolute deviation”, whereas equation (1), the English expansion and the English edition use the median absolute deviation. Agree consistent terminology in both editions.",
+        "ru": "Уточнить термин MAD: в русском исходнике употреблено «среднее абсолютное отклонение», тогда как формула (1), английская расшифровка и EN-версия используют медианное абсолютное отклонение. Согласовать терминологию обеих версий."
+      },
+      "resolution": "Both editions use median absolute deviation, as defined in equation (1)."
+    },
+    {
+      "id": "q2",
+      "question": "Check the definition and notation in equation (2): a standard Hampel filter compares a specific observation xᵢ with the median and MAD of its window Wᵢ. In the current expression MAD is taken over an undefined Xᵢ, while the set A stores unindexed values, so equal values from different windows cannot be distinguished. Agree an indexed formula and update equation (3) consistently.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Check the definition and notation in equation (2): a standard Hampel filter compares a specific observation xᵢ with the median and MAD of its window Wᵢ. In the current expression MAD is taken over an undefined Xᵢ, while the set A stores unindexed values, so equal values from different windows cannot be distinguished. Agree an indexed formula and update equation (3) consistently.",
+        "ru": "Проверить определение и обозначения формулы (2): стандартный фильтр Хампеля сравнивает конкретное наблюдение xᵢ с медианой и MAD его окна Wᵢ. В текущей записи MAD берётся от не определённого Xᵢ, а множество A хранит значения без индекса, поэтому одинаковые значения из разных окон неразличимы. Согласовать индексированную формулу и синхронно уточнить формулу (3)."
+      },
+      "resolution": "Equations (2) and (3) now use element indices and the MAD of the corresponding window Wᵢ."
+    },
+    {
+      "id": "q3",
+      "question": "Reconcile the charts with the example parameters: the text sets an initial price of 50 and precision=0, but the first source chart reports “Close, first: 44.0” and “Precision: 1”. All three original illustrations are retained; should the text explain that these are from another generator run?",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Reconcile the charts with the example parameters: the text sets an initial price of 50 and precision=0, but the first source chart reports “Close, first: 44.0” and “Precision: 1”. All three original illustrations are retained; should the text explain that these are from another generator run?",
+        "ru": "Сверить графики с параметрами примера: текст задаёт начальную цену 50 и precision=0, а на первом исходном рисунке указаны Close, first: 44.0 и Precision: 1. Все три исходные иллюстрации сохранены; нужно ли пояснить, что это другой запуск генератора?"
+      },
+      "resolution": "Both editions explain that the source charts come from a separate run with the parameters displayed on the charts."
+    },
+    {
+      "id": "q4",
+      "question": "Agree corrections to bibliographic typos: DBSCAN4 in reference 2, and Ronchtti, Robust Statistic and Influence Functons in reference 10. The source wording and spellings are retained; reference 2 uses the verified HTTPS Math-Net.Ru record for the same article.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Agree corrections to bibliographic typos: DBSCAN4 in reference 2, and Ronchtti, Robust Statistic and Influence Functons in reference 10. The source wording and spellings are retained; reference 2 uses the verified HTTPS Math-Net.Ru record for the same article.",
+        "ru": "Согласовать библиографические опечатки: DBSCAN4 в источнике 2, Ronchtti, Robust Statistic и Influence Functons в источнике 10. Названия и написание авторского списка сохранены; HTTPS-ссылка источника 2 ведёт на подтверждённую карточку той же статьи Math-Net.Ru."
+      },
+      "resolution": "Corrected the titles and names against the Math-Net.Ru record and the Wiley catalogue."
+    },
+    {
+      "id": "q5",
+      "question": "Check availability of the external English translation and the line-bound links to TKSBrokerAPI’s develop branch. Historical URLs are retained; the examples were not executed and compatibility with current library versions was not established during preparation.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Check availability of the external English translation and the line-bound links to TKSBrokerAPI’s develop branch. Historical URLs are retained; the examples were not executed and compatibility with current library versions was not established during preparation.",
+        "ru": "Проверить доступность внешнего английского перевода и привязанных к строкам ссылок на develop-ветку TKSBrokerAPI. Исторические URL сохранены; в этой подготовке примеры не исполнялись и их совместимость с текущими версиями библиотек не подтверждалась."
+      }
+    },
+    {
+      "id": "breakdown-point-definition",
+      "question": "Clarify the definition of the breakdown point: it is the smallest proportion of replacements that can drive an estimator arbitrarily far, rather than the largest contaminated proportion that the method can “handle”. Align both editions with the following examples of 0.5 for the median and 1/n for the mean.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the definition of the breakdown point: it is the smallest proportion of replacements that can drive an estimator arbitrarily far, rather than the largest contaminated proportion that the method can “handle”. Align both editions with the following examples of 0.5 for the median and 1/n for the mean.",
+        "ru": "Уточнить определение точки разрыва: это минимальная доля замен, способная увести оценку сколь угодно далеко, а не наибольшая доля загрязнения, которую метод «может обработать». Согласовать определение обеих версий с последующими примерами 0,5 для медианы и 1/n для среднего."
+      },
+      "resolution": "The definition now states the smallest replacement fraction that can drive an estimator arbitrarily far."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
