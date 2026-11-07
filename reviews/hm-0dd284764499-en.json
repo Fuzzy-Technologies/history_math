@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0dd284764499-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the 1951 wording: retirement and a return to Zurich did not end his IAS affiliation, which continued as Professor Emeritus in 1951–1955, https://www.ias.edu/math/people/past-faculty . Approve a brief clarification in both versions if needed.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify the 1951 wording: retirement and a return to Zurich did not end his IAS affiliation, which continued as Professor Emeritus in 1951–1955, https://www.ias.edu/math/people/past-faculty . Approve a brief clarification in both versions if needed.",
+        "ru": "Уточнить формулировку о 1951 годе: выход в отставку и возвращение в Цюрих не означают разрыва с IAS, который указывает статус Professor Emeritus в 1951–1955: https://www.ias.edu/math/people/past-faculty . При необходимости дополнить обе версии коротким уточнением, сохранив авторский объём."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
