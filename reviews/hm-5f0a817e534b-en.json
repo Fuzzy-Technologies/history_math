@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-5f0a817e534b-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the statements about al-Khwarizmi’s role at the House of Wisdom and the novelty claimed for his account of Indian numerals.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the statements about al-Khwarizmi’s role at the House of Wisdom and the novelty claimed for his account of Indian numerals.",
+        "ru": "Уточнить формулировки о роли аль-Хорезми в «Доме Мудрости» и о новизне его изложения индийской записи чисел."
+      },
+      "resolution": "The text now states only that al-Khwarizmi worked at the House of Wisdom and that his book described Indian numeral notation; unsupported priority and administrative-title claims were removed."
+    },
+    {
+      "id": "q2",
+      "question": "Verify the wording about heading the House of Wisdom’s library and the first explanation of Indian numerals; confirm the portrait’s and book illustration’s provenance and the basis for reproducing all three archival images.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the wording about heading the House of Wisdom’s library and the first explanation of Indian numerals; confirm the portrait’s and book illustration’s provenance and the basis for reproducing all three archival images.",
+        "ru": "Уточнить формулировки о руководстве библиотекой «Дома Мудрости» и первом объяснении индийской записи чисел; подтвердить происхождение портрета и книжной иллюстрации и основание воспроизведения трёх архивных изображений."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
