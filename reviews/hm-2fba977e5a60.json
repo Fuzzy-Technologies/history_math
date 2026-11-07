@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2fba977e5a60",
+  "questions": [
+    {
+      "id": "bhaskara-zero-quotation",
+      "question": "Уточнить страницу и основание атрибуции реплики про ноль яблок и ноль в уравнении в книге George Gheverghese Joseph «The Crest of the Peacock» (2011): в доступном тексте издания соответствующая реплика не найдена. Согласовать источник либо помету о характере шутки; год издания подтверждён.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
