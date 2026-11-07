@@ -1,0 +1,105 @@
+{
+  "/assets/images/hm-0a3d6a70c470/figure-01.png": {
+    "sha256": "dfbe6e328a81d88a4d664a81d009a69e62817c2fdc873b61d0ed11f9d9524d87",
+    "width": 150,
+    "height": 200,
+    "bytes": 49299,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-0a3d6a70c470/figure-01.png-150.webp",
+        "width": 150,
+        "height": 200,
+        "sha256": "66d29d059fe06084094f03f52e1873391c20d09ce7c45fc3dc676c54771de535",
+        "bytes": 29200
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-0a3d6a70c470-figure-01-dfbe6e328a81d88a4d664a81d009a69e62817c2fdc873b61d0ed11f9d9524d87.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/711618306",
+      "asset_id": 711618306,
+      "release_tag": "article-originals-d",
+      "sha256": "dfbe6e328a81d88a4d664a81d009a69e62817c2fdc873b61d0ed11f9d9524d87",
+      "bytes": 49299
+    }
+  },
+  "/assets/images/hm-0a3d6a70c470/figure-02.jpg": {
+    "sha256": "5a208fa6a2605dd7181700169674c04e8fddd4e7b123774237b43767fa952243",
+    "width": 1600,
+    "height": 1200,
+    "bytes": 291615,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-0a3d6a70c470/figure-02.jpg-480.webp",
+        "width": 480,
+        "height": 360,
+        "sha256": "f3c0ee4b4dcdab470dc89e6139a531c26d84d0cedd017ae4d8f1a7617f5b7386",
+        "bytes": 24912
+      },
+      {
+        "path": "/assets/images/previews/hm-0a3d6a70c470/figure-02.jpg-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "bd2036aff7f089fc666e611fa3d76da0ec1fe41d5e581d8d8c28deb2ba234300",
+        "bytes": 58752
+      },
+      {
+        "path": "/assets/images/previews/hm-0a3d6a70c470/figure-02.jpg-1440.webp",
+        "width": 1440,
+        "height": 1080,
+        "sha256": "552036bf911f19d0cc89c3685073c3d01f3a8d373b32005aa3e959cde6523ea0",
+        "bytes": 98036
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-0a3d6a70c470-figure-02-5a208fa6a2605dd7181700169674c04e8fddd4e7b123774237b43767fa952243.jpg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/711618645",
+      "asset_id": 711618645,
+      "release_tag": "article-originals-5",
+      "sha256": "5a208fa6a2605dd7181700169674c04e8fddd4e7b123774237b43767fa952243",
+      "bytes": 291615
+    }
+  },
+  "/assets/images/hm-0a3d6a70c470/figure-03.jpg": {
+    "sha256": "d51aa477f90321cd65b3356000c7abcb5e8231818c53b327ea8972d521ec6f94",
+    "width": 1600,
+    "height": 1200,
+    "bytes": 388378,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-0a3d6a70c470/figure-03.jpg-480.webp",
+        "width": 480,
+        "height": 360,
+        "sha256": "f8e999c070466d7ecb984a67cb22b8a108f62a44aaa9d18fc82df254635c9666",
+        "bytes": 25402
+      },
+      {
+        "path": "/assets/images/previews/hm-0a3d6a70c470/figure-03.jpg-960.webp",
+        "width": 960,
+        "height": 720,
+        "sha256": "f7d6b75b787c10186b0d0d16a01edf1e16044229eac86cebb606a5880f3d523c",
+        "bytes": 78816
+      },
+      {
+        "path": "/assets/images/previews/hm-0a3d6a70c470/figure-03.jpg-1440.webp",
+        "width": 1440,
+        "height": 1080,
+        "sha256": "7b4a47c948c6752631eb21fd992f2d89b73a60f303e981a1fe1ec6be065fc0f9",
+        "bytes": 147238
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-d/hm-0a3d6a70c470-figure-03-d51aa477f90321cd65b3356000c7abcb5e8231818c53b327ea8972d521ec6f94.jpg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/711618908",
+      "asset_id": 711618908,
+      "release_tag": "article-originals-d",
+      "sha256": "d51aa477f90321cd65b3356000c7abcb5e8231818c53b327ea8972d521ec6f94",
+      "bytes": 388378
+    }
+  }
+}
