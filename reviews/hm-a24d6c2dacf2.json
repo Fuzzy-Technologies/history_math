@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a24d6c2dacf2",
+  "questions": [
+    {
+      "id": "krugloyed-english-wordplay",
+      "question": "Проверить английскую адаптацию «круглоеда»: выдуманное имя оставлено как Krugloyed, раскрыто через round-eater, а созвучие krugloye d объяснено в EN-примечании. Решить, нужен ли более самостоятельный английский каламбур.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
