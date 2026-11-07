@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-23cbccc347be-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify 15/28 April 1861: 15 April Old Style in 1861 corresponds to 27 April, not 28. The underlying date may need checking against a primary record. The author’s wording remains in both versions, while the transfer retains its separate original publication date.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify 15/28 April 1861: 15 April Old Style in 1861 corresponds to 27 April, not 28. The underlying date may need checking against a primary record. The author’s wording remains in both versions, while the transfer retains its separate original publication date.",
+        "ru": "Сверить календарный стиль рождения «15 (28) апреля 1861»: при 15 апреля старого стиля в 1861 году новый стиль — 27 апреля, а не 28. Возможно, нужна другая исходная дата. До проверки первичного документа авторская запись сохранена в RU/EN; дата исходного материала сохранена."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Проверить перед публикацией две исходные ссылки MathEdu: карточку Н. А. Рыбкина и электронную «Прямолинейную тригонометрию» 1945 года. Повторное чтение более чем через пять минут снова завершилось тайм-аутом; это не доказывает удаления страниц. Исходные URL сохранены; заглавие и год учебника проверены по авторской иллюстрации обложки.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Проверить перед публикацией две исходные ссылки MathEdu: карточку Н. А. Рыбкина и электронную «Прямолинейную тригонометрию» 1945 года. Повторное чтение более чем через пять минут снова завершилось тайм-аутом; это не доказывает удаления страниц. Исходные URL сохранены; заглавие и год учебника проверены по авторской иллюстрации обложки.",
+        "ru": "Проверить перед публикацией две исходные ссылки MathEdu: карточку Н. А. Рыбкина и электронную «Прямолинейную тригонометрию» 1945 года. Повторное чтение более чем через пять минут снова завершилось тайм-аутом; это не доказывает удаления страниц. Исходные URL сохранены; заглавие и год учебника проверены по авторской иллюстрации обложки."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
