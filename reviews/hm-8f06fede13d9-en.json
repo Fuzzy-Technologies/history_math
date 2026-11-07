@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8f06fede13d9-en",
+  "questions": [
+    {
+      "id": "club-members-terms-english",
+      "question": "Review the English treatment of chlen, club member versus series term. The rule retains members and Notes explains the double meaning; decide whether the wording about judging people by a few members reads naturally enough.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Review the English treatment of chlen, club member versus series term. The rule retains members and Notes explains the double meaning; decide whether the wording about judging people by a few members reads naturally enough.",
+        "ru": "Проверить передачу игры слова «член» (член клуба / член ряда) в EN. В правиле оставлено members, а двойной смысл объяснён в примечании; решить, достаточно ли естественна реплика о людях по нескольким членам для английского читателя."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
