@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-85681830b91c-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "The source’s Britannica link had the invalid hostname www..com. Its domain is restored using the biography URL listed by MacTutor: https://www.britannica.com/biography/Girard-Desargues . The web tool could not open the page itself; confirm access before publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The source’s Britannica link had the invalid hostname www..com. Its domain is restored using the biography URL listed by MacTutor: https://www.britannica.com/biography/Girard-Desargues . The web tool could not open the page itself; confirm access before publication.",
+        "ru": "В исходнике ссылка Britannica имела недопустимый домен www..com. Домен восстановлен по адресу этой биографии из списка источников MacTutor: https://www.britannica.com/biography/Girard-Desargues . Веб-инструмент не открыл саму страницу; подтвердить её доступность перед публикацией."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Approve the identity of the figure in the processed fresco detail and, if available, the fresco’s artist and location. The detail visually matches the full archival photograph, whose inscription names Pascal, Desargues, Mersenne and Descartes. William Sidnam’s photograph credit is confirmed by his publication; the detail is not described as a lifetime portrait.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Approve the identity of the figure in the processed fresco detail and, if available, the fresco’s artist and location. The detail visually matches the full archival photograph, whose inscription names Pascal, Desargues, Mersenne and Descartes. William Sidnam’s photograph credit is confirmed by his publication; the detail is not described as a lifetime portrait.",
+        "ru": "Согласовать точную атрибуцию персонажа на выбранном обработанном фрагменте фрески и при возможности автора/место самой фрески. Фрагмент визуально совпадает с полной архивной фотографией, чья надпись перечисляет Паскаля, Дезарга, Мерсенна и Декарта. Фото полной фрески атрибутировано Уильяму Сиднаму по его публикации; прижизненным портретом фрагмент не назван."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
