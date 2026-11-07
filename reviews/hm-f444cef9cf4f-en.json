@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f444cef9cf4f-en",
+  "questions": [
+    {
+      "id": "diophantus-surviving-books",
+      "question": "Please clarify the statement that “only six” books of the Arithmetica survive. The university biography https://mathshistory.st-andrews.ac.uk/Biographies/Diophantus/ distinguishes six Greek books and four in the Arabic tradition, whose attribution and position have been debated. Please agree whether the source wording should explicitly refer to the Greek text. Six is retained in both versions pending a decision.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please clarify the statement that “only six” books of the Arithmetica survive. The university biography https://mathshistory.st-andrews.ac.uk/Biographies/Diophantus/ distinguishes six Greek books and four in the Arabic tradition, whose attribution and position have been debated. Please agree whether the source wording should explicitly refer to the Greek text. Six is retained in both versions pending a decision.",
+        "ru": "Уточнить утверждение «до нас дошли только 6» книг «Арифметики»: университетская биография https://mathshistory.st-andrews.ac.uk/Biographies/Diophantus/ различает шесть греческих книг и четыре книги арабской традиции, атрибуция и место которых обсуждались исследователями. Согласовать, нужно ли ограничить исходную фразу греческим текстом. До решения число шесть сохранено в RU/EN."
+      },
+      "resolution": "The text now distinguishes the six surviving Greek books from four additional books in Arabic translation."
+    },
+    {
+      "id": "diophantus-tomb-inscription",
+      "question": "Please agree how to present the epitaph. The source describes an actual inscription on Diophantus’s tomb, whereas the university biography https://mathshistory.st-andrews.ac.uk/Biographies/Diophantus/ treats it as an epigrammatic puzzle and cautions against taking the biographical details as established history. A possible wording is “An epigram in the Greek Anthology reads…”; the editor must decide. The original narrative and complete puzzle are retained.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please agree how to present the epitaph. The source describes an actual inscription on Diophantus’s tomb, whereas the university biography https://mathshistory.st-andrews.ac.uk/Biographies/Diophantus/ treats it as an epigrammatic puzzle and cautions against taking the biographical details as established history. A possible wording is “An epigram in the Greek Anthology reads…”; the editor must decide. The original narrative and complete puzzle are retained.",
+        "ru": "Уточнить, как представить эпитафию: исходник утверждает, что это реальная надпись на могиле Диофанта, тогда как университетская биография https://mathshistory.st-andrews.ac.uk/Biographies/Diophantus/ рассматривает её как эпиграмму-задачу и предупреждает об исторической недостоверности биографических сведений. Предлагается «В эпиграмме из „Греческой антологии“ сказано…»; принять формулировку должен редактор. Исходное повествование и полный текст задачи пока сохранены."
+      },
+      "resolution": "The story is now presented as an epigrammatic puzzle from the Greek Anthology rather than as a verified tomb inscription."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
