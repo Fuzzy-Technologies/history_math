@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-de3fd27d761e-en",
+  "questions": [
+    {
+      "id": "dirac-fishermen-origin",
+      "question": "Please verify the origin of the “minus two fish” answer attributed to Dirac. I. Kamyshko’s article (Kvant, 1982, no. 9, p. 31) calls the Cambridge competition story a legend and, citing Martin Gardner, says that Dirac learned the solution from Professor J. Whitehead of Oxford. The paragraph needs precise attribution.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please verify the origin of the “minus two fish” answer attributed to Dirac. I. Kamyshko’s article (Kvant, 1982, no. 9, p. 31) calls the Cambridge competition story a legend and, citing Martin Gardner, says that Dirac learned the solution from Professor J. Whitehead of Oxford. The paragraph needs precise attribution.",
+        "ru": "Проверить происхождение приписываемого Дираку ответа «минус две рыбы». В статье И. Камышко («Квант», 1982, № 9, с. 31) история о кембриджском конкурсе названа легендой; со ссылкой на Мартина Гарднера сказано, что Дирак узнал решение от профессора Дж. Уайтхеда из Оксфорда. Нужна формулировка с точной атрибуцией."
+      },
+      "resolution": "The wording now follows I. Kamyshko: the Cambridge competition is identified as a legend, and the solution is attributed to Martin Gardner’s account involving Professor J. Whitehead."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
