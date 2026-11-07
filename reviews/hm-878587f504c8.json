@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-878587f504c8",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Установить дату рождения по первичному биографическому источнику. Mathedu.ru приводит «25 января (8 февраля) 1894», хотя эти даты разделяют 14 дней при 12-дневной календарной разнице; МПГУ указывает 7 февраля 1894 года. До подтверждения исходная формулировка сохранена. Источники: https://www.mathedu.ru/indexes/authors/prochuhaev_v_g/ ; https://mpgu.su/novosti/poimjonno-grigorevicha-prochuhaeva/ .",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
