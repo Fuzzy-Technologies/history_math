@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1c43d86ff0e1",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "В своём curriculum vitae Картан различает работу в Париже с 1940 года и профессорскую должность с 1949 года. Для Орсе он даёт 1969–1975, в очерке указано 1970–1975. Согласовать периоды и должности. Лицей Малерба в Кане уже уточнён по [curriculum vitae Картана](https://smf.emath.fr/sites/default/files/2025-12/AS-32-33__sample.pdf).",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
