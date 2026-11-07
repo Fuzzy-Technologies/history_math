@@ -1,0 +1,53 @@
+{
+  "review_version": 1,
+  "article_id": "hm-336c8e47b301-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the exact scope of the solution to Hilbert’s fourth problem: the author’s statement about all realizations of the axiom systems of classical geometries may be too broad.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the exact scope of the solution to Hilbert’s fourth problem: the author’s statement about all realizations of the axiom systems of classical geometries may be too broad.",
+        "ru": "Уточнить точный объём решения IV проблемы Гильберта: авторская формулировка о «всех реализациях систем аксиом классических геометрий» может быть чрезмерно широкой."
+      },
+      "resolution": "The absolute claim about all realizations of classical axiom systems was replaced with the verifiable statement about a broad class of metrics whose geodesics are straight lines."
+    },
+    {
+      "id": "q2",
+      "question": "Review the author’s critique of the textbook, especially the priority claim about rigorous axioms; the author’s assessment is preserved in the transfer.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Review the author’s critique of the textbook, especially the priority claim about rigorous axioms; the author’s assessment is preserved in the transfer.",
+        "ru": "Согласовать авторский критический разбор учебника и особенно утверждение «впервые» о строгой аксиоматике; оценка не заменена нейтральным пересказом при переносе."
+      },
+      "resolution": "The unsupported priority claim and personal judgement were removed. The author’s substantive assessment remains: rigorous axioms, demanding problems and the need for methodological adaptation."
+    },
+    {
+      "id": "q3",
+      "question": "Neither source text gives a confirmed Telegram publication link. Add a verified URL if available and retain the original date 2024-04-01.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Neither source text gives a confirmed Telegram publication link. Add a verified URL if available and retain the original date 2024-04-01.",
+        "ru": "В обоих исходных текстах нет подтверждённой ссылки на Telegram-публикацию. При наличии добавить проверенный URL; исходную дату 2024-04-01 сохранить."
+      },
+      "resolution": "The source does not provide a Telegram link. The original date is retained."
+    },
+    {
+      "id": "mi-ras-biography",
+      "question": "Align the biographical section with the Steklov Mathematical Institute profile: working-class family, entry to Kharkiv University in 1938, election as a full member of the Ukrainian SSR Academy of Sciences in 1960, and leadership of the Kharkiv University geometry department from 1951.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Align the biographical section with the Steklov Mathematical Institute profile: working-class family, entry to Kharkiv University in 1938, election as a full member of the Ukrainian SSR Academy of Sciences in 1960, and leadership of the Kharkiv University geometry department from 1951.",
+        "ru": "Синхронно уточнить биографический блок по справке МИАН: семья рабочего, поступление в Харьковский университет в 1938 году, избрание действительным членом АН УССР в 1960 году и руководство кафедрой геометрии ХГУ с 1951 года."
+      },
+      "resolution": "Both editions were corrected against the Steklov Mathematical Institute profile and the editor’s specific review comment."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
