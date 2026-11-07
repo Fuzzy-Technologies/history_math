@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d52c4d5c43ea-en",
+  "questions": [
+    {
+      "id": "bogolyubov-graduate-study-source",
+      "question": "Confirm from a primary or authoritative source that Nikolay Nikolayevich Bogolyubov was admitted to postgraduate study at sixteen by special decision.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm from a primary or authoritative source that Nikolay Nikolayevich Bogolyubov was admitted to postgraduate study at sixteen by special decision.",
+        "ru": "Подтвердить первоисточником, что Николай Николаевич Боголюбов был зачислен в аспирантуру в шестнадцать лет по особому решению."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
