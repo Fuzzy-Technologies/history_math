@@ -16,7 +16,7 @@ tags:
   - mathematics
   - Arnold
 math: false
-status: draft
+status: published
 permalink: /publications/hm-dbb1c80b11a3-en/
 rights_basis: Mansur Gilmullin
 original_publication:

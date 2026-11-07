@@ -3,6 +3,13 @@
   "article_id": "hm-dbb1c80b11a3-en",
   "questions": [],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-07",
+    "package_sha256": "1e242508ac9caaa6a2314d6327465bfb7e1bf9155d0ae68397a0c82141812e9f",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/636#pullrequestreview-5811782287",
+    "source_commit": "2601021b15e7aad133641c64306c40893d51b641",
+    "source_review_id": 5811782287,
+    "approved_at": "2026-11-07T11:01:46Z"
   }
 }

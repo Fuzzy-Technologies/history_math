@@ -16,7 +16,7 @@ tags:
   - математика
   - Арнольд
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-dbb1c80b11a3-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
