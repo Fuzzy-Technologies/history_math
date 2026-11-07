@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-e5f562afd469-en",
+  "questions": [
+    {
+      "id": "fibonacci-rabbit-unit",
+      "question": "The last bullet says “by the fifth month … 5 rabbits”, although the model counts pairs. Please agree “at the start of the fifth month, 5 pairs”; at its end there are 8. The complete model, starting with one newborn pair and ending with 233 pairs, remains.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The last bullet says “by the fifth month … 5 rabbits”, although the model counts pairs. Please agree “at the start of the fifth month, 5 pairs”; at its end there are 8. The complete model, starting with one newborn pair and ending with 233 pairs, remains.",
+        "ru": "В предпоследнем пункте объяснения написано «к пятому месяцу … 5 кроликов», хотя в модели считаются пары. Согласовать «к началу пятого месяца — 5 пар кроликов» в обеих версиях; к концу пятого месяца их 8. Полная авторская модель с новорождённой исходной парой и итогом 233 сохранена."
+      },
+      "resolution": "Both editions now consistently count pairs: 5 at the start of month five and 8 at its end."
+    },
+    {
+      "id": "fibonacci-first-historical-claims",
+      "question": "Please qualify the historical claims “first independent mathematician … every achievement”, first study of the sequence, and first dynamic model of a biological problem. Priority claims need a precise source and scope. Also check the lifespan: the post gives 1170–1240, whereas MacTutor gives about 1170–1250: https://mathshistory.st-andrews.ac.uk/Biographies/Fibonacci/ . The source statements remain for editorial decision.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please qualify the historical claims “first independent mathematician … every achievement”, first study of the sequence, and first dynamic model of a biological problem. Priority claims need a precise source and scope. Also check the lifespan: the post gives 1170–1240, whereas MacTutor gives about 1170–1250: https://mathshistory.st-andrews.ac.uk/Biographies/Fibonacci/ . The source statements remain for editorial decision.",
+        "ru": "Уточнить исторические обобщения «первый самостоятельный математик … полностью осветил все достижения», «впервые изучил» эту последовательность и «первая динамическая модель биологической задачи». Для заявлений о приоритете нужен точный источник и границы утверждения. Также сверить даты жизни: в посте 1170–1240, а академическая биография MacTutor даёт около 1170–1250: https://mathshistory.st-andrews.ac.uk/Biographies/Fibonacci/ . Исходные сведения сохранены для редакторского решения."
+      },
+      "resolution": "Categorical priority claims have been replaced with precise wording about transmission of mathematical methods, discussion of the sequence and an early population-growth model; the lifespan is now c. 1170–c. 1250."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
