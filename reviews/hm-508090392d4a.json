@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-508090392d4a",
+  "questions": [
+    {
+      "id": "pheasants-chinese-source",
+      "question": "Проверить название древнекитайского источника в обеих версиях. В посте задача впервые отнесена к «Киу-Чанг» / «Девяти отделам», но вариант с 35 головами и 94 ногами у Ман-Кён Сиу указан как задача 31 книги III «Сунь-цзы суань цзин»: Equations in China: Two Millennia of Innovation, Transmission and Re-transmission, с. 3–4 PDF, https://hkumath.hku.hk/~mks/ESU8_MKSiu_Equations_RevisedDraft_Mar12_2019.pdf . Согласовать уточнение, не смешивая два трактата. Все авторские решения и исходная атрибуция пока сохранены.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
