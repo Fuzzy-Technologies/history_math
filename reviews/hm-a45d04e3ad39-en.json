@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a45d04e3ad39-en",
+  "questions": [
+    {
+      "id": "bolyai-translation-version",
+      "question": "The source’s full Russian quotation and abridged English extract differ in scope: the English adds “Learn from my example”, while the Russian includes the warning about time, health, peace and happiness. The English main text translates the complete Russian quotation, while the supplied English extract is preserved in Notes as an abridged version. Please identify the edition and translator of the complete letter to agree both versions; the quotations have not been merged into a reconstructed statement.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The source’s full Russian quotation and abridged English extract differ in scope: the English adds “Learn from my example”, while the Russian includes the warning about time, health, peace and happiness. The English main text translates the complete Russian quotation, while the supplied English extract is preserved in Notes as an abridged version. Please identify the edition and translator of the complete letter to agree both versions; the quotations have not been merged into a reconstructed statement.",
+        "ru": "В исходнике полная русская цитата и сокращённая английская выдержка имеют разный объём: английская дополнительно содержит Learn from my example, а русская — предупреждение о времени, здоровье, покое и счастье. В EN основной текст полностью переводит русскую цитату, а исходная английская выдержка сохранена в Примечаниях как сокращённый вариант. Уточнить издание и переводчика полного письма для окончательного согласования обеих версий; цитаты не объединялись в одну реконструированную реплику."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
