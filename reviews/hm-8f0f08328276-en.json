@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8f0f08328276-en",
+  "questions": [
+    {
+      "id": "faculty-title",
+      "question": "Please check the faculty title. The post calls Klein dean of the mathematics faculty, while Göttingen’s official archival inventory records his election as dean of the Philosophische Fakultät. Please agree historically accurate wording in both versions; the source wording is retained pending review.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please check the faculty title. The post calls Klein dean of the mathematics faculty, while Göttingen’s official archival inventory records his election as dean of the Philosophische Fakultät. Please agree historically accurate wording in both versions; the source wording is retained pending review.",
+        "ru": "Проверить название должности и подразделения: в посте Клейн назван «деканом математического факультета», а официальный архивный инвентарь Гёттингена фиксирует его избрание деканом Philosophische Fakultät. Источник: https://www.sub.uni-goettingen.de/fileadmin/media/texte/spezialsammlungen/Spezialinventar_Naturwissenschaften_2001.pdf , запись «Wahl von Felix Klein zum Dekan der Philosophischen Fakultät». Предлагается согласовать исторически точное обозначение в RU/EN; исходный вариант пока сохранён."
+      }
+    },
+    {
+      "id": "missing-humor-cover",
+      "question": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+        "ru": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
