@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-5acc19d50b1b-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Confirm the newspaper source for “We Could Use a Sea of Laptevs” and approve the English explanation of the Laptev Sea wordplay. Clarify the individual department-head and dean appointment dates within the combined 1944–1961 phrase.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the newspaper source for “We Could Use a Sea of Laptevs” and approve the English explanation of the Laptev Sea wordplay. Clarify the individual department-head and dean appointment dates within the combined 1944–1961 phrase.",
+        "ru": "Подтвердить источник газетного заголовка «Нам бы море Лаптевых» и английскую адаптацию игры слов с Laptev Sea. Уточнить даты отдельных должностей в общей фразе 1944–1961 (заведующий кафедрой и декан), чтобы не приписать обе должности всему периоду без подтверждения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
