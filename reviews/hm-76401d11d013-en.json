@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-76401d11d013-en",
+  "questions": [
+    {
+      "id": "nash-tie-anecdote-source",
+      "question": "Please identify the page in Sylvia Nasar’s A Beautiful Mind for the tie game and the line about Nash equilibrium. The official page https://www.simonandschuster.net/books/A-Beautiful-Mind/Sylvia-Nasar/9781451628425 confirms the book and author, but not this episode. The source itself calls it a humorous legend, and that description is retained. The editor should agree how to describe the connection between the fictional scene and the cited biography.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please identify the page in Sylvia Nasar’s A Beautiful Mind for the tie game and the line about Nash equilibrium. The official page https://www.simonandschuster.net/books/A-Beautiful-Mind/Sylvia-Nasar/9781451628425 confirms the book and author, but not this episode. The source itself calls it a humorous legend, and that description is retained. The editor should agree how to describe the connection between the fictional scene and the cited biography.",
+        "ru": "Уточнить страницу в «A Beautiful Mind» Sylvia Nasar для «игры в галстуки» и реплики о равновесии Нэша. Официальная страница https://www.simonandschuster.net/books/A-Beautiful-Mind/Sylvia-Nasar/9781451628425 подтверждает книгу и автора, но не этот эпизод. Исходник сам называет его шутливой легендой; это обозначение сохранено. Редактору решить, как обозначить связь вымышленного сюжета с приведённой библиографией."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
