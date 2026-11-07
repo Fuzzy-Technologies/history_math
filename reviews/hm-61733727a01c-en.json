@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-61733727a01c-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify λόγος as ratio rather than merely word, the relation between Napier’s logarithms and modern natural logarithms, and Briggs’s appointment in 1615. National Museums Scotland gives ratio and Gresham College, London, https://www.nms.ac.uk/discover-catalogue/napiers-bones-the-logarithmic-genius-who-revolutionised-calculations . Approve both versions.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify λόγος as ratio rather than merely word, the relation between Napier’s logarithms and modern natural logarithms, and Briggs’s appointment in 1615. National Museums Scotland gives ratio and Gresham College, London, https://www.nms.ac.uk/discover-catalogue/napiers-bones-the-logarithmic-genius-who-revolutionised-calculations . Approve both versions.",
+        "ru": "Уточнить λόγος в этимологии («отношение», а не только «слово»), связь неперовых логарифмов с современными натуральными и должность Бригса в 1615 году. National Museums Scotland указывает ratio и Gresham College, London: https://www.nms.ac.uk/discover-catalogue/napiers-bones-the-logarithmic-genius-who-revolutionised-calculations . Согласовать исправления обеих версий."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Distinguish the 1617 Rabdologiae from the posthumous account of constructing logarithms: the museum dates Rabdologiae shortly before Napier’s death, while a different book appeared posthumously. Check the attribution to his son Robert against title pages and approve both versions.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Distinguish the 1617 Rabdologiae from the posthumous account of constructing logarithms: the museum dates Rabdologiae shortly before Napier’s death, while a different book appeared posthumously. Check the attribution to his son Robert against title pages and approve both versions.",
+        "ru": "Различить «Рабдологию» 1617 года и посмертное описание построения логарифмов: музей указывает, что Rabdologiae вышла незадолго до смерти Непера, а посмертно издавалась другая книга. Проверить атрибуцию издания сыну Роберту и формулировку RU/EN по титульным листам."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Verify the exact birth date of 1 February, the claim that every table value is wrong beyond the sixth digit and the first-error-free-edition claim for 1857. Establish the source and translation of the full epigraph before final approval.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the exact birth date of 1 February, the claim that every table value is wrong beyond the sixth digit and the first-error-free-edition claim for 1857. Establish the source and translation of the full epigraph before final approval.",
+        "ru": "Подтвердить точный день рождения 1 февраля, точность утверждения об ошибке всех значений после шестого знака и приоритет «первого безошибочного издания» 1857 года. Сверить источник и перевод полного эпиграфа; авторский текст пока оставлен для решения редактора."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
