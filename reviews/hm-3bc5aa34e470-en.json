@@ -1,0 +1,42 @@
+{
+  "review_version": 1,
+  "article_id": "hm-3bc5aa34e470-en",
+  "questions": [
+    {
+      "id": "pick-arrest-chronology",
+      "question": "Please check “arrested by the Nazis in 1939”: MacTutor describes Pick’s expulsion from the Academy after Prague’s occupation in 1939 and his deportation to Theresienstadt on 13 July 1942, where he died on 26 July. Please supply a source for an arrest in 1939 or approve a matching chronological correction in both editions: https://mathshistory.st-andrews.ac.uk/Biographies/Pick/ .",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please check “arrested by the Nazis in 1939”: MacTutor describes Pick’s expulsion from the Academy after Prague’s occupation in 1939 and his deportation to Theresienstadt on 13 July 1942, where he died on 26 July. Please supply a source for an arrest in 1939 or approve a matching chronological correction in both editions: https://mathshistory.st-andrews.ac.uk/Biographies/Pick/ .",
+        "ru": "Проверить формулировку «был арестован нацистами в 1939»: MacTutor сообщает исключение Пика из Академии после оккупации Праги в 1939 году и отправку в Терезин 13 июля 1942 года, где он умер 26 июля. Нужен источник именно ареста в 1939 году либо согласованная правка хронологии в обеих версиях: https://mathshistory.st-andrews.ac.uk/Biographies/Pick/ ."
+      },
+      "resolution": "The chronology was corrected from MacTutor: after Prague’s occupation in 1939, Pick was excluded from the Czech Academy of Sciences and Arts; on 13 July 1942 he was deported to Theresienstadt, where he died on 26 July."
+    },
+    {
+      "id": "pick-babina-link-availability",
+      "question": "Please check the Babina link during editorial review: a direct GET following the original URL to HTTPS returned 200 and the complete “Formula Pika” page naming Babina, whereas a separate HEAD returned 404. Both editions keep the confirmed HTTPS redirect target. The method-dependent response does not prove removal; please supply a confirmed alternative if needed.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please check the Babina link during editorial review: a direct GET following the original URL to HTTPS returned 200 and the complete “Formula Pika” page naming Babina, whereas a separate HEAD returned 404. Both editions keep the confirmed HTTPS redirect target. The method-dependent response does not prove removal; please supply a confirmed alternative if needed.",
+        "ru": "Проверить доступность ссылки Бабиной при редакторском просмотре: прямой GET по исходной ссылке после перехода на HTTPS вернул 200 и полный текст «Формула Пика» с именем Бабиной, а отдельный HEAD — 404. В обеих версиях сохранён подтверждённый адрес перенаправления HTTPS. Это различие методов не доказывает удаления страницы; при необходимости нужен подтверждённый альтернативный адрес."
+      },
+      "resolution": "The HTTPS link is available and opens the “Formula Pika” material naming Natalia Alekseevna Babina."
+    },
+    {
+      "id": "pick-simple-polygon-domain",
+      "question": "Please state the domain of Pick’s theorem: in the form used here, it applies to a simple lattice polygon without self-intersections. Add this condition to the digest and main statement in both editions.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Both editions now state explicitly, in the digest and main formulation, that the polygon must be simple.",
+      "localizations": {
+        "source": "Please state the domain of Pick’s theorem: in the form used here, it applies to a simple lattice polygon without self-intersections. Add this condition to the digest and main statement in both editions.",
+        "ru": "Уточнить область применимости формулы Пика: в приведённом виде она относится к простому решётчатому многоугольнику без самопересечений. Добавить это условие в дайджест и основную формулировку обеих версий."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
