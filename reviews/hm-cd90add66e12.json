@@ -1,0 +1,16 @@
+{
+  "review_version": 1,
+  "article_id": "hm-cd90add66e12",
+  "questions": [
+    {
+      "id": "dudeney-loyd-collaboration",
+      "question": "Университетская биография MacTutor датирует начало переписки Дьюдени с Сэмом Лойдом 1893 годом и описывает обмен задачами, а не совместное авторство большинства ранних головоломок.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Исправлены год начала переписки и характер сотрудничества по биографии MacTutor."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
