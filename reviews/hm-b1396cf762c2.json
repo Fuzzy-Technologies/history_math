@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b1396cf762c2",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Исправить или уточнить общее «в 1970-е годы» для избраний: National Academy of Engineering указывает 1985 год, а не 1970-е: https://www.nae.edu/File.aspx?id=7387&v=f78f09b0 . Предлагается разделить даты академий в обеих версиях.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Даты разделены: Национальная академия наук США — 1971, Национальная инженерная академия США — 1985, по мемориалу NAE: https://www.nae.edu/File.aspx?id=7387&v=f78f09b0"
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить четырёхтомный труд: в примечаниях указаны тома 1 (1997) и 2 (2003) с М. Тапой; издатель подтверждает эти тома: https://link.springer.com/book/10.1007/b97672 и https://link.springer.com/book/10.1007/b97283 . Различить план издания и реально вышедшие тома; не утверждать выпуск четырёх томов без подтверждения.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Текст теперь говорит о запланированном многотомном труде и называет только два вышедших тома, подтверждённых Springer: https://link.springer.com/book/10.1007/b97672 и https://link.springer.com/book/10.1007/b97283"
+    },
+    {
+      "id": "q3",
+      "question": "Сверить дату и формулировку первой премии фон Неймана и дату основания SOL: исходник даёт 1974 и 1973, тогда как хронология Stanford указывает 1975 и 1974: https://msande.stanford.edu/timeline-mses-history . Уточнить по документам премии и лаборатории, не подменяя одну спорную дату другой автоматически.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Даты исправлены по официальным сведениям: SOL создана в 1974 году, первая премия фон Неймана вручена Данцигу в 1975 году. https://msande.stanford.edu/timeline-mses-history ; https://www.informs.org/Recognizing-Excellence/Award-Recipients/George-B.-Dantzig"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
