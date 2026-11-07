@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-bcb121b29ab7-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "The source directly links elliptic functions to the proof of Fermat’s Last Theorem. Clarify the distinction between elliptic functions and elliptic curves and agree precise wording for both editions.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The source directly links elliptic functions to the proof of Fermat’s Last Theorem. Clarify the distinction between elliptic functions and elliptic curves and agree precise wording for both editions.",
+        "ru": "В исходнике эллиптические функции прямо связываются с доказательством Великой теоремы Ферма. Уточнить различие между эллиптическими функциями и эллиптическими кривыми и согласовать точную формулировку обеих версий."
+      },
+      "resolution": "Both editions distinguish elliptic functions from the elliptic curves used in [Wiles’s proof](https://annals.math.princeton.edu/1995/141-3/p01)."
+    },
+    {
+      "id": "q2",
+      "question": "Verify the 1821 conversion and name change, dates and categories of academy memberships, and the relationships with those listed as pupils.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the 1821 conversion and name change, dates and categories of academy memberships, and the relationships with those listed as pupils.",
+        "ru": "Сверить дату принятия лютеранства и смены имени 1821 года, даты и виды академического членства и характер отношений с перечисленными «учениками»."
+      },
+      "resolution": "The conversion and name change are now dated to 1825, and the 1829 full professorship is stated. Hermite, Liouville and Cayley are no longer described as Jacobi’s direct pupils; both editions refer instead to the influence of his lectures, correspondence and writings."
+    },
+    {
+      "id": "q3",
+      "question": "Clarify the attribution and priority of the change-of-variables method: the source’s simultaneous-with wording does not assert joint authorship.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify the attribution and priority of the change-of-variables method: the source’s simultaneous-with wording does not assert joint authorship.",
+        "ru": "Уточнить атрибуцию и смысл приоритета метода замены переменных: исходное «одновременно с Остроградским» не утверждает совместного соавторства."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
