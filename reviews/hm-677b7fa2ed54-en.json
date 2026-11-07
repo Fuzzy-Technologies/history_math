@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-677b7fa2ed54-en",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+        "ru": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
