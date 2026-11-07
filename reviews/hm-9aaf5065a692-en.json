@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-9aaf5065a692-en",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration.",
+        "ru": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
