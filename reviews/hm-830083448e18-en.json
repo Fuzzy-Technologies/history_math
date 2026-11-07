@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-830083448e18-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the wording of Kronecker’s academy memberships, the consistency theorem and the Kronecker delta.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the wording of Kronecker’s academy memberships, the consistency theorem and the Kronecker delta.",
+        "ru": "Уточнить формулировки о членстве Кронекера в академиях, теореме о совместности и дельте Кронекера."
+      },
+      "resolution": "Memberships are stated without disputed dates; the result is named the Kronecker–Capelli theorem, and the unsupported date for the delta was removed."
+    },
+    {
+      "id": "q2",
+      "question": "Distinguish the quotation attributed to Kronecker from the author’s assessment of his disputes with other schools.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Distinguish the quotation attributed to Kronecker from the author’s assessment of his disputes with other schools.",
+        "ru": "Разграничить приписываемую Кронекеру цитату и авторскую оценку его споров с другими школами."
+      },
+      "resolution": "The quotation is marked as attributed to Kronecker; evaluative language was replaced by a neutral account of the philosophical and mathematical disputes."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
