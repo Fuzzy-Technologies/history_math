@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-857d344e7575",
+  "questions": [
+    {
+      "id": "khimichit-wordplay",
+      "question": "В исходнике «химичить» означает и заниматься химией, и жульничать или подгонять результат; на столкновении математики, физики и химии построена развязка. В EN предложено “Mathematics isn’t physics, where you can cook up a result…”, сохраняющее намёк на фабрикацию, но химическое значение менее явное. Согласовать английскую игру слов перед публикацией.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "В исходнике «химичить» означает и заниматься химией, и жульничать или подгонять результат; на столкновении математики, физики и химии построена развязка. В EN предложено “Mathematics isn’t physics, where you can cook up a result…”, сохраняющее намёк на фабрикацию, но химическое значение менее явное. Согласовать английскую игру слов перед публикацией.",
+        "en": "Please agree the English wordplay. Russian “khimichit” can mean doing chemistry or fiddling results, creating a joke across mathematics, physics and chemistry. “Cook up a result” preserves the suggestion of fabrication, but the chemistry reference is less explicit."
+      },
+      "resolution": "В английской версии «cook up a result in the lab» связывает лабораторный образ с намёком на подгонку результата. Развязка сохранена."
+    },
+    {
+      "id": "humor-cover-image",
+      "question": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации.",
+        "en": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
