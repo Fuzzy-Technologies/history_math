@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-caad29cc6f86-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the sequence of admission to extramural postgraduate study in 1931 and graduation in 1934. The 1949 doctoral defence and 1950 degree are retained as separate events; review the historical institution names and the Tatar journal title.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify the sequence of admission to extramural postgraduate study in 1931 and graduation in 1934. The 1949 doctoral defence and 1950 degree are retained as separate events; review the historical institution names and the Tatar journal title.",
+        "ru": "Уточнить последовательность поступления в заочную аспирантуру в 1931 году и окончания университета в 1934 году. Защита докторской в 1949 году и присуждение степени в 1950 году сохранены как разные события; согласовать названия учреждений и перевод татарского названия журнала."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
