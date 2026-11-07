@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-9c176ebe7bae-en",
+  "questions": [
+    {
+      "id": "folding-construction-completeness",
+      "question": "The source explains the angle bisector, altitude and median, but gives no completed answers for the perpendicular bisector, incentre or circumcentre. Please retain those as independent exercises or supply confirmed author solutions. Also clarify the initial fold “along BC”: for an already cut-out triangle, BC is a paper edge.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The source explains the angle bisector, altitude and median, but gives no completed answers for the perpendicular bisector, incentre or circumcentre. Please retain those as independent exercises or supply confirmed author solutions. Also clarify the initial fold “along BC”: for an already cut-out triangle, BC is a paper edge.",
+        "ru": "В источнике подробно описаны биссектриса, высота и медиана; для серединного перпендикуляра, инцентра и центра описанной окружности готовые ответы не даны. Оставить их самостоятельными упражнениями либо добавить подтверждённые авторские решения. Также уточнить первый перегиб «по прямой BC»: для уже вырезанного треугольника BC является краем бумаги."
+      },
+      "resolution": "The last three items remain independent exercises; the altitude construction now uses one fold through A that maps edge BC onto itself."
+    },
+    {
+      "id": "folding-blinkov-link-availability",
+      "question": "Verify the link to Blinkov’s article. If it is unavailable, replace it with a confirmed public URL.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the link to Blinkov’s article. If it is unavailable, replace it with a confirmed public URL.",
+        "ru": "Проверить ссылку на статью Блинкова. Если она недоступна, заменить подтверждённой публичной ссылкой."
+      },
+      "resolution": "The linked public PDF opens successfully and contains Blinkov’s article on pp. 18–22."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
