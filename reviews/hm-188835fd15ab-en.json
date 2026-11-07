@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-188835fd15ab-en",
+  "questions": [
+    {
+      "id": "initials-pun",
+      "question": "The English retains both sets of initials and the Russian inscription, with the short gloss “to a dog from a dog”. Please review this rendering: without a gloss, the Russian case forms and the connection between the nickname and the initials are not apparent to an English reader.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The English retains both sets of initials and the Russian inscription, with the short gloss “to a dog from a dog”. Please review this rendering: without a gloss, the Russian case forms and the connection between the nickname and the initials are not apparent to an English reader.",
+        "ru": "В EN оставлены инициалы обоих полных имён и русская надпись «ПСУ от ПСА» с краткой расшифровкой to a dog from a dog. Согласовать эту подачу каламбура: без пояснения русские падежные формы и связь прозвища с инициалами для английского читателя не видны."
+      },
+      "resolution": "The English text connects the initials to the Russian inscription and adds transliteration and a gloss."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
