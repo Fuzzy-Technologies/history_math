@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b28e6968ce51-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Confirm the separate format of this short anniversary profile alongside the published Universal Genius: Leibniz essay of 18 October 2023, hm-tt-1cd 262dccbc7. The newly worded 2026 post explicitly refers to that earlier article and adds educational, public-service and philosophical chronology; biographical and calculus topics partly overlap. The published essay is unchanged. https://history-math.org/ru/articles/hm-tt-1cd262dccbc7/ .",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the separate format of this short anniversary profile alongside the published Universal Genius: Leibniz essay of 18 October 2023, hm-tt-1cd 262dccbc7. The newly worded 2026 post explicitly refers to that earlier article and adds educational, public-service and philosophical chronology; biographical and calculus topics partly overlap. The published essay is unchanged. https://history-math.org/ru/articles/hm-tt-1cd262dccbc7/ .",
+        "ru": "Подтвердить самостоятельный формат этой короткой юбилейной персоналии при уже опубликованном очерке «Универсальный гений: Лейбниц» от 18.10.2023, ID hm-tt-1cd 262dccbc7. Пост 2026 года явно ссылается на прежнюю статью, написан заново и добавляет хронологию образования, службы и философских книг; тематика биографии и исчисления частично пересекается. Существующая статья не меняется. https://history-math.org/ru/articles/hm-tt-1cd262dccbc7/ ."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Specify the library in the 1691 sentence: this was the Herzog August Library in Wolfenbüttel, held alongside his Hanover post. Without naming the town, the paragraph’s Hanover context can make it sound like the same library. Approve a brief clarification in both versions. Institutional source: https://www.hab.de/leibnizressourcen-digital/ .",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Specify the library in the 1691 sentence: this was the Herzog August Library in Wolfenbüttel, held alongside his Hanover post. Without naming the town, the paragraph’s Hanover context can make it sound like the same library. Approve a brief clarification in both versions. Institutional source: https://www.hab.de/leibnizressourcen-digital/ .",
+        "ru": "Уточнить библиотеку в абзаце о 1691 годе: речь о Герцогской библиотеке Августа в Вольфенбюттеле, которой Лейбниц руководил одновременно с ганноверской службой. Без названия города после начала абзаца о Ганновере можно принять её за ту же библиотеку. Согласовать краткое уточнение в обеих версиях. Первичный институциональный источник: https://www.hab.de/leibnizressourcen-digital/ ."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Restore a verified public link to the English translation of Explanation of Binary Arithmetic: the source’s UDK-hosted PDF repeatedly returns 404. Its title and content are confirmed by the same host’s indexed record, but a working replacement has not been established. The original URL remains for editorial review; no replacement address is invented and no file is uploaded. https://kastalia.medienhaus.udk-berlin.de/odl/Leibniz.pdf .",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Restore a verified public link to the English translation of Explanation of Binary Arithmetic: the source’s UDK-hosted PDF repeatedly returns 404. Its title and content are confirmed by the same host’s indexed record, but a working replacement has not been established. The original URL remains for editorial review; no replacement address is invented and no file is uploaded. https://kastalia.medienhaus.udk-berlin.de/odl/Leibniz.pdf .",
+        "ru": "Восстановить подтверждённую публичную ссылку на английский перевод Explanation of Binary Arithmetic: исходный PDF на сервере UDK повторно отвечает 404. Название и содержание подтверждаются индексированной записью того же хоста, но действующий адрес копии не установлен. URL сохранён для редакторской проверки, фиктивная замена и загрузка файла не выполнялись. https://kastalia.medienhaus.udk-berlin.de/odl/Leibniz.pdf ."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
