@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-922d928017e2-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the historical name of the Moscow Pedagogical Institute in 1918 and the academy that established the seminar in 1959: the text names the USSR academy, while the biography also refers to the RSFSR academy. Check the exact honorary title.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the historical name of the Moscow Pedagogical Institute in 1918 and the academy that established the seminar in 1959: the text names the USSR academy, while the biography also refers to the RSFSR academy. Check the exact honorary title.",
+        "ru": "Уточнить исторические названия Московского педагогического института в 1918 году и академии, при которой создан семинар в 1959 году: в тексте указана АПН СССР, тогда как в биографии есть АПН РСФСР. Проверить точное название почётного звания."
+      },
+      "resolution": "The Ushinsky Library of the Russian Academy of Education confirms the P. G. Shelaputin Higher Pedagogical Institute, the 1959 seminar and its exact title; the Academy’s history confirms the RSFSR academy’s reorganization as the USSR academy on 1 August 1966. The honour is corrected to Honoured Scientist of the Russian SFSR (1964)."
+    },
+    {
+      "id": "q2",
+      "question": "Verify the bibliographical details of the three parts of A Trilogy of the Subject and Method of Mathematics, including the 2004/2003/2004 sequence, and agree the English rendering of the title.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the bibliographical details of the three parts of A Trilogy of the Subject and Method of Mathematics, including the 2004/2003/2004 sequence, and agree the English rendering of the title.",
+        "ru": "Подтвердить библиографические сведения о трёх частях «Трилогии предмета и метода математики» (порядок годов 2004/2003/2004) и согласовать английскую передачу названия."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
