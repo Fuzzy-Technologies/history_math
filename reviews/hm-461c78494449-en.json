@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-461c78494449-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the historical names of the Chișinău and Tiraspol pedagogical institutes and their departments in 1940–1963; confirm the English rendering Gersh Isaakovich Gleizer.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the historical names of the Chișinău and Tiraspol pedagogical institutes and their departments in 1940–1963; confirm the English rendering Gersh Isaakovich Gleizer.",
+        "ru": "Уточнить исторические названия Кишинёвского и Тираспольского педагогических институтов и их кафедр в 1940–1963 годах; согласовать английскую передачу имени Gersh Isaakovich Gleizer."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Check the original Moldavian and single-volume Russian editions and the translation list.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Check the original Moldavian and single-volume Russian editions and the translation list.",
+        "ru": "Сверить библиографию первоначальных молдавских и однотомных русских изданий и состав переводов."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
