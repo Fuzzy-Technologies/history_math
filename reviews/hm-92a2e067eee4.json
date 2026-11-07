@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-92a2e067eee4",
+  "questions": [
+    {
+      "id": "knowledge-force-wordplay",
+      "question": "Для первого постулата в EN сохранено Knowledge = Force, чтобы не менять авторскую формулу Работа/Время = Сила × Скорость и её подстановки. Обычный английский эквивалент поговорки «Знание — сила» — Knowledge is power, но замена Force на Power изменила бы физические величины и цепочку исходной шутки. Согласовать эту передачу игры слов; все три формулы, скорость, вывод и пародийный тон сохранены.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Добавлено короткое пояснение к первому постулату. Формулы и физический смысл величин сохранены."
+    },
+    {
+      "id": "missing-humor-cover",
+      "question": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
+        "en": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}

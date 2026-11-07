@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-92a2e067eee4-en",
+  "questions": [
+    {
+      "id": "knowledge-force-wordplay",
+      "question": "Please agree the rendering “Knowledge = Force”. The usual English proverb is “Knowledge is power”, but replacing Force with Power would change the physical quantities and the source’s algebra. All three equations, the speed factor, conclusion and parodic tone are preserved.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please agree the rendering “Knowledge = Force”. The usual English proverb is “Knowledge is power”, but replacing Force with Power would change the physical quantities and the source’s algebra. All three equations, the speed factor, conclusion and parodic tone are preserved.",
+        "ru": "Для первого постулата в EN сохранено Knowledge = Force, чтобы не менять авторскую формулу Работа/Время = Сила × Скорость и её подстановки. Обычный английский эквивалент поговорки «Знание — сила» — Knowledge is power, но замена Force на Power изменила бы физические величины и цепочку исходной шутки. Согласовать эту передачу игры слов; все три формулы, скорость, вывод и пародийный тон сохранены."
+      },
+      "resolution": "A short gloss restores the familiar saying alongside the literal first postulate. The formulas and physical quantities are preserved."
+    },
+    {
+      "id": "missing-humor-cover",
+      "question": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+        "ru": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
