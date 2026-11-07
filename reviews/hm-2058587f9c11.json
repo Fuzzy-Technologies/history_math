@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2058587f9c11",
+  "questions": [
+    {
+      "id": "dirac-berry-word-per-hour-source",
+      "question": "Уточнить источник единицы «дирак» = одно слово в час: в проверенном шестистраничном PDF Майкла Берри есть реплика Бору (стр. 6), но упоминания такой единицы не найдено. В авторском комментарии она приписана этому PDF; формулировка сохранена до редакторского решения.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Атрибуция исправлена: единица «дирак» теперь ссылается на Graham Farmelo, The Strangest Man (2009), p. 89; PDF Берри указан только для реплики Бору."
+    },
+    {
+      "id": "dirac-poetry-english-wording",
+      "question": "Сверить точный английский оригинал реплики о науке и поэзии и локатор в издании Хельге Крага или другом первоисточнике. EN передаёт полную авторскую русскую формулировку; её нельзя автоматически считать дословной английской цитатой.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "EN заменена на формулировку, приведённую MacTutor со ссылкой на H. Eves, Mathematical Circles Adieu (1977); RU синхронно переведена."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-07",
+    "package_sha256": "477c2060031aedf72cb6abbf454624a69aba9e868b0aa0c2e1e99238a247a630",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/620#pullrequestreview-5810014485",
+    "source_commit": "864ee80272c2e1c7f286f4eddce2cf083b6dcc47",
+    "source_review_id": 5810014485,
+    "approved_at": "2026-11-07T04:14:13Z"
+  }
+}
