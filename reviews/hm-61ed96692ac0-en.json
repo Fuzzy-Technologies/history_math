@@ -1,0 +1,50 @@
+{
+  "review_version": 1,
+  "article_id": "hm-61ed96692ac0-en",
+  "questions": [
+    {
+      "id": "skitovich-poem",
+      "question": "Please confirm the poem’s attribution to Skitovich and review the English verse rendering. All three stanzas, n, t, k, replacement of each ball and the final question are retained, but the English preserves meaning rather than the Russian rhyme. The source’s qualified attribution remains qualified.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please confirm the poem’s attribution to Skitovich and review the English verse rendering. All three stanzas, n, t, k, replacement of each ball and the final question are retained, but the English preserves meaning rather than the Russian rhyme. The source’s qualified attribution remains qualified.",
+        "ru": "Подтвердить атрибуцию стихотворения Скитовичу и согласовать EN-перевод: сохранены все три строфы, переменные n, t, k, возвращение шара и финальный вопрос, но перевод смысловой, без воспроизведения русской рифмы. Предположительность авторства из поста сохранена."
+      },
+      "resolution": "Both editions retain the tentative attribution. The English verse preserves the conditions, variables and final question."
+    },
+    {
+      "id": "skitovich-chair-years",
+      "question": "The comment gives two different periods as department head: 1972–1982 and 1972–1987. The university account gives 1972–1982, while the publisher’s biography repeats both. Please resolve the dates for both versions; the source discrepancy is retained pending that decision.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The comment gives two different periods as department head: 1972–1982 and 1972–1987. The university account gives 1972–1982, while the publisher’s biography repeats both. Please resolve the dates for both versions; the source discrepancy is retained pending that decision.",
+        "ru": "В одном комментарии указаны два срока заведования кафедрой: 1972–1982 и 1972–1987. Университетский материал https://pobeda.spbu.ru/museum/itemlist/category/10-fakultet-pm-pu/bt0o60hlj1-skitovich-viktor-pavlovich-1921-1995 указывает 1972–1982; страница издательства «Лань» https://lanbook.ru/publishing/authors/skitovich-v-p/ повторяет оба варианта. Согласовать срок для обеих версий; разночтение исходника пока сохранено."
+      },
+      "resolution": "Both references now read 1972–1982, following the St Petersburg University memorial page: https://pobeda.spbu.ru/museum/itemlist/category/10-fakultet-pm-pu/bt0o60hlj1-skitovich-viktor-pavlovich-1921-1995"
+    },
+    {
+      "id": "skitovich-death-year",
+      "question": "The source gives 1921–1994, while the university memorial page and the mathematical society’s historical volume give 1921–1995. Please verify the death year; the source’s 1994 has not been silently changed.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The source gives 1921–1994, while the university memorial page and the mathematical society’s historical volume give 1921–1995. Please verify the death year; the source’s 1994 has not been silently changed.",
+        "ru": "В исходнике годы жизни 1921–1994, тогда как университетская мемориальная страница https://pobeda.spbu.ru/museum/itemlist/category/10-fakultet-pm-pu/bt0o60hlj1-skitovich-viktor-pavlovich-1921-1995 и историческое издание математического общества https://mathsoc.pdmi.ras.ru/history/MathSPb2ed.pdf дают 1921–1995. Нужна редакторская проверка года смерти. Исходное 1994 не исправлялось молча."
+      },
+      "resolution": "The life dates now read 1921–1995, following the St Petersburg University memorial page and the St Petersburg Mathematical Society history already cited in the question."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-07",
+    "package_sha256": "42295f2a1860c7933ec1967596a27cd7e119442767218d53c77ac1483228959f",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/530#pullrequestreview-5810008489",
+    "source_commit": "d366ccb49116bc4f2d2ec0d282deb0bde5d5890f",
+    "source_review_id": 5810008489,
+    "approved_at": "2026-11-07T04:12:21Z",
+    "delegated_by": "Tim55667757"
+  }
+}
