@@ -1,0 +1,42 @@
+{
+  "review_version": 1,
+  "article_id": "hm-815ec7004d99-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the admission year and historical name of the normal school, the circumstances of expulsion and the evidence for the claim that royalists arranged the duel.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the admission year and historical name of the normal school, the circumstances of expulsion and the evidence for the claim that royalists arranged the duel.",
+        "ru": "Уточнить год поступления и историческое название нормальной школы, обстоятельства исключения и доказательную основу утверждения о дуэли, подстроенной роялистами."
+      },
+      "resolution": "The school’s date and name, expulsion and disputed duel account were corrected."
+    },
+    {
+      "id": "q2",
+      "question": "Agree the statement about equations above the fourth degree: should it explicitly refer to the general equation? Verify the historical attribution of the listed algebraic concepts and the completeness of Liouville’s 1846 publication.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Agree the statement about equations above the fourth degree: should it explicitly refer to the general equation? Verify the historical attribution of the listed algebraic concepts and the completeness of Liouville’s 1846 publication.",
+        "ru": "Согласовать формулировку о неразрешимости уравнений выше четвёртой степени: следует ли явно говорить об общем уравнении. Уточнить историческую атрибуцию перечисленных алгебраических понятий и полноту публикации Лиувилля 1846 года."
+      },
+      "resolution": "The statement now concerns the general equation; Galois’s concepts and Liouville’s publication are described more precisely."
+    },
+    {
+      "id": "q3",
+      "question": "Confirm the original source of the selected portrait corresponding to the Galua_E marker and the basis for reproduction.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Confirm the original source of the selected portrait corresponding to the Galua_E marker and the basis for reproduction.",
+        "ru": "Подтвердить первоисточник выбранного портрета, соответствующего маркеру Galua_E, и основание его воспроизведения."
+      },
+      "resolution": "The portrait caption remains without additional claims."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
