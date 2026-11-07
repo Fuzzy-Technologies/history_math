@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-fc8da0e2e1f2-en",
+  "questions": [
+    {
+      "id": "jordanus-book-and-anecdote",
+      "question": "Please verify the biographical note on Jordanus Nemorarius and the source of the legend. His identification with Jordan of Saxony—and therefore the dates 1225–1260 and the description “Saxon”—remains disputed; the university biography stresses that no definite conclusion has been reached. Full bibliographic details for the work attributed to Marshall Clagett and the page containing the suspended-books story are also required.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please verify the biographical note on Jordanus Nemorarius and the source of the legend. His identification with Jordan of Saxony—and therefore the dates 1225–1260 and the description “Saxon”—remains disputed; the university biography stresses that no definite conclusion has been reached. Full bibliographic details for the work attributed to Marshall Clagett and the page containing the suspended-books story are also required.",
+        "ru": "Уточнить биографическую справку об Иордане Неморарии и источник легенды. Отождествление математика с Иорданом Саксонским и, следовательно, годы 1225–1260 и определение «саксонский» остаются спорными; университетская биография подчёркивает отсутствие определённых выводов. Также требуется полное библиографическое описание работы Marshall Clagett и страница с историей о подвешенных книгах."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
