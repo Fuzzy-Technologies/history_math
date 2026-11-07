@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-eb4d39c37a32-en",
+  "questions": [
+    {
+      "id": "lecture-title-spoonerism",
+      "question": "Please review the title spoonerism in English. Both Russian forms are transliterated and translated accurately, but the English titles do not reproduce the sound swap by themselves. Please decide whether this presentation needs a brief explanation of the swapped initial sounds. No invented replacement titles have been substituted.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please review the title spoonerism in English. Both Russian forms are transliterated and translated accurately, but the English titles do not reproduce the sound swap by themselves. Please decide whether this presentation needs a brief explanation of the swapped initial sounds. No invented replacement titles have been substituted.",
+        "ru": "В EN сохранены обе русские формы в транслитерации и с переводом: Teoriya zhivykh sil («Теория живых сил») и Teoriya sivykh zhil («Теория сивых жил»). Перестановка звуков передана точно, но английский каламбур не возникает автоматически. Согласовать, достаточно ли такой подачи или нужен краткий комментарий о перестановке начальных звуков; другую пару названий без решения редактора не подставлял."
+      },
+      "resolution": "The English version explains the switch in initial sounds and retains both Russian expressions in transliteration and translation."
+    },
+    {
+      "id": "humor-cover-image",
+      "question": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+        "ru": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
