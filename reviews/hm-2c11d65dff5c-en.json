@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2c11d65dff5c-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Confirm Monge’s birth date. The post gives 10 May 1746, as do the BnF catalogue and French Senate; MacTutor and the archival biography on Annales give 9 May, with the latter citing the birth record. The author’s 10 May is retained in both versions pending a decision; the separate original publication date, 12 May, remains unchanged. Sources: https://catalogue.bnf.fr/ark%3A/12148/cb121412336 ; https://www.senat.fr/pair-de-france/monge_gaspardpf1059.html ; https://mathshistory.st-andrews.ac.uk/Biographies/Monge/ ; https://annales.org/archives/x/monge1.html .",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm Monge’s birth date. The post gives 10 May 1746, as do the BnF catalogue and French Senate; MacTutor and the archival biography on Annales give 9 May, with the latter citing the birth record. The author’s 10 May is retained in both versions pending a decision; the separate original publication date, 12 May, remains unchanged. Sources: https://catalogue.bnf.fr/ark%3A/12148/cb121412336 ; https://www.senat.fr/pair-de-france/monge_gaspardpf1059.html ; https://mathshistory.st-andrews.ac.uk/Biographies/Monge/ ; https://annales.org/archives/x/monge1.html .",
+        "ru": "Уточнить день рождения Монжа: пост даёт 10 мая 1746 года, как каталог BnF и французский Сенат, но MacTutor и архивная биография на Annales дают 9 мая; последний текст ссылается на акт рождения. До решения авторское 10 мая сохранено в RU/EN, исходная дата 12 мая не меняется. Источники: https://catalogue.bnf.fr/ark%3A/12148/cb121412336 ; https://www.senat.fr/pair-de-france/monge_gaspardpf1059.html ; https://mathshistory.st-andrews.ac.uk/Biographies/Monge/ ; https://annales.org/archives/x/monge1.html ."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
