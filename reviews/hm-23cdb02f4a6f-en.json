@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-23cdb02f4a6f-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the school and university appointment chronology in Königsberg and Bonn, and the current administrative description of Aleksoty.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the school and university appointment chronology in Königsberg and Bonn, and the current administrative description of Aleksoty.",
+        "ru": "Уточнить хронологию гимназии и университетских назначений в Кёнигсберге и Бонне, а также современное административное описание Алексот."
+      },
+      "resolution": "The chronology now follows the ETH Zürich and Deutsche Biographie accounts; Aleksoty is described as part of the city of Kaunas, in line with the Kaunas municipality’s current administrative listing."
+    },
+    {
+      "id": "q2",
+      "question": "Confirm the use of “geometrodynamics” for Minkowski’s model and the nature of the stated connection with Lobachevsky geometry.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Confirm the use of “geometrodynamics” for Minkowski’s model and the nature of the stated connection with Lobachevsky geometry.",
+        "ru": "Согласовать употребление «геометродинамики» для модели Минковского и характер заявленной связи с геометрией Лобачевского."
+      },
+      "resolution": "The term “geometrodynamics” and the unsupported direct link to Lobachevsky geometry were removed. Both editions now describe Minkowski’s documented contribution as a four-dimensional geometric formulation of special relativity."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
