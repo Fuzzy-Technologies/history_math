@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ce3653b33622-en",
+  "questions": [
+    {
+      "id": "descartes-cogito-sources-and-dates",
+      "question": "The historical background says the phrase first appeared in the Meditations of 1641 and became widely known through the earlier work of 1637. The Stanford Encyclopedia of Philosophy https://plato.stanford.edu/archives/sum2020/entries/self-consciousness/ distinguishes Je pense, donc je suis in the Discourse on the Method (1637), I am, I exist in the Second Meditation (1641), and cogito ergo sum in the Principles of Philosophy (1644). Please agree how to distinguish the proposition, its formulations and dates in both versions; the original account remains pending an editorial decision.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The historical background says the phrase first appeared in the Meditations of 1641 and became widely known through the earlier work of 1637. The Stanford Encyclopedia of Philosophy https://plato.stanford.edu/archives/sum2020/entries/self-consciousness/ distinguishes Je pense, donc je suis in the Discourse on the Method (1637), I am, I exist in the Second Meditation (1641), and cogito ergo sum in the Principles of Philosophy (1644). Please agree how to distinguish the proposition, its formulations and dates in both versions; the original account remains pending an editorial decision.",
+        "ru": "В исторической справке фраза названа впервые появившейся в «Размышлениях» 1641 года и ставшей известной благодаря более раннему труду 1637 года. Stanford Encyclopedia of Philosophy https://plato.stanford.edu/archives/sum2020/entries/self-consciousness/ различает «Je pense, donc je suis» в «Рассуждении о методе» (1637), «I am, I exist» во втором «Размышлении» (1641) и «cogito ergo sum» в «Началах философии» (1644). Согласовать точное разведение тезиса, формулировок и дат в RU/EN; исходная справка сохранена до решения редактора."
+      },
+      "resolution": "The historical note now distinguishes the French wording of 1637, the proposition in the Second Meditation of 1641, and the Latin “Cogito, ergo sum” in the Principles of Philosophy of 1644."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
