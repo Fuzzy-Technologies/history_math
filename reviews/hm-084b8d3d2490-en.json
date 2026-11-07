@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-084b8d3d2490-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the full dates of both All-Russian congresses of mathematics teachers and Popruzhenko’s roles; the source text gives St Petersburg in 1911 and Moscow in 1913.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the full dates of both All-Russian congresses of mathematics teachers and Popruzhenko’s roles; the source text gives St Petersburg in 1911 and Moscow in 1913.",
+        "ru": "Сверить полные даты обоих Всероссийских съездов преподавателей математики и роли Попруженко; в исходном тексте указаны Петербург 1911 года и Москва 1913 года."
+      },
+      "resolution": "Clarified the congress dates and Popruzhenko’s roles: 27 December 1911–3 January 1912, deputy chair of the First Congress organizing committee; 27 December 1913–3 January 1914, chairman of the Second Congress."
+    },
+    {
+      "id": "q2",
+      "question": "Clarify the claim that Elements of Analysis was the first Russian secondary-school textbook on the subject and verify the 1936 and 1939 Soviet problem-book editions, including posthumous editors if credited.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify the claim that Elements of Analysis was the first Russian secondary-school textbook on the subject and verify the 1936 and 1939 Soviet problem-book editions, including posthumous editors if credited.",
+        "ru": "Уточнить приоритет «первый отечественный учебник для средней школы» у «Начал анализа» и выходные данные советских изданий задачника 1936 и 1939 годов, включая редакторов посмертных изданий, если они указаны."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
