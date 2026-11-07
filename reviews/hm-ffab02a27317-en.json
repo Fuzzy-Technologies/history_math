@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ffab02a27317-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify Georg Wolfgang Krafft’s life and appointment chronology against primary or institutional records. The current text gives a master’s degree in 1724, an adjunct appointment in 1731 and the chair of theoretical and experimental physics in 1733. The Berlin-Brandenburg Academy’s record gives 1725, 1727, 1730 and 1731, while Deutsche Biographie gives 1725, 1730 and 1734; their exact birth and death dates also differ. Confirm as well the sources for the priority claims about the first complete physics course and first physics textbook: https://www.bbaw.de/die-akademie/akademie-historische-aspekte/mitglieder-historisch/historisches-mitglied-georg-wolfgang-krafft-1475 ; https://www.deutsche-biographie.de/116356642.html .",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify Georg Wolfgang Krafft’s life and appointment chronology against primary or institutional records. The current text gives a master’s degree in 1724, an adjunct appointment in 1731 and the chair of theoretical and experimental physics in 1733. The Berlin-Brandenburg Academy’s record gives 1725, 1727, 1730 and 1731, while Deutsche Biographie gives 1725, 1730 and 1734; their exact birth and death dates also differ. Confirm as well the sources for the priority claims about the first complete physics course and first physics textbook: https://www.bbaw.de/die-akademie/akademie-historische-aspekte/mitglieder-historisch/historisches-mitglied-georg-wolfgang-krafft-1475 ; https://www.deutsche-biographie.de/116356642.html .",
+        "ru": "Сверить хронологию жизни и академических назначений Георга Вольфганга Крафта по первичным или институциональным данным. В текущем тексте указаны степень магистра в 1724 году, адъюнктура в 1731-м и кафедра теоретической и опытной физики в 1733-м. Справка Берлин-Бранденбургской академии наук приводит 1725, 1727, 1730 и 1731 годы, а Deutsche Biographie — 1725, 1730 и 1734; расходятся также точные даты рождения и смерти. Заодно подтвердить источником приоритетные формулировки о первом полном курсе и первом учебнике физики: https://www.bbaw.de/die-akademie/akademie-historische-aspekte/mitglieder-historisch/historisches-mitglied-georg-wolfgang-krafft-1475 ; https://www.deutsche-biographie.de/116356642.html ."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
