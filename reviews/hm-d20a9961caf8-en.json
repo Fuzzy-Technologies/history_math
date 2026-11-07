@@ -1,0 +1,50 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d20a9961caf8-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Identify which South Pole is intended in the claim about determining geographical coordinates: the geographical or magnetic pole. Verify the precise observational results and the scope of the priority claims.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Identify which South Pole is intended in the claim about determining geographical coordinates: the geographical or magnetic pole. Verify the precise observational results and the scope of the priority claims.",
+        "ru": "Уточнить, какой Южный полюс имеется в виду в утверждении об определении географических координат: географический или магнитный. Сверить точные результаты наблюдений и рамки заявленных приоритетов."
+      },
+      "resolution": "The wording now follows Kazan Federal University’s account: Simonov determined ship and island positions from astronomical observations and calculated the position of the South Magnetic Pole from magnetic data."
+    },
+    {
+      "id": "q2",
+      "question": "Verify Bartels’s assessment of Simonov’s place in the Kazan school, the degree and appointment chronology, and the scientific-society memberships.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify Bartels’s assessment of Simonov’s place in the Kazan school, the degree and appointment chronology, and the scientific-society memberships.",
+        "ru": "Сверить источник высказывания Бартельса о месте Симонова в казанской школе, хронологию магистерской степени и назначений, состав и статус научных обществ."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Verify the exact titles of Simonov’s publications and the names of the Antarctic geographical features.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the exact titles of Simonov’s publications and the names of the Antarctic geographical features.",
+        "ru": "Сверить точные названия публикаций Симонова и названия антарктических географических объектов."
+      }
+    },
+    {
+      "id": "simonov-birthplace",
+      "question": "Clarify Simonov’s birthplace. The [Kazan University museum](https://kpfu.ru/imoiv/etnograficheskij-muzej/personalii/simonov-ivan-mihajlovich) gives Astrakhan, while [O. Panteleeva’s study](https://www.echovek.ru/ru/article/o-panteleeva-rektor-kazanskogo-universiteta-pokoritel-yuzhnogo-polyusa-i-m-simonov-stranicy) gives Gorokhovets. Cite a document that resolves the discrepancy or acknowledge both accounts in both editions.",
+      "localizations": {
+        "source": "Clarify Simonov’s birthplace. The [Kazan University museum](https://kpfu.ru/imoiv/etnograficheskij-muzej/personalii/simonov-ivan-mihajlovich) gives Astrakhan, while [O. Panteleeva’s study](https://www.echovek.ru/ru/article/o-panteleeva-rektor-kazanskogo-universiteta-pokoritel-yuzhnogo-polyusa-i-m-simonov-stranicy) gives Gorokhovets. Cite a document that resolves the discrepancy or acknowledge both accounts in both editions.",
+        "ru": "Уточнить место рождения Симонова. [Музей КФУ](https://kpfu.ru/imoiv/etnograficheskij-muzej/personalii/simonov-ivan-mihajlovich) указывает Астрахань, а [исследование О. Пантелеевой](https://www.echovek.ru/ru/article/o-panteleeva-rektor-kazanskogo-universiteta-pokoritel-yuzhnogo-polyusa-i-m-simonov-stranicy) — Гороховец. Нужен документ, позволяющий выбрать вариант, или оговорка о расхождении в обеих версиях."
+      },
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
