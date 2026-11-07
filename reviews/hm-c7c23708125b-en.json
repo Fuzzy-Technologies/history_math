@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c7c23708125b-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Check Cantor’s dates and role in the German Mathematical Society, priority claims and historical generalizations.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Check Cantor’s dates and role in the German Mathematical Society, priority claims and historical generalizations.",
+        "ru": "Проверить даты и роль Кантора в Германском математическом обществе, приоритеты и исторические обобщения."
+      },
+      "resolution": "Priority and causal claims were qualified: Cantor’s role in the congress is described without sole priority, disputed attributions were removed, and the reception of set theory and foundational schools is presented without a rigid causal chain."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
