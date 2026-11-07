@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-11795a8cd0b8",
+  "questions": [
+    {
+      "id": "gerbert-quotation-source",
+      "question": "Уточнить страницу в книге Nancy Marie Brown «The Abacus and the Cross» для фразы о маге, короле и математике. Издатель подтверждает издание 2012 года по ссылке https://www.hachettebookgroup.com/titles/nancy-marie-brown/the-abacus-and-the-cross/9780465031443/, но точная реплика пока не сверена с текстом книги. Согласовать источник либо помету о характере шутки.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
