@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-4822f24cc698-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the institutions and dates of the chairs: the source assigns mathematics in 1850 and mechanics in 1857 to the Collège de France; check whether the mechanics appointment was at a different institution.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the institutions and dates of the chairs: the source assigns mathematics in 1850 and mechanics in 1857 to the Collège de France; check whether the mechanics appointment was at a different institution.",
+        "ru": "Уточнить учреждения и даты кафедр: исходник относит математику 1850 года и механику 1857 года к Коллеж де Франс; проверить, не относится ли механика к другому учреждению."
+      },
+      "resolution": "Clarified: the mathematics chair was at the Collège de France (1850), while the mechanics chair was at the Faculty of Sciences in Paris (1857)."
+    },
+    {
+      "id": "q2",
+      "question": "Identify the particular Riccati equation and which Bernoulli is meant.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Identify the particular Riccati equation and which Bernoulli is meant.",
+        "ru": "Уточнить специальное уравнение Риккати и какого Бернулли имеет в виду автор."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
