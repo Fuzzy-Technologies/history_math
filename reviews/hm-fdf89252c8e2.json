@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-fdf89252c8e2",
+  "questions": [
+    {
+      "id": "lobachevsky-exam-problem",
+      "question": "Указать источник именно приведённых условий экзаменационной задачи (четыре трубы за 1, 2, 3 и 4 дня). В методических рекомендациях РАО (https://raum.math.ru/system/files/public/1_metodicheskie-rekomendacii_lobachevskij-2.pdf, с. 54) сценка экзамена содержит другую версию с 4, 10 и 15 часами. Это не опровержение, но нужно подтвердить этот вариант или обозначить его как исторический пересказ.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
