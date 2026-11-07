@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-4aba293ab24f-en",
+  "questions": [
+    {
+      "id": "fermi-nobel-timing-before-test",
+      "question": "In Atoms in the Family, p. 130 (PDF p. 152), the Nobel Prize had already been announced when Fermi took the arithmetic test. The post calls him a future Nobel laureate. The original wording is retained; propose the 1938 Nobel laureate in English and the corresponding correction in Russian, for editorial approval.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "In Atoms in the Family, p. 130 (PDF p. 152), the Nobel Prize had already been announced when Fermi took the arithmetic test. The post calls him a future Nobel laureate. The original wording is retained; propose the 1938 Nobel laureate in English and the corresponding correction in Russian, for editorial approval.",
+        "ru": "По Atoms in the Family, стр. 130 (PDF-страница 152), к моменту арифметического теста Нобелевская премия уже была объявлена: Лаура прямо пишет, что даже она не избавила Энрико от проверки. В посте он назван «будущим нобелевским лауреатом». Авторская формулировка сохранена. Предлагается заменить в RU на «лауреат Нобелевской премии 1938 года», в EN — “the 1938 Nobel laureate”; редактору согласовать обе версии."
+      },
+      "resolution": "The timing is corrected in both versions: the Nobel Prize had already been announced before the consular test."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
