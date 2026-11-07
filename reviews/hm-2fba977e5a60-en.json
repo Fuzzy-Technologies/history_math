@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2fba977e5a60-en",
+  "questions": [
+    {
+      "id": "bhaskara-zero-quotation",
+      "question": "Please identify the page and basis for attributing the lines about zero apples and zero in an equation to George Gheverghese Joseph’s The Crest of the Peacock (2011): the passage has not been found in the available text of the edition. Please agree a source or a note describing it as a joke; the publication year is confirmed.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please identify the page and basis for attributing the lines about zero apples and zero in an equation to George Gheverghese Joseph’s The Crest of the Peacock (2011): the passage has not been found in the available text of the edition. Please agree a source or a note describing it as a joke; the publication year is confirmed.",
+        "ru": "Уточнить страницу и основание атрибуции реплики про ноль яблок и ноль в уравнении в книге George Gheverghese Joseph «The Crest of the Peacock» (2011): в доступном тексте издания соответствующая реплика не найдена. Согласовать источник либо помету о характере шутки; год издания подтверждён."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
