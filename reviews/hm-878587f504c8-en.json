@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-878587f504c8-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Establish the birth date from a primary biographical source. Mathedu.ru gives “25 January (8 February) 1894”, although those dates are fourteen days apart while the Julian–Gregorian difference was twelve days; Moscow Pedagogical State University gives 7 February 1894. The source wording remains pending confirmation. Sources: https://www.mathedu.ru/indexes/authors/prochuhaev_v_g/ ; https://mpgu.su/novosti/poimjonno-grigorevicha-prochuhaeva/ .",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Establish the birth date from a primary biographical source. Mathedu.ru gives “25 January (8 February) 1894”, although those dates are fourteen days apart while the Julian–Gregorian difference was twelve days; Moscow Pedagogical State University gives 7 February 1894. The source wording remains pending confirmation. Sources: https://www.mathedu.ru/indexes/authors/prochuhaev_v_g/ ; https://mpgu.su/novosti/poimjonno-grigorevicha-prochuhaeva/ .",
+        "ru": "Установить дату рождения по первичному биографическому источнику. Mathedu.ru приводит «25 января (8 февраля) 1894», хотя эти даты разделяют 14 дней при 12-дневной календарной разнице; МПГУ указывает 7 февраля 1894 года. До подтверждения исходная формулировка сохранена. Источники: https://www.mathedu.ru/indexes/authors/prochuhaev_v_g/ ; https://mpgu.su/novosti/poimjonno-grigorevicha-prochuhaeva/ ."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
