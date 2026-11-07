@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1968b4484b64",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить принятую для заголовка датировку жизни Евклида и указать проверяемый источник приведённой цитаты Феликса Клейна.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
