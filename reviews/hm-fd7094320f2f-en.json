@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-fd7094320f2f-en",
+  "questions": [
+    {
+      "id": "three-glasses-gardner-edition",
+      "question": "Please identify the edition of Gardner’s Matematicheskiye dosugi to which p. 394 refers: year, publisher and, if needed, the original English collection title. The post explicitly distinguishes Gardner’s cheating trick from this different problem, and that distinction is retained. Without a confirmed edition or public link, the bibliographic mention remains unlinked.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Verified Martin Gardner’s Mathematical Diversions (Russian edition, Moscow: Mir, 1972, pp. 394–395, fig. 193) and explained the two starting positions.",
+      "localizations": {
+        "source": "Please identify the edition of Gardner’s Matematicheskiye dosugi to which p. 394 refers: year, publisher and, if needed, the original English collection title. The post explicitly distinguishes Gardner’s cheating trick from this different problem, and that distinction is retained. Without a confirmed edition or public link, the bibliographic mention remains unlinked.",
+        "ru": "Уточнить издание «Математических досугов» М. Гарднера, к которому относится ссылка на с. 394: год, издательство и при необходимости исходное английское название сборника. В посте явно оговорено, что у Гарднера фокус с жульничеством, а здесь другая задача; это различие сохранено. Без подтверждённого издания и публичной ссылки библиографическое упоминание оставлено без URL."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
