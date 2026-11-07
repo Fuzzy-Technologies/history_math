@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-3ef83b103181-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "The birthplace has been corrected to the Misheronsky glassworks in Moscow Governorate, and the 1931 Moscow University unit to the mathematics division of the Faculty of Physics and Mechanics. Verify the historical faculty name at Novosibirsk University when it was founded.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The birthplace has been corrected to the Misheronsky glassworks in Moscow Governorate, and the 1931 Moscow University unit to the mathematics division of the Faculty of Physics and Mechanics. Verify the historical faculty name at Novosibirsk University when it was founded.",
+        "ru": "Место рождения исправлено на Мишеронский завод Московской губернии, а подразделение Московского университета 1931 года — на математическое отделение физико-механического факультета. Остаётся проверить историческое название факультета Новосибирского университета при его создании."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Check the precise dissertation and textbook titles and their established English names, and the employment periods during the move from Ivanovo to Novosibirsk.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Check the precise dissertation and textbook titles and their established English names, and the employment periods during the move from Ivanovo to Novosibirsk.",
+        "ru": "Сверить точные заглавия диссертаций и учебников и принятые английские названия, а также периоды работы при переходе из Иванова в Новосибирск."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
