@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1946a03c3909-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Agree the proposed title Niccolò Tartaglia: the source has no separate name heading, and its historical opening is retained in full. Clarify the scope of the comparison with mathematicians in the East.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Agree the proposed title Niccolò Tartaglia: the source has no separate name heading, and its historical opening is retained in full. Clarify the scope of the comparison with mathematicians in the East.",
+        "ru": "Согласовать заголовок «Никколо Тарталья»: в исходнике нет отдельного именного заголовка, а историческое вступление сохранено полностью. Уточнить рамки сравнительного утверждения о достижениях математиков Востока."
+      },
+      "resolution": "The comparative claim was narrowed to an independent European achievement; the title was accepted."
+    },
+    {
+      "id": "q2",
+      "question": "Verify the types of educational institutions in Verona, Brescia and Venice described as universities, the conditions of Cardano’s receipt of the rule, and the precise titles and dates of the polemical documents.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the types of educational institutions in Verona, Brescia and Venice described as universities, the conditions of Cardano’s receipt of the rule, and the precise titles and dates of the polemical documents.",
+        "ru": "Проверить типы учебных заведений в Вероне, Брешии и Венеции, названных университетами, условия передачи правила Кардано и точные названия и даты полемических документов."
+      },
+      "resolution": "The Verona school type and polemical-document titles were clarified from the Galileo Project, Treccani and Museo Galileo catalogue."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
