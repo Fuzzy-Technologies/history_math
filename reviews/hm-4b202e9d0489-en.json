@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-4b202e9d0489-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the priority claim for the 1837 dissertation as Russia’s first specialized mathematics doctorate and the historical name of the degree. The English version retains Doctor of Philosophy from the source without equating it with a modern PhD.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the priority claim for the 1837 dissertation as Russia’s first specialized mathematics doctorate and the historical name of the degree. The English version retains Doctor of Philosophy from the source without equating it with a modern PhD.",
+        "ru": "Уточнить основание приоритета диссертации 1837 года как первой специализированной математической в России и историческое название присуждённой степени. В английской версии сохранено Doctor of Philosophy как название в исходнике, без приравнивания к современному PhD."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
