@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a2203cf87eba",
+  "questions": [
+    {
+      "id": "bossut-source-and-cover",
+      "question": "Подтвердить документальный источник предсмертного анекдота о Шарле Боссю: авторитетная биография MacTutor подтверждает годы жизни и научную карьеру, но не приводит этот эпизод. Для карточки рубрики «Математики шутят» также нужна фактическая обложка: сейчас figures и image manifest пусты.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
