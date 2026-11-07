@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2a80036b1d7a-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the scope of the claim that she was the world’s first woman professor of mathematics, the forms of study in Heidelberg and Berlin and the historical name of the Stockholm institution.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the scope of the claim that she was the world’s first woman professor of mathematics, the forms of study in Heidelberg and Berlin and the historical name of the Stockholm institution.",
+        "ru": "Уточнить рамки утверждения о первой в мире женщине-профессоре математики, формы обучения в Гейдельберге и Берлине и историческое название стокгольмского учреждения."
+      },
+      "resolution": "Clarified: Kovalevskaya attended lectures unofficially at Heidelberg with the lecturers’ permission, studied privately with Weierstrass in Berlin, and the historical Stockholm institution is named Stockholm University College. Stockholm University confirms the first-woman-professor claim: https://www.su.se/english/about-the-university/cultural-heritage-and-history/the-history-of-stockholm-university/sonya-kovalevsky---swedens-first-female-professor ; Heidelberg University confirms the form of study: https://www.uni-heidelberg.de/en/node/7586/sofya-kovalevskaya-the-worlds-first-female-professor-of-mathematics"
+    },
+    {
+      "id": "q2",
+      "question": "Check the composition and publication dates and established English titles of the literary works, especially A Nihilist Girl and The Struggle for Happiness; confirm a source for the episode about caring for wounded Communards in Paris.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Check the composition and publication dates and established English titles of the literary works, especially A Nihilist Girl and The Struggle for Happiness; confirm a source for the episode about caring for wounded Communards in Paris.",
+        "ru": "Сверить даты написания и публикации литературных произведений и принятые английские названия, особенно «Нигилистки» и «Борьбы за счастье»; подтвердить источник эпизода об уходе за ранеными коммунарами в Париже."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
