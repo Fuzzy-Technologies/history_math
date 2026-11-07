@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-e647f1fce1a6-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the Kvant Library attribution for Lectures and Problems in Elementary Mathematics (1974, 576 pp.). The Russian State Library describes a textbook for university preparatory departments without that series, https://search.rsl.ru/ru/record/01007284399 . Remove the unconfirmed series in both languages after checking the title page.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the Kvant Library attribution for Lectures and Problems in Elementary Mathematics (1974, 576 pp.). The Russian State Library describes a textbook for university preparatory departments without that series, https://search.rsl.ru/ru/record/01007284399 . Remove the unconfirmed series in both languages after checking the title page.",
+        "ru": "Сверить указание серии «Библиотечка „Квант“» у «Лекций и задач по элементарной математике» (1974, 576 с.). Каталог РГБ описывает учебное пособие для подготовительных отделений вузов, без этой серии: https://search.rsl.ru/ru/record/01007284399 . Предлагается убрать неподтверждённую серию в RU/EN после проверки титула."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
