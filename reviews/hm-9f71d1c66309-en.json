@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-9f71d1c66309-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the official name of the council of rectors in whose work Nuzhin participated.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the official name of the council of rectors in whose work Nuzhin participated.",
+        "ru": "Уточнить официальное наименование совета ректоров, в работе которого участвовал Нужин."
+      },
+      "resolution": "Because the sources disagree, the disputed official title was replaced by a neutral statement about coordinating the work of rectors."
+    },
+    {
+      "id": "q2",
+      "question": "Check attribution of the personal postscript and consistency of English names and the honorary title.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Check attribution of the personal postscript and consistency of English names and the honorary title.",
+        "ru": "Проверить атрибуцию личного послесловия и согласованность английских написаний имён и звания."
+      },
+      "resolution": "The postscript remains the author’s first-person statement in Mansur Gilmullin’s article; the English version is aligned with the Russian text in meaning and names."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
