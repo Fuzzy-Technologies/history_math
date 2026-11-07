@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ae23b85936fe-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Confirm the birth year: the heading gives 1734, while the body allows 1736. The original date, 2024-07-08, is retained independently of this biographical question.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the birth year: the heading gives 1734, while the body allows 1736. The original date, 2024-07-08, is retained independently of this biographical question.",
+        "ru": "Подтвердить год рождения: заголовок даёт 1734, основной текст допускает 1736. Дата материала 2024-07-08 сохранена независимо от этого биографического вопроса."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Correct the definition and chronology of the results: $g(n)$ is the least number of $n$th powers sufficient to represent every positive integer; Hilbert proved the existence of a finite bound in 1909; Linnik announced $G(3) \\le 7$ in 1942 and published the proof in 1943; $g(4) = 19$ was proved in 1986, not 1984. Distinguish the functions $g$ and $G$ in both editions.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Correct the definition and chronology of the results: $g(n)$ is the least number of $n$th powers sufficient to represent every positive integer; Hilbert proved the existence of a finite bound in 1909; Linnik announced $G(3) \\le 7$ in 1942 and published the proof in 1943; $g(4) = 19$ was proved in 1986, not 1984. Distinguish the functions $g$ and $G$ in both editions.",
+        "ru": "Исправить определение и хронологию результатов: $g(n)$ — наименьшее число $n$-х степеней, достаточное для представления каждого натурального числа; Гильберт в 1909 году доказал существование конечной границы; Линник объявил результат $G(3) \\le 7$ в 1942 году и опубликовал доказательство в 1943 году; равенство $g(4) = 19$ было доказано в 1986 году, а не в 1984-м. Различить функции $g$ и $G$ в обеих редакциях."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Verify the source and edition of the Latin quotation, its translation and the relationship between the 1762 and 1770 editions. The selected title-page image is visibly dated 1762.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the source and edition of the Latin quotation, its translation and the relationship between the 1762 and 1770 editions. The selected title-page image is visibly dated 1762.",
+        "ru": "Сверить источник и издание латинской цитаты, сопоставить её с переводом и со связью изданий 1762 и 1770 годов. Титульный лист выбранного изображения действительно датирован 1762 годом."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
