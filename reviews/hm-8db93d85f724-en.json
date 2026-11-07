@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8db93d85f724-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the birth-date calendar: the post adds 8 March to 23 February 1906, whereas the examined 1972 obituary gives 23 February without an Old Style indication. Confirm that conversion from primary documentation; the author’s wording remains in both versions pending a decision.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the birth-date calendar: the post adds 8 March to 23 February 1906, whereas the examined 1972 obituary gives 23 February without an Old Style indication. Confirm that conversion from primary documentation; the author’s wording remains in both versions pending a decision.",
+        "ru": "Проверить календарный стиль рождения: пост добавляет к 23 февраля 1906 скобку «8 марта», тогда как прочитанный некролог 1972 года даёт просто 23 февраля без указания старого стиля. Нужен первичный документ для такого перевода; до решения сохранена авторская запись RU/EN."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Verify the 1925 Kyiv and 1936 Ukrainian titles, participation in the 1939 USSR championship and the chess-playing wife’s exact name from tournament records. The obituary confirms the 1937 master title but not every listed tournament result. Approve precise wording, including any shared placings.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the 1925 Kyiv and 1936 Ukrainian titles, participation in the 1939 USSR championship and the chess-playing wife’s exact name from tournament records. The obituary confirms the 1937 master title but not every listed tournament result. Approve precise wording, including any shared placings.",
+        "ru": "Подтвердить по турнирным таблицам чемпионства Киева 1925 и УССР 1936, участие в чемпионате СССР 1939 и точное имя супруги-шахматистки. Некролог подтверждает мастерское звание 1937, но не все перечисленные турнирные результаты. Согласовать точные формулировки, включая возможное деление мест."
+      },
+      "resolution": "Tournament records were used to clarify that Pogrebyssky shared first place in the 1936 Ukrainian SSR championship and that Zinaida Andreevna Artemyeva shared first to third place in the women’s championships of both 1936 and 1938. His 1925 Kyiv title, participation in the 1939 USSR championship and 1937 master title are retained."
+    },
+    {
+      "id": "q3",
+      "question": "Проверить перед публикацией доступность авторской ссылки на букинистическую карточку URSS и карточку автора Mathedu. Основной полный текст книги Mathedu подтверждён, но эти две страницы веб-инструмент не получил; повтор через пять минут и прямое чтение завершились сетевым ECONNRESET. Это не подтверждение удаления страниц. Исходные URL сохранены, замены не придуманы.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Проверить перед публикацией доступность авторской ссылки на букинистическую карточку URSS и карточку автора Mathedu. Основной полный текст книги Mathedu подтверждён, но эти две страницы веб-инструмент не получил; повтор через пять минут и прямое чтение завершились сетевым ECONNRESET. Это не подтверждение удаления страниц. Исходные URL сохранены, замены не придуманы.",
+        "ru": "Проверить перед публикацией доступность авторской ссылки на букинистическую карточку URSS и карточку автора Mathedu. Основной полный текст книги Mathedu подтверждён, но эти две страницы веб-инструмент не получил; повтор через пять минут и прямое чтение завершились сетевым ECONNRESET. Это не подтверждение удаления страниц. Исходные URL сохранены, замены не придуманы."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
