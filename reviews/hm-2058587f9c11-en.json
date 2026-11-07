@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2058587f9c11-en",
+  "questions": [
+    {
+      "id": "dirac-berry-word-per-hour-source",
+      "question": "Clarify the source for the dirac as one word per hour. Berry’s checked six-page PDF contains the reply to Bohr on p. 6, but no mention of this unit was found. The author’s attribution in the source comment is retained pending an editorial decision.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the source for the dirac as one word per hour. Berry’s checked six-page PDF contains the reply to Bohr on p. 6, but no mention of this unit was found. The author’s attribution in the source comment is retained pending an editorial decision.",
+        "ru": "Уточнить источник единицы «дирак» = одно слово в час: в проверенном шестистраничном PDF Майкла Берри есть реплика Бору (стр. 6), но упоминания такой единицы не найдено. В авторском комментарии она приписана этому PDF; формулировка сохранена до редакторского решения."
+      },
+      "resolution": "The attribution is corrected: the “dirac” now cites Graham Farmelo, The Strangest Man (2009), p. 89; Berry’s PDF is cited only for the remark to Bohr."
+    },
+    {
+      "id": "dirac-poetry-english-wording",
+      "question": "Check the exact English wording of the science-versus-poetry remark and its locator in Helge Kragh or another primary source. The English version translates the author’s complete Russian wording and should not automatically be treated as a verified verbatim English quotation.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Check the exact English wording of the science-versus-poetry remark and its locator in Helge Kragh or another primary source. The English version translates the author’s complete Russian wording and should not automatically be treated as a verified verbatim English quotation.",
+        "ru": "Сверить точный английский оригинал реплики о науке и поэзии и локатор в издании Хельге Крага или другом первоисточнике. EN передаёт полную авторскую русскую формулировку; её нельзя автоматически считать дословной английской цитатой."
+      },
+      "resolution": "The English now uses the wording given by MacTutor with a citation to H. Eves, Mathematical Circles Adieu (1977); the Russian translation is synchronized."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-07",
+    "package_sha256": "cfc84addcfbcc3e75e76d16fee5ac5a5617ab7dd3eb11bf777fd640d32c1e39f",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/620#pullrequestreview-5810014485",
+    "source_commit": "864ee80272c2e1c7f286f4eddce2cf083b6dcc47",
+    "source_review_id": 5810014485,
+    "approved_at": "2026-11-07T04:14:13Z"
+  }
+}
