@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0dd284764499",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить формулировку о 1951 годе: выход в отставку и возвращение в Цюрих не означают разрыва с IAS, который указывает статус Professor Emeritus в 1951–1955: https://www.ias.edu/math/people/past-faculty . При необходимости дополнить обе версии коротким уточнением, сохранив авторский объём.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
