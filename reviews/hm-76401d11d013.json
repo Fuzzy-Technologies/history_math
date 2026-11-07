@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-76401d11d013",
+  "questions": [
+    {
+      "id": "nash-tie-anecdote-source",
+      "question": "Уточнить страницу в «A Beautiful Mind» Sylvia Nasar для «игры в галстуки» и реплики о равновесии Нэша. Официальная страница https://www.simonandschuster.net/books/A-Beautiful-Mind/Sylvia-Nasar/9781451628425 подтверждает книгу и автора, но не этот эпизод. Исходник сам называет его шутливой легендой; это обозначение сохранено. Редактору решить, как обозначить связь вымышленного сюжета с приведённой библиографией.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
