@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c36e72edd755",
+  "questions": [
+    {
+      "id": "required-joke-cover",
+      "question": "Добавить обязательную обложку для карточки рубрики «Математики шутят». В исходном посте иллюстрации не было, а в обеих версиях список figures сейчас пуст.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
