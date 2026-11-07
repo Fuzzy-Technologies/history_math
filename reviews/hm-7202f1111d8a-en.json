@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-7202f1111d8a-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify birth and death dates from contemporary documents or an obituary: the post gives 30 January/11 February 1836 and 16 February/1 March 1907, whereas MSU’s chronicle gives 2/14 February 1836 and 16/28 February 1907, https://letopis.msu.ru/peoples/1055 . The latter conversion itself needs checking. Source-post dates remain in both versions pending a decision.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify birth and death dates from contemporary documents or an obituary: the post gives 30 January/11 February 1836 and 16 February/1 March 1907, whereas MSU’s chronicle gives 2/14 February 1836 and 16/28 February 1907, https://letopis.msu.ru/peoples/1055 . The latter conversion itself needs checking. Source-post dates remain in both versions pending a decision.",
+        "ru": "Сверить даты рождения и смерти по прижизненным документам или некрологу: пост даёт 30 января (11 февраля) 1836 и 16 февраля (1 марта) 1907, тогда как летопись МГУ приводит 2(14).02.1836 и 16(28).02.1907: https://letopis.msu.ru/peoples/1055 . Последняя скобка сама требует календарной проверки. До решения сохранены даты авторского поста в RU/EN."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Check whether the school physics textbooks belong to his son Alexander Vasilyevich Zinger. The Russian State Library attributes Elementary Physics to Alexander, https://search.rsl.ru/ru/record/01009111707 . Identify Vasily’s own school textbooks or approve a clarification in the final paragraph of both versions.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Check whether the school physics textbooks belong to his son Alexander Vasilyevich Zinger. The Russian State Library attributes Elementary Physics to Alexander, https://search.rsl.ru/ru/record/01009111707 . Identify Vasily’s own school textbooks or approve a clarification in the final paragraph of both versions.",
+        "ru": "Не смешаны ли школьные учебники физики с трудами сына, Александра Васильевича Цингера? Каталог РГБ относит «Начальную физику» к Александру: https://search.rsl.ru/ru/record/01009111707 . Нужны конкретные названия школьных учебников Василия Яковлевича либо редакторское уточнение последнего абзаца RU/EN."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Verify the 1885 botanical title: the post says Compendium, while MSU lists Collection of Information on the Flora of Central Russia, https://letopis.msu.ru/peoples/1055 . For Higher Algebra, the post’s 1874 and MSU’s 1883 lecture text may identify different editions and are not automatically contradictory.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the 1885 botanical title: the post says Compendium, while MSU lists Collection of Information on the Flora of Central Russia, https://letopis.msu.ru/peoples/1055 . For Higher Algebra, the post’s 1874 and MSU’s 1883 lecture text may identify different editions and are not automatically contradictory.",
+        "ru": "Уточнить точное название ботанического труда 1885 года: в посте «Свод сведений», в летописи МГУ — «Сборник сведений о флоре средней России»: https://letopis.msu.ru/peoples/1055 . Для «Высшей алгебры» проверить конкретное издание: 1874 в посте и лекции 1883 в перечне МГУ могут относиться к разным изданиям, сами по себе это не противоречие."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
