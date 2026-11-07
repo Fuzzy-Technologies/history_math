@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d94b49cceb6c",
+  "questions": [
+    {
+      "id": "erdos-age-versions-and-pages",
+      "question": "Уточнить версии и указатели: в приложенном Mathematical People (A K Peters, 2008) шутка находится на печатной стр. 83 (PDF 112), а комментарий указывает стр. 109. В proceedings на стр. 55 действительно есть рисунок с динозавром, но в пересказе лекции возраст Земли 4, 6 млрд и заголовок “My First Two Billion Years in Mathematics”; интервью Mathematical People даёт 4, 5 млрд и “Two and a Half Billion”. Это разные свидетельства. В исходном Зориче найдено место на PDF 12, печатная xii; комментарий указывает стр. 11. Редактору уточнить страницы и при необходимости обозначить варианты, не исправляя текст по одной из версий автоматически.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}

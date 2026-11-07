@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d94b49cceb6c-en",
+  "questions": [
+    {
+      "id": "erdos-age-versions-and-pages",
+      "question": "Confirm versions and page references: the supplied 2008 Mathematical People places the joke on printed p. 83 (PDF 112), while the comment cites p. 109. Proceedings p. 55 confirms the dinosaur drawing but gives 4.6 billion for the Earth and the title My First Two Billion Years in Mathematics; Mathematical People gives 4.5 billion and Two and a Half Billion. These are different accounts. The Zorich passage is on PDF page 12, printed xii, whereas the comment gives p. 11. Review the locators and whether to distinguish the versions; no automatic choice between accounts has been made.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm versions and page references: the supplied 2008 Mathematical People places the joke on printed p. 83 (PDF 112), while the comment cites p. 109. Proceedings p. 55 confirms the dinosaur drawing but gives 4.6 billion for the Earth and the title My First Two Billion Years in Mathematics; Mathematical People gives 4.5 billion and Two and a Half Billion. These are different accounts. The Zorich passage is on PDF page 12, printed xii, whereas the comment gives p. 11. Review the locators and whether to distinguish the versions; no automatic choice between accounts has been made.",
+        "ru": "Уточнить версии и указатели: в приложенном Mathematical People (A K Peters, 2008) шутка находится на печатной стр. 83 (PDF 112), а комментарий указывает стр. 109. В proceedings на стр. 55 действительно есть рисунок с динозавром, но в пересказе лекции возраст Земли 4, 6 млрд и заголовок “My First Two Billion Years in Mathematics”; интервью Mathematical People даёт 4, 5 млрд и “Two and a Half Billion”. Это разные свидетельства. В исходном Зориче найдено место на PDF 12, печатная xii; комментарий указывает стр. 11. Редактору уточнить страницы и при необходимости обозначить варианты, не исправляя текст по одной из версий автоматически."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
