@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f1a798dfaf3d-en",
+  "questions": [
+    {
+      "id": "pythagoras-bean-last-words",
+      "question": "Please identify the passage in Book VIII of Diogenes Laertius and the wording of the last words, “Better to die than to eat a bean!” The check should distinguish the ban on eating beans, the refusal to cross the field, and any authorial adaptation of the aphorism. The original retelling, its explicit description as a legend, the quotation and complete postscript are retained; no link to an unidentified edition is added.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please identify the passage in Book VIII of Diogenes Laertius and the wording of the last words, “Better to die than to eat a bean!” The check should distinguish the ban on eating beans, the refusal to cross the field, and any authorial adaptation of the aphorism. The original retelling, its explicit description as a legend, the quotation and complete postscript are retained; no link to an unidentified edition is added.",
+        "ru": "Уточнить место в книге VIII Диогена Лаэртского и формулировку последних слов «Лучше умереть, чем съесть боб!». Нужна сверка, различающая запрет есть бобы, отказ переступить через поле и возможную авторскую переработку афоризма. Сохранены исходный пересказ, его обозначение «согласно легенде», реплика и полный P.S.; прямую ссылку на неустановленное издание не добавляли."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
