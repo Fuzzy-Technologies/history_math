@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c2af2a7d7002-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Provide a verifiable source and exact edition for the quotation attributed to Kepler about astrology.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide a verifiable source and exact edition for the quotation attributed to Kepler about astrology.",
+        "ru": "Указать проверяемый источник и точную редакцию приведённой цитаты Кеплера об астрологии."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}

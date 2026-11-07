@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c2af2a7d7002",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Указать проверяемый источник и точную редакцию приведённой цитаты Кеплера об астрологии.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
