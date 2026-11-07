@@ -1,0 +1,64 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1d0348f4f556-en",
+  "questions": [
+    {
+      "id": "stomachion-counting-convention",
+      "question": "Please explain the equivalences relating 17,152 and 536: their ratio is 32, whereas a square has only eight rotations and reflections. The Archimedes Palimpsest project confirms both totals and the factor 32; the explanation should specify that counting convention rather than only the square’s rotations and reflections: https://www.archimedespalimpsest.org/about/scholarship/combinatorics.php .",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please explain the equivalences relating 17,152 and 536: their ratio is 32, whereas a square has only eight rotations and reflections. The Archimedes Palimpsest project confirms both totals and the factor 32; the explanation should specify that counting convention rather than only the square’s rotations and reflections: https://www.archimedespalimpsest.org/about/scholarship/combinatorics.php .",
+        "ru": "Уточнить, какие эквивалентности связывают 17 152 и 536: их отношение равно 32, тогда как у квадрата только 8 поворотов и отражений. Проект «Палимпсест Архимеда» подтверждает оба числа и множитель 32; пояснение должно учитывать принятую там схему подсчёта, а не только повороты и отражения квадрата: https://www.archimedespalimpsest.org/about/scholarship/combinatorics.php ."
+      },
+      "resolution": "Both editions now distinguish 536 geometrically distinct solutions from 17,152 arrangements obtained when symmetric transformations and interchanges of congruent pieces are distinguished: 32 per solution."
+    },
+    {
+      "id": "stomachion-manuscript-history",
+      "question": "Please clarify the claims that the game was a legend until 1906 and that the last three treatises survive nowhere else. The Palimpsest project describes The Method and Stomachion as unique texts, but On Floating Bodies as unique in the original Greek; a Latin translation is also known. Source: https://www.archimedespalimpsest.org/about/history/index.php . Please agree matching wording in both editions.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please clarify the claims that the game was a legend until 1906 and that the last three treatises survive nowhere else. The Palimpsest project describes The Method and Stomachion as unique texts, but On Floating Bodies as unique in the original Greek; a Latin translation is also known. Source: https://www.archimedespalimpsest.org/about/history/index.php . Please agree matching wording in both editions.",
+        "ru": "Уточнить формулировки об игре как легенде до 1906 года и об уникальности последних трёх трактатов. Проект палимпсеста называет «Метод» и «Стомахион» уникальными текстами, а «О плавающих телах» — единственным сохранившимся источником на греческом; известен также латинский перевод. Источник: https://www.archimedespalimpsest.org/about/history/index.php . Нужна согласованная редакция обеих версий."
+      },
+      "resolution": "The “legend” claim was removed; the discovery account and the survival status of the three treatises now follow the Palimpsest project."
+    },
+    {
+      "id": "stomachion-golden-ratio",
+      "question": "Please identify a source and the particular pieces or quantities claimed to involve the golden ratio. The author qualifies this as “some accounts”, but names neither an account nor a testable proportion.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please identify a source and the particular pieces or quantities claimed to involve the golden ratio. The author qualifies this as “some accounts”, but names neither an account nor a testable proportion.",
+        "ru": "Указать источник и конкретные части или величины, для которых заявлена связь с золотым сечением. В авторском посте есть оговорка «по некоторым версиям», но ни версия, ни проверяемая пропорция не названы."
+      },
+      "resolution": "The unsupported golden-ratio claim was removed from both editions."
+    },
+    {
+      "id": "stomachion-leonardo",
+      "question": "Please provide a source for the claim that Stomachion proportions influenced Leonardo da Vinci’s sketches for Vitruvian Man, or agree its removal or qualification in both editions. The source post gives no bibliographic basis.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please provide a source for the claim that Stomachion proportions influenced Leonardo da Vinci’s sketches for Vitruvian Man, or agree its removal or qualification in both editions. The source post gives no bibliographic basis.",
+        "ru": "Подтвердить источником утверждение о влиянии пропорций стомахиона на эскизы «Витрувианского человека» Леонардо да Винчи либо согласовать его удаление или уточнение в обеих версиях. В исходном посте библиографического основания нет."
+      },
+      "resolution": "The unsupported claim about influence on the Vitruvian Man was removed from both editions."
+    },
+    {
+      "id": "stomachion-name",
+      "question": "Clarify the translation of “Stomachion”. The Archimedes Palimpsest project notes that the etymology is not fully understood and gives “belly-ache” as the most likely literal meaning, rather than “enraging”. Please agree matching wording in both editions.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the translation of “Stomachion”. The Archimedes Palimpsest project notes that the etymology is not fully understood and gives “belly-ache” as the most likely literal meaning, rather than “enraging”. Please agree matching wording in both editions.",
+        "ru": "Уточнить перевод названия «стомахион». Проект «Палимпсест Архимеда» отмечает, что этимология не вполне ясна и наиболее вероятное буквальное значение — «боль в животе» (belly-ache), а не «приводящая в ярость». Нужна согласованная формулировка обеих версий."
+      },
+      "resolution": "Both editions now note the uncertain etymology and give “belly-ache” as the most likely literal meaning."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
