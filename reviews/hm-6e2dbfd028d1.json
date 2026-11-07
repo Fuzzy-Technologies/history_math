@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6e2dbfd028d1",
+  "questions": [
+    {
+      "id": "euler-prize-1727",
+      "question": "Согласовать формулировку о конкурсе 1727 года в обеих версиях. Основной текст называет победителем Бугера, а сводка MacTutor (https://mathshistory.st-andrews.ac.uk/Societies/Paris/) — совместными победителями Бугера и Камю. У Гаутчи (https://www.euler-2007.ch/doc/EulerLec.pdf, с. 5, PDF 3) результат Эйлера назван вторым, у MacTutor — третьим; текущий текст использует нейтральное accessit. Уточнить победителей и статус награды Эйлера по первичному протоколу Академии.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Согласовать формулировку о конкурсе 1727 года в обеих версиях. Основной текст называет победителем Бугера, а сводка MacTutor (https://mathshistory.st-andrews.ac.uk/Societies/Paris/) — совместными победителями Бугера и Камю. У Гаутчи (https://www.euler-2007.ch/doc/EulerLec.pdf, с. 5, PDF 3) результат Эйлера назван вторым, у MacTutor — третьим; текущий текст использует нейтральное accessit. Уточнить победителей и статус награды Эйлера по первичному протоколу Академии.",
+        "en": "Reconcile the 1727 competition in both versions. The body names Bouguer as the winner, whereas MacTutor’s prize list (https://mathshistory.st-andrews.ac.uk/Societies/Paris/) names Bouguer and Camus jointly. Gautschi (https://www.euler-2007.ch/doc/EulerLec.pdf, p. 5, PDF p. 3) calls Euler’s result second, while MacTutor calls it third; the current text uses the neutral accessit. Confirm the winners and Euler’s award status from the Academy’s original record."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
