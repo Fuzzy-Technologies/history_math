@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-46373a67522e-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the exact birth-date claim: the 1136 problem gives an age of twenty-six and hence the year 1110, not a day and month. Approve year of birth in both versions and the certainty of his final life date.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the exact birth-date claim: the 1136 problem gives an age of twenty-six and hence the year 1110, not a day and month. Approve year of birth in both versions and the certainty of his final life date.",
+        "ru": "Уточнить «дату рождения можем установить точно»: задача 1136 года о возрасте 26 лет позволяет получить год 1110, но не день и месяц. Согласовать «год рождения» в RU/EN и степень определённости конечной даты жизни."
+      },
+      "resolution": "Both editions specify the birth year inferred from the problem. The life dates remain approximate."
+    },
+    {
+      "id": "q2",
+      "question": "The calendar outline has water every 70 years followed by an orphan 14. The 14 appears to be a lost reference number and is not treated as part of the period; seventy years is retained. Supply its source and approve the no-parallel claim for the subdivisions of the hour.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The calendar outline has water every 70 years followed by an orphan 14. The 14 appears to be a lost reference number and is not treated as part of the period; seventy years is retained. Supply its source and approve the no-parallel claim for the subdivisions of the hour.",
+        "ru": "В календарном перечне исходник содержит «Воды — каждые 70 лет 14». Отдельное 14 похоже на потерянный номер ссылки и не перенесено как часть периода; 70 лет сохранены. Нужны источник и решение об этой ссылке. Уточнить по изданию также безусловное утверждение об отсутствии аналогов деления часа."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Approve attribution of the engraving-style illustration: the archive includes generation-style filenames but no confirmed historical original. It is not captioned as a lifetime portrait, and its decorative marks are not presented as authentic medieval notation. Supply the tool or authorship if known.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Approve attribution of the engraving-style illustration: the archive includes generation-style filenames but no confirmed historical original. It is not captioned as a lifetime portrait, and its decorative marks are not presented as authentic medieval notation. Supply the tool or authorship if known.",
+        "ru": "Согласовать атрибуцию иллюстрации в стиле гравюры: в архиве есть варианты с именами генераций, но подтверждённого исторического первоисточника нет. Подпись не называет изображение прижизненным портретом; декоративные знаки не представлены как достоверная древнерусская запись. Указать инструмент/авторство, если они известны."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
