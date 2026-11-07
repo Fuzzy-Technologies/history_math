@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0ca973a616e3-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the name and status of the 1932 qualification and 1937 doctoral dissertation, the study dates and the roles of both supervisors.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the name and status of the 1932 qualification and 1937 doctoral dissertation, the study dates and the roles of both supervisors.",
+        "ru": "Уточнить название и статус квалификационной работы 1932 года и докторской диссертации 1937 года, даты учёбы и роль обоих научных руководителей."
+      },
+      "resolution": "Clarified his Moscow University studies (1926–1930), postgraduate training, the roles of Sergei Finikov and Veniamin Kagan as teachers, and the titles of the 1932 candidate and 1937 doctoral dissertations."
+    },
+    {
+      "id": "q2",
+      "question": "Check Norden’s position at the journal and the period of leadership; confirm the author’s personal recollection and the years 1967–1975.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Check Norden’s position at the journal and the period of leadership; confirm the author’s personal recollection and the years 1967–1975.",
+        "ru": "Сверить должность Нордена в журнале и период руководства; подтвердить личное воспоминание автора и годы 1967–1975."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
