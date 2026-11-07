@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d52c4d5c43ea",
+  "questions": [
+    {
+      "id": "bogolyubov-graduate-study-source",
+      "question": "Подтвердить первоисточником, что Николай Николаевич Боголюбов был зачислен в аспирантуру в шестнадцать лет по особому решению.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
