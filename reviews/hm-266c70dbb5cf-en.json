@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-266c70dbb5cf-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the scope of the claim that this was the first university course in mathematics teaching methods.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify the scope of the claim that this was the first university course in mathematics teaching methods.",
+        "ru": "Уточнить область приоритета утверждения о «первом университетском курсе методики математики»."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}

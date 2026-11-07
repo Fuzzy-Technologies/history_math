@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-266c70dbb5cf",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить область приоритета утверждения о «первом университетском курсе методики математики».",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
