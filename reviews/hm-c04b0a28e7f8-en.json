@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c04b0a28e7f8-en",
+  "questions": [
+    {
+      "id": "zed-film-quote-wording",
+      "question": "The post and both author’s illustrations use “Zed is dead”, while the cited screenplay uses “Zed’s dead”. Decide whether to preserve the author’s wording as part of the joke or standardise the exact film quotation.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The post and both author’s illustrations use “Zed is dead”, while the cited screenplay uses “Zed’s dead”. Decide whether to preserve the author’s wording as part of the joke or standardise the exact film quotation.",
+        "ru": "В посте и на обеих авторских иллюстрациях реплика дана как «Zed is dead», а в приведённом сценарии — «Zed’s dead». Решить, сохранять ли авторский вариант как часть шутки или унифицировать точную киноцитату."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
