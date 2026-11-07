@@ -1,0 +1,52 @@
+{
+  "review_version": 1,
+  "article_id": "hm-bbc529ad777c-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify Fermat’s birth year and the date 17 August 1601 used in the heading and text against the selected biographical source.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify Fermat’s birth year and the date 17 August 1601 used in the heading and text against the selected biographical source.",
+        "ru": "Уточнить год рождения Ферма и дату 17 августа 1601 года в заголовке и тексте по выбранному биографическому источнику."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "The statement of Fermat’s little theorem omits the condition that a and p are coprime; agree its addition in both editions. Also decide whether the last theorem should explicitly state that the exponent n is an integer.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The statement of Fermat’s little theorem omits the condition that a and p are coprime; agree its addition in both editions. Also decide whether the last theorem should explicitly state that the exponent n is an integer.",
+        "ru": "В формулировке малой теоремы Ферма отсутствует условие взаимной простоты a и p; согласовать его добавление в обе версии. Также уточнить, следует ли явно назвать целочисленность показателя n в Великой теореме."
+      },
+      "resolution": "The little theorem now states p∤a, and the last theorem specifies integer n."
+    },
+    {
+      "id": "q3",
+      "question": "Verify the descriptions of Fermat as the founder of algebraic number theory and as never publishing. Confirm the portrait’s original source and the basis for reproduction.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the descriptions of Fermat as the founder of algebraic number theory and as never publishing. Confirm the portrait’s original source and the basis for reproduction.",
+        "ru": "Проверить формулировки «основоположник алгебраической теории чисел» и «не публиковался». Подтвердить первоисточник портрета и основание воспроизведения."
+      },
+      "resolution": "The historical claims about Fermat’s role and circulation of his work were made more precise and neutral."
+    },
+    {
+      "id": "fermat-prime-attribution",
+      "question": "Correct the historical attribution in the paragraph on Fermat numbers: Fermat conjectured that every number F_n = 2^{2^n} + 1 is prime, whereas the open question whether there are finitely or infinitely many Fermat primes is a modern formulation and was not posed by him in that form.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Correct the historical attribution in the paragraph on Fermat numbers: Fermat conjectured that every number F_n = 2^{2^n} + 1 is prime, whereas the open question whether there are finitely or infinitely many Fermat primes is a modern formulation and was not posed by him in that form.",
+        "ru": "Исправить историческую атрибуцию абзаца о числах Ферма: Ферма предполагал, что все числа F_n = 2^{2^n} + 1 простые, тогда как открытый вопрос о конечности или бесконечности множества простых чисел Ферма является современной формулировкой и не был поставлен им в таком виде."
+      },
+      "resolution": "Fermat’s conjecture is separated from the modern open question about the number of Fermat primes."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
