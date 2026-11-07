@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c3f03a90cc5b-en",
+  "questions": [
+    {
+      "id": "lobachevsky-ministry-query",
+      "question": "Please verify a documentary source for the Ministry of Public Education’s alleged query, “Who is this Lobachevsky, and what exceptional scientific achievements are credited to him?” Kazan University’s history confirms the subscription, monument and prize initiative for Lobachevsky’s centenary but does not reproduce this wording. Unless confirmed, it should be identified as a later retelling or printed without quotation marks.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please verify a documentary source for the Ministry of Public Education’s alleged query, “Who is this Lobachevsky, and what exceptional scientific achievements are credited to him?” Kazan University’s history confirms the subscription, monument and prize initiative for Lobachevsky’s centenary but does not reproduce this wording. Unless confirmed, it should be identified as a later retelling or printed without quotation marks.",
+        "ru": "Проверить документальный источник запроса Министерства народного просвещения «Кто таков Лобачевский и какие такие исключительные научные заслуги за ним числятся?». История КФУ подтверждает инициативу подписки, памятника и премии к столетию Лобачевского, но не приводит эту фразу; до подтверждения её следует обозначить как поздний пересказ либо убрать кавычки."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
