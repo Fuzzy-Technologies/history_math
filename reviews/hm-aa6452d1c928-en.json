@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-aa6452d1c928-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the positions in Reichenau and Jena and the distinction between a chair of philosophy and an academic degree; verify the account of graduation from Göttingen.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the positions in Reichenau and Jena and the distinction between a chair of philosophy and an academic degree; verify the account of graduation from Göttingen.",
+        "ru": "Уточнить характер должностей в Райхенау и Йене и различие между кафедрой философии и учёной степенью; сверить сведения об окончании Гёттингенского университета."
+      },
+      "resolution": "The account now follows MacTutor and Deutsche Biographie: study at Göttingen, a doctorate at Jena in 1799, and teaching posts in Reichenau, Aarau and Jena. https://mathshistory.st-andrews.ac.uk/Biographies/Bartels/ ; https://www.deutsche-biographie.de/gnd116062665.html"
+    },
+    {
+      "id": "q2",
+      "question": "Clarify the wording of Rumovsky’s trusteeship and the precise chronology of Bartels’s invitation; compare with the journal’s published biography of Rumovsky.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the wording of Rumovsky’s trusteeship and the precise chronology of Bartels’s invitation; compare with the journal’s published biography of Rumovsky.",
+        "ru": "Уточнить формулировку о попечительстве Румовского и точную хронологию приглашения Бартельса; сопоставить с опубликованной биографией Румовского в журнале."
+      },
+      "resolution": "The founding of Kazan University, Rumovsky’s invitation in 1807 and Bartels’s arrival in 1808 now follow the MacTutor biography. https://mathshistory.st-andrews.ac.uk/Biographies/Bartels/"
+    },
+    {
+      "id": "q3",
+      "question": "Confirm the original source of the portrait and the basis for reproduction.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Confirm the original source of the portrait and the basis for reproduction.",
+        "ru": "Подтвердить первоисточник портрета и основание его воспроизведения."
+      },
+      "resolution": "This was a general request to recheck the archival portrait. The source attribution is retained and the note identifies no specific discrepancy."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-07",
+    "package_sha256": "db3d0afee2926d9b7748b9ed472d2a72763e0031caaa64ae3d6869c3df3e58cd",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/361#pullrequestreview-5810008349",
+    "source_commit": "a550f0f9685c45d3806a83ba1c0ae20faa0472b7",
+    "source_review_id": 5810008349,
+    "approved_at": "2026-11-07T04:12:19Z"
+  }
+}
