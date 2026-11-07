@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f8243aa3fd71-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Check the anniversary of *Arithmetic*: for the 1703 first edition, the 2023 article marks 320 years.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Check the anniversary of *Arithmetic*: for the 1703 first edition, the 2023 article marks 320 years.",
+        "ru": "Сверить юбилейную дату «Арифметики»: для первого издания 1703 года материал 2023 года отмечает 320-летие."
+      },
+      "resolution": "Corrected 220 years to 320 years in both editions."
+    },
+    {
+      "id": "q2",
+      "question": "Clarify biographical traditions about Magnitsky’s surname and education, and the claim about mathematical terminology.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify biographical traditions about Magnitsky’s surname and education, and the claim about mathematical terminology.",
+        "ru": "Уточнить биографические предания о фамилии и обучении Магницкого, а также формулировку о математической терминологии."
+      },
+      "resolution": "Disputed details are identified as biographical tradition or as disputed; the absolute priority claim was replaced by a verifiable statement about usage and establishment in *Arithmetic*."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
