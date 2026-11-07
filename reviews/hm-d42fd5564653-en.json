@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d42fd5564653-en",
+  "questions": [
+    {
+      "id": "q2",
+      "question": "Clarify the relationship between the modern Horner scheme and the 1819 paper. A. Thomas Fuller’s *Horner versus Holdred* examines Holdred’s earlier publication and De Morgan’s role in establishing the name; MacTutor distinguishes Horner’s 1819 and 1830 papers.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the relationship between the modern Horner scheme and the 1819 paper. A. Thomas Fuller’s *Horner versus Holdred* examines Holdred’s earlier publication and De Morgan’s role in establishing the name; MacTutor distinguishes Horner’s 1819 and 1830 papers.",
+        "ru": "Уточнить связь современной «схемы Горнера» со статьёй 1819 года. Исследование А. Томаса Фуллера *Horner versus Holdred* разбирает более раннюю публикацию Холдреда и роль Де Моргана в закреплении имени; MacTutor отдельно различает статьи Горнера 1819 и 1830 годов."
+      },
+      "resolution": "The wording was corrected from A. Thomas Fuller’s study: Horner’s 1819 paper concerned continuous approximation, Holdred published a similar method earlier, and De Morgan later helped establish Horner’s name."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-07",
+    "package_sha256": "cd9b7383875e251685b7380876e2c353d2baaede2c458aae87c4f6d2b2305193",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/453#pullrequestreview-5815211141",
+    "source_commit": "897d775c9ece730eefd7c2ed20cf27d5940e9c46",
+    "source_review_id": 5815211141,
+    "approved_at": "2026-11-07T22:04:30Z"
+  }
+}
