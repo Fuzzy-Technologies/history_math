@@ -1,0 +1,25 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8f0f08328276",
+  "questions": [
+    {
+      "id": "faculty-title",
+      "question": "Проверить название должности и подразделения: в посте Клейн назван «деканом математического факультета», а официальный архивный инвентарь Гёттингена фиксирует его избрание деканом Philosophische Fakultät. Источник: https://www.sub.uni-goettingen.de/fileadmin/media/texte/spezialsammlungen/Spezialinventar_Naturwissenschaften_2001.pdf , запись «Wahl von Felix Klein zum Dekan der Philosophischen Fakultät». Предлагается согласовать исторически точное обозначение в RU/EN; исходный вариант пока сохранён.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "missing-humor-cover",
+      "question": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
+        "en": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
