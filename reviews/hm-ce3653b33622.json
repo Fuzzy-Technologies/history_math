@@ -1,0 +1,16 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ce3653b33622",
+  "questions": [
+    {
+      "id": "descartes-cogito-sources-and-dates",
+      "question": "В исторической справке фраза названа впервые появившейся в «Размышлениях» 1641 года и ставшей известной благодаря более раннему труду 1637 года. Stanford Encyclopedia of Philosophy https://plato.stanford.edu/archives/sum2020/entries/self-consciousness/ различает «Je pense, donc je suis» в «Рассуждении о методе» (1637), «I am, I exist» во втором «Размышлении» (1641) и «cogito ergo sum» в «Началах философии» (1644). Согласовать точное разведение тезиса, формулировок и дат в RU/EN; исходная справка сохранена до решения редактора.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Историческая справка исправлена: разведены французская формулировка 1637 года, формула второго «Размышления» 1641 года и латинское «Cogito, ergo sum» в «Началах философии» 1644 года."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
