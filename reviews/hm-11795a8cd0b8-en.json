@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-11795a8cd0b8-en",
+  "questions": [
+    {
+      "id": "gerbert-quotation-source",
+      "question": "Please identify the page in Nancy Marie Brown’s The Abacus and the Cross for the line about a magician, a king and a mathematician. The publisher confirms the 2012 edition at https://www.hachettebookgroup.com/titles/nancy-marie-brown/the-abacus-and-the-cross/9780465031443/, but the exact line has not yet been checked against the book. Please agree a source or a note describing it as a joke.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please identify the page in Nancy Marie Brown’s The Abacus and the Cross for the line about a magician, a king and a mathematician. The publisher confirms the 2012 edition at https://www.hachettebookgroup.com/titles/nancy-marie-brown/the-abacus-and-the-cross/9780465031443/, but the exact line has not yet been checked against the book. Please agree a source or a note describing it as a joke.",
+        "ru": "Уточнить страницу в книге Nancy Marie Brown «The Abacus and the Cross» для фразы о маге, короле и математике. Издатель подтверждает издание 2012 года по ссылке https://www.hachettebookgroup.com/titles/nancy-marie-brown/the-abacus-and-the-cross/9780465031443/, но точная реплика пока не сверена с текстом книги. Согласовать источник либо помету о характере шутки."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
