@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f3b1c1198aaa-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify “Knowledge is power”: the Latin formulation occurs in Francis Bacon’s Meditationes sacrae, De haeresibus (1597); primary text in Works, vol. VII, p. 241 (PDF page 245): https://proyectoscio.ucv.es/wp-content/uploads/2015/06/Bacon-Works7.pdf . Approve removing or rephrasing its attribution to Roger in both languages, then review the corresponding tag.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify “Knowledge is power”: the Latin formulation occurs in Francis Bacon’s Meditationes sacrae, De haeresibus (1597); primary text in Works, vol. VII, p. 241 (PDF page 245): https://proyectoscio.ucv.es/wp-content/uploads/2015/06/Bacon-Works7.pdf . Approve removing or rephrasing its attribution to Roger in both languages, then review the corresponding tag.",
+        "ru": "Проверить атрибуцию «Знание — сила»: латинская формула есть у Фрэнсиса Бэкона в Meditationes sacrae, De haeresibus (1597); первичный текст в Works, т. VII, с. 241 (страница PDF 245): https://proyectoscio.ucv.es/wp-content/uploads/2015/06/Bacon-Works7.pdf . Согласовать удаление или переформулировку атрибуции Роджеру в RU/EN, затем проверить соответствующий тег."
+      },
+      "resolution": "The attribution to Roger Bacon and the corresponding tag were removed. The Latin formula is documented in Francis Bacon’s Meditationes sacrae (1597), Works, vol. VII, p. 241 (PDF p. 245): https://proyectoscio.ucv.es/wp-content/uploads/2015/06/Bacon-Works7.pdf"
+    },
+    {
+      "id": "q2",
+      "question": "Verify the precision of the 1214 birth year, academic degrees and professorial appointment, and the account of twelve years’ imprisonment from 1278. Establish original sources and approve translations for the quotations in Notes.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the precision of the 1214 birth year, academic degrees and professorial appointment, and the account of twelve years’ imprisonment from 1278. Establish original sources and approve translations for the quotations in Notes.",
+        "ru": "Сверить точность года рождения 1214, учёных степеней и профессорской должности, а также рассказ о двенадцатилетнем заключении с 1278 года. Согласовать первоисточники и переводы цитат в примечаниях."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Verify the priority claims about first opposing scholasticism and first describing gunpowder manufacture in Europe in 1242, and the references to spectacles and eclipse observations.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the priority claims about first opposing scholasticism and first describing gunpowder manufacture in Europe in 1242, and the references to spectacles and eclipse observations.",
+        "ru": "Сверить приоритетные утверждения «первым выступил против схоластики» и «первым европейцем подробно описал изготовление пороха (1242)», а также сведения об очках и наблюдении затмения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
