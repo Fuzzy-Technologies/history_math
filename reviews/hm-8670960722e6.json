@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8670960722e6",
+  "questions": [
+    {
+      "id": "carrot-cylinder-cone-section",
+      "question": "В указанном анекдоте Федина и на иллюстрации речь идёт о сечении цилиндра, а поясняющий абзац представляет морковь как конус и говорит, что при изменении угла получаются другие конические сечения. Решить, нужно ли согласовать геометрию с источником: косое сечение кругового цилиндра даёт эллипс, а для сечений конуса требуется уточнять положение плоскости относительно конуса.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "В указанном анекдоте Федина и на иллюстрации речь идёт о сечении цилиндра, а поясняющий абзац представляет морковь как конус и говорит, что при изменении угла получаются другие конические сечения. Решить, нужно ли согласовать геометрию с источником: косое сечение кругового цилиндра даёт эллипс, а для сечений конуса требуется уточнять положение плоскости относительно конуса.",
+        "en": "Fedin’s cited anecdote and the illustration concern a cylinder section, while the explanatory paragraph treats the carrot as a cone and says that changing the angle can yield other conic sections. Decide whether to align the geometry with the source: an oblique plane through a circular cylinder gives an ellipse, whereas cone sections require specifying the plane’s position relative to the cone."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
