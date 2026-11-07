@@ -1,0 +1,25 @@
+{
+  "review_version": 1,
+  "article_id": "hm-18c10d94a4cc",
+  "questions": [
+    {
+      "id": "poem-source-and-translation",
+      "question": "Для стихотворного фрагмента Бориса Долгова уточнить первое издание или страницу цитирования полного текста. Воспоминания Химического факультета СПбГУ (https://chem.spbu.ru/kniga-pamyati/hdsul6hpo1-nikolskii-aleksei-borisovich) прямо атрибутируют Долгову строфу «В глухой Елабуге…» и подтверждают контекст филиала, но не содержат весь приведённый фрагмент. EN передаёт все строки, строфы и образ реки-интеграла свободным стихом; требуется редакторская оценка поэтического звучания.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "humor-cover-image",
+      "question": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет.",
+        "en": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
