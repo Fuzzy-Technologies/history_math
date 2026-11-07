@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-28e45e7f3c7e",
+  "questions": [
+    {
+      "id": "term-interpretation",
+      "question": "Проверить приписываемое Валлису введение термина «интерпретация»: в перечне рядом с мантиссой, интерполяцией и непрерывной дробью это отдельное утверждение, а не синоним интерполяции. Оксфордский обзор подтверждает именно interpolation: https://www.maths.ox.ac.uk/system/files/attachments/John%20Wallis.pdf . Нужен конкретный источник для interpretation либо согласованная правка перечня в RU/EN. Исходное слово сохранено.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
