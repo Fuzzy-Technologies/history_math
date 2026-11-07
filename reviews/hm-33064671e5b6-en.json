@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-33064671e5b6-en",
+  "questions": [
+    {
+      "id": "first-quantifier",
+      "question": "The approved digest describes a claim about all sheep, but the post only says that black sheep live in Australia. The original line is retained without adding “all”. Please decide whether to strengthen the first statement in both versions for the logical contrast. The card description does not repeat the unsupported universal claim.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The approved digest describes a claim about all sheep, but the post only says that black sheep live in Australia. The original line is retained without adding “all”. Please decide whether to strengthen the first statement in both versions for the logical contrast. The card description does not repeat the unsupported universal claim.",
+        "ru": "Утверждённый дайджест описывает обобщение биолога обо всех овцах, но в самом посте сказано только «в Австралии обитают чёрные овцы». Сохранена именно исходная реплика, без добавления «все». Согласовать, нужно ли усилить первое утверждение в обеих версиях для логического контраста; описание карточки не повторяет отсутствующий в посте квантор."
+      },
+      "resolution": "The biologist’s line and the digest follow the original joke. Adding a universal quantifier would change the line."
+    },
+    {
+      "id": "missing-humor-cover",
+      "question": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+        "ru": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
