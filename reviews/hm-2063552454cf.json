@@ -1,0 +1,22 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2063552454cf",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "В исходнике год смерти Бэра расходился между заголовком (1932) и вступлением (1935).",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Год смерти унифицирован как 1932 по справочнику CTHS и материалам Университета Бургундии: https://cths.fr/an/prosopographie_liste.php?page=29&sc= ; https://math.ube.fr/wp-content/uploads/2025/06/PDF-Baire-SMF_.pdf ."
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить историческую формулировку о возникновении теории функций, топологии и функционального анализа в начале XX века; согласовать английское название русского издания работы о разрывных функциях.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
