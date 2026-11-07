@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8520e349ed6f-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Identify the institution referred to as reorganized in 1823: the preceding paragraph concerns the Main Pedagogical Institute reopened in 1829, while the following history concerns the gymnasium. Agree both editions after checking institutional history.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Identify the institution referred to as reorganized in 1823: the preceding paragraph concerns the Main Pedagogical Institute reopened in 1829, while the following history concerns the gymnasium. Agree both editions after checking institutional history.",
+        "ru": "Уточнить, какое учреждение имеется в виду в абзаце «С преобразованием его в 1823 году»: предыдущий абзац относится к возобновлённому в 1829 году Главному педагогическому институту, тогда как далее речь о гимназии. Согласовать RU/EN после проверки истории учреждений."
+      },
+      "resolution": "The St Petersburg Central State Historical Archive confirms that the Teacher Training Institute was combined with a gymnasium in 1823 and that the name Third St Petersburg Gymnasium was adopted in 1830."
+    },
+    {
+      "id": "q2",
+      "question": "Verify the scope of the priority claim for Busse’s model curriculum: the article calls it the first model mathematics curriculum. Clarify whether this means the first common curriculum for all Russian gymnasiums.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the scope of the priority claim for Busse’s model curriculum: the article calls it the first model mathematics curriculum. Clarify whether this means the first common curriculum for all Russian gymnasiums.",
+        "ru": "Проверить рамки приоритета первой примерной программы Буссе: в статье она названа первой примерной программой по математике. Уточнить, имеется ли в виду первая общая программа для всех российских гимназий."
+      },
+      "resolution": "The absolute priority claim was removed: both editions now say that Busse drew up a model mathematics curriculum, without calling it the first."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
