@@ -1,0 +1,22 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2a80036b1d7a",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить рамки утверждения о первой в мире женщине-профессоре математики, формы обучения в Гейдельберге и Берлине и историческое название стокгольмского учреждения.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Уточнено: в Гейдельберге Ковалевская неофициально посещала лекции с разрешения преподавателей, в Берлине занималась частным образом у Вейерштрасса; историческое учреждение названо Стокгольмской высшей школой. Утверждение о первой в мире женщине-профессоре математики подтверждено Стокгольмским университетом: https://www.su.se/english/about-the-university/cultural-heritage-and-history/the-history-of-stockholm-university/sonya-kovalevsky---swedens-first-female-professor ; формы обучения подтверждены Гейдельбергским университетом: https://www.uni-heidelberg.de/en/node/7586/sofya-kovalevskaya-the-worlds-first-female-professor-of-mathematics"
+    },
+    {
+      "id": "q2",
+      "question": "Сверить даты написания и публикации литературных произведений и принятые английские названия, особенно «Нигилистки» и «Борьбы за счастье»; подтвердить источник эпизода об уходе за ранеными коммунарами в Париже.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
