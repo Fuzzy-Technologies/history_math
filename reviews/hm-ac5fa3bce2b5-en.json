@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ac5fa3bce2b5-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Approve the early appointment dates: the source gives professorship and Royal Society fellowship in 1841, but the Society’s election certificate is dated 25 April 1839 and already calls him a UCL professor, https://catalogues.royalsociety.org/CalmView/Record.aspx?id=EC%2F1839%2F24&src=CalmView.Catalog . The source gives Virginia tenure as 1841–1843, whereas the university library dates his departure to March 1842, https://explore.lib.virginia.edu/exhibits/show/seek/jefferson .",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Approve the early appointment dates: the source gives professorship and Royal Society fellowship in 1841, but the Society’s election certificate is dated 25 April 1839 and already calls him a UCL professor, https://catalogues.royalsociety.org/CalmView/Record.aspx?id=EC%2F1839%2F24&src=CalmView.Catalog . The source gives Virginia tenure as 1841–1843, whereas the university library dates his departure to March 1842, https://explore.lib.virginia.edu/exhibits/show/seek/jefferson .",
+        "ru": "Согласовать годы ранних назначений: исходник даёт профессорство и членство Royal Society в 1841, но свидетельство избрания Royal Society датировано 25 апреля 1839 и уже называет его профессором UCL: https://catalogues.royalsociety.org/CalmView/Record.aspx?id=EC%2F1839%2F24&src=CalmView.Catalog . Для Виргинского университета исходник даёт 1841–1843, библиотека университета — уход в марте 1842: https://explore.lib.virginia.edu/exhibits/show/seek/jefferson . Уточнить обе версии по этим документам."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Clarify arrival at Johns Hopkins: the source gives 1877, the university library May 1876, https://www.library.jhu.edu/news/2014/01/james-joseph-sylvester/ . Distinguish the journal’s organization from its first 1878 volume. For Oxford distinguish formal tenure from the end of active teaching: the university summary and OUP chapter give different end dates, 1897 and 1894, https://www.maths.ox.ac.uk/system/files/media/Savilian%20Professors.pdf and https://academic.oup.com/book/38840/chapter-abstract/337749115 .",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify arrival at Johns Hopkins: the source gives 1877, the university library May 1876, https://www.library.jhu.edu/news/2014/01/james-joseph-sylvester/ . Distinguish the journal’s organization from its first 1878 volume. For Oxford distinguish formal tenure from the end of active teaching: the university summary and OUP chapter give different end dates, 1897 and 1894, https://www.maths.ox.ac.uk/system/files/media/Savilian%20Professors.pdf and https://academic.oup.com/book/38840/chapter-abstract/337749115 .",
+        "ru": "Уточнить переезд в Johns Hopkins: в исходнике 1877, библиотека университета указывает прибытие в мае 1876: https://www.library.jhu.edu/news/2014/01/james-joseph-sylvester/ . Для журнала различить организацию издания и первый том 1878 года. Для Оксфорда различить формальное занятие кафедры и прекращение активного преподавания: даже университетская сводка и глава OUP дают разные конечные годы (1897 и 1894): https://www.maths.ox.ac.uk/system/files/media/Savilian%20Professors.pdf ; https://academic.oup.com/book/38840/chapter-abstract/337749115 ."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Narrow “the first Jew at Oxford” to an established academic distinction, such as the first Jew to hold an Oxbridge chair, as stated by OUP, https://academic.oup.com/book/38840/chapter-abstract/337749115 . Approve the precise wording in both languages and establish the original source of the talking-fish quotation.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Narrow “the first Jew at Oxford” to an established academic distinction, such as the first Jew to hold an Oxbridge chair, as stated by OUP, https://academic.oup.com/book/38840/chapter-abstract/337749115 . Approve the precise wording in both languages and establish the original source of the talking-fish quotation.",
+        "ru": "Сузить «первый еврей в Оксфорде» до подтверждаемого академического статуса, например «первый еврей, занявший кафедру в Оксфорде или Кембридже»: OUP формулирует first Jew to hold an Oxbridge chair, https://academic.oup.com/book/38840/chapter-abstract/337749115 . Согласовать точную формулировку RU/EN и первоисточник цитаты о говорящей рыбе."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
