@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b45adbfc54e2",
+  "questions": [
+    {
+      "id": "erdos-coffee-quotation-pages",
+      "question": "Уточнить страницы в Paul Hoffman «The Man Who Loved Only Numbers» для реплик о жизни и смерти, математике-противоядии и «кофе-теореме». Страница издателя https://www.hachettebookgroup.com/titles/paul-hoffman/the-man-who-loved-only-numbers/9780306836565/ подтверждает книгу и автора; конкретные цитаты по ней не установлены. Исходная оговорка о приписывании последней фразы другим математикам сохранена, как и обозначение шутливой легенды. Решить, требуется ли уточнить атрибуцию.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
