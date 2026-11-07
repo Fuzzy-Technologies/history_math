@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0b315578e49a",
+  "questions": [
+    {
+      "id": "eratosthenes-suda-beta-text",
+      "question": "Уточнить оформление цитаты из «Суды»: в основной английской передаче SOL напечатано “platforms” (βήματα), а примечание 2 объясняет конъектуру βῆτα («Бета»). Исходный пост цитирует вариант с Beta без этой оговорки. Редактору решить, достаточно ли указать редакционное чтение в примечании. Ссылка: https://cs.uky.edu/~raphael/sol/sol-cgi-bin/search.cgi?db=REAL&enlogin=&field=adlerhw_gr&login=&searchstr=epsilon%2C2898 .",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
