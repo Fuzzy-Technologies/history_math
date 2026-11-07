@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0114ac488785-en",
+  "questions": [
+    {
+      "id": "two-squares-historical-priority",
+      "question": "Please provide a source for “first recorded by Diophantus” and “first appeared in Europe in Liber quadratorum (1225)”, and clarify which sum-of-two-squares result is attributed to Fermat in the introduction. The post gives no bibliographic locator for these historical claims; the arithmetic and both identity forms are preserved and checked separately.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please provide a source for “first recorded by Diophantus” and “first appeared in Europe in Liber quadratorum (1225)”, and clarify which sum-of-two-squares result is attributed to Fermat in the introduction. The post gives no bibliographic locator for these historical claims; the arithmetic and both identity forms are preserved and checked separately.",
+        "ru": "Подтвердить источником исторические формулировки «впервые опубликовано Диофантом» и «в Европе впервые появилось в Liber quadratorum (1225)», а также уточнить, какой именно результат о сумме двух квадратов приписан Ферма в вводном абзаце. В посте нет библиографического локатора для этих утверждений; вычисления и обе формы тождества сохранены и проверены отдельно."
+      },
+      "resolution": "The priority claims were removed; the introduction now identifies Fermat’s theorem for primes of the form 4k+1."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
