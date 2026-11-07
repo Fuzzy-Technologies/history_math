@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-fcf38a7ce439",
+  "questions": [
+    {
+      "id": "society-pdf-link",
+      "question": "Проверить и при необходимости заменить недоступную ссылку на книгу Г. И. Синкевич: https://www.mathsoc.spb.ru/history/Sinkevich_matem_Peterb_storony.pdf . Актуальная проверка вернула 502. Пока исходная ссылка сохранена; нужен стабильный публичный URL.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}

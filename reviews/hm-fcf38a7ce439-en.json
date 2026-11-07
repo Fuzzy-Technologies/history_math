@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-fcf38a7ce439-en",
+  "questions": [
+    {
+      "id": "society-pdf-link",
+      "question": "Please check and, if necessary, replace the unavailable link to G. I. Sinkevich’s book: https://www.mathsoc.spb.ru/history/Sinkevich_matem_Peterb_storony.pdf . The current check returned 502. The original link remains for now; a stable public URL is needed.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please check and, if necessary, replace the unavailable link to G. I. Sinkevich’s book: https://www.mathsoc.spb.ru/history/Sinkevich_matem_Peterb_storony.pdf . The current check returned 502. The original link remains for now; a stable public URL is needed.",
+        "ru": "Проверить и при необходимости заменить недоступную ссылку на книгу Г. И. Синкевич: https://www.mathsoc.spb.ru/history/Sinkevich_matem_Peterb_storony.pdf . Актуальная проверка вернула 502. Пока исходная ссылка сохранена; нужен стабильный публичный URL."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
