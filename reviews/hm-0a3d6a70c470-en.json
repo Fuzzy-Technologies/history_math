@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0a3d6a70c470-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Approve the quoted subtitle “Professor of the History of Mathematics” as an informal description: the biography specifies a senior lecturer’s position, not a professorial title. The English subtitle keeps quotation marks and adds no academic degree.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Approve the quoted subtitle “Professor of the History of Mathematics” as an informal description: the biography specifies a senior lecturer’s position, not a professorial title. The English subtitle keeps quotation marks and adds no academic degree.",
+        "ru": "Согласовать подзаголовок «профессор истории математики» как неформальную характеристику: в биографии указана должность старшего преподавателя, профессорское звание не заявлено. Английский подзаголовок сохраняет кавычки и не добавляет учёную степень."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Clarify the conference count: 2004–2015 inclusive is twelve years, so the total of thirteen apparently includes the 2003 school. Explicitly distinguish that school from the twelve subsequent annual Readings in both languages.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the conference count: 2004–2015 inclusive is twelve years, so the total of thirteen apparently includes the 2003 school. Explicitly distinguish that school from the twelve subsequent annual Readings in both languages.",
+        "ru": "Уточнить счёт конференций: 2004–2015 включительно — двенадцать лет; общее число 13, вероятно, включает школу 2003 года. Предлагается явно разделить школу 2003 года и двенадцать последующих ежегодных чтений в RU/EN."
+      },
+      "resolution": "The 2003 school is distinguished from the twelve subsequent meetings, as counted in the [proceedings of the thirteenth meeting](https://kolmogorov.yspu.org/wp-content/uploads/sites/3/2016/02/kolmogor13.pdf)."
+    },
+    {
+      "id": "q3",
+      "question": "Confirm the 2003 group photograph caption and positions: Mansur Gilmullin on the left, Viktor Sadovnichy in the centre and Revekka Gushel on the right.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the 2003 group photograph caption and positions: Mansur Gilmullin on the left, Viktor Sadovnichy in the centre and Revekka Gushel on the right.",
+        "ru": "Подтвердить подпись группового снимка 2003 года и расположение участников: Мансур Гильмуллин слева, Виктор Садовничий в центре, Ревекка Гушель справа."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
