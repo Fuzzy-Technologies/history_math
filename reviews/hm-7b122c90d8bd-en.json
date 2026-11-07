@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-7b122c90d8bd-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Review the absolute claim that all scientific work was secret in light of public research and textbooks. Should it be limited to defence-related work in both versions?",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Review the absolute claim that all scientific work was secret in light of public research and textbooks. Should it be limited to defence-related work in both versions?",
+        "ru": "Уточнить абсолютное утверждение «Научная работа всегда была под грифом „секретно“» в связи с открытыми научными и учебными публикациями. Требуется ли ограничить его работами, связанными с обороной, в обеих версиях?"
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Establish the original sources of the Sakharov, Landau and Kurchatov quotations and identify the scientific societies and honorary distinctions. Retain the explicit hearsay qualifications in the pump and degree stories.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Establish the original sources of the Sakharov, Landau and Kurchatov quotations and identify the scientific societies and honorary distinctions. Retain the explicit hearsay qualifications in the pump and degree stories.",
+        "ru": "Найти первоисточники цитат Сахарова, Ландау и Курчатова, конкретизировать научные общества и почётные звания. Сохранить оговорки «говорят» и «рассказывают» у историй о насосе и защите без диплома."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Verify which edition received USSR Ministry of Education approval and substantiate the reference to severe criticism by mathematicians; review the English renderings of the Russian book titles.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify which edition received USSR Ministry of Education approval and substantiate the reference to severe criticism by mathematicians; review the English renderings of the Russian book titles.",
+        "ru": "Сверить, к какому именно изданию относится допуск Министерства просвещения СССР, и указание на жёсткую критику учебника математиками; согласовать названия русских книг в EN."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
