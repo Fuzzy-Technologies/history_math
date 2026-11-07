@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-64ece7f5ce45",
+  "questions": [
+    {
+      "id": "gauss-kutzler-story-locator",
+      "question": "Уточнить страницу байки о Девятой симфонии в сборнике B. Kutzler, Mathematikerwitze & Mathematikwitze (2005). Доступный двухстраничный фрагмент — предисловие, датированное маем 2005 года; самой истории в нём нет. Авторская оговорка об отсутствии раннего надёжного источника сохранена в обеих версиях.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
