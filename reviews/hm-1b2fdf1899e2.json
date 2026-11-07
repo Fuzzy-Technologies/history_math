@@ -1,0 +1,21 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1b2fdf1899e2",
+  "questions": [
+    {
+      "id": "zu-death-date",
+      "question": "Сохранён исходный год смерти 500. В биографии MacTutor https://mathshistory.st-andrews.ac.uk/Biographies/Zu_Chongzhi/ указан 501, тогда как размещённая там статья Biographical Encyclopedia of Astronomers https://mathshistory.st-andrews.ac.uk/BEA/zu_chongzhi_bea.pdf даёт 500. Редактору выбрать принятую датировку; расхождение не исправлялось автоматически.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "zu-petition-quotation",
+      "question": "Уточнить перевод и оформление цитаты из «Нань Ци шу», цзюань 52. В https://zh.wikisource.org/zh-hant/%E5%8D%97%E9%BD%8A%E6%9B%B8/%E5%8D%B752 фразы о личных измерениях и создании нового календаря находятся в разных частях прошения; русский исходник соединяет их тире. Нужны ли обозначение пропуска и указание переводчика для обеих версий? Исходная русская формулировка сохранена.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
