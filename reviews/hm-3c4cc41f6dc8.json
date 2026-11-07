@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-3c4cc41f6dc8",
+  "questions": [
+    {
+      "id": "kondratyev-unconfirmed-identification",
+      "question": "В источнике Федина № 43 указана только фамилия Кондратьев, без имени и вуза. Связь с Владимиром Александровичем Кондратьевым не доказана; решить, оставить ли предположительную идентификацию в обеих версиях примечания.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "В источнике Федина № 43 указана только фамилия Кондратьев, без имени и вуза. Связь с Владимиром Александровичем Кондратьевым не доказана; решить, оставить ли предположительную идентификацию в обеих версиях примечания.",
+        "en": "Fedin’s no. 43 gives only the surname Kondratyev, without a first name or university. The connection with Vladimir Aleksandrovich Kondratyev is unproved; decide whether to retain or omit this speculative identification in both versions."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
