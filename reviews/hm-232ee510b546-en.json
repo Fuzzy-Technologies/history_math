@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-232ee510b546-en",
+  "questions": [
+    {
+      "id": "voytyakhovsky-maidens-rule",
+      "question": "Correct the explanation of the “maiden’s” or “blind” rule. It was not general advice to begin without a plan: I. Ya. Depman treats it as a distinct historical rule for indeterminate distribution problems (History of Arithmetic, 1965, pp. 323–325), while the names regula virginum and “blind rule” derive from the people named in such problems. Please check the exact procedure against a historical source and replace the current three-paragraph explanation consistently in both editions.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Correct the explanation of the “maiden’s” or “blind” rule. It was not general advice to begin without a plan: I. Ya. Depman treats it as a distinct historical rule for indeterminate distribution problems (History of Arithmetic, 1965, pp. 323–325), while the names regula virginum and “blind rule” derive from the people named in such problems. Please check the exact procedure against a historical source and replace the current three-paragraph explanation consistently in both editions.",
+        "ru": "Исправить объяснение «девичьего» / «слепого» правила. Это не общий совет начать действовать без плана: И. Я. Депман разбирает его как отдельное историческое правило решения неопределённых задач на распределение («История арифметики», 1965, с. 323–325), а названия regula virginum и «слепое правило» связаны с персонажами таких задач. Нужно сверить точный алгоритм с историческим источником и согласованно заменить нынешние три абзаца в обеих версиях."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
