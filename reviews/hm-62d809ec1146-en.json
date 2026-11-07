@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-62d809ec1146-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Supply the co-authors and publication details of Electricity in Living Organisms so the edition is unambiguous. Mathematics with a Human Face is retained as an essay, not invented as a separate monograph; the publisher’s Gelfand memorial volume includes Glagoleva’s text under that title.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Supply the co-authors and publication details of Electricity in Living Organisms so the edition is unambiguous. Mathematics with a Human Face is retained as an essay, not invented as a separate monograph; the publisher’s Gelfand memorial volume includes Glagoleva’s text under that title.",
+        "ru": "Уточнить соавторов и выходные данные книги «Электричество в живых организмах», чтобы однозначно установить издание. «Математика с человеческим лицом» сохранена как текст/очерк, а не выдуманная отдельная монография: такой текст Глаголевой имеется в издательском сборнике воспоминаний о Гельфанде."
+      },
+      "resolution": "The Math.ru scan confirms M. B. Berkinblit and E. G. Glagoleva, Electricity in Living Organisms (Moscow: Nauka, 1988), Kvant Library no. 69."
+    },
+    {
+      "id": "q2",
+      "question": "Verify the exact name and institutional relationship of the successor named in the post, the Open Lyceum All-Russian Correspondence Multidisciplinary School. The linked memoir dates from 2016, so today needs a clear historical reference. Preserve the historical detail and original date unless the editor approves an update.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the exact name and institutional relationship of the successor named in the post, the Open Lyceum All-Russian Correspondence Multidisciplinary School. The linked memoir dates from 2016, so today needs a clear historical reference. Preserve the historical detail and original date unless the editor approves an update.",
+        "ru": "Проверить точное название и институциональную связь названного в посте преемника ВЗМШ — Открытого лицея «Всероссийская заочная многопредметная школа». В примечании дано воспоминание 2016 года; при сохранении слова «сегодня» нужна точная привязка к описываемому периоду. Исторические детали и исходную дату не заменять текущими без редакторского решения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
