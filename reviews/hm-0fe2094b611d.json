@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0fe2094b611d",
+  "questions": [
+    {
+      "id": "khwarizmi-anecdote-source",
+      "question": "Уточнить источник легенды о жене и пропущенном обеде: в посте приведены два названия O’Connor и Robertson, но без страниц и ссылок. Подтверждённая университетская статья https://mathshistory.st-andrews.ac.uk/HistTopics/Arabic_mathematics/ объясняет вклад аль-Хорезми, однако привязка анекдота к указанным работам не установлена. Согласовать источник или редакторскую помету о характере шутки; легенда и исходная библиография сохранены.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
