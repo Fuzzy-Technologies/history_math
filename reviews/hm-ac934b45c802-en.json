@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ac934b45c802-en",
+  "questions": [
+    {
+      "id": "rachinsky-common-count-division",
+      "question": "Please clarify two steps. The sum 1/500+1/1500+1/3500=31/10500 is not itself 3, 100 versts: it must be multiplied by the common numerical count N. Thus N·31/10500=3100 and N=3100÷(31/10500)=1050000. The source instead writes 3100÷10500/31=1050000 without the necessary grouping. Please agree a correction; the source operators and correct final distances remain in the draft.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please clarify two steps. The sum 1/500+1/1500+1/3500=31/10500 is not itself 3, 100 versts: it must be multiplied by the common numerical count N. Thus N·31/10500=3100 and N=3100÷(31/10500)=1050000. The source instead writes 3100÷10500/31=1050000 without the necessary grouping. Please agree a correction; the source operators and correct final distances remain in the draft.",
+        "ru": "Уточнить два шага решения в обеих версиях. Сумма 1/500+1/1500+1/3500=31/10500 сама по себе не равна 3100 вёрстам: на неё умножается общий числовой счёт N. Должно быть N·31/10500=3100 и N=3100:(31/10500)=1050000. В источнике записано «3100 : 10500 / 31 = 1050000» без нужных скобок. Согласовать исправление; исходные операторы и все правильные конечные расстояния 2100, 700, 300 сохранены в Draft."
+      },
+      "resolution": "The derivation now defines the common count N, states N·31/10500=3100 and computes N=3100÷(31/10500)=1,050,000 before deriving the three distances."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
