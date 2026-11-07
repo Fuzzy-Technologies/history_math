@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-24804e35194d-en",
+  "questions": [
+    {
+      "id": "vine-uniform-winding",
+      "question": "Please clarify the geometric assumption in both versions. The length 29 chi follows if the unrolled vine is straight: a uniform helix, or the shortest path with seven turns. The number of turns alone does not determine the pitch or exclude a longer curve. Should “uniformly” be added? The source condition and hint are retained.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please clarify the geometric assumption in both versions. The length 29 chi follows if the unrolled vine is straight: a uniform helix, or the shortest path with seven turns. The number of turns alone does not determine the pitch or exclude a longer curve. Should “uniformly” be added? The source condition and hint are retained.",
+        "ru": "Уточнить геометрическое условие в обеих версиях: длина 29 чи получается, если развёртка лианы — прямая (равномерная винтовая линия, либо кратчайшая линия с семью витками). Само число витков на цилиндре не задаёт шаг и не исключает более длинную кривую. Добавить «равномерными витками»? Исходное условие и авторское указание сохранены."
+      },
+      "resolution": "The condition now says the vine winds uniformly, so the straight unrolling and the length 29 chi are justified."
+    },
+    {
+      "id": "nine-chapters-proofs",
+      "question": "Please clarify whether “the book has no proofs, diagrams or methodological explanations” refers only to the early core text, rather than editions containing Liu Hui’s commentary and later additions. MacTutor’s history of the Nine Chapters discusses justification and commentaries separately. The source wording is retained; an editorial formulation should avoid applying the claim to every edition.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please clarify whether “the book has no proofs, diagrams or methodological explanations” refers only to the early core text, rather than editions containing Liu Hui’s commentary and later additions. MacTutor’s history of the Nine Chapters discusses justification and commentaries separately. The source wording is retained; an editorial formulation should avoid applying the claim to every edition.",
+        "ru": "Уточнить границы фразы «В книге нет доказательств, чертежей и каких-либо методических разъяснений»: относится ли она только к раннему основному тексту, а не к изданиям с комментариями Лю Хуэя и позднейшими дополнениями? Авторский обзор MacTutor (https://mathshistory.st-andrews.ac.uk/HistTopics/Nine_chapters/) отдельно обсуждает доказательные рассуждения и комментарии. В обеих версиях сохранён исходник; нужна редакторская формулировка без обобщения на все редакции."
+      },
+      "resolution": "The statement is now limited to the early core text, distinct from Liu Hui’s commentary."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
