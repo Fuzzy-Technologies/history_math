@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ce9eca7757d0",
+  "questions": [
+    {
+      "id": "missing-humor-cover",
+      "question": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
+        "en": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
