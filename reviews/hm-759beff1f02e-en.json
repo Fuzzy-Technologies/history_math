@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-759beff1f02e-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the family’s move to Moscow: the post gives 1926, while Math-Net.Ru’s biography gives 1925, https://www.mathnet.ru/rus/person11314 . Approve the year in both versions. The record confirms Isaak’s 1965 doctorate; it is not confused with his brother Akiva’s degree.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the family’s move to Moscow: the post gives 1926, while Math-Net.Ru’s biography gives 1925, https://www.mathnet.ru/rus/person11314 . Approve the year in both versions. The record confirms Isaak’s 1965 doctorate; it is not confused with his brother Akiva’s degree.",
+        "ru": "Уточнить переезд семьи в Москву: в посте 1926, в личной биографии Math-Net.Ru — 1925: https://www.mathnet.ru/rus/person11314 . Согласовать год в RU/EN. Докторская степень 1965 на этой странице подтверждена и с братом Акивой не смешивается."
+      },
+      "resolution": "The move was corrected to 1925 from Isaak Yaglom’s personal biography in Math-Net.Ru."
+    },
+    {
+      "id": "q2",
+      "question": "Check the author’s Yaroslavl University biography link, https://www.uniyar.ac.ru/yargu/persony/?ELEMENT_ID=58779 . The web tool could not access it after a retry more than five minutes later. The original URL is retained without an invented replacement.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Check the author’s Yaroslavl University biography link, https://www.uniyar.ac.ru/yargu/persony/?ELEMENT_ID=58779 . The web tool could not access it after a retry more than five minutes later. The original URL is retained without an invented replacement.",
+        "ru": "Проверить актуальность авторской ссылки на биографию ЯрГУ: https://www.uniyar.ac.ru/yargu/persony/?ELEMENT_ID=58779 . Повтор после пятиминутной паузы также не дал странице открыться веб-инструментом; URL сохранён без выдуманной замены."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
