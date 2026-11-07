@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-e038ac60f8b1-en",
+  "questions": [
+    {
+      "id": "roman-inheritance-probability",
+      "question": "Please clarify the third interpretation. “Two equally probable events” does not follow from the birth of twins. Splitting the estate equally can be an independent rule for interpreting the will, but a probability does not establish that rule. Please agree an explanation in both versions while retaining the author’s calculation, 2: 3: 1.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please clarify the third interpretation. “Two equally probable events” does not follow from the birth of twins. Splitting the estate equally can be an independent rule for interpreting the will, but a probability does not establish that rule. Please agree an explanation in both versions while retaining the author’s calculation, 2: 3: 1.",
+        "ru": "Уточнить обоснование третьего варианта: «случились два равновероятных события» не следует из условия о рождении близнецов. Равное разбиение имущества может быть самостоятельным правилом толкования завещания, но вероятность такого правила не задаёт. Согласовать пояснение в обеих версиях, сохранив предложенный автором расчёт 2: 3: 1."
+      },
+      "resolution": "The third interpretation is now explicitly presented as an independent interpretive rule that treats the will’s two cases equally; the probability claim has been removed."
+    },
+    {
+      "id": "roman-julianus-source",
+      "question": "The 4:2:1 solution is confirmed by the primary text of Justinian’s Digest, D. 28.2.13, where it appears under Julianus; his own Digesta comprised 90 books. Please verify only the story that the mother proposed the second interpretation and the court accepted it: that episode is absent from D. 28.2.13.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The 4:2:1 solution is confirmed by the primary text of Justinian’s Digest, D. 28.2.13, where it appears under Julianus; his own Digesta comprised 90 books. Please verify only the story that the mother proposed the second interpretation and the court accepted it: that episode is absent from D. 28.2.13.",
+        "ru": "Решение 4 : 2 : 1 подтверждено первичным фрагментом Дигест Юстиниана D. 28.2.13, где оно приведено от имени Юлиана; его собственные Digesta состояли из 90 книг. Проверить источник только рассказа о том, что мать предложила второй вариант и суд с ней согласился: в D. 28.2.13 этого эпизода нет."
+      },
+      "resolution": "The unsupported story about the mother’s proposal and the court’s decision has been removed; the attribution of the 4:2:1 solution to Julianus, confirmed by D. 28.2.13, remains."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
