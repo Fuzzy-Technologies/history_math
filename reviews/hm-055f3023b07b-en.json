@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-055f3023b07b-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the second arrest year: the post gives 1903, whereas the reproduced personnel form appears to read 1902. Confirm the handwriting and approve consistent wording in both languages; text and scans remain unchanged pending that decision.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the second arrest year: the post gives 1903, whereas the reproduced personnel form appears to read 1902. Confirm the handwriting and approve consistent wording in both languages; text and scans remain unchanged pending that decision.",
+        "ru": "Сверить второй год ареста: в тексте 1903, а на публикуемом личном листке дата читается как 1902. Подтвердить чтение рукописи и согласовать обе версии; текст и сканы пока сохранены без фактического исправления."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Confirm the public link and catalogue details for the RAS personal file: https://www.ras.ru/namorozovarchive/7_actview.aspx?id=4406 .",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Confirm the public link and catalogue details for the RAS personal file: https://www.ras.ru/namorozovarchive/7_actview.aspx?id=4406 .",
+        "ru": "Подтвердить публичную ссылку и реквизиты личного дела РАН: https://www.ras.ru/namorozovarchive/7_actview.aspx?id=4406 ."
+      },
+      "resolution": "Checked on 7 November 2026: the public RAS page is available at the cited address and identifies file no. 139, “Nikolai Alexandrovich Morozov. Vatslav Romualdovich Mrochek. Personal-file materials”, in inventory 05, with images of 37 pages."
+    },
+    {
+      "id": "q3",
+      "question": "Clarify the historical status and full name of the University of the History of Science and Technology and review the English institution and publication titles. Do not infer modern university status from the name alone.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify the historical status and full name of the University of the History of Science and Technology and review the English institution and publication titles. Do not infer modern university status from the name alone.",
+        "ru": "Уточнить исторический статус и полное название «университета Истории науки и техники» и согласовать английские переводы учреждений и названий работ. Не приписывать этому названию современный статус университета без проверки."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
