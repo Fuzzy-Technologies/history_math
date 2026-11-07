@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8c8628590db9-en",
+  "questions": [
+    {
+      "id": "parallel-rovno-translation",
+      "question": "Review the English adaptation of rovno: the dialogue retains the Russian word, with its meanings exactly and evenly/straight explained immediately after the punchline. This keeps the original plot without inventing an English homophone. Review its naturalness; the image lettering is conveyed in the English alt.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Review the English adaptation of rovno: the dialogue retains the Russian word, with its meanings exactly and evenly/straight explained immediately after the punchline. This keeps the original plot without inventing an English homophone. Review its naturalness; the image lettering is conveyed in the English alt.",
+        "ru": "Проверить английскую адаптацию игры «ровно»: в репликах сохранено русское rovno, а сразу после развязки объяснены значения exactly и evenly/straight. Это сохраняет исходный сюжет без выдуманного английского омофона. Редактору оценить естественность такого варианта; надписи рисунка переданы в EN alt."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
