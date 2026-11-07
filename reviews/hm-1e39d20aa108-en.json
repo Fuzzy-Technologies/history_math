@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1e39d20aa108-en",
+  "questions": [
+    {
+      "id": "porridge-equal-servings",
+      "question": "Should equal servings be stated in the problem itself? The source condition does not specify serving sizes; the solution begins by assuming all three ate the same amount. Without that assumption, the payment split is not determined. The description states it explicitly; the complete source remains.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Should equal servings be stated in the problem itself? The source condition does not specify serving sizes; the solution begins by assuming all three ate the same amount. Without that assumption, the payment split is not determined. The description states it explicitly; the complete source remains.",
+        "ru": "Перенести ли допущение о равных порциях в само условие? В исходной формулировке размер порций не указан, а решение начинается «Считаем, что все они съели одинаковое количество каши». Без этого допущения делёж не определяется однозначно. Оно явно отражено в дайджесте; полный авторский текст сохранён."
+      },
+      "resolution": "The equal-servings assumption is now stated immediately after the quoted source condition, before the reader is asked to find the split."
+    },
+    {
+      "id": "ignatyev-hard-sign-note",
+      "question": "Please check the entire hard-sign explanation. The example полуъ places Ъ after a vowel; the rule about every consonant-ending word needs qualifications for й and ь. Ignoring word-final Ъ must not be extended to its internal separating use. The historical account, 5% figure and claim of literally thinner books need a source or clarification. Please agree edits in both versions; the whole source comment remains.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please check the entire hard-sign explanation. The example полуъ places Ъ after a vowel; the rule about every consonant-ending word needs qualifications for й and ь. Ignoring word-final Ъ must not be extended to its internal separating use. The historical account, 5% figure and claim of literally thinner books need a source or clarification. Please agree edits in both versions; the whole source comment remains.",
+        "ru": "Проверить пояснение о Ъ целиком. В примере «на полуъ» знак поставлен после гласной; правило «в конце всех слов, заканчивающихся на согласную» требует оговорок о й и ь. Совет игнорировать твёрдые знаки нельзя переносить на разделительный Ъ внутри слова. Историческое объяснение функции буквы, оценка 5% и фраза о буквально «потоневших» книгах нуждаются в источнике или уточнении. Согласовать исправление обеих версий; авторский комментарий пока сохранён полностью."
+      },
+      "resolution": "The note now states the precise word-final rule, distinguishes separating Ъ, corrects the example and removes the unsupported percentage and literal claim about already printed books."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
