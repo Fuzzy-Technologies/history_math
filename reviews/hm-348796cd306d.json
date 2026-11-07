@@ -1,0 +1,21 @@
+{
+  "review_version": 1,
+  "article_id": "hm-348796cd306d",
+  "questions": [
+    {
+      "id": "zeldovich-anecdote-locators",
+      "question": "Для историй о форме/содержании и «Софочке» уточнить первичный указатель: исходник ссылается на пересказы в MK и Ruwiki, во втором случае на очевидца А. А. Павельева. История насоса подтверждается воспоминаниями в сборнике 2008 года https://scilib-physics.narod.ru/Zeldovich/zeldovich.htm ; её легендарный статус сохранён.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "zeldovich-form-content-wordplay",
+      "question": "Проверить английскую передачу игры «формы» / «взять на содержание»: использовано “Forms should be such that you would want to keep them” с коротким пояснением двух русских значений. Редактору оценить, сохраняет ли эта адаптация эффект реплики.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
