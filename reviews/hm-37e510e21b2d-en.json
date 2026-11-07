@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-37e510e21b2d-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the distinction between Euler and Venn diagrams and the sources for the stated historical priorities and donated library.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify the distinction between Euler and Venn diagrams and the sources for the stated historical priorities and donated library.",
+        "ru": "Уточнить разграничение диаграмм Эйлера и Венна и источники сведений об используемых исторических приоритетах и пожертвованной библиотеке."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Verify the claim that *The Principles of Empirical or Inductive Logic* (1889) justifies inverse operations in Boolean logic; this description requires a precise source.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the claim that *The Principles of Empirical or Inductive Logic* (1889) justifies inverse operations in Boolean logic; this description requires a precise source.",
+        "ru": "Сверить утверждение, что книга The Principles of Empirical or Inductive Logic (1889) обосновывает обратные операции в булевой логике; для этого содержательного описания нужен точный источник."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "The complete club puzzle is retained without an added solution; any answer requires separate editorial preparation. No confirmed Telegram-post URL is available.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The complete club puzzle is retained without an added solution; any answer requires separate editorial preparation. No confirmed Telegram-post URL is available.",
+        "ru": "Условие клубной задачи перенесено полностью без добавленного решения; при необходимости ответ требует отдельной редакторской подготовки. Подтверждённой ссылки на Telegram-пост нет."
+      },
+      "resolution": "The puzzle is presented as a question for the reader. The article can stand with the problem as supplied."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
