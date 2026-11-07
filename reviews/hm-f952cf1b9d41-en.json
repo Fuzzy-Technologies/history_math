@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f952cf1b9d41-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Approve a clarification of the twenty-move result: a 180-degree face turn counts as one move, as stated by the proof’s authors at https://www.cube20.org/ . The English rendering correctly means the symmetric group on 48 elements, not a group of order 48; approve equally explicit Russian wording.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Approve a clarification of the twenty-move result: a 180-degree face turn counts as one move, as stated by the proof’s authors at https://www.cube20.org/ . The English rendering correctly means the symmetric group on 48 elements, not a group of order 48; approve equally explicit Russian wording.",
+        "ru": "Согласовать уточнение метрики результата о 20 ходах: поворот грани на 180° считается одним ходом. Это прямо указано авторами доказательства на https://www.cube20.org/ . В EN «симметрическая группа 48 элементов» передано как группа перестановок на 48 элементах, а не группа порядка 48; согласовать столь же однозначную RU формулировку."
+      },
+      "resolution": "The sticker positions and the move metric are explicit in both editions, following [the proof of the twenty-move bound](https://www.cube20.org/)."
+    },
+    {
+      "id": "q2",
+      "question": "The source linked the cube’s invention specifically to explaining group theory; the 1967 qualification and historical institution names also required verification.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The source linked the cube’s invention specifically to explaining group theory; the 1967 qualification and historical institution names also required verification.",
+        "ru": "В исходнике создание кубика связывалось именно с объяснением теории групп; требовалось также сверить квалификацию 1967 года и исторические названия учебных заведений."
+      },
+      "resolution": "The motivation has been corrected using MIT Lemelson Center and MoMA material: Rubik used physical models when teaching construction and design and helped students think geometrically. His 1967 architecture degree and teaching at Budapest’s Academy of Applied Arts are also confirmed: https://lemelson.mit.edu/resources/erno-rubik ; https://www.moma.org/collection/works/2908 ."
+    },
+    {
+      "id": "q3",
+      "question": "Establish sources and dates for 350 million sales, one in three puzzles and six per cent of the population, and for the first-millionaire and restaurant-table claims. These belong to the historical 2024 post and have not been updated to the present.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Establish sources and dates for 350 million sales, one in three puzzles and six per cent of the population, and for the first-millionaire and restaurant-table claims. These belong to the historical 2024 post and have not been updated to the present.",
+        "ru": "Нужны источники и временные рамки чисел «350 миллионов», «каждая третья головоломка» и «шесть процентов», а также утверждений о первом миллионере и сервировке ресторанных столов. Это сведения исторического поста 2024 года, они не обновлялись до текущего времени."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
