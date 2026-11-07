@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-251b20bebde7-en",
+  "questions": [
+    {
+      "id": "varignon-self-intersecting-area",
+      "question": "Please qualify the area statements for self-intersecting quadrilaterals and generalised parallelograms. For the bow-tie with vertices (0, 0), (2, 2), (0, 2), (2, 0), the two lobes have total area 2, while the midpoint figure is degenerate with area 0. The half-area formula cannot use the sum of the lobe areas here; please specify signed area and degeneracy, or restrict the class of quadrilaterals.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please qualify the area statements for self-intersecting quadrilaterals and generalised parallelograms. For the bow-tie with vertices (0, 0), (2, 2), (0, 2), (2, 0), the two lobes have total area 2, while the midpoint figure is degenerate with area 0. The half-area formula cannot use the sum of the lobe areas here; please specify signed area and degeneracy, or restrict the class of quadrilaterals.",
+        "ru": "Уточнить условия утверждений о площади для самопересекающихся четырёхугольников и обобщённого параллелограмма. Например, у «бантика» с вершинами (0, 0), (2, 2), (0, 2), (2, 0) сумма площадей двух лепестков равна 2, а фигура середин сторон вырождена и имеет площадь 0. Формулу половины площади здесь нельзя применять к сумме площадей лепестков; нужны ориентированная площадь и оговорка о вырождении либо ограничение класса исходных фигур."
+      },
+      "resolution": "The unsigned-area claims are now restricted to simple (non-self-intersecting) quadrilaterals. For self-intersecting quadrilaterals, the text retains only Varignon’s general parallel-side result."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
