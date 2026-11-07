@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-483062cf20d2-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Approve the death date: the post gives 1 November 2004, while both Ukrainian encyclopedias give 2 November. Sources: https://esu.com.ua/article-35853 and the Great Ukrainian Encyclopedia entry linked in Notes. The post’s date is retained in both versions pending a decision.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Approve the death date: the post gives 1 November 2004, while both Ukrainian encyclopedias give 2 November. Sources: https://esu.com.ua/article-35853 and the Great Ukrainian Encyclopedia entry linked in Notes. The post’s date is retained in both versions pending a decision.",
+        "ru": "Согласовать дату смерти: пост даёт 1 ноября 2004, обе украинские энциклопедии — 2 ноября. Источники: https://esu.com.ua/article-35853 и указанная в примечаниях статья ВУЕ. До редакторского решения дата поста сохранена в RU/EN."
+      },
+      "resolution": "The date follows the [Vernadsky Library’s research on the personnel record](https://conference.nbuv.gov.ua/report/view/id/1464)."
+    },
+    {
+      "id": "q2",
+      "question": "Verify the degree chronology: the post gives a 1963 candidate dissertation and 1965 doctoral defence; ESU and VUE date the doctorate from 1966, while the institute’s reference book lists an earlier candidate degree. Distinguish defence, award and employment dates, and confirm the topic from records. https://esu.com.ua/article-35853 ; https://history.org.ua/LiberUA/966-02-2744-2/966-02-2744-2.pdf .",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the degree chronology: the post gives a 1963 candidate dissertation and 1965 doctoral defence; ESU and VUE date the doctorate from 1966, while the institute’s reference book lists an earlier candidate degree. Distinguish defence, award and employment dates, and confirm the topic from records. https://esu.com.ua/article-35853 ; https://history.org.ua/LiberUA/966-02-2744-2/966-02-2744-2.pdf .",
+        "ru": "Уточнить хронологию учёных степеней: в посте кандидатская 1963 и докторская защита 1965; ЕСУ и ВУЕ указывают докторскую степень с 1966, а историко-институтский справочник содержит более раннюю кандидатскую. Развести защиту, утверждение степени и начало работы, проверить тему и даты по документам. https://esu.com.ua/article-35853 ; https://history.org.ua/LiberUA/966-02-2744-2/966-02-2744-2.pdf ."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Verify release and work with Spanish children: the post gives the 1953 amnesty and teaching in a children’s home in 1937, while other biographies distinguish release in 1954 and later classes for Spanish emigrants. These may be separate events; confirm each from primary evidence rather than merging them automatically.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify release and work with Spanish children: the post gives the 1953 amnesty and teaching in a children’s home in 1937, while other biographies distinguish release in 1954 and later classes for Spanish emigrants. These may be separate events; confirm each from primary evidence rather than merging them automatically.",
+        "ru": "Сверить обстоятельства освобождения и работу с испанскими детьми: пост даёт амнистию 1953 и преподавание в детдоме 1937, другие биографии различают освобождение в 1954 и более поздние курсы для испанских эмигрантов. Это могут быть разные события; нужен первичный источник для каждого, без их автоматического объединения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
