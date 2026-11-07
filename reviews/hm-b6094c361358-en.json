@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b6094c361358-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Check the Academy’s historical names in 1919–1927 and the chronology of the Physics and Mathematics Institute’s name and affiliation; verify the faculty of which Steklov became dean in 1904.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Check the Academy’s historical names in 1919–1927 and the chronology of the Physics and Mathematics Institute’s name and affiliation; verify the faculty of which Steklov became dean in 1904.",
+        "ru": "Сверить исторические названия Академии наук в 1919–1927 годах и хронологию названия и подчинения Физико-математического института; уточнить название факультета, деканом которого Стеклов стал в 1904 году."
+      },
+      "resolution": "The Steklov Institute biography confirms that the Russian Academy became the USSR Academy in 1925, that the institute joined it in 1925 and received Steklov’s name in 1926; it also confirms the mathematics faculty in 1904."
+    },
+    {
+      "id": "q2",
+      "question": "Verify Nikolai Saltykov’s academy membership and the preferred English term for completeness theory in the list of Steklov’s research areas.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify Nikolai Saltykov’s academy membership and the preferred English term for completeness theory in the list of Steklov’s research areas.",
+        "ru": "Уточнить академический статус Н. Н. Салтыкова и принятый английский термин для «теории замкнутости» в перечне работ Стеклова."
+      },
+      "resolution": "The text no longer generalizes the pupils’ academy status. Closure theory is used for Steklov’s théorie de fermeture, as catalogued by Math-Net.Ru."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
