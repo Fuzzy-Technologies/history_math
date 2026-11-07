@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-5e02c34df387-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the dates of the Russian translations of Serret’s textbooks against bibliographic catalogues.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the dates of the Russian translations of Serret’s textbooks against bibliographic catalogues.",
+        "ru": "Сверить по библиографическим каталогам годы русских переводов учебников Серре."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
