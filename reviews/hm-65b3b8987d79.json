@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-65b3b8987d79",
+  "questions": [
+    {
+      "id": "turing-anecdote-pages",
+      "question": "Уточнить страницы в Andrew Hodges «Alan Turing: The Enigma» для опыта с подвешенным яблоком, реплики об ошибке в программе Вселенной и записи после столкновения со столбом. Сайт автора https://www.turing.org.uk/book/ подтверждает книгу и её издания, но не эти конкретные эпизоды и цитаты. Они сохранены как авторский юмористический рассказ в RU/EN; решить, как обозначить их атрибуцию.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}

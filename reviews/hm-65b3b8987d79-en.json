@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-65b3b8987d79-en",
+  "questions": [
+    {
+      "id": "turing-anecdote-pages",
+      "question": "Please identify the pages in Andrew Hodges’s Alan Turing: The Enigma for the suspended-apple experiment, the line about a bug in the universe’s program, and the notebook entry after the lamppost collision. The author’s website https://www.turing.org.uk/book/ confirms the book and its editions, but not these specific episodes and quotations. They remain in both versions as the author’s humorous narrative; please agree their attribution.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please identify the pages in Andrew Hodges’s Alan Turing: The Enigma for the suspended-apple experiment, the line about a bug in the universe’s program, and the notebook entry after the lamppost collision. The author’s website https://www.turing.org.uk/book/ confirms the book and its editions, but not these specific episodes and quotations. They remain in both versions as the author’s humorous narrative; please agree their attribution.",
+        "ru": "Уточнить страницы в Andrew Hodges «Alan Turing: The Enigma» для опыта с подвешенным яблоком, реплики об ошибке в программе Вселенной и записи после столкновения со столбом. Сайт автора https://www.turing.org.uk/book/ подтверждает книгу и её издания, но не эти конкретные эпизоды и цитаты. Они сохранены как авторский юмористический рассказ в RU/EN; решить, как обозначить их атрибуцию."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
