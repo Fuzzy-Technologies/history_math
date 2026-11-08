@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d52c4d5c43ea",
+  "questions": [
+    {
+      "id": "bogolyubov-graduate-study-source",
+      "question": "Подтвердить первоисточником, что Николай Николаевич Боголюбов был зачислен в аспирантуру в шестнадцать лет по особому решению.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Подтвердить первоисточником, что Николай Николаевич Боголюбов был зачислен в аспирантуру в шестнадцать лет по особому решению.",
+        "en": "Confirm from a primary or authoritative source that Nikolay Nikolayevich Bogolyubov was admitted to postgraduate study at sixteen by special decision."
+      },
+      "resolution": "Справка МГУ Саров подтверждает возраст и особое решение о зачислении; ссылка добавлена в примечания."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-08",
+    "package_sha256": "71c6d8dfd750972399703459bbaf527de8478220f0efd1cd4cf2da8cc7cf0f30",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/581#pullrequestreview-5817138799",
+    "source_commit": "0df174aca5b1f10916838cefdca47ec794008171",
+    "source_review_id": 5817138799,
+    "approved_at": "2026-11-08T08:05:57Z"
+  }
+}
