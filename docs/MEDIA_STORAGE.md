@@ -194,3 +194,33 @@ The 2026-10-30 owner instruction supersedes preservation of oversized PNG bytes 
 `site/_data/image_publication.json` pins each authorized PNG-to-JPEG conversion by source hash, source size, unchanged dimensions, exact JPEG hash/size and quality. The pinned Pillow encoder uses 4:4:4 sampling and tries quality 100 first. The registry includes pending article packages; their JPEG downloads can be prepared without publishing their articles. Existing reading previews and editorial source evidence remain intact.
 
 The master workflow prepares missing JPEG bytes, checks them against the registry, uploads and publicly verifies them, and rewrites full-view/download controls to the JPEG's S3 URL and filename. Previously verified JPEG objects are reused. The retained receipt includes a complete authenticated object/version size inventory. Upload-only publication does not claim that old versions were deleted: retirement requires separate deletion rights and verification that live links have switched.
+
+## Optional reading-preview CDN
+
+The Kazakhstan Cloud CDN can use the existing Kazakhstan Object Storage bucket
+as an origin. Configure `media.history-math.org` as a separate HTTPS CDN
+resource with the bucket hostname `history-math-media-kz.storage.yandexcloud.kz`
+as its origin Host. Install a valid certificate and use the CNAME returned by
+Cloud CDN. Keep cache behavior consistent with the origin's immutable object
+headers. Origin reads of objects are public; the publication process does not
+change bucket ACLs or credentials.
+
+- [Kazakhstan CDN bucket setup](https://yandex.cloud/ru-kz/docs/cdn/quickstart/bucket)
+- [Kazakhstan CDN pricing](https://yandex.cloud/ru-kz/docs/cdn/pricing)
+
+After review and configuration, set `PREVIEW_CDN_BASE_URL` in the existing
+`history-math-storage` environment to `https://media.history-math.org`.
+When the variable is empty, WebP previews are served by Pages. The migration
+reads generated WebP previews after browser-preview optimization and PDF
+rendering. Keys use `previews/<sha256>/<filename>`. The pipeline verifies the
+origin and CDN response bytes, WebP MIME type and a warmed cache hit before
+rewriting generated URLs and pruning the Pages copies. It then checks the
+built site and exercises desktop and mobile image delivery. Original and PDF
+delivery retain their current attachment URLs. Existing cleanup does not
+delete objects in the preview namespace.
+
+Check a repeat request for a positive `Age` or an `X-Cache: HIT` response,
+and inspect the CDN cache metrics to confirm traffic is served from the edge.
+For rollback, remove `PREVIEW_CDN_BASE_URL` and redeploy. The new build
+restores local WebP copies from the repository; old CDN addresses remain
+available. Provisioning a CDN resource starts a paid monthly package.

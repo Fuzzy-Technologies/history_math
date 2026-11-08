@@ -45,9 +45,9 @@ const types = {pdf: 'application/pdf', png: 'image/png', jpg: 'image/jpeg', jpeg
 
 export function mediaObject(kind, filename, digest, bytes) {
   const extension = typeof filename === 'string' && filename.split('.').at(-1).toLowerCase();
-  if (!['pdf', 'originals'].includes(kind) || typeof filename !== 'string' ||
+  if (!['pdf', 'originals', 'previews'].includes(kind) || typeof filename !== 'string' ||
       !/^[a-z0-9][a-z0-9._-]*$/i.test(filename) || filename.includes('..') || !types[extension] ||
-      (kind === 'pdf') !== (extension === 'pdf') || !/^[a-f0-9]{64}$/.test(digest) ||
+      (kind === 'pdf') !== (extension === 'pdf') || (kind === 'previews' && extension !== 'webp') || !/^[a-f0-9]{64}$/.test(digest) ||
       !Number.isSafeInteger(bytes) || bytes <= 0) throw new Error('Invalid media identity');
   const key = `${kind}/${digest}/${filename}`;
   return {key, url: `${storage.base}/${key}`, sha256: digest, bytes, filename, content_type: types[extension]};
@@ -128,13 +128,16 @@ export async function readWithRetries(context, read, {pause = milliseconds => ne
 
 // Verification is deliberately anonymous: signed HEAD/metadata alone cannot
 // prove that the public site will be able to download the exact object.
+const disposition = object => object.key.startsWith('previews/') ? 'inline' : 'attachment';
+
 export async function verifyPublic(object, request = mediaRead) {
   validateObject(object);
   return readWithRetries(`S3 verification ${object.key}`, async () => {
     const response = await request(object.url, {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)});
     if (!response.ok) await responseBytes(response, object.bytes);
     if (response.headers.get('content-type')?.split(';')[0] !== object.content_type ||
-        !response.headers.get('content-disposition')?.includes(`filename="${object.filename}"`)) {
+        !response.headers.get('content-disposition')?.includes(`filename="${object.filename}"`) ||
+        (disposition(object) === 'inline' && !response.headers.get('content-disposition')?.startsWith('inline;'))) {
       throw new Error(`Invalid public media headers: ${object.key}`);
     }
     assertBytes(object, await responseBytes(response, object.bytes));
@@ -177,7 +180,7 @@ export async function uploadVerified(client, object, source, {request = mediaRea
     try {
       await client.send(new PutObjectCommand({Bucket: storage.bucket, Key: object.key, Body: bytes,
         ContentLength: bytes.length, ContentType: object.content_type,
-        ContentDisposition: `attachment; filename="${object.filename}"`,
+        ContentDisposition: `${disposition(object)}; filename="${object.filename}"`,
         CacheControl: 'public, max-age=31536000, immutable', Metadata: {sha256: object.sha256}}));
     } catch (error) { throw storageFailure('upload', object, error); }
   }
