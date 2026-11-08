@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-47dcc0abae73",
+  "questions": [
+    {
+      "id": "original-publication-future-date",
+      "question": "Исходная дата 22 ноября 2026 года находится в будущем относительно редакционной проверки 8 ноября 2026 года. Сохранить материал Draft до наступления этой даты либо подтвердить исправленную исходную дату публикации.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
