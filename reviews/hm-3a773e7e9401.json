@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-3a773e7e9401",
+  "questions": [
+    {
+      "id": "missing-humor-cover",
+      "question": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
+        "en": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication."
+      }
+    },
+    {
+      "id": "bellman-event-location",
+      "question": "Уточните место события: опубликованный пересказ связывает реплику Беллмана с одним из докладов в МГУ, а не с Международным конгрессом математиков. Для ICM нужен проверяемый источник и точный локатор; иначе исправьте место в RU/EN и описаниях.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточните место события: опубликованный пересказ связывает реплику Беллмана с одним из докладов в МГУ, а не с Международным конгрессом математиков. Для ICM нужен проверяемый источник и точный локатор; иначе исправьте место в RU/EN и описаниях.",
+        "en": "Verify where the episode took place: a published retelling associates Bellman’s remark with one of his lectures at Moscow State University, not the International Congress of Mathematicians. Provide a verifiable source and exact locator for the ICM attribution, or correct the venue in RU/EN and their descriptions."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
