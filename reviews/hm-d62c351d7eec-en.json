@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d62c351d7eec-en",
+  "questions": [
+    {
+      "id": "herodotus-scythian-custom",
+      "question": "Please identify the passage in Herodotus supporting the claim about a Scythian custom of selling land according to the distance covered in a day. The published notes to the material give no such reference.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please identify the passage in Herodotus supporting the claim about a Scythian custom of selling land according to the distance covered in a day. The published notes to the material give no such reference.",
+        "ru": "Указать конкретное место у Геродота, на которое опирается утверждение о скифском обычае продажи земли по дневному обходу. В опубликованных примечаниях к материалу такая ссылка не приведена."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}

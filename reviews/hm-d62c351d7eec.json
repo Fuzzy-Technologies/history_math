@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d62c351d7eec",
+  "questions": [
+    {
+      "id": "herodotus-scythian-custom",
+      "question": "Указать конкретное место у Геродота, на которое опирается утверждение о скифском обычае продажи земли по дневному обходу. В опубликованных примечаниях к материалу такая ссылка не приведена.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
