@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ce9eca7757d0-en",
+  "questions": [
+    {
+      "id": "missing-humor-cover",
+      "question": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+        "ru": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку."
+      }
+    },
+    {
+      "id": "dedekind-quotation-source",
+      "question": "Provide the exact source and bibliographic locator for Dedekind’s quotation: the Russian edition closely matches a passage in Yu. V. Pukhnachev and Yu. P. Popov’s Mathematics Without Formulas. Either cite the source or recast the story as an anecdotal retelling without documentary direct speech; keep RU/EN synchronized.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide the exact source and bibliographic locator for Dedekind’s quotation: the Russian edition closely matches a passage in Yu. V. Pukhnachev and Yu. P. Popov’s Mathematics Without Formulas. Either cite the source or recast the story as an anecdotal retelling without documentary direct speech; keep RU/EN synchronized.",
+        "ru": "Нужен точный источник и библиографический локатор для цитаты Дедекинда: русская редакция почти дословно совпадает с фрагментом книги Ю. В. Пухначёва и Ю. П. Попова «Математика без формул». Укажите источник либо оформите сюжет как пересказ анекдота без документальной прямой речи; синхронизируйте RU/EN."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
