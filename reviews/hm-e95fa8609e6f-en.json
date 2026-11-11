@@ -1,0 +1,52 @@
+{
+  "review_version": 1,
+  "article_id": "hm-e95fa8609e6f-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Check the list of foreign academies, the description of Chebyshev’s school, the title and date of his work on mechanisms, and the source of Markov’s recollection.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Check the list of foreign academies, the description of Chebyshev’s school, the title and date of his work on mechanisms, and the source of Markov’s recollection.",
+        "ru": "Проверить перечень иностранных академий, описание школы Чебышёва, название и дату работы о механизмах и источник воспоминания Маркова."
+      },
+      "resolution": "The exact unsupported society count was removed; the school is described without asserting that every named mathematician was a direct pupil; the 1854 title is given more precisely, and Markov’s unsourced direct quotation is paraphrased as a recollection."
+    },
+    {
+      "id": "mechanism-count",
+      "question": "Clarify the number of Chebyshev’s mechanisms and their modifications.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the number of Chebyshev’s mechanisms and their modifications.",
+        "ru": "Уточнить число механизмов Чебышёва и их модификаций."
+      },
+      "resolution": "Corrected from the official IS ARAN record: more than forty different mechanisms and around eighty modifications.",
+      "evidence_url": "https://isaran.ru/?guid=AE690857-6AF6-9A9D-1B70-2F6C04E7EAFE&q=ru/person"
+    },
+    {
+      "id": "portrait-provenance",
+      "question": "Identify the original work and creator of the Chebyshev portrait cover, and provide a public source and license or a verified public-domain basis.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Identify the original work and creator of the Chebyshev portrait cover, and provide a public source and license or a verified public-domain basis.",
+        "ru": "Установить исходное произведение и автора портретной обложки Чебышёва, указать публичный источник и лицензию либо подтверждённое основание общественного достояния."
+      }
+    },
+    {
+      "id": "original-publication-date",
+      "question": "Confirm the original publication date of 4 September 2023 using an accessible public record of the original publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the original publication date of 4 September 2023 using an accessible public record of the original publication.",
+        "ru": "Подтвердить исходную дату 04.09.2023 по доступной публичной записи оригинальной публикации."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
