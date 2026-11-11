@@ -1,0 +1,22 @@
+{
+  "review_version": 1,
+  "article_id": "hm-5f0a817e534b",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить приблизительные даты жизни, связь аль-Хорезми с Байт аль-хикма и сохранность труда об индийском счёте.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Даты исправлены на ок. 780–ок. 850; текст говорит о связи с халифской библиотекой Байт аль-хикма и фиксирует утрату арабского оригинала и сохранность существенно переработанной латинской версии XII века. Источники: https://ismi.mpiwg-berlin.mpg.de/biography/Khwarizmi_BEA.htm, https://ismi.mpiwg-berlin.mpg.de/text/336395, https://mathshistory.st-andrews.ac.uk/HistTopics/Arabic_numerals/"
+    },
+    {
+      "id": "q2",
+      "question": "Подтвердить происхождение портрета и книжной иллюстрации и основание воспроизведения трёх архивных изображений.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
