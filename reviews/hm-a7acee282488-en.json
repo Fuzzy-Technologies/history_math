@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a7acee282488-en",
+  "questions": [
+    {
+      "id": "missing-humor-cover",
+      "question": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+        "ru": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку."
+      }
+    },
+    {
+      "id": "ampere-watch-egg-attribution",
+      "question": "The story about boiling a watch instead of an egg should not be attributed to Ampère without a source: Camille Flammarion’s Popular Astronomy (1884) assigns this episode to Newton and gives a different anecdote for Ampère. Provide a source specifically supporting the Ampère attribution or revise RU/EN consistently.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The story about boiling a watch instead of an egg should not be attributed to Ampère without a source: Camille Flammarion’s Popular Astronomy (1884) assigns this episode to Newton and gives a different anecdote for Ampère. Provide a source specifically supporting the Ampère attribution or revise RU/EN consistently.",
+        "ru": "Историю о часах, сваренных вместо яйца, нельзя без источника приписывать Амперу: у Камиля Фламмариона в «Popular Astronomy» (1884) этот эпизод относится к Ньютону, а для Ампера приведён другой анекдот. Нужен источник именно для атрибуции Амперу либо синхронная правка RU/EN."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
