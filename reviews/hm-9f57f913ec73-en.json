@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-9f57f913ec73-en",
+  "questions": [
+    {
+      "id": "missing-joke-cover",
+      "question": "The package has no cover image for the joke card. Add a suitable cover for both editions while preserving the existing image captions unchanged.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The package has no cover image for the joke card. Add a suitable cover for both editions while preserving the existing image captions unchanged.",
+        "ru": "В пакете нет обложки для карточки шутки. Добавить подходящую обложку для обеих редакций, сохранив текстовые подписи к изображениям без изменений."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
