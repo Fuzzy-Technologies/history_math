@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c3f03a90cc5b-en",
+  "questions": [
+    {
+      "id": "lobachevsky-ministry-query",
+      "question": "Please verify a documentary source for the Ministry of Public Education’s alleged query, “Who is this Lobachevsky, and what exceptional scientific achievements are credited to him?” Kazan University’s history confirms the subscription, monument and prize initiative for Lobachevsky’s centenary but does not reproduce this wording. Unless confirmed, it should be identified as a later retelling or printed without quotation marks.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please verify a documentary source for the Ministry of Public Education’s alleged query, “Who is this Lobachevsky, and what exceptional scientific achievements are credited to him?” Kazan University’s history confirms the subscription, monument and prize initiative for Lobachevsky’s centenary but does not reproduce this wording. Unless confirmed, it should be identified as a later retelling or printed without quotation marks.",
+        "ru": "Проверить документальный источник запроса Министерства народного просвещения «Кто таков Лобачевский и какие такие исключительные научные заслуги за ним числятся?». История КФУ подтверждает инициативу подписки, памятника и премии к столетию Лобачевского, но не приводит эту фразу; до подтверждения её следует обозначить как поздний пересказ либо убрать кавычки."
+      }
+    },
+    {
+      "id": "joke-cover",
+      "question": "Add an actual cover image for the Mathematicians Joke rubric. The article currently has no figures, preview_image or cover_image, so its card and page lack the required lead illustration.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Add an actual cover image for the Mathematicians Joke rubric. The article currently has no figures, preview_image or cover_image, so its card and page lack the required lead illustration.",
+        "ru": "Добавить фактическую обложку рубрики «Математики шутят»: сейчас figures, preview_image и cover_image отсутствуют, поэтому карточка и страница не имеют обязательной заголовочной иллюстрации."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
