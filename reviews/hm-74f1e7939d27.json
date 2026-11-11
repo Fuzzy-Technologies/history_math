@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-74f1e7939d27",
+  "questions": [
+    {
+      "id": "married-couples-calendar-qualification",
+      "question": "Согласовать оговорки к утверждениям «результат будет одинаковым» и «сумма всегда равна удвоенному текущему году». Для полных лет сумма равна 2T−εр−εс, где εр=1 до дня рождения, εс=1 до годовщины свадьбы. У супругов свадебная поправка общая, но она может уменьшить обе суммы; дни рождения могут дать разницу 1, как в конце поста и указано. Уточнить вывод и границы примера 2025 года в обеих версиях, сохранив авторский эффект раскрытия.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Согласовать оговорки к утверждениям «результат будет одинаковым» и «сумма всегда равна удвоенному текущему году». Для полных лет сумма равна 2T−εр−εс, где εр=1 до дня рождения, εс=1 до годовщины свадьбы. У супругов свадебная поправка общая, но она может уменьшить обе суммы; дни рождения могут дать разницу 1, как в конце поста и указано. Уточнить вывод и границы примера 2025 года в обеих версиях, сохранив авторский эффект раскрытия.",
+        "en": "Please qualify “the totals will match” and “the sum always equals twice the current year”. With completed years the total is 2T−εb−εw, where εb is 1 before the birthday and εw is 1 before the wedding anniversary. Spouses share the anniversary adjustment, but it can reduce both totals; birthdays can produce the difference of 1 already mentioned at the end. Please agree a qualified conclusion and the conditions of the 2025 example while preserving the reveal."
+      },
+      "resolution": "Обе версии теперь используют точную формулу 2T−εр−εс и явно указывают условия совпадения сумм супругов и примера 2025 года."
+    },
+    {
+      "id": "married-couples-cover-provenance",
+      "question": "Подтвердить происхождение обложки: в подписи она названа авторской, но поля source и rights_basis содержат лишь «Иллюстрация к материалу». Нужны реальный автор или иллюстратор, публичный источник и лицензия либо подтверждённое основание считать изображение авторским.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подтвердить происхождение обложки: в подписи она названа авторской, но поля source и rights_basis содержат лишь «Иллюстрация к материалу». Нужны реальный автор или иллюстратор, публичный источник и лицензия либо подтверждённое основание считать изображение авторским.",
+        "en": "Confirm the cover’s provenance: its caption calls it an author’s illustration, but the source and rights_basis fields only say “Illustration accompanying the text.” Identify the actual author or illustrator, public source and licence, or provide verified grounds for treating it as an original author illustration."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
