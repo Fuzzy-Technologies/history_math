@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-fc8da0e2e1f2-en",
+  "questions": [
+    {
+      "id": "jordanus-book-and-anecdote",
+      "question": "Please verify the source of the humorous legend about the suspended books. Full bibliographic details for the work attributed to Marshall Clagett and the page containing the story are required.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please verify the source of the humorous legend about the suspended books. Full bibliographic details for the work attributed to Marshall Clagett and the page containing the story are required.",
+        "ru": "Уточнить источник шутливой легенды о подвешенных книгах: требуется полное библиографическое описание работы Маршалла Клагетта и страница с этим эпизодом."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
