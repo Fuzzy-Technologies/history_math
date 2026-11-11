@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-10e7ce21d4ee-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the account of Cicero’s identification of Archimedes’ tomb, the attribution of Heron’s formula and the exact wording of quotations; state the Fields Medal age rule precisely.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the account of Cicero’s identification of Archimedes’ tomb, the attribution of Heron’s formula and the exact wording of quotations; state the Fields Medal age rule precisely.",
+        "ru": "Уточнить рассказ Цицерона о гробнице Архимеда, атрибуцию формулы Герона и точность цитат; точно сформулировать возрастное правило Филдсовской премии."
+      },
+      "resolution": "The tomb episode now names Cicero and uses the defensible interval “more than a century”; the unsupported Heron-formula claim was removed, the lever saying is marked as traditional attribution, and the Fields Medal rule is stated in its official date-based form."
+    },
+    {
+      "id": "archimedes-portrait-provenance",
+      "question": "Identify the original work and creator of the Archimedes portrait cover, and provide a public source and license or a verified public-domain basis.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Identify the original work and creator of the Archimedes portrait cover, and provide a public source and license or a verified public-domain basis.",
+        "ru": "Установить исходное произведение и автора портретной обложки Архимеда, указать публичный источник и лицензию либо подтверждённое основание общественного достояния."
+      }
+    },
+    {
+      "id": "original-publication-date",
+      "question": "Reconcile the original publication date: the article records 31 August 2023, while the package description records 29 August 2023.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Reconcile the original publication date: the article records 31 August 2023, while the package description records 29 August 2023.",
+        "ru": "Сверить исходную дату публикации: в статье указано 31.08.2023, а описание пакета содержит 29.08.2023."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
