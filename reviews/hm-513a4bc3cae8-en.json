@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-513a4bc3cae8-en",
+  "questions": [
+    {
+      "id": "cardano-images-provenance",
+      "question": "For all three images of Cardano, including the historical engraved portrait, identify the actual creator or collection or a public source and a valid rights basis or license for each image; do not present a third-party portrait as an author-created image.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For all three images of Cardano, including the historical engraved portrait, identify the actual creator or collection or a public source and a valid rights basis or license for each image; do not present a third-party portrait as an author-created image.",
+        "ru": "Для всех трёх изображений Кардано, включая исторический гравированный портрет, укажите фактического автора или собрание либо публичный источник и действительное правовое основание или лицензию для каждого изображения; не оформляйте сторонний портрет как авторский."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
