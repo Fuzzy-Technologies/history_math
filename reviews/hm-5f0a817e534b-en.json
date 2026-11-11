@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-5f0a817e534b-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify al-Khwarizmi’s approximate life dates, his connection with the Bayt al-Hikma, and the survival of his work on Indian arithmetic.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify al-Khwarizmi’s approximate life dates, his connection with the Bayt al-Hikma, and the survival of his work on Indian arithmetic.",
+        "ru": "Уточнить приблизительные даты жизни, связь аль-Хорезми с Байт аль-хикма и сохранность труда об индийском счёте."
+      },
+      "resolution": "The dates were corrected to c. 780–c. 850; the text now describes an association with the caliphal library Bayt al-Hikma and records that the Arabic original is lost and the work survives in a substantially reworked twelfth-century Latin version. Evidence: https://ismi.mpiwg-berlin.mpg.de/biography/Khwarizmi_BEA.htm, https://ismi.mpiwg-berlin.mpg.de/text/336395, https://mathshistory.st-andrews.ac.uk/HistTopics/Arabic_numerals/"
+    },
+    {
+      "id": "q2",
+      "question": "Confirm the portrait’s and book illustration’s provenance and the basis for reproducing all three archival images.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the portrait’s and book illustration’s provenance and the basis for reproducing all three archival images.",
+        "ru": "Подтвердить происхождение портрета и книжной иллюстрации и основание воспроизведения трёх архивных изображений."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
