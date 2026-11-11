@@ -1,0 +1,22 @@
+{
+  "review_version": 1,
+  "article_id": "hm-61e65fc9e6af",
+  "questions": [
+    {
+      "id": "lobachevsky-assistant-trustee-term",
+      "question": "Сверить срок службы Н. И. Лобачевского помощником попечителя Казанского учебного округа.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Срок исправлен на 1846–1855. Источники: https://libweb.kpfu.ru/z3950/ubiz/lobachev.pdf и https://mathshistory.st-andrews.ac.uk/DSB/Lobachevsky.pdf"
+    },
+    {
+      "id": "lobachevsky-portrait-provenance",
+      "question": "Для портрета Н. И. Лобачевского укажите автора/исходное произведение, публичный источник и действительное правовое основание публикации.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-61e65fc9e6af-en",
+  "questions": [
+    {
+      "id": "lobachevsky-assistant-trustee-term",
+      "question": "Verify Nikolai Lobachevsky’s term as assistant trustee of the Kazan Educational District.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Corrected to 1846–1855. Evidence: https://libweb.kpfu.ru/z3950/ubiz/lobachev.pdf and https://mathshistory.st-andrews.ac.uk/DSB/Lobachevsky.pdf",
+      "localizations": {
+        "source": "Verify Nikolai Lobachevsky’s term as assistant trustee of the Kazan Educational District.",
+        "ru": "Сверить срок службы Н. И. Лобачевского помощником попечителя Казанского учебного округа."
+      }
+    },
+    {
+      "id": "lobachevsky-portrait-provenance",
+      "question": "For the portrait of Nikolai Lobachevsky, identify the artist or original work, a public source, and a valid rights basis for publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the portrait of Nikolai Lobachevsky, identify the artist or original work, a public source, and a valid rights basis for publication.",
+        "ru": "Для портрета Н. И. Лобачевского укажите автора/исходное произведение, публичный источник и действительное правовое основание публикации."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
