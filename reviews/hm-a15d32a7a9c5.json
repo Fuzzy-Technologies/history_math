@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a15d32a7a9c5",
+  "questions": [
+    {
+      "id": "joke-cover",
+      "question": "У материала рубрики «Математики шутят» отсутствует обложка. Подтвердите публикацию без обложки либо добавьте выбранную обложку.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "У материала рубрики «Математики шутят» отсутствует обложка. Подтвердите публикацию без обложки либо добавьте выбранную обложку.",
+        "en": "This “Mathematicians Joke” item has no cover. Please confirm publication without a cover or add the selected cover."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
