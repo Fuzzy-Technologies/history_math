@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a24d6c2dacf2-en",
+  "questions": [
+    {
+      "id": "krugloyed-english-wordplay",
+      "question": "Review the English wordplay: Krugloyed is retained as the creature’s name, glossed as round-eater, and its sound resemblance to Russian krugloye d is explained in Notes. Decide whether an independent English pun would work better.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Review the English wordplay: Krugloyed is retained as the creature’s name, glossed as round-eater, and its sound resemblance to Russian krugloye d is explained in Notes. Decide whether an independent English pun would work better.",
+        "ru": "Проверить английскую адаптацию «круглоеда»: выдуманное имя оставлено как Krugloyed, раскрыто через round-eater, а созвучие krugloye d объяснено в EN-примечании. Решить, нужен ли более самостоятельный английский каламбур."
+      },
+      "resolution": "The Krugloyed adaptation is accepted: the name is retained, while round-eater and the resemblance to krugloye d are explained in Notes without inventing an English homonym."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
