@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6eb5c2a8065d-en",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+        "ru": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет."
+      }
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Confirm the original publication date and provide a public link: the article and PR description use 21.04.2024, while the existing review and comment use 02.04.2024. Do not change the date without a primary source.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the original publication date and provide a public link: the article and PR description use 21.04.2024, while the existing review and comment use 02.04.2024. Do not change the date without a primary source.",
+        "ru": "Подтвердить исходную дату публикации и указать публичную ссылку: в статье и описании PR стоит 21.04.2024, а ранее записанные review и комментарий указывают 02.04.2024. Не менять дату без первичного источника."
+      }
+    },
+    {
+      "id": "bradis-anecdote-source",
+      "question": "Provide a verifiable source specifically for the school scene involving Bradis; documented variants differ from the article’s version.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide a verifiable source specifically for the school scene involving Bradis; documented variants differ from the article’s version.",
+        "ru": "Указать проверяемый источник именно для школьной сцены с Брадисом: документированные варианты истории отличаются от текста статьи."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
