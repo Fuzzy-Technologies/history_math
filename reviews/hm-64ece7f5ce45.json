@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-64ece7f5ce45",
+  "questions": [
+    {
+      "id": "gauss-kutzler-story-locator",
+      "question": "Уточнить страницу байки о Девятой симфонии в сборнике B. Kutzler, Mathematikerwitze & Mathematikwitze (2005). Доступный двухстраничный фрагмент — предисловие, датированное маем 2005 года; самой истории в нём нет. Авторская оговорка об отсутствии раннего надёжного источника сохранена в обеих версиях.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить страницу байки о Девятой симфонии в сборнике B. Kutzler, Mathematikerwitze & Mathematikwitze (2005). Доступный двухстраничный фрагмент — предисловие, датированное маем 2005 года; самой истории в нём нет. Авторская оговорка об отсутствии раннего надёжного источника сохранена в обеих версиях.",
+        "en": "Locate the Ninth Symphony anecdote in B. Kutzler’s Mathematikerwitze & Mathematikwitze (2005). The available two-page extract is a preface dated May 2005 and does not contain the story. Both versions retain the author’s qualification that no reliable earlier source has been found."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
