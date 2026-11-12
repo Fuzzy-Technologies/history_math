@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d3b4be4c2558",
+  "questions": [
+    {
+      "id": "liu-hui-pi-attribution",
+      "question": "Уточнить атрибуцию численных результатов. В статье сказано, что Лю Хуэй довёл вычисление до 3072-угольника и получил π ≈ 3,14159, а также использовал 3927/1250. Современные исследования различают современное продолжение его алгоритма и числа в дошедшем комментарии; авторство поздней части комментария оспаривается. Следует согласовать исторически точную формулировку в RU/EN и описании обложки. Источники: https://cjournal.hep.com.cn/1001-8735/CN/1207255789187973817 и https://journals.sagepub.com/doi/abs/10.1177/20966083261416197",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить атрибуцию численных результатов. В статье сказано, что Лю Хуэй довёл вычисление до 3072-угольника и получил π ≈ 3,14159, а также использовал 3927/1250. Современные исследования различают современное продолжение его алгоритма и числа в дошедшем комментарии; авторство поздней части комментария оспаривается. Следует согласовать исторически точную формулировку в RU/EN и описании обложки. Источники: https://cjournal.hep.com.cn/1001-8735/CN/1207255789187973817 и https://journals.sagepub.com/doi/abs/10.1177/20966083261416197",
+        "en": "Clarify attribution of the numerical results. The article says that Liu Hui carried the calculation to a 3,072-gon and obtained π ≈ 3.14159, and that he used 3927/1250. Modern scholarship distinguishes a modern continuation of his algorithm from numbers in the transmitted commentary; attribution of the later part of the commentary is disputed. Historically accurate wording must be agreed in RU/EN and in the cover description. Sources: https://cjournal.hep.com.cn/1001-8735/CN/1207255789187973817 and https://journals.sagepub.com/doi/abs/10.1177/20966083261416197"
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
