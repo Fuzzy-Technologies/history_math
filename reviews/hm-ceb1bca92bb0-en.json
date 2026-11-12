@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ceb1bca92bb0-en",
+  "questions": [
+    {
+      "id": "joke-cover",
+      "question": "This “Mathematicians Joke” item has no cover. Please confirm publication without a cover or add the selected cover.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "This “Mathematicians Joke” item has no cover. Please confirm publication without a cover or add the selected cover.",
+        "ru": "У материала рубрики «Математики шутят» отсутствует обложка. Подтвердите публикацию без обложки либо добавьте выбранную обложку."
+      }
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Provide a public link to the original publication confirming the date 05.05.2024; the address must not be guessed.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide a public link to the original publication confirming the date 05.05.2024; the address must not be guessed.",
+        "ru": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 05.05.2024; адрес нельзя восстанавливать предположительно."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
