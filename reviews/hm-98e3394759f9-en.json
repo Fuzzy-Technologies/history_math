@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-98e3394759f9-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "For the portrait of Omar Khayyam, identify the source work and its artist, a public source record and the licence or public-domain basis; holding a copy in the author’s archive does not establish authorship of a third-party historical image.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the portrait of Omar Khayyam, identify the source work and its artist, a public source record and the licence or public-domain basis; holding a copy in the author’s archive does not establish authorship of a third-party historical image.",
+        "ru": "Для портрета Омара Хайяма указать исходное произведение и его автора, публичный источник и лицензию либо основание общественного достояния; наличие копии в авторском архиве не подтверждает авторство исторического изображения третьего лица."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
