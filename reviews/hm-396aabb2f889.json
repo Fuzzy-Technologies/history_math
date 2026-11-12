@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-396aabb2f889",
+  "questions": [
+    {
+      "id": "hilbert-anecdote-source",
+      "question": "Для приписываемой Давиду Гильберту реплики о поэте нужен печатный или архивный источник с изданием и страницей: в исходном посте такой ссылки нет. Сохранены авторская атрибуция и формулировка, а описание карточки называет текст анекдотом. Согласовать источник либо подачу исторической атрибуции в обеих версиях.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Обе версии явно подают эпизод как анекдот. Документальная атрибуция реплики в тексте не заявляется.",
+      "localizations": {
+        "source": "Для приписываемой Давиду Гильберту реплики о поэте нужен печатный или архивный источник с изданием и страницей: в исходном посте такой ссылки нет. Сохранены авторская атрибуция и формулировка, а описание карточки называет текст анекдотом. Согласовать источник либо подачу исторической атрибуции в обеих версиях.",
+        "en": "Please supply a printed or archival source, with edition and page, for the remark attributed to David Hilbert. The source post provides none. Its attribution and wording are preserved, while the card description identifies the text as an anecdote. Please agree the historical attribution in both versions."
+      }
+    },
+    {
+      "id": "joke-cover",
+      "question": "В пакете отсутствует фактическая обложка для карточки шутки: список figures и манифест изображений пусты. Добавьте подходящую обложку и подключите её в обеих редакциях, не изменяя существующие подписи и текст.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "В пакете отсутствует фактическая обложка для карточки шутки: список figures и манифест изображений пусты. Добавьте подходящую обложку и подключите её в обеих редакциях, не изменяя существующие подписи и текст.",
+        "en": "The package has no actual cover for the joke card: figures is empty and the image manifest is empty. Add a suitable cover and reference it in both editions without changing the existing captions or text."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
