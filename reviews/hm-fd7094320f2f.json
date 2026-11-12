@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-fd7094320f2f",
+  "questions": [
+    {
+      "id": "three-glasses-gardner-edition",
+      "question": "Уточнить издание «Математических досугов» М. Гарднера, к которому относится ссылка на с. 394: год, издательство и при необходимости исходное английское название сборника. В посте явно оговорено, что у Гарднера фокус с жульничеством, а здесь другая задача; это различие сохранено. Без подтверждённого издания и публичной ссылки библиографическое упоминание оставлено без URL.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Ссылка уточнена по изданию М. Гарднера «Математические досуги» (М.: Мир, 1972, с. 394–395, рис. 193). В тексте различены две начальные расстановки.",
+      "localizations": {
+        "source": "Уточнить издание «Математических досугов» М. Гарднера, к которому относится ссылка на с. 394: год, издательство и при необходимости исходное английское название сборника. В посте явно оговорено, что у Гарднера фокус с жульничеством, а здесь другая задача; это различие сохранено. Без подтверждённого издания и публичной ссылки библиографическое упоминание оставлено без URL.",
+        "en": "Please identify the edition of Gardner’s Matematicheskiye dosugi to which p. 394 refers: year, publisher and, if needed, the original English collection title. The post explicitly distinguishes Gardner’s cheating trick from this different problem, and that distinction is retained. Without a confirmed edition or public link, the bibliographic mention remains unlinked."
+      }
+    },
+    {
+      "id": "cover-authorship-rights",
+      "question": "Уточнить подтверждённого автора или правообладателя обложки с тремя узорчатыми стаканами и основание её использования. Сейчас подпись называет изображение авторским, но source и rights_basis содержат только «Иллюстрация к материалу», что не подтверждает авторство.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить подтверждённого автора или правообладателя обложки с тремя узорчатыми стаканами и основание её использования. Сейчас подпись называет изображение авторским, но source и rights_basis содержат только «Иллюстрация к материалу», что не подтверждает авторство.",
+        "en": "Please identify the verified creator or rights holder of the cover showing three patterned glasses and the basis for its use. The caption calls it an author-created illustration, but source and rights_basis only say “Illustration accompanying the text,” which does not establish authorship."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
