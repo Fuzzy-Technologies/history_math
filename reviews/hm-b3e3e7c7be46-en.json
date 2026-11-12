@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b3e3e7c7be46-en",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration.",
+        "ru": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации."
+      }
+    },
+    {
+      "id": "original-publication-url",
+      "question": "The preserved date 2023-09-24 needs a verifiable original-publication link; both `original_publication.url` and `source_url` are currently missing.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The preserved date 2023-09-24 needs a verifiable original-publication link; both `original_publication.url` and `source_url` are currently missing.",
+        "ru": "Для сохранённой даты 2023-09-24 нужна проверяемая ссылка на исходную публикацию: сейчас отсутствуют и `original_publication.url`, и `source_url`."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
