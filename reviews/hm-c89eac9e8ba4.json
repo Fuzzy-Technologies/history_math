@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c89eac9e8ba4",
+  "questions": [
+    {
+      "id": "fibonacci-rabbit-maturity",
+      "question": "В условии сказано, что каждая пара каждый месяц рождает новую пару, но не указана задержка созревания новорождённых. Без неё получается удвоение, а не обычная последовательность Фибоначчи. Решить, нужно ли добавить условие о начале размножения со второго месяца; исходное условие пока сохранено в обеих версиях.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "В условии сказано, что каждая пара каждый месяц рождает новую пару, но не указана задержка созревания новорождённых. Без неё получается удвоение, а не обычная последовательность Фибоначчи. Решить, нужно ли добавить условие о начале размножения со второго месяца; исходное условие пока сохранено в обеих версиях.",
+        "en": "The condition says that every pair produces a new pair each month but omits the maturation delay for newborn pairs. Without that delay the population doubles rather than following the usual Fibonacci sequence. Please decide whether to add the condition that breeding starts in the second month; the original condition remains in both versions."
+      },
+      "resolution": "В обеих версиях уточнено, что новорождённая пара начинает размножаться со второго месяца жизни."
+    },
+    {
+      "id": "fibonacci-escaped-rabbits-source",
+      "question": "Уточнить страницу для эпизода с реальными кроликами, сбежавшими из сада. Издатель подтверждает перевод Laurence Sigler и мягкую обложку 2003 года: https://link.springer.com/book/10.1007/978-1-4613-0079-3 ; дата не является разночтением. Связь комического эпизода с конкретным местом книги не установлена. Сохранены авторская шутка и библиография до решения редактора.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить страницу для эпизода с реальными кроликами, сбежавшими из сада. Издатель подтверждает перевод Laurence Sigler и мягкую обложку 2003 года: https://link.springer.com/book/10.1007/978-1-4613-0079-3 ; дата не является разночтением. Связь комического эпизода с конкретным местом книги не установлена. Сохранены авторская шутка и библиография до решения редактора.",
+        "en": "Please identify the page for the episode in which real rabbits escape from Fibonacci’s garden. The publisher confirms Laurence Sigler’s translation and the 2003 paperback at https://link.springer.com/book/10.1007/978-1-4613-0079-3 ; the date is not a discrepancy. The comic episode has not been tied to a specific passage. The author’s joke and bibliography are retained pending editorial review."
+      }
+    },
+    {
+      "id": "rabbit-catchphrase-attribution",
+      "question": "Финальная фраза обыгрывает миниатюру Владимира Перцова 1986 года. Уберите знак © журнала либо укажите Перцова и отдельно обозначьте авторскую математическую адаптацию.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Финальная фраза обыгрывает миниатюру Владимира Перцова 1986 года. Уберите знак © журнала либо укажите Перцова и отдельно обозначьте авторскую математическую адаптацию.",
+        "en": "The closing line adapts Vladimir Pertsov’s 1986 miniature. Remove the journal’s © claim or credit Pertsov and separately identify the author’s mathematical adaptation."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
