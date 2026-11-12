@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-03211900ab47-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "The source retains the general statements about the Candidate degree and almost forty years of teaching; verify the defence and appointment dates if they are to be added. Confirm the descriptive English game names, including Mathematical Rally for the event with a warm-up, three stages and a finish.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The source retains the general statements about the Candidate degree and almost forty years of teaching; verify the defence and appointment dates if they are to be added. Confirm the descriptive English game names, including Mathematical Rally for the event with a warm-up, three stages and a finish.",
+        "ru": "В исходнике сохранены родовые сведения о кандидатской степени и работе почти 40 лет; при финальной вычитке уточнить даты защиты и начала работы, если редактор хочет их добавить. Названия игровых форм в EN переданы описательно; подтвердить Mathematical Rally для «математического кросса» по разделу книги с разминкой, тремя этапами и финишем."
+      },
+      "resolution": "The article can stand with the dates it gives. Mathematical Rally is clear in the context of a multi-stage activity."
+    },
+    {
+      "id": "q2",
+      "question": "Verify the dates of Dyshinsky’s deanship: the article gave 1976–1986, while Perm State Humanitarian Pedagogical University’s faculty history gives 1975–1985.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the dates of Dyshinsky’s deanship: the article gave 1976–1986, while Perm State Humanitarian Pedagogical University’s faculty history gives 1975–1985.",
+        "ru": "Сверить годы деканства Е. А. Дышинского: в статье были указаны 1976–1986 годы, а в историческом материале математического факультета ПГГПУ — 1975–1985 годы."
+      },
+      "resolution": "Both editions now use 1975–1985, as stated in the official faculty history: https://open.pspu.ru/matdo/Подробнее.pdf"
+    },
+    {
+      "id": "illustration-source-rights",
+      "question": "Identify the actual sources and reproduction grounds for the portrait of Yevgeny Dyshinsky and the cover of Mathematical Circle Games. Preserve the existing credit to illustrator M. I. Gozenpud for the cover, and add the specific edition/publisher and legal status; “Illustration accompanying the text” does not establish these facts.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Identify the actual sources and reproduction grounds for the portrait of Yevgeny Dyshinsky and the cover of Mathematical Circle Games. Preserve the existing credit to illustrator M. I. Gozenpud for the cover, and add the specific edition/publisher and legal status; “Illustration accompanying the text” does not establish these facts.",
+        "ru": "Для портрета Е. А. Дышинского и обложки «Игротеки математического кружка» указать реальные первоисточники и основания воспроизведения. Для обложки сохранить кредит художника М. И. Гозенпуда, добавить конкретное издание/издателя и правовой статус; формулировка «Иллюстрация к материалу» этого не подтверждает."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
