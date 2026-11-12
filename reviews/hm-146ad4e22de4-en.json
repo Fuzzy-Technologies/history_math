@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-146ad4e22de4-en",
+  "questions": [
+    {
+      "id": "figure-provenance",
+      "question": "Confirm that the selected file is a reproduction of Vasily Perov’s Hunters at Rest (1871) and that the Gallerix link corresponds to this exact file. The artist, title, date, museum, public source and public-domain basis have been moved into the figure metadata in both editions.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Confirm that the selected file is a reproduction of Vasily Perov’s Hunters at Rest (1871) and that the Gallerix link corresponds to this exact file. The artist, title, date, museum, public source and public-domain basis have been moved into the figure metadata in both editions.",
+        "ru": "Подтвердить, что выбранный файл является репродукцией картины В. Г. Перова «Охотники на привале» (1871) и что ссылка Gallerix соответствует именно этому файлу. Автор, название, дата, музей, публичный источник и основание общественного достояния перенесены в метаданные обеих редакций."
+      },
+      "resolution": "The file was visually checked against the reproduction on the cited Gallerix page; artist, title, 1871 date and Tretyakov Gallery match."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
