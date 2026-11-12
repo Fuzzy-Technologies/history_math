@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-677b7fa2ed54-en",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+        "ru": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет."
+      }
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Confirm the original publication date and provide a public link: the article and PR description use 07.04.2024, while the existing review and comment use 28.03.2024. Do not change the date without a primary source.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the original publication date and provide a public link: the article and PR description use 07.04.2024, while the existing review and comment use 28.03.2024. Do not change the date without a primary source.",
+        "ru": "Подтвердить исходную дату публикации и указать публичную ссылку: в статье и описании PR стоит 07.04.2024, а ранее записанные review и комментарий указывают 28.03.2024. Не менять дату без первичного источника."
+      }
+    },
+    {
+      "id": "ampere-door-note-source",
+      "question": "Provide a printed or archival source for the anecdote about the note on Ampère’s door; until verified, label it as an unconfirmed retelling.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide a printed or archival source for the anecdote about the note on Ampère’s door; until verified, label it as an unconfirmed retelling.",
+        "ru": "Указать печатный или архивный источник для анекдота о записке на двери Ампера; до подтверждения обозначить сюжет как неподтверждённый пересказ."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
