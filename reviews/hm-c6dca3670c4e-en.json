@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c6dca3670c4e-en",
+  "questions": [
+    {
+      "id": "crossed-digit-admissible-difference",
+      "question": "Please require a difference containing a digit from 1 to 8. The source steps can produce zero or a number containing only zeros and nines—for example, 211 − 112 = 99—so step 4 cannot be carried out. Please instruct the reader to choose another starting number or a suitable permutation. The trick’s explanation and the separate 0/9 ambiguity caveat are retained.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Steps 2 and 3 require a different number and a difference containing a digit from 1 to 8. If the difference has no such digit, the reader tries a different arrangement or starting number.",
+      "localizations": {
+        "source": "Please require a difference containing a digit from 1 to 8. The source steps can produce zero or a number containing only zeros and nines—for example, 211 − 112 = 99—so step 4 cannot be carried out. Please instruct the reader to choose another starting number or a suitable permutation. The trick’s explanation and the separate 0/9 ambiguity caveat are retained.",
+        "ru": "Добавить оговорку, что разность должна содержать цифру от 1 до 8. По исходным шагам можно получить 0 или число только из нулей и девяток, например 211 − 112 = 99; тогда выполнить шаг 4 невозможно. Нужна инструкция выбрать другое исходное число или подходящую перестановку. Секрет фокуса и оговорка о неоднозначности 0/9 при разрешении всех цифр сохранены."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
