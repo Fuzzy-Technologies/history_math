@@ -1,0 +1,15 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f947fb8c72e1",
+  "questions": [
+    {
+      "id": "portrait-provenance-and-subject",
+      "question": "Для fig-2 и fig-3 укажите изображённых людей, исходные произведения или фотографов, правообладателей, проверяемые публичные источники и правовые основания использования; для fig-2 отдельно подтвердите личность изображённого человека.",
+      "blocking": true,
+      "state": "open"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
