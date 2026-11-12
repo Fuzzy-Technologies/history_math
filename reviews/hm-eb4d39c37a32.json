@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-eb4d39c37a32",
+  "questions": [
+    {
+      "id": "lecture-title-spoonerism",
+      "question": "В EN сохранены обе русские формы в транслитерации и с переводом: Teoriya zhivykh sil («Теория живых сил») и Teoriya sivykh zhil («Теория сивых жил»). Перестановка звуков передана точно, но английский каламбур не возникает автоматически. Согласовать, достаточно ли такой подачи или нужен краткий комментарий о перестановке начальных звуков; другую пару названий без решения редактора не подставлял.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "В EN объяснено, что комизм возникает из перестановки начальных звуков. Оба русских выражения сохранены в транслитерации и переводе.",
+      "localizations": {
+        "source": "В EN сохранены обе русские формы в транслитерации и с переводом: Teoriya zhivykh sil («Теория живых сил») и Teoriya sivykh zhil («Теория сивых жил»). Перестановка звуков передана точно, но английский каламбур не возникает автоматически. Согласовать, достаточно ли такой подачи или нужен краткий комментарий о перестановке начальных звуков; другую пару названий без решения редактора не подставлял.",
+        "en": "Please review the title spoonerism in English. Both Russian forms are transliterated and translated accurately, but the English titles do not reproduce the sound swap by themselves. Please decide whether this presentation needs a brief explanation of the swapped initial sounds. No invented replacement titles have been substituted."
+      }
+    },
+    {
+      "id": "humor-cover-image",
+      "question": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет.",
+        "en": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
