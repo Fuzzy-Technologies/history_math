@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0d1a666f8783-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "For the portrait of Carl Friedrich Gauss, identify the source work and its artist, a public source record and the licence or public-domain basis; holding a copy in the author’s archive does not establish authorship of a third-party historical image.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the portrait of Carl Friedrich Gauss, identify the source work and its artist, a public source record and the licence or public-domain basis; holding a copy in the author’s archive does not establish authorship of a third-party historical image.",
+        "ru": "Для портрета Карла Фридриха Гаусса указать исходное произведение и его автора, публичный источник и лицензию либо основание общественного достояния; наличие копии в авторском архиве не подтверждает авторство исторического изображения третьего лица."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
