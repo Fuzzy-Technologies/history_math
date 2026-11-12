@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-65b3b8987d79-en",
+  "questions": [
+    {
+      "id": "turing-anecdote-pages",
+      "question": "Please identify the pages in Andrew Hodges’s Alan Turing: The Enigma for the suspended-apple experiment, the line about a bug in the universe’s program, and the notebook entry after the lamppost collision. The author’s website https://www.turing.org.uk/book/ confirms the book and its editions, but not these specific episodes and quotations. They remain in both versions as the author’s humorous narrative; please agree their attribution.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please identify the pages in Andrew Hodges’s Alan Turing: The Enigma for the suspended-apple experiment, the line about a bug in the universe’s program, and the notebook entry after the lamppost collision. The author’s website https://www.turing.org.uk/book/ confirms the book and its editions, but not these specific episodes and quotations. They remain in both versions as the author’s humorous narrative; please agree their attribution.",
+        "ru": "Уточнить страницы в Andrew Hodges «Alan Turing: The Enigma» для опыта с подвешенным яблоком, реплики об ошибке в программе Вселенной и записи после столкновения со столбом. Сайт автора https://www.turing.org.uk/book/ подтверждает книгу и её издания, но не эти конкретные эпизоды и цитаты. Они сохранены как авторский юмористический рассказ в RU/EN; решить, как обозначить их атрибуцию."
+      }
+    },
+    {
+      "id": "turing-computation-model-universal-machine",
+      "question": "Clarify the opening paragraph: in his 1936 paper Turing introduced a formal model of computation and, in § 6, separately described a universal machine capable of simulating any given machine. Keep RU/EN synchronized so the model of computation and its universal form are not collapsed into one claim. Source: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "The opening paragraph was corrected in RU/EN to distinguish the formal model of computation from the universal form described in § 6.",
+      "localizations": {
+        "source": "Clarify the opening paragraph: in his 1936 paper Turing introduced a formal model of computation and, in § 6, separately described a universal machine capable of simulating any given machine. Keep RU/EN synchronized so the model of computation and its universal form are not collapsed into one claim. Source: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf",
+        "ru": "Уточнить первый абзац: в работе 1936 года Тьюринг предложил формальную модель вычисления, а в § 6 отдельно описал универсальную машину, способную имитировать любую заданную машину. Синхронизировать RU/EN так, чтобы модель вычислений и её универсальный вариант не сливались в одно утверждение. Источник: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf"
+      }
+    },
+    {
+      "id": "turing-cover-provenance",
+      "question": "For the two-panel cover showing Turing and the apple, identify the creator or source work, the rightsholder, a verifiable public source, and the legal basis for use. A reference to the author’s archive establishes custody, not authorship or a licence.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the two-panel cover showing Turing and the apple, identify the creator or source work, the rightsholder, a verifiable public source, and the legal basis for use. A reference to the author’s archive establishes custody, not authorship or a licence.",
+        "ru": "Для двухкадровой обложки с Тьюрингом и яблоком укажите автора или исходное произведение, правообладателя, проверяемый публичный источник и правовое основание использования. Указание на авторский архив подтверждает место хранения, но не авторство или лицензию."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
