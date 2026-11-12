@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1bb23960e5f9",
+  "questions": [
+    {
+      "id": "bulgaria-attribution-source",
+      "question": "Указать конкретный болгарский сборник или олимпиадную подборку, подтверждающие пояснение о происхождении условного названия «Задача из Болгарии». Если такого источника нет, нужно убрать или осторожнее сформулировать это пояснение в обеих версиях; авторское название материала при этом сохраняется.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Указать конкретный болгарский сборник или олимпиадную подборку, подтверждающие пояснение о происхождении условного названия «Задача из Болгарии». Если такого источника нет, нужно убрать или осторожнее сформулировать это пояснение в обеих версиях; авторское название материала при этом сохраняется.",
+        "en": "Please identify a specific Bulgarian problem collection or competition source supporting the explanation of the conventional title “A problem from Bulgaria”. If no such source is available, please remove or qualify that explanation in both editions; the author’s title itself should be preserved."
+      },
+      "resolution": "Обе версии сохраняют авторское название и прямо сообщают, что его происхождение не установлено; неподтверждённое объяснение удалено."
+    },
+    {
+      "id": "illustration-provenance-rights",
+      "question": "Сохранить в метаданных изображения имя художницы Ольги Симоновой и ссылку на публичную страницу картины «Три рыбака» (2021), а также указать подтверждённое основание использования или лицензию. Не представлять стороннюю картину как авторскую иллюстрацию.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сохранить в метаданных изображения имя художницы Ольги Симоновой и ссылку на публичную страницу картины «Три рыбака» (2021), а также указать подтверждённое основание использования или лицензию. Не представлять стороннюю картину как авторскую иллюстрацию.",
+        "en": "Preserve the artist Olga Simonova’s name and the public page for her painting Three Fishermen (2021) in the image metadata, and state the confirmed rights basis or licence for its use. Do not present the third-party painting as an author illustration."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
