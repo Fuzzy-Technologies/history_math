@@ -1,0 +1,25 @@
+{
+  "review_version": 1,
+  "article_id": "hm-49d8920c0189",
+  "questions": [
+    {
+      "id": "future-publication-date",
+      "question": "Подтвердить исходную дату 2026-12-22: на 07.11.2026 публикация в Telegram ещё не состоялась.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "portrait-provenance",
+      "question": "Для двух исторических портретов Николая Гюнтера нужны фактические источники и авторы, где они известны, а также лицензия или подтверждённый правовой статус; формулировка «Иллюстрация к материалу» этого не устанавливает.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для двух исторических портретов Николая Гюнтера нужны фактические источники и авторы, где они известны, а также лицензия или подтверждённый правовой статус; формулировка «Иллюстрация к материалу» этого не устанавливает.",
+        "en": "The two historical portraits of Nikolai Günther need their actual sources and creators where known, plus a licence or confirmed rights status; the wording “illustration accompanying the text” does not establish provenance."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
