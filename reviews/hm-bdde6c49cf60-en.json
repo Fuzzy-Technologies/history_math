@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-bdde6c49cf60-en",
+  "questions": [
+    {
+      "id": "pivo-english-wordplay",
+      "question": "Please agree the English wordplay. Russian PI + VO spells pivo, meaning beer; the literal PI and VO are retained, but the payoff depends on Russian. Options are a brief explanation of pivo or an adaptation using PI + NT = PINT. The latter changes the invented number’s label and has not been applied without an editorial decision.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please agree the English wordplay. Russian PI + VO spells pivo, meaning beer; the literal PI and VO are retained, but the payoff depends on Russian. Options are a brief explanation of pivo or an adaptation using PI + NT = PINT. The latter changes the invented number’s label and has not been applied without an editorial decision.",
+        "ru": "В русском тексте ПИ + ВО даёт ПИВО; буквальные PI и VO в EN сохранены, но без знания русского развязка не считывается. Согласовать английское решение: кратко объяснить pivo («пиво») либо адаптировать игру к PI + NT = PINT. Второй вариант меняет обозначение придуманного числа, поэтому без редакторского решения не применён."
+      },
+      "resolution": "The English edition uses PI + NT = PINT to preserve the drink punchline. The Russian edition keeps ПИ + ВО."
+    },
+    {
+      "id": "joke-cover",
+      "question": "This “Mathematicians Joke” item has no cover. Please confirm publication without a cover or add the selected cover.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "This “Mathematicians Joke” item has no cover. Please confirm publication without a cover or add the selected cover.",
+        "ru": "У материала рубрики «Математики шутят» отсутствует обложка. Подтвердите публикацию без обложки либо добавьте выбранную обложку."
+      }
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Provide a public link to the original publication confirming the date 12.05.2024; the address must not be guessed.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide a public link to the original publication confirming the date 12.05.2024; the address must not be guessed.",
+        "ru": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 12.05.2024; адрес нельзя восстанавливать предположительно."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}

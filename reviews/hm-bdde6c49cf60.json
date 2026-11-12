@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-bdde6c49cf60",
+  "questions": [
+    {
+      "id": "pivo-english-wordplay",
+      "question": "В русском тексте ПИ + ВО даёт ПИВО; буквальные PI и VO в EN сохранены, но без знания русского развязка не считывается. Согласовать английское решение: кратко объяснить pivo («пиво») либо адаптировать игру к PI + NT = PINT. Второй вариант меняет обозначение придуманного числа, поэтому без редакторского решения не применён.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "В EN использована игра PI + NT = PINT. Условное число адаптировано ради той же шутки о напитке. RU сохраняет ПИ + ВО.",
+      "localizations": {
+        "source": "В русском тексте ПИ + ВО даёт ПИВО; буквальные PI и VO в EN сохранены, но без знания русского развязка не считывается. Согласовать английское решение: кратко объяснить pivo («пиво») либо адаптировать игру к PI + NT = PINT. Второй вариант меняет обозначение придуманного числа, поэтому без редакторского решения не применён.",
+        "en": "Please agree the English wordplay. Russian PI + VO spells pivo, meaning beer; the literal PI and VO are retained, but the payoff depends on Russian. Options are a brief explanation of pivo or an adaptation using PI + NT = PINT. The latter changes the invented number’s label and has not been applied without an editorial decision."
+      }
+    },
+    {
+      "id": "joke-cover",
+      "question": "У материала рубрики «Математики шутят» отсутствует обложка. Подтвердите публикацию без обложки либо добавьте выбранную обложку.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "У материала рубрики «Математики шутят» отсутствует обложка. Подтвердите публикацию без обложки либо добавьте выбранную обложку.",
+        "en": "This “Mathematicians Joke” item has no cover. Please confirm publication without a cover or add the selected cover."
+      }
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 12.05.2024; адрес нельзя восстанавливать предположительно.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 12.05.2024; адрес нельзя восстанавливать предположительно.",
+        "en": "Provide a public link to the original publication confirming the date 12.05.2024; the address must not be guessed."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
