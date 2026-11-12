@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2d666ca632ba",
+  "questions": [
+    {
+      "id": "leonardo-watermelon-source",
+      "question": "Указать номер записи или страницу издания Рихтера 1883 года, где подтверждаются история о квадратном арбузе и приписываемая Леонардо реплика. В электронном тексте Project Gutenberg такой фрагмент не найден. Если подтверждения нет, согласовать подачу истории как авторской шутки.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Указать номер записи или страницу издания Рихтера 1883 года, где подтверждаются история о квадратном арбузе и приписываемая Леонардо реплика. В электронном тексте Project Gutenberg такой фрагмент не найден. Если подтверждения нет, согласовать подачу истории как авторской шутки.",
+        "en": "Please identify the entry or page in Richter’s 1883 edition that supports the square-watermelon story and the line attributed to Leonardo. The passage was not found in the Project Gutenberg text. If no source can be identified, please agree on presenting the story as the author’s joke."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
