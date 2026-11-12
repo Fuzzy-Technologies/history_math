@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-289793235848",
+  "questions": [
+    {
+      "id": "round-table-upper-bound",
+      "question": "Исправить формулировку об общем числе рассадок: выражение $(n-1)(n-2)/2$ даёт верхнюю оценку, поскольку для любого выбранного человека существует не более $\\binom{n-1}{2}$ неупорядоченных пар соседей. Равенство достигается в приведённом случае $n=7$, но из текста не следует, что оно достижимо для каждого $n$.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Обе версии называют общую формулу верхней оценкой; вступление говорит о возможности провести пятнадцать завтраков, а таблица проверена на отсутствие повторов.",
+      "localizations": {
+        "source": "Исправить формулировку об общем числе рассадок: выражение $(n-1)(n-2)/2$ даёт верхнюю оценку, поскольку для любого выбранного человека существует не более $\\binom{n-1}{2}$ неупорядоченных пар соседей. Равенство достигается в приведённом случае $n=7$, но из текста не следует, что оно достижимо для каждого $n$.",
+        "en": "Correct the general statement about the number of seatings: $(n-1)(n-2)/2$ is an upper bound because any chosen person has at most $\\binom{n-1}{2}$ unordered pairs of neighbours. Equality is attained by the displayed construction for $n=7$, but the text does not establish attainability for every $n$."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
