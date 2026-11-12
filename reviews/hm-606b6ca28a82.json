@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-606b6ca28a82",
+  "questions": [
+    {
+      "id": "epsilon-backwards-english-pun",
+      "question": "Английская адаптация игры «задом наперёд» / «заданного наперёд» в тексте принята: противопоставление backwards / given in advance и русские фразы объяснены в примечании. Однако общая обложка содержит русские реплики, поэтому для EN-версии нужна английская обложка либо явное редакторское принятие русскоязычного изображения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Английская адаптация игры «задом наперёд» / «заданного наперёд» в тексте принята: противопоставление backwards / given in advance и русские фразы объяснены в примечании. Однако общая обложка содержит русские реплики, поэтому для EN-версии нужна английская обложка либо явное редакторское принятие русскоязычного изображения.",
+        "en": "The prose adaptation of zadom naperyod / zadannogo naperyod is accepted: backwards / given in advance and the Russian wording are explained in Notes. However, the shared cover contains Russian dialogue, so the English edition needs an English cover or an explicit editorial acceptance of the Russian-language image."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
