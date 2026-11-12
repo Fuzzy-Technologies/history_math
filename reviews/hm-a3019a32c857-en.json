@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a3019a32c857-en",
+  "questions": [
+    {
+      "id": "frobenius-unsolved-scope",
+      "question": "Please qualify the opening description of the Frobenius problem as unsolved. The post itself gives a complete two-denomination solution and a polynomial-time algorithm for any fixed number of denominations. Kannan’s 1992 paper explicitly gives that algorithm: https://doi.org/10.1007/BF01204720 . Please distinguish lack of a simple general formula, complexity with a variable number of denominations, and particular open questions. The source opening remains; the description avoids the generalisation.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please qualify the opening description of the Frobenius problem as unsolved. The post itself gives a complete two-denomination solution and a polynomial-time algorithm for any fixed number of denominations. Kannan’s 1992 paper explicitly gives that algorithm: https://doi.org/10.1007/BF01204720 . Please distinguish lack of a simple general formula, complexity with a variable number of denominations, and particular open questions. The source opening remains; the description avoids the generalisation.",
+        "ru": "Уточнить начальное «среди нерешённых … остаётся проблема Фробениуса». Ниже сам текст сообщает о полном решении для двух номиналов и полиномиальном алгоритме при фиксированном их числе. У Каннана, Lattice translates of a polytope and the Frobenius problem (1992), явно дан такой алгоритм: https://doi.org/10.1007/BF01204720 . Следует развести отсутствие простой общей формулы, вычислительную сложность при переменном числе номиналов и конкретные открытые вопросы. Авторское начало сохранено; дайджест не повторяет это обобщение."
+      },
+      "resolution": "The opening now distinguishes the lack of a general formula for an arbitrary number of denominations from completely solved cases, consistently with Kannan’s fixed-dimension algorithm. https://doi.org/10.1007/BF01204720"
+    },
+    {
+      "id": "frobenius-denomination-one",
+      "question": "Please state the formulas’ domain. For coprime a, b > 1 there is a largest nonrepresentable positive amount. If a denomination is 1, every nonnegative amount is representable and the value −1 requires an explicit convention. The same boundary issue applies to F(ab, ac, bc). Please agree a short clarification in both versions.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please state the formulas’ domain. For coprime a, b > 1 there is a largest nonrepresentable positive amount. If a denomination is 1, every nonnegative amount is representable and the value −1 requires an explicit convention. The same boundary issue applies to F(ab, ac, bc). Please agree a short clarification in both versions.",
+        "ru": "Указать область формул: для взаимно простых a, b > 1 наибольшая непредставимая положительная сумма существует; при номинале 1 все неотрицательные суммы представимы, а значение −1 требует отдельной принятой конвенции. То же ограничение нужно учесть в специальном случае F(ab, ac, bc). Согласовать короткое уточнение обеих версий."
+      },
+      "resolution": "The general statement now requires positive integer denominations with gcd 1, and the two- and three-parameter formulas explicitly require parameters greater than 1."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
