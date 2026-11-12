@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8f06fede13d9",
+  "questions": [
+    {
+      "id": "club-members-terms-english",
+      "question": "Сверить исходную формулировку шутки Федина: вторая реплика должна говорить «не судить по нескольким членам об остальных», а не вводить отсутствующее в источнике «о людях». Английская версия может оставаться адаптивной с пояснением двойного значения слова «член».",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Сверить исходную формулировку шутки Федина: вторая реплика должна говорить «не судить по нескольким членам об остальных», а не вводить отсутствующее в источнике «о людях». Английская версия может оставаться адаптивной с пояснением двойного значения слова «член».",
+        "en": "Check the source wording of Fedin’s joke: the second rule should say «не судить по нескольким членам об остальных» rather than introduce «о людях», which is absent from the source. The English version may remain adaptive with a note explaining the double meaning of chlen."
+      },
+      "resolution": "Исходная формулировка Федина восстановлена; EN оставлена адаптивной и поясняет двойное значение слова chlen."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
