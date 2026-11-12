@@ -1,0 +1,25 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d10661b1f806",
+  "questions": [
+    {
+      "id": "pythagorean-pentagram-source",
+      "question": "Подтвердить источником утверждение о том, что пифагорейцы чертили пентаграмму на песке при приветствии друг друга. Указанный в статье источник о бумажном узле этого исторического утверждения не подтверждает.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "paper-knot-illustration-rights",
+      "question": "Указать источник и основание для воспроизведения всех трёх иллюстраций. Они воспроизводят фотографии и схему из материала «Правильный пятиугольник: узел из полоски бумаги» после кадрирования и цветовой обработки. Нужно подтвердить основание для повторного использования либо заменить их собственными иллюстрациями.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Указать источник и основание для воспроизведения всех трёх иллюстраций. Они воспроизводят фотографии и схему из материала «Правильный пятиугольник: узел из полоски бумаги» после кадрирования и цветовой обработки. Нужно подтвердить основание для повторного использования либо заменить их собственными иллюстрациями.",
+        "en": "Please document the source and rights basis for all three illustrations. They appear to reproduce photographs and a diagram from “A Regular Pentagon: a Knot in a Paper Strip” after cropping and colour processing. Provide a confirmed basis for reuse, or replace them with original illustrations."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
