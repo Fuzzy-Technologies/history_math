@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-24804e35194d-en",
+  "questions": [
+    {
+      "id": "vine-uniform-winding",
+      "question": "Please clarify the geometric assumption in both versions. The length 29 chi follows if the unrolled vine is straight: a uniform helix, or the shortest path with seven turns. The number of turns alone does not determine the pitch or exclude a longer curve. Should “uniformly” be added? The source condition and hint are retained.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please clarify the geometric assumption in both versions. The length 29 chi follows if the unrolled vine is straight: a uniform helix, or the shortest path with seven turns. The number of turns alone does not determine the pitch or exclude a longer curve. Should “uniformly” be added? The source condition and hint are retained.",
+        "ru": "Уточнить геометрическое условие в обеих версиях: длина 29 чи получается, если развёртка лианы — прямая (равномерная винтовая линия, либо кратчайшая линия с семью витками). Само число витков на цилиндре не задаёт шаг и не исключает более длинную кривую. Добавить «равномерными витками»? Исходное условие и авторское указание сохранены."
+      },
+      "resolution": "The condition now says the vine winds uniformly, so the straight unrolling and the length 29 chi are justified."
+    },
+    {
+      "id": "nine-chapters-proofs",
+      "question": "Please clarify whether “the book has no proofs, diagrams or methodological explanations” refers only to the early core text, rather than editions containing Liu Hui’s commentary and later additions. MacTutor’s history of the Nine Chapters discusses justification and commentaries separately. The source wording is retained; an editorial formulation should avoid applying the claim to every edition.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please clarify whether “the book has no proofs, diagrams or methodological explanations” refers only to the early core text, rather than editions containing Liu Hui’s commentary and later additions. MacTutor’s history of the Nine Chapters discusses justification and commentaries separately. The source wording is retained; an editorial formulation should avoid applying the claim to every edition.",
+        "ru": "Уточнить границы фразы «В книге нет доказательств, чертежей и каких-либо методических разъяснений»: относится ли она только к раннему основному тексту, а не к изданиям с комментариями Лю Хуэя и позднейшими дополнениями? Авторский обзор MacTutor (https://mathshistory.st-andrews.ac.uk/HistTopics/Nine_chapters/) отдельно обсуждает доказательные рассуждения и комментарии. В обеих версиях сохранён исходник; нужна редакторская формулировка без обобщения на все редакции."
+      },
+      "resolution": "The statement is now limited to the early core text, distinct from Liu Hui’s commentary."
+    },
+    {
+      "id": "nine-chapters-zhang-cang-attribution",
+      "question": "Qualify the categorical claim that Zhang Cang “finally edited” the Nine Chapters in the second century BCE. Modern scholarship distinguishes the traditional attribution from the dating of the text: Karine Chemla places its completion in the first century CE, while Christopher Cullen notes the lack of direct evidence for the text before the first century CE. Present this as a traditional attribution rather than an established fact.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Qualify the categorical claim that Zhang Cang “finally edited” the Nine Chapters in the second century BCE. Modern scholarship distinguishes the traditional attribution from the dating of the text: Karine Chemla places its completion in the first century CE, while Christopher Cullen notes the lack of direct evidence for the text before the first century CE. Present this as a traditional attribution rather than an established fact.",
+        "ru": "Смягчить категорическое утверждение, что Чжан Цан «окончательно отредактировал» «Девять глав» во II веке до н. э. Современная историография отличает традиционную атрибуцию от датировки текста: Karine Chemla относит завершение текста к I веку н. э., а Christopher Cullen отмечает отсутствие прямых свидетельств его существования ранее I века н. э. Нужно обозначить традицию как атрибуцию, а не установленный факт."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}

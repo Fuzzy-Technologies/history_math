@@ -1,0 +1,33 @@
+{
+  "review_version": 1,
+  "article_id": "hm-24804e35194d",
+  "questions": [
+    {
+      "id": "vine-uniform-winding",
+      "question": "Уточнить геометрическое условие в обеих версиях: длина 29 чи получается, если развёртка лианы — прямая (равномерная винтовая линия, либо кратчайшая линия с семью витками). Само число витков на цилиндре не задаёт шаг и не исключает более длинную кривую. Добавить «равномерными витками»? Исходное условие и авторское указание сохранены.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "В условие добавлено «равномерными витками», что делает развёртку прямой и обосновывает длину 29 чи."
+    },
+    {
+      "id": "nine-chapters-proofs",
+      "question": "Уточнить границы фразы «В книге нет доказательств, чертежей и каких-либо методических разъяснений»: относится ли она только к раннему основному тексту, а не к изданиям с комментариями Лю Хуэя и позднейшими дополнениями? Авторский обзор MacTutor (https://mathshistory.st-andrews.ac.uk/HistTopics/Nine_chapters/) отдельно обсуждает доказательные рассуждения и комментарии. В обеих версиях сохранён исходник; нужна редакторская формулировка без обобщения на все редакции.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Фраза сужена до раннего основного текста; комментарии Лю Хуэя отделены от этого утверждения."
+    },
+    {
+      "id": "nine-chapters-zhang-cang-attribution",
+      "question": "Смягчить категорическое утверждение, что Чжан Цан «окончательно отредактировал» «Девять глав» во II веке до н. э. Современная историография отличает традиционную атрибуцию от датировки текста: Karine Chemla относит завершение текста к I веку н. э., а Christopher Cullen отмечает отсутствие прямых свидетельств его существования ранее I века н. э. Нужно обозначить традицию как атрибуцию, а не установленный факт.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Смягчить категорическое утверждение, что Чжан Цан «окончательно отредактировал» «Девять глав» во II веке до н. э. Современная историография отличает традиционную атрибуцию от датировки текста: Karine Chemla относит завершение текста к I веку н. э., а Christopher Cullen отмечает отсутствие прямых свидетельств его существования ранее I века н. э. Нужно обозначить традицию как атрибуцию, а не установленный факт.",
+        "en": "Qualify the categorical claim that Zhang Cang “finally edited” the Nine Chapters in the second century BCE. Modern scholarship distinguishes the traditional attribution from the dating of the text: Karine Chemla places its completion in the first century CE, while Christopher Cullen notes the lack of direct evidence for the text before the first century CE. Present this as a traditional attribution rather than an established fact."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
