@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-4af51b34b08b-en",
+  "questions": [
+    {
+      "id": "support-links",
+      "question": "Please confirm the destinations and continued inclusion of the original support and book links in this permanent journal version: https://telegram.me/tribute/app?startapp=djsd and https://web.tribute.tg/l/w6 .",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please confirm the destinations and continued inclusion of the original support and book links in this permanent journal version: https://telegram.me/tribute/app?startapp=djsd and https://web.tribute.tg/l/w6 .",
+        "ru": "Второй комментарий содержит исходные ссылки для поздравления/поддержки и покупки книг: https://telegram.me/tribute/app?startapp=djsd и https://web.tribute.tg/l/w6 . Они сохранены кликабельными с историческим текстом; перед публикацией подтвердить актуальность назначения и желание оставить их в постоянной журнальной версии."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
