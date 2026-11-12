@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-cf1f3ede381a-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the description of Abel’s work on integral equations, the learned society named in the biography and the attribution of the quotations.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the description of Abel’s work on integral equations, the learned society named in the biography and the attribution of the quotations.",
+        "ru": "Уточнить описание работ Абеля по интегральным уравнениям, название научного общества и атрибуцию цитат."
+      },
+      "resolution": "The broad priority claim was replaced by the specific reference to Abel’s integral equation; the society name was regularized, the appointment described as temporary teaching work, and the unsourced quotations were paraphrased or explicitly qualified as traditional attribution."
+    },
+    {
+      "id": "q2",
+      "question": "For the portrait of Niels Henrik Abel, identify the artist or source work, a public source record and the licence or public-domain basis. Holding a copy in the author’s archive does not establish authorship of a third-party historical image.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the portrait of Niels Henrik Abel, identify the artist or source work, a public source record and the licence or public-domain basis. Holding a copy in the author’s archive does not establish authorship of a third-party historical image.",
+        "ru": "Для портрета Нильса Хенрика Абеля указать автора или исходное произведение, публичный источник и лицензию либо основание общественного достояния. Наличие копии в авторском архиве не подтверждает авторство исторического изображения третьего лица."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
