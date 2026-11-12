@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2bd73cbd21fd-en",
+  "questions": [
+    {
+      "id": "peasant-epigraph-attribution",
+      "question": "Please confirm primary sources and exact wording for the epigraphs attributed to Leibniz and Warren Buffett. The source post provides no references for them. All three epigraphs and their attributions remain for editorial decision.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please confirm primary sources and exact wording for the epigraphs attributed to Leibniz and Warren Buffett. The source post provides no references for them. All three epigraphs and their attributions remain for editorial decision.",
+        "ru": "Подтвердить первоисточники и точность формулировок эпиграфов, приписанных Лейбницу («Прежде, чем спорить, давайте считать») и Уоррену Баффетту («Если вы все такие умные, то почему тогда я такой богатый?»). В исходном посте ссылок на них нет. Все три эпиграфа и атрибуции сохранены для редакторского решения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
