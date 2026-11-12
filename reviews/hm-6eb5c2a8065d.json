@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6eb5c2a8065d",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет.",
+        "en": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration."
+      }
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Подтвердить исходную дату публикации и указать публичную ссылку: в статье и описании PR стоит 21.04.2024, а ранее записанные review и комментарий указывают 02.04.2024. Не менять дату без первичного источника.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подтвердить исходную дату публикации и указать публичную ссылку: в статье и описании PR стоит 21.04.2024, а ранее записанные review и комментарий указывают 02.04.2024. Не менять дату без первичного источника.",
+        "en": "Confirm the original publication date and provide a public link: the article and PR description use 21.04.2024, while the existing review and comment use 02.04.2024. Do not change the date without a primary source."
+      }
+    },
+    {
+      "id": "bradis-anecdote-source",
+      "question": "Указать проверяемый источник именно для школьной сцены с Брадисом: документированные варианты истории отличаются от текста статьи.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Указать проверяемый источник именно для школьной сцены с Брадисом: документированные варианты истории отличаются от текста статьи.",
+        "en": "Provide a verifiable source specifically for the school scene involving Bradis; documented variants differ from the article’s version."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
