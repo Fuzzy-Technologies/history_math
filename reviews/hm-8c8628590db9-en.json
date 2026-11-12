@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8c8628590db9-en",
+  "questions": [
+    {
+      "id": "parallel-rovno-translation",
+      "question": "The English adaptation of rovno in the prose is accepted: the Russian word is retained and its meanings exactly and evenly/straight are explained after the punchline. However, the shared cover contains Russian dialogue and the word «ровно», so the English edition needs an English cover or an explicit editorial acceptance of the Russian-language image.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The English adaptation of rovno in the prose is accepted: the Russian word is retained and its meanings exactly and evenly/straight are explained after the punchline. However, the shared cover contains Russian dialogue and the word «ровно», so the English edition needs an English cover or an explicit editorial acceptance of the Russian-language image.",
+        "ru": "Английская адаптация слова «ровно» в тексте принята: сохранено русское rovno, а значения exactly и evenly/straight объяснены после развязки. Однако общая обложка содержит русские реплики и слово «ровно», поэтому для EN-версии нужна английская обложка либо явное редакторское принятие русскоязычного изображения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
