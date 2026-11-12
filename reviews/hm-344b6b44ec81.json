@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-344b6b44ec81",
+  "questions": [
+    {
+      "id": "joke-cover",
+      "question": "В пакете отсутствует фактическая обложка для карточки шутки: список figures и манифест изображений пусты. Добавьте подходящую обложку и подключите её в обеих редакциях, не изменяя существующие подписи и текст.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "В пакете отсутствует фактическая обложка для карточки шутки: список figures и манифест изображений пусты. Добавьте подходящую обложку и подключите её в обеих редакциях, не изменяя существующие подписи и текст.",
+        "en": "The package has no actual cover for the joke card: figures is empty and the image manifest is empty. Add a suitable cover and reference it in both editions without changing the existing captions or text."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
