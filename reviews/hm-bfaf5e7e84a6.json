@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-bfaf5e7e84a6",
+  "questions": [
+    {
+      "id": "boole-distributivity-wording",
+      "question": "В примечании вслед за MacTutor https://mathshistory.st-andrews.ac.uk/Biographies/Boole/ сказано, что Буль был одним из первых, кто исследовал основные свойства чисел, например дистрибутивность. Редактору уточнить, нужна ли формулировка об абстрактном исследовании алгебраических законов, чтобы фраза не читалась как приписывание Булю открытия дистрибутивного закона арифметики. Исходная формулировка сохранена в RU/EN.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "В примечании вслед за MacTutor https://mathshistory.st-andrews.ac.uk/Biographies/Boole/ сказано, что Буль был одним из первых, кто исследовал основные свойства чисел, например дистрибутивность. Редактору уточнить, нужна ли формулировка об абстрактном исследовании алгебраических законов, чтобы фраза не читалась как приписывание Булю открытия дистрибутивного закона арифметики. Исходная формулировка сохранена в RU/EN.",
+        "en": "Following MacTutor https://mathshistory.st-andrews.ac.uk/Biographies/Boole/, the note says that Boole was among the first to investigate basic properties of numbers, such as distributivity. Please decide whether to specify the abstract study of algebraic laws, so the phrase is not read as crediting him with discovering the distributive law of arithmetic. The original formulation is retained in both versions."
+      },
+      "resolution": "Формулировка уточнена по второй главе «Законов мышления» Буля (1854). Речь о применении дистрибутивности и других алгебраических законов к символам логики. https://www.gutenberg.org/ebooks/15114"
+    },
+    {
+      "id": "boole-quotation-texts",
+      "question": "Сверьте английские исторические цитаты с указанными первоисточниками: опубликованные английские формулировки должны воспроизводить подтверждённый текст или быть явно обозначены как перевод/адаптация, а не подаваться как дословные цитаты.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверьте английские исторические цитаты с указанными первоисточниками: опубликованные английские формулировки должны воспроизводить подтверждённый текст или быть явно обозначены как перевод/адаптация, а не подаваться как дословные цитаты.",
+        "en": "Check the English historical quotations against the cited primary sources: the published English wording must reproduce a verified text or be clearly identified as a translation or adaptation, rather than presented as a verbatim quotation."
+      }
+    },
+    {
+      "id": "boole-images-provenance",
+      "question": "Для fig-2 и fig-3 укажите точные публичные источники, авторов и правовое основание использования. Для fig-3 следует сослаться на архивную запись UCC BP/1/356; для ретушированного fig-2 нужно установить исходное изображение и автора.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для fig-2 и fig-3 укажите точные публичные источники, авторов и правовое основание использования. Для fig-3 следует сослаться на архивную запись UCC BP/1/356; для ретушированного fig-2 нужно установить исходное изображение и автора.",
+        "en": "For fig-2 and fig-3, provide exact public sources, creators, and the legal basis for use. For fig-3, cite the UCC archival record BP/1/356; for the retouched fig-2, identify the underlying image and its creator."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
