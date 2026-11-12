@@ -1,0 +1,74 @@
+{
+  "review_version": 1,
+  "article_id": "hm-95838b5617bc-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the MAD terminology: the Russian source says “mean absolute deviation”, whereas equation (1), the English expansion and the English edition use the median absolute deviation. Agree consistent terminology in both editions.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the MAD terminology: the Russian source says “mean absolute deviation”, whereas equation (1), the English expansion and the English edition use the median absolute deviation. Agree consistent terminology in both editions.",
+        "ru": "Уточнить термин MAD: в русском исходнике употреблено «среднее абсолютное отклонение», тогда как формула (1), английская расшифровка и EN-версия используют медианное абсолютное отклонение. Согласовать терминологию обеих версий."
+      },
+      "resolution": "Both editions use median absolute deviation, as defined in equation (1)."
+    },
+    {
+      "id": "q2",
+      "question": "Define Wᵢ for every observation xᵢ, including boundary elements. Equations (2)–(3) index all n elements, while the text simultaneously states that there are only n − w + 1 windows. The pinned TKSBrokerAPI implementation at commit 59015cad72e741b8fdfe282548fb5be0242dcc0b uses windows of size 2w in the central region and clipped windows around i at the boundaries; it does not pre-extend the series as the conclusion claims. Choose one contract and align equations (2)–(3), the window description and the conclusion consistently.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Define Wᵢ for every observation xᵢ, including boundary elements. Equations (2)–(3) index all n elements, while the text simultaneously states that there are only n − w + 1 windows. The pinned TKSBrokerAPI implementation at commit 59015cad72e741b8fdfe282548fb5be0242dcc0b uses windows of size 2w in the central region and clipped windows around i at the boundaries; it does not pre-extend the series as the conclusion claims. Choose one contract and align equations (2)–(3), the window description and the conclusion consistently.",
+        "ru": "Определить окно Wᵢ для каждого наблюдения xᵢ, включая граничные элементы. Формулы (2)–(3) индексируют все n элементов, но текст одновременно утверждает, что окон только n − w + 1. Закреплённая реализация TKSBrokerAPI на коммите 59015cad72e741b8fdfe282548fb5be0242dcc0b использует в центральной части окна размером 2w, а на границах — обрезанные окна вокруг i; она не выполняет описанное в заключении предварительное расширение ряда. Нужно выбрать один контракт и синхронно согласовать формулы (2)–(3), описание окна и заключение."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Reconcile the charts with the example parameters: the text sets an initial price of 50 and precision=0, but the first source chart reports “Close, first: 44.0” and “Precision: 1”. All three original illustrations are retained; should the text explain that these are from another generator run?",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Reconcile the charts with the example parameters: the text sets an initial price of 50 and precision=0, but the first source chart reports “Close, first: 44.0” and “Precision: 1”. All three original illustrations are retained; should the text explain that these are from another generator run?",
+        "ru": "Сверить графики с параметрами примера: текст задаёт начальную цену 50 и precision=0, а на первом исходном рисунке указаны Close, first: 44.0 и Precision: 1. Все три исходные иллюстрации сохранены; нужно ли пояснить, что это другой запуск генератора?"
+      },
+      "resolution": "Both editions explain that the source charts come from a separate run with the parameters displayed on the charts."
+    },
+    {
+      "id": "q4",
+      "question": "Agree corrections to bibliographic typos: DBSCAN4 in reference 2, and Ronchtti, Robust Statistic and Influence Functons in reference 10. The source wording and spellings are retained; reference 2 uses the verified HTTPS Math-Net.Ru record for the same article.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Agree corrections to bibliographic typos: DBSCAN4 in reference 2, and Ronchtti, Robust Statistic and Influence Functons in reference 10. The source wording and spellings are retained; reference 2 uses the verified HTTPS Math-Net.Ru record for the same article.",
+        "ru": "Согласовать библиографические опечатки: DBSCAN4 в источнике 2, Ronchtti, Robust Statistic и Influence Functons в источнике 10. Названия и написание авторского списка сохранены; HTTPS-ссылка источника 2 ведёт на подтверждённую карточку той же статьи Math-Net.Ru."
+      },
+      "resolution": "Corrected the titles and names against the Math-Net.Ru record and the Wiley catalogue."
+    },
+    {
+      "id": "q5",
+      "question": "Check availability of the external English translation and the line-bound links to TKSBrokerAPI’s develop branch. Historical URLs are retained; the examples were not executed and compatibility with current library versions was not established during preparation.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Check availability of the external English translation and the line-bound links to TKSBrokerAPI’s develop branch. Historical URLs are retained; the examples were not executed and compatibility with current library versions was not established during preparation.",
+        "ru": "Проверить доступность внешнего английского перевода и привязанных к строкам ссылок на develop-ветку TKSBrokerAPI. Исторические URL сохранены; в этой подготовке примеры не исполнялись и их совместимость с текущими версиями библиотек не подтверждалась."
+      },
+      "resolution": "The TKSBrokerAPI links are pinned to commit 59015cad72e741b8fdfe282548fb5be0242dcc0b in the Fuzzy-Technologies repository; the function ranges are updated to lines 667–798 and 801–879, and the notebook, test script and README are bound to the same revision. The English-translation link is replaced with the indexed author publication. The article documents a historical experiment and does not claim compatibility of the examples with current library versions."
+    },
+    {
+      "id": "breakdown-point-definition",
+      "question": "Clarify the definition of the breakdown point: it is the smallest proportion of replacements that can drive an estimator arbitrarily far, rather than the largest contaminated proportion that the method can “handle”. Align both editions with the following examples of 0.5 for the median and 1/n for the mean.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the definition of the breakdown point: it is the smallest proportion of replacements that can drive an estimator arbitrarily far, rather than the largest contaminated proportion that the method can “handle”. Align both editions with the following examples of 0.5 for the median and 1/n for the mean.",
+        "ru": "Уточнить определение точки разрыва: это минимальная доля замен, способная увести оценку сколь угодно далеко, а не наибольшая доля загрязнения, которую метод «может обработать». Согласовать определение обеих версий с последующими примерами 0,5 для медианы и 1/n для среднего."
+      },
+      "resolution": "The definition now states the smallest replacement fraction that can drive an estimator arbitrarily far."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
