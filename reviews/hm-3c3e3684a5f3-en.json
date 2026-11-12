@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-3c3e3684a5f3-en",
+  "questions": [
+    {
+      "id": "storm-source-edition",
+      "question": "Please identify the eighteenth-century collection claimed in the title: author, title, edition and page. The source supplies the complete problem, solution and old mnemonic but no bibliographic reference. The original title remains.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please identify the eighteenth-century collection claimed in the title: author, title, edition and page. The source supplies the complete problem, solution and old mnemonic but no bibliographic reference. The original title remains.",
+        "ru": "Уточнить, из какого задачника XVIII века взята задача, как заявлено в заголовке: автор, название, издание и страница. В посте есть полное условие, решение и старинная мнемоника, но библиографическая ссылка отсутствует. Исходный заголовок сохранён."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
