@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-5ac2d5a436fc",
+  "questions": [
+    {
+      "id": "turing-composite-illustration-provenance",
+      "question": "Для составной иллюстрации с портретом Тьюринга и схемой игры в имитацию укажите фактического автора или исходное произведение, правообладателя, проверяемый публичный источник и правовое основание использования. Нейтральная формулировка «Иллюстрация к материалу» не подтверждает происхождение изображения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для составной иллюстрации с портретом Тьюринга и схемой игры в имитацию укажите фактического автора или исходное произведение, правообладателя, проверяемый публичный источник и правовое основание использования. Нейтральная формулировка «Иллюстрация к материалу» не подтверждает происхождение изображения.",
+        "en": "For the composite illustration containing Turing’s portrait and the imitation-game diagram, identify the actual creator or source work, the rightsholder, a verifiable public source, and the legal basis for use. The neutral wording “Illustration accompanying the text” does not establish the image’s provenance."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
