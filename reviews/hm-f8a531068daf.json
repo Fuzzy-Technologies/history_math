@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f8a531068daf",
+  "questions": [
+    {
+      "id": "bourbaki-age-rule-and-folklore",
+      "question": "Развести документированное возрастное правило и юмористическую историю: Борель (примечание 10, стр. 378) пишет о предельном возрасте 50 лет и строгом соблюдении с 1956 года; Хесин пересказывает версию Арнольда, где успешная «кокотизация» позволяет остаться. Авторский рассказ сохранён. Решить, нужна ли явная оговорка, что это две разные по статусу версии, а не подтверждение практики продления членства. Источники: https://www.ams.org/notices/199803/borel.pdf ; https://www.math.toronto.edu/khesin/papers/ArnoldSecondAMS1204.pdf .",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "В статье документированное правило ухода в пятьдесят лет прямо отделено от юмористического рассказа Арнольда о кокотизации.",
+      "localizations": {
+        "source": "Развести документированное возрастное правило и юмористическую историю: Борель (примечание 10, стр. 378) пишет о предельном возрасте 50 лет и строгом соблюдении с 1956 года; Хесин пересказывает версию Арнольда, где успешная «кокотизация» позволяет остаться. Авторский рассказ сохранён. Решить, нужна ли явная оговорка, что это две разные по статусу версии, а не подтверждение практики продления членства. Источники: https://www.ams.org/notices/199803/borel.pdf ; https://www.math.toronto.edu/khesin/papers/ArnoldSecondAMS1204.pdf .",
+        "en": "Distinguish the documented retirement rule from the humorous story: Borel’s note 10 on p. 378 says retirement at fifty was strictly enforced from 1956, while Khesin retells Arnold’s version in which a successful coconutization permits continued membership. Decide whether to state explicitly that the tale does not establish an actual extension procedure."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
