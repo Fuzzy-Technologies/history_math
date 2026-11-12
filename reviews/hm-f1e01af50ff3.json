@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f1e01af50ff3",
+  "questions": [
+    {
+      "id": "dismissal-source-and-context",
+      "question": "Подтвердить документальные источники для рассказа о пропущенном заговоре и для представления фразы о «духе бесконечно малых» как текста приказа: авторитетные биографии относят эту оценку к позднейшему воспоминанию Наполеона, а не к приказу. Для карточки рубрики «Математики шутят» также нужна фактическая обложка: сейчас figures и image manifest пусты.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подтвердить документальные источники для рассказа о пропущенном заговоре и для представления фразы о «духе бесконечно малых» как текста приказа: авторитетные биографии относят эту оценку к позднейшему воспоминанию Наполеона, а не к приказу. Для карточки рубрики «Математики шутят» также нужна фактическая обложка: сейчас figures и image manifest пусты.",
+        "en": "Please confirm documentary sources for the overlooked-conspiracy story and for presenting the “spirit of infinitesimals” remark as the wording of an order: authoritative biographies attribute this assessment to Napoleon’s later reminiscence, not to an order. The Mathematicians Joke card also needs an actual cover; figures and the image manifest are currently empty."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
