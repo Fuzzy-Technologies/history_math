@@ -1,0 +1,25 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0ebee945cafd",
+  "questions": [
+    {
+      "id": "future-publication-date",
+      "question": "Подтвердить исходную дату 2026-12-29: на 07.11.2026 публикация в Telegram ещё не состоялась.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "portrait-provenance",
+      "question": "Для обоих исторических портретов Томаса Стилтьеса нужны фактические источники и авторы, где они известны, а также подтверждённое правовое основание; формулировка «Иллюстрация к материалу» этого не устанавливает.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для обоих исторических портретов Томаса Стилтьеса нужны фактические источники и авторы, где они известны, а также подтверждённое правовое основание; формулировка «Иллюстрация к материалу» этого не устанавливает.",
+        "en": "Both historical portraits of Thomas Stieltjes need their actual sources and creators where known, plus a confirmed rights basis; the wording “illustration accompanying the text” does not establish provenance."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
