@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ba3a7792dd2b-en",
+  "questions": [
+    {
+      "id": "khayyam-wine-anecdote-source",
+      "question": "Please identify the page or quatrain underlying the story about wine with three unknowns. The source cites Edward FitzGerald’s The Rubaiyat of Omar Khayyam (1859), but no connection to a specific passage has been established. The publication year is not disputed. The joke and original bibliography are retained; the editor should agree the attribution.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please identify the page or quatrain underlying the story about wine with three unknowns. The source cites Edward FitzGerald’s The Rubaiyat of Omar Khayyam (1859), but no connection to a specific passage has been established. The publication year is not disputed. The joke and original bibliography are retained; the editor should agree the attribution.",
+        "ru": "Уточнить страницу или номер рубаи, на котором основана история про вино с тремя неизвестными. Исходник ссылается на перевод Edward FitzGerald «The Rubaiyat of Omar Khayyam» (1859), но связь этого анекдота с конкретным текстом не установлена. Год издания не оспаривается. Сохранены шутка и исходная библиография; редактору решить, как обозначить атрибуцию."
+      }
+    },
+    {
+      "id": "khayyam-images-provenance",
+      "question": "For fig-2 and fig-3, identify the actual creators, public sources, and legal bases; an author-archive label does not establish the provenance of third-party historical images.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For fig-2 and fig-3, identify the actual creators, public sources, and legal bases; an author-archive label does not establish the provenance of third-party historical images.",
+        "ru": "Для fig-2 и fig-3 указать фактических создателей, публичные источники и правовые основания; помета об авторском архиве не подтверждает происхождение сторонних исторических изображений."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
