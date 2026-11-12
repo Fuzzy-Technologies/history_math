@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b57d8ece616e",
+  "questions": [
+    {
+      "id": "bergman-cover-place-date",
+      "question": "Исправить или объяснить место и дату на обложке: на календаре указано «Vienna 1934», тогда как текст и биографические источники относят работу Бергмана в Томском университете к 1934–1936 годам; его учёба в Вене завершилась значительно раньше. Следует согласовать надпись на обложке и описания RU/EN. Источники: https://mathshistory.st-andrews.ac.uk/Biographies/Bergman/ и https://www.deutsche-biographie.de/dbo010680-5.html?language=en",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Исправить или объяснить место и дату на обложке: на календаре указано «Vienna 1934», тогда как текст и биографические источники относят работу Бергмана в Томском университете к 1934–1936 годам; его учёба в Вене завершилась значительно раньше. Следует согласовать надпись на обложке и описания RU/EN. Источники: https://mathshistory.st-andrews.ac.uk/Biographies/Bergman/ и https://www.deutsche-biographie.de/dbo010680-5.html?language=en",
+        "en": "Correct or explain the place and date on the cover: its calendar reads “Vienna 1934”, whereas the article and biographical sources place Bergman at Tomsk University in 1934–1936; his studies in Vienna ended much earlier. The cover label and the RU/EN descriptions must be reconciled. Sources: https://mathshistory.st-andrews.ac.uk/Biographies/Bergman/ and https://www.deutsche-biographie.de/dbo010680-5.html?language=en"
+      }
+    },
+    {
+      "id": "bergman-scans-rights",
+      "question": "Для сканов страниц журнала «Квант» укажите действительное правовое основание использования в обеих редакциях. Библиографическая ссылка определяет источник публикации, но нахождение файлов в авторском архиве не подтверждает права на воспроизведение сканов.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для сканов страниц журнала «Квант» укажите действительное правовое основание использования в обеих редакциях. Библиографическая ссылка определяет источник публикации, но нахождение файлов в авторском архиве не подтверждает права на воспроизведение сканов.",
+        "en": "For the scans of pages from Kvant magazine, state the actual legal basis for use in both editions. A bibliographic citation identifies the publication source, but possession of the files in the author’s archive does not establish reproduction rights."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
