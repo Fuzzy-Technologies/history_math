@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6b8529933196-en",
+  "questions": [
+    {
+      "id": "three-wise-men-silence",
+      "question": "Please clarify what makes silence informative: participants know the available caps and rules, reason correctly and know this about one another; the stages of waiting also need explanation. The introduction’s “logic alone” obscures these conditions, and the final “he is silent” has an ambiguous referent. Please agree a short clarification or a more explicit argument in both versions. The entire classic source solution remains.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please clarify what makes silence informative: participants know the available caps and rules, reason correctly and know this about one another; the stages of waiting also need explanation. The introduction’s “logic alone” obscures these conditions, and the final “he is silent” has an ambiguous referent. Please agree a short clarification or a more explicit argument in both versions. The entire classic source solution remains.",
+        "ru": "Уточнить условия, позволяющие делать вывод из молчания: участники знают набор колпаков и правила, рассуждают безошибочно и знают это друг о друге; требуется также объяснить этапы ожидания. Сейчас вводное «работает только логика» и отказ от дополнительных допущений скрывают эти условия, а в заключительной реплике неоднозначно «он молчит». Согласовать краткое пояснение или более явный разбор в обеих версиях. Классическое авторское решение сохранено целиком."
+      },
+      "resolution": "The common-knowledge assumptions and two waiting stages are now explicit; the ambiguous “he is silent” has been replaced with a staged argument."
+    },
+    {
+      "id": "cap-illustration-colour",
+      "question": "The illustration shows the three wise men in white turbans, while the problem and solution concern black caps. Clarify that the image is decorative and does not depict the puzzle state, or bring the cover into line with the problem.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The illustration shows the three wise men in white turbans, while the problem and solution concern black caps. Clarify that the image is decorative and does not depict the puzzle state, or bring the cover into line with the problem.",
+        "ru": "На иллюстрации трое мудрецов изображены в белых тюрбанах, тогда как условие и решение относятся к чёрным колпакам. Уточнить, что изображение декоративное и не показывает ситуацию задачи, либо привести обложку в соответствие с условием."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
