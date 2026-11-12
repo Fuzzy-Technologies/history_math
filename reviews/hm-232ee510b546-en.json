@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-232ee510b546-en",
+  "questions": [
+    {
+      "id": "voytyakhovsky-maidens-rule",
+      "question": "Correct the explanation of the “maiden’s” or “blind” rule. It was not general advice to begin without a plan: I. Ya. Depman treats it as a distinct historical rule for indeterminate distribution problems (History of Arithmetic, 1965, pp. 323–325), while the names regula virginum and “blind rule” derive from the people named in such problems. Please check the exact procedure against a historical source and replace the current three-paragraph explanation consistently in both editions.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Correct the explanation of the “maiden’s” or “blind” rule. It was not general advice to begin without a plan: I. Ya. Depman treats it as a distinct historical rule for indeterminate distribution problems (History of Arithmetic, 1965, pp. 323–325), while the names regula virginum and “blind rule” derive from the people named in such problems. Please check the exact procedure against a historical source and replace the current three-paragraph explanation consistently in both editions.",
+        "ru": "Исправить объяснение «девичьего» / «слепого» правила. Это не общий совет начать действовать без плана: И. Я. Депман разбирает его как отдельное историческое правило решения неопределённых задач на распределение («История арифметики», 1965, с. 323–325), а названия regula virginum и «слепое правило» связаны с персонажами таких задач. Нужно сверить точный алгоритм с историческим источником и согласованно заменить нынешние три абзаца в обеих версиях."
+      }
+    },
+    {
+      "id": "illustration-provenance-rights",
+      "question": "Clarify the public provenance and rights basis of both illustrations. For the portrait attributed to an unknown artist and the Tula Museum of Fine Arts, provide a verifiable museum or catalogue page and the available rights or licence status; for the first illustration, identify the confirmed author or rights holder. Do not describe an image as the author’s without confirmation.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify the public provenance and rights basis of both illustrations. For the portrait attributed to an unknown artist and the Tula Museum of Fine Arts, provide a verifiable museum or catalogue page and the available rights or licence status; for the first illustration, identify the confirmed author or rights holder. Do not describe an image as the author’s without confirmation.",
+        "ru": "Уточнить публичное происхождение и правовое основание обеих иллюстраций. Для портрета неизвестного художника из Тульского музея изобразительных искусств указать проверяемую страницу музея или каталога и доступный статус прав/лицензии; для первой иллюстрации — подтверждённого автора или правообладателя. Не обозначать изображение авторским без подтверждения."
+      }
+    },
+    {
+      "id": "voytyakhovsky-life-dates",
+      "question": "Clarify Yefim D. Voytyakhovsky’s life dates. The Russian State Library and National Electronic Library catalogues give “?–c. 1812”, so the unsupported exact dates 1742–1812 should not remain. Provide a reliable biographical source or use a consistently qualified formulation in both editions.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify Yefim D. Voytyakhovsky’s life dates. The Russian State Library and National Electronic Library catalogues give “?–c. 1812”, so the unsupported exact dates 1742–1812 should not remain. Provide a reliable biographical source or use a consistently qualified formulation in both editions.",
+        "ru": "Уточнить даты жизни Ефима Д. Войтяховского. Каталоги РГБ и НЭБ указывают «? — ок. 1812», поэтому неподтверждённые 1742–1812 нельзя оставлять как точные. Нужен надёжный биографический источник либо согласованная осторожная формулировка в обеих версиях."
+      },
+      "resolution": "Both editions now use the qualified dates “?–c. 1812” supported by the RSL and NEB catalogues: https://search.rsl.ru/ru/record/01005518378 ; https://old.knpam.rusneb.ru/item37427.htm"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
