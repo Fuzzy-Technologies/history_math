@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-632a751ba99c",
+  "questions": [
+    {
+      "id": "pi-vodka-illustration-exponents",
+      "question": "На fig-1 цифры 09 и 63 вынесены относительно 1,49 и 2,86 в нижний/верхний индексы, поэтому запись может читаться не как 1,4909 в степени 2,8663. В тексте обе формулы набраны корректно и численно проверены; исходный рисунок сохранён. Решить, нужно ли исправить надпись на иллюстрации перед публикацией.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "На fig-1 цифры 09 и 63 вынесены относительно 1,49 и 2,86 в нижний/верхний индексы, поэтому запись может читаться не как 1,4909 в степени 2,8663. В тексте обе формулы набраны корректно и численно проверены; исходный рисунок сохранён. Решить, нужно ли исправить надпись на иллюстрации перед публикацией.",
+        "en": "In fig-1, the digits 09 and 63 are displaced as subscripts or superscripts beside 1.49 and 2.86, making the formula ambiguous. Both formulas in the text are correctly typeset and numerically checked. The original image is retained; decide whether its lettering needs correction before publication."
+      }
+    },
+    {
+      "id": "solomatkin-figure-source-rights",
+      "question": "Fig-2 — картина Леонида Соломаткина «Пирушка дельцов» (1880). Перед публикацией нужны публичный источник оригинала и действительное основание прав; запись об авторском архиве не должна представлять стороннюю картину как авторскую иллюстрацию.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Fig-2 — картина Леонида Соломаткина «Пирушка дельцов» (1880). Перед публикацией нужны публичный источник оригинала и действительное основание прав; запись об авторском архиве не должна представлять стороннюю картину как авторскую иллюстрацию.",
+        "en": "Fig. 2 is Leonid Solomatkin’s painting “Dealmakers’ Revelry” (1880). Before publication, provide a public source for the original and a valid rights basis; an archive copy must not present this third-party painting as the author’s own illustration."
+      }
+    },
+    {
+      "id": "gorobets-attribution",
+      "question": "В обеих редакциях восстановить атрибуцию первоисточника: сразу после первой формулы у Федина указано «Сообщил Б. С. Горобец», но имя человека, передавшего историю, сейчас отсутствует.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "В обеих редакциях восстановить атрибуцию первоисточника: сразу после первой формулы у Федина указано «Сообщил Б. С. Горобец», но имя человека, передавшего историю, сейчас отсутствует.",
+        "en": "Restore the source attribution in both editions: immediately after the first formula, Fedin states “Reported by B. S. Gorobets,” but the person who supplied the story is currently omitted."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
