@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a303a4cc53e2-en",
+  "questions": [
+    {
+      "id": "birth-date",
+      "question": "The source gives 27 July (8 August) 1876, while the checked 1953 obituary, p. 131, prints 9 August 1876. Please choose the birth date for both versions: https://www.mathnet.ru/links/699452a6c1f58d869237ebfd54c537ef/rm8228.pdf .",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The source gives 27 July (8 August) 1876, while the checked 1953 obituary, p. 131, prints 9 August 1876. Please choose the birth date for both versions: https://www.mathnet.ru/links/699452a6c1f58d869237ebfd54c537ef/rm8228.pdf .",
+        "ru": "В посте дата рождения 27 июля (8 августа) 1876 года; в статье М. П. Черняева, Н. М. Несторовича и Н. М. Ляпина «Дмитрий Дмитриевич Мордухай-Болтовской (1876–1952)», УМН 8: 4(56), 1953, с. 131, напечатано 9 августа 1876 года. Скан титульной страницы сверён; это содержательное расхождение, не пересчёт по разнице календарей. Какую дату оставить в обеих версиях? Источник: https://www.mathnet.ru/links/699452a6c1f58d869237ebfd54c537ef/rm8228.pdf ."
+      }
+    },
+    {
+      "id": "hilbert-22",
+      "question": "Please clarify which result and scope are intended by the claim that he solved Hilbert’s twenty-second problem. SFU makes that claim, while the standard uniformization result is associated with Poincaré and Koebe in 1907. The original assertion remains pending an editorial decision in both versions.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please clarify which result and scope are intended by the claim that he solved Hilbert’s twenty-second problem. SFU makes that claim, while the standard uniformization result is associated with Poincaré and Koebe in 1907. The original assertion remains pending an editorial decision in both versions.",
+        "ru": "Уточнить фразу «решение 22-й проблемы Гильберта». ЮФУ действительно приводит её: https://sfedu.ru/press-center/news/73279 , но стандартное решение задачи униформизации связывают с Пуанкаре и Кёбе, 1907 год; математическая история с разбором оригинальных работ: https://www-fourier.ujf-grenoble.fr/~py/Documents/Book-uniformization/Uniformization-2016.pdf . Требуется указать конкретный результат Мордухая-Болтовского и его область применимости либо согласовать более осторожную формулировку для обеих версий; авторское утверждение пока сохранено."
+      }
+    },
+    {
+      "id": "image-attribution",
+      "question": "Please provide the actual public source or photographer and the licence or other verified publication right for each of the three historical portraits of Mordukhai-Boltovskoi; “Mansur Gilmullin’s archive” and “Illustration accompanying the text” do not establish those facts.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please provide the actual public source or photographer and the licence or other verified publication right for each of the three historical portraits of Mordukhai-Boltovskoi; “Mansur Gilmullin’s archive” and “Illustration accompanying the text” do not establish those facts.",
+        "ru": "Для трёх исторических портретов Мордухая-Болтовского необходимо указать реальный публичный первоисточник/автора и лицензию либо иное подтверждённое право публикации; запись «Авторский архив Мансура Гильмуллина» и основание «Иллюстрация к материалу» сами по себе этого не устанавливают."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
