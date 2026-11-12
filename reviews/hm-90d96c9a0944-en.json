@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-90d96c9a0944-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the historical institute and department names and identify the editions of Kovalevskaya’s works and correspondence that Kochina prepared and translated.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the historical institute and department names and identify the editions of Kovalevskaya’s works and correspondence that Kochina prepared and translated.",
+        "ru": "Уточнить точные исторические названия институтов и подразделений, а также какие издания сочинений и переписки Ковалевской подготовлены и переведены Кочиной."
+      }
+    },
+    {
+      "id": "portrait-provenance",
+      "question": "Identify the creator, a verifiable public source and the legal status of the portrait of Pelageya Kochina; “Illustration accompanying the text” does not establish its provenance.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Identify the creator, a verifiable public source and the legal status of the portrait of Pelageya Kochina; “Illustration accompanying the text” does not establish its provenance.",
+        "ru": "Установить автора, проверяемый публичный первоисточник и правовой статус портрета П. Я. Кочиной; формулировка «Иллюстрация к материалу» не подтверждает происхождение изображения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
