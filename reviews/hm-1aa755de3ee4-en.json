@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1aa755de3ee4-en",
+  "questions": [
+    {
+      "id": "cover-authorship-rights",
+      "question": "Please identify the verified creator or rights holder of the hand-and-ring cover and the basis for its use. The caption calls it an author-created illustration, but source and rights_basis only say “Illustration accompanying the text,” which does not establish authorship.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please identify the verified creator or rights holder of the hand-and-ring cover and the basis for its use. The caption calls it an author-created illustration, but source and rights_basis only say “Illustration accompanying the text,” which does not establish authorship.",
+        "ru": "Уточнить подтверждённого автора или правообладателя обложки с ладонью и кольцом и основание её использования. Сейчас подпись называет изображение авторским, но source и rights_basis содержат только «Иллюстрация к материалу», что не подтверждает авторство."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
