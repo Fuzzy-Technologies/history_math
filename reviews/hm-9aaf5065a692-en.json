@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-9aaf5065a692-en",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration.",
+        "ru": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации."
+      }
+    },
+    {
+      "id": "original-url-and-en-adaptation",
+      "question": "The preserved date 2023-09-17 needs a verifiable original-publication link (`original_publication.url` and `source_url`). Also replace the gendered wording `unzip him` in English and extend both digests so that they include the point of the pun.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The preserved date 2023-09-17 needs a verifiable original-publication link (`original_publication.url` and `source_url`). Also replace the gendered wording `unzip him` in English and extend both digests so that they include the point of the pun.",
+        "ru": "Для сохранённой даты 2023-09-17 нужна проверяемая ссылка на исходную публикацию (`original_publication.url` и `source_url`). Также исправить гендерно маркированное `unzip him` в EN и дополнить оба дайджеста до сути каламбура."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
