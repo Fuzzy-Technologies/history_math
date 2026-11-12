@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-9b361e4ba75a",
+  "questions": [
+    {
+      "id": "depman-diagrams-rights",
+      "question": "Подтвердить правовое основание для воспроизведения рис. 2 и 3 из книги И. Я. Депмана «Рассказы о решении задач» (Детгиз, 1957, с. 71; художник Ю. Смольников). Источник и автор рисунков указаны, но лицензия или иное основание использования пока не подтверждены.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подтвердить правовое основание для воспроизведения рис. 2 и 3 из книги И. Я. Депмана «Рассказы о решении задач» (Детгиз, 1957, с. 71; художник Ю. Смольников). Источник и автор рисунков указаны, но лицензия или иное основание использования пока не подтверждены.",
+        "en": "Confirm the rights basis for reproducing figures 2 and 3 from I. Ya. Depman’s Stories about Solving Problems (Detgiz, 1957, p. 71; illustrator Y. Smolnikov). The source and illustrator are now credited, but the licence or other basis for reuse is not yet confirmed."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
