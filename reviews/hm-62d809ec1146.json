@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-62d809ec1146",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить соавторов и выходные данные книги «Электричество в живых организмах», чтобы однозначно установить издание. «Математика с человеческим лицом» сохранена как текст/очерк, а не выдуманная отдельная монография: такой текст Глаголевой имеется в издательском сборнике воспоминаний о Гельфанде.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Книга сверена с электронной копией на Math.ru: М. Б. Беркинблит, Е. Г. Глаголева, «Электричество в живых организмах». М.: Наука, 1988. «Библиотечка „Квант“», вып. 69.",
+      "localizations": {
+        "source": "Уточнить соавторов и выходные данные книги «Электричество в живых организмах», чтобы однозначно установить издание. «Математика с человеческим лицом» сохранена как текст/очерк, а не выдуманная отдельная монография: такой текст Глаголевой имеется в издательском сборнике воспоминаний о Гельфанде.",
+        "en": "Supply the co-authors and publication details of Electricity in Living Organisms so the edition is unambiguous. Mathematics with a Human Face is retained as an essay, not invented as a separate monograph; the publisher’s Gelfand memorial volume includes Glagoleva’s text under that title."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Проверить точное название и институциональную связь названного в посте преемника ВЗМШ — Открытого лицея «Всероссийская заочная многопредметная школа». В примечании дано воспоминание 2016 года; при сохранении слова «сегодня» нужна точная привязка к описываемому периоду. Исторические детали и исходную дату не заменять текущими без редакторского решения.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Официальная страница ВЗМШ указывает, что школа действует как структурное подразделение ГБОУ «Лицей „Вторая школа“» по программам дополнительного образования; формулировка статьи и ссылка обновлены.",
+      "localizations": {
+        "source": "Проверить точное название и институциональную связь названного в посте преемника ВЗМШ — Открытого лицея «Всероссийская заочная многопредметная школа». В примечании дано воспоминание 2016 года; при сохранении слова «сегодня» нужна точная привязка к описываемому периоду. Исторические детали и исходную дату не заменять текущими без редакторского решения.",
+        "en": "Verify the exact name and institutional relationship of the successor named in the post, the Open Lyceum All-Russian Correspondence Multidisciplinary School. The linked memoir dates from 2016, so today needs a clear historical reference. Preserve the historical detail and original date unless the editor approves an update."
+      }
+    },
+    {
+      "id": "image-provenance",
+      "question": "Для портрета Елены Глаголевой указать исходный публичный источник, автора или правообладателя и основание публикации. Для фотографии конференции ссылка на «Элементы» подтверждает место перепубликации, но требуется установить автора или первичный источник и допустимость использования изображения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для портрета Елены Глаголевой указать исходный публичный источник, автора или правообладателя и основание публикации. Для фотографии конференции ссылка на «Элементы» подтверждает место перепубликации, но требуется установить автора или первичный источник и допустимость использования изображения.",
+        "en": "For Yelena Glagoleva’s portrait, identify the original public source, creator or rights holder, and the basis for publication. For the conference photograph, the Elementy link establishes a republication location, but the creator or primary source and permission to use the image still need confirmation."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
