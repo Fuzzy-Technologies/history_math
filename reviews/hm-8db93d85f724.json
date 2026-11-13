@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8db93d85f724",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Проверить календарный стиль рождения: пост добавляет к 23 февраля 1906 скобку «8 марта», тогда как прочитанный некролог 1972 года даёт просто 23 февраля без указания старого стиля. Нужен первичный документ для такого перевода; до решения сохранена авторская запись RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Проверить календарный стиль рождения: пост добавляет к 23 февраля 1906 скобку «8 марта», тогда как прочитанный некролог 1972 года даёт просто 23 февраля без указания старого стиля. Нужен первичный документ для такого перевода; до решения сохранена авторская запись RU/EN.",
+        "en": "Verify the birth-date calendar: the post adds 8 March to 23 February 1906, whereas the examined 1972 obituary gives 23 February without an Old Style indication. Confirm that conversion from primary documentation; the author’s wording remains in both versions pending a decision."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Подтвердить по турнирным таблицам чемпионства Киева 1925 и УССР 1936, участие в чемпионате СССР 1939 и точное имя супруги-шахматистки. Некролог подтверждает мастерское звание 1937, но не все перечисленные турнирные результаты. Согласовать точные формулировки, включая возможное деление мест.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Уточнены результаты по турнирным данным: Погребысский разделил первое место в чемпионате Украинской ССР 1936 года; Зинаида Андреевна Артемьева разделила 1–3-е места в женских чемпионатах 1936 и 1938 годов. Чемпионство Киева 1925 года, участие в чемпионате СССР 1939 года и мастерское звание 1937 года сохранены.",
+      "localizations": {
+        "source": "Подтвердить по турнирным таблицам чемпионства Киева 1925 и УССР 1936, участие в чемпионате СССР 1939 и точное имя супруги-шахматистки. Некролог подтверждает мастерское звание 1937, но не все перечисленные турнирные результаты. Согласовать точные формулировки, включая возможное деление мест.",
+        "en": "Verify the 1925 Kyiv and 1936 Ukrainian titles, participation in the 1939 USSR championship and the chess-playing wife’s exact name from tournament records. The obituary confirms the 1937 master title but not every listed tournament result. Approve precise wording, including any shared placings."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Указать для портрета Иосифа Погребысского конкретный публичный первоисточник, автора или фотографа (если установлен), лицензию либо иное подтверждённое основание публикации: записи «Авторский архив Мансура Гильмуллина» и «Иллюстрация к материалу» не устанавливают происхождение и права.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Указать для портрета Иосифа Погребысского конкретный публичный первоисточник, автора или фотографа (если установлен), лицензию либо иное подтверждённое основание публикации: записи «Авторский архив Мансура Гильмуллина» и «Иллюстрация к материалу» не устанавливают происхождение и права.",
+        "en": "For the portrait of Iosif Pogrebyssky, identify the specific public source, author or photographer (if known), licence or other verified basis for publication. “Mansur Gilmullin’s archive” and “Illustration accompanying the text” do not establish provenance or rights."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
