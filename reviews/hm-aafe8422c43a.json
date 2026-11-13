@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-aafe8422c43a",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Проверить условия утверждения о конечномерных коммутативных алгебрах без делителей нуля над действительными числами и два возможных результата.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Указаны необходимые условия конечномерности, коммутативности, ассоциативности и наличия единицы; вывод исправлен на две возможности — действительные или комплексные числа.",
+      "localizations": {
+        "source": "Проверить условия утверждения о конечномерных коммутативных алгебрах без делителей нуля над действительными числами и два возможных результата.",
+        "en": "Check the hypotheses in the statement about finite-dimensional commutative real algebras without zero divisors and the two possible conclusions."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Сверить точные исторические названия учебных заведений.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить точные исторические названия учебных заведений.",
+        "en": "Verify the precise historical names of the educational institutions."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить проверяемый первоисточник, автора или фотографа и лицензию либо подтверждённый public-domain status портрета Карла Вейерштрасса.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить проверяемый первоисточник, автора или фотографа и лицензию либо подтверждённый public-domain status портрета Карла Вейерштрасса.",
+        "en": "Identify a verifiable primary source, author or photographer, and a licence or confirmed public-domain status for the portrait of Karl Weierstrass."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}

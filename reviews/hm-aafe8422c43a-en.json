@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-aafe8422c43a-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Check the hypotheses in the statement about finite-dimensional commutative real algebras without zero divisors and the two possible conclusions.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Check the hypotheses in the statement about finite-dimensional commutative real algebras without zero divisors and the two possible conclusions.",
+        "ru": "Проверить условия утверждения о конечномерных коммутативных алгебрах без делителей нуля над действительными числами и два возможных результата."
+      },
+      "resolution": "Added the required finite-dimensional, commutative, associative and unital hypotheses; corrected the conclusion to the two possibilities, the real or complex numbers."
+    },
+    {
+      "id": "q2",
+      "question": "Verify the precise historical names of the educational institutions.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the precise historical names of the educational institutions.",
+        "ru": "Сверить точные исторические названия учебных заведений."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Identify a verifiable primary source, author or photographer, and a licence or confirmed public-domain status for the portrait of Karl Weierstrass.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Identify a verifiable primary source, author or photographer, and a licence or confirmed public-domain status for the portrait of Karl Weierstrass.",
+        "ru": "Установить проверяемый первоисточник, автора или фотографа и лицензию либо подтверждённый public-domain status портрета Карла Вейерштрасса."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
