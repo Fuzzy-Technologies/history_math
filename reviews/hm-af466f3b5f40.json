@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-af466f3b5f40",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить, к каким именно учебно-методическим комплектам относятся слова о соответствии ФГОС-2010; при необходимости добавить названия и издания. Хрестоматия 2001 года — отдельная книга, её составительский статус сохранён.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить, к каким именно учебно-методическим комплектам относятся слова о соответствии ФГОС-2010; при необходимости добавить названия и издания. Хрестоматия 2001 года — отдельная книга, её составительский статус сохранён.",
+        "en": "Identify which teaching-material sets are meant by the alignment with the 2010 Federal State Educational Standards and add titles or editions if needed. The 2001 anthology is a separate book, and Gleizer’s role as compiler is retained."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Установить публичные первоисточники, автора или фотографа и правовой статус портрета Г. Д. Глейзера и обложки хрестоматии; хранение в авторском архиве не подтверждает авторство или право воспроизведения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить публичные первоисточники, автора или фотографа и правовой статус портрета Г. Д. Глейзера и обложки хрестоматии; хранение в авторском архиве не подтверждает авторство или право воспроизведения.",
+        "en": "Identify the public sources, creator or photographer and legal status of the portrait of Grigory Gleizer and the anthology cover; archive custody does not establish authorship or permission for reproduction."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
