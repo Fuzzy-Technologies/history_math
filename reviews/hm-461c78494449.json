@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-461c78494449",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить исторические названия Кишинёвского и Тираспольского педагогических институтов и их кафедр в 1940–1963 годах; согласовать английскую передачу имени Gersh Isaakovich Gleizer.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить исторические названия Кишинёвского и Тираспольского педагогических институтов и их кафедр в 1940–1963 годах; согласовать английскую передачу имени Gersh Isaakovich Gleizer.",
+        "en": "Verify the historical names of the Chișinău and Tiraspol pedagogical institutes and their departments in 1940–1963; confirm the English rendering Gersh Isaakovich Gleizer."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Сверить библиографию первоначальных молдавских и однотомных русских изданий и состав переводов.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить библиографию первоначальных молдавских и однотомных русских изданий и состав переводов.",
+        "en": "Check the original Moldavian and single-volume Russian editions and the translation list."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Для каждой из трёх издательских обложек в коллаже указать конкретное издание, издателя и подтверждённое основание воспроизведения; авторство составления коллажа отделить от прав на входящие в него сторонние изображения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для каждой из трёх издательских обложек в коллаже указать конкретное издание, издателя и подтверждённое основание воспроизведения; авторство составления коллажа отделить от прав на входящие в него сторонние изображения.",
+        "en": "For each of the three published book covers in the collage, identify the specific edition, publisher and a confirmed basis for reproduction; distinguish authorship of the collage assembly from rights in the third-party images it contains."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
