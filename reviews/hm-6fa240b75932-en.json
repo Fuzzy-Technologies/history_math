@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6fa240b75932-en",
+  "questions": [
+    {
+      "id": "bieler-cover-attribution",
+      "question": "For Ernest Biéler’s Three Young Girls (1920), record the actual artist, a public source, and the Public Domain basis instead of attributing it to the author’s archive.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "For Ernest Biéler’s Three Young Girls (1920), record the actual artist, a public source, and the Public Domain basis instead of attributing it to the author’s archive.",
+        "ru": "Указать для обложки Эрнеста Билера «Три маленькие девочки» (1920) реального автора, публичный источник и правовое основание Public Domain вместо атрибуции авторскому архиву."
+      },
+      "resolution": "Ernest Biéler, the title, date, public source, and Public Domain basis were added; image bytes were unchanged."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
