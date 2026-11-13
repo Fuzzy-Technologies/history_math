@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-084b8d3d2490",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Сверить полные даты обоих Всероссийских съездов преподавателей математики и роли Попруженко; в исходном тексте указаны Петербург 1911 года и Москва 1913 года.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Уточнены даты съездов и роли Попруженко: 27 декабря 1911 г. — 3 января 1912 г., товарищ председателя оргкомитета Первого съезда; 27 декабря 1913 г. — 3 января 1914 г., председатель Второго съезда.",
+      "localizations": {
+        "source": "Сверить полные даты обоих Всероссийских съездов преподавателей математики и роли Попруженко; в исходном тексте указаны Петербург 1911 года и Москва 1913 года.",
+        "en": "Verify the full dates of both All-Russian congresses of mathematics teachers and Popruzhenko’s roles; the source text gives St Petersburg in 1911 and Moscow in 1913."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить приоритет «первый отечественный учебник для средней школы» у «Начал анализа» и выходные данные советских изданий задачника 1936 и 1939 годов, включая редакторов посмертных изданий, если они указаны.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить приоритет «первый отечественный учебник для средней школы» у «Начал анализа» и выходные данные советских изданий задачника 1936 и 1939 годов, включая редакторов посмертных изданий, если они указаны.",
+        "en": "Clarify the claim that Elements of Analysis was the first Russian secondary-school textbook on the subject and verify the 1936 and 1939 Soviet problem-book editions, including posthumous editors if credited."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить публичные первоисточники, фотографов или авторов и правовой статус двух исторических портретов М. Г. Попруженко; хранение в авторском архиве не подтверждает авторство или право воспроизведения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить публичные первоисточники, фотографов или авторов и правовой статус двух исторических портретов М. Г. Попруженко; хранение в авторском архиве не подтверждает авторство или право воспроизведения.",
+        "en": "Identify the public sources, photographers or creators and legal status of the two historical portraits of Mikhail Popruzhenko; archive custody does not establish authorship or permission for reproduction."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
