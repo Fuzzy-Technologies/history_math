@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-70d4e99ddf32-en",
+  "questions": [
+    {
+      "id": "figure-rights",
+      "question": "For both portraits of Dedekind, the ETH Zurich source credits photographer Johannes Ganz and the ETH-Bibliothek Zurich image archive, but rights_basis currently says only “Illustration accompanying the text.” Add the precise public image record and the actual rights basis or licence for both files; processing a copy from the author’s archive does not replace the provenance of the third-party photograph.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For both portraits of Dedekind, the ETH Zurich source credits photographer Johannes Ganz and the ETH-Bibliothek Zurich image archive, but rights_basis currently says only “Illustration accompanying the text.” Add the precise public image record and the actual rights basis or licence for both files; processing a copy from the author’s archive does not replace the provenance of the third-party photograph.",
+        "ru": "Для обоих портретов Дедекинда источник на странице ETH Zürich указывает фотографа Йоханнеса Ганца и архив ETH-Bibliothek Zürich, но поле rights_basis пока содержит только «иллюстрация к материалу». Добавьте точную публичную карточку изображения и действительное правовое основание/лицензию для обоих файлов; обработка из авторского архива не заменяет происхождение сторонней фотографии."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
