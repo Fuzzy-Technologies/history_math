@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-76401d11d013",
+  "questions": [
+    {
+      "id": "nash-tie-anecdote-source",
+      "question": "Уточнить страницу в «A Beautiful Mind» Sylvia Nasar для «игры в галстуки» и реплики о равновесии Нэша. Официальная страница https://www.simonandschuster.net/books/A-Beautiful-Mind/Sylvia-Nasar/9781451628425 подтверждает книгу и автора, но не этот эпизод. Исходник сам называет его шутливой легендой; это обозначение сохранено. Редактору решить, как обозначить связь вымышленного сюжета с приведённой библиографией.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить страницу в «A Beautiful Mind» Sylvia Nasar для «игры в галстуки» и реплики о равновесии Нэша. Официальная страница https://www.simonandschuster.net/books/A-Beautiful-Mind/Sylvia-Nasar/9781451628425 подтверждает книгу и автора, но не этот эпизод. Исходник сам называет его шутливой легендой; это обозначение сохранено. Редактору решить, как обозначить связь вымышленного сюжета с приведённой библиографией.",
+        "en": "Please identify the page in Sylvia Nasar’s A Beautiful Mind for the tie game and the line about Nash equilibrium. The official page https://www.simonandschuster.net/books/A-Beautiful-Mind/Sylvia-Nasar/9781451628425 confirms the book and author, but not this episode. The source itself calls it a humorous legend, and that description is retained. The editor should agree how to describe the connection between the fictional scene and the cited biography."
+      }
+    },
+    {
+      "id": "english-cover-visible-text",
+      "question": "Для английской версии нужна локализация видимого русского текста внутри комикса: переведённого alt недостаточно.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для английской версии нужна локализация видимого русского текста внутри комикса: переведённого alt недостаточно.",
+        "en": "The English version needs the visible Russian text embedded in the comic localized; a translated alt text is not sufficient."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
