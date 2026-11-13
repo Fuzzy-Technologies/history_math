@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ab44f9477e92",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить область утверждения о первой методике обучения алгебре и абсолютное замечание об отсутствии таких вопросов в первой половине XIX века; предложить уточнение «в России», если оно подтверждается. Отдельно разрешить расхождение источников по году выхода «Курса алгебры» — 1867 или 1868.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить область утверждения о первой методике обучения алгебре и абсолютное замечание об отсутствии таких вопросов в первой половине XIX века; предложить уточнение «в России», если оно подтверждается. Отдельно разрешить расхождение источников по году выхода «Курса алгебры» — 1867 или 1868.",
+        "en": "Review the scope of the claim that this was the first methodology for teaching algebra and the absolute statement about the first half of the nineteenth century; specify “in Russia” if supported. Separately resolve the conflicting publication year for A Course in Algebra: 1867 or 1868."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Сверить исторические названия морских учебных заведений, поступление в академию в 1866 году и указанные периоды занятий с Ковалевской и Крыловым; согласовать английские переводы названий трёх военно-морских работ.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить исторические названия морских учебных заведений, поступление в академию в 1866 году и указанные периоды занятий с Ковалевской и Крыловым; согласовать английские переводы названий трёх военно-морских работ.",
+        "en": "Verify the historical naval institution names, the 1866 academy entry and the stated Kovalevskaya and Krylov teaching periods; review the translated titles of the three naval publications."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить проверяемый первоисточник исторического портрета А. Н. Страннолюбского, фотографа или автора при наличии и лицензию либо подтверждённый статус общественного достояния. Хранение копии в авторском архиве не является правовым основанием.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить проверяемый первоисточник исторического портрета А. Н. Страннолюбского, фотографа или автора при наличии и лицензию либо подтверждённый статус общественного достояния. Хранение копии в авторском архиве не является правовым основанием.",
+        "en": "Identify a verifiable original source for the historical portrait of A. N. Strannolyubsky, the photographer or creator where known, and a licence or confirmed public-domain status. Possession of a copy in an author's archive is not a legal basis for publication."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
