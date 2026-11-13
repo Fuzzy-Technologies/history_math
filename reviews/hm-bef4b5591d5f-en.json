@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-bef4b5591d5f-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the bibliographic details of the 1941 Russian edition of Dynamical Systems and the designation of the 1999 reissue as a second edition; review the claim about the field’s development after the book appeared.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the bibliographic details of the 1941 Russian edition of Dynamical Systems and the designation of the 1999 reissue as a second edition; review the claim about the field’s development after the book appeared.",
+        "ru": "Сверить выходные данные русского издания «Динамических систем» 1941 года и обозначение переиздания 1999 года как второго; согласовать формулировку о становлении направления после выхода книги."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "For the historical portrait of George David Birkhoff, identify a public original source, the photographer or creator where known, and a confirmed legal basis for publication. Authorship of the article and possession of a copy do not grant rights in a third-party photograph.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the historical portrait of George David Birkhoff, identify a public original source, the photographer or creator where known, and a confirmed legal basis for publication. Authorship of the article and possession of a copy do not grant rights in a third-party photograph.",
+        "ru": "Для исторического портрета Джорджа Биркгофа установить публичный первоисточник, фотографа или автора при наличии и подтверждённое правовое основание публикации. Авторство текста и хранение копии в архиве не дают прав на стороннюю фотографию."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Correct the definition of a dynamical system: it is a state space together with a law of evolution in time, not a set of elements with a relationship between time and the position of each element.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Correct the definition of a dynamical system: it is a state space together with a law of evolution in time, not a set of elements with a relationship between time and the position of each element.",
+        "ru": "Исправить определение динамической системы: это пространство состояний вместе с законом эволюции во времени, а не множество элементов с зависимостью между временем и положением каждого элемента."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
