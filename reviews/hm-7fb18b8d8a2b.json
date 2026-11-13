@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-7fb18b8d8a2b",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Согласовать терминологию связи простых алгебр Ли с бесконечномерными алгебрами Картана.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Согласовать терминологию связи простых алгебр Ли с бесконечномерными алгебрами Картана.",
+        "en": "Review the terminology for the connection between simple Lie algebras and Cartan’s infinite-dimensional algebras."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Сверить даты профессорского назначения и руководства кафедрой; подтвердить личное воспоминание автора о семинарах 1979 года и работе над кандидатской диссертацией.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Профессорское звание (1976) и заведование кафедрой высшей алгебры (1972–2000) подтверждены Летописью МГУ: https://letopis.msu.ru/node/8660. Личное воспоминание автора сохранено как первичное свидетельство.",
+      "localizations": {
+        "source": "Сверить даты профессорского назначения и руководства кафедрой; подтвердить личное воспоминание автора о семинарах 1979 года и работе над кандидатской диссертацией.",
+        "en": "Check the dates of the professorial appointment and departmental leadership; confirm the author’s personal recollection of the 1979 seminars and work on his Candidate of Sciences dissertation."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить реальный публичный источник исторического портрета А. И. Кострикина, фотографа/учреждение и правовое основание публикации; авторство текста не распространяется на стороннюю фотографию.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить реальный публичный источник исторического портрета А. И. Кострикина, фотографа/учреждение и правовое основание публикации; авторство текста не распространяется на стороннюю фотографию.",
+        "en": "Establish the actual public source of the historical portrait of A. I. Kostrikin, its photographer or holding institution, and the legal basis for publication; authorship of the text does not extend to a third-party photograph."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
