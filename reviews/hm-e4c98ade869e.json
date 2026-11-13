@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-e4c98ade869e",
+  "questions": [
+    {
+      "id": "chuquet-manuscript-attribution",
+      "question": "Указать для страницы рукописи Никола Шюке реальный источник и правовой статус вместо атрибуции авторскому архиву.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Указать для страницы рукописи Никола Шюке реальный источник и правовой статус вместо атрибуции авторскому архиву.",
+        "en": "For the page from Nicolas Chuquet’s manuscript, record the actual source and rights status instead of attributing it to the author’s archive."
+      },
+      "resolution": "Добавлены карточка Wikimedia Commons и Public Domain; байты изображения не менялись."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
