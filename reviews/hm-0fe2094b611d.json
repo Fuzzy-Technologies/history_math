@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0fe2094b611d",
+  "questions": [
+    {
+      "id": "khwarizmi-anecdote-source",
+      "question": "Уточнить источник легенды о жене и пропущенном обеде: в посте приведены два названия O’Connor и Robertson, но без страниц и ссылок. Подтверждённая университетская статья https://mathshistory.st-andrews.ac.uk/HistTopics/Arabic_mathematics/ объясняет вклад аль-Хорезми, однако привязка анекдота к указанным работам не установлена. Согласовать источник или редакторскую помету о характере шутки; легенда и исходная библиография сохранены.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить источник легенды о жене и пропущенном обеде: в посте приведены два названия O’Connor и Robertson, но без страниц и ссылок. Подтверждённая университетская статья https://mathshistory.st-andrews.ac.uk/HistTopics/Arabic_mathematics/ объясняет вклад аль-Хорезми, однако привязка анекдота к указанным работам не установлена. Согласовать источник или редакторскую помету о характере шутки; легенда и исходная библиография сохранены.",
+        "en": "Please identify the source of the legend about al-Khwarizmi’s wife and his missed lunch. The post names two works by O’Connor and Robertson without pages or links. The confirmed university article https://mathshistory.st-andrews.ac.uk/HistTopics/Arabic_mathematics/ explains al-Khwarizmi’s contribution, but the anecdote’s connection to the named works has not been established. Please agree a source or an editorial description of the joke; the legend and original bibliography are retained."
+      }
+    },
+    {
+      "id": "khwarizmi-collage-provenance",
+      "question": "Для коллажа `fig-2`, объединяющего советскую марку 1983 года и исторический титульный лист, нужны отдельные публичные источники, создатели и правовой статус каждой части; для титульного листа также требуется конкретное издание или собрание.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для коллажа `fig-2`, объединяющего советскую марку 1983 года и исторический титульный лист, нужны отдельные публичные источники, создатели и правовой статус каждой части; для титульного листа также требуется конкретное издание или собрание.",
+        "en": "The `fig-2` collage, combining a 1983 Soviet stamp and a historical title page, needs separate public sources, creators and rights status for each component; the title page also needs a specific edition or collection."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
