@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2a80036b1d7a",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить рамки утверждения о первой в мире женщине-профессоре математики, формы обучения в Гейдельберге и Берлине и историческое название стокгольмского учреждения.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Уточнено: в Гейдельберге Ковалевская неофициально посещала лекции с разрешения преподавателей, в Берлине занималась частным образом у Вейерштрасса; историческое учреждение названо Стокгольмской высшей школой. Утверждение о первой в мире женщине-профессоре математики подтверждено Стокгольмским университетом: https://www.su.se/english/about-the-university/cultural-heritage-and-history/the-history-of-stockholm-university/sonya-kovalevsky---swedens-first-female-professor ; формы обучения подтверждены Гейдельбергским университетом: https://www.uni-heidelberg.de/en/node/7586/sofya-kovalevskaya-the-worlds-first-female-professor-of-mathematics",
+      "localizations": {
+        "source": "Уточнить рамки утверждения о первой в мире женщине-профессоре математики, формы обучения в Гейдельберге и Берлине и историческое название стокгольмского учреждения.",
+        "en": "Clarify the scope of the claim that she was the world’s first woman professor of mathematics, the forms of study in Heidelberg and Berlin and the historical name of the Stockholm institution."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Сверить даты написания и публикации литературных произведений и принятые английские названия, особенно «Нигилистки» и «Борьбы за счастье»; подтвердить источник эпизода об уходе за ранеными коммунарами в Париже.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить даты написания и публикации литературных произведений и принятые английские названия, особенно «Нигилистки» и «Борьбы за счастье»; подтвердить источник эпизода об уходе за ранеными коммунарами в Париже.",
+        "en": "Check the composition and publication dates and established English titles of the literary works, especially A Nihilist Girl and The Struggle for Happiness; confirm a source for the episode about caring for wounded Communards in Paris."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить реальный публичный источник портрета Софьи Ковалевской, фотографа/автора (если известен) и правовой статус изображения; синхронизировать RU/EN metadata.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить реальный публичный источник портрета Софьи Ковалевской, фотографа/автора (если известен) и правовой статус изображения; синхронизировать RU/EN metadata.",
+        "en": "Establish the actual public source of the portrait of Sofia Kovalevskaya, the photographer or creator (if known) and the image’s legal status; keep the RU and EN metadata synchronized."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
