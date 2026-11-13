@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a284642e50c9",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить исходное немецкое название должности 1926 года: школьная должность передана в RU как «старший научный руководитель». Согласовать senior academic director и историческое название гимназии.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Должность и учебное заведение переданы как «старший директор Новой реальной гимназии» с исходным немецким названием Oberstudiendirektor des Neuen Realgymnasiums.",
+      "localizations": {
+        "source": "Уточнить исходное немецкое название должности 1926 года: школьная должность передана в RU как «старший научный руководитель». Согласовать senior academic director и историческое название гимназии.",
+        "en": "Verify the original German title of the 1926 school appointment, rendered in Russian as senior scientific director. Agree the English title senior academic director and the historical school name."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить, что означает предложенная «аккредитация»; английские названия русских изданий переданы описательно с сохранением дат. Подтверждённого URL исходного поста нет.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Неясная «аккредитация» заменена хабилитацией 1928 года. Описательные английские названия русских изданий и отсутствие неподтверждённого URL сохранены корректно.",
+      "localizations": {
+        "source": "Уточнить, что означает предложенная «аккредитация»; английские названия русских изданий переданы описательно с сохранением дат. Подтверждённого URL исходного поста нет.",
+        "en": "Clarify the qualification described as accreditation; English titles of the Russian editions are descriptive and retain their dates. No confirmed original-post URL is available."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Для портрета Вилейтнера и обложки переиздания URSS указано только «Иллюстрация к материалу». Установить первоисточник и автора портрета, а для обложки — конкретное издание, издателя и подтверждённое основание воспроизведения; синхронизировать RU/EN-метаданные.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для портрета Вилейтнера и обложки переиздания URSS указано только «Иллюстрация к материалу». Установить первоисточник и автора портрета, а для обложки — конкретное издание, издателя и подтверждённое основание воспроизведения; синхронизировать RU/EN-метаданные.",
+        "en": "The portrait of Wieleitner and the URSS reprint cover are identified only as illustrations accompanying the text. Establish the portrait’s source and creator and, for the cover, the exact edition, publisher, and confirmed basis for reproduction; synchronize the RU/EN metadata."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
