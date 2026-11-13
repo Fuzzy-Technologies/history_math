@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0ca973a616e3",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить название и статус квалификационной работы 1932 года и докторской диссертации 1937 года, даты учёбы и роль обоих научных руководителей.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Уточнены обучение в МГУ (1926–1930), аспирантура, роли С. П. Финикова и В. Ф. Кагана как учителей, а также названия кандидатской (1932) и докторской (1937) диссертаций.",
+      "localizations": {
+        "source": "Уточнить название и статус квалификационной работы 1932 года и докторской диссертации 1937 года, даты учёбы и роль обоих научных руководителей.",
+        "en": "Verify the name and status of the 1932 qualification and 1937 doctoral dissertation, the study dates and the roles of both supervisors."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Сверить должность Нордена в журнале и период руководства; подтвердить личное воспоминание автора и годы 1967–1975.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить должность Нордена в журнале и период руководства; подтвердить личное воспоминание автора и годы 1967–1975.",
+        "en": "Check Norden’s position at the journal and the period of leadership; confirm the author’s personal recollection and the years 1967–1975."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить проверяемый первоисточник портрета А. П. Нордена, фотографа/автора (если установлен) и лицензию либо иное подтверждённое основание воспроизведения; синхронизировать RU/EN metadata.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить проверяемый первоисточник портрета А. П. Нордена, фотографа/автора (если установлен) и лицензию либо иное подтверждённое основание воспроизведения; синхронизировать RU/EN metadata.",
+        "en": "Establish a verifiable original source for the portrait of A. P. Norden, its photographer or creator (if identified), and its license or another confirmed basis for reproduction; keep the RU and EN metadata synchronized."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
