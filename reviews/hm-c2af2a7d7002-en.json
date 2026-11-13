@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c2af2a7d7002-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Provide a verifiable source and exact edition for the quotation attributed to Kepler about astrology.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide a verifiable source and exact edition for the quotation attributed to Kepler about astrology.",
+        "ru": "Указать проверяемый источник и точную редакцию приведённой цитаты Кеплера об астрологии."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Provide publicly verifiable original sources, authorship and legal basis for reproducing the portrait of Johannes Kepler and the engraving of the Kepler cup model.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide publicly verifiable original sources, authorship and legal basis for reproducing the portrait of Johannes Kepler and the engraving of the Kepler cup model.",
+        "ru": "Указать публично проверяемые первоисточники, авторство и правовое основание воспроизведения портрета Иоганна Кеплера и гравюры модели «кубка Кеплера»."
+      }
+    },
+    {
+      "id": "indivisibles-anachronism",
+      "question": "Correct the anachronistic phrase “Archimedes’ method of indivisibles”: Kepler used his own infinitesimal reasoning inspired by ancient solid geometry, while the systematic method of indivisibles is associated with Cavalieri’s later work.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Correct the anachronistic phrase “Archimedes’ method of indivisibles”: Kepler used his own infinitesimal reasoning inspired by ancient solid geometry, while the systematic method of indivisibles is associated with Cavalieri’s later work.",
+        "ru": "Исправить анахронизм «метод неделимых Архимеда»: Кеплер использовал собственные инфинитезимальные рассуждения, вдохновлённые античной стереометрией; систематический метод неделимых связан с более поздней работой Кавальери."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
