@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-fbcd8f312e84",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Исправить аннотацию последней ссылки в примечаниях: авторский комментарий говорит об отказе Александрова от соавторства по учебнику алгебры 1940 года, но раздел 3 самой статьи прямо называет его соавтором этой алгебры и говорит об отказе участвовать в проекте геометрии. Основной абзац о соавторстве по алгебре противоречия не содержит. Согласовать для RU/EN аннотацию «о реформе Колмогорова, совместном учебнике алгебры 1940 года и отказе от участия в проекте учебника геометрии»: https://elementy.ru/nauchno-populyarnaya_biblioteka/436281/Padenie_preobrazovatelya_chetyre_voprosa_o_reforme_Kolmogorova .",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Аннотация ссылки теперь различает соавторство по алгебре и отказ от участия в проекте геометрии. Формулировка сверена с разделом 3 статьи по ссылке.",
+      "localizations": {
+        "source": "Исправить аннотацию последней ссылки в примечаниях: авторский комментарий говорит об отказе Александрова от соавторства по учебнику алгебры 1940 года, но раздел 3 самой статьи прямо называет его соавтором этой алгебры и говорит об отказе участвовать в проекте геометрии. Основной абзац о соавторстве по алгебре противоречия не содержит. Согласовать для RU/EN аннотацию «о реформе Колмогорова, совместном учебнике алгебры 1940 года и отказе от участия в проекте учебника геометрии»: https://elementy.ru/nauchno-populyarnaya_biblioteka/436281/Padenie_preobrazovatelya_chetyre_voprosa_o_reforme_Kolmogorova .",
+        "en": "Correct the final reference annotation: the source comment says Aleksandrov declined coauthorship of the 1940 algebra textbook, whereas section 3 explicitly calls him its coauthor and describes his refusal to participate in a geometry project. The main paragraph on algebra coauthorship is supported. Approve an annotation covering the reform, the joint 1940 algebra textbook and declining participation in the geometry project: https://elementy.ru/nauchno-populyarnaya_biblioteka/436281/Padenie_preobrazovatelya_chetyre_voprosa_o_reforme_Kolmogorova ."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Развести год, за который присуждена Сталинская премия I степени, и дату постановления: в тексте указано только «1942», тогда как постановление с именем П. С. Александрова датировано 22 марта 1943 года. Согласовать обе версии по Постановлению СНК СССР и Летописи МГУ.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Текст различает год премии и дату решения: Сталинская премия присуждена за 1942 год постановлением от 22 марта 1943 года.",
+      "localizations": {
+        "source": "Развести год, за который присуждена Сталинская премия I степени, и дату постановления: в тексте указано только «1942», тогда как постановление с именем П. С. Александрова датировано 22 марта 1943 года. Согласовать обе версии по Постановлению СНК СССР и Летописи МГУ.",
+        "en": "Distinguish the year for which the first-class Stalin Prize was awarded from the date of the decree: the article gives only “1942”, while the decree naming P. S. Aleksandrov is dated 22 March 1943. Align both versions with the Council of People’s Commissars decree and the Moscow University Chronicle."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Для обеих обработок портрета Александрова указать исходные фотографии, публичные источники и правовое основание публикации; происхождение обеих версий сейчас не подтверждено.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для обеих обработок портрета Александрова указать исходные фотографии, публичные источники и правовое основание публикации; происхождение обеих версий сейчас не подтверждено.",
+        "en": "For both processed portraits of Aleksandrov, identify the source photographs, public source records and the legal basis for publication; the provenance of both versions is currently unconfirmed."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
