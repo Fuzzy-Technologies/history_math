@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-93a2fef31b76-en",
+  "questions": [
+    {
+      "id": "q2",
+      "question": "For the portrait of V. V. Morozov and the group photograph of N. G. Chebotaryov with his students, establish a public source, the photographer or institution, and a valid rights basis for use.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the portrait of V. V. Morozov and the group photograph of N. G. Chebotaryov with his students, establish a public source, the photographer or institution, and a valid rights basis for use.",
+        "ru": "Для портрета В. В. Морозова и групповой фотографии Н. Г. Чеботарёва с учениками установить публичный источник, фотографа или учреждение и действительное правовое основание использования."
+      }
+    },
+    {
+      "id": "q1",
+      "question": "Reconcile the references to simple and semisimple Lie groups in the description of Morozov’s classification, and substantiate the link between the stated interest in classifying solvable and nilpotent Lie algebras and the subsequently cited papers on semisimple Lie algebras.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Reconcile the references to simple and semisimple Lie groups in the description of Morozov’s classification, and substantiate the link between the stated interest in classifying solvable and nilpotent Lie algebras and the subsequently cited papers on semisimple Lie algebras.",
+        "ru": "Согласовать формулировки о простых и полупростых группах Ли в описании классификации Морозова и подтвердить связь заявленного интереса к классификации разрешимых и нильпотентных алгебр Ли с приведёнными далее работами о полупростых алгебрах."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
