@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0cfcf3eb40ab",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Укажите музей или коллекцию, где хранится бюст Аристотеля, проверяемый источник репродукции, автора фотографии и лицензию либо подтверждённый правовой статус изображения; авторство текста не распространяется на стороннюю иллюстрацию.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Укажите музей или коллекцию, где хранится бюст Аристотеля, проверяемый источник репродукции, автора фотографии и лицензию либо подтверждённый правовой статус изображения; авторство текста не распространяется на стороннюю иллюстрацию.",
+        "en": "Identify the museum or collection holding the bust of Aristotle, provide a verifiable source for the reproduction, name the photographer, and document the licence or confirmed legal status of the image; authorship of the text does not extend to a third-party illustration."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Заменить формулировку «Аристотель открыл, что… последнее утверждение следует принять за аксиому» исторически точным описанием: в «Второй аналитике» доказательство опирается на истинные первичные непосредственные посылки, а знание первых начал не сводится к простому принятию последнего звена регресса.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Заменить формулировку «Аристотель открыл, что… последнее утверждение следует принять за аксиому» исторически точным описанием: в «Второй аналитике» доказательство опирается на истинные первичные непосредственные посылки, а знание первых начал не сводится к простому принятию последнего звена регресса.",
+        "en": "Replace the claim that “Aristotle discovered that … the final statement must be accepted as an axiom” with a historically accurate account: in the Posterior Analytics, demonstration rests on true, primary and immediate premises, while knowledge of first principles is not reduced to simply accepting the last link in a regress."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
