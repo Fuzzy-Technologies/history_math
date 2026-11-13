@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-5524adae5f04",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить фразу о положительном и отрицательном решениях квадратного уравнения: не каждое квадратное уравнение имеет корни разных знаков. Предлагается «учитывал как положительные, так и отрицательные корни» / “considered both positive and negative roots”, без всеобщего утверждения о знаках.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Фраза исправлена: теперь она говорит о рассмотрении положительных и отрицательных корней, не утверждая, что каждое квадратное уравнение имеет корни обоих знаков.",
+      "localizations": {
+        "source": "Уточнить фразу о положительном и отрицательном решениях квадратного уравнения: не каждое квадратное уравнение имеет корни разных знаков. Предлагается «учитывал как положительные, так и отрицательные корни» / “considered both positive and negative roots”, без всеобщего утверждения о знаках.",
+        "en": "Clarify the positive/negative-root statement: not every quadratic has roots of opposite signs. Consider “considered both positive and negative roots” and the corresponding Russian wording, avoiding a universal claim about signs."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Сверить датировку рукописного листа 1650 годом и библиографические сведения о 1450 стихах всего трактата и 13 главах, 278 стихах «Лилавати». Эти числа относятся к разным объёмам текста и не помечены как противоречие.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить датировку рукописного листа 1650 годом и библиографические сведения о 1450 стихах всего трактата и 13 главах, 278 стихах «Лилавати». Эти числа относятся к разным объёмам текста и не помечены как противоречие.",
+        "en": "Verify the manuscript leaf’s 1650 date and the figures of 1450 verses for the whole treatise and thirteen chapters, 278 verses for Lilavati. These refer to different textual scopes and are not treated as a contradiction."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить публичные первоисточники, авторов или фотографов и правовой статус бюста Бхаскары II, листа рукописи «Лилавати» и статуи в Патнадеви; хранение в авторском архиве не подтверждает авторство или право воспроизведения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить публичные первоисточники, авторов или фотографов и правовой статус бюста Бхаскары II, листа рукописи «Лилавати» и статуи в Патнадеви; хранение в авторском архиве не подтверждает авторство или право воспроизведения.",
+        "en": "Identify the public sources, creators or photographers and legal status of the bust of Bhaskara II, the Lilavati manuscript leaf and the statue at Patnadevi; archive custody does not establish authorship or permission for reproduction."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
