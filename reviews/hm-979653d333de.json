@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-979653d333de",
+  "questions": [
+    {
+      "id": "triangle-angle-sum-postulates",
+      "question": "Уточнить объяснение суммы углов: равенства прямых углов и меры развёрнутого угла сами по себе недостаточны для теоремы о сумме углов евклидова треугольника. В доказательстве I.32 «Начал» используется I.29 о параллельных прямых, зависящее от пятого постулата. Нужна согласованная формулировка в обеих версиях; утверждение о приписывании доказательства Пифагору также требует источника. Текст Евклида: https://mathcs.clarku.edu/~djoyce/elements/bookI/propI32.html .",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Уточнена роль пятого постулата в доказательстве Евклида, а атрибуция пифагорейцам уточнена по свидетельству Прокла. В решении объяснено, почему четыре неотмеченных угла в сумме дают 180°."
+    },
+    {
+      "id": "icicles-cover-provenance",
+      "question": "Подтвердить происхождение обложки: в подписи она названа авторской, но поля source и rights_basis содержат лишь «Иллюстрация к материалу». Нужны реальный автор или иллюстратор, публичный источник и лицензия либо подтверждённое основание считать изображение авторским.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подтвердить происхождение обложки: в подписи она названа авторской, но поля source и rights_basis содержат лишь «Иллюстрация к материалу». Нужны реальный автор или иллюстратор, публичный источник и лицензия либо подтверждённое основание считать изображение авторским.",
+        "en": "Confirm the cover’s provenance: its caption calls it an author’s illustration, but source and rights_basis only say “Illustration accompanying the text.” Identify the actual author or illustrator, public source and licence, or provide verified grounds for treating it as an original author illustration."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}

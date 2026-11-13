@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-979653d333de-en",
+  "questions": [
+    {
+      "id": "triangle-angle-sum-postulates",
+      "question": "Please clarify the explanation of triangle angle sums: equality of right angles and the measure of a straight angle alone do not establish the Euclidean theorem. Elements I.32 uses I.29 about parallel lines, which depends on the fifth postulate. Please agree matching wording in both editions and supply a source for the attribution of a proof to Pythagoras. Euclid’s text: https://mathcs.clarku.edu/~djoyce/elements/bookI/propI32.html .",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please clarify the explanation of triangle angle sums: equality of right angles and the measure of a straight angle alone do not establish the Euclidean theorem. Elements I.32 uses I.29 about parallel lines, which depends on the fifth postulate. Please agree matching wording in both editions and supply a source for the attribution of a proof to Pythagoras. Euclid’s text: https://mathcs.clarku.edu/~djoyce/elements/bookI/propI32.html .",
+        "ru": "Уточнить объяснение суммы углов: равенства прямых углов и меры развёрнутого угла сами по себе недостаточны для теоремы о сумме углов евклидова треугольника. В доказательстве I.32 «Начал» используется I.29 о параллельных прямых, зависящее от пятого постулата. Нужна согласованная формулировка в обеих версиях; утверждение о приписывании доказательства Пифагору также требует источника. Текст Евклида: https://mathcs.clarku.edu/~djoyce/elements/bookI/propI32.html ."
+      },
+      "resolution": "The text explains the role of the fifth postulate in Euclid’s proof and attributes the result to the Pythagoreans on the testimony of Proclus. The solution explains why the four unmarked angles add up to 180°."
+    },
+    {
+      "id": "icicles-cover-provenance",
+      "question": "Confirm the cover’s provenance: its caption calls it an author’s illustration, but source and rights_basis only say “Illustration accompanying the text.” Identify the actual author or illustrator, public source and licence, or provide verified grounds for treating it as an original author illustration.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the cover’s provenance: its caption calls it an author’s illustration, but source and rights_basis only say “Illustration accompanying the text.” Identify the actual author or illustrator, public source and licence, or provide verified grounds for treating it as an original author illustration.",
+        "ru": "Подтвердить происхождение обложки: в подписи она названа авторской, но поля source и rights_basis содержат лишь «Иллюстрация к материалу». Нужны реальный автор или иллюстратор, публичный источник и лицензия либо подтверждённое основание считать изображение авторским."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
