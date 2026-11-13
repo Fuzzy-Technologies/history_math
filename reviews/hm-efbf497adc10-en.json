@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-efbf497adc10-en",
+  "questions": [
+    {
+      "id": "gibbs-portrait-attribution",
+      "question": "The historical portrait of Josiah Willard Gibbs is currently credited only to the article author’s archive. Please identify the actual creator of the portrait or photograph, provide a verifiable public source, and confirm the image’s rights status in both editions.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The historical portrait of Josiah Willard Gibbs is currently credited only to the article author’s archive. Please identify the actual creator of the portrait or photograph, provide a verifiable public source, and confirm the image’s rights status in both editions.",
+        "ru": "У исторического портрета Джозайи Уилларда Гиббса сейчас указан только архив автора статьи. Нужны фактический создатель портрета или фотографии, проверяемый публичный источник и подтверждённый правовой статус изображения; сведения следует синхронно указать в обеих версиях."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
