@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-e647f1fce1a6",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Сверить указание серии «Библиотечка „Квант“» у «Лекций и задач по элементарной математике» (1974, 576 с.). Каталог РГБ описывает учебное пособие для подготовительных отделений вузов, без этой серии: https://search.rsl.ru/ru/record/01007284399 . Предлагается убрать неподтверждённую серию в RU/EN после проверки титула.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить указание серии «Библиотечка „Квант“» у «Лекций и задач по элементарной математике» (1974, 576 с.). Каталог РГБ описывает учебное пособие для подготовительных отделений вузов, без этой серии: https://search.rsl.ru/ru/record/01007284399 . Предлагается убрать неподтверждённую серию в RU/EN после проверки титула.",
+        "en": "Verify the Kvant Library attribution for Lectures and Problems in Elementary Mathematics (1974, 576 pp.). The Russian State Library describes a textbook for university preparatory departments without that series, https://search.rsl.ru/ru/record/01007284399 . Remove the unconfirmed series in both languages after checking the title page."
+      }
+    },
+    {
+      "id": "image-provenance-rights",
+      "question": "Для портрета В. Г. Болтянского и коллажа указать публичные источники и правовые основания в RU/EN; отдельно сохранить атрибуцию сторонних книжных обложек, поскольку авторство коллажа не заменяет права на исходные изображения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для портрета В. Г. Болтянского и коллажа указать публичные источники и правовые основания в RU/EN; отдельно сохранить атрибуцию сторонних книжных обложек, поскольку авторство коллажа не заменяет права на исходные изображения.",
+        "en": "For Vladimir Boltyansky’s portrait and the collage, provide public sources and legal bases in RU/EN; preserve separate attribution for third-party book covers, since authorship of the collage does not replace rights in its source images."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
