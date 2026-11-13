@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-128b2d0a900c-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the official name of the 1997 science writing award and the academy membership.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the official name of the 1997 science writing award and the academy membership.",
+        "ru": "Уточнить официальное название премии за научную публицистику 1997 года и сведения об академическом членстве."
+      },
+      "resolution": "In 1997 Gardner was elected a Fellow of the American Academy of Arts and Sciences and received the American Physical Society’s Forum Award for Promoting Public Understanding of the Relationships of Physics and Society: https://www.amacad.org/sites/default/files/media/document/2019-10/ChapterG.pdf and https://engage.aps.org/fps/resources/newsletters/newsletter-archives/april-1997"
+    },
+    {
+      "id": "q2",
+      "question": "The English list explicitly translates Russian-edition titles and retains their dates. Confirm this presentation or map each Russian edition to its specific English original.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The English list explicitly translates Russian-edition titles and retains their dates. Confirm this presentation or map each Russian edition to its specific English original.",
+        "ru": "В EN список прямо обозначен как перевод названий русских изданий с сохранением их дат. Согласовать эту форму или сопоставить каждое русское издание с конкретным английским оригиналом."
+      },
+      "resolution": "The list explicitly translates the Russian-edition titles and retains the publication data for those editions."
+    },
+    {
+      "id": "q3",
+      "question": "For the photograph of Martin Gardner, establish a public source, the photographer or rights holder, and a licence or permission; for the 1971 Russian book cover, identify the exact edition and publisher and the basis for reproduction. “Illustration accompanying the text” establishes none of these facts.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the photograph of Martin Gardner, establish a public source, the photographer or rights holder, and a licence or permission; for the 1971 Russian book cover, identify the exact edition and publisher and the basis for reproduction. “Illustration accompanying the text” establishes none of these facts.",
+        "ru": "Для фотографии Мартина Гарднера установить публичный источник, фотографа или правообладателя и лицензию либо разрешение; для русской обложки книги 1971 года указать точное издание, издателя и основание воспроизведения. Формулировка «Иллюстрация к материалу» этого не подтверждает."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
