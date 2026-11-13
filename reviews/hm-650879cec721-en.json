@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-650879cec721-en",
+  "questions": [
+    {
+      "id": "kant-images-attribution",
+      "question": "For Kant’s engraving and the Russian-language infographic, identify separately the actual creator, public source and licence; for the infographic, also confirm the basis for the adaptation.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For Kant’s engraving and the Russian-language infographic, identify separately the actual creator, public source and licence; for the infographic, also confirm the basis for the adaptation.",
+        "ru": "Для гравюры Канта и русскоязычной инфографики указать по отдельности реального создателя, публичный источник и лицензию; для инфографики также подтвердить основание адаптации."
+      }
+    },
+    {
+      "id": "kant-story-source",
+      "question": "Cite the source of the story and do not present it as an established episode in Kant’s biography: Martin Gardner introduces “How Did Kant Set His Clock?” cautiously with “It is said”.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Cite the source of the story and do not present it as an established episode in Kant’s biography: Martin Gardner introduces “How Did Kant Set His Clock?” cautiously with “It is said”.",
+        "ru": "Укажите источник сюжета и не представляйте его как установленный эпизод биографии Канта: у Мартина Гарднера задача «How Did Kant Set His Clock?» вводится осторожным «It is said»."
+      },
+      "resolution": "The text now identifies the story as a logic puzzle rather than a documented biographical episode and cites Martin Gardner’s “How Did Kant Set His Clock?”, problem 51 in the 1994 Dover collection."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
