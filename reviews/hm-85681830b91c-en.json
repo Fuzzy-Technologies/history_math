@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-85681830b91c-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Resolve Desargues’s birth date: the article gives 21 February 1591, as in the Dictionary of Scientific Biography (https://mathshistory.st-andrews.ac.uk/DSB/Desargues.pdf), whereas the current MacTutor biography, citing René Taton’s 1962 research, gives 2 March 1591 (https://mathshistory.st-andrews.ac.uk/Biographies/Desargues/). Select a date or briefly acknowledge the discrepancy in both editions.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Resolve Desargues’s birth date: the article gives 21 February 1591, as in the Dictionary of Scientific Biography (https://mathshistory.st-andrews.ac.uk/DSB/Desargues.pdf), whereas the current MacTutor biography, citing René Taton’s 1962 research, gives 2 March 1591 (https://mathshistory.st-andrews.ac.uk/Biographies/Desargues/). Select a date or briefly acknowledge the discrepancy in both editions.",
+        "ru": "Согласовать дату рождения Дезарга: статья даёт 21 февраля 1591 года, как в Dictionary of Scientific Biography (https://mathshistory.st-andrews.ac.uk/DSB/Desargues.pdf), тогда как современная биография MacTutor со ссылкой на исследование Рене Татона 1962 года указывает 2 марта 1591 года (https://mathshistory.st-andrews.ac.uk/Biographies/Desargues/). Выбрать дату либо кратко оговорить расхождение в RU/EN."
+      },
+      "resolution": "MacTutor confirms 21 February 1591 as the birth date and 2 March as the baptism date; the article text remains unchanged."
+    },
+    {
+      "id": "q2",
+      "question": "For fig-1 and fig-2, credit the artwork to Théobald Chartran and identify the 1886–1889 Sorbonne mural depicting the supposed 1643 scene; retain William Sidnam’s photographer credit, add the authoritative source https://nubis.bis-sorbonne.fr/web/expo/s/le-discours-de-la-methode/page/74_genese-et-contexte.html, and establish a licence or permission for the exact photographic bytes being published.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For fig-1 and fig-2, credit the artwork to Théobald Chartran and identify the 1886–1889 Sorbonne mural depicting the supposed 1643 scene; retain William Sidnam’s photographer credit, add the authoritative source https://nubis.bis-sorbonne.fr/web/expo/s/le-discours-de-la-methode/page/74_genese-et-contexte.html, and establish a licence or permission for the exact photographic bytes being published.",
+        "ru": "Для fig-1 и fig-2 укажите автора произведения Теобальда Шартрана и идентифицируйте роспись Сорбонны 1886–1889 годов, изображающую предполагаемую сцену 1643 года; сохраните кредит фотографа Уильяма Сиднама, добавьте авторитетный источник https://nubis.bis-sorbonne.fr/web/expo/s/le-discours-de-la-methode/page/74_genese-et-contexte.html и подтвердите лицензию или разрешение именно для публикуемых фотографических байтов."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
