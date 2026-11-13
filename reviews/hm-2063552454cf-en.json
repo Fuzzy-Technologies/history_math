@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2063552454cf-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "The source gave Baire’s death year as 1932 in the heading and 1935 in the introductory list.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The source gave Baire’s death year as 1932 in the heading and 1935 in the introductory list.",
+        "ru": "В исходнике год смерти Бэра расходился между заголовком (1932) и вступлением (1935)."
+      },
+      "resolution": "The death year has been harmonized as 1932 using the CTHS directory and University of Burgundy material: https://cths.fr/an/prosopographie_liste.php?page=29&sc= ; https://math.ube.fr/wp-content/uploads/2025/06/PDF-Baire-SMF_.pdf ."
+    },
+    {
+      "id": "q2",
+      "question": "Review the historical claim about the emergence of function theory, topology and functional analysis in the early twentieth century, and the English rendering of the Russian edition’s title.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Review the historical claim about the emergence of function theory, topology and functional analysis in the early twentieth century, and the English rendering of the Russian edition’s title.",
+        "ru": "Уточнить историческую формулировку о возникновении теории функций, топологии и функционального анализа в начале XX века; согласовать английское название русского издания работы о разрывных функциях."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Identify the creator or photographer, date, public source and legal status of the portrait of René-Louis Baire; archive custody and the phrase “Illustration accompanying the text” do not establish permission for reproduction.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Identify the creator or photographer, date, public source and legal status of the portrait of René-Louis Baire; archive custody and the phrase “Illustration accompanying the text” do not establish permission for reproduction.",
+        "ru": "Установить автора или фотографа, дату, публичный первоисточник и правовой статус портрета Рене-Луи Бэра; хранение в авторском архиве и формулировка «Иллюстрация к материалу» не подтверждают право воспроизведения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
