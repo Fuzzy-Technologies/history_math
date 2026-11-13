@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-4822f24cc698-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the institutions and dates of the chairs: the source assigns mathematics in 1850 and mechanics in 1857 to the Collège de France; check whether the mechanics appointment was at a different institution.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the institutions and dates of the chairs: the source assigns mathematics in 1850 and mechanics in 1857 to the Collège de France; check whether the mechanics appointment was at a different institution.",
+        "ru": "Уточнить учреждения и даты кафедр: исходник относит математику 1850 года и механику 1857 года к Коллеж де Франс; проверить, не относится ли механика к другому учреждению."
+      },
+      "resolution": "Clarified: the mathematics chair was at the Collège de France (1850), while the mechanics chair was at the Faculty of Sciences in Paris (1857)."
+    },
+    {
+      "id": "q2",
+      "question": "For the special Riccati equation y′ + ay² = bxᵐ, provide in both editions a verified list of the exponent values m corresponding to the integrable cases previously found by Daniel Bernoulli. Check the normalization and list against Liouville’s 1841 paper: https://www.numdam.org/item/JMPA_1841_1_6__1_0.pdf .",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the special Riccati equation y′ + ay² = bxᵐ, provide in both editions a verified list of the exponent values m corresponding to the integrable cases previously found by Daniel Bernoulli. Check the normalization and list against Liouville’s 1841 paper: https://www.numdam.org/item/JMPA_1841_1_6__1_0.pdf .",
+        "ru": "Для специального уравнения Риккати вида y′ + ay² = bxᵐ привести в обеих редакциях проверенный перечень значений показателя m, соответствующих случаям интегрируемости, ранее найденным Даниилом Бернулли. Сверить нормировку и перечень с работой Лиувилля 1841 года: https://www.numdam.org/item/JMPA_1841_1_6__1_0.pdf ."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "For the portrait of Joseph Liouville, provide a verifiable public source, the artist or photographer, the date, and the licence or public-domain basis.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the portrait of Joseph Liouville, provide a verifiable public source, the artist or photographer, the date, and the licence or public-domain basis.",
+        "ru": "Для портрета Жозефа Лиувилля указать проверяемый публичный источник, автора или фотографа, дату и лицензию либо основание общественного достояния."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
