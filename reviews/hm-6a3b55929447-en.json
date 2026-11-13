@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6a3b55929447-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Provide a verifiable source for the portrait of Lagrange, identify the artist and date where known, and document the licence or confirmed public-domain status; authorship of the text does not extend to a third-party image.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide a verifiable source for the portrait of Lagrange, identify the artist and date where known, and document the licence or confirmed public-domain status; authorship of the text does not extend to a third-party image.",
+        "ru": "Укажите проверяемый первоисточник портрета Лагранжа, художника и дату создания (если известны), а также лицензию либо подтверждённый статус общественного достояния; авторство текста не распространяется на стороннее изображение."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
