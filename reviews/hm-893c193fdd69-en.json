@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-893c193fdd69-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the institution and type of the 1825 doctorate and the list of teachers.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the institution and type of the 1825 doctorate and the list of teachers.",
+        "ru": "Проверить место и вид докторской степени 1825 года и состав преподавателей."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Check the bibliographical book titles and dates, the historical names of the universities granting honorary membership and the technical descriptions of the self-counting abacus and planimeter.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Check the bibliographical book titles and dates, the historical names of the universities granting honorary membership and the technical descriptions of the self-counting abacus and planimeter.",
+        "ru": "Сверить библиографические заглавия и даты книг, исторические названия почётных университетов и техническую характеристику самосчётов и планиметра."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Establish the public original source of the historical portrait of Viktor Bunyakovsky, its creator or photographer (if known), and its license or confirmed public-domain status.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Establish the public original source of the historical portrait of Viktor Bunyakovsky, its creator or photographer (if known), and its license or confirmed public-domain status.",
+        "ru": "Установить публичный первоисточник исторического портрета Виктора Буняковского, автора/фотографа (если известен) и лицензию либо подтверждённый public-domain status."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
