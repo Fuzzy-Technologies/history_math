@@ -1,0 +1,51 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1946a03c3909",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Согласовать заголовок «Никколо Тарталья»: в исходнике нет отдельного именного заголовка, а историческое вступление сохранено полностью. Уточнить рамки сравнительного утверждения о достижениях математиков Востока.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Сравнительное утверждение сужено до самостоятельного достижения европейской математики; заголовок принят.",
+      "localizations": {
+        "source": "Согласовать заголовок «Никколо Тарталья»: в исходнике нет отдельного именного заголовка, а историческое вступление сохранено полностью. Уточнить рамки сравнительного утверждения о достижениях математиков Востока.",
+        "en": "Agree the proposed title Niccolò Tartaglia: the source has no separate name heading, and its historical opening is retained in full. Clarify the scope of the comparison with mathematicians in the East."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Проверить типы учебных заведений в Вероне, Брешии и Венеции, названных университетами, условия передачи правила Кардано и точные названия и даты полемических документов.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Тип учебного заведения в Вероне и названия полемических документов уточнены по Galileo Project, Treccani и каталогу Museo Galileo.",
+      "localizations": {
+        "source": "Проверить типы учебных заведений в Вероне, Брешии и Венеции, названных университетами, условия передачи правила Кардано и точные названия и даты полемических документов.",
+        "en": "Verify the types of educational institutions in Verona, Brescia and Venice described as universities, the conditions of Cardano’s receipt of the rule, and the precise titles and dates of the polemical documents."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить первоисточник гравированного портрета Никколо Тартальи, автора или гравёра и дату (если известны), а также лицензию либо подтверждённый статус общественного достояния.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить первоисточник гравированного портрета Никколо Тартальи, автора или гравёра и дату (если известны), а также лицензию либо подтверждённый статус общественного достояния.",
+        "en": "Establish the primary source of the engraved portrait of Niccolò Tartaglia, its artist or engraver and date (if known), and the licence or verified public-domain status."
+      }
+    },
+    {
+      "id": "q4",
+      "question": "Уточнить, какие именно формы кубического уравнения независимо решил Тарталья в 1535 году и какие ранее решил дель Ферро; формулировка «переоткрыл известные приёмы» не должна смешивать приоритеты и разные формы уравнения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить, какие именно формы кубического уравнения независимо решил Тарталья в 1535 году и какие ранее решил дель Ферро; формулировка «переоткрыл известные приёмы» не должна смешивать приоритеты и разные формы уравнения.",
+        "en": "Clarify which forms of the cubic equation Tartaglia independently solved in 1535 and which had earlier been solved by del Ferro; wording that he “rediscovered methods already known” should not conflate priority and distinct equation forms."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
