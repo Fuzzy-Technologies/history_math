@@ -1,0 +1,41 @@
+{
+  "/assets/images/hm-13e779934c3e/figure-01.png": {
+    "sha256": "a8ac30cf2c228cde86019d5e3054b50ecbab2f9e08a1ec3469f89bcc4847b614",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 2000106,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-13e779934c3e/figure-01.png-480.webp",
+        "width": 480,
+        "height": 480,
+        "sha256": "a81828c6e272febcae847087dfb75ea921a88cac47f4745fd206022f9a045a0a",
+        "bytes": 37040
+      },
+      {
+        "path": "/assets/images/previews/hm-13e779934c3e/figure-01.png-960.webp",
+        "width": 960,
+        "height": 960,
+        "sha256": "854855a255831d896c11dc4feecb9f3f4dbe16a550850e888b9c29cd8231fe47",
+        "bytes": 201282
+      },
+      {
+        "path": "/assets/images/previews/hm-13e779934c3e/figure-01.png-1024.webp",
+        "width": 1024,
+        "height": 1024,
+        "sha256": "4648460eb36114d51d15439a4f87d77d24f6456f2917b47667fa4cf46cb2e34e",
+        "bytes": 252684
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-a/hm-13e779934c3e-figure-01-a8ac30cf2c228cde86019d5e3054b50ecbab2f9e08a1ec3469f89bcc4847b614.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/715622628",
+      "asset_id": 715622628,
+      "release_tag": "article-originals-a",
+      "sha256": "a8ac30cf2c228cde86019d5e3054b50ecbab2f9e08a1ec3469f89bcc4847b614",
+      "bytes": 2000106
+    }
+  }
+}
