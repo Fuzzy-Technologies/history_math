@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-251b20bebde7-en",
+  "questions": [
+    {
+      "id": "varignon-self-intersecting-area",
+      "question": "Please qualify the area statements for self-intersecting quadrilaterals and generalised parallelograms. For the bow-tie with vertices (0, 0), (2, 2), (0, 2), (2, 0), the two lobes have total area 2, while the midpoint figure is degenerate with area 0. The half-area formula cannot use the sum of the lobe areas here; please specify signed area and degeneracy, or restrict the class of quadrilaterals.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please qualify the area statements for self-intersecting quadrilaterals and generalised parallelograms. For the bow-tie with vertices (0, 0), (2, 2), (0, 2), (2, 0), the two lobes have total area 2, while the midpoint figure is degenerate with area 0. The half-area formula cannot use the sum of the lobe areas here; please specify signed area and degeneracy, or restrict the class of quadrilaterals.",
+        "ru": "Уточнить условия утверждений о площади для самопересекающихся четырёхугольников и обобщённого параллелограмма. Например, у «бантика» с вершинами (0, 0), (2, 2), (0, 2), (2, 0) сумма площадей двух лепестков равна 2, а фигура середин сторон вырождена и имеет площадь 0. Формулу половины площади здесь нельзя применять к сумме площадей лепестков; нужны ориентированная площадь и оговорка о вырождении либо ограничение класса исходных фигур."
+      },
+      "resolution": "The unsigned-area claims are now restricted to simple (non-self-intersecting) quadrilaterals. For self-intersecting quadrilaterals, the text retains only Varignon’s general parallel-side result."
+    },
+    {
+      "id": "varignon-portrait-attribution",
+      "question": "Please replace the generic credit for the Pierre Varignon portrait with its identifiable public source, creator (when known), and licence or public-domain basis in both editions. The current `source` and `rights_basis` only say that it is an illustration accompanying the text, which does not establish the rights for this third-party engraving.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please replace the generic credit for the Pierre Varignon portrait with its identifiable public source, creator (when known), and licence or public-domain basis in both editions. The current `source` and `rights_basis` only say that it is an illustration accompanying the text, which does not establish the rights for this third-party engraving.",
+        "ru": "Указать для гравированного портрета Пьера Вариньона точный публичный источник, автора изображения (если известен) и лицензию либо основание общественного достояния. Формулировка «Иллюстрация к материалу» не подтверждает права на стороннюю гравюру; сведения нужно согласованно внести в обе версии."
+      },
+      "resolution": "The portrait bytes match Wikimedia Commons `Pierre Varignon.jpg` (SHA-256 1950634c10c6e0d66c5c509ca152e9e907d9c217f473ac0497fcd484963305e0). Both editions now name the exact public source; the record identifies no creator, and its rights status is reported without expansion as PD-old and Public Domain Mark 1.0."
+    },
+    {
+      "id": "varignon-berlin-academy-date",
+      "question": "Correct Pierre Varignon’s Berlin Academy membership date. Both editions give 1713, while the official BBAW chronological register lists him as a foreign member (AM) from 4 May 1711. Update RU/EN consistently and retain the precise membership category.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Correct Pierre Varignon’s Berlin Academy membership date. Both editions give 1713, while the official BBAW chronological register lists him as a foreign member (AM) from 4 May 1711. Update RU/EN consistently and retain the precise membership category.",
+        "ru": "Исправить дату членства Пьера Вариньона в Берлинской академии. В обеих версиях указан 1713 год, тогда как официальный хронологический реестр BBAW фиксирует его как иностранного члена (AM) с 04.05.1711. Согласованно заменить дату в RU/EN и сохранить точный статус членства."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
