@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-11795a8cd0b8",
+  "questions": [
+    {
+      "id": "gerbert-quotation-source",
+      "question": "Уточнить страницу в книге Nancy Marie Brown «The Abacus and the Cross» для фразы о маге, короле и математике. Издатель подтверждает издание 2012 года по ссылке https://www.hachettebookgroup.com/titles/nancy-marie-brown/the-abacus-and-the-cross/9780465031443/, но точная реплика пока не сверена с текстом книги. Согласовать источник либо помету о характере шутки.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить страницу в книге Nancy Marie Brown «The Abacus and the Cross» для фразы о маге, короле и математике. Издатель подтверждает издание 2012 года по ссылке https://www.hachettebookgroup.com/titles/nancy-marie-brown/the-abacus-and-the-cross/9780465031443/, но точная реплика пока не сверена с текстом книги. Согласовать источник либо помету о характере шутки.",
+        "en": "Please identify the page in Nancy Marie Brown’s The Abacus and the Cross for the line about a magician, a king and a mathematician. The publisher confirms the 2012 edition at https://www.hachettebookgroup.com/titles/nancy-marie-brown/the-abacus-and-the-cross/9780465031443/, but the exact line has not yet been checked against the book. Please agree a source or a note describing it as a joke."
+      }
+    },
+    {
+      "id": "gerbert-cover-abacus",
+      "question": "На обложке изображены счёты с косточками на стержнях, тогда как абак Герберта был разрядной счётной доской с подвижными жетонами. В обеих подписях следует указать, что иллюстрация условная. Источник: https://www.sciamvs.org/files/SCIAMVS_03_091-108_Burnett.pdf, с. 91–92.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "На обложке изображены счёты с косточками на стержнях, тогда как абак Герберта был разрядной счётной доской с подвижными жетонами. В обеих подписях следует указать, что иллюстрация условная. Источник: https://www.sciamvs.org/files/SCIAMVS_03_091-108_Burnett.pdf, с. 91–92.",
+        "en": "The cover shows a bead frame with counters on rods, whereas Gerbert’s abacus was a place-value counting board with movable counters. State in both captions that the illustration is schematic. Evidence: https://www.sciamvs.org/files/SCIAMVS_03_091-108_Burnett.pdf, pp. 91–92."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
