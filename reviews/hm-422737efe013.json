@@ -1,0 +1,51 @@
+{
+  "review_version": 1,
+  "article_id": "hm-422737efe013",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Согласовать объединение первой и семнадцатой библиографических записей об «Учении о числе»: у них сокращённое и полное названия и объём 344/341 с. Проверенный титул и печатная каталожная запись самого издания дают «Учение о числе на средневековом Ближнем и Среднем Востоке», Ташкент: Фан, 1967, 344 с.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Дублирующие записи объединены по титулу издания: Ташкент, Фан, 1967, 344 с.",
+      "localizations": {
+        "source": "Согласовать объединение первой и семнадцатой библиографических записей об «Учении о числе»: у них сокращённое и полное названия и объём 344/341 с. Проверенный титул и печатная каталожная запись самого издания дают «Учение о числе на средневековом Ближнем и Среднем Востоке», Ташкент: Фан, 1967, 344 с.",
+        "en": "Approve merging the first and seventeenth bibliography entries for The Theory of Number: their short and full titles give 344 and 341 pages. The examined title page and printed catalogue entry give The Theory of Number in the Medieval Near and Middle East, Tashkent: Fan, 1967, 344 pages."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Проверить в названии сборника 1983 года «к 1200-летию со дня смерти» ал-Хорезми: вероятно, речь о рождении. Согласовать исправление полного названия в RU/EN по титулу сборника; обе записи пока сохраняют исходное разночтение.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Название сборника исправлено по титулу: к 1200-летию со дня рождения ал-Хорезми.",
+      "localizations": {
+        "source": "Проверить в названии сборника 1983 года «к 1200-летию со дня смерти» ал-Хорезми: вероятно, речь о рождении. Согласовать исправление полного названия в RU/EN по титулу сборника; обе записи пока сохраняют исходное разночтение.",
+        "en": "Verify “1200th anniversary of his death” in the title of the 1983 al-Khwarizmi collection: it likely refers to his birth. Approve the title in both languages from the collection’s title page; the source wording is retained pending that decision."
+      }
+    },
+    {
+      "id": "matvievskaya-main-portrait-provenance",
+      "question": "Для главного портрета Галины Павловны Матвиевской укажите фактическое происхождение снимка, проверяемый публичный источник и действительное правовое основание публикации.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для главного портрета Галины Павловны Матвиевской укажите фактическое происхождение снимка, проверяемый публичный источник и действительное правовое основание публикации.",
+        "en": "For the main portrait of Galina Matvievskaya, identify the photograph’s actual provenance, a verifiable public source, and a valid rights basis for publication."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Сверить год докторской степени и защиты: вводный абзац указывает 1969, основной текст — защиту в 1968; Академия наук Узбекистана также датирует защиту 1968 годом, тогда как MathNet приводит 1967. Установить дату по аттестационному или диссертационному источнику и синхронизировать RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить год докторской степени и защиты: вводный абзац указывает 1969, основной текст — защиту в 1968; Академия наук Узбекистана также датирует защиту 1968 годом, тогда как MathNet приводит 1967. Установить дату по аттестационному или диссертационному источнику и синхронизировать RU/EN.",
+        "en": "Verify the year of the doctoral degree and defence: the lead gives 1969, the body gives 1968; the Uzbekistan Academy of Sciences also dates the defence to 1968, while MathNet gives 1967. Establish the date from an attestation or dissertation record and synchronize RU/EN."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
