@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1b2fdf1899e2-en",
+  "questions": [
+    {
+      "id": "zu-death-date",
+      "question": "The source death date 500 is retained. The MacTutor biography https://mathshistory.st-andrews.ac.uk/Biographies/Zu_Chongzhi/ gives 501, whereas its hosted Biographical Encyclopedia of Astronomers entry https://mathshistory.st-andrews.ac.uk/BEA/zu_chongzhi_bea.pdf gives 500. Please choose the date to use; the discrepancy has not been silently corrected.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The source death date 500 is retained. The MacTutor biography https://mathshistory.st-andrews.ac.uk/Biographies/Zu_Chongzhi/ gives 501, whereas its hosted Biographical Encyclopedia of Astronomers entry https://mathshistory.st-andrews.ac.uk/BEA/zu_chongzhi_bea.pdf gives 500. Please choose the date to use; the discrepancy has not been silently corrected.",
+        "ru": "Сохранён исходный год смерти 500. В биографии MacTutor https://mathshistory.st-andrews.ac.uk/Biographies/Zu_Chongzhi/ указан 501, тогда как размещённая там статья Biographical Encyclopedia of Astronomers https://mathshistory.st-andrews.ac.uk/BEA/zu_chongzhi_bea.pdf даёт 500. Редактору выбрать принятую датировку; расхождение не исправлялось автоматически."
+      }
+    },
+    {
+      "id": "zu-petition-quotation",
+      "question": "Please check the translation and quotation format for the petition in Book of the Southern Qi, juan 52. In https://zh.wikisource.org/zh-hant/%E5%8D%97%E9%BD%8A%E6%9B%B8/%E5%8D%B752 the phrases about personal measurements and creating a new calendar occur in different parts of the petition; the Russian source joins them with a dash. Should both versions mark the omission and identify the translator? The original Russian wording is retained.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please check the translation and quotation format for the petition in Book of the Southern Qi, juan 52. In https://zh.wikisource.org/zh-hant/%E5%8D%97%E9%BD%8A%E6%9B%B8/%E5%8D%B752 the phrases about personal measurements and creating a new calendar occur in different parts of the petition; the Russian source joins them with a dash. Should both versions mark the omission and identify the translator? The original Russian wording is retained.",
+        "ru": "Уточнить перевод и оформление цитаты из «Нань Ци шу», цзюань 52. В https://zh.wikisource.org/zh-hant/%E5%8D%97%E9%BD%8A%E6%9B%B8/%E5%8D%B752 фразы о личных измерениях и создании нового календаря находятся в разных частях прошения; русский исходник соединяет их тире. Нужны ли обозначение пропуска и указание переводчика для обеих версий? Исходная русская формулировка сохранена."
+      }
+    },
+    {
+      "id": "zu-sculpture-provenance",
+      "question": "For fig-2, the photograph of a sculptural portrait of Zu Chongzhi, provide a public source, the sculptor and photographer, the holding or installation location, and the legal basis for use. Possession of the file in the author’s archive does not establish the provenance or rights of a third-party image.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For fig-2, the photograph of a sculptural portrait of Zu Chongzhi, provide a public source, the sculptor and photographer, the holding or installation location, and the legal basis for use. Possession of the file in the author’s archive does not establish the provenance or rights of a third-party image.",
+        "ru": "Для fig-2 — фотографии скульптурного изображения Цзу Чунчжи — укажите публичный источник, автора скульптуры и фотографии, место хранения или установки и правовое основание использования. Нахождение файла в авторском архиве не устанавливает происхождение и права на изображение третьего лица."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
