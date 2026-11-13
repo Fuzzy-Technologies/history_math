@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-83071b9e1d76-en",
+  "questions": [
+    {
+      "id": "billiards-cover-rights",
+      "question": "For Guy Buffet’s painting Billiards, identify the actual artist, a verifiable public source, and a valid permission or licence; storing a copy in the author’s archive is not a rights basis.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For Guy Buffet’s painting Billiards, identify the actual artist, a verifiable public source, and a valid permission or licence; storing a copy in the author’s archive is not a rights basis.",
+        "ru": "Указать для картины Ги Бюффе «Billiards» реального автора, проверяемый публичный источник и действительное разрешение или лицензию; хранение копии в авторском архиве не является правовым основанием."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
