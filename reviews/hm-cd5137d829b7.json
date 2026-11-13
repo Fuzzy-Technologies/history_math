@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-cd5137d829b7",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Сверить восемь учебников с библиографией: семь пунктов, причём в пункте о геометрии приведены два названия (1909 и 1917). Уточнить, считаются ли они самостоятельными книгами. Для «Оснований аналитической геометрии» в основном тексте указан 1907, в списке 1908; это могут быть разные издания, требуется библиографическое подтверждение. Также согласовать начало работы в училище Воскресенского: в тексте указан 1909 год, а каталог библиотеки «Математическое образование» указывает 1908: https://www.mathedu.ru/indexes/authors/rashevskiy_k_n/",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить восемь учебников с библиографией: семь пунктов, причём в пункте о геометрии приведены два названия (1909 и 1917). Уточнить, считаются ли они самостоятельными книгами. Для «Оснований аналитической геометрии» в основном тексте указан 1907, в списке 1908; это могут быть разные издания, требуется библиографическое подтверждение. Также согласовать начало работы в училище Воскресенского: в тексте указан 1909 год, а каталог библиотеки «Математическое образование» указывает 1908: https://www.mathedu.ru/indexes/authors/rashevskiy_k_n/",
+        "en": "Reconcile the eight-textbook count with seven bibliography bullets, one of which gives two geometry titles (1909 and 1917). Establish whether those are counted as separate books. The analytic geometry title is dated 1907 in the main text and 1908 in Notes; these may be different editions and need bibliographical confirmation. Also reconcile the 1909 start at Voskresensky’s Real School with the 1908 date in the Mathematical Education library catalogue: https://www.mathedu.ru/indexes/authors/rashevskiy_k_n/"
+      }
+    },
+    {
+      "id": "fig-3-museum-rights",
+      "question": "Для `fig-3` подпись и `source` называют архив Чаплыгинского краеведческого музея, но `rights_basis` в обеих редакциях утверждает, что это иллюстрация из авторского архива. Сохранить музейный кредит и указать действительное основание публикации: разрешение музея, публичную лицензию либо подтверждённый статус общественного достояния.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для `fig-3` подпись и `source` называют архив Чаплыгинского краеведческого музея, но `rights_basis` в обеих редакциях утверждает, что это иллюстрация из авторского архива. Сохранить музейный кредит и указать действительное основание публикации: разрешение музея, публичную лицензию либо подтверждённый статус общественного достояния.",
+        "en": "For `fig-3`, the caption and `source` name the Chaplygin Local History Museum archive, while `rights_basis` in both editions says the illustration comes from the author’s archive. Preserve the museum credit and provide the actual publication basis: museum permission, a public licence, or verified public-domain status."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
