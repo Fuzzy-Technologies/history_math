@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c85436986815-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify whether Smullyan held a Princeton professorship: the source describes his doctorate there but lists teaching posts at Yeshiva, Lehman and Indiana. Confirm the 1957 paper’s title and the assessment of its role in understanding Gödel’s theorem.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify whether Smullyan held a Princeton professorship: the source describes his doctorate there but lists teaching posts at Yeshiva, Lehman and Indiana. Confirm the 1957 paper’s title and the assessment of its role in understanding Gödel’s theorem.",
+        "ru": "Уточнить, был ли Смаллиан профессором Принстонского университета: источник описывает там докторскую защиту, а перечисленные места преподавания — Иешива, Леман и Индиана. Подтвердить точное название статьи 1957 года и оценку её роли в понимании теоремы Гёделя."
+      },
+      "resolution": "The wording now states that Smullyan taught at Princeton and gives the exact 1957 paper title with a restrained description of its subject."
+    },
+    {
+      "id": "q2",
+      "question": "Check the scholarly bibliography. The popular list explicitly translates Russian-edition titles with their dates; mapping them to English originals requires verification.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Check the scholarly bibliography. The popular list explicitly translates Russian-edition titles with their dates; mapping them to English originals requires verification.",
+        "ru": "Сверить научную библиографию. Список популярных книг прямо обозначен как перевод названий русских изданий с их датами; соответствие английским оригиналам требует проверки."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Identify the public source, photographer or creator and legal status of the portrait of Raymond Smullyan. “Mansur Gilmullin’s archive” describes file custody but does not establish authorship or permission for reproduction.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Identify the public source, photographer or creator and legal status of the portrait of Raymond Smullyan. “Mansur Gilmullin’s archive” describes file custody but does not establish authorship or permission for reproduction.",
+        "ru": "Установить публичный первоисточник, фотографа или автора и правовой статус портрета Рэймонда Смаллиана. Формулировка «Авторский архив Мансура Гильмуллина» описывает хранение файла, но не подтверждает авторство или право воспроизведения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}

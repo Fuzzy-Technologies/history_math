@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c85436986815",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить, был ли Смаллиан профессором Принстонского университета: источник описывает там докторскую защиту, а перечисленные места преподавания — Иешива, Леман и Индиана. Подтвердить точное название статьи 1957 года и оценку её роли в понимании теоремы Гёделя.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Формулировка уточнена: Смаллиан преподавал в Принстоне; статья 1957 года названа точно и её содержание описано без чрезмерной оценки.",
+      "localizations": {
+        "source": "Уточнить, был ли Смаллиан профессором Принстонского университета: источник описывает там докторскую защиту, а перечисленные места преподавания — Иешива, Леман и Индиана. Подтвердить точное название статьи 1957 года и оценку её роли в понимании теоремы Гёделя.",
+        "en": "Verify whether Smullyan held a Princeton professorship: the source describes his doctorate there but lists teaching posts at Yeshiva, Lehman and Indiana. Confirm the 1957 paper’s title and the assessment of its role in understanding Gödel’s theorem."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Сверить научную библиографию. Список популярных книг прямо обозначен как перевод названий русских изданий с их датами; соответствие английским оригиналам требует проверки.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить научную библиографию. Список популярных книг прямо обозначен как перевод названий русских изданий с их датами; соответствие английским оригиналам требует проверки.",
+        "en": "Check the scholarly bibliography. The popular list explicitly translates Russian-edition titles with their dates; mapping them to English originals requires verification."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить публичный первоисточник, фотографа или автора и правовой статус портрета Рэймонда Смаллиана. Формулировка «Авторский архив Мансура Гильмуллина» описывает хранение файла, но не подтверждает авторство или право воспроизведения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить публичный первоисточник, фотографа или автора и правовой статус портрета Рэймонда Смаллиана. Формулировка «Авторский архив Мансура Гильмуллина» описывает хранение файла, но не подтверждает авторство или право воспроизведения.",
+        "en": "Identify the public source, photographer or creator and legal status of the portrait of Raymond Smullyan. “Mansur Gilmullin’s archive” describes file custody but does not establish authorship or permission for reproduction."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
