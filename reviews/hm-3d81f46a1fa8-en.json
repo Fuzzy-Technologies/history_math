@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-3d81f46a1fa8-en",
+  "questions": [
+    {
+      "id": "alcuin-manuscript-and-images",
+      "question": "Clarify that manuscript Vat. Reg. lat. 309 preserves 21 problems, while the 56-problem corpus is reconstructed from several manuscripts; for the Alcuin engraving and the second illustration, provide the creators, verifiable public sources and rights basis.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify that manuscript Vat. Reg. lat. 309 preserves 21 problems, while the 56-problem corpus is reconstructed from several manuscripts; for the Alcuin engraving and the second illustration, provide the creators, verifiable public sources and rights basis.",
+        "ru": "Уточнить, что рукопись Vat. Reg. lat. 309 сохраняет 21 задачу, тогда как корпус из 56 задач реконструируется по нескольким рукописям; для гравюры Алкуина и второй иллюстрации указать создателей, проверяемые публичные источники и правовое основание."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
