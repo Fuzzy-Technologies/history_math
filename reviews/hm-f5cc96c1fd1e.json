@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f5cc96c1fd1e",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Проверить дату письма отца (1823) и источники обеих прямых цитат; уточнить полные библиографические названия «Аппендикса» и книги отца.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Проверить дату письма отца (1823) и источники обеих прямых цитат; уточнить полные библиографические названия «Аппендикса» и книги отца.",
+        "en": "Verify the date of the father’s letter (1823) and the sources of both direct quotations; check the full bibliographical titles of the Appendix and the father’s book."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить формулировку независимости пятого постулата и то, какую теорию Гамильтона предвосхищала работа о мнимых величинах; подтвердить источник сведений о последующих публикациях и состоянии Бойяи перед смертью.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить формулировку независимости пятого постулата и то, какую теорию Гамильтона предвосхищала работа о мнимых величинах; подтвердить источник сведений о последующих публикациях и состоянии Бойяи перед смертью.",
+        "en": "Clarify the independence statement about the fifth postulate and which theory of Hamilton the work on imaginary quantities anticipated; confirm sources for the account of later publications and Bolyai’s condition before his death."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить проверяемый публичный первоисточник, автора, дату и лицензию либо подтверждённый public-domain status портрета Яноша Бойяи.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить проверяемый публичный первоисточник, автора, дату и лицензию либо подтверждённый public-domain status портрета Яноша Бойяи.",
+        "en": "Identify a verifiable public primary source, author, date and licence or confirmed public-domain status for the portrait of János Bolyai."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
