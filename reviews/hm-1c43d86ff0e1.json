@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1c43d86ff0e1",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "В своём curriculum vitae Картан различает работу в Париже с 1940 года и профессорскую должность с 1949 года. Для Орсе он даёт 1969–1975, в очерке указано 1970–1975. Согласовать периоды и должности. Лицей Малерба в Кане уже уточнён по [curriculum vitae Картана](https://smf.emath.fr/sites/default/files/2025-12/AS-32-33__sample.pdf).",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "В своём curriculum vitae Картан различает работу в Париже с 1940 года и профессорскую должность с 1949 года. Для Орсе он даёт 1969–1975, в очерке указано 1970–1975. Согласовать периоды и должности. Лицей Малерба в Кане уже уточнён по [curriculum vitae Картана](https://smf.emath.fr/sites/default/files/2025-12/AS-32-33__sample.pdf).",
+        "en": "In his curriculum vitae, Cartan distinguishes his teaching in Paris from 1940 and his professorship from 1949. He gives 1969–1975 for Orsay, while the article gives 1970–1975. Reconcile the dates and appointments. The Lycée Malherbe in Caen has been corrected using [Cartan’s curriculum vitae](https://smf.emath.fr/sites/default/files/2025-12/AS-32-33__sample.pdf)."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Установить публичный первоисточник, фотографа или автора и правовой статус портрета Анри Картана; хранение в авторском архиве не подтверждает авторство или право воспроизведения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить публичный первоисточник, фотографа или автора и правовой статус портрета Анри Картана; хранение в авторском архиве не подтверждает авторство или право воспроизведения.",
+        "en": "Identify the public source, photographer or creator and legal status of the portrait of Henri Cartan; archive custody does not establish authorship or permission for reproduction."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
