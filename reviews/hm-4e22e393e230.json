@@ -1,0 +1,51 @@
+{
+  "review_version": 1,
+  "article_id": "hm-4e22e393e230",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить дату рождения, раннюю биографию и преподавательскую деятельность Пачоли.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Дата рождения приведена как приблизительная; ранняя биография и перечень преподавательских мест изложены без неподтверждённых деталей.",
+      "localizations": {
+        "source": "Уточнить дату рождения, раннюю биографию и преподавательскую деятельность Пачоли.",
+        "en": "Clarify Pacioli’s birth date, early biography and teaching career."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Снять абсолютные обобщения о полноте «Суммы» и принятии индийско-арабских цифр; проверить примеры алгебраических сокращений.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Обобщения смягчены; оставлены подтверждаемые сокращения co, ce и cu, а сомнительная запись корня удалена.",
+      "localizations": {
+        "source": "Снять абсолютные обобщения о полноте «Суммы» и принятии индийско-арабских цифр; проверить примеры алгебраических сокращений.",
+        "en": "Remove absolute claims about the completeness of the *Summa* and adoption of Hindu-Arabic numerals; check the algebraic abbreviations."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить проверяемый первоисточник, автора и правовой статус портрета Луки Пачоли; отдельно кредитовать ретушь или кадрирование, если они применялись.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить проверяемый первоисточник, автора и правовой статус портрета Луки Пачоли; отдельно кредитовать ретушь или кадрирование, если они применялись.",
+        "en": "Identify a verifiable primary source, author and legal status for the portrait of Luca Pacioli; credit any retouching or cropping separately if applicable."
+      }
+    },
+    {
+      "id": "divina-proportione-history",
+      "question": "Исправить историю Divina proportione: рукопись завершена в 1498 году, расширенное издание вышло в 1509-м; Леонардо сотрудничал с Пачоли и выполнил рисунки, а название «золотое сечение» появилось лишь в XIX веке.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Исправить историю Divina proportione: рукопись завершена в 1498 году, расширенное издание вышло в 1509-м; Леонардо сотрудничал с Пачоли и выполнил рисунки, а название «золотое сечение» появилось лишь в XIX веке.",
+        "en": "Correct the history of Divina proportione: the manuscript was completed in 1498 and the expanded edition appeared in 1509; Leonardo collaborated with Pacioli and supplied the drawings, while the term “golden section” arose only in the nineteenth century."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
