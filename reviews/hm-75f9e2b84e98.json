@@ -1,0 +1,52 @@
+{
+  "review_version": 1,
+  "article_id": "hm-75f9e2b84e98",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить рамки утверждений о первом научно-популярном физико-математическом журнале и первых российских курсах геометрии Лобачевского и оснований геометрии.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Абсолютные приоритеты смягчены: ВОФЭМ назван одним из первых российских журналов такого профиля, а Каган — одним из первых преподавателей соответствующих университетских курсов.",
+      "localizations": {
+        "source": "Уточнить рамки утверждений о первом научно-популярном физико-математическом журнале и первых российских курсах геометрии Лобачевского и оснований геометрии.",
+        "en": "Clarify the scope of the priority claims for the popular physics and mathematics journal and the first Russian courses on Lobachevsky geometry and the foundations of geometry."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "У Кагана Первый Всероссийский съезд преподавателей математики датирован декабрём 1911 — январём 1912, а в переносимом очерке о Бобынине (#366) указан конец 1912 — начало 1913. Сверить первоисточник и согласовать дату; оба исходных текста пока сохранены.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Сохранена подтверждаемая датировка Первого Всероссийского съезда преподавателей математики: декабрь 1911 — январь 1912 года. Расхождение относится к другому материалу и не меняет эту редакцию.",
+      "localizations": {
+        "source": "У Кагана Первый Всероссийский съезд преподавателей математики датирован декабрём 1911 — январём 1912, а в переносимом очерке о Бобынине (#366) указан конец 1912 — начало 1913. Сверить первоисточник и согласовать дату; оба исходных текста пока сохранены.",
+        "en": "Kagan’s source dates the First All-Russian Congress of Mathematics Teachers to December 1911–January 1912, while the Bobynin article (#366) gives late 1912–early 1913. Check the original congress source and agree the date; both source texts are retained for now."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Подтвердить ссылку на исходную публикацию, если она известна: post.txt и long.txt содержат пустое поле ссылки. Английские заглавия русских книг переведены описательно.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Подтверждённого URL в источнике нет; необязательное поле корректно опущено, исходная дата сохранена. Описательные английские названия явно представлены как переводы русских изданий.",
+      "localizations": {
+        "source": "Подтвердить ссылку на исходную публикацию, если она известна: post.txt и long.txt содержат пустое поле ссылки. Английские заглавия русских книг переведены описательно.",
+        "en": "Confirm the original-publication URL if known: both source texts leave the link field empty. English titles of the Russian books are descriptive translations."
+      }
+    },
+    {
+      "id": "q4",
+      "question": "Для исторического портрета Кагана указано только «Иллюстрация к материалу». Установить проверяемый первоисточник, автора или фотографа (если известен), дату и лицензию либо иное подтверждённое основание использования в обеих редакциях.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для исторического портрета Кагана указано только «Иллюстрация к материалу». Установить проверяемый первоисточник, автора или фотографа (если известен), дату и лицензию либо иное подтверждённое основание использования в обеих редакциях.",
+        "en": "The historical portrait of Kagan is identified only as an illustration accompanying the text. Establish a verifiable source, the creator or photographer where known, its date, and a licence or other confirmed basis for use in both editions."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
