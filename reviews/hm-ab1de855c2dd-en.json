@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ab1de855c2dd-en",
+  "questions": [
+    {
+      "id": "morozov-portrait-provenance",
+      "question": "For the historical portrait of Vladimir Morozov (fig-2), identify the original image, its creator or holding institution, a verifiable public source, and the legal basis for retouching and publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the historical portrait of Vladimir Morozov (fig-2), identify the original image, its creator or holding institution, a verifiable public source, and the legal basis for retouching and publication.",
+        "ru": "Для исторического портрета Владимира Морозова (fig-2) указать исходное изображение, автора или хранилище, проверяемый публичный источник и правовое основание ретуши и публикации."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
