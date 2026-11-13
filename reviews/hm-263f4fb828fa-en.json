@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-263f4fb828fa-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Provide sources and specific comparisons for the assessment of Russia’s and Felix Klein’s roles in the international reform movement. The English text attributes the position to Lankov and preserves the author’s argument.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide sources and specific comparisons for the assessment of Russia’s and Felix Klein’s roles in the international reform movement. The English text attributes the position to Lankov and preserves the author’s argument.",
+        "ru": "Подтвердить источники и конкретные сопоставления для оценки роли России и Ф. Клейна в международной реформе преподавания: в EN позиция явно отнесена к Ланкову, авторская аргументация сохранена."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Verify historical institution names and appointments, department chronology and bibliographical titles. Confirm the English rendering of the two-class school without confusing it with two years of study.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify historical institution names and appointments, department chronology and bibliographical titles. Confirm the English rendering of the two-class school without confusing it with two years of study.",
+        "ru": "Сверить исторические названия учебных заведений и точные должности, хронологию кафедр и библиографические заглавия. Уточнить английскую передачу «двухклассного училища» без ошибочного отождествления с двухлетним обучением."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "For the portrait of A. V. Lankov and the cover of the 1951 Uchpedgiz book, identify public original sources, the photographer or publisher where known, and a confirmed legal basis for reproduction. Possession of copies in an author's archive does not establish image rights.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the portrait of A. V. Lankov and the cover of the 1951 Uchpedgiz book, identify public original sources, the photographer or publisher where known, and a confirmed legal basis for reproduction. Possession of copies in an author's archive does not establish image rights.",
+        "ru": "Для портрета А. В. Ланкова и обложки книги Учпедгиза 1951 года установить публичные первоисточники, фотографа или издателя при наличии и подтверждённое правовое основание воспроизведения. Наличие копий в авторском архиве не подтверждает права на изображения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
