@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-bd8ef09b0bae-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Agree the account of Fibonacci’s place in European mathematics and clarify his use of the Arabic-language tradition.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Agree the account of Fibonacci’s place in European mathematics and clarify his use of the Arabic-language tradition.",
+        "ru": "Согласовать обобщение о месте Фибоначчи в европейской математике и уточнить характер заимствований из арабоязычной традиции."
+      },
+      "resolution": "The absolute claim about the “first” mathematician and all achievements was replaced by a neutral historical formulation."
+    },
+    {
+      "id": "q2",
+      "question": "Clarify the wording of the rabbit problem and what is counted after one year.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the wording of the rabbit problem and what is counted after one year.",
+        "ru": "Уточнить формулировку задачи о кроликах и смысл подсчёта пар через год."
+      },
+      "resolution": "The RU and EN wording now consistently counts all living pairs after one year and states maturity and survival assumptions."
+    },
+    {
+      "id": "q3",
+      "question": "Provide a public, verifiable source for the image of Fibonacci, identify the artist where known, and document the licence or other confirmed legal status; keep the attribution synchronized in RU and EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide a public, verifiable source for the image of Fibonacci, identify the artist where known, and document the licence or other confirmed legal status; keep the attribution synchronized in RU and EN.",
+        "ru": "Укажите публичный проверяемый первоисточник изображения Фибоначчи, автора или художника (если известен) и лицензию либо иной подтверждённый правовой статус; синхронизируйте атрибуцию в RU/EN."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
