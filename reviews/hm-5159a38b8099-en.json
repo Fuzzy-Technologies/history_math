@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-5159a38b8099-en",
+  "questions": [
+    {
+      "id": "convexity-assumptions",
+      "question": "Please specify finite-dimensional values and the usual finiteness assumptions in the convexity theorem. The original 1940 paper concerns an n-dimensional space; the abbreviated source wording should not suggest an unrestricted infinite-dimensional theorem. The clarification remains an editorial decision for both versions.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please specify finite-dimensional values and the usual finiteness assumptions in the convexity theorem. The original 1940 paper concerns an n-dimensional space; the abbreviated source wording should not suggest an unrestricted infinite-dimensional theorem. The clarification remains an editorial decision for both versions.",
+        "ru": "Для теоремы о выпуклости явно уточнить конечномерность значений векторной меры и стандартные условия её конечности: без оговорок фраза может быть прочитана как утверждение для произвольных бесконечномерных пространств. В оригинальной работе рассматривается n-мерное пространство: А. А. Ляпунов, «О вполне аддитивных вектор-функциях», Изв. АН СССР. Сер. матем., 4: 6 (1940), 465–478, https://www.mathnet.ru/php/archive.phtml?jrnid=im&option_lang=rus&paperid=3907&wshow=paper . Исходная краткая формулировка сохранена; уточнение нужно согласовать в обеих версиях."
+      }
+    },
+    {
+      "id": "portrait-attribution",
+      "question": "Identify the original photographer or institution/public catalogue record and the actual basis for using both portraits of Alexey Lyapunov. Preserve the original credit for the retouched version and synchronize the information in RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Identify the original photographer or institution/public catalogue record and the actual basis for using both portraits of Alexey Lyapunov. Preserve the original credit for the retouched version and synchronize the information in RU/EN.",
+        "ru": "Указать исходного фотографа либо учреждение/публичную запись и действительное основание использования для обоих портретов Алексея Ляпунова. Для ретушированного варианта сохранить кредит оригиналу; сведения синхронизировать в RU/EN."
+      }
+    },
+    {
+      "id": "congress-year",
+      "question": "The year of the Fourth All-Union Mathematical Congress was corrected from 1966 to 1961; the congress took place in Leningrad on 3–12 July 1961. Source: https://www.mathnet.ru/php/archive.phtml?issue=1&jrnid=rm&option_lang=rus&volume=17&wshow=issue&year=1962",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The year of the Fourth All-Union Mathematical Congress was corrected from 1966 to 1961; the congress took place in Leningrad on 3–12 July 1961. Source: https://www.mathnet.ru/php/archive.phtml?issue=1&jrnid=rm&option_lang=rus&volume=17&wshow=issue&year=1962",
+        "ru": "Год IV Всесоюзного математического съезда исправлен с 1966 на 1961: съезд проходил в Ленинграде 3–12 июля 1961 года. Источник: https://www.mathnet.ru/php/archive.phtml?issue=1&jrnid=rm&option_lang=rus&volume=17&wshow=issue&year=1962"
+      },
+      "resolution": "Both editions now give 1961."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
