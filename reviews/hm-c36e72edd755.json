@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c36e72edd755",
+  "questions": [
+    {
+      "id": "required-joke-cover",
+      "question": "Добавить обязательную обложку для карточки рубрики «Математики шутят». В исходном посте иллюстрации не было, а в обеих версиях список figures сейчас пуст.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Добавить обязательную обложку для карточки рубрики «Математики шутят». В исходном посте иллюстрации не было, а в обеих версиях список figures сейчас пуст.",
+        "en": "Add the required cover image for the Mathematicians Joke card. The source post had no illustration, and both editions currently have an empty figures list."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
