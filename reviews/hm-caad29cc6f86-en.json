@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-caad29cc6f86-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the sequence of admission to extramural postgraduate study in 1931 and graduation in 1934. The 1949 doctoral defence and 1950 degree are retained as separate events; review the historical institution names and the Tatar journal title.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify the sequence of admission to extramural postgraduate study in 1931 and graduation in 1934. The 1949 doctoral defence and 1950 degree are retained as separate events; review the historical institution names and the Tatar journal title.",
+        "ru": "Уточнить последовательность поступления в заочную аспирантуру в 1931 году и окончания университета в 1934 году. Защита докторской в 1949 году и присуждение степени в 1950 году сохранены как разные события; согласовать названия учреждений и перевод татарского названия журнала."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Establish the actual public source, photographer or creator (if known), licence or other verified legal status for the third-party portrait of Mazit Almukhamedov; synchronize the RU/EN metadata and do not attribute authorship of the image to M. F. Gilmullin without evidence.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Establish the actual public source, photographer or creator (if known), licence or other verified legal status for the third-party portrait of Mazit Almukhamedov; synchronize the RU/EN metadata and do not attribute authorship of the image to M. F. Gilmullin without evidence.",
+        "ru": "Установить для стороннего портрета Мазита Альмухамедова реальный публичный источник, фотографа/автора (если известен), лицензию или иной подтверждённый правовой статус; синхронизировать RU/EN metadata и не приписывать авторство изображения М. Ф. Гильмуллину без подтверждения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
