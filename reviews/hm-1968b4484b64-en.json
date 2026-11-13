@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1968b4484b64-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Confirm the life dates used in the title and provide a verifiable source for the quoted words attributed to Felix Klein.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the life dates used in the title and provide a verifiable source for the quoted words attributed to Felix Klein.",
+        "ru": "Уточнить принятую для заголовка датировку жизни Евклида и указать проверяемый источник приведённой цитаты Феликса Клейна."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Provide publicly verifiable original sources, authorship and legal basis for reproducing the portrait of Euclid, the 1703 title page and the photograph of the Oxford statue.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide publicly verifiable original sources, authorship and legal basis for reproducing the portrait of Euclid, the 1703 title page and the photograph of the Oxford statue.",
+        "ru": "Указать публично проверяемые первоисточники, авторство и правовое основание воспроизведения портрета Евклида, титульного листа издания 1703 года и фотографии оксфордской статуи."
+      }
+    },
+    {
+      "id": "fifth-postulate-history",
+      "question": "Remove the categorical claim that the history of the fifth postulate ended with Lobachevsky’s discovery: acknowledge Bolyai’s independent work and the role of later models in establishing the relative consistency of non-Euclidean geometry.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Remove the categorical claim that the history of the fifth postulate ended with Lobachevsky’s discovery: acknowledge Bolyai’s independent work and the role of later models in establishing the relative consistency of non-Euclidean geometry.",
+        "ru": "Снять категоричное утверждение, что история пятого постулата завершилась открытием Лобачевского: отразить независимую работу Бойяи и роль позднейших моделей в обосновании относительной непротиворечивости неевклидовой геометрии."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
