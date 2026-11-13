@@ -1,0 +1,50 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f9640e4cfb37",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Согласовать название академии в двух местах: исходник даёт член-корреспондент АПН СССР с 1955 года, научная педагогическая библиотека указывает АПН РСФСР (1955): https://dates.gnpbu.ru/0-5/Bradis/bradis.html . Утвердить исправление RU/EN.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Согласовать название академии в двух местах: исходник даёт член-корреспондент АПН СССР с 1955 года, научная педагогическая библиотека указывает АПН РСФСР (1955): https://dates.gnpbu.ru/0-5/Bradis/bradis.html . Утвердить исправление RU/EN.",
+        "en": "Approve the academy’s name in both occurrences: the source gives USSR Academy of Pedagogical Sciences from 1955, while the pedagogical research library gives the RSFSR academy in 1955, https://dates.gnpbu.ru/0-5/Bradis/bradis.html . Approve the correction in both versions."
+      },
+      "resolution": "В обеих версиях указана АПН РСФСР по [справке НПБ имени К. Д. Ушинского](https://dates.gnpbu.ru/0-5/Bradis/bradis.html)."
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить число переизданий: вводный абзац говорит более 100, ниже перечислено около 60 до 1991 года и около 30 после. Нужны дата подсчёта и основание; не подменять разные издания, тиражи и переиздания одним числом.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить число переизданий: вводный абзац говорит более 100, ниже перечислено около 60 до 1991 года и около 30 после. Нужны дата подсчёта и основание; не подменять разные издания, тиражи и переиздания одним числом.",
+        "en": "Clarify the reprint count: the introduction says over a hundred, while a later paragraph gives about sixty before 1991 and thirty afterwards. Supply the date and basis for the count and distinguish editions, print runs and reprints."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Указать источник эпиграфа Брадиса и цитаты «Эту книжку читали миллионы…», приписанной неназванным современникам. До решения обе сохранены как в авторском тексте, без выдуманной атрибуции.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Указать источник эпиграфа Брадиса и цитаты «Эту книжку читали миллионы…», приписанной неназванным современникам. До решения обе сохранены как в авторском тексте, без выдуманной атрибуции.",
+        "en": "Supply the source of Bradis’s epigraph and of the quotation beginning Millions read this little book, attributed only to unnamed contemporaries. Both are retained from the author’s text without invented attribution."
+      }
+    },
+    {
+      "id": "q4",
+      "question": "Для двух портретов В. М. Брадиса и монтажа книжных обложек установить публичные источники, авторов или учреждения и действительное правовое основание воспроизведения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для двух портретов В. М. Брадиса и монтажа книжных обложек установить публичные источники, авторов или учреждения и действительное правовое основание воспроизведения.",
+        "en": "For the two portraits of V. M. Bradis and the montage of book covers, establish public sources, creators or holding institutions, and a valid rights basis for reproduction."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
