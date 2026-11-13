@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-80f81f90b91b",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "В исходнике первое издание «Математической шкатулки» обозначено «Просвещение,1958», тогда как выбранная архивная обложка с именем файла 1958 показывает «Учпедгиз,1961». Сверить первое издание и издателя; подпись изображения следует видимому выходному году 1961.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Первое издание вышло в Учпедгизе в 1958 году; выбранная архивная обложка относится к изданию Учпедгиза 1961 года.",
+      "localizations": {
+        "source": "В исходнике первое издание «Математической шкатулки» обозначено «Просвещение,1958», тогда как выбранная архивная обложка с именем файла 1958 показывает «Учпедгиз,1961». Сверить первое издание и издателя; подпись изображения следует видимому выходному году 1961.",
+        "en": "The source cites the first edition as Prosveshchenie,1958, while the selected archival cover, whose filename says 1958, visibly reads Uchpedgiz,1961. Verify the first edition and publisher; the image caption follows the visible 1961 imprint."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить источник результатов конкурса 1964 года и количественных данных о трудах, аспирантах, переводах и тиражах. Английские названия русских книг переданы описательно; подтвердить принятое название «Математической шкатулки».",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить источник результатов конкурса 1964 года и количественных данных о трудах, аспирантах, переводах и тиражах. Английские названия русских книг переданы описательно; подтвердить принятое название «Математической шкатулки».",
+        "en": "Verify sources for the 1964 competition and the counts of works, postgraduate students, translations and print runs. English titles of the Russian books are descriptive; confirm the established title of Mathematical Treasure Chest."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить реальный публичный первоисточник, автора и правовой статус портрета Ф. Ф. Нагибина; для обложки «Математической шкатулки» указать конкретное издание, издателя и подтверждённое основание воспроизведения. Архивное хранение не означает авторство Мансура Гильмуллина.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить реальный публичный первоисточник, автора и правовой статус портрета Ф. Ф. Нагибина; для обложки «Математической шкатулки» указать конкретное издание, издателя и подтверждённое основание воспроизведения. Архивное хранение не означает авторство Мансура Гильмуллина.",
+        "en": "Identify the actual public source, creator and legal status of the portrait of F. F. Nagibin; for the cover of A Mathematical Treasure Chest, record the specific edition, publisher and confirmed basis for reproduction. Archival storage does not imply authorship by Mansur Gilmullin."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
