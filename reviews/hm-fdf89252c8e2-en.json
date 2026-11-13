@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-fdf89252c8e2-en",
+  "questions": [
+    {
+      "id": "lobachevsky-exam-problem",
+      "question": "Please identify the source for these exact examination conditions: four pipes filling the pool in 1, 2, 3 and 4 days. The Russian Academy of Education’s teaching recommendations, p. 54, dramatise a different version using 4, 10 and 15 hours. This does not disprove the account, but this variant needs confirmation or should be identified as a historical retelling.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please identify the source for these exact examination conditions: four pipes filling the pool in 1, 2, 3 and 4 days. The Russian Academy of Education’s teaching recommendations, p. 54, dramatise a different version using 4, 10 and 15 hours. This does not disprove the account, but this variant needs confirmation or should be identified as a historical retelling.",
+        "ru": "Указать источник именно приведённых условий экзаменационной задачи (четыре трубы за 1, 2, 3 и 4 дня). В методических рекомендациях РАО (https://raum.math.ru/system/files/public/1_metodicheskie-rekomendacii_lobachevskij-2.pdf, с. 54) сценка экзамена содержит другую версию с 4, 10 и 15 часами. Это не опровержение, но нужно подтвердить этот вариант или обозначить его как исторический пересказ."
+      },
+      "resolution": "The four-pipe version with filling times of 1, 2, 3 and 4 days is confirmed in M. S. Kolesnikov’s biographical account Lobachevsky (Moscow: Molodaya Gvardiya, 1965), p. 13. The Russian Academy of Education’s 4, 10 and 15-hour version is treated as a different later dramatisation and does not contradict this variant."
+    },
+    {
+      "id": "kazan-gymnasium-image",
+      "question": "For Vasily Turin’s Kazan Gymnasium engraving, record the actual artist, a verifiable public source, and the rights status instead of attributing it to the author’s archive.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "For Vasily Turin’s Kazan Gymnasium engraving, record the actual artist, a verifiable public source, and the rights status instead of attributing it to the author’s archive.",
+        "ru": "Указать для гравюры Василия Турина «Казанская гимназия» реального автора, проверяемый публичный источник и правовой статус вместо атрибуции авторскому архиву."
+      },
+      "resolution": "Vasily Turin, the public Wikimedia Commons record, and the Public Domain basis were added; image bytes were unchanged."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
