@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-7202f1111d8a",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Сверить даты рождения и смерти по прижизненным документам или некрологу: пост даёт 30 января (11 февраля) 1836 и 16 февраля (1 марта) 1907, тогда как летопись МГУ приводит 2(14).02.1836 и 16(28).02.1907: https://letopis.msu.ru/peoples/1055 . Последняя скобка сама требует календарной проверки. До решения сохранены даты авторского поста в RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить даты рождения и смерти по прижизненным документам или некрологу: пост даёт 30 января (11 февраля) 1836 и 16 февраля (1 марта) 1907, тогда как летопись МГУ приводит 2(14).02.1836 и 16(28).02.1907: https://letopis.msu.ru/peoples/1055 . Последняя скобка сама требует календарной проверки. До решения сохранены даты авторского поста в RU/EN.",
+        "en": "Verify birth and death dates from contemporary documents or an obituary: the post gives 30 January/11 February 1836 and 16 February/1 March 1907, whereas MSU’s chronicle gives 2/14 February 1836 and 16/28 February 1907, https://letopis.msu.ru/peoples/1055 . The latter conversion itself needs checking. Source-post dates remain in both versions pending a decision."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Не смешаны ли школьные учебники физики с трудами сына, Александра Васильевича Цингера? Каталог РГБ относит «Начальную физику» к Александру: https://search.rsl.ru/ru/record/01009111707 . Нужны конкретные названия школьных учебников Василия Яковлевича либо редакторское уточнение последнего абзаца RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Не смешаны ли школьные учебники физики с трудами сына, Александра Васильевича Цингера? Каталог РГБ относит «Начальную физику» к Александру: https://search.rsl.ru/ru/record/01009111707 . Нужны конкретные названия школьных учебников Василия Яковлевича либо редакторское уточнение последнего абзаца RU/EN.",
+        "en": "Check whether the school physics textbooks belong to his son Alexander Vasilyevich Zinger. The Russian State Library attributes Elementary Physics to Alexander, https://search.rsl.ru/ru/record/01009111707 . Identify Vasily’s own school textbooks or approve a clarification in the final paragraph of both versions."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Сверить библиографию «Высшей алгебры»: статья указывает 1874 год, а летопись МГУ перечисляет лекционный курс 1883 года; это могут быть разные издания, поэтому год в статье не менять без проверки титульного листа.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить библиографию «Высшей алгебры»: статья указывает 1874 год, а летопись МГУ перечисляет лекционный курс 1883 года; это могут быть разные издания, поэтому год в статье не менять без проверки титульного листа.",
+        "en": "Verify the bibliography of Higher Algebra: the article gives 1874, whereas Moscow University’s chronicle lists an 1883 lecture course. These may be different editions, so do not change the article’s year without checking a title page."
+      }
+    },
+    {
+      "id": "q4",
+      "question": "Указать для цветного портрета конкретный публичный первоисточник, автора или фотографа (если установлен), лицензию либо иное подтверждённое основание публикации: записи «Авторский архив Мансура Гильмуллина» и «Иллюстрация к материалу» не устанавливают происхождение и права.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Указать для цветного портрета конкретный публичный первоисточник, автора или фотографа (если установлен), лицензию либо иное подтверждённое основание публикации: записи «Авторский архив Мансура Гильмуллина» и «Иллюстрация к материалу» не устанавливают происхождение и права.",
+        "en": "Identify the colour portrait’s specific public source, author or photographer (if known), licence or other verified basis for publication. “Mansur Gilmullin’s archive” and “Illustration accompanying the text” do not establish provenance or rights."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
