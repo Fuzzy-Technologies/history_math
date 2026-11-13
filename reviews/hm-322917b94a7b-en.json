@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-322917b94a7b-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the scope of the priority claims for Mathematics 0 and the pedagogy-of-mathematics approach; confirm their sources and the historical institution names.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify the scope of the priority claims for Mathematics 0 and the pedagogy-of-mathematics approach; confirm their sources and the historical institution names.",
+        "ru": "Уточнить рамки первенства учебника «Математика 0» и подхода «Педагогика математики»; подтвердить источники этих оценок и исторические названия учреждений."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Check all seventeen bibliographical entries and coauthor credits, including the 2008 reprint, and review the descriptive English translations of the titles.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Check all seventeen bibliographical entries and coauthor credits, including the 2008 reprint, and review the descriptive English translations of the titles.",
+        "ru": "Сверить полный библиографический состав семнадцати позиций и соавторов, в том числе переиздания 2008 года, и согласовать английские описательные переводы заглавий."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Identify a public source and creator for the portrait of A. A. Stolyar; for the book cover, identify the exact edition, publisher and a confirmed basis for reproduction. Possession of the images in an author's archive does not establish image rights.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Identify a public source and creator for the portrait of A. A. Stolyar; for the book cover, identify the exact edition, publisher and a confirmed basis for reproduction. Possession of the images in an author's archive does not establish image rights.",
+        "ru": "Установить публичный источник и автора портрета А. А. Столяра; для книжной обложки — точное издание, издателя и подтверждённое основание воспроизведения. Хранение изображений в авторском архиве не устанавливает права на них."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
