@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-fcf38a7ce439",
+  "questions": [
+    {
+      "id": "collage-attribution",
+      "question": "Для четырёх сторонних исторических обложек в коллаже указать источник и правовой статус каждого компонента и корректный кредит коллажа; сведения синхронизировать в RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для четырёх сторонних исторических обложек в коллаже указать источник и правовой статус каждого компонента и корректный кредит коллажа; сведения синхронизировать в RU/EN.",
+        "en": "For the four third-party historical textbook covers in the collage, identify the source and rights status of each component and provide a correct collage credit; synchronize the information in RU/EN."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
