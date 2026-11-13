@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d0ee4800581e-en",
+  "questions": [
+    {
+      "id": "birth-year",
+      "question": "The author gives 1766, as does the RSL catalogue, while the linked NEB mechanics record identifies the author as circa 1764–1813. The original date and anniversary remain; please review the authority-record discrepancy rather than automatically replacing an exact date with an approximate one.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The author gives 1766, as does the RSL catalogue, while the linked NEB mechanics record identifies the author as circa 1764–1813. The original date and anniversary remain; please review the authority-record discrepancy rather than automatically replacing an exact date with an approximate one.",
+        "ru": "В авторском посте и каталоге РГБ указан 1766 год рождения: https://search.rsl.ru/ru/record/01002987909 . В связанной карточке НЭБ «Основания механики» автор обозначен «ок.1764–1813»: https://kp.rusneb.ru/item/material/osnovaniya-mehaniki-ch-1-soderzhashchaya-feoriyu-onoy . Сохранены исходные 1766 год и 260-летие; перед публикацией уточнить разницу авторитетных записей, не заменяя автоматически точную дату приблизительной."
+      }
+    },
+    {
+      "id": "figure-provenance",
+      "question": "For the collage of the 1798 and 1815 title pages, identify the specific public catalogue records or digital copies for both pages and record the actual public-domain basis; “author’s archive” describes custody of the collage, not the origin of the images.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "For the collage of the 1798 and 1815 title pages, identify the specific public catalogue records or digital copies for both pages and record the actual public-domain basis; “author’s archive” describes custody of the collage, not the origin of the images.",
+        "ru": "Для коллажа из титульных листов изданий 1798 и 1815 годов укажите конкретные публичные карточки или цифровые копии обоих листов и действительное основание использования общественного достояния; запись «авторский архив» описывает хранение коллажа, но не происхождение изображений."
+      },
+      "resolution": "Both editions now identify the National Electronic Library digital copies of the 1798 and 1815 title pages and record their public-domain basis; the collage only combines and crops the historical pages."
+    },
+    {
+      "id": "source-url",
+      "question": "Restore the public URL of the original publication dated 15 September 2026 in original_publication.url and source_url in both editions; the preserved date alone does not make the source post verifiable.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Restore the public URL of the original publication dated 15 September 2026 in original_publication.url and source_url in both editions; the preserved date alone does not make the source post verifiable.",
+        "ru": "Восстановить публичный URL исходной публикации от 15.09.2026 в original_publication.url и source_url обеих редакций; сохранённая дата без ссылки не позволяет проверить исходный пост."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
