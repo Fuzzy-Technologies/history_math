@@ -1,0 +1,52 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1b2840e344c6",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить год создания ВЦ МГУ: исходник даёт 1956, собственная история НИВЦ указывает 1955 и отдельно установку «Стрелы» в декабре 1956: https://rcc.msu.ru/en/rcc-history . Согласовать обе даты в RU/EN, не смешивая учреждение центра и запуск машины.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Даты создания ВЦ и запуска ЭВМ различены по [истории НИВЦ МГУ](https://rcc.msu.ru/en/rcc-history).",
+      "localizations": {
+        "source": "Уточнить год создания ВЦ МГУ: исходник даёт 1956, собственная история НИВЦ указывает 1955 и отдельно установку «Стрелы» в декабре 1956: https://rcc.msu.ru/en/rcc-history . Согласовать обе даты в RU/EN, не смешивая учреждение центра и запуск машины.",
+        "en": "Clarify the Computing Centre’s foundation year: the source gives 1956, while the centre’s own history gives 1955 and separately dates Strela’s installation to December 1956, https://rcc.msu.ru/en/rcc-history . Distinguish foundation from commissioning in both versions."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Проверить «около трёх лет оставалось до переезда»: начало ректорства 1951 и открытие зданий 1953 дают около двух лет. Согласовать числительное или убрать приблизительный интервал в обеих версиях.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Убрана неточная оценка оставшегося срока строительства. Годы строительства сохранены.",
+      "localizations": {
+        "source": "Проверить «около трёх лет оставалось до переезда»: начало ректорства 1951 и открытие зданий 1953 дают около двух лет. Согласовать числительное или убрать приблизительный интервал в обеих версиях.",
+        "en": "Check about three years before the move: the 1951 appointment and the 1953 opening suggest about two years. Approve the number or remove the approximate interval in both versions."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Уточнить маршрут эвакуации: в подготовленной версии был назван Ташкент, тогда как летопись МГУ указывает эвакуацию части мехмата в Ашхабад, затем в Свердловск, и возвращение в Москву в мае 1943 года.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Маршрут исправлен по [летописи Московского университета](https://letopis.msu.ru/peoples/1380): Ашхабад, затем Свердловск; возвращение в Москву — май 1943 года.",
+      "localizations": {
+        "source": "Уточнить маршрут эвакуации: в подготовленной версии был назван Ташкент, тогда как летопись МГУ указывает эвакуацию части мехмата в Ашхабад, затем в Свердловск, и возвращение в Москву в мае 1943 года.",
+        "en": "Clarify the evacuation route: the prepared version named Tashkent, whereas Moscow University’s chronicle places the evacuated part of the faculty in Ashkhabad and then Sverdlovsk, with its return to Moscow in May 1943."
+      }
+    },
+    {
+      "id": "q4",
+      "question": "Для трёх изображений И. Г. Петровского установить публичные источники, авторов или учреждения и действительное правовое основание воспроизведения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для трёх изображений И. Г. Петровского установить публичные источники, авторов или учреждения и действительное правовое основание воспроизведения.",
+        "en": "For the three images of I. G. Petrovsky, establish public sources, creators or holding institutions, and a valid rights basis for reproduction."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
