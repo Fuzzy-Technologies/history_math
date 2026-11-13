@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ffab02a27317-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify Georg Wolfgang Krafft’s life and appointment chronology against primary or institutional records. The current text gives a master’s degree in 1725, an adjunct appointment in 1731 and the chair of theoretical and experimental physics in 1733. The Berlin-Brandenburg Academy’s record gives 1725, 1727, 1730 and 1731, while Deutsche Biographie gives 1725, 1730 and 1734; their exact birth and death dates also differ. Confirm as well the sources for the priority claims about the first complete physics course and first physics textbook: https://www.bbaw.de/die-akademie/akademie-historische-aspekte/mitglieder-historisch/historisches-mitglied-georg-wolfgang-krafft-1475 ; https://www.deutsche-biographie.de/116356642.html .",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify Georg Wolfgang Krafft’s life and appointment chronology against primary or institutional records. The current text gives a master’s degree in 1725, an adjunct appointment in 1731 and the chair of theoretical and experimental physics in 1733. The Berlin-Brandenburg Academy’s record gives 1725, 1727, 1730 and 1731, while Deutsche Biographie gives 1725, 1730 and 1734; their exact birth and death dates also differ. Confirm as well the sources for the priority claims about the first complete physics course and first physics textbook: https://www.bbaw.de/die-akademie/akademie-historische-aspekte/mitglieder-historisch/historisches-mitglied-georg-wolfgang-krafft-1475 ; https://www.deutsche-biographie.de/116356642.html .",
+        "ru": "Сверить хронологию жизни и академических назначений Георга Вольфганга Крафта по первичным или институциональным данным. В текущем тексте указаны степень магистра в 1725 году, адъюнктура в 1731-м и кафедра теоретической и опытной физики в 1733-м. Справка Берлин-Бранденбургской академии наук приводит 1725, 1727, 1730 и 1731 годы, а Deutsche Biographie — 1725, 1730 и 1734; расходятся также точные даты рождения и смерти. Заодно подтвердить источником приоритетные формулировки о первом полном курсе и первом учебнике физики: https://www.bbaw.de/die-akademie/akademie-historische-aspekte/mitglieder-historisch/historisches-mitglied-georg-wolfgang-krafft-1475 ; https://www.deutsche-biographie.de/116356642.html ."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Establish the provenance of the portrait and engraving of Georg Wolfgang Krafft: for each image, provide the creator or original publication, a verifiable public source, and the applicable legal basis or licence. A reference only to an author’s archive does not establish this; synchronize RU/EN metadata.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Establish the provenance of the portrait and engraving of Georg Wolfgang Krafft: for each image, provide the creator or original publication, a verifiable public source, and the applicable legal basis or licence. A reference only to an author’s archive does not establish this; synchronize RU/EN metadata.",
+        "ru": "Установить происхождение портрета и гравюры Георга Вольфганга Крафта: для каждого изображения нужны автор или исходное издание, проверяемый публичный источник и действительное правовое основание/лицензия. Ссылка только на авторский архив этого не подтверждает; синхронизировать RU/EN metadata."
+      },
+      "resolution": "The cover is a detail of Wolfgang Dietrich Majer’s 1746 portrait in the Tübingen University Professor Gallery; Wikimedia Commons identifies it as a public-domain artwork and faithful reproduction (Public Domain Mark 1.0). The second image is Johann Jacob Haid’s 1747 mezzotint after Majer, catalogued by the Rijksmuseum as RP-P-1918-657 and public domain. RU/EN figure metadata now records the creators, dates, holdings and rights basis."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
