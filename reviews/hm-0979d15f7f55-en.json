@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0979d15f7f55-en",
+  "questions": [
+    {
+      "id": "hilbert-quotation-edition",
+      "question": "Confirm the exact Hilbert–Courant edition and p. 174 against the book. The source gives 1984, while its Springer link describes the separate Hilbert (1996). These are different bibliographic records; the quotation page in the intended edition has not been verified. The 1984 date has not been changed automatically.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the exact Hilbert–Courant edition and p. 174 against the book. The source gives 1984, while its Springer link describes the separate Hilbert (1996). These are different bibliographic records; the quotation page in the intended edition has not been verified. The 1984 date has not been changed automatically.",
+        "ru": "Подтвердить точное издание Hilbert–Courant и страницу 174 по книге: в исходнике стоит 1984 год, а приведённая ссылка Springer относится к отдельному Hilbert (1996). Это разные библиографические записи; страница цитаты в нужном издании пока не проверена. Указание 1984 не заменено автоматически."
+      }
+    },
+    {
+      "id": "hilbert-portrait-provenance",
+      "question": "For the retouched portrait of David Hilbert (fig-2), identify the original image, its creator or holding institution, a verifiable public source, and the legal basis for retouching and publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the retouched portrait of David Hilbert (fig-2), identify the original image, its creator or holding institution, a verifiable public source, and the legal basis for retouching and publication.",
+        "ru": "Для ретушированного портрета Давида Гильберта (fig-2) указать исходное изображение, автора или хранилище, проверяемый публичный источник и правовое основание ретуши и публикации."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
