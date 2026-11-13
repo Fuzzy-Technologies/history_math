@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b5878e48fa2a-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Provide a verifiable source for the historical portrait of Ostrogradsky, identify the artist or photographer, and document the licence or confirmed public-domain status; authorship of the text does not extend to a third-party image.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide a verifiable source for the historical portrait of Ostrogradsky, identify the artist or photographer, and document the licence or confirmed public-domain status; authorship of the text does not extend to a third-party image.",
+        "ru": "Укажите проверяемый первоисточник исторического портрета Остроградского, художника или фотографа и лицензию либо подтверждённый статус общественного достояния; авторство текста не распространяется на стороннее изображение."
+      }
+    },
+    {
+      "id": "divergence-theorem-chronology",
+      "question": "Clarify the chronology of the Ostrogradsky–Gauss divergence theorem: the general theorem was presented to the Paris Academy in 1826, again in 1827 and in St Petersburg in 1828, and published in 1831; the single date “1828” is misleading.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify the chronology of the Ostrogradsky–Gauss divergence theorem: the general theorem was presented to the Paris Academy in 1826, again in 1827 and in St Petersburg in 1828, and published in 1831; the single date “1828” is misleading.",
+        "ru": "Уточнить хронологию формулы Остроградского–Гаусса: общая теорема представлена Парижской академии в 1826 году, повторно в 1827-м и в Петербурге в 1828-м, опубликована в 1831 году; одиночная дата «1828» вводит в заблуждение."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
