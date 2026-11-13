@@ -1,0 +1,50 @@
+{
+  "review_version": 1,
+  "article_id": "hm-be9bb8a68aaa",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Сверить должности в Нормальной школе: исходник называет Бореля профессором с 1897 и директором десять лет; сама ENS указывает directeur adjoint sciences в 1910–1920: https://www.ens.psl.eu/en/node/7160 . Согласовать должность заместителя директора и последовательность назначений в обеих версиях.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Сверить должности в Нормальной школе: исходник называет Бореля профессором с 1897 и директором десять лет; сама ENS указывает directeur adjoint sciences в 1910–1920: https://www.ens.psl.eu/en/node/7160 . Согласовать должность заместителя директора и последовательность назначений в обеих версиях.",
+        "en": "Verify the ENS posts: the source calls Borel a professor from 1897 and director for ten years, but ENS identifies him as deputy director for sciences in 1910–1920, https://www.ens.psl.eu/en/node/7160 . Approve the title and sequence of appointments in both versions."
+      },
+      "resolution": "Должности и годы сверены по [справке Академии наук](https://www.academie-sciences.fr/pdf/dossiers/Borel/Borel_od1.htm) и [истории ENS](https://www.ens.psl.eu/en/node/7160)."
+    },
+    {
+      "id": "q2",
+      "question": "Указать источники эпиграфа Бореля и рассказа о том, что он выучил начала геометрии в трёхлетнем возрасте.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Указать источники эпиграфа Бореля и рассказа о том, что он выучил начала геометрии в трёхлетнем возрасте.",
+        "en": "Supply the sources of Borel’s epigraph and of the story that he learned the rudiments of geometry at the age of three."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Уточнить вклад Бореля в создание CNRS. Название Института Анри Пуанкаре приведено к официальному в обеих версиях. https://www.ihp.fr/fr/historique",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить вклад Бореля в создание CNRS. Название Института Анри Пуанкаре приведено к официальному в обеих версиях. https://www.ihp.fr/fr/historique",
+        "en": "Clarify Borel’s role in the founding of the CNRS. Both editions now use the official name of the Henri Poincaré Institute. https://www.ihp.fr/fr/historique"
+      }
+    },
+    {
+      "id": "q4",
+      "question": "Для ретуши на иллюстрации 2 установить автора либо разрешившее её лицо и правовое основание производной версии. Обе иллюстрации восходят к фотографии Agence Mondial Photo-Presse 1932 года из Национальной библиотеки Франции (Gallica); исходная фотография находится в общественном достоянии во Франции и США по карточке Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Emile_Borel-1932.jpg .",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для ретуши на иллюстрации 2 установить автора либо разрешившее её лицо и правовое основание производной версии. Обе иллюстрации восходят к фотографии Agence Mondial Photo-Presse 1932 года из Национальной библиотеки Франции (Gallica); исходная фотография находится в общественном достоянии во Франции и США по карточке Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Emile_Borel-1932.jpg .",
+        "en": "For figure 2, identify who created or authorized the retouch and establish a rights basis for that derivative. Both figures derive from the 1932 Agence Mondial Photo-Presse photograph held by the Bibliothèque nationale de France (Gallica); the underlying photograph is public domain in France and the United States as documented by Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Emile_Borel-1932.jpg ."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
