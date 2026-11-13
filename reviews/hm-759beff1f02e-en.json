@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-759beff1f02e-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the family’s move to Moscow: the post gives 1926, while Math-Net.Ru’s biography gives 1925, https://www.mathnet.ru/rus/person11314 . Approve the year in both versions. The record confirms Isaak’s 1965 doctorate; it is not confused with his brother Akiva’s degree.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the family’s move to Moscow: the post gives 1926, while Math-Net.Ru’s biography gives 1925, https://www.mathnet.ru/rus/person11314 . Approve the year in both versions. The record confirms Isaak’s 1965 doctorate; it is not confused with his brother Akiva’s degree.",
+        "ru": "Уточнить переезд семьи в Москву: в посте 1926, в личной биографии Math-Net.Ru — 1925: https://www.mathnet.ru/rus/person11314 . Согласовать год в RU/EN. Докторская степень 1965 на этой странице подтверждена и с братом Акивой не смешивается."
+      },
+      "resolution": "The move was corrected to 1925 from Isaak Yaglom’s personal biography in Math-Net.Ru."
+    },
+    {
+      "id": "q2",
+      "question": "Verify that the [Yaroslavl State University biography of I. M. Yaglom](https://www.uniyar.ac.ru/yargu/persony/?ELEMENT_ID=58779) remains publicly accessible; if it is unavailable, replace it with an equivalent authoritative public source.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify that the [Yaroslavl State University biography of I. M. Yaglom](https://www.uniyar.ac.ru/yargu/persony/?ELEMENT_ID=58779) remains publicly accessible; if it is unavailable, replace it with an equivalent authoritative public source.",
+        "ru": "Проверить доступность [биографии И. М. Яглома на сайте ЯрГУ](https://www.uniyar.ac.ru/yargu/persony/?ELEMENT_ID=58779); если страница недоступна, заменить её равноценным авторитетным публичным источником."
+      },
+      "resolution": "The unavailable Yaroslavl State University biography (HTTP 502) was replaced with an accessible official departmental history confirming Yaglom’s work at the university."
+    },
+    {
+      "id": "q3",
+      "question": "For the original and retouched portraits of Isaak Yaglom, identify the specific public sources, authors or photographers (if known), licences or other verified bases for publication. “Mansur Gilmullin’s archive” and “Illustration accompanying the text” do not establish the provenance or rights of third-party portraits.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the original and retouched portraits of Isaak Yaglom, identify the specific public sources, authors or photographers (if known), licences or other verified bases for publication. “Mansur Gilmullin’s archive” and “Illustration accompanying the text” do not establish the provenance or rights of third-party portraits.",
+        "ru": "Указать для исходного и ретушированного портретов Исаака Яглома конкретные публичные первоисточники, авторов или фотографов (если установлены), лицензии либо иные подтверждённые основания публикации. «Авторский архив» и «Иллюстрация к материалу» не подтверждают происхождение и права на сторонние портреты."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
