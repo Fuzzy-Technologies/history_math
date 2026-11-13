@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-150afe6389b9-en",
+  "questions": [
+    {
+      "id": "newton-portrait-provenance",
+      "question": "For the portrait of Isaac Newton, identify the source work, artist or photographer, a verifiable public source, and its legal status. A reference to the author’s archive alone does not establish authorship or a licence.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the portrait of Isaac Newton, identify the source work, artist or photographer, a verifiable public source, and its legal status. A reference to the author’s archive alone does not establish authorship or a licence.",
+        "ru": "Для портрета Исаака Ньютона укажите исходное произведение, художника или фотографа, проверяемый публичный источник и правовой статус. Ссылка на авторский архив сама по себе не подтверждает авторство или лицензию."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
