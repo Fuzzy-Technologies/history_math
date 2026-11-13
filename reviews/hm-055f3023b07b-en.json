@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-055f3023b07b-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the second arrest year: the post gives 1903, whereas the reproduced personnel form appears to read 1902. Confirm the handwriting and approve consistent wording in both languages; text and scans remain unchanged pending that decision.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the second arrest year: the post gives 1903, whereas the reproduced personnel form appears to read 1902. Confirm the handwriting and approve consistent wording in both languages; text and scans remain unchanged pending that decision.",
+        "ru": "Сверить второй год ареста: в тексте 1903, а на публикуемом личном листке дата читается как 1902. Подтвердить чтение рукописи и согласовать обе версии; текст и сканы пока сохранены без фактического исправления."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Confirm the public link and catalogue details for the RAS personal file: https://www.ras.ru/namorozovarchive/7_actview.aspx?id=4406 .",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Confirm the public link and catalogue details for the RAS personal file: https://www.ras.ru/namorozovarchive/7_actview.aspx?id=4406 .",
+        "ru": "Подтвердить публичную ссылку и реквизиты личного дела РАН: https://www.ras.ru/namorozovarchive/7_actview.aspx?id=4406 ."
+      },
+      "resolution": "Checked on 7 November 2026: the public RAS page is available at the cited address and identifies file no. 139, “Nikolai Alexandrovich Morozov. Vatslav Romualdovich Mrochek. Personal-file materials”, in inventory 05, with images of 37 pages."
+    },
+    {
+      "id": "q3",
+      "question": "Clarify the historical status and full name of the University of the History of Science and Technology and review the English institution and publication titles. Do not infer modern university status from the name alone.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify the historical status and full name of the University of the History of Science and Technology and review the English institution and publication titles. Do not infer modern university status from the name alone.",
+        "ru": "Уточнить исторический статус и полное название «университета Истории науки и техники» и согласовать английские переводы учреждений и названий работ. Не приписывать этому названию современный статус университета без проверки."
+      }
+    },
+    {
+      "id": "q4",
+      "question": "The People article needs an actual cover portrait of Wacław Mroczek: the current cover_image points to a book cover. Provide a verifiable public source and a valid rights basis for the portrait; possession of a copy does not create copyright in the image.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The People article needs an actual cover portrait of Wacław Mroczek: the current cover_image points to a book cover. Provide a verifiable public source and a valid rights basis for the portrait; possession of a copy does not create copyright in the image.",
+        "ru": "Для материала рубрики «Персоналии» нужна фактическая обложка с портретом Вацлава Мрочека: текущий cover_image ведёт на обложку книги. Укажите проверяемый публичный источник и действительное правовое основание для портрета; владение копией не создаёт авторских прав на изображение."
+      }
+    },
+    {
+      "id": "q5",
+      "question": "For the book cover and personal-file scans, identify the actual creators or institution, public sources and legal basis for publication. The RAS Archive link establishes the file’s provenance, but “copy from the author’s archive” is not a licence and does not make the images author-created.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the book cover and personal-file scans, identify the actual creators or institution, public sources and legal basis for publication. The RAS Archive link establishes the file’s provenance, but “copy from the author’s archive” is not a licence and does not make the images author-created.",
+        "ru": "Для обложки книги и сканов личного дела указать реальных авторов или учреждение, публичные источники и правовое основание публикации. Ссылка на Архив РАН подтверждает происхождение дела, но «копия из авторского архива» не является лицензией и не превращает изображения в авторские."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
