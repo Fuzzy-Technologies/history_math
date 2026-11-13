@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f83f8a0b90a5-en",
+  "questions": [
+    {
+      "id": "queen-story-denial",
+      "question": "The source presents the royal-book story as an event, but Carroll himself denied it in the Advertisement P.S. to the second and third editions of Symbolic Logic (1896): see the [text of Carroll’s denial](https://schnark.github.io/lewis-carroll/html/symbolic-logic/preface.html) and a [scan of the second edition](https://archive.org/details/symboliclogic00carr). Agree presentation as a legend or anecdote, with the denial noted in both versions. The author’s post remains unchanged pending review; the English version uses the published title Alice’s Adventures in Wonderland.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The source presents the royal-book story as an event, but Carroll himself denied it in the Advertisement P.S. to the second and third editions of Symbolic Logic (1896): see the [text of Carroll’s denial](https://schnark.github.io/lewis-carroll/html/symbolic-logic/preface.html) and a [scan of the second edition](https://archive.org/details/symboliclogic00carr). Agree presentation as a legend or anecdote, with the denial noted in both versions. The author’s post remains unchanged pending review; the English version uses the published title Alice’s Adventures in Wonderland.",
+        "ru": "История о королеве подана в исходнике как событие, однако сам Кэрролл отверг её в P.S. к Advertisement во втором и третьем изданиях Symbolic Logic (1896): см. [текст авторского опровержения](https://schnark.github.io/lewis-carroll/html/symbolic-logic/preface.html) и [скан второго издания](https://archive.org/details/symboliclogic00carr). Согласовать подачу как легенды или анекдота с указанием опровержения в обеих версиях. Авторская редакция поста пока сохранена; EN использует опубликованное название Alice’s Adventures in Wonderland."
+      },
+      "resolution": "The story is presented as an anecdote, with a link and brief note recording Carroll’s own rejection in the second edition of Symbolic Logic.",
+      "evidence_url": "https://schnark.github.io/lewis-carroll/html/symbolic-logic/preface.html"
+    },
+    {
+      "id": "humor-cover-image",
+      "question": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+        "ru": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет."
+      }
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Provide a public link to the original publication confirming the date 28 April 2024; the address must not be guessed.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide a public link to the original publication confirming the date 28 April 2024; the address must not be guessed.",
+        "ru": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 28.04.2024; адрес нельзя восстанавливать предположительно."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
