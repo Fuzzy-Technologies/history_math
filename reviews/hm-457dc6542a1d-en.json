@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-457dc6542a1d-en",
+  "questions": [
+    {
+      "id": "demoivre-sleep-progression",
+      "question": "Please clarify the source status of the story that de Moivre added 10–15 minutes of sleep each day. Later popular biographies repeat it as fact, but Helen Walker’s 1934 biography calls the arithmetic progression and prediction of his death apocryphal and absent from contemporary accounts. Should the story be explicitly identified as a legend or apocryphal anecdote?",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please clarify the source status of the story that de Moivre added 10–15 minutes of sleep each day. Later popular biographies repeat it as fact, but Helen Walker’s 1934 biography calls the arithmetic progression and prediction of his death apocryphal and absent from contemporary accounts. Should the story be explicitly identified as a legend or apocryphal anecdote?",
+        "ru": "Уточнить источниковедческий статус истории о ежедневном прибавлении 10–15 минут сна. Поздние популярные биографии повторяют её как факт, однако Хелен Уокер в биографии Муавра 1934 года называет арифметическую прогрессию и предсказание смерти апокрифическими и не найденными в свидетельствах современников. Следует ли прямо обозначить сюжет как легенду или апокриф?"
+      }
+    },
+    {
+      "id": "joke-cover",
+      "question": "Add an actual cover image for the Mathematicians Joke rubric. The article currently has no figures, preview_image or cover_image, so its card and page lack the required lead illustration.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Add an actual cover image for the Mathematicians Joke rubric. The article currently has no figures, preview_image or cover_image, so its card and page lack the required lead illustration.",
+        "ru": "Добавить фактическую обложку рубрики «Математики шутят»: сейчас figures, preview_image и cover_image отсутствуют, поэтому карточка и страница не имеют обязательной заголовочной иллюстрации."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
