@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ce3653b33622-en",
+  "questions": [
+    {
+      "id": "descartes-cogito-sources-and-dates",
+      "question": "The historical background says the phrase first appeared in the Meditations of 1641 and became widely known through the earlier work of 1637. The Stanford Encyclopedia of Philosophy https://plato.stanford.edu/archives/sum2020/entries/self-consciousness/ distinguishes Je pense, donc je suis in the Discourse on the Method (1637), I am, I exist in the Second Meditation (1641), and cogito ergo sum in the Principles of Philosophy (1644). Please agree how to distinguish the proposition, its formulations and dates in both versions; the original account remains pending an editorial decision.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The historical background says the phrase first appeared in the Meditations of 1641 and became widely known through the earlier work of 1637. The Stanford Encyclopedia of Philosophy https://plato.stanford.edu/archives/sum2020/entries/self-consciousness/ distinguishes Je pense, donc je suis in the Discourse on the Method (1637), I am, I exist in the Second Meditation (1641), and cogito ergo sum in the Principles of Philosophy (1644). Please agree how to distinguish the proposition, its formulations and dates in both versions; the original account remains pending an editorial decision.",
+        "ru": "В исторической справке фраза названа впервые появившейся в «Размышлениях» 1641 года и ставшей известной благодаря более раннему труду 1637 года. Stanford Encyclopedia of Philosophy https://plato.stanford.edu/archives/sum2020/entries/self-consciousness/ различает «Je pense, donc je suis» в «Рассуждении о методе» (1637), «I am, I exist» во втором «Размышлении» (1641) и «cogito ergo sum» в «Началах философии» (1644). Согласовать точное разведение тезиса, формулировок и дат в RU/EN; исходная справка сохранена до решения редактора."
+      },
+      "resolution": "The historical note now distinguishes the French wording of 1637, the proposition in the Second Meditation of 1641, and the Latin “Cogito, ergo sum” in the Principles of Philosophy of 1644."
+    },
+    {
+      "id": "descartes-figure-sources-and-rights",
+      "question": "Identify the actual public sources and public-domain bases for the 1637 and 1641 title pages; separately confirm the provenance and rights status of the portrait material used in the meme. Synchronize the metadata for all three figures in RU/EN and do not describe third-party material as illustrations from the author’s archive.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Identify the actual public sources and public-domain bases for the 1637 and 1641 title pages; separately confirm the provenance and rights status of the portrait material used in the meme. Synchronize the metadata for all three figures in RU/EN and do not describe third-party material as illustrations from the author’s archive.",
+        "ru": "Для титульных листов изданий 1637 и 1641 годов указать реальные публичные источники и основания public domain; отдельно подтвердить происхождение и правовой статус портретной основы мема. Синхронизировать метаданные всех трёх иллюстраций в RU/EN и не описывать материалы третьих лиц как иллюстрации из авторского архива."
+      }
+    },
+    {
+      "id": "english-cover-visible-text",
+      "question": "The English version needs the visible text inside the meme localized; an English alt text does not replace the Russian wording embedded in the image.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The English version needs the visible text inside the meme localized; an English alt text does not replace the Russian wording embedded in the image.",
+        "ru": "Для английской версии нужна локализация видимого текста непосредственно на меме: английский alt не заменяет русскую надпись внутри изображения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
