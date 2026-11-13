@@ -1,0 +1,31 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1cd0002dd980-en",
+  "questions": [
+    {
+      "id": "figure-provenance",
+      "question": "For both historical portraits of Riemann, identify the creator or primary public source and the actual rights basis or licence; separately confirm the provenance of the retouched portrait bearing the signature and date 1863. “Author’s archive” describes custody of a copy, not the origin of a third-party image.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "For both historical portraits of Riemann, identify the creator or primary public source and the actual rights basis or licence; separately confirm the provenance of the retouched portrait bearing the signature and date 1863. “Author’s archive” describes custody of a copy, not the origin of a third-party image.",
+        "ru": "Для обоих исторических портретов Римана нужно указать автора или первичный публичный источник и действительное правовое основание/лицензию; отдельно подтвердить происхождение ретушированного портрета с подписью и датой 1863. Запись «авторский архив» описывает хранение копии, но не происхождение стороннего изображения."
+      },
+      "resolution": "Both figures are derived from the same 1863 portrait catalogued by the Smithsonian Institution Libraries Scientific Identity collection and published on Wikimedia Commons as Georg Friedrich Bernhard Riemann.jpeg. The photographer is unidentified; Commons marks the image public domain with Creative Commons Public Domain Mark 1.0. Figure 1 is a cropped/framed treatment, and figure 2 preserves the facsimile signature. RU/EN metadata now records that provenance and rights basis."
+    },
+    {
+      "id": "zeta-chronology",
+      "question": "Verify that the article distinguishes Euler’s 1737 work on the series and prime product for a real argument from Riemann’s 1859 work on analytic continuation of the zeta function to the complex plane and its non-trivial zeros.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify that the article distinguishes Euler’s 1737 work on the series and prime product for a real argument from Riemann’s 1859 work on analytic continuation of the zeta function to the complex plane and its non-trivial zeros.",
+        "ru": "Проверить, что статья различает вклад Эйлера 1737 года в представление ряда и произведения по простым числам при вещественном аргументе и работу Римана 1859 года об аналитическом продолжении дзета-функции на комплексную плоскость и её нетривиальных нулях."
+      },
+      "resolution": "The text is aligned: Euler’s 1737 contribution is described for the series and prime product with a real argument, while Riemann’s 1859 work is described for analytic continuation of the zeta function to the complex plane and the hypothesis about its non-trivial zeros. Verified against DLMF §25.2 and the Clay Mathematics Institute."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
