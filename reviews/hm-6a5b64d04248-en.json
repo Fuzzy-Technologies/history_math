@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6a5b64d04248-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Reconcile the beginning of his department headship: the post and university Chronicle give 1990–2016, whereas the SUNC department’s own history names Vavilov as its head when it was established in 1988. These may refer to different organizational stages; the source’s 1990–2016 remains in both versions pending approval. https://letopis.msu.ru/peoples/7064 ; https://internat.msu.ru/math/history-math/ .",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Reconcile the beginning of his department headship: the post and university Chronicle give 1990–2016, whereas the SUNC department’s own history names Vavilov as its head when it was established in 1988. These may refer to different organizational stages; the source’s 1990–2016 remains in both versions pending approval. https://letopis.msu.ru/peoples/7064 ; https://internat.msu.ru/math/history-math/ .",
+        "ru": "Согласовать начало заведования кафедрой: в посте и «Летописи МГУ» указано 1990–2016, а собственная история кафедры СУНЦ называет её создание с заведующим Вавиловым в 1988 году. Возможно, речь о разных организационных этапах; авторское 1990–2016 пока сохранено в RU/EN. https://letopis.msu.ru/peoples/7064 ; https://internat.msu.ru/math/history-math/ ."
+      },
+      "resolution": "The SUNC MSU obituary gives the sequence: acting head from 15 April 1990, department head from July 1992, deputy director from September 2013 and professor from September 2014."
+    },
+    {
+      "id": "q2",
+      "question": "Verify the two original school and faculty obituary URLs before publication. Repeated web retrieval and direct reading encountered network resets, which do not establish that the pages were removed. The URLs are retained; biography and awards were checked against the accessible university Chronicle. https://internat.msu.ru/ushel-uchitel/ ; https://math.msu.ru/node/899 .",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the two original school and faculty obituary URLs before publication. Repeated web retrieval and direct reading encountered network resets, which do not establish that the pages were removed. The URLs are retained; biography and awards were checked against the accessible university Chronicle. https://internat.msu.ru/ushel-uchitel/ ; https://math.msu.ru/node/899 .",
+        "ru": "Проверить перед публикацией доступность двух исходных некрологов СУНЦ и мехмата: повторное веб-чтение и прямое чтение завершились сетевым сбросом, что не доказывает удаления страниц. URL сохранены; биографические сведения и награды сверены с доступной «Летописью МГУ». https://internat.msu.ru/ushel-uchitel/ ; https://math.msu.ru/node/899 ."
+      },
+      "resolution": "Both official obituaries from SUNC and the Faculty of Mechanics and Mathematics are accessible and support the biographical details."
+    },
+    {
+      "id": "q3",
+      "question": "Identify the original author or publication, a verifiable public source, and the legal basis for publishing or processing both portraits of Vavilov. Possession in an author’s archive does not establish authorship or publication rights; synchronize the evidence in RU/EN metadata.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Identify the original author or publication, a verifiable public source, and the legal basis for publishing or processing both portraits of Vavilov. Possession in an author’s archive does not establish authorship or publication rights; synchronize the evidence in RU/EN metadata.",
+        "ru": "Установить для обоих портретов Вавилова исходного автора или публикацию, проверяемый публичный источник и правовое основание публикации/обработки. Наличие изображения в авторском архиве не подтверждает авторство или права; сведения должны быть синхронизированы в RU/EN metadata."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
