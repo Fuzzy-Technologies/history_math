@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ade2ce882579-en",
+  "questions": [
+    {
+      "id": "camels-missing-fraction",
+      "question": "Clarify the solution in both versions: the shares sum to 19/20, but one twentieth of the original 19 camels is 19/20 of a camel, not the borrowed camel. The allocations 10, 5 and 4 are fractions of the temporary herd of 20 and exceed the literal shares of the original herd. Should the text present this as an agreed redistribution among the heirs rather than as a division exactly following the will?",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify the solution in both versions: the shares sum to 19/20, but one twentieth of the original 19 camels is 19/20 of a camel, not the borrowed camel. The allocations 10, 5 and 4 are fractions of the temporary herd of 20 and exceed the literal shares of the original herd. Should the text present this as an agreed redistribution among the heirs rather than as a division exactly following the will?",
+        "ru": "Уточнить объяснение решения в обеих версиях: доли составляют 19/20, но одна двадцатая исходных 19 верблюдов равна 19/20 верблюда, а не одному заёмному верблюду. Выданные 10, 5 и 4 верблюда — доли временного стада из 20 и превышают буквальные доли исходного стада. Следует ли описать это как согласованное перераспределение между наследниками, а не как точное исполнение завещания?"
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
