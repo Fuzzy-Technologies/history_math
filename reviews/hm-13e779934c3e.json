@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-13e779934c3e",
+  "questions": [
+    {
+      "id": "euclid-construction-to-study",
+      "question": "В пункте 1 читателю предлагается изучить способ решения Евклида, но статья не приводит саму конструкцию и её размеченный чертёж. Нужно либо добавить проверенное объяснение по опубликованному источнику, либо переформулировать пункт.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "В пункте 1 читателю предлагается изучить способ решения Евклида, но статья не приводит саму конструкцию и её размеченный чертёж. Нужно либо добавить проверенное объяснение по опубликованному источнику, либо переформулировать пункт.",
+        "en": "Item 1 asks the reader to study Euclid’s construction, but the article does not provide the construction or a labelled diagram. Either add a verified explanation from a published source or rephrase the item."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
