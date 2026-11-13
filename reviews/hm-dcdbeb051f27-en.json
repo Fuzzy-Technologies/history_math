@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-dcdbeb051f27-en",
+  "questions": [
+    {
+      "id": "degas-stock-exchange-metadata",
+      "question": "Correct the cover metadata from the Musée d’Orsay catalogue: Edgar Degas, Portraits at the Stock Exchange, 1878–1879, oil on canvas; cite the official public source and rights basis.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Correct the cover metadata from the Musée d’Orsay catalogue: Edgar Degas, Portraits at the Stock Exchange, 1878–1879, oil on canvas; cite the official public source and rights basis.",
+        "ru": "Исправить сведения об обложке по каталогу Musée d’Orsay: Эдгар Дега, «Портреты на бирже», 1878–1879, холст, масло; указать официальный публичный источник и правовое основание."
+      },
+      "resolution": "Corrected from the official Musée d’Orsay catalogue: 1878–1879, oil on canvas; the official source and Public Domain basis were added."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
