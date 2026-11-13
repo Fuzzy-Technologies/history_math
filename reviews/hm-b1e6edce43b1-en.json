@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b1e6edce43b1-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Agree the precise wording about the characteristic function and the Lévy–Khintchine formula; check the bibliographical book titles and their established English names.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Agree the precise wording about the characteristic function and the Lévy–Khintchine formula; check the bibliographical book titles and their established English names.",
+        "ru": "Согласовать точную формулировку о характеристической функции и формуле Леви–Хинчина; сверить библиографические заглавия книг и их принятые английские названия."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Confirm the source of the quoted poem and agree its English translation; clarify its relationship to the four collections of 1908–1914 and the illustrated 1915 edition of Words for Which There Is No Forgiveness.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the source of the quoted poem and agree its English translation; clarify its relationship to the four collections of 1908–1914 and the illustrated 1915 edition of Words for Which There Is No Forgiveness.",
+        "ru": "Подтвердить источник цитируемого стихотворения и согласовать его смысловой английский перевод; уточнить связь с четырьмя сборниками 1908–1914 годов и показанным изданием «Слова, которым нет прощения» 1915 года."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Establish the actual public sources and legal status of Alexander Khinchin’s portrait and the 1915 title page; for the title page, identify the exact edition, holding institution and basis for reproduction.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Establish the actual public sources and legal status of Alexander Khinchin’s portrait and the 1915 title page; for the title page, identify the exact edition, holding institution and basis for reproduction.",
+        "ru": "Установить фактические публичные источники и правовой статус портрета А. Я. Хинчина и титульного листа издания 1915 года; для титульного листа указать точное издание, хранилище и основание воспроизведения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
