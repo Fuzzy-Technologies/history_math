@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-fbcd8f312e84-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Correct the final reference annotation: the source comment says Aleksandrov declined coauthorship of the 1940 algebra textbook, whereas section 3 explicitly calls him its coauthor and describes his refusal to participate in a geometry project. The main paragraph on algebra coauthorship is supported. Approve an annotation covering the reform, the joint 1940 algebra textbook and declining participation in the geometry project: https://elementy.ru/nauchno-populyarnaya_biblioteka/436281/Padenie_preobrazovatelya_chetyre_voprosa_o_reforme_Kolmogorova .",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Correct the final reference annotation: the source comment says Aleksandrov declined coauthorship of the 1940 algebra textbook, whereas section 3 explicitly calls him its coauthor and describes his refusal to participate in a geometry project. The main paragraph on algebra coauthorship is supported. Approve an annotation covering the reform, the joint 1940 algebra textbook and declining participation in the geometry project: https://elementy.ru/nauchno-populyarnaya_biblioteka/436281/Padenie_preobrazovatelya_chetyre_voprosa_o_reforme_Kolmogorova .",
+        "ru": "Исправить аннотацию последней ссылки в примечаниях: авторский комментарий говорит об отказе Александрова от соавторства по учебнику алгебры 1940 года, но раздел 3 самой статьи прямо называет его соавтором этой алгебры и говорит об отказе участвовать в проекте геометрии. Основной абзац о соавторстве по алгебре противоречия не содержит. Согласовать для RU/EN аннотацию «о реформе Колмогорова, совместном учебнике алгебры 1940 года и отказе от участия в проекте учебника геометрии»: https://elementy.ru/nauchno-populyarnaya_biblioteka/436281/Padenie_preobrazovatelya_chetyre_voprosa_o_reforme_Kolmogorova ."
+      },
+      "resolution": "The annotation now distinguishes Aleksandrov’s co-authorship of the algebra textbook from his decision to decline work on the geometry project, following section 3 of the linked article."
+    },
+    {
+      "id": "q2",
+      "question": "Distinguish the year for which the first-class Stalin Prize was awarded from the date of the decree: the article gives only “1942”, while the decree naming P. S. Aleksandrov is dated 22 March 1943. Align both versions with the Council of People’s Commissars decree and the Moscow University Chronicle.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Distinguish the year for which the first-class Stalin Prize was awarded from the date of the decree: the article gives only “1942”, while the decree naming P. S. Aleksandrov is dated 22 March 1943. Align both versions with the Council of People’s Commissars decree and the Moscow University Chronicle.",
+        "ru": "Развести год, за который присуждена Сталинская премия I степени, и дату постановления: в тексте указано только «1942», тогда как постановление с именем П. С. Александрова датировано 22 марта 1943 года. Согласовать обе версии по Постановлению СНК СССР и Летописи МГУ."
+      },
+      "resolution": "The text now distinguishes the prize year from the decree date: the Stalin Prize was awarded for 1942 under the decree of 22 March 1943."
+    },
+    {
+      "id": "q3",
+      "question": "For both processed portraits of Aleksandrov, identify the source photographs, public source records and the legal basis for publication; the provenance of both versions is currently unconfirmed.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For both processed portraits of Aleksandrov, identify the source photographs, public source records and the legal basis for publication; the provenance of both versions is currently unconfirmed.",
+        "ru": "Для обеих обработок портрета Александрова указать исходные фотографии, публичные источники и правовое основание публикации; происхождение обеих версий сейчас не подтверждено."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
