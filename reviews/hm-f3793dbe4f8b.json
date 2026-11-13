@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f3793dbe4f8b",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Для трёх исторических портретов/фотографий Цермело установить авторов, исходные публикации или проверяемые публичные карточки и действительное правовое основание/лицензию. Ретушь или цветная обработка не создаёт прав на оригинал; синхронизировать RU/EN metadata.",
+      "blocking": true,
+      "state": "open"
+    },
+    {
+      "id": "zermelo-zfc-wording",
+      "question": "Различить систему аксиом Цермело 1908 года, последующую ZF и современную ZFC; не утверждать доказанную непротиворечивость ZFC и отметить, что аксиома выбора входила в систему Цермело 1908 года.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Различить систему аксиом Цермело 1908 года, последующую ZF и современную ZFC; не утверждать доказанную непротиворечивость ZFC и отметить, что аксиома выбора входила в систему Цермело 1908 года.",
+        "en": "Distinguish Zermelo’s 1908 axiom system, the later ZF system and modern ZFC; do not claim a proof of ZFC’s consistency, and note that the axiom of choice was included in Zermelo’s 1908 system."
+      },
+      "resolution": "Формулировка исправлена: система Цермело 1908 года отделена от последующих ZF и ZFC, аксиома выбора указана как часть системы 1908 года, а утверждение о доказанной непротиворечивости ZFC удалено. Проверено по Stanford Encyclopedia of Philosophy."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
