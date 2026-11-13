@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-bd8ef09b0bae",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Согласовать обобщение о месте Фибоначчи в европейской математике и уточнить характер заимствований из арабоязычной традиции.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Абсолютное утверждение о «первом» математике и всех достижениях заменено нейтральной исторической формулировкой.",
+      "localizations": {
+        "source": "Согласовать обобщение о месте Фибоначчи в европейской математике и уточнить характер заимствований из арабоязычной традиции.",
+        "en": "Agree the account of Fibonacci’s place in European mathematics and clarify his use of the Arabic-language tradition."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить формулировку задачи о кроликах и смысл подсчёта пар через год.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Условие синхронно уточнено в RU/EN: считается общее число живых пар через год, указаны зрелость и отсутствие гибели.",
+      "localizations": {
+        "source": "Уточнить формулировку задачи о кроликах и смысл подсчёта пар через год.",
+        "en": "Clarify the wording of the rabbit problem and what is counted after one year."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Укажите публичный проверяемый первоисточник изображения Фибоначчи, автора или художника (если известен) и лицензию либо иной подтверждённый правовой статус; синхронизируйте атрибуцию в RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Укажите публичный проверяемый первоисточник изображения Фибоначчи, автора или художника (если известен) и лицензию либо иной подтверждённый правовой статус; синхронизируйте атрибуцию в RU/EN.",
+        "en": "Provide a public, verifiable source for the image of Fibonacci, identify the artist where known, and document the licence or other confirmed legal status; keep the attribution synchronized in RU and EN."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
