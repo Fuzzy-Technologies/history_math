@@ -1,0 +1,71 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b14e416b66b1",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Согласовать строгие формулировки: полнота логики первого порядка означает доказуемость общезначимых формул, а не всех истинных арифметических высказываний. В формулировке неполноты необходимо условие эффективной аксиоматизации и достаточной арифметической силы; вторая теорема требует уточнить формализацию непротиворечивости. Первоисточник 1931 года: https://doi.org/10.1007/BF01700692 . Исправление требуется согласовать сразу для RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Согласовать строгие формулировки: полнота логики первого порядка означает доказуемость общезначимых формул, а не всех истинных арифметических высказываний. В формулировке неполноты необходимо условие эффективной аксиоматизации и достаточной арифметической силы; вторая теорема требует уточнить формализацию непротиворечивости. Первоисточник 1931 года: https://doi.org/10.1007/BF01700692 . Исправление требуется согласовать сразу для RU/EN.",
+        "en": "Approve precise statements: first-order completeness concerns logically valid formulas, not every true arithmetical statement. Incompleteness requires effective axiomatizability and sufficient arithmetic strength, and the second theorem needs the appropriate formal consistency statement. Original 1931 paper: https://doi.org/10.1007/BF01700692 . Approve both languages together."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Сверить сообщение в Кёнигсберге 7 сентября 1930: была объявлена первая теорема, вторую получили позже. Уточнить утверждение о мгновенной всемирной известности и слишком широкие слова «при любом выборе аксиом»/«финитное доказательство невозможно» в примечаниях. История выступления и переписки: https://plato.stanford.edu/entries/goedel-incompleteness/ . Все исходные абзацы пока сохранены.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить сообщение в Кёнигсберге 7 сентября 1930: была объявлена первая теорема, вторую получили позже. Уточнить утверждение о мгновенной всемирной известности и слишком широкие слова «при любом выборе аксиом»/«финитное доказательство невозможно» в примечаниях. История выступления и переписки: https://plato.stanford.edu/entries/goedel-incompleteness/ . Все исходные абзацы пока сохранены.",
+        "en": "Verify the 7 September 1930 Königsberg announcement: it concerned the first theorem; the second followed later. Review immediate worldwide fame and the overly broad whatever axioms and impossible finitary proof claims in Notes. Historical account and correspondence: https://plato.stanford.edu/entries/goedel-incompleteness/ . All source paragraphs remain pending approval."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Уточнить имя преподавателя Фуртвенглера: пост называет Карла, собственный очерк IAS — Филиппа: https://www.ias.edu/kurt-g%C3%B6del-life-work-and-legacy . Согласовать исправление имени в обеих версиях.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Имя исправлено по биографии Гёделя в IAS. Его преподавателем был Филипп Фуртвенглер.",
+      "localizations": {
+        "source": "Уточнить имя преподавателя Фуртвенглера: пост называет Карла, собственный очерк IAS — Филиппа: https://www.ias.edu/kurt-g%C3%B6del-life-work-and-legacy . Согласовать исправление имени в обеих версиях.",
+        "en": "Verify Furtwängler’s given name: the post says Karl, while the IAS account names Philipp, https://www.ias.edu/kurt-g%C3%B6del-life-work-and-legacy . Approve the name correction in both versions."
+      }
+    },
+    {
+      "id": "q4",
+      "question": "Исправить после редакторского решения утверждение «с 1940 года не публиковал исследований по логике»: существует собственная статья Гёделя о расширении финитной точки зрения, Dialectica, 1958, 12: 3–4, 280–287: https://doi.org/10.1111/j.1746-8361.1958.tb01464.x . Её нельзя свести только к философскому комментарию.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Добавлена ссылка на [статью Гёделя 1958 года](https://doi.org/10.1111/j.1746-8361.1958.tb01464.x).",
+      "localizations": {
+        "source": "Исправить после редакторского решения утверждение «с 1940 года не публиковал исследований по логике»: существует собственная статья Гёделя о расширении финитной точки зрения, Dialectica, 1958, 12: 3–4, 280–287: https://doi.org/10.1111/j.1746-8361.1958.tb01464.x . Её нельзя свести только к философскому комментарию.",
+        "en": "Approve correction of the claim that he published no logical research after 1940: his 1958 Dialectica paper on extending the finitary standpoint, 12: 3–4, pp. 280–287, https://doi.org/10.1111/j.1746-8361.1958.tb01464.x , is research rather than merely philosophical commentary."
+      }
+    },
+    {
+      "id": "q5",
+      "question": "Подтвердить участие брата Рудольфа в переезде 1940 года, дату получения гражданства отдельно от собеседования и документальный источник истории о Конституции. Очерк и архивные материалы IAS описывают поездку Курта и Адель; формулировка «логически неполна» в анекдоте не должна автоматически приравниваться к математической теореме о неполноте. Согласовать этот фрагмент RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подтвердить участие брата Рудольфа в переезде 1940 года, дату получения гражданства отдельно от собеседования и документальный источник истории о Конституции. Очерк и архивные материалы IAS описывают поездку Курта и Адель; формулировка «логически неполна» в анекдоте не должна автоматически приравниваться к математической теореме о неполноте. Согласовать этот фрагмент RU/EN.",
+        "en": "Confirm whether Rudolf accompanied the 1940 emigration, distinguish the citizenship date from the interview and identify the documentary source of the Constitution anecdote. IAS accounts describe Kurt and Adele’s journey. The anecdote’s logically incomplete wording should not be equated with the mathematical incompleteness theorem. Approve the passage in both versions."
+      }
+    },
+    {
+      "id": "q6",
+      "question": "Для исходного и ретушированного портретов Гёделя и фотографии с Эйнштейном указать конкретные источники, авторов или правообладателей и подтверждённое основание публикации. Фотография церемонии установлена: каталог Института перспективных исследований E 02 указывает автора Алана Ричардса и лицензию CC BY 4.0.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для исходного и ретушированного портретов Гёделя и фотографии с Эйнштейном указать конкретные источники, авторов или правообладателей и подтверждённое основание публикации. Фотография церемонии установлена: каталог Института перспективных исследований E 02 указывает автора Алана Ричардса и лицензию CC BY 4.0.",
+        "en": "For the original and retouched portraits and the photograph with Einstein, identify the specific sources, authors or rights holders and a verified basis for publication. The award-ceremony photograph is resolved: the Institute for Advanced Study catalogue E 02 attributes it to Alan Richards and licenses it CC BY 4.0."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
