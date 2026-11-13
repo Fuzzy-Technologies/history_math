@@ -1,0 +1,43 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8f0f08328276-en",
+  "questions": [
+    {
+      "id": "faculty-title",
+      "question": "Check Klein’s faculty title: Göttingen’s archive records his election as dean of the Philosophische Fakultät, not a mathematics faculty.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Check Klein’s faculty title: Göttingen’s archive records his election as dean of the Philosophische Fakultät, not a mathematics faculty.",
+        "ru": "Проверить название должности и подразделения Клейна: архив Гёттингена фиксирует его избрание деканом Philosophische Fakultät, а не математического факультета."
+      },
+      "resolution": "The unsupported description “dean of the mathematics faculty” was removed from RU/EN.",
+      "evidence_url": "https://www.sub.uni-goettingen.de/fileadmin/media/texte/spezialsammlungen/Spezialinventar_Naturwissenschaften_2001.pdf"
+    },
+    {
+      "id": "missing-humor-cover",
+      "question": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+        "ru": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку."
+      }
+    },
+    {
+      "id": "classification-anecdote-attribution",
+      "question": "Establish the anecdote’s origin and attribution.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Establish the anecdote’s origin and attribution.",
+        "ru": "Установить происхождение анекдота и его атрибуцию."
+      },
+      "resolution": "RU/EN were corrected from Engelbert L. Schucking’s published account: Wolfgang Pauli’s story concerns a problem posed by Ernst Zermelo in a Göttingen logic lecture.",
+      "evidence_url": "https://physicstoday.aip.org/features/jordan-pauli-politics-brecht-and-a-variable-gravitational-constant"
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
