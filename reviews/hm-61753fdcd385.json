@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-61753fdcd385",
+  "questions": [
+    {
+      "id": "bede-computus-rule",
+      "question": "Уточнить популярную формулировку правила Пасхи: computus использует церковное равноденствие 21 марта и табличное полнолуние, которые не обязательно совпадают с астрономическими событиями.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Обе версии уточнены по объяснению Linda Hall Library: правило изложено через церковное равноденствие и табличное полнолуние.",
+      "localizations": {
+        "source": "Уточнить популярную формулировку правила Пасхи: computus использует церковное равноденствие 21 марта и табличное полнолуние, которые не обязательно совпадают с астрономическими событиями.",
+        "en": "Clarify the popular summary of the Easter rule: computus uses the ecclesiastical equinox of 21 March and a tabular full moon, which need not coincide with astronomical events."
+      }
+    },
+    {
+      "id": "bede-image-attribution",
+      "question": "Для изображений 2–4 указать проверяемую атрибуцию: автора и публичный источник картины Бартоломе Романа, фотографа или хранилище снимка надгробия в Даремском соборе, а также точный каталог и публичный источник листа 24r рукописи Университета Глазго; для каждого изображения требуется лицензия или основание public domain.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для изображений 2–4 указать проверяемую атрибуцию: автора и публичный источник картины Бартоломе Романа, фотографа или хранилище снимка надгробия в Даремском соборе, а также точный каталог и публичный источник листа 24r рукописи Университета Глазго; для каждого изображения требуется лицензия или основание public domain.",
+        "en": "Provide verifiable attribution for figures 2–4: the artist and public source for Bartolomé Román’s painting, the photographer or holding institution for the Durham Cathedral tomb photograph, and the exact catalogue record and public source for folio 24r of the University of Glasgow manuscript; each image also needs a licence or public-domain basis."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}

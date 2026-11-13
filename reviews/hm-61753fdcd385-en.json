@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-61753fdcd385-en",
+  "questions": [
+    {
+      "id": "bede-computus-rule",
+      "question": "Clarify the popular summary of the Easter rule: computus uses the ecclesiastical equinox of 21 March and a tabular full moon, which need not coincide with astronomical events.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the popular summary of the Easter rule: computus uses the ecclesiastical equinox of 21 March and a tabular full moon, which need not coincide with astronomical events.",
+        "ru": "Уточнить популярную формулировку правила Пасхи: computus использует церковное равноденствие 21 марта и табличное полнолуние, которые не обязательно совпадают с астрономическими событиями."
+      },
+      "resolution": "Both versions now follow the Linda Hall Library explanation by distinguishing the ecclesiastical equinox and tabular full moon."
+    },
+    {
+      "id": "bede-image-attribution",
+      "question": "Provide verifiable attribution for figures 2–4: the artist and public source for Bartolomé Román’s painting, the photographer or holding institution for the Durham Cathedral tomb photograph, and the exact catalogue record and public source for folio 24r of the University of Glasgow manuscript; each image also needs a licence or public-domain basis.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide verifiable attribution for figures 2–4: the artist and public source for Bartolomé Román’s painting, the photographer or holding institution for the Durham Cathedral tomb photograph, and the exact catalogue record and public source for folio 24r of the University of Glasgow manuscript; each image also needs a licence or public-domain basis.",
+        "ru": "Для изображений 2–4 указать проверяемую атрибуцию: автора и публичный источник картины Бартоломе Романа, фотографа или хранилище снимка надгробия в Даремском соборе, а также точный каталог и публичный источник листа 24r рукописи Университета Глазго; для каждого изображения требуется лицензия или основание public domain."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
