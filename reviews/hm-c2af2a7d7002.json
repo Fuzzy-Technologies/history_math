@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c2af2a7d7002",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Указать проверяемый источник и точную редакцию приведённой цитаты Кеплера об астрологии.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Указать проверяемый источник и точную редакцию приведённой цитаты Кеплера об астрологии.",
+        "en": "Provide a verifiable source and exact edition for the quotation attributed to Kepler about astrology."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Указать публично проверяемые первоисточники, авторство и правовое основание воспроизведения портрета Иоганна Кеплера и гравюры модели «кубка Кеплера».",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Указать публично проверяемые первоисточники, авторство и правовое основание воспроизведения портрета Иоганна Кеплера и гравюры модели «кубка Кеплера».",
+        "en": "Provide publicly verifiable original sources, authorship and legal basis for reproducing the portrait of Johannes Kepler and the engraving of the Kepler cup model."
+      }
+    },
+    {
+      "id": "indivisibles-anachronism",
+      "question": "Исправить анахронизм «метод неделимых Архимеда»: Кеплер использовал собственные инфинитезимальные рассуждения, вдохновлённые античной стереометрией; систематический метод неделимых связан с более поздней работой Кавальери.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Исправить анахронизм «метод неделимых Архимеда»: Кеплер использовал собственные инфинитезимальные рассуждения, вдохновлённые античной стереометрией; систематический метод неделимых связан с более поздней работой Кавальери.",
+        "en": "Correct the anachronistic phrase “Archimedes’ method of indivisibles”: Kepler used his own infinitesimal reasoning inspired by ancient solid geometry, while the systematic method of indivisibles is associated with Cavalieri’s later work."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
