@@ -1,0 +1,50 @@
+{
+  "review_version": 1,
+  "article_id": "hm-37e510e21b2d",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить разграничение диаграмм Эйлера и Венна и источники сведений об используемых исторических приоритетах и пожертвованной библиотеке.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить разграничение диаграмм Эйлера и Венна и источники сведений об используемых исторических приоритетах и пожертвованной библиотеке.",
+        "en": "Clarify the distinction between Euler and Venn diagrams and the sources for the stated historical priorities and donated library."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Сверить утверждение, что книга The Principles of Empirical or Inductive Logic (1889) обосновывает обратные операции в булевой логике; для этого содержательного описания нужен точный источник.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить утверждение, что книга The Principles of Empirical or Inductive Logic (1889) обосновывает обратные операции в булевой логике; для этого содержательного описания нужен точный источник.",
+        "en": "Verify the claim that *The Principles of Empirical or Inductive Logic* (1889) justifies inverse operations in Boolean logic; this description requires a precise source."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Условие клубной задачи перенесено полностью без добавленного решения; при необходимости ответ требует отдельной редакторской подготовки. Подтверждённой ссылки на Telegram-пост нет.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Условие задачи перенесено как самостоятельный вопрос читателю. Решение и ссылка на Telegram для этого материала не требуются.",
+      "localizations": {
+        "source": "Условие клубной задачи перенесено полностью без добавленного решения; при необходимости ответ требует отдельной редакторской подготовки. Подтверждённой ссылки на Telegram-пост нет.",
+        "en": "The complete club puzzle is retained without an added solution; any answer requires separate editorial preparation. No confirmed Telegram-post URL is available."
+      }
+    },
+    {
+      "id": "q4",
+      "question": "Установить реальный публичный первоисточник, автора или фотографа и правовой статус исторического портрета Джона Венна; отдельно подтвердить авторство и основание использования диаграммы fig-2. Авторское основание отдельно созданной диаграммы нельзя переносить на сторонний портрет.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить реальный публичный первоисточник, автора или фотографа и правовой статус исторического портрета Джона Венна; отдельно подтвердить авторство и основание использования диаграммы fig-2. Авторское основание отдельно созданной диаграммы нельзя переносить на сторонний портрет.",
+        "en": "Identify the actual public source, creator or photographer and legal status of the historical portrait of John Venn; separately confirm the authorship and basis for using diagram fig-2. The authorship basis of a separately created diagram must not be transferred to a third-party portrait."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
