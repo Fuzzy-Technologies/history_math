@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-fcbff860e347",
+  "questions": [
+    {
+      "id": "lune-triangle-square-fraction",
+      "question": "В описании простейшей луночки равнобедренный прямоугольный треугольник ошибочно назван «четвертью квадрата». Треугольник составляет половину квадрата; ошибочное уточнение удалено, а дуга по-прежнему описана как четверть окружности.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Удалено ошибочное уточнение «четверть квадрата». Равнобедренный прямоугольный треугольник составляет половину квадрата, а сектор с центром C — четверть круга.",
+      "localizations": {
+        "source": "В описании простейшей луночки равнобедренный прямоугольный треугольник ошибочно назван «четвертью квадрата». Треугольник составляет половину квадрата; ошибочное уточнение удалено, а дуга по-прежнему описана как четверть окружности.",
+        "en": "The description incorrectly called the isosceles right triangle in the simplest lune “a quarter of a square”. The triangle is half a square; the incorrect phrase has been removed, while the arc remains correctly described as a quarter-circle."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
