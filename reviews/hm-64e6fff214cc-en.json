@@ -1,0 +1,50 @@
+{
+  "review_version": 1,
+  "article_id": "hm-64e6fff214cc-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the scope of the claims that he was Russia’s first historian of mathematics and taught its first university course on the subject; the author's wording is retained, but priority requires a historical source.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the scope of the claims that he was Russia’s first historian of mathematics and taught its first university course on the subject; the author's wording is retained, but priority requires a historical source.",
+        "ru": "Уточнить границы утверждений «первый в России историк математики» и «первый университетский курс»: исходный авторский текст сохранён, но приоритет требует исторического источника."
+      },
+      "resolution": "The priority claims are supported: the Tula State Archive guide calls Bobynin Russia’s first historian of mathematics, and Moscow University’s institutional history calls his course the first of its kind in Russia. https://guides.rusarchives.ru/node/70326 ; https://math.msu.ru/imm/history"
+    },
+    {
+      "id": "q2",
+      "question": "Verify the 1917 professorship and English wording of the historical degrees: Moscow University’s candidate degree of 1872 and magister degree of 1882 are distinct from the Soviet Candidate of Sciences.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the 1917 professorship and English wording of the historical degrees: Moscow University’s candidate degree of 1872 and magister degree of 1882 are distinct from the Soviet Candidate of Sciences.",
+        "ru": "Сверить профессорское звание 1917 года и английскую передачу исторических степеней: кандидат Московского университета 1872 года и магистр 1882 года не являются советской кандидатской степенью."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Confirm bibliographical details and original page references for the two extended quotations and the congress paper; the quotations are retained in full.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm bibliographical details and original page references for the two extended quotations and the congress paper; the quotations are retained in full.",
+        "ru": "Для двух развёрнутых цитат и доклада съезду желательно подтвердить библиографические сведения и страницы первоисточников; цитаты перенесены полностью."
+      }
+    },
+    {
+      "id": "q4",
+      "question": "Establish a public source, the author or photographer (if known), the date, and a licence or confirmed public-domain status for the historical portrait of Viktor Bobynin; “Illustration accompanying the text” does not establish these facts.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Establish a public source, the author or photographer (if known), the date, and a licence or confirmed public-domain status for the historical portrait of Viktor Bobynin; “Illustration accompanying the text” does not establish these facts.",
+        "ru": "Установить для исторического портрета В. В. Бобынина публичный первоисточник, автора или фотографа (если известен), дату и лицензию либо подтверждённый статус общественного достояния; формулировка «Иллюстрация к материалу» этого не подтверждает."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
