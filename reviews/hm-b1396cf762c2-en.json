@@ -1,0 +1,63 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b1396cf762c2-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Correct or qualify the blanket 1970s dating of academy elections: the National Academy of Engineering gives 1985, https://www.nae.edu/File.aspx?id=7387&v=f78f09b0 . Approve separate election dates in both versions.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Correct or qualify the blanket 1970s dating of academy elections: the National Academy of Engineering gives 1985, https://www.nae.edu/File.aspx?id=7387&v=f78f09b0 . Approve separate election dates in both versions.",
+        "ru": "Исправить или уточнить общее «в 1970-е годы» для избраний: National Academy of Engineering указывает 1985 год, а не 1970-е: https://www.nae.edu/File.aspx?id=7387&v=f78f09b0 . Предлагается разделить даты академий в обеих версиях."
+      },
+      "resolution": "The academy dates now distinguish election to the National Academy of Sciences in 1971 from election to the National Academy of Engineering in 1985, following the NAE memorial: https://www.nae.edu/File.aspx?id=7387&v=f78f09b0"
+    },
+    {
+      "id": "q2",
+      "question": "Clarify the four-volume work: Notes lists volumes 1 (1997) and 2 (2003) with M. Thapa, confirmed by the publisher at https://link.springer.com/book/10.1007/b97672 and https://link.springer.com/book/10.1007/b97283 . Distinguish the publication plan from volumes actually issued.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the four-volume work: Notes lists volumes 1 (1997) and 2 (2003) with M. Thapa, confirmed by the publisher at https://link.springer.com/book/10.1007/b97672 and https://link.springer.com/book/10.1007/b97283 . Distinguish the publication plan from volumes actually issued.",
+        "ru": "Уточнить четырёхтомный труд: в примечаниях указаны тома 1 (1997) и 2 (2003) с М. Тапой; издатель подтверждает эти тома: https://link.springer.com/book/10.1007/b97672 и https://link.springer.com/book/10.1007/b97283 . Различить план издания и реально вышедшие тома; не утверждать выпуск четырёх томов без подтверждения."
+      },
+      "resolution": "The text now identifies the work as a planned multivolume project and names only the two published volumes confirmed by Springer: https://link.springer.com/book/10.1007/b97672 and https://link.springer.com/book/10.1007/b97283"
+    },
+    {
+      "id": "q3",
+      "question": "Verify the first von Neumann prize and SOL foundation dates: the source gives 1974 and 1973, while Stanford’s timeline gives 1975 and 1974, https://msande.stanford.edu/timeline-mses-history . Consult award and laboratory records before choosing dates.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the first von Neumann prize and SOL foundation dates: the source gives 1974 and 1973, while Stanford’s timeline gives 1975 and 1974, https://msande.stanford.edu/timeline-mses-history . Consult award and laboratory records before choosing dates.",
+        "ru": "Сверить дату и формулировку первой премии фон Неймана и дату основания SOL: исходник даёт 1974 и 1973, тогда как хронология Stanford указывает 1975 и 1974: https://msande.stanford.edu/timeline-mses-history . Уточнить по документам премии и лаборатории, не подменяя одну спорную дату другой автоматически."
+      },
+      "resolution": "The dates now follow the official records: SOL was created in 1974 and Dantzig received the first John von Neumann Theory Prize in 1975. https://msande.stanford.edu/timeline-mses-history ; https://www.informs.org/Recognizing-Excellence/Award-Recipients/George-B.-Dantzig"
+    },
+    {
+      "id": "linear-programming-term",
+      "question": "Correct the attribution of the term “linear programming”: Tjalling Koopmans proposed it during Dantzig’s 1948 RAND visit; Dantzig developed the general model and simplex method in 1947. Sources: https://mathshistory.st-andrews.ac.uk/Biographies/Dantzig_George/ ; https://sites.oxy.edu/lengyel/M372/papers/SIAM%20Remembering%20George%20Dantzig.htm .",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Correct the attribution of the term “linear programming”: Tjalling Koopmans proposed it during Dantzig’s 1948 RAND visit; Dantzig developed the general model and simplex method in 1947. Sources: https://mathshistory.st-andrews.ac.uk/Biographies/Dantzig_George/ ; https://sites.oxy.edu/lengyel/M372/papers/SIAM%20Remembering%20George%20Dantzig.htm .",
+        "ru": "Исправить атрибуцию термина «линейное программирование»: его предложил Тьяллинг Купманс во время визита Данцига в RAND в 1948 году; общая модель и симплекс-метод принадлежат Данцигу (1947). Источники: https://mathshistory.st-andrews.ac.uk/Biographies/Dantzig_George/ ; https://sites.oxy.edu/lengyel/M372/papers/SIAM%20Remembering%20George%20Dantzig.htm ."
+      },
+      "resolution": "Both editions now credit Koopmans with the term (1948) and Dantzig with the general model and simplex method (1947)."
+    },
+    {
+      "id": "image-attribution",
+      "question": "For the three portraits of George Dantzig, establish verifiable public primary sources, artists or photographers, dates and the legal basis for publication; possession of files in an author’s archive and the label “Illustration accompanying the text” do not by themselves establish reproduction rights.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the three portraits of George Dantzig, establish verifiable public primary sources, artists or photographers, dates and the legal basis for publication; possession of files in an author’s archive and the label “Illustration accompanying the text” do not by themselves establish reproduction rights.",
+        "ru": "Для трёх портретов Джорджа Данцига установить проверяемые публичные первоисточники, авторов или фотографов, даты и правовое основание публикации; наличие файлов в авторском архиве и формулировка «Иллюстрация к материалу» сами по себе права не подтверждают."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
