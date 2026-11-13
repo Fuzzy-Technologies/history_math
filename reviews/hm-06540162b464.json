@@ -1,0 +1,50 @@
+{
+  "review_version": 1,
+  "article_id": "hm-06540162b464",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Сверить хронологию работы и названия институтов: исходник даёт Вятку с 1917 и ЛГПИ Покровского (позже Герцена) в 1925–1970. Музей Герценовского университета указывает Вятку с 1918, работу в институте Герцена и отдельно почасовое профессорство в институте Покровского с 1947: https://www.herzen.spb.ru/about/struct-uni/other-podr/muzey/znamenatelnye-daty/ . Согласовать последовательность учреждений в RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить хронологию работы и названия институтов: исходник даёт Вятку с 1917 и ЛГПИ Покровского (позже Герцена) в 1925–1970. Музей Герценовского университета указывает Вятку с 1918, работу в институте Герцена и отдельно почасовое профессорство в институте Покровского с 1947: https://www.herzen.spb.ru/about/struct-uni/other-podr/muzey/znamenatelnye-daty/ . Согласовать последовательность учреждений в RU/EN.",
+        "en": "Verify the institutional chronology: the source gives Vyatka from 1917 and the Pokrovsky institute, later Herzen, for 1925–1970. Herzen University’s museum gives Vyatka from 1918 and distinguishes Herzen work from a part-time Pokrovsky professorship from 1947, https://www.herzen.spb.ru/about/struct-uni/other-podr/muzey/znamenatelnye-daty/ . Approve both versions."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить «История математики» (1959): возможно, это первое издание «Истории арифметики», переизданной в 1965 году. В справочнике историков математики названо именно издание «История арифметики» (1959): https://www.mathsoc.spb.ru/history/Ist_mat_spravochnik.pdf . Проверить по титулу и согласовать обе версии.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить «История математики» (1959): возможно, это первое издание «Истории арифметики», переизданной в 1965 году. В справочнике историков математики названо именно издание «История арифметики» (1959): https://www.mathsoc.spb.ru/history/Ist_mat_spravochnik.pdf . Проверить по титулу и согласовать обе версии.",
+        "en": "Clarify A History of Mathematics (1959): this may be the first edition of A History of Arithmetic, reissued in 1965. The historians’ reference book identifies A History of Arithmetic (1959), https://www.mathsoc.spb.ru/history/Ist_mat_spravochnik.pdf . Verify the title and approve both versions."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Согласовать инициалы автора «Русского дара миру»: в RU-источнике Д. В. Маккэйл, каталог английского издания 1915 года даёт J. W. (John William) Mackail: https://ci.nii.ac.jp/ncid/BA21489569 . В EN использовано подтверждённое имя J. W. Mackail; исправление русских инициалов оставлено редактору.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Согласовать инициалы автора «Русского дара миру»: в RU-источнике Д. В. Маккэйл, каталог английского издания 1915 года даёт J. W. (John William) Mackail: https://ci.nii.ac.jp/ncid/BA21489569 . В EN использовано подтверждённое имя J. W. Mackail; исправление русских инициалов оставлено редактору.",
+        "en": "Approve the author’s initials for Russia’s Gift to the World: the Russian source has D. V. Mackail, while the 1915 English edition’s catalogue gives J. W. (John William) Mackail, https://ci.nii.ac.jp/ncid/BA21489569 . The English version uses the established English name; the Russian initials await an editorial decision."
+      },
+      "resolution": "Инициалы сверены с каталогом оригинального издания 1915 года, J. W. Mackail. RU и EN теперь называют одного автора."
+    },
+    {
+      "id": "q4",
+      "question": "Для двух портретов И. Я. Депмана и трёх изображений книжных обложек установить публичные источники, авторов или учреждения и действительное правовое основание воспроизведения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для двух портретов И. Я. Депмана и трёх изображений книжных обложек установить публичные источники, авторов или учреждения и действительное правовое основание воспроизведения.",
+        "en": "For the two portraits of I. Ya. Depman and the three book-cover images, establish public sources, creators or holding institutions, and a valid rights basis for reproduction."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
