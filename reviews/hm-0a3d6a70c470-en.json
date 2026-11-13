@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0a3d6a70c470-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Approve the quoted subtitle “Professor of the History of Mathematics” as an informal description: the biography specifies a senior lecturer’s position, not a professorial title. The English subtitle keeps quotation marks and adds no academic degree.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Approve the quoted subtitle “Professor of the History of Mathematics” as an informal description: the biography specifies a senior lecturer’s position, not a professorial title. The English subtitle keeps quotation marks and adds no academic degree.",
+        "ru": "Согласовать подзаголовок «профессор истории математики» как неформальную характеристику: в биографии указана должность старшего преподавателя, профессорское звание не заявлено. Английский подзаголовок сохраняет кавычки и не добавляет учёную степень."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Clarify the conference count and numbering: the 2003 school was the First Kolmogorov Readings in a school format; the 2004–2015 meetings were the Second through Thirteenth Readings.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the conference count and numbering: the 2003 school was the First Kolmogorov Readings in a school format; the 2004–2015 meetings were the Second through Thirteenth Readings.",
+        "ru": "Уточнить счёт и нумерацию конференций: школа 2003 года была I Колмогоровскими чтениями в школьном формате; 2004–2015 годы соответствуют II–XIII чтениям."
+      },
+      "resolution": "The 2003 school is identified as the First Kolmogorov Readings and the 2004–2015 meetings as the Second through Thirteenth; the numbering is confirmed by the package’s bibliographical entry for the Proceedings of the Second Kolmogorov Readings (Yaroslavl, 2004) and the [proceedings of the Thirteenth Readings](https://kolmogorov.yspu.org/wp-content/uploads/sites/3/2016/02/kolmogor13.pdf)."
+    },
+    {
+      "id": "image-provenance-rights",
+      "question": "For the three photographs, provide the photographer/public source and legal basis in RU/EN; if the 2003 photographs are the article author’s own work, state this explicitly rather than replacing attribution with “illustration for the article”.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the three photographs, provide the photographer/public source and legal basis in RU/EN; if the 2003 photographs are the article author’s own work, state this explicitly rather than replacing attribution with “illustration for the article”.",
+        "ru": "Для трёх фотографий указать фотографа/публичный источник и правовое основание в RU/EN; если снимки 2003 года авторские, зафиксировать это явно, не заменяя атрибуцию формулировкой «иллюстрация к материалу»."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
