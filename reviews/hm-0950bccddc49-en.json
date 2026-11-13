@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0950bccddc49-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the priority claims for mathematical terminology and whether “pupil of Leibniz” means direct instruction or intellectual influence and correspondence. The drafts retain the author’s formulations.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify the priority claims for mathematical terminology and whether “pupil of Leibniz” means direct instruction or intellectual influence and correspondence. The drafts retain the author’s formulations.",
+        "ru": "Уточнить утверждения о первенстве математических терминов и смысл «ученик Лейбница»: было ли непосредственное обучение или речь о влиянии и переписке? Основной текст пока сохраняет авторские формулировки."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Verify the imprint of Elementa matheseos universae, including “Magdeburg”, dates, contents and page counts, and whether Halle Magdeburgica needs to be specified. Establish a source for the student-debt legend while retaining its explicit identification as a legend.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the imprint of Elementa matheseos universae, including “Magdeburg”, dates, contents and page counts, and whether Halle Magdeburgica needs to be specified. Establish a source for the student-debt legend while retaining its explicit identification as a legend.",
+        "ru": "Сверить выходные данные Elementa matheseos universae, включая место «Магдебург», годы, состав и объёмы томов; уточнить, требуется ли полное обозначение Halle Magdeburgica. Проверить источник легенды о долгах студентов, сохранив её явное обозначение легендой."
+      }
+    },
+    {
+      "id": "image-attribution",
+      "question": "For the two historical engravings of Christian Wolff, establish the engraver or other creator, date, verifiable public source and licence or confirmed public-domain status; an author’s archive does not replace this information.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the two historical engravings of Christian Wolff, establish the engraver or other creator, date, verifiable public source and licence or confirmed public-domain status; an author’s archive does not replace this information.",
+        "ru": "Для двух исторических гравюр Христиана Вольфа установить гравёра или иного создателя, дату, проверяемый публичный источник и лицензию либо подтверждённый статус общественного достояния; авторский архив не заменяет эти сведения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
