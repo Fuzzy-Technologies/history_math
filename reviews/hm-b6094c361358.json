@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b6094c361358",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Сверить исторические названия Академии наук в 1919–1927 годах и хронологию названия и подчинения Физико-математического института; уточнить название факультета, деканом которого Стеклов стал в 1904 году.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Биография МИАН подтверждает: РАН переименована в АН СССР в 1925 году; ФМИ вошёл в АН СССР в 1925 году и получил имя Стеклова в 1926 году. Там же подтверждён математический факультет в 1904 году.",
+      "localizations": {
+        "source": "Сверить исторические названия Академии наук в 1919–1927 годах и хронологию названия и подчинения Физико-математического института; уточнить название факультета, деканом которого Стеклов стал в 1904 году.",
+        "en": "Check the Academy’s historical names in 1919–1927 and the chronology of the Physics and Mathematics Institute’s name and affiliation; verify the faculty of which Steklov became dean in 1904."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить академический статус Н. Н. Салтыкова и принятый английский термин для «теории замкнутости» в перечне работ Стеклова.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Академический статус учеников в тексте больше не обобщается. Для «теории замкнутости» в EN выбрано closure theory по названию работ Стеклова о théorie de fermeture в Math-Net.Ru.",
+      "localizations": {
+        "source": "Уточнить академический статус Н. Н. Салтыкова и принятый английский термин для «теории замкнутости» в перечне работ Стеклова.",
+        "en": "Verify Nikolai Saltykov’s academy membership and the preferred English term for completeness theory in the list of Steklov’s research areas."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить проверяемый публичный первоисточник портрета В. А. Стеклова, фотографа/автора (если известен), дату и лицензию либо подтверждённый public-domain status; синхронизировать RU/EN metadata.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить проверяемый публичный первоисточник портрета В. А. Стеклова, фотографа/автора (если известен), дату и лицензию либо подтверждённый public-domain status; синхронизировать RU/EN metadata.",
+        "en": "Establish a verifiable public original source for the portrait of V. A. Steklov, its photographer or creator (if known), date, and license or confirmed public-domain status; keep the RU and EN metadata synchronized."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
