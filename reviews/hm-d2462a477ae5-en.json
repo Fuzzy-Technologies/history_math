@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d2462a477ae5-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "The list headed “published in the USSR” includes a 1998 collection. Approve “The following works appeared in Russian…” and the corresponding Russian wording while retaining that edition.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The list headed “published in the USSR” includes a 1998 collection. Approve “The following works appeared in Russian…” and the corresponding Russian wording while retaining that edition.",
+        "ru": "В перечне под заголовком «В СССР были опубликованы» есть сборник 1998 года. Согласовать общее вступление «На русском языке были опубликованы…» / “The following works appeared in Russian…” без удаления издания."
+      },
+      "resolution": "The introduction now describes the Russian-language editions, including the 1998 collection."
+    },
+    {
+      "id": "q2",
+      "question": "Clarify the description of the law of readiness in relation to practice. Establish the original sources of the epigraph and orphanage anecdote; the English adaptation retains the author’s claims without adding details.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify the description of the law of readiness in relation to practice. Establish the original sources of the epigraph and orphanage anecdote; the English adaptation retains the author’s claims without adding details.",
+        "ru": "Уточнить формулировку закона готовности в связи с упражнениями. Установить первоисточники эпиграфа и рассказа о приюте; английская адаптация сохраняет авторские утверждения без добавления новых деталей."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Establish the origin and legal basis for the portrait of Thorndike and the illustrative scene “A Sweet for the Orphans”: identify the photographer or illustrator, or explicitly verify that the image was created by the author and that the relevant rights are held; a reference to the author’s archive is insufficient.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Establish the origin and legal basis for the portrait of Thorndike and the illustrative scene “A Sweet for the Orphans”: identify the photographer or illustrator, or explicitly verify that the image was created by the author and that the relevant rights are held; a reference to the author’s archive is insufficient.",
+        "ru": "Установить происхождение и правовое основание для портрета Торндайка и условной иллюстрации «Конфетка сиротам»: указать фотографа/иллюстратора либо явно подтвердить авторское создание изображения и соответствующие права; формулировки об авторском архиве недостаточно."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}

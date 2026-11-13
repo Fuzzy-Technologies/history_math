@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d2462a477ae5",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "В перечне под заголовком «В СССР были опубликованы» есть сборник 1998 года. Согласовать общее вступление «На русском языке были опубликованы…» / “The following works appeared in Russian…” без удаления издания.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Вводная фраза относится к русским изданиям, включая сборник 1998 года.",
+      "localizations": {
+        "source": "В перечне под заголовком «В СССР были опубликованы» есть сборник 1998 года. Согласовать общее вступление «На русском языке были опубликованы…» / “The following works appeared in Russian…” без удаления издания.",
+        "en": "The list headed “published in the USSR” includes a 1998 collection. Approve “The following works appeared in Russian…” and the corresponding Russian wording while retaining that edition."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить формулировку закона готовности в связи с упражнениями. Установить первоисточники эпиграфа и рассказа о приюте; английская адаптация сохраняет авторские утверждения без добавления новых деталей.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить формулировку закона готовности в связи с упражнениями. Установить первоисточники эпиграфа и рассказа о приюте; английская адаптация сохраняет авторские утверждения без добавления новых деталей.",
+        "en": "Clarify the description of the law of readiness in relation to practice. Establish the original sources of the epigraph and orphanage anecdote; the English adaptation retains the author’s claims without adding details."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить происхождение и правовое основание для портрета Торндайка и условной иллюстрации «Конфетка сиротам»: указать фотографа/иллюстратора либо явно подтвердить авторское создание изображения и соответствующие права; формулировки об авторском архиве недостаточно.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить происхождение и правовое основание для портрета Торндайка и условной иллюстрации «Конфетка сиротам»: указать фотографа/иллюстратора либо явно подтвердить авторское создание изображения и соответствующие права; формулировки об авторском архиве недостаточно.",
+        "en": "Establish the origin and legal basis for the portrait of Thorndike and the illustrative scene “A Sweet for the Orphans”: identify the photographer or illustrator, or explicitly verify that the image was created by the author and that the relevant rights are held; a reference to the author’s archive is insufficient."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
