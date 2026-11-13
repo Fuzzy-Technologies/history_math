@@ -1,0 +1,51 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c6ff1b49de3c-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "The source calls the journal Journal of Science and Society. Its own history page uses Science & Society and confirms Struik’s involvement: https://www.scienceandsociety.com/history.html . Approve the corresponding corrected name in both languages.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The source calls the journal Journal of Science and Society. Its own history page uses Science & Society and confirms Struik’s involvement: https://www.scienceandsociety.com/history.html . Approve the corresponding corrected name in both languages.",
+        "ru": "В авторском тексте журнал назван «Журнал науки и общества» / Journal of Science and Society. На собственной странице истории издания указано Science & Society и подтверждено участие Стройка: https://www.scienceandsociety.com/history.html . Согласовать замену в RU на журнал «Наука и общество» (Science & Society), в EN — Science & Society."
+      },
+      "resolution": "The journal’s official history confirms the name Science & Society. Both editions now use it."
+    },
+    {
+      "id": "q2",
+      "question": "Verify the university awarding the 1922 doctorate, the dissertation title and the travel chronology: the list gives Rome in 1925 and Göttingen in 1926, while the following paragraph gives moves in 1924 and 1925. These may reflect different stages, so the dates have not been changed automatically.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the university awarding the 1922 doctorate, the dissertation title and the travel chronology: the list gives Rome in 1925 and Göttingen in 1926, while the following paragraph gives moves in 1924 and 1925. These may reflect different stages, so the dates have not been changed automatically.",
+        "ru": "Сверить университет присуждения докторской 1922 года, название диссертации и последовательность поездок: в перечне указаны Рим 1925 и Гёттинген 1926, а в следующем абзаце — переезды в 1924 и 1925 годах. Это может отражать разные этапы работы, поэтому даты не исправлены автоматически."
+      },
+      "resolution": "Leiden University and the dissertation were checked against Utrecht University’s professor catalogue and the AMS biography; MIT records the 1924–1926 fellowship. MIT also records service as an assistant at Delft in 1917–1924, while Utrecht records a visiting professorship from 16 September 1963 to 31 August 1964. Evidence: https://news.mit.edu/2000/struik-1025 and https://profs.library.uu.nl/hoogleraar/struik-d-j/"
+    },
+    {
+      "id": "q3",
+      "question": "Verify Struik’s lifelong membership in the Communist Party of the Netherlands. Preserve the distinction between the 1978 and 1990 editions and check the 1990 edition’s stated translation from German.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify Struik’s lifelong membership in the Communist Party of the Netherlands. Preserve the distinction between the 1978 and 1990 editions and check the 1990 edition’s stated translation from German.",
+        "ru": "Проверить членство Стройка в нидерландской компартии до конца жизни. Сохранить различия между изданиями 1978 и 1990 годов и проверить указанное для издания 1990 года «Пер. с нем.»."
+      }
+    },
+    {
+      "id": "q4",
+      "question": "Establish verifiable sources, photographers or publishers, and legal bases for the two historical portraits of Dirk Struik and the two publisher’s book covers; “the author’s archive” describes storage of the copies, not their origin or publication rights.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Establish verifiable sources, photographers or publishers, and legal bases for the two historical portraits of Dirk Struik and the two publisher’s book covers; “the author’s archive” describes storage of the copies, not their origin or publication rights.",
+        "ru": "Установить для двух исторических портретов Дирка Стройка и двух издательских обложек проверяемые источники, фотографов/издателей и правовые основания; формулировка «авторский архив» описывает хранение копий, но не их происхождение и не право публикации."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
