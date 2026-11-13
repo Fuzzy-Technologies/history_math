@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b7d7a1088b4e",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Укажите проверяемый первоисточник портрета Лапласа, художника или гравёра, дату создания (если известна) и лицензию либо подтверждённый статус общественного достояния; синхронизируйте атрибуцию в RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Укажите проверяемый первоисточник портрета Лапласа, художника или гравёра, дату создания (если известна) и лицензию либо подтверждённый статус общественного достояния; синхронизируйте атрибуцию в RU/EN.",
+        "en": "Provide a verifiable source for the portrait of Laplace, identify the artist or engraver and date where known, and document the licence or confirmed public-domain status; keep the attribution synchronized in RU and EN."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
