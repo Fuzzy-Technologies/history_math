@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-54681b5b2c00",
+  "questions": [
+    {
+      "id": "gauss-images-provenance",
+      "question": "Указать для портрета Гаусса и фотографии 17-конечной звезды реальных создателей, проверяемые публичные источники и правовые основания; «авторский архив» не подтверждает права на сторонние изображения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Указать для портрета Гаусса и фотографии 17-конечной звезды реальных создателей, проверяемые публичные источники и правовые основания; «авторский архив» не подтверждает права на сторонние изображения.",
+        "en": "For the Gauss portrait and the photograph of the 17-pointed star, identify the actual creators, verifiable public sources, and valid rights bases; “author’s archive” does not establish rights to third-party images."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
