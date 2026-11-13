@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-88c404b055e2",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить даты создания и организационную преемственность вычислительной группы, отдела приближённых вычислений и кафедры вычислительной математики; подтвердить рамки приоритета первого курса методов программирования.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить даты создания и организационную преемственность вычислительной группы, отдела приближённых вычислений и кафедры вычислительной математики; подтвердить рамки приоритета первого курса методов программирования.",
+        "en": "Verify the dates and organizational succession of the computing group, Department of Approximate Computations and university department; establish the scope of the priority claim for the first programming-methods course."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Сверить различие между ранними сборниками «Успехов» и позднейшим журналом, чтобы английское наименование Russian Mathematical Surveys не переносило позднейший формат в 1936 год.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Уточнено: первые выпуски 1936 года были нерегулярными сборниками; название Russian Mathematical Surveys относится к позднейшей английской редакции журнала.",
+      "localizations": {
+        "source": "Сверить различие между ранними сборниками «Успехов» и позднейшим журналом, чтобы английское наименование Russian Mathematical Surveys не переносило позднейший формат в 1936 год.",
+        "en": "Check the distinction between the early Uspekhi collections and the later journal so that the English name Russian Mathematical Surveys does not project the later format back to 1936."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Для исторического портрета Люстерника указано только «Иллюстрация к материалу». Установить публичный первоисточник, фотографа или автора (если известен), дату и лицензию либо иное подтверждённое основание публикации; синхронизировать данные фигуры в RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для исторического портрета Люстерника указано только «Иллюстрация к материалу». Установить публичный первоисточник, фотографа или автора (если известен), дату и лицензию либо иное подтверждённое основание публикации; синхронизировать данные фигуры в RU/EN.",
+        "en": "The historical portrait of Lyusternik is identified only as an illustration accompanying the text. Establish a public source, the photographer or creator where known, its date, and a licence or other confirmed basis for publication; synchronize the figure metadata in both editions."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
