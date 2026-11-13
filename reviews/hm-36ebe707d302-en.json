@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-36ebe707d302-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the trigonometry wording: the first unified language of measurement should not imply worldwide priority over earlier Islamic treatises; the preceding source sentence already limits the comparison to Europe. The law of tangents more precisely involves tangents of the half-sum and half-difference of angles, rather than simply two angles. The author’s wording is retained pending approval in both versions; do not add a formula absent from the source. https://mathshistory.st-andrews.ac.uk/Biographies/Regiomontanus/ .",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the trigonometry wording: the first unified language of measurement should not imply worldwide priority over earlier Islamic treatises; the preceding source sentence already limits the comparison to Europe. The law of tangents more precisely involves tangents of the half-sum and half-difference of angles, rather than simply two angles. The author’s wording is retained pending approval in both versions; do not add a formula absent from the source. https://mathshistory.st-andrews.ac.uk/Biographies/Regiomontanus/ .",
+        "ru": "Уточнить формулировки о тригонометрии: «впервые ... как единый язык измерений» не должна утверждать всемирный приоритет при наличии более ранних исламских трактатов; перед этим автор уже ограничивает сравнение Европой. В объяснении теоремы тангенсов точнее говорить о тангенсах полусуммы и полуразности углов, а не просто двух углов. До решения авторские фразы сохранены; согласовать точную формулировку в RU/EN, не добавляя в текст отсутствующую в источнике формулу. https://mathshistory.st-andrews.ac.uk/Biographies/Regiomontanus/ ."
+      },
+      "resolution": "Both versions now limit the priority claim to Europe and describe the law of tangents through the half-difference and half-sum of the opposite angles."
+    },
+    {
+      "id": "q2",
+      "question": "For both engravings of Regiomontanus, provide factual attribution: the creator and edition or a museum record, a public source_url and the legal basis for use. For the retouched version, also record the source image and the nature of the retouch; “illustration accompanying the text” is insufficient.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For both engravings of Regiomontanus, provide factual attribution: the creator and edition or a museum record, a public source_url and the legal basis for use. For the retouched version, also record the source image and the nature of the retouch; “illustration accompanying the text” is insufficient.",
+        "ru": "Для обеих гравюр Региомонтана указать фактическую атрибуцию: автора/издание или музейную карточку, публичный source_url и правовое основание использования. Для ретушированного варианта также зафиксировать происхождение исходника и характер ретуши; «иллюстрация к материалу» недостаточна."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
