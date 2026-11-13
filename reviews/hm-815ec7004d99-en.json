@@ -1,0 +1,51 @@
+{
+  "review_version": 1,
+  "article_id": "hm-815ec7004d99-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the admission year and historical name of the normal school, the circumstances of expulsion and the evidence for the claim that royalists arranged the duel.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the admission year and historical name of the normal school, the circumstances of expulsion and the evidence for the claim that royalists arranged the duel.",
+        "ru": "Уточнить год поступления и историческое название нормальной школы, обстоятельства исключения и доказательную основу утверждения о дуэли, подстроенной роялистами."
+      },
+      "resolution": "The school’s date and name, expulsion and disputed duel account were corrected."
+    },
+    {
+      "id": "q2",
+      "question": "Agree the statement about equations above the fourth degree: should it explicitly refer to the general equation? Verify the historical attribution of the listed algebraic concepts and the completeness of Liouville’s 1846 publication.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Agree the statement about equations above the fourth degree: should it explicitly refer to the general equation? Verify the historical attribution of the listed algebraic concepts and the completeness of Liouville’s 1846 publication.",
+        "ru": "Согласовать формулировку о неразрешимости уравнений выше четвёртой степени: следует ли явно говорить об общем уравнении. Уточнить историческую атрибуцию перечисленных алгебраических понятий и полноту публикации Лиувилля 1846 года."
+      },
+      "resolution": "The statement now concerns the general equation; Galois’s concepts and Liouville’s publication are described more precisely."
+    },
+    {
+      "id": "q3",
+      "question": "Confirm a publicly verifiable original source, creator and legal basis for reproducing the selected portrait of Évariste Galois corresponding to the Galua_E marker.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm a publicly verifiable original source, creator and legal basis for reproducing the selected portrait of Évariste Galois corresponding to the Galua_E marker.",
+        "ru": "Подтвердить публично проверяемый первоисточник, автора и правовое основание воспроизведения выбранного портрета Эвариста Галуа, соответствующего маркеру Galua_E."
+      }
+    },
+    {
+      "id": "galois-manuscripts-history",
+      "question": "Distinguish the histories of Galois’s manuscripts involving Cauchy, Fourier and Poisson: Cauchy received a manuscript, Fourier died before reviewing the prize submission, and Poisson issued a negative report; saying that all three simply “failed to appreciate” the work conflates different events.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Distinguish the histories of Galois’s manuscripts involving Cauchy, Fourier and Poisson: Cauchy received a manuscript, Fourier died before reviewing the prize submission, and Poisson issued a negative report; saying that all three simply “failed to appreciate” the work conflates different events.",
+        "ru": "Развести судьбу рукописей Галуа у Коши, Фурье и Пуассона: Коши получил рукопись, Фурье умер до рассмотрения конкурсной работы, Пуассон дал отрицательный отзыв; общая формула «не оценили» смешивает разные события."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
