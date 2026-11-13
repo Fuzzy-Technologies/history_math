@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-04624db997dd-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Confirm the sources and contexts of Kiselyov’s 1938 quotation and Vladimir Arnold’s quotation; retain their historical voice without attributing it to the author of the present article.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the sources and contexts of Kiselyov’s 1938 quotation and Vladimir Arnold’s quotation; retain their historical voice without attributing it to the author of the present article.",
+        "ru": "Подтвердить источники и контекст цитат Киселёва 1938 года и В. И. Арнольда; сохранить их историческую интонацию без приписывания автору нынешней редакции."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Verify the claim of twenty-six editions of *Elementary Geometry* by 1917 and the dates of the imperial awards.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the claim of twenty-six editions of *Elementary Geometry* by 1917 and the dates of the imperial awards.",
+        "ru": "Уточнить статистику 26 изданий «Элементарной геометрии» к 1917 году и даты имперских наград."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Identify a public primary source, photographer or author, and a licence or other confirmed basis for reproducing the portrait of Andrey Kiselyov.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Identify a public primary source, photographer or author, and a licence or other confirmed basis for reproducing the portrait of Andrey Kiselyov.",
+        "ru": "Установить публичный первоисточник, фотографа или автора и лицензию либо иное подтверждённое основание воспроизведения портрета Андрея Киселёва."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
