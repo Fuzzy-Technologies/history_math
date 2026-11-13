@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8f9635de3b95",
+  "questions": [
+    {
+      "id": "lupanov-empty-space-adaptation",
+      "question": "Проверить адаптацию игры «пустое место»: в EN реплики переданы как “There is nobody in that corner!” / “I am not a nobody! I am your dean!”, чтобы сохранить переход от отсутствия человека к его значимости. Русский авторский текст и изображение сохранены.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Проверить адаптацию игры «пустое место»: в EN реплики переданы как “There is nobody in that corner!” / “I am not a nobody! I am your dean!”, чтобы сохранить переход от отсутствия человека к его значимости. Русский авторский текст и изображение сохранены.",
+        "en": "Review the adaptation of the Russian “empty space” pun as “There is nobody in that corner!” / “I am not a nobody! I am your dean!” This preserves the shift from apparent absence to personal importance; the Russian author text and image are unchanged."
+      }
+    },
+    {
+      "id": "lupanov-portrait-provenance",
+      "question": "Для ретушированного портрета Олега Лупанова (fig-2) указать исходную фотографию, автора или архив, проверяемый публичный источник и правовое основание использования и ретуши.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для ретушированного портрета Олега Лупанова (fig-2) указать исходную фотографию, автора или архив, проверяемый публичный источник и правовое основание использования и ретуши.",
+        "en": "For the retouched portrait of Oleg Lupanov (fig-2), identify the original photograph, its creator or archive, a verifiable public source, and the legal basis for its use and retouching."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
