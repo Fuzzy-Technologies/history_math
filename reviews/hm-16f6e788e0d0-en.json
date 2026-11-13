@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-16f6e788e0d0-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Agree the wording of Poincaré’s contribution to the creation of special relativity and the dates and contents of the ten-volume Course in Mathematical Physics, described as appearing in 1889.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Agree the wording of Poincaré’s contribution to the creation of special relativity and the dates and contents of the ten-volume Course in Mathematical Physics, described as appearing in 1889.",
+        "ru": "Согласовать формулировку вклада Пуанкаре в создание специальной теории относительности и даты и состав десятитомного «Курса математической физики», указанного как вышедший в 1889 году."
+      },
+      "resolution": "The special-relativity wording now describes an important contribution to its development. The bibliography is corrected: the 1889 publication was *Lectures on the Mathematical Theory of Light*, one volume in the *Course in Mathematical Physics* series, not a complete ten-volume work. Checked against the Académie française bibliography and the Henri Poincaré Papers catalogue: https://www.academie-francaise.fr/les-immortels/henri-poincare ; https://henripoincarepapers.univ-nantes.fr/en/bibliohp/index.php?a=on&action=go&jo=Cours+de+physique+math%C3%A9matique"
+    },
+    {
+      "id": "q2",
+      "question": "Clarify the source for the description of an idealist standpoint and subsequent criticism, the historical status of the Nancy university and the precise collected-works information.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the source for the description of an idealist standpoint and subsequent criticism, the historical status of the Nancy university and the precise collected-works information.",
+        "ru": "Уточнить источник характеристики «идеалистических позиций» и последовавшей критики, исторический статус университета в Нанси и точные сведения о собрании трудов."
+      },
+      "resolution": "The evaluative claim about an “idealist standpoint” is replaced with a neutral description of conventionalism. The Bibliothèque nationale de France catalogues the collected works in 11 volumes (Paris, 1928–1956), while Henri Poincaré Papers lists more than 730 bibliographical items. Henri Poincaré University became part of the University of Lorraine in 2012. Sources: https://catalogue.bnf.fr/ark:/12148/cb373821081 ; https://henripoincarepapers.univ-nantes.fr/en/bibliohp/ ; https://fst.univ-lorraine.fr/administration/historique/"
+    },
+    {
+      "id": "q3",
+      "question": "Establish the public original source of the portrait of Henri Poincaré, its photographer or creator, and its license or confirmed public-domain status in both editions.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Establish the public original source of the portrait of Henri Poincaré, its photographer or creator, and its license or confirmed public-domain status in both editions.",
+        "ru": "Установить публичный первоисточник портрета Анри Пуанкаре, фотографа/автора и лицензию либо подтверждённый public-domain status в обеих редакциях."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-16f6e788e0d0",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Согласовать формулировку вклада Пуанкаре в создание специальной теории относительности и даты и состав десятитомного «Курса математической физики», указанного как вышедший в 1889 году.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Формулировка о специальной теории относительности смягчена до важного вклада в её развитие. Исправлена библиография: в 1889 году вышли «Лекции по математической теории света» как один том серии «Курс математической физики», а не весь десятитомник. Проверено по библиографии Académie française и каталогу Henri Poincaré Papers: https://www.academie-francaise.fr/les-immortels/henri-poincare ; https://henripoincarepapers.univ-nantes.fr/en/bibliohp/index.php?a=on&action=go&jo=Cours+de+physique+math%C3%A9matique",
+      "localizations": {
+        "source": "Согласовать формулировку вклада Пуанкаре в создание специальной теории относительности и даты и состав десятитомного «Курса математической физики», указанного как вышедший в 1889 году.",
+        "en": "Agree the wording of Poincaré’s contribution to the creation of special relativity and the dates and contents of the ten-volume Course in Mathematical Physics, described as appearing in 1889."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить источник характеристики «идеалистических позиций» и последовавшей критики, исторический статус университета в Нанси и точные сведения о собрании трудов.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Оценочный оборот об «идеалистических позициях» заменён нейтральным описанием конвенционализма. Каталог Национальной библиотеки Франции фиксирует 11 томов собрания сочинений (Париж, 1928–1956), а Henri Poincaré Papers — более 730 библиографических позиций. Университет Анри Пуанкаре вошёл в Университет Лотарингии в 2012 году. Источники: https://catalogue.bnf.fr/ark:/12148/cb373821081 ; https://henripoincarepapers.univ-nantes.fr/en/bibliohp/ ; https://fst.univ-lorraine.fr/administration/historique/",
+      "localizations": {
+        "source": "Уточнить источник характеристики «идеалистических позиций» и последовавшей критики, исторический статус университета в Нанси и точные сведения о собрании трудов.",
+        "en": "Clarify the source for the description of an idealist standpoint and subsequent criticism, the historical status of the Nancy university and the precise collected-works information."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить публичный первоисточник портрета Анри Пуанкаре, фотографа/автора и лицензию либо подтверждённый public-domain status в обеих редакциях.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить публичный первоисточник портрета Анри Пуанкаре, фотографа/автора и лицензию либо подтверждённый public-domain status в обеих редакциях.",
+        "en": "Establish the public original source of the portrait of Henri Poincaré, its photographer or creator, and its license or confirmed public-domain status in both editions."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
