@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f3793dbe4f8b-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "For the three historical portraits or photographs of Zermelo, identify their creators, original publications or verifiable public catalogue records, and the applicable legal basis or licence. Retouching or colour processing does not create rights in the original; synchronize RU/EN metadata.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the three historical portraits or photographs of Zermelo, identify their creators, original publications or verifiable public catalogue records, and the applicable legal basis or licence. Retouching or colour processing does not create rights in the original; synchronize RU/EN metadata.",
+        "ru": "Для трёх исторических портретов/фотографий Цермело установить авторов, исходные публикации или проверяемые публичные карточки и действительное правовое основание/лицензию. Ретушь или цветная обработка не создаёт прав на оригинал; синхронизировать RU/EN metadata."
+      }
+    },
+    {
+      "id": "zermelo-zfc-wording",
+      "question": "Distinguish Zermelo’s 1908 axiom system, the later ZF system and modern ZFC; do not claim a proof of ZFC’s consistency, and note that the axiom of choice was included in Zermelo’s 1908 system.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Distinguish Zermelo’s 1908 axiom system, the later ZF system and modern ZFC; do not claim a proof of ZFC’s consistency, and note that the axiom of choice was included in Zermelo’s 1908 system.",
+        "ru": "Различить систему аксиом Цермело 1908 года, последующую ZF и современную ZFC; не утверждать доказанную непротиворечивость ZFC и отметить, что аксиома выбора входила в систему Цермело 1908 года."
+      },
+      "resolution": "The wording was corrected: Zermelo’s 1908 system is distinguished from the later ZF and ZFC systems, the axiom of choice is identified as part of the 1908 system, and the claim that ZFC’s consistency has been proved was removed. Verified against the Stanford Encyclopedia of Philosophy."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
