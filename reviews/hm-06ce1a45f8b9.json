@@ -1,0 +1,23 @@
+{
+  "review_version": 1,
+  "article_id": "hm-06ce1a45f8b9",
+  "questions": [
+    {
+      "id": "pythagorean-positive-parameter",
+      "question": "Уточнить условие на параметр m: для невырожденного треугольника с натуральными сторонами требуется нечётное m > 1. При m = 1 исходные формулы дают (1, 0, 1). Численные примеры с 25 и 2025 верны.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Формула и обе языковые версии теперь явно требуют нечётное m > 1."
+    },
+    {
+      "id": "pythagorean-cover-attribution",
+      "question": "Указать, что обложка является производной от Pythagorean.svg на Wikimedia Commons, перечислить участников из карточки файла, отметить изменения и сохранить лицензию CC BY-SA 3.0.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "В обеих редакциях указаны Michael Hardy, Wapcaplet, Steff и Leo2004, источник и лицензия; отмечены изменения цветов, полей холста и растрирование в PNG."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
