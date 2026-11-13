@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-84719a50f1cf-en",
+  "questions": [
+    {
+      "id": "grosseteste-speed-experiment-source",
+      "question": "Please identify the page in Richard W. Southern’s book and the source for the candle-and-mirror story and the line attributed to Grosseteste. The article now explicitly labels the episode as a humorous legend and separates the historical note from the comic invention. A printed source for the legend should be established before publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please identify the page in Richard W. Southern’s book and the source for the candle-and-mirror story and the line attributed to Grosseteste. The article now explicitly labels the episode as a humorous legend and separates the historical note from the comic invention. A printed source for the legend should be established before publication.",
+        "ru": "Уточнить страницу в книге Richard W. Southern и источник истории об измерении скорости света свечами и зеркалами, а также приписанной Гроссетесту реплики. В статье эпизод теперь прямо обозначен как шутливая легенда; историческая справка отделена от комического вымысла. До публикации требуется установить, есть ли у легенды печатный источник."
+      }
+    },
+    {
+      "id": "source-url-and-english-cover",
+      "question": "The preserved date 2025-07-06 needs a verifiable original-publication link (`original_publication.url` and `source_url`); the English version also needs the Russian text embedded in the comic localized.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The preserved date 2025-07-06 needs a verifiable original-publication link (`original_publication.url` and `source_url`); the English version also needs the Russian text embedded in the comic localized.",
+        "ru": "Для сохранённой даты 2025-07-06 нужна проверяемая ссылка на исходную публикацию (`original_publication.url` и `source_url`); английская версия также требует локализации русского текста внутри комикса."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
