@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f8243aa3fd71",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Сверить юбилейную дату «Арифметики»: для первого издания 1703 года материал 2023 года отмечает 320-летие.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Исправлено 220-летие на 320-летие в обеих версиях.",
+      "localizations": {
+        "source": "Сверить юбилейную дату «Арифметики»: для первого издания 1703 года материал 2023 года отмечает 320-летие.",
+        "en": "Check the anniversary of *Arithmetic*: for the 1703 first edition, the 2023 article marks 320 years."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить биографические предания о фамилии и обучении Магницкого, а также формулировку о математической терминологии.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Спорные сведения обозначены как биографическое предание или дискуссионные; абсолютный приоритет терминов заменён проверяемой формулировкой об их употреблении и закреплении в «Арифметике».",
+      "localizations": {
+        "source": "Уточнить биографические предания о фамилии и обучении Магницкого, а также формулировку о математической терминологии.",
+        "en": "Clarify biographical traditions about Magnitsky’s surname and education, and the claim about mathematical terminology."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Укажите проверяемый источник рельефного портрета Магницкого, автора рельефа и фотографии либо учреждение-правообладателя, а также лицензию или иное подтверждённое основание воспроизведения; синхронизируйте атрибуцию в RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Укажите проверяемый источник рельефного портрета Магницкого, автора рельефа и фотографии либо учреждение-правообладателя, а также лицензию или иное подтверждённое основание воспроизведения; синхронизируйте атрибуцию в RU/EN.",
+        "en": "Provide a verifiable source for the relief portrait of Magnitsky, identify the sculptor and photographer or the responsible institution, and document the licence or other confirmed basis for reproduction; keep the attribution synchronized in RU and EN."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
