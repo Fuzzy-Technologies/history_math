@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b28e6968ce51-en",
+  "questions": [
+    {
+      "id": "q2",
+      "question": "Specify the library in the 1691 sentence: this was the Herzog August Library in Wolfenbüttel, held alongside his Hanover post. Without naming the town, the paragraph’s Hanover context can make it sound like the same library. Approve a brief clarification in both versions. Institutional source: https://www.hab.de/leibnizressourcen-digital/ .",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Specify the library in the 1691 sentence: this was the Herzog August Library in Wolfenbüttel, held alongside his Hanover post. Without naming the town, the paragraph’s Hanover context can make it sound like the same library. Approve a brief clarification in both versions. Institutional source: https://www.hab.de/leibnizressourcen-digital/ .",
+        "ru": "Уточнить библиотеку в абзаце о 1691 годе: речь о Герцогской библиотеке Августа в Вольфенбюттеле, которой Лейбниц руководил одновременно с ганноверской службой. Без названия города после начала абзаца о Ганновере можно принять её за ту же библиотеку. Согласовать краткое уточнение в обеих версиях. Первичный институциональный источник: https://www.hab.de/leibnizressourcen-digital/ ."
+      },
+      "resolution": "Both versions now identify the institution as the Herzog August Library in Wolfenbüttel."
+    },
+    {
+      "id": "q3",
+      "question": "Restore a verified public link to the English translation of Explanation of Binary Arithmetic: the source’s UDK-hosted PDF repeatedly returns 404. Its title and content are confirmed by the same host’s indexed record, but a working replacement has not been established. The original URL remains for editorial review; no replacement address is invented and no file is uploaded. https://kastalia.medienhaus.udk-berlin.de/odl/Leibniz.pdf .",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Restore a verified public link to the English translation of Explanation of Binary Arithmetic: the source’s UDK-hosted PDF repeatedly returns 404. Its title and content are confirmed by the same host’s indexed record, but a working replacement has not been established. The original URL remains for editorial review; no replacement address is invented and no file is uploaded. https://kastalia.medienhaus.udk-berlin.de/odl/Leibniz.pdf .",
+        "ru": "Восстановить подтверждённую публичную ссылку на английский перевод Explanation of Binary Arithmetic: исходный PDF на сервере UDK повторно отвечает 404. Название и содержание подтверждаются индексированной записью того же хоста, но действующий адрес копии не установлен. URL сохранён для редакторской проверки, фиктивная замена и загрузка файла не выполнялись. https://kastalia.medienhaus.udk-berlin.de/odl/Leibniz.pdf ."
+      }
+    },
+    {
+      "id": "q4",
+      "question": "For the two portraits of Leibniz after Francke, identify a verifiable original and the applicable legal basis or licence. For the modern calculator replica, provide the photographer, public source and licence; “illustration accompanying the text” does not establish publication rights. Synchronize RU/EN metadata.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the two portraits of Leibniz after Francke, identify a verifiable original and the applicable legal basis or licence. For the modern calculator replica, provide the photographer, public source and licence; “illustration accompanying the text” does not establish publication rights. Synchronize RU/EN metadata.",
+        "ru": "Для двух портретов Лейбница по Франке установить проверяемый оригинал и действительное правовое основание/лицензию. Для современной реплики калькулятора указать автора фотографии, публичный источник и лицензию; формулировка «иллюстрация к материалу» прав не подтверждает. Синхронизировать RU/EN metadata."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
