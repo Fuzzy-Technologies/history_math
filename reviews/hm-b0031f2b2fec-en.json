@@ -1,0 +1,52 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b0031f2b2fec-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the historical name of the Genevan institution and the precise title of Cramer’s appointment.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the historical name of the Genevan institution and the precise title of Cramer’s appointment.",
+        "ru": "Уточнить историческое название женевского учебного заведения и точное наименование должности Крамера."
+      },
+      "resolution": "The Academy of Geneva created a new mathematics chair in 1724 for Cramer and Jean-Louis Calandrini; Cramer held it alone from 1734. https://hls-dhs-dss.ch/de/articles/025878/2005-08-17/"
+    },
+    {
+      "id": "q2",
+      "question": "Clarify the history of the term determinant and the description of Cayley’s later work as following immediately.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the history of the term determinant and the description of Cayley’s later work as following immediately.",
+        "ru": "Уточнить историю термина «определитель» и оценку «сразу же» для последующих работ Кэли."
+      },
+      "resolution": "Clarified: Gauss introduced the word determinant in 1801 in a different sense; its modern use is associated with Cauchy’s 1812 paper. The chronologically misleading claim that Cayley followed immediately has been removed. https://mathshistory.st-andrews.ac.uk/HistTopics/Matrices_and_determinants/"
+    },
+    {
+      "id": "q3",
+      "question": "Verify the dates of the collected works and Bernoulli correspondence; the French title spelling follows the visible 1750 title page.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the dates of the collected works and Bernoulli correspondence; the French title spelling follows the visible 1750 title page.",
+        "ru": "Подтвердить даты многотомных изданий и переписки Бернулли; написание французского заглавия приведено к видимому титулу 1750 года."
+      },
+      "resolution": "Verified: Johann Bernoulli, Opera omnia, 4 volumes (1742); Jacob Bernoulli, Opera, 2 volumes (1744); Leibniz–Johann Bernoulli correspondence, 2 volumes (1745), co-edited with Castillon. https://mathshistory.st-andrews.ac.uk/DSB/Cramer.pdf"
+    },
+    {
+      "id": "q4",
+      "question": "For the portrait of Gabriel Cramer and the title page of the 1750 treatise, provide verifiable public sources, the author or specific edition, and the legal status: link the title page to a digitized copy of that edition and the portrait to its own primary source.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the portrait of Gabriel Cramer and the title page of the 1750 treatise, provide verifiable public sources, the author or specific edition, and the legal status: link the title page to a digitized copy of that edition and the portrait to its own primary source.",
+        "ru": "Для портрета Габриэля Крамера и титульного листа трактата 1750 года указать проверяемые публичные источники, автора или конкретное издание и правовой статус: титульный лист связать с цифровой копией издания, портрет — с отдельным первоисточником."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
