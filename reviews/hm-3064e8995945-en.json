@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-3064e8995945-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Confirm the sources of the opening quotation and the 1946 poem excerpt; review the sense-based translation of all six lines in two stanzas.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the sources of the opening quotation and the 1946 poem excerpt; review the sense-based translation of all six lines in two stanzas.",
+        "ru": "Подтвердить источник вводной цитаты и стихотворного фрагмента 1946 года; согласовать смысловой перевод шести строк с сохранением двух строф."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Verify the specific theorem on dyadic spaces, the formulation of ultrafinitism, the dissertation supervision and the precise Boston University title.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the specific theorem on dyadic spaces, the formulation of ultrafinitism, the dissertation supervision and the precise Boston University title.",
+        "ru": "Сверить конкретную теорему о диадических пространствах и формулировку ультрафинитизма, научное руководство и точный статус в Бостонском университете."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Provide specific historical sources for the persecution chronology, total time in confinement and the priority claim for the first post-war public protest demonstration.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide specific historical sources for the persecution chronology, total time in confinement and the priority claim for the first post-war public protest demonstration.",
+        "ru": "Для хронологии репрессий, общего срока заключения и утверждения о первой послевоенной демонстрации нужны конкретные исторические источники и уточнение рамок приоритета."
+      }
+    },
+    {
+      "id": "q4",
+      "question": "Identify the public source, photographer or creator and legal status of the portrait of Alexander Yesenin-Volpin. Storage in the author’s archive and the phrase “Illustration accompanying the text” do not establish permission for reproduction.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Identify the public source, photographer or creator and legal status of the portrait of Alexander Yesenin-Volpin. Storage in the author’s archive and the phrase “Illustration accompanying the text” do not establish permission for reproduction.",
+        "ru": "Установить публичный первоисточник, фотографа или автора и правовой статус портрета Александра Есенина-Вольпина. Хранение изображения в авторском архиве и формулировка «Иллюстрация к материалу» не подтверждают право воспроизведения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
