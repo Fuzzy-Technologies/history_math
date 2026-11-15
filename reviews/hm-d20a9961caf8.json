@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d20a9961caf8",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить, какой Южный полюс имеется в виду в утверждении об определении географических координат: географический или магнитный. Сверить точные результаты наблюдений и рамки заявленных приоритетов.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Формулировка исправлена по материалам КФУ: Симонов определял координаты кораблей и открытых островов по астрономическим наблюдениям и рассчитал положение Южного магнитного полюса по магнитным данным.",
+      "localizations": {
+        "source": "Уточнить, какой Южный полюс имеется в виду в утверждении об определении географических координат: географический или магнитный. Сверить точные результаты наблюдений и рамки заявленных приоритетов.",
+        "en": "Identify which South Pole is intended in the claim about determining geographical coordinates: the geographical or magnetic pole. Verify the precise observational results and the scope of the priority claims."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Сверить источник высказывания Бартельса о месте Симонова в казанской школе, хронологию магистерской степени и назначений, состав и статус научных обществ. Отдельно проверить заявленное первенство наблюдения Нептуна: [Tatarica](https://tatarica.org/ru/razdely/nauka/personalii/simonov-ivan) подтверждает наблюдения, но не первенство, и приводит иную хронологию обсерватории.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить источник высказывания Бартельса о месте Симонова в казанской школе, хронологию магистерской степени и назначений, состав и статус научных обществ. Отдельно проверить заявленное первенство наблюдения Нептуна: [Tatarica](https://tatarica.org/ru/razdely/nauka/personalii/simonov-ivan) подтверждает наблюдения, но не первенство, и приводит иную хронологию обсерватории.",
+        "en": "Verify Bartels’s assessment of Simonov’s place in the Kazan school, the degree and appointment chronology, and the scientific-society memberships. Separately verify the claimed priority for observing Neptune: [Tatarica](https://tatarica.org/ru/razdely/nauka/personalii/simonov-ivan) confirms observations but not priority and gives a different observatory chronology."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Сверить точные названия публикаций Симонова и названия антарктических географических объектов.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить точные названия публикаций Симонова и названия антарктических географических объектов.",
+        "en": "Verify the exact titles of Simonov’s publications and the names of the Antarctic geographical features."
+      }
+    },
+    {
+      "id": "simonov-birthplace",
+      "question": "Уточнить место рождения Симонова. [Музей КФУ](https://kpfu.ru/imoiv/etnograficheskij-muzej/personalii/simonov-ivan-mihajlovich) указывает Астрахань, а [исследование О. Пантелеевой](https://www.echovek.ru/ru/article/o-panteleeva-rektor-kazanskogo-universiteta-pokoritel-yuzhnogo-polyusa-i-m-simonov-stranicy) — Гороховец. Нужен документ, позволяющий выбрать вариант, или оговорка о расхождении в обеих версиях.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить место рождения Симонова. [Музей КФУ](https://kpfu.ru/imoiv/etnograficheskij-muzej/personalii/simonov-ivan-mihajlovich) указывает Астрахань, а [исследование О. Пантелеевой](https://www.echovek.ru/ru/article/o-panteleeva-rektor-kazanskogo-universiteta-pokoritel-yuzhnogo-polyusa-i-m-simonov-stranicy) — Гороховец. Нужен документ, позволяющий выбрать вариант, или оговорка о расхождении в обеих версиях.",
+        "en": "Clarify Simonov’s birthplace. The [Kazan University museum](https://kpfu.ru/imoiv/etnograficheskij-muzej/personalii/simonov-ivan-mihajlovich) gives Astrakhan, while [O. Panteleeva’s study](https://www.echovek.ru/ru/article/o-panteleeva-rektor-kazanskogo-universiteta-pokoritel-yuzhnogo-polyusa-i-m-simonov-stranicy) gives Gorokhovets. Cite a document that resolves the discrepancy or acknowledge both accounts in both editions."
+      }
+    },
+    {
+      "id": "q4",
+      "question": "Установить конкретный публичный первоисточник, автора портрета И. М. Симонова (если известен) и лицензию либо подтверждённый статус общественного достояния. «Авторский архив» и «Иллюстрация к материалу» не устанавливают происхождение изображения и право публикации.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить конкретный публичный первоисточник, автора портрета И. М. Симонова (если известен) и лицензию либо подтверждённый статус общественного достояния. «Авторский архив» и «Иллюстрация к материалу» не устанавливают происхождение изображения и право публикации.",
+        "en": "Identify the specific public source, creator of the portrait of I. M. Simonov (if known), and its licence or confirmed public-domain status. “Author’s archive” and “Illustration accompanying the text” do not establish provenance or publication rights."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
