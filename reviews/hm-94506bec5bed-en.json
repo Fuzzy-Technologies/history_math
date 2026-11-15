@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-94506bec5bed-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the original source of the Felix Klein quotation, the statement about graduation in theology and the historical school names; review the translated quotation and title of the 1844 work.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the original source of the Felix Klein quotation, the statement about graduation in theology and the historical school names; review the translated quotation and title of the 1844 work.",
+        "ru": "Сверить первоисточник цитаты Феликса Клейна, сведения об окончании факультета теологии и исторические названия учебных заведений; согласовать перевод цитаты и названия труда 1844 года."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Establish the original source, creator or publisher, and a verified basis for reproducing the historical portrait of Grassmann and the cover of the 2008 Nauka edition; authorship of the text does not extend to third-party images.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Establish the original source, creator or publisher, and a verified basis for reproducing the historical portrait of Grassmann and the cover of the 2008 Nauka edition; authorship of the text does not extend to third-party images.",
+        "ru": "Установить для исторического портрета Грассмана и обложки издания «Науки» 2008 года первоисточник, автора/издателя и подтверждённое основание воспроизведения; авторство текста не распространяется на сторонние изображения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
