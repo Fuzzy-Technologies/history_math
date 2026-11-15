@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2753c54acafe-en",
+  "questions": [
+    {
+      "id": "telegram-source",
+      "question": "Please verify and correct the story’s origin. Dirichlet’s son Walter was born on 2 July 1833; in a published letter the child’s grandfather Abraham Mendelssohn Bartholdy complained that Dirichlet had written nothing and could at least have sent “2 + 1 = 3”. This source supports neither a telegram nor a message to Dirichlet’s own father.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please verify and correct the story’s origin. Dirichlet’s son Walter was born on 2 July 1833; in a published letter the child’s grandfather Abraham Mendelssohn Bartholdy complained that Dirichlet had written nothing and could at least have sent “2 + 1 = 3”. This source supports neither a telegram nor a message to Dirichlet’s own father.",
+        "ru": "Проверить и исправить происхождение сюжета. Сын Дирихле Вальтер родился 2 июля 1833 года; в опубликованном письме его дед Абрахам Мендельсон-Бартольди упрекнул Дирихле, что тот не написал ни слова и мог бы хотя бы сообщить «2 + 1 = 3». Этот источник не подтверждает ни телеграмму, ни сообщение собственному отцу Дирихле."
+      }
+    },
+    {
+      "id": "dirichlet-portrait-provenance",
+      "question": "The historical drawn portrait of Dirichlet (`fig-2`) needs its actual creator, a public source and a confirmed rights basis; a third-party portrait must not be described as an illustration from the author’s archive without evidence.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The historical drawn portrait of Dirichlet (`fig-2`) needs its actual creator, a public source and a confirmed rights basis; a third-party portrait must not be described as an illustration from the author’s archive without evidence.",
+        "ru": "Для исторического рисованного портрета Дирихле (`fig-2`) нужны фактический создатель, публичный источник и подтверждённое правовое основание; сторонний портрет нельзя обозначать как иллюстрацию из авторского архива без доказательства."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
