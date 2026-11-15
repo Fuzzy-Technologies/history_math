@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-055f3023b07b",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Сверить второй год ареста: в тексте 1903, а на публикуемом личном листке дата читается как 1902. Подтвердить чтение рукописи и согласовать обе версии; текст и сканы пока сохранены без фактического исправления.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить второй год ареста: в тексте 1903, а на публикуемом личном листке дата читается как 1902. Подтвердить чтение рукописи и согласовать обе версии; текст и сканы пока сохранены без фактического исправления.",
+        "en": "Verify the second arrest year: the post gives 1903, whereas the reproduced personnel form appears to read 1902. Confirm the handwriting and approve consistent wording in both languages; text and scans remain unchanged pending that decision."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Подтвердить публичную ссылку и реквизиты личного дела РАН: https://www.ras.ru/namorozovarchive/7_actview.aspx?id=4406 .",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Проверено 7 ноября 2026 года: публичная страница РАН доступна по указанному адресу и содержит дело № 139 «Морозов Николай Александрович. Мрочек, Вацлав Ромуальдович. Материалы личного дела», опись 05 и изображения 37 страниц.",
+      "localizations": {
+        "source": "Подтвердить публичную ссылку и реквизиты личного дела РАН: https://www.ras.ru/namorozovarchive/7_actview.aspx?id=4406 .",
+        "en": "Confirm the public link and catalogue details for the RAS personal file: https://www.ras.ru/namorozovarchive/7_actview.aspx?id=4406 ."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Уточнить исторический статус и полное название «университета Истории науки и техники» и согласовать английские переводы учреждений и названий работ. Не приписывать этому названию современный статус университета без проверки.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить исторический статус и полное название «университета Истории науки и техники» и согласовать английские переводы учреждений и названий работ. Не приписывать этому названию современный статус университета без проверки.",
+        "en": "Clarify the historical status and full name of the University of the History of Science and Technology and review the English institution and publication titles. Do not infer modern university status from the name alone."
+      }
+    },
+    {
+      "id": "q4",
+      "question": "Для материала рубрики «Персоналии» нужна фактическая обложка с портретом Вацлава Мрочека: текущий cover_image ведёт на обложку книги. Укажите проверяемый публичный источник и действительное правовое основание для портрета; владение копией не создаёт авторских прав на изображение.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для материала рубрики «Персоналии» нужна фактическая обложка с портретом Вацлава Мрочека: текущий cover_image ведёт на обложку книги. Укажите проверяемый публичный источник и действительное правовое основание для портрета; владение копией не создаёт авторских прав на изображение.",
+        "en": "The People article needs an actual cover portrait of Wacław Mroczek: the current cover_image points to a book cover. Provide a verifiable public source and a valid rights basis for the portrait; possession of a copy does not create copyright in the image."
+      }
+    },
+    {
+      "id": "q5",
+      "question": "Для обложки книги и сканов личного дела указать реальных авторов или учреждение, публичные источники и правовое основание публикации. Ссылка на Архив РАН подтверждает происхождение дела, но «копия из авторского архива» не является лицензией и не превращает изображения в авторские.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для обложки книги и сканов личного дела указать реальных авторов или учреждение, публичные источники и правовое основание публикации. Ссылка на Архив РАН подтверждает происхождение дела, но «копия из авторского архива» не является лицензией и не превращает изображения в авторские.",
+        "en": "For the book cover and personal-file scans, identify the actual creators or institution, public sources and legal basis for publication. The RAS Archive link establishes the file’s provenance, but “copy from the author’s archive” is not a licence and does not make the images author-created."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
