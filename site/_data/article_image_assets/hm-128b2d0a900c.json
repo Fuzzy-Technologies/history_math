@@ -1,0 +1,52 @@
+{
+  "/assets/images/hm-128b2d0a900c/figure-01.png": {
+    "sha256": "f33aced89bdedb40952c10bd9d9eff759ea0ac047bd8578f92582f1d0605880a",
+    "width": 150,
+    "height": 200,
+    "bytes": 51536,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-128b2d0a900c/figure-01.png-150.webp",
+        "width": 150,
+        "height": 200,
+        "sha256": "5185e27631cccd4a662072cea6cdf9d4d146b5631a703f9385b1211ebc329984",
+        "bytes": 34530
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-f/hm-128b2d0a900c-figure-01-f33aced89bdedb40952c10bd9d9eff759ea0ac047bd8578f92582f1d0605880a.png",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/710927708",
+      "asset_id": 710927708,
+      "release_tag": "article-originals-f",
+      "sha256": "f33aced89bdedb40952c10bd9d9eff759ea0ac047bd8578f92582f1d0605880a",
+      "bytes": 51536
+    }
+  },
+  "/assets/images/hm-128b2d0a900c/figure-02.jpg": {
+    "sha256": "54f2b68a47ed00dc3c37ac291b84e14795ca8602923d51ce3bc4941e8aaf4842",
+    "width": 200,
+    "height": 322,
+    "bytes": 32938,
+    "logo": false,
+    "variants": [
+      {
+        "path": "/assets/images/previews/hm-128b2d0a900c/figure-02.jpg-200.webp",
+        "width": 200,
+        "height": 322,
+        "sha256": "072db2275a365e1f68b79967edae40df102c938a54530eabfcb4d37813defcdb",
+        "bytes": 26764
+      }
+    ],
+    "external_original": {
+      "storage": "github-release",
+      "url": "https://github.com/Fuzzy-Technologies/history_math/releases/download/article-originals-5/hm-128b2d0a900c-figure-02-54f2b68a47ed00dc3c37ac291b84e14795ca8602923d51ce3bc4941e8aaf4842.jpg",
+      "api_url": "https://api.github.com/repos/Fuzzy-Technologies/history_math/releases/assets/710928013",
+      "asset_id": 710928013,
+      "release_tag": "article-originals-5",
+      "sha256": "54f2b68a47ed00dc3c37ac291b84e14795ca8602923d51ce3bc4941e8aaf4842",
+      "bytes": 32938
+    }
+  }
+}
