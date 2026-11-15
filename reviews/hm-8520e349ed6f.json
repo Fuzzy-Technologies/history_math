@@ -1,0 +1,51 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8520e349ed6f",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить, какое учреждение имеется в виду в абзаце «С преобразованием его в 1823 году»: предыдущий абзац относится к возобновлённому в 1829 году Главному педагогическому институту, тогда как далее речь о гимназии. Согласовать RU/EN после проверки истории учреждений.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "По документам ЦГИА Санкт-Петербурга уточнено, что Учительский институт был объединён с гимназией в 1823 году, а название Третья Санкт-Петербургская гимназия закреплено в 1830 году.",
+      "localizations": {
+        "source": "Уточнить, какое учреждение имеется в виду в абзаце «С преобразованием его в 1823 году»: предыдущий абзац относится к возобновлённому в 1829 году Главному педагогическому институту, тогда как далее речь о гимназии. Согласовать RU/EN после проверки истории учреждений.",
+        "en": "Identify the institution referred to as reorganized in 1823: the preceding paragraph concerns the Main Pedagogical Institute reopened in 1829, while the following history concerns the gymnasium. Agree both editions after checking institutional history."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Проверить рамки приоритета первой примерной программы Буссе: в статье она названа первой примерной программой по математике. Уточнить, имеется ли в виду первая общая программа для всех российских гимназий.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Абсолютный приоритет снят: в обеих версиях говорится, что Буссе составил примерную программу по математике, без утверждения, что она была первой.",
+      "localizations": {
+        "source": "Проверить рамки приоритета первой примерной программы Буссе: в статье она названа первой примерной программой по математике. Уточнить, имеется ли в виду первая общая программа для всех российских гимназий.",
+        "en": "Verify the scope of the priority claim for Busse’s model curriculum: the article calls it the first model mathematics curriculum. Clarify whether this means the first common curriculum for all Russian gymnasiums."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить публичный первоисточник, автора (если известен) и правовой статус портрета Фёдора Буссе. Формулировка «Иллюстрация к материалу» не подтверждает происхождение изображения или право его воспроизведения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить публичный первоисточник, автора (если известен) и правовой статус портрета Фёдора Буссе. Формулировка «Иллюстрация к материалу» не подтверждает происхождение изображения или право его воспроизведения.",
+        "en": "Identify the public source, creator (if known) and legal status of the portrait of Fyodor Busse. “Illustration accompanying the text” does not establish the image’s provenance or permission for reproduction."
+      }
+    },
+    {
+      "id": "posthumous-1874-edition",
+      "question": "Проверить книгу Буссе, указанную в перечне трудов под 1874 годом при смерти автора в 1859 году: установить, является ли это посмертным изданием или переизданием, и привести исходный год и редакцию.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Проверить книгу Буссе, указанную в перечне трудов под 1874 годом при смерти автора в 1859 году: установить, является ли это посмертным изданием или переизданием, и привести исходный год и редакцию.",
+        "en": "Verify the Busse book listed as 1874 although the author died in 1859: establish whether this is a posthumous edition or reprint and give the original year and edition."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
