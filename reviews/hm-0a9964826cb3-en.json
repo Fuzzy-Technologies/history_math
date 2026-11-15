@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0a9964826cb3-en",
+  "questions": [
+    {
+      "id": "missing-humor-cover",
+      "question": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+        "ru": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку."
+      }
+    },
+    {
+      "id": "cauchy-anecdote-details",
+      "question": "Clarify the pupil’s identity, the setting and the theorem in the Cauchy anecdote.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the pupil’s identity, the setting and the theorem in the Cauchy anecdote.",
+        "ru": "Уточнить личность ученика, место и содержание теоремы в анекдоте о Коши."
+      },
+      "resolution": "The Académie française speech identifies the Duke of Bordeaux, Prague around 1833, and the theorem about an elliptical section of a cone.",
+      "evidence_url": "https://www.academie-francaise.fr/reponse-au-discours-de-reception-de-emile-picard"
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Provide a public link to the original publication confirming the date 30 June 2024; the address must not be guessed.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide a public link to the original publication confirming the date 30 June 2024; the address must not be guessed.",
+        "ru": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 30.06.2024; адрес нельзя восстанавливать предположительно."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
