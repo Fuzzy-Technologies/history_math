@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-9136ab162a5d",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Подтвердить первоисточник цитаты «МГУ — это моя жизнь, это мой дом» и согласовать сохранение юбилейных оценок и выражений «по сей день» в историческом очерке 2024 года.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подтвердить первоисточник цитаты «МГУ — это моя жизнь, это мой дом» и согласовать сохранение юбилейных оценок и выражений «по сей день» в историческом очерке 2024 года.",
+        "en": "Confirm the original source of the MSU quotation and the treatment of anniversary assessments and present-tense expressions in this historical 2024 account."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Для утверждения о первом сквозном моделировании аэрокосмического полёта и удвоении факультетов и кампуса нужны конкретные источники и временные рамки. Согласовать официальные английские названия факультетов и совместного университета.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для утверждения о первом сквозном моделировании аэрокосмического полёта и удвоении факультетов и кампуса нужны конкретные источники и временные рамки. Согласовать официальные английские названия факультетов и совместного университета.",
+        "en": "Provide specific sources and time frames for the first end-to-end flight simulation and the doubling of faculties and campus; confirm official English faculty and joint-university names."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Согласовать географическую группировку филиалов в исходном перечне, включая Севастополь, с различием международно признанных границ и фактического административного контроля. Подтверждённой ссылки на Telegram-пост нет.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Согласовать географическую группировку филиалов в исходном перечне, включая Севастополь, с различием международно признанных границ и фактического административного контроля. Подтверждённой ссылки на Telegram-пост нет.",
+        "en": "Review the geographical grouping of branches in the source list, including Sevastopol, distinguishing internationally recognized boundaries from actual administrative control. No confirmed Telegram-post URL is present."
+      }
+    },
+    {
+      "id": "q4",
+      "question": "Портрет Виктора Садовничего не атрибутирован: «Иллюстрация к материалу» не устанавливает происхождение и право публикации. Указать конкретный публичный источник, фотографа или правообладателя и лицензию либо разрешение в обеих редакциях.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Портрет Виктора Садовничего не атрибутирован: «Иллюстрация к материалу» не устанавливает происхождение и право публикации. Указать конкретный публичный источник, фотографа или правообладателя и лицензию либо разрешение в обеих редакциях.",
+        "en": "The portrait of Viktor Sadovnichy is unattributed: an illustration accompanying the text does not establish provenance or publication rights. Identify a specific public source, photographer or rights holder, and a licence or permission in both editions."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
