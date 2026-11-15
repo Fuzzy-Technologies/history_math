@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c36e72edd755-en",
+  "questions": [
+    {
+      "id": "required-joke-cover",
+      "question": "Add the required cover image for the Mathematicians Joke card. The source post had no illustration, and both editions currently have an empty figures list.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Add the required cover image for the Mathematicians Joke card. The source post had no illustration, and both editions currently have an empty figures list.",
+        "ru": "Добавить обязательную обложку для карточки рубрики «Математики шутят». В исходном посте иллюстрации не было, а в обеих версиях список figures сейчас пуст."
+      }
+    },
+    {
+      "id": "original-authorship-sergey-fedin",
+      "question": "Confirm original authorship or present both jokes as adaptations/quotations of Sergei Fedin with a public source and legal basis: both wordings appeared in the book Mathematicians Joke Too no later than 2009.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm original authorship or present both jokes as adaptations/quotations of Sergei Fedin with a public source and legal basis: both wordings appeared in the book Mathematicians Joke Too no later than 2009.",
+        "ru": "Подтвердить оригинальное авторство либо оформить обе шутки как адаптацию/цитирование Сергея Федина с публичным источником и правовым основанием: обе формулировки опубликованы в книге «Математики тоже шутят» не позднее 2009 года."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
