@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c4593d14da91",
+  "questions": [
+    {
+      "id": "cover-formula-notation",
+      "question": "На обложке запись на доске читается как «180°π», без знака равенства или другого разделения. Уточнить замысел и заменить или исправить обложку так, чтобы математическая запись была однозначной.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "На обложке запись на доске читается как «180°π», без знака равенства или другого разделения. Уточнить замысел и заменить или исправить обложку так, чтобы математическая запись была однозначной.",
+        "en": "On the cover, the board reads as “180°π”, without an equals sign or other separator. Confirm the intended expression and replace or correct the cover so that the mathematical notation is unambiguous."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
