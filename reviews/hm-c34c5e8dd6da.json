@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c34c5e8dd6da",
+  "questions": [
+    {
+      "id": "english-cover-localization",
+      "question": "Общая обложка содержит только русские реплики «Понадеялся на судьбу…», «Всё рассчитал!» и «В знаке ошибся…». Для английской редакции нужна локализованная обложка либо явное редакторское решение оставить русскую.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Общая обложка содержит только русские реплики «Понадеялся на судьбу…», «Всё рассчитал!» и «В знаке ошибся…». Для английской редакции нужна локализованная обложка либо явное редакторское решение оставить русскую.",
+        "en": "The shared cover contains only Russian dialogue (“Понадеялся на судьбу…”, “Всё рассчитал!”, “В знаке ошибся…”). The English edition needs a localized cover, or an explicit editorial decision to retain the Russian one."
+      }
+    },
+    {
+      "id": "source-authorship-attribution",
+      "question": "Текст близко следует анекдоту № 23 С. Н. Федина, однако авторство и rights_basis целиком отданы Мансуру Гильмуллину. Нужно явно развести авторство исходного текста и вклад Мансура — адаптацию и иллюстрацию.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Текст близко следует анекдоту № 23 С. Н. Федина, однако авторство и rights_basis целиком отданы Мансуру Гильмуллину. Нужно явно развести авторство исходного текста и вклад Мансура — адаптацию и иллюстрацию.",
+        "en": "The text closely follows S. N. Fedin’s anecdote no. 23, yet authorship and rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the source text’s authorship from Mansur’s adaptation and illustration work."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
