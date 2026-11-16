@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-3d81f46a1fa8-en",
+  "questions": [
+    {
+      "id": "alcuin-manuscript-and-images",
+      "question": "Clarify that manuscript Vat. Reg. lat. 309 preserves 21 problems, while the 56-problem corpus is reconstructed from several manuscripts; for the Alcuin engraving and the second illustration, provide the creators, verifiable public sources and rights basis.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify that manuscript Vat. Reg. lat. 309 preserves 21 problems, while the 56-problem corpus is reconstructed from several manuscripts; for the Alcuin engraving and the second illustration, provide the creators, verifiable public sources and rights basis.",
+        "ru": "Уточнить, что рукопись Vat. Reg. lat. 309 сохраняет 21 задачу, тогда как корпус из 56 задач реконструируется по нескольким рукописям; для гравюры Алкуина и второй иллюстрации указать создателей, проверяемые публичные источники и правовое основание."
+      }
+    },
+    {
+      "id": "source-authorship-attribution",
+      "question": "The article reproduces two problems from the corpus attributed to Alcuin, yet authorship and the root rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the traditional attribution of the source problems from Mansur’s adaptation, translation, and editing.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The article reproduces two problems from the corpus attributed to Alcuin, yet authorship and the root rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the traditional attribution of the source problems from Mansur’s adaptation, translation, and editing.",
+        "ru": "Материал воспроизводит две задачи из приписываемого Алкуину корпуса, но авторство и корневой rights_basis целиком отданы Мансуру Гильмуллину. Нужно отделить традиционную атрибуцию исходных задач от вклада Мансура — адаптации, перевода и редакции."
+      }
+    },
+    {
+      "id": "medieval-scholars-scope",
+      "question": "The claim “Almost all scholars in medieval Europe were religious figures” is too broad and unsupported. Narrow it, for example to many scholars of early medieval Latin Europe, or provide a reliable source.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The claim “Almost all scholars in medieval Europe were religious figures” is too broad and unsupported. Narrow it, for example to many scholars of early medieval Latin Europe, or provide a reliable source.",
+        "ru": "Утверждение «Почти все учёные средневековой Европы были религиозными деятелями» слишком широко и не подтверждено. Нужно сузить его, например до многих учёных раннесредневековой латинской Европы, либо дать надёжный источник."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
