@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6a3b55929447-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Provide a verifiable source for the portrait of Lagrange, identify the artist and date where known, and document the licence or confirmed public-domain status; authorship of the text does not extend to a third-party image.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide a verifiable source for the portrait of Lagrange, identify the artist and date where known, and document the licence or confirmed public-domain status; authorship of the text does not extend to a third-party image.",
+        "ru": "Укажите проверяемый первоисточник портрета Лагранжа, художника и дату создания (если известны), а также лицензию либо подтверждённый статус общественного достояния; авторство текста не распространяется на стороннее изображение."
+      }
+    },
+    {
+      "id": "numerical-equations-publication-date",
+      "question": "Clarify whether 1767 is the publication year of “On the Solution of Numerical Equations”.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Clarified: the paper belonged to the Academy’s 1767 volume but was published in 1769. Source: https://archive.numdam.org/articles/10.24033/rhm.69/",
+      "localizations": {
+        "source": "Clarify whether 1767 is the publication year of “On the Solution of Numerical Equations”.",
+        "ru": "Уточнить, означает ли дата 1767 год публикации работы «О решении численных уравнений»."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
