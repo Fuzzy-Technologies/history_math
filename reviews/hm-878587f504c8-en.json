@@ -21,6 +21,16 @@
         "source": "Establish the actual public source, photographer or publisher, and legal basis for the portrait of Vasily Prochuhaev and the cover of his book; archival storage does not make third-party images author-created, and the Meshok watermark on the cover requires the actual source of that copy to be identified.",
         "ru": "Установить для портрета Василия Прочухаева и обложки его книги реальный публичный источник, фотографа/издателя и правовое основание; архивное хранение не делает сторонние изображения авторскими, а водяной знак «Мешок» на обложке требует указать фактический источник копии."
       }
+    },
+    {
+      "id": "candidate-degree-field",
+      "question": "Verify the exact field of Vasily Prochuhaev’s Candidate degree from a primary or archival record. Moscow Pedagogical State University calls him a Candidate of Physical and Mathematical Sciences, while Mathedu.Ru describes the 1935 dissertation as a Candidate dissertation in pedagogical sciences. Synchronize the confirmed degree in RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Verify the exact field of Vasily Prochuhaev’s Candidate degree from a primary or archival record. Moscow Pedagogical State University calls him a Candidate of Physical and Mathematical Sciences, while Mathedu.Ru describes the 1935 dissertation as a Candidate dissertation in pedagogical sciences. Synchronize the confirmed degree in RU/EN.",
+        "ru": "Уточнить точную отрасль кандидатской степени Василия Прочухаева по первичному или архивному документу. МПГУ называет его кандидатом физико-математических наук, а Mathedu.Ru описывает диссертацию 1935 года как кандидатскую по педагогическим наукам. Синхронизировать подтверждённую степень в RU/EN."
+      }
     }
   ],
   "approval": {
