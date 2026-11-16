@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8f9635de3b95",
+  "questions": [
+    {
+      "id": "lupanov-empty-space-adaptation",
+      "question": "Проверить адаптацию игры «пустое место»: в EN реплики переданы как “There is nobody in that corner!” / “I am not a nobody! I am your dean!”, чтобы сохранить переход от отсутствия человека к его значимости. Русский авторский текст и изображение сохранены.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Проверить адаптацию игры «пустое место»: в EN реплики переданы как “There is nobody in that corner!” / “I am not a nobody! I am your dean!”, чтобы сохранить переход от отсутствия человека к его значимости. Русский авторский текст и изображение сохранены.",
+        "en": "Review the adaptation of the Russian “empty space” pun as “There is nobody in that corner!” / “I am not a nobody! I am your dean!” This preserves the shift from apparent absence to personal importance; the Russian author text and image are unchanged."
+      }
+    },
+    {
+      "id": "lupanov-portrait-provenance",
+      "question": "Для ретушированного портрета Олега Лупанова (fig-2) указать исходную фотографию, автора или архив, проверяемый публичный источник и правовое основание использования и ретуши.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для ретушированного портрета Олега Лупанова (fig-2) указать исходную фотографию, автора или архив, проверяемый публичный источник и правовое основание использования и ретуши.",
+        "en": "For the retouched portrait of Oleg Lupanov (fig-2), identify the original photograph, its creator or archive, a verifiable public source, and the legal basis for its use and retouching."
+      }
+    },
+    {
+      "id": "lupanov-anecdote-authorship",
+      "question": "Подтвердить оригинальное авторство анекдота либо оформить материал как источниковую или анонимную адаптацию: сам материал указывает, что анекдот публично известен как минимум с 25.07.1998, поэтому текущие authors и rights_basis не могут без доказательства представлять его как оригинал.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подтвердить оригинальное авторство анекдота либо оформить материал как источниковую или анонимную адаптацию: сам материал указывает, что анекдот публично известен как минимум с 25.07.1998, поэтому текущие authors и rights_basis не могут без доказательства представлять его как оригинал.",
+        "en": "Confirm original authorship of the anecdote, or present the material as a sourced or anonymous adaptation: the article itself shows that the anecdote has been publicly recorded since at least 25 July 1998, so the current authors and rights_basis must not represent it as an original work without evidence."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
