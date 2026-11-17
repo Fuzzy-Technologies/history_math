@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-83071b9e1d76-en",
+  "questions": [
+    {
+      "id": "billiards-cover-rights",
+      "question": "For Guy Buffet’s painting Billiards, identify the actual artist, a verifiable public source, and a valid permission or licence; storing a copy in the author’s archive is not a rights basis.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For Guy Buffet’s painting Billiards, identify the actual artist, a verifiable public source, and a valid permission or licence; storing a copy in the author’s archive is not a rights basis.",
+        "ru": "Указать для картины Ги Бюффе «Billiards» реального автора, проверяемый публичный источник и действительное разрешение или лицензию; хранение копии в авторском архиве не является правовым основанием."
+      }
+    },
+    {
+      "id": "source-authorship-attribution",
+      "question": "The source attributes the problem to Sam Loyd, yet authorship and the root rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the original authorship from Mansur’s adaptation, translation, and editing.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The source attributes the problem to Sam Loyd, yet authorship and the root rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the original authorship from Mansur’s adaptation, translation, and editing.",
+        "ru": "Задача приписана в источнике Сэму Лойду, но авторство и корневой rights_basis целиком отданы Мансуру Гильмуллину. Нужно разделить авторство оригинала и вклад Мансура — адаптацию, перевод и редакцию."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
