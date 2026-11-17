@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-bfaf5e7e84a6",
+  "questions": [
+    {
+      "id": "boole-distributivity-wording",
+      "question": "В примечании вслед за MacTutor https://mathshistory.st-andrews.ac.uk/Biographies/Boole/ сказано, что Буль был одним из первых, кто исследовал основные свойства чисел, например дистрибутивность. Редактору уточнить, нужна ли формулировка об абстрактном исследовании алгебраических законов, чтобы фраза не читалась как приписывание Булю открытия дистрибутивного закона арифметики.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "В примечании вслед за MacTutor https://mathshistory.st-andrews.ac.uk/Biographies/Boole/ сказано, что Буль был одним из первых, кто исследовал основные свойства чисел, например дистрибутивность. Редактору уточнить, нужна ли формулировка об абстрактном исследовании алгебраических законов, чтобы фраза не читалась как приписывание Булю открытия дистрибутивного закона арифметики.",
+        "en": "Following MacTutor https://mathshistory.st-andrews.ac.uk/Biographies/Boole/, the note says that Boole was among the first to investigate basic properties of numbers, such as distributivity. Please decide whether to specify the abstract study of algebraic laws, so the phrase is not read as crediting him with discovering the distributive law of arithmetic."
+      },
+      "resolution": "Формулировка уточнена по второй главе «Законов мышления» Буля (1854). Речь о применении дистрибутивности и других алгебраических законов к символам логики. https://www.gutenberg.org/ebooks/15114"
+    },
+    {
+      "id": "boole-images-provenance",
+      "question": "Для fig-1–fig-3 укажите точные публичные источники, создателей и правовое основание использования. Для составной обложки fig-1 установите автора или исходные произведения; для fig-3 укажите архивную запись UCC BP/1/356; для ретушированного fig-2 — исходное изображение и его автора.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для fig-1–fig-3 укажите точные публичные источники, создателей и правовое основание использования. Для составной обложки fig-1 установите автора или исходные произведения; для fig-3 укажите архивную запись UCC BP/1/356; для ретушированного fig-2 — исходное изображение и его автора.",
+        "en": "For fig-1 through fig-3, provide exact public sources, creators, and the legal basis for use. For the composite cover fig-1, identify its creator or source works; for fig-3, cite UCC archival record BP/1/356; for the retouched fig-2, identify the underlying image and its creator."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
