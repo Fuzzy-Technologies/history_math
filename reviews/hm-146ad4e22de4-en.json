@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-146ad4e22de4-en",
+  "questions": [
+    {
+      "id": "figure-provenance",
+      "question": "Confirm that the selected file is a reproduction of Vasily Perov’s Hunters at Rest (1871) and that the Gallerix link corresponds to this exact file. The artist, title, date, museum, public source and public-domain basis have been moved into the figure metadata in both editions.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Confirm that the selected file is a reproduction of Vasily Perov’s Hunters at Rest (1871) and that the Gallerix link corresponds to this exact file. The artist, title, date, museum, public source and public-domain basis have been moved into the figure metadata in both editions.",
+        "ru": "Подтвердить, что выбранный файл является репродукцией картины В. Г. Перова «Охотники на привале» (1871) и что ссылка Gallerix соответствует именно этому файлу. Автор, название, дата, музей, публичный источник и основание общественного достояния перенесены в метаданные обеих редакций."
+      },
+      "resolution": "The file was visually checked against the reproduction on the cited Gallerix page; artist, title, 1871 date and Tretyakov Gallery match."
+    },
+    {
+      "id": "equal-portion-value",
+      "question": "The statement does not establish that the five dishes have equal value, yet the solution divides the total cost equally by five. State that these are five equal-value portions or justify their equal value.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The statement does not establish that the five dishes have equal value, yet the solution divides the total cost equally by five. State that these are five equal-value portions or justify their equal value.",
+        "ru": "Условие не устанавливает равноценность пяти кушаний, однако решение делит общую стоимость поровну на пять. Нужно явно указать пять равноценных порций либо обосновать равную стоимость."
+      }
+    },
+    {
+      "id": "source-authorship-attribution",
+      "question": "The text closely reproduces the problem by Amenitsky and Sakharov, yet authorship and the root rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the original authorship from Mansur’s adaptation and editing.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The text closely reproduces the problem by Amenitsky and Sakharov, yet authorship and the root rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the original authorship from Mansur’s adaptation and editing.",
+        "ru": "Текст близко воспроизводит задачу Аменицкого и Сахарова, но авторство и корневой rights_basis целиком отданы Мансуру Гильмуллину. Нужно разделить авторство оригинала и вклад Мансура — адаптацию и редакцию."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
