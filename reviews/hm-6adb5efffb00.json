@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6adb5efffb00",
+  "questions": [
+    {
+      "id": "cucumbers-original-jir-issue",
+      "question": "Установить библиографию перепечатки в The Journal of Irreproducible Results и её связь с версией Эверетта Д. Эдингтона, которую Дж. У. Кузма приводит со ссылкой на Cyanograms.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить библиографию перепечатки в The Journal of Irreproducible Results и её связь с версией Эверетта Д. Эдингтона, которую Дж. У. Кузма приводит со ссылкой на Cyanograms.",
+        "en": "Identify the reprint in The Journal of Irreproducible Results and establish how it relates to Everett D. Edington’s version, which Jan W. Kuzma reprints with credit to Cyanograms."
+      }
+    },
+    {
+      "id": "cucumbers-en-cover-language",
+      "question": "Для английской редакции согласовать обложки: обе иллюстрации содержат русский заголовок, а английские alt-тексты передают его как английский. Либо подготовить англоязычные варианты без изменения смысла и композиции, либо явно описать русский текст в alt и подписи.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для английской редакции согласовать обложки: обе иллюстрации содержат русский заголовок, а английские alt-тексты передают его как английский. Либо подготовить англоязычные варианты без изменения смысла и композиции, либо явно описать русский текст в alt и подписи.",
+        "en": "Resolve the cover language for the English edition: both illustrations contain a Russian headline, while the English alt texts present it as English. Either provide English-language variants without changing the meaning or composition, or explicitly describe the Russian text in the alt text and caption."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
