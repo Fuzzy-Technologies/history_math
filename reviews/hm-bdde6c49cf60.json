@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-bdde6c49cf60",
+  "questions": [
+    {
+      "id": "pivo-english-wordplay",
+      "question": "В русском тексте ПИ + ВО образует ПИВО. Для английской версии использована адаптация PI + NT = PINT, сохраняющая шутку о напитке.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "В EN использована игра PI + NT = PINT. Условное число адаптировано ради той же шутки о напитке. RU сохраняет ПИ + ВО.",
+      "localizations": {
+        "source": "В русском тексте ПИ + ВО образует ПИВО. Для английской версии использована адаптация PI + NT = PINT, сохраняющая шутку о напитке.",
+        "en": "Russian ПИ + ВО forms ПИВО (“beer”). The English edition adapts the wordplay as PI + NT = PINT to preserve the drink punchline."
+      }
+    },
+    {
+      "id": "joke-cover",
+      "question": "У материала рубрики «Математики шутят» отсутствует фактическая обложка. Добавьте выбранную обложку и укажите её происхождение и права в обеих редакциях.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "У материала рубрики «Математики шутят» отсутствует фактическая обложка. Добавьте выбранную обложку и укажите её происхождение и права в обеих редакциях.",
+        "en": "This “Mathematicians Joke” item has no actual cover. Add the selected cover and record its provenance and rights in both editions."
+      }
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 12.05.2024; адрес нельзя восстанавливать предположительно.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 12.05.2024; адрес нельзя восстанавливать предположительно.",
+        "en": "Provide a public link to the original publication confirming the date 12.05.2024; the address must not be guessed."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
