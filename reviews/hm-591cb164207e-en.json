@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-591cb164207e-en",
+  "questions": [
+    {
+      "id": "image-attribution",
+      "question": "Please provide the actual public source or photographer and the licence or other verified publication right for both historical portraits of Ivan Vinogradov; “Mansur Gilmullin’s archive” and “Illustration accompanying the text” do not establish those facts.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please provide the actual public source or photographer and the licence or other verified publication right for both historical portraits of Ivan Vinogradov; “Mansur Gilmullin’s archive” and “Illustration accompanying the text” do not establish those facts.",
+        "ru": "Для двух исторических портретов И. М. Виноградова необходимо указать реальный публичный первоисточник/автора снимков и лицензию либо иное подтверждённое право публикации; запись «Авторский архив Мансура Гильмуллина» и основание «Иллюстрация к материалу» сами по себе этого не устанавливают."
+      }
+    },
+    {
+      "id": "career-and-institute-address",
+      "question": "Correct the early-career and Moscow-premises chronology: the official profile dates Vinogradov’s professorship at Perm University from 1920, while the institute history places MIAN first at 19 Leninsky Prospekt and only later on Vavilov Street. The current wording “by the mid-1920s” and “a permanent base on Vavilov Street” is misleading. https://mi.ras.ru/index.php?c=inmemoriapage&id=26537 ; https://www.mi-ras.ru/index.php?c=about .",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Correct the early-career and Moscow-premises chronology: the official profile dates Vinogradov’s professorship at Perm University from 1920, while the institute history places MIAN first at 19 Leninsky Prospekt and only later on Vavilov Street. The current wording “by the mid-1920s” and “a permanent base on Vavilov Street” is misleading. https://mi.ras.ru/index.php?c=inmemoriapage&id=26537 ; https://www.mi-ras.ru/index.php?c=about .",
+        "ru": "Уточнить раннюю карьеру и московские помещения МИАН: официальный профиль указывает профессорство Виноградова в Пермском университете с 1920 года, а история института — сначала Ленинский проспект, 19 и только позднее улицу Вавилова. Текущие формулировки «в середине 1920-х» и «постоянная база на улице Вавилова» требуют исправления. https://mi.ras.ru/index.php?c=inmemoriapage&id=26537 ; https://www.mi-ras.ru/index.php?c=about ."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
