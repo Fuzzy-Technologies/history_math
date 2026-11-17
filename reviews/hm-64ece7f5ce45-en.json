@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-64ece7f5ce45-en",
+  "questions": [
+    {
+      "id": "gauss-kutzler-story-locator",
+      "question": "Identify the exact page of the Ninth Symphony anecdote in the 2006 printing of Bernhard Kutzler’s collection cited by S. N. Fedin. The University of Marburg’s course materials attest to the story’s circulation in 2003.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Identify the exact page of the Ninth Symphony anecdote in the 2006 printing of Bernhard Kutzler’s collection cited by S. N. Fedin. The University of Marburg’s course materials attest to the story’s circulation in 2003.",
+        "ru": "Установить точную страницу байки о Девятой симфонии в издании сборника Бернхарда Кутцлера 2006 года, на которое ссылается С. Н. Федин. Материалы Марбургского университета подтверждают циркуляцию сюжета в 2003 году."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
