@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-e038ac60f8b1",
+  "questions": [
+    {
+      "id": "roman-inheritance-probability",
+      "question": "Уточнить обоснование третьего варианта: «случились два равновероятных события» не следует из условия о рождении близнецов. Равное разбиение имущества может быть самостоятельным правилом толкования завещания, но вероятность такого правила не задаёт. Согласовать пояснение в обеих версиях, сохранив предложенный автором расчёт 2: 3: 1.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Третий вариант теперь прямо назван самостоятельным правилом толкования: два предусмотренных завещанием случая принимаются равноправными; утверждение о вероятности удалено.",
+      "localizations": {
+        "source": "Уточнить обоснование третьего варианта: «случились два равновероятных события» не следует из условия о рождении близнецов. Равное разбиение имущества может быть самостоятельным правилом толкования завещания, но вероятность такого правила не задаёт. Согласовать пояснение в обеих версиях, сохранив предложенный автором расчёт 2: 3: 1.",
+        "en": "Please clarify the third interpretation. “Two equally probable events” does not follow from the birth of twins. Splitting the estate equally can be an independent rule for interpreting the will, but a probability does not establish that rule. Please agree an explanation in both versions while retaining the author’s calculation, 2: 3: 1."
+      }
+    },
+    {
+      "id": "roman-julianus-source",
+      "question": "Решение 4 : 2 : 1 подтверждено первичным фрагментом Дигест Юстиниана D. 28.2.13, где оно приведено от имени Юлиана; его собственные Digesta состояли из 90 книг. Проверить источник только рассказа о том, что мать предложила второй вариант и суд с ней согласился: в D. 28.2.13 этого эпизода нет.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Неподтверждённый рассказ о предложении матери и решении суда удалён; подтверждённая первичным фрагментом D. 28.2.13 атрибуция решения 4 : 2 : 1 Юлиану сохранена.",
+      "localizations": {
+        "source": "Решение 4 : 2 : 1 подтверждено первичным фрагментом Дигест Юстиниана D. 28.2.13, где оно приведено от имени Юлиана; его собственные Digesta состояли из 90 книг. Проверить источник только рассказа о том, что мать предложила второй вариант и суд с ней согласился: в D. 28.2.13 этого эпизода нет.",
+        "en": "The 4:2:1 solution is confirmed by the primary text of Justinian’s Digest, D. 28.2.13, where it appears under Julianus; his own Digesta comprised 90 books. Please verify only the story that the mother proposed the second interpretation and the court accepted it: that episode is absent from D. 28.2.13."
+      }
+    },
+    {
+      "id": "roman-statue-attribution",
+      "question": "Для фотографии статуи Сальвия Юлиана указать фотографа, проверяемый публичный источник, лицензию и изменение файла; не относить снимок к авторским материалам статьи без основания.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Указаны Mstyslav Chernov, Wikimedia Commons, CC BY-SA 3.0, исходная страница https://commons.wikimedia.org/wiki/File:Salvio_Giuliano_Monument_in_front_of_the_Palace_of_Justice,_Rome_(Palazzo_di_Giustizia),_Prati_District,_Rome,_Italy_(detailed).jpg и перекодирование локальной копии.",
+      "localizations": {
+        "source": "Для фотографии статуи Сальвия Юлиана указать фотографа, проверяемый публичный источник, лицензию и изменение файла; не относить снимок к авторским материалам статьи без основания.",
+        "en": "For the photograph of the statue of Salvius Julianus, identify the photographer, a verifiable public source, the licence and any file modification; do not treat the photograph as the article author’s own work without evidence."
+      }
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-18",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/654#pullrequestreview-5960459780",
+    "source_commit": "ad6992b0aff4de94c6b01e9b06a13eb42a111111",
+    "source_review_id": 5960459780,
+    "approved_at": "2026-11-18T16:09:34Z",
+    "package_sha256": "28252c6f10e2dbfb4ffe334cff9eaf14e1ef60a8a34439818c62673161545cc3"
+  }
+}
