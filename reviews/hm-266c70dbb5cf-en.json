@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-266c70dbb5cf-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the scope of the claim that this was the first university course in mathematics teaching methods.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Clarify the scope of the claim that this was the first university course in mathematics teaching methods.",
+        "ru": "Уточнить область приоритета утверждения о «первом университетском курсе методики математики»."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Establish the actual sources, photographer or publisher where known, and a verified basis for reproducing the portrait of N. V. Metelsky and the publisher’s cover of Didactics of Mathematics; keeping copies in the author’s archive does not make third-party images author-created.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Establish the actual sources, photographer or publisher where known, and a verified basis for reproducing the portrait of N. V. Metelsky and the publisher’s cover of Didactics of Mathematics; keeping copies in the author’s archive does not make third-party images author-created.",
+        "ru": "Установить для портрета Н. В. Метельского и издательской обложки «Дидактики математики» реальные первоисточники, фотографа/издателя при наличии и подтверждённое основание воспроизведения; хранение копий в авторском архиве не делает сторонние изображения авторскими."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
