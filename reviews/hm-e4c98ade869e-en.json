@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-e4c98ade869e-en",
+  "questions": [
+    {
+      "id": "chuquet-manuscript-attribution",
+      "question": "For the page from Nicolas Chuquet’s manuscript, record the actual source and rights status instead of attributing it to the author’s archive.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "For the page from Nicolas Chuquet’s manuscript, record the actual source and rights status instead of attributing it to the author’s archive.",
+        "ru": "Указать для страницы рукописи Никола Шюке реальный источник и правовой статус вместо атрибуции авторскому архиву."
+      },
+      "resolution": "The Wikimedia Commons record and Public Domain basis were added; image bytes were unchanged."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-18",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/637#pullrequestreview-5949822837",
+    "source_commit": "51f4bbc0ef5d7cc49d7981976fe075e306bbc2be",
+    "source_review_id": 5949822837,
+    "approved_at": "2026-11-18T02:12:00Z",
+    "package_sha256": "f7932bf80ca6d1a3dcd5539d487296bf355673faee72ed247ad325c32f0bc37b"
+  }
+}
