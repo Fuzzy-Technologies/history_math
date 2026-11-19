@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-13e779934c3e-en",
+  "questions": [
+    {
+      "id": "euclid-construction-to-study",
+      "question": "Item 1 asks the reader to study Euclid’s construction, but the article does not provide the construction or a labelled diagram. Either add a verified explanation from a published source or rephrase the item.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Item 1 asks the reader to study Euclid’s construction, but the article does not provide the construction or a labelled diagram. Either add a verified explanation from a published source or rephrase the item.",
+        "ru": "В пункте 1 читателю предлагается изучить способ решения Евклида, но статья не приводит саму конструкцию и её размеченный чертёж. Нужно либо добавить проверенное объяснение по опубликованному источнику, либо переформулировать пункт."
+      }
+    },
+    {
+      "id": "euclid-inaccessible-attribution",
+      "question": "Confirm a source attributing the inaccessible-vertex problem to Euclid, or identify it as a later variant: in Elements I.9 the vertex is accessible and used in the construction.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm a source attributing the inaccessible-vertex problem to Euclid, or identify it as a later variant: in Elements I.9 the vertex is accessible and used in the construction.",
+        "ru": "Подтвердить источник атрибуции задачи с недоступной вершиной Евклиду либо обозначить её позднейшим вариантом: в «Началах» I.9 вершина доступна и используется в построении."
+      }
+    },
+    {
+      "id": "source-authorship-attribution",
+      "question": "The text closely reproduces Grigory Filippovsky’s chapter “Euclid and Problems with Inaccessible Points”, yet authorship and the root rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the source text’s authorship from Mansur’s adaptation, translation, editing, and illustration work.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The text closely reproduces Grigory Filippovsky’s chapter “Euclid and Problems with Inaccessible Points”, yet authorship and the root rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the source text’s authorship from Mansur’s adaptation, translation, editing, and illustration work.",
+        "ru": "Текст близко воспроизводит главу Григория Филипповского «Евклид и задачи с недоступными точками», но авторство и корневой rights_basis целиком отданы Мансуру Гильмуллину. Нужно разделить авторство исходного текста и вклад Мансура — адаптацию, перевод, редакцию и иллюстрацию."
+      }
+    },
+    {
+      "id": "original-publication-source",
+      "question": "The claimed original date of 21 June 2024 has no URL in original_publication and no root source_url. Provide a verifiable public link to the original publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The claimed original date of 21 June 2024 has no URL in original_publication and no root source_url. Provide a verifiable public link to the original publication.",
+        "ru": "Для заявленной исходной даты 21.06.2024 в original_publication отсутствует URL и нет корневого source_url. Нужна проверяемая публичная ссылка на исходную публикацию."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
