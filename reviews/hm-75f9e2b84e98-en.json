@@ -1,0 +1,62 @@
+{
+  "review_version": 1,
+  "article_id": "hm-75f9e2b84e98-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the scope of the priority claims for the popular physics and mathematics journal and the first Russian courses on Lobachevsky geometry and the foundations of geometry.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the scope of the priority claims for the popular physics and mathematics journal and the first Russian courses on Lobachevsky geometry and the foundations of geometry.",
+        "ru": "Уточнить рамки утверждений о первом научно-популярном физико-математическом журнале и первых российских курсах геометрии Лобачевского и оснований геометрии."
+      },
+      "resolution": "The absolute priority claims were qualified: the Bulletin is now one of Russia’s earliest journals of its kind, and Kagan is described as among the first to teach the corresponding university courses."
+    },
+    {
+      "id": "q2",
+      "question": "Verify the date of the First All-Russian Congress of Mathematics Teachers; the supported dating is December 1911–January 1912.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the date of the First All-Russian Congress of Mathematics Teachers; the supported dating is December 1911–January 1912.",
+        "ru": "Сверить дату Первого Всероссийского съезда преподавателей математики; подтверждаемая датировка — декабрь 1911 — январь 1912 года."
+      },
+      "resolution": "The supported date of the First All-Russian Congress of Mathematics Teachers, December 1911–January 1912, is retained. The discrepancy belongs to another article and does not alter this edition."
+    },
+    {
+      "id": "q3",
+      "question": "Confirm the original-publication URL if known: both source texts leave the link field empty. English titles of the Russian books are descriptive translations.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Confirm the original-publication URL if known: both source texts leave the link field empty. English titles of the Russian books are descriptive translations.",
+        "ru": "Подтвердить ссылку на исходную публикацию, если она известна: post.txt и long.txt содержат пустое поле ссылки. Английские заглавия русских книг переведены описательно."
+      },
+      "resolution": "No verified source URL is available, so the optional field is correctly omitted and the original date retained. The English book titles are explicitly presented as descriptive translations of Russian editions."
+    },
+    {
+      "id": "q4",
+      "question": "The historical portrait of Kagan is identified only as an illustration accompanying the text. Establish a verifiable source, the creator or photographer where known, its date, and a licence or other confirmed basis for use in both editions.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The historical portrait of Kagan is identified only as an illustration accompanying the text. Establish a verifiable source, the creator or photographer where known, its date, and a licence or other confirmed basis for use in both editions.",
+        "ru": "Для исторического портрета Кагана указано только «Иллюстрация к материалу». Установить проверяемый первоисточник, автора или фотографа (если известен), дату и лицензию либо иное подтверждённое основание использования в обеих редакциях."
+      }
+    },
+    {
+      "id": "journal-editorial-chronology",
+      "question": "Correct the beginning of Kagan’s editorial work at the Bulletin of Experimental Physics and Elementary Mathematics: from issue 301 in 1901 he co-edited it with V. A. Zimmermann, and from issue 363 in 1904 he headed it; the current date 1902 is inaccurate.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Correct the beginning of Kagan’s editorial work at the Bulletin of Experimental Physics and Elementary Mathematics: from issue 301 in 1901 he co-edited it with V. A. Zimmermann, and from issue 363 in 1904 he headed it; the current date 1902 is inaccurate.",
+        "ru": "Уточнить начало редакторской работы Кагана в «Вестнике опытной физики и элементарной математики»: с № 301 за 1901 год он редактировал журнал вместе с В. А. Циммерманом, а с № 363 за 1904 год возглавил его; нынешняя дата 1902 требует исправления."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
