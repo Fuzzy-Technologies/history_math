@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-344b6b44ec81",
+  "questions": [
+    {
+      "id": "joke-cover",
+      "question": "В пакете отсутствует фактическая обложка для карточки шутки: список figures и манифест изображений пусты. Добавьте подходящую обложку и подключите её в обеих редакциях, не изменяя существующие подписи и текст.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "В пакете отсутствует фактическая обложка для карточки шутки: список figures и манифест изображений пусты. Добавьте подходящую обложку и подключите её в обеих редакциях, не изменяя существующие подписи и текст.",
+        "en": "The package has no actual cover for the joke card: figures is empty and the image manifest is empty. Add a suitable cover and reference it in both editions without changing the existing captions or text."
+      }
+    },
+    {
+      "id": "source-authorship",
+      "question": "Установить первичный источник и авторство шутки либо обозначить материал как адаптацию распространённого анекдота; текст присутствует в книге С. Н. Федина «Математики тоже шутят» (2009): https://ru.djvu.online/file/px8RVIuoE96mw. Не указывать Мансура Гильмуллина автором без подтверждения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить первичный источник и авторство шутки либо обозначить материал как адаптацию распространённого анекдота; текст присутствует в книге С. Н. Федина «Математики тоже шутят» (2009): https://ru.djvu.online/file/px8RVIuoE96mw. Не указывать Мансура Гильмуллина автором без подтверждения.",
+        "en": "Establish the joke’s primary source and authorship or identify this item as an adaptation of a circulating joke; the text appears in S. N. Fedin’s 2009 book Mathematicians Joke Too: https://ru.djvu.online/file/px8RVIuoE96mw. Do not credit Mansur Gilmullin as its author without evidence."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
