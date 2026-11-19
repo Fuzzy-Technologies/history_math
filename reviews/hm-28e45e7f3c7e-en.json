@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-28e45e7f3c7e-en",
+  "questions": [
+    {
+      "id": "term-interpretation",
+      "question": "Please verify the separate claim that Wallis introduced the mathematical term “interpretation”. The cited Oxford account confirms “interpolation”; a source for “interpretation”, or an agreed revision of the list in both versions, is needed. The source word is retained pending review.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please verify the separate claim that Wallis introduced the mathematical term “interpretation”. The cited Oxford account confirms “interpolation”; a source for “interpretation”, or an agreed revision of the list in both versions, is needed. The source word is retained pending review.",
+        "ru": "Проверить приписываемое Валлису введение термина «интерпретация»: в перечне рядом с мантиссой, интерполяцией и непрерывной дробью это отдельное утверждение, а не синоним интерполяции. Оксфордский обзор подтверждает именно interpolation: https://www.maths.ox.ac.uk/system/files/attachments/John%20Wallis.pdf . Нужен конкретный источник для interpretation либо согласованная правка перечня в RU/EN. Исходное слово сохранено."
+      },
+      "resolution": "The unsupported term “interpretation” has been removed from both versions; the supported terms remain."
+    },
+    {
+      "id": "publication-date",
+      "question": "Confirm the source date 2026-12-01. At the editorial check on 7 November 2026, the Telegram publication had not yet been confirmed, so the future date cannot yet be treated as a verified source-publication date.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the source date 2026-12-01. At the editorial check on 7 November 2026, the Telegram publication had not yet been confirmed, so the future date cannot yet be treated as a verified source-publication date.",
+        "ru": "Подтвердить исходную дату 2026-12-01: на момент редакционной проверки 7 ноября 2026 года публикация в Telegram ещё не подтверждена. До подтверждения публичной записи будущую дату нельзя считать проверенной датой первоисточника."
+      }
+    },
+    {
+      "id": "wallis-portraits-provenance",
+      "question": "For both portraits of John Wallis, including the retouched version, identify the original source or creator and a valid rights basis; credit the original separately from the retouching.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For both portraits of John Wallis, including the retouched version, identify the original source or creator and a valid rights basis; credit the original separately from the retouching.",
+        "ru": "Для обоих портретов Джона Валлиса, включая ретушированный, укажите исходный источник или создателя и действительное правовое основание; кредит оригинала отделите от сведений о ретуши."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
