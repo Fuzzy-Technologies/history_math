@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-426233d2ad2f-en",
+  "questions": [
+    {
+      "id": "original-publication-future-date",
+      "question": "The original publication date, 29 November 2026, is later than the editorial check on 8 November 2026. Keep the article in Draft until that date, or confirm a corrected original publication date.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The original publication date, 29 November 2026, is later than the editorial check on 8 November 2026. Keep the article in Draft until that date, or confirm a corrected original publication date.",
+        "ru": "Исходная дата 29 ноября 2026 года находится в будущем относительно редакционной проверки 8 ноября 2026 года. Сохранить материал Draft до наступления этой даты либо подтвердить исправленную исходную дату публикации."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
