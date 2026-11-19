@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-88197b11486d",
+  "questions": [
+    {
+      "id": "complex-triangle-joke",
+      "question": "Математическая условность намеренно сохранена как шутка: комплексные координаты нельзя подставлять вместо евклидовых длин катетов, а 1²+i²=0 не даёт реального треугольника с нулевой гипотенузой или площадью. Редактору решить, требуется ли короткое пояснение после развязки; дайджест не утверждает ошибочный результат как факт.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Математическая условность намеренно сохранена как шутка: комплексные координаты нельзя подставлять вместо евклидовых длин катетов, а 1²+i²=0 не даёт реального треугольника с нулевой гипотенузой или площадью. Редактору решить, требуется ли короткое пояснение после развязки; дайджест не утверждает ошибочный результат как факт.",
+        "en": "The mathematical misuse is preserved as the joke: complex coordinates are not Euclidean side lengths, and 1²+i²=0 does not produce an actual triangle of zero hypotenuse or area. Decide whether a short explanation is needed after the punchline; the description does not present the erroneous result as fact."
+      },
+      "resolution": "После развязки приведены равенство, на котором построена шутка, и обычные расстояния между точками комплексной плоскости. В дайджесте ясно обозначен комический характер подмены длин."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
