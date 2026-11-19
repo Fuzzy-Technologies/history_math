@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-abee997a0b3c-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "For the portrait of Leonardo, identify the artist or source work, a public source record and the licence or public-domain basis. Holding a copy in an archive does not justify naming Mansur Gilmullin as the author of a third-party historical image.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the portrait of Leonardo, identify the artist or source work, a public source record and the licence or public-domain basis. Holding a copy in an archive does not justify naming Mansur Gilmullin as the author of a third-party historical image.",
+        "ru": "Для портрета Леонардо указать автора или исходное произведение, публичный источник и лицензию либо основание общественного достояния. Нахождение копии в архиве не позволяет указывать Мансура Гильмуллина как автора исторического изображения третьего лица."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
