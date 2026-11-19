@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-dd7aad6e1ed5-en",
+  "questions": [
+    {
+      "id": "missing-humor-cover",
+      "question": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+        "ru": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку."
+      }
+    },
+    {
+      "id": "source-authorship",
+      "question": "Establish the joke’s primary source and confirm Mansur Gilmullin’s original authorship, or present the item as an adaptation with correct attribution: the same text appears in S. N. Fedin’s 2009 book Mathematicians Joke Too, p. 104.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Establish the joke’s primary source and confirm Mansur Gilmullin’s original authorship, or present the item as an adaptation with correct attribution: the same text appears in S. N. Fedin’s 2009 book Mathematicians Joke Too, p. 104.",
+        "ru": "Установить первичный источник шутки и подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как адаптацию с корректной атрибуцией: текст дословно опубликован у С. Н. Федина в книге «Математики тоже шутят» (2009), с. 104."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
