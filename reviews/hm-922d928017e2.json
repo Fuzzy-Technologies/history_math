@@ -1,0 +1,50 @@
+{
+  "review_version": 1,
+  "article_id": "hm-922d928017e2",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить исторические названия Московского педагогического института в 1918 году и академии, при которой создан семинар в 1959 году: в тексте указана АПН СССР, тогда как в биографии есть АПН РСФСР. Проверить точное название почётного звания.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Материал Библиотеки им. К. Д. Ушинского РАО подтверждает Высший педагогический институт им. П. Г. Шелапутина, семинар 1959 года и его точное название; история РАО подтверждает преобразование АПН РСФСР в АПН СССР 1 августа 1966 года. Звание исправлено на «заслуженный деятель науки РСФСР (1964)».",
+      "localizations": {
+        "source": "Уточнить исторические названия Московского педагогического института в 1918 году и академии, при которой создан семинар в 1959 году: в тексте указана АПН СССР, тогда как в биографии есть АПН РСФСР. Проверить точное название почётного звания.",
+        "en": "Verify the historical name of the Moscow Pedagogical Institute in 1918 and the academy that established the seminar in 1959: the text names the USSR academy, while the biography also refers to the RSFSR academy. Check the exact honorary title."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Подтвердить библиографические сведения о трёх частях «Трилогии предмета и метода математики» (порядок годов 2004/2003/2004) и согласовать английскую передачу названия.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подтвердить библиографические сведения о трёх частях «Трилогии предмета и метода математики» (порядок годов 2004/2003/2004) и согласовать английскую передачу названия.",
+        "en": "Verify the bibliographical details of the three parts of A Trilogy of the Subject and Method of Mathematics, including the 2004/2003/2004 sequence, and agree the English rendering of the title."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить публичный первоисточник и автора исторического портрета И. К. Андронова, а для обложки «Арифметики» 1957 года — конкретное издание, издателя и подтверждённое основание воспроизведения; формулировка «Иллюстрация к материалу» этих сведений не содержит.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить публичный первоисточник и автора исторического портрета И. К. Андронова, а для обложки «Арифметики» 1957 года — конкретное издание, издателя и подтверждённое основание воспроизведения; формулировка «Иллюстрация к материалу» этих сведений не содержит.",
+        "en": "Establish a public source and the author of the historical portrait of Ivan Andronov; for the 1957 Arithmetic cover, identify the specific edition and publisher and confirm the basis for reproduction. “Illustration accompanying the text” supplies none of this provenance."
+      }
+    },
+    {
+      "id": "q4",
+      "question": "Сверить год назначения И. К. Андронова заведующим кафедрой: Библиотека им. Ушинского РАО и статья «Математика в школе» (1984) указывают 1931 год, Mathedu — 1933; выбрать датировку с доказательством и согласовать RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить год назначения И. К. Андронова заведующим кафедрой: Библиотека им. Ушинского РАО и статья «Математика в школе» (1984) указывают 1931 год, Mathedu — 1933; выбрать датировку с доказательством и согласовать RU/EN.",
+        "en": "Verify the year Ivan Andronov became head of department: the Ushinsky Library of the Russian Academy of Education and a 1984 Mathematics at School article give 1931, while Mathedu gives 1933; choose a documented date and align RU/EN."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
