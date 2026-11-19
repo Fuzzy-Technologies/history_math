@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b28e6968ce51-en",
+  "questions": [
+    {
+      "id": "q2",
+      "question": "Specify the library in the 1691 sentence: this was the Herzog August Library in Wolfenbüttel, held alongside his Hanover post. Without naming the town, the paragraph’s Hanover context can make it sound like the same library. Approve a brief clarification in both versions. Institutional source: https://www.hab.de/leibnizressourcen-digital/ .",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Specify the library in the 1691 sentence: this was the Herzog August Library in Wolfenbüttel, held alongside his Hanover post. Without naming the town, the paragraph’s Hanover context can make it sound like the same library. Approve a brief clarification in both versions. Institutional source: https://www.hab.de/leibnizressourcen-digital/ .",
+        "ru": "Уточнить библиотеку в абзаце о 1691 годе: речь о Герцогской библиотеке Августа в Вольфенбюттеле, которой Лейбниц руководил одновременно с ганноверской службой. Без названия города после начала абзаца о Ганновере можно принять её за ту же библиотеку. Согласовать краткое уточнение в обеих версиях. Первичный институциональный источник: https://www.hab.de/leibnizressourcen-digital/ ."
+      },
+      "resolution": "Both versions now identify the institution as the Herzog August Library in Wolfenbüttel."
+    },
+    {
+      "id": "q3",
+      "question": "Establish a working public link to the English translation of Explanation of Binary Arithmetic and verify the dates of the text’s preparation and publication.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Establish a working public link to the English translation of Explanation of Binary Arithmetic and verify the dates of the text’s preparation and publication.",
+        "ru": "Установить действующую публичную ссылку на английский перевод Explanation of Binary Arithmetic и сверить даты подготовки текста и публикации."
+      },
+      "resolution": "A working public translation by Lloyd Strickland is linked; the articles also distinguish preparation in 1703 from publication in 1705: https://leibniz-translations.com/binary ; https://www.leibnizpapers.org/binary-theodicy.htm ."
+    },
+    {
+      "id": "q4",
+      "question": "For the two portraits of Leibniz after Francke, identify a verifiable original and the applicable legal basis or licence. For the modern calculator replica, provide the photographer, public source and licence; “illustration accompanying the text” does not establish publication rights. Synchronize RU/EN metadata.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the two portraits of Leibniz after Francke, identify a verifiable original and the applicable legal basis or licence. For the modern calculator replica, provide the photographer, public source and licence; “illustration accompanying the text” does not establish publication rights. Synchronize RU/EN metadata.",
+        "ru": "Для двух портретов Лейбница по Франке установить проверяемый оригинал и действительное правовое основание/лицензию. Для современной реплики калькулятора указать автора фотографии, публичный источник и лицензию; формулировка «иллюстрация к материалу» прав не подтверждает. Синхронизировать RU/EN metadata."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
