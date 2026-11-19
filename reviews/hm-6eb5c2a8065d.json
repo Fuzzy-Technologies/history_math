@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6eb5c2a8065d",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет.",
+        "en": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration."
+      }
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Указать публичную ссылку на исходную публикацию и подтвердить её дату; дату не менять без первичного источника, адрес нельзя восстанавливать предположительно.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Указать публичную ссылку на исходную публикацию и подтвердить её дату; дату не менять без первичного источника, адрес нельзя восстанавливать предположительно.",
+        "en": "Provide a public link to the original publication and confirm its date; do not change the date without a primary source, and do not guess the address."
+      }
+    },
+    {
+      "id": "bradis-anecdote-source",
+      "question": "Указать проверяемый источник именно для школьной сцены с Брадисом: документированные варианты истории отличаются от текста статьи.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Указать проверяемый источник именно для школьной сцены с Брадисом: документированные варианты истории отличаются от текста статьи.",
+        "en": "Provide a verifiable source specifically for the school scene involving Bradis; documented variants differ from the article’s version."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
