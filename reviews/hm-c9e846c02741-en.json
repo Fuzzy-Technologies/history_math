@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c9e846c02741-en",
+  "questions": [
+    {
+      "id": "perelman-interview-quotations",
+      "question": "Please identify the source and pages for the doorway scene in 2006 and the line “I know how to control the universe. Why would I chase a million?” The post cites the 2011 Russian edition of Masha Gessen’s book, but the quotations and circumstances have not been confirmed against it. The date, author’s narrative, dialogue and bibliography are retained; the editor should decide whether these can be presented as documented quotations or whether the nature of the story needs clarification.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please identify the source and pages for the doorway scene in 2006 and the line “I know how to control the universe. Why would I chase a million?” The post cites the 2011 Russian edition of Masha Gessen’s book, but the quotations and circumstances have not been confirmed against it. The date, author’s narrative, dialogue and bibliography are retained; the editor should decide whether these can be presented as documented quotations or whether the nature of the story needs clarification.",
+        "ru": "Уточнить источник и страницы для сцены у двери в 2006 году и фразы «Я знаю, как управлять Вселенной. И зачем мне бежать за миллионом?». Исходник ссылается на русское издание книги Маши Гессен 2011 года, но цитаты и обстоятельства по нему не подтверждены. Сохранены дата, авторский рассказ, реплики и библиография; редактору решить, можно ли представлять эти реплики как документальные цитаты или следует уточнить характер сюжета."
+      }
+    },
+    {
+      "id": "perelman-awards-distinction",
+      "question": "Distinguish the two events in the opening paragraph: Perelman declined the Fields Medal in 2006; in 2010, the one million dollars was the monetary award attached to the Clay Mathematics Institute’s Millennium Prize, which he declined. Keep RU/EN synchronized. Sources: https://www.claymath.org/library/annual_report/ar2010/ar2010.pdf and https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2006",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "The opening paragraph was corrected in RU/EN to separate the declined 2006 Fields Medal from the declined monetary award of the 2010 Millennium Prize.",
+      "localizations": {
+        "source": "Distinguish the two events in the opening paragraph: Perelman declined the Fields Medal in 2006; in 2010, the one million dollars was the monetary award attached to the Clay Mathematics Institute’s Millennium Prize, which he declined. Keep RU/EN synchronized. Sources: https://www.claymath.org/library/annual_report/ar2010/ar2010.pdf and https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2006",
+        "ru": "Развести в первом абзаце два события: в 2006 году Перельман отказался от медали Филдса; в 2010 году миллион долларов был денежной частью Премии тысячелетия Математического института Клэя, от выплаты которой он отказался. Синхронизировать RU/EN. Источники: https://www.claymath.org/library/annual_report/ar2010/ar2010.pdf и https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2006"
+      }
+    },
+    {
+      "id": "perelman-cover-provenance",
+      "question": "For the four-panel cover, identify the author or creator, the rightsholder, a verifiable public source, and the legal basis for use. “Mansur Gilmullin’s archive” and “Illustration from the author’s archive” describe custody but do not establish authorship or a licence.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the four-panel cover, identify the author or creator, the rightsholder, a verifiable public source, and the legal basis for use. “Mansur Gilmullin’s archive” and “Illustration from the author’s archive” describe custody but do not establish authorship or a licence.",
+        "ru": "Для четырёхкадровой обложки укажите автора или создателя, правообладателя, проверяемый публичный источник и правовое основание использования. Формулировки «Авторский архив Мансура Гильмуллина» и «Иллюстрация из авторского архива» описывают хранение, но не устанавливают авторство или лицензию."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
