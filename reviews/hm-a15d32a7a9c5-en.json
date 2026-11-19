@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a15d32a7a9c5-en",
+  "questions": [
+    {
+      "id": "joke-cover",
+      "question": "This “Mathematicians Joke” item has no actual cover. Add the selected cover and record its provenance and rights in both editions.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "This “Mathematicians Joke” item has no actual cover. Add the selected cover and record its provenance and rights in both editions.",
+        "ru": "У материала рубрики «Математики шутят» отсутствует фактическая обложка. Добавьте выбранную обложку и укажите её происхождение и права в обеих редакциях."
+      }
+    },
+    {
+      "id": "source-authorship",
+      "question": "Establish the joke’s primary source and authorship or identify this item as an adaptation; the wording appeared no later than Kvant, issue 5 (2001): https://kvant.mccme.ru/pdf/2001/05/39.pdf. Do not credit Mansur Gilmullin as its author without evidence.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Establish the joke’s primary source and authorship or identify this item as an adaptation; the wording appeared no later than Kvant, issue 5 (2001): https://kvant.mccme.ru/pdf/2001/05/39.pdf. Do not credit Mansur Gilmullin as its author without evidence.",
+        "ru": "Установить первичный источник и авторство шутки либо обозначить материал как адаптацию; формулировка опубликована не позднее журнала «Квант», № 5 за 2001 год: https://kvant.mccme.ru/pdf/2001/05/39.pdf. Не указывать Мансура Гильмуллина автором без подтверждения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
