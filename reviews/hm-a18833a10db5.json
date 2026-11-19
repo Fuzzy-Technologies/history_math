@@ -1,0 +1,50 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a18833a10db5",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Сверить дату рождения и год докторской защиты: исходник указывает 6 (19) марта 1900 и 1941; Math-Net даёт 18 марта, а ЕСУ — 19 марта (1 апреля) и степень в 1942: https://www.mathnet.ru/php/person.phtml?option_lang=rus&personid=42476 ; https://esu.com.ua/article-43288 . Не смешивать старый и новый стили; выбрать даты по первичным документам и согласовать RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить дату рождения и год докторской защиты: исходник указывает 6 (19) марта 1900 и 1941; Math-Net даёт 18 марта, а ЕСУ — 19 марта (1 апреля) и степень в 1942: https://www.mathnet.ru/php/person.phtml?option_lang=rus&personid=42476 ; https://esu.com.ua/article-43288 . Не смешивать старый и новый стили; выбрать даты по первичным документам и согласовать RU/EN.",
+        "en": "Verify the birth date and doctorate year: the source gives 6/19 March 1900 and 1941; Math-Net gives 18 March, while the Encyclopedia of Modern Ukraine gives 19 March/1 April and the degree in 1942, https://www.mathnet.ru/php/person.phtml?option_lang=rus&personid=42476 and https://esu.com.ua/article-43288 . Resolve calendar styles and use primary records for both languages."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить историческое название института в 1944 году и границы утверждений о первой защите и отсутствии предшествующих современных работ по теоретической арифметике. Авторское суждение и воспоминание сохранены; для окончательной редакции нужны точные основания приоритета.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить историческое название института в 1944 году и границы утверждений о первой защите и отсутствии предшествующих современных работ по теоретической арифметике. Авторское суждение и воспоминание сохранены; для окончательной редакции нужны точные основания приоритета.",
+        "en": "Verify the institute’s historical name in 1944 and the scope of the claims about the first defence and absence of earlier modern theoretical-arithmetic works. The author’s judgement and personal recollection are retained; the final wording needs precise evidence for priority."
+      }
+    },
+    {
+      "id": "professorship-year",
+      "question": "Исправить год профессорского звания И. В. Арнольда: 1935 год относится к степени кандидата наук, звание профессора присвоено в 1943 году. Источники: https://www.letopis.msu.ru/peoples/4867 ; https://www.mathedu.ru/indexes/authors/arnold_i_v/ .",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Исправить год профессорского звания И. В. Арнольда: 1935 год относится к степени кандидата наук, звание профессора присвоено в 1943 году. Источники: https://www.letopis.msu.ru/peoples/4867 ; https://www.mathedu.ru/indexes/authors/arnold_i_v/ .",
+        "en": "Correct Igor Arnold’s professorship year: 1935 is the Candidate of Sciences degree, while the professor title was awarded in 1943. Sources: https://www.letopis.msu.ru/peoples/4867 ; https://www.mathedu.ru/indexes/authors/arnold_i_v/ ."
+      },
+      "resolution": "В обеих редакциях 1935 год оставлен для степени кандидата наук, профессорское звание исправлено на 1943 год."
+    },
+    {
+      "id": "image-provenance-rights",
+      "question": "Для портрета И. В. Арнольда и обложки «Теоретической арифметики» указать отдельные публичные источники и правовые основания в RU/EN; формулировки «авторский архив» и «иллюстрация к материалу» не подтверждают происхождение и права.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для портрета И. В. Арнольда и обложки «Теоретической арифметики» указать отдельные публичные источники и правовые основания в RU/EN; формулировки «авторский архив» и «иллюстрация к материалу» не подтверждают происхождение и права.",
+        "en": "For Igor Arnold’s portrait and the cover of Theoretical Arithmetic, provide separate public sources and legal bases in RU/EN; the labels “author’s archive” and “illustration for the article” do not establish provenance or rights."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
