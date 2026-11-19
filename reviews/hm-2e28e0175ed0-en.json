@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2e28e0175ed0-en",
+  "questions": [
+    {
+      "id": "oresme-anecdote-edition",
+      "question": "Please identify the page and source for the anecdote about Oresme’s conversation with a philosopher. The Wellcome catalogue dates Marshall Clagett’s Nicole Oresme and the Medieval Geometry of Qualities and Motions to 1968; the bibliographic year in the article has been corrected. It remains to establish whether the episode appears in the book and on which page.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please identify the page and source for the anecdote about Oresme’s conversation with a philosopher. The Wellcome catalogue dates Marshall Clagett’s Nicole Oresme and the Medieval Geometry of Qualities and Motions to 1968; the bibliographic year in the article has been corrected. It remains to establish whether the episode appears in the book and on which page.",
+        "ru": "Уточнить страницу и источник анекдота о разговоре Орема с философом. Каталог Wellcome датирует издание Marshall Clagett «Nicole Oresme and the Medieval Geometry of Qualities and Motions» 1968 годом; библиографический год в статье исправлен. Требуется установить, действительно ли этот эпизод приведён в книге и на какой странице."
+      }
+    },
+    {
+      "id": "oresme-influence-claim",
+      "question": "Please verify and, if necessary, narrow the claim that Nicole Oresme’s writings influenced Copernicus, Galileo and Descartes. The editorial review notes that similarity of ideas does not establish direct transmission and that influence on Galileo is considered unproven. Publication requires a source covering all three names or wording that describes Oresme’s specific contribution without an unsupported causal claim.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please verify and, if necessary, narrow the claim that Nicole Oresme’s writings influenced Copernicus, Galileo and Descartes. The editorial review notes that similarity of ideas does not establish direct transmission and that influence on Galileo is considered unproven. Publication requires a source covering all three names or wording that describes Oresme’s specific contribution without an unsupported causal claim.",
+        "ru": "Проверить и при необходимости сузить утверждение о влиянии трудов Николя Орема на Коперника, Галилея и Декарта. Редакторская сверка отмечает, что сходство идей не доказывает прямую передачу, а влияние на Галилея считается недоказанным. До публикации нужен источник для всей тройки либо формулировка о конкретном вкладе Орема без недоказанной причинной связи."
+      },
+      "resolution": "The unsupported broad claim of direct influence on Copernicus, Galileo and Descartes was removed; the article retains only specific, supportable statements about Oresme’s contributions."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
