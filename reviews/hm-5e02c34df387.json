@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-5e02c34df387",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Сверить по библиографическим каталогам годы русских переводов учебников Серре.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить по библиографическим каталогам годы русских переводов учебников Серре.",
+        "en": "Verify the dates of the Russian translations of Serret’s textbooks against bibliographic catalogues."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Установить для портрета Серре и титульного листа издания 1854 года фактические публичные источники, автора/издание и правовое основание; для титульного листа связать figure metadata с уже приведённой в статье копией Google Books, если она является источником.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить для портрета Серре и титульного листа издания 1854 года фактические публичные источники, автора/издание и правовое основание; для титульного листа связать figure metadata с уже приведённой в статье копией Google Books, если она является источником.",
+        "en": "Establish the actual public sources, creator or edition, and legal basis for the portrait of Serret and the title page of the 1854 edition; if the Google Books copy already linked in the article is the source of the title page, connect it to the figure metadata."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
