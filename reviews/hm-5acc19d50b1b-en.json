@@ -1,0 +1,40 @@
+{
+  "review_version": 1,
+  "article_id": "hm-5acc19d50b1b-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Confirm the newspaper source for “We Could Use a Sea of Laptevs” and approve the English explanation of the Laptev Sea wordplay.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the newspaper source for “We Could Use a Sea of Laptevs” and approve the English explanation of the Laptev Sea wordplay.",
+        "ru": "Подтвердить источник газетного заголовка «Нам бы море Лаптевых» и английскую адаптацию игры слов с Laptev Sea."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Clarify the dates of Laptev’s service as head of the Department of Geometry and dean of the Faculty of Physics and Mathematics, rather than assigning both posts to the whole period 1944–1961.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the dates of Laptev’s service as head of the Department of Geometry and dean of the Faculty of Physics and Mathematics, rather than assigning both posts to the whole period 1944–1961.",
+        "ru": "Уточнить даты работы заведующим кафедрой геометрии и деканом физико-математического факультета, чтобы не приписывать обе должности всему периоду 1944–1961."
+      },
+      "resolution": "Kazan Federal University’s department history gives 1944–1945 for the temporary chairmanship, while its biographical page gives 1951–1958 for the deanship. Both editions now use those dates: https://kpfu.ru/math/history/kafedra-geometrii and https://kpfu.ru/math/history/znamenitye-personalii/laptev-boris-lukich/centerfont-color007cc3-facept-sanslaptev-boris.html"
+    },
+    {
+      "id": "q3",
+      "question": "For the portrait of B. L. Laptev and the two 1984 photographs, identify a public source, the photographer or holding institution, and a valid rights basis for reproduction.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the portrait of B. L. Laptev and the two 1984 photographs, identify a public source, the photographer or holding institution, and a valid rights basis for reproduction.",
+        "ru": "Для портрета Б. Л. Лаптева и двух фотографий 1984 года указать публичный источник, фотографа или учреждение и действительное правовое основание воспроизведения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
