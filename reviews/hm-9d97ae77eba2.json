@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-9d97ae77eba2",
+  "questions": [
+    {
+      "id": "edition-range",
+      "question": "Согласовать диапазон издания 1819–1820: том I вышел в 1819 году, том III — в 1820 году; это подтверждают [научная статья](https://www.gramota.net/article/ped20210124/pdf) и библиографические записи НЭБ. Дополнительно подтвердить исходную дату 2026-12-08: на 07.11.2026 публикация в Telegram ещё не состоялась. Разночтение 1741/1744 уже оговорено в тексте.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Согласовать диапазон издания 1819–1820: том I вышел в 1819 году, том III — в 1820 году; это подтверждают [научная статья](https://www.gramota.net/article/ped20210124/pdf) и библиографические записи НЭБ. Дополнительно подтвердить исходную дату 2026-12-08: на 07.11.2026 публикация в Telegram ещё не состоялась. Разночтение 1741/1744 уже оговорено в тексте.",
+        "en": "Confirm the 1819–1820 publication range: volume I appeared in 1819 and volume III in 1820, as supported by the [scholarly article](https://www.gramota.net/article/ped20210124/pdf) and the National Electronic Library records. Also confirm the source date 2026-12-08: as of 7 November 2026 the Telegram publication had not yet appeared. The 1741/1744 birth-year discrepancy is already stated in the article."
+      }
+    },
+    {
+      "id": "title-page-provenance",
+      "question": "Для титульного листа первого тома укажите точный источник цифровой копии, создателя или издателя, если он известен, и действительное правовое основание; формулировка «Иллюстрация к материалу» не подтверждает происхождение и права.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для титульного листа первого тома укажите точный источник цифровой копии, создателя или издателя, если он известен, и действительное правовое основание; формулировка «Иллюстрация к материалу» не подтверждает происхождение и права.",
+        "en": "For the title page of volume I, identify the exact source of the digital copy, the creator or publisher if known, and a valid rights basis; “Illustration accompanying the text” does not establish provenance or rights."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
