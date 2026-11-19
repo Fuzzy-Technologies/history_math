@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-e0ef0591fdac",
+  "questions": [
+    {
+      "id": "joke-cover",
+      "question": "В пакете отсутствует фактическая обложка для карточки шутки: список figures и манифест изображений пусты. Добавьте подходящую обложку и подключите её в обеих редакциях, не изменяя существующие подписи и текст.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "В пакете отсутствует фактическая обложка для карточки шутки: список figures и манифест изображений пусты. Добавьте подходящую обложку и подключите её в обеих редакциях, не изменяя существующие подписи и текст.",
+        "en": "The package has no actual cover for the joke card: figures is empty and the image manifest is empty. Add a suitable cover and reference it in both editions without changing the existing captions or text."
+      }
+    },
+    {
+      "id": "source-authorship",
+      "question": "Установить первичный источник шутки и подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как адаптацию с корректной атрибуцией; текст опубликован как «популярная шутка» в сборнике ОмГТУ 2013 года, с. 45: https://www.omgtu.ru/general_information/faculties/faculty_of_transport_oil_and_gas/the_department_of_advanced_mathematics/files/sb_2013.pdf.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить первичный источник шутки и подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как адаптацию с корректной атрибуцией; текст опубликован как «популярная шутка» в сборнике ОмГТУ 2013 года, с. 45: https://www.omgtu.ru/general_information/faculties/faculty_of_transport_oil_and_gas/the_department_of_advanced_mathematics/files/sb_2013.pdf.",
+        "en": "Establish the joke’s primary source and confirm Mansur Gilmullin’s original authorship, or present the item as an adaptation with correct attribution; the text appears as a “popular joke” in a 2013 Omsk State Technical University collection, p. 45: https://www.omgtu.ru/general_information/faculties/faculty_of_transport_oil_and_gas/the_department_of_advanced_mathematics/files/sb_2013.pdf."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
