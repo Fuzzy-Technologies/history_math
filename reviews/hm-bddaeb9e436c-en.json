@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-bddaeb9e436c-en",
+  "questions": [
+    {
+      "id": "thales-presses-transaction",
+      "question": "Please clarify “bought up numerous olive presses”: does this mean buying the equipment or arranging advance leases for its use? Compare the retelling with Aristotle, Politics I.11 (1259a), and decide whether both versions need an adjustment. The original bought up wording is retained; the source is given bibliographically without an unverified link.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please clarify “bought up numerous olive presses”: does this mean buying the equipment or arranging advance leases for its use? Compare the retelling with Aristotle, Politics I.11 (1259a), and decide whether both versions need an adjustment. The original bought up wording is retained; the source is given bibliographically without an unverified link.",
+        "ru": "Уточнить выражение «скупил множество оливковых прессов»: имеется в виду покупка оборудования или предварительная аренда прав на его использование? Сверить пересказ с Аристотелем, «Политика», I, 11 (1259a), и решить, нужна ли правка в обеих версиях. Исходное «скупил» / bought up пока сохранено; источник указан библиографически без неподтверждённой ссылки."
+      },
+      "resolution": "The account now follows Politics I.11, 1259a. Thales put down deposits for the use of presses in Miletus and on Chios. The concluding observation about philosophers is attributed to Aristotle."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
