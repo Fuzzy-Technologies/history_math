@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-677b7fa2ed54",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет.",
+        "en": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration."
+      }
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Указать публичную ссылку на исходную публикацию и подтвердить её дату; дату не менять без первичного источника, адрес нельзя восстанавливать предположительно.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Указать публичную ссылку на исходную публикацию и подтвердить её дату; дату не менять без первичного источника, адрес нельзя восстанавливать предположительно.",
+        "en": "Provide a public link to the original publication and confirm its date; do not change the date without a primary source, and do not guess the address."
+      }
+    },
+    {
+      "id": "ampere-door-note-source",
+      "question": "Указать печатный или архивный источник для анекдота о записке на двери Ампера; до подтверждения обозначить сюжет как неподтверждённый пересказ.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Указать печатный или архивный источник для анекдота о записке на двери Ампера; до подтверждения обозначить сюжет как неподтверждённый пересказ.",
+        "en": "Provide a printed or archival source for the anecdote about the note on Ampère’s door; until verified, label it as an unconfirmed retelling."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
