@@ -1,0 +1,52 @@
+{
+  "review_version": 1,
+  "article_id": "hm-e5f562afd469",
+  "questions": [
+    {
+      "id": "fibonacci-rabbit-unit",
+      "question": "В предпоследнем пункте объяснения написано «к пятому месяцу … 5 кроликов», хотя в модели считаются пары. Согласовать «к началу пятого месяца — 5 пар кроликов» в обеих версиях; к концу пятого месяца их 8.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "В обеих редакциях единица счёта исправлена: 5 пар к началу пятого месяца и 8 пар к его концу.",
+      "localizations": {
+        "source": "В предпоследнем пункте объяснения написано «к пятому месяцу … 5 кроликов», хотя в модели считаются пары. Согласовать «к началу пятого месяца — 5 пар кроликов» в обеих версиях; к концу пятого месяца их 8.",
+        "en": "The last bullet says “by the fifth month … 5 rabbits”, although the model counts pairs. Please agree “at the start of the fifth month, 5 pairs”; at its end there are 8."
+      }
+    },
+    {
+      "id": "fibonacci-first-historical-claims",
+      "question": "Уточнить исторические обобщения «первый самостоятельный математик … полностью осветил все достижения», «впервые изучил» эту последовательность и «первая динамическая модель биологической задачи». Для заявлений о приоритете нужен точный источник и границы утверждения. Также сверить даты жизни: в посте 1170–1240, а академическая биография MacTutor даёт около 1170–1250: https://mathshistory.st-andrews.ac.uk/Biographies/Fibonacci/.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Категоричные заявления о первенстве заменены точными формулировками о передаче математических методов, рассмотрении последовательности и ранней модели роста популяции; даты уточнены до ок. 1170 — ок. 1250.",
+      "localizations": {
+        "source": "Уточнить исторические обобщения «первый самостоятельный математик … полностью осветил все достижения», «впервые изучил» эту последовательность и «первая динамическая модель биологической задачи». Для заявлений о приоритете нужен точный источник и границы утверждения. Также сверить даты жизни: в посте 1170–1240, а академическая биография MacTutor даёт около 1170–1250: https://mathshistory.st-andrews.ac.uk/Biographies/Fibonacci/.",
+        "en": "Please qualify the historical claims “first independent mathematician … every achievement”, first study of the sequence, and first dynamic model of a biological problem. Priority claims need a precise source and scope. Also check the lifespan: the post gives 1170–1240, whereas MacTutor gives about 1170–1250: https://mathshistory.st-andrews.ac.uk/Biographies/Fibonacci/."
+      }
+    },
+    {
+      "id": "newborn-initial-pair",
+      "question": "Условие не говорит, что исходная пара новорождённая, а фраза «каждая пара приносит ежемесячно по паре» допускает рождение уже в первый месяц. Решение специально начинает с новорождённой пары и получает 233; нужно явно добавить «одна новорождённая пара» в обе редакции.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Условие не говорит, что исходная пара новорождённая, а фраза «каждая пара приносит ежемесячно по паре» допускает рождение уже в первый месяц. Решение специально начинает с новорождённой пары и получает 233; нужно явно добавить «одна новорождённая пара» в обе редакции.",
+        "en": "The statement does not say that the initial pair is newborn, while “each pair produces another pair every month” permits reproduction in the first month. The solution specifically starts with one newborn pair and obtains 233; explicitly add “one newborn pair” in both editions."
+      },
+      "resolution": "В условии обеих редакций исходная пара явно названа новорождённой; это согласует постановку с помесячным решением и итогом 233 пары."
+    },
+    {
+      "id": "source-authorship-attribution",
+      "question": "Историческая задача из Liber abaci и её постановка приписаны в authors, author и корневом rights_basis только Мансуру Гильмуллину. Нужно разделить авторство задачи Фибоначчи и вклад Мансура — адаптацию, комментарий, перевод и иллюстрации — и дать проверяемую библиографическую ссылку.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Историческая задача из Liber abaci и её постановка приписаны в authors, author и корневом rights_basis только Мансуру Гильмуллину. Нужно разделить авторство задачи Фибоначчи и вклад Мансура — адаптацию, комментарий, перевод и иллюстрации — и дать проверяемую библиографическую ссылку.",
+        "en": "The historical Liber abaci problem is attributed in authors, author, and the root rights_basis only to Mansur Gilmullin. Distinguish Fibonacci’s authorship of the problem from Mansur’s adaptation, commentary, translation, and illustrations, and provide a verifiable bibliographic reference."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
