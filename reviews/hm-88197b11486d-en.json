@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-88197b11486d-en",
+  "questions": [
+    {
+      "id": "complex-triangle-joke",
+      "question": "The mathematical misuse is preserved as the joke: complex coordinates are not Euclidean side lengths, and 1²+i²=0 does not produce an actual triangle of zero hypotenuse or area. Decide whether a short explanation is needed after the punchline; the description does not present the erroneous result as fact.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The mathematical misuse is preserved as the joke: complex coordinates are not Euclidean side lengths, and 1²+i²=0 does not produce an actual triangle of zero hypotenuse or area. Decide whether a short explanation is needed after the punchline; the description does not present the erroneous result as fact.",
+        "ru": "Математическая условность намеренно сохранена как шутка: комплексные координаты нельзя подставлять вместо евклидовых длин катетов, а 1²+i²=0 не даёт реального треугольника с нулевой гипотенузой или площадью. Редактору решить, требуется ли короткое пояснение после развязки; дайджест не утверждает ошибочный результат как факт."
+      },
+      "resolution": "A note after the punchline gives the identity behind the joke and the ordinary distances between the points of the complex plane. The digest identifies the substitution for side lengths as part of the joke."
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
