@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-55b6abcb4cce-en",
+  "questions": [
+    {
+      "id": "missing-humor-cover",
+      "question": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+        "ru": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку."
+      }
+    },
+    {
+      "id": "source-authorship",
+      "question": "Establish the primary source of the line “What is today’s date? — A positive integer” and confirm Mansur Gilmullin’s original authorship, or present the item as an adaptation; the line was published at least as early as 1998.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Establish the primary source of the line “What is today’s date? — A positive integer” and confirm Mansur Gilmullin’s original authorship, or present the item as an adaptation; the line was published at least as early as 1998.",
+        "ru": "Установить первичный источник реплики «Какое сегодня число? — Целое положительное» и подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как адаптацию; реплика опубликована как минимум в 1998 году."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
