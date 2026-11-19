@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b291686a9dec",
+  "questions": [
+    {
+      "id": "future-original-publication-date",
+      "question": "Дата исходной публикации 13.12.2026 ещё не наступила. До публикации материала подтвердить её по фактической записи Telegram или исправить дату.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Дата исходной публикации 13.12.2026 ещё не наступила. До публикации материала подтвердить её по фактической записи Telegram или исправить дату.",
+        "en": "The stated original publication date, 13 December 2026, is still in the future. Before publication, confirm it against the actual Telegram post or correct the date."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
