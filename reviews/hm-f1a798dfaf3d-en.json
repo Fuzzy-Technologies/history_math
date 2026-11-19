@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f1a798dfaf3d-en",
+  "questions": [
+    {
+      "id": "pythagoras-bean-last-words",
+      "question": "Please identify the passage in Book VIII of Diogenes Laertius and the wording of the last words, “Better to die than to eat a bean!” The check should distinguish the ban on eating beans, the refusal to cross the field, and any authorial adaptation of the aphorism. The original retelling, its explicit description as a legend, the quotation and complete postscript are retained; no link to an unidentified edition is added.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please identify the passage in Book VIII of Diogenes Laertius and the wording of the last words, “Better to die than to eat a bean!” The check should distinguish the ban on eating beans, the refusal to cross the field, and any authorial adaptation of the aphorism. The original retelling, its explicit description as a legend, the quotation and complete postscript are retained; no link to an unidentified edition is added.",
+        "ru": "Уточнить место в книге VIII Диогена Лаэртского и формулировку последних слов «Лучше умереть, чем съесть боб!». Нужна сверка, различающая запрет есть бобы, отказ переступить через поле и возможную авторскую переработку афоризма. Сохранены исходный пересказ, его обозначение «согласно легенде», реплика и полный P.S.; прямую ссылку на неустановленное издание не добавляли."
+      }
+    },
+    {
+      "id": "pythagoras-all-is-number-attribution",
+      "question": "Please verify the attribution of the phrase “all is number”. The article presents it as a direct statement by Pythagoras, while the editorial review notes that Aristotle reports it as a characterization of the Pythagorean school’s doctrine. Publication requires either an authoritative source for the direct quotation or wording that presents it as a concise summary of the doctrine.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please verify the attribution of the phrase “all is number”. The article presents it as a direct statement by Pythagoras, while the editorial review notes that Aristotle reports it as a characterization of the Pythagorean school’s doctrine. Publication requires either an authoritative source for the direct quotation or wording that presents it as a concise summary of the doctrine.",
+        "ru": "Проверить атрибуцию фразы «всё есть число». В тексте она представлена как прямая реплика Пифагора, тогда как редакторская сверка указывает, что у Аристотеля это характеристика взглядов пифагорейской школы. До публикации требуется либо авторитетный источник прямой цитаты, либо передать формулу как краткое изложение учения."
+      }
+    },
+    {
+      "id": "pythagoras-cover-provenance",
+      "question": "For the cover showing Pythagoras before the bean field, identify the author or creator, the rightsholder, a verifiable public source, and the legal basis for use. “Mansur Gilmullin’s archive” and “Illustration accompanying the text” do not establish authorship or a licence.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For the cover showing Pythagoras before the bean field, identify the author or creator, the rightsholder, a verifiable public source, and the legal basis for use. “Mansur Gilmullin’s archive” and “Illustration accompanying the text” do not establish authorship or a licence.",
+        "ru": "Для обложки с Пифагором перед бобовым полем укажите автора или создателя, правообладателя, проверяемый публичный источник и правовое основание использования. Формулировки «Авторский архив Мансура Гильмуллина» и «Иллюстрация к материалу» не подтверждают авторство или лицензию."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
