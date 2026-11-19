@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b3e3e7c7be46",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации.",
+        "en": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration."
+      }
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Для сохранённой даты 2023-09-24 нужна проверяемая ссылка на исходную публикацию: сейчас отсутствуют и `original_publication.url`, и `source_url`.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для сохранённой даты 2023-09-24 нужна проверяемая ссылка на исходную публикацию: сейчас отсутствуют и `original_publication.url`, и `source_url`.",
+        "en": "The preserved date 2023-09-24 needs a verifiable original-publication link; both `original_publication.url` and `source_url` are currently missing."
+      }
+    },
+    {
+      "id": "original-authorship",
+      "question": "Подтвердить оригинальное авторство Мансура Гильмуллина для этой шутки либо оформить материал как адаптацию: сходный сюжет известен по турниру «Что? Где? Когда?» 1999 года.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подтвердить оригинальное авторство Мансура Гильмуллина для этой шутки либо оформить материал как адаптацию: сходный сюжет известен по турниру «Что? Где? Когда?» 1999 года.",
+        "en": "Confirm Mansur Gilmullin’s original authorship of this joke, or present it as an adaptation: a similar plot is known from a 1999 What? Where? When? tournament."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
