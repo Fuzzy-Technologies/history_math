@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-3d17f1011a90-en",
+  "questions": [
+    {
+      "id": "future-publication-date",
+      "question": "Confirm the original publication date 2026-11-24 and a public link after the material is actually published. As of 8 November 2026 this date is still in the future, so the PR remains Draft.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the original publication date 2026-11-24 and a public link after the material is actually published. As of 8 November 2026 this date is still in the future, so the PR remains Draft.",
+        "ru": "Подтвердить исходную дату 2026-11-24 и публичную ссылку после фактического выхода материала. На 08.11.2026 эта дата ещё не наступила, поэтому PR остаётся Draft."
+      }
+    },
+    {
+      "id": "filichev-portraits-provenance",
+      "question": "For both portraits, including the retouched version, identify the original source or creator and a valid rights basis; credit the original separately from the retouching.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For both portraits, including the retouched version, identify the original source or creator and a valid rights basis; credit the original separately from the retouching.",
+        "ru": "Для обоих портретов, включая ретушированный, укажите исходный источник или создателя и действительное правовое основание; кредит оригинала отделите от сведений о ретуши."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
