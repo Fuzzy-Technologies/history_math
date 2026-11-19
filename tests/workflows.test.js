@@ -19,9 +19,14 @@ test('S3 publication stays on approved master and blocks Pages upload until fina
   const attachment = steps.findIndex(step => step.name === 'Check native S3 attachment downloads');
   const full = steps.findIndex(step => step.name === 'Verify site code, layout and browser contracts');
   const check = steps.findIndex(step => step.name === 'Verify final lightweight publication');
+  const cdn = steps.findIndex(step => step.name === 'Verify CDN previews and prune their Pages copies');
+  const cdnCheck = steps.findIndex(step => step.name === 'Validate Pages output with CDN previews');
   const upload = steps.findIndex(step => step.uses?.startsWith('actions/upload-pages-artifact@'));
   assert.ok(media > steps.findIndex(step => step.name === 'Build and verify configured Pages site'));
-  assert.ok(media < check && check < upload);
+  assert.ok(media < check && check < cdn && cdn < cdnCheck && cdnCheck < upload);
+  assert.match(steps[cdn].run, /publish-preview-cdn.mjs _site-pages/);
+  assert.match(steps[cdnCheck].run, /publication-media-browser.mjs/);
+  assert.equal(steps[cdnCheck].if, "vars.PREVIEW_CDN_BASE_URL != ''");
   assert.match(steps[media].run, /publication-media.mjs --site-dir _site-pages --publish --prune-output/);
   assert.ok(preflight > steps.findIndex(step => step.name === 'Validate article sources and reading assets'));
   assert.ok(preflight < steps.findIndex(step => step.name === 'Install PDF rendering engine'));
@@ -34,7 +39,9 @@ test('S3 publication stays on approved master and blocks Pages upload until fina
   for (const key of ['S3_ACCESS_KEY_ID', 'S3_SECRET_ACCESS_KEY']) {
     assert.equal(steps[media].env[key], '${{ secrets.' + key + ' }}');
     assert.equal(steps[preflight].env[key], '${{ secrets.' + key + ' }}');
-    assert.equal(steps.filter(step => Object.hasOwn(step.env || {}, key)).length, 2);
+    assert.equal(steps[cdn].env[key], '${{ secrets.' + key + ' }}');
+    assert.deepEqual(steps.filter(step => Object.hasOwn(step.env || {}, key)),
+      [steps[preflight], steps[media], steps[cdn]]);
   }
   assert.match(steps[check].run, /check_site.py/);
   assert.match(steps[check].run, /publication-size.mjs/);
