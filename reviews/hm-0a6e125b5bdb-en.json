@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0a6e125b5bdb-en",
+  "questions": [
+    {
+      "id": "missing-humor-cover",
+      "question": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+        "ru": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку."
+      }
+    },
+    {
+      "id": "source-authorship",
+      "question": "Establish the joke’s primary source and confirm Mansur Gilmullin’s original authorship, or present the item as an anonymous adaptation with correct visible attribution.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Establish the joke’s primary source and confirm Mansur Gilmullin’s original authorship, or present the item as an anonymous adaptation with correct visible attribution.",
+        "ru": "Установить первичный источник шутки и подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как анонимную адаптацию с корректной видимой атрибуцией."
+      }
+    },
+    {
+      "id": "source-date",
+      "question": "Confirm the original date of 2023-12-10 with a verifiable public link in original_publication.url and source_url, or explicitly record that the original link is unavailable.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the original date of 2023-12-10 with a verifiable public link in original_publication.url and source_url, or explicitly record that the original link is unavailable.",
+        "ru": "Подтвердить исходную дату 2023-12-10 проверяемой публичной ссылкой в original_publication.url и source_url либо явно зафиксировать, что исходная ссылка недоступна."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
