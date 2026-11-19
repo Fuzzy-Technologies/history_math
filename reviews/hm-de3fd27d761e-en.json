@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-de3fd27d761e-en",
+  "questions": [
+    {
+      "id": "dirac-fishermen-origin",
+      "question": "The introduction now says that Dirac learned the solution from Professor J. Whitehead, but the following section still says that Dirac gave the original answer and discusses how Dirac solved the problem. Remove this contradiction and align the attribution in both editions.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The introduction now says that Dirac learned the solution from Professor J. Whitehead, but the following section still says that Dirac gave the original answer and discusses how Dirac solved the problem. Remove this contradiction and align the attribution in both editions.",
+        "ru": "Вступление теперь сообщает, что Дирак узнал решение от профессора Дж. Уайтхеда, но следующий раздел по-прежнему утверждает, что Дирак сам «оригинально решил» задачу и разбирает, «как именно Дирак решал». Нужно устранить противоречие и согласовать атрибуцию в обеих редакциях."
+      }
+    },
+    {
+      "id": "third-party-image-provenance",
+      "question": "The 1982 Kvant pages and the portrait of Dirac cannot be treated as illustrations authored by Mansur Gilmullin. For each image, provide its actual source, authorship, and confirmed rights basis.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The 1982 Kvant pages and the portrait of Dirac cannot be treated as illustrations authored by Mansur Gilmullin. For each image, provide its actual source, authorship, and confirmed rights basis.",
+        "ru": "Страницы журнала «Квант» 1982 года и портрет Дирака нельзя относить к авторским иллюстрациям Мансура Гильмуллина. Для каждой иллюстрации указать реальный источник, авторство и подтверждённое правовое основание."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
