@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-3feee53d3afb",
+  "questions": [
+    {
+      "id": "joke-cover",
+      "question": "У материала рубрики «Математики шутят» отсутствует фактическая обложка. Добавьте выбранную обложку и укажите её происхождение и права в обеих редакциях.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "У материала рубрики «Математики шутят» отсутствует фактическая обложка. Добавьте выбранную обложку и укажите её происхождение и права в обеих редакциях.",
+        "en": "This “Mathematicians Joke” item has no actual cover. Add the selected cover and record its provenance and rights in both editions."
+      }
+    },
+    {
+      "id": "source-authorship",
+      "question": "Установить первичный источник и авторство шутки либо обозначить материал как адаптацию; полный сюжет присутствует в книге С. Н. Федина «Математики тоже шутят» не позднее 2009 года: https://ru.djvu.online/file/px8RVIuoE96mw. Не указывать Мансура Гильмуллина автором без подтверждения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить первичный источник и авторство шутки либо обозначить материал как адаптацию; полный сюжет присутствует в книге С. Н. Федина «Математики тоже шутят» не позднее 2009 года: https://ru.djvu.online/file/px8RVIuoE96mw. Не указывать Мансура Гильмуллина автором без подтверждения.",
+        "en": "Establish the joke’s primary source and authorship or identify this item as an adaptation; the full story appears in S. N. Fedin’s Mathematicians Joke Too no later than 2009: https://ru.djvu.online/file/px8RVIuoE96mw. Do not credit Mansur Gilmullin as its author without evidence."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
