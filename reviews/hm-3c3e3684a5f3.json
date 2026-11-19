@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-3c3e3684a5f3",
+  "questions": [
+    {
+      "id": "storm-source-edition",
+      "question": "Уточнить, из какого задачника XVIII века взята задача, как заявлено в заголовке: автор, название, издание и страница. В посте есть полное условие, решение и старинная мнемоника, но библиографическая ссылка отсутствует.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить, из какого задачника XVIII века взята задача, как заявлено в заголовке: автор, название, издание и страница. В посте есть полное условие, решение и старинная мнемоника, но библиографическая ссылка отсутствует.",
+        "en": "Please identify the eighteenth-century collection claimed in the title: author, title, edition and page. The source supplies the complete problem, solution and old mnemonic but no bibliographic reference."
+      }
+    },
+    {
+      "id": "storm-fifteen-bales-each",
+      "question": "Уточнить условие: решение предполагает, что каждому из двух купцов принадлежало по 15 тюков, но это не сказано в условии. Подтвердить равное распределение по источнику либо явно добавить его в обе версии.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить условие: решение предполагает, что каждому из двух купцов принадлежало по 15 тюков, но это не сказано в условии. Подтвердить равное распределение по источнику либо явно добавить его в обе версии.",
+        "en": "Clarify the statement: the solution assumes that each of the two merchants owned 15 bales, but the problem does not say so. Confirm the equal allocation from the source or state it explicitly in both versions."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
