@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0ebee945cafd-en",
+  "questions": [
+    {
+      "id": "future-publication-date",
+      "question": "Confirm the source date 2026-12-29: as of 7 November 2026 the Telegram publication had not yet appeared.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Confirm the source date 2026-12-29: as of 7 November 2026 the Telegram publication had not yet appeared.",
+        "ru": "Подтвердить исходную дату 2026-12-29: на 07.11.2026 публикация в Telegram ещё не состоялась."
+      }
+    },
+    {
+      "id": "portrait-provenance",
+      "question": "Both historical portraits of Thomas Stieltjes need their actual sources and creators where known, plus a confirmed rights basis; the wording “illustration accompanying the text” does not establish provenance.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Both historical portraits of Thomas Stieltjes need their actual sources and creators where known, plus a confirmed rights basis; the wording “illustration accompanying the text” does not establish provenance.",
+        "ru": "Для обоих исторических портретов Томаса Стилтьеса нужны фактические источники и авторы, где они известны, а также подтверждённое правовое основание; формулировка «Иллюстрация к материалу» этого не устанавливает."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
