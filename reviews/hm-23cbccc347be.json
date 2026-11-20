@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-23cbccc347be",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Сверить календарный стиль рождения «15 (28) апреля 1861»: при 15 апреля старого стиля в 1861 году новый стиль — 27 апреля, а не 28. Возможно, нужна другая исходная дата. До проверки первичного документа авторская запись сохранена в RU/EN; дата исходного материала сохранена.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить календарный стиль рождения «15 (28) апреля 1861»: при 15 апреля старого стиля в 1861 году новый стиль — 27 апреля, а не 28. Возможно, нужна другая исходная дата. До проверки первичного документа авторская запись сохранена в RU/EN; дата исходного материала сохранена.",
+        "en": "Verify 15/28 April 1861: 15 April Old Style in 1861 corresponds to 27 April, not 28. The underlying date may need checking against a primary record. The author’s wording remains in both versions, while the transfer retains its separate original publication date."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Проверить доступность на MathEdu [карточки Н. А. Рыбкина](https://www.mathedu.ru/indexes/authors/rybkin_n_a/) и [«Прямолинейной тригонометрии» 1945 года](https://www.mathedu.ru/text/rybkin_pryamolineynaya_trigonometriya_1945/); недоступную страницу заменить равноценным авторитетным публичным источником.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Проверить доступность на MathEdu [карточки Н. А. Рыбкина](https://www.mathedu.ru/indexes/authors/rybkin_n_a/) и [«Прямолинейной тригонометрии» 1945 года](https://www.mathedu.ru/text/rybkin_pryamolineynaya_trigonometriya_1945/); недоступную страницу заменить равноценным авторитетным публичным источником.",
+        "en": "Verify public access to Mathedu’s [N. A. Rybkin author record](https://www.mathedu.ru/indexes/authors/rybkin_n_a/) and [1945 edition of Plane Trigonometry](https://www.mathedu.ru/text/rybkin_pryamolineynaya_trigonometriya_1945/); if either page is unavailable, replace it with an equivalent authoritative public source."
+      }
+    },
+    {
+      "id": "image-provenance",
+      "question": "Для коллажа и пяти обложек книг Рыбкина указать источник каждого использованного скана и основание публикации; повторённая формулировка «Иллюстрация к материалу» не устанавливает происхождение или права.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для коллажа и пяти обложек книг Рыбкина указать источник каждого использованного скана и основание публикации; повторённая формулировка «Иллюстрация к материалу» не устанавливает происхождение или права.",
+        "en": "For the collage and the five Rybkin book covers, identify the source of each scan and the legal basis for publication; repeating “Illustration accompanying the text” does not establish provenance or rights."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
