@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6cba31a9bae3-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Provide a specific documentary source for the episode involving Abel’s manuscript and describe Cauchy’s role in its delay and later recovery precisely.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide a specific documentary source for the episode involving Abel’s manuscript and describe Cauchy’s role in its delay and later recovery precisely.",
+        "ru": "Указать конкретный документальный источник для истории с рукописью Абеля и точно описать роль Коши в её задержке и последующем обнаружении."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Provide a publicly verifiable original source, creator and legal basis for reproducing the portrait of Augustin-Louis Cauchy.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide a publicly verifiable original source, creator and legal basis for reproducing the portrait of Augustin-Louis Cauchy.",
+        "ru": "Указать публично проверяемый первоисточник, автора и правовое основание воспроизведения портрета Огюстена Луи Коши."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
