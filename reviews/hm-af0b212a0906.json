@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-af0b212a0906",
+  "questions": [
+    {
+      "id": "cover-authorship-rights",
+      "question": "Для фотоподобной обложки указать подтверждённого создателя и правообладателя, проверяемый публичный источник и правовое основание использования. Формулировки «Авторская иллюстрация» и «Иллюстрация к материалу» сами по себе этого не подтверждают.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для фотоподобной обложки указать подтверждённого создателя и правообладателя, проверяемый публичный источник и правовое основание использования. Формулировки «Авторская иллюстрация» и «Иллюстрация к материалу» сами по себе этого не подтверждают.",
+        "en": "For the photorealistic cover, identify the verified creator and rights holder, a verifiable public source, and the legal basis for use. “Author’s illustration” and “Illustration accompanying the text” do not establish these facts."
+      }
+    },
+    {
+      "id": "depman-source-authorship",
+      "question": "Задача прямо взята из книги И. Я. Депмана, но корневые authors и rights_basis целиком приписывают материал Мансуру Гильмуллину. Отделить авторство исходной задачи Депмана от современной адаптации или редакции Мансура.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Задача прямо взята из книги И. Я. Депмана, но корневые authors и rights_basis целиком приписывают материал Мансуру Гильмуллину. Отделить авторство исходной задачи Депмана от современной адаптации или редакции Мансура.",
+        "en": "The problem is explicitly taken from I. Ya. Depman’s book, but the root authors and rights_basis attribute the material entirely to Mansur Gilmullin. Distinguish authorship of Depman’s source problem from Mansur’s modern adaptation or editing."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
