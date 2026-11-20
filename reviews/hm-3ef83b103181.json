@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-3ef83b103181",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Место рождения исправлено на Мишеронский завод Московской губернии, а подразделение Московского университета 1931 года — на математическое отделение физико-механического факультета. Остаётся проверить историческое название факультета Новосибирского университета при его создании.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Место рождения исправлено на Мишеронский завод Московской губернии, а подразделение Московского университета 1931 года — на математическое отделение физико-механического факультета. Остаётся проверить историческое название факультета Новосибирского университета при его создании.",
+        "en": "The birthplace has been corrected to the Misheronsky glassworks in Moscow Governorate, and the 1931 Moscow University unit to the mathematics division of the Faculty of Physics and Mechanics. Verify the historical faculty name at Novosibirsk University when it was founded."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Сверить точные заглавия диссертаций и учебников и принятые английские названия, а также периоды работы при переходе из Иванова в Новосибирск.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить точные заглавия диссертаций и учебников и принятые английские названия, а также периоды работы при переходе из Иванова в Новосибирск.",
+        "en": "Check the precise dissertation and textbook titles and their established English names, and the employment periods during the move from Ivanovo to Novosibirsk."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить конкретный публичный источник портрета А. И. Мальцева, фотографа или учреждение-правообладателя и лицензию либо иное подтверждённое основание использования.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить конкретный публичный источник портрета А. И. Мальцева, фотографа или учреждение-правообладателя и лицензию либо иное подтверждённое основание использования.",
+        "en": "Establish the specific public source of Anatoly Maltsev’s portrait, the photographer or rights-holding institution, and the licence or other verified basis for its use."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
