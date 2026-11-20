@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2ae1a3cec39b-en",
+  "questions": [
+    {
+      "id": "source-authorship-attribution",
+      "question": "The problem is taken from N. N. Amenitsky and I. P. Sakharov's book, but authorship and the root rights_basis are assigned entirely to Mansur. Distinguish the original problem's authorship from Mansur's adaptation or editing.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The problem is taken from N. N. Amenitsky and I. P. Sakharov's book, but authorship and the root rights_basis are assigned entirely to Mansur. Distinguish the original problem's authorship from Mansur's adaptation or editing.",
+        "ru": "Задача взята из книги Н. Н. Аменицкого и И. П. Сахарова, но авторство и корневой rights_basis целиком отданы Мансуру. Нужно разделить авторство исходной задачи и адаптацию/редакцию Мансура."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
