@@ -1,0 +1,73 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b7d7a1088b4e",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Укажите проверяемый первоисточник портрета Лапласа, художника или гравёра, дату создания (если известна) и лицензию либо подтверждённый статус общественного достояния; синхронизируйте атрибуцию в RU/EN.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Укажите проверяемый первоисточник портрета Лапласа, художника или гравёра, дату создания (если известна) и лицензию либо подтверждённый статус общественного достояния; синхронизируйте атрибуцию в RU/EN.",
+        "en": "Provide a verifiable source for the portrait of Laplace, identify the artist or engraver and date where known, and document the licence or confirmed public-domain status; keep the attribution synchronized in RU and EN."
+      },
+      "resolution": "Атрибуция уточнена: Жан-Батист Полен Герен, 1838, Версаль; репродукция и произведение находятся в общественном достоянии. https://commons.wikimedia.org/wiki/File:Pierre-Simon,_marquis_de_Laplace_(1745-1827)_-_Gu%C3%A9rin.jpg"
+    },
+    {
+      "id": "education-institutions-role",
+      "question": "Уточнить роль Лапласа в создании Высшей нормальной и Политехнической школ.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Исправлено: подтверждены преподавание в Высшей нормальной школе и последующее влияние на программы Политехнической школы, без приписывания создания обеих школ. Источники: https://www.ens.psl.eu/en/node/1007 и https://www.polytechnique.edu/bibliotheque/patrimoine/portail-patrimoine/histoire-de-lecole/grandes-periodes-de-lhistoire-de-lecole",
+      "localizations": {
+        "source": "Уточнить роль Лапласа в создании Высшей нормальной и Политехнической школ.",
+        "en": "Clarify Laplace’s role in establishing the École Normale and the École Polytechnique."
+      }
+    },
+    {
+      "id": "laplace-quotations-sources",
+      "question": "Укажите проверяемые источники и точные редакции для приписываемого Лапласу афоризма в начале и диалога с Наполеоном; пометки о распространённой атрибуции и нескольких версиях сами по себе не подтверждают цитаты.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Укажите проверяемые источники и точные редакции для приписываемого Лапласу афоризма в начале и диалога с Наполеоном; пометки о распространённой атрибуции и нескольких версиях сами по себе не подтверждают цитаты.",
+        "en": "Provide verifiable sources and exact editions for the opening aphorism attributed to Laplace and the dialogue with Napoleon; noting a common attribution or several versions does not itself verify the quotations."
+      }
+    },
+    {
+      "id": "laplace-equation-steady-state",
+      "question": "Уточнить область применения уравнения Лапласа в теплопроводности: оно описывает стационарное распределение температуры в области без внутренних источников тепла.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Уточнить область применения уравнения Лапласа в теплопроводности: оно описывает стационарное распределение температуры в области без внутренних источников тепла.",
+        "en": "Clarify the heat-conduction use of the Laplace equation: it describes a stationary temperature distribution in a region without internal heat sources."
+      },
+      "resolution": "Исправлено в обеих редакциях: для теплопроводности уравнение Лапласа описывает стационарное распределение температуры в области без внутренних источников. Доказательство: https://github.com/Fuzzy-Technologies/history_math/pull/343#issuecomment-6969775741"
+    },
+    {
+      "id": "nebular-hypothesis-source-work",
+      "question": "Отнести гипотезу происхождения Солнечной системы к «Изложению системы мира» (1796), а не к пятитомному «Трактату о небесной механике» (1799–1825).",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Отнести гипотезу происхождения Солнечной системы к «Изложению системы мира» (1796), а не к пятитомному «Трактату о небесной механике» (1799–1825).",
+        "en": "Attribute the hypothesis on the origin of the Solar System to *Exposition du système du monde* (1796), not to the five-volume *Treatise on Celestial Mechanics* (1799–1825)."
+      },
+      "resolution": "Исправлено в обеих редакциях: космогоническая гипотеза отнесена к «Изложению системы мира» (1796). Доказательство: https://github.com/Fuzzy-Technologies/history_math/pull/343#pullrequestreview-5966002342"
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Добавить проверяемую публичную ссылку на исходную публикацию от 20 ноября 2023 года в `original_publication.url` и `source_url`; адрес нельзя восстанавливать по предполагаемой последовательности постов.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Добавить проверяемую публичную ссылку на исходную публикацию от 20 ноября 2023 года в `original_publication.url` и `source_url`; адрес нельзя восстанавливать по предполагаемой последовательности постов.",
+        "en": "Add a verifiable public link to the original publication dated 20 November 2023 in `original_publication.url` and `source_url`; do not reconstruct the address from an assumed post sequence."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
