@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-18c10d94a4cc-en",
+  "questions": [
+    {
+      "id": "poem-source-and-translation",
+      "question": "Please identify the original publication or cited page for Boris Dolgov’s full verse. The St Petersburg State University Faculty of Chemistry memoir (https://chem.spbu.ru/kniga-pamyati/hdsul6hpo1-nikolskii-aleksei-borisovich) directly attributes the stanza beginning “In remote Yelabuga…” to Dolgov and confirms the branch context, but it does not contain the entire excerpt reproduced here. The English version preserves every line, stanza and the integral-sign image in free verse; its poetic effect needs editorial review.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please identify the original publication or cited page for Boris Dolgov’s full verse. The St Petersburg State University Faculty of Chemistry memoir (https://chem.spbu.ru/kniga-pamyati/hdsul6hpo1-nikolskii-aleksei-borisovich) directly attributes the stanza beginning “In remote Yelabuga…” to Dolgov and confirms the branch context, but it does not contain the entire excerpt reproduced here. The English version preserves every line, stanza and the integral-sign image in free verse; its poetic effect needs editorial review.",
+        "ru": "Для стихотворного фрагмента Бориса Долгова уточнить первое издание или страницу цитирования полного текста. Воспоминания Химического факультета СПбГУ (https://chem.spbu.ru/kniga-pamyati/hdsul6hpo1-nikolskii-aleksei-borisovich) прямо атрибутируют Долгову строфу «В глухой Елабуге…» и подтверждают контекст филиала, но не содержат весь приведённый фрагмент. EN передаёт все строки, строфы и образ реки-интеграла свободным стихом; требуется редакторская оценка поэтического звучания."
+      }
+    },
+    {
+      "id": "humor-cover-image",
+      "question": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+        "ru": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет."
+      }
+    },
+    {
+      "id": "original-url-and-poem-rights",
+      "question": "The preserved date 2023-09-10 needs a verifiable original-publication link (`original_publication.url` and `source_url`); the substantial excerpt from Boris Dolgov’s poem also needs a precise published source and a rights basis for reproduction.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The preserved date 2023-09-10 needs a verifiable original-publication link (`original_publication.url` and `source_url`); the substantial excerpt from Boris Dolgov’s poem also needs a precise published source and a rights basis for reproduction.",
+        "ru": "Для сохранённой даты 2023-09-10 нужна проверяемая ссылка на исходную публикацию (`original_publication.url` и `source_url`); для существенного стихотворного фрагмента Бориса Долгова также нужны точный опубликованный источник и правовое основание воспроизведения."
+      }
+    },
+    {
+      "id": "poem-visible-authorship",
+      "question": "Align the visible authorship in RU/EN: the main reproduced text is Boris Dolgov’s poem, but the byline attributes the whole article only to Mansur Gilmullin. Either credit Dolgov in the visible authorship or clearly separate the editorial introduction from the poem’s authorship.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Align the visible authorship in RU/EN: the main reproduced text is Boris Dolgov’s poem, but the byline attributes the whole article only to Mansur Gilmullin. Either credit Dolgov in the visible authorship or clearly separate the editorial introduction from the poem’s authorship.",
+        "ru": "Согласовать видимое авторство в RU/EN: основной воспроизводимый текст — стихотворение Бориса Долгова, но byline приписывает весь материал только Мансору Гильмуллину. Либо указать Долгова в видимом авторстве, либо явно отделить редакционное вступление от авторства стихотворения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
