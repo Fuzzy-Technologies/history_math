@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1ad5c1f54b91",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет.",
+        "en": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration."
+      }
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 09.06.2024; адрес нельзя восстанавливать предположительно.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 09.06.2024; адрес нельзя восстанавливать предположительно.",
+        "en": "Provide a public link to the original publication confirming the date 09.06.2024; the address must not be guessed."
+      }
+    },
+    {
+      "id": "source-authorship",
+      "question": "Указать точный источник и библиографический локатор анекдота об Ампере и карете: русская редакция близко воспроизводит более ранний текст «Открытие не удалилось» из компиляции «Уголок весёлого архивариуса-3 (1976–1980)». Уточнить исходное авторство и основание адаптации либо оформить сюжет как явно атрибутированный пересказ; синхронизировать RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Указать точный источник и библиографический локатор анекдота об Ампере и карете: русская редакция близко воспроизводит более ранний текст «Открытие не удалилось» из компиляции «Уголок весёлого архивариуса-3 (1976–1980)». Уточнить исходное авторство и основание адаптации либо оформить сюжет как явно атрибутированный пересказ; синхронизировать RU/EN.",
+        "en": "Provide the exact source and bibliographic locator for the Ampère-and-carriage anecdote: the Russian edition closely follows the earlier story “Otkrytie ne udalilos” in the compilation Ugolok vesyologo arkhivariusa-3 (1976–1980). Clarify the original authorship and basis for adaptation, or present the story as an explicitly attributed retelling; keep RU/EN synchronized."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
