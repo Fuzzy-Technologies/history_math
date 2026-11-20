@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6c76790b24b2",
+  "questions": [
+    {
+      "id": "cover-authorship-rights",
+      "question": "Для мультяшной обложки указать подтверждённого создателя и правообладателя, проверяемый публичный источник и правовое основание использования. Формулировки «Авторская иллюстрация» и «Иллюстрация к материалу» сами по себе этого не подтверждают.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для мультяшной обложки указать подтверждённого создателя и правообладателя, проверяемый публичный источник и правовое основание использования. Формулировки «Авторская иллюстрация» и «Иллюстрация к материалу» сами по себе этого не подтверждают.",
+        "en": "For the cartoon cover, identify the verified creator and rights holder, a verifiable public source, and the legal basis for use. “Author’s illustration” and “Illustration accompanying the text” do not establish these facts."
+      }
+    },
+    {
+      "id": "zhukov-source-authorship",
+      "question": "Задача и разбор прямо приписаны А. В. Жукову («Квант», 1996; книга 2016), но корневые authors и rights_basis целиком приписывают материал Мансуру Гильмуллину. Отделить авторство исходной задачи и разбора Жукова от современной адаптации или редакции Мансура.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Задача и разбор прямо приписаны А. В. Жукову («Квант», 1996; книга 2016), но корневые authors и rights_basis целиком приписывают материал Мансуру Гильмуллину. Отделить авторство исходной задачи и разбора Жукова от современной адаптации или редакции Мансура.",
+        "en": "The problem and solution are explicitly attributed to A. V. Zhukov (Kvant, 1996; book edition, 2016), but the root authors and rights_basis attribute the material entirely to Mansur Gilmullin. Distinguish authorship of Zhukov’s source problem and solution from Mansur’s modern adaptation or editing."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
