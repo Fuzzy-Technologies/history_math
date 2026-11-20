@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-caad29cc6f86",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить последовательность поступления в заочную аспирантуру в 1931 году и окончания университета в 1934 году. Защита докторской в 1949 году и присуждение степени в 1950 году сохранены как разные события; согласовать названия учреждений и перевод татарского названия журнала.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить последовательность поступления в заочную аспирантуру в 1931 году и окончания университета в 1934 году. Защита докторской в 1949 году и присуждение степени в 1950 году сохранены как разные события; согласовать названия учреждений и перевод татарского названия журнала.",
+        "en": "Clarify the sequence of admission to extramural postgraduate study in 1931 and graduation in 1934. The 1949 doctoral defence and 1950 degree are retained as separate events; review the historical institution names and the Tatar journal title."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Установить для стороннего портрета Мазита Альмухамедова реальный публичный источник, фотографа/автора (если известен), лицензию или иной подтверждённый правовой статус; синхронизировать метаданные RU/EN и не приписывать авторство изображения М. Ф. Гильмуллину без подтверждения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить для стороннего портрета Мазита Альмухамедова реальный публичный источник, фотографа/автора (если известен), лицензию или иной подтверждённый правовой статус; синхронизировать метаданные RU/EN и не приписывать авторство изображения М. Ф. Гильмуллину без подтверждения.",
+        "en": "Establish the actual public source, photographer or creator (if known), licence or other verified legal status for the third-party portrait of Mazit Almukhamedov; synchronize the RU/EN metadata and do not attribute authorship of the image to M. F. Gilmullin without evidence."
+      }
+    },
+    {
+      "id": "professor-title-year",
+      "question": "Уточнить год присвоения Мазиту Альмухамедову звания профессора: Tatarica указывает 1951 год, а статья А. Ф. Галимджанова в КФУ (DOI 10.26907/2311-2042-2022-18-1-176-181) — 1950 год. Установить год по первичному документу и синхронизировать RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить год присвоения Мазиту Альмухамедову звания профессора: Tatarica указывает 1951 год, а статья А. Ф. Галимджанова в КФУ (DOI 10.26907/2311-2042-2022-18-1-176-181) — 1950 год. Установить год по первичному документу и синхронизировать RU/EN.",
+        "en": "Verify the year in which Mazit Almukhamedov received the title of professor: Tatarica gives 1951, while A. F. Galimdzhanov’s KFU article (DOI 10.26907/2311-2042-2022-18-1-176-181) gives 1950. Establish the year from a primary record and synchronize RU/EN."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
