@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-9e91cb14f85a",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Для двух портретов И. Г. Башмаковой указать публичные источники, фотографов или учреждения и действительное правовое основание воспроизведения; неподтверждённый источник и разрешение не позволяют публиковать изображения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для двух портретов И. Г. Башмаковой указать публичные источники, фотографов или учреждения и действительное правовое основание воспроизведения; неподтверждённый источник и разрешение не позволяют публиковать изображения.",
+        "en": "For the two portraits of I. G. Bashmakova, identify public sources, photographers or holding institutions, and a valid rights basis for reproduction; unconfirmed source and permission are insufficient for publication."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
