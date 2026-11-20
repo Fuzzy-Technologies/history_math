@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f947fb8c72e1-en",
+  "questions": [
+    {
+      "id": "portrait-provenance-and-subject",
+      "question": "For fig-2 and fig-3, identify the people shown, the source works or photographers, the rightsholders, verifiable public sources, and the legal bases for use; for fig-2, also confirm the identity of the person depicted.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For fig-2 and fig-3, identify the people shown, the source works or photographers, the rightsholders, verifiable public sources, and the legal bases for use; for fig-2, also confirm the identity of the person depicted.",
+        "ru": "Для fig-2 и fig-3 укажите изображённых людей, исходные произведения или фотографов, правообладателей, проверяемые публичные источники и правовые основания использования; для fig-2 отдельно подтвердите личность изображённого человека."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
