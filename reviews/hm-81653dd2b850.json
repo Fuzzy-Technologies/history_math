@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-81653dd2b850",
+  "questions": [
+    {
+      "id": "figure-authorship",
+      "question": "Подтвердить автора и проверяемый публичный источник обложки: подпись называет иллюстрацию авторской, но поля source и rights_basis этого не доказывают.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подтвердить автора и проверяемый публичный источник обложки: подпись называет иллюстрацию авторской, но поля source и rights_basis этого не доказывают.",
+        "en": "Confirm the creator and a verifiable public source for the cover: the caption calls it an author illustration, but the source and rights_basis fields do not substantiate that claim."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
