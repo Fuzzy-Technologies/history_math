@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8670960722e6",
+  "questions": [
+    {
+      "id": "carrot-cylinder-cone-section",
+      "question": "В указанном анекдоте Федина и на иллюстрации речь идёт о сечении цилиндра, а поясняющий абзац представляет морковь как конус и говорит, что при изменении угла получаются другие конические сечения. Решить, нужно ли согласовать геометрию с источником: косое сечение кругового цилиндра даёт эллипс, а для сечений конуса требуется уточнять положение плоскости относительно конуса.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "В указанном анекдоте Федина и на иллюстрации речь идёт о сечении цилиндра, а поясняющий абзац представляет морковь как конус и говорит, что при изменении угла получаются другие конические сечения. Решить, нужно ли согласовать геометрию с источником: косое сечение кругового цилиндра даёт эллипс, а для сечений конуса требуется уточнять положение плоскости относительно конуса.",
+        "en": "Fedin’s cited anecdote and the illustration concern a cylinder section, while the explanatory paragraph treats the carrot as a cone and says that changing the angle can yield other conic sections. Decide whether to align the geometry with the source: an oblique plane through a circular cylinder gives an ellipse, whereas cone sections require specifying the plane’s position relative to the cone."
+      }
+    },
+    {
+      "id": "english-cover-localization",
+      "question": "Общая обложка содержит только русские реплики «Петрова…» и «Морковка…». Для английской редакции нужна локализованная обложка либо явное редакторское решение оставить русскую.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Общая обложка содержит только русские реплики «Петрова…» и «Морковка…». Для английской редакции нужна локализованная обложка либо явное редакторское решение оставить русскую.",
+        "en": "The shared cover contains only the Russian captions “Петрова…” and “Морковка…”. The English edition needs a localized cover, or an explicit editorial decision to retain the Russian one."
+      }
+    },
+    {
+      "id": "cover-illustration-provenance",
+      "question": "Пометка «авторская иллюстрация» и запись «Авторский архив Мансура Гильмуллина» подтверждают хранение файла, но не устанавливают автора изображения, правообладателя, публичный источник и лицензию. До публикации нужно указать эти сведения либо снять неподтверждённое авторство.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Пометка «авторская иллюстрация» и запись «Авторский архив Мансура Гильмуллина» подтверждают хранение файла, но не устанавливают автора изображения, правообладателя, публичный источник и лицензию. До публикации нужно указать эти сведения либо снять неподтверждённое авторство.",
+        "en": "The label “author’s illustration” and the entry “Mansur Gilmullin’s archive” establish file custody, but do not identify the image creator, rightsholder, public source, or licence. Before publication, provide those details or remove the unsupported authorship claim."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
