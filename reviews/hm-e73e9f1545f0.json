@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-e73e9f1545f0",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Подтвердить конкретные исследования о 1823 годе рождения и календарные стили дат; уточнить абсолютное «во всех энциклопедических изданиях» в историческом тексте 2024 года. На медали действительно видны 1824–1871; это не заменяет редакторского решения о биографической датировке.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подтвердить конкретные исследования о 1823 годе рождения и календарные стили дат; уточнить абсолютное «во всех энциклопедических изданиях» в историческом тексте 2024 года. На медали действительно видны 1824–1871; это не заменяет редакторского решения о биографической датировке.",
+        "en": "Identify the specific research supporting the 1823 birth year and the calendar conventions; review the absolute claim about all encyclopaedic publications in this historical 2024 text. The medal visibly reads 1824–1871, which does not settle the biographical question."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Сверить первоисточники цитат Ушинского, Модзалевского и выступления 2021 года; согласовать перевод «народности воспитания» и названий русских педагогических книг.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить первоисточники цитат Ушинского, Модзалевского и выступления 2021 года; согласовать перевод «народности воспитания» и названий русских педагогических книг.",
+        "en": "Verify the original sources of the Ushinsky and Modzalevsky quotations and the 2021 speech; review the translation of narodnost in education and the Russian book titles."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить проверяемый источник и автора исторического портрета К. Д. Ушинского; для изображения медали — источник фотографии, изготовителя или правообладателя и подтверждённое основание воспроизведения. Хранение копий в авторском архиве не устанавливает права на изображения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить проверяемый источник и автора исторического портрета К. Д. Ушинского; для изображения медали — источник фотографии, изготовителя или правообладателя и подтверждённое основание воспроизведения. Хранение копий в авторском архиве не устанавливает права на изображения.",
+        "en": "Identify a verifiable source and creator for the historical portrait of K. D. Ushinsky; for the medal image, identify the photograph's source, maker or rights holder and a confirmed basis for reproduction. Possession of copies in an author's archive does not establish image rights."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
