@@ -1,0 +1,20 @@
+{
+  "review_version": 1,
+  "article_id": "hm-843204a0f888-en",
+  "questions": [
+    {
+      "id": "squaring-decimal-place-rule",
+      "question": "Please clarify the decimal version of the rule: for 5.5, apply the trick to 55, then restore two decimal places. The source result 30.25 is correct, but the decimal-point step is not explained separately; the formulation in terms of tens applies to integers.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Explained that squaring the integer without its decimal point doubles the number of decimal places and worked through 5.5.",
+      "localizations": {
+        "source": "Please clarify the decimal version of the rule: for 5.5, apply the trick to 55, then restore two decimal places. The source result 30.25 is correct, but the decimal-point step is not explained separately; the formulation in terms of tens applies to integers.",
+        "ru": "Уточнить применение правила к десятичным дробям: для 5,5 нужно сначала применить приём к 55, затем восстановить две цифры после запятой. Результат 30,25 в источнике верен, но перенос запятой отдельно не объяснён; основная формулировка про число десятков дана для целых чисел."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
