@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1cd0002dd980",
+  "questions": [
+    {
+      "id": "figure-provenance",
+      "question": "Для обоих исторических портретов Римана нужно указать автора или первичный публичный источник и действительное правовое основание/лицензию; отдельно подтвердить происхождение ретушированного портрета с подписью и датой 1863. Запись «авторский архив» описывает хранение копии, но не происхождение стороннего изображения.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Обе иллюстрации происходят от одного портрета 1863 года из коллекции Scientific Identity Библиотек Смитсоновского института, опубликованного на Wikimedia Commons как Georg Friedrich Bernhard Riemann.jpeg. Фотограф неизвестен; Commons отмечает файл как общественное достояние с Creative Commons Public Domain Mark 1.0. Первая версия кадрирована и оформлена рамкой, во второй сохранено факсимиле подписи. Метаданные RU/EN синхронизированы.",
+      "localizations": {
+        "source": "Для обоих исторических портретов Римана нужно указать автора или первичный публичный источник и действительное правовое основание/лицензию; отдельно подтвердить происхождение ретушированного портрета с подписью и датой 1863. Запись «авторский архив» описывает хранение копии, но не происхождение стороннего изображения.",
+        "en": "For both historical portraits of Riemann, identify the creator or primary public source and the actual rights basis or licence; separately confirm the provenance of the retouched portrait bearing the signature and date 1863. “Author’s archive” describes custody of a copy, not the origin of a third-party image."
+      }
+    },
+    {
+      "id": "zeta-chronology",
+      "question": "Проверить, что статья различает вклад Эйлера 1737 года в представление ряда и произведения по простым числам при вещественном аргументе и работу Римана 1859 года об аналитическом продолжении дзета-функции на комплексную плоскость и её нетривиальных нулях.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Проверить, что статья различает вклад Эйлера 1737 года в представление ряда и произведения по простым числам при вещественном аргументе и работу Римана 1859 года об аналитическом продолжении дзета-функции на комплексную плоскость и её нетривиальных нулях.",
+        "en": "Verify that the article distinguishes Euler’s 1737 work on the series and prime product for a real argument from Riemann’s 1859 work on analytic continuation of the zeta function to the complex plane and its non-trivial zeros."
+      },
+      "resolution": "Текст согласован: вклад Эйлера 1737 года описан для ряда и произведения по простым числам при вещественном аргументе, а работа Римана 1859 года — для аналитического продолжения дзета-функции на комплексную плоскость и гипотезы о её нетривиальных нулях. Проверено по DLMF §25.2 и материалам Clay Mathematics Institute."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-20",
+    "package_sha256": "8943d03cffc69cabfcd7eea0ce6184a9e53195bfb65c008f947a8d8b1db01b3b",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/465#pullrequestreview-5986003276",
+    "source_commit": "84e482215f250ef0b49ea0d1fd2e2aeb789679b4",
+    "source_review_id": 5986003276,
+    "approved_at": "2026-11-20T01:07:56Z",
+    "delegated_by": "Tim55667757"
+  }
+}
