@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c2ca386d390b",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Сверить год переезда Раабе в Цюрих: пост связывает сам переезд с осенью 1831 года, тогда как Исторический словарь Швейцарии указывает 1832 год. В MacTutor осень 1831 относится к эпидемии и прекращению уроков в Вене, затем описан отъезд без столь же явной даты. Возможно, смешаны начало эпидемии и переезд; согласовать обе версии. https://hls-dhs-dss.ch/de/articles/031631/ ; https://mathshistory.st-andrews.ac.uk/Biographies/Raabe/ .",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Исправлено по Историческому словарю Швейцарии: эпидемия холеры и прекращение уроков относятся к осени 1831 года, а переезд Раабе в Цюрих — к 1832 году.",
+      "localizations": {
+        "source": "Сверить год переезда Раабе в Цюрих: пост связывает сам переезд с осенью 1831 года, тогда как Исторический словарь Швейцарии указывает 1832 год. В MacTutor осень 1831 относится к эпидемии и прекращению уроков в Вене, затем описан отъезд без столь же явной даты. Возможно, смешаны начало эпидемии и переезд; согласовать обе версии. https://hls-dhs-dss.ch/de/articles/031631/ ; https://mathshistory.st-andrews.ac.uk/Biographies/Raabe/ .",
+        "en": "Verify the year of Raabe’s move to Zurich: the post places the move in autumn 1831, whereas the Historical Dictionary of Switzerland gives 1832. MacTutor dates the cholera outbreak and interruption of his Vienna lessons to autumn 1831, then describes the move without an equally explicit date. The epidemic and the move may have been conflated; approve the wording in both versions. https://hls-dhs-dss.ch/de/articles/031631/ ; https://mathshistory.st-andrews.ac.uk/Biographies/Raabe/ ."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Для исходного и ретушированного портретов Раабе указать фактический публичный источник, автора/издание и лицензию либо основание общественного достояния. Отдельно зафиксировать происхождение ретуши; «из авторского архива» не превращает историческое изображение третьего лица в авторское.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для исходного и ретушированного портретов Раабе указать фактический публичный источник, автора/издание и лицензию либо основание общественного достояния. Отдельно зафиксировать происхождение ретуши; «из авторского архива» не превращает историческое изображение третьего лица в авторское.",
+        "en": "For the original and retouched portraits of Raabe, provide the actual public source, creator or edition, and a licence or public-domain basis. Record the provenance of the retouch separately; “from the author’s archive” does not make a third-party historical image an author-created work."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
