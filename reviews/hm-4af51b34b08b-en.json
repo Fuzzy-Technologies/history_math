@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-4af51b34b08b-en",
+  "questions": [
+    {
+      "id": "support-links",
+      "question": "Please confirm the destinations and continued inclusion of the original support and book links in this permanent journal version: https://telegram.me/tribute/app?startapp=djsd and https://web.tribute.tg/l/w6 .",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Please confirm the destinations and continued inclusion of the original support and book links in this permanent journal version: https://telegram.me/tribute/app?startapp=djsd and https://web.tribute.tg/l/w6 .",
+        "ru": "Второй комментарий содержит исходные ссылки для поздравления/поддержки и покупки книг: https://telegram.me/tribute/app?startapp=djsd и https://web.tribute.tg/l/w6 . Они сохранены кликабельными с историческим текстом; перед публикацией подтвердить актуальность назначения и желание оставить их в постоянной журнальной версии."
+      }
+    },
+    {
+      "id": "mansur-photo-provenance",
+      "question": "For all three photographs of Mansur Gilmullin, record the photographer or rights holder, a verifiable public source where available, and the permission or legal basis for publication; “author’s archive” alone does not establish authorship or usage rights.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "For all three photographs of Mansur Gilmullin, record the photographer or rights holder, a verifiable public source where available, and the permission or legal basis for publication; “author’s archive” alone does not establish authorship or usage rights.",
+        "ru": "Для всех трёх фотографий Мансура Гильмуллина указать фотографа или правообладателя, проверяемый публичный источник при наличии и разрешение либо правовое основание публикации: помета «авторский архив» сама по себе не устанавливает авторство и права использования."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
