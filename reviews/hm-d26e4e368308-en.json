@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d26e4e368308-en",
+  "questions": [
+    {
+      "id": "markov-portrait-provenance",
+      "question": "The portrait of A. A. Markov (`fig-2`) needs its actual creator or provenance, a verifiable public source and a confirmed rights basis; a historical portrait must not be described as material from the author’s archive without evidence.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "The portrait of A. A. Markov (`fig-2`) needs its actual creator or provenance, a verifiable public source and a confirmed rights basis; a historical portrait must not be described as material from the author’s archive without evidence.",
+        "ru": "Для портрета А. А. Маркова (`fig-2`) нужны фактический автор или происхождение, проверяемый публичный источник и подтверждённое правовое основание; исторический портрет нельзя обозначать как материал авторского архива без доказательства."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
