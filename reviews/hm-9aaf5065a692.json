@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-9aaf5065a692",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации.",
+        "en": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration."
+      }
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Для сохранённой даты 2023-09-17 нужна проверяемая ссылка на исходную публикацию (`original_publication.url` и `source_url`).",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для сохранённой даты 2023-09-17 нужна проверяемая ссылка на исходную публикацию (`original_publication.url` и `source_url`).",
+        "en": "The preserved date 2023-09-17 needs a verifiable original-publication link (`original_publication.url` and `source_url`)."
+      }
+    },
+    {
+      "id": "original-authorship",
+      "question": "Подтвердить оригинальное авторство Мансура Гильмуллина для этой шутки либо оформить материал как анонимную адаптацию с указанием публичного источника, существовавшего не позднее 2009 года.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подтвердить оригинальное авторство Мансура Гильмуллина для этой шутки либо оформить материал как анонимную адаптацию с указанием публичного источника, существовавшего не позднее 2009 года.",
+        "en": "Confirm Mansur Gilmullin’s original authorship of this joke, or present it as an anonymous adaptation citing a public source that existed no later than 2009."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
