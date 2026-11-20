@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2fba977e5a60",
+  "questions": [
+    {
+      "id": "bhaskara-zero-quotation",
+      "question": "Уточнить страницу и основание атрибуции реплики про ноль яблок и ноль в уравнении в книге George Gheverghese Joseph «The Crest of the Peacock» (2011): в доступном тексте издания соответствующая реплика не найдена. Согласовать источник либо помету о характере шутки; год издания подтверждён.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить страницу и основание атрибуции реплики про ноль яблок и ноль в уравнении в книге George Gheverghese Joseph «The Crest of the Peacock» (2011): в доступном тексте издания соответствующая реплика не найдена. Согласовать источник либо помету о характере шутки; год издания подтверждён.",
+        "en": "Please identify the page and basis for attributing the lines about zero apples and zero in an equation to George Gheverghese Joseph’s The Crest of the Peacock (2011): the passage has not been found in the available text of the edition. Please agree a source or a note describing it as a joke; the publication year is confirmed."
+      }
+    },
+    {
+      "id": "bhaskara-collage-provenance",
+      "question": "Для коллажа `fig-2` нужны фотограф, источник и лицензия современной фотографии статуи, а также корректный кредит и лицензия листа рукописи из Wellcome Collection; описание и датировку рукописи следует привести точно по выбранному каталогу.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для коллажа `fig-2` нужны фотограф, источник и лицензия современной фотографии статуи, а также корректный кредит и лицензия листа рукописи из Wellcome Collection; описание и датировку рукописи следует привести точно по выбранному каталогу.",
+        "en": "The `fig-2` collage needs the photographer, source and licence for the modern statue photograph, plus the correct credit and licence for the manuscript leaf from the Wellcome Collection; the manuscript description and date should match the selected catalogue exactly."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
