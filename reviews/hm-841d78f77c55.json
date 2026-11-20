@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-841d78f77c55",
+  "questions": [
+    {
+      "id": "wiener-anecdote-sources",
+      "question": "Уточнить точное издание и страницу Ивза для развязки winner/Wiener, а также публикационные указатели для воспоминаний Филлис Л. Блок и Джина Б. Чейза. Wiener и winner не являются обычными английскими омофонами, а текущий список даёт лишь общие ссылки; эту подборку пяти баек следует сохранить отдельно от уже подготовленной биографии Винера.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить точное издание и страницу Ивза для развязки winner/Wiener, а также публикационные указатели для воспоминаний Филлис Л. Блок и Джина Б. Чейза. Wiener и winner не являются обычными английскими омофонами, а текущий список даёт лишь общие ссылки; эту подборку пяти баек следует сохранить отдельно от уже подготовленной биографии Винера.",
+        "en": "Confirm the exact Eves edition and page for the winner/Wiener punchline, and publication locators for Phyllis L. Block’s and Gene B. Chase’s recollections. Wiener and winner are not standard English homophones, while the current source list gives only general references; keep this five-story collection separate from the existing Wiener biography."
+      }
+    },
+    {
+      "id": "wiener-portrait-provenance",
+      "question": "Для портрета Норберта Винера укажите исходное произведение или фотографа, правообладателя, проверяемый публичный источник и правовое основание использования. Ссылка на авторский архив сама по себе не подтверждает авторство или лицензию.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для портрета Норберта Винера укажите исходное произведение или фотографа, правообладателя, проверяемый публичный источник и правовое основание использования. Ссылка на авторский архив сама по себе не подтверждает авторство или лицензию.",
+        "en": "For the portrait of Norbert Wiener, identify the source work or photographer, the rightsholder, a verifiable public source, and the legal basis for use. A reference to the author’s archive alone does not establish authorship or a licence."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
