@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a2203cf87eba",
+  "questions": [
+    {
+      "id": "bossut-source-and-cover",
+      "question": "Подтвердить документальный источник предсмертного анекдота о Шарле Боссю: авторитетная биография MacTutor подтверждает годы жизни и научную карьеру, но не приводит этот эпизод. Для карточки рубрики «Математики шутят» также нужна фактическая обложка: сейчас figures и image manifest пусты.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подтвердить документальный источник предсмертного анекдота о Шарле Боссю: авторитетная биография MacTutor подтверждает годы жизни и научную карьеру, но не приводит этот эпизод. Для карточки рубрики «Математики шутят» также нужна фактическая обложка: сейчас figures и image manifest пусты.",
+        "en": "Please confirm a documentary source for the deathbed anecdote about Charles Bossut: the authoritative MacTutor biography confirms his dates and career but does not include this episode. The Mathematicians Joke card also needs an actual cover; figures and the image manifest are currently empty."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
