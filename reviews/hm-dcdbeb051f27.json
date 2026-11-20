@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-dcdbeb051f27",
+  "questions": [
+    {
+      "id": "degas-stock-exchange-metadata",
+      "question": "Исправить сведения об обложке по каталогу Musée d’Orsay: Эдгар Дега, «Портреты на бирже», 1878–1879, холст, масло; указать официальный публичный источник и правовое основание.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Исправить сведения об обложке по каталогу Musée d’Orsay: Эдгар Дега, «Портреты на бирже», 1878–1879, холст, масло; указать официальный публичный источник и правовое основание.",
+        "en": "Correct the cover metadata from the Musée d’Orsay catalogue: Edgar Degas, Portraits at the Stock Exchange, 1878–1879, oil on canvas; cite the official public source and rights basis."
+      },
+      "resolution": "Исправлено по официальному каталогу Musée d’Orsay: 1878–1879, холст, масло; добавлены официальный источник и Public Domain."
+    },
+    {
+      "id": "degas-reproduction-provenance",
+      "question": "Для точных байтов репродукции Дега, использованной как обложка, подтвердить публичный источник или URL загрузки и скорректировать кредит в обеих редакциях по официальной записи: © Musée d’Orsay, dist. GrandPalaisRmn / Patrice Schmidt. Истечение срока охраны самой картины и помета Public Domain не подтверждают правовой статус этой конкретной цифровой репродукции.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для точных байтов репродукции Дега, использованной как обложка, подтвердить публичный источник или URL загрузки и скорректировать кредит в обеих редакциях по официальной записи: © Musée d’Orsay, dist. GrandPalaisRmn / Patrice Schmidt. Истечение срока охраны самой картины и помета Public Domain не подтверждают правовой статус этой конкретной цифровой репродукции.",
+        "en": "For the exact bytes of the Degas reproduction used as the cover, confirm the public source or download URL and correct the credit in both editions to match the official record: © Musée d’Orsay, dist. GrandPalaisRmn / Patrice Schmidt. Expiry of copyright in the painting itself and a Public Domain label do not establish the legal status of this specific digital reproduction."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
