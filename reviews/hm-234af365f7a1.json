@@ -1,0 +1,19 @@
+{
+  "review_version": 1,
+  "article_id": "hm-234af365f7a1",
+  "questions": [
+    {
+      "id": "von-neumann-portrait-provenance",
+      "question": "Для исторического портрета Джона фон Неймана (figure-02) указать исходное изображение, автора или хранилище, проверяемый публичный источник и правовое основание ретуши и публикации.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для исторического портрета Джона фон Неймана (figure-02) указать исходное изображение, автора или хранилище, проверяемый публичный источник и правовое основание ретуши и публикации.",
+        "en": "For the historical portrait of John von Neumann (figure-02), identify the original image, its creator or holding institution, a verifiable public source, and the legal basis for retouching and publication."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
