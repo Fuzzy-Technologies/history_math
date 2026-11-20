@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1481f35e13cf-en",
+  "questions": [
+    {
+      "id": "joke-cover",
+      "question": "This “Mathematicians Joke” item has no actual cover. Add the selected cover and record its provenance and rights in both editions.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "This “Mathematicians Joke” item has no actual cover. Add the selected cover and record its provenance and rights in both editions.",
+        "ru": "У материала рубрики «Математики шутят» отсутствует фактическая обложка. Добавьте выбранную обложку и укажите её происхождение и права в обеих редакциях."
+      }
+    },
+    {
+      "id": "source-authorship",
+      "question": "Establish the joke’s primary source and authorship or identify this item as an adaptation; nearly identical wording appeared in the November 1999 issue of Hacker magazine: https://nzdr.ru/data/media/biblio/j/xak/1999/xa-1999-11-011.pdf. Do not credit Mansur Gilmullin as its author without evidence.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Establish the joke’s primary source and authorship or identify this item as an adaptation; nearly identical wording appeared in the November 1999 issue of Hacker magazine: https://nzdr.ru/data/media/biblio/j/xak/1999/xa-1999-11-011.pdf. Do not credit Mansur Gilmullin as its author without evidence.",
+        "ru": "Установить первичный источник и авторство шутки либо обозначить материал как адаптацию; практически дословный текст опубликован в журнале «Хакер» в ноябре 1999 года: https://nzdr.ru/data/media/biblio/j/xak/1999/xa-1999-11-011.pdf. Не указывать Мансура Гильмуллина автором без подтверждения."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
