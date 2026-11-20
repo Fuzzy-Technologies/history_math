@@ -1,0 +1,59 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0950bccddc49",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить утверждения о первенстве математических терминов и смысл «ученик Лейбница»: было ли непосредственное обучение или речь о влиянии и переписке? Основной текст пока сохраняет авторские формулировки.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить утверждения о первенстве математических терминов и смысл «ученик Лейбница»: было ли непосредственное обучение или речь о влиянии и переписке? Основной текст пока сохраняет авторские формулировки.",
+        "en": "Clarify the priority claims for mathematical terminology and whether “pupil of Leibniz” means direct instruction or intellectual influence and correspondence. The drafts retain the author’s formulations."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Сверить выходные данные Elementa matheseos universae, включая место «Магдебург», годы, состав и объёмы томов; уточнить, требуется ли полное обозначение Halle Magdeburgica. Проверить источник легенды о долгах студентов, сохранив её явное обозначение легендой.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Сверить выходные данные Elementa matheseos universae, включая место «Магдебург», годы, состав и объёмы томов; уточнить, требуется ли полное обозначение Halle Magdeburgica. Проверить источник легенды о долгах студентов, сохранив её явное обозначение легендой.",
+        "en": "Verify the imprint of Elementa matheseos universae, including “Magdeburg”, dates, contents and page counts, and whether Halle Magdeburgica needs to be specified. Establish a source for the student-debt legend while retaining its explicit identification as a legend."
+      }
+    },
+    {
+      "id": "image-attribution",
+      "question": "Для двух исторических гравюр Христиана Вольфа установить гравёра или иного создателя, дату, проверяемый публичный источник и лицензию либо подтверждённый статус общественного достояния; авторский архив не заменяет эти сведения.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для двух исторических гравюр Христиана Вольфа установить гравёра или иного создателя, дату, проверяемый публичный источник и лицензию либо подтверждённый статус общественного достояния; авторский архив не заменяет эти сведения.",
+        "en": "For the two historical engravings of Christian Wolff, establish the engraver or other creator, date, verifiable public source and licence or confirmed public-domain status; an author’s archive does not replace this information."
+      }
+    },
+    {
+      "id": "marburg-appointment",
+      "question": "Согласовать марбургскую должность Вольфа: каталог Марбургского университета датирует его назначение ординарным профессором математики на философском факультете 15 ноября 1723 года; сейчас в тексте указан профессор философии с 1724 года. Источник: https://professorenkatalog.online.uni-marburg.de/de/pkat/idrec?id=9849",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Согласовать марбургскую должность Вольфа: каталог Марбургского университета датирует его назначение ординарным профессором математики на философском факультете 15 ноября 1723 года; сейчас в тексте указан профессор философии с 1724 года. Источник: https://professorenkatalog.online.uni-marburg.de/de/pkat/idrec?id=9849",
+        "en": "Reconcile Wolff’s Marburg appointment: the university catalogue dates his appointment as full professor of mathematics in the Faculty of Philosophy to 15 November 1723, while the article currently calls him professor of philosophy from 1724. Source: https://professorenkatalog.online.uni-marburg.de/de/pkat/idrec?id=9849"
+      }
+    },
+    {
+      "id": "original-post-url",
+      "question": "Установить точный публичный URL исходной публикации Telegram · history_math от 11 июля 2024 года и синхронно указать его в `original_publication.url` и `source_url` обеих редакций.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить точный публичный URL исходной публикации Telegram · history_math от 11 июля 2024 года и синхронно указать его в `original_publication.url` и `source_url` обеих редакций.",
+        "en": "Establish the exact public URL of the original Telegram · history_math post dated 11 July 2024 and record it consistently in `original_publication.url` and `source_url` in both editions."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
