@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0e59afc3a140",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации.",
+        "en": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration."
+      }
+    },
+    {
+      "id": "original-authorship",
+      "question": "Подтвердить оригинальное авторство Мансура Гильмуллина для этой шутки либо оформить материал как анонимную адаптацию с указанием публичного источника, где точная фраза использовалась не позднее 2016 года.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подтвердить оригинальное авторство Мансура Гильмуллина для этой шутки либо оформить материал как анонимную адаптацию с указанием публичного источника, где точная фраза использовалась не позднее 2016 года.",
+        "en": "Confirm Mansur Gilmullin’s original authorship of this joke, or present it as an anonymous adaptation citing a public source where the exact phrase was used no later than 2016."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
