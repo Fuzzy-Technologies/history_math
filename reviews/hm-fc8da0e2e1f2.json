@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-fc8da0e2e1f2",
+  "questions": [
+    {
+      "id": "jordanus-book-and-anecdote",
+      "question": "Уточнить источник шутливой легенды о подвешенных книгах: требуется полное библиографическое описание работы Маршалла Клагетта и страница с этим эпизодом.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить источник шутливой легенды о подвешенных книгах: требуется полное библиографическое описание работы Маршалла Клагетта и страница с этим эпизодом.",
+        "en": "Please verify the source of the humorous legend about the suspended books. Full bibliographic details for the work attributed to Marshall Clagett and the page containing the story are required."
+      }
+    },
+    {
+      "id": "cover-illustration-provenance",
+      "question": "Для иллюстрации укажите автора или создателя, правообладателя, проверяемый публичный источник и правовое основание использования. Формулировка «из авторского архива» описывает хранение, но сама по себе не подтверждает авторство или лицензию.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для иллюстрации укажите автора или создателя, правообладателя, проверяемый публичный источник и правовое основание использования. Формулировка «из авторского архива» описывает хранение, но сама по себе не подтверждает авторство или лицензию.",
+        "en": "For the illustration, identify the author or creator, the rightsholder, a verifiable public source, and the legal basis for use. “From the author’s archive” describes custody but does not by itself establish authorship or a licence."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
