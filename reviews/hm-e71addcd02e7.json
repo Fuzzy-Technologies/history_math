@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-e71addcd02e7",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить должность Гюйгенса в Парижской академии наук и формулировку о её первом президенте и пятнадцати годах руководства; согласовать дату выхода «Трактата о свете», указанную в исходнике как 1678 год.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Исправлены статус Гюйгенса в Академии и даты представления и публикации «Трактата о свете».",
+      "localizations": {
+        "source": "Уточнить должность Гюйгенса в Парижской академии наук и формулировку о её первом президенте и пятнадцати годах руководства; согласовать дату выхода «Трактата о свете», указанную в исходнике как 1678 год.",
+        "en": "Verify Huygens’s position at the Paris Academy of Sciences and the statements that he was its first president and led it for fifteen years; agree the publication date of Treatise on Light, given as 1678 in the source."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Проверить приоритеты открытий колец Сатурна, часовой спирали и карманных часов, совместную работу с Гуком над температурными точками и точность утверждения о первой книге с гелиоцентрической системой в России.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Уточнены спорный приоритет балансирной спирали, термометрия и осторожная формулировка о русском издании.",
+      "localizations": {
+        "source": "Проверить приоритеты открытий колец Сатурна, часовой спирали и карманных часов, совместную работу с Гуком над температурными точками и точность утверждения о первой книге с гелиоцентрической системой в России.",
+        "en": "Verify the priority claims concerning Saturn’s rings, the balance spring and the pocket watch, the work with Hooke on fixed temperature points, and the claim about the first book presenting heliocentrism in Russia."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Подтвердить публично проверяемые первоисточники, авторство и правовое основание воспроизведения портрета Гюйгенса, музейной фотографии часов и книги, а также титульного листа «Cosmotheoros».",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Подтвердить публично проверяемые первоисточники, авторство и правовое основание воспроизведения портрета Гюйгенса, музейной фотографии часов и книги, а также титульного листа «Cosmotheoros».",
+        "en": "Confirm publicly verifiable original sources, authorship and legal basis for reproducing Huygens’s portrait, the museum photograph of the clock and book, and the title page of Cosmotheoros."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
