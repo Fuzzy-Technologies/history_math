@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-677b7fa2ed54-en",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+        "ru": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет."
+      }
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Provide a public link to the original publication and confirm its date; do not change the date without a primary source, and do not guess the address.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide a public link to the original publication and confirm its date; do not change the date without a primary source, and do not guess the address.",
+        "ru": "Указать публичную ссылку на исходную публикацию и подтвердить её дату; дату не менять без первичного источника, адрес нельзя восстанавливать предположительно."
+      }
+    },
+    {
+      "id": "ampere-door-note-source",
+      "question": "Provide a printed or archival source for the anecdote about the note on Ampère’s door; until verified, label it as an unconfirmed retelling.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Provide a printed or archival source for the anecdote about the note on Ampère’s door; until verified, label it as an unconfirmed retelling.",
+        "ru": "Указать печатный или архивный источник для анекдота о записке на двери Ампера; до подтверждения обозначить сюжет как неподтверждённый пересказ."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
