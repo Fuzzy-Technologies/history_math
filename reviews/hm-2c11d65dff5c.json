@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2c11d65dff5c",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить день рождения Монжа: пост даёт 10 мая 1746 года, как каталог BnF и французский Сенат, но MacTutor и архивная биография на Annales дают 9 мая; последний текст ссылается на акт рождения. До решения авторское 10 мая сохранено в RU/EN, исходная дата 12 мая не меняется. Источники: https://catalogue.bnf.fr/ark%3A/12148/cb121412336 ; https://www.senat.fr/pair-de-france/monge_gaspardpf1059.html ; https://mathshistory.st-andrews.ac.uk/Biographies/Monge/ ; https://annales.org/archives/x/monge1.html .",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Исправлено на 9 мая 1746 года по акту крещения из Муниципального архива Бона (série 1 GG), опубликованному Центром исторических исследований Бона; в записи указано, что Монж родился в тот же день.",
+      "localizations": {
+        "source": "Уточнить день рождения Монжа: пост даёт 10 мая 1746 года, как каталог BnF и французский Сенат, но MacTutor и архивная биография на Annales дают 9 мая; последний текст ссылается на акт рождения. До решения авторское 10 мая сохранено в RU/EN, исходная дата 12 мая не меняется. Источники: https://catalogue.bnf.fr/ark%3A/12148/cb121412336 ; https://www.senat.fr/pair-de-france/monge_gaspardpf1059.html ; https://mathshistory.st-andrews.ac.uk/Biographies/Monge/ ; https://annales.org/archives/x/monge1.html .",
+        "en": "Confirm Monge’s birth date. The post gives 10 May 1746, as do the BnF catalogue and French Senate; MacTutor and the archival biography on Annales give 9 May, with the latter citing the birth record. The author’s 10 May is retained in both versions pending a decision; the separate original publication date, 12 May, remains unchanged. Sources: https://catalogue.bnf.fr/ark%3A/12148/cb121412336 ; https://www.senat.fr/pair-de-france/monge_gaspardpf1059.html ; https://mathshistory.st-andrews.ac.uk/Biographies/Monge/ ; https://annales.org/archives/x/monge1.html ."
+      }
+    },
+    {
+      "id": "image-provenance",
+      "question": "Гравированный портрет (fig-2) установлен: J. M. Fontaine по рисунку Ашиля Девериа, Wellcome Collection, 6974i, Public Domain Mark. Для цветного портрета fig-1 по-прежнему требуется фактический публичный первоисточник и правовое основание использования; сведения синхронизировать в RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Гравированный портрет (fig-2) установлен: J. M. Fontaine по рисунку Ашиля Девериа, Wellcome Collection, 6974i, Public Domain Mark. Для цветного портрета fig-1 по-прежнему требуется фактический публичный первоисточник и правовое основание использования; сведения синхронизировать в RU/EN.",
+        "en": "The engraved portrait (fig-2) is identified as J. M. Fontaine after Achille Devéria, Wellcome Collection 6974i, Public Domain Mark. The actual public source and legal basis for the colour portrait in fig-1 are still required; keep the RU/EN metadata aligned."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
