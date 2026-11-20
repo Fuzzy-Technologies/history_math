@@ -1,0 +1,51 @@
+{
+  "review_version": 1,
+  "article_id": "hm-830083448e18",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить формулировки о членстве Кронекера в академиях, теореме о совместности и дельте Кронекера.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Статусы изложены без спорных дат; критерий назван теоремой Кронекера — Капелли, а неподтверждённая дата дельты удалена.",
+      "localizations": {
+        "source": "Уточнить формулировки о членстве Кронекера в академиях, теореме о совместности и дельте Кронекера.",
+        "en": "Clarify the wording of Kronecker’s academy memberships, the consistency theorem and the Kronecker delta."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Разграничить приписываемую Кронекеру цитату и авторскую оценку его споров с другими школами.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Цитата обозначена как приписываемая Кронекеру; оценочная характеристика заменена нейтральным описанием научно-философских споров.",
+      "localizations": {
+        "source": "Разграничить приписываемую Кронекеру цитату и авторскую оценку его споров с другими школами.",
+        "en": "Distinguish the quotation attributed to Kronecker from the author’s assessment of his disputes with other schools."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить проверяемый первоисточник, автора или фотографа, дату и лицензию либо подтверждённый public-domain status портрета Леопольда Кронекера.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Установить проверяемый первоисточник, автора или фотографа, дату и лицензию либо подтверждённый public-domain status портрета Леопольда Кронекера.",
+        "en": "Identify a verifiable primary source, author or photographer, date and licence or confirmed public-domain status for the portrait of Leopold Kronecker."
+      }
+    },
+    {
+      "id": "q4",
+      "question": "Уточнить профессорский статус Кронекера в Берлинском университете в 1883 году: каталог Прусского тайного государственного архива указывает ordentlicher Professor, а Deutsche Biographie — außerordentlicher (ao.) Professor; согласовать RU/EN по проверенному архивному документу.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить профессорский статус Кронекера в Берлинском университете в 1883 году: каталог Прусского тайного государственного архива указывает ordentlicher Professor, а Deutsche Biographie — außerordentlicher (ao.) Professor; согласовать RU/EN по проверенному архивному документу.",
+        "en": "Resolve Kronecker’s professorial rank at the University of Berlin in 1883: the Prussian state archive catalogue describes an appointment as ordentlicher Professor, while Deutsche Biographie says außerordentlicher (ao.) Professor; align RU and EN with the verified archival record."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
