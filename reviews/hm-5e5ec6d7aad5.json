@@ -1,0 +1,29 @@
+{
+  "review_version": 1,
+  "article_id": "hm-5e5ec6d7aad5",
+  "questions": [
+    {
+      "id": "continued-fractions",
+      "question": "Уточнить фразу о цепных дробях и задачах «типа Пелля»: приведённая биография MacTutor описывает занимательные задачи, перевод Диофанта и теорию чисел, но не подтверждает именно связь с уравнением Пелля. Требуется конкретный источник и указание вида неопределённых уравнений либо согласованное уточнение абзаца в обеих версиях. Авторская формулировка пока сохранена; источник для сверки: https://mathshistory.st-andrews.ac.uk/Biographies/Bachet/ .",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить фразу о цепных дробях и задачах «типа Пелля»: приведённая биография MacTutor описывает занимательные задачи, перевод Диофанта и теорию чисел, но не подтверждает именно связь с уравнением Пелля. Требуется конкретный источник и указание вида неопределённых уравнений либо согласованное уточнение абзаца в обеих версиях. Авторская формулировка пока сохранена; источник для сверки: https://mathshistory.st-andrews.ac.uk/Biographies/Bachet/ .",
+        "en": "Please provide a specific source for the link between Bachet’s continued-fraction methods and Pell-type equations, or agree a more precise description of the indeterminate equations concerned. The cited MacTutor biography does not establish that particular connection; the source wording remains pending review."
+      }
+    },
+    {
+      "id": "portrait-attribution",
+      "question": "Для обоих исторических гравированных портретов указать фактического автора/издание либо публичную карточку и действительное правовое основание или лицензию; сведения синхронизировать в RU/EN.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Для обоих исторических гравированных портретов указать фактического автора/издание либо публичную карточку и действительное правовое основание или лицензию; сведения синхронизировать в RU/EN.",
+        "en": "For both historical engraved portraits, identify the actual artist/publication or a public catalogue record and state the valid legal basis or licence; synchronize the information in RU/EN."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
