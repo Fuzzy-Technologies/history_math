@@ -1,0 +1,30 @@
+{
+  "review_version": 1,
+  "article_id": "hm-aa4d9b7cb4ac-en",
+  "questions": [
+    {
+      "id": "e-compound-interest-normalisation",
+      "question": "Please specify the compound-interest model: the limit (1 + 1/n)^n = e is the final balance for an initial principal of 1 and a 100% annual rate; the interest earned is e − 1. The source gives neither normalisation and calls the limit interest income. Please agree precise wording in both editions.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Both editions now specify principal 1, a 100% annual rate and n compounding periods: the final balance tends to e and the interest earned to e − 1.",
+      "localizations": {
+        "source": "Please specify the compound-interest model: the limit (1 + 1/n)^n = e is the final balance for an initial principal of 1 and a 100% annual rate; the interest earned is e − 1. The source gives neither normalisation and calls the limit interest income. Please agree precise wording in both editions.",
+        "ru": "Уточнить финансовую модель: предел (1 + 1/n)^n = e описывает итоговый капитал при начальном капитале 1 и годовой ставке 100%, а сам процентный доход равен e − 1. В источнике нет условий о капитале и ставке, а предел назван доходом. Согласовать точную формулировку для обеих версий."
+      }
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Add a verifiable link to the original publication dated 19 April 2024. With preserve_date: true, both original_publication.url and source_url are currently absent, so the preserved date cannot be verified.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Add a verifiable link to the original publication dated 19 April 2024. With preserve_date: true, both original_publication.url and source_url are currently absent, so the preserved date cannot be verified.",
+        "ru": "Добавить проверяемую ссылку на исходную публикацию от 19 апреля 2024 года. Сейчас при preserve_date: true отсутствуют и original_publication.url, и source_url, поэтому исходную дату нельзя подтвердить."
+      }
+    }
+  ],
+  "approval": {
+    "status": "pending"
+  }
+}
