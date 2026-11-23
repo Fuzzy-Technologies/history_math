@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-a24d6c2dacf2
 source_work_id: hm-a24d6c2dacf2
 layout: article
-title: 😈 Круглоед
+title: Круглоед
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин

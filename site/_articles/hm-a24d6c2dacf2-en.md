@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-a24d6c2dacf2-en
 source_work_id: hm-a24d6c2dacf2
 layout: article
-title: 😈 Krugloyed, the round-D creature
+title: Krugloyed, the round-D creature
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin
