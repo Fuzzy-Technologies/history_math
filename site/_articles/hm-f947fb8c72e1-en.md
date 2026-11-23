@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-f947fb8c72e1-en
 source_work_id: hm-f947fb8c72e1
 layout: article
-title: 🎲 Probability theory is a big subject
+title: Probability theory is a big subject
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin

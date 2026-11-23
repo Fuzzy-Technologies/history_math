@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-f947fb8c72e1
 source_work_id: hm-f947fb8c72e1
 layout: article
-title: 🎲 Теорвер большой
+title: Теорвер большой
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин
