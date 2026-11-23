@@ -31,6 +31,26 @@
         "source": "Указать для портрета Иосифа Погребысского конкретный публичный первоисточник, автора или фотографа (если установлен), лицензию либо иное подтверждённое основание публикации: записи «Авторский архив Мансура Гильмуллина» и «Иллюстрация к материалу» не устанавливают происхождение и права.",
         "en": "For the portrait of Iosif Pogrebyssky, identify the specific public source, author or photographer (if known), licence or other verified basis for publication. “Mansur Gilmullin’s archive” and “Illustration accompanying the text” do not establish provenance or rights."
       }
+    },
+    {
+      "id": "q4",
+      "question": "Исправить библиографию в примечаниях: русский оригинал вышел в «Успехах математических наук», т. 27, вып. 1, с. 227–235, а английский перевод — в Russian Mathematical Surveys, т. 27, № 1, с. 195–206 (https://doi.org/10.1070/RM1972v027n01ABEH001367). Не приписывать страницы оригинала английскому журналу.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Исправить библиографию в примечаниях: русский оригинал вышел в «Успехах математических наук», т. 27, вып. 1, с. 227–235, а английский перевод — в Russian Mathematical Surveys, т. 27, № 1, с. 195–206 (https://doi.org/10.1070/RM1972v027n01ABEH001367). Не приписывать страницы оригинала английскому журналу.",
+        "en": "Correct the Notes citation: the Russian original appeared in Uspekhi Matematicheskikh Nauk, vol. 27, no. 1, pp. 227–235, while the English translation appeared in Russian Mathematical Surveys, vol. 27, no. 1, pp. 195–206 (https://doi.org/10.1070/RM1972v027n01ABEH001367). Do not assign the original pagination to the English journal."
+      }
+    },
+    {
+      "id": "q5",
+      "question": "Уточнить роль Погребысского в русских изданиях Пуанкаре. На титуле он указан как составитель, а некролог подтверждает редактуру переводов и подготовку комментариев. Заменить общее утверждение о переводе трудов Пуанкаре документированной ролью в обеих версиях.",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Уточнить роль Погребысского в русских изданиях Пуанкаре. На титуле он указан как составитель, а некролог подтверждает редактуру переводов и подготовку комментариев. Заменить общее утверждение о переводе трудов Пуанкаре документированной ролью в обеих версиях.",
+        "en": "Clarify Pogrebyssky’s role in the Russian editions of Poincaré. The title page identifies him as a compiler, while the obituary describes editing translations and preparing commentary. Replace the broad claim that he translated Poincaré with the documented role in both editions."
+      }
     }
   ],
   "approval": {
