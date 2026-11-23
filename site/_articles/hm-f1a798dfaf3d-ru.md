@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-f1a798dfaf3d
 source_work_id: hm-f1a798dfaf3d
 layout: article
-title: 🌱 Пифагор и его запрет на бобы
+title: Пифагор и его запрет на бобы
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин

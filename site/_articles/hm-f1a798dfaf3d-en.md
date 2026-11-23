@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-f1a798dfaf3d-en
 source_work_id: hm-f1a798dfaf3d
 layout: article
-title: 🌱 Pythagoras and His Ban on Beans
+title: Pythagoras and His Ban on Beans
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin
