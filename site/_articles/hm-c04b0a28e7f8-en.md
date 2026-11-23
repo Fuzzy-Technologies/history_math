@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-c04b0a28e7f8-en
 source_work_id: hm-c04b0a28e7f8
 layout: article
-title: 🎬 Zed is dead
+title: Zed is dead
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin
