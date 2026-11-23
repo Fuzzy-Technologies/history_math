@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-b57d8ece616e-en
 source_work_id: hm-b57d8ece616e
 layout: article
-title: 👩‍🏫👨‍🏫 Stefan Bergman and a “Respectable” Secretary
+title: Stefan Bergman and a “Respectable” Secretary
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin

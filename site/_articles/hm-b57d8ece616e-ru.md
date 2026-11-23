@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-b57d8ece616e
 source_work_id: hm-b57d8ece616e
 layout: article
-title: 👩‍🏫👨‍🏫 Стефан Бергман и порядочная секретарша
+title: Стефан Бергман и порядочная секретарша
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин
