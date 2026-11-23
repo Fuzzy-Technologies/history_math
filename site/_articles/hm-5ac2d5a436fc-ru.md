@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-5ac2d5a436fc
 source_work_id: hm-5ac2d5a436fc
 layout: article
-title: 🧠🤖 Алан Тьюринг и вопрос о мыслящих машинах
+title: Алан Тьюринг и вопрос о мыслящих машинах
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин

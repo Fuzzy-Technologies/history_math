@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-5ac2d5a436fc-en
 source_work_id: hm-5ac2d5a436fc
 layout: article
-title: 🧠🤖 Alan Turing and the Question of Thinking Machines
+title: Alan Turing and the Question of Thinking Machines
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin
