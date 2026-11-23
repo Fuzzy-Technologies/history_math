@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-86eb10cbe53d-en
 source_work_id: hm-86eb10cbe53d
 layout: article
-title: ✝️ Bertrand Russell and the Pope
+title: Bertrand Russell and the Pope
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin

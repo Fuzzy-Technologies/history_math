@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-86eb10cbe53d
 source_work_id: hm-86eb10cbe53d
 layout: article
-title: ✝️ Бертран Рассел и Папа Римский
+title: Бертран Рассел и Папа Римский
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин
