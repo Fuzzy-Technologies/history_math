@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-8f06fede13d9-en
 source_work_id: hm-8f06fede13d9
 layout: article
-title: 🎩 Conditions of admission
+title: Conditions of admission
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin

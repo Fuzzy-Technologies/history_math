@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-8f06fede13d9
 source_work_id: hm-8f06fede13d9
 layout: article
-title: 🎩 Условия приёма
+title: Условия приёма
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин
