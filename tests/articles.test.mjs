@@ -24,6 +24,8 @@ test('article titles are plain text across both languages and preserve mathemati
     assert.deepEqual(errors(withTitle(title)), [], title);
   }
   assert.deepEqual(errors(text + '\nA quoted pictograph 🔭 in the body.'), []);
+  assert.ok(errors(text + '\n## 🛠️ The vacuum pump\n').some(f => f.detail.includes('section headings')));
+  assert.deepEqual(errors(text + '\n### Why is x ≤ 2?\n\n```md\n## 🛠️ Quoted example\n```\n'), []);
 });
 test('the site contract rejects external ownership, changed schema bytes and missing locks', () => {
   mkdirSync(resolve(root, 'test-results'), {recursive: true});

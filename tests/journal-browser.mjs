@@ -238,7 +238,10 @@ try {
       assert.equal(await page.locator('.article-meta-row .article-pdf').count(), 1);
       await checkArticleLayout(page);
       assert.equal(await page.locator('.math-source:not([data-rendered=true])').count(), 0);
-      assert.equal(await page.locator('.math-source[data-display=false]').evaluateAll(nodes => nodes.some(node => /[,.;:!?]$/.test(node.dataset.tex))), false);
+      // An exercise can use a question mark as the unknown on the right of an equation.
+      const punctuatedFormulas = await page.locator('.math-source[data-display=false]').evaluateAll(nodes =>
+        nodes.map(node => node.dataset.tex.trimEnd()).filter(tex => /[,.;:!?]$/.test(tex) && !/=\s*\?$/.test(tex)));
+      assert.deepEqual(punctuatedFormulas, [], record.url);
       assert.equal(await page.locator('.math-with-punctuation').evaluateAll(nodes => nodes.some(node => {
         const text = node.lastChild; const range = document.createRange(); range.selectNode(text);
         return range.getBoundingClientRect().left < node.firstChild.getBoundingClientRect().left;

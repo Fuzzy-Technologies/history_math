@@ -10,7 +10,7 @@ Set `status: published` only after editorial approval; use `demo` for deliberate
 
 ## Front matter
 
-Write article titles in plain text in both languages. Omit decorative emoji from the source title and the corresponding PR title. Keep meaningful numbers, mathematical notation and punctuation. The page heading, catalog, citations and PDF all use the same source title.
+Write article titles and section headings in plain text in both languages. Omit decorative emoji from headings and the corresponding PR title. Keep meaningful numbers, mathematical notation and punctuation. The page heading, catalog, citations and PDF all use the same source title.
 
 The canonical contract is `schemas/article-v1.schema.json`. Legacy `demo-*.md` files exist only under `tests/fixtures/publications/` for isolated regression builds; the production collection contains real v1 articles only.
 
