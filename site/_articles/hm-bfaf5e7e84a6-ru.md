@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-bfaf5e7e84a6
 source_work_id: hm-bfaf5e7e84a6
 layout: article
-title: ⛪️ Джордж Буль и грех по воскресеньям
+title: Джордж Буль и грех по воскресеньям
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин

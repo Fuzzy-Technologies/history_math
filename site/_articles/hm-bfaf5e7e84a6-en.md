@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-bfaf5e7e84a6-en
 source_work_id: hm-bfaf5e7e84a6
 layout: article
-title: ⛪️ George Boole and Sunday Sin
+title: George Boole and Sunday Sin
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin
