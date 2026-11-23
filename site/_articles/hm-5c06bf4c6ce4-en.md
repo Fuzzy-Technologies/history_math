@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-5c06bf4c6ce4-en
 source_work_id: hm-5c06bf4c6ce4
 layout: article
-title: 💤 Richard Courant and the “Mathematical Dream”
+title: Richard Courant and the “Mathematical Dream”
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin

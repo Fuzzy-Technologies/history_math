@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-5c06bf4c6ce4
 source_work_id: hm-5c06bf4c6ce4
 layout: article
-title: 💤 Рихард Курант и «математический сон»
+title: Рихард Курант и «математический сон»
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин
