@@ -14,12 +14,12 @@
     },
     {
       "id": "figure-provenance",
-      "question": "For the collage of the 1798 and 1815 title pages, identify the specific public catalogue records or digital copies for both pages and record the actual public-domain basis; “author’s archive” describes custody of the collage, not the origin of the images.",
+      "question": "For the collage of the 1798 and 1815 title pages, identify the specific public catalogue records or digital copies for both pages and record the actual public-domain basis; “author’s archive” does not establish the images’ provenance or legal status.",
       "blocking": false,
       "state": "resolved",
       "localizations": {
-        "source": "For the collage of the 1798 and 1815 title pages, identify the specific public catalogue records or digital copies for both pages and record the actual public-domain basis; “author’s archive” describes custody of the collage, not the origin of the images.",
-        "ru": "Для коллажа из титульных листов изданий 1798 и 1815 годов укажите конкретные публичные карточки или цифровые копии обоих листов и действительное основание использования общественного достояния; запись «авторский архив» описывает хранение коллажа, но не происхождение изображений."
+        "source": "For the collage of the 1798 and 1815 title pages, identify the specific public catalogue records or digital copies for both pages and record the actual public-domain basis; “author’s archive” does not establish the images’ provenance or legal status.",
+        "ru": "Для коллажа из титульных листов изданий 1798 и 1815 годов укажите конкретные публичные карточки или цифровые копии обоих листов и действительное основание использования общественного достояния; формулировка «авторский архив» не подтверждает происхождение и правовой статус изображений."
       },
       "resolution": "Both editions now identify the National Electronic Library digital copies of the 1798 and 1815 title pages and record their public-domain basis; the collage only combines and crops the historical pages."
     },
