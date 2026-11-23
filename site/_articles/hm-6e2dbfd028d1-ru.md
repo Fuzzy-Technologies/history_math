@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-6e2dbfd028d1
 source_work_id: hm-6e2dbfd028d1
 layout: article
-title: ⛵ Леонард Эйлер и мачта на корабле
+title: Леонард Эйлер и мачта на корабле
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин

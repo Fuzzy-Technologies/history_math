@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-6e2dbfd028d1-en
 source_work_id: hm-6e2dbfd028d1
 layout: article
-title: ⛵ Leonhard Euler and a ship’s mast
+title: Leonhard Euler and a ship’s mast
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin
