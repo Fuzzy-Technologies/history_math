@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+import {readFileSync, readdirSync} from 'node:fs';
 import {parse} from 'yaml';
 import {pagesConfig} from '../scripts/pages-config.mjs';
 
@@ -74,25 +74,33 @@ test('source checks use shallow heads and publication resolves the exact master 
   assert.match(deploy, /HISTORY_MATH_PUBLICATION_REF="\$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build/);
 });
 
-test('article preparation uses one trusted workflow SHA when the PR base snapshot is stale', () => {
+test('preparation requires an explicit PR on master and pins both jobs to the dispatch SHA', () => {
   const workflow = parse(readFileSync('.github/workflows/article-prepare.yml', 'utf8'));
-  const check = candidate => {
-    for (const job of [candidate.jobs.plan, candidate.jobs.prepare]) {
-      const checkout = job.steps.find(step => step.uses?.startsWith('actions/checkout@'));
-      for (const event of ['pull_request_target', 'workflow_dispatch']) {
-        const github = {sha: 'trusted-current-master', event_name: event,
-          event: {pull_request: {base: {sha: 'stale-pr-base'}, head: {sha: 'untrusted-head'}}}};
-        const expression = checkout.with.ref.slice(3, -2).trim();
-        assert.equal(new Function('github', `return (${expression});`)(github), github.sha);
-      }
-      assert.ok(job.steps.some(step => step.run?.includes('--base-sha "$GITHUB_SHA"') || step.run?.includes('--plan test-results/article-preparation-plan.json')));
-    }
-  };
-  check(workflow);
-  const stale = structuredClone(workflow);
-  stale.jobs.prepare.steps.find(step => step.uses?.startsWith('actions/checkout@')).with.ref =
-    "${{ github.event_name == 'pull_request_target' && github.event.pull_request.base.sha || github.sha }}";
-  assert.throws(() => check(stale));
+  assert.deepEqual(Object.keys(workflow.on), ['workflow_dispatch']);
+  const input = workflow.on.workflow_dispatch.inputs.pr;
+  assert.equal(input.required, true);
+  assert.equal(input.type, 'string');
+  assert.match(workflow.concurrency.group, /inputs\.pr/);
+  const {plan, prepare} = workflow.jobs;
+  assert.match(plan.if, /github\.event_name == 'workflow_dispatch'/);
+  assert.match(plan.if, /github\.ref == 'refs\/heads\/master'/);
+  assert.match(plan.if, /github\.repository == 'Fuzzy-Technologies\/history_math'/);
+  assert.deepEqual(plan.permissions, {contents: 'read', 'pull-requests': 'read'});
+  assert.equal(prepare.needs, 'plan');
+  for (const job of [plan, prepare]) {
+    const checkout = job.steps.find(step => step.uses?.startsWith('actions/checkout@'));
+    assert.equal(checkout.with.ref, '${{ github.sha }}');
+    assert.equal(checkout.with['persist-credentials'], false);
+    const command = job.steps.find(step => step.run?.includes('tools/article_batch.py')).run;
+    assert.ok(command.includes('--base-sha "$GITHUB_SHA" --event-file "$GITHUB_EVENT_PATH"'));
+  }
+});
+
+test('only the two API-only workflows require the pull_request_target policy', () => {
+  const paths = readdirSync('.github/workflows').filter(name => /\.ya?ml$/.test(name));
+  const affected = paths.filter(name => Object.hasOwn(parse(readFileSync(
+    `.github/workflows/${name}`, 'utf8')).on, 'pull_request_target'));
+  assert.deepEqual(affected.sort(), ['cleanup-merged-branch.yml', 'pr-metadata.yml']);
 });
 
 test('publication validates and uploads the build selected by GitHub Pages metadata', () => {
@@ -286,102 +294,93 @@ test('automatic S3 deletion follows deployment; only explicit manual recovery ta
   assert.ok(steps.findIndex(s => s.name === 'Prepare bounded full-resolution JPEG originals') < steps.findIndex(s => s.name === 'Preflight existing S3 media copies'));
 });
 
-test('the actual privileged article comment job has no checkout and rejects stale or duplicate results', async () => {
-  const workflow = readFileSync('.github/workflows/article-report.yml', 'utf8').replace(/\r\n/g, '\n');
-  assert.ok(!workflow.includes('actions/checkout'));
-  assert.ok(!/^\s+run:/m.test(workflow));
-  assert.match(workflow, /context.payload.pull_request.base.sha : context.sha/);
-  assert.match(workflow, /live.head.ref.endsWith\('-ru'\)/);
-  const source = workflow.split('script: |\n')[1].split('\n').map(line => line.replace(/^            /, '')).join('\n');
-  const comments = []; let created = 0; let updated = 0; let currentSha = 'head'; let runId = 10; let jobConclusion = 'success'; let workflowConclusion = 'success';
-  const dictionary = readFileSync('schemas/messages.json', 'utf8');
-  const github = {rest: {
-    repos: {getContent: async () => ({data: {size: dictionary.length, encoding: 'base64', content: Buffer.from(dictionary).toString('base64')}})},
-    pulls: {get: async () => ({data: {state: 'open', head: {sha: currentSha, ref: 'feature/article-ru', repo: {full_name: 'fork/repo'}}}})},
-    actions: {listWorkflowRunsForRepo: async () => ({data: {workflow_runs: [{name: 'Prototype checks', event: 'pull_request', status: 'completed', conclusion: workflowConclusion, id: runId, html_url: 'https://github.com/example/repo/actions/runs/10', run_attempt: 1}]}}), listJobsForWorkflowRun: 'jobs'},
-    issues: {listComments: 'comments', createComment: async args => { created++; comments.push({id: 1, user: {type: 'Bot'}, body: args.body}); }, updateComment: async args => { updated++; comments[0].body = args.body; }}
-  }, paginate: async kind => kind === 'jobs' ? [{name: 'Article package', conclusion: jobConclusion}] : comments};
-  const context = {eventName: 'pull_request_target', repo: {owner: 'example', repo: 'repo'}, payload: {pull_request: {number: 1, head: {sha: 'head'}, base: {sha: 'trusted-base'}}}};
-  const execute = () => new AsyncFunction('github', 'context', source)(github, context);
-  await execute(); await execute();
-  assert.equal(created, 1); assert.equal(updated, 1);
-  assert.match(comments[0].body, /Проверки исходных файлов пройдены/);
-  assert.match(comments[0].body, /только исходные файлы/);
-  assert.ok(comments[0].body.includes('\n\n'));
-  assert.ok(!comments[0].body.includes('\\n'));
-  runId = 9; await execute(); assert.equal(updated, 1);
-  currentSha = 'new-head'; await execute(); assert.equal(updated, 1);
-  context.eventName = 'push'; context.ref = 'refs/heads/untrusted';
-  await execute(); assert.equal(updated, 1);
-  context.eventName = 'pull_request_target'; currentSha = 'head'; runId = 11; jobConclusion = 'skipped';
-  await execute(); assert.equal(updated, 2);
-  assert.match(comments[0].body, /Обязательные технические проверки не выполнены/);
-  runId = 12; jobConclusion = 'success'; workflowConclusion = 'cancelled';
-  await execute(); assert.match(comments[0].body, /Обязательные технические проверки не выполнены/);
-  runId = 13; workflowConclusion = 'failure';
-  await execute(); assert.match(comments[0].body, /Технические проверки выявили блокирующие ошибки/);
-});
-
-test('completed manual CI runs report only the current open same-repository master PR', async () => {
-  const workflow = readFileSync('.github/workflows/article-report.yml', 'utf8').replace(/\r\n/g, '\n');
-  const parsed = parse(workflow);
-  assert.deepEqual(parsed.on.workflow_run, {workflows: ['Prototype checks'], types: ['completed']});
-  assert.match(parsed.concurrency.group, /workflow_run.head_branch/);
-  assert.ok(!workflow.includes('actions/checkout'));
-  assert.ok(!/^\s+run:/m.test(workflow));
-  const source = workflow.split('script: |\n')[1].split('\n').map(line => line.replace(/^            /, '')).join('\n');
-  const repository = 'example/repo', sha = 'a'.repeat(40), branch = 'feature/article-ru';
+test('only a completed source CI run can report on the current open same-repository PR', async () => {
+  const workflow = parse(readFileSync('.github/workflows/article-report.yml', 'utf8'));
+  assert.deepEqual(workflow.on, {workflow_run: {workflows: ['Prototype checks'], types: ['completed']}});
+  assert.deepEqual(workflow.permissions, {contents: 'read', actions: 'read', 'pull-requests': 'write'});
+  const job = workflow.jobs.comment;
+  assert.match(job.if, /head_repository.full_name == github.repository/);
+  assert.match(job.if, /conclusion != 'action_required'/);
+  assert.match(job.concurrency.group, /workflow_run.head_branch/);
+  assert.equal(job.steps.length, 1);
+  assert.match(job.steps[0].uses, /^actions\/github-script@[0-9a-f]{40}$/);
+  const execute = new AsyncFunction('github', 'context', job.steps[0].with.script);
+  const repository = 'example/repo', sha = 'a'.repeat(40), branch = 'feature/article-example-ru';
   const original = {number: 1, state: 'open', base: {ref: 'master', repo: {full_name: repository}},
     head: {sha, ref: branch, repo: {full_name: repository}}};
-  let live = structuredClone(original), candidates = [structuredClone(original)], runId = 20, reads = 0;
-  let created = 0, updated = 0;
-  const comments = [], refs = [], searches = [];
+  let live = structuredClone(original), candidates = [original], jobConclusion = 'success';
+  const run = {name: 'Prototype checks', path: '.github/workflows/ci.yml', status: 'completed',
+    event: 'workflow_dispatch', repository: {full_name: repository}, head_repository: {full_name: repository},
+    head_sha: sha, head_branch: branch, id: 20, run_attempt: 1, conclusion: 'success',
+    html_url: 'https://github.com/example/repo/actions/runs/20'};
+  const context = {eventName: 'workflow_run', sha: 'trusted-default-sha',
+    repo: {owner: 'example', repo: 'repo'}, payload: {workflow_run: run}};
+  const marker = '<!-- history-math-article-report-v1 -->';
+  const comments = [{id: 30, user: {login: 'another-bot'}, body: marker}];
+  const attempts = [], searches = [], writes = [], refs = [];
   const dictionary = readFileSync('schemas/messages.json', 'utf8');
-  const context = {eventName: 'workflow_run', sha: 'trusted-default-sha', repo: {owner: 'example', repo: 'repo'},
-    payload: {workflow_run: {name: 'Prototype checks', status: 'completed', event: 'workflow_dispatch',
-      repository: {full_name: repository}, head_repository: {full_name: repository},
-      head_sha: sha, head_branch: branch, id: runId, run_attempt: 1, conclusion: 'success',
-      html_url: 'https://github.com/example/repo/actions/runs/20'}}};
   const github = {rest: {
-    repos: {getContent: async args => { refs.push(args.ref); return {data: {size: dictionary.length, encoding: 'base64', content: Buffer.from(dictionary).toString('base64')}}; }},
-    pulls: {list: 'requests', get: async () => { reads++; return {data: live}; }},
-    actions: {listWorkflowRunsForRepo: async () => { throw new Error('Completed dispatch uses its pinned run'); }, listJobsForWorkflowRun: 'jobs'},
-    issues: {listComments: 'comments', createComment: async args => { created++; comments.push({id: 1, user: {type: 'Bot'}, body: args.body}); },
-      updateComment: async args => { updated++; comments[0].body = args.body; }}
+    repos: {getContent: async args => {
+      refs.push(args.ref);
+      return {data: {size: dictionary.length, encoding: 'base64', content: Buffer.from(dictionary).toString('base64')}};
+    }},
+    pulls: {list: 'requests', get: async () => ({data: live})},
+    actions: {listJobsForWorkflowRunAttempt: 'jobs'},
+    issues: {listComments: 'comments', createComment: async args => {
+      assert.equal(args.issue_number, 1);
+      comments.push({id: 31, user: {login: 'github-actions[bot]'}, body: args.body});
+      writes.push(args.body);
+    }, updateComment: async args => {
+      assert.equal(args.comment_id, 31);
+      comments[1].body = args.body;
+      writes.push(args.body);
+    }}
   }, paginate: async (kind, args) => {
     if (kind === 'requests') { searches.push(args); return candidates; }
-    if (kind === 'jobs') return [{name: 'Article package', conclusion: 'success'}];
+    if (kind === 'jobs') {
+      attempts.push([args.run_id, args.attempt_number]);
+      return [{name: 'Article package', conclusion: jobConclusion}];
+    }
+    assert.equal(kind, 'comments');
     return comments;
   }};
-  const execute = () => new AsyncFunction('github', 'context', source)(github, context);
-  await execute(); await execute();
-  assert.equal(created, 1); assert.equal(updated, 1);
-  assert.match(comments[0].body, /Проверки исходных файлов пройдены/);
-  assert.ok(refs.every(ref => ref === 'trusted-default-sha'));
-  assert.ok(searches.every(args => args.base === 'master' && args.state === 'open' && args.head === 'example:feature/article-ru'));
-  context.payload.workflow_run.id = 19;
-  await execute(); assert.equal(updated, 1);
-  context.payload.workflow_run.id = 21;
-  live = {...original, head: {...original.head, sha: 'b'.repeat(40)}};
-  await execute(); assert.equal(updated, 1);
-  live = {...original, state: 'closed'};
-  await execute(); assert.equal(updated, 1);
-  for (const mutation of [
-    {...original, state: 'closed'},
+  const report = () => execute(github, context);
+  await report(); await report();
+  assert.equal(writes.length, 1);
+  assert.match(writes[0], /Проверки исходных файлов пройдены/);
+  assert.ok(writes[0].includes(sha));
+  run.event = 'pull_request'; run.run_attempt = 2; jobConclusion = 'skipped';
+  await report(); assert.match(writes.at(-1), /Обязательные технические проверки не выполнены/);
+  assert.deepEqual(attempts.at(-1), [20, 2]);
+  run.run_attempt = 1; await report();
+  run.id = 19; await report();
+  assert.equal(writes.length, 2);
+  run.id = 21; run.event = 'push'; jobConclusion = 'success'; run.conclusion = 'cancelled';
+  await report(); assert.match(writes.at(-1), /Обязательные технические проверки не выполнены/);
+  run.id++; run.conclusion = 'failure';
+  await report(); assert.match(writes.at(-1), /Технические проверки выявили блокирующие ошибки/);
+  assert.equal(writes.length, 4);
+  run.id++;
+  for (const changed of [{...original, state: 'closed'},
     {...original, base: {...original.base, ref: 'develop'}},
     {...original, head: {...original.head, sha: 'b'.repeat(40)}},
-    {...original, head: {...original.head, repo: {full_name: 'fork/repo'}}}
-  ]) {
-    candidates = [mutation]; live = mutation;
-    await execute(); assert.equal(updated, 1);
+    {...original, head: {...original.head, repo: {full_name: 'fork/repo'}}}]) {
+    candidates = [original]; live = changed; await report();
+    candidates = [changed]; live = original; await report();
   }
-  candidates = [structuredClone(original)]; live = structuredClone(original);
-  const before = reads;
-  context.payload.workflow_run.head_repository.full_name = 'fork/repo';
-  await execute(); assert.equal(reads, before); assert.equal(updated, 1);
-  context.payload.workflow_run.head_repository.full_name = repository;
-  context.payload.workflow_run.name = 'Unrelated workflow';
-  await execute(); assert.equal(reads, before); assert.equal(updated, 1);
+  assert.equal(writes.length, 4);
+  const before = searches.length;
+  for (const [key, value] of Object.entries({name: 'Other checks', path: '.github/workflows/other.yml',
+    status: 'in_progress', head_repository: {full_name: 'fork/repo'}, head_sha: '', head_branch: 'master',
+    event: 'issue_comment', conclusion: 'action_required'})) {
+    const old = run[key]; run[key] = value; await report(); run[key] = old;
+  }
+  context.eventName = 'pull_request_target'; await report();
+  assert.equal(searches.length, before);
+  assert.equal(writes.length, 4);
+  assert.ok(refs.every(ref => ref === context.sha));
+  assert.ok(searches.every(args => args.base === 'master' && args.state === 'open' && args.head === `example:${branch}`));
+  assert.equal(comments[0].body, marker);
 });
 
 // Keep the owner's CI storage budget independent of website and screenshot growth.

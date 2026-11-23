@@ -1,40 +1,30 @@
 name: Prepare article files
 
 on:
-  pull_request_target:
-    types: [opened, reopened, synchronize, ready_for_review]
   workflow_dispatch:
     inputs:
       pr:
-        description: 'Article PR number; leave empty to prepare all open article PRs (owner only)'
-        required: false
+        description: 'Number of the open article PR to prepare'
+        required: true
         type: string
-  push:
-    branches: [feature/article-preparation-automation]
 
 permissions:
   contents: read
 
 concurrency:
-  group: article-preparation-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
-
-env:
-  # The owner-authorized bootstrap has completed; future preparation runs use master.
-  ARTICLE_ASSET_BOOTSTRAP_ENABLED: 'false'
+  group: article-preparation-${{ github.ref }}-${{ inputs.pr }}
+  cancel-in-progress: false
 
 jobs:
   plan:
     if: >-
       github.repository == 'Fuzzy-Technologies/history_math' &&
-      (github.event_name == 'pull_request_target' ||
-       (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/master') ||
-       (github.event_name == 'push' && github.ref == 'refs/heads/feature/article-preparation-automation' && github.actor == 'Tim55667757'))
+      github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/master'
+    permissions:
+      contents: read
+      pull-requests: read
     runs-on: ubuntu-24.04
     timeout-minutes: 10
-    outputs:
-      count: ${{ steps.plan.outputs.count }}
-      matrix: ${{ steps.plan.outputs.matrix }}
     steps:
       # Never check out the PR head in a job with write permissions.
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -42,8 +32,7 @@ jobs:
           ref: ${{ github.sha }}
           persist-credentials: false
           fetch-depth: 1
-      - id: plan
-        name: Authorize and pin article source commits
+      - name: Authorize the requested PR and pin its head
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: >-
@@ -59,17 +48,12 @@ jobs:
 
   prepare:
     needs: plan
-    if: needs.plan.outputs.count != '0'
     runs-on: ubuntu-24.04
     timeout-minutes: 360
     permissions:
       contents: write
       pull-requests: write
       actions: write
-    strategy:
-      fail-fast: false
-      max-parallel: 6
-      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -91,19 +75,17 @@ jobs:
       - name: Verify originals, store assets and prepare clean article commits
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          PREPARATION_SHARD: ${{ matrix.shard }}
-          PREPARATION_SHARDS: ${{ matrix.shards }}
         run: >-
           python3 tools/article_batch.py --repository "$GITHUB_REPOSITORY"
           --plan test-results/article-preparation-plan.json
-          --shard "$PREPARATION_SHARD" --shards "$PREPARATION_SHARDS"
+          --base-sha "$GITHUB_SHA" --event-file "$GITHUB_EVENT_PATH"
           --workspace "$RUNNER_TEMP/article-preparation"
           --output test-results/article-preparation-receipts.json
       - name: Save verified preparation receipts
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
-          name: article-preparation-receipts-${{ matrix.shard }}
+          name: article-preparation-receipts-0
           path: test-results/article-preparation-receipts.json
           retention-days: 30
           if-no-files-found: warn

@@ -20,11 +20,22 @@ does not grant editorial approval, translate prose or change mathematics.
 3. Include `reviews/<id>.json` and `reviews/<id>-en.json` with an explicit
    `approval.status: pending` and any editorial questions. Use existing tags;
    automated preparation never invents a topic, license, source or date.
-4. Open the article PR into `master`. Preparation validates the package,
-   chooses short lowercase image names where needed, updates both editions'
-   image paths, and generates missing reading previews. The existing assignee
-   and label rules still apply. Contributors keep working in the same branch
-   and PR after preparation.
+4. Open the article PR into `master`. A repository writer or the editorial agent
+   starts **Prepare article files** on `master` for this PR number. This command
+   uses the trusted default-branch workflow and pins the open article's head:
+
+   ```sh
+   gh workflow run article-prepare.yml -R Fuzzy-Technologies/history_math --ref master -f pr=123
+   ```
+
+   Replace `123` with the article PR number. Each dispatch prepares one open
+   same-repository article. A blank number is rejected. When an editorial wave
+   is paused, leave its dispatches pending until work resumes.
+5. Wait for the preparation receipt and the `Prototype checks` run on the resulting
+   head. The receipt records the applied commit. If the branch changes during
+   preparation, inspect the new revision before dispatching again. Source CI
+   reports on the current PR after completion. Contributors can continue using
+   the same PR.
 
 Published legacy inventories remain compatible with site checks. New article
 packages use their own

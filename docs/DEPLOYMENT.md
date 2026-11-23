@@ -52,6 +52,15 @@ If Pages already exists, inspect it first and use `PUT` to update build_type ins
 
 The GitHub connector and CLI authentication are independent. If `gh auth status` is unauthenticated, the owner must complete the browser/device authorization started by `gh auth login --hostname github.com --git-protocol https --web`. Never provide a PAT in chat or echo credentials. A connector-only session may write code and PRs while lacking callable administration endpoints; in that case report Description/Pages setup as incomplete.
 
+## Actions event policy
+
+In repository Settings → Actions → Policies, the active policy **Trusted PR metadata and merged-branch cleanup** explicitly allows `pull_request_target` for these exact workflow paths:
+
+- `.github/workflows/pr-metadata.yml` assigns the owner and label through the GitHub API.
+- `.github/workflows/cleanup-merged-branch.yml` removes a verified merged feature branch through the GitHub API.
+
+Both workflows execute the trusted base-branch definition. Review Policy insights after changes. Article preparation uses `workflow_dispatch` from `master`. The review comment uses `workflow_run` after `Prototype checks` completes.
+
 ## Existing feature cleanup
 
 `cleanup-merged-branch.yml` uses `pull_request_target` only for closed PRs into master. There is no checkout and no shell executing PR content. Eligibility is rechecked in the script: merged, same repository, `feature/*`, unchanged head, no other open PR. A final head recheck catches changes observed during cleanup; repeated runs and already-deleted refs are safe. GitHub's delete-ref API has no compare-and-delete parameter, so a commit racing after the final read cannot be atomically excluded. Contributors should stop pushing to a merged feature and use a new branch for follow-up work.
