@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-6ea55c3e999e-en
 source_work_id: hm-6ea55c3e999e
 layout: article
-title: 🌸👩‍🔬 Sofya Kovalevskaya and Calculus Wallpaper
+title: Sofya Kovalevskaya and Calculus Wallpaper
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin

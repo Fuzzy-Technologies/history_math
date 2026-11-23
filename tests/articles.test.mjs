@@ -15,6 +15,16 @@ test('filled template and minimal example satisfy the canonical site contract', 
   assert.deepEqual(errors(readFileSync('templates/minimal-article.md', 'utf8')), []);
   assert.deepEqual(checkContract(root), []);
 });
+test('article titles are plain text across both languages and preserve mathematical notation', () => {
+  const withTitle = title => text.replace('title: Article preparation example', 'title: ' + JSON.stringify(title));
+  for (const title of ['🔭 Хайям', 'Two 👩🏽‍🔬 scientists', 'A flag 🇬🇧', '15 + 2️⃣7', 'Весы ⚖', 'Поворот ↔️', 'Новости! 🔥']) {
+    assert.ok(errors(withTitle(title)).some(f => f.detail.includes('without emoji')), title);
+  }
+  for (const title of ['Чётное π', '15 + 27?', 'A ↔ B, x² ≤ ∞', '№ 2 — #3 * 4', '© and ™']) {
+    assert.deepEqual(errors(withTitle(title)), [], title);
+  }
+  assert.deepEqual(errors(text + '\nA quoted pictograph 🔭 in the body.'), []);
+});
 test('the site contract rejects external ownership, changed schema bytes and missing locks', () => {
   mkdirSync(resolve(root, 'test-results'), {recursive: true});
   const scratch = mkdtempSync(resolve(root, 'test-results/contract-'));

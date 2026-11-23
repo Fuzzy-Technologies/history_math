@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-66a0fd5af94d-en
 source_work_id: hm-66a0fd5af94d
 layout: article
-title: "🔭 Omar Khayyam and Algebra: From the Known to the Unknown"
+title: "Omar Khayyam and Algebra: From the Known to the Unknown"
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin

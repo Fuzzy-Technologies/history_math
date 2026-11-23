@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-42f75ebdad6e
 source_work_id: hm-42f75ebdad6e
 layout: article
-title: 📊 Флоренс Найтингейл и «данные, спасающие жизни»
+title: Флоренс Найтингейл и «данные, спасающие жизни»
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин

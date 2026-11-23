@@ -5,6 +5,7 @@ import {runInNewContext} from 'node:vm';
 import Ajv from 'ajv';
 import {topicKey} from '../site/assets/core.js';
 import {parseArticle} from './article-frontmatter.mjs';
+import {hasTitleEmoji} from './article-title.mjs';
 import {articleUrl} from './article-url.mjs';
 import {checkReview} from './article-review.mjs';
 import {externalEntry, imageInventory} from './external-originals.mjs';
@@ -27,6 +28,9 @@ export function checkArticle(text, file, root, identities = new Set()) {
   const metadataLine = value => text.slice(0, text.indexOf(String(value))).split('\n').length;
   if (!validate(data)) for (const error of validate.errors) add('HM_METADATA', `${error.instancePath || '/'} ${error.message}`);
   if (!data || typeof data !== 'object') return {findings};
+  if (typeof data.title === 'string' && hasTitleEmoji(data.title)) {
+    add('HM_METADATA', 'Use plain text without emoji in the article title', metadataLine('title:'));
+  }
   if (data.lang === 'ru' !== String(data.permalink).startsWith('/ru/')) add('HM_METADATA', 'lang / permalink');
   if (Array.isArray(data.authors) && data.author !== data.authors.join(', ')) add('HM_METADATA', 'author must display the authors array');
   for (const value of [data.date, data.updated, data.original_publication?.date].filter(Boolean)) {

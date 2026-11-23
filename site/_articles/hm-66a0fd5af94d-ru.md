@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-66a0fd5af94d
 source_work_id: hm-66a0fd5af94d
 layout: article
-title: "🔭 Омар Хайям и алгебра: от известного к неизвестному"
+title: "Омар Хайям и алгебра: от известного к неизвестному"
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин

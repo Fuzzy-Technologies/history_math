@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-9c8bc59a63a4
 source_work_id: hm-9c8bc59a63a4
 layout: article
-title: 💌 Максвелл и его жена — «не математик»
+title: Максвелл и его жена — «не математик»
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин

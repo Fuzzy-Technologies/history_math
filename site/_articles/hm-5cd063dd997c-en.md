@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-5cd063dd997c-en
 source_work_id: hm-5cd063dd997c
 layout: article
-title: 🔥 Breaking News! 🔥
+title: Breaking News!
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin

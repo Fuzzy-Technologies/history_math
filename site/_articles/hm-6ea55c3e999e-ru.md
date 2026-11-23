@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-6ea55c3e999e
 source_work_id: hm-6ea55c3e999e
 layout: article
-title: 🌸👩‍🔬 Софья Ковалевская и обои из матанализа
+title: Софья Ковалевская и обои из матанализа
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин
