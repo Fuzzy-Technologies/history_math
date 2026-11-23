@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-d94b49cceb6c-en
 source_work_id: hm-d94b49cceb6c
 layout: article
-title: 🦕 Paul Erdős and his age
+title: Paul Erdős and his age
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin

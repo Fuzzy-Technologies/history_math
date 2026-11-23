@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-d94b49cceb6c
 source_work_id: hm-d94b49cceb6c
 layout: article
-title: 🦕 Пал Эрдёш и его возраст
+title: Пал Эрдёш и его возраст
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин
