@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-c34c5e8dd6da
 source_work_id: hm-c34c5e8dd6da
 layout: article
-title: 🏊‍♂️ Прыжки в воду
+title: Прыжки в воду
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин

@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-c34c5e8dd6da-en
 source_work_id: hm-c34c5e8dd6da
 layout: article
-title: 🏊‍♂️ Diving
+title: Diving
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin
