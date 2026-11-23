@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-64ece7f5ce45-en
 source_work_id: hm-64ece7f5ce45
 layout: article
-title: 🎼 Carl Friedrich Gauss and Beethoven’s Ninth Symphony
+title: Carl Friedrich Gauss and Beethoven’s Ninth Symphony
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin

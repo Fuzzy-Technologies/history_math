@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-64ece7f5ce45
 source_work_id: hm-64ece7f5ce45
 layout: article
-title: 🎼 Карл Фридрих Гаусс и Девятая симфония Бетховена
+title: Карл Фридрих Гаусс и Девятая симфония Бетховена
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин
