@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-a45d04e3ad39-en
 source_work_id: hm-a45d04e3ad39
 layout: article
-title: 🌚 The Bolyais and the Bottomless Night of Parallels
+title: The Bolyais and the Bottomless Night of Parallels
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin

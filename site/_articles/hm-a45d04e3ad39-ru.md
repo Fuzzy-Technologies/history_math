@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-a45d04e3ad39
 source_work_id: hm-a45d04e3ad39
 layout: article
-title: 🌚 Бойяи и беспросветная ночь параллельных
+title: Бойяи и беспросветная ночь параллельных
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин
