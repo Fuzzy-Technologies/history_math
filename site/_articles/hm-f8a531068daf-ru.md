@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-f8a531068daf
 source_work_id: hm-f8a531068daf
 layout: article
-title: 🏖️ Бурбаки и кокотизация
+title: Бурбаки и кокотизация
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин

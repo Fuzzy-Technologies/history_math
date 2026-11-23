@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-f8a531068daf-en
 source_work_id: hm-f8a531068daf
 layout: article
-title: 🏖️ Bourbaki and coconutization
+title: Bourbaki and coconutization
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin
