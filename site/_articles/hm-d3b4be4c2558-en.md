@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-d3b4be4c2558-en
 source_work_id: hm-d3b4be4c2558
 layout: article
-title: "🛸 Liu Hui: The Truth Is Out There"
+title: "Liu Hui: The Truth Is Out There"
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin

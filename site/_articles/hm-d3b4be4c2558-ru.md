@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-d3b4be4c2558
 source_work_id: hm-d3b4be4c2558
 layout: article
-title: 🛸 Лю Хуэй — истина где-то рядом
+title: Лю Хуэй — истина где-то рядом
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин
