@@ -84,6 +84,9 @@ export function checkArticle(text, file, root, identities = new Set()) {
   if (/\{%|\{\{/.test(withoutIncludes)) add('HM_STRUCTURE', 'Only the documented shared figure include is allowed');
   if (/\\\\[A-Za-z0-9-]+\\|[A-Za-z]:\\|\.felab\.json|runtime\.sqlite|ОПУБЛИКОВАТЬ В|ОПУБЛИКОВАТЬ ВТОРЫМ|ОПУБЛИКОВАТЬ ТРЕТЬИМ/.test(text)) add('HM_STRUCTURE', 'Private paths or operational metadata must remain outside public Git');
   if (/^#\s+/m.test(clean)) add('HM_STRUCTURE', 'Use H2 sections beneath the shared H1 title');
+  for (const heading of clean.matchAll(/^ {0,3}#{2,6}[ \t]+(.+)$/gm)) {
+    if (hasTitleEmoji(heading[1])) add('HM_STRUCTURE', 'Use plain text without emoji in section headings', lineAt(heading.index));
+  }
   for (const tag of Array.isArray(data.tags) && data.status === 'draft' ? data.tags : []) {
     const canonical = topicLabels.get(topicKey(tag));
     if (canonical && canonical !== tag) add('HM_METADATA', `Prefer the canonical topic label: ${canonical} (received ${tag})`, 1, 'warning');
