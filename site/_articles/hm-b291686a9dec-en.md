@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-b291686a9dec-en
 source_work_id: hm-b291686a9dec
 layout: article
-title: ☔☔ George Pólya and two lost umbrellas
+title: George Pólya and two lost umbrellas
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin

@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-b291686a9dec
 source_work_id: hm-b291686a9dec
 layout: article
-title: ☔☔ Джордж Пойа и два потерянных зонта
+title: Джордж Пойа и два потерянных зонта
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин
