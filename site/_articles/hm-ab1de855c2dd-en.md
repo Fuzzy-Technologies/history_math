@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-ab1de855c2dd-en
 source_work_id: hm-ab1de855c2dd
 layout: article
-title: "🎓🤔 Vladimir Morozov: “What if you think again?”"
+title: "Vladimir Morozov: “What if you think again?”"
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin

@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-ab1de855c2dd
 source_work_id: hm-ab1de855c2dd
 layout: article
-title: "🎓🤔 Владимир Морозов: «А если подумать?»"
+title: "Владимир Морозов: «А если подумать?»"
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин
