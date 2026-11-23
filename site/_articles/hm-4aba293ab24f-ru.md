@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-4aba293ab24f
 source_work_id: hm-4aba293ab24f
 layout: article
-title: 1️⃣5️⃣ ➕ 2️⃣7️⃣ 🔢 ❓ Энрико Ферми и американский тест
+title: 15 + 27? Энрико Ферми и американский тест
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин

@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-4aba293ab24f-en
 source_work_id: hm-4aba293ab24f
 layout: article
-title: 1️⃣5️⃣ ➕ 2️⃣7️⃣ 🔢 ❓ Enrico Fermi and the American test
+title: 15 + 27? Enrico Fermi and the American test
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin
