@@ -32,6 +32,16 @@
         "source": "Identify the public sources, creators or photographers and legal status of the bust of Bhaskara II, the Lilavati manuscript leaf and the statue at Patnadevi; archive custody does not establish authorship or permission for reproduction.",
         "ru": "Установить публичные первоисточники, авторов или фотографов и правовой статус бюста Бхаскары II, листа рукописи «Лилавати» и статуи в Патнадеви; хранение в авторском архиве не подтверждает авторство или право воспроизведения."
       }
+    },
+    {
+      "id": "ujjain-observatory-tradition",
+      "question": "Treat the statement that Bhaskara II headed the Ujjain observatory as a later tradition or remove the office unless a suitable historical source is supplied; Kim Plofker notes that his connection with the observatory is not documented. Source: https://sanskrit.uohyd.ac.in/Algorithms_in_Ancient_India/Material/Kim_Plofkar_Maths_in_India.pdf",
+      "blocking": true,
+      "state": "open",
+      "localizations": {
+        "source": "Treat the statement that Bhaskara II headed the Ujjain observatory as a later tradition or remove the office unless a suitable historical source is supplied; Kim Plofker notes that his connection with the observatory is not documented. Source: https://sanskrit.uohyd.ac.in/Algorithms_in_Ancient_India/Material/Kim_Plofkar_Maths_in_India.pdf",
+        "ru": "Представить утверждение о руководстве Бхаскары II обсерваторией Удджайна как позднюю традицию либо убрать должность, если не будет указан подходящий исторический источник; Ким Плофкер отмечает, что связь учёного с этой обсерваторией документально не подтверждена. Источник: https://sanskrit.uohyd.ac.in/Algorithms_in_Ancient_India/Material/Kim_Plofkar_Maths_in_India.pdf"
+      }
     }
   ],
   "approval": {
