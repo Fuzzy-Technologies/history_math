@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-1aa755de3ee4
 source_work_id: hm-1aa755de3ee4
 layout: article
-title: ✌️ Математические забавы Л. Ф. Магницкого
+title: Математические забавы Л. Ф. Магницкого
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин

@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-1aa755de3ee4-en
 source_work_id: hm-1aa755de3ee4
 layout: article
-title: ✌️ Magnitsky’s mathematical amusements
+title: Magnitsky’s mathematical amusements
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin
