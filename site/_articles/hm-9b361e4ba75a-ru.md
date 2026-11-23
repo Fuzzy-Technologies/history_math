@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-9b361e4ba75a
 source_work_id: hm-9b361e4ba75a
 layout: article
-title: 🎗️ Завязывание узлов как геометрическая задача
+title: Завязывание узлов как геометрическая задача
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин

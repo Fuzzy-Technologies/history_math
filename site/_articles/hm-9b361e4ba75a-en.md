@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-9b361e4ba75a-en
 source_work_id: hm-9b361e4ba75a
 layout: article
-title: 🎗️ Knot tying as a geometry problem
+title: Knot tying as a geometry problem
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin
