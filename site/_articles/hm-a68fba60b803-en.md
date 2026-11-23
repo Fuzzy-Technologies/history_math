@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-a68fba60b803-en
 source_work_id: hm-a68fba60b803
 layout: article
-title: 🧘 A philosophical approach to zero
+title: A philosophical approach to zero
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin

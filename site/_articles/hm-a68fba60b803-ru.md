@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-a68fba60b803
 source_work_id: hm-a68fba60b803
 layout: article
-title: 🧘 Философский подход к нулю
+title: Философский подход к нулю
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин
