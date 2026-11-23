@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-6adb5efffb00
 source_work_id: hm-6adb5efffb00
 layout: article
-title: 🥒 О вреде огурцов
+title: О вреде огурцов
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин

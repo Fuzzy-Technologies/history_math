@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-6adb5efffb00-en
 source_work_id: hm-6adb5efffb00
 layout: article
-title: 🥒 The dangers of cucumbers
+title: The dangers of cucumbers
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin
