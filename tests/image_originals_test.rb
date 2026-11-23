@@ -15,6 +15,15 @@ class ImageOriginalsTest < Minitest::Test
   PREVIEW_PATH = "/assets/images/previews/hm-tt-abc/diagram-01.png-1.png"
   PNG = Base64.decode64("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+j/pkAAAAASUVORK5CYII=")
 
+  def test_visible_credit_preserves_explicit_labels_and_formats_the_source_fallback
+    filter = Object.new.extend(HistoryMath::ImageAssets)
+    figure = {"source" => "Archive. Shelf 12."}
+    assert_equal "Archive. Shelf 12", filter.figure_credit(figure)
+    assert_equal "Archive. Shelf 12.", figure.fetch("source")
+    assert_equal "A. B.", filter.figure_credit(figure.merge("credit" => "A. B."))
+    assert_equal "", filter.figure_credit(figure.merge("credit" => ""))
+  end
+
   def test_migration_originals_use_immutable_git_revision_only_in_production
     site = Site.new({"image_source_revision" => "a" * 40}, ".", "/history_math", {"image_assets" => {}})
     path = "/assets/images/hm-tt-abc/diagram-01.png"

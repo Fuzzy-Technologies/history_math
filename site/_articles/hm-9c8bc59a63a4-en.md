@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-9c8bc59a63a4-en
 source_work_id: hm-9c8bc59a63a4
 layout: article
-title: 💌 Maxwell and his wife — “not mathematical”
+title: Maxwell and his wife — “not mathematical”
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin

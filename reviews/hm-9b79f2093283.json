@@ -10,6 +10,16 @@
     "source_commit": "c406be171c2f1414645675f8af7b0265cc4fa6af",
     "source_review_id": 5817314123,
     "approved_at": "2026-11-08T09:11:01Z",
-    "package_sha256": "a7ed9a1da8ea81f6b5020f6479fc17cae326a418f67921916589b6b59ac17825"
-  }
+    "package_sha256": "d8e82c3b5a9c54d7349e3ee4fd2fdab74faa587e7f0fbc59f41db73d78fabccd"
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-11-24",
+      "scope": "title only",
+      "authority": "Owner-approved journal title correction across the published Russian and English editions.",
+      "previous_title_sha256": "81ec38a550a9a7ce808033d49aeb7321a568522be73bf97b27dfcfc7ddbb0feb",
+      "title_sha256": "6e1b654e27d74c89978e43302b017dbecb1e9a45b43b1c883349f449a09be303",
+      "previous_package_sha256": "a7ed9a1da8ea81f6b5020f6479fc17cae326a418f67921916589b6b59ac17825"
+    }
+  ]
 }

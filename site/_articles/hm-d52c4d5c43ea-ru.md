@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-d52c4d5c43ea
 source_work_id: hm-d52c4d5c43ea
 layout: article
-title: 📝 Николай Боголюбов и два слова на страницу
+title: Николай Боголюбов и два слова на страницу
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин

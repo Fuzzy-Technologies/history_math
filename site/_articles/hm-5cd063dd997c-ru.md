@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-5cd063dd997c
 source_work_id: hm-5cd063dd997c
 layout: article
-title: 🔥 СРОЧНЫЕ НОВОСТИ! 🔥
+title: СРОЧНЫЕ НОВОСТИ!
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин

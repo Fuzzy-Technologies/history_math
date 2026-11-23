@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-42f75ebdad6e-en
 source_work_id: hm-42f75ebdad6e
 layout: article
-title: 📊 Florence Nightingale and Data That Save Lives
+title: Florence Nightingale and Data That Save Lives
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin

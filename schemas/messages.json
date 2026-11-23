@@ -54,6 +54,7 @@
   "ru": {
     "HM_DIGEST": "Напишите содержательный дайджест из одного-двух законченных предложений; не обрезайте вступление статьи.",
     "details": {
+      "Use plain text without emoji in the article title": "Уберите эмоджи из заголовка статьи. Обычные математические знаки и пунктуация допустимы.",
       "YAML front matter required": "Требуется начальный блок метаданных YAML",
       "author must display the authors array": "Поле author должно отображать список authors",
       "Invalid calendar date:": "Недопустимая календарная дата:",

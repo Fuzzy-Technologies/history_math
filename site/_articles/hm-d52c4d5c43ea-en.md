@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-d52c4d5c43ea-en
 source_work_id: hm-d52c4d5c43ea
 layout: article
-title: 📝 Nikolay Bogolyubov and Two Words per Page
+title: Nikolay Bogolyubov and Two Words per Page
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin
