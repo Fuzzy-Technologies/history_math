@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-47dcc0abae73
 source_work_id: hm-47dcc0abae73
 layout: article
-title: 😇 Очевидное — невероятное
+title: Очевидное — невероятное
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин

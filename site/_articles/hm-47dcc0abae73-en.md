@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-47dcc0abae73-en
 source_work_id: hm-47dcc0abae73
 layout: article
-title: 😇 Obviously extraordinary
+title: Obviously extraordinary
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin
