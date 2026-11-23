@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-3c4cc41f6dc8
 source_work_id: hm-3c4cc41f6dc8
 layout: article
-title: 📉 «Кривая Кондратьева»
+title: «Кривая Кондратьева»
 authors:
   - Мансур Гильмуллин
 author: Мансур Гильмуллин

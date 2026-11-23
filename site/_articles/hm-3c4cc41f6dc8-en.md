@@ -3,7 +3,7 @@ schema_version: 1
 article_id: hm-3c4cc41f6dc8-en
 source_work_id: hm-3c4cc41f6dc8
 layout: article
-title: 📉 “Kondratyev’s curve”
+title: “Kondratyev’s curve”
 authors:
   - Mansur Gilmullin
 author: Mansur Gilmullin
