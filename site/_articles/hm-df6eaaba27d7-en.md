@@ -16,7 +16,7 @@ tags:
   - Pascal
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-df6eaaba27d7-en/
 rights_basis: Mansur Gilmullin
 original_publication:

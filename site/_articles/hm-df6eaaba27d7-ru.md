@@ -16,7 +16,7 @@ tags:
   - Паскаль
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-df6eaaba27d7-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
