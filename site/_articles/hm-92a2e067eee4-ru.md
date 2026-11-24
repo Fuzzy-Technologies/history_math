@@ -1,0 +1,60 @@
+---
+schema_version: 1
+article_id: hm-92a2e067eee4
+source_work_id: hm-92a2e067eee4
+layout: article
+title: Умные и бедные
+authors:
+  - Мансур Гильмуллин
+author: Мансур Гильмуллин
+lang: ru
+translation_key: hm-92a2e067eee4
+description: Шуточное «доказательство» проверяет поговорку об уме и бедности с помощью двух постулатов и школьной формулы.
+type: note
+series: Математики шутят
+tags:
+  - Математики шутят
+math: true
+status: published
+permalink: /ru/publications/hm-92a2e067eee4-ru/
+rights_basis: Мансур Гильмуллин
+original_publication:
+  outlet: Telegram · history_math
+  date: '2023-12-24'
+  preserve_date: true
+figures:
+- id: fig-1
+  path: /assets/images/hm-92a2e067eee4/figure-01.png
+  alt: Учёный сопоставляет книги, песочные часы и стопки монет на свитке, пока богач отдыхает позади.
+  caption: ''
+  source: Иллюстрация редакции журнала, созданная с помощью ИИ.
+  credit: ''
+  rights_basis: Создано для журнала по поручению Тимура Гильмуллина, 2026.
+cover_image: /assets/images/hm-92a2e067eee4/figure-01.png
+preview_image: /assets/images/hm-92a2e067eee4/figure-01.png
+---
+{% include article-figure.html id="fig-1" %}
+
+Всем известна поговорка: «Если ты такой умный, то почему ты такой бедный?» Ниже приводится строгое математическое обоснование этого феномена.
+
+Постулат 1: $\text{Знание}=\text{Сила}$
+
+Постулат 2: $\text{Время}=\text{Деньги}$
+
+Любой школьник знает, что:
+
+$$\frac{\text{Работа}}{\text{Время}}=\text{Сила}\cdot\text{Скорость}\tag{1}$$
+
+Подставляя соотношения двух постулатов в (1), получаем:
+
+$$\frac{\text{Работа}}{\text{Деньги}}=\text{Знание}\cdot\text{Скорость}\tag{2}$$
+
+После преобразования получаем:
+
+$$\frac{\text{Работа}}{\text{Знание}\cdot\text{Скорость}}=\text{Деньги}\tag{3}$$
+
+Уравнение (3) показывает, что при фиксированной положительной Работе, если Знание или Скорость стремится к нулю справа, Деньги стремятся к $+\infty$.
+
+Вывод: чем глупее и ленивее человек, тем больше денег он сможет заработать.
+
+Математики шутят, а лучше бы деньги зарабатывали!
