@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Verify the year of Raabe’s move to Zurich: the post places the move in autumn 1831, whereas the Historical Dictionary of Switzerland gives 1832. MacTutor dates the cholera outbreak and interruption of his Vienna lessons to autumn 1831, then describes the move without an equally explicit date. The epidemic and the move may have been conflated; approve the wording in both versions. https://hls-dhs-dss.ch/de/articles/031631/ ; https://mathshistory.st-andrews.ac.uk/Biographies/Raabe/ .",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify the year of Raabe’s move to Zurich: the post places the move in autumn 1831, whereas the Historical Dictionary of Switzerland gives 1832. MacTutor dates the cholera outbreak and interruption of his Vienna lessons to autumn 1831, then describes the move without an equally explicit date. The epidemic and the move may have been conflated; approve the wording in both versions. https://hls-dhs-dss.ch/de/articles/031631/ ; https://mathshistory.st-andrews.ac.uk/Biographies/Raabe/ .",
