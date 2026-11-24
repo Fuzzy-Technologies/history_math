@@ -15,7 +15,7 @@
     {
       "id": "turing-computation-model-universal-machine",
       "question": "Clarify the opening paragraph: in his 1936 paper Turing introduced a formal model of computation and, in § 6, separately described a universal machine capable of simulating any given machine. Keep RU/EN synchronized so the model of computation and its universal form are not collapsed into one claim. Source: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "resolution": "The opening paragraph was corrected in RU/EN to distinguish the formal model of computation from the universal form described in § 6.",
       "localizations": {
