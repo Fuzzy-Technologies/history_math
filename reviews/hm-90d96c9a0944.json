@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-90d96c9a0944",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить точные исторические названия институтов и подразделений, а также какие издания сочинений и переписки Ковалевской подготовлены и переведены Кочиной.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Уточнить точные исторические названия институтов и подразделений, а также какие издания сочинений и переписки Ковалевской подготовлены и переведены Кочиной.",
+        "en": "Verify the historical institute and department names and identify the editions of Kovalevskaya’s works and correspondence that Kochina prepared and translated."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/377#pullrequestreview-6039960334"
+    },
+    {
+      "id": "portrait-provenance",
+      "question": "Установить автора, проверяемый публичный первоисточник и правовой статус портрета П. Я. Кочиной; формулировка «Иллюстрация к материалу» не подтверждает происхождение изображения.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Установить автора, проверяемый публичный первоисточник и правовой статус портрета П. Я. Кочиной; формулировка «Иллюстрация к материалу» не подтверждает происхождение изображения.",
+        "en": "Identify the creator, a verifiable public source and the legal status of the portrait of Pelageya Kochina; “Illustration accompanying the text” does not establish its provenance."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/377#pullrequestreview-6039960334"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/377#pullrequestreview-6039960334",
+    "source_commit": "75b307380585fcacb723b7334e7923e93c0bd776",
+    "source_review_id": 6039960334,
+    "approved_at": "2026-11-24T13:23:56Z",
+    "package_sha256": "b8967c3ea10b5833e5b432ff671757938ab6dfaa93cafcd8ab07956ad1462e28"
+  }
+}
