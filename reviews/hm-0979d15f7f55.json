@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0979d15f7f55",
+  "questions": [
+    {
+      "id": "hilbert-quotation-edition",
+      "question": "Подтвердить точное издание Hilbert–Courant и страницу 174 по книге: в исходнике стоит 1984 год, а приведённая ссылка Springer относится к отдельному Hilbert (1996). Это разные библиографические записи; страница цитаты в нужном издании пока не проверена. Указание 1984 не заменено автоматически.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Подтвердить точное издание Hilbert–Courant и страницу 174 по книге: в исходнике стоит 1984 год, а приведённая ссылка Springer относится к отдельному Hilbert (1996). Это разные библиографические записи; страница цитаты в нужном издании пока не проверена. Указание 1984 не заменено автоматически.",
+        "en": "Confirm the exact Hilbert–Courant edition and p. 174 against the book. The source gives 1984, while its Springer link describes the separate Hilbert (1996). These are different bibliographic records; the quotation page in the intended edition has not been verified. The 1984 date has not been changed automatically."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/588#pullrequestreview-6040140179"
+    },
+    {
+      "id": "hilbert-portrait-provenance",
+      "question": "Для ретушированного портрета Давида Гильберта (fig-2) указать исходное изображение, автора или хранилище, проверяемый публичный источник и правовое основание ретуши и публикации.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для ретушированного портрета Давида Гильберта (fig-2) указать исходное изображение, автора или хранилище, проверяемый публичный источник и правовое основание ретуши и публикации.",
+        "en": "For the retouched portrait of David Hilbert (fig-2), identify the original image, its creator or holding institution, a verifiable public source, and the legal basis for retouching and publication."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/588#pullrequestreview-6040140179"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/588#pullrequestreview-6040140179",
+    "source_commit": "c0c4a10d4c3434f4bde785726cb8ec714fb906bf",
+    "source_review_id": 6040140179,
+    "approved_at": "2026-11-24T13:35:40Z",
+    "package_sha256": "aca747c4b1796d5f31c73efe360f52df73bb3703b2a2d14eef7f2cb023a7c2c2"
+  }
+}
