@@ -5,11 +5,19 @@
     {
       "id": "q1",
       "question": "Для портрета Н. Г. Чеботарёва и скана автобиографии установить публичные источники, авторов или архивные учреждения и действительное правовое основание воспроизведения; наличие копий в авторском архиве не подтверждает авторство этих материалов.",
-      "blocking": true,
-      "state": "open"
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/326#pullrequestreview-6039903676"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/326#pullrequestreview-6039903676",
+    "source_commit": "f765f58aa9518690ac98df803bbe60cc6e50790c",
+    "source_review_id": 6039903676,
+    "approved_at": "2026-11-24T13:19:57Z",
+    "package_sha256": "ff2a0153f8946a4c93b81d9a533bf38fcd399f56fcfb189795dc8bc42977d3f3"
   }
 }
