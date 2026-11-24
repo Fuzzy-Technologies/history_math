@@ -16,7 +16,7 @@ tags:
   - Лобачевский
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-61e65fc9e6af-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

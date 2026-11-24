@@ -16,7 +16,7 @@ tags:
   - Lobachevsky
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-61e65fc9e6af-en/
 rights_basis: Mansur Gilmullin
 original_publication:

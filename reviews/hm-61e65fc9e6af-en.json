@@ -16,15 +16,23 @@
     {
       "id": "lobachevsky-portrait-provenance",
       "question": "For the portrait of Nikolai Lobachevsky, identify the artist or original work, a public source, and a valid rights basis for publication.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the portrait of Nikolai Lobachevsky, identify the artist or original work, a public source, and a valid rights basis for publication.",
         "ru": "Для портрета Н. И. Лобачевского укажите автора/исходное произведение, публичный источник и действительное правовое основание публикации."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/330#pullrequestreview-6039911173"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/330#pullrequestreview-6039911173",
+    "source_commit": "aa56b4678217be2f5225fb91475470b5ecf36b41",
+    "source_review_id": 6039911173,
+    "approved_at": "2026-11-24T13:20:29Z",
+    "package_sha256": "3f1a6ea3da7a04ad6b18e3ed239e2d8f221cda28c53bc0298741e47a99c59d63"
   }
 }

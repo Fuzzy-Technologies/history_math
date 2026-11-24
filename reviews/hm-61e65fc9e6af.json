@@ -20,11 +20,19 @@
         "source": "Для портрета Н. И. Лобачевского укажите автора/исходное произведение, публичный источник и действительное правовое основание публикации.",
         "en": "For the portrait of Nikolai Lobachevsky, identify the artist or original work, a public source, and a valid rights basis for publication."
       },
-      "blocking": true,
-      "state": "open"
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/330#pullrequestreview-6039911173"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/330#pullrequestreview-6039911173",
+    "source_commit": "aa56b4678217be2f5225fb91475470b5ecf36b41",
+    "source_review_id": 6039911173,
+    "approved_at": "2026-11-24T13:20:29Z",
+    "package_sha256": "01bfc22f51c0a3df2a5a5d774585f9ab8f0ba4370170745b7f0b01d67e6050f3"
   }
 }
