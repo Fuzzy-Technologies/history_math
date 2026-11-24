@@ -17,7 +17,7 @@ tags:
   - оливки
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-bddaeb9e436c-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

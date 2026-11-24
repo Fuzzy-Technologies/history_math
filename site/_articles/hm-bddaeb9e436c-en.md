@@ -17,7 +17,7 @@ tags:
   - olives
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-bddaeb9e436c-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
