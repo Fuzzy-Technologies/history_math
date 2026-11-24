@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-effac70f6369-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the approximate life dates, the priority claimed for compass-and-straightedge construction and the chronology of practical applications of conic sections.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the approximate life dates, the priority claimed for compass-and-straightedge construction and the chronology of practical applications of conic sections.",
+        "ru": "Уточнить приблизительную датировку жизни, заявленный приоритет построений циркулем и линейкой и хронологию практических применений конических сечений."
+      },
+      "resolution": "The dates are now explicitly approximate, the unsupported priority claim was removed, and Kepler and Galileo are presented as important early modern examples rather than the first practical applications."
+    },
+    {
+      "id": "apollonius-cone-generality",
+      "question": "Verify that Apollonius treated conic sections of both right and oblique circular cones.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Corrected the article to cover sections of circular cones, whether right or oblique. Evidence: https://www.math.mcgill.ca/darmon/courses/history/katz.pdf",
+      "localizations": {
+        "source": "Verify that Apollonius treated conic sections of both right and oblique circular cones.",
+        "ru": "Проверить, что Аполлоний рассматривал сечения как прямого, так и наклонного кругового конуса."
+      }
+    },
+    {
+      "id": "apollonius-sculpture-image-attribution",
+      "question": "For the sculpture image used as a portrait of Apollonius, identify the object or collection, the photographer or a public catalogue record, and a valid rights basis for publication.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "For the sculpture image used as a portrait of Apollonius, identify the object or collection, the photographer or a public catalogue record, and a valid rights basis for publication.",
+        "ru": "Для изображения скульптуры, используемого как портрет Аполлония, укажите конкретный объект или собрание, автора снимка либо публичную карточку и действительное правовое основание публикации."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/323#pullrequestreview-6039895558"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/323#pullrequestreview-6039895558",
+    "source_commit": "a274ccd747aa6dd8b493742c5c7cb14f0f62738b",
+    "source_review_id": 6039895558,
+    "approved_at": "2026-11-24T13:19:23Z",
+    "package_sha256": "4fb918a2617028c09c55516fe6909d432ec9636c25c34144046153e1ae437c45"
+  }
+}
