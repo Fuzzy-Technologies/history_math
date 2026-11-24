@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Verify the historical name of the Genevan institution and the precise title of Cramer’s appointment.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify the historical name of the Genevan institution and the precise title of Cramer’s appointment.",
@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "Clarify the history of the term determinant and the description of Cayley’s later work as following immediately.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Clarify the history of the term determinant and the description of Cayley’s later work as following immediately.",
@@ -27,7 +27,7 @@
     {
       "id": "q3",
       "question": "Verify the dates of the collected works and Bernoulli correspondence; the French title spelling follows the visible 1750 title page.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify the dates of the collected works and Bernoulli correspondence; the French title spelling follows the visible 1750 title page.",
