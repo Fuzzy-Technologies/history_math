@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-4aba293ab24f",
+  "questions": [
+    {
+      "id": "fermi-nobel-timing-before-test",
+      "question": "По Atoms in the Family, стр. 130 (PDF-страница 152), к моменту арифметического теста Нобелевская премия уже была объявлена: Лаура прямо пишет, что даже она не избавила Энрико от проверки. В посте он назван «будущим нобелевским лауреатом». Авторская формулировка сохранена. Предлагается заменить в RU на «лауреат Нобелевской премии 1938 года», в EN — “the 1938 Nobel laureate”; редактору согласовать обе версии.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Хронология исправлена в обеих версиях: к моменту консульского теста Нобелевская премия уже была объявлена.",
+      "localizations": {
+        "source": "По Atoms in the Family, стр. 130 (PDF-страница 152), к моменту арифметического теста Нобелевская премия уже была объявлена: Лаура прямо пишет, что даже она не избавила Энрико от проверки. В посте он назван «будущим нобелевским лауреатом». Авторская формулировка сохранена. Предлагается заменить в RU на «лауреат Нобелевской премии 1938 года», в EN — “the 1938 Nobel laureate”; редактору согласовать обе версии.",
+        "en": "In Atoms in the Family, p. 130 (PDF p. 152), the Nobel Prize had already been announced when Fermi took the arithmetic test. The post calls him a future Nobel laureate. The original wording is retained; propose the 1938 Nobel laureate in English and the corresponding correction in Russian, for editorial approval."
+      }
+    },
+    {
+      "id": "original-publication-future-date",
+      "question": "Исходная дата 6 декабря 2026 года находится в будущем относительно редакционной проверки 8 ноября 2026 года. Сохранить материал Draft до наступления этой даты либо подтвердить исправленную исходную дату публикации.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Исходная дата 6 декабря 2026 года находится в будущем относительно редакционной проверки 8 ноября 2026 года. Сохранить материал Draft до наступления этой даты либо подтвердить исправленную исходную дату публикации.",
+        "en": "The original publication date, 6 December 2026, is later than the editorial check on 8 November 2026. Keep the article in Draft until that date, or confirm a corrected original publication date."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/623#pullrequestreview-6043439452"
+    },
+    {
+      "id": "fermi-story-source-authorship",
+      "question": "Эпизод и его формулировки опираются на мемуары Лауры Ферми и позднее воспоминание Неллы Ферми, но корневые authors и rights_basis целиком приписывают материал Мансуру Гильмуллину. Отделить авторство источникового рассказа от адаптации или редакции Мансура.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Эпизод и его формулировки опираются на мемуары Лауры Ферми и позднее воспоминание Неллы Ферми, но корневые authors и rights_basis целиком приписывают материал Мансуру Гильмуллину. Отделить авторство источникового рассказа от адаптации или редакции Мансура.",
+        "en": "The episode and its wording rely on Laura Fermi’s memoir and Nella Fermi’s later recollection, but the root authors and rights_basis attribute the material entirely to Mansur Gilmullin. Distinguish authorship of the source account from Mansur’s adaptation or editing."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/623#pullrequestreview-6043439452"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/623#pullrequestreview-6043439452",
+    "source_commit": "85f0776eaf2430ad520bc894ea57485b376f2f52",
+    "source_review_id": 6043439452,
+    "approved_at": "2026-11-24T16:40:19Z",
+    "package_sha256": "5aec20656635f889d43d4c8770d16f0206baad0ce3b2622dfe3f7e341d91e63e"
+  }
+}

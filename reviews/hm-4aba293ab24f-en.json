@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-4aba293ab24f-en",
+  "questions": [
+    {
+      "id": "fermi-nobel-timing-before-test",
+      "question": "In Atoms in the Family, p. 130 (PDF p. 152), the Nobel Prize had already been announced when Fermi took the arithmetic test. The post calls him a future Nobel laureate. The original wording is retained; propose the 1938 Nobel laureate in English and the corresponding correction in Russian, for editorial approval.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "In Atoms in the Family, p. 130 (PDF p. 152), the Nobel Prize had already been announced when Fermi took the arithmetic test. The post calls him a future Nobel laureate. The original wording is retained; propose the 1938 Nobel laureate in English and the corresponding correction in Russian, for editorial approval.",
+        "ru": "По Atoms in the Family, стр. 130 (PDF-страница 152), к моменту арифметического теста Нобелевская премия уже была объявлена: Лаура прямо пишет, что даже она не избавила Энрико от проверки. В посте он назван «будущим нобелевским лауреатом». Авторская формулировка сохранена. Предлагается заменить в RU на «лауреат Нобелевской премии 1938 года», в EN — “the 1938 Nobel laureate”; редактору согласовать обе версии."
+      },
+      "resolution": "The timing is corrected in both versions: the Nobel Prize had already been announced before the consular test."
+    },
+    {
+      "id": "original-publication-future-date",
+      "question": "The original publication date, 6 December 2026, is later than the editorial check on 8 November 2026. Keep the article in Draft until that date, or confirm a corrected original publication date.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "The original publication date, 6 December 2026, is later than the editorial check on 8 November 2026. Keep the article in Draft until that date, or confirm a corrected original publication date.",
+        "ru": "Исходная дата 6 декабря 2026 года находится в будущем относительно редакционной проверки 8 ноября 2026 года. Сохранить материал Draft до наступления этой даты либо подтвердить исправленную исходную дату публикации."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/623#pullrequestreview-6043439452"
+    },
+    {
+      "id": "fermi-story-source-authorship",
+      "question": "The episode and its wording rely on Laura Fermi’s memoir and Nella Fermi’s later recollection, but the root authors and rights_basis attribute the material entirely to Mansur Gilmullin. Distinguish authorship of the source account from Mansur’s adaptation or editing.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "The episode and its wording rely on Laura Fermi’s memoir and Nella Fermi’s later recollection, but the root authors and rights_basis attribute the material entirely to Mansur Gilmullin. Distinguish authorship of the source account from Mansur’s adaptation or editing.",
+        "ru": "Эпизод и его формулировки опираются на мемуары Лауры Ферми и позднее воспоминание Неллы Ферми, но корневые authors и rights_basis целиком приписывают материал Мансуру Гильмуллину. Отделить авторство источникового рассказа от адаптации или редакции Мансура."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/623#pullrequestreview-6043439452"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/623#pullrequestreview-6043439452",
+    "source_commit": "85f0776eaf2430ad520bc894ea57485b376f2f52",
+    "source_review_id": 6043439452,
+    "approved_at": "2026-11-24T16:40:19Z",
+    "package_sha256": "e2d6426bc61d80daa8645a48d3923fe3df3ef0c72d880fe3f388c45c54800012"
+  }
+}
