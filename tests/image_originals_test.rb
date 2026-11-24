@@ -24,6 +24,16 @@ class ImageOriginalsTest < Minitest::Test
     assert_equal "", filter.figure_credit(figure.merge("credit" => ""))
   end
 
+  def test_caption_omits_the_public_domain_mark_and_keeps_other_recorded_license_labels
+    filter = Object.new.extend(HistoryMath::ImageAssets)
+    mark = {"license" => "Public Domain Mark 1.0", "license_url" => "https://creativecommons.org/publicdomain/mark/1.0/"}.freeze
+    assert_nil filter.figure_caption_license(mark)
+    assert_equal "Public Domain Mark 1.0", filter.figure_caption_license({"license" => mark.fetch("license")})
+    license = {"license" => "CC BY-SA 3.0", "license_url" => "https://creativecommons.org/licenses/by-sa/3.0/"}
+    assert_equal "CC BY-SA 3.0", filter.figure_caption_license(license)
+    assert_nil filter.figure_caption_license({})
+  end
+
   def test_migration_originals_use_immutable_git_revision_only_in_production
     site = Site.new({"image_source_revision" => "a" * 40}, ".", "/history_math", {"image_assets" => {}})
     path = "/assets/images/hm-tt-abc/diagram-01.png"
