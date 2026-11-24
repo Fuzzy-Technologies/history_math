@@ -5,35 +5,45 @@
     {
       "id": "q1",
       "question": "Verify the date of the father’s letter (1820) and the sources of both direct quotations; check the full bibliographical titles of the Appendix and the father’s book.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Verify the date of the father’s letter (1820) and the sources of both direct quotations; check the full bibliographical titles of the Appendix and the father’s book.",
         "ru": "Проверить дату письма отца (1820) и источники обеих прямых цитат; уточнить полные библиографические названия «Аппендикса» и книги отца."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/349#pullrequestreview-6045720573"
     },
     {
       "id": "q2",
       "question": "Clarify the independence statement about the fifth postulate and which theory of Hamilton the work on imaginary quantities anticipated; confirm sources for the account of later publications and Bolyai’s condition before his death.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Clarify the independence statement about the fifth postulate and which theory of Hamilton the work on imaginary quantities anticipated; confirm sources for the account of later publications and Bolyai’s condition before his death.",
         "ru": "Уточнить формулировку независимости пятого постулата и то, какую теорию Гамильтона предвосхищала работа о мнимых величинах; подтвердить источник сведений о последующих публикациях и состоянии Бойяи перед смертью."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/349#pullrequestreview-6045720573"
     },
     {
       "id": "q3",
       "question": "Identify a verifiable public primary source, author, date and licence or confirmed public-domain status for the portrait of János Bolyai.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Identify a verifiable public primary source, author, date and licence or confirmed public-domain status for the portrait of János Bolyai.",
         "ru": "Установить проверяемый публичный первоисточник, автора, дату и лицензию либо подтверждённый public-domain status портрета Яноша Бойяи."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/349#pullrequestreview-6045720573"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/349#pullrequestreview-6045720573",
+    "source_commit": "8fe06ef00ce89af28a75ad80252483893bf68290",
+    "source_review_id": 6045720573,
+    "approved_at": "2026-11-24T19:14:53Z",
+    "package_sha256": "c7eb297a344aa04bbacca64b99e895dfa8ba03637592fd3a5c292f5139e41545"
   }
 }

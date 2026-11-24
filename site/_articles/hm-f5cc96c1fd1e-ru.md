@@ -16,7 +16,7 @@ tags:
   - Бойяи
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-f5cc96c1fd1e-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
