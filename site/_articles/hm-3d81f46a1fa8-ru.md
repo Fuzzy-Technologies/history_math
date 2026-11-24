@@ -17,7 +17,7 @@ tags:
   - исторические задачи
   - Алкуин
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-3d81f46a1fa8-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

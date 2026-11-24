@@ -17,7 +17,7 @@ tags:
   - historical problems
   - Alcuin
 math: true
-status: draft
+status: published
 permalink: /publications/hm-3d81f46a1fa8-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
