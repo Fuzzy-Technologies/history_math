@@ -27,15 +27,23 @@
     {
       "id": "illustration-source-rights",
       "question": "Identify the actual sources and reproduction grounds for the portrait of Yevgeny Dyshinsky and the cover of Mathematical Circle Games. Preserve the existing credit to illustrator M. I. Gozenpud for the cover, and add the specific edition/publisher and legal status; “Illustration accompanying the text” does not establish these facts.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Identify the actual sources and reproduction grounds for the portrait of Yevgeny Dyshinsky and the cover of Mathematical Circle Games. Preserve the existing credit to illustrator M. I. Gozenpud for the cover, and add the specific edition/publisher and legal status; “Illustration accompanying the text” does not establish these facts.",
         "ru": "Для портрета Е. А. Дышинского и обложки «Игротеки математического кружка» указать реальные первоисточники и основания воспроизведения. Для обложки сохранить кредит художника М. И. Гозенпуда, добавить конкретное издание/издателя и правовой статус; формулировка «Иллюстрация к материалу» этого не подтверждает."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/365#pullrequestreview-6039935596"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/365#pullrequestreview-6039935596",
+    "source_commit": "4a17290e554cd8f31c963ff6e3abfd66c19ce464",
+    "source_review_id": 6039935596,
+    "approved_at": "2026-11-24T13:22:11Z",
+    "package_sha256": "d710996e686d341392d44e5f9ce44b457ae63a38049ee8026553a10296c29d37"
   }
 }
