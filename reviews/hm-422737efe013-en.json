@@ -5,7 +5,9 @@
     {
       "id": "q1",
       "question": "Approve merging the first and seventeenth bibliography entries for The Theory of Number: their short and full titles give 344 and 341 pages. The examined title page and printed catalogue entry give The Theory of Number in the Medieval Near and Middle East, Tashkent: Fan, 1967, 344 pages.",
-      "blocking": true,
+      "id": "q1",
+      "question": "Approve merging the first and seventeenth bibliography entries for The Theory of Number: their short and full titles give 344 and 341 pages. The examined title page and printed catalogue entry give The Theory of Number in the Medieval Near and Middle East, Tashkent: Fan, 1967, 344 pages.",
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Approve merging the first and seventeenth bibliography entries for The Theory of Number: their short and full titles give 344 and 341 pages. The examined title page and printed catalogue entry give The Theory of Number in the Medieval Near and Middle East, Tashkent: Fan, 1967, 344 pages.",
@@ -16,7 +18,9 @@
     {
       "id": "q2",
       "question": "Verify “1200th anniversary of his death” in the title of the 1983 al-Khwarizmi collection: it likely refers to his birth. Approve the title in both languages from the collection’s title page; the source wording is retained pending that decision.",
-      "blocking": true,
+      "id": "q2",
+      "question": "Verify “1200th anniversary of his death” in the title of the 1983 al-Khwarizmi collection: it likely refers to his birth. Approve the title in both languages from the collection’s title page; the source wording is retained pending that decision.",
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify “1200th anniversary of his death” in the title of the 1983 al-Khwarizmi collection: it likely refers to his birth. Approve the title in both languages from the collection’s title page; the source wording is retained pending that decision.",
