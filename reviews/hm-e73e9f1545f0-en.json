@@ -5,35 +5,45 @@
     {
       "id": "q1",
       "question": "Identify the specific research supporting the 1823 birth year and the calendar conventions; review the absolute claim about all encyclopaedic publications in this historical 2024 text. The medal visibly reads 1824–1871, which does not settle the biographical question.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Identify the specific research supporting the 1823 birth year and the calendar conventions; review the absolute claim about all encyclopaedic publications in this historical 2024 text. The medal visibly reads 1824–1871, which does not settle the biographical question.",
         "ru": "Подтвердить конкретные исследования о 1823 годе рождения и календарные стили дат; уточнить абсолютное «во всех энциклопедических изданиях» в историческом тексте 2024 года. На медали действительно видны 1824–1871; это не заменяет редакторского решения о биографической датировке."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/387#pullrequestreview-6039976807"
     },
     {
       "id": "q2",
       "question": "Verify the original sources of the Ushinsky and Modzalevsky quotations and the 2021 speech; review the translation of narodnost in education and the Russian book titles.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Verify the original sources of the Ushinsky and Modzalevsky quotations and the 2021 speech; review the translation of narodnost in education and the Russian book titles.",
         "ru": "Сверить первоисточники цитат Ушинского, Модзалевского и выступления 2021 года; согласовать перевод «народности воспитания» и названий русских педагогических книг."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/387#pullrequestreview-6039976807"
     },
     {
       "id": "q3",
       "question": "Identify a verifiable source and creator for the historical portrait of K. D. Ushinsky; for the medal image, identify the photograph's source, maker or rights holder and a confirmed basis for reproduction. Possession of copies in an author's archive does not establish image rights.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Identify a verifiable source and creator for the historical portrait of K. D. Ushinsky; for the medal image, identify the photograph's source, maker or rights holder and a confirmed basis for reproduction. Possession of copies in an author's archive does not establish image rights.",
         "ru": "Установить проверяемый источник и автора исторического портрета К. Д. Ушинского; для изображения медали — источник фотографии, изготовителя или правообладателя и подтверждённое основание воспроизведения. Хранение копий в авторском архиве не устанавливает права на изображения."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/387#pullrequestreview-6039976807"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/387#pullrequestreview-6039976807",
+    "source_commit": "2ad18bd0bd5238812fc1f3add8ff74cf1616df51",
+    "source_review_id": 6039976807,
+    "approved_at": "2026-11-24T13:25:03Z",
+    "package_sha256": "930662e1390c06958e0c3b457796339786dadc4d300b1de12403535a0b286f70"
   }
 }
