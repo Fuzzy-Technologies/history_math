@@ -19,7 +19,7 @@ tags:
   - Foundations of Mathematics
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-f3793dbe4f8b-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

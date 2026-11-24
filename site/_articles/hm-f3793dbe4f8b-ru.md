@@ -19,7 +19,7 @@ tags:
   - Основания математики
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-f3793dbe4f8b-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
