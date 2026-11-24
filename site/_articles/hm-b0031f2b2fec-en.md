@@ -18,7 +18,7 @@ tags:
   - Determinants
 series: People
 math: true
-status: draft
+status: published
 permalink: /publications/hm-b0031f2b2fec-en/
 rights_basis: Mansur Gilmullin
 original_publication:

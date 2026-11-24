@@ -38,15 +38,23 @@
     {
       "id": "q4",
       "question": "Для портрета Габриэля Крамера и титульного листа трактата 1750 года указать проверяемые публичные источники, автора или конкретное издание и правовой статус: титульный лист связать с цифровой копией издания, портрет — с отдельным первоисточником.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для портрета Габриэля Крамера и титульного листа трактата 1750 года указать проверяемые публичные источники, автора или конкретное издание и правовой статус: титульный лист связать с цифровой копией издания, портрет — с отдельным первоисточником.",
         "en": "For the portrait of Gabriel Cramer and the title page of the 1750 treatise, provide verifiable public sources, the author or specific edition, and the legal status: link the title page to a digitized copy of that edition and the portrait to its own primary source."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/369#pullrequestreview-6039952109"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/369#pullrequestreview-6039952109",
+    "source_commit": "c88b74052d67f1094416bd028814dc9325f02090",
+    "source_review_id": 6039952109,
+    "approved_at": "2026-11-24T13:23:21Z",
+    "package_sha256": "e1a091aa9b096e4d7b640b0e13a1f37acba5074d0604f1be15442c948713ad93"
   }
 }
