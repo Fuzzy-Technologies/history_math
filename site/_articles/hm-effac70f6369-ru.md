@@ -16,7 +16,7 @@ tags:
   - Аполлоний
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-effac70f6369-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

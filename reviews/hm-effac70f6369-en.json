@@ -27,15 +27,23 @@
     {
       "id": "apollonius-sculpture-image-attribution",
       "question": "For the sculpture image used as a portrait of Apollonius, identify the object or collection, the photographer or a public catalogue record, and a valid rights basis for publication.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the sculpture image used as a portrait of Apollonius, identify the object or collection, the photographer or a public catalogue record, and a valid rights basis for publication.",
         "ru": "Для изображения скульптуры, используемого как портрет Аполлония, укажите конкретный объект или собрание, автора снимка либо публичную карточку и действительное правовое основание публикации."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/323#pullrequestreview-6039895558"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/323#pullrequestreview-6039895558",
+    "source_commit": "a274ccd747aa6dd8b493742c5c7cb14f0f62738b",
+    "source_review_id": 6039895558,
+    "approved_at": "2026-11-24T13:19:23Z",
+    "package_sha256": "4fb918a2617028c09c55516fe6909d432ec9636c25c34144046153e1ae437c45"
   }
 }
