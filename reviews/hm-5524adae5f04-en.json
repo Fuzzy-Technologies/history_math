@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-5524adae5f04-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the positive/negative-root statement: not every quadratic has roots of opposite signs. Consider “considered both positive and negative roots” and the corresponding Russian wording, avoiding a universal claim about signs.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the positive/negative-root statement: not every quadratic has roots of opposite signs. Consider “considered both positive and negative roots” and the corresponding Russian wording, avoiding a universal claim about signs.",
+        "ru": "Уточнить фразу о положительном и отрицательном решениях квадратного уравнения: не каждое квадратное уравнение имеет корни разных знаков. Предлагается «учитывал как положительные, так и отрицательные корни» / “considered both positive and negative roots”, без всеобщего утверждения о знаках."
+      },
+      "resolution": "The sentence now says that Bhaskara considered positive and negative roots, without implying that every quadratic has roots of both signs."
+    },
+    {
+      "id": "q2",
+      "question": "Verify the manuscript leaf’s 1650 date and the figures of 1450 verses for the whole treatise and thirteen chapters, 278 verses for Lilavati. These refer to different textual scopes and are not treated as a contradiction.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Verify the manuscript leaf’s 1650 date and the figures of 1450 verses for the whole treatise and thirteen chapters, 278 verses for Lilavati. These refer to different textual scopes and are not treated as a contradiction.",
+        "ru": "Сверить датировку рукописного листа 1650 годом и библиографические сведения о 1450 стихах всего трактата и 13 главах, 278 стихах «Лилавати». Эти числа относятся к разным объёмам текста и не помечены как противоречие."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/411#pullrequestreview-6040002338"
+    },
+    {
+      "id": "q3",
+      "question": "Identify the public sources, creators or photographers and legal status of the bust of Bhaskara II, the Lilavati manuscript leaf and the statue at Patnadevi; archive custody does not establish authorship or permission for reproduction.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Identify the public sources, creators or photographers and legal status of the bust of Bhaskara II, the Lilavati manuscript leaf and the statue at Patnadevi; archive custody does not establish authorship or permission for reproduction.",
+        "ru": "Установить публичные первоисточники, авторов или фотографов и правовой статус бюста Бхаскары II, листа рукописи «Лилавати» и статуи в Патнадеви; хранение в авторском архиве не подтверждает авторство или право воспроизведения."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/411#pullrequestreview-6040002338"
+    },
+    {
+      "id": "ujjain-observatory-tradition",
+      "question": "Treat the statement that Bhaskara II headed the Ujjain observatory as a later tradition or remove the office unless a suitable historical source is supplied; Kim Plofker notes that his connection with the observatory is not documented. Source: https://sanskrit.uohyd.ac.in/Algorithms_in_Ancient_India/Material/Kim_Plofkar_Maths_in_India.pdf",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Treat the statement that Bhaskara II headed the Ujjain observatory as a later tradition or remove the office unless a suitable historical source is supplied; Kim Plofker notes that his connection with the observatory is not documented. Source: https://sanskrit.uohyd.ac.in/Algorithms_in_Ancient_India/Material/Kim_Plofkar_Maths_in_India.pdf",
+        "ru": "Представить утверждение о руководстве Бхаскары II обсерваторией Удджайна как позднюю традицию либо убрать должность, если не будет указан подходящий исторический источник; Ким Плофкер отмечает, что связь учёного с этой обсерваторией документально не подтверждена. Источник: https://sanskrit.uohyd.ac.in/Algorithms_in_Ancient_India/Material/Kim_Plofkar_Maths_in_India.pdf"
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/411#pullrequestreview-6040002338"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/411#pullrequestreview-6040002338",
+    "source_commit": "b93eddaf6a97f1fd72ca6fcc5abcfc0d44d1c0cc",
+    "source_review_id": 6040002338,
+    "approved_at": "2026-11-24T13:26:49Z",
+    "package_sha256": "21310d28d2e28d1d479a6578f6619aca5681bd8ac6896336b9113f244aef542e"
+  }
+}
