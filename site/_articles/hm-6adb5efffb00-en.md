@@ -59,7 +59,7 @@ The evidence is watertight:
 
 3. 100% of all soldiers have eaten cucumbers.
 
-4. 99.7% of all victims of car and aircraft accidents ate cucumbers within two weeks of their accident.
+4. 99.7% of all victims of car and aircraft accidents ate cucumbers during the two weeks before their accident.
 
 5. 93.1% of all juvenile offenders come from families where cucumbers were eaten regularly.
 
