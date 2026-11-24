@@ -5,35 +5,45 @@
     {
       "id": "q1",
       "question": "Clarify the sequence of admission to extramural postgraduate study in 1931 and graduation in 1934. The 1949 doctoral defence and 1950 degree are retained as separate events; review the historical institution names and the Tatar journal title.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Clarify the sequence of admission to extramural postgraduate study in 1931 and graduation in 1934. The 1949 doctoral defence and 1950 degree are retained as separate events; review the historical institution names and the Tatar journal title.",
         "ru": "Уточнить последовательность поступления в заочную аспирантуру в 1931 году и окончания университета в 1934 году. Защита докторской в 1949 году и присуждение степени в 1950 году сохранены как разные события; согласовать названия учреждений и перевод татарского названия журнала."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/393#pullrequestreview-6045724536"
     },
     {
       "id": "q2",
       "question": "Establish the actual public source, photographer or creator (if known), licence or other verified legal status for the third-party portrait of Mazit Almukhamedov; synchronize the RU/EN metadata and do not attribute authorship of the image to M. F. Gilmullin without evidence.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Establish the actual public source, photographer or creator (if known), licence or other verified legal status for the third-party portrait of Mazit Almukhamedov; synchronize the RU/EN metadata and do not attribute authorship of the image to M. F. Gilmullin without evidence.",
         "ru": "Установить для стороннего портрета Мазита Альмухамедова реальный публичный источник, фотографа/автора (если известен), лицензию или иной подтверждённый правовой статус; синхронизировать метаданные RU/EN и не приписывать авторство изображения М. Ф. Гильмуллину без подтверждения."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/393#pullrequestreview-6045724536"
     },
     {
       "id": "professor-title-year",
       "question": "Verify the year in which Mazit Almukhamedov received the title of professor: Tatarica gives 1951, while A. F. Galimdzhanov’s KFU article (DOI 10.26907/2311-2042-2022-18-1-176-181) gives 1950. Establish the year from a primary record and synchronize RU/EN.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Verify the year in which Mazit Almukhamedov received the title of professor: Tatarica gives 1951, while A. F. Galimdzhanov’s KFU article (DOI 10.26907/2311-2042-2022-18-1-176-181) gives 1950. Establish the year from a primary record and synchronize RU/EN.",
         "ru": "Уточнить год присвоения Мазиту Альмухамедову звания профессора: Tatarica указывает 1951 год, а статья А. Ф. Галимджанова в КФУ (DOI 10.26907/2311-2042-2022-18-1-176-181) — 1950 год. Установить год по первичному документу и синхронизировать RU/EN."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/393#pullrequestreview-6045724536"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/393#pullrequestreview-6045724536",
+    "source_commit": "2a517b74ff796355f40485cda2b9b6bf7b95cc0e",
+    "source_review_id": 6045724536,
+    "approved_at": "2026-11-24T19:15:09Z",
+    "package_sha256": "07133eed6757f311cdc3eb331ad9d04df45646f695ee54e19a2834d24138f86a"
   }
 }

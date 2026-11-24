@@ -20,7 +20,7 @@ tags:
   - Краеведение
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-caad29cc6f86-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
