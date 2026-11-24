@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-9c176ebe7bae",
+  "questions": [
+    {
+      "id": "folding-construction-completeness",
+      "question": "В источнике подробно описаны биссектриса, высота и медиана; для серединного перпендикуляра, инцентра и центра описанной окружности готовые ответы не даны. Оставить их самостоятельными упражнениями либо добавить подтверждённые авторские решения. Также уточнить первый перегиб «по прямой BC»: для уже вырезанного треугольника BC является краем бумаги.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Три последние позиции оставлены самостоятельными упражнениями; построение высоты переписано как один перегиб через A с совмещением края BC с самим собой.",
+      "localizations": {
+        "source": "В источнике подробно описаны биссектриса, высота и медиана; для серединного перпендикуляра, инцентра и центра описанной окружности готовые ответы не даны. Оставить их самостоятельными упражнениями либо добавить подтверждённые авторские решения. Также уточнить первый перегиб «по прямой BC»: для уже вырезанного треугольника BC является краем бумаги.",
+        "en": "The source explains the angle bisector, altitude and median, but gives no completed answers for the perpendicular bisector, incentre or circumcentre. Please retain those as independent exercises or supply confirmed author solutions. Also clarify the initial fold “along BC”: for an already cut-out triangle, BC is a paper edge."
+      }
+    },
+    {
+      "id": "folding-blinkov-link-availability",
+      "question": "Проверить ссылку на статью Блинкова. Если она недоступна, заменить подтверждённой публичной ссылкой.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Публичный PDF по указанной ссылке открывается; статья А. Н. Блинкова находится на с. 18–22.",
+      "localizations": {
+        "source": "Проверить ссылку на статью Блинкова. Если она недоступна, заменить подтверждённой публичной ссылкой.",
+        "en": "Verify the link to Blinkov’s article. If it is unavailable, replace it with a confirmed public URL."
+      }
+    },
+    {
+      "id": "folding-cover-attribution",
+      "question": "Уточнить происхождение обложки с оранжевой бумажной птицей (fig-1): указать автора или фотографа, проверяемый публичный источник и лицензию либо иное подтверждённое правовое основание. Текущая формулировка «Иллюстрация к материалу» не подтверждает права на изображение.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Уточнить происхождение обложки с оранжевой бумажной птицей (fig-1): указать автора или фотографа, проверяемый публичный источник и лицензию либо иное подтверждённое правовое основание. Текущая формулировка «Иллюстрация к материалу» не подтверждает права на изображение.",
+        "en": "Clarify the provenance of the cover showing an orange paper bird (fig-1): identify the creator or photographer, a verifiable public source, and the licence or other confirmed rights basis. The current wording “Illustration accompanying the text” does not establish the image’s provenance."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/686#pullrequestreview-6040295744"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/686#pullrequestreview-6040295744",
+    "source_commit": "f6bcfed381ec305ff420f928b71b7c14cff256a2",
+    "source_review_id": 6040295744,
+    "approved_at": "2026-11-24T13:45:13Z",
+    "package_sha256": "b8e092bcb39cca19b9e0c504578217bebf56106782c41ab442616a2b6b40a646"
+  }
+}
