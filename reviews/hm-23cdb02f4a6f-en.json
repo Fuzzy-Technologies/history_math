@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Verify the school and university appointment chronology in Königsberg and Bonn, and the current administrative description of Aleksoty.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify the school and university appointment chronology in Königsberg and Bonn, and the current administrative description of Aleksoty.",
@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "Confirm the use of “geometrodynamics” for Minkowski’s model and the nature of the stated connection with Lobachevsky geometry.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Confirm the use of “geometrodynamics” for Minkowski’s model and the nature of the stated connection with Lobachevsky geometry.",
