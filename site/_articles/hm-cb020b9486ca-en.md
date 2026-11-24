@@ -22,6 +22,17 @@ original_publication:
   outlet: Telegram · history_math
   date: '2023-12-03'
   preserve_date: true
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-cb020b9486ca/figure-01.png
+  alt: A shopper holds a watermelon beside a cart piled high with watermelons.
+  caption: ''
+  source: AI-generated illustration commissioned by the journal.
+  credit: ''
+  rights_basis: Created for the journal at the request of Timur Gilmullin in 2026.
+cover_image: /assets/images/hm-cb020b9486ca/figure-01.png
+preview_image: /assets/images/hm-cb020b9486ca/figure-01.png
 ---
-🍉 Only in a maths word problem can you buy 60 watermelons without anyone asking, “What for?!”
+{% include article-figure.html id="fig-1" %}
+
+Only in a maths word problem can you buy 60 watermelons without anyone asking, “What for?!”

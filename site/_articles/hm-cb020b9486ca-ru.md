@@ -22,6 +22,17 @@ original_publication:
   outlet: Telegram · history_math
   date: '2023-12-03'
   preserve_date: true
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-cb020b9486ca/figure-01.png
+  alt: Покупатель держит арбуз перед телегой, доверху нагруженной арбузами.
+  caption: ''
+  source: Иллюстрация редакции журнала, созданная с помощью ИИ.
+  credit: ''
+  rights_basis: Создано для журнала по поручению Тимура Гильмуллина, 2026.
+cover_image: /assets/images/hm-cb020b9486ca/figure-01.png
+preview_image: /assets/images/hm-cb020b9486ca/figure-01.png
 ---
-🍉 Математические задачи — это единственное место в мире, где некто может купить 60 арбузов и никто его не спросит: «А зачем?!»
+{% include article-figure.html id="fig-1" %}
+
+Математические задачи — это единственное место в мире, где некто может купить 60 арбузов и никто его не спросит: «А зачем?!»
