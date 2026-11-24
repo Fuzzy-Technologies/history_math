@@ -16,7 +16,7 @@ tags:
   - Number Theory
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-3feee53d3afb-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

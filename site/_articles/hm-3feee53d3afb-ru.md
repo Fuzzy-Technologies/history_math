@@ -16,7 +16,7 @@ tags:
   - Теория чисел
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-3feee53d3afb-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
