@@ -16,15 +16,23 @@
     {
       "id": "degas-reproduction-provenance",
       "question": "Для точных байтов репродукции Дега, использованной как обложка, подтвердить публичный источник или URL загрузки и скорректировать кредит в обеих редакциях по официальной записи: © Musée d’Orsay, dist. GrandPalaisRmn / Patrice Schmidt. Истечение срока охраны самой картины и помета Public Domain не подтверждают правовой статус этой конкретной цифровой репродукции.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для точных байтов репродукции Дега, использованной как обложка, подтвердить публичный источник или URL загрузки и скорректировать кредит в обеих редакциях по официальной записи: © Musée d’Orsay, dist. GrandPalaisRmn / Patrice Schmidt. Истечение срока охраны самой картины и помета Public Domain не подтверждают правовой статус этой конкретной цифровой репродукции.",
         "en": "For the exact bytes of the Degas reproduction used as the cover, confirm the public source or download URL and correct the credit in both editions to match the official record: © Musée d’Orsay, dist. GrandPalaisRmn / Patrice Schmidt. Expiry of copyright in the painting itself and a Public Domain label do not establish the legal status of this specific digital reproduction."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/633#pullrequestreview-6040206363"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/633#pullrequestreview-6040206363",
+    "source_commit": "cdedb848f3ad0aee556ea2df06fb713dc8eff2a7",
+    "source_review_id": 6040206363,
+    "approved_at": "2026-11-24T13:40:06Z",
+    "package_sha256": "061521e20ad50c3c04417c20589008e2e82d4fa73fe428278489fe6cca5eb70d"
   }
 }
