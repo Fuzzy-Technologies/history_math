@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a7acee282488",
+  "questions": [
+    {
+      "id": "missing-humor-cover",
+      "question": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
+        "en": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication."
+      },
+      "resolution": "В обеих версиях добавлена согласованная редакцией обложка. https://github.com/Fuzzy-Technologies/history_math/pull/517#pullrequestreview-6045743687"
+    },
+    {
+      "id": "ampere-watch-egg-attribution",
+      "question": "Историю о часах, сваренных вместо яйца, нельзя без источника приписывать Амперу: у Камиля Фламмариона в «Popular Astronomy» (1884) этот эпизод относится к Ньютону, а для Ампера приведён другой анекдот. Нужен источник именно для атрибуции Амперу либо синхронная правка RU/EN.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Историю о часах, сваренных вместо яйца, нельзя без источника приписывать Амперу: у Камиля Фламмариона в «Popular Astronomy» (1884) этот эпизод относится к Ньютону, а для Ампера приведён другой анекдот. Нужен источник именно для атрибуции Амперу либо синхронная правка RU/EN.",
+        "en": "The story about boiling a watch instead of an egg should not be attributed to Ampère without a source: Camille Flammarion’s Popular Astronomy (1884) assigns this episode to Newton and gives a different anecdote for Ampère. Provide a source specifically supporting the Ampère attribution or revise RU/EN consistently."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/517#pullrequestreview-6045743687"
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 16.06.2024; адрес нельзя восстанавливать предположительно.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 16.06.2024; адрес нельзя восстанавливать предположительно.",
+        "en": "Provide a public link to the original publication confirming the date 16.06.2024; the address must not be guessed."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/517#pullrequestreview-6045743687"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/517#pullrequestreview-6045743687",
+    "source_commit": "0a4c4699f3c0864ac13dd32e354638fc6c478d16",
+    "source_review_id": 6045743687,
+    "approved_at": "2026-11-24T19:16:32Z",
+    "package_sha256": "b0d9f19ac7693cdf4ad477d153397bb062f3b0e8386a00fba3181a32353ae691"
+  }
+}
