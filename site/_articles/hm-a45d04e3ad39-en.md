@@ -70,7 +70,7 @@ Sometimes the most frightening mathematical horror stories are written in letter
 
 The irony is that the “night of parallels” did come to an end — through a new geometry rather than a proof. In Kazan, the eminent mathematician Nikolai Lobachevsky had already published his first papers in 1829–1830, replacing the parallel axiom and opening the way to non-Euclidean geometry.
 
-We wrote about him in [“What Did Nikolai Ivanovich Lobachevsky Really Look Like? Myths and Reality”](https://teletype.in/@history_math/Kakoj-on-Nikolaj-Ivanovich-Lobachevskij-mify-i-realnost-10-05).
+We wrote about him in [“What Did Nikolai Ivanovich Lobachevsky Really Look Like? Myths and Reality”](https://history-math.org/publications/hm-tt-514184820ada-en/).
 
 ## Notes
 
