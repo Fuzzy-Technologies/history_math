@@ -5,45 +5,56 @@
     {
       "id": "q1",
       "question": "Подтвердить источник вводной цитаты и стихотворного фрагмента 1946 года; согласовать смысловой перевод шести строк с сохранением двух строф.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Подтвердить источник вводной цитаты и стихотворного фрагмента 1946 года; согласовать смысловой перевод шести строк с сохранением двух строф.",
         "en": "Confirm the sources of the opening quotation and the 1946 poem excerpt; review the sense-based translation of all six lines in two stanzas."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/383#pullrequestreview-6045723412"
     },
     {
       "id": "q2",
       "question": "Сверить конкретную теорему о диадических пространствах и формулировку ультрафинитизма, научное руководство и точный статус в Бостонском университете.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Сверить конкретную теорему о диадических пространствах и формулировку ультрафинитизма, научное руководство и точный статус в Бостонском университете.",
         "en": "Verify the specific theorem on dyadic spaces, the formulation of ultrafinitism, the dissertation supervision and the precise Boston University title."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/383#pullrequestreview-6045723412"
     },
     {
       "id": "q3",
       "question": "Для хронологии репрессий, общего срока заключения и утверждения о первой послевоенной демонстрации нужны конкретные исторические источники и уточнение рамок приоритета.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для хронологии репрессий, общего срока заключения и утверждения о первой послевоенной демонстрации нужны конкретные исторические источники и уточнение рамок приоритета.",
         "en": "Provide specific historical sources for the persecution chronology, total time in confinement and the priority claim for the first post-war public protest demonstration."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/383#pullrequestreview-6045723412"
     },
     {
       "id": "q4",
       "question": "Установить публичный первоисточник, фотографа или автора и правовой статус портрета Александра Есенина-Вольпина. Хранение изображения в авторском архиве и формулировка «Иллюстрация к материалу» не подтверждают право воспроизведения.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Установить публичный первоисточник, фотографа или автора и правовой статус портрета Александра Есенина-Вольпина. Хранение изображения в авторском архиве и формулировка «Иллюстрация к материалу» не подтверждают право воспроизведения.",
         "en": "Identify the public source, photographer or creator and legal status of the portrait of Alexander Yesenin-Volpin. Storage in the author’s archive and the phrase “Illustration accompanying the text” do not establish permission for reproduction."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/383#pullrequestreview-6045723412"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/383#pullrequestreview-6045723412",
+    "source_commit": "a11116322c218022e9fc41f3d9f5dd25e5183731",
+    "source_review_id": 6045723412,
+    "approved_at": "2026-11-24T19:15:04Z",
+    "package_sha256": "0f41ec6f2f1339e2cda9ea3711be01da79c98f20e7faa0108676d072d43c9696"
   }
 }
