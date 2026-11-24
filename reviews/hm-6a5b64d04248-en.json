@@ -27,15 +27,23 @@
     {
       "id": "q3",
       "question": "Identify the original author or publication, a verifiable public source, and the legal basis for publishing or processing both portraits of Vavilov. Possession in an author’s archive does not establish authorship or publication rights; synchronize the evidence in RU/EN metadata.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Identify the original author or publication, a verifiable public source, and the legal basis for publishing or processing both portraits of Vavilov. Possession in an author’s archive does not establish authorship or publication rights; synchronize the evidence in RU/EN metadata.",
         "ru": "Установить для обоих портретов Вавилова исходного автора или публикацию, проверяемый публичный источник и правовое основание публикации/обработки. Наличие изображения в авторском архиве не подтверждает авторство или права; сведения должны быть синхронизированы в RU/EN metadata."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/455#pullrequestreview-6040059076"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/455#pullrequestreview-6040059076",
+    "source_commit": "6a6bf533b56a9543ad19465222c8f2c92b982e78",
+    "source_review_id": 6040059076,
+    "approved_at": "2026-11-24T13:30:18Z",
+    "package_sha256": "2a6ac3355f742f287a7920ad174521edb16962f398b05e35ff7cded775d2c0a2"
   }
 }
