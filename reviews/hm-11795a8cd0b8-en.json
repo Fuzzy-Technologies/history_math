@@ -15,7 +15,7 @@
     {
       "id": "gerbert-cover-abacus",
       "question": "The cover shows a bead frame with counters on rods, whereas Gerbert’s abacus was a place-value counting board with movable counters. State in both captions that the illustration is schematic. Evidence: https://www.sciamvs.org/files/SCIAMVS_03_091-108_Burnett.pdf, pp. 91–92.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "The cover shows a bead frame with counters on rods, whereas Gerbert’s abacus was a place-value counting board with movable counters. State in both captions that the illustration is schematic. Evidence: https://www.sciamvs.org/files/SCIAMVS_03_091-108_Burnett.pdf, pp. 91–92.",
