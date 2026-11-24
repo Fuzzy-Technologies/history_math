@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-da7f8f91cbd0-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the conditions and coverage of the Pythagorean-triple formulas: the source does not specify parameter restrictions or a common scaling factor. Also agree the conditions on nonzero integer solutions and the exponent in the Fermat paragraph.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the conditions and coverage of the Pythagorean-triple formulas: the source does not specify parameter restrictions or a common scaling factor. Also agree the conditions on nonzero integer solutions and the exponent in the Fermat paragraph.",
+        "ru": "Уточнить условия формул пифагоровых троек и полноту охвата: параметры и общий множитель в исходнике не оговорены. Также согласовать условие о ненулевых целых решениях и степени в абзаце о Великой теореме Ферма."
+      },
+      "resolution": "Parameter restrictions and the common scaling factor were added for Pythagorean triples; Fermat’s statement now specifies nonzero integer solutions and integer n > 2."
+    },
+    {
+      "id": "q2",
+      "question": "Verify the surviving-book count in light of the Arabic tradition, the definition of Diophantine equations by the number of unknowns, the account of Bombelli’s translation and publication, and the attribution of notation to Diophantus.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the surviving-book count in light of the Arabic tradition, the definition of Diophantine equations by the number of unknowns, the account of Bombelli’s translation and publication, and the attribution of notation to Diophantus.",
+        "ru": "Проверить число сохранившихся книг с учётом арабской традиции, определение диофантовых уравнений через число неизвестных, сведения о переводе и публикации Бомбелли и точную атрибуцию символики Диофанта."
+      },
+      "resolution": "The surviving Greek and Arabic books, definition of Diophantine equations, notation and the Bombelli–Xylander–Bachet transmission were corrected."
+    },
+    {
+      "id": "q3",
+      "question": "Confirm the original source and nature of the depiction of Diophantus and the basis for reproduction; the source versions contain no confirmed Telegram URL.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Confirm the original source and nature of the depiction of Diophantus and the basis for reproduction; the source versions contain no confirmed Telegram URL.",
+        "ru": "Подтвердить первоисточник и характер изображения Диофанта и основание воспроизведения; в исходных версиях нет подтверждённой ссылки на Telegram."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/352#pullrequestreview-6039927095"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/352#pullrequestreview-6039927095",
+    "source_commit": "2f10fc581b55c9af78e3472e3db7d2eb20436790",
+    "source_review_id": 6039927095,
+    "approved_at": "2026-11-24T13:21:35Z",
+    "package_sha256": "e332c85d2cd22d7b747d3ae9a0ed767b7bb79792f92678759df8bdb1048ae5fa"
+  }
+}

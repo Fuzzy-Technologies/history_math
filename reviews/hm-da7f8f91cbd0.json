@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-da7f8f91cbd0",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить условия формул пифагоровых троек и полноту охвата: параметры и общий множитель в исходнике не оговорены. Также согласовать условие о ненулевых целых решениях и степени в абзаце о Великой теореме Ферма.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Добавлены условия параметров и общий множитель для пифагоровых троек; утверждение Ферма записано для ненулевых целых решений и целого n > 2.",
+      "localizations": {
+        "source": "Уточнить условия формул пифагоровых троек и полноту охвата: параметры и общий множитель в исходнике не оговорены. Также согласовать условие о ненулевых целых решениях и степени в абзаце о Великой теореме Ферма.",
+        "en": "Clarify the conditions and coverage of the Pythagorean-triple formulas: the source does not specify parameter restrictions or a common scaling factor. Also agree the conditions on nonzero integer solutions and the exponent in the Fermat paragraph."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Проверить число сохранившихся книг с учётом арабской традиции, определение диофантовых уравнений через число неизвестных, сведения о переводе и публикации Бомбелли и точную атрибуцию символики Диофанта.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Уточнены сохранившиеся греческие и арабские книги, определение диофантовых уравнений, характер символики и история переводов Бомбелли, Ксиландра и Баше.",
+      "localizations": {
+        "source": "Проверить число сохранившихся книг с учётом арабской традиции, определение диофантовых уравнений через число неизвестных, сведения о переводе и публикации Бомбелли и точную атрибуцию символики Диофанта.",
+        "en": "Verify the surviving-book count in light of the Arabic tradition, the definition of Diophantine equations by the number of unknowns, the account of Bombelli’s translation and publication, and the attribution of notation to Diophantus."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Подтвердить первоисточник и характер изображения Диофанта и основание воспроизведения; в исходных версиях нет подтверждённой ссылки на Telegram.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Подтвердить первоисточник и характер изображения Диофанта и основание воспроизведения; в исходных версиях нет подтверждённой ссылки на Telegram.",
+        "en": "Confirm the original source and nature of the depiction of Diophantus and the basis for reproduction; the source versions contain no confirmed Telegram URL."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/352#pullrequestreview-6039927095"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/352#pullrequestreview-6039927095",
+    "source_commit": "2f10fc581b55c9af78e3472e3db7d2eb20436790",
+    "source_review_id": 6039927095,
+    "approved_at": "2026-11-24T13:21:35Z",
+    "package_sha256": "3205308d3a8a466d6e7b5f954aeeab90ac06193e5bad1cfc0c653174accd59bb"
+  }
+}
