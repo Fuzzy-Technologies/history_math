@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Clarify the conditions and coverage of the Pythagorean-triple formulas: the source does not specify parameter restrictions or a common scaling factor. Also agree the conditions on nonzero integer solutions and the exponent in the Fermat paragraph.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Clarify the conditions and coverage of the Pythagorean-triple formulas: the source does not specify parameter restrictions or a common scaling factor. Also agree the conditions on nonzero integer solutions and the exponent in the Fermat paragraph.",
@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "Verify the surviving-book count in light of the Arabic tradition, the definition of Diophantine equations by the number of unknowns, the account of Bombelli’s translation and publication, and the attribution of notation to Diophantus.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify the surviving-book count in light of the Arabic tradition, the definition of Diophantine equations by the number of unknowns, the account of Bombelli’s translation and publication, and the attribution of notation to Diophantus.",
