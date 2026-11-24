@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0cfcf3eb40ab-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Identify the museum or collection holding the bust of Aristotle, provide a verifiable source for the reproduction, name the photographer, and document the licence or confirmed legal status of the image; authorship of the text does not extend to a third-party illustration.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Identify the museum or collection holding the bust of Aristotle, provide a verifiable source for the reproduction, name the photographer, and document the licence or confirmed legal status of the image; authorship of the text does not extend to a third-party illustration.",
+        "ru": "Укажите музей или коллекцию, где хранится бюст Аристотеля, проверяемый источник репродукции, автора фотографии и лицензию либо подтверждённый правовой статус изображения; авторство текста не распространяется на стороннюю иллюстрацию."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/341#pullrequestreview-6039919072"
+    },
+    {
+      "id": "q2",
+      "question": "Replace the claim that “Aristotle discovered that … the final statement must be accepted as an axiom” with a historically accurate account: in the Posterior Analytics, demonstration rests on true, primary and immediate premises, while knowledge of first principles is not reduced to simply accepting the last link in a regress.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Replace the claim that “Aristotle discovered that … the final statement must be accepted as an axiom” with a historically accurate account: in the Posterior Analytics, demonstration rests on true, primary and immediate premises, while knowledge of first principles is not reduced to simply accepting the last link in a regress.",
+        "ru": "Заменить формулировку «Аристотель открыл, что… последнее утверждение следует принять за аксиому» исторически точным описанием: в «Второй аналитике» доказательство опирается на истинные первичные непосредственные посылки, а знание первых начал не сводится к простому принятию последнего звена регресса."
+      },
+      "resolution": "Corrected from Posterior Analytics I.2 and II.19: https://classics.mit.edu/Aristotle/posterior.1.i.html and https://classics.mit.edu/Aristotle/posterior.2.ii.html"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/341#pullrequestreview-6039919072",
+    "source_commit": "022f78563ff29aeee1c41f070b3e1d99440126f7",
+    "source_review_id": 6039919072,
+    "approved_at": "2026-11-24T13:21:01Z",
+    "package_sha256": "041a3c82aba64384368f0a3eeaaa66f8bb466dffd38b83eb4777c32f3ca02499"
+  }
+}
