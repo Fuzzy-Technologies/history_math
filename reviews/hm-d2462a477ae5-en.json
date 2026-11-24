@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "The list headed “published in the USSR” includes a 1998 collection. Approve “The following works appeared in Russian…” and the corresponding Russian wording while retaining that edition.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "The list headed “published in the USSR” includes a 1998 collection. Approve “The following works appeared in Russian…” and the corresponding Russian wording while retaining that edition.",
