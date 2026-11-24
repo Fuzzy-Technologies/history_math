@@ -5,7 +5,7 @@
     {
       "id": "two-squares-historical-priority",
       "question": "Please provide a source for “first recorded by Diophantus” and “first appeared in Europe in Liber quadratorum (1225)”, and clarify which sum-of-two-squares result is attributed to Fermat in the introduction. The post gives no bibliographic locator for these historical claims; the arithmetic and both identity forms are preserved and checked separately.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Please provide a source for “first recorded by Diophantus” and “first appeared in Europe in Liber quadratorum (1225)”, and clarify which sum-of-two-squares result is attributed to Fermat in the introduction. The post gives no bibliographic locator for these historical claims; the arithmetic and both identity forms are preserved and checked separately.",
@@ -16,7 +16,7 @@
     {
       "id": "two-squares-historical-locators",
       "question": "Provide exact bibliographic locators for the remaining historical claims: the book/problem in Diophantus’s Arithmetica, the passage in Brahmagupta’s Brahmasphutasiddhanta, and the section/problem in Fibonacci’s Liber quadratorum that contains this product-of-two-sums-of-squares identity. Removing priority wording does not by itself substantiate these attributions.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Provide exact bibliographic locators for the remaining historical claims: the book/problem in Diophantus’s Arithmetica, the passage in Brahmagupta’s Brahmasphutasiddhanta, and the section/problem in Fibonacci’s Liber quadratorum that contains this product-of-two-sums-of-squares identity. Removing priority wording does not by itself substantiate these attributions.",
