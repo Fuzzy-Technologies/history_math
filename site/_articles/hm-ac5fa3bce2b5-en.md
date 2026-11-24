@@ -16,7 +16,7 @@ tags:
   - Sylvester
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-ac5fa3bce2b5-en/
 rights_basis: Mansur Gilmullin
 original_publication:

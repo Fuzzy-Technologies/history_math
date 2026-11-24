@@ -16,7 +16,7 @@ tags:
   - Сильвестр
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-ac5fa3bce2b5-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
