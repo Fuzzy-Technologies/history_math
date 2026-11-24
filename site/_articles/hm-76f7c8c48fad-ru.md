@@ -23,8 +23,19 @@ original_publication:
   outlet: Telegram · history_math
   date: '2023-11-12'
   preserve_date: true
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-76f7c8c48fad/figure-01.png
+  alt: Учёные оценивают размеры круглой пиццы рядом с чертёжными инструментами.
+  caption: ''
+  source: Иллюстрация редакции журнала, созданная с помощью ИИ.
+  credit: ''
+  rights_basis: Создано для журнала по поручению Тимура Гильмуллина, 2026.
+cover_image: /assets/images/hm-76f7c8c48fad/figure-01.png
+preview_image: /assets/images/hm-76f7c8c48fad/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 Математики шутят и, кажется, проголодались.
 
 Пицца с радиусом $\text{ц}$ и толщиной $\text{а}$ имеет объём $\text{пи}\cdot\text{ц}\cdot\text{ц}\cdot\text{а}$.
