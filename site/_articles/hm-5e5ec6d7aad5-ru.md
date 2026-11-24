@@ -18,7 +18,7 @@ tags:
   - Теория чисел
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-5e5ec6d7aad5-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

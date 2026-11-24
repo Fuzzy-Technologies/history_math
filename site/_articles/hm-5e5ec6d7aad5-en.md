@@ -18,7 +18,7 @@ tags:
   - Number Theory
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-5e5ec6d7aad5-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
