@@ -20,7 +20,7 @@ tags:
   - mathematics teaching
   - geometry
 math: true
-status: draft
+status: published
 permalink: /publications/hm-b291686a9dec-en/
 rights_basis: Mansur Gilmullin
 original_publication:

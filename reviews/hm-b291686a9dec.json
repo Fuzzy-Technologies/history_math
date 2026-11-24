@@ -5,15 +5,23 @@
     {
       "id": "future-original-publication-date",
       "question": "Дата исходной публикации 13.12.2026 ещё не наступила. До публикации материала подтвердить её по фактической записи Telegram или исправить дату.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Дата исходной публикации 13.12.2026 ещё не наступила. До публикации материала подтвердить её по фактической записи Telegram или исправить дату.",
         "en": "The stated original publication date, 13 December 2026, is still in the future. Before publication, confirm it against the actual Telegram post or correct the date."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/624#pullrequestreview-6043450909"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/624#pullrequestreview-6043450909",
+    "source_commit": "68b95e5de8bda47cefc8127e7bc322d15ac06d72",
+    "source_review_id": 6043450909,
+    "approved_at": "2026-11-24T16:41:04Z",
+    "package_sha256": "7c5e6b23e8b809971e7e49f1d66af7f88c7c25988f5c69169d2a82ddeed62d4b"
   }
 }

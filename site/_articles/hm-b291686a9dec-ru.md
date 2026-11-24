@@ -20,7 +20,7 @@ tags:
   - методика преподавания математики
   - геометрия
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-b291686a9dec-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
