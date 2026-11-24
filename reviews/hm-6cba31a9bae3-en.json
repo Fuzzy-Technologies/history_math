@@ -5,25 +5,34 @@
     {
       "id": "q1",
       "question": "Provide a specific documentary source for the episode involving Abel’s manuscript and describe Cauchy’s role in its delay and later recovery precisely.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Provide a specific documentary source for the episode involving Abel’s manuscript and describe Cauchy’s role in its delay and later recovery precisely.",
         "ru": "Указать конкретный документальный источник для истории с рукописью Абеля и точно описать роль Коши в её задержке и последующем обнаружении."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/338#pullrequestreview-6039985428"
     },
     {
       "id": "q2",
       "question": "Provide a publicly verifiable original source, creator and legal basis for reproducing the portrait of Augustin-Louis Cauchy.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Provide a publicly verifiable original source, creator and legal basis for reproducing the portrait of Augustin-Louis Cauchy.",
         "ru": "Указать публично проверяемый первоисточник, автора и правовое основание воспроизведения портрета Огюстена Луи Коши."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/338#pullrequestreview-6039985428"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/338#pullrequestreview-6039985428",
+    "source_commit": "66e07df8215e024cbb2f31a360992280ec7dcb69",
+    "source_review_id": 6039985428,
+    "approved_at": "2026-11-24T13:25:39Z",
+    "package_sha256": "0148eb7e573ded4e61e5b0e43b075569e0f3489a392213bdf07bc8d9e2bbb01f"
   }
 }

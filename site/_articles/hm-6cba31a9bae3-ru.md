@@ -16,7 +16,7 @@ tags:
   - Коши
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-6cba31a9bae3-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

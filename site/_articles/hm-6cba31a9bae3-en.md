@@ -16,7 +16,7 @@ tags:
   - Cauchy
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-6cba31a9bae3-en/
 rights_basis: Mansur Gilmullin
 original_publication:
