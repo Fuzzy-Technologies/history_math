@@ -1,0 +1,41 @@
+---
+schema_version: 1
+article_id: hm-b3e3e7c7be46-en
+source_work_id: hm-b3e3e7c7be46
+layout: article
+title: Lunch for Mathematicians
+authors:
+  - Mansur Gilmullin
+author: Mansur Gilmullin
+lang: en
+translation_key: hm-b3e3e7c7be46
+description: Three university-canteen lunches are named real, complex and purely imaginary.
+type: note
+series: Mathematicians Joke
+tags:
+  - Mathematicians Joke
+  - Complex Numbers
+math: false
+status: published
+permalink: /publications/hm-b3e3e7c7be46-en/
+rights_basis: Mansur Gilmullin
+original_publication:
+  outlet: Telegram · history_math
+  date: '2023-09-24'
+  preserve_date: true
+figures:
+- id: fig-1
+  path: /assets/images/hm-b3e3e7c7be46/figure-01.png
+  alt: Three students consider their lunch while the cook presents the dishes.
+  caption: ''
+  source: AI-generated illustration commissioned by the journal.
+  credit: ''
+  rights_basis: Created for the journal at the request of Timur Gilmullin in 2026.
+cover_image: /assets/images/hm-b3e3e7c7be46/figure-01.png
+preview_image: /assets/images/hm-b3e3e7c7be46/figure-01.png
+---
+{% include article-figure.html id="fig-1" %}
+
+Today mathematicians joke about hungry students.
+
+When the university canteen introduced three lunches of different quality, with prices to match, students named them, in descending order of price: real, complex and purely imaginary.
