@@ -16,7 +16,7 @@ tags:
   - Архимед
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-10e7ce21d4ee-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
