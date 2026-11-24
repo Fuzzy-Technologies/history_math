@@ -5,25 +5,34 @@
     {
       "id": "q1",
       "question": "Сверить восемь учебников с библиографией: семь пунктов, причём в пункте о геометрии приведены два названия (1909 и 1917). Уточнить, считаются ли они самостоятельными книгами. Для «Оснований аналитической геометрии» в основном тексте указан 1907, в списке 1908; это могут быть разные издания, требуется библиографическое подтверждение. Также согласовать начало работы в училище Воскресенского: в тексте указан 1909 год, а каталог библиотеки «Математическое образование» указывает 1908: https://www.mathedu.ru/indexes/authors/rashevskiy_k_n/",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Сверить восемь учебников с библиографией: семь пунктов, причём в пункте о геометрии приведены два названия (1909 и 1917). Уточнить, считаются ли они самостоятельными книгами. Для «Оснований аналитической геометрии» в основном тексте указан 1907, в списке 1908; это могут быть разные издания, требуется библиографическое подтверждение. Также согласовать начало работы в училище Воскресенского: в тексте указан 1909 год, а каталог библиотеки «Математическое образование» указывает 1908: https://www.mathedu.ru/indexes/authors/rashevskiy_k_n/",
         "en": "Reconcile the eight-textbook count with seven bibliography bullets, one of which gives two geometry titles (1909 and 1917). Establish whether those are counted as separate books. The analytic geometry title is dated 1907 in the main text and 1908 in Notes; these may be different editions and need bibliographical confirmation. Also reconcile the 1909 start at Voskresensky’s Real School with the 1908 date in the Mathematical Education library catalogue: https://www.mathedu.ru/indexes/authors/rashevskiy_k_n/"
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/417#pullrequestreview-6040011226"
     },
     {
       "id": "fig-3-museum-rights",
       "question": "Для `fig-3` подпись и `source` называют архив Чаплыгинского краеведческого музея, но `rights_basis` в обеих редакциях утверждает, что это иллюстрация из авторского архива. Сохранить музейный кредит и указать действительное основание публикации: разрешение музея, публичную лицензию либо подтверждённый статус общественного достояния.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для `fig-3` подпись и `source` называют архив Чаплыгинского краеведческого музея, но `rights_basis` в обеих редакциях утверждает, что это иллюстрация из авторского архива. Сохранить музейный кредит и указать действительное основание публикации: разрешение музея, публичную лицензию либо подтверждённый статус общественного достояния.",
         "en": "For `fig-3`, the caption and `source` name the Chaplygin Local History Museum archive, while `rights_basis` in both editions says the illustration comes from the author’s archive. Preserve the museum credit and provide the actual publication basis: museum permission, a public licence, or verified public-domain status."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/417#pullrequestreview-6040011226"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/417#pullrequestreview-6040011226",
+    "source_commit": "77b136cad5b03c272ae13c69f968b0ff21b8fa4f",
+    "source_review_id": 6040011226,
+    "approved_at": "2026-11-24T13:27:24Z",
+    "package_sha256": "0cc62190da949bcf4fc519a074f71dd669d3767e83e627483c17a2a317bdaafd"
   }
 }
