@@ -18,7 +18,7 @@ tags:
   - Бумага
   - геометрия
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-9c176ebe7bae-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

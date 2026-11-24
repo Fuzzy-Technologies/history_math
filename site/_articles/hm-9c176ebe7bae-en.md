@@ -18,7 +18,7 @@ tags:
   - paper
   - geometry
 math: false
-status: draft
+status: published
 permalink: /publications/hm-9c176ebe7bae-en/
 rights_basis: Mansur Gilmullin
 original_publication:
