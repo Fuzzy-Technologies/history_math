@@ -5,12 +5,13 @@
     {
       "id": "turing-anecdote-pages",
       "question": "Please identify the pages in Andrew Hodges’s Alan Turing: The Enigma for the suspended-apple experiment, the line about a bug in the universe’s program, and the notebook entry after the lamppost collision. The author’s website https://www.turing.org.uk/book/ confirms the book and its editions, but not these specific episodes and quotations. They remain in both versions as the author’s humorous narrative; please agree their attribution.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Please identify the pages in Andrew Hodges’s Alan Turing: The Enigma for the suspended-apple experiment, the line about a bug in the universe’s program, and the notebook entry after the lamppost collision. The author’s website https://www.turing.org.uk/book/ confirms the book and its editions, but not these specific episodes and quotations. They remain in both versions as the author’s humorous narrative; please agree their attribution.",
         "ru": "Уточнить страницы в Andrew Hodges «Alan Turing: The Enigma» для опыта с подвешенным яблоком, реплики об ошибке в программе Вселенной и записи после столкновения со столбом. Сайт автора https://www.turing.org.uk/book/ подтверждает книгу и её издания, но не эти конкретные эпизоды и цитаты. Они сохранены как авторский юмористический рассказ в RU/EN; решить, как обозначить их атрибуцию."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/567#pullrequestreview-6040114212"
     },
     {
       "id": "turing-computation-model-universal-machine",
@@ -26,15 +27,23 @@
     {
       "id": "turing-cover-provenance",
       "question": "For the two-panel cover showing Turing and the apple, identify the creator or source work, the rightsholder, a verifiable public source, and the legal basis for use. A reference to the author’s archive establishes custody, not authorship or a licence.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the two-panel cover showing Turing and the apple, identify the creator or source work, the rightsholder, a verifiable public source, and the legal basis for use. A reference to the author’s archive establishes custody, not authorship or a licence.",
         "ru": "Для двухкадровой обложки с Тьюрингом и яблоком укажите автора или исходное произведение, правообладателя, проверяемый публичный источник и правовое основание использования. Указание на авторский архив подтверждает место хранения, но не авторство или лицензию."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/567#pullrequestreview-6040114212"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/567#pullrequestreview-6040114212",
+    "source_commit": "5fa4fe962a367b34ab403a072a25730e6faf0e7b",
+    "source_review_id": 6040114212,
+    "approved_at": "2026-11-24T13:33:55Z",
+    "package_sha256": "559af2ef7c1dbaf503150d60164679a8e50b4ab424ea889f980089b0910937fc"
   }
 }
