@@ -16,15 +16,23 @@
     {
       "id": "cover-authorship-rights",
       "question": "Уточнить подтверждённого автора или правообладателя обложки с тремя узорчатыми стаканами и основание её использования. Сейчас подпись называет изображение авторским, но source и rights_basis содержат только «Иллюстрация к материалу», что не подтверждает авторство.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Уточнить подтверждённого автора или правообладателя обложки с тремя узорчатыми стаканами и основание её использования. Сейчас подпись называет изображение авторским, но source и rights_basis содержат только «Иллюстрация к материалу», что не подтверждает авторство.",
         "en": "Please identify the verified creator or rights holder of the cover showing three patterned glasses and the basis for its use. The caption calls it an author-created illustration, but source and rights_basis only say “Illustration accompanying the text,” which does not establish authorship."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/672#pullrequestreview-6040284889"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/672#pullrequestreview-6040284889",
+    "source_commit": "61fceff097633312eaf7fadf32654c8538889aca",
+    "source_review_id": 6040284889,
+    "approved_at": "2026-11-24T13:44:35Z",
+    "package_sha256": "c23e83453c49516d7353536b126ccf14429a5b19040d4012c56f59d542b915c5"
   }
 }
