@@ -19,7 +19,7 @@ tags:
   - Birthday
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-4af51b34b08b-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

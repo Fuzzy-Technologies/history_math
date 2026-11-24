@@ -19,7 +19,7 @@ tags:
   - День рождения
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-4af51b34b08b-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
