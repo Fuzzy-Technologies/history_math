@@ -19,7 +19,7 @@ tags:
   - Krugloyed
 series: Mathematicians Joke
 math: true
-status: draft
+status: published
 permalink: /publications/hm-a24d6c2dacf2-en/
 rights_basis: Mansur Gilmullin
 original_publication:

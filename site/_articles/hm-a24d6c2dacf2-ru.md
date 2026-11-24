@@ -19,7 +19,7 @@ tags:
   - Круглоед
 series: Математики шутят
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-a24d6c2dacf2-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
