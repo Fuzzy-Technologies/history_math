@@ -5,7 +5,7 @@
     {
       "id": "boole-distributivity-wording",
       "question": "Following MacTutor https://mathshistory.st-andrews.ac.uk/Biographies/Boole/, the note says that Boole was among the first to investigate basic properties of numbers, such as distributivity. Please decide whether to specify the abstract study of algebraic laws, so the phrase is not read as crediting him with discovering the distributive law of arithmetic.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Following MacTutor https://mathshistory.st-andrews.ac.uk/Biographies/Boole/, the note says that Boole was among the first to investigate basic properties of numbers, such as distributivity. Please decide whether to specify the abstract study of algebraic laws, so the phrase is not read as crediting him with discovering the distributive law of arithmetic.",
