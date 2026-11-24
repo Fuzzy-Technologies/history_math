@@ -16,15 +16,23 @@
     {
       "id": "q2",
       "question": "For the original and retouched portraits of Raabe, provide the actual public source, creator or edition, and a licence or public-domain basis. Record the provenance of the retouch separately; “from the author’s archive” does not make a third-party historical image an author-created work.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the original and retouched portraits of Raabe, provide the actual public source, creator or edition, and a licence or public-domain basis. Record the provenance of the retouch separately; “from the author’s archive” does not make a third-party historical image an author-created work.",
         "ru": "Для исходного и ретушированного портретов Раабе указать фактический публичный источник, автора/издание и лицензию либо основание общественного достояния. Отдельно зафиксировать происхождение ретуши; «из авторского архива» не превращает историческое изображение третьего лица в авторское."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/450#pullrequestreview-6040049925"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/450#pullrequestreview-6040049925",
+    "source_commit": "a640b5b5743c9e5ee52c1d2d0cdb5bbd3d6b21b5",
+    "source_review_id": 6040049925,
+    "approved_at": "2026-11-24T13:29:43Z",
+    "package_sha256": "ed3362a6b6f88e20d5a52e83be2b11564b20ca35bee65eff11adf365f5485fbb"
   }
 }
