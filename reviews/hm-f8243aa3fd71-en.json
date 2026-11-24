@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Check the anniversary of *Arithmetic*: for the 1703 first edition, the 2023 article marks 320 years.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Check the anniversary of *Arithmetic*: for the 1703 first edition, the 2023 article marks 320 years.",
@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "Clarify biographical traditions about Magnitsky’s surname and education, and the claim about mathematical terminology.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Clarify biographical traditions about Magnitsky’s surname and education, and the claim about mathematical terminology.",
