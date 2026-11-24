@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2d2dac0d846c",
+  "questions": [
+    {
+      "id": "joke-cover",
+      "question": "В пакете отсутствует фактическая обложка для карточки шутки: список figures и манифест изображений пусты. Добавьте подходящую обложку и подключите её в обеих редакциях, не изменяя существующие подписи и текст.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "В пакете отсутствует фактическая обложка для карточки шутки: список figures и манифест изображений пусты. Добавьте подходящую обложку и подключите её в обеих редакциях, не изменяя существующие подписи и текст.",
+        "en": "The package has no actual cover for the joke card: figures is empty and the image manifest is empty. Add a suitable cover and reference it in both editions without changing the existing captions or text."
+      },
+      "resolution": "В обеих версиях добавлена согласованная редакцией обложка. https://github.com/Fuzzy-Technologies/history_math/pull/503#pullrequestreview-6045740137"
+    },
+    {
+      "id": "source-authorship",
+      "question": "Текст шутки был публично опубликован задолго до поста 2024 года: https://www.anekdot.ru/id/193993/. Установить первичный источник и авторство либо обозначить материал как адаптацию распространённого анекдота; не указывать Мансура Гильмуллина автором без подтверждения.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Текст шутки был публично опубликован задолго до поста 2024 года: https://www.anekdot.ru/id/193993/. Установить первичный источник и авторство либо обозначить материал как адаптацию распространённого анекдота; не указывать Мансура Гильмуллина автором без подтверждения.",
+        "en": "The joke was publicly available long before the 2024 post: https://www.anekdot.ru/id/193993/. Establish its primary source and authorship or identify this item as an adaptation of a circulating joke; do not credit Mansur Gilmullin as its author without evidence."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/503#pullrequestreview-6045740137"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/503#pullrequestreview-6045740137",
+    "source_commit": "463e4a4ad9540a403b97abf5efc96a6fb17ba789",
+    "source_review_id": 6045740137,
+    "approved_at": "2026-11-24T19:16:17Z",
+    "package_sha256": "a7a3c62ff37d9a51dfa86bd93e780cab32f2028ddf9405058f271a558840d09c"
+  }
+}
