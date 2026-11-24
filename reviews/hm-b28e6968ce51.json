@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b28e6968ce51",
+  "questions": [
+    {
+      "id": "q2",
+      "question": "Уточнить библиотеку в абзаце о 1691 годе: речь о Герцогской библиотеке Августа в Вольфенбюттеле, которой Лейбниц руководил одновременно с ганноверской службой. Без названия города после начала абзаца о Ганновере можно принять её за ту же библиотеку. Согласовать краткое уточнение в обеих версиях. Первичный институциональный источник: https://www.hab.de/leibnizressourcen-digital/ .",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "В обеих версиях уточнено, что в 1691 году Лейбниц возглавил Герцогскую библиотеку Августа в Вольфенбюттеле.",
+      "localizations": {
+        "source": "Уточнить библиотеку в абзаце о 1691 годе: речь о Герцогской библиотеке Августа в Вольфенбюттеле, которой Лейбниц руководил одновременно с ганноверской службой. Без названия города после начала абзаца о Ганновере можно принять её за ту же библиотеку. Согласовать краткое уточнение в обеих версиях. Первичный институциональный источник: https://www.hab.de/leibnizressourcen-digital/ .",
+        "en": "Specify the library in the 1691 sentence: this was the Herzog August Library in Wolfenbüttel, held alongside his Hanover post. Without naming the town, the paragraph’s Hanover context can make it sound like the same library. Approve a brief clarification in both versions. Institutional source: https://www.hab.de/leibnizressourcen-digital/ ."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Установить действующую публичную ссылку на английский перевод Explanation of Binary Arithmetic и сверить даты подготовки текста и публикации.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Установить действующую публичную ссылку на английский перевод Explanation of Binary Arithmetic и сверить даты подготовки текста и публикации.",
+        "en": "Establish a working public link to the English translation of Explanation of Binary Arithmetic and verify the dates of the text’s preparation and publication."
+      },
+      "resolution": "Рабочая публичная версия перевода установлена у Ллойда Стрикленда; статьи также уточняют подготовку текста в 1703 году и публикацию в 1705-м: https://leibniz-translations.com/binary ; https://www.leibnizpapers.org/binary-theodicy.htm ."
+    },
+    {
+      "id": "q4",
+      "question": "Для двух портретов Лейбница по Франке установить проверяемый оригинал и действительное правовое основание/лицензию. Для современной реплики калькулятора указать автора фотографии, публичный источник и лицензию; формулировка «иллюстрация к материалу» прав не подтверждает. Синхронизировать RU/EN metadata.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для двух портретов Лейбница по Франке установить проверяемый оригинал и действительное правовое основание/лицензию. Для современной реплики калькулятора указать автора фотографии, публичный источник и лицензию; формулировка «иллюстрация к материалу» прав не подтверждает. Синхронизировать RU/EN metadata.",
+        "en": "For the two portraits of Leibniz after Francke, identify a verifiable original and the applicable legal basis or licence. For the modern calculator replica, provide the photographer, public source and licence; “illustration accompanying the text” does not establish publication rights. Synchronize RU/EN metadata."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/456#pullrequestreview-6040059205"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/456#pullrequestreview-6040059205",
+    "source_commit": "51b4105907726158473ce14757864e23abd94a89",
+    "source_review_id": 6040059205,
+    "approved_at": "2026-11-24T13:30:19Z",
+    "package_sha256": "6ee4b552ca41b38ff59acab056c2078ca8be816f0f4f0fc309a5192d458a9ed1"
+  }
+}
