@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c89eac9e8ba4-en",
+  "questions": [
+    {
+      "id": "fibonacci-rabbit-maturity",
+      "question": "The condition says that every pair produces a new pair each month but omits the maturation delay for newborn pairs. Without that delay the population doubles rather than following the usual Fibonacci sequence. Please decide whether to add the condition that breeding starts in the second month; the original condition remains in both versions.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "The condition says that every pair produces a new pair each month but omits the maturation delay for newborn pairs. Without that delay the population doubles rather than following the usual Fibonacci sequence. Please decide whether to add the condition that breeding starts in the second month; the original condition remains in both versions.",
+        "ru": "В условии сказано, что каждая пара каждый месяц рождает новую пару, но не указана задержка созревания новорождённых. Без неё получается удвоение, а не обычная последовательность Фибоначчи. Решить, нужно ли добавить условие о начале размножения со второго месяца; исходное условие пока сохранено в обеих версиях."
+      },
+      "resolution": "Both editions now state that each newborn pair begins breeding in its second month."
+    },
+    {
+      "id": "fibonacci-escaped-rabbits-source",
+      "question": "Please identify the page for the episode in which real rabbits escape from Fibonacci’s garden. The publisher confirms Laurence Sigler’s translation and the 2003 paperback at https://link.springer.com/book/10.1007/978-1-4613-0079-3 ; the date is not a discrepancy. The comic episode has not been tied to a specific passage.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Please identify the page for the episode in which real rabbits escape from Fibonacci’s garden. The publisher confirms Laurence Sigler’s translation and the 2003 paperback at https://link.springer.com/book/10.1007/978-1-4613-0079-3 ; the date is not a discrepancy. The comic episode has not been tied to a specific passage.",
+        "ru": "Уточнить страницу для эпизода с реальными кроликами, сбежавшими из сада. Издатель подтверждает перевод Laurence Sigler и мягкую обложку 2003 года: https://link.springer.com/book/10.1007/978-1-4613-0079-3 ; дата не является разночтением. Связь комического эпизода с конкретным местом книги не установлена."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/557#pullrequestreview-6040097330"
+    },
+    {
+      "id": "rabbit-catchphrase-attribution",
+      "question": "The closing line adapts Vladimir Pertsov’s 1986 miniature. Remove the journal’s © claim or credit Pertsov and separately identify the author’s mathematical adaptation.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "The closing line adapts Vladimir Pertsov’s 1986 miniature. Remove the journal’s © claim or credit Pertsov and separately identify the author’s mathematical adaptation.",
+        "ru": "Финальная фраза обыгрывает миниатюру Владимира Перцова 1986 года. Уберите знак © журнала либо укажите Перцова и отдельно обозначьте авторскую математическую адаптацию."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/557#pullrequestreview-6040097330"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/557#pullrequestreview-6040097330",
+    "source_commit": "92b8a7fdbc8cc5adac268450a39abe663b7d9ebe",
+    "source_review_id": 6040097330,
+    "approved_at": "2026-11-24T13:32:45Z",
+    "package_sha256": "67ecbd321410acf24c3875fe56abb515c80f391c0ded1bd4898929fb42edea51"
+  }
+}
