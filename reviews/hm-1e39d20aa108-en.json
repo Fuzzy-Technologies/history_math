@@ -5,7 +5,7 @@
     {
       "id": "porridge-equal-servings",
       "question": "Should equal servings be stated in the problem itself? The source condition does not specify serving sizes; the solution begins by assuming all three ate the same amount. Without that assumption, the payment split is not determined. The description states it explicitly; the complete source remains.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Should equal servings be stated in the problem itself? The source condition does not specify serving sizes; the solution begins by assuming all three ate the same amount. Without that assumption, the payment split is not determined. The description states it explicitly; the complete source remains.",
@@ -16,7 +16,7 @@
     {
       "id": "ignatyev-hard-sign-note",
       "question": "Please check the entire hard-sign explanation. The example полуъ places Ъ after a vowel; the rule about every consonant-ending word needs qualifications for й and ь. Ignoring word-final Ъ must not be extended to its internal separating use. The historical account, 5% figure and claim of literally thinner books need a source or clarification. Please agree edits in both versions; the whole source comment remains.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Please check the entire hard-sign explanation. The example полуъ places Ъ after a vowel; the rule about every consonant-ending word needs qualifications for й and ь. Ignoring word-final Ъ must not be extended to its internal separating use. The historical account, 5% figure and claim of literally thinner books need a source or clarification. Please agree edits in both versions; the whole source comment remains.",
