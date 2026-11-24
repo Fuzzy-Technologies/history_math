@@ -5,15 +5,23 @@
     {
       "id": "epsilon-backwards-english-pun",
       "question": "Английская адаптация игры «задом наперёд» / «заданного наперёд» в тексте принята: противопоставление backwards / given in advance и русские фразы объяснены в примечании. Однако общая обложка содержит русские реплики, поэтому для EN-версии нужна английская обложка либо явное редакторское принятие русскоязычного изображения.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Английская адаптация игры «задом наперёд» / «заданного наперёд» в тексте принята: противопоставление backwards / given in advance и русские фразы объяснены в примечании. Однако общая обложка содержит русские реплики, поэтому для EN-версии нужна английская обложка либо явное редакторское принятие русскоязычного изображения.",
         "en": "The prose adaptation of zadom naperyod / zadannogo naperyod is accepted: backwards / given in advance and the Russian wording are explained in Notes. However, the shared cover contains Russian dialogue, so the English edition needs an English cover or an explicit editorial acceptance of the Russian-language image."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/601#pullrequestreview-6040167687"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/601#pullrequestreview-6040167687",
+    "source_commit": "7d3bd71f4080688105f81e3a735a275f9913aea9",
+    "source_review_id": 6040167687,
+    "approved_at": "2026-11-24T13:37:33Z",
+    "package_sha256": "3ca70091d07955bf7efd609d66e70ab60f1179982a812e6f89acc1b4303713ae"
   }
 }
