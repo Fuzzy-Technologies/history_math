@@ -21,7 +21,7 @@ tags:
   - логика
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-5ac2d5a436fc-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

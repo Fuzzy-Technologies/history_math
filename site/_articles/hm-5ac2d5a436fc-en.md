@@ -21,7 +21,7 @@ tags:
   - logic
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-5ac2d5a436fc-en/
 rights_basis: Mansur Gilmullin
 original_publication:
