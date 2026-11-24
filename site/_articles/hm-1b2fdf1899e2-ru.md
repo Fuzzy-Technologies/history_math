@@ -21,7 +21,7 @@ tags:
   - астрономия
   - история математики
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-1b2fdf1899e2-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

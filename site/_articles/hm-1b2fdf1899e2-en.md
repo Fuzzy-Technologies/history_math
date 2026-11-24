@@ -21,7 +21,7 @@ tags:
   - astronomy
   - history of mathematics
 math: true
-status: draft
+status: published
 permalink: /publications/hm-1b2fdf1899e2-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
