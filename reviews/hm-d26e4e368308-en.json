@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d26e4e368308-en",
+  "questions": [
+    {
+      "id": "markov-portrait-provenance",
+      "question": "The portrait of A. A. Markov (`fig-2`) needs its actual creator or provenance, a verifiable public source and a confirmed rights basis; a historical portrait must not be described as material from the author’s archive without evidence.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "The portrait of A. A. Markov (`fig-2`) needs its actual creator or provenance, a verifiable public source and a confirmed rights basis; a historical portrait must not be described as material from the author’s archive without evidence.",
+        "ru": "Для портрета А. А. Маркова (`fig-2`) нужны фактический автор или происхождение, проверяемый публичный источник и подтверждённое правовое основание; исторический портрет нельзя обозначать как материал авторского архива без доказательства."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/544#pullrequestreview-6040077885"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/544#pullrequestreview-6040077885",
+    "source_commit": "5d25d0b1318a51db7bf4b10aec4806cfda4df667",
+    "source_review_id": 6040077885,
+    "approved_at": "2026-11-24T13:31:30Z",
+    "package_sha256": "70e9c3e260d5f4b228df29dd9b1e73a2f9c6223420b6e2ce6d18e4bed4eae9ae"
+  }
+}
