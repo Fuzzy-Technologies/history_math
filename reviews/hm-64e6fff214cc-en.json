@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Clarify the scope of the claims that he was Russia’s first historian of mathematics and taught its first university course on the subject; the author's wording is retained, but priority requires a historical source.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Clarify the scope of the claims that he was Russia’s first historian of mathematics and taught its first university course on the subject; the author's wording is retained, but priority requires a historical source.",
