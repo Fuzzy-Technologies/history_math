@@ -5,7 +5,7 @@
     {
       "id": "first-quantifier",
       "question": "The approved digest describes a claim about all sheep, but the post only says that black sheep live in Australia. The original line is retained without adding “all”. Please decide whether to strengthen the first statement in both versions for the logical contrast. The card description does not repeat the unsupported universal claim.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "The approved digest describes a claim about all sheep, but the post only says that black sheep live in Australia. The original line is retained without adding “all”. Please decide whether to strengthen the first statement in both versions for the logical contrast. The card description does not repeat the unsupported universal claim.",
