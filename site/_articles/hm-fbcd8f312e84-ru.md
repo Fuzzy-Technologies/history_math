@@ -18,7 +18,7 @@ tags:
   - Топология
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-fbcd8f312e84-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

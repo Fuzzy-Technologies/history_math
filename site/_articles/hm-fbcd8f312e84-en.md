@@ -18,7 +18,7 @@ tags:
   - Topology
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-fbcd8f312e84-en/
 rights_basis: Mansur Gilmullin
 original_publication:

@@ -27,15 +27,23 @@
     {
       "id": "q3",
       "question": "For both processed portraits of Aleksandrov, identify the source photographs, public source records and the legal basis for publication; the provenance of both versions is currently unconfirmed.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For both processed portraits of Aleksandrov, identify the source photographs, public source records and the legal basis for publication; the provenance of both versions is currently unconfirmed.",
         "ru": "Для обеих обработок портрета Александрова указать исходные фотографии, публичные источники и правовое основание публикации; происхождение обеих версий сейчас не подтверждено."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/447#pullrequestreview-6040040806"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/447#pullrequestreview-6040040806",
+    "source_commit": "6d43d48a2c06741953ecd7fd9b3b8ddd775ff9fa",
+    "source_review_id": 6040040806,
+    "approved_at": "2026-11-24T13:29:09Z",
+    "package_sha256": "7664930b03653ef1fd04a36e98d59c77b74a9bd77d3ff79eb5513311ea6fe70f"
   }
 }
