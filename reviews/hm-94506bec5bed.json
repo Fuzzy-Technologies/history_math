@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-94506bec5bed",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Сверить первоисточник цитаты Феликса Клейна, сведения об окончании факультета теологии и исторические названия учебных заведений; согласовать перевод цитаты и названия труда 1844 года.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Сверить первоисточник цитаты Феликса Клейна, сведения об окончании факультета теологии и исторические названия учебных заведений; согласовать перевод цитаты и названия труда 1844 года.",
+        "en": "Verify the original source of the Felix Klein quotation, the statement about graduation in theology and the historical school names; review the translated quotation and title of the 1844 work."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/397#pullrequestreview-6045724723"
+    },
+    {
+      "id": "q2",
+      "question": "Установить для исторического портрета Грассмана и обложки издания «Науки» 2008 года первоисточник, автора/издателя и подтверждённое основание воспроизведения; авторство текста не распространяется на сторонние изображения.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Установить для исторического портрета Грассмана и обложки издания «Науки» 2008 года первоисточник, автора/издателя и подтверждённое основание воспроизведения; авторство текста не распространяется на сторонние изображения.",
+        "en": "Establish the original source, creator or publisher, and a verified basis for reproducing the historical portrait of Grassmann and the cover of the 2008 Nauka edition; authorship of the text does not extend to third-party images."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/397#pullrequestreview-6045724723"
+    },
+    {
+      "id": "chinese-language-study",
+      "question": "Проверить утверждение, что Грассман изучал китайский язык. Надёжные биографии подтверждают самостоятельное изучение санскрита и других индоевропейских языков, а участие в миссионерском обществе, связанном с Китаем, может быть отдельным фактом. Удалить китайский язык из RU/EN, если источник не подтвердит его изучение.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Проверить утверждение, что Грассман изучал китайский язык. Надёжные биографии подтверждают самостоятельное изучение санскрита и других индоевропейских языков, а участие в миссионерском обществе, связанном с Китаем, может быть отдельным фактом. Удалить китайский язык из RU/EN, если источник не подтвердит его изучение.",
+        "en": "Verify the claim that Grassmann studied Chinese. Reliable biographies confirm his independent study of Sanskrit and other Indo-European languages, while his involvement in a missionary society concerned China may be a separate fact. Remove Chinese from RU/EN unless a source confirms the language study."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/397#pullrequestreview-6045724723"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/397#pullrequestreview-6045724723",
+    "source_commit": "0023560fcdc0fbcbc5fa1e68c5e51e9f4a99bd17",
+    "source_review_id": 6045724723,
+    "approved_at": "2026-11-24T19:15:10Z",
+    "package_sha256": "ee1f0b769fb18740d4d8a0f392d81c4ee399efc16245c71fe250eef975b589b7"
+  }
+}
