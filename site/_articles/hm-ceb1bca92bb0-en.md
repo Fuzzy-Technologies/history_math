@@ -23,8 +23,19 @@ original_publication:
   outlet: Telegram · history_math
   date: '2024-05-05'
   preserve_date: true
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-ceb1bca92bb0/figure-01.png
+  alt: After a lecture, an engineer tries to picture a multidimensional shape while the mathematician explains it with spheres.
+  caption: ''
+  source: AI-generated illustration commissioned by the journal.
+  credit: ''
+  rights_basis: Created for the journal at the request of Timur Gilmullin in 2026.
+cover_image: /assets/images/hm-ceb1bca92bb0/figure-01.png
+preview_image: /assets/images/hm-ceb1bca92bb0/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 An engineer spends three hours at a mathematician’s lecture on higher-dimensional spaces. At the end, looking very upset, he approaches the lecturer and says:<br>
 “Excuse me, I’d like to be able to picture what you were talking about, but I can’t imagine a sphere in nine dimensions!”<br>
 “That’s very simple,” replies the mathematician. “Imagine a sphere in $N$ dimensions, then let $N$ equal nine.”
