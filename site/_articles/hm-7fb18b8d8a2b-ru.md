@@ -16,7 +16,7 @@ tags:
   - Кострикин
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-7fb18b8d8a2b-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

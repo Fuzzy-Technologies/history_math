@@ -16,7 +16,7 @@ tags:
   - Kostrikin
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-7fb18b8d8a2b-en/
 rights_basis: Mansur Gilmullin
 original_publication:

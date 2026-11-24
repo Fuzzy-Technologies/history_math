@@ -5,12 +5,13 @@
     {
       "id": "q1",
       "question": "Review the terminology for the connection between simple Lie algebras and Cartan’s infinite-dimensional algebras.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Review the terminology for the connection between simple Lie algebras and Cartan’s infinite-dimensional algebras.",
         "ru": "Согласовать терминологию связи простых алгебр Ли с бесконечномерными алгебрами Картана."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/358#pullrequestreview-6039968329"
     },
     {
       "id": "q2",
@@ -26,15 +27,23 @@
     {
       "id": "q3",
       "question": "Establish the actual public source of the historical portrait of A. I. Kostrikin, its photographer or holding institution, and the legal basis for publication; authorship of the text does not extend to a third-party photograph.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Establish the actual public source of the historical portrait of A. I. Kostrikin, its photographer or holding institution, and the legal basis for publication; authorship of the text does not extend to a third-party photograph.",
         "ru": "Установить реальный публичный источник исторического портрета А. И. Кострикина, фотографа/учреждение и правовое основание публикации; авторство текста не распространяется на стороннюю фотографию."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/358#pullrequestreview-6039968329"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/358#pullrequestreview-6039968329",
+    "source_commit": "ea1d676390af7360a2537511f5c40af2432b2842",
+    "source_review_id": 6039968329,
+    "approved_at": "2026-11-24T13:24:29Z",
+    "package_sha256": "05a546af893cc0f91561d6bad2cc8a7633d48d7d2abf8a71dd620bf8260ee890"
   }
 }
