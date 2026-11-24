@@ -38,6 +38,7 @@ figures:
     alt: Крылатая фигура с циркулем, многогранник, шар и магический квадрат 4×4 на гравюре Дюрера «Меланхолия I»
     caption: Альбрехт Дюрер. «Меланхолия I», 1514.
     source: "Альбрехт Дюрер. «Меланхолия I», 1514. The Metropolitan Museum of Art, 43.106.1: https://www.metmuseum.org/art/collection/search/336228 ; цифровой файл DP820348: https://commons.wikimedia.org/wiki/File:Melencolia_I_MET_DP820348.jpg"
+    credit: "Альбрехт Дюрер. «Меланхолия I», 1514. The Metropolitan Museum of Art, 43.106.1"
     rights_basis: "Public Domain; The Metropolitan Museum of Art."
 preview_image: /assets/images/hm-9c416d1ecf83/figure-01.png
 cover_image: /assets/images/hm-9c416d1ecf83/figure-01.png
@@ -77,6 +78,8 @@ cover_image: /assets/images/hm-9c416d1ecf83/figure-01.png
 ## Примечания
 
 {% include article-figure.html id="fig-2" %}
+
+[Карточка гравюры в Метрополитен-музее](https://www.metmuseum.org/art/collection/search/336228) · [Цифровая копия DP820348](https://commons.wikimedia.org/wiki/File:Melencolia_I_MET_DP820348.jpg).
 
 Дополнительную информацию об Альбрехте Дюрере можно найти в следующих источниках:
 

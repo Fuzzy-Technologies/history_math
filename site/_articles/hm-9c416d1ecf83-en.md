@@ -38,6 +38,7 @@ figures:
     alt: A winged figure holding dividers, a polyhedron, a sphere and a four-by-four magic square in Dürer’s engraving Melencolia I
     caption: Albrecht Dürer. Melencolia I, 1514.
     source: "Albrecht Dürer. Melencolia I, 1514. The Metropolitan Museum of Art, 43.106.1: https://www.metmuseum.org/art/collection/search/336228 ; digital file DP820348: https://commons.wikimedia.org/wiki/File:Melencolia_I_MET_DP820348.jpg"
+    credit: "Albrecht Dürer. Melencolia I, 1514. The Metropolitan Museum of Art, 43.106.1"
     rights_basis: "Public Domain; The Metropolitan Museum of Art."
 preview_image: /assets/images/hm-9c416d1ecf83/figure-01.png
 cover_image: /assets/images/hm-9c416d1ecf83/figure-01.png
@@ -77,6 +78,8 @@ He died in Nuremberg on 6 April 1528. His books and prints still remind us of so
 ## Notes
 
 {% include article-figure.html id="fig-2" %}
+
+[The Met collection record](https://www.metmuseum.org/art/collection/search/336228) · [Digital image DP820348](https://commons.wikimedia.org/wiki/File:Melencolia_I_MET_DP820348.jpg).
 
 Further information about Albrecht Dürer:
 
