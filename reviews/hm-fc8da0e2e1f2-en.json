@@ -5,25 +5,34 @@
     {
       "id": "jordanus-book-and-anecdote",
       "question": "Please verify the source of the humorous legend about the suspended books. Full bibliographic details for the work attributed to Marshall Clagett and the page containing the story are required.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Please verify the source of the humorous legend about the suspended books. Full bibliographic details for the work attributed to Marshall Clagett and the page containing the story are required.",
         "ru": "Уточнить источник шутливой легенды о подвешенных книгах: требуется полное библиографическое описание работы Маршалла Клагетта и страница с этим эпизодом."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/563#pullrequestreview-6040105765"
     },
     {
       "id": "cover-illustration-provenance",
       "question": "For the illustration, identify the author or creator, the rightsholder, a verifiable public source, and the legal basis for use. “From the author’s archive” describes custody but does not by itself establish authorship or a licence.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the illustration, identify the author or creator, the rightsholder, a verifiable public source, and the legal basis for use. “From the author’s archive” describes custody but does not by itself establish authorship or a licence.",
         "ru": "Для иллюстрации укажите автора или создателя, правообладателя, проверяемый публичный источник и правовое основание использования. Формулировка «из авторского архива» описывает хранение, но сама по себе не подтверждает авторство или лицензию."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/563#pullrequestreview-6040105765"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/563#pullrequestreview-6040105765",
+    "source_commit": "3b46f0e6e95f1f62b369b0963ecb9778149b89fd",
+    "source_review_id": 6040105765,
+    "approved_at": "2026-11-24T13:33:20Z",
+    "package_sha256": "827a48d4ecfdca172828d970a27a80b24e34cf61619a55c329649fe66f3bde8f"
   }
 }

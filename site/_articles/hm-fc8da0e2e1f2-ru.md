@@ -18,7 +18,7 @@ tags:
   - средневековье
   - механика
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-fc8da0e2e1f2-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

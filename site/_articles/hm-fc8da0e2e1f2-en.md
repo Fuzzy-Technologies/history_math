@@ -18,7 +18,7 @@ tags:
   - Middle Ages
   - mechanics
 math: false
-status: draft
+status: published
 permalink: /publications/hm-fc8da0e2e1f2-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
