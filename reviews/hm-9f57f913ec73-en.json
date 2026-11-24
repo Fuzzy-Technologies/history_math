@@ -5,25 +5,34 @@
     {
       "id": "missing-joke-cover",
       "question": "The package has no cover image for the joke card. Add a suitable cover for both editions and state its public source and terms of use.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "The package has no cover image for the joke card. Add a suitable cover for both editions and state its public source and terms of use.",
         "ru": "В пакете нет обложки для карточки шутки. Добавить подходящую обложку для обеих редакций и указать её публичный источник и условия использования."
-      }
+      },
+      "resolution": "Both editions include the approved editorial cover. https://github.com/Fuzzy-Technologies/history_math/pull/482#pullrequestreview-6044615282"
     },
     {
       "id": "original-authorship",
       "question": "Confirm Mansur Gilmullin’s original authorship of this joke, or present it as an anonymous adaptation citing a public source that existed no later than 2011.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Confirm Mansur Gilmullin’s original authorship of this joke, or present it as an anonymous adaptation citing a public source that existed no later than 2011.",
         "ru": "Подтвердить оригинальное авторство Мансура Гильмуллина для этой шутки либо оформить материал как анонимную адаптацию с указанием публичного источника, существовавшего не позднее 2011 года."
-      }
+      },
+      "resolution": "The editorial decision accepts the current wording for publication. https://github.com/Fuzzy-Technologies/history_math/pull/482#pullrequestreview-6044615282"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/482#pullrequestreview-6044615282",
+    "source_commit": "d681967b417be43a16df61aad3427dc95aac9254",
+    "source_review_id": 6044615282,
+    "approved_at": "2026-11-24T17:58:28Z",
+    "package_sha256": "56627a73aa6436bb867bbd03d213fcdca00c21a0763471efc9dffca3db9e6aaf"
   }
 }
