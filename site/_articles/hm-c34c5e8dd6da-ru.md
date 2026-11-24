@@ -19,7 +19,7 @@ tags:
   - философия
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-c34c5e8dd6da-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

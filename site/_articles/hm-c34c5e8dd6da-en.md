@@ -19,7 +19,7 @@ tags:
   - philosophy
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-c34c5e8dd6da-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
