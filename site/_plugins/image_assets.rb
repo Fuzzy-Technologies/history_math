@@ -61,6 +61,13 @@ module HistoryMath
       figure["source"].to_s.rstrip.delete_suffix(".")
     end
 
+    def figure_caption_license(figure)
+      label = figure["license"]
+      return if label == "Public Domain Mark 1.0" && figure["license_url"] == "https://creativecommons.org/publicdomain/mark/1.0/"
+
+      label
+    end
+
     def original_image_delivery(path)
       HistoryMath.original_image_delivery(@context.registers[:site], path)
     end
