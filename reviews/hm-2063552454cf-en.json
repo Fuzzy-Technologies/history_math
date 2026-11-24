@@ -16,35 +16,45 @@
     {
       "id": "q2",
       "question": "Review the historical claim about the emergence of function theory, topology and functional analysis in the early twentieth century, and the English rendering of the Russian edition’s title.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Review the historical claim about the emergence of function theory, topology and functional analysis in the early twentieth century, and the English rendering of the Russian edition’s title.",
         "ru": "Уточнить историческую формулировку о возникновении теории функций, топологии и функционального анализа в начале XX века; согласовать английское название русского издания работы о разрывных функциях."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/404#pullrequestreview-6039993480"
     },
     {
       "id": "q3",
       "question": "Identify the creator or photographer, date, public source and legal status of the portrait of René-Louis Baire; archive custody and the phrase “Illustration accompanying the text” do not establish permission for reproduction.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Identify the creator or photographer, date, public source and legal status of the portrait of René-Louis Baire; archive custody and the phrase “Illustration accompanying the text” do not establish permission for reproduction.",
         "ru": "Установить автора или фотографа, дату, публичный первоисточник и правовой статус портрета Рене-Луи Бэра; хранение в авторском архиве и формулировка «Иллюстрация к материалу» не подтверждают право воспроизведения."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/404#pullrequestreview-6039993480"
     },
     {
       "id": "original-post-url",
       "question": "Establish the exact public URL of the original Telegram · history_math post dated 18 July 2024 and record it consistently in `original_publication.url` and `source_url` in both editions.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Establish the exact public URL of the original Telegram · history_math post dated 18 July 2024 and record it consistently in `original_publication.url` and `source_url` in both editions.",
         "ru": "Установить точный публичный URL исходной публикации Telegram · history_math от 18 июля 2024 года и синхронно указать его в `original_publication.url` и `source_url` обеих редакций."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/404#pullrequestreview-6039993480"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/404#pullrequestreview-6039993480",
+    "source_commit": "16e06b9bfd8a3a0eb49ccec09fcf9d9d36a62798",
+    "source_review_id": 6039993480,
+    "approved_at": "2026-11-24T13:26:13Z",
+    "package_sha256": "1574676244baa0f5bddf8de4a343ec4661a51ff548999cec7b2fbc417789a932"
   }
 }
