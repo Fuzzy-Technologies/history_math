@@ -17,7 +17,7 @@ tags:
   - Gibbs
   - Mathematics
 math: false
-status: draft
+status: published
 permalink: /publications/hm-efbf497adc10-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

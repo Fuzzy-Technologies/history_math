@@ -5,25 +5,34 @@
     {
       "id": "gibbs-portrait-attribution",
       "question": "The historical portrait of Josiah Willard Gibbs is currently credited only to the article author’s archive. Please identify the actual creator of the portrait or photograph, provide a verifiable public source, and confirm the image’s rights status in both editions.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "The historical portrait of Josiah Willard Gibbs is currently credited only to the article author’s archive. Please identify the actual creator of the portrait or photograph, provide a verifiable public source, and confirm the image’s rights status in both editions.",
         "ru": "У исторического портрета Джозайи Уилларда Гиббса сейчас указан только архив автора статьи. Нужны фактический создатель портрета или фотографии, проверяемый публичный источник и подтверждённый правовой статус изображения; сведения следует синхронно указать в обеих версиях."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/532#pullrequestreview-6040077699"
     },
     {
       "id": "gibbs-quote-source-correction",
       "question": "After the main text was corrected, the titles and descriptions of both editions still retain the unsupported characterization of Gibbs as habitually taciturn; the Nature source confirms only his remark after a discussion of languages and mathematics.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "After the main text was corrected, the titles and descriptions of both editions still retain the unsupported characterization of Gibbs as habitually taciturn; the Nature source confirms only his remark after a discussion of languages and mathematics.",
         "ru": "В заголовке и описании обеих редакций после исправления основного текста всё ещё осталась неподтверждённая характеристика Гиббса как обычно молчаливого человека; источник Nature подтверждает только его реплику после обсуждения языков и математики."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/532#pullrequestreview-6040077699"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/532#pullrequestreview-6040077699",
+    "source_commit": "d8f240ab8415582bc6c8552d97ed61aedad0e751",
+    "source_review_id": 6040077699,
+    "approved_at": "2026-11-24T13:31:30Z",
+    "package_sha256": "07a50ef7892a52a3ee66cac799aaf14875d786508e2168cc718e2581cd787585"
   }
 }

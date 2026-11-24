@@ -17,7 +17,7 @@ tags:
   - Гиббс
   - Математика
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-efbf497adc10-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
