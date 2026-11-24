@@ -5,15 +5,23 @@
     {
       "id": "pheasants-chinese-source",
       "question": "Проверить название древнекитайского источника в обеих версиях. В посте задача впервые отнесена к «Киу-Чанг» / «Девяти отделам», но вариант с 35 головами и 94 ногами у Ман-Кён Сиу указан как задача 31 книги III «Сунь-цзы суань цзин»: Equations in China: Two Millennia of Innovation, Transmission and Re-transmission, с. 3–4 PDF, https://hkumath.hku.hk/~mks/ESU8_MKSiu_Equations_RevisedDraft_Mar12_2019.pdf. Согласовать уточнение, не смешивая два трактата.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Проверить название древнекитайского источника в обеих версиях. В посте задача впервые отнесена к «Киу-Чанг» / «Девяти отделам», но вариант с 35 головами и 94 ногами у Ман-Кён Сиу указан как задача 31 книги III «Сунь-цзы суань цзин»: Equations in China: Two Millennia of Innovation, Transmission and Re-transmission, с. 3–4 PDF, https://hkumath.hku.hk/~mks/ESU8_MKSiu_Equations_RevisedDraft_Mar12_2019.pdf. Согласовать уточнение, не смешивая два трактата.",
         "en": "Please check the ancient Chinese source title. The post assigns the problem’s first appearance to Chiu-chang / the Nine Chapters, but Man-Keung Siu identifies the 35-head, 94-leg version as problem 31 in Book III of Sunzi Suanjing, pp. 3–4 of the PDF: https://hkumath.hku.hk/~mks/ESU8_MKSiu_Equations_RevisedDraft_Mar12_2019.pdf. Please agree a correction distinguishing the two treatises."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/655#pullrequestreview-6040251686"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/655#pullrequestreview-6040251686",
+    "source_commit": "3ed68a43897c61fe0f6b67df85f851624db70722",
+    "source_review_id": 6040251686,
+    "approved_at": "2026-11-24T13:42:40Z",
+    "package_sha256": "4f7641db44f0344c31e949384a87131c7ace0642f38af8849f0126d5d5f1d59c"
   }
 }
