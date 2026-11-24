@@ -21,7 +21,7 @@ tags:
   - Mathematical Lexicon
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-0950bccddc49-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

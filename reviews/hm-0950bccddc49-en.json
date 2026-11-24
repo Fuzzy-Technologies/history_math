@@ -5,55 +5,67 @@
     {
       "id": "q1",
       "question": "Clarify the priority claims for mathematical terminology and whether “pupil of Leibniz” means direct instruction or intellectual influence and correspondence. The drafts retain the author’s formulations.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Clarify the priority claims for mathematical terminology and whether “pupil of Leibniz” means direct instruction or intellectual influence and correspondence. The drafts retain the author’s formulations.",
         "ru": "Уточнить утверждения о первенстве математических терминов и смысл «ученик Лейбница»: было ли непосредственное обучение или речь о влиянии и переписке? Основной текст пока сохраняет авторские формулировки."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/402#pullrequestreview-6045726002"
     },
     {
       "id": "q2",
       "question": "Verify the imprint of Elementa matheseos universae, including “Magdeburg”, dates, contents and page counts, and whether Halle Magdeburgica needs to be specified. Establish a source for the student-debt legend while retaining its explicit identification as a legend.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Verify the imprint of Elementa matheseos universae, including “Magdeburg”, dates, contents and page counts, and whether Halle Magdeburgica needs to be specified. Establish a source for the student-debt legend while retaining its explicit identification as a legend.",
         "ru": "Сверить выходные данные Elementa matheseos universae, включая место «Магдебург», годы, состав и объёмы томов; уточнить, требуется ли полное обозначение Halle Magdeburgica. Проверить источник легенды о долгах студентов, сохранив её явное обозначение легендой."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/402#pullrequestreview-6045726002"
     },
     {
       "id": "image-attribution",
       "question": "For the two historical engravings of Christian Wolff, establish the engraver or other creator, date, verifiable public source and licence or confirmed public-domain status; an author’s archive does not replace this information.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the two historical engravings of Christian Wolff, establish the engraver or other creator, date, verifiable public source and licence or confirmed public-domain status; an author’s archive does not replace this information.",
         "ru": "Для двух исторических гравюр Христиана Вольфа установить гравёра или иного создателя, дату, проверяемый публичный источник и лицензию либо подтверждённый статус общественного достояния; авторский архив не заменяет эти сведения."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/402#pullrequestreview-6045726002"
     },
     {
       "id": "marburg-appointment",
       "question": "Reconcile Wolff’s Marburg appointment: the university catalogue dates his appointment as full professor of mathematics in the Faculty of Philosophy to 15 November 1723, while the article currently calls him professor of philosophy from 1724. Source: https://professorenkatalog.online.uni-marburg.de/de/pkat/idrec?id=9849",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Reconcile Wolff’s Marburg appointment: the university catalogue dates his appointment as full professor of mathematics in the Faculty of Philosophy to 15 November 1723, while the article currently calls him professor of philosophy from 1724. Source: https://professorenkatalog.online.uni-marburg.de/de/pkat/idrec?id=9849",
         "ru": "Согласовать марбургскую должность Вольфа: каталог Марбургского университета датирует его назначение ординарным профессором математики на философском факультете 15 ноября 1723 года; сейчас в тексте указан профессор философии с 1724 года. Источник: https://professorenkatalog.online.uni-marburg.de/de/pkat/idrec?id=9849"
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/402#pullrequestreview-6045726002"
     },
     {
       "id": "original-post-url",
       "question": "Establish the exact public URL of the original Telegram · history_math post dated 11 July 2024 and record it consistently in `original_publication.url` and `source_url` in both editions.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Establish the exact public URL of the original Telegram · history_math post dated 11 July 2024 and record it consistently in `original_publication.url` and `source_url` in both editions.",
         "ru": "Установить точный публичный URL исходной публикации Telegram · history_math от 11 июля 2024 года и синхронно указать его в `original_publication.url` и `source_url` обеих редакций."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/402#pullrequestreview-6045726002"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/402#pullrequestreview-6045726002",
+    "source_commit": "b25c991b599eb24ae5b76633e57083e06e530cab",
+    "source_review_id": 6045726002,
+    "approved_at": "2026-11-24T19:15:16Z",
+    "package_sha256": "ed992ab850444c89160f135f1dcabea9adf232caa14b41be47a5508921be8a0b"
   }
 }
