@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-bfcff44cdd5d",
+  "questions": [
+    {
+      "id": "source-authorship-attribution",
+      "question": "Условие и решение воспроизводят задачу № 49 Гуго Штейнгауза, но авторство и корневой rights_basis целиком отданы Мансуру Гильмуллину. Нужно разделить авторство оригинала и вклад Мансура — адаптацию, перевод и иллюстрацию.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Условие и решение воспроизводят задачу № 49 Гуго Штейнгауза, но авторство и корневой rights_basis целиком отданы Мансуру Гильмуллину. Нужно разделить авторство оригинала и вклад Мансура — адаптацию, перевод и иллюстрацию.",
+        "en": "The problem and solution reproduce Hugo Steinhaus’s problem no. 49, yet authorship and the root rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the original authorship from Mansur’s adaptation, translation, and illustration work."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/626#pullrequestreview-6040196620"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/626#pullrequestreview-6040196620",
+    "source_commit": "0e92360ae2dec592309e88d2a48db5d8a5b9732b",
+    "source_review_id": 6040196620,
+    "approved_at": "2026-11-24T13:39:29Z",
+    "package_sha256": "b25db10f83bda7ba9b471fc62d1bc47923af7fe8b958ab80b7f61c45896d51d4"
+  }
+}
