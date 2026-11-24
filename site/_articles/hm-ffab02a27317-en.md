@@ -19,7 +19,7 @@ tags:
   - History of Science
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-ffab02a27317-en/
 rights_basis: Mansur Gilmullin
 original_publication:
