@@ -5,15 +5,23 @@
     {
       "id": "newton-portrait-provenance",
       "question": "Для портрета Исаака Ньютона укажите исходное произведение, художника или фотографа, проверяемый публичный источник и правовой статус. Ссылка на авторский архив сама по себе не подтверждает авторство или лицензию.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для портрета Исаака Ньютона укажите исходное произведение, художника или фотографа, проверяемый публичный источник и правовой статус. Ссылка на авторский архив сама по себе не подтверждает авторство или лицензию.",
         "en": "For the portrait of Isaac Newton, identify the source work, artist or photographer, a verifiable public source, and its legal status. A reference to the author’s archive alone does not establish authorship or a licence."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/595#pullrequestreview-6040149209"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/595#pullrequestreview-6040149209",
+    "source_commit": "f4db4e0365bc7f3ee2d8c9069f012227ec5da1b0",
+    "source_review_id": 6040149209,
+    "approved_at": "2026-11-24T13:36:18Z",
+    "package_sha256": "c85a82909e60a82252f3d7f4b9562a656d164219997ae8a5bd3fb0343b128ebd"
   }
 }
