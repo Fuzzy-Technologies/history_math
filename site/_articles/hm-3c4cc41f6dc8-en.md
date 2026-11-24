@@ -9,7 +9,7 @@ authors:
 author: Mansur Gilmullin
 lang: en
 translation_key: hm-3c4cc41f6dc8
-description: In a story from Fedin’s collection, Professor Kondratyev sets out to prove a theorem but falls asleep at the blackboard. His chalk carries on with work of its own.
+description: In a story from Fedin’s collection, Professor Kondratyev sets out to prove a theorem but passes out at the blackboard. His chalk carries on with work of its own.
 type: note
 tags:
   - Mathematicians Joke
