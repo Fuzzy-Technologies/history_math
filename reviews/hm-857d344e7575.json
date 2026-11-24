@@ -16,25 +16,34 @@
     {
       "id": "humor-cover-image",
       "question": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации.",
         "en": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration."
-      }
+      },
+      "resolution": "В обе версии добавлена утверждённая редакционная обложка. https://github.com/Fuzzy-Technologies/history_math/pull/488#pullrequestreview-6044624647"
     },
     {
       "id": "original-authorship",
       "question": "Подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как анонимную адаптацию с указанием публичного источника и правового основания; шутка опубликована в «Кванте» № 1 за 2022 год со ссылкой на книгу «Математики тоже шутят»: https://kvant.ras.ru/pdf/2022/2022-01.pdf.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как анонимную адаптацию с указанием публичного источника и правового основания; шутка опубликована в «Кванте» № 1 за 2022 год со ссылкой на книгу «Математики тоже шутят»: https://kvant.ras.ru/pdf/2022/2022-01.pdf.",
         "en": "Confirm Mansur Gilmullin’s original authorship, or present the material as an anonymous adaptation with a public source and legal basis; the joke appeared in Kvant no. 1 (2022), which cites the book Mathematicians Joke Too: https://kvant.ras.ru/pdf/2022/2022-01.pdf."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/488#pullrequestreview-6044624647"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/488#pullrequestreview-6044624647",
+    "source_commit": "72d8a14ffaa0fc1b3b5ccbdffbbecee8f175b448",
+    "source_review_id": 6044624647,
+    "approved_at": "2026-11-24T17:59:07Z",
+    "package_sha256": "87787b163e0399e294369d031af81dca22ed0ddb525e486af8cd608639b33309"
   }
 }
