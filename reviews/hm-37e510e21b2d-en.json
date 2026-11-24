@@ -25,7 +25,7 @@
     {
       "id": "q3",
       "question": "The complete club puzzle is retained without an added solution; any answer requires separate editorial preparation. No confirmed Telegram-post URL is available.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "The complete club puzzle is retained without an added solution; any answer requires separate editorial preparation. No confirmed Telegram-post URL is available.",
