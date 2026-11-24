@@ -19,7 +19,7 @@ tags:
   - Брахмагупта
 series: Математики шутят
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-a68fba60b803-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

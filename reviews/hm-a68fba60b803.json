@@ -5,35 +5,45 @@
     {
       "id": "source-authorship-attribution",
       "question": "Текст близко следует анекдоту 36 С. Н. Федина, но авторство и корневой rights_basis целиком отданы Мансуру Гильмуллину. Нужно развести авторство исходного текста и вклад Мансура — адаптацию и иллюстрацию.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Текст близко следует анекдоту 36 С. Н. Федина, но авторство и корневой rights_basis целиком отданы Мансуру Гильмуллину. Нужно развести авторство исходного текста и вклад Мансура — адаптацию и иллюстрацию.",
         "en": "The text closely follows S. N. Fedin’s anecdote 36, yet authorship and the root rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the source text’s authorship from Mansur’s adaptation and illustration work."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/607#pullrequestreview-6040177106"
     },
     {
       "id": "english-cover-localization",
       "question": "Обе фактические обложки содержат только русские реплики. Для английской редакции нужны локализованные обложки либо явное редакторское решение сохранить русские; английский alt должен описывать фактический язык изображения.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Обе фактические обложки содержат только русские реплики. Для английской редакции нужны локализованные обложки либо явное редакторское решение сохранить русские; английский alt должен описывать фактический язык изображения.",
         "en": "Both actual covers contain Russian dialogue only. The English edition needs localized covers or an explicit editorial decision to retain the Russian ones; the English alt text must describe the image’s actual language."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/607#pullrequestreview-6040177106"
     },
     {
       "id": "cover-illustration-provenance",
       "question": "Пометка «авторская иллюстрация» и запись «Авторский архив Мансура Гильмуллина» подтверждают хранение файла, но не устанавливают автора изображения, правообладателя, публичный источник и лицензию. До публикации нужно указать эти сведения либо снять неподтверждённое авторство.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Пометка «авторская иллюстрация» и запись «Авторский архив Мансура Гильмуллина» подтверждают хранение файла, но не устанавливают автора изображения, правообладателя, публичный источник и лицензию. До публикации нужно указать эти сведения либо снять неподтверждённое авторство.",
         "en": "The label “author’s illustration” and the entry “Mansur Gilmullin’s archive” establish file custody, but do not identify the image creator, rightsholder, public source, or licence. Before publication, provide those details or remove the unsupported authorship claim."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/607#pullrequestreview-6040177106"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/607#pullrequestreview-6040177106",
+    "source_commit": "43f4e919301ce43f544b6118a6ec71d99b23dee6",
+    "source_review_id": 6040177106,
+    "approved_at": "2026-11-24T13:38:10Z",
+    "package_sha256": "cdaa8197a3db21770c65ed4361990bc1f38b97a40e732b3d706e0eff10034381"
   }
 }

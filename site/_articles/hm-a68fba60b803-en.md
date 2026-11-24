@@ -19,7 +19,7 @@ tags:
   - Brahmagupta
 series: Mathematicians Joke
 math: true
-status: draft
+status: published
 permalink: /publications/hm-a68fba60b803-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
