@@ -5,25 +5,34 @@
     {
       "id": "dismissal-source-and-context",
       "question": "Подтвердить документальные источники для рассказа о пропущенном заговоре и для представления фразы о «духе бесконечно малых» как текста приказа: авторитетные биографии относят эту оценку к позднейшему воспоминанию Наполеона, а не к приказу. Для карточки рубрики «Математики шутят» также нужна фактическая обложка: сейчас figures и image manifest пусты.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Подтвердить документальные источники для рассказа о пропущенном заговоре и для представления фразы о «духе бесконечно малых» как текста приказа: авторитетные биографии относят эту оценку к позднейшему воспоминанию Наполеона, а не к приказу. Для карточки рубрики «Математики шутят» также нужна фактическая обложка: сейчас figures и image manifest пусты.",
         "en": "Please confirm documentary sources for the overlooked-conspiracy story and for presenting the “spirit of infinitesimals” remark as the wording of an order: authoritative biographies attribute this assessment to Napoleon’s later reminiscence, not to an order. The Mathematicians Joke card also needs an actual cover; figures and the image manifest are currently empty."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/520#pullrequestreview-6045744602"
     },
     {
       "id": "original-publication-url",
       "question": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 14.07.2024; адрес нельзя восстанавливать предположительно.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 14.07.2024; адрес нельзя восстанавливать предположительно.",
         "en": "Provide a public link to the original publication confirming the date 14.07.2024; the address must not be guessed."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/520#pullrequestreview-6045744602"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/520#pullrequestreview-6045744602",
+    "source_commit": "14e1c84a9616786d9bb31bc086df5e455d2ed100",
+    "source_review_id": 6045744602,
+    "approved_at": "2026-11-24T19:16:36Z",
+    "package_sha256": "fed585264b54240c5fc4dde9e6a2a1277e0a00c866fa0434cce6a10e2516fd0f"
   }
 }

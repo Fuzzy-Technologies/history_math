@@ -16,7 +16,7 @@ tags:
   - Лаплас
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-f1e01af50ff3-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

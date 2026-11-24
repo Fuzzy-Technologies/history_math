@@ -16,7 +16,7 @@ tags:
   - Laplace
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-f1e01af50ff3-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
