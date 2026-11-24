@@ -16,7 +16,7 @@ tags:
   - Dudeney
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-cd90add66e12-en/
 rights_basis: Mansur Gilmullin
 original_publication:
