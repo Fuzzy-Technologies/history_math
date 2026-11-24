@@ -17,12 +17,13 @@
     {
       "id": "missing-humor-cover",
       "question": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
         "en": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication."
-      }
+      },
+      "resolution": "В обеих версиях добавлена согласованная редакцией обложка. https://github.com/Fuzzy-Technologies/history_math/pull/519#pullrequestreview-6045744187"
     },
     {
       "id": "classification-anecdote-attribution",
@@ -39,15 +40,23 @@
     {
       "id": "original-publication-url",
       "question": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 07.07.2024; адрес нельзя восстанавливать предположительно.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 07.07.2024; адрес нельзя восстанавливать предположительно.",
         "en": "Provide a public link to the original publication confirming the date 07.07.2024; the address must not be guessed."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/519#pullrequestreview-6045744187"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/519#pullrequestreview-6045744187",
+    "source_commit": "3333dfa1e387ef943b9b8e49cd72856555f80192",
+    "source_review_id": 6045744187,
+    "approved_at": "2026-11-24T19:16:34Z",
+    "package_sha256": "26010a75ae83266998d2e1f7df51a7810100899997fe88c64b95ae82a3c72b55"
   }
 }
