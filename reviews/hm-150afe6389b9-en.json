@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-150afe6389b9-en",
+  "questions": [
+    {
+      "id": "newton-portrait-provenance",
+      "question": "For the portrait of Isaac Newton, identify the source work, artist or photographer, a verifiable public source, and its legal status. A reference to the author’s archive alone does not establish authorship or a licence.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "For the portrait of Isaac Newton, identify the source work, artist or photographer, a verifiable public source, and its legal status. A reference to the author’s archive alone does not establish authorship or a licence.",
+        "ru": "Для портрета Исаака Ньютона укажите исходное произведение, художника или фотографа, проверяемый публичный источник и правовой статус. Ссылка на авторский архив сама по себе не подтверждает авторство или лицензию."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/595#pullrequestreview-6040149209"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/595#pullrequestreview-6040149209",
+    "source_commit": "f4db4e0365bc7f3ee2d8c9069f012227ec5da1b0",
+    "source_review_id": 6040149209,
+    "approved_at": "2026-11-24T13:36:18Z",
+    "package_sha256": "9e92408beeb042fe4eabce42e23351c8d6b75c3626bfcc787c360ed713909ceb"
+  }
+}
