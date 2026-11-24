@@ -19,7 +19,7 @@ tags:
   - History of Mathematics
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-d94b49cceb6c-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

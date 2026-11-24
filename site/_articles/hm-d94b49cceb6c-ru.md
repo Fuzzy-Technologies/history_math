@@ -19,7 +19,7 @@ tags:
   - история математики
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-d94b49cceb6c-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
