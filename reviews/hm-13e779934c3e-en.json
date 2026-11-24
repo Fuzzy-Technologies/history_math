@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-13e779934c3e-en",
+  "questions": [
+    {
+      "id": "euclid-construction-to-study",
+      "question": "Item 1 asks the reader to study Euclid’s construction, but the article does not provide the construction or a labelled diagram. Either add a verified explanation from a published source or rephrase the item.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Item 1 asks the reader to study Euclid’s construction, but the article does not provide the construction or a labelled diagram. Either add a verified explanation from a published source or rephrase the item.",
+        "ru": "В пункте 1 читателю предлагается изучить способ решения Евклида, но статья не приводит саму конструкцию и её размеченный чертёж. Нужно либо добавить проверенное объяснение по опубликованному источнику, либо переформулировать пункт."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/643#pullrequestreview-6040216580"
+    },
+    {
+      "id": "euclid-inaccessible-attribution",
+      "question": "Confirm a source attributing the inaccessible-vertex problem to Euclid, or identify it as a later variant: in Elements I.9 the vertex is accessible and used in the construction.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Confirm a source attributing the inaccessible-vertex problem to Euclid, or identify it as a later variant: in Elements I.9 the vertex is accessible and used in the construction.",
+        "ru": "Подтвердить источник атрибуции задачи с недоступной вершиной Евклиду либо обозначить её позднейшим вариантом: в «Началах» I.9 вершина доступна и используется в построении."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/643#pullrequestreview-6040216580"
+    },
+    {
+      "id": "source-authorship-attribution",
+      "question": "The text closely reproduces Grigory Filippovsky’s chapter “Euclid and Problems with Inaccessible Points”, yet authorship and the root rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the source text’s authorship from Mansur’s adaptation, translation, editing, and illustration work.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "The text closely reproduces Grigory Filippovsky’s chapter “Euclid and Problems with Inaccessible Points”, yet authorship and the root rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the source text’s authorship from Mansur’s adaptation, translation, editing, and illustration work.",
+        "ru": "Текст близко воспроизводит главу Григория Филипповского «Евклид и задачи с недоступными точками», но авторство и корневой rights_basis целиком отданы Мансуру Гильмуллину. Нужно разделить авторство исходного текста и вклад Мансура — адаптацию, перевод, редакцию и иллюстрацию."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/643#pullrequestreview-6040216580"
+    },
+    {
+      "id": "original-publication-source",
+      "question": "The claimed original date of 21 June 2024 has no URL in original_publication and no root source_url. Provide a verifiable public link to the original publication.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "The claimed original date of 21 June 2024 has no URL in original_publication and no root source_url. Provide a verifiable public link to the original publication.",
+        "ru": "Для заявленной исходной даты 21.06.2024 в original_publication отсутствует URL и нет корневого source_url. Нужна проверяемая публичная ссылка на исходную публикацию."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/643#pullrequestreview-6040216580"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/643#pullrequestreview-6040216580",
+    "source_commit": "d9496119e39879374254f7556285654977e08434",
+    "source_review_id": 6040216580,
+    "approved_at": "2026-11-24T13:40:45Z",
+    "package_sha256": "018cb42b6a7f61808181eb3e1b238ae3766b5ee98d21bc0ecf4d2b0262a22beb"
+  }
+}
