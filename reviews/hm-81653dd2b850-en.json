@@ -5,15 +5,23 @@
     {
       "id": "figure-authorship",
       "question": "Confirm the creator and a verifiable public source for the cover: the caption calls it an author illustration, but the source and rights_basis fields do not substantiate that claim.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Confirm the creator and a verifiable public source for the cover: the caption calls it an author illustration, but the source and rights_basis fields do not substantiate that claim.",
         "ru": "Подтвердить автора и проверяемый публичный источник обложки: подпись называет иллюстрацию авторской, но поля source и rights_basis этого не доказывают."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/647#pullrequestreview-6040228081"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/647#pullrequestreview-6040228081",
+    "source_commit": "460db0ae6572b85a172f69dba94b37e5ea1355e2",
+    "source_review_id": 6040228081,
+    "approved_at": "2026-11-24T13:41:26Z",
+    "package_sha256": "0485921e3c26b0eec94d81155f77435b5ac32a1c7b587fa9f33ff0297788a295"
   }
 }
