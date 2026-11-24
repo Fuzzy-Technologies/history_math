@@ -20,7 +20,7 @@ tags:
   - Cartan
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-1c43d86ff0e1-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

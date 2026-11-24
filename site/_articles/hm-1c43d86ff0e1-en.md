@@ -19,7 +19,7 @@ tags:
   - Homological Algebra
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-1c43d86ff0e1-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
