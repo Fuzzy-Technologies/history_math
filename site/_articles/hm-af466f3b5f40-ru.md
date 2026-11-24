@@ -19,7 +19,7 @@ tags:
   - Хрестоматия
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-af466f3b5f40-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

@@ -19,7 +19,7 @@ tags:
   - Anthology
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-af466f3b5f40-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
