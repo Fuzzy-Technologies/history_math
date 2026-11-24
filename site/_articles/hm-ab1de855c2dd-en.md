@@ -19,7 +19,7 @@ tags:
   - exams
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-ab1de855c2dd-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

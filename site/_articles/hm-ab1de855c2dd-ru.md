@@ -19,7 +19,7 @@ tags:
   - экзамен
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-ab1de855c2dd-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
