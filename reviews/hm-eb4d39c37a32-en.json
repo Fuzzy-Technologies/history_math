@@ -5,7 +5,7 @@
     {
       "id": "lecture-title-spoonerism",
       "question": "Please review the title spoonerism in English. Both Russian forms are transliterated and translated accurately, but the English titles do not reproduce the sound swap by themselves. Please decide whether this presentation needs a brief explanation of the swapped initial sounds. No invented replacement titles have been substituted.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Please review the title spoonerism in English. Both Russian forms are transliterated and translated accurately, but the English titles do not reproduce the sound swap by themselves. Please decide whether this presentation needs a brief explanation of the swapped initial sounds. No invented replacement titles have been substituted.",
