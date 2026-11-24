@@ -15,7 +15,7 @@
     {
       "id": "q2",
       "question": "Replace the claim that “Aristotle discovered that … the final statement must be accepted as an axiom” with a historically accurate account: in the Posterior Analytics, demonstration rests on true, primary and immediate premises, while knowledge of first principles is not reduced to simply accepting the last link in a regress.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Replace the claim that “Aristotle discovered that … the final statement must be accepted as an axiom” with a historically accurate account: in the Posterior Analytics, demonstration rests on true, primary and immediate premises, while knowledge of first principles is not reduced to simply accepting the last link in a regress.",
