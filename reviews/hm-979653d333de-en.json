@@ -5,7 +5,7 @@
     {
       "id": "triangle-angle-sum-postulates",
       "question": "Please clarify the explanation of triangle angle sums: equality of right angles and the measure of a straight angle alone do not establish the Euclidean theorem. Elements I.32 uses I.29 about parallel lines, which depends on the fifth postulate. Please agree matching wording in both editions and supply a source for the attribution of a proof to Pythagoras. Euclid’s text: https://mathcs.clarku.edu/~djoyce/elements/bookI/propI32.html .",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Please clarify the explanation of triangle angle sums: equality of right angles and the measure of a straight angle alone do not establish the Euclidean theorem. Elements I.32 uses I.29 about parallel lines, which depends on the fifth postulate. Please agree matching wording in both editions and supply a source for the attribution of a proof to Pythagoras. Euclid’s text: https://mathcs.clarku.edu/~djoyce/elements/bookI/propI32.html .",
