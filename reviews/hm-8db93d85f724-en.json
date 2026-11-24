@@ -1,0 +1,71 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8db93d85f724-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the birth-date calendar: the post adds 8 March to 23 February 1906, whereas the examined 1972 obituary gives 23 February without an Old Style indication. Confirm that conversion from primary documentation; the author’s wording remains in both versions pending a decision.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Verify the birth-date calendar: the post adds 8 March to 23 February 1906, whereas the examined 1972 obituary gives 23 February without an Old Style indication. Confirm that conversion from primary documentation; the author’s wording remains in both versions pending a decision.",
+        "ru": "Проверить календарный стиль рождения: пост добавляет к 23 февраля 1906 скобку «8 марта», тогда как прочитанный некролог 1972 года даёт просто 23 февраля без указания старого стиля. Нужен первичный документ для такого перевода; до решения сохранена авторская запись RU/EN."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/437#pullrequestreview-6045732046"
+    },
+    {
+      "id": "q2",
+      "question": "Verify the 1925 Kyiv and 1936 Ukrainian titles, participation in the 1939 USSR championship and the chess-playing wife’s exact name from tournament records. The obituary confirms the 1937 master title but not every listed tournament result. Approve precise wording, including any shared placings.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Verify the 1925 Kyiv and 1936 Ukrainian titles, participation in the 1939 USSR championship and the chess-playing wife’s exact name from tournament records. The obituary confirms the 1937 master title but not every listed tournament result. Approve precise wording, including any shared placings.",
+        "ru": "Подтвердить по турнирным таблицам чемпионства Киева 1925 и УССР 1936, участие в чемпионате СССР 1939 и точное имя супруги-шахматистки. Некролог подтверждает мастерское звание 1937, но не все перечисленные турнирные результаты. Согласовать точные формулировки, включая возможное деление мест."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/437#pullrequestreview-6045732046"
+    },
+    {
+      "id": "q3",
+      "question": "For the portrait of Iosif Pogrebyssky, identify the specific public source, author or photographer (if known), licence or other verified basis for publication. “Mansur Gilmullin’s archive” and “Illustration accompanying the text” do not establish provenance or rights.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "For the portrait of Iosif Pogrebyssky, identify the specific public source, author or photographer (if known), licence or other verified basis for publication. “Mansur Gilmullin’s archive” and “Illustration accompanying the text” do not establish provenance or rights.",
+        "ru": "Указать для портрета Иосифа Погребысского конкретный публичный первоисточник, автора или фотографа (если установлен), лицензию либо иное подтверждённое основание публикации: записи «Авторский архив Мансура Гильмуллина» и «Иллюстрация к материалу» не устанавливают происхождение и права."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/437#pullrequestreview-6045732046"
+    },
+    {
+      "id": "q4",
+      "question": "Correct the Notes citation: the Russian original appeared in Uspekhi Matematicheskikh Nauk, vol. 27, no. 1, pp. 227–235, while the English translation appeared in Russian Mathematical Surveys, vol. 27, no. 1, pp. 195–206 (https://doi.org/10.1070/RM1972v027n01ABEH001367). Do not assign the original pagination to the English journal.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Correct the Notes citation: the Russian original appeared in Uspekhi Matematicheskikh Nauk, vol. 27, no. 1, pp. 227–235, while the English translation appeared in Russian Mathematical Surveys, vol. 27, no. 1, pp. 195–206 (https://doi.org/10.1070/RM1972v027n01ABEH001367). Do not assign the original pagination to the English journal.",
+        "ru": "Исправить библиографию в примечаниях: русский оригинал вышел в «Успехах математических наук», т. 27, вып. 1, с. 227–235, а английский перевод — в Russian Mathematical Surveys, т. 27, № 1, с. 195–206 (https://doi.org/10.1070/RM1972v027n01ABEH001367). Не приписывать страницы оригинала английскому журналу."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/437#pullrequestreview-6045732046"
+    },
+    {
+      "id": "q5",
+      "question": "Clarify Pogrebyssky’s role in the Russian editions of Poincaré. The title page identifies him as a compiler, while the obituary describes editing translations and preparing commentary. Replace the broad claim that he translated Poincaré with the documented role in both editions.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Clarify Pogrebyssky’s role in the Russian editions of Poincaré. The title page identifies him as a compiler, while the obituary describes editing translations and preparing commentary. Replace the broad claim that he translated Poincaré with the documented role in both editions.",
+        "ru": "Уточнить роль Погребысского в русских изданиях Пуанкаре. На титуле он указан как составитель, а некролог подтверждает редактуру переводов и подготовку комментариев. Заменить общее утверждение о переводе трудов Пуанкаре документированной ролью в обеих версиях."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/437#pullrequestreview-6045732046"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/437#pullrequestreview-6045732046",
+    "source_commit": "fe976e0762a983c1cc01dd0b05234700412d538c",
+    "source_review_id": 6045732046,
+    "approved_at": "2026-11-24T19:15:42Z",
+    "package_sha256": "d89a9937b929e5879a12612b7b9871a137a1a40b175e1ff7197a0ce329816c98"
+  }
+}
