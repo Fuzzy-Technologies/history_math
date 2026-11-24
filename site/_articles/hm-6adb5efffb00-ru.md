@@ -20,7 +20,7 @@ tags:
   - огурцы
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-6adb5efffb00-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

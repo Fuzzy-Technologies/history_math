@@ -5,25 +5,34 @@
     {
       "id": "cucumbers-original-jir-issue",
       "question": "Установить библиографию перепечатки в The Journal of Irreproducible Results и её связь с версией Эверетта Д. Эдингтона, которую Дж. У. Кузма приводит со ссылкой на Cyanograms.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Установить библиографию перепечатки в The Journal of Irreproducible Results и её связь с версией Эверетта Д. Эдингтона, которую Дж. У. Кузма приводит со ссылкой на Cyanograms.",
         "en": "Identify the reprint in The Journal of Irreproducible Results and establish how it relates to Everett D. Edington’s version, which Jan W. Kuzma reprints with credit to Cyanograms."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/614#pullrequestreview-6040186507"
     },
     {
       "id": "cucumbers-en-cover-language",
       "question": "Для английской редакции согласовать обложки: обе иллюстрации содержат русский заголовок, а английские alt-тексты передают его как английский. Либо подготовить англоязычные варианты без изменения смысла и композиции, либо явно описать русский текст в alt и подписи.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для английской редакции согласовать обложки: обе иллюстрации содержат русский заголовок, а английские alt-тексты передают его как английский. Либо подготовить англоязычные варианты без изменения смысла и композиции, либо явно описать русский текст в alt и подписи.",
         "en": "Resolve the cover language for the English edition: both illustrations contain a Russian headline, while the English alt texts present it as English. Either provide English-language variants without changing the meaning or composition, or explicitly describe the Russian text in the alt text and caption."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/614#pullrequestreview-6040186507"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/614#pullrequestreview-6040186507",
+    "source_commit": "039a02ed6948c40a5f620484c70e59bd3a0681f2",
+    "source_review_id": 6040186507,
+    "approved_at": "2026-11-24T13:38:48Z",
+    "package_sha256": "cc1d373ffcb621e92582301b519a4d78429b585e275dd577c8563c19d8e03c7e"
   }
 }

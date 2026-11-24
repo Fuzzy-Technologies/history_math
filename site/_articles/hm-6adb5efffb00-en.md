@@ -20,7 +20,7 @@ tags:
   - cucumbers
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-6adb5efffb00-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
