@@ -20,7 +20,7 @@ tags:
   - Local History
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-d20a9961caf8-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
