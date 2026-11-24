@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-70d4e99ddf32-en",
+  "questions": [
+    {
+      "id": "figure-rights",
+      "question": "For both portraits of Dedekind, the ETH Zurich source credits photographer Johannes Ganz and the ETH-Bibliothek Zurich image archive, but rights_basis currently says only “Illustration accompanying the text.” Add the precise public image record and the actual rights basis or licence for both files; processing a copy from the author’s archive does not replace the provenance of the third-party photograph.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "For both portraits of Dedekind, the ETH Zurich source credits photographer Johannes Ganz and the ETH-Bibliothek Zurich image archive, but rights_basis currently says only “Illustration accompanying the text.” Add the precise public image record and the actual rights basis or licence for both files; processing a copy from the author’s archive does not replace the provenance of the third-party photograph.",
+        "ru": "Для обоих портретов Дедекинда источник на странице ETH Zürich указывает фотографа Йоханнеса Ганца и архив ETH-Bibliothek Zürich, но поле rights_basis пока содержит только «иллюстрация к материалу». Добавьте точную публичную карточку изображения и действительное правовое основание/лицензию для обоих файлов; обработка из авторского архива не заменяет происхождение сторонней фотографии."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/470#pullrequestreview-6040067738"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/470#pullrequestreview-6040067738",
+    "source_commit": "b468bc20066c4cc2ec750d44a51e84b5651f7636",
+    "source_review_id": 6040067738,
+    "approved_at": "2026-11-24T13:30:53Z",
+    "package_sha256": "c637991112e314a6532bc4714b7fc50fad4d9ab8f0a07e39d0028dd429784307"
+  }
+}
