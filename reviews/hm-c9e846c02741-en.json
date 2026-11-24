@@ -5,12 +5,13 @@
     {
       "id": "perelman-interview-quotations",
       "question": "Please identify the source and pages for the doorway scene in 2006 and the line “I know how to control the universe. Why would I chase a million?” The post cites the 2011 Russian edition of Masha Gessen’s book, but the quotations and circumstances have not been confirmed against it. The date, author’s narrative, dialogue and bibliography are retained; the editor should decide whether these can be presented as documented quotations or whether the nature of the story needs clarification.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Please identify the source and pages for the doorway scene in 2006 and the line “I know how to control the universe. Why would I chase a million?” The post cites the 2011 Russian edition of Masha Gessen’s book, but the quotations and circumstances have not been confirmed against it. The date, author’s narrative, dialogue and bibliography are retained; the editor should decide whether these can be presented as documented quotations or whether the nature of the story needs clarification.",
         "ru": "Уточнить источник и страницы для сцены у двери в 2006 году и фразы «Я знаю, как управлять Вселенной. И зачем мне бежать за миллионом?». Исходник ссылается на русское издание книги Маши Гессен 2011 года, но цитаты и обстоятельства по нему не подтверждены. Сохранены дата, авторский рассказ, реплики и библиография; редактору решить, можно ли представлять эти реплики как документальные цитаты или следует уточнить характер сюжета."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/568#pullrequestreview-6040121956"
     },
     {
       "id": "perelman-awards-distinction",
@@ -26,15 +27,23 @@
     {
       "id": "perelman-cover-provenance",
       "question": "For the four-panel cover, identify the author or creator, the rightsholder, a verifiable public source, and the legal basis for use. “Mansur Gilmullin’s archive” and “Illustration from the author’s archive” describe custody but do not establish authorship or a licence.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the four-panel cover, identify the author or creator, the rightsholder, a verifiable public source, and the legal basis for use. “Mansur Gilmullin’s archive” and “Illustration from the author’s archive” describe custody but do not establish authorship or a licence.",
         "ru": "Для четырёхкадровой обложки укажите автора или создателя, правообладателя, проверяемый публичный источник и правовое основание использования. Формулировки «Авторский архив Мансура Гильмуллина» и «Иллюстрация из авторского архива» описывают хранение, но не устанавливают авторство или лицензию."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/568#pullrequestreview-6040121956"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/568#pullrequestreview-6040121956",
+    "source_commit": "762726c50c81da041282f49369aa492255854111",
+    "source_review_id": 6040121956,
+    "approved_at": "2026-11-24T13:34:26Z",
+    "package_sha256": "2e16bb5ef04619c8ba136420ac155b748ca1e8ecad8f3d68cc117819917d792f"
   }
 }
