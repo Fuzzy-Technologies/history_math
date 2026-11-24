@@ -5,25 +5,34 @@
     {
       "id": "q1",
       "question": "Verify the historical institute and department names and identify the editions of Kovalevskaya’s works and correspondence that Kochina prepared and translated.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Verify the historical institute and department names and identify the editions of Kovalevskaya’s works and correspondence that Kochina prepared and translated.",
         "ru": "Уточнить точные исторические названия институтов и подразделений, а также какие издания сочинений и переписки Ковалевской подготовлены и переведены Кочиной."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/377#pullrequestreview-6039960334"
     },
     {
       "id": "portrait-provenance",
       "question": "Identify the creator, a verifiable public source and the legal status of the portrait of Pelageya Kochina; “Illustration accompanying the text” does not establish its provenance.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Identify the creator, a verifiable public source and the legal status of the portrait of Pelageya Kochina; “Illustration accompanying the text” does not establish its provenance.",
         "ru": "Установить автора, проверяемый публичный первоисточник и правовой статус портрета П. Я. Кочиной; формулировка «Иллюстрация к материалу» не подтверждает происхождение изображения."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/377#pullrequestreview-6039960334"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/377#pullrequestreview-6039960334",
+    "source_commit": "75b307380585fcacb723b7334e7923e93c0bd776",
+    "source_review_id": 6039960334,
+    "approved_at": "2026-11-24T13:23:56Z",
+    "package_sha256": "cf28e1495104d77a1e275ae3ebcc28c14c8ad4f17ea5e401b31d4f6000567ca1"
   }
 }
