@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Clarify Pacioli’s birth date, early biography and teaching career.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Clarify Pacioli’s birth date, early biography and teaching career.",
@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "Remove absolute claims about the completeness of the *Summa* and adoption of Hindu-Arabic numerals; check the algebraic abbreviations.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Remove absolute claims about the completeness of the *Summa* and adoption of Hindu-Arabic numerals; check the algebraic abbreviations.",
@@ -37,7 +37,7 @@
     {
       "id": "divina-proportione-history",
       "question": "Correct the history of Divina proportione: the manuscript was completed in 1498 and the expanded edition appeared in 1509; Leonardo collaborated with Pacioli and supplied the drawings, while the term “golden section” arose only in the nineteenth century.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Correct the history of Divina proportione: the manuscript was completed in 1498 and the expanded edition appeared in 1509; Leonardo collaborated with Pacioli and supplied the drawings, while the term “golden section” arose only in the nineteenth century.",
