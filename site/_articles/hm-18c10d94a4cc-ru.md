@@ -25,8 +25,19 @@ original_publication:
   outlet: Telegram · history_math
   date: '2023-09-10'
   preserve_date: true
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-18c10d94a4cc/figure-01.png
+  alt: За столом с лабораторной посудой задумался поэт, а позади идёт работа в поле.
+  caption: ''
+  source: Иллюстрация редакции журнала, созданная с помощью ИИ.
+  credit: ''
+  rights_basis: Создано для журнала по поручению Тимура Гильмуллина, 2026.
+cover_image: /assets/images/hm-18c10d94a4cc/figure-01.png
+preview_image: /assets/images/hm-18c10d94a4cc/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 Сегодня у нас шуточные стихи о филиале Ленинградского государственного университета. Их автор — химик, профессор ЛГУ и поэт Борис Николаевич Долгов (1894–1959), работавший в Елабуге.
 
 В 1925 году Б. Н. Долгов окончил химическое отделение физико-математического факультета Ленинградского университета.

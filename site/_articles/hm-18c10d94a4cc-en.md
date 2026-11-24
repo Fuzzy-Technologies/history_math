@@ -25,8 +25,19 @@ original_publication:
   outlet: Telegram · history_math
   date: '2023-09-10'
   preserve_date: true
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-18c10d94a4cc/figure-01.png
+  alt: A poet sits among laboratory glassware while workers gather hay behind him.
+  caption: ''
+  source: AI-generated illustration commissioned by the journal.
+  credit: ''
+  rights_basis: Created for the journal at the request of Timur Gilmullin in 2026.
+cover_image: /assets/images/hm-18c10d94a4cc/figure-01.png
+preview_image: /assets/images/hm-18c10d94a4cc/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 Boris Nikolayevich Dolgov (1894–1959), a chemist, poet and professor at Leningrad State University, wrote these humorous verses about its branch in Yelabuga, where he worked.
 
 In 1925, B. N. Dolgov graduated from the Chemistry Division of the Faculty of Physics and Mathematics at Leningrad University.
