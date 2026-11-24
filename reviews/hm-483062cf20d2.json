@@ -16,12 +16,13 @@
     {
       "id": "q2",
       "question": "Уточнить хронологию учёных степеней: в посте кандидатская 1963 и докторская защита 1965; ЕСУ и ВУЕ указывают докторскую степень с 1966, а историко-институтский справочник содержит более раннюю кандидатскую. Развести защиту, утверждение степени и начало работы, проверить тему и даты по документам. https://esu.com.ua/article-35853 ; https://history.org.ua/LiberUA/966-02-2744-2/966-02-2744-2.pdf .",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Уточнить хронологию учёных степеней: в посте кандидатская 1963 и докторская защита 1965; ЕСУ и ВУЕ указывают докторскую степень с 1966, а историко-институтский справочник содержит более раннюю кандидатскую. Развести защиту, утверждение степени и начало работы, проверить тему и даты по документам. https://esu.com.ua/article-35853 ; https://history.org.ua/LiberUA/966-02-2744-2/966-02-2744-2.pdf .",
         "en": "Verify the degree chronology: the post gives a 1963 candidate dissertation and 1965 doctoral defence; ESU and VUE date the doctorate from 1966, while the institute’s reference book lists an earlier candidate degree. Distinguish defence, award and employment dates, and confirm the topic from records. https://esu.com.ua/article-35853 ; https://history.org.ua/LiberUA/966-02-2744-2/966-02-2744-2.pdf ."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/441#pullrequestreview-6045732580"
     },
     {
       "id": "q3",
@@ -37,15 +38,23 @@
     {
       "id": "q4",
       "question": "Указать для исходного и ретушированного портретов Алексея Боголюбова конкретные публичные первоисточники, авторов или фотографов (если установлены), лицензии либо иные подтверждённые основания публикации. «Авторский архив» и «Иллюстрация к материалу» не подтверждают происхождение и права на сторонние портреты.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Указать для исходного и ретушированного портретов Алексея Боголюбова конкретные публичные первоисточники, авторов или фотографов (если установлены), лицензии либо иные подтверждённые основания публикации. «Авторский архив» и «Иллюстрация к материалу» не подтверждают происхождение и права на сторонние портреты.",
         "en": "For the original and retouched portraits of Alexei Bogolyubov, identify the specific public sources, authors or photographers (if known), licences or other verified bases for publication. “Mansur Gilmullin’s archive” and “Illustration accompanying the text” do not establish the provenance or rights of third-party portraits."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/441#pullrequestreview-6045732580"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/441#pullrequestreview-6045732580",
+    "source_commit": "791325396793cecfe0944f0322336424badc521b",
+    "source_review_id": 6045732580,
+    "approved_at": "2026-11-24T19:15:45Z",
+    "package_sha256": "b4daeddcc6932e994be631e660ed699856a2bc2a23f169d397ee1c49dad48a3d"
   }
 }
