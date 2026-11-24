@@ -27,25 +27,34 @@
     {
       "id": "q3",
       "question": "Provide a verifiable source for the relief portrait of Magnitsky, identify the sculptor and photographer or the responsible institution, and document the licence or other confirmed basis for reproduction; keep the attribution synchronized in RU and EN.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Provide a verifiable source for the relief portrait of Magnitsky, identify the sculptor and photographer or the responsible institution, and document the licence or other confirmed basis for reproduction; keep the attribution synchronized in RU and EN.",
         "ru": "Укажите проверяемый источник рельефного портрета Магницкого, автора рельефа и фотографии либо учреждение-правообладателя, а также лицензию или иное подтверждённое основание воспроизведения; синхронизируйте атрибуцию в RU/EN."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/344#pullrequestreview-6045720062"
     },
     {
       "id": "q4",
       "question": "Verify the claim that a royal decree granted Magnitsky nobility in 1704: published research notes that no documentary evidence of his personal ennoblement has been found and relates the family’s later noble status to his son’s rank.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Verify the claim that a royal decree granted Magnitsky nobility in 1704: published research notes that no documentary evidence of his personal ennoblement has been found and relates the family’s later noble status to his son’s rank.",
         "ru": "Проверить утверждение о пожаловании Магницкому дворянства указом 1704 года: в опубликованном исследовании отмечено отсутствие документальных свидетельств его личного дворянства, а последующий дворянский статус семьи связывается с чином сына."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/344#pullrequestreview-6045720062"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/344#pullrequestreview-6045720062",
+    "source_commit": "6ea4a40716d0c084c45a4423ac7a49d663878e2c",
+    "source_review_id": 6045720062,
+    "approved_at": "2026-11-24T19:14:51Z",
+    "package_sha256": "b270a0bd1577ead92b83487719994d4473286d78f9f32a7c41815675200308bd"
   }
 }

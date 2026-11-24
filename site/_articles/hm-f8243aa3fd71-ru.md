@@ -16,7 +16,7 @@ tags:
   - Магницкий
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-f8243aa3fd71-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

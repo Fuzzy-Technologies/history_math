@@ -16,7 +16,7 @@ tags:
   - Magnitsky
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-f8243aa3fd71-en/
 rights_basis: Mansur Gilmullin
 original_publication:
