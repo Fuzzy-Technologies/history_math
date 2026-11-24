@@ -5,15 +5,23 @@
     {
       "id": "von-neumann-portrait-provenance",
       "question": "For the historical portrait of John von Neumann (figure-02), identify the original image, its creator or holding institution, a verifiable public source, and the legal basis for retouching and publication.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the historical portrait of John von Neumann (figure-02), identify the original image, its creator or holding institution, a verifiable public source, and the legal basis for retouching and publication.",
         "ru": "Для исторического портрета Джона фон Неймана (figure-02) указать исходное изображение, автора или хранилище, проверяемый публичный источник и правовое основание ретуши и публикации."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/590#pullrequestreview-6040140273"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/590#pullrequestreview-6040140273",
+    "source_commit": "ac4c6f30b58d826dc2637c7bf062a4e0a88c0239",
+    "source_review_id": 6040140273,
+    "approved_at": "2026-11-24T13:35:41Z",
+    "package_sha256": "4693953b6c3336a1a9682bbb28db847a8ed892923ad4de63b0c6879c431b7039"
   }
 }
