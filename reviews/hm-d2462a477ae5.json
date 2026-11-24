@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d2462a477ae5",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "В перечне под заголовком «В СССР были опубликованы» есть сборник 1998 года. Согласовать общее вступление «На русском языке были опубликованы…» / “The following works appeared in Russian…” без удаления издания.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Вводная фраза относится к русским изданиям, включая сборник 1998 года.",
+      "localizations": {
+        "source": "В перечне под заголовком «В СССР были опубликованы» есть сборник 1998 года. Согласовать общее вступление «На русском языке были опубликованы…» / “The following works appeared in Russian…” без удаления издания.",
+        "en": "The list headed “published in the USSR” includes a 1998 collection. Approve “The following works appeared in Russian…” and the corresponding Russian wording while retaining that edition."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить формулировку закона готовности в связи с упражнениями. Установить первоисточники эпиграфа и рассказа о приюте; английская адаптация сохраняет авторские утверждения без добавления новых деталей.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Уточнить формулировку закона готовности в связи с упражнениями. Установить первоисточники эпиграфа и рассказа о приюте; английская адаптация сохраняет авторские утверждения без добавления новых деталей.",
+        "en": "Clarify the description of the law of readiness in relation to practice. Establish the original sources of the epigraph and orphanage anecdote; the English adaptation retains the author’s claims without adding details."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/400#pullrequestreview-6045725474"
+    },
+    {
+      "id": "q3",
+      "question": "Установить происхождение и правовое основание для портрета Торндайка и условной иллюстрации «Конфетка сиротам»: указать фотографа/иллюстратора либо явно подтвердить авторское создание изображения и соответствующие права; формулировки об авторском архиве недостаточно.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Установить происхождение и правовое основание для портрета Торндайка и условной иллюстрации «Конфетка сиротам»: указать фотографа/иллюстратора либо явно подтвердить авторское создание изображения и соответствующие права; формулировки об авторском архиве недостаточно.",
+        "en": "Establish the origin and legal basis for the portrait of Thorndike and the illustrative scene “A Sweet for the Orphans”: identify the photographer or illustrator, or explicitly verify that the image was created by the author and that the relevant rights are held; a reference to the author’s archive is insufficient."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/400#pullrequestreview-6045725474"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/400#pullrequestreview-6045725474",
+    "source_commit": "d2dac2c09dd989a9849a44820dcfe4a29647a822",
+    "source_review_id": 6045725474,
+    "approved_at": "2026-11-24T19:15:13Z",
+    "package_sha256": "fb78681c192a426b1833a9091dc0606c5a5a7bf31b20d722f080cf9c788021d9"
+  }
+}
