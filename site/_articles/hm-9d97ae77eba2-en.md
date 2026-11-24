@@ -18,7 +18,7 @@ tags:
   - Education
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-9d97ae77eba2-en/
 rights_basis: Mansur Gilmullin
 original_publication:

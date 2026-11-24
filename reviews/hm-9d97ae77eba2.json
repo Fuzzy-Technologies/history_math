@@ -5,25 +5,34 @@
     {
       "id": "edition-range",
       "question": "Согласовать диапазон издания 1819–1820: том I вышел в 1819 году, том III — в 1820 году; это подтверждают [научная статья](https://www.gramota.net/article/ped20210124/pdf) и библиографические записи НЭБ. Дополнительно подтвердить исходную дату 2026-12-08: на 07.11.2026 публикация в Telegram ещё не состоялась. Разночтение 1741/1744 уже оговорено в тексте.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Согласовать диапазон издания 1819–1820: том I вышел в 1819 году, том III — в 1820 году; это подтверждают [научная статья](https://www.gramota.net/article/ped20210124/pdf) и библиографические записи НЭБ. Дополнительно подтвердить исходную дату 2026-12-08: на 07.11.2026 публикация в Telegram ещё не состоялась. Разночтение 1741/1744 уже оговорено в тексте.",
         "en": "Confirm the 1819–1820 publication range: volume I appeared in 1819 and volume III in 1820, as supported by the [scholarly article](https://www.gramota.net/article/ped20210124/pdf) and the National Electronic Library records. Also confirm the source date 2026-12-08: as of 7 November 2026 the Telegram publication had not yet appeared. The 1741/1744 birth-year discrepancy is already stated in the article."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/477#pullrequestreview-6043439555"
     },
     {
       "id": "title-page-provenance",
       "question": "Для титульного листа первого тома укажите точный источник цифровой копии, создателя или издателя, если он известен, и действительное правовое основание; формулировка «Иллюстрация к материалу» не подтверждает происхождение и права.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для титульного листа первого тома укажите точный источник цифровой копии, создателя или издателя, если он известен, и действительное правовое основание; формулировка «Иллюстрация к материалу» не подтверждает происхождение и права.",
         "en": "For the title page of volume I, identify the exact source of the digital copy, the creator or publisher if known, and a valid rights basis; “Illustration accompanying the text” does not establish provenance or rights."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/477#pullrequestreview-6043439555"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/477#pullrequestreview-6043439555",
+    "source_commit": "c6adfb74d3b82882d70186d8d3dd2d237b0b2c99",
+    "source_review_id": 6043439555,
+    "approved_at": "2026-11-24T16:40:20Z",
+    "package_sha256": "b14f3dba5f235284d8a9ba02db7b9b0be3641c0de531a76335e3d017212ac7d9"
   }
 }

@@ -18,7 +18,7 @@ tags:
   - Образование
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-9d97ae77eba2-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
