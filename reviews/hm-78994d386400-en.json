@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-78994d386400-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the institution and dates for the deanship of the physics and mathematics faculty and the deputy rectorship for academic affairs. The post groups these under Moscow State University in the 1930s–1940s. Establish the institutional chronology so that Moscow University, the Second Moscow State University and teacher training institutes are not conflated; approve both versions.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Verify the institution and dates for the deanship of the physics and mathematics faculty and the deputy rectorship for academic affairs. The post groups these under Moscow State University in the 1930s–1940s. Establish the institutional chronology so that Moscow University, the Second Moscow State University and teacher training institutes are not conflated; approve both versions.",
+        "ru": "Уточнить название вуза и даты должностей декана физико-математического факультета и заместителя ректора по учебной части: пост обобщает их как работу в МГУ в 1930–1940-е. Нужна конкретная институциональная хронология, чтобы не смешать Московский университет, 2-й МГУ и педагогические институты; согласовать обе версии."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/442#pullrequestreview-6045732832"
+    },
+    {
+      "id": "q2",
+      "question": "For the original and retouched portraits of Alexander Barsukov, identify the specific public sources, authors or photographers (if known), licences or other verified bases for publication. “Mansur Gilmullin’s archive” and “Illustration accompanying the text” do not establish the provenance or rights of third-party portraits.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "For the original and retouched portraits of Alexander Barsukov, identify the specific public sources, authors or photographers (if known), licences or other verified bases for publication. “Mansur Gilmullin’s archive” and “Illustration accompanying the text” do not establish the provenance or rights of third-party portraits.",
+        "ru": "Указать для исходного и ретушированного портретов Александра Барсукова конкретные публичные первоисточники, авторов или фотографов (если установлены), лицензии либо иные подтверждённые основания публикации. «Авторский архив» и «Иллюстрация к материалу» не подтверждают происхождение и права на сторонние портреты."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/442#pullrequestreview-6045732832"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/442#pullrequestreview-6045732832",
+    "source_commit": "9e676f5a505a216efcb4796cd759e8994f34ebc8",
+    "source_review_id": 6045732832,
+    "approved_at": "2026-11-24T19:15:46Z",
+    "package_sha256": "2a082cffb029bbdd3549bc8b499726bea232316a38d73561d5de35570c0346e5"
+  }
+}
