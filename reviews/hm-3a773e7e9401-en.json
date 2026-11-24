@@ -5,35 +5,45 @@
     {
       "id": "missing-humor-cover",
       "question": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
         "ru": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку."
-      }
+      },
+      "resolution": "Both editions include the editorially approved cover. https://github.com/Fuzzy-Technologies/history_math/pull/515#pullrequestreview-6045743199"
     },
     {
       "id": "bellman-event-location",
       "question": "Verify where the episode took place: a published retelling associates Bellman’s remark with one of his lectures at Moscow State University, not the International Congress of Mathematicians. Provide a verifiable source and exact locator for the ICM attribution, or correct the venue in RU/EN and their descriptions.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Verify where the episode took place: a published retelling associates Bellman’s remark with one of his lectures at Moscow State University, not the International Congress of Mathematicians. Provide a verifiable source and exact locator for the ICM attribution, or correct the venue in RU/EN and their descriptions.",
         "ru": "Уточните место события: опубликованный пересказ связывает реплику Беллмана с одним из докладов в МГУ, а не с Международным конгрессом математиков. Для ICM нужен проверяемый источник и точный локатор; иначе исправьте место в RU/EN и описаниях."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/515#pullrequestreview-6045743199"
     },
     {
       "id": "original-publication-url",
       "question": "Provide a public link to the original publication confirming the date 02.06.2024; the address must not be guessed.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Provide a public link to the original publication confirming the date 02.06.2024; the address must not be guessed.",
         "ru": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 02.06.2024; адрес нельзя восстанавливать предположительно."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/515#pullrequestreview-6045743199"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/515#pullrequestreview-6045743199",
+    "source_commit": "5e099e045c65e6d5f8995e1b44bad1eccf5dadac",
+    "source_review_id": 6045743199,
+    "approved_at": "2026-11-24T19:16:30Z",
+    "package_sha256": "9624ed10ccb1d410afc0299cca97458ca7735efa3b72e624a868dfd52f49a6df"
   }
 }
