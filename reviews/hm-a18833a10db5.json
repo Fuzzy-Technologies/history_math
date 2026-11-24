@@ -25,7 +25,7 @@
     {
       "id": "professorship-year",
       "question": "Исправить год профессорского звания И. В. Арнольда: 1935 год относится к степени кандидата наук, звание профессора присвоено в 1943 году. Источники: https://www.letopis.msu.ru/peoples/4867 ; https://www.mathedu.ru/indexes/authors/arnold_i_v/ .",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Исправить год профессорского звания И. В. Арнольда: 1935 год относится к степени кандидата наук, звание профессора присвоено в 1943 году. Источники: https://www.letopis.msu.ru/peoples/4867 ; https://www.mathedu.ru/indexes/authors/arnold_i_v/ .",

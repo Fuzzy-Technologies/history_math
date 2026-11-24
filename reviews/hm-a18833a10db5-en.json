@@ -25,7 +25,7 @@
     {
       "id": "professorship-year",
       "question": "Correct Igor Arnold’s professorship year: 1935 is the Candidate of Sciences degree, while the professor title was awarded in 1943. Sources: https://www.letopis.msu.ru/peoples/4867 ; https://www.mathedu.ru/indexes/authors/arnold_i_v/ .",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Correct Igor Arnold’s professorship year: 1935 is the Candidate of Sciences degree, while the professor title was awarded in 1943. Sources: https://www.letopis.msu.ru/peoples/4867 ; https://www.mathedu.ru/indexes/authors/arnold_i_v/ .",
