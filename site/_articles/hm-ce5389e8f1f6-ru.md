@@ -23,6 +23,17 @@ original_publication:
   outlet: Telegram · history_math
   date: '2023-11-05'
   preserve_date: true
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-ce5389e8f1f6/figure-01.png
+  alt: У памятника Ленину спорят, как измерить площадь, сверяясь с чертежом и листом в клетку.
+  caption: ''
+  source: Иллюстрация редакции журнала, созданная с помощью ИИ.
+  credit: ''
+  rights_basis: Создано для журнала по поручению Тимура Гильмуллина, 2026.
+cover_image: /assets/images/hm-ce5389e8f1f6/figure-01.png
+preview_image: /assets/images/hm-ce5389e8f1f6/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 Только неграмотный человек на вопрос «Как найти площадь Ленина?» отвечает: «Длину Ленина умножить на ширину Ленина…» А грамотный знает, что надо взять интеграл по поверхности!
