@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Check the Academy’s historical names in 1919–1927 and the chronology of the Physics and Mathematics Institute’s name and affiliation; verify the faculty of which Steklov became dean in 1904.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Check the Academy’s historical names in 1919–1927 and the chronology of the Physics and Mathematics Institute’s name and affiliation; verify the faculty of which Steklov became dean in 1904.",
@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "Verify Nikolai Saltykov’s academy membership and the preferred English term for closure theory in the list of Steklov’s research areas.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify Nikolai Saltykov’s academy membership and the preferred English term for closure theory in the list of Steklov’s research areas.",
