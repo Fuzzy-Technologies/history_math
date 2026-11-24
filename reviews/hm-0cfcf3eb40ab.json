@@ -5,12 +5,13 @@
     {
       "id": "q1",
       "question": "Укажите музей или коллекцию, где хранится бюст Аристотеля, проверяемый источник репродукции, автора фотографии и лицензию либо подтверждённый правовой статус изображения; авторство текста не распространяется на стороннюю иллюстрацию.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Укажите музей или коллекцию, где хранится бюст Аристотеля, проверяемый источник репродукции, автора фотографии и лицензию либо подтверждённый правовой статус изображения; авторство текста не распространяется на стороннюю иллюстрацию.",
         "en": "Identify the museum or collection holding the bust of Aristotle, provide a verifiable source for the reproduction, name the photographer, and document the licence or confirmed legal status of the image; authorship of the text does not extend to a third-party illustration."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/341#pullrequestreview-6039919072"
     },
     {
       "id": "q2",
@@ -25,6 +26,13 @@
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/341#pullrequestreview-6039919072",
+    "source_commit": "022f78563ff29aeee1c41f070b3e1d99440126f7",
+    "source_review_id": 6039919072,
+    "approved_at": "2026-11-24T13:21:01Z",
+    "package_sha256": "9c43703f8be361d30a46469645cdb082422e12e0d56bc1a6b3f2336d438e57d4"
   }
 }

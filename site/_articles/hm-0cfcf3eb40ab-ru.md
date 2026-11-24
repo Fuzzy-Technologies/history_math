@@ -16,7 +16,7 @@ tags:
   - Аристотель
 series: Персоналии
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-0cfcf3eb40ab-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

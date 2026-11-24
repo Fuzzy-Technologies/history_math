@@ -16,7 +16,7 @@ tags:
   - Aristotle
 series: People
 math: true
-status: draft
+status: published
 permalink: /publications/hm-0cfcf3eb40ab-en/
 rights_basis: Mansur Gilmullin
 original_publication:
