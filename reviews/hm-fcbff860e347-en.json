@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-fcbff860e347-en",
+  "questions": [
+    {
+      "id": "lune-triangle-square-fraction",
+      "question": "The description incorrectly called the isosceles right triangle in the simplest lune “a quarter of a square”. The triangle is half a square; the incorrect phrase has been removed, while the arc remains correctly described as a quarter-circle.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "The description incorrectly called the isosceles right triangle in the simplest lune “a quarter of a square”. The triangle is half a square; the incorrect phrase has been removed, while the arc remains correctly described as a quarter-circle.",
+        "ru": "В описании простейшей луночки равнобедренный прямоугольный треугольник ошибочно назван «четвертью квадрата». Треугольник составляет половину квадрата; ошибочное уточнение удалено, а дуга по-прежнему описана как четверть окружности."
+      },
+      "resolution": "Removed the incorrect phrase “a quarter of a square”. The isosceles right triangle is half a square, while the sector centred at C is a quarter-circle."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/646#pullrequestreview-6040227990",
+    "source_commit": "a7fa0f903f8d5fc6c48d05786466cf1300a6c2df",
+    "source_review_id": 6040227990,
+    "approved_at": "2026-11-24T13:41:25Z",
+    "package_sha256": "2b834a02f6953df8ce8e1a6ffbec6accdffb6abf5945502d1ef40e872dca71b7"
+  }
+}
