@@ -18,7 +18,7 @@ tags:
   - equation
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-ba3a7792dd2b-en/
 rights_basis: Mansur Gilmullin
 original_publication:

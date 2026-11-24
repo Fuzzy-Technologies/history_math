@@ -18,7 +18,7 @@ tags:
   - уравнение
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-ba3a7792dd2b-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
