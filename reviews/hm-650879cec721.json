@@ -15,7 +15,7 @@
     {
       "id": "kant-story-source",
       "question": "Укажите источник сюжета и не представляйте его как установленный эпизод биографии Канта: у Мартина Гарднера задача «How Did Kant Set His Clock?» вводится осторожным «It is said».",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Укажите источник сюжета и не представляйте его как установленный эпизод биографии Канта: у Мартина Гарднера задача «How Did Kant Set His Clock?» вводится осторожным «It is said».",

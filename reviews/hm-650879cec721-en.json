@@ -15,7 +15,7 @@
     {
       "id": "kant-story-source",
       "question": "Cite the source of the story and do not present it as an established episode in Kant’s biography: Martin Gardner introduces “How Did Kant Set His Clock?” cautiously with “It is said”.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Cite the source of the story and do not present it as an established episode in Kant’s biography: Martin Gardner introduces “How Did Kant Set His Clock?” cautiously with “It is said”.",
