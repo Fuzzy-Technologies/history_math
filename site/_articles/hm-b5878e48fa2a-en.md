@@ -29,7 +29,7 @@ figures:
     alt: Black-and-white portrait of a short-haired man wearing a dark high collar
     caption: Mikhail Vasilyevich Ostrogradsky
     source: Illustration accompanying the text.
-    rights_basis: Mansur Gilmullin
+    rights_basis: The portrait’s rights holder is unspecified.
 preview_image: /assets/images/hm-b5878e48fa2a/figure-01.png
 cover_image: /assets/images/hm-b5878e48fa2a/figure-01.png
 ---

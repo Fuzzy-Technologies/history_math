@@ -29,7 +29,7 @@ figures:
     alt: Чёрно-белый портрет мужчины с короткими волосами в тёмном высоком воротнике
     caption: Михаил Васильевич Остроградский
     source: Иллюстрация к материалу.
-    rights_basis: Мансур Гильмуллин
+    rights_basis: Правообладатель портрета не указан.
 preview_image: /assets/images/hm-b5878e48fa2a/figure-01.png
 cover_image: /assets/images/hm-b5878e48fa2a/figure-01.png
 ---
