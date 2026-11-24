@@ -16,25 +16,34 @@
     {
       "id": "equal-portion-value",
       "question": "The statement does not establish that the five dishes have equal value, yet the solution divides the total cost equally by five. State that these are five equal-value portions or justify their equal value.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "The statement does not establish that the five dishes have equal value, yet the solution divides the total cost equally by five. State that these are five equal-value portions or justify their equal value.",
         "ru": "Условие не устанавливает равноценность пяти кушаний, однако решение делит общую стоимость поровну на пять. Нужно явно указать пять равноценных порций либо обосновать равную стоимость."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/628#pullrequestreview-6040196705"
     },
     {
       "id": "source-authorship-attribution",
       "question": "The text closely reproduces the problem by Amenitsky and Sakharov, yet authorship and the root rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the original authorship from Mansur’s adaptation and editing.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "The text closely reproduces the problem by Amenitsky and Sakharov, yet authorship and the root rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the original authorship from Mansur’s adaptation and editing.",
         "ru": "Текст близко воспроизводит задачу Аменицкого и Сахарова, но авторство и корневой rights_basis целиком отданы Мансуру Гильмуллину. Нужно разделить авторство оригинала и вклад Мансура — адаптацию и редакцию."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/628#pullrequestreview-6040196705"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/628#pullrequestreview-6040196705",
+    "source_commit": "124ea9a3ce13c73a89804de7dfb08d3567a1fce0",
+    "source_review_id": 6040196705,
+    "approved_at": "2026-11-24T13:39:29Z",
+    "package_sha256": "6d36f5e85cd06c3e7da335ea61ff9973b6ad0a0539cd3b932f4e2bdf9ab75bf8"
   }
 }

@@ -17,7 +17,7 @@ tags:
   - делёжка
 series: Задачи
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-146ad4e22de4-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
