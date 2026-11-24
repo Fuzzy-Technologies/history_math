@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Identify the institution referred to as reorganized in 1823: the preceding paragraph concerns the Main Pedagogical Institute reopened in 1829, while the following history concerns the gymnasium. Agree both editions after checking institutional history.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Identify the institution referred to as reorganized in 1823: the preceding paragraph concerns the Main Pedagogical Institute reopened in 1829, while the following history concerns the gymnasium. Agree both editions after checking institutional history.",
@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "Verify the scope of the priority claim for Busse’s model curriculum: the article calls it the first model mathematics curriculum. Clarify whether this means the first common curriculum for all Russian gymnasiums.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify the scope of the priority claim for Busse’s model curriculum: the article calls it the first model mathematics curriculum. Clarify whether this means the first common curriculum for all Russian gymnasiums.",
