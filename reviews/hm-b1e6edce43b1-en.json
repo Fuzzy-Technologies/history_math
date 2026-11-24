@@ -35,7 +35,7 @@
     {
       "id": "q4",
       "question": "Verify the chronology of Khinchin’s move to Ivanovo-Voznesensk and the start of his teaching there.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify the chronology of Khinchin’s move to Ivanovo-Voznesensk and the start of his teaching there.",

@@ -35,7 +35,7 @@
     {
       "id": "q4",
       "question": "Проверить хронологию переезда Хинчина в Иваново-Вознесенск и начала его преподавательской работы там.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "resolution": "В статьях разделены переезд в конце 1918 года и начало преподавания в 1919 году. Проверено по истории факультета Ивановского государственного университета и мемориальной странице МИАН: https://math.ivanovo.ac.ru/hist/hist0/index.html ; https://www.mi.ras.ru/index.php?c=inmemoriapage&id=26863",
       "localizations": {
