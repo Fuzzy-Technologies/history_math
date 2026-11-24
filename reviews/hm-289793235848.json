@@ -16,15 +16,23 @@
     {
       "id": "round-table-figure-provenance",
       "question": "Указать фактическое публичное происхождение и правовое основание для портрета Генри Дьюдени (рис. 2) и обложки русского издания 1979 года (рис. 3). Сейчас обе сторонние иллюстрации описаны общей формулировкой «Иллюстрация к материалу»; нужны источник, автор или издатель и лицензия либо иное основание воспроизведения.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Указать фактическое публичное происхождение и правовое основание для портрета Генри Дьюдени (рис. 2) и обложки русского издания 1979 года (рис. 3). Сейчас обе сторонние иллюстрации описаны общей формулировкой «Иллюстрация к материалу»; нужны источник, автор или издатель и лицензия либо иное основание воспроизведения.",
         "en": "Provide the actual public provenance and rights basis for the portrait of Henry Dudeney (figure 2) and the cover of the 1979 Russian edition (figure 3). Both third-party images currently use the generic “illustration accompanying the text” credit; identify the source, creator or publisher, and licence or other basis for reproduction."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/689#pullrequestreview-6040305582"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/689#pullrequestreview-6040305582",
+    "source_commit": "4a9557d7990580f0e72dfcee62d4d04bea6ae214",
+    "source_review_id": 6040305582,
+    "approved_at": "2026-11-24T13:45:48Z",
+    "package_sha256": "2b5e33781c8ed7609f8222029af720de809b8a01146d44491aeb0705dedac70f"
   }
 }
