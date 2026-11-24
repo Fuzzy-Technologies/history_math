@@ -38,7 +38,7 @@ cover_image: /assets/images/hm-bddaeb9e436c/figure-01.png
 ---
 {% include article-figure.html id="fig-1" %}
 
-In the sixth century BC, Miletus saw the rise of the first school of mathematics or, more precisely, of natural philosophy. It was called the Ionian school after the region of Ionia. According to tradition, the father of Greek mathematics was the Milesian merchant Thales (c. 624–547 BC), a statesman, philosopher, astronomer and mathematician.
+In the sixth century BC, Miletus saw the rise of one of the early schools of Greek natural philosophy. It was called the Ionian school after the region of Ionia. According to tradition, the father of Greek mathematics was the Milesian merchant Thales (c. 624–547 BC), a statesman, philosopher, astronomer and mathematician.
 
 According to Aristotle, Thales once showed that philosophy could also be useful in practical life. Having read in the stars that a rich olive harvest was coming, he put down deposits that winter for the use of olive presses in Miletus and on Chios. When the harvest came and demand for the presses rose, he rented them out at higher rates and made a fortune. Aristotle’s point is that philosophers can become wealthy if they wish, though their ambitions lie elsewhere.
 
