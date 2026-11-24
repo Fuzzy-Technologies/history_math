@@ -27,15 +27,23 @@
     {
       "id": "q3",
       "question": "Подтвердить первоисточник и характер изображения Диофанта и основание воспроизведения; в исходных версиях нет подтверждённой ссылки на Telegram.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Подтвердить первоисточник и характер изображения Диофанта и основание воспроизведения; в исходных версиях нет подтверждённой ссылки на Telegram.",
         "en": "Confirm the original source and nature of the depiction of Diophantus and the basis for reproduction; the source versions contain no confirmed Telegram URL."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/352#pullrequestreview-6039927095"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/352#pullrequestreview-6039927095",
+    "source_commit": "2f10fc581b55c9af78e3472e3db7d2eb20436790",
+    "source_review_id": 6039927095,
+    "approved_at": "2026-11-24T13:21:35Z",
+    "package_sha256": "3205308d3a8a466d6e7b5f954aeeab90ac06193e5bad1cfc0c653174accd59bb"
   }
 }

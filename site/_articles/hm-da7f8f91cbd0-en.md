@@ -16,7 +16,7 @@ tags:
   - Diophantus
 series: People
 math: true
-status: draft
+status: published
 permalink: /publications/hm-da7f8f91cbd0-en/
 rights_basis: Mansur Gilmullin
 original_publication:

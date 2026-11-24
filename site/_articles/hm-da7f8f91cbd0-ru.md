@@ -16,7 +16,7 @@ tags:
   - Диофант
 series: Персоналии
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-da7f8f91cbd0-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
