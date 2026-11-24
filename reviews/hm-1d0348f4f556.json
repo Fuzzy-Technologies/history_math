@@ -60,15 +60,23 @@
     {
       "id": "stomachion-figure-provenance",
       "question": "Указать для всех шести иллюстраций фактическое публичное происхождение и правовое основание вместо общей формулировки «Иллюстрация к материалу». В частности, нужны источник и лицензия Художественного музея Уолтерса для изображения палимпсеста, точная атрибуция воспроизведённого отрывка из «Кванта», а также источник, автор и лицензия либо основание общественного достояния для схем головоломки и силуэтов. Сторонние изображения нельзя обозначать как авторские.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Указать для всех шести иллюстраций фактическое публичное происхождение и правовое основание вместо общей формулировки «Иллюстрация к материалу». В частности, нужны источник и лицензия Художественного музея Уолтерса для изображения палимпсеста, точная атрибуция воспроизведённого отрывка из «Кванта», а также источник, автор и лицензия либо основание общественного достояния для схем головоломки и силуэтов. Сторонние изображения нельзя обозначать как авторские.",
         "en": "Please give the six figures their actual public provenance and rights basis instead of the generic “illustration accompanying the text” credit. In particular, identify the Walters Art Museum source/licence for the palimpsest image, retain the precise *Kvant* attribution for the reproduced excerpt, and document the source/creator/licence or public-domain basis for the puzzle diagrams and silhouettes. Do not describe third-party images as author-owned."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/690#pullrequestreview-6040305718"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/690#pullrequestreview-6040305718",
+    "source_commit": "235c3b67f9152adf7fcce4140a53016924714c5c",
+    "source_review_id": 6040305718,
+    "approved_at": "2026-11-24T13:45:49Z",
+    "package_sha256": "957fe29c06dbd87e28b6beca5706904e3492d441250f85b2f9d76d6fd211eaf1"
   }
 }
