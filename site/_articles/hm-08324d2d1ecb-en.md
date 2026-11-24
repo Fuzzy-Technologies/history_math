@@ -19,7 +19,7 @@ tags:
   - Moscow Mathematical Society
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-08324d2d1ecb-en/
 rights_basis: Mansur Gilmullin
 original_publication:

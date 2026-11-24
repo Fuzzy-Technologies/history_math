@@ -5,45 +5,56 @@
     {
       "id": "q1",
       "question": "Историческое название академии в сведении о членстве 1924 года исправлено на Российскую академию наук. Остаётся проверить даты и характер академического членства и степень обобщения об университетских семинарах после 1910 года.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Историческое название академии в сведении о членстве 1924 года исправлено на Российскую академию наук. Остаётся проверить даты и характер академического членства и степень обобщения об университетских семинарах после 1910 года.",
         "en": "The institution named for the 1924 membership has been corrected to the Russian Academy of Sciences. Verify the dates and nature of the memberships and the scope of the generalization about university seminars after 1910."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/362#pullrequestreview-6045721569"
     },
     {
       "id": "q2",
       "question": "Подтвердить архивными источниками хронологию преследования, ареста и высылки, срок наказания и сведения о смерти в Казани.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Подтвердить архивными источниками хронологию преследования, ареста и высылки, срок наказания и сведения о смерти в Казани.",
         "en": "Confirm the chronology of persecution, arrest and exile, the sentence and the account of his death in Kazan against archival sources."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/362#pullrequestreview-6045721569"
     },
     {
       "id": "q3",
       "question": "Установить проверяемый публичный первоисточник портрета Д. Ф. Егорова, автора или фотографа (если известен), дату и лицензию либо подтверждённый статус общественного достояния.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Установить проверяемый публичный первоисточник портрета Д. Ф. Егорова, автора или фотографа (если известен), дату и лицензию либо подтверждённый статус общественного достояния.",
         "en": "Establish a verifiable public source for Dmitri Egorov’s portrait, the artist or photographer (if known), the date, and the licence or verified public-domain status."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/362#pullrequestreview-6045721569"
     },
     {
       "id": "q4",
       "question": "Согласовать дату основания НИИ математики и механики Московского университета и хронологию директорства Егорова по авторитетным университетским источникам.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Согласовать дату основания НИИ математики и механики Московского университета и хронологию директорства Егорова по авторитетным университетским источникам.",
         "en": "Reconcile the founding date of Moscow University’s Research Institute of Mathematics and Mechanics and the chronology of Egorov’s directorship against authoritative university records."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/362#pullrequestreview-6045721569"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/362#pullrequestreview-6045721569",
+    "source_commit": "425601f90a54d713974c86d187a15356f6ebead4",
+    "source_review_id": 6045721569,
+    "approved_at": "2026-11-24T19:14:57Z",
+    "package_sha256": "3b20fa07b521bea0325f3188eeae5f0f406b2e64ee472f0de48e9abe76df5bb3"
   }
 }

@@ -19,7 +19,7 @@ tags:
   - Московское математическое общество
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-08324d2d1ecb-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
