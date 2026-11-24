@@ -15,7 +15,7 @@ tags:
   - Mathematicians Joke
   - Logic
 math: false
-status: draft
+status: published
 permalink: /publications/hm-c36e72edd755-en/
 rights_basis: Mansur Gilmullin
 original_publication:
