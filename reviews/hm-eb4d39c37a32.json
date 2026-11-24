@@ -16,25 +16,34 @@
     {
       "id": "humor-cover-image",
       "question": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет.",
         "en": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration."
-      }
+      },
+      "resolution": "В обеих версиях добавлена согласованная редакцией обложка. https://github.com/Fuzzy-Technologies/history_math/pull/514#pullrequestreview-6045742920"
     },
     {
       "id": "original-publication-url",
       "question": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 26.05.2024; адрес нельзя восстанавливать предположительно.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 26.05.2024; адрес нельзя восстанавливать предположительно.",
         "en": "Provide a public link to the original publication confirming the date 26.05.2024; the address must not be guessed."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/514#pullrequestreview-6045742920"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/514#pullrequestreview-6045742920",
+    "source_commit": "59ae8f6aa5ea65759ff7986449d7f9afce5c9fa2",
+    "source_review_id": 6045742920,
+    "approved_at": "2026-11-24T19:16:29Z",
+    "package_sha256": "8775fdc320e0e2efad0ece6c92e55d494928ef9d9e36aeb0d643a3d422ec487a"
   }
 }

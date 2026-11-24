@@ -16,7 +16,7 @@ tags:
   - Vyshnegradsky
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-eb4d39c37a32-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
