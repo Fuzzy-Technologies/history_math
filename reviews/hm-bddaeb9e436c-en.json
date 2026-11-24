@@ -5,7 +5,7 @@
     {
       "id": "thales-presses-transaction",
       "question": "Please clarify “bought up numerous olive presses”: does this mean buying the equipment or arranging advance leases for its use? Compare the retelling with Aristotle, Politics I.11 (1259a), and decide whether both versions need an adjustment. The original bought up wording is retained; the source is given bibliographically without an unverified link.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Please clarify “bought up numerous olive presses”: does this mean buying the equipment or arranging advance leases for its use? Compare the retelling with Aristotle, Politics I.11 (1259a), and decide whether both versions need an adjustment. The original bought up wording is retained; the source is given bibliographically without an unverified link.",
