@@ -16,25 +16,34 @@
     {
       "id": "married-couples-cover-provenance",
       "question": "Confirm the cover’s provenance: its caption calls it an author’s illustration, but the source and rights_basis fields only say “Illustration accompanying the text.” Identify the actual author or illustrator, public source and licence, or provide verified grounds for treating it as an original author illustration.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Confirm the cover’s provenance: its caption calls it an author’s illustration, but the source and rights_basis fields only say “Illustration accompanying the text.” Identify the actual author or illustrator, public source and licence, or provide verified grounds for treating it as an original author illustration.",
         "ru": "Подтвердить происхождение обложки: в подписи она названа авторской, но поля source и rights_basis содержат лишь «Иллюстрация к материалу». Нужны реальный автор или иллюстратор, публичный источник и лицензия либо подтверждённое основание считать изображение авторским."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/666#pullrequestreview-6040273909"
     },
     {
       "id": "litzmann-source-and-publication",
       "question": "The problem is presented via Lietzmann, but the origin and authorship of the source curiosity are not distinguished from Mansur’s adaptation, and the past date 28 November 2025 has no public evidence URL. Identify the source and authorship of the original text, distinguish Mansur’s adaptation or editing, and add the actual publication URL or correct the date.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "The problem is presented via Lietzmann, but the origin and authorship of the source curiosity are not distinguished from Mansur’s adaptation, and the past date 28 November 2025 has no public evidence URL. Identify the source and authorship of the original text, distinguish Mansur’s adaptation or editing, and add the actual publication URL or correct the date.",
         "ru": "Задача дана по Литцману, но происхождение и авторство исходного курьёза не отделены от адаптации Мансура, а прошедшая дата 28.11.2025 не подтверждена публичной ссылкой. Уточнить источник и авторство исходного текста, обозначить адаптацию или редакцию Мансура и добавить URL фактической публикации либо исправить дату."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/666#pullrequestreview-6040273909"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/666#pullrequestreview-6040273909",
+    "source_commit": "467f915f8db8857e555dac293d39b596d535edcf",
+    "source_review_id": 6040273909,
+    "approved_at": "2026-11-24T13:43:57Z",
+    "package_sha256": "addf0c431015e848c5aa75b1b0adfe900d2f975518f0d4cc33f0e3958d421bfe"
   }
 }
