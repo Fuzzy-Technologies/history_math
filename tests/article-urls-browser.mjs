@@ -36,20 +36,21 @@ try {
     await stubMetrika(page.context());
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
-    await page.goto(origin + base + article.url, {waitUntil: 'networkidle'});
+    await page.goto(origin + base + article.url, {waitUntil: 'domcontentloaded'});
     assert.match(article.url, /^\/(?:ru\/)?publications\/hm-(?:tt-)?[0-9a-f]{12}-(?:ru|en)\/$/);
     const anchor = await page.locator('article [id]').first().getAttribute('id');
     const oldCanonical = article.url.replace('/publications/', '/articles/');
     const legacy = oldCanonical.replace(/-(?:ru|en)\/$/, '/');
-    const suffix = `?from=legacy#${anchor}`;
+    const suffix = `?from=legacy#${encodeURIComponent(anchor)}`;
     const alias = await readFile(resolve(root, '.' + oldCanonical, 'index.html'), 'utf8');
     assert.ok(alias.includes(`data-article-redirect href="${base + article.url}"`));
     if (!downloaded.has(article.lang)) {
-      await page.goto(origin + base + oldCanonical + suffix, {waitUntil: 'networkidle'});
+      await page.goto(origin + base + oldCanonical + suffix, {waitUntil: 'domcontentloaded'});
       await page.waitForURL(origin + base + article.url + suffix);
     }
-    await page.goto(origin + base + legacy + suffix, {waitUntil: 'networkidle'});
+    await page.goto(origin + base + legacy + suffix, {waitUntil: 'domcontentloaded'});
     await page.waitForURL(origin + base + article.url + suffix);
+    assert.equal(await page.locator(':target').getAttribute('id'), anchor);
     assert.equal(await page.locator('html').getAttribute('lang'), article.lang);
     assert.equal(await page.locator('link[rel=canonical]').getAttribute('href'), publicOrigin + base + article.url);
     await page.locator('.article-details summary').click();
