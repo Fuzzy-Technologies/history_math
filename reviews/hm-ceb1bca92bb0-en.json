@@ -5,25 +5,34 @@
     {
       "id": "joke-cover",
       "question": "This “Mathematicians Joke” item has no actual cover. Add the selected cover and record its provenance and rights in both editions.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "This “Mathematicians Joke” item has no actual cover. Add the selected cover and record its provenance and rights in both editions.",
         "ru": "У материала рубрики «Математики шутят» отсутствует фактическая обложка. Добавьте выбранную обложку и укажите её происхождение и права в обеих редакциях."
-      }
+      },
+      "resolution": "Both editions include the editorially approved cover. https://github.com/Fuzzy-Technologies/history_math/pull/511#pullrequestreview-6045742197"
     },
     {
       "id": "original-publication-url",
       "question": "Provide a public link to the original publication confirming the date 05.05.2024; the address must not be guessed.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Provide a public link to the original publication confirming the date 05.05.2024; the address must not be guessed.",
         "ru": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 05.05.2024; адрес нельзя восстанавливать предположительно."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/511#pullrequestreview-6045742197"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/511#pullrequestreview-6045742197",
+    "source_commit": "0ab39f1cd556afb8700d689cc818a8d82ae2b2a2",
+    "source_review_id": 6045742197,
+    "approved_at": "2026-11-24T19:16:26Z",
+    "package_sha256": "9eb73081a830d6fca3288f2d5ff317572876740014b678c46c305fc0631bc0c5"
   }
 }

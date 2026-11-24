@@ -16,7 +16,7 @@ tags:
   - Geometry
 series: Mathematicians Joke
 math: true
-status: draft
+status: published
 permalink: /publications/hm-ceb1bca92bb0-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

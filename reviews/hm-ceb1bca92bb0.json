@@ -5,25 +5,34 @@
     {
       "id": "joke-cover",
       "question": "У материала рубрики «Математики шутят» отсутствует фактическая обложка. Добавьте выбранную обложку и укажите её происхождение и права в обеих редакциях.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "У материала рубрики «Математики шутят» отсутствует фактическая обложка. Добавьте выбранную обложку и укажите её происхождение и права в обеих редакциях.",
         "en": "This “Mathematicians Joke” item has no actual cover. Add the selected cover and record its provenance and rights in both editions."
-      }
+      },
+      "resolution": "В обеих версиях добавлена согласованная редакцией обложка. https://github.com/Fuzzy-Technologies/history_math/pull/511#pullrequestreview-6045742197"
     },
     {
       "id": "original-publication-url",
       "question": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 05.05.2024; адрес нельзя восстанавливать предположительно.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 05.05.2024; адрес нельзя восстанавливать предположительно.",
         "en": "Provide a public link to the original publication confirming the date 05.05.2024; the address must not be guessed."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/511#pullrequestreview-6045742197"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/511#pullrequestreview-6045742197",
+    "source_commit": "0ab39f1cd556afb8700d689cc818a8d82ae2b2a2",
+    "source_review_id": 6045742197,
+    "approved_at": "2026-11-24T19:16:26Z",
+    "package_sha256": "e8979040214ac7f76771a2d803cb32634b9faf472ec17fe4ee66227cb689ca30"
   }
 }
