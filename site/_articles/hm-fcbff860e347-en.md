@@ -18,7 +18,7 @@ tags:
   - Hippocrates
   - lunes
 math: true
-status: draft
+status: published
 permalink: /publications/hm-fcbff860e347-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

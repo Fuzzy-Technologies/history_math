@@ -18,7 +18,7 @@ tags:
   - Гиппократ
   - луночки
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-fcbff860e347-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
