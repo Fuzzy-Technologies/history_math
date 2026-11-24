@@ -19,7 +19,7 @@ tags:
   - Менделеев
   - системы счисления
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-86d1740cccf7-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

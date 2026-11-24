@@ -19,7 +19,7 @@ tags:
   - Mendeleev
   - number systems
 math: true
-status: draft
+status: published
 permalink: /publications/hm-86d1740cccf7-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
