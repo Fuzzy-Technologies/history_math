@@ -17,7 +17,7 @@ tags:
   - Фибоначчи
   - кролики
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-c89eac9e8ba4-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

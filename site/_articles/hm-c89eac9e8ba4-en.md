@@ -17,7 +17,7 @@ tags:
   - Fibonacci
   - rabbits
 math: false
-status: draft
+status: published
 permalink: /publications/hm-c89eac9e8ba4-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
