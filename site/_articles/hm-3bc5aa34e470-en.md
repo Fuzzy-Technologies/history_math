@@ -37,6 +37,8 @@ figures:
     alt: Black-and-white portrait of a young man with a moustache wearing a suit
     caption: Georg Alexander Pick (1859–1942)
     source: "Wikimedia Commons, GeorgPick.png — scan from the Weierstrass Photo Album (1885), photographer from Prague: https://commons.wikimedia.org/wiki/File:GeorgPick.png"
+    credit: "Wikimedia Commons, GeorgPick.png — scan from the Weierstrass Photo Album (1885), photographer from Prague"
+    source_url: "https://commons.wikimedia.org/wiki/File:GeorgPick.png"
     rights_basis: Public domain (PD Old / Public Domain Mark 1.0; copyright term expired).
 preview_image: /assets/images/hm-3bc5aa34e470/figure-01.png
 cover_image: /assets/images/hm-3bc5aa34e470/figure-01.png

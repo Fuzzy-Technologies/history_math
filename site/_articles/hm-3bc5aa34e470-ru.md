@@ -37,6 +37,8 @@ figures:
     alt: Чёрно-белый портрет молодого мужчины с усами в костюме
     caption: Георг Александр Пик (1859–1942)
     source: "Wikimedia Commons, GeorgPick.png — скан из фотоальбома Вейерштрасса (1885), пражский фотограф: https://commons.wikimedia.org/wiki/File:GeorgPick.png"
+    credit: "Wikimedia Commons, GeorgPick.png — скан из фотоальбома Вейерштрасса (1885), пражский фотограф"
+    source_url: "https://commons.wikimedia.org/wiki/File:GeorgPick.png"
     rights_basis: Общественное достояние (PD Old / Public Domain Mark 1.0; срок охраны истёк).
 preview_image: /assets/images/hm-3bc5aa34e470/figure-01.png
 cover_image: /assets/images/hm-3bc5aa34e470/figure-01.png
