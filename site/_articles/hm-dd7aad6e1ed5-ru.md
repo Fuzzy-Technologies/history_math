@@ -25,8 +25,19 @@ original_publication:
   preserve_date: true
   url: https://t.me/history_math/170
 source_url: https://t.me/history_math/170
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-dd7aad6e1ed5/figure-01.png
+  alt: Два математика соревнуются, сравнивая числа π в степени e и e в степени π.
+  caption: ''
+  source: Иллюстрация редакции журнала, созданная с помощью ИИ.
+  credit: ''
+  rights_basis: Создано для журнала по поручению Тимура Гильмуллина, 2026.
+cover_image: /assets/images/hm-dd7aad6e1ed5/figure-01.png
+preview_image: /assets/images/hm-dd7aad6e1ed5/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 Сегодня математики шутят и соревнуются.
 
 Один математик — другому:<br>

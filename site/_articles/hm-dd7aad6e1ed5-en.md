@@ -25,8 +25,19 @@ original_publication:
   preserve_date: true
   url: https://t.me/history_math/170
 source_url: https://t.me/history_math/170
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-dd7aad6e1ed5/figure-01.png
+  alt: Two mathematicians compare pi to the power of e with e to the power of pi.
+  caption: ''
+  source: AI-generated illustration commissioned by the journal.
+  credit: ''
+  rights_basis: Created for the journal at the request of Timur Gilmullin in 2026.
+cover_image: /assets/images/hm-dd7aad6e1ed5/figure-01.png
+preview_image: /assets/images/hm-dd7aad6e1ed5/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 Today mathematicians are joking and competing.
 
 One mathematician says to another:<br>
