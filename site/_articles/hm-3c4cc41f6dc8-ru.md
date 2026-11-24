@@ -19,7 +19,7 @@ tags:
   - Кондратьев
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-3c4cc41f6dc8-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

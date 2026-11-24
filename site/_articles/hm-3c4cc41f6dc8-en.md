@@ -19,7 +19,7 @@ tags:
   - Kondratyev
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-3c4cc41f6dc8-en/
 rights_basis: Mansur Gilmullin
 original_publication:
