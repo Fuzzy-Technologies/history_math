@@ -19,7 +19,7 @@ tags:
   - Бесконечность
 series: Персоналии
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-28e45e7f3c7e-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

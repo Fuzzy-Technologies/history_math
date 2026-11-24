@@ -19,7 +19,7 @@ tags:
   - Infinity
 series: People
 math: true
-status: draft
+status: published
 permalink: /publications/hm-28e45e7f3c7e-en/
 rights_basis: Mansur Gilmullin
 original_publication:
