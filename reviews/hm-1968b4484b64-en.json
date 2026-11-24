@@ -25,7 +25,7 @@
     {
       "id": "fifth-postulate-history",
       "question": "Remove the categorical claim that the history of the fifth postulate ended with Lobachevsky’s discovery: acknowledge Bolyai’s independent work and the role of later models in establishing the relative consistency of non-Euclidean geometry.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Remove the categorical claim that the history of the fifth postulate ended with Lobachevsky’s discovery: acknowledge Bolyai’s independent work and the role of later models in establishing the relative consistency of non-Euclidean geometry.",
