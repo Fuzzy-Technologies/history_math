@@ -5,7 +5,7 @@
     {
       "id": "bulgaria-attribution-source",
       "question": "Please identify a specific Bulgarian problem collection or competition source supporting the explanation of the conventional title “A problem from Bulgaria”. If no such source is available, please remove or qualify that explanation in both editions; the author’s title itself should be preserved.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Please identify a specific Bulgarian problem collection or competition source supporting the explanation of the conventional title “A problem from Bulgaria”. If no such source is available, please remove or qualify that explanation in both editions; the author’s title itself should be preserved.",
