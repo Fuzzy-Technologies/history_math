@@ -16,15 +16,23 @@
     {
       "id": "q2",
       "question": "Для обеих гравюр Региомонтана указать фактическую атрибуцию: автора/издание или музейную карточку, публичный source_url и правовое основание использования. Для ретушированного варианта также зафиксировать происхождение исходника и характер ретуши; «иллюстрация к материалу» недостаточна.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для обеих гравюр Региомонтана указать фактическую атрибуцию: автора/издание или музейную карточку, публичный source_url и правовое основание использования. Для ретушированного варианта также зафиксировать происхождение исходника и характер ретуши; «иллюстрация к материалу» недостаточна.",
         "en": "For both engravings of Regiomontanus, provide factual attribution: the creator and edition or a museum record, a public source_url and the legal basis for use. For the retouched version, also record the source image and the nature of the retouch; “illustration accompanying the text” is insufficient."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/452#pullrequestreview-6040049983"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/452#pullrequestreview-6040049983",
+    "source_commit": "af73af9d21a185000437ac9dfedf733e1802ddfc",
+    "source_review_id": 6040049983,
+    "approved_at": "2026-11-24T13:29:43Z",
+    "package_sha256": "f3924877cca4137cd395f78c2757fdac70c8ea7ec7b10f7d52d61a542aed5251"
   }
 }
