@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Check the hypotheses in the statement about finite-dimensional commutative real algebras without zero divisors and the two possible conclusions.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Check the hypotheses in the statement about finite-dimensional commutative real algebras without zero divisors and the two possible conclusions.",
