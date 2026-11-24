@@ -19,7 +19,7 @@ tags:
   - Popularization
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-759beff1f02e-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

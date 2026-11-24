@@ -19,7 +19,7 @@ tags:
   - Популяризация
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-759beff1f02e-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
