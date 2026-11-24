@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6c76790b24b2",
+  "questions": [
+    {
+      "id": "cover-authorship-rights",
+      "question": "Для мультяшной обложки указать подтверждённого создателя и правообладателя, проверяемый публичный источник и правовое основание использования. Формулировки «Авторская иллюстрация» и «Иллюстрация к материалу» сами по себе этого не подтверждают.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для мультяшной обложки указать подтверждённого создателя и правообладателя, проверяемый публичный источник и правовое основание использования. Формулировки «Авторская иллюстрация» и «Иллюстрация к материалу» сами по себе этого не подтверждают.",
+        "en": "For the cartoon cover, identify the verified creator and rights holder, a verifiable public source, and the legal basis for use. “Author’s illustration” and “Illustration accompanying the text” do not establish these facts."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/665#pullrequestreview-6040273839"
+    },
+    {
+      "id": "zhukov-source-authorship",
+      "question": "Задача и разбор прямо приписаны А. В. Жукову («Квант», 1996; книга 2016), но корневые authors и rights_basis целиком приписывают материал Мансуру Гильмуллину. Отделить авторство исходной задачи и разбора Жукова от современной адаптации или редакции Мансура.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Задача и разбор прямо приписаны А. В. Жукову («Квант», 1996; книга 2016), но корневые authors и rights_basis целиком приписывают материал Мансуру Гильмуллину. Отделить авторство исходной задачи и разбора Жукова от современной адаптации или редакции Мансура.",
+        "en": "The problem and solution are explicitly attributed to A. V. Zhukov (Kvant, 1996; book edition, 2016), but the root authors and rights_basis attribute the material entirely to Mansur Gilmullin. Distinguish authorship of Zhukov’s source problem and solution from Mansur’s modern adaptation or editing."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/665#pullrequestreview-6040273839"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/665#pullrequestreview-6040273839",
+    "source_commit": "695e8ae552170f64f42c42c6c8fd3c720d7ea40d",
+    "source_review_id": 6040273839,
+    "approved_at": "2026-11-24T13:43:57Z",
+    "package_sha256": "871b4ed9ac8ef18d639ca9ca7faf9ec53d79d0a11c33674f8b2bbbc6ecb397de"
+  }
+}
