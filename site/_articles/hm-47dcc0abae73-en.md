@@ -20,7 +20,7 @@ tags:
   - Moscow State University
   - geometry
 math: false
-status: draft
+status: published
 permalink: /publications/hm-47dcc0abae73-en/
 rights_basis: Mansur Gilmullin
 original_publication:

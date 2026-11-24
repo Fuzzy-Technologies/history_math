@@ -20,7 +20,7 @@ tags:
   - МГУ
   - геометрия
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-47dcc0abae73-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
