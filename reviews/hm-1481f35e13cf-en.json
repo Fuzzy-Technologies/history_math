@@ -5,25 +5,34 @@
     {
       "id": "joke-cover",
       "question": "This “Mathematicians Joke” item has no actual cover. Add the selected cover and record its provenance and rights in both editions.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "This “Mathematicians Joke” item has no actual cover. Add the selected cover and record its provenance and rights in both editions.",
         "ru": "У материала рубрики «Математики шутят» отсутствует фактическая обложка. Добавьте выбранную обложку и укажите её происхождение и права в обеих редакциях."
-      }
+      },
+      "resolution": "Both editions include the editorially approved cover. https://github.com/Fuzzy-Technologies/history_math/pull/506#pullrequestreview-6045740916"
     },
     {
       "id": "source-authorship",
       "question": "Establish the joke’s primary source and authorship or identify this item as an adaptation; nearly identical wording appeared in the November 1999 issue of Hacker magazine: https://nzdr.ru/data/media/biblio/j/xak/1999/xa-1999-11-011.pdf. Do not credit Mansur Gilmullin as its author without evidence.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Establish the joke’s primary source and authorship or identify this item as an adaptation; nearly identical wording appeared in the November 1999 issue of Hacker magazine: https://nzdr.ru/data/media/biblio/j/xak/1999/xa-1999-11-011.pdf. Do not credit Mansur Gilmullin as its author without evidence.",
         "ru": "Установить первичный источник и авторство шутки либо обозначить материал как адаптацию; практически дословный текст опубликован в журнале «Хакер» в ноябре 1999 года: https://nzdr.ru/data/media/biblio/j/xak/1999/xa-1999-11-011.pdf. Не указывать Мансура Гильмуллина автором без подтверждения."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/506#pullrequestreview-6045740916"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/506#pullrequestreview-6045740916",
+    "source_commit": "d28070461b65374ba6cf3cea8d2ba2f5bbe4b828",
+    "source_review_id": 6045740916,
+    "approved_at": "2026-11-24T19:16:20Z",
+    "package_sha256": "c8ef91daf493a1f8d04c7c45f573422a9ab244bc774f98b77d5ccf055f7b0131"
   }
 }
