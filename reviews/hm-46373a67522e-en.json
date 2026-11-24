@@ -16,25 +16,34 @@
     {
       "id": "q2",
       "question": "The calendar outline has water every 70 years followed by an orphan 14. The 14 appears to be a lost reference number and is not treated as part of the period; seventy years is retained. Supply its source and approve the no-parallel claim for the subdivisions of the hour.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "The calendar outline has water every 70 years followed by an orphan 14. The 14 appears to be a lost reference number and is not treated as part of the period; seventy years is retained. Supply its source and approve the no-parallel claim for the subdivisions of the hour.",
         "ru": "В календарном перечне исходник содержит «Воды — каждые 70 лет 14». Отдельное 14 похоже на потерянный номер ссылки и не перенесено как часть периода; 70 лет сохранены. Нужны источник и решение об этой ссылке. Уточнить по изданию также безусловное утверждение об отсутствии аналогов деления часа."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/428#pullrequestreview-6040040705"
     },
     {
       "id": "q3",
       "question": "For the engraved depiction of Kirik of Novgorod, identify the artist or source work, a public source record and the licence or public-domain basis.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the engraved depiction of Kirik of Novgorod, identify the artist or source work, a public source record and the licence or public-domain basis.",
         "ru": "Для гравюрного изображения Кирика Новгородца указать автора или исходное произведение, публичный источник и лицензию либо основание общественного достояния."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/428#pullrequestreview-6040040705"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/428#pullrequestreview-6040040705",
+    "source_commit": "54861d428f6608313197073c5720cadb33036038",
+    "source_review_id": 6040040705,
+    "approved_at": "2026-11-24T13:29:09Z",
+    "package_sha256": "f90969ba1759a9f4647b7fa7a64b92f41e207c654439bf95ad1e067213e2853b"
   }
 }
