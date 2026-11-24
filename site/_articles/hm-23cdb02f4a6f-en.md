@@ -18,7 +18,7 @@ tags:
   - Relativity
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-23cdb02f4a6f-en/
 rights_basis: Mansur Gilmullin
 original_publication:

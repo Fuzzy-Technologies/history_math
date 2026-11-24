@@ -18,7 +18,7 @@ tags:
   - Теория относительности
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-23cdb02f4a6f-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

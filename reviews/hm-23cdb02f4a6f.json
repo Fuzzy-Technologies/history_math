@@ -27,15 +27,23 @@
     {
       "id": "q3",
       "question": "Для портрета Германа Минковского указать проверяемый публичный источник, автора или фотографа, дату и лицензию либо основание общественного достояния.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для портрета Германа Минковского указать проверяемый публичный источник, автора или фотографа, дату и лицензию либо основание общественного достояния.",
         "en": "For the portrait of Hermann Minkowski, provide a verifiable public source, the artist or photographer, the date, and the licence or public-domain basis."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/371#pullrequestreview-6039952191"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/371#pullrequestreview-6039952191",
+    "source_commit": "fe55c776971100b45e406b60b13cc207b595fb57",
+    "source_review_id": 6039952191,
+    "approved_at": "2026-11-24T13:23:22Z",
+    "package_sha256": "8c8a9d2436144429899f43a8a607dc2134e094f76e238f457cccb53c63c50e46"
   }
 }
