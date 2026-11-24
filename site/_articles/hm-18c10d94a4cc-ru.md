@@ -18,7 +18,7 @@ tags:
   - ЛГУ
   - Елабуга
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-18c10d94a4cc-ru/
 rights_basis: "Мансур Гильмуллин; Борис Долгов"
 original_publication:

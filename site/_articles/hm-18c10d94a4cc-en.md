@@ -18,7 +18,7 @@ tags:
   - Leningrad University
   - Yelabuga
 math: false
-status: draft
+status: published
 permalink: /publications/hm-18c10d94a4cc-en/
 rights_basis: "Mansur Gilmullin; Boris Dolgov"
 original_publication:
