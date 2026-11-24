@@ -21,7 +21,7 @@ tags:
   - Local History
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-7b122c90d8bd-en/
 rights_basis: Mansur Gilmullin
 original_publication:

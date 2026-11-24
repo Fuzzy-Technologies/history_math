@@ -21,7 +21,7 @@ tags:
   - Краеведение
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-7b122c90d8bd-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
