@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-857d344e7575-en",
+  "questions": [
+    {
+      "id": "khimichit-wordplay",
+      "question": "Please agree the English wordplay. Russian “khimichit” can mean doing chemistry or fiddling results, creating a joke across mathematics, physics and chemistry. “Cook up a result” preserves the suggestion of fabrication, but the chemistry reference is less explicit.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please agree the English wordplay. Russian “khimichit” can mean doing chemistry or fiddling results, creating a joke across mathematics, physics and chemistry. “Cook up a result” preserves the suggestion of fabrication, but the chemistry reference is less explicit.",
+        "ru": "В исходнике «химичить» означает и заниматься химией, и жульничать или подгонять результат; на столкновении математики, физики и химии построена развязка. В EN предложено “Mathematics isn’t physics, where you can cook up a result…”, сохраняющее намёк на фабрикацию, но химическое значение менее явное. Согласовать английскую игру слов перед публикацией."
+      },
+      "resolution": "“Cook up a result in the lab” carries the suggestion of fabrication and the laboratory setting into the English punchline."
+    },
+    {
+      "id": "humor-cover-image",
+      "question": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration.",
+        "ru": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации."
+      },
+      "resolution": "Both editions include the approved editorial cover. https://github.com/Fuzzy-Technologies/history_math/pull/488#pullrequestreview-6044624647"
+    },
+    {
+      "id": "original-authorship",
+      "question": "Confirm Mansur Gilmullin’s original authorship, or present the material as an anonymous adaptation with a public source and legal basis; the joke appeared in Kvant no. 1 (2022), which cites the book Mathematicians Joke Too: https://kvant.ras.ru/pdf/2022/2022-01.pdf.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Confirm Mansur Gilmullin’s original authorship, or present the material as an anonymous adaptation with a public source and legal basis; the joke appeared in Kvant no. 1 (2022), which cites the book Mathematicians Joke Too: https://kvant.ras.ru/pdf/2022/2022-01.pdf.",
+        "ru": "Подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как анонимную адаптацию с указанием публичного источника и правового основания; шутка опубликована в «Кванте» № 1 за 2022 год со ссылкой на книгу «Математики тоже шутят»: https://kvant.ras.ru/pdf/2022/2022-01.pdf."
+      },
+      "resolution": "The editorial decision accepts the current wording for publication. https://github.com/Fuzzy-Technologies/history_math/pull/488#pullrequestreview-6044624647"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/488#pullrequestreview-6044624647",
+    "source_commit": "72d8a14ffaa0fc1b3b5ccbdffbbecee8f175b448",
+    "source_review_id": 6044624647,
+    "approved_at": "2026-11-24T17:59:07Z",
+    "package_sha256": "dd64cf18d0e32a37c2e5447697fb4c19bb778758c0ff58b371745b0cb6f54735"
+  }
+}
