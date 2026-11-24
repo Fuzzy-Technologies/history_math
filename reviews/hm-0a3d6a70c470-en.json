@@ -5,12 +5,13 @@
     {
       "id": "q1",
       "question": "Approve the quoted subtitle “Professor of the History of Mathematics” as an informal description: the biography specifies a senior lecturer’s position, not a professorial title. The English subtitle keeps quotation marks and adds no academic degree.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Approve the quoted subtitle “Professor of the History of Mathematics” as an informal description: the biography specifies a senior lecturer’s position, not a professorial title. The English subtitle keeps quotation marks and adds no academic degree.",
         "ru": "Согласовать подзаголовок «профессор истории математики» как неформальную характеристику: в биографии указана должность старшего преподавателя, профессорское звание не заявлено. Английский подзаголовок сохраняет кавычки и не добавляет учёную степень."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/421#pullrequestreview-6040011339"
     },
     {
       "id": "q2",
@@ -26,15 +27,23 @@
     {
       "id": "image-provenance-rights",
       "question": "For the three photographs, provide the photographer/public source and legal basis in RU/EN; if the 2003 photographs are the article author’s own work, state this explicitly rather than replacing attribution with “illustration for the article”.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the three photographs, provide the photographer/public source and legal basis in RU/EN; if the 2003 photographs are the article author’s own work, state this explicitly rather than replacing attribution with “illustration for the article”.",
         "ru": "Для трёх фотографий указать фотографа/публичный источник и правовое основание в RU/EN; если снимки 2003 года авторские, зафиксировать это явно, не заменяя атрибуцию формулировкой «иллюстрация к материалу»."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/421#pullrequestreview-6040011339"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/421#pullrequestreview-6040011339",
+    "source_commit": "7fa2dec5988eb653a5c3202840dd6bc4f498d708",
+    "source_review_id": 6040011339,
+    "approved_at": "2026-11-24T13:27:24Z",
+    "package_sha256": "eb134a69a755a34aa9acb9631479841bafcdf6fdf5f70c21c72e7d4b23b9d7db"
   }
 }

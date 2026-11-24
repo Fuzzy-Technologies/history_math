@@ -5,12 +5,13 @@
     {
       "id": "q1",
       "question": "Согласовать подзаголовок «профессор истории математики» как неформальную характеристику: в биографии указана должность старшего преподавателя, профессорское звание не заявлено. Английский подзаголовок сохраняет кавычки и не добавляет учёную степень.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Согласовать подзаголовок «профессор истории математики» как неформальную характеристику: в биографии указана должность старшего преподавателя, профессорское звание не заявлено. Английский подзаголовок сохраняет кавычки и не добавляет учёную степень.",
         "en": "Approve the quoted subtitle “Professor of the History of Mathematics” as an informal description: the biography specifies a senior lecturer’s position, not a professorial title. The English subtitle keeps quotation marks and adds no academic degree."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/421#pullrequestreview-6040011339"
     },
     {
       "id": "q2",
@@ -26,15 +27,23 @@
     {
       "id": "image-provenance-rights",
       "question": "Для трёх фотографий указать фотографа/публичный источник и правовое основание в RU/EN; если снимки 2003 года авторские, зафиксировать это явно, не заменяя атрибуцию формулировкой «иллюстрация к материалу».",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для трёх фотографий указать фотографа/публичный источник и правовое основание в RU/EN; если снимки 2003 года авторские, зафиксировать это явно, не заменяя атрибуцию формулировкой «иллюстрация к материалу».",
         "en": "For the three photographs, provide the photographer/public source and legal basis in RU/EN; if the 2003 photographs are the article author’s own work, state this explicitly rather than replacing attribution with “illustration for the article”."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/421#pullrequestreview-6040011339"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/421#pullrequestreview-6040011339",
+    "source_commit": "7fa2dec5988eb653a5c3202840dd6bc4f498d708",
+    "source_review_id": 6040011339,
+    "approved_at": "2026-11-24T13:27:24Z",
+    "package_sha256": "0ba4a674a2d140789d7515f4fe754cabedda41720aa8aac228b0abf7d2b6d385"
   }
 }
