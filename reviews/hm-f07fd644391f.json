@@ -5,12 +5,13 @@
     {
       "id": "q1",
       "question": "Сверить 1936/1937 для степени кандидата технических наук и звания профессора: биография ИПМ и летопись МГУ дают 1936, президентская биография РАН — 1937. Источники: https://keldysh.ru/memory/keldysh/bio.htm ; https://www.letopis.msu.ru/peoples/8641 ; https://www.ras.ru/presidents/5ecea152-dae8-4146-b569-80499038fc40.aspx . До решения сохранён исходный 1937 в RU/EN.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Сверить 1936/1937 для степени кандидата технических наук и звания профессора: биография ИПМ и летопись МГУ дают 1936, президентская биография РАН — 1937. Источники: https://keldysh.ru/memory/keldysh/bio.htm ; https://www.letopis.msu.ru/peoples/8641 ; https://www.ras.ru/presidents/5ecea152-dae8-4146-b569-80499038fc40.aspx . До решения сохранён исходный 1937 в RU/EN.",
         "en": "Verify 1936 versus 1937 for the technical candidate degree and professorial title: the Keldysh Institute biography and MSU chronicle give 1936, while the Academy’s presidential biography gives 1937. Sources: https://keldysh.ru/memory/keldysh/bio.htm ; https://www.letopis.msu.ru/peoples/8641 ; https://www.ras.ru/presidents/5ecea152-dae8-4146-b569-80499038fc40.aspx . The source’s 1937 remains pending a decision."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/433#pullrequestreview-6045731584"
     },
     {
       "id": "q2",
@@ -26,25 +27,34 @@
     {
       "id": "q3",
       "question": "Нужны точная ссылка на воспоминание В. И. Арнольда и источник решения о копировании IBM-360 в конце 1966 года. Согласовать историческую оценку роли Келдыша и её причинно-следственные формулировки в RU/EN. Весь спорный фрагмент авторского текста сохранён в примечаниях.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Нужны точная ссылка на воспоминание В. И. Арнольда и источник решения о копировании IBM-360 в конце 1966 года. Согласовать историческую оценку роли Келдыша и её причинно-следственные формулировки в RU/EN. Весь спорный фрагмент авторского текста сохранён в примечаниях.",
         "en": "Supply the exact source of V. I. Arnold’s recollection and of the decision to copy IBM System/360 at the end of 1966. Approve the historical assessment of Keldysh’s role and the causal wording in both languages. The entire disputed authorial passage is retained in Notes."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/433#pullrequestreview-6045731584"
     },
     {
       "id": "q4",
       "question": "Для двух портретов М. В. Келдыша установить публичные источники, художников или фотографов и действительное правовое основание воспроизведения.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для двух портретов М. В. Келдыша установить публичные источники, художников или фотографов и действительное правовое основание воспроизведения.",
         "en": "For the two portraits of M. V. Keldysh, establish public sources, the artists or photographers, and a valid rights basis for reproduction."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/433#pullrequestreview-6045731584"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/433#pullrequestreview-6045731584",
+    "source_commit": "2e9665f8eddbe7f62ff76222303ad72f3562fbe0",
+    "source_review_id": 6045731584,
+    "approved_at": "2026-11-24T19:15:40Z",
+    "package_sha256": "4de7b468b8cc18f2e4681b3d2e50201e79fe07284b06a02230f56da7a153d292"
   }
 }
