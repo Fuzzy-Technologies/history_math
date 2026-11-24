@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-75a5660a830c",
+  "questions": [
+    {
+      "id": "editorial-cover-required",
+      "question": "Добавить фактическую обложку для карточки материала в рубрике «Математики шутят». Сейчас в пакете нет изображения.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Добавить фактическую обложку для карточки материала в рубрике «Математики шутят». Сейчас в пакете нет изображения.",
+        "en": "Add an actual cover image for the Mathematicians Joke card. The current package contains no image."
+      },
+      "resolution": "В обе версии добавлена утверждённая редакционная обложка. https://github.com/Fuzzy-Technologies/history_math/pull/492#pullrequestreview-6044629246"
+    },
+    {
+      "id": "source-date-authorship",
+      "question": "Указать публичный URL исходной публикации, подтвердить её дату и оригинальное авторство Мансура Гильмуллина либо оформить материал как анонимную адаптацию с правовым основанием.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Указать публичный URL исходной публикации, подтвердить её дату и оригинальное авторство Мансура Гильмуллина либо оформить материал как анонимную адаптацию с правовым основанием.",
+        "en": "Provide the public URL and date of the original publication and confirm Mansur Gilmullin’s original authorship, or present the material as an anonymous adaptation with a legal basis."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/492#pullrequestreview-6044629246"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/492#pullrequestreview-6044629246",
+    "source_commit": "80f7320ed4c17360bc4fecf77e6873dca1f913a2",
+    "source_review_id": 6044629246,
+    "approved_at": "2026-11-24T17:59:27Z",
+    "package_sha256": "649e7e54f5fd1d16bf833d80843dc83e175a624a92940a97ffc41eaa6198f252"
+  }
+}
