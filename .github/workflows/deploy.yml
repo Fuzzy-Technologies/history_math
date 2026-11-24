@@ -20,9 +20,9 @@ jobs:
       pages: read
       actions: read
     runs-on: ubuntu-24.04
-    # With 562 editions, the reference build and browser checks took over two
-    # hours before the configured domain, media verification and Pages upload.
-    timeout-minutes: 240
+    # At 928 editions the reference checks took 208 minutes and the four-hour
+    # job expired during the configured-domain build, before media and upload.
+    timeout-minutes: 360
     environment: history-math-storage
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
