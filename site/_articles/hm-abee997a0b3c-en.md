@@ -17,7 +17,7 @@ tags:
   - Da Vinci
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-abee997a0b3c-en/
 rights_basis: Mansur Gilmullin
 original_publication:

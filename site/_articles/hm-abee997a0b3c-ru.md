@@ -17,7 +17,7 @@ tags:
   - ДаВинчи
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-abee997a0b3c-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
