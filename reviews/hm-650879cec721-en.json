@@ -5,12 +5,13 @@
     {
       "id": "kant-images-attribution",
       "question": "For Kant’s engraving and the Russian-language infographic, identify separately the actual creator, public source and licence; for the infographic, also confirm the basis for the adaptation.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For Kant’s engraving and the Russian-language infographic, identify separately the actual creator, public source and licence; for the infographic, also confirm the basis for the adaptation.",
         "ru": "Для гравюры Канта и русскоязычной инфографики указать по отдельности реального создателя, публичный источник и лицензию; для инфографики также подтвердить основание адаптации."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/657#pullrequestreview-6040251790"
     },
     {
       "id": "kant-story-source",
@@ -25,6 +26,13 @@
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/657#pullrequestreview-6040251790",
+    "source_commit": "f6a3864944c9a511e5793b5bb9e4d104cf67e8a3",
+    "source_review_id": 6040251790,
+    "approved_at": "2026-11-24T13:42:41Z",
+    "package_sha256": "83e85a17c8fe9bf972c24b8a543b837009e25a82d2b71703d92131fba58b41c0"
   }
 }
