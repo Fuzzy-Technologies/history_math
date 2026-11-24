@@ -16,7 +16,7 @@ tags:
   - Математики шутят
   - Дирихле
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-2753c54acafe-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

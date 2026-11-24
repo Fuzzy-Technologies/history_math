@@ -16,7 +16,7 @@ tags:
   - Mathematicians Joke
   - Dirichlet
 math: true
-status: draft
+status: published
 permalink: /publications/hm-2753c54acafe-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
