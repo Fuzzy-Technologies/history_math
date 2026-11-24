@@ -16,25 +16,34 @@
     {
       "id": "q2",
       "question": "Verify sources for the 1964 competition and the counts of works, postgraduate students, translations and print runs. English titles of the Russian books are descriptive; confirm the established title of Mathematical Treasure Chest.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Verify sources for the 1964 competition and the counts of works, postgraduate students, translations and print runs. English titles of the Russian books are descriptive; confirm the established title of Mathematical Treasure Chest.",
         "ru": "Уточнить источник результатов конкурса 1964 года и количественных данных о трудах, аспирантах, переводах и тиражах. Английские названия русских книг переданы описательно; подтвердить принятое название «Математической шкатулки»."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/384#pullrequestreview-6039960435"
     },
     {
       "id": "q3",
       "question": "Identify the actual public source, creator and legal status of the portrait of F. F. Nagibin; for the cover of A Mathematical Treasure Chest, record the specific edition, publisher and confirmed basis for reproduction. Archival storage does not imply authorship by Mansur Gilmullin.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Identify the actual public source, creator and legal status of the portrait of F. F. Nagibin; for the cover of A Mathematical Treasure Chest, record the specific edition, publisher and confirmed basis for reproduction. Archival storage does not imply authorship by Mansur Gilmullin.",
         "ru": "Установить реальный публичный первоисточник, автора и правовой статус портрета Ф. Ф. Нагибина; для обложки «Математической шкатулки» указать конкретное издание, издателя и подтверждённое основание воспроизведения. Архивное хранение не означает авторство Мансура Гильмуллина."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/384#pullrequestreview-6039960435"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/384#pullrequestreview-6039960435",
+    "source_commit": "66ff0405bd7c3422387f0a108c2606720bd4c5fc",
+    "source_review_id": 6039960435,
+    "approved_at": "2026-11-24T13:23:56Z",
+    "package_sha256": "ade992961e52f101250540e74059d9728b0f5a5d028f344d66fd7433b49cc305"
   }
 }
