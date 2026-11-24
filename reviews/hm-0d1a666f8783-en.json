@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0d1a666f8783-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "For the portrait of Carl Friedrich Gauss, identify the source work and its artist, a public source record and the licence or public-domain basis; holding a copy in the author’s archive does not establish authorship of a third-party historical image.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "For the portrait of Carl Friedrich Gauss, identify the source work and its artist, a public source record and the licence or public-domain basis; holding a copy in the author’s archive does not establish authorship of a third-party historical image.",
+        "ru": "Для портрета Карла Фридриха Гаусса указать исходное произведение и его автора, публичный источник и лицензию либо основание общественного достояния; наличие копии в авторском архиве не подтверждает авторство исторического изображения третьего лица."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/329#pullrequestreview-6039911088"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/329#pullrequestreview-6039911088",
+    "source_commit": "df4d9f10059e17578083939a3578c8231b2100a7",
+    "source_review_id": 6039911088,
+    "approved_at": "2026-11-24T13:20:28Z",
+    "package_sha256": "01b9b51bf2630c17c6aac78acf2a3f9e770eea35ae0eb35b6b3df61236d8509d"
+  }
+}
