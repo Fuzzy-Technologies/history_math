@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6a3b55929447",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Укажите проверяемый первоисточник портрета Лагранжа, художника и дату создания (если известны), а также лицензию либо подтверждённый статус общественного достояния; авторство текста не распространяется на стороннее изображение.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Укажите проверяемый первоисточник портрета Лагранжа, художника и дату создания (если известны), а также лицензию либо подтверждённый статус общественного достояния; авторство текста не распространяется на стороннее изображение.",
+        "en": "Provide a verifiable source for the portrait of Lagrange, identify the artist and date where known, and document the licence or confirmed public-domain status; authorship of the text does not extend to a third-party image."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/342#pullrequestreview-6039926794"
+    },
+    {
+      "id": "numerical-equations-publication-date",
+      "question": "Уточнить, означает ли дата 1767 год публикации работы «О решении численных уравнений».",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Уточнено: работа предназначалась для тома академии за 1767 год, но опубликована в 1769 году. Источник: https://archive.numdam.org/articles/10.24033/rhm.69/",
+      "localizations": {
+        "source": "Уточнить, означает ли дата 1767 год публикации работы «О решении численных уравнений».",
+        "en": "Clarify whether 1767 is the publication year of “On the Solution of Numerical Equations”."
+      }
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/342#pullrequestreview-6039926794",
+    "source_commit": "5ecf9a1ff331302782088bc5711438109f15370b",
+    "source_review_id": 6039926794,
+    "approved_at": "2026-11-24T13:21:34Z",
+    "package_sha256": "4363f8996700a6f1e8c2bbe1166058ae7afa773d98e13fde66111051505fa901"
+  }
+}
