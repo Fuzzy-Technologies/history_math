@@ -5,25 +5,34 @@
     {
       "id": "future-publication-date",
       "question": "Confirm the original publication date 2026-11-24 and a public link after the material is actually published. As of 8 November 2026 this date is still in the future, so the PR remains Draft.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Confirm the original publication date 2026-11-24 and a public link after the material is actually published. As of 8 November 2026 this date is still in the future, so the PR remains Draft.",
         "ru": "Подтвердить исходную дату 2026-11-24 и публичную ссылку после фактического выхода материала. На 08.11.2026 эта дата ещё не наступила, поэтому PR остаётся Draft."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/475#pullrequestreview-6040077558"
     },
     {
       "id": "filichev-portraits-provenance",
       "question": "For both portraits, including the retouched version, identify the original source or creator and a valid rights basis; credit the original separately from the retouching.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For both portraits, including the retouched version, identify the original source or creator and a valid rights basis; credit the original separately from the retouching.",
         "ru": "Для обоих портретов, включая ретушированный, укажите исходный источник или создателя и действительное правовое основание; кредит оригинала отделите от сведений о ретуши."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/475#pullrequestreview-6040077558"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/475#pullrequestreview-6040077558",
+    "source_commit": "7de101a903ffc777eb4a2cc9477e549ee8a39271",
+    "source_review_id": 6040077558,
+    "approved_at": "2026-11-24T13:31:29Z",
+    "package_sha256": "e208311d4f3bcfa15bbdf8494fd777b51aaed12c650b065bf5eccb9d16a039ca"
   }
 }
