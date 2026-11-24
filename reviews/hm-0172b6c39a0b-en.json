@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0172b6c39a0b-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "For the portrait of N. G. Chebotaryov and the autobiography scan, establish public sources, creators or holding institutions, and a valid rights basis for reproduction; holding copies in the author’s archive does not establish authorship of these materials.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "For the portrait of N. G. Chebotaryov and the autobiography scan, establish public sources, creators or holding institutions, and a valid rights basis for reproduction; holding copies in the author’s archive does not establish authorship of these materials.",
+        "ru": "Для портрета Н. Г. Чеботарёва и скана автобиографии установить публичные источники, авторов или архивные учреждения и действительное правовое основание воспроизведения; наличие копий в авторском архиве не подтверждает авторство этих материалов."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/326#pullrequestreview-6039903676"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/326#pullrequestreview-6039903676",
+    "source_commit": "f765f58aa9518690ac98df803bbe60cc6e50790c",
+    "source_review_id": 6039903676,
+    "approved_at": "2026-11-24T13:19:57Z",
+    "package_sha256": "878c3d4b459f90b5e9589f351576b7f5a968642b99403bb1178622e23b33a238"
+  }
+}
