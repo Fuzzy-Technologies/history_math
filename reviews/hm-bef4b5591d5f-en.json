@@ -5,32 +5,35 @@
     {
       "id": "q1",
       "question": "Verify the bibliographic details of the 1941 Russian edition of Dynamical Systems and the designation of the 1999 reissue as a second edition; review the claim about the field’s development after the book appeared.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Verify the bibliographic details of the 1941 Russian edition of Dynamical Systems and the designation of the 1999 reissue as a second edition; review the claim about the field’s development after the book appeared.",
         "ru": "Сверить выходные данные русского издания «Динамических систем» 1941 года и обозначение переиздания 1999 года как второго; согласовать формулировку о становлении направления после выхода книги."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/392#pullrequestreview-6045724295"
     },
     {
       "id": "q2",
       "question": "For the historical portrait of George David Birkhoff, identify a public original source, the photographer or creator where known, and a confirmed legal basis for publication. Authorship of the article and possession of a copy do not grant rights in a third-party photograph.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the historical portrait of George David Birkhoff, identify a public original source, the photographer or creator where known, and a confirmed legal basis for publication. Authorship of the article and possession of a copy do not grant rights in a third-party photograph.",
         "ru": "Для исторического портрета Джорджа Биркгофа установить публичный первоисточник, фотографа или автора при наличии и подтверждённое правовое основание публикации. Авторство текста и хранение копии в архиве не дают прав на стороннюю фотографию."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/392#pullrequestreview-6045724295"
     },
     {
       "id": "q3",
       "question": "Correct the definition of a dynamical system: it is a state space together with a law of evolution in time, not a set of elements with a relationship between time and the position of each element.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Correct the definition of a dynamical system: it is a state space together with a law of evolution in time, not a set of elements with a relationship between time and the position of each element.",
         "ru": "Исправить определение динамической системы: это пространство состояний вместе с законом эволюции во времени, а не множество элементов с зависимостью между временем и положением каждого элемента."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/392#pullrequestreview-6045724295"
     },
     {
       "id": "q4",
@@ -45,6 +48,13 @@
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/392#pullrequestreview-6045724295",
+    "source_commit": "c6332811922f375680e850cfd190984d0d22a314",
+    "source_review_id": 6045724295,
+    "approved_at": "2026-11-24T19:15:08Z",
+    "package_sha256": "549a4aecbacde2e484ff1d15481e6bd2432b7bcf5a8fda1d0b9f79932fca4fd0"
   }
 }

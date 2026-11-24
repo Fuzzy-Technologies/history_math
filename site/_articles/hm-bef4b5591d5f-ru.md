@@ -21,7 +21,7 @@ tags:
   - Аксиомы Биркгофа
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-bef4b5591d5f-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

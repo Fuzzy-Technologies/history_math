@@ -21,7 +21,7 @@ tags:
   - Birkhoff’s Axioms
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-bef4b5591d5f-en/
 rights_basis: Mansur Gilmullin
 original_publication:
