@@ -22,8 +22,19 @@ original_publication:
   outlet: Telegram · history_math
   date: '2023-12-10'
   preserve_date: true
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-0a6e125b5bdb/figure-01.png
+  alt: Трое обсуждают следы и стрелки, огибающие каменную колонну.
+  caption: ''
+  source: Иллюстрация редакции журнала, созданная с помощью ИИ.
+  credit: ''
+  rights_basis: Создано для журнала по поручению Тимура Гильмуллина, 2026.
+cover_image: /assets/images/hm-0a6e125b5bdb/figure-01.png
+preview_image: /assets/images/hm-0a6e125b5bdb/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 Всё просто: попросите его обойти столб кругом. Если спросит: «Зачем?» — значит, физик. Если спросит: «По или против часовой стрелки?» — значит, математик.
 
 Математики шутят, а если серьёзно: вы бы как обошли?
