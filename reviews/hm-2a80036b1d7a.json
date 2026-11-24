@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2a80036b1d7a",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить рамки утверждения о первой в мире женщине-профессоре математики, формы обучения в Гейдельберге и Берлине и историческое название стокгольмского учреждения.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Уточнено: Ковалевская стала первой женщиной-профессором в Швеции и обычно называется второй в мире женщиной-профессором математики; формы обучения и историческое название стокгольмского учреждения также уточнены.",
+      "localizations": {
+        "source": "Уточнить рамки утверждения о первой в мире женщине-профессоре математики, формы обучения в Гейдельберге и Берлине и историческое название стокгольмского учреждения.",
+        "en": "Clarify the scope of the claim that she was the world’s first woman professor of mathematics, the forms of study in Heidelberg and Berlin and the historical name of the Stockholm institution."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Сверить даты написания и публикации литературных произведений и принятые английские названия, особенно «Нигилистки» и «Борьбы за счастье»; подтвердить источник эпизода об уходе за ранеными коммунарами в Париже.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Сверить даты написания и публикации литературных произведений и принятые английские названия, особенно «Нигилистки» и «Борьбы за счастье»; подтвердить источник эпизода об уходе за ранеными коммунарами в Париже.",
+        "en": "Check the composition and publication dates and established English titles of the literary works, especially A Nihilist Girl and The Struggle for Happiness; confirm a source for the episode about caring for wounded Communards in Paris."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/353#pullrequestreview-6039968241"
+    },
+    {
+      "id": "q3",
+      "question": "Установить реальный публичный источник портрета Софьи Ковалевской, фотографа/автора (если известен) и правовой статус изображения; синхронизировать метаданные RU/EN.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Установить реальный публичный источник портрета Софьи Ковалевской, фотографа/автора (если известен) и правовой статус изображения; синхронизировать метаданные RU/EN.",
+        "en": "Establish the actual public source of the portrait of Sofia Kovalevskaya, the photographer or creator (if known) and the image’s legal status; keep the RU and EN metadata synchronized."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/353#pullrequestreview-6039968241"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/353#pullrequestreview-6039968241",
+    "source_commit": "ac066fdf3bbe41e64da8e0e742c3723825ff9b8d",
+    "source_review_id": 6039968241,
+    "approved_at": "2026-11-24T13:24:29Z",
+    "package_sha256": "70f0d47ca23938af614a558f18bfa767a596d60d194c44fc84ae0deb9a1088f5"
+  }
+}
