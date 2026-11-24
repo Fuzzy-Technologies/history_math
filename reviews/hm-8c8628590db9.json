@@ -5,25 +5,34 @@
     {
       "id": "parallel-rovno-translation",
       "question": "Английская адаптация слова «ровно» в тексте принята: сохранено русское rovno, а значения exactly и evenly/straight объяснены после развязки. Однако общая обложка содержит русские реплики и слово «ровно», поэтому для EN-версии нужна английская обложка либо явное редакторское принятие русскоязычного изображения.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Английская адаптация слова «ровно» в тексте принята: сохранено русское rovno, а значения exactly и evenly/straight объяснены после развязки. Однако общая обложка содержит русские реплики и слово «ровно», поэтому для EN-версии нужна английская обложка либо явное редакторское принятие русскоязычного изображения.",
         "en": "The English adaptation of rovno in the prose is accepted: the Russian word is retained and its meanings exactly and evenly/straight are explained after the punchline. However, the shared cover contains Russian dialogue and the word «ровно», so the English edition needs an English cover or an explicit editorial acceptance of the Russian-language image."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/598#pullrequestreview-6040158191"
     },
     {
       "id": "source-authorship-adaptation",
       "question": "Отделить исходный текст и авторство Федина/Anekdot.ru от адаптации Мансура и синхронизировать атрибуцию в обеих редакциях и review JSON.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Отделить исходный текст и авторство Федина/Anekdot.ru от адаптации Мансура и синхронизировать атрибуцию в обеих редакциях и review JSON.",
         "en": "Distinguish the source text and authorship credited to Fedin/Anekdot.ru from Mansur's adaptation, and synchronize the attribution in both editions and review JSON files."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/598#pullrequestreview-6040158191"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/598#pullrequestreview-6040158191",
+    "source_commit": "bb1fc3012e068e96bf7a3a8a8d828d1a580c0e1c",
+    "source_review_id": 6040158191,
+    "approved_at": "2026-11-24T13:36:55Z",
+    "package_sha256": "52f19bf1ca9d5758f4bad92b6a114674249f58edf02fe4f0b358a20c73a8590f"
   }
 }
