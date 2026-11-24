@@ -5,35 +5,45 @@
     {
       "id": "missing-humor-cover",
       "question": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
         "ru": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку."
-      }
+      },
+      "resolution": "Both editions include the editorially approved cover. https://github.com/Fuzzy-Technologies/history_math/pull/513#pullrequestreview-6045742669"
     },
     {
       "id": "dedekind-quotation-source",
       "question": "Provide the exact source and bibliographic locator for Dedekind’s quotation: the Russian edition closely matches a passage in Yu. V. Pukhnachev and Yu. P. Popov’s Mathematics Without Formulas. Either cite the source or recast the story as an anecdotal retelling without documentary direct speech; keep RU/EN synchronized.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Provide the exact source and bibliographic locator for Dedekind’s quotation: the Russian edition closely matches a passage in Yu. V. Pukhnachev and Yu. P. Popov’s Mathematics Without Formulas. Either cite the source or recast the story as an anecdotal retelling without documentary direct speech; keep RU/EN synchronized.",
         "ru": "Нужен точный источник и библиографический локатор для цитаты Дедекинда: русская редакция почти дословно совпадает с фрагментом книги Ю. В. Пухначёва и Ю. П. Попова «Математика без формул». Укажите источник либо оформите сюжет как пересказ анекдота без документальной прямой речи; синхронизируйте RU/EN."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/513#pullrequestreview-6045742669"
     },
     {
       "id": "original-publication-url",
       "question": "Provide a public link to the original publication confirming the date 19.05.2024; the address must not be guessed.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Provide a public link to the original publication confirming the date 19.05.2024; the address must not be guessed.",
         "ru": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 19.05.2024; адрес нельзя восстанавливать предположительно."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/513#pullrequestreview-6045742669"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/513#pullrequestreview-6045742669",
+    "source_commit": "a189a7d7ad285ce752382090da54f5b87d28b0b2",
+    "source_review_id": 6045742669,
+    "approved_at": "2026-11-24T19:16:28Z",
+    "package_sha256": "04425442270748ab2535d4aca7aa0670f250abd4d9a6621b45ed361154a2369d"
   }
 }

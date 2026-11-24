@@ -16,7 +16,7 @@ tags:
   - Дедекинд
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-ce9eca7757d0-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

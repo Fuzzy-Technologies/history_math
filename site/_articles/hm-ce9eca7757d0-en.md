@@ -16,7 +16,7 @@ tags:
   - Dedekind
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-ce9eca7757d0-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
