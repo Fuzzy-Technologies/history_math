@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-4822f24cc698",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить учреждения и даты кафедр: исходник относит математику 1850 года и механику 1857 года к Коллеж де Франс; проверить, не относится ли механика к другому учреждению.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Уточнено: кафедра математики относилась к Коллеж де Франс (1850), кафедра механики — к факультету наук Парижского университета (1857).",
+      "localizations": {
+        "source": "Уточнить учреждения и даты кафедр: исходник относит математику 1850 года и механику 1857 года к Коллеж де Франс; проверить, не относится ли механика к другому учреждению.",
+        "en": "Verify the institutions and dates of the chairs: the source assigns mathematics in 1850 and mechanics in 1857 to the Collège de France; check whether the mechanics appointment was at a different institution."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Для специального уравнения Риккати вида y′ + ay² = bxᵐ привести в обеих редакциях проверенный перечень значений показателя m, соответствующих случаям интегрируемости, ранее найденным Даниилом Бернулли. Сверить нормировку и перечень с работой Лиувилля 1841 года: https://www.numdam.org/item/JMPA_1841_1_6__1_0.pdf .",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для специального уравнения Риккати вида y′ + ay² = bxᵐ привести в обеих редакциях проверенный перечень значений показателя m, соответствующих случаям интегрируемости, ранее найденным Даниилом Бернулли. Сверить нормировку и перечень с работой Лиувилля 1841 года: https://www.numdam.org/item/JMPA_1841_1_6__1_0.pdf .",
+        "en": "For the special Riccati equation y′ + ay² = bxᵐ, provide in both editions a verified list of the exponent values m corresponding to the integrable cases previously found by Daniel Bernoulli. Check the normalization and list against Liouville’s 1841 paper: https://www.numdam.org/item/JMPA_1841_1_6__1_0.pdf ."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/370#pullrequestreview-6039968407"
+    },
+    {
+      "id": "q3",
+      "question": "Для портрета Жозефа Лиувилля указать проверяемый публичный источник, автора или фотографа, дату и лицензию либо основание общественного достояния.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для портрета Жозефа Лиувилля указать проверяемый публичный источник, автора или фотографа, дату и лицензию либо основание общественного достояния.",
+        "en": "For the portrait of Joseph Liouville, provide a verifiable public source, the artist or photographer, the date, and the licence or public-domain basis."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/370#pullrequestreview-6039968407"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/370#pullrequestreview-6039968407",
+    "source_commit": "4c953d46d2dba549aa1c0a267eff24ed71a24ab4",
+    "source_review_id": 6039968407,
+    "approved_at": "2026-11-24T13:24:29Z",
+    "package_sha256": "04c60177182fb683a09dfb90f8f247905cba6f07e8f6c3f96064c6f1914532d3"
+  }
+}
