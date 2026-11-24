@@ -5,15 +5,23 @@
     {
       "id": "q1",
       "question": "For the two portraits of I. G. Bashmakova, identify public sources, photographers or holding institutions, and a valid rights basis for reproduction; unconfirmed source and permission are insufficient for publication.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the two portraits of I. G. Bashmakova, identify public sources, photographers or holding institutions, and a valid rights basis for reproduction; unconfirmed source and permission are insufficient for publication.",
         "ru": "Для двух портретов И. Г. Башмаковой указать публичные источники, фотографов или учреждения и действительное правовое основание воспроизведения; неподтверждённый источник и разрешение не позволяют публиковать изображения."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/431#pullrequestreview-6040021563"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/431#pullrequestreview-6040021563",
+    "source_commit": "9ced3241238c6d127a3593d585eb421199de2d8b",
+    "source_review_id": 6040021563,
+    "approved_at": "2026-11-24T13:28:00Z",
+    "package_sha256": "e3c900f1da74a7c92a4b1ecd3f3b0eeafb2d264c70de1617f7d542c8ba927482"
   }
 }

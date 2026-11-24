@@ -17,7 +17,7 @@ tags:
   - Bashmakova
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-9e91cb14f85a-en/
 rights_basis: Mansur Gilmullin
 original_publication:

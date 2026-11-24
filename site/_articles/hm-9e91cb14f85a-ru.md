@@ -17,7 +17,7 @@ tags:
   - Башмакова
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-9e91cb14f85a-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
