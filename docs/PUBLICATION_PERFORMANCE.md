@@ -1,16 +1,10 @@
 # Publication performance
 
-## Article-only checks
+## Automated checks
 
-`publication-plan.mjs` allows the light path only for article Markdown, images in a known article's directory (including generated previews), its review/image manifests and non-executable documentation. Shared illustrations, templates, styles, scripts, plugins, new pages/sections, dependencies and unknown files require full checks. Missing comparison history or an unavailable Actions API also requires full checks. Manual publication runs always request full checks.
+Source CI runs two parallel jobs with five-minute timeouts. Article packages retain Markdown, schema, approval and image checks. Code and template changes also run the non-visual unit suites. Browser and rendered-image regression tests are paused for every automatic and manual workflow run.
 
-PR checks compare with the PR base. Master publication compares with the most recent **successful deployment** of `deploy.yml` on `master`, rather than the immediately preceding commit. An unpublished layout change therefore remains subject to browser checks even if the next push contains only an article. Only successful ancestor revisions qualify.
-
-The comparison verifies successful `build` and `deploy` jobs in the latest attempt of a completed master publication. A later cleanup failure or cancellation does not undo that deployment and must not restart the full browser gate for the next article. Failed or skipped deployments never qualify. The lookup examines at most 30 recent completed publication runs; unavailable, malformed or incomplete history retains the full gate.
-
-Every content publication retains Markdown, schema, editorial approval/digest and image metadata/hash checks, the configured Pages Jekyll build, incremental PDF generation, and standard-library output validation. It does not rebuild the separate reference site or run unrelated unit/browser suites. Chromium is still installed as the existing PDF rendering engine; this is not a browser regression run. PDF format, generation and storage are unchanged.
-
-Code/layout publications additionally run the full source, rendering and browser contracts, including the reference project path and configured Pages domain. Feature PRs still do not render websites or generate PDFs. The first publication of this pipeline change itself uses the full gate.
+Master publication builds the configured production site once. It generates PDFs with Chromium, publishes media, and checks the final URLs, indexes and upload size before deploying Pages. Production rendering and storage transfers have separate time budgets.
 
 ## Home and reading room
 
