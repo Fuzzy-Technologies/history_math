@@ -18,7 +18,7 @@ tags:
   - фольклор
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-8f06fede13d9-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

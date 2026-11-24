@@ -18,7 +18,7 @@ tags:
   - folklore
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-8f06fede13d9-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
