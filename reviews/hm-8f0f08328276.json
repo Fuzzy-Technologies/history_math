@@ -5,7 +5,7 @@
     {
       "id": "faculty-title",
       "question": "Проверить название должности и подразделения Клейна: архив Гёттингена фиксирует его избрание деканом Philosophische Fakultät, а не математического факультета.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Проверить название должности и подразделения Клейна: архив Гёттингена фиксирует его избрание деканом Philosophische Fakultät, а не математического факультета.",
@@ -27,7 +27,7 @@
     {
       "id": "classification-anecdote-attribution",
       "question": "Установить происхождение анекдота и его атрибуцию.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Установить происхождение анекдота и его атрибуцию.",
