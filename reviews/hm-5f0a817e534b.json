@@ -12,11 +12,19 @@
     {
       "id": "q2",
       "question": "Подтвердить происхождение портрета и книжной иллюстрации и основание воспроизведения трёх архивных изображений.",
-      "blocking": true,
-      "state": "open"
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/320#pullrequestreview-6039895429"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/320#pullrequestreview-6039895429",
+    "source_commit": "edf09da00b9851892cd07d08a83a15509efb1c46",
+    "source_review_id": 6039895429,
+    "approved_at": "2026-11-24T13:19:22Z",
+    "package_sha256": "bb35a72e55eab79e1bf330d8a8d1eaf170eef6896d7334e72d3a2a53abb55a05"
   }
 }

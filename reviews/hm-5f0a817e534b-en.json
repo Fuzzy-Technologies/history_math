@@ -16,15 +16,23 @@
     {
       "id": "q2",
       "question": "Confirm the portrait’s and book illustration’s provenance and the basis for reproducing all three archival images.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Confirm the portrait’s and book illustration’s provenance and the basis for reproducing all three archival images.",
         "ru": "Подтвердить происхождение портрета и книжной иллюстрации и основание воспроизведения трёх архивных изображений."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/320#pullrequestreview-6039895429"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/320#pullrequestreview-6039895429",
+    "source_commit": "edf09da00b9851892cd07d08a83a15509efb1c46",
+    "source_review_id": 6039895429,
+    "approved_at": "2026-11-24T13:19:22Z",
+    "package_sha256": "cc51bb0d6f88de719d8369c9c71ffe1760dbc1e471cbbb2fe2147db5d68ed27c"
   }
 }
