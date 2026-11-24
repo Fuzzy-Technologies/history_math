@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Identify which South Pole is intended in the claim about determining geographical coordinates: the geographical or magnetic pole. Verify the precise observational results and the scope of the priority claims.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Identify which South Pole is intended in the claim about determining geographical coordinates: the geographical or magnetic pole. Verify the precise observational results and the scope of the priority claims.",
