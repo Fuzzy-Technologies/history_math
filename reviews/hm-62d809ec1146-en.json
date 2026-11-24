@@ -5,7 +5,9 @@
     {
       "id": "q1",
       "question": "Supply the co-authors and publication details of Electricity in Living Organisms so the edition is unambiguous. Mathematics with a Human Face is retained as an essay, not invented as a separate monograph; the publisher’s Gelfand memorial volume includes Glagoleva’s text under that title.",
-      "blocking": true,
+      "id": "q1",
+      "question": "Supply the co-authors and publication details of Electricity in Living Organisms so the edition is unambiguous. Mathematics with a Human Face is retained as an essay, not invented as a separate monograph; the publisher’s Gelfand memorial volume includes Glagoleva’s text under that title.",
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Supply the co-authors and publication details of Electricity in Living Organisms so the edition is unambiguous. Mathematics with a Human Face is retained as an essay, not invented as a separate monograph; the publisher’s Gelfand memorial volume includes Glagoleva’s text under that title.",
@@ -16,7 +18,9 @@
     {
       "id": "q2",
       "question": "Verify the exact name and institutional relationship of the successor named in the post, the Open Lyceum All-Russian Correspondence Multidisciplinary School. The linked memoir dates from 2016, so today needs a clear historical reference. Preserve the historical detail and original date unless the editor approves an update.",
-      "blocking": true,
+      "id": "q2",
+      "question": "Verify the exact name and institutional relationship of the successor named in the post, the Open Lyceum All-Russian Correspondence Multidisciplinary School. The linked memoir dates from 2016, so today needs a clear historical reference. Preserve the historical detail and original date unless the editor approves an update.",
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify the exact name and institutional relationship of the successor named in the post, the Open Lyceum All-Russian Correspondence Multidisciplinary School. The linked memoir dates from 2016, so today needs a clear historical reference. Preserve the historical detail and original date unless the editor approves an update.",
