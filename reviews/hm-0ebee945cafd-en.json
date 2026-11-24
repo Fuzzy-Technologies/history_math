@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0ebee945cafd-en",
+  "questions": [
+    {
+      "id": "future-publication-date",
+      "question": "Confirm the source date 2026-12-29: as of 7 November 2026 the Telegram publication had not yet appeared.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Confirm the source date 2026-12-29: as of 7 November 2026 the Telegram publication had not yet appeared.",
+        "ru": "Подтвердить исходную дату 2026-12-29: на 07.11.2026 публикация в Telegram ещё не состоялась."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/480#pullrequestreview-6043459492"
+    },
+    {
+      "id": "portrait-provenance",
+      "question": "Both historical portraits of Thomas Stieltjes need their actual sources and creators where known, plus a confirmed rights basis; the wording “illustration accompanying the text” does not establish provenance.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Both historical portraits of Thomas Stieltjes need their actual sources and creators where known, plus a confirmed rights basis; the wording “illustration accompanying the text” does not establish provenance.",
+        "ru": "Для обоих исторических портретов Томаса Стилтьеса нужны фактические источники и авторы, где они известны, а также подтверждённое правовое основание; формулировка «Иллюстрация к материалу» этого не устанавливает."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/480#pullrequestreview-6043459492"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/480#pullrequestreview-6043459492",
+    "source_commit": "340aa23f9d055415595611b45bb35f4dd955b11c",
+    "source_review_id": 6043459492,
+    "approved_at": "2026-11-24T16:41:37Z",
+    "package_sha256": "a173884bb6ae41ba816a6f8ee43edcd5fc35531f3e0adb9486efb010ae573947"
+  }
+}
