@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c2af2a7d7002-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Provide a verifiable source and exact edition for the quotation attributed to Kepler about astrology.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Provide a verifiable source and exact edition for the quotation attributed to Kepler about astrology.",
+        "ru": "Указать проверяемый источник и точную редакцию приведённой цитаты Кеплера об астрологии."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/336#pullrequestreview-6039918863"
+    },
+    {
+      "id": "q2",
+      "question": "Provide publicly verifiable original sources, authorship and legal basis for reproducing the portrait of Johannes Kepler and the engraving of the Kepler cup model.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Provide publicly verifiable original sources, authorship and legal basis for reproducing the portrait of Johannes Kepler and the engraving of the Kepler cup model.",
+        "ru": "Указать публично проверяемые первоисточники, авторство и правовое основание воспроизведения портрета Иоганна Кеплера и гравюры модели «кубка Кеплера»."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/336#pullrequestreview-6039918863"
+    },
+    {
+      "id": "indivisibles-anachronism",
+      "question": "Correct the anachronistic phrase “Archimedes’ method of indivisibles”: Kepler used his own infinitesimal reasoning inspired by ancient solid geometry, while the systematic method of indivisibles is associated with Cavalieri’s later work.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Correct the anachronistic phrase “Archimedes’ method of indivisibles”: Kepler used his own infinitesimal reasoning inspired by ancient solid geometry, while the systematic method of indivisibles is associated with Cavalieri’s later work.",
+        "ru": "Исправить анахронизм «метод неделимых Архимеда»: Кеплер использовал собственные инфинитезимальные рассуждения, вдохновлённые античной стереометрией; систематический метод неделимых связан с более поздней работой Кавальери."
+      },
+      "resolution": "The anachronism was removed: the wording distinguishes Kepler’s infinitesimal reasoning from Cavalieri’s later systematic method."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/336#pullrequestreview-6039918863",
+    "source_commit": "9f44b5a613cdbf60a0216c81e2faa83a41b08789",
+    "source_review_id": 6039918863,
+    "approved_at": "2026-11-24T13:21:00Z",
+    "package_sha256": "411b0a167e12e12b77cb2ebfff6e9892b24697b372703a31ceccd4d1e5fe2665"
+  }
+}
