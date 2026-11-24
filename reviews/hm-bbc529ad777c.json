@@ -5,12 +5,13 @@
     {
       "id": "q1",
       "question": "Уточнить год рождения Ферма и дату 17 августа 1601 года в заголовке и тексте по выбранному биографическому источнику.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Уточнить год рождения Ферма и дату 17 августа 1601 года в заголовке и тексте по выбранному биографическому источнику.",
         "en": "Verify Fermat’s birth year and the date 17 August 1601 used in the heading and text against the selected biographical source."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/332#pullrequestreview-6045718176"
     },
     {
       "id": "q2",
@@ -48,15 +49,23 @@
     {
       "id": "q4",
       "question": "Указать публично проверяемый первоисточник, автора и правовое основание воспроизведения цветного портрета Пьера де Ферма.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Указать публично проверяемый первоисточник, автора и правовое основание воспроизведения цветного портрета Пьера де Ферма.",
         "en": "Provide a publicly verifiable original source, creator and legal basis for reproducing the colour portrait of Pierre de Fermat."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/332#pullrequestreview-6045718176"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/332#pullrequestreview-6045718176",
+    "source_commit": "9f1618e8d895c519be23f5595e8fced49fd5f9be",
+    "source_review_id": 6045718176,
+    "approved_at": "2026-11-24T19:14:44Z",
+    "package_sha256": "4bf94873b4c86992d529679c4e31113206a990b749c8e0bf88f53d9352c034ae"
   }
 }

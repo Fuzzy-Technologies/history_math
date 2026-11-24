@@ -5,12 +5,13 @@
     {
       "id": "q1",
       "question": "Verify Fermat’s birth year and the date 17 August 1601 used in the heading and text against the selected biographical source.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Verify Fermat’s birth year and the date 17 August 1601 used in the heading and text against the selected biographical source.",
         "ru": "Уточнить год рождения Ферма и дату 17 августа 1601 года в заголовке и тексте по выбранному биографическому источнику."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/332#pullrequestreview-6045718176"
     },
     {
       "id": "q2",
@@ -48,15 +49,23 @@
     {
       "id": "q4",
       "question": "Provide a publicly verifiable original source, creator and legal basis for reproducing the colour portrait of Pierre de Fermat.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Provide a publicly verifiable original source, creator and legal basis for reproducing the colour portrait of Pierre de Fermat.",
         "ru": "Указать публично проверяемый первоисточник, автора и правовое основание воспроизведения цветного портрета Пьера де Ферма."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/332#pullrequestreview-6045718176"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/332#pullrequestreview-6045718176",
+    "source_commit": "9f1618e8d895c519be23f5595e8fced49fd5f9be",
+    "source_review_id": 6045718176,
+    "approved_at": "2026-11-24T19:14:44Z",
+    "package_sha256": "f075fdc117584240b6b3b424b01cd4fdca2571b3c86bb9adcebf2bcd69324fdb"
   }
 }

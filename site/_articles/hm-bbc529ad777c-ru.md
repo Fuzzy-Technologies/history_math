@@ -16,7 +16,7 @@ tags:
   - Ферма
 series: Персоналии
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-bbc529ad777c-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

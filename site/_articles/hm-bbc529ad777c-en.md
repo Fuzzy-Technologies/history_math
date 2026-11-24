@@ -16,7 +16,7 @@ tags:
   - Fermat
 series: People
 math: true
-status: draft
+status: published
 permalink: /publications/hm-bbc529ad777c-en/
 rights_basis: Mansur Gilmullin
 original_publication:
