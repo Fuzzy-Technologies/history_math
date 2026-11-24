@@ -27,22 +27,24 @@
     {
       "id": "q3",
       "question": "Establish the primary source of the engraved portrait of Niccolò Tartaglia, its artist or engraver and date (if known), and the licence or verified public-domain status.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Establish the primary source of the engraved portrait of Niccolò Tartaglia, its artist or engraver and date (if known), and the licence or verified public-domain status.",
         "ru": "Установить первоисточник гравированного портрета Никколо Тартальи, автора или гравёра и дату (если известны), а также лицензию либо подтверждённый статус общественного достояния."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/360#pullrequestreview-6045721309"
     },
     {
       "id": "q4",
       "question": "Clarify which forms of the cubic equation Tartaglia independently solved in 1535 and which had earlier been solved by del Ferro; wording that he “rediscovered methods already known” should not conflate priority and distinct equation forms.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Clarify which forms of the cubic equation Tartaglia independently solved in 1535 and which had earlier been solved by del Ferro; wording that he “rediscovered methods already known” should not conflate priority and distinct equation forms.",
         "ru": "Уточнить, какие именно формы кубического уравнения независимо решил Тарталья в 1535 году и какие ранее решил дель Ферро; формулировка «переоткрыл известные приёмы» не должна смешивать приоритеты и разные формы уравнения."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/360#pullrequestreview-6045721309"
     },
     {
       "id": "q5",
@@ -57,6 +59,13 @@
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/360#pullrequestreview-6045721309",
+    "source_commit": "7d1d48ec02095aaa4da9384e9637d08add923585",
+    "source_review_id": 6045721309,
+    "approved_at": "2026-11-24T19:14:56Z",
+    "package_sha256": "d087d3ce9f1fc88d76fcc2ee6deef78ffbff899e940fc7ac8f57f1f1664573d3"
   }
 }
