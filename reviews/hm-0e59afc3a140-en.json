@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0e59afc3a140-en",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration.",
+        "ru": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации."
+      },
+      "resolution": "Both editions include the approved editorial cover. https://github.com/Fuzzy-Technologies/history_math/pull/487#pullrequestreview-6044623290"
+    },
+    {
+      "id": "original-authorship",
+      "question": "Confirm Mansur Gilmullin’s original authorship of this joke, or present it as an anonymous adaptation citing a public source where the exact phrase was used no later than 2016.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Confirm Mansur Gilmullin’s original authorship of this joke, or present it as an anonymous adaptation citing a public source where the exact phrase was used no later than 2016.",
+        "ru": "Подтвердить оригинальное авторство Мансура Гильмуллина для этой шутки либо оформить материал как анонимную адаптацию с указанием публичного источника, где точная фраза использовалась не позднее 2016 года."
+      },
+      "resolution": "The editorial decision accepts the current wording for publication. https://github.com/Fuzzy-Technologies/history_math/pull/487#pullrequestreview-6044623290"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/487#pullrequestreview-6044623290",
+    "source_commit": "54fa881a18dfa5794a702092d8d91b0143960195",
+    "source_review_id": 6044623290,
+    "approved_at": "2026-11-24T17:59:02Z",
+    "package_sha256": "efef17fd20b5541535afb1f7a27fb438dc7cd3a41c02a31980f15cce31f17254"
+  }
+}
