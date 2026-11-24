@@ -17,7 +17,7 @@ tags:
   - ноль
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-2fba977e5a60-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

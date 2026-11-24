@@ -17,7 +17,7 @@ tags:
   - zero
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-2fba977e5a60-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
