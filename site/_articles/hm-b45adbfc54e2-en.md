@@ -17,7 +17,7 @@ tags:
   - Erdős
   - coffee theorem
 math: false
-status: draft
+status: published
 permalink: /publications/hm-b45adbfc54e2-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

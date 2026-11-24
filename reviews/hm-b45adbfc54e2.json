@@ -5,25 +5,34 @@
     {
       "id": "erdos-coffee-quotation-pages",
       "question": "Уточнить страницы в Paul Hoffman «The Man Who Loved Only Numbers» для реплик о жизни и смерти, математике-противоядии и «кофе-теореме». Страница издателя https://www.hachettebookgroup.com/titles/paul-hoffman/the-man-who-loved-only-numbers/9780306836565/ подтверждает книгу и автора; конкретные цитаты по ней не установлены. Исходная оговорка о приписывании последней фразы другим математикам сохранена, как и обозначение шутливой легенды. Решить, требуется ли уточнить атрибуцию.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Уточнить страницы в Paul Hoffman «The Man Who Loved Only Numbers» для реплик о жизни и смерти, математике-противоядии и «кофе-теореме». Страница издателя https://www.hachettebookgroup.com/titles/paul-hoffman/the-man-who-loved-only-numbers/9780306836565/ подтверждает книгу и автора; конкретные цитаты по ней не установлены. Исходная оговорка о приписывании последней фразы другим математикам сохранена, как и обозначение шутливой легенды. Решить, требуется ли уточнить атрибуцию.",
         "en": "Please identify the pages in Paul Hoffman’s The Man Who Loved Only Numbers for the remarks about life and death, mathematics as an antidote, and the coffee theorem. The publisher page https://www.hachettebookgroup.com/titles/paul-hoffman/the-man-who-loved-only-numbers/9780306836565/ confirms the book and author, but not the specific quotations. The source’s caveat that the last remark has also been attributed to other mathematicians is retained, as is its humorous-legend wording. Please decide whether the attribution needs clarification."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/565#pullrequestreview-6040113992"
     },
     {
       "id": "cover-illustration-provenance",
       "question": "Для обложки укажите создателя или иллюстратора, правообладателя, проверяемый публичный источник и правовое основание использования. Формулировка «из авторского архива» описывает хранение, но не подтверждает авторство или лицензию.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для обложки укажите создателя или иллюстратора, правообладателя, проверяемый публичный источник и правовое основание использования. Формулировка «из авторского архива» описывает хранение, но не подтверждает авторство или лицензию.",
         "en": "For the cover illustration, identify the creator or illustrator, the rightsholder, a verifiable public source, and the legal basis for use. “From the author’s archive” describes custody but does not establish authorship or a licence."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/565#pullrequestreview-6040113992"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/565#pullrequestreview-6040113992",
+    "source_commit": "6dbe03f9a79c3d6d312a60026d5986236525d7b2",
+    "source_review_id": 6040113992,
+    "approved_at": "2026-11-24T13:33:54Z",
+    "package_sha256": "067b2134a2301d36ebbc178f2a7b2fe377541b77f04cbfa4652eb5d03a35568d"
   }
 }

@@ -17,7 +17,7 @@ tags:
   - Эрдёш
   - кофе-теорема
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-b45adbfc54e2-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
