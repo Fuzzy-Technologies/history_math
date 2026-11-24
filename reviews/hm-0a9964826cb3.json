@@ -15,7 +15,7 @@
     {
       "id": "cauchy-anecdote-details",
       "question": "Уточнить личность ученика, место и содержание теоремы в анекдоте о Коши.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Уточнить личность ученика, место и содержание теоремы в анекдоте о Коши.",

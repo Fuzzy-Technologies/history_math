@@ -15,7 +15,7 @@
     {
       "id": "cauchy-anecdote-details",
       "question": "Clarify the pupil’s identity, the setting and the theorem in the Cauchy anecdote.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Clarify the pupil’s identity, the setting and the theorem in the Cauchy anecdote.",
