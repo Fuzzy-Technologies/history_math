@@ -18,7 +18,7 @@ tags:
   - девичья хитрость
   - логика
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-83c3a849bbea-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

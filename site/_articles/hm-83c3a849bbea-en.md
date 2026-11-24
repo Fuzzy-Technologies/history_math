@@ -18,7 +18,7 @@ tags:
   - clever girls
   - logic
 math: false
-status: draft
+status: published
 permalink: /publications/hm-83c3a849bbea-en/
 rights_basis: Mansur Gilmullin
 original_publication:
