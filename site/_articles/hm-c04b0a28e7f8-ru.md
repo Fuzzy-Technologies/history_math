@@ -19,7 +19,7 @@ tags:
   - Тарантино
 series: Математики шутят
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-c04b0a28e7f8-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

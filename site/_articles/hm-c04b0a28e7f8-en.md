@@ -19,7 +19,7 @@ tags:
   - Tarantino
 series: Mathematicians Joke
 math: true
-status: draft
+status: published
 permalink: /publications/hm-c04b0a28e7f8-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
