@@ -38,15 +38,23 @@
     {
       "id": "q4",
       "question": "Для трёх изображений И. Г. Петровского установить публичные источники, авторов или учреждения и действительное правовое основание воспроизведения.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для трёх изображений И. Г. Петровского установить публичные источники, авторов или учреждения и действительное правовое основание воспроизведения.",
         "en": "For the three images of I. G. Petrovsky, establish public sources, creators or holding institutions, and a valid rights basis for reproduction."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/434#pullrequestreview-6040031667"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/434#pullrequestreview-6040031667",
+    "source_commit": "18373272fc6b0be1c015d1ba1f87ad2284cbe9ed",
+    "source_review_id": 6040031667,
+    "approved_at": "2026-11-24T13:28:34Z",
+    "package_sha256": "6fd01700c382e6733ff386dc2363cd01b0658602760dba7e6ec908cb6f3a722e"
   }
 }
