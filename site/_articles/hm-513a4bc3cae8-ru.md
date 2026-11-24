@@ -18,7 +18,7 @@ tags:
   - Алгебра
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-513a4bc3cae8-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

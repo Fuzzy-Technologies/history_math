@@ -18,7 +18,7 @@ tags:
   - Algebra
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-513a4bc3cae8-en/
 rights_basis: Mansur Gilmullin
 original_publication:

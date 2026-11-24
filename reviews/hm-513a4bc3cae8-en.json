@@ -5,15 +5,23 @@
     {
       "id": "cardano-images-provenance",
       "question": "For all three images of Cardano, including the historical engraved portrait, identify the actual creator or collection or a public source and a valid rights basis or license for each image; do not present a third-party portrait as an author-created image.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For all three images of Cardano, including the historical engraved portrait, identify the actual creator or collection or a public source and a valid rights basis or license for each image; do not present a third-party portrait as an author-created image.",
         "ru": "Для всех трёх изображений Кардано, включая исторический гравированный портрет, укажите фактического автора или собрание либо публичный источник и действительное правовое основание или лицензию для каждого изображения; не оформляйте сторонний портрет как авторский."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/467#pullrequestreview-6040067622"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/467#pullrequestreview-6040067622",
+    "source_commit": "c8dbf9c13d6edff40fbcabc678d6ce170c17686d",
+    "source_review_id": 6040067622,
+    "approved_at": "2026-11-24T13:30:52Z",
+    "package_sha256": "7a0874d277a60f40e6190e4e5fbbf0fff5d21b700c4950def75b219fd0de3366"
   }
 }
