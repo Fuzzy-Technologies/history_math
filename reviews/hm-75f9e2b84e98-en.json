@@ -38,25 +38,34 @@
     {
       "id": "q4",
       "question": "The historical portrait of Kagan is identified only as an illustration accompanying the text. Establish a verifiable source, the creator or photographer where known, its date, and a licence or other confirmed basis for use in both editions.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "The historical portrait of Kagan is identified only as an illustration accompanying the text. Establish a verifiable source, the creator or photographer where known, its date, and a licence or other confirmed basis for use in both editions.",
         "ru": "Для исторического портрета Кагана указано только «Иллюстрация к материалу». Установить проверяемый первоисточник, автора или фотографа (если известен), дату и лицензию либо иное подтверждённое основание использования в обеих редакциях."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/374#pullrequestreview-6045722345"
     },
     {
       "id": "journal-editorial-chronology",
       "question": "Correct the beginning of Kagan’s editorial work at the Bulletin of Experimental Physics and Elementary Mathematics: from issue 301 in 1901 he co-edited it with V. A. Zimmermann, and from issue 363 in 1904 he headed it; the current date 1902 is inaccurate.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Correct the beginning of Kagan’s editorial work at the Bulletin of Experimental Physics and Elementary Mathematics: from issue 301 in 1901 he co-edited it with V. A. Zimmermann, and from issue 363 in 1904 he headed it; the current date 1902 is inaccurate.",
         "ru": "Уточнить начало редакторской работы Кагана в «Вестнике опытной физики и элементарной математики»: с № 301 за 1901 год он редактировал журнал вместе с В. А. Циммерманом, а с № 363 за 1904 год возглавил его; нынешняя дата 1902 требует исправления."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/374#pullrequestreview-6045722345"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/374#pullrequestreview-6045722345",
+    "source_commit": "26fda6d1ebca25a06d6302792a1756299fb958a4",
+    "source_review_id": 6045722345,
+    "approved_at": "2026-11-24T19:15:00Z",
+    "package_sha256": "2c6a4f66cfb60f70f723303f2dd8d0496823940cc50436f1411a9cadeef0e55e"
   }
 }
