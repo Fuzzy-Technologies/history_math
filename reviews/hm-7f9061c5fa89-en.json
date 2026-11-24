@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "The source places Soltaniyeh in present-day Azerbaijan, while [UNESCO](https://whc.unesco.org/en/list/1188/) places the city in Iran. Proposed wording: “Soltaniyeh, Persia (now Iran)”, with the corresponding Russian correction. Agree the geographical wording.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "The source places Soltaniyeh in present-day Azerbaijan, while [UNESCO](https://whc.unesco.org/en/list/1188/) places the city in Iran. Proposed wording: “Soltaniyeh, Persia (now Iran)”, with the corresponding Russian correction. Agree the geographical wording.",
@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "Check Shahrukh’s transfer of power, the observatory date and instrument type—quadrant or sextant—the destruction chronology, and the absolute claims about the last major scholar and every European observatory.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Check Shahrukh’s transfer of power, the observatory date and instrument type—quadrant or sextant—the destruction chronology, and the absolute claims about the last major scholar and every European observatory.",
