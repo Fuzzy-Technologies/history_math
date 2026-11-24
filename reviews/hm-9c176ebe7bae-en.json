@@ -5,7 +5,7 @@
     {
       "id": "folding-construction-completeness",
       "question": "The source explains the angle bisector, altitude and median, but gives no completed answers for the perpendicular bisector, incentre or circumcentre. Please retain those as independent exercises or supply confirmed author solutions. Also clarify the initial fold “along BC”: for an already cut-out triangle, BC is a paper edge.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "The source explains the angle bisector, altitude and median, but gives no completed answers for the perpendicular bisector, incentre or circumcentre. Please retain those as independent exercises or supply confirmed author solutions. Also clarify the initial fold “along BC”: for an already cut-out triangle, BC is a paper edge.",
@@ -16,7 +16,7 @@
     {
       "id": "folding-blinkov-link-availability",
       "question": "Verify the link to Blinkov’s article. If it is unavailable, replace it with a confirmed public URL.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify the link to Blinkov’s article. If it is unavailable, replace it with a confirmed public URL.",
