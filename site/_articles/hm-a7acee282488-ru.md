@@ -16,7 +16,7 @@ tags:
   - Ампер
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-a7acee282488-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
