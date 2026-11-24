@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ac934b45c802-en",
+  "questions": [
+    {
+      "id": "rachinsky-common-count-division",
+      "question": "Please clarify two steps. The sum 1/500+1/1500+1/3500=31/10500 is not itself 3,100 versts: it must be multiplied by the common numerical count N. Thus N·31/10500=3100 and N=3100÷(31/10500)=1050000. The source instead writes 3100÷10500/31=1050000 without the necessary grouping. Please agree a correction; the source operators and correct final distances remain in the draft.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please clarify two steps. The sum 1/500+1/1500+1/3500=31/10500 is not itself 3,100 versts: it must be multiplied by the common numerical count N. Thus N·31/10500=3100 and N=3100÷(31/10500)=1050000. The source instead writes 3100÷10500/31=1050000 without the necessary grouping. Please agree a correction; the source operators and correct final distances remain in the draft.",
+        "ru": "Уточнить два шага решения в обеих версиях. Сумма 1/500+1/1500+1/3500=31/10500 сама по себе не равна 3100 вёрстам: на неё умножается общий числовой счёт N. Должно быть N·31/10500=3100 и N=3100:(31/10500)=1050000. В источнике записано «3100 : 10500 / 31 = 1050000» без нужных скобок. Согласовать исправление; исходные операторы и все правильные конечные расстояния 2100, 700, 300 сохранены в Draft."
+      },
+      "resolution": "The derivation now defines the common count N, states N·31/10500=3100 and computes N=3100÷(31/10500)=1,050,000 before deriving the three distances."
+    },
+    {
+      "id": "rachinsky-edition-attribution",
+      "question": "Correct the description of the 1899 book: the shown title page and bibliographic details identify the third corrected edition, so it must not be described as the original edition. Update RU and EN consistently.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Both versions now identify the 1899 book as the third corrected edition.",
+      "localizations": {
+        "source": "Correct the description of the 1899 book: the shown title page and bibliographic details identify the third corrected edition, so it must not be described as the original edition. Update RU and EN consistently.",
+        "ru": "Уточнить описание книги 1899 года: показанный титульный лист и библиографические сведения относятся к третьему исправленному изданию, поэтому называть его оригинальным изданием нельзя. Синхронно исправить RU и EN."
+      }
+    },
+    {
+      "id": "image-provenance-rights",
+      "question": "Clarify the provenance and rights for both illustrations: confirm Mansur Gilmullin’s authorship claimed in the fig-1 caption, and for the scan of Rachinsky’s 1899 edition provide the exact public source and a licence or other legal basis for reproduction.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Clarify the provenance and rights for both illustrations: confirm Mansur Gilmullin’s authorship claimed in the fig-1 caption, and for the scan of Rachinsky’s 1899 edition provide the exact public source and a licence or other legal basis for reproduction.",
+        "ru": "Уточнить происхождение и права обеих иллюстраций: для fig-1 подтвердить авторство Мансура Гильмуллина, заявленное в подписи, а для скана издания Рачинского 1899 года дать точный публичный источник и лицензию либо иное правовое основание воспроизведения."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/663#pullrequestreview-6040263691"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/663#pullrequestreview-6040263691",
+    "source_commit": "b2bd0a409c70565cbb91e52b534db9dd321968dd",
+    "source_review_id": 6040263691,
+    "approved_at": "2026-11-24T13:43:21Z",
+    "package_sha256": "92e28ba42922c2409a696f93f0e4aeec24ce68ed34209d346a3f10313e0eeeac"
+  }
+}
