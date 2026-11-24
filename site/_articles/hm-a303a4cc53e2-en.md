@@ -18,7 +18,7 @@ tags:
   - Mathematical Analysis
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-a303a4cc53e2-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

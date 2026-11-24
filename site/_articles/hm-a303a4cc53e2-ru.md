@@ -18,7 +18,7 @@ tags:
   - Математический анализ
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-a303a4cc53e2-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
