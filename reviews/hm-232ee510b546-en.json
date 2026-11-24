@@ -25,7 +25,7 @@
     {
       "id": "voytyakhovsky-life-dates",
       "question": "Clarify Yefim D. Voytyakhovsky’s life dates. The Russian State Library and National Electronic Library catalogues give “?–c. 1812”, so the unsupported exact dates 1742–1812 should not remain. Provide a reliable biographical source or use a consistently qualified formulation in both editions.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Clarify Yefim D. Voytyakhovsky’s life dates. The Russian State Library and National Electronic Library catalogues give “?–c. 1812”, so the unsupported exact dates 1742–1812 should not remain. Provide a reliable biographical source or use a consistently qualified formulation in both editions.",
