@@ -15,7 +15,7 @@
     {
       "id": "perelman-awards-distinction",
       "question": "Distinguish the two events in the opening paragraph: Perelman declined the Fields Medal in 2006; in 2010, the one million dollars was the monetary award attached to the Clay Mathematics Institute’s Millennium Prize, which he declined. Keep RU/EN synchronized. Sources: https://www.claymath.org/library/annual_report/ar2010/ar2010.pdf and https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2006",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "resolution": "The opening paragraph was corrected in RU/EN to separate the declined 2006 Fields Medal from the declined monetary award of the 2010 Millennium Prize.",
       "localizations": {

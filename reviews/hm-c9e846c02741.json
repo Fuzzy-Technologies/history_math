@@ -15,7 +15,7 @@
     {
       "id": "perelman-awards-distinction",
       "question": "Развести в первом абзаце два события: в 2006 году Перельман отказался от медали Филдса; в 2010 году миллион долларов был денежной частью Премии тысячелетия Математического института Клэя, от выплаты которой он отказался. Синхронизировать RU/EN. Источники: https://www.claymath.org/library/annual_report/ar2010/ar2010.pdf и https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2006",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "resolution": "Первый абзац исправлен в RU/EN: отказ от медали Филдса в 2006 году отделён от отказа от денежной части Премии тысячелетия в 2010 году.",
       "localizations": {
