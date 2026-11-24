@@ -15,7 +15,7 @@
     {
       "id": "q2",
       "question": "Clarify the conference count and numbering: the 2003 school was the First Kolmogorov Readings in a school format; the 2004–2015 meetings were the Second through Thirteenth Readings.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Clarify the conference count and numbering: the 2003 school was the First Kolmogorov Readings in a school format; the 2004–2015 meetings were the Second through Thirteenth Readings.",
