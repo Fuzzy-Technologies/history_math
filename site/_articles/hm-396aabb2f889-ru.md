@@ -16,7 +16,7 @@ tags:
   - Математики шутят
   - Гильберт
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-396aabb2f889-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

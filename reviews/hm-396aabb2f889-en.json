@@ -5,25 +5,34 @@
     {
       "id": "hilbert-anecdote-source",
       "question": "Establish the source and authorship of the Hilbert anecdote or identify this item as an adaptation of a circulating anecdote. Merely identifying the genre does not establish authorship; do not credit Mansur Gilmullin as its author without evidence.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Establish the source and authorship of the Hilbert anecdote or identify this item as an adaptation of a circulating anecdote. Merely identifying the genre does not establish authorship; do not credit Mansur Gilmullin as its author without evidence.",
         "ru": "Установить источник и авторство анекдота о Гильберте либо обозначить материал как адаптацию распространённого анекдота. Само указание жанра не подтверждает авторство; не указывать Мансура Гильмуллина автором без подтверждения."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/500#pullrequestreview-6045739143"
     },
     {
       "id": "joke-cover",
       "question": "The package has no actual cover for the joke card: figures is empty and the image manifest is empty. Add a suitable cover and reference it in both editions without changing the existing captions or text.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "The package has no actual cover for the joke card: figures is empty and the image manifest is empty. Add a suitable cover and reference it in both editions without changing the existing captions or text.",
         "ru": "В пакете отсутствует фактическая обложка для карточки шутки: список figures и манифест изображений пусты. Добавьте подходящую обложку и подключите её в обеих редакциях, не изменяя существующие подписи и текст."
-      }
+      },
+      "resolution": "Both editions include the editorially approved cover. https://github.com/Fuzzy-Technologies/history_math/pull/500#pullrequestreview-6045739143"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/500#pullrequestreview-6045739143",
+    "source_commit": "e1555493669fe247c1a28a8e293d1f58ef90f09d",
+    "source_review_id": 6045739143,
+    "approved_at": "2026-11-24T19:16:13Z",
+    "package_sha256": "32071a2cd02289c8a588c4b10d47a50e64cd9ee65cb4fcb88ddaf667396ae2d5"
   }
 }

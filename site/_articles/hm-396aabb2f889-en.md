@@ -16,7 +16,7 @@ tags:
   - Mathematicians Joke
   - Hilbert
 math: false
-status: draft
+status: published
 permalink: /publications/hm-396aabb2f889-en/
 rights_basis: Mansur Gilmullin
 original_publication:
