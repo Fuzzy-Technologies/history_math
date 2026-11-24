@@ -19,7 +19,7 @@ tags:
   - Дидактика математики
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-266c70dbb5cf-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

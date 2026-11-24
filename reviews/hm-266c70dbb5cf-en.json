@@ -5,25 +5,34 @@
     {
       "id": "q1",
       "question": "Clarify the scope of the claim that this was the first university course in mathematics teaching methods.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Clarify the scope of the claim that this was the first university course in mathematics teaching methods.",
         "ru": "Уточнить область приоритета утверждения о «первом университетском курсе методики математики»."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/394#pullrequestreview-6039993292"
     },
     {
       "id": "q2",
       "question": "Establish the actual sources, photographer or publisher where known, and a verified basis for reproducing the portrait of N. V. Metelsky and the publisher’s cover of Didactics of Mathematics; keeping copies in the author’s archive does not make third-party images author-created.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Establish the actual sources, photographer or publisher where known, and a verified basis for reproducing the portrait of N. V. Metelsky and the publisher’s cover of Didactics of Mathematics; keeping copies in the author’s archive does not make third-party images author-created.",
         "ru": "Установить для портрета Н. В. Метельского и издательской обложки «Дидактики математики» реальные первоисточники, фотографа/издателя при наличии и подтверждённое основание воспроизведения; хранение копий в авторском архиве не делает сторонние изображения авторскими."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/394#pullrequestreview-6039993292"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/394#pullrequestreview-6039993292",
+    "source_commit": "30861825a21accba10c0b25dda7448ed0cedef80",
+    "source_review_id": 6039993292,
+    "approved_at": "2026-11-24T13:26:12Z",
+    "package_sha256": "fcc4799add1d5eb0aeeae2c3a7048f62c8e847a8a26fa94164d19c95c0729a79"
   }
 }

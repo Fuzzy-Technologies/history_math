@@ -19,7 +19,7 @@ tags:
   - Mathematics Education
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-266c70dbb5cf-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
