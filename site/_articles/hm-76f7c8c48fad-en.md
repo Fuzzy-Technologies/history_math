@@ -16,7 +16,7 @@ tags:
   - Mathematicians Joke
   - Geometry
 math: true
-status: draft
+status: published
 permalink: /publications/hm-76f7c8c48fad-en/
 rights_basis: Mansur Gilmullin
 original_publication:

@@ -5,25 +5,34 @@
     {
       "id": "editorial-cover-required",
       "question": "Добавить фактическую обложку для карточки материала в рубрике «Математики шутят». Сейчас в пакете нет изображения.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "Добавить фактическую обложку для карточки материала в рубрике «Математики шутят». Сейчас в пакете нет изображения.",
         "en": "Add an actual cover image for the Mathematicians Joke card. The current package contains no image."
-      }
+      },
+      "resolution": "В обе версии добавлена утверждённая редакционная обложка. https://github.com/Fuzzy-Technologies/history_math/pull/491#pullrequestreview-6044628054"
     },
     {
       "id": "source-authorship-wordplay",
       "question": "Указать публичный URL исходной публикации и подтвердить оригинальное авторство либо оформить анонимную адаптацию с правовым основанием.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Указать публичный URL исходной публикации и подтвердить оригинальное авторство либо оформить анонимную адаптацию с правовым основанием.",
         "en": "Provide the public URL of the original publication and confirm original authorship, or present the material as an anonymous adaptation with a legal basis."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/491#pullrequestreview-6044628054"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/491#pullrequestreview-6044628054",
+    "source_commit": "3ea4b8e32e353d67241da71940b68fc8b9c19659",
+    "source_review_id": 6044628054,
+    "approved_at": "2026-11-24T17:59:22Z",
+    "package_sha256": "f8f260fceae50d2218bae60b8c55fa5dc357f8ab0dd3c82371f159d489441cb4"
   }
 }

@@ -16,7 +16,7 @@ tags:
   - Математики шутят
   - Геометрия
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-76f7c8c48fad-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
