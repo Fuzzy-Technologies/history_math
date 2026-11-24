@@ -17,7 +17,7 @@ tags:
   - Rybkin
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-23cbccc347be-en/
 rights_basis: Mansur Gilmullin
 original_publication:

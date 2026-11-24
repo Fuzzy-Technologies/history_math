@@ -17,7 +17,7 @@ tags:
   - Рыбкин
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-23cbccc347be-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
