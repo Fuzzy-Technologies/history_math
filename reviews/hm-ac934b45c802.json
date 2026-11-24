@@ -40,10 +40,10 @@
     "status": "approved",
     "reviewed_by": "AIna",
     "date": "2026-11-24",
-    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/663#pullrequestreview-6040263691",
-    "source_commit": "b2bd0a409c70565cbb91e52b534db9dd321968dd",
-    "source_review_id": 6040263691,
-    "approved_at": "2026-11-24T13:43:21Z",
-    "package_sha256": "ca6ea50edfea0dd23fcb09c64513747b28e3b8bd1494fe17eb4a53f2e0a36a27"
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/701#pullrequestreview-6042969345",
+    "source_commit": "7caeb52eb3e8d06300af5534658161d48aff5be1",
+    "source_review_id": 6042969345,
+    "approved_at": "2026-11-24T16:11:01Z",
+    "package_sha256": "577c1aaa569bb509a4497368d3c647679298a6d73e820ffb187fd10b70e7232a"
   }
 }
