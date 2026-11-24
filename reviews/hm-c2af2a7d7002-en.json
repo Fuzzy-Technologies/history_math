@@ -25,7 +25,7 @@
     {
       "id": "indivisibles-anachronism",
       "question": "Correct the anachronistic phrase “Archimedes’ method of indivisibles”: Kepler used his own infinitesimal reasoning inspired by ancient solid geometry, while the systematic method of indivisibles is associated with Cavalieri’s later work.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Correct the anachronistic phrase “Archimedes’ method of indivisibles”: Kepler used his own infinitesimal reasoning inspired by ancient solid geometry, while the systematic method of indivisibles is associated with Cavalieri’s later work.",
