@@ -5,25 +5,34 @@
     {
       "id": "pythagorean-pentagram-source",
       "question": "Подтвердить источником утверждение о том, что пифагорейцы чертили пентаграмму на песке при приветствии друг друга. Указанный в статье источник о бумажном узле этого исторического утверждения не подтверждает.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Подтвердить источником утверждение о том, что пифагорейцы чертили пентаграмму на песке при приветствии друг друга. Указанный в статье источник о бумажном узле этого исторического утверждения не подтверждает.",
         "en": "Please provide a source for the claim that the Pythagoreans drew the pentagram in the sand when greeting one another. The linked paper-knot source does not substantiate this historical claim."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/683#pullrequestreview-6040295671"
     },
     {
       "id": "paper-knot-illustration-rights",
       "question": "Указать источник и основание для воспроизведения всех трёх иллюстраций. Они воспроизводят фотографии и схему из материала «Правильный пятиугольник: узел из полоски бумаги» после кадрирования и цветовой обработки. Нужно подтвердить основание для повторного использования либо заменить их собственными иллюстрациями.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Указать источник и основание для воспроизведения всех трёх иллюстраций. Они воспроизводят фотографии и схему из материала «Правильный пятиугольник: узел из полоски бумаги» после кадрирования и цветовой обработки. Нужно подтвердить основание для повторного использования либо заменить их собственными иллюстрациями.",
         "en": "Please document the source and rights basis for all three illustrations. They appear to reproduce photographs and a diagram from “A Regular Pentagon: a Knot in a Paper Strip” after cropping and colour processing. Provide a confirmed basis for reuse, or replace them with original illustrations."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/683#pullrequestreview-6040295671"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/683#pullrequestreview-6040295671",
+    "source_commit": "7605db591524ad1284fc04a906d63146a9bca3b3",
+    "source_review_id": 6040295671,
+    "approved_at": "2026-11-24T13:45:13Z",
+    "package_sha256": "61aaf82bacb08c362dc66ddf8d62cf1cb2a160554ceb08c6b4fc18908dab6271"
   }
 }

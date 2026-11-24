@@ -5,25 +5,34 @@
     {
       "id": "pythagorean-pentagram-source",
       "question": "Please provide a source for the claim that the Pythagoreans drew the pentagram in the sand when greeting one another. The linked paper-knot source does not substantiate this historical claim.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Please provide a source for the claim that the Pythagoreans drew the pentagram in the sand when greeting one another. The linked paper-knot source does not substantiate this historical claim.",
         "ru": "Подтвердить источником утверждение о том, что пифагорейцы чертили пентаграмму на песке при приветствии друг друга. Указанный в статье источник о бумажном узле этого исторического утверждения не подтверждает."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/683#pullrequestreview-6040295671"
     },
     {
       "id": "paper-knot-illustration-rights",
       "question": "Please document the source and rights basis for all three illustrations. They appear to reproduce photographs and a diagram from “A Regular Pentagon: a Knot in a Paper Strip” after cropping and colour processing. Provide a confirmed basis for reuse, or replace them with original illustrations.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Please document the source and rights basis for all three illustrations. They appear to reproduce photographs and a diagram from “A Regular Pentagon: a Knot in a Paper Strip” after cropping and colour processing. Provide a confirmed basis for reuse, or replace them with original illustrations.",
         "ru": "Указать источник и основание для воспроизведения всех трёх иллюстраций. Они воспроизводят фотографии и схему из материала «Правильный пятиугольник: узел из полоски бумаги» после кадрирования и цветовой обработки. Нужно подтвердить основание для повторного использования либо заменить их собственными иллюстрациями."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/683#pullrequestreview-6040295671"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/683#pullrequestreview-6040295671",
+    "source_commit": "7605db591524ad1284fc04a906d63146a9bca3b3",
+    "source_review_id": 6040295671,
+    "approved_at": "2026-11-24T13:45:13Z",
+    "package_sha256": "7595672a2df7e97775cd7856b2ff6914239ac3ced8b57d90913c437ca3fedfcf"
   }
 }
