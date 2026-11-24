@@ -27,15 +27,23 @@
     {
       "id": "image-provenance-rights",
       "question": "Clarify the provenance and rights for both illustrations: confirm Mansur Gilmullin’s authorship claimed in the fig-1 caption, and for the scan of Rachinsky’s 1899 edition provide the exact public source and a licence or other legal basis for reproduction.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Clarify the provenance and rights for both illustrations: confirm Mansur Gilmullin’s authorship claimed in the fig-1 caption, and for the scan of Rachinsky’s 1899 edition provide the exact public source and a licence or other legal basis for reproduction.",
         "ru": "Уточнить происхождение и права обеих иллюстраций: для fig-1 подтвердить авторство Мансура Гильмуллина, заявленное в подписи, а для скана издания Рачинского 1899 года дать точный публичный источник и лицензию либо иное правовое основание воспроизведения."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/663#pullrequestreview-6040263691"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/663#pullrequestreview-6040263691",
+    "source_commit": "b2bd0a409c70565cbb91e52b534db9dd321968dd",
+    "source_review_id": 6040263691,
+    "approved_at": "2026-11-24T13:43:21Z",
+    "package_sha256": "92e28ba42922c2409a696f93f0e4aeec24ce68ed34209d346a3f10313e0eeeac"
   }
 }
