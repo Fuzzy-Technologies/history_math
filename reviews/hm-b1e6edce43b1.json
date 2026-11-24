@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b1e6edce43b1",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Согласовать точную формулировку о характеристической функции и формуле Леви–Хинчина; сверить библиографические заглавия книг и их принятые английские названия.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Согласовать точную формулировку о характеристической функции и формуле Леви–Хинчина; сверить библиографические заглавия книг и их принятые английские названия.",
+        "en": "Agree the precise wording about the characteristic function and the Lévy–Khintchine formula; check the bibliographical book titles and their established English names."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/359#pullrequestreview-6040002074"
+    },
+    {
+      "id": "q2",
+      "question": "Подтвердить источник цитируемого стихотворения и согласовать его смысловой английский перевод; уточнить связь с четырьмя сборниками 1908–1914 годов и показанным изданием «Слова, которым нет прощения» 1915 года.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Подтвердить источник цитируемого стихотворения и согласовать его смысловой английский перевод; уточнить связь с четырьмя сборниками 1908–1914 годов и показанным изданием «Слова, которым нет прощения» 1915 года.",
+        "en": "Confirm the source of the quoted poem and agree its English translation; clarify its relationship to the four collections of 1908–1914 and the illustrated 1915 edition of Words for Which There Is No Forgiveness."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/359#pullrequestreview-6040002074"
+    },
+    {
+      "id": "q3",
+      "question": "Установить фактические публичные источники и правовой статус портрета А. Я. Хинчина и титульного листа издания 1915 года; для титульного листа указать точное издание, хранилище и основание воспроизведения.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Установить фактические публичные источники и правовой статус портрета А. Я. Хинчина и титульного листа издания 1915 года; для титульного листа указать точное издание, хранилище и основание воспроизведения.",
+        "en": "Establish the actual public sources and legal status of Alexander Khinchin’s portrait and the 1915 title page; for the title page, identify the exact edition, holding institution and basis for reproduction."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/359#pullrequestreview-6040002074"
+    },
+    {
+      "id": "q4",
+      "question": "Проверить хронологию переезда Хинчина в Иваново-Вознесенск и начала его преподавательской работы там.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "В статьях разделены переезд в конце 1918 года и начало преподавания в 1919 году. Проверено по истории факультета Ивановского государственного университета и мемориальной странице МИАН: https://math.ivanovo.ac.ru/hist/hist0/index.html ; https://www.mi.ras.ru/index.php?c=inmemoriapage&id=26863",
+      "localizations": {
+        "source": "Проверить хронологию переезда Хинчина в Иваново-Вознесенск и начала его преподавательской работы там.",
+        "en": "Verify the chronology of Khinchin’s move to Ivanovo-Voznesensk and the start of his teaching there."
+      }
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/359#pullrequestreview-6040002074",
+    "source_commit": "ddcf601bef4f513cb248b1394db2edcc54f13d29",
+    "source_review_id": 6040002074,
+    "approved_at": "2026-11-24T13:26:48Z",
+    "package_sha256": "d1594199be5924cee558510ff36bd1ba37ca60e4eed5e13121f5807e71285872"
+  }
+}
