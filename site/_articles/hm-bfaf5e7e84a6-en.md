@@ -20,7 +20,7 @@ tags:
   - cryptography
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-bfaf5e7e84a6-en/
 rights_basis: Mansur Gilmullin
 original_publication:

@@ -20,7 +20,7 @@ tags:
   - криптография
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-bfaf5e7e84a6-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
