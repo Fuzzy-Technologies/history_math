@@ -39,12 +39,16 @@ figures:
     alt: Two sequences of black-and-white drawings show a straight rope, a knot and crossed arms while the hands keep hold of the ends
     caption: "Tying the knot: positions of the hands. Illustrator: Y. Smolnikov"
     source: 'I. Ya. Depman, Stories about Solving Problems, Detgiz, 1957, p. 71. Illustrator: Y. Smolnikov: https://nlrs.ru/to-readers/segments/knigakan/open/146155'
+    credit: "I. Ya. Depman, Stories about Solving Problems, Detgiz, 1957, p. 71. Illustrator: Y. Smolnikov"
+    source_url: "https://nlrs.ru/to-readers/segments/knigakan/open/146155"
     rights_basis: "I. Ya. Depman / Y. Smolnikov; reproduction rights require confirmation."
   - id: fig-3
     path: /assets/images/hm-9b361e4ba75a/figure-03.png
     alt: Five black-and-white drawings of a rope loop and crossed arms show successive positions for working backwards
     caption: "Working backwards. Illustrator: Y. Smolnikov"
     source: 'I. Ya. Depman, Stories about Solving Problems, Detgiz, 1957, p. 71. Illustrator: Y. Smolnikov: https://nlrs.ru/to-readers/segments/knigakan/open/146155'
+    credit: "I. Ya. Depman, Stories about Solving Problems, Detgiz, 1957, p. 71. Illustrator: Y. Smolnikov"
+    source_url: "https://nlrs.ru/to-readers/segments/knigakan/open/146155"
     rights_basis: "I. Ya. Depman / Y. Smolnikov; reproduction rights require confirmation."
 preview_image: /assets/images/hm-9b361e4ba75a/figure-01.png
 cover_image: /assets/images/hm-9b361e4ba75a/figure-01.png
