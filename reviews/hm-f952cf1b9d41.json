@@ -27,65 +27,78 @@
     {
       "id": "q3",
       "question": "Нужны источники и временные рамки чисел «350 миллионов», «каждая третья головоломка» и «шесть процентов», а также утверждений о первом миллионере и сервировке ресторанных столов. Это сведения исторического поста 2024 года, они не обновлялись до текущего времени.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Нужны источники и временные рамки чисел «350 миллионов», «каждая третья головоломка» и «шесть процентов», а также утверждений о первом миллионере и сервировке ресторанных столов. Это сведения исторического поста 2024 года, они не обновлялись до текущего времени.",
         "en": "Establish sources and dates for 350 million sales, one in three puzzles and six per cent of the population, and for the first-millionaire and restaurant-table claims. These belong to the historical 2024 post and have not been updated to the present."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/405#pullrequestreview-6045726483"
     },
     {
       "id": "q4",
       "question": "Установить публичные первоисточники, фотографов или создателей и правовой статус портрета Эрнё Рубика и изображения кубика; хранение в авторском архиве не подтверждает авторство или право воспроизведения.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Установить публичные первоисточники, фотографов или создателей и правовой статус портрета Эрнё Рубика и изображения кубика; хранение в авторском архиве не подтверждает авторство или право воспроизведения.",
         "en": "Identify the public sources, photographers or creators and legal status of the Ernő Rubik portrait and cube image; archive custody does not establish authorship or permission for reproduction."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/405#pullrequestreview-6045726483"
     },
     {
       "id": "q5",
       "question": "Сверить хронологию 1971–1979 годов: текст говорит, что Рубик работал архитектором в 1971–1975 годах и лишь затем вернулся в академию, тогда как биографическая справка Национального архива Венгрии указывает преподавание ассистентом в Венгерской высшей школе прикладного искусства уже с 1971 года. Уточнить возможное совмещение и должности.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Сверить хронологию 1971–1979 годов: текст говорит, что Рубик работал архитектором в 1971–1975 годах и лишь затем вернулся в академию, тогда как биографическая справка Национального архива Венгрии указывает преподавание ассистентом в Венгерской высшей школе прикладного искусства уже с 1971 года. Уточнить возможное совмещение и должности.",
         "en": "Reconcile the 1971–1979 chronology: the article says Rubik worked as an architect in 1971–1975 and only then returned to the academy, while the Hungarian National Archives biography places him as an assistant lecturer at the Hungarian College of Applied Arts from 1971. Clarify any overlap and the sequence of appointments."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/405#pullrequestreview-6045726483"
     },
     {
       "id": "rubiks-snake-date",
       "question": "Уточнить дату «Змейки Рубика»: венгерские архивный и биографический источники датируют её создание 1977 годом, а в статье среди изобретений указан 1981 год. Если 1981 год относится к коммерческому выпуску, обозначить это явно; иначе указать 1977 год в RU/EN.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Уточнить дату «Змейки Рубика»: венгерские архивный и биографический источники датируют её создание 1977 годом, а в статье среди изобретений указан 1981 год. Если 1981 год относится к коммерческому выпуску, обозначить это явно; иначе указать 1977 год в RU/EN.",
         "en": "Clarify the date attached to Rubik’s Snake: Hungarian archival and biographical sources date its creation to 1977, while the article lists 1981 among inventions. If 1981 is the commercial-release date, label it explicitly; otherwise use 1977 in RU/EN."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/405#pullrequestreview-6045726483"
     },
     {
       "id": "rubik-foundation-chronology",
       "question": "Исправить хронологию Международного фонда Рубика и Венгерской инженерной академии: фонд основан Рубиком в 1988 году, академия учреждена в 1990 году, поэтому фонд не мог быть создан при академии. Источники: https://nemzetiarchivum.hu/stories/Rubik-Erno-Rubikkocka-feltalalo-Kossuthdijas-epiteszmernok-targytervezo ; https://mernokakademia.hu/hu/bemutatkozas/fontos-evszamok/",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Исправить хронологию Международного фонда Рубика и Венгерской инженерной академии: фонд основан Рубиком в 1988 году, академия учреждена в 1990 году, поэтому фонд не мог быть создан при академии. Источники: https://nemzetiarchivum.hu/stories/Rubik-Erno-Rubikkocka-feltalalo-Kossuthdijas-epiteszmernok-targytervezo ; https://mernokakademia.hu/hu/bemutatkozas/fontos-evszamok/",
         "en": "Correct the chronology of the International Rubik Foundation and the Hungarian Academy of Engineering: Rubik founded the foundation in 1988, while the academy was established in 1990, so the foundation could not have been created at the academy. Sources: https://nemzetiarchivum.hu/stories/Rubik-Erno-Rubikkocka-feltalalo-Kossuthdijas-epiteszmernok-targytervezo ; https://mernokakademia.hu/hu/bemutatkozas/fontos-evszamok/"
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/405#pullrequestreview-6045726483"
     },
     {
       "id": "original-post-url",
       "question": "Установить точный публичный URL исходной публикации Telegram · history_math от 22 июля 2024 года и синхронно указать его в `original_publication.url` и `source_url` обеих редакций.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Установить точный публичный URL исходной публикации Telegram · history_math от 22 июля 2024 года и синхронно указать его в `original_publication.url` и `source_url` обеих редакций.",
         "en": "Establish the exact public URL of the original Telegram · history_math post dated 22 July 2024 and record it consistently in `original_publication.url` and `source_url` in both editions."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/405#pullrequestreview-6045726483"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/405#pullrequestreview-6045726483",
+    "source_commit": "94e745a5237970f3f540634b8a72e7cbee50bb5e",
+    "source_review_id": 6045726483,
+    "approved_at": "2026-11-24T19:15:18Z",
+    "package_sha256": "020ff2db14ab66ea66b9dabd873aaf570f698ace2d75eac23518906b962e1ce0"
   }
 }

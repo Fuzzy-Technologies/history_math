@@ -20,7 +20,7 @@ tags:
   - Rubik
 series: Персоналии
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-f952cf1b9d41-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
