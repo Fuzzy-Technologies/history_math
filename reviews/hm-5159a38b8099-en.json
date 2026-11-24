@@ -25,7 +25,7 @@
     {
       "id": "congress-year",
       "question": "The year of the Fourth All-Union Mathematical Congress was corrected from 1966 to 1961; the congress took place in Leningrad on 3–12 July 1961. Source: https://www.mathnet.ru/php/archive.phtml?issue=1&jrnid=rm&option_lang=rus&volume=17&wshow=issue&year=1962",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "The year of the Fourth All-Union Mathematical Congress was corrected from 1966 to 1961; the congress took place in Leningrad on 3–12 July 1961. Source: https://www.mathnet.ru/php/archive.phtml?issue=1&jrnid=rm&option_lang=rus&volume=17&wshow=issue&year=1962",

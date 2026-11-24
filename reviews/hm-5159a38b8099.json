@@ -25,7 +25,7 @@
     {
       "id": "congress-year",
       "question": "Год IV Всесоюзного математического съезда исправлен с 1966 на 1961: съезд проходил в Ленинграде 3–12 июля 1961 года. Источник: https://www.mathnet.ru/php/archive.phtml?issue=1&jrnid=rm&option_lang=rus&volume=17&wshow=issue&year=1962",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Год IV Всесоюзного математического съезда исправлен с 1966 на 1961: съезд проходил в Ленинграде 3–12 июля 1961 года. Источник: https://www.mathnet.ru/php/archive.phtml?issue=1&jrnid=rm&option_lang=rus&volume=17&wshow=issue&year=1962",
