@@ -16,7 +16,7 @@ tags:
   - Вейерштрасс
 series: Персоналии
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-aafe8422c43a-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

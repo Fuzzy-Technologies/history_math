@@ -16,7 +16,7 @@ tags:
   - Weierstrass
 series: People
 math: true
-status: draft
+status: published
 permalink: /publications/hm-aafe8422c43a-en/
 rights_basis: Mansur Gilmullin
 original_publication:
