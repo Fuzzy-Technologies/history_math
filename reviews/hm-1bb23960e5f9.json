@@ -16,25 +16,34 @@
     {
       "id": "illustration-provenance-rights",
       "question": "Сохранить в метаданных изображения имя художницы Ольги Симоновой и ссылку на публичную страницу картины «Три рыбака» (2021), а также указать подтверждённое основание использования или лицензию. Не представлять стороннюю картину как авторскую иллюстрацию.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Сохранить в метаданных изображения имя художницы Ольги Симоновой и ссылку на публичную страницу картины «Три рыбака» (2021), а также указать подтверждённое основание использования или лицензию. Не представлять стороннюю картину как авторскую иллюстрацию.",
         "en": "Preserve the artist Olga Simonova’s name and the public page for her painting Three Fishermen (2021) in the image metadata, and state the confirmed rights basis or licence for its use. Do not present the third-party painting as an author illustration."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/669#pullrequestreview-6040284770"
     },
     {
       "id": "bulgarian-problem-source-and-publication",
       "question": "Источник и оригинальное авторство самой задачи не установлены, но корневые authors и rights_basis целиком приписывают материал Мансуру Гильмуллину; прошедшая дата 26.12.2025 также не подтверждена URL. Указать проверяемый источник и авторство либо оформить задачу как анонимную адаптацию, отделить редакцию Мансура и добавить ссылку на фактическую публикацию либо исправить дату.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Источник и оригинальное авторство самой задачи не установлены, но корневые authors и rights_basis целиком приписывают материал Мансуру Гильмуллину; прошедшая дата 26.12.2025 также не подтверждена URL. Указать проверяемый источник и авторство либо оформить задачу как анонимную адаптацию, отделить редакцию Мансура и добавить ссылку на фактическую публикацию либо исправить дату.",
         "en": "The source and original authorship of the problem itself are not established, yet the root authors and rights_basis attribute the material entirely to Mansur Gilmullin; the past date 26 December 2025 also has no evidence URL. Provide a verifiable source and authorship or present the problem as an anonymous adaptation, distinguish Mansur’s editing, and add the actual publication URL or correct the date."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/669#pullrequestreview-6040284770"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/669#pullrequestreview-6040284770",
+    "source_commit": "89203578c2db92578c938531d5ff16db5bfa9c7c",
+    "source_review_id": 6040284770,
+    "approved_at": "2026-11-24T13:44:35Z",
+    "package_sha256": "826d6d8536c0533e411c420481dac905e5bfcfc7213386426fd029c9874a1004"
   }
 }
