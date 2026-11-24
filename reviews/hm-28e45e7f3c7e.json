@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-28e45e7f3c7e",
+  "questions": [
+    {
+      "id": "term-interpretation",
+      "question": "Проверить приписываемое Валлису введение термина «интерпретация»: в перечне рядом с мантиссой, интерполяцией и непрерывной дробью это отдельное утверждение, а не синоним интерполяции. Оксфордский обзор подтверждает именно interpolation: https://www.maths.ox.ac.uk/system/files/attachments/John%20Wallis.pdf . Нужен конкретный источник для interpretation либо согласованная правка перечня в RU/EN. Исходное слово сохранено.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Неподтверждённое слово «интерпретация» удалено из перечня в RU/EN; подтверждённые термины сохранены.",
+      "localizations": {
+        "source": "Проверить приписываемое Валлису введение термина «интерпретация»: в перечне рядом с мантиссой, интерполяцией и непрерывной дробью это отдельное утверждение, а не синоним интерполяции. Оксфордский обзор подтверждает именно interpolation: https://www.maths.ox.ac.uk/system/files/attachments/John%20Wallis.pdf . Нужен конкретный источник для interpretation либо согласованная правка перечня в RU/EN. Исходное слово сохранено.",
+        "en": "Please verify the separate claim that Wallis introduced the mathematical term “interpretation”. The cited Oxford account confirms “interpolation”; a source for “interpretation”, or an agreed revision of the list in both versions, is needed. The source word is retained pending review."
+      }
+    },
+    {
+      "id": "publication-date",
+      "question": "Подтвердить исходную дату 2026-12-01: на момент редакционной проверки 7 ноября 2026 года публикация в Telegram ещё не подтверждена. До подтверждения публичной записи будущую дату нельзя считать проверенной датой первоисточника.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Подтвердить исходную дату 2026-12-01: на момент редакционной проверки 7 ноября 2026 года публикация в Telegram ещё не подтверждена. До подтверждения публичной записи будущую дату нельзя считать проверенной датой первоисточника.",
+        "en": "Confirm the source date 2026-12-01. At the editorial check on 7 November 2026, the Telegram publication had not yet been confirmed, so the future date cannot yet be treated as a verified source-publication date."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/476#pullrequestreview-6043439359"
+    },
+    {
+      "id": "wallis-portraits-provenance",
+      "question": "Для обоих портретов Джона Валлиса, включая ретушированный, укажите исходный источник или создателя и действительное правовое основание; кредит оригинала отделите от сведений о ретуши.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для обоих портретов Джона Валлиса, включая ретушированный, укажите исходный источник или создателя и действительное правовое основание; кредит оригинала отделите от сведений о ретуши.",
+        "en": "For both portraits of John Wallis, including the retouched version, identify the original source or creator and a valid rights basis; credit the original separately from the retouching."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/476#pullrequestreview-6043439359"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/476#pullrequestreview-6043439359",
+    "source_commit": "4fc6eb0887ef861e332c6d44b0a895f867de8cdf",
+    "source_review_id": 6043439359,
+    "approved_at": "2026-11-24T16:40:19Z",
+    "package_sha256": "9e656ce8993a30759f7e771fd1d1e792832b065ff797eb8bd5a13bd3e203af94"
+  }
+}
