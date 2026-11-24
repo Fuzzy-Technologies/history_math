@@ -49,15 +49,23 @@
     {
       "id": "image-attribution",
       "question": "Для трёх портретов Джорджа Данцига установить проверяемые публичные первоисточники, авторов или фотографов, даты и правовое основание публикации; наличие файлов в авторском архиве и формулировка «Иллюстрация к материалу» сами по себе права не подтверждают.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для трёх портретов Джорджа Данцига установить проверяемые публичные первоисточники, авторов или фотографов, даты и правовое основание публикации; наличие файлов в авторском архиве и формулировка «Иллюстрация к материалу» сами по себе права не подтверждают.",
         "en": "For the three portraits of George Dantzig, establish verifiable public primary sources, artists or photographers, dates and the legal basis for publication; possession of files in an author’s archive and the label “Illustration accompanying the text” do not by themselves establish reproduction rights."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/416#pullrequestreview-6040011102"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/416#pullrequestreview-6040011102",
+    "source_commit": "4375adab26d8272dd8964cc5dbfc4ac01fc17a3f",
+    "source_review_id": 6040011102,
+    "approved_at": "2026-11-24T13:27:23Z",
+    "package_sha256": "58c5f54d34a6035dbf318a34ce5a2d58c4b5869c973c63339ce37d296a5a02d0"
   }
 }
