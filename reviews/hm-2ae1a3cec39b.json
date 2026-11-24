@@ -5,15 +5,23 @@
     {
       "id": "source-authorship-attribution",
       "question": "Задача взята из книги Н. Н. Аменицкого и И. П. Сахарова, но авторство и корневой rights_basis целиком отданы Мансуру. Нужно разделить авторство исходной задачи и адаптацию/редакцию Мансура.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Задача взята из книги Н. Н. Аменицкого и И. П. Сахарова, но авторство и корневой rights_basis целиком отданы Мансуру. Нужно разделить авторство исходной задачи и адаптацию/редакцию Мансура.",
         "en": "The problem is taken from N. N. Amenitsky and I. P. Sakharov's book, but authorship and the root rights_basis are assigned entirely to Mansur. Distinguish the original problem's authorship from Mansur's adaptation or editing."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/630#pullrequestreview-6040196802"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/630#pullrequestreview-6040196802",
+    "source_commit": "eee10d3eb95175930d3bd73a1910313e023add7b",
+    "source_review_id": 6040196802,
+    "approved_at": "2026-11-24T13:39:30Z",
+    "package_sha256": "3792e44e7836d2b204538b9c6c9df26da9e1a422aac6468e8e69eb0f059d1afb"
   }
 }
