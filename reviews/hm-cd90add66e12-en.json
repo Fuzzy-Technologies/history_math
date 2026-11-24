@@ -5,7 +5,7 @@
     {
       "id": "dudeney-loyd-collaboration",
       "question": "The MacTutor university biography dates the beginning of Dudeney’s correspondence with Sam Loyd to 1893 and describes an exchange of puzzles, not joint authorship of most of Dudeney’s early work.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "The MacTutor university biography dates the beginning of Dudeney’s correspondence with Sam Loyd to 1893 and describes an exchange of puzzles, not joint authorship of most of Dudeney’s early work.",
