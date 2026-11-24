@@ -5,7 +5,7 @@
     {
       "id": "complex-triangle-joke",
       "question": "The mathematical misuse is preserved as the joke: complex coordinates are not Euclidean side lengths, and 1²+i²=0 does not produce an actual triangle of zero hypotenuse or area. Decide whether a short explanation is needed after the punchline; the description does not present the erroneous result as fact.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "The mathematical misuse is preserved as the joke: complex coordinates are not Euclidean side lengths, and 1²+i²=0 does not produce an actual triangle of zero hypotenuse or area. Decide whether a short explanation is needed after the punchline; the description does not present the erroneous result as fact.",
