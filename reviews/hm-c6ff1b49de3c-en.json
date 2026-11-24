@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "Verify the university awarding the 1922 doctorate, the dissertation title and the travel chronology: the list gives Rome in 1925 and Göttingen in 1926, while the following paragraph gives moves in 1924 and 1925. These may reflect different stages, so the dates have not been changed automatically.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify the university awarding the 1922 doctorate, the dissertation title and the travel chronology: the list gives Rome in 1925 and Göttingen in 1926, while the following paragraph gives moves in 1924 and 1925. These may reflect different stages, so the dates have not been changed automatically.",
