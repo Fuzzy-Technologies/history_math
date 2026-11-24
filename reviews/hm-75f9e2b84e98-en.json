@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Clarify the scope of the priority claims for the popular physics and mathematics journal and the first Russian courses on Lobachevsky geometry and the foundations of geometry.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Clarify the scope of the priority claims for the popular physics and mathematics journal and the first Russian courses on Lobachevsky geometry and the foundations of geometry.",
@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "Verify the date of the First All-Russian Congress of Mathematics Teachers; the supported dating is December 1911–January 1912.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify the date of the First All-Russian Congress of Mathematics Teachers; the supported dating is December 1911–January 1912.",
@@ -27,7 +27,7 @@
     {
       "id": "q3",
       "question": "Confirm the original-publication URL if known: both source texts leave the link field empty. English titles of the Russian books are descriptive translations.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Confirm the original-publication URL if known: both source texts leave the link field empty. English titles of the Russian books are descriptive translations.",
