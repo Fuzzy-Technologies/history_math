@@ -5,7 +5,7 @@
     {
       "id": "rachinsky-common-count-division",
       "question": "Please clarify two steps. The sum 1/500+1/1500+1/3500=31/10500 is not itself 3,100 versts: it must be multiplied by the common numerical count N. Thus N·31/10500=3100 and N=3100÷(31/10500)=1050000. The source instead writes 3100÷10500/31=1050000 without the necessary grouping. Please agree a correction; the source operators and correct final distances remain in the draft.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Please clarify two steps. The sum 1/500+1/1500+1/3500=31/10500 is not itself 3,100 versts: it must be multiplied by the common numerical count N. Thus N·31/10500=3100 and N=3100÷(31/10500)=1050000. The source instead writes 3100÷10500/31=1050000 without the necessary grouping. Please agree a correction; the source operators and correct final distances remain in the draft.",
@@ -16,7 +16,7 @@
     {
       "id": "rachinsky-edition-attribution",
       "question": "Correct the description of the 1899 book: the shown title page and bibliographic details identify the third corrected edition, so it must not be described as the original edition. Update RU and EN consistently.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "resolution": "Both versions now identify the 1899 book as the third corrected edition.",
       "localizations": {
