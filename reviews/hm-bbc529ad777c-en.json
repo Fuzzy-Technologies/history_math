@@ -15,7 +15,7 @@
     {
       "id": "q2",
       "question": "The statement of Fermat’s little theorem omits the condition that a and p are coprime; agree its addition in both editions. Also decide whether the last theorem should explicitly state that the exponent n is an integer.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "The statement of Fermat’s little theorem omits the condition that a and p are coprime; agree its addition in both editions. Also decide whether the last theorem should explicitly state that the exponent n is an integer.",
@@ -26,7 +26,7 @@
     {
       "id": "q3",
       "question": "Verify the descriptions of Fermat as the founder of algebraic number theory and as never publishing.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify the descriptions of Fermat as the founder of algebraic number theory and as never publishing.",
@@ -37,7 +37,7 @@
     {
       "id": "fermat-prime-attribution",
       "question": "Correct the historical attribution in the paragraph on Fermat numbers: Fermat conjectured that every number F_n = 2^{2^n} + 1 is prime, whereas the open question whether there are finitely or infinitely many Fermat primes is a modern formulation and was not posed by him in that form.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Correct the historical attribution in the paragraph on Fermat numbers: Fermat conjectured that every number F_n = 2^{2^n} + 1 is prime, whereas the open question whether there are finitely or infinitely many Fermat primes is a modern formulation and was not posed by him in that form.",
