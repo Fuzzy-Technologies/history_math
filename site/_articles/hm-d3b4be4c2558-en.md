@@ -19,7 +19,7 @@ tags:
   - geometry
   - truth
 math: true
-status: draft
+status: published
 permalink: /publications/hm-d3b4be4c2558-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

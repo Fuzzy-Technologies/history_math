@@ -19,7 +19,7 @@ tags:
   - геометрия
   - истина
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-d3b4be4c2558-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
