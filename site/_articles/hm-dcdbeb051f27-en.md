@@ -32,6 +32,8 @@ figures:
     alt: "Three men in top hats at the stock exchange: one leans towards a bespectacled man’s ear while the latter examines a document held by the third"
     caption: Portraits at the Stock Exchange
     source: "Edgar Degas, Portraits at the Stock Exchange, 1878–1879, oil on canvas. Official source: Musée d’Orsay, https://www.musee-orsay.fr/en/artworks/portraits-la-bourse-1145."
+    credit: "Edgar Degas, Portraits at the Stock Exchange, 1878–1879, oil on canvas. Official source: Musée d’Orsay"
+    source_url: "https://www.musee-orsay.fr/en/artworks/portraits-la-bourse-1145"
     rights_basis: Public Domain; the artist died in 1917 and the official public source is cited.
 preview_image: /assets/images/hm-dcdbeb051f27/figure-01.jpg
 cover_image: /assets/images/hm-dcdbeb051f27/figure-01.jpg

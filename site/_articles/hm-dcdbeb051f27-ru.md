@@ -32,6 +32,8 @@ figures:
     alt: "Трое мужчин в цилиндрах на бирже: один наклоняется к уху человека в очках, а тот рассматривает документ в руках третьего"
     caption: «Портреты на бирже»
     source: "Эдгар Дега, «Портреты на бирже», 1878–1879, холст, масло. Официальный источник: Musée d’Orsay, https://www.musee-orsay.fr/fr/oeuvres/portraits-la-bourse-1145."
+    credit: "Эдгар Дега, «Портреты на бирже», 1878–1879, холст, масло. Официальный источник: Musée d’Orsay"
+    source_url: "https://www.musee-orsay.fr/fr/oeuvres/portraits-la-bourse-1145"
     rights_basis: Public Domain; автор умер в 1917 году, официальный публичный источник указан.
 preview_image: /assets/images/hm-dcdbeb051f27/figure-01.jpg
 cover_image: /assets/images/hm-dcdbeb051f27/figure-01.jpg
