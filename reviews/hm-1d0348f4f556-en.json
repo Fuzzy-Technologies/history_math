@@ -5,7 +5,7 @@
     {
       "id": "stomachion-counting-convention",
       "question": "Please explain the equivalences relating 17,152 and 536: their ratio is 32, whereas a square has only eight rotations and reflections. The Archimedes Palimpsest project confirms both totals and the factor 32; the explanation should specify that counting convention rather than only the square’s rotations and reflections: https://www.archimedespalimpsest.org/about/scholarship/combinatorics.php .",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Please explain the equivalences relating 17,152 and 536: their ratio is 32, whereas a square has only eight rotations and reflections. The Archimedes Palimpsest project confirms both totals and the factor 32; the explanation should specify that counting convention rather than only the square’s rotations and reflections: https://www.archimedespalimpsest.org/about/scholarship/combinatorics.php .",
@@ -16,7 +16,7 @@
     {
       "id": "stomachion-manuscript-history",
       "question": "Please clarify the claims that the game was a legend until 1906 and that the last three treatises survive nowhere else. The Palimpsest project describes The Method and Stomachion as unique texts, but On Floating Bodies as unique in the original Greek; a Latin translation is also known. Source: https://www.archimedespalimpsest.org/about/history/index.php . Please agree matching wording in both editions.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Please clarify the claims that the game was a legend until 1906 and that the last three treatises survive nowhere else. The Palimpsest project describes The Method and Stomachion as unique texts, but On Floating Bodies as unique in the original Greek; a Latin translation is also known. Source: https://www.archimedespalimpsest.org/about/history/index.php . Please agree matching wording in both editions.",
@@ -27,7 +27,7 @@
     {
       "id": "stomachion-golden-ratio",
       "question": "Please identify a source and the particular pieces or quantities claimed to involve the golden ratio. The author qualifies this as “some accounts”, but names neither an account nor a testable proportion.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Please identify a source and the particular pieces or quantities claimed to involve the golden ratio. The author qualifies this as “some accounts”, but names neither an account nor a testable proportion.",
@@ -38,7 +38,7 @@
     {
       "id": "stomachion-leonardo",
       "question": "Please provide a source for the claim that Stomachion proportions influenced Leonardo da Vinci’s sketches for Vitruvian Man, or agree its removal or qualification in both editions. The source post gives no bibliographic basis.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Please provide a source for the claim that Stomachion proportions influenced Leonardo da Vinci’s sketches for Vitruvian Man, or agree its removal or qualification in both editions. The source post gives no bibliographic basis.",
@@ -49,7 +49,7 @@
     {
       "id": "stomachion-name",
       "question": "Clarify the translation of “Stomachion”. The Archimedes Palimpsest project notes that the etymology is not fully understood and gives “belly-ache” as the most likely literal meaning, rather than “enraging”. Please agree matching wording in both editions.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Clarify the translation of “Stomachion”. The Archimedes Palimpsest project notes that the etymology is not fully understood and gives “belly-ache” as the most likely literal meaning, rather than “enraging”. Please agree matching wording in both editions.",
