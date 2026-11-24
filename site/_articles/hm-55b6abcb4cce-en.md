@@ -24,8 +24,19 @@ original_publication:
   preserve_date: true
   url: https://t.me/history_math/163
 source_url: https://t.me/history_math/163
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-55b6abcb4cce/figure-01.png
+  alt: One man asks a question and the other smiles and holds up a finger.
+  caption: ''
+  source: AI-generated illustration commissioned by the journal.
+  credit: ''
+  rights_basis: Created for the journal at the request of Timur Gilmullin in 2026.
+cover_image: /assets/images/hm-55b6abcb4cce/figure-01.png
+preview_image: /assets/images/hm-55b6abcb4cce/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 Mathematicians are joking. And you thought you could ask them a simple question!
 
 “What’s the date today?”<br>

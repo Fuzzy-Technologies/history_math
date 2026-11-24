@@ -24,8 +24,19 @@ original_publication:
   preserve_date: true
   url: https://t.me/history_math/163
 source_url: https://t.me/history_math/163
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-55b6abcb4cce/figure-01.png
+  alt: Один собеседник задаёт вопрос, другой поднимает палец и улыбается.
+  caption: ''
+  source: Иллюстрация редакции журнала, созданная с помощью ИИ.
+  credit: ''
+  rights_basis: Создано для журнала по поручению Тимура Гильмуллина, 2026.
+cover_image: /assets/images/hm-55b6abcb4cce/figure-01.png
+preview_image: /assets/images/hm-55b6abcb4cce/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 Математики шутят — вот и спрашивай их о чём-либо!
 
 — Какое сегодня число?<br>
