@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-841d78f77c55-en",
+  "questions": [
+    {
+      "id": "wiener-anecdote-sources",
+      "question": "Confirm the exact Eves edition and page for the winner/Wiener punchline, and publication locators for Phyllis L. Block’s and Gene B. Chase’s recollections. Wiener and winner are not standard English homophones, while the current source list gives only general references; keep this five-story collection separate from the existing Wiener biography.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Confirm the exact Eves edition and page for the winner/Wiener punchline, and publication locators for Phyllis L. Block’s and Gene B. Chase’s recollections. Wiener and winner are not standard English homophones, while the current source list gives only general references; keep this five-story collection separate from the existing Wiener biography.",
+        "ru": "Уточнить точное издание и страницу Ивза для развязки winner/Wiener, а также публикационные указатели для воспоминаний Филлис Л. Блок и Джина Б. Чейза. Wiener и winner не являются обычными английскими омофонами, а текущий список даёт лишь общие ссылки; эту подборку пяти баек следует сохранить отдельно от уже подготовленной биографии Винера."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/594#pullrequestreview-6040149125"
+    },
+    {
+      "id": "wiener-portrait-provenance",
+      "question": "For the portrait of Norbert Wiener, identify the source work or photographer, the rightsholder, a verifiable public source, and the legal basis for use. A reference to the author’s archive alone does not establish authorship or a licence.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "For the portrait of Norbert Wiener, identify the source work or photographer, the rightsholder, a verifiable public source, and the legal basis for use. A reference to the author’s archive alone does not establish authorship or a licence.",
+        "ru": "Для портрета Норберта Винера укажите исходное произведение или фотографа, правообладателя, проверяемый публичный источник и правовое основание использования. Ссылка на авторский архив сама по себе не подтверждает авторство или лицензию."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/594#pullrequestreview-6040149125"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/594#pullrequestreview-6040149125",
+    "source_commit": "8cec670ea868b573cda76c16b33c20826c95effc",
+    "source_review_id": 6040149125,
+    "approved_at": "2026-11-24T13:36:18Z",
+    "package_sha256": "1073772b56a77a7360d92e38bda1f8b4cdb2dfd68d483943ea00b66b7756ef17"
+  }
+}
