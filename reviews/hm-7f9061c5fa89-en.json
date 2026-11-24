@@ -27,25 +27,34 @@
     {
       "id": "q3",
       "question": "Verify the preferred date and title of the principal work: the article gives *Zij-i Jadid-i Guragani* / *New Guragan Astronomical Tables* and 1444, while academic sources use several title variants.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Verify the preferred date and title of the principal work: the article gives *Zij-i Jadid-i Guragani* / *New Guragan Astronomical Tables* and 1444, while academic sources use several title variants.",
         "ru": "Уточнить принятую датировку и вариант заглавия основного труда: в статье указаны «Зиджи джадиди Гурагани» / «Новые Гурагановы астрономические таблицы» и 1444 год, тогда как академические источники приводят несколько вариантов названия."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/379#pullrequestreview-6039976708"
     },
     {
       "id": "q4",
       "question": "The sculptural portrait of Ulugh Beg and the photograph of the surviving observatory instrument are identified only as illustrations accompanying the text. Establish real public sources, creators, photographers or institutions, and confirmed bases for reproduction; synchronize the RU/EN metadata.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "The sculptural portrait of Ulugh Beg and the photograph of the surviving observatory instrument are identified only as illustrations accompanying the text. Establish real public sources, creators, photographers or institutions, and confirmed bases for reproduction; synchronize the RU/EN metadata.",
         "ru": "Для скульптурного портрета Улугбека и фотографии сохранившейся части инструмента обсерватории указано только «Иллюстрация к материалу». Установить реальные публичные источники, авторов, фотографов или учреждения и подтверждённые основания воспроизведения; синхронизировать RU/EN-метаданные."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/379#pullrequestreview-6039976708"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/379#pullrequestreview-6039976708",
+    "source_commit": "ab208ae07a8b1f5fe0e1f0325b67b75b559a8302",
+    "source_review_id": 6039976708,
+    "approved_at": "2026-11-24T13:25:03Z",
+    "package_sha256": "b9cff6c233b35c462dbdb22cbc1f1df99972d60470bc08552e40b7e2780283ff"
   }
 }
