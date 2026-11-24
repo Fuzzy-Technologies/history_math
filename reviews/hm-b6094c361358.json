@@ -27,15 +27,23 @@
     {
       "id": "q3",
       "question": "Установить проверяемый публичный первоисточник портрета В. А. Стеклова, фотографа/автора (если известен), дату и лицензию либо подтверждённый статус общественного достояния; синхронизировать метаданные RU/EN.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Установить проверяемый публичный первоисточник портрета В. А. Стеклова, фотографа/автора (если известен), дату и лицензию либо подтверждённый статус общественного достояния; синхронизировать метаданные RU/EN.",
         "en": "Establish a verifiable public original source for the portrait of V. A. Steklov, its photographer or creator (if known), date, and license or confirmed public-domain status; keep the RU and EN metadata synchronized."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/355#pullrequestreview-6039935431"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/355#pullrequestreview-6039935431",
+    "source_commit": "105489e51e4655fa7c0f0647054f80f3f581b2cf",
+    "source_review_id": 6039935431,
+    "approved_at": "2026-11-24T13:22:10Z",
+    "package_sha256": "6167e0ce8090e298050b21a15e2d41bba6f9778cbac04c16420608512c8902ff"
   }
 }
