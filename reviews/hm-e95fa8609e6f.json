@@ -1,0 +1,45 @@
+{
+  "review_version": 1,
+  "article_id": "hm-e95fa8609e6f",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Проверить перечень иностранных академий, описание школы Чебышёва, название и дату работы о механизмах и источник воспоминания Маркова.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Неподтверждённое точное число обществ снято; школа описана без утверждения, что каждый названный математик был непосредственным учеником; название работы 1854 года уточнено, а неподтверждённая прямая цитата Маркова пересказана как воспоминание."
+    },
+    {
+      "id": "mechanism-count",
+      "question": "Уточнить число механизмов Чебышёва и их модификаций.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Формулировка исправлена по официальной карточке ИС АРАН: свыше сорока различных механизмов и около восьмидесяти их модификаций.",
+      "evidence_url": "https://isaran.ru/?guid=AE690857-6AF6-9A9D-1B70-2F6C04E7EAFE&q=ru/person"
+    },
+    {
+      "id": "portrait-provenance",
+      "question": "Установить исходное произведение и автора портретной обложки Чебышёва, указать публичный источник и лицензию либо подтверждённое основание общественного достояния.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/325#pullrequestreview-6039903579"
+    },
+    {
+      "id": "original-publication-date",
+      "question": "Подтвердить исходную дату 04.09.2023 по доступной публичной записи оригинальной публикации.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/325#pullrequestreview-6039903579"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/325#pullrequestreview-6039903579",
+    "source_commit": "9707da49540d6f73004a38c7f60b4e423271df70",
+    "source_review_id": 6039903579,
+    "approved_at": "2026-11-24T13:19:56Z",
+    "package_sha256": "6d7973414590fe55cabf2d8b2817ba0ae80ccb5a07de45cc85384ec39f510fbb"
+  }
+}
