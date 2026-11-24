@@ -5,7 +5,7 @@
     {
       "id": "descartes-cogito-sources-and-dates",
       "question": "The historical background says the phrase first appeared in the Meditations of 1641 and became widely known through the earlier work of 1637. The Stanford Encyclopedia of Philosophy https://plato.stanford.edu/archives/sum2020/entries/self-consciousness/ distinguishes Je pense, donc je suis in the Discourse on the Method (1637), I am, I exist in the Second Meditation (1641), and cogito ergo sum in the Principles of Philosophy (1644). Please agree how to distinguish the proposition, its formulations and dates in both versions; the original account remains pending an editorial decision.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "The historical background says the phrase first appeared in the Meditations of 1641 and became widely known through the earlier work of 1637. The Stanford Encyclopedia of Philosophy https://plato.stanford.edu/archives/sum2020/entries/self-consciousness/ distinguishes Je pense, donc je suis in the Discourse on the Method (1637), I am, I exist in the Second Meditation (1641), and cogito ergo sum in the Principles of Philosophy (1644). Please agree how to distinguish the proposition, its formulations and dates in both versions; the original account remains pending an editorial decision.",
