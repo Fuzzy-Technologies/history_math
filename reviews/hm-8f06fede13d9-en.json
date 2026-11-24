@@ -5,7 +5,7 @@
     {
       "id": "club-members-terms-english",
       "question": "Check the source wording of Fedin’s joke: the second rule should say «не судить по нескольким членам об остальных» rather than introduce «о людях», which is absent from the source. The English version may remain adaptive with a note explaining the double meaning of chlen.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Check the source wording of Fedin’s joke: the second rule should say «не судить по нескольким членам об остальных» rather than introduce «о людях», which is absent from the source. The English version may remain adaptive with a note explaining the double meaning of chlen.",
