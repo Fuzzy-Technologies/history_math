@@ -5,15 +5,23 @@
     {
       "id": "cover-formula-notation",
       "question": "On the cover, the board reads as “180°π”, without an equals sign or other separator. Confirm the intended expression and replace or correct the cover so that the mathematical notation is unambiguous.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "On the cover, the board reads as “180°π”, without an equals sign or other separator. Confirm the intended expression and replace or correct the cover so that the mathematical notation is unambiguous.",
         "ru": "На обложке запись на доске читается как «180°π», без знака равенства или другого разделения. Уточнить замысел и заменить или исправить обложку так, чтобы математическая запись была однозначной."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/602#pullrequestreview-6045739601"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/602#pullrequestreview-6045739601",
+    "source_commit": "935b4be492627313f3bf34a3ab7d46bd51a51ef5",
+    "source_review_id": 6045739601,
+    "approved_at": "2026-11-24T19:16:15Z",
+    "package_sha256": "0e0f510ef3ff11f94b3763e3854474cb0927a5f5bf0a399a79792388ef1a0260"
   }
 }
