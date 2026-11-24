@@ -5,12 +5,13 @@
     {
       "id": "q1",
       "question": "Approve the birth date: the post gives 30 January/11 February with an alternative 1/13 February; Stepanov’s 1941 obituary gives 12 February, while Kuznetsov and Solomentsev’s 1982 article gives 13 February, 1 February Old Style. Both originals were read and linked in Notes. Select the date from primary evidence for both versions.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Approve the birth date: the post gives 30 January/11 February with an alternative 1/13 February; Stepanov’s 1941 obituary gives 12 February, while Kuznetsov and Solomentsev’s 1982 article gives 13 February, 1 February Old Style. Both originals were read and linked in Notes. Select the date from primary evidence for both versions.",
         "ru": "Согласовать дату рождения: пост даёт 30 января (11 февраля), с альтернативой 1 (13) февраля; некролог Степанова 1941 года — 12 февраля, а статья Кузнецова и Соломенцева 1982 года — 13(1) февраля. Обе статьи приведены в примечаниях. Нужен выбор по первоисточнику для RU/EN."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/435#pullrequestreview-6045731809"
     },
     {
       "id": "q2",
@@ -26,25 +27,34 @@
     {
       "id": "q3",
       "question": "Verify the year of The Cauchy Integral: the post gives 1918, the 1941 obituary’s bibliography places the monograph in 1919, and the 1982 article also mentions 1918. Preparation or dissertation and publication dates may differ; check the title page before changing them.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Verify the year of The Cauchy Integral: the post gives 1918, the 1941 obituary’s bibliography places the monograph in 1919, and the 1982 article also mentions 1918. Preparation or dissertation and publication dates may differ; check the title page before changing them.",
         "ru": "Сверить год «Интеграла Коши»: основной пост даёт 1918, библиография некролога 1941 года относит монографию к 1919; в статье 1982 года встречается также 1918. Возможно, различаются подготовка/диссертация и печатное издание. Не исправлять без проверки титула."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/435#pullrequestreview-6045731809"
     },
     {
       "id": "image-provenance",
       "question": "For the portrait of I. I. Privalov, identify the exact public source, photographer or creator when known, and the licence or public-domain basis; “Illustration accompanying the text” does not establish rights in a third-party image.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the portrait of I. I. Privalov, identify the exact public source, photographer or creator when known, and the licence or public-domain basis; “Illustration accompanying the text” does not establish rights in a third-party image.",
         "ru": "Для портрета И. И. Привалова установить точный публичный источник, фотографа или автора (если известен) и лицензию либо основание общественного достояния; формулировка «Иллюстрация к материалу» не подтверждает права на изображение третьего лица."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/435#pullrequestreview-6045731809"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/435#pullrequestreview-6045731809",
+    "source_commit": "0bd2ab742f822b0ea64cab715792105a5a5892a3",
+    "source_review_id": 6045731809,
+    "approved_at": "2026-11-24T19:15:41Z",
+    "package_sha256": "7cb9ea117eb8f04e42525c29673f524d1dac8c0846da87cd7f6d6561fc732ed4"
   }
 }
