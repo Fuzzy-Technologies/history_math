@@ -15,7 +15,7 @@
     {
       "id": "q2",
       "question": "Confirm the public link and catalogue details for the RAS personal file: https://www.ras.ru/namorozovarchive/7_actview.aspx?id=4406 .",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Confirm the public link and catalogue details for the RAS personal file: https://www.ras.ru/namorozovarchive/7_actview.aspx?id=4406 .",
