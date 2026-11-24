@@ -27,12 +27,13 @@
     {
       "id": "q3",
       "question": "Подтвердить публично проверяемый первоисточник, автора и правовое основание воспроизведения выбранного портрета Эвариста Галуа, для fig-1.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Подтвердить публично проверяемый первоисточник, автора и правовое основание воспроизведения выбранного портрета Эвариста Галуа, для fig-1.",
         "en": "Confirm a publicly verifiable original source, creator and legal basis for reproducing the selected portrait of Évariste Galois for fig-1."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/334#pullrequestreview-6039911251"
     },
     {
       "id": "galois-manuscripts-history",
@@ -47,6 +48,13 @@
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/334#pullrequestreview-6039911251",
+    "source_commit": "45bdbb62f4aec525cd12f0e4c648002acdac998b",
+    "source_review_id": 6039911251,
+    "approved_at": "2026-11-24T13:20:29Z",
+    "package_sha256": "a9039c11cd950d84285a8766623b424a1518fec09d5c21ea288e8f6a0cd3841a"
   }
 }
