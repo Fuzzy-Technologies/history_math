@@ -16,7 +16,7 @@ tags:
   - Carroll
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-f83f8a0b90a5-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
