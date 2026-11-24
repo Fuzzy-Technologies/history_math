@@ -5,35 +5,45 @@
     {
       "id": "missing-humor-cover",
       "question": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
         "en": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication."
-      }
+      },
+      "resolution": "В обеих версиях добавлена согласованная редакцией обложка. https://github.com/Fuzzy-Technologies/history_math/pull/495#pullrequestreview-6045736932"
     },
     {
       "id": "source-authorship",
       "question": "Установить первичный источник шутки и подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как анонимную адаптацию с корректной видимой атрибуцией.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Установить первичный источник шутки и подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как анонимную адаптацию с корректной видимой атрибуцией.",
         "en": "Establish the joke’s primary source and confirm Mansur Gilmullin’s original authorship, or present the item as an anonymous adaptation with correct visible attribution."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/495#pullrequestreview-6045736932"
     },
     {
       "id": "source-date",
       "question": "Подтвердить исходную дату 2023-12-10 проверяемой публичной ссылкой в original_publication.url и source_url либо явно зафиксировать, что исходная ссылка недоступна.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Подтвердить исходную дату 2023-12-10 проверяемой публичной ссылкой в original_publication.url и source_url либо явно зафиксировать, что исходная ссылка недоступна.",
         "en": "Confirm the original date of 2023-12-10 with a verifiable public link in original_publication.url and source_url, or explicitly record that the original link is unavailable."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/495#pullrequestreview-6045736932"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/495#pullrequestreview-6045736932",
+    "source_commit": "9dfe5eb18fa02bdcaf3f13f0b71309077b7f37ad",
+    "source_review_id": 6045736932,
+    "approved_at": "2026-11-24T19:16:04Z",
+    "package_sha256": "d374b05a0b407060e1bd51dbdac1bc4e4b6cbc41ecaa7bc39a3a096a5bd4c022"
   }
 }
