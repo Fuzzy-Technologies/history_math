@@ -25,6 +25,8 @@ original_publication:
   outlet: Telegram · history_math
   date: '2024-07-03'
   preserve_date: true
+  url: https://t.me/history_math/332
+source_url: https://t.me/history_math/332
 figures:
   - id: fig-1
     path: /assets/images/hm-06ce1a45f8b9/figure-01.png
