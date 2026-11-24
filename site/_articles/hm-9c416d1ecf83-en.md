@@ -17,7 +17,7 @@ tags:
   - Dürer
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-9c416d1ecf83-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

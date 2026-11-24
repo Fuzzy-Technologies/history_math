@@ -5,25 +5,34 @@
     {
       "id": "q1",
       "question": "Ссылка MAA Convergence на материал о трактате Дюрера сейчас отвечает HTTP 521, хотя статья и её название остаются в индексе MAA; карточка Британского музея доступна. Перед публикацией подтвердить устойчивый адрес MAA либо заменить ссылку на стабильный индекс MAA или уже указанную цифровую копию трактата в Internet Archive.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Ссылка MAA Convergence на материал о трактате Дюрера сейчас отвечает HTTP 521, хотя статья и её название остаются в индексе MAA; карточка Британского музея доступна. Перед публикацией подтвердить устойчивый адрес MAA либо заменить ссылку на стабильный индекс MAA или уже указанную цифровую копию трактата в Internet Archive.",
         "en": "The MAA Convergence link to the article on Dürer’s treatise currently returns HTTP 521, although the article and title remain indexed by the MAA; the British Museum record is accessible. Before publication, confirm a stable MAA address or replace the link with a stable MAA index or the already cited Internet Archive scan of the treatise."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/449#pullrequestreview-6040049835"
     },
     {
       "id": "q2",
       "question": "Для fig-2 подтверждён точный цифровой источник: Альбрехт Дюрер, «Меланхолия I», 1514, The Metropolitan Museum of Art, 43.106.1, файл DP820348, Public Domain. Для обработанного портрета fig-1 по-прежнему требуется фактический публичный первоисточник и правовое основание использования.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для fig-2 подтверждён точный цифровой источник: Альбрехт Дюрер, «Меланхолия I», 1514, The Metropolitan Museum of Art, 43.106.1, файл DP820348, Public Domain. Для обработанного портрета fig-1 по-прежнему требуется фактический публичный первоисточник и правовое основание использования.",
         "en": "The exact digital source for fig-2 is confirmed: Albrecht Dürer, Melencolia I, 1514, The Metropolitan Museum of Art, 43.106.1, file DP820348, Public Domain. The actual public source and legal basis for the processed portrait in fig-1 are still required."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/449#pullrequestreview-6040049835"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/449#pullrequestreview-6040049835",
+    "source_commit": "51bcb38f58b13f7583ec738faea19f1a2db3a471",
+    "source_review_id": 6040049835,
+    "approved_at": "2026-11-24T13:29:42Z",
+    "package_sha256": "2c97bce34079ffe41b359375957318fbc4546e8874e06ecfe889038ca83ea964"
   }
 }
