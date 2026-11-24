@@ -16,25 +16,34 @@
     {
       "id": "q2",
       "question": "For the special Riccati equation y′ + ay² = bxᵐ, provide in both editions a verified list of the exponent values m corresponding to the integrable cases previously found by Daniel Bernoulli. Check the normalization and list against Liouville’s 1841 paper: https://www.numdam.org/item/JMPA_1841_1_6__1_0.pdf .",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the special Riccati equation y′ + ay² = bxᵐ, provide in both editions a verified list of the exponent values m corresponding to the integrable cases previously found by Daniel Bernoulli. Check the normalization and list against Liouville’s 1841 paper: https://www.numdam.org/item/JMPA_1841_1_6__1_0.pdf .",
         "ru": "Для специального уравнения Риккати вида y′ + ay² = bxᵐ привести в обеих редакциях проверенный перечень значений показателя m, соответствующих случаям интегрируемости, ранее найденным Даниилом Бернулли. Сверить нормировку и перечень с работой Лиувилля 1841 года: https://www.numdam.org/item/JMPA_1841_1_6__1_0.pdf ."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/370#pullrequestreview-6039968407"
     },
     {
       "id": "q3",
       "question": "For the portrait of Joseph Liouville, provide a verifiable public source, the artist or photographer, the date, and the licence or public-domain basis.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the portrait of Joseph Liouville, provide a verifiable public source, the artist or photographer, the date, and the licence or public-domain basis.",
         "ru": "Для портрета Жозефа Лиувилля указать проверяемый публичный источник, автора или фотографа, дату и лицензию либо основание общественного достояния."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/370#pullrequestreview-6039968407"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/370#pullrequestreview-6039968407",
+    "source_commit": "4c953d46d2dba549aa1c0a267eff24ed71a24ab4",
+    "source_review_id": 6039968407,
+    "approved_at": "2026-11-24T13:24:29Z",
+    "package_sha256": "a75ede1587419299b30bfb6fbf6a1287f9b7be362124edb38e9164ecb255e9cf"
   }
 }
