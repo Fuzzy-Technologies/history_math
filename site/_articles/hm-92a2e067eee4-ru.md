@@ -22,8 +22,19 @@ original_publication:
   outlet: Telegram · history_math
   date: '2023-12-24'
   preserve_date: true
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-92a2e067eee4/figure-01.png
+  alt: Учёный сопоставляет книги, песочные часы и стопки монет на свитке, пока богач отдыхает позади.
+  caption: ''
+  source: Иллюстрация редакции журнала, созданная с помощью ИИ.
+  credit: ''
+  rights_basis: Создано для журнала по поручению Тимура Гильмуллина, 2026.
+cover_image: /assets/images/hm-92a2e067eee4/figure-01.png
+preview_image: /assets/images/hm-92a2e067eee4/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 Всем известна поговорка: «Если ты такой умный, то почему ты такой бедный?» Ниже приводится строгое математическое обоснование этого феномена.
 
 Постулат 1: $\text{Знание}=\text{Сила}$

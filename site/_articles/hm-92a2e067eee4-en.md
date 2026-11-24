@@ -22,8 +22,19 @@ original_publication:
   outlet: Telegram · history_math
   date: '2023-12-24'
   preserve_date: true
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-92a2e067eee4/figure-01.png
+  alt: A scholar compares books, an hourglass and stacks of coins on a scroll while a wealthy man reclines behind him.
+  caption: ''
+  source: AI-generated illustration commissioned by the journal.
+  credit: ''
+  rights_basis: Created for the journal at the request of Timur Gilmullin in 2026.
+cover_image: /assets/images/hm-92a2e067eee4/figure-01.png
+preview_image: /assets/images/hm-92a2e067eee4/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 Everyone knows the saying, “If you’re so clever, why are you so poor?” Here is a rigorous mathematical explanation of this phenomenon.
 
 Postulate 1: $\text{Knowledge}=\text{Force}$ (a literal twist on “knowledge is power”).
