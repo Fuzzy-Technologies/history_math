@@ -19,7 +19,7 @@ tags:
   - Complex Analysis
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-0ebee945cafd-en/
 rights_basis: Mansur Gilmullin
 original_publication:

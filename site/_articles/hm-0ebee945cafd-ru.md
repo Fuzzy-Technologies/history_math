@@ -19,7 +19,7 @@ tags:
   - Комплексный анализ
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-0ebee945cafd-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
