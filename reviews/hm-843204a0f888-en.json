@@ -5,7 +5,7 @@
     {
       "id": "squaring-decimal-place-rule",
       "question": "Please clarify the decimal version of the rule: for 5.5, apply the trick to 55, then restore two decimal places. The source result 30.25 is correct, but the decimal-point step is not explained separately; the formulation in terms of tens applies to integers.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "resolution": "Explained that squaring the integer without its decimal point doubles the number of decimal places and worked through 5.5.",
       "localizations": {
