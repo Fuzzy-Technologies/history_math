@@ -5,35 +5,45 @@
     {
       "id": "q1",
       "question": "Review the scope of the claim that this was the first methodology for teaching algebra and the absolute statement about the first half of the nineteenth century; specify “in Russia” if supported. Separately resolve the conflicting publication year for A Course in Algebra: 1867 or 1868.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Review the scope of the claim that this was the first methodology for teaching algebra and the absolute statement about the first half of the nineteenth century; specify “in Russia” if supported. Separately resolve the conflicting publication year for A Course in Algebra: 1867 or 1868.",
         "ru": "Уточнить область утверждения о первой методике обучения алгебре и абсолютное замечание об отсутствии таких вопросов в первой половине XIX века; предложить уточнение «в России», если оно подтверждается. Отдельно разрешить расхождение источников по году выхода «Курса алгебры» — 1867 или 1868."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/391#pullrequestreview-6045723935"
     },
     {
       "id": "q2",
       "question": "Verify the historical naval institution names, the 1866 academy entry and the stated Kovalevskaya and Krylov teaching periods; review the translated titles of the three naval publications.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Verify the historical naval institution names, the 1866 academy entry and the stated Kovalevskaya and Krylov teaching periods; review the translated titles of the three naval publications.",
         "ru": "Сверить исторические названия морских учебных заведений, поступление в академию в 1866 году и указанные периоды занятий с Ковалевской и Крыловым; согласовать английские переводы названий трёх военно-морских работ."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/391#pullrequestreview-6045723935"
     },
     {
       "id": "q3",
       "question": "Identify a verifiable original source for the historical portrait of A. N. Strannolyubsky, the photographer or creator where known, and a licence or confirmed public-domain status. Possession of a copy in an author's archive is not a legal basis for publication.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Identify a verifiable original source for the historical portrait of A. N. Strannolyubsky, the photographer or creator where known, and a licence or confirmed public-domain status. Possession of a copy in an author's archive is not a legal basis for publication.",
         "ru": "Установить проверяемый первоисточник исторического портрета А. Н. Страннолюбского, фотографа или автора при наличии и лицензию либо подтверждённый статус общественного достояния. Хранение копии в авторском архиве не является правовым основанием."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/391#pullrequestreview-6045723935"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/391#pullrequestreview-6045723935",
+    "source_commit": "a480edc5887e8fb94dff285f2f73a822dfe9c86c",
+    "source_review_id": 6045723935,
+    "approved_at": "2026-11-24T19:15:06Z",
+    "package_sha256": "b905a1104501a886de42842396773fa0a1657c215294497cbc7a3f976b73de5a"
   }
 }
