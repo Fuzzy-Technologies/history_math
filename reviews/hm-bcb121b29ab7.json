@@ -27,25 +27,34 @@
     {
       "id": "q3",
       "question": "Уточнить атрибуцию и смысл приоритета метода замены переменных: исходное «одновременно с Остроградским» не утверждает совместного соавторства.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Уточнить атрибуцию и смысл приоритета метода замены переменных: исходное «одновременно с Остроградским» не утверждает совместного соавторства.",
         "en": "Clarify the attribution and priority of the change-of-variables method: the source’s simultaneous-with wording does not assert joint authorship."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/372#pullrequestreview-6039952272"
     },
     {
       "id": "q4",
       "question": "Для исторического портрета Якоби указано только «Иллюстрация к материалу». Установить проверяемый публичный первоисточник, автора изображения (если известен), дату и лицензию либо иное подтверждённое правовое основание; синхронизировать данные фигуры в RU/EN.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для исторического портрета Якоби указано только «Иллюстрация к материалу». Установить проверяемый публичный первоисточник, автора изображения (если известен), дату и лицензию либо иное подтверждённое правовое основание; синхронизировать данные фигуры в RU/EN.",
         "en": "The historical portrait of Jacobi is identified only as an illustration accompanying the text. Establish a verifiable public source, the image creator where known, its date, and a licence or other confirmed legal basis; synchronize the figure metadata in both editions."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/372#pullrequestreview-6039952272"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/372#pullrequestreview-6039952272",
+    "source_commit": "29f76af7238b926a8871c10b3b5b3b3770eccb88",
+    "source_review_id": 6039952272,
+    "approved_at": "2026-11-24T13:23:22Z",
+    "package_sha256": "266f5e36db49f5811700122e11125505bf2ba63de56493fd76fa9f2a941dbffb"
   }
 }

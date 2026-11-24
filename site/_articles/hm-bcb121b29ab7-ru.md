@@ -19,7 +19,7 @@ tags:
   - Определители
 series: Персоналии
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-bcb121b29ab7-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
