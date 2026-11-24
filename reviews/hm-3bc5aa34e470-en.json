@@ -60,25 +60,34 @@
     {
       "id": "english-cover-labels",
       "question": "The English edition uses a Russian-labelled cover with В, Г, В = 7 and Г = 8, while the EN text introduces I and B. Provide an English-localised or language-neutral version of the diagram.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "The English edition uses a Russian-labelled cover with В, Г, В = 7 and Г = 8, while the EN text introduces I and B. Provide an English-localised or language-neutral version of the diagram.",
         "ru": "Английская редакция использует русскоязычную обложку с обозначениями «В», «Г» и подписями «В = 7», «Г = 8», тогда как EN-текст вводит I и B. Нужна английская либо языково-нейтральная версия схемы."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/676#pullrequestreview-6040284995"
     },
     {
       "id": "pick-figure-01-provenance",
       "question": "For fig-1, identify the creator or illustrator, a verifiable public source, and the actual legal basis for publication; “illustration accompanying the text” does not establish the file’s provenance.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For fig-1, identify the creator or illustrator, a verifiable public source, and the actual legal basis for publication; “illustration accompanying the text” does not establish the file’s provenance.",
         "ru": "Для fig-1 указать конкретного автора или иллюстратора, проверяемый публичный источник и фактическое правовое основание публикации; формулировка «иллюстрация к материалу» не подтверждает происхождение файла."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/676#pullrequestreview-6040284995"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/676#pullrequestreview-6040284995",
+    "source_commit": "972fed5da8ddcbdc6482ff925755468ff29a4536",
+    "source_review_id": 6040284995,
+    "approved_at": "2026-11-24T13:44:36Z",
+    "package_sha256": "6f70a232189e540b3b2012d139e13b87ec003de727afd684cef04cc237bd8763"
   }
 }

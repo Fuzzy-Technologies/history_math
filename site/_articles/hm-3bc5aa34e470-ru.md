@@ -18,7 +18,7 @@ tags:
   - Занимательная математика
   - геометрия
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-3bc5aa34e470-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

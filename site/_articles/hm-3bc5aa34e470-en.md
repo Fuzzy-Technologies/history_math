@@ -18,7 +18,7 @@ tags:
   - recreational mathematics
   - geometry
 math: true
-status: draft
+status: published
 permalink: /publications/hm-3bc5aa34e470-en/
 rights_basis: Mansur Gilmullin
 original_publication:
