@@ -20,7 +20,7 @@ tags:
   - Перельман
 series: Задачи
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-d62c351d7eec-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

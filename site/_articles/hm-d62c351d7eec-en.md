@@ -20,7 +20,7 @@ tags:
   - Perelman
 series: Problems
 math: true
-status: draft
+status: published
 permalink: /publications/hm-d62c351d7eec-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
