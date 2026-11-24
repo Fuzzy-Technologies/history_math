@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-55b6abcb4cce",
+  "questions": [
+    {
+      "id": "missing-humor-cover",
+      "question": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
+        "en": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication."
+      },
+      "resolution": "В обеих версиях добавлена согласованная редакцией обложка. https://github.com/Fuzzy-Technologies/history_math/pull/498#pullrequestreview-6045738578"
+    },
+    {
+      "id": "source-authorship",
+      "question": "Установить первичный источник реплики «Какое сегодня число? — Целое положительное» и подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как адаптацию; реплика опубликована как минимум в 1998 году.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Установить первичный источник реплики «Какое сегодня число? — Целое положительное» и подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как адаптацию; реплика опубликована как минимум в 1998 году.",
+        "en": "Establish the primary source of the line “What is today’s date? — A positive integer” and confirm Mansur Gilmullin’s original authorship, or present the item as an adaptation; the line was published at least as early as 1998."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/498#pullrequestreview-6045738578"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/498#pullrequestreview-6045738578",
+    "source_commit": "617224951cba4bd1e6e56d8765789b03c6b2a15b",
+    "source_review_id": 6045738578,
+    "approved_at": "2026-11-24T19:16:11Z",
+    "package_sha256": "a1fa25f8d6a85ea8ff92f9a39561d47b0eb3259e464c17d4aba43affb83c29ed"
+  }
+}
