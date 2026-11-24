@@ -18,7 +18,7 @@ tags:
   - Параллелограмм
   - геометрия
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-251b20bebde7-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

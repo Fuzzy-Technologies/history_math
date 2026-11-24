@@ -18,7 +18,7 @@ tags:
   - parallelograms
   - geometry
 math: false
-status: draft
+status: published
 permalink: /publications/hm-251b20bebde7-en/
 rights_basis: Mansur Gilmullin
 original_publication:
