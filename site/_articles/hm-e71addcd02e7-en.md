@@ -16,7 +16,7 @@ tags:
   - Huygens
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-e71addcd02e7-en/
 rights_basis: Mansur Gilmullin
 original_publication:

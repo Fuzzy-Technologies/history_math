@@ -27,15 +27,23 @@
     {
       "id": "q3",
       "question": "Confirm publicly verifiable original sources, authorship and legal basis for reproducing Huygens’s portrait, the museum photograph of the clock and book, and the title page of Cosmotheoros.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Confirm publicly verifiable original sources, authorship and legal basis for reproducing Huygens’s portrait, the museum photograph of the clock and book, and the title page of Cosmotheoros.",
         "ru": "Подтвердить публично проверяемые первоисточники, авторство и правовое основание воспроизведения портрета Гюйгенса, музейной фотографии часов и книги, а также титульного листа «Cosmotheoros»."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/335#pullrequestreview-6039911344"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/335#pullrequestreview-6039911344",
+    "source_commit": "dfadb68fcf57e022026522aa91ccfe867f8c490a",
+    "source_review_id": 6039911344,
+    "approved_at": "2026-11-24T13:20:29Z",
+    "package_sha256": "f401f590a4c33878a3f08bba36dd62e9a206fe8920ff8bd77f7a39b3459f144e"
   }
 }

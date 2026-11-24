@@ -16,7 +16,7 @@ tags:
   - Гюйгенс
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-e71addcd02e7-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
