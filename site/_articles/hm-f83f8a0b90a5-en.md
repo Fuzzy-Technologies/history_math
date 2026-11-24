@@ -23,6 +23,17 @@ original_publication:
   outlet: Telegram · history_math
   date: '2024-04-28'
   preserve_date: true
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-f83f8a0b90a5/figure-01.png
+  alt: The queen enjoys an illustrated book, then looks ruefully at Carroll’s volumes of geometry.
+  caption: ''
+  source: AI-generated illustration commissioned by the journal.
+  credit: ''
+  rights_basis: Created for the journal at the request of Timur Gilmullin in 2026.
+cover_image: /assets/images/hm-f83f8a0b90a5/figure-01.png
+preview_image: /assets/images/hm-f83f8a0b90a5/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 An anecdote claims that soon after its publication in 1865, Lewis Carroll’s *Alice’s Adventures in Wonderland* came into the hands of the Queen of England. Delighted by Alice’s adventures, she asked for the author’s other books, only to discover that they dealt with… mathematics. Carroll later [rejected this story](https://schnark.github.io/lewis-carroll/html/symbolic-logic/preface.html) in the Advertisement P.S. to the second edition of *Symbolic Logic*.
