@@ -17,7 +17,7 @@ tags:
   - математика
   - делёжка
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-ade2ce882579-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

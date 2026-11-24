@@ -5,25 +5,34 @@
     {
       "id": "camels-missing-fraction",
       "question": "Уточнить объяснение решения в обеих версиях: доли составляют 19/20, но одна двадцатая исходных 19 верблюдов равна 19/20 верблюда, а не одному заёмному верблюду. Выданные 10, 5 и 4 верблюда — доли временного стада из 20 и превышают буквальные доли исходного стада. Следует ли описать это как согласованное перераспределение между наследниками, а не как точное исполнение завещания?",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Уточнить объяснение решения в обеих версиях: доли составляют 19/20, но одна двадцатая исходных 19 верблюдов равна 19/20 верблюда, а не одному заёмному верблюду. Выданные 10, 5 и 4 верблюда — доли временного стада из 20 и превышают буквальные доли исходного стада. Следует ли описать это как согласованное перераспределение между наследниками, а не как точное исполнение завещания?",
         "en": "Clarify the solution in both versions: the shares sum to 19/20, but one twentieth of the original 19 camels is 19/20 of a camel, not the borrowed camel. The allocations 10, 5 and 4 are fractions of the temporary herd of 20 and exceed the literal shares of the original herd. Should the text present this as an agreed redistribution among the heirs rather than as a division exactly following the will?"
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/631#pullrequestreview-6040196868"
     },
     {
       "id": "gerome-camels-painting-provenance",
       "question": "Для обложки с картиной Жана-Леона Жерома «Верблюды на водопое» (1857) указать в метаданных фигуры обеих редакций автора, название и дату, проверяемый публичный источник оригинала и правовое основание использования; запись об авторском архиве здесь неверна.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для обложки с картиной Жана-Леона Жерома «Верблюды на водопое» (1857) указать в метаданных фигуры обеих редакций автора, название и дату, проверяемый публичный источник оригинала и правовое основание использования; запись об авторском архиве здесь неверна.",
         "en": "For the cover using Jean-Léon Gérôme’s Camels at the Watering Place (1857), record the artist, title and date in the figure metadata of both editions, together with a verifiable public source for the original and the legal basis for use; the current author-archive attribution is incorrect."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/631#pullrequestreview-6040196868"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/631#pullrequestreview-6040196868",
+    "source_commit": "9f3732e22f8b15c70a7446f7b9c0359caab407f1",
+    "source_review_id": 6040196868,
+    "approved_at": "2026-11-24T13:39:30Z",
+    "package_sha256": "41a375d7b71b104191286db4189ce5ed714d66ddf12ac7da54e9c45951a07d32"
   }
 }

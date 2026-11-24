@@ -17,7 +17,7 @@ tags:
   - mathematics
   - fair division
 math: true
-status: draft
+status: published
 permalink: /publications/hm-ade2ce882579-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
