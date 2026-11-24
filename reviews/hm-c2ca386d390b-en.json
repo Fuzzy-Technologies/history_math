@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c2ca386d390b-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the year of Raabe’s move to Zurich: the post places the move in autumn 1831, whereas the Historical Dictionary of Switzerland gives 1832. MacTutor dates the cholera outbreak and interruption of his Vienna lessons to autumn 1831, then describes the move without an equally explicit date. The epidemic and the move may have been conflated; approve the wording in both versions. https://hls-dhs-dss.ch/de/articles/031631/ ; https://mathshistory.st-andrews.ac.uk/Biographies/Raabe/ .",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the year of Raabe’s move to Zurich: the post places the move in autumn 1831, whereas the Historical Dictionary of Switzerland gives 1832. MacTutor dates the cholera outbreak and interruption of his Vienna lessons to autumn 1831, then describes the move without an equally explicit date. The epidemic and the move may have been conflated; approve the wording in both versions. https://hls-dhs-dss.ch/de/articles/031631/ ; https://mathshistory.st-andrews.ac.uk/Biographies/Raabe/ .",
+        "ru": "Сверить год переезда Раабе в Цюрих: пост связывает сам переезд с осенью 1831 года, тогда как Исторический словарь Швейцарии указывает 1832 год. В MacTutor осень 1831 относится к эпидемии и прекращению уроков в Вене, затем описан отъезд без столь же явной даты. Возможно, смешаны начало эпидемии и переезд; согласовать обе версии. https://hls-dhs-dss.ch/de/articles/031631/ ; https://mathshistory.st-andrews.ac.uk/Biographies/Raabe/ ."
+      },
+      "resolution": "Corrected from the Historical Dictionary of Switzerland: the cholera epidemic and interruption of Raabe’s lessons belong to autumn 1831, while his move to Zurich occurred in 1832."
+    },
+    {
+      "id": "q2",
+      "question": "For the original and retouched portraits of Raabe, provide the actual public source, creator or edition, and a licence or public-domain basis. Record the provenance of the retouch separately; “from the author’s archive” does not make a third-party historical image an author-created work.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "For the original and retouched portraits of Raabe, provide the actual public source, creator or edition, and a licence or public-domain basis. Record the provenance of the retouch separately; “from the author’s archive” does not make a third-party historical image an author-created work.",
+        "ru": "Для исходного и ретушированного портретов Раабе указать фактический публичный источник, автора/издание и лицензию либо основание общественного достояния. Отдельно зафиксировать происхождение ретуши; «из авторского архива» не превращает историческое изображение третьего лица в авторское."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/450#pullrequestreview-6040049925"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/450#pullrequestreview-6040049925",
+    "source_commit": "a640b5b5743c9e5ee52c1d2d0cdb5bbd3d6b21b5",
+    "source_review_id": 6040049925,
+    "approved_at": "2026-11-24T13:29:43Z",
+    "package_sha256": "ed3362a6b6f88e20d5a52e83be2b11564b20ca35bee65eff11adf365f5485fbb"
+  }
+}
