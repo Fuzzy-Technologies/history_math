@@ -79,7 +79,7 @@ cover_image: /assets/images/hm-9c416d1ecf83/figure-01.png
 
 {% include article-figure.html id="fig-2" %}
 
-[Карточка гравюры в Метрополитен-музее](https://www.metmuseum.org/art/collection/search/336228) · [Цифровая копия DP820348](https://commons.wikimedia.org/wiki/File:Melencolia_I_MET_DP820348.jpg).
+[Карточка гравюры в Метрополитен-музее](https://www.metmuseum.org/art/collection/search/336228) · [Цифровая копия DP820348](https://commons.wikimedia.org/wiki/File:Melencolia_I_MET_DP820348.jpg?uselang=ru).
 
 Дополнительную информацию об Альбрехте Дюрере можно найти в следующих источниках:
 
