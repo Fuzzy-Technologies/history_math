@@ -49,15 +49,23 @@
     {
       "id": "image-provenance",
       "question": "Identify the creators, verifiable public sources and legal bases for Alexey Pogorelov’s portrait and the textbook-cover image; the current generic wording does not establish provenance or rights.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Identify the creators, verifiable public sources and legal bases for Alexey Pogorelov’s portrait and the textbook-cover image; the current generic wording does not establish provenance or rights.",
         "ru": "Установить авторов, проверяемые публичные источники и правовые основания для портрета А. В. Погорелова и изображения обложки учебника; текущие общие формулировки не подтверждают происхождение и права."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/373#pullrequestreview-6039960214"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/373#pullrequestreview-6039960214",
+    "source_commit": "e94a099be926d2e07a361e8e7a4363fb30e90c52",
+    "source_review_id": 6039960214,
+    "approved_at": "2026-11-24T13:23:55Z",
+    "package_sha256": "9466440d3b15e5415d0517d84734f5b86797281e940398eeb5a6dd368f23f316"
   }
 }
