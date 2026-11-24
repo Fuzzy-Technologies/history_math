@@ -23,6 +23,17 @@ original_publication:
   outlet: Telegram · history_math
   date: '2024-04-07'
   preserve_date: true
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-677b7fa2ed54/figure-01.png
+  alt: Ampère leaves a note on his door, goes out, and returns that evening to puzzle over it.
+  caption: ''
+  source: AI-generated illustration commissioned by the journal.
+  credit: ''
+  rights_basis: Created for the journal at the request of Timur Gilmullin in 2026.
+cover_image: /assets/images/hm-677b7fa2ed54/figure-01.png
+preview_image: /assets/images/hm-677b7fa2ed54/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 A familiar anecdote portrays the celebrated French physicist and mathematician André-Marie Ampère (1775–1836) as extraordinarily absent-minded. One day, as he left home, he wrote on the door in chalk: “Gentlemen, the master of the house is out. Please call again this evening.” Ampère soon returned, but on seeing the notice he went away again. He did not come home until late that evening.
