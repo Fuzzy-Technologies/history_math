@@ -64,7 +64,7 @@ Try the other exercises yourself, then see the additional answers in Notes.
 
 ### Additional solutions
 
-To draw a perpendicular from A to BC—an altitude—fold the triangle along a line through A so that edge BC coincides with itself. The resulting crease is perpendicular to BC.
+To draw a perpendicular from A to BC — an altitude — fold the triangle along a line through A so that edge BC coincides with itself. The resulting crease is perpendicular to BC.
 
 To construct the median to BC, first find the midpoint of that segment. Then join it to vertex A with a crease.
 
