@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Verify “Knowledge is power”: the Latin formulation occurs in Francis Bacon’s Meditationes sacrae, De haeresibus (1597); primary text in Works, vol. VII, p. 241 (PDF page 245): https://proyectoscio.ucv.es/wp-content/uploads/2015/06/Bacon-Works7.pdf . Approve removing or rephrasing its attribution to Roger in both languages, then review the corresponding tag.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify “Knowledge is power”: the Latin formulation occurs in Francis Bacon’s Meditationes sacrae, De haeresibus (1597); primary text in Works, vol. VII, p. 241 (PDF page 245): https://proyectoscio.ucv.es/wp-content/uploads/2015/06/Bacon-Works7.pdf . Approve removing or rephrasing its attribution to Roger in both languages, then review the corresponding tag.",
