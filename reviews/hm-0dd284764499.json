@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0dd284764499",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить формулировку о 1951 годе: выход в отставку и возвращение в Цюрих не означают разрыва с IAS, который указывает статус Professor Emeritus в 1951–1955: https://www.ias.edu/math/people/past-faculty . При необходимости дополнить обе версии коротким уточнением, сохранив авторский объём.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Уточнить формулировку о 1951 годе: выход в отставку и возвращение в Цюрих не означают разрыва с IAS, который указывает статус Professor Emeritus в 1951–1955: https://www.ias.edu/math/people/past-faculty . При необходимости дополнить обе версии коротким уточнением, сохранив авторский объём.",
+        "en": "Clarify the 1951 wording: retirement and a return to Zurich did not end his IAS affiliation, which continued as Professor Emeritus in 1951–1955, https://www.ias.edu/math/people/past-faculty . Approve a brief clarification in both versions if needed."
+      },
+      "resolution": "Формулировка уточнена по списку бывших сотрудников IAS: после возвращения в Цюрих Вейль сохранял статус Professor Emeritus в 1951–1955 годах."
+    },
+    {
+      "id": "q2",
+      "question": "Для иллюстраций 1 и 3 установить публичные источники, авторов или учреждения и лицензию либо основание общественного достояния. Иллюстрация 2 — портрет Portr_00890 из ETH Zürich / фотоархива ETH-Bibliothek Zürich, лицензированный CC BY-SA 3.0 с подтверждением VRT на Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Hermann_Weyl_ETH-Bib_Portr_00890.jpg .",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для иллюстраций 1 и 3 установить публичные источники, авторов или учреждения и лицензию либо основание общественного достояния. Иллюстрация 2 — портрет Portr_00890 из ETH Zürich / фотоархива ETH-Bibliothek Zürich, лицензированный CC BY-SA 3.0 с подтверждением VRT на Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Hermann_Weyl_ETH-Bib_Portr_00890.jpg .",
+        "en": "For figures 1 and 3, establish public sources, creators or holding institutions, and the licence or public-domain basis. Figure 2 is the ETH Zürich / ETH-Bibliothek Zürich Bildarchiv portrait Portr_00890, licensed CC BY-SA 3.0 with VRT confirmation on Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Hermann_Weyl_ETH-Bib_Portr_00890.jpg ."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/430#pullrequestreview-6040021376"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/430#pullrequestreview-6040021376",
+    "source_commit": "32911b527d6dc4cc8c6bbfdd103ddf2a1c3ce47a",
+    "source_review_id": 6040021376,
+    "approved_at": "2026-11-24T13:27:59Z",
+    "package_sha256": "826982ff2fd4443ff0a6fd6608ecdd94da30fb6e20b38d9be39d8b5cb54be62e"
+  }
+}
