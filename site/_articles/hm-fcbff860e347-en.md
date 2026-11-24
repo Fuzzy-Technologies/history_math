@@ -31,6 +31,8 @@ figures:
     alt: An isosceles right triangle ABC with right angle C; a grey lune lies between an arc centred at C and a semicircle with diameter AB
     caption: "Hippocrates’ lune. Adapted from Mawillcockson"
     source: "[LuneOfHippocrates.svg](https://commons.wikimedia.org/wiki/File:LuneOfHippocrates.svg), Wikimedia Commons."
+    credit: "LuneOfHippocrates.svg, Wikimedia Commons."
+    source_url: "https://commons.wikimedia.org/wiki/File:LuneOfHippocrates.svg"
     rights_basis: "Adapted from Mawillcockson’s diagram, dedicated to the public domain under CC0 1.0."
 preview_image: /assets/images/hm-fcbff860e347/figure-01.png
 cover_image: /assets/images/hm-fcbff860e347/figure-01.png

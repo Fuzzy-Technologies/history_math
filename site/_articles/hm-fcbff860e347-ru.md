@@ -31,6 +31,8 @@ figures:
     alt: Равнобедренный прямоугольный треугольник ABC с прямым углом C; серая луночка ограничена дугой окружности с центром C и полуокружностью с диаметром AB
     caption: "Луночка Гиппократа. Адаптация схемы Mawillcockson"
     source: "[LuneOfHippocrates.svg](https://commons.wikimedia.org/wiki/File:LuneOfHippocrates.svg), Wikimedia Commons."
+    credit: "LuneOfHippocrates.svg, Wikimedia Commons."
+    source_url: "https://commons.wikimedia.org/wiki/File:LuneOfHippocrates.svg"
     rights_basis: "Адаптация схемы Mawillcockson, переданной в общественное достояние по CC0 1.0."
 preview_image: /assets/images/hm-fcbff860e347/figure-01.png
 cover_image: /assets/images/hm-fcbff860e347/figure-01.png
