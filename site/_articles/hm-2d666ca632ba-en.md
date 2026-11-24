@@ -18,7 +18,7 @@ tags:
   - watermelon
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-2d666ca632ba-en/
 rights_basis: Mansur Gilmullin
 original_publication:

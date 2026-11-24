@@ -18,7 +18,7 @@ tags:
   - арбуз
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-2d666ca632ba-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
