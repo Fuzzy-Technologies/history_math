@@ -45,7 +45,7 @@
     {
       "id": "lenin-prize-year",
       "question": "The transferred text gave 1956 as the year of Zeldovich’s Lenin Prize.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "resolution": "The year has been corrected to 1957 using Zeldovich’s autobiography and the Rosatom history directory: https://library.istu.edu/hoe/personalia/zeldovich.pdf ; https://www.biblioatom.ru/persons/zeldovich_yakov_borisovich/",
       "localizations": {

@@ -45,7 +45,7 @@
     {
       "id": "lenin-prize-year",
       "question": "В исходном переносе год Ленинской премии Зельдовича был указан как 1956.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "resolution": "Год исправлен на 1957 по автобиографии Зельдовича и справочнику по истории Росатома: https://library.istu.edu/hoe/personalia/zeldovich.pdf ; https://www.biblioatom.ru/persons/zeldovich_yakov_borisovich/",
       "localizations": {
