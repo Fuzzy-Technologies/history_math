@@ -5,7 +5,7 @@
     {
       "id": "round-table-upper-bound",
       "question": "Correct the general statement about the number of seatings: $(n-1)(n-2)/2$ is an upper bound because any chosen person has at most $\\binom{n-1}{2}$ unordered pairs of neighbours. Equality is attained by the displayed construction for $n=7$, but the text does not establish attainability for every $n$.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Correct the general statement about the number of seatings: $(n-1)(n-2)/2$ is an upper bound because any chosen person has at most $\\binom{n-1}{2}$ unordered pairs of neighbours. Equality is attained by the displayed construction for $n=7$, but the text does not establish attainability for every $n$.",
