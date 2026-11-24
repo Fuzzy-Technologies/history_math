@@ -23,6 +23,17 @@ original_publication:
   outlet: Telegram · history_math
   date: '2024-06-09'
   preserve_date: true
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-1ad5c1f54b91/figure-01.png
+  alt: Ampère runs after a horse-drawn carriage, still chalking on its back panel.
+  caption: ''
+  source: AI-generated illustration commissioned by the journal.
+  credit: ''
+  rights_basis: Created for the journal at the request of Timur Gilmullin in 2026.
+cover_image: /assets/images/hm-1ad5c1f54b91/figure-01.png
+preview_image: /assets/images/hm-1ad5c1f54b91/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 According to a familiar anecdote, André Ampère (1775–1836), one of the founders of modern electrodynamics, was walking down the street, carrying out complicated calculations in his head. Suddenly he saw a blackboard in front of him. He took out a piece of chalk, which he always carried, and began writing formulas on it rapidly. The board started moving. Ampère followed it, then began to run. The laughter of passers-by brought him to his senses. What he had taken for a blackboard, now covered in formulas, was actually the back of someone’s carriage.
