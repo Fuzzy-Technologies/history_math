@@ -18,7 +18,7 @@ tags:
   - Grassmann
 series: People
 math: true
-status: draft
+status: published
 permalink: /publications/hm-94506bec5bed-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
