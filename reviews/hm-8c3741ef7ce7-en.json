@@ -5,25 +5,34 @@
     {
       "id": "death-date",
       "question": "Confirm the date of death: the [Österreichisches Biographisches Lexikon](https://www.biographien.ac.at/oebl/oebl_G/Grube_August-Wilhelm_1816_1884.xml) supports the source’s 28 January 1884, while the [Allgemeine Deutsche Biographie](https://www.deutsche-biographie.de/sfz24124.html) gives 27 January twice. Also confirm the source date 2026-12-15: as of 7 November 2026 the Telegram publication had not yet appeared.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Confirm the date of death: the [Österreichisches Biographisches Lexikon](https://www.biographien.ac.at/oebl/oebl_G/Grube_August-Wilhelm_1816_1884.xml) supports the source’s 28 January 1884, while the [Allgemeine Deutsche Biographie](https://www.deutsche-biographie.de/sfz24124.html) gives 27 January twice. Also confirm the source date 2026-12-15: as of 7 November 2026 the Telegram publication had not yet appeared.",
         "ru": "Согласовать дату смерти: [Österreichisches Biographisches Lexikon](https://www.biographien.ac.at/oebl/oebl_G/Grube_August-Wilhelm_1816_1884.xml) подтверждает авторское 28 января 1884 года, а [Allgemeine Deutsche Biographie](https://www.deutsche-biographie.de/sfz24124.html) дважды указывает 27 января. Дополнительно подтвердить исходную дату 2026-12-15: на 07.11.2026 публикация в Telegram ещё не состоялась."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/478#pullrequestreview-6043451152"
     },
     {
       "id": "collage-component-provenance",
       "question": "The two historical title pages in the collage need separate verifiable sources, publishers or creators where known, and a rights basis for each component; the generic wording “illustration accompanying the text” is insufficient.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "The two historical title pages in the collage need separate verifiable sources, publishers or creators where known, and a rights basis for each component; the generic wording “illustration accompanying the text” is insufficient.",
         "ru": "Для двух исторических титульных листов в коллаже нужны отдельные проверяемые источники, издатели или создатели, где они известны, и правовое основание каждого компонента; общей формулировки «иллюстрация к материалу» недостаточно."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/478#pullrequestreview-6043451152"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/478#pullrequestreview-6043451152",
+    "source_commit": "b99a3e06b775f827622314bab02799a931802a62",
+    "source_review_id": 6043451152,
+    "approved_at": "2026-11-24T16:41:05Z",
+    "package_sha256": "e3f22d9caf53f22e5ed4c47f0eefd153b53b1b220995a38c5eb54926feae9278"
   }
 }

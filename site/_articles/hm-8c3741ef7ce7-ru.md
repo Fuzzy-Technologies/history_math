@@ -19,7 +19,7 @@ tags:
   - Методика преподавания математики
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-8c3741ef7ce7-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
