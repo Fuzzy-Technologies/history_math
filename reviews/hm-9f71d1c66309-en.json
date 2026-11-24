@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Clarify the official name of the council of rectors in whose work Nuzhin participated.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Clarify the official name of the council of rectors in whose work Nuzhin participated.",
@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "Check attribution of the personal postscript and consistency of English names and the honorary title.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Check attribution of the personal postscript and consistency of English names and the honorary title.",
