@@ -17,7 +17,7 @@ tags:
   - Borel
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-be9bb8a68aaa-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

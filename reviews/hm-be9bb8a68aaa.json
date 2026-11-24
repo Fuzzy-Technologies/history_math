@@ -16,12 +16,13 @@
     {
       "id": "q2",
       "question": "Указать источники эпиграфа Бореля и рассказа о том, что он выучил начала геометрии в трёхлетнем возрасте.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Указать источники эпиграфа Бореля и рассказа о том, что он выучил начала геометрии в трёхлетнем возрасте.",
         "en": "Supply the sources of Borel’s epigraph and of the story that he learned the rudiments of geometry at the age of three."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/432#pullrequestreview-6040021723"
     },
     {
       "id": "q3",
@@ -37,15 +38,23 @@
     {
       "id": "q4",
       "question": "Для ретуши на иллюстрации 2 установить автора либо разрешившее её лицо и правовое основание производной версии. Обе иллюстрации восходят к фотографии Agence Mondial Photo-Presse 1932 года из Национальной библиотеки Франции (Gallica); исходная фотография находится в общественном достоянии во Франции и США по карточке Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Emile_Borel-1932.jpg .",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для ретуши на иллюстрации 2 установить автора либо разрешившее её лицо и правовое основание производной версии. Обе иллюстрации восходят к фотографии Agence Mondial Photo-Presse 1932 года из Национальной библиотеки Франции (Gallica); исходная фотография находится в общественном достоянии во Франции и США по карточке Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Emile_Borel-1932.jpg .",
         "en": "For figure 2, identify who created or authorized the retouch and establish a rights basis for that derivative. Both figures derive from the 1932 Agence Mondial Photo-Presse photograph held by the Bibliothèque nationale de France (Gallica); the underlying photograph is public domain in France and the United States as documented by Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Emile_Borel-1932.jpg ."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/432#pullrequestreview-6040021723"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/432#pullrequestreview-6040021723",
+    "source_commit": "217b0b69aeb52112bb350e0eded241cd5f1dfff9",
+    "source_review_id": 6040021723,
+    "approved_at": "2026-11-24T13:28:00Z",
+    "package_sha256": "99f447b33cc98381353019ba4960ed3a8ef4e068178ecab6eef9a88cd3790939"
   }
 }

@@ -17,7 +17,7 @@ tags:
   - Борель
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-be9bb8a68aaa-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
