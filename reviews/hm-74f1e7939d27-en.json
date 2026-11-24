@@ -5,7 +5,7 @@
     {
       "id": "married-couples-calendar-qualification",
       "question": "Please qualify “the totals will match” and “the sum always equals twice the current year”. With completed years the total is 2T−εb−εw, where εb is 1 before the birthday and εw is 1 before the wedding anniversary. Spouses share the anniversary adjustment, but it can reduce both totals; birthdays can produce the difference of 1 already mentioned at the end. Please agree a qualified conclusion and the conditions of the 2025 example while preserving the reveal.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Please qualify “the totals will match” and “the sum always equals twice the current year”. With completed years the total is 2T−εb−εw, where εb is 1 before the birthday and εw is 1 before the wedding anniversary. Spouses share the anniversary adjustment, but it can reduce both totals; birthdays can produce the difference of 1 already mentioned at the end. Please agree a qualified conclusion and the conditions of the 2025 example while preserving the reveal.",
