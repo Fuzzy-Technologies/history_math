@@ -25,7 +25,9 @@
     {
       "id": "q3",
       "question": "Verify Furtwängler’s given name: the post says Karl, while the IAS account names Philipp, https://www.ias.edu/kurt-g%C3%B6del-life-work-and-legacy . Approve the name correction in both versions.",
-      "blocking": true,
+      "id": "q3",
+      "question": "Verify Furtwängler’s given name: the post says Karl, while the IAS account names Philipp, https://www.ias.edu/kurt-g%C3%B6del-life-work-and-legacy . Approve the name correction in both versions.",
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify Furtwängler’s given name: the post says Karl, while the IAS account names Philipp, https://www.ias.edu/kurt-g%C3%B6del-life-work-and-legacy . Approve the name correction in both versions.",
@@ -36,7 +38,9 @@
     {
       "id": "q4",
       "question": "Approve correction of the claim that he published no logical research after 1940: his 1958 Dialectica paper on extending the finitary standpoint, 12: 3–4, pp. 280–287, https://doi.org/10.1111/j.1746-8361.1958.tb01464.x , is research rather than merely philosophical commentary.",
-      "blocking": true,
+      "id": "q4",
+      "question": "Approve correction of the claim that he published no logical research after 1940: his 1958 Dialectica paper on extending the finitary standpoint, 12: 3–4, pp. 280–287, https://doi.org/10.1111/j.1746-8361.1958.tb01464.x , is research rather than merely philosophical commentary.",
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Approve correction of the claim that he published no logical research after 1940: his 1958 Dialectica paper on extending the finitary standpoint, 12: 3–4, pp. 280–287, https://doi.org/10.1111/j.1746-8361.1958.tb01464.x , is research rather than merely philosophical commentary.",
