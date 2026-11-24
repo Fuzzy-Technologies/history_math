@@ -21,7 +21,7 @@ tags:
   - Kozlov
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-f947fb8c72e1-en/
 rights_basis: Mansur Gilmullin
 original_publication:

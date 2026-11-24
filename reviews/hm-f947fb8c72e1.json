@@ -5,15 +5,23 @@
     {
       "id": "portrait-provenance-and-subject",
       "question": "Для fig-2 и fig-3 укажите изображённых людей, исходные произведения или фотографов, правообладателей, проверяемые публичные источники и правовые основания использования; для fig-2 отдельно подтвердите личность изображённого человека.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для fig-2 и fig-3 укажите изображённых людей, исходные произведения или фотографов, правообладателей, проверяемые публичные источники и правовые основания использования; для fig-2 отдельно подтвердите личность изображённого человека.",
         "en": "For fig-2 and fig-3, identify the people shown, the source works or photographers, the rightsholders, verifiable public sources, and the legal bases for use; for fig-2, also confirm the identity of the person depicted."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/600#pullrequestreview-6040158373"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/600#pullrequestreview-6040158373",
+    "source_commit": "607642e6633dd591668ecfcd381645d68211981b",
+    "source_review_id": 6040158373,
+    "approved_at": "2026-11-24T13:36:55Z",
+    "package_sha256": "5397afb1919d9af0fcbe6ab94aa18641114b11dd76c7745a8124e20677a5e0a3"
   }
 }

@@ -21,7 +21,7 @@ tags:
   - Козлов
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-f947fb8c72e1-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
