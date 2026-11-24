@@ -27,15 +27,23 @@
     {
       "id": "q3",
       "question": "Establish the public original source of the portrait of Henri Poincaré, its photographer or creator, and its license or confirmed public-domain status in both editions.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Establish the public original source of the portrait of Henri Poincaré, its photographer or creator, and its license or confirmed public-domain status in both editions.",
         "ru": "Установить публичный первоисточник портрета Анри Пуанкаре, фотографа/автора и лицензию либо подтверждённый статус общественного достояния в обеих редакциях."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/356#pullrequestreview-6039935509"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/356#pullrequestreview-6039935509",
+    "source_commit": "f2130bd3195525fe45e1d735d6a73b620c3f9e20",
+    "source_review_id": 6039935509,
+    "approved_at": "2026-11-24T13:22:11Z",
+    "package_sha256": "1261322630973f0e321d0c745784f709d1f1a5de6323f30b843e2bfbd2ae5369"
   }
 }
