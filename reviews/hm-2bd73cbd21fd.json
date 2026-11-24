@@ -5,15 +5,23 @@
     {
       "id": "peasant-epigraph-attribution",
       "question": "Подтвердить первоисточники и точность формулировок эпиграфов, приписанных Лейбницу («Прежде, чем спорить, давайте считать») и Уоррену Баффетту («Если вы все такие умные, то почему тогда я такой богатый?»). В исходном посте ссылок на них нет.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Подтвердить первоисточники и точность формулировок эпиграфов, приписанных Лейбницу («Прежде, чем спорить, давайте считать») и Уоррену Баффетту («Если вы все такие умные, то почему тогда я такой богатый?»). В исходном посте ссылок на них нет.",
         "en": "Please confirm primary sources and exact wording for the epigraphs attributed to Leibniz and Warren Buffett. The source post provides no references for them."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/658#pullrequestreview-6040251893"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/658#pullrequestreview-6040251893",
+    "source_commit": "98aa498e2400fc2aaf7478c12706b8a067270eec",
+    "source_review_id": 6040251893,
+    "approved_at": "2026-11-24T13:42:41Z",
+    "package_sha256": "f536ae14d552ac2c5dfcc9379eaff38246e4dc6b8c5cc4ce645467511f01ff21"
   }
 }

@@ -20,7 +20,7 @@ tags:
   - деньги
   - Игнатьев
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-2bd73cbd21fd-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

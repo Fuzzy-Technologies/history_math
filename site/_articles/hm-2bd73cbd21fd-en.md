@@ -20,7 +20,7 @@ tags:
   - money
   - Ignatyev
 math: false
-status: draft
+status: published
 permalink: /publications/hm-2bd73cbd21fd-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
