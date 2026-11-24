@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1ad5c1f54b91",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет.",
+        "en": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration."
+      },
+      "resolution": "В обеих версиях добавлена согласованная редакцией обложка. https://github.com/Fuzzy-Technologies/history_math/pull/516#pullrequestreview-6045743428"
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 09.06.2024; адрес нельзя восстанавливать предположительно.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 09.06.2024; адрес нельзя восстанавливать предположительно.",
+        "en": "Provide a public link to the original publication confirming the date 09.06.2024; the address must not be guessed."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/516#pullrequestreview-6045743428"
+    },
+    {
+      "id": "source-authorship",
+      "question": "Указать точный источник и библиографический локатор анекдота об Ампере и карете: русская редакция близко воспроизводит более ранний текст «Открытие не удалилось» из компиляции «Уголок весёлого архивариуса-3 (1976–1980)». Уточнить исходное авторство и основание адаптации либо оформить сюжет как явно атрибутированный пересказ; синхронизировать RU/EN.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Указать точный источник и библиографический локатор анекдота об Ампере и карете: русская редакция близко воспроизводит более ранний текст «Открытие не удалилось» из компиляции «Уголок весёлого архивариуса-3 (1976–1980)». Уточнить исходное авторство и основание адаптации либо оформить сюжет как явно атрибутированный пересказ; синхронизировать RU/EN.",
+        "en": "Provide the exact source and bibliographic locator for the Ampère-and-carriage anecdote: the Russian edition closely follows the earlier story “Otkrytie ne udalilos” in the compilation Ugolok vesyologo arkhivariusa-3 (1976–1980). Clarify the original authorship and basis for adaptation, or present the story as an explicitly attributed retelling; keep RU/EN synchronized."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/516#pullrequestreview-6045743428"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/516#pullrequestreview-6045743428",
+    "source_commit": "403d7a8e67ec4994122f057394ed520aac1b6f38",
+    "source_review_id": 6045743428,
+    "approved_at": "2026-11-24T19:16:31Z",
+    "package_sha256": "e4ffbd0e0c5319217acaf5bce3d88f3d4d7a15ff133ace2fb596d23d48417802"
+  }
+}
