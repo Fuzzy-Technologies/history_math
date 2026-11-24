@@ -20,7 +20,7 @@ tags:
   - MIT
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-c6ff1b49de3c-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

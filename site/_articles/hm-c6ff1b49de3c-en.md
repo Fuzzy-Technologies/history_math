@@ -18,7 +18,7 @@ tags:
   - MIT
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-c6ff1b49de3c-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

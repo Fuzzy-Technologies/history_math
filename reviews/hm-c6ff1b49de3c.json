@@ -27,35 +27,45 @@
     {
       "id": "q3",
       "question": "Проверить членство Стройка в нидерландской компартии до конца жизни. Сохранить различия между изданиями 1978 и 1990 годов и проверить указанное для издания 1990 года «Пер. с нем.».",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Проверить членство Стройка в нидерландской компартии до конца жизни. Сохранить различия между изданиями 1978 и 1990 годов и проверить указанное для издания 1990 года «Пер. с нем.».",
         "en": "Verify Struik’s lifelong membership in the Communist Party of the Netherlands. Preserve the distinction between the 1978 and 1990 editions and check the 1990 edition’s stated translation from German."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/398#pullrequestreview-6045724963"
     },
     {
       "id": "q4",
       "question": "Установить для двух исторических портретов Дирка Стройка и двух издательских обложек проверяемые источники, фотографов/издателей и правовые основания; формулировка «авторский архив» описывает хранение копий, но не их происхождение и не право публикации.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Установить для двух исторических портретов Дирка Стройка и двух издательских обложек проверяемые источники, фотографов/издателей и правовые основания; формулировка «авторский архив» описывает хранение копий, но не их происхождение и не право публикации.",
         "en": "Establish verifiable sources, photographers or publishers, and legal bases for the two historical portraits of Dirk Struik and the two publisher’s book covers; “the author’s archive” describes storage of the copies, not their origin or publication rights."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/398#pullrequestreview-6045724963"
     },
     {
       "id": "centenary-lectures-and-three-ms",
       "question": "Согласовать рассказ о лекциях после столетия и двух ответах о долголетии. Заголовок обещает, что Стройк читал лекции после 100 лет, но текст этого не раскрывает; AMS и Tufts сообщают о юбилейной лекции и выступлениях ещё четыре года. Tufts относит ответ «Matrimony, Moderation and Mirth» к другому вопросу о долголетии, а ответом на вопрос в столетний день было «My wife». Исправить обе редакции и не смешивать эпизоды. Источники: https://www.ams.org/journals/notices/200106/200106FullIssue.pdf и https://math.tufts.edu/people/featured-profiles/dirk-jan-struik",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Согласовать рассказ о лекциях после столетия и двух ответах о долголетии. Заголовок обещает, что Стройк читал лекции после 100 лет, но текст этого не раскрывает; AMS и Tufts сообщают о юбилейной лекции и выступлениях ещё четыре года. Tufts относит ответ «Matrimony, Moderation and Mirth» к другому вопросу о долголетии, а ответом на вопрос в столетний день было «My wife». Исправить обе редакции и не смешивать эпизоды. Источники: https://www.ams.org/journals/notices/200106/200106FullIssue.pdf и https://math.tufts.edu/people/featured-profiles/dirk-jan-struik",
         "en": "Reconcile the account of Struik’s lectures after his centenary and the two longevity answers. The title says that he lectured after turning 100, but the body does not explain this; AMS and Tufts report a centenary lecture followed by four more years of speaking. Tufts attributes “Matrimony, Moderation and Mirth” to a different longevity question, while his answer on his hundredth birthday was “My wife”. Correct both editions without conflating the episodes. Sources: https://www.ams.org/journals/notices/200106/200106FullIssue.pdf and https://math.tufts.edu/people/featured-profiles/dirk-jan-struik"
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/398#pullrequestreview-6045724963"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/398#pullrequestreview-6045724963",
+    "source_commit": "32146d7f8020720d1f381f0e410a4d9a4abe2746",
+    "source_review_id": 6045724963,
+    "approved_at": "2026-11-24T19:15:11Z",
+    "package_sha256": "b3f647104ba3863fb9e35541009997ffbef0c8ee3073674c6b034f754cafc911"
   }
 }
