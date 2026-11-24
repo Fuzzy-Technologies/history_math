@@ -5,25 +5,34 @@
     {
       "id": "billiards-cover-rights",
       "question": "For Guy Buffet’s painting Billiards, identify the actual artist, a verifiable public source, and a valid permission or licence; storing a copy in the author’s archive is not a rights basis.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For Guy Buffet’s painting Billiards, identify the actual artist, a verifiable public source, and a valid permission or licence; storing a copy in the author’s archive is not a rights basis.",
         "ru": "Указать для картины Ги Бюффе «Billiards» реального автора, проверяемый публичный источник и действительное разрешение или лицензию; хранение копии в авторском архиве не является правовым основанием."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/632#pullrequestreview-6040206239"
     },
     {
       "id": "source-authorship-attribution",
       "question": "The source attributes the problem to Sam Loyd, yet authorship and the root rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the original authorship from Mansur’s adaptation, translation, and editing.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "The source attributes the problem to Sam Loyd, yet authorship and the root rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the original authorship from Mansur’s adaptation, translation, and editing.",
         "ru": "Задача приписана в источнике Сэму Лойду, но авторство и корневой rights_basis целиком отданы Мансуру Гильмуллину. Нужно разделить авторство оригинала и вклад Мансура — адаптацию, перевод и редакцию."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/632#pullrequestreview-6040206239"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/632#pullrequestreview-6040206239",
+    "source_commit": "35edfadeaeb23079be40593f36efeb054b03a59d",
+    "source_review_id": 6040206239,
+    "approved_at": "2026-11-24T13:40:06Z",
+    "package_sha256": "bae287197c6ddbc0badc38dd87449ae43fe81f49fb581edcc63ee388a06a0b31"
   }
 }
