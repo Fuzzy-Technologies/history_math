@@ -16,45 +16,56 @@
     {
       "id": "missing-humor-cover",
       "question": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
         "en": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication."
-      }
+      },
+      "resolution": "В обеих версиях добавлена согласованная редакцией обложка. https://github.com/Fuzzy-Technologies/history_math/pull/496#pullrequestreview-6045737188"
     },
     {
       "id": "source-date",
       "question": "Подтвердить исходную дату 2023-12-24 проверяемой публичной ссылкой в original_publication.url и source_url либо явно зафиксировать, что исходная ссылка недоступна.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Подтвердить исходную дату 2023-12-24 проверяемой публичной ссылкой в original_publication.url и source_url либо явно зафиксировать, что исходная ссылка недоступна.",
         "en": "Confirm the original date of 2023-12-24 with a verifiable public link in original_publication.url and source_url, or explicitly record that the original link is unavailable."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/496#pullrequestreview-6045737188"
     },
     {
       "id": "source-authorship",
       "question": "Установить первичный источник шуточного доказательства и подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как анонимную адаптацию; вариант с теми же аксиомами и выводом опубликован не позднее февраля 1999 года: https://db.chgk.net/question/smcat99.2/16.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Установить первичный источник шуточного доказательства и подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как анонимную адаптацию; вариант с теми же аксиомами и выводом опубликован не позднее февраля 1999 года: https://db.chgk.net/question/smcat99.2/16.",
         "en": "Establish the primary source of the mock proof and confirm Mansur Gilmullin’s original authorship, or present the item as an anonymous adaptation; a version with the same axioms and conclusion was published no later than February 1999: https://db.chgk.net/question/smcat99.2/16."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/496#pullrequestreview-6045737188"
     },
     {
       "id": "power-formula-domain-and-limit",
       "question": "Уточнить, что равенство W/Δt = Fv используется только для постоянных сонаправленных силы и скорости. В (3) условие «Knowledge→0+ или Speed→0+» само по себе не гарантирует Knowledge·Speed→0+ (например, Knowledge=1/Speed); нужно требовать стремления произведения к нулю либо фиксировать второй множитель положительным.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Уточнить, что равенство W/Δt = Fv используется только для постоянных сонаправленных силы и скорости. В (3) условие «Knowledge→0+ или Speed→0+» само по себе не гарантирует Knowledge·Speed→0+ (например, Knowledge=1/Speed); нужно требовать стремления произведения к нулю либо фиксировать второй множитель положительным.",
         "en": "Clarify that W/Δt = Fv is used only for constant, codirectional force and velocity. In (3), “Knowledge→0+ or Speed→0+” alone does not guarantee Knowledge·Speed→0+ (for example, Knowledge=1/Speed); require the product to tend to zero or hold the other factor fixed and positive."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/496#pullrequestreview-6045737188"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/496#pullrequestreview-6045737188",
+    "source_commit": "d38aa38aadedacbffbdbf9e1cc644c2aed5b5c55",
+    "source_review_id": 6045737188,
+    "approved_at": "2026-11-24T19:16:05Z",
+    "package_sha256": "452a705927bb7c8775ccd9c07115b2d56b2ca6049d20b26fd32e07eb101ad857"
   }
 }

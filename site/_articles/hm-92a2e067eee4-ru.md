@@ -15,7 +15,7 @@ series: Математики шутят
 tags:
   - Математики шутят
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-92a2e067eee4-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
