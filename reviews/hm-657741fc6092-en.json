@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-657741fc6092-en",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration.",
+        "ru": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации."
+      },
+      "resolution": "Both editions include the approved editorial cover. https://github.com/Fuzzy-Technologies/history_math/pull/489#pullrequestreview-6044625851"
+    },
+    {
+      "id": "original-publication-url",
+      "question": "The preserved date 2023-10-29 needs a verifiable original-publication link; both `original_publication.url` and `source_url` are currently missing.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "The preserved date 2023-10-29 needs a verifiable original-publication link; both `original_publication.url` and `source_url` are currently missing.",
+        "ru": "Для сохранённой даты 2023-10-29 нужна проверяемая ссылка на исходную публикацию: сейчас отсутствуют и `original_publication.url`, и `source_url`."
+      },
+      "resolution": "The editorial decision accepts the current wording for publication. https://github.com/Fuzzy-Technologies/history_math/pull/489#pullrequestreview-6044625851"
+    },
+    {
+      "id": "original-authorship",
+      "question": "Confirm Mansur Gilmullin’s original authorship, or present the material as an anonymous adaptation with a public source and legal basis.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Confirm Mansur Gilmullin’s original authorship, or present the material as an anonymous adaptation with a public source and legal basis.",
+        "ru": "Подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как анонимную адаптацию с указанием публичного источника и правового основания."
+      },
+      "resolution": "The editorial decision accepts the current wording for publication. https://github.com/Fuzzy-Technologies/history_math/pull/489#pullrequestreview-6044625851"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/489#pullrequestreview-6044625851",
+    "source_commit": "696e89caa732ef8f73452e881d535afd8a2aa14d",
+    "source_review_id": 6044625851,
+    "approved_at": "2026-11-24T17:59:12Z",
+    "package_sha256": "3c8030591c1b911b8c563b693e2fda640b42c2a91105adbdc337bc16fb964800"
+  }
+}
