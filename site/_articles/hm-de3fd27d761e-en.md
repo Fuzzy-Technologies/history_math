@@ -19,7 +19,7 @@ tags:
   - Dirac
 series: Problems
 math: true
-status: draft
+status: published
 permalink: /publications/hm-de3fd27d761e-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

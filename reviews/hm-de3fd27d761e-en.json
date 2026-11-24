@@ -5,25 +5,34 @@
     {
       "id": "dirac-fishermen-origin",
       "question": "The introduction now says that Dirac learned the solution from Professor J. Whitehead, but the following section still says that Dirac gave the original answer and discusses how Dirac solved the problem. Remove this contradiction and align the attribution in both editions.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "The introduction now says that Dirac learned the solution from Professor J. Whitehead, but the following section still says that Dirac gave the original answer and discusses how Dirac solved the problem. Remove this contradiction and align the attribution in both editions.",
         "ru": "Вступление теперь сообщает, что Дирак узнал решение от профессора Дж. Уайтхеда, но следующий раздел по-прежнему утверждает, что Дирак сам «оригинально решил» задачу и разбирает, «как именно Дирак решал». Нужно устранить противоречие и согласовать атрибуцию в обеих редакциях."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/640#pullrequestreview-6040216410"
     },
     {
       "id": "third-party-image-provenance",
       "question": "The 1982 Kvant pages and the portrait of Dirac cannot be treated as illustrations authored by Mansur Gilmullin. For each image, provide its actual source, authorship, and confirmed rights basis.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "The 1982 Kvant pages and the portrait of Dirac cannot be treated as illustrations authored by Mansur Gilmullin. For each image, provide its actual source, authorship, and confirmed rights basis.",
         "ru": "Страницы журнала «Квант» 1982 года и портрет Дирака нельзя относить к авторским иллюстрациям Мансура Гильмуллина. Для каждой иллюстрации указать реальный источник, авторство и подтверждённое правовое основание."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/640#pullrequestreview-6040216410"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/640#pullrequestreview-6040216410",
+    "source_commit": "b5df2a45782bc640b49ea754c58b08b5b08192d0",
+    "source_review_id": 6040216410,
+    "approved_at": "2026-11-24T13:40:44Z",
+    "package_sha256": "d0f4bec0351c9c190b91f38c8d556be57598468567b119c5207cd7e605fcccbe"
   }
 }

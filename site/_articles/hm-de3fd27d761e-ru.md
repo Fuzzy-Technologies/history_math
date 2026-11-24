@@ -19,7 +19,7 @@ tags:
   - Дирак
 series: Задачи
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-de3fd27d761e-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
