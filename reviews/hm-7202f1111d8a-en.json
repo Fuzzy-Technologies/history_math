@@ -38,15 +38,23 @@
     {
       "id": "q4",
       "question": "Identify the colour portrait’s specific public source, author or photographer (if known), licence or other verified basis for publication. “Mansur Gilmullin’s archive” and “Illustration accompanying the text” do not establish provenance or rights.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Identify the colour portrait’s specific public source, author or photographer (if known), licence or other verified basis for publication. “Mansur Gilmullin’s archive” and “Illustration accompanying the text” do not establish provenance or rights.",
         "ru": "Указать для цветного портрета конкретный публичный первоисточник, автора или фотографа (если установлен), лицензию либо иное подтверждённое основание публикации: записи «Авторский архив Мансура Гильмуллина» и «Иллюстрация к материалу» не устанавливают происхождение и права."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/436#pullrequestreview-6040031782"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/436#pullrequestreview-6040031782",
+    "source_commit": "c732f0790f8f0e584328dc2b4fcb5418c82dc546",
+    "source_review_id": 6040031782,
+    "approved_at": "2026-11-24T13:28:35Z",
+    "package_sha256": "f507a93956a76bf9a8cdee60acfba7f60bd95af1424f94aab449cc792663640b"
   }
 }
