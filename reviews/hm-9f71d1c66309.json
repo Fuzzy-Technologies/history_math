@@ -27,25 +27,34 @@
     {
       "id": "q3",
       "question": "Установить публичный или институциональный источник, фотографа или архив и действительное правовое основание воспроизведения портрета М. Т. Нужина.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Установить публичный или институциональный источник, фотографа или архив и действительное правовое основание воспроизведения портрета М. Т. Нужина.",
         "en": "Identify a public or institutional source, photographer or archive, and a valid legal basis for reproducing the portrait of Mikhail Nuzhin."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/348#pullrequestreview-6040040516"
     },
     {
       "id": "q4",
       "question": "Сверить начало военной службы Нужина: статья указывает участие в боях с сентября 1942 года, а биография КФУ — службу в 831-м артиллерийском полку с июня 1942 года; разграничить назначение в часть и начало боевого участия и привести основание.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Сверить начало военной службы Нужина: статья указывает участие в боях с сентября 1942 года, а биография КФУ — службу в 831-м артиллерийском полку с июня 1942 года; разграничить назначение в часть и начало боевого участия и привести основание.",
         "en": "Reconcile the start of Nuzhin’s wartime service: the article says that he fought from September 1942, while Kazan Federal University’s biography places him in the 831st Artillery Regiment from June 1942; distinguish assignment to the unit from entry into combat and cite the evidence."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/348#pullrequestreview-6040040516"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/348#pullrequestreview-6040040516",
+    "source_commit": "72f82bc30179e1b31b4283fad846d67d402a2593",
+    "source_review_id": 6040040516,
+    "approved_at": "2026-11-24T13:29:08Z",
+    "package_sha256": "13d83a28dfcf9568920953d666ba613cdbb010908bc56537c7a65bc494a1523a"
   }
 }
