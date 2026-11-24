@@ -5,16 +5,15 @@
     {
       "id": "q1",
       "question": "Confirm the newspaper source for “We Could Use a Sea of Laptevs” and approve the English explanation of the Laptev Sea wordplay.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Confirm the newspaper source for “We Could Use a Sea of Laptevs” and approve the English explanation of the Laptev Sea wordplay.",
         "ru": "Подтвердить источник газетного заголовка «Нам бы море Лаптевых» и английскую адаптацию игры слов с Laptev Sea."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/424#pullrequestreview-6040021209"
     },
     {
-      "id": "q2",
-      "question": "Clarify the dates of Laptev’s service as head of the Department of Geometry and dean of the Faculty of Physics and Mathematics, rather than assigning both posts to the whole period 1944–1961.",
       "id": "q2",
       "question": "Clarify the dates of Laptev’s service as head of the Department of Geometry and dean of the Faculty of Physics and Mathematics, rather than assigning both posts to the whole period 1944–1961.",
       "blocking": false,
@@ -28,15 +27,23 @@
     {
       "id": "q3",
       "question": "For the portrait of B. L. Laptev and the two 1984 photographs, identify a public source, the photographer or holding institution, and a valid rights basis for reproduction.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the portrait of B. L. Laptev and the two 1984 photographs, identify a public source, the photographer or holding institution, and a valid rights basis for reproduction.",
         "ru": "Для портрета Б. Л. Лаптева и двух фотографий 1984 года указать публичный источник, фотографа или учреждение и действительное правовое основание воспроизведения."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/424#pullrequestreview-6040021209"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/424#pullrequestreview-6040021209",
+    "source_commit": "39e6422ecf85e3cc45ef88b27725a437bc172af8",
+    "source_review_id": 6040021209,
+    "approved_at": "2026-11-24T13:27:59Z",
+    "package_sha256": "e6f290f0620d3714bcc6396c2d71ea6fd2995e51e92c4a11218c9ac91cbc7941"
   }
 }

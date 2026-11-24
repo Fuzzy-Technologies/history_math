@@ -21,7 +21,7 @@ tags:
   - Yelabuga
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-5acc19d50b1b-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

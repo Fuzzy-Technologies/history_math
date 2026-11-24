@@ -21,7 +21,7 @@ tags:
   - Елабуга
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-5acc19d50b1b-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
