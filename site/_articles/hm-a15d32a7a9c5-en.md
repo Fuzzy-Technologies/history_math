@@ -15,7 +15,7 @@ series: Mathematicians Joke
 tags:
   - Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-a15d32a7a9c5-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

@@ -5,25 +5,34 @@
     {
       "id": "joke-cover",
       "question": "У материала рубрики «Математики шутят» отсутствует фактическая обложка. Добавьте выбранную обложку и укажите её происхождение и права в обеих редакциях.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "У материала рубрики «Математики шутят» отсутствует фактическая обложка. Добавьте выбранную обложку и укажите её происхождение и права в обеих редакциях.",
         "en": "This “Mathematicians Joke” item has no actual cover. Add the selected cover and record its provenance and rights in both editions."
-      }
+      },
+      "resolution": "В обеих версиях добавлена согласованная редакцией обложка. https://github.com/Fuzzy-Technologies/history_math/pull/505#pullrequestreview-6045740683"
     },
     {
       "id": "source-authorship",
       "question": "Установить первичный источник и авторство шутки либо обозначить материал как адаптацию; формулировка опубликована не позднее журнала «Квант», № 5 за 2001 год: https://kvant.mccme.ru/pdf/2001/05/39.pdf. Не указывать Мансура Гильмуллина автором без подтверждения.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Установить первичный источник и авторство шутки либо обозначить материал как адаптацию; формулировка опубликована не позднее журнала «Квант», № 5 за 2001 год: https://kvant.mccme.ru/pdf/2001/05/39.pdf. Не указывать Мансура Гильмуллина автором без подтверждения.",
         "en": "Establish the joke’s primary source and authorship or identify this item as an adaptation; the wording appeared no later than Kvant, issue 5 (2001): https://kvant.mccme.ru/pdf/2001/05/39.pdf. Do not credit Mansur Gilmullin as its author without evidence."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/505#pullrequestreview-6045740683"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/505#pullrequestreview-6045740683",
+    "source_commit": "440a096a88c9a63672118d85f9c21eb8a7d44cfe",
+    "source_review_id": 6045740683,
+    "approved_at": "2026-11-24T19:16:20Z",
+    "package_sha256": "5e161d33ae9c3978faccf7d07437a9d9af0cdc2fd046179852380b11de6b3e6b"
   }
 }
