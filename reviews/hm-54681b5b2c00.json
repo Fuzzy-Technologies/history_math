@@ -5,15 +5,23 @@
     {
       "id": "gauss-images-provenance",
       "question": "Указать для портрета Гаусса и фотографии 17-конечной звезды реальных создателей, проверяемые публичные источники и правовые основания; «авторский архив» не подтверждает права на сторонние изображения.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Указать для портрета Гаусса и фотографии 17-конечной звезды реальных создателей, проверяемые публичные источники и правовые основания; «авторский архив» не подтверждает права на сторонние изображения.",
         "en": "For the Gauss portrait and the photograph of the 17-pointed star, identify the actual creators, verifiable public sources, and valid rights bases; “author’s archive” does not establish rights to third-party images."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/638#pullrequestreview-6040206555"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/638#pullrequestreview-6040206555",
+    "source_commit": "6a160119e99e0002218144a16097955e2007cb29",
+    "source_review_id": 6040206555,
+    "approved_at": "2026-11-24T13:40:07Z",
+    "package_sha256": "b9bbe142e4b511929d9eb440cc1b3e04774d1d4784f9a7ae3fc1dd64775e3711"
   }
 }
