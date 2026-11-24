@@ -18,7 +18,7 @@ tags:
   - Mathematics Educators
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-64e6fff214cc-en/
 rights_basis: Mansur Gilmullin
 original_publication:

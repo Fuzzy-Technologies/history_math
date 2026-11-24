@@ -16,35 +16,45 @@
     {
       "id": "q2",
       "question": "Verify the 1917 professorship and English wording of the historical degrees: Moscow University’s candidate degree of 1872 and magister degree of 1882 are distinct from the Soviet Candidate of Sciences.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Verify the 1917 professorship and English wording of the historical degrees: Moscow University’s candidate degree of 1872 and magister degree of 1882 are distinct from the Soviet Candidate of Sciences.",
         "ru": "Сверить профессорское звание 1917 года и английскую передачу исторических степеней: кандидат Московского университета 1872 года и магистр 1882 года не являются советской кандидатской степенью."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/366#pullrequestreview-6039952024"
     },
     {
       "id": "q3",
       "question": "Confirm bibliographical details and original page references for the two extended quotations and the congress paper; the quotations are retained in full.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Confirm bibliographical details and original page references for the two extended quotations and the congress paper; the quotations are retained in full.",
         "ru": "Для двух развёрнутых цитат и доклада съезду желательно подтвердить библиографические сведения и страницы первоисточников; цитаты перенесены полностью."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/366#pullrequestreview-6039952024"
     },
     {
       "id": "q4",
       "question": "Establish a public source, the author or photographer (if known), the date, and a licence or confirmed public-domain status for the historical portrait of Viktor Bobynin; “Illustration accompanying the text” does not establish these facts.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Establish a public source, the author or photographer (if known), the date, and a licence or confirmed public-domain status for the historical portrait of Viktor Bobynin; “Illustration accompanying the text” does not establish these facts.",
         "ru": "Установить для исторического портрета В. В. Бобынина публичный первоисточник, автора или фотографа (если известен), дату и лицензию либо подтверждённый статус общественного достояния; формулировка «Иллюстрация к материалу» этого не подтверждает."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/366#pullrequestreview-6039952024"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/366#pullrequestreview-6039952024",
+    "source_commit": "e4f7ed317b8d63554ec23775cc81ea5f789fae37",
+    "source_review_id": 6039952024,
+    "approved_at": "2026-11-24T13:23:21Z",
+    "package_sha256": "ccf406eebbefb79597ce1fb8cada885d0d103186a5dc25db4e90c02896db8806"
   }
 }
