@@ -16,7 +16,7 @@ tags:
   - Bossut
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-a2203cf87eba-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

@@ -16,7 +16,7 @@ tags:
   - Боссю
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-a2203cf87eba-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
