@@ -25,8 +25,19 @@ original_publication:
   preserve_date: true
   url: https://t.me/history_math/65
 source_url: https://t.me/history_math/65
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-0e59afc3a140/figure-01.png
+  alt: Трое собеседников сравнивают два набора одинаковых предметов, расположенных в разном порядке.
+  caption: ''
+  source: Иллюстрация редакции журнала, созданная с помощью ИИ.
+  credit: ''
+  rights_basis: Создано для журнала по поручению Тимура Гильмуллина, 2026.
+cover_image: /assets/images/hm-0e59afc3a140/figure-01.png
+preview_image: /assets/images/hm-0e59afc3a140/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 Сегодня математики шутят про успешный успех:
 
 Изменится ли сумма от перестановки слагаемых, если это — слагаемые успеха?
