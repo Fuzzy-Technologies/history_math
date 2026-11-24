@@ -46,6 +46,20 @@ class ArticleDetailsTest < Minitest::Test
     end
   end
 
+  def test_rendered_article_links_use_the_edition_language_and_preserve_surrounding_markup
+    filter = Object.new.extend(HistoryMath::ExternalUrls)
+    url = "https://history-math.blogspot.com/2012/09/blog-post_3874.html?m=1&amp;hl=de#archive"
+    input = %Q{<a title='example href="fake" >' href="#{url}"><em>Классики как люди</em></a>}
+    untouched = %Q{<!-- #{input} --><pre>&lt;a href="example"&gt;</pre><script>const example = '#{input}';</script><a data-href="#{url}" href="/local/">Local</a>}
+    %w[ru en].each do |lang|
+      expected = input.sub("hl=de", "hl=#{lang}") + untouched
+      assert_equal expected, filter.article_link_languages(input + untouched, lang)
+      assert_equal expected, filter.article_link_languages(expected, lang)
+    end
+    markdown = Kramdown::Document.new("[The archive](https://history-math.blogspot.com/2012/09/blog-post_3874.html)").to_html
+    assert_includes filter.article_link_languages(markdown, "en"), 'blog-post_3874.html?hl=en">The archive</a>'
+  end
+
   def with_site
     Dir.mktmpdir("history-math-details") do |root|
       source = File.join(root, "site")
