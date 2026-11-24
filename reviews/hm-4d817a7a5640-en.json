@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-4d817a7a5640-en",
+  "questions": [
+    {
+      "id": "joke-cover",
+      "question": "The package has no actual cover for the joke card: figures is empty and the image manifest is empty. Add a suitable cover and reference it in both editions without changing the existing captions or text.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "The package has no actual cover for the joke card: figures is empty and the image manifest is empty. Add a suitable cover and reference it in both editions without changing the existing captions or text.",
+        "ru": "В пакете отсутствует фактическая обложка для карточки шутки: список figures и манифест изображений пусты. Добавьте подходящую обложку и подключите её в обеих редакциях, не изменяя существующие подписи и текст."
+      },
+      "resolution": "Both editions include the editorially approved cover. https://github.com/Fuzzy-Technologies/history_math/pull/501#pullrequestreview-6045739383"
+    },
+    {
+      "id": "source-authorship",
+      "question": "Establish the anecdote’s primary source and confirm Mansur Gilmullin’s original authorship, or present the item as an adaptation with correct attribution; a public version existed no later than 27 October 2007: https://massage.ru/forum/viewtopic.php?p=6744.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Establish the anecdote’s primary source and confirm Mansur Gilmullin’s original authorship, or present the item as an adaptation with correct attribution; a public version existed no later than 27 October 2007: https://massage.ru/forum/viewtopic.php?p=6744.",
+        "ru": "Установить первичный источник анекдота и подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как адаптацию с корректной атрибуцией; публичная версия существовала не позднее 27 октября 2007 года: https://massage.ru/forum/viewtopic.php?p=6744."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/501#pullrequestreview-6045739383"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/501#pullrequestreview-6045739383",
+    "source_commit": "82372c98fab0b34a1b6afa68b03c0df0281ccafb",
+    "source_review_id": 6045739383,
+    "approved_at": "2026-11-24T19:16:14Z",
+    "package_sha256": "2d4acc8a894d402b4e8f756f98df06ebb2bc9251949b4db97780268ab26d0390"
+  }
+}
