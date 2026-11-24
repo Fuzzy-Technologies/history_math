@@ -19,7 +19,7 @@ tags:
   - геометрия
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-a45d04e3ad39-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

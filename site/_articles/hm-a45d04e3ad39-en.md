@@ -19,7 +19,7 @@ tags:
   - geometry
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-a45d04e3ad39-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
