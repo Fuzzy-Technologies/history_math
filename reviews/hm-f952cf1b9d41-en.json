@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Approve a clarification of the twenty-move result: a 180-degree face turn counts as one move, as stated by the proof’s authors at https://www.cube20.org/ . The English rendering correctly means the symmetric group on 48 elements, not a group of order 48; approve equally explicit Russian wording.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Approve a clarification of the twenty-move result: a 180-degree face turn counts as one move, as stated by the proof’s authors at https://www.cube20.org/ . The English rendering correctly means the symmetric group on 48 elements, not a group of order 48; approve equally explicit Russian wording.",
@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "The source linked the cube’s invention specifically to explaining group theory; the 1967 qualification and historical institution names also required verification.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "The source linked the cube’s invention specifically to explaining group theory; the 1967 qualification and historical institution names also required verification.",
