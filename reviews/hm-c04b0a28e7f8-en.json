@@ -5,7 +5,7 @@
     {
       "id": "zed-film-quote-wording",
       "question": "The post and both author’s illustrations use “Zed is dead”, while the cited screenplay uses “Zed’s dead”. Decide whether to preserve the author’s wording as part of the joke or standardise the exact film quotation.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "The post and both author’s illustrations use “Zed is dead”, while the cited screenplay uses “Zed’s dead”. Decide whether to preserve the author’s wording as part of the joke or standardise the exact film quotation.",
