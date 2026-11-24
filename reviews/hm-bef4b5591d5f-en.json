@@ -35,7 +35,7 @@
     {
       "id": "q4",
       "question": "Verify whether the Poincaré–Birkhoff–Witt theorem belongs in George David Birkhoff’s biography.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify whether the Poincaré–Birkhoff–Witt theorem belongs in George David Birkhoff’s biography.",

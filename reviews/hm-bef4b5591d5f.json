@@ -35,7 +35,7 @@
     {
       "id": "q4",
       "question": "Проверить, относится ли теорема Пуанкаре — Биркгофа — Уитта к биографии Джорджа Дэвида Биркгофа.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "resolution": "Абзац о PBW и упоминание в дайджесте удалены: результат связан с сыном Джорджа Дэвида — Гарретом Биркгофом, чьё независимое доказательство опубликовано в 1937 году. Источники: https://www.numdam.org/articles/10.24033/rhm.89/ ; https://www.cambridge.org/core/books/abs/commutative-algebra-and-noncommutative-algebraic-geometry/poincarebirkhoffwitt-theorems/BAB26249011D02C7E3FC1CEFAF647AE2",
       "localizations": {
