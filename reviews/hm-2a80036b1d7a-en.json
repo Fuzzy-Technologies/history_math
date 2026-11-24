@@ -16,25 +16,34 @@
     {
       "id": "q2",
       "question": "Check the composition and publication dates and established English titles of the literary works, especially A Nihilist Girl and The Struggle for Happiness; confirm a source for the episode about caring for wounded Communards in Paris.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Check the composition and publication dates and established English titles of the literary works, especially A Nihilist Girl and The Struggle for Happiness; confirm a source for the episode about caring for wounded Communards in Paris.",
         "ru": "Сверить даты написания и публикации литературных произведений и принятые английские названия, особенно «Нигилистки» и «Борьбы за счастье»; подтвердить источник эпизода об уходе за ранеными коммунарами в Париже."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/353#pullrequestreview-6039968241"
     },
     {
       "id": "q3",
       "question": "Establish the actual public source of the portrait of Sofia Kovalevskaya, the photographer or creator (if known) and the image’s legal status; keep the RU and EN metadata synchronized.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Establish the actual public source of the portrait of Sofia Kovalevskaya, the photographer or creator (if known) and the image’s legal status; keep the RU and EN metadata synchronized.",
         "ru": "Установить реальный публичный источник портрета Софьи Ковалевской, фотографа/автора (если известен) и правовой статус изображения; синхронизировать метаданные RU/EN."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/353#pullrequestreview-6039968241"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/353#pullrequestreview-6039968241",
+    "source_commit": "ac066fdf3bbe41e64da8e0e742c3723825ff9b8d",
+    "source_review_id": 6039968241,
+    "approved_at": "2026-11-24T13:24:29Z",
+    "package_sha256": "5effb1241892be37508c25177570c6ea6cd38e3b7bf75ced2d611b16710a308d"
   }
 }
