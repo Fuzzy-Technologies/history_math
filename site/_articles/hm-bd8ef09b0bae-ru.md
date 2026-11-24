@@ -16,7 +16,7 @@ tags:
   - Фибоначчи
 series: Персоналии
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-bd8ef09b0bae-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

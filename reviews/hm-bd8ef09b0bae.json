@@ -27,15 +27,23 @@
     {
       "id": "q3",
       "question": "Укажите публичный проверяемый первоисточник изображения Фибоначчи, автора или художника (если известен) и лицензию либо иной подтверждённый правовой статус; синхронизируйте атрибуцию в RU/EN.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Укажите публичный проверяемый первоисточник изображения Фибоначчи, автора или художника (если известен) и лицензию либо иной подтверждённый правовой статус; синхронизируйте атрибуцию в RU/EN.",
         "en": "Provide a public, verifiable source for the image of Fibonacci, identify the artist where known, and document the licence or other confirmed legal status; keep the attribution synchronized in RU and EN."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/345#pullrequestreview-6039926916"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/345#pullrequestreview-6039926916",
+    "source_commit": "79fba1f0125e2143f13fde0364dcf47f6ba4962d",
+    "source_review_id": 6039926916,
+    "approved_at": "2026-11-24T13:21:34Z",
+    "package_sha256": "7a5e508d35678a0440f0d9a2e61e71330b8c20881e55e099b2cdbdd036646a13"
   }
 }

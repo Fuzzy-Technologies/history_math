@@ -16,7 +16,7 @@ tags:
   - Fibonacci
 series: People
 math: true
-status: draft
+status: published
 permalink: /publications/hm-bd8ef09b0bae-en/
 rights_basis: Mansur Gilmullin
 original_publication:
