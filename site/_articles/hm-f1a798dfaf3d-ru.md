@@ -17,7 +17,7 @@ tags:
   - Пифагор
   - бобы
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-f1a798dfaf3d-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

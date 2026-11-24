@@ -17,7 +17,7 @@ tags:
   - Pythagoras
   - beans
 math: false
-status: draft
+status: published
 permalink: /publications/hm-f1a798dfaf3d-en/
 rights_basis: Mansur Gilmullin
 original_publication:
