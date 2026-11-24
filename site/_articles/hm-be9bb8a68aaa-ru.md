@@ -32,12 +32,16 @@ figures:
     alt: Чёрно-белый портрет Бореля с усами и бородой, в костюме и галстуке
     caption: Эмиль Борель
     source: "Agence Mondial Photo-Presse, 1932; Национальная библиотека Франции (Gallica), через Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Emile_Borel-1932.jpg"
+    credit: "Agence Mondial Photo-Presse, 1932; Национальная библиотека Франции (Gallica), через Wikimedia Commons"
+    source_url: "https://commons.wikimedia.org/wiki/File:Emile_Borel-1932.jpg"
     rights_basis: "Общественное достояние во Франции и США (PD-France; PD-US-expired) по карточке Wikimedia Commons."
   - id: fig-2
     path: /assets/images/hm-be9bb8a68aaa/figure-02.png
     alt: Ретушированный цветной портрет Бореля с седеющей бородой и полосатым галстуком
     caption: Эмиль Борель. Ретушированный портрет.
     source: "Ретушированная производная фотографии Agence Mondial Photo-Presse 1932 года из Национальной библиотеки Франции (Gallica), через Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Emile_Borel-1932.jpg"
+    credit: "Ретушированная производная фотографии Agence Mondial Photo-Presse 1932 года из Национальной библиотеки Франции (Gallica), через Wikimedia Commons"
+    source_url: "https://commons.wikimedia.org/wiki/File:Emile_Borel-1932.jpg"
     rights_basis: "Исходная фотография находится в общественном достоянии во Франции и США; автор и правовое основание этой ретуши пока не подтверждены."
 preview_image: /assets/images/hm-be9bb8a68aaa/figure-01.png
 cover_image: /assets/images/hm-be9bb8a68aaa/figure-01.png

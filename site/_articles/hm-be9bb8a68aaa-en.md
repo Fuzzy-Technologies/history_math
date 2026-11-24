@@ -32,12 +32,16 @@ figures:
     alt: Black-and-white portrait of Borel with a moustache and beard, wearing a suit and tie
     caption: Émile Borel
     source: "Agence Mondial Photo-Presse, 1932; Bibliothèque nationale de France (Gallica), via Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Emile_Borel-1932.jpg"
+    credit: "Agence Mondial Photo-Presse, 1932; Bibliothèque nationale de France (Gallica), via Wikimedia Commons"
+    source_url: "https://commons.wikimedia.org/wiki/File:Emile_Borel-1932.jpg"
     rights_basis: "Public domain in France and the United States (PD-France; PD-US-expired), as documented by Wikimedia Commons."
   - id: fig-2
     path: /assets/images/hm-be9bb8a68aaa/figure-02.png
     alt: Retouched colour portrait of Borel with a greying beard and striped tie
     caption: Émile Borel. Retouched portrait.
     source: "Retouched derivative of the 1932 Agence Mondial Photo-Presse photograph held by the Bibliothèque nationale de France (Gallica), via Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Emile_Borel-1932.jpg"
+    credit: "Retouched derivative of the 1932 Agence Mondial Photo-Presse photograph held by the Bibliothèque nationale de France (Gallica), via Wikimedia Commons"
+    source_url: "https://commons.wikimedia.org/wiki/File:Emile_Borel-1932.jpg"
     rights_basis: "The underlying photograph is public domain in France and the United States; the creator and rights basis of this retouch remain unconfirmed."
 preview_image: /assets/images/hm-be9bb8a68aaa/figure-01.png
 cover_image: /assets/images/hm-be9bb8a68aaa/figure-01.png
