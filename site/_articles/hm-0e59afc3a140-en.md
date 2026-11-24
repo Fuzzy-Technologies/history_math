@@ -16,7 +16,7 @@ tags:
   - Mathematicians Joke
   - Arithmetic
 math: false
-status: draft
+status: published
 permalink: /publications/hm-0e59afc3a140-en/
 rights_basis: Mansur Gilmullin
 original_publication:

@@ -16,7 +16,7 @@ tags:
   - Математики шутят
   - Арифметика
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-0e59afc3a140-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
