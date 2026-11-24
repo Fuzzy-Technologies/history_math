@@ -16,25 +16,34 @@
     {
       "id": "original-publication-future-date",
       "question": "Исходная дата 6 декабря 2026 года находится в будущем относительно редакционной проверки 8 ноября 2026 года. Сохранить материал Draft до наступления этой даты либо подтвердить исправленную исходную дату публикации.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Исходная дата 6 декабря 2026 года находится в будущем относительно редакционной проверки 8 ноября 2026 года. Сохранить материал Draft до наступления этой даты либо подтвердить исправленную исходную дату публикации.",
         "en": "The original publication date, 6 December 2026, is later than the editorial check on 8 November 2026. Keep the article in Draft until that date, or confirm a corrected original publication date."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/623#pullrequestreview-6043439452"
     },
     {
       "id": "fermi-story-source-authorship",
       "question": "Эпизод и его формулировки опираются на мемуары Лауры Ферми и позднее воспоминание Неллы Ферми, но корневые authors и rights_basis целиком приписывают материал Мансуру Гильмуллину. Отделить авторство источникового рассказа от адаптации или редакции Мансура.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Эпизод и его формулировки опираются на мемуары Лауры Ферми и позднее воспоминание Неллы Ферми, но корневые authors и rights_basis целиком приписывают материал Мансуру Гильмуллину. Отделить авторство источникового рассказа от адаптации или редакции Мансура.",
         "en": "The episode and its wording rely on Laura Fermi’s memoir and Nella Fermi’s later recollection, but the root authors and rights_basis attribute the material entirely to Mansur Gilmullin. Distinguish authorship of the source account from Mansur’s adaptation or editing."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/623#pullrequestreview-6043439452"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/623#pullrequestreview-6043439452",
+    "source_commit": "85f0776eaf2430ad520bc894ea57485b376f2f52",
+    "source_review_id": 6043439452,
+    "approved_at": "2026-11-24T16:40:19Z",
+    "package_sha256": "5aec20656635f889d43d4c8770d16f0206baad0ce3b2622dfe3f7e341d91e63e"
   }
 }

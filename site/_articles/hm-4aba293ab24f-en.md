@@ -22,7 +22,7 @@ tags:
   - tests
   - USA
 math: true
-status: draft
+status: published
 permalink: /publications/hm-4aba293ab24f-en/
 rights_basis: Mansur Gilmullin
 original_publication:

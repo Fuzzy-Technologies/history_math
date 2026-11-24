@@ -22,7 +22,7 @@ tags:
   - тесты
   - США
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-4aba293ab24f-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
