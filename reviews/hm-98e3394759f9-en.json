@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-98e3394759f9-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "For the portrait of Omar Khayyam, identify the source work and its artist, a public source record and the licence or public-domain basis; holding a copy in the author’s archive does not establish authorship of a third-party historical image.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "For the portrait of Omar Khayyam, identify the source work and its artist, a public source record and the licence or public-domain basis; holding a copy in the author’s archive does not establish authorship of a third-party historical image.",
+        "ru": "Для портрета Омара Хайяма указать исходное произведение и его автора, публичный источник и лицензию либо основание общественного достояния; наличие копии в авторском архиве не подтверждает авторство исторического изображения третьего лица."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/328#pullrequestreview-6039903829"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/328#pullrequestreview-6039903829",
+    "source_commit": "ed187aac2959f4d06f309fb14a948433a7e8c3a5",
+    "source_review_id": 6039903829,
+    "approved_at": "2026-11-24T13:19:58Z",
+    "package_sha256": "0cc42bd29b9bf53565c6443760165b411ea390ebb52e887b52b697311a38c191"
+  }
+}
