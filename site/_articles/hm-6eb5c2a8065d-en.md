@@ -16,7 +16,7 @@ tags:
   - Bradis
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-6eb5c2a8065d-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
