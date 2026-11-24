@@ -78,7 +78,7 @@ cover_image: /assets/images/hm-28e45e7f3c7e/figure-01.png
 
 - [«Джон Валлис»](https://www.britannica.com/biography/John-Wallis) (англ. «John Wallis») (Britannica — биография, криптоанализ, Савилианская кафедра, ключевые книги и вклад в истоки анализа).
 
-- [«Джон Валлис (1616–1703)»](https://mathshistory.st-andrews.ac.uk/Biographies/Wallis/) (англ. «John Wallis (1616 – 1703)») (MacTutor — подробная биография, контекст Оксфорда, «Arithmetica Infinitorum», произведение для π, символ ∞, связи с Королевским обществом).
+- [«Джон Валлис (1616–1703)»](https://mathshistory.st-andrews.ac.uk/Biographies/Wallis/) (англ. «John Wallis (1616–1703)») (MacTutor — подробная биография, контекст Оксфорда, «Arithmetica Infinitorum», произведение для π, символ ∞, связи с Королевским обществом).
 
 - [«Математик и полимат»](https://royalsociety.org/blog/2018/11/a-mathematician-and-polymath/) (англ. «A mathematician and polymath») (Royal Society — очерк о Валлисе как основателе общества и государственном дешифровщике).
 
