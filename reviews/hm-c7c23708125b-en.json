@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c7c23708125b-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Check Cantor’s dates and role in the German Mathematical Society, priority claims and historical generalizations.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Check Cantor’s dates and role in the German Mathematical Society, priority claims and historical generalizations.",
+        "ru": "Проверить даты и роль Кантора в Германском математическом обществе, приоритеты и исторические обобщения."
+      },
+      "resolution": "Priority and causal claims were qualified: Cantor’s role in the congress is described without sole priority, disputed attributions were removed, and the reception of set theory and foundational schools is presented without a rigid causal chain."
+    },
+    {
+      "id": "q2",
+      "question": "Provide a publicly verifiable original source, creator and legal basis for reproducing the portrait of Georg Cantor.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Provide a publicly verifiable original source, creator and legal basis for reproducing the portrait of Georg Cantor.",
+        "ru": "Указать публично проверяемый первоисточник, автора и правовое основание воспроизведения портрета Георга Кантора."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/337#pullrequestreview-6039918921"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/337#pullrequestreview-6039918921",
+    "source_commit": "a75c2992622c361e18153ae77b5bebb54b1d5679",
+    "source_review_id": 6039918921,
+    "approved_at": "2026-11-24T13:21:00Z",
+    "package_sha256": "5eabdf60ffcdbba97f3674089474f1265c1e803c0f4439c9e78f2f7d5ce5c8f3"
+  }
+}
