@@ -25,8 +25,19 @@ original_publication:
   preserve_date: true
   url: https://t.me/history_math/235
 source_url: https://t.me/history_math/235
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-3feee53d3afb/figure-01.png
+  alt: A mathematician, a physicist, an engineer and a programmer offer different proofs while a computer displays a row of ticks.
+  caption: ''
+  source: AI-generated illustration commissioned by the journal.
+  credit: ''
+  rights_basis: Created for the journal at the request of Timur Gilmullin in 2026.
+cover_image: /assets/images/hm-3feee53d3afb/figure-01.png
+preview_image: /assets/images/hm-3feee53d3afb/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 A mathematician, a physicist, an engineer and a programmer set out to prove the same theorem: all odd numbers greater than two are prime.<br>
 The mathematician says, “3 is prime, 5 is prime, 7 is prime, 9 is not prime. That is a counterexample, so the theorem is false.”<br>
 The physicist, with pencil and paper: “3, 5 and 7 are prime. Nine is an experimental error. Eleven is prime, and so on.”<br>

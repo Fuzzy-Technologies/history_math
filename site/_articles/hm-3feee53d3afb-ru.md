@@ -25,8 +25,19 @@ original_publication:
   preserve_date: true
   url: https://t.me/history_math/235
 source_url: https://t.me/history_math/235
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-3feee53d3afb/figure-01.png
+  alt: Математик, физик, инженер и программист предлагают разные доказательства, а компьютер выдаёт ряд галочек.
+  caption: ''
+  source: Иллюстрация редакции журнала, созданная с помощью ИИ.
+  credit: ''
+  rights_basis: Создано для журнала по поручению Тимура Гильмуллина, 2026.
+cover_image: /assets/images/hm-3feee53d3afb/figure-01.png
+preview_image: /assets/images/hm-3feee53d3afb/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 Математик, физик, инженер и компьютерщик доказывают одну и ту же теорему: все нечётные числа, большие двух, — простые.<br>
 Математик говорит: «3 — простое, 5 — простое, 7 — простое, 9 — не простое. Это контрпример, значит, теорема неверна».<br>
 Физик, с карандашом и бумагой: «3, 5 и 7 — простые, 9 — ошибка эксперимента, 11 — простое и т. д.».<br>
