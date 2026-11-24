@@ -19,7 +19,7 @@ tags:
   - Waring
 series: Персоналии
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-ae23b85936fe-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

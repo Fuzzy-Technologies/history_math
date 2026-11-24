@@ -18,7 +18,7 @@ tags:
   - Waring’s Problem
 series: People
 math: true
-status: draft
+status: published
 permalink: /publications/hm-ae23b85936fe-en/
 rights_basis: Mansur Gilmullin
 original_publication:
