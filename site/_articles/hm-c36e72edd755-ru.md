@@ -24,8 +24,19 @@ original_publication:
   preserve_date: true
   url: https://t.me/history_math/14
 source_url: https://t.me/history_math/14
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-c36e72edd755/figure-01.png
+  alt: Женщина замахивается букетом роз, её спутник пригибается.
+  caption: ''
+  source: Иллюстрация редакции журнала, созданная с помощью ИИ.
+  credit: ''
+  rights_basis: Создано для журнала по поручению Тимура Гильмуллина, 2026.
+cover_image: /assets/images/hm-c36e72edd755/figure-01.png
+preview_image: /assets/images/hm-c36e72edd755/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 Многие математики верят, что пересечение двух плоских шуток даёт одну тонкую. Вот и начнём этот воскресный день с одной тонкой математической шутки.
 
 Математик приходит домой с букетом красных роз и дарит его жене, тоже математику, со словами:<br>
