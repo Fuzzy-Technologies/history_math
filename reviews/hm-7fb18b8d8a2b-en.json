@@ -15,7 +15,7 @@
     {
       "id": "q2",
       "question": "Check the dates of the professorial appointment and departmental leadership; confirm the author’s personal recollection of the 1979 seminars and work on his Candidate of Sciences dissertation.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Check the dates of the professorial appointment and departmental leadership; confirm the author’s personal recollection of the 1979 seminars and work on his Candidate of Sciences dissertation.",
