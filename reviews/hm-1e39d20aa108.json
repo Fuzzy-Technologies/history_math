@@ -27,15 +27,23 @@
     {
       "id": "image-provenance-rights",
       "question": "Для скана обложки и титульного листа четвёртого издания книги Игнатьева 1914 года указать точный публичный источник изображения и подтверждённый статус общественного достояния, лицензию либо иное правовое основание воспроизведения.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для скана обложки и титульного листа четвёртого издания книги Игнатьева 1914 года указать точный публичный источник изображения и подтверждённый статус общественного достояния, лицензию либо иное правовое основание воспроизведения.",
         "en": "For the scan of the cover and title page of the fourth 1914 edition of Ignatyev’s book, provide the exact public image source and a confirmed public-domain status, licence or other legal basis for reproduction."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/662#pullrequestreview-6040263593"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/662#pullrequestreview-6040263593",
+    "source_commit": "ca2f5219e0c28c8291b422de231708910090756a",
+    "source_review_id": 6040263593,
+    "approved_at": "2026-11-24T13:43:21Z",
+    "package_sha256": "e0d44039d7a08de572af397101b25c4c882c099efc7c877b8d0b0f87fa5ced38"
   }
 }
