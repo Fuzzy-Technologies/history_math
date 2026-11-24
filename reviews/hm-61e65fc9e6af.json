@@ -6,8 +6,8 @@
       "id": "lobachevsky-assistant-trustee-term",
       "question": "Сверить срок службы Н. И. Лобачевского помощником попечителя Казанского учебного округа.",
       "localizations": {
-        "source": "Verify Nikolai Lobachevsky’s term as assistant trustee of the Kazan Educational District.",
-        "ru": "Сверить срок службы Н. И. Лобачевского помощником попечителя Казанского учебного округа."
+        "source": "Сверить срок службы Н. И. Лобачевского помощником попечителя Казанского учебного округа.",
+        "en": "Verify Nikolai Lobachevsky’s term as assistant trustee of the Kazan Educational District."
       },
       "blocking": true,
       "state": "resolved",
@@ -17,8 +17,8 @@
       "id": "lobachevsky-portrait-provenance",
       "question": "Для портрета Н. И. Лобачевского укажите автора/исходное произведение, публичный источник и действительное правовое основание публикации.",
       "localizations": {
-        "source": "For the portrait of Nikolai Lobachevsky, identify the artist or original work, a public source, and a valid rights basis for publication.",
-        "ru": "Для портрета Н. И. Лобачевского укажите автора/исходное произведение, публичный источник и действительное правовое основание публикации."
+        "source": "Для портрета Н. И. Лобачевского укажите автора/исходное произведение, публичный источник и действительное правовое основание публикации.",
+        "en": "For the portrait of Nikolai Lobachevsky, identify the artist or original work, a public source, and a valid rights basis for publication."
       },
       "blocking": true,
       "state": "open"
