@@ -23,6 +23,17 @@ original_publication:
   outlet: Telegram · history_math
   date: '2024-07-14'
   preserve_date: true
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-f1e01af50ff3/figure-01.png
+  alt: Napoleon points towards the door while Laplace examines details on his desk through a magnifying glass.
+  caption: ''
+  source: AI-generated illustration commissioned by the journal.
+  credit: ''
+  rights_basis: Created for the journal at the request of Timur Gilmullin in 2026.
+cover_image: /assets/images/hm-f1e01af50ff3/figure-01.png
+preview_image: /assets/images/hm-f1e01af50ff3/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 Napoleon Bonaparte supported the exact sciences and even appointed several prominent scholars to high office. For example, he made the great mathematician Laplace (1749–1827) Minister of the Interior. After a month and a half, however, Laplace was removed: while attending to every trivial detail, he had overlooked a major conspiracy against the state. Napoleon’s order read: “Dismiss him for introducing the spirit of infinitesimals into affairs of state.”
