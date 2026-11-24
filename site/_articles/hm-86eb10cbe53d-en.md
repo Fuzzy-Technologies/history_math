@@ -19,7 +19,7 @@ tags:
   - logic
 series: Mathematicians Joke
 math: true
-status: draft
+status: published
 permalink: /publications/hm-86eb10cbe53d-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

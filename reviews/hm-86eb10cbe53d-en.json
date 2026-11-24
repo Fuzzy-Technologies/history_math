@@ -5,25 +5,34 @@
     {
       "id": "russell-false-premise-scope",
       "question": "Smullyan does write “a false proposition implies any proposition” in no. 244, pp. 206–207, verified in the PDF. Decide whether to explain the distinction between material implication with a false antecedent and explosion from a contradiction: an arbitrary false axiom need not itself make a theory inconsistent. Here 2+2=5 conflicts with ordinary arithmetic. The author’s popular explanation is retained.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Smullyan does write “a false proposition implies any proposition” in no. 244, pp. 206–207, verified in the PDF. Decide whether to explain the distinction between material implication with a false antecedent and explosion from a contradiction: an arbitrary false axiom need not itself make a theory inconsistent. Here 2+2=5 conflicts with ordinary arithmetic. The author’s popular explanation is retained.",
         "ru": "Смаллиан действительно употребляет “a false proposition implies any proposition” (№ 244, стр. 206–207; проверено по PDF). Редактору решить, нужно ли пояснение: истинность материальной импликации с ложным антецедентом и принцип взрыва из противоречия — разные формулировки; произвольная ложная аксиома сама по себе не всегда делает теорию противоречивой. Здесь 2+2=5 противоречит обычной арифметике. Авторское популярное объяснение сохранено."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/596#pullrequestreview-6040158103"
     },
     {
       "id": "russell-portrait-provenance",
       "question": "For the portrait of Bertrand Russell (fig-2), identify the source work or photographer, the rightsholder, a verifiable public source, and the legal basis for use. A reference to the author’s archive alone does not establish authorship or a licence.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the portrait of Bertrand Russell (fig-2), identify the source work or photographer, the rightsholder, a verifiable public source, and the legal basis for use. A reference to the author’s archive alone does not establish authorship or a licence.",
         "ru": "Для портрета Бертрана Рассела (fig-2) укажите исходное произведение или фотографа, правообладателя, проверяемый публичный источник и правовое основание использования. Ссылка на авторский архив сама по себе не подтверждает авторство или лицензию."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/596#pullrequestreview-6040158103"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/596#pullrequestreview-6040158103",
+    "source_commit": "0206889d7405a9e5b4624a5f98524a864a1458ff",
+    "source_review_id": 6040158103,
+    "approved_at": "2026-11-24T13:36:54Z",
+    "package_sha256": "782ab8ec3ab33e7213eeff7def8dac4698e93e0db29aeac98d2303e133f32d56"
   }
 }
