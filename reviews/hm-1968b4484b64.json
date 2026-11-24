@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-1968b4484b64",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить принятую для заголовка датировку жизни Евклида и указать проверяемый источник приведённой цитаты Феликса Клейна.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Уточнить принятую для заголовка датировку жизни Евклида и указать проверяемый источник приведённой цитаты Феликса Клейна.",
+        "en": "Confirm the life dates used in the title and provide a verifiable source for the quoted words attributed to Felix Klein."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/333#pullrequestreview-6039968164"
+    },
+    {
+      "id": "q2",
+      "question": "Указать публично проверяемые первоисточники, авторство и правовое основание воспроизведения портрета Евклида, титульного листа издания 1703 года и фотографии оксфордской статуи.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Указать публично проверяемые первоисточники, авторство и правовое основание воспроизведения портрета Евклида, титульного листа издания 1703 года и фотографии оксфордской статуи.",
+        "en": "Provide publicly verifiable original sources, authorship and legal basis for reproducing the portrait of Euclid, the 1703 title page and the photograph of the Oxford statue."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/333#pullrequestreview-6039968164"
+    },
+    {
+      "id": "fifth-postulate-history",
+      "question": "Снять категоричное утверждение, что история пятого постулата завершилась открытием Лобачевского: отразить независимую работу Бойяи и роль позднейших моделей в обосновании относительной непротиворечивости неевклидовой геометрии.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Снять категоричное утверждение, что история пятого постулата завершилась открытием Лобачевского: отразить независимую работу Бойяи и роль позднейших моделей в обосновании относительной непротиворечивости неевклидовой геометрии.",
+        "en": "Remove the categorical claim that the history of the fifth postulate ended with Lobachevsky’s discovery: acknowledge Bolyai’s independent work and the role of later models in establishing the relative consistency of non-Euclidean geometry."
+      },
+      "resolution": "Формулировка учитывает независимую работу Бойяи и роль моделей Бельтрами, Клейна и Пуанкаре в обосновании относительной непротиворечивости."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/333#pullrequestreview-6039968164",
+    "source_commit": "bbf79a1e5a0c02abc1619090cd616df76e911034",
+    "source_review_id": 6039968164,
+    "approved_at": "2026-11-24T13:24:28Z",
+    "package_sha256": "e52463bfecc7d5e644826b784f7f92d3363d111f984cade67e9dc9d7e074a85a"
+  }
+}
