@@ -15,7 +15,7 @@
     {
       "id": "q1",
       "question": "Reconcile the references to simple and semisimple Lie groups in the description of Morozov’s classification, and substantiate the link between the stated interest in classifying solvable and nilpotent Lie algebras and the subsequently cited papers on semisimple Lie algebras.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Reconcile the references to simple and semisimple Lie groups in the description of Morozov’s classification, and substantiate the link between the stated interest in classifying solvable and nilpotent Lie algebras and the subsequently cited papers on semisimple Lie algebras.",
