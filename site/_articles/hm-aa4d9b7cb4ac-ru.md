@@ -18,7 +18,7 @@ tags:
   - константа
   - e
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-aa4d9b7cb4ac-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

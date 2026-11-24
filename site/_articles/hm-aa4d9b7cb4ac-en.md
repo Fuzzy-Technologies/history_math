@@ -18,7 +18,7 @@ tags:
   - constants
   - e
 math: true
-status: draft
+status: published
 permalink: /publications/hm-aa4d9b7cb4ac-en/
 rights_basis: Mansur Gilmullin
 original_publication:

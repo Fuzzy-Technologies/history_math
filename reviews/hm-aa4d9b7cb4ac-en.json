@@ -16,15 +16,23 @@
     {
       "id": "original-publication-url",
       "question": "Add a verifiable link to the original publication dated 19 April 2024. With preserve_date: true, both original_publication.url and source_url are currently absent, so the preserved date cannot be verified.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Add a verifiable link to the original publication dated 19 April 2024. With preserve_date: true, both original_publication.url and source_url are currently absent, so the preserved date cannot be verified.",
         "ru": "Добавить проверяемую ссылку на исходную публикацию от 19 апреля 2024 года. Сейчас при preserve_date: true отсутствуют и original_publication.url, и source_url, поэтому исходную дату нельзя подтвердить."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/693#pullrequestreview-6040305903"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/693#pullrequestreview-6040305903",
+    "source_commit": "51d4926748970b0176fd0a080f68abb9298da172",
+    "source_review_id": 6040305903,
+    "approved_at": "2026-11-24T13:45:49Z",
+    "package_sha256": "26b077ef95d1dc9e78a73cffb97bde13a64163d4bd9dca6825a3b7eb9f837649"
   }
 }
