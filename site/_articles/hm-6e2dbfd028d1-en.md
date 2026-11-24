@@ -20,7 +20,7 @@ tags:
   - Paris Academy
   - facts
 math: false
-status: draft
+status: published
 permalink: /publications/hm-6e2dbfd028d1-en/
 rights_basis: Mansur Gilmullin
 original_publication:

@@ -16,25 +16,34 @@
     {
       "id": "future-original-publication-date",
       "question": "The stated original publication date, 27 December 2026, is still in the future. Before publication, confirm it against the actual Telegram post or correct the date.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "The stated original publication date, 27 December 2026, is still in the future. Before publication, confirm it against the actual Telegram post or correct the date.",
         "ru": "Дата исходной публикации 27.12.2026 ещё не наступила. До публикации материала подтвердить её по фактической записи Telegram или исправить дату."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/625#pullrequestreview-6043451374"
     },
     {
       "id": "euler-ship-illustration-authorship",
       "question": "The fig-1 caption calls the image an author’s illustration, but source and rights_basis only say “Illustration accompanying the text.” Identify the illustrator and the actual basis for publishing the file in both editions.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "The fig-1 caption calls the image an author’s illustration, but source and rights_basis only say “Illustration accompanying the text.” Identify the illustrator and the actual basis for publishing the file in both editions.",
         "ru": "Подпись fig-1 называет изображение авторской иллюстрацией, но source и rights_basis содержат лишь «Иллюстрация к материалу». Указать конкретного иллюстратора и фактическое основание публикации файла в обеих редакциях."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/625#pullrequestreview-6043451374"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/625#pullrequestreview-6043451374",
+    "source_commit": "70f2c00e2c87ff26edb7feb399594ab16321fcd0",
+    "source_review_id": 6043451374,
+    "approved_at": "2026-11-24T16:41:06Z",
+    "package_sha256": "574570472699628a26bec751f880ff56892c19d04a5515941cde6e20ccdbba3a"
   }
 }

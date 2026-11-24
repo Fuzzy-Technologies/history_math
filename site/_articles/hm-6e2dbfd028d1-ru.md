@@ -20,7 +20,7 @@ tags:
   - Парижская академия
   - факты
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-6e2dbfd028d1-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
