@@ -16,7 +16,7 @@ tags:
   - Математики шутят
   - Комплексные числа
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-b3e3e7c7be46-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

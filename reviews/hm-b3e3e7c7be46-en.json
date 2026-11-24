@@ -5,35 +5,45 @@
     {
       "id": "humor-cover-image",
       "question": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration.",
         "ru": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации."
-      }
+      },
+      "resolution": "Both editions include the approved editorial cover. https://github.com/Fuzzy-Technologies/history_math/pull/485#pullrequestreview-6044622000"
     },
     {
       "id": "original-publication-url",
       "question": "The preserved date 2023-09-24 needs a verifiable original-publication link; both `original_publication.url` and `source_url` are currently missing.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "The preserved date 2023-09-24 needs a verifiable original-publication link; both `original_publication.url` and `source_url` are currently missing.",
         "ru": "Для сохранённой даты 2023-09-24 нужна проверяемая ссылка на исходную публикацию: сейчас отсутствуют и `original_publication.url`, и `source_url`."
-      }
+      },
+      "resolution": "The editorial decision accepts the current wording for publication. https://github.com/Fuzzy-Technologies/history_math/pull/485#pullrequestreview-6044622000"
     },
     {
       "id": "original-authorship",
       "question": "Confirm Mansur Gilmullin’s original authorship of this joke, or present it as an adaptation: a similar plot is known from a 1999 What? Where? When? tournament.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Confirm Mansur Gilmullin’s original authorship of this joke, or present it as an adaptation: a similar plot is known from a 1999 What? Where? When? tournament.",
         "ru": "Подтвердить оригинальное авторство Мансура Гильмуллина для этой шутки либо оформить материал как адаптацию: сходный сюжет известен по турниру «Что? Где? Когда?» 1999 года."
-      }
+      },
+      "resolution": "The editorial decision accepts the current wording for publication. https://github.com/Fuzzy-Technologies/history_math/pull/485#pullrequestreview-6044622000"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/485#pullrequestreview-6044622000",
+    "source_commit": "2b4413589dfbdad8b3eebfa26f4368663d2c0334",
+    "source_review_id": 6044622000,
+    "approved_at": "2026-11-24T17:58:57Z",
+    "package_sha256": "ebaa2eac6bec07f1cab124b7a5af1cfc4b000920ad937eab24004c92e82ae201"
   }
 }
