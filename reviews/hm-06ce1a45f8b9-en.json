@@ -5,7 +5,7 @@
     {
       "id": "pythagorean-positive-parameter",
       "question": "Please specify an odd parameter m > 1 for a nondegenerate triangle with positive integer sides. At m = 1, the source formulas give (1, 0, 1). The numerical examples for 25 and 2025 are correct.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Please specify an odd parameter m > 1 for a nondegenerate triangle with positive integer sides. At m = 1, the source formulas give (1, 0, 1). The numerical examples for 25 and 2025 are correct.",
@@ -16,7 +16,7 @@
     {
       "id": "pythagorean-cover-attribution",
       "question": "Identify the cover as a derivative of Wikimedia Commons Pythagorean.svg, credit the contributors named in the file card, state the changes, and preserve the CC BY-SA 3.0 licence.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Identify the cover as a derivative of Wikimedia Commons Pythagorean.svg, credit the contributors named in the file card, state the changes, and preserve the CC BY-SA 3.0 licence.",
