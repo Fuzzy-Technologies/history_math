@@ -5,7 +5,7 @@
     {
       "id": "khimichit-wordplay",
       "question": "Please agree the English wordplay. Russian “khimichit” can mean doing chemistry or fiddling results, creating a joke across mathematics, physics and chemistry. “Cook up a result” preserves the suggestion of fabrication, but the chemistry reference is less explicit.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Please agree the English wordplay. Russian “khimichit” can mean doing chemistry or fiddling results, creating a joke across mathematics, physics and chemistry. “Cook up a result” preserves the suggestion of fabrication, but the chemistry reference is less explicit.",
