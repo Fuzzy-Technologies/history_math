@@ -26,13 +26,6 @@
     }
   ],
   "approval": {
-    "status": "approved",
-    "reviewed_by": "AIna",
-    "date": "2026-11-24",
-    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/449#pullrequestreview-6040049835",
-    "source_commit": "51bcb38f58b13f7583ec738faea19f1a2db3a471",
-    "source_review_id": 6040049835,
-    "approved_at": "2026-11-24T13:29:42Z",
-    "package_sha256": "2c97bce34079ffe41b359375957318fbc4546e8874e06ecfe889038ca83ea964"
+    "status": "pending"
   }
 }

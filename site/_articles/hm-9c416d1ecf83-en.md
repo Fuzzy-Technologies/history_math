@@ -17,7 +17,7 @@ tags:
   - Dürer
 series: People
 math: false
-status: published
+status: draft
 permalink: /publications/hm-9c416d1ecf83-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
@@ -79,7 +79,7 @@ He died in Nuremberg on 6 April 1528. His books and prints still remind us of so
 
 {% include article-figure.html id="fig-2" %}
 
-[The Met collection record](https://www.metmuseum.org/art/collection/search/336228) · [Digital image DP820348](https://commons.wikimedia.org/wiki/File:Melencolia_I_MET_DP820348.jpg).
+[The Met collection record](https://www.metmuseum.org/art/collection/search/336228) · [Digital image DP820348](https://commons.wikimedia.org/wiki/File:Melencolia_I_MET_DP820348.jpg?uselang=en).
 
 Further information about Albrecht Dürer:
 
