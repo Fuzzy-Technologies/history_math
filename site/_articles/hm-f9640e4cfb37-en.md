@@ -21,7 +21,7 @@ tags:
   - Textbooks
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-f9640e4cfb37-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

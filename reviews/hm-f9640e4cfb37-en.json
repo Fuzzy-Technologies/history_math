@@ -16,35 +16,45 @@
     {
       "id": "q2",
       "question": "Clarify the reprint count: the introduction says over a hundred, while a later paragraph gives about sixty before 1991 and thirty afterwards. Supply the date and basis for the count and distinguish editions, print runs and reprints.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Clarify the reprint count: the introduction says over a hundred, while a later paragraph gives about sixty before 1991 and thirty afterwards. Supply the date and basis for the count and distinguish editions, print runs and reprints.",
         "ru": "Уточнить число переизданий: вводный абзац говорит более 100, ниже перечислено около 60 до 1991 года и около 30 после. Нужны дата подсчёта и основание; не подменять разные издания, тиражи и переиздания одним числом."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/429#pullrequestreview-6045731224"
     },
     {
       "id": "q3",
       "question": "Supply the source of Bradis’s epigraph and of the quotation beginning Millions read this little book, attributed only to unnamed contemporaries. Both are retained from the author’s text without invented attribution.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Supply the source of Bradis’s epigraph and of the quotation beginning Millions read this little book, attributed only to unnamed contemporaries. Both are retained from the author’s text without invented attribution.",
         "ru": "Указать источник эпиграфа Брадиса и цитаты «Эту книжку читали миллионы…», приписанной неназванным современникам. До решения обе сохранены как в авторском тексте, без выдуманной атрибуции."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/429#pullrequestreview-6045731224"
     },
     {
       "id": "q4",
       "question": "For the two portraits of V. M. Bradis and the montage of book covers, establish public sources, creators or holding institutions, and a valid rights basis for reproduction.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the two portraits of V. M. Bradis and the montage of book covers, establish public sources, creators or holding institutions, and a valid rights basis for reproduction.",
         "ru": "Для двух портретов В. М. Брадиса и монтажа книжных обложек установить публичные источники, авторов или учреждения и действительное правовое основание воспроизведения."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/429#pullrequestreview-6045731224"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/429#pullrequestreview-6045731224",
+    "source_commit": "976969dc8e2c938acbac30a83ff1b2e0cce82ea3",
+    "source_review_id": 6045731224,
+    "approved_at": "2026-11-24T19:15:39Z",
+    "package_sha256": "e0eb8eb01a85fcb9e93ffa7bb91a277bda766283e36b63d541a3be1d5bf83e2a"
   }
 }
