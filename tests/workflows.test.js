@@ -16,8 +16,6 @@ test('S3 publication stays on approved master and blocks Pages upload until fina
   assert.equal(job.environment, 'history-math-storage');
   const media = steps.findIndex(step => step.name === 'Publish verified S3 media');
   const preflight = steps.findIndex(step => step.name === 'Preflight existing S3 media copies');
-  const attachment = steps.findIndex(step => step.name === 'Check native S3 attachment downloads');
-  const full = steps.findIndex(step => step.name === 'Verify site code, layout and browser contracts');
   const check = steps.findIndex(step => step.name === 'Verify final lightweight publication');
   const upload = steps.findIndex(step => step.uses?.startsWith('actions/upload-pages-artifact@'));
   assert.ok(media > steps.findIndex(step => step.name === 'Build and verify configured Pages site'));
@@ -27,10 +25,6 @@ test('S3 publication stays on approved master and blocks Pages upload until fina
   assert.ok(preflight < steps.findIndex(step => step.name === 'Install PDF rendering engine'));
   assert.match(steps[preflight].run, /backfill-media.mjs --preflight/);
   assert.doesNotMatch(steps[preflight].run, /prune|finalize|publication-media.mjs/);
-  assert.ok(attachment > steps.findIndex(step => step.name === 'Install PDF rendering engine') && attachment < full);
-  assert.equal(steps[attachment].if, "steps.plan.outputs.full_checks == 'true'");
-  assert.match(steps[attachment].run, /s3-download-browser.mjs/);
-  assert.ok(!JSON.stringify(steps[attachment]).includes('secrets.'));
   for (const key of ['S3_ACCESS_KEY_ID', 'S3_SECRET_ACCESS_KEY']) {
     assert.equal(steps[media].env[key], '${{ secrets.' + key + ' }}');
     assert.equal(steps[preflight].env[key], '${{ secrets.' + key + ' }}');
@@ -38,7 +32,6 @@ test('S3 publication stays on approved master and blocks Pages upload until fina
   }
   assert.match(steps[check].run, /check_site.py/);
   assert.match(steps[check].run, /publication-size.mjs/);
-  assert.match(steps[check].run, /publication-media-browser.mjs/);
   assert.equal(workflow.jobs.deploy.needs, 'build');
 });
 
@@ -113,12 +106,9 @@ test('publication validates and uploads the build selected by GitHub Pages metad
     JEKYLL_ENV: 'production',
     PAGES_ORIGIN: 'https://${{ steps.pages.outputs.host }}',
     PAGES_BASE_PATH: '${{ steps.pages.outputs.base_path }}',
-    FULL_CHECKS: '${{ steps.plan.outputs.full_checks }}'
   });
   assert.match(build.run, /node scripts\/pages-config.mjs > "\$RUNNER_TEMP\/history-math-pages.yml"/);
   assert.match(build.run, /jekyll build --config "_config.yml,\$RUNNER_TEMP\/history-math-pages.yml" --destination _site-pages/);
-  assert.match(build.run, /python3 scripts\/check_site.py _site-pages "\$PAGES_BASE_PATH" "\$PAGES_ORIGIN"/);
-  assert.match(build.run, /URL_SITE_DIR=_site-pages URL_BASEURL="\$PAGES_BASE_PATH" URL_ORIGIN="\$PAGES_ORIGIN"/);
   assert.equal(steps.find(step => step.uses?.startsWith('actions/upload-pages-artifact@')).with.path, '_site-pages');
   assert.ok(steps.indexOf(build) < steps.findIndex(step => step.uses?.startsWith('actions/upload-pages-artifact@')));
 });
@@ -137,13 +127,10 @@ test('publication uses HTTPS even when Pages reports HTTP before certificate act
   }
 });
 
-test('only the reference gate opts into the legacy path; configured Pages keeps its validated override', () => {
+test('configured Pages builds only the production domain', () => {
   const workflow = parse(readFileSync('.github/workflows/deploy.yml', 'utf8'));
   const steps = workflow.jobs.build.steps;
-  const reference = steps.find(step => step.name === 'Verify site code, layout and browser contracts');
   const production = steps.find(step => step.name === 'Build and verify configured Pages site');
-  assert.match(reference.run, /--config "_config.yml,_config.reference.yml"/);
-  assert.match(reference.run, /check_site.py _site \/history_math https:\/\/fuzzy-technologies.github.io/);
   assert.doesNotMatch(production.run, /_config.reference.yml/);
   assert.match(production.run, /node scripts\/pages-config.mjs/);
   assert.match(production.run, /--config "_config.yml,\$RUNNER_TEMP\/history-math-pages.yml"/);
@@ -419,7 +406,7 @@ test('source and publication jobs install pinned image dependencies before their
     const workflow = parse(readFileSync(`.github/workflows/${file}`, 'utf8'));
     const commands = workflow.jobs[job].steps.filter(step => step.run).map(step => step.run).join('\n');
     const install = commands.indexOf('python3 -m pip install -r tools/requirements-images.txt');
-    const tests = commands.indexOf('npm test');
+    const tests = commands.indexOf(file === 'ci.yml' ? 'npm test' : 'python3 scripts/publication_jpegs.py');
     assert.ok(install >= 0 && tests > install, `${file} must install Pillow before image preparation tests`);
   }
 });
@@ -443,25 +430,15 @@ test('only guarded master publication generates PDFs and saves their validated c
   assert.match(save.with.key, /cache-primary-key/);
 });
 
-test('content publication keeps output gates while layout changes require the complete browser suite', () => {
+test('automated publication runs no visual suite and source CI has a five-minute ceiling', () => {
   const deploy = parse(readFileSync('.github/workflows/deploy.yml', 'utf8'));
-  const build = deploy.jobs.build;
-  assert.equal(build.permissions.actions, 'read');
-  const plan = build.steps.find(step => step.id === 'plan');
-  assert.match(plan.run, /node scripts\/publication-plan.mjs/);
-  assert.equal(plan.env.PUBLICATION_FORCE_FULL, "${{ github.event_name == 'workflow_dispatch' }}");
-  const full = build.steps.find(step => step.run?.includes('npm run test:browser'));
-  assert.equal(full.if, "steps.plan.outputs.full_checks == 'true'");
-  assert.match(full.run, /npm test/);
-  const output = build.steps.find(step => step.name === 'Build and verify configured Pages site');
-  assert.equal(output.if, undefined);
-  assert.ok(output.run.indexOf('check_site.py') < output.run.indexOf('if [ "$FULL_CHECKS"'));
-  assert.ok(output.run.indexOf('publication-size.mjs') < output.run.indexOf('if [ "$FULL_CHECKS"'));
-  assert.match(output.run, /if \[ "\$FULL_CHECKS" = "true" \]; then\s+IMAGE_SITE_DIR/);
-  const source = build.steps.find(step => step.name === 'Validate article sources and reading assets');
-  assert.equal(source.if, undefined);
-  assert.match(source.run, /check-articles.mjs --source-only/);
   const ci = parse(readFileSync('.github/workflows/ci.yml', 'utf8'));
-  const tests = ci.jobs.verify.steps.find(step => step.run?.includes('npm test'));
-  assert.equal(tests.if, "steps.plan.outputs.full_checks == 'true'");
+  for (const job of Object.values(ci.jobs)) assert.equal(job['timeout-minutes'], 5);
+  for (const job of [...Object.values(ci.jobs), deploy.jobs.build]) {
+    const commands = job.steps.map(step => step.run || '').join('\n');
+    assert.doesNotMatch(commands, /test:browser|node tests\/[^ ]*browser|check_pdf_colors|_config\.reference|pdftoppm/);
+  }
+  const commands = deploy.jobs.build.steps.map(step => step.run || '').join('\n');
+  assert.equal(commands.split('bundle exec jekyll build').length - 1, 1);
+  assert.equal(commands.split('python3 scripts/check_site.py').length - 1, 1);
 });

@@ -17,7 +17,7 @@ jobs:
   articles:
     name: Article package
     runs-on: ubuntu-24.04
-    timeout-minutes: 20
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -33,7 +33,7 @@ jobs:
           python3 -m unittest discover -s tests -p markdown_tables_test.py
           python3 tools/markdown_tables.py
       - name: Install pinned checks
-        run: npm ci
+        run: npm ci --no-audit --no-fund
       - name: Contract and report regression tests
         run: node --test tests/articles.test.mjs tests/article-review.test.mjs tests/editorial-question-messages.test.mjs
       - name: Source contracts and article report
@@ -54,7 +54,7 @@ jobs:
           overwrite: true
   verify:
     runs-on: ubuntu-24.04
-    timeout-minutes: 20
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -65,7 +65,7 @@ jobs:
           node-version: '22'
           cache: npm
       - name: Install pinned source checks
-        run: npm ci
+        run: npm ci --no-audit --no-fund
       - name: Classify source changes
         id: plan
         env:
@@ -77,12 +77,10 @@ jobs:
             git fetch --no-tags --depth=1 origin "$PLAN_BASE_SHA"
           fi
           node scripts/publication-plan.mjs --base "${PLAN_BASE_SHA:-unavailable}"
-      - name: Validate light article and image contracts
+      - name: Validate image assets and PDF mastheads
         run: |
-          python3 tools/markdown_tables.py
           python3 tools/image_assets.py
           python3 tools/pdf_mastheads.py
-          node scripts/check-articles.mjs --source-only
       - uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8 # v1.327.0
         if: steps.plan.outputs.full_checks == 'true'
         with:

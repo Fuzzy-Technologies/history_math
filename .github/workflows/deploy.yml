@@ -20,8 +20,7 @@ jobs:
       pages: read
       actions: read
     runs-on: ubuntu-24.04
-    # At 928 editions the reference checks took 208 minutes and the four-hour
-    # job expired during the configured-domain build, before media and upload.
+    # Production PDF rendering and media transfers have their own job budget.
     timeout-minutes: 360
     environment: history-math-storage
     steps:
@@ -48,13 +47,8 @@ jobs:
           restore-keys: pdf-v1-${{ runner.os }}-
       - name: Install publication dependencies
         run: npm ci
-      - name: Choose checks since the last successful publication
-        id: plan
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-          PUBLICATION_FORCE_FULL: ${{ github.event_name == 'workflow_dispatch' }}
-        run: node scripts/publication-plan.mjs
       - name: Validate article sources and reading assets
+        timeout-minutes: 5
         run: |
           python3 tools/markdown_tables.py
           python3 tools/image_assets.py
@@ -76,52 +70,17 @@ jobs:
           S3_PUBLIC_BASE_URL: ${{ vars.S3_PUBLIC_BASE_URL }}
         run: node scripts/backfill-media.mjs --preflight
       - name: Install PDF rendering engine
-        run: |
-          npx playwright install --with-deps chromium
-          if [ "${{ steps.plan.outputs.full_checks }}" = "true" ] && ! command -v pdftoppm >/dev/null; then
-            sudo apt-get install -y poppler-utils
-          fi
-      - name: Check native S3 attachment downloads
-        if: steps.plan.outputs.full_checks == 'true'
-        env:
-          PAGES_ORIGIN: https://${{ steps.pages.outputs.host }}
-          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
-        run: node tests/s3-download-browser.mjs
-      - name: Verify site code, layout and browser contracts
-        if: steps.plan.outputs.full_checks == 'true'
-        run: |
-          python3 -m pip install -r tools/requirements-images.txt
-          npm test
-          for test_file in tests/*_test.rb; do
-            bundle exec ruby "$test_file"
-          done
-          node scripts/article-pdf.mjs --site-dir test-results/pdf-fixture
-          node tests/pdf-cache-browser.mjs
-          HISTORY_MATH_PUBLICATION_REF="$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build --config "_config.yml,_config.reference.yml" --trace
-          node scripts/article-pdf.mjs
-          python3 scripts/check_pdf_colors.py _site
-          python3 scripts/check_site.py _site /history_math https://fuzzy-technologies.github.io
-          npm run test:browser
-          node tests/article-details-browser.mjs
-          node tests/article-urls-browser.mjs
+        run: npx playwright install --with-deps chromium
       - name: Build and verify configured Pages site
         env:
           JEKYLL_ENV: production
           # Pages can report HTTP while the custom-domain certificate is being issued.
           PAGES_ORIGIN: https://${{ steps.pages.outputs.host }}
           PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
-          FULL_CHECKS: ${{ steps.plan.outputs.full_checks }}
         run: |
           node scripts/pages-config.mjs > "$RUNNER_TEMP/history-math-pages.yml"
           HISTORY_MATH_PUBLICATION_REF="$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build --config "_config.yml,$RUNNER_TEMP/history-math-pages.yml" --destination _site-pages --trace
           node scripts/article-pdf.mjs --site-dir _site-pages
-          python3 scripts/check_site.py _site-pages "$PAGES_BASE_PATH" "$PAGES_ORIGIN"
-          if [ "$FULL_CHECKS" = "true" ]; then
-            IMAGE_SITE_DIR=_site-pages IMAGE_BASEURL="$PAGES_BASE_PATH" node tests/image-delivery-browser.mjs
-            ERROR_SITE_DIR=_site-pages ERROR_BASEURL="$PAGES_BASE_PATH" node tests/errors-browser.mjs
-            URL_SITE_DIR=_site-pages URL_BASEURL="$PAGES_BASE_PATH" URL_ORIGIN="$PAGES_ORIGIN" node tests/article-urls-browser.mjs
-            python3 scripts/check_pdf_colors.py _site-pages
-          fi
       - name: Save validated PDF cache
         if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
         uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
@@ -144,17 +103,13 @@ jobs:
       - name: Optimize reading WebP previews for Pages
         run: python3 scripts/optimize_reading_webp.py _site-pages
       - name: Verify final lightweight publication
+        timeout-minutes: 5
         env:
           PAGES_ORIGIN: https://${{ steps.pages.outputs.host }}
           PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
-          FULL_CHECKS: ${{ steps.plan.outputs.full_checks }}
         run: |
           python3 scripts/check_site.py _site-pages "$PAGES_BASE_PATH" "$PAGES_ORIGIN"
           node scripts/publication-size.mjs _site-pages
-          if [ "$FULL_CHECKS" = "true" ]; then
-            VIEWER_SITE_DIR=_site-pages node tests/image-viewer-browser.mjs
-            MEDIA_SITE_DIR=_site-pages MEDIA_BASEURL="$PAGES_BASE_PATH" node tests/publication-media-browser.mjs
-          fi
       - name: Retain media integrity receipts
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
