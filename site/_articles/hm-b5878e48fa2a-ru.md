@@ -16,7 +16,7 @@ tags:
   - Остроградский
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-b5878e48fa2a-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

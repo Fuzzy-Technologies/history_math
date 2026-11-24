@@ -16,7 +16,7 @@ tags:
   - Ostrogradsky
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-b5878e48fa2a-en/
 rights_basis: Mansur Gilmullin
 original_publication:
