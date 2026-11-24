@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-9aaf5065a692",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Подобрать и согласовать обложку для карточки рубрики «Математики шутят»: исходный пост опубликован без иллюстрации.",
+        "en": "Select and approve a cover image for the Mathematicians Joke card: the source post was published without an illustration."
+      },
+      "resolution": "В обе версии добавлена утверждённая редакционная обложка. https://github.com/Fuzzy-Technologies/history_math/pull/484#pullrequestreview-6044620273"
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Для сохранённой даты 2023-09-17 нужна проверяемая ссылка на исходную публикацию (`original_publication.url` и `source_url`).",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для сохранённой даты 2023-09-17 нужна проверяемая ссылка на исходную публикацию (`original_publication.url` и `source_url`).",
+        "en": "The preserved date 2023-09-17 needs a verifiable original-publication link (`original_publication.url` and `source_url`)."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/484#pullrequestreview-6044620273"
+    },
+    {
+      "id": "original-authorship",
+      "question": "Подтвердить оригинальное авторство Мансура Гильмуллина для этой шутки либо оформить материал как анонимную адаптацию с указанием публичного источника, существовавшего не позднее 2009 года.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Подтвердить оригинальное авторство Мансура Гильмуллина для этой шутки либо оформить материал как анонимную адаптацию с указанием публичного источника, существовавшего не позднее 2009 года.",
+        "en": "Confirm Mansur Gilmullin’s original authorship of this joke, or present it as an anonymous adaptation citing a public source that existed no later than 2009."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/484#pullrequestreview-6044620273"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/484#pullrequestreview-6044620273",
+    "source_commit": "b34253aaa992ed1494058f09141d44dd57921b18",
+    "source_review_id": 6044620273,
+    "approved_at": "2026-11-24T17:58:50Z",
+    "package_sha256": "7a9776365b99e7434f407039f65160c91bd43989770e60d6649a60bfa4b23c52"
+  }
+}
