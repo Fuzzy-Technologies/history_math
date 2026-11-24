@@ -20,7 +20,7 @@ tags:
   - музыка
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-64ece7f5ce45-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

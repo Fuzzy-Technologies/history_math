@@ -20,7 +20,7 @@ tags:
   - music
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-64ece7f5ce45-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
