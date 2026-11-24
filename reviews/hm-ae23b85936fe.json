@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ae23b85936fe",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Подтвердить год рождения: заголовок даёт 1734, основной текст допускает 1736. Дата материала 2024-07-08 сохранена независимо от этого биографического вопроса.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Подтвердить год рождения: заголовок даёт 1734, основной текст допускает 1736. Дата материала 2024-07-08 сохранена независимо от этого биографического вопроса.",
+        "en": "Confirm the birth year: the heading gives 1734, while the body allows 1736. The original date, 2024-07-08, is retained independently of this biographical question."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/401#pullrequestreview-6045725740"
+    },
+    {
+      "id": "q2",
+      "question": "Исправить определение и хронологию результатов: $g(n)$ — наименьшее число $n$-х степеней, достаточное для представления каждого натурального числа; Гильберт в 1909 году доказал существование конечной границы; Линник объявил результат $G(3) \\le 7$ в 1942 году и опубликовал доказательство в 1943 году; равенство $g(4) = 19$ было доказано в 1986 году, а не в 1984-м. Различить функции $g$ и $G$ в обеих редакциях.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Исправить определение и хронологию результатов: $g(n)$ — наименьшее число $n$-х степеней, достаточное для представления каждого натурального числа; Гильберт в 1909 году доказал существование конечной границы; Линник объявил результат $G(3) \\le 7$ в 1942 году и опубликовал доказательство в 1943 году; равенство $g(4) = 19$ было доказано в 1986 году, а не в 1984-м. Различить функции $g$ и $G$ в обеих редакциях.",
+        "en": "Correct the definition and chronology of the results: $g(n)$ is the least number of $n$th powers sufficient to represent every positive integer; Hilbert proved the existence of a finite bound in 1909; Linnik announced $G(3) \\le 7$ in 1942 and published the proof in 1943; $g(4) = 19$ was proved in 1986, not 1984. Distinguish the functions $g$ and $G$ in both editions."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/401#pullrequestreview-6045725740"
+    },
+    {
+      "id": "q3",
+      "question": "Сверить источник и издание латинской цитаты, сопоставить её с переводом и со связью изданий 1762 и 1770 годов. Титульный лист выбранного изображения действительно датирован 1762 годом.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Сверить источник и издание латинской цитаты, сопоставить её с переводом и со связью изданий 1762 и 1770 годов. Титульный лист выбранного изображения действительно датирован 1762 годом.",
+        "en": "Verify the source and edition of the Latin quotation, its translation and the relationship between the 1762 and 1770 editions. The selected title-page image is visibly dated 1762."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/401#pullrequestreview-6045725740"
+    },
+    {
+      "id": "image-attribution",
+      "question": "Для гравированного портрета Эдуарда Варинга и титульного листа издания 1762 года установить проверяемые публичные источники, создателей и правовой статус; титульный лист связать с указанной копией Google Books, а для портрета привести отдельный первоисточник.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для гравированного портрета Эдуарда Варинга и титульного листа издания 1762 года установить проверяемые публичные источники, создателей и правовой статус; титульный лист связать с указанной копией Google Books, а для портрета привести отдельный первоисточник.",
+        "en": "For the engraved portrait of Edward Waring and the title page of the 1762 edition, establish verifiable public sources, creators and legal status; link the title page to the cited Google Books copy and provide a separate primary source for the portrait."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/401#pullrequestreview-6045725740"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/401#pullrequestreview-6045725740",
+    "source_commit": "82ddd9b2dee0fc550faf894042d749ef51f6255d",
+    "source_review_id": 6045725740,
+    "approved_at": "2026-11-24T19:15:14Z",
+    "package_sha256": "531f5347c331dcc165d85a853ce26313af9e9655875e0b75ec4e84d26f8c7c42"
+  }
+}
