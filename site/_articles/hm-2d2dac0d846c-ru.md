@@ -16,7 +16,7 @@ tags:
   - Математики шутят
   - Логика
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-2d2dac0d846c-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
