@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0114ac488785",
+  "questions": [
+    {
+      "id": "two-squares-historical-priority",
+      "question": "Подтвердить источником исторические формулировки «впервые опубликовано Диофантом» и «в Европе впервые появилось в Liber quadratorum (1225)», а также уточнить, какой именно результат о сумме двух квадратов приписан Ферма в вводном абзаце. В посте нет библиографического локатора для этих утверждений; вычисления и обе формы тождества сохранены и проверены отдельно.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Приоритетные формулировки сняты; вводный абзац теперь прямо называет теорему Ферма о простых числах вида 4k+1.",
+      "localizations": {
+        "source": "Подтвердить источником исторические формулировки «впервые опубликовано Диофантом» и «в Европе впервые появилось в Liber quadratorum (1225)», а также уточнить, какой именно результат о сумме двух квадратов приписан Ферма в вводном абзаце. В посте нет библиографического локатора для этих утверждений; вычисления и обе формы тождества сохранены и проверены отдельно.",
+        "en": "Please provide a source for “first recorded by Diophantus” and “first appeared in Europe in Liber quadratorum (1225)”, and clarify which sum-of-two-squares result is attributed to Fermat in the introduction. The post gives no bibliographic locator for these historical claims; the arithmetic and both identity forms are preserved and checked separately."
+      }
+    },
+    {
+      "id": "two-squares-historical-locators",
+      "question": "Указать точные библиографические локаторы для оставшихся исторических утверждений: книгу/задачу в «Арифметике» Диофанта, место в «Брахма-спхута-сиддханте» Брахмагупты и раздел/задачу Liber quadratorum Фибоначчи, где приведено именно тождество произведения двух сумм квадратов. Снятие слов о первенстве не подтверждает эти атрибуции само по себе.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Указать точные библиографические локаторы для оставшихся исторических утверждений: книгу/задачу в «Арифметике» Диофанта, место в «Брахма-спхута-сиддханте» Брахмагупты и раздел/задачу Liber quadratorum Фибоначчи, где приведено именно тождество произведения двух сумм квадратов. Снятие слов о первенстве не подтверждает эти атрибуции само по себе.",
+        "en": "Provide exact bibliographic locators for the remaining historical claims: the book/problem in Diophantus’s Arithmetica, the passage in Brahmagupta’s Brahmasphutasiddhanta, and the section/problem in Fibonacci’s Liber quadratorum that contains this product-of-two-sums-of-squares identity. Removing priority wording does not by itself substantiate these attributions."
+      },
+      "resolution": "Добавлены точные места у Диофанта (III.19), Брахмагупты (18.64–65) и Фибоначчи (предложение 6), ссылки на издания и различие между частным примером и общим правилом композиции."
+    },
+    {
+      "id": "cover-authorship-rights",
+      "question": "Для обложки указать реального создателя или способ создания, проверяемый источник и правовое основание. Текущие формулировки «Авторская иллюстрация» и «Иллюстрация к материалу» этого не подтверждают.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для обложки указать реального создателя или способ создания, проверяемый источник и правовое основание. Текущие формулировки «Авторская иллюстрация» и «Иллюстрация к материалу» этого не подтверждают.",
+        "en": "For the cover, identify the actual creator or creation method, a verifiable source, and the legal basis. The current “Author’s illustration” and “Illustration accompanying the text” wording does not establish these facts."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/688#pullrequestreview-6040295843"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/688#pullrequestreview-6040295843",
+    "source_commit": "a522b80d216aac764967bfdf761d94df9c9ea441",
+    "source_review_id": 6040295843,
+    "approved_at": "2026-11-24T13:45:14Z",
+    "package_sha256": "8385af0aeb8568e1ec3f4d20a4895ce50a0a3a2ca2840cb7768b446d55f0a860"
+  }
+}
