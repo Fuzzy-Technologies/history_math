@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-bfaf5e7e84a6",
+  "questions": [
+    {
+      "id": "boole-distributivity-wording",
+      "question": "В примечании вслед за MacTutor https://mathshistory.st-andrews.ac.uk/Biographies/Boole/ сказано, что Буль был одним из первых, кто исследовал основные свойства чисел, например дистрибутивность. Редактору уточнить, нужна ли формулировка об абстрактном исследовании алгебраических законов, чтобы фраза не читалась как приписывание Булю открытия дистрибутивного закона арифметики.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "В примечании вслед за MacTutor https://mathshistory.st-andrews.ac.uk/Biographies/Boole/ сказано, что Буль был одним из первых, кто исследовал основные свойства чисел, например дистрибутивность. Редактору уточнить, нужна ли формулировка об абстрактном исследовании алгебраических законов, чтобы фраза не читалась как приписывание Булю открытия дистрибутивного закона арифметики.",
+        "en": "Following MacTutor https://mathshistory.st-andrews.ac.uk/Biographies/Boole/, the note says that Boole was among the first to investigate basic properties of numbers, such as distributivity. Please decide whether to specify the abstract study of algebraic laws, so the phrase is not read as crediting him with discovering the distributive law of arithmetic."
+      },
+      "resolution": "Формулировка уточнена по второй главе «Законов мышления» Буля (1854). Речь о применении дистрибутивности и других алгебраических законов к символам логики. https://www.gutenberg.org/ebooks/15114"
+    },
+    {
+      "id": "boole-images-provenance",
+      "question": "Для fig-1–fig-3 укажите точные публичные источники, создателей и правовое основание использования. Для составной обложки fig-1 установите автора или исходные произведения; для fig-3 укажите архивную запись UCC BP/1/356; для ретушированного fig-2 — исходное изображение и его автора.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для fig-1–fig-3 укажите точные публичные источники, создателей и правовое основание использования. Для составной обложки fig-1 установите автора или исходные произведения; для fig-3 укажите архивную запись UCC BP/1/356; для ретушированного fig-2 — исходное изображение и его автора.",
+        "en": "For fig-1 through fig-3, provide exact public sources, creators, and the legal basis for use. For the composite cover fig-1, identify its creator or source works; for fig-3, cite UCC archival record BP/1/356; for the retouched fig-2, identify the underlying image and its creator."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/582#pullrequestreview-6040131147"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/582#pullrequestreview-6040131147",
+    "source_commit": "f88fc8eb4b1491fc1d73f167f66ed3278a25ac39",
+    "source_review_id": 6040131147,
+    "approved_at": "2026-11-24T13:35:04Z",
+    "package_sha256": "ed316714d9156be46a30fb84d0cbccad306f7734a2a746bb4bd36c585c80c860"
+  }
+}
