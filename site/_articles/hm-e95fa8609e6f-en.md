@@ -16,7 +16,7 @@ tags:
   - Chebyshev
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-e95fa8609e6f-en/
 rights_basis: Mansur Gilmullin
 original_publication:

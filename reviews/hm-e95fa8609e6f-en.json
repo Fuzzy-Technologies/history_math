@@ -28,25 +28,34 @@
     {
       "id": "portrait-provenance",
       "question": "Identify the original work and creator of the Chebyshev portrait cover, and provide a public source and license or a verified public-domain basis.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Identify the original work and creator of the Chebyshev portrait cover, and provide a public source and license or a verified public-domain basis.",
         "ru": "Установить исходное произведение и автора портретной обложки Чебышёва, указать публичный источник и лицензию либо подтверждённое основание общественного достояния."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/325#pullrequestreview-6039903579"
     },
     {
       "id": "original-publication-date",
       "question": "Confirm the original publication date of 4 September 2023 using an accessible public record of the original publication.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Confirm the original publication date of 4 September 2023 using an accessible public record of the original publication.",
         "ru": "Подтвердить исходную дату 04.09.2023 по доступной публичной записи оригинальной публикации."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/325#pullrequestreview-6039903579"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/325#pullrequestreview-6039903579",
+    "source_commit": "9707da49540d6f73004a38c7f60b4e423271df70",
+    "source_review_id": 6039903579,
+    "approved_at": "2026-11-24T13:19:56Z",
+    "package_sha256": "de0bc2f50408a49e3c9179a500ef582ca932de7f5a40570c263169db51adb9fc"
   }
 }

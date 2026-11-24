@@ -16,7 +16,7 @@ tags:
   - Чебышёв
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-e95fa8609e6f-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
