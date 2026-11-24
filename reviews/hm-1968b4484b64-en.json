@@ -5,22 +5,24 @@
     {
       "id": "q1",
       "question": "Confirm the life dates used in the title and provide a verifiable source for the quoted words attributed to Felix Klein.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Confirm the life dates used in the title and provide a verifiable source for the quoted words attributed to Felix Klein.",
         "ru": "Уточнить принятую для заголовка датировку жизни Евклида и указать проверяемый источник приведённой цитаты Феликса Клейна."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/333#pullrequestreview-6039968164"
     },
     {
       "id": "q2",
       "question": "Provide publicly verifiable original sources, authorship and legal basis for reproducing the portrait of Euclid, the 1703 title page and the photograph of the Oxford statue.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Provide publicly verifiable original sources, authorship and legal basis for reproducing the portrait of Euclid, the 1703 title page and the photograph of the Oxford statue.",
         "ru": "Указать публично проверяемые первоисточники, авторство и правовое основание воспроизведения портрета Евклида, титульного листа издания 1703 года и фотографии оксфордской статуи."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/333#pullrequestreview-6039968164"
     },
     {
       "id": "fifth-postulate-history",
@@ -35,6 +37,13 @@
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/333#pullrequestreview-6039968164",
+    "source_commit": "bbf79a1e5a0c02abc1619090cd616df76e911034",
+    "source_review_id": 6039968164,
+    "approved_at": "2026-11-24T13:24:28Z",
+    "package_sha256": "7b2fca822fc09cec6cb09a4f1c82c090fd8a065d8f59a7d3faf50ef67085d08b"
   }
 }
