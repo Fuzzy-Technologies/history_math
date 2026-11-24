@@ -20,7 +20,7 @@ tags:
   - Алгебры Ли
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-b5d25d1b99c8-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

@@ -20,7 +20,7 @@ tags:
   - Lie algebras
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-b5d25d1b99c8-en/
 rights_basis: Mansur Gilmullin
 original_publication:

@@ -5,35 +5,45 @@
     {
       "id": "q1",
       "question": "Check the chronology and circumstances of the end of Dynkin’s work at Moscow State University and the basis for linking it to the letter in defence of Ginzburg and Galanskov.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Check the chronology and circumstances of the end of Dynkin’s work at Moscow State University and the basis for linking it to the letter in defence of Ginzburg and Galanskov.",
         "ru": "Сверить хронологию и обстоятельства прекращения работы Дынкина в МГУ и основание связи этого события с письмом в защиту Гинзбурга и Галанскова."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/364#pullrequestreview-6045721901"
     },
     {
       "id": "q2",
       "question": "Check the history of the Mathematical School magazine and verify the established English title of the cited Russian teaching book.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Check the history of the Mathematical School magazine and verify the established English title of the cited Russian teaching book.",
         "ru": "Сверить историю журнала «Математическая школа» и уточнить принятое английское название указанного русского пособия."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/364#pullrequestreview-6045721901"
     },
     {
       "id": "q3",
       "question": "Establish a verifiable source for Eugene Dynkin’s portrait, the photographer or rights holder, and the licence or permission for reproduction.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Establish a verifiable source for Eugene Dynkin’s portrait, the photographer or rights holder, and the licence or permission for reproduction.",
         "ru": "Установить проверяемый источник портрета Е. Б. Дынкина, фотографа или правообладателя и лицензию либо разрешение на воспроизведение."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/364#pullrequestreview-6045721901"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/364#pullrequestreview-6045721901",
+    "source_commit": "3a6ed655f35c79d4be7919eca33b934ccf1611bc",
+    "source_review_id": 6045721901,
+    "approved_at": "2026-11-24T19:14:58Z",
+    "package_sha256": "206ef0978cf3edb8af7169823a4c6d2dc187e1ef43e5355f350d21aa25fb5c70"
   }
 }
