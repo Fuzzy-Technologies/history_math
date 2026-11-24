@@ -18,7 +18,7 @@ tags:
   - Лилавати
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-5524adae5f04-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

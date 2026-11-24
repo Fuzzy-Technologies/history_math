@@ -16,35 +16,45 @@
     {
       "id": "q2",
       "question": "Сверить датировку рукописного листа 1650 годом и библиографические сведения о 1450 стихах всего трактата и 13 главах, 278 стихах «Лилавати». Эти числа относятся к разным объёмам текста и не помечены как противоречие.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Сверить датировку рукописного листа 1650 годом и библиографические сведения о 1450 стихах всего трактата и 13 главах, 278 стихах «Лилавати». Эти числа относятся к разным объёмам текста и не помечены как противоречие.",
         "en": "Verify the manuscript leaf’s 1650 date and the figures of 1450 verses for the whole treatise and thirteen chapters, 278 verses for Lilavati. These refer to different textual scopes and are not treated as a contradiction."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/411#pullrequestreview-6040002338"
     },
     {
       "id": "q3",
       "question": "Установить публичные первоисточники, авторов или фотографов и правовой статус бюста Бхаскары II, листа рукописи «Лилавати» и статуи в Патнадеви; хранение в авторском архиве не подтверждает авторство или право воспроизведения.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Установить публичные первоисточники, авторов или фотографов и правовой статус бюста Бхаскары II, листа рукописи «Лилавати» и статуи в Патнадеви; хранение в авторском архиве не подтверждает авторство или право воспроизведения.",
         "en": "Identify the public sources, creators or photographers and legal status of the bust of Bhaskara II, the Lilavati manuscript leaf and the statue at Patnadevi; archive custody does not establish authorship or permission for reproduction."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/411#pullrequestreview-6040002338"
     },
     {
       "id": "ujjain-observatory-tradition",
       "question": "Представить утверждение о руководстве Бхаскары II обсерваторией Удджайна как позднюю традицию либо убрать должность, если не будет указан подходящий исторический источник; Ким Плофкер отмечает, что связь учёного с этой обсерваторией документально не подтверждена. Источник: https://sanskrit.uohyd.ac.in/Algorithms_in_Ancient_India/Material/Kim_Plofkar_Maths_in_India.pdf",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Представить утверждение о руководстве Бхаскары II обсерваторией Удджайна как позднюю традицию либо убрать должность, если не будет указан подходящий исторический источник; Ким Плофкер отмечает, что связь учёного с этой обсерваторией документально не подтверждена. Источник: https://sanskrit.uohyd.ac.in/Algorithms_in_Ancient_India/Material/Kim_Plofkar_Maths_in_India.pdf",
         "en": "Treat the statement that Bhaskara II headed the Ujjain observatory as a later tradition or remove the office unless a suitable historical source is supplied; Kim Plofker notes that his connection with the observatory is not documented. Source: https://sanskrit.uohyd.ac.in/Algorithms_in_Ancient_India/Material/Kim_Plofkar_Maths_in_India.pdf"
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/411#pullrequestreview-6040002338"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/411#pullrequestreview-6040002338",
+    "source_commit": "b93eddaf6a97f1fd72ca6fcc5abcfc0d44d1c0cc",
+    "source_review_id": 6040002338,
+    "approved_at": "2026-11-24T13:26:49Z",
+    "package_sha256": "34bd7a8b3b8afd866eea2210762369605e8afe712cfc7ed0189e65562984db11"
   }
 }

@@ -18,7 +18,7 @@ tags:
   - Lilavati
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-5524adae5f04-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
