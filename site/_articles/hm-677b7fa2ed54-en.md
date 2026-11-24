@@ -16,7 +16,7 @@ tags:
   - Ampère
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-677b7fa2ed54-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
