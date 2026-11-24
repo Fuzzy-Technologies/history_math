@@ -27,15 +27,23 @@
     {
       "id": "frobenius-portrait-attribution",
       "question": "Для ретушированного портрета Фробениуса указать исходное изображение, автора или издание, ретушёра и проверяемую лицензию. Исторический портрет нельзя относить к авторским материалам Мансура Гильмуллина без такого основания.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для ретушированного портрета Фробениуса указать исходное изображение, автора или издание, ретушёра и проверяемую лицензию. Исторический портрет нельзя относить к авторским материалам Мансура Гильмуллина без такого основания.",
         "en": "For the retouched portrait of Frobenius, identify the source image, author or publication, retoucher and a verifiable licence. The historical portrait cannot be treated as Mansur Gilmullin’s own material without that evidence."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/652#pullrequestreview-6040239809"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/652#pullrequestreview-6040239809",
+    "source_commit": "3c4ea0774995842d7cc6d81b76e8586195b41b84",
+    "source_review_id": 6040239809,
+    "approved_at": "2026-11-24T13:42:02Z",
+    "package_sha256": "8d717659ceb4195c43d28bde4d51dc0e9893dd95038d88baadec7762125fc630"
   }
 }
