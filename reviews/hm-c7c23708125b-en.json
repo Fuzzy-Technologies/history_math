@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Check Cantor’s dates and role in the German Mathematical Society, priority claims and historical generalizations.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Check Cantor’s dates and role in the German Mathematical Society, priority claims and historical generalizations.",
