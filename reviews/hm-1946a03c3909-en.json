@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Agree the proposed title Niccolò Tartaglia: the source has no separate name heading, and its historical opening is retained in full. Clarify the scope of the comparison with mathematicians in the East.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Agree the proposed title Niccolò Tartaglia: the source has no separate name heading, and its historical opening is retained in full. Clarify the scope of the comparison with mathematicians in the East.",
@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "Verify the types of educational institutions in Verona, Brescia and Venice described as universities, the conditions of Cardano’s receipt of the rule, and the precise titles and dates of the polemical documents.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify the types of educational institutions in Verona, Brescia and Venice described as universities, the conditions of Cardano’s receipt of the rule, and the precise titles and dates of the polemical documents.",
@@ -47,7 +47,7 @@
     {
       "id": "q5",
       "question": "Verify the date of the Fior–Tartaglia mathematical challenge.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify the date of the Fior–Tartaglia mathematical challenge.",
