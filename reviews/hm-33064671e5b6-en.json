@@ -16,25 +16,34 @@
     {
       "id": "missing-humor-cover",
       "question": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
         "ru": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку."
-      }
+      },
+      "resolution": "Both editions include the editorially approved cover. https://github.com/Fuzzy-Technologies/history_math/pull/497#pullrequestreview-6045737434"
     },
     {
       "id": "source-authorship",
       "question": "Establish the primary source of the well-known black-sheep joke and confirm Mansur Gilmullin’s original authorship, or present the item as an anonymous adaptation; public versions existed no later than 2016.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Establish the primary source of the well-known black-sheep joke and confirm Mansur Gilmullin’s original authorship, or present the item as an anonymous adaptation; public versions existed no later than 2016.",
         "ru": "Установить первичный источник известной шутки о чёрной овце и подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как анонимную адаптацию; публичные варианты существовали не позднее 2016 года."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/497#pullrequestreview-6045737434"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/497#pullrequestreview-6045737434",
+    "source_commit": "e6fbe2d73abfd807ff35c004ecea3ea082bbf7f8",
+    "source_review_id": 6045737434,
+    "approved_at": "2026-11-24T19:16:06Z",
+    "package_sha256": "d2ce7f9e9c7234c805bf6a1c26594ac65284a88dd4ba04c35190b17c725ad765"
   }
 }
