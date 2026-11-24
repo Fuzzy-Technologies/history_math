@@ -24,8 +24,19 @@ original_publication:
   preserve_date: true
   url: https://t.me/history_math/215
 source_url: https://t.me/history_math/215
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-a15d32a7a9c5/figure-01.png
+  alt: Один собеседник объясняет чертёж за столом, другие внимательно, но озадаченно слушают.
+  caption: ''
+  source: Иллюстрация редакции журнала, созданная с помощью ИИ.
+  credit: ''
+  rights_basis: Создано для журнала по поручению Тимура Гильмуллина, 2026.
+cover_image: /assets/images/hm-a15d32a7a9c5/figure-01.png
+preview_image: /assets/images/hm-a15d32a7a9c5/figure-01.png
 ---
-Математики шутят, а тот, кто понял, тот понял :)
+{% include article-figure.html id="fig-1" %}
+
+Математики шутят, а тот, кто понял, тот понял.
 
 Отношения между чистыми и прикладными математиками основаны на доверии и понимании. Чистые математики не доверяют прикладным математикам, а прикладные математики не понимают чистых математиков.

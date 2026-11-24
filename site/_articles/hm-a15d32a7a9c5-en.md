@@ -24,8 +24,19 @@ original_publication:
   preserve_date: true
   url: https://t.me/history_math/215
 source_url: https://t.me/history_math/215
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-a15d32a7a9c5/figure-01.png
+  alt: A speaker explains a drawing at a table while his puzzled companions listen.
+  caption: ''
+  source: AI-generated illustration commissioned by the journal.
+  credit: ''
+  rights_basis: Created for the journal at the request of Timur Gilmullin in 2026.
+cover_image: /assets/images/hm-a15d32a7a9c5/figure-01.png
+preview_image: /assets/images/hm-a15d32a7a9c5/figure-01.png
 ---
-Mathematicians are joking. If you know, you know. :)
+{% include article-figure.html id="fig-1" %}
+
+Mathematicians are joking. If you know, you know.
 
 Relations between pure and applied mathematicians are based on trust and understanding. Pure mathematicians do not trust applied mathematicians, and applied mathematicians do not understand pure mathematicians.
