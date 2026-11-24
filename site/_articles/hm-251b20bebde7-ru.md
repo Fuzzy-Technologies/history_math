@@ -37,6 +37,8 @@ figures:
     alt: Чёрно-белый гравированный портрет мужчины в парике и мантии, в овальной рамке
     caption: Пьер Вариньон (1654–1722)
     source: 'Wikimedia Commons, «Pierre Varignon.jpg»: https://commons.wikimedia.org/wiki/File:Pierre_Varignon.jpg'
+    credit: "Wikimedia Commons, «Pierre Varignon.jpg»"
+    source_url: "https://commons.wikimedia.org/wiki/File:Pierre_Varignon.jpg"
     rights_basis: 'Автор в публичной карточке не указан; Wikimedia Commons помечает файл как PD-old и Public Domain Mark 1.0.'
 preview_image: /assets/images/hm-251b20bebde7/figure-01.png
 cover_image: /assets/images/hm-251b20bebde7/figure-01.png

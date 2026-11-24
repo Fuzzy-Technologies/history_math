@@ -37,6 +37,8 @@ figures:
     alt: Black-and-white engraved portrait of a man in a wig and gown within an oval frame
     caption: Pierre Varignon (1654–1722)
     source: 'Wikimedia Commons, “Pierre Varignon.jpg”: https://commons.wikimedia.org/wiki/File:Pierre_Varignon.jpg'
+    credit: "Wikimedia Commons, “Pierre Varignon.jpg”"
+    source_url: "https://commons.wikimedia.org/wiki/File:Pierre_Varignon.jpg"
     rights_basis: 'The public record names no creator; Wikimedia Commons marks the file PD-old and Public Domain Mark 1.0.'
 preview_image: /assets/images/hm-251b20bebde7/figure-01.png
 cover_image: /assets/images/hm-251b20bebde7/figure-01.png
