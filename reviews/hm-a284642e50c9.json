@@ -27,25 +27,34 @@
     {
       "id": "q3",
       "question": "Для портрета Вилейтнера и обложки переиздания URSS указано только «Иллюстрация к материалу». Установить первоисточник и автора портрета, а для обложки — конкретное издание, издателя и подтверждённое основание воспроизведения; синхронизировать RU/EN-метаданные.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для портрета Вилейтнера и обложки переиздания URSS указано только «Иллюстрация к материалу». Установить первоисточник и автора портрета, а для обложки — конкретное издание, издателя и подтверждённое основание воспроизведения; синхронизировать RU/EN-метаданные.",
         "en": "The portrait of Wieleitner and the URSS reprint cover are identified only as illustrations accompanying the text. Establish the portrait’s source and creator and, for the cover, the exact edition, publisher, and confirmed basis for reproduction; synchronize the RU/EN metadata."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/376#pullrequestreview-6040002210"
     },
     {
       "id": "speyer-appointment-chronology",
       "question": "Разделить начало работы Вилейтнера в гимназии Шпейера и назначение учителем: он поступил туда ассистентом в 1898 году и стал учителем гимназии в 1900 году.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Разделить начало работы Вилейтнера в гимназии Шпейера и назначение учителем: он поступил туда ассистентом в 1898 году и стал учителем гимназии в 1900 году.",
         "en": "Distinguish Wieleitner’s start at the Speyer Gymnasium from his appointment as a teacher: he joined as an assistant in 1898 and became a Gymnasium teacher in 1900."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/376#pullrequestreview-6040002210"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/376#pullrequestreview-6040002210",
+    "source_commit": "337510190120911e4840bac01a70f4f158b726ac",
+    "source_review_id": 6040002210,
+    "approved_at": "2026-11-24T13:26:48Z",
+    "package_sha256": "d7643247ccdc62596facbebfe1a3822a8b6e581562efe28d7ae326644996da60"
   }
 }

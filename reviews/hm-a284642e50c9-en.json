@@ -27,25 +27,34 @@
     {
       "id": "q3",
       "question": "The portrait of Wieleitner and the URSS reprint cover are identified only as illustrations accompanying the text. Establish the portrait’s source and creator and, for the cover, the exact edition, publisher, and confirmed basis for reproduction; synchronize the RU/EN metadata.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "The portrait of Wieleitner and the URSS reprint cover are identified only as illustrations accompanying the text. Establish the portrait’s source and creator and, for the cover, the exact edition, publisher, and confirmed basis for reproduction; synchronize the RU/EN metadata.",
         "ru": "Для портрета Вилейтнера и обложки переиздания URSS указано только «Иллюстрация к материалу». Установить первоисточник и автора портрета, а для обложки — конкретное издание, издателя и подтверждённое основание воспроизведения; синхронизировать RU/EN-метаданные."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/376#pullrequestreview-6040002210"
     },
     {
       "id": "speyer-appointment-chronology",
       "question": "Distinguish Wieleitner’s start at the Speyer Gymnasium from his appointment as a teacher: he joined as an assistant in 1898 and became a Gymnasium teacher in 1900.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Distinguish Wieleitner’s start at the Speyer Gymnasium from his appointment as a teacher: he joined as an assistant in 1898 and became a Gymnasium teacher in 1900.",
         "ru": "Разделить начало работы Вилейтнера в гимназии Шпейера и назначение учителем: он поступил туда ассистентом в 1898 году и стал учителем гимназии в 1900 году."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/376#pullrequestreview-6040002210"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/376#pullrequestreview-6040002210",
+    "source_commit": "337510190120911e4840bac01a70f4f158b726ac",
+    "source_review_id": 6040002210,
+    "approved_at": "2026-11-24T13:26:48Z",
+    "package_sha256": "bf2c3eed35978b64ad4c7723011372e81c6e1c39ce2e94d6170eee5dd9d298ed"
   }
 }
