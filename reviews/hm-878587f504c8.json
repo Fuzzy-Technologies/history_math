@@ -5,35 +5,45 @@
     {
       "id": "q1",
       "question": "Установить дату рождения по первичному биографическому источнику. Mathedu.ru приводит «25 января (8 февраля) 1894», хотя эти даты разделяют 14 дней при 12-дневной календарной разнице; МПГУ указывает 7 февраля 1894 года. До подтверждения исходная формулировка сохранена. Источники: https://www.mathedu.ru/indexes/authors/prochuhaev_v_g/ ; https://mpgu.su/novosti/poimjonno-grigorevicha-prochuhaeva/ .",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Установить дату рождения по первичному биографическому источнику. Mathedu.ru приводит «25 января (8 февраля) 1894», хотя эти даты разделяют 14 дней при 12-дневной календарной разнице; МПГУ указывает 7 февраля 1894 года. До подтверждения исходная формулировка сохранена. Источники: https://www.mathedu.ru/indexes/authors/prochuhaev_v_g/ ; https://mpgu.su/novosti/poimjonno-grigorevicha-prochuhaeva/ .",
         "en": "Establish the birth date from a primary biographical source. Mathedu.ru gives “25 January (8 February) 1894”, although those dates are fourteen days apart while the Julian–Gregorian difference was twelve days; Moscow Pedagogical State University gives 7 February 1894. The source wording remains pending confirmation. Sources: https://www.mathedu.ru/indexes/authors/prochuhaev_v_g/ ; https://mpgu.su/novosti/poimjonno-grigorevicha-prochuhaeva/ ."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/399#pullrequestreview-6045725198"
     },
     {
       "id": "q2",
       "question": "Установить для портрета Василия Прочухаева и обложки его книги реальный публичный источник, фотографа/издателя и правовое основание; архивное хранение не делает сторонние изображения авторскими, а водяной знак «Мешок» на обложке требует указать фактический источник копии.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Установить для портрета Василия Прочухаева и обложки его книги реальный публичный источник, фотографа/издателя и правовое основание; архивное хранение не делает сторонние изображения авторскими, а водяной знак «Мешок» на обложке требует указать фактический источник копии.",
         "en": "Establish the actual public source, photographer or publisher, and legal basis for the portrait of Vasily Prochuhaev and the cover of his book; archival storage does not make third-party images author-created, and the Meshok watermark on the cover requires the actual source of that copy to be identified."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/399#pullrequestreview-6045725198"
     },
     {
       "id": "candidate-degree-field",
       "question": "Уточнить точную отрасль кандидатской степени Василия Прочухаева по первичному или архивному документу. МПГУ называет его кандидатом физико-математических наук, а Mathedu.Ru описывает диссертацию 1935 года как кандидатскую по педагогическим наукам. Синхронизировать подтверждённую степень в RU/EN.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Уточнить точную отрасль кандидатской степени Василия Прочухаева по первичному или архивному документу. МПГУ называет его кандидатом физико-математических наук, а Mathedu.Ru описывает диссертацию 1935 года как кандидатскую по педагогическим наукам. Синхронизировать подтверждённую степень в RU/EN.",
         "en": "Verify the exact field of Vasily Prochuhaev’s Candidate degree from a primary or archival record. Moscow Pedagogical State University calls him a Candidate of Physical and Mathematical Sciences, while Mathedu.Ru describes the 1935 dissertation as a Candidate dissertation in pedagogical sciences. Synchronize the confirmed degree in RU/EN."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/399#pullrequestreview-6045725198"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/399#pullrequestreview-6045725198",
+    "source_commit": "381028b852336d8c2b44fc43b1c1e34da5dd1c11",
+    "source_review_id": 6045725198,
+    "approved_at": "2026-11-24T19:15:12Z",
+    "package_sha256": "e71002f8ecf2d1d9bf6b70f6830a0b5bd878d775ec1e7883b5ef35ae33c89f10"
   }
 }
