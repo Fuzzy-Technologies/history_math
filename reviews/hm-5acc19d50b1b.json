@@ -15,7 +15,9 @@
     {
       "id": "q2",
       "question": "Уточнить даты работы заведующим кафедрой геометрии и деканом физико-математического факультета, чтобы не приписывать обе должности всему периоду 1944–1961.",
-      "blocking": true,
+      "id": "q2",
+      "question": "Уточнить даты работы заведующим кафедрой геометрии и деканом физико-математического факультета, чтобы не приписывать обе должности всему периоду 1944–1961.",
+      "blocking": false,
       "state": "resolved",
       "resolution": "По истории кафедры КФУ Лаптев временно заведовал кафедрой в 1944–1945 годах; биографическая страница КФУ указывает деканство в 1951–1958 годах. Даты исправлены в RU/EN: https://kpfu.ru/math/history/kafedra-geometrii и https://kpfu.ru/math/history/znamenitye-personalii/laptev-boris-lukich/centerfont-color007cc3-facept-sanslaptev-boris.html",
       "localizations": {
