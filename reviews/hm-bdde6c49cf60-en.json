@@ -5,7 +5,7 @@
     {
       "id": "pivo-english-wordplay",
       "question": "Russian ПИ + ВО forms ПИВО (“beer”). The English edition adapts the wordplay as PI + NT = PINT to preserve the drink punchline.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Russian ПИ + ВО forms ПИВО (“beer”). The English edition adapts the wordplay as PI + NT = PINT to preserve the drink punchline.",

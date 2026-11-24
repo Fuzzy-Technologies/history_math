@@ -5,7 +5,7 @@
     {
       "id": "pivo-english-wordplay",
       "question": "В русском тексте ПИ + ВО образует ПИВО. Для английской версии использована адаптация PI + NT = PINT, сохраняющая шутку о напитке.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "resolution": "В EN использована игра PI + NT = PINT. Условное число адаптировано ради той же шутки о напитке. RU сохраняет ПИ + ВО.",
       "localizations": {
