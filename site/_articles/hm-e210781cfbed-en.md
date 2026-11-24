@@ -16,7 +16,7 @@ tags:
   - Mathematicians Joke
   - Recursion
 math: false
-status: draft
+status: published
 permalink: /publications/hm-e210781cfbed-en/
 rights_basis: Mansur Gilmullin
 original_publication:

@@ -16,7 +16,7 @@ tags:
   - Математики шутят
   - Рекурсия
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-e210781cfbed-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

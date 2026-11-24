@@ -5,35 +5,45 @@
     {
       "id": "editorial-cover-required",
       "question": "Add an actual cover image for the Mathematicians Joke card. The current package contains no image.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "Add an actual cover image for the Mathematicians Joke card. The current package contains no image.",
         "ru": "Добавить фактическую обложку для карточки материала в рубрике «Математики шутят». Сейчас в пакете нет изображения."
-      }
+      },
+      "resolution": "Both editions include the approved editorial cover. https://github.com/Fuzzy-Technologies/history_math/pull/493#pullrequestreview-6044630865"
     },
     {
       "id": "source-authorship",
       "question": "Establish the primary source of “Recursion (noun). See recursion” and confirm Mansur Gilmullin’s original authorship, or present the item as an anonymous adaptation with correct visible attribution; a public version existed no later than 2005.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Establish the primary source of “Recursion (noun). See recursion” and confirm Mansur Gilmullin’s original authorship, or present the item as an anonymous adaptation with correct visible attribution; a public version existed no later than 2005.",
         "ru": "Установить первичный источник формулы «Рекурсия (сущ.) — см. рекурсия» и подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как анонимную адаптацию с корректной видимой атрибуцией; публичный вариант существовал не позднее 2005 года."
-      }
+      },
+      "resolution": "The editorial decision accepts the current wording for publication. https://github.com/Fuzzy-Technologies/history_math/pull/493#pullrequestreview-6044630865"
     },
     {
       "id": "source-date",
       "question": "Confirm the original date of 2023-11-26 with a verifiable public link in original_publication.url and source_url, or explicitly record that the original link is unavailable.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Confirm the original date of 2023-11-26 with a verifiable public link in original_publication.url and source_url, or explicitly record that the original link is unavailable.",
         "ru": "Подтвердить исходную дату 2023-11-26 проверяемой публичной ссылкой в original_publication.url и source_url либо явно зафиксировать, что исходная ссылка недоступна."
-      }
+      },
+      "resolution": "The editorial decision accepts the current wording for publication. https://github.com/Fuzzy-Technologies/history_math/pull/493#pullrequestreview-6044630865"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/493#pullrequestreview-6044630865",
+    "source_commit": "070536cce3033a0a01b453e9df55ee6edd9a6cfa",
+    "source_review_id": 6044630865,
+    "approved_at": "2026-11-24T17:59:33Z",
+    "package_sha256": "cc7fcaad24f3d1fc3e0c2f0b88fa7a50356506affa50499da3090d445fe4fe71"
   }
 }
