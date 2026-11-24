@@ -54,4 +54,4 @@ Source: [*The Crest of the Peacock*](https://press.princeton.edu/books/paperback
 
 The upper photograph shows a statue of Bhaskara II at Patnadevi, near Chalisgaon, India. This is believed to be where he wrote his *Siddhanta Shiromani*. Below is a page from *Lilavati*, Volume I, 1650. The use of the Pythagorean theorem is described in the corner. The title *Lilavati* (*The Beautiful*) is thought to refer to his daughter. The book contains 13 chapters and 278 verses, chiefly on arithmetic and practical mensuration.
 
-We discussed the period of elementary algebra, at the beginning of which Bhaskara II worked, in [our article on elementary algebra](https://teletype.in/@history_math/algebra-history-part-2) (in Russian).
+We discussed the period of elementary algebra, during which Bhaskara II worked, in [our article on elementary algebra](https://teletype.in/@history_math/algebra-history-part-2) (in Russian).
