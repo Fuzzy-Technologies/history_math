@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "В исходнике год смерти Бэра расходился между заголовком (1932) и вступлением (1935).",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "resolution": "Год смерти унифицирован как 1932 по справочнику CTHS и материалам Университета Бургундии: https://cths.fr/an/prosopographie_liste.php?page=29&sc= ; https://math.ube.fr/wp-content/uploads/2025/06/PDF-Baire-SMF_.pdf .",
       "localizations": {
