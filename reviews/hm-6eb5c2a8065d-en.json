@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6eb5c2a8065d-en",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+        "ru": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет."
+      },
+      "resolution": "Both editions include the editorially approved cover. https://github.com/Fuzzy-Technologies/history_math/pull/509#pullrequestreview-6045741757"
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Provide a public link to the original publication and confirm its date; do not change the date without a primary source, and do not guess the address.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Provide a public link to the original publication and confirm its date; do not change the date without a primary source, and do not guess the address.",
+        "ru": "Указать публичную ссылку на исходную публикацию и подтвердить её дату; дату не менять без первичного источника, адрес нельзя восстанавливать предположительно."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/509#pullrequestreview-6045741757"
+    },
+    {
+      "id": "bradis-anecdote-source",
+      "question": "Provide a verifiable source specifically for the school scene involving Bradis; documented variants differ from the article’s version.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Provide a verifiable source specifically for the school scene involving Bradis; documented variants differ from the article’s version.",
+        "ru": "Указать проверяемый источник именно для школьной сцены с Брадисом: документированные варианты истории отличаются от текста статьи."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/509#pullrequestreview-6045741757"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/509#pullrequestreview-6045741757",
+    "source_commit": "21a985cdde48c0fcd09056f7977f21a5a35cbe43",
+    "source_review_id": 6045741757,
+    "approved_at": "2026-11-24T19:16:23Z",
+    "package_sha256": "47ffa417918b9dab6fb52fcf41967305a9c4b56666979792520724563c770558"
+  }
+}
