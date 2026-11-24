@@ -25,12 +25,23 @@ original_publication:
   preserve_date: true
   url: https://t.me/history_math/199
 source_url: https://t.me/history_math/199
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-2d2dac0d846c/figure-01.png
+  alt: Three scholars outside a house debate how many people live there and picture a family at the door.
+  caption: ''
+  source: AI-generated illustration commissioned by the journal.
+  credit: ''
+  rights_basis: Created for the journal at the request of Timur Gilmullin in 2026.
+cover_image: /assets/images/hm-2d2dac0d846c/figure-01.png
+preview_image: /assets/images/hm-2d2dac0d846c/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 A physicist, a biologist and a mathematician are asked to explain how two people could enter an empty house and, some time later, three could come out.
 
-Physicist: It’s an observational error. It can’t happen. 👀
+Physicist: It’s an observational error. It can’t happen.
 
-Biologist: Simple biology. The two had a child. 👨‍👩‍👦
+Biologist: Simple biology. The two had a child.
 
-Mathematician: Nothing could be simpler! Define an empty house as a house containing no more than one person. 🤓
+Mathematician: Nothing could be simpler! Define an empty house as a house containing no more than one person.
