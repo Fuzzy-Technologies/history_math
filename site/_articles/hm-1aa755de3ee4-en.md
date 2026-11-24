@@ -19,7 +19,7 @@ tags:
   - amusements
   - arithmetic
 math: true
-status: draft
+status: published
 permalink: /publications/hm-1aa755de3ee4-en/
 rights_basis: Mansur Gilmullin
 original_publication:

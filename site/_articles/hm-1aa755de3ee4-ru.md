@@ -19,7 +19,7 @@ tags:
   - Забавы
   - арифметика
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-1aa755de3ee4-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
