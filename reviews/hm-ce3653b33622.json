@@ -16,25 +16,34 @@
     {
       "id": "descartes-figure-sources-and-rights",
       "question": "Для титульных листов изданий 1637 и 1641 годов указать реальные публичные источники и основания public domain; отдельно подтвердить происхождение и правовой статус портретной основы мема. Синхронизировать метаданные всех трёх иллюстраций в RU/EN и не описывать материалы третьих лиц как иллюстрации из авторского архива.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для титульных листов изданий 1637 и 1641 годов указать реальные публичные источники и основания public domain; отдельно подтвердить происхождение и правовой статус портретной основы мема. Синхронизировать метаданные всех трёх иллюстраций в RU/EN и не описывать материалы третьих лиц как иллюстрации из авторского архива.",
         "en": "Identify the actual public sources and public-domain bases for the 1637 and 1641 title pages; separately confirm the provenance and rights status of the portrait material used in the meme. Synchronize the metadata for all three figures in RU/EN and do not describe third-party material as illustrations from the author’s archive."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/561#pullrequestreview-6040105576"
     },
     {
       "id": "english-cover-visible-text",
       "question": "Для английской версии нужна локализация видимого текста непосредственно на меме: английский alt не заменяет русскую надпись внутри изображения.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для английской версии нужна локализация видимого текста непосредственно на меме: английский alt не заменяет русскую надпись внутри изображения.",
         "en": "The English version needs the visible text inside the meme localized; an English alt text does not replace the Russian wording embedded in the image."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/561#pullrequestreview-6040105576"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/561#pullrequestreview-6040105576",
+    "source_commit": "6bbbc5b9c4b4d267a31a2687fe0836d72d0b5bb1",
+    "source_review_id": 6040105576,
+    "approved_at": "2026-11-24T13:33:19Z",
+    "package_sha256": "459248abda704fc30c8d7883ff4ba9d9faf2fdfff2f3d4b00649a556b3310e7f"
   }
 }
