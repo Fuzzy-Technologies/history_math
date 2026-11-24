@@ -15,7 +15,9 @@
     {
       "id": "q2",
       "question": "Clarify the dates of Laptev’s service as head of the Department of Geometry and dean of the Faculty of Physics and Mathematics, rather than assigning both posts to the whole period 1944–1961.",
-      "blocking": true,
+      "id": "q2",
+      "question": "Clarify the dates of Laptev’s service as head of the Department of Geometry and dean of the Faculty of Physics and Mathematics, rather than assigning both posts to the whole period 1944–1961.",
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Clarify the dates of Laptev’s service as head of the Department of Geometry and dean of the Faculty of Physics and Mathematics, rather than assigning both posts to the whole period 1944–1961.",
