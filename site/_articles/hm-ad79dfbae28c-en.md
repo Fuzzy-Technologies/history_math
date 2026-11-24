@@ -16,7 +16,7 @@ tags:
   - Frobenius
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-ad79dfbae28c-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

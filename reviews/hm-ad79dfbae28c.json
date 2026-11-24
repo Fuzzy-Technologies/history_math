@@ -27,35 +27,45 @@
     {
       "id": "q3",
       "question": "Уточнить научное руководство диссертацией: MacTutor указывает руководителем Карла Вейерштрасса, а Эрнста Куммера — среди преподавателей семинаров. Сейчас RU/EN приписывают руководство обоим; исправить и синхронизировать биографию по источнику: https://mathshistory.st-andrews.ac.uk/Biographies/Frobenius/ .",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Уточнить научное руководство диссертацией: MacTutor указывает руководителем Карла Вейерштрасса, а Эрнста Куммера — среди преподавателей семинаров. Сейчас RU/EN приписывают руководство обоим; исправить и синхронизировать биографию по источнику: https://mathshistory.st-andrews.ac.uk/Biographies/Frobenius/ .",
         "en": "Clarify the dissertation supervision: MacTutor names Karl Weierstrass as supervisor and Ernst Kummer among Frobenius’s seminar teachers. The RU/EN texts currently credit both as supervisors; correct and synchronize the biography against https://mathshistory.st-andrews.ac.uk/Biographies/Frobenius/ ."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/413#pullrequestreview-6045728582"
     },
     {
       "id": "q4",
       "question": "Для двух портретов Фробениуса установить первичные публичные источники, авторов и даты, а также лицензию или статус общественного достояния; ретушь и колоризацию второй версии кредитовать отдельно. Хранение копий в авторском архиве не подтверждает авторство или право воспроизведения.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для двух портретов Фробениуса установить первичные публичные источники, авторов и даты, а также лицензию или статус общественного достояния; ретушь и колоризацию второй версии кредитовать отдельно. Хранение копий в авторском архиве не подтверждает авторство или право воспроизведения.",
         "en": "For the two portraits of Frobenius, identify the primary public sources, creators and dates, and the licence or public-domain status; credit the retouching and colourisation of the second version separately. Archive custody does not establish authorship or permission for reproduction."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/413#pullrequestreview-6045728582"
     },
     {
       "id": "q5",
       "question": "Уточнить вклад Фробениуса и Вейерштрасса в теорию матриц: безусловная фраза о том, что они «заложили основы теории матриц как алгебраической дисциплины», не учитывает более ранние работы Кэли, Сильвестра и Жордана. Исторический обзор: https://mathshistory.st-andrews.ac.uk/HistTopics/Matrices_and_determinants/ .",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Уточнить вклад Фробениуса и Вейерштрасса в теорию матриц: безусловная фраза о том, что они «заложили основы теории матриц как алгебраической дисциплины», не учитывает более ранние работы Кэли, Сильвестра и Жордана. Исторический обзор: https://mathshistory.st-andrews.ac.uk/HistTopics/Matrices_and_determinants/ .",
         "en": "Clarify Frobenius’s and Weierstrass’s contribution to matrix theory: the unqualified claim that they laid the foundations of matrix theory as an algebraic discipline overlooks the earlier work of Cayley, Sylvester and Jordan. Historical overview: https://mathshistory.st-andrews.ac.uk/HistTopics/Matrices_and_determinants/ ."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/413#pullrequestreview-6045728582"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/413#pullrequestreview-6045728582",
+    "source_commit": "7938089fc02066be6710f12abd4eb6b7bd6241ee",
+    "source_review_id": 6045728582,
+    "approved_at": "2026-11-24T19:15:27Z",
+    "package_sha256": "3ad00c0a6e3a6fa9d69bb4c79213b0071dc87c9f56e2ff583bd7d73238ca0fac"
   }
 }
