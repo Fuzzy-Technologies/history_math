@@ -16,15 +16,23 @@
     {
       "id": "bourbaki-story-authorship-and-publication",
       "question": "The source story is identified as Vladimir Arnold’s account retold by Boris Khesin, but the root authors and rights_basis attribute the material entirely to Mansur Gilmullin. Distinguish authorship of the source account from Mansur’s adaptation or editing. Also confirm the actual original publication dated 8 November 2026 with a public URL, or correct the date.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "The source story is identified as Vladimir Arnold’s account retold by Boris Khesin, but the root authors and rights_basis attribute the material entirely to Mansur Gilmullin. Distinguish authorship of the source account from Mansur’s adaptation or editing. Also confirm the actual original publication dated 8 November 2026 with a public URL, or correct the date.",
         "ru": "Исходный сюжет указан как рассказ Владимира Арнольда в пересказе Бориса Хесина, но корневые authors и rights_basis целиком приписывают материал Мансуру Гильмуллину. Отделить авторство источникового рассказа от адаптации или редакции Мансура. Также подтвердить фактическую исходную публикацию от 08.11.2026 публичным URL либо исправить дату."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/619#pullrequestreview-6040186680"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/619#pullrequestreview-6040186680",
+    "source_commit": "048e886b39507a4e7448df41d4f17d67cc1f24ac",
+    "source_review_id": 6040186680,
+    "approved_at": "2026-11-24T13:38:49Z",
+    "package_sha256": "41177e54f77d070ad62d4663d969b9a423b85ca3d1ac73714fd6eb376e2ecda4"
   }
 }

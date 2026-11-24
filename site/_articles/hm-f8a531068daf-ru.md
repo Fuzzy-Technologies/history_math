@@ -20,7 +20,7 @@ tags:
   - математика
   - кокотизация
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-f8a531068daf-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
