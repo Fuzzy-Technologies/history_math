@@ -47,9 +47,9 @@ His results reached us in scattered form. He wrote little and concisely; during 
 
 Some number-theoretic results survived only as assertions without proofs. Fermat conjectured that every number $F_n=2^{2^n}+1$ was prime; Euler disproved this already for $n=5$. Whether infinitely many Fermat primes exist remains an open question.
 
-Fermat’s little theorem is a fundamental result in number theory: if $p$ is prime and $a$ is not divisible by $p$, then $a^{p-1}-1$ is divisible by $p$. It is widely used in cryptography, coding theory and finite fields.
+Fermat’s little theorem is a fundamental result in number theory: if $p$ is prime and $a$ is an integer with $p \nmid a$, then $a^{p-1}-1$ is divisible by $p$. It is widely used in cryptography, coding theory and finite fields.
 
-Fermat’s last theorem states that the equation $x^n+y^n=z^n$ has no solution in positive integers $x$, $y$, $z$ when $n$ is an integer greater than 2. Efforts to prove it lasted 300 years, and it was officially recognised as proved only in 1995. It is regarded as “the most famous mathematical puzzle of all time”.
+Fermat’s last theorem states that the equation $x^n+y^n=z^n$ has no solution in positive integers $x$, $y$, $z$ for any integer $n>2$. After more than three centuries, Andrew Wiles completed the proof. In 1995, the [Annals of Mathematics](https://annals.math.princeton.edu/1995/141-3) published his paper giving the proof and a joint paper by Richard Taylor and Wiles that closed a gap in the original argument. It is regarded as “the most famous mathematical puzzle of all time”.
 
 His treatise *Introduction to Plane and Solid Loci* (1636) contains the beginnings of Fermat’s analytic geometry.
 
