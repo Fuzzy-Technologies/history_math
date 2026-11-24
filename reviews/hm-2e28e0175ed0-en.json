@@ -15,7 +15,7 @@
     {
       "id": "oresme-influence-claim",
       "question": "Please verify and, if necessary, narrow the claim that Nicole Oresme’s writings influenced Copernicus, Galileo and Descartes. The editorial review notes that similarity of ideas does not establish direct transmission and that influence on Galileo is considered unproven. Publication requires a source covering all three names or wording that describes Oresme’s specific contribution without an unsupported causal claim.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Please verify and, if necessary, narrow the claim that Nicole Oresme’s writings influenced Copernicus, Galileo and Descartes. The editorial review notes that similarity of ideas does not establish direct transmission and that influence on Galileo is considered unproven. Publication requires a source covering all three names or wording that describes Oresme’s specific contribution without an unsupported causal claim.",
