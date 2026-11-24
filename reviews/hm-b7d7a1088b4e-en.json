@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Provide a verifiable source for the portrait of Laplace, identify the artist or engraver and date where known, and document the licence or confirmed public-domain status; keep the attribution synchronized in RU and EN.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Provide a verifiable source for the portrait of Laplace, identify the artist or engraver and date where known, and document the licence or confirmed public-domain status; keep the attribution synchronized in RU and EN.",
@@ -37,7 +37,7 @@
     {
       "id": "laplace-equation-steady-state",
       "question": "Clarify the heat-conduction use of the Laplace equation: it describes a stationary temperature distribution in a region without internal heat sources.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Clarify the heat-conduction use of the Laplace equation: it describes a stationary temperature distribution in a region without internal heat sources.",
@@ -48,7 +48,7 @@
     {
       "id": "nebular-hypothesis-source-work",
       "question": "Attribute the hypothesis on the origin of the Solar System to *Exposition du système du monde* (1796), not to the five-volume *Treatise on Celestial Mechanics* (1799–1825).",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Attribute the hypothesis on the origin of the Solar System to *Exposition du système du monde* (1796), not to the five-volume *Treatise on Celestial Mechanics* (1799–1825).",
