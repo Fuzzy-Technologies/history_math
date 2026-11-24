@@ -27,15 +27,23 @@
     {
       "id": "cover-authorship-rights",
       "question": "For the cover, identify the actual creator or creation method, a verifiable source, and the legal basis. The current “Author’s illustration” and “Illustration accompanying the text” wording does not establish these facts.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the cover, identify the actual creator or creation method, a verifiable source, and the legal basis. The current “Author’s illustration” and “Illustration accompanying the text” wording does not establish these facts.",
         "ru": "Для обложки указать реального создателя или способ создания, проверяемый источник и правовое основание. Текущие формулировки «Авторская иллюстрация» и «Иллюстрация к материалу» этого не подтверждают."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/688#pullrequestreview-6040295843"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/688#pullrequestreview-6040295843",
+    "source_commit": "a522b80d216aac764967bfdf761d94df9c9ea441",
+    "source_review_id": 6040295843,
+    "approved_at": "2026-11-24T13:45:14Z",
+    "package_sha256": "e27c6f48c0a98d5c0bb0897cf1d326cf04ac93da4a43324cfcffc31f020760f7"
   }
 }
