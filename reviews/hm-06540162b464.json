@@ -5,12 +5,13 @@
     {
       "id": "q1",
       "question": "Сверить хронологию работы и названия институтов: исходник даёт Вятку с 1917 и ЛГПИ Покровского (позже Герцена) в 1925–1970. Музей Герценовского университета указывает Вятку с 1918, работу в институте Герцена и отдельно почасовое профессорство в институте Покровского с 1947: https://www.herzen.spb.ru/about/struct-uni/other-podr/muzey/znamenatelnye-daty/ . Согласовать последовательность учреждений в RU/EN.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Сверить хронологию работы и названия институтов: исходник даёт Вятку с 1917 и ЛГПИ Покровского (позже Герцена) в 1925–1970. Музей Герценовского университета указывает Вятку с 1918, работу в институте Герцена и отдельно почасовое профессорство в институте Покровского с 1947: https://www.herzen.spb.ru/about/struct-uni/other-podr/muzey/znamenatelnye-daty/ . Согласовать последовательность учреждений в RU/EN.",
         "en": "Verify the institutional chronology: the source gives Vyatka from 1917 and the Pokrovsky institute, later Herzen, for 1925–1970. Herzen University’s museum gives Vyatka from 1918 and distinguishes Herzen work from a part-time Pokrovsky professorship from 1947, https://www.herzen.spb.ru/about/struct-uni/other-podr/muzey/znamenatelnye-daty/ . Approve both versions."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/427#pullrequestreview-6045730768"
     },
     {
       "id": "q2",
@@ -37,15 +38,23 @@
     {
       "id": "q4",
       "question": "Для двух портретов И. Я. Депмана и трёх изображений книжных обложек установить публичные источники, авторов или учреждения и действительное правовое основание воспроизведения.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для двух портретов И. Я. Депмана и трёх изображений книжных обложек установить публичные источники, авторов или учреждения и действительное правовое основание воспроизведения.",
         "en": "For the two portraits of I. Ya. Depman and the three book-cover images, establish public sources, creators or holding institutions, and a valid rights basis for reproduction."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/427#pullrequestreview-6045730768"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/427#pullrequestreview-6045730768",
+    "source_commit": "05414c1bba10b165826547d65669b1005e4d1a6e",
+    "source_review_id": 6045730768,
+    "approved_at": "2026-11-24T19:15:36Z",
+    "package_sha256": "6fa6759465b730a4b1cc46bb101c0d70875f61c84e5cd2a352992de1286143e3"
   }
 }
