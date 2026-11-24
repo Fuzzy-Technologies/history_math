@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Correct or qualify the blanket 1970s dating of academy elections: the National Academy of Engineering gives 1985, https://www.nae.edu/File.aspx?id=7387&v=f78f09b0 . Approve separate election dates in both versions.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Correct or qualify the blanket 1970s dating of academy elections: the National Academy of Engineering gives 1985, https://www.nae.edu/File.aspx?id=7387&v=f78f09b0 . Approve separate election dates in both versions.",
@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "Clarify the four-volume work: Notes lists volumes 1 (1997) and 2 (2003) with M. Thapa, confirmed by the publisher at https://link.springer.com/book/10.1007/b97672 and https://link.springer.com/book/10.1007/b97283 . Distinguish the publication plan from volumes actually issued.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Clarify the four-volume work: Notes lists volumes 1 (1997) and 2 (2003) with M. Thapa, confirmed by the publisher at https://link.springer.com/book/10.1007/b97672 and https://link.springer.com/book/10.1007/b97283 . Distinguish the publication plan from volumes actually issued.",
@@ -27,7 +27,7 @@
     {
       "id": "q3",
       "question": "Verify the first von Neumann prize and SOL foundation dates: the source gives 1974 and 1973, while Stanford’s timeline gives 1975 and 1974, https://msande.stanford.edu/timeline-mses-history . Consult award and laboratory records before choosing dates.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify the first von Neumann prize and SOL foundation dates: the source gives 1974 and 1973, while Stanford’s timeline gives 1975 and 1974, https://msande.stanford.edu/timeline-mses-history . Consult award and laboratory records before choosing dates.",
@@ -38,7 +38,7 @@
     {
       "id": "linear-programming-term",
       "question": "Correct the attribution of the term “linear programming”: Tjalling Koopmans proposed it during Dantzig’s 1948 RAND visit; Dantzig developed the general model and simplex method in 1947. Sources: https://mathshistory.st-andrews.ac.uk/Biographies/Dantzig_George/ ; https://sites.oxy.edu/lengyel/M372/papers/SIAM%20Remembering%20George%20Dantzig.htm .",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Correct the attribution of the term “linear programming”: Tjalling Koopmans proposed it during Dantzig’s 1948 RAND visit; Dantzig developed the general model and simplex method in 1947. Sources: https://mathshistory.st-andrews.ac.uk/Biographies/Dantzig_George/ ; https://sites.oxy.edu/lengyel/M372/papers/SIAM%20Remembering%20George%20Dantzig.htm .",
