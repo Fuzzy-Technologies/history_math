@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Correct the final reference annotation: the source comment says Aleksandrov declined coauthorship of the 1940 algebra textbook, whereas section 3 explicitly calls him its coauthor and describes his refusal to participate in a geometry project. The main paragraph on algebra coauthorship is supported. Approve an annotation covering the reform, the joint 1940 algebra textbook and declining participation in the geometry project: https://elementy.ru/nauchno-populyarnaya_biblioteka/436281/Padenie_preobrazovatelya_chetyre_voprosa_o_reforme_Kolmogorova .",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Correct the final reference annotation: the source comment says Aleksandrov declined coauthorship of the 1940 algebra textbook, whereas section 3 explicitly calls him its coauthor and describes his refusal to participate in a geometry project. The main paragraph on algebra coauthorship is supported. Approve an annotation covering the reform, the joint 1940 algebra textbook and declining participation in the geometry project: https://elementy.ru/nauchno-populyarnaya_biblioteka/436281/Padenie_preobrazovatelya_chetyre_voprosa_o_reforme_Kolmogorova .",
@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "Distinguish the year for which the first-class Stalin Prize was awarded from the date of the decree: the article gives only “1942”, while the decree naming P. S. Aleksandrov is dated 22 March 1943. Align both versions with the Council of People’s Commissars decree and the Moscow University Chronicle.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Distinguish the year for which the first-class Stalin Prize was awarded from the date of the decree: the article gives only “1942”, while the decree naming P. S. Aleksandrov is dated 22 March 1943. Align both versions with the Council of People’s Commissars decree and the Moscow University Chronicle.",
