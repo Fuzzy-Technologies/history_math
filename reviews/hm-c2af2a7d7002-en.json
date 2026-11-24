@@ -5,22 +5,24 @@
     {
       "id": "q1",
       "question": "Provide a verifiable source and exact edition for the quotation attributed to Kepler about astrology.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Provide a verifiable source and exact edition for the quotation attributed to Kepler about astrology.",
         "ru": "Указать проверяемый источник и точную редакцию приведённой цитаты Кеплера об астрологии."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/336#pullrequestreview-6039918863"
     },
     {
       "id": "q2",
       "question": "Provide publicly verifiable original sources, authorship and legal basis for reproducing the portrait of Johannes Kepler and the engraving of the Kepler cup model.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Provide publicly verifiable original sources, authorship and legal basis for reproducing the portrait of Johannes Kepler and the engraving of the Kepler cup model.",
         "ru": "Указать публично проверяемые первоисточники, авторство и правовое основание воспроизведения портрета Иоганна Кеплера и гравюры модели «кубка Кеплера»."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/336#pullrequestreview-6039918863"
     },
     {
       "id": "indivisibles-anachronism",
@@ -35,6 +37,13 @@
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/336#pullrequestreview-6039918863",
+    "source_commit": "9f44b5a613cdbf60a0216c81e2faa83a41b08789",
+    "source_review_id": 6039918863,
+    "approved_at": "2026-11-24T13:21:00Z",
+    "package_sha256": "411b0a167e12e12b77cb2ebfff6e9892b24697b372703a31ceccd4d1e5fe2665"
   }
 }

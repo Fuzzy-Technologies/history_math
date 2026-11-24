@@ -5,22 +5,24 @@
     {
       "id": "q1",
       "question": "Указать проверяемый источник и точную редакцию приведённой цитаты Кеплера об астрологии.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Указать проверяемый источник и точную редакцию приведённой цитаты Кеплера об астрологии.",
         "en": "Provide a verifiable source and exact edition for the quotation attributed to Kepler about astrology."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/336#pullrequestreview-6039918863"
     },
     {
       "id": "q2",
       "question": "Указать публично проверяемые первоисточники, авторство и правовое основание воспроизведения портрета Иоганна Кеплера и гравюры модели «кубка Кеплера».",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Указать публично проверяемые первоисточники, авторство и правовое основание воспроизведения портрета Иоганна Кеплера и гравюры модели «кубка Кеплера».",
         "en": "Provide publicly verifiable original sources, authorship and legal basis for reproducing the portrait of Johannes Kepler and the engraving of the Kepler cup model."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/336#pullrequestreview-6039918863"
     },
     {
       "id": "indivisibles-anachronism",
@@ -35,6 +37,13 @@
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/336#pullrequestreview-6039918863",
+    "source_commit": "9f44b5a613cdbf60a0216c81e2faa83a41b08789",
+    "source_review_id": 6039918863,
+    "approved_at": "2026-11-24T13:21:00Z",
+    "package_sha256": "f15ca80601538beb08b9ad00b4a7a8eb371e975bb1e4c631621501a51ec50f75"
   }
 }

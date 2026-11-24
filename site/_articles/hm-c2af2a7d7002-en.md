@@ -16,7 +16,7 @@ tags:
   - Kepler
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-c2af2a7d7002-en/
 rights_basis: Mansur Gilmullin
 original_publication:
