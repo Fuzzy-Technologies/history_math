@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Verify Huygens’s position at the Paris Academy of Sciences and the statements that he was its first president and led it for fifteen years; agree the publication date of Treatise on Light, given as 1678 in the source.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify Huygens’s position at the Paris Academy of Sciences and the statements that he was its first president and led it for fifteen years; agree the publication date of Treatise on Light, given as 1678 in the source.",
@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "Verify the priority claims concerning Saturn’s rings, the balance spring and the pocket watch, the work with Hooke on fixed temperature points, and the claim about the first book presenting heliocentrism in Russia.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify the priority claims concerning Saturn’s rings, the balance spring and the pocket watch, the work with Hooke on fixed temperature points, and the claim about the first book presenting heliocentrism in Russia.",
