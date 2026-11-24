@@ -5,7 +5,7 @@
     {
       "id": "bieler-cover-attribution",
       "question": "For Ernest Biéler’s Three Young Girls (1920), record the actual artist, a public source, and the Public Domain basis instead of attributing it to the author’s archive.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "For Ernest Biéler’s Three Young Girls (1920), record the actual artist, a public source, and the Public Domain basis instead of attributing it to the author’s archive.",
