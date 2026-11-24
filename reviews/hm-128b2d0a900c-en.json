@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Verify the official name of the 1997 science writing award and the academy membership.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify the official name of the 1997 science writing award and the academy membership.",
@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "The English list explicitly translates Russian-edition titles and retains their dates. Confirm this presentation or map each Russian edition to its specific English original.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "The English list explicitly translates Russian-edition titles and retains their dates. Confirm this presentation or map each Russian edition to its specific English original.",
