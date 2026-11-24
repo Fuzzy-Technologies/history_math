@@ -1,0 +1,71 @@
+{
+  "review_version": 1,
+  "article_id": "hm-86d1740cccf7-en",
+  "questions": [
+    {
+      "id": "fibonacci-weights-optimality",
+      "question": "Please clarify the claim that Fibonacci-number weights minimise the number required. Under the preceding conditions, powers of two cover a larger continuous range on one pan and powers of three on both pans for the same number of weights. Are there additional constraints? Please agree an explanation or removal of “smallest”.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please clarify the claim that Fibonacci-number weights minimise the number required. Under the preceding conditions, powers of two cover a larger continuous range on one pan and powers of three on both pans for the same number of weights. Are there additional constraints? Please agree an explanation or removal of “smallest”.",
+        "ru": "Уточнить абзац о минимальном числе «гирь Фибоначчи». Набор 1, 2, 3, 5,… не является оптимальным при условиях выше: при том же числе гирь степени двойки покрывают больший непрерывный диапазон для одной чаши, а степени тройки — для двух. В чём дополнительные ограничения этой системы? Согласовать пояснение или убрать слово «минимальным» в обеих версиях."
+      },
+      "resolution": "The paragraph now states that Fibonacci weights can weigh integer masses but do not minimise the number of weights under the stated conditions; the optimal powers-of-two and powers-of-three systems are identified explicitly."
+    },
+    {
+      "id": "fibonacci-historical-generality",
+      "question": "Please check the final note’s categorical claim that Fibonacci was Western Europe’s first independent mathematician to cover every achievement of mathematicians in the Islamic world and advance beyond them. A specific historical source or a more precise account of his contribution and transmission of knowledge is needed.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please check the final note’s categorical claim that Fibonacci was Western Europe’s first independent mathematician to cover every achievement of mathematicians in the Islamic world and advance beyond them. A specific historical source or a more precise account of his contribution and transmission of knowledge is needed.",
+        "ru": "Проверить категоричную формулировку в последнем примечании: «первый самостоятельный математик Западной Европы», «полностью осветил все достижения … и продвинулся дальше них». Нужен конкретный исторический источник или более точное описание вклада и передачи знаний."
+      },
+      "resolution": "The categorical priority claim has been replaced with a precise account of Fibonacci’s role in transmitting mathematical methods; the lifespan is given as c. 1170–c. 1250."
+    },
+    {
+      "id": "balanced-ternary-finite-limit",
+      "question": "Clarify the second two-pan balance problem: the answer must depend on the stated mass limit. Use the finite set 1, 3, …, 3^(k−1), where k is minimal and (3^k−1)/2 is at least the limit.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Clarify the second two-pan balance problem: the answer must depend on the stated mass limit. Use the finite set 1, 3, …, 3^(k−1), where k is minimal and (3^k−1)/2 is at least the limit.",
+        "ru": "Уточнить вторую задачу о двухчашечных весах: ответ должен зависеть от заданного предела массы. Нужен конечный набор 1, 3, …, 3^(k−1), где k минимально и (3^k−1)/2 не меньше предела."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/650#pullrequestreview-6040239582"
+    },
+    {
+      "id": "fibonacci-weights-source-formulation",
+      "question": "The first problem is presented as Fibonacci’s formulation from Liber abaci, but the known source version is the thirty-day payment problem using vessels worth 1, 2, 4, 8, and 15, not the modern one-pan problem with weights 1, 2, 4, 8, and 16. Provide an exact edition and page or identify this as a modern equivalent reformulation.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "The first problem is presented as Fibonacci’s formulation from Liber abaci, but the known source version is the thirty-day payment problem using vessels worth 1, 2, 4, 8, and 15, not the modern one-pan problem with weights 1, 2, 4, 8, and 16. Provide an exact edition and page or identify this as a modern equivalent reformulation.",
+        "ru": "Первая задача подана как формулировка Фибоначчи из Liber abaci, но известная исходная версия — задача об оплате за 30 дней сосудами стоимости 1, 2, 4, 8, 15, а не современная задача о пяти гирях 1, 2, 4, 8, 16 на одной чаше. Нужна точная страница издания либо явное обозначение современной эквивалентной переформулировки."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/650#pullrequestreview-6040239582"
+    },
+    {
+      "id": "original-publication-source",
+      "question": "Both editions claim a Telegram date of 27 September 2024 but omit original_publication.url and the root source_url. Provide a verifiable public link to the original publication.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Both editions claim a Telegram date of 27 September 2024 but omit original_publication.url and the root source_url. Provide a verifiable public link to the original publication.",
+        "ru": "Для заявленной даты Telegram 27.09.2024 в обеих редакциях отсутствуют original_publication.url и корневой source_url. Нужна проверяемая публичная ссылка на исходную публикацию."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/650#pullrequestreview-6040239582"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/650#pullrequestreview-6040239582",
+    "source_commit": "78d6dfb2d151939017248f46d0bd945f097be1d1",
+    "source_review_id": 6040239582,
+    "approved_at": "2026-11-24T13:42:01Z",
+    "package_sha256": "ebfb4a75a32b602e1f2f00389c84963ba3ff5a226f9a70d62b872b33510957db"
+  }
+}
