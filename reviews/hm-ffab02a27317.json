@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ffab02a27317",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Сверить хронологию жизни и академических назначений Георга Вольфганга Крафта по первичным или институциональным данным. В текущем тексте указаны степень магистра в 1725 году, адъюнктура в 1731-м и кафедра теоретической и опытной физики в 1733-м. Справка Берлин-Бранденбургской академии наук приводит 1725, 1727, 1730 и 1731 годы, а Deutsche Biographie — 1725, 1730 и 1734; расходятся также точные даты рождения и смерти. Заодно подтвердить источником приоритетные формулировки о первом полном курсе и первом учебнике физики: https://www.bbaw.de/die-akademie/akademie-historische-aspekte/mitglieder-historisch/historisches-mitglied-georg-wolfgang-krafft-1475 ; https://www.deutsche-biographie.de/116356642.html .",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Сверить хронологию жизни и академических назначений Георга Вольфганга Крафта по первичным или институциональным данным. В текущем тексте указаны степень магистра в 1725 году, адъюнктура в 1731-м и кафедра теоретической и опытной физики в 1733-м. Справка Берлин-Бранденбургской академии наук приводит 1725, 1727, 1730 и 1731 годы, а Deutsche Biographie — 1725, 1730 и 1734; расходятся также точные даты рождения и смерти. Заодно подтвердить источником приоритетные формулировки о первом полном курсе и первом учебнике физики: https://www.bbaw.de/die-akademie/akademie-historische-aspekte/mitglieder-historisch/historisches-mitglied-georg-wolfgang-krafft-1475 ; https://www.deutsche-biographie.de/116356642.html .",
+        "en": "Verify Georg Wolfgang Krafft’s life and appointment chronology against primary or institutional records. The current text gives a master’s degree in 1725, an adjunct appointment in 1731 and the chair of theoretical and experimental physics in 1733. The Berlin-Brandenburg Academy’s record gives 1725, 1727, 1730 and 1731, while Deutsche Biographie gives 1725, 1730 and 1734; their exact birth and death dates also differ. Confirm as well the sources for the priority claims about the first complete physics course and first physics textbook: https://www.bbaw.de/die-akademie/akademie-historische-aspekte/mitglieder-historisch/historisches-mitglied-georg-wolfgang-krafft-1475 ; https://www.deutsche-biographie.de/116356642.html ."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/458#pullrequestreview-6045733630"
+    },
+    {
+      "id": "q2",
+      "question": "Установить происхождение портрета и гравюры Георга Вольфганга Крафта: для каждого изображения нужны автор или исходное издание, проверяемый публичный источник и действительное правовое основание/лицензия. Ссылка только на авторский архив этого не подтверждает; синхронизировать RU/EN metadata.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Обе иллюстрации происходят от меццо-тинто Иоганна Якоба Хайда 1747 года по портрету Вольфганга Дитриха Майера, каталог Рейксмюсеума RP-P-1918-657 (https://id.rijksmuseum.nl/200200474), общественное достояние. Обложка — кадрированный и тонированный фрагмент той же гравюры; RU/EN metadata исправлены.",
+      "localizations": {
+        "source": "Установить происхождение портрета и гравюры Георга Вольфганга Крафта: для каждого изображения нужны автор или исходное издание, проверяемый публичный источник и действительное правовое основание/лицензия. Ссылка только на авторский архив этого не подтверждает; синхронизировать RU/EN metadata.",
+        "en": "Establish the provenance of the portrait and engraving of Georg Wolfgang Krafft: for each image, provide the creator or original publication, a verifiable public source, and the applicable legal basis or licence. A reference only to an author’s archive does not establish this; synchronize RU/EN metadata."
+      }
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/458#pullrequestreview-6045733630",
+    "source_commit": "83d644176fca5ab300387b2203f49ca64d62e073",
+    "source_review_id": 6045733630,
+    "approved_at": "2026-11-24T19:15:50Z",
+    "package_sha256": "d93bbe0f1ab0e3af2c474cd011d491346bc6ce566e4330ab2923a4a0133e6d4d"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b57d8ece616e",
+  "questions": [
+    {
+      "id": "bergman-cover-place-date",
+      "question": "Исправить или объяснить место и дату на обложке: на календаре указано «Vienna 1934», тогда как текст и биографические источники относят работу Бергмана в Томском университете к 1934–1936 годам; его учёба в Вене завершилась значительно раньше. Следует согласовать надпись на обложке и описания RU/EN. Источники: https://mathshistory.st-andrews.ac.uk/Biographies/Bergman/ и https://www.deutsche-biographie.de/dbo010680-5.html?language=en",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Исправить или объяснить место и дату на обложке: на календаре указано «Vienna 1934», тогда как текст и биографические источники относят работу Бергмана в Томском университете к 1934–1936 годам; его учёба в Вене завершилась значительно раньше. Следует согласовать надпись на обложке и описания RU/EN. Источники: https://mathshistory.st-andrews.ac.uk/Biographies/Bergman/ и https://www.deutsche-biographie.de/dbo010680-5.html?language=en",
+        "en": "Correct or explain the place and date on the cover: its calendar reads “Vienna 1934”, whereas the article and biographical sources place Bergman at Tomsk University in 1934–1936; his studies in Vienna ended much earlier. The cover label and the RU/EN descriptions must be reconciled. Sources: https://mathshistory.st-andrews.ac.uk/Biographies/Bergman/ and https://www.deutsche-biographie.de/dbo010680-5.html?language=en"
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/579#pullrequestreview-6045735670"
+    },
+    {
+      "id": "bergman-scans-rights",
+      "question": "Для сканов страниц журнала «Квант» укажите действительное правовое основание использования в обеих редакциях. Библиографическая ссылка определяет источник публикации, но нахождение файлов в авторском архиве не подтверждает права на воспроизведение сканов.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для сканов страниц журнала «Квант» укажите действительное правовое основание использования в обеих редакциях. Библиографическая ссылка определяет источник публикации, но нахождение файлов в авторском архиве не подтверждает права на воспроизведение сканов.",
+        "en": "For the scans of pages from Kvant magazine, state the actual legal basis for use in both editions. A bibliographic citation identifies the publication source, but possession of the files in the author’s archive does not establish reproduction rights."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/579#pullrequestreview-6045735670"
+    },
+    {
+      "id": "bergman-cover-provenance",
+      "question": "Для fig-1 укажите фактического автора или исходное произведение, правообладателя, проверяемый публичный источник и правовое основание использования. Нахождение файла в авторском архиве не устанавливает происхождение и права на составную иллюстрацию.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для fig-1 укажите фактического автора или исходное произведение, правообладателя, проверяемый публичный источник и правовое основание использования. Нахождение файла в авторском архиве не устанавливает происхождение и права на составную иллюстрацию.",
+        "en": "For fig-1, identify the actual creator or source work, the rightsholder, a verifiable public source, and the legal basis for use. Possession of the file in the author’s archive does not establish the provenance or rights of the composite illustration."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/579#pullrequestreview-6045735670"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/579#pullrequestreview-6045735670",
+    "source_commit": "a5acee74129f8a9a445835a3aab014e22e7c5cef",
+    "source_review_id": 6045735670,
+    "approved_at": "2026-11-24T19:15:59Z",
+    "package_sha256": "cd3bea54cb194c83f7a9843d4be96014c85f6fca4c060febfb10786fbed8dae5"
+  }
+}

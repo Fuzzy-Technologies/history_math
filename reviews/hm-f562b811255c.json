@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f562b811255c",
+  "questions": [
+    {
+      "id": "haytham-book-attribution",
+      "question": "В исходнике книга «Ibn al-Haytham: The Man Who Discovered How We See» (2016) приписана Bradley Steffens. Официальная страница издания https://penguinrandomhousehighereducation.com/book/?isbn=9781426325007 указывает Libby Romero и National Geographic Kids. Уточнить, какая книга имелась в виду и на какой странице приведены история и реплика о линиях и доказательствах.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "В исходнике книга «Ibn al-Haytham: The Man Who Discovered How We See» (2016) приписана Bradley Steffens. Официальная страница издания https://penguinrandomhousehighereducation.com/book/?isbn=9781426325007 указывает Libby Romero и National Geographic Kids. Уточнить, какая книга имелась в виду и на какой странице приведены история и реплика о линиях и доказательствах.",
+        "en": "The source attributes Ibn al-Haytham: The Man Who Discovered How We See (2016) to Bradley Steffens. The official edition page https://penguinrandomhousehighereducation.com/book/?isbn=9781426325007 lists Libby Romero and National Geographic Kids. Please identify the intended book and the page for the story and quotation about lines and proofs."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/558#pullrequestreview-6045735199"
+    },
+    {
+      "id": "haytham-lifespan-date",
+      "question": "Синхронно уточнить годы жизни Ибн аль-Хайсама: ISMI указывает 965 — около 1040, UNESCO — 965–1040; точное «965–1039» в обеих редакциях не соответствует этим источникам.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Синхронно уточнить годы жизни Ибн аль-Хайсама: ISMI указывает 965 — около 1040, UNESCO — 965–1040; точное «965–1039» в обеих редакциях не соответствует этим источникам.",
+        "en": "Synchronize Ibn al-Haytham’s dates: ISMI gives 965–circa 1040 and UNESCO gives 965–1040; the exact “965–1039” in both editions does not match these sources."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/558#pullrequestreview-6045735199"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/558#pullrequestreview-6045735199",
+    "source_commit": "ff7a125227af89bb1abe5cfc686520d2ac1f71e2",
+    "source_review_id": 6045735199,
+    "approved_at": "2026-11-24T19:15:57Z",
+    "package_sha256": "b1f0ed022d14ebc9653554755484aa56df48b1b00d7137d6da093b69a284d574"
+  }
+}
