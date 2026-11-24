@@ -16,7 +16,7 @@ tags:
   - Laplace
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-b7d7a1088b4e-en/
 rights_basis: Mansur Gilmullin
 original_publication:

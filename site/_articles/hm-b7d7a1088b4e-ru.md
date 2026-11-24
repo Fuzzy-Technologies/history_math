@@ -16,7 +16,7 @@ tags:
   - Лаплас
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-b7d7a1088b4e-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

@@ -27,12 +27,13 @@
     {
       "id": "laplace-quotations-sources",
       "question": "Укажите проверяемые источники и точные редакции для приписываемого Лапласу афоризма в начале и диалога с Наполеоном; пометки о распространённой атрибуции и нескольких версиях сами по себе не подтверждают цитаты.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Укажите проверяемые источники и точные редакции для приписываемого Лапласу афоризма в начале и диалога с Наполеоном; пометки о распространённой атрибуции и нескольких версиях сами по себе не подтверждают цитаты.",
         "en": "Provide verifiable sources and exact editions for the opening aphorism attributed to Laplace and the dialogue with Napoleon; noting a common attribution or several versions does not itself verify the quotations."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/343#pullrequestreview-6039943669"
     },
     {
       "id": "laplace-equation-steady-state",
@@ -59,15 +60,23 @@
     {
       "id": "original-publication-url",
       "question": "Добавить проверяемую публичную ссылку на исходную публикацию от 20 ноября 2023 года в `original_publication.url` и `source_url`; адрес нельзя восстанавливать по предполагаемой последовательности постов.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Добавить проверяемую публичную ссылку на исходную публикацию от 20 ноября 2023 года в `original_publication.url` и `source_url`; адрес нельзя восстанавливать по предполагаемой последовательности постов.",
         "en": "Add a verifiable public link to the original publication dated 20 November 2023 in `original_publication.url` and `source_url`; do not reconstruct the address from an assumed post sequence."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/343#pullrequestreview-6039943669"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/343#pullrequestreview-6039943669",
+    "source_commit": "4c68db2767102adf10d6ac8e80a75167b0c4844f",
+    "source_review_id": 6039943669,
+    "approved_at": "2026-11-24T13:22:45Z",
+    "package_sha256": "bc02b4678081fbb30d628bc924d9553a4338d929c20a34ef2aafe276a11d991a"
   }
 }
