@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-af0b212a0906",
+  "questions": [
+    {
+      "id": "cover-authorship-rights",
+      "question": "Для фотоподобной обложки указать подтверждённого создателя и правообладателя, проверяемый публичный источник и правовое основание использования. Формулировки «Авторская иллюстрация» и «Иллюстрация к материалу» сами по себе этого не подтверждают.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для фотоподобной обложки указать подтверждённого создателя и правообладателя, проверяемый публичный источник и правовое основание использования. Формулировки «Авторская иллюстрация» и «Иллюстрация к материалу» сами по себе этого не подтверждают.",
+        "en": "For the photorealistic cover, identify the verified creator and rights holder, a verifiable public source, and the legal basis for use. “Author’s illustration” and “Illustration accompanying the text” do not establish these facts."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/664#pullrequestreview-6040263805"
+    },
+    {
+      "id": "depman-source-authorship",
+      "question": "Задача прямо взята из книги И. Я. Депмана, но корневые authors и rights_basis целиком приписывают материал Мансуру Гильмуллину. Отделить авторство исходной задачи Депмана от современной адаптации или редакции Мансура.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Задача прямо взята из книги И. Я. Депмана, но корневые authors и rights_basis целиком приписывают материал Мансуру Гильмуллину. Отделить авторство исходной задачи Депмана от современной адаптации или редакции Мансура.",
+        "en": "The problem is explicitly taken from I. Ya. Depman’s book, but the root authors and rights_basis attribute the material entirely to Mansur Gilmullin. Distinguish authorship of Depman’s source problem from Mansur’s modern adaptation or editing."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/664#pullrequestreview-6040263805"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/664#pullrequestreview-6040263805",
+    "source_commit": "7b6260fc8dcf8bbe846fc2c78e405c79a5c7ba8a",
+    "source_review_id": 6040263805,
+    "approved_at": "2026-11-24T13:43:21Z",
+    "package_sha256": "7aabf597ae4bb31374509107ba35f14e9355814cc8ecccbc5d13ed5196b8d1d1"
+  }
+}
