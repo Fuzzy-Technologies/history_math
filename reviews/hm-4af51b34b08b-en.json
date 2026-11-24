@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-4af51b34b08b-en",
+  "questions": [
+    {
+      "id": "support-links",
+      "question": "Please confirm the destinations and continued inclusion of the original support and book links in this permanent journal version: https://telegram.me/tribute/app?startapp=djsd and https://web.tribute.tg/l/w6 .",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Please confirm the destinations and continued inclusion of the original support and book links in this permanent journal version: https://telegram.me/tribute/app?startapp=djsd and https://web.tribute.tg/l/w6 .",
+        "ru": "Второй комментарий содержит исходные ссылки для поздравления/поддержки и покупки книг: https://telegram.me/tribute/app?startapp=djsd и https://web.tribute.tg/l/w6 . Они сохранены кликабельными с историческим текстом; перед публикацией подтвердить актуальность назначения и желание оставить их в постоянной журнальной версии."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/460#pullrequestreview-6040059389"
+    },
+    {
+      "id": "mansur-photo-provenance",
+      "question": "For all three photographs of Mansur Gilmullin, record the photographer or rights holder, a verifiable public source where available, and the permission or legal basis for publication; “author’s archive” alone does not establish authorship or usage rights.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "For all three photographs of Mansur Gilmullin, record the photographer or rights holder, a verifiable public source where available, and the permission or legal basis for publication; “author’s archive” alone does not establish authorship or usage rights.",
+        "ru": "Для всех трёх фотографий Мансура Гильмуллина указать фотографа или правообладателя, проверяемый публичный источник при наличии и разрешение либо правовое основание публикации: помета «авторский архив» сама по себе не устанавливает авторство и права использования."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/460#pullrequestreview-6040059389"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/460#pullrequestreview-6040059389",
+    "source_commit": "8a1b8f918a19c57f959d23bf9d73c2b095db1008",
+    "source_review_id": 6040059389,
+    "approved_at": "2026-11-24T13:30:19Z",
+    "package_sha256": "6054be92577e12acadc78d4404e7836840425e0c86068d0ac0dcffe2ee70b80e"
+  }
+}
