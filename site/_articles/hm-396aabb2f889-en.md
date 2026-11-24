@@ -25,8 +25,19 @@ original_publication:
   preserve_date: true
   url: https://t.me/history_math/178
 source_url: https://t.me/history_math/178
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-396aabb2f889/figure-01.png
+  alt: Hilbert speaks with his colleagues and imagines a pupil doing geometry and composing poetry.
+  caption: ''
+  source: AI-generated illustration commissioned by the journal.
+  credit: ''
+  rights_basis: Created for the journal at the request of Timur Gilmullin in 2026.
+cover_image: /assets/images/hm-396aabb2f889/figure-01.png
+preview_image: /assets/images/hm-396aabb2f889/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 Mathematicians are joking, though a little sadly.
 
 As the story goes, David Hilbert was once asked about one of his former students.<br>

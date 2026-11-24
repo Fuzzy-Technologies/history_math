@@ -25,8 +25,19 @@ original_publication:
   preserve_date: true
   url: https://t.me/history_math/178
 source_url: https://t.me/history_math/178
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-396aabb2f889/figure-01.png
+  alt: Гильберт беседует с коллегами, представляя ученика за геометрией и за сочинением стихов.
+  caption: ''
+  source: Иллюстрация редакции журнала, созданная с помощью ИИ.
+  credit: ''
+  rights_basis: Создано для журнала по поручению Тимура Гильмуллина, 2026.
+cover_image: /assets/images/hm-396aabb2f889/figure-01.png
+preview_image: /assets/images/hm-396aabb2f889/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 Математики шутят, но немного грустно.
 
 По одному из анекдотов, Давида Гильберта как-то спросили об одном из его бывших учеников.<br>
