@@ -18,7 +18,7 @@ tags:
   - Геометрия
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-2c11d65dff5c-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

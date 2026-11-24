@@ -18,7 +18,7 @@ tags:
   - Geometry
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-2c11d65dff5c-en/
 rights_basis: Mansur Gilmullin
 original_publication:
