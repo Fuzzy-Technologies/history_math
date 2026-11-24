@@ -5,7 +5,7 @@
     {
       "id": "bede-computus-rule",
       "question": "Clarify the popular summary of the Easter rule: computus uses the ecclesiastical equinox of 21 March and a tabular full moon, which need not coincide with astronomical events.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Clarify the popular summary of the Easter rule: computus uses the ecclesiastical equinox of 21 March and a tabular full moon, which need not coincide with astronomical events.",
