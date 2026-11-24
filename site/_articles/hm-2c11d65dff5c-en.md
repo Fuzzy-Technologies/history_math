@@ -39,6 +39,8 @@ figures:
     alt: Black-and-white printed portrait of Monge with a high collar and neckcloth, with the inscription MONGE below
     caption: Gaspard Monge. Engraved portrait.
     source: "J. M. Fontaine after Achille Devéria. Wellcome Collection, 6974i: https://wellcomecollection.org/works/whtbnkdh"
+    credit: "J. M. Fontaine after Achille Devéria. Wellcome Collection, 6974i"
+    source_url: "https://wellcomecollection.org/works/whtbnkdh"
     rights_basis: "Public Domain Mark; Wellcome Collection."
 preview_image: /assets/images/hm-2c11d65dff5c/figure-01.png
 cover_image: /assets/images/hm-2c11d65dff5c/figure-01.png

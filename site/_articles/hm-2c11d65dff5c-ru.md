@@ -39,6 +39,8 @@ figures:
     alt: Чёрно-белый печатный портрет Монжа в высоком воротнике и шейном платке, под изображением надпись «MONGE»
     caption: Гаспар Монж. Гравированный портрет.
     source: "J. M. Fontaine по рисунку Ашиля Девериа. Wellcome Collection, 6974i: https://wellcomecollection.org/works/whtbnkdh"
+    credit: "J. M. Fontaine по рисунку Ашиля Девериа. Wellcome Collection, 6974i"
+    source_url: "https://wellcomecollection.org/works/whtbnkdh"
     rights_basis: "Public Domain Mark; Wellcome Collection."
 preview_image: /assets/images/hm-2c11d65dff5c/figure-01.png
 cover_image: /assets/images/hm-2c11d65dff5c/figure-01.png
