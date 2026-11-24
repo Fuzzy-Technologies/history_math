@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Clarify the wording of Kronecker’s academy memberships, the consistency theorem and the Kronecker delta.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Clarify the wording of Kronecker’s academy memberships, the consistency theorem and the Kronecker delta.",
@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "Distinguish the quotation attributed to Kronecker from the author’s assessment of his disputes with other schools.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Distinguish the quotation attributed to Kronecker from the author’s assessment of his disputes with other schools.",
