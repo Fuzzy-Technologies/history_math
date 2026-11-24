@@ -5,35 +5,45 @@
     {
       "id": "nash-tie-anecdote-source",
       "question": "Уточнить страницу в «A Beautiful Mind» Sylvia Nasar для «игры в галстуки» и реплики о равновесии Нэша. Официальная страница https://www.simonandschuster.net/books/A-Beautiful-Mind/Sylvia-Nasar/9781451628425 подтверждает книгу и автора, но не этот эпизод. Исходник сам называет его шутливой легендой; это обозначение сохранено. Редактору решить, как обозначить связь вымышленного сюжета с приведённой библиографией.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Уточнить страницу в «A Beautiful Mind» Sylvia Nasar для «игры в галстуки» и реплики о равновесии Нэша. Официальная страница https://www.simonandschuster.net/books/A-Beautiful-Mind/Sylvia-Nasar/9781451628425 подтверждает книгу и автора, но не этот эпизод. Исходник сам называет его шутливой легендой; это обозначение сохранено. Редактору решить, как обозначить связь вымышленного сюжета с приведённой библиографией.",
         "en": "Please identify the page in Sylvia Nasar’s A Beautiful Mind for the tie game and the line about Nash equilibrium. The official page https://www.simonandschuster.net/books/A-Beautiful-Mind/Sylvia-Nasar/9781451628425 confirms the book and author, but not this episode. The source itself calls it a humorous legend, and that description is retained. The editor should agree how to describe the connection between the fictional scene and the cited biography."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/564#pullrequestreview-6040113874"
     },
     {
       "id": "english-cover-visible-text",
       "question": "Для английской версии нужна локализация видимого русского текста внутри комикса: переведённого alt недостаточно.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для английской версии нужна локализация видимого русского текста внутри комикса: переведённого alt недостаточно.",
         "en": "The English version needs the visible Russian text embedded in the comic localized; a translated alt text is not sufficient."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/564#pullrequestreview-6040113874"
     },
     {
       "id": "cover-illustration-provenance",
       "question": "Для иллюстрации укажите автора или создателя, правообладателя, проверяемый публичный источник и правовое основание использования. Формулировка «из авторского архива» описывает хранение, но сама по себе не подтверждает авторство или лицензию.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для иллюстрации укажите автора или создателя, правообладателя, проверяемый публичный источник и правовое основание использования. Формулировка «из авторского архива» описывает хранение, но сама по себе не подтверждает авторство или лицензию.",
         "en": "For the illustration, identify the author or creator, the rightsholder, a verifiable public source, and the legal basis for use. “From the author’s archive” describes custody but does not by itself establish authorship or a licence."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/564#pullrequestreview-6040113874"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/564#pullrequestreview-6040113874",
+    "source_commit": "b90888dd0e745a6ba7ab55329d68c9702ec9365c",
+    "source_review_id": 6040113874,
+    "approved_at": "2026-11-24T13:33:53Z",
+    "package_sha256": "5324e9f772ae9c61080a53f1a069579cab4598c889f808df8615f967f4f63924"
   }
 }
