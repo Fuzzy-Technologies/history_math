@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-893c193fdd69",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Проверить место и вид докторской степени 1825 года и состав преподавателей.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Проверить место и вид докторской степени 1825 года и состав преподавателей.",
+        "en": "Verify the institution and type of the 1825 doctorate and the list of teachers."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/354#pullrequestreview-6039985538"
+    },
+    {
+      "id": "q2",
+      "question": "Сверить библиографические заглавия и даты книг, исторические названия почётных университетов и техническую характеристику самосчётов и планиметра.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Сверить библиографические заглавия и даты книг, исторические названия почётных университетов и техническую характеристику самосчётов и планиметра.",
+        "en": "Check the bibliographical book titles and dates, the historical names of the universities granting honorary membership and the technical descriptions of the self-counting abacus and planimeter."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/354#pullrequestreview-6039985538"
+    },
+    {
+      "id": "q3",
+      "question": "Установить публичный первоисточник исторического портрета Виктора Буняковского, автора/фотографа (если известен) и лицензию либо подтверждённый статус общественного достояния.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Установить публичный первоисточник исторического портрета Виктора Буняковского, автора/фотографа (если известен) и лицензию либо подтверждённый статус общественного достояния.",
+        "en": "Establish the public original source of the historical portrait of Viktor Bunyakovsky, its creator or photographer (if known), and its license or confirmed public-domain status."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/354#pullrequestreview-6039985538"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/354#pullrequestreview-6039985538",
+    "source_commit": "ebeae2e16f69f796a14a8f47ae5f6d019bc22eda",
+    "source_review_id": 6039985538,
+    "approved_at": "2026-11-24T13:25:39Z",
+    "package_sha256": "40f6416c96ecd5eb8dcdaf9174f0ee4a0759494484d06aa9355cac4588de1d5c"
+  }
+}
