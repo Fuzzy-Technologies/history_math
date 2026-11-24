@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Verify the admission year and historical name of the normal school, the circumstances of expulsion and the evidence for the claim that royalists arranged the duel.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Verify the admission year and historical name of the normal school, the circumstances of expulsion and the evidence for the claim that royalists arranged the duel.",
@@ -16,7 +16,7 @@
     {
       "id": "q2",
       "question": "Agree the statement about equations above the fourth degree: should it explicitly refer to the general equation? Verify the historical attribution of the listed algebraic concepts and the completeness of Liouville’s 1846 publication.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Agree the statement about equations above the fourth degree: should it explicitly refer to the general equation? Verify the historical attribution of the listed algebraic concepts and the completeness of Liouville’s 1846 publication.",
@@ -37,7 +37,7 @@
     {
       "id": "galois-manuscripts-history",
       "question": "Distinguish the histories of Galois’s manuscripts involving Cauchy, Fourier and Poisson: Cauchy received a manuscript, Fourier died before reviewing the prize submission, and Poisson issued a negative report; saying that all three simply “failed to appreciate” the work conflates different events.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Distinguish the histories of Galois’s manuscripts involving Cauchy, Fourier and Poisson: Cauchy received a manuscript, Fourier died before reviewing the prize submission, and Poisson issued a negative report; saying that all three simply “failed to appreciate” the work conflates different events.",
