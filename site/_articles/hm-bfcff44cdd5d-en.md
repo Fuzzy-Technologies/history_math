@@ -17,7 +17,7 @@ tags:
   - fair division
 series: Problems
 math: true
-status: draft
+status: published
 permalink: /publications/hm-bfcff44cdd5d-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
