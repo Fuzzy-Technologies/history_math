@@ -19,7 +19,7 @@ tags:
   - biology
   - sequences
 math: true
-status: draft
+status: published
 permalink: /publications/hm-e5f562afd469-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

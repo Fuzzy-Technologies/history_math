@@ -19,7 +19,7 @@ tags:
   - Биология
   - последовательности
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-e5f562afd469-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

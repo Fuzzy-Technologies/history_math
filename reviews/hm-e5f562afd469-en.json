@@ -38,15 +38,23 @@
     {
       "id": "source-authorship-attribution",
       "question": "The historical Liber abaci problem is attributed in authors, author, and the root rights_basis only to Mansur Gilmullin. Distinguish Fibonacci’s authorship of the problem from Mansur’s adaptation, commentary, translation, and illustrations, and provide a verifiable bibliographic reference.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "The historical Liber abaci problem is attributed in authors, author, and the root rights_basis only to Mansur Gilmullin. Distinguish Fibonacci’s authorship of the problem from Mansur’s adaptation, commentary, translation, and illustrations, and provide a verifiable bibliographic reference.",
         "ru": "Историческая задача из Liber abaci и её постановка приписаны в authors, author и корневом rights_basis только Мансуру Гильмуллину. Нужно разделить авторство задачи Фибоначчи и вклад Мансура — адаптацию, комментарий, перевод и иллюстрации — и дать проверяемую библиографическую ссылку."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/651#pullrequestreview-6040239679"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/651#pullrequestreview-6040239679",
+    "source_commit": "9c8b758cb3bc81946871670d6820cff8a400d419",
+    "source_review_id": 6040239679,
+    "approved_at": "2026-11-24T13:42:02Z",
+    "package_sha256": "9f269d78b244712d89eb64f41a4fc0f34a9cb243a1b9bfd4b8e5f4c31a73d280"
   }
 }
