@@ -6,8 +6,8 @@
       "id": "q1",
       "question": "Уточнить число изготовленных паскалин: более 50 моделей в королевской привилегии — это опытные варианты, тогда как музейные источники указывают примерно 20 завершённых машин; исправить смешение этих чисел в обеих редакциях.",
       "localizations": {
-        "source": "Clarify how many Pascalines were completed: the more than fifty models in the royal privilege were experimental variants, whereas museum sources report about twenty finished machines; correct the conflation in both editions.",
-        "ru": "Уточнить число изготовленных паскалин: более 50 моделей в королевской привилегии — это опытные варианты, тогда как музейные источники указывают примерно 20 завершённых машин; исправить смешение этих чисел в обеих редакциях."
+        "source": "Уточнить число изготовленных паскалин: более 50 моделей в королевской привилегии — это опытные варианты, тогда как музейные источники указывают примерно 20 завершённых машин; исправить смешение этих чисел в обеих редакциях.",
+        "en": "Clarify how many Pascalines were completed: the more than fifty models in the royal privilege were experimental variants, whereas museum sources report about twenty finished machines; correct the conflation in both editions."
       },
       "blocking": true,
       "state": "open"
@@ -16,8 +16,8 @@
       "id": "q2",
       "question": "Для портрета Блеза Паскаля указать исходное произведение и его автора, публичный источник и лицензию либо основание общественного достояния; наличие копии в авторском архиве не подтверждает авторство исторического изображения третьего лица.",
       "localizations": {
-        "source": "For the portrait of Blaise Pascal, identify the source work and its artist, a public source record and the licence or public-domain basis; holding a copy in the author’s archive does not establish authorship of a third-party historical image.",
-        "ru": "Для портрета Блеза Паскаля указать исходное произведение и его автора, публичный источник и лицензию либо основание общественного достояния; наличие копии в авторском архиве не подтверждает авторство исторического изображения третьего лица."
+        "source": "Для портрета Блеза Паскаля указать исходное произведение и его автора, публичный источник и лицензию либо основание общественного достояния; наличие копии в авторском архиве не подтверждает авторство исторического изображения третьего лица.",
+        "en": "For the portrait of Blaise Pascal, identify the source work and its artist, a public source record and the licence or public-domain basis; holding a copy in the author’s archive does not establish authorship of a third-party historical image."
       },
       "blocking": true,
       "state": "open"
