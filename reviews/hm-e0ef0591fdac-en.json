@@ -5,25 +5,34 @@
     {
       "id": "joke-cover",
       "question": "The package has no actual cover for the joke card: figures is empty and the image manifest is empty. Add a suitable cover and reference it in both editions without changing the existing captions or text.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "The package has no actual cover for the joke card: figures is empty and the image manifest is empty. Add a suitable cover and reference it in both editions without changing the existing captions or text.",
         "ru": "В пакете отсутствует фактическая обложка для карточки шутки: список figures и манифест изображений пусты. Добавьте подходящую обложку и подключите её в обеих редакциях, не изменяя существующие подписи и текст."
-      }
+      },
+      "resolution": "Both editions include the editorially approved cover. https://github.com/Fuzzy-Technologies/history_math/pull/502#pullrequestreview-6045739910"
     },
     {
       "id": "source-authorship",
       "question": "Establish the joke’s primary source and confirm Mansur Gilmullin’s original authorship, or present the item as an adaptation with correct attribution; the text appears as a “popular joke” in a 2013 Omsk State Technical University collection, p. 45: https://www.omgtu.ru/general_information/faculties/faculty_of_transport_oil_and_gas/the_department_of_advanced_mathematics/files/sb_2013.pdf.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Establish the joke’s primary source and confirm Mansur Gilmullin’s original authorship, or present the item as an adaptation with correct attribution; the text appears as a “popular joke” in a 2013 Omsk State Technical University collection, p. 45: https://www.omgtu.ru/general_information/faculties/faculty_of_transport_oil_and_gas/the_department_of_advanced_mathematics/files/sb_2013.pdf.",
         "ru": "Установить первичный источник шутки и подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как адаптацию с корректной атрибуцией; текст опубликован как «популярная шутка» в сборнике ОмГТУ 2013 года, с. 45: https://www.omgtu.ru/general_information/faculties/faculty_of_transport_oil_and_gas/the_department_of_advanced_mathematics/files/sb_2013.pdf."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/502#pullrequestreview-6045739910"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/502#pullrequestreview-6045739910",
+    "source_commit": "19af874a7d8372adce0cb0c529a2c4d1a8d1cd8b",
+    "source_review_id": 6045739910,
+    "approved_at": "2026-11-24T19:16:16Z",
+    "package_sha256": "994747ef7652fe22e6d24ed4f4193c331af335610a734c09882da569a6495888"
   }
 }
