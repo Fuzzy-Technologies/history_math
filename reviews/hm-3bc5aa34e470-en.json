@@ -5,7 +5,7 @@
     {
       "id": "pick-arrest-chronology",
       "question": "Please check “arrested by the Nazis in 1939”: MacTutor describes Pick’s expulsion from the Academy after Prague’s occupation in 1939 and his deportation to Theresienstadt on 13 July 1942, where he died on 26 July. Please supply a source for an arrest in 1939 or approve a matching chronological correction in both editions: https://mathshistory.st-andrews.ac.uk/Biographies/Pick/ .",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Please check “arrested by the Nazis in 1939”: MacTutor describes Pick’s expulsion from the Academy after Prague’s occupation in 1939 and his deportation to Theresienstadt on 13 July 1942, where he died on 26 July. Please supply a source for an arrest in 1939 or approve a matching chronological correction in both editions: https://mathshistory.st-andrews.ac.uk/Biographies/Pick/ .",
@@ -27,7 +27,7 @@
     {
       "id": "pick-simple-polygon-domain",
       "question": "Please state the domain of Pick’s theorem: in the form used here, it applies to a simple lattice polygon without self-intersections. Add this condition to the digest and main statement in both editions.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "resolution": "Both editions now state explicitly, in the digest and main formulation, that the polygon must be simple.",
       "localizations": {
@@ -38,7 +38,7 @@
     {
       "id": "pick-popularization-date",
       "question": "Clarify the date attached to the popularization of Pick’s theorem. The IPSB bibliography dates the first Polish edition of Kalejdoskop matematyczny to 1938; the 1969 volume is the revised and enlarged third American edition. The American Mathematical Monthly mentions 1937, but that year is not used as the book’s publication date.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Clarify the date attached to the popularization of Pick’s theorem. The IPSB bibliography dates the first Polish edition of Kalejdoskop matematyczny to 1938; the 1969 volume is the revised and enlarged third American edition. The American Mathematical Monthly mentions 1937, but that year is not used as the book’s publication date.",
@@ -49,7 +49,7 @@
     {
       "id": "pick-portrait-attribution",
       "question": "Please identify the exact public source, image creator (when known), and licence or public-domain basis for the portrait of Georg Alexander Pick. “Illustration accompanying the text” does not establish the rights for a third-party historical portrait; please record matching provenance in both editions.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Please identify the exact public source, image creator (when known), and licence or public-domain basis for the portrait of Georg Alexander Pick. “Illustration accompanying the text” does not establish the rights for a third-party historical portrait; please record matching provenance in both editions.",
