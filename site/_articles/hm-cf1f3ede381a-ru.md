@@ -16,7 +16,7 @@ tags:
   - Абель
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-cf1f3ede381a-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

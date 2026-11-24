@@ -16,7 +16,7 @@ tags:
   - Abel
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-cf1f3ede381a-en/
 rights_basis: Mansur Gilmullin
 original_publication:

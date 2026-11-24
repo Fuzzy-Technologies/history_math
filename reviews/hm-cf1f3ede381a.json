@@ -12,11 +12,19 @@
     {
       "id": "q2",
       "question": "Для портрета Нильса Хенрика Абеля указать автора или исходное произведение, публичный источник и лицензию либо основание общественного достояния. Наличие копии в авторском архиве не подтверждает авторство исторического изображения третьего лица.",
-      "blocking": true,
-      "state": "open"
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/321#pullrequestreview-6039895494"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/321#pullrequestreview-6039895494",
+    "source_commit": "aeb28ee3e61a6e2a078cf1d35850754bcd896e2e",
+    "source_review_id": 6039895494,
+    "approved_at": "2026-11-24T13:19:23Z",
+    "package_sha256": "efaa697e985ad9ae4d7b3c64d9b91ae905245e89c0a35950a5e722b66fbc575c"
   }
 }
