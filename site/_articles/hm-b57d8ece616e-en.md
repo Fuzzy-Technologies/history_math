@@ -22,7 +22,7 @@ tags:
   - anecdotes
   - mathematicians
 math: false
-status: draft
+status: published
 permalink: /publications/hm-b57d8ece616e-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

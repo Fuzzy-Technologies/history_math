@@ -22,7 +22,7 @@ tags:
   - анекдоты
   - математики
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-b57d8ece616e-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
