@@ -20,7 +20,7 @@ tags:
   - Reference Books
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-4d8d1df26acb-en/
 rights_basis: Mansur Gilmullin
 original_publication:

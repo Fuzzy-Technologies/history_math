@@ -20,7 +20,7 @@ tags:
   - Справочники
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-4d8d1df26acb-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

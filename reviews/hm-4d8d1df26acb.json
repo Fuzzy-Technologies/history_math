@@ -5,26 +5,35 @@
     {
       "id": "q1",
       "question": "Разделить учреждения и относящиеся к ним периоды преподавания после 1945 года: в текущем предложении ЛЭТИ (1945–1957), Высшее военно-морское инженерное училище и ЛПИ (1957–1984) грамматически склеены. История кафедры СПбПУ указывает общий период работы К. У. Шахно в Политехническом институте 1930–1984; годы работы в военно-морском училище нужно подтвердить отдельно.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "evidence_url": "https://hmath.spbstu.ru/history/",
       "localizations": {
         "source": "Разделить учреждения и относящиеся к ним периоды преподавания после 1945 года: в текущем предложении ЛЭТИ (1945–1957), Высшее военно-морское инженерное училище и ЛПИ (1957–1984) грамматически склеены. История кафедры СПбПУ указывает общий период работы К. У. Шахно в Политехническом институте 1930–1984; годы работы в военно-морском училище нужно подтвердить отдельно.",
         "en": "Separate the institutions and their respective teaching periods after 1945: the current sentence grammatically combines the Leningrad Electrotechnical Institute (1945–1957), the Higher Naval Engineering School and the Leningrad Polytechnic Institute (1957–1984). The SPbPU department history gives Shakhno’s overall Polytechnic Institute service as 1930–1984; the naval-school dates require separate confirmation."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/415#pullrequestreview-6040002426"
     },
     {
       "id": "q2",
       "question": "Обе иллюстрации используют один и тот же снимок Константина Шахно, карточка которого помечает файл как несвободный. Подтвердить действительное право на публикацию фотографии и её обработок либо заменить изображение на имеющее проверяемый источник и допустимое правовое основание: https://ru.wikipedia.org/wiki/Файл:ШахноКонстантинУстинович.jpg .",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Обе иллюстрации используют один и тот же снимок Константина Шахно, карточка которого помечает файл как несвободный. Подтвердить действительное право на публикацию фотографии и её обработок либо заменить изображение на имеющее проверяемый источник и допустимое правовое основание: https://ru.wikipedia.org/wiki/Файл:ШахноКонстантинУстинович.jpg .",
         "en": "Both illustrations use the same photograph of Konstantin Shakhno, whose file page marks it as non-free. Confirm valid publication rights for the photograph and its derivatives, or replace it with an image having a verifiable source and permissible rights basis: https://ru.wikipedia.org/wiki/Файл:ШахноКонстантинУстинович.jpg ."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/415#pullrequestreview-6040002426"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/415#pullrequestreview-6040002426",
+    "source_commit": "da0524a10c2cc697663e433a48886c854cec3619",
+    "source_review_id": 6040002426,
+    "approved_at": "2026-11-24T13:26:49Z",
+    "package_sha256": "9ece990d518efe9ffda3f34172df00c5fedf8633b9a3080f6e9aedc59951f522"
   }
 }
