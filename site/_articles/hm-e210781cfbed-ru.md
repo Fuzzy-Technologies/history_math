@@ -23,8 +23,19 @@ original_publication:
   outlet: Telegram · history_math
   date: '2023-11-26'
   preserve_date: true
-figures: []
+figures:
+- id: fig-1
+  path: /assets/images/hm-e210781cfbed/figure-01.png
+  alt: Рассказчик показывает картину, где он снова показывает ту же картину своим слушателям.
+  caption: ''
+  source: Иллюстрация редакции журнала, созданная с помощью ИИ.
+  credit: ''
+  rights_basis: Создано для журнала по поручению Тимура Гильмуллина, 2026.
+cover_image: /assets/images/hm-e210781cfbed/figure-01.png
+preview_image: /assets/images/hm-e210781cfbed/figure-01.png
 ---
+{% include article-figure.html id="fig-1" %}
+
 Математики шутят о том, что математики шутят…
 
 Определение из словаря для математиков: Рекурсия (сущ.) — см. рекурсия.
