@@ -5,25 +5,34 @@
     {
       "id": "future-publication-date",
       "question": "Подтвердить исходную дату 2026-12-22: на 07.11.2026 публикация в Telegram ещё не состоялась.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Подтвердить исходную дату 2026-12-22: на 07.11.2026 публикация в Telegram ещё не состоялась.",
         "en": "Confirm the source date 2026-12-22: as of 7 November 2026 the Telegram publication had not yet appeared."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/479#pullrequestreview-6043451253"
     },
     {
       "id": "portrait-provenance",
       "question": "Для двух исторических портретов Николая Гюнтера нужны фактические источники и авторы, где они известны, а также лицензия или подтверждённый правовой статус; формулировка «Иллюстрация к материалу» этого не устанавливает.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для двух исторических портретов Николая Гюнтера нужны фактические источники и авторы, где они известны, а также лицензия или подтверждённый правовой статус; формулировка «Иллюстрация к материалу» этого не устанавливает.",
         "en": "The two historical portraits of Nikolai Günther need their actual sources and creators where known, plus a licence or confirmed rights status; the wording “illustration accompanying the text” does not establish provenance."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/479#pullrequestreview-6043451253"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/479#pullrequestreview-6043451253",
+    "source_commit": "da99775156af7457cd190762a475347397c04257",
+    "source_review_id": 6043451253,
+    "approved_at": "2026-11-24T16:41:05Z",
+    "package_sha256": "ed01438431d8e4ecc37c268dfd85a32fa37fb79fdedecfef631b4cb43ea72167"
   }
 }
