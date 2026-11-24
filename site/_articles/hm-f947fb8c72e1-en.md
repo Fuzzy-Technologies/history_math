@@ -33,7 +33,7 @@ source_url: https://t.me/history_math/907
 figures:
   - id: fig-1
     path: /assets/images/hm-f947fb8c72e1/figure-01.png
-    alt: Two teachers hold grade books marked 4 and 3; one says “Probability is a big subject—he must know something”, and the other “Probability is a big subject—there must be something he does not know”
+    alt: Two teachers hold grade books marked 4 and 3; one says “Probability is a big subject — he must know something”, and the other “Probability is a big subject — there must be something he does not know”
     caption: Two probability examiners. Author’s illustration
     source: Illustration accompanying the text.
     rights_basis: Illustration accompanying the text.
@@ -56,7 +56,7 @@ cover_image: /assets/images/hm-f947fb8c72e1/figure-01.png
 
 At Moscow State University’s Faculty of Mechanics and Mathematics, there was a pair of opposites: different groups had probability seminars with Alexander Wentzell, a young Doctor of Science and the son of Yelena Sergeyevna Wentzell, author of the famous probability textbook, or with Associate Professor Mikhail Kozlov.
 
-Kozlov had a reputation for being someone whose exam you could always pass. With Wentzell, the saying was, “You can pass—but not everyone, and not at the first attempt.”
+Kozlov had a reputation for being someone whose exam you could always pass. With Wentzell, the saying was, “You can pass — but not everyone, and not at the first attempt.”
 
 During the examination period, they meet in the corridor just after finishing their exams.
 
