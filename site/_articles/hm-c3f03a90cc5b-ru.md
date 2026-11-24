@@ -16,7 +16,7 @@ tags:
   - Лобачевский
 series: Математики шутят
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-c3f03a90cc5b-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:

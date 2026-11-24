@@ -16,7 +16,7 @@ tags:
   - Lobachevsky
 series: Mathematicians Joke
 math: false
-status: draft
+status: published
 permalink: /publications/hm-c3f03a90cc5b-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:
