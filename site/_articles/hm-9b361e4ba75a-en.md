@@ -20,7 +20,7 @@ tags:
   - analysis
   - synthesis
 math: false
-status: draft
+status: published
 permalink: /publications/hm-9b361e4ba75a-en/
 rights_basis: Mansur Gilmullin
 original_publication:

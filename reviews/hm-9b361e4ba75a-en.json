@@ -5,15 +5,23 @@
     {
       "id": "depman-diagrams-rights",
       "question": "Confirm the rights basis for reproducing figures 2 and 3 from I. Ya. Depman’s Stories about Solving Problems (Detgiz, 1957, p. 71; illustrator Y. Smolnikov). The source and illustrator are now credited, but the licence or other basis for reuse is not yet confirmed.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Confirm the rights basis for reproducing figures 2 and 3 from I. Ya. Depman’s Stories about Solving Problems (Detgiz, 1957, p. 71; illustrator Y. Smolnikov). The source and illustrator are now credited, but the licence or other basis for reuse is not yet confirmed.",
         "ru": "Подтвердить правовое основание для воспроизведения рис. 2 и 3 из книги И. Я. Депмана «Рассказы о решении задач» (Детгиз, 1957, с. 71; художник Ю. Смольников). Источник и автор рисунков указаны, но лицензия или иное основание использования пока не подтверждены."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/691#pullrequestreview-6040305795"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/691#pullrequestreview-6040305795",
+    "source_commit": "a5b4982784fa2605121eb531ea68582b2fd5a728",
+    "source_review_id": 6040305795,
+    "approved_at": "2026-11-24T13:45:49Z",
+    "package_sha256": "ea6297febcb8bd10613475289ad2b21996c3875e35c2cd35a27b3ce3cc30c53e"
   }
 }

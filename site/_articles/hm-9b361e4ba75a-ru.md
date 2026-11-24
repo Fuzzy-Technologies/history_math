@@ -20,7 +20,7 @@ tags:
   - анализ
   - синтез
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-9b361e4ba75a-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
