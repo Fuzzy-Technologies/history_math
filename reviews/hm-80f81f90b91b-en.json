@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "The source cites the first edition as Prosveshchenie, 1958, while the selected archival cover, whose filename says 1958, visibly reads Uchpedgiz, 1961. Verify the first edition and publisher; the image caption follows the visible 1961 imprint.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "The source cites the first edition as Prosveshchenie, 1958, while the selected archival cover, whose filename says 1958, visibly reads Uchpedgiz, 1961. Verify the first edition and publisher; the image caption follows the visible 1961 imprint.",
