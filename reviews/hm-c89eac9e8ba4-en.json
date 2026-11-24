@@ -5,7 +5,7 @@
     {
       "id": "fibonacci-rabbit-maturity",
       "question": "The condition says that every pair produces a new pair each month but omits the maturation delay for newborn pairs. Without that delay the population doubles rather than following the usual Fibonacci sequence. Please decide whether to add the condition that breeding starts in the second month; the original condition remains in both versions.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "The condition says that every pair produces a new pair each month but omits the maturation delay for newborn pairs. Without that delay the population doubles rather than following the usual Fibonacci sequence. Please decide whether to add the condition that breeding starts in the second month; the original condition remains in both versions.",
