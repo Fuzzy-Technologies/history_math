@@ -5,12 +5,13 @@
     {
       "id": "q1",
       "question": "Уточнить даты создания и организационную преемственность вычислительной группы, отдела приближённых вычислений и кафедры вычислительной математики; подтвердить рамки приоритета первого курса методов программирования.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Уточнить даты создания и организационную преемственность вычислительной группы, отдела приближённых вычислений и кафедры вычислительной математики; подтвердить рамки приоритета первого курса методов программирования.",
         "en": "Verify the dates and organizational succession of the computing group, Department of Approximate Computations and university department; establish the scope of the priority claim for the first programming-methods course."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/378#pullrequestreview-6039985632"
     },
     {
       "id": "q2",
@@ -26,15 +27,23 @@
     {
       "id": "q3",
       "question": "Для исторического портрета Люстерника указано только «Иллюстрация к материалу». Установить публичный первоисточник, фотографа или автора (если известен), дату и лицензию либо иное подтверждённое основание публикации; синхронизировать данные фигуры в RU/EN.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для исторического портрета Люстерника указано только «Иллюстрация к материалу». Установить публичный первоисточник, фотографа или автора (если известен), дату и лицензию либо иное подтверждённое основание публикации; синхронизировать данные фигуры в RU/EN.",
         "en": "The historical portrait of Lyusternik is identified only as an illustration accompanying the text. Establish a public source, the photographer or creator where known, its date, and a licence or other confirmed basis for publication; synchronize the figure metadata in both editions."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/378#pullrequestreview-6039985632"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/378#pullrequestreview-6039985632",
+    "source_commit": "29cc3ebcc9f2095633a66497c9fa76ef53439fd9",
+    "source_review_id": 6039985632,
+    "approved_at": "2026-11-24T13:25:40Z",
+    "package_sha256": "a440728d8229f3e24355a66943a9b54fc62c7a1287593f704d484ea151b47691"
   }
 }
