@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-06ce1a45f8b9",
+  "questions": [
+    {
+      "id": "pythagorean-positive-parameter",
+      "question": "Уточнить условие на параметр m: для невырожденного треугольника с натуральными сторонами требуется нечётное m > 1. При m = 1 исходные формулы дают (1, 0, 1). Численные примеры с 25 и 2025 верны.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Формула и обе языковые версии теперь явно требуют нечётное m > 1.",
+      "localizations": {
+        "source": "Уточнить условие на параметр m: для невырожденного треугольника с натуральными сторонами требуется нечётное m > 1. При m = 1 исходные формулы дают (1, 0, 1). Численные примеры с 25 и 2025 верны.",
+        "en": "Please specify an odd parameter m > 1 for a nondegenerate triangle with positive integer sides. At m = 1, the source formulas give (1, 0, 1). The numerical examples for 25 and 2025 are correct."
+      }
+    },
+    {
+      "id": "pythagorean-cover-attribution",
+      "question": "Указать, что обложка является производной от Pythagorean.svg на Wikimedia Commons, перечислить участников из карточки файла, отметить изменения и сохранить лицензию CC BY-SA 3.0.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "В обеих редакциях указаны Michael Hardy, Wapcaplet, Steff и Leo2004, источник и лицензия; отмечены изменения цветов, полей холста и растрирование в PNG.",
+      "localizations": {
+        "source": "Указать, что обложка является производной от Pythagorean.svg на Wikimedia Commons, перечислить участников из карточки файла, отметить изменения и сохранить лицензию CC BY-SA 3.0.",
+        "en": "Identify the cover as a derivative of Wikimedia Commons Pythagorean.svg, credit the contributors named in the file card, state the changes, and preserve the CC BY-SA 3.0 licence."
+      }
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/684#pullrequestreview-6037929244",
+    "source_commit": "604f029a92b46d07472a4ee3ba2fa745d895d6ac",
+    "source_review_id": 6037929244,
+    "approved_at": "2026-11-24T10:55:02Z",
+    "package_sha256": "9902bb4ea1fcc502af97fb81425890d2ab86616b329484c1d18afde5ff33096d"
+  }
+}
