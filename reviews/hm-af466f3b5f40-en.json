@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-af466f3b5f40-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Identify which teaching-material sets are meant by the alignment with the 2010 Federal State Educational Standards and add titles or editions if needed. The 2001 anthology is a separate book, and Gleizer’s role as compiler is retained.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Identify which teaching-material sets are meant by the alignment with the 2010 Federal State Educational Standards and add titles or editions if needed. The 2001 anthology is a separate book, and Gleizer’s role as compiler is retained.",
+        "ru": "Уточнить, к каким именно учебно-методическим комплектам относятся слова о соответствии ФГОС-2010; при необходимости добавить названия и издания. Хрестоматия 2001 года — отдельная книга, её составительский статус сохранён."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/408#pullrequestreview-6039993563"
+    },
+    {
+      "id": "q2",
+      "question": "Identify the public sources, creator or photographer and legal status of the portrait of Grigory Gleizer and the anthology cover; archive custody does not establish authorship or permission for reproduction.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Identify the public sources, creator or photographer and legal status of the portrait of Grigory Gleizer and the anthology cover; archive custody does not establish authorship or permission for reproduction.",
+        "ru": "Установить публичные первоисточники, автора или фотографа и правовой статус портрета Г. Д. Глейзера и обложки хрестоматии; хранение в авторском архиве не подтверждает авторство или право воспроизведения."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/408#pullrequestreview-6039993563"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/408#pullrequestreview-6039993563",
+    "source_commit": "391f4bae4a05067b8a32282dfab275a50fb75169",
+    "source_review_id": 6039993563,
+    "approved_at": "2026-11-24T13:26:13Z",
+    "package_sha256": "cb41254a7e27cafdc32ecd6ed75c89e0c211d29d4426b60ae2872508f78d81a6"
+  }
+}
