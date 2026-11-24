@@ -16,7 +16,7 @@ tags:
   - Математики шутят
   - Математический анализ
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-dd7aad6e1ed5-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

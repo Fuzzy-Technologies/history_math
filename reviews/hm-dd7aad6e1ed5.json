@@ -5,25 +5,34 @@
     {
       "id": "missing-humor-cover",
       "question": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "resolved",
       "localizations": {
         "source": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
         "en": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication."
-      }
+      },
+      "resolution": "В обеих версиях добавлена согласованная редакцией обложка. https://github.com/Fuzzy-Technologies/history_math/pull/499#pullrequestreview-6045738843"
     },
     {
       "id": "source-authorship",
       "question": "Установить первичный источник шутки и подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как адаптацию с корректной атрибуцией: текст дословно опубликован у С. Н. Федина в книге «Математики тоже шутят» (2009), с. 104.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Установить первичный источник шутки и подтвердить оригинальное авторство Мансура Гильмуллина либо оформить материал как адаптацию с корректной атрибуцией: текст дословно опубликован у С. Н. Федина в книге «Математики тоже шутят» (2009), с. 104.",
         "en": "Establish the joke’s primary source and confirm Mansur Gilmullin’s original authorship, or present the item as an adaptation with correct attribution: the same text appears in S. N. Fedin’s 2009 book Mathematicians Joke Too, p. 104."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/499#pullrequestreview-6045738843"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/499#pullrequestreview-6045738843",
+    "source_commit": "f3607626a7587061d228f8a1fb77cd321d1dceb0",
+    "source_review_id": 6045738843,
+    "approved_at": "2026-11-24T19:16:12Z",
+    "package_sha256": "9b07c48f6b80646e0bde9c96fa4cef9a2871003a185217e0cdecc4319edf9285"
   }
 }

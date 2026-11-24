@@ -16,7 +16,7 @@ tags:
   - Mathematicians Joke
   - Mathematical Analysis
 math: true
-status: draft
+status: published
 permalink: /publications/hm-dd7aad6e1ed5-en/
 rights_basis: Mansur Gilmullin
 original_publication:
