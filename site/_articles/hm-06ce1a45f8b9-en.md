@@ -18,7 +18,7 @@ tags:
   - number theory
   - geometry
 math: true
-status: draft
+status: published
 permalink: /publications/hm-06ce1a45f8b9-en/
 rights_basis: Mansur Gilmullin
 original_publication:

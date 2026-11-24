@@ -18,7 +18,7 @@ tags:
   - теория чисел
   - геометрия
 math: true
-status: draft
+status: published
 permalink: /ru/publications/hm-06ce1a45f8b9-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:
