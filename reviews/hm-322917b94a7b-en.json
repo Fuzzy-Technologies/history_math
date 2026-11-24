@@ -5,45 +5,56 @@
     {
       "id": "q1",
       "question": "Clarify the scope of the priority claims for Mathematics 0 and the pedagogy-of-mathematics approach; confirm their sources and the historical institution names.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Clarify the scope of the priority claims for Mathematics 0 and the pedagogy-of-mathematics approach; confirm their sources and the historical institution names.",
         "ru": "Уточнить рамки первенства учебника «Математика 0» и подхода «Педагогика математики»; подтвердить источники этих оценок и исторические названия учреждений."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/388#pullrequestreview-6039976885"
     },
     {
       "id": "q2",
       "question": "Check all seventeen bibliographical entries and coauthor credits, including the 2008 reprint, and review the descriptive English translations of the titles.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Check all seventeen bibliographical entries and coauthor credits, including the 2008 reprint, and review the descriptive English translations of the titles.",
         "ru": "Сверить полный библиографический состав семнадцати позиций и соавторов, в том числе переиздания 2008 года, и согласовать английские описательные переводы заглавий."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/388#pullrequestreview-6039976885"
     },
     {
       "id": "q3",
       "question": "Identify a public source and creator for the portrait of A. A. Stolyar; for the book cover, identify the exact edition, publisher and a confirmed basis for reproduction. Possession of the images in an author's archive does not establish image rights.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Identify a public source and creator for the portrait of A. A. Stolyar; for the book cover, identify the exact edition, publisher and a confirmed basis for reproduction. Possession of the images in an author's archive does not establish image rights.",
         "ru": "Установить публичный источник и автора портрета А. А. Столяра; для книжной обложки — точное издание, издателя и подтверждённое основание воспроизведения. Хранение изображений в авторском архиве не устанавливает права на них."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/388#pullrequestreview-6039976885"
     },
     {
       "id": "q4",
       "question": "Confirm the public URL of the original publication dated 23 May 2024 and record it in both article editions.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Confirm the public URL of the original publication dated 23 May 2024 and record it in both article editions.",
         "ru": "Подтвердить публичный URL исходной публикации от 23 мая 2024 года и записать его в обеих редакциях статьи."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/388#pullrequestreview-6039976885"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/388#pullrequestreview-6039976885",
+    "source_commit": "10ebc944aa2c9086d3a085f35ca06cf260043743",
+    "source_review_id": 6039976885,
+    "approved_at": "2026-11-24T13:25:04Z",
+    "package_sha256": "8bfe83fe66709aeb096ed58433142ff742cddc4eae52784a83a43180ddeb9966"
   }
 }
