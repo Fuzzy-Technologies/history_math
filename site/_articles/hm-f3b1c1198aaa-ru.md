@@ -17,7 +17,7 @@ tags:
   - Натурфилософия
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-f3b1c1198aaa-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

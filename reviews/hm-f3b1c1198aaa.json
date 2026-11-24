@@ -16,35 +16,45 @@
     {
       "id": "q2",
       "question": "Сверить точность года рождения 1214, учёных степеней и профессорской должности, а также рассказ о двенадцатилетнем заключении с 1278 года. Согласовать первоисточники и переводы цитат в примечаниях.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Сверить точность года рождения 1214, учёных степеней и профессорской должности, а также рассказ о двенадцатилетнем заключении с 1278 года. Согласовать первоисточники и переводы цитат в примечаниях.",
         "en": "Verify the precision of the 1214 birth year, academic degrees and professorial appointment, and the account of twelve years’ imprisonment from 1278. Establish original sources and approve translations for the quotations in Notes."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/414#pullrequestreview-6045728821"
     },
     {
       "id": "q3",
       "question": "Сверить приоритетные утверждения «первым выступил против схоластики» и «первым европейцем подробно описал изготовление пороха (1242)», а также сведения об очках и наблюдении затмения.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Сверить приоритетные утверждения «первым выступил против схоластики» и «первым европейцем подробно описал изготовление пороха (1242)», а также сведения об очках и наблюдении затмения.",
         "en": "Verify the priority claims about first opposing scholasticism and first describing gunpowder manufacture in Europe in 1242, and the references to spectacles and eclipse observations."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/414#pullrequestreview-6045728821"
     },
     {
       "id": "q4",
       "question": "Для портрета Роджера Бэкона и фотографии оксфордской статуи укажите подтверждённые первоисточник, автора и действительное правовое основание публикации; запись «авторский архив» этого не устанавливает. Для статуи отдельно укажите скульптора и кредит фотографии, если они известны.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для портрета Роджера Бэкона и фотографии оксфордской статуи укажите подтверждённые первоисточник, автора и действительное правовое основание публикации; запись «авторский архив» этого не устанавливает. Для статуи отдельно укажите скульптора и кредит фотографии, если они известны.",
         "en": "For Roger Bacon’s portrait and the photograph of the Oxford statue, provide a verified primary source, creator, and valid rights basis; “author’s archive” does not establish publication rights. For the statue, separately credit the sculptor and the photographer where known."
-      }
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/414#pullrequestreview-6045728821"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/414#pullrequestreview-6045728821",
+    "source_commit": "7a31e654c8f525c1557a412bd9d280a4891a076e",
+    "source_review_id": 6045728821,
+    "approved_at": "2026-11-24T19:15:28Z",
+    "package_sha256": "4b4fb7766e5aa8455b8e05fd463bf0cd22cf4c9f5dab73c0e270492af1e0f792"
   }
 }

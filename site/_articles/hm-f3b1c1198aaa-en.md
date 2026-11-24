@@ -17,7 +17,7 @@ tags:
   - Natural Philosophy
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-f3b1c1198aaa-en/
 rights_basis: Mansur Gilmullin
 original_publication:
