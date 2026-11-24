@@ -5,7 +5,7 @@
     {
       "id": "queen-story-denial",
       "question": "История о королеве подана в исходнике как событие, однако сам Кэрролл отверг её в P.S. к *Advertisement* второго издания *Symbolic Logic* (1896): см. [текст авторского опровержения](https://schnark.github.io/lewis-carroll/html/symbolic-logic/preface.html) и [скан второго издания](https://archive.org/details/symboliclogic00carr). В обеих версиях сюжет следует подавать как анекдот и отмечать авторское опровержение.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "История о королеве подана в исходнике как событие, однако сам Кэрролл отверг её в P.S. к *Advertisement* второго издания *Symbolic Logic* (1896): см. [текст авторского опровержения](https://schnark.github.io/lewis-carroll/html/symbolic-logic/preface.html) и [скан второго издания](https://archive.org/details/symboliclogic00carr). В обеих версиях сюжет следует подавать как анекдот и отмечать авторское опровержение.",
