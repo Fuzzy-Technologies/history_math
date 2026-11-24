@@ -16,25 +16,34 @@
     {
       "id": "q2",
       "question": "Сверить должность Нордена в журнале и период руководства; подтвердить личное воспоминание автора и годы 1967–1975.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Сверить должность Нордена в журнале и период руководства; подтвердить личное воспоминание автора и годы 1967–1975.",
         "en": "Check Norden’s position at the journal and the period of leadership; confirm the author’s personal recollection and the years 1967–1975."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/357#pullrequestreview-6039943838"
     },
     {
       "id": "q3",
       "question": "Установить проверяемый первоисточник портрета А. П. Нордена, фотографа/автора (если установлен) и лицензию либо иное подтверждённое основание воспроизведения; синхронизировать метаданные RU/EN.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Установить проверяемый первоисточник портрета А. П. Нордена, фотографа/автора (если установлен) и лицензию либо иное подтверждённое основание воспроизведения; синхронизировать метаданные RU/EN.",
         "en": "Establish a verifiable original source for the portrait of A. P. Norden, its photographer or creator (if identified), and its license or another confirmed basis for reproduction; keep the RU and EN metadata synchronized."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/357#pullrequestreview-6039943838"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/357#pullrequestreview-6039943838",
+    "source_commit": "9d9f27a65b52ff38df7c760c7b431e8156104f07",
+    "source_review_id": 6039943838,
+    "approved_at": "2026-11-24T13:22:46Z",
+    "package_sha256": "294d257089a00fac8c37979c5568319ac89b9dd0aa5f80f949ce88c0e0c4fe33"
   }
 }
