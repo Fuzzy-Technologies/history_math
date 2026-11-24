@@ -27,15 +27,23 @@
     {
       "id": "q4",
       "question": "For the two portraits of Leibniz after Francke, identify a verifiable original and the applicable legal basis or licence. For the modern calculator replica, provide the photographer, public source and licence; “illustration accompanying the text” does not establish publication rights. Synchronize RU/EN metadata.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the two portraits of Leibniz after Francke, identify a verifiable original and the applicable legal basis or licence. For the modern calculator replica, provide the photographer, public source and licence; “illustration accompanying the text” does not establish publication rights. Synchronize RU/EN metadata.",
         "ru": "Для двух портретов Лейбница по Франке установить проверяемый оригинал и действительное правовое основание/лицензию. Для современной реплики калькулятора указать автора фотографии, публичный источник и лицензию; формулировка «иллюстрация к материалу» прав не подтверждает. Синхронизировать RU/EN metadata."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/456#pullrequestreview-6040059205"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/456#pullrequestreview-6040059205",
+    "source_commit": "51b4105907726158473ce14757864e23abd94a89",
+    "source_review_id": 6040059205,
+    "approved_at": "2026-11-24T13:30:19Z",
+    "package_sha256": "073bb5fbc8448ef5de0c1f4d72b329fb398c4cf6ce2d835c9578a9d94e62d542"
   }
 }
