@@ -17,7 +17,7 @@ tags:
   - Курант
   - математический сон
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-5c06bf4c6ce4-ru/
 rights_basis: Мансур Гильмуллин
 original_publication:

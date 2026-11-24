@@ -17,7 +17,7 @@ tags:
   - Courant
   - mathematical dream
 math: false
-status: draft
+status: published
 permalink: /publications/hm-5c06bf4c6ce4-en/
 rights_basis: Mansur Gilmullin
 original_publication:

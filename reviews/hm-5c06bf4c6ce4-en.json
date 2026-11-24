@@ -5,25 +5,34 @@
     {
       "id": "courant-dream-problem-source",
       "question": "Please identify the pages in Constance Reid’s Courant for the lecture-room nap, the two attributed remarks and the later publication of the solution. The claim of publication particularly needs the problem’s name and the work containing its solution, neither of which the post identifies. The publisher page for the collected edition https://link.springer.com/book/9780387962566 confirms the Courant biography, but not this episode. The source story remains in both versions, and the illustrated cover is not treated as proof of a real publication.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Please identify the pages in Constance Reid’s Courant for the lecture-room nap, the two attributed remarks and the later publication of the solution. The claim of publication particularly needs the problem’s name and the work containing its solution, neither of which the post identifies. The publisher page for the collected edition https://link.springer.com/book/9780387962566 confirms the Courant biography, but not this episode. The source story remains in both versions, and the illustrated cover is not treated as proof of a real publication.",
         "ru": "Уточнить страницы в Constance Reid «Courant» для сна на лекции, двух приписанных реплик и последующей публикации решения. Для утверждения о публикации особенно нужны название задачи и работа, где появилось решение; пост их не называет. Страница издателя сборного издания https://link.springer.com/book/9780387962566 подтверждает существование биографии «Courant», но не этот эпизод. Исходный рассказ сохранён в RU/EN, изображённая обложка не используется как доказательство реальной публикации."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/566#pullrequestreview-6040114108"
     },
     {
       "id": "courant-comic-provenance",
       "question": "For the four-panel illustration, identify its author or creator, the source work, the rightsholder, a verifiable public source, and the legal basis for use. “From the author’s archive” alone does not establish authorship or a licence.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the four-panel illustration, identify its author or creator, the source work, the rightsholder, a verifiable public source, and the legal basis for use. “From the author’s archive” alone does not establish authorship or a licence.",
         "ru": "Для четырёхкадровой иллюстрации укажите автора или создателя, исходное произведение, правообладателя, проверяемый публичный источник и правовое основание использования. Формулировка «из авторского архива» сама по себе не подтверждает авторство или лицензию."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/566#pullrequestreview-6040114108"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/566#pullrequestreview-6040114108",
+    "source_commit": "1ca0d01b24f663242fc71c2e42486ec493c0bc30",
+    "source_review_id": 6040114108,
+    "approved_at": "2026-11-24T13:33:54Z",
+    "package_sha256": "688802a582495927b25cc54a573741753294349f316d0d75e0daf1fde802c3aa"
   }
 }
