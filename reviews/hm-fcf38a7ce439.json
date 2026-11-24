@@ -5,15 +5,23 @@
     {
       "id": "collage-attribution",
       "question": "Для четырёх сторонних исторических обложек в коллаже указать источник и правовой статус каждого компонента и корректный кредит коллажа; сведения синхронизировать в RU/EN.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Для четырёх сторонних исторических обложек в коллаже указать источник и правовой статус каждого компонента и корректный кредит коллажа; сведения синхронизировать в RU/EN.",
         "en": "For the four third-party historical textbook covers in the collage, identify the source and rights status of each component and provide a correct collage credit; synchronize the information in RU/EN."
-      }
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/473#pullrequestreview-6040067950"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/473#pullrequestreview-6040067950",
+    "source_commit": "5c72abb3d7cea7ec453ef6a31382efab93594108",
+    "source_review_id": 6040067950,
+    "approved_at": "2026-11-24T13:30:53Z",
+    "package_sha256": "38e098d586f803dc055a05dcc95df3aea86a907f617e10c0c7f15bcbef0c8b94"
   }
 }
