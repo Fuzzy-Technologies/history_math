@@ -5,45 +5,56 @@
     {
       "id": "q1",
       "question": "Verify the historical names of the Chișinău and Tiraspol pedagogical institutes and their departments in 1940–1963; confirm the English rendering Gersh Isaakovich Gleizer.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Verify the historical names of the Chișinău and Tiraspol pedagogical institutes and their departments in 1940–1963; confirm the English rendering Gersh Isaakovich Gleizer.",
         "ru": "Уточнить исторические названия Кишинёвского и Тираспольского педагогических институтов и их кафедр в 1940–1963 годах; согласовать английскую передачу имени Gersh Isaakovich Gleizer."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/389#pullrequestreview-6039976953"
     },
     {
       "id": "q2",
       "question": "Check the original Moldavian and single-volume Russian editions and the translation list.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Check the original Moldavian and single-volume Russian editions and the translation list.",
         "ru": "Сверить библиографию первоначальных молдавских и однотомных русских изданий и состав переводов."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/389#pullrequestreview-6039976953"
     },
     {
       "id": "q3",
       "question": "For each of the three published book covers in the collage, identify the specific edition, publisher and a confirmed basis for reproduction; distinguish authorship of the collage assembly from rights in the third-party images it contains.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For each of the three published book covers in the collage, identify the specific edition, publisher and a confirmed basis for reproduction; distinguish authorship of the collage assembly from rights in the third-party images it contains.",
         "ru": "Для каждой из трёх издательских обложек в коллаже указать конкретное издание, издателя и подтверждённое основание воспроизведения; авторство составления коллажа отделить от прав на входящие в него сторонние изображения."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/389#pullrequestreview-6039976953"
     },
     {
       "id": "q4",
       "question": "Confirm the public URL of the original publication dated 27 May 2024 and record it in both article editions.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Confirm the public URL of the original publication dated 27 May 2024 and record it in both article editions.",
         "ru": "Подтвердить публичный URL исходной публикации от 27 мая 2024 года и записать его в обеих редакциях статьи."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/389#pullrequestreview-6039976953"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/389#pullrequestreview-6039976953",
+    "source_commit": "6c383d14b830fe912ed19c480ae8ebacd2acb8da",
+    "source_review_id": 6039976953,
+    "approved_at": "2026-11-24T13:25:04Z",
+    "package_sha256": "500f38eb8ed6fd6dffa75f86b30094dd02ebe3edeb3cc71de5ac92c0dae0b479"
   }
 }
