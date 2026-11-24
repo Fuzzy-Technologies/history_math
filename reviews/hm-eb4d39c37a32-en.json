@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-eb4d39c37a32-en",
+  "questions": [
+    {
+      "id": "lecture-title-spoonerism",
+      "question": "Please review the title spoonerism in English. Both Russian forms are transliterated and translated accurately, but the English titles do not reproduce the sound swap by themselves. Please decide whether this presentation needs a brief explanation of the swapped initial sounds. No invented replacement titles have been substituted.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please review the title spoonerism in English. Both Russian forms are transliterated and translated accurately, but the English titles do not reproduce the sound swap by themselves. Please decide whether this presentation needs a brief explanation of the swapped initial sounds. No invented replacement titles have been substituted.",
+        "ru": "В EN сохранены обе русские формы в транслитерации и с переводом: Teoriya zhivykh sil («Теория живых сил») и Teoriya sivykh zhil («Теория сивых жил»). Перестановка звуков передана точно, но английский каламбур не возникает автоматически. Согласовать, достаточно ли такой подачи или нужен краткий комментарий о перестановке начальных звуков; другую пару названий без решения редактора не подставлял."
+      },
+      "resolution": "The English version explains the switch in initial sounds and retains both Russian expressions in transliteration and translation."
+    },
+    {
+      "id": "humor-cover-image",
+      "question": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+        "ru": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет."
+      },
+      "resolution": "Both editions include the editorially approved cover. https://github.com/Fuzzy-Technologies/history_math/pull/514#pullrequestreview-6045742920"
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Provide a public link to the original publication confirming the date 26.05.2024; the address must not be guessed.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Provide a public link to the original publication confirming the date 26.05.2024; the address must not be guessed.",
+        "ru": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 26.05.2024; адрес нельзя восстанавливать предположительно."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/514#pullrequestreview-6045742920"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/514#pullrequestreview-6045742920",
+    "source_commit": "59ae8f6aa5ea65759ff7986449d7f9afce5c9fa2",
+    "source_review_id": 6045742920,
+    "approved_at": "2026-11-24T19:16:29Z",
+    "package_sha256": "39e226491554fb90d75c1c93a89bf8aefdf3c1717b9b212ca37f4f4ed08f2407"
+  }
+}
