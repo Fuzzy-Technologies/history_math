@@ -27,25 +27,34 @@
     {
       "id": "q3",
       "question": "Identify a verifiable primary source, author or photographer, date and licence or confirmed public-domain status for the portrait of Leopold Kronecker.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Identify a verifiable primary source, author or photographer, date and licence or confirmed public-domain status for the portrait of Leopold Kronecker.",
         "ru": "Установить проверяемый первоисточник, автора или фотографа, дату и лицензию либо подтверждённый public-domain status портрета Леопольда Кронекера."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/347#pullrequestreview-6045720314"
     },
     {
       "id": "q4",
       "question": "Resolve Kronecker’s professorial rank at the University of Berlin in 1883: the Prussian state archive catalogue describes an appointment as ordentlicher Professor, while Deutsche Biographie says außerordentlicher (ao.) Professor; align RU and EN with the verified archival record.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Resolve Kronecker’s professorial rank at the University of Berlin in 1883: the Prussian state archive catalogue describes an appointment as ordentlicher Professor, while Deutsche Biographie says außerordentlicher (ao.) Professor; align RU and EN with the verified archival record.",
         "ru": "Уточнить профессорский статус Кронекера в Берлинском университете в 1883 году: каталог Прусского тайного государственного архива указывает ordentlicher Professor, а Deutsche Biographie — außerordentlicher (ao.) Professor; согласовать RU/EN по проверенному архивному документу."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/347#pullrequestreview-6045720314"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/347#pullrequestreview-6045720314",
+    "source_commit": "a99031f2baed36b861a8d42c9e811f28762d1dbc",
+    "source_review_id": 6045720314,
+    "approved_at": "2026-11-24T19:14:52Z",
+    "package_sha256": "1549d9d8621b4aff48149c094dc50d55736ae8a21a57889b76c6ac169ccc4f3a"
   }
 }
