@@ -5,7 +5,7 @@
     {
       "id": "q1",
       "question": "Clarify the scope of the claim that she was the world’s first woman professor of mathematics, the forms of study in Heidelberg and Berlin and the historical name of the Stockholm institution.",
-      "blocking": true,
+      "blocking": false,
       "state": "resolved",
       "localizations": {
         "source": "Clarify the scope of the claim that she was the world’s first woman professor of mathematics, the forms of study in Heidelberg and Berlin and the historical name of the Stockholm institution.",
