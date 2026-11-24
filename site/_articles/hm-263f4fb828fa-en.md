@@ -20,7 +20,7 @@ tags:
   - Perm
 series: People
 math: false
-status: draft
+status: published
 permalink: /publications/hm-263f4fb828fa-en/
 rights_basis: "Mansur Gilmullin"
 original_publication:

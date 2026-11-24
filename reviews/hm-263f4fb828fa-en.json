@@ -5,35 +5,45 @@
     {
       "id": "q1",
       "question": "Provide sources and specific comparisons for the assessment of Russia’s and Felix Klein’s roles in the international reform movement. The English text attributes the position to Lankov and preserves the author’s argument.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Provide sources and specific comparisons for the assessment of Russia’s and Felix Klein’s roles in the international reform movement. The English text attributes the position to Lankov and preserves the author’s argument.",
         "ru": "Подтвердить источники и конкретные сопоставления для оценки роли России и Ф. Клейна в международной реформе преподавания: в EN позиция явно отнесена к Ланкову, авторская аргументация сохранена."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/390#pullrequestreview-6039985720"
     },
     {
       "id": "q2",
       "question": "Verify historical institution names and appointments, department chronology and bibliographical titles. Confirm the English rendering of the two-class school without confusing it with two years of study.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "Verify historical institution names and appointments, department chronology and bibliographical titles. Confirm the English rendering of the two-class school without confusing it with two years of study.",
         "ru": "Сверить исторические названия учебных заведений и точные должности, хронологию кафедр и библиографические заглавия. Уточнить английскую передачу «двухклассного училища» без ошибочного отождествления с двухлетним обучением."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/390#pullrequestreview-6039985720"
     },
     {
       "id": "q3",
       "question": "For the portrait of A. V. Lankov and the cover of the 1951 Uchpedgiz book, identify public original sources, the photographer or publisher where known, and a confirmed legal basis for reproduction. Possession of copies in an author's archive does not establish image rights.",
-      "blocking": true,
-      "state": "open",
+      "blocking": false,
+      "state": "accepted",
       "localizations": {
         "source": "For the portrait of A. V. Lankov and the cover of the 1951 Uchpedgiz book, identify public original sources, the photographer or publisher where known, and a confirmed legal basis for reproduction. Possession of copies in an author's archive does not establish image rights.",
         "ru": "Для портрета А. В. Ланкова и обложки книги Учпедгиза 1951 года установить публичные первоисточники, фотографа или издателя при наличии и подтверждённое правовое основание воспроизведения. Наличие копий в авторском архиве не подтверждает права на изображения."
-      }
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/390#pullrequestreview-6039985720"
     }
   ],
   "approval": {
-    "status": "pending"
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/390#pullrequestreview-6039985720",
+    "source_commit": "9a5ca68749d0f5c384bab4f9e6dd067368a053bd",
+    "source_review_id": 6039985720,
+    "approved_at": "2026-11-24T13:25:40Z",
+    "package_sha256": "76a9d58ddfbb9456fd72c115ac3245c69b95fdf8de00ddc43c7d92f19419410b"
   }
 }

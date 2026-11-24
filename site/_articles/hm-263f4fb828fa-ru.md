@@ -20,7 +20,7 @@ tags:
   - Пермь
 series: Персоналии
 math: false
-status: draft
+status: published
 permalink: /ru/publications/hm-263f4fb828fa-ru/
 rights_basis: "Мансур Гильмуллин"
 original_publication:
