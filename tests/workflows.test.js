@@ -17,9 +17,14 @@ test('S3 publication stays on approved master and blocks Pages upload until fina
   const media = steps.findIndex(step => step.name === 'Publish verified S3 media');
   const preflight = steps.findIndex(step => step.name === 'Preflight existing S3 media copies');
   const check = steps.findIndex(step => step.name === 'Verify final lightweight publication');
+  const optimize = steps.findIndex(step => step.name === 'Optimize reading WebP previews for Pages');
+  const previews = steps.findIndex(step => step.name === 'Publish external reading previews');
   const upload = steps.findIndex(step => step.uses?.startsWith('actions/upload-pages-artifact@'));
   assert.ok(media > steps.findIndex(step => step.name === 'Build and verify configured Pages site'));
-  assert.ok(media < check && check < upload);
+  assert.ok(media < optimize && optimize < previews && previews < check && check < upload);
+  assert.equal(steps[previews].if, "vars.PREVIEW_DELIVERY_BASE_URL != ''");
+  assert.equal(steps[previews].env.PREVIEW_DELIVERY_BASE_URL, '${{ vars.PREVIEW_DELIVERY_BASE_URL }}');
+  assert.match(steps[previews].run, /publish-reading-previews.mjs _site-pages/);
   assert.match(steps[media].run, /publication-media.mjs --site-dir _site-pages --publish --prune-output/);
   assert.ok(preflight > steps.findIndex(step => step.name === 'Validate article sources and reading assets'));
   assert.ok(preflight < steps.findIndex(step => step.name === 'Install PDF rendering engine'));
@@ -28,7 +33,9 @@ test('S3 publication stays on approved master and blocks Pages upload until fina
   for (const key of ['S3_ACCESS_KEY_ID', 'S3_SECRET_ACCESS_KEY']) {
     assert.equal(steps[media].env[key], '${{ secrets.' + key + ' }}');
     assert.equal(steps[preflight].env[key], '${{ secrets.' + key + ' }}');
-    assert.equal(steps.filter(step => Object.hasOwn(step.env || {}, key)).length, 2);
+    assert.equal(steps[previews].env[key], '${{ secrets.' + key + ' }}');
+    assert.deepEqual(steps.filter(step => Object.hasOwn(step.env || {}, key)),
+      [steps[preflight], steps[media], steps[previews]]);
   }
   assert.match(steps[check].run, /check_site.py/);
   assert.match(steps[check].run, /publication-size.mjs/);

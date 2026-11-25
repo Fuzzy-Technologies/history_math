@@ -24,7 +24,8 @@ permissions. Bucket versioning and access policy are infrastructure
 configuration; publication does not change them. Credentials are consumed by
 the pinned AWS S3 SDK and never written to receipts or frontend assets.
 
-Objects use `originals/<sha256>/<filename>` or `pdf/<sha256>/<filename>`.
+Objects use `originals/<sha256>/<filename>`, `pdf/<sha256>/<filename>` and
+`previews/<sha256>/<filename>`.
 Names identify immutable bytes. Existing objects are publicly reverified and
 reused; a changed file gets a new address. The upload step does not delete
 objects; post-deployment cleanup removes obsolete copies after reference checks.
@@ -62,14 +63,14 @@ final publication step:
    an existing object, must pass an anonymous HTTPS GET, complete SHA-256 and
    size comparison, MIME and attachment header checks.
 5. Only after all objects pass, rewrites generated HTML, CSS and URL fields in
-   JSON. Current and legacy pages use external PDFs. Reading images stay local;
-   the native image viewer requests the bucket original only after a click.
+   JSON. Current and legacy pages use external PDFs. The native image viewer
+   requests the full-size bucket original only after a click.
 6. Removes migrated originals and PDFs from the disposable Pages build output.
    It never deletes repository sources, Releases, NAS originals or S3 objects.
 7. Optimizes static lossless WebP previews in the disposable Pages output.
    The encoder retains dimensions and alpha, and keeps the input whenever the
-   candidate misses the quality or savings floor. This happens after PDF
-   generation and publication-media integrity checks.
+   candidate misses the quality or savings floor. When direct bucket delivery is
+   enabled, the verified WebPs are removed from the disposable Pages artifact.
 8. Rechecks built URLs, catalogs, locale indexes and final Pages size. For code
    changes, browser tests exercise actual S3 zoom/downloads on old and current
    RU/EN pages, mobile and desktop, with analytics stubbed.
@@ -194,3 +195,25 @@ The 2026-10-30 owner instruction supersedes preservation of oversized PNG bytes 
 `site/_data/image_publication.json` pins each authorized PNG-to-JPEG conversion by source hash, source size, unchanged dimensions, exact JPEG hash/size and quality. The pinned Pillow encoder uses 4:4:4 sampling and tries quality 100 first. The registry includes pending article packages; their JPEG downloads can be prepared without publishing their articles. Existing reading previews and editorial source evidence remain intact.
 
 The master workflow prepares missing JPEG bytes, checks them against the registry, uploads and publicly verifies them, and rewrites full-view/download controls to the JPEG's S3 URL and filename. Previously verified JPEG objects are reused. The retained receipt includes a complete authenticated object/version size inventory. Upload-only publication does not claim that old versions were deleted: retirement requires separate deletion rights and verification that live links have switched.
+
+## Reading previews in Object Storage
+
+The `history-math-storage` environment setting `PREVIEW_DELIVERY_BASE_URL` selects
+where the production build serves article WebP previews. Set it to
+`https://storage.yandexcloud.kz/history-math-media-kz` for direct delivery from
+the existing bucket. An empty setting builds a self-contained Pages preview
+tree. Any other destination stops publication.
+
+After PDF rendering and WebP optimization, publication computes the SHA-256 of
+each final file. Missing objects are uploaded under `previews/<sha256>/<filename>`
+with `image/webp`, inline disposition and immutable cache headers. Before changing
+references or removing Pages copies, the job checks the anonymous response body,
+size, MIME type and filename of every object against the build. A paginated S3
+listing avoids a redundant signed HEAD on existing objects. Preflight and final
+transfers use up to twelve concurrent requests in each phase. Retries are bounded.
+
+The build rewrites article and catalog markup, responsive image candidates,
+social metadata and discovery/search indexes. SVGs stay at their existing paths.
+PDF rendering and local source checks still use the byte-pinned repository
+previews. Roll back by clearing `PREVIEW_DELIVERY_BASE_URL` and redeploying
+`master`. Existing bucket URLs also continue working after rollback.

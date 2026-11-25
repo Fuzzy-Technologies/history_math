@@ -2,7 +2,7 @@ import {createHash} from 'node:crypto';
 import {getDefaultAutoSelectFamilyAttemptTimeout, setDefaultAutoSelectFamilyAttemptTimeout} from 'node:net';
 import {Agent, request as httpsRequest} from 'node:https';
 import {Readable} from 'node:stream';
-import {S3Client, HeadObjectCommand, PutObjectCommand} from '@aws-sdk/client-s3';
+import {S3Client, HeadObjectCommand, ListObjectsV2Command, PutObjectCommand} from '@aws-sdk/client-s3';
 
 // Allow remote TCP handshakes to complete before trying the next IP family.
 // Node LTS otherwise gives each non-final address candidate only 250 ms.
@@ -10,7 +10,8 @@ setDefaultAutoSelectFamilyAttemptTimeout(Math.max(10_000, getDefaultAutoSelectFa
 
 export const storage = Object.freeze({endpoint: 'https://storage.yandexcloud.kz', region: 'kz1',
   bucket: 'history-math-media-kz', base: 'https://storage.yandexcloud.kz/history-math-media-kz'});
-const publicAgent = new Agent({keepAlive: true, maxSockets: 6, family: 4, rejectUnauthorized: true});
+const mediaConcurrency = 12;
+const publicAgent = new Agent({keepAlive: true, maxSockets: mediaConcurrency, family: 4, rejectUnauthorized: true});
 
 // Public bucket checks remain anonymous and use the hostname for DNS and TLS.
 // Select IPv4 for this endpoint without changing GitHub or Pages transports.
@@ -45,9 +46,9 @@ const types = {pdf: 'application/pdf', png: 'image/png', jpg: 'image/jpeg', jpeg
 
 export function mediaObject(kind, filename, digest, bytes) {
   const extension = typeof filename === 'string' && filename.split('.').at(-1).toLowerCase();
-  if (!['pdf', 'originals'].includes(kind) || typeof filename !== 'string' ||
+  if (!['pdf', 'originals', 'previews'].includes(kind) || typeof filename !== 'string' ||
       !/^[a-z0-9][a-z0-9._-]*$/i.test(filename) || filename.includes('..') || !types[extension] ||
-      (kind === 'pdf') !== (extension === 'pdf') || !/^[a-f0-9]{64}$/.test(digest) ||
+      (kind === 'pdf') !== (extension === 'pdf') || (kind === 'previews' && extension !== 'webp') || !/^[a-f0-9]{64}$/.test(digest) ||
       !Number.isSafeInteger(bytes) || bytes <= 0) throw new Error('Invalid media identity');
   const key = `${kind}/${digest}/${filename}`;
   return {key, url: `${storage.base}/${key}`, sha256: digest, bytes, filename, content_type: types[extension]};
@@ -72,7 +73,7 @@ export function configuredClient(env = process.env) {
       env.S3_BUCKET !== storage.bucket || env.S3_PUBLIC_BASE_URL !== storage.base ||
       !env.S3_ACCESS_KEY_ID || !env.S3_SECRET_ACCESS_KEY) throw new Error('Missing or invalid Kazakhstan storage configuration');
   return new S3Client({endpoint: storage.endpoint, region: storage.region, forcePathStyle: true, maxAttempts: 3,
-    requestHandler: {httpsAgent: {family: 4, keepAlive: true, maxSockets: 6, rejectUnauthorized: true},
+    requestHandler: {httpsAgent: {family: 4, keepAlive: true, maxSockets: mediaConcurrency, rejectUnauthorized: true},
       connectionTimeout: 30_000, requestTimeout: 120_000, throwOnRequestTimeout: true},
     requestChecksumCalculation: 'WHEN_REQUIRED', responseChecksumValidation: 'WHEN_REQUIRED',
     credentials: {accessKeyId: env.S3_ACCESS_KEY_ID, secretAccessKey: env.S3_SECRET_ACCESS_KEY}});
@@ -128,13 +129,16 @@ export async function readWithRetries(context, read, {pause = milliseconds => ne
 
 // Verification is deliberately anonymous: signed HEAD/metadata alone cannot
 // prove that the public site will be able to download the exact object.
+const disposition = object => object.key.startsWith('previews/') ? 'inline' : 'attachment';
+
 export async function verifyPublic(object, request = mediaRead) {
   validateObject(object);
   return readWithRetries(`S3 verification ${object.key}`, async () => {
     const response = await request(object.url, {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)});
     if (!response.ok) await responseBytes(response, object.bytes);
     if (response.headers.get('content-type')?.split(';')[0] !== object.content_type ||
-        !response.headers.get('content-disposition')?.includes(`filename="${object.filename}"`)) {
+        !response.headers.get('content-disposition')?.includes(`filename="${object.filename}"`) ||
+        (disposition(object) === 'inline' && !response.headers.get('content-disposition')?.startsWith('inline;'))) {
       throw new Error(`Invalid public media headers: ${object.key}`);
     }
     assertBytes(object, await responseBytes(response, object.bytes));
@@ -177,29 +181,56 @@ export async function uploadVerified(client, object, source, {request = mediaRea
     try {
       await client.send(new PutObjectCommand({Bucket: storage.bucket, Key: object.key, Body: bytes,
         ContentLength: bytes.length, ContentType: object.content_type,
-        ContentDisposition: `attachment; filename="${object.filename}"`,
+        ContentDisposition: `${disposition(object)}; filename="${object.filename}"`,
         CacheControl: 'public, max-age=31536000, immutable', Metadata: {sha256: object.sha256}}));
     } catch (error) { throw storageFailure('upload', object, error); }
   }
   return verifyPublic(object, request);
 }
 
-export async function transfer(objects, client, source, {request = mediaRead, progress = () => {}} = {}) {
-  // Reject an invalid later item before any earlier object can be uploaded.
-  for (const object of objects) assertUploadBudget(object);
-  const receipt = [];
+export async function forEachMedia(objects, action) {
   let cursor = 0, failed = false;
   async function worker() {
     while (!failed && cursor < objects.length) {
       const object = objects[cursor++];
-      try {
-        receipt.push(await uploadVerified(client, object, () => source(object), {request}));
-        progress(receipt.length, objects.length);
-      } catch (error) { failed = true; throw error; }
+      try { await action(object); }
+      catch (error) { failed = true; throw error; }
     }
   }
-  const results = await Promise.allSettled(Array.from({length: Math.min(3, objects.length)}, worker));
+  const results = await Promise.allSettled(Array.from({length: Math.min(mediaConcurrency, objects.length)}, worker));
   const failure = results.find(result => result.status === 'rejected');
   if (failure) throw failure.reason;
+}
+
+// Listing saves a signed HEAD per existing object. A listed key must still
+// pass a full anonymous GET. A missing key follows the normal HEAD/PUT path.
+async function existingKeys(client, prefix) {
+  const keys = new Set(), seenTokens = new Set();
+  let token;
+  do {
+    const page = await client.send(new ListObjectsV2Command({Bucket: storage.bucket, Prefix: prefix, ContinuationToken: token}));
+    if (typeof page.IsTruncated !== 'boolean' || !Array.isArray(page.Contents ?? [])) throw new Error('Invalid S3 object list');
+    for (const {Key} of page.Contents ?? []) {
+      if (typeof Key !== 'string' || !Key.startsWith(prefix)) throw new Error('Invalid S3 object key');
+      keys.add(Key);
+    }
+    if (!page.IsTruncated) break;
+    token = page.NextContinuationToken;
+    if (!token || seenTokens.has(token)) throw new Error('Incomplete S3 object list');
+    seenTokens.add(token);
+  } while (true);
+  return keys;
+}
+
+export async function transfer(objects, client, source, {request = mediaRead, progress = () => {}, inventoryPrefix} = {}) {
+  for (const object of objects) assertUploadBudget(object);
+  const existing = inventoryPrefix === undefined ? new Set() : await existingKeys(client, inventoryPrefix);
+  const receipt = [];
+  await forEachMedia(objects, async object => {
+    const verified = existing.has(object.key) ? await verifyPublic(object, request) :
+      await uploadVerified(client, object, () => source(object), {request});
+    receipt.push(verified);
+    progress(receipt.length, objects.length);
+  });
   return receipt.sort((a, b) => a.key.localeCompare(b.key));
 }
