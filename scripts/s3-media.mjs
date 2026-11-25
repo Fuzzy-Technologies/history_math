@@ -234,3 +234,48 @@ export async function transfer(objects, client, source, {request = mediaRead, pr
   });
   return receipt.sort((a, b) => a.key.localeCompare(b.key));
 }
+
+/** Ordinary publication only writes new immutable objects. All previous receipts are local. */
+export async function publishChanges(objects, client, source, {known, request = publicMediaRead, report = console.log}) {
+  if (!(known instanceof Map)) throw new Error('Published media receipts required');
+  for (const object of objects) {
+    assertUploadBudget(object);
+    const proof = known.get(object.key);
+    if (proof && (proof.verified !== true || proof.bytes !== object.bytes ||
+        JSON.stringify(validateObject(proof)) !== JSON.stringify(validateObject(object)))) {
+      throw new Error('Conflicting published media identity: ' + object.key);
+    }
+  }
+  let puts = 0, heads = 0;
+  const receipt = [];
+  await forEachMedia(objects, async object => {
+    const identity = validateObject(object);
+    if (!known.has(object.key)) {
+      const bytes = await source(object);
+      assertBytes(object, bytes);
+      try {
+        await client.send(new PutObjectCommand({Bucket: storage.bucket, Key: object.key, Body: bytes,
+          IfNoneMatch: '*', ContentMD5: createHash('md5').update(bytes).digest('base64'),
+          ContentLength: bytes.length, ContentType: object.content_type,
+          ContentDisposition: disposition(object) + '; filename="' + object.filename + '"',
+          CacheControl: 'public, max-age=31536000, immutable', Metadata: {sha256: object.sha256}}));
+      } catch (error) {
+        // An interrupted previous publication may already have written this immutable key.
+        if (error.$metadata?.httpStatusCode !== 412) throw storageFailure('conditional upload', object, error);
+      }
+      puts++;
+      const head = await request(object.url, {method: 'HEAD', credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(60000)});
+      heads++;
+      const headers = head.headers;
+      if (head.status !== 200 || headers.get('content-length') !== String(object.bytes) ||
+          headers.get('content-type')?.split(';')[0] !== object.content_type ||
+          headers.get('x-amz-meta-sha256') !== object.sha256 ||
+          headers.get('content-disposition') !== disposition(object) + '; filename="' + object.filename + '"') {
+        throw new Error('New public media metadata mismatch: ' + object.key);
+      }
+    }
+    receipt.push({...identity, verified: true});
+  });
+  report('Publication storage: ' + JSON.stringify({reused: objects.length - puts, conditional_put: puts, head: heads, get: 0, list: 0}));
+  return receipt.sort((a, b) => a.key.localeCompare(b.key));
+}

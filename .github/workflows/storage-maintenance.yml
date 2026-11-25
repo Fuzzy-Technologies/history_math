@@ -1,8 +1,6 @@
 name: Audit and maintain current media storage
 
 on:
-  schedule:
-    - cron: '17 1 * * *'
   workflow_dispatch:
     inputs:
       clean_s3:
@@ -20,14 +18,13 @@ permissions:
   actions: read
 
 concurrency:
-  # Only an explicit S3 recovery shares the publication lock. Daily read-only
-  # audits and GitHub-only maintenance cannot queue ahead of publication.
+  # An explicitly requested S3 cleanup shares the publication lock.
   group: ${{ github.event_name == 'workflow_dispatch' && inputs.clean_s3 && 'github-pages' || 'media-storage-audit' }}
   cancel-in-progress: false
 
 jobs:
   audit:
-    if: github.ref == 'refs/heads/master' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+    if: github.ref == 'refs/heads/master' && github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-24.04
     timeout-minutes: 45
     environment: history-math-storage
@@ -112,7 +109,7 @@ jobs:
           if-no-files-found: warn
           retention-days: 7
   github_cleanup:
-    if: github.ref == 'refs/heads/master' && (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.clean_github))
+    if: github.ref == 'refs/heads/master' && github.event_name == 'workflow_dispatch' && inputs.clean_github
     needs: audit
     runs-on: ubuntu-24.04
     timeout-minutes: 90

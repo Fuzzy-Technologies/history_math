@@ -26,9 +26,7 @@ the pinned AWS S3 SDK and never written to receipts or frontend assets.
 
 Objects use `originals/<sha256>/<filename>`, `pdf/<sha256>/<filename>` and
 `previews/<sha256>/<filename>`.
-Names identify immutable bytes. Existing objects are publicly reverified and
-reused; a changed file gets a new address. The upload step does not delete
-objects; post-deployment cleanup removes obsolete copies after reference checks.
+Names identify immutable bytes. Publication reuses the recorded delivery identity of each existing object. A changed file gets a new address. Cleanup runs on explicit dispatch.
 Key rotation remains: issue a replacement key, update the environment
 Secrets, verify publication, then revoke the former key.
 
@@ -39,116 +37,17 @@ and superseded PDF caches. Bucket policy remains an infrastructure responsibilit
 
 ## Automatic publication
 
-`Publish approved master` retains its existing source, render, PDF and browser
-gates. After validating article sources, JPEG preparation and upload-only
-preflight ensure current originals exist in S3 before rendering or browser
-checks. Migrated PDFs are not recopied; existing originals receive metadata
-checks and only missing objects are uploaded. Preflight never deletes files.
-Its receipt lists only newly copied objects, so the native-download smoke check
-fills each absent kind from the deployed public manifest. A newly copied image
-does not imply that a PDF is present in the preflight receipt. Both selected
-objects must have verified identities, and both downloads are checked byte for
-byte against their recorded SHA-256 and size.
-After producing validated PDFs, the
-final publication step:
+The master build compares the current tree with the last successfully deployed revision. It reads a single JSON receipt from GitHub Pages. On the first incremental release it also imports the preview inventory retained by GitHub from verified publication #677. A missing, incomplete or stale receipt stops the build before any bucket operations. The receipt travels with the Pages deployment, independently of Actions cache and artifact expiry after cutover.
 
-1. Reuses the public media verified during the migration preflight. No manual
-   migration is required for published articles.
-2. Enumerates all source image manifests and every PDF in the actual built site,
-   including legacy/static PDF files outside the current article PDF directory.
-3. Uses the original bytes from the repository or the existing verified GitHub
-   Releases descriptors. It preserves texts, translations, source manifests,
-   review records, approval digests, dates and original image bytes.
-4. Uploads missing objects using the deployment account. Every object, including
-   an existing object, must pass an anonymous HTTPS GET, complete SHA-256 and
-   size comparison, MIME and attachment header checks.
-5. Only after all objects pass, rewrites generated HTML, CSS and URL fields in
-   JSON. Current and legacy pages use external PDFs. The native image viewer
-   requests the full-size bucket original only after a click.
-6. Removes migrated originals and PDFs from the disposable Pages build output.
-   It never deletes repository sources, Releases, NAS originals or S3 objects.
-7. Optimizes static lossless WebP previews in the disposable Pages output.
-   The encoder retains dimensions and alpha, and keeps the input whenever the
-   candidate misses the quality or savings floor. When direct bucket delivery is
-   enabled, verified WebP and JPEG previews are removed from the Pages artifact.
-8. Rechecks built URLs, catalogs, locale indexes and final Pages size. For code
-   changes, browser tests exercise actual S3 zoom/downloads on old and current
-   RU/EN pages, mobile and desktop, with analytics stubbed.
-9. Uploads the lightweight Pages artifact and deploys it only after those gates.
+Unchanged editions keep their published PDF URLs. A new article, revised text or a changed article image can produce a new PDF. The renderer uses local reading assets. The publisher builds the current link manifest locally and reuses confirmed originals, PDFs and reading previews without a GET, HEAD or LIST against storage.
 
-Transfer or verification failures block the new Pages deployment. The current
-site remains live. Partial uploads are safe to reuse on a later run. A failure
-after output pruning affects only the temporary runner output. Earlier objects
-remain available until successful deployment changes the current reference set;
-post-deployment cleanup then retires unreferenced versions.
+For each new content-addressed key the publisher validates local SHA-256, size and the existing file budget. It sends a conditional PUT with Content-MD5 and confirms public availability once with a bodyless HEAD. The check compares length, type, filename and SHA-256 metadata. A retry after an interrupted release can receive HTTP 412 for its own immutable key and complete the same metadata check. Failure stops the Pages upload. The workflow logs counts of reused keys, PUTs and HEADs separately for publication media and reading previews.
 
-Transient public-read disconnects, timeouts, rate limits and gateway errors
-receive at most three attempts with bounded backoff. Integrity, authentication,
-TLS and metadata failures still block publication. Error diagnostics identify
-the public object key and a network error code, never an upstream message or a
-redirected signed URL.
-Authenticated S3 upload/HEAD failures report their HTTP status, a recognized
-provider/network error code and SDK attempt count without exposing raw messages.
-Media processes give each network-family connection attempt at least ten seconds,
-preserving a longer operator setting. The Node LTS default is only 250 ms, which
-can abandon a viable remote TCP connection before an unreachable fallback fails.
-The longer budget also accommodates cross-region handshakes that exceed two seconds.
-See the [Node API](https://nodejs.org/docs/latest-v22.x/api/net.html#netsetdefaultautoselectfamilyattempttimeoutvalue)
-and [upstream connection-timeout report](https://github.com/nodejs/node/issues/54359).
-Family selection, TLS checks, overall request deadlines and bounded retries remain enabled.
-Anonymous reads of this bucket use a bounded Node HTTPS connection pool with
-IPv4 DNS resolution. The configured hostname remains the DNS and TLS target;
-only GET and HEAD are accepted, credentials and redirects are rejected, and
-caller cancellation deadlines are preserved. GitHub and Pages use their existing
-fetch transport. Authenticated S3 operations retain SDK signing and bounded
-retries, with an IPv4 HTTPS agent, certificate validation, a 30-second connection
-deadline and a 120-second request deadline. Deletion failures record only the
-exact version identity, bounded HTTP/network code and SDK attempt count.
-Python JPEG preparation also resolves public bucket connections through IPv4,
-using the standard HTTPS certificate and hostname checks. Its opener preserves
-configured proxy handling, rejects public-bucket redirects and credentials, and
-leaves GitHub and Pages requests on the original urllib transport.
-JPEG preparation uses the pinned conversion registry without first downloading an
-unused remote receipt. Before conversion, `check-jpeg-cache.mjs` validates every
-registry identity and checks existing JPEGs through the shared bounded Node HTTPS
-pool. The private process receipt binds its cached paths to the exact input
-registry SHA-256; Python reuses those records without a second set of one-shot
-HEAD connections. Size, MIME and SHA metadata must match. Only a real 404 or
-metadata mismatch permits regeneration; exhausted or forbidden reads stop
-preparation instead of falling back to a retired source. Non-registry preparation
-retains its existing checked Python path. A failed conversion cancels queued
-preparation tasks while any already-running bounded requests finish. Publication
-preflight and final anonymous full-byte verification remain mandatory.
-JPEG and cleanup verification stop assigning queued objects after the first
-failure, wait for their already-running bounded reads and then fail the job.
-The explicit manual S3 recovery in `docs/MEDIA_CLEANUP.md` can remove obsolete
-versions while a publication is blocked; it preserves live/master/draft references
-and excludes concurrent publication through the existing workflow lock.
-
-The image-delivery browser gate gives full-size bucket originals a bounded
-120-second load deadline, matching public media verification; local and mocked
-non-bucket images retain their 30-second deadline. It still requires the viewer
-to finish loading, successful decoding and exact download hashes. Each page and
-viewport is logged, and a failed load reports its public URL and viewer state
-without query strings or credentials. A slow or failed original never counts as
-a successful check.
-
-Article preparation accepts anonymous full-byte verification of canonical
-`originals/<sha256>/<filename>` URLs in this bucket as well as GitHub originals.
-Foreign buckets, non-HTTPS URLs, credentials, ports, queries and fragments are
-rejected before a request. Reusing a migrated original still requires the exact
-reviewed SHA-256 and byte count; a failed read cannot silently restore a retired
-source.
-
-The pre-migration size gate moves after media finalization: a temporary build
-containing local PDFs must not block a valid lightweight Pages publication.
-PDF rendering and its cache remain local to the runner and run before media
-finalization; they do not depend on bucket CORS or remote original downloads.
+Output validation, URL rewriting and size checks run on the runner. The published receipt records the commit and the new active identities. A source-only PR, a rebuild of unchanged material and preparation of a previously published original do not download bucket objects. Storage inventories, cleanup and bulk integrity checks are explicit maintenance operations.
 
 ## One-time copy of existing publications and pending PR media
 
-The first normal publication automatically copies existing published PDFs and
-master originals. For an additional bulk copy covering pending article PRs,
+For an explicitly requested bulk copy covering published material or pending article PRs,
 **Backfill existing publication media to S3** is available in the GitHub Actions
 UI with ref `master`. It is an upload-only workflow using the same existing
 deployment account and shares the publication concurrency lock.
@@ -163,8 +62,7 @@ excluded; truncated inventories and concurrent PR changes fail closed.
 
 The retained Actions artifact contains public object URLs, sizes and SHA-256
 receipts, the source master SHA and inspected PR SHAs. A retry reuses verified
-content-addressed objects. The normal publication workflow independently
-verifies everything it needs before deploying the new links.
+content-addressed objects. Ordinary publication consumes the receipts of the last deployed site.
 
 Open article PRs inherit the shared publication behavior when approved and
 merged; do not duplicate workflow changes into each article branch or modify
@@ -194,7 +92,7 @@ The 2026-10-30 owner instruction supersedes preservation of oversized PNG bytes 
 
 `site/_data/image_publication.json` pins each authorized PNG-to-JPEG conversion by source hash, source size, unchanged dimensions, exact JPEG hash/size and quality. The pinned Pillow encoder uses 4:4:4 sampling and tries quality 100 first. The registry includes pending article packages; their JPEG downloads can be prepared without publishing their articles. Existing reading previews and editorial source evidence remain intact.
 
-The master workflow prepares missing JPEG bytes, checks them against the registry, uploads and publicly verifies them, and rewrites full-view/download controls to the JPEG's S3 URL and filename. Previously verified JPEG objects are reused. The retained receipt includes a complete authenticated object/version size inventory. Upload-only publication does not claim that old versions were deleted: retirement requires separate deletion rights and verification that live links have switched.
+The master workflow prepares missing JPEG bytes, checks them against the registry, uploads and publicly verifies them, and rewrites full-view/download controls to the JPEG's S3 URL and filename. Previously verified JPEG objects are reused. A complete authenticated object/version inventory is available through manual maintenance. Upload-only publication does not claim that old versions were deleted: retirement requires separate deletion rights and verification that live links have switched.
 
 ## Reading previews in Object Storage
 
@@ -207,11 +105,7 @@ tree. Any other destination stops publication.
 After PDF rendering and WebP optimization, publication computes the SHA-256 of
 each final file. Missing objects are uploaded under `previews/<sha256>/<filename>`
 with the matching `image/webp` or `image/jpeg` MIME type, inline disposition
-and immutable cache headers. Existing JPEG previews are transferred byte for byte. Before changing
-references or removing Pages copies, the job checks the anonymous response body,
-size, MIME type and filename of every object against the build. A paginated S3
-listing avoids a redundant signed HEAD on existing objects. Preflight and final
-transfers use up to twelve concurrent requests in each phase. Retries are bounded.
+and immutable cache headers. Unchanged WebP and JPEG keys reuse their published receipts. Each new immutable key receives a conditional upload and a single public HEAD before its links are published.
 
 The build rewrites article and catalog markup, responsive image candidates,
 social metadata and discovery/search indexes. SVGs stay at their existing paths.

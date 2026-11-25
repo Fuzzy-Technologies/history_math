@@ -4,7 +4,7 @@ import {mkdtemp, mkdir, writeFile, readFile, rm, access, symlink} from 'node:fs/
 import {tmpdir} from 'node:os';
 import {resolve, dirname} from 'node:path';
 import {HeadObjectCommand, ListObjectsV2Command, PutObjectCommand} from '@aws-sdk/client-s3';
-import {mediaObject, storage, sha256, assertBytes, validateObject, configuredClient, uploadVerified, transfer, readWithRetries} from '../scripts/s3-media.mjs';
+import {mediaObject, storage, sha256, assertBytes, validateObject, configuredClient, uploadVerified, transfer, publishChanges, readWithRetries} from '../scripts/s3-media.mjs';
 import {publicationPlan, rewriteMedia, finalizePublication, requireReceipt, sourceBytes, localBytes} from '../scripts/publication-media.mjs';
 import {eligiblePR, pullRequestObjects, deployedPdfObjects, copyPublishedPdfs, preflightMedia, githubData, revisionBytes} from '../scripts/backfill-media.mjs';
 import {nativeOriginalTarget, loadVerifiedOriginal} from '../site/assets/original-image.js';
@@ -420,5 +420,22 @@ test('early migration preflight copies originals and legacy PDFs without changin
       client: {send: () => assert.fail('No new upload for migrated site')}, request: async () => Response.json({version: 2,
         origin: 'https://history-math.org', baseurl: '', articles: [{pdf_url: pdfObject.url}]})});
     assert.equal(skipped.summary.existing_pdfs, 0);
+  });
+});
+
+test('a cold publication rebuild preserves the article PDF link without the old PDF file or any storage operation', async () => {
+  await fixture(async ({root, site}) => {
+    const path = '/assets/pdf/ru/example-ru.pdf';
+    const old = await publicationPlan(root, site);
+    const known = new Map(old.objects.map(obj => [obj.key, {...validateObject(obj), verified: true}]));
+    const existing = known.get(old.pdfs.find(item => item.path === path).object.key);
+    await rm(resolve(site, '.' + path));
+    const plan = await publicationPlan(root, site, {[path]: existing});
+    const forbidden = () => assert.fail('Unexpected storage or source access on rebuild');
+    const proof = await publishChanges(plan.objects, {send: forbidden}, forbidden, {known, request: forbidden, report: () => {}});
+    await finalizePublication(site, plan, proof, {pruneOutput: true});
+    const index = JSON.parse(await readFile(resolve(site, 'assets/article-pdfs.json'), 'utf8'));
+    assert.equal(index.articles[0].pdf_url, existing.url);
+    await assert.rejects(access(resolve(site, '.' + path)));
   });
 });

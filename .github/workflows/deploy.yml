@@ -38,13 +38,6 @@ jobs:
           cache: npm
       - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
         id: pages
-      - name: Restore incremental PDF cache
-        id: pdf-cache
-        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
-        with:
-          path: .pdf-cache
-          key: pdf-v1-${{ runner.os }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}-${{ github.job }}
-          restore-keys: pdf-v1-${{ runner.os }}-
       - name: Install publication dependencies
         run: npm ci
       - name: Validate article sources and reading assets
@@ -54,21 +47,14 @@ jobs:
           python3 tools/image_assets.py
           python3 tools/pdf_mastheads.py
           node scripts/check-articles.mjs --source-only
+      - name: Restore media receipts from the current Pages deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/publication-state.mjs
       - name: Prepare bounded full-resolution JPEG originals
         run: |
           python3 -m pip install -r tools/requirements-images.txt
-          python3 scripts/publication_jpegs.py --registry site/_data/image_publication.json --output test-results/publication-jpegs/plan.json
-      - name: Preflight existing S3 media copies
-        env:
-          PAGES_ORIGIN: https://${{ steps.pages.outputs.host }}
-          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
-          S3_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
-          S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
-          S3_ENDPOINT_URL: ${{ vars.S3_ENDPOINT_URL }}
-          S3_REGION: ${{ vars.S3_REGION }}
-          S3_BUCKET: ${{ vars.S3_BUCKET }}
-          S3_PUBLIC_BASE_URL: ${{ vars.S3_PUBLIC_BASE_URL }}
-        run: node scripts/backfill-media.mjs --preflight
+          python3 scripts/publication_jpegs.py --published-state test-results/publication-state/previous.json --registry site/_data/image_publication.json --output test-results/publication-jpegs/plan.json
       - name: Install PDF rendering engine
         run: npx playwright install --with-deps chromium
       - name: Build and verify configured Pages site
@@ -80,13 +66,7 @@ jobs:
         run: |
           node scripts/pages-config.mjs > "$RUNNER_TEMP/history-math-pages.yml"
           HISTORY_MATH_PUBLICATION_REF="$GITHUB_SHA" HISTORY_MATH_PUBLICATION_STRICT=1 bundle exec jekyll build --config "_config.yml,$RUNNER_TEMP/history-math-pages.yml" --destination _site-pages --trace
-          node scripts/article-pdf.mjs --site-dir _site-pages
-      - name: Save validated PDF cache
-        if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
-        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
-        with:
-          path: .pdf-cache
-          key: ${{ steps.pdf-cache.outputs.cache-primary-key }}
+          node scripts/article-pdf.mjs --site-dir _site-pages --reuse-published
       - name: Publish verified S3 media
         env:
           PAGES_ORIGIN: https://${{ steps.pages.outputs.host }}
@@ -97,9 +77,7 @@ jobs:
           S3_REGION: ${{ vars.S3_REGION }}
           S3_BUCKET: ${{ vars.S3_BUCKET }}
           S3_PUBLIC_BASE_URL: ${{ vars.S3_PUBLIC_BASE_URL }}
-        run: |
-          node scripts/publication-media.mjs --site-dir _site-pages --publish --prune-output
-          node scripts/bucket-media-budget.mjs
+        run: node scripts/publication-media.mjs --site-dir _site-pages --publish --prune-output
       - name: Optimize reading WebP previews for Pages
         run: python3 scripts/optimize_reading_webp.py _site-pages
       - name: Publish external reading previews
@@ -125,10 +103,7 @@ jobs:
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: publication-media-${{ github.sha }}-${{ github.run_id }}
-          path: |
-            test-results/media-backfill/receipt.json
-            _site-pages/assets/publication-media.json
-            test-results/bucket-budget/receipt.json
+          path: _site-pages/assets/publication-media.json
           if-no-files-found: error
           retention-days: 90
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
@@ -148,94 +123,3 @@ jobs:
       - name: Deploy approved master
         id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
-  retire_oversized_media:
-    if: github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
-    needs: deploy
-    runs-on: ubuntu-24.04
-    timeout-minutes: 30
-    environment: history-math-storage
-    permissions:
-      contents: read
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          persist-credentials: false
-          fetch-depth: 0
-          sparse-checkout-cone-mode: false
-          sparse-checkout: |
-            /scripts/
-            /site/_data/image_publication.json
-            /package.json
-            /package-lock.json
-      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
-        with:
-          node-version: '22'
-          cache: npm
-      - run: npm ci
-      - name: Retire verified oversized versions after live deployment
-        env:
-          S3_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
-          S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
-          S3_ENDPOINT_URL: ${{ vars.S3_ENDPOINT_URL }}
-          S3_REGION: ${{ vars.S3_REGION }}
-          S3_BUCKET: ${{ vars.S3_BUCKET }}
-          S3_PUBLIC_BASE_URL: ${{ vars.S3_PUBLIC_BASE_URL }}
-        run: node scripts/bucket-media-budget.mjs --retire
-      - name: Retain complete bucket size and retirement evidence
-        if: always()
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-        with:
-          name: bucket-budget-${{ github.sha }}-${{ github.run_id }}
-          path: test-results/bucket-budget/
-          if-no-files-found: warn
-          retention-days: 90
-
-  media_cleanup:
-    if: github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
-    needs: [deploy, retire_oversized_media]
-    runs-on: ubuntu-24.04
-    timeout-minutes: 90
-    environment: history-math-storage
-    permissions:
-      contents: write
-      actions: write
-      pull-requests: read
-    concurrency:
-      group: github-storage-maintenance
-      cancel-in-progress: false
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          persist-credentials: false
-          fetch-depth: 1
-          sparse-checkout-cone-mode: false
-          sparse-checkout: |
-            /*
-            !/site/assets/images/
-            !/site/assets/fonts/
-            !/site/assets/vendor/katex/fonts/
-            !/docs/previews/
-      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
-        with:
-          node-version: '22'
-          cache: npm
-      - run: npm ci
-      - name: Keep current media and remove verified obsolete copies
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-          MEDIA_CLEANUP_AFTER_DEPLOY: 'true'
-          S3_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
-          S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
-          S3_ENDPOINT_URL: ${{ vars.S3_ENDPOINT_URL }}
-          S3_REGION: ${{ vars.S3_REGION }}
-          S3_BUCKET: ${{ vars.S3_BUCKET }}
-          S3_PUBLIC_BASE_URL: ${{ vars.S3_PUBLIC_BASE_URL }}
-        run: node scripts/media-cleanup.mjs --apply
-      - name: Retain current-media cleanup evidence
-        if: always()
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-        with:
-          name: media-cleanup-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
-          path: test-results/media-cleanup/
-          if-no-files-found: warn
-          retention-days: 90

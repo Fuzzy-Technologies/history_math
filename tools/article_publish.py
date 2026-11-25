@@ -8,6 +8,7 @@ commit and a receipt; moving the existing PR branch is a separate leased action.
 
 import argparse
 import base64
+import functools
 import hashlib
 import importlib.util
 import json
@@ -65,6 +66,30 @@ def current_s3_original(logical_path, entry):
         sha, size, filename = record["sha256"], record["bytes"], record["filename"]
     return {"url": f"{MEDIA_BASE}/originals/{sha}/{filename}", "sha256": sha, "bytes": size,
             "normalized": record is not None}
+
+
+@functools.cache
+def published_originals():
+    """Fetch one public Pages metadata file for this preparation process."""
+    url = "https://history-math.org/assets/publication-media.json"
+    try:
+        # Without --location, a redirect can never turn this into an object download.
+        raw = subprocess.check_output(["curl", "--fail", "--silent", "--show-error", "--max-time", "60", url])
+        manifest = json.loads(raw)
+        if manifest["version"] != 1 or not manifest["objects"]:
+            raise ValueError("Missing published objects")
+        originals = {}
+        for record in manifest["objects"]:
+            if not record["key"].startswith("originals/"):
+                continue
+            key = "originals/" + record["sha256"] + "/" + record["filename"]
+            if record["key"] != key or record["verified"] is not True or record["url"] != MEDIA_BASE + "/" + key or \
+                    not SHA256.fullmatch(record["sha256"]) or type(record["bytes"]) is not int or record["bytes"] <= 0 or key in originals:
+                raise ValueError("Invalid original receipt")
+            originals[key] = (record["sha256"], record["bytes"])
+        return originals
+    except (subprocess.CalledProcessError, ValueError, TypeError, KeyError) as error:
+        raise PublishError("Cannot load the published original receipts from Pages") from error
 
 
 class PublishError(RuntimeError):
@@ -339,9 +364,7 @@ class GitHubAPI:
     def download_digest(self, url, require_cors=False):
         parsed = urlsplit(url)
         allowed = {"github.com", "api.github.com"}
-        s3_original = bool(re.fullmatch(
-            re.escape(MEDIA_BASE) + r"/originals/[0-9a-f]{64}/[a-z0-9][a-z0-9.-]*\.(?:png|jpe?g|webp|gif)", url))
-        if parsed.scheme != "https" or (parsed.hostname not in allowed and not s3_original) or parsed.username or parsed.password:
+        if parsed.scheme != "https" or parsed.hostname not in allowed or parsed.username or parsed.password:
             raise PublishError("Unexpected public original URL")
         cors = [] if require_cors else None
         opener = build_opener(SafeRedirect(cors))
@@ -373,18 +396,15 @@ class GitHubAPI:
     def ensure_original(self, article_id, logical_path, entry, local_path, master_sha, delivery_probe=True):
         delivery = current_s3_original(logical_path, entry)
         if delivery:
-            try:
-                actual = self.download_digest(delivery["url"])
-            except PublishError as error:
-                # Only a genuinely not-yet-migrated exact original may use the
-                # legacy upload path. A missing normalized JPEG must stop.
-                if delivery["normalized"] or not isinstance(error.__cause__, HTTPError) or error.__cause__.code != 404:
-                    raise
-            else:
+            key = delivery["url"].removeprefix(MEDIA_BASE + "/")
+            actual = published_originals().get(key)
+            if actual is not None:
                 if actual != (delivery["sha256"], delivery["bytes"]):
-                    raise PublishError("Current S3 original checksum or size differs")
+                    raise PublishError("Published original receipt differs")
                 self.verified_s3_originals[logical_path] = delivery
                 return entry["external_original"]
+            if delivery["normalized"]:
+                raise PublishError("Missing published JPEG receipt")
         expected_sha = entry["sha256"]
         expected_size = entry["bytes"]
         original = PurePosixPath(logical_path).name
