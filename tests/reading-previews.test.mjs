@@ -16,7 +16,7 @@ test('preview URL rewriting covers srcset and absolute metadata while leaving ot
   const result = rewritePreviewUrls(html, new Map([[path, url]]));
   assert.equal(result, `<img src="${url}" srcset="${url} 480w, ${url}?v=1 960w" data-original="${originals}"><a href="${unrelated}">other</a>`);
   assert.throws(() => rewritePreviewUrls(path, new Map()), /Missing reading preview/);
-  assert.throws(() => mediaObject('previews', 'wrong.jpg', 'a'.repeat(64), 15));
+  assert.throws(() => mediaObject('previews', 'wrong.png', 'a'.repeat(64), 15));
 });
 
 test('direct bucket delivery requires a complete receipt, rewrites both locales and keeps SVG and sources', async () => {
@@ -77,4 +77,37 @@ test('new WebPs are uploaded inline and existing attachments or wrong bytes bloc
   await assert.rejects(verifyPublic(object, async () => new Response(Buffer.from('changed'), {headers})), /integrity mismatch/);
   await assert.rejects(verifyPublic(object, async () => new Response(bytes, {headers: {...headers,
     'content-disposition': 'attachment; filename="figure.webp"'}})), /INVALID_MEDIA/);
+});
+
+test('legacy JPEG variants keep exact bytes and inline MIME before Pages pruning', async () => {
+  const root = await mkdtemp(join(tmpdir(), 'history-math-jpeg-'));
+  const sourceDirectory = join(root, 'source'), site = join(root, 'output');
+  const paths = ['.jpeg', '.jpg'].map(extension => path.replace('.webp', extension));
+  const jpeg = Buffer.from([0xff, 0xd8, 0xff, 0xe0, 0xff, 0xd9]);
+  const page = join(site, 'index.html'), html = `<img src="${paths[0]}" srcset="${paths[1]} 480w">`;
+  try {
+    await mkdir(sourceDirectory);
+    await mkdir(join(site, paths[0], '..'), {recursive: true});
+    await writeFile(page, html);
+    for (const path of paths) await writeFile(join(site, path), jpeg);
+    await writeFile(join(site, paths[1]), Buffer.from('RIFF....WEBP'));
+    const options = {sourceDirectory, baseUrl: storage.base};
+    await assert.rejects(publishPreviews(site, {}, {...options, upload: () => assert.fail('No upload of mislabeled JPEGs')}), /Invalid JPEG preview/);
+    assert.equal(await readFile(page, 'utf8'), html);
+    await writeFile(join(site, paths[1]), jpeg);
+    const result = await publishPreviews(site, {}, {...options, upload: async (objects, _client, read) => {
+      for (const obj of objects) {
+        assert.equal(obj.content_type, 'image/jpeg');
+        assert.deepEqual(await read(obj), jpeg);
+      }
+      return objects.map(obj => ({...validateObject(obj), verified: true}));
+    }});
+    assert.equal(result.previews, 2);
+    const after = await readFile(page, 'utf8');
+    for (const path of paths) {
+      assert.ok(!after.includes(path));
+      assert.ok(after.includes(path.split('/').at(-1)));
+      await assert.rejects(readFile(join(site, path)), {code: 'ENOENT'});
+    }
+  } finally {await rm(root, {recursive: true, force: true});}
 });
