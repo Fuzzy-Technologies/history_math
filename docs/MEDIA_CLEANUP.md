@@ -3,12 +3,10 @@
 ## Storage contract
 
 Object Storage is the delivery location for current PDFs and full-resolution
-images. GitHub Pages serves HTML, styles, fonts, logos and lightweight reading
-images. The Git repository contains those public sources and approval metadata.
+images and raster reading previews. GitHub Pages serves HTML, styles, fonts, logos and local SVGs. The Git repository contains those public sources and approval metadata.
 NAS/FELab remains the editorial source of truth.
 
-There is **no previous-PDF archive and no grace-period timer**. After successful
-publication, retain only media required by the current public manifests/pages,
+There is **no previous-PDF archive and no grace-period timer**. When manual cleanup runs, retain only media required by the current public manifests/pages,
 current master sources and the changed files of open PRs, including drafts.
 An older base snapshot in a draft must not pin unrelated old published images.
 
@@ -26,26 +24,7 @@ prose/dates, editorial approvals or Git history.
 
 ## Publication and source safety
 
-JPEG preparation and storage preflight precede rendering and browser checks.
-Preflight checks existing S3 metadata and uploads/verifies missing current
-originals. Ordinary publication still verifies full bytes before switching links.
-Templates use the S3 delivery identity, including authorized JPEG replacements;
-PDF rendering uses local reading images and never downloads a full-size original.
-
-Existing `external_original` release descriptors remain immutable provenance
-for approval-digest compatibility. They do not require an additional GitHub
-binary copy once its current S3 representation passes verification. Source reads
-prefer verified S3 bytes; GitHub is only a migration fallback on a genuine 404.
-Authentication, corruption and TLS errors do not silently fall back.
-
-Re-preparing an edited article also verifies its current S3 original before
-looking for a Release asset. Existing provenance descriptors stay byte-for-byte
-unchanged. A JPEG is accepted only through the trusted matching normalization
-registry, with its full delivered checksum and size. A genuine 404 for an exact
-not-yet-migrated original may use the legacy Release path; a missing normalized
-JPEG, corrupt bytes or an access/network failure stops preparation. Reuse is
-recorded separately in the preparation receipt and never claims that a removed
-GitHub API binary was tested.
+Ordinary publication reuses current Pages receipts for stored objects. Only new keys receive a conditional upload and one public HEAD. JPEG preparation uses the pinned registry and published receipts. The PDF renderer uses local reading images. Article preparation preserves approved release descriptors and looks up previously published originals in the Pages receipt.
 
 Cleanup inventories all relevant object/version and GitHub pages, pins master,
 open PR heads/descriptions and public manifest digests, and reads PR content as
@@ -88,19 +67,7 @@ from pinned public Git URLs with Git SHA verification.
 
 ## Jobs and rollout
 
-`media_cleanup` runs after successful Pages deployment and oversized retirement,
-inside the existing `github-pages` lock. It copies missing draft media without
-publishing drafts, prunes obsolete S3 versions, checks the result, then cleans
-GitHub duplicates. No extra deletion-enable variable is required by this policy.
-The default CLI invocation is read-only. Normal `--apply` execution still
-requires the trusted master post-deployment context.
-
-`Audit and maintain current media storage` runs daily at 01:17 UTC (04:17 Moscow).
-Its audit cannot delete S3 objects. Its following GitHub-only job resumes any
-quota-limited cleanup without rebuilding or deploying the site. Both GitHub
-writers share one job concurrency group. Manual dispatch defaults to audit only;
-`clean_github=true` additionally enables GitHub cleanup after a successful audit.
-The GitHub-only job receives no S3 credentials.
+Manual dispatch of **Audit and maintain current media storage** defaults to audit only. Set `clean_github=true` to enable GitHub cleanup after the audit. The GitHub-only job receives no S3 credentials. No scheduled or post-deployment inventory runs.
 
 Manual `clean_s3=true` enables a separate S3-only recovery job after a successful
 audit, including when a storage failure prevents a new deployment. It takes the
@@ -132,7 +99,7 @@ Re-read the accepted policy through the API; console validation is not evidence
 that an API-supported HTTPS condition is invalid.
 
 Merge through the owner-approved PR process only after source CI succeeds.
-The first deployment's cleanup plan is based on its actual new live manifests,
+The next manual cleanup plan is based on its actual new live manifests,
 not an old listing or a guessed age. If permissions prevent deletion, the
 incremental journal records the real failure and the current site stays live.
 Manual recovery instead protects the still-current live publication until a new

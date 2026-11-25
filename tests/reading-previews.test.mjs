@@ -34,13 +34,13 @@ test('direct bucket delivery requires a complete receipt, rewrites both locales 
     const html = `<img src="${path}" srcset="${otherPath} 640w"><img src="${svg}">`;
     await writeFile(join(site, 'index.html'), html);
     for (const lang of ['en', 'ru']) await writeFile(join(site, `discovery-${lang}.json`), JSON.stringify([{preview_image: path}]));
-    const options = {baseUrl: storage.base, sourceDirectory};
+    const options = {baseUrl: storage.base, sourceDirectory, known: new Map()};
     await assert.rejects(publishPreviews(site, {}, {...options, baseUrl: 'https://example.org'}), /Unexpected preview/);
     await assert.rejects(publishPreviews(site, {}, {...options, upload: async () => []}), /Incomplete public verification/);
     assert.equal(await readFile(join(site, 'index.html'), 'utf8'), html);
     assert.deepEqual(await readFile(join(site, otherPath)), bytes);
-    const result = await publishPreviews(site, {}, {...options, upload: async (objects, _client, read, {inventoryPrefix}) => {
-      assert.equal(inventoryPrefix, 'previews/');
+    const result = await publishPreviews(site, {}, {...options, upload: async (objects, _client, read, {known}) => {
+      assert.equal(known, options.known);
       assert.equal(objects.length, 1);
       assert.deepEqual(await read(objects[0]), bytes);
       return [{...validateObject(objects[0]), verified: true}];

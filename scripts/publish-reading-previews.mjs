@@ -1,8 +1,9 @@
+import {previousPublication, publicationIndex, receiptDigest} from './publication-state.mjs';
 import {readFile, writeFile, unlink, realpath} from 'node:fs/promises';
 import {basename, relative, resolve, sep} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {filesUnder, requireReceipt} from './publication-media.mjs';
-import {configuredClient, mediaObject, sha256, storage, transfer} from './s3-media.mjs';
+import {configuredClient, mediaObject, sha256, storage, publishChanges} from './s3-media.mjs';
 
 const localPreview = /(?<![\w.:/%-])(?:https:\/\/(?:history-math\.org|fuzzy-technologies\.github\.io)|https:\/\/fuzzy-technologies\.com(?=\/history_math\/))?(?:\/history_math)?(\/assets\/images\/previews\/[a-z0-9._/-]+\.(?:webp|jpe?g))(?![\w./%-])/gi;
 
@@ -13,7 +14,7 @@ export function rewritePreviewUrls(text, previews) {
   });
 }
 
-export async function publishPreviews(directory, client, {baseUrl, upload = transfer, sourceDirectory = resolve('site'), progress} = {}) {
+export async function publishPreviews(directory, client, {baseUrl, upload = publishChanges, sourceDirectory = resolve('site'), known, record} = {}) {
   if (baseUrl !== storage.base) throw new Error('Unexpected preview delivery base URL');
   const site = await realpath(directory), source = await realpath(sourceDirectory);
   if (site === source || site.startsWith(source + sep) || source.startsWith(site + sep)) throw new Error('Expected disposable Pages output');
@@ -42,10 +43,11 @@ export async function publishPreviews(directory, client, {baseUrl, upload = tran
   }
   if (!edits.length) throw new Error('Pages output contains no references to raster reading previews');
   const objects = [...images.values()];
-  const receipt = await upload(objects, client, object => readFile(object.file), {inventoryPrefix: 'previews/', progress});
+  const receipt = await upload(objects, client, object => readFile(object.file), {known});
   requireReceipt({objects}, receipt);
   for (const [file, after] of edits) await writeFile(file, after);
   for (const path of paths.keys()) await unlink(resolve(site, '.' + path));
+  if (record) await record(receipt);
   return {base_url: baseUrl, previews: paths.size, objects: images.size, rewritten: edits.length,
     pages_bytes_removed: pagesBytes, origin_bytes: objects.reduce((sum, object) => sum + object.bytes, 0)};
 }
@@ -53,8 +55,15 @@ export async function publishPreviews(directory, client, {baseUrl, upload = tran
 async function main() {
   const client = configuredClient();
   try {
+    const previous = await previousPublication();
+    const path = resolve(process.argv[2], 'assets/publication-media.json');
     const result = await publishPreviews(process.argv[2], client, {baseUrl: process.env.PREVIEW_DELIVERY_BASE_URL,
-      progress(done, total) { if (done % 100 === 0 || done === total) console.log(`Verified ${done}/${total} preview objects`); }});
+      known: publicationIndex(previous.objects), record: async receipt => {
+        const manifest = JSON.parse(await readFile(path, 'utf8'));
+        manifest.incremental.previews = receipt.map(({key, bytes}) => [key, bytes]);
+        manifest.incremental.digest = receiptDigest(manifest.objects, manifest.incremental.previews);
+        await writeFile(path, JSON.stringify(manifest) + '\n');
+      }});
     console.log(JSON.stringify(result));
   } finally { client.destroy(); }
 }

@@ -1,3 +1,4 @@
+import {previousPublication, publishedPdfs, reusablePdf, stateDirectory} from './publication-state.mjs';
 import {createServer} from 'node:http';
 import {readFile, writeFile, mkdir, rm, stat} from 'node:fs/promises';
 import {resolve, extname, sep, dirname} from 'node:path';
@@ -69,7 +70,7 @@ export async function preparePrintMedia({localOrigin, publicOrigin}) {
   }
 }
 
-export async function buildPdfs(siteDirectory, {cacheDirectory = '.pdf-cache', force = false, jobs = 2} = {}) {
+export async function buildPdfs(siteDirectory, {cacheDirectory = '.pdf-cache', force = false, jobs = 2, published} = {}) {
   if (!Number.isInteger(jobs) || jobs < 1 || jobs > 4) throw new Error('PDF jobs must be an integer from 1 to 4');
   const started = performance.now();
   const root = resolve(siteDirectory);
@@ -88,12 +89,21 @@ export async function buildPdfs(siteDirectory, {cacheDirectory = '.pdf-cache', f
   const engine = digest(JSON.stringify([platform(), release(), process.env.ImageVersion, fonts, engineHashes]));
   const dependencies = dependencyReader(root, manifest.baseurl);
   const documents = new Map(), allowedAssets = new Set(), keys = new Set(), pending = [];
+  const receipts = {};
+  const oldPdfs = published && publishedPdfs(published);
+  const changedArticles = new Set(published?.changes.articles);
+  const changedImages = new Set(published?.changes.images);
   let reused = 0;
   // A former public article must not survive as an orphaned downloadable PDF.
   await rm(resolve(root, 'assets/pdf'), {recursive: true, force: true});
   for (const article of manifest.articles) {
     const source = await readFile(resolve(root, '.' + article.url, 'index.html'), 'utf8');
     const html = printImageSources(printDocument(source, article, manifest.baseurl));
+    const proof = published && reusablePdf(article, html, oldPdfs, changedArticles, changedImages);
+    if (proof) {
+      receipts[article.pdf_url] = proof;
+      continue;
+    }
     const assets = await dependencies(html, manifest.baseurl + article.url); // Missing assets fail even on cache hits.
     const key = digest(JSON.stringify({engine, html, assets, origin: manifest.origin, baseurl: manifest.baseurl}));
     keys.add(key);
@@ -110,8 +120,9 @@ export async function buildPdfs(siteDirectory, {cacheDirectory = '.pdf-cache', f
     }
   }
   const summary = async () => {
+    if (published) await writeFile(resolve(stateDirectory, 'reused-pdfs.json'), JSON.stringify(receipts));
     await pruneCache(cache, keys);
-    const result = {rendered: pending.length, reused, total: manifest.articles.length, seconds: Number(((performance.now() - started) / 1000).toFixed(2))};
+    const result = {rendered: pending.length, reused, previously_published: Object.keys(receipts).length, total: manifest.articles.length, seconds: Number(((performance.now() - started) / 1000).toFixed(2))};
     console.log(`PDF summary: ${JSON.stringify(result)}`);
     return result;
   };
@@ -215,5 +226,5 @@ export async function buildPdfs(siteDirectory, {cacheDirectory = '.pdf-cache', f
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   const option = (name, fallback) => process.argv.includes(name) ? process.argv[process.argv.indexOf(name) + 1] : fallback;
-  await buildPdfs(option('--site-dir', '_site'), {cacheDirectory: option('--cache-dir', process.env.PDF_CACHE_DIR || '.pdf-cache'), force: process.argv.includes('--force'), jobs: Number(option('--jobs', process.env.PDF_JOBS || '2'))});
+  await buildPdfs(option('--site-dir', '_site'), {cacheDirectory: option('--cache-dir', process.env.PDF_CACHE_DIR || '.pdf-cache'), force: process.argv.includes('--force'), published: process.argv.includes('--reuse-published') ? await previousPublication() : undefined, jobs: Number(option('--jobs', process.env.PDF_JOBS || '2'))});
 }

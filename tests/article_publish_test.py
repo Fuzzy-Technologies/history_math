@@ -518,38 +518,34 @@ class ArticlePublishTest(unittest.TestCase):
                 altered.ensure_original(ARTICLE, LOGICAL, sample_manifest()[LOGICAL], None, MASTER)
         self.assertFalse(altered.public_api_binary_verified)
 
-    def test_prepared_original_reuses_s3_after_release_asset_removal(self):
+    def test_prepared_original_reuses_pages_receipt_after_release_asset_removal(self):
         api = ExistingAssetAPI()
         api.asset = None
         entry = sample_manifest()[LOGICAL] | {"external_original": descriptor()}
-        self.assertEqual(api.ensure_original(ARTICLE, LOGICAL, entry, None, MASTER), descriptor())
-        self.assertEqual(api.uploads, [])
-        self.assertEqual(api.downloads, [(f"{publisher.MEDIA_BASE}/originals/{ORIGINAL_SHA}/figure-01.png", False)])
+        key = f"originals/{ORIGINAL_SHA}/figure-01.png"
+        with patch.object(publisher, "published_originals", return_value={key: (ORIGINAL_SHA, len(ORIGINAL))}):
+            self.assertEqual(api.ensure_original(ARTICLE, LOGICAL, entry, None, MASTER), descriptor())
+        self.assertEqual((api.uploads, api.downloads), ([], []))
         self.assertFalse(api.public_api_binary_verified)
         self.assertEqual(api.verified_s3_originals[LOGICAL]["sha256"], ORIGINAL_SHA)
 
-    def test_real_s3_verifier_streams_exact_bucket_original_without_credentials(self):
-        api = ExistingAssetAPI()
-        api.asset = None
-        api.download_digest = publisher.GitHubAPI.download_digest.__get__(api)
-        entry = sample_manifest()[LOGICAL] | {"external_original": descriptor()}
-        expected = f"{publisher.MEDIA_BASE}/originals/{ORIGINAL_SHA}/figure-01.png"
-        response = io.BytesIO(ORIGINAL)
-        opener = unittest.mock.Mock()
-        opener.open.return_value = response
-        with patch.object(publisher, "build_opener", return_value=opener):
-            self.assertEqual(api.ensure_original(ARTICLE, LOGICAL, entry, None, MASTER), descriptor())
-        request = opener.open.call_args.args[0]
-        self.assertEqual(request.full_url, expected)
-        self.assertIsNone(request.get_header("Authorization"))
-        self.assertEqual(api.uploads, [])
-        self.assertEqual(api.verified_s3_originals[LOGICAL]["sha256"], ORIGINAL_SHA)
+    def test_preparation_fetches_one_pages_receipt_without_following_object_links(self):
+        key = f"originals/{ORIGINAL_SHA}/figure-01.png"
+        record = {"key": key, "verified": True, "url": publisher.MEDIA_BASE + "/" + key,
+                  "filename": "figure-01.png", "sha256": ORIGINAL_SHA, "bytes": len(ORIGINAL)}
+        publisher.published_originals.cache_clear()
+        self.addCleanup(publisher.published_originals.cache_clear)
+        with patch.object(publisher.subprocess, "check_output", return_value=json.dumps({"version": 1, "objects": [record]})) as fetch:
+            self.assertEqual(publisher.published_originals()[key], (ORIGINAL_SHA, len(ORIGINAL)))
+            publisher.published_originals()
+            fetch.assert_called_once()
+            self.assertEqual(fetch.call_args.args[0][-1], "https://history-math.org/assets/publication-media.json")
 
     def test_s3_verifier_rejects_foreign_or_noncanonical_original_urls_before_network(self):
         api = ExistingAssetAPI()
         api.download_digest = publisher.GitHubAPI.download_digest.__get__(api)
         url = f"{publisher.MEDIA_BASE}/originals/{ORIGINAL_SHA}/figure-01.png"
-        for candidate in [url.replace("https:", "http:"), url.replace("media-kz", "foreign"),
+        for candidate in [url, url.replace("https:", "http:"), url.replace("media-kz", "foreign"),
                           url.replace(".kz/", ".kz.evil.example/"), url.replace("/originals/", "/other/"),
                           url + "?other=1", url + "#fragment", url.replace("/figure-01", "/../figure-01"),
                           url.replace(ORIGINAL_SHA, "invalid"), url.replace("https://", "https://user@"),
@@ -573,41 +569,29 @@ class ArticlePublishTest(unittest.TestCase):
             args, api, reader = args_for(directory), MigratedAPI(), MemoryGit()
             entry = sample_manifest()[LOGICAL] | {"external_original": descriptor()}
             reader.files[f"site/_data/article_image_assets/{ARTICLE}.json"] = json.dumps({LOGICAL: entry}).encode()
-            with patch.object(publisher, "run_trusted_checks"):
+            with patch.object(publisher, "run_trusted_checks"), patch.object(publisher, "published_originals",
+                    return_value={f"originals/{ORIGINAL_SHA}/figure-01.png": (ORIGINAL_SHA, len(ORIGINAL))}):
                 receipt = publisher.run_prepare(args, api=api, reader=reader)
             self.assertEqual(receipt["public_native_delivery"], "pass")
             self.assertEqual(receipt["public_api_binary_sha256"], "not_run")
             self.assertEqual(receipt["originals"][0]["delivery"]["sha256"], ORIGINAL_SHA)
             self.assertEqual({key:receipt["originals"][0][key] for key in descriptor()}, descriptor())
 
-    def test_corrupt_s3_copy_cannot_fall_back_to_release(self):
+    def test_conflicting_published_receipt_cannot_fall_back_to_release(self):
         api = ExistingAssetAPI()
-        api.download_result = ("0" * 64, len(ORIGINAL))
         entry = sample_manifest()[LOGICAL] | {"external_original": descriptor()}
-        with self.assertRaisesRegex(publisher.PublishError, "Current S3 original checksum"):
+        with patch.object(publisher, "published_originals", return_value={f"originals/{ORIGINAL_SHA}/figure-01.png": (ORIGINAL_SHA, 1)}), \
+                self.assertRaisesRegex(publisher.PublishError, "Published original receipt differs"):
             api.ensure_original(ARTICLE, LOGICAL, entry, None, MASTER)
-        self.assertEqual(len(api.downloads), 1)
-        self.assertEqual(api.uploads, [])
+        self.assertEqual((api.downloads, api.uploads), ([], []))
 
-    def test_only_exact_original_404_uses_legacy_release(self):
-        for status in [404, 403, 500]:
-            with self.subTest(status=status):
-                api = ExistingAssetAPI()
-                legacy = api.download_digest
-                def download(url, require_cors=False):
-                    if url.startswith(publisher.MEDIA_BASE):
-                        raise publisher.PublishError("S3 download failed") from HTTPError(url, status, "unavailable", {}, None)
-                    return legacy(url, require_cors)
-                api.download_digest = download
-                entry = sample_manifest()[LOGICAL] | {"external_original": descriptor()}
-                if status == 404:
-                    self.assertEqual(api.ensure_original(ARTICLE, LOGICAL, entry, None, MASTER), descriptor())
-                    self.assertTrue(api.public_api_binary_verified)
-                else:
-                    with self.assertRaisesRegex(publisher.PublishError, "S3 download failed"):
-                        api.ensure_original(ARTICLE, LOGICAL, entry, None, MASTER)
-                    self.assertEqual(api.downloads, [])
-                self.assertEqual(api.uploads, [])
+    def test_unpublished_exact_original_uses_only_its_github_release(self):
+        api = ExistingAssetAPI()
+        entry = sample_manifest()[LOGICAL] | {"external_original": descriptor()}
+        with patch.object(publisher, "published_originals", return_value={}):
+            self.assertEqual(api.ensure_original(ARTICLE, LOGICAL, entry, None, MASTER), descriptor())
+        self.assertTrue(api.public_api_binary_verified)
+        self.assertTrue(all(not url.startswith(publisher.MEDIA_BASE) for url, _ in api.downloads))
 
     def test_normalized_s3_copy_uses_only_trusted_matching_registry(self):
         entry = sample_manifest()[LOGICAL] | {"external_original": descriptor()}
@@ -622,7 +606,8 @@ class ArticlePublishTest(unittest.TestCase):
         api = ExistingAssetAPI()
         api.asset = None
         api.download_result = ("a" * 64, 12)
-        with patch.object(publisher, "current_s3_original", return_value=delivery):
+        with patch.object(publisher, "current_s3_original", return_value=delivery), patch.object(publisher, "published_originals",
+                return_value={f"originals/{'a' * 64}/figure-01.jpg": ("a" * 64, 12)}):
             self.assertEqual(api.ensure_original(ARTICLE, LOGICAL, entry, None, MASTER), descriptor())
         self.assertEqual(api.verified_s3_originals[LOGICAL], delivery)
         for change in [{"source_sha256": "b" * 64}, {"source_bytes": len(ORIGINAL)+1}, {"width": 42},
@@ -641,8 +626,8 @@ class ArticlePublishTest(unittest.TestCase):
         def missing(url, require_cors=False):
             raise publisher.PublishError("Missing current JPEG") from HTTPError(url, 404, "missing", {}, None)
         api.download_digest = missing
-        with patch.object(publisher, "current_s3_original", return_value=delivery), \
-                self.assertRaisesRegex(publisher.PublishError, "Missing current JPEG"):
+        with patch.object(publisher, "current_s3_original", return_value=delivery), patch.object(publisher, "published_originals", return_value={}), \
+                self.assertRaisesRegex(publisher.PublishError, "Missing published JPEG receipt"):
             api.ensure_original(ARTICLE, LOGICAL, entry, Path("old-heavy-original.png"), MASTER)
         self.assertEqual(api.uploads, [])
 

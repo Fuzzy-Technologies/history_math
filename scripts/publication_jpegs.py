@@ -191,7 +191,7 @@ def cached_record(path, entry, previous, verified=None):
     return None
 
 
-def prepare(path, entry, directory, previous, cache=None):
+def prepare(path, entry, directory, previous, cache=None, publication=False):
     cached = cached_record(path, entry, previous, cache[path] if cache is not None else None)
     if cached:
         return path, cached, None
@@ -202,12 +202,15 @@ def prepare(path, entry, directory, previous, cache=None):
         external = external_original(entry, path)
         if not external:
             raise ValueError(f"Missing image source: {path}")
-        try:
-            data = download(f"{BASE}/originals/{entry['sha256']}/{Path(path).name}", entry["bytes"])
-        except urllib.error.HTTPError as error:
-            if error.code != 404:
-                raise
+        if publication:
             data = download(external["url"], entry["bytes"])
+        else:
+            try:
+                data = download(f"{BASE}/originals/{entry['sha256']}/{Path(path).name}", entry["bytes"])
+            except urllib.error.HTTPError as error:
+                if error.code != 404:
+                    raise
+                data = download(external["url"], entry["bytes"])
     encoded, quality = encode_original(data, entry)
     if encoded is None:
         return path, None, quality
@@ -229,6 +232,7 @@ def main():
     parser.add_argument("--include-pending")
     parser.add_argument("--write-registry")
     parser.add_argument("--registry")
+    parser.add_argument("--published-state", help="Reuse deployed JPEG receipts without probing object storage")
     options = parser.parse_args()
     if pillow_version != "12.3.0":
         raise ValueError("Publication JPEGs require pinned Pillow 12.3.0")
@@ -236,7 +240,15 @@ def main():
     output.parent.mkdir(parents=True, exist_ok=True)
     registry = json.loads(Path(options.registry).read_text()) if options.registry else None
     previous = registry["replacements"] if registry else {}
-    cache = checked_registry_cache(registry) if registry is not None else None
+    if options.published_state:
+        if registry is None:
+            raise ValueError("A publication registry is required")
+        records = json.loads(Path(options.published_state).read_text())["objects"]
+        known = {item["key"]: item["bytes"] for item in records if item["verified"] is True}
+        cache = {path: known.get(f"originals/{item['sha256']}/{item['filename']}") == item["bytes"]
+                 for path, item in previous.items()}
+    else:
+        cache = checked_registry_cache(registry) if registry is not None else None
     if registry is None:
         try:
             previous = json.loads(download(options.previous, 12_000_000)).get("jpeg_originals", {})
@@ -256,7 +268,7 @@ def main():
                and not entry.get("logo") and entry["bytes"] >= 13_000_000]
     replacements, retained = {}, {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
-        futures = [pool.submit(prepare, path, entry, output.parent, previous, cache) for path, entry in entries]
+        futures = [pool.submit(prepare, path, entry, output.parent, previous, cache, bool(options.published_state)) for path, entry in entries]
         try:
             for done, future in enumerate(concurrent.futures.as_completed(futures), 1):
                 path, record, reason = future.result()

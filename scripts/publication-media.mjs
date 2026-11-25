@@ -1,8 +1,9 @@
+import {previousPublication, publicationIndex, receiptDigest, stateDirectory} from './publication-state.mjs';
 import {readFile, writeFile, readdir, realpath, unlink, stat} from 'node:fs/promises';
 import {resolve, relative, sep, basename} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {imageInventory, validateExternalOriginal} from './external-originals.mjs';
-import {storage, mediaObject, validateObject, assertBytes, sha256, configuredClient, responseBytes, transfer, readWithRetries, mediaRead} from './s3-media.mjs';
+import {storage, mediaObject, validateObject, assertBytes, sha256, configuredClient, responseBytes, publishChanges, readWithRetries, mediaRead} from './s3-media.mjs';
 import {publicationReplacements, publicationSizeExceptions, jpegObject, imageSizeFindings} from './image-publication.mjs';
 
 export async function filesUnder(directory) {
@@ -54,7 +55,7 @@ export function uniqueObjects(objects) {
   return [...unique.values()];
 }
 
-export async function publicationPlan(root, siteDirectory) {
+export async function publicationPlan(root, siteDirectory, reusedPdfs = {}) {
   const site = await realpath(siteDirectory), source = await realpath(resolve(root, 'site'));
   if (site === source || site.startsWith(source + sep)) throw new Error('Publication output must be separate from source files');
   const files = await filesUnder(site);
@@ -77,14 +78,22 @@ export async function publicationPlan(root, siteDirectory) {
     assertBytes(object, bytes);
     pdfs.push({path, object});
   }
-  for (const article of manifest.articles) if (!pdfs.some(pdf => pdf.path === article.pdf_url)) throw new Error('Missing publication PDF');
+  for (const article of manifest.articles) {
+    const path = article.pdf_url;
+    if (Object.hasOwn(reusedPdfs, path)) {
+      const object = reusedPdfs[path];
+      if (object.verified !== true || !validateObject(object).key.startsWith('pdf/') ||
+          object.filename !== basename(path) || pdfs.some(pdf => pdf.path === path)) throw new Error('Invalid reused PDF');
+      pdfs.push({path, object});
+    } else if (!pdfs.some(pdf => pdf.path === path)) throw new Error('Missing publication PDF');
+  }
   const pendingJpegs = Object.entries(replacements).filter(([path]) => !Object.hasOwn(inventory, path))
     .map(([path, record]) => jpegObject(root, path, record.source, record));
   return {version: 1, output_directory: site, source_directory: source, origin: manifest.origin, baseurl: manifest.baseurl, images, pdfs, replacements,
     objects: uniqueObjects([...images.map(image => image.object), ...pdfs.map(pdf => pdf.object), ...pendingJpegs])};
 }
 
-export async function sourceBytes(object, request = mediaRead, retryOptions) {
+export async function sourceBytes(object, request = mediaRead, retryOptions, {readStored = true} = {}) {
   if (object.source.file) {
     const bytes = await readFile(object.source.file);
     assertBytes(object, bytes);
@@ -97,7 +106,7 @@ export async function sourceBytes(object, request = mediaRead, retryOptions) {
       source.search || source.hash || source.username || source.password) throw new Error('Untrusted original source');
   // S3 is authoritative after migration. Legacy release descriptors remain
   // provenance for unchanged editorial approval digests, not backup copies.
-  const cached = await readWithRetries(`S3 source ${object.key}`, async () => {
+  const cached = readStored && await readWithRetries(`S3 source ${object.key}`, async () => {
     const replica = await request(object.url, {credentials: 'omit', redirect: 'error', signal: AbortSignal.timeout(120_000)});
     if (replica.status === 404) { await replica.body?.cancel(); return null; }
     const bytes = await responseBytes(replica, object.bytes);
@@ -190,7 +199,7 @@ export function requireReceipt(plan, receipt) {
   if (expected.size || receipt.length !== plan.objects.length) throw new Error('Incomplete public verification receipt');
 }
 
-export async function finalizePublication(siteDirectory, plan, receipt, {pruneOutput = false} = {}) {
+export async function finalizePublication(siteDirectory, plan, receipt, {pruneOutput = false, incremental} = {}) {
   requireReceipt(plan, receipt);
   const site = await realpath(siteDirectory);
   if (site !== plan.output_directory || site === plan.source_directory || site.startsWith(plan.source_directory + sep)) {
@@ -214,7 +223,7 @@ export async function finalizePublication(siteDirectory, plan, receipt, {pruneOu
     const {source, file, ...publicRecord} = record;
     return [path, publicRecord];
   }));
-  await writeFile(resolve(site, 'assets/publication-media.json'), JSON.stringify({version: 1, objects: receipt, jpeg_originals: jpegOriginals}, null, 2) + '\n');
+  await writeFile(resolve(site, 'assets/publication-media.json'), JSON.stringify({version: 1, objects: receipt, jpeg_originals: jpegOriginals, incremental}, null, 2) + '\n');
   if (pruneOutput) for (const file of removed) await unlink(file);
   return {objects: receipt.length, rewritten: edits.length, removed: pruneOutput ? removed.length : 0};
 }
@@ -224,11 +233,15 @@ async function main() {
   if (index < 0 || !args[index + 1] || !args.includes('--publish')) throw new Error('Expected --site-dir DIRECTORY --publish');
   const client = configuredClient();
   try {
-    const plan = await publicationPlan(process.cwd(), args[index + 1]);
-    const receipt = await transfer(plan.objects, client, sourceBytes, {inventoryPrefix: '', progress: (done, total) => {
-      if (done % 25 === 0 || done === total) console.log(`Publicly verified ${done}/${total} publication objects`);
-    }});
-    console.log(JSON.stringify(await finalizePublication(args[index + 1], plan, receipt, {pruneOutput: args.includes('--prune-output')})));
+    const previous = await previousPublication();
+    const reused = JSON.parse(await readFile(resolve(stateDirectory, 'reused-pdfs.json'), 'utf8'));
+    const plan = await publicationPlan(process.cwd(), args[index + 1], reused);
+    const receipt = await publishChanges(plan.objects, client,
+      object => sourceBytes(object, mediaRead, undefined, {readStored: false}), {known: publicationIndex(previous.objects)});
+    const revision = process.env.GITHUB_SHA;
+    if (!/^[a-f0-9]{40}$/.test(revision)) throw new Error('Missing publication commit');
+    const incremental = {version: 1, revision, previews: [], digest: receiptDigest(receipt, [])};
+    console.log(JSON.stringify(await finalizePublication(args[index + 1], plan, receipt, {pruneOutput: args.includes('--prune-output'), incremental})));
   } finally { client.destroy(); }
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) main().catch(error => {
