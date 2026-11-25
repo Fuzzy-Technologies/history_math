@@ -48,7 +48,7 @@ export function mediaObject(kind, filename, digest, bytes) {
   const extension = typeof filename === 'string' && filename.split('.').at(-1).toLowerCase();
   if (!['pdf', 'originals', 'previews'].includes(kind) || typeof filename !== 'string' ||
       !/^[a-z0-9][a-z0-9._-]*$/i.test(filename) || filename.includes('..') || !types[extension] ||
-      (kind === 'pdf') !== (extension === 'pdf') || (kind === 'previews' && extension !== 'webp') || !/^[a-f0-9]{64}$/.test(digest) ||
+      (kind === 'pdf') !== (extension === 'pdf') || (kind === 'previews' && !['webp', 'jpg', 'jpeg'].includes(extension)) || !/^[a-f0-9]{64}$/.test(digest) ||
       !Number.isSafeInteger(bytes) || bytes <= 0) throw new Error('Invalid media identity');
   const key = `${kind}/${digest}/${filename}`;
   return {key, url: `${storage.base}/${key}`, sha256: digest, bytes, filename, content_type: types[extension]};

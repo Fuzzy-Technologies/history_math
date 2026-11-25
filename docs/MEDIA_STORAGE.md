@@ -70,7 +70,7 @@ final publication step:
 7. Optimizes static lossless WebP previews in the disposable Pages output.
    The encoder retains dimensions and alpha, and keeps the input whenever the
    candidate misses the quality or savings floor. When direct bucket delivery is
-   enabled, the verified WebPs are removed from the disposable Pages artifact.
+   enabled, verified WebP and JPEG previews are removed from the Pages artifact.
 8. Rechecks built URLs, catalogs, locale indexes and final Pages size. For code
    changes, browser tests exercise actual S3 zoom/downloads on old and current
    RU/EN pages, mobile and desktop, with analytics stubbed.
@@ -199,14 +199,15 @@ The master workflow prepares missing JPEG bytes, checks them against the registr
 ## Reading previews in Object Storage
 
 The `history-math-storage` environment setting `PREVIEW_DELIVERY_BASE_URL` selects
-where the production build serves article WebP previews. Set it to
+where the production build serves WebP and JPEG article previews. Set it to
 `https://storage.yandexcloud.kz/history-math-media-kz` for direct delivery from
 the existing bucket. An empty setting builds a self-contained Pages preview
 tree. Any other destination stops publication.
 
 After PDF rendering and WebP optimization, publication computes the SHA-256 of
 each final file. Missing objects are uploaded under `previews/<sha256>/<filename>`
-with `image/webp`, inline disposition and immutable cache headers. Before changing
+with the matching `image/webp` or `image/jpeg` MIME type, inline disposition
+and immutable cache headers. Existing JPEG previews are transferred byte for byte. Before changing
 references or removing Pages copies, the job checks the anonymous response body,
 size, MIME type and filename of every object against the build. A paginated S3
 listing avoids a redundant signed HEAD on existing objects. Preflight and final
