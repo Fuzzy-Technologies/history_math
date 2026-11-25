@@ -5,6 +5,7 @@ import {runInNewContext} from 'node:vm';
 import Ajv from 'ajv';
 import {topicKey} from '../site/assets/core.js';
 import {parseArticle} from './article-frontmatter.mjs';
+import {hasTitleEmoji} from './article-title.mjs';
 import {articleUrl} from './article-url.mjs';
 import {checkReview} from './article-review.mjs';
 import {externalEntry, imageInventory} from './external-originals.mjs';
@@ -27,6 +28,9 @@ export function checkArticle(text, file, root, identities = new Set()) {
   const metadataLine = value => text.slice(0, text.indexOf(String(value))).split('\n').length;
   if (!validate(data)) for (const error of validate.errors) add('HM_METADATA', `${error.instancePath || '/'} ${error.message}`);
   if (!data || typeof data !== 'object') return {findings};
+  if (typeof data.title === 'string' && hasTitleEmoji(data.title)) {
+    add('HM_METADATA', 'Use plain text without emoji in the article title', metadataLine('title:'));
+  }
   if (data.lang === 'ru' !== String(data.permalink).startsWith('/ru/')) add('HM_METADATA', 'lang / permalink');
   if (Array.isArray(data.authors) && data.author !== data.authors.join(', ')) add('HM_METADATA', 'author must display the authors array');
   for (const value of [data.date, data.updated, data.original_publication?.date].filter(Boolean)) {
@@ -80,6 +84,9 @@ export function checkArticle(text, file, root, identities = new Set()) {
   if (/\{%|\{\{/.test(withoutIncludes)) add('HM_STRUCTURE', 'Only the documented shared figure include is allowed');
   if (/\\\\[A-Za-z0-9-]+\\|[A-Za-z]:\\|\.felab\.json|runtime\.sqlite|ОПУБЛИКОВАТЬ В|ОПУБЛИКОВАТЬ ВТОРЫМ|ОПУБЛИКОВАТЬ ТРЕТЬИМ/.test(text)) add('HM_STRUCTURE', 'Private paths or operational metadata must remain outside public Git');
   if (/^#\s+/m.test(clean)) add('HM_STRUCTURE', 'Use H2 sections beneath the shared H1 title');
+  for (const heading of clean.matchAll(/^ {0,3}#{2,6}[ \t]+(.+)$/gm)) {
+    if (hasTitleEmoji(heading[1])) add('HM_STRUCTURE', 'Use plain text without emoji in section headings', lineAt(heading.index));
+  }
   for (const tag of Array.isArray(data.tags) && data.status === 'draft' ? data.tags : []) {
     const canonical = topicLabels.get(topicKey(tag));
     if (canonical && canonical !== tag) add('HM_METADATA', `Prefer the canonical topic label: ${canonical} (received ${tag})`, 1, 'warning');

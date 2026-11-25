@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-348796cd306d-en",
+  "questions": [
+    {
+      "id": "zeldovich-anecdote-locators",
+      "question": "Confirm primary-source locators for the form-and-content and Sofochka stories: the source cites retellings in MK and Ruwiki, the latter referring to eyewitness A. A. Pavelyev. The pump story is supported by the 2008 memoir collection and remains explicitly a legend.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Confirm primary-source locators for the form-and-content and Sofochka stories: the source cites retellings in MK and Ruwiki, the latter referring to eyewitness A. A. Pavelyev. The pump story is supported by the 2008 memoir collection and remains explicitly a legend.",
+        "ru": "Для историй о форме/содержании и «Софочке» уточнить первичный указатель: исходник ссылается на пересказы в MK и Ruwiki, во втором случае на очевидца А. А. Павельева. История насоса подтверждается воспоминаниями в сборнике 2008 года https://scilib-physics.narod.ru/Zeldovich/zeldovich.htm ; её легендарный статус сохранён."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/586#pullrequestreview-6040131343"
+    },
+    {
+      "id": "zeldovich-form-content-wordplay",
+      "question": "Review the English form/content pun: “Forms should be such that you would want to keep them”, followed by a brief explanation of the Russian double meaning. Decide whether the adaptation preserves the effect.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Review the English form/content pun: “Forms should be such that you would want to keep them”, followed by a brief explanation of the Russian double meaning. Decide whether the adaptation preserves the effect.",
+        "ru": "Проверить английскую передачу игры «формы» / «взять на содержание»: использовано “Forms should be such that you would want to keep them” с коротким пояснением двух русских значений. Редактору оценить, сохраняет ли эта адаптация эффект реплики."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/586#pullrequestreview-6040131343"
+    },
+    {
+      "id": "zeldovich-portrait-provenance",
+      "question": "For the retouched portrait of Yakov Zeldovich (fig-2), identify the original photograph, photographer or archive, a verifiable public source, and the legal basis for its use and retouching.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "For the retouched portrait of Yakov Zeldovich (fig-2), identify the original photograph, photographer or archive, a verifiable public source, and the legal basis for its use and retouching.",
+        "ru": "Для ретушированного портрета Якова Зельдовича (fig-2) указать исходный снимок, имя фотографа или архив, проверяемый публичный источник и правовое основание использования и ретуши."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/586#pullrequestreview-6040131343"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/586#pullrequestreview-6040131343",
+    "source_commit": "fc4de072df5524c9a2ec2879771a9446757a1996",
+    "source_review_id": 6040131343,
+    "approved_at": "2026-11-24T13:35:05Z",
+    "package_sha256": "56522730b61cf09057915012eca139c6cf96b9fa955019ef92e1da5194daf345"
+  }
+}

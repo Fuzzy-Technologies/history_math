@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ce3653b33622-en",
+  "questions": [
+    {
+      "id": "descartes-cogito-sources-and-dates",
+      "question": "The historical background says the phrase first appeared in the Meditations of 1641 and became widely known through the earlier work of 1637. The Stanford Encyclopedia of Philosophy https://plato.stanford.edu/archives/sum2020/entries/self-consciousness/ distinguishes Je pense, donc je suis in the Discourse on the Method (1637), I am, I exist in the Second Meditation (1641), and cogito ergo sum in the Principles of Philosophy (1644). Please agree how to distinguish the proposition, its formulations and dates in both versions; the original account remains pending an editorial decision.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "The historical background says the phrase first appeared in the Meditations of 1641 and became widely known through the earlier work of 1637. The Stanford Encyclopedia of Philosophy https://plato.stanford.edu/archives/sum2020/entries/self-consciousness/ distinguishes Je pense, donc je suis in the Discourse on the Method (1637), I am, I exist in the Second Meditation (1641), and cogito ergo sum in the Principles of Philosophy (1644). Please agree how to distinguish the proposition, its formulations and dates in both versions; the original account remains pending an editorial decision.",
+        "ru": "В исторической справке фраза названа впервые появившейся в «Размышлениях» 1641 года и ставшей известной благодаря более раннему труду 1637 года. Stanford Encyclopedia of Philosophy https://plato.stanford.edu/archives/sum2020/entries/self-consciousness/ различает «Je pense, donc je suis» в «Рассуждении о методе» (1637), «I am, I exist» во втором «Размышлении» (1641) и «cogito ergo sum» в «Началах философии» (1644). Согласовать точное разведение тезиса, формулировок и дат в RU/EN; исходная справка сохранена до решения редактора."
+      },
+      "resolution": "The historical note now distinguishes the French wording of 1637, the proposition in the Second Meditation of 1641, and the Latin “Cogito, ergo sum” in the Principles of Philosophy of 1644."
+    },
+    {
+      "id": "descartes-figure-sources-and-rights",
+      "question": "Identify the actual public sources and public-domain bases for the 1637 and 1641 title pages; separately confirm the provenance and rights status of the portrait material used in the meme. Synchronize the metadata for all three figures in RU/EN and do not describe third-party material as illustrations from the author’s archive.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Identify the actual public sources and public-domain bases for the 1637 and 1641 title pages; separately confirm the provenance and rights status of the portrait material used in the meme. Synchronize the metadata for all three figures in RU/EN and do not describe third-party material as illustrations from the author’s archive.",
+        "ru": "Для титульных листов изданий 1637 и 1641 годов указать реальные публичные источники и основания public domain; отдельно подтвердить происхождение и правовой статус портретной основы мема. Синхронизировать метаданные всех трёх иллюстраций в RU/EN и не описывать материалы третьих лиц как иллюстрации из авторского архива."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/561#pullrequestreview-6040105576"
+    },
+    {
+      "id": "english-cover-visible-text",
+      "question": "The English version needs the visible text inside the meme localized; an English alt text does not replace the Russian wording embedded in the image.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "The English version needs the visible text inside the meme localized; an English alt text does not replace the Russian wording embedded in the image.",
+        "ru": "Для английской версии нужна локализация видимого текста непосредственно на меме: английский alt не заменяет русскую надпись внутри изображения."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/561#pullrequestreview-6040105576"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/561#pullrequestreview-6040105576",
+    "source_commit": "6bbbc5b9c4b4d267a31a2687fe0836d72d0b5bb1",
+    "source_review_id": 6040105576,
+    "approved_at": "2026-11-24T13:33:19Z",
+    "package_sha256": "911aa30b68a1243d7c93f209c960677297c0aed777de7479b3f35d594a4b2f50"
+  }
+}

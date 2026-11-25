@@ -1,0 +1,39 @@
+{
+  "review_version": 1,
+  "article_id": "hm-9b8ee7cdec3e-en",
+  "reconciliation": {
+    "text": "Complete author post retained; operational markers removed.",
+    "comments": "Both substantive comment blocks consolidated under Notes; both books and all four public source links retained.",
+    "images": "2 selected archival illustrations; source bytes retained.",
+    "original_date": "Owner requested the archival post date to be preserved in both editions.",
+    "digest": "Approved archival digest condensed and checked against the complete text."
+  },
+  "manual_changes": [
+    "Source title promoted to page title; hashtags moved to metadata; operational placement markers removed.",
+    "External URLs placed on descriptive words; archival attachments remain in the source archive.",
+    "English adaptation prepared from the complete Russian source."
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Confirm the biographical claims, the assessment that one school textbook was unsuitable, and the attribution of the retouched portraits.",
+      "blocking": true,
+      "state": "accepted",
+      "localizations": {
+        "source": "Confirm the biographical claims, the assessment that one school textbook was unsuitable, and the attribution of the retouched portraits.",
+        "ru": "Подтвердить биографические сведения, оценку школьного учебника как непригодного и атрибуцию ретушированных портретов."
+      },
+      "resolution": "The editor approved the reviewed wording as submitted. https://github.com/Fuzzy-Technologies/history_math/pull/316#issuecomment-6635267715"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-04",
+    "package_sha256": "7af56aecca9c2123e476a417b9d7114df8af163e60aabec7e879e7619e0be8f2",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/316#issuecomment-6635267715",
+    "source_commit": "2ea4f6f56a73c4519152bf52d7a9eba02d24262d",
+    "source_comment_id": 6635267715,
+    "approved_at": "2026-11-04T15:54:11Z"
+  }
+}

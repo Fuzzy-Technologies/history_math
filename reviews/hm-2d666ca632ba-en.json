@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2d666ca632ba-en",
+  "questions": [
+    {
+      "id": "leonardo-watermelon-source",
+      "question": "Please identify the entry or page in Richter’s 1883 edition that supports the square-watermelon story and the line attributed to Leonardo. The passage was not found in the Project Gutenberg text. If no source can be identified, please agree on presenting the story as the author’s joke.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Please identify the entry or page in Richter’s 1883 edition that supports the square-watermelon story and the line attributed to Leonardo. The passage was not found in the Project Gutenberg text. If no source can be identified, please agree on presenting the story as the author’s joke.",
+        "ru": "Указать номер записи или страницу издания Рихтера 1883 года, где подтверждаются история о квадратном арбузе и приписываемая Леонардо реплика. В электронном тексте Project Gutenberg такой фрагмент не найден. Если подтверждения нет, согласовать подачу истории как авторской шутки."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/554#pullrequestreview-6040097071"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/554#pullrequestreview-6040097071",
+    "source_commit": "2c75cdb3585269d33404a5630e46b333a7403f99",
+    "source_review_id": 6040097071,
+    "approved_at": "2026-11-24T13:32:44Z",
+    "package_sha256": "49190b6bb8fdc453e051b6a73ecbd31c9788081bfe666799409bac8a53d6056f"
+  }
+}

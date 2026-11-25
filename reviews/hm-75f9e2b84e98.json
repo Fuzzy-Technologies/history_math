@@ -1,0 +1,71 @@
+{
+  "review_version": 1,
+  "article_id": "hm-75f9e2b84e98",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить рамки утверждений о первом научно-популярном физико-математическом журнале и первых российских курсах геометрии Лобачевского и оснований геометрии.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Абсолютные приоритеты смягчены: ВОФЭМ назван одним из первых российских журналов такого профиля, а Каган — одним из первых преподавателей соответствующих университетских курсов.",
+      "localizations": {
+        "source": "Уточнить рамки утверждений о первом научно-популярном физико-математическом журнале и первых российских курсах геометрии Лобачевского и оснований геометрии.",
+        "en": "Clarify the scope of the priority claims for the popular physics and mathematics journal and the first Russian courses on Lobachevsky geometry and the foundations of geometry."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Сверить дату Первого Всероссийского съезда преподавателей математики; подтверждаемая датировка — декабрь 1911 — январь 1912 года.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Сохранена подтверждаемая датировка Первого Всероссийского съезда преподавателей математики: декабрь 1911 — январь 1912 года. Расхождение относится к другому материалу и не меняет эту редакцию.",
+      "localizations": {
+        "source": "Сверить дату Первого Всероссийского съезда преподавателей математики; подтверждаемая датировка — декабрь 1911 — январь 1912 года.",
+        "en": "Verify the date of the First All-Russian Congress of Mathematics Teachers; the supported dating is December 1911–January 1912."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Подтвердить ссылку на исходную публикацию, если она известна: post.txt и long.txt содержат пустое поле ссылки. Английские заглавия русских книг переведены описательно.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Подтверждённого URL в источнике нет; необязательное поле корректно опущено, исходная дата сохранена. Описательные английские названия явно представлены как переводы русских изданий.",
+      "localizations": {
+        "source": "Подтвердить ссылку на исходную публикацию, если она известна: post.txt и long.txt содержат пустое поле ссылки. Английские заглавия русских книг переведены описательно.",
+        "en": "Confirm the original-publication URL if known: both source texts leave the link field empty. English titles of the Russian books are descriptive translations."
+      }
+    },
+    {
+      "id": "q4",
+      "question": "Для исторического портрета Кагана указано только «Иллюстрация к материалу». Установить проверяемый первоисточник, автора или фотографа (если известен), дату и лицензию либо иное подтверждённое основание использования в обеих редакциях.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для исторического портрета Кагана указано только «Иллюстрация к материалу». Установить проверяемый первоисточник, автора или фотографа (если известен), дату и лицензию либо иное подтверждённое основание использования в обеих редакциях.",
+        "en": "The historical portrait of Kagan is identified only as an illustration accompanying the text. Establish a verifiable source, the creator or photographer where known, its date, and a licence or other confirmed basis for use in both editions."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/374#pullrequestreview-6045722345"
+    },
+    {
+      "id": "journal-editorial-chronology",
+      "question": "Уточнить начало редакторской работы Кагана в «Вестнике опытной физики и элементарной математики»: с № 301 за 1901 год он редактировал журнал вместе с В. А. Циммерманом, а с № 363 за 1904 год возглавил его; нынешняя дата 1902 требует исправления.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Уточнить начало редакторской работы Кагана в «Вестнике опытной физики и элементарной математики»: с № 301 за 1901 год он редактировал журнал вместе с В. А. Циммерманом, а с № 363 за 1904 год возглавил его; нынешняя дата 1902 требует исправления.",
+        "en": "Correct the beginning of Kagan’s editorial work at the Bulletin of Experimental Physics and Elementary Mathematics: from issue 301 in 1901 he co-edited it with V. A. Zimmermann, and from issue 363 in 1904 he headed it; the current date 1902 is inaccurate."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/374#pullrequestreview-6045722345"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/374#pullrequestreview-6045722345",
+    "source_commit": "26fda6d1ebca25a06d6302792a1756299fb958a4",
+    "source_review_id": 6045722345,
+    "approved_at": "2026-11-24T19:15:00Z",
+    "package_sha256": "75969049fd15e1b8fe26284330199e1b021ffd20eaf9c5c01d52b7d8d6d5af22"
+  }
+}

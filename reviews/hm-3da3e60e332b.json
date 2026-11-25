@@ -1,0 +1,34 @@
+{
+  "review_version": 1,
+  "article_id": "hm-3da3e60e332b",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "No comment-placement blocks in the source post.",
+    "images": "1 archival illustrations inspected and included.",
+    "digest": "The approved digest was checked against the complete source and shortened to a complete card description that preserves the joke’s effect."
+  },
+  "manual_changes": [
+    "A descriptive publication heading is proposed; the complete untitled source opening remains in the body. Source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [
+    {
+      "id": "rabbit-sketch-allusion",
+      "question": "Русская реплика переиначивает узнаваемую фразу скетча о кроликах, заменяя продолжение про три-четыре килограмма мяса историко-математическими задачами. В EN сохранены кролики, мех, число «три-четыре» и авторская подпись; ссылка на скетч не добавлена, поскольку её нет в исходнике. Согласовать, достаточно ли самостоятельной английской шутки или нужен краткий культурный контекст.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Английский дайджест обозначает отсылку к русскому комедийному скетчу. Реплика сохраняет мех, число и математическую развязку."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-05",
+    "package_sha256": "280390814e3191e54255f0d1f75d9d0b7431aa8b35e2497411951e14d0e8c58a",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/527#pullrequestreview-5786841441",
+    "source_commit": "e2ebe8511598c9719384d4e4afca6368529d136d",
+    "source_review_id": 5786841441,
+    "approved_at": "2026-11-05T14:49:32Z",
+    "delegated_by": "Tim55667757"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c34c5e8dd6da-en",
+  "questions": [
+    {
+      "id": "english-cover-localization",
+      "question": "The shared cover contains only Russian dialogue (“Понадеялся на судьбу…”, “Всё рассчитал!”, “В знаке ошибся…”). The English edition needs a localized cover, or an explicit editorial decision to retain the Russian one.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "The shared cover contains only Russian dialogue (“Понадеялся на судьбу…”, “Всё рассчитал!”, “В знаке ошибся…”). The English edition needs a localized cover, or an explicit editorial decision to retain the Russian one.",
+        "ru": "Общая обложка содержит только русские реплики «Понадеялся на судьбу…», «Всё рассчитал!» и «В знаке ошибся…». Для английской редакции нужна локализованная обложка либо явное редакторское решение оставить русскую."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/603#pullrequestreview-6040167784"
+    },
+    {
+      "id": "source-authorship-attribution",
+      "question": "The text closely follows S. N. Fedin’s anecdote no. 23, yet authorship and rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the source text’s authorship from Mansur’s adaptation and illustration work.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "The text closely follows S. N. Fedin’s anecdote no. 23, yet authorship and rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the source text’s authorship from Mansur’s adaptation and illustration work.",
+        "ru": "Текст близко следует анекдоту № 23 С. Н. Федина, однако авторство и rights_basis целиком отданы Мансуру Гильмуллину. Нужно явно развести авторство исходного текста и вклад Мансура — адаптацию и иллюстрацию."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/603#pullrequestreview-6040167784"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/603#pullrequestreview-6040167784",
+    "source_commit": "958e1f29ce0fde43f73e5a04a2c7ef4ce44d1fab",
+    "source_review_id": 6040167784,
+    "approved_at": "2026-11-24T13:37:33Z",
+    "package_sha256": "956994d7fe68d0f2f286d52fb37eab83f41a326d1fe12839f2fe77566056ca50"
+  }
+}

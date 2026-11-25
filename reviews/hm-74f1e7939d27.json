@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-74f1e7939d27",
+  "questions": [
+    {
+      "id": "married-couples-calendar-qualification",
+      "question": "Согласовать оговорки к утверждениям «результат будет одинаковым» и «сумма всегда равна удвоенному текущему году». Для полных лет сумма равна 2T−εр−εс, где εр=1 до дня рождения, εс=1 до годовщины свадьбы. У супругов свадебная поправка общая, но она может уменьшить обе суммы; дни рождения могут дать разницу 1, как в конце поста и указано. Уточнить вывод и границы примера 2025 года в обеих версиях, сохранив авторский эффект раскрытия.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Согласовать оговорки к утверждениям «результат будет одинаковым» и «сумма всегда равна удвоенному текущему году». Для полных лет сумма равна 2T−εр−εс, где εр=1 до дня рождения, εс=1 до годовщины свадьбы. У супругов свадебная поправка общая, но она может уменьшить обе суммы; дни рождения могут дать разницу 1, как в конце поста и указано. Уточнить вывод и границы примера 2025 года в обеих версиях, сохранив авторский эффект раскрытия.",
+        "en": "Please qualify “the totals will match” and “the sum always equals twice the current year”. With completed years the total is 2T−εb−εw, where εb is 1 before the birthday and εw is 1 before the wedding anniversary. Spouses share the anniversary adjustment, but it can reduce both totals; birthdays can produce the difference of 1 already mentioned at the end. Please agree a qualified conclusion and the conditions of the 2025 example while preserving the reveal."
+      },
+      "resolution": "Обе версии теперь используют точную формулу 2T−εр−εс и явно указывают условия совпадения сумм супругов и примера 2025 года."
+    },
+    {
+      "id": "married-couples-cover-provenance",
+      "question": "Подтвердить происхождение обложки: в подписи она названа авторской, но поля source и rights_basis содержат лишь «Иллюстрация к материалу». Нужны реальный автор или иллюстратор, публичный источник и лицензия либо подтверждённое основание считать изображение авторским.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Подтвердить происхождение обложки: в подписи она названа авторской, но поля source и rights_basis содержат лишь «Иллюстрация к материалу». Нужны реальный автор или иллюстратор, публичный источник и лицензия либо подтверждённое основание считать изображение авторским.",
+        "en": "Confirm the cover’s provenance: its caption calls it an author’s illustration, but the source and rights_basis fields only say “Illustration accompanying the text.” Identify the actual author or illustrator, public source and licence, or provide verified grounds for treating it as an original author illustration."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/666#pullrequestreview-6040273909"
+    },
+    {
+      "id": "litzmann-source-and-publication",
+      "question": "Задача дана по Литцману, но происхождение и авторство исходного курьёза не отделены от адаптации Мансура, а прошедшая дата 28.11.2025 не подтверждена публичной ссылкой. Уточнить источник и авторство исходного текста, обозначить адаптацию или редакцию Мансура и добавить URL фактической публикации либо исправить дату.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Задача дана по Литцману, но происхождение и авторство исходного курьёза не отделены от адаптации Мансура, а прошедшая дата 28.11.2025 не подтверждена публичной ссылкой. Уточнить источник и авторство исходного текста, обозначить адаптацию или редакцию Мансура и добавить URL фактической публикации либо исправить дату.",
+        "en": "The problem is presented via Lietzmann, but the origin and authorship of the source curiosity are not distinguished from Mansur’s adaptation, and the past date 28 November 2025 has no public evidence URL. Identify the source and authorship of the original text, distinguish Mansur’s adaptation or editing, and add the actual publication URL or correct the date."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/666#pullrequestreview-6040273909"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/666#pullrequestreview-6040273909",
+    "source_commit": "467f915f8db8857e555dac293d39b596d535edcf",
+    "source_review_id": 6040273909,
+    "approved_at": "2026-11-24T13:43:57Z",
+    "package_sha256": "fe036d78b93002631cfc293f585b645f31c939cdfd2ce1e32473595d03dda621"
+  }
+}

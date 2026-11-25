@@ -1,0 +1,46 @@
+{
+  "review_version": 1,
+  "article_id": "hm-473df24c030a",
+  "reconciliation": {
+    "text": "Complete long article with the announcement checked for unique information.",
+    "comments": "No comment-placement blocks in the full source texts.",
+    "images": "2 selected archival illustrations; source bytes retained.",
+    "original_date": "Owner requested the archival post date to be preserved in both editions.",
+    "digest": "Approved archival digest condensed and checked against the complete text.",
+    "source_status": "Archival source; publication link included only where supplied by the source."
+  },
+  "manual_changes": [
+    "Source title promoted to page title; hashtags moved to metadata; operational placement markers removed.",
+    "External URLs placed on descriptive words; archival attachments remain in the source archive.",
+    "English adaptation prepared from the complete Russian source."
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Согласовать абзацы об образовании и академической карьере Винера: MIT Press указывает докторскую степень в Гарварде в 18 лет и начало работы на математическом факультете MIT в 1919 году. Проверить упоминания Корнеллского университета, приглашения в MIT в 19 лет и профессорских должностей во всех перечисленных университетах. Вместе с этими абзацами обсудить оговорки “according to this account” и “the account describes” в EN-версии.",
+      "blocking": true,
+      "state": "accepted",
+      "sources": [
+        "https://mitpress.mit.edu/9780262535441/norbert-wienera-life-in-cybernetics/"
+      ],
+      "resolution": "Редактор одобрил текущую редакцию без изменений. https://github.com/Fuzzy-Technologies/history_math/pull/315#issuecomment-6635269786"
+    },
+    {
+      "id": "q2",
+      "question": "Проверить точность и атрибуцию трёх вводных цитат, формулировку о введении термина «кибернетика» в 1947 году и происхождение двух архивных иллюстраций.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Редактор одобрил текущую редакцию без изменений. https://github.com/Fuzzy-Technologies/history_math/pull/315#issuecomment-6635269786"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-04",
+    "package_sha256": "ab6c5f943b3a7968a2d702d72bc886dbb7b2663ed4637d3225a12e88662d481d",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/315#issuecomment-6635269786",
+    "source_commit": "8ee765d149e62ca893ab92d6c34328e948ac2ce4",
+    "source_comment_id": 6635269786,
+    "approved_at": "2026-11-04T15:54:16Z"
+  }
+}

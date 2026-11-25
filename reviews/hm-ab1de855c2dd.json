@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-ab1de855c2dd",
+  "questions": [
+    {
+      "id": "morozov-portrait-provenance",
+      "question": "Для исторического портрета Владимира Морозова (fig-2) указать исходное изображение, автора или хранилище, проверяемый публичный источник и правовое основание ретуши и публикации.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для исторического портрета Владимира Морозова (fig-2) указать исходное изображение, автора или хранилище, проверяемый публичный источник и правовое основание ретуши и публикации.",
+        "en": "For the historical portrait of Vladimir Morozov (fig-2), identify the original image, its creator or holding institution, a verifiable public source, and the legal basis for retouching and publication."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/592#pullrequestreview-6040148935"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/592#pullrequestreview-6040148935",
+    "source_commit": "c47b49c97ef129a9b9a33119d23f9e2c5b466402",
+    "source_review_id": 6040148935,
+    "approved_at": "2026-11-24T13:36:17Z",
+    "package_sha256": "e9c1d3c94c5781ce0f27f92bf78bb9221f7b4b9b212fa8c86a3f72522b9f11ea"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6cba31a9bae3",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Указать конкретный документальный источник для истории с рукописью Абеля и точно описать роль Коши в её задержке и последующем обнаружении.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Указать конкретный документальный источник для истории с рукописью Абеля и точно описать роль Коши в её задержке и последующем обнаружении.",
+        "en": "Provide a specific documentary source for the episode involving Abel’s manuscript and describe Cauchy’s role in its delay and later recovery precisely."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/338#pullrequestreview-6039985428"
+    },
+    {
+      "id": "q2",
+      "question": "Указать публично проверяемый первоисточник, автора и правовое основание воспроизведения портрета Огюстена Луи Коши.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Указать публично проверяемый первоисточник, автора и правовое основание воспроизведения портрета Огюстена Луи Коши.",
+        "en": "Provide a publicly verifiable original source, creator and legal basis for reproducing the portrait of Augustin-Louis Cauchy."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/338#pullrequestreview-6039985428"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/338#pullrequestreview-6039985428",
+    "source_commit": "66e07df8215e024cbb2f31a360992280ec7dcb69",
+    "source_review_id": 6039985428,
+    "approved_at": "2026-11-24T13:25:39Z",
+    "package_sha256": "4a0a885b520537a48f4a78c300cc3ab6cb5efa47620badd17b7c0e49cfc9cf43"
+  }
+}

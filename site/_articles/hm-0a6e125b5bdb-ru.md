@@ -1,0 +1,40 @@
+---
+schema_version: 1
+article_id: hm-0a6e125b5bdb
+source_work_id: hm-0a6e125b5bdb
+layout: article
+title: Как отличить физика от математика?
+authors:
+  - Мансур Гильмуллин
+author: Мансур Гильмуллин
+lang: ru
+translation_key: hm-0a6e125b5bdb
+description: 'Шутка о точности вопросов: физик спросит, зачем обходить столб, а математик — в какую сторону.'
+type: note
+series: Математики шутят
+tags:
+  - Математики шутят
+math: false
+status: published
+permalink: /ru/publications/hm-0a6e125b5bdb-ru/
+rights_basis: Мансур Гильмуллин
+original_publication:
+  outlet: Telegram · history_math
+  date: '2023-12-10'
+  preserve_date: true
+figures:
+- id: fig-1
+  path: /assets/images/hm-0a6e125b5bdb/figure-01.png
+  alt: Трое обсуждают следы и стрелки, огибающие каменную колонну.
+  caption: ''
+  source: Иллюстрация редакции журнала, созданная с помощью ИИ.
+  credit: ''
+  rights_basis: Создано для журнала по поручению Тимура Гильмуллина, 2026.
+cover_image: /assets/images/hm-0a6e125b5bdb/figure-01.png
+preview_image: /assets/images/hm-0a6e125b5bdb/figure-01.png
+---
+{% include article-figure.html id="fig-1" %}
+
+Всё просто: попросите его обойти столб кругом. Если спросит: «Зачем?» — значит, физик. Если спросит: «По или против часовой стрелки?» — значит, математик.
+
+Математики шутят, а если серьёзно: вы бы как обошли?

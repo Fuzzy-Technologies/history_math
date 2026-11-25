@@ -111,17 +111,18 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
     await page.goto(base + '/ru/search/?tag=%D0%A1%D0%A7%D0%95%D0%A2&q=ignored', {waitUntil: 'networkidle'});
     assert.equal(await page.locator('.search-result').count(), 1);
     assert.equal(new URL(page.url()).searchParams.has('q'), false);
-    await page.locator('#query').fill('радиусами');
+    await page.locator('#query').fill('прокрутки');
     await page.locator('#search-form button').click();
     await page.locator('#search-status').filter({hasText: 'Найдено публикаций:'}).waitFor();
     assert.equal(await page.locator('.search-result').count(), 1);
+    assert.equal(await page.locator('.search-result h3 a').getAttribute('href'), '/history_math/ru/publications/fixture-geometry/');
     assert.equal(new URL(page.url()).searchParams.has('tag'), false);
     await page.goto(base + '/ru/search/?tag=unknown', {waitUntil: 'networkidle'});
     assert.equal(await page.locator('.search-result').count(), 0);
     assert.match(await page.locator('#search-status').innerText(), /Ничего не найдено/);
     checked(`${width} ${theme}: card and result tags open exact-topic URLs; reload, Cyrillic folding, reset and ordinary text search work`);
 
-    await page.goto(base + '/ru/publications/demo-geometry/', {waitUntil: 'networkidle'});
+    await page.goto(base + '/ru/publications/fixture-geometry/', {waitUntil: 'networkidle'});
     const typography = await page.locator('.article-body').evaluate(node => {
       const style = getComputedStyle(node);
       return {size: parseFloat(style.fontSize), leading: parseFloat(style.lineHeight) / parseFloat(style.fontSize), link: parseFloat(getComputedStyle(node.querySelector(':scope > ul a')).fontSize)};

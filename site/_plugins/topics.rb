@@ -40,6 +40,19 @@ module HistoryMath
     def topic_labels(values)
       Topics.labels(values)
     end
+
+    def article_rubric_title(tags, rubrics, language)
+      locale = language == "ru" ? "ru" : "en"
+      article_keys = Array(tags).map { |tag| Topics.key(tag) }
+      rubrics.each do |rubric|
+        localized = rubric.fetch(locale)
+        rubric_tags = localized.fetch("tags") + localized.fetch("article_tags", [])
+        if rubric_tags.any? { |tag| article_keys.include?(Topics.key(tag)) }
+          return localized.fetch("article_title") { localized.fetch("title") }
+        end
+      end
+      nil
+    end
   end
 end
 

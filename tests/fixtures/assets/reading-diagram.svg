@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="240" viewBox="0 0 480 240">
+  <title>Reading test diagram</title>
+  <rect width="480" height="240" fill="#fff8e9"/>
+  <path d="M64 194L233 48l183 146zM233 48v146" fill="none" stroke="#553b2c" stroke-width="4"/>
+</svg>

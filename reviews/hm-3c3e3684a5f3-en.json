@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-3c3e3684a5f3-en",
+  "questions": [
+    {
+      "id": "storm-source-edition",
+      "question": "Please identify the eighteenth-century collection claimed in the title: author, title, edition and page. The source supplies the complete problem, solution and old mnemonic but no bibliographic reference.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Please identify the eighteenth-century collection claimed in the title: author, title, edition and page. The source supplies the complete problem, solution and old mnemonic but no bibliographic reference.",
+        "ru": "Уточнить, из какого задачника XVIII века взята задача, как заявлено в заголовке: автор, название, издание и страница. В посте есть полное условие, решение и старинная мнемоника, но библиографическая ссылка отсутствует."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/659#pullrequestreview-6040251989"
+    },
+    {
+      "id": "storm-fifteen-bales-each",
+      "question": "Clarify the statement: the solution assumes that each of the two merchants owned 15 bales, but the problem does not say so. Confirm the equal allocation from the source or state it explicitly in both versions.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Clarify the statement: the solution assumes that each of the two merchants owned 15 bales, but the problem does not say so. Confirm the equal allocation from the source or state it explicitly in both versions.",
+        "ru": "Уточнить условие: решение предполагает, что каждому из двух купцов принадлежало по 15 тюков, но это не сказано в условии. Подтвердить равное распределение по источнику либо явно добавить его в обе версии."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/659#pullrequestreview-6040251989"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/659#pullrequestreview-6040251989",
+    "source_commit": "9f174cc8e75731c709520b3377fadebb4502f8ea",
+    "source_review_id": 6040251989,
+    "approved_at": "2026-11-24T13:42:41Z",
+    "package_sha256": "4dc618334327874e8d4d406a1ca5a3c22213447cfdc3acc0f66445b84a8927e5"
+  }
+}

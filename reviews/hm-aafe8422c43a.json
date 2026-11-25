@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-aafe8422c43a",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Проверить условия утверждения о конечномерных коммутативных алгебрах без делителей нуля над действительными числами и два возможных результата.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Указаны необходимые условия конечномерности, коммутативности, ассоциативности и наличия единицы; вывод исправлен на две возможности — действительные или комплексные числа.",
+      "localizations": {
+        "source": "Проверить условия утверждения о конечномерных коммутативных алгебрах без делителей нуля над действительными числами и два возможных результата.",
+        "en": "Check the hypotheses in the statement about finite-dimensional commutative real algebras without zero divisors and the two possible conclusions."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Разделить места преподавания Вейерштрасса: прогимназия Дойч-Кроне (1842–1848) и гимназия Браунсберга (1848–1855); нынешняя фраза ошибочно объединяет их в одну прогимназию на четырнадцать лет.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Разделить места преподавания Вейерштрасса: прогимназия Дойч-Кроне (1842–1848) и гимназия Браунсберга (1848–1855); нынешняя фраза ошибочно объединяет их в одну прогимназию на четырнадцать лет.",
+        "en": "Separate Weierstrass’s teaching posts: the Progymnasium in Deutsch-Krone (1842–1848) and the Gymnasium in Braunsberg (1848–1855); the current sentence incorrectly combines them into one lower secondary school for fourteen years."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/351#pullrequestreview-6045721006"
+    },
+    {
+      "id": "q3",
+      "question": "Установить проверяемый первоисточник, автора или фотографа и лицензию либо подтверждённый public-domain status портрета Карла Вейерштрасса.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Установить проверяемый первоисточник, автора или фотографа и лицензию либо подтверждённый public-domain status портрета Карла Вейерштрасса.",
+        "en": "Identify a verifiable primary source, author or photographer, and a licence or confirmed public-domain status for the portrait of Karl Weierstrass."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/351#pullrequestreview-6045721006"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/351#pullrequestreview-6045721006",
+    "source_commit": "611988ece777f7a1f96433b8d7eae25fdec0b82e",
+    "source_review_id": 6045721006,
+    "approved_at": "2026-11-24T19:14:55Z",
+    "package_sha256": "2d569c87b6ab1f0b3fdf06b2e36688987e29e97d2a747d6a8cb9ff4ed70e6734"
+  }
+}

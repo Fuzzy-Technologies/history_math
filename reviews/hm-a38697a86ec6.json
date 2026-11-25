@@ -1,0 +1,23 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a38697a86ec6",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить «уже 50 лет» в материале с исходной датой 2025-04-28: первые учебники датированы сентябрём 1970, поэтому это, вероятно, сохранённая оценка 2020 года. Предлагается «используются с 1970 года» / “have been in use since 1970”, либо согласованный срок для исторического среза публикации. Название семинара в EN адаптировано по смыслу; подтвердить его.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Относительный срок заменён годом первого издания, указанным автором. Название семинара передано в английской версии по смыслу."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-07",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/425#pullrequestreview-5813515804",
+    "source_commit": "a25d82040e037218a42b221c9899c0906a5adf5f",
+    "source_review_id": 5813515804,
+    "approved_at": "2026-11-07T16:13:19Z",
+    "package_sha256": "3132f0b2d0d1191b702e1c6f02a8c191b6bda14a68d43378e7ebc43712d9334e"
+  }
+}

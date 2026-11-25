@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-9f71d1c66309-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the official name of the council of rectors in whose work Nuzhin participated.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the official name of the council of rectors in whose work Nuzhin participated.",
+        "ru": "Уточнить официальное наименование совета ректоров, в работе которого участвовал Нужин."
+      },
+      "resolution": "Because the sources disagree, the disputed official title was replaced by a neutral statement about coordinating the work of rectors."
+    },
+    {
+      "id": "q2",
+      "question": "Check attribution of the personal postscript and consistency of English names and the honorary title.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Check attribution of the personal postscript and consistency of English names and the honorary title.",
+        "ru": "Проверить атрибуцию личного послесловия и согласованность английских написаний имён и звания."
+      },
+      "resolution": "The postscript remains the author’s first-person statement in Mansur Gilmullin’s article; the English version is aligned with the Russian text in meaning and names."
+    },
+    {
+      "id": "q3",
+      "question": "Identify a public or institutional source, photographer or archive, and a valid legal basis for reproducing the portrait of Mikhail Nuzhin.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Identify a public or institutional source, photographer or archive, and a valid legal basis for reproducing the portrait of Mikhail Nuzhin.",
+        "ru": "Установить публичный или институциональный источник, фотографа или архив и действительное правовое основание воспроизведения портрета М. Т. Нужина."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/348#pullrequestreview-6040040516"
+    },
+    {
+      "id": "q4",
+      "question": "Reconcile the start of Nuzhin’s wartime service: the article says that he fought from September 1942, while Kazan Federal University’s biography places him in the 831st Artillery Regiment from June 1942; distinguish assignment to the unit from entry into combat and cite the evidence.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Reconcile the start of Nuzhin’s wartime service: the article says that he fought from September 1942, while Kazan Federal University’s biography places him in the 831st Artillery Regiment from June 1942; distinguish assignment to the unit from entry into combat and cite the evidence.",
+        "ru": "Сверить начало военной службы Нужина: статья указывает участие в боях с сентября 1942 года, а биография КФУ — службу в 831-м артиллерийском полку с июня 1942 года; разграничить назначение в часть и начало боевого участия и привести основание."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/348#pullrequestreview-6040040516"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/348#pullrequestreview-6040040516",
+    "source_commit": "72f82bc30179e1b31b4283fad846d67d402a2593",
+    "source_review_id": 6040040516,
+    "approved_at": "2026-11-24T13:29:08Z",
+    "package_sha256": "2d16478ac3908682b081f4ecf61ae6690cd156120d52f15c3ebc46d99c292b14"
+  }
+}

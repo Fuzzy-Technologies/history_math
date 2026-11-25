@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-bcb121b29ab7-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "The source directly links elliptic functions to the proof of Fermat’s Last Theorem. Clarify the distinction between elliptic functions and elliptic curves and agree precise wording for both editions.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "The source directly links elliptic functions to the proof of Fermat’s Last Theorem. Clarify the distinction between elliptic functions and elliptic curves and agree precise wording for both editions.",
+        "ru": "В исходнике эллиптические функции прямо связываются с доказательством Великой теоремы Ферма. Уточнить различие между эллиптическими функциями и эллиптическими кривыми и согласовать точную формулировку обеих версий."
+      },
+      "resolution": "Both editions distinguish elliptic functions from the elliptic curves used in [Wiles’s proof](https://annals.math.princeton.edu/1995/141-3/p01)."
+    },
+    {
+      "id": "q2",
+      "question": "Verify the 1825 conversion and name change, dates and categories of academy memberships, and the relationships with those listed as pupils.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the 1825 conversion and name change, dates and categories of academy memberships, and the relationships with those listed as pupils.",
+        "ru": "Сверить дату принятия лютеранства и смены имени 1825 года, даты и виды академического членства и характер отношений с перечисленными «учениками»."
+      },
+      "resolution": "The conversion and name change are now dated to 1825, and the 1829 full professorship is stated. Hermite, Liouville and Cayley are no longer described as Jacobi’s direct pupils; both editions refer instead to the influence of his lectures, correspondence and writings."
+    },
+    {
+      "id": "q3",
+      "question": "Clarify the attribution and priority of the change-of-variables method: the source’s simultaneous-with wording does not assert joint authorship.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Clarify the attribution and priority of the change-of-variables method: the source’s simultaneous-with wording does not assert joint authorship.",
+        "ru": "Уточнить атрибуцию и смысл приоритета метода замены переменных: исходное «одновременно с Остроградским» не утверждает совместного соавторства."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/372#pullrequestreview-6039952272"
+    },
+    {
+      "id": "q4",
+      "question": "The historical portrait of Jacobi is identified only as an illustration accompanying the text. Establish a verifiable public source, the image creator where known, its date, and a licence or other confirmed legal basis; synchronize the figure metadata in both editions.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "The historical portrait of Jacobi is identified only as an illustration accompanying the text. Establish a verifiable public source, the image creator where known, its date, and a licence or other confirmed legal basis; synchronize the figure metadata in both editions.",
+        "ru": "Для исторического портрета Якоби указано только «Иллюстрация к материалу». Установить проверяемый публичный первоисточник, автора изображения (если известен), дату и лицензию либо иное подтверждённое правовое основание; синхронизировать данные фигуры в RU/EN."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/372#pullrequestreview-6039952272"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/372#pullrequestreview-6039952272",
+    "source_commit": "29f76af7238b926a8871c10b3b5b3b3770eccb88",
+    "source_review_id": 6039952272,
+    "approved_at": "2026-11-24T13:23:22Z",
+    "package_sha256": "de92c57e17f8a13468504b49ecf33348c0e1f94fa398e0e52d6fe81e62a6b460"
+  }
+}

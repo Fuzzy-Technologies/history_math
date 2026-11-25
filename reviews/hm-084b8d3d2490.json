@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-084b8d3d2490",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Сверить полные даты обоих Всероссийских съездов преподавателей математики и роли Попруженко; в исходном тексте указаны Петербург 1911 года и Москва 1913 года.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Уточнены даты съездов и роли Попруженко: 27 декабря 1911 г. — 3 января 1912 г., товарищ председателя оргкомитета Первого съезда; 27 декабря 1913 г. — 3 января 1914 г., председатель Второго съезда.",
+      "localizations": {
+        "source": "Сверить полные даты обоих Всероссийских съездов преподавателей математики и роли Попруженко; в исходном тексте указаны Петербург 1911 года и Москва 1913 года.",
+        "en": "Verify the full dates of both All-Russian congresses of mathematics teachers and Popruzhenko’s roles; the source text gives St Petersburg in 1911 and Moscow in 1913."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить приоритет «первый отечественный учебник для средней школы» у «Начал анализа» и выходные данные советских изданий задачника 1936 и 1939 годов, включая редакторов посмертных изданий, если они указаны.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Уточнить приоритет «первый отечественный учебник для средней школы» у «Начал анализа» и выходные данные советских изданий задачника 1936 и 1939 годов, включая редакторов посмертных изданий, если они указаны.",
+        "en": "Clarify the claim that Elements of Analysis was the first Russian secondary-school textbook on the subject and verify the 1936 and 1939 Soviet problem-book editions, including posthumous editors if credited."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/409#pullrequestreview-6045728009"
+    },
+    {
+      "id": "q3",
+      "question": "Установить публичные первоисточники, фотографов или авторов и правовой статус двух исторических портретов М. Г. Попруженко; хранение в авторском архиве не подтверждает авторство или право воспроизведения.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Установить публичные первоисточники, фотографов или авторов и правовой статус двух исторических портретов М. Г. Попруженко; хранение в авторском архиве не подтверждает авторство или право воспроизведения.",
+        "en": "Identify the public sources, photographers or creators and legal status of the two historical portraits of Mikhail Popruzhenko; archive custody does not establish authorship or permission for reproduction."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/409#pullrequestreview-6045728009"
+    },
+    {
+      "id": "q4",
+      "question": "Сверить год окончания Михайловской артиллерийской академии и последующую службу: очерк и Энциклопедия современной Украины указывают 1881 год, тогда как В. Г. и В. П. Семёновы (2017, с. 134) — 1878 год с последующим прикомандированием к академии и командировкой на Петербургский орудийный завод до декабря 1881 года.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Сверить год окончания Михайловской артиллерийской академии и последующую службу: очерк и Энциклопедия современной Украины указывают 1881 год, тогда как В. Г. и В. П. Семёновы (2017, с. 134) — 1878 год с последующим прикомандированием к академии и командировкой на Петербургский орудийный завод до декабря 1881 года.",
+        "en": "Reconcile the year in which Popruzhenko graduated from the Mikhailovsky Artillery Academy and his subsequent service: the article and the Encyclopedia of Modern Ukraine give 1881, while V. G. and V. P. Semyonov (2017, p. 134) give 1878, followed by attachment to the Academy and a posting to the St Petersburg Gun Factory through December 1881."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/409#pullrequestreview-6045728009"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/409#pullrequestreview-6045728009",
+    "source_commit": "fe665296ffc31b8eaec2de4cfc58b9fa81372ce5",
+    "source_review_id": 6045728009,
+    "approved_at": "2026-11-24T19:15:24Z",
+    "package_sha256": "b59c9843f072b2d9616a97199e8a19008f79ec3ac0df3db692824df9ca462839"
+  }
+}

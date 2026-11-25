@@ -1,0 +1,36 @@
+{
+  "review_version": 1,
+  "article_id": "hm-66a0fd5af94d-en",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "Both source comment blocks and all three selected illustrations are retained in source order. The complete algebra quotation was checked against MacTutor; the Russian page preserves both language versions while the English page prints its exact original once. All quote, biography and author article URLs are attached to descriptive titles. No confirmed Telegram URL is available.",
+    "images": "3 archival illustrations inspected and included.",
+    "digest": "The approved digest was checked against the complete source, including all substantive comments, and condensed into one or two finished sentences."
+  },
+  "manual_changes": [
+    "Source title moved to shared heading; source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-05",
+    "package_sha256": "4c1a5c7de58688c72cf42b09d29724b1495bb91123356debb04eaf4c94873726",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/573#pullrequestreview-5791779794",
+    "source_commit": "40054a3f4899e2a8ac25627db88e80c37ea6380f",
+    "source_review_id": 5791779794,
+    "approved_at": "2026-11-05T20:41:03Z",
+    "delegated_by": "Tim55667757"
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-11-24",
+      "scope": "title only",
+      "authority": "Owner-approved journal title correction across the published Russian and English editions.",
+      "previous_title_sha256": "d9ae41a2daf2d46ef3ea48b6f37424d7a81f765eea399663496568ae50c8b8a8",
+      "title_sha256": "9bf51ebbf7deaddbcb0bdf9ca9ddd1db3496fd29a5cd99f394680375c5d60403",
+      "previous_package_sha256": "6f694850eb22954c85be6f6f401b03f1e7a33cb7a8d26a80df2d7f9c5202175e"
+    }
+  ]
+}

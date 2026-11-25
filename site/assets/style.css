@@ -2397,6 +2397,20 @@ input::placeholder {
 /* Keep inline math and its following prose punctuation on the same line. */
 .math-with-punctuation, .math-source[data-display="false"] { white-space: nowrap; }
 .math-source[data-display="false"] .katex { white-space: nowrap; }
+@media screen and (max-width: 760px) {
+  /* Keep a short equation with its punctuation. Longer equations can wrap
+     between KaTeX groups when they exceed the available line width. */
+  .prose .math-with-punctuation,
+  .prose :not(.math-with-punctuation) > .math-source[data-display="false"] {
+    display: inline-block;
+    max-inline-size: 100%;
+  }
+  .prose .math-with-punctuation,
+  .prose .math-source[data-display="false"],
+  .prose .math-source[data-display="false"] .katex {
+    white-space: normal;
+  }
+}
 .article-meta-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 .article-meta-row .article-meta { margin: 0; flex: 1 1 0; min-width: 0; }
 .article-meta-row .article-pdf { flex: none; margin-inline-start: auto; }

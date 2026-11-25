@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b5878e48fa2a",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Укажите проверяемый первоисточник исторического портрета Остроградского, художника или фотографа и лицензию либо подтверждённый статус общественного достояния; авторство текста не распространяется на стороннее изображение.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Укажите проверяемый первоисточник исторического портрета Остроградского, художника или фотографа и лицензию либо подтверждённый статус общественного достояния; авторство текста не распространяется на стороннее изображение.",
+        "en": "Provide a verifiable source for the historical portrait of Ostrogradsky, identify the artist or photographer, and document the licence or confirmed public-domain status; authorship of the text does not extend to a third-party image."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/340#pullrequestreview-6045719742"
+    },
+    {
+      "id": "divergence-theorem-chronology",
+      "question": "Уточнить хронологию формулы Остроградского–Гаусса: общая теорема представлена Парижской академии в 1826 году, повторно в 1827-м и в Петербурге в 1828-м, опубликована в 1831 году; одиночная дата «1828» вводит в заблуждение.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Уточнить хронологию формулы Остроградского–Гаусса: общая теорема представлена Парижской академии в 1826 году, повторно в 1827-м и в Петербурге в 1828-м, опубликована в 1831 году; одиночная дата «1828» вводит в заблуждение.",
+        "en": "Clarify the chronology of the Ostrogradsky–Gauss divergence theorem: the general theorem was presented to the Paris Academy in 1826, again in 1827 and in St Petersburg in 1828, and published in 1831; the single date “1828” is misleading."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/340#pullrequestreview-6045719742"
+    },
+    {
+      "id": "acceptance-control-context",
+      "question": "Уточнить, подтверждено ли практическое применение метода при проверке армейских поставок, или это только пример постановки задачи.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Исправлено: армейские поставки описаны как поясняющий пример, без неподтверждённого утверждения о внедрении. Источник: https://ru.djvu.online/file/w9J2Dw0MC6snS",
+      "localizations": {
+        "source": "Уточнить, подтверждено ли практическое применение метода при проверке армейских поставок, или это только пример постановки задачи.",
+        "en": "Clarify whether the method was actually used to inspect army supplies or whether these supplies were only an example framing the problem."
+      }
+    },
+    {
+      "id": "non-euclidean-comprehension-claim",
+      "question": "Заменить неподтверждённое утверждение о том, что Остроградский «не понял» идеи неевклидовой геометрии: источники позволяют документировать его неприятие и противодействие работам Лобачевского, но не внутреннее понимание.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Заменить неподтверждённое утверждение о том, что Остроградский «не понял» идеи неевклидовой геометрии: источники позволяют документировать его неприятие и противодействие работам Лобачевского, но не внутреннее понимание.",
+        "en": "Replace the unsupported claim that Ostrogradsky “did not understand” non-Euclidean geometry: sources can document his rejection of and opposition to Lobachevsky’s work, but not his internal comprehension."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/340#pullrequestreview-6045719742"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/340#pullrequestreview-6045719742",
+    "source_commit": "977e4cdc04964432ed1c76a9f5471f47f2551dbe",
+    "source_review_id": 6045719742,
+    "approved_at": "2026-11-24T19:14:50Z",
+    "package_sha256": "91bf7526aeacbe2ec7843e21de91030d93a426cecd6fbec2dc63025f2fe14722"
+  }
+}

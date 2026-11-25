@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2063552454cf",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "В исходнике год смерти Бэра расходился между заголовком (1932) и вступлением (1935).",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Год смерти унифицирован как 1932 по справочнику CTHS и материалам Университета Бургундии: https://cths.fr/an/prosopographie_liste.php?page=29&sc= ; https://math.ube.fr/wp-content/uploads/2025/06/PDF-Baire-SMF_.pdf .",
+      "localizations": {
+        "source": "В исходнике год смерти Бэра расходился между заголовком (1932) и вступлением (1935).",
+        "en": "The source gave Baire’s death year as 1932 in the heading and 1935 in the introductory list."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить историческую формулировку о возникновении теории функций, топологии и функционального анализа в начале XX века; согласовать английское название русского издания работы о разрывных функциях.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Уточнить историческую формулировку о возникновении теории функций, топологии и функционального анализа в начале XX века; согласовать английское название русского издания работы о разрывных функциях.",
+        "en": "Review the historical claim about the emergence of function theory, topology and functional analysis in the early twentieth century, and the English rendering of the Russian edition’s title."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/404#pullrequestreview-6039993480"
+    },
+    {
+      "id": "q3",
+      "question": "Установить автора или фотографа, дату, публичный первоисточник и правовой статус портрета Рене-Луи Бэра; хранение в авторском архиве и формулировка «Иллюстрация к материалу» не подтверждают право воспроизведения.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Установить автора или фотографа, дату, публичный первоисточник и правовой статус портрета Рене-Луи Бэра; хранение в авторском архиве и формулировка «Иллюстрация к материалу» не подтверждают право воспроизведения.",
+        "en": "Identify the creator or photographer, date, public source and legal status of the portrait of René-Louis Baire; archive custody and the phrase “Illustration accompanying the text” do not establish permission for reproduction."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/404#pullrequestreview-6039993480"
+    },
+    {
+      "id": "original-post-url",
+      "question": "Установить точный публичный URL исходной публикации Telegram · history_math от 18 июля 2024 года и синхронно указать его в `original_publication.url` и `source_url` обеих редакций.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Установить точный публичный URL исходной публикации Telegram · history_math от 18 июля 2024 года и синхронно указать его в `original_publication.url` и `source_url` обеих редакций.",
+        "en": "Establish the exact public URL of the original Telegram · history_math post dated 18 July 2024 and record it consistently in `original_publication.url` and `source_url` in both editions."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/404#pullrequestreview-6039993480"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/404#pullrequestreview-6039993480",
+    "source_commit": "16e06b9bfd8a3a0eb49ccec09fcf9d9d36a62798",
+    "source_review_id": 6039993480,
+    "approved_at": "2026-11-24T13:26:13Z",
+    "package_sha256": "5f716038e3f46ad5e6ae1858b1c0df74ea632430cf15c37c23b4c7637d4b394a"
+  }
+}

@@ -2,7 +2,7 @@ import {createHash} from 'node:crypto';
 import {getDefaultAutoSelectFamilyAttemptTimeout, setDefaultAutoSelectFamilyAttemptTimeout} from 'node:net';
 import {Agent, request as httpsRequest} from 'node:https';
 import {Readable} from 'node:stream';
-import {S3Client, HeadObjectCommand, PutObjectCommand} from '@aws-sdk/client-s3';
+import {S3Client, HeadObjectCommand, ListObjectsV2Command, PutObjectCommand} from '@aws-sdk/client-s3';
 
 // Allow remote TCP handshakes to complete before trying the next IP family.
 // Node LTS otherwise gives each non-final address candidate only 250 ms.
@@ -10,7 +10,8 @@ setDefaultAutoSelectFamilyAttemptTimeout(Math.max(10_000, getDefaultAutoSelectFa
 
 export const storage = Object.freeze({endpoint: 'https://storage.yandexcloud.kz', region: 'kz1',
   bucket: 'history-math-media-kz', base: 'https://storage.yandexcloud.kz/history-math-media-kz'});
-const publicAgent = new Agent({keepAlive: true, maxSockets: 6, family: 4, rejectUnauthorized: true});
+const mediaConcurrency = 12;
+const publicAgent = new Agent({keepAlive: true, maxSockets: mediaConcurrency, family: 4, rejectUnauthorized: true});
 
 // Public bucket checks remain anonymous and use the hostname for DNS and TLS.
 // Select IPv4 for this endpoint without changing GitHub or Pages transports.
@@ -72,7 +73,7 @@ export function configuredClient(env = process.env) {
       env.S3_BUCKET !== storage.bucket || env.S3_PUBLIC_BASE_URL !== storage.base ||
       !env.S3_ACCESS_KEY_ID || !env.S3_SECRET_ACCESS_KEY) throw new Error('Missing or invalid Kazakhstan storage configuration');
   return new S3Client({endpoint: storage.endpoint, region: storage.region, forcePathStyle: true, maxAttempts: 3,
-    requestHandler: {httpsAgent: {family: 4, keepAlive: true, maxSockets: 6, rejectUnauthorized: true},
+    requestHandler: {httpsAgent: {family: 4, keepAlive: true, maxSockets: mediaConcurrency, rejectUnauthorized: true},
       connectionTimeout: 30_000, requestTimeout: 120_000, throwOnRequestTimeout: true},
     requestChecksumCalculation: 'WHEN_REQUIRED', responseChecksumValidation: 'WHEN_REQUIRED',
     credentials: {accessKeyId: env.S3_ACCESS_KEY_ID, secretAccessKey: env.S3_SECRET_ACCESS_KEY}});
@@ -187,22 +188,49 @@ export async function uploadVerified(client, object, source, {request = mediaRea
   return verifyPublic(object, request);
 }
 
-export async function transfer(objects, client, source, {request = mediaRead, progress = () => {}} = {}) {
-  // Reject an invalid later item before any earlier object can be uploaded.
-  for (const object of objects) assertUploadBudget(object);
-  const receipt = [];
+export async function forEachMedia(objects, action) {
   let cursor = 0, failed = false;
   async function worker() {
     while (!failed && cursor < objects.length) {
       const object = objects[cursor++];
-      try {
-        receipt.push(await uploadVerified(client, object, () => source(object), {request}));
-        progress(receipt.length, objects.length);
-      } catch (error) { failed = true; throw error; }
+      try { await action(object); }
+      catch (error) { failed = true; throw error; }
     }
   }
-  const results = await Promise.allSettled(Array.from({length: Math.min(3, objects.length)}, worker));
+  const results = await Promise.allSettled(Array.from({length: Math.min(mediaConcurrency, objects.length)}, worker));
   const failure = results.find(result => result.status === 'rejected');
   if (failure) throw failure.reason;
+}
+
+// Listing saves a signed HEAD per existing object. A listed key must still
+// pass a full anonymous GET. A missing key follows the normal HEAD/PUT path.
+async function existingKeys(client, prefix) {
+  const keys = new Set(), seenTokens = new Set();
+  let token;
+  do {
+    const page = await client.send(new ListObjectsV2Command({Bucket: storage.bucket, Prefix: prefix, ContinuationToken: token}));
+    if (typeof page.IsTruncated !== 'boolean' || !Array.isArray(page.Contents ?? [])) throw new Error('Invalid S3 object list');
+    for (const {Key} of page.Contents ?? []) {
+      if (typeof Key !== 'string' || !Key.startsWith(prefix)) throw new Error('Invalid S3 object key');
+      keys.add(Key);
+    }
+    if (!page.IsTruncated) break;
+    token = page.NextContinuationToken;
+    if (!token || seenTokens.has(token)) throw new Error('Incomplete S3 object list');
+    seenTokens.add(token);
+  } while (true);
+  return keys;
+}
+
+export async function transfer(objects, client, source, {request = mediaRead, progress = () => {}, inventoryPrefix} = {}) {
+  for (const object of objects) assertUploadBudget(object);
+  const existing = inventoryPrefix === undefined ? new Set() : await existingKeys(client, inventoryPrefix);
+  const receipt = [];
+  await forEachMedia(objects, async object => {
+    const verified = existing.has(object.key) ? await verifyPublic(object, request) :
+      await uploadVerified(client, object, () => source(object), {request});
+    receipt.push(verified);
+    progress(receipt.length, objects.length);
+  });
   return receipt.sort((a, b) => a.key.localeCompare(b.key));
 }

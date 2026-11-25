@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-5e5ec6d7aad5",
+  "questions": [
+    {
+      "id": "continued-fractions",
+      "question": "Уточнить фразу о цепных дробях и задачах «типа Пелля»: приведённая биография MacTutor описывает занимательные задачи, перевод Диофанта и теорию чисел, но не подтверждает именно связь с уравнением Пелля. Требуется конкретный источник и указание вида неопределённых уравнений либо согласованное уточнение абзаца в обеих версиях. Авторская формулировка пока сохранена; источник для сверки: https://mathshistory.st-andrews.ac.uk/Biographies/Bachet/ .",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Уточнить фразу о цепных дробях и задачах «типа Пелля»: приведённая биография MacTutor описывает занимательные задачи, перевод Диофанта и теорию чисел, но не подтверждает именно связь с уравнением Пелля. Требуется конкретный источник и указание вида неопределённых уравнений либо согласованное уточнение абзаца в обеих версиях. Авторская формулировка пока сохранена; источник для сверки: https://mathshistory.st-andrews.ac.uk/Biographies/Bachet/ .",
+        "en": "Please provide a specific source for the link between Bachet’s continued-fraction methods and Pell-type equations, or agree a more precise description of the indeterminate equations concerned. The cited MacTutor biography does not establish that particular connection; the source wording remains pending review."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/472#pullrequestreview-6040067840"
+    },
+    {
+      "id": "portrait-attribution",
+      "question": "Для обоих исторических гравированных портретов указать фактического автора/издание либо публичную карточку и действительное правовое основание или лицензию; сведения синхронизировать в RU/EN.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для обоих исторических гравированных портретов указать фактического автора/издание либо публичную карточку и действительное правовое основание или лицензию; сведения синхронизировать в RU/EN.",
+        "en": "For both historical engraved portraits, identify the actual artist/publication or a public catalogue record and state the valid legal basis or licence; synchronize the information in RU/EN."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/472#pullrequestreview-6040067840"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/472#pullrequestreview-6040067840",
+    "source_commit": "0b02e7144591a8ca8431c1c16031006b6f7b77fc",
+    "source_review_id": 6040067840,
+    "approved_at": "2026-11-24T13:30:53Z",
+    "package_sha256": "63558991e8e64a5a895e1851186cd632322b22d51e22a9577a609fe5d8dd4833"
+  }
+}

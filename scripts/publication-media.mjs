@@ -225,7 +225,7 @@ async function main() {
   const client = configuredClient();
   try {
     const plan = await publicationPlan(process.cwd(), args[index + 1]);
-    const receipt = await transfer(plan.objects, client, sourceBytes, {progress: (done, total) => {
+    const receipt = await transfer(plan.objects, client, sourceBytes, {inventoryPrefix: '', progress: (done, total) => {
       if (done % 25 === 0 || done === total) console.log(`Publicly verified ${done}/${total} publication objects`);
     }});
     console.log(JSON.stringify(await finalizePublication(args[index + 1], plan, receipt, {pruneOutput: args.includes('--prune-output')})));

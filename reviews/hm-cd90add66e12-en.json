@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-cd90add66e12-en",
+  "questions": [
+    {
+      "id": "dudeney-loyd-collaboration",
+      "question": "The MacTutor university biography dates the beginning of Dudeney’s correspondence with Sam Loyd to 1893 and describes an exchange of puzzles, not joint authorship of most of Dudeney’s early work.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "The MacTutor university biography dates the beginning of Dudeney’s correspondence with Sam Loyd to 1893 and describes an exchange of puzzles, not joint authorship of most of Dudeney’s early work.",
+        "ru": "Университетская биография MacTutor датирует начало переписки Дьюдени с Сэмом Лойдом 1893 годом и описывает обмен задачами, а не совместное авторство большинства ранних головоломок."
+      },
+      "resolution": "The year and nature of the collaboration were corrected from the MacTutor biography."
+    },
+    {
+      "id": "dudeney-portrait-provenance",
+      "question": "The black-and-white portrait of Henry Dudeney (`fig-2`) needs its actual provenance, a verifiable public source and a confirmed rights status; a third-party historical portrait must not be described as material from the author’s archive.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "The black-and-white portrait of Henry Dudeney (`fig-2`) needs its actual provenance, a verifiable public source and a confirmed rights status; a third-party historical portrait must not be described as material from the author’s archive.",
+        "ru": "Для чёрно-белого портрета Генри Дьюдени (`fig-2`) нужны фактическое происхождение, проверяемый публичный источник и подтверждённый правовой статус; сторонний исторический портрет нельзя обозначать как материал авторского архива."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/547#pullrequestreview-6040088425"
+    },
+    {
+      "id": "dudeney-pope-quotation",
+      "question": "The article presents Pope’s line as “Chance is but direction which thou canst not see”, but *An Essay on Man*, Epistle I reads “All chance, direction, which thou canst not see;”. Restore the exact quotation or identify the current wording as an adaptation, and keep RU/EN wording consistent.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "The article presents Pope’s line as “Chance is but direction which thou canst not see”, but *An Essay on Man*, Epistle I reads “All chance, direction, which thou canst not see;”. Restore the exact quotation or identify the current wording as an adaptation, and keep RU/EN wording consistent.",
+        "ru": "В статье строка Поупа передана как «Случай — лишь направление, которого ты не можешь увидеть», однако в первой эпистоле «Опыта о человеке» стоит «All chance, direction, which thou canst not see;». Нужно либо восстановить точную цитату, либо обозначить текущую формулировку как адаптацию и согласовать RU/EN."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/547#pullrequestreview-6040088425"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/547#pullrequestreview-6040088425",
+    "source_commit": "3ee76ed371f9f417d098f0bbefc868c11c4470f8",
+    "source_review_id": 6040088425,
+    "approved_at": "2026-11-24T13:32:09Z",
+    "package_sha256": "d9abb16d9e8ba7af88dcf18c456318a6233d49b353b20744bfd8c5e18d798f13"
+  }
+}

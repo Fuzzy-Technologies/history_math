@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-37e510e21b2d-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify the distinction between Euler and Venn diagrams and the sources for the stated historical priorities and donated library.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Clarify the distinction between Euler and Venn diagrams and the sources for the stated historical priorities and donated library.",
+        "ru": "Уточнить разграничение диаграмм Эйлера и Венна и источники сведений об используемых исторических приоритетах и пожертвованной библиотеке."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/382#pullrequestreview-6045723149"
+    },
+    {
+      "id": "q2",
+      "question": "Verify the claim that *The Principles of Empirical or Inductive Logic* (1889) justifies inverse operations in Boolean logic; this description requires a precise source.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Verify the claim that *The Principles of Empirical or Inductive Logic* (1889) justifies inverse operations in Boolean logic; this description requires a precise source.",
+        "ru": "Сверить утверждение, что книга The Principles of Empirical or Inductive Logic (1889) обосновывает обратные операции в булевой логике; для этого содержательного описания нужен точный источник."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/382#pullrequestreview-6045723149"
+    },
+    {
+      "id": "q3",
+      "question": "The complete club puzzle is retained without an added solution; any answer requires separate editorial preparation. No confirmed Telegram-post URL is available.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "The complete club puzzle is retained without an added solution; any answer requires separate editorial preparation. No confirmed Telegram-post URL is available.",
+        "ru": "Условие клубной задачи перенесено полностью без добавленного решения; при необходимости ответ требует отдельной редакторской подготовки. Подтверждённой ссылки на Telegram-пост нет."
+      },
+      "resolution": "The puzzle is presented as a question for the reader. The article can stand with the problem as supplied."
+    },
+    {
+      "id": "q4",
+      "question": "Identify the actual public source, creator or photographer and legal status of the historical portrait of John Venn; separately confirm the authorship and basis for using diagram fig-2. The authorship basis of a separately created diagram must not be transferred to a third-party portrait.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Identify the actual public source, creator or photographer and legal status of the historical portrait of John Venn; separately confirm the authorship and basis for using diagram fig-2. The authorship basis of a separately created diagram must not be transferred to a third-party portrait.",
+        "ru": "Установить реальный публичный первоисточник, автора или фотографа и правовой статус исторического портрета Джона Венна; отдельно подтвердить авторство и основание использования диаграммы fig-2. Авторское основание отдельно созданной диаграммы нельзя переносить на сторонний портрет."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/382#pullrequestreview-6045723149"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/382#pullrequestreview-6045723149",
+    "source_commit": "bf649c2d71856f7072273e2b6fbfdfdd456f8995",
+    "source_review_id": 6045723149,
+    "approved_at": "2026-11-24T19:15:03Z",
+    "package_sha256": "c599cee15aee45c12ca7950c8386c05d33c160afb615dd5528b22c46e016d306"
+  }
+}

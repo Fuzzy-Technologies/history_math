@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-65b3b8987d79",
+  "questions": [
+    {
+      "id": "turing-anecdote-pages",
+      "question": "Уточнить страницы в Andrew Hodges «Alan Turing: The Enigma» для опыта с подвешенным яблоком, реплики об ошибке в программе Вселенной и записи после столкновения со столбом. Сайт автора https://www.turing.org.uk/book/ подтверждает книгу и её издания, но не эти конкретные эпизоды и цитаты. Они сохранены как авторский юмористический рассказ в RU/EN; решить, как обозначить их атрибуцию.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Уточнить страницы в Andrew Hodges «Alan Turing: The Enigma» для опыта с подвешенным яблоком, реплики об ошибке в программе Вселенной и записи после столкновения со столбом. Сайт автора https://www.turing.org.uk/book/ подтверждает книгу и её издания, но не эти конкретные эпизоды и цитаты. Они сохранены как авторский юмористический рассказ в RU/EN; решить, как обозначить их атрибуцию.",
+        "en": "Please identify the pages in Andrew Hodges’s Alan Turing: The Enigma for the suspended-apple experiment, the line about a bug in the universe’s program, and the notebook entry after the lamppost collision. The author’s website https://www.turing.org.uk/book/ confirms the book and its editions, but not these specific episodes and quotations. They remain in both versions as the author’s humorous narrative; please agree their attribution."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/567#pullrequestreview-6040114212"
+    },
+    {
+      "id": "turing-computation-model-universal-machine",
+      "question": "Уточнить первый абзац: в работе 1936 года Тьюринг предложил формальную модель вычисления, а в § 6 отдельно описал универсальную машину, способную имитировать любую заданную машину. Синхронизировать RU/EN так, чтобы модель вычислений и её универсальный вариант не сливались в одно утверждение. Источник: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Первый абзац исправлен в RU/EN: отдельно названы формальная модель вычисления и описанный в § 6 универсальный вариант машины.",
+      "localizations": {
+        "source": "Уточнить первый абзац: в работе 1936 года Тьюринг предложил формальную модель вычисления, а в § 6 отдельно описал универсальную машину, способную имитировать любую заданную машину. Синхронизировать RU/EN так, чтобы модель вычислений и её универсальный вариант не сливались в одно утверждение. Источник: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf",
+        "en": "Clarify the opening paragraph: in his 1936 paper Turing introduced a formal model of computation and, in § 6, separately described a universal machine capable of simulating any given machine. Keep RU/EN synchronized so the model of computation and its universal form are not collapsed into one claim. Source: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf"
+      }
+    },
+    {
+      "id": "turing-cover-provenance",
+      "question": "Для двухкадровой обложки с Тьюрингом и яблоком укажите автора или исходное произведение, правообладателя, проверяемый публичный источник и правовое основание использования. Указание на авторский архив подтверждает место хранения, но не авторство или лицензию.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для двухкадровой обложки с Тьюрингом и яблоком укажите автора или исходное произведение, правообладателя, проверяемый публичный источник и правовое основание использования. Указание на авторский архив подтверждает место хранения, но не авторство или лицензию.",
+        "en": "For the two-panel cover showing Turing and the apple, identify the creator or source work, the rightsholder, a verifiable public source, and the legal basis for use. A reference to the author’s archive establishes custody, not authorship or a licence."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/567#pullrequestreview-6040114212"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/567#pullrequestreview-6040114212",
+    "source_commit": "5fa4fe962a367b34ab403a072a25730e6faf0e7b",
+    "source_review_id": 6040114212,
+    "approved_at": "2026-11-24T13:33:55Z",
+    "package_sha256": "f971e84466757afc2b2bc7828d6cf4ba157b169e4e50fae6cdf47ea7fa29b538"
+  }
+}

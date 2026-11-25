@@ -1,0 +1,41 @@
+{
+  "review_version": 1,
+  "article_id": "hm-e03dc7c6ee06",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "No comment-placement blocks in the source post.",
+    "images": "1 archival illustrations inspected and included.",
+    "digest": "The approved digest was checked against the complete source and shortened to a complete card description that preserves the joke’s effect."
+  },
+  "manual_changes": [
+    "A descriptive publication heading is proposed; the complete untitled source opening remains in the body. Source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [
+    {
+      "id": "beard-russian-wordplay",
+      "question": "В EN сохранены все три формулы с исходными кириллическими обозначениями, включая букву «В» (Ve), и добавлены языковые пояснения цепочки борода → бор + ода → лес + стих → «лес стих» → безветрие → «без Ве» + «три e». Без этих русских созвучий буквальная английская «beard» не распадается на нужные части. Согласовать естественность глосс и сохранение комического эффекта; новую английскую формулу не подставлял.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Редакторская вычитка подтвердила, что пояснения последовательно раскрывают русские созвучия и сохраняют все формулы."
+    },
+    {
+      "id": "asymptomatics-wording",
+      "question": "В исходнике студент произносит «Асимптоматика здесь довольна проста». Уточнить, намеренная ли это оговорка или нужно «Асимптотика здесь довольно проста». RU оставлен как в архиве, EN сохраняет необычное asymptomatics; исправление нужно согласовать в обеих версиях.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Исправлены явная опечатка «довольна» и повелительная форма «выведите». Комическое «асимптоматика» сохранено, в EN поправлено согласование."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-05",
+    "package_sha256": "8b406a9905231e63fa469399fdc29609df426ed2603ae7aeda907cfd0b99bdd7",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/523#pullrequestreview-5786839930",
+    "source_commit": "468ba9a1cee11e83fcb394b8545ab5559fa555ff",
+    "source_review_id": 5786839930,
+    "approved_at": "2026-11-05T14:49:26Z",
+    "delegated_by": "Tim55667757"
+  }
+}

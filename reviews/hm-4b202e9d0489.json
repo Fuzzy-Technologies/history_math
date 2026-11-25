@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-4b202e9d0489",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить основание приоритета диссертации 1837 года как первой специализированной математической в России и историческое название присуждённой степени. В английской версии сохранено Doctor of Philosophy как название в исходнике, без приравнивания к современному PhD.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Уточнить основание приоритета диссертации 1837 года как первой специализированной математической в России и историческое название присуждённой степени. В английской версии сохранено Doctor of Philosophy как название в исходнике, без приравнивания к современному PhD.",
+        "en": "Verify the priority claim for the 1837 dissertation as Russia’s first specialized mathematics doctorate and the historical name of the degree. The English version retains Doctor of Philosophy from the source without equating it with a modern PhD."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/419#pullrequestreview-6045729532"
+    },
+    {
+      "id": "image-provenance-rights",
+      "question": "Для портрета Н. Е. Зернова указать точную публичную карточку, автора и действительное правовое основание/лицензию в RU/EN; нахождение файла в авторском архиве само по себе не устанавливает происхождение стороннего изображения.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для портрета Н. Е. Зернова указать точную публичную карточку, автора и действительное правовое основание/лицензию в RU/EN; нахождение файла в авторском архиве само по себе не устанавливает происхождение стороннего изображения.",
+        "en": "For N. E. Zernov’s portrait, provide the exact public catalogue record, creator, and valid legal basis/licence in RU/EN; the file’s presence in the author’s archive does not itself establish the provenance of a third-party image."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/419#pullrequestreview-6045729532"
+    },
+    {
+      "id": "birthplace-source",
+      "question": "Источники расходятся в месте рождения Н. Е. Зернова между Москвой и Ярославлем; снять категоричное утверждение и явно согласовать расхождение в RU/EN.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Источники расходятся в месте рождения Н. Е. Зернова между Москвой и Ярославлем; снять категоричное утверждение и явно согласовать расхождение в RU/EN.",
+        "en": "Sources disagree whether N. E. Zernov was born in Moscow or Yaroslavl; remove the categorical claim and explicitly reconcile the discrepancy in RU/EN."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/419#pullrequestreview-6045729532"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/419#pullrequestreview-6045729532",
+    "source_commit": "01311c74a79c1c9d42259f815c553afa93a4669b",
+    "source_review_id": 6045729532,
+    "approved_at": "2026-11-24T19:15:31Z",
+    "package_sha256": "40f4f6a40a69dc202098ba0a55022349827336e1735bb199bf12a8b6fa13d602"
+  }
+}

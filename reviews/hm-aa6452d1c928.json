@@ -1,0 +1,37 @@
+{
+  "review_version": 1,
+  "article_id": "hm-aa6452d1c928",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить характер должностей в Райхенау и Йене и различие между кафедрой философии и учёной степенью; сверить сведения об окончании Гёттингенского университета.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Сведения уточнены по биографиям MacTutor и Deutsche Biographie: учёба в Гёттингене, докторская степень в Йене (1799), преподавание в Райхенау, Арау и Йене. https://mathshistory.st-andrews.ac.uk/Biographies/Bartels/ ; https://www.deutsche-biographie.de/gnd116062665.html"
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить формулировку о попечительстве Румовского и точную хронологию приглашения Бартельса; сопоставить с опубликованной биографией Румовского в журнале.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Хронология основания Казанского университета, приглашения Румовским в 1807 году и начала работы в 1808 году согласована с биографией MacTutor. https://mathshistory.st-andrews.ac.uk/Biographies/Bartels/"
+    },
+    {
+      "id": "q3",
+      "question": "Подтвердить первоисточник портрета и основание его воспроизведения.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "Снята общая просьба о повторной сверке. Отдельного расхождения по иллюстрации не выявлено."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-07",
+    "package_sha256": "bc187a8fe430eb8fc3dd2ebbdcc8afd5a6581dc9bb0d844237b6d6e322b16280",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/361#pullrequestreview-5810008349",
+    "source_commit": "a550f0f9685c45d3806a83ba1c0ae20faa0472b7",
+    "source_review_id": 5810008349,
+    "approved_at": "2026-11-07T04:12:19Z"
+  }
+}

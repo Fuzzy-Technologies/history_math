@@ -2,6 +2,7 @@
 
 require "minitest/autorun"
 require "jekyll"
+require_relative "fixture_image_revision"
 require "tmpdir"
 require "fileutils"
 require "json"
@@ -45,15 +46,32 @@ class ArticleDetailsTest < Minitest::Test
     end
   end
 
+  def test_rendered_article_links_use_the_edition_language_and_preserve_surrounding_markup
+    filter = Object.new.extend(HistoryMath::ExternalUrls)
+    url = "https://history-math.blogspot.com/2012/09/blog-post_3874.html?m=1&amp;hl=de#archive"
+    input = %Q{<a title='example href="fake" >' href="#{url}"><em>Классики как люди</em></a>}
+    untouched = %Q{<!-- #{input} --><pre>&lt;a href="example"&gt;</pre><script>const example = '#{input}';</script><a data-href="#{url}" href="/local/">Local</a>}
+    %w[ru en].each do |lang|
+      expected = input.sub("hl=de", "hl=#{lang}") + untouched
+      assert_equal expected, filter.article_link_languages(input + untouched, lang)
+      assert_equal expected, filter.article_link_languages(expected, lang)
+    end
+    markdown = Kramdown::Document.new("[The archive](https://history-math.blogspot.com/2012/09/blog-post_3874.html)").to_html
+    assert_includes filter.article_link_languages(markdown, "en"), 'blog-post_3874.html?hl=en">The archive</a>'
+  end
+
   def with_site
     Dir.mktmpdir("history-math-details") do |root|
       source = File.join(root, "site")
       FileUtils.cp_r(File.expand_path("../site", __dir__), source)
       FileUtils.cp_r(File.expand_path("../schemas", __dir__), File.join(root, "schemas"))
       FileUtils.cp_r(File.expand_path("../reviews", __dir__), File.join(root, "reviews"))
+      asset_directory = File.join(source, "assets/images/example")
+      FileUtils.mkdir_p(asset_directory)
+      FileUtils.cp(File.expand_path("fixtures/assets/reading-diagram.svg", __dir__), asset_directory)
       Dir.glob(File.expand_path("fixtures/articles/*.md", __dir__)).each { |file| FileUtils.cp(file, File.join(source, "_articles")) }
       config = Jekyll.configuration("config" => %w[_config.yml _config.reference.yml].map { |file| File.expand_path("../#{file}", __dir__) },
-        "source" => source, "destination" => File.join(root, "output"), "quiet" => true)
+        "source" => source, "image_source_revision" => FixtureImageRevision.read, "destination" => File.join(root, "output"), "quiet" => true)
       yield source, config
     end
   end
@@ -93,7 +111,7 @@ class ArticleDetailsTest < Minitest::Test
       assert_includes en, "data-citation-access>Mon. D, YYYY</span>"
       refute_includes en, "APA"
       refute_match(/ISSN|DOI|Vol\./, ru + en)
-      demo = File.read(File.join(site.dest, "ru/publications/demo-geometry/index.html"))
+      demo = File.read(File.join(site.dest, "ru/publications/fixture-geometry/index.html"))
       refute_includes demo, "data-article-citation"
       destination = File.expand_path("../test-results/details-fixture", __dir__)
       FileUtils.rm_rf(destination)

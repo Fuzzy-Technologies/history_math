@@ -1,0 +1,50 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0a9964826cb3-en",
+  "questions": [
+    {
+      "id": "missing-humor-cover",
+      "question": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication.",
+        "ru": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку."
+      },
+      "resolution": "Both editions include the editorially approved cover. https://github.com/Fuzzy-Technologies/history_math/pull/518#pullrequestreview-6045743927"
+    },
+    {
+      "id": "cauchy-anecdote-details",
+      "question": "Clarify the pupil’s identity, the setting and the theorem in the Cauchy anecdote.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify the pupil’s identity, the setting and the theorem in the Cauchy anecdote.",
+        "ru": "Уточнить личность ученика, место и содержание теоремы в анекдоте о Коши."
+      },
+      "resolution": "The Académie française speech identifies the Duke of Bordeaux, Prague around 1833, and the theorem about an elliptical section of a cone.",
+      "evidence_url": "https://www.academie-francaise.fr/reponse-au-discours-de-reception-de-emile-picard"
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Provide a public link to the original publication confirming the date 30 June 2024; the address must not be guessed.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Provide a public link to the original publication confirming the date 30 June 2024; the address must not be guessed.",
+        "ru": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 30.06.2024; адрес нельзя восстанавливать предположительно."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/518#pullrequestreview-6045743927"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/518#pullrequestreview-6045743927",
+    "source_commit": "a917f3c96f4082332914d61805a9886ee2263f0c",
+    "source_review_id": 6045743927,
+    "approved_at": "2026-11-24T19:16:33Z",
+    "package_sha256": "15e9a435998f84f7b731704629c0a9378dab77e95a05f220da3967a6dc91bb54"
+  }
+}

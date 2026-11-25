@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-85681830b91c-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Resolve Desargues’s birth date: the article gives 21 February 1591, as in the Dictionary of Scientific Biography (https://mathshistory.st-andrews.ac.uk/DSB/Desargues.pdf), whereas the current MacTutor biography, citing René Taton’s 1962 research, gives 2 March 1591 (https://mathshistory.st-andrews.ac.uk/Biographies/Desargues/). Select a date or briefly acknowledge the discrepancy in both editions.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Resolve Desargues’s birth date: the article gives 21 February 1591, as in the Dictionary of Scientific Biography (https://mathshistory.st-andrews.ac.uk/DSB/Desargues.pdf), whereas the current MacTutor biography, citing René Taton’s 1962 research, gives 2 March 1591 (https://mathshistory.st-andrews.ac.uk/Biographies/Desargues/). Select a date or briefly acknowledge the discrepancy in both editions.",
+        "ru": "Согласовать дату рождения Дезарга: статья даёт 21 февраля 1591 года, как в Dictionary of Scientific Biography (https://mathshistory.st-andrews.ac.uk/DSB/Desargues.pdf), тогда как современная биография MacTutor со ссылкой на исследование Рене Татона 1962 года указывает 2 марта 1591 года (https://mathshistory.st-andrews.ac.uk/Biographies/Desargues/). Выбрать дату либо кратко оговорить расхождение в RU/EN."
+      },
+      "resolution": "MacTutor confirms 21 February 1591 as the birth date and 2 March as the baptism date; the article text remains unchanged."
+    },
+    {
+      "id": "q2",
+      "question": "For fig-1 and fig-2, credit the artwork to Théobald Chartran and identify the 1886–1889 Sorbonne mural depicting the supposed 1643 scene; retain William Sidnam’s photographer credit, add the authoritative source https://nubis.bis-sorbonne.fr/web/expo/s/le-discours-de-la-methode/page/74_genese-et-contexte.html, and establish a licence or permission for the exact photographic bytes being published.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "For fig-1 and fig-2, credit the artwork to Théobald Chartran and identify the 1886–1889 Sorbonne mural depicting the supposed 1643 scene; retain William Sidnam’s photographer credit, add the authoritative source https://nubis.bis-sorbonne.fr/web/expo/s/le-discours-de-la-methode/page/74_genese-et-contexte.html, and establish a licence or permission for the exact photographic bytes being published.",
+        "ru": "Для fig-1 и fig-2 укажите автора произведения Теобальда Шартрана и идентифицируйте роспись Сорбонны 1886–1889 годов, изображающую предполагаемую сцену 1643 года; сохраните кредит фотографа Уильяма Сиднама, добавьте авторитетный источник https://nubis.bis-sorbonne.fr/web/expo/s/le-discours-de-la-methode/page/74_genese-et-contexte.html и подтвердите лицензию или разрешение именно для публикуемых фотографических байтов."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/438#pullrequestreview-6045732332"
+    },
+    {
+      "id": "q3",
+      "question": "Remove or qualify the unsupported claims that Desargues received a good education and served as a military engineer. Public biographies do not establish his education, and his participation at La Rochelle is reported only in a later unverified account; retain only documented engineering work unless a primary source is supplied.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Remove or qualify the unsupported claims that Desargues received a good education and served as a military engineer. Public biographies do not establish his education, and his participation at La Rochelle is reported only in a later unverified account; retain only documented engineering work unless a primary source is supplied.",
+        "ru": "Убрать или оговорить неподтверждённые утверждения о хорошем образовании Дезарга и службе военным инженером. Публичные биографии не устанавливают его образование, а участие при Ла-Рошели известно лишь из позднего непроверенного сообщения; без первичного источника оставить только документированные инженерные работы."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/438#pullrequestreview-6045732332"
+    },
+    {
+      "id": "q4",
+      "question": "Clarify Pascal’s 1640 Essay on Conics: it states the hexagram lemma and acknowledges Desargues’s influence, but does not provide a proof. Do not say that Pascal was proving the mystic hexagon there without a source; align both editions.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Clarify Pascal’s 1640 Essay on Conics: it states the hexagram lemma and acknowledges Desargues’s influence, but does not provide a proof. Do not say that Pascal was proving the mystic hexagon there without a source; align both editions.",
+        "ru": "Уточнить описание «Опыта о конических сечениях» Паскаля 1640 года: в нём сформулирована лемма о шестиугольнике и признано влияние Дезарга, но доказательство не приведено. Без источника не утверждать, что Паскаль там доказывал «мистический шестиугольник»; согласовать RU/EN."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/438#pullrequestreview-6045732332"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/438#pullrequestreview-6045732332",
+    "source_commit": "de12b965f9c49116d810e6d9d4b40ba43d7eda18",
+    "source_review_id": 6045732332,
+    "approved_at": "2026-11-24T19:15:43Z",
+    "package_sha256": "6a6d455e41c118368cbc9fe3becaf30b167a080956661689a194f24db639ed2e"
+  }
+}

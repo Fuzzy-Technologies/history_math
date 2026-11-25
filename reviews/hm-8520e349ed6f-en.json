@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8520e349ed6f-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Identify the institution referred to as reorganized in 1823: the preceding paragraph concerns the Main Pedagogical Institute reopened in 1829, while the following history concerns the gymnasium. Agree both editions after checking institutional history.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Identify the institution referred to as reorganized in 1823: the preceding paragraph concerns the Main Pedagogical Institute reopened in 1829, while the following history concerns the gymnasium. Agree both editions after checking institutional history.",
+        "ru": "Уточнить, какое учреждение имеется в виду в абзаце «С преобразованием его в 1823 году»: предыдущий абзац относится к возобновлённому в 1829 году Главному педагогическому институту, тогда как далее речь о гимназии. Согласовать RU/EN после проверки истории учреждений."
+      },
+      "resolution": "The St Petersburg Central State Historical Archive confirms that the Teacher Training Institute was combined with a gymnasium in 1823 and that the name Third St Petersburg Gymnasium was adopted in 1830."
+    },
+    {
+      "id": "q2",
+      "question": "Verify the scope of the priority claim for Busse’s model curriculum: the article calls it the first model mathematics curriculum. Clarify whether this means the first common curriculum for all Russian gymnasiums.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the scope of the priority claim for Busse’s model curriculum: the article calls it the first model mathematics curriculum. Clarify whether this means the first common curriculum for all Russian gymnasiums.",
+        "ru": "Проверить рамки приоритета первой примерной программы Буссе: в статье она названа первой примерной программой по математике. Уточнить, имеется ли в виду первая общая программа для всех российских гимназий."
+      },
+      "resolution": "The absolute priority claim was removed: both editions now say that Busse drew up a model mathematics curriculum, without calling it the first."
+    },
+    {
+      "id": "q3",
+      "question": "Identify the public source, creator (if known) and legal status of the portrait of Fyodor Busse. “Illustration accompanying the text” does not establish the image’s provenance or permission for reproduction.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Identify the public source, creator (if known) and legal status of the portrait of Fyodor Busse. “Illustration accompanying the text” does not establish the image’s provenance or permission for reproduction.",
+        "ru": "Установить публичный первоисточник, автора (если известен) и правовой статус портрета Фёдора Буссе. Формулировка «Иллюстрация к материалу» не подтверждает происхождение изображения или право его воспроизведения."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/381#pullrequestreview-6045722867"
+    },
+    {
+      "id": "posthumous-1874-edition",
+      "question": "Verify the Busse book listed as 1874 although the author died in 1859: establish whether this is a posthumous edition or reprint and give the original year and edition.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Verify the Busse book listed as 1874 although the author died in 1859: establish whether this is a posthumous edition or reprint and give the original year and edition.",
+        "ru": "Проверить книгу Буссе, указанную в перечне трудов под 1874 годом при смерти автора в 1859 году: установить, является ли это посмертным изданием или переизданием, и привести исходный год и редакцию."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/381#pullrequestreview-6045722867"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/381#pullrequestreview-6045722867",
+    "source_commit": "e61b4751af0f0c8018eda44e106cc97d4f576d7e",
+    "source_review_id": 6045722867,
+    "approved_at": "2026-11-24T19:15:02Z",
+    "package_sha256": "7ef0267f9488bd887d5fcb3f5d6b7861c782bf199620e083adab7d9de7762ba9"
+  }
+}

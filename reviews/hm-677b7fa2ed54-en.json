@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-677b7fa2ed54-en",
+  "questions": [
+    {
+      "id": "humor-cover-image",
+      "question": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Add a cover image for the Mathematicians Joke card: the current package contains no illustration.",
+        "ru": "Добавить обложку для карточки рубрики «Математики шутят»: в текущем пакете иллюстрации нет."
+      },
+      "resolution": "Both editions include the editorially approved cover. https://github.com/Fuzzy-Technologies/history_math/pull/508#pullrequestreview-6045741498"
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Provide a public link to the original publication and confirm its date; do not change the date without a primary source, and do not guess the address.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Provide a public link to the original publication and confirm its date; do not change the date without a primary source, and do not guess the address.",
+        "ru": "Указать публичную ссылку на исходную публикацию и подтвердить её дату; дату не менять без первичного источника, адрес нельзя восстанавливать предположительно."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/508#pullrequestreview-6045741498"
+    },
+    {
+      "id": "ampere-door-note-source",
+      "question": "Provide a printed or archival source for the anecdote about the note on Ampère’s door; until verified, label it as an unconfirmed retelling.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Provide a printed or archival source for the anecdote about the note on Ampère’s door; until verified, label it as an unconfirmed retelling.",
+        "ru": "Указать печатный или архивный источник для анекдота о записке на двери Ампера; до подтверждения обозначить сюжет как неподтверждённый пересказ."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/508#pullrequestreview-6045741498"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/508#pullrequestreview-6045741498",
+    "source_commit": "4812ebd31ed924b7765bfa8d56ad86cdde930634",
+    "source_review_id": 6045741498,
+    "approved_at": "2026-11-24T19:16:22Z",
+    "package_sha256": "5ec4ba0799e336fd516fcdb7d4bdcf7463af9283e35075718e6223d8a986a34c"
+  }
+}

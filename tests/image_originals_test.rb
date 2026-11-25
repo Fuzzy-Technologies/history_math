@@ -5,6 +5,7 @@ require "jekyll"
 require "tmpdir"
 require "fileutils"
 require "base64"
+require_relative "fixture_image_revision"
 require_relative "../site/_plugins/image_assets"
 
 class ImageOriginalsTest < Minitest::Test
@@ -13,6 +14,25 @@ class ImageOriginalsTest < Minitest::Test
   ORIGINAL_PATH = "/assets/images/hm-tt-abc/diagram-01.png"
   PREVIEW_PATH = "/assets/images/previews/hm-tt-abc/diagram-01.png-1.png"
   PNG = Base64.decode64("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+j/pkAAAAASUVORK5CYII=")
+
+  def test_visible_credit_preserves_explicit_labels_and_formats_the_source_fallback
+    filter = Object.new.extend(HistoryMath::ImageAssets)
+    figure = {"source" => "Archive. Shelf 12."}
+    assert_equal "Archive. Shelf 12", filter.figure_credit(figure)
+    assert_equal "Archive. Shelf 12.", figure.fetch("source")
+    assert_equal "A. B.", filter.figure_credit(figure.merge("credit" => "A. B."))
+    assert_equal "", filter.figure_credit(figure.merge("credit" => ""))
+  end
+
+  def test_caption_omits_the_public_domain_mark_and_keeps_other_recorded_license_labels
+    filter = Object.new.extend(HistoryMath::ImageAssets)
+    mark = {"license" => "Public Domain Mark 1.0", "license_url" => "https://creativecommons.org/publicdomain/mark/1.0/"}.freeze
+    assert_nil filter.figure_caption_license(mark)
+    assert_equal "Public Domain Mark 1.0", filter.figure_caption_license({"license" => mark.fetch("license")})
+    license = {"license" => "CC BY-SA 3.0", "license_url" => "https://creativecommons.org/licenses/by-sa/3.0/"}
+    assert_equal "CC BY-SA 3.0", filter.figure_caption_license(license)
+    assert_nil filter.figure_caption_license({})
+  end
 
   def test_migration_originals_use_immutable_git_revision_only_in_production
     site = Site.new({"image_source_revision" => "a" * 40}, ".", "/history_math", {"image_assets" => {}})
@@ -24,6 +44,16 @@ class ImageOriginalsTest < Minitest::Test
     assert_equal "/history_math/assets/images/pilot.png", HistoryMath.original_image_url(site, "/assets/images/pilot.png")
     site.config["image_source_revision"] = "master"
     assert_raises(Jekyll::Errors::FatalException) { HistoryMath.original_image_url(site, path) }
+  end
+
+  def test_an_isolated_fixture_uses_the_source_checkout_revision
+    Dir.mktmpdir do |source|
+      revision = FixtureImageRevision.read
+      site = Site.new({"image_source_revision" => revision}, source, "", {"image_assets" => {}})
+      assert_match(/\A[a-f0-9]{40}\z/, revision)
+      assert_equal "https://raw.githubusercontent.com/Fuzzy-Technologies/history_math/#{revision}/site#{ORIGINAL_PATH}",
+        HistoryMath.original_image_url(site, ORIGINAL_PATH)
+    end
   end
 
   def test_only_migrated_originals_are_excluded_from_static_delivery

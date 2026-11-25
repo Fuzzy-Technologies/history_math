@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-3064e8995945-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Confirm the sources of the opening quotation and the 1946 poem excerpt; review the sense-based translation of all six lines in two stanzas.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Confirm the sources of the opening quotation and the 1946 poem excerpt; review the sense-based translation of all six lines in two stanzas.",
+        "ru": "Подтвердить источник вводной цитаты и стихотворного фрагмента 1946 года; согласовать смысловой перевод шести строк с сохранением двух строф."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/383#pullrequestreview-6045723412"
+    },
+    {
+      "id": "q2",
+      "question": "Verify the specific theorem on dyadic spaces, the formulation of ultrafinitism, the dissertation supervision and the precise Boston University title.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Verify the specific theorem on dyadic spaces, the formulation of ultrafinitism, the dissertation supervision and the precise Boston University title.",
+        "ru": "Сверить конкретную теорему о диадических пространствах и формулировку ультрафинитизма, научное руководство и точный статус в Бостонском университете."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/383#pullrequestreview-6045723412"
+    },
+    {
+      "id": "q3",
+      "question": "Provide specific historical sources for the persecution chronology, total time in confinement and the priority claim for the first post-war public protest demonstration.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Provide specific historical sources for the persecution chronology, total time in confinement and the priority claim for the first post-war public protest demonstration.",
+        "ru": "Для хронологии репрессий, общего срока заключения и утверждения о первой послевоенной демонстрации нужны конкретные исторические источники и уточнение рамок приоритета."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/383#pullrequestreview-6045723412"
+    },
+    {
+      "id": "q4",
+      "question": "Identify the public source, photographer or creator and legal status of the portrait of Alexander Yesenin-Volpin. Storage in the author’s archive and the phrase “Illustration accompanying the text” do not establish permission for reproduction.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Identify the public source, photographer or creator and legal status of the portrait of Alexander Yesenin-Volpin. Storage in the author’s archive and the phrase “Illustration accompanying the text” do not establish permission for reproduction.",
+        "ru": "Установить публичный первоисточник, фотографа или автора и правовой статус портрета Александра Есенина-Вольпина. Хранение изображения в авторском архиве и формулировка «Иллюстрация к материалу» не подтверждают право воспроизведения."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/383#pullrequestreview-6045723412"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/383#pullrequestreview-6045723412",
+    "source_commit": "a11116322c218022e9fc41f3d9f5dd25e5183731",
+    "source_review_id": 6045723412,
+    "approved_at": "2026-11-24T19:15:04Z",
+    "package_sha256": "3b968fac10dd1e99c516119ebe3a0080f64048af547d898c2f73657601e87611"
+  }
+}

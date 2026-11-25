@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-93a2fef31b76",
+  "questions": [
+    {
+      "id": "q2",
+      "question": "Для портрета В. В. Морозова и групповой фотографии Н. Г. Чеботарёва с учениками установить публичный источник, фотографа или учреждение и действительное правовое основание использования.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для портрета В. В. Морозова и групповой фотографии Н. Г. Чеботарёва с учениками установить публичный источник, фотографа или учреждение и действительное правовое основание использования.",
+        "en": "For the portrait of V. V. Morozov and the group photograph of N. G. Chebotaryov with his students, establish a public source, the photographer or institution, and a valid rights basis for use."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/339#pullrequestreview-6039918995"
+    },
+    {
+      "id": "q1",
+      "question": "Согласовать формулировки о простых и полупростых группах Ли в описании классификации Морозова и подтвердить связь заявленного интереса к классификации разрешимых и нильпотентных алгебр Ли с приведёнными далее работами о полупростых алгебрах.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Согласовать формулировки о простых и полупростых группах Ли в описании классификации Морозова и подтвердить связь заявленного интереса к классификации разрешимых и нильпотентных алгебр Ли с приведёнными далее работами о полупростых алгебрах.",
+        "en": "Reconcile the references to simple and semisimple Lie groups in the description of Morozov’s classification, and substantiate the link between the stated interest in classifying solvable and nilpotent Lie algebras and the subsequently cited papers on semisimple Lie algebras."
+      },
+      "resolution": "Формулировки разделены и уточнены по официальной биографии КФУ: https://kpfu.ru/math/history/vladimir-vladimirovich-morozov"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/339#pullrequestreview-6039918995",
+    "source_commit": "74c1a3ea25288db5b0f28129bfd8a74b6b867b8c",
+    "source_review_id": 6039918995,
+    "approved_at": "2026-11-24T13:21:00Z",
+    "package_sha256": "083407227c21aaef0a9084020d6eb607e0dd0e2bbf446dac9b2e11585e5ece0d"
+  }
+}

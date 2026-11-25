@@ -4,7 +4,7 @@ import {pathToFileURL} from 'node:url';
 import {HeadObjectCommand} from '@aws-sdk/client-s3';
 import {imageInventory} from './external-originals.mjs';
 import {imageObjects, uniqueObjects, sourceBytes, localBytes} from './publication-media.mjs';
-import {storage, mediaObject, assertBytes, sha256, configuredClient, responseBytes, transfer, readWithRetries, mediaRead} from './s3-media.mjs';
+import {storage, mediaObject, assertBytes, sha256, configuredClient, responseBytes, transfer, readWithRetries, mediaRead, forEachMedia} from './s3-media.mjs';
 import {publicationReplacements} from './image-publication.mjs';
 
 const repository = 'Fuzzy-Technologies/history_math';
@@ -127,7 +127,7 @@ export async function preflightMedia({root, origin, baseurl, client, request = m
   const images = imageObjects(imageInventory(root), path => ({file: resolve(root, 'site', '.' + path)}), publicationReplacements(root), root);
   for (const image of images.filter(image => !image.external_url)) assertBytes(image.original_object, await localBytes(resolve(root, 'site'), image.path));
   const missing = [];
-  for (const object of uniqueObjects(images.map(image => image.object))) {
+  await forEachMedia(uniqueObjects(images.map(image => image.object)), async object => {
     try {
       const head = await client.send(new HeadObjectCommand({Bucket: storage.bucket, Key: object.key}));
       if (head.ContentLength !== object.bytes || head.ContentType?.split(';')[0] !== object.content_type || head.Metadata?.sha256 !== object.sha256) throw new Error('Changed S3 preflight identity');
@@ -135,7 +135,7 @@ export async function preflightMedia({root, origin, baseurl, client, request = m
       if (error.$metadata?.httpStatusCode !== 404) throw error;
       missing.push(object);
     }
-  }
+  });
   const originals = await transfer(missing, client,
     object => sourceBytes(object, request), {request, progress});
   return {version: 1, objects: [...copied.objects, ...originals], summary: {...copied.summary,

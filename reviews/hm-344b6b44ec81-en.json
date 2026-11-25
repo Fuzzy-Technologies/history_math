@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-344b6b44ec81-en",
+  "questions": [
+    {
+      "id": "joke-cover",
+      "question": "The package has no actual cover for the joke card: figures is empty and the image manifest is empty. Add a suitable cover and reference it in both editions without changing the existing captions or text.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "The package has no actual cover for the joke card: figures is empty and the image manifest is empty. Add a suitable cover and reference it in both editions without changing the existing captions or text.",
+        "ru": "В пакете отсутствует фактическая обложка для карточки шутки: список figures и манифест изображений пусты. Добавьте подходящую обложку и подключите её в обеих редакциях, не изменяя существующие подписи и текст."
+      },
+      "resolution": "Both editions include the editorially approved cover. https://github.com/Fuzzy-Technologies/history_math/pull/504#pullrequestreview-6045740355"
+    },
+    {
+      "id": "source-authorship",
+      "question": "Establish the joke’s primary source and authorship or identify this item as an adaptation of a circulating joke; the text appears in S. N. Fedin’s 2009 book Mathematicians Joke Too: https://ru.djvu.online/file/px8RVIuoE96mw. Do not credit Mansur Gilmullin as its author without evidence.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Establish the joke’s primary source and authorship or identify this item as an adaptation of a circulating joke; the text appears in S. N. Fedin’s 2009 book Mathematicians Joke Too: https://ru.djvu.online/file/px8RVIuoE96mw. Do not credit Mansur Gilmullin as its author without evidence.",
+        "ru": "Установить первичный источник и авторство шутки либо обозначить материал как адаптацию распространённого анекдота; текст присутствует в книге С. Н. Федина «Математики тоже шутят» (2009): https://ru.djvu.online/file/px8RVIuoE96mw. Не указывать Мансура Гильмуллина автором без подтверждения."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/504#pullrequestreview-6045740355"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/504#pullrequestreview-6045740355",
+    "source_commit": "d48fb9b7ac09b23416b7005095c837634003e1fe",
+    "source_review_id": 6045740355,
+    "approved_at": "2026-11-24T19:16:18Z",
+    "package_sha256": "a1857a0b652040968d76df03fe5446a8c14c0f33ef003d3e148346d949e6d7a1"
+  }
+}

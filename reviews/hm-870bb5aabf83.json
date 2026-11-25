@@ -1,0 +1,44 @@
+{
+  "review_version": 1,
+  "article_id": "hm-870bb5aabf83",
+  "reconciliation": {
+    "text": "Complete author post retained; operational markers removed.",
+    "comments": "One empty comment placeholder omitted; no substantive supplement discarded.",
+    "images": "4 selected archival illustrations; source bytes retained.",
+    "original_date": "Owner requested the archival post date to be preserved in both editions.",
+    "digest": "Approved archival digest condensed and checked against the complete text.",
+    "source_status": "Archival source; publication link included only where supplied by the source."
+  },
+  "manual_changes": [
+    "Source title promoted to page title; hashtags moved to metadata; operational placement markers removed.",
+    "External URLs placed on descriptive words; archival attachments remain in the source archive.",
+    "English adaptation prepared from the complete Russian source.",
+    "Editorial verification confirmed the cover subtitle as biobibliographical and the purchase date within the advertised festival dates; the historical first-person news context is retained."
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Подтвердить право воспроизведения обложки и страницы 142 и атрибуцию фотографий.",
+      "blocking": true,
+      "state": "accepted",
+      "resolution": "Редактор одобрил текущую редакцию без изменений. https://github.com/Fuzzy-Technologies/history_math/pull/318#issuecomment-6635261737"
+    },
+    {
+      "id": "q2",
+      "question": "Соответствие даты покупки датам фестиваля и сохранение исторического контекста новости.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "По редакторской сверке дата покупки 4 июня 2025 года входит в указанные на афише 4–7 июня. По указанию владельца сохранены исторический контекст новости и анонс сентябрьской выставки."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "Tim55667757",
+    "date": "2026-11-04",
+    "package_sha256": "b1b192631742404739b5561237ffbf1e497d7f22f6e8c060ad3a2c68a8de61a6",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/318#issuecomment-6635261737",
+    "source_commit": "b930ce8d238a7c003ce8f9242c556bb4f57dcd90",
+    "source_comment_id": 6635261737,
+    "approved_at": "2026-11-04T15:53:55Z"
+  }
+}

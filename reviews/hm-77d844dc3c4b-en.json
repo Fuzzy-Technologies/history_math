@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-77d844dc3c4b-en",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "Both comment blocks, the full portrait attribution, its actual Gallerix link and the second slide-rule article are retained in one Notes section. The first article link remains in the postscript. Multiplications and the decimal approximation are set in LaTeX without changing their values.",
+    "images": "2 archival illustrations inspected and included.",
+    "digest": "The approved digest was checked against the complete source, including all substantive comments, and condensed into one or two finished sentences."
+  },
+  "manual_changes": [
+    "A descriptive publication heading is proposed; the complete untitled source opening remains in the body. Source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [
+    {
+      "id": "reynolds-portrait-attribution",
+      "question": "Please check the painter’s name and the portrait’s location in the comment. The source gives “John Maler Collier” and the Whitworth Art Gallery. The cited Gallerix page https://gallerix.org/storeroom/696286400/N/6177/ names John Collier, while the University of Manchester collections survey https://pure.manchester.ac.uk/ws/portalfiles/portal/34052208/FULL_TEXT.PDF associates the 1904 portrait with the engineering collection. Please agree the precise name and institution; the source information remains in Notes.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please check the painter’s name and the portrait’s location in the comment. The source gives “John Maler Collier” and the Whitworth Art Gallery. The cited Gallerix page https://gallerix.org/storeroom/696286400/N/6177/ names John Collier, while the University of Manchester collections survey https://pure.manchester.ac.uk/ws/portalfiles/portal/34052208/FULL_TEXT.PDF associates the 1904 portrait with the engineering collection. Please agree the precise name and institution; the source information remains in Notes.",
+        "ru": "Проверить имя художника и место хранения портрета в комментарии: исходник называет «Джона Малера Кольера» / John Maler Collier и Whitworth Art Gallery. Исходная страница Gallerix https://gallerix.org/storeroom/696286400/N/6177/ называет John Collier, а обзор коллекций Манчестерского университета https://pure.manchester.ac.uk/ws/portalfiles/portal/34052208/FULL_TEXT.PDF связывает портрет 1904 года с инженерной коллекцией. Согласовать точное имя и учреждение; исходные сведения в примечании пока сохранены."
+      },
+      "resolution": "The University of Manchester engineering collections survey identifies the portrait as John Collier’s 1904 work. The revised credit gives the artist, year and collection and retains the Gallerix link. https://pure.manchester.ac.uk/ws/portalfiles/portal/34052208/FULL_TEXT.PDF"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-05",
+    "package_sha256": "b450fb0008a0418fded441e0f5b3de2d4550b05f3a63b4822f38cd5dbc3ac19f",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/549#pullrequestreview-5791810574",
+    "source_commit": "7010789c334403f022f258c0bbfbcbc41a7b6f38",
+    "source_review_id": 5791810574,
+    "approved_at": "2026-11-05T20:43:14Z",
+    "delegated_by": "Tim55667757"
+  }
+}

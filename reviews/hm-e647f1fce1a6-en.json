@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-e647f1fce1a6-en",
+  "questions": [
+    {
+      "id": "image-provenance-rights",
+      "question": "For Vladimir Boltyansky’s portrait and the collage, provide public sources and legal bases in RU/EN; preserve separate attribution for third-party book covers, since authorship of the collage does not replace rights in its source images.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "For Vladimir Boltyansky’s portrait and the collage, provide public sources and legal bases in RU/EN; preserve separate attribution for third-party book covers, since authorship of the collage does not replace rights in its source images.",
+        "ru": "Для портрета В. Г. Болтянского и коллажа указать публичные источники и правовые основания в RU/EN; отдельно сохранить атрибуцию сторонних книжных обложек, поскольку авторство коллажа не заменяет права на исходные изображения."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/422#pullrequestreview-6040011456"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/422#pullrequestreview-6040011456",
+    "source_commit": "f00e6704384978bf354560730ebbd569cca974ea",
+    "source_review_id": 6040011456,
+    "approved_at": "2026-11-24T13:27:24Z",
+    "package_sha256": "0a2c5a7c77e92f683ec369908b36a90792eedc3d5c37fa067813853a1e90d981"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-4a35cbb804fb-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Verify the title of the republic-wide collection: the source says Differentsirovannye uravneniya. The English retains that transliteration pending a bibliographic check; approve the exact Russian title and English rendering, possibly Differential Equations.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the title of the republic-wide collection: the source says Differentsirovannye uravneniya. The English retains that transliteration pending a bibliographic check; approve the exact Russian title and English rendering, possibly Differential Equations.",
+        "ru": "Уточнить название республиканского сборника: в источнике «Дифференцированные уравнения». В EN пока сохранена транслитерация Differentsirovannye uravneniya; после библиографической проверки согласовать точное русское название и английский перевод, возможно Differential Equations."
+      },
+      "resolution": "Novgorod State University’s official biographical article gives the title as Differentsirovannye uravneniya. The Russian title is retained and transliterated in English as the publication’s name."
+    },
+    {
+      "id": "q2",
+      "question": "Clarify retirement in 1994 alongside the department headship through 1998. This may reflect continued work after formal retirement; both source periods are retained.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify retirement in 1994 alongside the department headship through 1998. This may reflect continued work after formal retirement; both source periods are retained.",
+        "ru": "Согласовать хронологию выхода на пенсию в 1994 году и заведования кафедрой до 1998 года. Это может быть продолжением работы после формального выхода на пенсию; оба исходных периода сохранены."
+      },
+      "resolution": "The unsupported claim that the department headship lasted through 1998 has been removed. Novgorod State University confirms retirement in 1994; the separate move to the United States in 1998 remains."
+    },
+    {
+      "id": "q3",
+      "question": "Review cryptarithms as the rendering of chislovye rebusy. The cover retains the Russian letter puzzle MUKHA+4=SLON; the English alt explains the words without inventing an English replacement puzzle.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Review cryptarithms as the rendering of chislovye rebusy. The cover retains the Russian letter puzzle MUKHA+4=SLON; the English alt explains the words without inventing an English replacement puzzle.",
+        "ru": "Согласовать перевод «числовые ребусы» как cryptarithms. На обложке сохранена русская буквенная задача «МУХА + 4 = СЛОН», а EN alt объясняет значения слов без подмены её вымышленным английским ребусом."
+      },
+      "resolution": "Cryptarithms is the standard term for arithmetic puzzles using letters in place of digits. The Russian puzzle on the cover is retained."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-07",
+    "package_sha256": "06eb85e3a6bcff68e517acfc069e3163e3d8f332f6ebd077bb27429f5a294096",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/410#pullrequestreview-5810022208",
+    "source_commit": "886becf8d3066942d6aefbf5af5038b76c2ea459",
+    "source_review_id": 5810022208,
+    "approved_at": "2026-11-07T04:16:46Z"
+  }
+}

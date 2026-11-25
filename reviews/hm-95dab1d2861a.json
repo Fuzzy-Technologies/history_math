@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-95dab1d2861a",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "Both substantive comment paragraphs, their original linked reference and the historical portrait are retained in Notes. Pyotr Konstantinovich and his father Konstantin Nikolayevich are distinguished.",
+    "images": "2 archival illustrations inspected and included.",
+    "digest": "The approved digest was checked against the complete source and shortened to a complete card description that preserves the joke’s effect."
+  },
+  "manual_changes": [
+    "A descriptive publication heading is proposed; the complete untitled source opening remains in the body. Source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-05",
+    "package_sha256": "48dfd7c9c40f1e03752b958138ac5bc646da2113b0b2920a7fd59f2d99d33370",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/535#pullrequestreview-5786842087",
+    "source_commit": "b25d669f33095d00fbc5773c97a658f6fce239c3",
+    "source_review_id": 5786842087,
+    "approved_at": "2026-11-05T14:49:34Z",
+    "delegated_by": "Tim55667757"
+  }
+}

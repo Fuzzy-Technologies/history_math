@@ -1,0 +1,26 @@
+{
+  "review_version": 1,
+  "article_id": "hm-2b57600b6e9f-en",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "The complete comment, marked retouched portrait and all six references are retained. The public Basharin–Langville–Naumov PDF was read to verify the chronology of university and academy appointments and the Onegin example; its local archival copy remains on NAS.",
+    "images": "2 archival illustrations inspected and included.",
+    "digest": "The approved source digest was checked against the complete post and condensed into two finished sentences."
+  },
+  "manual_changes": [
+    "Source title moved to shared heading; source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-05",
+    "package_sha256": "29a0ea8442edda23de18bce30a69cc6807dfbc81f21df08dbf8ad04ed2a085ba",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/454#pullrequestreview-5787060388",
+    "source_commit": "660d40368ff3c8d1b8996faafd4db67712575e84",
+    "source_review_id": 5787060388,
+    "approved_at": "2026-11-05T15:02:12Z",
+    "delegated_by": "Tim55667757"
+  }
+}

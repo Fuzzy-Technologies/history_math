@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-abee997a0b3c-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "For the portrait of Leonardo, identify the artist or source work, a public source record and the licence or public-domain basis. Holding a copy in an archive does not justify naming Mansur Gilmullin as the author of a third-party historical image.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "For the portrait of Leonardo, identify the artist or source work, a public source record and the licence or public-domain basis. Holding a copy in an archive does not justify naming Mansur Gilmullin as the author of a third-party historical image.",
+        "ru": "Для портрета Леонардо указать автора или исходное произведение, публичный источник и лицензию либо основание общественного достояния. Нахождение копии в архиве не позволяет указывать Мансура Гильмуллина как автора исторического изображения третьего лица."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/327#pullrequestreview-6039903750"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/327#pullrequestreview-6039903750",
+    "source_commit": "808a44e9ffd4009e00e36d4ff5f31598c255ea50",
+    "source_review_id": 6039903750,
+    "approved_at": "2026-11-24T13:19:57Z",
+    "package_sha256": "be991801d7547b86e8ea158caf1e2f06a06d5fc419bbd57d65bf5cbd015befd1"
+  }
+}

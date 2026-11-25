@@ -24,7 +24,8 @@ permissions. Bucket versioning and access policy are infrastructure
 configuration; publication does not change them. Credentials are consumed by
 the pinned AWS S3 SDK and never written to receipts or frontend assets.
 
-Objects use `originals/<sha256>/<filename>` or `pdf/<sha256>/<filename>`.
+Objects use `originals/<sha256>/<filename>`, `pdf/<sha256>/<filename>` and
+`previews/<sha256>/<filename>`.
 Names identify immutable bytes. Existing objects are publicly reverified and
 reused; a changed file gets a new address. The upload step does not delete
 objects; post-deployment cleanup removes obsolete copies after reference checks.
@@ -62,14 +63,18 @@ final publication step:
    an existing object, must pass an anonymous HTTPS GET, complete SHA-256 and
    size comparison, MIME and attachment header checks.
 5. Only after all objects pass, rewrites generated HTML, CSS and URL fields in
-   JSON. Current and legacy pages use external PDFs. Reading images stay local;
-   the native image viewer requests the bucket original only after a click.
+   JSON. Current and legacy pages use external PDFs. The native image viewer
+   requests the full-size bucket original only after a click.
 6. Removes migrated originals and PDFs from the disposable Pages build output.
    It never deletes repository sources, Releases, NAS originals or S3 objects.
-7. Rechecks built URLs, catalogs, locale indexes and final Pages size. For code
+7. Optimizes static lossless WebP previews in the disposable Pages output.
+   The encoder retains dimensions and alpha, and keeps the input whenever the
+   candidate misses the quality or savings floor. When direct bucket delivery is
+   enabled, the verified WebPs are removed from the disposable Pages artifact.
+8. Rechecks built URLs, catalogs, locale indexes and final Pages size. For code
    changes, browser tests exercise actual S3 zoom/downloads on old and current
    RU/EN pages, mobile and desktop, with analytics stubbed.
-8. Uploads the lightweight Pages artifact and deploys it only after those gates.
+9. Uploads the lightweight Pages artifact and deploys it only after those gates.
 
 Transfer or verification failures block the new Pages deployment. The current
 site remains live. Partial uploads are safe to reuse on a later run. A failure
@@ -191,32 +196,24 @@ The 2026-10-30 owner instruction supersedes preservation of oversized PNG bytes 
 
 The master workflow prepares missing JPEG bytes, checks them against the registry, uploads and publicly verifies them, and rewrites full-view/download controls to the JPEG's S3 URL and filename. Previously verified JPEG objects are reused. The retained receipt includes a complete authenticated object/version size inventory. Upload-only publication does not claim that old versions were deleted: retirement requires separate deletion rights and verification that live links have switched.
 
-## Optional reading-preview CDN
+## Reading previews in Object Storage
 
-The Kazakhstan Cloud CDN can use the existing Kazakhstan Object Storage bucket
-as an origin. Configure `media.history-math.org` as a separate HTTPS CDN
-resource with the bucket hostname `history-math-media-kz.storage.yandexcloud.kz`
-as its origin Host. Install a valid certificate and use the CNAME returned by
-Cloud CDN. Keep cache behavior consistent with the origin's immutable object
-headers. Origin reads of objects are public; the publication process does not
-change bucket ACLs or credentials.
+The `history-math-storage` environment setting `PREVIEW_DELIVERY_BASE_URL` selects
+where the production build serves article WebP previews. Set it to
+`https://storage.yandexcloud.kz/history-math-media-kz` for direct delivery from
+the existing bucket. An empty setting builds a self-contained Pages preview
+tree. Any other destination stops publication.
 
-- [Kazakhstan CDN bucket setup](https://yandex.cloud/ru-kz/docs/cdn/quickstart/bucket)
-- [Kazakhstan CDN pricing](https://yandex.cloud/ru-kz/docs/cdn/pricing)
+After PDF rendering and WebP optimization, publication computes the SHA-256 of
+each final file. Missing objects are uploaded under `previews/<sha256>/<filename>`
+with `image/webp`, inline disposition and immutable cache headers. Before changing
+references or removing Pages copies, the job checks the anonymous response body,
+size, MIME type and filename of every object against the build. A paginated S3
+listing avoids a redundant signed HEAD on existing objects. Preflight and final
+transfers use up to twelve concurrent requests in each phase. Retries are bounded.
 
-After review and configuration, set `PREVIEW_CDN_BASE_URL` in the existing
-`history-math-storage` environment to `https://media.history-math.org`.
-When the variable is empty, WebP previews are served by Pages. The migration
-reads generated WebP previews after browser-preview optimization and PDF
-rendering. Keys use `previews/<sha256>/<filename>`. The pipeline verifies the
-origin and CDN response bytes, WebP MIME type and a warmed cache hit before
-rewriting generated URLs and pruning the Pages copies. It then checks the
-built site and exercises desktop and mobile image delivery. Original and PDF
-delivery retain their current attachment URLs. Existing cleanup does not
-delete objects in the preview namespace.
-
-Check a repeat request for a positive `Age` or an `X-Cache: HIT` response,
-and inspect the CDN cache metrics to confirm traffic is served from the edge.
-For rollback, remove `PREVIEW_CDN_BASE_URL` and redeploy. The new build
-restores local WebP copies from the repository; old CDN addresses remain
-available. Provisioning a CDN resource starts a paid monthly package.
+The build rewrites article and catalog markup, responsive image candidates,
+social metadata and discovery/search indexes. SVGs stay at their existing paths.
+PDF rendering and local source checks still use the byte-pinned repository
+previews. Roll back by clearing `PREVIEW_DELIVERY_BASE_URL` and redeploying
+`master`. Existing bucket URLs also continue working after rollback.

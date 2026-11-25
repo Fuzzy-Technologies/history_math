@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a38697a86ec6-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify “fifty years” in a work dated 2025-04-28: the first textbooks are dated September 1970, so the estimate apparently survives from 2020. Consider “have been in use since 1970” or an approved duration for the publication’s historical context. Approve the meaning-based English adaptation of the seminar title.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify “fifty years” in a work dated 2025-04-28: the first textbooks are dated September 1970, so the estimate apparently survives from 2020. Consider “have been in use since 1970” or an approved duration for the publication’s historical context. Approve the meaning-based English adaptation of the seminar title.",
+        "ru": "Уточнить «уже 50 лет» в материале с исходной датой 2025-04-28: первые учебники датированы сентябрём 1970, поэтому это, вероятно, сохранённая оценка 2020 года. Предлагается «используются с 1970 года» / “have been in use since 1970”, либо согласованный срок для исторического среза публикации. Название семинара в EN адаптировано по смыслу; подтвердить его."
+      },
+      "resolution": "Replaced the relative interval with the author’s stated year of first publication. The seminar name is translated descriptively."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-07",
+    "package_sha256": "a23c7fbd9955b7722a8e19579184b1d8b0d92018336168a420da88698b58ee2f",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/425#pullrequestreview-5813515804",
+    "source_commit": "a25d82040e037218a42b221c9899c0906a5adf5f",
+    "source_review_id": 5813515804,
+    "approved_at": "2026-11-07T16:13:19Z"
+  }
+}

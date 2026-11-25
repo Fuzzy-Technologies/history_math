@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a2203cf87eba-en",
+  "questions": [
+    {
+      "id": "bossut-source-and-cover",
+      "question": "Please confirm a documentary source for the deathbed anecdote about Charles Bossut: the authoritative MacTutor biography confirms his dates and career but does not include this episode. The Mathematicians Joke card also needs an actual cover; figures and the image manifest are currently empty.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please confirm a documentary source for the deathbed anecdote about Charles Bossut: the authoritative MacTutor biography confirms his dates and career but does not include this episode. The Mathematicians Joke card also needs an actual cover; figures and the image manifest are currently empty.",
+        "ru": "Подтвердить документальный источник предсмертного анекдота о Шарле Боссю: авторитетная биография MacTutor подтверждает годы жизни и научную карьеру, но не приводит этот эпизод. Для карточки рубрики «Математики шутят» также нужна фактическая обложка: сейчас figures и image manifest пусты."
+      },
+      "resolution": "Both editions include the editorially approved cover. https://github.com/Fuzzy-Technologies/history_math/pull/538#pullrequestreview-6045745362"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/538#pullrequestreview-6045745362",
+    "source_commit": "a0a10a85b954e17e0d51c35db1bc749393929d26",
+    "source_review_id": 6045745362,
+    "approved_at": "2026-11-24T19:16:39Z",
+    "package_sha256": "d6cd27984688fa2b3674b47237265f7e7b8bf18376176476e313e6e8620ca6c3"
+  }
+}

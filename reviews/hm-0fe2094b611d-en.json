@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-0fe2094b611d-en",
+  "questions": [
+    {
+      "id": "khwarizmi-anecdote-source",
+      "question": "Please identify the source of the legend about al-Khwarizmi’s wife and his missed lunch. The post names two works by O’Connor and Robertson without pages or links. The confirmed university article https://mathshistory.st-andrews.ac.uk/HistTopics/Arabic_mathematics/ explains al-Khwarizmi’s contribution, but the anecdote’s connection to the named works has not been established. Please agree a source or an editorial description of the joke; the legend and original bibliography are retained.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Please identify the source of the legend about al-Khwarizmi’s wife and his missed lunch. The post names two works by O’Connor and Robertson without pages or links. The confirmed university article https://mathshistory.st-andrews.ac.uk/HistTopics/Arabic_mathematics/ explains al-Khwarizmi’s contribution, but the anecdote’s connection to the named works has not been established. Please agree a source or an editorial description of the joke; the legend and original bibliography are retained.",
+        "ru": "Уточнить источник легенды о жене и пропущенном обеде: в посте приведены два названия O’Connor и Robertson, но без страниц и ссылок. Подтверждённая университетская статья https://mathshistory.st-andrews.ac.uk/HistTopics/Arabic_mathematics/ объясняет вклад аль-Хорезми, однако привязка анекдота к указанным работам не установлена. Согласовать источник или редакторскую помету о характере шутки; легенда и исходная библиография сохранены."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/550#pullrequestreview-6040088548"
+    },
+    {
+      "id": "khwarizmi-collage-provenance",
+      "question": "The `fig-2` collage, combining a 1983 Soviet stamp and a historical title page, needs separate public sources, creators and rights status for each component; the title page also needs a specific edition or collection.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "The `fig-2` collage, combining a 1983 Soviet stamp and a historical title page, needs separate public sources, creators and rights status for each component; the title page also needs a specific edition or collection.",
+        "ru": "Для коллажа `fig-2`, объединяющего советскую марку 1983 года и исторический титульный лист, нужны отдельные публичные источники, создатели и правовой статус каждой части; для титульного листа также требуется конкретное издание или собрание."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/550#pullrequestreview-6040088548"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/550#pullrequestreview-6040088548",
+    "source_commit": "abd2099766f38245b09c9e6678f805d02a4ddecd",
+    "source_review_id": 6040088548,
+    "approved_at": "2026-11-24T13:32:10Z",
+    "package_sha256": "2c5e689c0e8ed5b79781748d44b4a124020bc12c1047418e6f5f77011f573cbb"
+  }
+}

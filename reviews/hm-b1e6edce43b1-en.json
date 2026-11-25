@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-b1e6edce43b1-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Agree the precise wording about the characteristic function and the Lévy–Khintchine formula; check the bibliographical book titles and their established English names.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Agree the precise wording about the characteristic function and the Lévy–Khintchine formula; check the bibliographical book titles and their established English names.",
+        "ru": "Согласовать точную формулировку о характеристической функции и формуле Леви–Хинчина; сверить библиографические заглавия книг и их принятые английские названия."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/359#pullrequestreview-6040002074"
+    },
+    {
+      "id": "q2",
+      "question": "Confirm the source of the quoted poem and agree its English translation; clarify its relationship to the four collections of 1908–1914 and the illustrated 1915 edition of Words for Which There Is No Forgiveness.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Confirm the source of the quoted poem and agree its English translation; clarify its relationship to the four collections of 1908–1914 and the illustrated 1915 edition of Words for Which There Is No Forgiveness.",
+        "ru": "Подтвердить источник цитируемого стихотворения и согласовать его смысловой английский перевод; уточнить связь с четырьмя сборниками 1908–1914 годов и показанным изданием «Слова, которым нет прощения» 1915 года."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/359#pullrequestreview-6040002074"
+    },
+    {
+      "id": "q3",
+      "question": "Establish the actual public sources and legal status of Alexander Khinchin’s portrait and the 1915 title page; for the title page, identify the exact edition, holding institution and basis for reproduction.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Establish the actual public sources and legal status of Alexander Khinchin’s portrait and the 1915 title page; for the title page, identify the exact edition, holding institution and basis for reproduction.",
+        "ru": "Установить фактические публичные источники и правовой статус портрета А. Я. Хинчина и титульного листа издания 1915 года; для титульного листа указать точное издание, хранилище и основание воспроизведения."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/359#pullrequestreview-6040002074"
+    },
+    {
+      "id": "q4",
+      "question": "Verify the chronology of Khinchin’s move to Ivanovo-Voznesensk and the start of his teaching there.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Verify the chronology of Khinchin’s move to Ivanovo-Voznesensk and the start of his teaching there.",
+        "ru": "Проверить хронологию переезда Хинчина в Иваново-Вознесенск и начала его преподавательской работы там."
+      },
+      "resolution": "The articles now distinguish the move in late 1918 from the start of teaching in 1919. Checked against the Ivanovo State University faculty history and the Steklov Mathematical Institute memorial: https://math.ivanovo.ac.ru/hist/hist0/index.html ; https://www.mi.ras.ru/index.php?c=inmemoriapage&id=26863"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/359#pullrequestreview-6040002074",
+    "source_commit": "ddcf601bef4f513cb248b1394db2edcc54f13d29",
+    "source_review_id": 6040002074,
+    "approved_at": "2026-11-24T13:26:48Z",
+    "package_sha256": "eba833478427a21809628192eaf88a5eaa2f41cadbaa94709b008de961e8799b"
+  }
+}

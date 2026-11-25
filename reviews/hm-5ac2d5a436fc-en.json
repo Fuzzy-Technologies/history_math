@@ -1,0 +1,27 @@
+{
+  "review_version": 1,
+  "article_id": "hm-5ac2d5a436fc-en",
+  "questions": [
+    {
+      "id": "turing-composite-illustration-provenance",
+      "question": "For the composite illustration containing Turing’s portrait and the imitation-game diagram, identify the actual creator or source work, the rightsholder, a verifiable public source, and the legal basis for use. The neutral wording “Illustration accompanying the text” does not establish the image’s provenance.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "For the composite illustration containing Turing’s portrait and the imitation-game diagram, identify the actual creator or source work, the rightsholder, a verifiable public source, and the legal basis for use. The neutral wording “Illustration accompanying the text” does not establish the image’s provenance.",
+        "ru": "Для составной иллюстрации с портретом Тьюринга и схемой игры в имитацию укажите фактического автора или исходное произведение, правообладателя, проверяемый публичный источник и правовое основание использования. Нейтральная формулировка «Иллюстрация к материалу» не подтверждает происхождение изображения."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/578#pullrequestreview-6040122205"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/578#pullrequestreview-6040122205",
+    "source_commit": "7dc5bee8e8122ecd88e6af1142af3a9fda0d6e50",
+    "source_review_id": 6040122205,
+    "approved_at": "2026-11-24T13:34:27Z",
+    "package_sha256": "721008015e1327db701c166977e4fa81b5d9e7b4cc33eaab64b7800da528843f"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f8a531068daf",
+  "questions": [
+    {
+      "id": "bourbaki-age-rule-and-folklore",
+      "question": "Развести документированное возрастное правило и юмористическую историю: Борель (примечание 10, стр. 378) пишет о предельном возрасте 50 лет и строгом соблюдении с 1956 года; Хесин пересказывает версию Арнольда, где успешная «кокотизация» позволяет остаться. Авторский рассказ сохранён. Решить, нужна ли явная оговорка, что это две разные по статусу версии, а не подтверждение практики продления членства. Источники: https://www.ams.org/notices/199803/borel.pdf ; https://www.math.toronto.edu/khesin/papers/ArnoldSecondAMS1204.pdf .",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "В статье документированное правило ухода в пятьдесят лет прямо отделено от юмористического рассказа Арнольда о кокотизации.",
+      "localizations": {
+        "source": "Развести документированное возрастное правило и юмористическую историю: Борель (примечание 10, стр. 378) пишет о предельном возрасте 50 лет и строгом соблюдении с 1956 года; Хесин пересказывает версию Арнольда, где успешная «кокотизация» позволяет остаться. Авторский рассказ сохранён. Решить, нужна ли явная оговорка, что это две разные по статусу версии, а не подтверждение практики продления членства. Источники: https://www.ams.org/notices/199803/borel.pdf ; https://www.math.toronto.edu/khesin/papers/ArnoldSecondAMS1204.pdf .",
+        "en": "Distinguish the documented retirement rule from the humorous story: Borel’s note 10 on p. 378 says retirement at fifty was strictly enforced from 1956, while Khesin retells Arnold’s version in which a successful coconutization permits continued membership. Decide whether to state explicitly that the tale does not establish an actual extension procedure."
+      }
+    },
+    {
+      "id": "bourbaki-story-authorship-and-publication",
+      "question": "Исходный сюжет указан как рассказ Владимира Арнольда в пересказе Бориса Хесина, но корневые authors и rights_basis целиком приписывают материал Мансуру Гильмуллину. Отделить авторство источникового рассказа от адаптации или редакции Мансура. Также подтвердить фактическую исходную публикацию от 08.11.2026 публичным URL либо исправить дату.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Исходный сюжет указан как рассказ Владимира Арнольда в пересказе Бориса Хесина, но корневые authors и rights_basis целиком приписывают материал Мансуру Гильмуллину. Отделить авторство источникового рассказа от адаптации или редакции Мансура. Также подтвердить фактическую исходную публикацию от 08.11.2026 публичным URL либо исправить дату.",
+        "en": "The source story is identified as Vladimir Arnold’s account retold by Boris Khesin, but the root authors and rights_basis attribute the material entirely to Mansur Gilmullin. Distinguish authorship of the source account from Mansur’s adaptation or editing. Also confirm the actual original publication dated 8 November 2026 with a public URL, or correct the date."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/619#pullrequestreview-6040186680"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/619#pullrequestreview-6040186680",
+    "source_commit": "048e886b39507a4e7448df41d4f17d67cc1f24ac",
+    "source_review_id": 6040186680,
+    "approved_at": "2026-11-24T13:38:49Z",
+    "package_sha256": "d5100d11e122bc11416618726e4eaeeb8f040c58691b83aa1f316e00b7fa7870"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-6adb5efffb00-en",
+  "questions": [
+    {
+      "id": "cucumbers-original-jir-issue",
+      "question": "Identify the reprint in The Journal of Irreproducible Results and establish how it relates to Everett D. Edington’s version, which Jan W. Kuzma reprints with credit to Cyanograms.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Identify the reprint in The Journal of Irreproducible Results and establish how it relates to Everett D. Edington’s version, which Jan W. Kuzma reprints with credit to Cyanograms.",
+        "ru": "Установить библиографию перепечатки в The Journal of Irreproducible Results и её связь с версией Эверетта Д. Эдингтона, которую Дж. У. Кузма приводит со ссылкой на Cyanograms."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/614#pullrequestreview-6040186507"
+    },
+    {
+      "id": "cucumbers-en-cover-language",
+      "question": "Resolve the cover language for the English edition: both illustrations contain a Russian headline, while the English alt texts present it as English. Either provide English-language variants without changing the meaning or composition, or explicitly describe the Russian text in the alt text and caption.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Resolve the cover language for the English edition: both illustrations contain a Russian headline, while the English alt texts present it as English. Either provide English-language variants without changing the meaning or composition, or explicitly describe the Russian text in the alt text and caption.",
+        "ru": "Для английской редакции согласовать обложки: обе иллюстрации содержат русский заголовок, а английские alt-тексты передают его как английский. Либо подготовить англоязычные варианты без изменения смысла и композиции, либо явно описать русский текст в alt и подписи."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/614#pullrequestreview-6040186507"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/614#pullrequestreview-6040186507",
+    "source_commit": "039a02ed6948c40a5f620484c70e59bd3a0681f2",
+    "source_review_id": 6040186507,
+    "approved_at": "2026-11-24T13:38:48Z",
+    "package_sha256": "8a3919846ec251983e9171861dad27fddb2dd54a5079bc573249d4156763d6bc"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "review_version": 1,
+  "article_id": "hm-98e3394759f9",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Для портрета Омара Хайяма указать исходное произведение и его автора, публичный источник и лицензию либо основание общественного достояния; наличие копии в авторском архиве не подтверждает авторство исторического изображения третьего лица.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/328#pullrequestreview-6039903829"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/328#pullrequestreview-6039903829",
+    "source_commit": "ed187aac2959f4d06f309fb14a948433a7e8c3a5",
+    "source_review_id": 6039903829,
+    "approved_at": "2026-11-24T13:19:58Z",
+    "package_sha256": "e42a773ac821b81330e6ebd42572b8991a99213b3874bf88aaa28d2317dbc6ce"
+  }
+}

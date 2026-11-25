@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-5f8212015703-en",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "The complete biographical comment, original linked reference and portrait are retained in Notes. The main quotation keeps every year and the complete sequence of seminar topics.",
+    "images": "2 archival illustrations inspected and included.",
+    "digest": "The approved digest was checked against the complete source and condensed into a specific one- or two-sentence description."
+  },
+  "manual_changes": [
+    "A descriptive publication heading is proposed; the complete untitled source opening remains in the body. Source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [
+    {
+      "id": "university-entry-year",
+      "question": "The quotation in the author’s post gives 1914 as the year Menshov entered Moscow University. The university biography and his 90th-birthday article give autumn 1912. Please check the quotation’s source and decide whether the year of entry should be distinguished from the seminar’s beginning. The source’s 1914 is retained in both languages.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "The quotation in the author’s post gives 1914 as the year Menshov entered Moscow University. The university biography and his 90th-birthday article give autumn 1912. Please check the quotation’s source and decide whether the year of entry should be distinguished from the seminar’s beginning. The source’s 1914 is retained in both languages.",
+        "ru": "В цитате из авторского поста Меньшов говорит о поступлении в Московский университет в 1914 году. Университетская биография https://new.math.msu.su/tffa/memory/menshov.html и статья к его 90-летию https://www.mathnet.ru/links/096d28cde628169d3eebd24f457503eb/rm3934.pdf указывают осень 1912 года. Проверить источник цитаты и решить, нужно ли отличить год поступления от начала семинара; исходный 1914 сохранён в обеих версиях."
+      },
+      "resolution": "The retelling retains 1914 as printed in Kvant (no. 4, 1996, p. 24: https://www.kvant.digital/issues/1996/4/tihomirov-o_matematikah_s_ulyibkoy-7a0fd755/). A note distinguishes Menshov’s actual enrolment in autumn 1912, as stated in his own recollections (https://www.mat.univie.ac.at/~neretin/misc/luzin/menshov.html), from the start of the seminar in 1914."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-06",
+    "package_sha256": "610276095bcf36f48badff50f5913b9deac07da4805d28147c7523c7ac8450a7",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/541#pullrequestreview-5792090210",
+    "source_commit": "9cbb316e78cace1fd7c98667523d6ce4a4ec3a9f",
+    "source_review_id": 5792090210,
+    "approved_at": "2026-11-05T21:03:36Z",
+    "delegated_by": "Tim55667757"
+  }
+}

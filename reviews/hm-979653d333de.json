@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-979653d333de",
+  "questions": [
+    {
+      "id": "triangle-angle-sum-postulates",
+      "question": "Уточнить объяснение суммы углов: равенства прямых углов и меры развёрнутого угла сами по себе недостаточны для теоремы о сумме углов евклидова треугольника. В доказательстве I.32 «Начал» используется I.29 о параллельных прямых, зависящее от пятого постулата. Нужна согласованная формулировка в обеих версиях; утверждение о приписывании доказательства Пифагору также требует источника. Текст Евклида: https://mathcs.clarku.edu/~djoyce/elements/bookI/propI32.html .",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Уточнена роль пятого постулата в доказательстве Евклида, а атрибуция пифагорейцам уточнена по свидетельству Прокла. В решении объяснено, почему четыре неотмеченных угла в сумме дают 180°.",
+      "localizations": {
+        "source": "Уточнить объяснение суммы углов: равенства прямых углов и меры развёрнутого угла сами по себе недостаточны для теоремы о сумме углов евклидова треугольника. В доказательстве I.32 «Начал» используется I.29 о параллельных прямых, зависящее от пятого постулата. Нужна согласованная формулировка в обеих версиях; утверждение о приписывании доказательства Пифагору также требует источника. Текст Евклида: https://mathcs.clarku.edu/~djoyce/elements/bookI/propI32.html .",
+        "en": "Please clarify the explanation of triangle angle sums: equality of right angles and the measure of a straight angle alone do not establish the Euclidean theorem. Elements I.32 uses I.29 about parallel lines, which depends on the fifth postulate. Please agree matching wording in both editions and supply a source for the attribution of a proof to Pythagoras. Euclid’s text: https://mathcs.clarku.edu/~djoyce/elements/bookI/propI32.html ."
+      }
+    },
+    {
+      "id": "icicles-cover-provenance",
+      "question": "Подтвердить происхождение обложки: в подписи она названа авторской, но поля source и rights_basis содержат лишь «Иллюстрация к материалу». Нужны реальный автор или иллюстратор, публичный источник и лицензия либо подтверждённое основание считать изображение авторским.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Подтвердить происхождение обложки: в подписи она названа авторской, но поля source и rights_basis содержат лишь «Иллюстрация к материалу». Нужны реальный автор или иллюстратор, публичный источник и лицензия либо подтверждённое основание считать изображение авторским.",
+        "en": "Confirm the cover’s provenance: its caption calls it an author’s illustration, but source and rights_basis only say “Illustration accompanying the text.” Identify the actual author or illustrator, public source and licence, or provide verified grounds for treating it as an original author illustration."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/680#pullrequestreview-6040285129"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/680#pullrequestreview-6040285129",
+    "source_commit": "43e3b75047b803de80b6160a0f0b7d3ae8f51ca0",
+    "source_review_id": 6040285129,
+    "approved_at": "2026-11-24T13:44:36Z",
+    "package_sha256": "8993bd9c9aaa26571cc0b8a5859dce113f86f8748d5590fe09ffbd39b3248788"
+  }
+}

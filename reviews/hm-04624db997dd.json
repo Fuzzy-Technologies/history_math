@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-04624db997dd",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Подтвердить источники и контекст цитат Киселёва 1938 года и В. И. Арнольда; сохранить их историческую интонацию без приписывания автору нынешней редакции.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Подтвердить источники и контекст цитат Киселёва 1938 года и В. И. Арнольда; сохранить их историческую интонацию без приписывания автору нынешней редакции.",
+        "en": "Confirm the sources and contexts of Kiselyov’s 1938 quotation and Vladimir Arnold’s quotation; retain their historical voice without attributing it to the author of the present article."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/350#pullrequestreview-6039943756"
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить статистику 26 изданий «Элементарной геометрии» к 1917 году и даты имперских наград.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Уточнить статистику 26 изданий «Элементарной геометрии» к 1917 году и даты имперских наград.",
+        "en": "Verify the claim of twenty-six editions of *Elementary Geometry* by 1917 and the dates of the imperial awards."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/350#pullrequestreview-6039943756"
+    },
+    {
+      "id": "q3",
+      "question": "Установить публичный первоисточник, фотографа или автора и лицензию либо иное подтверждённое основание воспроизведения портрета Андрея Киселёва.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Установить публичный первоисточник, фотографа или автора и лицензию либо иное подтверждённое основание воспроизведения портрета Андрея Киселёва.",
+        "en": "Identify a public primary source, photographer or author, and a licence or other confirmed basis for reproducing the portrait of Andrey Kiselyov."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/350#pullrequestreview-6039943756"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/350#pullrequestreview-6039943756",
+    "source_commit": "fa1e7484a784f9ffd161f77c3f6ac31d502541a9",
+    "source_review_id": 6039943756,
+    "approved_at": "2026-11-24T13:22:46Z",
+    "package_sha256": "8365392919d7167d8d8bc1977bd4a7eff21503b81e93251c05c764ab08df3234"
+  }
+}

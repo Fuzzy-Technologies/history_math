@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-322917b94a7b",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить рамки первенства учебника «Математика 0» и подхода «Педагогика математики»; подтвердить источники этих оценок и исторические названия учреждений.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Уточнить рамки первенства учебника «Математика 0» и подхода «Педагогика математики»; подтвердить источники этих оценок и исторические названия учреждений.",
+        "en": "Clarify the scope of the priority claims for Mathematics 0 and the pedagogy-of-mathematics approach; confirm their sources and the historical institution names."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/388#pullrequestreview-6039976885"
+    },
+    {
+      "id": "q2",
+      "question": "Сверить полный библиографический состав семнадцати позиций и соавторов, в том числе переиздания 2008 года, и согласовать английские описательные переводы заглавий.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Сверить полный библиографический состав семнадцати позиций и соавторов, в том числе переиздания 2008 года, и согласовать английские описательные переводы заглавий.",
+        "en": "Check all seventeen bibliographical entries and coauthor credits, including the 2008 reprint, and review the descriptive English translations of the titles."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/388#pullrequestreview-6039976885"
+    },
+    {
+      "id": "q3",
+      "question": "Установить публичный источник и автора портрета А. А. Столяра; для книжной обложки — точное издание, издателя и подтверждённое основание воспроизведения. Хранение изображений в авторском архиве не устанавливает права на них.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Установить публичный источник и автора портрета А. А. Столяра; для книжной обложки — точное издание, издателя и подтверждённое основание воспроизведения. Хранение изображений в авторском архиве не устанавливает права на них.",
+        "en": "Identify a public source and creator for the portrait of A. A. Stolyar; for the book cover, identify the exact edition, publisher and a confirmed basis for reproduction. Possession of the images in an author's archive does not establish image rights."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/388#pullrequestreview-6039976885"
+    },
+    {
+      "id": "q4",
+      "question": "Подтвердить публичный URL исходной публикации от 23 мая 2024 года и записать его в обеих редакциях статьи.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Подтвердить публичный URL исходной публикации от 23 мая 2024 года и записать его в обеих редакциях статьи.",
+        "en": "Confirm the public URL of the original publication dated 23 May 2024 and record it in both article editions."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/388#pullrequestreview-6039976885"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/388#pullrequestreview-6039976885",
+    "source_commit": "10ebc944aa2c9086d3a085f35ca06cf260043743",
+    "source_review_id": 6039976885,
+    "approved_at": "2026-11-24T13:25:04Z",
+    "package_sha256": "607b5169f6ef1eb926a0b37bf3f5b4d1b21a1e567e2f796e548b0abc35b21b50"
+  }
+}

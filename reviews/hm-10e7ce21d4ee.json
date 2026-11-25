@@ -1,0 +1,37 @@
+{
+  "review_version": 1,
+  "article_id": "hm-10e7ce21d4ee",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить рассказ Цицерона о гробнице Архимеда, атрибуцию формулы Герона и точность цитат; точно сформулировать возрастное правило Филдсовской премии.",
+      "blocking": true,
+      "state": "resolved",
+      "resolution": "В эпизоде с гробницей назван Цицерон и использован корректный интервал «более века»; неподтверждённое утверждение о формуле Герона снято, высказывание о точке опоры помечено как традиционная атрибуция, а правило Филдсовской премии сформулировано через официальную календарную границу."
+    },
+    {
+      "id": "archimedes-portrait-provenance",
+      "question": "Установить исходное произведение и автора портретной обложки Архимеда, указать публичный источник и лицензию либо подтверждённое основание общественного достояния.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/324#pullrequestreview-6039895646"
+    },
+    {
+      "id": "original-publication-date",
+      "question": "Сверить исходную дату публикации: в статье указано 31.08.2023, а описание пакета содержит 29.08.2023.",
+      "blocking": false,
+      "state": "accepted",
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/324#pullrequestreview-6039895646"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/324#pullrequestreview-6039895646",
+    "source_commit": "8dc44e53630788dac5f4ad1a7ca0dfeca1fb5f7b",
+    "source_review_id": 6039895646,
+    "approved_at": "2026-11-24T13:19:23Z",
+    "package_sha256": "610d9360330a4fee81d29202a8682124f477e23ab73d1881b5471ab9b8a93c76"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-a284642e50c9",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Уточнить исходное немецкое название должности 1926 года: школьная должность передана в RU как «старший научный руководитель». Согласовать senior academic director и историческое название гимназии.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Должность и учебное заведение переданы как «старший директор Новой реальной гимназии» с исходным немецким названием Oberstudiendirektor des Neuen Realgymnasiums.",
+      "localizations": {
+        "source": "Уточнить исходное немецкое название должности 1926 года: школьная должность передана в RU как «старший научный руководитель». Согласовать senior academic director и историческое название гимназии.",
+        "en": "Verify the original German title of the 1926 school appointment, rendered in Russian as senior scientific director. Agree the English title senior academic director and the historical school name."
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Уточнить, что означает предложенная «аккредитация»; английские названия русских изданий переданы описательно с сохранением дат. Подтверждённого URL исходного поста нет.",
+      "blocking": false,
+      "state": "resolved",
+      "resolution": "Неясная «аккредитация» заменена хабилитацией 1928 года. Описательные английские названия русских изданий и отсутствие неподтверждённого URL сохранены корректно.",
+      "localizations": {
+        "source": "Уточнить, что означает предложенная «аккредитация»; английские названия русских изданий переданы описательно с сохранением дат. Подтверждённого URL исходного поста нет.",
+        "en": "Clarify the qualification described as accreditation; English titles of the Russian editions are descriptive and retain their dates. No confirmed original-post URL is available."
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Для портрета Вилейтнера и обложки переиздания URSS указано только «Иллюстрация к материалу». Установить первоисточник и автора портрета, а для обложки — конкретное издание, издателя и подтверждённое основание воспроизведения; синхронизировать RU/EN-метаданные.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Для портрета Вилейтнера и обложки переиздания URSS указано только «Иллюстрация к материалу». Установить первоисточник и автора портрета, а для обложки — конкретное издание, издателя и подтверждённое основание воспроизведения; синхронизировать RU/EN-метаданные.",
+        "en": "The portrait of Wieleitner and the URSS reprint cover are identified only as illustrations accompanying the text. Establish the portrait’s source and creator and, for the cover, the exact edition, publisher, and confirmed basis for reproduction; synchronize the RU/EN metadata."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/376#pullrequestreview-6040002210"
+    },
+    {
+      "id": "speyer-appointment-chronology",
+      "question": "Разделить начало работы Вилейтнера в гимназии Шпейера и назначение учителем: он поступил туда ассистентом в 1898 году и стал учителем гимназии в 1900 году.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Разделить начало работы Вилейтнера в гимназии Шпейера и назначение учителем: он поступил туда ассистентом в 1898 году и стал учителем гимназии в 1900 году.",
+        "en": "Distinguish Wieleitner’s start at the Speyer Gymnasium from his appointment as a teacher: he joined as an assistant in 1898 and became a Gymnasium teacher in 1900."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/376#pullrequestreview-6040002210"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/376#pullrequestreview-6040002210",
+    "source_commit": "337510190120911e4840bac01a70f4f158b726ac",
+    "source_review_id": 6040002210,
+    "approved_at": "2026-11-24T13:26:48Z",
+    "package_sha256": "d7643247ccdc62596facbebfe1a3822a8b6e581562efe28d7ae326644996da60"
+  }
+}

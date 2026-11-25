@@ -1,0 +1,62 @@
+{
+  "review_version": 1,
+  "article_id": "hm-8f0f08328276",
+  "questions": [
+    {
+      "id": "faculty-title",
+      "question": "Проверить название должности и подразделения Клейна: архив Гёттингена фиксирует его избрание деканом Philosophische Fakultät, а не математического факультета.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Проверить название должности и подразделения Клейна: архив Гёттингена фиксирует его избрание деканом Philosophische Fakultät, а не математического факультета.",
+        "en": "Check Klein’s faculty title: Göttingen’s archive records his election as dean of the Philosophische Fakultät, not a mathematics faculty."
+      },
+      "resolution": "Неподтверждённое обозначение «декан математического факультета» удалено из RU/EN.",
+      "evidence_url": "https://www.sub.uni-goettingen.de/fileadmin/media/texte/spezialsammlungen/Spezialinventar_Naturwissenschaften_2001.pdf"
+    },
+    {
+      "id": "missing-humor-cover",
+      "question": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "У материала рубрики «Математики шутят» отсутствует фактическая обложка: поле figures и манифест изображений пусты. До публикации необходимо добавить обложку.",
+        "en": "This “Mathematicians Joke” item has no actual cover image: the figures field and image manifest are empty. A cover must be added before publication."
+      },
+      "resolution": "В обеих версиях добавлена согласованная редакцией обложка. https://github.com/Fuzzy-Technologies/history_math/pull/519#pullrequestreview-6045744187"
+    },
+    {
+      "id": "classification-anecdote-attribution",
+      "question": "Установить происхождение анекдота и его атрибуцию.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Установить происхождение анекдота и его атрибуцию.",
+        "en": "Establish the anecdote’s origin and attribution."
+      },
+      "resolution": "RU/EN исправлены по публикации Энгельберта Л. Шюкинга: рассказ Вольфганга Паули относится к задаче Эрнста Цермело на лекции по логике в Гёттингене.",
+      "evidence_url": "https://physicstoday.aip.org/features/jordan-pauli-politics-brecht-and-a-variable-gravitational-constant"
+    },
+    {
+      "id": "original-publication-url",
+      "question": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 07.07.2024; адрес нельзя восстанавливать предположительно.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Указать публичную ссылку на исходную публикацию, подтверждающую дату 07.07.2024; адрес нельзя восстанавливать предположительно.",
+        "en": "Provide a public link to the original publication confirming the date 07.07.2024; the address must not be guessed."
+      },
+      "resolution": "Редакция согласовала текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/519#pullrequestreview-6045744187"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/519#pullrequestreview-6045744187",
+    "source_commit": "3333dfa1e387ef943b9b8e49cd72856555f80192",
+    "source_review_id": 6045744187,
+    "approved_at": "2026-11-24T19:16:34Z",
+    "package_sha256": "26010a75ae83266998d2e1f7df51a7810100899997fe88c64b95ae82a3c72b55"
+  }
+}

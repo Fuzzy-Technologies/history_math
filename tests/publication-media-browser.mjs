@@ -62,7 +62,10 @@ try {
         images.forEach(image => { image.loading = 'eager'; });
         await Promise.all(images.map(image => image.decode()));
       });
-      assert.deepEqual(requests.filter(request => request.url.startsWith(storage.base)), [], 'Reading must not preload originals or PDFs');
+      for (const request of requests.filter(request => request.url.startsWith(storage.base + '/'))) {
+        assert.equal(request.type, 'image', 'Reading should request only preview images from the bucket');
+        assert.match(request.url.slice(storage.base.length), /^\/previews\/[a-f0-9]{64}\/[a-z0-9._-]+\.webp$/i);
+      }
       const convertedTrigger = page.locator('.image-trigger:has(img[data-original-storage="s3"][data-original-name$=".jpg"])');
       const trigger = convertedUrls.size && await convertedTrigger.count() ? convertedTrigger.first() :
         page.locator('.image-trigger:has(img[data-original-storage="s3"])').first();

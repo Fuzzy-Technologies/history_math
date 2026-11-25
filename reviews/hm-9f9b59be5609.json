@@ -1,0 +1,36 @@
+{
+  "review_version": 1,
+  "article_id": "hm-9f9b59be5609",
+  "reconciliation": {
+    "text": "Every substantive source paragraph retained and adapted into English.",
+    "comments": "No comment-placement blocks. The complete biographical introduction, hydrostatics paragraph, crown-and-bath legend and Eureka translation are retained. The original Vitruvius reference is placed once in Notes and linked to the verified open English edition. The crown episode was checked in Book IX, Introduction, sections 9–12; it is not conflated with a derivation of the buoyancy formula. The source illustration and its visible Eureka wording are unchanged.",
+    "images": "1 archival illustrations inspected and included.",
+    "digest": "The approved digest was checked against the complete source, including all substantive comments, and condensed into one or two finished sentences."
+  },
+  "manual_changes": [
+    "Source title moved to shared heading; source hashtags moved to metadata.",
+    "External links placed on descriptive words; English adaptation prepared from the complete source."
+  ],
+  "questions": [],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-05",
+    "package_sha256": "4d82d8e50c521b9eb46a1b5f8e77dcc2260af1bc9d0dc7bf9b3a26e2216e843e",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/570#pullrequestreview-5791925715",
+    "source_commit": "c24f145d542a815d2f77c392a7692579c0fc8861",
+    "source_review_id": 5791925715,
+    "approved_at": "2026-11-05T20:51:30Z",
+    "delegated_by": "Tim55667757"
+  },
+  "owner_requested_revisions": [
+    {
+      "date": "2026-11-24",
+      "scope": "title only",
+      "authority": "Owner-approved journal title correction across the published Russian and English editions.",
+      "previous_title_sha256": "47044606605c9cb9bdfbde994f113f873ede7720a4b2acd5ade30a09e867d94e",
+      "title_sha256": "d7e58ea889034629d4133928d3e6236571677c6145590e2deb4647515e3d78a6",
+      "previous_package_sha256": "c56cac22f046e9cd1793b904b80a385a6d7c9cd96c7f7c3bba33741fb9eb29ed"
+    }
+  ]
+}

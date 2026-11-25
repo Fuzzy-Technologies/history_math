@@ -1,0 +1,60 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f8243aa3fd71-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Check the anniversary of *Arithmetic*: for the 1703 first edition, the 2023 article marks 320 years.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Check the anniversary of *Arithmetic*: for the 1703 first edition, the 2023 article marks 320 years.",
+        "ru": "Сверить юбилейную дату «Арифметики»: для первого издания 1703 года материал 2023 года отмечает 320-летие."
+      },
+      "resolution": "Corrected 220 years to 320 years in both editions."
+    },
+    {
+      "id": "q2",
+      "question": "Clarify biographical traditions about Magnitsky’s surname and education, and the claim about mathematical terminology.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Clarify biographical traditions about Magnitsky’s surname and education, and the claim about mathematical terminology.",
+        "ru": "Уточнить биографические предания о фамилии и обучении Магницкого, а также формулировку о математической терминологии."
+      },
+      "resolution": "Disputed details are identified as biographical tradition or as disputed; the absolute priority claim was replaced by a verifiable statement about usage and establishment in *Arithmetic*."
+    },
+    {
+      "id": "q3",
+      "question": "Provide a verifiable source for the relief portrait of Magnitsky, identify the sculptor and photographer or the responsible institution, and document the licence or other confirmed basis for reproduction; keep the attribution synchronized in RU and EN.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Provide a verifiable source for the relief portrait of Magnitsky, identify the sculptor and photographer or the responsible institution, and document the licence or other confirmed basis for reproduction; keep the attribution synchronized in RU and EN.",
+        "ru": "Укажите проверяемый источник рельефного портрета Магницкого, автора рельефа и фотографии либо учреждение-правообладателя, а также лицензию или иное подтверждённое основание воспроизведения; синхронизируйте атрибуцию в RU/EN."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/344#pullrequestreview-6045720062"
+    },
+    {
+      "id": "q4",
+      "question": "Verify the claim that a royal decree granted Magnitsky nobility in 1704: published research notes that no documentary evidence of his personal ennoblement has been found and relates the family’s later noble status to his son’s rank.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Verify the claim that a royal decree granted Magnitsky nobility in 1704: published research notes that no documentary evidence of his personal ennoblement has been found and relates the family’s later noble status to his son’s rank.",
+        "ru": "Проверить утверждение о пожаловании Магницкому дворянства указом 1704 года: в опубликованном исследовании отмечено отсутствие документальных свидетельств его личного дворянства, а последующий дворянский статус семьи связывается с чином сына."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. https://github.com/Fuzzy-Technologies/history_math/pull/344#pullrequestreview-6045720062"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/344#pullrequestreview-6045720062",
+    "source_commit": "6ea4a40716d0c084c45a4423ac7a49d663878e2c",
+    "source_review_id": 6045720062,
+    "approved_at": "2026-11-24T19:14:51Z",
+    "package_sha256": "b270a0bd1577ead92b83487719994d4473286d78f9f32a7c41815675200308bd"
+  }
+}

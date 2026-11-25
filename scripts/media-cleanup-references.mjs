@@ -230,8 +230,7 @@ export async function currentPublication({request = fetch, pages: checkPages = t
       const found = sourceMediaReferences(text);
       if (!found.keys.includes(byUrl.get(article.pdf_url).key)) throw new Error('Article PDF link disagrees with publication manifest');
       for (const key of found.keys) protectedKeys.add(key);
-      // Reading previews stay on Pages; full-view/download originals must use
-      // the configured S3 bucket and a verified receipt identity.
+      // Full-view/download originals must match a verified receipt identity.
       const expected = new Map(all.map(object => [object.url, object]));
       for (const match of text.matchAll(/\bdata-original="([^"]+)"/g)) {
         if (!match[1].startsWith(storage.base + '/originals/') || !expected.has(match[1])) throw new Error('Published original link disagrees with S3 receipt');

@@ -1,0 +1,28 @@
+{
+  "review_version": 1,
+  "article_id": "hm-f483b6674a23-en",
+  "questions": [
+    {
+      "id": "pascal-carry-threshold",
+      "question": "Please clarify “numbers larger than 10” and “binomial coefficients larger than 10”: carrying is already required for the coefficient 10, which is bracketed in the first example. Please agree wording such as “at least 10” or “coefficients with two or more digits”. The parenthesised concatenation strings are preserved as literal strings so that they are not mistaken for ordinary multiplication.",
+      "blocking": true,
+      "state": "resolved",
+      "localizations": {
+        "source": "Please clarify “numbers larger than 10” and “binomial coefficients larger than 10”: carrying is already required for the coefficient 10, which is bracketed in the first example. Please agree wording such as “at least 10” or “coefficients with two or more digits”. The parenthesised concatenation strings are preserved as literal strings so that they are not mistaken for ordinary multiplication.",
+        "ru": "Уточнить слова «больших, чем 10» и «большие, чем 10 биномиальные коэффициенты»: перенос нужен уже для коэффициента 10, который и выделен в первом примере. Нужна согласованная формулировка «не менее 10» или «двузначные и более крупные коэффициенты»; обозначения конкатенации со скобками сохранены как строки, чтобы не выдавать их за обычное умножение."
+      },
+      "resolution": "Both editions specify that carrying begins at coefficient 10."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-06",
+    "package_sha256": "0a8f1f288ee70627680d8671f99e6a9c8af2ac90ef546277c415cadcbb296a6b",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/685#pullrequestreview-5805937962",
+    "source_commit": "076a205d21d9cc9de1ee857ecfd8a22112dd8184",
+    "source_review_id": 5805937962,
+    "approved_at": "2026-11-06T19:38:29Z",
+    "delegated_by": "Tim55667757"
+  }
+}

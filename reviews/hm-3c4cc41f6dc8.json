@@ -1,0 +1,49 @@
+{
+  "review_version": 1,
+  "article_id": "hm-3c4cc41f6dc8",
+  "questions": [
+    {
+      "id": "kondratyev-unconfirmed-identification",
+      "question": "В источнике Федина № 43 указана только фамилия Кондратьев, без имени и вуза. Связь с Владимиром Александровичем Кондратьевым не доказана; решить, оставить ли предположительную идентификацию в обеих версиях примечания.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "В источнике Федина № 43 указана только фамилия Кондратьев, без имени и вуза. Связь с Владимиром Александровичем Кондратьевым не доказана; решить, оставить ли предположительную идентификацию в обеих версиях примечания.",
+        "en": "Fedin’s no. 43 gives only the surname Kondratyev, without a first name or university. The connection with Vladimir Aleksandrovich Kondratyev is unproved; decide whether to retain or omit this speculative identification in both versions."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/608#pullrequestreview-6040177200"
+    },
+    {
+      "id": "source-authorship-attribution",
+      "question": "Текст близко следует анекдоту 43 С. Н. Федина, но авторство и корневой rights_basis целиком отданы Мансуру Гильмуллину. Нужно развести авторство исходного текста и вклад Мансура — адаптацию и иллюстрацию.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Текст близко следует анекдоту 43 С. Н. Федина, но авторство и корневой rights_basis целиком отданы Мансуру Гильмуллину. Нужно развести авторство исходного текста и вклад Мансура — адаптацию и иллюстрацию.",
+        "en": "The text closely follows S. N. Fedin’s anecdote 43, yet authorship and the root rights_basis are assigned entirely to Mansur Gilmullin. Distinguish the source text’s authorship from Mansur’s adaptation and illustration work."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/608#pullrequestreview-6040177200"
+    },
+    {
+      "id": "cover-illustration-provenance",
+      "question": "Пометка «авторская иллюстрация» и запись «Авторский архив Мансура Гильмуллина» подтверждают хранение файла, но не устанавливают автора изображения, правообладателя, публичный источник и лицензию. До публикации нужно указать эти сведения либо снять неподтверждённое авторство.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Пометка «авторская иллюстрация» и запись «Авторский архив Мансура Гильмуллина» подтверждают хранение файла, но не устанавливают автора изображения, правообладателя, публичный источник и лицензию. До публикации нужно указать эти сведения либо снять неподтверждённое авторство.",
+        "en": "The label “author’s illustration” and the entry “Mansur Gilmullin’s archive” establish file custody, but do not identify the image creator, rightsholder, public source, or licence. Before publication, provide those details or remove the unsupported authorship claim."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. Решение зафиксировано в https://github.com/Fuzzy-Technologies/history_math/pull/608#pullrequestreview-6040177200"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/608#pullrequestreview-6040177200",
+    "source_commit": "509f5e0be370273f0ca6fd6cbe2e5aefb1cc7c1e",
+    "source_review_id": 6040177200,
+    "approved_at": "2026-11-24T13:38:10Z",
+    "package_sha256": "ff4df81fbdf269b440592bdce3692808e861d8588a8a3dac8678736bf0896873"
+  }
+}

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {mkdtemp, mkdir, writeFile, readFile, rm, access, symlink} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {resolve, dirname} from 'node:path';
-import {HeadObjectCommand, PutObjectCommand} from '@aws-sdk/client-s3';
+import {HeadObjectCommand, ListObjectsV2Command, PutObjectCommand} from '@aws-sdk/client-s3';
 import {mediaObject, storage, sha256, assertBytes, validateObject, configuredClient, uploadVerified, transfer, readWithRetries} from '../scripts/s3-media.mjs';
 import {publicationPlan, rewriteMedia, finalizePublication, requireReceipt, sourceBytes, localBytes} from '../scripts/publication-media.mjs';
 import {eligiblePR, pullRequestObjects, deployedPdfObjects, copyPublishedPdfs, preflightMedia, githubData, revisionBytes} from '../scripts/backfill-media.mjs';
@@ -121,6 +121,25 @@ test('upload reuses verified objects and verifies every new copy with anonymous 
     assert.equal(reads, 1);
     assert.equal(Object.hasOwn(result, 'source'), false);
   }
+});
+
+test('a paginated S3 list saves HEADs while every reused object still needs correct public bytes', async () => {
+  let pages = 0;
+  const client = {send: async command => {
+    assert.ok(command instanceof ListObjectsV2Command);
+    assert.equal(command.input.Prefix, 'originals/');
+    pages++;
+    if (!command.input.ContinuationToken) return {IsTruncated: true, NextContinuationToken: 'page2'};
+    assert.equal(command.input.ContinuationToken, 'page2');
+    return {IsTruncated: false, Contents: [{Key: object.key}]};
+  }};
+  const source = () => assert.fail('Listed objects must not be overwritten');
+  const options = {inventoryPrefix: 'originals/', request: async () => publicResponse()};
+  assert.equal((await transfer([object], client, source, options))[0].verified, true);
+  assert.equal(pages, 2);
+  await assert.rejects(transfer([object], client, source, {...options,
+    request: async () => publicResponse(object, Buffer.from('corrupt'))}), /integrity mismatch/);
+  await assert.rejects(transfer([object], {send: async () => ({IsTruncated: true, NextContinuationToken: 'same'})}, source, options), /Incomplete S3 object list/);
 });
 
 test('forbidden operations, failed uploads and corrupt public copies cannot produce receipts', async () => {

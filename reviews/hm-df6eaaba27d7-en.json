@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-df6eaaba27d7-en",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Clarify how many Pascalines were completed: the more than fifty models in the royal privilege were experimental variants, whereas museum sources report about twenty finished machines; correct the conflation in both editions.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Clarify how many Pascalines were completed: the more than fifty models in the royal privilege were experimental variants, whereas museum sources report about twenty finished machines; correct the conflation in both editions.",
+        "ru": "Уточнить число изготовленных паскалин: более 50 моделей в королевской привилегии — это опытные варианты, тогда как музейные источники указывают примерно 20 завершённых машин; исправить смешение этих чисел в обеих редакциях."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/331#pullrequestreview-6039873542"
+    },
+    {
+      "id": "q2",
+      "question": "For the portrait of Blaise Pascal, identify the source work and its artist, a public source record and the licence or public-domain basis; holding a copy in the author’s archive does not establish authorship of a third-party historical image.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "For the portrait of Blaise Pascal, identify the source work and its artist, a public source record and the licence or public-domain basis; holding a copy in the author’s archive does not establish authorship of a third-party historical image.",
+        "ru": "Для портрета Блеза Паскаля указать исходное произведение и его автора, публичный источник и лицензию либо основание общественного достояния; наличие копии в авторском архиве не подтверждает авторство исторического изображения третьего лица."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/331#pullrequestreview-6039873542"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/331#pullrequestreview-6039873542",
+    "source_commit": "9412cf45fb427b2b3accc1e8220b7254f5189237",
+    "source_review_id": 6039873542,
+    "approved_at": "2026-11-24T13:17:51Z",
+    "package_sha256": "c865041b772553aafd9f26c5ebbd2d16f2657f3865ba022be8628c8e342b1694"
+  }
+}

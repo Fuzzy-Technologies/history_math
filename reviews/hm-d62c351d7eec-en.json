@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-d62c351d7eec-en",
+  "questions": [
+    {
+      "id": "herodotus-scythian-custom",
+      "question": "Please identify the passage in Herodotus supporting the claim about a Scythian custom of selling land according to the distance covered in a day. The published notes to the material give no such reference.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Please identify the passage in Herodotus supporting the claim about a Scythian custom of selling land according to the distance covered in a day. The published notes to the material give no such reference.",
+        "ru": "Указать конкретное место у Геродота, на которое опирается утверждение о скифском обычае продажи земли по дневному обходу. В опубликованных примечаниях к материалу такая ссылка не приведена."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/641#pullrequestreview-6040216495"
+    },
+    {
+      "id": "tolstoy-illustration-provenance",
+      "question": "For the historical illustration to Tolstoy’s story, identify the original edition, illustrator, reproduction source, and confirmed rights status; storage in the author’s archive does not make the image Mansur Gilmullin’s work.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "For the historical illustration to Tolstoy’s story, identify the original edition, illustrator, reproduction source, and confirmed rights status; storage in the author’s archive does not make the image Mansur Gilmullin’s work.",
+        "ru": "Для старинной иллюстрации к рассказу Толстого установить исходное издание, имя художника, источник воспроизведения и подтверждённый правовой статус; хранение в авторском архиве не делает изображение работой Мансура Гильмуллина."
+      },
+      "resolution": "The editors accepted the reviewed version for publication. See https://github.com/Fuzzy-Technologies/history_math/pull/641#pullrequestreview-6040216495"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/641#pullrequestreview-6040216495",
+    "source_commit": "5566ecad5bde37ddcb1ac381457b2809093e845b",
+    "source_review_id": 6040216495,
+    "approved_at": "2026-11-24T13:40:44Z",
+    "package_sha256": "784bec530f0e99ed1bdbcafd69bfa09f3fd8fe7987f669e4c15291f7ed5337c9"
+  }
+}

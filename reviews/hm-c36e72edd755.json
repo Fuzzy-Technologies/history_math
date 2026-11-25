@@ -1,0 +1,38 @@
+{
+  "review_version": 1,
+  "article_id": "hm-c36e72edd755",
+  "questions": [
+    {
+      "id": "required-joke-cover",
+      "question": "Добавить обязательную обложку для карточки рубрики «Математики шутят». В исходном посте иллюстрации не было, а в обеих версиях список figures сейчас пуст.",
+      "blocking": false,
+      "state": "resolved",
+      "localizations": {
+        "source": "Добавить обязательную обложку для карточки рубрики «Математики шутят». В исходном посте иллюстрации не было, а в обеих версиях список figures сейчас пуст.",
+        "en": "Add the required cover image for the Mathematicians Joke card. The source post had no illustration, and both editions currently have an empty figures list."
+      },
+      "resolution": "В обе версии добавлена утверждённая редакционная обложка. https://github.com/Fuzzy-Technologies/history_math/pull/481#pullrequestreview-6044602960"
+    },
+    {
+      "id": "original-authorship-sergey-fedin",
+      "question": "Подтвердить оригинальное авторство либо оформить обе шутки как адаптацию/цитирование Сергея Федина с публичным источником и правовым основанием: обе формулировки опубликованы в книге «Математики тоже шутят» не позднее 2009 года.",
+      "blocking": false,
+      "state": "accepted",
+      "localizations": {
+        "source": "Подтвердить оригинальное авторство либо оформить обе шутки как адаптацию/цитирование Сергея Федина с публичным источником и правовым основанием: обе формулировки опубликованы в книге «Математики тоже шутят» не позднее 2009 года.",
+        "en": "Confirm original authorship or present both jokes as adaptations/quotations of Sergei Fedin with a public source and legal basis: both wordings appeared in the book Mathematicians Joke Too no later than 2009."
+      },
+      "resolution": "Редакция приняла текущую версию для публикации. https://github.com/Fuzzy-Technologies/history_math/pull/481#pullrequestreview-6044602960"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "reviewed_by": "AIna",
+    "date": "2026-11-24",
+    "evidence_url": "https://github.com/Fuzzy-Technologies/history_math/pull/481#pullrequestreview-6044602960",
+    "source_commit": "afa69b330ddb3f24e623e11222044597e6cc392d",
+    "source_review_id": 6044602960,
+    "approved_at": "2026-11-24T17:57:34Z",
+    "package_sha256": "4cec82f0ae00ab90fdc85c826dfd645801c2fbc1c2e609f1203bfecc47eeddef"
+  }
+}
