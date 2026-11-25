@@ -56,7 +56,7 @@ export function restoreState(manifest, revision, legacyInventory) {
   if (incremental === undefined && revision === legacyRevision && manifest.objects.length === 2933) {
     previews = legacyPreviews(legacyInventory);
   } else {
-    if (incremental?.version !== 1 || incremental.revision !== revision || !Array.isArray(incremental.previews)) {
+    if (incremental?.version !== 1 || incremental.revision !== revision || !sha.test(incremental.preview_revision) || !Array.isArray(incremental.previews)) {
       throw new Error('Pages receipt does not match the deployed revision');
     }
     previews = incremental.previews;
@@ -64,7 +64,7 @@ export function restoreState(manifest, revision, legacyInventory) {
   }
   const objects = [...manifest.objects, ...previews.map(([key, bytes]) => previewReceipt(key, bytes))];
   publicationIndex(objects);
-  return {revision, objects};
+  return {revision, objects, previewRevision: incremental?.preview_revision ?? revision};
 }
 
 export function editionChanges(root, revision, head) {
@@ -115,12 +115,15 @@ export async function previousPublication() {
 }
 
 async function restore() {
-  const revision = await deployedRevision(repository, process.env.GH_TOKEN);
-  if (!revision) throw new Error('Cannot identify the last successful Pages deployment; no storage requests made');
   await mkdir(stateDirectory, {recursive: true});
-  const response = await fetch(receiptUrl + '?revision=' + revision, {redirect: 'error', cache: 'no-store', signal: AbortSignal.timeout(60000)});
+  const build = process.env.GITHUB_RUN_ID + '-' + process.env.GITHUB_RUN_ATTEMPT;
+  const response = await fetch(receiptUrl + '?build=' + encodeURIComponent(build), {redirect: 'error', cache: 'no-store', signal: AbortSignal.timeout(60000)});
   if (!response.ok) throw new Error('Cannot restore published media receipt: HTTP ' + response.status);
   const manifest = await response.json();
+  // The receipt becomes live atomically with Pages and outlives Actions history.
+  const revision = manifest.incremental === undefined
+    ? await deployedRevision(repository, process.env.GH_TOKEN) : manifest.incremental.revision;
+  if (!sha.test(revision)) throw new Error('Cannot identify the deployed revision; no storage requests made');
   let inventory;
   if (manifest.incremental === undefined && revision === legacyRevision) {
     const directory = resolve(stateDirectory, 'cutover');
@@ -130,6 +133,8 @@ async function restore() {
   }
   const previous = restoreState(manifest, revision, inventory);
   previous.changes = editionChanges(process.cwd(), revision, process.env.GITHUB_SHA);
+  previous.changedPreviews = previous.previewRevision === revision ? previous.changes.images :
+    editionChanges(process.cwd(), previous.previewRevision, process.env.GITHUB_SHA).images;
   await writeFile(resolve(stateDirectory, 'previous.json'), JSON.stringify(previous));
   console.log('Restored %d media identities from deployed revision %s', previous.objects.length, revision);
 }

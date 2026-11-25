@@ -14,7 +14,7 @@ export function rewritePreviewUrls(text, previews) {
   });
 }
 
-export async function publishPreviews(directory, client, {baseUrl, upload = publishChanges, sourceDirectory = resolve('site'), known, record} = {}) {
+export async function publishPreviews(directory, client, {baseUrl, upload = publishChanges, sourceDirectory = resolve('site'), known, record, changedPaths} = {}) {
   if (baseUrl !== storage.base) throw new Error('Unexpected preview delivery base URL');
   const site = await realpath(directory), source = await realpath(sourceDirectory);
   if (site === source || site.startsWith(source + sep) || source.startsWith(site + sep)) throw new Error('Expected disposable Pages output');
@@ -31,6 +31,9 @@ export async function publishPreviews(directory, client, {baseUrl, upload = publ
       throw new Error('Invalid JPEG preview');
     }
     const object = mediaObject('previews', basename(file), sha256(bytes), bytes.length);
+    if (changedPaths && !known.has(object.key) && !changedPaths.has(path)) {
+      throw new Error('Unchanged preview has no matching published receipt: ' + path);
+    }
     images.set(object.key, {...object, file});
     paths.set(path, `${baseUrl}/${object.key}`);
     pagesBytes += bytes.length;
@@ -58,8 +61,9 @@ async function main() {
     const previous = await previousPublication();
     const path = resolve(process.argv[2], 'assets/publication-media.json');
     const result = await publishPreviews(process.argv[2], client, {baseUrl: process.env.PREVIEW_DELIVERY_BASE_URL,
-      known: publicationIndex(previous.objects), record: async receipt => {
+      known: publicationIndex(previous.objects), changedPaths: new Set(previous.changedPreviews), record: async receipt => {
         const manifest = JSON.parse(await readFile(path, 'utf8'));
+        manifest.incremental.preview_revision = manifest.incremental.revision;
         manifest.incremental.previews = receipt.map(({key, bytes}) => [key, bytes]);
         manifest.incremental.digest = receiptDigest(manifest.objects, manifest.incremental.previews);
         await writeFile(path, JSON.stringify(manifest) + '\n');

@@ -99,12 +99,12 @@ export async function buildPdfs(siteDirectory, {cacheDirectory = '.pdf-cache', f
   for (const article of manifest.articles) {
     const source = await readFile(resolve(root, '.' + article.url, 'index.html'), 'utf8');
     const html = printImageSources(printDocument(source, article, manifest.baseurl));
+    const assets = await dependencies(html, manifest.baseurl + article.url); // Missing assets fail even on cache hits.
     const proof = published && reusablePdf(article, html, oldPdfs, changedArticles, changedImages);
     if (proof) {
       receipts[article.pdf_url] = proof;
       continue;
     }
-    const assets = await dependencies(html, manifest.baseurl + article.url); // Missing assets fail even on cache hits.
     const key = digest(JSON.stringify({engine, html, assets, origin: manifest.origin, baseurl: manifest.baseurl}));
     keys.add(key);
     const bytes = !force && fonts.length ? await readCachedPdf(cache, key) : null;

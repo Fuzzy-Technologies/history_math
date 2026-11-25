@@ -62,7 +62,7 @@ test('invalid input, failed writes and mismatched new-object metadata stop publi
 
 test('publication receipts are bound to their deployed commit, object identities and preview set', () => {
   const revision = 'a'.repeat(40), objects = [proof(pdf)], previews = [[image.key, image.bytes]];
-  const manifest = {version: 1, objects, incremental: {version: 1, revision, previews, digest: receiptDigest(objects, previews)}};
+  const manifest = {version: 1, objects, incremental: {version: 1, revision, preview_revision: revision, previews, digest: receiptDigest(objects, previews)}};
   assert.equal(restoreState(manifest, revision).objects.length, 2);
   assert.throws(() => restoreState(manifest, 'b'.repeat(40)), /deployed revision/);
   assert.throws(() => restoreState({...manifest, incremental: {...manifest.incremental, previews: []}}, revision), /Incomplete/);

@@ -236,11 +236,17 @@ async function main() {
     const previous = await previousPublication();
     const reused = JSON.parse(await readFile(resolve(stateDirectory, 'reused-pdfs.json'), 'utf8'));
     const plan = await publicationPlan(process.cwd(), args[index + 1], reused);
+    const known = publicationIndex(previous.objects), changed = new Set(previous.changes.images);
+    for (const {path, object} of plan.images) {
+      if (!known.has(object.key) && !changed.has(path)) throw new Error('Unchanged original has no published receipt: ' + path);
+    }
     const receipt = await publishChanges(plan.objects, client,
-      object => sourceBytes(object, mediaRead, undefined, {readStored: false}), {known: publicationIndex(previous.objects)});
+      object => sourceBytes(object, mediaRead, undefined, {readStored: false}), {known});
     const revision = process.env.GITHUB_SHA;
     if (!/^[a-f0-9]{40}$/.test(revision)) throw new Error('Missing publication commit');
-    const incremental = {version: 1, revision, previews: [], digest: receiptDigest(receipt, [])};
+    // Retain already published preview keys when delivery temporarily switches back to Pages.
+    const previews = previous.objects.filter(object => object.key.startsWith('previews/')).map(({key, bytes}) => [key, bytes]);
+    const incremental = {version: 1, revision, preview_revision: previous.previewRevision, previews, digest: receiptDigest(receipt, previews)};
     console.log(JSON.stringify(await finalizePublication(args[index + 1], plan, receipt, {pruneOutput: args.includes('--prune-output'), incremental})));
   } finally { client.destroy(); }
 }
