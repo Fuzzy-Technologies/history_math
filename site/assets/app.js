@@ -311,7 +311,7 @@ function element(tag, className, text) {
 function card(record, className) {
   const node = element('article', className);
   const suffix = record.status === 'demo' ? (ru ? ' · Демо' : ' · Demo') : '';
-  node.append(element('p', 'eyebrow', `${labels[record.type]}${suffix}`));
+  node.append(element('p', 'eyebrow', `${record.catalogLabel || labels[record.type]}${suffix}`));
   const heading = element('h3', '');
   const link = element('a', '', record.title);
   link.href = record.url;
@@ -672,6 +672,13 @@ const controls = document.querySelector('.catalog-controls');
 if (controls) {
   try {
     const type = document.querySelector('#type-filter');
+    const genres = JSON.parse(document.querySelector('#catalog-genres').textContent);
+    type.querySelector('[value="essay"]').value = 'short-essay';
+    const problems = type.querySelector('[value="problem"]');
+    for (const [key, label] of Object.entries(genres.options)) type.add(new Option(label, key), problems);
+    if (new URLSearchParams(location.search).get('type') === 'essay') {
+      type.add(new Option(genres.legacy_essays, 'essay'));
+    }
     const tag = document.querySelector('#tag-filter');
     const pageSize = document.querySelector('#page-size');
     const list = document.querySelector('.catalog-list');
@@ -718,7 +725,9 @@ if (controls) {
       type.value = state.type;
       tag.value = state.tag;
       pageSize.value = String(result.perPage);
-      list.replaceChildren(...result.items.map(readingCard));
+      list.replaceChildren(...result.items.map(record => readingCard({
+        ...record, type: record.catalog_type || record.type, catalogLabel: genres.labels[record.catalog_type]
+      })));
       document.querySelector('#catalog-count').textContent = ru ? `Публикаций: ${result.total}` : `Articles: ${result.total}`;
       document.querySelector('#catalog-empty').hidden = result.total !== 0;
       document.querySelector('#catalog-range').textContent = ru ? `Показано ${result.start}–${result.end} из ${result.total}` : `Showing ${result.start}–${result.end} of ${result.total}`;

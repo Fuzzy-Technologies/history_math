@@ -89,3 +89,16 @@ test('legacy topic variants resolve to one canonical catalog option and retain a
   }
   assert.equal(catalogState(new URLSearchParams({tag: 'History'}), {tags}).tag, '');
 });
+
+test('catalog genres narrow the result while legacy essay links still include all former essays', () => {
+  const items = ['people', 'longread', 'short-essay', 'instrument'].map(catalog_type => ({
+    type: 'essay', catalog_type, tags: ['geometry']
+  }));
+  items.push({type: 'instrument', catalog_type: 'instrument', tags: []});
+  const filter = type => catalogPage(items, {type, page: 1, perPage: 10}).items;
+  for (const type of ['people', 'longread', 'short-essay']) {
+    assert.deepEqual(filter(type), items.filter(item => item.catalog_type === type));
+  }
+  assert.equal(filter('instrument').length, 2);
+  assert.deepEqual(filter('essay'), items.slice(0, 4));
+});

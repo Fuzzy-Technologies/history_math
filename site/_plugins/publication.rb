@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative "topics"
+require_relative "catalog_types"
 
 require "json"
 require "cgi"
@@ -138,13 +139,15 @@ module HistoryMath
           doc.data["translations"] = group.map { |translation| {"lang" => translation.data["lang"], "url" => translation.url} }
         end
       end
-      %w[en ru].each do |language|
+      catalog_types = CatalogTypes.new(site.data.fetch("home_rubrics"))
+      %w[ru en].each do |language|
         records = site.data.fetch("discovery_documents").fetch(language).map do |doc|
           body = (doc.data["translation_notice"] ? doc.data["description"] : doc.content).gsub(/\{\{[\s\S]*?\}\}|\{%[\s\S]*?%\}/, " ")
           html = site.find_converter_instance(Jekyll::Converters::Markdown).convert(body)
           text = CGI.unescapeHTML(html.gsub(/<[^>]*>/, " ")).gsub(/\s+/, " ").strip
+          doc.data["catalog_type"] = catalog_types.for_document(doc, text)
           {title: doc.data["title"], description: doc.data["description"], tags: Topics.labels(doc.data["tags"]),
-           type: doc.data["type"], series: doc.data["series"], language: language, date: doc.data["date"].strftime("%Y-%m-%d"),
+           type: doc.data["type"], catalog_type: doc.data["catalog_type"], series: doc.data["series"], language: language, date: doc.data["date"].strftime("%Y-%m-%d"),
            url: site.baseurl + doc.url, text: text, translation_notice: doc.data["translation_notice"] == true, status: doc.data["status"], preview_image: doc.data["preview_image"] && site.baseurl + (image_assets.dig(doc.data["preview_image"], "variants", 0, "path") || doc.data["preview_image"])}
         end
         page = Jekyll::PageWithoutAFile.new(site, site.source, "assets", "search-#{language}.json")
