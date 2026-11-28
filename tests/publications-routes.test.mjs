@@ -52,7 +52,7 @@ test('Russian discovery labels consistently describe publications while English 
   assert.equal(ui.ru.all, 'Все публикации');
   assert.equal(ui.ru.type, 'Тип публикации');
   assert.equal(ui.ru.materials_label, 'Публикации журнала');
-  for (const value of Object.values(ui.ru)) assert.doesNotMatch(value, /материал|читальн/iu);
+  assert.doesNotMatch(JSON.stringify(ui.ru), /материал|читальн/iu);
   assert.equal(ui.en.reading, 'Reading room');
   assert.equal(ui.en.read, 'Explore the articles');
   assert.equal(ui.en.type, 'Article type');

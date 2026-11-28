@@ -27,7 +27,7 @@
     "catalog_genres": {
       "labels": {"short-essay": "Очерк", "longread": "Лонгрид", "people": "Персоналия"},
       "options": {"longread": "Лонгриды", "people": "Персоналии"},
-      "legacy_essays": "Все материалы прежнего типа «Очерк»"
+      "legacy_essays": "Все публикации прежнего типа «Очерк»"
     },
     "problems": "Задачи",
     "instruments": "Инструменты",
