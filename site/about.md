@@ -11,9 +11,11 @@ permalink: /about/
 
 ## Editors
 
-**Mansur Gilmullin** is the journal's editor, a mathematician, educator and historian of mathematics. He writes about scholars, discoveries, problems and the history of mathematics education.
+[**Mansur Gilmullin**](https://www.linkedin.com/in/mgilmullin) is a contributing author and editor of the journal, a mathematician, educator and historian of mathematics. He writes about scholars, discoveries, problems and the history of mathematics education.
 
-**Timur Gilmullin** is an engineer and the founder of Fuzzy Technologies. He helps collect, prepare and publish the materials.
+[**Timur Gilmullin**](https://www.linkedin.com/in/tgilmullin) is an engineer and the founder of Fuzzy Technologies. He helps collect, prepare and publish the materials.
+
+[Contact the editors](https://t.me/tgilmullin).
 
 ## Where else to read about us
 
