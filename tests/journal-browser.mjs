@@ -3,7 +3,7 @@ import {readFile, stat, mkdir} from 'node:fs/promises';
 import {resolve, extname} from 'node:path';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
-import {journalGroups, newestFirst, seriesKey, rubricArticles, articleCandidates, search} from '../site/assets/core.js';
+import {journalGroups, newestFirst, seriesKey, heroWindow, rubricArticles, articleCandidates, search} from '../site/assets/core.js';
 import {publishedArticles, matchesArticleUrl} from './published-articles.mjs';
 import {hasStrayHeadingPeriod} from './journal-heading.mjs';
 
@@ -61,7 +61,7 @@ async function checkReading(page, records, language, randomized = true) {
 async function checkArticlePicks(page, records, language) {
   const container = page.locator('#article-picks');
   const tags = (await container.getAttribute('data-exclude-tags')).split('|');
-  const pool = articleCandidates(records, language, tags);
+  const pool = articleCandidates(heroWindow(records, language), language, tags);
   const urls = await container.locator('a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
   assert.equal(await page.locator('#article-picks-heading').textContent(), language === 'ru' ? 'Статьи' : 'Articles');
   assert.equal(urls.length, Math.min(3, pool.length));
@@ -184,7 +184,7 @@ try {
       assert.equal(await page.locator('.plate-label, .carousel-status, .journal-pagination').count(), 0);
       for (const rubric of await page.locator('[data-rubric]').all()) {
         const tags = (await rubric.getAttribute('data-rubric-tags')).split('|');
-        const pool = rubricArticles(index, language, tags);
+        const pool = rubricArticles(heroWindow(index, language), language, tags);
         assert.equal(await rubric.locator('a').count(), pool.length ? 1 : 0);
         assert.equal(await rubric.locator('.selection-empty').count(), pool.length ? 0 : 1);
         if (pool.length) {
@@ -305,7 +305,7 @@ try {
     for (const rubric of await page.locator('[data-rubric]').all()) {
       const tags = (await rubric.getAttribute('data-rubric-tags')).split('|');
       const href = await rubric.locator('a').getAttribute('href');
-      assert.ok(rubricArticles(fixtureRecords, language, tags).some(record => record.url === href));
+      assert.ok(rubricArticles(heroWindow(fixtureRecords, language), language, tags).some(record => record.url === href));
     }
     assert.ok((await urls('#archive-cards h3 a')).every(url => groups.archive.some(record => record.url === url)));
     const all = [...await urls('#latest-cards h3 a'), ...await urls('#archive-cards h3 a')];
