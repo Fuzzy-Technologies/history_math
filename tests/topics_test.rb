@@ -70,42 +70,33 @@ end
 class ReadingSelectionTest < Minitest::Test
   Article = Struct.new(:url, :data)
 
-  def rules
-    JSON.parse(File.read(File.expand_path("../site/_data/reading_selection.json", __dir__)))
-  end
-
-  def articles(count, glossary = 0)
-    Array.new(count) do |index|
-      Article.new("/article-#{index.to_s.rjust(3, '0')}/", {"date" => "2026-10-21",
-        "tags" => index >= count - glossary ? ["Глоссарий"] : ["History of Mathematics"]})
+  def test_both_locales_use_distinct_eligible_cards_from_the_newest_half
+    config = JSON.parse(File.read(File.expand_path("../site/_data/reading_selection.json", __dir__)))
+    rubrics = JSON.parse(File.read(File.expand_path("../site/_data/home_rubrics.json", __dir__)))
+    %w[ru en].each do |lang|
+      tags = rubrics.to_h { |r| [r["id"], r.fetch(lang).fetch("tags")] }
+      rules = config.merge("rubric_tags" => tags)
+      articles = Array.new(65) do |i|
+        group = %w[humor people instruments other][i % 4]
+        Article.new("/article-#{i.to_s.rjust(3, '0')}", {"date" => "2026-10-21",
+          "group" => group, "type" => group == "instruments" ? "instrument" : "essay",
+          "tags" => tags.fetch(group, []).take(1)})
+      end
+      notice = Article.new("/notice", {"date" => "2026-10-22", "translation_notice" => true})
+      recent = articles.last(33).reverse
+      excluded = recent.take(5).map(&:url)
+      groups = HistoryMath::ReadingSelection.groups(articles + [notice], rules, excluded: excluded)
+      reading = groups.fetch("reading")
+      assert_equal config.fetch("group_limits"), reading.group_by { |r| r.data["group"] }.transform_values(&:length)
+      assert_equal reading.map(&:url).sort.reverse, reading.map(&:url)
+      assert_empty reading.map(&:url) & excluded
+      assert_empty reading - recent
+      assert_equal 56, groups.fetch("archive").length
+      assert_includes groups.fetch("archive"), notice
+      assert_empty reading & groups.fetch("archive")
+      assert_empty HistoryMath::ReadingSelection.groups(articles, rules, excluded: recent.map(&:url)).fetch("reading")
+      sparse = articles.select { |r| r.data["group"] == "other" }
+      assert_equal sparse.last(3).reverse, HistoryMath::ReadingSelection.groups(sparse, rules).fetch("reading")
     end
-  end
-
-  def test_fallback_balances_a_glossary_batch_and_keeps_archive_disjoint
-    input = articles(43, 27)
-    groups = HistoryMath::ReadingSelection.groups(input, rules)
-    assert_equal 10, groups.fetch("reading").length
-    assert_equal 3, groups.fetch("reading").count { |article| article.data["tags"].include?("Глоссарий") }
-    assert_equal 33, groups.fetch("archive").length
-    assert_empty groups.fetch("reading") & groups.fetch("archive")
-    assert_equal groups.fetch("reading").map(&:url).sort.reverse, groups.fetch("reading").map(&:url)
-  end
-
-  def test_window_sparse_series_and_empty_fallback
-    input = articles(80, 27)
-    groups = HistoryMath::ReadingSelection.groups(input, rules)
-    assert groups.fetch("reading").all? { |article| input.last(50).include?(article) }
-    assert_equal 10, HistoryMath::ReadingSelection.groups(articles(12, 12), rules).fetch("reading").length
-    assert_equal 5, HistoryMath::ReadingSelection.groups(articles(5, 5), rules).fetch("reading").length
-    assert_equal({"reading" => [], "archive" => []}, HistoryMath::ReadingSelection.groups([], rules))
-  end
-
-  def test_series_keys_use_explicit_series_and_narrow_glossary_tags
-    article = Article.new("/example/", {"series" => "History_of_Computing", "tags" => ["History of Mathematics"]})
-    assert_equal "history of computing", HistoryMath::ReadingSelection.series_key(article, rules)
-    article.data.delete("series")
-    assert_equal "", HistoryMath::ReadingSelection.series_key(article, rules)
-    article.data["tags"] = ["гЛоСсАрИй"]
-    assert_equal "glossary", HistoryMath::ReadingSelection.series_key(article, rules)
   end
 end

@@ -53,7 +53,8 @@ export function selection(records, count, previous = [], random = Math.random) {
   }
   let picked = shuffled.slice(0, count);
   if (unique.length > count && picked.every(record => previous.includes(record.url))) {
-    picked[picked.length - 1] = shuffled.find(record => !previous.includes(record.url));
+    const alternate = shuffled.find(record => !previous.includes(record.url));
+    if (alternate && picked.length) picked[picked.length - 1] = alternate;
   }
   return picked;
 }
@@ -66,40 +67,27 @@ export function anniversaries(records, now, language) {
     Number(record.date.slice(0, 4)) < year);
 }
 
-export function seriesKey(record, rules) {
-  const explicit = topicKey(record.series || '');
-  const keys = new Set([explicit, ...(record.tags || []).map(topicKey)]);
-  return rules.series_tags.find(group => group.tags.some(tag => keys.has(topicKey(tag))))?.id || explicit;
-}
-
 export function newestFirst(a, b) {
   return b.date.localeCompare(a.date) || (a.url < b.url ? 1 : a.url > b.url ? -1 : 0);
 }
 
-// Sample recent articles before sorting; series limits soften only to fill a sparse selection.
-export function journalGroups(records, language, rules, {previous = [], random = Math.random} = {}) {
+export function journalGroups(records, language, rules, {excluded = [], previous = [], random = Math.random} = {}) {
   const articles = Array.from(new Map(records.filter(record => record.language === language && record.status === 'published')
-    .sort(newestFirst).map(record => [record.url, record])).values());
-  const candidates = articles.slice(0, rules.pool_size);
-  const shuffled = selection(candidates, candidates.length, [], random);
-  const counts = new Map();
-  const selected = [], overflow = [];
-  for (const record of shuffled) {
-    const key = seriesKey(record, rules);
-    if (!key || (counts.get(key) || 0) < rules.series_limit) {
-      selected.push(record);
-      counts.set(key, (counts.get(key) || 0) + 1);
-    } else overflow.push(record);
+    .map(record => [record.url, record])).values()).sort(newestFirst);
+  const published = articles.filter(record => !record.translation_notice);
+  const recent = published.slice(0, Math.ceil(published.length / 2));
+  const hero = new Set(excluded);
+  const buckets = new Map(Object.keys(rules.group_limits).map(group => [group, []]));
+  const rubrics = Object.entries(rules.rubric_tags).map(([id, tags]) => [id, new Set(tags.map(topicKey))]);
+  for (const record of recent) {
+    if (hero.has(record.url)) continue;
+    const match = rubrics.find(([, tags]) => record.tags.some(tag => tags.has(topicKey(tag))));
+    const group = match ? match[0] : record.type === 'instrument' ? 'instruments' : 'other';
+    buckets.get(group).push(record);
   }
-  const reading = [...selected, ...overflow].slice(0, rules.card_count);
-  if (candidates.length > reading.length && reading.every(record => previous.includes(record.url))) {
-    const alternative = shuffled.find(record => !previous.includes(record.url));
-    if (alternative) {
-      const key = seriesKey(alternative, rules);
-      const sameSeries = reading.filter(record => key && seriesKey(record, rules) === key);
-      const replace = sameSeries.length >= rules.series_limit ? reading.indexOf(sameSeries.at(-1)) : reading.length - 1;
-      reading[replace] = alternative;
-    }
+  const reading = [];
+  for (const [group, candidates] of buckets) {
+    reading.push(...selection(candidates, rules.group_limits[group], previous, random));
   }
   const urls = new Set(reading.map(record => record.url));
   return {reading: reading.sort(newestFirst), archive: articles.filter(record => !urls.has(record.url))};

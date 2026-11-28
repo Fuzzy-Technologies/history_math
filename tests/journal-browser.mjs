@@ -4,7 +4,7 @@ import {readFile, stat, mkdir} from 'node:fs/promises';
 import {resolve, extname} from 'node:path';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
-import {journalGroups, newestFirst, seriesKey, rubricArticles, articleCandidates, search} from '../site/assets/core.js';
+import {journalGroups, newestFirst, rubricArticles, articleCandidates, search} from '../site/assets/core.js';
 import {publishedArticles, matchesArticleUrl} from './published-articles.mjs';
 import {hasStrayHeadingPeriod} from './journal-heading.mjs';
 
@@ -32,27 +32,18 @@ const errors = [];
 const records = JSON.parse(await readFile('_site/assets/search-ru.json', 'utf8'));
 const englishRecords = JSON.parse(await readFile('_site/assets/search-en.json', 'utf8'));
 await mkdir('test-results/journal-polish', {recursive: true});
-const readingRules = JSON.parse(await readFile('site/_data/reading_selection.json', 'utf8'));
 async function checkReading(page, records, language, randomized = true) {
   const articles = records.filter(record => record.language === language && record.status === 'published').sort(newestFirst);
+  const rules = JSON.parse(await page.locator('#latest-cards').getAttribute('data-selection'));
+  const excluded = await page.locator('#article-picks .hero-pick, #hero-picks .hero-pick').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
   const urls = await page.locator('#latest-cards h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
   const reading = urls.map(url => articles.find(record => record.url === url));
-  assert.equal(urls.length, Math.min(readingRules.card_count, articles.length));
+  const fallback = journalGroups(records, language, rules, {excluded, random: () => 1 - Number.EPSILON});
+  assert.equal(urls.length, fallback.reading.length);
   assert.equal(new Set(urls).size, urls.length);
-  assert.ok(reading.every(record => record && articles.slice(0, readingRules.pool_size).includes(record)));
+  assert.ok(urls.every(url => !excluded.includes(url)));
   assert.deepEqual(reading, [...reading].sort(newestFirst));
-  const counts = new Map();
-  let capacity = 0;
-  for (const record of articles.slice(0, readingRules.pool_size)) {
-    const key = seriesKey(record, readingRules);
-    if (!key) capacity++;
-    else counts.set(key, (counts.get(key) || 0) + 1);
-  }
-  capacity += [...counts.values()].reduce((sum, count) => sum + Math.min(count, readingRules.series_limit), 0);
-  if (capacity >= urls.length) {
-    for (const key of counts.keys()) assert.ok(reading.filter(record => seriesKey(record, readingRules) === key).length <= readingRules.series_limit);
-  }
-  if (!randomized) assert.deepEqual(reading, journalGroups(records, language, readingRules, {random: () => 1 - Number.EPSILON}).reading);
+  if (!randomized) assert.deepEqual(reading, fallback.reading);
   const archive = articles.filter(record => !urls.includes(record.url));
   const archiveUrls = await page.locator('#archive-cards h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
   assert.ok(archiveUrls.every(url => archive.some(record => record.url === url)));
