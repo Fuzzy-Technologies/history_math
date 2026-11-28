@@ -1,5 +1,5 @@
 const assetVersion = new URL(import.meta.url).search;
-const [{search, searchByTag, topicKey, rubricArticles, articleCandidates, archiveMeasurementBatches, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}, {loadVerifiedOriginal, nativeOriginalTarget}, {catalogState, catalogPage, catalogPageNumbers, catalogUrl}] = await Promise.all([
+const [{searchByTag, topicKey, rubricArticles, articleCandidates, archiveMeasurementBatches, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}, {loadVerifiedOriginal, nativeOriginalTarget}, {catalogState, catalogPage, catalogPageNumbers, catalogUrl}] = await Promise.all([
   import('./core.js' + assetVersion),
   import('./select.js' + assetVersion),
   import('./reading-position.js' + assetVersion),
@@ -630,7 +630,10 @@ if (form) {
     }
     status.textContent = ru ? 'Ищем…' : 'Searching…';
     try {
-      const records = await loadIndex(Boolean(query));
+      const [records, fullText] = await Promise.all([
+        loadIndex(Boolean(query)),
+        query ? import('./search.js' + assetVersion) : null
+      ]);
       if (request !== requestNumber) return;
       if (activeTag) {
         activeTag = records.flatMap(record => record.tags).find(tag => topicKey(tag) === topicKey(activeTag)) || activeTag;
@@ -639,8 +642,10 @@ if (form) {
         canonicalUrl.searchParams.set('tag', activeTag);
         history.replaceState(null, '', canonicalUrl);
       }
-      const searchable = records.filter(record => !record.translation_notice);
-      const matches = activeTag ? searchByTag(searchable, activeTag, language) : search(searchable, query, language);
+      const matches = activeTag
+        ? searchByTag(records.filter(record => !record.translation_notice), activeTag, language)
+        : await fullText.search(records, query, language, () => request === requestNumber);
+      if (request !== requestNumber) return;
       results.replaceChildren(...matches.map(record => card(record, 'search-result')));
       status.textContent = matches.length ? (ru ? `Найдено публикаций: ${matches.length}` : `Articles found: ${matches.length}`) : (ru ? 'Ничего не найдено. Попробуйте другое слово или тему.' : 'No matches. Try another word or topic.');
     } catch {

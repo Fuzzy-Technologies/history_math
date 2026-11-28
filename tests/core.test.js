@@ -1,20 +1,21 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {normalize, search, searchByTag, selection, anniversaries, topicKey, rubricArticles, articleCandidates, archiveMeasurementBatches} from '../site/assets/core.js';
+import {normalize, searchByTag, selection, anniversaries, topicKey, rubricArticles, articleCandidates, archiveMeasurementBatches} from '../site/assets/core.js';
+import {search} from '../site/assets/search.js';
 
 const records = [
   {title: 'Счёт и геометрия', description: '', text: 'Чертёж', tags: ['идеи'], type: 'essay', language: 'ru', date: '2025-10-01', url: '/a/'},
   {title: 'English', description: '', text: 'geometry', tags: [], type: 'note', language: 'en', date: '2024-10-01', url: '/b/'}
 ];
-test('Cyrillic search folds case, ё/е, whitespace and separates languages', () => {
+test('Cyrillic search folds case, ё/е, whitespace and separates languages', async () => {
   assert.equal(normalize('  СЧЁТ  '), 'счет');
-  assert.equal(search(records, 'СЧЕТ', 'ru').length, 1);
-  assert.equal(search(records, 'чертеж идеи', 'ru').length, 1);
-  assert.equal(search(records, '', 'ru').length, 0);
-  assert.equal(search(records, 'несуществующее', 'ru').length, 0);
-  assert.equal(search(records, 'geometry', 'ru').length, 0);
+  assert.equal((await search(records, 'СЧЕТ', 'ru')).length, 1);
+  assert.equal((await search(records, 'чертеж идеи', 'ru')).length, 1);
+  assert.equal((await search(records, '', 'ru')).length, 0);
+  assert.equal((await search(records, 'несуществующее', 'ru')).length, 0);
+  assert.equal((await search(records, 'geometry', 'ru')).length, 0);
 });
-test('Exact tag search folds Cyrillic case and ё/е without matching article text or tag fragments', () => {
+test('Exact tag search folds Cyrillic case and ё/е without matching article text or tag fragments', async () => {
   const tagged = [
     {...records[0], tags: ['счёт', 'идеи']},
     {...records[0], url: '/text-only/', title: 'Счёт', text: 'счёт', tags: ['источники']},
@@ -25,7 +26,7 @@ test('Exact tag search folds Cyrillic case and ё/е without matching article te
   assert.deepEqual(searchByTag(tagged, 'сч', 'ru'), []);
   assert.deepEqual(searchByTag(tagged, '', 'ru'), []);
   assert.deepEqual(searchByTag(tagged, 'нет темы', 'ru'), []);
-  assert.equal(search(tagged, 'чертеж', 'ru').length, 2);
+  assert.equal((await search(tagged, 'чертеж', 'ru')).length, 2);
 });
 test('archive selection has no duplicate URLs and changes a repeated subset', () => {
   const pool = Array.from({length: 6}, (_, index) => ({url: `/${index}/`}));
@@ -85,7 +86,7 @@ test('rubrics match explicit whole tags across case and exclude drafts, demos, n
 });
 
 
-test('ordinary hero articles exclude every humor/personality alias, drafts, demos, notices and other languages', () => {
+test('ordinary hero articles exclude every humor/personality alias, drafts, demos, notices and other languages', async () => {
   const base = {...records[0], status: 'published'};
   const excluded = ['Математики шутят', 'Анекдоты', 'Цитаты', 'People', 'Персоналии'];
   const ordinary = Array.from({length: 5}, (_, index) => ({...base, url: `/ordinary-${index}/`, tags: index ? ['История математики'] : ['Глоссарий']}));

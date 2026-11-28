@@ -3,7 +3,8 @@ import {readFile, stat, mkdir} from 'node:fs/promises';
 import {resolve, extname} from 'node:path';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
-import {journalGroups, newestFirst, seriesKey, rubricArticles, articleCandidates, search} from '../site/assets/core.js';
+import {journalGroups, newestFirst, seriesKey, rubricArticles, articleCandidates} from '../site/assets/core.js';
+import {search} from '../site/assets/search.js';
 import {publishedArticles, matchesArticleUrl} from './published-articles.mjs';
 import {hasStrayHeadingPeriod} from './journal-heading.mjs';
 
@@ -216,7 +217,7 @@ try {
       await page.goto(production.base + prefix + '/search/', {waitUntil: 'networkidle'});
       assert.equal(await page.locator('link[hreflang]').count(), 2);
       const query = language === 'ru' ? 'Гарднер' : 'Gardner';
-      const matches = search(index, query, language);
+      const matches = await search(index, query, language);
       assert.ok(matches.length > 0);
       await page.locator('#query').fill(query);
       await page.locator('#search-form button').click();

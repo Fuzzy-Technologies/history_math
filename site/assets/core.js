@@ -2,13 +2,6 @@ export function normalize(value) {
   return String(value).normalize('NFKC').toLocaleLowerCase('ru').replaceAll('ё', 'е').trim().replace(/\s+/g, ' ');
 }
 
-export function search(records, query, language) {
-  const terms = normalize(query).split(' ').filter(Boolean);
-  if (!terms.length) return [];
-  return records.filter(record => record.language === language && terms.every(term =>
-    normalize([record.title, record.description, record.type, ...record.tags, record.text].join(' ')).includes(term)));
-}
-
 export function searchByTag(records, tag, language) {
   const topic = topicKey(tag);
   if (!topic) return [];
