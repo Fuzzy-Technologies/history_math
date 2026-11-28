@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require_relative "topics"
-
 module HistoryMath
   module CatalogPagination
     PAGE_SIZE = 20
@@ -43,9 +41,8 @@ module HistoryMath
         language = root.data.fetch("lang")
         articles = site.data.fetch("discovery_documents").fetch(language)
         base = root.data.fetch("permalink")
-        tags = Topics.labels(articles.flat_map { |article| article.data["tags"] }).sort
         first = CatalogPagination.data(articles, base, 1)
-        root.data.merge!(first).merge!("catalog_tags" => tags)
+        root.data.merge!(first)
         (2..first.fetch("catalog_page_count")).each do |number|
           path = CatalogPagination.url(base, number)
           page = Jekyll::PageWithoutAFile.new(site, site.source, path.delete_prefix("/"), "index.html")

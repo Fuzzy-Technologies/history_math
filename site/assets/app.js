@@ -673,7 +673,10 @@ if (controls) {
     const pageLinks = pagination.querySelector('ol');
     // Static pages remain navigable without JavaScript; enhancement uses lightweight metadata.
     const cards = await loadIndex();
-    const options = {types: [...type.options].map(option => option.value), tags: [...tag.options].map(option => option.value)};
+    const topics = new Map([...tag.querySelectorAll('[data-topic]')].map(option =>
+      [option.dataset.topic, new Set(JSON.parse(option.dataset.tags).map(topicKey))]));
+    const options = {types: [...type.options].map(option => option.value),
+      tags: [...new Set(cards.flatMap(card => card.tags))], topics};
     const catalogBase = list.dataset.catalogBase;
     const readState = () => {
       const url = new URL(location.href);
@@ -681,6 +684,8 @@ if (controls) {
       return catalogState(url.searchParams, options);
     };
     let state = readState();
+    // Only an exact-tag entry point needs its extra option alongside the broad topics.
+    if (state.tag) tag.add(new Option(state.tag, state.tag));
     let restoring = false;
 
     function pageLink(page, text, label) {
@@ -707,10 +712,10 @@ if (controls) {
     }
 
     function render(history = 'replace') {
-      const result = catalogPage(cards, state);
+      const result = catalogPage(cards, state, topics);
       state.page = result.page;
       type.value = state.type;
-      tag.value = state.tag;
+      tag.value = state.topic ? `topic:${state.topic}` : state.tag;
       pageSize.value = String(result.perPage);
       list.replaceChildren(...result.items.map(readingCard));
       document.querySelector('#catalog-count').textContent = ru ? `Публикаций: ${result.total}` : `Articles: ${result.total}`;
@@ -745,7 +750,8 @@ if (controls) {
 
     function filter() {
       if (restoring) return;
-      state = {type: type.value, tag: tag.value, perPage: Number(pageSize.value), page: 1};
+      const topic = tag.selectedOptions[0]?.dataset.topic;
+      state = {type: type.value, topic, tag: topic ? '' : tag.value, perPage: Number(pageSize.value), page: 1};
       render('push');
     }
     type.addEventListener('change', filter);

@@ -3,19 +3,24 @@ const {topicKey} = await import('./core.js' + new URL(import.meta.url).search);
 export const catalogPageSizes = Object.freeze([5, 10, 20, 50, 100]);
 
 // Keep URL state small and restricted to the real filter options.
-export function catalogState(params, {types = [], tags = []} = {}) {
+export function catalogState(params, {types = [], tags = [], topics = new Map()} = {}) {
   const positiveInteger = value => /^[1-9]\d*$/.test(value ?? '') && Number.isSafeInteger(Number(value)) ? Number(value) : 1;
   const rawPerPage = params.get('per_page');
   const perPage = /^[1-9]\d*$/.test(rawPerPage ?? '') ? Number(rawPerPage) : NaN;
+  const topic = params.get('topic');
+  const hasTopic = topics.has(topic);
   return {
+    ...(hasTopic ? {topic} : {}),
     type: types.includes(params.get('type')) ? params.get('type') : '',
-    tag: tags.find(tag => topicKey(tag) === topicKey(params.get('tag') ?? '')) || '',
+    tag: hasTopic ? '' : tags.find(tag => topicKey(tag) === topicKey(params.get('tag') ?? '')) || '',
     perPage: catalogPageSizes.includes(perPage) ? perPage : 20,
     page: positiveInteger(params.get('page'))
   };
 }
 
-export function catalogPage(items, state) {
+export function catalogPage(records, state, topics = new Map()) {
+  const aliases = topics.get(state.topic);
+  const items = aliases ? records.filter(record => record.tags.some(tag => aliases.has(topicKey(tag)))) : records;
   const perPage = catalogPageSizes.includes(state.perPage) ? state.perPage : 20;
   const matching = items.filter(item => (!state.type || item.type === state.type) && (!state.tag || item.tags.includes(state.tag)));
   const pageCount = Math.ceil(matching.length / perPage);
@@ -44,7 +49,7 @@ export function catalogPageNumbers(page, pageCount) {
 
 export function catalogUrl(current, state) {
   const url = new URL(current);
-  for (const [key, value] of [['type', state.type], ['tag', state.tag],
+  for (const [key, value] of [['type', state.type], ['tag', state.tag], ['topic', state.topic],
     ['page', state.page > 1 ? String(state.page) : ''], ['per_page', state.perPage !== 20 ? String(state.perPage) : '']]) {
     if (value) url.searchParams.set(key, value); else url.searchParams.delete(key);
   }
