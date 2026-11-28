@@ -2,6 +2,11 @@ export function normalize(value) {
   return String(value).normalize('NFKC').toLocaleLowerCase('ru').replaceAll('ё', 'е').trim().replace(/\s+/g, ' ');
 }
 
+export async function search(records, query, language, isCurrent) {
+  const engine = await import('./search.js' + new URL(import.meta.url).search);
+  return engine.search(records, query, language, isCurrent);
+}
+
 export function searchByTag(records, tag, language) {
   const topic = topicKey(tag);
   if (!topic) return [];

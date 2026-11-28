@@ -1,7 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {normalize, searchByTag, selection, anniversaries, topicKey, rubricArticles, articleCandidates, archiveMeasurementBatches} from '../site/assets/core.js';
-import {search} from '../site/assets/search.js';
+import {normalize, search, searchByTag, selection, anniversaries, topicKey, rubricArticles, articleCandidates, archiveMeasurementBatches} from '../site/assets/core.js';
 
 const records = [
   {title: 'Счёт и геометрия', description: '', text: 'Чертёж', tags: ['идеи'], type: 'essay', language: 'ru', date: '2025-10-01', url: '/a/'},

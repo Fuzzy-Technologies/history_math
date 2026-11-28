@@ -3,8 +3,7 @@ import {readFile, stat, mkdir} from 'node:fs/promises';
 import {resolve, extname} from 'node:path';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
-import {journalGroups, newestFirst, seriesKey, rubricArticles, articleCandidates} from '../site/assets/core.js';
-import {search} from '../site/assets/search.js';
+import {journalGroups, newestFirst, seriesKey, rubricArticles, articleCandidates, search} from '../site/assets/core.js';
 import {publishedArticles, matchesArticleUrl} from './published-articles.mjs';
 import {hasStrayHeadingPeriod} from './journal-heading.mjs';
 
