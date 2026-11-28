@@ -1,5 +1,6 @@
 import {recordRequestFailure} from './request-failures.mjs';
 import assert from 'node:assert/strict';
+import {topicKey} from '../site/assets/core.js';
 
 export async function runDiscoveryChecks({browser, origin, evidence, axe, report, checked}) {
   const base = origin + '/history_math';
@@ -58,11 +59,15 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
     assert.equal(await page.locator('#type-filter').inputValue(), 'problem');
     assert.equal(await type.evaluate(node => node === document.activeElement), true);
     await topic.click();
-    await page.getByRole('option', {name: 'счёт', exact: true}).click();
-    assert.equal(await page.locator('#catalog-empty').isVisible(), true);
+    await page.getByRole('option', {name: 'Арифметика и теория чисел', exact: true}).click();
+    const numberTags = await page.locator('#tag-filter option[data-topic="numbers"]').evaluate(option => JSON.parse(option.dataset.tags));
+    const aliases = new Set(numberTags.map(topicKey));
+    const numbers = records.filter(record => record.tags.some(tag => aliases.has(topicKey(tag))));
+    const problems = numbers.filter(record => record.type === 'problem');
+    assert.equal(await page.locator('#catalog-empty').isVisible(), problems.length === 0);
     await type.click();
     await page.getByRole('option', {name: 'Все типы', exact: true}).click();
-    assert.equal(await page.locator('.catalog-list .material-card:visible').count(), 1);
+    assert.equal(await page.locator('.catalog-list .material-card:visible').count(), Math.min(Number(await page.locator('#page-size').inputValue()), numbers.length));
     await topic.click();
     await topic.press('Home');
     await topic.press('Tab');
@@ -70,9 +75,9 @@ export async function runDiscoveryChecks({browser, origin, evidence, axe, report
     assert.equal(await topic.getAttribute('aria-expanded'), 'false');
     await topic.click();
     // Playwright's physical-key map omits Cyrillic keys; provide their normal keydown values.
-    for (const key of 'счет') await topic.dispatchEvent('keydown', {key, bubbles: true});
+    for (const key of 'ариф') await topic.dispatchEvent('keydown', {key, bubbles: true});
     await topic.press('Enter');
-    assert.equal(await page.locator('#tag-filter').inputValue(), 'счёт');
+    assert.equal(await page.locator('#tag-filter').inputValue(), 'topic:numbers');
     await topic.click();
     await page.getByRole('heading', {name: 'Публикации', exact: true}).click();
     assert.equal(await topic.getAttribute('aria-expanded'), 'false');

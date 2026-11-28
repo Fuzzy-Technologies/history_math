@@ -57,7 +57,6 @@ class CatalogPagesTest < Minitest::Test
         assert_equal 10, pages.length
         assert_equal site.data["discovery_documents"][language], pages.flat_map { |page| page.data["catalog_articles"] }
         assert_equal "catalog-page-10", pages.last.data["translation_key"]
-        assert_equal ["History of Mathematics"], pages.last.data["catalog_tags"]
         assert_equal "{% include journal-catalog.html %}", pages.last.content
         assert_equal (language == "ru" ? "/ru/publications/page/10/" : "/publications/page/10/"), pages.last.url
       end

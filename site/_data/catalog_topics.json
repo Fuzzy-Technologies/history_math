@@ -1,0 +1,74 @@
+[
+  {
+    "id": "history",
+    "ru": "История математики и науки",
+    "en": "History of mathematics and science",
+    "tags": ["история математики", "историяматематики", "история науки", "история", "history of mathematics", "history of science", "history"]
+  },
+  {
+    "id": "people",
+    "ru": "Математики и их биографии",
+    "en": "Mathematicians and their lives",
+    "tags": ["персоналии", "жзл", "биография", "биографии", "people", "personalities", "lives of remarkable people", "biography", "biographies"]
+  },
+  {
+    "id": "numbers",
+    "ru": "Арифметика и теория чисел",
+    "en": "Arithmetic and number theory",
+    "tags": ["арифметика", "числа", "теория чисел", "теориячисел", "счёт", "системы счисления", "системысчисления", "делимость", "умножение", "дроби", "ноль", "простые числа", "модулярная арифметика", "модулярнаяарифметика", "сложный процент", "сложныйпроцент", "arithmetic", "numbers", "number theory", "counting", "number systems", "divisibility", "multiplication", "fractions", "zero", "prime numbers", "modular arithmetic", "compound interest"]
+  },
+  {
+    "id": "algebra-analysis",
+    "ru": "Алгебра и математический анализ",
+    "en": "Algebra and mathematical analysis",
+    "tags": ["алгебра", "история алгебры", "историяалгебры", "уравнения", "математический анализ", "бесконечность", "логарифмы", "матрицы", "algebra", "history of algebra", "equations", "mathematical analysis", "calculus", "infinity", "logarithms", "matrices"]
+  },
+  {
+    "id": "geometry",
+    "ru": "Геометрия и тригонометрия",
+    "en": "Geometry and trigonometry",
+    "tags": ["геометрия", "тригонометрия", "квадрат", "треугольник", "окружность", "планиметрия", "неевклидова геометрия", "geometry", "trigonometry", "square", "triangle", "circle", "plane geometry", "non-euclidean geometry"]
+  },
+  {
+    "id": "probability",
+    "ru": "Вероятность и статистика",
+    "en": "Probability and statistics",
+    "tags": ["вероятность", "теория вероятностей", "статистика", "комбинаторика", "probability", "probability theory", "statistics", "combinatorics"]
+  },
+  {
+    "id": "problems",
+    "ru": "Задачи и занимательная математика",
+    "en": "Problems and recreational mathematics",
+    "tags": ["задачи", "исторические задачи", "старинные задачи", "занимательная математика", "головоломки", "логика", "делёжка", "игры", "фокусы", "problems", "historical problems", "recreational mathematics", "puzzles", "logic", "fair division", "games", "magic tricks", "mathematical magic"]
+  },
+  {
+    "id": "instruments",
+    "ru": "Инструменты и измерения",
+    "en": "Instruments and measurement",
+    "tags": ["инструменты", "измерения", "измерение", "линейка", "астролябия", "арифмометр", "вычислительные приборы", "instruments", "measurement", "measurements", "ruler", "astrolabe", "arithmometer", "calculating instruments"]
+  },
+  {
+    "id": "natural-sciences",
+    "ru": "Естественные науки и опыты",
+    "en": "Natural sciences and experiments",
+    "tags": ["опыты", "эксперимент", "физика", "астрономия", "механика", "оптика", "experiments", "experiment", "physics", "astronomy", "mechanics", "optics"]
+  },
+  {
+    "id": "education",
+    "ru": "Математическое образование",
+    "en": "Mathematics education",
+    "tags": ["образование", "педагогика", "история образования", "методика", "методика математики", "методика преподавания математики", "педагог", "математики-педагоги", "учебники", "education", "pedagogy", "history of education", "teaching methods", "mathematics teaching", "mathematics education", "educator", "textbooks"]
+  },
+  {
+    "id": "culture",
+    "ru": "Математика в культуре и юморе",
+    "en": "Mathematics in culture and humour",
+    "tags": ["математики шутят", "анекдоты", "цитаты", "фольклор", "стихи", "литература", "музыка", "искусство", "mathematicians joke", "jokes", "anecdotes", "quotes", "quotations", "folklore", "poetry", "literature", "music", "art"]
+  },
+  {
+    "id": "local-history",
+    "ru": "Краеведение и университеты",
+    "en": "Local history and universities",
+    "tags": ["краеведение", "елабуга", "казань", "казанский университет", "мгу", "лгу", "ленинград", "петербург", "local history", "yelabuga", "kazan", "kazan university", "moscow state university", "leningrad state university", "leningrad", "st petersburg"]
+  }
+]
