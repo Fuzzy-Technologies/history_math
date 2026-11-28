@@ -39,7 +39,14 @@ class TopicsTest < Minitest::Test
     assert_equal [person], HistoryMath::Topics.rubric_articles(articles, ["Персоналии"])
     assert_empty HistoryMath::Topics.rubric_articles(articles, ["Цитаты"])
     jokes = %w[анекдоты цитаты].map { |tag| make.call([tag]) }
-    assert_equal jokes, HistoryMath::Topics.rubric_articles(jokes, ["Анекдоты", "Цитаты", "Математики шутят"])
+    assert_equal jokes, HistoryMath::Topics.rubric_articles(jokes + [make.call(["history"])] * 6, ["Анекдоты", "Цитаты", "Математики шутят"])
+  end
+
+  def test_hero_window_counts_only_published_full_text_before_filtering_rubrics
+    docs = (1..9).map { |i| Article.new({"status" => "published", "tags" => [i > 3 ? "People" : "History"]}) }
+    docs.unshift(Article.new({"status" => "published", "translation_notice" => true, "tags" => ["People"]}))
+    assert_empty HistoryMath::Topics.rubric_articles(docs, ["People"])
+    assert_equal docs[1, 3], HistoryMath::Topics.article_candidates(docs, ["People"])
   end
 
   def test_article_headings_use_localized_rubrics_with_type_fallback

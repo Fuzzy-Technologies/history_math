@@ -15,19 +15,23 @@ module HistoryMath
       Array(values).map { |value| LABELS.fetch(key(value), value) }.uniq { |value| key(value) }
     end
 
+    # JournalSections supplies one language in descending date and URL order.
+    def self.hero_window(articles)
+      published = articles.select { |article| article.data["status"] == "published" && !article.data["translation_notice"] }
+      published.take((published.size + 3) / 4)
+    end
+
     def self.rubric_articles(articles, tags)
       keys = tags.map { |tag| key(tag) }
-      articles.select do |article|
-        article.data["status"] == "published" && !article.data["translation_notice"] &&
-          Array(article.data["tags"]).any? { |tag| keys.include?(key(tag)) }
+      hero_window(articles).select do |article|
+        Array(article.data["tags"]).any? { |tag| keys.include?(key(tag)) }
       end
     end
 
     def self.article_candidates(articles, excluded_tags)
       keys = excluded_tags.map { |tag| key(tag) }
-      articles.select do |article|
-        article.data["status"] == "published" && !article.data["translation_notice"] &&
-          Array(article.data["tags"]).none? { |tag| keys.include?(key(tag)) }
+      hero_window(articles).select do |article|
+        Array(article.data["tags"]).none? { |tag| keys.include?(key(tag)) }
       end
     end
   end
