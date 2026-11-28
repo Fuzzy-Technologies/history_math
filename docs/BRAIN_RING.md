@@ -16,3 +16,20 @@ Short input ignores capitalization, Unicode composition, surrounding whitespace 
 `site/assets/brain-ring-feedback.js` takes the bank's localized messages and a resolved outcome. A correct answer earns one point. A wrong answer or timeout reveals the canonical answer and earns zero. Every outcome returns the explanation and the same publication links. The browser game will use these values in its answer panel.
 
 Run `node --test tests/brain-ring.test.mjs` after installing the repository's pinned development dependencies.
+
+## Playable pilot
+
+The standalone pilot lives at `/brain-ring/` and offers an independent Russian and English interface. Open it with `?lang=en` to start in English. The journal menu can link to it when integration is approved.
+
+`site/_data/brain_ring/pilot.yaml` selects 54 shared source questions and groups them by the difficulty used in the pilot. Each pool contains enough questions for three rounds at the same level. Increasing difficulty runs through beginner, intermediate, and expert. Each round draws six unused source IDs, preferring less represented topics and answer formats.
+
+| Answer format                   | Time limit  |
+| ------------------------------- | ----------- |
+| Single choice and short input   | 45 seconds  |
+| Multiple choice                 | 60 seconds  |
+| Matching and ordering           | 75 seconds  |
+| Written solution and self-check | 120 seconds |
+
+Practice removes the timer. Submitting an answer freezes the timer. A written solution is scored once, after the player compares it with the key. Feedback and the mistake review provide the same journal links. The player advances manually.
+
+Run `node --test tests/brain-ring*.test.mjs` to exercise both languages, both game modes and the complete round and scoring paths.

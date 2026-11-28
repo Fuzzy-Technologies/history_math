@@ -1,0 +1,22 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Брейн-ринг с Мансур-абый</title>
+  <link rel="stylesheet" href="{{ '/assets/brain-ring.css' | relative_url }}">
+</head>
+<body>
+  <main id="brain-ring" data-link-base="{{ site.baseurl | escape }}">
+    <noscript>Для игры нужен JavaScript. / JavaScript is required to play.</noscript>
+  </main>
+  <script id="brain-ring-data" type="application/json">
+    {% include brain-ring-pilot-data.html %}
+  </script>
+  <script type="module" src="{{ '/assets/brain-ring.js' | relative_url }}"></script>
+</body>
+</html>

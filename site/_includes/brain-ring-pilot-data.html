@@ -1,0 +1,26 @@
+{%- assign pilot = site.data.brain_ring.pilot -%}
+{%- assign ids = pilot.levels.beginner | concat: pilot.levels.intermediate | concat: pilot.levels.expert -%}
+{%- assign languages = 'ru,en' | split: ',' -%}
+{
+  "pilot": {{ pilot | jsonify }},
+  "banks": {
+    {%- for language in languages -%}
+      {%- assign bank = site.data.brain_ring[language] -%}
+      {%- assign written = false -%}
+      {{ language | jsonify }}: {
+        "title": {{ bank.title | jsonify | replace: '<', '\u003c' }},
+        "topics": {{ bank.topics | jsonify | replace: '<', '\u003c' }},
+        "feedback": {{ bank.feedback | jsonify | replace: '<', '\u003c' }},
+        "questions": [
+          {%- for question in bank.questions -%}
+            {%- if ids contains question.source_id -%}
+              {%- if written -%},{%- endif -%}
+              {{ question | jsonify | replace: '<', '\u003c' }}
+              {%- assign written = true -%}
+            {%- endif -%}
+          {%- endfor -%}
+        ]
+      }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  }
+}

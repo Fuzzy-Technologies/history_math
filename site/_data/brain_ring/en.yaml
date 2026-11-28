@@ -278,11 +278,15 @@ questions:
     topic: measurement
     difficulty: beginner
     format: short_input
-    prompt: |-
-      The pedestrian walked 3 hours at a speed of 5 km / h, 2 hours at a speed of 4 km / h. What is the average speed of a pedestrian?
+    prompt: A walker travels for 3 hours at 5 km/h and then 2 hours at 4 km/h. What is their average speed for the whole trip?
     answer:
       accepted:
         - 4.6 km/h
+        - 4.6 km / h
+        - 4.6 km per hour
+        - 4.6 kph
+        - '4.6'
+        - 4,6
     answer_text: 4.6 km/h
     digest: The total distance is 23 km and the total time is 5 hours.
     links: []
@@ -374,7 +378,8 @@ questions:
     topic: arithmetic
     difficulty: intermediate
     format: self_check
-    prompt: There are 123 units in the number record, and the remaining digits are zeros. Can this number be an exact square?
+    prompt: |-
+      A positive integer is written using 123 digits equal to 1, with all its other digits equal to 0. Could it be a perfect square? Explain.
     answer:
       solution: No. Divided by 3, not divided by 9
     answer_text: No. Divided by 3, not divided by 9
@@ -408,6 +413,10 @@ questions:
     answer:
       accepted:
         - 125%
+        - 125 percent
+        - 125 per cent
+        - 125 %
+        - '125'
     answer_text: 125%
     digest: If there are 80 boys for every 100 girls, the ratio of girls to boys is 100 ÷ 80 = 1.25, or 125%.
     links: []
@@ -1007,13 +1016,12 @@ questions:
     topic: geometry
     difficulty: intermediate
     format: self_check
-    prompt: |-
-      The perimeter of the triangle is 1 mm. Could it be that the radius of the circle described near the triangle will be more than 1 km?
+    prompt: A triangle has a perimeter of 1 mm. Could the radius of its circumcircle exceed 1 km? Explain.
     answer:
       solution: |-
-        Yes. If there is a dull angle in a triangle, however small its sides may be, close enough to 180 degrees, then the middle perpendiculars of its sides will be almost parallel. The point of their intersection – the center of the circle – will be arbitrarily removed from the top of the blunt angle.
+        Yes. As one angle approaches 180°, the perpendicular bisectors of the sides approach parallel lines and the circumcentre can be arbitrarily far away.
     answer_text: |-
-      Yes. If there is a dull angle in a triangle, however small its sides may be, close enough to 180 degrees, then the middle perpendiculars of its sides will be almost parallel. The point of their intersection – the center of the circle – will be arbitrarily removed from the top of the blunt angle.
+      Yes. As one angle approaches 180°, the perpendicular bisectors of the sides approach parallel lines and the circumcentre can be arbitrarily far away.
     digest: |-
       For side a opposite angle A, the circumradius is a/(2 sin A). If A approaches 180°, the denominator tends to zero, so the radius can become arbitrarily large even when the perimeter is fixed.
     links: []
@@ -1694,7 +1702,7 @@ questions:
     topic: measurement
     difficulty: beginner
     format: short_input
-    prompt: In what direction are positive angles deposited on the trigonometric circle?
+    prompt: In which direction are positive angles measured on the unit circle?
     answer:
       accepted:
         - Counterclockwise
@@ -3971,8 +3979,8 @@ questions:
     topic: geometry
     difficulty: beginner
     format: self_check
-    prompt: |-
-      Karl Friedrich Gauss’ theory of constructing regular polygons is well known. Which of the following n-angles cannot be built with a compass and a ruler: n = 7, 8, 9, 10?
+    prompt: 'Which of these regular polygons cannot be constructed with a compass and straightedge: those with 7, 8, 9 or
+      10 sides?'
     answer:
       solution: n = 7, 9
     answer_text: n = 7, 9
@@ -4189,11 +4197,10 @@ questions:
     topic: measurement
     difficulty: intermediate
     format: self_check
-    prompt: |-
-      There's a ruler and a rod. What is the reason for the increased accuracy of the measurement results with a rod in comparison with measurements using a conventional ruler?
+    prompt: How does a vernier caliper let you measure more precisely than an ordinary ruler?
     answer:
-      solution: The presence of an additional scale on a movable frame, which is called a nonius or vernier
-    answer_text: The presence of an additional scale on a movable frame, which is called a nonius or vernier
+      solution: A sliding vernier scale allows readings to a fraction of a division on the main scale.
+    answer_text: A sliding vernier scale allows readings to a fraction of a division on the main scale.
     digest: |-
       On the nonius look for a stroke that exactly coincides with the stroke of the main scale. Its number shows the fraction of the junior division that needs to be added to the scale.
     links:
@@ -4354,8 +4361,7 @@ questions:
     topic: algebra
     difficulty: expert
     format: short_input
-    prompt: |-
-      It turns out that the terms “hyperbola” and “logarithm”, scattered in the school course of mathematics, are closely related, and visually geometrically. The area of the curvilinear trapezoid under the hyperbola y = 1/x in the area from x = 1 to x = a is equal to ... What?
+    prompt: What is the area under the hyperbola y = 1/x from x = 1 to x = a, assuming a > 1?
     answer:
       accepted:
         - ln a
@@ -4620,7 +4626,7 @@ questions:
     topic: history
     difficulty: intermediate
     format: self_check
-    prompt: Why do many rational numbers denote Q?
+    prompt: Why is the set of rational numbers denoted by ℚ?
     answer:
       solution: Q is the first letter of the English word “Quotient”
     answer_text: Q is the first letter of the English word “Quotient”
@@ -6017,14 +6023,17 @@ questions:
     edition_source_id: br-2026-05-16-q01
     topic: arithmetic
     difficulty: intermediate
-    format: self_check
+    format: short_input
     prompt: |-
-      At the beginning of the XIII century in Europe, Roman numbering was still widely used, inconvenient for calculations. Leonardo Pisa’s book played a major role in the spread of Indian-Arabic numerals and positional numerals. What was the name of this book?
+      In early thirteenth-century Europe, Roman numerals were still common. Leonardo of Pisa wrote a book that helped spread Hindu–Arabic numerals and positional notation. What was the book called?
     answer:
-      solution: |-
-        Liber abaci, "The Book of the Abaca." It was through her that the new numbers and methods of the account became known in Europe.
-    answer_text: |-
-      Liber abaci, "The Book of the Abaca." It was through her that the new numbers and methods of the account became known in Europe.
+      accepted:
+        - Liber abaci
+        - Book of Calculation
+        - The Book of Calculation
+        - Book of the Abacus
+        - The Book of the Abacus
+    answer_text: Liber abaci
     digest: |-
       Fibonacci's Liber abaci helped introduce Hindu–Arabic numerals and methods for calculating with them to a wider European audience.
     links:
@@ -6904,8 +6913,7 @@ questions:
     topic: geometry
     difficulty: beginner
     format: multiple_choice
-    prompt: |-
-      From the lengths of 2, 3, 4 and 5, you need to choose three. How many different non-degenerate triangles can you make out of them? Select all triples that meet the triangle inequality.
+    prompt: Choose every triple of lengths that can form a nondegenerate triangle.
     answer:
       options:
         - id: '234'
