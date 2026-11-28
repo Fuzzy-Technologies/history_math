@@ -54,8 +54,12 @@ try {
       await checkDocumentEnd(page);
       await page.locator('#tag-filter-button').click();
       assert.equal(await page.locator('#tag-filter-list').isVisible(), true);
-      await page.locator('#tag-filter-button').press('End');
-      await page.locator('#tag-filter-button').press('Escape');
+      // Clicking the empty list gutter used to blur the trigger and dismiss the menu.
+      await page.locator('#tag-filter-list').click({position: {x: 3, y: 30}});
+      assert.equal(await page.locator('#tag-filter-button').getAttribute('aria-expanded'), 'true');
+      assert.equal(await page.evaluate(() => document.activeElement.id), 'tag-filter-button');
+      await page.keyboard.press('End');
+      await page.keyboard.press('Escape');
       assert.equal(await page.locator('#tag-filter-list').isVisible(), false);
       await checkDocumentEnd(page);
     }
