@@ -1,7 +1,7 @@
 ---
 layout: page
 title: О журнале
-description: Международный математический журнал под редакцией Мансура Гильмуллина.
+description: Математический журнал под редакцией Мансура Гильмуллина.
 lang: ru
 translation_key: about
 status: published

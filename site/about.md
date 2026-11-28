@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About the journal
-description: An international mathematics journal edited by Mansur Gilmullin.
+description: A mathematics journal edited by Mansur Gilmullin.
 lang: en
 translation_key: about
 status: published
