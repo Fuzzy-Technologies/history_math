@@ -20,6 +20,13 @@ export function topicKey(value) {
   return normalize(String(value).normalize('NFKC').replaceAll('_', ' '));
 }
 
+// Apply the date window before splitting the hero into its three editorial groups.
+export function heroWindow(records, language) {
+  const published = records.filter(record => record.language === language &&
+    record.status === 'published' && !record.translation_notice).sort(newestFirst);
+  return published.slice(0, Math.ceil(published.length / 4));
+}
+
 export function rubricArticles(records, language, tags) {
   const topics = new Set(tags.map(topicKey));
   return records.filter(record => record.language === language && record.status === 'published' &&

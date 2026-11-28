@@ -1,5 +1,5 @@
 const assetVersion = new URL(import.meta.url).search;
-const [{search, searchByTag, topicKey, rubricArticles, articleCandidates, archiveMeasurementBatches, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}, {loadVerifiedOriginal, nativeOriginalTarget}, {catalogState, catalogPage, catalogPageNumbers, catalogUrl}] = await Promise.all([
+const [{search, searchByTag, topicKey, heroWindow, rubricArticles, articleCandidates, archiveMeasurementBatches, selection, journalGroups}, {enhanceSelect}, {rememberReadingPosition}, {loadVerifiedOriginal, nativeOriginalTarget}, {catalogState, catalogPage, catalogPageNumbers, catalogUrl}] = await Promise.all([
   import('./core.js' + assetVersion),
   import('./select.js' + assetVersion),
   import('./reading-position.js' + assetVersion),
@@ -514,7 +514,8 @@ if (archive) {
     // Any reading card can enter the archive after a restored-page selection changes.
     const archiveCandidates = [...initialGroups.reading, ...initialGroups.archive];
     const articlePicks = document.querySelector('#article-picks');
-    const articlePool = articlePicks ? articleCandidates(records, language, articlePicks.dataset.excludeTags.split('|')) : [];
+    const heroPool = heroWindow(records, language);
+    const articlePool = articlePicks ? articleCandidates(heroPool, language, articlePicks.dataset.excludeTags.split('|')) : [];
     const articleKey = `history-math:article-picks:${language}`;
     let articlePrevious = [];
     try {
@@ -532,7 +533,7 @@ if (archive) {
     const rubricPrevious = new Map();
     function rotateRubrics() {
       document.querySelectorAll('[data-rubric]').forEach(rubric => {
-        const candidates = rubricArticles(records, language, rubric.dataset.rubricTags.split('|'));
+        const candidates = rubricArticles(heroPool, language, rubric.dataset.rubricTags.split('|'));
         if (!candidates.length) return; // Keep the localized server-rendered empty state.
         const key = `history-math:rubric:${language}:${rubric.dataset.rubric}`;
         let previous = rubricPrevious.get(key) || [];
