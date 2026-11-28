@@ -502,17 +502,17 @@ if (archive) {
     } catch {}
     let pool = [];
     function rotateReading() {
-      const groups = journalGroups(records, language, rules, {previous: readingPrevious});
+      const excluded = Array.from(document.querySelectorAll('#article-picks .hero-pick, #hero-picks .hero-pick'),
+        link => link.getAttribute('href'));
+      const groups = journalGroups(records, language, rules, {excluded, previous: readingPrevious});
       readingPrevious = groups.reading.map(record => record.url);
       try { sessionStorage.setItem(readingKey, JSON.stringify(readingPrevious)); } catch {}
-      if (groups.reading.length) carousel.replaceChildren(...groups.reading.map(readingCard));
+      const cards = groups.reading.map(readingCard);
+      carousel.replaceChildren(...(cards.length ? cards : [element('p', 'empty-state', carousel.dataset.empty)]));
       refreshCarousel();
       pool = groups.archive;
       return groups;
     }
-    const initialGroups = rotateReading();
-    // Any reading card can enter the archive after a restored-page selection changes.
-    const archiveCandidates = [...initialGroups.reading, ...initialGroups.archive];
     const articlePicks = document.querySelector('#article-picks');
     const articlePool = articlePicks ? articleCandidates(records, language, articlePicks.dataset.excludeTags.split('|')) : [];
     const articleKey = `history-math:article-picks:${language}`;
@@ -548,6 +548,9 @@ if (archive) {
       });
     }
     rotateRubrics();
+    const initialGroups = rotateReading();
+    // Any reading card can enter the archive after a restored-page selection changes.
+    const archiveCandidates = [...initialGroups.reading, ...initialGroups.archive];
     // Measure every candidate in bounded batches; text length cannot predict wrapped height.
     function reserveArchiveSpace() {
       if (!archiveCandidates.length || !archive.clientWidth) return;
@@ -596,9 +599,9 @@ if (archive) {
     rotate();
     window.addEventListener('pageshow', event => {
       if (!event.persisted) return;
-      rotateReading();
       rotateArticlePicks();
       rotateRubrics();
+      rotateReading();
       reserveArchiveSpace();
       rotate();
     });

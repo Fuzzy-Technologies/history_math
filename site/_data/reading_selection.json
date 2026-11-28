@@ -1,8 +1,4 @@
 {
-  "pool_size": 50,
   "card_count": 10,
-  "series_limit": 3,
-  "series_tags": [
-    {"id": "glossary", "tags": ["Глоссарий", "Математический глоссарий", "Краткий математический глоссарий", "Glossary", "Mathematical Glossary"]}
-  ]
+  "group_limits": {"humor": 2, "people": 2, "instruments": 3, "other": 3}
 }

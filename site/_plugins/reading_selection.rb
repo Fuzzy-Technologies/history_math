@@ -4,29 +4,18 @@ require_relative "topics"
 
 module HistoryMath
   module ReadingSelection
-    def self.series_key(article, rules)
-      explicit = Topics.key(article.data["series"])
-      keys = Array(article.data["tags"]).map { |tag| Topics.key(tag) } + [explicit]
-      group = rules.fetch("series_tags").find { |entry| entry.fetch("tags").any? { |tag| keys.include?(Topics.key(tag)) } }
-      group ? group.fetch("id") : explicit
-    end
-
-    # A deterministic, balanced fallback keeps navigation useful without JavaScript.
-    def self.groups(articles, rules)
+    # Keep the no-JavaScript selection deterministic and use the same windows and quotas as the browser.
+    def self.groups(articles, rules, excluded: [])
       ordered = articles.uniq(&:url).sort_by { |article| [article.data["date"], article.url] }.reverse
-      counts = Hash.new(0)
-      selected = []
-      overflow = []
-      ordered.take(rules.fetch("pool_size")).each do |article|
-        key = series_key(article, rules)
-        if key.empty? || counts[key] < rules.fetch("series_limit")
-          selected << article
-          counts[key] += 1
-        else
-          overflow << article
-        end
+      published = ordered.reject { |article| article.data["translation_notice"] }
+      recent = published.take((published.length + 1) / 2)
+      rubric_tags = rules.fetch("rubric_tags").transform_values { |tags| tags.map { |tag| Topics.key(tag) } }
+      buckets = recent.reject { |article| excluded.include?(article.url) }.group_by do |article|
+        tags = Array(article.data["tags"]).map { |tag| Topics.key(tag) }
+        rubric = rubric_tags.find { |_, keys| !(keys & tags).empty? }
+        rubric ? rubric.first : (article.data["type"] == "instrument" ? "instruments" : "other")
       end
-      reading = (selected + overflow).take(rules.fetch("card_count"))
+      reading = rules.fetch("group_limits").flat_map { |group, limit| buckets.fetch(group, []).take(limit) }
         .sort_by { |article| [article.data["date"], article.url] }.reverse
       urls = reading.map(&:url)
       {"reading" => reading, "archive" => ordered.reject { |article| urls.include?(article.url) }}

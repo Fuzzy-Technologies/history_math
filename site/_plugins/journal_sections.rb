@@ -20,14 +20,17 @@ module HistoryMath
         next unless home
         published = articles.select { |doc| doc.data["status"] == "published" }
         excluded_tags = site.data.fetch("home_rubrics").flat_map { |rubric| %w[ru en].flat_map { |locale| rubric.fetch(locale).fetch("tags") } }.uniq
-        groups = ReadingSelection.groups(published, site.data.fetch("reading_selection"))
         rubrics = site.data.fetch("home_rubrics").map do |rubric|
           localized = rubric.fetch(language)
           localized.merge("id" => rubric.fetch("id"), "articles" => Topics.rubric_articles(published, localized.fetch("tags")))
         end
-        home.data.merge!({"journal_articles" => groups.fetch("reading"), "journal_rubrics" => rubrics,
+        home.data.merge!({"journal_rubrics" => rubrics,
           "journal_article_picks" => Topics.article_candidates(published, excluded_tags), "journal_excluded_tags" => excluded_tags,
-          "journal_archive" => groups.fetch("archive")})
+        })
+        rules = site.data.fetch("reading_selection").merge("rubric_tags" => rubrics.to_h { |rubric| [rubric.fetch("id"), rubric.fetch("tags")] })
+        hero = home.data.fetch("journal_article_picks").first(3) + rubrics.filter_map { |rubric| rubric.fetch("articles").first }
+        groups = ReadingSelection.groups(published, rules, excluded: hero.map(&:url))
+        home.data.merge!("reading_rules" => rules, "journal_articles" => groups.fetch("reading"), "journal_archive" => groups.fetch("archive"))
       end
     end
   end

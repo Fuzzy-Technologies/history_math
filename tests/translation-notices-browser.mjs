@@ -30,13 +30,15 @@ try {
     page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
     await page.goto(`${origin}/ru/`, {waitUntil: 'networkidle'});
     assert.equal(await page.locator('.demo-strip').count(), 0);
-    const latest = await page.locator('#latest-cards .card-image').evaluateAll(links => links.map(link => link.getAttribute('href')));
-    assert.deepEqual(latest.slice().sort(), ids.map(id => `/history_math/ru/publications/${id}-ru/`).sort());
+    const hero = await page.locator('.hero-pick').evaluateAll(links => links.map(link => link.getAttribute('href')));
+    const latest = await page.locator('#latest-cards h3 a').evaluateAll(links => links.map(link => link.getAttribute('href')));
+    assert.ok(latest.every(url => !hero.includes(url)));
+    assert.ok(latest.every(url => ids.some(id => url === `/history_math/ru/publications/${id}-ru/`)));
     assert.equal(await page.locator('.cover-bottom a').getAttribute('href'), '/history_math/ru/publications/');
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false);
     await page.screenshot({path: `test-results/notice-screenshots/russian-home-${width}.png`, fullPage: true});
     await page.goto(`${origin}/`, {waitUntil: 'networkidle'});
-    for (const id of ids) assert.equal(await page.locator(`#latest-cards h3 a[href="/history_math/publications/${id}-en/"]`).count(), 1);
+    for (const id of ids) assert.equal(await page.locator(`#latest-cards h3 a[href="/history_math/publications/${id}-en/"]`).count(), 0);
     await page.screenshot({path: `test-results/notice-screenshots/home-${width}.png`, fullPage: true});
     for (const id of ids) {
       assert.equal((await page.goto(`${origin}/publications/${id}-en/`, {waitUntil: 'networkidle'})).status(), 200);
