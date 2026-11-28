@@ -643,8 +643,10 @@ if (form) {
         canonicalUrl.searchParams.set('tag', activeTag);
         history.replaceState(null, '', canonicalUrl);
       }
-      const searchable = records.filter(record => !record.translation_notice);
-      const matches = activeTag ? searchByTag(searchable, activeTag, language) : search(searchable, query, language);
+      const matches = activeTag
+        ? searchByTag(records.filter(record => !record.translation_notice), activeTag, language)
+        : await search(records, query, language, () => request === requestNumber);
+      if (request !== requestNumber) return;
       results.replaceChildren(...matches.map(record => card(record, 'search-result')));
       status.textContent = matches.length ? (ru ? `Найдено публикаций: ${matches.length}` : `Articles found: ${matches.length}`) : (ru ? 'Ничего не найдено. Попробуйте другое слово или тему.' : 'No matches. Try another word or topic.');
     } catch {

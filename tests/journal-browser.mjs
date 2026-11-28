@@ -208,7 +208,7 @@ try {
       await page.goto(production.base + prefix + '/search/', {waitUntil: 'networkidle'});
       assert.equal(await page.locator('link[hreflang]').count(), 2);
       const query = language === 'ru' ? 'Гарднер' : 'Gardner';
-      const matches = search(index, query, language);
+      const matches = await search(index, query, language);
       assert.ok(matches.length > 0);
       await page.locator('#query').fill(query);
       await page.locator('#search-form button').click();
