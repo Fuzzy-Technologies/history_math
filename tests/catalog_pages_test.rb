@@ -5,8 +5,35 @@ require "jekyll"
 require "tmpdir"
 require "yaml"
 require_relative "../site/_plugins/catalog_pages"
+require_relative "../site/_plugins/catalog_types"
 
 class CatalogPagesTest < Minitest::Test
+  def test_catalog_genres_reuse_the_original_for_translations_and_notices
+    rubrics = JSON.parse(File.read(File.expand_path("../site/_data/home_rubrics.json", __dir__)))
+    genres = HistoryMath::CatalogTypes.new(rubrics)
+    doc = Struct.new(:url, :data)
+    original = doc.new("/ru/publications/geometry/", {"lang" => "ru", "type" => "essay"})
+    english = doc.new("/publications/geometry/", {"lang" => "en", "type" => "essay",
+      "translations" => [{"lang" => "ru", "url" => original.url}]})
+    notice = doc.new("/en/notice/", {"lang" => "en", "type" => "essay", "original_url" => original.url})
+    assert_equal "short-essay", genres.for_document(original, "слово " * 999)
+    assert_equal "short-essay", genres.for_document(english, "word " * 1500)
+    assert_equal "longread", genres.for_document(original, "геометрия " * 1000)
+    assert_equal "longread", genres.for_document(notice, "Brief notice")
+    original.data["series"] = "Персоналии"
+    assert_equal "people", genres.for_document(original, "слово " * 2000)
+    english.data.delete("translations")
+    english.data["tags"] = ["people"]
+    assert_equal "people", genres.for_document(english, "Profile")
+    original.data.delete("series")
+    original.data["tags"] = ["Инструменты"]
+    assert_equal "instrument", genres.for_document(original, "Арифмометр")
+    %w[note problem instrument].each do |type|
+      original.data["type"] = type
+      assert_equal type, genres.for_document(original, "слово " * 2000)
+    end
+  end
+
   def test_generator_emits_all_localized_routes_without_rendering_a_site
     Dir.mktmpdir("catalog-pages-") do |root|
       site = Jekyll::Site.new(Jekyll.configuration("source" => root, "destination" => File.join(root, "output"), "quiet" => true))

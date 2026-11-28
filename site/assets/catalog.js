@@ -17,7 +17,11 @@ export function catalogState(params, {types = [], tags = []} = {}) {
 
 export function catalogPage(items, state) {
   const perPage = catalogPageSizes.includes(state.perPage) ? state.perPage : 20;
-  const matching = items.filter(item => (!state.type || item.type === state.type) && (!state.tag || item.tags.includes(state.tag)));
+  const matching = items.filter(item => {
+    // Bookmarked essay URLs predate the split into profiles, essays and long reads.
+    const type = state.type === 'essay' ? item.type : (item.catalog_type || item.type);
+    return (!state.type || type === state.type) && (!state.tag || item.tags.includes(state.tag));
+  });
   const pageCount = Math.ceil(matching.length / perPage);
   const requested = Number.isSafeInteger(state.page) && state.page > 0 ? state.page : 1;
   const page = Math.min(requested, Math.max(1, pageCount));

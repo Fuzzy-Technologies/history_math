@@ -101,11 +101,11 @@ try {
     assert.equal(new URL(page.url()).searchParams.has('tag'), false);
     assert.deepEqual(await visible(), records.slice((last - 1) * 20).map(record => record.url));
     await page.goto(url + '?page=2&per_page=5', {waitUntil: 'networkidle'});
-    const targetType = records.find(record => record.type)?.type;
+    const targetType = records.find(record => record.catalog_type).catalog_type;
     const label = await page.locator('#type-filter').evaluate((select, value) => [...select.options].find(option => option.value === value).textContent, targetType);
     await page.locator('#type-filter-button').click();
     await page.getByRole('option', {name: label, exact: true}).click();
-    const matches = records.filter(record => record.type === targetType);
+    const matches = records.filter(record => record.catalog_type === targetType);
     assert.equal(new URL(page.url()).searchParams.has('page'), false);
     assert.deepEqual(await visible(), matches.slice(0, 5).map(record => record.url));
     await page.screenshot({path: `test-results/catalog/${lang}-filtered.png`, fullPage: true});

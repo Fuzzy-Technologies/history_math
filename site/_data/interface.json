@@ -24,6 +24,11 @@
     "type": "Тип публикации",
     "all_types": "Все типы",
     "essays": "Очерки",
+    "catalog_genres": {
+      "labels": {"short-essay": "Очерк", "longread": "Лонгрид", "people": "Персоналия"},
+      "options": {"longread": "Лонгриды", "people": "Персоналии"},
+      "legacy_essays": "Все материалы прежнего типа «Очерк»"
+    },
     "problems": "Задачи",
     "instruments": "Инструменты",
     "notes": "Заметки",
@@ -73,6 +78,11 @@
     "type": "Article type",
     "all_types": "All types",
     "essays": "Essays",
+    "catalog_genres": {
+      "labels": {"short-essay": "Essay", "longread": "Long read", "people": "Profile"},
+      "options": {"longread": "Long reads", "people": "People"},
+      "legacy_essays": "All publications formerly listed as essays"
+    },
     "problems": "Problems",
     "instruments": "Instruments",
     "notes": "Notes",
