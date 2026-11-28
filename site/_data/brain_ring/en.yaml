@@ -10,6 +10,19 @@ topics:
   combinatorics: Combinatorics and probability
   measurement: Measurement, time and instruments
   language: Mathematics and language
+feedback:
+  correct:
+    message: Correct!
+    points: 1
+    show_answer: false
+  incorrect:
+    message: That answer didn’t match
+    points: 0
+    show_answer: true
+  timeout:
+    message: Time is up
+    points: 0
+    show_answer: true
 questions:
   - id: br-2023-08-26-q01-en
     source_id: br-2023-08-26-q01
@@ -26,7 +39,7 @@ questions:
         - 1,023,456,789
         - 1 023 456 789
     answer_text: '1023456789'
-    digest: ''
+    digest: Start with 1, the smallest nonzero digit. Next comes 0, then all the remaining digits in increasing order.
     links: []
   - id: br-2023-08-26-q02-en
     source_id: br-2023-08-26-q02
@@ -75,7 +88,8 @@ questions:
         one: n384
         two: n96
     answer_text: 384 with one painted face, 96 with two.
-    digest: ''
+    digest: |-
+      On each of the six faces, 8 × 8 cubes have just that face painted, for 384 in all. Along each of the twelve edges there are 8 cubes with two painted faces, excluding the corners, for a total of 96.
     links: []
   - id: br-2023-09-02-q02-en
     source_id: br-2023-09-02-q02
@@ -100,8 +114,11 @@ questions:
         - n13
         - n14
     answer_text: 13 and 14
-    digest: ''
-    links: []
+    digest: |-
+      13² + 14² = 169 + 196 = 365. The sum of the squares of two consecutive positive integers keeps increasing, so there is no other pair.
+    links:
+      - title: A sum of two squares
+        url: /publications/hm-0114ac488785-en/
   - id: br-2023-09-02-q03-en
     source_id: br-2023-09-02-q03
     source_ids:
@@ -115,8 +132,10 @@ questions:
     answer:
       accepted:
         - At 16
+        - '16'
+        - 16 years old
     answer_text: At 16
-    digest: ''
+    digest: 'In base four, the numerals 33 and 100 represent consecutive ages: 33₄ = 15 and 100₄ = 16.'
     links: []
   - id: br-2023-09-09-q01-en
     source_id: br-2023-09-09-q01
@@ -130,7 +149,7 @@ questions:
     answer:
       solution: No.
     answer_text: No.
-    digest: ''
+    digest: Look at the last digit. A square written in base ten can only end in 0, 1, 4, 5, 6 or 9.
     links: []
   - id: br-2023-09-09-q02-en
     source_id: br-2023-09-09-q02
@@ -144,7 +163,7 @@ questions:
     answer:
       solution: Yes, 10 + 5 + 1 + 1 + 1 + 1 + 1 = 20.
     answer_text: Yes, 10 + 5 + 1 + 1 + 1 + 1 + 1 = 20.
-    digest: ''
+    digest: 'Seven coins are suitable: one for 10 rubles, one for 5 and five for the ruble.'
     links: []
   - id: br-2023-09-09-q03-en
     source_id: br-2023-09-09-q03
@@ -158,6 +177,8 @@ questions:
     answer:
       accepted:
         - 10 and 5
+        - 10, 5
+        - 10 + 5
     answer_text: 10 and 5
     digest: 'According to the condition of the task: it is not said that any of them 5'
     links: []
@@ -174,22 +195,80 @@ questions:
       accepted:
         - '11'
     answer_text: '11'
-    digest: ''
+    digest: |-
+      Eleven months reach day 30. February is the only exception. Four months have exactly 30 days, which is a different reading of the puzzle.
     links: []
   - id: br-2023-09-16-q02-en
     source_id: br-2023-09-16-q02
     source_ids:
       - br-2023-09-16-q02
     edition_source_id: br-2023-09-16-q02
-    topic: history
+    topic: language
     difficulty: intermediate
-    format: self_check
+    format: short_input
     prompt: |-
-      One gentleman wrote about himself: “I have twenty-five fingers on one hand, as many on the other, and ten on my feet.” What was he wrong about?
+      A man wrote, “I have twenty-five fingers on one hand, just as many on the other, and ten on my feet.” What punctuation mark did he leave out?
     answer:
-      solution: I didn't put a colon in one place.
-    answer_text: I didn't put a colon in one place.
-    digest: ''
+      accepted:
+        - A colon is missing after “twenty”
+        - colon
+        - a colon
+        - ':'
+        - in the colon
+        - he left out a colon
+        - he forgot the colon
+        - missing colon
+        - he missed the colon
+        - he did not put a colon in the right place
+        - he forgot to put a colon where it belongs
+        - a colon after twenty
+        - colon after 20
+        - he forgot a colon after twenty
+        - put a colon after twenty
+        - he left out a colon after twenty
+        - he left out a colon after 20
+        - he left out a colon after the word twenty
+        - he left out a colon after the number twenty
+        - he forgot the colon after twenty
+        - he forgot the colon after 20
+        - he forgot the colon after the word twenty
+        - he forgot the colon after the number twenty
+        - he forgot to add a colon
+        - he forgot to add a colon after twenty
+        - he forgot to add a colon after 20
+        - he forgot to add a colon after the word twenty
+        - he forgot to add a colon after the number twenty
+        - he missed a colon
+        - he missed a colon after twenty
+        - he missed a colon after 20
+        - he missed a colon after the word twenty
+        - he missed a colon after the number twenty
+        - there should be a colon
+        - there should be a colon after twenty
+        - there should be a colon after 20
+        - there should be a colon after the word twenty
+        - there should be a colon after the number twenty
+        - there is no colon
+        - there is no colon after twenty
+        - there is no colon after 20
+        - there is no colon after the word twenty
+        - there is no colon after the number twenty
+        - a colon is missing
+        - a colon is missing after twenty
+        - a colon is missing after 20
+        - a colon is missing after the word twenty
+        - a colon is missing after the number twenty
+        - put a colon
+        - put a colon after 20
+        - put a colon after the word twenty
+        - put a colon after the number twenty
+        - missing colon after twenty
+        - missing colon after 20
+        - missing colon after the word twenty
+        - missing colon after the number twenty
+    answer_text: A colon is missing after “twenty”
+    digest: 'Insert a colon after “twenty”: “I have twenty fingers: five on one hand, as many on the other, and ten on my
+      feet.”'
     links: []
   - id: br-2023-09-16-q03-en
     source_id: br-2023-09-16-q03
@@ -251,8 +330,11 @@ questions:
     answer:
       accepted:
         - Solve them
+        - solve problems
+        - start solving problems
+        - solve them yourself
     answer_text: Solve them
-    digest: ''
+    digest: George Poya compared problem solving to swimming. The ability to gain in practice, working on tasks independently.
     links: []
   - id: br-2023-09-30-q02-en
     source_id: br-2023-09-30-q02
@@ -267,7 +349,7 @@ questions:
     answer:
       solution: (1 + 2 + … + 12) 2 + 24 = 180
     answer_text: (1 + 2 + … + 12) 2 + 24 = 180
-    digest: ''
+    digest: The hour strikes add up to 2 × (1 + 2 + … + 12) = 156. The 24 half-hour strikes bring the total to 180.
     links: []
   - id: br-2023-09-30-q03-en
     source_id: br-2023-09-30-q03
@@ -282,7 +364,7 @@ questions:
     answer:
       solution: All sums are equal to 65 + 65 = 130
     answer_text: All sums are equal to 65 + 65 = 130
-    digest: ''
+    digest: 'The four page numbers on each sheet form two pairs: each pair adds up to 65, since the booklet has 64 pages.'
     links: []
   - id: br-2023-10-07-q01-en
     source_id: br-2023-10-07-q01
@@ -296,7 +378,8 @@ questions:
     answer:
       solution: No. Divided by 3, not divided by 9
     answer_text: No. Divided by 3, not divided by 9
-    digest: ''
+    digest: The digits add up to 123, so the number is divisible by 3 but not by 9. Every square divisible by 3 is also divisible
+      by 9.
     links: []
   - id: br-2023-10-07-q02-en
     source_id: br-2023-10-07-q02
@@ -326,7 +409,7 @@ questions:
       accepted:
         - 125%
     answer_text: 125%
-    digest: ''
+    digest: If there are 80 boys for every 100 girls, the ratio of girls to boys is 100 ÷ 80 = 1.25, or 125%.
     links: []
   - id: br-2023-10-14-q02-en
     source_id: br-2023-10-14-q02
@@ -342,7 +425,8 @@ questions:
       accepted:
         - '28'
     answer_text: '28'
-    digest: ''
+    digest: |-
+      Under the condition, half, quarter and seventh part are 25/28 pupils. The remaining three have 3/28, so there are 28 students.
     links: []
   - id: br-2023-10-14-q03-en
     source_id: br-2023-10-14-q03
@@ -363,7 +447,8 @@ questions:
     answer:
       solution: '99: "There are exactly 99 false statements in this book."'
     answer_text: '99: "There are exactly 99 false statements in this book."'
-    digest: ''
+    digest: |-
+      A maximum of one statement can be true because they name different numbers. If all were false, all would be true. So 99 claims are false.
     links: []
   - id: br-2023-10-21-q01-en
     source_id: br-2023-10-21-q01
@@ -396,7 +481,8 @@ questions:
       accepted:
         - '111'
     answer_text: '111'
-    digest: ''
+    digest: |-
+      It follows from the two inequalities that the book price is strictly above 110.9 and strictly below 1000/9. The only price in whole rubles in this period is 111.
     links: []
   - id: br-2023-10-28-q01-en
     source_id: br-2023-10-28-q01
@@ -411,8 +497,13 @@ questions:
     answer:
       accepted:
         - Same thing
+        - equally much
+        - equal amounts
+        - the same amount
+        - the same amount of each
     answer_text: Same thing
-    digest: ''
+    digest: |-
+      After both operations in each glass again 200 ml. In the first glass, the place of the departed water was taken by exactly the same volume of syrup.
     links: []
   - id: br-2023-10-28-q02-en
     source_id: br-2023-10-28-q02
@@ -436,9 +527,12 @@ questions:
     answer:
       accepted:
         - pythagoras
+        - Pythagoras of Samos
     answer_text: pythagoras
-    digest: ''
-    links: []
+    digest: The poem plays on the legend of sacrifice after the discovery of the Pythagorean theorem. It's about a legend.
+    links:
+      - title: 'Pythagorean Geometry: The Pythagorean Theorem'
+        url: /publications/hm-tt-1a77a094393e-en/
   - id: br-2023-11-04-q01-en
     source_id: br-2023-11-04-q01
     source_ids:
@@ -452,7 +546,8 @@ questions:
       accepted:
         - '5'
     answer_text: '5'
-    digest: ''
+    digest: |-
+      The first digit is 2, and the remaining zeros, or the first digit, are 1, and one more unit stands in any of the four remaining places.
     links: []
   - id: br-2023-11-04-q02-en
     source_id: br-2023-11-04-q02
@@ -466,10 +561,15 @@ questions:
       The famous Greek scientist Eratosthenes was a poet, a geographer, an astronomer, and a mathematician. From his contemporaries, he received the nickname “Beta”. It can be translated into Russian in two words, the first of which is “forever”. Write the second word.
     answer:
       accepted:
-        - Second second second
-    answer_text: Second second second
-    digest: ''
-    links: []
+        - Second
+        - Always second
+        - Forever second
+        - Eternally second
+    answer_text: Second
+    digest: Beta is the second letter of the Greek alphabet. This is how the legend explains the name of the versatile Eratosthenes.
+    links:
+      - title: 'Eratosthenes: always second'
+        url: /publications/hm-0b315578e49a-en/
   - id: br-2023-11-04-q03-en
     source_id: br-2023-11-04-q03
     source_ids:
@@ -482,8 +582,11 @@ questions:
     answer:
       accepted:
         - It's impossible
+        - It’s impossible
+        - 'no'
+        - impossible
     answer_text: It's impossible
-    digest: ''
+    digest: The sum of five odd numbers is odd and 20 is an even number.
     links: []
   - id: br-2023-11-11-q01-en
     source_id: br-2023-11-11-q01
@@ -499,7 +602,7 @@ questions:
       accepted:
         - '0'
     answer_text: '0'
-    digest: ''
+    digest: 1/2 + 1/3 + 1/6 = 1. Sleep, dancing and singing take up all day.
     links: []
   - id: br-2023-11-11-q02-en
     source_id: br-2023-11-11-q02
@@ -515,7 +618,8 @@ questions:
       accepted:
         - '81'
     answer_text: '81'
-    digest: ''
+    digest: |-
+      Each break replaces one piece with three, increasing their number by two. From one sheet after 40 breaks, 1 + 2 × 40 = 81 pieces is obtained.
     links: []
   - id: br-2023-11-11-q03-en
     source_id: br-2023-11-11-q03
@@ -530,7 +634,8 @@ questions:
       accepted:
         - 10 minutes
     answer_text: 10 minutes
-    digest: ''
+    digest: From the condition, one pump pumps out one ton in 10 minutes. Therefore, 25 such pumps will pump 25 tons in the
+      same time.
     links: []
   - id: br-2023-11-18-q01-en
     source_id: br-2023-11-18-q01
@@ -545,7 +650,7 @@ questions:
       accepted:
         - 5 km
     answer_text: 5 km
-    digest: ''
+    digest: 5 × 1,000,000 mm = 5,000,000 mm. One kilometer is a million millimeters.
     links: []
   - id: br-2023-11-18-q02-en
     source_id: br-2023-11-18-q02
@@ -559,7 +664,7 @@ questions:
     answer:
       solution: 'Yes: 1, 8, 15, 22, 29'
     answer_text: 'Yes: 1, 8, 15, 22, 29'
-    digest: ''
+    digest: If the first number falls on Sunday and the month is the 29th, the fifth Sunday falls on it.
     links: []
   - id: br-2023-11-18-q03-en
     source_id: br-2023-11-18-q03
@@ -570,12 +675,18 @@ questions:
     difficulty: intermediate
     format: short_input
     prompt: |-
-      4 cows of black suit and 3 cows of red suit for 5 days gave the same milk yield as gave 3 cows of black suit and 5 red suit for 4 days. Which cows are more milky - black or red suit?
+      Four black cows and three red cows give as much milk in five days as three black cows and five red cows do in four days. Which cows give more milk per cow per day?
     answer:
       accepted:
-        - Redhead
-    answer_text: Redhead
-    digest: ''
+        - The red cows
+        - red cows
+        - red
+        - the reddish-brown cows
+        - reddish-brown cows
+        - the brown cows
+    answer_text: The red cows
+    digest: |-
+      Five days of milk from four black cows and three red cows equals four days from three black cows and five red cows. If the daily yields are x and y, the equation is 5(4x + 3y) = 4(3x + 5y), hence 8x = 5y. The red cows produce more milk per cow.
     links: []
   - id: br-2023-11-25-q01-en
     source_id: br-2023-11-25-q01
@@ -590,7 +701,8 @@ questions:
       accepted:
         - '20'
     answer_text: '20'
-    digest: ''
+    digest: |-
+      In the category of units, five is found in 5, 15, ..., 95, and in the category of tens - in 50, ..., 59. Both figures are taken into account in 55.
     links: []
   - id: br-2023-11-25-q02-en
     source_id: br-2023-11-25-q02
@@ -606,7 +718,8 @@ questions:
       accepted:
         - '30'
     answer_text: '30'
-    digest: ''
+    digest: To the nine pairs in front and the five behind, we add a pair of the student himself. Only 15 pairs, that is 30
+      people.
     links: []
   - id: br-2023-11-25-q03-en
     source_id: br-2023-11-25-q03
@@ -621,7 +734,7 @@ questions:
       accepted:
         - '55'
     answer_text: '55'
-    digest: ''
+    digest: 55² = 3025, which uses exactly the four specified digits.
     links: []
   - id: br-2023-12-02-q01-en
     source_id: br-2023-12-02-q01
@@ -638,7 +751,8 @@ questions:
       accepted:
         - 6 years
     answer_text: 6 years
-    digest: ''
+    digest: |-
+      Now the children together are 29 years old, 12 less than the age of the father. During the year, the sum of the ages of children grows by three, and the age of the father by one. The difference will disappear in six years.
     links: []
   - id: br-2023-12-02-q02-en
     source_id: br-2023-12-02-q02
@@ -654,7 +768,8 @@ questions:
       accepted:
         - '500'
     answer_text: '500'
-    digest: ''
+    digest: |-
+      Pages 1–9 require 9 digits, and 10–99 require another 180. There are 1203 digits left, which is 401 three-digit numbers. The last number is 500.
     links: []
   - id: br-2023-12-02-q03-en
     source_id: br-2023-12-02-q03
@@ -665,13 +780,15 @@ questions:
     topic: measurement
     difficulty: intermediate
     format: short_input
-    prompt: |-
-      In the XIV century, King Edward II of England introduced a unit of length, which is equal to the length of three barley grains, taken from the middle part of the spike and held to each other by their ends. What unit of length do you think we are talking about? By the way, it is currently used in utilities.
+    prompt: An old English definition used three barleycorns placed end to end as a unit of length. What unit was it?
     answer:
       accepted:
-        - Dumas
-    answer_text: Dumas
-    digest: ''
+        - An inch
+        - inch
+        - one inch
+    answer_text: An inch
+    digest: |-
+      An old English definition represented an inch by three barleycorns placed end to end. The modern international inch is exactly 25.4 mm.
     links: []
   - id: br-2023-12-09-q01-en
     source_id: br-2023-12-09-q01
@@ -689,7 +806,8 @@ questions:
         - A mathematician
         - mathematician
     answer_text: A mathematician
-    digest: ''
+    digest: |-
+      In jest, “mathematician” is defined by “mathematics.” It turns out a circle: to apply the definition, you already need to know who the mathematician is.
     links: []
   - id: br-2023-12-09-q02-en
     source_id: br-2023-12-09-q02
@@ -706,7 +824,8 @@ questions:
       accepted:
         - Theorem
     answer_text: Theorem
-    digest: ''
+    digest: |-
+      The Greek theōrēma is associated with the verb “to look, to contemplate”. In mathematics, this is called a statement, the truth of which is justified by proof.
     links: []
   - id: br-2023-12-09-q03-en
     source_id: br-2023-12-09-q03
@@ -721,9 +840,15 @@ questions:
     answer:
       accepted:
         - They are equal
+        - equal
+        - the same
+        - neither
+        - neither is greater
     answer_text: They are equal
-    digest: ''
-    links: []
+    digest: Both values are written with the same product eπ/100.
+    links:
+      - title: The number e
+        url: /publications/hm-aa4d9b7cb4ac-en/
   - id: br-2023-12-16-q01-en
     source_id: br-2023-12-16-q01
     source_ids:
@@ -738,21 +863,7 @@ questions:
         The ancient Greeks considered a rectangle pleasant for the eyes, the sides of which form the golden ratio (x + y):x = x:y, the ratio is approximately 1.618.
     answer_text: |-
       The ancient Greeks considered a rectangle pleasant for the eyes, the sides of which form the golden ratio (x + y):x = x:y, the ratio is approximately 1.618.
-    digest: ''
-    links: []
-  - id: br-2023-12-16-q02-en
-    source_id: br-2023-12-16-q02
-    source_ids:
-      - br-2023-12-16-q02
-    edition_source_id: br-2023-12-16-q02
-    topic: history
-    difficulty: beginner
-    format: self_check
-    prompt: Write the Einstein-Pythagoras formula.
-    answer:
-      solution: (mc)^2 = m (a^2 + b^2)
-    answer_text: (mc)^2 = m (a^2 + b^2)
-    digest: ''
+    digest: For parties 8 and 5, the ratio is 1.6. This is close to the golden ratio (1 + √5)/2 ≈ 1.618.
     links: []
   - id: br-2023-12-16-q03-en
     source_id: br-2023-12-16-q03
@@ -784,8 +895,11 @@ questions:
       accepted:
         - 1, 3, 6
     answer_text: 1, 3, 6
-    digest: ''
-    links: []
+    digest: |-
+      With weights of 1, 3 and 6 kg, you can weigh, for example, 2 = 3 − 1, 5 = 6 − 1 and 8 = 6 + 3 − 1 kg, placing weights on both bowls. Together with direct sums, all integer masses from 1 to 10 kg are obtained.
+    links:
+      - title: Fibonacci’s weighing problem
+        url: /publications/hm-86d1740cccf7-en/
   - id: br-2023-12-23-q02-en
     source_id: br-2023-12-23-q02
     source_ids:
@@ -799,8 +913,10 @@ questions:
       accepted:
         - '15'
     answer_text: '15'
-    digest: ''
-    links: []
+    digest: Triangular numbers are sums of consecutive natural numbers starting with one. To 1 + 2 + 3 + 4 = 10 we add 5.
+    links:
+      - title: 'Pythagorean Arithmetic: Figurate Numbers'
+        url: /publications/hm-tt-ba9e946a3c3b-en/
   - id: br-2023-12-23-q03-en
     source_id: br-2023-12-23-q03
     source_ids:
@@ -813,7 +929,7 @@ questions:
     answer:
       solution: (666 − 66) ÷ 6 = 100.
     answer_text: (666 − 66) ÷ 6 = 100.
-    digest: ''
+    digest: In the numerator 666 - 66 = 600. Dividing by the last six gives you 100.
     links: []
   - id: br-2023-12-30-q01-en
     source_id: br-2023-12-30-q01
@@ -828,8 +944,11 @@ questions:
     answer:
       accepted:
         - Minimum and maximum, respectively
+        - minimum and maximum
+        - minimum, maximum
+        - min and max
     answer_text: Minimum and maximum, respectively
-    digest: ''
+    digest: In the question, the minimum and maximum are called - two types of extremes of a function.
     links: []
   - id: br-2023-12-30-q02-en
     source_id: br-2023-12-30-q02
@@ -844,7 +963,7 @@ questions:
       accepted:
         - 1, 4, 7
     answer_text: 1, 4, 7
-    digest: ''
+    digest: The substitution yields 28 × 1 + 30 × 4 + 31 × 7 = 28 + 120 + 217 = 365.
     links: []
   - id: br-2023-12-30-q03-en
     source_id: br-2023-12-30-q03
@@ -859,7 +978,8 @@ questions:
     answer:
       solution: Carlson. Make two more cuts, centrally symmetrical already made.
     answer_text: Carlson. Make two more cuts, centrally symmetrical already made.
-    digest: ''
+    digest: |-
+      Draw lines through the centre parallel to the two cuts and pair parts by reflection in those lines. The difference between the sums of the opposite pieces is four times the area in the rectangle between the centre and the cuts' intersection that lies inside the cake. The smallest and largest pieces together therefore make up at least half.
     links: []
   - id: br-2024-01-13-q01-en
     source_id: br-2024-01-13-q01
@@ -874,6 +994,8 @@ questions:
     answer:
       accepted:
         - One
+        - the first
+        - first
     answer_text: One
     digest: In the time that the second fly takes to get up, the first fly can go down and get up.
     links: []
@@ -892,22 +1014,26 @@ questions:
         Yes. If there is a dull angle in a triangle, however small its sides may be, close enough to 180 degrees, then the middle perpendiculars of its sides will be almost parallel. The point of their intersection – the center of the circle – will be arbitrarily removed from the top of the blunt angle.
     answer_text: |-
       Yes. If there is a dull angle in a triangle, however small its sides may be, close enough to 180 degrees, then the middle perpendiculars of its sides will be almost parallel. The point of their intersection – the center of the circle – will be arbitrarily removed from the top of the blunt angle.
-    digest: ''
+    digest: |-
+      For side a opposite angle A, the circumradius is a/(2 sin A). If A approaches 180°, the denominator tends to zero, so the radius can become arbitrarily large even when the perimeter is fixed.
     links: []
   - id: br-2024-01-13-q03-en
     source_id: br-2024-01-13-q03
     source_ids:
       - br-2024-01-13-q03
     edition_source_id: br-2024-01-13-q03
-    topic: history
+    topic: logic
     difficulty: beginner
     format: short_input
     prompt: From three matches, without breaking them, form 4.
     answer:
       accepted:
         - IV
+        - '4'
+        - Roman numeral IV
+        - the Roman numeral IV
     answer_text: IV
-    digest: ''
+    digest: From two matches add V, and the third put on the left as I. This is the Roman numeral IV.
     links: []
   - id: br-2024-01-20-q01-en
     source_id: br-2024-01-20-q01
@@ -922,7 +1048,8 @@ questions:
       accepted:
         - '5'
     answer_text: '5'
-    digest: ''
+    digest: |-
+      Usually, four side lengths and one diagonal length are enough. The diagonal divides the convex quadrangle into two triangles, each of which is given by three sides.
     links: []
   - id: br-2024-01-20-q02-en
     source_id: br-2024-01-20-q02
@@ -938,7 +1065,8 @@ questions:
       accepted:
         - '1'
     answer_text: '1'
-    digest: ''
+    digest: |-
+      The length of the semicircle is equal to π/2 multiplied by its diameter. In each partition, the sum of the diameters is equal to the length of the original segment.
     links: []
   - id: br-2024-01-20-q03-en
     source_id: br-2024-01-20-q03
@@ -952,7 +1080,7 @@ questions:
     answer:
       solution: 122, 232, …
     answer_text: 122, 232, …
-    digest: ''
+    digest: Write down the numbers 11, 12, 13, ... and divide the flow of numbers into threes. After 202, we get 122 and 232.
     links: []
   - id: br-2024-01-27-q01-en
     source_id: br-2024-01-27-q01
@@ -965,10 +1093,12 @@ questions:
     prompt: What shape is obtained when the diagonals of the regular pentagon are crossed?
     answer:
       accepted:
-        - The right pentagon
-        - right pentagon
-    answer_text: The right pentagon
-    digest: ''
+        - A regular pentagon
+        - regular pentagon
+        - pentagon
+    answer_text: A regular pentagon
+    digest: The diagonals form a pentagram. Rotation by 72° cycles through its five inner vertices, making the inner pentagon
+      regular.
     links: []
   - id: br-2024-01-27-q02-en
     source_id: br-2024-01-27-q02
@@ -1016,7 +1146,7 @@ questions:
     answer:
       solution: No, because it's 360 degrees.
     answer_text: No, because it's 360 degrees.
-    digest: ''
+    digest: The sum of the inner corners of the quadrangle is 360°. Four sharp corners would have given strictly less.
     links: []
   - id: br-2024-02-03-q02-en
     source_id: br-2024-02-03-q02
@@ -1031,7 +1161,8 @@ questions:
       accepted:
         - '79479479'
     answer_text: '79479479'
-    digest: ''
+    digest: |-
+      In two neighboring three of the three digits, the two coincide. The equality of sums causes the first and fourth digits to coincide, so the triples 7, 9, 4 are repeated.
     links: []
   - id: br-2024-02-03-q03-en
     source_id: br-2024-02-03-q03
@@ -1046,7 +1177,7 @@ questions:
     answer:
       solution: 101 − 10² = 1.
     answer_text: 101 − 10² = 1.
-    digest: ''
+    digest: Move the 2 into the exponent. The square of 10 is 100, leaving 1.
     links: []
   - id: br-2024-02-10-q01-en
     source_id: br-2024-02-10-q01
@@ -1061,6 +1192,8 @@ questions:
     answer:
       accepted:
         - Perelman
+        - Grigori Perelman
+        - Grigory Perelman
     answer_text: Perelman
     digest: Grigory Yakovlevich Perelman is not a relative of Yakov Isidorovich Perelman, the famous popularizer of science
     links: []
@@ -1079,7 +1212,9 @@ questions:
         - 1, 2, 4, 8, 16
     answer_text: 1, 2, 4, 8, 16
     digest: The solution is built in a binary number system.
-    links: []
+    links:
+      - title: Fibonacci’s weighing problem
+        url: /publications/hm-86d1740cccf7-en/
   - id: br-2024-02-10-q03-en
     source_id: br-2024-02-10-q03
     source_ids:
@@ -1093,7 +1228,7 @@ questions:
       accepted:
         - Root
     answer_text: Root
-    digest: ''
+    digest: The root is called the main part of the word, the organ of the plant and the meaning that satisfies the equation.
     links: []
   - id: br-2024-02-17-q01-en
     source_id: br-2024-02-17-q01
@@ -1107,7 +1242,8 @@ questions:
     answer:
       solution: How many minutes has it been since the beginning of the hour?
     answer_text: How many minutes has it been since the beginning of the hour?
-    digest: ''
+    digest: On the hourly dial, the marks are separated by intervals of five minutes. The minute arrow on the three shows
+      15 minutes.
     links: []
   - id: br-2024-02-17-q02-en
     source_id: br-2024-02-17-q02
@@ -1117,12 +1253,16 @@ questions:
     topic: measurement
     difficulty: beginner
     format: short_input
-    prompt: 'Arrange units of length in descending order: inch, foot, elbow.'
+    prompt: 'Put these traditional units of length in descending order: inch, foot, cubit.'
     answer:
       accepted:
-        - Elbow, foot, inch
-    answer_text: Elbow, foot, inch
-    digest: ''
+        - Cubit, foot, inch
+        - cubit foot inch
+        - cubit > foot > inch
+        - cubit, ft, in
+    answer_text: Cubit, foot, inch
+    digest: A cubit was typically longer than a foot. There are exactly 12 inches in a foot, while historical cubits varied
+      in length.
     links: []
   - id: br-2024-02-17-q03-en
     source_id: br-2024-02-17-q03
@@ -1138,7 +1278,7 @@ questions:
       accepted:
         - 20 rubles
     answer_text: 20 rubles
-    digest: ''
+    digest: In one pocket became 10 rubles less, in the other – 10 more. The difference was 20 rubles.
     links: []
   - id: br-2024-02-24-q01-en
     source_id: br-2024-02-24-q01
@@ -1153,9 +1293,13 @@ questions:
     answer:
       accepted:
         - Archimedes
+        - Archimedes of Syracuse
     answer_text: Archimedes
-    digest: ''
-    links: []
+    digest: |-
+      Cicero reports that he recognised Archimedes' tomb by the sphere and cylinder. Archimedes proved that the volume of a sphere is two-thirds that of its circumscribed cylinder.
+    links:
+      - title: Archimedes of Syracuse (287–212 BCE)
+        url: /publications/hm-10e7ce21d4ee-en/
   - id: br-2024-02-24-q02-en
     source_id: br-2024-02-24-q02
     source_ids:
@@ -1165,13 +1309,20 @@ questions:
     difficulty: intermediate
     format: short_input
     prompt: |-
-      "What was required to prove" - these words end every mathematical reasoning of the great mathematician in his textbook. Who is this scientist and what is the name of this book?
+      Which Greek mathematician's textbook is famous for ending proofs with the words “which was to be proved”? Give the mathematician and the title.
     answer:
       accepted:
-        - Euclid, "Inceptions"
-    answer_text: Euclid, "Inceptions"
-    digest: ''
-    links: []
+        - Euclid's Elements
+        - Euclid’s Elements
+        - Euclid, Elements
+        - Euclid, The Elements
+        - Euclid and the Elements
+        - Elements by Euclid
+    answer_text: Euclid's Elements
+    digest: In translations of Euclid, proofs end with a phrase rendered as “which was to be proved”, often abbreviated QED.
+    links:
+      - title: Euclid of Alexandria (c. 340–287 BCE)
+        url: /publications/hm-1968b4484b64-en/
   - id: br-2024-02-24-q03-en
     source_id: br-2024-02-24-q03
     source_ids:
@@ -1190,7 +1341,7 @@ questions:
         - 1 L
         - one liter
     answer_text: One litre
-    digest: ''
+    digest: A liter is equal to one cubic decimeter. A cube with a side of 10 cm holds exactly a liter.
     links: []
   - id: br-2024-03-02-q02-en
     source_id: br-2024-03-02-q02
@@ -1207,8 +1358,10 @@ questions:
         - Zero
         - '0'
     answer_text: Zero
-    digest: ''
-    links: []
+    digest: Sanskrit śūnya means “empty” and Arabic ṣifr means “empty, zero”. Both forms refer to the history of zero.
+    links:
+      - title: Brahmagupta and Zero as a Number
+        url: /publications/hm-b180bf420e64-en/
   - id: br-2024-03-02-q03-en
     source_id: br-2024-03-02-q03
     source_ids:
@@ -1225,7 +1378,7 @@ questions:
         - Sine
         - sin
     answer_text: Sine
-    digest: ''
+    digest: The term went through Sanskrit and Arabic before Latin translators used sinus. “Sine” comes from that Latin name.
     links: []
   - id: br-2024-03-09-q01-en
     source_id: br-2024-03-09-q01
@@ -1240,7 +1393,7 @@ questions:
       accepted:
         - 1/8784
     answer_text: 1/8784
-    digest: ''
+    digest: In leap year 2024, there were 366 days, or 366 × 24 = 8,784 hours.
     links: []
   - id: br-2024-03-09-q03-en
     source_id: br-2024-03-09-q03
@@ -1249,15 +1402,14 @@ questions:
     edition_source_id: br-2024-03-09-q03
     topic: language
     difficulty: intermediate
-    format: short_input
+    format: self_check
     prompt: |-
       The twelfth month is called “December”. This word comes from the Greek “dec” – ten. Is the month of December called the tenth? How do you explain this discrepancy?
     answer:
-      accepted:
-        - The New Year started on March 1st
-        - New Year started on March 1st
+      solution: The New Year started on March 1st
     answer_text: The New Year started on March 1st
-    digest: ''
+    digest: December comes from the Latin decem, meaning “ten”. In the old Roman ordering, starting in March, it was the tenth
+      month.
     links: []
   - id: br-2024-03-16-q01-en
     source_id: br-2024-03-16-q01
@@ -1272,7 +1424,7 @@ questions:
       accepted:
         - '1774'
     answer_text: '1774'
-    digest: ''
+    digest: 'The Roman numerals here add up: M = 1000, D = 500, CC = 200, LXX = 70 and IV = 4.'
     links: []
   - id: br-2024-03-16-q02-en
     source_id: br-2024-03-16-q02
@@ -1283,12 +1435,19 @@ questions:
     difficulty: intermediate
     format: short_input
     prompt: |-
-      Inside the black box lies a piece of household appliances. It was invented by Archimedes. On this occasion, the Roman architect of the 1st century BC. Vitruvius wrote: “...pockets are formed, which are filled with water.” Since these pockets as the "snail" rotates, as it were, run upwards, the water captured by them rises until it splashes out. What's inside the black box?
+      A household appliance contains a part that works like an ancient machine for raising water. As the machine turns, water is carried up in pockets between its turns. What part is it?
     answer:
       accepted:
-        - Vint
-    answer_text: Vint
-    digest: ''
+        - An Archimedes screw
+        - Archimedes screw
+        - Archimedes' screw
+        - Archimedes’ screw
+        - Archimedean screw
+        - screw
+        - auger
+    answer_text: An Archimedes screw
+    digest: An Archimedes screw raises water by trapping it between its turns. Augers use the same principle to move other
+      materials.
     links: []
   - id: br-2024-03-16-q03-en
     source_id: br-2024-03-16-q03
@@ -1298,12 +1457,15 @@ questions:
     topic: geometry
     difficulty: beginner
     format: short_input
-    prompt: In a triangle, all heights crossed at one of its vertices. What is this triangle?
+    prompt: All three altitudes of a triangle meet at one of its vertices. What type of triangle is it?
     answer:
       accepted:
-        - rectangular
-    answer_text: rectangular
-    digest: ''
+        - A right triangle
+        - right triangle
+        - right-angled triangle
+        - right-angle triangle
+    answer_text: A right triangle
+    digest: Two sides through the meeting vertex are themselves altitudes to one another, so they are perpendicular.
     links: []
   - id: br-2024-03-23-q01-en
     source_id: br-2024-03-23-q01
@@ -1319,7 +1481,8 @@ questions:
       accepted:
         - 20%
     answer_text: 20%
-    digest: ''
+    digest: Let's take the price of a normal house for 100. The haunted house costs 125. The difference of 25 from 125 is
+      20%.
     links: []
   - id: br-2024-03-23-q02-en
     source_id: br-2024-03-23-q02
@@ -1334,9 +1497,13 @@ questions:
     answer:
       accepted:
         - Omar Khayyam
+        - Khayyam
     answer_text: Omar Khayyam
-    digest: ''
-    links: []
+    digest: |-
+      Omar Khayyam participated in the creation of the Jalali calendar. His poetic heritage is known primarily from the quatrains, rubai.
+    links:
+      - title: Omar Khayyam (Ghiyath al-Din Abu’l-Fath Omar ibn Ibrahim al-Khayyam Nishapuri, 1048–1131)
+        url: /publications/hm-98e3394759f9-en/
   - id: br-2024-03-23-q03-en
     source_id: br-2024-03-23-q03
     source_ids:
@@ -1349,9 +1516,13 @@ questions:
     answer:
       accepted:
         - Locus
+        - the locus
+        - geometric locus
     answer_text: Locus
     digest: In Russian geometry texts the abbreviation GMT stands for the same idea.
-    links: []
+    links:
+      - title: A Geometric Locus, Explained with Goats
+        url: /publications/hm-tt-566fdd46b3b8-en/
   - id: br-2024-03-30-q01-en
     source_id: br-2024-03-30-q01
     source_ids:
@@ -1364,8 +1535,10 @@ questions:
     answer:
       solution: A circle with a center at a given point
     answer_text: A circle with a center at a given point
-    digest: ''
-    links: []
+    digest: The distance from the center to any point of the circle is constant and equal to its radius.
+    links:
+      - title: A Geometric Locus, Explained with Goats
+        url: /publications/hm-tt-566fdd46b3b8-en/
   - id: br-2024-03-30-q02-en
     source_id: br-2024-03-30-q02
     source_ids:
@@ -1377,10 +1550,15 @@ questions:
     prompt: The geometric locus of points on the plane equidistant from both sides of the angle is ...
     answer:
       accepted:
-        - Bisectris of this angle
-    answer_text: Bisectris of this angle
-    digest: ''
-    links: []
+        - The angle bisector
+        - angle bisector
+        - bisector
+    answer_text: The angle bisector
+    digest: |-
+      Inside an angle, the angle bisector consists of the points equidistant from its sides. The perpendiculars to the sides and the segment to the vertex form two congruent right triangles.
+    links:
+      - title: A Geometric Locus, Explained with Goats
+        url: /publications/hm-tt-566fdd46b3b8-en/
   - id: br-2024-03-30-q03-en
     source_id: br-2024-03-30-q03
     source_ids:
@@ -1395,9 +1573,12 @@ questions:
       accepted:
         - The perpendicular bisector
         - perpendicular bisector
+        - perpendicular bisector of the segment
     answer_text: The perpendicular bisector
-    digest: ''
-    links: []
+    digest: A point is equidistant from the two ends of a segment exactly when it lies on the perpendicular bisector.
+    links:
+      - title: A Geometric Locus, Explained with Goats
+        url: /publications/hm-tt-566fdd46b3b8-en/
   - id: br-2024-04-06-q01-en
     source_id: br-2024-04-06-q01
     source_ids:
@@ -1410,8 +1591,11 @@ questions:
     answer:
       solution: Two parallel lines, distanced from a straight line by this distance
     answer_text: Two parallel lines, distanced from a straight line by this distance
-    digest: ''
-    links: []
+    digest: |-
+      A set of points at a given positive distance from a straight line consists of two straight lines. They are on different sides of the original, parallel to it.
+    links:
+      - title: A Geometric Locus, Explained with Goats
+        url: /publications/hm-tt-566fdd46b3b8-en/
   - id: br-2024-04-06-q02-en
     source_id: br-2024-04-06-q02
     source_ids:
@@ -1424,8 +1608,11 @@ questions:
     answer:
       solution: The circle for which this segment is the diameter. The ends of the segment are not included in this GMT.
     answer_text: The circle for which this segment is the diameter. The ends of the segment are not included in this GMT.
-    digest: ''
-    links: []
+    digest: |-
+      By Thales' theorem, an angle subtended by a diameter is a right angle. The two endpoints themselves are excluded because they do not define such an angle.
+    links:
+      - title: A Geometric Locus, Explained with Goats
+        url: /publications/hm-tt-566fdd46b3b8-en/
   - id: br-2024-04-06-q03-en
     source_id: br-2024-04-06-q03
     source_ids:
@@ -1438,8 +1625,11 @@ questions:
     answer:
       solution: Two perpendicular straight lines, namely, bisectrises of angles formed by these straight lines
     answer_text: Two perpendicular straight lines, namely, bisectrises of angles formed by these straight lines
-    digest: ''
-    links: []
+    digest: |-
+      In each area, equal distances between straight lines are obtained on the bisector. The bisectors of two adjacent angles form a right angle.
+    links:
+      - title: A Geometric Locus, Explained with Goats
+        url: /publications/hm-tt-566fdd46b3b8-en/
   - id: br-2024-04-13-q01-en
     source_id: br-2024-04-13-q01
     source_ids:
@@ -1454,8 +1644,11 @@ questions:
         Two arcs of circles of the same radius, for which this segment is a common chord, and the ends of the segment are excluded from the arcs. The inscribed corners resting on this chord are equal to this angle.
     answer_text: |-
       Two arcs of circles of the same radius, for which this segment is a common chord, and the ends of the segment are excluded from the arcs. The inscribed corners resting on this chord are equal to this angle.
-    digest: ''
-    links: []
+    digest: |-
+      The inscribed angles above one chord are constant on each corresponding arc. Two arcs for a given angle are symmetrical with respect to a straight line containing a segment.
+    links:
+      - title: A Geometric Locus, Explained with Goats
+        url: /publications/hm-tt-566fdd46b3b8-en/
   - id: br-2024-04-13-q02-en
     source_id: br-2024-04-13-q02
     source_ids:
@@ -1470,8 +1663,11 @@ questions:
         The center of the circle described around a triangle with vertices at these points, the point of intersection of the middle perpendiculars to the sides
     answer_text: |-
       The center of the circle described around a triangle with vertices at these points, the point of intersection of the middle perpendiculars to the sides
-    digest: ''
-    links: []
+    digest: |-
+      The equality of distances to any pair of points defines the middle perpendicular. The intersection of two such perpendiculars is equidistant from all three points.
+    links:
+      - title: A Geometric Locus, Explained with Goats
+        url: /publications/hm-tt-566fdd46b3b8-en/
   - id: br-2024-04-13-q03-en
     source_id: br-2024-04-13-q03
     source_ids:
@@ -1485,8 +1681,11 @@ questions:
     answer:
       solution: The center of the circle inscribed in the triangle, the intersection point of the bissectris
     answer_text: The center of the circle inscribed in the triangle, the intersection point of the bissectris
-    digest: ''
-    links: []
+    digest: |-
+      The point inside the triangle, equidistant from its two sides, lies on the bisector of the corresponding angle. The intersection of bisectris is equidistant from all three sides.
+    links:
+      - title: A Geometric Locus, Explained with Goats
+        url: /publications/hm-tt-566fdd46b3b8-en/
   - id: br-2024-04-20-q02-en
     source_id: br-2024-04-20-q02
     source_ids:
@@ -1499,8 +1698,12 @@ questions:
     answer:
       accepted:
         - Counterclockwise
+        - anticlockwise
+        - counter-clockwise
+        - anti-clockwise
     answer_text: Counterclockwise
-    digest: ''
+    digest: |-
+      In the standard coordinate system, the positive angle is counted from the positive semi-axis x towards the positive semi-axis y.
     links: []
   - id: br-2024-04-20-q03-en
     source_id: br-2024-04-20-q03
@@ -1515,8 +1718,10 @@ questions:
     answer:
       accepted:
         - sophism
+        - sophisms
     answer_text: sophism
-    digest: ''
+    digest: |-
+      In sophistry, a false conclusion is convincing through a hidden substitution or mistranslation. For example, you can discreetly divide the expression by zero.
     links: []
   - id: br-2024-04-27-q01-en
     source_id: br-2024-04-27-q01
@@ -1547,7 +1752,7 @@ questions:
     answer:
       solution: No.
     answer_text: No.
-    digest: ''
+    digest: The rectangles 1 × 5 and 2 × 4 have the same perimeter 12. Their area is 5 and 8.
     links: []
   - id: br-2024-04-27-q03-en
     source_id: br-2024-04-27-q03
@@ -1562,7 +1767,8 @@ questions:
     answer:
       solution: Yes.
     answer_text: Yes.
-    digest: ''
+    digest: For a fixed sum of two side lengths, their product is greatest when they are equal. This follows from (a − b)²
+      ≥ 0.
     links: []
   - id: br-2024-05-04-q01-en
     source_id: br-2024-05-04-q01
@@ -1578,7 +1784,8 @@ questions:
       accepted:
         - 60 km/h
     answer_text: 60 km/h
-    digest: ''
+    digest: |-
+      The time difference is six hours. During this time, at a total speed, the train passes an additional 360 km, so the speed is 60 km / h.
     links: []
   - id: br-2024-05-04-q02-en
     source_id: br-2024-05-04-q02
@@ -1593,8 +1800,11 @@ questions:
       accepted:
         - A right-angle triangle
         - right-angle triangle
+        - right triangle
+        - right-angled triangle
     answer_text: A right-angle triangle
-    digest: ''
+    digest: Since the sum of the angles is 180°, an angle equal to the sum of the other two takes up half of this sum. It's
+      90 degrees.
     links: []
   - id: br-2024-05-04-q03-en
     source_id: br-2024-05-04-q03
@@ -1604,12 +1814,16 @@ questions:
     topic: arithmetic
     difficulty: beginner
     format: short_input
-    prompt: 'Which three-digit numbers are more: all of whose numbers are even or all of whose numbers are odd?'
+    prompt: 'Which are more numerous: three-digit numbers with only even digits, or three-digit numbers with only odd digits?'
     answer:
       accepted:
-        - Oddly
-    answer_text: Oddly
-    digest: ''
+        - Numbers with only odd digits
+        - odd digits
+        - all odd digits
+        - numbers with odd digits
+    answer_text: Numbers with only odd digits
+    digest: |-
+      A three-digit number cannot start with 0. There are 4 × 5 × 5 = 100 numbers with all even digits and 5 × 5 × 5 = 125 with all odd digits.
     links: []
   - id: br-2024-05-11-q01-en
     source_id: br-2024-05-11-q01
@@ -1625,8 +1839,10 @@ questions:
       accepted:
         - The Theorem of Three Perpendiculars
         - Theorem of Three Perpendiculars
+        - three perpendiculars theorem
     answer_text: The Theorem of Three Perpendiculars
-    digest: ''
+    digest: |-
+      Straight on a plane passing through the base of an inclined plane is perpendicular to inclined if and only if it is perpendicular to its orthogonal projection on the plane.
     links: []
   - id: br-2024-05-11-q02-en
     source_id: br-2024-05-11-q02
@@ -1640,9 +1856,14 @@ questions:
       A hundredth of a meter is called a centimeter. One hundredth of the ruble is called a penny. One hundredth of a hectare, a hundredth. What is the name of a hundredth of any number?
     answer:
       accepted:
-        - Percentage
-    answer_text: Percentage
-    digest: ''
+        - One percent
+        - one per cent
+        - percent
+        - per cent
+        - 1%
+        - percentage
+    answer_text: One percent
+    digest: One percent means one-hundredth. Therefore, 1% of x is equal to x/100.
     links: []
   - id: br-2024-05-11-q03-en
     source_id: br-2024-05-11-q03
@@ -1658,7 +1879,8 @@ questions:
       accepted:
         - asymptote
     answer_text: asymptote
-    digest: ''
+    digest: |-
+      For example, the graph point y = 1/x approaches the x axis when x is increasing indefinitely. The x-axis is the horizontal asymptote.
     links: []
   - id: br-2024-05-18-q01-en
     source_id: br-2024-05-18-q01
@@ -1672,7 +1894,7 @@ questions:
     answer:
       solution: If the dots lie in one straight line
     answer_text: If the dots lie in one straight line
-    digest: ''
+    digest: Through a straight line, you can draw infinitely many planes. All of them contain three points lying on this line.
     links: []
   - id: br-2024-05-18-q02-en
     source_id: br-2024-05-18-q02
@@ -1689,7 +1911,8 @@ questions:
         Yes. December 31. Solution: Vasya is telling the truth, if he makes this statement on the first of January, his birthday falls on December 31, and he is 11 years old at that point. In this case, the day before yesterday, that is, December 30, Vasa was 10 years old. December 31 last year, Vasa turned 11 years old, 12 years old he will turn 31 December this year, and December 31 next year he will be 13 years old.
     answer_text: |-
       Yes. December 31. Solution: Vasya is telling the truth, if he makes this statement on the first of January, his birthday falls on December 31, and he is 11 years old at that point. In this case, the day before yesterday, that is, December 30, Vasa was 10 years old. December 31 last year, Vasa turned 11 years old, 12 years old he will turn 31 December this year, and December 31 next year he will be 13 years old.
-    digest: ''
+    digest: |-
+      Vasya speaks on January 1, the day after her eleventh birthday. The day before yesterday, he was 10. He will be 12 at the end of this year and 13 next year.
     links: []
   - id: br-2024-05-18-q03-en
     source_id: br-2024-05-18-q03
@@ -1704,8 +1927,10 @@ questions:
     answer:
       accepted:
         - Mathematical statistics
+        - statistics
     answer_text: Mathematical statistics
-    digest: ''
+    digest: |-
+      The average value hides the scattering of individual observations. This is the irony of the example of the oven and refrigerator.
     links: []
   - id: br-2024-05-25-q01-en
     source_id: br-2024-05-25-q01
@@ -1736,8 +1961,11 @@ questions:
     answer:
       accepted:
         - Heron
+        - Hero
+        - Hero of Alexandria
+        - Heron of Alexandria
     answer_text: Heron
-    digest: ''
+    digest: 'The Heron formula gives the area on three sides a, b, c and the semiperimeter s: S = √(s − a)(s − b)(s − c).'
     links: []
   - id: br-2024-05-25-q03-en
     source_id: br-2024-05-25-q03
@@ -1754,8 +1982,11 @@ questions:
         - The algorithm
         - algorithm
     answer_text: The algorithm
-    digest: ''
-    links: []
+    digest: |-
+      The term “algorithm” dates back to the Latin translation of the name al-Khwarizmi. The word "algebra" is associated with "al-jabr" from the title of his treatise.
+    links:
+      - title: Muhammad ibn Musa al-Khwarizmi (c. 780–c. 850)
+        url: /publications/hm-5f0a817e534b-en/
   - id: br-2024-06-01-q01-en
     source_id: br-2024-06-01-q01
     source_ids:
@@ -1769,8 +2000,10 @@ questions:
       accepted:
         - A regular hexagon
         - regular hexagon
+        - hexagon
     answer_text: A regular hexagon
-    digest: ''
+    digest: |-
+      In the correct hexagon, the neighboring vertices are visible from the center at an angle of 360°/6 = 60°. A triangle of two radii and sides is equilateral.
     links: []
   - id: br-2024-06-01-q02-en
     source_id: br-2024-06-01-q02
@@ -1785,7 +2018,7 @@ questions:
       accepted:
         - '666'
     answer_text: '666'
-    digest: ''
+    digest: 25.8² = 665.64, close to 666. The joke combines the “number of the beast” with the mathematical meaning of “root”.
     links: []
   - id: br-2024-06-01-q03-en
     source_id: br-2024-06-01-q03
@@ -1798,9 +2031,14 @@ questions:
     prompt: The graph of an even function is symmetrical with respect to this axis.
     answer:
       accepted:
-        - Ordinate axis
-    answer_text: Ordinate axis
-    digest: ''
+        - The y-axis
+        - y-axis
+        - y axis
+        - vertical axis
+        - axis of ordinates
+    answer_text: The y-axis
+    digest: For an even function, f(−x) = f(x). Points with abscisses x and −x lie at the same height on different sides of
+      the y axis.
     links: []
   - id: br-2024-06-08-q01-en
     source_id: br-2024-06-08-q01
@@ -1814,8 +2052,9 @@ questions:
     answer:
       accepted:
         - Odd
+        - an odd number
     answer_text: Odd
-    digest: ''
+    digest: Numbers from 1 to 1001 in 2 increments are exactly 501. The sum of an odd number of odd terms is odd.
     links: []
   - id: br-2024-06-08-q02-en
     source_id: br-2024-06-08-q02
@@ -1831,7 +2070,8 @@ questions:
       accepted:
         - 5 minutes
     answer_text: 5 minutes
-    digest: ''
+    digest: |-
+      In a minute, Misha reduces the gap exactly by the distance that Vasya passes in a minute. He needs five minutes to play for five minutes.
     links: []
   - id: br-2024-06-08-q03-en
     source_id: br-2024-06-08-q03
@@ -1845,8 +2085,11 @@ questions:
     answer:
       accepted:
         - Method of intervals
+        - the sign chart method
+        - sign chart method
     answer_text: Method of intervals
-    digest: ''
+    digest: |-
+      The method of intervals divides the numerical line by zeros of the numerator and denominator. The fractional sign within each of the resulting intervals is constant.
     links: []
   - id: br-2024-06-15-q01-en
     source_id: br-2024-06-15-q01
@@ -1861,9 +2104,14 @@ questions:
       accepted:
         - The cosine theorem
         - cosine theorem
+        - law of cosines
+        - cosine rule
+        - the law of cosines
     answer_text: The cosine theorem
-    digest: ''
-    links: []
+    digest: The law of cosines gives c² = a² + b² − 2ab cos C. When C is a right angle, the cosine is zero.
+    links:
+      - title: 'Pythagorean Geometry: The Pythagorean Theorem'
+        url: /publications/hm-tt-1a77a094393e-en/
   - id: br-2024-06-15-q02-en
     source_id: br-2024-06-15-q02
     source_ids:
@@ -1878,7 +2126,7 @@ questions:
       accepted:
         - Arithmetic progression
     answer_text: Arithmetic progression
-    digest: ''
+    digest: The identity 2aₙ = aₙ₋₁ + aₙ₊₁ gives aₙ − aₙ₋₁ = aₙ₊₁ − aₙ, so consecutive terms differ by a constant.
     links: []
   - id: br-2024-06-15-q03-en
     source_id: br-2024-06-15-q03
@@ -1894,7 +2142,7 @@ questions:
       accepted:
         - Hypotenuse
     answer_text: Hypotenuse
-    digest: ''
+    digest: The hypotenuse lies opposite a right angle and is longer than any cathete.
     links: []
   - id: br-2024-06-22-q02-en
     source_id: br-2024-06-22-q02
@@ -1910,7 +2158,7 @@ questions:
         - A median
         - median
     answer_text: A median
-    digest: ''
+    digest: The median divides the opposite side in half. Two triangles have equal bases and the same height.
     links: []
   - id: br-2024-06-29-q01-en
     source_id: br-2024-06-29-q01
@@ -1925,7 +2173,8 @@ questions:
       accepted:
         - Pyramid
     answer_text: Pyramid
-    digest: ''
+    digest: |-
+      In geometry, the pyramid has a polygon base and side faces converging at the top. In a pyramid scheme, payments depend on contributions from new participants.
     links: []
   - id: br-2024-06-29-q02-en
     source_id: br-2024-06-29-q02
@@ -1939,10 +2188,18 @@ questions:
       For solving this then-unsolved mathematical problem, the protagonist of the 1972 film Mathematician and the Devil sells his soul to the devil. However, in 1994, Andrew Wiles found the proof without the involvement of the supernatural.
     answer:
       accepted:
+        - Fermat's Last Theorem
+        - Fermat’s Last Theorem
         - Fermat's Great Theorem
-    answer_text: Fermat's Great Theorem
-    digest: ''
-    links: []
+        - Fermat’s Great Theorem
+        - Fermat's theorem
+        - Fermat’s theorem
+    answer_text: Fermat's Last Theorem
+    digest: |-
+      The theorem says that aⁿ + bⁿ = cⁿ has no positive integer solutions for n > 2. Wiles's corrected proof and his joint paper with Taylor appeared in 1995.
+    links:
+      - title: 'Fermat: A Great Mathematical Obsession'
+        url: /publications/hm-tt-568d08b7780a-en/
   - id: br-2024-06-29-q03-en
     source_id: br-2024-06-29-q03
     source_ids:
@@ -1960,7 +2217,7 @@ questions:
           text: (−7)⁹
       correct: positive
     answer_text: (−5)¹⁰
-    digest: ''
+    digest: The even degree of a negative number is positive, the odd is negative. Comparison of modules is not required.
     links: []
   - id: br-2024-07-06-q01-en
     source_id: br-2024-07-06-q01
@@ -1975,7 +2232,7 @@ questions:
       accepted:
         - '21'
     answer_text: '21'
-    digest: ''
+    digest: Each participant has six competitors. Divide 7×6 in half because the count from each player counts each game twice.
     links: []
   - id: br-2024-07-06-q02-en
     source_id: br-2024-07-06-q02
@@ -1993,7 +2250,7 @@ questions:
         - The digit
         - digit
     answer_text: The digit
-    digest: ''
+    digest: In this aphorism, a number, a letter, and a note are signs through which numbers, words, and music are written.
     links: []
   - id: br-2024-07-06-q03-en
     source_id: br-2024-07-06-q03
@@ -2007,6 +2264,8 @@ questions:
     answer:
       accepted:
         - One
+        - '1'
+        - a single one
     answer_text: One
     digest: The portfolio will not be empty.
     links: []
@@ -2023,7 +2282,7 @@ questions:
       accepted:
         - '0'
     answer_text: '0'
-    digest: ''
+    digest: Zero is nonnegative, and any nonnegative number is, by definition, greater than or equal to zero.
     links: []
   - id: br-2024-07-13-q03-en
     source_id: br-2024-07-13-q03
@@ -2038,8 +2297,9 @@ questions:
     answer:
       accepted:
         - Square
+        - a square
     answer_text: Square
-    digest: ''
+    digest: The square has equal sides, so it's a rhombus. It has right angles, so it's a rectangle. Both properties are compatible.
     links: []
   - id: br-2024-07-20-q01-en
     source_id: br-2024-07-20-q01
@@ -2054,8 +2314,11 @@ questions:
       accepted:
         - eratosthenes
     answer_text: eratosthenes
-    digest: ''
-    links: []
+    digest: |-
+      In the Eratosthenes grid, after the next prime number, its composite multiples are deleted. Unexplained numbers larger than one are prime.
+    links:
+      - title: 'Eratosthenes: always second'
+        url: /publications/hm-0b315578e49a-en/
   - id: br-2024-07-20-q02-en
     source_id: br-2024-07-20-q02
     source_ids:
@@ -2098,8 +2361,11 @@ questions:
     answer:
       accepted:
         - Apple
+        - Apple Computer
+        - Apple Inc.
     answer_text: Apple
-    digest: ''
+    digest: |-
+      In an early Apple emblem, Newton sat under an apple tree. The drawing played up the well-known legend about the Newtonian apple.
     links: []
   - id: br-2024-07-27-q03-en
     source_id: br-2024-07-27-q03
@@ -2109,12 +2375,15 @@ questions:
     topic: geometry
     difficulty: beginner
     format: short_input
-    prompt: In which movie, the title of which occurs type of angle, played Jim Carrey and Jeff Daniels?
+    prompt: |-
+      People sometimes call a slow-witted character “obtuse”. In which comedy did Jim Carrey and Jeff Daniels play two friends whose title describes them this way?
     answer:
       accepted:
-        - Stupid and dumber
-    answer_text: Stupid and dumber
-    digest: ''
+        - Dumb and Dumber
+        - Dumb & Dumber
+    answer_text: Dumb and Dumber
+    digest: |-
+      The English word “obtuse” can mean slow to understand. In geometry, an obtuse angle measures more than 90° and less than 180°.
     links: []
   - id: br-2024-09-07-q01-en
     source_id: br-2024-09-07-q01
@@ -2130,7 +2399,7 @@ questions:
       accepted:
         - '66'
     answer_text: '66'
-    digest: ''
+    digest: If your grandfather is now x years old, x + x/2 + 1 = 100. Hence x = 66.
     links: []
   - id: br-2024-09-07-q02-en
     source_id: br-2024-09-07-q02
@@ -2145,8 +2414,11 @@ questions:
     answer:
       accepted:
         - Ten thousand
+        - 10,000
+        - '10000'
+        - 10000 units
     answer_text: Ten thousand
-    digest: ''
+    digest: The old Russian word t'ma could mean ten thousand, or by extension a vast number.
     links: []
   - id: br-2024-09-07-q03-en
     source_id: br-2024-09-07-q03
@@ -2160,6 +2432,9 @@ questions:
     answer:
       accepted:
         - It depends on x
+        - cannot be determined
+        - not enough information
+        - depends on x
     answer_text: It depends on x
     digest: If x is positive, 2x is greater. If x is negative, x is greater. For x = 0 they are equal.
     links: []
@@ -2177,7 +2452,8 @@ questions:
       accepted:
         - '19'
     answer_text: '19'
-    digest: ''
+    digest: |-
+      Rooms 1 to 99 have ten rooms with nine in place of units and ten with nine in place of dozens. Number 99 fell into both groups, so the numbers are 19.
     links: []
   - id: br-2024-09-14-q02-en
     source_id: br-2024-09-14-q02
@@ -2202,7 +2478,8 @@ questions:
         - two
         - many
     answer_text: One, two, many
-    digest: ''
+    digest: |-
+      Greek prefixes are seen, for example, in the words "monochrome" (one color), "dioxide" (two oxygen atoms) and "polygon" (polygon).
     links: []
   - id: br-2024-09-14-q03-en
     source_id: br-2024-09-14-q03
@@ -2212,12 +2489,16 @@ questions:
     topic: geometry
     difficulty: beginner
     format: short_input
-    prompt: Where do you think the heights of a right triangle intersect?
+    prompt: Where do the three altitudes of a right triangle meet?
     answer:
       accepted:
-        - At the top of a right angle
-    answer_text: At the top of a right angle
-    digest: ''
+        - At the vertex of the right angle
+        - at the right angle
+        - right-angle vertex
+        - the vertex where the legs meet
+    answer_text: At the vertex of the right angle
+    digest: |-
+      The legs of a right triangle serve as two of its altitudes. They meet at the right-angle vertex, where the altitude to the hypotenuse also starts.
     links: []
   - id: br-2024-09-21-q01-en
     source_id: br-2024-09-21-q01
@@ -2249,7 +2530,8 @@ questions:
         bag2: grain
         bag3: salt
     answer_text: Bag 1 contains sugar, bag 2 contains grain, and bag 3 contains salt.
-    digest: ''
+    digest: |-
+      On the third bag, the inscription “cereal or sugar” is incorrect, so there is salt there. The first bag is left for sugar, as the inscription "Crupa" is also incorrect. The croup's in the second.
     links: []
   - id: br-2024-09-21-q02-en
     source_id: br-2024-09-21-q02
@@ -2280,9 +2562,15 @@ questions:
     answer:
       accepted:
         - L. N. Tolstoy
+        - Leo Tolstoy
+        - Lev Tolstoy
+        - Tolstoy
+        - Lev Nikolayevich Tolstoy
     answer_text: L. N. Tolstoy
-    digest: ''
-    links: []
+    digest: Leo Tolstoy taught at his school in Yasnaya Polyana and compiled Arithmetic for training.
+    links:
+      - title: Leo Tolstoy and Mathematics
+        url: /publications/hm-tt-de2464b2b28b-en/
   - id: br-2024-09-28-q01-en
     source_id: br-2024-09-28-q01
     source_ids:
@@ -2296,7 +2584,7 @@ questions:
       accepted:
         - '1928'
     answer_text: '1928'
-    digest: ''
+    digest: Between the two years of one era, 2025 - 97 = 1928 years passed.
     links: []
   - id: br-2024-09-28-q02-en
     source_id: br-2024-09-28-q02
@@ -2311,7 +2599,8 @@ questions:
     answer:
       solution: No formulas.
     answer_text: No formulas.
-    digest: ''
+    digest: |-
+      The title sets the context of the joke. The answer is reconstructed from the contrast between the promise of a book about all formulas and the story of a book without formulas.
     links: []
   - id: br-2024-09-28-q03-en
     source_id: br-2024-09-28-q03
@@ -2324,10 +2613,16 @@ questions:
     prompt: In what words did the Greek mathematician Euclid’s “father of geometry” end each mathematical conclusion?
     answer:
       accepted:
-        - That's what it took to prove
-    answer_text: That's what it took to prove
-    digest: ''
-    links: []
+        - Quod erat demonstrandum
+        - QED
+        - Q.E.D.
+        - which was to be proved
+        - as required
+    answer_text: Quod erat demonstrandum
+    digest: The Latin phrase quod erat demonstrandum, often abbreviated QED, means “which was to be proved”.
+    links:
+      - title: Euclid of Alexandria (c. 340–287 BCE)
+        url: /publications/hm-1968b4484b64-en/
   - id: br-2024-10-05-q01-en
     source_id: br-2024-10-05-q01
     source_ids:
@@ -2342,7 +2637,8 @@ questions:
       accepted:
         - Vladimir Vladimirovich
     answer_text: Vladimir Vladimirovich
-    digest: ''
+    digest: |-
+      The patronymic of Vladimirovich in Alexei gives the name of his father - Vladimir. The patronymic of Vladimir himself is also Vladimirovich, since his father's name is Vladimir Petrovich.
     links: []
   - id: br-2024-10-05-q02-en
     source_id: br-2024-10-05-q02
@@ -2358,7 +2654,7 @@ questions:
       accepted:
         - 2cm
     answer_text: 2cm
-    digest: ''
+    digest: 240 pages make 120 sheets. At 60 sheets per centimetre they are 2 cm thick, excluding the binding.
     links: []
   - id: br-2024-10-05-q03-en
     source_id: br-2024-10-05-q03
@@ -2373,7 +2669,8 @@ questions:
       accepted:
         - Pizza
     answer_text: Pizza
-    digest: ''
+    digest: |-
+      The joke models a pizza as a cylinder of radius z and thickness a. Its volume is π × z × z × a, which spells the ingredients of the word “pizza”.
     links: []
   - id: br-2024-10-12-q01-en
     source_id: br-2024-10-12-q01
@@ -2389,8 +2686,10 @@ questions:
       accepted:
         - The clock
         - clock
+        - a clock
+        - clocks
     answer_text: The clock
-    digest: ''
+    digest: Clepsiders measured time by the flow of water. In motion tasks, the clock helps to measure the length of the path.
     links: []
   - id: br-2024-10-19-q01-en
     source_id: br-2024-10-19-q01
@@ -2405,7 +2704,7 @@ questions:
       accepted:
         - '6'
     answer_text: '6'
-    digest: ''
+    digest: Substitution 6 gives 96 ÷ 16 = 6. In general, 90 + x = x(10 + x), from where (x − 6)(x + 15) = 0.
     links: []
   - id: br-2024-10-19-q02-en
     source_id: br-2024-10-19-q02
@@ -2415,31 +2714,16 @@ questions:
     topic: history
     difficulty: intermediate
     format: short_input
-    prompt: |-
-      This list was compiled in the first century BC, and it has remained unchanged until now, although hundreds of attempts have been made to change the list. What's that list?
+    prompt: Which famous list includes the Great Pyramid, the Colossus of Rhodes and the Lighthouse of Alexandria?
     answer:
       accepted:
         - The Seven Wonders of the World
         - Seven Wonders of the World
+        - the seven wonders of the ancient world
+        - seven wonders of the ancient world
     answer_text: The Seven Wonders of the World
-    digest: ''
-    links: []
-  - id: br-2024-10-19-q03-en
-    source_id: br-2024-10-19-q03
-    source_ids:
-      - br-2024-10-19-q03
-    edition_source_id: br-2024-10-19-q03
-    topic: arithmetic
-    difficulty: intermediate
-    format: short_input
-    prompt: |-
-      The pilot, one of the first Heroes of the Soviet Union, corresponds to about 3.5. Four-time Olympic champion - about 30. Heroine L. N. Tolstoy's about 80. Name a fictional settlement, which corresponds to about 2.5.
-    answer:
-      accepted:
-        - Sourdough
-    answer_text: Sourdough
     digest: |-
-      The pilot is Vasily Molokov, the champion is Raisa Smetanina, the heroine of Tolstoy is Katyusha Maslov. Numbers - the values of fat content in these dairy products
+      The canonical list includes, for example, the Pyramid of Cheops, the Colossus of Rhodes and the Lighthouse of Alexandria. It is known as the Seven Wonders of the Ancient World.
     links: []
   - id: br-2024-10-26-q01-en
     source_id: br-2024-10-26-q01
@@ -2454,7 +2738,8 @@ questions:
     answer:
       solution: '"The Theory of Relativity." We didn''t want to reward Einstein for it.'
     answer_text: '"The Theory of Relativity." We didn''t want to reward Einstein for it.'
-    digest: ''
+    digest: |-
+      Einstein's 1921 Nobel Prize in Physics cited his services to theoretical physics, especially the discovery of the law of the photoelectric effect. Relativity is the subject of the question.
     links: []
   - id: br-2024-10-26-q02-en
     source_id: br-2024-10-26-q02
@@ -2465,13 +2750,20 @@ questions:
     difficulty: intermediate
     format: short_input
     prompt: |-
-      In the history of mathematics, a problem is known, called in Russian historical and mathematical literature “The Bashe-Mendeleev Problem”. This problem was first formulated by the Italian mathematician Fibonacci in 1202. What kind of measuring device are you talking about?
+      Fibonacci's weight problem asks how to weigh a range of whole-number masses using a few weights. What measuring device do they go on?
     answer:
       accepted:
-        - Libra
-    answer_text: Libra
-    digest: ''
-    links: []
+        - A balance scale
+        - balance scale
+        - pan balance
+        - balance
+        - scales
+        - a pair of scales
+    answer_text: A balance scale
+    digest: On a balance scale, weights on opposite pans count as differences, while weights on the same pan count as sums.
+    links:
+      - title: Fibonacci’s weighing problem
+        url: /publications/hm-86d1740cccf7-en/
   - id: br-2024-11-02-q01-en
     source_id: br-2024-11-02-q01
     source_ids:
@@ -2485,7 +2777,8 @@ questions:
       accepted:
         - XC
     answer_text: XC
-    digest: ''
+    digest: XXX = 30, XL = 40, LXX = 70, XC = 90. In XC, a smaller digit stands before a larger one, so 10 is subtracted from
+      100.
     links: []
   - id: br-2024-11-02-q02-en
     source_id: br-2024-11-02-q02
@@ -2495,12 +2788,21 @@ questions:
     topic: history
     difficulty: beginner
     format: short_input
-    prompt: We see 3, we say 15. When does this happen?
+    prompt: A 12-hour clock shows 3, but the time in 24-hour notation is 15:00. Is it three in the morning or three in the
+      afternoon?
     answer:
       accepted:
-        - 15 o'clock
-    answer_text: 15 o'clock
-    digest: ''
+        - At 3 p.m.
+        - 3 pm
+        - 3 p.m.
+        - '15:00'
+        - at 15:00
+        - in the afternoon
+        - afternoon
+        - three in the afternoon
+        - three p.m.
+    answer_text: At 3 p.m.
+    digest: A 12-hour clock shows the same position at 3 a.m. and 3 p.m. In 24-hour notation, 3 p.m. is 15:00.
     links: []
   - id: br-2024-11-02-q03-en
     source_id: br-2024-11-02-q03
@@ -2510,12 +2812,13 @@ questions:
     topic: history
     difficulty: expert
     format: short_input
-    prompt: 'Which of these terms is not the name of the curve: cycloid, hyperbole, allegory, tractris, cardioid?'
+    prompt: 'Which term is not the name of a curve: cycloid, hyperbola, allegory, tractrix or cardioid?'
     answer:
       accepted:
         - allegory
     answer_text: allegory
-    digest: ''
+    digest: |-
+      A cycloid, hyperbola, tractrix and cardioid are all curves. Allegory is a way of representing an idea through a story, image or other indirect means.
     links: []
   - id: br-2024-11-09-q01-en
     source_id: br-2024-11-09-q01
@@ -2530,7 +2833,8 @@ questions:
       accepted:
         - '3'
     answer_text: '3'
-    digest: ''
+    digest: |-
+      If there is one dog, one cat and one hare, for each species exactly two animals belong to other species. From equal numbers of exceptions, it follows that the representatives of the three species are equally.
     links: []
   - id: br-2024-11-09-q02-en
     source_id: br-2024-11-09-q02
@@ -2540,14 +2844,21 @@ questions:
     topic: arithmetic
     difficulty: beginner
     format: short_input
-    prompt: |-
-      2024 and 2025 are the years of “great joy” or “harshad” in Sanskrit. They were studied by the Indian mathematician Kaprekar. These are natural numbers that are divisible by... what?
+    prompt: 2024 and 2025 are both Harshad numbers. Each such positive integer is divisible by what quantity associated with
+      it?
     answer:
       accepted:
-        - Sum of their numbers
-    answer_text: Sum of their numbers
-    digest: ''
-    links: []
+        - The sum of their digits
+        - sum of its digits
+        - sum of their digits
+        - digit sum
+        - the digit sum
+    answer_text: The sum of their digits
+    digest: 'The digits of 2024 add up to 8, and those of 2025 add up to 9. Both quotients are integers: 2024/8 = 253 and
+      2025/9 = 225.'
+    links:
+      - title: 'Great joy: working out what sort of year it will be'
+        url: /publications/hm-0a5d8919e7b0-en/
   - id: br-2024-11-16-q01-en
     source_id: br-2024-11-16-q01
     source_ids:
@@ -2561,7 +2872,8 @@ questions:
       accepted:
         - 135 degrees
     answer_text: 135 degrees
-    digest: ''
+    digest: |-
+      The minute hand at 13:30 is aimed at 6, that is, 180 degrees from 12. The clock is located in the middle between 1 and 2, at 45 degrees. The difference is 135 degrees.
     links: []
   - id: br-2024-11-16-q03-en
     source_id: br-2024-11-16-q03
@@ -2576,8 +2888,9 @@ questions:
     answer:
       accepted:
         - kangaroo
+        - a kangaroo
     answer_text: kangaroo
-    digest: ''
+    digest: The name of the contest "Kangaroo" refers to Australia, where the competition appeared, which served as its prototype.
     links: []
   - id: br-2024-11-23-q01-en
     source_id: br-2024-11-23-q01
@@ -2591,7 +2904,8 @@ questions:
     answer:
       solution: No.
     answer_text: No.
-    digest: ''
+    digest: |-
+      If each cathet is equal to a, according to the Pythagorean theorem, the hypotenuse is equal to a √2. Therefore, the cathet is √2 times smaller than the hypotenuse.
     links: []
   - id: br-2024-11-23-q02-en
     source_id: br-2024-11-23-q02
@@ -2606,8 +2920,12 @@ questions:
     answer:
       accepted:
         - Six
+        - '6'
+        - 6 points
+        - six points
     answer_text: Six
-    digest: ''
+    digest: |-
+      Four straight lines form six different pairs. Each pair gives one point if the lines are not parallel and no three pass through the same point.
     links: []
   - id: br-2024-11-23-q03-en
     source_id: br-2024-11-23-q03
@@ -2622,7 +2940,7 @@ questions:
       accepted:
         - 10 tons
     answer_text: 10 tons
-    digest: ''
+    digest: A million items of 10 grams is 10 million grams. One million grams is a ton.
     links: []
   - id: br-2024-11-30-q01-en
     source_id: br-2024-11-30-q01
@@ -2636,7 +2954,8 @@ questions:
     answer:
       solution: Yes.
     answer_text: Yes.
-    digest: ''
+    digest: |-
+      The angle, based on the diameter, is straight. Therefore, the hypotenuse is the diameter of the described circle, and its middle is the center.
     links: []
   - id: br-2024-11-30-q02-en
     source_id: br-2024-11-30-q02
@@ -2653,7 +2972,7 @@ questions:
         - The infection
         - infection
     answer_text: The infection
-    digest: ''
+    digest: Induction, inversion and injection have mathematical meanings. The infection belongs to medicine.
     links: []
   - id: br-2024-11-30-q03-en
     source_id: br-2024-11-30-q03
@@ -2684,7 +3003,7 @@ questions:
       accepted:
         - '117'
     answer_text: '117'
-    digest: ''
+    digest: The sum of the digits 117 is 9. The number is divided by 9:117 = 9×13.
     links: []
   - id: br-2024-12-07-q02-en
     source_id: br-2024-12-07-q02
@@ -2694,12 +3013,17 @@ questions:
     topic: measurement
     difficulty: beginner
     format: short_input
-    prompt: The scattered professor goes to bed at 20 p.m. Set the alarm for 9:00 a.m. How many hours will the professor sleep?
+    prompt: A professor goes to bed at 8 p.m. and sets a mechanical 12-hour alarm for nine. How long will it be before the
+      alarm rings?
     answer:
       accepted:
         - 1 hour
+        - one hour
+        - an hour
+        - 60 minutes
     answer_text: 1 hour
-    digest: ''
+    digest: |-
+      The answer involves a 12-hour mechanical alarm clock with no choice of morning or evening. The nearest nine o'clock after eight p.m. comes in an hour.
     links: []
   - id: br-2024-12-07-q03-en
     source_id: br-2024-12-07-q03
@@ -2712,26 +3036,16 @@ questions:
     prompt: 'Some other mathematical oddities. Try to interpret the strange equations: 8 + 9 = 5, 3 - 5 = 10.'
     answer:
       accepted:
-        - It's about the clock
-    answer_text: It's about the clock
-    digest: ''
-    links: []
-  - id: br-2024-12-14-q01-en
-    source_id: br-2024-12-14-q01
-    source_ids:
-      - br-2024-12-14-q01
-    edition_source_id: br-2024-12-14-q01
-    topic: history
-    difficulty: intermediate
-    format: self_check
-    prompt: |-
-      Shakespeare’s definition of understanding is widely known: “To understand is to forgive.” The Strugatsky brothers added only one letter to it. Their way of understanding is also common in mathematics. Name the added letter, which itself can often be seen in mathematical records.
-    answer:
-      solution: |-
-        The letter "Y." Strugatsky in the book "Waves extinguish the wind" say: "To understand is to simplify." Simplification is one of the common techniques in algebra
-    answer_text: |-
-      The letter "Y." Strugatsky in the book "Waves extinguish the wind" say: "To understand is to simplify." Simplification is one of the common techniques in algebra
-    digest: ''
+        - On a 12-hour clock
+        - clock arithmetic
+        - 12-hour clock
+        - modulo 12
+        - mod 12
+        - on a clock
+        - a clock face
+    answer_text: On a 12-hour clock
+    digest: |-
+      On a 12-hour clock, nine steps forward from 8 end at 5, and five steps backward from 3 end at 10. This is arithmetic modulo 12.
     links: []
   - id: br-2024-12-14-q02-en
     source_id: br-2024-12-14-q02
@@ -2778,10 +3092,16 @@ questions:
       This object was invented in ancient Greece. Under the ashes of Pompeii, archaeologists have discovered many such objects made of bronze. The ability to use this subject was considered the height of perfection, and the ability to solve problems with its help - a sign of a great mind. For many hundreds of years, the design of this object has not changed. What subject are we talking about?
     answer:
       accepted:
-        - circular
-    answer_text: circular
-    digest: ''
-    links: []
+        - A drawing compass
+        - drawing compass
+        - compass
+        - a pair of compasses
+        - compasses
+    answer_text: A drawing compass
+    digest: Keep one leg of a drawing compass at the centre and hold the distance between the legs fixed to draw a circle.
+    links:
+      - title: The Compass
+        url: /publications/hm-tt-8f19bedeaa1e-en/
   - id: br-2024-12-28-q01-en
     source_id: br-2024-12-28-q01
     source_ids:
@@ -2795,9 +3115,14 @@ questions:
     answer:
       accepted:
         - Rubik's Cube
+        - Rubik’s Cube
+        - Rubik cube
     answer_text: Rubik's Cube
-    digest: ''
-    links: []
+    digest: |-
+      The cube is named after the Hungarian architect Erno Rubik. The rotations of its faces change the location of details and give an example of the composition of permutations.
+    links:
+      - title: 'Ernő Rubik (Born 1944): A Master of Puzzles'
+        url: /publications/hm-f952cf1b9d41-en/
   - id: br-2024-12-28-q02-en
     source_id: br-2024-12-28-q02
     source_ids:
@@ -2807,12 +3132,14 @@ questions:
     difficulty: expert
     format: short_input
     prompt: |-
-      One day, a great scientist was asked, "What's the difference between time and infinity?" He said, "I don't have time to explain it to you, and you don't have the infinity to understand it!" Who is he?
+      A joke asks about the difference between time and infinity. The reply says there's no time to explain, and infinity wouldn't suffice for the listener to understand. To which physicist is the joke usually attributed?
     answer:
       accepted:
         - Albert Einstein
+        - Einstein
     answer_text: Albert Einstein
-    digest: ''
+    digest: |-
+      The joke is usually attributed to Einstein. It contrasts a limited time for explanation with an infinitely long attempt to understand it.
     links: []
   - id: br-2024-12-28-q03-en
     source_id: br-2024-12-28-q03
@@ -2829,7 +3156,8 @@ questions:
         - The love triangle
         - love triangle
     answer_text: The love triangle
-    digest: ''
+    digest: |-
+      In the stage story we are talking about the relationship of three characters. A geometric triangle is also connected to three vertices.
     links: []
   - id: br-2025-01-18-q01-en
     source_id: br-2025-01-18-q01
@@ -2845,7 +3173,8 @@ questions:
       accepted:
         - Mathematics
     answer_text: Mathematics
-    digest: ''
+    digest: |-
+      In the retold aphorism, the place of the third science is occupied by mathematics. Comism is built on the discrepancy between the purpose of the sciences and the effect attributed to them.
     links: []
   - id: br-2025-01-18-q02-en
     source_id: br-2025-01-18-q02
@@ -2860,8 +3189,11 @@ questions:
     answer:
       accepted:
         - Circle
+        - disk
+        - disc
+        - a circle
     answer_text: Circle
-    digest: ''
+    digest: The isoperimetric inequality 4πA ≤ P² relates area A to perimeter P. Equality holds for a disk.
     links: []
   - id: br-2025-01-18-q03-en
     source_id: br-2025-01-18-q03
@@ -2875,7 +3207,7 @@ questions:
     answer:
       solution: '"Ha-ha-ha." In Thai, the number 5 is pronounced “ha.”'
     answer_text: '"Ha-ha-ha." In Thai, the number 5 is pronounced “ha.”'
-    digest: ''
+    digest: In Thai, 5 is pronounced roughly “ha”. Repeating it three times makes “ha-ha-ha”.
     links: []
   - id: br-2025-01-25-q01-en
     source_id: br-2025-01-25-q01
@@ -2888,9 +3220,9 @@ questions:
     prompt: A drill made on the basis of this geometric figure allows you to drill square holes. Can you name that figure?
     answer:
       accepted:
-        - The Rejolo Triangle
-        - Rejolo Triangle
-    answer_text: The Rejolo Triangle
+        - Reuleaux triangle
+        - the Reuleaux triangle
+    answer_text: Reuleaux triangle
     digest: |-
       This figure of constant width is obtained as the area of intersection of three equal circles with centers at the vertices of a regular triangle and radii equal to its side.
     links: []
@@ -2906,7 +3238,8 @@ questions:
     answer:
       solution: That's the same number written three times in a row.
     answer_text: That's the same number written three times in a row.
-    digest: ''
+    digest: |-
+      7 × 1443 = 10101 = 10,000 + 100 + 1. Multiplying a two-digit number by these three terms gives three adjacent blocks of the same two digits.
     links: []
   - id: br-2025-01-25-q03-en
     source_id: br-2025-01-25-q03
@@ -2921,10 +3254,14 @@ questions:
     answer:
       accepted:
         - Fibonacci sequence
+        - Fibonacci numbers
+        - the Fibonacci sequence
     answer_text: Fibonacci sequence
     digest: |-
       For example, in beech, this angle is 1/3, or 120 °, in oak and apricot - 2/5, in pear and poplar - 3/8, in willow and almonds - 5/13, etc. This arrangement allows the leaves to receive moisture and sunlight most efficiently.
-    links: []
+    links:
+      - title: Fibonacci’s rabbit problem
+        url: /publications/hm-e5f562afd469-en/
   - id: br-2025-02-02-q01-en
     source_id: br-2025-02-02-q01
     source_ids:
@@ -2937,7 +3274,7 @@ questions:
     answer:
       solution: 96 + 144 = 240
     answer_text: 96 + 144 = 240
-    digest: ''
+    digest: XCVI is 96 and CXLIV is 144. Their sum is 240, or CCXL in Roman numerals.
     links: []
   - id: br-2025-02-02-q02-en
     source_id: br-2025-02-02-q02
@@ -2952,7 +3289,8 @@ questions:
       accepted:
         - 15cm
     answer_text: 15cm
-    digest: ''
+    digest: |-
+      After the first stage, 3 + 9 = 12 cm remained, that is, four-fifths of the original length. The length of the candle is 12 × 5/4 = 15 cm.
     links: []
   - id: br-2025-02-02-q03-en
     source_id: br-2025-02-02-q03
@@ -2983,8 +3321,11 @@ questions:
     answer:
       solution: '"Apartment" is a distortion of the Italian word "quaterna" (four each). The term came from the Genoese lottery.'
     answer_text: '"Apartment" is a distortion of the Italian word "quaterna" (four each). The term came from the Genoese lottery.'
-    digest: ''
-    links: []
+    digest: |-
+      The Italian quaterna in the lotto means a set of four winning numbers. The Russian name “apartment” in the mystery is explained by consonance.
+    links:
+      - title: The Genoese Lottery Problem
+        url: /publications/hm-tt-c241242992fe-en/
   - id: br-2025-02-08-q02-en
     source_id: br-2025-02-08-q02
     source_ids:
@@ -2998,8 +3339,14 @@ questions:
     answer:
       accepted:
         - Twice
+        - two turns
+        - two revolutions
+        - two rotations
+        - two
+        - '2'
     answer_text: Twice
-    digest: ''
+    digest: The moving coin's centre traces a circle of radius 2r. The path is 4πr long, which is twice the circumference
+      of the coin.
     links: []
   - id: br-2025-02-08-q03-en
     source_id: br-2025-02-08-q03
@@ -3014,8 +3361,11 @@ questions:
     answer:
       accepted:
         - To the North Pole
+        - the North Pole
+        - North Pole
     answer_text: To the North Pole
-    digest: ''
+    digest: The constant northeast course leads along the loxodromy. It swirls towards the North Pole, which is its limiting
+      point.
     links: []
   - id: br-2025-02-15-q01-en
     source_id: br-2025-02-15-q01
@@ -3030,7 +3380,7 @@ questions:
     answer:
       solution: 'And from it never flew: through three points always passes one plane.'
     answer_text: 'And from it never flew: through three points always passes one plane.'
-    digest: ''
+    digest: Three points always lie in at least one plane. Over time, the plane with the three bees changes.
     links: []
   - id: br-2025-02-15-q02-en
     source_id: br-2025-02-15-q02
@@ -3047,7 +3397,8 @@ questions:
         The postponement of all the current dates of 1918 by 13 days means that the duration of this year has decreased by 13 days. Therefore, in the new chronology, the new year 1919 (and all subsequent ones) came 13 days earlier than it was “in the old way”.
     answer_text: |-
       The postponement of all the current dates of 1918 by 13 days means that the duration of this year has decreased by 13 days. Therefore, in the new chronology, the new year 1919 (and all subsequent ones) came 13 days earlier than it was “in the old way”.
-    digest: ''
+    digest: |-
+      January 1 according to the Julian calendar corresponds to January 14 according to the Gregorian with a difference of 13 days. Therefore, the "old New Year" in the Gregorian calendar comes later than January 1.
     links: []
   - id: br-2025-02-22-q01-en
     source_id: br-2025-02-22-q01
@@ -3078,7 +3429,8 @@ questions:
       accepted:
         - 111 111 111
     answer_text: 111 111 111
-    digest: ''
+    digest: |-
+      In the square of a number of nine units, the coefficients at successive powers of ten form the series 1, 2, ..., 9, ..., 2, 1. There are no transfers, because each coefficient is no more than 9.
     links: []
   - id: br-2025-03-01-q01-en
     source_id: br-2025-03-01-q01
@@ -3092,8 +3444,11 @@ questions:
     answer:
       accepted:
         - Formula 1
+        - Formula One
+        - F1
     answer_text: Formula 1
-    digest: ''
+    digest: |-
+      The general word here is "formula." In mathematics, the Viet formulas are linked by the roots and coefficients of the polynomial, and in Formula 1 motorsport, the series in which Michael Schumacher performed.
     links: []
   - id: br-2025-03-01-q02-en
     source_id: br-2025-03-01-q02
@@ -3108,7 +3463,8 @@ questions:
       accepted:
         - '2'
     answer_text: '2'
-    digest: ''
+    digest: |-
+      The last two digits are 12 times 4. The sum of the digits of 257712 is 24 and a multiple of 3. So the number is divisible by 12.
     links: []
   - id: br-2025-03-08-q01-en
     source_id: br-2025-03-08-q01
@@ -3124,7 +3480,8 @@ questions:
       accepted:
         - '5396'
     answer_text: '5396'
-    digest: ''
+    digest: |-
+      The second number is 3, so the fourth number is 6. The first is x, the third is x + 4. From x + 3 + (x + 4) + 6 = 23 we get x = 5.
     links: []
   - id: br-2025-03-08-q02-en
     source_id: br-2025-03-08-q02
@@ -3141,7 +3498,8 @@ questions:
         shirt.
     answer_text: Beam had red shoes and a red shirt, Bohm had blue shoes and a green shirt, Bam had green shoes and a blue
       shirt.
-    digest: ''
+    digest: |-
+      Bam has green shoes. Bohm's shoes aren't red, so they're blue. Bimu is left with red shoes and a red shirt. Of the remaining shirts, Bamu is not allowed to wear green.
     links: []
   - id: br-2025-03-08-q03-en
     source_id: br-2025-03-08-q03
@@ -3156,7 +3514,7 @@ questions:
       accepted:
         - '4'
     answer_text: '4'
-    digest: ''
+    digest: Tuesdays fell on February 6, 13, 20 and 27. Next Tuesday is in March.
     links: []
   - id: br-2025-03-15-q02-en
     source_id: br-2025-03-15-q02
@@ -3171,7 +3529,8 @@ questions:
       accepted:
         - '702'
     answer_text: '702'
-    digest: ''
+    digest: 'The first number with the initial seven is 700. Check the sum of the numbers: 7, 8 and 9. The first multiple
+      three is 702.'
     links: []
   - id: br-2025-03-15-q03-en
     source_id: br-2025-03-15-q03
@@ -3185,9 +3544,13 @@ questions:
       Two boys played guitars and one played balalaika. What did Yura play if Misha and Petya and Yura played different musical instruments?
     answer:
       accepted:
-        - guitarized
-    answer_text: guitarized
-    digest: ''
+        - The guitar
+        - guitar
+        - on the guitar
+        - he played the guitar
+    answer_text: The guitar
+    digest: |-
+      Petya doesn't play the same instrument as the other boys. Once there are two guitars, only Peti has a balalaika, and Yura and Misha have guitars.
     links: []
   - id: br-2025-03-22-q01-en
     source_id: br-2025-03-22-q01
@@ -3202,24 +3565,10 @@ questions:
     answer:
       accepted:
         - Spectacle
+        - a spectacle
+        - a sight
     answer_text: Spectacle
-    digest: ''
-    links: []
-  - id: br-2025-03-29-q02-en
-    source_id: br-2025-03-29-q02
-    source_ids:
-      - br-2025-03-29-q02
-    edition_source_id: br-2025-03-29-q02
-    topic: arithmetic
-    difficulty: intermediate
-    format: short_input
-    prompt: |-
-      The largest number that has its own name is Google, 10 to the 100th power. But in the magazine “Family and School” there is a story when a four-year-old son, who can hardly count to half a hundred, confidently calls his father the largest number, and he can not object. What's that number?
-    answer:
-      accepted:
-        - 31st
-    answer_text: 31st
-    digest: ''
+    digest: The Greek word theōrēma refers to what one sees or sees. In modern mathematics, a theorem is a proven statement.
     links: []
   - id: br-2025-03-29-q03-en
     source_id: br-2025-03-29-q03
@@ -3239,7 +3588,8 @@ questions:
         to report it.”
     answer_text: “If the plane had crashed, everyone would be sure that I had proved Fermat’s theorem, but I didn’t have time
       to report it.”
-    digest: ''
+    digest: |-
+      The point of the anecdote is that a telegram would leave an impression of the discovery made. The lecture itself could have been quite different.
     links: []
   - id: br-2025-04-05-q01-en
     source_id: br-2025-04-05-q01
@@ -3254,9 +3604,15 @@ questions:
     answer:
       accepted:
         - Chessboard
+        - chess board
+        - a chessboard
+        - a chess board
     answer_text: Chessboard
-    digest: ''
-    links: []
+    digest: |-
+      Starting from one grain, each square of the chessboard receives twice as many as the previous square. With 64 squares, the sum is 1 + 2 + … + 2⁶³ = 2⁶⁴ − 1.
+    links:
+      - title: The legend of the chessboard
+        url: /publications/hm-ee204aa37d3d-en/
   - id: br-2025-04-05-q02-en
     source_id: br-2025-04-05-q02
     source_ids:
@@ -3271,8 +3627,11 @@ questions:
       accepted:
         - Probability
     answer_text: Probability
-    digest: ''
-    links: []
+    digest: |-
+      Kozlovsky’s term combines ideas of possibility and event. The modern mathematical designation for such a measure is probability.
+    links:
+      - title: 'Alexander Pushkin: Hope and Likelihood, on the 225th Anniversary of His Birth'
+        url: /publications/hm-tt-44fd2065afe0-en/
   - id: br-2025-04-05-q03-en
     source_id: br-2025-04-05-q03
     source_ids:
@@ -3303,7 +3662,8 @@ questions:
     answer:
       solution: Write this number and then turn the paper “upside down”
     answer_text: Write this number and then turn the paper “upside down”
-    digest: ''
+    digest: Turn the written 666 upside down in a typeface where the rotated six looks like a nine. It reads 999, which is
+      1.5 × 666.
     links: []
   - id: br-2025-04-12-q02-en
     source_id: br-2025-04-12-q02
@@ -3319,8 +3679,11 @@ questions:
         Lobachevsky Nikolai Ivanovich first reported his “imaginary geometry” in a report to the Faculty Council on February 11 (23), 1826, “A concise exposition of the beginnings of geometry with a strict proof of the theorem of parallels.”
     answer_text: |-
       Lobachevsky Nikolai Ivanovich first reported his “imaginary geometry” in a report to the Faculty Council on February 11 (23), 1826, “A concise exposition of the beginnings of geometry with a strict proof of the theorem of parallels.”
-    digest: ''
-    links: []
+    digest: |-
+      In February 1826, Lobachevsky presented a report in Kazan on the principles of geometry and the theory of parallels. This episode is associated with the creation of non-Euclidean geometry.
+    links:
+      - title: Nikolai Ivanovich Lobachevsky (1792–1856)
+        url: /publications/hm-61e65fc9e6af-en/
   - id: br-2025-04-12-q03-en
     source_id: br-2025-04-12-q03
     source_ids:
@@ -3352,8 +3715,11 @@ questions:
         Isaac Newton, in his manuscript “The following sentences are sufficient to solve problems by motion,” gave the first systematic exposition of a general method of analysis, which he called “fluctuation theory.”
     answer_text: |-
       Isaac Newton, in his manuscript “The following sentences are sufficient to solve problems by motion,” gave the first systematic exposition of a general method of analysis, which he called “fluctuation theory.”
-    digest: ''
-    links: []
+    digest: |-
+      In Newton’s early work, the rate of change in magnitude is called fluxion. This is the forerunner of the modern concept of derivative.
+    links:
+      - title: 'Isaac Newton: A Boy Playing on the Seashore'
+        url: /publications/hm-tt-bb5f9b89627a-en/
   - id: br-2025-04-19-q02-en
     source_id: br-2025-04-19-q02
     source_ids:
@@ -3366,9 +3732,11 @@ questions:
       happiness?
     answer:
       accepted:
-        - '...in itself'
-    answer_text: '...in itself'
-    digest: ''
+        - Within yourself
+        - in yourself
+        - inside yourself
+    answer_text: Within yourself
+    digest: In the above aphorism, the search for happiness outside is contrasted with attention to oneself.
     links: []
   - id: br-2025-04-19-q03-en
     source_id: br-2025-04-19-q03
@@ -3384,7 +3752,8 @@ questions:
         René Descartes published Geometry as an appendix to Discourse on the Method to Direct Your Mind Well and Find Truth in the Sciences. Together with Dioptrica, Meteors and Geometry, which are examples of this method. In the second half of the seventeenth century. Geometry was the handbook of all creative mathematicians. This was the beginning of modern analytic geometry.
     answer_text: |-
       René Descartes published Geometry as an appendix to Discourse on the Method to Direct Your Mind Well and Find Truth in the Sciences. Together with Dioptrica, Meteors and Geometry, which are examples of this method. In the second half of the seventeenth century. Geometry was the handbook of all creative mathematicians. This was the beginning of modern analytic geometry.
-    digest: ''
+    digest: |-
+      In Geometry, Descartes used algebraic equations to solve geometric problems. The book was published in 1637 as an appendix to a Discourse on Method.
     links: []
   - id: br-2025-04-26-q01-en
     source_id: br-2025-04-26-q01
@@ -3400,8 +3769,9 @@ questions:
       accepted:
         - A book
         - book
+        - books
     answer_text: A book
-    digest: ''
+    digest: The book teaches through the written text, so in the aphorism it is called the silent teacher.
     links: []
   - id: br-2025-04-26-q02-en
     source_id: br-2025-04-26-q02
@@ -3416,8 +3786,11 @@ questions:
     answer:
       accepted:
         - Music, harmony
+        - music
+        - harmony
     answer_text: Music, harmony
-    digest: ''
+    digest: |-
+      The fourth discipline is music as the doctrine of numerical relations in harmony. Together with arithmetic, geometry, and astronomy, these disciplines are known as quadrivium.
     links: []
   - id: br-2025-04-26-q03-en
     source_id: br-2025-04-26-q03
@@ -3433,6 +3806,9 @@ questions:
       accepted:
         - A circle
         - circle
+        - a disk
+        - disk
+        - disc
     answer_text: A circle
     digest: Circle and all internal points
     links: []
@@ -3449,8 +3825,12 @@ questions:
     answer:
       accepted:
         - Center of the circle
+        - centre of the circle
+        - the center of the circle
+        - the centre of the circle
     answer_text: Center of the circle
-    digest: ''
+    digest: |-
+      The diagonals of each inscribed rectangle are diameters, so the center lies in all rectangles. For any other point, you can choose a fairly narrow rectangle that does not contain it.
     links: []
   - id: br-2025-05-17-q02-en
     source_id: br-2025-05-17-q02
@@ -3466,7 +3846,8 @@ questions:
       accepted:
         - '25'
     answer_text: '25'
-    digest: ''
+    digest: If the starting number is x, the operations give 5((x + 5)/5 − 5) = x − 20. Since the result is 5, the starting
+      number is 25.
     links: []
   - id: br-2025-05-17-q03-en
     source_id: br-2025-05-17-q03
@@ -3482,6 +3863,9 @@ questions:
       accepted:
         - A circle
         - circle
+        - a disk
+        - disk
+        - disc
     answer_text: A circle
     digest: Circle and all internal points
     links: []
@@ -3516,8 +3900,11 @@ questions:
         "That's what Algorithmi said." In the ninth century, the Central Asian mathematician Muhammad ibn Musa al-Khwarizmi published a book on mathematics, Hisab al-Jabr wa-l-Mukabala (Calculation of Complementation and Opposition). This algebra, al-jabr, later became known in Latin translation. The author of the book in translations was called Algorizmi, which introduced the term “algorithm” into our mathematical language.
     answer_text: |-
       "That's what Algorithmi said." In the ninth century, the Central Asian mathematician Muhammad ibn Musa al-Khwarizmi published a book on mathematics, Hisab al-Jabr wa-l-Mukabala (Calculation of Complementation and Opposition). This algebra, al-jabr, later became known in Latin translation. The author of the book in translations was called Algorizmi, which introduced the term “algorithm” into our mathematical language.
-    digest: ''
-    links: []
+    digest: |-
+      Dixit Algorithmi means “Thus spoke al-Khwarizmi”. The Latin form contributed to the word algorithm, while algebra comes from al-jabr in the title of a different work.
+    links:
+      - title: Muhammad ibn Musa al-Khwarizmi (c. 780–c. 850)
+        url: /publications/hm-5f0a817e534b-en/
   - id: br-2025-05-24-q03-en
     source_id: br-2025-05-24-q03
     source_ids:
@@ -3536,8 +3923,11 @@ questions:
     answer:
       solution: 22/7 – Archimedes number – a rational approximation to pi
     answer_text: 22/7 – Archimedes number – a rational approximation to pi
-    digest: ''
-    links: []
+    digest: |-
+      In the poem, 22 owls and 7 mice are compared. The fraction 22/7 ≈ 3.142857 is an approximation to π. Archimedes showed that π is strictly less than 22/7.
+    links:
+      - title: Archimedes of Syracuse (287–212 BCE)
+        url: /publications/hm-10e7ce21d4ee-en/
   - id: br-2025-05-31-q01-en
     source_id: br-2025-05-31-q01
     source_ids:
@@ -3551,21 +3941,8 @@ questions:
     answer:
       solution: n! - "factorial." The designation was proposed by the French mathematician Christian Crump in 1808.
     answer_text: n! - "factorial." The designation was proposed by the French mathematician Christian Crump in 1808.
-    digest: ''
-    links: []
-  - id: br-2025-05-31-q02-en
-    source_id: br-2025-05-31-q02
-    source_ids:
-      - br-2025-05-31-q02
-    edition_source_id: br-2025-05-31-q02
-    topic: arithmetic
-    difficulty: beginner
-    format: self_check
-    prompt: The square of a natural number ends with 987654321. And how does the number end?
-    answer:
-      solution: 'Nine units: 111111111'
-    answer_text: 'Nine units: 111111111'
-    digest: ''
+    digest: |-
+      Christian Kramp introduced the exclamation-mark notation for a factorial in 1808. It denotes the product of the positive integers up to the given integer.
     links: []
   - id: br-2025-05-31-q03-en
     source_id: br-2025-05-31-q03
@@ -3580,24 +3957,11 @@ questions:
     answer:
       accepted:
         - octahedron
+        - a regular octahedron
+        - regular octahedron
     answer_text: octahedron
-    digest: ''
-    links: []
-  - id: br-2025-06-07-q01-en
-    source_id: br-2025-06-07-q01
-    source_ids:
-      - br-2025-06-07-q01
-    edition_source_id: br-2025-06-07-q01
-    topic: arithmetic
-    difficulty: intermediate
-    format: short_input
-    prompt: |-
-      The word was first used in fiction, for example, in Hamlet and Shakespeare's Cymbelin. In the rank of a scientific term, it originally meant “the doctrine of the economic and political state of the state, based on the analysis of those economic factors that are expressed quantitatively.” The active mathematization of this science then, nevertheless, preserved the humanitarian nature of its content: service to the needs of man, when number is used only as an instrument of research. What branch of modern mathematics are we talking about?
-    answer:
-      accepted:
-        - Statistics
-    answer_text: Statistics
-    digest: ''
+    digest: |-
+      In each of the eight octants, the equation becomes linear. These eight planes give eight triangular faces of a regular octahedron.
     links: []
   - id: br-2025-06-14-q01-en
     source_id: br-2025-06-14-q01
@@ -3612,8 +3976,11 @@ questions:
     answer:
       solution: n = 7, 9
     answer_text: n = 7, 9
-    digest: ''
-    links: []
+    digest: |-
+      The Gauss–Wantzel criterion requires the odd prime factors of the number of sides to be distinct Fermat primes. Seven is not a Fermat prime, and nine repeats the factor 3.
+    links:
+      - title: Johann Carl Friedrich Gauss (1777–1855)
+        url: /publications/hm-0d1a666f8783-en/
   - id: br-2025-06-14-q02-en
     source_id: br-2025-06-14-q02
     source_ids:
@@ -3622,13 +3989,14 @@ questions:
     topic: measurement
     difficulty: intermediate
     format: self_check
-    prompt: Can a circle be divided into 360 equal parts by a compass and a ruler?
+    prompt: Can you divide a circle into 360 equal parts with only a compass and straightedge?
     answer:
       solution: No. 360 = 2*2*2*3*3*5. Among the odd prime factors into which 360 decomposes, there are two identical (3 and
         3).
     answer_text: No. 360 = 2*2*2*3*3*5. Among the odd prime factors into which 360 decomposes, there are two identical (3
       and 3).
-    digest: ''
+    digest: 360 = 2³ × 3² × 5. The Gauss–Wantzel criterion allows each odd Fermat prime factor only once. The factor 3 appears
+      twice.
     links: []
   - id: br-2025-06-14-q03-en
     source_id: br-2025-06-14-q03
@@ -3642,8 +4010,10 @@ questions:
     answer:
       solution: Yes, in two ways. 365 = 13² + 14² = 19² + 2².
     answer_text: Yes, in two ways. 365 = 13² + 14² = 19² + 2².
-    digest: ''
-    links: []
+    digest: Two examples are written as 169 + 196 and 361 + 4. Both are equal to 365.
+    links:
+      - title: A sum of two squares
+        url: /publications/hm-0114ac488785-en/
   - id: br-2025-06-21-q01-en
     source_id: br-2025-06-21-q01
     source_ids:
@@ -3656,6 +4026,9 @@ questions:
     answer:
       accepted:
         - You can't
+        - You can’t
+        - 'no'
+        - not possible
     answer_text: You can't
     digest: You cannot divide a circle into 360 equal parts with a compass and a ruler
     links: []
@@ -3673,8 +4046,10 @@ questions:
       accepted:
         - A solid
         - solid
+        - geometric solid
     answer_text: A solid
-    digest: ''
+    digest: |-
+      This is one example of the terms of an old Euclid translation. The word "not lean" in it meant what in modern geometrical language is called the body.
     links: []
   - id: br-2025-06-21-q03-en
     source_id: br-2025-06-21-q03
@@ -3683,14 +4058,14 @@ questions:
     edition_source_id: br-2025-06-21-q03
     topic: geometry
     difficulty: beginner
-    format: short_input
+    format: self_check
     prompt: |-
       In the book “Geometry Practice”, published at the beginning of the XVIII century, the terms “distance”, “superficiency” and “corpulence” are used. What do you think they mean?
     answer:
-      accepted:
-        - '"Distance", "area", "volume"'
+      solution: '"Distance", "area", "volume"'
     answer_text: '"Distance", "area", "volume"'
-    digest: ''
+    digest: |-
+      Three terms refer to three dimensions: “distance” to length, “superficiency” to surface area, and “corpulence” to body volume.
     links: []
   - id: br-2025-06-28-q01-en
     source_id: br-2025-06-28-q01
@@ -3705,7 +4080,8 @@ questions:
       accepted:
         - 4 kg
     answer_text: 4 kg
-    digest: ''
+    digest: |-
+      The difference between a whole kochan and four-fifths of its mass is one-fifth. If one fifth is equal to 4/5 kg, then the whole head weighs 4 kg.
     links: []
   - id: br-2025-06-28-q02-en
     source_id: br-2025-06-28-q02
@@ -3721,8 +4097,11 @@ questions:
       accepted:
         - '45'
     answer_text: '45'
-    digest: ''
-    links: []
+    digest: |-
+      The three fingers of the second hand represent three full dozen. Three more fingers of three phalanges make nine. Total 36 + 9 = 45.
+    links:
+      - title: Like the back of my hand
+        url: /publications/hm-502743c1465f-en/
   - id: br-2025-06-28-q03-en
     source_id: br-2025-06-28-q03
     source_ids:
@@ -3735,9 +4114,13 @@ questions:
       Take two arbitrary natural numbers. Make up their amount, difference and product. At least one of these newly obtained numbers is necessarily divided by 3. Why is this so (on what property of divisibility is this statement based)?
     answer:
       accepted:
-        - Arithmetic of residues from division by 3
-    answer_text: Arithmetic of residues from division by 3
-    digest: ''
+        - Arithmetic modulo 3
+        - remainders modulo 3
+        - modulo 3
+        - remainders on division by 3
+    answer_text: Arithmetic modulo 3
+    digest: |-
+      If one remainder modulo 3 is zero, the product is divisible by 3. If the two remainders are equal, the difference is divisible. Otherwise they are 1 and 2 and the sum is divisible.
     links: []
   - id: br-2025-07-05-q01-en
     source_id: br-2025-07-05-q01
@@ -3748,13 +4131,20 @@ questions:
     difficulty: intermediate
     format: short_input
     prompt: |-
-      A nineteenth-century mathematician wrote to his son, a mathematics student, on this subject: “Do not try to overcome ... not in the way you wrote to me or in any other way.” I've learned all the ways. I went through all the hopeless darkness of that night, and I buried every light, every joy of life in it. For God's sake, I beg you, leave this matter behind, because it can deprive you of all your time, health, peace, all the happiness of your life. The question is: conquer what? And also, to whom is the letter addressed?
+      Farkas Bolyai warned his son that trying to prove one of Euclid's postulates had been a “night without bottom”. Which postulate was he talking about?
     answer:
       accepted:
-        - Defeat parallel theory
-    answer_text: Defeat parallel theory
+        - Prove Euclid's parallel postulate
+        - Prove Euclid’s parallel postulate
+        - prove the parallel postulate
+        - Euclid's fifth postulate
+        - Euclid’s fifth postulate
+        - the theory of parallels
+    answer_text: Prove Euclid's parallel postulate
     digest: Letter from Hungarian mathematician Farkash Boyai to his son Janos Boyai
-    links: []
+    links:
+      - title: The Bolyais and the Bottomless Night of Parallels
+        url: /publications/hm-a45d04e3ad39-en/
   - id: br-2025-07-05-q02-en
     source_id: br-2025-07-05-q02
     source_ids:
@@ -3769,8 +4159,12 @@ questions:
       accepted:
         - The square root of 2
         - square root of 2
+        - √2
+        - sqrt(2)
+        - the square root of two
     answer_text: The square root of 2
-    digest: ''
+    digest: |-
+      Let r be the ratio of the long side to the short side. Folding in half and rotating gives a new ratio of 2/r. Thus r = 2/r and r = √2.
     links: []
   - id: br-2025-07-05-q03-en
     source_id: br-2025-07-05-q03
@@ -3784,7 +4178,8 @@ questions:
     answer:
       solution: Its area is equal to one square meter.
     answer_text: Its area is equal to one square meter.
-    digest: ''
+    digest: |-
+      The target area of an A0 sheet is 1 m² and the aspect ratio is √2:1. The dimensions are rounded to whole millimetres, so their product is only approximately 1 m².
     links: []
   - id: br-2025-07-12-q01-en
     source_id: br-2025-07-12-q01
@@ -3799,8 +4194,11 @@ questions:
     answer:
       solution: The presence of an additional scale on a movable frame, which is called a nonius or vernier
     answer_text: The presence of an additional scale on a movable frame, which is called a nonius or vernier
-    digest: ''
-    links: []
+    digest: |-
+      On the nonius look for a stroke that exactly coincides with the stroke of the main scale. Its number shows the fraction of the junior division that needs to be added to the scale.
+    links:
+      - title: The Vernier Scale
+        url: /publications/hm-tt-eea880ba2f7f-en/
   - id: br-2025-07-12-q02-en
     source_id: br-2025-07-12-q02
     source_ids:
@@ -3816,7 +4214,8 @@ questions:
         Arcs of three circles with centers at the vertices of a regular triangle and identical radii equal to the length of the side of the triangle
     answer_text: |-
       Arcs of three circles with centers at the vertices of a regular triangle and identical radii equal to the length of the side of the triangle
-    digest: ''
+    digest: |-
+      The arcs are built with a radius equal to the side of the triangle. Each arc has a center at one vertex and connects the other two vertexes.
     links: []
   - id: br-2025-07-12-q03-en
     source_id: br-2025-07-12-q03
@@ -3831,7 +4230,8 @@ questions:
     answer:
       solution: The cells have three mutually perpendicular mirrors, not two.
     answer_text: The cells have three mutually perpendicular mirrors, not two.
-    digest: ''
+    digest: |-
+      Three reflections in planes perpendicular in pairs change the sign of all three components of the direction of the beam. The beam returns parallel to the original direction, in the opposite direction.
     links: []
   - id: br-2025-07-19-q01-en
     source_id: br-2025-07-19-q01
@@ -3845,8 +4245,11 @@ questions:
       Some northern flowers, living in conditions of short summer and lack of sunlight, open the petals in a special form. Which one, and why?
     answer:
       accepted:
-        - Paraboloid-shaped
-    answer_text: Paraboloid-shaped
+        - A paraboloid
+        - paraboloid
+        - a paraboloid of revolution
+        - paraboloid-shaped
+    answer_text: A paraboloid
     digest: |-
       Optical property of the parabola: if a stream of rays parallel to the axis of symmetry falls on the parabola, then, reflecting off the parabola, the rays will come into focus. The “heart” of the flower in focus will become warmer
     links: []
@@ -3865,7 +4268,8 @@ questions:
         On the optical-geometric properties of an ellipse, or ellipsoid of rotation. Optical property of the ellipse: if you place a point source of radiation ("bulb") in one of the foci of the ellipse and turn it on, the rays, reflected from the ellipse, will gather in the second focus. At the same time, all the rays will come to the second focus at the same time, since for each ray the length of the path traveled will be the same, by definition of the ellipse.
     answer_text: |-
       On the optical-geometric properties of an ellipse, or ellipsoid of rotation. Optical property of the ellipse: if you place a point source of radiation ("bulb") in one of the foci of the ellipse and turn it on, the rays, reflected from the ellipse, will gather in the second focus. At the same time, all the rays will come to the second focus at the same time, since for each ray the length of the path traveled will be the same, by definition of the ellipse.
-    digest: ''
+    digest: |-
+      The geometric principle consists in the reflection from one focus of an ellipsoid to another. Due to this, the waves emitted from the first focus are concentrated in the second.
     links: []
   - id: br-2025-07-19-q03-en
     source_id: br-2025-07-19-q03
@@ -3882,7 +4286,8 @@ questions:
         Ten folds are generally impractical with an ordinary sheet. The thickness doubles with each fold. After ten folds the paper is 2¹⁰ = 1,024 times as thick.
     answer_text: |-
       Ten folds are generally impractical with an ordinary sheet. The thickness doubles with each fold. After ten folds the paper is 2¹⁰ = 1,024 times as thick.
-    digest: ''
+    digest: |-
+      Each ideal fold doubles the number of layers. Ten folds would give 2¹⁰ = 1024 layers, but an ordinary sheet becomes too thick and small to keep folding.
     links: []
   - id: br-2025-07-26-q02-en
     source_id: br-2025-07-26-q02
@@ -3895,8 +4300,11 @@ questions:
     prompt: What application in your smartphone can be called a “degree bar”?
     answer:
       accepted:
-        - Stepper
-    answer_text: Stepper
+        - A pedometer
+        - pedometer
+        - step counter
+        - a step counter
+    answer_text: A pedometer
     digest: |-
       The word “degree” came to us from Latin (Gradus – division of the scale, step, step), and there came from the works of the Babylonian priests. Studying the movement of the Sun, they divided its path into 360 degrees — steps in motion in a circle.
     links: []
@@ -3915,7 +4323,8 @@ questions:
         The legendary "Didona's Task." According to legend, a princess who fled the city of Tyre stopped on the shores of modern Tunisia and at a meeting with local leaders asked them to sell some land. Those "friendly" replied that Dido could take as much land as could be covered with the skin of the bull on which they were sitting. However, Didona cut the skin into thin straps, tied them and fenced a large area on the beach.
     answer_text: |-
       The legendary "Didona's Task." According to legend, a princess who fled the city of Tyre stopped on the shores of modern Tunisia and at a meeting with local leaders asked them to sell some land. Those "friendly" replied that Dido could take as much land as could be covered with the skin of the bull on which they were sitting. However, Didona cut the skin into thin straps, tied them and fenced a large area on the beach.
-    digest: ''
+    digest: |-
+      In the legend of Dido, the boundary was limited by the length of strips cut from an oxhide. The puzzle asks how to enclose the largest area with that boundary length.
     links: []
   - id: br-2025-08-02-q01-en
     source_id: br-2025-08-02-q01
@@ -3925,15 +4334,18 @@ questions:
     topic: geometry
     difficulty: beginner
     format: short_input
-    prompt: |-
-      On a hexagonal pencil, repaired with a standard sharpener, the intersection of the cone surrounding the slate with a hexagonal prism is a corolla of arcs of six curves. What are the curves?
+    prompt: What kind of curves are formed where a plane parallel to the axis of a double cone meets both halves of the cone?
     answer:
       accepted:
-        - Hyperballs
-    answer_text: Hyperballs
+        - A hyperbola
+        - hyperbola
+        - hyperbolas
+    answer_text: A hyperbola
     digest: |-
       This follows from the definition of hyperbola as a conical section - the intersection of a straight circular cone (bilateral, symmetrical with respect to the top) with a plane parallel to two forming, for example, a parallel axis of the cone.
-    links: []
+    links:
+      - title: Apollonius of Perga (c. 262–190 BCE)
+        url: /publications/hm-effac70f6369-en/
   - id: br-2025-08-02-q03-en
     source_id: br-2025-08-02-q03
     source_ids:
@@ -3947,8 +4359,12 @@ questions:
     answer:
       accepted:
         - ln a
+        - ln(a)
+        - natural logarithm of a
+        - the natural logarithm of a
     answer_text: ln a
-    digest: ''
+    digest: |-
+      For a ≥ 1, the desired area is equal to the integral from 1/x in the segment from 1 to a. The primordial on the positive semi-axis is ln x, and ln 1 = 0.
     links: []
   - id: br-2025-08-09-q01-en
     source_id: br-2025-08-09-q01
@@ -3959,12 +4375,18 @@ questions:
     difficulty: intermediate
     format: short_input
     prompt: |-
-      In Jonathan Swift, Gulliver finds himself in a world in which all sizes (the height of residents, the height of trees and houses) are 12 times smaller than usual, but the proportions are the same. What is the geometrical transformation of this phenomenon?
+      In Lilliput, Gulliver finds a world where all the familiar lengths are one-twelfth of their usual size. What kind of geometric transformation changes the scale without changing proportions?
     answer:
       accepted:
-        - Resemblance transformation
-    answer_text: Resemblance transformation
-    digest: ''
+        - A similarity transformation
+        - similarity
+        - similarity transformation
+        - scaling
+        - a dilation
+        - dilation
+    answer_text: A similarity transformation
+    digest: |-
+      All lengths are multiplied by the same factor of 1/12. Therefore, the proportions and angles are preserved – this is how similarity works.
     links: []
   - id: br-2025-08-09-q02-en
     source_id: br-2025-08-09-q02
@@ -3978,10 +4400,15 @@ questions:
       A 400-year Gregorian calendar cycle has exactly 20,871 weeks. A month therefore begins 400 × 12 = 4,800 times. Which day of the week is most common for the 13th of the month over a complete cycle?
     answer:
       accepted:
+        - Friday the thirteenth
+        - Friday the 13th
         - Friday
-    answer_text: Friday
-    digest: ''
-    links: []
+    answer_text: Friday the thirteenth
+    digest: |-
+      The 400-year Gregorian cycle has 146,097 days, which is a multiple of 7. If you go through all 4,800 months of one cycle, the 13th falls on Friday 688 times, more often than on other days.
+    links:
+      - title: How to Find the Day of the Week from a Date
+        url: /publications/hm-tt-530b66537d4f-en/
   - id: br-2025-08-09-q03-en
     source_id: br-2025-08-09-q03
     source_ids:
@@ -4011,7 +4438,8 @@ questions:
     answer:
       solution: '"Forty" as "many" or "unit of measurement of greater discharge"'
     answer_text: '"Forty" as "many" or "unit of measurement of greater discharge"'
-    digest: ''
+    digest: |-
+      In such expressions, a number may convey the idea of a set or duration. For use in folklore, this is more important than accurate calculation.
     links: []
   - id: br-2025-09-20-q02-en
     source_id: br-2025-09-20-q02
@@ -4025,7 +4453,8 @@ questions:
     answer:
       solution: No. From "p entails q" it does not follow that from "not p entails not q"
     answer_text: No. From "p entails q" it does not follow that from "not p entails not q"
-    digest: ''
+    digest: |-
+      From “barking ⇒ does not bite” follows “biting ⇒ does not bark”. The absence of barking does not say anything about whether the dog is biting.
     links: []
   - id: br-2025-09-20-q03-en
     source_id: br-2025-09-20-q03
@@ -4059,7 +4488,7 @@ questions:
         The guest from room 1 moves to room 2, the guest from room 2 moves to room 3, etc. Now number 1 is vacant, and a place to sleep is for everyone. Another option: each guest moves to an apartment with a room twice as much as he was.
     answer_text: |-
       The guest from room 1 moves to room 2, the guest from room 2 moves to room 3, etc. Now number 1 is vacant, and a place to sleep is for everyone. Another option: each guest moves to an apartment with a room twice as much as he was.
-    digest: ''
+    digest: We move the guest from room n to room n + 1. Everyone has a new number and number 1 is vacant.
     links: []
   - id: br-2025-09-27-q02-en
     source_id: br-2025-09-27-q02
@@ -4074,7 +4503,8 @@ questions:
     answer:
       solution: The number π (pi), here is approximately 3
     answer_text: The number π (pi), here is approximately 3
-    digest: ''
+    digest: |-
+      According to the above dimensions, the ratio of circumference to diameter is 30/10 = 3. In precise geometry, this ratio is equal to π ≈ 3.14159.
     links: []
   - id: br-2025-09-27-q03-en
     source_id: br-2025-09-27-q03
@@ -4089,23 +4519,8 @@ questions:
     answer:
       solution: Forty-forty about a very large amount of something.
     answer_text: Forty-forty about a very large amount of something.
-    digest: ''
-    links: []
-  - id: br-2025-10-04-q01-en
-    source_id: br-2025-10-04-q01
-    source_ids:
-      - br-2025-10-04-q01
-    edition_source_id: br-2025-10-04-q01
-    topic: history
-    difficulty: intermediate
-    format: short_input
-    prompt: |-
-      Captain Wrungel found that every herring is a fish, but not every fish is a herring. What kind of mathematical law does this example mean?
-    answer:
-      accepted:
-        - Commutativity
-    answer_text: Commutativity
-    digest: ''
+    digest: |-
+      Forty-forty is a steady turnover, which means an indefinitely large number. In the poem, he conveys the feeling of a very long wait.
     links: []
   - id: br-2025-10-04-q02-en
     source_id: br-2025-10-04-q02
@@ -4119,7 +4534,8 @@ questions:
     answer:
       solution: Z is the first letter of the German word "Zahl", the number
     answer_text: Z is the first letter of the German word "Zahl", the number
-    digest: ''
+    digest: |-
+      The letter Z is associated with the German Zahlen, "numbers". In mathematics, this symbol denotes all integers, including zero and negative.
     links: []
   - id: br-2025-10-04-q03-en
     source_id: br-2025-10-04-q03
@@ -4134,8 +4550,11 @@ questions:
     answer:
       accepted:
         - Neural networks, neurocomputers
+        - neural networks
+        - artificial neural networks
     answer_text: Neural networks, neurocomputers
-    digest: ''
+    digest: |-
+      The perceptron processes a weighted sum of input signals. This model was one of the earliest ways to build artificial neural networks.
     links: []
   - id: br-2025-10-11-q01-en
     source_id: br-2025-10-11-q01
@@ -4150,8 +4569,10 @@ questions:
     answer:
       accepted:
         - Quaternions
+        - quaternion algebra
+        - the quaternions
     answer_text: Quaternions
-    digest: ''
+    digest: Hamilton's quaternion rule is i² = j² = k² = ijk = −1. Quaternion multiplication is generally noncommutative.
     links: []
   - id: br-2025-10-11-q02-en
     source_id: br-2025-10-11-q02
@@ -4165,9 +4586,12 @@ questions:
       In any particular doctrine of nature one can find only as much science in the proper sense as there is mathematics in it. Can you name the author of this statement: Galileo, Newton, Kant or Descartes?
     answer:
       accepted:
-        - And
-    answer_text: And
-    digest: Kant, The Critique of Pure Reason
+        - Immanuel Kant
+        - Kant
+        - I. Kant
+    answer_text: Immanuel Kant
+    digest: |-
+      Kant made this claim in the preface to Metaphysical Foundations of Natural Science. He treated the applicability of mathematics as a mark of natural science in the proper sense.
     links: []
   - id: br-2025-10-11-q03-en
     source_id: br-2025-10-11-q03
@@ -4183,8 +4607,10 @@ questions:
       accepted:
         - The distributive law
         - distributive law
+        - distributivity
     answer_text: The distributive law
-    digest: ''
+    digest: |-
+      This is an analogy with the opening of brackets: the common element refers to both members of the enumeration. As in a(b + c) = ab + ac, one common element is used twice.
     links: []
   - id: br-2025-10-18-q01-en
     source_id: br-2025-10-18-q01
@@ -4198,7 +4624,8 @@ questions:
     answer:
       solution: Q is the first letter of the English word “Quotient”
     answer_text: Q is the first letter of the English word “Quotient”
-    digest: ''
+    digest: |-
+      A rational number is written as a private of two integers with a non-zero denominator. The English word quotient means “private”.
     links: []
   - id: br-2025-10-18-q02-en
     source_id: br-2025-10-18-q02
@@ -4213,7 +4640,8 @@ questions:
     answer:
       solution: Build a cube whose volume is equal to the volume of a ball of a given radius
     answer_text: Build a cube whose volume is equal to the volume of a ball of a given radius
-    digest: ''
+    digest: |-
+      For a sphere of radius r and a cube of side a, the required equality is a³ = 4πr³/3. The analogous circle-squaring problem asks for equal areas.
     links: []
   - id: br-2025-10-18-q03-en
     source_id: br-2025-10-18-q03
@@ -4228,9 +4656,14 @@ questions:
     answer:
       accepted:
         - Fibonacci numbers
+        - Fibonacci sequence
+        - the Fibonacci sequence
     answer_text: Fibonacci numbers
-    digest: ''
-    links: []
+    digest: |-
+      In many plants, the numbers of visible spirals in two directions form adjacent Fibonacci numbers. This pattern is common, although there are other layouts.
+    links:
+      - title: Fibonacci’s rabbit problem
+        url: /publications/hm-e5f562afd469-en/
   - id: br-2025-10-25-q01-en
     source_id: br-2025-10-25-q01
     source_ids:
@@ -4244,6 +4677,7 @@ questions:
     answer:
       accepted:
         - Thales
+        - Thales of Miletus
     answer_text: Thales
     digest: You can easily test mathematical truth if you look at the situation from the right angle.
     links: []
@@ -4259,12 +4693,16 @@ questions:
       “Crucifixion...” is a famous painting by Spanish artist Salvador Dali, painted in 1954. Can you remember and name the geometrical body depicted in this painting?
     answer:
       accepted:
-        - The development of a four-dimensional hypercube (tesseract)
-        - development of a four-dimensional hypercube (tesseract)
-    answer_text: The development of a four-dimensional hypercube (tesseract)
+        - A net of a tesseract
+        - tesseract net
+        - a hypercube net
+        - net of a four-dimensional cube
+    answer_text: A net of a tesseract
     digest: |-
       The painting “Crucifixion, or Hypercubic Body”, also known as “Corpus Hypercubus”, depicts the crucified Jesus Christ on a hypercube sweep.
-    links: []
+    links:
+      - title: 'Four-dimensional space: easy!'
+        url: /publications/hm-9837b12d266c-en/
   - id: br-2025-11-08-q01-en
     source_id: br-2025-11-08-q01
     source_ids:
@@ -4280,7 +4718,8 @@ questions:
         A compendium is a systematic, concise account of the main results or ideas of a subject. The Elements gathers the core results of classical geometry and arithmetic into a single work.
     answer_text: |-
       A compendium is a systematic, concise account of the main results or ideas of a subject. The Elements gathers the core results of classical geometry and arithmetic into a single work.
-    digest: ''
+    digest: |-
+      The Compendium collects the main provisions of the subject in one abbreviated presentation. Thus Berends characterized the set of geometric and arithmetic knowledge in Euclid.
     links: []
   - id: br-2025-11-08-q02-en
     source_id: br-2025-11-08-q02
@@ -4296,7 +4735,8 @@ questions:
         By virtue of conventional agreement, a trapezoid has at least one pair of parallel sides, rather than exactly one pair. In mathematics, a trapezoid is called a quadrangle with a pair of parallel sides.
     answer_text: |-
       By virtue of conventional agreement, a trapezoid has at least one pair of parallel sides, rather than exactly one pair. In mathematics, a trapezoid is called a quadrangle with a pair of parallel sides.
-    digest: ''
+    digest: |-
+      When including the definition of a trapezoid, at least one pair of parallel sides is sufficient. A rectangle has two pairs and satisfies this definition. In textbooks, there is a definition with exactly one pair.
     links: []
   - id: br-2025-11-08-q03-en
     source_id: br-2025-11-08-q03
@@ -4316,8 +4756,11 @@ questions:
     answer:
       solution: 'The Legend of the Chessboard: Rewarding the Inventor of Chess'
     answer_text: 'The Legend of the Chessboard: Rewarding the Inventor of Chess'
-    digest: ''
-    links: []
+    digest: |-
+      Dante alludes to the legend of grains doubling from square to square. With 64 squares, the number of grains adds up to 2⁶⁴ − 1.
+    links:
+      - title: The legend of the chessboard
+        url: /publications/hm-ee204aa37d3d-en/
   - id: br-2025-11-15-q01-en
     source_id: br-2025-11-15-q01
     source_ids:
@@ -4332,7 +4775,8 @@ questions:
         On the surface of a sphere in spherical geometry. The shortest paths between two points on a sphere are called arcs of large circles. They connect points along circular arcs whose centers coincide with the center of the sphere. Large circle arcs are interpreted as straight lines in spherical trigonometry. It is easy to draw a triangle, all three angles of which are equal to 90 degrees, starting with the North Pole.
     answer_text: |-
       On the surface of a sphere in spherical geometry. The shortest paths between two points on a sphere are called arcs of large circles. They connect points along circular arcs whose centers coincide with the center of the sphere. Large circle arcs are interpreted as straight lines in spherical trigonometry. It is easy to draw a triangle, all three angles of which are equal to 90 degrees, starting with the North Pole.
-    digest: ''
+    digest: |-
+      Two meridians 90° apart and the equator bound a spherical triangle with three right angles. Their edges are arcs of great circles.
     links: []
   - id: br-2025-11-15-q03-en
     source_id: br-2025-11-15-q03
@@ -4349,7 +4793,8 @@ questions:
         - A hyperbola and its asymptotes
         - hyperbola and its asymptotes
     answer_text: A hyperbola and its asymptotes
-    digest: ''
+    digest: |-
+      In hyperbola and its asymptote, the distance can tend to zero. For example, the graph y = 1/x approaches the x-axis at large x.
     links: []
   - id: br-2025-11-22-q01-en
     source_id: br-2025-11-22-q01
@@ -4365,7 +4810,7 @@ questions:
       accepted:
         - Radical
     answer_text: Radical
-    digest: ''
+    digest: The Latin radix means “root”. It became the source of the word “radical” in algebraic terminology.
     links: []
   - id: br-2025-11-22-q02-en
     source_id: br-2025-11-22-q02
@@ -4380,9 +4825,16 @@ questions:
     answer:
       accepted:
         - Sofia Vasilyevna Kovalevskaya
+        - Sofia Kovalevskaya
+        - Sofya Kovalevskaya
+        - Sophie Kovalevskaya
+        - Kovalevskaya
     answer_text: Sofia Vasilyevna Kovalevskaya
-    digest: ''
-    links: []
+    digest: |-
+      Sofia Kovalevskaya received the Prix Bordin for work on the rotation of a rigid body about a fixed point. One of the integrable cases is now named after her.
+    links:
+      - title: Sofya Vasilyevna Kovalevskaya (1850–1891)
+        url: /publications/hm-2a80036b1d7a-en/
   - id: br-2025-11-22-q03-en
     source_id: br-2025-11-22-q03
     source_ids:
@@ -4395,9 +4847,14 @@ questions:
       During Napoleon's campaign to Russia in 1812, Lieutenant Jean Victor Poncelet (1788-1867) was captured. A party of prisoners was sent to Saratov on foot. In Saratov, Poncelais created a new field of geometry, "projective geometry." When he left for his homeland after the war, he took away this popular Russian mathematical tool. Under the name "boulier" they came into use in the French school, and from there in the schools of other countries. What kind of tool is that?
     answer:
       accepted:
-        - Russian scores
-    answer_text: Russian scores
-    digest: ''
+        - The Russian abacus
+        - Russian abacus
+        - abacus
+        - the schoty
+        - schoty
+    answer_text: The Russian abacus
+    digest: |-
+      Russian accounts use rows of movable bones. With their transfer to the French school associated with the name of Jean-Victor Poncelet.
     links: []
   - id: br-2025-11-29-q01-en
     source_id: br-2025-11-29-q01
@@ -4415,7 +4872,9 @@ questions:
     answer_text: Algebra
     digest: |-
       The word “al-jabr” (in Latin translation – algebra) in the Arabic mathematician of the ninth century Al-Khwarizmi meant “restoration”, “fulfillment”, transfer of the deductible terms of the equation to another part in the form of added. And the surgeon was called an "algebraist" or a "bonfireman."
-    links: []
+    links:
+      - title: Al-Khwarizmi and His “Accidental” Discovery of Algebra
+        url: /publications/hm-0fe2094b611d-en/
   - id: br-2025-11-29-q02-en
     source_id: br-2025-11-29-q02
     source_ids:
@@ -4431,8 +4890,11 @@ questions:
         "Flying Arrow." “At every moment of time, the flying arrow is stationary. So it is motionless at all times, and its movement can never begin. – Savin A. P. et al. Entertaining Mathematics in Stories for Children, 2011, 287.
     answer_text: |-
       "Flying Arrow." “At every moment of time, the flying arrow is stationary. So it is motionless at all times, and its movement can never begin. – Savin A. P. et al. Entertaining Mathematics in Stories for Children, 2011, 287.
-    digest: ''
-    links: []
+    digest: |-
+      Zeno's flying arrow is motionless if each instant is imagined as a frozen picture. A film likewise uses still frames to produce the appearance of motion.
+    links:
+      - title: Zeno of Elea’s Paradoxes
+        url: /publications/hm-tt-4d074852e9b8-en/
   - id: br-2025-11-29-q03-en
     source_id: br-2025-11-29-q03
     source_ids:
@@ -4447,8 +4909,11 @@ questions:
       accepted:
         - '"Geometers"'
     answer_text: '"Geometers"'
-    digest: ''
-    links: []
+    digest: |-
+      Ostrogradsky plays the difference between the formula for a right-angle triangle and the general case. Half the product of the sides gives area only when these sides are perpendicular.
+    links:
+      - title: Mikhail Vasilyevich Ostrogradsky (1801–1862)
+        url: /publications/hm-b5878e48fa2a-en/
   - id: br-2025-12-06-q01-en
     source_id: br-2025-12-06-q01
     source_ids:
@@ -4462,9 +4927,14 @@ questions:
     answer:
       accepted:
         - Mikhail Vasilyevich Lomonosov
+        - Mikhail Lomonosov
+        - Lomonosov
     answer_text: Mikhail Vasilyevich Lomonosov
-    digest: ''
-    links: []
+    digest: |-
+      According to a well-known story about his childhood, Mikhail Lomonosov called the books of Magnitsky and Smotritsky "the gates of his learning."
+    links:
+      - title: Leonty Filippovich Magnitsky (1669–1739)
+        url: /publications/hm-f8243aa3fd71-en/
   - id: br-2025-12-06-q02-en
     source_id: br-2025-12-06-q02
     source_ids:
@@ -4480,8 +4950,11 @@ questions:
         Yes. By the Gauss–Wantzel theorem, a regular n-gon is constructible exactly when n is a power of two times a product of distinct Fermat primes. Here 65,537 = 2¹⁶ + 1 is a Fermat prime.
     answer_text: |-
       Yes. By the Gauss–Wantzel theorem, a regular n-gon is constructible exactly when n is a power of two times a product of distinct Fermat primes. Here 65,537 = 2¹⁶ + 1 is a Fermat prime.
-    digest: ''
-    links: []
+    digest: |-
+      65537 = 2¹⁶ + 1 is a Fermat prime. The Gauss–Wantzel criterion therefore makes the regular 65537-gon constructible with compass and straightedge.
+    links:
+      - title: Johann Carl Friedrich Gauss (1777–1855)
+        url: /publications/hm-0d1a666f8783-en/
   - id: br-2025-12-06-q03-en
     source_id: br-2025-12-06-q03
     source_ids:
@@ -4495,8 +4968,11 @@ questions:
     answer:
       solution: Eastern Department of the Faculty of Philosophy, but not for the Mathematical Department
     answer_text: Eastern Department of the Faculty of Philosophy, but not for the Mathematical Department
-    digest: ''
-    links: []
+    digest: |-
+      Leo Tolstoy entered the Kazan University at the Eastern Department. Mathematical hobbies reflected in “Youth” did not in themselves determine the choice of the faculty.
+    links:
+      - title: Leo Tolstoy and Mathematics
+        url: /publications/hm-tt-de2464b2b28b-en/
   - id: br-2025-12-13-q01-en
     source_id: br-2025-12-13-q01
     source_ids:
@@ -4510,9 +4986,15 @@ questions:
     answer:
       accepted:
         - Pafnuty Lvovich Chebyshev
+        - Pafnuty Chebyshev
+        - Chebyshev
+        - Tchebycheff
     answer_text: Pafnuty Lvovich Chebyshev
-    digest: ''
-    links: []
+    digest: |-
+      Chebyshev received estimates of the number of simple to a given boundary. Its name is also associated with the proof of the existence of a prime number between n and 2n for n > 1.
+    links:
+      - title: Pafnuty Lvovich Chebyshev (1821–1894)
+        url: /publications/hm-e95fa8609e6f-en/
   - id: br-2025-12-13-q02-en
     source_id: br-2025-12-13-q02
     source_ids:
@@ -4525,9 +5007,14 @@ questions:
       Let us say that a sheet of paper is normal if, when folded together, it becomes a sheet similar to it. What is the ratio of the sides of a normal sheet?
     answer:
       accepted:
-        - √2 (root square of 2)
-    answer_text: √2 (root square of 2)
-    digest: ''
+        - The square root of 2
+        - square root of 2
+        - square root of two
+        - √2
+        - sqrt(2)
+    answer_text: The square root of 2
+    digest: |-
+      Denote the initial ratio by r. When folded, the long side divides in half and becomes short. The similarity condition gives r = 2/r, i.e. r = √2.
     links: []
   - id: br-2025-12-13-q03-en
     source_id: br-2025-12-13-q03
@@ -4544,7 +5031,8 @@ questions:
         In Ethics there are axioms, theorems, lemmas, proofs, there is not only the spirit of the mathematical method. His axioms contain statements that cannot be called “unquestionable.”
     answer_text: |-
       In Ethics there are axioms, theorems, lemmas, proofs, there is not only the spirit of the mathematical method. His axioms contain statements that cannot be called “unquestionable.”
-    digest: ''
+    digest: |-
+      In Spinoza, the form really resembles Euclid—definitions, axioms, positions, and proofs. The persuasiveness of philosophical conclusions depends on whether the reader accepts the premises.
     links: []
   - id: br-2025-12-20-q01-en
     source_id: br-2025-12-20-q01
@@ -4558,9 +5046,11 @@ questions:
       “Algebra is the same geometry in words, it only operates with symbols. Geometry is nothing but algebra embodied in figures. — So said the famous French mathematician of the XVIII-XIX centuries. Who is this woman, a mathematician, a mechanic and a philosopher?
     answer:
       accepted:
-        - Sophie Germain (1776–1831)
-    answer_text: Sophie Germain (1776–1831)
-    digest: ''
+        - Sophie Germain
+        - Germain
+    answer_text: Sophie Germain
+    digest: |-
+      Algebra and geometry describe related ideas through symbols and figures. The riddle is attributed to French mathematician Sophie Germain.
     links: []
   - id: br-2025-12-20-q02-en
     source_id: br-2025-12-20-q02
@@ -4574,9 +5064,13 @@ questions:
       As you know, the shortest path between two points on the plane is in a straight line. The distance between them is equal to the length of the segment. What is the shortest path between two points on the sphere?
     answer:
       accepted:
-        - By the circumference of the great circle
-    answer_text: By the circumference of the great circle
-    digest: ''
+        - Along an arc of a great circle
+        - great circle arc
+        - a great circle
+        - great circle
+    answer_text: Along an arc of a great circle
+    digest: |-
+      The shortest path along the spherical surface is along a smaller arc of a large circle. For diametrically opposite points, any large semicircle between them is suitable.
     links: []
   - id: br-2025-12-20-q03-en
     source_id: br-2025-12-20-q03
@@ -4591,7 +5085,8 @@ questions:
       accepted:
         - 150 teeth per person
     answer_text: 150 teeth per person
-    digest: ''
+    digest: |-
+      600,000 divided by 4,000 is 150. The arithmetic is straightforward, but this result exposes the implausible numbers in the story.
     links: []
   - id: br-2025-12-27-q01-en
     source_id: br-2025-12-27-q01
@@ -4605,10 +5100,15 @@ questions:
       Geometric knowledge forms the basis of all exact science, and the originality of Lobachevsky’s geometry is the dawn of the independent development of science in Russia. The sowing of science will rise for the harvest of the people. Honorary Member of Kazan University ... These words in the telegram on the occasion of the opening of the Lobachevsky monument in Kazan (1896) responded to the outstanding Russian chemist. Who is it?
     answer:
       accepted:
-        - Dmitry Ivanovich Mendeleev (1834–1907)
-    answer_text: Dmitry Ivanovich Mendeleev (1834–1907)
-    digest: ''
-    links: []
+        - Dmitri Mendeleev
+        - Dmitry Mendeleev
+        - Mendeleev
+    answer_text: Dmitri Mendeleev
+    digest: |-
+      In the telegram to the opening of the Lobachevsky monument, geometry was associated with the independent development of science by Dmitry Mendeleev. In the mystery, he was named an honorary member of Kazan University.
+    links:
+      - title: On Lobachevsky
+        url: /publications/hm-e60565409494-en/
   - id: br-2025-12-27-q02-en
     source_id: br-2025-12-27-q02
     source_ids:
@@ -4623,7 +5123,7 @@ questions:
         No. If the smaller formations have side length b and the combined square has side length a, then a² = 2b². This has no positive integer solution.
     answer_text: |-
       No. If the smaller formations have side length b and the combined square has side length a, then a² = 2b². This has no positive integer solution.
-    digest: ''
+    digest: Combining two squares with side b requires a square with side b√2. With a non-zero b, this number is not an integer.
     links: []
   - id: br-2025-12-27-q03-en
     source_id: br-2025-12-27-q03
@@ -4654,9 +5154,12 @@ questions:
       Mitrofanushka in the comedy Nedorosl said that the door, arranged to its place, is an adjective name, and the door lying in the closet and not attached to the place, is a noun name. Many mathematical propositions have long been “nounceable” in the sense of Mitrofanushka: they existed, but found no application. But sooner or later every correct mathematical idea has found its application in this or that case.” So said the famous Russian mathematician, academician, founder of the Russian school of shipbuilding. Who is this mathematician?
     answer:
       accepted:
-        - Academician Alexei Nikolaevich Krylov (1863–1945)
-    answer_text: Academician Alexei Nikolaevich Krylov (1863–1945)
-    digest: ''
+        - Alexei Krylov
+        - Aleksey Krylov
+        - Krylov
+    answer_text: Alexei Krylov
+    digest: |-
+      The words “nouns” and “adjectives” illustrate how an abstract theory becomes practical over time. In the archive, the statement is attributed to Alexei Krylov.
     links: []
   - id: br-2026-01-17-q02-en
     source_id: br-2026-01-17-q02
@@ -4669,11 +5172,17 @@ questions:
     prompt: What shape will you get if the cube crosses a plane passing through its center perpendicular to the diagonal?
     answer:
       accepted:
-        - The right hexagon
-        - right hexagon
-    answer_text: The right hexagon
-    digest: ''
+        - A regular hexagon
+        - regular hexagon
+        - hexagon
+    answer_text: A regular hexagon
+    digest: |-
+      The central plane, perpendicular to the diagonal of the cube, crosses its six ribs in the middle. The resulting six sides and six corners are equal.
     links: []
+    author_note:
+      source_id: br-2026-01-17-comment-01
+      text: |-
+        If a cube is cut by a plane through its centre perpendicular to a body diagonal, the section is a regular hexagon. Its sides and angles are equal, and it passes through the midpoints of six edges. The perpendicular orientation of the plane makes this one of the most symmetric sections of a cube.
   - id: br-2026-01-17-q03-en
     source_id: br-2026-01-17-q03
     source_ids:
@@ -4702,8 +5211,9 @@ questions:
       In the second part of Don Quixote, Chapter XV, a character says a practitioner might put the fallen knight’s bones back into place. What job title in old Spanish also sounds like the name of someone who does algebra?
     answer:
       accepted:
-        - Algebrista
-    answer_text: Algebrista
+        - An algebraist
+        - algebraist
+    answer_text: An algebraist
     digest: In the passage it means a bonesetter.
     links: []
   - id: br-2026-01-24-q02-en
@@ -4711,7 +5221,7 @@ questions:
     source_ids:
       - br-2026-01-24-q02
     edition_source_id: br-2026-01-24-q02
-    topic: history
+    topic: logic
     difficulty: intermediate
     format: short_input
     prompt: |-
@@ -4724,9 +5234,19 @@ questions:
     answer:
       accepted:
         - All ten decimal digits
+        - 0–9
+        - 0 through 9
+        - 0 to 9
+        - all the digits
+        - digits from 0 to 9
+        - the digits 0 to 9
     answer_text: All ten decimal digits
-    digest: The figure contains strokes that can be combined into the digits 0 through 9.
+    digest: The diagram leaves separate segments, from which the digits are drawn, similar to the zip code numbers.
     links: []
+    author_explanation: The figure contains strokes that can be combined into the digits 0 through 9.
+    author_note:
+      source_id: br-2026-01-24-comment-01
+      text: The author arranged the strokes into ten digit shapes, like the numerals used for writing postal codes.
   - id: br-2026-01-24-q03-en
     source_id: br-2026-01-24-q03
     source_ids:
@@ -4741,6 +5261,8 @@ questions:
     answer:
       accepted:
         - Analytical geometry
+        - coordinate geometry
+        - Cartesian geometry
     answer_text: Analytical geometry
     digest: It connects algebra and geometry through coordinates.
     links: []
@@ -4757,8 +5279,11 @@ questions:
     answer:
       solution: King of Mathematicians by Karl Friedrich Gauss (1777–1855)
     answer_text: King of Mathematicians by Karl Friedrich Gauss (1777–1855)
-    digest: ''
-    links: []
+    digest: |-
+      Gauss corresponded about the possibility of non-Euclidean geometry. The expression “Boeotian cries” conveys his fear of being misunderstandingd.
+    links:
+      - title: Johann Carl Friedrich Gauss (1777–1855)
+        url: /publications/hm-0d1a666f8783-en/
   - id: br-2026-01-31-q03-en
     source_id: br-2026-01-31-q03
     source_ids:
@@ -4774,7 +5299,8 @@ questions:
         squares.
     answer_text: Yes, you can. For example, cut a square into four equal squares, then one of them into another four equal
       squares.
-    digest: ''
+    digest: The first division gives four equal squares. If one of the four is replaced by four smaller ones, we get 4 − 1
+      + 4 = 7.
     links: []
   - id: br-2026-02-07-q01-en
     source_id: br-2026-02-07-q01
@@ -4797,8 +5323,11 @@ questions:
           text: Four-dimensional ball
       correct: sphere4d
     answer_text: A unit 3-sphere in four-dimensional Euclidean space
-    digest: ''
-    links: []
+    digest: |-
+      The equation gives the points at distance 1 from the origin in ℝ⁴. This is the unit 3-sphere S³, whose intrinsic dimension is three.
+    links:
+      - title: 'Four-dimensional space: easy!'
+        url: /publications/hm-9837b12d266c-en/
   - id: br-2026-02-07-q02-en
     source_id: br-2026-02-07-q02
     source_ids:
@@ -4814,7 +5343,8 @@ questions:
         Lotophagus (Greek: "eating lotuses") In mythology, a people who lived on an island in North Africa and were ruled by a lotus tree. In a figurative sense, “lotophagus” refers to people seeking oblivion.
     answer_text: |-
       Lotophagus (Greek: "eating lotuses") In mythology, a people who lived on an island in North Africa and were ruled by a lotus tree. In a figurative sense, “lotophagus” refers to people seeking oblivion.
-    digest: ''
+    digest: |-
+      In the Odyssey, the Lotus-Eaters lived on a food that made visitors forget their wish to return home. The quoted comparison treats mathematics as similarly captivating.
     links: []
   - id: br-2026-02-07-q03-en
     source_id: br-2026-02-07-q03
@@ -4827,9 +5357,12 @@ questions:
     prompt: Reductio ad absurdum is the sharpest weapon of mathematics. What is this method called in school mathematics?
     answer:
       accepted:
-        - Proof of the contrary
-    answer_text: Proof of the contrary
-    digest: ''
+        - Proof by contradiction
+        - reductio ad absurdum
+        - indirect proof
+    answer_text: Proof by contradiction
+    digest: |-
+      The evidence to the contrary suggests the denial of the necessary assertion. If a contradiction is obtained from an assumption, this denial is rejected.
     links: []
   - id: br-2026-02-14-q01-en
     source_id: br-2026-02-14-q01
@@ -4844,7 +5377,8 @@ questions:
     answer:
       solution: No.
     answer_text: No.
-    digest: ''
+    digest: |-
+      If there was a woman in line, the first man would be standing in front of her. Under the condition, such a procedure is prohibited.
     links: []
   - id: br-2026-02-14-q02-en
     source_id: br-2026-02-14-q02
@@ -4861,7 +5395,8 @@ questions:
         Yes. Let: B is the total number of blondes, G is the total number of blue-eyed, HD is the number of blue-eyed blondes, H is the total number of people. By condition, the proportion of blondes among blue-eyed (BG/G) is greater than the proportion of blondes among the total population (B/N). To answer the question, we need to compare the proportion of blue-eyed blondes (BH/B) with the proportion of blue-eyed blondes in the general population (H/N). (BG/G) > (B/N). Multiply both parts by (G/B). (BG/G)(G/B) > (B/N)(G/B). So, (BG/B) > (G/N)
     answer_text: |-
       Yes. Let: B is the total number of blondes, G is the total number of blue-eyed, HD is the number of blue-eyed blondes, H is the total number of people. By condition, the proportion of blondes among blue-eyed (BG/G) is greater than the proportion of blondes among the total population (B/N). To answer the question, we need to compare the proportion of blue-eyed blondes (BH/B) with the proportion of blue-eyed blondes in the general population (H/N). (BG/G) > (B/N). Multiply both parts by (G/B). (BG/G)(G/B) > (B/N)(G/B). So, (BG/B) > (G/N)
-    digest: ''
+    digest: |-
+      Let B and G be the sizes of two groups, let C be their intersection, let N be the entire population. From C/G > B/N follows CN > BG, which means C/B > G/N.
     links: []
   - id: br-2026-02-14-q03-en
     source_id: br-2026-02-14-q03
@@ -4875,9 +5410,11 @@ questions:
       The Italian mathematician of the eighteenth century, in Le geometria del compasso (The Geometry of the Compasso, 1797), proved that any problem of construction solved with the help of a compass and a ruler is solvable only with the help of a compass. Can you tell me the name of this mathematician?
     answer:
       accepted:
-        - Lorenzo Mascheroni (1750–1800)
-    answer_text: Lorenzo Mascheroni (1750–1800)
-    digest: ''
+        - Lorenzo Mascheroni
+        - Mascheroni
+    answer_text: Lorenzo Mascheroni
+    digest: |-
+      The More-Mascheroni theorem states that points of classical constructions with a compass and a ruler can be obtained with a single compass. Building a straight line at the same time means building two of its points.
     links: []
   - id: br-2026-02-21-q01-en
     source_id: br-2026-02-21-q01
@@ -4894,7 +5431,8 @@ questions:
         Yes. Find out the number of different dance pairs. If we take the number of gentlemen as k, the number of pairs was 3k; if we take the number of ladies as m, the number of pairs was 3m. Since 3k = 3m, then k = m.
     answer_text: |-
       Yes. Find out the number of different dance pairs. If we take the number of gentlemen as k, the number of pairs was 3k; if we take the number of ladies as m, the number of pairs was 3m. Since 3k = 3m, then k = m.
-    digest: ''
+    digest: |-
+      The number of dance pairs can be counted as 3k for the cavaliers and 3d for the ladies. Because the pairs are the same, 3k = 3d.
     links: []
   - id: br-2026-02-21-q02-en
     source_id: br-2026-02-21-q02
@@ -4909,9 +5447,14 @@ questions:
     answer:
       accepted:
         - Gottfried Wilhelm Leibniz (1646–1716)
+        - Leibniz
+        - Gottfried Leibniz
     answer_text: Gottfried Wilhelm Leibniz (1646–1716)
-    digest: ''
-    links: []
+    digest: |-
+      Leibniz discussed with Peter I the organization of science and education in Russia. The St. Petersburg Academy was established later, after Leibniz's death.
+    links:
+      - title: Gottfried Wilhelm Leibniz
+        url: /publications/hm-b28e6968ce51-en/
   - id: br-2026-02-21-q03-en
     source_id: br-2026-02-21-q03
     source_ids:
@@ -4924,7 +5467,8 @@ questions:
     answer:
       solution: No. 528 = 2 × 2 × 2 × 2 × 3 × 11. 528 is divided by 11, there is no such number in the decimal system.
     answer_text: No. 528 = 2 × 2 × 2 × 2 × 3 × 11. 528 is divided by 11, there is no such number in the decimal system.
-    digest: ''
+    digest: |-
+      528 contains a simple multiplier 11. No non-zero decimal digit is divided by 11, so the product of such digits is also not divided by 11.
     links: []
   - id: br-2026-02-28-q01-en
     source_id: br-2026-02-28-q01
@@ -4941,7 +5485,8 @@ questions:
         No. The arithmetic mean lies between the minimum and the maximum values. Therefore, if the values are not all equal, then there will be at least one below the average. And if they are all the same, then each is equal to the average, but not above it. Therefore, the slogan is impossible to fulfill by the definition of the average.
     answer_text: |-
       No. The arithmetic mean lies between the minimum and the maximum values. Therefore, if the values are not all equal, then there will be at least one below the average. And if they are all the same, then each is equal to the average, but not above it. Therefore, the slogan is impossible to fulfill by the definition of the average.
-    digest: ''
+    digest: |-
+      The average is always between minimum and maximum. Therefore, a student with a minimum result cannot have a result strictly above the average.
     links: []
   - id: br-2026-02-28-q03-en
     source_id: br-2026-02-28-q03
@@ -4957,24 +5502,11 @@ questions:
       accepted:
         - The continuum problem
         - continuum problem
+        - the continuum hypothesis
+        - continuum hypothesis
     answer_text: The continuum problem
     digest: |-
       In set theory, the question arose, is there not an “intermediate” set that has more elements than the set of natural numbers and less than the set of points in a straight line? This question is called the continuum problem. The continuum hypothesis was the first of twenty-three mathematical problems reported by Hilbert at the International Congress of Mathematicians in Paris in 1900. The continuum hypothesis is also known as Hilbert’s first problem. In the 1930s and 1960s, Kurt Gödel and Paul Cohen independently proved that the continuum hypothesis and its negation cannot be proved or disproved in the standard system of set theory axioms (Zermelo-Frenkel with the axiom of choice). This means that the continuum hypothesis is independent of these axioms. That is, you can build a mathematical system in which the hypothesis is true, or another in which it is false.
-    links: []
-  - id: br-2026-03-07-q01-en
-    source_id: br-2026-03-07-q01
-    source_ids:
-      - br-2026-03-07-q01
-    edition_source_id: br-2026-03-07-q01
-    topic: history
-    difficulty: beginner
-    format: short_input
-    prompt: 'Which of these mathematicians was not a doctor: Omar Khayyam, Jerolamo Cardano, Abu ibn Sina, François Viet?'
-    answer:
-      accepted:
-        - François Viet
-    answer_text: François Viet
-    digest: ''
     links: []
   - id: br-2026-03-07-q02-en
     source_id: br-2026-03-07-q02
@@ -4989,7 +5521,8 @@ questions:
     answer:
       solution: The professor is a woman. The first speaker is her brother and the second is the father of her son.
     answer_text: The professor is a woman. The first speaker is her brother and the second is the father of her son.
-    digest: ''
+    digest: |-
+      With the supposed kinship in the mystery, the professor is a woman. Her brother and her son's father talk to each other, so she doesn't participate in the conversation herself.
     links: []
   - id: br-2026-03-07-q03-en
     source_id: br-2026-03-07-q03
@@ -5006,7 +5539,8 @@ questions:
         Any number from 100 to 109 is suitable. Solution. The difference between the number and the sum of its numbers is divided by 9. So all the numbers we got were divisible by 9 (except maybe the original). Let's go from the end. In principle, zero is obtained from any single natural number after subtracting the sum of the digits from it. Of these, only 9 are divided into 9. So in the penultimate step, we had the number 9. But 9 can be obtained only from one number divisible by 9, from 18. And so on until we get to the number 81. Here the path is bifurcated - 81 can be obtained from both 90 and 99. Let's take the last step back (now divisibility by 9 is no longer important to us!) - 90 of any number can not be obtained, and for 99 there are as many as 10 possible predecessors: 100, 101, 102, ..., 109. Example of a computing chain: 0 < 9 < 18 < 27 < 36 < 45 < 54 < 63 < 72 < 81 < 99 < 100
     answer_text: |-
       Any number from 100 to 109 is suitable. Solution. The difference between the number and the sum of its numbers is divided by 9. So all the numbers we got were divisible by 9 (except maybe the original). Let's go from the end. In principle, zero is obtained from any single natural number after subtracting the sum of the digits from it. Of these, only 9 are divided into 9. So in the penultimate step, we had the number 9. But 9 can be obtained only from one number divisible by 9, from 18. And so on until we get to the number 81. Here the path is bifurcated - 81 can be obtained from both 90 and 99. Let's take the last step back (now divisibility by 9 is no longer important to us!) - 90 of any number can not be obtained, and for 99 there are as many as 10 possible predecessors: 100, 101, 102, ..., 109. Example of a computing chain: 0 < 9 < 18 < 27 < 36 < 45 < 54 < 63 < 72 < 81 < 99 < 100
-    digest: ''
+    digest: |-
+      A number and the sum of its digits have the same remainder modulo 9. Their difference is always a multiple of 9, so only the interval between the relevant consecutive multiples can lead to the stated result.
     links: []
   - id: br-2026-03-14-q01-en
     source_id: br-2026-03-14-q01
@@ -5021,8 +5555,10 @@ questions:
     answer:
       accepted:
         - Omar Khayyam
+        - Khayyam
     answer_text: Omar Khayyam
-    digest: ''
+    digest: Viet and Fermat practiced law, and Leibniz earned a degree in law. Omar Khayyam is known as a mathematician and
+      astronomer.
     links: []
   - id: br-2026-03-14-q03-en
     source_id: br-2026-03-14-q03
@@ -5053,9 +5589,13 @@ questions:
     answer:
       accepted:
         - Gottfried Wilhelm Leibniz (1646–1716)
+        - Leibniz
+        - Gottfried Leibniz
     answer_text: Gottfried Wilhelm Leibniz (1646–1716)
-    digest: ''
-    links: []
+    digest: Leibniz described a binary system and developed a mechanical counting machine known as a step calculator.
+    links:
+      - title: Gottfried Wilhelm Leibniz
+        url: /publications/hm-b28e6968ce51-en/
   - id: br-2026-03-21-q02-en
     source_id: br-2026-03-21-q02
     source_ids:
@@ -5070,7 +5610,8 @@ questions:
         On short and long stretches of dots equally! In other words, it is always possible to establish mutually unambiguous correspondence between the points of these segments. It's all about how equality is defined for infinite sets.
     answer_text: |-
       On short and long stretches of dots equally! In other words, it is always possible to establish mutually unambiguous correspondence between the points of these segments. It's all about how equality is defined for infinite sets.
-    digest: ''
+    digest: |-
+      Scale every point's distance from one end of the shorter segment by 1000. This pairs each point of the 1 mm segment with exactly one point of the 1 m segment.
     links: []
   - id: br-2026-03-21-q03-en
     source_id: br-2026-03-21-q03
@@ -5099,6 +5640,10 @@ questions:
     answer_text: The nude figure on the right represented pure mathematics
     digest: The clothed figure on the left represented applied mathematics.
     links: []
+    author_note:
+      source_id: br-2026-03-21-comment-01
+      text: |-
+        Titian, a leading painter of the Venetian High Renaissance, painted Sacred and Profane Love (Amor sacro e Amor profano). The picture belongs to the tradition of Giovanni Bellini and Giorgione. Many painters took up the subject, and the author singles out Titian’s treatment.
   - id: br-2026-03-28-q01-en
     source_id: br-2026-03-28-q01
     source_ids:
@@ -5111,10 +5656,14 @@ questions:
       Whether he was in Switzerland, Germany or Russia, he was the leading mathematician of the eighteenth century. Call this mathematician.
     answer:
       accepted:
-        - Leonard Euler (1707–1783)
-    answer_text: Leonard Euler (1707–1783)
-    digest: ''
-    links: []
+        - Leonhard Euler
+        - Euler
+    answer_text: Leonhard Euler
+    digest: Leonard Euler was born in Basel, worked in Berlin and lived in St. Petersburg twice. These places correspond to
+      three clues.
+    links:
+      - title: Leonhard Euler and a ship’s mast
+        url: /publications/hm-6e2dbfd028d1-en/
   - id: br-2026-03-28-q02-en
     source_id: br-2026-03-28-q02
     source_ids:
@@ -5128,7 +5677,8 @@ questions:
     answer:
       solution: “It can’t be because it can never be.”
     answer_text: “It can’t be because it can never be.”
-    digest: ''
+    digest: |-
+      "Never" completes the phrase of Chekhov's hero. The comic is that instead of an argument, it is a repetition of the statement itself.
     links: []
   - id: br-2026-03-28-q03-en
     source_id: br-2026-03-28-q03
@@ -5142,10 +5692,17 @@ questions:
       In the Siddhānta Shiromaṇi, the Indian mathematician Bhāskara II gave a diagram connected with a proof of the Pythagorean theorem. What single word is said to have accompanied the diagram?
     answer:
       accepted:
-        - “Look!” Also rendered “Behold!”
-    answer_text: “Look!” Also rendered “Behold!”
-    digest: ''
-    links: []
+        - Look!
+        - Look
+        - Behold!
+        - Behold
+        - See!
+    answer_text: Look!
+    digest: |-
+      The diagram shows how equal right triangles can be removed from two area counts, leaving the equality of the areas of the squares. The single word invites the reader to see the proof in the drawing.
+    links:
+      - title: 'Pythagorean Geometry: The Pythagorean Theorem'
+        url: /publications/hm-tt-1a77a094393e-en/
   - id: br-2026-04-04-q01-en
     source_id: br-2026-04-04-q01
     source_ids:
@@ -5162,7 +5719,9 @@ questions:
     answer_text: Peter
     digest: |-
       Can there be four fishermen? If so, then the sum of the last digits 2 + 3 + 3 + 4 = 12 ends with 2. But there is no square of a natural number that ends in 2. This means that we are not talking about four, but only about three fishermen, that is, the son of one of the lovers of fishing is the father of the other. Nicholas cannot be Peter's son, since Nicholas' catch ends in 2, not 4, as the condition of the task requires. This task even has its own name – “Task from Bulgaria”, we wrote about it in one of the posts previously https://t.me/history_math/804.
-    links: []
+    links:
+      - title: A problem from Bulgaria
+        url: /publications/hm-1bb23960e5f9-en/
   - id: br-2026-04-04-q02-en
     source_id: br-2026-04-04-q02
     source_ids:
@@ -5175,10 +5734,14 @@ questions:
       For three years (from 1871 to 1874), this mathematician sought proof that a mutually unambiguous correspondence between the points of a segment and the points of a square is impossible. And all of a sudden, he managed to build such a match! At first he did not believe it himself, and even wrote to the mathematician Dedekind: "I see it, but I do not believe it." But still had to come to terms with the fact that his intuition failed him - there were exactly the same number of points in the square as in the segment. Who's this mathematician?
     answer:
       accepted:
-        - Georg Cantor (1845–1918), creator of set theory
-    answer_text: Georg Cantor (1845–1918), creator of set theory
-    digest: ''
-    links: []
+        - Georg Cantor
+        - Cantor
+    answer_text: Georg Cantor
+    digest: |-
+      Mutually unambiguous correspondence shows the equal power of the points of the segment and the square. It does not have to maintain distance or continuity.
+    links:
+      - title: Georg Ferdinand Ludwig Philipp Cantor (1845–1918)
+        url: /publications/hm-c7c23708125b-en/
   - id: br-2026-04-04-q03-en
     source_id: br-2026-04-04-q03
     source_ids:
@@ -5191,10 +5754,15 @@ questions:
       It is generally believed that this remarkable invention was made in India fifteen hundred years ago. Although the introduction of its designation proved extremely useful for mathematics, some scientists initially met this innovation with hostility. And they said, “What is wrong with what is wrong?” The question is, what kind of invention are we talking about?
     answer:
       accepted:
-        - Inventing Zero
-    answer_text: Inventing Zero
-    digest: ''
-    links: []
+        - Zero
+        - '0'
+        - the invention of zero
+    answer_text: Zero
+    digest: |-
+      The zero in the position record marks the missing bit: for example, 105 and 15 denote different numbers. In Indian mathematics, zero is also considered a number.
+    links:
+      - title: Brahmagupta and Zero as a Number
+        url: /publications/hm-b180bf420e64-en/
   - id: br-2026-04-11-q01-en
     source_id: br-2026-04-11-q01
     source_ids:
@@ -5208,7 +5776,8 @@ questions:
     answer:
       solution: You can’t answer the question of the problem – not enough raw data
     answer_text: You can’t answer the question of the problem – not enough raw data
-    digest: ''
+    digest: |-
+      Of the two comparisons, it is only known that the red ball is heavier than both. Blue and brown can weigh in any order or the same way.
     links: []
   - id: br-2026-04-11-q02-en
     source_id: br-2026-04-11-q02
@@ -5225,7 +5794,8 @@ questions:
         There are 10 mathematicians and 100 times more philosophers than people who are both mathematicians and philosophers. There are 10 times more philosophers than mathematicians.
     answer_text: |-
       There are 10 mathematicians and 100 times more philosophers than people who are both mathematicians and philosophers. There are 10 times more philosophers than mathematicians.
-    digest: ''
+    digest: |-
+      Let n people belong to both groups. There are 10n mathematicians and 100n philosophers. There are ten times as many philosophers.
     links: []
   - id: br-2026-04-11-q03-en
     source_id: br-2026-04-11-q03
@@ -5240,7 +5810,7 @@ questions:
     answer:
       solution: 7:30 a.m.
     answer_text: 7:30 a.m.
-    digest: ''
+    digest: Let t be the number of hours after midnight. Then (2/5)t = (2/3)(12 − t), giving t = 7.5, or 7:30 a.m.
     links: []
   - id: br-2026-04-18-q01-en
     source_id: br-2026-04-18-q01
@@ -5255,6 +5825,8 @@ questions:
     answer:
       accepted:
         - Sukharev Tower
+        - the Sukharev Tower
+        - the Sukhareva Tower
     answer_text: Sukharev Tower
     digest: |-
       Historical reference: the tower stood on Sukharevskaya Square and was dismantled in the thirties of the twentieth century. The day of the establishment of the school is celebrated as the day of the navigator of the Russian Navy and the day of the formation of the Engineering troops of Russia.
@@ -5271,7 +5843,8 @@ questions:
     answer:
       solution: That's what they called the way a ship traveled at normal speed while a pipe full of tobacco was smoking.
     answer_text: That's what they called the way a ship traveled at normal speed while a pipe full of tobacco was smoking.
-    digest: ''
+    digest: |-
+      The path serves as a measure of time at approximately constant speed: the speed is multiplied by the time it takes to smoke a pipe.
     links: []
   - id: br-2026-04-18-q03-en
     source_id: br-2026-04-18-q03
@@ -5288,7 +5861,8 @@ questions:
         The name of the measure “well” is explained by the fact that such a site was watered from a common well. It is possible that from one well it was possible to water a plot equal to 18 fields.
     answer_text: |-
       The name of the measure “well” is explained by the fact that such a site was watered from a common well. It is possible that from one well it was possible to water a plot equal to 18 fields.
-    digest: ''
+    digest: |-
+      This measure connects the area with a plot that can be irrigated from one well. According to the problem, it is 18 fields, or 1800 beds.
     links: []
   - id: br-2026-04-25-q01-en
     source_id: br-2026-04-25-q01
@@ -5303,21 +5877,8 @@ questions:
     answer:
       solution: In many countries, the role of the means of payment was played by livestock.
     answer_text: In many countries, the role of the means of payment was played by livestock.
-    digest: ''
-    links: []
-  - id: br-2026-04-25-q02-en
-    source_id: br-2026-04-25-q02
-    source_ids:
-      - br-2026-04-25-q02
-    edition_source_id: br-2026-04-25-q02
-    topic: geometry
-    difficulty: intermediate
-    format: self_check
-    prompt: Can four countries, each shaped like a triangle, be arranged so every pair of countries shares a border segment?
-    answer:
-      solution: Yes. The diagram in the original answer shows four triangles arranged so that every pair shares a line segment.
-    answer_text: Yes. The diagram in the original answer shows four triangles arranged so that every pair shares a line segment.
-    digest: ''
+    digest: |-
+      The Latin words pecus (“cattle”) and pecunia (“money, property”) are related. Cattle could serve as a measure of wealth and a means of calculation.
     links: []
   - id: br-2026-04-25-q03-en
     source_id: br-2026-04-25-q03
@@ -5333,7 +5894,8 @@ questions:
       accepted:
         - 2 and 6
     answer_text: 2 and 6
-    digest: ''
+    digest: After the numbers 2 and 6 are exchanged, the record becomes 746582 + 869430 = 1616012. Direct addition confirms
+      equality.
     links: []
   - id: br-2026-05-02-q01-en
     source_id: br-2026-05-02-q01
@@ -5350,7 +5912,8 @@ questions:
         It'll be cheaper to work before the meeting. In this case, a fast mole will dig half the tunnel and some more. If a fast mole stops at half of the tunnel, it will be dug by a slow mole, it will have to be fed for longer.
     answer_text: |-
       It'll be cheaper to work before the meeting. In this case, a fast mole will dig half the tunnel and some more. If a fast mole stops at half of the tunnel, it will be dug by a slow mole, it will have to be fed for longer.
-    digest: ''
+    digest: |-
+      Digging together up to the meeting point takes fewer paid digging hours than having only the slower worker complete the remainder. Count the combined rates up to the point where the shafts meet.
     links: []
   - id: br-2026-05-02-q02-en
     source_id: br-2026-05-02-q02
@@ -5365,7 +5928,8 @@ questions:
     answer:
       solution: Yes, they do. For example, 2100010006
     answer_text: Yes, they do. For example, 2100010006
-    digest: ''
+    digest: |-
+      In the number of 2100010006, one deuce, two units, one six and six zeros. There are no other figures, which shows the relevant positions.
     links: []
   - id: br-2026-05-02-q03-en
     source_id: br-2026-05-02-q03
@@ -5380,9 +5944,14 @@ questions:
       accepted:
         - A regular octahedron
         - regular octahedron
+        - octahedron
     answer_text: A regular octahedron
-    digest: ''
+    digest: The six face centres become the vertices of an octahedron. Each centre is joined to the centres of four adjacent
+      faces.
     links: []
+    author_note:
+      source_id: br-2026-05-02-comment-01
+      text: Joining the centres of the faces of a cube gives an octahedron, a regular polyhedron.
   - id: br-2026-05-09-q01-en
     source_id: br-2026-05-09-q01
     source_ids:
@@ -5428,10 +5997,19 @@ questions:
     prompt: |-
       In 1859, one of the famous mathematicians of the XIX century came up with the puzzle "Ikosian" ("Round the world journey"). In it, you need to lay a closed route along the "map" so that you go through all the marked points exactly once and return to the original. What is the name of this mathematician, and what is the name of such a "map" in mathematics?
     answer:
-      solution: William Rowan Hamilton (1805–1865); Hamiltonian Earl (Icosian Earl)
-    answer_text: William Rowan Hamilton (1805–1865); Hamiltonian Earl (Icosian Earl)
-    digest: ''
-    links: []
+      solution: |-
+        William Rowan Hamilton. The vertices and edges of the dodecahedron form the dodecahedral graph, on which the player seeks a Hamiltonian cycle.
+    answer_text: |-
+      William Rowan Hamilton. The vertices and edges of the dodecahedron form the dodecahedral graph, on which the player seeks a Hamiltonian cycle.
+    digest: |-
+      The Icosian Game asks for a route along the edges of a dodecahedron that visits each vertex exactly once and returns to the start. This is a Hamiltonian cycle.
+    links:
+      - title: 'The Knight''s Tour: A Puzzle That Leapt Across the Centuries'
+        url: /publications/hm-tt-ed8bad53e76b-en/
+    author_note:
+      source_id: br-2026-05-09-comment-01
+      text: |-
+        In the Icosian Game (1859), the aim is to move from vertex to adjacent vertex on a dodecahedron, visiting each vertex exactly once before returning to the starting point. This route forms a Hamiltonian cycle.
   - id: br-2026-05-16-q01-en
     source_id: br-2026-05-16-q01
     source_ids:
@@ -5447,8 +6025,11 @@ questions:
         Liber abaci, "The Book of the Abaca." It was through her that the new numbers and methods of the account became known in Europe.
     answer_text: |-
       Liber abaci, "The Book of the Abaca." It was through her that the new numbers and methods of the account became known in Europe.
-    digest: ''
-    links: []
+    digest: |-
+      Fibonacci's Liber abaci helped introduce Hindu–Arabic numerals and methods for calculating with them to a wider European audience.
+    links:
+      - title: Leonardo of Pisa (Fibonacci) (c. 1170–after 1240)
+        url: /publications/hm-bd8ef09b0bae-en/
   - id: br-2026-05-16-q02-en
     source_id: br-2026-05-16-q02
     source_ids:
@@ -5493,9 +6074,16 @@ questions:
     answer:
       accepted:
         - Bhāskara II
+        - Bhaskara II
+        - Bhaskara 2
+        - Bhāskara
+        - Bhaskara
+        - Bhaskaracharya
     answer_text: Bhāskara II
     digest: His mathematical texts were indeed written in verse form.
-    links: []
+    links:
+      - title: 'Bhaskara II’s Algebra in Verse: Learning Mathematical Rules by Heart'
+        url: /publications/hm-tt-520b5a1dc03d-en/
   - id: br-2026-05-23-q02-en
     source_id: br-2026-05-23-q02
     source_ids:
@@ -5541,6 +6129,8 @@ questions:
     answer:
       accepted:
         - House of wisdom
+        - the House of Wisdom
+        - Bayt al-Hikma
     answer_text: House of wisdom
     digest: This is one of the main symbols of the scientific rise of Baghdad.
     links: []
@@ -5590,8 +6180,11 @@ questions:
         - John Napier
         - Napier
     answer_text: John Napier
-    digest: ''
-    links: []
+    digest: |-
+      John Napier published his description of logarithms in 1614. Logarithms let users turn multiplications into additions of tabulated values.
+    links:
+      - title: 'Logarithm Tables: Their Evolution'
+        url: /publications/hm-tt-5cbde4c21638-en/
   - id: br-2026-06-06-q02-en
     source_id: br-2026-06-06-q02
     source_ids:
@@ -5606,8 +6199,10 @@ questions:
         - Henry Briggs
         - Briggs
     answer_text: Henry Briggs
-    digest: ''
-    links: []
+    digest: Henry Briggs helped make common logarithms, with base ten, practical to use by computing tables.
+    links:
+      - title: 'Logarithm Tables: Their Evolution'
+        url: /publications/hm-tt-5cbde4c21638-en/
   - id: br-2026-06-06-q03-en
     source_id: br-2026-06-06-q03
     source_ids:
@@ -5651,7 +6246,7 @@ questions:
     answer:
       solution: If x/6 = 20, then x = 120.
     answer_text: If x/6 = 20, then x = 120.
-    digest: ''
+    digest: Half of a third is one sixth. If x/6 = 20, then x = 120.
     links: []
   - id: br-2026-06-13-q03-en
     source_id: br-2026-06-13-q03
@@ -5681,11 +6276,18 @@ questions:
       Long before Pascal, a triangular table of binomial coefficients was already known in China. In European and Chinese traditions, it has different names. Bring any of them in.
     answer:
       accepted:
-        - The Pascal Triangle, or Yang Hui Triangle
-        - Pascal Triangle, or Yang Hui Triangle
-    answer_text: The Pascal Triangle, or Yang Hui Triangle
+        - Pascal's triangle
+        - Pascal’s triangle
+        - Yang Hui's triangle
+        - Yang Hui’s triangle
+        - Pascal triangle
+        - Yang Hui triangle
+        - arithmetic triangle
+    answer_text: Pascal's triangle
     digest: In different traditions, it has different historical names.
-    links: []
+    links:
+      - title: Another use for Pascal’s triangle
+        url: /publications/hm-f483b6674a23-en/
   - id: br-2026-06-20-q02-en
     source_id: br-2026-06-20-q02
     source_ids:
@@ -5728,9 +6330,11 @@ questions:
     prompt: This famous surface has only one side and one edge. What's that surface?
     answer:
       accepted:
-        - The Möbius leaf
-        - Möbius leaf
-    answer_text: The Möbius leaf
+        - Möbius strip
+        - Mobius strip
+        - Moebius strip
+        - Möbius band
+    answer_text: Möbius strip
     digest: If you walk on such a surface, you can “bypass” both sides without crossing the edge.
     links: []
   - id: br-2026-06-27-q02-en
@@ -5744,8 +6348,11 @@ questions:
     prompt: In graph theory, there is a path that runs along each rib exactly once. What's the term they call it?
     answer:
       accepted:
-        - Eiler's way
-    answer_text: Eiler's way
+        - Eulerian trail
+        - Eulerian path
+        - Euler path
+        - Euler trail
+    answer_text: Eulerian trail
     digest: It is named after Euler after solving the bridge problem.
     links: []
   - id: br-2026-06-27-q03-en
@@ -5775,9 +6382,11 @@ questions:
       The usual walking problem of bridges unexpectedly marked the beginning of a new field of mathematics. What is the name of this eighteenth-century task?
     answer:
       accepted:
-        - The problem of Königsberg bridges
-        - problem of Königsberg bridges
-    answer_text: The problem of Königsberg bridges
+        - The Seven Bridges of Königsberg
+        - Seven Bridges of Königsberg
+        - Seven Bridges of Konigsberg
+        - Königsberg bridge problem
+    answer_text: The Seven Bridges of Königsberg
     digest: Euler’s decision was an important step towards graph theory.
     links: []
   - id: br-2026-07-04-q02-en
@@ -5792,8 +6401,9 @@ questions:
       Almost simultaneously with Mobius, the properties of one-way tape were studied by the German mathematician Johann Benedict. Give me his last name.
     answer:
       accepted:
+        - Johann Benedict Listing
         - Listing
-    answer_text: Listing
+    answer_text: Johann Benedict Listing
     digest: He also worked on this amazing surface.
     links: []
   - id: br-2026-07-04-q03-en
@@ -5873,9 +6483,13 @@ questions:
       accepted:
         - The Cauchy-Kovalevskaya theorem
         - Cauchy-Kovalevskaya theorem
+        - Cauchy–Kovalevskaya theorem
+        - Cauchy–Kowalevski theorem
     answer_text: The Cauchy-Kovalevskaya theorem
     digest: This is one of her most famous contributions.
-    links: []
+    links:
+      - title: Sofya Vasilyevna Kovalevskaya (1850–1891)
+        url: /publications/hm-2a80036b1d7a-en/
   - id: br-2026-07-18-q02-en
     source_id: br-2026-07-18-q02
     source_ids:
@@ -5954,6 +6568,8 @@ questions:
     answer:
       accepted:
         - π
+        - pi
+        - the number pi
     answer_text: π
     digest: Euler then fixed this symbol in science.
     links: []
@@ -5986,7 +6602,8 @@ questions:
         Palindromes of the form aba are divided by 9 when the sum of the digits 2a + b is a multiple of 9; the smallest such three-digit is 171.
     answer_text: |-
       Palindromes of the form aba are divided by 9 when the sum of the digits 2a + b is a multiple of 9; the smallest such three-digit is 171.
-    digest: ''
+    digest: |-
+      A palindrome of the form aba is divisible by 9 when 2a + b is a multiple of 9. With a = 1, the first possible middle digit is 7, giving 171.
     links: []
   - id: br-2026-08-08-q01-en
     source_id: br-2026-08-08-q01
@@ -6001,9 +6618,13 @@ questions:
     answer:
       accepted:
         - Nikolai Lobachevsky
+        - Lobachevsky
+        - Lobachevskii
     answer_text: Nikolai Lobachevsky
     digest: He built one of the first non-Euclidean geometries.
-    links: []
+    links:
+      - title: Nikolai Ivanovich Lobachevsky (1792–1856)
+        url: /publications/hm-61e65fc9e6af-en/
   - id: br-2026-08-08-q02-en
     source_id: br-2026-08-08-q02
     source_ids:
@@ -6031,7 +6652,7 @@ questions:
     answer:
       solution: No. The sum of the angles of the quadrangle is 360°, so the fourth angle will also be straight.
     answer_text: No. The sum of the angles of the quadrangle is 360°, so the fourth angle will also be straight.
-    digest: ''
+    digest: Three straight angles give 270 degrees. Of the sum of 360° on the fourth corner remains 90°.
     links: []
   - id: br-2026-08-15-q01-en
     source_id: br-2026-08-15-q01
@@ -6049,8 +6670,11 @@ questions:
         - George Boole
         - Boole
     answer_text: George Boole
-    digest: ''
-    links: []
+    digest: Boole used algebraic operations to represent logical relationships. Those ideas underlie Boolean algebra and logic
+      circuits.
+    links:
+      - title: George Boole and Sunday Sin
+        url: /publications/hm-bfaf5e7e84a6-en/
   - id: br-2026-08-15-q02-en
     source_id: br-2026-08-15-q02
     source_ids:
@@ -6095,9 +6719,13 @@ questions:
     answer:
       accepted:
         - Alan Turing
+        - Turing
+        - Alan Mathison Turing
     answer_text: Alan Turing
     digest: He played an important role in British cryptanalytic work.
-    links: []
+    links:
+      - title: Alan Turing and the Question of Thinking Machines
+        url: /publications/hm-5ac2d5a436fc-en/
   - id: br-2026-08-22-q02-en
     source_id: br-2026-08-22-q02
     source_ids:
@@ -6172,9 +6800,13 @@ questions:
     answer:
       accepted:
         - YBC 7289
+        - YBC7289
+        - tablet YBC 7289
     answer_text: YBC 7289
     digest: It contains a very accurate for antiquity approximation √2.
-    links: []
+    links:
+      - title: 'YBC 7289: How the Babylonians Calculated √2 with Remarkable Accuracy'
+        url: /publications/hm-tt-9bca9e95f00b-en/
   - id: br-2026-09-05-q01-en
     source_id: br-2026-09-05-q01
     source_ids:
@@ -6187,10 +6819,15 @@ questions:
       One of the main written sources of mathematics in ancient Egypt is the papyrus, rewritten by the scribe Ahmes. What's it called?
     answer:
       accepted:
-        - Rinda's papyrus
-    answer_text: Rinda's papyrus
+        - The Rhind Mathematical Papyrus
+        - Rhind Papyrus
+        - Rhind Mathematical Papyrus
+        - Ahmes Papyrus
+    answer_text: The Rhind Mathematical Papyrus
     digest: This is one of the main sources of mathematics in ancient Egypt.
-    links: []
+    links:
+      - title: The Mathematics of Ancient Egypt
+        url: /publications/hm-tt-63702bd7e0b1-en/
   - id: br-2026-09-05-q02-en
     source_id: br-2026-09-05-q02
     source_ids:
@@ -6202,11 +6839,15 @@ questions:
     prompt: This puzzle with disks and rods entered the history of entertaining mathematics. Who is considered its author?
     answer:
       accepted:
-        - Luke's Edouard
-    answer_text: Luke's Edouard
+        - Édouard Lucas
+        - Edouard Lucas
+        - Lucas
+    answer_text: Édouard Lucas
     digest: We are talking about the puzzle of the Towers of Hanoi. He introduced it to mathematical culture as an entertaining
       problem.
-    links: []
+    links:
+      - title: The Jealous Husbands River-Crossing Puzzle
+        url: /publications/hm-tt-f11d5b6e86c8-en/
   - id: br-2026-09-05-q03-en
     source_id: br-2026-09-05-q03
     source_ids:
@@ -6222,7 +6863,9 @@ questions:
         - Tetrahedron
     answer_text: Tetrahedron
     digest: In the plane, this cannot be done, and in space you get a pyramid of 4 triangles.
-    links: []
+    links:
+      - title: A Spatial Generalization of the Pythagorean Theorem
+        url: /publications/hm-tt-bca7aa61fddc-en/
   - id: br-2026-09-12-q01-en
     source_id: br-2026-09-12-q01
     source_ids:
@@ -6295,7 +6938,9 @@ questions:
         - '6'
     answer_text: '6'
     digest: Its own divisors are 1, 2 and 3, and their sum is 6.
-    links: []
+    links:
+      - title: 'Pythagorean Arithmetic: Perfect Numbers'
+        url: /publications/hm-56520386b771-en/
   - id: br-2026-09-19-q02-en
     source_id: br-2026-09-19-q02
     source_ids:
@@ -6309,9 +6954,12 @@ questions:
     answer:
       accepted:
         - Euclid
+        - Euclid of Alexandria
     answer_text: Euclid
     digest: His proof is one of the classic examples of mathematical rigor.
-    links: []
+    links:
+      - title: Euclid of Alexandria (c. 340–287 BCE)
+        url: /publications/hm-1968b4484b64-en/
   - id: br-2026-09-19-q03-en
     source_id: br-2026-09-19-q03
     source_ids:
@@ -6338,10 +6986,15 @@ questions:
     prompt: For almost two thousand years, this book was the main textbook of geometry. What's it called?
     answer:
       accepted:
-        - Beginnings
-    answer_text: Beginnings
+        - Elements
+        - The Elements
+        - Euclid's Elements
+        - Euclid’s Elements
+    answer_text: Elements
     digest: It is one of the most influential mathematical books in history.
-    links: []
+    links:
+      - title: Euclid of Alexandria (c. 340–287 BCE)
+        url: /publications/hm-1968b4484b64-en/
   - id: br-2026-09-26-q02-en
     source_id: br-2026-09-26-q02
     source_ids:
@@ -6357,7 +7010,9 @@ questions:
         - Brahmagupta
     answer_text: Brahmagupta
     digest: He formulated the early rules of zero-and-debt-asset computation.
-    links: []
+    links:
+      - title: Brahmagupta and Zero as a Number
+        url: /publications/hm-b180bf420e64-en/
   - id: br-2026-09-26-q03-en
     source_id: br-2026-09-26-q03
     source_ids:
@@ -6392,9 +7047,14 @@ questions:
     answer:
       accepted:
         - Euclid's algorithm
+        - Euclid’s algorithm
+        - Euclidean algorithm
+        - the Euclidean algorithm
     answer_text: Euclid's algorithm
     digest: It is based on a sequential division with the remainder.
-    links: []
+    links:
+      - title: Euclid of Alexandria (c. 340–287 BCE)
+        url: /publications/hm-1968b4484b64-en/
   - id: br-2026-10-03-q02-en
     source_id: br-2026-10-03-q02
     source_ids:
@@ -6436,8 +7096,9 @@ questions:
     prompt: This word goes back to the Latin word, which meant a small pebble for counting. What's that word?
     answer:
       accepted:
-        - Calculus is Calculus
-    answer_text: Calculus is Calculus
+        - Calculus
+        - infinitesimal calculus
+    answer_text: Calculus
     digest: Initially, it was a small stone for calculations.
     links: []
   - id: br-2026-10-10-q02-en
@@ -6484,7 +7145,7 @@ questions:
     answer:
       solution: No. Odd + odd = even, and even + odd = odd.
     answer_text: No. Odd + odd = even, and even + odd = odd.
-    digest: ''
+    digest: Two odd numbers add up to an even number. If you add a third odd number, the result will be odd again.
     links: []
   - id: br-2026-10-17-q03-en
     source_id: br-2026-10-17-q03
@@ -6529,7 +7190,7 @@ questions:
     answer:
       solution: In the numbers 1–99 zeros 9, in the numbers 100–999 another 180, and in the number 1000 another 3.
     answer_text: In the numbers 1–99 zeros 9, in the numbers 100–999 another 180, and in the number 1000 another 3.
-    digest: ''
+    digest: The numbers 1–99 contain 9 zeroes, the numbers 100–999 add 180, and 1000 adds 3. The total is 192.
     links: []
   - id: br-2026-10-24-q03-en
     source_id: br-2026-10-24-q03
@@ -6560,9 +7221,12 @@ questions:
     answer:
       accepted:
         - Goldbach's hypothesis
+        - Goldbach’s hypothesis
     answer_text: Goldbach's hypothesis
     digest: It has not yet been fully proven.
-    links: []
+    links:
+      - title: 'Prime Numbers: A History Across the Centuries'
+        url: /publications/hm-tt-1c23e0d766d2-en/
   - id: br-2026-10-31-q02-en
     source_id: br-2026-10-31-q02
     source_ids:
@@ -6607,7 +7271,9 @@ questions:
         - Perfect numbers
     answer_text: Perfect numbers
     digest: For example, 6 = 1 + 2 + 3.
-    links: []
+    links:
+      - title: 'Pythagorean Arithmetic: Perfect Numbers'
+        url: /publications/hm-56520386b771-en/
   - id: br-2026-11-07-q02-en
     source_id: br-2026-11-07-q02
     source_ids:
@@ -6623,7 +7289,9 @@ questions:
         - '204'
     answer_text: '204'
     digest: 'Count squares of every size: 1² + 2² + … + 8² = 204.'
-    links: []
+    links:
+      - title: The legend of the chessboard
+        url: /publications/hm-ee204aa37d3d-en/
   - id: br-2026-11-07-q03-en
     source_id: br-2026-11-07-q03
     source_ids:
@@ -6661,6 +7329,8 @@ questions:
     answer:
       accepted:
         - Mathematics in Nine Books
+        - The Nine Chapters on the Mathematical Art
+        - Nine Chapters on the Mathematical Art
     answer_text: Mathematics in Nine Books
     digest: It is one of the most important monuments of Chinese mathematics.
     links: []
@@ -6706,9 +7376,13 @@ questions:
     answer:
       accepted:
         - Fibonacci sequence
+        - Fibonacci numbers
+        - the Fibonacci sequence
     answer_text: Fibonacci sequence
     digest: Each new member is equal to the sum of the previous two.
-    links: []
+    links:
+      - title: Fibonacci’s rabbit problem
+        url: /publications/hm-e5f562afd469-en/
   - id: br-2026-11-21-q02-en
     source_id: br-2026-11-21-q02
     source_ids:
@@ -6750,8 +7424,10 @@ questions:
     prompt: It was this mathematician who introduced the usual letters x, y, z for unknown quantities. Name him.
     answer:
       accepted:
-        - Renee Descartes
-    answer_text: Renee Descartes
+        - René Descartes
+        - Rene Descartes
+        - Descartes
+    answer_text: René Descartes
     digest: This record has become a classic in algebra.
     links: []
   - id: br-2026-11-28-q03-en
@@ -6766,8 +7442,11 @@ questions:
     answer:
       solution: The problem of the course of the horse, or the route of the horse. This is a classic combinatorial problem.
     answer_text: The problem of the course of the horse, or the route of the horse. This is a classic combinatorial problem.
-    digest: ''
-    links: []
+    digest: |-
+      A knight's tour visits every square of a chessboard exactly once using legal moves of the knight. In graph terms it is a Hamiltonian path.
+    links:
+      - title: 'The Knight''s Tour: A Puzzle That Leapt Across the Centuries'
+        url: /publications/hm-tt-ed8bad53e76b-en/
   - id: br-2026-12-05-q02-en
     source_id: br-2026-12-05-q02
     source_ids:
@@ -6824,21 +7503,6 @@ questions:
     answer_text: The Bakhshali manuscript
     digest: It is an important source on the history of Indian mathematics.
     links: []
-  - id: br-2026-12-12-q02-en
-    source_id: br-2026-12-12-q02
-    source_ids:
-      - br-2026-12-12-q02
-    edition_source_id: br-2026-12-12-q02
-    topic: geometry
-    difficulty: intermediate
-    format: self_check
-    prompt: |-
-      A bagel, that is, a torus, behaves more unexpectedly than a ball or a circle. Is it possible to cut a bagel in one flat cut so that two interlocked parts are formed?
-    answer:
-      solution: Yes. In Thor, this is possible with a suitable incision.
-    answer_text: Yes. In Thor, this is possible with a suitable incision.
-    digest: ''
-    links: []
   - id: br-2026-12-12-q03-en
     source_id: br-2026-12-12-q03
     source_ids:
@@ -6850,8 +7514,9 @@ questions:
     prompt: 'Specify the three main characteristics of a regular octahedron: how many edges, edges and vertices does it have?'
     answer:
       accepted:
-        - 8 faces, 12 ribs, 6 vertices
-    answer_text: 8 faces, 12 ribs, 6 vertices
+        - 8 faces, 12 edges, 6 vertices
+        - 8, 12, 6
+    answer_text: 8 faces, 12 edges, 6 vertices
     digest: It is one of the five regular polyhedra.
     links: []
   - id: br-2026-12-19-q01-en
@@ -6866,8 +7531,11 @@ questions:
       him.
     answer:
       accepted:
-        - Mauritz Escher
-    answer_text: Mauritz Escher
+        - M. C. Escher
+        - Maurits Escher
+        - Maurits Cornelis Escher
+        - Escher
+    answer_text: M. C. Escher
     digest: His art is closely related to symmetries and paradoxical figures.
     links: []
   - id: br-2026-12-19-q02-en
@@ -6913,8 +7581,9 @@ questions:
       The prime numbers p, for which 2p + 1 is also prime, are named after a French mathematician. What is the name of this class of numbers?
     answer:
       accepted:
-        - Simple Sophie Germain
-    answer_text: Simple Sophie Germain
+        - Sophie Germain primes
+        - Sophie Germain prime numbers
+    answer_text: Sophie Germain primes
     digest: They are named after the famous French mathematician.
     links: []
   - id: br-2026-12-26-q02-en
@@ -6930,6 +7599,8 @@ questions:
     answer:
       accepted:
         - Roger Penrose
+        - Penrose
+        - Sir Roger Penrose
     answer_text: Roger Penrose
     digest: His mosaics became very famous outside of mathematics.
     links: []
