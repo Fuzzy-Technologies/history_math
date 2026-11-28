@@ -24,6 +24,9 @@ export function enhanceSelect(select) {
   list.setAttribute('aria-labelledby', label.id);
   list.setAttribute('aria-hidden', 'true');
   list.inert = true;
+  // A native scrollbar press can focus its list. Keep keyboard navigation on the combobox.
+  list.tabIndex = -1;
+  list.addEventListener('focus', () => trigger.focus({preventScroll: true}));
   trigger.setAttribute('aria-controls', list.id);
   const options = [...select.options].map((option, index) => {
     const item = document.createElement('div');
@@ -131,7 +134,8 @@ export function enhanceSelect(select) {
       }
     }
   });
-  wrapper.addEventListener('focusout', event => { if (!wrapper.contains(event.relatedTarget)) close(true); });
+  // Some browsers blur the trigger without a focus destination during a scrollbar gesture.
+  document.addEventListener('focusin', event => { if (open && !wrapper.contains(event.target)) close(true); });
   document.addEventListener('pointerdown', event => { if (!wrapper.contains(event.target)) close(true); });
   window.addEventListener('resize', () => close());
   select.addEventListener('change', sync);

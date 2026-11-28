@@ -909,7 +909,6 @@ select {
   padding: 6px;
   overflow-y: auto;
   overscroll-behavior: contain;
-  scrollbar-width: thin;
   scrollbar-color: var(--brass) var(--white);
   color: var(--ink);
   background: var(--white);
