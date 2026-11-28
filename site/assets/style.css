@@ -139,6 +139,20 @@ img {
   height: auto;
   display: block;
 }
+@media screen {
+  img[data-image-pending] {
+    background-color: var(--tint);
+    color: transparent;
+  }
+}
+@media screen and (prefers-reduced-motion: no-preference) {
+  img[data-image-pending] {
+    animation: image-loading-pulse 2.2s ease-in-out infinite;
+  }
+  @keyframes image-loading-pulse {
+    50% { background-color: var(--paper); }
+  }
+}
 h1,
 h2,
 h3 {

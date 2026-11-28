@@ -30,6 +30,32 @@
       document.documentElement.dataset.theme = theme;
     })();
   </script>
+  <script>
+    (() => {
+      const update = image => image.toggleAttribute('data-image-pending', !image.complete);
+      const settle = event => {
+        if (event.target instanceof HTMLImageElement) update(event.target);
+      };
+      document.addEventListener('load', settle, true);
+      document.addEventListener('error', settle, true);
+
+      // Start before the body is parsed so the first paint includes pending images.
+      new MutationObserver(records => {
+        for (const record of records) {
+          if (record.type === 'attributes') {
+            if (record.target instanceof HTMLImageElement) update(record.target);
+            continue;
+          }
+          for (const node of record.addedNodes) {
+            if (node instanceof HTMLImageElement) update(node);
+            else if (node instanceof Element) node.querySelectorAll('img').forEach(update);
+          }
+        }
+      }).observe(document.documentElement, {
+        childList: true, subtree: true, attributes: true, attributeFilter: ['src', 'srcset']
+      });
+    })();
+  </script>
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   {% for translation in page.translations %}<link rel="alternate" hreflang="{{ translation.lang }}" href="{{ translation.url | absolute_url }}">{% endfor %}
   <meta property="og:title" content="{{ page.title | escape }}">
